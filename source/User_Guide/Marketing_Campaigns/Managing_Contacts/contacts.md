@@ -12,9 +12,7 @@ seo:
 * [Formatting a CSV](#-Formatting-a-CSV)
 * [Uploading a CSV](#-Uploading-a-CSV)
 * [Manually Add a Contact](#-Manually-Add-a-Contact)
-* [Creating a New List](#-Creating-a-New-List)
-* [Add Contacts to a List](#-Add-Contacts-to-a-List)
-  
+* [Creating a New List](#-Creating-a-New-List)  
 
 <iframe src="https://player.vimeo.com/video/121404093" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
@@ -131,3 +129,10 @@ Creating a New List
 If you [create a segment]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html#-Create-a-Segment) before you upload a list, any contact that fits the segment criteria you've defined will be added to that segment.
 {% endinfo %}
 
+{% anchor h3 %}
+Additional Resources
+{% endanchor h3 %}
+
+- [Contacts API](https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html)
+- [Segmenting your Contacts](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/lists.html)
+- [Building your Contact list](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/build_contact_list.html)

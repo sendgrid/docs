@@ -59,7 +59,9 @@ In your SendGrid Account there are different [Suppressions]({{root_url}}/User_Gu
 **Blocks** - Addresses that have blocked your mail temporarily, usually due to factors like a blacklisted IP address. You can attempt to resend to these addresses. 
 **Invalid** - Addresses on this list are malformed and do not have a valid email address structure. (Ex. info.sendgrid.com, info@sendgridcom, info @ sendgrid.com)
 
-Sending to email addresses listed in the Bounce, invalid, Spam, and Unsubscribe list will be automatically dropped by SendGrid. Feel free to remove these addresses from your lists to save money and time.
+Sending to email addresses listed in the Bounce, invalid, Spam, and Unsubscribe list will be automatically dropped by SendGrid. 
+
+To avoid damaging your sender reputation, SendGrid recommends taking the following action:
 
 **Remove Repeat Addresses** 
 Sending the same message to the same address twice greatly increases their chance of submitting a spam complaint. Spam complaints will negatively impact your reputation and deliverability.
@@ -70,14 +72,8 @@ Many times these are used as spam traps and sending to them will ruin a sender�
 **Remove Toxic and Role Email Addresses**
 Find email addresses that are commonly used as spam traps or used to determine if you are sending spam. This means all role addresses (info@, sales@, help@, etc.) as well as common spam trap names (junk@, test@, asdf@, spam@, etc.).
 
-Role Addresses email addresses are those that represent either a group of people within a company or the entire organization itself. These addresses are generally designed with a specific function in mind and are only intended to receive messages pertaining to that particular function. The majority of role addresses notify multiple people at once, and the person(s) in charge of monitoring these email accounts can change unexpectedly.
-
-When someone signs up to receive emails at a role address they are also signing up everyone else with access to that address, so the chances of your messages being marked as spam rise significantly.
-
 **Implement a Sunset Policy**
-Making sure that you are continually reducing frequency and removing those addresses that are not engaging with your emails is critical to getting to, and staying in the inbox. We typically suggest removing addresses from your list who haven’t clicked/opened an email from you in the past 3-6 months. The sunset period can vary depending on your specific content and sending cadence.
-
-We understand that is it hard for a business to forfeit potential customers but sending to an old address list has the potential to trash your deliverability and completely ruin your brand name.
+SendGrid suggests removing addresses from your list with zero clicks or opens in the past 3-6 months. The sunset period can vary depending on your specific content and sending cadence. We understand that is it hard for a business to forfeit potential customers but sending to an old address list has the potential to trash your deliverability and completely ruin your brand name.
 
 What problems can arise:
 
@@ -95,7 +91,6 @@ Organizing Your List
 
 **Segmentation**
 List segmentation refers to the practice of customizing a larger master address list into smaller sub-lists categorized based on certain criteria with the goal of enhancing the level of email customization for your recipients. This allows you to gain more analytical insight to a specific campaign’s performance or isolate the deliverability impact among different campaigns.
-
 
 **Segmenting by Type of Email**
 You might like to segment your address list based on the campaigns you are running. This is a good practice if you are sending a mix of transactional/confirmation, notification, and newsletter emails to your users. Some of your users may want to opt-out of notifications or newsletters while still receiving more important transactional/confirmation emails.

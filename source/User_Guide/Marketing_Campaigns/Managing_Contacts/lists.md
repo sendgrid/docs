@@ -130,3 +130,4 @@ Additional Resources
 
 - [Contacts](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html) 
 - [Custom Fields](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html)
+- [Tips on Segmenting Your Active Subscribers](https://sendgrid.com/blog/tips-on-segmenting-your-active-subscribers/)
