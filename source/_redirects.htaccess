@@ -873,4 +873,27 @@ Redirect 301 /Classroom/Troubleshooting/Authentication/invalid_smtp_api_header.h
 Redirect 301 /Classroom/Deliver/Delivery_Introduction/ip_warmup_schedule.html https://sendgrid.com/docs/User_Guide/Settings/ip_warmup.html
 Redirect 301 /Classroom/Deliver/Delivery_Introduction/warming_up_ips.html https://sendgrid.com/docs/User_Guide/Settings/ip_warmup.html
 Redirect 301 /Classroom/Basics/Misc/automated_ip_warmup.html https://sendgrid.com/docs/User_Guide/Settings/ip_warmup.html
+
+#######
+#
+#  Email Events
+#
+#######
+
+Redirect 301 /Classroom/Troubleshooting/Delivery_Issues/max_hourly_limit.html https://sendgrid.com/docs/User_Guide/email_activity.html
+Redirect 301 /Classroom/Troubleshooting/Delivery_Issues/max_connection_limit.html https://sendgrid.com/docs/User_Guide/email_activity.html
+Redirect 301 /Classroom/Troubleshooting/Delivery_Issues/my_client_is_complaining_that_they_have_not_received_an_email.html https://sendgrid.com/docs/User_Guide/email_activity.html
+Redirect 301 /Classroom/Track/Introduction/how_can_i_tell_if_an_email_was_actually_delivered.html https://sendgrid.com/docs/User_Guide/email_activity.html
+Redirect 301 /Classroom/Track/Introduction/discrepancies_between_requests_and_deliveries.html https://sendgrid.com/docs/User_Guide/email_activity.html
+Redirect 301 /Classroom/Track/Drops/resend_dropped_messages.html https://sendgrid.com/docs/User_Guide/email_activity.html
+Redirect 301 /Classroom/Track/Drops/drop_reason_unsubscribed_address.html https://sendgrid.com/docs/User_Guide/email_activity.html
+Redirect 301 /Classroom/Track/Drops/drop_reason_bounced_address.html https://sendgrid.com/docs/User_Guide/email_activity.html
+Redirect 301 /Classroom/Track/Collecting_Data/can_i_download_a_list_of_click_and_or_open_events.html https://sendgrid.com/docs/User_Guide/email_activity.html
+Redirect 301 /Classroom/Track/Bounces/implementing_bounce_notification_for_multiple_from_addresses.html https://sendgrid.com/docs/User_Guide/email_activity.html
+Redirect 301 /Classroom/Track/Bounces/how_to_set_up_bounce_forwarding_to_go_to_the_emails_from_address.html https://sendgrid.com/docs/User_Guide/email_activity.html
+Redirect 301 /Classroom/Track/Bounces/how_to_set_up_bounce_forwarding.html https://sendgrid.com/docs/User_Guide/email_activity.html
+Redirect 301 /Classroom/Track/Bounces/delete_from_bounce_list_option_in_email_activity.html https://sendgrid.com/docs/User_Guide/email_activity.html
+Redirect 301 /Classroom/Track/Bounces/bounce_reports_how_can_i_be_notified.html https://sendgrid.com/docs/User_Guide/email_activity.html
+Redirect 301 /Classroom/Track/Bounces/bounce_forwarding_and_gmail.html https://sendgrid.com/docs/User_Guide/email_activity.html
+Redirect 301 /Classroom/Deliver/Undeliverable_Email/why_did_my_message_show_as_delivered_first_then_as_bounced.html https://sendgrid.com/docs/User_Guide/email_activity.html
 Redirect 301 /search.html https://sendgrid.com/docs
