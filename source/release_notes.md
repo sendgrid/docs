@@ -16,7 +16,7 @@ If you are looking for SendGrids opererational status, see our [Status Page](htt
 
 The following new features and changes to the service are available.
 
-<table class="table" style="table-layout:fixed">
+<table class="table" style="table-layout:fixed" style="border-top:none !important;">
   <tr>
     <td align="center"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" width="100" height="100"></td>
     <td align="center"><img src="{{root_url}}/images/code_icon.png" alt="An update to the API" width="100" height="100"></td>
@@ -28,6 +28,32 @@ The following new features and changes to the service are available.
     <td align="center">API Update</td>
     <td align="center">Partner Update</td>
     <td align="center">Price Update</td>
+  </tr>
+</table>
+
+{% anchor h2 %}
+04 January 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Table & Column Rendering in Outlook
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI"></td>
+    <td>We've resolved a bug affecting the way that tables/columns were rendering in some versions of Outlook.</td>
+  </tr>
+</table>
+
+{% anchor h3 %}
+Easier Segmentation Through Search
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI"></td>
+    <td>We've added the ability to search for custom fields within the dropdown, when creating a segment. Formerly, you were only able to scroll and select.</td>
   </tr>
 </table>
 
