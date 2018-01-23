@@ -14,7 +14,7 @@ navigation:
 If you have a **Pro plan or higher**, you may create up to 15 Subusers through your account. If you reach the maximum of 15 and require more Subusers, please use the form in the [Subuser Management]({{site.app_url}}/settings/Subusers) page to request more.
 {% endinfo %}
 
-Subusers help you segment your email sending and API activity. You assign permissions and credit limits when you create the Dubusers. We recommend creating Subusers for each of the different types of emails you send - so one Subuser for transactional emails, and another from marketing emails. Breaking your sending up this way allows you to get separate statistics for each type of email you send.
+Subusers help you segment your email sending and API activity. You assign permissions and credit limits when you create the Subusers. We recommend creating Subusers for each of the different types of emails you send - so one Subuser for transactional emails, and another from marketing emails. Breaking your sending up this way allows you to get separate statistics for each type of email you send.
 
 - [Create a Subuser](#-Create-a-Subuser)
 - [Manage Subusers](#-Manage-Subusers)
