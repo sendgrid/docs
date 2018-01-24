@@ -24,7 +24,6 @@ Email opt-in types
 - **Double Opt-in** refers to the practice of requesting permission twice from a recipient. For example, you could ask them if they want to receive email at registration, and then send another email asking them to verify their confirmation.
 - **Confirmed Opt-in** refers to the practice of sending emails to your recipients asking them to confirm their continued interest in receiving your future emails.
 
-![]({{root_url}}/images/confirmed_optin.png "Confirmed Opt-in Screen")
 
 {% info %}
 To avoid blocked emails, double check the spelling of the emails on your list. Common misspellings include: the domain (@ homail.com, @ gmal.com, etc.) or any piece of the address (@ gmail.cm, @ gmailcom, etc.). It helps to have the recipient input their address twice to ensure it is correct during the registration/sign-up process. Then to make sure the address is real, do a double opt-in (link to opt-in form).
@@ -49,7 +48,7 @@ SendGrid strongly recommends:
 
 * Ensuring your invitation is relevant and valued by the recipient.
 * Allowing inviters add a personal text-only message to their invitation. (No URLs, as they may be used to exploit or infect the invitee.)
-* Including a visible, functioning opt-out link—it’s better for the recipient to remove themselves from future mailings than to report your message as spam.
+* Including a visible, functioning opt-out link to allow the recipient to remove themselves from future mailings instead of reporting your message as spam.
 * Being aware of offering invitation incentives to your subscribers. Incentives may encourage them to invite people who aren’t likely to want your service, and this could backfire.
 * Monitoring your spam complaints. Some inviters will trigger spam complaints by sending invitations to people who don’t want them. If your system correlates spam complaints with the troublesome inviter, you can limit their invitation quota to minimize the adverse effect on your email sending reputation.
 * Pre-screening the email addresses you collect before you send the invitation. Ensure addresses are syntactically correct, and that the domain part of the address has a DNS MX record (which indicates that the domain accepts mail).

@@ -82,7 +82,7 @@ Once we have completed processing your new contacts, you will receive an email t
 * Number of errors
 * Error messages for each errored row
 
-If there are any errors, there will be a link to download a CSV containing the errored rows so that you can reformat and reupload those contacts. For more help resolving issues with uploading a CSV, see [List Upload Troubleshooting](https://sendgrid.com/docs/Classroom/Troubleshooting/Authentication/list_upload_troubleshooting.html).
+If there are any errors, there will be a link to download a CSV containing the errored rows so that you can reformat and reupload those contacts. For more help resolving issues with uploading a CSV, see [List Upload Troubleshooting](https://sendgrid.com/docs/Classroom/Troubleshoot ing/Authentication/list_upload_troubleshooting.html).
 
 {% info %}
 The download link to your CSV of errored rows will be available for 24 hours.
