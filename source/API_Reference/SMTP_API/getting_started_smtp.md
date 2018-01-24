@@ -39,7 +39,7 @@ Before you begin
 
 - Create a SendGrid API key on the [API Keys page](https://app.sendgrid.com/settings/api_keys).
 - Open your command line, bash, shell, or Terminal functionality (depending on what OS you are using). You'll use this window to input the commands to initiate a telnet connection.
-- Convert your API key to Base64. It is not secure to put your API key into an external webpage for a conversion, so we recommend using a bash conversion. If you are on Mac or Linux, you can use the pre-installed OpenSSL package. Use this cmd to convert your API key using OpenSSL: `echo '<<YOUR_API_KEY>>' | openssl base64`. Save your converted key for a later step.
+- Convert your API key to Base64. It is not secure to put your API key into an external webpage for a conversion, so we recommend using a bash conversion. If you are on Mac or Linux, you can use the pre-installed OpenSSL package. Use this cmd to convert your API key using OpenSSL: `echo -n '<<YOUR_API_KEY>>' | openssl base64`. Save your converted key for a later step.
 
 {% warning %}
 Telnet does not register backspaces correctly - so you have to type your commands correctly (or copy and paste it from here).
