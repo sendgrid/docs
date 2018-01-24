@@ -72,7 +72,7 @@ Limitations
 <ul>
   <li>The total size of your email, including attachments, must be less than 30MB.</li>
   <li>The total number of recipients must be less than 1000. This includes all recipients defined within the <code>to</code>, <code>cc</code>, and <code>bcc</code> parameters, across each object that you include in the <code>personalizations</code> array.</li>
-  <li>3000 requests/sec is the maximum rate at which you may call v3 Mail endpoint.</li>
+  <li>10,000 requests/sec is the maximum rate at which you may call v3 Mail endpoint.</li>
   <li>The total length of custom arguments must be less than 10000 bytes.</li>
   <li>Unicode encoding is not supported for the <code>from</code> field within the <code>personalizations</code> array.</li>
   <li>The <code>to.name</code>, <code>cc.name</code>, and <code>bcc.name</code> personalizations cannot include either the <code>;</code> or <code>,</code> characters.</li>

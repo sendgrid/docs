@@ -3,7 +3,7 @@ Hello! Thank you for choosing to help contribute to the SendGrid documentation s
 * [Style](#style)
     * [Numbers](#numbers)
     * [About Additional Resources](#about-additional-resources)
-    * [Cross References] (#cross-references)
+    * [Cross References](#cross-references)
 * [Terminology](#terminology)
 * [Punctuation](#punctuation)
 * [Capitalization](#capitalization)
