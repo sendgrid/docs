@@ -90,4 +90,4 @@ Additional Resources
 {% endanchor h2 %}
 
 - [SendGrid Pricing]({{site.site_url}}/pricing/)
-- [Billing]({{root_url}}/Settings/billing.html)
+- [Billing]({{root_url}}/User_Guide/Settings/billing.html)

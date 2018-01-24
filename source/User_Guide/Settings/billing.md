@@ -124,4 +124,4 @@ Additional Resources
 {% endanchor h2 %}
 
 - [SendGrid Pricing]({{site.site_url}}/pricing/)
-- [Reading your invoice]({{root_url}}/Settings/reading_your_invoice.html)
+- [Reading your invoice]({{root_url}}/User_Guide/Settings/reading_your_invoice.html)
