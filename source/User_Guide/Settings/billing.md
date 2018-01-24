@@ -1,11 +1,11 @@
 ---
 layout: page
 weight: 0
-title: Billing Settings
+title: Billing
 seo:
-  title: Billing Settings
+  title: Billing
   description: Manage your SendGrid billing settings
-  keywords: billing settings
+  keywords: billing, contacts, email credits, refund, plans, cancel, upgrade, downgrade
 navigation:
   show: true
 ---
@@ -17,10 +17,12 @@ navigation:
 - [Email credits]()
 - [Overages]()
 - [Requesting a refund]()
-- [Changing Your Plan]()
-- [Cancel Account]()
+- [Changing your plan]()
+- [Cancel account]()
 
 You can update your plan and billing details on the [Plan & Billing Details page](https://app.sendgrid.com/settings/billing) in the UI.
+
+For more information about understanding your bill, see [Reading your invoice]({{root_url}}/Settings/reading_your_invoice.html).
 
 When you create or upgrade to a paid account, you add a credit card in for automatic payments. This will allow SendGrid to make the recurring package charges for your account without having to notify you each month of the bill. SendGrid relies on a PCI-DSS compliant 3rd party billing provider to store, process, and manage payment card processing.
 
@@ -100,13 +102,13 @@ Refunds are only applicable to the subscription charge on your account, not for 
 If you meet these conditions, please respond directly to the invoice email you have received, or email billing@sendgrid.com to begin the discussion about a possible refund.
 
 {% anchor h2 %}
-Changing Your Plan
+Changing your plan
 {% endanchor %}
 
 To change your plan, click the “Change Plan” button next to your [billing details](https://app.sendgrid.com/settings/billing). Click the plan you would like and follow the prompts.
 
 {% anchor h2 %}
-Cancel Account
+Cancel your account
 {% endanchor %}
 
 We are truly sorry to see you go. Please don’t forget that [we have 24/7 support]({{site.support_url}}) and would love the opportunity to help and chat about why you’re leaving if we can.
@@ -122,6 +124,4 @@ Additional Resources
 {% endanchor h2 %}
 
 - [SendGrid Pricing]({{site.site_url}}/pricing/)
-- [Subuser Impersonation]({{root_url}}/User_Guide/Settings/Subusers/impersonation.html)
-- [Email Activity]({{root_url}}/User_Guide/email_activity.html)
-- [SendGrid Support]({{site.support_url}})
+- [Reading your invoice]({{root_url}}/Settings/reading_your_invoice.html)
