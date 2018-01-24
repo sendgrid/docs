@@ -14,20 +14,20 @@ seo:
 Opt-In Email
 {% endanchor %}
 
-Opt-in email refers to bulk email, such as a newsletter or advertisement, that is sent out to a mailing list where every member of that list has actively requested email from you. Without obtaining this permission, your email is likely unwanted or unsolicited and is liable to be marked as spam by the recipient or the receiving mailbox provider.
+Opt-in email refers to bulk email, such as a newsletter or advertisement, that is sent out to a mailing list where every member of that list has actively requested email from the sender. Without obtaining this permission, your email is likely unwanted or unsolicited and is liable to be marked as spam by the recipient or the receiving mailbox provider.
 
 {% anchor h3 %}
 Email opt-in types
 {% endanchor %}
 
--  **Single Opt-in** refers to the practice of requesting permission to send a recipient email during, and only during, registration.
+- **Single Opt-in** refers to the practice of requesting permission to send a recipient email during, and only during, registration.
 - **Double Opt-in** refers to the practice of requesting permission twice from a recipient. For example, you could ask them if they want to receive email at registration, and then send another email asking them to verify their confirmation.
 - **Confirmed Opt-in** refers to the practice of sending emails to your recipients asking them to confirm their continued interest in receiving your future emails.
 
 ![]({{root_url}}/images/confirmed_optin.png "Confirmed Opt-in Screen")
 
 {% info %}
-To avoid blocked emails, double check the spelling of the emails on your list. Common misspellings include: the domain (@ homail.com, @ gmal.com, etc.) or any piece of the address (@ gmail.cm, @ gmailcom, etc.).  It helps to have the recipient input their address twice to ensure it is correct during the registration/sign-up process. Then to make sure the address is real, do a double opt-in (link to opt-in form).
+To avoid blocked emails, double check the spelling of the emails on your list. Common misspellings include: the domain (@ homail.com, @ gmal.com, etc.) or any piece of the address (@ gmail.cm, @ gmailcom, etc.). It helps to have the recipient input their address twice to ensure it is correct during the registration/sign-up process. Then to make sure the address is real, do a double opt-in (link to opt-in form).
 {% endinfo %}
 
 {% anchor h2 %}
@@ -47,16 +47,16 @@ You increase the odds of your invitations reaching the recipient when you struct
 
 SendGrid strongly recommends:
 
-* Ensure your invitation is relevant and valued by the recipient.
-* Let your inviters add a personal text-only message to their invitation. (No URLs, as they may be used to exploit or infect the invitee.)
-* Include a visible, functioning opt-out link—it’s better for the recipient to remove themselves from future mailings than to report your message as spam.
-* Beware of offering invitation incentives to your subscribers. Incentives may encourage them to invite people who aren’t likely to want your service, and this could backfire.
-* Monitor your spam complaints. Some inviters will trigger spam complaints by sending invitations to people who don’t want them. If your system correlates spam complaints with the troublesome inviter, you can limit their invitation quota to minimize the adverse effect on your email sending reputation.
-* Pre-screen the email addresses you collect before you send the invitation. Ensure addresses are syntactically correct, and that the domain part of the address has a DNS MX record (which indicates that the domain accepts mail).
+* Ensuring your invitation is relevant and valued by the recipient.
+* Allowing inviters add a personal text-only message to their invitation. (No URLs, as they may be used to exploit or infect the invitee.)
+* Including a visible, functioning opt-out link—it’s better for the recipient to remove themselves from future mailings than to report your message as spam.
+* Being aware of offering invitation incentives to your subscribers. Incentives may encourage them to invite people who aren’t likely to want your service, and this could backfire.
+* Monitoring your spam complaints. Some inviters will trigger spam complaints by sending invitations to people who don’t want them. If your system correlates spam complaints with the troublesome inviter, you can limit their invitation quota to minimize the adverse effect on your email sending reputation.
+* Pre-screening the email addresses you collect before you send the invitation. Ensure addresses are syntactically correct, and that the domain part of the address has a DNS MX record (which indicates that the domain accepts mail).
 
 {% anchor h3 %}
 Additional Resources
-{% endanchor h3 %}
+{% endanchor %}
 
 - [Lists and Segmentation](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/lists.html)
 - [Unsubscribe Groups](https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html)

@@ -72,10 +72,6 @@ Many times these are used as spam traps and sending to them will ruin a sender�
 **Remove Toxic and Role Email Addresses**
 Find email addresses that are commonly used as spam traps or used to determine if you are sending spam. This means all role addresses (info@, sales@, help@, etc.) as well as common spam trap names (junk@, test@, asdf@, spam@, etc.).
 
-Role Addresses email addresses are those that represent either a group of people within a company or the entire organization itself. These addresses are generally designed with a specific function in mind and are only intended to receive messages pertaining to that particular function. The majority of role addresses notify multiple people at once, and the person(s) in charge of monitoring these email accounts can change unexpectedly.
-
-When someone signs up to receive emails at a role address they are also signing up everyone else with access to that address, so the chances of your messages being marked as spam rise significantly.
-
 **Implement a Sunset Policy**
 Making sure that you are continually reducing frequency and removing those addresses that are not engaging with your emails is critical to getting to, and staying in the inbox. We typically suggest removing addresses from your list who haven’t clicked/opened an email from you in the past 3-6 months. The sunset period can vary depending on your specific content and sending cadence.
 
@@ -108,11 +104,11 @@ Another criteria for list segmentation is segregation by address acquisition tim
 For help with segmenting by engagement, you can enable click and open tracking in your SendGrid account.
 
 **Segmenting by IP Address**
-It is wise to segregate these sublists so that each is sending on different IPs. For example, it is common to set up transactional/confirmation emails on a separate IP than your marketing emails as these are more prone to being responded to as spam. This will help protect the deliverability of your important emails from the potential harm due to the complaints from your more potentially risky marketing campaigns 
+List segmentation is a great tool that can be used to power your email campaigns as well as protect your reputation as a sender.
+SendGrid recommends assigning your each of your sublists a different IP. For example, set up transactional/confirmation emails on a different IP than your marketing emails as these are more prone to being responded to as spam. This will help protect the deliverability of your important emails from the potential harm due to the complaints from your more potentially risky marketing campaigns 
 
 Also, separating your “win back” campaigns from your other email with a separate IP protects your other IP's reputation and deliverability. 
 
-List segmentation is a great tool that can be used to power your email campaigns as well as protect your reputation as a sender. Happy sending!
 
 {% anchor h3 %}
 Delete a Specific Contact

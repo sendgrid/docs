@@ -109,12 +109,6 @@ Manually Add a Contact
 To add Custom Field data to a manually imported contact, navigate to the Contact Details page of the new contact. 
 {% endinfo %}
 
-{% anchor h2 %}
-Managing Contacts
-{% endanchor %}
-
-Managing contacts is an integral part of your marketing campaigns lifecycle. You can create lists for contacts, as well as view and edit each individual contact within your contact database.
-
 {% anchor h3 %}
 Creating a New List
 {% endanchor %}
