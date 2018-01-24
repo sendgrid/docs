@@ -53,7 +53,7 @@ Easier Segmentation Through Search
 <table class="table" style="width: 100%;">
   <tr>
     <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI"></td>
-    <td>We've added the ability to search for custom fields within the dropdown, when creating a segment. Formerly, you were only able to scroll and select.</td>
+    <td>We've added the ability to search for custom fields within the drop-down, when creating a segment. Formerly, you were only able to scroll and select.</td>
   </tr>
 </table>
 
