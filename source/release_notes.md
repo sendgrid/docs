@@ -16,7 +16,7 @@ If you are looking for SendGrids opererational status, see our [Status Page](htt
 
 The following new features and changes to the service are available.
 
-<table class="table" style="table-layout:fixed" style="border-top:none !important;">
+<table class="table" style="table-layout:fixed; border-top:none !important;">
   <tr>
     <td align="center"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" width="100" height="100"></td>
     <td align="center"><img src="{{root_url}}/images/code_icon.png" alt="An update to the API" width="100" height="100"></td>
