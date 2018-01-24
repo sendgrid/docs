@@ -20,8 +20,6 @@ Your SendGrid invoice contains a lot of information, which may be difficult to r
 
 **The physical address of your business.** This address is the same address you entered when you first signed up. If you would like to update the address as it appears on your invoices, click Change Invoice Address on the [Plan & Billing Details](https://app.sendgrid.com/settings/billing) page. If you need to change the address on an existing invoice, please send an email to [billing@sendgrid.com](mailto:billing@sendgrid.com).
 
- 
-
 {% anchor h2 %}
 2. Billing Email
 {% endanchor %}
@@ -47,8 +45,6 @@ This describes the plan you subscribe to and the total charge for usage in the p
 Additional IPs cost $30.00 per IP/per month for Pro 100k plans and above.
 
 For more information on SendGrid Plans, visit our [pricing page](https://sendgrid.com/pricing). 
-
- 
 
 ![]({{root_url}}/images/invoice_contact_1.png) 
 
