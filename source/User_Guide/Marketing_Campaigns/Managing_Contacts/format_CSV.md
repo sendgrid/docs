@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 90
+weight: 0
 title: Formatting a CSV
 navigation:
   show: true
