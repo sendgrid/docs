@@ -105,7 +105,7 @@ If you meet these conditions, please respond directly to the invoice email you h
 Changing your plan
 {% endanchor %}
 
-To change your plan, click the “Change Plan” button next to your [billing details](https://app.sendgrid.com/settings/billing). Click the plan you would like and follow the prompts.
+To change your plan, click **Change Plan** next to your [billing details](https://app.sendgrid.com/settings/billing). Select the plan you would like and follow the prompts.
 
 {% anchor h2 %}
 Cancel your account
