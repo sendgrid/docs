@@ -16,18 +16,18 @@ If you are looking for SendGrids opererational status, see our [Status Page](htt
 
 The following new features and changes to the service are available.
 
-<table class="table" style="table-layout:fixed;">
+<table class="table" style="table-layout:fixed">
   <tr>
-    <td align="center" style="border-top:none !important;"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" width="100" height="100"></td>
-    <td align="center" style="border-top:none !important;"><img src="{{root_url}}/images/code_icon.png" alt="An update to the API" width="100" height="100"></td>
-    <td align="center" style="border-top:none !important;"><img src="{{root_url}}/images/partners_icon.png" alt="An update to one of our Partners" width="100" height="100"></td>
-    <td align="center" style="border-top:none !important;"><img src="{{root_url}}/images/pricing_icon.png" alt="An update to a price" width="100" height="100"></td>
+    <td align="center"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" width="100" height="100"></td>
+    <td align="center"><img src="{{root_url}}/images/code_icon.png" alt="An update to the API" width="100" height="100"></td>
+    <td align="center"><img src="{{root_url}}/images/partners_icon.png" alt="An update to one of our Partners" width="100" height="100"></td>
+    <td align="center"><img src="{{root_url}}/images/pricing_icon.png" alt="An update to a price" width="100" height="100"></td>
   </tr>
     <tr>
-    <td align="center" style="border-top:none !important;">UI Update</td>
-    <td align="center" style="border-top:none !important;">API Update</td>
-    <td align="center" style="border-top:none !important;">Partner Update</td>
-    <td align="center" style="border-top:none !important;">Price Update</td>
+    <td align="center">UI Update</td>
+    <td align="center">API Update</td>
+    <td align="center">Partner Update</td>
+    <td align="center">Price Update</td>
   </tr>
 </table>
 
