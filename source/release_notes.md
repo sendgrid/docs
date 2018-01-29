@@ -32,6 +32,32 @@ The following new features and changes to the service are available.
 </table>
 
 {% anchor h2 %}
+04 January 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Table & Column Rendering in Outlook
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI"></td>
+    <td>We've resolved a bug affecting the way that tables/columns were rendering in some versions of Outlook.</td>
+  </tr>
+</table>
+
+{% anchor h3 %}
+Easier Segmentation Through Search
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI"></td>
+    <td>We've added the ability to search for custom fields within the drop-down, when creating a segment. Formerly, you were only able to scroll and select.</td>
+  </tr>
+</table>
+
+{% anchor h2 %}
 20 December 2017
 {% endanchor %}
 
