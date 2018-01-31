@@ -10,6 +10,24 @@ seo:
   description: Directions on how to format a CSV in order to upload it to Marketing Campaigns. 
 ---
 
+Formatting a CSV
+You can easily add contacts to your contact database by uploading a CSV of your contacts to SendGrid. If you have your contacts in a spreadsheet, simply save that sheet as a .csv file using a spreadsheet application like Microsoft Excel or Google Sheets. You can also export your contacts from most database systems as a .csv file.
+
+Your CSV file MUST be in UTF-8 format.
+
+Your CSV should contain the following information about each contact:
+
+email (required)
+first_name
+last_name
+You can also include custom fields with additional identifying information for each contact in the CSV. For example, you can specify “country,” “city,” and “age” as the custom fields. The data in the custom fields are critical for both segmentation and content personalization.
+
+The first row of your CSV must be a header row containing labels identifying each column. We have provided an example CSV file for you to look at. Headers must only use letters, numbers, and underscores. If you add custom field data to your CSV, you can save some time when uploading by naming the columns the same as the custom fields you have previously defined.
+
+SendGrid identifies individual contacts by their email, so you must include email as one of the CSV headers. If you do not include the email column, SendGrid will not add any information to your contact database or list. Rows in your CSV without an email address in the email column will automatically fail, but will not cause the entire upload to fail.
+
+
+
 {% anchor h2 %} General Formatting Rules {% endanchor h2 %}
 
 General rules and guidance to follow when formatting a CSV to upload into Marketing Campaigns.
