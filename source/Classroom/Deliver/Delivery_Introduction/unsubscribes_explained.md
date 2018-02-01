@@ -53,5 +53,5 @@ Be careful when removing recipients from your unsubscribe lists in order to send
 
 **Would You Like to Know More?**
 
-Still a little unsure on the particulars? If so, please don't hesitate to contact our support team at your convenience and we will be happy to help!
+Still a little unsure on the particulars? If so, please don't hesitate to [contact support](https://support.sendgrid.com) at your convenience and we will be happy to help!
 
