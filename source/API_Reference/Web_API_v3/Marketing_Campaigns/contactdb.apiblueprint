@@ -872,6 +872,9 @@ You can add up to 15 different conditions per segment.
 
 ### List All Segments [GET]
 
++ Parameters
+    + exclude = "count" (optional, string) ... add this argument if you don't need the Segment `recipient_count` value updated. This will speed up the query return.
+
 + Response 200
 
      + Body
