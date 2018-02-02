@@ -107,7 +107,7 @@ To turn off click tracking, add this to your X-SMTPAPI header:
 Invalid SMTP API header
 {% endanchor %}
 
-When you try to send an invalid X-SMTPAPI header, you will get an email with details about the invalidations. You may also see errors on your Email Activity page or in your Event Webhook data. If this happens, the email should give you the information you need to begin troubleshooting. We also recommend uploading your JSON into a JSON validator, because this is often an invalid JSON issue. If you need more help troubleshooting, you can log in to file a support ticket on our [support page](https://support.sendgrid.com/hc/en-us).
+When you try to send an invalid X-SMTPAPI header, you will get an email with details about the invalidations. You may also see errors on your Email Activity page or in your Event Webhook data. If this happens, the email should give you the information you need to begin troubleshooting. We also recommend uploading your JSON into a JSON validator, because this is often an invalid JSON issue.
 
 {% anchor h2 %}
 Certificate verification failed for smtp.sendgrid.net

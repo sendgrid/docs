@@ -39,6 +39,6 @@ If everything checks out correct then you should see this.
 
 ![]({{root_url}}/images/outlook_2013_6.png "All tests completed successfully")
 
-You should be all set at this point. If you need more support please contact support@sendgrid.com .
+You should be all set at this point. If you need more assistance, please [contact support](https://support.sendgrid.com/hc/en-us).
 
 ![]({{root_url}}/images/outlook_2013_7.png "Congratulations")
