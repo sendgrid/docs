@@ -12,13 +12,14 @@ navigation:
 Now that you've sent a [sent a test SMTP email with Telnet]({{root_url}}/API_Reference/SMTP_API/getting_started_smtp.html), and [integrated with SendGrid]({{root_url}}/API_Reference/SMTP_API/integrating_with_the_smtp_api.html), it's time to build content.
 
 - [Getting started building](#-Getting-started-building)
-- [Customizing Your Send](#-Customizing-your-send)
-   - [Scheduling Your Send](#-Scheduling-your-send)
-   - [Substitution Tags](#-Substitution-tags)
-   - [Section Tags](#-Section-tags)
-   - [Suppression Groups](#-Suppression-groups)
+   - [Limitations](#-Limitations)
+- [Customizing Your Send](#-Customizing-your-send-filters)
+   - [Scheduling Your Send](#-Scheduling-Your-Send)
+   - [Substitution Tags](#-Substitution-Tags)
+   - [Section Tags](#-Section-Tags)
+   - [Suppression Groups](#-Suppression-Groups)
    - [Categories](#-Categories)
-   - [Unique Arguments](#-Unique-arguments)
+   - [Unique Arguments](#-Unique-Arguments)
 
 {% anchor h2 %}
 Getting started building
