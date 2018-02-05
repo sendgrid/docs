@@ -98,9 +98,8 @@ Depending on which condition is selected, the operators you can choose from diff
   </tr>
 </table>
 
-You can select `AND` or `OR` as options, where `AND` requires both conditions to be true and `OR` requires either condition to be true.
-
-Once you’ve selected the Condition and the Operator, you can layer additional conditions in the segment to narrow the results to a more targeted audience. 
+<br/>
+You can select `AND` or `OR` as options, where `AND` requires both conditions to be true and `OR` requires either condition to be true. Once you’ve selected the Condition and the Operator, you can layer additional conditions in the segment to narrow the results to a more targeted audience. 
  
 {% info %}
 You can add up to 15 different conditions per segment.
