@@ -22,7 +22,7 @@ You can easily add contacts to your contact database by uploading a CSV of your 
 
 {% anchor h2 %} General Formatting Rules {% endanchor h2 %}
 
-General rules and guidance to follow when formatting a CSV to upload into Marketing Campaigns.
+General rules to follow when formatting a CSV to upload into Marketing Campaigns.
 
 {% info %}
 Your CSV file MUST be in UTF-8 format.
@@ -80,7 +80,7 @@ What you may want to do is add logic to set a custom field, based on the reason 
 
 {% anchor h2 %} Troubleshooting {% endanchor h2 %}
 
-Listed below are a few distinct errors you may encounter when uploading a CSV to Marketing Campaigns, along with tips to correct the root issue. 
+Listed below are a few errors you may encounter when uploading a CSV to Marketing Campaigns, along with tips to correct the root issue. 
 
 {% anchor h3 %} We were unable to detect an email column in the CSV file headers. The email column must always have a header of "email" {% endanchor h3 %}
 
@@ -98,14 +98,14 @@ Listed below are a few distinct errors you may encounter when uploading a CSV to
 
 {% anchor h3 %} Each custom field can only be applied to a column once. Please check your columns and try again {% endanchor h3 %}
 
-- Check your CSV for duplicate fields, especially fields that have matching information as your “email”, “first_name” and “last_name” fields. These are reserved field names, and cannot be edited.
+- Check your CSV for duplicate fields, especially fields that have matching information as your “email”, “first_name” and “last_name” fields. You cannot edit these field names as they are reserved. 
 - For example, if you have a “Name” field, it may conflict with your “first_name” reserved field.
 
 ![]({{root_url}}/images/listupload_3.png)
 
 {% anchor h3 %} We were unable to detect any headers in your CSV file {% endanchor h3 %}
 
-- Include headers at the top of each column. The “email” header is required for all CSV uploads. Header fields can be blank in your CSV, but must be defined later during the upload process.
+- Include headers at the top of each column. All CSV uploads must contain the "email" header. Header fields can be blank in your CSV, but must be defined later during the upload process.
 
 ![]({{root_url}}/images/listupload_4.png)
 
@@ -116,3 +116,11 @@ Number fields can include monetary values without the currency symbols. For exam
 - As you are uploading your CSV, make sure you select the correct fields for your Field type.
 
 ![]({{root_url}}/images/listupload_table.png)
+
+{% anchor h3 %}
+Additional Resources
+{% endanchor h3 %}
+
+- [Contacts API](https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html)
+- [Segmenting your Contacts](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/lists.html)
+- [Building your Contact list](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/build_contact_list.html)

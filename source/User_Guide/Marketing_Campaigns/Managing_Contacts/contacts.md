@@ -36,14 +36,14 @@ Uploading a CSV
 *To add new contacts:*
 
 1. Click **Add Contacts** and then select **Upload CSV**.
-1. Choose an existing list or create a new list to add the contacts to.
+1. Choose an existing list or create a new list.
 
-    If you choose to add the contacts without assigning them to a list, they are added to the contacts database without any additional context. All contact, regardless of whether or not they are added to a list exist in the contacts database once they have been uploaded. 
+    If you choose to add the contacts without assigning them to a list, they exist in the contacts database without any additional context. 
 
 1. Upload your file by dragging it into or clicking the CSV upload area.
 1. Once the CSV has populated, click **Next: Review CSV Upload**.
 
-   A page appears displaying the data from the header row from of the CSV file. From the list you can select a custom field to associate with the data in the column. If there isn't a corresponding field, you can add one. Only the **Email** field is required to complete the upload. Skipped column headers are not uploaded and do not appear as custom fields within an individual contact's profile.
+   A page appears displaying the data from the header row from of the CSV file. From the list, you can select a custom field to associate with the data in the column. If there isn't a corresponding field, you can add one. Only the **Email** field is required to complete the upload. Skipped column headers are not uploaded and do not appear as custom fields within an individual contact's profile.
 
 1. Select **Skip Column** to omit data from the contacts list.
 1. Once you've gone through all of the headers, click **Save Contacts**.
@@ -64,7 +64,7 @@ Once we have completed processing your new contacts, you will receive an email t
 * Number of errors
 * Error messages for each errored row
 
-If there are any errors, there will be a link to download a CSV containing the errored rows so that you can reformat and reupload those contacts. For more help resolving issues with uploading a CSV, see [Formatting a CSV](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/format_CSV.html).
+If there are any errors, there will be a link to download a CSV containing the errored rows so that you can reformat and reupload those contacts. For more help resolving issues with uploading a CSV, see [Formatting a CSV](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/format_CSV.html).
 
 {% info %}
 The download link to your CSV of errored rows will be available for 24 hours.
@@ -115,7 +115,7 @@ Add Contacts to a List
 1. Click **Save**.
 
 {% info %}
-If you [create a segment]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html#-Create-a-Segment) before you upload a list, any contact that fits the segment criteria you've defined will be added to that segment.
+If you [create a segment]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html#-Create-a-Segment) before you upload a list, contacts that fit the segment criteria populate that segment when uploaded.
 {% endinfo %}
 
 {% anchor h3 %}
