@@ -14,7 +14,7 @@ seo:
 Opt-In Email
 {% endanchor %}
 
-Opt-in email refers to bulk email, such as a newsletter or advertisement, that is sent out to a mailing list where every member of that list has actively given you permission to send them email. Without obtaining this permission, your email is likely unwanted or unsolicited and is liable to be marked as spam by the recipient or be “bulked” by the receiving mailbox provider (i.e., delivered directly to the spam folder).
+Opt-in email refers to bulk email, such as a newsletter or advertisement, that is sent out to a mailing list where every member of that list has actively given you permission to send them email. Without obtaining this permission, your email is likely unwanted or unsolicited and is liable to be marked as spam by the recipient or be “bulked” by the receiving mailbox provider (for example, if delivered directly to the spam folder).
 
 {% anchor h3 %}
 Email opt-in types
