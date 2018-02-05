@@ -25,7 +25,11 @@ You can easily add contacts to your contact database by uploading a CSV of your 
 
 {% anchor h2 %} General Formatting Rules {% endanchor h2 %}
 
+General rules and guidance to follow when formatting a CSV to upload into Marketing Campaigns.
+
+{% info %}
 Your CSV file MUST be in UTF-8 format.
+{% endinfo %}
 
 {% anchor h3 %} Contact Info {% endanchor h3 %}
 
@@ -34,7 +38,7 @@ Your CSV should contain the following information about each contact:
 email (required)
 first_name
 last_name
-You can also include custom fields with additional identifying information for each contact in the CSV. For example, you can specify “country,” “city,” and “age” as the custom fields. The data in the custom fields are critical for both segmentation and content personalization.
+You can also include [custom fields](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html) with additional identifying information for each contact in the CSV. For example, you can specify “country,” “city,” and “age” as the custom fields. The data in the custom fields are critical for both segmentation and content personalization.
 
 {% anchor h3 %} Header Row {% endanchor h3 %}
 
@@ -42,7 +46,7 @@ The first row of your CSV must be a header row containing labels identifying eac
 
 SendGrid identifies individual contacts by their email, so you must include email as one of the CSV headers. If you do not include the email column, SendGrid will not add any information to your contact database or list. Rows in your CSV without an email address in the email column will automatically fail, but will not cause the entire upload to fail.
 
-General rules and guidance to follow when formatting a CSV to upload into Marketing Campaigns.
+
 
 {% anchor h3 %} Character Encoding {% endanchor h3 %}
 
@@ -75,11 +79,9 @@ Properly format any dates in your CSV. If you created your CSV with Excel and it
 
 {% anchor h3 %} I have more than one of the same email in my database {% endanchor h3 %}
 
-With SendGrid’s Marketing Campaigns feature, the unique identifier is the email address. So, if you upload the same email address multiple times, the custom field data associated with that email will be updated with each upload to the most recently uploaded/updated information. This feature helps prevent you from accidentally emailing the user after they have unsubscribed.
+With SendGrid’s Marketing Campaigns feature, the unique identifier is the email address. So, if you upload the same email address multiple times, the [custom field](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html) data associated with that email will be updated with each upload to the most recently uploaded/updated information. This feature helps prevent you from accidentally emailing the user after they have unsubscribed.
 
-What you may want to do is add logic to set a custom field, based on the reason why you have duplicate emails in your system (for example multiple product lines) and then segment your user to be in lists based on those custom fields.
-
-**‹ ** [Custom Fields](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html)
+What you may want to do is add logic to set a custom field, based on the reason why you have duplicate emails in your system (for example multiple product lines) and then [segment](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/lists.html) your user to be in lists based on those custom fields.
 
 
 {% anchor h2 %} Troubleshooting {% endanchor h2 %}

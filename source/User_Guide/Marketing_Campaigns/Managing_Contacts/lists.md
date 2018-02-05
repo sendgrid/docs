@@ -43,58 +43,51 @@ The operator tells the segment *how* to apply the condition.
 
 Depending on which condition is selected, the operators you can choose from differ. The operators assigned to custom fields will depend on the field type (Text, Date, or Number).  For example, a condition labeled "Number” will show `GREATER THAN`, `LESS THAN`, and `EQUALS` as options whereas a “Text” field will show `IS` and `IS NOT` as options.
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg .tg-s6z2{text-align:center}
-.tg .tg-e3zv{font-weight:bold}
-.tg .tg-yw4l{vertical-align:top}
-</style>
-<table class="tg">
+
+<table class="table" style="table-layout:fixed">
   <tr>
-    <th class="tg-e3zv">Operator</th>
-    <th class="tg-e3zv">Description</th>
+    <th> Operator</th>
+    <th> Description</th>
   </tr>
   <tr>
-    <td class="tg-s6z2">is</td>
-    <td class="tg-031e">data matches the text input exactly</td>
+    <td>is</td>
+    <td>data matches the text input exactly</td>
   </tr>
   <tr>
-    <td class="tg-031e">is not</td>
-    <td class="tg-031e">the data does not match the text input exactly</td>
+    <td>is not</td>
+    <td>the data does not match the text input exactly</td>
   </tr>
   <tr>
-    <td class="tg-031e">contains word</td>
-    <td class="tg-031e">data includes the text input</td>
+    <td>contains word</td>
+    <td>data includes the text input</td>
   </tr>
   <tr>
-    <td class="tg-031e">is before</td>
-    <td class="tg-031e">the date of the event is before the date selected</td>
+    <td>is before</td>
+    <td>the date of the event is before the date selected</td>
   </tr>
   <tr>
-    <td class="tg-yw4l">is after</td>
-    <td class="tg-yw4l">the date of the event is after the date selected</td>
+    <td>is after</td>
+    <td>the date of the event is after the date selected</td>
   </tr>
   <tr>
-    <td class="tg-yw4l">is within</td>
-    <td class="tg-yw4l">the date of the event is within a selected date range</td>
+    <td>is within</td>
+    <td>the date of the event is within a selected date range</td>
   </tr>
   <tr>
-    <td class="tg-yw4l">opened</td>
-    <td class="tg-yw4l">the contact opened an email from a campaign</td>
+    <td>opened</td>
+    <td>the contact opened an email from a campaign</td>
   </tr>
   <tr>
-    <td class="tg-yw4l">not opened</td>
-    <td class="tg-yw4l">the contact did not open an email from a campaign</td>
+    <td>not opened</td>
+    <td>the contact did not open an email from a campaign</td>
   </tr>
   <tr>
-    <td class="tg-yw4l">clicked</td>
-    <td class="tg-yw4l">the contact clicked a link within a campaign</td>
+    <td>clicked</td>
+    <td>the contact clicked a link within a campaign</td>
   </tr>
   <tr>
-    <td class="tg-yw4l">not clicked</td>
-    <td class="tg-yw4l">the contact did not click a link within a campaign</td>
+    <td>not clicked</td>
+    <td>the contact did not click a link within a campaign</td>
   </tr>
 </table>
 
