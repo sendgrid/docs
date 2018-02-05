@@ -87,27 +87,27 @@ Listed below are a few errors you may encounter when uploading a CSV to Marketin
 - If there is a header labeled “email”, try moving it to the column A, so it is the first header in your list.
 - Your CSV _must_ include an email header.
 
-![]({{root_url}}/images/listupload_1.png)
+![]({{root_url}}/img/listupload_1.png)
 
 {% anchor h3 %} Some of your custom fields have not been selected {% endanchor h3 %}
 
 - Look for hidden characters in your CSV file if you have worked with the file multiple times and made some adjustments to the data.
 - A common fix for this error would be to select all and copy your data to a new CSV spreadsheet. This should remove any hidden characters.
 
-![]({{root_url}}/images/listupload_2.png)
+![]({{root_url}}/img/listupload_2.png)
 
 {% anchor h3 %} Each custom field can only be applied to a column once. Please check your columns and try again {% endanchor h3 %}
 
 - Check your CSV for duplicate fields, especially fields that have matching information as your “email”, “first_name” and “last_name” fields. You cannot edit these field names as they are reserved. 
 - For example, if you have a “Name” field, it may conflict with your “first_name” reserved field.
 
-![]({{root_url}}/images/listupload_3.png)
+![]({{root_url}}/img/listupload_3.png)
 
 {% anchor h3 %} We were unable to detect any headers in your CSV file {% endanchor h3 %}
 
 - Include headers at the top of each column. All CSV uploads must contain the "email" header. Header fields can be blank in your CSV, but must be defined later during the upload process.
 
-![]({{root_url}}/images/listupload_4.png)
+![]({{root_url}}/img/listupload_4.png)
 
 {% anchor h3 %} Float type conversion error {% endanchor h3 %}
 
@@ -115,7 +115,7 @@ Listed below are a few errors you may encounter when uploading a CSV to Marketin
 Number fields can include monetary values without the currency symbols. For example, 19.95 would be a number field, and $19.95 including the ($) would be a text field.
 - As you are uploading your CSV, make sure you select the correct fields for your Field type.
 
-![]({{root_url}}/images/listupload_table.png)
+![]({{root_url}}/img/listupload_table.png)
 
 {% anchor h3 %}
 Additional Resources
