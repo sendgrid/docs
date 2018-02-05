@@ -12,7 +12,7 @@ seo:
 - [Creating a Segment](#-Creating-a-Segment)
 - [Exporting a Segment](#-Exporting-a-Segment)
 
-Using the information stored in your [contact lists](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html), you can filter the data to create segments. Segmenting contacts using different conditions allows you to create marketing campaigns that directly addresses the wants and needs of a particular audience. You can create a segment that pulls from ALL CONTACTS or a specific existing list. [Custom fields](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html) allow you to use unique information to identify contacts for different segments.
+You can filter the information stored in your [contact lists](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html) to create segments. Segmenting contacts using different conditions allows you to create marketing campaigns that directly addresses the wants and needs of a particular audience. You can create a segment that pulls from ALL CONTACTS or a specific existing list. [Custom fields](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html) allow you to use unique information to identify contacts for different segments.
 
 Segments are dynamically updated over time as you add contacts who meet the criteria of your segment, or as the traits of your contacts change. For example, a segment with the criteria ”opened an email within 30 days” will evolve as contacts engage (or don’t engage) with your email. 
 
