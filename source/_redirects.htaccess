@@ -898,3 +898,12 @@ Redirect 301 /Classroom/Track/Bounces/bounce_reports_how_can_i_be_notified.html 
 Redirect 301 /Classroom/Track/Bounces/bounce_forwarding_and_gmail.html https://sendgrid.com/docs/User_Guide/email_activity.html
 Redirect 301 /Classroom/Deliver/Undeliverable_Email/why_did_my_message_show_as_delivered_first_then_as_bounced.html https://sendgrid.com/docs/User_Guide/email_activity.html
 Redirect 301 /search.html https://sendgrid.com/docs
+
+
+#######
+#
+# Contacts
+#
+#######
+
+Redirect 301 /Classroom/Troubleshooting/Authentication/list_upload_troubleshooting.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/format_CSV.html

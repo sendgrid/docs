@@ -27,25 +27,7 @@ Your first 2,000 contacts are free. After 2,000 contacts, SendGrid charges $10 f
 Formatting a CSV
 {% endanchor %}
 
-You can easily add contacts to your contact database by uploading a CSV of your contacts to SendGrid. If you have your contacts in a spreadsheet, simply save that sheet as a .csv file using a spreadsheet application like Microsoft Excel or Google Sheets. You can also export your contacts from most database systems as a .csv file.
-
-{% warning %}
-Your CSV file MUST be in UTF-8 format.
-{% endwarning %}
-
-Your CSV should contain the following information about each contact:
-
-* email (required)
-* first_name
-* last_name
-
-You can also include custom fields with additional identifying information for each contact in the CSV. For example, you can specify “country,” “city,” and “age” as the custom fields. The data in the custom fields are critical for both segmentation and content personalization.
-
-The first row of your CSV must be a header row containing labels identifying each column. We have provided [an example CSV file]({{root_url}}/assets/example.csv) for you to look at. Headers must only use letters, numbers, and underscores. If you add custom field data to your CSV, you can save some time when uploading by naming the columns the same as the custom fields you have previously defined.
-
-{% info %}
-SendGrid identifies individual contacts by their email, so you must include ```email``` as one of the CSV headers. If you do not include the email column, SendGrid will not add any information to your contact database or list. Rows in your CSV without an email address in the email column will automatically fail, but will not cause the entire upload to fail.
-{% endinfo %}
+You can easily add contacts to your contact database by uploading a CSV of your contacts to SendGrid. If you have your contacts in a spreadsheet, simply save that sheet as a .csv file using a spreadsheet application like Microsoft Excel or Google Sheets. You can also export your contacts from most database systems as a .csv file. For more information, see the documentation on [Formatting a CSV](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/format_CSV.html).
 
 {% anchor h3 %}
 Uploading a CSV
@@ -82,7 +64,7 @@ Once we have completed processing your new contacts, you will receive an email t
 * Number of errors
 * Error messages for each errored row
 
-If there are any errors, there will be a link to download a CSV containing the errored rows so that you can reformat and reupload those contacts. For more help resolving issues with uploading a CSV, see [List Upload Troubleshooting](https://sendgrid.com/docs/Classroom/Troubleshoot ing/Authentication/list_upload_troubleshooting.html).
+If there are any errors, there will be a link to download a CSV containing the errored rows so that you can reformat and reupload those contacts. For more help resolving issues with uploading a CSV, see [Formatting a CSV](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/format_CSV.html).
 
 {% info %}
 The download link to your CSV of errored rows will be available for 24 hours.

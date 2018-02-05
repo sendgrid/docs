@@ -28,9 +28,8 @@ Email opt-in types
 - **Double Opt-in** refers to the practice of requesting permission twice from a recipient. For example, you could ask them if they want to receive email at registration, and then send another email asking them to verify their confirmation.
 - **Confirmed Opt-in** refers to the practice of sending emails to your recipients asking them to confirm their continued interest in receiving your future emails.
 
-
 {% info %}
-To avoid blocked emails, double check the spelling of the emails on your list. Common misspellings include: the domain (@ homail.com, @ gmal.com, etc.) or any piece of the address (@ gmail.cm, @ gmailcom, etc.). It helps to have the recipient input their address twice to ensure it is correct during the registration/sign-up process. Then to make sure the address is real, do a double opt-in (link to opt-in form).
+To avoid blocked emails, double check the spelling of the emails on your list. SendGrid recommends having the recipient input their address twice to ensure it is correct during the registration/sign-up process.
 {% endinfo %}
 
 {% anchor h2 %}
