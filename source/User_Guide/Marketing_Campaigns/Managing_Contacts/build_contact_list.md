@@ -12,7 +12,8 @@ seo:
 * [Opt-In Email](#-Opt--In-Email)
   * [Email opt-in types](#-Email-opt--in-types)
 * [Peer-Initiated Email Invitation Requirements](#-Peer--Initiated-Email-Invitation-Requirements)
-  
+
+The best way to protect your sending reputation and get more messages in the inbox is by building your contact list organically. Here are a few ways SendGrid recommends building your contact list. 
 
 {% anchor h2 %}
 Opt-In Email

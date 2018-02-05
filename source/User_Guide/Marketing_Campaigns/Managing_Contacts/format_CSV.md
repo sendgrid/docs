@@ -18,10 +18,7 @@ seo:
   * [Date Formatting](#-Date-Formatting)
 * [Troubleshooting](#-Troubleshooting)
   
-
-
 You can easily add contacts to your contact database by uploading a CSV of your contacts to SendGrid. If you have your contacts in a spreadsheet, simply save that sheet as a .csv file using a spreadsheet application like Microsoft Excel or Google Sheets. You can also export your contacts from most database systems as a .csv file.
-
 
 {% anchor h2 %} General Formatting Rules {% endanchor h2 %}
 
