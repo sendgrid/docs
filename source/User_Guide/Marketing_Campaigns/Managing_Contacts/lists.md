@@ -35,7 +35,7 @@ You can create up to 200 segments.
 1. Enter a *Segment Name*.
 1. To segment an existing list, select a list from the *Select List to Segment* drop-down. 
 1. From the *Select Condition* drop-down, choose the desired condition or custom field.
-1. From *Select Criteria* drop-down choose from a list of available operators based on the chosen condition.
+1. From the *Select Criteria* drop-down, choose from a list of available operators based on the chosen condition.
 
 {% info %}
 The operator tells the segment *how* to apply the condition.

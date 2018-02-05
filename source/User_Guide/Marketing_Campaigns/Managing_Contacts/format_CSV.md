@@ -4,7 +4,7 @@ weight: 0
 title: Formatting a CSV
 navigation:
   show: true
-seo:
+seo: CSV, Email, Contacts, Contact Info, Date Formatting, Character Encoding
   title: Formatting a CSV
   override: true
   description: Directions on how to format a CSV in order to upload it to Marketing Campaigns. 
@@ -74,9 +74,9 @@ Properly format any dates in your CSV. If you created your CSV with Excel and it
 
 {% anchor h3 %} I have more than one of the same email in my database {% endanchor h3 %}
 
-With SendGrid’s Marketing Campaigns feature, the unique identifier is the email address. So, if you upload the same email address multiple times, the [custom field](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html) data associated with that email will be updated with each upload to the most recently uploaded/updated information. This feature helps prevent you from accidentally emailing the user after they have unsubscribed.
+Marketing Campaigns uses email as the unique identifier for each contact. So, if you upload the same email address multiple times, the [custom field](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html) data associated with that email will be updated with each upload to the most recently uploaded/updated information. This feature helps prevent you from accidentally emailing the user after they have unsubscribed.
 
-What you may want to do is add logic to set a custom field, based on the reason why you have duplicate emails in your system (for example multiple product lines) and then [segment](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/lists.html) your user to be in lists based on those custom fields.
+If it's necessary to have a duplicate entry in your contacts database What you may want to do is add logic to set a custom field, based on the reason why you have duplicate emails in your system (for example multiple product lines) and then [segment](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/lists.html) your user to be in lists based on those custom fields.
 
 {% anchor h2 %} Troubleshooting {% endanchor h2 %}
 
