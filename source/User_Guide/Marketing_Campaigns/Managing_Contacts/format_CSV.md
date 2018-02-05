@@ -35,9 +35,10 @@ Your CSV file MUST be in UTF-8 format.
 
 Your CSV should contain the following information about each contact:
 
-email (required)
-first_name
-last_name
+* email (required)
+* first_name
+* last_name
+
 You can also include [custom fields](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html) with additional identifying information for each contact in the CSV. For example, you can specify “country,” “city,” and “age” as the custom fields. The data in the custom fields are critical for both segmentation and content personalization.
 
 {% anchor h3 %} Header Row {% endanchor h3 %}
