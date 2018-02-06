@@ -102,6 +102,7 @@ Listed below are a few errors you may encounter when uploading a CSV to Marketin
 ![]({{root_url}}/img/listupload_2.png)
 
 **Each custom field can only be applied to a column once. Please check your columns and try again**
+
 - Check your CSV for duplicate fields, especially fields that have matching information as your “email”, “first_name” and “last_name” fields. You cannot edit these field names as they are reserved. 
 - For example, if you have a “Name” field, it may conflict with your “first_name” reserved field.
 
