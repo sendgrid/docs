@@ -108,6 +108,12 @@ Groovy
 -   [grails-sendgrid](http://github.com/aiten/grails-sendgrid) *by Antony Jones* - Grails framework plugin
 
 {% anchor h3 %}
+Haskell
+{% endanchor %}
+
+-   [sendgrid-v3](https://github.com/marcelbuesing/sendgrid-v3) *by Marcel Buesing* - Haskell package for sending Mails via the SendGrid v3 Mail API
+
+{% anchor h3 %}
 Java
 {% endanchor %}
 

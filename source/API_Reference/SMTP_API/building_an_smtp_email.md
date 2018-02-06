@@ -12,13 +12,14 @@ navigation:
 Now that you've sent a [sent a test SMTP email with Telnet]({{root_url}}/API_Reference/SMTP_API/getting_started_smtp.html), and [integrated with SendGrid]({{root_url}}/API_Reference/SMTP_API/integrating_with_the_smtp_api.html), it's time to build content.
 
 - [Getting started building](#-Getting-started-building)
-- [Customizing Your Send](#-Customizing-your-send)
-   - [Scheduling Your Send](#-Scheduling-your-send)
-   - [Substitution Tags](#-Substitution-tags)
-   - [Section Tags](#-Section-tags)
-   - [Suppression Groups](#-Suppression-groups)
+   - [Limitations](#-Limitations)
+- [Customizing Your Send](#-Customizing-your-send-filters)
+   - [Scheduling Your Send](#-Scheduling-Your-Send)
+   - [Substitution Tags](#-Substitution-Tags)
+   - [Section Tags](#-Section-Tags)
+   - [Suppression Groups](#-Suppression-Groups)
    - [Categories](#-Categories)
-   - [Unique Arguments](#-Unique-arguments)
+   - [Unique Arguments](#-Unique-Arguments)
 
 {% anchor h2 %}
 Getting started building
@@ -69,7 +70,7 @@ Limitations
 {% endanchor %}
 
 - There is a hard limit of 10,000 addresses in a multiple recipient e-mail. However, the best practice is to split up large jobs to around 1,000 recipients - this allows better processing load distribution. If you have a large number of additional substitutions or sections in the headers, it is best to split the send into even smaller groups.
-- When using the X-SMTPAPI to send to multiple recipients, you cannot use the standard SMTP protocols "TO" field to send to multiple recipients because doing so can generate duplicate messages to the addresses listed in both. For more information, see <a href="http://tools.ietf.org/html/rfc821"> RFC 821
+- When using the X-SMTPAPI to send to multiple recipients, you cannot use the standard SMTP protocols "TO" field to send to multiple recipients because doing so can generate duplicate messages to the addresses listed in both. For more information, see <a href="https://tools.ietf.org/html/rfc5321">RFC 5321</a>.
 - Ensure that the header is limited to a maximum total line length of 1,000 characters. Failure to do this can cause intermediate MTA's to split the header on non-space boundaries- this causes inserted spaces in the final e-mail. If your e-mail is going through another MTA before reaching SendGrid, it is likely to have an even lower setting for maximum header length and may truncate the header.
 - When using the API, if our system encounters a parsing error, the message will be bounced to the address specified in the MAIL FROM portion of the SMTP session. The MAIL FROM address is re-written when we send the e-mail out for final delivery, so it is safe to set this to an address that can receive the bounces so that you will be alerted to any errors.
 - When sending Unicode characters via the SMTP API, you should escape these characters using the `\u` escape character. When you do this, Unicode characters like ` á` becomes `\u00E1`.

@@ -32,6 +32,47 @@ The following new features and changes to the service are available.
 </table>
 
 {% anchor h2 %}
+1 March 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Taxes
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/pricing_icon.png" alt="An update to a price"></td>
+    <td>SendGrid is now charging taxes to customers whose billing address is in Denver, Colorado, Boulder, Colorado, Chicago, Illinois, Washington state, New York state, and Texas. Taxes are billed as an addition on your monthly invoice. For more information about taxes, or how to let us know if you have tax-exempt status, see [tax information and FAQs]({{root_url}}/User_Guide/Settings/taxes_and_tax_exempt.html).</td>
+  </tr>
+</table>
+
+{% anchor h2 %}
+04 January 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Table & Column Rendering in Outlook
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI"></td>
+    <td>We've resolved a bug affecting the way that tables/columns were rendering in some versions of Outlook.</td>
+  </tr>
+</table>
+
+{% anchor h3 %}
+Easier Segmentation Through Search
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI"></td>
+    <td>We've added the ability to search for custom fields within the drop-down, when creating a segment. Formerly, you were only able to scroll and select.</td>
+  </tr>
+</table>
+
+{% anchor h2 %}
 20 December 2017
 {% endanchor %}
 
