@@ -16,7 +16,7 @@ seo:
   * [Organizing your list](#-Organizing-your-list)
   * [Delete unusable contacts](#-Delete-unusable-contacts)
   * [Delete a specific contact](#-Delete-a-specific-contact)
-  * [Delete all contacts](#-Delete-All-Contacts)
+  * [Delete all contacts](#-Delete-all-contacts)
 
 
 Managing contacts is an integral part of your marketing campaigns lifecycle. You can create lists for contacts, as well as view and edit each individual contact within your contact database
