@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-This article outlines how to create a new Subuser and how to Whitelabel that Subuser to a new sending domain. In order to Whitelabel a new Subuser to a new sending domain, you must have already purchased a new sending IP from SendGrid. **An IP can be Whitelabeled to only one sending domain**. If you need to send mail on behalf of several domains, you need to purchase an IP for each of these domains. Additional IPs will cost an 20USD per month/per IP charge, but can be added as needed. Please [contact support](https://support.sendgrid.com) to purchase a new sending IP. 
+This article outlines how to create a new Subuser and how to Whitelabel that Subuser to a new sending domain. In order to Whitelabel a new Subuser to a new sending domain, you must have already purchased a new sending IP from SendGrid. **An IP can be Whitelabeled to only one sending domain**. If you need to send mail on behalf of several domains, you need to purchase an IP for each of these domains. Additional IPs will cost $30.00 USD per month/per IP charge, but can be added as needed. Please [contact support](https://support.sendgrid.com) to purchase a new sending IP. 
 
  
 
