@@ -30,7 +30,9 @@ General rules to follow when formatting a CSV to upload into Marketing Campaigns
 Your CSV file MUST be in UTF-8 format.
 {% endinfo %}
 
-{% anchor h3 %} Contact Info {% endanchor h3 %}
+{% anchor h3 %} 
+Contact Info 
+{% endanchor %}
 
 Your CSV should contain the following information about each contact:
 
