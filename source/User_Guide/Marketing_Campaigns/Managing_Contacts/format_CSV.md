@@ -92,7 +92,7 @@ If it's necessary to have a duplicate entry in your contacts database What you m
 
 Listed below are a few errors you may encounter when uploading a CSV to Marketing Campaigns, along with tips to correct the root issue. 
 
-{% anchor h3 %} We were unable to detect an email column in the CSV file headers. The email column must always have a header of "email" {% endanchor h3 %}
+**We were unable to detect an email column in the CSV file headers. The email column must always have a header of "email"**
 
 - If there is a header labeled “email”, try moving it to the column A, so it is the first header in your list.
 - Your CSV _must_ include an email header.
@@ -107,7 +107,6 @@ Listed below are a few errors you may encounter when uploading a CSV to Marketin
 ![]({{root_url}}/img/listupload_2.png)
 
 **Each custom field can only be applied to a column once. Please check your columns and try again**
-
 - Check your CSV for duplicate fields, especially fields that have matching information as your “email”, “first_name” and “last_name” fields. You cannot edit these field names as they are reserved. 
 - For example, if you have a “Name” field, it may conflict with your “first_name” reserved field.
 
@@ -129,7 +128,7 @@ Number fields can include monetary values without the currency symbols. For exam
 
 {% anchor h3 %}
 Additional Resources
-{% endanchor h3 %}
+{% endanchor %}
 
 - [Contacts API](https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html)
 - [Segmenting your Contacts](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/lists.html)

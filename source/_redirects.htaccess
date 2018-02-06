@@ -877,6 +877,35 @@ Redirect 301 /Classroom/Basics/Misc/automated_ip_warmup.html https://sendgrid.co
 
 #######
 #
+#  Billing Redirects
+#
+#######
+
+Redirect 301 /Classroom/Basics/Billing/when_do_credits_reset.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
+Redirect 301 /Classroom/Basics/Billing/how_to_read_your_invoice.html https://sendgrid.com/docs/User_Guide/Settings/reading_your_invoice.html
+Redirect 301 /Classroom/Basics/Billing/update_your_credit_card_and_resubmit_payments.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
+Redirect 301 /Classroom/Basics/Billing/lite_account_minimum_charge.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
+Redirect 301 /Classroom/Basics/Billing/legacy_lite_plan.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
+Redirect 301 /Classroom/Basics/Billing/is_your_account_billing_warned.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
+Redirect 301 /Classroom/Basics/Billing/is_your_account_billing_frozen.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
+Redirect 301 /Classroom/Basics/Billing/index.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
+Redirect 301 /Classroom/Basics/Billing/i_would_like_to_request_a_refund.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
+Redirect 301 /Classroom/Basics/Billing/i_would_like_to_request_a_refund.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
+Redirect 301 /Classroom/Basics/Billing/how_does_overage_pricing_work.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
+Redirect 301 /Classroom/Basics/Billing/how_does_billing_work_for_marketing_campaigns.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
+Redirect 301 /Classroom/Basics/Billing/how_does_billing_work_for_legacy_newsletter.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
+Redirect 301 /Classroom/Basics/Billing/how_do_i_upgrade_or_downgrade_my_account.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
+Redirect 301 /Classroom/Basics/Billing/forgot_to_cancel_or_upgrade.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
+Redirect 301 /Classroom/Basics/Billing/did_you_receive_a_billing_notification.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
+Redirect 301 /Classroom/Basics/Billing/billing_info_and_faqs.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
+Redirect 301 /Classroom/Basics/Account/why_are_the_pro_plans_recommended_above_all_others.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
+Redirect 301 /Classroom/Basics/Account/sending_practices.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
+Redirect 301 /Classroom/Basics/Billing/index.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
+Redirect 301 /Classroom/Basics/Billing/where_can_i_find_my_invoices.html https://sendgrid.com/docs/User_Guide/Settings/reading_your_invoice.html
+Redirect 301 /Classroom/Basics/Billing/alternate_payment_methods.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
+
+#######
+#
 #  Email Events
 #
 #######
@@ -909,3 +938,4 @@ Redirect 301 /search.html https://sendgrid.com/docs
 Redirect 301 /Classroom/Troubleshooting/Authentication/list_upload_troubleshooting.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/format_CSV.html
 Redirect 301 /User_Guide/Marketing_Campaigns/contacts.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/contacts.html
 Redirect 301 /Classroom/Basics/Marketing_Campaigns/how_to_remove_unusable_contacts.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html
+

@@ -21,7 +21,7 @@ A Blacklist is a list of IP addresses that have been detected sending unsolicite
 
 All major ISPs use some form of blacklisting service to protect their customers from malicious emails, although the deliverability impact can vary depending on the blacklisting service that lists the IP. If you find that your IP address is on the blacklist of one the many legitimate services, then submit a delisting request.
 
-SemdGrid keeps a close eye on our IP’s, and we try as quickly as possible to resolve any issues with blacklists. However, getting your IP off the blacklist often requires the user sending the mail to contact the ISP.  
+SendGrid keeps a close eye on our IP’s, and we try as quickly as possible to resolve any issues with blacklists. However, getting your IP off the blacklist often requires the user sending the mail to contact the ISP.  
 
 {% anchor h2 %}
 Delisting Shared IP Plans
