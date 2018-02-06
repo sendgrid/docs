@@ -10,7 +10,7 @@ seo:
   description: Directions on how to format a CSV for upload using SendGrid Marketing Campaigns
 ---
 
-  * [General Formatting Rules](#-General-Formatting-Rules)
+* [General Formatting Rules](#-General-Formatting-Rules)
   * [Contact Info](#-Contact-Info)
   * [Header Row](#-Header-Row)
   * [Character Encoding](#-Character-Encoding)
@@ -18,17 +18,13 @@ seo:
   * [Date Formatting](#-Date-Formatting)
 * [Troubleshooting](#-Troubleshooting)
   
-You can easily add contacts to your contact database by uploading a CSV of your contacts to SendGrid. If you have your contacts in a spreadsheet, simply save that sheet as a .csv file using a spreadsheet application like Microsoft Excel or Google Sheets. You can also export your contacts from most database systems as a .csv file.
+You can easily add contacts to your contact database by uploading a CSV into Marketing Campaigns. If you have your contacts in a spreadsheet, simply save that sheet as a .csv file using a spreadsheet application like Microsoft Excel or Google Sheets. You can also export your contacts from most database systems as a .csv file.
 
 {% anchor h2 %} 
 General Formatting Rules
 {% endanchor %}
 
 General rules to follow when formatting a CSV to upload into Marketing Campaigns.
-
-{% info %}
-Your CSV file MUST be in UTF-8 format.
-{% endinfo %}
 
 {% anchor h3 %} 
 Contact Info 
@@ -48,7 +44,7 @@ Header Row
 
 The first row of your CSV must be a header row containing labels identifying each column. Headers must only use letters, numbers, and underscores. If you add custom field data to your CSV, you can save some time when uploading by naming the columns the same as the custom fields you have previously defined.
 
-SendGrid identifies individual contacts by their email address, so you must include "email" as one of the CSV headers. If you do not include the email column, SendGrid will not add any information to your contact database or list. Rows in your CSV without an email address in the email column will automatically fail, but will not cause the entire upload to fail.
+SendGrid identifies individual contacts by their email address, so "email" must be one of the CSV headers. If you do not include the email column, SendGrid will not add any information to your contact database or list. Rows in your CSV without an email address in the email column will automatically fail, but will not cause the entire upload to fail.
 
 {% anchor h3 %} 
 Character Encoding 
@@ -58,8 +54,7 @@ If your contacts list has non-English characters, please make sure that you're u
 
 {% anchor h3 %} Not all addresses populate in UI {% endanchor %}
 
-SendGrid will remove duplicate and invalid email addresses (including email addresses with special characters) from your list during upload, so the number of contacts can potentially change between your CSV and your Marketing Campaigns list.
-
+SendGrid removes duplicate and invalid email addresses (including email addresses with special characters) from your list during upload, so the number of contacts can potentially change between your CSV and your Marketing Campaigns list.
 
 {% anchor h3 %} Numbers and Text {% endanchor %}
 
@@ -74,8 +69,6 @@ Make sure that you don’t have text fields that look like numbers. Text that lo
 
 - Header fields can be blank in your CSV, but must be named and have their type defined later during the upload process.
 
-![]({{root_url}}/images/listupload_5.png)
-
 {% anchor h3 %}
 Date Formatting 
 {% endanchor %}
@@ -88,7 +81,9 @@ Marketing Campaigns uses email as the unique identifier for each contact. So, if
 
 If it's necessary to have a duplicate entry in your contacts database What you may want to do is add logic to set a custom field, based on the reason why you have duplicate emails in your system (for example multiple product lines) and then [segment](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/lists.html) your user to be in lists based on those custom fields.
 
-**Troubleshooting**
+{% anchor h2 %}
+Troubleshooting
+{% endanchor %}
 
 Listed below are a few errors you may encounter when uploading a CSV to Marketing Campaigns, along with tips to correct the root issue. 
 
