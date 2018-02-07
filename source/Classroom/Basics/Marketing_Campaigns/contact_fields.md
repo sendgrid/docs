@@ -15,7 +15,7 @@ navigation:
 
 Every contact in Marketing Campaigns starts with a unique email address. From there, you can enrich each of your contact profiles by adding additional descriptive data in the form of custom fields and reserved fields. SendGrid will also provide engagement data for each contact you upload and deliver email to.
 
-These various customer data points are extremely useful when creating [dynamic segments]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/lists.html#-Createing-a-Segment) of your recipients or customizing campaign content with substitution tags.
+These various customer data points are extremely useful when creating [dynamic segments]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/lists.html#-Creating-a-Segment) of your recipients or customizing campaign content with substitution tags.
 
 {% anchor h2 %}
 Reserved Fields
