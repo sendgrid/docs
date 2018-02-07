@@ -116,7 +116,7 @@ Add Contacts to a List
 1. Click **Save**.
 
 {% info %}
-If you [create a segment]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html#-Create-a-Segment) before you upload a list, contacts that fit the segment criteria populate that segment when uploaded.
+If you [create a segment]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/lists.html#-Creating-a-Segment) before you upload a list, contacts that fit the segment criteria populate that segment when uploaded.
 {% endinfo %}
 
 {% anchor h3 %}

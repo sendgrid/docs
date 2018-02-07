@@ -303,7 +303,7 @@ You can segment based on customer data (like city or gender) as well as engageme
 
 As an example, you could send a different email to “Chicago customers who opened campaign X” than “San Francisco customers who opened Campaign X.” Doing so helps you add more value to your recipients’ inboxes, helping you achieve your engagement and revenue goals along the way.
 
-Learn more about Segmentation with Marketing Campaigns within our [Documentation]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html#-Create-a-Segment).
+Learn more about Segmentation with Marketing Campaigns within our [Documentation]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/lists.html#-Create-a-Segment).
 
 {% anchor h3 %}
 How is a list different from a segment?
@@ -313,7 +313,7 @@ Lists are simply static collections of Marketing Campaigns contacts. You can upl
 
 Segments are dynamic collections of Marketing Campaigns contacts grouped together, or segmented, based on criteria you define. This can include data you track about them, such as gender, location, or package type, or how they’ve engaged with your emails previously. You can create a segment that pulls from all of your Marketing Campaigns contacts or from a specific existing list you’ve created.
 
-Learn more about Lists and Segments within our [documentation]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html).
+Learn more about Lists and Segments within our [documentation]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/lists.html).
 
 {% anchor h3 %}
 How do I create a segment?
