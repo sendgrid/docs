@@ -22,7 +22,7 @@ You can create up to 120 custom fields.
 Create a Custom Field
 {% endanchor %}
 
-Before you can create a custom field in the SendGrid app, you need to [format](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html#-Formatting-a-CSV) and [upload](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html#-Uploading-a-CSV) a CSV to your contacts database. 
+Before you can create a custom field in the SendGrid app, you need to [format](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/format_CSV.html and [upload](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts_contacts.html#-Uploading-a-CSV) a CSV to your contacts database. 
 
 *To add custom a field:* 
 
@@ -32,7 +32,7 @@ Before you can create a custom field in the SendGrid app, you need to [format](h
 1. Click **Save**. 
 
 The field name should be created using only alphanumeric characters (A-Z and 0-9) and underscores “_”. The field type can
-be date, text, or number fields. The *field type* is important for creating [segments](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/lists.html) from your contact
+be date, text, or number fields. The *field type* is important for creating [segments](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts_lists.html) from your contact
 database. 
 
 You can query your list in different ways, based on the data type:
