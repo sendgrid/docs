@@ -71,6 +71,6 @@ Deleting a custom field deletes all values for that field across your contact da
 Additional Resources
 {% endanchor h3 %}
 
-- [Substitution Tags](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Substitution-Tags)
-- [Contacts](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html)
-- [Creating and exporting segments](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/lists.html)
+- [Substitution Tags](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/editor.html#-Using-Substitution-Tags)
+- [Contacts](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/contacts.html)
+- [Creating and exporting segments](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/lists.html)
