@@ -323,7 +323,7 @@ To create a segment, you’ll first need to upload your recipients (and associat
 
 Once your contacts are stored in Marketing Campaigns, you’ll leverage the user interface to define the conditions of your segment. These can be either data about your recipients that you’ve included in your upload (such as name, gender, package type, etc.) or how they’ve engaged with your emails previously (such as last clicked date, opening a particular campaign, or both!).
 
-For step-by-step instructions on creating a segment, see our [documentation]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html#-Create-a-Segment).
+For step-by-step instructions on creating a segment, see our [documentation]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/lists.html#-Creating-a-Segment).
 
 {% anchor h2 %}
 Statistics
