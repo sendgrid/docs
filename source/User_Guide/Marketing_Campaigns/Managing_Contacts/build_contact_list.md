@@ -46,8 +46,6 @@ A peer-initiated invitation system can help your subscribers spread the word abo
 1. Clearly express the purpose of the invitation. Recipients must understand what they are being invited to.
 1. After the initial invitation, don’t send more than one follow-up (reminder) email to invitees that didn’t respond to the first invitation.
 
-You increase the odds of your invitations reaching the recipient when you structure your systems and processes to send the right message, to the right person, at the right time, with the right frequency. If you don’t, your messages will be marked as spam and your marketing results will suffer. Avoid those pitfalls.
-
 SendGrid strongly recommends:
 
 * Ensuring your invitation is relevant and valued by the recipient.

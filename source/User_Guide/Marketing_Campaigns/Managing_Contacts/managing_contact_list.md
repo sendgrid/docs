@@ -19,7 +19,7 @@ seo:
 
 Managing contacts is an integral part of your marketing campaigns lifecycle. You can create lists for contacts, as well as view and edit each individual contact within your contact database
 
-{% anchor h3 %}
+{% anchor h2 %}
 Viewing a contact
 {% endanchor %}
 
@@ -31,7 +31,7 @@ Searches are case agnostic but must be done using a whole email address that inc
 
 To view any custom fields you have assigned to this contact, or to view any lists that you have added this contact to, you may flip through the tabs beneath the Contact Details. You may either view all custom fields at once, or you can filter them by the following types: “Text”, “Date”, and “Number”.
 
-{% anchor h3 %}
+{% anchor h2 %}
 Editing a contact
 {% endanchor %}
 
@@ -43,7 +43,7 @@ When you are viewing a contact, click any of the Edit buttons to edit the contac
 1. Enter or select the list you would like to use.
 1. Click **Add**.
 
-{% anchor h3 %}
+{% anchor h2 %}
 Managing your list
 {% endanchor %}
 
