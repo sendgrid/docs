@@ -158,9 +158,9 @@ The ability to segment your contacts into meaningful recipient groups is a core 
 What is the additional value of Marketing Campaigns vs. Legacy Newsletter?
 {% endanchor %}
 
-**[Segmentation:]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html)** Send more targeted, relevant email to your recipients by leveraging data about your customers as well as how they’ve [engaged with your emails]({{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html#-Create-a-Segment-Based-On-Your-Engagement-Metrics).
+**[Segmentation:]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/lists.html)** Send more targeted, relevant email to your recipients by leveraging data about your customers as well as how they’ve [engaged with your emails]({{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html#-Create-a-Segment-Based-On-Your-Engagement-Metrics).
 
-**[Contact management:]({{root_url}}/User_Guide/Marketing_Campaigns/contacts.html)** Gain visibility into contact details such as custom data (name, city, etc.), associated lists, last campaign engagement dates, and more with individual contact profiles that are dynamically updated.
+**[Contact management:]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/contacts.html)** Gain visibility into contact details such as custom data (name, city, etc.), associated lists, last campaign engagement dates, and more with individual contact profiles that are dynamically updated.
 
 **[Visibility into user engagement:]({{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html#-Engagement-Statistics)** Marketing campaigns will show you which customers opened and/or clicked your email campaigns. You can also see which individual links in your campaigns were clicked most frequently.
 

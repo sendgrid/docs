@@ -27,7 +27,7 @@ Your first 2,000 contacts are free. After 2,000 contacts, SendGrid charges $10 f
 Formatting a CSV
 {% endanchor %}
 
-You can easily add contacts to your contact database by uploading a CSV of your contacts to SendGrid. If you have your contacts in a spreadsheet, simply save that sheet as a .csv file using a spreadsheet application like Microsoft Excel or Google Sheets. You can also export your contacts from most database systems as a .csv file. For more information, see the documentation on [Formatting a CSV](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/format_CSV.html).
+You can easily add contacts to your contact database by uploading a CSV of your contacts to SendGrid. If you have your contacts in a spreadsheet, simply save that sheet as a .csv file using a spreadsheet application like Microsoft Excel or Google Sheets. You can also export your contacts from most database systems as a .csv file. For more information, see the documentation on [Formatting a CSV](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/format_CSV.html).
 
 {% anchor h3 %}
 Uploading a CSV
@@ -49,7 +49,7 @@ Uploading a CSV
 1. Once you've gone through all of the headers, click **Save Contacts**.
 
 {% info %}
-After uploading contacts, you can define segments for individual contacts or lists based on specified criteria. For more information, see [Lists and Segmentation](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/lists.html).
+After uploading contacts, you can define segments for individual contacts or lists based on specified criteria. For more information, see [Lists and Segmentation](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/lists.html).
 {% endinfo %}
 
 {% warning %}
@@ -123,5 +123,5 @@ Additional Resources
 {% endanchor h3 %}
 
 - [Contacts API](https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html)
-- [Segmenting your Contacts](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/lists.html)
+- [Segmenting your Contacts](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/lists.html)
 - [Building your Contact list](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/build_contact_list.html)
