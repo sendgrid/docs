@@ -7,6 +7,7 @@ navigation:
 seo:
   title: Managing Contact Lists
   override: true
+  keywords: Marketing Campaigns Contacts, delete contacts, organize contacts
   description: Directions on how to manage contact lists using Marketing Campaigns
 ---
   * [Viewing a contact](#-Viewing-a-contact)

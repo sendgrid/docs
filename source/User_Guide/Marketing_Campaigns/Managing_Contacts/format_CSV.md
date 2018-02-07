@@ -4,8 +4,9 @@ weight: 80
 title: Formatting a CSV
 navigation:
   show: true
-seo:
+seo: 
   title: Formatting a CSV
+  keywords: Marketing Campaigns Contacts, CSV, Contact Information, Contacts
   override: true
   description: Directions on how to format a CSV for upload using SendGrid Marketing Campaigns
 ---

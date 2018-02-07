@@ -4,8 +4,9 @@ weight: 55
 title: Using Custom Fields
 navigation:
   show: true
-seo:
+seo: 
   title: Using Custom Fields
+  keywords: Custom Fields, Personalization, customized email
   override: true
   description: Custom fields help you segment your lists dynamically based on your user information.
 ---

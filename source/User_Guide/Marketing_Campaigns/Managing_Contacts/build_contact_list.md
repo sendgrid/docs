@@ -4,8 +4,9 @@ weight: 100
 title: Building your Contact list
 navigation:
   show: true
-seo:
+seo: 
   title: Building your Contact list
+  keywords: Marketing Campaigns, Contacts, Contact lists, opt-in email
   override: true
   description: Directions on how to effectively build your Marketing Campaigns Contact list.
 ---

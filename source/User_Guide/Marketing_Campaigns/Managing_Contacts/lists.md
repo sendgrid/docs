@@ -4,8 +4,9 @@ weight: 70
 title: Segmenting your Contacts
 navigation:
   show: true
-seo:
+seo: 
   title: Segmenting your Contacts
+  keywords: Segmentation, email segmentation, targeted marketing, email, marketing campaigns
   override: true
   description:
 ---

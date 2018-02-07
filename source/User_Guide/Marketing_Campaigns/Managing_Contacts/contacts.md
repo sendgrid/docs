@@ -4,8 +4,9 @@ weight: 90
 title: Adding Contacts
 navigation:
   show: true
-seo:
+seo: 
   title: Adding Contacts
+  keywords: Marketing Contacts, Adding Contacts, Contact Lists
   override: true
   description: Directions on how to add and manage contacts using Marketing Campaigns
 ---
