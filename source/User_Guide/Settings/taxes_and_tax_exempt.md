@@ -7,11 +7,19 @@ title: Sales Taxes and Tax-Exempt Status
 weight: 0
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 - [Declaring tax-exempt status](#-Declaring-tax-exempt-status)
+- [Declaring reseller status](#-Declaring-reseller-status)
 - [Tax FAQ](#-Tax-FAQ)
+    - [Why does SendGrid collect sales tax?](#-Why-does-SendGrid-collect-sales-tax)
+    - [Who is required to pay sales tax?](#-Who-is-required-to-pay-sales-tax)
+    - [Where can I see how much I am getting charged for sales tax each month?](#-Where-can-I-see-how-much-I-am-getting-charged-for-sales-tax-each-month)
+    - [Can I get an estimate of my sales tax?](#-Can-I-get-an-estimate-of-my-sales-tax)
+    - [Will my tax amount vary from month to month?](#-Will-my-tax-amount-vary-from-month-to-month)
+    - [How does SendGrid calculate the sales tax owed?](#-How-does-SendGrid-calculate-the-sales-tax-owed)
+    - [Other questions?](#-Other-questions)
 
 SendGrid now collects sales tax in 7 jurisdictions: Denver, Colorado, Boulder, Colorado, Chicago, Illinois, Washington state, New York state, and Texas. We assign tax jurisdiction by the billing address you have in our system. If your billing address is in one of these jurisdictions, and you don't have 501(c)(3) tax-exempt status, you will see a line for sales tax [on your invoice]({{root_url}}/User_Guide/Settings/reading_your_invoice.html). For more information about declaring your tax-exempt status, see [Declaring tax-exempt status](#-Declaring-tax-exempt-status).
 

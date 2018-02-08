@@ -32,21 +32,6 @@ The following new features and changes to the service are available.
 </table>
 
 {% anchor h2 %}
-1 March 2018
-{% endanchor %}
-
-{% anchor h3 %}
-Taxes
-{% endanchor %}
-
-<table class="table" style="width: 100%;">
-  <tr>
-    <td style="width:75px; height:75px"><img src="{{root_url}}/images/pricing_icon.png" alt="An update to a price"></td>
-    <td>SendGrid is now collecting sales tax from its customers whose billing address is in Denver, Colorado, Boulder, Colorado, Chicago, Illinois, Washington state, New York state, and Texas. Sales tax is billed as one or more separate line items on your monthly invoice. For more information about sales tax, or how to let us know if you have tax-exempt status, see [tax information and FAQs]({{root_url}}/User_Guide/Settings/taxes_and_tax_exempt.html).</td>
-  </tr>
-</table>
-
-{% anchor h2 %}
 04 January 2018
 {% endanchor %}
 
