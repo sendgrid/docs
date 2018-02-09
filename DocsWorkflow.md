@@ -1,4 +1,4 @@
-How To Edit the SendGrid Docs via GitHub
+# How To Edit the SendGrid Docs via GitHub
 
 Editing the SendGrid Documentation is easy!
 If you see an error, a typo, or have something you would like to add, you can make your suggestion via GitHub, the content management system we use for the Docs. Once you have submitted your suggestion, the Docs team can easily review it before it is published to the Docs website.
