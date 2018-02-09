@@ -7,17 +7,17 @@ To make changes to any page on http://sendgrid.dom/docs, follow these simple ste
 
 1. Navigate to the page you would like to edit and click **View and Edit** in the upper right-hand corner.
 
-![]({{root_url}}/img/docs_view_and_edit.png)
+![](https://github.com/Whatthefoxsays/docs/blob/github-cheatsheet/source/img/docs_view_and_edit.png)
 
 This will take you to the sendgrid.com/docs GitHub repository, or repo. This is where our docs pages are stored.
 
 2. If you do not already have a GitHub account, you will have to create one in order to suggest a change. Click the Sign up link in the upper right-hand corner to create an account. Enter your username, password, and email address. Please use your full name with your GitHub account and enter SendGrid as your company so we can easily identify you.  
 
-![]({{root_url}}/img/docs_signup.png)
+![](https://github.com/Whatthefoxsays/docs/blob/github-cheatsheet/source/img/docs_signup.png)
 
 Once you are viewing a Docs page in GitHub, simply click the pencil icon to begin editing:
 
-![]({{root_url}}/img/docs_edit_github.png)
+![](https://github.com/Whatthefoxsays/docs/blob/github-cheatsheet/source/img/docs_edit_github.png)
 
 
 3. Once you have made your changes, you will be given the option of creating a new branch in a Pull Request. This is a request to create a copy, or branch, of the original Docs but with your changes. Once your changes are approved, your branch will then be merged back into the original. 
@@ -28,9 +28,8 @@ Once you are viewing a Docs page in GitHub, simply click the pencil icon to begi
 
 5. When done, click **Propose file change**. The Docs Team will be notified of your request. Once we are able to review the change, we will publish it to the site!
 
-{% info %}
- All contributors to the SendGrid docs repo need to sign a CLA before their changes can be merged. 
-{% endinfo %}
+
+> All contributors to the SendGrid docs repo need to sign a CLA before their changes can be merged. 
 
 The SendGrid Documentation must follow certain style guidelines. While many of these guidelines are not applicable to small changes, it is important to make sure that our Docs are:
 
