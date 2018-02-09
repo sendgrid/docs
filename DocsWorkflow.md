@@ -3,7 +3,7 @@
 Editing the SendGrid Documentation is easy!
 If you see an error, a typo, or have something you would like to add, you can make your suggestion via GitHub, the content management system we use for the Docs. Once you have submitted your suggestion, the Docs team can easily review it before it is published to the Docs website.
 
-To make changes to any page on http://sendgrid.dom/docs, follow these simple steps:
+To make changes to any page on http://sendgrid.dom/docs, follow these steps:
 
 1. Navigate to the page you would like to edit and click **View and Edit** in the upper right-hand corner.
 
@@ -11,11 +11,11 @@ To make changes to any page on http://sendgrid.dom/docs, follow these simple ste
 
 This will take you to the sendgrid.com/docs GitHub repository, or repo. This is where our docs pages are stored.
 
-2. If you do not already have a GitHub account, you will have to create one in order to suggest a change. Click the Sign up link in the upper right-hand corner to create an account. Enter your username, password, and email address. Please use your full name with your GitHub account and enter SendGrid as your company so we can easily identify you.  
+2. If you do not already have a GitHub account, you will have to create one in order to suggest a change. Click the Sign up link in the upper right-hand corner to create an account. Enter your username, password, and email address. If you are an employee of SendGrid, please use your full name with your GitHub account and enter SendGrid as your company so we can easily identify you.  
 
 <img src="https://github.com/Whatthefoxsays/docs/blob/github-cheatsheet/source/img/docs_signup.png" width="800" height="500">
 
-Once you are viewing a Docs page in GitHub, simply click the pencil icon to begin editing:
+Once you are viewing a Docs page in GitHub, click the pencil icon to begin editing:
 
 <img src="https://github.com/Whatthefoxsays/docs/blob/github-cheatsheet/source/img/docs_edit_github.png" width="800" height="500">
 
@@ -40,5 +40,5 @@ The SendGrid Documentation must follow certain style guidelines. While many of t
 
 Docs contributors should strive for a professional and “coach-like” tone of voice. Avoid vague language, and get right to the point. Long and overly complicated explanations are not helpful to a user who wants a quick-and-easy answer. Please don’t be intimidated by these style guidelines. They don’t apply to most minor changes, and more significant changes will be reviewed and edited by the Docs Team before publication.
 
-If you are making substantial edits or are adding more than a paragraph of new content, feel free to refer to SendGrid’s Style Guide (styleguide.md).
+If you are making substantial edits or are adding more than a paragraph of new content, feel free to refer to [SendGrid’s Style Guide](https://github.com/sendgrid/docs/blob/develop/styleguide.md).
 
