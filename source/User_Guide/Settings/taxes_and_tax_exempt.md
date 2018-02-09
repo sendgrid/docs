@@ -21,7 +21,7 @@ navigation:
     - [How does SendGrid calculate the sales tax owed?](#-How-does-SendGrid-calculate-the-sales-tax-owed)
     - [Other questions?](#-Other-questions)
 
-SendGrid now collects sales tax in 7 jurisdictions: Denver, Colorado, Boulder, Colorado, Chicago, Illinois, Washington state, New York state, and Texas. We assign tax jurisdiction by the billing address you have in our system. If your billing address is in one of these jurisdictions, and you don't have 501(c)(3) tax-exempt status, you will see a line for sales tax [on your invoice]({{root_url}}/User_Guide/Settings/reading_your_invoice.html). For more information about declaring your tax-exempt status, see [Declaring tax-exempt status](#-Declaring-tax-exempt-status).
+SendGrid now collects sales tax in 6 jurisdictions: Denver Colorado, Boulder Colorado, Chicago Illinois, Washington state, New York state, and Texas. We assign tax jurisdiction by the billing address you have in our system. If your billing address is in one of these jurisdictions, and you don't have 501(c)(3) tax-exempt status, you will see a line for sales tax [on your invoice]({{root_url}}/User_Guide/Settings/reading_your_invoice.html). For more information about declaring your tax-exempt status, see [Declaring tax-exempt status](#-Declaring-tax-exempt-status).
 
 {% anchor h2 %}
 Declaring tax-exempt status
@@ -35,7 +35,7 @@ When we receive your paperwork, we'll verify it, and assign you tax-exempt statu
 Declaring reseller status
 {% endanchor %}
 
-Resellers are responsible for collecting and verifying their own taxes and taxes for their customers, including sales tax. To declare your status as a SendGrid reseller, email your state reseller permit, purchase for resell, or similar document to billing@sendgrid.com.
+Resellers are responsible for collecting and verifying their own taxes and taxes for their customers, including sales tax. To declare your status as a SendGrid reseller, email your state reseller permit, purchase for resell exemption certificate, or similar document to billing@sendgrid.com.
 
 When we receive your paperwork, we'll verify it, and assign you reseller status.
 
@@ -47,7 +47,7 @@ Tax FAQ
 Why does SendGrid collect sales tax?
 {% endanchor %}
 
-If SendGrid has a physical presence in a jurisdiction, and we directly sell our product to someone located in that jurisdiction, then we are required to collect sales tax on behalf of that jurisdiction.
+If SendGrid has a physical presence in a jurisdiction, and we directly sell a taxable product to someone located in that jurisdiction, then we are required to collect sales tax on behalf of that jurisdiction.
 
 {% anchor h3 %}
 Who is required to pay sales tax?
@@ -80,7 +80,7 @@ Unfortunately, we cannot provide estimates of sales tax for an individual custom
 Will my tax amount vary from month to month?
 {% endanchor %}
 
-Taxes charged can vary month-to-month based on local tax laws changing, or if your bill is greater or less than in previous months.
+Taxes charged can vary month-to-month based on local tax laws changing, or if your product mix causes your bill to be ßgreater or less than in previous months.
 
 {% anchor h3 %}
 How does SendGrid calculate the sales tax owed?
