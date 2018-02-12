@@ -81,6 +81,8 @@ Additional Resources
 * “sign-up” - noun
 * “username” - one word
 
+When referring to file types, like a PDF file, or a CSV file, refer to it as a CSV file, and not as a `.csv file`, unless it is an example file, like `my-file.csv`. When it's an example file, it should be in `code syntax`.
+
 <a name="punctuation"></a>
 ## Punctuation
 
