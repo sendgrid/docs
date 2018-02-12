@@ -81,8 +81,8 @@ A recurring reset will allow you to periodically reset a subusers credits to a n
  {% parameter 'user' 'Yes' 'Subuser must be under your account' 'The subuser you will be applying a recurring credit limit to' %}
  {% parameter 'credits' 'Yes' 'Unsigned integer' 'The number of credits the subuser will be reset to' %}
  {% parameter 'period' 'Yes' 'Must be either daily, weekly, or monthly' 'How often you want SendGrid to reset the subuser credits' %}
- {% parameter 'startdate' 'No' 'Date must be in <code>YYY-mm-dd</code> format' 'The date you want to start resetting the subuser credits' %}
- {% parameter 'enddate' 'No' 'Date must be in <code>YYY-mm-dd</code> format' 'The date you want to stop resetting the subusers credits. After this date, credits will not be added to the account, but can still be consumed' %}
+ {% parameter 'startdate' 'No' 'Date must be in <code>YYYY-mm-dd</code> format' 'The date you want to start resetting the subuser credits' %}
+ {% parameter 'enddate' 'No' 'Date must be in <code>YYYY-mm-dd</code> format' 'The date you want to stop resetting the subusers credits. After this date, credits will not be added to the account, but can still be consumed' %}
  {% parameter 'initial_credits' 'No' 'Unsigned integer' 'The number of credits you initially want the account reset to. If this is not set, the credits will be reset using the credits parameter. Useful when setting up a subuser with partially-consumed credits' %}
 {% endparameters %}
 

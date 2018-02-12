@@ -10,19 +10,14 @@ navigation:
 ---
 {% warning %}
 Legacy Newsletter is now retired.
-As a safety net, you may **retrieve** data for a short grace period. Please act now to download your data or migrate any assets to Marketing Campaigns.
 {% endwarning %}
 
 For assistance please [contact our support team](https://support.sendgrid.com/). Login to see your contact options.
 
-## Legacy Newsletter Sunset (#-Legacy-Newsletter-Sunset)
+## [Legacy Newsletter Sunset](#-Legacy-Newsletter-Sunset)
 
 * [Why did you retire Legacy Newsletter?](#-Why-did-you-retire-Legacy-Newsletter)
 * [How long will Legacy Newsletter be available?](#-How-long-will-Legacy-Newsletter-be-available)
-* [What will happen to my account when the product is retired?](#-What-will-happen-to-my-account-when-the-product-is-retired)
-* [What if I choose not to migrate?](#-What-if-I-choose-not-to-migrate)
-* [Will engagement stats continue to populate after the sunset?](#-Will-engagement-stats-continue-to-populate-after-the-sunset)
-* [Will data on unsubscribes, bounces, etc., continue to populate after the retirement?](#-Will-data-on-unsubscribes-bounces-etc-continue-to-populate-after-the-retirement-?)
 
 ## [Pricing](#-Pricing)
 
@@ -84,9 +79,7 @@ In order to best meet your email marketing needs, our focus will be dedicated to
 How long will Legacy Newsletter be available?
 {% endanchor %}
 
-As of **September 30, 2017**, Legacy Newsletter has been deprecated. You can no longer create or send campaigns, though you can download data for a **brief** grace period. SendGrid recommends you [migrate to Marketing Campaigns]({{root_url}}/User_Guide/Legacy_Newsletter/migration_checklist.html).
-
-Whether or not you choose not to migrate, you need to download any data from Legacy Newsletter you wish to maintain **ASAP**.
+As of **September 30, 2017**, Legacy Newsletter has been deprecated. SendGrid recommends you [migrate to Marketing Campaigns]({{root_url}}/User_Guide/Legacy_Newsletter/migration_checklist.html).
 
 {% anchor h3 %}
 What will happen to my account when the product is retired?
@@ -95,28 +88,6 @@ What will happen to my account when the product is retired?
 Now that Legacy Newsletter has been sunset, you cannot create or send campaigns. This deprecation includes both the web interface at sendgrid.com/newsletter and [APIs]({{root_url}}/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/index.html) at `api.sendgrid.com/api/newsletter`.
 
 Statistics related to email sent through Legacy Newsletter before deprecation will be included in your overall SendGrid stats, and are identifiable by the default category of *Newsletter*, along with any additional categories you’ve assigned your Legacy Newsletter campaigns.
-
-{% warning %}
-There is currently a **brief** grace period to access and download any data you have stored in the application such as contact lists, templates, statistics, or prior campaigns.
-{% endwarning %}
-
-{% anchor h3 %}
-What if I choose not to migrate?
-{% endanchor %}
-
-If you choose not to migrate, you’ll need to download any data and assets from Legacy Newsletter you wish to retain **ASAP**. SendGrid is offering a **short** grace period for those that have not migrated yet, but be aware that anything not downloaded asap will soon be permanently deleted.
-
-{% anchor h3 %}
-Will engagement stats continue to populate after the retirement?
-{% endanchor %}
-
-If a recipient engages with an email after the sunset date, those engagement stats will be updated in the application for a brief grace period.
-
-{% anchor h3 %}
-Will data on unsubscribes, bounces, etc., continue to populate after the retirement?
-{% endanchor %}
-
-If a recipient unsubscribes from your email, marks it as spam, or their address bounces, that information will be updated in the application for a brief grace period.
 
 
 {% anchor h2 %}
@@ -131,6 +102,7 @@ Both Legacy Newsletter and Marketing Campaigns start with your base SendGrid pla
 
 From there, each email marketing solution charges a premium for sending through the user interface. With Legacy Newsletter it’s a **$0.25 fee per 1,000 emails you send**. For Marketing Campaigns, it’s a **$10 fee per 10,000 contacts you store**. Your first 2,000 contacts in Marketing Campaigns are free.
 
+**The option to choose your payment preference is only available until February 1, 2018**
 If you used Legacy Newsletter between 1 August 2016 and 30 March 2017, when you switch to Marketing Campaigns, you can [choose how you’d like to pay]( https://app.sendgrid.com/settings/choose_how_you_pay). You can continue to pay per email sent or you can choose to pay per contact you store in Marketing Campaigns:
 
 <table class="table" style="table-layout:fixed">
