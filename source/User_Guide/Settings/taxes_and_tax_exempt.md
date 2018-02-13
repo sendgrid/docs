@@ -74,7 +74,7 @@ If you are being charged sales tax, you will see it as a line item on your invoi
 Can I get an estimate of my sales tax?
 {% endanchor %}
 
-Unfortunately, we cannot provide estimates of sales tax for an individual customer ahead of time. The taxes assessed could change monthly for various reasons such as state or local tax laws changing. You can check your bill throughout the month for an estimate of your sales tax.
+Unfortunately, we cannot provide estimates of sales tax for an individual customer ahead of time. The taxes assessed could change monthly for various reasons such as state or local tax laws changing. You might also check past invoices, if you have received similar monthly bills, to get a historical estimate of your sales tax.
 
 {% anchor h3 %}
 Will my tax amount vary from month to month?
