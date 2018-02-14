@@ -145,7 +145,7 @@ Substitution tags allow you to easily generate dynamic content for each recipien
    <td>Personalization</td>
  </tr>
  <tr>
-   <td><code>% raw %}{{first_name}}{% endraw %}</code></td>
+   <td><code>{% raw %}{{first_name}}{% endraw %}</code></td>
    <td>The first name of the recipient</td>
    <td>Personalization</td>
  </tr>
@@ -439,7 +439,7 @@ You'll also see a number of System Fields that you can place in the body of your
    <td>Personalization</td>
  </tr>
  <tr>
-   <td><code>% raw %}{{first_name}}{% endraw %}</code></td>
+   <td><code>{% raw %}{{first_name}}{% endraw %}</code></td>
    <td>The first name of the recipient</td>
    <td>Personalization</td>
  </tr>
