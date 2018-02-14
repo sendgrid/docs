@@ -1,7 +1,11 @@
 ---
+seo:
+  title: How to use a Transactional Template with the SMTP API
+  description: Learn how to send a transactional template with the SMTP API.
+  keywords: SMTP, send email, integrate, building, filters, scheduling, substitution, suppression groups, unique arguments, recipients, transactional template
+title: How to use a Transactional Template with the SMTP API
+weight: 949
 layout: page
-title: Using Transactional Templates With The SMTP API
-alias: /API_Reference/Web_API_v3/Transactional_Templates/smtpapi.html
 navigation:
   show: true
 ---
