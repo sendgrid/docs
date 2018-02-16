@@ -76,7 +76,7 @@ After you set up a valid API key you must choose a specific list where your new 
 
 ![]({{root_url}}/images/wp_subscription_widget_2.png)
 
-If you don't have a list set up for your signups from the Subscription Widget, open your SendGrid Dashboard, click on **Marketing Campaigns** in the sidebar, then select **Contacts** and [create a new list]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html).
+If you don't have a list set up for your signups from the Subscription Widget, open your SendGrid Dashboard, click on **Marketing Campaigns** in the sidebar, then select **Contacts** and [create a new list]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html).
 
 ![]({{root_url}}/images/wp_subscription_widget_2_1.png)
 
