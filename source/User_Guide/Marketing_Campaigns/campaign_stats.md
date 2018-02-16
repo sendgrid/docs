@@ -87,7 +87,7 @@ Creating a Segment Based on Your Engagement Metrics
 1. From the Campaigns page or the individual campaign stats page, hover over the **Unique Opens** or **Unique Clicks** stats.
 1. Click **View Details** and then select **Create Segment**.
 
-   A window opens with segmentation options. By default, the segment will contain the conditions to capture all recipients who either opened your campaign or clicked within your campaign. The segment will be given the name _“Contacts who [clicked/opened] [your campaign name]”_. You can rename this segment or modify the conditions of the segment as you wish directly in this window. For more information on segmentation, [click here]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/lists.html#-Creating-a-Segment).
+   A window opens with segmentation options. By default, the segment will contain the conditions to capture all recipients who either opened your campaign or clicked within your campaign. The segment will be given the name _“Contacts who [clicked/opened] [your campaign name]”_. You can rename this segment or modify the conditions of the segment as you wish directly in this window. For more information on segmentation, [click here]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html#-Creating-a-Segment).
 
 1. Click **Save**. 
 <br>You now have a dynamic segment that will continuously update as recipients engage with this campaign.

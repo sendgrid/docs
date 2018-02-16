@@ -50,7 +50,7 @@ Uploading a CSV
 1. Once you've gone through all of the headers, click **Save Contacts**.
 
 {% info %}
-After uploading contacts, you can define segments for individual contacts or lists based on specified criteria. For more information, see [Lists and Segmentation](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/lists.html).
+After uploading contacts, you can define segments for individual contacts or lists based on specified criteria. For more information, see [Lists and Segmentation](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html).
 {% endinfo %}
 
 {% warning %}
@@ -120,7 +120,7 @@ Add Contacts to a List
 1. Click **Save**.
 
 {% info %}
-If you [create a segment]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/lists.html#-Creating-a-Segment) before you upload a list, contacts that fit the segment criteria populate that segment when uploaded.
+If you [create a segment]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html#-Creating-a-Segment) before you upload a list, contacts that fit the segment criteria populate that segment when uploaded.
 {% endinfo %}
 
 {% anchor h3 %}

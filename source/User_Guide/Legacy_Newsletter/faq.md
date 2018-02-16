@@ -158,9 +158,9 @@ The ability to segment your contacts into meaningful recipient groups is a core 
 What is the additional value of Marketing Campaigns vs. Legacy Newsletter?
 {% endanchor %}
 
-**[Segmentation:]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/lists.html)** Send more targeted, relevant email to your recipients by leveraging data about your customers as well as how they’ve [engaged with your emails]({{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html#-Create-a-Segment-Based-On-Your-Engagement-Metrics).
+**[Segmentation:]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html)** Send more targeted, relevant email to your recipients by leveraging data about your customers as well as how they’ve [engaged with your emails]({{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html#-Create-a-Segment-Based-On-Your-Engagement-Metrics).
 
-**[Contact management:]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/contacts.html)** Gain visibility into contact details such as custom data (name, city, etc.), associated lists, last campaign engagement dates, and more with individual contact profiles that are dynamically updated.
+**[Contact management:]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/adding_contacts.html)** Gain visibility into contact details such as custom data (name, city, etc.), associated lists, last campaign engagement dates, and more with individual contact profiles that are dynamically updated.
 
 **[Visibility into user engagement:]({{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html#-Engagement-Statistics)** Marketing campaigns will show you which customers opened and/or clicked your email campaigns. You can also see which individual links in your campaigns were clicked most frequently.
 
@@ -303,7 +303,7 @@ You can segment based on customer data (like city or gender) as well as engageme
 
 As an example, you could send a different email to “Chicago customers who opened campaign X” than “San Francisco customers who opened Campaign X.” Doing so helps you add more value to your recipients’ inboxes, helping you achieve your engagement and revenue goals along the way.
 
-Learn more about Segmentation with Marketing Campaigns within our [Documentation]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/lists.html#-Create-a-Segment).
+Learn more about Segmentation with Marketing Campaigns within our [Documentation]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html#-Creating-a-Segment).
 
 {% anchor h3 %}
 How is a list different from a segment?
@@ -313,7 +313,7 @@ Lists are simply static collections of Marketing Campaigns contacts. You can upl
 
 Segments are dynamic collections of Marketing Campaigns contacts grouped together, or segmented, based on criteria you define. This can include data you track about them, such as gender, location, or package type, or how they’ve engaged with your emails previously. You can create a segment that pulls from all of your Marketing Campaigns contacts or from a specific existing list you’ve created.
 
-Learn more about Lists and Segments within our [documentation]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/lists.html).
+Learn more about Lists and Segments within our [documentation]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html).
 
 {% anchor h3 %}
 How do I create a segment?
@@ -323,7 +323,7 @@ To create a segment, you’ll first need to upload your recipients (and associat
 
 Once your contacts are stored in Marketing Campaigns, you’ll leverage the user interface to define the conditions of your segment. These can be either data about your recipients that you’ve included in your upload (such as name, gender, package type, etc.) or how they’ve engaged with your emails previously (such as last clicked date, opening a particular campaign, or both!).
 
-For step-by-step instructions on creating a segment, see our [documentation]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/lists.html#-Creating-a-Segment).
+For step-by-step instructions on creating a segment, see our [documentation]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html#-Creating-a-Segment).
 
 {% anchor h2 %}
 Statistics

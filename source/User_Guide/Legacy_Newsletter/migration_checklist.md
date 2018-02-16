@@ -29,7 +29,7 @@ The migration to Marketing Campaigns is not automatic. We’ve built a [robust t
 
 &nbsp; &#x274f; Watch [this video]({{root_url}}/User_Guide/Legacy_Newsletter/index.html) for an introduction to Marketing Campaigns.
 
-&nbsp; &#x274f; Learn about Marketing Campaigns [segmentation capabilities]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/lists.html).
+&nbsp; &#x274f; Learn about Marketing Campaigns [segmentation capabilities]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html).
 
 &nbsp; &#x274f; Learn about Marketing Campaigns' new and improved [campaign building workflow and editor]({{root_url}}/User_Guide/Legacy_Newsletter/Side_by_Side_Comparisons/campaign_building.html).
 
