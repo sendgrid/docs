@@ -19,13 +19,13 @@ seo:
   * [Date Formatting](#-Date-Formatting)
 * [Troubleshooting](#-Troubleshooting)
   
-You can easily add contacts to your contact database by uploading a CSV into Marketing Campaigns. If you have your contacts in a spreadsheet, simply save that sheet as a .csv file using a spreadsheet application like Microsoft Excel or Google Sheets. You can also export your contacts from most database systems as a .csv file.
+You can easily add contacts to your contact database by uploading a CSV into Marketing Campaigns. If you have your contacts in a spreadsheet, simply save that sheet as a CSV file using a spreadsheet application like Microsoft Excel or Google Sheets. You can also export your contacts from most database systems as a CSV file.
 
 {% anchor h2 %} 
 General Formatting Rules
 {% endanchor %}
 
-General rules to follow when formatting a CSV to upload into Marketing Campaigns.
+Here are some rules to follow when formatting a CSV to upload into Marketing Campaigns.
 
 {% anchor h3 %} 
 Contact Info 
