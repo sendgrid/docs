@@ -32,6 +32,22 @@ The following new features and changes to the service are available.
 </table>
 
 {% anchor h2 %}
+16 February 2018
+{% endanchor %}
+
+{% anchor h3 %}
+CSV Upload Notification Email Address
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>We've made it easier for you to receive CSV upload notifications by adding an additional link to the CSV processing step. This link allows you to add an email address to your notifications directly from the contacts page and save it for future use. </td>
+  </tr>
+</table>
+
+
+{% anchor h2 %}
 04 January 2018
 {% endanchor %}
 

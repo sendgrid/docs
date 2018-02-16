@@ -41,20 +41,6 @@ Table of Contents
   - [What is the difference between suppression groups and unsubscribe groups?](#-What-is-the-difference-between-suppression-groups-and-unsubscribe-groups)
   - [Where can I find a list of contacts who have marked one of my campaigns as spam?](#-Where-can-I-find-a-list-of-contacts-who-have-marked-one-of-my-campaigns-as-spam)
   - [How many campaigns can I create?](#-How-many-campaigns-can-I-create)
-* [**Contacts & CSV Uploading**](#-Contacts--CSV-Uploading)
-  - [How come my list and segment counts aren't updated after adding new contacts?](#-How-come-my-list-and-segment-counts-arent-updated-after-adding-new-contacts)
-  - [How do I add an existing contact to an existing list?](#-How-do-I-add-an-existing-contact-to-an-existing-list)
-  - [How do I update the custom fields for one of my contacts?](#-How-do-I-update-the-custom-fields-for-one-of-my-contacts)
-  - [How do I update an existing contact list?](#-How-do-I-update-an-existing-contact-list)
-  - [Why am I receiving errors when uploading a CSV?](#-Why-am-I-receiving-errors-when-uploading-a-CSV)
-  - [What do I need to know to format my CSVs correctly?](#-What-do-I-need-to-know-to-format-my-CSVs-correctly)
-  - [Why does my contact upload summary email show a smaller total than the number of contacts I uploaded?](#-Why-does-my-contact-upload-summary-email-show-a-smaller-total-than-the-number-of-contacts-I-uploaded)
-  - [What is the file size limit when uploading CSVs?](#-What-is-the-file-size-limit-when-uploading-CSVs)
-  - [How long will it take to upload a CSV?](#-How-long-will-it-take-to-upload-a-CSV)
-* [**Segmentation**](#-Segmentation)
-  - [Why can't I search for partial words of custom fields when creating a segment?](#-Why-cant-I-search-for-partial-words-of-custom-fields-when-creating-a-segment)
-  - [How do I view which specific recipients have opened or clicked within one of my campaigns?](#-How-do-I-view-which-specific-recipients-have-opened-or-clicked-within-one-of-my-campaigns)
-  - [What is the maximum number of lists and segments that I can create?](#-What-is-the-maximum-number-of-lists-and-segments-that-I-can-create)
 * [**Sending Campaigns**](#-Sending-Campaigns)
   - [How come one of my substitution tags wasn't replaced during a send?](#-How-come-one-of-my-substitution-tags-wasnt-replaced-during-a-send)
   - [Why aren't my substitution tags replaced in my test send?](#-Why-arent-my-substitution-tags-replaced-in-my-test-send)
@@ -124,8 +110,6 @@ Yes! The link tracking tab on your campaign's stats page displays your link clic
 
 To see these stats, click **Campaigns** under **Marketing Campaigns** in the left hand side bar. Click the gear icon next to your A/B test campaign and select **Stats**. Scroll down until you see the section titled **Link Tracking**. Here you will find your click tracking stats for all of the links in each of your test versions.
 
-**********
-
 {% anchor h2 %}
 Billing & Pricing
 {% endanchor %}
@@ -165,8 +149,6 @@ Can I pay a prorated rate if I don't store my contacts for an entire month?
 {% endanchor %}
 
 There is no monthly proration for contact storage. You will be charged for the maximum size that your contact list reaches each month. For example, if you upload your contacts on the last day of the month, you will still be charged the full amount to store those contacts that month.
-
-**********
 
 {% anchor h2 %}
 Campaigns & Campaign Editor
@@ -268,111 +250,6 @@ How many campaigns can I create?
 
 You can create up to 2500 different campaigns.
 
-**********
-
-{% anchor h2 %}
-Contacts & CSV Uploading
-{% endanchor %}
-
-{% anchor h3 %}
-How come my list and segment counts aren't updated after adding new contacts?
-{% endanchor %}
-
-It is normal to see a slight delay between uploading contacts and seeing your list counts get updated, but if you still don't see your list counts updated after 30 minutes please reach out to Support or your Customer Success Manager.
-
-{% anchor h3 %}
-How do I add an existing contact to an existing list?
-{% endanchor %}
-
-Navigate to your contacts page and search for the contact that you want to add. Click on that contact and scroll down until you see the **Associated Lists** tab. On this tab you'll find a drop down menu allowing you to select a preexisting list to add this contact to.
-
-![]({{root_url}}/images/mc_faq_7.gif)
-
-{% anchor h3 %}
-How do I update the custom fields for one of my contacts?
-{% endanchor %}
-
-You can re-upload a CSV containing your new custom fields. You can also manually edit the custom fields for an individual contact by navigating to your Contacts page in Marketing Campaigns, searching for and selecting the contact that you want to update, and scrolling down to the **Custom Fields** tab. Finally, click **Edit** to begin updating your contact's custom fields.
-
-![]({{root_url}}/images/mc_faq_8.gif)
-
-{% anchor h3 %}
-How do I update an existing contact list?
-{% endanchor %}
-
-You can either upload a CSV of contacts to an existing list or you can manually add contacts to a list.
-
-To upload a CSV to an existing list, navigate to the Contacts page and click **Add List or Segment**. Click **Upload CSV**. Under the dropdown menu titled **Add to an existing list** select the list you want to add your new contacts to. Continue with the CSV upload process as described here.
-
-To manually add a contact to an existing list, navigate to the Contacts page and click **Add List or Segment**. Click **Manual Add**. Under the dropdown menu titled **Add to an existing list** select the list you want to add your new contact to. Continue adding your contact as described [here]({{root_url}}/User_Guide/Marketing_Campaigns/contacts.html#-Add-Contacts-From-a-CSV).
-
-{% anchor h3 %}
-Why am I receiving errors when uploading a CSV?
-{% endanchor %}
-
-The most common reason users receive errors when uploading CSVs is that there are incorrectly formatted dates in the CSV file. Make sure that your dates all have 4 year digits and are in MM/DD/YYYY format. If you are still having problems, double check the CSV upload steps described [here]({{root_url}}/User_Guide/Marketing_Campaigns/contacts.html#-Uploading-Contacts).
-
-{% anchor h3 %}
-What do I need to know to format my CSVs correctly? 
-{% endanchor %}
-
-* Only .csv files are allowed
-* A header row is required for all CSV uploads
-* "Email" header field is always required
-* Headers must use letters, numbers, and underscore characters only
-* Date fields can be represented in the form: MM/DD/YYYY
-* Years in date fields must be represented as their full value (e.g. 1999 not 99)
-
-For more detailed info, check out this page on [Preparing your contacts for upload]({{root_url}}/User_Guide/Marketing_Campaigns/contacts.html#-Prepare-Contacts-for-Upload).
-
-{% anchor h3 %}
-Why does my contact upload summary email show a smaller total than the number of contacts I uploaded?
-{% endanchor %}
-
-You have probably uploaded duplicate contacts. Double check your CSV for duplicates, and if you are certain there are none, please reach out to your Customer Success Manager or contact Support.
-
-{% anchor h3 %}
-What is the file size limit when uploading CSVs?
-{% endanchor %}
-
-You can upload CSV files up to 2GB in size.
-
-{% anchor h3 %}
-How long will it take to upload a CSV?
-{% endanchor %}
-
-With a relatively simple CSV containing only the email, first_name, and last_name fields you should expect to see 8 million contacts uploaded in 6 hours (or about 2.7 seconds per 1,000 contacts). As you increase the number of custom fields included in your CSV, the amount of time required will increase.
-
-**********
-
-{% anchor h2 %}
-Segmentation
-{% endanchor %}
-
-{% anchor h3 %}
-Why can't I search for partial words of custom fields when creating a segment?
-{% endanchor %}
-
-We currently only allow full word searches when searching for custom field values. The only exception is email addresses: you may search for parts of a word or address when looking up email addresses. For example, a search for "gmail" might return gmail.com, gmail.cn, x.gmail.com, etc.
-
-{% anchor h3 %}
-How do I view which specific recipients have opened or clicked within one of my campaigns?
-{% endanchor %}
-
-To quickly view which recipients have either opened one of your campaigns or have clicked within one of your campaigns, click **Campaigns** under **Marketing Campaigns** in the left hand navigation menu. Click the campaign you're interested in, and hover your cursor over either the "Unique Opens" or "Unique Clicks" tile and click **View Details**.
-
-![]({{root_url}}/images/mc_faq_2.png)
-
-You can also create a segment of recipients that have either opened or click within one of your campaigns based on your campaign's engagement statistics. For detailed instructions on how to use your engagement stats, [visit our User Guide]({{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html#-Engagement-Statistics). For other ideas on how to leverage these engagement stats, [checkout this classroom article]({{root_url}}/Classroom/Basics/Marketing_Campaigns/engagement_stats.html).
-
-{% anchor h3 %}
-What is the maximum number of lists and segments that I can create?
-{% endanchor %}
-
-You can create up to 100 lists and 100 segments. Each resource is independently limited to 100. In other words, you can create 100 lists and 100 segments, but not 200 of one and 0 of the other.
-
-**********
-
 {% anchor h2 %}
 Sending Campaigns
 {% endanchor %}
@@ -443,8 +320,6 @@ All email sent through Marketing Campaigns is required to have an unsubscribe li
 
 The [unsubscribe] tag must always be present, and you must always either select an unsubscribe group or include a custom unsubscribe URL. For detailed instructions on adding unsubscribe links to your campaigns, [click here]({{root_url}}/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html).
 
-**********
-
 {% anchor h2 %}
 Sender Verification
 {% endanchor %}
@@ -468,8 +343,6 @@ How long is the sender ID verification link valid?
 {% endanchor %}
 
 The URL in your sender ID verification email is valid for 48 hours. After 48 hours you will have to request a new verification email to be delivered. To resend your verification email, navigate to Marketing Campaigns in the left hand navigation menu and click **Senders**. Next to the sender you need to verify, click the action menu and select **Resend Verification**.
-
-**********
 
 {% anchor h2 %}
 Stats
