@@ -140,53 +140,53 @@ Substitution tags allow you to easily generate dynamic content for each recipien
    <th>Type</th>
  </tr>
  <tr>
-   <td><code>[%email%]</code></td>
+   <td><code>{% raw %}{{email}}{% endraw %}</code></td>
    <td>The email address of the recipient</td>
    <td>Personalization</td>
  </tr>
  <tr>
-   <td><code>[%first_name%]</code></td>
+   <td><code>{% raw %}{{first_name}}{% endraw %}</code></td>
    <td>The first name of the recipient</td>
    <td>Personalization</td>
  </tr>
  <tr>
-   <td><code>[%last_name%]</code></td>
+   <td><code>{% raw %}{{last_name}}{% endraw %}</code></td>
    <td>The last name of the recipient</td>
    <td>Personalization</td>
  </tr>
  <tr>
-   <td><code>[Sender_Name]</code>* </td>
+   <td><code>{% raw %}{{sender_name}}{% endraw %}</code>* </td>
    <td>The name of the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>[Sender_City]</code>* </td>
+   <td><code>{% raw %}{{sender_city}}{% endraw %}</code>* </td>
    <td>The city on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>[Sender_State]</code>* </td>
+   <td><code>{% raw %}{{sender_state}}{% endraw %}</code>* </td>
    <td>The state on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>[Sender_Zip]</code>* </td>
+   <td><code>{% raw %}{{sender_zip}}{% endraw %}</code>* </td>
    <td>The zip code on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>[Unsubscribe]</code>* </td>
+   <td><code>{% raw %}{{unsubscribe}}{% endraw %}</code>* </td>
    <td>This tag is replaced with a link allowing your recipients opt out of any emails you send using the chosen Unsubscribe Group.</td>
    <td>Unsubscribe</td>
  </tr>
  <tr>
-   <td><code>[Unsubscribe_Preferences]</code>
+   <td><code>{% raw %}{{unsubscribe_preferences}}{% endraw %}</code>
    * </td>
    <td>This tag is replaced with a link allowing your recipients to opt out of any email unsubscribe groups you offer.</td>
    <td>Unsubscribe</td>
  </tr>
  <tr>
-   <td><code>[Weblink]</code></td>
+   <td><code>{% raw %}{{Weblink}}{% endraw %}</code></td>
    <td>This tag is replaced with a link allowing your recipients to view your campaign content directly within their web browser.</td>
    <td>Weblink</td>
  </tr>
@@ -434,53 +434,53 @@ You'll also see a number of System Fields that you can place in the body of your
    <th>Type</th>
  </tr>
  <tr>
-   <td><code>[%email%]</code></td>
+   <td><code>{% raw %}{{email}}{% endraw %}</code></td>
    <td>The email address of the recipient</td>
    <td>Personalization</td>
  </tr>
  <tr>
-   <td><code>[%first_name%]</code></td>
+   <td><code>{% raw %}{{first_name}}{% endraw %}</code></td>
    <td>The first name of the recipient</td>
    <td>Personalization</td>
  </tr>
  <tr>
-   <td><code>[%last_name%]</code></td>
+   <td><code>{% raw %}{{last_name}}{% endraw %}</code></td>
    <td>The last name of the recipient</td>
    <td>Personalization</td>
  </tr>
  <tr>
-   <td><code>[Sender_Name]</code>* </td>
+   <td><code>{% raw %}{{sender_name}}{% endraw %}</code>* </td>
    <td>The name of the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>[Sender_City]</code>* </td>
+   <td><code>{% raw %}{{sender_city}}{% endraw %}</code>* </td>
    <td>The city on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>[Sender_State]</code>* </td>
+   <td><code>{% raw %}{{sender_state}}{% endraw %}</code>* </td>
    <td>The state on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>[Sender_Zip]</code>* </td>
+   <td><code>{% raw %}{{sender_zip}}{% endraw %}</code>* </td>
    <td>The zip code on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>[Unsubscribe]</code>* </td>
+   <td><code>{% raw %}{{unsubscribe}}{% endraw %}</code>* </td>
    <td>This tag is replaced with a link allowing your recipients opt out of any emails you send using the chosen Unsubscribe Group.</td>
    <td>Unsubscribe</td>
  </tr>
  <tr>
-   <td><code>[Unsubscribe_Preferences]</code>
+   <td><code>{% raw %}{{unsubscribe_preferences}}{% endraw %}</code>
    * </td>
    <td>This tag is replaced with a link allowing your recipients to opt out of any email unsubscribe groups you offer.</td>
    <td>Unsubscribe</td>
  </tr>
  <tr>
-   <td><code>[Weblink]</code></td>
+   <td><code>{% raw %}{{Weblink}}{% endraw %}</code></td>
    <td>This tag is replaced with a link allowing your recipients to view your campaign content directly within their web browser.</td>
    <td>Weblink</td>
  </tr>
