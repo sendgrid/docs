@@ -3,7 +3,7 @@ layout: page
 weight: 99
 title: Old Editor Sunset
 navigation:
-  show: true
+  show: false
 seo:
   title: Marketing Campaigns - Old Editor Sunset
   override: true
