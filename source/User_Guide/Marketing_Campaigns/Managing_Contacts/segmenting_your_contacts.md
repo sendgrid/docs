@@ -35,19 +35,30 @@ You can create up to 200 segments.
 1. Choose **Segment all contacts** or **Segment an existing list**.
 1. Enter a *Segment Name*.
 1. To segment an existing list, select a list from the *Select List to Segment* drop-down. 
-1. From the *Select Condition* drop-down, choose the desired condition or custom field.
-1. From the *Select Criteria* drop-down, choose from a list of available operators based on the chosen condition.
+1. From the *Condition* drop-down, choose the desired condition or custom field.
+1. From the *Criteria* drop-down, choose from a list of available operators based on the chosen condition.
+
+
+For example, to create a segment of recipients that have clicked on a link in a specific marketing campaign:
+
+1. Navigate to **Marketing** and then select **Contacts**.
+1. Click **Create Segment**. 
+1. Choose **Segment all contacts** or **Segment an existing list**.
+1. Enter a *Segment Name*. 
+1. From the *Condition* drop-down, select **Engagement:Clicks**. 
+1. From the *Criteria* drop-down. select **clicked**. 
+1. From the last drop-down, select the name of the campaign you want to use for the segment. 
 
 {% info %}
-The operator tells the segment *how* to apply the condition.
+The *Criteria* drop-down contains operators that tell the segment *how* to apply the condition.
 {% endinfo %}
 
-Depending on which condition is selected, the operators you can choose from differ. The operators assigned to custom fields will depend on the field type (Text, Date, or Number).  For example, a condition labeled "Number” will show `GREATER THAN`, `LESS THAN`, and `EQUALS` as options whereas a “Text” field will show `IS` and `IS NOT` as options.
+Depending on which condition is selected, the criteria you can choose from differ. The criteria available to assign to conditions will depend on the field type (Text, Date, or Number).  For example, a condition labeled "Number” will show `GREATER THAN`, `LESS THAN`, and `EQUALS` as options whereas a “Text” field will show `IS` and `IS NOT` as options.
 
 
 <table class="table" style="table-layout:fixed">
   <tr>
-    <th> Operator</th>
+    <th> Criteria</th>
     <th> Description</th>
   </tr>
   <tr>
