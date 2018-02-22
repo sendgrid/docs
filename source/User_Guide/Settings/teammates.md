@@ -176,10 +176,12 @@ Click **Edit** to open a modal window presenting the teammate's current permissi
 
 To delete a teammate, navigate to the **Teammates Page** under **Settings**. Click the action menu next to the teammate you want to delete and click **Delete**.
 
+
+
 ![Deleting a Teammate]({{root_url}}/images/teammates_10.png)
 
 {% warning %}
-You cannot recover a deleted teammate! Please be certain before deleting one of your teammates.
+You cannot recover deleted teammates. Once a teammate has been deleted, that teammate and its settings can never be restored. Assets created by the teammate, such as any templates, campaigns, contacts, or API keys, will not be deleted.
 {% endwarning %}
 
 {% anchor h2 %}
