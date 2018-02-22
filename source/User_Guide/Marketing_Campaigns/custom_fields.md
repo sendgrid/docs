@@ -11,6 +11,11 @@ seo:
   description: Custom fields help you segment your lists dynamically based on your user information.
 ---
 
+- [Creating Custom Fields](#-Creating-Custom-Fields)
+- [Reserved Fields](#-Reserved-Fields)
+- [Deleting a Custom Field](#-Deleting-a-Custom-Field)
+- [Troubleshooting](#-Troubleshooting)
+
 <iframe src="https://player.vimeo.com/video/120709155" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 Custom fields allow you to add extra information about a contact to your contact database when you upload a CSV. With custom fields, you can create custom segments from your individual contacts or from your contact database that dynamically update your content with the values for the individual contact receiving the email. Your custom fields are completely customizable to the use cases and user information that you need.
@@ -20,7 +25,7 @@ You can create up to 120 custom fields.
 {% endinfo %}
 
 {% anchor h2 %}
-Create a Custom Field
+Creating Custom Fields
 {% endanchor %}
 
 Before you can create a custom field in the SendGrid app, you need to [format](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/format_CSV.html and [upload](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts_contacts.html#-Uploading-a-CSV) a CSV to your contacts database. 
@@ -50,7 +55,24 @@ Text custom fields are limited to a size of 32,766 bytes.
 Reserved Fields
 {% endanchor %}
 
-Your account comes preloaded with reserved fields that cannot be removed. The following field names are all reserved: id, first_name, last_name, email, lists, created_at, updated_at, last_emailed, last_clicked, last_opened. Except first_name, last_name, and email, these fields are auto-populated by SendGrid. 
+Your account comes preloaded with reserved fields that cannot be removed. The following field names are all reserved: 
+
+<table class="table">
+  <tr><th>Field Name</th><th>Field Type</th></tr>
+  <tr><td>id</td><td>text</td></tr>
+  <tr><td>first_name</td><td>text</td></tr>
+  <tr><td>last_name</td><td>text</td></tr>
+  <tr><td>email</td><td>text</td></tr>
+  <tr><td>lists</td><td>text</td></tr>
+  <tr><td>created_at</td><td>date</td></tr>
+  <tr><td>updated_at</td><td>date</td></tr>
+  <tr><td>last_emailed</td><td>date</td></tr>
+  <tr><td>last_clicked</td><td>date</td></tr>
+  <tr><td>last_opened</td><td>date</td></tr>
+</table>
+
+
+Except for first_name, last_name, and email these fields are auto-populated by SendGrid and correspond to data for each contact in the app. Reserved fields are used to track useful metrics for your contacts by default. 
 
 {% anchor h2 %}
 Deleting a Custom Field
@@ -67,6 +89,15 @@ Deleting a Custom Field
 {% warning %}
 Deleting a custom field deletes all values for that field across your contact database. If you have any campaigns using the data in this field with a substitution tag, those values do NOT get replaced when you send the campaign. You cannot delete a custom field that is used in a segment. This deletion process may take several minutes--you continue to see the custom field on this page until the process has completed.
 {% endwarning %}
+
+{% anchor h2 %}
+Troubleshooting
+{% endanchor %}
+
+
+If a Custom Field value does not appear in the corresponding (Substitution Tag)[https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/editor.html#-Using-Substitution-Tags], make sure that there is a value for that custom field associated with the contact in your contact database. If there is no value for a particular custom field, a space will be substituted instead.
+
+If you do find that the custom field has an associated value on the contact’s profile page, check the spelling of the substitution tag in the content of your campaign.
 
 {% anchor h3 %}
 Additional Resources
