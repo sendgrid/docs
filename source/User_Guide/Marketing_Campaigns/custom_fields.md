@@ -87,7 +87,7 @@ Deleting a Custom Field
 1. Click **Confirm**.
 
 {% warning %}
-Deleting a custom field deletes all values for that field across your contact database. If you have any campaigns using the data in this field with a substitution tag, those values do NOT get replaced when you send the campaign. You cannot delete a custom field that is used in a segment. This deletion process may take several minutes--you continue to see the custom field on this page until the process has completed.
+Deleting a custom field deletes all values for that field across your contact database. If you have any campaigns using the data in this field with a substitution tag, those values do NOT get replaced when you send the campaign. You cannot delete a custom field that a segment is currently using. This deletion process may take several minutes--you continue to see the custom field on this page until the process has completed.
 {% endwarning %}
 
 {% anchor h2 %}
