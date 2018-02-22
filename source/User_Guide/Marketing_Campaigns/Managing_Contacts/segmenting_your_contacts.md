@@ -118,8 +118,7 @@ When using more than one condition to segment your contacts, you can select `AND
 You can add up to 15 different conditions per segment.
 {% endinfo %}
 
-![]({{root_url}}/images/Segmentation.png "Segmentation conditions and criteria")
-
+![]({{root_url}}/img/Segmentation.png "Segmentation conditions and criteria")
 
 {% anchor h3 %}
 Exporting a Segment
