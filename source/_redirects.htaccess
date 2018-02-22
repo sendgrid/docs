@@ -947,4 +947,7 @@ Redirect 301 /User_Guide/Compliance/improving_contact_lists.html https://sendgri
 #
 #######
 
-Redirect 301 Classroom/Troubleshooting/a_custom_field_value_did_not_substitute_during_a_send.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html
+Redirect 301 /Classroom/Troubleshooting/a_custom_field_value_did_not_substitute_during_a_send.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html
+Redirect 301 /Classroom/Basics/Marketing_Campaigns/contact_fields.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html
+Redirect 301 /Classroom/Troubleshooting/Authentication/you_have_used_a_reserved_field_name_for_your_custom_field.html# https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html
+Redirect 301 /Classroom/Basics/Marketing_Campaigns/contact_fields.html# https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html
