@@ -118,51 +118,7 @@ When using more than one condition to segment your contacts, you can select `AND
 You can add up to 15 different conditions per segment.
 {% endinfo %}
 
-<table class="table" style="table-layout:fixed">
- <table>
-  <tr>
-    <th>Condition</th>
-    <th>Criteria</th>
-    <th>Data Type</th>
-  </tr>
-  <tr>
-    <td>Email</td>
-    <td rowspan="3">is, is not, contains word, is empty, is not empty</td>
-    <td rowspan="3">Text</td>
-  </tr>
-  <tr>
-    <td>First Name</td>
-  </tr>
-  <tr>
-    <td>Last Name</td>
-  </tr>
-  <tr>
-    <td>Date Added</td>
-    <td rowspan="5">is, is not, is before, is after, is within, is empty, is not empty</td>
-    <td rowspan="5">Date</td>
-  </tr>
-  <tr>
-    <td>Last Updated</td>
-  </tr>
-  <tr>
-    <td>Last Emailed</td>
-  </tr>
-  <tr>
-    <td>Last Clicked</td>
-  </tr>
-  <tr>
-    <td>Last Opened</td>
-  </tr>
-  <tr>
-    <td>Engagement: Clicks</td>
-    <td>clicked, not clicked</td>
-    <td rowspan="2">Campaign</td>
-  </tr>
-  <tr>
-    <td>Engagement: Opens</td>
-    <td>opened, not opened</td>
-  </tr>
-</table>
+![]({{root_url}}/images/Segmentation.png "Segmentation conditions and criteria")
 
 
 {% anchor h3 %}
