@@ -50,7 +50,7 @@ For example, to create a segment of recipients that have clicked on a link in a 
 1. From the last drop-down, select the name of the campaign you want to use for the segment. 
 
 {% info %}
-The *Condition* drop-down contains required CSV fields, custom fields, and internal event data to help you get your email campaigns to the correct audince. The *Criteria* drop-down contains operators that tell the segment *how* to handle the data sepcified by the condition.
+The *Condition* drop-down contains required CSV fields, custom fields, and internal event data to help you get your email campaigns to the correct audience. The *Criteria* drop-down contains operators that tell the segment *how* to handle the data sepcified by the condition.
 {% endinfo %}
 
  Depending on which condition is selected, the criteria you can choose from differ. The criteria available to assign to conditions will depend on the field type (Text, Date, or Number).  For example, a condition labeled "Number” will show `GREATER THAN`, `LESS THAN`, and `EQUALS` as options whereas a “Text” field will show `IS` and `IS NOT` as options.
@@ -112,11 +112,57 @@ The *Condition* drop-down contains required CSV fields, custom fields, and inter
 </table>
 
 <br/>
-You can select `AND` or `OR` as options, where `AND` requires both conditions to be true and `OR` requires either condition to be true. Once you’ve selected the Condition and the Operator, you can layer additional conditions in the segment to narrow the results to a more targeted audience. 
+When using more than one condition to segment your contacts, you can select `AND` or `OR` as options, where `AND` requires both conditions to be true and `OR` requires either condition to be true. Once you’ve selected the Condition and the Criteria, you can layer additional conditions in the segment to narrow the results to a more targeted audience. 
  
 {% info %}
 You can add up to 15 different conditions per segment.
 {% endinfo %}
+
+<table class="table" style="table-layout:fixed">
+ <table>
+  <tr>
+    <th>Condition</th>
+    <th>Criteria</th>
+    <th>Data Type</th>
+  </tr>
+  <tr>
+    <td>Email</td>
+    <td rowspan="3">is, is not, contains word, is empty, is not empty</td>
+    <td rowspan="3">Text</td>
+  </tr>
+  <tr>
+    <td>First Name</td>
+  </tr>
+  <tr>
+    <td>Last Name</td>
+  </tr>
+  <tr>
+    <td>Date Added</td>
+    <td rowspan="5">is, is not, is before, is after, is within, is empty, is not empty</td>
+    <td rowspan="5">Date</td>
+  </tr>
+  <tr>
+    <td>Last Updated</td>
+  </tr>
+  <tr>
+    <td>Last Emailed</td>
+  </tr>
+  <tr>
+    <td>Last Clicked</td>
+  </tr>
+  <tr>
+    <td>Last Opened</td>
+  </tr>
+  <tr>
+    <td>Engagement: Clicks</td>
+    <td>clicked, not clicked</td>
+    <td rowspan="2">Campaign</td>
+  </tr>
+  <tr>
+    <td>Engagement: Opens</td>
+    <td>opened, not opened</td>
+  </tr>
+</table>
 
 
 {% anchor h3 %}
