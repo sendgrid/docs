@@ -85,6 +85,14 @@ The *Condition* drop-down contains required CSV fields, custom fields, and inter
     <td>is within</td>
     <td>the date of the event is within a selected date range</td>
   </tr>
+    <tr>
+    <td>is empty</td>
+    <td>the condition or field is empty in the database</td>
+  </tr>
+    <tr>
+    <td>is not empty</td>
+    <td>the condition or field is not empty in the database</td>
+  </tr>
   <tr>
     <td>opened</td>
     <td>the contact opened an email from a campaign</td>
