@@ -176,8 +176,6 @@ Click **Edit** to open a modal window presenting the teammate's current permissi
 
 To delete a teammate, navigate to the **Teammates Page** under **Settings**. Click the action menu next to the teammate you want to delete and click **Delete**.
 
-
-
 ![Deleting a Teammate]({{root_url}}/images/teammates_10.png)
 
 {% warning %}
