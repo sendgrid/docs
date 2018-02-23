@@ -14,19 +14,19 @@ navigation:
 Table of Contents
 {% endanchor %}
 
-* [What is Teammates?](#-What-is-Teammates)
-* [Where can I find Teammates?](#-Where-can-I-find-Teammates)
-* [Who can use Teammates?](#-Who-can-use-Teammates)
-* [Setting Up Teammates](#-Setting-Up-Teammates)
-* [Teammate Permissions](#-Teammate-Permissions)
+* [Adding Teammates](#-Adding-Teammates)
 * [Managing Teammates](#-Managing-Teammates)
+  * [Configuring Permissions](#-Configuring-Permisisons)
+  * [Removing Teammates](#-Removing-Teammates)
+  * [Feature Access](#-Feature-Access)
+* [Troubleshooting](#-Troubleshooting)
 * [Teammates and API Keys](#-Teammates-and-API-Keys)
 
 {% anchor h2 %}
 What is Teammates?
 {% endanchor %}
 
-Teammates is an account administration and security tool designed to help manage multiple users, or teammates, on a single SendGrid account. Teammates is targeted toward groups of users who all share a single account, where each of these users has a different role and thus requires access to different SendGrid features.
+Teammates allows you to multiple users, or teammates, on a single SendGrid account. Teammates is targeted toward groups of users who all share a single account, where each of these users has a different role and thus requires access to different SendGrid features.
 
 There are several benefits to using Teammates. The first and foremost is security: by giving your individual team members access only to the features that they need to do their jobs, you can limit access to sensitive areas of your account. Second, Teammates helps to streamline not only your team members' jobs, but also the job of the admin. Teammates makes it incredibly easy to add, remove, and manage different users.
 
@@ -40,19 +40,7 @@ Teammates with admin permissions have as much control over an account as the ori
 Where can I find Teammates?
 {% endanchor %}
 
-To get started using Teammates, simply navigate to **Settings** in the sidebar and select **Teammates**. Continue reading below to learn how to send your first Teammate invitation!
-
-{% anchor h2 %}
-Who can use Teammates?
-{% endanchor %}
-
-{% info %}
-Teammates is an improved and expanded version of what was previously referred to as Multiple User Credentials. If you had one or more Multiple User Credentials configured for your account, then those credentials will automatically be migrated to the Teammates platform.
-{% endinfo %}
-
-Essentials, [Legacy Lite]({{root_url}}/Classroom/Basics/Billing/legacy_lite_plan.html), and Free Trial users may create up to one teammate per account. Pro plans and higher have a limit of 1000 teammates per account/subuser. If you need more please [contact support]({{root_url}}/Classroom/Basics/Misc/support.html).
-
-If you have an Essentials, [Legacy Lite]({{root_url}}/Classroom/Basics/Billing/legacy_lite_plan.html), or Free Trial plan and have created more than one multiple credentialed user, all of those credentialed users [will be migrated to Teammates]({{root_url}}/Classroom/Basics/Account/teammates_faq.html#-What-will-happen-to-my-Multiple-User-Credentials). However you will not be able to create any additional teammates unless you [upgrade to the Pro plan or higher](https://sendgrid.com/pricing/).
+To get started using Teammates, simply navigate to **Settings** in the sidebar and select **Teammates**. Continue reading below to learn how to send your first Teammate invitation
 
 Only account administrators and teammates with admin access are able to create and manage teammates. Subuser accounts also have access to Teammates, but they will be unable to manage teammates on the parent account level.
 
@@ -61,7 +49,7 @@ While only administrators can create teammates, it is possible for one administr
 {% endinfo %}
 
 {% anchor h2 %}
-Setting Up Teammates
+Adding Teammates
 {% endanchor %}
 
 {% anchor h3 %}
