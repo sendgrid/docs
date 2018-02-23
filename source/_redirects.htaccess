@@ -935,7 +935,20 @@ Redirect 301 /search.html https://sendgrid.com/docs
 #
 #######
 
-Redirect 301 /Classroom/Troubleshooting/Authentication/list_upload_troubleshooting.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/format_CSV.html
-Redirect 301 /User_Guide/Marketing_Campaigns/contacts.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/contacts.html
+Redirect 301 /Classroom/Troubleshooting/Authentication/list_upload_troubleshooting.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/formatting_a_CSV.html
+Redirect 301 /User_Guide/Marketing_Campaigns/contacts.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/adding_contacts.html
 Redirect 301 /Classroom/Basics/Marketing_Campaigns/how_to_remove_unusable_contacts.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html
 Redirect 301 /User_Guide/Compliance/improving_contact_lists.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html
+
+
+#######
+#
+# Custom Fields
+#
+#######
+
+Redirect 301 /Classroom/Troubleshooting/a_custom_field_value_did_not_substitute_during_a_send.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html
+Redirect 301 /Classroom/Basics/Marketing_Campaigns/contact_fields.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html
+Redirect 301 /Classroom/Troubleshooting/Authentication/you_have_used_a_reserved_field_name_for_your_custom_field.html# https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html
+Redirect 301 /Classroom/Basics/Marketing_Campaigns/contact_fields.html# https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html
+Redirect 301 /User_Guide/Marketing_Campaigns/format_CSV.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/formating_a_CSV.html

@@ -68,7 +68,7 @@ To determine whether to add sales tax to your monthly SendGrid bill, we use the 
 Where can I see how much I am getting charged for sales tax each month?
 {% endanchor %}
 
-If you are being charged sales tax, you will see it as a line item on your invoice. You can see your invoice in the monthly email, and on the [Plan & Billing details page](https://app.sendgrid.com/settings/billing) in the UI.
+If you are being charged sales tax, you will see it as a line item on your invoice. You’ll be able to find the new sales tax line item by navigating to [Settings | Plan & Billing Details](https://app.sendgrid.com/settings/billing) in the SendGrid UI, then by viewing your invoice, which is in PDF form.
 
 {% anchor h3 %}
 Can I get an estimate of my sales tax?

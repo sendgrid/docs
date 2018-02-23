@@ -21,8 +21,7 @@ Segments are dynamically updated over time as you add contacts who meet the crit
 Creating a Segment
 {% endanchor %}
 
-You can create a new segment with multiple conditions based on the information you have stored about your contacts. This
-includes email, first_name, last_name, and all of the custom fields you have created before making this segment.
+You can create a new segment with multiple conditions based on the information you have stored about your contacts, and based on some of the information SendGrid has stored about your Marketing Campaigns.
 
 {% info %}
 You can create up to 200 segments.
@@ -35,19 +34,31 @@ You can create up to 200 segments.
 1. Choose **Segment all contacts** or **Segment an existing list**.
 1. Enter a *Segment Name*.
 1. To segment an existing list, select a list from the *Select List to Segment* drop-down. 
-1. From the *Select Condition* drop-down, choose the desired condition or custom field.
-1. From the *Select Criteria* drop-down, choose from a list of available operators based on the chosen condition.
+1. From the *Condition* drop-down, choose the desired condition or custom field.
+1. From the *Criteria* drop-down, choose from a list of available operators based on the chosen condition.
+
+
+For example, to create a segment of recipients that have clicked on a link in a specific marketing campaign:
+
+1. Navigate to **Marketing** and then select **Contacts**.
+1. Click **Create Segment**. 
+1. Choose **Segment all contacts** or **Segment an existing list**.
+1. Enter a *Segment Name*. 
+1. From the *Condition* drop-down, select **Engagement:Clicks**. 
+1. From the *Criteria* drop-down. select **clicked**. 
+1. From the last drop-down, select the name of the campaign you want to use for the segment. 
 
 {% info %}
-The operator tells the segment *how* to apply the condition.
+The *Condition* drop-down contains required CSV fields, custom fields, and internal event data to help you get your email campaigns to the correct audience. The *Criteria* drop-down contains operators that tell the segment *how* to handle the data sepcified by the condition.
 {% endinfo %}
 
-Depending on which condition is selected, the operators you can choose from differ. The operators assigned to custom fields will depend on the field type (Text, Date, or Number).  For example, a condition labeled "Number” will show `GREATER THAN`, `LESS THAN`, and `EQUALS` as options whereas a “Text” field will show `IS` and `IS NOT` as options.
+ Depending on which condition is selected, the criteria you can choose from differ. The criteria available to assign to conditions will depend on the field type (Text, Date, or Number).  For example, a condition labeled "Number” will show `GREATER THAN`, `LESS THAN`, and `EQUALS` as options whereas a “Text” field will show `IS` and `IS NOT` as options.
 
+ ![]({{root_url}}/img/Segmentation.png "Segmentation conditions and criteria")
 
 <table class="table" style="table-layout:fixed">
   <tr>
-    <th> Operator</th>
+    <th> Criteria</th>
     <th> Description</th>
   </tr>
   <tr>
@@ -74,6 +85,14 @@ Depending on which condition is selected, the operators you can choose from diff
     <td>is within</td>
     <td>the date of the event is within a selected date range</td>
   </tr>
+    <tr>
+    <td>is empty</td>
+    <td>the condition or field is empty in the database</td>
+  </tr>
+    <tr>
+    <td>is not empty</td>
+    <td>the condition or field is not empty in the database</td>
+  </tr>
   <tr>
     <td>opened</td>
     <td>the contact opened an email from a campaign</td>
@@ -93,12 +112,11 @@ Depending on which condition is selected, the operators you can choose from diff
 </table>
 
 <br/>
-You can select `AND` or `OR` as options, where `AND` requires both conditions to be true and `OR` requires either condition to be true. Once you’ve selected the Condition and the Operator, you can layer additional conditions in the segment to narrow the results to a more targeted audience. 
+When using more than one condition to segment your contacts, you can select `AND` or `OR` as options, where `AND` requires both conditions to be true and `OR` requires either condition to be true. Once you’ve selected the Condition and the Criteria, you can layer additional conditions in the segment to narrow the results to a more targeted audience. 
  
 {% info %}
 You can add up to 15 different conditions per segment.
 {% endinfo %}
-
 
 {% anchor h3 %}
 Exporting a Segment
