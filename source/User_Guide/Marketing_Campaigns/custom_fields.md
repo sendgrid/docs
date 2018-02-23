@@ -28,17 +28,16 @@ You can create up to 120 custom fields.
 Creating Custom Fields
 {% endanchor %}
 
-Before you can create a custom field in the SendGrid app, you need to [format](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/format_CSV.html and [upload](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts_contacts.html#-Uploading-a-CSV) a CSV to your contacts database. 
+Before you can create a custom field in the SendGrid app, you need to [format](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/format_CSV.html) and [upload](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts_contacts.html#-Uploading-a-CSV) a CSV to your contacts database. 
 
 *To add custom a field:* 
 
 1. Once you have successfully uploaded a CSV containing custom fields, navigate to the [custom fields page]({{site.marketing_campaigns_url}}/custom_fields).  
 1. Click **Create New Field**. 
-1. Add a *Field Name* and *Field Type*. 
+1. Add a _Field Name_ and _Field Type_. 
 1. Click **Save**. 
 
-The field name should be created using only alphanumeric characters (A-Z and 0-9) and underscores “_”. The field type can
-be date, text, or number fields. The *field type* is important for creating [segments](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts_lists.html) from your contact
+The field name should be created using only alphanumeric characters (A-Z and 0-9) and underscores “_”. The field type can be date, text, or number fields. The *field type* is important for creating [segments](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts_lists.html) from your contact
 database. 
 
 You can query your list in different ways, based on the data type:
@@ -95,7 +94,7 @@ Troubleshooting
 {% endanchor %}
 
 
-If a Custom Field value does not appear in the corresponding (Substitution Tag)[https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/editor.html#-Using-Substitution-Tags], make sure that there is a value for that custom field associated with the contact in your contact database. If there is no value for a particular custom field, a space will be substituted instead.
+If a Custom Field value does not appear in the corresponding [Substitution Tag]({{root_url}}/User_Guide/Marketing_Campaigns/editor.html#-Using-Substitution-Tags), make sure that there is a value for that custom field associated with the contact in your contact database. If there is no value for a particular custom field, a space will be substituted instead.
 
 If you do find that the custom field has an associated value on the contact’s profile page, check the spelling of the substitution tag in the content of your campaign.
 
