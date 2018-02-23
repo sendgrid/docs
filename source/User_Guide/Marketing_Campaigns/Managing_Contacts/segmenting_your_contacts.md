@@ -21,8 +21,7 @@ Segments are dynamically updated over time as you add contacts who meet the crit
 Creating a Segment
 {% endanchor %}
 
-You can create a new segment with multiple conditions based on the information you have stored about your contacts. This
-includes email, first_name, last_name, and all of the custom fields you have created before making this segment.
+You can create a new segment with multiple conditions based on the information you have stored about your contacts, and based on some of the information SendGrid has stored about your Marketing Campaigns.
 
 {% info %}
 You can create up to 200 segments.
@@ -55,6 +54,7 @@ The *Condition* drop-down contains required CSV fields, custom fields, and inter
 
  Depending on which condition is selected, the criteria you can choose from differ. The criteria available to assign to conditions will depend on the field type (Text, Date, or Number).  For example, a condition labeled "Number” will show `GREATER THAN`, `LESS THAN`, and `EQUALS` as options whereas a “Text” field will show `IS` and `IS NOT` as options.
 
+ ![]({{root_url}}/img/Segmentation.png "Segmentation conditions and criteria")
 
 <table class="table" style="table-layout:fixed">
   <tr>
@@ -117,8 +117,6 @@ When using more than one condition to segment your contacts, you can select `AND
 {% info %}
 You can add up to 15 different conditions per segment.
 {% endinfo %}
-
-![]({{root_url}}/img/Segmentation.png "Segmentation conditions and criteria")
 
 {% anchor h3 %}
 Exporting a Segment
