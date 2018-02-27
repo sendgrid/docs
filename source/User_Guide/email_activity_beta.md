@@ -32,9 +32,6 @@ With the Email Activity feed you can:
 * Increase storage available for up to 60 days for historical visibility within the UI by purchasing an upgrade.
 * Call all events by an email from the API with additional storage purchase.
 
-{% info %}
-SendGrid stores two days of Email Activity data for free. To increase your storage capability, you may purchase more storage [here](https://app.sendgrid.com/settings/billing).
-{% endinfo %}
 
 {% anchor H2 %}
 Types of email activity data
