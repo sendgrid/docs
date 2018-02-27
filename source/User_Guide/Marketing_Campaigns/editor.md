@@ -246,7 +246,7 @@ Getting Started With the Design Editor
 1. Click **Create Campaign**.
 <br>To create a campaign using an existing campaign, find the campaign you want to use and click the action menu next to the campaign. Then, select **Edit** or **Duplicate**.
 
-![](<% root_url %>/img/campaigns_dashboard_categories_search.png)
+![]({{root_url}}/img/campaigns_dashboard_categories_search.png)
 
 3. Select the template that you want to use for your campaign.
 <br>You can select a Blank Template, a custom template that you have already created, or one of SendGrid’s pre-built templates. For more information, see [Working With Templates](<% root_url %>/User_Guide/Marketing_Campaigns/templates.html).
@@ -830,13 +830,13 @@ Assigning categories to a campaign allows you to track emails based on your own 
 Additional Resources
 {% endanchor %}
 
-* [Sending an Email](<% root_url %>/User_Guide/Marketing_Campaigns/getting_started.html)
-* [A/B Testing](<% root_url %>/User_Guide/Marketing_Campaigns/a_b_testing.html)
-* [Campaign Statistics](<% root_url %>/User_Guide/Marketing_Campaigns/campaign_stats.html)
-* [Marketing Templates](<% root_url %>/User_Guide/Marketing_Campaigns/templates.html)
-    * [Creating a New Template](<% root_url %>/User_Guide/Marketing_Campaigns/templates.html#-Creating-a-New-Template)
-    * [Editing an Existing Template](<% root_url %>/User_Guide/Marketing_Campaigns/templates.html#-Editing-an-Existing-Template)
-    * [Duplicating a SendGrid Template](<% root_url %>/User_Guide/Marketing_Campaigns/templates.html#-Duplicating-a-SendGrid-Template)
-    * [Duplicating a Custom Template](<% root_url %>/User_Guide/Marketing_Campaigns/templates.html#-Duplicating-a-Custom-Template)
-    * [Creating a Template from a Campaign](<% root_url %>/User_Guide/Marketing_Campaigns/templates.html#-Creating-a-Template-from-a-Campaign)
+* [Sending an Email]({{root_url}}/User_Guide/Marketing_Campaigns/getting_started.html)
+* [A/B Testing]({{root_url}}/User_Guide/Marketing_Campaigns/a_b_testing.html)
+* [Campaign Statistics]({{root_url}}/User_Guide/Marketing_Campaigns/campaign_stats.html)
+* [Marketing Templates]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html)
+    * [Creating a New Template]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html#-Creating-a-New-Template)
+    * [Editing an Existing Template]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html#-Editing-an-Existing-Template)
+    * [Duplicating a SendGrid Template]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html#-Duplicating-a-SendGrid-Template)
+    * [Duplicating a Custom Template]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html#-Duplicating-a-Custom-Template)
+    * [Creating a Template from a Campaign]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html#-Creating-a-Template-from-a-Campaign)
 
