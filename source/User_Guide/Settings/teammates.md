@@ -184,7 +184,6 @@ API Keys and Teammates can be used as two different methods of restricting acces
 However, a teammate cannot change their own permissions via API key. For example, a teammate with restricted access to features in the SendGrid user interface but full access to API Keys cannot make an API call to modify their permissions in the user interface.
 {% endinfo %}
 
-To learn how to create and manage Teammates via our Web API v3, please visit our [API Reference]({{root_url}}/API_Reference/Web_API_v3/teammates.html)
 
 {% anchor h2 %}
 Related Resources
