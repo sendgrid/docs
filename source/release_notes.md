@@ -30,6 +30,64 @@ The following new features and changes to the service are available.
     <td align="center">Price Update</td>
   </tr>
 </table>
+
+{% anchor h2 %}
+16 February 2018
+{% endanchor %}
+
+{% anchor h3 %}
+CSV Upload Notification Email Address
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>We've made it easier for you to receive CSV upload notifications by adding an additional link to the CSV processing step. This link allows you to add an email address to your notifications directly from the contacts page and save it for future use. </td>
+  </tr>
+</table>
+
+
+{% anchor h2 %}
+04 January 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Table & Column Rendering in Outlook
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI"></td>
+    <td>We've resolved a bug affecting the way that tables/columns were rendering in some versions of Outlook.</td>
+  </tr>
+</table>
+
+{% anchor h3 %}
+Easier Segmentation Through Search
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI"></td>
+    <td>We've added the ability to search for custom fields within the drop-down, when creating a segment. Formerly, you were only able to scroll and select.</td>
+  </tr>
+</table>
+
+{% anchor h2 %}
+20 December 2017
+{% endanchor %}
+
+{% anchor h3 %}
+Mailbox Provider Statistics
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI"></td>
+    <td>The mailbox provider statistics page has been updated to show more intutitive delivery percentages by each mailbox provider -for example clicks of delivered (by day by provider), instead of clicks of all clicks (by day by all providers).</td>
+  </tr>
+</table>
+
 {% anchor h2 %}
 15 December 2017
 {% endanchor %}

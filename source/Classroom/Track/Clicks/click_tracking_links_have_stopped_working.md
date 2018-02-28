@@ -22,7 +22,7 @@ If you are experiencing an issue where you or your recipients are seeing SendGri
 
 Be sure to go back and check your original email to ensure the URL you are passing (that is, before it gets to us) is indeed a valid link. Our click tracking mechanism does not validate URLs beyond looking for a http(s) protocol, a www., and an <a href html tag.
 
-If you are unsure what the original link was, feel free to contact Support using the options below. If you can provide us an example link from a sent email that is failing, we can decode the link to determine the original URL. 
+If you are unsure what the original link was, feel free to [contact support](https://support.sendgrid.com). If you can provide us an example link from a sent email that is failing, we can decode the link to determine the original URL. 
 
  
 

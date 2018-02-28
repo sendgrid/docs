@@ -3,7 +3,7 @@ Hello! Thank you for choosing to help contribute to the SendGrid documentation s
 * [Style](#style)
     * [Numbers](#numbers)
     * [About Additional Resources](#about-additional-resources)
-    * [Cross References] (#cross-references)
+    * [Cross References](#cross-references)
 * [Terminology](#terminology)
 * [Punctuation](#punctuation)
 * [Capitalization](#capitalization)
@@ -80,6 +80,8 @@ Additional Resources
 * “sign up” - verb
 * “sign-up” - noun
 * “username” - one word
+
+When referring to file types, like a PDF file, or a CSV file, refer to it as a CSV file, and not as a `.csv file`, unless it is an example file, like `my-file.csv`. When it's an example file, it should be in `code syntax`.
 
 <a name="punctuation"></a>
 ## Punctuation
