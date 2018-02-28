@@ -166,3 +166,13 @@ Exporting a CSV
 1. In the top right corner of the activity feed, click **Export CSV**. 
    This triggers an email to the email address associated with your SendGrid account. 
 1. Open the email and then click **Download**. 
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor h2 %}
+
+- [Email Activity API](https://sendgrid.api-docs.io/v3.0/email-activity/filter-all-messages)
+- [Email Activity - Non Beta](https://sendgrid.com/docs/User_Guide/email_activity.html)
+- [Getting Started with the Email Activity API](https://sendgrid.com/docs/API_Reference/Web_API_v3/tutorials/getting_started_email_activity_api.html)
+- [Building compound Email Activity queries](https://sendgrid.com/docs/API_Reference/Web_API_v3/tutorials/getting_started_email_activity_api.html...)
+
