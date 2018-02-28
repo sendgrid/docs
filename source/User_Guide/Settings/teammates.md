@@ -97,7 +97,7 @@ The three different permission levels are:
 ![Teammate Permissions]({{root_url}}/images/teammates_3.png)
 
 {% info %}
-Only administrator teammates may impersonate subusers!
+Only administrator teammates may impersonate subusers.
 {% endinfo %}
 
 Once you select a teammate type and have entered a valid email address, you may either click **Create** to send the teammate invitation, or you can further customize the permissions levels for your teammate.
