@@ -32,6 +32,28 @@ The following new features and changes to the service are available.
 </table>
 
 {% anchor h2 %}
+1 March 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Email Activity - Beta
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>As of 01 March 2018, we are beginning to roll out early beta access to our new Email Activity feature. This release includes: enhancements to email activity feed details, filtering, search options, CSV export, and the option to purchase additonal storage (100M+ HV packages excluded) to ease process for troubleshooting email delivery issues.  
+     
+{% info %}
+This open beta will not be available for all customers right away. 
+{% endinfo %}
+
+ * For more information about the UI updates, see the [documentation](https://sendgrid.com/docs/User_Guide/email_activity_beta.html)
+ * For more information about the API updates, see the [documentation](https://sendgrid.api-docs.io/v3.0/email-activity/filter-all-messages)</td>
+  </tr>
+</table>
+
+{% anchor h2 %}
 04 January 2018
 {% endanchor %}
 
