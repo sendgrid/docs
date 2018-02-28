@@ -32,26 +32,27 @@ The following new features and changes to the service are available.
 </table>
 
 {% anchor h2 %}
-1 March 2018
+01 March 2018
 {% endanchor %}
 
 {% anchor h3 %}
-Email Activity - Beta
+Email Activity Feed - Beta
 {% endanchor %}
 
 <table class="table" style="width: 100%;">
   <tr>
     <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ><img src="{{root_url}}/images/code_icon.png" alt="An update to the API" width="100" height="100"></td>
-    <td>As of 01 March 2018, we are beginning to roll out early beta access to our new Email Activity feature. This release includes: enhancements to email activity feed details, filtering, search options, CSV export, and the option to purchase additonal storage (100M+ HV packages excluded) to ease process for troubleshooting email delivery issues.  
-
-{% info %}
-This open beta will not be available for all customers right away. 
-{% endinfo %}
-
- * For more information about the UI updates, see the [documentation](https://sendgrid.com/docs/User_Guide/email_activity_beta.html)
- * For more information about the API updates, see the [documentation](https://sendgrid.api-docs.io/v3.0/email-activity/filter-all-messages)</td>
+    <td>As of 01 March 2018, we are beginning to roll out early beta access to our new Email Activity feature. This release includess enhancements to email activity feed details, filtering, search options, and CSV export capability to ease the process of troubleshooting email delivery issues.</td> 
   </tr>
 </table>
+
+{% info %}
+This open beta will not be available for all customers right away. High-volume (100M+) customers will not have the option to use this new feature.
+{% endinfo %}
+
+ * Access the Email Activity Feed [here](https://app.sendgrid.com/email_activity)
+ * For more information about the UI updates, see the [documentation](https://sendgrid.com/docs/User_Guide/email_activity_beta.html)
+ * For more information about the API updates, see the [documentation](https://sendgrid.api-docs.io/v3.0/email-activity/filter-all-messages)
 
 {% anchor h2 %}
 04 January 2018
