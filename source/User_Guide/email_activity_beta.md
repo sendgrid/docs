@@ -11,8 +11,8 @@ seo:
 ---
 
 +{% warning %}
- +The Email Activity API is beta and you may not have access. The API might change at any time without notice.
- +{% endwarning %}
+Email Activity is in beta and you may not have access. The feature may also change at any time without notice.
++{% endwarning %}
 
 The Email Activity feed allows you to view a snapshot of email-related activity associated with your account and any subusers. Enhanced email activity and storage gives you increased visibility into the email delivery flow of each email message to expedite the troubleshooting process.  
 
