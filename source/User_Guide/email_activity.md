@@ -11,7 +11,7 @@ navigation:
 ---
 
 {% warning %}
-If you are looking for the Email Activity Beta documentation, please go [here]({{root_url}}/User_Guide/email_activity_beta). 
+If you are looking for the Email Activity Beta documentation, please go [here]({{root_url}}/User_Guide/email_activity_beta.html). 
 {% endwarning %}
 
 
