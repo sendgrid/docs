@@ -10,9 +10,9 @@ seo:
   description:
 ---
 
-+{% warning %}
+{% warning %}
 Email Activity is in beta and you may not have access. The feature may also change at any time without notice.
-+{% endwarning %}
+{% endwarning %}
 
 The Email Activity feed allows you to view a snapshot of email-related activity associated with your account and any subusers. Enhanced email activity and storage gives you increased visibility into the email delivery flow of each email message to expedite the troubleshooting process.  
 
@@ -174,5 +174,5 @@ Additional Resources
 - [Email Activity API](https://sendgrid.api-docs.io/v3.0/email-activity/filter-all-messages)
 - [Email Activity - Non Beta](https://sendgrid.com/docs/User_Guide/email_activity.html)
 - [Getting Started with the Email Activity API](https://sendgrid.com/docs/API_Reference/Web_API_v3/tutorials/getting_started_email_activity_api.html)
-- [Building compound Email Activity queries](https://sendgrid.com/docs/API_Reference/Web_API_v3/tutorials/getting_started_email_activity_api.html...)
+- [Building compound Email Activity queries](https://sendgrid.com/docs/API_Reference/Web_API_v3/tutorials/getting_started_email_activity_api.html)
 
