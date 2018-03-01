@@ -13,6 +13,10 @@ seo:
  +The Email Activity API is beta and you may not have access. The API might change at any time without notice.
  +{% endwarning %}
 
+{% warning %}
+Email Activity is in beta and you may not have access - we are currently in the process of rolling out access. For more information, see the [Release Notes]({{root_url}}/release_notes.html#-Email-Activity-Feed-Beta). The feature may also change at any time without notice.
+{% endwarning %}
+
 The Email Activity feed allows you to view a snapshot of email-related activity associated with your account and any subusers. Enhanced email activity and storage gives you increased visibility into the email delivery flow of each email message to expedite the troubleshooting process.  
 
 
@@ -31,9 +35,6 @@ With the Email Activity feed you can:
 * Increase storage available for up to 60 days for historical visibility within the UI by purchasing an upgrade.
 * Call all events by an email from the API with additional storage purchase.
 
-{% info %}
-SendGrid stores two days of Email Activity data for free. To increase your storage capability, you may purchase more storage [here](https://app.sendgrid.com/settings/billing).
-{% endinfo %}
 
 {% anchor H2 %}
 Types of email activity data
@@ -168,3 +169,13 @@ Exporting a CSV
 1. In the top right corner of the activity feed, click **Export CSV**. 
    This triggers an email to the email address associated with your SendGrid account. 
 1. Open the email and then click **Download**. 
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor h2 %}
+
+- [Email Activity API](https://sendgrid.api-docs.io/v3.0/email-activity/filter-all-messages)
+- [Email Activity - Non Beta](https://sendgrid.com/docs/User_Guide/email_activity.html)
+- [Getting Started with the Email Activity API](https://sendgrid.com/docs/API_Reference/Web_API_v3/tutorials/getting_started_email_activity_api.html)
+- [Building compound Email Activity queries](https://sendgrid.com/docs/API_Reference/Web_API_v3/tutorials/getting_started_email_activity_api.html)
+
