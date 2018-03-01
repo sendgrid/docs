@@ -1,4 +1,3 @@
 User-agent: *
-Disallow: /docs/User_Guide/email_activity_beta.html
 Disallow: /docs/User_Guide/Settings/taxes_and_tax_exempt.html
 Disallow: /docs/User_Guide/Marketing_Campaigns/Old_Editor_Sunset.html
