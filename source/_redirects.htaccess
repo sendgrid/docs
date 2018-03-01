@@ -855,6 +855,7 @@ Redirect 301 /Classroom/Basics/Account/what_are_subusers.html https://sendgrid.c
 Redirect 301 /Classroom/Basics/Account/how_do_i_add_more_subusers_to_my_account.html https://sendgrid.com/docs/User_Guide/Settings/subusers.html
 Redirect 301 /Classroom/Basics/Account/why_am_i_seeing_credential_resource_already_exists_when_i_am_creating_a_subuser_or_credential.html https://sendgrid.com/docs/User_Guide/Settings/subusers.html
 Redirect 301 /Classroom/Send/How_Emails_Are_Sent/how_do_i_send_mail_through_subuser_accounts.html https://sendgrid.com/docs/User_Guide/Settings/subusers.html
+Redirect 310 /Classroom/Deliver/Delivery_Introduction/segment_your_email_traffic_with_subusers.html https://sendgrid.com/docs/User_Guide/Settings/subusers.html
 
 #######
 #
@@ -869,6 +870,7 @@ Redirect 301 /Classroom/Track/Bounces/common_smtp_server_bounce_responses.html h
 Redirect 301 /Classroom/Troubleshooting/Authentication/certificate_verification_failed.html https://sendgrid.com/docs/API_Reference/SMTP_API/errors_and_troubleshooting.html
 Redirect 301 /Classroom/Troubleshooting/Authentication/invalid_smtp_api_header.html https://sendgrid.com/docs/API_Reference/SMTP_API/errors_and_troubleshooting.html
 Redirect 301 /User_Guide/Marketing_Campaigns/drag_drop.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/editor.html
+Redirect 301 /Classroom/Troubleshooting/Account_Administration/recovering_your_username.html https://sendgrid.com/docs/User_Guide/Settings/reset_username_password.html
 #######
 #
 #  IP Redirects
@@ -943,7 +945,10 @@ Redirect 301 /Classroom/Troubleshooting/Authentication/list_upload_troubleshooti
 Redirect 301 /User_Guide/Marketing_Campaigns/contacts.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/contacts.html
 Redirect 301 /Classroom/Basics/Marketing_Campaigns/how_to_remove_unusable_contacts.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html
 Redirect 301 /User_Guide/Compliance/improving_contact_lists.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html
-Redirect 301 /Classroom/Send/Who_You_Can_Send_To/segmenting_traffic.html
+Redirect 301 /Classroom/Send/Who_You_Can_Send_To/segmenting_traffic.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html
+Redirect 301 /Classroom/Deliver/Delivery_Introduction/keep_in_touch_the_importance_of_engagement.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/building_your_contact_list.html
+Redirect 301 /Classroom/Send/Who_You_Can_Send_To/resubscription_of_users.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html
+Redirect 301 /Classroom/Send/Who_You_Can_Send_To/can_i_send_to_purchased_lists.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/building_your_contact_list.html
 
 #######
 #
@@ -956,6 +961,6 @@ Redirect 301 /Classroom/Basics/Account/what_is_the_difference_between_subusers_a
 Redirect 301 /Classroom/Basics/Account/resetting_your_password_as_a_teammate.html https://sendgrid.com/docs/User_Guide/Settings/teammates.html
 Redirect 301 /Classroom/Troubleshooting/Account_Administration/teammates.html https://sendgrid.com/docs/User_Guide/Settings/teammates.html
 Redirect 301 /Classroom/Basics/Account/teammates_faq.html https://sendgrid.com/docs/User_Guide/Settings/teammates.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html
-Redirect 301 /Classroom/Send/Who_You_Can_Send_To/resubscription_of_users.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html
-Redirect 301 /Classroom/Send/Who_You_Can_Send_To/can_i_send_to_purchased_lists.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/building_your_contact_list.html
+
+
 
