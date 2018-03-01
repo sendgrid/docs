@@ -851,6 +851,9 @@ Redirect 301 /User_Guide/Settings/Subusers/profile.html https://sendgrid.com/doc
 Redirect 301 /User_Guide/Settings/Subusers/impersonation.html https://sendgrid.com/docs/User_Guide/Settings/subusers.html
 Redirect 301 /User_Guide/Settings/Subusers/settings.html https://sendgrid.com/docs/User_Guide/Settings/subusers.html
 Redirect 301 /User_Guide/Settings/Subusers/index.html https://sendgrid.com/docs/User_Guide/Settings/subusers.html
+Redirect 301 /Classroom/Basics/Account/what_are_subusers.html https://sendgrid.com/docs/User_Guide/Settings/subusers.html
+Redirect 301 /Classroom/Basics/Account/how_do_i_add_more_subusers_to_my_account.html https://sendgrid.com/docs/User_Guide/Settings/subusers.html
+Redirect 301 /Classroom/Basics/Account/why_am_i_seeing_credential_resource_already_exists_when_i_am_creating_a_subuser_or_credential.html https://sendgrid.com/docs/User_Guide/Settings/subusers.html
 
 #######
 #
@@ -951,3 +954,4 @@ Redirect 301 /Classroom/Basics/Account/what_is_the_difference_between_subusers_a
 Redirect 301 /Classroom/Basics/Account/resetting_your_password_as_a_teammate.html https://sendgrid.com/docs/User_Guide/Settings/teammates.html
 Redirect 301 /Classroom/Troubleshooting/Account_Administration/teammates.html https://sendgrid.com/docs/User_Guide/Settings/teammates.html
 Redirect 301 /Classroom/Basics/Account/teammates_faq.html https://sendgrid.com/docs/User_Guide/Settings/teammates.html
+
