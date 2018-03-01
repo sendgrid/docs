@@ -62,7 +62,7 @@ Custom Fields
 Contacts
 {% endanchor %}
 
-<p><strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/contacts.html">Contacts</a></strong> - <a href="{{site.marketing_campaigns_url}}/contacts">Create a list</a> by giving us a name, or select a list to update, and then upload your CSV file. We’ll load in all the data,
+<p><strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/adding_contacts.html">Contacts</a></strong> - <a href="{{site.marketing_campaigns_url}}/contacts">Create a list</a> by giving us a name, or select a list to update, and then upload your CSV file. We’ll load in all the data,
 automatically add contacts to pre-created segments, and merge updated custom field data to existing contacts.
 </p>
 
@@ -72,7 +72,7 @@ automatically add contacts to pre-created segments, and merge updated custom fie
 Lists and segments
 {% endanchor %}
 
-<p><strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/lists.html">Lists and Segments</a></strong> - <a href="{{site.marketing_campaigns_url}}/contacts">View your lists</a>, create new lists, and add new lists to your account. You can also create segments, which will automatically update when
+<p><strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html">Lists and Segments</a></strong> - <a href="{{site.marketing_campaigns_url}}/contacts">View your lists</a>, create new lists, and add new lists to your account. You can also create segments, which will automatically update when
   you add new contacts to your contacts database.
 </p>
 

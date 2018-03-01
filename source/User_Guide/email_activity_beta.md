@@ -9,6 +9,9 @@ seo:
   override: true
   description:
 ---
++{% warning %}
+ +The Email Activity API is beta and you may not have access. The API might change at any time without notice.
+ +{% endwarning %}
 
 {% warning %}
 Email Activity is in beta and you may not have access - we are currently in the process of rolling out access. For more information, see the [Release Notes]({{root_url}}/release_notes.html#-Email-Activity-Feed-Beta). The feature may also change at any time without notice.
