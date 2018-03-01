@@ -16,7 +16,7 @@ Email Activity is in beta and you may not have access - we are currently in the 
 - [Getting started](#-Getting-started)
     - [Encoding queries](#-Encoding-queries)
 - [Queries for common use cases](#-Queries-for-common-use-cases)
-- [Creating compound queries](#-Creating-compound-queries)
+- [Query reference](#-Query-reference)
 
 The API gives you access to query all of your stored messages, to query individual messages, and to download a CSV with data about the stored messages.
 
@@ -50,7 +50,7 @@ Encoded, this query would look like this:
 Queries for common use cases
 {% endanchor %}
 
-Here are some queries for common use cases. For a full list of possible query types, see the [query reference]({{root_url}}/API_Reference/Email_Activity/query_reference.html).
+Here are some queries for common use cases. For a full list of possible query types, see the [query reference](#-Query-reference).
 
 {% anchor h3 %}
 Filter by subject
@@ -111,6 +111,10 @@ Subject queries have this format:
 Encoded, this query would look like this:
 
 `status%3D%22bouced%22`
+
+{% anchor h2 %}
+Query reference
+{% endanchor %}
 
 <table>
   <tr>
