@@ -1,16 +1,16 @@
 ---
 seo:
- title: Getting Started with the Email Activity API (beta)
- description: Use the Email Activity query language to get started with the Email Activity API.
+ title: Getting Started with the Email Activity Feed API (beta)
+ description: Use the Email Activity Feed query language to get started with the Email Activity Feed API.
  keywords: email activity, query language, email stats, email events
-title: Getting Started with the Email Activity API (beta)
+title: Getting Started with the Email Activity Feed API (beta)
 weight: 0
 layout: page
 navigation:
  show: true
 ---
 {% warning %}
-Email Activity is in beta and you may not have access - we are currently in the process of rolling out access. For more information, see the [Release Notes]({{root_url}}/release_notes.html#-Email-Activity-Feed-Beta). The feature may also change at any time without notice.
+The Email Activity Feed is in beta, and you may not have access - we are currently in the process of rolling out access. For more information, see the [Release Notes]({{root_url}}/release_notes.html#-Email-Activity-Feed-Beta). The feature may also change at any time without notice.
 {% endwarning %}
 
 - [Getting started](#-Getting-started)
@@ -32,7 +32,7 @@ The API gives you access to query all of your stored messages, to query individu
 Getting started
 {% endanchor %}
 
-Start with this basic query to the Email Activity API (replace `<<your API key>>` with an API key from your account):
+Start with this basic query to the Email Activity Feed API (replace `<<your API key>>` with an API key from your account):
 
 {% codeblock %}
 curl --request GET \
@@ -151,7 +151,7 @@ curl --request GET \
 {% endcodeblock %}
 
 {% anchor h3 %}
-Filter by a recipient and and a date range
+Filter by a recipient and a date range
 {% endanchor %}
 
 Use this query to filter to emails by recipient and between specific dates: (replace `<<your API key>>` with an API key from your account, replace <<start_date>> and <<end_date>> with a URL encoded UTC date string in this format: `YYYY-MM-DD HH:mm:SS`, and and replace <<email>> with the URL encoded recipient's email)
@@ -303,6 +303,6 @@ This is a full list of basic query types and examples: (replace the data in quot
 Additional Resources
 {% endanchor h2 %}
 
-- [Email Activity API](https://sendgrid.api-docs.io/v3.0/email-activity/filter-all-messages)
-- [Email Activity - Non Beta](https://sendgrid.com/docs/User_Guide/email_activity.html)
-- [Email Activity - Beta](https://sendgrid.com/docs/User_Guide/email_activity_beta.html)
+- [Email Activity Feed API Reference](https://sendgrid.api-docs.io/v3.0/email-activity/filter-all-messages)
+- [Email Activity Feed - Non Beta](https://sendgrid.com/docs/User_Guide/email_activity.html)
+- [Email Activity Feed - Beta](https://sendgrid.com/docs/User_Guide/email_activity_beta.html)
