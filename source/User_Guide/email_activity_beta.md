@@ -13,6 +13,10 @@ seo:
 The Email Activity API is beta and you may not have access. The API might change at any time without notice.
 {% endwarning %}
 
+{% info %}
+You can return to the old Email Activity Feed page at any time by hovering over the BETA tag at the top of the page and selecting the “Switch Back” link that appears.
+{% endinfo %}
+
 The Email Activity feed allows you to view a snapshot of email-related activity associated with your account and any subusers. Enhanced email activity and storage gives you increased visibility into the email delivery flow of each email message to expedite the troubleshooting process.  
 
 
