@@ -10,10 +10,9 @@ navigation:
   show: true
 ---
 
-{% warning %}
-If you are looking for the Email Activity Beta documentation, please go [here]({{root_url}}/User_Guide/email_activity_beta.html). 
-{% endwarning %}
-
+{% info %}
+Are you looking for information about Email Activity Feed Beta? If so, check out [Email Activity Feed - Beta]({{root_url}}/User_Guide/email_activity_beta.html). If you switch to Beta, you can return to the old Email Activity Feed page at any time by hovering over the BETA tag at the top of the page and selecting the “Switch Back” link that appears.
+{% endinfo %}
 
 <iframe src="https://player.vimeo.com/video/130900679" width="500" height="312" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
