@@ -16,6 +16,12 @@ Email Activity is in beta and you may not have access - we are currently in the 
 - [Getting started](#-Getting-started)
     - [Encoding queries](#-Encoding-queries)
 - [Queries for common use cases](#-Queries-for-common-use-cases)
+  - [Filter by subject]()
+  - [Filter by reciepeint email]()
+  - [Filter by bounced emails]()
+- [Creating compound queries]()
+  - [Filter by a reciepeint email that was bounced]()
+- [Operator reference](#-Operator-reference)
 - [Query reference](#-Query-reference)
 
 The API gives you access to query all of your stored messages, to query individual messages, and to download a CSV with data about the stored messages.
@@ -76,15 +82,15 @@ Encoded, this query would look like this:
 Filter by reciepeint email
 {% endanchor %}
 
-Use this query to filter by a recipents email: (replace `<<your API key>>` with an API key from your account, and replace <<email>> with the recepients email):
+Use this query to filter by a recipents email: (replace `<<your API key>>` with an API key from your account, and replace <<email>> with the URL encoded recepients email):
 
 {% codeblock %}
 curl --request GET \
-  --url 'http://api.sendgrid.com/v3/messages?limit=10&query=to_email%3D<<email>>' \
+  --url 'http://api.sendgrid.com/v3/messages?limit=10&query=to_email%3D%22<<email>>%22' \
   --header 'authorization: Bearer <<your API key>>'
 {% endcodeblock %}
 
-Subject queries have this format:
+Recipient email queries have this format:
 
 `to_email="example@example.com"`
 
@@ -96,7 +102,7 @@ Encoded, this query would look like this:
 Filter by bounced emails
 {% endanchor %}
 
-Use this query to filter by a recipents email: (replace `<<your API key>>` with an API key from your account):
+Use this query to filter by all bounced emails: (replace `<<your API key>>` with an API key from your account):
 
 {% codeblock %}
 curl --request GET \
@@ -113,8 +119,70 @@ Encoded, this query would look like this:
 `status%3D%22bouced%22`
 
 {% anchor h2 %}
+Creating compound queries
+{% endanchor %}
+
+You may want to combine queries for a compound query. For example, you could filter for emails between a date range, or you could filter for when a specific recipients email is bounced. Here are some common use cases:
+
+{% anchor h3 %}
+Filter by a reciepeint email that was bounced
+{% endanchor %}
+
+Use this query to filter by a recipents email and by emails that are bounced: (replace `<<your API key>>` with an API key from your account, and replace <<email>> with the recepients email):
+
+{% codeblock %}
+curl --request GET \
+  --url 'http://api.sendgrid.com/v3/messages?limit=10&query=to_email%3D<<email>>+status%3D%22bouced%22' \
+  --header 'authorization: Bearer <<your API key>>'
+{% endcodeblock %}
+
+{% anchor h3 %}
+Filter by date range
+{% endanchor %}
+
+Use this query to filter to emails between specific dates: (replace `<<your API key>>` with an API key from your account, and replace {start_date} and {end_date} with a UTC date string in this format: `YYYY-MM-DD HH:mm:SS`)
+
+{% codeblock %}
+curl --request GET \
+  --url 'http://api.sendgrid.com/v3/messages?limit=10&query>{start_date}<{end_date}' \
+  --header 'authorization: Bearer <<your API key>>'
+{% endcodeblock %}
+
+{% anchor h3 %}
+Filter by a reciepient and and a date range
+{% endanchor %}
+
+Use this query to filter to emails by recepient and between specific dates: (replace `<<your API key>>` with an API key from your account, replace <<start_date>> and <<end_date>> with a UTC date string in this format: `YYYY-MM-DD HH:mm:SS`, and and replace <<email>> with the recepients email)
+
+{% codeblock %}
+curl --request GET \
+  --url 'http://api.sendgrid.com/v3/messages?limit=10&query=to_email%3D<<email>>+query=status%3D%22bouced%22' \
+  --header 'authorization: Bearer <<your API key>>'
+{% endcodeblock %}
+
+{% anchor h2 %}
+Operator reference
+{% endanchor %}
+
+This is a full list of accepted operators:
+
+- `=`
+- `!=`
+- `<`
+- `>`
+- `<=`
+- `>=`
+- `-` - to
+- `+`
+- `/`
+- `*`
+- `-` - subtraction
+
+{% anchor h2 %}
 Query reference
 {% endanchor %}
+
+This is a full list of basic query types and examples: (replace the data in quotes with the information you want to query, and then URL encode it)
 
 <table class="table" style="table-layout:fixed">
   <tr>
