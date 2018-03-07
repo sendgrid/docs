@@ -36,7 +36,7 @@ With the Email Activity feed you can:
 * Troubleshoot email delivery issues faster with comprehensive and sequential event data by email message.
 * Pinpoint specific emails easily with advanced search and filter options --including subject line and email metadata.
 * Customize your data independently with CSV download/export option.
-* Increase storage available for up to 60 days for historical visibility within the UI by purchasing an upgrade.
+* Increase storage available for up to 30 days for historical visibility within the UI by purchasing an upgrade. (Not available in beta).
 * Call all events by an email from the API with additional storage purchase.
 
 
