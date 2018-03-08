@@ -132,4 +132,5 @@ Related Resources
 {% endanchor %}
 
 * [API Reference]({{root_url}}/API_Reference/Web_API_v3/teammates.html)
+* [Glossary](https://sendgrid.com/docs/Glossary/teammates.html)
 
