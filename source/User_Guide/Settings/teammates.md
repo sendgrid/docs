@@ -16,9 +16,10 @@ Table of Contents
 
 * [Adding Teammates](#-Adding-Teammates)
 * [Managing Teammates](#-Managing-Teammates)
-  * [Configuring permissions](#-Configuring-Permisisons)
+  * [Configuring permissions](#-Configuring-permisisons)
   * [Removing Teammates](#-Removing-Teammates)
-  * [Granting feature access](#-Feature-Access)
+  *[Requesting feature access](#-Requesting-feature-access)
+  * [Granting feature access](#-Granting-feature-access)
 * [Troubleshooting](#-Troubleshooting)
 * [Teammates and API Keys](#-Teammates-and-API-Keys)
 
@@ -35,67 +36,34 @@ Adding Teammates
 
 _To invite a Teammate to your account:_
 
-, navigate to **Settings**, and click on **Teammates** in the sidebar.
-
-This is where you can see the list of all of your current teammates with their details: username, email address, first name, and last name. By clicking the action menu under **Actions** you can either delete the teammate, or edit that teammate.
-
-If you have already sent a teammate invitation, you will see a list titled **Pending Invites**. Under this list you will see the email address the invite was sent to along with the invitation expiration date.
+1. Navigate to **Settings**, and click on **Teammates** in the sidebar.
+<br>This is where you can see the list of all of your current teammates with their details: username, email address, first name, and last name. By clicking the action menu under **Actions** you can either delete the teammate, or edit that teammate.
+2. To add a new Teammate, click **Add Teammate**. 
+3. Enter the Teammate's email address and then select their permission level. 
+4. Click **Invite**. 
+<br>If you have already sent a teammate invitation, you will see a list titled **Pending Invites**. This list contains the email address the invite was sent to along with the invitation expiration date.
 
 {% warning %}
 Teammate invitations are valid for 7 days.
 {% endwarning %}
 
-Click **Add Teammate** to open the modal window allowing you to specify the email address and permissions of your new teammate.
-
-![Teammates]({{root_url}}/images/teammates_1.png)
-
 {% info %}
-While only administrators can create teammates, it is possible for one administrator to create another teammate with administrator permissions. This new teammate would then be able to create and manage other teammates, along with having access to the account's billing settings. **Please be very careful about who you assign administrator permissions!**
+While only administrators can create teammates, it is possible for one administrator to create another teammate with administrator permissions. This new teammate would then be able to create and manage other teammates and have access to the account's billing settings. **Please be very careful about who you assign administrator permissions!**
 {% endinfo %}
-
-You should now see a modal window titled "New Teammate." Here you will enter your teammate's email address and select the type of teammate you would like to add. The teammate type dictates what permissions your new teammate will have.
-
-![Adding a new teammate]({{root_url}}/images/teammates_2.png)
 
 {% anchor h2 %}
 Configuring permissions
 {% endanchor %}
 
-By selecting a type, you can choose from several pre-defined permission levels to fit a variety of common roles: **Developer Access**, **Marketer Access**, and **Accountant Access** or you can customize access for the teammate.
-
 The three different permission levels are:
 
-* **NO ACCESS -** Teammates with no access to a feature not only will be prevented from changing that feature’s settings, but they will also be unable to even view that feature within the SendGrid UI. However, they may still [request access to that feature](#-Requesting-Access-to-a-SendGrid-Feature).
+* **NO ACCESS -** Teammates with no access to a feature not only will be prevented from changing that feature’s settings, but they will also be unable to even view that feature within the SendGrid UI. However, you can still [grant them access to specific features](#-Granting-feature-access).
 * **READ ACCESS -** Teammates with read only access will not be able to change or configure a feature. However, they will be able to view any information provided by that feature.
 * **FULL ACCESS -** Teammates with full access to a feature can view and make any changes.
-
-![Teammate Permissions]({{root_url}}/images/teammates_3.png)
 
 {% info %}
 Only administrator teammates may impersonate subusers.
 {% endinfo %}
-
-Once you select a teammate type and have entered a valid email address, you may either click **Create** to send the teammate invitation, or you can further customize the permissions levels for your teammate.
-
-After you have sent the teammate invitation, you will see a new entry underneath **Pending Invites** on the Teammates page under **Settings**. Teammate invitations expire after 7 days. You can delete an invitation, or resend the invitation, by clicking the action menu under Actions.
-
-{% anchor h3 %}
-Accepting a Teammate Invitation
-{% endanchor %}
-
-If someone has invited you to join their SendGrid account as a teammate, you should receive an email with the subject line "You're invited to join John Doe's team on SendGrid!" where John Doe is the administrator who invited you.
-
-To accept the invitation, simply open the email and click **Set up your Profile**. This will take you to the SendGrid website displaying a modal window asking for your first name, last name, desired username, and password.
-
-![Teammate Invitation Email]({{root_url}}/images/teammates_5.png)
-
-Once you've filled out these fields, click **Sign In**.
-
-{% info %}
-Teammate invitations are valid for 7 days. If you click the link to **Set up your Profile** in the invitation and discover that your invitation has expired, you must reach out to your account administrator to request a new invitation.
-{% endinfo %}
-
-![Teammate Account Created Successfully]({{root_url}}/images/teammates_6.png)
 
 {% anchor h3 %}
 Requesting Access to a SendGrid Feature
@@ -133,11 +101,16 @@ A notification email will be sent to the teammate when they are either granted o
 Managing Teammates
 {% endanchor %}
 
-To modify an existing teammate's permissions, navigate to the **Teammates Page** under **Settings**. Under the list of current teammates, click the action menu next to the teammate you would like to edit.
+_To modify an existing teammate's permissions:_ 
 
-Click **Edit** to open a modal window presenting the teammate's current permissions. Make your desired changes and click **Update**.
+1. Navigate to the **Teammates Page** under **Settings**. 
+1. Under the list of current teammates, click the action menu next to the teammate you would like to edit.
+1. Click **Edit** to open a modal window presenting the teammate's current permissions. 
+1. Make your desired changes and click **Update**.
 
-To delete a teammate, navigate to the **Teammates Page** under **Settings**. Click the action menu next to the teammate you want to delete and click **Delete**.
+_To delete a teammate:_
+1. Navigate to the **Teammates Page** under **Settings**. 
+1. Click the action menu next to the teammate you want to delete and click **Delete**.
 
 ![Deleting a Teammate]({{root_url}}/images/teammates_10.png)
 
