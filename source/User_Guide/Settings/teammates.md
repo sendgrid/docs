@@ -57,9 +57,11 @@ Configuring permissions
 
 The three different permission levels are:
 
-* **NO ACCESS -** Teammates with no access to a feature not only will be prevented from changing that feature’s settings, but they will also be unable to even view that feature within the SendGrid UI. However, you can still [grant them access to specific features](#-Granting-feature-access).
-* **READ ACCESS -** Teammates with read only access will not be able to change or configure a feature. However, they will be able to view any information provided by that feature.
-* **FULL ACCESS -** Teammates with full access to a feature can view and make any changes.
+* **Restricted Access -** Teammates with no access to a feature not only will be prevented from changing that feature’s settings, but they will also be unable to even view that feature within the SendGrid UI. However, you can still [grant them access to specific features](#-Granting-feature-access).
+* **Read-only Access -** Teammates with read only access will not be able to change or configure a feature. However, they will be able to view any information provided by that feature.
+* **Admin -** Teammates with full access to a feature can view and make any changes.
+
+If you select **Invite with Restricted Access** when inviting a Teammate, you will need to select a preset access level or create your own by selecting **Custom Access**.  You can choose from several pre-defined permission levels to fit a variety of common roles: Developer Access, Marketer Access, and Accountant Access or you can customize access for the teammate.
 
 {% info %}
 Only administrator teammates may impersonate subusers.
