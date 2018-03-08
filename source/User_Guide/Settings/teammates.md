@@ -24,7 +24,9 @@ Table of Contents
 * [Teammates and API Keys](#-Teammates-and-API-Keys)
 
 
+
 Teammates allows multiple users, or teammates, to send email from a single SendGrid account. Teammates is targeted toward groups of users who all share a single account, where each of these users has a different role and thus requires access to different SendGrid features. By only giving your individual team members access to the features that they need to do their jobs,you can limit access to sensitive areas of your account. Teammates makes it incredibly easy to add, remove, and manage different users.
+
 
 {% info %}
 Only administrator teammates may impersonate subusers!
