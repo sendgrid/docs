@@ -27,4 +27,4 @@ As an example of role specific permissions, the marketer would be given the foll
 * [Template Engine]({{root_url}}/User_Guide/Transactional_Templates/index.html) - Full Access
 * [Tracking]({{root_url}}/User_Guide/Settings/tracking.html) - Full Access
 
-For more information about Teammates please see our [User Guide]({{root_url}}/User_Guide/Settings/teammates.html) and [FAQ]({{root_url}}/Classroom/Basics/Account/teammates_faq.html).
+For more information about Teammates please see our [documentation]({{root_url}}/User_Guide/Settings/teammates.html).
