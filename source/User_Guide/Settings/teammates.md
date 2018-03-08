@@ -16,51 +16,26 @@ Table of Contents
 
 * [Adding Teammates](#-Adding-Teammates)
 * [Managing Teammates](#-Managing-Teammates)
-  * [Configuring Permissions](#-Configuring-Permisisons)
+  * [Configuring permissions](#-Configuring-Permisisons)
   * [Removing Teammates](#-Removing-Teammates)
-  * [Feature Access](#-Feature-Access)
+  * [Granting feature access](#-Feature-Access)
 * [Troubleshooting](#-Troubleshooting)
 * [Teammates and API Keys](#-Teammates-and-API-Keys)
 
-{% anchor h2 %}
-What is Teammates?
-{% endanchor %}
 
-Teammates allows you to multiple users, or teammates, on a single SendGrid account. Teammates is targeted toward groups of users who all share a single account, where each of these users has a different role and thus requires access to different SendGrid features.
-
-There are several benefits to using Teammates. The first and foremost is security: by giving your individual team members access only to the features that they need to do their jobs, you can limit access to sensitive areas of your account. Second, Teammates helps to streamline not only your team members' jobs, but also the job of the admin. Teammates makes it incredibly easy to add, remove, and manage different users.
-
-For example, a marketer and accountant are going to require access to two very different areas of your account: Marketing Campaigns and Billing. The accountant has no need to create and send marketing email, and the marketer has no need to manage your billing information. By assigning each teammate access only to the pages they need to complete their work, you are able to protect the sensitive financial information contained in the Billing settings, and safeguard the possibility of accidentally sending a campaign.
+Teammates allows multiple users, or teammates, to send email from a single SendGrid account. Teammates is targeted toward groups of users who all share a single account, where each of these users has a different role and thus requires access to different SendGrid features. By only giving your individual team members access to the features that they need to do their jobs,you can limit access to sensitive areas of your account. Teammates makes it incredibly easy to add, remove, and manage different users.
 
 {% info %}
-Teammates with admin permissions have as much control over an account as the original account owner. This can be useful in the event of an account owner or admin leaving the company. By ensuring that two members of your team have admin access, you can prevent your team from losing access to your SendGrid account.
-{% endinfo %}
-
-{% anchor h3 %}
-Where can I find Teammates?
-{% endanchor %}
-
-To get started using Teammates, simply navigate to **Settings** in the sidebar and select **Teammates**. Continue reading below to learn how to send your first Teammate invitation
-
-Only account administrators and teammates with admin access are able to create and manage teammates. Subuser accounts also have access to Teammates, but they will be unable to manage teammates on the parent account level.
-
-{% info %}
-While only administrators can create teammates, it is possible for one administrator to create another teammate with administrator permissions. This new teammate would then be able to create and manage other teammates, along with having access to the account's billing settings. **Please be very careful about who you assign administrator permissions!**
+Only administrator teammates may impersonate subusers!
 {% endinfo %}
 
 {% anchor h2 %}
 Adding Teammates
 {% endanchor %}
 
-{% anchor h3 %}
-Adding a Teammate as an Administrator
-{% endanchor %}
+_To invite a Teammate to your account:_
 
-{% info %}
-Only administrator teammates may impersonate subusers!
-{% endinfo %}
-
-To invite a teammate to your account, navigate to **Settings**, and click on **Teammates** in the sidebar.
+, navigate to **Settings**, and click on **Teammates** in the sidebar.
 
 This is where you can see the list of all of your current teammates with their details: username, email address, first name, and last name. By clicking the action menu under **Actions** you can either delete the teammate, or edit that teammate.
 
@@ -75,7 +50,7 @@ Click **Add Teammate** to open the modal window allowing you to specify the emai
 ![Teammates]({{root_url}}/images/teammates_1.png)
 
 {% info %}
-Essentials, [Legacy Lite]({{root_url}}/Classroom/Basics/Billing/legacy_lite_plan.html), and Free Trial users may create up to one teammate per account. Pro and higher plans may create up to a limit of 1000 teammates.
+While only administrators can create teammates, it is possible for one administrator to create another teammate with administrator permissions. This new teammate would then be able to create and manage other teammates, along with having access to the account's billing settings. **Please be very careful about who you assign administrator permissions!**
 {% endinfo %}
 
 You should now see a modal window titled "New Teammate." Here you will enter your teammate's email address and select the type of teammate you would like to add. The teammate type dictates what permissions your new teammate will have.
@@ -83,7 +58,7 @@ You should now see a modal window titled "New Teammate." Here you will enter you
 ![Adding a new teammate]({{root_url}}/images/teammates_2.png)
 
 {% anchor h2 %}
-Teammate Permissions
+Configuring permissions
 {% endanchor %}
 
 By selecting a type, you can choose from several pre-defined permission levels to fit a variety of common roles: **Developer Access**, **Marketer Access**, and **Accountant Access** or you can customize access for the teammate.
