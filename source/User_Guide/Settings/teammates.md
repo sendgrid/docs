@@ -1,8 +1,8 @@
 ---
 seo:
   title: Teammates
-  description: Manage your Teammates
-  keywords: teammates, teammate
+  description: Adding and managing Teammates using the SendGrid UI
+  keywords: teammates, teammate, permissions
 title: Teammates
 weight: 0
 layout: page
@@ -20,7 +20,6 @@ Table of Contents
   * [Removing Teammates](#-Removing-Teammates)
   *[Requesting feature access](#-Requesting-feature-access)
   * [Granting feature access](#-Granting-feature-access)
-* [Troubleshooting](#-Troubleshooting)
 * [Teammates and API Keys](#-Teammates-and-API-Keys)
 
 Teammates allows multiple users, or teammates, to send email from a single SendGrid account. It enables groups of users to with different roles and responsibilities to share one account, where each of these users has access to varying SendGrid features depending on their needs. By only giving your individual team members access to the features that they need to do their jobs, you can limit access to sensitive areas of your account. Teammates makes it incredibly easy to add, remove, and manage different users.
@@ -32,10 +31,10 @@ Adding Teammates
 _To invite a Teammate to your account:_
 
 1. Navigate to **Settings**, and click on **Teammates** in the sidebar.
-<br>This is where you can see the list of all of your current teammates with their details: username, email address, first name, and last name. By clicking the action menu under **Actions** you can either delete or edit that.
+<br>This is where you can see the list of all of your current teammates with their details: username, email address, first name, and last name. 
 2. To add a new Teammate, click **Add Teammate**. 
 3. Enter the Teammate's email address and then select their permission level. 
-<br>Depending on the permission level, you may need to do some additional permission [configuration](#-Configuring-permissions) 
+<br>Depending on the selected permission level, you may need to do some additional permission [configuration](#-Configuring-permissions) 
 4. Click **Invite**. 
 <br>If you have already sent a teammate invitation, you will see a list titled **Pending Invites**. This list contains the email address of the invitee and the invitation expiration date.
 
