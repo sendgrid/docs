@@ -269,7 +269,7 @@ Redirect 301 /Classroom/Basics/your_reputation_what_is_it.html http://sendgrid.c
 Redirect 301 /Classroom/Basics/Security/setting_up_2_factor_authentication.html https://sendgrid.com/docsUser_Guide/Settings/two_factor_authentication.html
 Redirect 301 /Classroom/Basics/Account/adding_an_additional_dedicated_ip_to_your_account.html https://sendgrid.com/docs/User_Guide/Settings/dedicated_ip_addresses.html
 Redirect 301 /Classroom/Basics/Account/creating_multiple_user_credentials_for_sub_users.html https://sendgrid.com/docs/User_Guide/Settings/teammates.html
-Redirect 301 /Classroom/Basics/Account/im_a_multiple_credential_user_and_i_need_to_reset_my_password.html https://sendgrid.com/docs/Classroom/Basics/Account/resetting_your_password_as_a_teammate.html
+Redirect 301 /Classroom/Basics/Account/im_a_multiple_credential_user_and_i_need_to_reset_my_password.html https://sendgrid.com/docs/User_Guide/Settings/teammates.html
 Redirect 301 /Classroom/Basics/Account/what_is_my_sending_originating_ip_address_with_sendgrid.html https://sendgrid.com/docs/User_Guide/Settings/dedicated_ip_addresses.html
 Redirect 301 /Classroom/Basics/Security/sendgrid_multiauth_multiple_account_credentials.html https://sendgrid.com/docs/User_Guide/Settings/teammates.html
 Redirect 301 /Classroom/Basics/Security/what_security_measures_are_available_with_sendgrid_accounts.html https://sendgrid.com/policies/security/
@@ -855,7 +855,7 @@ Redirect 301 /Classroom/Basics/Account/what_are_subusers.html https://sendgrid.c
 Redirect 301 /Classroom/Basics/Account/how_do_i_add_more_subusers_to_my_account.html https://sendgrid.com/docs/User_Guide/Settings/subusers.html
 Redirect 301 /Classroom/Basics/Account/why_am_i_seeing_credential_resource_already_exists_when_i_am_creating_a_subuser_or_credential.html https://sendgrid.com/docs/User_Guide/Settings/subusers.html
 Redirect 301 /Classroom/Send/How_Emails_Are_Sent/how_do_i_send_mail_through_subuser_accounts.html https://sendgrid.com/docs/User_Guide/Settings/subusers.html
-Redirect 310 /Classroom/Deliver/Delivery_Introduction/segment_your_email_traffic_with_subusers.html https://sendgrid.com/docs/User_Guide/Settings/subusers.html
+Redirect 301 /Classroom/Deliver/Delivery_Introduction/segment_your_email_traffic_with_subusers.html https://sendgrid.com/docs/User_Guide/Settings/subusers.html
 
 #######
 #
@@ -871,6 +871,7 @@ Redirect 301 /Classroom/Troubleshooting/Authentication/certificate_verification_
 Redirect 301 /Classroom/Troubleshooting/Authentication/invalid_smtp_api_header.html https://sendgrid.com/docs/API_Reference/SMTP_API/errors_and_troubleshooting.html
 Redirect 301 /User_Guide/Marketing_Campaigns/drag_drop.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/editor.html
 Redirect 301 /Classroom/Troubleshooting/Account_Administration/recovering_your_username.html https://sendgrid.com/docs/User_Guide/Settings/reset_username_password.html
+
 #######
 #
 #  IP Redirects
@@ -960,7 +961,6 @@ Redirect 301 /Classroom/Basics/Account/creating_teammates_for_subusers.html http
 Redirect 301 /Classroom/Basics/Account/what_is_the_difference_between_subusers_and_multiple_credentials.html https://sendgrid.com/docs/User_Guide/Settings/teammates.html
 Redirect 301 /Classroom/Basics/Account/resetting_your_password_as_a_teammate.html https://sendgrid.com/docs/User_Guide/Settings/teammates.html
 Redirect 301 /Classroom/Troubleshooting/Account_Administration/teammates.html https://sendgrid.com/docs/User_Guide/Settings/teammates.html
-Redirect 301 /Classroom/Basics/Account/teammates_faq.html https://sendgrid.com/docs/User_Guide/Settings/teammates.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html
-
+Redirect 301 /Classroom/Basics/Account/teammates_faq.html https://sendgrid.com/docs/User_Guide/Settings/teammates.html
 
 

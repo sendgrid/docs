@@ -71,7 +71,7 @@ Only administrator teammates may impersonate subusers.
 Requesting Access to a SendGrid Feature
 {% endanchor %}
 
-If you are already signed into a SendGrid account as a teammate, but do not have access to a certain page or feature, you may request access to that page simply by clicking **Request Access**.
+If you are already signed into a SendGrid account as a teammate, but do not have access to a certain page or feature, you may request access to that page by clicking **Request Access**.
 
 This will send a notification to the account administrator who can grant you access. If there is more than one administrator, each administrator will be notified.
 
@@ -126,7 +126,7 @@ Teammates and API Keys
 
 There are many similarities between Teammates and API Keys that are worth discussing as the interaction between these two features may lead to some confusion.
 
-API Keys are used to authenticate API calls. Just as a teammate can be given specific permissions, API keys can be assigned specific [permissions]({{root_url}}/Classroom/Basics/API/api_key_permissions.html) to restrict which API calls they can authenticate.
+API Keys are used to authenticate API calls. Just as a teammate can be given specific permissions, API keys can be assigned specific [permissions]({{root_url}}/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html) to restrict which API calls they can authenticate.
 
 {% info %}
 API Keys and Teammates can be used as two different methods of restricting access to the same SendGrid features.
