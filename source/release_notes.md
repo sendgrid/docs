@@ -32,6 +32,21 @@ The following new features and changes to the service are available.
 </table>
 
 {% anchor h2 %}
+06 March 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Code Editor Color Scheme
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>The color scheme (theme) of the code editor within Marketing Campaigns has been updated to be more visually clean and consistent. The new look helps code appear less cluttered, while aligning more closely with the SendGrid brand.</td>
+  </tr>
+</table>
+
+{% anchor h2 %}
 01 March 2018
 {% endanchor %}
 
@@ -53,6 +68,32 @@ This open beta will not be available for all customers right away. High-volume (
  * Access the Email Activity Feed [here](https://app.sendgrid.com/email_activity)
  * For more information about the UI updates, see the [documentation](https://sendgrid.com/docs/User_Guide/email_activity_beta.html)
  * For more information about the API updates, see the [documentation](https://sendgrid.api-docs.io/v3.0/email-activity/filter-all-messages)
+ 
+ {% anchor h3 %}
+Font Update
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ><img src="{{root_url}}/images/code_icon.png" alt="An update to the API" width="100" height="100"></td>
+    <td>We've updated the font used throughout our user interface (UI) to align with the SendGrid brand.</td> 
+  </tr>
+</table>
+
+{% anchor h2 %}
+27 February 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Dates & Times Displayed on Campaigns Index
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>The Campaigns index page in Marketing Campaigns has been updated so that dates and times for important campaign events (like last edited or sent) are shown natively, below the name of each campaign.</td>
+  </tr>
+</table>
 
 {% anchor h2 %}
 16 February 2018
@@ -66,6 +107,21 @@ CSV Upload Notification Email Address
   <tr>
     <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
     <td>We've made it easier for you to receive CSV upload notifications by adding an additional link to the CSV processing step. This link allows you to add an email address to your notifications directly from the contacts page and save it for future use. </td>
+  </tr>
+</table>
+
+{% anchor h2 %}
+13 February 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Transactional Templates Search & Filtering
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>We've updated the Transactional Templates index page, allowing for dynamic search and filtering functionality by name, template ID, and template version ID. In addition to this improvement, we've updated what is seen when no templates are present –– more clearly conveying the need for a template version and offering a button to create one.</td>
   </tr>
 </table>
 
