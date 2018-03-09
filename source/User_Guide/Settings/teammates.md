@@ -79,7 +79,7 @@ _To modify an existing teammate's permissions:_
 
 {% anchor h3 %}
 Removing Teammates
-{% anchor %}
+{% endanchor %}
 
 _To delete a teammate:_
 
@@ -119,8 +119,6 @@ The teammate receives a notification email when they are either granted or denie
 {% anchor h2 %}
 Managing Teammates
 {% endanchor %}
-
-
 
 {% anchor h2 %}
 Teammates and API Keys
