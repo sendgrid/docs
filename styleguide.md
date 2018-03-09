@@ -29,6 +29,10 @@ Where possible, write pages in a "jobs to be done" format. Jobs to be done style
 * "Additional Resources" section at the end
 * Include sections to achieve the goal, with steps for each task (numbered steps, clear directions, and correct UI workflow)
 	For an example, see [Sending a Campaign](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html)
+	
+**Avoid passive voice.** A good way to check if your sentence is in passive or not is to add "by zombies" to the end of it. If zombies end up doing the action, it's passive. 
+
+Example: Any templates, campaigns, contacts, or API keys created by the teammate will not be deleted....by zombies(!)
 
 <a name="numbers"></a>
 ### Numbers
