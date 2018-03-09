@@ -47,6 +47,21 @@ Code Editor Color Scheme
 </table>
 
 {% anchor h2 %}
+08 March 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Unsubscribe Tag Support for Transactional Templates
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>Transactional email now supports unsubscribe modules using both the [unsubscribe] and [unsubscribe preferences] making it easier to add unsubscribe links to your emails. </td>
+  </tr>
+</table>
+
+{% anchor h2 %}
 01 March 2018
 {% endanchor %}
 
