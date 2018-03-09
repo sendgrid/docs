@@ -90,7 +90,7 @@ Font Update
 
 <table class="table" style="width: 100%;">
   <tr>
-    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ><img src="{{root_url}}/images/code_icon.png" alt="An update to the API" width="100" height="100"></td>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
     <td>We've updated the font used throughout our user interface (UI) to align with the SendGrid brand.</td> 
   </tr>
 </table>
