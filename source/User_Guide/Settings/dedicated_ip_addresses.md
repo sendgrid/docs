@@ -14,7 +14,7 @@ navigation:
 - [Why would I want a Dedicated IP Address?]()
 - [Do I have a Dedicated IP Address?]()
 - [How many Dedicated IPs should I have?]()
-- [Adding an additional Dedicated IP Address]()
+- [Adding an additional Dedicated IP Address](https://sendgrid.com/docs/User_Guide/Settings/dedicated_ip_addresses.html#-Adding-an-additional-Dedicated-IP-Address)
 - [Reputation Monitoring for Dedicated IP Accounts]()
 - [Warming Up a Dedicated IP Address]()
 - [Automatic IP Warmup Schedule]()
