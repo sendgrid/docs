@@ -10,14 +10,14 @@ navigation:
   show: true
 ---
 
-- [What are Dedicated IP Addresses?]()
-- [Why would I want a Dedicated IP Address?]()
-- [Do I have a Dedicated IP Address?]()
-- [How many Dedicated IPs should I have?]()
-- [Adding an additional Dedicated IP Address](https://sendgrid.com/docs/User_Guide/Settings/dedicated_ip_addresses.html#-Adding-an-additional-Dedicated-IP-Address)
-- [Reputation Monitoring for Dedicated IP Accounts]()
-- [Warming Up a Dedicated IP Address]()
-- [Automatic IP Warmup Schedule]()
+- [What are Dedicated IP Addresses?](#-What-are-Dedicated-IP-Addresses)
+- [Why would I want a Dedicated IP Address?](#-Why-would-I-want-a-Dedicated-IP-Address)
+- [Do I have a Dedicated IP Address?](#-Do-I-have-a-Dedicated-IP-Address)
+- [How many Dedicated IPs should I have?](#-How-many-Dedicated-IPs-should-I-have)
+- [Adding an additional Dedicated IP Address](#-Adding-an-additional-Dedicated-IP-Address)
+- [Reputation Monitoring for Dedicated IP Accounts](#-Reputation-Monitoring-for-Dedicated-IP-Accounts)
+- [Warming up a Dedicated IP Address](#-Warming-up-a-Dedicated-IP-Address)
+- [Automatic IP Warmup Schedule](#-Automatic-IP-Warmup-Schedule)
 
 {% anchor h2 %}
 What are Dedicated IP Addresses?
@@ -96,7 +96,7 @@ In addition, SendGrid does offer [Delivery Consultation](https://sendgrid.com/ma
 Warming Up a Dedicated IP Address
 {% endanchor %}
 
-For more information on warming up an IP Address, see [Warming up IPS]().ß
+For more information on warming up an IP Address, see [Warming up IPS]().
 
 {% anchor h2 %}
 Additional Resources
