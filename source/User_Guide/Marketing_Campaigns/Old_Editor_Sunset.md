@@ -57,7 +57,7 @@ I moved my campaign to the new editor, but something looks weird.
 
 Depending on how you created and edited your campaign in the old experience, some maintenance may be required when moving an old campaign in a new editor for the first time. This is due to some improvements that we made with the new experience – particularly around how HTML is handled and protected. 
 
-While these improvements offer far greater stability and speed for the long term, we know that these initial changes can be a bit frustrating. To help, we've identified three possible scenarios when migrating a campaign into the new editor, with some details on how to resolve these issues, below:
+While these improvements offer far greater stability and speed for the long term, we know that these initial changes can be a bit frustrating. To help, we've identified two possible scenarios when migrating a campaign into the new editor, with some details on how to resolve these issues, below:
 
 **I have a custom coded template, but want to use the Design Editor:** 
 <br>If you get custom code from your designer or developer and want to use it with our powerful new drag-and-drop Design editor, you can! First, our Design editor needs to be able to understand what kind of content blocks are in your email, and how it should group your content. To do this, you (or your developer) will need to add some of our [Drag and Drop Markup]({{root_url}}/User_Guide/Marketing_Campaigns/editor.html#-Importing-Custom-HTML-With-Drag--Drop-Markup) to the code.
