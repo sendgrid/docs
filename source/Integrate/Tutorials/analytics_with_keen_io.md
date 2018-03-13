@@ -74,7 +74,7 @@ Adding a Segment
 A segment will allow you to track a specific campaign or filter on a particular field like a customer ID. To create a segment, select “Add Segment” from the top left corner. The following pop-out menu will allow you to define your segment name, the date you’d like to look at, and, most importantly, select a property by which you’d like to measure the effectiveness of a campaign.
 
 {% info %}
-This is explaining a different process from creating an [customer email segment]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html#-Create-a-Segment) in SendGrid
+This is explaining a different process from creating an [customer email segment]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html#-Creating-a-Segment) in SendGrid
 {% endinfo %}
 
 ![SendGrid- Email Analytics App Create a Segment]({{root_url}}/images/keen/sendgrid_create_a_segment.png)

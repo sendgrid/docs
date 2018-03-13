@@ -18,7 +18,7 @@ To edit your name and email address, click the “Change Contact Info” button 
 
 **Last Name** - This is be the last name of the representative from your company who should receive contacts from SendGrid.
 
-**Email address** - This is the address where you will be contacted by SendGrid for any account-level alerts and notifications. This must be a valid and active email address that you routinely check.
+**Email address** - This is the address where you will be contacted by SendGrid for any account-level alerts and notifications such as billing notifications. This must be a valid and active email address that you routinely check.
 
 **Username** - Your SendGrid Username is used to access our API and our SMTP Relay. Changing this will immediately cause all of your calls to SendGrid to stop working.
 
@@ -47,31 +47,3 @@ If you find that your scheduled sends or stats seem like they are not quite corr
 **Website** - Your company’s website
 
 **Phone** - Your company’s phone number, where SendGrid can reach the representative that should be contacted.
-
-**Billing Email** - If this email is added, SendGrid will send all your billing notifications to this address. If you do not specify this address, SendGrid will send your billing notifications to your account email.
-
-{% anchor h2 %}
-Changing Your Password
-{% endanchor %}
-
-There are two ways to change your password. Through the SendGrid UI and through the Forgot Password page.
-
-{% warning %}
-When you change your account password, your SMTP and API access will change as well. Make sure you update your account information on all systems and software!
-{% endwarning %}
-
-{% anchor h3 %}
-Changing your Password through the SendGrid UI
-{% endanchor %}
-
-**Current Password** - This is the current password on your account. Without this, you will not be able to change your password.
-
-**New Password** - Enter a new password into this field. Passwords should be secure and not guessable so as to protect your account information from nefarious people and scripts..
-
-**Confirm New Password** - Enter the same password that you put into “New Password.” If the password entered here is not the same as what you put into “New Password,” the form will not accept your new password.
-
-{% anchor h3 %}
-Changing your Password via Forgot Password
-{% endanchor %}
-
-If for some reason you cannot remember your password, go to the [SendGrid login page]({{site.site_url}}/login) and click ”[Forgot Password]({{site.site_url}}/user/forgotPassword)." From here, you will need to enter your SendGrid username. We will send you an email with account reactivation steps, please follow these steps to access your account again.

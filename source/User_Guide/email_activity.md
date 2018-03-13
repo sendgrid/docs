@@ -5,79 +5,220 @@ title: Email Activity
 seo:
   title: SendGrid Email Activity
   description: Email activity allows you to see and search the email events on your account.
-  keywords: email activity, account events, email events
+  keywords: email activity, account events, email events, old email activity
 navigation:
   show: true
 ---
 
-<iframe src="https://player.vimeo.com/video/130900679" width="500" height="312" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-The Email Activity page allows you to view a snapshot of the email related activity that has been sent on your account. This does not include the information sent on a subuser account. These logs display all of your email events and can be viewed by the most recent activity or searched by email address.
-
 {% info %}
-Email activity only shows the most recent 500 events. To access data in real time, we recommend that you consider implementing our Event Webhook.
+Are you looking for information about Email Activity Feed Beta? If so, check out [Email Activity Feed - Beta]({{root_url}}/User_Guide/email_activity_beta.html). If you switch to Beta, you can return to the old Email Activity Feed page at any time by hovering over the BETA tag at the top of the page and selecting the “Switch Back” link that appears.
 {% endinfo %}
 
-* [Email-Events](#-Email-Events)
-* [Filtering The Activity Feed](#-Filtering-The-Activity-Feed)
-* [Searching Within Your Email Activity](#-Searching-Within-Your-Email-Activity)
-* [Subuser Email Activity](#-Subuser-Email-Activity)
+<iframe src="https://player.vimeo.com/video/130900679" width="500" height="312" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+- [Filtering the Activity Feed](#-Filtering-the-Activity-Feed)
+- [Searching the Activity Feed](#-Searching-the-Activity-Feed)
+- [Subuser email activity](#-Subuser-email-activity)
+- [Email events](#-Email-events)
+- [Troubleshooting](#-Troubleshooting)
+    - [Checking to see if a specific email was delivered](#-Checking-to-see-if-a-specific-email-was-delivered)
+    - [Deferrals](#-Deferrals)
+    - [Drops](#-Drops)
+    - [Bounces](#-Bounces)
+    - [Removing an email from a suppression list](#-Removing-an-email-from-a-suppression-list)
+    - [Setting up bounce forwarding](#-Setting-up-bounce-forwarding)
+
+The Email Activity feed allows you to view a snapshot of email-related activity associated with your account. These logs display all of your email events - filter by event type or search by email address.
+
+{% info %}
+Email activity shows the most recent 500 events. To access data in real time, implement our Event Webhook.
+{% endinfo %}
+
+{% anchor h2 %}
+Filtering the Activity Feed
+{% endanchor h2 %}
+
+*To filter by event type:*
+
+1. On the [Email Activity page](https://app.sendgrid.com/email_activity), in the filter drop down, click the checkbox next to “All Filters”.
+1. Select individual event types to filter.
+    </br>The activity feed refreshes with the event types you selected.
+
+{% anchor h2 %}
+Searching the Activity Feed
+{% endanchor h2 %}
+
+*To search the Activity feed by email, mailbox name or domain name:*
+
+- To search by email, enter the recipient’s entire email address into the search field and click enter.
+- To search by mailbox name (the part of an email before the @ symbol), enter the mailbox name into the search field and click enter.
+- To search by domain name (the part of an email after the @ symbol), enter the domain into the search field and click enter.
+
+{% anchor h2 %}
+Subuser email activity
+{% endanchor h2 %}
+
+To see a subuser’s email activity, log in as that subuser or [impersonate]({{root_url}}/User_Guide/Settings/Subusers/impersonation.html) the subuser account.
+
+You cannot see a parent accounts email activity from a subuser account.
 
 {% anchor h2 %}
 Email Events
 {% endanchor h2 %}
 
-You will be able to see data about the following types of email events in the Email Activity Feed:
+The Email Activity feed allows you to view specific information about messages sent from your account. 
 
-**[Processed]({{root_url}}/Glossary/request.html)** - Requests from your website, application, or mail client via SMTP Relay or the API that SendGrid processed.
-
-**[Clicks]({{root_url}}/Glossary/clicks.html)** - Whenever a recipient clicks one of the Click Tracked links in your email.
-
-**[Delivered]({{root_url}}/Glossary/deliveries.html)** - An email that was delivered to a recipient.
-
-**[Opens]({{root_url}}/Glossary/opens.html)** - Whenever an email is opened by a recipient.
-
-**Unsubscribes** - Whenever a recipient unsubscribes from your emails.
-
-**Group Unsubscribes** - When a recipient unsubscribes from a suppression group.
-
-**Group Resubscribes** - When a recipient resubscribes themselves to a suppression group.
-
-**Deferred** - The recipient mail server asked SendGrid to stop sending emails so fast.
-
-**[Drops]({{root_url}}/Glossary/drops.html)** - SendGrid will drop an email when the contact on that email is in one of your suppression groups, the recipient
-email previously bounced, or that recipient has marked your email as spam. For more information, see [My Emails Are Being Dropped]({{site.support_url}}/hc/en-us/articles/200181728-My-emails-are-being-dropped-).
-
-**[Bounces]({{root_url}}/Glossary/bounces.html)** - When an email is attempted to be delivered, but the recipient mail server rejects it.
-
-**[Blocks]({{root_url}}/Glossary/blocks.html)** - When your IP address has been blacklisted or blocked by an ISP or messaging organization. Blocks are less severe than bounces and do not result in permanent suppressions: subsequent sends to blocked email addresses are not automatically suppressed.
-
-**[Spam Reports]({{root_url}}/Glossary/spam_reports.html)** - Whenever a recipient marks your email as spam and their mail server tells us about it.
-
-**Parse** - Whenever an incoming email is processed through the [Inbound Parse Webhook]({{root_url}}/Classroom/Basics/Inbound_Parse_Webhook/setting_up_the_inbound_parse_webhook.html).
+<table class="table" style="table-layout:fixed">
+  <tr>
+  <th>Event</th>
+    <th>Description</th>
+    </tr>
+    <tr>
+    <td>Processed</td>
+    <td>Requests from your website, application, or mail client via SMTP Relay or the API that SendGrid processed.</td>
+  </tr>
+  <tr>
+    <td>Clicks</td>
+    <td>Whenever a recipient clicks one of the Click Tracked links in your email.</td>
+  </tr>
+  <tr>
+    <td>Delivered</td>
+    <td>The accepted response generated by the recipients' mail server.</td>
+  </tr>
+  <tr>
+    <td>Opens</td>
+    <td>The response generated by a recipient opening an email.</td>
+  </tr>
+  <tr>
+    <td>Unsubscribes</td>
+    <td>Whenever a recipient unsubscribes from your emails. </td>
+  </tr>
+  <tr>
+    <td>Group Unsubscribes</td>
+    <td>Whenever a recipient unsubscribes from a suppression group.</td>
+  </tr>
+  <tr>
+    <td>Group Resubscribes</td>
+    <td>When a recipient resubscribes themselves to a suppression group.</td>
+  </tr>
+  <tr>
+    <td>Deferred</td>
+    <td>The recipient mail server asked SendGrid to stop sending emails so fast.</td>
+  </tr>
+  <tr>
+    <td>Drops</td>
+    <td>SendGrid will drop an email when the contact on that email is in one of your suppression groups, the recipient email previously bounced, or that recipient has marked your email as spam.</td>
+  </tr>
+  <tr>
+    <td>Bounces </td>
+    <td>The receiving server could not or would not accept the message. If a recipient has previously unsubscribed from your emails, your attempt to send to them is bounced.</td>
+  </tr>
+  <tr>
+    <td>Blocks</td>
+    <td>When your IP address has been blacklisted or blocked by an ISP or messaging organization. Blocks are less severe than bounces and do not result in permanent suppressions: subsequent sends to blocked email addresses are not automatically suppressed.</td>
+  </tr>
+  <tr>
+    <td>Spam Reports</td>
+    <td>Whenever a recipient marks your email as spam and their mail server tells us about it.</td>
+  </tr>
+  <tr>
+    <td>Parse</td>
+    <td>Triggered if you're using the Inbound Parse Webhook.</td>
+  </tr>
+</table>
 
 {% anchor h2 %}
-Filtering The Activity Feed
-{% endanchor h2 %}
+Troubleshooting
+{% endanchor %}
 
-**By Event** - If you’re looking into a single type of event, simply click the checkbox next to “All Filters” and then select the individual event types that you are looking for. The activity feed will refresh with only the event types you selected.
+{% anchor h3 %}
+Checking delivery status of a  specific email
+{% endanchor %}
 
-{% anchor h2 %}
-Searching Within Your Email Activity
-{% endanchor h2 %}
+You can check email delivery status by using the Email Activity page, or by using the Event Webhook.
 
-If you need to search for a specific recipient, enter the recipient’s entire email address into the search field and press enter.
+- For a successful delivery, the Email Activity page, or the Event Webhook shows a delivered event - expanding it shows a reason code of 250 OK. This means the receiving server has accepted the message. You can also check bounced, deferred and processed messages.
 
-You can also search by the mailbox name, the part before the @ symbol, or by the domain name, the part after the @ symbol.
+- If you can't find an email on the Email Activity page, check your suppression lists; [bounces]({{root_url}}/User_Guide/Suppressions/bounces.html), [blocks]({{root_url}}/User_Guide/Suppressions/blocks.html), [spam reports]({{root_url}}/User_Guide/Suppressions/spam_reports.html), [invalid email]({{root_url}}/User_Guide/Suppressions/invalid_emails.html).
 
+- Have the recipient check their spam folder.
 
-{% anchor h2 %}
-Subuser Email Activity
-{% endanchor h2 %}
+{% anchor h3 %}
+Deferrals
+{% endanchor %}
 
-To see a subuser’s email activity, you will need to either log in as that subuser or impersonate the subuser account.
+In your logs, you may see the following error message accompanying a deferral event:
 
-When looking at a subuser’s email activity, you will not see the subuser parent’s email activity.
+`Email was deferred due to the following reason(s): ["IPs reached ISP-suggested hourly limits" http://send.gd/1uKnEBh]`
+
+This deferral means you've been going over IP warmup limits on a new IP. For more information about IP Warmup, see [Warming up an IP Address]({{root_url}}/User_Guide/Settings/ip_warmup.html).
+
+In your logs, you may see the following error message accompanying a deferral event:
+
+`Email was deferred due to the following reason(s): ["IPs reached ISP-suggested max connection limits: http://send.gd/1uKnEBh"]`
+
+This deferral is created by SendGrid to control the rate of delivery by ISP to help prevent throttling and spam folder delivery. Sending too much mail too fast can cause different mail providers to be suspicious of the mail, and that impacts deliverability. This automatic deferral was put in place to allow senders to send as much mail as you want at once, without impacting your deliverability.
+
+{% anchor h3 %}
+Drops
+{% endanchor %}
+
+A drop occurs when you try to send a message to an email address listed on one of the suppression lists: Bounces, Unsubscribes, Spam reports and Invalid Emails. If an email is already on one of the lists, our systems automatically drop the email to protect your Sender Reputation.
+
+A dropped message cannot be resent automatically. To resend a message, first [remove the email from the suppression list](#-Removing-an-email-from-a-suppression-list), and then recreate and resend the email.
+
+{% anchor h3 %}
+Bounces
+{% endanchor %}
+
+A bounce is a Drop event that occurs when a message to an address has previously Bounced.
+
+You can visit the [Bounces list](https://app.sendgrid.com/suppressions/bounces) under the Suppressions tab, and search the address to find the details of the original attempt, such as the date and full error reason code. Once an address is on this list, we do not attempt to deliver further messages to it; we drop the message to protect your external reputation.
+
+A bounced message cannot be resent automatically. To resend a message, first [remove the email from the suppression list](#-Removing-an-email-from-a-suppression-list), and then recreate and resend the email.
+
+{% info %}
+A delayed bounce occurs when a recipient server accepts a message (Delivered) and then is promptly declined (Bounced). This is an infrequent occurrence, and SendGrid treats these messages as a bounce, and any future sends to this address are dropped, unless you remove the email from your bounce suppression list.
+{% endinfo %}
+
+{% anchor h3 %}
+Removing an email from a suppression list
+{% endanchor %}
+
+SendGrid automatically drops emails sent to addresses on suppression lists. If you want to retry sending an email to an address that is on a suppressions list, you need to remove it from the list first.
+
+{% warning %}
+Only remove emails from these lists if you're sure the recipients want to receive the email. Otherwise, continuously sending to recipients who don't want your emails can negatively impact your sender reputation.
+{% endwarning %}
+
+*To remove an email from a suppression list:*
+
+1. In the UI, under [Suppressions](https://app.sendgrid.com/suppressions/global_unsubscribes), navigate to the suppression list that you want to remove a recipient from: [Global Unsubscribes](https://app.sendgrid.com/suppressions/global_unsubscribes), [Group Unsubscribes](https://app.sendgrid.com/suppressions/group_unsubscribes), [Bounces](https://app.sendgrid.com/suppressions/bounces), [Spam Reports](https://app.sendgrid.com/suppressions/spam_reports?), [Blocks](https://app.sendgrid.com/suppressions/blocks?), or [Invalid](https://app.sendgrid.com/suppressions/invalid_emails?).
+1. Select the email you want to remove.
+1. In the drop-down menu on the top right of the screen, select **Remove selected emails**.
+
+{% anchor h3 %}
+Setting up bounce forwarding
+{% endanchor %}
+
+You can receive bounce notifications to a specific address by enabling the "Forward Bounces" feature in your account and defining the forwarding address. However, you can also set it to send any bounces back to the originating FROM address.
+
+**To receive a bounce notification report to the FROM address on the email that bounced:**
+
+1. Navigate to **[Mail Settings](https://app.sendgrid.com/settings/mail_settings)** and select **Forward Bounce**.
+1. Toggle the slider to **on**
+1. Leave the "Use the from address" box ticked.
+1. Leave the **email address** entry field blank.
+
+{% info %}
+If you are sending bounce messages to a Gmail account, you need to set up an email filter in your inbox to tell Gmail not to send these messages to your spam folder.
+
+When Gmail doesn’t see a corresponding message in the sent folder connecting the bounce message, it may decide that the bounce message isn’t valid and send it to spam.
+
+One way to do this is in the filter, set up **From** `daemon` and **Has the words** `daemon`, and check the box **Never send it to Spam**.
+{% endinfo %}
+
+These are some common issues people see with reading their email activity feed.
 
 {% anchor h2 %}
 Additional Resources

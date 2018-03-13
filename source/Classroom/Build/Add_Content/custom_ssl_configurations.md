@@ -20,7 +20,9 @@ Before Adding a Custom SSL configuration, you need to set up a valid [email link
 1. Set up the proxy to use HTTP or HTTPS. For HTTPS, provide valid SSL certificate for `mailing.example.com` domain.
 1. To forward traffic, set `Host` HTTP header to `mailing.example.com` domain.
 1. Point the CNAME record to your proxy. For example, `CNAME mailing.example.com proxy.example.com`.
-  {% warning %}
-    Don't validate the DNS record more than once, because after changing the CNAME, a second validation fails and the whitelabel stops working.
-  {% endwarning %}
-1. [Contact SendGrid support](https://support.sendgrid.com/hc/en-us) to enable SSL click and open tracking.
+
+{% warning %}
+Don't validate the DNS record more than once, because after changing the CNAME, a second validation fails and the whitelabel stops working.
+{% endwarning %}
+
+[Contact SendGrid Support](https://support.sendgrid.com/hc/en-us) to enable SSL click and open tracking.

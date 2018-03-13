@@ -1,21 +1,23 @@
 ---
-layout: page
-weight: 0
+seo:
+  title: Scheduling Parameters
+  description: Scheduling an email with SMTP
+  keywords: SMTP, send email, scheduling
 title: Scheduling Parameters
+weight: 10
+layout: page
 navigation:
   show: true
 ---
 
-With scheduling you can send large volumes of email in queued batches or target individual recipients by specifying a custom UNIX timestamp parameter.
+With scheduling, you can send large volumes of email in queued batches or target individual recipients by specifying a custom UNIX timestamp parameter.
 Using the parameters defined below, you can queue batches of emails targeting individual recipients.
 
 {% info %}
 **Emails can be scheduled up to 72 hours in advance.** However, this scheduling constraint does not apply to campaigns sent via [Marketing Campaigns]({{root_url}}/User_Guide/Marketing_Campaigns/index.html).
 {% endinfo%}
 
-This parameter allows SendGrid to begin processing a customer’s email requests before sending. SendGrid will then queue those messages and release
-them when the timestamp is exceeded. This technique allows for a more efficient way to distribute large email requests and can **improve overall mail delivery time**
-performance. This functionality:
+This parameter allows SendGrid to begin processing a customer’s email requests before sending. SendGrid queues the messages and releases them when the timestamp indicates. This technique allows for a more efficient way to distribute large email requests and can **improve overall mail delivery time** performance. This functionality:
 
 * Improves efficiency of processing and distributing large volumes of email.
 * Reduces email pre-processing time.
@@ -23,18 +25,18 @@ performance. This functionality:
 * Is available for free to all SendGrid customers.
 
 {% info %}
-Scheduled sends can be cancelled, if you include a batch ID with your send. For more information, check out [Cancel Scheduled Sends]({{root_url}}/API_Reference/Web_API_v3/cancel_schedule_send.html)!
+Cancel Scheduled sends by including a batch ID with your send. For more information, check out [Cancel Scheduled Sends]({{root_url}}/API_Reference/Web_API_v3/cancel_schedule_send.html)!
 {% endinfo %}
 
 {% warning %}
-Using both `send_at` and `send_each_at` is not valid and will cause your request to be dropped.
+Using both `send_at` and `send_each_at` is not valid. Setting both causes your request to be dropped.
 {% endwarning %}
 
 {% anchor h2 %}
 Send At
 {% endanchor %}
 
-To schedule a send request for a large batch of emails use the `send_at` parameter which will send all emails at approximately the same time. `send_at` is a [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time).
+To schedule a send request for a large batch of emails, use the `send_at` parameter which will send all emails at approximately the same time. `send_at` is a [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time).
 
 <h4>Example of send_at email header</h4>
 {% codeblock lang:json %}
@@ -68,7 +70,7 @@ To schedule a send request for individual recipients; use `send_each_at` to send
 }
 {% endcodeblock %}
 
-To allow for the cancellation of a scheduled send, you must include a `batch_id` with your send. The endpoint for cancellation needs a `batch_id` to cancel with. To generate a valid `batch_id`, use the [batch id generation endpoint]({{root_url}}/API_Reference/Web_API_v3/cancel_scheduled_send.html#Cancel-Scheduled-Sends). A `batch_id` is valid for 10 days (864,000 seconds) after generation.
+To allow for the cancellation of a scheduled send, you must include a `batch_id` with your send. To generate a valid `batch_id`, use the [batch id generation endpoint]({{root_url}}/API_Reference/Web_API_v3/cancel_scheduled_send.html#Cancel-Scheduled-Sends). A `batch_id` is valid for 10 days (864,000 seconds) after generation.
 
 <h4>Example of including a batch_id</h4>
 {% codeblock lang:json %}
@@ -86,3 +88,12 @@ To allow for the cancellation of a scheduled send, you must include a `batch_id`
   "batch_id": "MWQxZmIyODYtNjE1Ni0xMWU1LWI3ZTUtMDgwMDI3OGJkMmY2LWEzMmViMjYxMw"
 }
 {% endcodeblock %}
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor h2 %}
+
+- [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
+- [Getting Started with the SMTP API]({{root_url}}/API_Reference/SMTP_API/getting_started_smtp.html)
+- [Integrating with SMTP]({{root_url}}/API_Reference/SMTP_API/integrating_with_the_smtp_api.html)
+- [Building an SMTP Email]({{root_url}}/API_Reference/SMTP_API/building_an_smtp_email.html)

@@ -64,7 +64,7 @@ You can send any type of email (transactional or marketing) over the v3 Mail Sen
 Are there limits on how often I can send email and how many recipients I can send to?
 {% endanchor %}
 
-There are rate limits on how frequently you can call the v3 Mail Send endpoint. Currently, you may make up to 3,000 requests per second to our endpoint. Each email you send may include up to 1000 recipients. For more information on other limitations, and how this may impact your integration, please visit our [v3 Mail Send overview]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html).
+There are rate limits on how frequently you can call the v3 Mail Send endpoint. Currently, you may make up to 10,000 requests per second to our endpoint. Each email you send may include up to 1000 recipients. For more information on other limitations, and how this may impact your integration, please visit our [v3 Mail Send overview]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html).
 
 {% anchor h2 %}
 Why did you remove the x-smtpapi parameter? Can I still change my mail settings, tracking settings, and unique arguments?
