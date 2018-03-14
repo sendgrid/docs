@@ -175,14 +175,20 @@ Substitution tags allow you to easily generate dynamic content for each recipien
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>{% raw %}[unsubscribe]{% endraw %}</code>* </td>
+   <td><code>{% raw %}<%asm_group_unsubscribe_raw_url%>{% endraw %}</code>* </td>
    <td>This tag is replaced with a link allowing your recipients opt out of any emails you send using the chosen Unsubscribe Group.</td>
    <td>Unsubscribe</td>
  </tr>
  <tr>
-   <td><code>{% raw %}[unsubscribe_preferences]{% endraw %}</code>
+   <td><code>{% raw %}<%asm_preferences_raw_url%>{% endraw %}</code>
    * </td>
    <td>This tag is replaced with a link allowing your recipients to opt out of any email unsubscribe groups you offer.</td>
+   <td>Unsubscribe</td>
+ </tr>
+   <tr>
+   <td><code>{% raw %}<%asm_global_unsubscribe_raw_url%>{% endraw %}</code>
+   * </td>
+   <td>This tag is replaced with a link allowing your recipients to opt out of all email communication.</td>
    <td>Unsubscribe</td>
  </tr>
  <tr>
