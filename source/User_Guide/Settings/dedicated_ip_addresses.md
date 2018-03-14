@@ -96,7 +96,7 @@ In addition, SendGrid does offer [Delivery Consultation](https://sendgrid.com/ma
 Warming Up a Dedicated IP Address
 {% endanchor %}
 
-For more information on warming up an IP Address, see [Warming up IPS]().
+For more information on warming up an IP Address, see [Warming up a dedicated IP]({{root_url}}/User_Guide/Settings/ip_warmup.html).
 
 {% anchor h2 %}
 Additional Resources
