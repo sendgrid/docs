@@ -32,6 +32,21 @@ The following new features and changes to the service are available.
 </table>
 
 {% anchor h2 %}
+14 March 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Fixed a segmentation date issue
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>There was a bug in the UI that affected the way that dates displayed for events when creating a segment. Specifically, the UI would show "01/01/70" as dates for events, when there was no data present. This has been resolved and now aligns with the rest of the UI, displaying "-" when applicable.</td>
+  </tr>
+</table>
+
+{% anchor h2 %}
 06 March 2018
 {% endanchor %}
 
