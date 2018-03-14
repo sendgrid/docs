@@ -68,7 +68,7 @@ Use this query to filter by email subject (replace `<<your API key>>` with an AP
 
 {% codeblock %}
 curl --request GET \
- --url 'http://api.sendgrid.com/v3/messages?limit=10&query=subject%3D<<subject>>' \
+ --url 'https://api.sendgrid.com/v3/messages?limit=10&query=subject%3D<<subject>>' \
  --header 'authorization: Bearer <<your API key>>'
 {% endcodeblock %}
 
@@ -88,7 +88,7 @@ Use this query to filter by a recipient's email: (replace `<<your API key>>` wit
 
 {% codeblock %}
 curl --request GET \
- --url 'http://api.sendgrid.com/v3/messages?limit=10&query=to_email%3D%22<<email>>%22' \
+ --url 'https://api.sendgrid.com/v3/messages?limit=10&query=to_email%3D%22<<email>>%22' \
  --header 'authorization: Bearer <<your API key>>'
 {% endcodeblock %}
 
@@ -108,7 +108,7 @@ Use this query to filter by all bounced emails: (replace `<<your API key>>` with
 
 {% codeblock %}
 curl --request GET \
- --url 'http://api.sendgrid.com/v3/messages?limit=10&query=status%3D%22bouced%22' \
+ --url 'https://api.sendgrid.com/v3/messages?limit=10&query=status%3D%22bouced%22' \
  --header 'authorization: Bearer <<your API key>>'
 {% endcodeblock %}
 
