@@ -57,7 +57,7 @@ Unsubscribe Tag Support for Transactional Templates
 <table class="table" style="width: 100%;">
   <tr>
     <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
-    <td>Transactional email now supports unsubscribe modules using both the [Unsubscribe] and [Unsubscribe_Preferences] making it easier to add unsubscribe links to your emails. </td>
+    <td>The Unsubscribe module now uses asm tags in order to work with both Marketing Campaigns and Transactional email. To add unsubscribe links to your template, use the `<%asm_group_unsubscribe_raw_url%>`,  `<%asm_global_unsubscribe_raw_url%>`, or `<%asm_preferences_raw_url%>` tags.</td>
   </tr>
 </table>
 
