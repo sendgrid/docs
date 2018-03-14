@@ -52,7 +52,7 @@ All queries need to be [URL encoded](https://meyerweb.com/eric/tools/dencoder/),
 
 Encoded, this query would look like this:
 
-`query=type%3D%22query_content%22`
+`query=query_type%3D%22query_content%22`
 
 {% anchor h2 %}
 Queries for common use cases
@@ -156,9 +156,11 @@ Filter by a recipient and a date range
 
 Use this query to filter to emails by recipient and between specific dates: (replace `<<your API key>>` with an API key from your account, replace <<start_date>> and <<end_date>> with a URL encoded UTC date string in this format: `YYYY-MM-DD HH:mm:SS`, and and replace <<email>> with the URL encoded recipient's email)
 
+{% codeblock %}
 curl --request GET \
  --url 'https://api.sendgrid.com/v3/messages?limit=10&query=last_event_time%20BETWEEN%20TIMESTAMP%20%{start_date}%22%20AND%20TIMESTAMP%20%22{end_date}%22AND%20to_email%3D%22<<email>>%22' \
  --header 'authorization: Bearer <<your API key>>'
+{% endcodeblock %}
 
 {% anchor h2 %}
 Keywords and Operator reference
@@ -216,11 +218,11 @@ This is a full list of basic query types and examples: (replace the data in quot
  </tr>
  <tr>
    <td><code>msg_id</code></td>
-   <td><code>msg_id=“filter0307p1las1-16816-5A023E36-1.0”</code></td>
+   <td><code>msg_id="filter0307p1las1-16816-5A023E36-1.0"</code></td>
  </tr>
  <tr>
    <td><code>from_email</code></td>
-   <td><code>from_email=“testing@sendgrid.net”</code></td>
+   <td><code>from_email="testing@sendgrid.net"</code></td>
  </tr>
  <tr>
    <td><code>subject</code></td>
@@ -279,7 +281,7 @@ This is a full list of basic query types and examples: (replace the data in quot
  </tr>
  <tr>
    <td><code>last_event_time</code></td>
-   <td><code>last_event_time=“2017-11-07T23:13:58Z”</code></td>
+   <td><code>last_event_time="2017-11-07T23:13:58Z"</code></td>
  </tr>
  <tr>
    <td><code>clicks</code></td>
