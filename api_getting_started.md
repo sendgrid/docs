@@ -12,9 +12,9 @@ navigation:
 
 * [Prerequisites](#-Prerequisites)
 * [How to send an API email](#-How-to-send-an-API-email)
-  * [Build](#-Build)
-  * [Send](#-Send)
-  * [Response](#-Response)
+  * [Build your API call](#-Build-your-API-call)
+  * [Send](#-Send-your-API-call)
+  * [API Response message](#-API-Response-message)
 * [Next steps](#-Next-steps)
 
 {% anchor h2 %}
@@ -35,4 +35,11 @@ Curl comes standard on Mac operating systems.
 How to send an API email
 {% endanchor %}
 
+{% anchor h3 %}
+Build your API call
+{% endanchor %}
+
+{% anchor h3 %}
+API Response message
+{% endanchor %}
 
