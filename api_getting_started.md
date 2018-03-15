@@ -35,9 +35,16 @@ Curl comes standard on Mac operating systems.
 How to send an API email
 {% endanchor %}
 
+
+
 {% anchor h3 %}
 Build your API call
 {% endanchor %}
+
+Your API call must have the following components:
+
+* An [Authorization Header](https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-authentication#authorization-header)
+* 
 
 {% anchor h3 %}
 API Response message
