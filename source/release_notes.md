@@ -30,6 +30,172 @@ The following new features and changes to the service are available.
     <td align="center">Price Update</td>
   </tr>
 </table>
+
+{% anchor h2 %}
+14 March 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Fixed a segmentation date issue
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>There was a bug in the UI that affected the way that dates displayed for events when creating a segment. Specifically, the UI would show "01/01/70" as dates for events, when there was no data present. This has been resolved and now aligns with the rest of the UI, displaying "-" when applicable.</td>
+  </tr>
+</table>
+
+{% anchor h2 %}
+06 March 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Code Editor Color Scheme
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>The color scheme (theme) of the code editor within Marketing Campaigns has been updated to be more visually clean and consistent. The new look helps code appear less cluttered, while aligning more closely with the SendGrid brand.</td>
+  </tr>
+</table>
+
+{% anchor h2 %}
+08 March 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Unsubscribe Tag Support for Transactional Templates
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>The Unsubscribe module now uses asm tags in order to work with both Marketing Campaigns and Transactional email. To add unsubscribe links to your template, use the `<%asm_group_unsubscribe_raw_url%>`,  `<%asm_global_unsubscribe_raw_url%>`, or `<%asm_preferences_raw_url%>` tags.</td>
+  </tr>
+</table>
+
+{% anchor h2 %}
+01 March 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Email Activity Feed - Beta
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ><img src="{{root_url}}/images/code_icon.png" alt="An update to the API" width="100" height="100"></td>
+    <td>As of 01 March 2018, we are beginning to roll out early beta access to our new Email Activity feature. This release includes enhancements to email activity feed details, filtering, search options, and CSV export capability to ease the process of troubleshooting email delivery issues.</td> 
+  </tr>
+</table>
+
+{% info %}
+This open beta will not be available for all customers right away. High-volume (100M+) customers will not have the option to use this new feature.
+{% endinfo %}
+
+ * Access the Email Activity Feed [here](https://app.sendgrid.com/email_activity)
+ * For more information about the UI updates, see the [documentation](https://sendgrid.com/docs/User_Guide/email_activity_beta.html)
+ * For more information about the API updates, see the [documentation](https://sendgrid.api-docs.io/v3.0/email-activity/filter-all-messages)
+ 
+ {% anchor h3 %}
+Font Update
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>We've updated the font used throughout our user interface (UI) to align with the SendGrid brand.</td> 
+  </tr>
+</table>
+
+{% anchor h2 %}
+27 February 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Dates & Times Displayed on Campaigns Index
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>The Campaigns index page in Marketing Campaigns has been updated so that dates and times for important campaign events (like last edited or sent) are shown natively, below the name of each campaign.</td>
+  </tr>
+</table>
+
+{% anchor h2 %}
+16 February 2018
+{% endanchor %}
+
+{% anchor h3 %}
+CSV Upload Notification Email Address
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>We've made it easier for you to receive CSV upload notifications by adding an additional link to the CSV processing step. This link allows you to add an email address to your notifications directly from the contacts page and save it for future use. </td>
+  </tr>
+</table>
+
+{% anchor h2 %}
+13 February 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Transactional Templates Search & Filtering
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>We've updated the Transactional Templates index page, allowing for dynamic search and filtering functionality by name, template ID, and template version ID. In addition to this improvement, we've updated what is seen when no templates are present –– more clearly conveying the need for a template version and offering a button to create one.</td>
+  </tr>
+</table>
+
+{% anchor h2 %}
+04 January 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Table & Column Rendering in Outlook
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI"></td>
+    <td>We've resolved a bug affecting the way that tables/columns were rendering in some versions of Outlook.</td>
+  </tr>
+</table>
+
+{% anchor h3 %}
+Easier Segmentation Through Search
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI"></td>
+    <td>We've added the ability to search for custom fields within the drop-down, when creating a segment. Formerly, you were only able to scroll and select.</td>
+  </tr>
+</table>
+
+{% anchor h2 %}
+20 December 2017
+{% endanchor %}
+
+{% anchor h3 %}
+Mailbox Provider Statistics
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI"></td>
+    <td>The mailbox provider statistics page has been updated to show more intutitive delivery percentages by each mailbox provider -for example clicks of delivered (by day by provider), instead of clicks of all clicks (by day by all providers).</td>
+  </tr>
+</table>
+
 {% anchor h2 %}
 15 December 2017
 {% endanchor %}

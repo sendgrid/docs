@@ -22,7 +22,7 @@ Ending up on a blacklist can be detrimental to your domain’s email deliverabil
 
  
 
-If you are on one of our shared IP plans and you notice a block message based on one of our IP addresses then please contact our Support team. We will handle all delisting requests for our shared IP users.
+If you are on one of our shared IP plans and you notice a block message based on one of our IP addresses then please [contact support](https://support.sendgrid.com). We will handle all delisting requests for our shared IP users.
 
  
 

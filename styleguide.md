@@ -3,7 +3,7 @@ Hello! Thank you for choosing to help contribute to the SendGrid documentation s
 * [Style](#style)
     * [Numbers](#numbers)
     * [About Additional Resources](#about-additional-resources)
-    * [Cross References] (#cross-references)
+    * [Cross References](#cross-references)
 * [Terminology](#terminology)
 * [Punctuation](#punctuation)
 * [Capitalization](#capitalization)
@@ -29,6 +29,10 @@ Where possible, write pages in a "jobs to be done" format. Jobs to be done style
 * "Additional Resources" section at the end
 * Include sections to achieve the goal, with steps for each task (numbered steps, clear directions, and correct UI workflow)
 	For an example, see [Sending a Campaign](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html)
+	
+**Avoid passive voice.** A good way to check if your sentence is in passive or not is to add "by zombies" to the end of it. If zombies end up doing the action, it's passive. 
+
+Example: Any templates, campaigns, contacts, or API keys created by the teammate will not be deleted....by zombies(!)
 
 <a name="numbers"></a>
 ### Numbers
@@ -80,6 +84,8 @@ Additional Resources
 * “sign up” - verb
 * “sign-up” - noun
 * “username” - one word
+
+When referring to file types, like a PDF file, or a CSV file, refer to it as a CSV file, and not as a `.csv file`, unless it is an example file, like `my-file.csv`. When it's an example file, it should be in `code syntax`.
 
 <a name="punctuation"></a>
 ## Punctuation
