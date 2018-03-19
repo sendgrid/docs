@@ -479,14 +479,14 @@ The rate at which recipients may be uploaded is limited to 3 requests every 2 se
 
 ### Update Recipient [PATCH]
 
-Updates one or more recipients. The body is a list of recipient objects.
+Updates one or more recipients. If the recipient does not exist, it will be created. The body is a list of recipient objects.
 
 + Request (application/json)
 
      + Body
 
             [
-              {"email": "example@example.com", "last_name": "Jones"},
+              {"email": "new-email@example.com", "last_name": "Jones"},
               {"email": "pre-existing_email@example.com"}
             ]
 
