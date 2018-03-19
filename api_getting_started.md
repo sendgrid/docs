@@ -13,7 +13,7 @@ navigation:
 * [Prerequisites](#-Prerequisites)
 * [How to send an API email](#-How-to-send-an-API-email)
   * [Build your API call](#-Build-your-API-call)
-  * [Send](#-Send-your-API-call)
+  * [Send-your-email-using-the-API](#-Send-your-email-using-the-API)
   * [API Response message](#-API-Response-message)
 * [Next steps](#-Next-steps)
 
@@ -44,9 +44,19 @@ Build your API call
 Your API call must have the following components:
 
 * An [Authorization Header](https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-authentication#authorization-header)
-* 
+* An [API Key]({{root_url}}/User_Guide/Settings/api_keys.html) within the Authorization Header
+
+* A Request
+
+``GET https://api.sendgrid.com/v3/resource HTTP/1.1
+Authorization: Bearer Your.API.Key-HERE``
+
+{% anchor h3 %}
+Send your email using the API
+{% endanchor %}
 
 {% anchor h3 %}
 API Response message
 {% endanchor %}
 
+The Web API v3 provides a selection of response codes, content-type headers, and pagination options to help you interpret the responses to your API requests.
