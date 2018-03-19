@@ -30,6 +30,20 @@ The following new features and changes to the service are available.
     <td align="center">Price Update</td>
   </tr>
 </table>
+{% anchor h2 %}
+16 March 2018
+{% endanchor %}
+
+{% anchor h3 %}
+New Design Templates for Marketing Campaigns
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>We've added two new templates to the SendGrid Marketing template library! These templates, named "Modern" and "Coffee", offer fully-responsive and clean designs, giving you the framework you need to build beautifully engaging marketing campaigns. The new templates can be accessed by clicking "Templates" in the navigation, and selecting the "Marketing" option.</td>
+  </tr>
+</table>
 
 {% anchor h2 %}
 14 March 2018
