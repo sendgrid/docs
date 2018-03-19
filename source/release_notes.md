@@ -30,6 +30,35 @@ The following new features and changes to the service are available.
     <td align="center">Price Update</td>
   </tr>
 </table>
+{% anchor h2 %}
+16 March 2018
+{% endanchor %}
+
+{% anchor h3 %}
+New Design Templates for Marketing Campaigns
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>We've added two new templates to the SendGrid Marketing template library! These templates, named "Modern" and "Coffee", offer fully-responsive and clean designs, giving you the framework you need to build beautifully engaging marketing campaigns. The new templates can be accessed by clicking "Templates" in the navigation, and selecting the "Marketing" option.</td>
+  </tr>
+</table>
+
+{% anchor h2 %}
+14 March 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Fixed a segmentation date issue
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>There was a bug in the UI that affected the way that dates displayed for events when creating a segment. Specifically, the UI would show "01/01/70" as dates for events, when there was no data present. This has been resolved and now aligns with the rest of the UI, displaying "-" when applicable.</td>
+  </tr>
+</table>
 
 {% anchor h2 %}
 06 March 2018
@@ -57,7 +86,7 @@ Unsubscribe Tag Support for Transactional Templates
 <table class="table" style="width: 100%;">
   <tr>
     <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
-    <td>Transactional email now supports unsubscribe modules using both the [unsubscribe] and [unsubscribe preferences] making it easier to add unsubscribe links to your emails. </td>
+    <td>The Unsubscribe module now uses asm tags in order to work with both Marketing Campaigns and Transactional email. To add unsubscribe links to your template, use the `<%asm_group_unsubscribe_raw_url%>`,  `<%asm_global_unsubscribe_raw_url%>`, or `<%asm_preferences_raw_url%>` tags.</td>
   </tr>
 </table>
 
