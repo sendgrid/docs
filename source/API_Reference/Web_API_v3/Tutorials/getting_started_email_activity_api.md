@@ -254,7 +254,7 @@ This is a full list of basic query types and examples: (replace the data in quot
  </tr>
  <tr>
    <td><code>api_key_id</code></td>
-   <td><code>api_key_id="-hVjtoFgGUNPq3DPPPkJN3mCIDIwrl3qdFZcqYKnlq94"</code> (everything after the middle dot in the API key)</td>
+   <td><code>api_key_id="SG.xxxxxxxxxxxxxxxx"</code> (everything before the middle dot in the API key)</td>
  </tr>
  <tr>
    <td><code>api_key_name</code></td>
