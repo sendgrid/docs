@@ -2,7 +2,7 @@
 title: How to send an email with transactional templates
 seo: transactional templates, getting started, SendGrid, transactional email
   title: How to send an email with transactional templates
-weight: 10
+weight: 100
 layout: page
 navigation:
   show: true
