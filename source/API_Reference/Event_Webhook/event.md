@@ -50,9 +50,9 @@ navigation:
 Events
 {% endanchor %}
 
-Email events generate when email is processed by SendGrid and by the email service providers. There are two types of events - delivery events, and engagement events. Delivery events indicate successful delivery to the recipient. Engagement events indicate how the recipient is interacting with the email. 
+Email events generate when email is processed by SendGrid and by the email service providers. There are two types of events - delivery events, and engagement events. Delivery events indicate successful delivery to the recipient. Engagement events indicate how the recipient is interacting with the email.
 
-Here is a flow of when emails are processed:
+Here is a flow of how emails are processed:
 
 ![event flow]({{root_url}}/images/email_event_flow.jpg "Event Flow")
 
@@ -733,18 +733,18 @@ JSON objects
 
 - <a name="email"></a>`email` - the email address of the reciepeint
 - <a name="timestamp"></a>`timestamp` - the <a href="https://en.wikipedia.org/wiki/Unix_time">UNIX timestamp</a> of when the message was sent
-- <a name="event"></a>`event` - The event type. Possible values are bounce, deferred, delivered, dropped, processed, click, open, spamreport, and unsubscribe.
-- <a name="smtpid"></a>`smtp-id` - A unique ID attached to the message by the originating system.
-- <a name="useragent"></a>`useragent` - The user agent responsible for the event. This is usually a web browser. For example, "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36".
+- <a name="event"></a>`event` - the event type. Possible values are bounce, deferred, delivered, dropped, processed, click, open, spam report, and unsubscribe.
+- <a name="smtpid"></a>`smtp-id` - a unique ID attached to the message by the originating system.
+- <a name="useragent"></a>`useragent` - the user agent responsible for the event. This is usually a web browser. For example, "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36".
 - <a name="ip"></a>`IP` - the IP address used to send the email, except for `open` and `click` events, where it is the IP address of the user who sent the email.
-- <a name="sgeventid"></a>`sg_event_id` - A unique ID to this event that you can use for deduplication purposes. These IDs are either 22 or 48 characters.
-- <a name="sgmessageid"></a>`sg_message_id` - An internal SendGrid unique ID for the message type. The first half of this is pulled from the `smtp-id`.
-- <a name="reason"></a>`reason` - Any sort of error response returned by the server that describes the reason this event type was triggered.
-- <a name="status"></a>`status` - Status code string. Corresponds to HTTP status code - for example, a JSON response of 5.0.0 is the same as a 500 error response.
-- <a name="response"></a>`response` - The full text of the HTTP response error returned from the server.
-- <a name="tls"></a>`tls` - Indicates whether TLS encription was used in sending this message. For more information about TLS, see the [TLS Glossary page]({{root_url}}/Glossary/tls.html).
-- <a name="url"></a>`url` - The URL where the event originates, unless it's a click event, and this is the URL clicked by the reciepient.
-- <a name="attempt"></a>`attempt` - The number of times the server has attempted to deliver this mail.
+- <a name="sgeventid"></a>`sg_event_id` - a unique ID to this event that you can use for deduplication purposes. These IDs are either 22 or 48 characters.
+- <a name="sgmessageid"></a>`sg_message_id` - an internal SendGrid unique ID for the message type. The first half of this is pulled from the `smtp-id`.
+- <a name="reason"></a>`reason` - any sort of error response returned by the server that describes the reason this event type was triggered.
+- <a name="status"></a>`status` - status code string. Corresponds to HTTP status code - for example, a JSON response of 5.0.0 is the same as a 500 error response.
+- <a name="response"></a>`response` - the full text of the HTTP response error returned from the server.
+- <a name="tls"></a>`tls` - indicates whether TLS encription was used in sending this message. For more information about TLS, see the [TLS Glossary page]({{root_url}}/Glossary/tls.html).
+- <a name="url"></a>`url` - the URL where the event originates, unless it's a click event, and this is the URL clicked by the reciepient.
+- <a name="attempt"></a>`attempt` - the number of times the server has attempted to deliver this mail.
 - <a name="category"></a>`category` - [Categories]({{root_url}}/Glossary/categories.html) are custom tags that you set for the purpose of organizing your emails. If you send single categories as an array, they will be returned by the webhook as an array. If you send single categories as a string, they will be returned by the webhook as a string.
 
 String categories:
@@ -797,14 +797,14 @@ Unique Arguments and Custom Arguments
 Events generated by SendGrid may also include any [unique arguments]({{root_url}}/API_Reference/SMTP_API/unique_arguments.html) or custom arguments.
 
 {% info %}
-Unique arguments and custom arguments are functionally the same: It's called unique arguments in the SMTP API or v2 Mail Send, and it's called custom arguments in v3 Mail Send.
+In the SMTP API or V2 Mail Send, they're referred to as unique arguments and are known as custom arguments in V3 Mail Send.
 {% endinfo %}
 
 {% anchor h3 %}
 Unique Arguments
 {% endanchor %}
 
-To define and receive unique arguments when sending email via the [SMTP API]({{root_url}}/API_Reference/SMTP_API/index.html) or the [v2 Mail Send endpoint]({{root_url}}/API_Reference/Web_API/mail.html) simply use the `unique_args` parameter in the X-SMTPAPI header or parameter. For example, if you have an application and want to receive custom parameters such as the `userid` and the email `template`, you would submit them with the X-SMTPAPI header or parameter, as described [here]({{root_url}}/API_Reference/SMTP_API/unique_arguments.html).
+To define and receive unique arguments when sending email with the [SMTP API]({{root_url}}/API_Reference/SMTP_API/index.html) or the [v2 Mail Send endpoint]({{root_url}}/API_Reference/Web_API/mail.html), use the `unique_args` parameter in the X-SMTPAPI header or parameter. For example, if you have an application and want to receive custom parameters such as the `userid` and the email `template`, you would submit them with the X-SMTPAPI header or parameter, as described [here]({{root_url}}/API_Reference/SMTP_API/unique_arguments.html).
 
 For example, if you include the following unique arguments in your x-smtpapi parameter for an email sent via the v2 Mail Send endpoint:
 
@@ -834,7 +834,7 @@ You will receive the same unique argument included with the data returned to the
 {% endcodeblock %}
 
 {% warning %}
-You can create unique arguments with the same keys as reserved words, such as "event" or "email". In this case, SendGrid will default to the reserved key and NOT your unique argument. An example of this is below.
+You can create unique arguments with the same keys as reserved words, such as "event" or "email". In this case, SendGrid defaults to the reserved key and NOT your unique argument. An example of this is below.
 {% endwarning %}
 
 {% anchor h4 %}
@@ -871,7 +871,9 @@ The resulting webhook call
 ]
 {% endcodeblock %}
 
-*Note: The event and the email do not get overwritten because "event" and "email" are reserved, and SendGrid defaults to the reserved key for webhooks.*
+{% info %}
+The event and the email do not get overwritten because "event" and "email" are reserved, and SendGrid defaults to the reserved key for webhooks.
+{% endinfo %}
 
 {% anchor h3 %}
 Custom Arguments
@@ -921,7 +923,7 @@ The Event Webhook response:
 - <a name="marketingcampaignid"></a>`marketing_campaign_id`
 - <a name="marketingcampaignname"></a>`marketing_campaign_name`
 
-For emails sent through our Marketing Campaigns feature, we will add Marketing Campaigns specific params to the Event Webhook. Both `marketing_campaign_name` and `marketing_campaign_id` are displayed as unique arguments in the event data.
+For emails sent through our Marketing Campaigns feature, we add Marketing Campaigns specific params to the Event Webhook. Both `marketing_campaign_name` and `marketing_campaign_id` are displayed as unique arguments in the event data.
 
 {% anchor h3 %}
 Example event from a standard (non-A/B test) campaign send:
@@ -947,7 +949,7 @@ Example event from a standard (non-A/B test) campaign send:
 Example event from an A/B Test:
 {% endanchor %}
 
- `marketing_campaign_version` will be displayed in the event data for emails sent as part of an A/B Test. The value for `marketing_campaign_version` are returned as `A`, `B`, `C`, etc.
+ `marketing_campaign_version` is displayed in the event data for emails sent as part of an A/B Test. The value for `marketing_campaign_version` are returned as `A`, `B`, `C`, etc.
 
 {% codeblock lang:json %}
 {
@@ -992,7 +994,7 @@ Example event from the winning phase of an A/B Test:
 Legacy Marketing Email Unsubscribes
 {% endanchor %}
 
-For emails sent through our Legacy Marketing Email tool, unsubscribes will look like the following example:
+For emails sent through our Legacy Marketing Email tool, unsubscribes look like the following example:
 
 {% codeblock lang:json %}
 [
