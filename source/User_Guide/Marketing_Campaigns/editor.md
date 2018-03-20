@@ -96,7 +96,7 @@ Getting Started With The Code Editor
 You can only edit unsent campaigns.
 {% endinfo %}
 
-You can select a Blank Template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html).
+You can select a Blank Template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates](<% root_url %>/User_Guide/Marketing_Campaigns/templates.html).
 
 {% info %}
 When you open one of your existing campaigns or templates in the new editor, SendGrid creates a duplicate of the original campaign or template. You may always open the original campaign or template in the previous editor.
@@ -140,53 +140,53 @@ Substitution tags allow you to easily generate dynamic content for each recipien
    <th>Type</th>
  </tr>
  <tr>
-   <td><code>[%email%]</code></td>
+   <td><code>{% raw %}<% email %>{% endraw %}</code></td>
    <td>The email address of the recipient</td>
    <td>Personalization</td>
  </tr>
  <tr>
-   <td><code>[%first_name%]</code></td>
+   <td><code>{% raw %}<% first_name %>{% endraw %}</code></td>
    <td>The first name of the recipient</td>
    <td>Personalization</td>
  </tr>
  <tr>
-   <td><code>[%last_name%]</code></td>
+   <td><code>{% raw %}<% last_name %>{% endraw %}</code></td>
    <td>The last name of the recipient</td>
    <td>Personalization</td>
  </tr>
  <tr>
-   <td><code>[Sender_Name]</code>* </td>
+   <td><code>{% raw %}<% sender_name %>{% endraw %}</code>* </td>
    <td>The name of the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>[Sender_City]</code>* </td>
+   <td><code>{% raw %}<% sender_city %>{% endraw %}</code>* </td>
    <td>The city on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>[Sender_State]</code>* </td>
+   <td><code>{% raw %}<% sender_state %>{% endraw %}</code>* </td>
    <td>The state on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>[Sender_Zip]</code>* </td>
+   <td><code>{% raw %}<% sender_zip %>{% endraw %}</code>* </td>
    <td>The zip code on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>[Unsubscribe]</code>* </td>
+   <td><code>{% raw %}<% unsubscribe %>{% endraw %}</code>* </td>
    <td>This tag is replaced with a link allowing your recipients opt out of any emails you send using the chosen Unsubscribe Group.</td>
    <td>Unsubscribe</td>
  </tr>
  <tr>
-   <td><code>[Unsubscribe_Preferences]</code>
+   <td><code>{% raw %}<% unsubscribe_</br>preferences %>{% endraw %}</code>
    * </td>
    <td>This tag is replaced with a link allowing your recipients to opt out of any email unsubscribe groups you offer.</td>
    <td>Unsubscribe</td>
  </tr>
  <tr>
-   <td><code>[Weblink]</code></td>
+   <td><code>{% raw %}<% Weblink %>{% endraw %}</code></td>
    <td>This tag is replaced with a link allowing your recipients to view your campaign content directly within their web browser.</td>
    <td>Weblink</td>
  </tr>
@@ -249,7 +249,7 @@ Getting Started With the Design Editor
 ![]({{root_url}}/img/campaigns_dashboard_categories_search.png)
 
 3. Select the template that you want to use for your campaign.
-<br>You can select a Blank Template, a custom template that you have already created, or one of SendGrid’s pre-built templates. For more information, see [Working With Templates]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html).
+<br>You can select a Blank Template, a custom template that you have already created, or one of SendGrid’s pre-built templates. For more information, see [Working With Templates](<% root_url %>/User_Guide/Marketing_Campaigns/templates.html).
 4. Select **Design Editor**, and then click **Continue**.
 <br>The Design Editor opens.
 
@@ -263,7 +263,7 @@ Drag & drop editing helps you swiftly build your campaign, using pre-built conte
 
 1. Navigate to the **Build** tab, and then click **Add Modules**.
 
-   ![]({{root_url}}/img/design_editor_drag_drop.png)
+   ![](<% root_url %>/img/design_editor_drag_drop.png)
 
 2. Find the module tile you want to add to your campaign and drag and drop it into your content area.
 3. Edit the module settings and add your custom content to build your campaign.
@@ -434,53 +434,53 @@ You'll also see a number of System Fields that you can place in the body of your
    <th>Type</th>
  </tr>
  <tr>
-   <td><code>[%email%]</code></td>
+   <td><code>{% raw %}<% email %>{% endraw %}</code></td>
    <td>The email address of the recipient</td>
    <td>Personalization</td>
  </tr>
  <tr>
-   <td><code>[%first_name%]</code></td>
+   <td><code>{% raw %}<% first_name %>{% endraw %}</code></td>
    <td>The first name of the recipient</td>
    <td>Personalization</td>
  </tr>
  <tr>
-   <td><code>[%last_name%]</code></td>
+   <td><code>{% raw %}<% last_name %>{% endraw %}</code></td>
    <td>The last name of the recipient</td>
    <td>Personalization</td>
  </tr>
  <tr>
-   <td><code>[Sender_Name]</code>* </td>
+   <td><code>{% raw %}<% sender_name %>{% endraw %}</code>* </td>
    <td>The name of the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>[Sender_City]</code>* </td>
+   <td><code>{% raw %}<% sender_city %>{% endraw %}</code>* </td>
    <td>The city on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>[Sender_State]</code>* </td>
+   <td><code>{% raw %}<% sender_state %>{% endraw %}</code>* </td>
    <td>The state on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>[Sender_Zip]</code>* </td>
+   <td><code>{% raw %}<% sender_zip %>{% endraw %}</code>* </td>
    <td>The zip code on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>[Unsubscribe]</code>* </td>
+   <td><code>{% raw %}<% unsubscribe %>{% endraw %}</code>* </td>
    <td>This tag is replaced with a link allowing your recipients opt out of any emails you send using the chosen Unsubscribe Group.</td>
    <td>Unsubscribe</td>
  </tr>
  <tr>
-   <td><code>[Unsubscribe_Preferences]</code>
+   <td><code>{% raw %}<% unsubscribe_</br>preferences %>{% endraw %}</code>
    * </td>
    <td>This tag is replaced with a link allowing your recipients to opt out of any email unsubscribe groups you offer.</td>
    <td>Unsubscribe</td>
  </tr>
  <tr>
-   <td><code>[Weblink]</code></td>
+   <td><code>{% raw %}<% Weblink %>{% endraw %}</code></td>
    <td>This tag is replaced with a link allowing your recipients to view your campaign content directly within their web browser.</td>
    <td>Weblink</td>
  </tr>
@@ -574,7 +574,7 @@ If you are writing your own custom HTML that you plan on importing into the desi
 4. Click **Import**.
    <br>A window opens where you can paste in your own HTML.
 
-   ![]({{root_url}}/img/import_custom_html.png)
+   ![](<% root_url %>/img/import_custom_html.png)
 
 5. Paste or enter the HTML you want to use, and then click **Import**.
 

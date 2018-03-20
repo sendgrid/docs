@@ -102,35 +102,8 @@ Both Legacy Newsletter and Marketing Campaigns start with your base SendGrid pla
 
 From there, each email marketing solution charges a premium for sending through the user interface. With Legacy Newsletter it’s a **$0.25 fee per 1,000 emails you send**. For Marketing Campaigns, it’s a **$10 fee per 10,000 contacts you store**. Your first 2,000 contacts in Marketing Campaigns are free.
 
-**The option to choose your payment preference is only available until February 1, 2018**
-If you used Legacy Newsletter between 1 August 2016 and 30 March 2017, when you switch to Marketing Campaigns, you can [choose how you’d like to pay]( https://app.sendgrid.com/settings/choose_how_you_pay). You can continue to pay per email sent or you can choose to pay per contact you store in Marketing Campaigns:
-
-<table class="table" style="table-layout:fixed">
-  <tr>
-    <td><p>Pay <b>per email</b> you send</p>
-    <p><i>Special offer for Legacy Newsletter </br>migrators</i></p>
- </br>
-        <p>$0.25/1,000 emails</p>
-        <p>(plus base plan)</p>
-    </td>
-    <td><p>Pay <b>per contact</b> you store</p>
-        <p><i>Standard Marketing Campaigns pricing</i></p>
- </br>
-        <p>$10/10,000 contacts</p>
-        <p>(plus base plan)</p>
-    </td>
-  </tr>
-</table>
-
-{% anchor h3 %}
-Where do I choose how to pay for Marketing Campaigns?
-{% endanchor %}
-
-Visit the [Choose How You Pay page](https://app.sendgrid.com/settings/choose_how_you_pay) in your account. If that link does not work for you, Navigate to **Settings** then **Plan and Billing Details**, then scroll to Marketing Campaigns and click **Learn More**.
-
-{% info %}
-To be eligible for this pricing offer you need to have sent email via Legacy Newsletter between August 1, 2016 and March 30, 2017.
-{% endinfo %}
+**The option to choose your payment preference is no longer available**.
+If you used Legacy Newsletter between 1 August 2016 and 30 March 2017, when you switched to Marketing Campaigns, you were able to choose how you’d like to pay. This has been sunset and is no longer available.>
 
 {% anchor h3 %}
 How can I estimate what it will cost to use Marketing Campaigns?
@@ -158,9 +131,9 @@ The ability to segment your contacts into meaningful recipient groups is a core 
 What is the additional value of Marketing Campaigns vs. Legacy Newsletter?
 {% endanchor %}
 
-**[Segmentation:]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html)** Send more targeted, relevant email to your recipients by leveraging data about your customers as well as how they’ve [engaged with your emails]({{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html#-Create-a-Segment-Based-On-Your-Engagement-Metrics).
+**[Segmentation:]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html)** Send more targeted, relevant email to your recipients by leveraging data about your customers as well as how they’ve [engaged with your emails]({{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html#-Create-a-Segment-Based-On-Your-Engagement-Metrics).
 
-**[Contact management:]({{root_url}}/User_Guide/Marketing_Campaigns/contacts.html)** Gain visibility into contact details such as custom data (name, city, etc.), associated lists, last campaign engagement dates, and more with individual contact profiles that are dynamically updated.
+**[Contact management:]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/adding_contacts.html)** Gain visibility into contact details such as custom data (name, city, etc.), associated lists, last campaign engagement dates, and more with individual contact profiles that are dynamically updated.
 
 **[Visibility into user engagement:]({{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html#-Engagement-Statistics)** Marketing campaigns will show you which customers opened and/or clicked your email campaigns. You can also see which individual links in your campaigns were clicked most frequently.
 
@@ -303,7 +276,7 @@ You can segment based on customer data (like city or gender) as well as engageme
 
 As an example, you could send a different email to “Chicago customers who opened campaign X” than “San Francisco customers who opened Campaign X.” Doing so helps you add more value to your recipients’ inboxes, helping you achieve your engagement and revenue goals along the way.
 
-Learn more about Segmentation with Marketing Campaigns within our [Documentation]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html#-Create-a-Segment).
+Learn more about Segmentation with Marketing Campaigns within our [Documentation]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html#-Creating-a-Segment).
 
 {% anchor h3 %}
 How is a list different from a segment?
@@ -313,7 +286,7 @@ Lists are simply static collections of Marketing Campaigns contacts. You can upl
 
 Segments are dynamic collections of Marketing Campaigns contacts grouped together, or segmented, based on criteria you define. This can include data you track about them, such as gender, location, or package type, or how they’ve engaged with your emails previously. You can create a segment that pulls from all of your Marketing Campaigns contacts or from a specific existing list you’ve created.
 
-Learn more about Lists and Segments within our [documentation]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html).
+Learn more about Lists and Segments within our [documentation]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html).
 
 {% anchor h3 %}
 How do I create a segment?
@@ -323,7 +296,7 @@ To create a segment, you’ll first need to upload your recipients (and associat
 
 Once your contacts are stored in Marketing Campaigns, you’ll leverage the user interface to define the conditions of your segment. These can be either data about your recipients that you’ve included in your upload (such as name, gender, package type, etc.) or how they’ve engaged with your emails previously (such as last clicked date, opening a particular campaign, or both!).
 
-For step-by-step instructions on creating a segment, see our [documentation]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html#-Create-a-Segment).
+For step-by-step instructions on creating a segment, see our [documentation]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html#-Creating-a-Segment).
 
 {% anchor h2 %}
 Statistics

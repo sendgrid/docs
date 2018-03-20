@@ -277,7 +277,7 @@ Redirect 301 /Classroom/Basics/Marketing_Campaigns/migration_guide_part_1_migrat
 Redirect 301 /Classroom/Basics/Marketing_Campaigns/migration_guide_part_2_importing_your_unsubscribes.html https://sendgrid.com/docs/Classroom/Basics/Marketing_Campaigns/migrating_unsubscribes.html
 Redirect 301 /Classroom/Basics/Marketing_Campaigns/migration_guide_part_3_moving_your_content.html https://sendgrid.com/docs/Classroom/Basics/Marketing_Campaigns/migrating_content.html
 Redirect 301 /Classroom/Basics/Misc/where_can_i_enable_subscription_tracking.html https://sendgrid.com/docs/User_Guide/Settings/tracking.html#-Subscription-Tracking
-Redirect 301 /Classroom/Basics/marketing_campaigns_video_tutorials.html https://sendgrid.com/docs/Classroom/Basics/Marketing_Campaigns/marketing_campaigns_video_tutorials.html
+Redirect 301 /Classroom/Basics/marketing_campaigns_video_tutorials.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/index.html
 Redirect 301 /Classroom/Basics/Marketing_Campaigns/remove_bounced_addresses.html https://sendgrid.com/docs/Classroom/Basics/Marketing_Campaigns/how_to_remove_unusable_contacts.html
 
 
@@ -792,17 +792,16 @@ Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/letter_fr
 #
 #######
 
-Redirect 301 /Classroom/Deliver/Address_Lists/list_scrubbing_guide.html https://sendgrid.com/docs/User_Guide/Compliance/improving_contact_lists.html
-Redirect 301 /Classroom/Deliver/Address_Lists/where_did_you_get_my_address_permission_reminders.html https://sendgrid.com/docs/User_Guide/Compliance/improving_contact_lists.html
-Redirect 301 /Classroom/Deliver/Address_Lists/let_old_addresses_sleep_in_peace.html https://sendgrid.com/docs/User_Guide/Compliance/improving_contact_lists.html
-Redirect 301 /Glossary/opt_in_email.html https://sendgrid.com/docs/User_Guide/Compliance/improving_contact_lists.html
-Redirect 301 /Classroom/Deliver/Address_Lists/preference_centers_giving_subscribers_control.html https://sendgrid.com/docs/User_Guide/Compliance/improving_contact_lists.html
-Redirect 301 /Classroom/Deliver/Address_Lists/affiliate_lists_and_list_sharing.html https://sendgrid.com/docs/User_Guide/Compliance/improving_contact_lists.html
-Redirect 301 /Classroom/Deliver/Address_Lists/peer_initiated_email_invitation_requirements.html https://sendgrid.com/docs/User_Guide/Compliance/improving_contact_lists.html
-Redirect 301 /Classroom/Deliver/Address_Lists/role_addresses.html https://sendgrid.com/docs/User_Guide/Compliance/improving_contact_lists.html
-Redirect 301 /Classroom/Deliver/Address_Lists/tips_to_keep_your_list_organized.html https://sendgrid.com/docs/User_Guide/Compliance/improving_contact_lists.html
-Redirect 301 /Classroom/Deliver/Address_Lists/tips_to_keep_your_list_organized.html https://sendgrid.com/docs/User_Guide/Compliance/improving_contact_lists.html
-Redirect 301 /Classroom/Deliver/Address_Lists/why_purchased_email_lists_are_no_good.html https://sendgrid.com/docs/User_Guide/Compliance/improving_contact_lists.html
+Redirect 301 /Classroom/Deliver/Address_Lists/list_scrubbing_guide.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html
+Redirect 301 /Classroom/Deliver/Address_Lists/where_did_you_get_my_address_permission_reminders.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html
+Redirect 301 /Classroom/Deliver/Address_Lists/let_old_addresses_sleep_in_peace.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html
+Redirect 301 /Glossary/opt_in_email.html https://sendgrid.com/docs/User_Guide/User_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html
+Redirect 301 /Classroom/Deliver/Address_Lists/preference_centers_giving_subscribers_control.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html
+Redirect 301 /Classroom/Deliver/Address_Lists/affiliate_lists_and_list_sharing.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html
+Redirect 301 /Classroom/Deliver/Address_Lists/peer_initiated_email_invitation_requirements.html https://sendgrid.com/docs/User_Guide/MarketingUser_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html
+Redirect 301 /Classroom/Deliver/Address_Lists/tips_to_keep_your_list_organized.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html
+Redirect 301 /Classroom/Deliver/Address_Lists/tips_to_keep_your_list_organized.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html
+Redirect 301 /Classroom/Deliver/Address_Lists/why_purchased_email_lists_are_no_good.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html
 
 Redirect 301 /Classroom/Basics/Account/resetting_your_password_without_breaking_current_integrations.html https://sendgrid.com/docs/Classroom/Basics/Account/how_do_i_reset_my_password.html
 
@@ -817,6 +816,7 @@ Redirect 301 /User_Guide/EASE.html https://sendgrid.com/docs/User_Guide/email_ac
 
 Redirect 301 /User_Guide/Marketing_Campaigns/marketing_campaigns_video_tutorials.html https://sendgrid.com/docs//User_Guide/Marketing_Campaigns/index.html
 Redirect 301 /User_Guide/Marketing_Campaigns/overview.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/index.html
+Redirect 301 /Classroom/Basics/Marketing_Campaigns/marketing_campaigns_video_tutorials.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/index.html
 
 
 #######
@@ -839,6 +839,7 @@ Redirect 301 /Classroom/Basics/Email_Infrastructure/smtp_ports.html https://send
 Redirect 301 /Classroom/Basics/Email_Infrastructure/what_is_smtp.html https://sendgrid.com/docs/API_Reference/SMTP_API/getting_started_smtp.html
 Redirect 301 /Classroom/Basics/Email_Infrastructure/recommended_smtp_settings.html https://sendgrid.com/docs/API_Reference/SMTP_API/getting_started_smtp.html
 Redirect 301 /Classroom/Send/How_Emails_Are_Sent/smtp_overview.html https://sendgrid.com/docs/API_Reference/SMTP_API/getting_started_smtp.html
+Redirect 301 /API_Reference/Web_API_v3/Transactional_Templates/smtpapi.html https://sendgrid.com/docs/API_Reference/SMTP_API/how_to_use_a_transactional_template_with_smtp.html
 
 #######
 #
@@ -863,7 +864,7 @@ Redirect 301 /API_Reference/SMTP_API/using_the_smtp_api.html https://sendgrid.co
 Redirect 301 /Classroom/Track/Bounces/common_smtp_server_bounce_responses.html https://sendgrid.com/docs/API_Reference/SMTP_API/errors_and_troubleshooting.html
 Redirect 301 /Classroom/Troubleshooting/Authentication/certificate_verification_failed.html https://sendgrid.com/docs/API_Reference/SMTP_API/errors_and_troubleshooting.html
 Redirect 301 /Classroom/Troubleshooting/Authentication/invalid_smtp_api_header.html https://sendgrid.com/docs/API_Reference/SMTP_API/errors_and_troubleshooting.html
-
+Redirect 301 /User_Guide/Marketing_Campaigns/drag_drop.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/editor.html
 #######
 #
 #  IP Redirects
@@ -927,3 +928,27 @@ Redirect 301 /Classroom/Track/Bounces/bounce_forwarding_and_gmail.html https://s
 Redirect 301 /Classroom/Deliver/Undeliverable_Email/why_did_my_message_show_as_delivered_first_then_as_bounced.html https://sendgrid.com/docs/User_Guide/email_activity.html
 Redirect 301 /search.html https://sendgrid.com/docs
 
+
+#######
+#
+# Contacts
+#
+#######
+
+Redirect 301 /Classroom/Troubleshooting/Authentication/list_upload_troubleshooting.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/formatting_a_CSV.html
+Redirect 301 /User_Guide/Marketing_Campaigns/contacts.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/adding_contacts.html
+Redirect 301 /Classroom/Basics/Marketing_Campaigns/how_to_remove_unusable_contacts.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html
+Redirect 301 /User_Guide/Compliance/improving_contact_lists.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html
+
+
+#######
+#
+# Custom Fields
+#
+#######
+
+Redirect 301 /Classroom/Troubleshooting/a_custom_field_value_did_not_substitute_during_a_send.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html
+Redirect 301 /Classroom/Basics/Marketing_Campaigns/contact_fields.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html
+Redirect 301 /Classroom/Troubleshooting/Authentication/you_have_used_a_reserved_field_name_for_your_custom_field.html# https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html
+Redirect 301 /Classroom/Basics/Marketing_Campaigns/contact_fields.html# https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html
+Redirect 301 /User_Guide/Marketing_Campaigns/format_CSV.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/formating_a_CSV.html

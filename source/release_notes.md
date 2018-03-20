@@ -55,6 +55,21 @@ This open beta will not be available for all customers right away. High-volume (
  * For more information about the API updates, see the [documentation](https://sendgrid.api-docs.io/v3.0/email-activity/filter-all-messages)
 
 {% anchor h2 %}
+16 February 2018
+{% endanchor %}
+
+{% anchor h3 %}
+CSV Upload Notification Email Address
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>We've made it easier for you to receive CSV upload notifications by adding an additional link to the CSV processing step. This link allows you to add an email address to your notifications directly from the contacts page and save it for future use. </td>
+  </tr>
+</table>
+
+{% anchor h2 %}
 04 January 2018
 {% endanchor %}
 
