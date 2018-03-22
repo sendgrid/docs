@@ -10,7 +10,7 @@ seo:
   description:
 ---
 {% info %}
-In order to gain access to the Enhanced Email Activity API, you must purchase [Additional Storage]({https://app.sendgrid.com/settings/billing). 
+In order to gain access to the Email Activity Feed API, you must purchase . [additional email activity history](https://app.sendgrid.com/settings/billing/addons/email_activity). 
 {% endinfo %}
 
 {% warning %}
