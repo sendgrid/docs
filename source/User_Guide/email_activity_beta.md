@@ -9,9 +9,9 @@ seo:
   override: true
   description:
 ---
-+{% warning %}
- +The Email Activity API is beta and you may not have access. The API might change at any time without notice.
- +{% endwarning %}
+{% info %}
+In order to gain access to the Enhanced Email Activity API, you must purchase [Additional Storage]({https://app.sendgrid.com/settings/billing). 
+{% endinfo %}
 
 {% warning %}
 Email Activity is in beta and you may not have access - we are currently in the process of rolling out access. For more information, see the [Release Notes]({{root_url}}/release_notes.html#-Email-Activity-Feed-Beta). The feature may also change at any time without notice.
@@ -147,6 +147,8 @@ In addition to viewing the email activity associated with your account by recipi
 1. Once you have filled in all of the fields associated with that filter, click **Search**. 
    To add additional search criteria, click **Add a Filter**. 
 
+   ![]({{root_url}}/img/EASE_advanced_search_filter.gif "Email Activity Advanced Search")
+
 {% info %}
 To further narrow your search results, select one of the following options:
 
@@ -164,6 +166,8 @@ Viewing Event History
 1. Navigate to the event you wish to view and click on the entry. 
    Once the entry loads, you can click into each of the sections to view more details of each email message. 
 1. When you have finished reviewing the data, click **close**. 
+
+![]({{root_url}}/img/EASE_email_information.gif "Email Activity information panel")
 
 {% anchor H2 %}
 Exporting a CSV
