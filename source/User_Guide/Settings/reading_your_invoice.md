@@ -52,6 +52,8 @@ For more information on SendGrid Plans, visit our [pricing page](https://sendgri
 
 Refer to "Contact List Usage" in the Usage Summary section below for more information on how this charge is calculated. 
 
+**Email Activity History** - 
+
 {% anchor h2 %}
 4. Usage Summary
 {% endanchor %}

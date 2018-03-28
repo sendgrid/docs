@@ -3,7 +3,7 @@ layout: page
 weight: 
 title: Email Activity Feed - Beta
 navigation:
-  show: false
+  show: true
 seo:
   title: Email Activity Feed Beta
   override: true
