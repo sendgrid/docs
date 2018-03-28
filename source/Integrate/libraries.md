@@ -166,7 +166,7 @@ Python
 {% endanchor %}
 
 -   [greplin-tornado-sendgrid](https://github.com/Cue/greplin-tornado-sendgrid) *by Daniel Gross* - SendGrid client for Tornado Web Server
--   [django-sendgrid](https://github.com/RyanBalfanz/django-sendgrid) *by Ryan Balfanz* - SendGrid SMTP API interface for Django
+-   [django-sendgrid-v5](https://github.com/sklarsa/django-sendgrid-v5/) *by Steven Sklar* - SendGrid Web API Email Backend for Django
 -   [sendgrid-django](https://github.com/elbuo8/sendgrid-django) *by Yamil Asusta* - SendGrid Web API interface for Django
 -   [Flask-SendGrid](https://github.com/frankV/flask-sendgrid) *by Frank Valcarcel* - SendGrid SMTP API interface for Flask
 -   [aiohttp-sendgrid](https://github.com/Kurlov/aiohttp-sendgrid) *by Aleksandr Kurlov* - SendGrid SMTP API interface for aiohttp
