@@ -12,8 +12,10 @@ navigation:
 
 - [What is domain authentication?]()
 - [Key terminology]()
-    - [Term]()
-    - [Term]()
+    - [DNS]()
+    - [DKIM]()
+    - [SPF]()
+    - [Content Delivery Network (CDN)]()
 - [Setting up domain authentication]()
     - [Before you begin]()
     - [Setting up DNS]()
@@ -26,9 +28,9 @@ navigation:
 What is domain authentication?
 {% endanchor %}
 
-Domain authentication shows email providers that SendGrid has your permission to send emails on your behalf. To give SendGrid permission, you point DNS entries from your domain registrar to SendGrid. Your end users will no longer see the “via sendgrid.net” message on your emails.
+Domain authentication shows email providers that SendGrid has your permission to send emails on your behalf. To give SendGrid permission, you point DNS entries from your domain registrar to SendGrid. Your recipients will no longer see the “via sendgrid.net” message on your emails.
 
-Even though this is a small change from your end users perspective, this change has a huge positive impact on your reputation as a sender and your email deliverability. Email service providers distrust messages that don't have domain authentication set up because they can not be sure that the message comes from you. Explicitly stating that it comes from you increases your reputation with email service providers which makes it much less likely that they will filter your mail and not allow it get to your recipient's inbox, which increases your deliverability. You are also explicitly showing your recipients that this email comes from you, so they are less likely mark your mail as spam.
+Even though this is a small change from your recipients perspective, this change has a huge positive impact on your reputation as a sender and your email deliverability. Email service providers distrust messages that don't have domain authentication set up because they can not be sure that the message comes from you. Explicitly stating that it comes from you increases your reputation with email service providers which makes it much less likely that they will filter your mail and not allow it get to your recipient's inbox, which increases your deliverability. You are also explicitly showing your recipients that this email comes from you, so they are less likely mark your mail as spam.
 
 {% anchor h2 %}
 Key terminology
@@ -37,6 +39,8 @@ Key terminology
 {% anchor h3 %}
 DNS
 {% endanchor %}
+
+[Content]
 
 {% anchor h3 %}
 DKIM
@@ -65,7 +69,7 @@ To set up domain authentication, you must submit the DNS records provided by Sen
 1. In the SendGrid UI, select [Settings > Sender Authentication](https://app.sendgrid.com/settings/whitelabel).
 1. In the domain authentication section, click **Get Started**.
 1. Next, add in information about your DNS host, and indicate whether you also want to set up link branding. CLick **Next**. For more information about link branding, check out [What is link branding?]({{root_url}}/User_Guide/Settings/Sender_Authentication/How_to_set_up_link_branding.html#-What-is-link-branding).
-1. Fill in the domain that you want to send from and add advanced settings. Make sure that you only enter the name of your root domain. Do not include `www` or `http://www` in this field! Your domain needs to match the domain of your from address on the emails you are sending out. For example, if I am sending an email from `example@sendgrid.com`, I would set my domain authentication domain to be `sendgrid.com`. Click **Next**. For more information about advanced settings, see [Advanced settings](#-Advanced-settings).
+1. Fill in the domain that you want to send from and add advanced settings. Make sure that you only enter the name of your root domain. Do not include `www` or `http://www` in this field! Your domain needs to match the domain of your FROM address on the emails you are sending out. For example, if I am sending an email from `example@sendgrid.com`, I would set my domain authentication domain to be `sendgrid.com`. Click **Next**. For more information about advanced settings, see [Advanced settings](#-Advanced-settings).
 1. Next, you need to add all of the CNAME records on this screen to your DNS host. This process varies depending on your DNS host. For videos on how to add your CNAME to some popular DNS service providers, check out these videos: If you don't have access to modify your companies DNS records, you can also email a request to a co-worker. This email includes a direct link to the CNAME records that the recipient of the email can access for 48 hours [DOUBLE CHECK]. The recipient doesn't need login access to your SendGrid account.
 
 It can take up to 48 hours for the records to verify after you upload them into your DNS host, so you will likely have to come back later to verify.
