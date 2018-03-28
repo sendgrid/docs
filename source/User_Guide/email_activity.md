@@ -1,9 +1,9 @@
 ---
 layout: page
 weight: 0
-title: Email Activity
+title: Legacy Email Activity
 seo:
-  title: SendGrid Email Activity
+  title: SendGrid Legacy Email Activity
   description: Email activity allows you to see and search the email events on your account.
   keywords: email activity, account events, email events, old email activity
 navigation:
@@ -11,7 +11,7 @@ navigation:
 ---
 
 {% warning %}
-If you are looking for the Email Activity Beta documentation, please go [here]({{root_url}}/User_Guide/email_activity_beta.html). 
+If you are looking for the new Email Activity documentation, please go [here]({{root_url}}/User_Guide/email_activity_feed.html). 
 {% endwarning %}
 
 

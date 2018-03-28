@@ -1,26 +1,17 @@
 ---
 layout: page
 weight: 
-title: Email Activity Feed - Beta
+title: Email Activity Feed
 navigation:
   show: true
 seo:
-  title: Email Activity Feed Beta
+  title: Email Activity Feed
   override: true
   description:
 ---
 {% info %}
 In order to gain access to the Email Activity Feed API, you must purchase [additional email activity history](https://app.sendgrid.com/settings/billing/addons/email_activity). 
 {% endinfo %}
-
-{% warning %}
-Email Activity is in beta and you may not have access - we are currently in the process of rolling out access. For more information, see the [Release Notes]({{root_url}}/release_notes.html#-Email-Activity-Feed-Beta). The feature may also change at any time without notice.
-{% endwarning %}
-
-{% info %}
-You can return to the old Email Activity Feed page at any time by hovering over the BETA tag at the top of the page and selecting the “Switch Back” link that appears.
-{% endinfo %}
-
 
 The Email Activity feed allows you to view a snapshot of email-related activity associated with your account and any subusers. Enhanced email activity and storage gives you increased visibility into the email delivery flow of each email message to expedite the troubleshooting process.  
 
@@ -37,7 +28,7 @@ With the Email Activity feed you can:
 * Troubleshoot email delivery issues faster with comprehensive and sequential event data by email message.
 * Pinpoint specific emails easily with advanced search and filter options --including subject line and email metadata.
 * Customize your data independently with CSV download/export option.
-* Increase storage available for up to 60 days for historical visibility within the UI by purchasing an upgrade.
+* Increase storage available for up to 30 days for historical visibility within the UI by purchasing an upgrade.
 * Call all events by an email from the API with additional storage purchase.
 
 
@@ -184,7 +175,7 @@ Additional Resources
 {% endanchor h2 %}
 
 - [Email Activity API](https://sendgrid.api-docs.io/v3.0/email-activity/filter-all-messages)
-- [Email Activity - Non Beta](https://sendgrid.com/docs/User_Guide/email_activity.html)
+- [Legacy Email Activity](https://sendgrid.com/docs/User_Guide/email_activity.html)
 - [Getting Started with the Email Activity API](https://sendgrid.com/docs/API_Reference/Web_API_v3/tutorials/getting_started_email_activity_api.html)
 - [Building compound Email Activity queries](https://sendgrid.com/docs/API_Reference/Web_API_v3/tutorials/getting_started_email_activity_api.html)
 
