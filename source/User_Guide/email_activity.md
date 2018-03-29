@@ -14,7 +14,6 @@ navigation:
 If you are looking for the new Email Activity documentation, please go [here]({{root_url}}/User_Guide/email_activity_feed.html). 
 {% endwarning %}
 
-
 <iframe src="https://player.vimeo.com/video/130900679" width="500" height="312" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 - [Filtering the Activity Feed](#-Filtering-the-Activity-Feed)
