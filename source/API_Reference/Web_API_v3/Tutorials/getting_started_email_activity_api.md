@@ -1,17 +1,17 @@
 ---
 seo:
- title: Getting Started with the Email Activity Feed API (beta)
+ title: Getting Started with the Email Activity Feed API
  description: Use the Email Activity Feed query language to get started with the Email Activity Feed API.
  keywords: email activity, query language, email stats, email events
-title: Getting Started with the Email Activity Feed API (beta)
+title: Getting Started with the Email Activity Feed API
 weight: 0
 layout: page
 navigation:
  show: true
 ---
-{% warning %}
-The Email Activity Feed is in beta, and you may not have access - we are currently in the process of rolling out access. For more information, see the [Release Notes]({{root_url}}/release_notes.html#-Email-Activity-Feed-Beta). The feature may also change at any time without notice.
-{% endwarning %}
+{% info %}
+In order to gain access to the Email Activity Feed API, you must purchase [additional email activity history](https://app.sendgrid.com/settings/billing/addons/email_activity). 
+{% endinfo %}
 
 - [Getting started](#-Getting-started)
    - [Encoding queries](#-Encoding-queries)
@@ -254,7 +254,7 @@ This is a full list of basic query types and examples: (replace the data in quot
  </tr>
  <tr>
    <td><code>api_key_id</code></td>
-   <td><code>api_key_id="-hVjtoFgGUNPq3DPPPkJN3mCIDIwrl3qdFZcqYKnlq94"</code> (everything after the middle dot in the API key)</td>
+   <td><code>api_key_id="SG.xxxxxxxxxxxxxxxx"</code> (everything before the middle dot in the API key)</td>
  </tr>
  <tr>
    <td><code>api_key_name</code></td>
@@ -306,5 +306,5 @@ Additional Resources
 {% endanchor h2 %}
 
 - [Email Activity Feed API Reference](https://sendgrid.api-docs.io/v3.0/email-activity/filter-all-messages)
-- [Email Activity Feed - Non Beta](https://sendgrid.com/docs/User_Guide/email_activity.html)
-- [Email Activity Feed - Beta](https://sendgrid.com/docs/User_Guide/email_activity_beta.html)
+- [Legacy Email Activity Feed UI](https://sendgrid.com/docs/User_Guide/email_activity.html)
+- [Email Activity Feed UI](https://sendgrid.com/docs/User_Guide/email_activity_feed.html)

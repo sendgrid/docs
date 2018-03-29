@@ -18,7 +18,7 @@ Templates are re-usable email layouts, that may be created and interacted with t
 
 Templates may have multiple versions with different content, these may be changed and activated through the API. These allow split testing, multiple languages of the same template, etc.
 
-**[Sending Transactional Templates]({{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/smtpapi.html)**
+**Sending Transactional Templates**
 
 You can send transactional templates using one of three ways:
 

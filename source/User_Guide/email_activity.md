@@ -1,18 +1,18 @@
 ---
 layout: page
 weight: 0
-title: Email Activity
+title: Legacy Email Activity
 seo:
-  title: SendGrid Email Activity
+  title: SendGrid Legacy Email Activity
   description: Email activity allows you to see and search the email events on your account.
   keywords: email activity, account events, email events, old email activity
 navigation:
   show: true
 ---
 
-{% info %}
-Are you looking for information about Email Activity Feed Beta? If so, check out [Email Activity Feed - Beta]({{root_url}}/User_Guide/email_activity_beta.html). If you switch to Beta, you can return to the old Email Activity Feed page at any time by hovering over the BETA tag at the top of the page and selecting the “Switch Back” link that appears.
-{% endinfo %}
+{% warning %}
+If you are looking for the new Email Activity documentation, please go [here]({{root_url}}/User_Guide/email_activity_feed.html). 
+{% endwarning %}
 
 <iframe src="https://player.vimeo.com/video/130900679" width="500" height="312" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
@@ -115,7 +115,7 @@ The Email Activity feed allows you to view specific information about messages s
   </tr>
   <tr>
     <td>Blocks</td>
-    <td>When your IP address has been blacklisted or blocked by an ISP or messaging organization. Blocks do not result in permanent suppressions: subsequent sends to blocked email addresses are not automatically suppressed.</td>
+    <td>When your IP address has been blacklisted or blocked by an ISP or messaging organization. Blocks are less severe than bounces and do not result in permanent suppressions: subsequent sends to blocked email addresses are not automatically suppressed.</td>
   </tr>
   <tr>
     <td>Spam Reports</td>
