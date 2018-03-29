@@ -65,7 +65,7 @@ New Design Templates for Marketing Campaigns
 <table class="table" style="width: 100%;">
   <tr>
     <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
-    <td>We've added two new templates to the SendGrid Marketing template library! These templates, named "Modern" and "Coffee", offer fully-responsive and clean designs, giving you the framework you need to build beautifully engaging marketing campaigns. The new templates can be accessed by clicking "Templates" in the navigation, and selecting the "Marketing" option.</td>
+    <td>We've added two new templates to the SendGrid Marketing template library! These templates, named "Modern" and "Coffee", offer fully-responsive and clean designs, giving you the framework you need to build beautifully engaging marketing campaigns. The new templates can be accessed by clicking **Templates** in the navigation, and selecting the **Marketing** option.</td>
   </tr>
 </table>
 
