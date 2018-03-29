@@ -85,21 +85,6 @@ Fixed a segmentation date issue
 </table>
 
 {% anchor h2 %}
-06 March 2018
-{% endanchor %}
-
-{% anchor h3 %}
-Code Editor Color Scheme
-{% endanchor %}
-
-<table class="table" style="width: 100%;">
-  <tr>
-    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
-    <td>The color scheme (theme) of the code editor within Marketing Campaigns has been updated to be more visually clean and consistent. The new look helps code appear less cluttered, while aligning more closely with the SendGrid brand.</td>
-  </tr>
-</table>
-
-{% anchor h2 %}
 08 March 2018
 {% endanchor %}
 
@@ -115,28 +100,19 @@ Unsubscribe Tag Support for Transactional Templates
 </table>
 
 {% anchor h2 %}
-29 March 2018
+06 March 2018
 {% endanchor %}
 
 {% anchor h3 %}
-Email Activity Feed
+Code Editor Color Scheme
 {% endanchor %}
 
 <table class="table" style="width: 100%;">
   <tr>
-    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ><img src="{{root_url}}/images/code_icon.png" alt="An update to the API" width="100" height="100"></td>
-    <td>The Email Activity Feed has been updated to include enhancements to email activity feed details, filtering, search options, and CSV export capability to ease the process of troubleshooting email delivery issues. In addition to the new enhancements, customers have the option to purchase 30 days of additional email activity history which includes API endpoint access.</td> 
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>The color scheme (theme) of the code editor within Marketing Campaigns has been updated to be more visually clean and consistent. The new look helps code appear less cluttered, while aligning more closely with the SendGrid brand.</td>
   </tr>
 </table>
-
-{% info %}
-High-volume (100M+) customers do not have the option to access this feature at this time.
-{% endinfo %}
-
- * Access the Email Activity Feed [here](https://app.sendgrid.com/email_activity)
- * For more information about the UI updates, see the [documentation](https://sendgrid.com/docs/User_Guide/email_activity_feed.html)
- * For more information about the API updates, see the [documentation](https://sendgrid.api-docs.io/v3.0/email-activity/filter-all-messages)
-
 
 {% anchor h2 %}
 01 March 2018
