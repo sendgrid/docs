@@ -10,7 +10,7 @@ seo:
   description:
 ---
 {% info %}
-In order to gain access to the Email Activity Feed API, you must purchase [additional email activity history](https://app.sendgrid.com/settings/billing/addons/email_activity). 
+Higher volume users may not yet have access to the new Email Activity Feed. For information about the legacy Email Activity Feed, see [Legacy Email Activity]({{root_url}}/User_Guide/email_activity.html).
 {% endinfo %}
 
 The Email Activity feed allows you to view a snapshot of email-related activity associated with your account and any subusers. Enhanced email activity and storage gives you increased visibility into the email delivery flow of each email message to expedite the troubleshooting process.  
@@ -31,13 +31,15 @@ With the Email Activity feed you can:
 * Increase storage available for up to 30 days for historical visibility within the UI by purchasing an upgrade.
 * Call all events by an email from the API with additional storage purchase.
 
+{% info %}
+In order to gain access to the Email Activity Feed API, you must purchase [additional email activity history](https://app.sendgrid.com/settings/billing/addons/email_activity). 
+{% endinfo %}
 
 {% anchor H2 %}
 Types of email activity data
 {% endanchor %}
 
 The Email Activity feed allows you to view specific information about messages sent from your account. 
-
 
 <table class="table" style="table-layout:fixed">
   <tr>
@@ -104,7 +106,6 @@ Filtering email activity
 
 The Email Activity feed lists each email sent. Click on each email to view the current list of triggered events for that email. Use our basic or advanced search to filter by email subject, recipients, or event types. 
 
-
 {% anchor H3 %}
 Basic search
 {% endanchor %}
@@ -112,7 +113,7 @@ Basic search
 The email address field filters with an approximate, or fuzzy search. The date field pulls filters events that fit within the precise date range specified.
 
 {% info %}
-To filter by event type, like in the legacy Email Activity Feed, use [Advanced search](#-Advanced-search), and select Event Type.
+To filter by event type, like in the legacy Email Activity Feed, use [Advanced search](#-Advanced-search), and select Event Type, and choose an event type to filter by.
 {% endinfo %}
 
 {% anchor H3 %}
@@ -144,13 +145,11 @@ In addition to viewing the email activity associated with your account by recipi
 
    ![]({{root_url}}/img/EASE_advanced_search_filter.gif "Email Activity Advanced Search")
 
-{% info %}
-To further narrow your search results, select one of the following options:
+*To further narrow your search results:*
 
 * Search emails by **any** of the following - This search will return more results and will pull in all events that meet *one or more* of the criterion specified by the selected filters. 
 or
 * Search emails by **all** of the following - This search will return fewer results and will pull in events that meet *every* criteria specified by the selected filters. 
-{% endinfo %}
 
 {% anchor H2 %}
 Viewing Event History
