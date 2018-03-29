@@ -111,6 +111,10 @@ Basic search
 
 The email address field filters with an approximate, or fuzzy search. The date field pulls filters events that fit within the precise date range specified.
 
+{% info %}
+To filter by event type, like in the legacy Email Activity Feed, use [Advanced search](#-Advanced-search), and select Event Type.
+{% endinfo %}
+
 {% anchor H3 %}
 Advanced Search
 {% endanchor %}
