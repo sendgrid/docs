@@ -7,7 +7,7 @@ title: Getting Started with the Email Activity Feed API (beta)
 weight: 0
 layout: page
 navigation:
- show: false
+ show: true
 ---
 {% warning %}
 The Email Activity Feed is in beta, and you may not have access - we are currently in the process of rolling out access. For more information, see the [Release Notes]({{root_url}}/release_notes.html#-Email-Activity-Feed-Beta). The feature may also change at any time without notice.
