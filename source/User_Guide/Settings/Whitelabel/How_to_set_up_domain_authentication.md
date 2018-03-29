@@ -10,19 +10,22 @@ navigation:
   show: false
 ---
 
-- [What is domain authentication?]()
-- [Key terminology]()
-    - [DNS]()
-    - [DKIM]()
-    - [SPF]()
-    - [Content Delivery Network (CDN)]()
-- [Setting up domain authentication]()
-    - [Before you begin]()
-    - [Setting up DNS]()
-    - [Verifying your DNS]()
-    - [Advanced settings]()
-- [Troubleshooting]()
-- [Migrating from legacy Whitelabel]()
+- [What is domain authentication?](#-What-is-domain-authentication)
+- [Key terminology](#-Key terminology)
+    - [DNS](#-DNS)
+    - [DKIM](#-DKIM)
+    - [SPF](#-SPF)
+    - [Content Delivery Network (CDN)](#-Content Delivery Network)
+- [Setting up domain authentication](#-Setting-up-domain-authentication)
+    - [Before you begin](#-Before-you-begin)
+    - [Setting up DNS](#-Setting-up-DNS)
+- [Advanced settings](#-Advanced-settings)
+    - [Using automated security](#-Using-automated-security)
+    - [Using a custom return path](#-Using-a-custom-return-path)
+    - [Using a custom DKIM selector](#-Using-a-custom-DKIM-selector)
+    - [Assigning a subuser](#-Assigning-a-subuser)
+- [Troubleshooting](#-Troubleshooting)
+- [Migrating from legacy Whitelabel](#-Migrating-from-legacy-Whitelabel)
 
 {% anchor h2 %}
 What is domain authentication?
@@ -36,11 +39,12 @@ Even though this is a small change from your recipients perspective, this change
 Key terminology
 {% endanchor %}
 
+TO DO: ADD DEFINITIONS
+LET KAYLYN KNOW IF YOU THINK THIS IS MISSING TERMS
+
 {% anchor h3 %}
 DNS
 {% endanchor %}
-
-[Content]
 
 {% anchor h3 %}
 DKIM
@@ -128,10 +132,17 @@ When you are in the process of authenticating a domain, and on the screen where 
 Troubleshooting
 {% endanchor %}
 
+Info coming soon. Let Kaylyn know if you have any recommendations.
+
 {% anchor h2 %}
 Migrating from legacy Whitelabel
 {% endanchor %}
 
+Info coming soon.
+
 {% anchor h2 %}
 Additional resources
 {% endanchor %}
+- [link text]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML)
+- [link text]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML)
+- [link text]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML)
