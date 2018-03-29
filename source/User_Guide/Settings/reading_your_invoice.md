@@ -52,6 +52,8 @@ For more information on SendGrid Plans, visit our [pricing page](https://sendgri
 
 Refer to "Contact List Usage" in the Usage Summary section below for more information on how this charge is calculated. 
 
+**Email Activity History** - This charge is for access to the Email Activity Feed API as well as 30 days worth of Email Activity History. These two features are sold as a package and cannot be added individually. 
+
 {% anchor h2 %}
 4. Usage Summary
 {% endanchor %}
