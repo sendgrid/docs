@@ -9,7 +9,7 @@ navigation:
 ---
 
 - [Before you begin](#-Before-you-begin)
-- [Design a dynamic template](#-Design-a-template)
+- [Design a dynamic transactional template](#-Design-a-dynamic-transactional-template)
 - [Send a transactional email using the SendGrid API or SMTP ](#-Send-a-transactional-email-using-the-SendGrid-API-or-SMTP)
 
 {% anchor h2 %}
@@ -29,7 +29,9 @@ Design a dynamic template
 
 1. Open the [transactional templates](https://sendgrid.com/dynamic_templates) page and click **Create Template**.
 1. Add a unique template name and then click **Save**. 
-1. To begin editing your new template, click **Add Version**. 
+1. To begin editing your new template, click **Add Version**.
+1. Select an [editor]({{root_url}}/User_Guide/Marketing_Campaigns/editor.html) and click **Continue**.
+
 
 
 {% anchor h2 %}
