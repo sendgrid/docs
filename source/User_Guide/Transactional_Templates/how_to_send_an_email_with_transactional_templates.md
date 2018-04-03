@@ -20,7 +20,7 @@ Before you create and send an email using a dynamic transactional template you n
 
 * Create a SendGrid account
 * Create an [API Key]({{root_url}}/User_Guide/Settings/api_keys.html)
-* Create an HTML template
+* Add an unsubscribe group (optional)
 
 
 {% anchor h2 %}
