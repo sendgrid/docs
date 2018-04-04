@@ -118,7 +118,6 @@ Duplicate a Template
 
 This creates a clone, giving it a name that includes the original version name, the word “copy,” and today’s date. This duplicate version will not be active until you activate it.
 
-
 {% anchor h2 %}
 Unsubscribe Substitution Tags
 {% endanchor h2 %}

@@ -17,7 +17,6 @@ Handlebars overview
 
 Handlebars syntax provides a simple, powerful way to include dynamic content, directly within email templates.  Handlebars syntax allows all of this dynamic templating to occur outside of code, meaning changes are done quickly in the template, with no update to a code base required.
 
-
 {% anchor h2 %}
 Personalizing email with Handlebars
 {% endanchor %}

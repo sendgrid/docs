@@ -6,8 +6,7 @@ weight: 100
 layout: page
 navigation:
   show: false
-    description: SendGrid's dynamic transactional templates allow senders to easily send custom content. 
-
+  description: SendGrid's dynamic transactional templates allow senders to easily send custom content. 
 ---
 
 - [Before you begin](#-Before-you-begin)
