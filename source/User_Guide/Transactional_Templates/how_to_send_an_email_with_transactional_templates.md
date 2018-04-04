@@ -34,18 +34,19 @@ Design a dynamic template
 1. Add a unique template name and then click **Save**. 
 1. To begin editing your new template, click **Add Version**.
 1. Select an editor and click **Continue**.
-1. Design your template. For more information on designing a Dynamic Transactional Template using the Design Editor or Code Editor, see [Create and edit Dynamic Transactional Templates]({{root_url}}/User_Guide/Transactional)Templates/create_and_edit_dynamic_transactional_templates.html).
+1. Design your template. For more information on designing a Dynamic Transactional Template using the Design Editor or Code Editor, see [Create and edit Dynamic Transactional Templates]({{root_url}}/User_Guide/Transactional_Templates/create_and_edit_dynamic_transactional_templates.html).
 
 {% anchor h2 %}
 Send a transactional email
 {% endanchor %}
-
 
 {% anchor h3 %}
 Send transactional email using the SendGrid API
 {% endanchor %}
 
 *To send a dynamic transactional email:*
+
+In order to send a dynamic transactional email using cURL, set your call up to look something like this:
 
 {% codeblock %}
 curl -X "POST" "https://api.sendgrid.com/v3/mail/send" \
@@ -69,6 +70,23 @@ curl -X "POST" "https://api.sendgrid.com/v3/mail/send" \
   "template_id": "[template_id]",
 }'
 {% endcodeblock %}
+
+It is important to note two sections of this call when using dynamic templates.
+
+In order to send dynamic content, you need to specify that content in a dynamic template data section.
+
+{% codeblock %}
+ }],
+    "dynamic_template_data": {
+      "guest": "Anthony Wang"
+      "partysize": 4,
+      "english": true,
+      "date": "April 1st, 2018"
+    }
+  }],
+{% endcodeblock %}
+
+
 
 If you forget your template ID and want to access it from the API, use the following curl call to retrieve all of your transactional templates:
 

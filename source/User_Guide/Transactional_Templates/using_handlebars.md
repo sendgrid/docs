@@ -23,19 +23,23 @@ Handlebars syntax provides a simple, powerful way to include dynamic content, di
 Personalizing email with Handlebars
 {% endanchor %}
 
+Here are some example scenarios you can use to substitute data with Handlebars. 
+
 {% anchor h3 %}
 Substitution
 {% endanchor %}
 
 **Basic Replacement**
 
-HTML should contain:
- 
+*HTML should contain:*
+{% codeblock %}
 <p>Hello {{firstName}}</p>
+{% endcodeblock %} 
 
-Test Data should contain: 
-
+*Test Data should contain:*
+{% codeblock %}
 {"firstName":"Ben"}
+{% endcodeblock %}
 
 Resulting replacement: 
 
@@ -45,29 +49,37 @@ Resulting replacement:
 
 *HTML should contain:* 
 
+{% codeblock %}
 <p>Hello {{user.profile.firstName}}</p>
+{% endcodeblock %}
 
 *Test Data should contain:* 
 
+{% codeblock %}
 {
 “user”:
 {“profile”:
 {“firstName”:”Ben”}
 }
 }
+{% endcodeblock %}
 
 *Resulting replacement:*
 
 <p>Hello Ben</p>
 
+
 **Object failure**
 
 *HTML should contain:*
 
+{% codeblock %}
 <p>Hello {{user.profile.firstName}}</p>
+{% endcodeblock %}
 
 *Test Data should contain:* 
 
+{% codeblock %}
 {
 “user”:
 {“orderHistory”:
@@ -76,6 +88,7 @@ Resulting replacement:
 {“date”:”1/4/2017”,”item”:”hat”}
 }
 }
+{% endcodeblock %}
 
 *Resulting replacement:* 
 
@@ -89,6 +102,7 @@ Conditionals
 
 *HTML should contain:* 
 
+{% codeblock %}
 {{#if user.profile.male}}
 <p>Dear Sir</p>
 {{#else if user.profile.female}}
@@ -96,59 +110,65 @@ Conditionals
 {[#else}}
 <p> Dear Customer</p>
 {{/if}}
+{% endcodeblock %}
+
 
 Test Data should contain: 
 
-#1
+{% codeblock %}
 {
 “user”:
 {“profile”:
 {“male”:”true”}
 }
 }
-
-#2
+{% endcodeblock %}
+ 
+{% codeblock %}
 {
 “user”:
 {“profile”:
 {“female”:true}
 }
 }
-
-#3
+{% endcodeblock %}
+ 
+{% codeblock %}
 {
 “user”:
 {“profile”:
 {}
 }
 }
+{% endcodeblock %}
 
-Resulting replacement:
+*Resulting replacement:*
 
-#1
 <p>Dear Sir</p>
 
-#2
 <p>Dear Madame</p>
 
-#3
 <p>Dear Customer</p>
 
 **If w/ root**
 
 *HTML should contain*: 
 
+{% codeblock %}
 {{#if user.suspended}}
 	<p>Warning Your account is suspended, please call: {{@root.supportPhone}}</p>
 {{/if}}
+{% endcodeblock %}
 
 *Test Data should contain:* 
 
+{% codeblock %}
 {
 “user”:
 {“suspended”:true}
 “supportPhone”:”1-800-7363474”
 }
+{% endcodeblock %}
 
 *Resulting replacement:*
 
@@ -158,16 +178,20 @@ Resulting replacement:
 
 *HTML should contain:* 
 
+{% codeblock %}
 {{#unless user.active}}
 	<p>Warning Your account is suspended, please call: {{@root.supportPhone}}</p>
 {{/unless}}
+{% endcodeblock %}
 
 *Test Data should contain:* 
 
+{% codeblock %}
 {
 “user”:
 {“active”:true}
 }
+{% endcodeblock %}
 
 *Resulting replacement:*
 
@@ -181,14 +205,17 @@ Iterators
 
 *HTML should contain:*
 
+{% codeblock %}
 <ol>
 {{#each user.orderHistory}}
 	<li>You ordered: {{this.item}} on: {{this.date}}</li>
 {{/each}}
 </ol>
+{% endcodeblock %}
 
 *Test Data should contain:*
 
+{% codeblock %}
 {
 “user”:
 {“orderHistory”:
@@ -197,6 +224,8 @@ Iterators
 {“date”:”1/4/2017”,”item”:”hat”}
 }
 }
+{% endcodeblock %}
+
 
 *Resulting replacement:*
 
