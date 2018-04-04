@@ -1,12 +1,13 @@
 ---
-title: How to send an email with dynamic transactional templates
-seo: dynamic templates, getting started, SendGrid, transactional email
-  title: How to send an email with dynamic transactional templates
-weight: 100
 layout: page
+weight: 100
+title: How to send an email with Dynamic Transactional Templates
 navigation:
   show: false
-  description: SendGrid's dynamic transactional templates allow senders to easily send custom content. 
+seo:
+  title: How to send an email with Dynamic Transactional Templates
+  override: true
+  description: 
 ---
 
 - [Before you begin](#-Before-you-begin)

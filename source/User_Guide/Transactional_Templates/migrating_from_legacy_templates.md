@@ -1,11 +1,13 @@
 ---
-title: Migrating from legacy templates
-seo: dynamic templates, migrating, SendGrid, transactional email, handlebars
-  title: How to send an email with transactional templates
-weight: 100
 layout: page
+weight: 50
+title: Migrating from Legacy Templates
 navigation:
-  show: true
+  show: false
+seo:
+  title: Migrating from Legacy Templates
+  override: true
+  description: 
 ---
 
 

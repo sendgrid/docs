@@ -1,11 +1,13 @@
 ---
-title: Using Handlebars
-seo: Handlebars, substitution tags, personalization, dynamic content
-  title: Using Handlebars
-weight: 10
 layout: page
+weight: 50
+title: Using Handlebars
 navigation:
-  show: false
+  show: false 
+seo:
+  title: Using Handlebars
+  override: true
+  description:
 ---
 
 - [Handlebars overview](#-Handlebars-overview)
