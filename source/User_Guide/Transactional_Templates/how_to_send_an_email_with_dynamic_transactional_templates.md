@@ -36,6 +36,8 @@ Design a dynamic template
 1. Select an editor and click **Continue**.
 1. Design your template. For more information on designing a Dynamic Transactional Template using the Design Editor or Code Editor, see [Create and edit Dynamic Transactional Templates]({{root_url}}/User_Guide/Transactional_Templates/create_and_edit_dynamic_transactional_templates.html).
 
+Here's a sample template: <a href="/source/assets/sample_dynamic_template.html" target="_blank">Hipster Cat Cafe</a>
+
 {% anchor h2 %}
 Send a transactional email
 {% endanchor %}
@@ -73,7 +75,7 @@ curl -X "POST" "https://api.sendgrid.com/v3/mail/send" \
 
 It is important to note two sections of this call when using dynamic templates.
 
-In order to send dynamic content, you need to specify values for that content in the dynamic template data section:
+In order to send dynamic content, you need to specify a collection of key/value pairs in the `dynamic_template_data` object following the pattern `"handlebar_tag":"value to substitute"`. All are assumed to be strings. These handlebar substitutions apply to the text and html content of the body of your email, in addition to the subject and reply-to parameters. The total collective size of your handle bar substitutions may not exceed 10,000 bytes per personalization object.
 
 {% codeblock %}
  }],
