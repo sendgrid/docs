@@ -10,7 +10,7 @@ navigation:
   show: true
 ---
 
-A bounce occurs when a sent message is rejected by the receiving mail server. The most common causes for bounced email messages include a misspelled email address, a nonexistent email address, or a full recipient inbox. A repeat bounce is when an address has bounced, then bounced a second time and logged to the bounce suppression list, but you ask us to send to this recipient again. Our system will suppress the message, because it ‘knows’ that recipient address is bad.
+A bounce occurs when a sent message is rejected by the receiving mail server. The most common causes for bounced email messages include a misspelled or nonexistent email address. A repeat bounce is when an address has bounced, then bounced a second time and logged to the bounce suppression list, but you ask us to send to this recipient again. Our system will suppress the message, because it ‘knows’ that recipient address is bad.
 
 {% anchor h2 %}
 Bounce Notifications

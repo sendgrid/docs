@@ -1,2 +1,4 @@
 User-agent: *
 Disallow: /docs/User_Guide/Settings/taxes_and_tax_exempt.html
+Disallow /docs/User_Guide/Settings/Whitelabel/How_to_set_up_domain_authentication.html
+Disallow /docs/User_Guide/Settings/Whitelabel/How_to_set_up_link_branding.html
