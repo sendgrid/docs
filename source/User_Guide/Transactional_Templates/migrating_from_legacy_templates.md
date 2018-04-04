@@ -16,7 +16,6 @@ If you have transactional templates you want to use with handlebars syntax, you 
 The original template you copy won't be modified and remains active in any API or SMTP calls. To use the new template, update the template ID parameter in your code.
 {% endinfo %}
 
-
 *To convert a legacy transactional template:*
 
 1. Navigate to the [legacy templates](https://sendgrid.com/templates) page. 
@@ -26,5 +25,6 @@ The original template you copy won't be modified and remains active in any API o
 1. Once the template is successfully copied over, click **Continue**. The template opens in the editor and you are prompted to replace any existing substitution tags with handlebars syntax. 
 1. To replace any existing substitution tags, click **Replace your subsitution tags**. 
 1. Enter the opening and closing characters of your substition tags and click **Replace**. 
-1. The module replaces all of the substitution tags in your template with handlebars. For example, {{your_tag_here}}. 
+1. The module replaces all of the substitution tags in your template with handlebars. 
+   For example,{% raw %}{{your_tag_here}}{% endraw %}. 
 

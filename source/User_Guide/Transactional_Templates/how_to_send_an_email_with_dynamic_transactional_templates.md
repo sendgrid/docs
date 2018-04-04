@@ -73,7 +73,7 @@ curl -X "POST" "https://api.sendgrid.com/v3/mail/send" \
 
 It is important to note two sections of this call when using dynamic templates.
 
-In order to send dynamic content, you need to specify that content in a dynamic template data section.
+In order to send dynamic content, you need to specify values for that content in the dynamic template data section:
 
 {% codeblock %}
  }],
@@ -86,7 +86,7 @@ In order to send dynamic content, you need to specify that content in a dynamic 
   }],
 {% endcodeblock %}
 
-If you forget your template ID and want to access it from the API, use the following curl call to retrieve all of your transactional templates:
+In addition to specifying the dynamic template data, you need to specify the template ID. The template ID is 64 characters with one dash (d-uuid). If you forget your template ID and want to access it from the API, use the following curl call to retrieve all of your transactional templates:
 
 {% codeblock %}
 curl --request GET \
@@ -95,7 +95,7 @@ curl --request GET \
   --header 'Content-Type: application/json'
 {% endcodeblock %}
 
-Or you can copy your template ID from the app and paste it into your call. 
+You can also copy your template ID from the app and paste it into your call. 
 
 ![]({{root_url}}/img/dynamic_template_id.png "Dynamic Template ID")
 
@@ -104,10 +104,6 @@ Send transactional email using SMTP
 {% endanchor %}
 
 Coming soon!
-
-{% info %}
-The original template you copy won't be modified and remains active in any API or SMTP calls. To use the new template, update the template ID parameter in your code.
-{% endinfo %}
 
 {% anchor h2 %}
 Additional Resources
