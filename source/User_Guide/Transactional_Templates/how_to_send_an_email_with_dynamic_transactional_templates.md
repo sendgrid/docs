@@ -13,8 +13,8 @@ seo:
 - [Before you begin](#-Before-you-begin)
 - [Design a dynamic transactional template](#-Design-a-dynamic-transactional-template)
 - [Send a transactional email](#-Send-a-transactional-email)
-  - [Send email using the SendGrid API](#-Send-email-using-the-SendGrid-API)
-  - [Send email using SMTP](#-Send-email-using-SMTP)
+ 
+ 
 
 {% anchor h2 %}
 Before you begin
@@ -40,10 +40,6 @@ Here's a sample template: <a href="/source/assets/sample_dynamic_template.html" 
 
 {% anchor h2 %}
 Send a transactional email
-{% endanchor %}
-
-{% anchor h3 %}
-Send transactional email using the SendGrid API
 {% endanchor %}
 
 *To send a dynamic transactional email:*
@@ -100,12 +96,6 @@ curl --request GET \
 You can also copy your template ID from the app and paste it into your call. 
 
 ![]({{root_url}}/img/dynamic_template_id.png "Dynamic Template ID")
-
-{% anchor h3 %}
-Send transactional email using SMTP
-{% endanchor %}
-
-Coming soon!
 
 {% anchor h2 %}
 Additional Resources
