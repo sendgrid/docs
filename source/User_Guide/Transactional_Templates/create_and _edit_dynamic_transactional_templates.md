@@ -1,5 +1,5 @@
 ---
-title: Create and Edit Templates
+title: Create and edit Dynamic Transactional Templates
 seo:
   title: Create and Edit Templates
 weight: 10
@@ -57,8 +57,12 @@ Using the Code Editor
 
 1. If you selected the Code Editor, copy and paste your HTML code into the code editor. 
 <br></br>If you paste in an email template, it is likely that you will overwrite the default and very basic email HTML that is provided in the code editor. 
-
-1. When you’re done editing, click **Save**. <br></br>Please double check that the content is formatted correctly before you send an email using this template.
+2. To add an image to your template, select the **images** icon above the HTML code.
+3. Select the image you want to add from your image library. To add more images to your library, drag them into the box at the top of the library or click **choose images to upload**. 
+4. Select the **Image Details** tab and copy the URL in the *Image Source URL* tab by clicking **Copy URL**.
+5. Paste this URL in an image source tag in your campaign or template's HTML.
+Example: `<img src="your image URL here">`
+6. When you’re done editing, click **Save**. <br></br>Please double check that the content is formatted correctly before you send an email using this template.
 
 {% anchor h3 %}
 Using the Design Editor

@@ -15,7 +15,195 @@ navigation:
 Handlebars overview
 {% endanchor %}
 
+SendGrid uses Handlebars syntax to create dynamic, personalized emails. Handlebars is a templating engine with minimal logic that dynamically generates your HTML. It’s an extension of Mustache with a few additional features. use the following helpers: if, with, unless, each and more 
+
+
+
 
 {% anchor h2 %}
 Personalizing email with Handlebars
 {% endanchor %}
+
+{% anchor h3 %}
+Substitution
+{% endanchor %}
+
+**Basic Replacement**
+
+HTML should contain:
+ 
+<p>Hello {{firstName}}</p>
+
+Test Data should contain: 
+
+{"firstName":"Ben"}
+
+Resulting replacement: 
+
+<p>Hello Ben</p>
+
+**Deep object replacement**
+
+*HTML should contain:* 
+
+<p>Hello {{user.profile.firstName}}</p>
+
+*Test Data should contain:* 
+
+{
+“user”:
+{“profile”:
+{“firstName”:”Ben”}
+}
+}
+
+*Resulting replacement:*
+
+<p>Hello Ben</p>
+
+**Object failure**
+
+*HTML should contain:*
+
+<p>Hello {{user.profile.firstName}}</p>
+
+*Test Data should contain:* 
+
+{
+“user”:
+{“orderHistory”:
+[
+{“date”:”2/1/2018”,”item”:”shoes”},
+{“date”:”1/4/2017”,”item”:”hat”}
+}
+}
+
+*Resulting replacement:* 
+
+<p>Hello </p>
+
+{% anchor h3 %}
+Conditionals
+{% endanchor %}
+
+**Basic If, Else, Else If**
+
+*HTML should contain:* 
+
+{{#if user.profile.male}}
+<p>Dear Sir</p>
+{{#else if user.profile.female}}
+<p>Dear Madame</p>
+{[#else}}
+<p> Dear Customer</p>
+{{/if}}
+
+Test Data should contain: 
+
+#1
+{
+“user”:
+{“profile”:
+{“male”:”true”}
+}
+}
+
+#2
+{
+“user”:
+{“profile”:
+{“female”:true}
+}
+}
+
+#3
+{
+“user”:
+{“profile”:
+{}
+}
+}
+
+Resulting replacement:
+
+#1
+<p>Dear Sir</p>
+
+#2
+<p>Dear Madame</p>
+
+#3
+<p>Dear Customer</p>
+
+**If w/ root**
+
+*HTML should contain*: 
+
+{{#if user.suspended}}
+	<p>Warning Your account is suspended, please call: {{@root.supportPhone}}</p>
+{{/if}}
+
+*Test Data should contain:* 
+
+{
+“user”:
+{“suspended”:true}
+“supportPhone”:”1-800-7363474”
+}
+
+*Resulting replacement:*
+
+<p>Warning Your account is suspended, please call: 1-800-7363474</p>
+
+**Basic Unless**
+
+*HTML should contain:* 
+
+{{#unless user.active}}
+	<p>Warning Your account is suspended, please call: {{@root.supportPhone}}</p>
+{{/unless}}
+
+*Test Data should contain:* 
+
+{
+“user”:
+{“active”:true}
+}
+
+*Resulting replacement:*
+
+[Missing replacement]
+
+{% anchor h3 %}
+Iterators
+{% endanchor %}
+
+**Basic Iterator**
+
+*HTML should contain:*
+
+<ol>
+{{#each user.orderHistory}}
+	<li>You ordered: {{this.item}} on: {{this.date}}</li>
+{{/each}}
+</ol>
+
+*Test Data should contain:*
+
+{
+“user”:
+{“orderHistory”:
+[
+{“date”:”2/1/2018”,”item”:”shoes”},
+{“date”:”1/4/2017”,”item”:”hat”}
+}
+}
+
+*Resulting replacement:*
+
+<ol>
+	<li>You ordered: shoes on: 2/1/2018</li>
+	<li>You ordered: hat on: 1/42017</li>
+</ol>
+
+
