@@ -1,19 +1,21 @@
 ---
-title: Create and Edit Templates
-seo:
-  title: Create and Edit Templates
-weight: 10
 layout: page
+weight: 50
+title: Create and edit Dynamic Transactional Temmplates
 navigation:
-  show: true
+  show: false
+seo:
+  title: Create and edit Dynamic Transactional Templates
+  override: true
+  description: 
 ---
 
 - [Create a template](#-Create-a-template)
 - [Editing your HTML template](#-Editing-your-HTML-template)
+  - [Using the Design Editor](#-Using-the-Design-Editor)
+  - [Using the Code Editor](#-Using-the-Code-Editor)
 - [Preview and test your template](#-Preview-and-test-your-template)
 - [Activate your template](#-Activate-your-template)
-
-Creating email templates involves a mix of content writing, HTML, and CSS expertise. Email templates should look good on different email clients and be responsive for mobile devices. Many non-technical customers will hire a front-end or email template developer to build their templates. We also suggest testing your templates with rendering applications like [Litmus](http://litmus.com) before sending them to your customers.
 
 {% info %}
 There is currently a limit of 300 templates and 300 versions that may be created per account.
@@ -27,19 +29,17 @@ Transactional templates are account and subuser specific. Templates created on a
 Create a template
 {% endanchor h2 %}
 
-1. Open the transactional templates page and click **Create Template**.
+1. Open the [Transactional Templates](https://sendgrid.com/dynamic_templates) page and click **Create Template**.
 1. Add a unique template name in the dialogue box and then click **Save**. 
 
 ![](/images/templates_create_edit_2.png "Template Name")
 
-1. Open the **Actions** dropdown menu to create a new version.
-
-![](/images/templates_create_edit_4.png "Create Template Version")
-
 1. Click **Add Version**. 
-<br></br>The editor opens. From here, you can change the subject and the body of your email template.
+1. Select the editor you want to use to build your template.
 
-The easiest way to get started with a new template is to use one of your previous email templates or a free template from the internet, and then modify it to fit your needs.
+The Code Editor is perfect for users who are  creating or editing custom HTML. It offers a robust environment to upload images, backed by a feature-packed editor – complete with split-screen preview, error flagging, scroll-syncing, syntax highlighting and more. 
+
+The Design Editor, complete with HTML access to each content module, offers powerful “what you see is what you get” (WYSIWYG) editing. It features a diverse library of content blocks, allowing you to build beautiful templates quickly and intuitively. Once placed into your template, each module offers access to edit the HTML and a robust panel of settings – perfect for customizing content precisely to your needs.
 
 {% anchor h2 %}
 Editing your HTML template
@@ -49,14 +49,28 @@ Editing your HTML template
 Email templates are table-based HTML with inline or header styles, because some well-known email applications will only read table-based HTML.
 {% endinfo %}
 
-*To add a template:*
+The easiest way to get started with a new template is to use one of your previous email templates or a free template from the internet, and then modify it to fit your needs.
 
-1. Open a new template in the Code Editor or [Design Editor]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html) by clicking **Actions** and selecting **New Version**. 
+{% anchor h3 %}
+Using the Code Editor
+{% endanchor %}
+
+*To edit a template using the Code Editor:*
 
 1. If you selected the Code Editor, copy and paste your HTML code into the code editor. 
-<br></br>If you paste in an email template, it is likely that you will overwrite the default and very basic email HTML that is provided in the code editor. If you selected the Design Editor, use the WYSIWYG editor with drag & drop modules to create your email template. 
+<br></br>If you paste in an email template, it is likely that you will overwrite the default and very basic email HTML that is provided in the code editor. 
+2. To add an image to your template, select the **images** icon above the HTML code.
+3. Select the image you want to add from your image library. To add more images to your library, drag them into the box at the top of the library or click **choose images to upload**. 
+4. Select the **Image Details** tab and copy the URL in the *Image Source URL* tab by clicking **Copy URL**.
+5. Paste this URL in an image source tag in your campaign or template's HTML.
+Example: `<img src="your image URL here">`
+6. When you’re done editing, click **Save**. <br></br>Please double check that the content is formatted correctly before you send an email using this template.
 
-1. When you’re done editing, click **Save**. <br></br>Please double check that the content is formatted correctly before you send an email using this template.
+{% anchor h3 %}
+Using the Design Editor
+{% endanchor %}
+
+*To edit a template using the Design Editor:*
 
 {% anchor h2 %}
 Preview and test your template
@@ -104,7 +118,6 @@ Duplicate a Template
 1. Select **Duplicate**.  
 
 This creates a clone, giving it a name that includes the original version name, the word “copy,” and today’s date. This duplicate version will not be active until you activate it.
-
 
 {% anchor h2 %}
 Unsubscribe Substitution Tags
