@@ -86,8 +86,6 @@ In order to send dynamic content, you need to specify that content in a dynamic 
   }],
 {% endcodeblock %}
 
-
-
 If you forget your template ID and want to access it from the API, use the following curl call to retrieve all of your transactional templates:
 
 {% codeblock %}

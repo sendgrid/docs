@@ -23,6 +23,19 @@ Handlebars syntax provides a simple, powerful way to include dynamic content, di
 Personalizing email with Handlebars
 {% endanchor %}
 
+Currently, dynamic templates only supports the following helpers:
+
+* equals(a, b) - evaluates decimals, strings, and dates
+* not_equals(a, b) - evaluates decimals, strings, and dates
+* greater_than(a, b) - evaluates decimals, strings
+* less_than(a, b) - evaluates decimals, strings
+* and(a, b) - evaluates booleans
+* or(a, b) - evaluates booleans
+* length(a)  - evaluates arrays and strings
+* isBefore(a, b) - evaluates epoch form dates
+* isAfter(a, b) - evaluates epoch form dates
+* format_date(date, format, timezone) - epoch form dates, format follows [these guidelines](http://support.sas.com/documentation/cdl/en/lrdict/64316/HTML/default/viewer.htm#a003169814.htm), timezone is +/-n 
+
 Here are some example scenarios you can use to substitute data with Handlebars. 
 
 {% anchor h3 %}
