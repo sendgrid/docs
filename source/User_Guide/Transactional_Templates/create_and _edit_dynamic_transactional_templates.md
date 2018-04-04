@@ -1,11 +1,12 @@
 ---
 title: Create and edit Dynamic Transactional Templates
-seo:
-  title: Create and Edit Templates
+seo: SendGrid, dynamic transactional templates, design editor, code editor
+  title: Create and edit Dynamic Transactional Templates
 weight: 10
 layout: page
 navigation:
-  show: true
+  show: false
+  description: SendGrid's dynamic transactional templates allow senders to easily send custom content. 
 ---
 
 - [Create a template](#-Create-a-template)

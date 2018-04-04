@@ -1,11 +1,13 @@
 ---
 title: How to send an email with dynamic transactional templates
 seo: dynamic templates, getting started, SendGrid, transactional email
-  title: How to send an email with transactional templates
+  title: How to send an email with dynamic transactional templates
 weight: 100
 layout: page
 navigation:
-  show: true
+  show: false
+    description: SendGrid's dynamic transactional templates allow senders to easily send custom content. 
+
 ---
 
 - [Before you begin](#-Before-you-begin)
@@ -23,7 +25,6 @@ Before you create and send an email using a dynamic transactional template you n
 * Create a SendGrid account
 * Create an [API Key]({{root_url}}/User_Guide/Settings/api_keys.html)
 * Add an unsubscribe group (optional)
-
 
 {% anchor h2 %}
 Design a dynamic template
@@ -46,7 +47,7 @@ Send transactional email using the SendGrid API
 
 *To send a dynamic transactional email:*
 
-
+{% codeblock %}
 curl -X "POST" "https://api.sendgrid.com/v3/mail/send" \
      -H 'Authorization: Bearer [YourAPIKeyGoesHere!]' \
      -H 'Content-Type: application/json' \
@@ -67,6 +68,7 @@ curl -X "POST" "https://api.sendgrid.com/v3/mail/send" \
   }],
   "template_id": "[template_id]",
 }'
+{% endcodeblock %}
 
 If you forget your template ID and want to access it from the API, use the following curl call to retrieve all of your transactional templates:
 

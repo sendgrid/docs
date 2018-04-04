@@ -1,11 +1,11 @@
 ---
 title: Using Handlebars
-seo: Handlebars, substitution tags, personalization
+seo: Handlebars, substitution tags, personalization, dynamic content
   title: Using Handlebars
 weight: 10
 layout: page
 navigation:
-  show: true
+  show: false
 ---
 
 - [Handlebars overview](#-Handlebars-overview)
@@ -15,9 +15,7 @@ navigation:
 Handlebars overview
 {% endanchor %}
 
-SendGrid uses Handlebars syntax to create dynamic, personalized emails. Handlebars is a templating engine with minimal logic that dynamically generates your HTML. It’s an extension of Mustache with a few additional features. use the following helpers: if, with, unless, each and more 
-
-
+Handlebars syntax provides a simple, powerful way to include dynamic content, directly within email templates.  Handlebars syntax allows all of this dynamic templating to occur outside of code, meaning changes are done quickly in the template, with no update to a code base required.
 
 
 {% anchor h2 %}
