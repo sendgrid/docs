@@ -87,7 +87,7 @@ Enable the option "Forward Host Header."
 
 ![KeyCDN Forward Host Header]({{root_url}}/images/keycdn3.png)
 
-Add the Zonealias (with the alias you want to use for your email links whitelabel domain)
+Create a CNAME record in your DNS settings pointing the alias you want to use for your email links whitelabel domain (e.g. email.domain.com) to the Zone URL provided within your KeyCDN dashboard (e.g. sendgrid-1c6b.kxcdn.com). Then, add that alias as a Zonealias.
 
 ![KeyCDN Zonealias]({{root_url}}/images/keycdn4.png)
 
