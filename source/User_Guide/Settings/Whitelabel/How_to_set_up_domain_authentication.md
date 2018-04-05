@@ -72,8 +72,8 @@ To set up domain authentication, you must submit the DNS records provided by Sen
 
 1. In the SendGrid UI, select [Settings > Sender Authentication](https://app.sendgrid.com/settings/whitelabel).
 1. In the domain authentication section, click **Get Started**.
-1. Next, add in information about your DNS host, and indicate whether you also want to set up link branding. CLick **Next**. For more information about link branding, check out [What is link branding?]({{root_url}}/User_Guide/Settings/Sender_Authentication/How_to_set_up_link_branding.html#-What-is-link-branding).
-1. Fill in the domain that you want to send from and add advanced settings. Make sure that you only enter the name of your root domain. Do not include `www` or `http://www` in this field! Your domain needs to match the domain of your FROM address on the emails you are sending out. For example, if I am sending an email from `example@sendgrid.com`, I would set my domain authentication domain to be `sendgrid.com`. Click **Next**. For more information about advanced settings, see [Advanced settings](#-Advanced-settings).
+1. Next, add in information about your DNS host, and indicate whether you also want to set up link branding. Click **Next**. For more information about link branding, check out [What is link branding?]({{root_url}}/User_Guide/Settings/Sender_Authentication/How_to_set_up_link_branding.html#-What-is-link-branding).
+1. Fill in the domain that you want to send from and add advanced settings as needed. Make sure that you only enter the name of your root domain. Do not include `www` or `http://www` in this field! Your domain needs to match the domain of your FROM address on the emails you are sending out. For example, if I am sending an email from `example@sendgrid.com`, I would set my domain authentication domain to be `sendgrid.com`. Click **Next**. For more information about advanced settings, see [Advanced settings](#-Advanced-settings).
 1. Next, you need to add all of the CNAME records on this screen to your DNS host. This process varies depending on your DNS host. For videos on how to add your CNAME to some popular DNS service providers, check out these [videos](https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/providers.html). If you don't have access to modify your companies DNS records, you can also email a request to a co-worker. This email includes a direct link to the CNAME records that the recipient of the email can access for 48 hours [DOUBLE CHECK]. The recipient doesn't need login access to your SendGrid account.
 
 It can take up to 48 hours for the records to verify after you upload them into your DNS host, so you will likely have to come back later to verify.
@@ -122,7 +122,7 @@ When you are in the process of authenticating a domain, and on the screen where 
 Assigning a subuser
 {% endanchor %}
 
-By assigning a domain whitelabel to one of your subusers, you can give them the benefit of improved authentication and security, but also separate from the sending reputation of your parent account. If you authenticate a subusers domain, they can't edit or delete it.
+By assigning a domain whitelabel to one of your subusers, you can give them the benefit of improved authentication and security, but also separate from the sending reputation of your parent account. If you assign a subusers domain, they can't edit or delete it.
 
 *To assign an authenticated domain to a subuser:*
 

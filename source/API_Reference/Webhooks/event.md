@@ -42,7 +42,7 @@ The Event Webhook will not follow redirects. Please make sure to use the correct
 {% endwarning %}
 
 {% warning %}
-If you wish to receive encrypted posts, we require that your callback URL support TLS 1.2.
+If you wish to receive encrypted posts, we require that your callback URL support TLS 1.2. Self-signed or expired certificates will not be accepted.
 {% endwarning %}
 
 {% anchor h2 %}
