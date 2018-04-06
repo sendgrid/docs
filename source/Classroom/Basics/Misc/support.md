@@ -9,6 +9,7 @@ layout: page
 navigation:
   show: true
 ---
+<iframe src="https://player.vimeo.com/video/263354373" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 <div class="row">
   <div class="col-md-4"></div>
@@ -17,8 +18,6 @@ navigation:
   </div>
   <div class="col-md-4"></div>
 </div>
-
-<iframe src="https://player.vimeo.com/video/263354373" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 You can contact SendGrid support from the [SendGrid Support Portal](https://support.sendgrid.com). Click **Login & Contact Support**, and then **Contact Support** to see your support contact options. Paying SendGrid customers have the option to contact support via phone, chat, or by submitting a ticket using our web form. All SendGrid customers have the option to submit a ticket using our web form.
 
