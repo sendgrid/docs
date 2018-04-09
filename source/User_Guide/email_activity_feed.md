@@ -96,10 +96,6 @@ The Email Activity feed allows you to view specific information about messages s
     <td>Spam Reports</td>
     <td>Whenever a recipient marks your email as spam and their mail server tells us about it.</td>
   </tr>
-  <tr>
-    <td>Parse</td>
-    <td>Triggered if you're using the Inbound Parse Webhook.</td>
-  </tr>
 </table>
 
 {% anchor H2 %}
