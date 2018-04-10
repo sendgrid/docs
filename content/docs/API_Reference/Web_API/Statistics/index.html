@@ -1,0 +1,148 @@
+---
+layout: page
+weight: 0
+title: General Statistics
+navigation:
+  show: true
+---
+
+{% warning %}
+This endpoint is being deprecated by the addition of the [v3 Global Statistics API]({{root_url}}/API_Reference/Web_API_v3/Stats/global.html).
+{% endwarning %}
+
+{% anchor h2 %}
+Retrieve Statistics
+{% endanchor %}
+
+{% info %}
+You can specify either the days parameter or the start_date and end_date parameters. If provided with no parameters, the current day's statistics are returned.
+{% endinfo %}
+
+{% anchor h2 %}
+Retrieve Statistics
+{% endanchor %}
+
+{% parameters activate %}
+  {% parameter days false 'Must be an integer greater than 0 and less than 1096' 'Number of days in the past to include statistics (Includes today)' %}
+  {% parameter start_date false 'Date must be in YYYY-MM-DD format and be before the end_date parameter' 'The start date to look up statistics' %}
+  {% parameter end_date false 'Date must be in YYYY-MM-DD format and be after the start_date parameter' 'The end date to look up statistics' %}
+  {% parameter aggregate false '0 or 1' 'This is used to indicate you are interested in all-time totals' %}
+  {% parameter category false 'Must be an existing category, or an array of existing categories' 'The category for which to retrieve detailed stats' %}
+{% endparameters %}
+
+{% apiexample activate POST https://api.sendgrid.com/api/stats.get api_user=your_sendgrid_username&api_key=your_sendgrid_password&days=2 %}
+  {% response json %}
+[
+   {
+      "date": "2014-02-26",
+      "delivered": 314,
+      "unsubscribes": 1,
+      "invalid_email": 5,
+      "bounces": 9,
+      "repeat_unsubscribes": 2,
+      "unique_clicks": 65,
+      "blocked": 3,
+      "spam_drop": 5,
+      "repeat_bounces": 8,
+      "repeat_spamreports": 9,
+      "requests": 350,
+      "spamreports": 1,
+      "clicks": 78,
+      "opens": 80,
+      "unique_opens": 70
+   },
+   {
+      "date": "2014-02-27",
+      "delivered": 271,
+      "unsubscribes": 8,
+      "invalid_email": 2,
+      "bounces": 8,
+      "repeat_unsubscribes": 1,
+      "unique_clicks": 82,
+      "blocked": 8,
+      "spam_drop": 4,
+      "repeat_bounces": 5,
+      "repeat_spamreports": 9,
+      "requests": 308,
+      "spamreports": 0,
+      "clicks": 103,
+      "opens": 90,
+      "unique_opens": 83
+   }
+]
+  {% endresponse %}
+  {% response xml %}
+<stats>
+  <day>
+      <date>2014-02-26</date>
+      <delivered>314</delivered>
+      <unsubscribes>1</unsubscribes>
+      <invalid_email>5</invalid_email>
+      <bounces>9</bounces>
+      <repeat_unsubscribes>2</repeat_unsubscribes>
+      <unique_clicks>65</unique_clicks>
+      <blocked>3</blocked>
+      <spam_drop>5</spam_drop>
+      <repeat_bounces>8</repeat_bounces>
+      <repeat_spamreports>9</repeat_spamreports>
+      <requests>350</requests>
+      <spamreports>1</spamreports>
+      <clicks>78</clicks>
+      <opens>80</opens>
+      <unique_opens>70</unique_opens>
+   </day>
+   <day>
+      <date>2014-02-27</date>
+      <delivered>271</delivered>
+      <unsubscribes>8</unsubscribes>
+      <invalid_email>2</invalid_email>
+      <bounces>8</bounces>
+      <repeat_unsubscribes>1</repeat_unsubscribes>
+      <unique_clicks>82</unique_clicks>
+      <blocked>8</blocked>
+      <spam_drop>4</spam_drop>
+      <repeat_bounces>5</repeat_bounces>
+      <repeat_spamreports>9</repeat_spamreports>
+      <requests>308</requests>
+      <spamreports>0</spamreports>
+      <clicks>103</clicks>
+      <opens>90</opens>
+      <unique_opens>83</unique_opens>
+   </day>
+</stats>
+  {% endresponse %}
+{% endapiexample %}
+
+{% info %}
+To better understand the terms used in the response, please refer to the [Statistics]({{root_url}}/User_Guide/Statistics/index.html) documentation.
+{% endinfo %}
+
+<hr />
+
+{% anchor h2 %}
+Category List
+{% endanchor %}
+<h3>Retrieve a list of all the categories used in your account.</h3>
+
+{% apiexample list POST https://api.sendgrid.com/api/stats.get api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=true %}
+  {% response json %}
+[
+  {
+    "category": "categoryA"
+  },
+  {
+    "category": "categoryB"
+  },
+  {
+    "category": "categoryC"
+  }
+]
+  {% endresponse %}
+  {% response xml %}
+<categories>
+   <category>categoryA</category>
+   <category>categoryB</category>
+   <category>categoryC</category>
+</categories>
+  {% endresponse %}
+{% endapiexample %}

@@ -1,0 +1,122 @@
+.modal-title {
+  float: left;
+  margin-top: 7px;
+  font-size: 20px;
+  line-height: 30px;
+  color: $slate;
+  text-transform: none;
+}
+
+.sg-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $modal-z-index;
+  display: none;
+  word-break: normal;
+  background: $modal-bg;
+  opacity: 0;
+  transition: opacity 0.35s;
+
+  &.show,
+  &.is-visible {
+    display: block;
+    opacity: 1;
+  }
+}
+
+.modal-open {
+  overflow: scroll;
+}
+
+.sg-modal-content {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+
+  &.conf-alert {
+    margin-left: -165px;
+  }
+}
+
+.side-modal {
+  position: fixed;
+  top: 0;
+  right: -720px;
+  z-index: 999;
+  width: 720px;
+  height: 100%;
+  padding: 45px 105px 90px;
+  overflow: scroll;
+  background-color: $white;
+  box-shadow: $side-modal-shadow;
+  transition: right 0.5s;
+
+  &.is-visible {
+    right: 0;
+  }
+
+  h2,
+  p,
+  fieldset,
+  .alert,
+  .input-text-wrap,
+  .input-select-wrap {
+    margin-bottom: 30px;
+  }
+
+  fieldset:last-of-type {
+    margin-bottom: 45px;
+  }
+
+  fieldset *:last-child {
+    margin-bottom: 0;
+  }
+
+  .alert {
+    margin: 0 -105px;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .tab-wrapper.is-ab-testing {
+    padding-bottom: 1px;
+    margin: 0 -105px 20px;
+    border-top: 1px solid $slate-10;
+  }
+
+  .btn-list {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.modal-mask,
+.side-modal-mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 998;
+  pointer-events: none;
+  background: $modal-bg;
+  opacity: 0;
+  transition: opacity 0.5s;
+
+  &.is-visible {
+    pointer-events: all;
+    opacity: 1;
+  }
+}
+
+body {
+  &.modal-open {
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+}

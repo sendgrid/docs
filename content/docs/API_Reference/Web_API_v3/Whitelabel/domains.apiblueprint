@@ -1,0 +1,621 @@
+---
+layout: page
+weight: 0
+title: Domains
+seo:
+  title: Whitelabel Domains
+  description: Whitelabel domains with SendGrid over the v3 API
+  keywords: domains whitelabel, whitelabel domains
+navigation:
+  show: true
+---
+
+FORMAT: 1A
+
+# Group Domain Whitelabels
+
+A domain whitelabel consists of a subdomain and domain that will be used to set the appropriate DKIM, SPF, and Return-Path.
+There is an option to allow SendGrid to manage security or the customers may manage their own DNS records. For customers using the manual
+security option, they will need to create the appropriate MX, DKIM, and SPF records with their hosting provider. With automatic security,
+the customer will just need to create a few CNAMEs to SendGrid, and SendGrid will manage the MX, DKIM and SPF records.
+
+
+## Domain Collection [/whitelabel/domains?exclude_subusers={exclude_subusers}&limit={limit}&offset={offset}&username={username}&domain={domain}]
++ Parameters
+    + limit (optional, number, 50) ... Number of domains to return. Defaults to 50.
+    + offset (optional, number, 0) ... Paging offset. Defaults to 0.
+    + exclude_subusers (optional, boolean, true) ... Exclude subuser domains from the results. Defaults to "false".
+    + username (optional, string, `john`) ... Search for domain whitelabels belonging to the given user.
+    + domain (optional, string, `example.com`) ... Search for domain whitelabels that match the given domain.
+
+### List all Domains [GET]
+
++ Response 200 (application/json)
+
+  + Body
+        [{
+            "id": 1,
+            "domain": "example.com",
+            "subdomain": "mail",
+            "username": "john@example.com",
+            "user_id": 7,
+            "ips": ["192.168.1.1", "192.168.1.2"],
+            "custom_spf": true,
+            "default": true,
+            "legacy": false,
+            "automatic_security": true,
+            "valid": true,
+            "dns": {
+                "mail_cname": {
+                    "host": "mail.example.com",
+                    "type": "cname",
+                    "data": "u7.wl.sendgrid.net",
+                    "valid": true
+                },
+                "spf": {
+                    "host": "example.com",
+                    "type": "txt",
+                    "data": "v=spf1 include:u7.wl.sendgrid.net -all",
+                    "valid": true
+                },
+                "dkim1": {
+                    "host": "s1._domainkey.example.com",
+                    "type": "cname",
+                    "data": "s1._domainkey.u7.wl.sendgrid.net",
+                    "valid": true
+                },
+                "dkim2": {
+                    "host": "s2._domainkey.example.com",
+                    "type": "cname",
+                    "data": "s2._domainkey.u7.wl.sendgrid.net",
+                    "valid": true
+                }
+            }
+        }, {
+            "id": 2,
+            "domain": "example2.com",
+            "subdomain": "news",
+            "username": "jane@example2.com",
+            "user_id": 8,
+            "ips": [],
+            "custom_spf": false,
+            "default": true,
+            "legacy": false,
+            "automatic_security": true,
+            "valid": false,
+            "dns": {
+                "mail_server": {
+                    "host": "news.example2.com",
+                    "type": "mx",
+                    "data": "sendgrid.net",
+                    "valid": false
+                },
+                "subdomain_spf": {
+                    "host": "news.example2.com",
+                    "type": "txt",
+                    "data": "v=spf1 include:sendgrid.net ~all",
+                    "valid": false
+                },
+                "domain_spf": {
+                    "host": "example2.com",
+                    "type": "txt",
+                    "data": "v=spf1 include:news.example2.com -all",
+                    "valid": false
+                },
+                "dkim": {
+                    "host": "s1._domainkey.example2.com",
+                    "type": "txt",
+                    "data": "k=rsa; t=s; p=publicKey",
+                    "valid": false
+                }
+            }
+        }]
+
+## Domain Collection [/whitelabel/domains]
+
+### Create a Domain [POST]
+
++ Attributes (object)
+    + domain example.com (required, string) - Domain being whitelabeled.
+    + subdomain news (required, string) - Subdomain being whitelabeled.
+    + automatic_security false (optional, boolean) - Whether to allow SendGrid to manage your SPF records, DKIM keys, and DKIM key rotation.
+    + ips ["192.168.1.1"] (optional, array[string]) - Specify IPs to be used in your SPF record.
+    + custom_spf true (optional, boolean) - Specify whether to use a custom spf or allow SendGrid to manage your SPF. This option is only available to domain whitelabels setup for manual security.
+    + default false (optional, boolean) - Whether to use this whitelabel as the fallback if no domain whitelabels match the sender's domain.
+
+{% info %}
+You may create up to a maximum of 1500 domain whitelabels.
+{% endinfo %}
+
++ Request (application/json)
+
+  + Body
+        {
+            "domain": "example.com",
+            "subdomain": "news",
+            "username": "john@example.com",
+            "ips": ["192.168.1.1", "192.168.1.2"],
+            "custom_spf": true,
+            "default": true,
+            "automatic_security": false
+        }
+
++ Response 201 (application/json)
+
+  + Body
+        {
+            "id": 1,
+            "domain": "example.com",
+            "subdomain": "mail",
+            "username": "john@example.com",
+            "user_id": 7,
+            "ips": ["192.168.1.1", "192.168.1.2"],
+            "custom_spf": true,
+            "default": true,
+            "legacy": false,
+            "automatic_security": true,
+            "valid": true,
+            "dns": {
+                "mail_cname": {
+                    "host": "mail.example.com",
+                    "type": "cname",
+                    "data": "u7.wl.sendgrid.net",
+                    "valid": true
+                },
+                "spf": {
+                    "host": "example.com",
+                    "type": "txt",
+                    "data": "v=spf1 include:u7.wl.sendgrid.net -all",
+                    "valid": true
+                },
+                "dkim1": {
+                    "host": "s1._domainkey.example.com",
+                    "type": "cname",
+                    "data": "s1._domainkey.u7.wl.sendgrid.net",
+                    "valid": true
+                },
+                "dkim2": {
+                    "host": "s2._domainkey.example.com",
+                    "type": "cname",
+                    "data": "s2._domainkey.u7.wl.sendgrid.net",
+                    "valid": true
+                }
+            }
+        }
+
+## Domain [/whitelabel/domains/{id}]
++ Parameters
+  + id (required, number, `1234`) ... The ID of the domain you're whitelabeling
+
+### Retrieve a Domain [GET]
+
++ Response 200 (application/json)
+
+  + Body
+        {
+            "id": 1,
+            "domain": "example.com",
+            "subdomain": "mail",
+            "username": "john@example.com",
+            "user_id": 7,
+            "ips": ["192.168.1.1", "192.168.1.2"],
+            "custom_spf": true,
+            "default": true,
+            "legacy": false,
+            "automatic_security": true,
+            "valid": true,
+            "dns": {
+                "mail_cname": {
+                    "host": "mail.example.com",
+                    "type": "cname",
+                    "data": "u7.wl.sendgrid.net",
+                    "valid": true
+                },
+                "spf": {
+                    "host": "example.com",
+                    "type": "txt",
+                    "data": "v=spf1 include:u7.wl.sendgrid.net -all",
+                    "valid": true
+                },
+                "dkim1": {
+                    "host": "s1._domainkey.example.com",
+                    "type": "cname",
+                    "data": "s1._domainkey.u7.wl.sendgrid.net",
+                    "valid": true
+                },
+                "dkim2": {
+                    "host": "s2._domainkey.example.com",
+                    "type": "cname",
+                    "data": "s2._domainkey.u7.wl.sendgrid.net",
+                    "valid": true
+                }
+            }
+        }
+
+### Update a Domain [PATCH]
+
++ Attributes
+    + default false (optional, boolean) - Indicates whether this domain whitelabel should be considered the default. Defaults to false.
+    + custom_spf false (optional, boolean) - Indicates whether to generate a custom SPF record for manual security. Defaults to false.
+
++ Request (application/json)
+
+  + Body
+        {
+            "default": false,
+            "custom_spf": true
+        }
+
++ Response 200 (application/json)
+
+  + Body
+        {
+            "id": 1,
+            "domain": "example.com",
+            "subdomain": "mail",
+            "username": "john@example.com",
+            "user_id": 7,
+            "ips": [],
+            "custom_spf": true,
+            "default": false,
+            "legacy": false,
+            "automatic_security": false,
+            "valid": false,
+            "dns": {
+                "mail_server": {
+                    "host": "mail.example.com",
+                    "type": "mx",
+                    "data": "sendgrid.net",
+                    "valid": false
+                },
+                "subdomain_spf": {
+                    "host": "mail.example.com",
+                    "type": "txt",
+                    "data": "v=spf1 ip4:192.168.1.1 -all",
+                    "valid": false
+                },
+                "domain_spf": {
+                    "host": "example.com",
+                    "type": "txt",
+                    "data": "v=spf1 include:mail.example.com -all",
+                    "valid": false
+                },
+                "dkim": {
+                    "host": "s1._domainkey.example.com",
+                    "type": "txt",
+                    "data": "k=rsa; t=s; p=publicKey",
+                    "valid": false
+                }
+            }
+        }
+
+### Delete a Domain [DELETE]
+
++ Response 204
+
+## Default Domain [/whitelabel/domains/default?domain={domain}]
+
+### Default Domain [GET]
+
++ Parameters
+    + domain (optional, string, `em.example.com`) ... The sending domain against which to compare the domain whitelabel.
+
++ Response 200 (application/json)
+
+  + Body
+        {
+            "id": 1,
+            "domain": "example.com",
+            "subdomain": "mail",
+            "username": "john@example.com",
+            "user_id": 7,
+            "ips": ["192.168.1.1"],
+            "custom_spf": true,
+            "default": false,
+            "legacy": false,
+            "automatic_security": false,
+            "valid": false,
+            "dns": {
+                "mail_server": {
+                    "host": "mail.example.com",
+                    "type": "mx",
+                    "data": "sendgrid.net",
+                    "valid": false
+                },
+                "subdomain_spf": {
+                    "host": "mail.example.com",
+                    "type": "txt",
+                    "data": "v=spf1 ip4:192.168.1.1 -all",
+                    "valid": false
+                },
+                "domain_spf": {
+                    "host": "example.com",
+                    "type": "txt",
+                    "data": "v=spf1 include:mail.example.com -all",
+                    "valid": false
+                },
+                "dkim": {
+                    "host": "s1._domainkey.example.com",
+                    "type": "txt",
+                    "data": "k=rsa; t=s; p=publicKey",
+                    "valid": false
+                }
+            }
+        }
+
+## Domain/IP Collection [/whitelabel/domains/{id}/ips]
+
++ Parameters
+  + id (required, number, `1234`) ... ID of the domain to which you are adding an IP.
+
+
+### Add an IP to a Domain [POST]
+
++ Attributes
+    + ip 192.168.0.1 (required, string) - IP to associate with the domain. Used for manually specifying IPs for custom SPF.
+
++ Request (application/json)
+
+  + Body
+        {
+            "ip": "192.168.0.1"
+        }
+
++ Response 200 (application/json)
+
+  + Body
+        {
+            "id": 1,
+            "domain": "example.com",
+            "subdomain": "mail",
+            "username": "john@example.com",
+            "user_id": 7,
+            "ips": [],
+            "custom_spf": true,
+            "default": false,
+            "legacy": false,
+            "automatic_security": false,
+            "valid": false,
+            "dns": {
+                "mail_server": {
+                    "host": "mail.example.com",
+                    "type": "mx",
+                    "data": "sendgrid.net",
+                    "valid": false
+                },
+                "subdomain_spf": {
+                    "host": "mail.example.com",
+                    "type": "txt",
+                    "data": "v=spf1 ip4:192.168.1.1 ip4:192.168.0.1 -all",
+                    "valid": false
+                },
+                "domain_spf": {
+                    "host": "example.com",
+                    "type": "txt",
+                    "data": "v=spf1 include:mail.example.com -all",
+                    "valid": false
+                },
+                "dkim": {
+                    "host": "s1._domainkey.example.com",
+                    "type": "txt",
+                    "data": "k=rsa; t=s; p=publicKey",
+                    "valid": false
+                }
+            }
+        }
+
+## Domain/IP [/whitelabel/domains/{id}/ips/{ip}]
+
++ Parameters
+    + id (required, int, `1234`) ... ID of the domain whitelabel to delete the IP from.
+    + ip (required, string, `127.0.0.1`) ... IP to remove from the domain whitelabel.
+
+### Remove an IP from a Domain [DELETE]
+
++ Response 200 (application/json)
+
+  + Body
+        {
+            "id": 1,
+            "domain": "example.com",
+            "subdomain": "mail",
+            "username": "mail@example.com",
+            "user_id": 7,
+            "ips": [],
+            "custom_spf": true,
+            "default": false,
+            "legacy": false,
+            "automatic_security": false,
+            "valid": false,
+            "dns": {
+                "mail_server": {
+                    "host": "mail.example.com",
+                    "type": "mx",
+                    "data": "sendgrid.net",
+                    "valid": false
+                },
+                "subdomain_spf": {
+                    "host": "mail.example.com",
+                    "type": "txt",
+                    "data": "v=spf1 ip4:192.168.1.1 ip4:192.168.0.1 -all",
+                    "valid": false
+                },
+                "domain_spf": {
+                    "host": "example.com",
+                    "type": "txt",
+                    "data": "v=spf1 include:mail.example.com -all",
+                    "valid": false
+                },
+                "dkim": {
+                    "host": "s1._domainkey.example.com",
+                    "type": "txt",
+                    "data": "k=rsa; t=s; p=publicKey",
+                    "valid": false
+                }
+            }
+        }
+
+## Validate Domain [/whitelabel/domains/{id}/validate]
+
++ Parameters
+  + id (required, int, `1234`) ... ID of the domain whitelabel to validate.
+
+### Validate Domain [POST]
+
+
++ Response 200 (application/json)
+
+  + Body
+        {
+          "id": 1,
+          "valid": true,
+          "validation_results": {
+            "mail_cname": {
+                "valid": false,
+                "reason": "Expected your MX record to be \"mx.sendgrid.net\" but found \"example.com\"."
+            },
+            "dkim1": {
+                "valid": true,
+                "reason": null
+            },
+            "dkim2": {
+                "valid": true,
+                "reason": null
+            },
+            "spf": {
+                "valid": true,
+                "reason": null
+            }
+          }
+        }
+
++ Response 500 (application/json)
+
+  + Body
+        {
+            "errors": [{"message": "internal error getting TXT"}]
+        }
+
+## Associated Domain [/whitelabel/domains/subuser?username={username}]
+
+Domain Whitelabels can be associated with subusers via parent accounts. This functionality allows
+subusers to send mail off their parent's Whitelabels. To associate a Whitelabel, the parent account
+must first create a Whitelabel and validate it. Then the parent may associate the Whitelabel in
+subuser management.
+
+
++ Parameters
+    + username (required, string) ... Username of the subuser to find associated whitelabels for.
+
+
+### List Associated Domain [GET]
+
++ Response 200 (application/json)
+
+  + Body
+        {
+            "id": 1,
+            "domain": "example.com",
+            "subdomain": "mail",
+            "username": "mail@example.com",
+            "user_id": 7,
+            "ips": [],
+            "custom_spf": true,
+            "default": false,
+            "legacy": false,
+            "automatic_security": false,
+            "valid": false,
+            "dns": {
+                "mail_server": {
+                    "host": "mail.example.com",
+                    "type": "mx",
+                    "data": "sendgrid.net",
+                    "valid": false
+                },
+                "subdomain_spf": {
+                    "host": "mail.example.com",
+                    "type": "txt",
+                    "data": "v=spf1 ip4:192.168.1.1 ip4:192.168.0.1 -all",
+                    "valid": false
+                },
+                "domain_spf": {
+                    "host": "example.com",
+                    "type": "txt",
+                    "data": "v=spf1 include:mail.example.com -all",
+                    "valid": false
+                },
+                "dkim": {
+                    "host": "s1._domainkey.example.com",
+                    "type": "txt",
+                    "data": "k=rsa; t=s; p=publicKey",
+                    "valid": false
+                }
+            }
+        }
+
+### Disassociate Domain [DELETE]
+
++ Response 204
+
+## Associate Domain [/whitelabel/domains/{domain_id}/subuser/]
+
++ Parameters
+    + domain_id (required, integer, `1234`) ... Id of the domain whitelabel to associate with the subuser.
+
+
+
+### Associate Domain [POST]
+
++ Attributes
+    + username janeexampexample@example.com (required, string) - Username to associate with the domain whitelabel.
+
+
++ Request
+
+  + Body
+        {
+            "username": "janeexampexample@example.com"
+        }
+
++ Response 201 (application/json)
+
+  + Body
+        {
+            "id": 1,
+            "domain": "example.com",
+            "subdomain": "mail",
+            "username": "mail@example.com",
+            "user_id": 7,
+            "ips": [],
+            "custom_spf": true,
+            "default": false,
+            "legacy": false,
+            "automatic_security": false,
+            "valid": false,
+            "dns": {
+                "mail_server": {
+                    "host": "mail.example.com",
+                    "type": "mx",
+                    "data": "sendgrid.net",
+                    "valid": false
+                },
+                "subdomain_spf": {
+                    "host": "mail.example.com",
+                    "type": "txt",
+                    "data": "v=spf1 ip4:192.168.1.1 ip4:192.168.0.1 -all",
+                    "valid": false
+                },
+                "domain_spf": {
+                    "host": "example.com",
+                    "type": "txt",
+                    "data": "v=spf1 include:mail.example.com -all",
+                    "valid": false
+                },
+                "dkim": {
+                    "host": "s1._domainkey.example.com",
+                    "type": "txt",
+                    "data": "k=rsa; t=s; p=publicKey",
+                    "valid": false
+                }
+            }
+        }

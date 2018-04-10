@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a,
+a:hover,
+a:active,
+a:focus,
+button,
+button:hover,
+button:active,
+button:focus {
+  outline: none;
+}
+
+a,
+.link {
+  color: $sg-blue-80;
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &:hover {
+    color: $sg-blue;
+  }
+}
+
+.main,
+.content-main {
+  margin: 60px 0 120px;
+}
+
+.content-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .breadcrumb {
+    flex-grow: 1;
+    width: 100%;
+  }
+}
+
+.content-block {
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

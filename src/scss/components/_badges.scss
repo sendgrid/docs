@@ -1,0 +1,122 @@
+.badge {
+  display: inline-block;
+  padding: 3px 6px;
+  margin-bottom: 3px;
+  font-size: 10px;
+  line-height: 1;
+  letter-spacing: 1px;
+  color: $white;
+  text-transform: uppercase;
+  vertical-align: middle;
+  background-color: $slate-40;
+  border-radius: $border-radius;
+
+  &.is-right {
+    margin-left: 6px;
+  }
+
+  &.is-left {
+    margin-right: 6px;
+  }
+
+  &.is-sender {
+    width: 60px;
+    margin-right: 6px;
+    text-align: center;
+  }
+
+  &.badge-category {
+    margin-right: 3px;
+    color: $slate-60;
+    cursor: pointer;
+    background: $white;
+    border: 1px solid $slate-40;
+    transition: color 0.3s, background-color 0.3s;
+
+    &:hover,
+    &.is-hovered {
+      color: $white;
+      background-color: $slate-40;
+    }
+  }
+
+  &.sg-blue {
+    background-color: $sg-blue;
+  }
+
+  &.slate {
+    background-color: $slate;
+  }
+
+  &.ron-burgundy {
+    background-color: $ron-burgundy;
+  }
+
+  &.burnt-orange {
+    background-color: $burnt-orange;
+  }
+
+  &.carrot {
+    background-color: $carrot;
+  }
+
+  &.mango {
+    background-color: $mango;
+  }
+
+  &.mantis {
+    background-color: $mantis;
+  }
+
+  &.spruce {
+    background-color: $spruce;
+  }
+
+  &.grass-stain {
+    background-color: $grass-stain;
+  }
+
+  &.lime {
+    background-color: $lime;
+  }
+
+  &.cobalt {
+    background-color: $cobalt;
+  }
+
+  &.bluebird {
+    background-color: $bluebird;
+  }
+
+  &.seafoam {
+    background-color: $seafoam;
+  }
+
+  &.caribbean {
+    background-color: $caribbean;
+  }
+
+  &.crown {
+    background-color: $crown;
+  }
+
+  &.screample {
+    background-color: $screample;
+  }
+
+  &.sangria {
+    background-color: $sangria;
+  }
+
+  &.lavender {
+    background-color: $lavender;
+  }
+
+  &.wild-strawberry {
+    background-color: $wild-strawberry;
+  }
+
+  &.steel {
+    background-color: $steel;
+  }
+}

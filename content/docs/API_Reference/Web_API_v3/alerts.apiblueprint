@@ -1,0 +1,148 @@
+---
+layout: page
+title: Alerts API
+weight: 100
+navigation:
+  show: true
+---
+
+Alerts allow you to specify an email address to receive notifications regarding your email usage or statistics.
+<br>
+<ul>
+  <li>Usage alerts allow you to set the threshold at which an alert will be sent. For example, if you want to be notified when you've used 90% of your current package's allotted emails, you would set the "percentage" parameter to 90.</li>
+  <li>Stats notifications allow you to set how frequently you would like to receive email statistics reports. For example, if you want to receive your stats notifications every day, simply set the "frequency" parameter to "daily". Stats notifications include data such as how many emails you sent each day, in addition to other email events such as bounces, drops, unsubscribes, etc.</li>
+</ul>
+<br>
+For more information about alerts, please visit our <a href="{{root_url}}/User_Guide/Settings/alerts.html">User Guide</a>.
+
+
+FORMAT: 1A
+
+## Alerts Collection [/alerts]
+
+### Get All Alerts [GET]
+
+Retrieve all alerts.
+
++ Response 200 (application/json)
+    + Body
+
+            [
+                {
+                    "created_at": 1451498784,
+                    "email_to": "test@example.com",
+                    "id": 46,
+                    "percentage": 90,
+                    "type": "usage_limit",
+                    "updated_at": 1451498784
+                },
+                {
+                    "created_at": 1451498812,
+                    "email_to": "test@example.com",
+                    "frequency": "monthly",
+                    "id": 47,
+                    "type": "stats_notification",
+                    "updated_at": 1451498812
+                },
+                {
+                    "created_at": 1451520930,
+                    "email_to": "test@example.com",
+                    "frequency": "daily",
+                    "id": 48,
+                    "type": "stats_notification",
+                    "updated_at": 1451520930
+                }
+            ]
+
+### Create a New Alert [POST]
+
+Create a new alert. You can create the same alert multiple times, but with different email addresses specified in the "email_to" parameter. This is useful if you have multiple users on the same account who would like to receive the same alerts.
+<br>
+<br>
+
++ Attributes (object)
+    + type usage_limit (required, string) - The type of alert you want to create. Can be either usage_limit or stats_notification. A usage_limit alert allows you to set the threshold at which a usage alert will be sent. A stats_notification alert allows you to set how frequently you would like to receive email statistics reports.
+    + email_to test@example.com (required, string) - The email address the alert will be sent to.
+    + percentage 90 (optional, number) - Required for usage_limit. When this usage threshold is reached, the alert will be sent.
+    + frequency daily (optional, string) - Required for stats_notification. How frequently the alert will be sent.
+
+
++ Request (application/json)
+
+    + Body
+
+            {
+                "type": "stats_notification",
+                "email_to": "test@example.com",
+                "frequency": "daily"
+            }
+
++ Response 201 (application/json)
+
+    + Body
+
+            {
+                "created_at": 1451520930,
+                "email_to": "test@example.com",
+                "frequency": "daily",
+                "id": 48,
+                "type": "stats_notification",
+                "updated_at": 1451520930
+            }
+
+## Alerts Collection [/alerts/{alert_id}]
+
+### Get an Alert [GET]
+
+Retrieve a specific alert.
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "created_at": 1451520930,
+                "email_to": "test@example.com",
+                "frequency": "daily",
+                "id": 48,
+                "type": "stats_notification",
+                "updated_at": 1451520930
+            }
+
+### Delete an Alert [DELETE]
+
+Delete an alert.
+
++ Response 204
+
+### Update an Alert [PATCH]
+
+Update an alert.
+<br>
+<br>
+
++ Attributes
+    + email_to test@example.com (optional, string) - The new email address you want your alert to be sent to.
+    + frequency monthly (optional, string) - The new frequency at which to send the stats_notification alert.
+    + percentage 90 (optional, number) - The new percentage threshold at which the usage_limit alert will be sent.
+
++ Request (application/json)
+
+    + Body
+
+            {
+                "email_to": "test@example.com"
+            }
+
++ Response 200
+
+    + Body
+
+            {
+                "created_at": 1451520930,
+                "email_to": "test@example.com",
+                "frequency": "daily",
+                "id": 48,
+                "type": "stats_notification",
+                "updated_at": 1451522691
+            }

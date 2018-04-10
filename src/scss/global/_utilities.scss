@@ -1,0 +1,63 @@
+// sass-lint:disable no-color-keywords, no-important
+// linting disabled due to custom color names matching predefined colors
+
+.hidden {
+  display: none !important;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+// color map for generating color and bg-color classes
+$colors: (
+  sg-blue:            $sg-blue,
+  sg-blue-80:         $sg-blue-80,
+  sg-blue-60:         $sg-blue-60,
+  sg-blue-40:         $sg-blue-40,
+  sg-blue-20:         $sg-blue-20,
+  sg-blue-10:         $sg-blue-10,
+  sg-blue-05:         $sg-blue-05,
+  sg-blue-02:         $sg-blue-02,
+  slate:              $slate,
+  slate-80:           $slate-80,
+  slate-60:           $slate-60,
+  slate-40:           $slate-40,
+  slate-20:           $slate-20,
+  slate-10:           $slate-10,
+  slate-05:           $slate-05,
+  slate-02:           $slate-02,
+  ron-burgundy:       $ron-burgundy,
+  burnt-orange:       $burnt-orange,
+  carrot:             $carrot,
+  mango:              $mango,
+  mantis:             $mantis,
+  spruce:             $spruce,
+  grass-stain:        $grass-stain,
+  lime:               $lime,
+  cobalt:             $cobalt,
+  bluebird:           $bluebird,
+  seafoam:            $seafoam,
+  caribbean:          $caribbean,
+  crown:              $crown,
+  screample:          $screample,
+  sangria:            $sangria,
+  lavender:           $lavender,
+  wild-strawberry:    $wild-strawberry,
+  steel:              $steel,
+  logo-accent-light:  $logo-accent-light,
+  logo-accent-medium: $logo-accent-medium,
+  logo-accent-dark:   $logo-accent-dark
+);
+
+@each $name, $value in $colors {
+  .color-#{$name} {
+    color: $value;
+  }
+}
+
+@each $name, $value in $colors {
+  .bg-color-#{$name} {
+    background-color: $value;
+  }
+}

@@ -1,0 +1,98 @@
+---
+layout: page
+weight: 100
+title: Bounces API
+seo:
+  description: Manage your bounce list
+  title: Bounce API
+navigation:
+  show: true
+---
+FORMAT: 1A
+
+# Bounces
+
+## Bounces Collection [/suppression/bounces?start_time={start_time}&end_time={end_time}]
+
++ Parameters
+
+    + start_time (optional, number, `1443651141`) ... Refers start of the time range in unix timestamp when a bounce was created (inclusive).
+    + end_time (optional, number, `1443651154`) ... Refers end of the time range in unix timestamp when a bounce was created (inclusive).
+    + limit (optional, number Some integer <= 500) ... Optional field to limit the number of results returned. If not used, then 500 is the default limit.
+    + offset (optional, number Some integer) ... Optional beginning point in the list to retrieve from.
+
+### List all bounces [GET]
+
++ Response 200 (application/json)
+
+    + Body
+
+            [
+                {
+                    "created": 1443651125,
+                    "email": "testemail1@test.com",
+                    "reason": "550 5.1.1 The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces. Learn more at  https://support.google.com/mail/answer/6596 o186si2389584ioe.63 - gsmtp ",
+                    "status": "5.1.1"
+                },
+                {
+                    "created": 1433800303,
+                    "email": "testemail2@testing.com",
+                    "reason": "550 5.1.1 <testemail2@testing.com>: Recipient address rejected: User unknown in virtual alias table ",
+                    "status": "5.1.1"
+                }
+            ]
+
+## Bounces Collection [/suppression/bounces]
+
+There are two bounce delete options:
+1) deleting all bounces by specifying "delete_all" to true in the request body, or
+2) deleting some bounces by specifying "emails" and an array of emails in the request body.
+
+### Delete bounces [DELETE]
+
++ Request (application/json)
+
+    + Body
+
+            {
+                "delete_all": true
+            }
+
++ Response 204
+
++ Request (application/json)
+
+    + Body
+
+            {
+                "emails": [
+                    "email1@test.com",
+                    "email2@test.com"
+                ]
+            }
+
++ Response 204
+
+## Bounces Item [/suppression/bounces/{email}]
++ Parameters
+
+    + email ('required', string, `bounce1@test.com`) ... Email address of bounce entry to retrieve
+
+### Get a bounce [GET]
+
++ Response 200 (application/json)
+
+    + Body
+
+            [
+                {
+                    "created": 1443651125,
+                    "email": "bounce1@test.com",
+                    "reason": "550 5.1.1 The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces. Learn more at  https://support.google.com/mail/answer/6596 o186si2389584ioe.63 - gsmtp ",
+                    "status": "5.1.1"
+                }
+            ]
+
+### Delete a bounce [DELETE]
+
++ Response 204

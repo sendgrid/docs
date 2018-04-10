@@ -1,0 +1,50 @@
+$grid-container-max: 930px;
+$grid-container-lg-max: 1200px;
+$grid-container-gutter: 6%;
+$grid-columns: 12;
+$grid-gutter: 2%;
+
+.container {
+  max-width: $grid-container-max;
+  padding-right: $grid-container-gutter;
+  padding-left: $grid-container-gutter;
+  margin: 0 auto;
+}
+
+.container-lg {
+  max-width: $grid-container-lg-max;
+  padding-right: $grid-container-gutter;
+  padding-left: $grid-container-gutter;
+  margin: 0 auto;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat($grid-columns, 1fr);
+  grid-column-gap: $grid-gutter;
+
+  // span the full width of the grid if a column class is not assigned
+  > :not([class*='col-']) {
+    grid-column: span $grid-columns;
+  }
+}
+
+@for $x from 1 through $grid-columns {
+  .col-#{$x} {
+    grid-column: span #{$x};
+
+    @for $y from 1 to $grid-columns {
+      $grid-column-lines: ($grid-columns + 1);
+      $grid-column-start: ($y + 1);
+      $grid-column-end: ($x + $y + 1);
+      $grid-column-total: ($x + $y);
+
+      @if $grid-column-total <= $grid-columns {
+        &.col-offset-#{$y} {
+          grid-column-start: $grid-column-start;
+          grid-column-end: $grid-column-end;
+        }
+      }
+    }
+  }
+}

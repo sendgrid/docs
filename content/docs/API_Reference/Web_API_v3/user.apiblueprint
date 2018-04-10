@@ -1,0 +1,187 @@
+---
+layout: page
+weight: 100
+title: Users API
+seo:
+  description: View and Manage your user profile via the SendGrid v3 API
+  title: Users API
+navigation:
+  show: true
+---
+FORMAT: 1A
+
+## User Profile [/user/profile]
+
+### GET User Profile [GET]
+Retrieve your current user profile details.
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "address":"814 West Chapman Avenue",
+              "city":"Orange",
+              "company":"SendGrid",
+              "country":"US",
+              "first_name":"Test",
+              "last_name":"User",
+              "phone":"555-555-5555",
+              "state":"CA",
+              "website":"http://www.sendgrid.com",
+              "zip":"92868"
+            }
+
+### PATCH User Profile [PATCH]
+Update your user profile.
+
++ Request (application/json)
+
+    + Body
+
+            {
+              "city": "Orange"
+            }
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "address":"814 West Chapman Avenue",
+              "city":"Orange",
+              "company":"SendGrid",
+              "country":"US",
+              "first_name":"Test",
+              "last_name":"User",
+              "phone":"555-555-5555",
+              "state":"CA",
+              "website":"http://www.sendgrid.com",
+              "zip":"92868"
+            }
+
+## User Account [/user/account]
+
+### GET User Account [GET]
+Retrieve your user account details.
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "type": "free",
+              "reputation": 99.7
+            }
+
+
+## User Email [/user/email]
+
+### GET User Email [GET]
+Retrieve the email address on file for your account.
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "email": "test@example.com"
+            }
+
+
+### PUT User Email [PUT]
+Update the email address on file for your account.
+
++ Request (application/json)
+
+    + Body
+
+            {
+              "email": "test@example.com"
+            }
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "email": "test@example.com"
+            }
+
+## User Username [/user/username]
+
+### GET User Username [GET]
+Retrieve your account username.
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "username": "test_username",
+              "user_id": 1
+            }
+
+
+### PUT User Username [PUT]
+Update your account username.
+
++ Request (application/json)
+
+    + Body
+
+            {
+              "username": "test_username"
+            }
+
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "username": "test_username"
+            }
+
+
+## User Credits [/user/credits]
+
+### GET User Credits [GET]
+Retrieve the current credit balance for your account.
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "remain": 200,
+              "total": 200,
+              "overage": 0,
+              "used": 0,
+              "last_reset": "2013-01-01",
+              "next_reset": "2013-02-01",
+              "reset_frequency": "monthly"
+            }
+
+## User Password [/user/password]
+
+### PUT User Password [PUT]
+Update the password for your account.
+
++ Request (application/json)
+
+    + Body
+
+            {
+              "new_password": "new_password",
+              "old_password": "old_password"
+            }
+
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+
+            }

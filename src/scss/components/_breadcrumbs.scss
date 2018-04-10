@@ -1,0 +1,13 @@
+.breadcrumb {
+  li {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  li + li::before {
+    padding: 0 6px;
+    color: $steel;
+    content: "/\00a0";
+  }
+}

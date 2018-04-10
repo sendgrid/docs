@@ -1,0 +1,199 @@
+---
+layout: page
+title: Tracking
+weight: 0
+navigation:
+  show: true
+breadcrumbs: true
+seo:
+  title: Tracking Settings API
+  keywords: tracking settings api, Click tracking settings, open tracking settings, unsubscribe tracking settings, google analytics settings
+  description: Manage your SendGrid tracking settings with the SendGrid API.
+---
+
+FORMAT: 1A
+
+# Group Tracking Settings
+
+## Tracking Settings Collection [/tracking_settings?limit={limit}&offset={offset}]
+
++ Parameters
+    + limit (optional, number, `20`) ... Number of settings to return.
+    + offset (optional, number, `1`) ... Paging offset.
+
+### Get Tracking Settings [GET]
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "result":
+                [
+                  {
+                    "name": "open",
+                    "title": "Open Tracking",
+                    "description": "lorem ipsum... .",
+                    "enabled": true
+                  }
+                ]
+            }
+
+## Click Tracking Settings Resource [/tracking_settings/click]
+
+### Get Click Tracking Settings [GET]
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "enabled": true
+            }
+
+### Update Click Tracking Settings [PATCH]
+
++ Request (application/json)
+
+    + Body
+
+            {
+              "enabled": true
+            }
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "enabled": true
+            }
+
+## Google Analytics Settings Resource [/tracking_settings/google_analytics]
+
+### Get Google Analytics Settings [GET]
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "enabled": true,
+              "utm_source":"sendgrid.com",
+              "utm_medium":"email",
+              "utm_term":"",
+              "utm_content":"",
+              "utm_campaign":"website"
+            }
+
+### Update Google Analytics Settings [PATCH]
+
++ Request (application/json)
+
+    + Body
+
+             {
+              "enabled": true,
+              "utm_source":"sendgrid.com",
+              "utm_medium":"email",
+              "utm_term":"",
+              "utm_content":"",
+              "utm_campaign":"website"
+            }
+
++ Response 200 (application/json)
+
+    + Body
+
+             {
+              "enabled": true,
+              "utm_source":"sendgrid.com",
+              "utm_medium":"email",
+              "utm_term":"",
+              "utm_content":"",
+              "utm_campaign":"website"
+            }
+
+## Open Tracking Settings Resource [/tracking_settings/open]
+
+### Get Open Tracking Settings [GET]
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "enabled": true
+            }
+
+### Update Open Tracking Settings [PATCH]
+
+<p>
+  By default, the open tracking image used to determine when an email is opened is inserted at the end of your email. It is possible to specify an alternative location by using a replacement tag and the open tracking <a href="{{root_url}}/API_Reference/SMTP_API/apps.html#opentrack">SMTP API header</a>.
+</p>
+
+<p>
+  If you are sending through the <a href="{{root_url}}/API_Reference/Web_API_v3/Mail/index.html">v3 Mail Send endpoint</a> then you can specify the substitution tag you want to use by setting the <code>enable</code> parameter to <code>true</code> within the <code>open_tracking</code> object and specifying the text you would like to use in the <code>substitution_tag</code> parameter. SendGrid will replace your <code>substitution_tag</code> text with the open tracking pixel wherever you insert it in your email.
+</p>
+
+
++ Request (application/json)
+
+    + Body
+
+            {
+              "enabled": true
+            }
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "enabled": true
+            }
+
+## Subscription Tracking Settings Resource [/tracking_settings/subscription]
+
+### Get Subscription Tracking Settings [GET]
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "enabled": true,
+              "landing": "landing page html",
+              "url": "url",
+              "replace": "replacement tag",
+              "html_content": "html content",
+              "plain_content": "text content"
+            }
+
+### Update Subscription Tracking Settings [PATCH]
+
++ Request (application/json)
+
+    + Body
+
+            {
+              "enabled": true,
+              "landing": "landing page html",
+              "url": "url",
+              "replace": "replacement tag",
+              "html_content": "html content",
+              "plain_content": "text content"
+            }
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "enabled": true,
+              "landing": "landing page html",
+              "url": "url",
+              "replace": "replacement tag",
+              "html_content":"html content",
+              "plain_content":"text content"
+            }

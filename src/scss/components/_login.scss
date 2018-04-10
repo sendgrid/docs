@@ -1,0 +1,149 @@
+// sass-lint:disable no-color-literals
+
+.login-container {
+  min-height: 100%;
+  text-align: center;
+  background: rgba($slate, 0.02);
+}
+
+.login-modals {
+  margin: 40px auto;
+}
+
+.login-modal,
+.login-ad-modal {
+  position: relative;
+  display: inline-block;
+  width: $modal-width;
+  height: $modal-height;
+  vertical-align: top;
+  background: $white;
+  box-shadow: 2px 2px 6px 0 rgba($slate, 0.1);
+}
+
+.login-modal-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.login-modal-body {
+  display: table-cell;
+  height: $modal-body-height;
+  vertical-align: middle;
+}
+
+.login-modal-table-row {
+  display: table-row;
+}
+
+.login-logo {
+  margin-top: 30px;
+  text-align: center;
+
+  img {
+    width: 246px;
+  }
+}
+
+.login-form {
+  margin: 50px 0 0;
+  text-align: left;
+}
+
+.login-input-text {
+  margin: 40px 0 0;
+}
+
+.login-link {
+  display: block;
+  font-size: 13px;
+  text-align: right;
+}
+
+.login-password-options {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.login-btn {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.login-modal-footer {
+  display: table-cell;
+  width: 100%;
+  height: $modal-footer-height;
+  font-size: 13px;
+  vertical-align: middle;
+  background: rgba($steel, 0.1);
+}
+
+.login-error-banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 15px 0;
+  color: $ron-burgundy;
+  text-align: center;
+  background: rgba($ron-burgundy, 0.15);
+}
+
+.login-error-banner-items {
+  display: inline-block;
+  width: 445px;
+  margin: 0 10px;
+}
+
+.login-error-banner-item {
+  display: block;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.login-error-banner-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  padding-top: 1px;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  border: 1px solid $ron-burgundy;
+  border-radius: 100%;
+}
+
+.login-error-banner-close {
+  display: inline-block;
+  height: 27px;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.login-form-errors {
+  position: relative;
+  width: 100%;
+  padding: 15px 0;
+  margin: 30px 0;
+  font-size: 13px;
+  line-height: 18px;
+  color: $ron-burgundy;
+  background: rgba($ron-burgundy, 0.15);
+}
+
+.login-form-error {
+  display: block;
+}
+
+.login-ad-modal {
+  left: -3px;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,180 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 30px;
+  background-color: $white;
+  border: 1px solid $slate-10;
+  border-radius: $border-radius;
+
+  &:hover {
+    .actions .sg-icon-ellipsis {
+      opacity: 0;
+    }
+
+    .action-icons {
+      opacity: 1;
+    }
+  }
+
+  &.is-thin {
+    padding: 20px;
+  }
+
+  &.is-inline {
+    justify-content: space-between;
+
+    .card-title {
+      flex-basis: auto;
+    }
+  }
+
+  &.is-centered {
+    justify-content: center;
+    text-align: center;
+  }
+
+  // height should be set inline, too difficult to determine one w/ dynamic content
+  &.is-fixed-height {
+    align-items: center;
+  }
+
+  &.is-split {
+    padding: 30px 0;
+
+    h2,
+    h3,
+    p {
+      padding: 0 30px;
+    }
+
+    .split-content {
+      width: 100%;
+      padding-top: 30px;
+      border-top: 1px solid $slate-10;
+    }
+
+    .split-content .details {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 9px;
+    }
+
+    .split-content hr,
+    .split-content .input-range-wrap {
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+  }
+
+  &.is-module {
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    cursor: move;
+    transition: border-color 0.3s;
+
+    &:hover {
+      border-color: $slate-20;
+    }
+
+    p {
+      margin-bottom: 0;
+      font-size: 12px;
+      font-weight: 400;
+    }
+
+    .sg-icon {
+      display: block;
+      padding-bottom: 9px;
+      margin-right: 0;
+      font-size: 20px;
+      color: $slate-60;
+    }
+  }
+
+  h2,
+  p,
+  .card-icon {
+    flex-basis: 100%;
+  }
+
+  // bump icon font-size if placed inline w/ title
+  h2 .sg-icon {
+    margin-right: 6px;
+    font-size: 27px;
+    vertical-align: text-bottom;
+  }
+
+  p {
+    margin-bottom: 20px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .card-icon {
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+
+  .card-title {
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .badge {
+    position: absolute;
+    top: 27px;
+  }
+
+  .card-unsub-prefs {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    .sg-icon-check-circle {
+      color: $mantis;
+      vertical-align: sub;
+    }
+  }
+
+  .card-unsubs strong {
+    margin-right: 6px;
+  }
+
+  .card-id,
+  .actions,
+  .action-icons {
+    position: absolute;
+  }
+
+  .card-id {
+    bottom: 20px;
+    left: 20px;
+    margin-bottom: 0;
+  }
+
+  .actions {
+    right: 20px;
+    bottom: 20px;
+    text-align: right;
+  }
+
+  .action-icons {
+    top: 0;
+    right: 0;
+    width: 170px;
+    opacity: 0;
+  }
+
+  .action-icons,
+  .sg-icon-ellipsis {
+    transition: opacity 0.3s;
+  }
+}
