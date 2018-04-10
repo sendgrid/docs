@@ -20,5 +20,5 @@ If you are on a Pro 100k or above plan you can see your IP reputation and IP add
 
 For more information:
 
-* [SendGrid Email Infrastructure Guide.](https://go.sendgrid.com/SendGrid-Infrastructure-Guide.html?mc=Direct&mcd=https://sendgrid.com/docs/index.html)
+* [SendGrid Email Infrastructure Guide](https://go.sendgrid.com/SendGrid-Infrastructure-Guide.html?mc=Direct&mcd=https://sendgrid.com/docs/index.html)
 * [Whitelabeling your IP]({{root_url}}/User_Guide/Setting_Up_Your_Server/Whitelabeling/index.html)
