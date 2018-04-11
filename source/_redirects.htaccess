@@ -741,6 +741,7 @@ Redirect 301 /VidGrid/Template_Engine/template_engine.html https://sendgrid.com/
 Redirect 301 /VidGrid/Tools/index.html https://sendgrid.com/docs/Utilities/index.html
 Redirect 301 /VidGrid/Whitelabel/whitelabel.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 Redirect 301 /VidGrid/whitelabel.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
+Redirect 301 /VidGrid/Marketing_Emails/Review_and_Schedule/index.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/a_b_testing.html
 
 #######
 #
