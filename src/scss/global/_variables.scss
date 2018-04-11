@@ -3,6 +3,11 @@
 $font-path:           "../fonts" !default;
 $border-radius:       2px;
 
+// breakpoints
+$width-small:         610px;
+$width-medium:        990px;
+$width-large:         1200px;
+
 // modular scale base
 // modularscale.com/?12,20&px&1.5
 $scale-base:          12px;
@@ -45,7 +50,7 @@ $slate-10:            #e9ecef;
 $slate-05:            #f4f6f7;
 $slate-02:            #fbfbfc;
 
-// colors - logo accents 
+// colors - logo accents
 $logo-accent-light:   #99e1f4;
 $logo-accent-medium:  #00b3e3;
 $logo-accent-dark:    #009dd9;

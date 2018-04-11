@@ -1,8 +1,21 @@
+.row > div {
+  background: #e2e2e2;
+  padding: 20px;
+}
+
+.row {
+  margin-bottom: 10px;
+}
+
 $grid-container-max: 930px;
 $grid-container-lg-max: 1200px;
 $grid-container-gutter: 6%;
 $grid-columns: 12;
 $grid-gutter: 2%;
+
+$width-small : 610px;
+$width-medium : 990px;
+$width-large : 1200px;
 
 .container {
   max-width: $grid-container-max;
@@ -29,22 +42,61 @@ $grid-gutter: 2%;
   }
 }
 
-@for $x from 1 through $grid-columns {
-  .col-#{$x} {
-    grid-column: span #{$x};
+// grid mixin
+@mixin createGrid($grid-columns, $col-size: null, $build-offset: false ) {
+  @for $x from 1 through $grid-columns {
 
-    @for $y from 1 to $grid-columns {
-      $grid-column-lines: ($grid-columns + 1);
-      $grid-column-start: ($y + 1);
-      $grid-column-end: ($x + $y + 1);
-      $grid-column-total: ($x + $y);
+    $col-class: if( $col-size, "#{$col-size}-#{$x}", "#{$x}");
 
-      @if $grid-column-total <= $grid-columns {
-        &.col-offset-#{$y} {
-          grid-column-start: $grid-column-start;
-          grid-column-end: $grid-column-end;
+    .col-#{$col-class} {
+      grid-column: span #{$x};
+      @for $y from 1 to $grid-columns {
+        $grid-column-lines: ($grid-columns + 1);
+        $grid-column-start: ($y + 1);
+        $grid-column-end: ($x + $y + 1);
+        $grid-column-total: ($x + $y);
+
+        $col-class: if( $col-size, "#{$col-size}-#{$y}", "#{$y}");
+
+        // Only add offset to media queries
+        @if ( $grid-column-total <= $grid-columns and $build-offset ) {
+          &.col-offset-#{$col-class} {
+            grid-column-start: $grid-column-start;
+            grid-column-end: $grid-column-end;
+          }
         }
+
       }
     }
   }
 }
+
+@include createGrid($grid-columns, 'xs');
+@include createGrid($grid-columns, 'sm');
+@include createGrid($grid-columns, 'md');
+@include createGrid($grid-columns, 'lg');
+
+// large
+@media (min-width:$width-medium) {
+  @include createGrid($grid-columns, 'lg', true);
+}
+
+// medium
+@media (min-width:$width-small) and (max-width:$width-medium) {
+  @include createGrid($grid-columns, 'md', true);
+}
+
+// stack md and lg columns up to small
+@media (max-width:$width-small) {
+  [class^="col-lg"],
+  [class^="col-md"] {
+    grid-column-start: 1;
+    grid-column: span 12;
+  }
+}
+
+// small
+@media (max-width:$width-small) {
+  @include createGrid($grid-columns, 'sm', true);
+}
+

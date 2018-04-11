@@ -9,6 +9,14 @@ import config from '../../data/SiteConfig'
 import './b16-tomorrow-dark.css'
 import './doc.scss'
 
+import rehypeReact from 'rehype-react'
+import Counter from '../components/Counter'
+
+const renderAst = new rehypeReact({
+  createElement: React.createElement,
+  components: { 'interactive-counter': Counter },
+}).Compiler
+
 export default class PostTemplate extends React.Component {
   render() {
     const { slug } = this.props.pathContext
@@ -21,14 +29,16 @@ export default class PostTemplate extends React.Component {
       post.category_id = config.postDefaultCategoryID
     }
     return (
-      <div>
+      <div className="container">
         <Helmet>
           <title>{`${post.title} | ${config.siteTitle}`}</title>
         </Helmet>
         <SEO postPath={slug} postNode={postNode} postSEO />
         <div>
+
           <h1>{post.title}</h1>
-          <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
+          {/* <div dangerouslySetInnerHTML={{ __html: postNode.html }} /> */ }
+          {renderAst(postNode.htmlAst)}
           <div className="post-meta">
             <PostTags tags={post.tags} />
           </div>
@@ -42,7 +52,7 @@ export default class PostTemplate extends React.Component {
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
+      htmlAst
       timeToRead
       excerpt
       frontmatter {
