@@ -431,7 +431,7 @@ If you make a request to upload a duplicate recipient and your request would mak
 
 ### Add Single Recipient [POST]
 
-The rate at which recipients may be uploaded is limited to 3 requests every 2 seconds. Recipients may be uploaded in batches of 1000 per request. This results in a maximum upload rate of 1500 recipients per second.
+The rate at which recipients may be uploaded is limited to 3 requests per second. Recipients may be uploaded in batches of 1000 per request. This results in a maximum upload rate of 1500 recipients per second.
 
 + Request (application/json)
 
