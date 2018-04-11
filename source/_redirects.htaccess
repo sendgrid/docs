@@ -784,6 +784,10 @@ Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_S
 Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/security_compliance.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
 Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_content.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
 Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/letter_from_our_CPO.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
+Redirect 301 /Classroom/Basics/Marketing_Campaigns/migrating_content.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
+Redirect 301 /Classroom/Basics/Marketing_Campaigns/migrating_images.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
+Redirect 301 /Classroom/Basics/Marketing_Campaigns/migrating_lists.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
+Redirect 301 /Classroom/Basics/Marketing_Campaigns/migrating_unsubscribes.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
 
 #######
 #
