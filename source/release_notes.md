@@ -42,7 +42,7 @@ Truncating fields that go over max field character limits
 <table class="table" style="width: 100%;">
   <tr>
     <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ><img src="{{root_url}}/images/code_icon.png" alt="An update to the API" width="100" height="100"></td>
-  <td>In the <code>POST /contactdb/lists/{list_id}/recipients/{recipient_id}</code> Add a Single Recipient to a List method, OR when you adding CSV to the UI, if you are adding or updating a <code>first_name</code>, <code>last_name</code>, or <code>email</code> fields and you go over the maximum character limit, we now automatically truncate fields to the maximum character limit so that the field is valid.</td>
+  <td>This change applies to contacts added by uploading a CSV in the UI or when using the <code>POST /contactdb/lists/{list_id}/recipients/{recipient_id}</code> Add a Single Recipient to a List method. When adding or updating the <code>first_name</code> and <code>last_name</code> fields, SendGrid automatically truncates any field that exceeds the maximum character limit to ensure that the field is valid. Non-unicode characters are still not valid.</td>
   </tr>
 </table>
 
