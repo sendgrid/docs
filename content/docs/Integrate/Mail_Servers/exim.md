@@ -11,7 +11,7 @@ seo:
 ---
 
 {% warning %}
-Versions of Exim prior to the current major release are considered obsolete. If you are using Exim 3.x or earlier it is suggested by the Exim development team that you upgrade to the current release. 
+Versions of Exim prior to the current major release are considered obsolete. If you are using Exim 3.x or earlier it is suggested by the Exim development team that you upgrade to the current release.
 {% endwarning %}
 
 The following configuration file, which can be found at **/etc/exim4/update-exim4.conf.conf**, was pulled from Ubuntu Server 10.4 and is for example purposes only:
@@ -28,15 +28,15 @@ dc_smarthost='smtp.sendgrid.net::587'
 CFILEMODE='644'
 dc_use_split_config='false'
 dc_hide_mailname='true'
-dc_mailname_in_oh='true' 
+dc_mailname_in_oh='true'
 {% endcodeblock %}
 
 Enable TLS support in **/etc/exim4/exim4.conf.localmacros**.
 
-  
- 
+
+
 {% info %}
-If this file does not exist, you will need to create it: 
+If this file does not exist, you will need to create it:
 {% endinfo %}
 
 {% codeblock lang:bash %}
@@ -55,10 +55,10 @@ Once you have completed and saved all changes to Exim's configuration files, you
 $ /etc/init.d/exim4 restart
 {% endcodeblock %}
 
- 
-{% anchor h2 %}
-cPanel 
-{% endanchor %}
+
+<page-anchor el="h2">
+cPanel
+</page-anchor>
 
 If you are using cPanel with Exim and want to relay your email through SendGrid, go to **Main \> Service Configuration \> Exim Configuration Editor**, click on the Advanced Editor button, and enter the following in the **AUTH** Box:
 
@@ -71,9 +71,9 @@ sendgrid_login:
   client_send = : YourSendGridUsername : YourSendGridPassword
 {% endcodeblock %}
 
- 
+
 {% info %}
-Only include "begin authenticators" if it's not already in the configuration. 
+Only include "begin authenticators" if it's not already in the configuration.
 {% endinfo %}
 
 Add a route in the **Router Configuration** Box:
@@ -104,7 +104,7 @@ Once you have completed and saved all changes to Exim's configuration files, you
 $ /etc/init.d/exim4 restart
 {% endcodeblock %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Exim Documentation
-{% endanchor %}
+</page-anchor>
 If your version of Exim does not match the version above or you are not finding the answer you need, please check out the Official [Exim Documentation](http://www.exim.org/docs.html) for more information.

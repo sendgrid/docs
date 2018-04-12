@@ -12,9 +12,9 @@ With the whitelabel API calls you will be able to retrieve whitelabel settings r
 
 * * * * *
 
-{% anchor h2 %}
-List 
-{% endanchor %}
+<page-anchor el="h2">
+List
+</page-anchor>
 
 <table class="table table-bordered table-striped">
    <thead>
@@ -62,15 +62,15 @@ List
 whitelabels><whitelabel><mail_domain>email.sendgrid.com</mail_domain><url_domain>email.sendgrid.com</url_domain></whitelabel><whitelabel><mail_domain>email.example.com</mail_domain><url_domain>email.example.com</url_domain></whitelabel></whitelabels
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      
+
 {% requestblock %}
-        
+
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
-        
+
   {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=whitelabel&amp;task=lis
   {% endrequestdata %}
-      
+
 {% endrequestblock %}
 
 <h3>Response</h3>
@@ -80,9 +80,9 @@ whitelabels><whitelabel><mail_domain>email.sendgrid.com</mail_domain><url_domain
 
 * * * * *
 
-{% anchor h2 %}
-Append 
-{% endanchor %}
+<page-anchor el="h2">
+Append
+</page-anchor>
 
 <table class="table table-bordered table-striped">
    <thead>

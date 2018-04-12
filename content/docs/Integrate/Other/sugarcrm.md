@@ -10,15 +10,15 @@ navigation:
   show: true
 ---
 
-{% anchor h2 %}
+<page-anchor el="h2">
 What is SugarCRM?
-{% endanchor %}
+</page-anchor>
 
 One of the primary competitors to the Salesforce CRM, [SugarCRM](http://www.sugarcrm.com) is a widely used customer relationship management software and as they explain on their website, "SugarCRM is designed to help your business communicate with prospects, share sales information, close deals and keep customers happy. Thousands of successful companies use Sugar everyday to manage sales, marketing and support." Since SendGrid's become synonymous with optimized deliverability of transactional email to the inbox, some of our customers have asked us how they can send mail from their CRM software through our service so those emails can also be optimized for deliverability to the inbox. If you're a SendGrid as well as SugarCRM customer, let's get into how you'll go about doing this!
 
-{% anchor h2 %}
+<page-anchor el="h2">
 How to integrate SugarCRM with SendGrid
-{% endanchor %}
+</page-anchor>
 
 SendGrid customers utilizing our service for their transactional email and wanting to use SugarCRM for their email marketing campaigns can easily make a few settings changes within their SugarCRM account in order to point their outgoing mail to us, so we can deliver it to the end recipient. In order to send mail from SugarCRM to SendGrid, navigate the following on the SugarCRM site: Admin > Email Settings > Choose "Other" as the Email provider > Enter required server info as follows:
 

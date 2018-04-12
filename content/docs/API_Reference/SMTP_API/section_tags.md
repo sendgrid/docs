@@ -41,9 +41,9 @@ Do not nest section tags in sections - this causes your section to not be replac
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Section Tag Walkthrough
-{% endanchor %}
+</page-anchor>
 
 Message body sent to SendGrid:
 
@@ -152,7 +152,7 @@ Casey receives:
 </html>
 {% endcodeblock %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Additional Resources
 {% endanchor h2 %}
 

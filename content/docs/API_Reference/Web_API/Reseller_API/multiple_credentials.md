@@ -16,9 +16,9 @@ There will eventually be a deprecation plan for the Multiple Credential Users Re
 
 
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Add user credential
-{% endanchor %}
+</page-anchor>
 
 Notes: This API call allows SendGrid resellers to add a new set of credentials to a specified child account.
 
@@ -110,9 +110,9 @@ https://api.sendgrid.com/apiv2/reseller.credential.json?api_user=your_sendgrid_u
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Edit user credential
-{% endanchor %}
+</page-anchor>
 
 Notes: This API call allows SendGrid resellers to edit an already existing credential password. Changing the credential name is not currently allowed.
 
@@ -205,9 +205,9 @@ https://api.sendgrid.com/apiv2/reseller.credential.json?api_user=your_sendgrid_u
 
 </h4>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Delete user credential
-{% endanchor %}
+</page-anchor>
 
 Notes: This API call allows SendGrid resellers to delete an existing credential under a child account.
 

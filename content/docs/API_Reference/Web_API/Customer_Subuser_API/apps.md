@@ -7,16 +7,16 @@ navigation:
 ---
 
 {% info %}
-Please see the [Filter Settings]({{root_url}}/API_Reference/Web_API/filter_settings.html) page for a list of the required parameters for each app setting. 
+Please see the [Filter Settings]({{root_url}}/API_Reference/Web_API/filter_settings.html) page for a list of the required parameters for each app setting.
 {% endinfo %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 List
-{% endanchor %}
+</page-anchor>
 List all of the available apps available for the subuser.
 
 {% parameters getAvailable %}
-  {% parameter task Yes 'Must be set to <code>getAvailable</code>' 'Task to retrieve available apps for the subuser' %}  
+  {% parameter task Yes 'Must be set to <code>getAvailable</code>' 'Task to retrieve available apps for the subuser' %}
   {% parameter user Yes 'Subuser must be under your account' 'The subuser being queried' %}
 {% endparameters %}
 
@@ -69,13 +69,13 @@ Note: The <code>name</code> entry is used in all the other API calls to identify
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Activate App
-{% endanchor %}
+</page-anchor>
 Activate an app on a subuser.
 
 {% parameters activate %}
-  {% parameter task Yes 'Must be set to <code>activate<code>' 'Task to activate an app' %}  
+  {% parameter task Yes 'Must be set to <code>activate<code>' 'Task to activate an app' %}
   {% parameter user Yes 'Subuser must be under your account' 'The subuser to activate the app on' %}
   {% parameter name Yes 'Must be a [supported app]({{root_url}}/API_Reference/Web_API/filter_settings.html)' 'The app to activate' %}
 {% endparameters %}
@@ -96,9 +96,9 @@ Activate an app on a subuser.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Deactivate App
-{% endanchor %}
+</page-anchor>
 Deactivate an app on a subuser.
 
 {% parameters deactivate %}
@@ -123,9 +123,9 @@ Deactivate an app on a subuser.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Setup App
-{% endanchor %}
+</page-anchor>
 These API calls require that settings are passed using POST.
 
 {% info %}
@@ -153,9 +153,9 @@ Refer to [Filter Settings]({{root_url}}/API_Reference/Web_API/filter_settings.ht
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Get Current Settings
-{% endanchor %}
+</page-anchor>
 Get the settings for a subuser's app.
 
 {% parameters getsettings %}

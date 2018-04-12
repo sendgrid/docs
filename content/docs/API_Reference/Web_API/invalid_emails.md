@@ -8,20 +8,20 @@ navigation:
 
 This endpoint allows you to retrieve and delete entries in the Invalid Emails list.
 
-{% anchor h2 %}
-get 
-{% endanchor %}
+<page-anchor el="h2">
+get
+</page-anchor>
 
 Retrieve a list of invalid emails with addresses and response codes, optionally with dates.
 
-{% parameters get %} 
-  
-  {% parameter date No 'Must be set to 1' 'Retrieve the timestamp of the invalid email records. It will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS' %}  
-  {% parameter days No 'If specified, must be an integer greater than 0' 'Number of days in the past for which to retrieve invalid emails (includes today)' %}  
-  {% parameter start_date No 'Date must be in YYYY-MM-DD format and be earlier than the end_date parameter.' 'The start of the date range for which to retrieve invalid emails.' %}  
-  {% parameter end_date No 'Date must be in YYYY-MM-DD format and be later than the start_date parameter.' 'The end of the date range for which to retrieve invalid emails.' %}  
-  {% parameter limit No 'Some integer' 'Optional field to limit the number of results returned.' %}  
-  {% parameter offset No 'Some integer' 'Optional beginning point in the list to retrieve from.' %}  
+{% parameters get %}
+
+  {% parameter date No 'Must be set to 1' 'Retrieve the timestamp of the invalid email records. It will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS' %}
+  {% parameter days No 'If specified, must be an integer greater than 0' 'Number of days in the past for which to retrieve invalid emails (includes today)' %}
+  {% parameter start_date No 'Date must be in YYYY-MM-DD format and be earlier than the end_date parameter.' 'The start of the date range for which to retrieve invalid emails.' %}
+  {% parameter end_date No 'Date must be in YYYY-MM-DD format and be later than the start_date parameter.' 'The end of the date range for which to retrieve invalid emails.' %}
+  {% parameter limit No 'Some integer' 'Optional field to limit the number of results returned.' %}
+  {% parameter offset No 'Some integer' 'Optional beginning point in the list to retrieve from.' %}
   {% parameter email No 'Email address eg testing@example.com' 'Optional email addresses to search for.' %}
 {% endparameters %}
 
@@ -59,15 +59,15 @@ Retrieve a list of invalid emails with addresses and response codes, optionally 
 
 * * * * *
 
-{% anchor h2 %}
-count 
-{% endanchor %}
+<page-anchor el="h2">
+count
+</page-anchor>
 
 Retrieve the count of invalid emails.
 
-{% parameters count %} 
-  
-  {% parameter start_date No 'Date must be in YYYY-MM-DD format and be earlier than the end_date parameter.' 'The start of the date range for which to retrieve invalid emails.' %}  
+{% parameters count %}
+
+  {% parameter start_date No 'Date must be in YYYY-MM-DD format and be earlier than the end_date parameter.' 'The start of the date range for which to retrieve invalid emails.' %}
   {% parameter end_date No 'Date must be in YYYY-MM-DD format and be later than the start_date parameter.' 'The end of the date range for which to retrieve invalid emails.' %}
 {% endparameters %}
 
@@ -88,14 +88,14 @@ Retrieve the count of invalid emails.
 
 * * * * *
 
-{% anchor h2 %}
-delete 
-{% endanchor %}
+<page-anchor el="h2">
+delete
+</page-anchor>
 
 Delete an address from the Invalid Email list.
 
-{% parameters delete %} 
-  
+{% parameters delete %}
+
   {% parameter email Yes 'Must be a valid user account email' 'Email Invalid Email address to remove' %}
 {% endparameters %}
 

@@ -6,9 +6,9 @@ navigation:
    show: true
 ---
 
-{% anchor h2 %}
-Get Current Settings 
-{% endanchor %}
+<page-anchor el="h2">
+Get Current Settings
+</page-anchor>
 
 
 {% parameters get %}
@@ -47,9 +47,9 @@ These are Reseller Only APIs. For more information, see [Reseller Overview](http
 
 * * * * *
 
-{% anchor h2 %}
-Create New Entry 
-{% endanchor %}
+<page-anchor el="h2">
+Create New Entry
+</page-anchor>
 
 
 {% parameters create %}
@@ -77,9 +77,9 @@ Create New Entry
 
 * * * * *
 
-{% anchor h2 %}
-Edit Entry 
-{% endanchor %}
+<page-anchor el="h2">
+Edit Entry
+</page-anchor>
 
 
 {% parameters edit %}
@@ -107,9 +107,9 @@ Edit Entry
 
 * * * * *
 
-{% anchor h2 %}
-Delete Entry 
-{% endanchor %}
+<page-anchor el="h2">
+Delete Entry
+</page-anchor>
 
 
 {% parameters delete %}

@@ -15,9 +15,9 @@ The Sender Identities API allows you to create and manage sender identities for 
 The `nickname`, `from.email`, `address`, `city`, and `country` parameters are required when creating and updating sender identities.
 {% endinfo %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Create a Sender Identity [POST]
-{% endanchor %}
+</page-anchor>
 
 This endpoint allows you to create a sender identity.
 
@@ -72,9 +72,9 @@ Sender Identities are required to be verified before use. If your domain has bee
 {% endv3response %}
 {% endapiv3example %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Retrieve All Sender Identities [GET]
-{% endanchor %}
+</page-anchor>
 
 This endpoint allows you to retrieve a list of all of your sender identities.
 
@@ -109,9 +109,9 @@ This endpoint allows you to retrieve a list of all of your sender identities.
 {% endv3response %}
 {% endapiv3example %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Update a Sender Identity [PATCH]
-{% endanchor %}
+</page-anchor>
 
 Updates to `from.email` require re-verification. If your domain has been whitelabeled it will auto verify on creation. Otherwise an email will be sent to the `from.email`.
 
@@ -165,9 +165,9 @@ Partial updates are allowed, but fields that are marked as "required" in the POS
 {% endv3response %}
 {% endapiv3example %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Delete a Sender Identity [DELETE]
-{% endanchor %}
+</page-anchor>
 
 This endpoint allows you to delete one of your sender identities.
 
@@ -178,9 +178,9 @@ HTTP/1.1 204
 {% endv3response %}
 {% endapiv3example %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Resend Sender Identity Verification [POST]
-{% endanchor %}
+</page-anchor>
 
 This endpoint allows you to resend the sender identity verification email.
 
@@ -191,9 +191,9 @@ HTTP/1.1 204
 {% endv3response %}
 {% endapiv3example %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Retrieve a Specific Sender Identity [GET]
-{% endanchor %}
+</page-anchor>
 
 This endoint allows you to retrieve a specific sender identity.
 

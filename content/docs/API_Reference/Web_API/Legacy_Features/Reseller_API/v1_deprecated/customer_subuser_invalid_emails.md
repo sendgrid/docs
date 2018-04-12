@@ -8,9 +8,9 @@ navigation:
    show: true
 ---
 
-{% anchor h2 %}
-Retrieve Invalid Emails 
-{% endanchor %}
+<page-anchor el="h2">
+Retrieve Invalid Emails
+</page-anchor>
 
 <table class="table table-bordered table-striped">
    <thead>
@@ -64,15 +64,15 @@ Retrieve Invalid Emails
 invalidemails><invalidemail><email>example@example.com</email><reason>Mail domain mentioned in email address is unknown</reason><created>2009-06-10 12:40:30</created></invalidemail><invalidemail><email>isaac@hotmail</email><reason>Bad Syntax</reason><created>2009-06-10 12:40:30</created></invalidemail><invalidemail><email>example@example.com</email><reason>Known bad domain</reason><created>2009-06-10 12:40:30</created></invalidemail></invalidemails
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      
+
 {% requestblock %}
-        
+
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
-        
+
   {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=invalidemails&amp;user=example@example.com&amp;task=get&amp;date=
   {% endrequestdata %}
-      
+
 {% endrequestblock %}
 
 <h3>Response</h3>
@@ -82,9 +82,9 @@ invalidemails><invalidemail><email>example@example.com</email><reason>Mail domai
 
 * * * * *
 
-{% anchor h2 %}
-Delete Invalid Emails 
-{% endanchor %}
+<page-anchor el="h2">
+Delete Invalid Emails
+</page-anchor>
 
 Since SendGrid does not deliver to invalid emails, users can remove invalid emails from their list at any time if re-delivery to a spam reported address is desired.
 

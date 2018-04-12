@@ -10,9 +10,9 @@ navigation:
   show: true
 ---
 
-{% anchor h2 %}
+<page-anchor el="h2">
 What is IP Access Management?
-{% endanchor %}
+</page-anchor>
 
 [IP Access Management]({{root_url}}http://app.sendgrid.com/settings/access) is a security feature that allows you to control who can access your SendGrid account based on their [IP address]({{root_url}}/Glossary/ip_address.html). After you whitelist an IP address, you can only access the SendGrid UI, API, and SMTP relay if you are connecting from a whitelisted IP address. Any other access attempts will be blocked. This is a powerful security tool that you can use to help prevent malicious activity on your account.
 
@@ -30,17 +30,17 @@ Your current IP is clearly displayed to help prevent you from accidentally remov
 If you do not access SendGrid via a static IP address (e.g. via VPN or from a business internet service), setting up IP Access Management may result in being locked out of your SendGrid account. If you do discover that you have locked yourself out of your account, please visit our [Classroom]({{root_url}}/Classroom/Troubleshooting/Account_Administration/ip_access_management_has_locked_me_out_of_my_account.html) for suggestions on how to regain access and tips on how to prevent this in the future.
 {% endwarning %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Whitelisting an IP Address
-{% endanchor %}
+</page-anchor>
 
 There are several different ways to whitelist an IP address. If you navigate to the IP Access Management page under Settings, you will see a list of any currently whitelisted IP addresses and a list of IPs that recently attempted to access your account.
 
 ![]({{root_url}}/images/ip_access_management.png)
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Recent Access Attempts
-{% endanchor %}
+</page-anchor>
 
 Under Recent Access Attempts, you will see a list of recent IPs that attempted to connect to your account, regardless of whether or not they are whitelisted. You will also see some additional information about those IPs, such as the date of the first and most recent access attempt, the physical location of the IP, and the method by which they attempted to access your account.
 
@@ -48,9 +48,9 @@ You can whitelist one of these IPs by clicking the gear icon in the row of the I
 
 ![]({{root_url}}/images/add_ip_from_recent_access_attempts.png)
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Adding IP Addresses Manually
-{% endanchor %}
+</page-anchor>
 
 To manually whitelist one or more IP addresses, click the Add IP Addresses button.
 
@@ -60,7 +60,7 @@ You will see a dialogue box presenting you with a blank form in which you may en
 
 ![]({{root_url}}/images/ip_access_management_add_ip.png)
 
-It is possible for advanced users to use CIDR notation to whitelist a range of IP addresses. To do so, simply enter your routing prefix followed by a `/` and then the number of bits in your routing mask. For example: `192.168.100.14/24`. 
+It is possible for advanced users to use CIDR notation to whitelist a range of IP addresses. To do so, simply enter your routing prefix followed by a `/` and then the number of bits in your routing mask. For example: `192.168.100.14/24`.
 
 {% warning %}
 Explaining CIDR notation is beyond the scope of this article, and we only recommend that advanced users use this notation when whitelisting IPs. If you are unfamiliar with CIDR notation, we recommend that you enter each IP individually when whitelisting a range of IPs.

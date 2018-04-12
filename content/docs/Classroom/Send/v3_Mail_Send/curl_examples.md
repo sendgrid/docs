@@ -12,9 +12,9 @@ navigation:
 
 Below are some cURL examples for several basic use cases to get you sending email through SendGrid's v3 Mail Send endpoint right away!
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Hello, World!
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:bash %}
 curl --request POST \
@@ -24,9 +24,9 @@ curl --request POST \
   --data '{"personalizations": [{"to": [{"email": "recipient@example.com"}]}],"from": {"email": "sendeexampexample@example.com"},"subject": "Hello, World!","content": [{"type": "text/plain", "value": "Heya!"}]}'
 {% endcodeblock %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Sending a Basic Email to Multiple Recipients
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:bash %}
 curl --request POST \
@@ -36,9 +36,9 @@ curl --request POST \
   --data '{"personalizations": [{"to": [{"email": "recipient@example.com"}],"cc": [{"email":"recipient2@example.com"}, {"email": "recipient3@example.com"}, {"email":"recipient4@example.com"}]}], "from": {"email": "sendeexampexample@example.com"},"subject":"Hello, World!", "content": [{"type": "text/plain", "value": "Heya!"}]}'
 {% endcodeblock %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Sending a Basic Email to Multiple Recipients
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:bash %}
 curl --request POST \
@@ -48,9 +48,9 @@ curl --request POST \
   --data '{"personalizations": [{"to": [{"email": "recipient@example.com"}],"cc": [{"email":"recipient2@example.com"}, {"email": "recipient3@example.com"}, {"email":"recipient4@example.com"}]}], "from": {"email": "sendeexampexample@example.com"},"subject":"Hello, World!", "content": [{"type": "text/plain", "value": "Heya!"}]}'
 {% endcodeblock %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Sending a Basic Email Using a Template
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:bash %}
 curl --request POST \
@@ -60,9 +60,9 @@ curl --request POST \
   --data '{"personalizations": [{"to": [{"email": "recipient@example.com"}]}],"from": {"email": "sendeexampexample@example.com"},"subject":"Hello, World!","content": [{"type": "text/plain","value": "Heya!"}], "template_id" : "YOUR_TEMPLATE_ID"}'
 {% endcodeblock %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Sending a Basic Email at a Scheduled Time
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:bash %}
 curl --request POST \
@@ -72,9 +72,9 @@ curl --request POST \
   --data '{"personalizations": [{"to": [{"email": "recipient@example.com"}]}],"from": {"email": "sendeexampexample@example.com"},"subject":"Hello, World!","content": [{"type": "text/plain","value": "Heya!"}], "send_at" : "UNIX_TIMESTAMP_HERE"}'
 {% endcodeblock %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Scheduling and Cancelling an Email
-{% endanchor %}
+</page-anchor>
 
 You may schedule an email to be sent up to 72 hours in the future by using the "send_at" parameter. You may cancel this same scheduled email by using the [Cancel Scheduled Sends endpoint]({{root_url}}/API_Reference/Web_API_v3/cancel_schedule_send.html).
 

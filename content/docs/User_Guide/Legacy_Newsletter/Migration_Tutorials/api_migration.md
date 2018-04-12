@@ -17,9 +17,9 @@ For assistance please [contact our support team](https://support.sendgrid.com/).
 
 Before attempting to migrate your content, please review our [Migration Toolkit](https://sendgrid.com/docs/User_Guide/Legacy_Newsletter//Migration_Tutorials/index.html). Then, using our API as described below, you can automate a portion of the process. We are giving all of our examples in curl, but the steps should translate to whichever language you used to build your application.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Table of Contents
-{% endanchor %}
+</page-anchor>
 
 * [Migrate Your Legacy Newsletter Content](#-Migrate-Your-Legacy-Newsletter-Content)
     * [Retrieve all newsletters](#-Retrieve-all-newsletters)
@@ -32,29 +32,29 @@ Table of Contents
     * [Import Legacy Newsletter recipients into Marketing Campaigns](#-Import-Legacy-Newsletter-recipients-into-Marketing-Campaigns)
     * [Add contacts to new lists](#-Add-contacts-to-new-lists)
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Migrate Your Legacy Newsletter Content
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Retrieve all newsletters
-{% endanchor %}
+</page-anchor>
 
 Before you can migrate all of your marketing email content from Legacy Newsletter into Marketing Campaigns, you must first collect the name of every newsletter in your account.
 
 You will use this list of names to retrieve the content of those newsletters.
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Request
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:bash %}
 curl https://api.sendgrid.com/api/newsletter/list.json -F api_user=SENDGRID_USERNAME -F api_key=SENDGRID_PASSWORD
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Response
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:json %}
 [
@@ -69,23 +69,23 @@ Response
 ]
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Retrieve newsletter content
-{% endanchor %}
+</page-anchor>
 
 Now that you have a list of your newsletters, use the following request to retrieve the content of those newsletters.
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Request
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:bash %}
 curl https://api.sendgrid.com/api/newsletter/get.json -F name="Legacy Newsletter" -F api_user=SENDGRID_USERNAME -F api_key=SENDGRID_PASSWORD
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Response
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:json %}
 {
@@ -102,15 +102,15 @@ Response
 }
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Import newsletter content into Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 Take the exported content from the previous API call and import it into Marketing Campaigns using the following API call.
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Request
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:bash %}
 curl --request POST \
@@ -121,9 +121,9 @@ curl --request POST \
   --data '{"title":"Legacy Newsletter","subject":"subject from Legacy Newsletter","html_content":"html content from Legacy Newsletter", "plain_content":"text content from Legacy Newsletter"}'
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Response
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:json %}
 {
@@ -145,29 +145,29 @@ Response
 
 Now, you can use the [Marketing Campaigns API]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html#Update-a-Campaign-PATCH) or the [SendGrid UI](https://sendgrid.com/marketing_campaigns/ui/campaigns) to make further changes to your campaign.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Migrate Your Legacy Newsletter Recipient Lists
-{% endanchor %}
+</page-anchor>
 
 Before attempting to migrate your recipient lists, please review our [Migrating Recipient Lists tutorial]({{root_url}}/User_Guide/Legacy_Newsletter//Migration_Tutorials/migrating_recipient_lists.html). Then, using our API as described below, you can automate a portion of the process.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Retrieve all recipient lists
-{% endanchor %}
+</page-anchor>
 
 First, collect all of your Legacy Newsletter recipient lists.
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Request
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:bash %}
 curl https://api.sendgrid.com/api/newsletter/lists/get.json -F api_user=SENDGRID_USERNAME -F api_key=SENDGRID_PASSWORD
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Response
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:json %}
 [
@@ -178,23 +178,23 @@ Response
 ]
 {% endcodeblock %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Retrieve recipient names and email addresses
-{% endanchor %}
+</page-anchor>
 
 Next, get a list of emails and names that belong to each recipient list retrieved in the previous step.
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Request
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:bash %}
 curl https://api.sendgrid.com/api/newsletter/lists/email/get.json -F list="Legacy Newsletter list of recipients" -F api_user=SENDGRID_USERNAME -F api_key=SENDGRID_PASSWORD
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Response
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:json %}
 [
@@ -205,17 +205,17 @@ Response
 ]
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Create Marketing Campaigns contact lists
-{% endanchor %}
+</page-anchor>
 
 It is important to create individual contact lists in Marketing Campaigns that match the different recipient lists you created in Legacy Newsletter. This allows you to seamlessly move your recipients into Marketing Campaigns.
 
 Use the list names you retrieved in the first step to create new contact lists in Marketing Campaigns.
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Request
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:bash %}
 curl --request POST \
@@ -226,9 +226,9 @@ curl --request POST \
   --data '{"name":" list of recipients"}'
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Response
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:json %}
 {
@@ -238,17 +238,17 @@ Response
 }
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Import Legacy Newsletter recipients into Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 Before you can assign contacts to your individual lists, you must first do a bulk import of your Legacy Newsletter recipients to your default Marketing Campaigns contact list.
 
 Save the `persisted_recipient` values, as these map to the `list_id` in the following API call.
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Request
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:bash %}
 curl --request POST \
@@ -259,9 +259,9 @@ curl --request POST \
   --data '[{"email":"dx@sendgrid.com", "name":"SendGrid DX Team"},{"email":"dx+test@sendgrid.com", "name":"SendGrid DX Team Test Email"}]'
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Response
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:json %}
 {
@@ -273,17 +273,17 @@ Response
 }
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Add contacts to new lists
-{% endanchor %}
+</page-anchor>
 
 Now that you have imported all of your Legacy Newsletter recipients into your default Marketing Campaigns contact list, you can assign different contacts to their respective lists.
 
 To ensure that each contact is added to the correct list, use the `persisted_recipient` value from the previous call. This value maps directly to the `list_id` used to identify contact lists in Marketing Campaigns.
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Request
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:bash %}
 curl --request POST \
@@ -294,17 +294,17 @@ curl --request POST \
   --data '["YUBh","YUBhYUBh"]'
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Response
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:bash %}
 HTTP/1.1 201
 {% endcodeblock %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Additional Resources
-{% endanchor %}
+</page-anchor>
 
 - [Migrating Your API Integrations]({{root_url}}/User_Guide/Legacy_Newsletter/Migration_Tutorials/Migrating_API.html)
 - [Migration Tutorials]({{root_url}}/User_Guide/Legacy_Newsletter//Migration_Tutorials/index.html)

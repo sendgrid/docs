@@ -14,9 +14,9 @@ For a more detailed description of each of the Filters below, please visit the [
 
 All calls to change filter settings are made to the [filter.setup endpoint.]({{root_url}}/API_Reference/Web_API/filter_commands.html#-Setup-App)
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Address Whitelist
-{% endanchor %}
+</page-anchor>
 
 *Name - `addresswhitelist`*
 
@@ -25,7 +25,7 @@ When using this call, you must define all emails & domains here. Using this call
 {% endinfo %}
 {% parameters addresswhitelist %}
 
-  {% parameter name yes 'addresswhitelist' 'The name of the setting.' %}  
+  {% parameter name yes 'addresswhitelist' 'The name of the setting.' %}
   {% parameter list yes 'A list of email addresses or domains.' 'list[]=support@example.com&list[]=sales@example.com' %}
 {% endparameters %}
 
@@ -45,15 +45,15 @@ When using this call, you must define all emails & domains here. Using this call
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 BCC "Blind Carbon Copy"
-{% endanchor %}
+</page-anchor>
 
 *Name - `bcc`*
 
 {% parameters bcc %}
 
-  {% parameter name yes 'bcc' 'The name of the setting.' %}  
+  {% parameter name yes 'bcc' 'The name of the setting.' %}
   {% parameter email yes 'An email address to be the BCC recipient.' 'email@example.com' %}
 {% endparameters %}
 
@@ -73,15 +73,15 @@ BCC "Blind Carbon Copy"
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Click Tracking
-{% endanchor %}
+</page-anchor>
 
 *Name - `clicktrack`*
 
 {% parameters clicktrack %}
 
-  {% parameter name yes 'clicktrack' 'The name of the setting.' %}  
+  {% parameter name yes 'clicktrack' 'The name of the setting.' %}
   {% parameter enable_text yes 'Enable click tracking in plain text emails.' '0 or 1' %}
 {% endparameters %}
 
@@ -101,16 +101,16 @@ Click Tracking
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 DKIM
-{% endanchor %}
+</page-anchor>
 
 *Name - `dkim`*
 
 {% parameters dkim %}
 
-  {% parameter name yes 'dkim' 'The name of the setting.' %}  
-  {% parameter domain yes 'The domain to sign messages as.' 'example.com' %}  
+  {% parameter name yes 'dkim' 'The name of the setting.' %}
+  {% parameter domain yes 'The domain to sign messages as.' 'example.com' %}
   {% parameter use_from no 'If enabled, the domain in the From: header of the email will be used to sign your DKIM.' '0 or 1' %}
 {% endparameters %}
 
@@ -132,7 +132,7 @@ DKIM
 
 {% anchor h2 -Email-Templates %}
 Legacy Email Templates
-{% endanchor %}
+</page-anchor>
 
 *Name - `template`*
 
@@ -141,7 +141,7 @@ This setting is our original Email Template app, today we have more full feature
 {% endwarning %}
 {% parameters template %}
 
-  {% parameter name yes 'template' 'The name of the setting.' %}  
+  {% parameter name yes 'template' 'The name of the setting.' %}
   {% parameter text/html yes 'A string that holds the template html body.' '\<html\>\<head\>\</head\>\<body bgcolor='pink'\>\<div style='width:200px' bgcolor='\#FFF'\>\<% body %\>\</div\>\</body\>\</html\>' %}
 {% endparameters %}
 
@@ -161,9 +161,9 @@ This setting is our original Email Template app, today we have more full feature
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Event Notification
-{% endanchor %}
+</page-anchor>
 
 *Name - `eventnotify`*
 
@@ -208,9 +208,9 @@ All fields except version are required for each call.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Footer
-{% endanchor %}
+</page-anchor>
 
 *Name - `footer`*
 
@@ -239,9 +239,9 @@ You must provide either text/html or text/plain, or both, to avoid receiving a "
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Google Analytics
-{% endanchor %}
+</page-anchor>
 
 *Name - `ganalytics`*
 
@@ -273,9 +273,9 @@ At least one of the optional parameters needs to be passed to avoid a "missing p
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 SPAM Filter Checker
-{% endanchor %}
+</page-anchor>
 
 *Name - `spamcheck`*
 
@@ -303,9 +303,9 @@ SPAM Filter Checker
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Subscription Tracking
-{% endanchor %}
+</page-anchor>
 
 *Name - `subscriptiontrack`*
 
@@ -337,9 +337,9 @@ You must pass at least one of the optional params in order to avoid the "missing
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 SendGrid for New Relic
-{% endanchor %}
+</page-anchor>
 
 *Name - `newrelic`*
 
@@ -365,9 +365,9 @@ SendGrid for New Relic
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Sendwithus
-{% endanchor %}
+</page-anchor>
 
 *Name - `sendwithus`*
 

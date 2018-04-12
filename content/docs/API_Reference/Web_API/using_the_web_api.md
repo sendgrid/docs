@@ -6,9 +6,9 @@ navigation:
   show: true
 ---
 
-{% anchor h2 %}
-URL Format 
-{% endanchor %}
+<page-anchor el="h2">
+URL Format
+</page-anchor>
 <p>The following is the syntax for making Web API requests:</p>
 
 <h4>Example WEB API URL</h4>
@@ -28,13 +28,13 @@ https://api.sendgrid.com/api/blocks.get.json
 <hr/>
 
 
-{% anchor h2 %}
-Responses 
-{% endanchor %}
+<page-anchor el="h2">
+Responses
+</page-anchor>
 
-{% anchor h3 %}
-HTTP Return codes 
-{% endanchor %}
+<page-anchor el="h3">
+HTTP Return codes
+</page-anchor>
 <ul>
 	<li><strong>2XX</strong> - The API call was successful.</li>
 	<li><strong>4XX</strong> - The API call had an error in the parameters. The error will be encoded in the body of the response.</li>
@@ -44,9 +44,9 @@ HTTP Return codes
 
 <p>The formats supported are XML and JSON. Errors and success responses are described below while calls that provide information have their own return structure.</p>
 
-{% anchor h3 %}
-Errors 
-{% endanchor %}
+<page-anchor el="h3">
+Errors
+</page-anchor>
 <ul>
 	<li>XML
 {% codeblock lang:xml %}<result>
@@ -71,9 +71,9 @@ Errors
 </li>
 </ul>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Success
-{% endanchor %}
+</page-anchor>
 <ul>
 	<li>XML
 {% codeblock lang:xml %}<result>
@@ -91,9 +91,9 @@ success
 </ul>
 <hr/>
 
-{% anchor h2 %}
-Authentication 
-{% endanchor %}
+<page-anchor el="h2">
+Authentication
+</page-anchor>
 <p>Each API call requires authentication. You must send the following HTTP parameters on your API calls. Your credentials will be the same as what you used for your SMTP authentication and/or website.</p>
 <ul>
 	<li><strong>api_user</strong> - This is the same credential used for your SMTP settings, and for logging into the website.</li>
@@ -110,18 +110,18 @@ https://api.sendgrid.com/api/blocks.get.json?api_user=your_sendgrid_username&api
 <p>For detailed information on the available Web API methods, select one from the tree on the left.</p>
 
 
-{% anchor h2 %}
+<page-anchor el="h2">
 The Data
-{% endanchor %}
+</page-anchor>
 
-When you send data a GET request, it usually means that you're sending data in the URL's query string, the part after the '?' in the url, as a key/value pair. The key is defined by the place where you are sending the data and is assumed to be URL-safe, however the data you provide may not be. So, you should urlencode the value (or the data part) of any URL-passed information. 
+When you send data a GET request, it usually means that you're sending data in the URL's query string, the part after the '?' in the url, as a key/value pair. The key is defined by the place where you are sending the data and is assumed to be URL-safe, however the data you provide may not be. So, you should urlencode the value (or the data part) of any URL-passed information.
 
-For example, when you query google.com for "sendgrid.com/docs/" you get the following URL: 
+For example, when you query google.com for "sendgrid.com/docs/" you get the following URL:
 
 {% codeblock %}
 https://www.google.com/?gws_rd=ssl#q=sendgrid.com%2Fdocs%2F
 {% endcodeblock %}
 
-Where "sendgrid.com/docs/" was encoded to "sendgrid.com%2Fdocs%2F" in the URL. 
+Where "sendgrid.com/docs/" was encoded to "sendgrid.com%2Fdocs%2F" in the URL.
 
 Most programming languages have support for urlencoding, but should you need a character lookup to reference, please see the [Wikipedia doc about urlencoding](http://en.wikipedia.org/wiki/Percent-encoding).

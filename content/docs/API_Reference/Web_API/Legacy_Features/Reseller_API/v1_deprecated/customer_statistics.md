@@ -12,9 +12,9 @@ navigation:
 This feature is deprecated, please go to the [Version 2]({{root_url}}/API_Reference/Web_API/Reseller_API/customer_statistics.html) Reseller Customer Statistics page.
 {% endwarning %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Retrieve Customer Statistics
-{% endanchor %}
+</page-anchor>
 
 Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
@@ -100,9 +100,9 @@ stats><day><date>2009-06-20</date><requests>12342</requests><bounces>12</bounces
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Retrieve Aggregates
-{% endanchor %}
+</page-anchor>
 
 Retrieve all-time totals for your customer
 
@@ -176,9 +176,9 @@ stats><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><open
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Category List
-{% endanchor %}
+</page-anchor>
 
 Retrieve a list of all the categories used in your customers account.
 
@@ -255,9 +255,9 @@ categories><category>categoryA</category><category>categoryB</category><category
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Category Statistics
-{% endanchor %}
+</page-anchor>
 
 Retrieve statistics broken down by category. If the category does not exist, there will be an empty result set.
 

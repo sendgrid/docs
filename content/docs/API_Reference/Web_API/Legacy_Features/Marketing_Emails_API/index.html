@@ -23,9 +23,9 @@ Please see our [Migration Toolkit]({{root_url}}/User_Guide/Legacy_Newsletter/Leg
 
 <hr/>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 URL Format
-{% endanchor %}
+</page-anchor>
 <p>The following is the syntax for making Marketing Email API requests:</p>
 
 <code>
@@ -40,23 +40,23 @@ URL Format
 </ul>
 <hr/>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 HTTP Return codes
-{% endanchor %}
+</page-anchor>
 <ul>
 	<li><strong>2XX</strong> - The API call was successful.</li>
 	<li><strong>4XX</strong> - The API call had an error in the parameters. The error will be encoded in the body of the response.</li>
 	<li><strong>5XX</strong> - The API call was unsuccessful. You should retry later.</li>
 </ul>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Responses
-{% endanchor %}
+</page-anchor>
 <p>The formats supported are XML and JSON. Errors and success responses are described below while calls that provide information have their own return structure.</p>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Errors
-{% endanchor %}
+</page-anchor>
 <ul>
 	<li>XML
 {% codeblock lang:xml %}<result>
@@ -99,9 +99,9 @@ success
 </ul>
 <hr/>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Authentication
-{% endanchor %}
+</page-anchor>
 <p>Each API call requires authentication. You must send the following HTTP parameters on your API calls. Your credentials are the same used for your SMTP authentication and/or website.</p>
 <ul>
 	<li><strong>api_user</strong> - This is the same credential used for your SMTP settings, and for logging into the website.</li>

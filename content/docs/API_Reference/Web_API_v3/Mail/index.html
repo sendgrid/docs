@@ -55,9 +55,9 @@ You may send mail via the v3 Mail Send endpoint via one of two ways:
   <li>You can make an HTTP Post request through one of our <a href="{{root_url}}/Integrate/libraries.html">7 libraries</a>.</li>
 </ul>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Authentication
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:bash %}
 curl -X "POST" "https://api.sendgrid.com/v3/mail/send" -H "Authorization: Bearer YOUR_API_KEY" -H "Content-Type: application/json" -d "[YOUR DATA HERE]"
@@ -65,9 +65,9 @@ curl -X "POST" "https://api.sendgrid.com/v3/mail/send" -H "Authorization: Bearer
 
 You must authenticate every API request to send mail by including an <code>Authorization</code> header. This header should include the authorization type of <code>Bearer</code>, followed by your API Key that has already been assigned the necessary permissions. Click <a href="{{root_url}}/API_Reference/Web_API_v3/How_To_Use_The_Web_API_v3/authentication.html">here</a> for more information.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Limitations
-{% endanchor %}
+</page-anchor>
 
 <ul>
   <li>The total size of your email, including attachments, must be less than 30MB.</li>
@@ -80,17 +80,17 @@ Limitations
 
 For more specific, parameter level requirements and limitations, see the <a href="#-Request-Body-Parameters">Request Body Parameters documentation</a>.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Validation
-{% endanchor %}
+</page-anchor>
 
 Whenever you make a request to the v3 Mail Send endpoint, your JSON payload is validated before your email is sent.
 
 If there are any errors, SendGrid will attempt to identify and return as many issues as possible for each request. For more information, please read our <a href="{{root_url}}/API_Reference/Web_API_v3/Mail/errors.html">error documentation</a>.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Request Body Parameters
-{% endanchor %}
+</page-anchor>
 
 Every request made to <code>/v3/mail/send</code> will require a request body formatted in JSON containing your email’s content and metadata. This may include information such as the recipient’s email address, the return address, and the subject.
 
@@ -173,9 +173,9 @@ Every request made to <code>/v3/mail/send</code> will require a request body for
       {% api_table_param utm_content string No "" "Used to differentiate your campaign from advertisements." 2 %}
       {% api_table_param utm_campaign string No "" "The name of the campaign." 2 %}
 {% endapi_table %}
-{% anchor h2 %}
+<page-anchor el="h2">
 Response Example
-{% endanchor %}
+</page-anchor>
 
 {% codeblock %}
 Response Code: 202 Accepted

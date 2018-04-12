@@ -12,9 +12,9 @@ navigation:
 This feature is deprecated, please go to the [Version 2]({{root_url}}/API_Reference/Web_API/Reseller_API/apps.html) Reseller Apps page.
 {% endwarning %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 List
-{% endanchor %}
+</page-anchor>
 
 List all of the available apps.
 
@@ -95,9 +95,9 @@ Note: The *name* entry is used in all the other API calls to identify a app.
 {% endcodeblock %}
 
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Activate App
-{% endanchor %}
+</page-anchor>
 
 <table class="table table-bordered table-striped">
    <thead>
@@ -175,9 +175,9 @@ Activate App
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Deactivate App
-{% endanchor %}
+</page-anchor>
 
 <table class="table table-bordered table-striped">
    <thead>
@@ -255,9 +255,9 @@ Deactivate App
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Customize App
-{% endanchor %}
+</page-anchor>
 
 These API calls require that settings are passed using POST.
 
@@ -325,10 +325,10 @@ This is returned if that filter has no settings or is not enabled.
 {% endcodeblock %}
 <hr/>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Get Current Settings
 
-{% endanchor %}
+</page-anchor>
 <h3>XML Call</h3>
 
 {% requestblock %}

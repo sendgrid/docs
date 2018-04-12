@@ -13,9 +13,9 @@ Groups are specific types of email you would like your recipients to be able to 
 The `name` and `description` of the Group will be visible by recipients when they are managing their subscriptions.
 {% endinfo %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 POST
-{% endanchor %}
+</page-anchor>
 Create a new suppression group.
 
 {% info %}
@@ -52,9 +52,9 @@ HTTP/1.1 201 OK
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 GET
-{% endanchor %}
+</page-anchor>
 Retrieve all suppression groups associated with the user.
 
 {% apiv3example get GET https://api.sendgrid.com/v3/asm/groups %}
@@ -82,9 +82,9 @@ Retrieve all suppression groups associated with the user.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 GET
-{% endanchor %}
+</page-anchor>
 Get information on a single suppression group.
 
 {% apiv3example get-specific GET https://api.sendgrid.com/v3/asm/groups/:group_id %}
@@ -102,9 +102,9 @@ Get information on a single suppression group.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 PATCH
-{% endanchor %}
+</page-anchor>
 Update a suppression group.
 
 {% parameters patch %}
@@ -126,9 +126,9 @@ HTTP/1.1 201 OK
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 GET
-{% endanchor %}
+</page-anchor>
 
 Retrieve information about multiple suppression groups.
 
@@ -167,9 +167,9 @@ HTTP/1.1 200 OK
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 DELETE
-{% endanchor %}
+</page-anchor>
 Delete a suppression group.
 
 {% info %}

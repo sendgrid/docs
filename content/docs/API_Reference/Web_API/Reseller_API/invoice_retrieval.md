@@ -10,9 +10,9 @@ Retrieve your invoice information.
 
 * * * * *
 
-{% anchor h2 %}
-Retrieve Invoice Numbers 
-{% endanchor %}
+<page-anchor el="h2">
+Retrieve Invoice Numbers
+</page-anchor>
 
 Return an array of invoice numbers to your account.
 
@@ -53,9 +53,9 @@ These are Reseller Only APIs. For more information, see [Reseller Overview](http
 
 * * * * *
 
-{% anchor h2 %}
-Retrieve Invoices 
-{% endanchor %}
+<page-anchor el="h2">
+Retrieve Invoices
+</page-anchor>
 
 Return an array of invoices.
 

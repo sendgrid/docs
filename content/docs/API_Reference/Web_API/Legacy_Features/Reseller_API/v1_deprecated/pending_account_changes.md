@@ -12,9 +12,9 @@ Retrieve pending update information for users that have scheduled upgrades to th
 
 * * * * *
 
-{% anchor h2 %}
-List Pending Changes 
-{% endanchor %}
+<page-anchor el="h2">
+List Pending Changes
+</page-anchor>
 
 Returns all of the users who have pending changes within your account.
 
@@ -109,9 +109,9 @@ result><pending><user><username>user4</username><type>Account Upgrade</type><cur
 
 * * * * *
 
-{% anchor h2 %}
-Delete Pending Changes 
-{% endanchor %}
+<page-anchor el="h2">
+Delete Pending Changes
+</page-anchor>
 
 Cancel/Revert a pending change.
 
@@ -204,9 +204,9 @@ result><message>success</message></result>
 
 * * * * *
 
-{% anchor h2 %}
-Immediate Upgrade 
-{% endanchor %}
+<page-anchor el="h2">
+Immediate Upgrade
+</page-anchor>
 
 Once an upgrade happens, an invoice is generated for that user. If it's a free user to a paid account, the full price for that upgrade will be created. If it's in between billing periods, a prorated discount will be applied to the invoice.
 
@@ -314,9 +314,9 @@ result><message>success</message></result>
 
 * * * * *
 
-{% anchor h2 %}
-Immediate Downgrade 
-{% endanchor %}
+<page-anchor el="h2">
+Immediate Downgrade
+</page-anchor>
 
 Once a downgrade happens, an invoice is generated for that user. Free customers are not allowed to downgrade.
 
@@ -424,9 +424,9 @@ result><message>success</message></result>
 
 * * * * *
 
-{% anchor h2 %}
-Immediate Close 
-{% endanchor %}
+<page-anchor el="h2">
+Immediate Close
+</page-anchor>
 
 Close or revert an account to a free user immediately. An invoice is generated for that user with the new package price (if no overages are incurred, an invoice with zero amount due is generated.
 
@@ -524,9 +524,9 @@ result><message>success</message></result>
 
 * * * * *
 
-{% anchor h2 %}
-Scheduled Upgrade 
-{% endanchor %}
+<page-anchor el="h2">
+Scheduled Upgrade
+</page-anchor>
 
 Apply an upgrade at the end of the user's billing cycle. Once an upgrade happens, an invoice is generated for that user with the new package price. Prorated charges do not apply here.
 
@@ -634,9 +634,9 @@ result><message>success</message></result>
 
 * * * * *
 
-{% anchor h2 %}
-Scheduled Downgrade 
-{% endanchor %}
+<page-anchor el="h2">
+Scheduled Downgrade
+</page-anchor>
 
 Apply a downgrade at the end of the user's billing cycle. Once a downgrade happens, an invoice is generated for that user with the new package price. Prorated charges do not apply here.
 
@@ -744,9 +744,9 @@ result><message>success</message></result>
 
 * * * * *
 
-{% anchor h2 %}
-Scheduled Close 
-{% endanchor %}
+<page-anchor el="h2">
+Scheduled Close
+</page-anchor>
 
 Close or revert an account to a free user at the end of the user's billing cycle. Once a closure happens, an invoice is generated for that user with the new package price (if no overages are incurred, an invoice with zero amount due is generated.
 

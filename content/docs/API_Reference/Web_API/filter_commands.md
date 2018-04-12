@@ -10,9 +10,9 @@ navigation:
   These API requests are Account Wide settings, unlike the SMTP API which will change the status at the individual email message level.
 {% endinfo %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Get Available
-{% endanchor %}
+</page-anchor>
 
 List all of the available apps.
 
@@ -51,9 +51,9 @@ List all of the available apps.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Activate App
-{% endanchor %}
+</page-anchor>
 
 Activate an app for the entire Account.
 
@@ -78,9 +78,9 @@ Activate an app for the entire Account.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Deactivate App
-{% endanchor %}
+</page-anchor>
 
 Deactivate an app for the entire Account.
 
@@ -105,9 +105,9 @@ Deactivate an app for the entire Account.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Setup App
-{% endanchor %}
+</page-anchor>
 
 Change application settings across the entire Account. Applications and their settings can be found in the [Filter Settings documentation]({{root_url}}/API_Reference/Web_API/filter_settings.html).
 
@@ -127,9 +127,9 @@ Change application settings across the entire Account. Applications and their se
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Get App Settings
-{% endanchor %}
+</page-anchor>
 
 Get the Settings Of An App
 

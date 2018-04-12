@@ -17,9 +17,9 @@ You can also send email with [the UI](https://sendgrid.com/docs/User_Guide/Marke
 - [What is SMTP?](#-What-is-smtp)
 - [Sending a test SMTP email with Telnet](#-Sending-a-test-SMTP-email-with-Telnet)
 
-{% anchor h2 %}
+<page-anchor el="h2">
 What is SMTP?
-{% endanchor %}
+</page-anchor>
 
 [SMTP]({{root_url}}/Glossary/smtp.html), or _simple mail transfer protocol_, is a quick and easy way to send email from one server to another. SendGrid provides an SMTP service that allows you to deliver your email via our server instead of your client or server.
 
@@ -29,13 +29,13 @@ The X-SMTPAPI headers that you add are stripped from the final email because the
 
 For a deeper dive into what SMTP is, the benefits of sending an email with SMTP, and how SendGrid can help, see the [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/) on our blog.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Sending a test SMTP email with Telnet
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Before you begin
-{% endanchor %}
+</page-anchor>
 
 - Create a SendGrid API key on the [API Keys page](https://app.sendgrid.com/settings/api_keys).
 - Open your command line, bash, shell, or Terminal functionality (depending on what OS you are using). You'll use this window to input the commands to initiate a telnet connection.
@@ -47,11 +47,11 @@ Telnet does not register backspaces correctly - so you have to type your command
 
 *To send SMTP email using Telnet:*
 
-1. Start your session by typing in the terminal: `TELNET smtp.sendgrid.net 25`. 
+1. Start your session by typing in the terminal: `TELNET smtp.sendgrid.net 25`.
     <br>SendGrid accepts unencrypted and TLS connections on ports **25**, **587**, & **2525**. You can also connect via SSL on port **465**. Many hosting providers and ISPs block port 25 as a default practice. If this is the case, contact your host/ISP to find out which ports are open for outgoing SMTP relay. We recommend port 587 to avoid any rate limiting that your server host may apply.
-1. Once you successfully connect to the SendGrid, login to the server by typing `AUTH LOGIN`. 
+1. Once you successfully connect to the SendGrid, login to the server by typing `AUTH LOGIN`.
     <br>The mail server responds with `334 VXNlcm5hbWU6`, a Base64 encoded request for your username. If you receive this error: `'telnet' is not recognized as an internal or external command, operable program or batch file`, you need to install Telnet on your machine. Telnet comes natively on most operating systems.
-1. Input the API username encoded in Base64. Everyone's username is `apikey`, which is `YXBpa2V5` in Base64. 
+1. Input the API username encoded in Base64. Everyone's username is `apikey`, which is `YXBpa2V5` in Base64.
     <br>The mail server responds with `334 UGFzc3dvcmQ6`. This response is a Base64 encoded request for your password (your API Key).
 1. Enter your Base64 converted API key in the next line as the password.
     <br>The mail server responds with `235 Authentication successful`. Getting this far indicates that your connection to smtp.sendgrid.net over the chosen port is open and that your API key is valid.
@@ -70,7 +70,7 @@ Telnet does not register backspaces correctly - so you have to type your command
 
 Now that you've sent a test email, learn to [integrate your servers with our SMTP API]({{root_url}}/API_Reference/SMTP_API/integrating_with_the_smtp_api.html).
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Additional Resources
 {% endanchor h2 %}
 

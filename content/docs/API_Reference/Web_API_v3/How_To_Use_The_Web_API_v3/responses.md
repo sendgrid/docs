@@ -8,9 +8,9 @@ weight: 97
 navigation:
   show: true
 ---
-{% anchor h3 %}
+<page-anchor el="h3">
 Content-Type Header
-{% endanchor %}
+</page-anchor>
 
 All responses are returned in JSON format. We specify this by sending
 the `Content-Type` header.
@@ -30,9 +30,9 @@ Content-Type: application/json
 
 * * * * *
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Status Codes
-{% endanchor %}
+</page-anchor>
 
 Below is a table description of the various status codes we currently
 support against resources.
@@ -70,9 +70,9 @@ support against resources.
 
 * * * * *
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Pagination
-{% endanchor %}
+</page-anchor>
 
 When a request is made with a pagination query, the following data is
 included in the header to allow for easy traversal of previous, current,

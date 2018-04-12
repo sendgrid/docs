@@ -6,19 +6,19 @@ navigation:
   show: true
 ---
 
-{% anchor h2 %}   
-POST    
-{% endanchor %}   
-Add IP Addresses. 
-    
-{% parameters post %}   
+<page-anchor el="h2">
+POST
+</page-anchor>
+Add IP Addresses.
+
+{% parameters post %}
   {% parameter count Yes Integer 'The amount of IPs to add to the account.' %}
   {% parameter subuser No String 'Array of usernames to be assigned a send IP.' %}
-{% endparameters %}   
-    
+{% endparameters %}
+
 {% apiv3example post POST https://api.sendgrid.com/v3/ips %}
 
-{% apiv3requestbody %} 
+{% apiv3requestbody %}
 {
   "count": 2,
   "subusers": [
@@ -30,9 +30,9 @@ Add IP Addresses.
 }
 {% endapiv3requestbody %}
 
-{% v3response %}    
-HTTP/1.1 201 OK   
-    
+{% v3response %}
+HTTP/1.1 201 OK
+
 {
   "ips": [
     {
@@ -53,14 +53,14 @@ HTTP/1.1 201 OK
   "remaining_ips": 1,
   "warmup": true
 }
-  {% endv3response %}   
-{% endapiv3example %} 
+  {% endv3response %}
+{% endapiv3example %}
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 GET
-{% endanchor %}
+</page-anchor>
 Get amount of IP Addresses that can still be created during a given period and the price of those IPs.
 
 {% apiv3example get GET https://api.sendgrid.com/v3/ips/remaining %}
@@ -82,9 +82,9 @@ HTTP/1.1 200 OK
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 GET
-{% endanchor %}
+</page-anchor>
 See a list of all assigned and unassigned IPs. Response includes warm up status, pools, assigned subusers, and whitelabel info.
 The start_date field corresponds to when warmup started for that IP.
 
@@ -107,9 +107,9 @@ HTTP/1.1 200 OK
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 GET
-{% endanchor %}
+</page-anchor>
 See only *assigned* IPs.
 
 {% apiv3example get GET https://api.sendgrid.com/v3/ips/assigned %}
@@ -129,14 +129,14 @@ HTTP/1.1 200 OK
 
 * * * * *
 
-{% anchor h2 %}		
-GET		
-{% endanchor %}		
-See which pools an IP address belongs to.		
-		
-{% apiv3example get-specific GET https://api.sendgrid.com/v3/ips/{ip_address}%}		
-  {% v3response %}		
-HTTP/1.1 200 OK	
+<page-anchor el="h2">
+GET
+</page-anchor>
+See which pools an IP address belongs to.
+
+{% apiv3example get-specific GET https://api.sendgrid.com/v3/ips/{ip_address}%}
+  {% v3response %}
+HTTP/1.1 200 OK
 
 {
   "ip": "000.00.00.0",
@@ -151,5 +151,5 @@ HTTP/1.1 200 OK
   "whitelabeled": true
 }
 
-  {% endv3response %}		
+  {% endv3response %}
 {% endapiv3example %}

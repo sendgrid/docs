@@ -8,9 +8,9 @@ navigation:
 
 
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Retrieve Spam Reports
-{% endanchor %}
+</page-anchor>
 
 {% parameters get %}
  {% parameter task Yes 'Must be set to <code>get</code>' 'Task to retrieve spam reports' %}
@@ -49,9 +49,9 @@ Retrieve Spam Reports
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Delete Spam Reports
-{% endanchor %}
+</page-anchor>
 SendGrid suppresses messages to spam-reporting addresses, but entries can be removed from the suppression list at any time if redelivery to a spam-reporting address is desired. Take care that the address should be redelivered to.
 
 {% parameters delete %}

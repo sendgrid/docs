@@ -7,7 +7,7 @@ navigation:
 seo:
   title: Create and edit Dynamic Transactional Templates
   override: true
-  description: 
+  description:
 ---
 
 - [Create a template](#-Create-a-template)
@@ -25,23 +25,23 @@ There is currently a limit of 300 templates and 300 versions that may be created
 Transactional templates are account and subuser specific. Templates created on a parent account will not be accessible from the subuser accounts.
 {% endinfo %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Create a template
 {% endanchor h2 %}
 
 1. Open the [Transactional Templates](https://sendgrid.com/dynamic_templates) page and click **Create Template**.
-1. Add a unique template name in the dialogue box and then click **Save**. 
+1. Add a unique template name in the dialogue box and then click **Save**.
 
 ![](/images/templates_create_edit_2.png "Template Name")
 
-1. Click **Add Version**. 
+1. Click **Add Version**.
 1. Select the editor you want to use to build your template.
 
-The Code Editor is perfect for users who are  creating or editing custom HTML. It offers a robust environment to upload images, backed by a feature-packed editor – complete with split-screen preview, error flagging, scroll-syncing, syntax highlighting and more. 
+The Code Editor is perfect for users who are  creating or editing custom HTML. It offers a robust environment to upload images, backed by a feature-packed editor – complete with split-screen preview, error flagging, scroll-syncing, syntax highlighting and more.
 
 The Design Editor, complete with HTML access to each content module, offers powerful “what you see is what you get” (WYSIWYG) editing. It features a diverse library of content blocks, allowing you to build beautiful templates quickly and intuitively. Once placed into your template, each module offers access to edit the HTML and a robust panel of settings – perfect for customizing content precisely to your needs.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Editing your HTML template
 {% endanchor h2 %}
 
@@ -51,41 +51,41 @@ Email templates are table-based HTML with inline or header styles, because some 
 
 The easiest way to get started with a new template is to use one of your previous email templates or a free template from the internet, and then modify it to fit your needs.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Using the Code Editor
-{% endanchor %}
+</page-anchor>
 
 *To edit a template using the Code Editor:*
 
-1. If you selected the Code Editor, copy and paste your HTML code into the code editor. 
-<br></br>If you paste in an email template, it is likely that you will overwrite the default and very basic email HTML that is provided in the code editor. 
+1. If you selected the Code Editor, copy and paste your HTML code into the code editor.
+<br></br>If you paste in an email template, it is likely that you will overwrite the default and very basic email HTML that is provided in the code editor.
 2. To add an image to your template, select the **images** icon above the HTML code.
-3. Select the image you want to add from your image library. To add more images to your library, drag them into the box at the top of the library or click **choose images to upload**. 
+3. Select the image you want to add from your image library. To add more images to your library, drag them into the box at the top of the library or click **choose images to upload**.
 4. Select the **Image Details** tab and copy the URL in the *Image Source URL* tab by clicking **Copy URL**.
 5. Paste this URL in an image source tag in your campaign or template's HTML.
 Example: `<img src="your image URL here">`
 6. When you’re done editing, click **Save**. <br></br>Please double check that the content is formatted correctly before you send an email using this template.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Using the Design Editor
-{% endanchor %}
+</page-anchor>
 
 *To edit a template using the Design Editor:*
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Preview and test your template
 {% endanchor h2 %}
 
 SendGrid suggests previewing and testing your template once you have created it to ensure that the format and layout look the way you expect.
 
 *To preview your template:*
- 
+
 1. Select **Preview**.  <br></br>A window pops out with a preview of the email that you’re going to test, with the option to view the template formatted for both mobile and desktop platforms.
 
 ![](/images/template_engine_12.png "Preview option")
 
-1. Click **Send Test** to send a test email using your new template. 
-1. Fill in the *recipient* and *subject line* fields and then click **Send**.  
+1. Click **Send Test** to send a test email using your new template.
+1. Fill in the *recipient* and *subject line* fields and then click **Send**.
 
 ![](/images/templates_create_edit_8.png "Preview and Test")
 
@@ -93,14 +93,14 @@ SendGrid suggests previewing and testing your template once you have created it 
 
 Any Substitution tags will not be populated in this test, but you will be able to confirm the layout and format of your template.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Activate your template
 {% endanchor h2 %}
 
 *To activate your template:*
 
 1. Navigate to the template you wish to use and select the action menu.
-1. Select **Make Active**.  
+1. Select **Make Active**.
 
 {% info %}
 
@@ -108,18 +108,18 @@ A template can only have one active version at a time. If you’ve created a new
 
 {% endinfo %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Duplicate a Template
 {% endanchor h2 %}
 
 *To duplicate a template:*
 
 1. Navigate to the template you wish to use and select the action menu.
-1. Select **Duplicate**.  
+1. Select **Duplicate**.
 
 This creates a clone, giving it a name that includes the original version name, the word “copy,” and today’s date. This duplicate version will not be active until you activate it.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Unsubscribe Substitution Tags
 {% endanchor h2 %}
 
@@ -135,25 +135,25 @@ You must also specify which unsubscribe groups to include on the Manage Preferen
 You can find your group IDs by looking at the Group ID column in the [Unsubscribe Groups UI]({{site.app_url}}/suppressions/advanced_suppression_manager), or by calling the [GET method]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/groups.html#-GET) of the groups resource.
 {% endinfo %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Unsubscribe From This List
-{% endanchor h3 %}
+</page-anchor>
 
 When you add the ```<%asm_group_unsubscribe_url%>``` tag to your email, we will replace that tag with the text "Unsubscribe From This List," wherever the tag is found in your email. This link will allow your recipients to unsubscribe from the [unsubscribe group]({{root_url}}/User_Guide/Suppressions/group_unsubscribes.html) that you attached to this email.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Unsubscribe From All Emails
-{% endanchor h3 %}
+</page-anchor>
 
 When you add the ```<%asm_global_unsubscribe_url%>``` tag to your email, we will replace that tag with the text "Unsubscribe From All Emails," wherever the tag is found in your email. This will allow your recipient to be [globally unsubscribed]({{root_url}}/User_Guide/Suppressions/global_unsubscribes.html) from all of your emails.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Manage Email Preferences
-{% endanchor h3 %}
+</page-anchor>
 
 When you add the ```<%asm_preferences_url%>``` tag to your email, we will replace that tag with the text "Manage Email Preferences," wherever the tag is found in your email. This will allow your recipients to see your Unsubscribe Groups in a [Subscription Preference page]({{root_url}}/User_Guide/Suppressions/recipient_subscription_preferences.html) and then choose which groups they are interested in.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Additional Resources
 {% endanchor h2 %}
 

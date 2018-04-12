@@ -13,15 +13,15 @@ navigation:
   show: true
 ---
 
-{% anchor h2 %}
+<page-anchor el="h2">
 What are link whitelabels?
-{% endanchor %}
+</page-anchor>
 
 When you have click or open tracking turned on or put a link or an image that has been hyperlinked into an email, the click tracking links will be overwritten with SendGrid click tracking links. To prevent SendGrid from being displayed in your message headers or the HTML for your links, we recommend you whitelabel your email links.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Why should I whitelabel my links?
-{% endanchor %}
+</page-anchor>
 
 Some bad actors will use third party link shortening services to populate the domains they list in their email content and they do not include their own domain in those links and do this in an attempt to mask the true destination of the links. This practice is a red flag to spam filters and can negatively impact deliverability.
 

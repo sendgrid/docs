@@ -6,9 +6,9 @@ navigation:
    show: true
 ---
 
-{% anchor h2 %}
-Retrieve Bounces 
-{% endanchor %}
+<page-anchor el="h2">
+Retrieve Bounces
+</page-anchor>
 
 
 {% parameters get %}
@@ -57,9 +57,9 @@ Retrieve Bounces
 
 * * * * *
 
-{% anchor h2 %}
-Delete Bounces 
-{% endanchor %}
+<page-anchor el="h2">
+Delete Bounces
+</page-anchor>
 
 Since SendGrid does not re-deliver to bounced addresses, users can remove bounces from their list at any time if redelivery to a bounced address is desired.
 

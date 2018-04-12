@@ -6,9 +6,9 @@ navigation:
   show: true
 ---
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Parse Webhook
-{% endanchor %}
+</page-anchor>
 
 In this example, we want to parse all emails at *address*@email.sendgrid.biz and post the parsed email to http://sendgrid.biz/parse . We will be using Node and the Express framework.
 
@@ -52,9 +52,9 @@ var server = app.listen(app.get('port'), function() {
 {% endcodeblock %}
 
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Event Webhook
-{% endanchor %}
+</page-anchor>
 
 To use the Event Webhook, you must first [setup Event Notification]({{%20root_url%20}}/API_Reference/Webhooks/event.html#-Setup).
 

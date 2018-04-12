@@ -1,5 +1,5 @@
 ---
-seo:		
+seo:
   title: Substitution and Section Tags
   description: Substitution and Section Tags
   keywords:
@@ -11,27 +11,27 @@ navigation:
   show: true
 ---
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Simple Name Substitution
-{% endanchor %}
+</page-anchor>
 
 This example will show you how to create a name substitution for your emails. We will be using the tag {% raw %}{{name}}{% endraw %} in this example. In this example the tag {% raw %}{{name}}{% endraw %} will get replaced with the name of the recipient.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Email Content
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Text
-{% endanchor %}
+</page-anchor>
 
 {% codeblock %}
 Hello {% raw %}{{name}}{% endraw %},
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 HTML
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:html %}
 <html>
@@ -43,9 +43,9 @@ HTML
 </html>
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 X-SMTPAPI Header
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:json %}
 {
@@ -60,9 +60,9 @@ X-SMTPAPI Header
 }
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 v3 Mail Send
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:json %}
 {
@@ -114,25 +114,25 @@ v3 Mail Send
 }
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Example Outcome:
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 example01@domain.com
-{% endanchor %}
+</page-anchor>
 
-{% anchor h5 %}
+<page-anchor el="h5">
 Text
-{% endanchor %}
+</page-anchor>
 
 {% codeblock %}
 Hello John,
 {% endcodeblock %}
 
-{% anchor h5 %}
+<page-anchor el="h5">
 HTML
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:html %}
 <html>
@@ -144,21 +144,21 @@ HTML
 </html>
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 example02@domain.com
-{% endanchor %}
+</page-anchor>
 
-{% anchor h5 %}
+<page-anchor el="h5">
 Text
-{% endanchor %}
+</page-anchor>
 
 {% codeblock %}
 Hello Jane,
 {% endcodeblock %}
 
-{% anchor h5 %}
+<page-anchor el="h5">
 HTML
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:html %}
 <html>
@@ -170,21 +170,21 @@ HTML
 </html>
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 example03@domain.com
-{% endanchor %}
+</page-anchor>
 
-{% anchor h5 %}
+<page-anchor el="h5">
 Text
-{% endanchor %}
+</page-anchor>
 
 {% codeblock %}
 Hello Matt,
 {% endcodeblock %}
 
-{% anchor h5 %}
+<page-anchor el="h5">
 HTML
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:html %}
 <html>
@@ -196,27 +196,27 @@ HTML
 </html>
 {% endcodeblock %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 First Name and Last Name Substitutions
-{% endanchor %}
+</page-anchor>
 
 This example will show you how to create a first name and last name substitution for your emails. We will be using the tags "{% raw %}{{first_name}}{% endraw %}" and "{% raw %}{last_name}}{% endraw %}" in this example. In this example the tag {% raw %}{{first_name}}{% endraw %} will get replaced with the first name of the recipient and the tag {% raw %}{{last_name}}{% endraw %} will get replaced with the last name of the recipient.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Email Content
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Text
-{% endanchor %}
+</page-anchor>
 
 {% codeblock %}
 Hello {% raw %}{{first_name}}{% endraw %} {% raw %} {{last_name}}{% endraw %},
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 HTML
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:html %}
 <html>
@@ -228,9 +228,9 @@ HTML
 </html>
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 X-SMTPAPI Header
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:json %}
 {
@@ -246,9 +246,9 @@ X-SMTPAPI Header
 }
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 v3 Mail Send
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:json %}
 {
@@ -303,25 +303,25 @@ v3 Mail Send
 }
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Example Outcome:
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 example01@domain.com
-{% endanchor %}
+</page-anchor>
 
-{% anchor h5 %}
+<page-anchor el="h5">
 Text
-{% endanchor %}
+</page-anchor>
 
 {% codeblock %}
 Hello John Smith,
 {% endcodeblock %}
 
-{% anchor h5 %}
+<page-anchor el="h5">
 HTML
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:html %}
 <html>
@@ -333,21 +333,21 @@ HTML
 </html>
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 example02@domain.com
-{% endanchor %}
+</page-anchor>
 
-{% anchor h5 %}
+<page-anchor el="h5">
 Text
-{% endanchor %}
+</page-anchor>
 
 {% codeblock %}
 Hello Jane Williams,
 {% endcodeblock %}
 
-{% anchor h5 %}
+<page-anchor el="h5">
 HTML
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:html %}
 <html>
@@ -359,21 +359,21 @@ HTML
 </html>
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 example03@domain.com
-{% endanchor %}
+</page-anchor>
 
-{% anchor h5 %}
+<page-anchor el="h5">
 Text
-{% endanchor %}
+</page-anchor>
 
 {% codeblock %}
 Hello Matt Johnson,
 {% endcodeblock %}
 
-{% anchor h5 %}
+<page-anchor el="h5">
 HTML
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:html %}
 <html>
@@ -385,27 +385,27 @@ HTML
 </html>
 {% endcodeblock %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Simple Greeting Section with Name Substitution
-{% endanchor %}
+</page-anchor>
 
 This example will show you how to create a section as a greeting with a name substitution. We will be using the tags "{% raw %}{{warm_welcome}}{% endraw %}", "{% raw %}{{greeting}}{% endraw %}" and "{% raw %}{{name}}{% endraw %}" in this example. In this example we have created a greeting using the section tag {% raw %}{{warm_welcome}}{% endraw %}. The {% raw %}{{warm_welcome}}{% endraw %} tag is replaced with the {% raw %}{{greeting}}{% endraw %} substitution which calls the section "Hello {% raw %}{{name}}{% endraw %},". The {% raw %}{{name}}{% endraw %} tag in "Hello {% raw %}{{name}}{% endraw %}," is then replaced with the recipients name.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Email Content
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Text
-{% endanchor %}
+</page-anchor>
 
 {% codeblock %}
 {% raw %}{{warm_welcome}}{% endraw %}
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 HTML
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:html %}
 <html>
@@ -417,9 +417,9 @@ HTML
 </html>
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 X-SMTPAPI Header
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:json %}
 {
@@ -438,9 +438,9 @@ X-SMTPAPI Header
 }
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 v3 Mail Send
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:json %}
 {
@@ -497,25 +497,25 @@ v3 Mail Send
 }
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Example Outcome:
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 example01@domain.com
-{% endanchor %}
+</page-anchor>
 
-{% anchor h5 %}
+<page-anchor el="h5">
 Text
-{% endanchor %}
+</page-anchor>
 
 {% codeblock %}
 Hello John,
 {% endcodeblock %}
 
-{% anchor h5 %}
+<page-anchor el="h5">
 HTML
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:html %}
 <html>
@@ -527,21 +527,21 @@ HTML
 </html>
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 example02@domain.com
-{% endanchor %}
+</page-anchor>
 
-{% anchor h5 %}
+<page-anchor el="h5">
 Text
-{% endanchor %}
+</page-anchor>
 
 {% codeblock %}
 Hello Jane,
 {% endcodeblock %}
 
-{% anchor h5 %}
+<page-anchor el="h5">
 HTML
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:html %}
 <html>
@@ -553,21 +553,21 @@ HTML
 </html>
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 example03@domain.com
-{% endanchor %}
+</page-anchor>
 
-{% anchor h5 %}
+<page-anchor el="h5">
 Text
-{% endanchor %}
+</page-anchor>
 
 {% codeblock %}
 Hello Matt,
 {% endcodeblock %}
 
-{% anchor h5 %}
+<page-anchor el="h5">
 HTML
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:html %}
 <html>
@@ -579,27 +579,27 @@ HTML
 </html>
 {% endcodeblock %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Greeting Section with First & Last Name Substitutions
-{% endanchor %}
+</page-anchor>
 
 This example will show you how to create a section with first name and last name substitution for your emails. We will be using the tags "{% raw %}{{warm_welcome}}{% endraw %}", "{% raw %}{{greeting}}{% endraw %}", "{% raw %}{{first_name}}{% endraw %}" and "{% raw %}{{last_name}}{% endraw %}" in this example. In this example we have created a greeting using the section tag {% raw %}{{warm_welcome}}{% endraw %}. The {% raw %}{{warm_welcome}}{% endraw %} tag is replaced with the {% raw %}{{greeting}}{% endraw %} substitution which calls the section "Hello {% raw %}{{first_name}}{% endraw %} {% raw %}{{last_name}}{% endraw %},". The {% raw %}{{first_name}}{% endraw %} and {% raw %}{{last_name}}{% endraw %} tags in "Hello {% raw %}{{first_name}}{% endraw %} {% raw %}{{last_name}}{% endraw %}," is then replaced with the recipients first and last names.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Email Content
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Text
-{% endanchor %}
+</page-anchor>
 
 {% codeblock %}
 {% raw %}{{warm_welcome}}{% endraw %}
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 HTML
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:html %}
 <html>
@@ -611,9 +611,9 @@ HTML
 </html>
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 X-SMTPAPI Header
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:json %}
 {
@@ -633,9 +633,9 @@ X-SMTPAPI Header
 }
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 v3 Mail Send
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:json %}
 {
@@ -695,25 +695,25 @@ v3 Mail Send
 }
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Example Outcome:
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 example01@domain.com
-{% endanchor %}
+</page-anchor>
 
-{% anchor h5 %}
+<page-anchor el="h5">
 Text
-{% endanchor %}
+</page-anchor>
 
 {% codeblock %}
 Hello John Smith,
 {% endcodeblock %}
 
-{% anchor h5 %}
+<page-anchor el="h5">
 HTML
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:html %}
 <html>
@@ -725,21 +725,21 @@ HTML
 </html>
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 example02@domain.com
-{% endanchor %}
+</page-anchor>
 
-{% anchor h5 %}
+<page-anchor el="h5">
 Text
-{% endanchor %}
+</page-anchor>
 
 {% codeblock %}
 Hello Jane Williams,
 {% endcodeblock %}
 
-{% anchor h5 %}
+<page-anchor el="h5">
 HTML
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:html %}
 <html>
@@ -751,21 +751,21 @@ HTML
 </html>
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 example03@domain.com
-{% endanchor %}
+</page-anchor>
 
-{% anchor h5 %}
+<page-anchor el="h5">
 Text
-{% endanchor %}
+</page-anchor>
 
 {% codeblock %}
 Hello Matt Johnson,
 {% endcodeblock %}
 
-{% anchor h5 %}
+<page-anchor el="h5">
 HTML
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:html %}
 <html>
@@ -777,27 +777,27 @@ HTML
 </html>
 {% endcodeblock %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Three Different Greeting Sections with First & Last Name Substitutions
-{% endanchor %}
+</page-anchor>
 
 This example will show you how to create three different sections, each with first name and last name substitution for your emails. We will be using the tags "{% raw %}{{warm_welcome}}{% endraw %}", "{% raw %}{{greeting01}}{% endraw %}", "{% raw %}{{greeting02}}{% endraw %}", "{% raw %}{{greeting03}}{% endraw %}", "{% raw %}{{first_name}}{% endraw %}" and "{% raw %}{{last_name}}{% endraw %}" in this example. In this example we have created three different greetings using the section tag {% raw %}{{warm_welcome}}{% endraw %}. The {% raw %}{{warm_welcome}}{% endraw %} tag is replaced with either {% raw %}{{greeting01}}{% endraw %}, {% raw %}{{greeting02}}{% endraw %} or {% raw %}{{greeting03}}{% endraw %} substitution. This will call one of the three sections. In each of these sections there is the {% raw %}{{first_name}}{% endraw %} and {% raw %}{{last_name}}{% endraw %} tags which will get replaced with the recipients first and last names.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Email Content
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Text
-{% endanchor %}
+</page-anchor>
 
 {% codeblock %}
 {% raw %}{{warm_welcome}}{% endraw %}
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 HTML
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:html %}
 <html>
@@ -809,9 +809,9 @@ HTML
 </html>
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 X-SMTPAPI Header
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:json %}
 {
@@ -833,9 +833,9 @@ X-SMTPAPI Header
 }
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 v3 Mail Send
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:json %}
 {
@@ -897,25 +897,25 @@ v3 Mail Send
 }
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Example Outcome:
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 example01@domain.com
-{% endanchor %}
+</page-anchor>
 
-{% anchor h5 %}
+<page-anchor el="h5">
 Text
-{% endanchor %}
+</page-anchor>
 
 {% codeblock %}
 Welcome John Smith,
 {% endcodeblock %}
 
-{% anchor h5 %}
+<page-anchor el="h5">
 HTML
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:html %}
 <html>
@@ -927,21 +927,21 @@ HTML
 </html>
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 example02@domain.com
-{% endanchor %}
+</page-anchor>
 
-{% anchor h5 %}
+<page-anchor el="h5">
 Text
-{% endanchor %}
+</page-anchor>
 
 {% codeblock %}
 Hello Jane Williams,
 {% endcodeblock %}
 
-{% anchor h5 %}
+<page-anchor el="h5">
 HTML
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:html %}
 <html>
@@ -953,21 +953,21 @@ HTML
 </html>
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 example03@domain.com
-{% endanchor %}
+</page-anchor>
 
-{% anchor h5 %}
+<page-anchor el="h5">
 Text
-{% endanchor %}
+</page-anchor>
 
 {% codeblock %}
 Dear Matt Johnson,
 {% endcodeblock %}
 
-{% anchor h5 %}
+<page-anchor el="h5">
 HTML
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:html %}
 <html>
@@ -979,28 +979,28 @@ HTML
 </html>
 {% endcodeblock %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Three Confirmation Sections and Substitutions
-{% endanchor %}
+</page-anchor>
 
 This example will show you how to create three different sections for confirmation emails. We will be using the tags "{% raw %}{{name}}{% endraw %}", "{% raw %}{{confirmations}}{% endraw %}", "{% raw %}{{confirmation_001}}{% endraw %}", "{% raw %}{{confirmation_002}}{% endraw %}", "{% raw %}{{confirmation_003}}{% endraw %}" and "{% raw %}{{order_id}}{% endraw %}" in this example. In this example we have created three different confirmations using the section tag {% raw %}{{confirmations}}{% endraw %}. The {% raw %}{{confirmations}}{% endraw %} tag is replaced with either {% raw %}{{confirmation_001}}{% endraw %}, {% raw %}{{confirmation_002}}{% endraw %} or {% raw %}{{confirmation_003}}{% endraw %} substitution. This will call one of the three sections. In each of these sections there is the {% raw %}{{order_id}}{% endraw %} tag which will get replaced with the recipients order id.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Email Content
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Text
-{% endanchor %}
+</page-anchor>
 
 {% codeblock %}
 Hello {% raw %}{{name}}{% endraw %},
 {% raw %}{{confirmations}}{% endraw %}
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 HTML
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:html %}
 <html>
@@ -1013,9 +1013,9 @@ HTML
 </html>
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 X-SMTPAPI Header
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:json %}
 {
@@ -1033,9 +1033,9 @@ X-SMTPAPI Header
 }
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 v3 Mail Send
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:json %}
 {
@@ -1097,26 +1097,26 @@ v3 Mail Send
 }
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Example Outcome:
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 example01@domain.com
-{% endanchor %}
+</page-anchor>
 
-{% anchor h5 %}
+<page-anchor el="h5">
 Text
-{% endanchor %}
+</page-anchor>
 
 {% codeblock %}
 Welcome John,
 Thanks for choosing SendGrid. This email is to confirm that we have processed your order 12345.
 {% endcodeblock %}
 
-{% anchor h5 %}
+<page-anchor el="h5">
 HTML
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:html %}
 <html>
@@ -1129,22 +1129,22 @@ HTML
 </html>
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 example02@domain.com
-{% endanchor %}
+</page-anchor>
 
-{% anchor h5 %}
+<page-anchor el="h5">
 Text
-{% endanchor %}
+</page-anchor>
 
 {% codeblock %}
 Hello Jane,
 Thanks for choosing SendGrid. This email is to confirm that we have processed your order 23456. This invoice is to be paid by bank transfer within 7 days from the date of your monthly statement.
 {% endcodeblock %}
 
-{% anchor h5 %}
+<page-anchor el="h5">
 HTML
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:html %}
 <html>
@@ -1157,22 +1157,22 @@ HTML
 </html>
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 example03@domain.com
-{% endanchor %}
+</page-anchor>
 
-{% anchor h5 %}
+<page-anchor el="h5">
 Text
-{% endanchor %}
+</page-anchor>
 
 {% codeblock %}
 Dear Matt,
 Thanks for choosing SendGrid. This email is to confirm that we have processed your order 34567. You can download your invoice as a PDF for your records.
 {% endcodeblock %}
 
-{% anchor h5 %}
+<page-anchor el="h5">
 HTML
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:html %}
 <html>

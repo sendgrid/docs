@@ -10,9 +10,9 @@ navigation:
   show: true
 ---
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Table of Contents
-{% endanchor %}
+</page-anchor>
 
 * [What are API keys?](#-What-are-API-keys)
 * [Creating an API key](#-Creating-an-API-key)
@@ -22,9 +22,9 @@ Table of Contents
 * [Testing an API key](#-Testing-an-API-key)
 * [Inactivate an API Key](#-Inactivate-an-API-key)
 
-{% anchor h2 %}
+<page-anchor el="h2">
 What are API keys?
-{% endanchor %}
+</page-anchor>
 
 API keys are used by your application, mail client, or website to authenticate access to SendGrid services. They are the preferred alternative to using a username and password because you can revoke an API key at any time without having to change your username and password. We suggest that you use API keys for connecting to all of SendGrid’s services.
 
@@ -48,9 +48,9 @@ When viewing the API keys page, you will see a list of your current API keys alo
 
 {% info %} There is a limit of 100 API Keys per account. {% endinfo %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Creating an API key
-{% endanchor %}
+</page-anchor>
 
 1. Go to the API Keys page in the SendGrid UI, and click `Create API Key`.
 1. Give your API key a name.
@@ -65,9 +65,9 @@ You will only be shown your API key one time. Please store it somewhere safe as 
 
 {% info %} There is a limit of 100 API Keys per account. {% endinfo %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 API key permissions
-{% endanchor %}
+</page-anchor>
 
 During the API key creation process, you will be given the option of selecting specific permissions, or scopes, that you would like to assign to your new API key. These permissions restrict which areas of your account your API key will be able to access.
 
@@ -81,17 +81,17 @@ When assigning permissions to your API key, you will be given the option to sele
 You may not give an API key greater permissions than you currently have.
 {% endinfo %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Replacing an old API key with a new one
-{% endanchor %}
+</page-anchor>
 
-1. Locate the API key you would like to replace in your list of keys and select the action menu drop down at the right on the same row, then select **Delete API Key**. 
+1. Locate the API key you would like to replace in your list of keys and select the action menu drop down at the right on the same row, then select **Delete API Key**.
 1. Next, [create an API key](#-Creating-an-API-key).
 1. Replace the old API key with the new one in your code.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Testing an API key
-{% endanchor %}
+</page-anchor>
 
 You can easily test your newly created API key using cURL:
 
@@ -105,15 +105,15 @@ You can easily test your newly created API key using cURL:
 
 Look for a **202 Accepted** in the HTTP response headers.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Edit an API Key
-{% endanchor %}
+</page-anchor>
 
 Click the action menu in the same row as the key you would like to edit. From here you can delete a key, making it completely inactive, or you can edit your key’s name and permissions.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Inactivate an API Key
-{% endanchor %}
+</page-anchor>
 
 {% warning %}
 Once you delete a key, it can no longer be used to access SendGrid’s services.

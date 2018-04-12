@@ -16,13 +16,13 @@ seo:
 
 <iframe src="https://player.vimeo.com/video/120703745" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Before you Begin
 {% endanchor h2 %}
 
 Before you begin, go to your SendGrid [account settings]({{site.app_url}}/user/account) to verify that your timezone and account email address are correct. Verifying your account information ensures that when you upload contacts, you receive notifications and that we deliver scheduled emails at the correct time.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Adding a Sender
 {% endanchor h2 %}
 
@@ -56,9 +56,9 @@ If you have a [verified whitelabel domain]({{root_url}}/User_Guide/Settings/Whit
 Once you schedule a campaign, you cannot delete the sender identity associated with that campaign.
 {% endwarning %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Adding Sender Information to a Campaign
-{% endanchor %}
+</page-anchor>
 
 You can insert your sender identity information into your campaigns using the following tags within your campaign or template content:
 
@@ -89,8 +89,8 @@ To show your sender's full address and information in the footer of the email, S
 [Sender_City], [Sender_State] [Sender_Zip]
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Additional Resources
-{% endanchor h3 %}
+</page-anchor>
 
 - [Whitelabel](https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html)

@@ -6,9 +6,9 @@ navigation:
   show: true
 ---
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Parse Webhook
-{% endanchor %}
+</page-anchor>
 
 {% github sendgrid/sendgrid-go#example golang %}
 We recommend using our official Go SDK, our client library with full documentation, when integrating with <a href="https://github.com/sendgrid/sendgrid-go/tree/master/helpers/inbound">SendGrid's Inbound Parse Webhook</a>.

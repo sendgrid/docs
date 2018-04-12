@@ -6,9 +6,9 @@ navigation:
    show: true
 ---
 
-{% anchor h2 %}
-Retrieve Invalid Emails 
-{% endanchor %}
+<page-anchor el="h2">
+Retrieve Invalid Emails
+</page-anchor>
 
 {% parameters get %}
  {% parameter 'user' 'Yes' 'Customer must be registered under your account' 'The customer we are retrieving invalid emails from' %}
@@ -65,9 +65,9 @@ These are Reseller Only APIs. For more information, see [Reseller Overview](http
 
 * * * * *
 
-{% anchor h2 %}
-Delete Invalid Emails 
-{% endanchor %}
+<page-anchor el="h2">
+Delete Invalid Emails
+</page-anchor>
 
 Since SendGrid does not deliver to invalid emails, users can remove invalid emails from their list at any time if re-delivery to a spam reported address is desired.
 

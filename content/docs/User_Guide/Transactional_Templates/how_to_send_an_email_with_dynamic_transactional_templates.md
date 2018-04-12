@@ -7,7 +7,7 @@ navigation:
 seo:
   title: How to send an email with Dynamic Transactional Templates
   override: true
-  description: 
+  description:
 ---
 
 - [Before you begin](#-Before-you-begin)
@@ -16,9 +16,9 @@ seo:
   - [Send email using the SendGrid API](#-Send-email-using-the-SendGrid-API)
   - [Send email using SMTP](#-Send-email-using-SMTP)
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Before you begin
-{% endanchor %}
+</page-anchor>
 
 Before you create and send an email using a dynamic transactional template you need to do the following:
 
@@ -26,25 +26,25 @@ Before you create and send an email using a dynamic transactional template you n
 * Create an [API Key]({{root_url}}/User_Guide/Settings/api_keys.html)
 * Add an unsubscribe group (optional)
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Design a dynamic template
-{% endanchor %}
+</page-anchor>
 
 1. Open the [transactional templates](https://sendgrid.com/dynamic_templates) page and click **Create Template**.
-1. Add a unique template name and then click **Save**. 
+1. Add a unique template name and then click **Save**.
 1. To begin editing your new template, click **Add Version**.
 1. Select an editor and click **Continue**.
 1. Design your template. For more information on designing a Dynamic Transactional Template using the Design Editor or Code Editor, see [Create and edit Dynamic Transactional Templates]({{root_url}}/User_Guide/Transactional_Templates/create_and_edit_dynamic_transactional_templates.html).
 
 Here's a sample template: <a href="/source/assets/sample_dynamic_template.html" target="_blank">Hipster Cat Cafe</a>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Send a transactional email
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Send transactional email using the SendGrid API
-{% endanchor %}
+</page-anchor>
 
 *To send a dynamic transactional email:*
 
@@ -97,17 +97,17 @@ curl --request GET \
   --header 'Content-Type: application/json'
 {% endcodeblock %}
 
-You can also copy your template ID from the app and paste it into your call. 
+You can also copy your template ID from the app and paste it into your call.
 
 ![]({{root_url}}/img/dynamic_template_id.png "Dynamic Template ID")
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Send transactional email using SMTP
-{% endanchor %}
+</page-anchor>
 
 Coming soon!
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Additional Resources
 {% endanchor h2 %}
 

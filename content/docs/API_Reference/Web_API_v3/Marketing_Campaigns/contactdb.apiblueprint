@@ -663,9 +663,9 @@ the list of recipients. To avoid this issue; iterate over pages until a 404 is r
 
 ## Recipients Search [/contactdb/recipients/search]
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Search with conditions [POST]
-{% endanchor %}
+</page-anchor>
 
 <p>
   Search using segment conditions without actually creating a segment.

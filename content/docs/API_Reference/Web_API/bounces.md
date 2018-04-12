@@ -8,21 +8,21 @@ navigation:
 
 This endpoint allows you to retrieve and delete entries in the Bounces list.
 
-{% anchor h2 %}
-get 
-{% endanchor %}
+<page-anchor el="h2">
+get
+</page-anchor>
 
 Retrieve a list of bounces with addresses and response codes, optionally with dates.
 
-{% parameters get %} 
-  
-  {% parameter date No 'Must be set to 1.' 'Retrieve the timestamp of the bounce records. It will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS.' %}  
-  {% parameter days No 'If specified, must be an integer greater than 0.' 'Number of days in the past for which to retrieve bounces (includes today).' %}  
-  {% parameter start_date No 'Date must be in YYYY-MM-DD format and be earlier than the end_date parameter.' 'The start of the date range for which to retrieve bounces.' %}  
-  {% parameter end_date No 'Date must be in YYYY-MM-DD format and be later than the start_date parameter.' 'The end of the date range for which to retrieve bounces.' %}  
-  {% parameter limit No 'Some integer.' 'Optional field to limit the number of results returned.' %}  
-  {% parameter offset No 'Some integer.' 'Optional beginning point in the list to retrieve from.' %}  
-  {% parameter type No 'Hard or soft.' 'Choose the type of bounce to search for.' %}  
+{% parameters get %}
+
+  {% parameter date No 'Must be set to 1.' 'Retrieve the timestamp of the bounce records. It will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS.' %}
+  {% parameter days No 'If specified, must be an integer greater than 0.' 'Number of days in the past for which to retrieve bounces (includes today).' %}
+  {% parameter start_date No 'Date must be in YYYY-MM-DD format and be earlier than the end_date parameter.' 'The start of the date range for which to retrieve bounces.' %}
+  {% parameter end_date No 'Date must be in YYYY-MM-DD format and be later than the start_date parameter.' 'The end of the date range for which to retrieve bounces.' %}
+  {% parameter limit No 'Some integer.' 'Optional field to limit the number of results returned.' %}
+  {% parameter offset No 'Some integer.' 'Optional beginning point in the list to retrieve from.' %}
+  {% parameter type No 'Hard or soft.' 'Choose the type of bounce to search for.' %}
   {% parameter email No 'Email address eg testing@example.com.' 'Optional email addresses to search for.' %}
 {% endparameters %}
 
@@ -84,18 +84,18 @@ Retrieve a list of bounces with addresses and response codes, optionally with da
 
 * * * * *
 
-{% anchor h2 %}
-delete 
-{% endanchor %}
+<page-anchor el="h2">
+delete
+</page-anchor>
 
 Delete an address from the Bounce list.
 
-{% parameters delete %} 
-  
-  {% parameter start_date No 'Date must be in YYYY-mm-dd format and be before the end_date parameter.' 'Optional date to start deleting from.' %}  
-  {% parameter end_date No 'Date must be in YYYY-mm-dd format and be after the start_date parameter.' 'Optional date to end deleting from.' %}  
-  {% parameter type No 'Hard or soft.' 'Choose the type of bounce to be removed.' %}  
-  {% parameter email No 'Must be a valid user account email.' 'Email bounce address to remove.' %}  
+{% parameters delete %}
+
+  {% parameter start_date No 'Date must be in YYYY-mm-dd format and be before the end_date parameter.' 'Optional date to start deleting from.' %}
+  {% parameter end_date No 'Date must be in YYYY-mm-dd format and be after the start_date parameter.' 'Optional date to end deleting from.' %}
+  {% parameter type No 'Hard or soft.' 'Choose the type of bounce to be removed.' %}
+  {% parameter email No 'Must be a valid user account email.' 'Email bounce address to remove.' %}
   {% parameter delete_all No 'Must be set to 1.' 'This will delete the bounce list and will not be retrievable.' %}
 {% endparameters %}
 
@@ -113,13 +113,13 @@ Delete an address from the Bounce list.
 
 * * * * *
 
-{% anchor h2 %}
-Count 
-{% endanchor %}
-{% parameters count %} 
-  
-  {% parameter start_date No 'Date must be in YYYY-mm-dd format and be before the end_date parameter.' 'Optional date to start counting from.' %}  
-  {% parameter end_date No 'Date must be in YYYY-mm-dd format and be after the start_date parameter.' 'Optional date to end counting from.' %}  
+<page-anchor el="h2">
+Count
+</page-anchor>
+{% parameters count %}
+
+  {% parameter start_date No 'Date must be in YYYY-mm-dd format and be before the end_date parameter.' 'Optional date to start counting from.' %}
+  {% parameter end_date No 'Date must be in YYYY-mm-dd format and be after the start_date parameter.' 'Optional date to end counting from.' %}
   {% parameter type No 'Hard or soft.' 'Choose the type of bounce to search for.' %}
 {% endparameters %}
 

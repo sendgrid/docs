@@ -10,9 +10,9 @@ With the whitelabel API calls you will be able to retrieve whitelabel settings r
 
 * * * * *
 
-{% anchor h2 %}
-List 
-{% endanchor %}
+<page-anchor el="h2">
+List
+</page-anchor>
 
 
 {% parameters get %}
@@ -54,9 +54,9 @@ These are Reseller Only APIs. For more information, see [Reseller Overview](http
 
 * * * * *
 
-{% anchor h2 %}
-Append 
-{% endanchor %}
+<page-anchor el="h2">
+Append
+</page-anchor>
 
 
 {% parameters append %}

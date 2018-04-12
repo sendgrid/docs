@@ -14,7 +14,7 @@ We recommend using SendGrid Go, our client library, <a href="https://github.com/
 The library does not officially support the V2 API, but you can use V2 with an older version of the library. For more information, see [Continue Using V2 in Go](https://github.com/sendgrid/sendgrid-go/blob/master/TROUBLESHOOTING.md#v2).
 {% endinfo %}
 
-{% anchor h2 %} Using SendGrid's Go Library {% endanchor %}
+<page-anchor el="h2"> Using SendGrid's Go Library </page-anchor>
 {% codeblock lang:go %}
 // using SendGrid's Go Library
 // https://github.com/sendgrid/sendgrid-go

@@ -8,9 +8,9 @@ navigation:
 
 Manage your SendGrid [profile](https://sendgrid.com/settings/account) settings using our [Web API]({{root_url}}/API_Reference/Web_API/index.html).
 
-{% anchor h2 %}
+<page-anchor el="h2">
 get
-{% endanchor %}
+</page-anchor>
 
 {% apiexample get GET https://api.sendgrid.com/api/profile.get api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
@@ -56,9 +56,9 @@ get
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 set
-{% endanchor %}
+</page-anchor>
 
 {% parameters set %}
  {% parameter 'first_name' 'No' 'Your first name' %}
@@ -89,9 +89,9 @@ set
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 setPassword
-{% endanchor %}
+</page-anchor>
 
 {% parameters set %}
  {% parameter 'password' 'Yes' 'Please see the [SendGrid password requirements]({{root_url}}{{site.password_requirements}})' 'Your new password' %}
@@ -115,9 +115,9 @@ setPassword
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 setUsername
-{% endanchor %}
+</page-anchor>
 
 {% warning %}
 Please note, your account username is used to login to our SMTP server and the website. Changes will take effect immediately.
@@ -144,9 +144,9 @@ Please note, your account username is used to login to our SMTP server and the w
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 setEmail
-{% endanchor %}
+</page-anchor>
 
 {% info %}
 Please note, we send out a confirmation email to the new email account in order to be validated. Your email address changes when you click on the confirmation link.

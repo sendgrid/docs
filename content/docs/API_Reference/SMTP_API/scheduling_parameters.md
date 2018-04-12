@@ -32,9 +32,9 @@ Cancel Scheduled sends by including a batch ID with your send. For more informat
 Using both `send_at` and `send_each_at` is not valid. Setting both causes your request to be dropped.
 {% endwarning %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Send At
-{% endanchor %}
+</page-anchor>
 
 To schedule a send request for a large batch of emails, use the `send_at` parameter which will send all emails at approximately the same time. `send_at` is a [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time).
 
@@ -45,9 +45,9 @@ To schedule a send request for a large batch of emails, use the `send_at` parame
 }
 {% endcodeblock %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Send Each At
-{% endanchor %}
+</page-anchor>
 
 To schedule a send request for individual recipients; use `send_each_at` to send emails to each recipient at the specified time. `send_each_at` is a sequence of UNIX timestamps, provided as an array. There must be one timestamp per email you wish to send.
 
@@ -89,7 +89,7 @@ To allow for the cancellation of a scheduled send, you must include a `batch_id`
 }
 {% endcodeblock %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Additional Resources
 {% endanchor h2 %}
 

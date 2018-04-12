@@ -12,9 +12,9 @@ navigation:
 This feature is deprecated, please go to the [Version 2]({{root_url}}/API_Reference/Web_API/Reseller_API/customer_spam_reports.html) Reseller Customer Spam Reports page.
 {% endwarning %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Retrieve Spam Reports
-{% endanchor %}
+</page-anchor>
 
 <table class="table table-bordered table-striped">
    <thead>
@@ -95,9 +95,9 @@ spamreports><spamreport><email>emaieexampexample@example.com</email><created>200
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Delete Spam Reports
-{% endanchor %}
+</page-anchor>
 
 Since SendGrid does not deliver to spam reported addresses, users can remove spam reports from their list at any time if re-delivery to a spam reported address is desired.
 

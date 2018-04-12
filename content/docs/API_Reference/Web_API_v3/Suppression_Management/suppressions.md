@@ -8,9 +8,9 @@ navigation:
 
 Suppressions are email addresses that can be added to [groups]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/groups.html) to prevent certain types of emails from being delivered to those addresses.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 GET
-{% endanchor %}
+</page-anchor>
 
 Get all suppressions.
 
@@ -40,9 +40,9 @@ HTTP/1.1 200
 {% endv3response %}
 {% endapiv3example %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 GET
-{% endanchor %}
+</page-anchor>
 
 Retrieve all unsubscribe groups that the given email address has been added to.
 
@@ -81,9 +81,9 @@ HTTP/1.1 200
 {% endv3response %}
 {% endapiv3example %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 POST
-{% endanchor %}
+</page-anchor>
 
 Add recipient addresses to the suppressions list for a given group.
 
@@ -109,9 +109,9 @@ HTTP/1.1 201
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 GET
-{% endanchor %}
+</page-anchor>
 
 Get suppressed addresses for a given group.
 
@@ -127,9 +127,9 @@ HTTP/1.1 200
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 DELETE
-{% endanchor %}
+</page-anchor>
 
 Delete a recipient email from the suppressions list for a group.
 
@@ -139,9 +139,9 @@ HTTP/1.1 204
 {% endv3response %}
 {% endapiv3example %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 POST
-{% endanchor %}
+</page-anchor>
 
 Use this endpoint to determine if a given list of emails exists in the given suppression group.
 

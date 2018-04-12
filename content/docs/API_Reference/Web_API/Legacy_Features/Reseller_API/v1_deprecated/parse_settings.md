@@ -8,9 +8,9 @@ navigation:
    show: true
 ---
 
-{% anchor h2 %}
-Get Current Settings 
-{% endanchor %}
+<page-anchor el="h2">
+Get Current Settings
+</page-anchor>
 
 <table class="table table-bordered table-striped">
    <thead>
@@ -128,9 +128,9 @@ Get Current Settings
 
 * * * * *
 
-{% anchor h2 %}
-Edit Entry 
-{% endanchor %}
+<page-anchor el="h2">
+Edit Entry
+</page-anchor>
 
 <table class="table table-bordered table-striped">
    <thead>
@@ -253,9 +253,9 @@ Edit Entry
 
 * * * * *
 
-{% anchor h2 %}
-Delete Entry 
-{% endanchor %}
+<page-anchor el="h2">
+Delete Entry
+</page-anchor>
 
 <table class="table table-bordered table-striped">
    <thead>

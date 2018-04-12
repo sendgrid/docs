@@ -6,9 +6,9 @@ navigation:
    show: true
 ---
 
-{% anchor h2 %}
-List 
-{% endanchor %}
+<page-anchor el="h2">
+List
+</page-anchor>
 
 List all of the available apps.
 
@@ -59,9 +59,9 @@ Note: The *name* entry is used in all the other API calls to identify an app.
 
 * * * * *
 
-{% anchor h2 %}
-Activate App 
-{% endanchor %}
+<page-anchor el="h2">
+Activate App
+</page-anchor>
 
 
 {% parameters activate %}
@@ -87,9 +87,9 @@ Activate App
 
 * * * * *
 
-{% anchor h2 %}
-Deactivate App 
-{% endanchor %}
+<page-anchor el="h2">
+Deactivate App
+</page-anchor>
 
 {% parameters deactivate %}
  {% parameter 'task' 'Yes' 'Must be set to <em>deactivate</em>' 'Retrieve Available Apps' %}
@@ -114,9 +114,9 @@ Deactivate App
 
 * * * * *
 
-{% anchor h2 %}
-Customize App 
-{% endanchor %}
+<page-anchor el="h2">
+Customize App
+</page-anchor>
 
 These API calls require that settings are passed using POST.
 
@@ -150,9 +150,9 @@ These API calls require that settings are passed using POST.
 
 * * * * *
 
-{% anchor h2 %}
-Get Current Settings 
-{% endanchor %}
+<page-anchor el="h2">
+Get Current Settings
+</page-anchor>
 
 {% parameters deactivate %}
  {% parameter 'task' 'Yes' 'Must be set to <em>getsettings</em>' 'Retrieve Available Apps' %}

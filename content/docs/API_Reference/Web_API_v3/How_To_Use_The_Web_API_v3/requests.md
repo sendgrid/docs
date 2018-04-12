@@ -9,13 +9,13 @@ navigation:
   show: true
 ---
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Making a Request
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Host
-{% endanchor %}
+</page-anchor>
 
 The host for API requests is `https://api.sendgrid.com/v3/`
 
@@ -23,16 +23,16 @@ The host for API requests is `https://api.sendgrid.com/v3/`
 All requests must be made over HTTPS. HTTP is **not** supported.
 {% endinfo %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Authorization Header
-{% endanchor %}
+</page-anchor>
 
 You must provide an authorization header as described in
 [Authentication](#-Authentication).
 
-{% anchor h3 %}
+<page-anchor el="h3">
 HTTP Verbs
-{% endanchor %}
+</page-anchor>
 
 Depending on the resource, we support the following HTTP verbs:
 
@@ -63,9 +63,9 @@ Depending on the resource, we support the following HTTP verbs:
   </tr>
 </table>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Accept Header
-{% endanchor %}
+</page-anchor>
 
 The API provides JSON responses. The [accept header](http://www.soapui.org/Best-Practices/understanding-rest-headers-and-parameters.html) is currently required for some API calls, and is recommended for all of them. It should be set to `application/json`.
 
@@ -74,9 +74,9 @@ GET https://api.sendgrid.com/v3/endpoint HTTP/1.1
 Accept: application/json
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Arrays of Data
-{% endanchor %}
+</page-anchor>
 
 When you send an array of data in a `GET` request, you will include the parameter multiple times on the URL. We do not require that you add brackets to the parameter name.
 
@@ -88,13 +88,13 @@ GET https://api.sendgrid.com/v3/endpoint?parameter=data1&parameter=data2 HTTP/1.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Formatting Your Request
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Request Body
-{% endanchor %}
+</page-anchor>
 
 When submitting data to a resource via `POST` or `PUT`, you must
 submit your payload in JSON.
@@ -108,9 +108,9 @@ Content-Type: application/json
 }
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Pagination
-{% endanchor %}
+</page-anchor>
 
 Some `GET` resources allow for retrieval of information in batches. We
 will provide the query args in the resource documentation when available
@@ -148,9 +148,9 @@ GET https://api.sendgrid.com/v3/resource?limit=300&offset=10 HTTP/1.1
   </tr>
 </table>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Search & Parameters
-{% endanchor %}
+</page-anchor>
 
 Some resources allow for you to search by a specific field. Other resources
 require you to append a parameter to the URI.
@@ -164,9 +164,9 @@ GET https://api.sendgrid.com/v3/resource?email=foo&bar=baz HTTP/1.1
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Successful Requests
-{% endanchor %}
+</page-anchor>
 
 Below is a general overview of what resource objects are returned on
 successful Web API requests.

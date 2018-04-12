@@ -6,9 +6,9 @@ navigation:
    show: true
 ---
 
-{% anchor h2 %}
-Retrieve 
-{% endanchor %}
+<page-anchor el="h2">
+Retrieve
+</page-anchor>
 
 {% parameters get %}
  {% parameter 'task' 'Yes' 'Must be set to <em>get</em>' 'This will allow you to retrieve the event notification url for the specified customer' %}
@@ -34,9 +34,9 @@ These are Reseller Only APIs. For more information, see [Reseller Overview](http
 
 * * * * *
 
-{% anchor h2 %}
-Update / Set URL 
-{% endanchor %}
+<page-anchor el="h2">
+Update / Set URL
+</page-anchor>
 
 {% parameters set %}
  {% parameter 'task' 'Yes' 'Must be set to <em>set</em>' 'This will allow you to retrieve the event notification url for the specified customer' %}
@@ -62,9 +62,9 @@ Update / Set URL
 
 * * * * *
 
-{% anchor h2 %}
-Delete 
-{% endanchor %}
+<page-anchor el="h2">
+Delete
+</page-anchor>
 
 {% parameters delete %}
  {% parameter 'task' 'Yes' 'Must be set to <em>delete</em>' 'This will allow you to delete the event notification url for the specified customer' %}

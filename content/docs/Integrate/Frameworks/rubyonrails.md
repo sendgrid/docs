@@ -8,12 +8,12 @@ seo:
 navigation:
   show: true
 ---
-  
+
 This example shows how to send an email for user signups. You can also checkout <a href='https://github.com/sendgrid/sendgrid-ruby'>this gem</a> for more advanced features.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Setup ActionMailer
-{% endanchor %}
+</page-anchor>
 
 Let's generate a Mailer class. Mailer classes function as our
 controllers for email views.
@@ -80,9 +80,9 @@ end
 
 Alright, now we're cooking! Let's get it all going through SendGrid.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Configure ActionMailer to Use SendGrid
-{% endanchor %}
+</page-anchor>
 
 In <code>config/environment.rb</code> specify your ActionMailer settings to point to SendGrid's servers.
 

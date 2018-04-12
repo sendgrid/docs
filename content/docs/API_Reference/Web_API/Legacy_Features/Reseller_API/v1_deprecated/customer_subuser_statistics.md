@@ -8,9 +8,9 @@ navigation:
    show: true
 ---
 
-{% anchor h2 %}
-Retrieve Customer Subuser Statistics 
-{% endanchor %}
+<page-anchor el="h2">
+Retrieve Customer Subuser Statistics
+</page-anchor>
 Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
 <table class="table table-bordered table-striped">
@@ -65,15 +65,15 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 {% codeblock %}  <stats><day><date>2009-06-20</date><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></day><day><date>2009-06-21</date><requests>32342</requests><bounces>10</bounces><clicks>14323</clicks><opens>10995</opens><spamreports>7</spamreports></day><day><date>2009-06-22</date><requests>52342</requests><bounces>11</bounces><clicks>19223</clicks><opens>12992</opens><spamreports>2</spamreports></day></stats
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      
+
 {% requestblock %}
-        
+
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
-        
+
   {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=example@example.com
   {% endrequestdata %}
-      
+
 {% endrequestblock %}
 
 <h3>Response</h3>
@@ -83,9 +83,9 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 
 * * * * *
 
-{% anchor h2 %}
-Retrieve Aggregates 
-{% endanchor %}
+<page-anchor el="h2">
+Retrieve Aggregates
+</page-anchor>
 Retrieve all-time totals for your customer subuser
 
 <table class="table table-bordered table-striped">
@@ -128,15 +128,15 @@ Retrieve all-time totals for your customer subuser
 {% codeblock %}  <stats><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></stats
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      
+
 {% requestblock %}
-        
+
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
-        
+
   {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=example@example.com&amp;aggregate=
   {% endrequestdata %}
-      
+
 {% endrequestblock %}
 
 <h3>Response</h3>
@@ -146,9 +146,9 @@ Retrieve all-time totals for your customer subuser
 
 * * * * *
 
-{% anchor h2 %}
-Category List 
-{% endanchor %}
+<page-anchor el="h2">
+Category List
+</page-anchor>
 Retrieve a list of all the categories used in your customer subusers account.
 
 <table class="table table-bordered table-striped">
@@ -191,15 +191,15 @@ Retrieve a list of all the categories used in your customer subusers account.
 {% codeblock %}  <categories><category>categoryA</category><category>categoryB</category><category>categoryC</category></categories
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      
+
 {% requestblock %}
-        
+
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
-        
+
   {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=example@example.com&amp;list=tru
   {% endrequestdata %}
-      
+
 {% endrequestblock %}
 
 <h3>Response</h3>
@@ -209,9 +209,9 @@ Retrieve a list of all the categories used in your customer subusers account.
 
 * * * * *
 
-{% anchor h2 %}
-Category Statistics 
-{% endanchor %}
+<page-anchor el="h2">
+Category Statistics
+</page-anchor>
 Retrieve statistics broken down by category. If the category does not exist, there will be an empty result set. Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
 <table class="table table-bordered table-striped">
@@ -284,27 +284,27 @@ Retrieve statistics broken down by category. If the category does not exist, the
 {% codeblock %}  <stats><day><date>2009-06-20</date><category>categoryA</category><requests>12342</requests><bounces>12</bounces><clicks>10223</clicks><opens>9992</opens><spamreports>5</spamreports></day><day><date>2009-06-21</date><category>categoryB</category><requests>32342</requests><bounces>10</bounces><clicks>14323</clicks><opens>10995</opens><spamreports>7</spamreports></day></stats
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      
+
 {% requestblock %}
-        
+
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
-        
+
   {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=example@example.com&amp;start_date=2009-06-20&amp;end_date=2009-06-22&amp;category=category
   {% endrequestdata %}
-      
+
 {% endrequestblock %}
 
 <h4>Command - Using an array of categories</h4>
-      
+
 {% requestblock %}
-        
+
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
-        
+
   {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=stats&amp;user=example@example.com&amp;start_date=2009-06-20&amp;end_date=2009-06-22&amp;category[]=categoryA&amp;category[]=category
   {% endrequestdata %}
-      
+
 {% endrequestblock %}
 
 <h3>Response</h3>

@@ -8,17 +8,17 @@ navigation:
 
 Retrieve and delete entries in the Spam Reports list.
 
-{% anchor h2 %}
-get 
-{% endanchor %}
-{% parameters get %} 
-  
-  {% parameter date No 'Must be set to 1' 'Retrieve the timestamp of the spam report records. It will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS' %}  
-  {% parameter days No 'If specified, must be an integer greater than 0' 'Number of days in the past for which to retrieve spam reports (includes today)' %}  
-  {% parameter start_date No 'Date must be in YYYY-MM-DD format and be earlier than the end_date parameter.' 'The start of the date range for which to retrieve spam reports.' %}  
-  {% parameter end_date No 'Date must be in YYYY-MM-DD format and be later than the start_date parameter.' 'The end of the date range for which to retrieve spam reports.' %}  
-  {% parameter limit No 'Some integer' 'Optional field to limit the number of results returned.' %}  
-  {% parameter offset No 'Some integer' 'Optional beginning point in the list to retrieve from.' %}  
+<page-anchor el="h2">
+get
+</page-anchor>
+{% parameters get %}
+
+  {% parameter date No 'Must be set to 1' 'Retrieve the timestamp of the spam report records. It will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS' %}
+  {% parameter days No 'If specified, must be an integer greater than 0' 'Number of days in the past for which to retrieve spam reports (includes today)' %}
+  {% parameter start_date No 'Date must be in YYYY-MM-DD format and be earlier than the end_date parameter.' 'The start of the date range for which to retrieve spam reports.' %}
+  {% parameter end_date No 'Date must be in YYYY-MM-DD format and be later than the start_date parameter.' 'The end of the date range for which to retrieve spam reports.' %}
+  {% parameter limit No 'Some integer' 'Optional field to limit the number of results returned.' %}
+  {% parameter offset No 'Some integer' 'Optional beginning point in the list to retrieve from.' %}
   {% parameter email No 'Email address eg testing@example.com' 'Optional email addresses to search for.' %}
 {% endparameters %}
 
@@ -56,15 +56,15 @@ get
 
 * * * * *
 
-{% anchor h2 %}
-count 
-{% endanchor %}
+<page-anchor el="h2">
+count
+</page-anchor>
 
 Retrieve the count of Spam Reports.
 
-{% parameters count %} 
-  
-  {% parameter start_date No 'Date must be in YYYY-MM-DD format and be earlier than the end_date parameter.' 'The start of the date range for which to retrieve spam reports.' %}  
+{% parameters count %}
+
+  {% parameter start_date No 'Date must be in YYYY-MM-DD format and be earlier than the end_date parameter.' 'The start of the date range for which to retrieve spam reports.' %}
   {% parameter end_date No 'Date must be in YYYY-MM-DD format and be later than the start_date parameter.' 'The end of the date range for which to retrieve spam reports.' %}
 {% endparameters %}
 
@@ -85,17 +85,17 @@ Retrieve the count of Spam Reports.
 
 * * * * *
 
-{% anchor h2 %}
-delete 
-{% endanchor %}
+<page-anchor el="h2">
+delete
+</page-anchor>
 
 Delete an address from the Spam Reports list.
 
-{% parameters delete %} 
-  
-  {% parameter start_date No 'Date must be in YYYY-mm-dd format and be before the end_date parameter.' 'Optional date to start deleting from.' %}  
-  {% parameter end_date No 'Date must be in YYYY-mm-dd format and be after the start_date parameter.' 'Optional date to end deleting from.' %}  
-  {% parameter email No 'Must be a valid user account email' 'Email spam reports address to remove.' %}  
+{% parameters delete %}
+
+  {% parameter start_date No 'Date must be in YYYY-mm-dd format and be before the end_date parameter.' 'Optional date to start deleting from.' %}
+  {% parameter end_date No 'Date must be in YYYY-mm-dd format and be after the start_date parameter.' 'Optional date to end deleting from.' %}
+  {% parameter email No 'Must be a valid user account email' 'Email spam reports address to remove.' %}
   {% parameter delete_all No 'value=1' 'This will delete the bounce list and will not be retrievable.' %}
 {% endparameters %}
 

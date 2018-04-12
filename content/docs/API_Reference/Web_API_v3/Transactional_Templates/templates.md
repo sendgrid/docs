@@ -19,9 +19,9 @@ Transactional templates are account and subuser specific. Templates created on a
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 POST
-{% endanchor %}
+</page-anchor>
 Create a template.
 
 {% parameters post %}
@@ -42,9 +42,9 @@ HTTP/1.1 201 OK
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 GET
-{% endanchor %}
+</page-anchor>
 Retrieve all templates.
 
 {% apiv3example get GET https://api.sendgrid.com/v3/templates %}
@@ -72,9 +72,9 @@ Retrieve all templates.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 GET
-{% endanchor %}
+</page-anchor>
 Retrieve a single template.
 
 {% apiv3example get-specific GET https://api.sendgrid.com/v3/templates/:template_id %}
@@ -102,9 +102,9 @@ Retrieve a single template.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 PATCH
-{% endanchor %}
+</page-anchor>
 Edit a template.
 
 {% parameters patch %}
@@ -125,9 +125,9 @@ HTTP/1.1 200 OK
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 DELETE
-{% endanchor %}
+</page-anchor>
 Delete a template.
 
 {% apiv3example delete DELETE https://api.sendgrid.com/v3/templates/:template_id %}

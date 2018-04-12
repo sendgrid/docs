@@ -21,9 +21,9 @@ navigation:
 * [Update teammate's permissions](#-Update-teammates-permissions-PATCH)
 * [Delete a teammate](#-Delete-a-teammate-DELETE)
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Retrieve all access requests [GET]
-{% endanchor %}
+</page-anchor>
 
 This endpoint allows you to retrieve a list of all recent access requests.
 
@@ -60,9 +60,9 @@ HTTP/1.1 200
 
 *****
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Deny an access request [DELETE]
-{% endanchor %}
+</page-anchor>
 
 This endpoint allows you to deny an attempt to access your account.
 
@@ -80,9 +80,9 @@ HTTP/1.1 204
 
 *****
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Approve an access request [PATCH]
-{% endanchor %}
+</page-anchor>
 
 This endpoint allows you to approve an access attempt.
 
@@ -105,9 +105,9 @@ HTTP/1.1 201
 
 *****
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Resend a teammate invite [POST]
-{% endanchor %}
+</page-anchor>
 
 This endpoint allows you to resend a teammate invite.
 
@@ -136,9 +136,9 @@ HTTP/1.1 200
 
 *****
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Retrieve a list of all pending teammates [GET]
-{% endanchor %}
+</page-anchor>
 
 This endpoint allows you to retrieve a list of all pending teammate invitations.
 
@@ -175,9 +175,9 @@ HTTP/1.1 200
 
 *****
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Delete a pending teammate invite [DELETE]
-{% endanchor %}
+</page-anchor>
 
 This endpoint allows you to delete a pending teammate invite.
 
@@ -195,9 +195,9 @@ HTTP/1.1 204
 
 *****
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Invite a teammate [POST]
-{% endanchor %}
+</page-anchor>
 
 This endpoint allows you to send a teammate invitation via email with a predefined set of scopes, or permissions. A teammate invite will expire after 7 days, but you may resend the invite at any time to reset the expiration date. **Essentials, [Legacy Lite]({{root_url}}/Classroom/Basics/Billing/legacy_lite_plan.html), and Free Trial users may create up to one teammate per account. There is not a teammate limit for Pro and higher plans.**
 
@@ -231,9 +231,9 @@ HTTP/1.1 201
 
 *****
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Retrieve a list of all teammates [GET]
-{% endanchor %}
+</page-anchor>
 
 This endpoint allows you to retrieve a list of all current teammates.
 
@@ -311,9 +311,9 @@ HTTP/1.1 200
 
 *****
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Retrieve a specific teammate [GET]
-{% endanchor %}
+</page-anchor>
 
 This endpoint allows you to retrieve a specific teammate by username.
 
@@ -353,9 +353,9 @@ HTTP/1.1 200
 
 *****
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Update teammate's permissions [PATCH]
-{% endanchor %}
+</page-anchor>
 
 This endpoint allows you to update a teammate's permissions.
 
@@ -408,9 +408,9 @@ HTTP/1.1 200
 
 *****
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Delete a teammate [DELETE]
-{% endanchor %}
+</page-anchor>
 
 This endpoint allows you to delete a teammate.
 

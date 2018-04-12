@@ -11,9 +11,9 @@ Receive a sample of an outgoing message by a specific customer subuser. The firs
 
 * * * * *
 
-{% anchor h2 %}
-Create Monitor Record 
-{% endanchor %}
+<page-anchor el="h2">
+Create Monitor Record
+</page-anchor>
 Obtain a complete list of all customer subuser.
 
 <table class="table table-bordered table-striped">
@@ -123,9 +123,9 @@ Obtain a complete list of all customer subuser.
 
 * * * * *
 
-{% anchor h2 %}
-Edit Monitor Record 
-{% endanchor %}
+<page-anchor el="h2">
+Edit Monitor Record
+</page-anchor>
 Make modifications to an existing Monitor record.
 
 <table class="table table-bordered table-striped">
@@ -241,9 +241,9 @@ Make modifications to an existing Monitor record.
 
 * * * * *
 
-{% anchor h2 %}
-Delete Monitor Record 
-{% endanchor %}
+<page-anchor el="h2">
+Delete Monitor Record
+</page-anchor>
 Deleting a monitor record will remove it from SendGrid's system. **Make sure no users are currently using the monitor record when removing, or removal will fail.**
 
 <table class="table table-bordered table-striped">
@@ -341,9 +341,9 @@ Deleting a monitor record will remove it from SendGrid's system. **Make sure no 
 
 * * * * *
 
-{% anchor h2 %}
-List All Monitor Records 
-{% endanchor %}
+<page-anchor el="h2">
+List All Monitor Records
+</page-anchor>
 List all available monitor records a reseller has.
 
 <table class="table table-bordered table-striped">
@@ -380,15 +380,15 @@ List all available monitor records a reseller has.
 {% codeblock %}  <monitors><monitor><name>sampleNameA</name><email>example@example.com</email><frequency>1000</frequency><users></users></monitor><monitor><name>sampleNameB</name><email>example@example.com</email><frequency>10000</frequency><users><user>user1@example.com</user><user>exampexample@example.comom</user></users></monitor></monitors
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      
+
 {% requestblock %}
-        
+
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
-        
+
   {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=monitor&amp;task=lis
   {% endrequestdata %}
-      
+
 {% endrequestblock %}
 
 <h3>Response</h3>
@@ -398,9 +398,9 @@ List all available monitor records a reseller has.
 
 * * * * *
 
-{% anchor h2 %}
-Append A Customer Subuser To A Monitor Record 
-{% endanchor %}
+<page-anchor el="h2">
+Append A Customer Subuser To A Monitor Record
+</page-anchor>
 Append a monitor record to a existing record onto a customer subuser.
 
 <table class="table table-bordered table-striped">
@@ -504,9 +504,9 @@ Append a monitor record to a existing record onto a customer subuser.
 
 * * * * *
 
-{% anchor h2 %}
-Detach A Monitor Record From A Customer Subuser 
-{% endanchor %}
+<page-anchor el="h2">
+Detach A Monitor Record From A Customer Subuser
+</page-anchor>
 Detach a customer subuser from a monitor record.
 
 <table class="table table-bordered table-striped">

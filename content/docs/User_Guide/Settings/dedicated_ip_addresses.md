@@ -19,25 +19,25 @@ navigation:
 - [Warming up a Dedicated IP Address](#-Warming-up-a-Dedicated-IP-Address)
 - [Automatic IP Warmup Schedule](#-Automatic-IP-Warmup-Schedule)
 
-{% anchor h2 %}
+<page-anchor el="h2">
 What are Dedicated IP Addresses?
-{% endanchor %}
+</page-anchor>
 
 An Internet Protocol (IP) address is a unique numerical address that defines a location. At SendGrid, you can purchase IP addresses dedicated to your account. Since you are the only one sending email over this IP, the sender reputation associated with this IP is determined purely by your sending practices.
 
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Why would I want a Dedicated IP Address?
-{% endanchor %}
+</page-anchor>
 
 If you are sending any significant amount of email, we typically suggest sending your marketing and transactional emails to from separate IP addresses. You can learn more from our comprehensive blog post on [whitelabeling and subusers best practices](https://sendgrid.com/blog/whitelabeling-and-subusers-best-practices/).
 
 We also suggest having at least two promotional IP addresses when your volume reaches 200-300K/month.
 
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Do I have a Dedicated IP Address?
-{% endanchor %}
+</page-anchor>
 
 Depending on the plan you have chosen, you either have a dedicated sending IP address or you are using a shared sending IP address.
 
@@ -45,24 +45,24 @@ Depending on the plan you have chosen, you either have a dedicated sending IP ad
 - Free and Essential customers send from groups of shared IP addresses, where they are grouped with senders of similar reputation and deliverability. Shared IPs addresses that these accounts send from can change without notice as your reputation changes, or as we make changes to IP groups to improve deliverability. In theses cases, you will not be able to view your shared sending IP addresses from within your account.
 
 
-{% anchor h2 %}
+<page-anchor el="h2">
 How many Dedicated IPs should I have?
-{% endanchor %}
+</page-anchor>
 
 Please see our document on [suggested IP allocation based on volume](https://sendgrid.com/docs/assets/IPWarmupSchedule.pdf).
 
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Adding an additional Dedicated IP Address
-{% endanchor %}
+</page-anchor>
 
 You can purchase an additional Dedicated IP Address from the IP Addresses Settings page or from your [Plan & Billing Details](https://app.sendgrid.com/settings/billing) page.
 
 *To add an additional Dedicated IP Address:*
 
-1. In the left navigation, select **Settings** and then click **IP Addresses**.  
+1. In the left navigation, select **Settings** and then click **IP Addresses**.
    Here you'll see a list of your current Dedicated IPs. Your IPs in warmup will have a 'warmup' label
-1. Click **Add an IP Address**. 
+1. Click **Add an IP Address**.
 1. Select the number of IP addresses you would like to purchase.
 
 Under "Additional Options" you will find the following options:
@@ -78,9 +78,9 @@ After purchasing your IP, we strongly encourage you to whitelabel it. [Click her
 {% info %} Additional IPs cost an extra $30 per additional IP per month. You may only add up to 3 new IP addresses to your account per month. {% endinfo %}
 
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Reputation Monitoring for Dedicated IP Accounts
-{% endanchor %}
+</page-anchor>
 
 SendGrid does not offer dedicated IP address reputation monitoring as a service.  We do not manage the reputation of your dedicated IP address since only your mail is being sent via your dedicated IP. This means that you have ultimate control over the content that is being sent out and therefore are responsible for monitoring and maintaining its reputation and listing status. However, there are many services that can help you maintain your IP’s reputation.
 
@@ -92,13 +92,13 @@ The following are some third party tools available to assist you in maintaining 
 
 In addition, SendGrid does offer [Delivery Consultation](https://sendgrid.com/marketing/delivery-consult/) services to Pro and Premier accounts that can help with deliverability and on-boarding. Services include how to maintain/improve domain and IP reputation, reviewing message content, dedicated IP configuration, and creating a custom IP warm-up plan just to name a few.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Warming Up a Dedicated IP Address
-{% endanchor %}
+</page-anchor>
 
 For more information on warming up an IP Address, see [Warming up a dedicated IP]({{root_url}}/User_Guide/Settings/ip_warmup.html).
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Additional Resources
 {% endanchor h2 %}
 

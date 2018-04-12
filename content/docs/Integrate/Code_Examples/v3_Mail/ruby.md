@@ -12,6 +12,6 @@ navigation:
 Do you have an [API Key](https://app.sendgrid.com/settings/api_keys) yet? If not, go get one. You're going to need it to integrate!
 {% endinfo %}
 
-{% anchor h2 %} Using SendGrid's Ruby Library {% endanchor %}
+<page-anchor el="h2"> Using SendGrid's Ruby Library </page-anchor>
 
 <script src="https://gist.github.com/sendgrid-gists/4be3a76b716e16c274c2ad0f6a99e9b4.js"></script>

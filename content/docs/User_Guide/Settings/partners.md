@@ -12,15 +12,15 @@ navigation:
 
 Partner settings allow you to integrate your SendGrid account with our partners to increase your SendGrid experience and functionality.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 SendGrid For New Relic
-{% endanchor %}
+</page-anchor>
 
 Access your email statistics via the [New Relic Dashboard](http://newrelic.com/). In less than five minutes your stats should be sent to your New Relic Dashboard. We send stats to New Relic every 5 minutes for users with the setting enabled. For more information, please see our [Setting up SendGrid for New Relic page]({{root_url}}/Classroom/Track/Collecting_Data/new_relic.html).
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Settings
-{% endanchor %}
+</page-anchor>
 
 **Status** - On or Off
 

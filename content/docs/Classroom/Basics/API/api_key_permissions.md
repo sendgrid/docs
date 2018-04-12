@@ -9,7 +9,7 @@ seo:
   description: Some example use cases for API Key permissions.
   keywords: API, API Key, permissions, scopes, security, credentials
 ---
-{% anchor h2 %}
+<page-anchor el="h2">
 What are API Key permissions?
 {% endanchor h2 %}
 
@@ -24,7 +24,7 @@ By assigning specific permissions to an API Key, you can limit exactly which cal
 
 For example, if you were to create an API Key for authenticating calls that would result in creating, reading, or sending email, you would want to assign the `mail.send` permission to that key to allow it to send email. However, you would not want to assign it the `billing.update` permission, since that would be outside the scope of its intended use.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Why are API Key permissions useful?
 {% endanchor h2 %}
 
@@ -32,13 +32,13 @@ A good security practice is to assign a user only as much access as is necessary
 
 For example, in our mail sending API Key referenced above, we made sure to exclude `billing.update` from the list of permissions. This is to prevent someone with the mail sending key from accessing and change sensitive billing information. This powerful ability to control access to the various areas of your account can be very helpful in preventing and mitigating the consequences of a leaked API Key.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 How can I use API Key permissions?
 {% endanchor h2 %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 General API Keys
-{% endanchor h3 %}
+</page-anchor>
 
 {% info %} There is a limit of 100 API Keys per account. {% endinfo %}
 
@@ -65,9 +65,9 @@ Once an API Key is assigned permissions, it will only be able to authenticate AP
 You may not assign an API Key greater permissions than you currently have.
 {% endinfo %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Billing API Keys
-{% endanchor h3 %}
+</page-anchor>
 
 To create a Billing API Key, navigate to your Settings and select API Keys. Click the Create API Key button and select "Billing API Key".
 
@@ -85,9 +85,9 @@ API Key permissions are not permanent and may be changed any time after the key 
 
 Several specific use cases for an API Key and the permissions that you might want to assign to that key, are described below. A complete list of all possible permissions scopes can be found [here]({{root_url}}/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html).
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Adding Additional API Key Permissions Not Listed In the User Interface
-{% endanchor h3 %}
+</page-anchor>
 
 As it turns out, the [API Key Permissions List](https://sendgrid.com/docs/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html) contains more permissions that can be added to your API key than those listed when creating a new API key. Currently, when you create new key in the user interface and give it full access, it excludes additional permissions that can be added via an API call. The best way to see what permissions your API key has is by making [this call](https://sendgrid.com/docs/API_Reference/Web_API_v3/API_Keys/api_keys_permissions.html) using the same API key to make the request.
 
@@ -106,7 +106,7 @@ We only recommend authenticating with your username and password when updating y
 
 **2.** Make sure that when you make the request, you add **all of the scopes** you want the API key to have. For example, if you make the request and just list "categories.read" as the scopes, you will then have a key with only the "categories.read" scope. Make sure to list everything you get from the [get existing key request](https://sendgrid.com/docs/API_Reference/Web_API_v3/API_Keys/index.html#Get-an-existing-API-Key-GET) in addition to the new scopes you want to add.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Example Permissions for Common API Key Use Cases
 {% endanchor h2 %}
 
@@ -134,18 +134,18 @@ Example Permissions for Common API Key Use Cases
   <li><a href="#-Admin-Level-API-Key-Scopes">Admin Level API Key Scopes</a></li>
 </ul>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Read Only Access for Mail Send
-{% endanchor %}
+</page-anchor>
 {% codeblock %}
 "scopes": [
   "mail.batch.read"
 ]
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Full Access for Mail Send
-{% endanchor %}
+</page-anchor>
 {% codeblock %}
 "scopes": [
   "mail.batch.create",
@@ -156,18 +156,18 @@ Full Access for Mail Send
 ]
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Read Only Access for Alerts
-{% endanchor %}
+</page-anchor>
 {% codeblock %}
 "scopes": [
   "alerts.read"
 ]
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Full Access for Alerts
-{% endanchor %}
+</page-anchor>
 {% codeblock %}
 "scopes": [
   "alerts.create",
@@ -177,9 +177,9 @@ Full Access for Alerts
 ]
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Read Only Access for Stats
-{% endanchor %}
+</page-anchor>
 {% codeblock %}
 "scopes": [
   "email_activity.read",
@@ -192,18 +192,18 @@ Read Only Access for Stats
 ]
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Read Only Access for Suppressions
-{% endanchor %}
+</page-anchor>
 {% codeblock %}
 "scopes": [
   "suppressions.read"
 ]
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Full Access for Suppressions
-{% endanchor %}
+</page-anchor>
 {% codeblock %}
 "scopes": [
   "suppressions.create",
@@ -213,18 +213,18 @@ Full Access for Suppressions
 ]
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Read Only Access for Whitelabels
-{% endanchor %}
+</page-anchor>
 {% codeblock %}
 "scopes": [
   "whitelabel.read"
 ]
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Full Access for Whitelabels
-{% endanchor %}
+</page-anchor>
 {% codeblock %}
 "scopes": [
   "whitelabel.create",
@@ -234,9 +234,9 @@ Full Access for Whitelabels
 ]
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Read Only Access for IP Management
-{% endanchor %}
+</page-anchor>
 {% codeblock %}
 "scopes": [
   "ips.assigned.read",
@@ -246,9 +246,9 @@ Read Only Access for IP Management
 ]
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Full Access for IP Management
-{% endanchor %}
+</page-anchor>
 {% codeblock %}
 "scopes": [
   "ips.assigned.read",
@@ -265,9 +265,9 @@ Full Access for IP Management
 ]
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Read Only Access for Templates
-{% endanchor %}
+</page-anchor>
 {% codeblock %}
 "scopes": [
   "templates.read",
@@ -276,9 +276,9 @@ Read Only Access for Templates
 ]
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Full Access for Templates
-{% endanchor %}
+</page-anchor>
 {% codeblock %}
 "scopes": [
   "templates.create",
@@ -296,9 +296,9 @@ Full Access for Templates
 ]
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Read Only Access for Inbound Parse
-{% endanchor %}
+</page-anchor>
 {% codeblock %}
 "scopes": [
   "user.webhooks.parse.settings.read",
@@ -306,9 +306,9 @@ Read Only Access for Inbound Parse
   ]
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Full Access for Inbound Parse
-{% endanchor %}
+</page-anchor>
 {% codeblock %}
 "scopes": [
   "user.webhooks.parse.settings.create",
@@ -319,9 +319,9 @@ Full Access for Inbound Parse
 ]
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Read Only Access for Mail Settings
-{% endanchor %}
+</page-anchor>
 {% codeblock %}
 "scopes": [
   "mail_settings.address_whitelist.read",
@@ -337,9 +337,9 @@ Read Only Access for Mail Settings
 ]
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Full Access for Mail Settings
-{% endanchor %}
+</page-anchor>
 {% codeblock %}
 "scopes": [
   "mail_settings.address_whitelist.read",
@@ -364,18 +364,18 @@ Full Access for Mail Settings
 ]
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Read Only Access for Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 {% codeblock %}
 "scopes": [
   "marketing_campaigns.read"
 ]
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Full Access for Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 {% codeblock %}
 "scopes": [
   "marketing_campaigns.create",
@@ -386,9 +386,9 @@ Full Access for Marketing Campaigns
 ]
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Admin Level API Key Scopes
-{% endanchor %}
+</page-anchor>
 
 Below is a list of every scope included in an administrator level API Key.
 

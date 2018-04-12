@@ -27,38 +27,38 @@ navigation:
 - [Troubleshooting](#-Troubleshooting)
 - [Migrating from legacy Whitelabel](#-Migrating-from-legacy-Whitelabel)
 
-{% anchor h2 %}
+<page-anchor el="h2">
 What is link branding?
-{% endanchor %}
+</page-anchor>
 
 Email link branding allows all of the click-tracked links and opens tracked images in your emails to be from your domain instead of from sendgrid.net. Spam filters and recipient servers look at the links within emails to determine whether the email looks trustworthy enough to deliver - they use the reputation of the root domain to determine whether the links can be trusted. Implementing link labeling helps in email deliverability because you are no longer relying on click tracking going through a domain that you do not control.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Key terminology
-{% endanchor %}
+</page-anchor>
 
 TO DO: ADD DEFINITIONS
 LET KAYLYN KNOW IF YOU THINK THIS IS MISSING TERMS
 
-{% anchor h3 %}
+<page-anchor el="h3">
 DNS
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 DKIM
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 SPF
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Content Delivery Network
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Before you begin
-{% endanchor %}
+</page-anchor>
 
 To set up link branding, you must submit the DNS records provided by SendGrid to your DNS or hosting provider (for example, GoDaddy, Hover, CloudFlare, etc.). First, you need to figure out who your hosting provider is and if you have access. If you don't have access to your DNS or hosting provider, you should figure out who in your company has this access before you begin setting up link branding.
 
@@ -78,27 +78,27 @@ Now links and images in your emails will have be from your custom domain. You on
 
 It can take up to 48 hours for the records to verify after you upload them into your DNS host, so you will likely have to come back later to verify.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Verifying your DNS
-{% endanchor %}
+</page-anchor>
 
 Once you add the CNAME records to your DNS host, return to the [Sender authentication page](https://app.sendgrid.com/settings/whitelabel) and click **Verify**. If you click verify, and only half of your CNAME records verify, this usually means that you need to wait a bit longer.
 
 Any time that you send an email with a FROM address whose domain matches the domain set in the domain authentication, SendGrid applies that domain to your email. You only need to update your domain authentication if you want to update the domain you are emailing from.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Advanced settings
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Using a custom return path
-{% endanchor %}
+</page-anchor>
 
 Info coming soon.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Assigning a subuser
-{% endanchor %}
+</page-anchor>
 
 By assigning a domain whitelabel to one of your subusers, you can give them the benefit of improved authentication and security, but also separate from the sending reputation of your parent account. If you authenticate a subusers domain, they can't edit or delete it.
 
@@ -106,21 +106,21 @@ By assigning a domain whitelabel to one of your subusers, you can give them the 
 
 When you are in the process of authenticating a domain, and on the screen where you input domain settings, open the advanced settings, select **Assign to a subuser**, and select a subuser to assign to that domain.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Troubleshooting
-{% endanchor %}
+</page-anchor>
 
 Info coming soon. Let Kaylyn know if you have any recommendations.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Migrating from legacy Whitelabel
-{% endanchor %}
+</page-anchor>
 
 Info coming soon.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Additional resources
-{% endanchor %}
+</page-anchor>
 - [link text]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML)
 - [link text]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML)
 - [link text]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML)

@@ -14,9 +14,9 @@ Please see our [Migration Toolkit]({{root_url}}/User_Guide/Legacy_Newsletter/Leg
 
 This module allows you to create and manage categories within your Marketing Emails.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 create
-{% endanchor %}
+</page-anchor>
 
 Create a new Category.
 
@@ -42,9 +42,9 @@ Create a new Category.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 add
-{% endanchor %}
+</page-anchor>
 
 Assign a Category to an existing Marketing Email.
 
@@ -71,9 +71,9 @@ Assign a Category to an existing Marketing Email.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 remove
-{% endanchor %}
+</page-anchor>
 
 Remove specific categories, or all categories from a Marketing Email.\\
 
@@ -99,7 +99,7 @@ Remove specific categories, or all categories from a Marketing Email.\\
 {% endapiexample %}
 
 * * * * *
-{% anchor h2 %} list {% endanchor %}
+<page-anchor el="h2"> list </page-anchor>
 
 List all categories.
 

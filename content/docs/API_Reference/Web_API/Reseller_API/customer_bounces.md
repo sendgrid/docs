@@ -6,9 +6,9 @@ navigation:
    show: true
 ---
 
-{% anchor h2 %}
-Retrieve Bounces 
-{% endanchor %}
+<page-anchor el="h2">
+Retrieve Bounces
+</page-anchor>
 
 {% info %}
 These are Reseller Only APIs. For more information, see [Reseller Overview](https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/index.html).
@@ -59,9 +59,9 @@ These are Reseller Only APIs. For more information, see [Reseller Overview](http
 
 * * * * *
 
-{% anchor h2 %}
-Delete Bounces 
-{% endanchor %}
+<page-anchor el="h2">
+Delete Bounces
+</page-anchor>
 
 Since SendGrid does not re-deliver to bounced addresses, users can remove bounces from their list at any time if redelivery to a bounced address is desired.
 

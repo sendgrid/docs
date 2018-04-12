@@ -6,9 +6,9 @@ navigation:
    show: true
 ---
 
-{% anchor h2 %}
-Retrieve Customer Subuser Statistics 
-{% endanchor %}
+<page-anchor el="h2">
+Retrieve Customer Subuser Statistics
+</page-anchor>
 
 Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
@@ -83,9 +83,9 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 
 * * * * *
 
-{% anchor h2 %}
-Retrieve Aggregates 
-{% endanchor %}
+<page-anchor el="h2">
+Retrieve Aggregates
+</page-anchor>
 
 Retrieve all-time totals for your customer subuser
 
@@ -120,9 +120,9 @@ Retrieve all-time totals for your customer subuser
 
 * * * * *
 
-{% anchor h2 %}
-Category List 
-{% endanchor %}
+<page-anchor el="h2">
+Category List
+</page-anchor>
 
 Retrieve a list of all the categories used in your customer subusers account.
 
@@ -151,9 +151,9 @@ Retrieve a list of all the categories used in your customer subusers account.
 
 * * * * *
 
-{% anchor h2 %}
-Category Statistics 
-{% endanchor %}
+<page-anchor el="h2">
+Category Statistics
+</page-anchor>
 
 Retrieve statistics broken down by category. If the category does not exist, there will be an empty result set.
 

@@ -12,9 +12,9 @@ Content Delivery Networks are a great mechanism that you can use to serve up con
 
 We suggest [CloudFlare]({{root_url}}/User_Guide/Setting_Up_Your_Server/content_delivery_networks.html#-Using-CloudFlare), [Fastly]({{root_url}}/User_Guide/Setting_Up_Your_Server/content_delivery_networks.html#-Using-Fastly), or [KeyCDN]({{root_url}}/User_Guide/Setting_Up_Your_Server/content_delivery_networks.html#-Using-KeyCDN) when using Content Delivery Networks with SendGrid.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Using CloudFlare
-{% endanchor %}
+</page-anchor>
 
 The following instructions assume you already have a CloudFlare account made, using either a [Full DNS setup](https://support.cloudflare.com/hc/en-us/articles/205195708) or a [CNAME setup](https://support.cloudflare.com/hc/en-us/articles/200168706). You can compare the two different setups [here](https://support.cloudflare.com/hc/en-us/articles/203685674). Note that a CNAME setup is only available to Business or Enterprise level CloudFlare plans.
 
@@ -44,9 +44,9 @@ If you are using a CNAME setup, you will also need to change DNS to point to the
 
 Once all of this is done, you will need to contact [SendGrid support](https://support.sendgrid.com/) and request that SSL click and open tracking be enabled on your account. They will then verify the configuration and enable the setting on your account.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Using Fastly
-{% endanchor %}
+</page-anchor>
 
 1. [Sign up for Fastly](https://www.fastly.com/signup/) or [log in](https://manage.fastly.com) to an existing account.
 2. Click **Configure** on the Dashboard.
@@ -66,9 +66,9 @@ Contact SendGrid support to validate your CDN settings and enable SSL click and 
 For more information, please visit [Fastly's documentation](https://docs.fastly.com/guides/basic-setup/working-with-services#creating-a-new-service).
 {% endinfo %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Using KeyCDN
-{% endanchor %}
+</page-anchor>
 
 This section is maintained by KeyCDN, if you have any questions about KeyCDN please [contact their support](https://www.keycdn.com/support/) team.
 

@@ -15,9 +15,9 @@ navigation:
 - [Invalid SMTP API Header](#-Invalid-SMTP-API-Hheader)
 - [Certificate verification failed for smtp.sendgrid.net](#-Certificate-verification-failed-for-smtp.sendgrid.net)
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Response codes
-{% endanchor %}
+</page-anchor>
 
 Each SMTP call you make returns a response. `200` responses are usually success responses, and `400` responses are usually deferrals. SendGrid continues to retry resending `400` messages for up to 72 hours. `500` responses are hard failures that are not retried by our servers. This table has possible response codes with example errors and a general explanation of that sort of response. This is not an all-inclusive list -  if you are getting an error you don't recognize, check out our [Deliverability center](https://sendgrid.com/deliverabilitycenter/#/).
 
@@ -84,9 +84,9 @@ Each SMTP call you make returns a response. `200` responses are usually success 
   </tr>
 </table>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Turning off click tracking
-{% endanchor %}
+</page-anchor>
 
 To turn off click tracking, add this to your X-SMTPAPI header:
 
@@ -103,15 +103,15 @@ To turn off click tracking, add this to your X-SMTPAPI header:
 }
 {% endcodeblock %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Invalid SMTP API header
-{% endanchor %}
+</page-anchor>
 
 When you try to send an invalid X-SMTPAPI header, you will get an email with details about the invalidations. You may also see errors on your Email Activity page or in your Event Webhook data. If this happens, the email should give you the information you need to begin troubleshooting. We also recommend uploading your JSON into a JSON validator, because this is often an invalid JSON issue.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Certificate verification failed for smtp.sendgrid.net
-{% endanchor %}
+</page-anchor>
 
  `"certificate verification failed for [smtp.sendgrid.net](http://smtp.sendgrid.net/)[198.37.144.225]:587: untrusted issuer /C=US/O=The Go Daddy Group, Inc./OU=Go Daddy Class 2 Certification Authority"`
 
@@ -126,7 +126,7 @@ Certificate verification failed for smtp.sendgrid.net
 
  If the mail server communicates with more than just us, add this certificate to your existing CA bundle (frequently called `ca-bundle.crt`).
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Additional Resources
 {% endanchor h2 %}
 

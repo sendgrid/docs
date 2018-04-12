@@ -8,9 +8,9 @@ navigation:
 
 Parse Webhook Stats provide statistics on your [Parse Webhook]({{root_url}}/API_Reference/Webhooks/parse.html) usage.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 GET
-{% endanchor %}
+</page-anchor>
 
 Gets statistics for Parse Webhook usage.
 

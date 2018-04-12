@@ -20,9 +20,9 @@ This endpoint allows you to add, view, or remove scheduled delivery events for M
 If you wish to send a marketing email immediately, leave off the **at** and **after** parameters.
 {% endinfo %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 add
-{% endanchor %}
+</page-anchor>
 
 Schedule a delivery time for an existing Marketing Email.
 
@@ -50,9 +50,9 @@ Schedule a delivery time for an existing Marketing Email.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 get
-{% endanchor %}
+</page-anchor>
 
 Retrieve the scheduled delivery time for an existing Marketing Email.
 
@@ -78,9 +78,9 @@ Retrieve the scheduled delivery time for an existing Marketing Email.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 delete
-{% endanchor %}
+</page-anchor>
 
 Cancel a scheduled send for a Marketing Email.
 

@@ -16,9 +16,9 @@ This module allows you to add new Variations to your drafted Marketing Emails. T
 
 ---
 
-{% anchor h2 %}
+<page-anchor el="h2">
 add
-{% endanchor %}
+</page-anchor>
 
 Create a new Variation.
 
@@ -48,9 +48,9 @@ Create a new Variation.
 
 ---
 
-{% anchor h2 %}
+<page-anchor el="h2">
 edit
-{% endanchor %}
+</page-anchor>
 Edit an existing Variation.
 
 {% parameters edit %}
@@ -79,9 +79,9 @@ Edit an existing Variation.
 
 ---
 
-{% anchor h2 %}
+<page-anchor el="h2">
 get
-{% endanchor %}
+</page-anchor>
 Retrieve the contents of an existing Variation.
 
 {% parameters get %}
@@ -122,9 +122,9 @@ Retrieve the contents of an existing Variation.
 
 ---
 
-{% anchor h2 %}
+<page-anchor el="h2">
 cancel
-{% endanchor %}
+</page-anchor>
 Cancels a current Variation send that is in progress.
 
 {% parameters cancel %}
@@ -147,9 +147,9 @@ Cancels a current Variation send that is in progress.
 
 ---
 
-{% anchor h2 %}
+<page-anchor el="h2">
 delete
-{% endanchor %}
+</page-anchor>
 Delete the contents of an existing Variation.
 
 {% parameters delete %}
@@ -173,9 +173,9 @@ Delete the contents of an existing Variation.
 
 ---
 
-{% anchor h2 %}
+<page-anchor el="h2">
 list
-{% endanchor %}
+</page-anchor>
 Retrieve a list of all Variations attached to a Marketing Email.
 
 {% parameters list %}
@@ -197,9 +197,9 @@ Retrieve a list of all Variations attached to a Marketing Email.
 
 ---
 
-{% anchor h2 %}
+<page-anchor el="h2">
 pickwinner
-{% endanchor %}
+</page-anchor>
 Select the Variation you would like to send.
 
 {% parameters pickwinner %}
@@ -223,9 +223,9 @@ Select the Variation you would like to send.
 
 ---
 
-{% anchor h2 %}
+<page-anchor el="h2">
 schedule
-{% endanchor %}
+</page-anchor>
 Schedule a send time and percentage for your variations.
 
 {% parameters schedule %}

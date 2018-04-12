@@ -8,13 +8,13 @@ weight: 95
 navigation:
   show: true
 ---
-{% anchor h3 %}
+<page-anchor el="h3">
 Response Codes
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Failed Requests
-{% endanchor %}
+</page-anchor>
 
 The general format guidelines are displayed when the accompanying status
 code is returned.

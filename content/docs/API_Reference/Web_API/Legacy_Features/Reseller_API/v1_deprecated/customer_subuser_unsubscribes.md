@@ -8,9 +8,9 @@ navigation:
    show: true
 ---
 
-{% anchor h2 %}
-Retrieve Unsubscribes 
-{% endanchor %}
+<page-anchor el="h2">
+Retrieve Unsubscribes
+</page-anchor>
 Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
 <table class="table table-bordered table-striped">
@@ -59,15 +59,15 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 {% codeblock %}  <unsubscribes><unsubscribe><email>emaieexampexample@example.com</email><created>2009-06-10 12:40:30</created></unsubscribe><unsubscribe><email>emaileexampexample@example.com</email><created>2009-06-10 12:40:30</created></unsubscribe></unsubscribes
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      
+
 {% requestblock %}
-        
+
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
-        
+
   {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=unsubscribes&amp;user=example@example.com&amp;task=get&amp;date=
   {% endrequestdata %}
-      
+
 {% endrequestblock %}
 
 <h3>Response</h3>
@@ -78,9 +78,9 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 
 * * * * *
 
-{% anchor h2 %}
-Delete Unsubscribes 
-{% endanchor %}
+<page-anchor el="h2">
+Delete Unsubscribes
+</page-anchor>
 Since SendGrid does not deliver to unsubscribe addresses, users can remove unsubscribes from their list at any time if re-delivery to an unsubscribed address is desired.
 
 <table class="table table-bordered table-striped">
@@ -176,9 +176,9 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
 
 * * * * *
 
-{% anchor h2 %}
-Add Unsubscribes 
-{% endanchor %}
+<page-anchor el="h2">
+Add Unsubscribes
+</page-anchor>
 Add unsubscribe email records to their account if they need to stop sending email messages to a specific recipient.
 
 <table class="table table-bordered table-striped">

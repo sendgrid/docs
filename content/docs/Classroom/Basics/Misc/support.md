@@ -20,9 +20,9 @@ navigation:
 
 You can contact SendGrid support from the [SendGrid Support Portal](https://support.sendgrid.com). Click **Login & Contact Support**, and then **Contact Support** to see your support contact options. Paying SendGrid customers have the option to contact support via phone, chat, or by submitting a ticket using our web form. All SendGrid customers have the option to submit a ticket using our web form.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Support Hours
-{% endanchor %}
+</page-anchor>
 
 * Ticket support - 24/7
 * Chat support - 24/7

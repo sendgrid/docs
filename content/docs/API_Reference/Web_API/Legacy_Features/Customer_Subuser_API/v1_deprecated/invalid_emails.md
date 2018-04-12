@@ -123,9 +123,9 @@ This feature is deprecated, please go to the  <a href="{{root_url}}/API_Referenc
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Delete Invalid Emails
-{% endanchor %}
+</page-anchor>
 Since SendGrid does not deliver to invalid emails, users can remove invalid emails from their list at any time if re-delivery to a spam reported address is desired.
 
 <table class="table table-bordered table-striped">

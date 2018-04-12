@@ -90,9 +90,9 @@ If you have integrations with the Legacy Newsletter API, you’ll need to change
 
 There is currently no way to migrate variations to Marketing Campaigns using the API.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Additional Resources
-{% endanchor %}
+</page-anchor>
 
 - [Migration Tutorials]({{root_url}}/User_Guide/Legacy_Newsletter//Migration_Tutorials/index.html)
 - [SendGrid Support]({{site.support_url}})

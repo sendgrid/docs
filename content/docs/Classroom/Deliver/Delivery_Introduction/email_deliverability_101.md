@@ -15,9 +15,9 @@ Below are some email deliverability tips and tricks from leading industry expert
 
 Satisfying each of the below conditions is a great step toward resolving current or potential issues with email deliverability such as spam folder delivery or blacklisting.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Who, What, When, Where, Why.
-{% endanchor %}
+</page-anchor>
 
 First and foremost, ask yourself this question:
 
@@ -25,9 +25,9 @@ First and foremost, ask yourself this question:
 
 Overall email deliverability is influenced by how your recipients interact with your messages. If your messages are opened in a timely manner, images are displayed, and links are clicked, then mail providers will see you as a sender whose messages their recipients want to receive. If messages pile up, remain unopened, or get marked as spam, mail providers won't be as comfortable placing your messages in the inbox, or accepting them at all!
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Adhere to Standards
-{% endanchor %}
+</page-anchor>
 
 The second biggest factor in inbox delivery is the actual content you send in your messages. It's very important to ensure your emails meet every CAN-SPAM requirement.
 
@@ -38,9 +38,9 @@ Some key takeaways from [CAN-SPAM](https://www.ftc.gov/tips-advice/business-cent
 
 [Read the full CAN-SPAM Act here!](http://business.ftc.gov/documents/bus61-can-spam-act-compliance-guide-business) This is required reading for any aspiring email acolyte.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 "No, thank you."
-{% endanchor %}
+</page-anchor>
 
 One of the most important parts of CAN-SPAM is this line:
 
@@ -50,17 +50,17 @@ All email providers look for an unsubscribe method (or links) in all emails. Eve
 
 Think of it this way: would you rather a recipient politely decline future emails from you, or mark your messages as spam because they have no other option?
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Who are you?
-{% endanchor %}
+</page-anchor>
 
 Maximum company visibility helps as well. Placing your company name in the subject line of your emails and including your physical mailing address and phone number in your email footers helps mail providers recognize you as a legitimate company and sender of email. This also helps your recipients know that this message is indeed from you!
 
 We've all ignored phone calls from numbers we don't recognize, the same goes for email!
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Segment your traffic
-{% endanchor %}
+</page-anchor>
 
 Keeping your mail streams separated can make a huge difference in the long run. Specifically, segmenting your marketing email from your transactional email is a great way to keep legitimate mail out of trouble.
 
@@ -77,9 +77,9 @@ Consider setting up a [new subuser account]({{root_url}}/Classroom/Basics/Accoun
 
 This simple division will keep your important email in the clear, even if one stream runs into trouble. Remember, don't cross the streams!
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Encourage recipients to trust you
-{% endanchor %}
+</page-anchor>
 
 With email, things don't happen overnight, and magic wands are few and far between. So for the most part, the actions of your recipients are the highest voice of authority.
 
@@ -90,13 +90,13 @@ Encouraging your recipients to do certain things can help bolster the trust ISPs
 - IP Whitelist - Some ISPs or mail admins can add rules to always allow _all_ incoming mail from specific IP addresses! Consider reaching out to the postmaster(usually example@example.com) of problematic mail domains to see if they can white list [your dedicated IP address]({{root_url}}/Classroom/Basics/Account/what_is_my_sending_originating_ip_address_with_sendgrid.html).
 - "If you don't receive an email right away, please check your spam folder and mark "not spam"" - Adding this simple sentence to your sign-up form area can solve a lot of potential heartache. If a message you sent ends up in the Spam folder, and the recipient manually goes in and pulls it out, that's fantastic! This not only helps an ISPs incoming mail filters in avoiding false positives, but also improves your standing with that ISP.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Nuts and Bolts
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Tips for Click Tracked links
-{% endanchor %}
+</page-anchor>
 
 Our click tracking application can sometimes trip up spam filters. If you have click tracking enabled, we'll replace any links within HTML `<a>` tags with unique links that redirect through our service. As such if you use the original link as the clickable link text in your `<a>` tag, when the click tracking link is replaced it creates irregularity between where the link appears to go and where it actually goes. For example the original link:
 
@@ -110,15 +110,15 @@ This is may look very similar to phishing emails, placing these messages in the 
 
 `<a href="http://www.sendgrid.com">Click to visit SendGrid</a>`
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Images and Attachments
-{% endanchor %}
+</page-anchor>
 
 Also consider how you include images and attachments in your messages. As it is impossible to know how a receiving server treats attachments, we recommend using the HTML `<img>` tag to include images in your messages and we also recommend linking to hosted files rather than including them as attachments. Images must be hosted on your own or on a public facing server to be included via the HTML `<img>` tag. Secure site logins or credentials can be used to track who is coming to your site to download files. This helps ensure that your message gets to the recipient regardless of any attachment restrictions on the receiving mail server.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Tools of the Trade
-{% endanchor %}
+</page-anchor>
 
 Finally, there are some great 3rd party services you can use to get an idea of how mail providers analyze your emails:
 

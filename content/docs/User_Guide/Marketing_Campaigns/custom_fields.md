@@ -4,7 +4,7 @@ weight: 55
 title: Using Custom Fields
 navigation:
   show: true
-seo: 
+seo:
   title: Using Custom Fields
   keywords: Custom Fields, Personalization, customized email
   override: true
@@ -24,21 +24,21 @@ Custom fields allow you to add extra information about a contact to your contact
 You can create up to 120 custom fields.
 {% endinfo %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Creating Custom Fields
-{% endanchor %}
+</page-anchor>
 
-*To add a custom field:* 
+*To add a custom field:*
 
-1. Navigate to the [Custom Fields page]({{site.marketing_campaigns_url}}/custom_fields).  
-1. Click **Create New Field**. 
-1. Add a _Field Name_ and _Field Type_. 
-1. Click **Save**. 
+1. Navigate to the [Custom Fields page]({{site.marketing_campaigns_url}}/custom_fields).
+1. Click **Create New Field**.
+1. Add a _Field Name_ and _Field Type_.
+1. Click **Save**.
 
 You can also add custom fields when you [upload]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/adding_contacts.html#-Uploading-a-CSV) a CSV to the contacts database.
 
 The field name should be created using only alphanumeric characters (A-Z and 0-9) and underscores “_”. The field type can be date, text, or number fields. The *field type* is important for creating [segments](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts_lists.html) from your contact
-database. 
+database.
 
 You can query your list in different ways, based on the data type:
 
@@ -50,11 +50,11 @@ You can query your list in different ways, based on the data type:
 Text custom fields are limited to a size of 32,766 bytes.
 {% endwarning %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Reserved Fields
-{% endanchor %}
+</page-anchor>
 
-Your account comes preloaded with reserved fields that cannot be removed. The following field names are all reserved: 
+Your account comes preloaded with reserved fields that cannot be removed. The following field names are all reserved:
 
 <table class="table">
   <tr><th>Field Name</th><th>Field Type</th></tr>
@@ -71,36 +71,36 @@ Your account comes preloaded with reserved fields that cannot be removed. The fo
 </table>
 
 
-Except for first_name, last_name, and email these fields are auto-populated by SendGrid and correspond to data for each contact in the app. Reserved fields are used to track useful metrics for your contacts by default. 
+Except for first_name, last_name, and email these fields are auto-populated by SendGrid and correspond to data for each contact in the app. Reserved fields are used to track useful metrics for your contacts by default.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Deleting a Custom Field
-{% endanchor %}
+</page-anchor>
 
 *To delete a custom field:*
 
 1. Navigate to **Marketing Campaigns** and select **Custom Fields**.
 1. Locate the field you wish to remove.
 1. Hover over the action menu to the right of the field name entry.
-1. Select the delete icon. 
+1. Select the delete icon.
 1. Click **Confirm**.
 
 {% warning %}
 Deleting a custom field deletes all values for that field across your contact database. If you have any campaigns using the data in this field with a substitution tag, those values do NOT get replaced when you send the campaign. You cannot delete a custom field that a segment is currently using. This deletion process may take several minutes--you continue to see the custom field on this page until the process has completed.
 {% endwarning %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Troubleshooting
-{% endanchor %}
+</page-anchor>
 
 
 If a Custom Field value does not appear in the corresponding [Substitution Tag]({{root_url}}/User_Guide/Marketing_Campaigns/editor.html#-Using-Substitution-Tags), make sure that there is a value for that custom field associated with the contact in your contact database. If there is no value for a particular custom field, a space will be substituted instead.
 
 If you do find that the custom field has an associated value on the contact’s profile page, check the spelling of the substitution tag in the content of your campaign.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Additional Resources
-{% endanchor h3 %}
+</page-anchor>
 
 - [Substitution Tags](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/editor.html#-Using-Substitution-Tags)
 - [Contacts](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/contacts.html)

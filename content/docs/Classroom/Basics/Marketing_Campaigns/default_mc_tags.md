@@ -17,9 +17,9 @@ SendGrid has a number of system substitution tags available for you to use to dy
 
 Please note: these system substitution tags are not the same as [custom fields]({{root_url}}/User_Guide/Marketing_Campaigns/custom_fields.html) in Marketing Campaigns or tags in Legacy Newsletter.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Unsubscribe Tags
-{% endanchor %}
+</page-anchor>
 
 **[Unsubscribe] -** Used to place the clickable link that allows recipients to opt out of emails with the associated unsubscribe group. Simply use this tag in place of a URL and unsubscribers will be sent to an unsubscribe page SendGrid creates on your behalf. Alternatively, if you designate a custom unsubscribe URL, SendGrid will populate the [Unsubscribe] tag with the link you provide.
 
@@ -39,9 +39,9 @@ For detailed instructions on how to use this tag, click [here]({{root_url}}/Clas
 [CAN-SPAM]({{root_url}}/Glossary/can_spam.html) requires that you include either an unsubscribe link or a subscription preferences link in every commercial email you send. You can include these links by inserting the **[Unsubscribe]** or **[Unsubscribe_Preferences]** tag in your content.
 {% endwarning %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Sender Identity information
-{% endanchor %}
+</page-anchor>
 
 **[Sender_Name] -** Inserts the From name associated with the Sender Identity chosen for the campaign. (Sender Identities are chosen from the Settings tab within the Campaign Editor.)
 
@@ -61,9 +61,9 @@ To create a new Sender Identity, navigate to **Marketing Campaigns** in the left
 **[Sender_State]** and **[Sender_Zip]** are not required for international senders. If you reside outside of the USA, you may leave these fields blank.
 {% endinfo %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Miscellaneous Substitution Tags
-{% endanchor %}
+</page-anchor>
 
 **[Weblink] -** Inserts a URL to allow recipients to view your email content directly in their web browser. The URL for this link is dynamically created by SendGrid.
 
@@ -75,9 +75,9 @@ Here’s an example of how you can leverage this url in a link tag:
 
 You can use the link button if you are using the design editor to add the [Weblink] tag.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Migrating Your Substitution Tags from Legacy Newsletter to Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 When migrating from Legacy Newsletter to Marketing Campaigns, it is important to make sure that you are using the new syntax for system substitution tags.
 
@@ -121,9 +121,9 @@ Note: if you're migrating contacts from SendGrid's Legacy Newsletter to Marketin
 **[Unsubscribe_Preferences]** is a new tag introduced in Marketing Campaigns! The link inserted from this tag will take your recipients to a page where they can unsubscribe and resubscribe to your email groups. For more information on how to use this tag, please [click here]({{root_url}}/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html).
 {% endinfo %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 To add tags using the Design Editor, use the link button!
-{% endanchor %}
+</page-anchor>
 
 ![]({{root_url}}/images/mc_tag_weblink.gif)
 

@@ -7,14 +7,14 @@ navigation:
 ---
 
 {% info %}
-The Reseller Haiku API is for companies with which SendGrid has formal reseller partnerships and use a Heroku style API. If you don't have a formal partnership with SendGrid, you will not have permission to use this API. Check the <a href="{{root_url}}/API_Reference/Web_API/Customer_Subuser_API/index.html">Customer Subuser API</a> if you need sub-account functionality. 
+The Reseller Haiku API is for companies with which SendGrid has formal reseller partnerships and use a Heroku style API. If you don't have a formal partnership with SendGrid, you will not have permission to use this API. Check the <a href="{{root_url}}/API_Reference/Web_API/Customer_Subuser_API/index.html">Customer Subuser API</a> if you need sub-account functionality.
 {% endinfo %}
 
 <p>Following are brief descriptions of the various API calls needed to manage your customers, click the API call name for further details:</p>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Authentication
-{% endanchor %}
+</page-anchor>
 
 <p>To authenticate, add an <code>Authorization</code> header to your API
 request that contains a base64-encoded <code>username:password</code>
@@ -27,22 +27,22 @@ GET https://api.sendgrid.com/reseller.php/plug/reseller/resources HTTP/1.1
 Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ===
 {% endcodeblock %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 <a title="Provision Customer" href="customer_provision.html">Provision</a>
-{% endanchor %}
+</page-anchor>
 <p>Create a customer.</p>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 <a title="Deprovision Customer" href="customer_deprovision.html">Deprovision</a>
-{% endanchor %}
+</page-anchor>
 <p>Delete a customer.</p>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 <a title="Change Package" href="customer_change.html">Customer Package Upgrade/Downgrade</a>
-{% endanchor %}
+</page-anchor>
 <p>Change the package for a customer.</p>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 <a title="Single Sign On" href="customer_sso.html">Single Sign On</a>
-{% endanchor %}
+</page-anchor>
 <p>Allow users to manage their account using our site</p>

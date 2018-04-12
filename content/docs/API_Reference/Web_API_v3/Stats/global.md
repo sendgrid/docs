@@ -8,9 +8,9 @@ navigation:
 
 Global Stats provide all of your user's email statistics for a given date range.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 GET
-{% endanchor %}
+</page-anchor>
 
 Gets email statistics.
 

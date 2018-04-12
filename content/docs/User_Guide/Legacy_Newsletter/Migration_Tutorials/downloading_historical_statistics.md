@@ -38,9 +38,9 @@ For more information about Legacy Newsletter statistics and analytics, click [he
 
 ![]({{root_url}}/images/download_historical_stats.gif)
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Additional Resources
-{% endanchor %}
+</page-anchor>
 
 - [Migrating Using API Calls]({{root_url}}/User_Guide/Legacy_Newsletter/Migration_Tutorials/api_migration.html)
 - [Migrating Your API Integrations]({{root_url}}/User_Guide/Legacy_Newsletter/Migration_Tutorials/Migrating_API.html)

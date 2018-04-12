@@ -10,9 +10,9 @@ navigation:
 This endpoint has been deprecated, and should not be used. Use the [Event Notification app]({{root_url}}/API_Reference/Web_API/filter_settings.html#-Event-Notification) with the [Subuser App endpoint]({{root_url}}/API_Reference/Web_API/Customer_Subuser_API/apps.html) instead.
 {% endwarning %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Get
-{% endanchor %}
+</page-anchor>
 
 {% parameters get %}
  {% parameter 'task' 'Yes' 'Must be set to <code>get</code>' 'Task to get the url for the specified user' %}
@@ -33,9 +33,9 @@ Get
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Update / Set URL
-{% endanchor %}
+</page-anchor>
 
 {% parameters set %}
  {% parameter 'task' 'Yes' 'Must be set to <code>set</code>' 'Task to set the eventurl for the subuser' %}
@@ -58,9 +58,9 @@ Update / Set URL
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Delete
-{% endanchor %}
+</page-anchor>
 
 {% parameters delete %}
  {% parameter 'task' 'Yes' 'Must be set to <code>delete</code>' 'Task to delete the event notification url for the specified subuser' %}

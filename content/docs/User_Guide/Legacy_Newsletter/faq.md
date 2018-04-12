@@ -61,13 +61,13 @@ For assistance please [contact our support team](https://support.sendgrid.com/).
 
 ***********
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Legacy Newsletter Sunset
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Why did you retire Legacy Newsletter?
-{% endanchor %}
+</page-anchor>
 
 We created Legacy Newsletter to deliver on customer demand for a simple, straightforward e-newsletter tool to support user engagement and retention.
 
@@ -75,28 +75,28 @@ Over time, the needs and expectations of our customers—and the market at large
 
 In order to best meet your email marketing needs, our focus will be dedicated to optimizing Marketing Campaigns moving forward. Without continued investment, Legacy Newsletter would have become obsolete and impractical for us to continue to support to the degree our customers deserve.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 How long will Legacy Newsletter be available?
-{% endanchor %}
+</page-anchor>
 
 As of **September 30, 2017**, Legacy Newsletter has been deprecated. SendGrid recommends you [migrate to Marketing Campaigns]({{root_url}}/User_Guide/Legacy_Newsletter/migration_checklist.html).
 
-{% anchor h3 %}
+<page-anchor el="h3">
 What will happen to my account when the product is retired?
-{% endanchor %}
+</page-anchor>
 
 Now that Legacy Newsletter has been sunset, you cannot create or send campaigns. This deprecation includes both the web interface at sendgrid.com/newsletter and [APIs]({{root_url}}/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/index.html) at `api.sendgrid.com/api/newsletter`.
 
 Statistics related to email sent through Legacy Newsletter before deprecation will be included in your overall SendGrid stats, and are identifiable by the default category of *Newsletter*, along with any additional categories you’ve assigned your Legacy Newsletter campaigns.
 
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Pricing
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Is the pricing for Marketing Campaigns the same as it is for Legacy Newsletter?
-{% endanchor %}
+</page-anchor>
 
 Both Legacy Newsletter and Marketing Campaigns start with your base SendGrid plan (which can be shared with any mail you send using the API or SMTP relay). For instance, if you have the Pro 300K plan and send 100,000 emails through Legacy or Marketing Campaigns, you’ll have 200,000 emails remaining to send through the API or SMTP relay.
 
@@ -105,15 +105,15 @@ From there, each email marketing solution charges a premium for sending through 
 **The option to choose your payment preference is no longer available**.
 If you used Legacy Newsletter between 1 August 2016 and 30 March 2017, when you switched to Marketing Campaigns, you were able to choose how you’d like to pay. This has been sunset and is no longer available.>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 How can I estimate what it will cost to use Marketing Campaigns?
-{% endanchor %}
+</page-anchor>
 
 Leverage our [Pricing Calculator](https://app.sendgrid.com/settings/choose_how_you_pay) to enter the volume of email you’ll be sending as well as the number of contacts you’ll store in Marketing Campaigns.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Why does Marketing Campaigns charge me for storing contacts?
-{% endanchor %}
+</page-anchor>
 
 The default pricing for Marketing Campaigns is to charge for contacts stored in Marketing Campaigns as opposed to an additional fee for each email sent through Legacy Newsletter. This is aligned with sending best practices by encouraging you to monitor how engaged your recipients are and modify your marketing strategy accordingly. Here’s how:
 
@@ -127,9 +127,9 @@ Emails sent through either Legacy Newsletter or Marketing Campaigns count toward
 
 The ability to segment your contacts into meaningful recipient groups is a core benefit of Marketing Campaigns (and a key enhancement over Legacy Newsletter). Segmentation requires Marketing Campaigns to store your contacts, and that data storage is the expense that drives our pricing.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 What is the additional value of Marketing Campaigns vs. Legacy Newsletter?
-{% endanchor %}
+</page-anchor>
 
 **[Segmentation:]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html)** Send more targeted, relevant email to your recipients by leveraging data about your customers as well as how they’ve [engaged with your emails]({{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html#-Create-a-Segment-Based-On-Your-Engagement-Metrics).
 
@@ -149,21 +149,21 @@ What is the additional value of Marketing Campaigns vs. Legacy Newsletter?
 
 **[Improved security and compliance]({{root_url}}/User_Guide/Legacy_Newsletter/Side_by_Side_Comparisons/security_compliance.html):** Marketing Campaigns includes several security and compliance improvements. For example, you'll find the [unsubscribe and suppression management tools]({{root_url}}/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html) have been improved to make it easier for your recipients to unsubscribe from unwanted email, and [Marketing Campaign's sender identities]({{root_url}}/User_Guide/Marketing_Campaigns/senders.html) have greatly improved our anti-spoofing protection.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 I’m using Marketing Campaigns, why am I still being billed for Legacy Newsletter?
-{% endanchor %}
+</page-anchor>
 
 Your final Legacy Newsletter bill will be generated on the first calendar day of the month following the last month you send via Legacy Newsletter. If you use both Legacy Newsletter and Marketing Campaigns, you’ll see two distinct line items on your invoices.
 
 For example, if you sent your final Legacy Newsletter campaign on June 15, and began using Marketing Campaigns at any point within June, you’ll see both items on your July invoice.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Migrating
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Will SendGrid automatically migrate my account to Marketing Campaigns?
-{% endanchor %}
+</page-anchor>
 
 No. We do not have any automated tools for migrating your Legacy Newsletter account to Marketing Campaigns. However, we’ve built a robust [toolkit]({{root_url}}/User_Guide/Legacy_Newsletter/index.html) of resources to help make the manual steps to migrate your account fast and simple. And as always, if you run into any issues with the process, SendGrid’s world class support team is here to help!
 
@@ -171,7 +171,7 @@ You can also use the API to migrate your content, recipients, unsubscribes, and 
 
 {%anchor h3 %}
 What files or data can I download from Legacy Newsletter?
-{% endanchor %}
+</page-anchor>
 
 For a limited time following the sunset of Legacy Newsletter, you will be able to download:
 
@@ -194,9 +194,9 @@ For a limited time following the sunset of Legacy Newsletter, you will be able t
    1. Navigate to **Marketing Email** and then select **Manage**.
    2. Find the campaign you wish to save the data for and click the title.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 What do I need to prepare before migrating to Marketing Campaigns?
-{% endanchor %}
+</page-anchor>
 
 First, review this [Migration Checklist]({{root_url}}/User_Guide/Legacy_Newsletter/migration_checklist.html).
 
@@ -210,43 +210,43 @@ While your migration plan will depend on your unique scenario, the migration che
 6. Do you want to spend time testing campaign sends in Marketing Campaigns before you fully migrate?
 7. Do you have API integrations you need to migrate?
 
-{% anchor h3 %}
+<page-anchor el="h3">
 How do I move my contacts from Legacy Newsletter to Marketing Campaigns?
-{% endanchor %}
+</page-anchor>
 
 View our contact migration [how-to video or documentation page]({{root_url}}/User_Guide/Legacy_Newsletter/Migration_Tutorials/migrating_recipient_lists.html) for step-by-step instructions.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 How do I move my templates from Legacy Newsletter to Marketing Campaigns?
-{% endanchor %}
+</page-anchor>
 
 View our template migration [how-to video or documentation page]({{root_url}}/User_Guide/Legacy_Newsletter/Migration_Tutorials/migrating_content.html) for step-by-step instructions.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 How do I transfer my unsubscribes from Legacy Newsletter to Marketing Campaigns?
-{% endanchor %}
+</page-anchor>
 
 View our [unsubscribe migration how-to video or documentation page]({{root_url}}/User_Guide/Legacy_Newsletter/Migration_Tutorials/migrating_unsubscribes.html) for step-by-step instructions.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 How do I download and save my historical stats?
-{% endanchor %}
+</page-anchor>
 
 View our [how-to video and documentation page]({{root_url}}/User_Guide/Legacy_Newsletter/Migration_Tutorials/downloading_historical_statistics.html) for step-by-step instructions to download your historical stats/data.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 How do I migrate my API integration with Legacy Newsletter to Marketing Campaigns?
-{% endanchor %}
+</page-anchor>
 
 Please refer to our [API comparison]({{root_url}}/User_Guide/Legacy_Newsletter/Side_by_Side_Comparisons/api_comparison.html) to see how the Legacy Newsletter API maps to the Marketing Campaigns API. For help with migrating your content, recipients, unsubscribes, and statistics from the Legacy Newsletter to Marketing Campaigns using the API, please refer to our [Legacy Newsletter to Marketing Campaigns API Migration Guide]({{root_url}}/User_Guide/Legacy_Newsletter/Migration_Tutorials/api_migration.html).
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Contact Management
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 What information will Marketing Campaigns store about my contacts?
-{% endanchor %}
+</page-anchor>
 
 Marketing Campaigns will store two types of data about your contacts:
 
@@ -254,21 +254,21 @@ Marketing Campaigns will store two types of data about your contacts:
 
 **Email Engagement:** Data about [how your customers engage]({{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html#-Engagement-Statistics) with emails you send using Marketing Campaigns. This includes whether they’ve opened or clicked specific campaigns as well as when they last opened or clicked any campaign you’ve sent.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Will the Subscription Widget also be retired?
-{% endanchor %}
+</page-anchor>
 
 The [Legacy Newsletter subscription widget](https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/recipients.html#-Subscription-Widget) will no longer function once Legacy Newsletter is retired on 9/30/17.
 
 As you migrate to Marketing Campaigns, you can leverage any of the following best-in-class email list growth integrations to manage your recipient signups: [Privy](https://privy.com/sendgrid/), [WisePops](https://support.wisepops.com/integrations/connect-wisepops-with-sendgrid), [JustUno](https://www.justuno.com/sendgrid-integrations.html), or [SendGrid’s Wordpress subscription widget](https://sendgrid.com/docs/Integrate/Tutorials/WordPress/subscription_widget.html?mc=email&mcd=Legacymigration&utm_medium=email&utm_source=nurture&cvosrc=email.nurture.Legacymigration&utm_campaign=Legacymigration).
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Segmentation
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 What is segmentation?
-{% endanchor %}
+</page-anchor>
 
 Segmentation is Marketing Campaigns’ powerful tool to help you send more relevant, personalized email marketing campaigns. With segmentation you can target specific portions of your audience who share common characteristics and craft content that’s highly relevant to them.
 
@@ -278,9 +278,9 @@ As an example, you could send a different email to “Chicago customers who open
 
 Learn more about Segmentation with Marketing Campaigns within our [Documentation]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html#-Creating-a-Segment).
 
-{% anchor h3 %}
+<page-anchor el="h3">
 How is a list different from a segment?
-{% endanchor %}
+</page-anchor>
 
 Lists are simply static collections of Marketing Campaigns contacts. You can upload contacts either [via CSV]({{root_url}}/User_Guide/Marketing_Campaigns/contacts.html), manually, or via [API integration]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html) and Marketing Campaigns will store them as-is. You can also always choose to manually add or remove recipients from a particular list.
 
@@ -288,9 +288,9 @@ Segments are dynamic collections of Marketing Campaigns contacts grouped togethe
 
 Learn more about Lists and Segments within our [documentation]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html).
 
-{% anchor h3 %}
+<page-anchor el="h3">
 How do I create a segment?
-{% endanchor %}
+</page-anchor>
 
 To create a segment, you’ll first need to upload your recipients (and associated recipient data) as contacts within Marketing Campaigns. You can upload contacts to your account either [via CSV]({{root_url}}/User_Guide/Marketing_Campaigns/contacts.html), manually, or via [API integration]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html).
 
@@ -298,21 +298,21 @@ Once your contacts are stored in Marketing Campaigns, you’ll leverage the user
 
 For step-by-step instructions on creating a segment, see our [documentation]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html#-Creating-a-Segment).
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Statistics
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 What will happen to all of my historical stats in Legacy Newsletter?
-{% endanchor %}
+</page-anchor>
 
 After **September 30, 2017** you will be given a short grace period to download your data. After this grace period this data will be permanently deleted.
 
 For this reason, we recommend you export any data you wish to retain for the long term **asap**. [View our migration guide for details on how to export this data.](https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Migration_Tutorials/downloading_historical_statistics.html)
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Why are some stats that I'm used to in Legacy Newsletter missing in Marketing Campaigns?
-{% endanchor %}
+</page-anchor>
 
 Marketing Campaigns takes a slightly different approach to presenting statistics than Legacy Newsletter. To help you navigate these changes, we’ve created a [side-by-side comparison]({{root_url}}/User_Guide/Legacy_Newsletter/Side_by_Side_Comparisons/statistics_reporting.html) for you to review. If there are specific statistics you would like available in Marketing Campaigns, please let us know by emailing us at <a href="mailto:LegacyMigration@SendGrid.com">LegacyMigration@SendGrid.com</a>.
 
@@ -320,13 +320,13 @@ In many instances you’ll find that Marketing Campaigns provides more in-depth 
 
 Learn more about Engagement Statistics with Marketing Campaigns [here]({{root_url}}/Classroom/Basics/Marketing_Campaigns/engagement_stats.html).
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Campaign Creation
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 How is creating a campaign different in Marketing Campaigns than Legacy Newsletter?
-{% endanchor %}
+</page-anchor>
 
 Both Legacy Newsletter and Marketing Campaigns help you manage contacts, build campaigns, run multivariate tests, schedule sends, and review analytics. However, these tasks either more robust or easier to execute (or both!) in Marketing Campaigns. For example, Marketing Campaigns offers:
 

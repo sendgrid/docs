@@ -20,13 +20,13 @@ navigation:
 </ul>
 
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Create a new Marketing Email
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Legacy Newsletter
-{% endanchor %}
+</page-anchor>
 
 **Request**
 
@@ -42,9 +42,9 @@ curl -X POST https://api.sendgrid.com/api/newsletter/add.json -F api_user=SENDGR
 }
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 First you need to find your sender_id:
 
@@ -118,13 +118,13 @@ curl --request POST \
 
 
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Edit an existing Marketing Email
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Legacy Newsletter
-{% endanchor %}
+</page-anchor>
 
 **Request**
 
@@ -140,9 +140,9 @@ curl -X POST https://api.sendgrid.com/api/newsletter/edit.json -F api_user=SENDG
 }
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 First, find the campaign_id:
 
@@ -241,13 +241,13 @@ curl --request PATCH \
 
 
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Retrieve the contents of an existing Marketing Email
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Legacy Newsletter
-{% endanchor %}
+</page-anchor>
 
 **Request**
 
@@ -274,9 +274,9 @@ curl -X POST https://api.sendgrid.com/api/newsletter/get.json -F api_user=SENDGR
 
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 First, find the campaign_id:
 
@@ -346,13 +346,13 @@ curl --request GET \
 
 
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Retrieve a list of all existing Marketing Email
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Legacy Newsletter
-{% endanchor %}
+</page-anchor>
 
 **Request**
 
@@ -383,9 +383,9 @@ curl -X POST https://api.sendgrid.com/api/newsletter/list.json -F api_user=SENDG
 ]
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 **Request**
 
@@ -454,13 +454,13 @@ curl --request GET \
 
 
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Remove an existing Marketing Email
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Legacy Newsletter
-{% endanchor %}
+</page-anchor>
 
 **Request**
 
@@ -476,9 +476,9 @@ curl -X POST https://api.sendgrid.com/api/newsletter/delete.json -F api_user=SEN
 }
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 First, find the campaign_id:
 

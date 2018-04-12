@@ -13,11 +13,11 @@ Laravel provides a clean API over the popular SwiftMailer library with drivers f
 
 Laravel 5.5 LTS uses Mailable classes. Mailables in Laravel abstracts building emails with a mailable class. Mailables are responsible for collating data and passing them to views.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Before you begin
-{% endanchor %}
+</page-anchor>
 
-In `.env` you need to find and configure these variables: 
+In `.env` you need to find and configure these variables:
 
 {% codeblock %}
 MAIL_DRIVER=smtp
@@ -38,9 +38,9 @@ The `MAIL_FROM_NAME` field requires double quotes because there is a space in th
 You can send `100 messages per SMTP connection` at a time, and open up to `10 concurrent connections` from a single server at a time.
 {% endinfo %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Creating a Mailable
-{% endanchor %}
+</page-anchor>
 
 Next you need to create a Mailable class, Laravel's CLI tool called Artisan makes that a simple feat.
 Open CLI, go to the project directory and type:
@@ -75,7 +75,7 @@ class TestEmail extends Mailable
         $address = 'janeexampexample@example.com';
         $subject = 'This is a demo!';
         $name = 'Jane Doe';
-        
+
         return $this->view('emails.test')
                     ->from($address, $name)
                     ->cc($address, $name)
@@ -102,9 +102,9 @@ In Laravel `Views` are used as 'templates' when sending an email. Let's create a
     </html>
 {% endcodeblock %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Sending an email
-{% endanchor %}
+</page-anchor>
 
 Now that we have our Mailable Class created, all we need to do is run this code:
 
@@ -117,9 +117,9 @@ Now that we have our Mailable Class created, all we need to do is run this code:
     Mail::to('john@example.com')->send(new TestEmail($data));
 {% endcodeblock %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Adding a category or custom field
-{% endanchor %}
+</page-anchor>
 
 Categories in SendGrid allow you to split your statistics into sections. For example, if you have a Whitelabeled service, you can split your statistics by the user login.
 
@@ -162,12 +162,12 @@ class TestEmail extends Mailable
         ];
 
         $header = $this->asString($headerData);
-        
+
         $this->withSwiftMessage(function ($message) use ($header) {
             $message->getHeaders()
                     ->addTextHeader('X-SMTPAPI', $header);
         });
-        
+
         return $this->view('emails.test')
                     ->from($address, $name)
                     ->cc($address, $name)
@@ -189,7 +189,7 @@ class TestEmail extends Mailable
     private function asString($data)
     {
         $json = $this->asJSON($data);
-        
+
         return wordwrap($json, 76, "\n   ");
     }
 }

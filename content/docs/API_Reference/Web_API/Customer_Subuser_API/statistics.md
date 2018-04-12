@@ -8,9 +8,9 @@ navigation:
 
 Subuser Statistics
 
-{% anchor h2 %}
-Retrieve Subuser Statistics 
-{% endanchor %}
+<page-anchor el="h2">
+Retrieve Subuser Statistics
+</page-anchor>
 
 Retrieve daily statistics for a subuser.
 
@@ -71,9 +71,9 @@ The <code>days</code> argument and the <code>start_date</code>/<code>end_date</c
   {% endresponse %}
 {% endapiexample %}
 
-{% anchor h2 %}
-Retrieve Aggregate Statistics 
-{% endanchor %}
+<page-anchor el="h2">
+Retrieve Aggregate Statistics
+</page-anchor>
 
 Retrieve lifetime total statistics for a subuser.
 
@@ -105,9 +105,9 @@ Retrieve lifetime total statistics for a subuser.
   {% endresponse %}
 {% endapiexample %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Category List
-{% endanchor %}
+</page-anchor>
 
 Retrieve a list of all the categories used by a subuser.
 
@@ -141,9 +141,9 @@ Retrieve a list of all the categories used by a subuser.
   {% endresponse %}
 {% endapiexample %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Category Statistics
-{% endanchor %}
+</page-anchor>
 
 Retrieve statistics broken down by category. If the category does not exist, it will return an empty result set.
 
@@ -188,9 +188,9 @@ The <code>days</code> argument and the <code>start_date</code>/<code>end_date</c
   {% endresponse %}
 {% endapiexample %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Multiple Category Statistics
-{% endanchor %}
+</page-anchor>
 
 When retrieving statistics for more than one category, use an array category argument.
 

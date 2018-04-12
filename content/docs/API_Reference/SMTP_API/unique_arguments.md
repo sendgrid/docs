@@ -67,7 +67,7 @@ To apply different unique arguments to individual emails, you may use [substitut
 }
 {% endcodeblock %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Additional Resources
 {% endanchor h2 %}
 

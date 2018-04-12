@@ -12,9 +12,9 @@ navigation:
 
 Passwords are the keys that get you entry into so many things, including SendGrid. As an attack vector, bad actors may try to take advantage of your passwords in order to get vital information about you or your customers. We’ve created a couple of tips on how to create and manage your passwords to protect yourself both on and off the 'Grid.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 SendGrid Password Minimum Requirements
-{% endanchor %}
+</page-anchor>
 
 The minimum password criterium that your SendGrid password must meet include:
 
@@ -23,9 +23,9 @@ The minimum password criterium that your SendGrid password must meet include:
 
 Remember, these are *minimum requirements*. We also encourage users to create longer  passwords with both uppercase and lowercase characters, numbers, and special characters. Please keep reading for information on how to make your password more secure.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Create a Secure Password
-{% endanchor %}
+</page-anchor>
 
 **Do:**
 
@@ -41,17 +41,17 @@ Create a Secure Password
 * Do not write your password down, instead, use a [password manager](#-Remembering-all-your-passwords-is-hard).
 * Do not email, text, tweet, commit, or otherwise share your password.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Don't put your passwords in your code
-{% endanchor %}
+</page-anchor>
 
 * Use [API Keys]({{root_url}}/User_Guide/Account/api_keys.html)
 * Create an environment or credentials file that includes your password(s), but that is in your [.gitignore file](https://help.github.com/articles/ignoring-files/).
 * Put your environment file out of the discoverable file structure - your code can get it, but your web server won't serve it.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Never share your password
-{% endanchor %}
+</page-anchor>
 
 Never share your password. Not ever.
 
@@ -63,9 +63,9 @@ No SendGrid representative will ever ask for your password.
 * With SendGrid you can allow other users to access your account with their own password.
 * For your applications that send through SendGrid, give **each of them** their own [API Key]({{root_url}}/User_Guide/Account/api_keys.html).
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Remembering all your passwords is hard
-{% endanchor %}
+</page-anchor>
 
 Especially, if you're following the rules above. So, don't remember them! Luckily, technology has come to the rescue with [password managers](http://en.wikipedia.org/wiki/Password_manager).
 Password managers are applications that run locally, integrate with your browser, and store your passwords so you don't have to. Wikipedia provides a [list of password managers](http://en.wikipedia.org/wiki/List_of_password_managers).

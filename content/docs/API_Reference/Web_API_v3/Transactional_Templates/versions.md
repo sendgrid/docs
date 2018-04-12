@@ -24,9 +24,9 @@ Each user can have up to 300 versions across all templates.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 POST
-{% endanchor %}
+</page-anchor>
 Create a new version for a template.
 
 {% parameters post %}
@@ -58,9 +58,9 @@ HTTP/1.1 201 OK
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 POST
-{% endanchor %}
+</page-anchor>
 Activate a version.
 
 {% apiv3example post POST https://api.sendgrid.com/v3/templates/:template_id/versions/:version_id/activate %}
@@ -82,9 +82,9 @@ HTTP/1.1 200 OK
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 GET
-{% endanchor %}
+</page-anchor>
 Retrieve a specific version of a template.
 
 {% apiv3example get-specific GET https://api.sendgrid.com/v3/templates/:template_id/versions/:version_id %}
@@ -107,9 +107,9 @@ HTTP/1.1 200 OK
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 PATCH
-{% endanchor %}
+</page-anchor>
 Edit a version.
 
 {% parameters patch %}
@@ -138,9 +138,9 @@ HTTP/1.1 200 OK
 {% endv3response %}
 {% endapiv3example %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 DELETE
-{% endanchor %}
+</page-anchor>
 Delete a version.
 
 {% apiv3example delete DELETE https://api.sendgrid.com/v3/templates/:template_id/versions/:version_id %}

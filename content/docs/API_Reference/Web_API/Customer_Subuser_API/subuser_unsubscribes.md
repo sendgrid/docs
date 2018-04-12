@@ -6,9 +6,9 @@ navigation:
    show: true
 ---
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Retrieve Unsubscribes
-{% endanchor %}
+</page-anchor>
 
 {% parameters get %}
  {% parameter task Yes 'Must be set to <code>get</code>' 'Task to retrieve unsubscribes for subuser' %}
@@ -46,9 +46,9 @@ Retrieve Unsubscribes
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Delete Unsubscribes
-{% endanchor %}
+</page-anchor>
 SendGrid suppresses messages to unsubscribed addresses, but entries can be removed from the suppression list at any time if redelivery to an unsubscribed address is desired. Take care that the address should be redelivered to.
 
 {% parameters delete %}
@@ -73,9 +73,9 @@ SendGrid suppresses messages to unsubscribed addresses, but entries can be remov
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Add Unsubscribes
-{% endanchor %}
+</page-anchor>
 Manually add address to the Unsubscribe suppression list, to prevent delivery to the address.
 
 {% parameters add %}

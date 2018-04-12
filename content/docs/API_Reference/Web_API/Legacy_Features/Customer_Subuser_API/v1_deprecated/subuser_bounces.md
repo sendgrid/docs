@@ -13,9 +13,9 @@ This feature is deprecated, please go to the  <a href="{{root_url}}/API_Referenc
 {% endwarning %}
 
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Retrieve Bounces
-{% endanchor %}
+</page-anchor>
 Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
 <table class="table table-bordered table-striped">
@@ -123,9 +123,9 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Delete Bounces
-{% endanchor %}
+</page-anchor>
 Since SendGrid does not re-deliver to bounced addresses, users can remove bounces from their list at any time if redelivery to a bounced address is desired.
 
 <table class="table table-bordered table-striped">

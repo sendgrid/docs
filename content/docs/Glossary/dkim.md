@@ -24,9 +24,9 @@ You can authenticate with DKIM yourself or the DKIM signature can be created by 
 
 SendGrid automatically enables DKIM for all email to improve your [email deliverability]({{root_url}}/Glossary/email_deliverability.html), whether you’re on a shared IP or a dedicated one. This is just one more example of how SendGrid helps thousands of customers follow email best practices to ensure maximum delivery for their emails.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Automated Security and Your DKIM Signature
-{% endanchor %}
+</page-anchor>
 
 When you set up a [whitelabel]({{root_url}}/Classroom/Deliver/Delivery_Introduction/all_you_need_to_know_about_whitelabeling.html), you will be given the option of using [automated or manual security]({{root_url}}/Classroom/Deliver/Sender_Authentication/what_is_automated_security_in_the_whitelabel_settings.html). When you select automated security, SendGrid will manage your DKIM and SPF records for you. This means that whenever you make a change to your account that could impact your deliverability, such as adding a new dedicated sending [IP address]({{root_url}}/Glossary/ip_address.html), SendGrid will automatically update your DNS settings and your DKIM signature.
 
@@ -34,9 +34,9 @@ When you set up a [whitelabel]({{root_url}}/Classroom/Deliver/Delivery_Introduct
 
 
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Example DKIM Record: Automated Security ON
-{% endanchor %}
+</page-anchor>
 
 {% codeblock %}
 
@@ -46,9 +46,9 @@ s2.domainkey.yourdomain.com. | CNAME | s2.domainkey.uXXX.wlXXX.sendgrid.net.
 
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Example DKIM Record: Automated Security OFF
-{% endanchor %}
+</page-anchor>
 
 {% codeblock %}
 

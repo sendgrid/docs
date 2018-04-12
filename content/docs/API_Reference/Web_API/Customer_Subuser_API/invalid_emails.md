@@ -6,9 +6,9 @@ navigation:
    show: true
 ---
 
-{% anchor h2 %}
-Retrieve Invalid Emails 
-{% endanchor %}
+<page-anchor el="h2">
+Retrieve Invalid Emails
+</page-anchor>
 
 {% parameters get %}
  {% parameter task Yes 'Must be set to <code>get</code>' 'Task to retrieve the invalid emails for the specified subuser' %}
@@ -60,9 +60,9 @@ Retrieve Invalid Emails
 
 * * * * *
 
-{% anchor h2 %}
-Delete Invalid Emails 
-{% endanchor %}
+<page-anchor el="h2">
+Delete Invalid Emails
+</page-anchor>
 SendGrid drops messages to invalid emails, users can remove invalid emails from their list at any time if they believe the address to now be valid.
 
 {% parameters delete %}

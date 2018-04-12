@@ -31,18 +31,18 @@ The following new features and changes to the service are available.
   </tr>
 </table>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 29 March 2018
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Email Activity Feed
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
     <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ><img src="{{root_url}}/images/code_icon.png" alt="An update to the API" width="100" height="100"></td>
-    <td>The Email Activity Feed has been updated to include enhancements to email activity feed details, filtering, search options, and CSV export capability to ease the process of troubleshooting email delivery issues. In addition to the new enhancements, customers have the option to purchase 30 days of additional email activity history which includes API endpoint access.</td> 
+    <td>The Email Activity Feed has been updated to include enhancements to email activity feed details, filtering, search options, and CSV export capability to ease the process of troubleshooting email delivery issues. In addition to the new enhancements, customers have the option to purchase 30 days of additional email activity history which includes API endpoint access.</td>
   </tr>
 </table>
 
@@ -53,14 +53,14 @@ High-volume (100M+) customers do not have the option to access this feature at t
  * Access the Email Activity Feed [here](https://app.sendgrid.com/email_activity)
  * For more information about the UI updates, see the [documentation](https://sendgrid.com/docs/User_Guide/email_activity_feed.html)
  * For more information about the API updates, see the [documentation](https://sendgrid.api-docs.io/v3.0/email-activity/filter-all-messages)
- 
-{% anchor h2 %}
-16 March 2018
-{% endanchor %}
 
-{% anchor h3 %}
+<page-anchor el="h2">
+16 March 2018
+</page-anchor>
+
+<page-anchor el="h3">
 New Design Templates for Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -69,13 +69,13 @@ New Design Templates for Marketing Campaigns
   </tr>
 </table>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 14 March 2018
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Fixed a segmentation date issue
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -84,13 +84,13 @@ Fixed a segmentation date issue
   </tr>
 </table>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 08 March 2018
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Unsubscribe Tag Support for Transactional Templates
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -99,13 +99,13 @@ Unsubscribe Tag Support for Transactional Templates
   </tr>
 </table>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 06 March 2018
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Code Editor Color Scheme
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -114,18 +114,18 @@ Code Editor Color Scheme
   </tr>
 </table>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 01 March 2018
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Email Activity Feed - Beta
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
     <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ><img src="{{root_url}}/images/code_icon.png" alt="An update to the API" width="100" height="100"></td>
-    <td>As of 01 March 2018, we are beginning to roll out early beta access to our new Email Activity feature. This release includes enhancements to email activity feed details, filtering, search options, and CSV export capability to ease the process of troubleshooting email delivery issues.</td> 
+    <td>As of 01 March 2018, we are beginning to roll out early beta access to our new Email Activity feature. This release includes enhancements to email activity feed details, filtering, search options, and CSV export capability to ease the process of troubleshooting email delivery issues.</td>
   </tr>
 </table>
 
@@ -136,25 +136,25 @@ This open beta will not be available for all customers right away. High-volume (
  * Access the Email Activity Feed [here](https://app.sendgrid.com/email_activity)
  * For more information about the UI updates, see the [documentation](https://sendgrid.com/docs/User_Guide/email_activity_beta.html)
  * For more information about the API updates, see the [documentation](https://sendgrid.api-docs.io/v3.0/email-activity/filter-all-messages)
- 
- {% anchor h3 %}
+
+ <page-anchor el="h3">
 Font Update
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
     <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
-    <td>We've updated the font used throughout our user interface (UI) to align with the SendGrid brand.</td> 
+    <td>We've updated the font used throughout our user interface (UI) to align with the SendGrid brand.</td>
   </tr>
 </table>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 27 February 2018
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Dates & Times Displayed on Campaigns Index
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -163,13 +163,13 @@ Dates & Times Displayed on Campaigns Index
   </tr>
 </table>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 16 February 2018
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 CSV Upload Notification Email Address
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -178,13 +178,13 @@ CSV Upload Notification Email Address
   </tr>
 </table>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 13 February 2018
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Transactional Templates Search & Filtering
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -193,13 +193,13 @@ Transactional Templates Search & Filtering
   </tr>
 </table>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 04 January 2018
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Table & Column Rendering in Outlook
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -208,9 +208,9 @@ Table & Column Rendering in Outlook
   </tr>
 </table>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Easier Segmentation Through Search
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -219,13 +219,13 @@ Easier Segmentation Through Search
   </tr>
 </table>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 20 December 2017
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Mailbox Provider Statistics
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -234,13 +234,13 @@ Mailbox Provider Statistics
   </tr>
 </table>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 15 December 2017
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Drag & Drop Unsubscribe Module
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -249,13 +249,13 @@ Drag & Drop Unsubscribe Module
   </tr>
 </table>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 1 November 2017
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Marketing Campaigns Contacts
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -264,13 +264,13 @@ Marketing Campaigns Contacts
   </tr>
 </table>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 11 October 2017
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Custom field update
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -280,13 +280,13 @@ Custom field update
 </table>
 
 
-{% anchor h2 %}
+<page-anchor el="h2">
 2 October 2017
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Substitution tag update
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -295,13 +295,13 @@ Substitution tag update
   </tr>
 </table>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 30 September 2017
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Legacy Newsletter
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -310,13 +310,13 @@ Legacy Newsletter
   </tr>
 </table>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 14 September 2017
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Save your favorite colors
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -325,13 +325,13 @@ Save your favorite colors
   </tr>
 </table>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 5 September 2017
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Amazon Marketplace
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -340,13 +340,13 @@ Amazon Marketplace
   </tr>
 </table>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 1 August 2017
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 New editing experience
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -355,9 +355,9 @@ New editing experience
   </tr>
 </table>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Dedicated IP price increase
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -366,9 +366,9 @@ Dedicated IP price increase
   </tr>
 </table>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Code library release notifications
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -377,9 +377,9 @@ Code library release notifications
   </tr>
 </table>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Increased character limit for text custom fields
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -388,13 +388,13 @@ Increased character limit for text custom fields
   </tr>
 </table>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 7 July 2017
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Responsive image enhancements
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -403,9 +403,9 @@ Responsive image enhancements
   </tr>
 </table>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Additional fonts available for campaigns and templates
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -414,13 +414,13 @@ Additional fonts available for campaigns and templates
   </tr>
 </table>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 2 June 2017
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Added data to recipient exports
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -429,13 +429,13 @@ Added data to recipient exports
   </tr>
 </table>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 5 May 2017
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Experiments tab and Experiments overview
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -444,13 +444,13 @@ Experiments tab and Experiments overview
   </tr>
 </table>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 12 May 2017
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Visual reference of A/B test creative
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -459,13 +459,13 @@ Visual reference of A/B test creative
   </tr>
 </table>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 19 April 2017
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 IP self-service purchase
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -474,13 +474,13 @@ IP self-service purchase
   </tr>
 </table>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 15 March 2017
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Increased photo limits
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -489,13 +489,13 @@ Increased photo limits
   </tr>
 </table>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 23 February 2017
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Teammates
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -504,13 +504,13 @@ Teammates
   </tr>
 </table>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 22 February 2017
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Magento 2 extension
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -519,12 +519,12 @@ Magento 2 extension
   </tr>
 </table>
 
-{% anchor h2 %}
-16 February 2017{% endanchor %}
+<page-anchor el="h2">
+16 February 2017</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Signup security enhancements
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -533,13 +533,13 @@ Signup security enhancements
   </tr>
 </table>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 14 February 2017
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Interactive v3 API documentation
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -548,9 +548,9 @@ Interactive v3 API documentation
   </tr>
 </table>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 New C# library supporting .NET Core
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -559,13 +559,13 @@ New C# library supporting .NET Core
   </tr>
 </table>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 26 January 2017
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Improved contact search
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -574,9 +574,9 @@ Improved contact search
   </tr>
 </table>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Billing and invoice usability improvements
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -585,13 +585,13 @@ Billing and invoice usability improvements
   </tr>
 </table>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 24 January 2017
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Universal links and partnership with Branch
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>
@@ -600,13 +600,13 @@ Universal links and partnership with Branch
   </tr>
 </table>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 5 January 2017
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Segment on relative dates
-{% endanchor %}
+</page-anchor>
 
 <table class="table" style="width: 100%;">
   <tr>

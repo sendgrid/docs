@@ -8,9 +8,9 @@ navigation:
 
 Throttle your customer subuser when you need them to send only a specific amount of emails at a specified interval.
 
-{% anchor h2 %}
-Retrieve 
-{% endanchor %}
+<page-anchor el="h2">
+Retrieve
+</page-anchor>
 
 Retrieve account limits for a specific customer subuser. If the API call response is empty it means that the customer subuser has had the limits removed.
 
@@ -42,9 +42,9 @@ Retrieve account limits for a specific customer subuser. If the API call respons
 
 * * * * *
 
-{% anchor h2 %}
-No Limit 
-{% endanchor %}
+<page-anchor el="h2">
+No Limit
+</page-anchor>
 
 Obtain a complete list of all customer subusers.
 
@@ -72,9 +72,9 @@ Obtain a complete list of all customer subusers.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Set Recurring Limits
-{% endanchor %}
+</page-anchor>
 
 A recurring reset will allow you to periodically reset a subuser's credits to a number that you specify. This can either be daily, weekly or monthly.
 
@@ -107,9 +107,9 @@ A recurring reset will allow you to periodically reset a subuser's credits to a 
 
 * * * * *
 
-{% anchor h2 %}
-Total Credits 
-{% endanchor %}
+<page-anchor el="h2">
+Total Credits
+</page-anchor>
 
 Set a subuser's credits to a specified amount.
 
@@ -138,9 +138,9 @@ Set a subuser's credits to a specified amount.
 
 * * * * *
 
-{% anchor h2 %}
-Increment Credits 
-{% endanchor %}
+<page-anchor el="h2">
+Increment Credits
+</page-anchor>
 
 Increment a subuser's credits by a specified amount.
 
@@ -169,9 +169,9 @@ Increment a subuser's credits by a specified amount.
 
 * * * * *
 
-{% anchor h2 %}
-Decrement Credits 
-{% endanchor %}
+<page-anchor el="h2">
+Decrement Credits
+</page-anchor>
 
 Decrement a subuser's credits by a specified amount.
 

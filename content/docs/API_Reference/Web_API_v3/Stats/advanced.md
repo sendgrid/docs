@@ -12,9 +12,9 @@ We store 7 days of email activity in our database and the default is 500 items r
 
 Advanced Stats provide a more in-depth view of your statistics and the actions of the recipients segmented by geography, browser type, and more. You can read more about them in the [Statistics]({{root_url}}/User_Guide/Statistics/index.html) section of our User Guide.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 GET
-{% endanchor %}
+</page-anchor>
 
 Gets email statistics by country and state/province.
 
@@ -65,9 +65,9 @@ HTTP/1.1 200
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 GET
-{% endanchor %}
+</page-anchor>
 
 Gets email statistics by device type.
 
@@ -144,9 +144,9 @@ HTTP/1.1 200
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 GET
-{% endanchor %}
+</page-anchor>
 
 Gets email statistics by client type.
 
@@ -192,9 +192,9 @@ HTTP/1.1 200
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 GET
-{% endanchor %}
+</page-anchor>
 
 Gets email statistics for a single client type.
 
@@ -241,9 +241,9 @@ HTTP/1.1 200
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 GET
-{% endanchor %}
+</page-anchor>
 
 Gets email statistics by mailbox provider.
 
@@ -306,9 +306,9 @@ HTTP/1.1 200
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 GET
-{% endanchor %}
+</page-anchor>
 
 Gets email statistics by browser. You can add multiple browsers to the URL, by using the `browsers` parameter multiple times.
 

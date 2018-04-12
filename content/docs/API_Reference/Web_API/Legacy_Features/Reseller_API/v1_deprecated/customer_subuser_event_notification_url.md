@@ -8,9 +8,9 @@ navigation:
    show: true
 ---
 
-{% anchor h2 %}
-Retrieve 
-{% endanchor %}
+<page-anchor el="h2">
+Retrieve
+</page-anchor>
 
 <table class="table table-bordered table-striped">
    <thead>
@@ -58,15 +58,15 @@ Retrieve
 url>http://www.SubUserPostUrlHere.com</url
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      
+
 {% requestblock %}
-        
+
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
-        
+
   {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=get&amp;user=example@example.com&amp;method=eventpostur
   {% endrequestdata %}
-      
+
 {% endrequestblock %}
 
 <h3>Response</h3>
@@ -76,9 +76,9 @@ url>http://www.SubUserPostUrlHere.com</url
 
 * * * * *
 
-{% anchor h2 %}
-Update / Set URL 
-{% endanchor %}
+<page-anchor el="h2">
+Update / Set URL
+</page-anchor>
 
 <table class="table table-bordered table-striped">
    <thead>
@@ -132,15 +132,15 @@ Update / Set URL
 result><message>success</message></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      
+
 {% requestblock %}
-        
+
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
-        
+
   {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=set&amp;user=example@example.com&amp;url=http://www.SubUserPostUrlHere.com&amp;method=eventpostur
   {% endrequestdata %}
-      
+
 {% endrequestblock %}
 
 <h3>Response</h3>
@@ -153,9 +153,9 @@ result><message>success</message></result>
 
 * * * * *
 
-{% anchor h2 %}
-Delete 
-{% endanchor %}
+<page-anchor el="h2">
+Delete
+</page-anchor>
 
 <table class="table table-bordered table-striped">
    <thead>
@@ -203,15 +203,15 @@ Delete
 result><message>success</message></result>
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      
+
 {% requestblock %}
-        
+
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
-        
+
   {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=delete&amp;user=example@example.com&amp;method=eventpostur
   {% endrequestdata %}
-      
+
 {% endrequestblock %}
 
 <h3>Response</h3>

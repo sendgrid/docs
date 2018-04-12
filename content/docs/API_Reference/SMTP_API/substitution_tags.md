@@ -13,7 +13,7 @@ navigation:
 <p>Substitution tags allow you to generate dynamic content for each recipient on your list. When you send to a list of recipients over SMTP API, you can specify substitution tags specific to each recipient. For example, a first name that will then be inserted into an opening greeting like the following, where each recipient sees -firstName- replaced with their first name.</p>
 
 {% codeblock lang:html %}
-"Dear -firstName-" 
+"Dear -firstName-"
 {% endcodeblock %}
 
 <p>These tags can also be used in more complex scenarios. For example, you could use a -customerID- to build a custom URL that is specific to that user.</p>
@@ -24,7 +24,7 @@ navigation:
 {% endcodeblock %}
 
 {% info %}
-Substitution tags will work in the Subject line, body of the email and in [Unique Arguments]({{root_url}}/API_Reference/SMTP_API/unique_arguments.html). 
+Substitution tags will work in the Subject line, body of the email and in [Unique Arguments]({{root_url}}/API_Reference/SMTP_API/unique_arguments.html).
 {% endinfo %}
 
 {% info %}
@@ -45,7 +45,7 @@ Do not nest substitution tags in substitutions as they will fail and your substi
 
 {% anchor h2%}
 Substitution Tag Example
-{% endanchor %}
+</page-anchor>
 
 Email HTML content:
 {% codeblock lang:html %}
@@ -54,9 +54,9 @@ Email HTML content:
   <body>
     <p>Hello -name-,<br>
        Thank you for your interest in our products. I have set up an appointment to call you at -time- EST to discuss your needs in more detail. If you would like to reschedule this call, please visit the following link: `<a href="http://example.com/reschedule?id=-customerID-">reschedule</a>`
- 
+
                 Regards,
- 
+
                 -salesContact-
                 -contactPhoneNumber-<br>
     </p>
@@ -102,11 +102,11 @@ Email HTML content:
   <head></head>
   <body>
     <p>Hello John,<br>
-       Thank you for your interest in our products. I have set up an appointment to call you at 3:00 pm EST to discuss your needs in more detail. If you would like to reschedule this call, please visit the following link: 
+       Thank you for your interest in our products. I have set up an appointment to call you at 3:00 pm EST to discuss your needs in more detail. If you would like to reschedule this call, please visit the following link:
       <a href="http://example.com/reschedule?id=1234">reschedule</a>
- 
+
                 Regards,
- 
+
                 Jared
                 555.555.5555<br>
     </p>
@@ -120,11 +120,11 @@ Email HTML content:
   <head></head>
   <body>
     <p>Hello Jane,<br>
-       Thank you for your interest in our products. I have set up an appointment to call you at 5:15pm EST to discuss your needs in more detail. If you would like to reschedule this call please visit the following link: 
+       Thank you for your interest in our products. I have set up an appointment to call you at 5:15pm EST to discuss your needs in more detail. If you would like to reschedule this call please visit the following link:
    <a href="http://example.com/reschedule?id=5678">reschedule</a>
- 
+
                 Regards,
- 
+
                 Ben
                 777.777.7777<br>
     </p>
@@ -132,12 +132,12 @@ Email HTML content:
 </html>
 {% endcodeblock %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 SendGrid Defined Substitution Tags
-{% endanchor %}
+</page-anchor>
 While the tags above are tags that you define at the time of your send in the SMTPAPI headers, SendGrid also offers [Unsubscribe Groups tags]({{root_url}}/User_Guide/Transactional_Templates/create_edit.html#-Unsubscribe-Substitution-Tags) that have been pre-defined for you. You can use these tags within the content of your email, and you do not have to and should not, define them.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Additional Resources
 {% endanchor h2 %}
 

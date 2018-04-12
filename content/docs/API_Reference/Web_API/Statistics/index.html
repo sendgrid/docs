@@ -10,17 +10,17 @@ navigation:
 This endpoint is being deprecated by the addition of the [v3 Global Statistics API]({{root_url}}/API_Reference/Web_API_v3/Stats/global.html).
 {% endwarning %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Retrieve Statistics
-{% endanchor %}
+</page-anchor>
 
 {% info %}
 You can specify either the days parameter or the start_date and end_date parameters. If provided with no parameters, the current day's statistics are returned.
 {% endinfo %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Retrieve Statistics
-{% endanchor %}
+</page-anchor>
 
 {% parameters activate %}
   {% parameter days false 'Must be an integer greater than 0 and less than 1096' 'Number of days in the past to include statistics (Includes today)' %}
@@ -119,9 +119,9 @@ To better understand the terms used in the response, please refer to the [Statis
 
 <hr />
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Category List
-{% endanchor %}
+</page-anchor>
 <h3>Retrieve a list of all the categories used in your account.</h3>
 
 {% apiexample list POST https://api.sendgrid.com/api/stats.get api_user=your_sendgrid_username&api_key=your_sendgrid_password&list=true %}

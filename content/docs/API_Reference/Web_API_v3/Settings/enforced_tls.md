@@ -6,20 +6,20 @@ navigation:
   show: true
 ---
 
-The Enforced TLS settings specify whether or not the recipient is required to 
-support TLS or have a valid certificate. See the 
+The Enforced TLS settings specify whether or not the recipient is required to
+support TLS or have a valid certificate. See the
 [SMTP Ports User Guide]({{root_url}}/User_Guide/Setting_Up_Your_Server/smtp_ports.html) for more
 information on opportunistic TLS.
 
 {% info %}
-If either setting is enabled and the recipient does not support TLS or have a 
-valid certificate, we drop the message and send a block event with "TLS required 
+If either setting is enabled and the recipient does not support TLS or have a
+valid certificate, we drop the message and send a block event with "TLS required
 but not supported" as the description.
 {% endinfo %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 GET
-{% endanchor %}
+</page-anchor>
 
 Get the current Enforced TLS settings.
 
@@ -28,15 +28,15 @@ Get the current Enforced TLS settings.
 HTTP/1.1 200
 {
     "require_tls": true,
-    "require_valid_cert": false 
+    "require_valid_cert": false
 }
 
 {% endv3response %}
 {% endapiv3example %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 PATCH
-{% endanchor %}
+</page-anchor>
 
 Change the Enforced TLS settings
 

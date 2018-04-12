@@ -12,7 +12,7 @@ If you are sending email through SendGrid and have the [Subscription Tracking Se
 
 The [Subscription Tracking Setting]({{root_url}}/User_Guide/Settings/tracking.html) also has a number of options for customization, such as a replacement tag that allows you to place the unsubscribe text somewhere in the body of the email, the ability to reword the unsubscribe message, and the ability to add a custom landing page.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Additional Resources
 {% endanchor h2 %}
 

@@ -6,9 +6,9 @@ navigation:
    show: true
 ---
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Retrieve Bounces
-{% endanchor %}
+</page-anchor>
 
 {% parameters get %}
  {% parameter task Yes 'Must be set to <code>get</code>' 'Task to retrieve bounces' %}
@@ -54,9 +54,9 @@ Retrieve Bounces
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Delete Bounces
-{% endanchor %}
+</page-anchor>
 SendGrid suppresses messages to bounced addresses, but entries can be removed from the suppression list at any time if redelivery to a bounced address is desired. Take care that the address should be redelivered to.
 
 {% parameters delete %}

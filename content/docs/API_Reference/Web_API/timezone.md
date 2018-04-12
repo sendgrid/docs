@@ -8,9 +8,9 @@ navigation:
 
 A user's timezone affects the displayed dates on all Suppression Lists and Statistics.
 
-{% anchor h2 %}
-get 
-{% endanchor %}
+<page-anchor el="h2">
+get
+</page-anchor>
 
 Get current timezone assigned to the user.
 
@@ -35,9 +35,9 @@ Get current timezone assigned to the user.
 
 * * * * *
 
-{% anchor h2 %}
-edit 
-{% endanchor %}
+<page-anchor el="h2">
+edit
+</page-anchor>
 
 Update the timezone assigned to the user.
 
@@ -60,9 +60,9 @@ Update the timezone assigned to the user.
 
 * * * * *
 
-{% anchor h2 %}
-list 
-{% endanchor %}
+<page-anchor el="h2">
+list
+</page-anchor>
 
 This example provides the full list of IANA timezones in the SendGrid system, for reference. It's best practice to use the `timezone` parameter.
 

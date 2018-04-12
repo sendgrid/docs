@@ -14,7 +14,7 @@ navigation:
 
 _The following is a post from Brian T from SendGrid’s Compliance team. Read it on the [blog](http://blog.sendgrid.com/link-shorteners-not-for-email/)._
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Link shorteners are Great… But Not For Email
 {% endanchor h2 %}
 
@@ -24,7 +24,7 @@ Spammers Use Them Too
 
 Spammers abuse link shorteners because they mask the true URL that they redirect to. This has caused even reputable link shorteners to become blacklisted, since link shorteners are so often associated with spamming. If the links you provide in your emails are blacklisted, ISPs will probably block your mail, and you're not going to get the delivery rates you expect.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 But I like how they look, and what they do. What do I do?
 {% endanchor h2 %}
 

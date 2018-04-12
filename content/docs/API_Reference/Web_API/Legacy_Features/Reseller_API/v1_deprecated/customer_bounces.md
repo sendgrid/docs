@@ -12,9 +12,9 @@ navigation:
 This feature is deprecated, please go to the [Version 2]({{root_url}}/API_Reference/Web_API/Reseller_API/customer_bounces.html) Reseller Customer Bounces page.
 {% endwarning %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Retrieve Bounces
-{% endanchor %}
+</page-anchor>
 
 Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
@@ -122,9 +122,9 @@ https://api.sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_usern
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Delete Bounces
-{% endanchor %}
+</page-anchor>
 
 Since SendGrid does not re-deliver to bounced addresses, users can remove bounces from their list at any time if redelivery to a bounced address is desired.
 

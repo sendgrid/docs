@@ -18,9 +18,9 @@ Take note that IPs have records in line with Whitelabel records, but are not ass
 
 * * * * *
 
-{% anchor h2 %}
-List 
-{% endanchor %}
+<page-anchor el="h2">
+List
+</page-anchor>
 
 {% parameters list %}
  {% parameter task Yes 'Must be set to <code>list</code>' 'Task to list existing whitelabel records on the account' %}
@@ -57,9 +57,9 @@ List
 
 * * * * *
 
-{% anchor h2 %}
-Attach 
-{% endanchor %}
+<page-anchor el="h2">
+Attach
+</page-anchor>
 
 Attaching a new whitelabel record to a subuser also removes any previously-attached whitelabel. This does not affect already-sent messages.
 

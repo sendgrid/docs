@@ -8,19 +8,19 @@ navigation:
 
 Retrieve, delete and add entries in the Unsubscribes list.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 get
-{% endanchor %}
+</page-anchor>
 
 Retrieve a list of Unsubscribes with addresses and optionally with dates.
 
 {% parameters get %}
-  {% parameter date No 'Must be set to 1.' 'Retrieve the timestamp of the unsubscribe records. It will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS.' %}  
-  {% parameter days No 'If specified, must be an integer greater than 0.' 'Number of days in the past for which to retrieve unsubscribes (includes today).' %}  
-  {% parameter start_date No 'Date must be in YYYY-MM-DD format and be earlier than the end_date parameter.' 'The start of the date range for which to retrieve unsubscribes.' %}  
-  {% parameter end_date No 'Date must be in YYYY-MM-DD format and be later than the start_date parameter.' 'The end of the date range for which to retrieve unsubscribes.' %}  
-  {% parameter limit No 'Some integer.' 'Optional field to limit the number of results returned.' %}  
-  {% parameter offset No 'Some integer.' 'Optional beginning point in the list to retrieve from.' %}  
+  {% parameter date No 'Must be set to 1.' 'Retrieve the timestamp of the unsubscribe records. It will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS.' %}
+  {% parameter days No 'If specified, must be an integer greater than 0.' 'Number of days in the past for which to retrieve unsubscribes (includes today).' %}
+  {% parameter start_date No 'Date must be in YYYY-MM-DD format and be earlier than the end_date parameter.' 'The start of the date range for which to retrieve unsubscribes.' %}
+  {% parameter end_date No 'Date must be in YYYY-MM-DD format and be later than the start_date parameter.' 'The end of the date range for which to retrieve unsubscribes.' %}
+  {% parameter limit No 'Some integer.' 'Optional field to limit the number of results returned.' %}
+  {% parameter offset No 'Some integer.' 'Optional beginning point in the list to retrieve from.' %}
   {% parameter email No 'Email address eg testing@example.com.' 'Optional email addresses to search for.' %}
 {% endparameters %}
 
@@ -46,9 +46,9 @@ Retrieve a list of Unsubscribes with addresses and optionally with dates.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 delete
-{% endanchor %}
+</page-anchor>
 
 Delete an address from the Unsubscribe list. Use `delete_all=1` in order to delete all addresses from your unsubscribe list.
 
@@ -72,9 +72,9 @@ Delete an address from the Unsubscribe list. Use `delete_all=1` in order to dele
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 add
-{% endanchor %}
+</page-anchor>
 
 Add email addresses to the Unsubscribe list.
 

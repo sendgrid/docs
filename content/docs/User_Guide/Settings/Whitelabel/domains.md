@@ -41,19 +41,19 @@ We provide all the information about every step of the process below, so that yo
 Marketing Campaigns [Sender Identities]({{root_url}}/User_Guide/Marketing_Campaigns/senders.html) that use the same domain as your domain whitelabel will automatically verify.
 {% endinfo %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Domain Whitelabel Settings
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 On Behalf of User
-{% endanchor %}
+</page-anchor>
 
 This setting lets you assign a whitelabel to a subuser account or your parent account. A subuser can set up their own whitelabel, but if the parent account assigns a whitelabel to a subuser, that subuser will not be able to edit or modify the settings of the assigned whitelabel.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Subdomain
-{% endanchor %}
+</page-anchor>
 
 This is the “prefix” of the domain that you are actually whitelabeling. Historically, we have suggested prefixes like “em,” “em1,” etc. However, you can use whatever subdomain you would like to use.
 
@@ -65,9 +65,9 @@ The subdomain that you use for your domain whitelabel must be different from the
 
 Even though your domain whitelabel and email link whitelabel use different subdomains, the reputation of your root domain and your IP address are what recipient servers and spam filters use to determine whether or not your email is delivered.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Domain
-{% endanchor %}
+</page-anchor>
 
 {% warning %}
 If you add a new default domain whitelabel for a domain that is already whitelabeled on your account, you risk invalidating and removing the default status of the previously set up whitelabel.
@@ -79,15 +79,15 @@ Your domain whitelabel will not affect your email link whitelabel and vice versa
 
 The domain is the root domain for your subdomain. This is the domain that will receive the email reputation from the whitelabel. Your root domain should match your FROM email address. If you are sending from newsletteexampexample@example.com, then you should whitelabel subdomain.example.com, so the root domains match.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Use New Domain
-{% endanchor %}
+</page-anchor>
 
 Allows you to add a new domain to your whitelabel options.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Default Whitelabel
-{% endanchor %}
+</page-anchor>
 
 {% info %}
 You can only have one default whitelabel.
@@ -95,9 +95,9 @@ You can only have one default whitelabel.
 
 Your default whitelabel is your fallback when you send emails. It will be used for all sending on your account, unless you have multiple valid whitelabels and one of them matches your FROM email domain. If there is no valid whitelabel that matches the domain in your  FROM email address, then your whitelabel will fall back to your default domain whitelabel. For more information, see the [Whitelabel Application Logic]({{root_url}}/User_Guide/Settings/Whitelabel/index.html#-Whitelabel-Application-Logic).
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Automated Security
-{% endanchor %}
+</page-anchor>
 
 {% warning %}
 We recommend avoiding the use of underscores in your subdomains because many DNS providers do not accept CNAME records that include underscores.
@@ -113,21 +113,21 @@ If you choose not to have SendGrid manage your DNS records, then you’ll be sho
 
 If you turn off automated security, you will be responsible for updating your DNS records whenever you upgrade your account or add additional dedicated IPs. For example, with automated security turned off, you will have to manually add your new IP addresses to your SPF record from your whitelabel settings. Once you have updated these DNS records, your outbound mail will continue to be signed using your custom DKIM signature.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Creating a Domain Whitelabel
-{% endanchor %}
+</page-anchor>
 
 When you enter the information for your whitelabel and click “Save,” SendGrid will update its own internal DNS to prepare for your whitelabel settings. This process may take up to 20 seconds.
 
 We will then give you the DNS records that you need to give your DNS provider.
 
 {% info %}
-You may create up to a maximum of 1500 domain whitelabels. 
+You may create up to a maximum of 1500 domain whitelabels.
 {% endinfo %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Validate Your Domain Whitelabel
-{% endanchor %}
+</page-anchor>
 
 {% warning %}
 SendGrid will not start using your whitelabels until they are validated! Until they are validated, you will still see "via sendgrid.net" on your emails.
@@ -143,13 +143,13 @@ If everything is set up properly and the DNS records have propagated, then SendG
 
 If you are having trouble validating your DNS records, please see this [helpful Classroom article]({{root_url}}/Classroom/Troubleshooting/Authentication/i_have_created_dns_records_but_the_whitelabel_wizard_is_not_validating_them.html).
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Changing or Replacing a Domain Whitelabel
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Examples of Why You Might Change or Replace a Domain Whitelabel
-{% endanchor %}
+</page-anchor>
 
 1. If you were a SendGrid customer before May 27th, 2015 and you want to update to the new whitelabel system.
 2. You want to change your domain whitelabel
@@ -162,17 +162,17 @@ The steps for changing or replacing a whitelabel are easy!
 
 That's it! Easy!
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Managing and Viewing Your Domain Whitelabel
-{% endanchor %}
+</page-anchor>
 
 If you need to check the status of a whitelabel, you can see the “at a glance” information from the Domains Whitelabel page. However, if you’re looking for more in-depth information or you need to find the DNS settings for your whitelabel then just click the gear icon next to the whitelabel and select **View**.
 
 From this page, you’ll be able to see all of the settings you entered when setting up your whitelabel, whether or not the whitelabel is valid, and all of the DNS settings you need for this whitelabel.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Adding an IP Whitelabel to Your Account
-{% endanchor %}
+</page-anchor>
 
 When you add an IP address to your SendGrid account and you have automated security turned on, SendGrid will add your IPs to your SPF record automatically. When you get to 10 IPs, we will use SendGrid.net ~all due to the character limitation of SPF records.
 
@@ -180,9 +180,9 @@ If you have more than 10 dedicated IP addresses, we recommend that you manually 
 
 If you have automatic DNS security turned off, you will need to manually add your IPs to your SPF records each time you purchase a new IP address.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Deleting a Domain Whitelabel
-{% endanchor %}
+</page-anchor>
 
 {% info %}
 You cannot recover deleted domain whitelabels.
@@ -196,8 +196,8 @@ You can NOT delete the default domain whitelabel. You must replace it if you wan
 
 Once deleted, the internal SendGrid DNS entries will be deleted and any email you send will revert to the appropriate whitelabel settings according the Whitelabel Application Logic.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Using the API
-{% endanchor %}
+</page-anchor>
 
 [Manage your domain whitelabel via our v3 Web API!]({{root_url}}/API_Reference/Web_API_v3/Whitelabel/domains.html)

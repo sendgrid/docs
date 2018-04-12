@@ -8,9 +8,9 @@ navigation:
    show: true
 ---
 
-{% anchor h2 %}
-Retrieve 
-{% endanchor %}
+<page-anchor el="h2">
+Retrieve
+</page-anchor>
 
 <table class="table table-bordered table-striped">
    <thead>
@@ -66,15 +66,15 @@ Retrieve
 {% codeblock %}  <url>http://www.SubUserPostUrlHere.com</url
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      
+
 {% requestblock %}
-        
+
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
-        
+
   {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=get&amp;user=eexampexample@example.com&amp;method=eventpostur
   {% endrequestdata %}
-      
+
 {% endrequestblock %}
 
 <h3>Response</h3>
@@ -84,9 +84,9 @@ Retrieve
 
 * * * * *
 
-{% anchor h2 %}
-Update / Set URL 
-{% endanchor %}
+<page-anchor el="h2">
+Update / Set URL
+</page-anchor>
 
 <table class="table table-bordered table-striped">
    <thead>
@@ -176,9 +176,9 @@ Update / Set URL
 
 * * * * *
 
-{% anchor h2 %}
-Delete 
-{% endanchor %}
+<page-anchor el="h2">
+Delete
+</page-anchor>
 
 <table class="table table-bordered table-striped">
    <thead>

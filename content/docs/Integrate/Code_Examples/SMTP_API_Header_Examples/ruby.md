@@ -8,9 +8,9 @@ navigation:
 
 These examples require the [JSON Ruby Library](http://www.ruby-doc.org/stdlib-2.0.0/libdoc/json/rdoc/JSON.html).
 
-{% anchor h2 %}
+<page-anchor el="h2">
 SmtpApiHeader.rb
-{% endanchor %}
+</page-anchor>
 
 This header is required for each example.
 
@@ -24,7 +24,7 @@ class SmtpApiHeader
 
   def initialize()
     @data = {}
-  end  
+  end
 
   def addTo(to)
     @data['to'] ||= []
@@ -36,9 +36,9 @@ class SmtpApiHeader
       @data['sub'] = {}
     end
     if val.instance_of?(Array)
-      @data['sub'][var] = val  
+      @data['sub'][var] = val
     else
-      @data['sub'][var] = [val]    
+      @data['sub'][var] = [val]
     end
   end
 
@@ -74,16 +74,16 @@ class SmtpApiHeader
   def as_string()
     json  = asJSON()
     str = 'X-SMTPAPI: %s' % json.gsub(/(.{1,72})( +|$\n?)|(.{1,72})/,"\\1\\3\n")
-    return str    
+    return str
   end
 
 end
 {% endcodeblock %}
 
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Example Ruby Usage
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:ruby %}
 require './SmtpApiHeader.rb'

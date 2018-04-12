@@ -19,13 +19,13 @@ These engagement statistics can provide valuable insight not only into how well 
 **For detailed instructions on how to view your engagement stats, and how to create a dynamic segment of recipients based on these stats, please visit our [User Guide](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html).**
 {% endinfo %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Leveraging Your Engagement Statistics
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Cultivate Engaged Recipients
-{% endanchor %}
+</page-anchor>
 
 Creating a dynamic segment of recipients who have either opened one of your campaigns or have clicked within a campaign can be useful in many ways. As one example, you can use engagement metrics to identify who has engaged with a campaign, and then send them a highly-relevant follow-up message that builds on the first campaign they demonstrated interest in.
 
@@ -33,9 +33,9 @@ You can also use engagement data to optimize your sending cadence. For instance,
 
 Of course, in order to protect your reputation as a sender, it is important to test sending frequency by monitoring the engagement of recipients as you send more frequently. If you see your overall engagement start to dip after increasing your frequency, you should immediately re-evaluate the increase.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Reignite Relationships With Unengaged Recipients
-{% endanchor %}
+</page-anchor>
 
 Identifying recipients who have not engaged with one of your campaigns can often be just as useful as identifying those who are engaged.
 

@@ -11,9 +11,9 @@ seo:
   keywords: Russian data localization law, Russian Federal Law
 ---
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Russian Federal Law No. 242-FZ
-{% endanchor %}
+</page-anchor>
 
 {% info %}
 PLEASE NOTE: THIS DOCUMENT IS PROVIDING GENERAL INFORMATION ON THIS LAW AND NEITHER THE AUTHOR NOR SENDGRID IS PROVIDING LEGAL ADVICE OR COUNSEL

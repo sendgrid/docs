@@ -14,9 +14,9 @@ Please see our [Migration Toolkit]({{root_url}}/User_Guide/Legacy_Newsletter/Leg
 
 This endpoint allows you to manage and create Recipient Lists associated with the Marketing Email feature.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 add
-{% endanchor %}
+</page-anchor>
 
 Create a new Recipient List.
 
@@ -46,9 +46,9 @@ Additional columns may be added to a list at any time by specifying new column n
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 edit
-{% endanchor %}
+</page-anchor>
 
 Rename a Recipient List.
 
@@ -75,9 +75,9 @@ Rename a Recipient List.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 get
-{% endanchor %}
+</page-anchor>
 
 List all Recipient Lists on your account, or check if a particular List exists.
 
@@ -109,9 +109,9 @@ List all Recipient Lists on your account, or check if a particular List exists.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 delete
-{% endanchor %}
+</page-anchor>
 
 Remove a Recipient List from your account.
 

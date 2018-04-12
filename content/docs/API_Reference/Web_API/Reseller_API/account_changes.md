@@ -8,11 +8,11 @@ navigation:
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Immediate Upgrade
-{% endanchor %}
+</page-anchor>
 
-Upgrading a user generates an invoice. If the user is upgrading from a free to a paid account, the invoice is for the full price of the account. If the upgrade happens between billing periods, the user gets a prorated discount. 
+Upgrading a user generates an invoice. If the user is upgrading from a free to a paid account, the invoice is for the full price of the account. If the upgrade happens between billing periods, the user gets a prorated discount.
 
 {% parameters upgrade %}
  {% parameter 'task' 'Yes' 'Must be set to <em>immediate_upgrade</em> .' %}
@@ -45,9 +45,9 @@ These are Reseller Only APIs. For more information, see [Reseller Overview](http
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Immediate Downgrade
-{% endanchor %}
+</page-anchor>
 
 Once a downgrade happens, an invoice is generated for that user. Free customers are not allowed to downgrade.
 
@@ -77,9 +77,9 @@ Once a downgrade happens, an invoice is generated for that user. Free customers 
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Immediate Close
-{% endanchor %}
+</page-anchor>
 
 Close or revert an account to a free user immediately. An invoice is generated for that user with the new package price (if no overages are incurred, an invoice with zero amount due is generated.
 

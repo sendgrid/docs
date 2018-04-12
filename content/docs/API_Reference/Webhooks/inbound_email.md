@@ -20,9 +20,9 @@ If you don't want email messages to be retried in case of an error in delivery, 
 
 To avoid returning an error your link must return a 2xx HTTP code when the email is received. This response lets our system know that your link has received the email. It is then removed from our send queue. If we do **not** get a valid 2xx HTTP response, our servers will believe they have failed to deliver your message and will continue trying to send it. Messages that cannot be delivered after 3 days will be dropped.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Setup
-{% endanchor %}
+</page-anchor>
 
 The following steps are required to begin parsing email:
 
@@ -45,9 +45,9 @@ See [Setting Up The Inbound Parse Webhook]({{root_url}}/Classroom/Basics/Inbound
 The total message size limit, including the message itself and any number of attachments, is 20MB. Be aware that other mail handlers will have their own limitations, and some ISPs and companies may either dramatically limit the size and/or type of attachments, or even block them altogether.
 {% endinfo %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Character Sets and Header Decoding
-{% endanchor %}
+</page-anchor>
 
 If you receive email which is not in ASCII only format, you will want to read this section.
 

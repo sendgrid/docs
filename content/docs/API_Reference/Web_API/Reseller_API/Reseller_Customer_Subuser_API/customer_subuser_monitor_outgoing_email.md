@@ -10,9 +10,9 @@ Receive a sample of an outgoing message by a specific customer subuser.
 
 The first step is to create a Monitor Record. Once the monitor record has been created, a reseller can append a monitor record to a customer subuser. Multiple customer subusers can be appended to a single monitor record.
 
-{% anchor h2 %}
-Create Monitor Record 
-{% endanchor %}
+<page-anchor el="h2">
+Create Monitor Record
+</page-anchor>
 
 Obtain a complete list of all customer subusers.
 
@@ -41,9 +41,9 @@ Obtain a complete list of all customer subusers.
 
 * * * * *
 
-{% anchor h2 %}
-Edit Monitor Record 
-{% endanchor %}
+<page-anchor el="h2">
+Edit Monitor Record
+</page-anchor>
 
 Make modifications to an existing Monitor record.
 
@@ -73,9 +73,9 @@ Make modifications to an existing Monitor record.
 
 * * * * *
 
-{% anchor h2 %}
-Delete Monitor Record 
-{% endanchor %}
+<page-anchor el="h2">
+Delete Monitor Record
+</page-anchor>
 
 Deleting a monitor record will remove it from SendGrid's system. **Make sure no users are currently using the monitor record when removing, or removal will fail.**
 
@@ -102,9 +102,9 @@ Deleting a monitor record will remove it from SendGrid's system. **Make sure no 
 
 * * * * *
 
-{% anchor h2 %}
-List All Monitor Records 
-{% endanchor %}
+<page-anchor el="h2">
+List All Monitor Records
+</page-anchor>
 
 List all available monitor records that a reseller has.
 
@@ -160,9 +160,9 @@ List all available monitor records that a reseller has.
 
 * * * * *
 
-{% anchor h2 %}
-Append a Customer Subuser To A Monitor Record 
-{% endanchor %}
+<page-anchor el="h2">
+Append a Customer Subuser To A Monitor Record
+</page-anchor>
 
 Append a monitor record to an existing record onto a customer subuser.
 
@@ -190,9 +190,9 @@ Append a monitor record to an existing record onto a customer subuser.
 
 * * * * *
 
-{% anchor h2 %}
-Detach A Monitor Record From A Customer Subuser 
-{% endanchor %}
+<page-anchor el="h2">
+Detach A Monitor Record From A Customer Subuser
+</page-anchor>
 
 Detach a customer subuser from a monitor record.
 

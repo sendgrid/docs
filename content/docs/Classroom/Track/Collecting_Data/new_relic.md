@@ -16,9 +16,9 @@ In less than five minutes your stats should be sent to your New Relic Dashboard.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Settings
-{% endanchor %}
+</page-anchor>
 
 Settings may be changed through:
 
@@ -41,9 +41,9 @@ After you have entered your settings and saved them, enable the app.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 New Relic Dashboard
-{% endanchor %}
+</page-anchor>
 
 Go on New Relic site and there you will find the SendGrid extension on the left menu. After clicking on 'SendGrid' extension, a SendGrid instance will be displayed and if you activated the subuser options beneath the stats of the primary account will be the stats for subusers.
 

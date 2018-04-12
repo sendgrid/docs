@@ -8,9 +8,9 @@ navigation: Event Notification URL
 show: true
 ---
 
-{% anchor h2 %}
-Retrieve Bounces 
-{% endanchor %}
+<page-anchor el="h2">
+Retrieve Bounces
+</page-anchor>
 
 Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
@@ -66,15 +66,15 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 bounces><bounce><email>emaieexampexample@example.com</email><status>5.1.1</status><reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: emaieexampexample@example.com</reason><created>2009-06-10 12:40:30</created></bounce><bounce><email>emaileexampexample@example.com</email><status>5.1.1</status><reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: emaileexampexample@example.com</reason><created>2009-06-10 12:40:30</created></bounce></bounces
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      
+
 {% requestblock %}
-        
+
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
-        
+
   {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=bounces&amp;user=example@example.com&amp;task=get&amp;date=
   {% endrequestdata %}
-      
+
 {% endrequestblock %}
 
 <h3>Response</h3>
@@ -85,9 +85,9 @@ bounces><bounce><email>emaieexampexample@example.com</email><status>5.1.1</statu
 
 * * * * *
 
-{% anchor h2 %}
-Delete Bounces 
-{% endanchor %}
+<page-anchor el="h2">
+Delete Bounces
+</page-anchor>
 
 Since SendGrid does not re-deliver to bounced addresses, users can remove bounces from their list at any time if redelivery to a bounced address is desired.
 

@@ -6,9 +6,9 @@ navigation:
    show: true
 ---
 
-{% anchor h2 %}
-Get Current Settings 
-{% endanchor %}
+<page-anchor el="h2">
+Get Current Settings
+</page-anchor>
 
 {% parameters get %}
  {% parameter 'task' 'Yes' 'Must be set to <em>get</em>' 'Retrieve Parse settings' %}
@@ -42,9 +42,9 @@ Get Current Settings
 
 * * * * *
 
-{% anchor h2 %}
-Create New Entry 
-{% endanchor %}
+<page-anchor el="h2">
+Create New Entry
+</page-anchor>
 
 {% parameters create %}
  {% parameter 'task' 'Yes' 'Must be set to <em>set</em>' 'Set Parse settings' %}
@@ -70,9 +70,9 @@ Create New Entry
 
 * * * * *
 
-{% anchor h2 %}
-Edit Entry 
-{% endanchor %}
+<page-anchor el="h2">
+Edit Entry
+</page-anchor>
 
 {% parameters edit %}
  {% parameter 'task' 'Yes' 'Must be set to <em>update</em>' 'Set Parse settings' %}
@@ -98,9 +98,9 @@ Edit Entry
 
 * * * * *
 
-{% anchor h2 %}
-Delete Entry 
-{% endanchor %}
+<page-anchor el="h2">
+Delete Entry
+</page-anchor>
 
 {% parameters delete %}
  {% parameter 'task' 'Yes' 'Must be set to <em>delete</em>' 'Set Parse settings' %}

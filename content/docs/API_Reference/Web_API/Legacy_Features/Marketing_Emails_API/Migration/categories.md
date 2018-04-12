@@ -10,26 +10,26 @@ navigation:
   show: true
 ---
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Table of Contents
-{% endanchor %}
+</page-anchor>
 
 * [Create a new Category](#-Create-a-new-Category)
 * [Assign a Category to an existing Marketing Email](#-Assign-Category-to-an-Existing-Marketing-Email)
 * [Remove Specific Categories, or all Categories from a Marketing Email](#-Remove-Specific-Categories-or-all-Categories-from-Marketing-Email)
 * [List all Categories](#-List-all-Categories)
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Categories
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Create a new Category
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Legacy Newsletter
-{% endanchor %}
+</page-anchor>
 
 **Request**
 
@@ -45,9 +45,9 @@ curl -X POST https://api.sendgrid.com/api/newsletter/category/create.json -F cat
 }
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 With marketing campaigns, categories are created when you create your campaign. Simply include the categories you require in the categories object as an array of strings.
 
@@ -84,25 +84,25 @@ curl --request POST \
 }
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Assign a Category to an Existing Marketing Email
-{% endanchor %}
+</page-anchor>
 
 This is achieved when you [Create a new Category](#-Create-a-new-Category), there is no separate Marketing Campaigns API call required.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Remove specific Categories, or all Categories from a Marketing Email
-{% endanchor %}
+</page-anchor>
 
 There is no equivalent API call in Marketing Campaigns. You may remove categories directly in the [SendGrid UI](https://sendgrid.com/marketing_campaigns/ui/campaigns). Click on the campaign that you want to edit and click the x on the category label to remove it.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 List all Categories
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Legacy Newsletter
-{% endanchor %}
+</page-anchor>
 
 **Request**
 
@@ -119,9 +119,9 @@ curl -X POST https://api.sendgrid.com/api/newsletter/category/list.json -F api_u
 ]
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 With Marketing Campaigns, categories are created when you create your campaign. Simply include the categories you require in the categories object as an array of strings.
 

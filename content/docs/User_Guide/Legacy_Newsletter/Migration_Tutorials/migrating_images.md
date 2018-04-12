@@ -17,9 +17,9 @@ For assistance please [contact our support team](https://support.sendgrid.com/).
 
 <iframe src="https://player.vimeo.com/video/187210070" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Download Images From Legacy Newsletter
-{% endanchor %}
+</page-anchor>
 
 Begin by navigating to Legacy Newsletter.
 
@@ -33,9 +33,9 @@ Right click on each image in the library that you want to migrate to Marketing C
 
 Name your image and click **Save**.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Upload Images to Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 From the Legacy Newsletter dashboard, navigate back to Marketing Campaigns by clicking your account name in the upper right hand corner and selecting **Account Overview**.
 
@@ -53,9 +53,9 @@ You can select multiple images to upload at once.
 
 ![]({{root_url}}/images/upload_images.gif)
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Additional Resources
-{% endanchor %}
+</page-anchor>
 
 - [Downloading Historical Statistics]({{root_url}}/User_Guide/Legacy_Newsletter/Migration_Tutorials/downloading_historical_statistics.html)
 - [Migrating Using API Calls]({{root_url}}/User_Guide/Legacy_Newsletter/Migration_Tutorials/api_migration.html)

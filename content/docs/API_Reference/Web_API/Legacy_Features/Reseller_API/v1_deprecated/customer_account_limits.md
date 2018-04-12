@@ -16,9 +16,9 @@ Throttle your customer when you need them to send only a specific amount of emai
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Retrieve
-{% endanchor %}
+</page-anchor>
 
 Retrieve account limits for a specific customer. If the API call response is empty that means the customer has the limits removed.
 
@@ -119,9 +119,9 @@ Retrieve account limits for a specific customer. If the API call response is emp
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 No Limit
-{% endanchor %}
+</page-anchor>
 
 Obtain a complete list of all customer.
 
@@ -225,9 +225,9 @@ result><message>success</message></result>
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Recurring Reset
-{% endanchor %}
+</page-anchor>
 
 A recurring reset will allow you to periodically reset a subusers credits to a number you specify. This can be either daily, weekly or monthly.
 
@@ -361,9 +361,9 @@ result><message>success</message></result>
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Total Credits
-{% endanchor %}
+</page-anchor>
 
 Set a subusers credits to a specified amount.
 
@@ -473,9 +473,9 @@ result><message>success</message></result>
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Increment Credits
-{% endanchor %}
+</page-anchor>
 
 Increment a subusers credits by a specified amount.
 
@@ -585,9 +585,9 @@ result><message>success</message></result>
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Decrement Credits
-{% endanchor %}
+</page-anchor>
 
 Decrement a subusers credits by a specified amount.
 

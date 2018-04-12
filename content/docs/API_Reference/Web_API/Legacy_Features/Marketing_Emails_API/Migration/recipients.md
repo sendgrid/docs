@@ -17,13 +17,13 @@ navigation:
 </ul>
 
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Assign a List to a Marketing Email
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Legacy Newsletter
-{% endanchor %}
+</page-anchor>
 
 **Request**
 
@@ -39,9 +39,9 @@ curl -X POST https://api.sendgrid.com/api/newsletter/recipients/add.json -F api_
 }
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 First, we need to get the list_id:
 
@@ -138,14 +138,14 @@ curl --request PATCH \
 {% endcodeblock %}
 
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Get all lists assigned to a particular Marketing Email
 
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Legacy Newsletter
-{% endanchor %}
+</page-anchor>
 
 **Request**
 
@@ -163,9 +163,9 @@ curl -X POST https://api.sendgrid.com/api/newsletter/recipients/get.json -F api_
 ]
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 Get all of your campaigns and view the lists on each:
 
@@ -277,13 +277,13 @@ curl --request GET \
 
 
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Remove assigned lists from a Marketing Email
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Legacy Newsletter
-{% endanchor %}
+</page-anchor>
 
 **Request**
 
@@ -299,9 +299,9 @@ curl -X POST https://api.sendgrid.com/api/newsletter/recipients/delete.json -F a
 }
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 Get the ID of the campaign to Edit:
 

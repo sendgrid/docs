@@ -25,9 +25,9 @@ Go to **Marketing Email** and click **Manage**.
 
 First, we'll walk through the process of migrating content created using HTML in the Code Editor. Then, we will explain how to migrate content created using either the Drag & Drop Editor or Basic Templates.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Migrating Content Created in the Code Editor
-{% endanchor %}
+</page-anchor>
 
 Mouse over the email that you want to migrate content from and click **Edit**.
 
@@ -114,9 +114,9 @@ Once you've finished uploading all of your images, simply insert them into your 
 
 Finally, click **Save**. Whenever you create a new campaign in Marketing Campaigns, this template will now be displayed as an option for you to use.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Migrating Content Created Using Basic Templates or the Drag & Drop Editor
-{% endanchor %}
+</page-anchor>
 
 There are three possible options for migrating content from Legacy Newsletter that was created using Basic Templates or the Drag & Drop Editor.
 
@@ -124,9 +124,9 @@ There are three possible options for migrating content from Legacy Newsletter th
 2. **Quick and Dirty:** Send yourself a test newsletter, copy the source code of the newsletter, and paste that code into Marketing Campaigns.
 3. **Technical:** Leverage the Legacy Newsletter and Marketing Campaigns API to retrieve your content from Legacy Newsletter and post that content to Marketing Campaigns.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Fresh Start
-{% endanchor %}
+</page-anchor>
 
 You might decide to take this opportunity to refresh your content by recreating it in the Marketing Campaigns Drag & Drop editor.
 
@@ -134,9 +134,9 @@ Navigate to **Marketing Campaigns**, select **Templates**, and click **Create Ne
 
 After naming your new campaign, toggle the Drag & Drop editor to **On**. This will present you with a **Build** tab where you can view each of the modules needed to create a beautiful and engaging campaign. [Click here]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html) for more instructions on how to use the Drag & Drop editor.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Quick and Dirty
-{% endanchor %}
+</page-anchor>
 
 Navigate to **Legacy Newsletter** and click **Manage**. Find the newsletter that you want to migrate, hover over that newsletter and click **Edit**.
 
@@ -156,15 +156,15 @@ Decoding your campaign is simple. Simply paste all of the text beginning and end
 
 Again, please make sure that you re-host your images in the Marketing Campaigns image library and update any of your old Legacy Newsletter tags to match the tags used by Marketing Campaigns.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Technical
-{% endanchor %}
+</page-anchor>
 
 A third and slightly more technical option for you to consider is using an application called [Postman](https://www.getpostman.com/) to leverage SendGrid's [Legacy Newsletter API]({{root_url}}/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/index.html) and [Marketing Campaigns API]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/index.html) to pull content from Legacy Newsletter to be "posted" to Marketing Campaigns.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Additional Resources
-{% endanchor %}
+</page-anchor>
 
 - [Migrating Images]({{root_url}}/User_Guide/Legacy_Newsletter/Migration_Tutorials/migrating_images.html)
 - [Downloading Historical Statistics]({{root_url}}/User_Guide/Legacy_Newsletter/Migration_Tutorials/downloading_historical_statistics.html)

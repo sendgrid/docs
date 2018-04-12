@@ -17,9 +17,9 @@ For assistance please [contact our support team](https://support.sendgrid.com/).
 
 <iframe src="https://player.vimeo.com/video/136621131" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Exporting Your Lists from Legacy Newsletter
-{% endanchor %}
+</page-anchor>
 
 {% info %}
 Please note that Legacy Newsletter refers to the individuals you send your marketing emails to as **recipients** whereas Marketing Campaigns refers to them as **contacts**.
@@ -45,9 +45,9 @@ Finally, click **Export** to begin downloading your list. Remember that if your 
 
 ![]({{root_url}}/images/export_recipient_lists.gif)
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Preparing Your List for Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 In order for your Legacy Newsletter recipient list to successfully upload to Marketing Campaigns, you need to properly format the column headers in the first row of your .csv file.
 
@@ -96,9 +96,9 @@ Once you have ensured that each of the above conditions is met, save your list a
 
 **You must save your list as a .csv file, not a .xls file!**
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Uploading Your List to Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 To upload your properly formatted .csv file to Marketing Campaigns, navigate to your SendGrid dashboard by clicking on your **Account Name** in the upper right hand corner of the Legacy Newsletter interface and select **Account Overview**.
 
@@ -124,17 +124,17 @@ If you have development resources and would like to use our API to migrate your 
 * [Marketing Campaigns Contacts API]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html)
 
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Replacing the Legacy Newsletter Subscription Widget
-{% endanchor %}
+</page-anchor>
 
 The [Legacy Newsletter subscription widget](https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/recipients.html#-Subscription-Widget) will no longer function once Legacy Newsletter is retired on 9/30/17.
 
 As you migrate to Marketing Campaigns, you can leverage any of the following best-in-class email list growth integrations to manage your recipient signups: [Privy](https://privy.com/sendgrid/), [WisePops](https://support.wisepops.com/integrations/connect-wisepops-with-sendgrid), [JustUno](https://www.justuno.com/sendgrid-integrations.html), or [SendGrid’s WordPress subscription widget](https://sendgrid.com/docs/Integrate/Tutorials/WordPress/subscription_widget.html?mc=email&mcd=Legacymigration&utm_medium=email&utm_source=nurture&cvosrc=email.nurture.Legacymigration&utm_campaign=Legacymigration).
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Additional Resources
-{% endanchor %}
+</page-anchor>
 
 - [Migration Tutorials]({{root_url}}/User_Guide/Legacy_Newsletter//Migration_Tutorials/index.html)
 - [Migrating Unsubscribes]({{root_url}}/User_Guide/Legacy_Newsletter/Migration_Tutorials/migrating_unsubscribes.html)

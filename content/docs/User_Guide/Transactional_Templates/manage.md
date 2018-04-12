@@ -19,7 +19,7 @@ When viewing your transactional templates, you may choose to display, or hide, a
 ![]({{root_url}}/images/templates_manage_2.png "Hide inactive template versions.")
 
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Managing Templates
 {% endanchor h2 %}
 
@@ -41,7 +41,7 @@ You will also see a gear icon for each template version. Clicking this presents 
 To delete a template, you must first delete all the versions of your template.
 {% endinfo %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Additional Resources
 {% endanchor h2 %}
 

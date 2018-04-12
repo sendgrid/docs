@@ -22,9 +22,9 @@ Bounced emails are commonly due to SMTP 4.X.X errors or SMTP 5.X.X errors, which
 * IP frequency limited
 * Too many invalid recipients
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Additional Resources
-{% endanchor %}
+</page-anchor>
 
 * [Bounces]({{root_url}}/Glossary/bounces.html)
 * [Retrieve and Edit your List of Bounces]({{root_url}}/API_Reference/Web_API/bounces.html)

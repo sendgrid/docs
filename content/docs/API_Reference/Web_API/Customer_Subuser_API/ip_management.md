@@ -6,9 +6,9 @@ navigation:
    show: true
 ---
 
-{% anchor h2 %}
+<page-anchor el="h2">
 List
-{% endanchor %}
+</page-anchor>
 
 Obtain a complete list of all IPs on your account and which are free, taken or available.
 
@@ -51,9 +51,9 @@ The <code>list</code> argument will restrict the IPs returned:
 
 * * * * *
 
-{% anchor h2 %}
-Subuser IP List 
-{% endanchor %}
+<page-anchor el="h2">
+Subuser IP List
+</page-anchor>
 
 {% parameters list %}
  {% parameter task Yes 'Must be set to <code>list</code>' 'Task to return the IPs in use by the subuser' %}
@@ -104,9 +104,9 @@ Subuser IP List
 
 * * * * *
 
-{% anchor h2 %}
-Subuser IP Assignment 
-{% endanchor %}
+<page-anchor el="h2">
+Subuser IP Assignment
+</page-anchor>
 You need to assign at least ONE IP to your subuser.
 
 

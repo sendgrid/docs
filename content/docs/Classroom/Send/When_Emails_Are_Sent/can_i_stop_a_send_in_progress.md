@@ -17,17 +17,17 @@ Oops! You accidentally sent a whole pile of mail you didn't mean to send... No w
 If you are looking for information on how to cancel a scheduled email or campaign, [click here]({{root_url}}/Classroom/Send/When_Emails_Are_Sent/can_i_stop_a_scheduled_send.html)!
 {% endwarning %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Stopping Transactional Email
-{% endanchor %}
+</page-anchor>
 
 Stopping an ongoing send that is using SMTP or the Web API can be tricky, because we strive to accept and send email requests as quickly as possible. Sometimes stopping an accidental send is just not possible. However, following are several suggestions for how to halt a send in progress, or a send that you have scheduled.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 1. Change Your Password
-{% endanchor %}
+</page-anchor>
 
-The simple act of [changing your password](https://app.sendgrid.com/settings/account) can break your existing email integration by causing a mismatch between what your app is trying to authenticate with and what we have on record. 
+The simple act of [changing your password](https://app.sendgrid.com/settings/account) can break your existing email integration by causing a mismatch between what your app is trying to authenticate with and what we have on record.
 
 This method is great if you have a runaway script or have just started a send accidentally. Be sure to verify that the credentials your app is using belong either to the parent account or a [teammate](https://app.sendgrid.com/settings/teammates) so you can change the proper one.
 
@@ -35,21 +35,21 @@ This method is great if you have a runaway script or have just started a send ac
 We cannot guarantee that changing your password will prevent 100% of your email requests from being delivered. We only recommend this method as a last resort that may allow you to stop at least some of your emails from begin sent.
 {% endwarning %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 2. Contact Support
-{% endanchor %}
+</page-anchor>
 
 Support has the ability to clear any emails currently pending delivery from your account. To be more clear, there is a very small window of opportunity between when we accept an email request and when we actually attempt delivery to the recipient. Emails can build up in this queue, and upon request, we can delete them entirely.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Stopping a Marketing Campaign
-{% endanchor %}
+</page-anchor>
 
 You have several options for canceling or unscheduling a campaign.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Using the User Interface
-{% endanchor %}
+</page-anchor>
 
 If you have **Send Immediately** under the **Scheduling** dropdown menu in the campaign builder set to OFF then you only have a very brief window of opportunity to cancel the campaign after clicking **Send Campaign**. You have two options:
 
@@ -71,9 +71,9 @@ If you have **Send Immediately** under the **Scheduling** dropdown menu in the c
 
     ![]({{root_url}}/images/cancel_campaign_3.png)
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Using the SendGrid API
-{% endanchor %}
+</page-anchor>
 
 You can delete a campaign by making a call to [/v3/campaigns/{campaign_id}]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html#Delete-a-Campaign-DELETE) where `{campaign_id}` is the ID of the campaign you want to stop. A successful deletion will return a 204.
 

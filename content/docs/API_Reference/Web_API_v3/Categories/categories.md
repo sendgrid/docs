@@ -8,9 +8,9 @@ navigation:
 
 Categories API lets you manage your [categories]({{root_url}}/User_Guide/Email_Settings/categories.html).
 
-{% anchor h2 %}
+<page-anchor el="h2">
 GET
-{% endanchor %}
+</page-anchor>
 
 Retrieve a list of your categories.
 

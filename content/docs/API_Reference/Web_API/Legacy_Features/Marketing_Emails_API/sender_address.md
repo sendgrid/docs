@@ -13,9 +13,9 @@ Please see our [Migration Toolkit]({{root_url}}/User_Guide/Legacy_Newsletter/Leg
 
 This endpoint allows you to manage and create Sender Addresses (formerly Identities) associated with the Marketing Email feature.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 add
-{% endanchor %}
+</page-anchor>
 
 Create a new Address.
 
@@ -49,9 +49,9 @@ Create a new Address.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 edit
-{% endanchor %}
+</page-anchor>
 
 Edit an existing Address.
 
@@ -82,9 +82,9 @@ Edit an existing Address.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 get
-{% endanchor %}
+</page-anchor>
 
 Retrieve information associated with a particular Address.
 
@@ -129,9 +129,9 @@ Retrieve information associated with a particular Address.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 list
-{% endanchor %}
+</page-anchor>
 
 List all Addresses on your account, or check if a particular Address exists.
 
@@ -159,9 +159,9 @@ List all Addresses on your account, or check if a particular Address exists.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 delete
-{% endanchor %}
+</page-anchor>
 
 Remove an Address from your account.
 

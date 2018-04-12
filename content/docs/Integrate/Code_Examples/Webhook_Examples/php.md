@@ -6,9 +6,9 @@ navigation:
   show: true
 ---
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Parse Webhook
-{% endanchor %}
+</page-anchor>
 
 In this example, we want to parse all emails at *address*@email.sendgrid.biz and post the parsed email to https://sendgrid.com/email.php.
 
@@ -43,9 +43,9 @@ if($num_attachments){
 {% endcodeblock %}
 
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Event Webhook
-{% endanchor %}
+</page-anchor>
 
 To use the Event Webhook, you must first [setup Event Notification]({{%20root_url%20}}/API_Reference/Webhooks/event.html#-Setup).
 

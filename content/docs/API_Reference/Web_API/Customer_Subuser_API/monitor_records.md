@@ -10,9 +10,9 @@ Monitor records will send samples from one or more subusers at a frequency you s
 
 The first step is to create a Monitor Record. Once the monitor record has been created, you can append a subuser to a monitor record. Multiple subusers can be appended to a single monitor record.
 
-{% anchor h2 %}
-Create Monitor Record 
-{% endanchor %}
+<page-anchor el="h2">
+Create Monitor Record
+</page-anchor>
 Create a new monitor record on the account.
 
 {% parameters create %}
@@ -38,9 +38,9 @@ Create a new monitor record on the account.
 
 * * * * *
 
-{% anchor h2 %}
-Edit Monitor Record 
-{% endanchor %}
+<page-anchor el="h2">
+Edit Monitor Record
+</page-anchor>
 Edit an existing Monitor record.
 
 {% parameters edit %}
@@ -67,9 +67,9 @@ Edit an existing Monitor record.
 
 * * * * *
 
-{% anchor h2 %}
-Delete Monitor Record 
-{% endanchor %}
+<page-anchor el="h2">
+Delete Monitor Record
+</page-anchor>
 Deleting a monitor record will remove it from SendGrid's system. Only monitor records with no subusers attached can be deleted.
 
 {% parameters delete %}
@@ -94,9 +94,9 @@ Deleting a monitor record will remove it from SendGrid's system. Only monitor r
 
 * * * * *
 
-{% anchor h2 %}
-List All Monitor Records 
-{% endanchor %}
+<page-anchor el="h2">
+List All Monitor Records
+</page-anchor>
 List all available monitor records on your account.
 
 
@@ -151,9 +151,9 @@ List all available monitor records on your account.
 
 * * * * *
 
-{% anchor h2 %}
-Append a Subuser to a Monitor Record 
-{% endanchor %}
+<page-anchor el="h2">
+Append a Subuser to a Monitor Record
+</page-anchor>
 Append a subuser to an existing monitor record.
 
 
@@ -180,9 +180,9 @@ Append a subuser to an existing monitor record.
 
 * * * * *
 
-{% anchor h2 %}
-Detach A Monitor Record From A Subuser 
-{% endanchor %}
+<page-anchor el="h2">
+Detach A Monitor Record From A Subuser
+</page-anchor>
 Detach a subuser from a monitor record.
 
 

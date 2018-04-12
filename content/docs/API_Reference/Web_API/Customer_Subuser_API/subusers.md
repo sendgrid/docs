@@ -16,9 +16,9 @@ In both creating and searching for a subuser, use the <code>username</code> para
 For recommended steps when creating Subusers using the API, check out [this SendGrid Knowledgebase article.]({{site.support_url}}/hc/en-us/articles/201750787)
 {% endinfo %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Create a Subuser
-{% endanchor %}
+</page-anchor>
 
 {% parameters create %}
  {% parameter username Yes 'No more than 64 characters' 'New subuser username' %}
@@ -54,9 +54,9 @@ Create a Subuser
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Delete a Subuser
-{% endanchor %}
+</page-anchor>
 
 {% warning %}
 This call will delete a subuser and will disable all tracked links on sent messages. Recipients will no longer be able to click existing tracked links and make it to the intended destination. This is irreversible, and should be used with extreme caution.
@@ -83,9 +83,9 @@ This call will delete a subuser and will disable all tracked links on sent messa
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Retrieve Subusers
-{% endanchor %}
+</page-anchor>
 Obtain a list of subusers under your account.
 
 {% parameters get %}
@@ -181,9 +181,9 @@ Obtain a list of subusers under your account.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Update Subuser Username
-{% endanchor %}
+</page-anchor>
 
 {% warning %}
 Subuser username is used to access website and API. Changes occur immediately.
@@ -211,9 +211,9 @@ Subuser username is used to access website and API. Changes occur immediately.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Update Subuser Password
-{% endanchor %}
+</page-anchor>
 Passwords are stored encrypted, and cannot be retrieved. Forgotten passwords must be updated.
 
 {% parameters updateSubuserPassword %}
@@ -238,9 +238,9 @@ Passwords are stored encrypted, and cannot be retrieved. Forgotten passwords mus
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Update Subuser Email Address
-{% endanchor %}
+</page-anchor>
 This is the administrative contact address, used by SendGrid to contact the user. Unrelated to sending address information.
 
 {% parameters updateSubuserEmailAddress %}
@@ -265,9 +265,9 @@ This is the administrative contact address, used by SendGrid to contact the user
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Update Subuser Profile
-{% endanchor %}
+</page-anchor>
 Update Subuser profile information.
 
 {% parameters updateprofile %}
@@ -301,9 +301,9 @@ Update Subuser profile information.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Disable a Subuser
-{% endanchor %}
+</page-anchor>
 Sets subuser's <code>active</code> flag to <code>0</code>. Prevents subuser from sending email. Does not affect website login permissions.
 
 {% parameters disable %}
@@ -326,9 +326,9 @@ Sets subuser's <code>active</code> flag to <code>0</code>. Prevents subuser from
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Enable a Subuser
-{% endanchor %}
+</page-anchor>
 Sets subuser's <code>active</code> flag to <code>1</code>. Allows subuser to send email. Does not affect website login permissions. New subusers are set to active by default.
 
 {% parameters enable %}
@@ -351,9 +351,9 @@ Sets subuser's <code>active</code> flag to <code>1</code>. Allows subuser to sen
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Disable Website Access To A Subuser
-{% endanchor %}
+</page-anchor>
 Disallow a subuser to login to the SendGrid website. Does not affect email sending permissions.
 
 {% parameters disablewebsite %}
@@ -377,9 +377,9 @@ Disallow a subuser to login to the SendGrid website. Does not affect email sendi
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Enable Website Access To A Subuser
-{% endanchor %}
+</page-anchor>
 Allow a subuser to login to the SendGrid website. Does not affect email sending permissions. New subusers are enabled by default.
 
 {% parameters enablewebsite %}

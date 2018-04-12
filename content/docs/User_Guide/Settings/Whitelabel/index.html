@@ -21,9 +21,9 @@ SendGrid does not host domains. Do not attempt to transfer a domain to SendGrid.
 Any changes you make to DNS can immediately affect your client’s ability to reach your resources. We cannot take any responsibility for any changes you make to DNS, so please be very careful. If you have any questions, please [contact support](https://support.sendgrid.com).
 {% endwarning %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 The Types of Whitelabeling
-{% endanchor %}
+</page-anchor>
 
 <h3><a href="{{root_url}}/User_Guide/Settings/Whitelabel/domains.html">Domain Whitelabel</a></h3>
 
@@ -45,9 +45,9 @@ Some bad actors will use 3rd party link shortening services to populate the doma
 
 An IP whitelabel works in tandem with your domain whitelabel, but the real reputation for email is usually associated with the IP address since many domains can point to the same IP. It is always ideal to have both a domain and an IP whitelabel. You will need to have a dedicated IP address or purchase one through <a href="{{root_url}}/Classroom/Basics/Account/adding_an_additional_dedicated_ip_to_your_account.html">SendGrid Support</a> in order to whitelabel your IP address. You can send email from multiple domains from each of your dedicated IPs. Remember that each domain will positively or negatively affect the other domains when you use the same IP for multiple domains.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Setting Up Whitelabels
-{% endanchor %}
+</page-anchor>
 
 You can set up your whitelabels from the overview page or from the individual whitelabel type pages in the UI. For the purposes of the User Guide, we cover each set up process in depth on the following pages:
 <ul>
@@ -57,29 +57,29 @@ You can set up your whitelabels from the overview page or from the individual wh
   <li><a href="{{root_url}}/Classroom/Deliver/Delivery_Introduction/all_you_need_to_know_about_whitelabeling.html">All You Need to Know About Whitelabeling</a></li>
 </ul>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 How Does Whitelabeling Work?
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Recipient Servers Check Your Email Headers
-{% endanchor %}
+</page-anchor>
 
 When your recipient’s servers receive emails, it’s their job to protect their users from unwanted mail. They assume all mail is guilty until proven innocent, so as the sender, it’s your responsibility to provide as much information about yourself as possible. The recipient server will check the email headers for sender identification information and originating server information.
 
 One of the most basic things that mail servers will check is the FROM address and whether it matches the domain of the sending server. If it doesn’t, on some email applications, your recipients will see something like “via sendgrid.net” in the header of the delivered email.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 SendGrid Attaches Whitelabel Information In Email Headers
-{% endanchor %}
+</page-anchor>
 
 When you tell SendGrid to send emails on your behalf, whether manually or over the API, SendGrid will add headers to your emails about you and your email settings so that recipient servers know that we send your emails with your permission and on your behalf.
 
 If you don’t have a domain whitelabel set up, then your emails will show as being sent by sendgrid.net regardless of your FROM address.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Whitelabel Application Logic
-{% endanchor %}
+</page-anchor>
 
 Assigning whitelabels in email headers takes some care and consideration. SendGrid takes care of this process so that you don’t have to worry about it, but you should know how it works.
 

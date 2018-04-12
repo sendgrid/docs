@@ -19,9 +19,9 @@ This is accomplished by performing a **reverse DNS lookup** (rDNS) using an **A 
 
 Whitelabeling an IP address is easy, and only requires that you update your DNS provider with a single DNS record.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Creating an IP Whitelabel
-{% endanchor %}
+</page-anchor>
 
 {% info %}
 Only the parent account or a Teammate with the Whitelabel permission can create IP whitelabels; however, the parent account can assign the whitelabeled IP to subusers.
@@ -59,19 +59,19 @@ An IP address can only be whitelabeled to a single domain. However, you can whit
 
 **(10)** Your IP address is now associated with your sending domain via an A Record. Whenever your recipients' mailbox providers perform an rDNS check, they will see that your IP address matches the sending domain. If your rDNS doesn't match, many mailbox providers will reject your email.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Managing Your IP Whitelabels
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Adding an IP Address
-{% endanchor %}
+</page-anchor>
 
 Whenever you add a dedicated IP address to your account, you should make sure to whitelabel it by following the steps above. To add additional IPs to your Pro or Premier account, first, log into your account, and then click the **Add a Dedicated IP** button on the [Plan & Billing Details](https://app.sendgrid.com/settings/billing) page.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Deleting an IP Whitelabel
-{% endanchor %}
+</page-anchor>
 
 You can delete an IP whitelabel at any time. Simply navigating to your SendGrid dashboard, click **Settings** in the lefthand sidebar, and click **IPs** under **Whitelabels**. You will see a list of your IP whitelabels. Click the action menu next to the whitelabel you want to delete and click **Delete**.
 

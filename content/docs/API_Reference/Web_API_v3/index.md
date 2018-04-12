@@ -8,9 +8,9 @@ navigation:
 
 Welcome to SendGrid's Web API v3! This API is RESTful, fully featured, easy to integrate with, and offers support in [7 different languages]({{root_url}}/Integrate/libraries.html).
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Hello, World!
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:bash %}
 curl --request POST \
@@ -33,9 +33,9 @@ SendGrid provides [7 different libraries]({{root_url}}/Integrate/libraries.html)
 
 {% endinfo %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Using the Web API v3
-{% endanchor %}
+</page-anchor>
 
 ###[Authentication]({{root_url}}/API_Reference/Web_API_v3/How_To_Use_The_Web_API_v3/authentication.html)
 

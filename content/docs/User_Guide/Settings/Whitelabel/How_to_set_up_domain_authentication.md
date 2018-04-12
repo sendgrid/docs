@@ -27,44 +27,44 @@ navigation:
 - [Troubleshooting](#-Troubleshooting)
 - [Migrating from legacy Whitelabel](#-Migrating-from-legacy-Whitelabel)
 
-{% anchor h2 %}
+<page-anchor el="h2">
 What is domain authentication?
-{% endanchor %}
+</page-anchor>
 
 Domain authentication shows email providers that SendGrid has your permission to send emails on your behalf. To give SendGrid permission, you point DNS entries from your domain registrar to SendGrid. Your recipients will no longer see the “via sendgrid.net” message on your emails.
 
 Even though this is a small change from your recipients perspective, this change has a huge positive impact on your reputation as a sender and your email deliverability. Email service providers distrust messages that don't have domain authentication set up because they can not be sure that the message comes from you. Explicitly stating that it comes from you increases your reputation with email service providers which makes it much less likely that they will filter your mail and not allow it get to your recipient's inbox, which increases your deliverability. You are also explicitly showing your recipients that this email comes from you, so they are less likely mark your mail as spam.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Key terminology
-{% endanchor %}
+</page-anchor>
 
 TO DO: ADD DEFINITIONS
 LET KAYLYN KNOW IF YOU THINK THIS IS MISSING TERMS
 
-{% anchor h3 %}
+<page-anchor el="h3">
 DNS
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 DKIM
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 SPF
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Content Delivery Network
-{% endanchor %}
+</page-anchor>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Setting up domain authentication
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Before you begin
-{% endanchor %}
+</page-anchor>
 
 To set up domain authentication, you must submit the DNS records provided by SendGrid to your DNS or hosting provider (for example, GoDaddy, Hover, CloudFlare, etc.). First, you need to figure out who your hosting provider is and if you have access. If you don't have access to your DNS or hosting provider, you should figure out who in your company has this access before you begin setting up domain authentication.
 
@@ -78,21 +78,21 @@ To set up domain authentication, you must submit the DNS records provided by Sen
 
 It can take up to 48 hours for the records to verify after you upload them into your DNS host, so you will likely have to come back later to verify.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Verifying your DNS
-{% endanchor %}
+</page-anchor>
 
 Once you add the CNAME records to your DNS host, return to the [Sender authentication page](https://app.sendgrid.com/settings/whitelabel) and click **Verify**. If you click verify, and only half of your CNAME records verify, this usually means that you need to wait a bit longer.
 
 Any time that you send an email with a FROM address whose domain matches the domain set in the domain authentication, SendGrid applies that domain to your email. You only need to update your domain authentication if you want to update the domain you are emailing from.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Advanced settings
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Using automated security
-{% endanchor %}
+</page-anchor>
 
 Automated security allows SendGrid to handle all of the DKIM and SPF signing of your outbound email with CNAME records. This allows you to add dedicated IP addresses or upgrade your account without having to make any DNS changes.
 
@@ -102,15 +102,15 @@ When Automated Security is **On**, SendGrid generates three different CNAME reco
 
 If you select **Off**, we generate 1 MX record and 2 TXT records. In a later step of setting up domain authentication, you give these records to your DNS provider, and then you verify that they upload correctly.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Using a custom return path
-{% endanchor %}
+</page-anchor>
 
 Info coming soon.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Using a custom DKIM selector
-{% endanchor %}
+</page-anchor>
 
 Use a custom DKIM selector if you want to authenticate a single domain multiple times. This works by adding the custom selector to the domain as a custom subdomain.
 
@@ -118,9 +118,9 @@ Use a custom DKIM selector if you want to authenticate a single domain multiple 
 
 When you are in the process of authenticating a domain, and on the screen where you input domain settings, open the advanced settings, select **Use a custom DKIM selector** and input three letters or numbers to build a custom subdomain. If you don't select these, SendGrid automatically selects them for you. Make sure the three characters you select are different from your original selection.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Assigning a subuser
-{% endanchor %}
+</page-anchor>
 
 By assigning a domain whitelabel to one of your subusers, you can give them the benefit of improved authentication and security, but also separate from the sending reputation of your parent account. If you authenticate a subusers domain, they can't edit or delete it.
 
@@ -128,21 +128,21 @@ By assigning a domain whitelabel to one of your subusers, you can give them the 
 
 When you are in the process of authenticating a domain, and on the screen where you input domain settings, open the advanced settings, select **Assign to a subuser**, and select a subuser to assign to that domain.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Troubleshooting
-{% endanchor %}
+</page-anchor>
 
 Info coming soon. Let Kaylyn know if you have any recommendations.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Migrating from legacy Whitelabel
-{% endanchor %}
+</page-anchor>
 
 Info coming soon.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Additional resources
-{% endanchor %}
+</page-anchor>
 - [link text]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML)
 - [link text]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML)
 - [link text]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML)

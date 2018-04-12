@@ -17,9 +17,9 @@ Creating a domain whitelabel allows you to better authenticate the email that yo
 
 Inbox providers distrust messages that are not properly whitelabeled, and you will not be able to begin building a positive reputation until you complete the whitelabeling process.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Creating a Domain Whitelabel
-{% endanchor %}
+</page-anchor>
 
 **(1)** Navigate to your SendGrid Dashboard, click **Settings** in the left hand sidebar, and select **Whitelabels**.
 
@@ -65,9 +65,9 @@ If you set **Automated Security** to **OFF**, you will be provided with 1 MX rec
 
 **(8)** Finally, click **Save**.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Validating a Domain Whitelabel
-{% endanchor %}
+</page-anchor>
 
 Before you can begin to use your new domain whitelabel, you must submit the DNS records provided by SendGrid to your DNS or hosting provider. For more detailed instructions on how to add these records to some popular DNS providers, click [here]({{root_url}}/Classroom/Troubleshooting/Authentication/whitelabel_video_tutorials.html#Whitelabeling-with-GoDaddy).
 
@@ -83,9 +83,9 @@ Under your new domain whitelabel, click **Validate Record**.
 
 ![]({{root_url}}/images/domain_whitelabel_setup_7.png)
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Managing Your Domain Whitelabels
-{% endanchor %}
+</page-anchor>
 
 Once you have created and validated your domain whitelabel, there is little work you need to do to maintain it.
 
@@ -97,9 +97,9 @@ You can change a whitelabel's default status at any time by navigating to your w
 
 To delete one of your domain whitelabels, navigate to your whitelabel settings page, click to view the whitelabel you want to delete and click **Delete**. Alternatively, you can click the action menu next to your domain whitelabel and click **Delete**.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Related Resources
-{% endanchor %}
+</page-anchor>
 
 * [How to Setup an IP Whitelabel]({{root_url}}/Classroom/Basics/Whitelabel/setup_ip_whitelabel.html)
 * [Whitelabel User Guide]({{root_url}}/User_Guide/Settings/Whitelabel/index.html)

@@ -6,9 +6,9 @@ navigation:
    show: true
 ---
 
-{% anchor h2 %}
-Retrieve Spam Reports 
-{% endanchor %}
+<page-anchor el="h2">
+Retrieve Spam Reports
+</page-anchor>
 
 
 {% parameters get %}
@@ -52,9 +52,9 @@ These are Reseller Only APIs. For more information, see [Reseller Overview](http
 
 * * * * *
 
-{% anchor h2 %}
-Delete Spam Reports 
-{% endanchor %}
+<page-anchor el="h2">
+Delete Spam Reports
+</page-anchor>
 
 Since SendGrid does not deliver to spam reported addresses, users can remove spam reports from their list at any time if re-delivery to a spam reported address is desired.
 

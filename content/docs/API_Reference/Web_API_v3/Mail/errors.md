@@ -96,9 +96,9 @@ Failed requests will always return an error response, including a response code,
 
 Following is a complete list of the possible parameter level errors that you may receive when making a request to the v3 Mail Send endpoint. Each error will include the field that caused the error (e.g. "personalizations" or "personalizations.to"), a brief message explaining the cause of the error, and a link to the error in the table below. Here you will find links to relevant documentation for each error.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Table of Contents
-{% endanchor %}
+</page-anchor>
 
 * [Personalizations Errors](#-Personalizations-Errors)
 * [ASM Errors](#-ASM-Errors)
@@ -118,9 +118,9 @@ Table of Contents
 * [Mail Settings Errors](#-Mail-Settings-Errors)
 * [Tracking Settings Errors](#-Tracking-Settings-Errors)
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Personalizations Errors
-{% endanchor %}
+</page-anchor>
 
 {% api_error_table personalizations "" message.personalizations %}
   {% api_error_table_row 400 %}
@@ -212,14 +212,14 @@ Personalizations Errors
   {% api_error_table_row 400 %}
 
   {% api_error_table_message "The to array must at least have an <code>email</code> parameter with a valid email address and it may also contain a <code>name</code> parameter. e.g. <code>{&#34;email&#34;: &#34;example@example.com&#34;}</code> or <code>{&#34;email&#34;: &#34;example@example.com&#34;, &#34;name&#34;: &#34;Example Recipient&#34;}</code>" "Every email you send must have at least one, valid recipient email address included. However, you are not required to include a corresponding name with the recipient email address. For more information on how to use <code>personalizations</code> to define who you want to send your email to, please visit our <a href=\"{{root_url}}/Classroom/Send/v3_Mail_Send/personalizations.html\">Classroom</a>." %}
-  
+
   {% api_error_table_message "The To email exceeds the maximum total length of 320 characters" "We only allow the total email length to be 320 characters including the local address, the `@`, and the domain." %}
 
 {% endapi_error_table %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 ASM Errors
-{% endanchor %}
+</page-anchor>
 
 {% api_error_table asm.group_id "" message.asm.group_id %}
   {% api_error_table_row 400 %}
@@ -239,9 +239,9 @@ ASM Errors
   {% api_error_table_message "There is a limit of 25 unsubscribe groups that can be displayed to a user at a time." "" %}
 {% endapi_error_table %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Attachment Errors
-{% endanchor %}
+</page-anchor>
 
 {% api_error_table attachments.content "" message.attachments.content %}
   {% api_error_table_row 400 %}
@@ -283,9 +283,9 @@ Attachment Errors
   {% api_error_table_message "The type cannot contain ';', or CRLF characters." "When defining the type of your attachment content, you may not include the characters <code>;</code>, <code>,</code>, <code>\n</code>, or <code>\r</code>." %}
 {% endapi_error_table %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Batch ID Errors
-{% endanchor %}
+</page-anchor>
 
 {% api_error_table batch_id "" message.batch_id %}
   {% api_error_table_row 400 %}
@@ -293,9 +293,9 @@ Batch ID Errors
   {% api_error_table_message "The batch_id must be a string." "Batch IDs are always generated as strings, so when you choose to include a batch ID in your send, you must make sure that <code>batch_id</code> is defined as a string. For more information about batch IDs, and how you can use them to group sends together, please visit our <a href=\"{{root_url}}/API_Reference/Web_API_v3/cancel_schedule_send.html\">API Reference</a>." %}
 {% endapi_error_table %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Categories Errors
-{% endanchor %}
+</page-anchor>
 
 {% api_error_table categories "" message.categories %}
   {% api_error_table_row 400 %}
@@ -311,9 +311,9 @@ Categories Errors
   {% api_error_table_message "Categories can not contain non-ASCII characters." "Each category name must only be comprised of ASCII characters. For more information on how you can use categories to organize your email analytics, please visit our <a href=\"{{root_url}}/User_Guide/Statistics/categories.html\">User Guide</a>." %}
 {% endapi_error_table %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Content Errors
-{% endanchor %}
+</page-anchor>
 
 {% api_error_table content "" message.content %}
   {% api_error_table_row 400 %}
@@ -345,9 +345,9 @@ Content Errors
   {% api_error_table_message "Following RFC 1341, section 7.2, if either text/html or text/plain are to be sent in your email: text/plain needs to be first, followed by text/html, followed by any other content." "The order in which you specify the MIME types of your content must always be text/plain first, if you choose to include it, followed by text/html, and then any other MIME types you wish to include." %}
 {% endapi_error_table %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Encoding Errors
-{% endanchor %}
+</page-anchor>
 
 {% api_error_table Encoding "" "" %}
   {% api_error_table_row 415 %}
@@ -355,9 +355,9 @@ Encoding Errors
   {% api_error_table_message "Invalid UTF8 in request" "Your payload must be encoded in UTF-8. This includes any attachments." %}
 {% endapi_error_table %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 From Address Errors
-{% endanchor %}
+</page-anchor>
 
 {% api_error_table from "" message.from %}
   {% api_error_table_row 400 %}
@@ -365,14 +365,14 @@ From Address Errors
   {% api_error_table_message "The from object must at least have an <code>email</code> parameter with a valid email address and may also contain a <code>name</code> parameter. e.g. <code>{&#34;email&#34;: &#34;example@example.com&#34;}</code> or <code>{&#34;email&#34;: &#34;example@example.com&#34;, &#34;name&#34;: &#34;Example Recipient&#34;}" "While every <code>from</code> parameter must include a valid email address, you are not required to include a name." %}
 
   {% api_error_table_message "The <code>from</code> object must be provided for every email send. It is an object that requires the <code>email</code> parameter, but may also contain a <code>name</code> parameter. e.g. <code>{&#34;email&#34;: &#34;example@example.com&#34;}</code> or <code>{&#34;email&#34;: &#34;example@example.com&#34;, &#34;name&#34;: &#34;Example Recipient&#34;}" "You are required to provide a from address whenever you send an email through SendGrid. This is used for authentication purposes and helps to build a positive sending reputation with your recipients' ISPs. You are not required to include a name within the <code>from</code> parameter." %}
-  
+
   {% api_error_table_message "The From email exceeds the maximum total length of 320 characters" "We only allow the total email length to be 320 characters including the local address, the `@`, and the domain." %}
 
 {% endapi_error_table %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Headers Errors
-{% endanchor %}
+</page-anchor>
 
 {% api_error_table headers "" message.headers %}
   {% api_error_table_row 400 %}
@@ -386,9 +386,9 @@ Headers Errors
   {% api_error_table_message "Header can not be one of the reserved keys." "Some header keys are reserved. You may not include any of the following reserved headers: <code>x-sg-id</code>, <code>x-sg-eid</code>, <code>received</code>, <code>dkim-signature</code>, <code>Content-Type</code>, <code>Content-Transfer-Encoding</code>, <code>To</code>, <code>From</code>, <code>Subject</code>, <code>Reply-To</code>, <code>CC</code>, <code>BCC</code>." %}
 {% endapi_error_table %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 IP Pool Errors
-{% endanchor %}
+</page-anchor>
 
 {% api_error_table ip_pool_name "" message.ip_pool_name %}
   {% api_error_table_row 400 %}
@@ -398,9 +398,9 @@ IP Pool Errors
   {% api_error_table_message "The IP Pool name must be a valid pool name for your account. You provided [YOUR IP POOL NAME]." "" %}
 {% endapi_error_table %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Reply To Errors
-{% endanchor %}
+</page-anchor>
 
 {% api_error_table reply_to "" message.reply_to %}
   {% api_error_table_row 400 %}
@@ -411,9 +411,9 @@ Reply To Errors
   {% api_error_table_message "The Reply-To email exceeds the maximum total length of 320 characters" "We only allow the total email length to be 320 characters including the local address, the `@`, and the domain." %}
 
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Sections Errors
-{% endanchor %}
+</page-anchor>
 
 {% api_error_table sections "" message.sections %}
   {% api_error_table_row 400 %}
@@ -421,9 +421,9 @@ Sections Errors
   {% api_error_table_message "The section values must be strings." "The values of your <code>sections</code> parameter will be substituted into the content of your email. We will only perform substitutions using strings, so please make sure that your section values are always defined as strings." %}
 {% endapi_error_table %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Send At Errors
-{% endanchor %}
+</page-anchor>
 
 {% api_error_table send_at "" message.send_at %}
   {% api_error_table_row 400 %}
@@ -433,9 +433,9 @@ Send At Errors
   {% api_error_table_message "Scheduling more than 72 hours in advance is forbidden." "The <code>send_at</code> parameter allows you to schedule your email to be sent up to 72 hours in advance, but due to our constraints, we cannot schedule emails more than 72 hours in the future. For more information on scheduling parameters, please see our <a href=\"{{root_url}}/API_Reference/SMTP_API/scheduling_parameters.html\">API Reference</a>." %}
 {% endapi_error_table %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Subject Line Errors
-{% endanchor %}
+</page-anchor>
 
 {% api_error_table subject "" message.subject %}
   {% api_error_table_row 400 %}
@@ -445,9 +445,9 @@ Subject Line Errors
   {% api_error_table_message "The subject is required. You can get around this requirement if you use a template with a subject defined or if every personalization has a subject defined." "Every email must have a subject. This can be accomplished 3 ways: you include a template that has a subject, you define a global subject, or every single personalizations object has a subject." %}
 {% endapi_error_table %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Template Errors
-{% endanchor %}
+</page-anchor>
 
 {% api_error_table template_id "" message.template_id %}
   {% api_error_table_row 400 %}
@@ -459,9 +459,9 @@ Template Errors
   {% api_error_table_message "Must be a valid template." "We do not allow you to send an empty email, so in the event that the only content of your email is contained within your template, we want to make sure that the included template exists, and is valid." %}
 {% endapi_error_table %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Mail Settings Errors
-{% endanchor %}
+</page-anchor>
 
 {% api_error_table mail_settings.bcc.email "" message.mail_settings.bcc.email %}
   {% api_error_table_row 400 %}
@@ -531,9 +531,9 @@ Mail Settings Errors
   {% api_error_table_message "You must include the spam check threshold  when using the spam check mail setting." "" %}
 {% endapi_error_table %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Tracking Settings Errors
-{% endanchor %}
+</page-anchor>
 
 {% api_error_table tracking_settings.click_tracking.enable "" message.tracking_settings.click_tracking.enable %}
   {% api_error_table_row 400 %}

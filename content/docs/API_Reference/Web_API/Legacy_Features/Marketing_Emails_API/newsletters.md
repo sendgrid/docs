@@ -14,9 +14,9 @@ Please see our [Migration Toolkit]({{root_url}}/User_Guide/Legacy_Newsletter/Leg
 
 This endpoint allows you to add, view, or remove marketing emails.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 add
-{% endanchor %}
+</page-anchor>
 
 Create a new Marketing Email.
 
@@ -46,9 +46,9 @@ Create a new Marketing Email.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 edit
-{% endanchor %}
+</page-anchor>
 
 Edit an existing Marketing Email.
 
@@ -79,9 +79,9 @@ Edit an existing Marketing Email.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 get
-{% endanchor %}
+</page-anchor>
 
 Retrieve the contents of an existing Marketing Email.
 
@@ -124,9 +124,9 @@ Retrieve the contents of an existing Marketing Email.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 list
-{% endanchor %}
+</page-anchor>
 
 Retrieve a list of all existing Marketing Email.
 
@@ -182,9 +182,9 @@ Retrieve a list of all existing Marketing Email.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 delete
-{% endanchor %}
+</page-anchor>
 
 Remove an existing Marketing Email.
 

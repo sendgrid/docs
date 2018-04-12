@@ -19,13 +19,13 @@ navigation:
 </ul>
 
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Create a new Recipient List
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Legacy Newsletter
-{% endanchor %}
+</page-anchor>
 
 **Request**
 
@@ -41,9 +41,9 @@ curl -X POST https://api.sendgrid.com/api/newsletter/lists/add.json -F api_user=
 }
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 **Request**
 
@@ -71,13 +71,13 @@ curl --request POST \
 
 
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Rename a Recipient List
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Legacy Newsletter
-{% endanchor %}
+</page-anchor>
 
 **Request**
 
@@ -93,9 +93,9 @@ curl -X POST https://api.sendgrid.com/api/newsletter/lists/edit.json -F api_user
 }
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 First, we get the list id:
 
@@ -153,14 +153,14 @@ curl --request PATCH \
 
 
 
-{% anchor h3 %}
+<page-anchor el="h3">
 List all Recipient Lists on your account, or check if a particular Recipient List exists
 
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Legacy Newsletter
-{% endanchor %}
+</page-anchor>
 
 **Request**
 
@@ -181,9 +181,9 @@ curl -X POST https://api.sendgrid.com/api/newsletter/lists/get.json -F api_user=
 ]
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 **Request**
 
@@ -213,14 +213,14 @@ curl --request GET \
 
 
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Remove a Recipient List from your account
 
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Legacy Newsletter
-{% endanchor %}
+</page-anchor>
 
 **Request**
 
@@ -236,9 +236,9 @@ curl -X POST https://api.sendgrid.com/api/newsletter/lists/delete.json -F api_us
 }
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 First, we get the list id:
 

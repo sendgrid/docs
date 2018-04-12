@@ -12,9 +12,9 @@ Throttle your customer when you need them to send only a specific amount of emai
 These are Reseller Only APIs. For more information, see [Reseller Overview](https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/index.html).
 {% endinfo %}
 
-{% anchor h2 %}
-Retrieve 
-{% endanchor %}
+<page-anchor el="h2">
+Retrieve
+</page-anchor>
 
 Retrieve account limits for a specific customer. If the API call response is empty that means the customer has the limits removed.
 

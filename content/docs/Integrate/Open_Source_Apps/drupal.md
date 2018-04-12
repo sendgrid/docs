@@ -7,9 +7,9 @@ navigation:
 ---
 To send emails from Drupal using SendGrid, you may use the SendGrid Integration module, the SMTP Authentication Support module, or the Swift Mailer module depending on your needs.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Using the SendGrid Integration Module
-{% endanchor %}
+</page-anchor>
 
 The SendGrid Integration Module uses the SendGrid API webservices to send email. It does not use SMTP. Depending on the workload of your website, this could be of benefit to you in performance. This module also provides charts for reports of vital statistics. The module does require an advanced knowledge of Drupal in order to install and setup. Usage of Drush is required.
 
@@ -20,9 +20,9 @@ Once installed access `admin/config/services/sendgrid` to configure your API cre
 For detailed instructions, please refer to the [module documenation](http://cgit.drupalcode.org/sendgrid_integration/tree/README.md).
 
 
-{% anchor h2 %}
-Using the SMTP Authentication Support Module 
-{% endanchor %}
+<page-anchor el="h2">
+Using the SMTP Authentication Support Module
+</page-anchor>
 
 To use SendGrid with [Drupal](https://www.drupal.org/ "Drupal"), use the [SMTP Authentication Support module](https://www.drupal.org/project/smtp "SMTP Authentication Support"). Install a version of this module that is compatible with your version of Drupal.
 
@@ -38,9 +38,9 @@ Open your modules page, find the SMTP module, and configure it with the followin
 
 ![]({{root_url}}/images/drupal_2.png "SMTP Module Configuration")
 
-{% anchor h2 %}
-Using the Swift Mailer Module 
-{% endanchor %}
+<page-anchor el="h2">
+Using the Swift Mailer Module
+</page-anchor>
 
 To use the [Swift Mailer module](https://www.drupal.org/project/swiftmailer "Swift Mailer Module"), install a version of this module that is compatible with your version of Drupal.
 

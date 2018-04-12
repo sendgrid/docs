@@ -6,9 +6,9 @@ navigation:
    show: true
 ---
 
-{% anchor h2 %}
-List Timezones 
-{% endanchor %}
+<page-anchor el="h2">
+List Timezones
+</page-anchor>
 
 This will return a list of all available timezones.
 
@@ -69,9 +69,9 @@ This will return a list of all available timezones.
 
 * * * * *
 
-{% anchor h2 %}
-Get Timezone 
-{% endanchor %}
+<page-anchor el="h2">
+Get Timezone
+</page-anchor>
 
 This API call will return the timezone currently set for your customer subuser.
 
@@ -105,9 +105,9 @@ This API call will return the timezone currently set for your customer subuser.
 
 * * * * *
 
-{% anchor h2 %}
-Edit Timezone 
-{% endanchor %}
+<page-anchor el="h2">
+Edit Timezone
+</page-anchor>
 
 This API call will allow you to set the timezone for your customer subuser
 

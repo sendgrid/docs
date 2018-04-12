@@ -14,9 +14,9 @@ navigation:
 - [Ports](#-SMTP-Ports)
 - [Rate limits](#-Rate-limits)
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Integrating with Sendgrid
-{% endanchor %}
+</page-anchor>
 
 *To integrate with SendGrids SMTP API:*
 
@@ -29,21 +29,21 @@ Integrating with Sendgrid
 
 Now that you've integrated, learn to [build SMTP email]({{root_url}}/API_Reference/SMTP_API/building_an_smtp_email.html).
 
-{% anchor h3 %}
+<page-anchor el="h3">
 SMTP Ports
-{% endanchor %}
+</page-anchor>
 
 - For an unencrypted or a [TLS connections]({{root_url}}/Classroom/Basics/Email_Infrastructure/ssl_vs_tls.html), use port `25`, `2525`, or `587`.
 - For a [SSL connections]({{root_url}}/Classroom/Basics/Email_Infrastructure/ssl_vs_tls.html), use port `465`.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Rate limits
-{% endanchor %}
+</page-anchor>
 
 - You may send up to **100 messages per SMTP connection**.
 - You may open up to **10 concurrent connections from a single server**.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Additional Resources
 {% endanchor h2 %}
 

@@ -11,7 +11,7 @@ navigation:
 
 Symfony uses SwiftMailer to send email, read more about [sending emails from Symfony](http://www.symfony-project.org/gentle-introduction/1_4/en/11-Emails).
 
-To get started you need to modify parameters.yml and add the following: 
+To get started you need to modify parameters.yml and add the following:
 
 {% codeblock %}
 mailer:
@@ -38,16 +38,16 @@ $message = Swift_Message::newInstance()
   ->setTo('to@example.com')
   ->setSubject('Subject')
   ->setBody('Body');
-  
+
 $this->getMailer()->send($message);
 ?>
 {% endcodeblock %}
 
- 
-{% anchor h3 %}
-Another Option 
-{% endanchor %}
-If you want more flexibility, you can use partials to define the content of the emails. Add the a class such as **lib/myEmail.class.php**. 
+
+<page-anchor el="h3">
+Another Option
+</page-anchor>
+If you want more flexibility, you can use partials to define the content of the emails. Add the a class such as **lib/myEmail.class.php**.
 
 {% codeblock lang:php %}
 <?php
@@ -64,7 +64,7 @@ class myEmail
      * @param array $sgHeaders - What we will be placing in the SMTPAPI header. Must be null or a non-empty array
      * @param array $attachments - Email contains the attachments
      */
-    
+
     public static function sendEmail($partials, $parameters, $mailFrom, $mailTo, $subject, $sgHeaders = null, $attachments = null)
     {
         // verify we have username/password to send out emails - IMPORTANT
@@ -86,17 +86,17 @@ class myEmail
         if ($text === null &amp;&amp; $html === null) {
             throw new sfException('A text and/or HTML partial must be given');
         }
-        
+
         try {
             /*
              * Load connection for mailer
              */
             $connection = Swift_SmtpTransport::newInstance('smtp.sendgrid.net', 465, 'ssl')->setUsername(sfconfig::get('app_sendgrid_username'))->setPassword(sfconfig::get('app_sendgrid_password'));
-            
+
             // setup connection/content
             $mailer  = Swift_Mailer::newInstance($connection);
             $message = Swift_Message::newInstance()->setSubject($subject)->setTo($mailTo);
-            
+
             if ($text &amp;&amp; $html) {
                 $message->setBody($html, 'text/html');
                 $message->addPart($text, 'text/plain');
@@ -105,19 +105,19 @@ class myEmail
             } else {
                 $message->setBody($html, 'text/html');
             }
-            
+
             // if contains SMTPAPI header add it
             if (null !== $sgHeaders) {
                 $message->getHeaders()->addTextHeader('X-SMTPAPI', json_encode($sgHeaders));
             }
-            
+
             // update the from address line to include an actual name
             if (is_array($mailFrom) and count($mailFrom) == 2) {
                 $mailFrom = array(
                     $mailFrom['email'] => $mailFrom['name']
                 );
             }
-            
+
             // add attachments to email
             if ($attachments !== null and is_array($attachments)) {
                 foreach ($attachments as $attachment) {
@@ -125,7 +125,7 @@ class myEmail
                     $message->attach($attach);
                 }
             }
-            
+
             // Send
             $message->setFrom($mailFrom);
             $mailer->send($message);
@@ -138,7 +138,7 @@ class myEmail
 ?>
 {% endcodeblock %}
 
- Then configure your credentials on **apps/frontend/app.yml** 
+ Then configure your credentials on **apps/frontend/app.yml**
 
 {% codeblock %}
 prod:
@@ -157,21 +157,21 @@ _registrationHTML.php
 _registrationTEXT.php
 {% endcodeblock %}
 
- Add this to **apps/frontend/modules/mail/_registrationTEXT.php** 
+ Add this to **apps/frontend/modules/mail/_registrationTEXT.php**
 
 {% codeblock lang:php %}
 Dear <!--?php echo $name ?-->,
 Thank you for registering. Please go to http://domain.com to finish your registration.
 {% endcodeblock %}
 
- Add this to **apps/frontend/modules/mail/_registrationHTML.php** 
+ Add this to **apps/frontend/modules/mail/_registrationHTML.php**
 
 {% codeblock lang:php %}
 Dear <!--?php echo $name ?-->,
 Thank you for registering. Please go to <a href="http://domain.com">here</a> to finish your registration.
 {% endcodeblock %}
 
- And send the message as follow: 
+ And send the message as follow:
 
 {% codeblock lang:php %}
 <?php

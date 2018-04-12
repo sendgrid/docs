@@ -6,9 +6,9 @@ navigation:
    show: true
 ---
 
-{% anchor h2 %}
-All 
-{% endanchor %}
+<page-anchor el="h2">
+All
+</page-anchor>
 
 View all IPs under your account.
 
@@ -59,9 +59,9 @@ These are Reseller Only APIs. For more information, see [Reseller Overview](http
 
 * * * * *
 
-{% anchor h2 %}
-Free 
-{% endanchor %}
+<page-anchor el="h2">
+Free
+</page-anchor>
 
 A listing of all free IPs under your account. A Free IP is any IP that is not in use by a user or is not linked to an IP grouping.
 
@@ -108,9 +108,9 @@ A listing of all free IPs under your account. A Free IP is any IP that is not in
 
 * * * * *
 
-{% anchor h2 %}
-Taken 
-{% endanchor %}
+<page-anchor el="h2">
+Taken
+</page-anchor>
 
 A listing of all taken IPs under your account. A Taken IP is any IP that is in use by a user or is linked to an IP grouping.
 
@@ -157,9 +157,9 @@ A listing of all taken IPs under your account. A Taken IP is any IP that is in u
 
 * * * * *
 
-{% anchor h2 %}
-Available 
-{% endanchor %}
+<page-anchor el="h2">
+Available
+</page-anchor>
 
 A listing of all available IPs under your account. An Available IP is any IP that is currently free, or is in use by a user *but* that user is inactive or that is not linked to an IP grouping.
 
@@ -206,9 +206,9 @@ A listing of all available IPs under your account. An Available IP is any IP tha
 
 * * * * *
 
-{% anchor h2 %}
-Usage 
-{% endanchor %}
+<page-anchor el="h2">
+Usage
+</page-anchor>
 
 The current breakdown of users who are using your IPs.
 

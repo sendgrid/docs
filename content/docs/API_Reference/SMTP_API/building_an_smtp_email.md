@@ -21,9 +21,9 @@ Now that you've sent a [sent a test SMTP email with Telnet]({{root_url}}/API_Ref
    - [Categories](#-Categories)
    - [Unique Arguments](#-Unique-Arguments)
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Getting started building
-{% endanchor %}
+</page-anchor>
 
 SMTP works by passing a JSON string with as many SMTP objects as you want to SendGrid. To do this, add the JSON string to your message under a header named "X-SMTPAPI" like this:
 
@@ -65,9 +65,9 @@ SMTP works by passing a JSON string with as many SMTP objects as you want to Sen
 }
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Limitations
-{% endanchor %}
+</page-anchor>
 
 - There is a hard limit of 10,000 addresses in a multiple recipient e-mail. However, the best practice is to split up large jobs to around 1,000 recipients - this allows better processing load distribution. If you have a large number of additional substitutions or sections in the headers, it is best to split the send into even smaller groups.
 - When using the X-SMTPAPI to send to multiple recipients, you cannot use the standard SMTP protocols "TO" field to send to multiple recipients because doing so can generate duplicate messages to the addresses listed in both. For more information, see <a href="https://tools.ietf.org/html/rfc5321">RFC 5321</a>.
@@ -75,9 +75,9 @@ Limitations
 - When using the API, if our system encounters a parsing error, the message will be bounced to the address specified in the MAIL FROM portion of the SMTP session. The MAIL FROM address is re-written when we send the e-mail out for final delivery, so it is safe to set this to an address that can receive the bounces so that you will be alerted to any errors.
 - When sending Unicode characters via the SMTP API, you should escape these characters using the `\u` escape character. When you do this, Unicode characters like ` á` becomes `\u00E1`.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Customizing your send (filters)
-{% endanchor %}
+</page-anchor>
 
 You can customize the emails you send via SMTP by using different settings (also referred to as filters). Change these settings in the **X-SMTPAPI header**.
 
@@ -105,9 +105,9 @@ The X-SMTPAPI header is a JSON-encoded associative array consisting of several s
 - [Categories](#-Categories)
 - [Unique Arguments](#-Unique-arguments)
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Scheduling Your Send
-{% endanchor %}
+</page-anchor>
 
 Schedule your email send time using the `send_at` parameter within your X-SMTPAPI header. Set the value of `send_at` to the [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time).
 
@@ -119,9 +119,9 @@ Schedule your email send time using the `send_at` parameter within your X-SMTPAP
 
 For more information, see our [scheduling parameters documentation]({{root_url}}/API_Reference/SMTP_API/scheduling_parameters.html).
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Substitution Tags
-{% endanchor %}
+</page-anchor>
 
 Substitution tags allow you to dynamically insert specific content relevant to each of your recipients, such as their first and last names.
 
@@ -157,17 +157,17 @@ To define the value that will replace the {% raw %}{{name}}{% endraw %} tag, def
 
 For more information, see our [substitution tags documentation]({{root_url}}/API_Reference/SMTP_API/substitution_tags.html).
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Section Tags
-{% endanchor %}
+</page-anchor>
 
 Section tags are similar to substitution tags, but rather than replace tags with content for each recipient; section tags allow you to replace a tag with more generic content— like a salutation.
 
 For more information, see our [section tags documentation]({{root_url}}/API_Reference/SMTP_API/section_tags.html).
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Suppression Groups
-{% endanchor %}
+</page-anchor>
 
 You can easily specify an unsubscribe group for an email sent via SMTP by including the `asm_group_id` parameter in your X-SMTPAPI header. Simply set the value of `asm_group_id` to the numerical ID of the group you would like to use.
 
@@ -179,9 +179,9 @@ You can easily specify an unsubscribe group for an email sent via SMTP by includ
 
 For more information, see our [suppression groups documentation]({{root_url}}/API_Reference/SMTP_API/suppressions.html).
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Categories
-{% endanchor %}
+</page-anchor>
 
 Categories allow you to track your emails according to broad topics that you define, like "Weekly Newsletter" or "Confirmation Email". Simply define the category by using the `category` parameter within your X-SMTPAPI header:
 
@@ -197,15 +197,15 @@ For more information, see our [categories documentation]({{root_url}}/API_Refere
 Categories should only be used for broad topics. To attach unique identifiers, please use [unique arguments]({{root_url}}/API_Reference/SMTP_API/unique_arguments.html).
 {% endinfo %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Unique Arguments
-{% endanchor %}
+</page-anchor>
 
 Use unique arguments to track your emails based on specific identifiers unique to individual messages. Unique arguments can be retrieved via SendGrid's [Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html) or your [email activity page]({{root_url}}/User_Guide/email_activity.html).
 
 For more information, see our [unique arguments documentation]({{root_url}}/API_Reference/SMTP_API/unique_arguments.html).
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Additional Resources
 {% endanchor h2 %}
 

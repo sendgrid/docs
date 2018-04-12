@@ -15,9 +15,9 @@ Any email you send through Marketing Campaigns must include an unsubscribe link 
 
 <iframe src="https://player.vimeo.com/video/187705765" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Table of Contents
-{% endanchor %}
+</page-anchor>
 
 * [Create an Unsubscribe Group](#-Create-an-Unsubscribe-Group)
 * [Adding Your Unsubscribe Group to Your Campaign](#-Adding-Your-Unsubscribe-Group-to-Your-Campaign)
@@ -31,9 +31,9 @@ For example, you might send transactional email, such as password reset confirma
 
 After you set up your unsubscribe groups, you’ll assign the appropriate unsubscribe group to each campaign you send. Finally, you’ll add the unsubscribe link to your campaign. When a recipient clicks that link we log a "group unsubscribe" event, and that recipient will no longer receive any emails that are assigned that unsubscribe group. Additionally, we will suppress delivery of that campaign to any recipients who have previously opted out of this group.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Create an Unsubscribe Group
-{% endanchor %}
+</page-anchor>
 
 Navigate to **Suppressions** and click **Unsubscribe Groups**.
 
@@ -45,9 +45,9 @@ Please note: both the group name and group description will be displayed to your
 
 ![]({{root_url}}/images/mc_group_unsubscribes_1.png)
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Adding Your Unsubscribe Group to Your Campaign
-{% endanchor %}
+</page-anchor>
 
 Once you've created your unsubscribe group, navigate to **Marketing** in the left hand nav and click **Campaigns**.
 
@@ -83,9 +83,9 @@ Of course, if they change their mind, they can always click “View Email Prefer
 
 ![]({{root_url}}/images/mc_group_unsubscribes_5.png)
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Using a Custom Unsubscribe Link
-{% endanchor %}
+</page-anchor>
 
 While unsubscribe groups are a powerful way to manage unsubscribes and email preferences, we realize some senders may have their own robust subscription management tools. For these senders, Marketing Campaigns supports custom unsubscribe links as well.
 
@@ -97,9 +97,9 @@ This will add an extra field where you can insert a URL to one of your own pages
 
 Then, insert the text you would like to link to your custom unsubscribe page in the body of your campaign. Highlight the text you want to link and click the **small link icon**. In the URL field, enter "[Unsubscribe]". Because you’ve specified your custom URL in the settings panel, SendGrid will replace the [Unsubscribe] tag with your custom URL.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Manage Email Preferences Links
-{% endanchor %}
+</page-anchor>
 
 While not required like an unsubscribe link, you can also add a “manage email preferences” link that will take your readers to a page where they can view all of the different types of email you send (your unsubscribe groups) and opt out of the various options.
 
@@ -117,9 +117,9 @@ The Email Preferences page will only display the unsubscribe groups that you hav
 
 ![]({{root_url}}/images/mc_group_unsubscribes_7.png)
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Troubleshooting
-{% endanchor %}
+</page-anchor>
 
 **An [unsubscribe] tag is always required in both your html and plain text content!**
 

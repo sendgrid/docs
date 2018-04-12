@@ -22,14 +22,14 @@ navigation:
 
 
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Create a New Sender Address
 
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Legacy Newsletter
-{% endanchor %}
+</page-anchor>
 
 **Request**
 
@@ -45,9 +45,9 @@ curl -X POST https://api.sendgrid.com/api/newsletter/identity/add.json -F api_us
 }
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 **Request**
 
@@ -91,14 +91,14 @@ curl --request POST \
 
 
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Edit an Existing Sender Address
 
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Legacy Newsletter
-{% endanchor %}
+</page-anchor>
 
 **Request**
 
@@ -114,9 +114,9 @@ curl -X POST https://api.sendgrid.com/api/newsletter/identity/edit.json -F api_u
 }
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 First, get the appropriate Sender ID:
 
@@ -206,14 +206,14 @@ curl --request PATCH \
 
 
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Retrieve Information Associated With a Particular Sender Address
 
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Legacy Newsletter
-{% endanchor %}
+</page-anchor>
 
 **Request**
 
@@ -237,9 +237,9 @@ curl -X POST https://api.sendgrid.com/api/newsletter/identity/get.json -F api_us
 }
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 **Request**
 
@@ -286,13 +286,13 @@ curl --request GET \
 
 
 
-{% anchor h3 %}
+<page-anchor el="h3">
 List all Sender Addresses on Your Account, or Check if a Particular Sender Address Exists
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Legacy Newsletter
-{% endanchor %}
+</page-anchor>
 
 **Request**
 
@@ -310,9 +310,9 @@ curl -X POST https://api.sendgrid.com/api/newsletter/identity/list.json -F api_u
 ]
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 **Request**
 
@@ -359,13 +359,13 @@ curl --request GET \
 
 
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Remove a Sender Address From Your Account
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Legacy Newsletter
-{% endanchor %}
+</page-anchor>
 
 **Request**
 
@@ -381,9 +381,9 @@ curl -X POST https://api.sendgrid.com/api/newsletter/identity/delete.json -F api
 }
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 First, we need to get the sender_id:
 

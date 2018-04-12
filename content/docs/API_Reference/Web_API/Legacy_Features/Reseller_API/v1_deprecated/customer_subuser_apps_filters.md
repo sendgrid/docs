@@ -12,9 +12,9 @@ navigation:
  This feature is deprecated, please go to the [Version 2]({{root_url}}/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_apps.html) Reseller Customer Subuser Apps page
 {% endwarning %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 List
-{% endanchor %}
+</page-anchor>
 
 List all of the available apps.
 
@@ -87,9 +87,9 @@ filters><filter><name>twitter</name><title>Twitter</title>
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Activate App
-{% endanchor %}
+</page-anchor>
 
 <table class="table table-bordered table-striped">
    <thead>
@@ -158,9 +158,9 @@ result><message>success</message></result>
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Deactivate App
-{% endanchor %}
+</page-anchor>
 
 <table class="table table-bordered table-striped">
    <thead>
@@ -229,9 +229,9 @@ result><message>success</message></result>
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Customize App
-{% endanchor %}
+</page-anchor>
 
 These API calls require that settings are passed using POST.
 
@@ -301,10 +301,10 @@ This is returned if that filter has no settings or is not enabled.
 {% endcodeblock %}
 <hr/>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Get Current Settings
 
-{% endanchor %}
+</page-anchor>
 <h3>XML Call</h3>
 
 {% requestblock %}

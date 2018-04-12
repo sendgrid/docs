@@ -6,9 +6,9 @@ navigation:
    show: true
 ---
 
-{% anchor h2 %}
-List Timezones 
-{% endanchor %}
+<page-anchor el="h2">
+List Timezones
+</page-anchor>
 
 This will return a list of all available timezones.
 
@@ -72,9 +72,9 @@ These are Reseller Only APIs. For more information, see [Reseller Overview](http
 
 * * * * *
 
-{% anchor h2 %}
-Get Timezone 
-{% endanchor %}
+<page-anchor el="h2">
+Get Timezone
+</page-anchor>
 
 This API call will return the timezone currently set for your customer.
 
@@ -108,9 +108,9 @@ This API call will return the timezone currently set for your customer.
 
 * * * * *
 
-{% anchor h2 %}
-Edit Timezone 
-{% endanchor %}
+<page-anchor el="h2">
+Edit Timezone
+</page-anchor>
 
 This API call will allow you to set timezone for your customer
 

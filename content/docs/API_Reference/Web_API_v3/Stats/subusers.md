@@ -8,9 +8,9 @@ navigation:
 
 Subuser Stats provide all of your user's email statistics for your subuser accounts.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 GET
-{% endanchor %}
+</page-anchor>
 
 Gets email statistics for the given subusers. You can add up to 10 `subusers` parameters, one for each subuser you want stats for.
 
@@ -129,9 +129,9 @@ HTTP/1.1 200
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 GET
-{% endanchor %}
+</page-anchor>
 
 Gets the total sums of each email statistic metric for all subusers over the given date range.
 
@@ -266,9 +266,9 @@ HTTP/1.1 200
 {% endv3response %}
 {% endapiv3example %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 GET
-{% endanchor %}
+</page-anchor>
 
 Retrieve the monthly email statistics for all subusers over the given date range.
 
@@ -345,9 +345,9 @@ HTTP/1.1 200
 {% endv3response %}
 {% endapiv3example %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 GET
-{% endanchor %}
+</page-anchor>
 
 Retrieve the monthly email statistics for a single subuser.
 

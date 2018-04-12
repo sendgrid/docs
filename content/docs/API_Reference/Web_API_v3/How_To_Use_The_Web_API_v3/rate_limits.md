@@ -8,9 +8,9 @@ weight: 96
 navigation:
   show: true
 ---
-{% anchor h3 %}
+<page-anchor el="h3">
 Rate Limit Response Header
-{% endanchor %}
+</page-anchor>
 
 All calls within the Web API are allotted a specific number of requests
 per refresh period.
@@ -44,7 +44,7 @@ X-RateLimit-Reset: 1392815263
 
 {% anchor h3%}
 When Limit is Reached
-{% endanchor %}
+</page-anchor>
 
 You will no longer be able to make requests against that endpoint for
 the duration of that refresh period.

@@ -33,9 +33,9 @@ Manually migrating your unsubscribes from Legacy Newsletter to Marketing Campaig
 It is important to note that unlike unsubscribes in Legacy Newsletter, unsubscribe groups apply to both email sent via Marketing Campaigns and any email sent over the API. This makes it much easier for you to respect your recipients' subscription preferences regardless of how you choose to send your email.
 {% endinfo %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Exporting Your Unsubscribes from Legacy Newsletter
-{% endanchor %}
+</page-anchor>
 
 To begin the migration process, navigate to your Legacy Newsletter Dashboard, click on **Recipients** and select **Manage**.
 
@@ -47,9 +47,9 @@ Once you have your list of unsubscribes, click **Export**. Make sure that **Unsu
 If you have a very large list of unsubscribed recipients, this may take several minutes.
 {% endinfo %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Importing Your Unsubscribes into Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 You now have a .csv file of recipients who unsubscribed from a particular list you maintained in Legacy Newsletter. You’ll need to decide what type of mail, or unsubscribe group, would best align with the list they opted out of in Legacy Newsletter. For instance, if your list was called “Weekly Newsletter Recipients” your new unsubscribe group might be called “Weekly Newsletter.”
 
@@ -57,7 +57,7 @@ To create this new unsubscribe group, click your account name in the upper right
 
 Under **Suppressions** in the left hand nav bar, click **Unsubscribe Groups**.
 
-This is where you’ll enter the new unsubscribe group name and description of the type of mail a user would be opting into or out of. The name and description of your new unsubscribe group will be displayed to recipients who manage their email preferences in the future so make sure they clearly explain the types of email that pertain to this group.   
+This is where you’ll enter the new unsubscribe group name and description of the type of mail a user would be opting into or out of. The name and description of your new unsubscribe group will be displayed to recipients who manage their email preferences in the future so make sure they clearly explain the types of email that pertain to this group.
 
 In our example, the name would be "Weekly Newsletter" and the description might be "Weekly summary of the week's top posts."
 
@@ -69,9 +69,9 @@ Click the **gear icon** next to your new unsubscribe group and select **Upload C
 
 Drag and drop your exported .csv file into the grey box, or navigate to your file via the file browser, select it, and click **Save**.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Using Your New Unsubscribe Group
-{% endanchor %}
+</page-anchor>
 
 Now that you have successfully migrated a list of unsubscribed recipients from Legacy Newsletter into a new unsubscribe group, simply ensure that you specify this unsubscribe group when sending a campaign of this type, for instance, a weekly newsletter.
 
@@ -85,9 +85,9 @@ For more general information on unsubscribe groups, please click [here]({{root_u
 
 For a more in-depth tutorial on how to use unsubscribe groups and unsubscribe links in Marketing Campaigns, click [here]({{root_url}}/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html).
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Additional Resources
-{% endanchor %}
+</page-anchor>
 
 - [Migrating Content]({{root_url}}/User_Guide/Legacy_Newsletter/Migration_Tutorials/migrating_content.html)
 - [Migrating Images]({{root_url}}/User_Guide/Legacy_Newsletter/Migration_Tutorials/migrating_images.html)

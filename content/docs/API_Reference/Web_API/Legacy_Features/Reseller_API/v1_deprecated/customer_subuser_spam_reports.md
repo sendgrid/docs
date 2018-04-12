@@ -8,9 +8,9 @@ navigation:
    show: true
 ---
 
-{% anchor h2 %}
-Retrieve Spam Reports 
-{% endanchor %}
+<page-anchor el="h2">
+Retrieve Spam Reports
+</page-anchor>
 
 <table class="table table-bordered table-striped">
    <thead>
@@ -64,15 +64,15 @@ Retrieve Spam Reports
 spamreports><spamreport><email>emaieexampexample@example.com</email><created>2009-06-10 12:40:30</created></spamreport><spamreport><email>emaileexampexample@example.com</email><created>2009-06-10 12:40:30</created></spamreport></spamreports
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      
+
 {% requestblock %}
-        
+
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manageSubuser.json
   {% endrequesturl %}
-        
+
   {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=spamreports&amp;user=example@example.com&amp;task=get&amp;date=
   {% endrequestdata %}
-      
+
 {% endrequestblock %}
 
 <h3>Response</h3>
@@ -82,9 +82,9 @@ spamreports><spamreport><email>emaieexampexample@example.com</email><created>200
 
 * * * * *
 
-{% anchor h2 %}
-Delete Spam Reports 
-{% endanchor %}
+<page-anchor el="h2">
+Delete Spam Reports
+</page-anchor>
 
 Since SendGrid does not deliver to spam reported addresses, users can remove spam reports from their list at any time if re-delivery to a spam reported address is desired.
 

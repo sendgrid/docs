@@ -15,9 +15,9 @@ Whitelabeling your account is one of the best things you can do to maintain good
 
 A common hurdle that many users encounter during the whitelabel process is that DNS records fail to validate, even though the records were just created! Below are some steps you can take to troubleshoot potential issues with recently created DNS records.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Allow Your DNS Records to Propagate
-{% endanchor %}
+</page-anchor>
 
 9 times out of 10, this validation issue can be solved with a judicious application of time. DNS records must take time to propagate throughout the internet before we can detect if they exist, and are indeed correct.
 
@@ -25,9 +25,9 @@ Propagation can take anywhere from a few hours to a few days, depending on your 
 
 We recommend giving DNS changes at least an hour to propagate, and then trying to validate the records again. If validation still fails, you can move on to verifying your records manually, or contact your DNS host to see if they can speed up the process or manually push the changes through for you.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Verify Your DNS Records Manually
-{% endanchor %}
+</page-anchor>
 
 To check if a DNS record has been propagated, use the simple Unix command **DIG** to check your whitelabel records. The easiest way to do this is to use **Terminal** on a Mac platform.
 
@@ -37,13 +37,13 @@ Please note that the example records below will differ from those presented to y
 
 Examples:
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Domains
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Automated Security ON
-{% endanchor %}
+</page-anchor>
 
 <table class="table">
   <tr>
@@ -68,9 +68,9 @@ Automated Security ON
   </tr>
 </table>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Automated Security OFF
-{% endanchor %}
+</page-anchor>
 
 <table class="table">
   <tr>
@@ -95,9 +95,9 @@ Automated Security OFF
   </tr>
 </table>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Email Links
-{% endanchor %}
+</page-anchor>
 
 <table class="table">
   <tr>
@@ -117,9 +117,9 @@ Email Links
   </tr>
 </table>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 IPs
-{% endanchor %}
+</page-anchor>
 
  <table class="table">
   <tr>
@@ -140,9 +140,9 @@ You can also use the [DNSLookup](http://mxtoolbox.com/DNSLookup.aspx) tool provi
 
 If you are able to successfully verify your DNS changes manually, and the whitelabel still will not accept them, feel free to contact Support, and we can help you investigate.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Check for TLD Auto-Appending
-{% endanchor %}
+</page-anchor>
 
 Some DNS hosts will automatically add your top-level domain to the end of DNS records you create, which can turn a CNAME for "email.domain.com" into "email.domain.com.domain.com".
 
@@ -156,9 +156,9 @@ i.e. A CNAME for "email." becomes "email.domain.com"
 
 <iframe src="https://player.vimeo.com/video/149805633" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Tools
-{% endanchor %}
+</page-anchor>
 
 - Check global propagation: [https://www.whatsmydns.net/](https://www.whatsmydns.net/)
 - Check DNS records online: [http://mxtoolbox.com/DNSLookup.aspx](http://mxtoolbox.com/DNSLookup.aspx)

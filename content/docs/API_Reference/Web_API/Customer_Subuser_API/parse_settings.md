@@ -10,9 +10,9 @@ navigation:
 Please refer to the [Parse Documentation]({{root_url}}/API_Reference/Webhooks/parse.html) for documentation on Parse.
 {% endinfo %}
 
-{% anchor h2 %}
-Get Current Settings 
-{% endanchor %}
+<page-anchor el="h2">
+Get Current Settings
+</page-anchor>
 
 
 {% parameters get %}
@@ -56,16 +56,16 @@ Get Current Settings
 
 * * * * *
 
-{% anchor h2 %}
-Create New Entry 
-{% endanchor %}
+<page-anchor el="h2">
+Create New Entry
+</page-anchor>
 
 
 {% parameters create %}
  {% parameter task Yes 'Must be set to <code>set</code>' 'Task to set Parse record' %}
  {% parameter user Yes 'Subuser must be  under your account' 'The subuser setup parse on' %}
  {% parameter hostname Yes 'Valid DNS entry' 'Hostname to catch email from. Must have mx record' %}
- {% parameter url Yes 'Valid POST URL' 'The URL to POST the Parse data' %} 
+ {% parameter url Yes 'Valid POST URL' 'The URL to POST the Parse data' %}
 {% endparameters %}
 
 
@@ -85,9 +85,9 @@ Create New Entry
 
 * * * * *
 
-{% anchor h2 %}
-Edit Entry 
-{% endanchor %}
+<page-anchor el="h2">
+Edit Entry
+</page-anchor>
 
 
 {% parameters edit %}
@@ -114,9 +114,9 @@ Edit Entry
 
 * * * * *
 
-{% anchor h2 %}
-Delete Entry 
-{% endanchor %}
+<page-anchor el="h2">
+Delete Entry
+</page-anchor>
 
 
 {% parameters data %}

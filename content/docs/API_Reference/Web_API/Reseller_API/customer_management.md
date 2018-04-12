@@ -6,9 +6,9 @@ navigation:
    show: true
 ---
 These are actions that directly affect your customer. We provide access via XML and JSON.
-{% anchor h2 %}
+<page-anchor el="h2">
 Create a Customer
-{% endanchor %}
+</page-anchor>
 
 {% parameters create %}
  {% parameter 'username' 'Yes' 'No more than 64 characters' 'The customers new username' %}
@@ -50,9 +50,9 @@ Create a Customer
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Delete a Customer
-{% endanchor %}
+</page-anchor>
 Remove a customer from your account. This is **not** the same as disabling a customer on our system. This is the same thing as closing out a customers account at the end of their billing cycle.
 
 {% parameters delete %}
@@ -76,9 +76,9 @@ Remove a customer from your account. This is **not** the same as disabling a cus
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Retrieve Customers
-{% endanchor %}
+</page-anchor>
 Obtain a complete list of all customers.
 
 {% parameters get %}
@@ -175,9 +175,9 @@ Obtain a complete list of all customers.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Enable a Customer
-{% endanchor %}
+</page-anchor>
 Enable a customer so they may start sending out emails again. This call will not enable website access.
 
 {% parameters enable %}
@@ -202,9 +202,9 @@ Enable a customer so they may start sending out emails again. This call will not
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Disable a Customer
-{% endanchor %}
+</page-anchor>
 This prevents them from sending out emails with SendGrid.
 
 {% parameters disable %}
@@ -229,9 +229,9 @@ This prevents them from sending out emails with SendGrid.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Enable Website Access To A Customer
-{% endanchor %}
+</page-anchor>
 Allow a customer to login to the SendGrid.com website. This call will not enable the customer from sending out emails.
 
 {% parameters website %}
@@ -256,9 +256,9 @@ Allow a customer to login to the SendGrid.com website. This call will not enable
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Disable Website Access To A Customer
-{% endanchor %}
+</page-anchor>
 Disallow a customer to login to the SendGrid.com website. This call will not prevent them from sending out emails.
 
 {% parameters unwebsite %}
@@ -283,9 +283,9 @@ Disallow a customer to login to the SendGrid.com website. This call will not pre
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Update Customer Profile
-{% endanchor %}
+</page-anchor>
 Allows you to update your customers profile information
 
 {% parameters update %}
@@ -320,9 +320,9 @@ Allows you to update your customers profile information
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Update Customer Password
-{% endanchor %}
+</page-anchor>
 Passwords are encrypted by default and therefore cannot be retrieved; however, you can reset a customers password.
 
 {% parameters password %}
@@ -349,9 +349,9 @@ Passwords are encrypted by default and therefore cannot be retrieved; however, y
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Update Customer Username
-{% endanchor %}
+</page-anchor>
 Note that your customer account username is used to login to our SMTP server *and* the website and changes take effect immediately.
 
 {% parameters name %}
@@ -378,9 +378,9 @@ Note that your customer account username is used to login to our SMTP server *an
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Update Customer Email Address
-{% endanchor %}
+</page-anchor>
 This is the contact email we use for your customers. Changes take place immediately. It is your responsibility to validate the contact email.
 
 {% parameters email %}

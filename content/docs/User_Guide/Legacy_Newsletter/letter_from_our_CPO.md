@@ -7,9 +7,9 @@ navigation:
 ---
 March 30, 2016
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Legacy Newsletter to be Retired September 30, 2017
-{% endanchor %}
+</page-anchor>
 
 We will retire Legacy Newsletter on September 30, 2017. This will allow us to better serve your email marketing needs by focusing on supporting and enhancing Marketing Campaigns, the future of email marketing at SendGrid.
 

@@ -11,6 +11,6 @@ navigation:
 Do you have an [API Key](https://app.sendgrid.com/settings/api_keys) yet? If not, go get one. You're going to need it to integrate!
 {% endinfo %}
 
-{% anchor h2 %}Using SendGrid's Node.js Library{% endanchor %}
+<page-anchor el="h2">Using SendGrid's Node.js Library</page-anchor>
 
 <script src="https://gist.github.com/sendgrid-gists/069d788aefb7853706f424cbdfd7ee3c.js"></script>

@@ -14,9 +14,9 @@ Please see our [Migration Toolkit]({{root_url}}/User_Guide/Legacy_Newsletter/Leg
 
 This module allows you to manage which lists are assigned to marketing email.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 add
-{% endanchor %}
+</page-anchor>
 
 Assign a List to a Marketing Email.
 
@@ -43,9 +43,9 @@ Assign a List to a Marketing Email.
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 get
-{% endanchor %}
+</page-anchor>
 
 Get all lists assigned to a particular marketing email
 
@@ -75,9 +75,9 @@ Get all lists assigned to a particular marketing email
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 delete
-{% endanchor %}
+</page-anchor>
 
 Remove assigned lists from marketing email
 

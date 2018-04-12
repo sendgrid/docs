@@ -10,11 +10,15 @@ import './b16-tomorrow-dark.css'
 import './doc.scss'
 
 import rehypeReact from 'rehype-react'
-import Counter from '../components/Counter'
+import Callout from '../componentsMarkdown/Callout'
+import PageAnchor from '../componentsMarkdown/PageAnchor'
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
-  components: { 'interactive-counter': Counter },
+  components: {
+    'call-out': Callout,
+    'page-anchor': PageAnchor,
+  },
 }).Compiler
 
 export default class PostTemplate extends React.Component {
@@ -35,9 +39,8 @@ export default class PostTemplate extends React.Component {
         </Helmet>
         <SEO postPath={slug} postNode={postNode} postSEO />
         <div>
-
           <h1>{post.title}</h1>
-          {/* <div dangerouslySetInnerHTML={{ __html: postNode.html }} /> */ }
+          {/* <div dangerouslySetInnerHTML={{ __html: postNode.html }} /> */}
           {renderAst(postNode.htmlAst)}
           <div className="post-meta">
             <PostTags tags={post.tags} />

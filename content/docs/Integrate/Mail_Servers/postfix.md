@@ -12,7 +12,7 @@ navigation:
 Updating the Postfix configuration to use SendGrid as a relay host is easy. For more advanced configuration scenarios, you'll need to refer to the Postfix documentation.
 
 {% warning %}
-Some implementations of Postfix only allow passwords to contain letters and numbers, meaning you may need to ensure your SendGrid password is only alphanumeric. 
+Some implementations of Postfix only allow passwords to contain letters and numbers, meaning you may need to ensure your SendGrid password is only alphanumeric.
 {% endwarning %}
 
 Find your Postfix config file, typically **/etc/postfix/main.cf**, and add the following:
@@ -45,9 +45,9 @@ Finally, restart Postfix:
 $ sudo systemctl restart postfix
 {% endcodeblock %}
 
- 
+
 {% info %}
-If you are getting ***no mechanism available*** error messages it generally indicates that you are missing some SASL authentication libraries. 
+If you are getting ***no mechanism available*** error messages it generally indicates that you are missing some SASL authentication libraries.
 {% endinfo %}
 
 Install the missing module dependency using apt-get (i.e., Debian, Ubuntu):
@@ -56,7 +56,7 @@ Install the missing module dependency using apt-get (i.e., Debian, Ubuntu):
 $ apt-get install libsasl2-modules
 {% endcodeblock %}
 
- Or using a yum (i.e., RedHat, Fedora, CentOS): 
+ Or using a yum (i.e., RedHat, Fedora, CentOS):
 
 {% codeblock lang:bash %}
 $ yum install cyrus-sasl-plain
@@ -64,7 +64,7 @@ $ yum install cyrus-sasl-plain
 
 {% anchor h2%}
 Troubleshooting
-{% endanchor %}
+</page-anchor>
 
 If port 587 is not working for you please try 2525 in your postfix config. You may also need to edit /etc/postfix/master.cf to remove # from
 

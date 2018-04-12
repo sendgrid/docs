@@ -18,21 +18,21 @@ navigation:
 </ul>
 
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Emails
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Add one or more emails to a Recipient List
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Add an email recipient to a list
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Legacy Newsletter
-{% endanchor %}
+</page-anchor>
 
 **Request**
 
@@ -48,9 +48,9 @@ curl -X POST https://api.sendgrid.com/api/newsletter/lists/email/add.json -F api
 }
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 To insert a recipient into a list, you need the list id and the recipient id.
 
@@ -138,13 +138,13 @@ curl --request POST \
 HTTP/1.1 201
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Add an email recipient with multiple data fields
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Legacy Newsletter
-{% endanchor %}
+</page-anchor>
 
 **Request**
 
@@ -160,9 +160,9 @@ curl -X POST https://api.sendgrid.com/api/newsletter/lists/email/add.json -F api
 }
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 First, we get the list id:
 
@@ -251,13 +251,13 @@ HTTP/1.1 201
 
 
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Add multiple email recipients to a list
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Legacy Newsletter
-{% endanchor %}
+</page-anchor>
 
 **Request**
 
@@ -273,9 +273,9 @@ curl -X POST https://api.sendgrid.com/api/newsletter/lists/email/add.json -F api
 }
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 First, we get the list id:
 
@@ -383,13 +383,13 @@ HTTP/1.1 201
 {% endcodeblock %}
 
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Get the email addresses and associated fields for a Recipient List
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Legacy Newsletter
-{% endanchor %}
+</page-anchor>
 
 **Request**
 
@@ -408,9 +408,9 @@ curl -X POST https://api.sendgrid.com/api/newsletter/lists/email/get.json -F api
 ]
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 **Request**
 
@@ -444,13 +444,13 @@ curl --request GET \
 
 
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Retrieve the number of entries on a Recipient List
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Legacy Newsletter
-{% endanchor %}
+</page-anchor>
 
 **Request**
 
@@ -466,9 +466,9 @@ curl -X POST https://api.sendgrid.com/api/newsletter/lists/email/count.json -F a
 }
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 First, we need to get the list_id:
 
@@ -518,14 +518,14 @@ curl --request GET \
 }
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Remove one or more emails from a Recipient List
 
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Legacy Newsletter
-{% endanchor %}
+</page-anchor>
 
 **Request**
 
@@ -541,9 +541,9 @@ curl -X POST https://api.sendgrid.com/api/newsletter/lists/email/delete.json -F 
 }
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 First, we get the list id:
 

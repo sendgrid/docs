@@ -19,7 +19,7 @@ There are a lot of things to know about email. So, we wanted to help you know as
 
 <div class="row">
     <div class="col-md-4 glossary-section">
-        {% anchor h2 %}Domains & Servers{% endanchor %}
+        <page-anchor el="h2">Domains & Servers</page-anchor>
         <a href="{{root_url}}/Glossary/a_record.html">A Record</a>
         <a href="{{root_url}}/Glossary/cname.html">CNAME</a>
         <a href="{{root_url}}/Glossary/dkim.html">DKIM</a>
@@ -37,7 +37,7 @@ There are a lot of things to know about email. So, we wanted to help you know as
         <a href="{{root_url}}/Glossary/tls.html">TLS</a>
     </div>
     <div class="col-md-4 glossary-section">
-        {% anchor h2 %}Deliverability{% endanchor %}
+        <page-anchor el="h2">Deliverability</page-anchor>
     <a href="{{root_url}}/Glossary/email_deliverability.html">Email Deliverability</a>
         <a href="{{root_url}}/Glossary/blocks.html">Blocks</a>
         <a href="{{root_url}}/Glossary/bounces.html">Bounces</a>
@@ -54,7 +54,7 @@ There are a lot of things to know about email. So, we wanted to help you know as
         <a href="{{root_url}}/Glossary/undelivered_email.html">Undelivered Email</a>
     </div>
     <div class="col-md-4 glossary-section">
-        {% anchor h2 %}Email{% endanchor %}
+        <page-anchor el="h2">Email</page-anchor>
         <a href="{{root_url}}/Glossary/automated_email.html">Automated Email</a>
         <a href="{{root_url}}/Glossary/drip_campaign.html">Drip Campaign</a>
         <a href="{{root_url}}/Glossary/header.html">Header</a>
@@ -67,7 +67,7 @@ There are a lot of things to know about email. So, we wanted to help you know as
 </div>
 <div class="row">
     <div class="col-md-4 glossary-section">
-        {% anchor h2 %}Senders, Spam, & Spammers{% endanchor %}
+        <page-anchor el="h2">Senders, Spam, & Spammers</page-anchor>
         <a href="{{root_url}}/Glossary/bayesian_filter.html">Bayesian Filter</a>
         <a href="{{root_url}}/Glossary/black_hat_sender.html">Black Hat Sender</a>
         <a href="{{root_url}}/Glossary/blacklists.html">BlackLists</a>
@@ -87,7 +87,7 @@ There are a lot of things to know about email. So, we wanted to help you know as
         <a href="{{root_url}}/Glossary/white_hat_sender.html">White Hat Sender</a>
     </div>
     <div class="col-md-4 glossary-section">
-        {% anchor h2 %}SendGrid Services{% endanchor %}
+        <page-anchor el="h2">SendGrid Services</page-anchor>
         <a href="{{root_url}}/Glossary/autoresponder.html">Autoresponder</a>
         <a href="{{root_url}}/Glossary/bulk_email_service.html">Bulk Email Service</a>
         <a href="{{root_url}}/Glossary/campaigns.html">Campaigns</a>
@@ -125,7 +125,7 @@ There are a lot of things to know about email. So, we wanted to help you know as
         <a href="{{root_url}}/Glossary/whitelist.html">Whitelist</a>
     </div>
     <div class="col-md-4 glossary-section">
-        {% anchor h2 %}Other{% endanchor %}
+        <page-anchor el="h2">Other</page-anchor>
         <a href="{{root_url}}/Glossary/7_bit_encoding.html">7 bit (ASCII) Encoding</a>
     </div>
 </div>

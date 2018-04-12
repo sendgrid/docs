@@ -6,9 +6,9 @@ navigation:
    show: true
 ---
 
-{% anchor h2 %}
-Retrieve Unsubscribes 
-{% endanchor %}
+<page-anchor el="h2">
+Retrieve Unsubscribes
+</page-anchor>
 
 Note that you can use *either* the days parameter *or* the start_date and end_date parameter.
 
@@ -51,9 +51,9 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 
 * * * * *
 
-{% anchor h2 %}
-Delete Unsubscribes 
-{% endanchor %}
+<page-anchor el="h2">
+Delete Unsubscribes
+</page-anchor>
 
 Since SendGrid does not deliver to unsubscribe addresses, users can remove unsubscribes from their list at any time if re-delivery to an unsubscribed address is desired.
 
@@ -82,9 +82,9 @@ Since SendGrid does not deliver to unsubscribe addresses, users can remove unsub
 
 * * * * *
 
-{% anchor h2 %}
-Add Unsubscribes 
-{% endanchor %}
+<page-anchor el="h2">
+Add Unsubscribes
+</page-anchor>
 
 Add unsubscribe email records to their account if they need to stop sending email messages to a specific recipient.
 

@@ -17,13 +17,13 @@ navigation:
 </ul>
 
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Schedule a delivery time for an existing Marketing Email
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Legacy Newsletter
-{% endanchor %}
+</page-anchor>
 
 **Request**
 
@@ -39,9 +39,9 @@ curl -X POST https://api.sendgrid.com/api/newsletter/schedule/add.json -F api_us
 }
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 First, we need to get the campaign_id:
 
@@ -135,14 +135,14 @@ curl --request POST \
 {% endcodeblock %}
 
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Retrieve the scheduled delivery time for an existing Marketing Email
-{% endanchor %}
+</page-anchor>
 
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Legacy Newsletter
-{% endanchor %}
+</page-anchor>
 
 **Request**
 
@@ -158,9 +158,9 @@ curl -X POST https://api.sendgrid.com/api/newsletter/schedule/get.json -F 'name=
 }
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 First, we need to get the campaign_id:
 
@@ -253,13 +253,13 @@ curl --request GET \
 
 
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Cancel a scheduled send for a Marketing Email
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Legacy Newsletter
-{% endanchor %}
+</page-anchor>
 
 **Request**
 
@@ -275,9 +275,9 @@ curl -X POST https://api.sendgrid.com/api/newsletter/schedule/delete.json -F api
 }
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Marketing Campaigns
-{% endanchor %}
+</page-anchor>
 
 First, we need to get the campaign_id:
 

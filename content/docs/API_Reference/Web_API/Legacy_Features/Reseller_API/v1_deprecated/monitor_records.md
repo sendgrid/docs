@@ -14,9 +14,9 @@ The first step is to create a Monitor Record. Once the monitor record has been c
 
 * * * * *
 
-{% anchor h2 %}
-Create Monitor Record 
-{% endanchor %}
+<page-anchor el="h2">
+Create Monitor Record
+</page-anchor>
 
 Obtain a complete list of all customer.
 
@@ -132,9 +132,9 @@ result><message>success</message></result>
 
 * * * * *
 
-{% anchor h2 %}
-Edit Monitor Record 
-{% endanchor %}
+<page-anchor el="h2">
+Edit Monitor Record
+</page-anchor>
 
 Make modifications to an existing Monitor record.
 
@@ -256,9 +256,9 @@ result><message>success</message></result>
 
 * * * * *
 
-{% anchor h2 %}
-Delete Monitor Record 
-{% endanchor %}
+<page-anchor el="h2">
+Delete Monitor Record
+</page-anchor>
 
 Deleting a monitor record will remove it from SendGrid's system. **Make sure no users are currently using the monitor record when removing, or removal will fail.**
 
@@ -362,9 +362,9 @@ result><message>success</message></result>
 
 * * * * *
 
-{% anchor h2 %}
-List All Monitor Records 
-{% endanchor %}
+<page-anchor el="h2">
+List All Monitor Records
+</page-anchor>
 
 List all available monitor records a reseller has.
 
@@ -417,15 +417,15 @@ List all available monitor records a reseller has.
 monitors><monitor><name>sampleNameA</name><email>example@example.com</email><frequency>1000</frequency><users></users></monitor><monitor><name>sampleNameB</name><email>example@example.com</email><frequency>10000</frequency><users><user>user1@example.com</user><user>exampexample@example.comom</user></users></monitor></monitors
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      
+
 {% requestblock %}
-        
+
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
-        
+
   {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=monitor&amp;task=lis
   {% endrequestdata %}
-      
+
 {% endrequestblock %}
 
 <h3>Response</h3>
@@ -435,9 +435,9 @@ monitors><monitor><name>sampleNameA</name><email>example@example.com</email><fre
 
 * * * * *
 
-{% anchor h2 %}
-Append A Customer To A Monitor Record 
-{% endanchor %}
+<page-anchor el="h2">
+Append A Customer To A Monitor Record
+</page-anchor>
 
 Append a monitor record to a existing record onto a customer.
 
@@ -547,9 +547,9 @@ result><message>success</message></result>
 
 * * * * *
 
-{% anchor h2 %}
-Detach A Monitor Record From A Customer 
-{% endanchor %}
+<page-anchor el="h2">
+Detach A Monitor Record From A Customer
+</page-anchor>
 
 Detach a customer from a monitor record.
 

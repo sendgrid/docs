@@ -26,9 +26,9 @@ There are a number of [official SendGrid libraries]({{root_url}}/Integrate/libra
 When you make a request to the Web API v2 to send a message, we will accept the request and then process the email, meaning that a successful API request does not mean an email was successfully sent. Please see our [Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html) if you want to be notified of email send status.
 {% endinfo %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 send
-{% endanchor %}
+</page-anchor>
 
 SendGrid's [API Keys]({{root_url}}/User_Guide/Account/api_keys.html) should be used when sending email over the API.
 
@@ -71,9 +71,9 @@ You can have up to 10,000 recipients per Web API v2 request. While we do not enf
   {% endresponse %}
 {% endapiexample %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Call: Send to Multiple Recipients
-{% endanchor %}
+</page-anchor>
 
 {% apiexample multiple POST https://api.sendgrid.com/api/mail.send api_user=your_sendgrid_username&api_key=your_sendgrid_password&to[]=destination@example.com&toname[]=Destination&to[]=example@example.com&toname[]=Destination2&subject=Example_Subject&text=testingtextbody&from=info@domain.com false %}
   {% response json %}
@@ -89,9 +89,9 @@ Call: Send to Multiple Recipients
   {% endresponse %}
 {% endapiexample %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Call: Sending with a CC and CCname
-{% endanchor %}
+</page-anchor>
 
 {% apiexample cc POST https://api.sendgrid.com/api/mail.send api_user=your_sendgrid_username&api_key=your_sendgrid_password&to[]=destination@example.com&toname[]=Destination&cc=ccdestination@mail.com&ccname=CCDestination&subject=Example_Subject&text=testingtextbody&from=info@domain.com false %}
   {% response json %}
@@ -107,9 +107,9 @@ Call: Sending with a CC and CCname
   {% endresponse %}
 {% endapiexample %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Call: Sending with a BCC and BCCname
-{% endanchor %}
+</page-anchor>
 
 {% apiexample bcc POST https://api.sendgrid.com/api/mail.send api_user=your_sendgrid_username&api_key=your_sendgrid_password&to[]=destination@example.com&toname[]=Destination&bcc=bccdestination@mail.com&bccname=BCCDestination&subject=Example_Subject&text=testingtextbody&from=info@domain.com false %}
   {% response json %}
@@ -127,29 +127,29 @@ Call: Sending with a BCC and BCCname
 
 * * * * *
 
-{% anchor h3 %}
+<page-anchor el="h3">
 cURL Examples
-{% endanchor %}
+</page-anchor>
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Send to one email recipient
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:bash %}
 curl -d 'to=destination@example.com&amp;toname=Destination&amp;subject=Example Subject&amp;text=testingtextbody&amp;from=info@domain.com&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password' https://api.sendgrid.com/api/mail.send.json
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Send to multiple email recipients
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:bash %}
 curl -d 'to[]=destination@example.com&amp;toname[]=Destination&amp;to[]=example@example.com&amp;toname[]=Destination2&amp;subject=Example Subject&amp;text=testingtextbody&amp;from=info@domain.com&amp;api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password' https://api.sendgrid.com/api/mail.send.json
 {% endcodeblock %}
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Send a test with attachment
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:bash %}
 curl https://api.sendgrid.com/api/mail.send.json \
@@ -161,9 +161,9 @@ curl https://api.sendgrid.com/api/mail.send.json \
 
 <span class="label label-info">Note</span> To ensure that it uploads from a local file, use \<@filename\>.
 
-{% anchor h4 %}
+<page-anchor el="h4">
 Send a test specifying the file content type by appending ';type=<mime type>' to the file name
-{% endanchor %}
+</page-anchor>
 
 {% codeblock lang:bash %}
 curl https://api.sendgrid.com/api/mail.send.json \
@@ -173,9 +173,9 @@ curl https://api.sendgrid.com/api/mail.send.json \
 -F files\[attachment.pdf\]=@attachment.pdf;type=application/pdf
 {% endcodeblock %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Raw HTTP Dump
-{% endanchor %}
+</page-anchor>
 
 The following is a dump of the HTTP data sent to our server to generate an email via our Web API v2.
 

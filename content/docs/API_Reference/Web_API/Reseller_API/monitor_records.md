@@ -16,9 +16,9 @@ These are Reseller Only APIs. For more information, see [Reseller Overview](http
 
 * * * * *
 
-{% anchor h2 %}
-Create Monitor Record 
-{% endanchor %}
+<page-anchor el="h2">
+Create Monitor Record
+</page-anchor>
 
 Obtain a complete list of all customer.
 
@@ -48,9 +48,9 @@ Obtain a complete list of all customer.
 
 * * * * *
 
-{% anchor h2 %}
-Edit Monitor Record 
-{% endanchor %}
+<page-anchor el="h2">
+Edit Monitor Record
+</page-anchor>
 
 Make modifications to an existing Monitor record.
 
@@ -81,9 +81,9 @@ Make modifications to an existing Monitor record.
 
 * * * * *
 
-{% anchor h2 %}
-Delete Monitor Record 
-{% endanchor %}
+<page-anchor el="h2">
+Delete Monitor Record
+</page-anchor>
 
 Deleting a monitor record will remove it from SendGrid's system. **Make sure no users are currently using the monitor record when removing, or removal will fail.**
 
@@ -111,9 +111,9 @@ Deleting a monitor record will remove it from SendGrid's system. **Make sure no 
 
 * * * * *
 
-{% anchor h2 %}
-List All Monitor Records 
-{% endanchor %}
+<page-anchor el="h2">
+List All Monitor Records
+</page-anchor>
 
 List all available monitor records a reseller has.
 
@@ -170,9 +170,9 @@ List all available monitor records a reseller has.
 
 * * * * *
 
-{% anchor h2 %}
-Append A Customer To A Monitor Record 
-{% endanchor %}
+<page-anchor el="h2">
+Append A Customer To A Monitor Record
+</page-anchor>
 
 Append a monitor record to a existing record onto a customer.
 
@@ -201,9 +201,9 @@ Append a monitor record to a existing record onto a customer.
 
 * * * * *
 
-{% anchor h2 %}
-Detach A Monitor Record From A Customer 
-{% endanchor %}
+<page-anchor el="h2">
+Detach A Monitor Record From A Customer
+</page-anchor>
 
 Detach a customer from a monitor record.
 

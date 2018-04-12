@@ -8,9 +8,9 @@ navigation:
    show: true
 ---
 
-{% anchor h2 %}
-All 
-{% endanchor %}
+<page-anchor el="h2">
+All
+</page-anchor>
 
 View all IPs under your account.
 
@@ -70,15 +70,15 @@ View all IPs under your account.
 {% codeblock %}  <ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      
+
 {% requestblock %}
-        
+
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.ip.json
   {% endrequesturl %}
-        
+
   {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=al
   {% endrequestdata %}
-      
+
 {% endrequestblock %}
 
 <h3>Response: Success</h3>
@@ -99,9 +99,9 @@ View all IPs under your account.
 
 * * * * *
 
-{% anchor h2 %}
-Free 
-{% endanchor %}
+<page-anchor el="h2">
+Free
+</page-anchor>
 
 A listing of all free IPs under your account. A Free IP is any IP that is not in use by a user or is not linked to an IP grouping.
 
@@ -151,15 +151,15 @@ A listing of all free IPs under your account. A Free IP is any IP that is not in
 {% codeblock %}  <ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      
+
 {% requestblock %}
-        
+
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.ip.json
   {% endrequesturl %}
-        
+
   {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=fre
   {% endrequestdata %}
-      
+
 {% endrequestblock %}
 
 <h3>Response: Success</h3>
@@ -180,9 +180,9 @@ A listing of all free IPs under your account. A Free IP is any IP that is not in
 
 * * * * *
 
-{% anchor h2 %}
-Taken 
-{% endanchor %}
+<page-anchor el="h2">
+Taken
+</page-anchor>
 
 A listing of all taken IPs under your account. A Taken IP is any IP that is in use by a user or is linked to an IP grouping.
 
@@ -232,15 +232,15 @@ A listing of all taken IPs under your account. A Taken IP is any IP that is in u
 {% codeblock %}  <ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      
+
 {% requestblock %}
-        
+
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.ip.json
   {% endrequesturl %}
-        
+
   {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=take
   {% endrequestdata %}
-      
+
 {% endrequestblock %}
 
 <h3>Response: Success</h3>
@@ -261,9 +261,9 @@ A listing of all taken IPs under your account. A Taken IP is any IP that is in u
 
 * * * * *
 
-{% anchor h2 %}
-Available 
-{% endanchor %}
+<page-anchor el="h2">
+Available
+</page-anchor>
 
 A listing of all available IPs under your account. An Available IP is any IP that is currently free, or is in use by a user *but* that user is inactive or that is not linked to an IP grouping.
 
@@ -313,15 +313,15 @@ A listing of all available IPs under your account. An Available IP is any IP tha
 {% codeblock %}  <ips><ip>255.255.255.0</ip><ip>255.255.254.0</ip><ip>255.255.253.0</ip><ip>255.255.252.0</ip></ips
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      
+
 {% requestblock %}
-        
+
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.ip.json
   {% endrequesturl %}
-        
+
   {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=availabl
   {% endrequestdata %}
-      
+
 {% endrequestblock %}
 
 <h3>Response: Success</h3>
@@ -342,9 +342,9 @@ A listing of all available IPs under your account. An Available IP is any IP tha
 
 * * * * *
 
-{% anchor h2 %}
-Usage 
-{% endanchor %}
+<page-anchor el="h2">
+Usage
+</page-anchor>
 
 The current breakdown of users who are using your IPs.
 
@@ -416,15 +416,15 @@ The current breakdown of users who are using your IPs.
 {% codeblock %}  <ips><entry><ip>255.255.253.0</ip><user>example@example.com</user></entry><entry><ip>255.255.254.0</ip><user>example@example.com</user></entry></ips
 {% endcodeblock %}
 <h3>JSON Call</h3>
-      
+
 {% requestblock %}
-        
+
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.ip.json
   {% endrequesturl %}
-        
+
   {% requestdata Data POST %}api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;task=usage&amp;user=example.com
   {% endrequestdata %}
-      
+
 {% endrequestblock %}
 
 <h3>Response: Success</h3>

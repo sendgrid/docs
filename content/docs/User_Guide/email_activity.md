@@ -11,7 +11,7 @@ navigation:
 ---
 
 {% warning %}
-If you are looking for the new Email Activity documentation, please go [here]({{root_url}}/User_Guide/email_activity_feed.html). 
+If you are looking for the new Email Activity documentation, please go [here]({{root_url}}/User_Guide/email_activity_feed.html).
 {% endwarning %}
 
 <iframe src="https://player.vimeo.com/video/130900679" width="500" height="312" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -34,7 +34,7 @@ The Email Activity feed allows you to view a snapshot of email-related activity 
 Email activity shows the most recent 500 events. To access data in real time, implement our Event Webhook.
 {% endinfo %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Filtering the Activity Feed
 {% endanchor h2 %}
 
@@ -44,7 +44,7 @@ Filtering the Activity Feed
 1. Select individual event types to filter.
     </br>The activity feed refreshes with the event types you selected.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Searching the Activity Feed
 {% endanchor h2 %}
 
@@ -54,7 +54,7 @@ Searching the Activity Feed
 - To search by mailbox name (the part of an email before the @ symbol), enter the mailbox name into the search field and click enter.
 - To search by domain name (the part of an email after the @ symbol), enter the domain into the search field and click enter.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Subuser email activity
 {% endanchor h2 %}
 
@@ -62,11 +62,11 @@ To see a subuser’s email activity, log in as that subuser or [impersonate]({{r
 
 You cannot see a parent accounts email activity from a subuser account.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Email Events
 {% endanchor h2 %}
 
-The Email Activity feed allows you to view specific information about messages sent from your account. 
+The Email Activity feed allows you to view specific information about messages sent from your account.
 
 <table class="table" style="table-layout:fixed">
   <tr>
@@ -127,13 +127,13 @@ The Email Activity feed allows you to view specific information about messages s
   </tr>
 </table>
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Troubleshooting
-{% endanchor %}
+</page-anchor>
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Checking delivery status of a  specific email
-{% endanchor %}
+</page-anchor>
 
 You can check email delivery status by using the Email Activity page, or by using the Event Webhook.
 
@@ -143,9 +143,9 @@ You can check email delivery status by using the Email Activity page, or by usin
 
 - Have the recipient check their spam folder.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Deferrals
-{% endanchor %}
+</page-anchor>
 
 In your logs, you may see the following error message accompanying a deferral event:
 
@@ -159,17 +159,17 @@ In your logs, you may see the following error message accompanying a deferral ev
 
 This deferral is created by SendGrid to control the rate of delivery by ISP to help prevent throttling and spam folder delivery. Sending too much mail too fast can cause different mail providers to be suspicious of the mail, and that impacts deliverability. This automatic deferral was put in place to allow senders to send as much mail as you want at once, without impacting your deliverability.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Drops
-{% endanchor %}
+</page-anchor>
 
 A drop occurs when you try to send a message to an email address listed on one of the suppression lists: Bounces, Unsubscribes, Spam reports and Invalid Emails. If an email is already on one of the lists, our systems automatically drop the email to protect your Sender Reputation.
 
 A dropped message cannot be resent automatically. To resend a message, first [remove the email from the suppression list](#-Removing-an-email-from-a-suppression-list), and then recreate and resend the email.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Bounces
-{% endanchor %}
+</page-anchor>
 
 A bounce is a Drop event that occurs when a message to an address has previously Bounced.
 
@@ -181,9 +181,9 @@ A bounced message cannot be resent automatically. To resend a message, first [re
 A delayed bounce occurs when a recipient server accepts a message (Delivered) and then is promptly declined (Bounced). This is an infrequent occurrence, and SendGrid treats these messages as a bounce, and any future sends to this address are dropped, unless you remove the email from your bounce suppression list.
 {% endinfo %}
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Removing an email from a suppression list
-{% endanchor %}
+</page-anchor>
 
 SendGrid automatically drops emails sent to addresses on suppression lists. If you want to retry sending an email to an address that is on a suppressions list, you need to remove it from the list first.
 
@@ -197,9 +197,9 @@ Only remove emails from these lists if you're sure the recipients want to receiv
 1. Select the email you want to remove.
 1. In the drop-down menu on the top right of the screen, select **Remove selected emails**.
 
-{% anchor h3 %}
+<page-anchor el="h3">
 Setting up bounce forwarding
-{% endanchor %}
+</page-anchor>
 
 You can receive bounce notifications to a specific address by enabling the "Forward Bounces" feature in your account and defining the forwarding address. However, you can also set it to send any bounces back to the originating FROM address.
 
@@ -220,7 +220,7 @@ One way to do this is in the filter, set up **From** `daemon` and **Has the word
 
 These are some common issues people see with reading their email activity feed.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Additional Resources
 {% endanchor h2 %}
 

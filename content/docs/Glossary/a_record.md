@@ -14,10 +14,9 @@ The A record is what links your dedicated IP address to your chosen subdomain. C
 
 You can create multiple A records for a domain with as many IP addresses as you wish, however you can only [whitelabel]({{root_url}}/User_Guide/Setting_Up_Your_Server/Whitelabeling/index.html) one IP to one domain at a time.
 
-
 {% anchor h2%}
 Example A Record
-{% endanchor %}
+</page-anchor>
 
 What it should look like:
-```em.yourdomain.com. |  A  |  192.168.250.1```
+`em.yourdomain.com. | A | 192.168.250.1`

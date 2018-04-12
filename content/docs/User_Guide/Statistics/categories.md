@@ -22,23 +22,23 @@ In order to see statistics for a category, select the category and the page will
 
 You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters).
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Figures
-{% endanchor %}
+</page-anchor>
 
 The figures table gives you all of the specific counts or percentages of each event, according to how you’ve grouped your stats (day, week, or month). For example, if you wanted to see what percentage of the emails you sent were actually opened on the second week of April, this is a great place to check.
 
 This table will refresh with new or adjusted data based on the various filters available at the top of the page. You can also choose to show actual counts or percentages, by clicking the corresponding button above and to the right of the table.
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Using the API
-{% endanchor %}
+</page-anchor>
 
 [Using Categories with the SMTP API]({{root_url}}/API_Reference/SMTP_API/categories.html)
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Additional Resources
-{% endanchor %}
+</page-anchor>
 
 - [Email Activity]({{root_url}}/User_Guide/email_activity.html)
 - [Statistics Filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters)

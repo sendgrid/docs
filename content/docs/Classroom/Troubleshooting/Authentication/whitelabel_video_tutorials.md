@@ -14,9 +14,9 @@ navigation:
   show: true
 ---
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Table of Contents
-{% endanchor %}
+</page-anchor>
 
 * [Whitelabeled Domains](#-Whitelabeled-Domains)
 * [Email Links](#-Email-Links)
@@ -26,30 +26,30 @@ Table of Contents
 
 ***************
 
-{% anchor h3 %}Whitelabeled Domains{% endanchor %}
+<page-anchor el="h3">Whitelabeled Domains</page-anchor>
 
 <iframe src="https://player.vimeo.com/video/149585179" width="700" height="400" frameborder="0" allowfullscreen=""></iframe>
 
 
 
-{% anchor h3 %}Email Links{% endanchor %}
+<page-anchor el="h3">Email Links</page-anchor>
 
 <iframe src="https://player.vimeo.com/video/149664450" width="700" height="400" frameborder="0" allowfullscreen=""></iframe>
 
 
 
-{% anchor h3 %}IP Whitelabels {% endanchor %}
+<page-anchor el="h3">IP Whitelabels </page-anchor>
 
 <iframe src="https://player.vimeo.com/video/149816616" width="700" height="400" frameborder="0" allowfullscreen=""></iframe>
 
 
 
-{% anchor h3 %}Whitelabeling with GoDaddy{% endanchor %}
+<page-anchor el="h3">Whitelabeling with GoDaddy</page-anchor>
 
 <iframe src="https://player.vimeo.com/video/149805633" width="700" height="400" frameborder="0" allowfullscreen=""></iframe>
 
 
 
-{% anchor h3 %}Whitelabeling with Hover{% endanchor %}
+<page-anchor el="h3">Whitelabeling with Hover</page-anchor>
 
 <iframe src="https://player.vimeo.com/video/158954155" width="700" height="400" frameborder="0" allowfullscreen=""></iframe>

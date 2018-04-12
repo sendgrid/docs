@@ -17,9 +17,9 @@ It is possible to track the number of times each link in one of your [campaigns]
 It is important to make sure that you are formatting your HTML links correctly in order for them to successfully be tracked. If you are having problems with click tracking, please [click here]({{root_url}}/Classroom/Track/Clicks/click_tracking_html_best_practices.html).
 {% endinfo %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Tracking Links With Custom Fields and Substitution Tags
-{% endanchor %}
+</page-anchor>
 
 There are some special considerations to take into account when using substitution tags and [custom fields]({{root_url}}/User_Guide/Marketing_Campaigns/custom_fields.html) in the links that you want to track in Marketing Campaigns.
 

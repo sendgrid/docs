@@ -12,9 +12,9 @@ navigation:
 This feature is deprecated, please go to the [Version 2]({{root_url}}/API_Reference/Web_API/Reseller_API/customer_invalid_emails.html) Reseller Customer Invalid Emails page.
 {% endwarning %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Retrieve Invalid Emails
-{% endanchor %}
+</page-anchor>
 
 <table class="table table-bordered table-striped">
    <thead>
@@ -95,9 +95,9 @@ invalidemails><invalidemail><email>example@example.com</email><reason>Mail domai
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 Delete Invalid Emails
-{% endanchor %}
+</page-anchor>
 
 Since SendGrid does not deliver to invalid emails, users can remove invalid emails from their list at any time if re-delivery to a spam reported address is desired.
 

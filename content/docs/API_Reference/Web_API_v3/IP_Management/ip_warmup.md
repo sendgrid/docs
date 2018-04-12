@@ -20,9 +20,9 @@ SendGrid can automatically warmup dedicated IP addresses by limiting the amount 
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 GET
-{% endanchor %}
+</page-anchor>
 
 Get all IPs that are currently warming up. The value returned for "start_date" represents the date that the IP was entered into warmup, and is always formatted as a Unix timestamp.
 
@@ -41,9 +41,9 @@ HTTP/1.1 200 OK
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 GET
-{% endanchor %}
+</page-anchor>
 Get warmup status for a particular IP.
 
 {% parameters get %}
@@ -65,9 +65,9 @@ HTTP/1.1 200 OK
 
 * * * * *
 
-{% anchor h2 %}
+<page-anchor el="h2">
 POST
-{% endanchor %}
+</page-anchor>
 Add an IP to warmup.
 
 {% parameters post %}
@@ -87,9 +87,9 @@ HTTP/1.1 201 OK
 {% endv3response %}
 {% endapiv3example %}
 
-{% anchor h2 %}
+<page-anchor el="h2">
 DELETE
-{% endanchor %}
+</page-anchor>
 Remove an IP from warmup.
 
 {% apiv3example delete DELETE https://api.sendgrid.com/v3/ips/warmup/0.0.0.0 %}

@@ -8,7 +8,7 @@ class AllDocs extends React.Component {
   render() {
     const postEdges = this.props.data.allMarkdownRemark.edges
     return (
-      <div className="index-container">
+      <div className="container">
         <Helmet title={config.siteTitle} />
         <SEO postEdges={postEdges} />
         <PostListing postEdges={postEdges} />

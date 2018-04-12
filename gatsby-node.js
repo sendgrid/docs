@@ -69,10 +69,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           allMarkdownRemark {
             edges {
               node {
-                frontmatter {
-                  tags
-                  category
-                }
                 fields {
                   permalink
                   slug
@@ -88,21 +84,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           reject(result.errors)
         }
 
-        const tagSet = new Set()
-        const categorySet = new Set()
         result.data.allMarkdownRemark.edges.forEach(edge => {
-          // const uri = edge.node.frontmatter.uri ? edge.node.frontmatter.uri : ''
-
-          if (edge.node.frontmatter.tags) {
-            edge.node.frontmatter.tags.forEach(tag => {
-              tagSet.add(tag)
-            })
-          }
-
-          if (edge.node.frontmatter.category) {
-            categorySet.add(edge.node.frontmatter.category)
-          }
-
           // Create docs pages
           createPage({
             path: edge.node.fields.permalink,
