@@ -32,6 +32,21 @@ The following new features and changes to the service are available.
 </table>
 
 {% anchor h2 %}
+9 April 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Truncating fields that go over max field character limits
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ><img src="{{root_url}}/images/code_icon.png" alt="An update to the API" width="100" height="100"></td>
+  <td>This change applies to contacts added by uploading a CSV in the UI or when using the <code>POST /contactdb/lists/{list_id}/recipients/{recipient_id}</code> Add a Single Recipient to a List method. When adding or updating the <code>first_name</code> and <code>last_name</code> fields, SendGrid automatically truncates any field that exceeds the maximum character limit to ensure that the field is valid. Non-unicode characters are still not valid.</td>
+  </tr>
+</table>
+
+{% anchor h2 %}
 29 March 2018
 {% endanchor %}
 
