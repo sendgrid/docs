@@ -2,7 +2,7 @@
   "name": "sendgrid-docs",
   "description": "SendGrid Docs",
   "version": "1.1.0",
-  "author": "Justin W. Hall <justin.hall@sendgrid.com",
+  "author": "Justin W. Hall <justin.hall@sendgrid.com>",
   "dependencies": {
     "babel-plugin-lodash": "^3.3.2",
     "gatsby": "^1.9.178",
@@ -53,9 +53,7 @@
     "stylelint-config-standard": "^18.0.0",
     "write-good": "^0.11.3"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
   "license": "MIT",
   "main": "n/a",
   "scripts": {
@@ -72,8 +70,6 @@
     "format:js": "prettier '**/*.{js,jsx}' --write"
   },
   "remarkConfig": {
-    "plugins": [
-      "remark-preset-lint-recommended"
-    ]
+    "plugins": ["remark-preset-lint-recommended"]
   }
 }

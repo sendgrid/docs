@@ -1,9 +1,5 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import UserInfo from '../components/UserInfo/UserInfo'
-import Disqus from '../components/Disqus/Disqus'
-import PostTags from '../components/PostTags/PostTags'
-import SocialLinks from '../components/SocialLinks/SocialLinks'
 import SEO from '../components/SEO/SEO'
 import config from '../../data/SiteConfig'
 import './b16-tomorrow-dark.css'
@@ -16,8 +12,8 @@ import PageAnchor from '../componentsMarkdown/PageAnchor'
 const renderAst = new rehypeReact({
   createElement: React.createElement,
   components: {
-    'call-out': Callout,
-    'page-anchor': PageAnchor,
+    // 'call-out': Callout,
+    // 'page-anchor': PageAnchor,
   },
 }).Compiler
 
@@ -42,9 +38,6 @@ export default class PostTemplate extends React.Component {
           <h1>{post.title}</h1>
           {/* <div dangerouslySetInnerHTML={{ __html: postNode.html }} /> */}
           {renderAst(postNode.htmlAst)}
-          <div className="post-meta">
-            <PostTags tags={post.tags} />
-          </div>
         </div>
       </div>
     )
@@ -56,14 +49,9 @@ export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       htmlAst
-      timeToRead
-      excerpt
       frontmatter {
         title
-        cover
         date
-        category
-        tags
       }
       fields {
         slug
