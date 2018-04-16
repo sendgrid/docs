@@ -15,7 +15,7 @@ navigation:
     - [DNS](#-DNS)
     - [DKIM](#-DKIM)
     - [SPF](#-SPF)
-    - [Content Delivery Network (CDN)](#-Content Delivery Network)
+    - [CNAME](#-CNAME)
 - [Setting up domain authentication](#-Setting-up-domain-authentication)
     - [Before you begin](#-Before-you-begin)
     - [Setting up DNS](#-Setting-up-DNS)
@@ -24,7 +24,6 @@ navigation:
     - [Using a custom return path](#-Using-a-custom-return-path)
     - [Using a custom DKIM selector](#-Using-a-custom-DKIM-selector)
     - [Assigning a subuser](#-Assigning-a-subuser)
-- [Troubleshooting](#-Troubleshooting)
 - [Migrating from legacy Whitelabel](#-Migrating-from-legacy-Whitelabel)
 
 {% anchor h2 %}
@@ -39,24 +38,33 @@ Even though this is a small change from your recipients perspective, this change
 Key terminology
 {% endanchor %}
 
-TO DO: ADD DEFINITIONS
-LET KAYLYN KNOW IF YOU THINK THIS IS MISSING TERMS
-
 {% anchor h3 %}
 DNS
 {% endanchor %}
+
+DNS stands for Domain Name System. This is a naming system for domains on the internet. When SendGrid refers to your DNS, we are talking about your domain name that you want to send emails from, or that you want to link images from. When we talk about your DNS provider, we are talking about the service that hosts your domain name. For example, GoDaddy, Rackspace, or Cloudflare. For more information about DNS, see our [DNS glossary page]({{root_url}}/Glossary/dns.html).
 
 {% anchor h3 %}
 DKIM
 {% endanchor %}
 
+DKIM stands for DomainKeys Identified Mail which was designed to help ISPs prevent malicious email senders by validating email from specific domains.
+
+As one of the most popular email authentication methodologies, it works by using cryptographic technology that adds a digital signature to your message header. This DKIM signature validates and authorizes your domain name in the eyes of the receiver. The DKIM signature is created using a unique string of characters stored as a public key.
+
+When your email is received, the public key is retrieved through the DNS and decrypted by the receiver to allow them to confidently verify the identity of your domain. For more information about DKIM, see our [DKIM glossary page]({{root_url}}/Glossary/dkim.html).
+
 {% anchor h3 %}
 SPF
 {% endanchor %}
 
+Sender Policy Framework (SPF) is an email authentication standard developed by AOL that compares the email sender’s actual IP address to a list of IP addresses authorized to send mail from that domain. The IP list is published in the domain’s DNS record. For more information about SPF, check out our [SPF glossary page]({{root_url}}/Glossary/spf.html).
+
 {% anchor h3 %}
-Content Delivery Network
+CNAME
 {% endanchor %}
+
+The CNAME record creates an alias for subdomain.yourdomain.com and points to sendgrid.net. The CNAME is needed for our click and open tracking features in order for those statistics to be routed back to your SendGrid account. This will also be what your messages are signed by, so your recipients will be able see what you have chosen for your CNAME. You set up the CNAME files that SnedGrid provides with your DNS host. For more information about CNAME, see our [CNAME glossary page]({{root_url}}/Glossary/cname.html).
 
 {% anchor h2 %}
 Setting up domain authentication
@@ -106,7 +114,7 @@ If you select **Off**, we generate 1 MX record and 2 TXT records. In a later ste
 Using a custom return path
 {% endanchor %}
 
-Info coming soon.
+Use a custom return path to customize your subdomain. This is necessary need the subdomain to be specific because you need an exact match for DMARC alignment.
 
 {% anchor h3 %}
 Using a custom DKIM selector
@@ -129,20 +137,9 @@ By assigning a domain whitelabel to one of your subusers, you can give them the 
 When you are in the process of authenticating a domain, and on the screen where you input domain settings, open the advanced settings, select **Assign to a subuser**, and select a subuser to assign to that domain.
 
 {% anchor h2 %}
-Troubleshooting
-{% endanchor %}
-
-Info coming soon. Let Kaylyn know if you have any recommendations.
-
-{% anchor h2 %}
 Migrating from legacy Whitelabel
 {% endanchor %}
 
-Info coming soon.
+If you set up a whitelabel before 2015, your whitelabel will still work. However, if you need to change or update it, you need to delete it and recreate it as an authenticated domain in our new system.
 
-{% anchor h2 %}
-Additional resources
-{% endanchor %}
-- [link text]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML)
-- [link text]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML)
-- [link text]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML)
+If you set up a whitelabel after 2015, it has been automatically migrated to our new domain authentication system.
