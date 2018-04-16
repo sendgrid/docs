@@ -9,6 +9,7 @@ seo:
 navigation:
   show: false
 ---
+<iframe src="https://player.vimeo.com/video/265066856" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 - [What is domain authentication?](#-What-is-domain-authentication)
 - [Key terminology](#-Key terminology)
