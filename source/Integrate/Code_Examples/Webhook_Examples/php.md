@@ -34,7 +34,7 @@ $num_attachments = $_POST["attachments"];
 
 if($num_attachments){
   for($i = 1; $i <= $num_attachments; $i++) {
-    $attachment = $_FILES['attachment' + $i];
+    $attachment = $_FILES['attachment' . $i];
 	  // $attachment will have all the parameters expected in a the PHP $_FILES object
 	  // http://www.php.net/manual/en/features.file-upload.post-method.php#example-369
   }
