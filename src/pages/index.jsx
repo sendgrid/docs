@@ -13,7 +13,7 @@ class Index extends React.Component {
           <div className="input-text-wrap">
             <label
               className="input-text-label"
-              for="input-text-example-default"
+              htmlFor="input-text-example-default"
             >
               Username
             </label>

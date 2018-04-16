@@ -1,292 +1,314 @@
 // sendgrid style-guide variables
 
-$font-path:           "../fonts" !default;
-$border-radius:       2px;
+$font-path: '../fonts' !default;
+$border-radius: 2px;
 
 // breakpoints
-$width-small:         610px;
-$width-medium:        990px;
-$width-large:         1200px;
+$width-small: 610px;
+$width-medium: 990px;
+$width-large: 1200px;
+
+// The width we break to the mobile menu
+$width-mobile: 767px;
 
 // modular scale base
 // modularscale.com/?12,20&px&1.5
-$scale-base:          12px;
+$scale-base: 12px;
 
 // modular scale up
-$scale-base-up-01:    13px;
-$scale-base-up-02:    15px;
-$scale-base-up-03:    18px;
-$scale-base-up-04:    20px;
-$scale-base-up-05:    27px;
-$scale-base-up-06:    30px;
-$scale-base-up-07:    40px;
-$scale-base-up-08:    45px;
-$scale-base-up-09:    60px;
-$scale-base-up-10:    90px;
+$scale-base-up-01: 13px;
+$scale-base-up-02: 15px;
+$scale-base-up-03: 18px;
+$scale-base-up-04: 20px;
+$scale-base-up-05: 27px;
+$scale-base-up-06: 30px;
+$scale-base-up-07: 40px;
+$scale-base-up-08: 45px;
+$scale-base-up-09: 60px;
+$scale-base-up-10: 90px;
 
 // modular scale down
-$scale-base-down-01:  9px;
-$scale-base-down-02:  6px;
-$scale-base-down-03:  3px;
+$scale-base-down-01: 9px;
+$scale-base-down-02: 6px;
+$scale-base-down-03: 3px;
+
+$scaleup-11: 9.492rem; //152px
+$scaleup-10: 7.594rem; //121px
+$scaleup-9: 6.328rem; //101px
+$scaleup-8: 5.063rem; //81px
+$scaleup-7: 4.219rem; //68px
+$scaleup-6: 3.375rem; //54px
+$scaleup-5: 2.813rem; //45px
+$scaleup-4: 2.25rem; //36px
+$scaleup-3: 1.875rem; //30px
+$scaleup-2: 1.5rem; //24px
+$scaleup-1: 1.25rem; //20px
+$scale-0: 1rem; //16px
+$scaledown-1: 0.833rem; //13px
+$scaledown-2: 0.667rem; //11px
+$scaledown-3: 0.556rem; //9px
+$scaledown-4: 0.444rem; //7px
+$scaledown-5: 0.37rem; //6px
+$scaledown-6: 0.296rem; //5px
+$scaledown-7: 0.197rem; //3px
 
 // colors - primary
-$sg-blue:             #1a82e2;
-$slate:               #294661;
+$sg-blue: #1a82e2;
+$slate: #294661;
 
 // colors - primary shades
-$sg-blue-80:          #489be8;
-$sg-blue-60:          #76b4ee;
-$sg-blue-40:          #a3cdf3;
-$sg-blue-20:          #d1e6f9;
-$sg-blue-10:          #e8f2fc;
-$sg-blue-05:          #f3f9fd;
-$sg-blue-02:          #fbfdff;
+$sg-blue-80: #489be8;
+$sg-blue-60: #76b4ee;
+$sg-blue-40: #a3cdf3;
+$sg-blue-20: #d1e6f9;
+$sg-blue-10: #e8f2fc;
+$sg-blue-05: #f3f9fd;
+$sg-blue-02: #fbfdff;
 
-$slate-80:            #546b81;
-$slate-60:            #7f90a0;
-$slate-40:            #a9b5c0;
-$slate-20:            #d4dadf;
-$slate-10:            #e9ecef;
-$slate-05:            #f4f6f7;
-$slate-02:            #fbfbfc;
+$slate-80: #546b81;
+$slate-60: #7f90a0;
+$slate-40: #a9b5c0;
+$slate-20: #d4dadf;
+$slate-10: #e9ecef;
+$slate-05: #f4f6f7;
+$slate-02: #fbfbfc;
 
 // colors - logo accents
-$logo-accent-light:   #99e1f4;
-$logo-accent-medium:  #00b3e3;
-$logo-accent-dark:    #009dd9;
+$logo-accent-light: #99e1f4;
+$logo-accent-medium: #00b3e3;
+$logo-accent-dark: #009dd9;
 
 // colors - charting
-$ron-burgundy:        #b71c1c;
-$burnt-orange:        #ff5722;
-$carrot:              #f90;
-$mango:               #fdd835;
-$mantis:              #18c96e;
-$spruce:              #4cb04f;
-$grass-stain:         #8ac24a;
-$lime:                #cbdb39;
-$cobalt:              #303f9f;
-$bluebird:            #2196f3;
-$seafoam:             #00bcd4;
-$caribbean:           #00e5ff;
-$crown:               #7b1fa2;
-$screample:           #7c4dff;
-$sangria:             #880e4f;
-$lavender:            #dea7e8;
-$wild-strawberry:     #ff4081;
-$steel:               #9e9e9e;
-$white:               #fff;
-$black:               #000;
+$ron-burgundy: #b71c1c;
+$burnt-orange: #ff5722;
+$carrot: #f90;
+$mango: #fdd835;
+$mantis: #18c96e;
+$spruce: #4cb04f;
+$grass-stain: #8ac24a;
+$lime: #cbdb39;
+$cobalt: #303f9f;
+$bluebird: #2196f3;
+$seafoam: #00bcd4;
+$caribbean: #00e5ff;
+$crown: #7b1fa2;
+$screample: #7c4dff;
+$sangria: #880e4f;
+$lavender: #dea7e8;
+$wild-strawberry: #ff4081;
+$steel: #9e9e9e;
+$white: #fff;
+$black: #000;
 
 // colors - highlight
-$color-highlighter:   rgba($mango, 0.6);
+$color-highlighter: rgba($mango, 0.6);
 
 // alerts
-$alert-success:       #f1f7e9;
-$alert-success-text:  #2e6b30;
-$alert-warning:       #fefae6;
-$alert-warning-text:  #8c6c15;
-$alert-danger:        #f4dddd;
-$alert-danger-text:   #b71c1c;
-$alert-verification:  $mantis;
-$alert-trial:         $slate;
+$alert-success: #f1f7e9;
+$alert-success-text: #2e6b30;
+$alert-warning: #fefae6;
+$alert-warning-text: #8c6c15;
+$alert-danger: #f4dddd;
+$alert-danger-text: #b71c1c;
+$alert-verification: $mantis;
+$alert-trial: $slate;
 
 // buttons
-$btn-primary-bg:                $sg-blue-80;
-$btn-primary-bg-hover:          $sg-blue;
-$btn-primary-border:            $sg-blue;
-$btn-primary-color:             $white;
-$btn-primary-badge-bg:          $white;
-$btn-primary-badge-color:       $sg-blue;
+$btn-primary-bg: $sg-blue-80;
+$btn-primary-bg-hover: $sg-blue;
+$btn-primary-border: $sg-blue;
+$btn-primary-color: $white;
+$btn-primary-badge-bg: $white;
+$btn-primary-badge-color: $sg-blue;
 
-$btn-secondary-bg:              $white;
-$btn-secondary-bg-hover:        $sg-blue-10;
-$btn-secondary-border:          $sg-blue-80;
-$btn-secondary-color:           $sg-blue;
-$btn-secondary-badge-bg:        $sg-blue;
-$btn-secondary-badge-color:     $white;
+$btn-secondary-bg: $white;
+$btn-secondary-bg-hover: $sg-blue-10;
+$btn-secondary-border: $sg-blue-80;
+$btn-secondary-color: $sg-blue;
+$btn-secondary-badge-bg: $sg-blue;
+$btn-secondary-badge-color: $white;
 
-$btn-danger-bg:                 rgba($ron-burgundy, 0.8);
-$btn-danger-bg-hover:           $ron-burgundy;
-$btn-danger-border:             $ron-burgundy;
-$btn-danger-color:              $white;
-$btn-danger-badge-bg:           $white;
-$btn-danger-badge-color:        $ron-burgundy;
+$btn-danger-bg: rgba($ron-burgundy, 0.8);
+$btn-danger-bg-hover: $ron-burgundy;
+$btn-danger-border: $ron-burgundy;
+$btn-danger-color: $white;
+$btn-danger-badge-bg: $white;
+$btn-danger-badge-color: $ron-burgundy;
 
-$btn-dark-bg:                   transparent;
-$btn-dark-bg-hover:             rgba($white, 0.1);
-$btn-dark-border:               rgba($white, 0.6);
-$btn-dark-color:                $white;
-$btn-dark-badge-bg:             $white;
-$btn-dark-badge-color:          $slate;
+$btn-dark-bg: transparent;
+$btn-dark-bg-hover: rgba($white, 0.1);
+$btn-dark-border: rgba($white, 0.6);
+$btn-dark-color: $white;
+$btn-dark-badge-bg: $white;
+$btn-dark-badge-color: $slate;
 
-$btn-disabled-bg:               $steel;
-$btn-disabled-border:           $steel;
-$btn-disabled-color:            $white;
-$btn-disabled-secondary-bg:     $white;
+$btn-disabled-bg: $steel;
+$btn-disabled-border: $steel;
+$btn-disabled-color: $white;
+$btn-disabled-secondary-bg: $white;
 $btn-disabled-secondary-border: $steel;
-$btn-disabled-secondary-color:  $steel;
+$btn-disabled-secondary-color: $steel;
 
-$btn-gear-color:                $slate-60;
-$btn-gear-primary-color:        $white;
+$btn-gear-color: $slate-60;
+$btn-gear-primary-color: $white;
 
-$btn-group-bg:                  $white;
-$btn-group-bg-hover:            rgba($sg-blue, 0.1);
-$btn-group-bg-active:           $sg-blue-80;
-$btn-group-border:              rgba($sg-blue, 0.8);
-$btn-group-border-active:       $sg-blue;
-$btn-group-color:               $sg-blue;
-$btn-group-color-active:        $white;
+$btn-group-bg: $white;
+$btn-group-bg-hover: rgba($sg-blue, 0.1);
+$btn-group-bg-active: $sg-blue-80;
+$btn-group-border: rgba($sg-blue, 0.8);
+$btn-group-border-active: $sg-blue;
+$btn-group-color: $sg-blue;
+$btn-group-color-active: $white;
 
-$btn-selectable-border:        $slate-20;
-$btn-selectable-border-hover:  $sg-blue-40;
+$btn-selectable-border: $slate-20;
+$btn-selectable-border-hover: $sg-blue-40;
 $btn-selectable-border-active: $sg-blue;
-$btn-selectable-color:         $slate-80;
+$btn-selectable-color: $slate-80;
 
 // center modals
-$center-modal-bg:       $white;
-$center-modal-width:    600px;
+$center-modal-bg: $white;
+$center-modal-width: 600px;
 $center-modal-position: -($center-modal-width / 2);
 
 // dropzones
-$dropzone-bg:             $slate-02;
-$dropzone-border:         $slate-20;
-$dropzone-bg-active:      $slate-05;
-$dropzone-border-active:  $slate-60;
-$dropzone-hovered-bg:     #e7f9f0;
+$dropzone-bg: $slate-02;
+$dropzone-border: $slate-20;
+$dropzone-bg-active: $slate-05;
+$dropzone-border-active: $slate-60;
+$dropzone-hovered-bg: #e7f9f0;
 $dropzone-hovered-border: $mantis;
 
 // filters
 $segment-term-max-width: 1279px;
 
 // icons
-$icon-airplane:          "\e90b";
-$icon-airplane-fill:     "\e912";
-$icon-align-center:      "\e927";
-$icon-align-left:        "\e928";
-$icon-align-right:       "\e929";
-$icon-analytics:         "\e915";
-$icon-automation:        "\e939";
-$icon-builder:           "\e914";
-$icon-button:            "\e920";
-$icon-calendar:          "\e917";
-$icon-caret:             "\e900";
-$icon-check:             "\e905";
-$icon-check-circle:      "\e907";
-$icon-check-thin:        "\e938";
-$icon-clean-ui:          "\e916";
-$icon-click:             "\e93b";
-$icon-clock:             "\e90d";
-$icon-code:              "\e919";
-$icon-columns:           "\e923";
-$icon-contacts:          "\e913";
-$icon-contacts-alt:      "\e92c";
-$icon-copy:              "\e902";
-$icon-create:            "\e901";
-$icon-csv:               "\e92a";
-$icon-desktop-view:      "\e627";
-$icon-divider:           "\e91a";
-$icon-drag:              "\e91b";
-$icon-editor-code:       "\e934";
-$icon-editor-design:     "\e935";
-$icon-editor-old:        "\e933";
-$icon-ellipsis:          "\e90e";
-$icon-export:            "\e931";
-$icon-gear:              "\e608";
-$icon-help:              "\e932";
-$icon-image:             "\e91e";
-$icon-images:            "\e924";
-$icon-image-text:        "\e922";
-$icon-info-circle:       "\e903";
-$icon-key:               "\e918";
-$icon-list:              "\e92b";
-$icon-locked:            "\e91d";
-$icon-mail:              "\e61d";
-$icon-mail-search:       "\e92d";
-$icon-mobile-view:       "\e61c";
-$icon-pencil:            "\e624";
-$icon-people:            "\e601";
-$icon-pie-chart:         "\e606";
-$icon-plus:              "\e617";
-$icon-reload:            "\e926";
-$icon-save-draft:        "\e911";
-$icon-search:            "\e906";
-$icon-segment:           "\e609";
-$icon-social:            "\e925";
-$icon-sort-asc:          "\e910";
-$icon-sort-desc:         "\e90f";
-$icon-spacer:            "\e91f";
-$icon-status-caution:    "\e92f";
-$icon-status-negative:   "\e930";
-$icon-status-positive:   "\e92e";
-$icon-teammate:          "\e90c";
-$icon-test-data:         "\e937";
-$icon-text:              "\e921";
-$icon-text-only:         "\e603";
-$icon-trash:             "\e62b";
-$icon-unlocked:          "\e91c";
-$icon-unsubscribe:       "\e936";
-$icon-user-security:     "\e90a";
-$icon-view:              "\e600";
-$icon-warning:           "\e909";
-$icon-warning-triangle:  "\e904";
-$icon-x:                 "\e908";
-$icon-x-legacy:          "\e62e";
+$icon-airplane: '\e90b';
+$icon-airplane-fill: '\e912';
+$icon-align-center: '\e927';
+$icon-align-left: '\e928';
+$icon-align-right: '\e929';
+$icon-analytics: '\e915';
+$icon-automation: '\e939';
+$icon-builder: '\e914';
+$icon-button: '\e920';
+$icon-calendar: '\e917';
+$icon-caret: '\e900';
+$icon-check: '\e905';
+$icon-check-circle: '\e907';
+$icon-check-thin: '\e938';
+$icon-clean-ui: '\e916';
+$icon-click: '\e93b';
+$icon-clock: '\e90d';
+$icon-code: '\e919';
+$icon-columns: '\e923';
+$icon-contacts: '\e913';
+$icon-contacts-alt: '\e92c';
+$icon-copy: '\e902';
+$icon-create: '\e901';
+$icon-csv: '\e92a';
+$icon-desktop-view: '\e627';
+$icon-divider: '\e91a';
+$icon-drag: '\e91b';
+$icon-editor-code: '\e934';
+$icon-editor-design: '\e935';
+$icon-editor-old: '\e933';
+$icon-ellipsis: '\e90e';
+$icon-export: '\e931';
+$icon-gear: '\e608';
+$icon-help: '\e932';
+$icon-image: '\e91e';
+$icon-images: '\e924';
+$icon-image-text: '\e922';
+$icon-info-circle: '\e903';
+$icon-key: '\e918';
+$icon-list: '\e92b';
+$icon-locked: '\e91d';
+$icon-mail: '\e61d';
+$icon-mail-search: '\e92d';
+$icon-mobile-view: '\e61c';
+$icon-pencil: '\e624';
+$icon-people: '\e601';
+$icon-pie-chart: '\e606';
+$icon-plus: '\e617';
+$icon-reload: '\e926';
+$icon-save-draft: '\e911';
+$icon-search: '\e906';
+$icon-segment: '\e609';
+$icon-social: '\e925';
+$icon-sort-asc: '\e910';
+$icon-sort-desc: '\e90f';
+$icon-spacer: '\e91f';
+$icon-status-caution: '\e92f';
+$icon-status-negative: '\e930';
+$icon-status-positive: '\e92e';
+$icon-teammate: '\e90c';
+$icon-test-data: '\e937';
+$icon-text: '\e921';
+$icon-text-only: '\e603';
+$icon-trash: '\e62b';
+$icon-unlocked: '\e91c';
+$icon-unsubscribe: '\e936';
+$icon-user-security: '\e90a';
+$icon-view: '\e600';
+$icon-warning: '\e909';
+$icon-warning-triangle: '\e904';
+$icon-x: '\e908';
+$icon-x-legacy: '\e62e';
 
 // loaders
-$loader-dark-light:        rgba($white, 0.35);
-$loader-dark-medium:       rgba($white, 0.75);
+$loader-dark-light: rgba($white, 0.35);
+$loader-dark-medium: rgba($white, 0.75);
 $loader-dark-medium-solid: rgba($white, 0.9);
-$loader-dark-solid:        $white;
+$loader-dark-solid: $white;
 
 // modals
-$modal-bg:            rgba($black, 0.5);
-$modal-width:         525px;
-$modal-height:        665px;
+$modal-bg: rgba($black, 0.5);
+$modal-width: 525px;
+$modal-height: 665px;
 $modal-footer-height: 71px;
-$modal-body-height:   $modal-height - $modal-footer-height;
-$modal-z-index:       20000;
-$side-modal-shadow:   -2px 0 6px rgba($slate, 0.1);
+$modal-body-height: $modal-height - $modal-footer-height;
+$modal-z-index: 20000;
+$side-modal-shadow: -2px 0 6px rgba($slate, 0.1);
 
 // selects
-$select-disabled-color:        rgba($steel, 0.4);
-$select2-disabled-border:      rgba($steel, 0.4);
+$select-disabled-color: rgba($steel, 0.4);
+$select2-disabled-border: rgba($steel, 0.4);
 $select2-disabled-placeholder: rgba($steel, 0.4);
-$select2-disabled-arrow:       rgba($steel, 0.4);
+$select2-disabled-arrow: rgba($steel, 0.4);
 
 // switches
 $switch-background-z-index: 10;
-$switch-selector-z-index:   11;
-$switch-option-z-index:     12;
+$switch-selector-z-index: 11;
+$switch-option-z-index: 12;
 
 // statistics tables
-$stats-delivered:     $grass-stain;
-$stats-opens:         $cobalt;
-$stats-unique-opens:  $bluebird;
-$stats-clicks:        $crown;
+$stats-delivered: $grass-stain;
+$stats-opens: $cobalt;
+$stats-unique-opens: $bluebird;
+$stats-clicks: $crown;
 $stats-unique-clicks: $screample;
-$stats-unsubscribes:  $sangria;
-$stats-spam-reports:  $ron-burgundy;
+$stats-unsubscribes: $sangria;
+$stats-spam-reports: $ron-burgundy;
 
 // tables
 $compare-border-color: $slate-10;
 
 // text inputs
 $text-input-disabled-border: rgba($steel, 0.4);
-$text-input-disabled-color:  rgba($steel, 0.4);
+$text-input-disabled-color: rgba($steel, 0.4);
 $text-input-search-title-bg: rgba($sg-blue, 0.1);
-$text-area-disabled-border:  rgba($steel, 0.4);
-$text-area-disabled-color:   rgba($steel, 0.4);
+$text-area-disabled-border: rgba($steel, 0.4);
+$text-area-disabled-color: rgba($steel, 0.4);
 
 // tooltips
-$tooltip-bg:             $slate;
-$tooltip-font-size:      12px;
-$tooltip-line-height:    18px;
-$tooltip-arrow-height:   6px;
+$tooltip-bg: $slate;
+$tooltip-font-size: 12px;
+$tooltip-line-height: 18px;
+$tooltip-arrow-height: 6px;
 
 // z-index
-$dropdown-menu-z-index:     1000;
-$spotlight-circle-z-index:  10000;
+$dropdown-menu-z-index: 1000;
+$spotlight-circle-z-index: 10000;
 $spotlight-tooltip-z-index: 10010;
 
-$info-popup-z-index:        19000;
-
+$info-popup-z-index: 19000;

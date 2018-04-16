@@ -34,7 +34,8 @@
     "react-helmet": "^5.2.0",
     "react-share": "^2.0.0",
     "react-twitter-widgets": "^1.7.1",
-    "rehype-react": "^3.0.2"
+    "rehype-react": "^3.0.2",
+    "stylelint-selector-bem-pattern": "^2.0.0"
   },
   "devDependencies": {
     "cli-glob": "^0.1.0",
@@ -53,7 +54,9 @@
     "stylelint-config-standard": "^18.0.0",
     "write-good": "^0.11.3"
   },
-  "keywords": ["gatsby"],
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
   "main": "n/a",
   "scripts": {
@@ -70,6 +73,8 @@
     "format:js": "prettier '**/*.{js,jsx}' --write"
   },
   "remarkConfig": {
-    "plugins": ["remark-preset-lint-recommended"]
+    "plugins": [
+      "remark-preset-lint-recommended"
+    ]
   }
 }
