@@ -64,7 +64,7 @@ Sender Policy Framework (SPF) is an email authentication standard developed by A
 CNAME
 {% endanchor %}
 
-The CNAME record creates an alias for subdomain.yourdomain.com and points to sendgrid.net. The CNAME is needed for our click and open tracking features in order for those statistics to be routed back to your SendGrid account. This will also be what your messages are signed by, so your recipients will be able see what you have chosen for your CNAME. You set up the CNAME files that SnedGrid provides with your DNS host. For more information about CNAME, see our [CNAME glossary page]({{root_url}}/Glossary/cname.html).
+The CNAME record creates an alias for subdomain.yourdomain.com and points to sendgrid.net. The CNAME is needed for our click and open tracking features in order for those statistics to be routed back to your SendGrid account. This will also be what your messages are signed by, so your recipients will be able see what you have chosen for your CNAME. You set up the CNAME files that SendGrid provides with your DNS host. For more information about CNAME, see our [CNAME glossary page]({{root_url}}/Glossary/cname.html).
 
 {% anchor h2 %}
 Setting up domain authentication
@@ -80,7 +80,7 @@ To set up domain authentication, you must submit the DNS records provided by Sen
 
 1. In the SendGrid UI, select [Settings > Sender Authentication](https://app.sendgrid.com/settings/whitelabel).
 1. In the domain authentication section, click **Get Started**.
-1. Next, add in information about your DNS host, and indicate whether you also want to set up link branding. Click **Next**. For more information about link branding, check out [What is link branding?]({{root_url}}/User_Guide/Settings/Sender_Authentication/How_to_set_up_link_branding.html#-What-is-link-branding).
+1. Next, add in information about your DNS host, and indicate whether you also want to set up link branding. Click **Next**. For more information about link branding, check out [What is link branding?]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_link_branding.html#-What-is-link-branding).
 1. Fill in the domain that you want to send from and add advanced settings as needed. Make sure that you only enter the name of your root domain. Do not include `www` or `http://www` in this field! Your domain needs to match the domain of your FROM address on the emails you are sending out. For example, if I am sending an email from `example@sendgrid.com`, I would set my domain authentication domain to be `sendgrid.com`. Click **Next**. For more information about advanced settings, see [Advanced settings](#-Advanced-settings).
 1. Next, you need to add all of the CNAME records on this screen to your DNS host. This process varies depending on your DNS host. For videos on how to add your CNAME to some popular DNS service providers, check out these [videos](https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/providers.html). If you don't have access to modify your companies DNS records, you can also email a request to a co-worker. This email includes a direct link to the CNAME records that the recipient of the email can access for 48 hours [DOUBLE CHECK]. The recipient doesn't need login access to your SendGrid account.
 
@@ -135,6 +135,39 @@ By assigning a domain whitelabel to one of your subusers, you can give them the 
 *To assign an authenticated domain to a subuser:*
 
 When you are in the process of authenticating a domain, and on the screen where you input domain settings, open the advanced settings, select **Assign to a subuser**, and select a subuser to assign to that domain.
+
+{% anchor h2 %}
+Troubleshooting
+{% endanchor %}
+
+{% anchor h3 %}
+Domain authentication application logic
+{% endanchor %}
+
+Assigning authenticated domains in email headers takes some care and consideration. SendGrid takes care of this process so that you don’t have to worry about it, but you should know how it works.
+
+{% info %}
+If SendGrid cannot match your email to a valid authenticated domain, `SendGrid.net` is used.
+{% endinfo %}
+
+For any account, SendGrid attaches authenticated domain information in the following order, starting at the top of the list and applying the domain when the criteria are matched:
+
+<ol>
+  <li>Valid authenticated domain that matches the domain in the FROM address.</li>
+  <li>Valid default authenticated domain.</li>
+</ol>
+
+<em>If no valid whitelabels can be found, we will default to sendgrid.net.</em>
+
+For subusers, SendGrid will attach valid whitelabel information in the following order, starting at the top of the list and applying the whitelabel when the criteria are matched:
+
+<ol>
+  <li>Valid whitelabel <strong>for this subuser</strong> that matches the domain in the FROM address.</li>
+  <li>Valid default whitelabel <strong>for this subuser</strong>.</li>
+  <li>Valid whitelabel assigned by the parent account to this subuser.</li>
+</ol>
+
+<em>If no valid whitelabels can be found, we always default to sendgrid.net.</em>
 
 {% anchor h2 %}
 Migrating from legacy Whitelabel

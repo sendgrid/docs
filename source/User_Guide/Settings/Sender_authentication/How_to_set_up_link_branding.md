@@ -10,19 +10,17 @@ navigation:
   show: true
 ---
 
-- [What is domain authentication?](#-What-is-domain-authentication)
+- [What is link branding?](#-What-is-link-branding)
 - [Key terminology](#-Key terminology)
     - [DNS](#-DNS)
     - [DKIM](#-DKIM)
     - [SPF](#-SPF)
     - [CNAME](#-CNAME)
-- [Setting up domain authentication](#-Setting-up-domain-authentication)
+- [Setting up link branding](#-Setting-up-link-branding)
     - [Before you begin](#-Before-you-begin)
     - [Setting up DNS](#-Setting-up-DNS)
 - [Advanced settings](#-Advanced-settings)
-    - [Using automated security](#-Using-automated-security)
     - [Using a custom return path](#-Using-a-custom-return-path)
-    - [Using a custom DKIM selector](#-Using-a-custom-DKIM-selector)
     - [Assigning a subuser](#-Assigning-a-subuser)
 - [Troubleshooting](#-Troubleshooting)
 - [Migrating from legacy Whitelabel](#-Migrating-from-legacy-Whitelabel)
@@ -63,7 +61,7 @@ Sender Policy Framework (SPF) is an email authentication standard developed by A
 CNAME
 {% endanchor %}
 
-The CNAME record creates an alias for subdomain.yourdomain.com and points to sendgrid.net. The CNAME is needed for our click and open tracking features in order for those statistics to be routed back to your SendGrid account. This will also be what your messages are signed by, so your recipients will be able see what you have chosen for your CNAME. You set up the CNAME files that SnedGrid provides with your DNS host. For more information about CNAME, see our [CNAME glossary page]({{root_url}}/Glossary/cname.html).
+The CNAME record creates an alias for subdomain.yourdomain.com and points to sendgrid.net. The CNAME is needed for our click and open tracking features in order for those statistics to be routed back to your SendGrid account. This will also be what your messages are signed by, so your recipients will be able see what you have chosen for your CNAME. You set up the CNAME files that SendGrid provides with your DNS host. For more information about CNAME, see our [CNAME glossary page]({{root_url}}/Glossary/cname.html).
 
 {% anchor h3 %}
 Before you begin
