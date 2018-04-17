@@ -2,12 +2,12 @@
 layout: page
 weight: 0
 title: How to set up link branding
-seo:
-  title: How to set up link branding
-  description: Email link branding allows all of the click-tracked links and opens tracked images in your emails to be from your domain instead of from sendgrid.net.
-  keywords: whitelabeling, domain whitelabeling, link branding
 navigation:
   show: true
+seo:
+  title: How to set up link branding
+  override: true
+  description: Set up link branding to improve your deliverability and security of your emails.
 ---
 
 <iframe src="https://player.vimeo.com/video/265136044" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>

@@ -2,12 +2,12 @@
 layout: page
 weight: 0
 title: How to set up reverse DNS
-seo:
-  title: How to set up reverse DNS
-  description: Whitelabel IPs to control your email sending reputation.
-  keywords: ip whitelabel, whitelabel IPs
 navigation:
   show: true
+seo:
+  title: How to set up reverse DNS
+  override: true
+  description: Set up reverse DNS to improve your deliverability and security of your emails.
 ---
 
 <iframe src="https://player.vimeo.com/video/149816616" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
