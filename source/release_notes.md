@@ -36,7 +36,18 @@ The following new features and changes to the service are available.
 {% endanchor %}
 
 {% anchor h3 %}
-Whitelabel has a new and improved process
+Whitelabel has a new name!
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>To clarify authentication at SendGrid, we are updating the names of Whitelabel! A whitelabel is now generally called sender authentication. A domain whitelabel is now called domain authentication. A link whitelabel is now called link branding. An IP Whitelabel is now called reverse DNS.</td>
+  </tr>
+</table>
+
+{% anchor h3 %}
+Whitelabel has a new name!
 {% endanchor %}
 
 <table class="table" style="width: 100%;">
@@ -50,17 +61,6 @@ For more information on the new process for sender authentication, check out our
 
 - [How to set up domain authentication]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html)
 - [How to set up link branding]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_link_branding.html)
-
-{% anchor h3 %}
-Whitelabel has a new name!
-{% endanchor %}
-
-<table class="table" style="width: 100%;">
-  <tr>
-    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
-    <td>To clarify authentication at SendGrid, we are updating the names of Whitelabel! A whitelabel is now generally called sender authentication. A domain whitelabel is now called domain authentication. A link whitelabel is now called link branding. An IP Whitelabel is now called reverse DNS.</td>
-  </tr>
-</table>
 
 {% anchor h2 %}
 9 April 2018
