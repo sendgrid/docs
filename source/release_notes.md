@@ -47,7 +47,7 @@ Whitelabel has a new name!
 </table>
 
 {% anchor h3 %}
-Whitelabel has a new and improved process
+Whitelabel has a new name!
 {% endanchor %}
 
 <table class="table" style="width: 100%;">
