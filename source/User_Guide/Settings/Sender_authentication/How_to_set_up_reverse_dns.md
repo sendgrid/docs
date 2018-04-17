@@ -7,7 +7,7 @@ seo:
   description: Whitelabel IPs to control your email sending reputation.
   keywords: ip whitelabel, whitelabel IPs
 navigation:
-  show: true
+  show: false
 ---
 
 <iframe src="https://player.vimeo.com/video/149816616" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
