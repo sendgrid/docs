@@ -119,3 +119,11 @@ Using the API
 {% endanchor %}
 
 [Manage your IP whitelabel via our v3 API]({{root_url}}/API_Reference/Web_API_v3/Whitelabel/ips.html)
+
+{% anchor h2 %}
+Additional resources
+{% endanchor %}
+
+- [How to set up link branding]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_link_branding.html)
+- [How to set up domain authentication]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html)
+- [Troubleshooting]({{root_url}}/User_Guide/Settings/Sender_authentication/Troubleshooting.html)
