@@ -2,13 +2,14 @@
 layout: page
 weight: 0
 title: Troubleshooting
+navigation:
+  show: true
 seo:
   title: Troubleshooting
-  description: Do your DNS files not validate? Are you getting a weird error? Here are common troubleshooting tips.
-  keywords: whitelabeling, domain whitelabeling, domain authentication, troubleshooting
-navigation:
-  show: false
+  override: true
+  description: Troubleshoot your sender authentication.
 ---
+
 - [My DNS records aren't validating](#-My-DNS-records-arent-validating)
     - [Allow your DNS records to propagate](#-Allow-your-DNS-records-to-propagate)
     - [Auto appending](#-Auto-appending)
