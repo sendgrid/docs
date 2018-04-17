@@ -7,7 +7,7 @@ seo:
   description: Do your DNS files not validate? Are you getting a weird error? Here are common troubleshooting tips.
   keywords: whitelabeling, domain whitelabeling, domain authentication, troubleshooting
 navigation:
-  show: true
+  show: false
 ---
 - [My DNS records aren't validating](#-My-DNS-records-arent-validating)
     - [Allow your DNS records to propagate](#-Allow-your-DNS-records-to-propagate)
