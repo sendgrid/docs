@@ -42,7 +42,7 @@ Whitelabel has a new name!
 <table class="table" style="width: 100%;">
   <tr>
     <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
-    <td>To clarify complex functionality, SendGrid is upgrading the name of Whitelabel! A whitelabel is now generally called sender authentication. A domain whitelabel is now called domain authentication. A link whitelabel is now called link branding. An IP Whitelabel is now called reverse DNS.</td>
+    <td>To clarify authentication at SendGrid, we are updating the names of Whitelabel! A whitelabel is now generally called sender authentication. A domain whitelabel is now called domain authentication. A link whitelabel is now called link branding. An IP Whitelabel is now called reverse DNS.</td>
   </tr>
 </table>
 
@@ -53,11 +53,12 @@ Whitelabel has a new and improved process
 <table class="table" style="width: 100%;">
   <tr>
     <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
-    <td>SendGrid’s new sender authentication simplifies the process for senders to demonstrate domain ownership through multiple authentication methods to recipient mailbox providers in order to improve their email delivery. This launch includes improvements to the set up flow and a more accurate name for the functionality.</td>
+    <td>An update to the UI  SendGrid’s whitelabel has become sender authentication, which simplifies the process for senders to demonstrate domain ownership through multiple authentication methods to recipient mailbox providers in order to improve their email delivery. This launch includes improvements to the set up flow and a more accurate name for the functionality. All pending and verified whitelabels can be found under sender authentication.</td>
   </tr>
 </table>
 
 For more information on the new process for sender authentication:
+
 - [How to set up domain authentication]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html)
 - [How to set up link branding]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_link_branding.html)
 
