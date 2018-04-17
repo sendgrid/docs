@@ -9,6 +9,7 @@ seo:
 navigation:
   show: true
 ---
+<iframe src="https://player.vimeo.com/video/265066856" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 <iframe src="https://player.vimeo.com/video/265066856" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 

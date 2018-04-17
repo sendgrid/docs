@@ -9,6 +9,7 @@ seo:
 navigation:
   show: true
 ---
+<iframe src="https://player.vimeo.com/video/265136044" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 - [What is link branding?](#-What-is-link-branding)
 - [Key terminology](#-Key terminology)
@@ -124,3 +125,4 @@ Additional resources
 - [How to set up domain authentication]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html)
 - [How to set up reverse DNS]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_reverse_dns.html)
 - [Troubleshooting]({{root_url}}/User_Guide/Settings/Sender_authentication/Troubleshooting.html)
+
