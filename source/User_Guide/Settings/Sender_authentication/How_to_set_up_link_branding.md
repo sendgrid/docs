@@ -7,7 +7,7 @@ seo:
   description: Email link branding allows all of the click-tracked links and opens tracked images in your emails to be from your domain instead of from sendgrid.net.
   keywords: whitelabeling, domain whitelabeling, link branding
 navigation:
-  show: true
+  show: false
 ---
 
 <iframe src="https://player.vimeo.com/video/265136044" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
