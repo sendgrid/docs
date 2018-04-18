@@ -132,7 +132,6 @@ In addition to viewing the email activity associated with your account by recipi
 * Subject Line
 * Template ID
 * Template Name
-* Unique Arguments
 
 *To use advanced search:*
 
