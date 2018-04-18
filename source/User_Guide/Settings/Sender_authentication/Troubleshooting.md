@@ -188,8 +188,6 @@ IPs
   </tr>
 </table>
 
-![]({{root_url}}/images/terminaldigcname.png)
-
 You can also use the [DNSLookup](http://mxtoolbox.com/DNSLookup.aspx) tool provided by MxToolbox: enter the record you would like to check, and hit enter.
 
 If you can successfully verify your DNS changes manually, but it won't validate in the tool, contact [Support](https://support.sendgrid.com/hc/en-us), and we can help you investigate.
