@@ -80,6 +80,11 @@ Send your email using the API
 
 _To Send an email using the SendGrid API:_
 
+copy this curl example into you favorite text editor and replace blah blah and add your API key
+
+note about try it out functionality to explore more. 
+
+
 1. Navigate to the [SendGrid API Documentation](https://sendgrid.api-docs.io/v3.0/mail-send/v3-mail-send). 
 2. Click **Try it out**. 
 3. Copy your API key and paste it in the **Your_API_Key** field. 
@@ -99,6 +104,8 @@ Your cURL call should look something like this:
 8. Hit **Enter**.
 9. Check the inbox of the address you specified as the "to" email and see your message!
 
+Note: if you haven't set up Sender Authentication (link to docs) or other security measures it might end up in your spam folder.
+
 {% anchor h3 %}
 API Response messages
 {% endanchor %}
@@ -108,3 +115,9 @@ All responses are returned in JSON format. We specify this by sending the ``Cont
 {% anchor h2 %}
 Next Steps
 {% endanchor %}
+
+API reference
+Whitelabel
+Templates/MC editors
+
+Remove API getting started stuff in the classroom and merge into this document. 
