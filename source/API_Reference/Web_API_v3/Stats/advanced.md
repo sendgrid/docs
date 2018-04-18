@@ -6,10 +6,6 @@ navigation:
   show: true
 ---
 
-{% info %}
-We store 7 days of email activity in our database and the default is 500 items returned per request via these API endpoints.
-{% endinfo %}
-
 Advanced Stats provide a more in-depth view of your statistics and the actions of the recipients segmented by geography, browser type, and more. You can read more about them in the [Statistics]({{root_url}}/User_Guide/Statistics/index.html) section of our User Guide.
 
 {% anchor h2 %}

@@ -1,7 +1,5 @@
 User-agent: *
 Disallow: /docs/User_Guide/Settings/taxes_and_tax_exempt.html
-Disallow /docs/User_Guide/Settings/Whitelabel/How_to_set_up_domain_authentication.html
-Disallow /docs/User_Guide/Settings/Whitelabel/How_to_set_up_link_branding.html
 Disallow /docs/User_Guide/Transactional_Templates/Using_handlebars.html
 Disallow /docs/User_Guide/Transactional_Templates/migrating_from_legacy_templates.html
 Disallow /docs/User_Guide/Transactional_Templates/how_to_send_an_email_with_dynamic_transactional_templates.html
