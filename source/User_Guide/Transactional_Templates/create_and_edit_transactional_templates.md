@@ -114,9 +114,9 @@ Duplicate a Template
 *To duplicate a template:*
 
 1. Navigate to the template you wish to use and select the action menu.
-1. Select **Duplicate**.  
+1. Select **Add Version**.  
 
-This creates a clone, giving it a name that includes the original version name, the word “copy,” and today’s date. This duplicate version will not be active until you activate it.
+This creates a clone, giving it a name that starts with "untitled". You can give the template a unique name by selecting the action menu next to that version and clicking **Edit**. Once the editor has opened, enter a unique name in the *Template Name* field. This duplicate version will not be active until you activate it.
 
 
 {% anchor h2 %}
