@@ -32,13 +32,7 @@ Creating a template
 
 1. Open the transactional templates page and click **Create Template**.
 1. Add a unique template name in the dialogue box and then click **Save**. 
-
-![](/images/templates_create_edit_2.png "Template Name")
-
 1. Open the **Actions** dropdown menu to create a new version.
-
-![](/images/templates_create_edit_4.png "Create Template Version")
-
 1. Click **Add Version**. 
 <br></br>The editor opens. From here, you can change the subject and the body of your email template.
 
@@ -71,14 +65,8 @@ SendGrid suggests previewing and testing your template once you have created it 
  
 1. Select **Preview**.  <br></br>A window pops out with a preview of the email that you’re going to test, with the option to view the template formatted for both mobile and desktop platforms.
 
-![](/images/template_engine_12.png "Preview option")
-
 1. Click **Send Test** to send a test email using your new template. 
 1. Fill in the *recipient* and *subject line* fields and then click **Send**.  
-
-![](/images/templates_create_edit_8.png "Preview and Test")
-
-![](/images/templates_create_edit_9.png "Send Test")
 
 Any Substitution tags will not be populated in this test, but you will be able to confirm the layout and format of your template.
 
@@ -87,8 +75,6 @@ Managing templates
 {% endanchor %}
 
 From the main template view on each template group, you will see an actions menu. From this menu, you can choose to edit the name of your template, add a version, preview and test, or delete the template. You will also see a gear icon for each template version. Clicking this presents a menu that allows you to preview and test, edit, duplicate, and delete the template version. You can also use the preview function to send a test.
-
-![]({{root_url}}/images/templates_manage_4.png)
 
 {% info %}
 To delete a template, you must first delete all the versions of your template.
