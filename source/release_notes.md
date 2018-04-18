@@ -32,6 +32,52 @@ The following new features and changes to the service are available.
 </table>
 
 {% anchor h2 %}
+17 April 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Whitelabel has a new name!
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>To clarify authentication at SendGrid, we are updating the names of Whitelabel! A whitelabel is now generally called sender authentication. A domain whitelabel is now called domain authentication. A link whitelabel is now called link branding. An IP Whitelabel is now called reverse DNS.</td>
+  </tr>
+</table>
+
+{% anchor h3 %}
+Whitelabel has a new name!
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>An update to the UI SendGrid’s whitelabel has become sender authentication, which simplifies the process for senders to demonstrate domain ownership through multiple authentication methods to recipient mailbox providers in order to improve their email delivery. This launch includes improvements to the set up flow and a more accurate name for the functionality. All pending and verified whitelabels can be found under sender authentication.</td>
+  </tr>
+</table>
+
+For more information on the new process for sender authentication, check out our how to docs:
+
+- [How to set up domain authentication]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html)
+- [How to set up link branding]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_link_branding.html)
+
+{% anchor h2 %}
+9 April 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Truncating fields that go over max field character limits
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ><img src="{{root_url}}/images/code_icon.png" alt="An update to the API" width="100" height="100"></td>
+  <td>This change applies to contacts added by uploading a CSV in the UI or when using the <code>POST /contactdb/lists/{list_id}/recipients/{recipient_id}</code> Add a Single Recipient to a List method. When adding or updating the <code>first_name</code> and <code>last_name</code> fields, SendGrid automatically truncates any field that exceeds the maximum character limit to ensure that the field is valid. Non-unicode characters are still not valid.</td>
+  </tr>
+</table>
+
+{% anchor h2 %}
 29 March 2018
 {% endanchor %}
 
