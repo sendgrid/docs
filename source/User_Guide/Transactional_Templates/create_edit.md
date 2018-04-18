@@ -8,10 +8,13 @@ navigation:
   show: true
 ---
 
-- [Create a template](#-Create-a-template)
+- [Creating a template](#-Create-a-template)
 - [Editing your HTML template](#-Editing-your-HTML-template)
 - [Preview and test your template](#-Preview-and-test-your-template)
-- [Activate your template](#-Activate-your-template)
+- [Managing templates](#-Managing-templates)
+  - [Activate your template](#-Activate-your-template)
+  - [Duplicate a template](#-Duplicate-a-template)
+- [Adding unsubscribe links to a template](#-Adding-unsubscribe-links-to-a-template)
 
 Creating email templates involves a mix of content writing, HTML, and CSS expertise. Email templates should look good on different email clients and be responsive for mobile devices. Many non-technical customers will hire a front-end or email template developer to build their templates. We also suggest testing your templates with rendering applications like [Litmus](http://litmus.com) before sending them to your customers.
 
@@ -24,7 +27,7 @@ Transactional templates are account and subuser specific. Templates created on a
 {% endinfo %}
 
 {% anchor h2 %}
-Create a template
+Creating a template
 {% endanchor h2 %}
 
 1. Open the transactional templates page and click **Create Template**.
@@ -80,6 +83,18 @@ SendGrid suggests previewing and testing your template once you have created it 
 Any Substitution tags will not be populated in this test, but you will be able to confirm the layout and format of your template.
 
 {% anchor h2 %}
+Managing templates
+{% endanchor %}
+
+From the main template view on each template group, you will see an actions menu. From this menu, you can choose to edit the name of your template, add a version, preview and test, or delete the template. You will also see a gear icon for each template version. Clicking this presents a menu that allows you to preview and test, edit, duplicate, and delete the template version. You can also use the preview function to send a test.
+
+![]({{root_url}}/images/templates_manage_4.png)
+
+{% info %}
+To delete a template, you must first delete all the versions of your template.
+{% endinfo %}
+
+{% anchor h3 %}
 Activate your template
 {% endanchor h2 %}
 
@@ -89,12 +104,10 @@ Activate your template
 1. Select **Make Active**.  
 
 {% info %}
-
 A template can only have one active version at a time. If you’ve created a new version with different HTML that you want your customers to start receiving, you’ll need to make that version “Active.”
-
 {% endinfo %}
 
-{% anchor h2 %}
+{% anchor h3 %}
 Duplicate a Template
 {% endanchor h2 %}
 
@@ -107,7 +120,7 @@ This creates a clone, giving it a name that includes the original version name, 
 
 
 {% anchor h2 %}
-Unsubscribe Substitution Tags
+Adding unsubscribe links to a template
 {% endanchor h2 %}
 
 You can use [substitution tags]({{root_url}}/API_Reference/SMTP_API/substitution_tags.html) to add links to your email to allow recipients to unsubscribe from only these emails, from all of your emails, and to manage their unsubscribe settings for your emails.
