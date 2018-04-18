@@ -18,7 +18,7 @@ seo:
 - [Activate your template](#-Activate-your-template)
 
 {% info %}
-There is currently a limit of 300 templates and 300 versions that may be created per account.
+The maximum number of transactional templates and versions per user ID is limited to 300. This means you can have 300 templates with 1 version each, or fewer templates with more versions of each template. 
 {% endinfo %}
 
 {% info %}

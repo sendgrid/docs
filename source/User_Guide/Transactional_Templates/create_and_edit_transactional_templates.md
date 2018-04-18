@@ -19,7 +19,7 @@ navigation:
 Creating email templates involves a mix of content writing, HTML, and CSS expertise. Email templates should look good on different email clients and be responsive for mobile devices. Many non-technical customers will hire a front-end or email template developer to build their templates. We also suggest testing your templates with rendering applications like [Litmus](http://litmus.com) before sending them to your customers.
 
 {% info %}
-There is currently a limit of 300 templates and 300 versions that may be created per account.
+The maximum number of transactional templates and versions per user ID is limited to 300. This means you can have 300 templates with 1 version each, or fewer templates with more versions of each template. 
 {% endinfo %}
 
 {% info %}
