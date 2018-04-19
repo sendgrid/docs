@@ -32,27 +32,26 @@ Return Path's Brand Monitor is one, and Agari is another.
 
 *To set up DMARC:*
 
-1. Deploy DKIM & SPF by Whitelabeling your SendGrid IP.
-2. Ensure proper DKIM and SPF signing for your Whitelabel domain.
+1. Deploy DKIM & SPF by setting up reverse DNS on your SendGrid IP.
+2. Ensure proper DKIM and SPF signing for your authenticated domain.
 3. Publish a DMARC record with your DNS registrar, then monitor the results.
 4. Analyze the feedback you receive, and adjust your mail streams as needed.
 5. Escalate your DMARC policy tags from 'p=none' to 'p=quarantine' to 'p=reject' as you gain experience. 
 
 
-## 1. Deploy DKIM & SPF by Whitelabeling your SendGrid IP
+## 1. Deploy DKIM & SPF by setting up reverse DNS for you SendGrid IP
 
-Start by completing the Whitelabel process for your account. This ensures that emails sent through your SendGrid account will be properly signed using DKIM and SPF for your unique domain.  
-For more information on completing this process, visit the documentation:   
-http://sendgrid.com/docs/User\_Guide/whitelabel\_wizard.html
+Start by completing reverse DNS for your SendGrid IP. This ensures that emails sent through your SendGrid account will be properly signed using DKIM and SPF for your unique domain.  
+For more information on reverse DNS, 
 
-## 2. Ensure proper DKIM and SPF signing for your Whitelabel domain
+## 2. Ensure proper DKIM and SPF signing for your authenticated domain
 
-Send yourself some test emails if you're unsure of this step. You're looking to verify that the DKIM and SPF signatures in your email headers align to the domain you've Whitelabeled your SendGrid account with. ![](https://lh4.googleusercontent.com/kjZ6aO15x8UB3TcHG6X6N3G78rm601i7L6knyLCxw2Ujg4lFNpbG_5DrNK1wHYB6cZ27sIFb87q3rF8wx3xitTJxWQAdtOHqkAlS8CdyoIydj3gKY9w)  
+Send yourself some test emails if you're unsure of this step. You're looking to verify that the DKIM and SPF signatures in your email headers align to your authenticated domain. ![](https://lh4.googleusercontent.com/kjZ6aO15x8UB3TcHG6X6N3G78rm601i7L6knyLCxw2Ujg4lFNpbG_5DrNK1wHYB6cZ27sIFb87q3rF8wx3xitTJxWQAdtOHqkAlS8CdyoIydj3gKY9w)  
 As long as both are passing, you’re in business!
 
 ## 3. Publish a DMARC record with your DNS registrar, then monitor the results
 
-Within your DNS registrar, you'll need to create a TXT resource record that receivers can use to determine your DMARC preferences. This is done within the DNS registrar of the domain host, likely the same place you created the DNS records for the Whitelabel. This record is made at the root level for the domain, not the subdomain.
+Within your DNS registrar, you'll need to create a TXT resource record that receivers can use to determine your DMARC preferences. This is done within the DNS registrar of the domain host, likely the same place you created the DNS records while authenticating it. This record is made at the root level for the domain, not the subdomain.
 
 ![](https://lh6.googleusercontent.com/d9Cpjrw0_rW_s9KuXTYdfQNISzwOTFTunaDbkHU5frW7se-a3nsEkR2MkTIBGdUF8i6IhOCF88jLF0zGrjajwy2iIxcTdJ6ptxX4avQLsXYeThW_MhI)
 
