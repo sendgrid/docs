@@ -52,20 +52,17 @@ Send your email using the API
 
 _To Send an email using the SendGrid API:_
 
-1. Copy the following curl example:
-
-{% codeblock lang:bash %} 
+{% codeblock %}
 curl --request POST \
-  --url https://api.sendgrid.com/v3/mail/send \
-  --header 'authorization: Bearer <<YOUR_API_KEY>>' \
-  --header 'content-type: application/json' \
-  --data '{"personalizations":[{"to":[{"email":"john.doe@example.com","name":"John Doe"}],"subject":"Hello, World!"}],"from":{"email":"sam.smith@example.com","name":"Sam Smith"},
-  "reply_to":{"email":"sam.smith@example.com","name":"Sam Smith"}}' 
- {% endcodeblock %}
+--url https://api.sendgrid.com/v3/mail/send \
+--header 'authorization: Bearer <<YOUR_API_KEY>>' \
+--header 'content-type: application/json' \
+--data '{"personalizations":[{"to":[{"email":"john.doe@example.com","name":"John Doe"}],"subject":"Hello, World!"}],"from":{"email":"sam.smith@example.com","name":"Sam Smith"},"reply_to":{"email":"sam.smith@example.com","name":"Sam Smith"}}'{% endcodeblock %}
 
+1. Copy the curl example above.
 2. Paste the curl call into your favorite text editor. 
 3. Copy your API key and paste it in the authorization header. 
-4. In the data section, specify the "to", "from", and "reply to" names and email addresses as well as the subject.
+4. In the data section, specify the "to", "from", and "reply to" names and email addresses and enter a subject.
 5. Copy the code and paste it in your terminal. 
 6. Hit **Enter**.
 7. Check the inbox of the address you specified as the "to" email and see your message!
@@ -84,8 +81,8 @@ All responses are returned in JSON format. We specify this by sending the ``Cont
 Next Steps
 {% endanchor %}
 
-API reference
-Whitelabel
-Templates/MC editors
+For more information on SendGrid and where you can go from here, check out these pages:
 
-Remove API getting started stuff in the classroom and merge into this document. 
+- [API Reference]({{root_url}}/API_Reference/api_v3.html)
+- [Sender Authentication]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html)
+- [How to Send Email]({{root_url}}/User_Guide/Marketing_Campaigns/getting_started.html)
