@@ -48,7 +48,7 @@ If you have used a template that generated very bad feedback from recipients, th
 Sending IP Reputation
 {% endanchor %}
 
-As you are aware, the IP should be clean, properly warmed up and whitelabeled for your sending domain. Again, it is highly recommended not to mix marketing with transactional messages, as marketing messages generally trigger a higher spam report rate.
+As you are aware, the IP should be clean, properly warmed up, with reverse DNS set up. Again, it is highly recommended not to mix marketing with transactional messages, as marketing messages generally trigger a higher spam report rate.
 
 {% anchor h2 %}
 Frequency and User Engagement
@@ -57,18 +57,18 @@ Frequency and User Engagement
 ISPs will always check how your recipients react to your messages (click, open, delete, mark them as spam). If you are sending too many messages to a recipient, then this may be a factor causing bad feedback from the recipient and the messages will go to spam. On the other hand, if a recipient opens messages in a timely manner and engages with them, it can lead to better future delivery! 
 
 {% anchor h2 %}
-Whitelabeling
+Sender authentication
 {% endanchor %}
 
 In order to show the ISPs that you are the sender and that you meant to send these messages, the authentication needs to be properly done.
 
-The sending domain needs to be [whitelabeled]({{root_url}}/User_Guide/Settings/Whitelabel/index.html) (so that the SPF and DKIM pass). We highly recommend whitelabeling all of the links that you include in your email - as mentioned above, these links should be on your own domain and they shouldn't be blacklisted.
+The sending domain needs to be [authenticated]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html) (so that the SPF and DKIM pass). We highly recommend branding the links that you include in your email - as mentioned above, these links should be on your own domain and they shouldn't be blacklisted.
 
-If the above guidelines are met (the sending domain matches the whitelabeled domain; the authentication is properly handled, the content is relevant and not using spam triggering words, and the IP is clean and warmed-up) then your messages should start going to inbox.
+If the above guidelines are met (the sending domain matches the authenticated domain; the authentication is properly handled, the content is relevant and not using spam triggering words, and the IP is clean and warmed-up) then your messages should start going to inbox.
 
 This does not happen overnight, however. It usually takes ISPs up to 30 days to change/assign a reputation for the sending IP or a new domain, and up to 12 months to change the reputation of a domain that they know to have bad sending practices.
 
-Afterwards, you'll want to whitelabel your dedicated IPs and separate your marketing email from your transactional email by using the following format when whitelabeling your sending domains:
+Afterwards, you'll want to set up reverse DNS on your dedicated IPs and separate your marketing email from your transactional email by using the following format when authenticating your sending domains:
 
 `em.marketing.domain.com` and `em.transactional.domain.com` and use `email@marketing.domain.com` in the from domain rather than the root domain.
 
