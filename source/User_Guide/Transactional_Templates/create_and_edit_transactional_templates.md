@@ -1,8 +1,10 @@
 ---
-title: Create and Edit Templates
+title: Create and Edit Transactional Templates
 seo:
   title: Create and Edit Templates
-weight: 10
+  description: Transactional email templates are pre-coded email layouts that anyone can use to easily create and send transactional emails.
+  keywords: transactional email templates, email template, create templates
+weight: 80
 layout: page
 navigation:
   show: true
@@ -30,9 +32,9 @@ Transactional templates are account and subuser specific. Templates created on a
 Creating a template
 {% endanchor h2 %}
 
-1. Open the transactional templates page and click **Create Template**.
+1. Open the transactional templates page and then click **Create Template**.
 1. Add a unique template name in the dialogue box and then click **Save**. 
-1. Open the **Actions** dropdown menu to create a new version.
+1. Open the **Actions** drop-down menu to create a new version.
 1. Click **Add Version**. 
 <br></br>The editor opens. From here, you can change the subject and the body of your email template.
 
@@ -43,7 +45,7 @@ Editing your HTML template
 {% endanchor h2 %}
 
 {% info %}
-Email templates are table-based HTML with inline or header styles, because some well-known email applications will only read table-based HTML.
+Email templates are table-based HTML with inline or header styles, because some well known email applications will only read table-based HTML.
 {% endinfo %}
 
 *To add a template:*
@@ -51,7 +53,7 @@ Email templates are table-based HTML with inline or header styles, because some 
 1. Open a new template in the Code Editor or [Design Editor]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html) by clicking **Actions** and selecting **New Version**. 
 
 1. If you selected the Code Editor, copy and paste your HTML code into the code editor. 
-<br></br>If you paste in an email template, it is likely that you will overwrite the default and very basic email HTML that is provided in the code editor. If you selected the Design Editor, use the WYSIWYG editor with drag & drop modules to create your email template. 
+<br></br>If you paste in an email template, it is likely that you will overwrite the default basic HTML provided in the code editor. If you selected the Design Editor, use the WYSIWYG editor with drag & drop modules to create your email template. 
 
 1. When you’re done editing, click **Save**. <br></br>Please double check that the content is formatted correctly before you send an email using this template.
 
@@ -102,7 +104,7 @@ Duplicate a Template
 1. Navigate to the template you wish to use and select the action menu.
 1. Select **Add Version**.  
 
-This creates a clone, giving it a name that starts with "untitled". You can give the template a unique name by selecting the action menu next to that version and clicking **Edit**. Once the editor has opened, enter a unique name in the *Template Name* field. This duplicate version will not be active until you activate it.
+The app creates a clone, giving it a name that starts with "untitled". You can give the template a unique name by selecting the action menu next to that version and clicking **Edit**. Once the editor has opened, enter a unique name in the *Template Name* field. This duplicate version will not be active until you activate it.
 
 
 {% anchor h2 %}
@@ -125,19 +127,19 @@ You can find your group IDs by looking at the Group ID column in the [Unsubscrib
 Unsubscribe From This List
 {% endanchor h3 %}
 
-When you add the ```<%asm_group_unsubscribe_url%>``` tag to your email, we will replace that tag with the text "Unsubscribe From This List," wherever the tag is found in your email. This link will allow your recipients to unsubscribe from the [unsubscribe group]({{root_url}}/User_Guide/Suppressions/group_unsubscribes.html) that you attached to this email.
+When you add the ```<%asm_group_unsubscribe_url%>``` tag to your email, we will replace that tag with the text "Unsubscribe From This List," in your email. This link allows your recipients to unsubscribe from the [unsubscribe group]({{root_url}}/User_Guide/Suppressions/group_unsubscribes.html) that you attached to this email.
 
 {% anchor h3 %}
 Unsubscribe From All Emails
 {% endanchor h3 %}
 
-When you add the ```<%asm_global_unsubscribe_url%>``` tag to your email, we will replace that tag with the text "Unsubscribe From All Emails," wherever the tag is found in your email. This will allow your recipient to be [globally unsubscribed]({{root_url}}/User_Guide/Suppressions/global_unsubscribes.html) from all of your emails.
+When you add the ```<%asm_global_unsubscribe_url%>``` tag to your email, we will replace that tag with the text "Unsubscribe From All Emails," in your email. This allows your recipient to be [globally unsubscribed]({{root_url}}/User_Guide/Suppressions/global_unsubscribes.html) from all of your emails.
 
 {% anchor h3 %}
 Manage Email Preferences
 {% endanchor h3 %}
 
-When you add the ```<%asm_preferences_url%>``` tag to your email, we will replace that tag with the text "Manage Email Preferences," wherever the tag is found in your email. This will allow your recipients to see your Unsubscribe Groups in a [Subscription Preference page]({{root_url}}/User_Guide/Suppressions/recipient_subscription_preferences.html) and then choose which groups they are interested in.
+When you add the ```<%asm_preferences_url%>``` tag to your email, we will replace that tag with the text "Manage Email Preferences," in your email. This allows your recipients to see your Unsubscribe Groups in a [Subscription Preference page]({{root_url}}/User_Guide/Suppressions/recipient_subscription_preferences.html) and then choose which groups they are interested in.
 
 {% anchor h2 %}
 Additional Resources

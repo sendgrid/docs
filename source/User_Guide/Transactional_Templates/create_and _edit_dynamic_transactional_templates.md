@@ -7,7 +7,8 @@ navigation:
 seo:
   title: Create and edit Dynamic Transactional Templates
   override: true
-  description: 
+  description: Transactional email templates are pre-coded email layouts that anyone can use to easily create and send transactional emails.
+  keywords: transactional email templates, email template, template engine
 ---
 
 - [Create a template](#-Create-a-template)
