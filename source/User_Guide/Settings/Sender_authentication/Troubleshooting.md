@@ -17,6 +17,7 @@ seo:
     - [DNS record duplication](#-DNS-record-duplication)
     - [Manually validating records](#-Manually-validating-records)
 - [Where is my domain hosted?](#-Where-is-my-domain-hosted)
+- [Can I authenticate multiple domains?]()
 - [Domain authentication application logic](#-Domain-authentication-application-logic)
 
 {% anchor h2 %}
@@ -61,6 +62,16 @@ DNS record duplication
 {% endanchor %}
 
 Some DNS providers don't automatically prevent you from duplicating a DNS file. For example, there might be an MX and TEXT record where you are trying to set up a CNAME file. If your DNS files aren't validating, check to make sure there are no other DNS records that could be a duplication.
+
+{% anchor h3 %}
+My DNS doesn't accept underscores
+{% endanchor %}
+
+SendGrid requires underscores for sender authentication, but some DNS providers do not support underscores in zone file entries.
+
+If your provider does not allow you to use underscores in zone files, consider changing your DNS hosting provider if you want to take advantage of the Whitelabel feature.
+
+You can also disable automated security - this allows you to set up TXT and CX records that don't have underscores. For more information about setting up automated security, see [Using automated security]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html#-Using-automated-security).
 
 {% anchor h3 %}
 Manually validating records
@@ -177,8 +188,6 @@ IPs
   </tr>
 </table>
 
-![]({{root_url}}/images/terminaldigcname.png)
-
 You can also use the [DNSLookup](http://mxtoolbox.com/DNSLookup.aspx) tool provided by MxToolbox: enter the record you would like to check, and hit enter.
 
 If you can successfully verify your DNS changes manually, but it won't validate in the tool, contact [Support](https://support.sendgrid.com/hc/en-us), and we can help you investigate.
@@ -192,6 +201,12 @@ If you aren't sure what DNS provider hosts your domain use this command to find 
 {% codeblock %}
 dig <<your_domain.com>> ns
 {% endcodeblock %}
+
+{% anchor h2 %}
+Can I authenticate multiple domains?
+{% endanchor %}
+
+Yes, it’s possible to authenticate multiple domains. When multiple authenticated domains exist on your account, SendGrid will use the from address for each email you send through SendGrid and match it to a domain and branded link. If the from address does not match an existing authenticated domain, SendGrid will fall back to the domain you have chosen as the default.
 
 {% anchor h2 %}
 Domain authentication application logic

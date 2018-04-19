@@ -121,6 +121,12 @@ Using the API
 [Manage your IP whitelabel via our v3 API]({{root_url}}/API_Reference/Web_API_v3/Whitelabel/ips.html)
 
 {% anchor h2 %}
+What do I do if I have more than 10 IPs
+{% endanchor %}
+
+There is a character limit in SPF records that means that if you have more than 10 IP addresses, they will not fit in the record. When this is true, we will provide you with the generic SendGrid SPF record which includes all IPs at SendGrid, not just yours. If you would like to secure your SPF record to only include your IPs, you can chain multiple SPF records together manually. For more information see Open SPF’s website.
+
+{% anchor h2 %}
 Additional resources
 {% endanchor %}
 

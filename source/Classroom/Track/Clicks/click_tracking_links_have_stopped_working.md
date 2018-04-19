@@ -36,8 +36,6 @@ To check if your CNAME record is up to date, simply use the Unix command **dig**
 
 The command should look like: **dig cname sub.domain.tld,** where "sub.domain.tld" will be the subdomain and top level domain you used in the validation step of the Whitelabel Wizard, usually _email.yourdomain.com_, or _em.yourdomain.com_.
 
-![]({{root_url}}/images/terminaldigcname.png)
-
 If this is set up correctly, you should see **sendgrid.net** in the _answer_ section. If you do not see that, please contact your IT staff, hosting provider, or whomever controls your domain's DNS settings to see if the record has been published correctly. 
 
 
