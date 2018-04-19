@@ -36,7 +36,7 @@ The following new features and changes to the service are available.
 {% endanchor %}
 
 {% anchor h3 %}
-Whitelabel has a new name!
+Whitelabel is becoming Sender Authentication!
 {% endanchor %}
 
 <table class="table" style="width: 100%;">
@@ -47,7 +47,7 @@ Whitelabel has a new name!
 </table>
 
 {% anchor h3 %}
-Whitelabel has a new name!
+Improved Sender Authentication Process (formerly "Whitelabel")
 {% endanchor %}
 
 <table class="table" style="width: 100%;">
