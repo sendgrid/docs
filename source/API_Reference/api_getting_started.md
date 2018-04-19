@@ -4,7 +4,7 @@ seo:
   description: Sending your first email using the SendGrid REST API.
   keywords: Getting Started, API, v3, REST, SendGrid REST API
 title: Getting Started with the SendGrid API
-weight: 90
+weight: 100
 layout: page
 navigation:
   show: true
@@ -45,45 +45,27 @@ Your API call must have the following components:
 * An [Authorization Header](https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-authentication#authorization-header)
 * An [API Key]({{root_url}}/User_Guide/Settings/api_keys.html) within the Authorization Header
 * A Request. When submitting data to a resource via POST or PUT, you must submit your payload in JSON.
-
-<table class="table" style="table-layout:fixed">
-  <tr>
-    <th>Verb</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>GET</td>
-    <td>Retrieve a resource or group of resources</td>
-  </tr>
-  <tr>
-    <td>POST</td>
-    <td>Create a new resource</td>
-  </tr>
-  <tr>
-    <td>PUT</td>
-    <td>Update an existing resource</td>
-  </tr>
-  <tr>
-    <td>DELETE</td>
-    <td>Delete an existing resource</td>
-  </tr>
-  <tr>
-    <td>OPTIONS</td>
-    <td>View allowed verbs against a specific resource</td>
-  </tr>
-</table>
-
-
+ 
 {% anchor h3 %}
 Send your email using the API
 {% endanchor %}
 
 _To Send an email using the SendGrid API:_
 
+1. Copy the following curl example:
+
+{% codeblock lang:bash %} curl --request POST 
+--url https://api.sendgrid.com/v3/mail/send 
+--header 'Authorization: Bearer YOUR_API_KEY' 
+--header 'Content-Type: application/json' 
+--data '{"personalizations": [{"to": [{"email": "example@example.com"}]}],"from": {"email": "example@example.com"},"subject": "Hello, World!","content": [{"type": "text/plain", "value": "Heya!"}]}' {% endcodeblock %}
+
+2. Paste the curl call into your favorite text editor and enter your API Key.
+3. Add a  
+
 copy this curl example into you favorite text editor and replace blah blah and add your API key
 
 note about try it out functionality to explore more. 
-
 
 1. Navigate to the [SendGrid API Documentation](https://sendgrid.api-docs.io/v3.0/mail-send/v3-mail-send). 
 2. Click **Try it out**. 
