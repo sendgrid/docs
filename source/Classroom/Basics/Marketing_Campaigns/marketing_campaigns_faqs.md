@@ -158,7 +158,7 @@ Campaigns & Campaign Editor
 How come I can't select a sender ID in the campaign editor after creating it?
 {% endanchor %}
 
-Make sure that you have verified the sender ID you are trying to select. You can only select a verified sender ID when sending a campaign. You can resend a sender ID verification email from the sender ID's details page. Any sender you create using a domain you have already [whitelabeled]({{root_url}}/Classroom/Basics/Whitelabel/index.html) will automatically be verified.
+Make sure that you have verified the sender ID you are trying to select. You can only select a verified sender ID when sending a campaign. You can resend a sender ID verification email from the sender ID's details page. Any sender you create using a domain you have already [authenticated]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html) will automatically be verified.
 
 ![]({{root_url}}/images/mc_faq_4.gif)
 
