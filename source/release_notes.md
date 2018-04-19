@@ -53,7 +53,7 @@ Improved Sender Authentication Process (formerly "Whitelabel")
 <table class="table" style="width: 100%;">
   <tr>
     <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
-    <td>An update to the UI SendGrid’s whitelabel has become sender authentication, which simplifies the process for senders to demonstrate domain ownership through multiple authentication methods to recipient mailbox providers in order to improve their email delivery. This launch includes improvements to the set up flow and a more accurate name for the functionality. All pending and verified whitelabels can be found under sender authentication.</td>
+    <td>SendGrid’s whitelabel has become sender authentication, which simplifies the process for senders to demonstrate domain ownership through multiple authentication methods to recipient mailbox providers in order to improve their email delivery. This launch includes improvements to the set up flow and a more accurate name for the functionality. All pending and verified whitelabels can be found under sender authentication.</td>
   </tr>
 </table>
 
