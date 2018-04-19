@@ -16,11 +16,9 @@ navigation:
 
 Sender Policy Framework (SPF) is an open standard aimed at preventing sender address forgery. This article describes how SPF is configured for use with SendGrid.
 
-##SPF and Whitelabel
+##SPF and sender authentication
 
-As part of the whitelabel process you must create a subdomain (such as _email.yourdomain.com_) which is used for click and open tracking as well as in the Return-Path email header. SPF uses the domain value in the Return-Path header for the DNS lookup to determine the permitted senders for the domain. 
-
-If you have an SPF record set for your domain (i.e. yourdomain_.com_) already, you must add a unique alphanumeric string before the _all_ mechanism of this record in order to authenticate mailings through your SendGrid account. If you do not have an existing SPF record for your domain, you must create a TXT record with the value provided to you during the whitelabel creation process. Each SendGrid account gets a unique SPF TXT record to authenticate their outbound mailings. An example of such a record is:
+If you have an SPF record set for your domain (i.e. yourdomain_.com_) already, you must add a unique alphanumeric string before the _all_ mechanism of this record in order to authenticate mailings through your SendGrid account. If you do not have an existing SPF record for your domain, you must create a TXT record with the value provided to you during the domain authentication creation process. Each SendGrid account gets a unique SPF TXT record to authenticate their outbound mailings. An example of such a record is:
 
 >v=spf1 include:u123456.wl.sendgrid.net -all
 
