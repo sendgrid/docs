@@ -1,31 +1,27 @@
-import React, { Component } from "react";
-import Link from "gatsby-link";
-import UserLinks from "../UserLinks/UserLinks";
-import "./Footer.css";
+import React, { Component } from 'react';
+import Link from 'gatsby-link';
+import './Footer.scss';
 
 class Footer extends Component {
   render() {
-    const { config } = this.props;
-    const url = config.siteRss;
-    const copyright = config.copyright;
-    if (!copyright) {
-      return null;
-    }
     return (
       <footer className="footer">
-        <UserLinks config={config} labeled />
-        <div className="notice-container">
-          <h4>{copyright}</h4>
-
-          <Link to={url}>
-            <button>Subscribe</button>
-          </Link>
-          <h4>
-            Based on{" "}
-            <a href="https://github.com/Vagr9K/gatsby-advanced-starter">
-              Gatsby Advanced Starter
-            </a>.
-          </h4>
+        <div className="container-lg footer-container">
+          <div className="footer-col">
+            <div className="footer_header">Solutions</div>
+          </div>
+          <div className="footer-col">
+            <div className="footer_header">SendGrid is For</div>
+          </div>
+          <div className="footer-col">
+            <div className="footer_header">Support</div>
+          </div>
+          <div className="footer-col">
+            <div className="footer_header">Community</div>
+          </div>
+          <div className="footer-col">
+            <div className="footer_header">Company</div>
+          </div>
         </div>
       </footer>
     );

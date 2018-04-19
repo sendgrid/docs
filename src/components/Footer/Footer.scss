@@ -1,0 +1,16 @@
+@import '../../scss/global/variables';
+
+.footer {
+  background: $slate;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 20px;
+}
+
+.footer-col {
+  color: #fff;
+}
+

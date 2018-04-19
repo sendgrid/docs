@@ -1,16 +1,19 @@
-import React, { Component } from 'react'
-import Link from 'gatsby-link'
-import './NavMain.scss'
+import React, { Component } from 'react';
+import Link from 'gatsby-link';
+import './NavMain.scss';
 
 class NavMain extends Component {
-  state = { showMenu: false }
+  constructor(props) {
+    super(props);
+    this.state = { showMenu: false };
+  }
 
   toggleMenu() {
-    this.setState({ showMenu: !this.state.showMenu })
+    this.setState({ showMenu: !this.state.showMenu });
   }
 
   render() {
-    const menuState = this.state.showMenu ? 'in' : ''
+    const menuState = this.state.showMenu ? 'in' : '';
 
     return (
       <div>
@@ -31,7 +34,7 @@ class NavMain extends Component {
                 className={`nav-main__toggle js-menu-toggle ${menuState}`}
                 onClick={this.toggleMenu.bind(this)}
               >
-                <span class="nav-main__menu" />
+                <span className="nav-main__menu" />
               </button>
 
               <div className={`nav-main__mobile ${menuState}`}>
@@ -69,8 +72,8 @@ class NavMain extends Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default NavMain
+export default NavMain;

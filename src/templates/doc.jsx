@@ -12,8 +12,8 @@ import PageAnchor from '../componentsMarkdown/PageAnchor'
 const renderAst = new rehypeReact({
   createElement: React.createElement,
   components: {
-    // 'call-out': Callout,
-    // 'page-anchor': PageAnchor,
+    'call-out': Callout,
+    'page-anchor': PageAnchor,
   },
 }).Compiler
 
