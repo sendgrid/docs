@@ -54,39 +54,25 @@ _To Send an email using the SendGrid API:_
 
 1. Copy the following curl example:
 
-{% codeblock lang:bash %} curl --request POST 
---url https://api.sendgrid.com/v3/mail/send 
---header 'Authorization: Bearer YOUR_API_KEY' 
---header 'Content-Type: application/json' 
---data '{"personalizations": [{"to": [{"email": "example@example.com"}]}],"from": {"email": "example@example.com"},"subject": "Hello, World!","content": [{"type": "text/plain", "value": "Heya!"}]}' {% endcodeblock %}
+{% codeblock lang:bash %} 
+curl --request POST \
+  --url https://api.sendgrid.com/v3/mail/send \
+  --header 'authorization: Bearer <<YOUR_API_KEY>>' \
+  --header 'content-type: application/json' \
+  --data '{"personalizations":[{"to":[{"email":"john.doe@example.com","name":"John Doe"}],"subject":"Hello, World!"}],"from":{"email":"sam.smith@example.com","name":"Sam Smith"},
+  "reply_to":{"email":"sam.smith@example.com","name":"Sam Smith"}}' 
+ {% endcodeblock %}
 
-2. Paste the curl call into your favorite text editor and enter your API Key.
-3. Add a  
+2. Paste the curl call into your favorite text editor. 
+3. Copy your API key and paste it in the authorization header. 
+4. In the data section, specify the "to", "from", and "reply to" names and email addresses as well as the subject.
+5. Copy the code and paste it in your terminal. 
+6. Hit **Enter**.
+7. Check the inbox of the address you specified as the "to" email and see your message!
 
-copy this curl example into you favorite text editor and replace blah blah and add your API key
-
-note about try it out functionality to explore more. 
-
-1. Navigate to the [SendGrid API Documentation](https://sendgrid.api-docs.io/v3.0/mail-send/v3-mail-send). 
-2. Click **Try it out**. 
-3. Copy your API key and paste it in the **Your_API_Key** field. 
-4. In the **Request Body**, specify the "to", "from", and "reply to" names and email addresses.
-5. Scroll down and expand the Code Generation module.
-6. Select **cURL**. 
-7. Copy the code and paste it in your terminal. 
-
-Your cURL call should look something like this:
-
-{% codeblock lang:bash %} curl --request POST 
---url https://api.sendgrid.com/v3/mail/send 
---header 'Authorization: Bearer YOUR_API_KEY' 
---header 'Content-Type: application/json' 
---data '{"personalizations": [{"to": [{"email": "example@example.com"}]}],"from": {"email": "example@example.com"},"subject": "Hello, World!","content": [{"type": "text/plain", "value": "Heya!"}]}' {% endcodeblock %}
-
-8. Hit **Enter**.
-9. Check the inbox of the address you specified as the "to" email and see your message!
-
-Note: if you haven't set up Sender Authentication (link to docs) or other security measures it might end up in your spam folder.
+{% info %}
+If you have not yet set up [Sender Authentication]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html) in your account, you may need to check your spam folder for the email you just sent. 
+{% endinfo %}
 
 {% anchor h3 %}
 API Response messages
