@@ -12,10 +12,8 @@ navigation:
 Sender Policy Framework (SPF) is an email authentication standard developed by AOL that compares the email sender’s actual IP address to a list of IP addresses authorized to send mail from that domain. The IP list is published in the domain’s DNS record.
 
 {% anchor h2 %}
-SPF and Whitelabel
+SPF and sender authentication
 {% endanchor %}
-
-As part of the [whitelabel]({{root_url}}/User_Guide/Setting_Up_Your_Server/Whitelabeling/index.html) process you must create a subdomain (such as em.example.com) which is used for [click and open tracking]({{root_url}}/User_Guide/Delivery_Metrics/email_activity.html) as well as in the Return-Path email header. SPF uses the domain value in the Return-Path header for the DNS lookup to determine the permitted senders for the domain.
 
 If you have an SPF record set for your root domain (i.e. yourdomain.com), you must add {% codeblock %}include:sendgrid.net{% endcodeblock %} before the all mechanism of this record. If you do not have an SPF record for your domain you must create a TXT record with the value:
 
@@ -62,7 +60,7 @@ v=spf1 a mx include:_spf.google.com include:spf.protection.outlook.com ip4:12.34
 
 If you wish to add multiple ip4 lookups (if you have an account that sends from multiple dedicated IPs, for example), simply add them into your record separated by spaces. Unlike with include:hostname lookups, a SPF1 record can have any number of ip4 includes.
 
-Please note, the validation step in the [Whitelabel Wizard]({{root_url}}/User_Guide/Setting_Up_Your_Server/Whitelabeling/whitelabel_wizard.html) will not recognize the ip4 mechanism, it will only accept {% codeblock %}include:sendgrid.net{% endcodeblock %}
+Please note, the validation step in the setting up domain authentication will not recognize the ip4 mechanism, it will only accept {% codeblock %}include:sendgrid.net{% endcodeblock %}
 
 For more information on SPF best practices and syntax, check out [www.openspf.org](http://www.openspf.org)
 
