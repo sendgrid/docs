@@ -38,7 +38,7 @@ When you add the `<%asm_group_unsubscribe_url%>` tag to your email, we will repl
 
 Alternatively, you can use the `<%asm_group_unsubscribe_raw_url%>` tag which will be replaced with only the group unsubscribe URL without the hyperlinked text "Unsubscribe From This List".
 
-For more substitution tags, please see our [transactional templates]({{root_url}}/User_Guide/Transactional_Templates/create_edit.html#-Unsubscribe-Substitution-Tags).
+For more substitution tags, please see our [transactional templates]({{root_url}}/User_Guide/Transactional_Templates/create_and_edit_transactional_templates.html#-Adding-unsubscribe-links-to-a-template).
 
 {% anchor h2 %}
 Using the API

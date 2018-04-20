@@ -4,8 +4,8 @@ st:
   type: User_Guide
 seo:
   title: DNS Providers
-  description: Find Whitelabel help specific to your DNS Provider...
-  keywords: whitelabel, dns, provider, spf, dkim, dmarc, godaddy, hover 
+  description: Here are guides for setting up sender authentication with specific DNS providers
+  keywords: whitelabel, dns, provider, spf, dkim, dmarc, godaddy, hover, sender authentication
 title: DNS Providers
 weight: 0
 layout: page

@@ -181,7 +181,7 @@ Redirect 301 /Apps/return_path_seedlist.html https://sendgrid.com/docs/User_Guid
 Redirect 301 /Apps/sendwithus.html https://sendgrid.com/docs/User_Guide/Settings/partners.html
 Redirect 301 /Apps/spam_checker.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
 Redirect 301 /Apps/subscription_tracking.html https://sendgrid.com/docs/User_Guide/Settings/tracking.html
-Redirect 301 /Apps/template_engine.html https://sendgrid.com/docs/User_Guide/Transactional_Templates/index.html
+Redirect 301 /Apps/template_engine.html https://sendgrid.com/docs/User_Guide/Transactional_Templates/create_and_edit_transactional_templates.html
 
 #######
 #
@@ -564,7 +564,7 @@ Redirect 301 /User_Guide/Apps/bypass_list_management.html https://sendgrid.com/d
 Redirect 301 /User_Guide/Apps/click_tracking.html https://sendgrid.com/docs/User_Guide/Settings/tracking.html#-Click-tracking
 Redirect 301 /User_Guide/Apps/dkim.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 Redirect 301 /User_Guide/Apps/domain_keys.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
-Redirect 301 /User_Guide/Apps/email_templates.html https://sendgrid.com/docs/User_Guide/Transactional_Templates/index.html
+Redirect 301 /User_Guide/Apps/email_templates.html https://sendgrid.com/docs/User_Guide/Transactional_Templates/create_and_edit_transactional_templates.html
 Redirect 301 /User_Guide/Apps/event_notification.html https://sendgrid.com/docs/User_Guide/Settings/mail.html#-Event-Notification
 Redirect 301 /User_Guide/Apps/footer.html https://sendgrid.com/docs/User_Guide/Settings/mail.html#-Footer
 Redirect 301 /User_Guide/Apps/forward_spam.html https://sendgrid.com/docs/User_Guide/Settings/mail.html#-Forward-Spam
@@ -576,7 +576,7 @@ Redirect 301 /User_Guide/Apps/sendwithus.html https://sendgrid.com/docs/User_Gui
 Redirect 301 /User_Guide/Apps/spam_checker.html https://sendgrid.com/docs/User_Guide/Settings/mail.html#-Spam-Checker
 Redirect 301 /User_Guide/Apps/subscription_tracking.html https://sendgrid.com/docs/User_Guide/Settings/tracking.html#-Subscription-Tracking
 #merged this "App" with the new Template Engine Docs
-Redirect 301 /User_Guide/Apps/template_engine.html https://sendgrid.com/docs/User_Guide/Transactional_Templates/index.html
+Redirect 301 /User_Guide/Apps/template_engine.html https://sendgrid.com/docs/User_Guide/Transactional_Templates/create_and_edit_transactional_templates.html
 Redirect 301 /User_Guide/attachments.html https://sendgrid.com/docs/Classroom/Build/attachments.html
 Redirect 301 /User_Guide/billing.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
 Redirect 301 /User_Guide/clicktracking_ssl.html https://sendgrid.com/docs/Classroom/Build/content_delivery_networks.html#-Using-Fastly
@@ -651,7 +651,7 @@ Redirect 301 /User_Guide/smtp_ports.html https://sendgrid.com/docs/User_Guide/Se
 Redirect 301 /User_Guide/template_engine_setup.html https://sendgrid.com/docs/User_Guide/Transactional_Email/Template_Engine/setup_guide.html
 Redirect 301 /User_Guide/throttling.html https://sendgrid.com/docs/Glossary/throttling.html
 Redirect 301 /User_Guide/two_factor_authentication.html https://sendgrid.com/docs/User_Guide/Settings/two_factor_authentication.html
-Redirect 301 /User_Guide/Transactional_Email/Template_Engine/setup_guide.html https://sendgrid.com/docs/User_Guide/Transactional_Templates/index.html
+Redirect 301 /User_Guide/Transactional_Email/Template_Engine/setup_guide.html https://sendgrid.com/docs/User_Guide/Transactional_Templates/create_and_edit_transactional_templates.html
 Redirect 301 /User_Guide/warming_up.html https://sendgrid.com/docs/Classroom/Deliver/warming_up_ips.html
 Redirect 301 /User_Guide/whitelabel_wizard.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 Redirect 301 /User_Guide/Settings/multifactor_authentication.html https://sendgrid.com/docs/User_Guide/Settings/two_factor_authentication.html
@@ -672,7 +672,7 @@ Redirect 301 /User_Guide/Marketing_Campaigns/beta_editors.html https://sendgrid.
 Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/analytics.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html
 Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/create_manage.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html
 Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/dashboard.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/overview.html
-Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/index.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/index.html
+Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/index.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
 Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/recipients.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html
 Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/sender_address.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/senders.html
 Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/tags.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html
@@ -701,9 +701,9 @@ Redirect 301 /API_Reference/Web_API_v3/Template_Engine/index.html http://sendgri
 Redirect 301 /API_Reference/Web_API_v3/Template_Engine/smtpapi.html http://sendgrid.com/docs/API_Reference/Web_API_v3/Transactional_Templates/smtpapi.html
 Redirect 301 /API_Reference/Web_API_v3/Template_Engine/templates.html http://sendgrid.com/docs/API_Reference/Web_API_v3/Transactional_Templates/templates.html
 Redirect 301 /API_Reference/Web_API_v3/Template_Engine/versions.html http://sendgrid.com/docs/API_Reference/Web_API_v3/Transactional_Templates/versions.html
-Redirect 301 /User_Guide/Templates/index.html http://sendgrid.com/docs/User_Guide/Transactional_Templates/index.html
-Redirect 301 /User_Guide/Templates/create_edit.html http://sendgrid.com/docs/User_Guide/Transactional_Templates/create_edit.html
-Redirect 301 /User_Guide/Templates/manage.html http://sendgrid.com/docs/User_Guide/Transactional_Templates/manage.html
+Redirect 301 /User_Guide/Templates/index.html https://sendgrid.com/docs/User_Guide/Transactional_Templates/create_and_edit_transactional_templates.html
+Redirect 301 /User_Guide/Templates/create_edit.html http://sendgrid.com/docs/User_Guide/Transactional_Templates/create_and_edit_transactional_templates.html
+Redirect 301 /User_Guide/Templates/manage.html http://sendgrid.com/docs/User_Guide/Transactional_Templates/create_and_edit_transactional_templates.html
 
 #######
 #
@@ -736,11 +736,12 @@ Redirect 301 /VidGrid/Marketing_Emails/Review_and_Schedule/split_testing.html ht
 Redirect 301 /VidGrid/Marketing_Emails/Setup/overview.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/index.html
 Redirect 301 /VidGrid/Subuser/create_subuser.html https://sendgrid.com/docs/User_Guide/Settings/Subusers/index.html
 Redirect 301 /VidGrid/Subuser/create_subuser_whitelabel.html https://sendgrid.com/docs/User_Guide/Settings/Subusers/settings.html
-Redirect 301 /VidGrid/template_engine.html https://sendgrid.com/docs/User_Guide/Transactional_Templates/index.html
-Redirect 301 /VidGrid/Template_Engine/template_engine.html https://sendgrid.com/docs/User_Guide/Transactional_Templates/index.html
+Redirect 301 /VidGrid/template_engine.html https://sendgrid.com/docs/User_Guide/Transactional_Templates/create_and_edit_transactional_templates.html
+Redirect 301 /VidGrid/Template_Engine/template_engine.html https://sendgrid.com/docs/User_Guide/Transactional_Templates/create_and_edit_transactional_templates.html
 Redirect 301 /VidGrid/Tools/index.html https://sendgrid.com/docs/Utilities/index.html
 Redirect 301 /VidGrid/Whitelabel/whitelabel.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 Redirect 301 /VidGrid/whitelabel.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
+Redirect 301 /VidGrid/Marketing_Emails/Review_and_Schedule/index.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/a_b_testing.html
 
 #######
 #
@@ -766,25 +767,28 @@ Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/sender_add
 Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/tags.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html
 Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/unsubscribes.html https://sendgrid.com/docs/User_Guide/Suppressions/index.html
 Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/index.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/faq.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/faq.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/migration_checklist.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/migration_checklist.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/index.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Migration_Tutorials/index.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_recipient_lists.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Migration_Tutorials/migrating_recipient_lists.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_unsubscribes.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Migration_Tutorials/migrating_unsubscribes.html
-Redriect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_images.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Migration_Tutorials/migrating_images.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/downloading_historical_statistics.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Migration_Tutorials/downloading_historical_statistics.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/api_migration.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Migration_Tutorials/api_migration.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/Migrating_API.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Migration_Tutorials/Migrating_API.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/index.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Side_by_Side_Comparisons/index.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/campaign_building.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Side_by_Side_Comparisons/campaign_building.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/contact_management.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Side_by_Side_Comparisons/contact_management.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/statistics_reporting.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Side_by_Side_Comparisons/statistics_reporting.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/pricing.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Side_by_Side_Comparisons/pricing.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/api_comparison.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Side_by_Side_Comparisons/api_comparison.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/security_compliance.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Side_by_Side_Comparisons/security_compliance.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_content.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/Migration_Tutorials/migrating_content.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/letter_from_our_CPO.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/letter_from_our_CPO.html
-
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/faq.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/migration_checklist.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/index.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_recipient_lists.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_unsubscribes.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
+Redriect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_images.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/downloading_historical_statistics.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/api_migration.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/Migrating_API.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/index.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/campaign_building.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/contact_management.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/statistics_reporting.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/pricing.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/api_comparison.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/security_compliance.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_content.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/letter_from_our_CPO.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
+Redirect 301 /Classroom/Basics/Marketing_Campaigns/migrating_content.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
+Redirect 301 /Classroom/Basics/Marketing_Campaigns/migrating_images.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
+Redirect 301 /Classroom/Basics/Marketing_Campaigns/migrating_lists.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
+Redirect 301 /Classroom/Basics/Marketing_Campaigns/migrating_unsubscribes.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
 
 #######
 #
@@ -979,6 +983,21 @@ Redirect 301 /User_Guide/email_activity_beta.html https://sendgrid.com/docs/User
 
 #######
 #
+# Release Notes
+#
+#######
+
+Redirect 301 /Release_Notes/release_notes.html https://sendgrid.com/docs/release_notes.html
+
+# Transactional templates
+#
+#######
+
+Redirect 301 /User_Guide/Transactional_Templates/manage.html http://sendgrid.com/docs/User_Guide/Transactional_Templates/create_and_edit_transactional_templates.html
+Redirect 301 /User_Guide/Transactional_Templates/index.html https://sendgrid.com/docs/User_Guide/Transactional_Templates/create_and_edit_transactional_templates.html
+
+#######
+#
 # Whitelabel
 #
 #######
@@ -988,3 +1007,21 @@ Redirect 301 /User_Guide/Settings/Whitelabel/links.html https://sendgrid.com/doc
 Redirect 301 /User_Guide/Settings/Whitelabel/domains.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
 Redirect 301 /User_Guide/Settings/Whitelabel/overview.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
 Redirect 301 /User_Guide/Settings/Sender_Authentication/How_to_set_up_domain_authentication.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
+Redirect 301 /User_Guide/Settings/Whitelabel/index.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
+Redirect 301 /User_Guide/Settings/Sender_Authentication/How_to_set_up_domain_authentication.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
+Redirect 301 /Classroom/Troubleshooting/Authentication/whitelabel_video_tutorials.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
+Redirect 301 /Classroom/Troubleshooting/Authentication/upgrading_your_whitelabel.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
+Redirect 301 /Classroom/Troubleshooting/Authentication/i_have_created_dns_records_but_the_whitelabel_wizard_is_not_validating_them.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/Troubleshooting.html
+Redirect 301 /Classroom/Troubleshooting/Authentication/dns_records_and_underscores.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/Troubleshooting.html
+Redirect 301 /Classroom/Deliver/Sender_Authentication/what_is_automated_security_in_the_whitelabel_settings.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
+Redirect 301 /Classroom/Deliver/Delivery_Introduction/creating_and_whitelabeling_a_subuser_to_a_new_sending_domain.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
+Redirect 301 /Classroom/Deliver/Delivery_Introduction/all_you_need_to_know_about_whitelabeling.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
+Redirect 301 /Classroom/Basics/Email_Infrastructure/everything_about_dmarc.html https://sendgrid.com/docs/Glossary/dmarc.html
+Redirect 301 /Classroom/Basics/Whitelabel/whitelabel_vs_whitelist.html https://sendgrid.com/docs/Glossary/whitelabel.html
+Redirect 301 /Classroom/Basics/Whitelabel/subuser_whitelabels.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
+Redirect 301 /Classroom/Basics/Whitelabel/setup_domain_whitelabel.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
+Redirect 301 /Classroom/Basics/Whitelabel/link_whitelabels_explained.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_link_branding.html
+Redirect 301 /Classroom/Basics/Whitelabel/index.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
+Redirect 301 /User_Guide/Settings/Whitelabel/providers.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/providers.html
+Redirect 301 /User_Guide/Settings/Whitelabel/faq.html https://sendgrid.com/docs/Glossary/whitelabel.html
+
