@@ -132,7 +132,6 @@ In addition to viewing the email activity associated with your account by recipi
 * Subject Line
 * Template ID
 * Template Name
-* Unique Arguments
 
 *To use advanced search:*
 
@@ -150,7 +149,7 @@ or
 * Search emails by **all** of the following - This search will return fewer results and will pull in events that meet *every* criteria specified by the selected filters. 
 
 {% anchor H2 %}
-Viewing Event History
+Viewing event history 
 {% endanchor %}
 
 *To view event history:*

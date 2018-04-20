@@ -983,8 +983,35 @@ Redirect 301 /User_Guide/email_activity_beta.html https://sendgrid.com/docs/User
 
 #######
 #
+<<<<<<< HEAD
 # Release Notes
 #
 #######
 
 Redirect 301 /Release_Notes/release_notes.html https://sendgrid.com/docs/release_notes.html
+=======
+# Whitelabel
+#
+#######
+
+Redirect 301 /User_Guide/Settings/Whitelabel/ips.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_reverse_dns.html
+Redirect 301 /User_Guide/Settings/Whitelabel/links.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_link_branding.html
+Redirect 301 /User_Guide/Settings/Whitelabel/domains.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
+Redirect 301 /User_Guide/Settings/Whitelabel/index.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
+Redirect 301 /User_Guide/Settings/Sender_Authentication/How_to_set_up_domain_authentication.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
+Redirect 301 /Classroom/Troubleshooting/Authentication/whitelabel_video_tutorials.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
+Redirect 301 /Classroom/Troubleshooting/Authentication/upgrading_your_whitelabel.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
+Redirect 301 /Classroom/Troubleshooting/Authentication/i_have_created_dns_records_but_the_whitelabel_wizard_is_not_validating_them.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/Troubleshooting.html
+Redirect 301 /Classroom/Troubleshooting/Authentication/dns_records_and_underscores.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/Troubleshooting.html
+Redirect 301 /Classroom/Deliver/Sender_Authentication/what_is_automated_security_in_the_whitelabel_settings.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
+Redirect 301 /Classroom/Deliver/Delivery_Introduction/creating_and_whitelabeling_a_subuser_to_a_new_sending_domain.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
+Redirect 301 /Classroom/Deliver/Delivery_Introduction/all_you_need_to_know_about_whitelabeling.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
+Redirect 301 /Classroom/Basics/Email_Infrastructure/everything_about_dmarc.html https://sendgrid.com/docs/Glossary/dmarc.html
+Redirect 301 /Classroom/Basics/Whitelabel/whitelabel_vs_whitelist.html https://sendgrid.com/docs/Glossary/whitelabel.html
+Redirect 301 /Classroom/Basics/Whitelabel/subuser_whitelabels.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
+Redirect 301 /Classroom/Basics/Whitelabel/setup_domain_whitelabel.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
+Redirect 301 /Classroom/Basics/Whitelabel/link_whitelabels_explained.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_link_branding.html
+Redirect 301 /Classroom/Basics/Whitelabel/index.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
+Redirect 301 /User_Guide/Settings/Whitelabel/providers.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/providers.html
+Redirect 301 /User_Guide/Settings/Whitelabel/faq.html https://sendgrid.com/docs/Glossary/whitelabel.html
+>>>>>>> upstream/develop
