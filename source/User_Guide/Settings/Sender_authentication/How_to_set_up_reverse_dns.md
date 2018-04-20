@@ -10,7 +10,7 @@ seo:
   description: Set up reverse DNS to improve your deliverability and security of your emails.
 ---
 
-<iframe src="https://player.vimeo.com/video/149816616" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/265831363" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 {% info %}
 If you plan to send from multiple domains, you should whitelabel at least one IP address per domain.
