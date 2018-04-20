@@ -22,7 +22,7 @@ The time it takes to completely unlock your account can vary based on the number
 
 {% anchor h3 %}What steps are required?{% endanchor %}
 
-You will either have to verify your email address, set up two-factor authentication, and/or create a domain whitelabel. You may need to complete one or more of these steps to completely verify your account.
+You will either have to verify your email address, set up two-factor authentication, and authenticate a domain . You may need to complete one or more of these steps to completely verify your account.
 
 {% anchor h3 %}Can I send email right away?{% endanchor %}
 

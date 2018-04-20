@@ -71,7 +71,7 @@ Under "Additional Options" you will find the following options:
   * *Allow my parent account to send mail using these IP addresses:* check this if you want your parent account to be able to send over this IP. If you are assigning this IP to a subuser and only want that subuser to have permission to send on this IP, leave this box unchecked.
   * *Allow my subusers to send mail using these IP addresses:* check this to select which subusers can send on this IP address
 
-After purchasing your IP, we strongly encourage you to whitelabel it. [Click here for a step-by-step tutorial explaining how to whitelabel your new IP address.]({{root_url}}/Classroom/Basics/Whitelabel/setup_ip_whitelabel.html)
+After purchasing your IP, we strongly encourage you to set up reverse DNS. For more information about setting up reverse DNS, see [link text]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_reverse_dns.html).
 
 {% info %} Purchasing and adding dedicated IPs can only be performed by the Parent account, or Teammates with either Billing or Admin permissions. {% endinfo %}
 

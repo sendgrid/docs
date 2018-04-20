@@ -18,13 +18,13 @@ Using CloudFlare
 
 The following instructions assume you already have a CloudFlare account made, using either a [Full DNS setup](https://support.cloudflare.com/hc/en-us/articles/205195708) or a [CNAME setup](https://support.cloudflare.com/hc/en-us/articles/200168706). You can compare the two different setups [here](https://support.cloudflare.com/hc/en-us/articles/203685674). Note that a CNAME setup is only available to Business or Enterprise level CloudFlare plans.
 
-The instructions also assume that you have set up a valid [email links whitelabel](https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/links.html) on your account. This step is essential for the following instructions to work.
+The instructions also assume that you have set up a valid [branded link](https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_link_branding.html) on your account. This step is essential for the following instructions to work.
 
 Begin by logging into your CloudFlare account, and navigating to the DNS settings for your domain.
 
 ![CloudFlare DNS Settings]({{root_url}}/images/cloudflare1.png)
 
-Add a new CNAME entry that points your configured Email Links WhiteLabel domain to sendgrid.net.
+Add a new CNAME entry that points your configured branded link domain to sendgrid.net.
 
 ![CloudFlare DNS Addition]({{root_url}}/images/cloudflare2.png)
 
@@ -32,7 +32,7 @@ Once the record is created, click on the cloud icon under the Status column to t
 
 ![CloudFlare DNS HTTP proxy]({{root_url}}/images/cloudflare3.png)
 
-Next, navigate to the Page Rules settings for your domain. You will need to create a Page Rule for your Email Links Whitelabel domain that sets SSL to Full. This is necessary due to how [CloudFlare validates the certificate on the origin](https://support.cloudflare.com/hc/en-us/articles/200721975). You can find more information on the different SSL options [here](https://support.cloudflare.com/hc/en-us/articles/200170416).
+Next, navigate to the Page Rules settings for your domain. You will need to create a Page Rule for your branded link domain that sets SSL to Full. This is necessary due to how [CloudFlare validates the certificate on the origin](https://support.cloudflare.com/hc/en-us/articles/200721975). You can find more information on the different SSL options [here](https://support.cloudflare.com/hc/en-us/articles/200170416).
 
 ![CloudFlare Page Rules Addition]({{root_url}}/images/cloudflare4.png)
 
@@ -55,7 +55,7 @@ Using Fastly
 Set the options as follows:
 
 * **Server address and port:** `sendgrid.net` : `443` _The connection on the SSL port 443_
-* **Domain:** `email.example.com` _Enter your links whitelabel domain here. Ensure it matches the domain configured in the SendGrid whitelabel settings. This value will be what recipients see in your SSL enabled click tracking links._
+* **Domain:** `email.example.com` _Enter your branded link domain here. Ensure it matches the domain configured in the SendGrid link branding settings. This value will be what recipients see in your SSL enabled click tracking links._
 * **Description:** `SendGrid` (or whatever you like)
 
 Finally, click the **Create**. The new service will appear in the list of available services.
@@ -87,7 +87,7 @@ Enable the option "Forward Host Header."
 
 ![KeyCDN Forward Host Header]({{root_url}}/images/keycdn3.png)
 
-Create a CNAME record in your DNS settings pointing the alias you want to use for your email links whitelabel domain (e.g. email.domain.com) to the Zone URL provided within your KeyCDN dashboard (e.g. sendgrid-1c6b.kxcdn.com). Then, add that alias as a Zonealias.
+Create a CNAME record in your DNS settings pointing the alias you want to use for your email branded link domain (e.g. email.domain.com) to the Zone URL provided within your KeyCDN dashboard (e.g. sendgrid-1c6b.kxcdn.com). Then, add that alias as a Zonealias.
 
 ![KeyCDN Zonealias]({{root_url}}/images/keycdn4.png)
 

@@ -69,7 +69,7 @@ My DNS doesn't accept underscores
 
 SendGrid requires underscores for sender authentication, but some DNS providers do not support underscores in zone file entries.
 
-If your provider does not allow you to use underscores in zone files, consider changing your DNS hosting provider if you want to take advantage of the Whitelabel feature.
+If your provider does not allow you to use underscores in zone files, consider changing your DNS hosting provider.
 
 You can also disable automated security - this allows you to set up TXT and CX records that don't have underscores. For more information about setting up automated security, see [Using automated security]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html#-Using-automated-security).
 
@@ -227,9 +227,9 @@ For any account, SendGrid attaches authenticated domain information in the follo
 
 For subusers, SendGrid attaches authenticated domain information in the following order, starting at the top of the list and applying the domain when the criteria are matched:
 
-1. Valid whitelabel **for this subuser** that matches the domain in the FROM address.
-1. Valid default whitelabel **for this subuser**.
-1. Valid whitelabel assigned by the parent account to this subuser.
+1. Authenticated domain **for this subuser** that matches the domain in the FROM address.
+1. Default authenticated domain **for this subuser**.
+1. Authenticated domain assigned by the parent account to this subuser.
 
 *If no valid authenticated domains can be found, the sending domain defaults to sendgrid.net.*
 
