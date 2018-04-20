@@ -135,7 +135,7 @@ Email HTML content:
 {% anchor h2 %}
 SendGrid Defined Substitution Tags
 {% endanchor %}
-While the tags above are tags that you define at the time of your send in the SMTPAPI headers, SendGrid also offers [Unsubscribe Groups tags]({{root_url}}/User_Guide/Transactional_Templates/create_edit.html#-Unsubscribe-Substitution-Tags) that have been pre-defined for you. You can use these tags within the content of your email, and you do not have to and should not, define them.
+While the tags above are tags that you define at the time of your send in the SMTPAPI headers, SendGrid also offers [Unsubscribe Groups tags]({{root_url}}/User_Guide/Transactional_Templates/create_and_edit_transactional_templates.html#-Adding-unsubscribe-links-to-a-template) that have been pre-defined for you. You can use these tags within the content of your email, and you do not have to and should not, define them.
 
 {% anchor h2 %}
 Additional Resources
