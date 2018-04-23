@@ -17,6 +17,8 @@ navigation:
   * [API Response messages](#-API-Response-messages)
 * [Next steps](#-Next-steps)
 
+There are several ways you can get started with the SendGrid API 
+
 {% anchor h2 %}
 Prerequisites
 {% endanchor %}
@@ -84,5 +86,6 @@ Next Steps
 For more information on SendGrid and where you can go from here, check out these pages:
 
 - [API Reference]({{root_url}}/API_Reference/api_v3.html) - From this reference you can use the "try it out" functionality to test out real code samples. 
+- [SendGrid Libraries](https://github.com/sendgrid) - Choose from six different languages to set up your integration. 
 - [Sender Authentication]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html) - To improve your deliverability and add your own brand to your emails, set up Sender Authentication and Link Branding. 
 - [How to Send Email]({{root_url}}/User_Guide/Marketing_Campaigns/getting_started.html) - Learn how to create and send Marketing Campaigns from this tutorial. 
