@@ -1,7 +1,13 @@
+@import '../../scss/global/variables';
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+body {
+  background-color: $slate-10;
 }
 
 a,
@@ -26,33 +32,17 @@ a,
   }
 }
 
-.main,
-.content-main {
-  margin: 60px 0 120px;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-.content-header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-  .breadcrumb {
-    flex-grow: 1;
-    width: 100%;
-  }
+.docs-wrap {
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: #fff;
 }
 
-.content-block {
-  margin-bottom: 30px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
-.callout {
-  background: $sg-blue;
-}
-.callout-warning {
-  background: red;
+.main {
+  padding: $scaleup-4 0;
 }

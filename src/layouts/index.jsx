@@ -1,46 +1,47 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import NavMain from '../components/NavMain/NavMain'
-import config from '../../data/SiteConfig'
-import '../scss/style-guide.scss'
+import React from 'react';
+import Helmet from 'react-helmet';
+import NavMain from '../components/NavMain';
+import config from '../../data/SiteConfig';
+import Footer from '../components/Footer';
+import '../scss/style-guide.scss';
 
 export default class MainLayout extends React.Component {
   getLocalTitle() {
     function capitalize(string) {
-      return string.charAt(0).toUpperCase() + string.slice(1)
+      return string.charAt(0).toUpperCase() + string.slice(1);
     }
-    const pathPrefix = config.pathPrefix ? config.pathPrefix : '/'
+    const pathPrefix = config.pathPrefix ? config.pathPrefix : '/';
     const currentPath = this.props.location.pathname
       .replace(pathPrefix, '')
-      .replace('/', '')
-    let title = ''
+      .replace('/', '');
+    let title = '';
     if (currentPath === '') {
-      title = 'Home'
+      title = 'Home';
     } else if (currentPath === 'tags/') {
-      title = 'Tags'
+      title = 'Tags';
     } else if (currentPath === 'categories/') {
-      title = 'Categories'
+      title = 'Categories';
     } else if (currentPath === 'about/') {
-      title = 'About'
+      title = 'About';
     } else if (currentPath.indexOf('posts')) {
-      title = 'Article'
+      title = 'Article';
     } else if (currentPath.indexOf('tags/')) {
       const tag = currentPath
         .replace('tags/', '')
         .replace('/', '')
-        .replace('-', ' ')
-      title = `Tagged in ${capitalize(tag)}`
+        .replace('-', ' ');
+      title = `Tagged in ${capitalize(tag)}`;
     } else if (currentPath.indexOf('categories/')) {
       const category = currentPath
         .replace('categories/', '')
         .replace('/', '')
-        .replace('-', ' ')
-      title = `${capitalize(category)}`
+        .replace('-', ' ');
+      title = `${capitalize(category)}`;
     }
-    return title
+    return title;
   }
   render() {
-    const { children } = this.props
+    const { children } = this.props;
     return (
       <div className="docs-wrap">
         <Helmet>
@@ -49,7 +50,8 @@ export default class MainLayout extends React.Component {
         </Helmet>
         <NavMain />
         {children()}
+        <Footer />
       </div>
-    )
+    );
   }
 }

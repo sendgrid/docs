@@ -1,6 +1,8 @@
 {
 "eslint.autoFixOnSave": true,
     "eslint.enable": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
     "eslint.options": {
         "config": ".eslintrc.json",
         "configFile": ".eslintrc.json"

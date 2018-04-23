@@ -5,6 +5,7 @@
   ],
   "rules": {
     "indentation": 2,
+    "at-rule-no-unknown": null,
     "plugin/selector-bem-pattern": {
       "componentName": "(([a-z0-9]+(?!-$)-?)+)",
       "componentSelectors": {

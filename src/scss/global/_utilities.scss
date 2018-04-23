@@ -42,14 +42,16 @@ $colors: (
   crown:              $crown,
   screample:          $screample,
   sangria:            $sangria,
-  lavender:           $lavender,
+  lavender:         $lavender,
   wild-strawberry:    $wild-strawberry,
   steel:              $steel,
   logo-accent-light:  $logo-accent-light,
   logo-accent-medium: $logo-accent-medium,
-  logo-accent-dark:   $logo-accent-dark
+  logo-accent-dark:   $logo-accent-dark,
+  white:            #fff
 );
 
+// Color
 @each $name, $value in $colors {
   .color-#{$name} {
     color: $value;
@@ -60,4 +62,31 @@ $colors: (
   .bg-color-#{$name} {
     background-color: $value;
   }
+}
+
+// alignment
+.ta-center {
+  text-align: center;
+}
+
+.ta-left {
+  text-align: left;
+}
+
+.ta-right {
+  text-align: right;
+}
+
+// misc
+.show-for-sr {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
 }
