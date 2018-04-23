@@ -42,7 +42,7 @@ Whitelabel is becoming Sender Authentication!
 <table class="table" style="width: 100%;">
   <tr>
     <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
-    <td>To clarify authentication at SendGrid, we are updating the names of Whitelabel! A whitelabel is now generally called sender authentication. A domain whitelabel is now called domain authentication. A link whitelabel is now called link branding. An IP Whitelabel is now called reverse DNS.</td>
+    <td>To clarify authentication at SendGrid, we are updating the name of Whitelabel! A whitelabel is now generally called sender authentication. A domain whitelabel is now called domain authentication. A link whitelabel is now called link branding. An IP Whitelabel is now called reverse DNS.</td>
   </tr>
 </table>
 
