@@ -5,7 +5,7 @@ title: How to set up reverse DNS
 navigation:
   show: true
 seo:
-  title: How to set up Reverse DNS
+  title: How to set up reverse DNS
   override: true
   description: Set up reverse DNS to improve your deliverability and security of your emails.
 ---
