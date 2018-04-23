@@ -1,0 +1,15 @@
+@import '../../scss/global/mixins';
+
+.input-text-wrap [type="text"] {
+  border-radius: 0;
+}
+
+.input-text-wrap .input-btn {
+  display: none;
+}
+
+.input-text-wrap .search-hero__query {
+  @include colfax(400);
+
+  background-image: none;
+}

@@ -1,32 +1,32 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import SEO from '../components/SEO/SEO'
-import config from '../../data/SiteConfig'
-import './b16-tomorrow-dark.css'
-import './doc.scss'
+import React from 'react';
+import Helmet from 'react-helmet';
+import RehypeReact from 'rehype-react';
+import SEO from '../components/SEO';
+import config from '../../data/SiteConfig';
+import './b16-tomorrow-dark.css';
+import './doc.scss';
 
-import rehypeReact from 'rehype-react'
-import Callout from '../componentsMarkdown/Callout'
-import PageAnchor from '../componentsMarkdown/PageAnchor'
+import Callout from '../componentsMarkdown/Callout';
+import PageAnchor from '../componentsMarkdown/PageAnchor';
 
-const renderAst = new rehypeReact({
+const renderAst = new RehypeReact({
   createElement: React.createElement,
   components: {
     'call-out': Callout,
     'page-anchor': PageAnchor,
   },
-}).Compiler
+}).Compiler;
 
 export default class PostTemplate extends React.Component {
   render() {
-    const { slug } = this.props.pathContext
-    const postNode = this.props.data.markdownRemark
-    const post = postNode.frontmatter
+    const { slug } = this.props.pathContext;
+    const postNode = this.props.data.markdownRemark;
+    const post = postNode.frontmatter;
     if (!post.id) {
-      post.id = slug
+      post.id = slug;
     }
     if (!post.category_id) {
-      post.category_id = config.postDefaultCategoryID
+      post.category_id = config.postDefaultCategoryID;
     }
     return (
       <div className="container">
@@ -40,11 +40,11 @@ export default class PostTemplate extends React.Component {
           {renderAst(postNode.htmlAst)}
         </div>
       </div>
-    )
+    );
   }
 }
 
-/* eslint no-undef: "off"*/
+/* eslint no-undef: "off" */
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -58,4 +58,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

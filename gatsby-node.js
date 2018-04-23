@@ -116,37 +116,3 @@ exports.modifyWebpackConfig = ({ config }) => {
   return newConfig;
 };
 
-exports.sourceNodes = async ({ boundActionCreators }) => {
-  const { createNode } = boundActionCreators;
-  // fetch raw data from the randomuser api
-  const fetchSendGridFooterMenu = () => axios.get('http://wpgrid.lndo.site:8000/wp-json/sg/menus/footer');
-  // await for results
-  const res = await fetchSendGridFooterMenu();
-
-  // map results and create nodes
-  res.data.map((link, i) => {
-    // Create node object
-    const footerLink = {
-      id: `${i}`,
-      parent: '__SOURCE__',
-      internal: {
-        type: 'footerLinks', // name of the graphQL query.
-      },
-      children: [],
-      url: link.url,
-      parentLink: link.parent,
-      title: link.post_title,
-    };
-
-    // Get content digest of node.
-    const contentDigest = crypto
-      .createHash('md5')
-      .update(JSON.stringify(footerLink))
-      .digest('hex');
-    // add it to footerLink
-    footerLink.internal.contentDigest = contentDigest;
-
-    createNode(footerLink);
-  });
-};
-

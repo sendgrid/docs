@@ -1,12 +1,8 @@
-import React from 'react'
+import React from 'react';
 
 export default class PageAnchor extends React.Component {
-  static defaultProps = {
-    el: 'h2',
-  }
-
   getContent() {
-    const name = '-' + this.props.children[0].trim().replace(/ /g, '-')
+    const name = `-${this.props.children[0].trim().replace(/ /g, '-')}`;
 
     return (
       <span>
@@ -26,11 +22,15 @@ export default class PageAnchor extends React.Component {
         </a>
         {this.props.children[0]}
       </span>
-    )
+    );
   }
 
   render() {
-    const content = this.getContent()
-    return React.createElement(this.props.el, {}, content)
+    const content = this.getContent();
+    return React.createElement(this.props.el, {}, content);
   }
 }
+
+PageAnchor.defaultProps = {
+  el: 'h2',
+};

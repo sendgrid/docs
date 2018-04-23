@@ -44,7 +44,7 @@ $this->getMailer()->send($message);
 {% endcodeblock %}
 
 
-<page-anchor el="h3">
+<page-anchor el="h1">
 Another Option
 </page-anchor>
 If you want more flexibility, you can use partials to define the content of the emails. Add the a class such as **lib/myEmail.class.php**.

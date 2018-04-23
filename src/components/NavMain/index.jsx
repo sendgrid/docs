@@ -6,6 +6,8 @@ class NavMain extends Component {
   constructor(props) {
     super(props);
     this.state = { showMenu: false };
+
+    this.toggleMenu = this.toggleMenu.bind(this);
   }
 
   toggleMenu() {
@@ -16,7 +18,7 @@ class NavMain extends Component {
     const menuState = this.state.showMenu ? 'in' : '';
 
     return (
-      <div>
+      <div className="nav-wrap">
         <div className="nav-secondary">
           <div className="container-lg">
             <a href="/">Log In</a>
@@ -32,7 +34,7 @@ class NavMain extends Component {
 
               <button
                 className={`nav-main__toggle js-menu-toggle ${menuState}`}
-                onClick={this.toggleMenu.bind(this)}
+                onClick={this.toggleMenu}
               >
                 <span className="nav-main__menu" />
               </button>

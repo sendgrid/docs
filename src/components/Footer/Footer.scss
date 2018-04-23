@@ -2,6 +2,25 @@
 
 .footer {
   background: $slate;
+  font-size: $scaledown-1;
+  padding: $scaleup-1 0;
+
+  a {
+    color: $slate-20;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  hr {
+    border-top: 1px solid $slate-80;
+  }
+}
+
+.footer__divider {
+  border-top: 1px solid $slate-80;
+  width: 54px;
 }
 
 .footer-container {
@@ -10,7 +29,24 @@
   padding: 20px;
 }
 
-.footer-col {
-  color: #fff;
+.footer__header {
+  margin: $scaleup-2 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: $scaledown-2;
 }
 
+.footer__link {
+  display: block;
+  color: #fff;
+  margin: $scaleup-2 0;
+}
+
+.footer__soc a {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.footer__copy {
+  margin-left: $scaleup-3;
+}

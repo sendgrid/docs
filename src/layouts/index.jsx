@@ -1,8 +1,8 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import NavMain from '../components/NavMain/NavMain';
+import NavMain from '../components/NavMain';
 import config from '../../data/SiteConfig';
-import Footer from '../components/Footer/footer';
+import Footer from '../components/Footer';
 import '../scss/style-guide.scss';
 
 export default class MainLayout extends React.Component {
@@ -41,7 +41,6 @@ export default class MainLayout extends React.Component {
     return title;
   }
   render() {
-    const { allFooterLinks } = this.props.data;
     const { children } = this.props;
     return (
       <div className="docs-wrap">
@@ -51,23 +50,8 @@ export default class MainLayout extends React.Component {
         </Helmet>
         <NavMain />
         {children()}
-        <Footer allFooterLinks={allFooterLinks.edges} />
+        <Footer />
       </div>
     );
   }
 }
-
-/* eslint no-undef: "off" */
-export const pageQuery = graphql`
-  query footerQuery {
-   allFooterLinks {
-     edges {
-       node {
-        parentLink
-        title
-         id
-       }
-     }
-   }
-}
-`;
