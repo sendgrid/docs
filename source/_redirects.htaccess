@@ -1024,4 +1024,5 @@ Redirect 301 /Classroom/Basics/Whitelabel/link_whitelabels_explained.html https:
 Redirect 301 /Classroom/Basics/Whitelabel/index.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
 Redirect 301 /User_Guide/Settings/Whitelabel/providers.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/providers.html
 Redirect 301 /User_Guide/Settings/Whitelabel/faq.html https://sendgrid.com/docs/Glossary/whitelabel.html
+Redirect 301 /User_Guide/Settings/Sender_Authentication/How_to_set_up_Reverse_DNS.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_reverse_DNS.html 
 
