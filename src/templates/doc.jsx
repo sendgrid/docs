@@ -2,6 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import RehypeReact from 'rehype-react';
 import SEO from '../components/SEO';
+import NavSub from '../components/NavSub';
 import config from '../../data/SiteConfig';
 import './b16-tomorrow-dark.css';
 import './doc.scss';
@@ -29,15 +30,18 @@ export default class PostTemplate extends React.Component {
       post.category_id = config.postDefaultCategoryID;
     }
     return (
-      <div className="container">
-        <Helmet>
-          <title>{`${post.title} | ${config.siteTitle}`}</title>
-        </Helmet>
-        <SEO postPath={slug} postNode={postNode} postSEO />
-        <div>
-          <h1>{post.title}</h1>
-          {/* <div dangerouslySetInnerHTML={{ __html: postNode.html }} /> */}
-          {renderAst(postNode.htmlAst)}
+      <div className="docs-main">
+        <NavSub />
+        <div className="container">
+          <Helmet>
+            <title>{`${post.title} | ${config.siteTitle}`}</title>
+          </Helmet>
+          <SEO postPath={slug} postNode={postNode} postSEO />
+          <div>
+            <h1>{post.title}</h1>
+            {/* <div dangerouslySetInnerHTML={{ __html: postNode.html }} /> */}
+            {renderAst(postNode.htmlAst)}
+          </div>
         </div>
       </div>
     );

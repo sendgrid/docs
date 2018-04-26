@@ -40,12 +40,13 @@ export default class MainLayout extends React.Component {
     }
     return title;
   }
+
   render() {
     const { children } = this.props;
     return (
       <div className="docs-wrap">
         <Helmet>
-          <title>{`${config.siteTitle} |  ${this.getLocalTitle()}`}</title>
+          <title>{`${config.siteTitle} | ${this.getLocalTitle()}`}</title>
           <meta name="description" content={config.siteDescription} />
         </Helmet>
         <NavMain />

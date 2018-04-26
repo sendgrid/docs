@@ -16,7 +16,7 @@ $card-gutter: 30px;
 }
 
 // Override SendGrid search input styles for the hero search
-.input-text-wrap .search-hero__query {
+.search-hero .input-text-wrap .search-hero__query {
   background-color: #fff;
   padding: $scaleup-3 $scaleup-2 $scaleup-3 $scaleup-7;
   font-size: $scaleup-1;

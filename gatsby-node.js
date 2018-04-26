@@ -49,28 +49,43 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
       Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
       Object.prototype.hasOwnProperty.call(node.frontmatter, 'path')
     ) {
-      permalink = `${node.frontmatter.path}${slug}`;
+      permalink = `/${node.frontmatter.path}${slug}`;
     } else if (parsedFilePath.dir !== '') {
-      permalink = `${parsedFilePath.dir}${slug}`;
+      permalink = `/${parsedFilePath.dir}${slug}`;
     } else {
       permalink = slug;
     }
-
     createNodeField({ node, name: 'permalink', value: permalink });
+
+    /**
+     * Check if doc is "help-support" or "for developers" and add a field slug to represent this.
+     */
+    let docType = false;
+    if (parsedFilePath.dir.match('help-support')) {
+      docType = 'help-support';
+    } else if (parsedFilePath.dir.match('for-developers')) {
+      docType = 'for-developers';
+    }
+    createNodeField({ node, name: 'docType', value: docType });
   }
 };
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators;
+  const { createPage, createNode } = boundActionCreators;
 
   return new Promise((resolve, reject) => {
     const docsPage = path.resolve('src/templates/doc.jsx');
+    const categoryPage = path.resolve('src/templates/category.jsx');
 
     resolve(graphql(`
         {
           allMarkdownRemark {
             edges {
               node {
+                fileAbsolutePath
+                frontmatter {
+                  category
+                }
                 fields {
                   permalink
                   slug
@@ -86,7 +101,20 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         reject(result.errors);
       }
 
+      const helpCategorySet = new Set();
+      const developerCategorySet = new Set();
+
       result.data.allMarkdownRemark.edges.forEach((edge) => {
+        // aggregate "help-support" categories
+        if (edge.node.frontmatter.category && edge.node.fileAbsolutePath.match(/help-support\/[^/]+/)) {
+          helpCategorySet.add(edge.node.frontmatter.category);
+        }
+
+        // aggregate "for-developers" categories
+        if (edge.node.frontmatter.category && edge.node.fileAbsolutePath.match(/for-developers\/[^/]+/)) {
+          developerCategorySet.add(edge.node.frontmatter.category);
+        }
+
         // Create docs pages
         createPage({
           path: edge.node.fields.permalink,
@@ -96,9 +124,80 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           },
         });
       });
+
+      const categoryList = Array.from(developerCategorySet);
+      categoryList.forEach((category, i) => {
+        // Create "for-developer" category nodes.
+        const cat = {
+          id: `${i}`,
+          slug: category,
+          parent: '__SOURCE__',
+          children: [],
+          internal: {
+            type: 'forDeveloperCategories',
+          },
+        };
+        // Get content digest of node. (Required field)
+        const contentDigest = crypto
+          .createHash('md5')
+          .update(JSON.stringify(cat))
+          .digest('hex');
+
+        // add it to userNode
+        cat.internal.contentDigest = contentDigest;
+
+        // Create node with the gatsby createNode() API
+        createNode(cat);
+
+        // Create "/for-developers/<category-slug>" pages.
+        createPage({
+          path: `/for-developers/${_.kebabCase(category)}/`,
+          component: categoryPage,
+          context: {
+            category,
+          },
+        });
+      });
+
+
+      const helpCategoryList = Array.from(helpCategorySet);
+      helpCategoryList.forEach((category, i) => {
+        // Create "help-support" category nodes.
+        const cat = {
+          id: `${i}`,
+          slug: category,
+          parent: '__SOURCE__',
+          children: [],
+          internal: {
+            type: 'helpSupportCategories',
+          },
+        };
+        // Get content digest of node. (Required field)
+        const contentDigest = crypto
+          .createHash('md5')
+          .update(JSON.stringify(cat))
+          .digest('hex');
+
+        // add it to userNode
+        cat.internal.contentDigest = contentDigest;
+
+        // Create node with the gatsby createNode() API
+        createNode(cat);
+
+        // Create "/help-support/<category-slug>" pages.
+        createPage({
+          path: `/help-support/${_.kebabCase(category)}/`,
+          component: categoryPage,
+          docType: 'help-support',
+          context: {
+            category,
+          },
+        });
+      });
     }));
   });
 };
+
 
 exports.modifyWebpackConfig = ({ config, stage }) => {
   if (stage === 'build-javascript') {
@@ -115,4 +214,3 @@ exports.modifyWebpackConfig = ({ config }) => {
   }
   return newConfig;
 };
-
