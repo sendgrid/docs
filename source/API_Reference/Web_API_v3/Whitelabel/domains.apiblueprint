@@ -117,7 +117,7 @@ the customer will just need to create a few CNAMEs to SendGrid, and SendGrid wil
 
 + Attributes (object)
     + domain example.com (required, string) - Domain being whitelabeled.
-    + subdomain news (required, string) - Subdomain being whitelabeled.
+    + subdomain news (optional, string) - Subdomain being whitelabeled. If you do not provide one, our system will generate one and provide it in the Response Body.
     + automatic_security false (optional, boolean) - Whether to allow SendGrid to manage your SPF records, DKIM keys, and DKIM key rotation.
     + ips ["192.168.1.1"] (optional, array[string]) - Specify IPs to be used in your SPF record.
     + custom_spf true (optional, boolean) - Specify whether to use a custom spf or allow SendGrid to manage your SPF. This option is only available to domain whitelabels setup for manual security.
