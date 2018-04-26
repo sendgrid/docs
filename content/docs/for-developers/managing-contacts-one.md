@@ -1,13 +1,7 @@
 ---
-title: "Markdown Cheat Sheet"
-cover: "https://unsplash.it/400/300/?random?BigTest"
-category: "moar"
-date: "01/03/2018"
-uri: "/foo/bar/fee"
-path: "/dog/cat"
-tags:
-    - test
-    - huge
+title: "some random title managing contacts"
+category: "managing-contacts"
+subcategory: "tracking"
 ---
 
 # NOTE: This "post" on [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) and is meant to test styling of Markdown generated documents.
