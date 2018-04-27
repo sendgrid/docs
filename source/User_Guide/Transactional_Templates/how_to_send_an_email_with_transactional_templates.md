@@ -11,7 +11,7 @@ seo:
 ---
 
 - [Before you begin](#-Before-you-begin)
-- [Design a dynamic transactional template](#-Design-a-dynamic-transactional-template)
+- [Design a dynamic transactional template](#-Design-a-dynamic-template)
 - [Send a transactional email](#-Send-a-transactional-email)
  
 {% anchor h2 %}
