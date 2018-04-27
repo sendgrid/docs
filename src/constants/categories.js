@@ -1,11 +1,12 @@
 /* eslint quote-props: ["error", "consistent-as-needed"] */
 const CATEGORIES = {
-  'working-with-templates-content': 'Working with Templates & Content',
-  'delivery-optimization': 'Delivery & Opimization',
+  'api-reference': 'API Reference',
+  'getting-started': 'Getting Started',
   'managing-contacts': 'Managing Contacts',
-  'troubleshooting': 'Troubleshooting',
+  'tracking-events': 'Tracking Events',
+  'parsing-email': 'parsing-email',
   'sending-email': 'Sending Email',
-  'sending': 'Sending',
+  '3rd-party': '3rd Party',
 };
 
 export default CATEGORIES;

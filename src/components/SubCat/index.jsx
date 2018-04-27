@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import SUB_CATEGORIES from '../../constants/subCategories';
+import CATEGORIES from '../../constants/subCategories';
 
 export default class subCategory extends React.Component {
   getSubCatDocs() {
@@ -17,7 +17,7 @@ export default class subCategory extends React.Component {
   render() {
     return (
       <div className="category-container">
-        <h3>{SUB_CATEGORIES[this.props.slug]}</h3>
+        <h3>{CATEGORIES[this.props.slug]}</h3>
         {this.getSubCatDocs()}
       </div>
     );
