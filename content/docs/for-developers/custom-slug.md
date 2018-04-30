@@ -1,7 +1,7 @@
 ---
 title: "custom URI"
 category: "sending-email"
-subcategory: "tracking"
+group: "tracking"
 # path: "foo/bar"
 ---
 

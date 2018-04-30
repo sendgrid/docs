@@ -47,7 +47,7 @@ class NavMain extends Component {
                 </div>
 
                 <div className="nav-item">
-                  <Link className="nav-main__plain" to="/">
+                  <Link className="nav-main__plain" to="/for-developers/">
                     For Developers
                   </Link>
                 </div>

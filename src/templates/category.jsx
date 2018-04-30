@@ -1,17 +1,15 @@
 import React from 'react';
-import SubCat from '../components/SubCat';
+import Group from '../components/Group';
 import CATEGORIES from '../constants/categories';
-import SUB_CATEGORIES from '../constants/subCategories';
+import GROUPS from '../constants/groups';
 
 export default class CategoryTemplate extends React.Component {
-  renderSubCats() {
-    const allSubCats = Object.keys(SUB_CATEGORIES).map(subCat => (
-      <div key={subCat} className="col-md-6">
-        <SubCat edges={this.props.data.allMarkdownRemark.edges} slug={subCat} />
-      </div>
+  renderGroups() {
+    const allGroups = Object.keys(GROUPS).map(group => (
+      <Group key={group} edges={this.props.data.allMarkdownRemark.edges} slug={group} />
     ));
 
-    return allSubCats;
+    return allGroups;
   }
 
   render() {
@@ -21,7 +19,7 @@ export default class CategoryTemplate extends React.Component {
       <div className="category-container container">
         <h1>{CATEGORIES[pathContext.category]}</h1>
         <div className="row">
-          {this.renderSubCats()}
+          {this.renderGroups()}
         </div>
       </div>
     );
@@ -47,14 +45,12 @@ export const pageQuery = graphql`
             slug
             permalink
           }
-          excerpt
-          timeToRead
           frontmatter {
             title
             tags
             cover
             date
-            subcategory
+            group
           }
         }
       }

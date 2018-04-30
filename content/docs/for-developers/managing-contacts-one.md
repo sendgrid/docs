@@ -1,7 +1,7 @@
 ---
 title: "some random title managing contacts"
 category: "managing-contacts"
-subcategory: "tracking"
+group: "delivery-optimization"
 ---
 
 # NOTE: This "post" on [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) and is meant to test styling of Markdown generated documents.
