@@ -1,7 +1,7 @@
 ---
 title: "help article one"
 category: "sending-email"
-subcategory: "tracking"
+- group: "tracking"
 ---
 
 # NOTE: This "post" on [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) and is meant to test styling of Markdown generated documents.
