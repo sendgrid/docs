@@ -30,7 +30,7 @@ class NavMain extends Component {
         return false;
       }
 
-      response.json().then(user => this.setState({ user }));
+      return response.json().then(user => this.setState({ user }));
     });
   }
 
@@ -52,7 +52,7 @@ class NavMain extends Component {
           <div className="container-lg">
             {user ? (
               <div className="nav-secondary__account">
-                <div className="nav-secondary__name">{user.first_name} {user.last_name}</div>
+                <div className="nav-secondary__name">{user.first_name} {user.last_name} <span className="carret">▾</span></div>
                 <div className="nav-secondary__account-links">
                   <a href="/">Dashboard</a>
                   <a href="/">Sign Out</a>
