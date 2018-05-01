@@ -5,7 +5,13 @@ import './Footer.scss';
 
 class Footer extends Component {
   static renderMenu(menu) {
-    const links = menu.LINKS.map(item => (item.URL ? <a key={item.TEXTNODE} className="footer__link" href={item.URL}>{item.TEXTNODE}</a> : <div key={item.TEXTNODE} className="footer__divider" />));
+    const links = menu.LINKS.map((item) => {
+      if (item.URL) {
+        return <a key={item.TEXTNODE} className={`footer__link footer__link--${item.TEXTNODE.replace(' ', '-').toLowerCase()}`} href={item.URL}>{item.TEXTNODE}</a>;
+      }
+
+      return <div key={item.TEXTNODE} className="footer__divider" />;
+    });
 
     return (
       <div className="footer-col" key={menu.HEADER}>
@@ -28,12 +34,12 @@ class Footer extends Component {
 
         <hr />
 
-        <div className="container-lg">
+        <div className="container-lg footer__soc-legal">
           <div className="row">
             <div className="col-md-6">
               <SocialLinks />
             </div>
-            <div className="col-md-6 ta-right">
+            <div className="col-md-6 footer__legal">
               <a href="https://sendgrid.com/policies/tos/">Legal and Security</a>
               <span className="footer__copy">&copy; 2018 SendGrid</span>
             </div>

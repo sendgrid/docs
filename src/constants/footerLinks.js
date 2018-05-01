@@ -5,7 +5,7 @@ FOOTER_LINKS.SOLUTIONS = {
   LINKS: [
     { URL: 'https://sendgrid.com/solutions/email-api/', TEXTNODE: 'Email API and SMTP' },
     { URL: 'https://sendgrid.com/solutions/email-marketing/', TEXTNODE: 'Email Marketing Campaigns' },
-    { URL: 'https://sendgrid.com/solutions/expert-services/', TEXTNODE: 'Expert Servicest' },
+    { URL: 'https://sendgrid.com/solutions/expert-services/', TEXTNODE: 'Expert Services' },
     { URL: false, TEXTNODE: false },
     { URL: 'https://sendgrid.com/pricing/', TEXTNODE: 'Pricing' },
     { URL: 'https://sendgrid.com/contact/', TEXTNODE: 'Contact Sales' },
