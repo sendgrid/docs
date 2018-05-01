@@ -1,13 +1,37 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
+import Cookies from 'js-cookie';
 import './NavMain.scss';
 
 class NavMain extends Component {
   constructor(props) {
     super(props);
-    this.state = { showMenu: false };
+    this.state = {
+      showMenu: false,
+      user: false,
+    };
 
     this.toggleMenu = this.toggleMenu.bind(this);
+  }
+
+  componentWillMount() {
+    const token = Cookies.get('mako_auth_token');
+
+    if (!token) return;
+
+    fetch('https://api.sendgrid.com/v3/user/profile', {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+        Authorization: `token ${token}`,
+      },
+    }).then((response) => {
+      if (!response.ok) {
+        return false;
+      }
+
+      return response.json().then(user => this.setState({ user }));
+    });
   }
 
   toggleMenu() {
@@ -15,13 +39,28 @@ class NavMain extends Component {
   }
 
   render() {
-    const menuState = this.state.showMenu ? 'in' : '';
+    const {
+      showMenu,
+      user,
+    } = this.state;
+
+    const menuState = showMenu ? 'in' : '';
 
     return (
       <div className="nav-wrap">
         <div className="nav-secondary">
           <div className="container-lg">
-            <a href="/">Log In</a>
+            {user ? (
+              <div className="nav-secondary__account">
+                <div className="nav-secondary__name">{user.first_name} {user.last_name} <span className="carret">▾</span></div>
+                <div className="nav-secondary__account-links">
+                  <a href="/">Dashboard</a>
+                  <a href="/">Sign Out</a>
+                </div>
+              </div>
+            ) : (
+              <a href="https://app.sendgrid.com/">Log In</a>
+            )}
           </div>
         </div>
 

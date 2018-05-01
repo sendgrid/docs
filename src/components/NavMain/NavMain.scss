@@ -1,4 +1,5 @@
 @import '../../scss/global/variables';
+@import '../../scss/global/mixins';
 
 .nav-secondary {
   text-align: right;
@@ -128,6 +129,44 @@
 .in .nav-main__menu {
   background: transparent;
   transition: background-color 0s;
+}
+
+// Secondary nav - login & account dropdown
+.nav-secondary__account-links {
+  position: absolute;
+  right: 0;
+  background: #fff;
+  z-index: $dropdown-menu-z-index;
+  padding: $scaledown-4 $scaleup-2;
+  border: 1px solid $slate-10;
+  display: none;
+
+  @include dropdown-shadow();
+}
+
+.nav-secondary__account {
+  position: relative;
+  display: inline-block;
+
+  @include colfax(300);
+
+  &:hover .nav-secondary__account-links {
+    display: block;
+  }
+}
+
+.nav-secondary__name {
+  font-size: $scaledown-1;
+  padding: $scaledown-6 0;
+  display: inline-block;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.nav-secondary__account-links a {
+  display: block;
 }
 
 @media (max-width: $width-mobile) {
