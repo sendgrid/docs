@@ -24,9 +24,12 @@
 }
 
 .footer-container {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  display: flex;
   padding: 20px;
+}
+
+.footer-col {
+  flex: 1;
 }
 
 .footer__header {
@@ -42,6 +45,19 @@
   margin: $scaleup-2 0;
 }
 
+.footer__link--pricing::after,
+.footer__link--careers::after {
+  content: 'Try for Free!';
+  background: $sg-blue;
+  padding: $scaledown-7 $scaledown-5;
+  font-size: $scaledown-2;
+  margin-left: $scaledown-3;
+}
+
+.footer__link--careers::after {
+  content: "We're hiring!";
+}
+
 .footer__soc a {
   display: inline-block;
   margin-right: 15px;
@@ -49,4 +65,33 @@
 
 .footer__copy {
   margin-left: $scaleup-3;
+}
+
+.footer__legal {
+  text-align: right;
+}
+
+@media (max-width: 960px) {
+  .footer-container {
+    flex-flow: wrap;
+  }
+
+  .footer-col {
+    flex: 0 0 50%;
+  }
+}
+
+@media (max-width: 610px) {
+  .footer-col {
+    flex: 0 0 100%;
+  }
+
+  .footer__legal,
+  .footer__soc-legal {
+    text-align: center;
+  }
+
+  .footer__legal {
+    margin-top: $scaledown-2;
+  }
 }
