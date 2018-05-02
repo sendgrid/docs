@@ -57,10 +57,26 @@ Improved Sender Authentication Process (formerly "Whitelabel")
   </tr>
 </table>
 
-For more information on the new process for sender authentication, check out our how to docs:
+For more information on the new process for sender authentication: 
+- Access [Sender Authentication](https://app.sendgrid.com/settings/sender_auth)
+- Read the [blog post](https://sendgrid.com/blog/new-sender-authentication/) about Sender Authentication.
+- Check out our how to docs on [How to set up domain authentication]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html) and [How to set up link branding]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_link_branding.html)
 
-- [How to set up domain authentication]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html)
-- [How to set up link branding]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_link_branding.html)
+
+{% anchor h2 %}
+11 April 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Magento M1 and M2 Extension Update
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>We have upgraded our Magento Extension for M1 and M2 Marketplaces to V1.0.3. SendGrid’s extension in M1 and M2 is compatible with Magento Community 2.0, 2.1, 2.2. </td>
+  </tr>
+</table>
 
 {% anchor h2 %}
 9 April 2018
