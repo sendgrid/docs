@@ -1058,5 +1058,12 @@ Redirect 301 /User_Guide/Marketing_Campaigns/Managing_Contacts/formating_a_CSV.h
 Redirect 301 /User_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html https://sendgrid.com/docs/Help/Managing_Contacts/managing_contact_list.html
 Redirect 301 /User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html https://sendgrid.com/docs/Help/Managing_Contacts/segmenting_your_contacts.html
 Redirect 301 /User_Guide/Statistics/index.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/index.html
-Redirect 301 /User_Guide/Statistics/browser.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/index.html
+Redirect 301 /User_Guide/Statistics/browser.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/browser.html
+Redirect 301 /User_Guide/Statistics/browser_compare.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/browser_comparison.html
+Redirect 301 /User_Guide/Statistics/categories.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/categories.html
+Redirect 301 /User_Guide/Statistics/device.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/device.html
+Redirect 301 /User_Guide/Statistics/geo.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/geographic.html
+Redirect 301 /User_Guide/Statistics/global.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/global.html
+Redirect 301 /User_Guide/Statistics/mailbox_provider.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/mailbox_provider.html
+Redirect 301 /User_Guide/Statistics/mailbox_provider_compare.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/mailbox_provider_comparison.html
 Redirect 301 
