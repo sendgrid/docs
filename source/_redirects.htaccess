@@ -1069,3 +1069,14 @@ Redirect 301 /User_Guide/Statistics/mailbox_provider_compare.html https://sendgr
 Redirect 301 /User_Guide/Statistics/parse.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/inbound_parse.html
 Redirect 301 /User_Guide/Statistics/subuser.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/subuser.html
 Redirect 301 /User_Guide/Statistics/subuser_compare.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/subuser_comparison.html
+Redirect 301 /User_Guide/Suppressions/index.html https://sendgrid.com/docs/Help/Sending_Email/index_suppressions.html
+Redirect 301 /User_Guide/Suppressions/advanced_suppression_manager.html https://sendgrid.com/docs/Help/Sending_Email/unsubscribe_groups.html
+Redirect 301 /User_Guide/Suppressions/blocks.html https://sendgrid.com/docs/Help/Sending_Email/blocks.html
+Redirect 301 /User_Guide/Suppressions/bounces.html https://sendgrid.com/docs/Help/Sending_Email/bounces.html
+Redirect 301 /User_Guide/Suppressions/global_unsubscribes.html https://sendgrid.com/docs/Help/Sending_Email/global_unsubscribes.html
+Redirect 301 /User_Guide/Suppressions/group_unsubscribes.html https://sendgrid.com/docs/Help/Sending_Email/group_unsubscribes.html
+Redirect 301 /User_Guide/Suppressions/invalid_emails.html https://sendgrid.com/docs/Help/Sending_Email/invalid_emails.html
+Redirect 301 /User_Guide/Suppressions/recipient_subscription_preferences.html https://sendgrid.com/docs/Help/Sending_Email/recipient_subscription_preferences.html
+Redirect 301 /User_Guide/Suppressions/spam_reports.html https://sendgrid.com/docs/Help/Sending_Email/spam_reports.html
+Redirect 301 /User_Guide/Transactional_Templates/create_and_edit_transactional_templates.html https://sendgrid.com/docs/Help/Sending_Email/create_and_edit_transactional_templates.html
+Redirect 301 
