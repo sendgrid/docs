@@ -1079,4 +1079,15 @@ Redirect 301 /User_Guide/Suppressions/invalid_emails.html https://sendgrid.com/d
 Redirect 301 /User_Guide/Suppressions/recipient_subscription_preferences.html https://sendgrid.com/docs/Help/Sending_Email/recipient_subscription_preferences.html
 Redirect 301 /User_Guide/Suppressions/spam_reports.html https://sendgrid.com/docs/Help/Sending_Email/spam_reports.html
 Redirect 301 /User_Guide/Transactional_Templates/create_and_edit_transactional_templates.html https://sendgrid.com/docs/Help/Sending_Email/create_and_edit_transactional_templates.html
+Redirect 301 /User_Guide/Settings/account.html https://sendgrid.com/docs/Help/Account_and_Settings/account.html
+Redirect 301 /User_Guide/Settings/alerts.html https://sendgrid.com/docs/Help/Account_and_Settings/alerts.html
+Redirect 301 /User_Guide/Settings/api_keys.html https://sendgrid.com/docs/Help/Account_and_Settings/api_keys.html
+Redirect 301 /User_Guide/Settings/billing.html https://sendgrid.com/docs/Help/Account_and_Settings/billing.html
+Redirect 301 /User_Guide/Settings/cancel_account.html https://sendgrid.com/docs/Help/Account_and_Settings/cancel_your_account.html
+Redirect 301 /User_Guide/Settings/dedicated_ip_addresses.html https://sendgrid.com/docs/Help/Account_and_Settings/dedicated_ip_addresses.html
+Redirect 301 /User_Guide/Settings/ip_access_management.html https://sendgrid.com/docs/Help/Account_and_Settings/ip_access_management.html
+Redirect 301 /User_Guide/Settings/ip_warmup.html https://sendgrid.com/docs/Help/Account_and_Settings/warming_up_an_ip_address.html
+Redirect 301 /User_Guide/Settings/mail.html https://sendgrid.com/docs/Help/Account_and_Settings/mail.html
+Redirect 301 /User_Guide/Settings/parse.html https://sendgrid.com/docs/Help/Account_and_Settings/inbound_parse.html
+Redirect 301 /User_Guide/Settings/partners.html https://sendgrid.com/docs/Help/Account_and_Settings/partners.html
 Redirect 301 
