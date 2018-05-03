@@ -1096,4 +1096,8 @@ Redirect 301 /User_Guide/Settings/subusers.html https://sendgrid.com/docs/Help/A
 Redirect 301 /User_Guide/Settings/teammates.html https://sendgrid.com/docs/Help/Account_and_Settings/teammates.html
 Redirect 301 /User_Guide/Settings/tracking.html https://sendgrid.com/docs/Help/Account_and_Settings/tracking.html
 Redirect 301 /User_Guide/Settings/two_factor_authentication.html https://sendgrid.com/docs/Help/Account_and_Settings/two_factor_authentication.html
-Redirect 301 
+Redirect 301 /User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html https://sendgrid.com/docs/Help/Getting_Started/How_to_set_up_domain_authentication.html
+Redirect 301 /User_Guide/Settings/Sender_authentication/How_to_set_up_link_branding.html https://sendgrid.com/docs/Help/Getting_Started/How_to_set_up_link_branding.html
+Redirect 301 /User_Guide/Settings/Sender_authentication/How_to_set_up_reverse_dns.html https://sendgrid.com/docs/Help/Getting_Started/How_to_set_up_reverse_dns.html
+Redirect 301 /User_Guide/Settings/Sender_authentication/Troubleshooting.html https://sendgrid.com/docs/Help/Getting_Started/Troubleshooting_sender_authentication.html
+Redirect 301 /User_Guide/Settings/Sender_authentication/providers.html https://sendgrid.com/docs/Help/Getting_Started/dns_providers.html
