@@ -1044,6 +1044,12 @@ Redirect 301 /User_Guide/SendGrid_for_Mobile/subusers.html https://sendgrid.com/
 Redirect 301 /User_Guide/SendGrid_for_Mobile/index.html https://sendgrid.com/docs/help/Getting_Started/how_to_send_email.html
 Redirect 301 /User_Guide/Legacy_Newsletter/index.html https://sendgrid.com/docs/help/Sending_Email/Legacy_Newsletter/index.html
 Redirect 301 /User_Guide/Marketing_Campaigns/index.html https://sendgrid.com/docs/help/Getting_Started/how_to_send_email.html
-
+Redirect 301 /User_Guide/Marketing_Campaigns/getting_started.html https://sendgrid.com/docs/help/Getting_Started/how_to_send_email.html
+Redirect 301 /User_Guide/Marketing_Campaigns/notifications.html https://sendgrid.com/docs/help/Account_and_Settings/notifications.html
+Redirect 301 /User_Guide/Marketing_Campaigns/editor.html https://sendgrid.com/docs/help/Sending_Email/editor.html
+Redirect 301 /User_Guide/Marketing_Campaigns/senders.html https://sendgrid.com/docs/help/Sending_Email/senders.html
+Redirect 301 /User_Guide/Marketing_Campaigns/custom_fields.html https://sendgrid.com/docs/help/Sending_Email/custom_fields.html
+Redirect 301 /User_Guide/Marketing_Campaigns/a_b_testing.html https://sendgrid.com/docs/help/Sending_Email/a_b_testing.html
+Redirect 301 /User_Guide/Marketing_Campaigns/campaign_stats.html https://sendgrid.com/docs/help/Analytics_and_Reporting/campaign_stats.html
 
 
