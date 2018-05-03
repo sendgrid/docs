@@ -73,8 +73,23 @@ Magento M1 and M2 Extension Update
 
 <table class="table" style="width: 100%;">
   <tr>
-    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/partners_icon.png" alt="An update to Partners" ></td>
     <td>We have upgraded our Magento Extension for M1 and M2 Marketplaces to V1.0.3. SendGrid’s extension in M1 and M2 is compatible with Magento Community 2.0, 2.1, 2.2. </td>
+  </tr>
+</table>
+
+{% anchor h2 %}
+10 April 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Updated Alert Behavior
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>In order to provide a better user experience, we've updated the green alert banners you see at the top of the app. Green banners that notify users of successful actions now automatically dismiss after a few seconds, no longer stacking up within the field of view.</td>
   </tr>
 </table>
 
