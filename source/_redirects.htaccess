@@ -1090,4 +1090,10 @@ Redirect 301 /User_Guide/Settings/ip_warmup.html https://sendgrid.com/docs/Help/
 Redirect 301 /User_Guide/Settings/mail.html https://sendgrid.com/docs/Help/Account_and_Settings/mail.html
 Redirect 301 /User_Guide/Settings/parse.html https://sendgrid.com/docs/Help/Account_and_Settings/inbound_parse.html
 Redirect 301 /User_Guide/Settings/partners.html https://sendgrid.com/docs/Help/Account_and_Settings/partners.html
+Redirect 301 /User_Guide/Settings/reading_your_invoice.html https://sendgrid.com/docs/Help/Account_and_Settings/reading_your_invoice.html
+Redirect 301 /User_Guide/Settings/reset_username_password.html https://sendgrid.com/docs/Help/Account_and_Settings/resetting_your_username_and_password.html
+Redirect 301 /User_Guide/Settings/subusers.html https://sendgrid.com/docs/Help/Account_and_Settings/subusers.html
+Redirect 301 /User_Guide/Settings/teammates.html https://sendgrid.com/docs/Help/Account_and_Settings/teammates.html
+Redirect 301 /User_Guide/Settings/tracking.html https://sendgrid.com/docs/Help/Account_and_Settings/tracking.html
+Redirect 301 /User_Guide/Settings/two_factor_authentication.html https://sendgrid.com/docs/Help/Account_and_Settings/two_factor_authentication.html
 Redirect 301 
