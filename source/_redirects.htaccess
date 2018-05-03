@@ -1066,4 +1066,6 @@ Redirect 301 /User_Guide/Statistics/geo.html https://sendgrid.com/docs/Help/Anal
 Redirect 301 /User_Guide/Statistics/global.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/global.html
 Redirect 301 /User_Guide/Statistics/mailbox_provider.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/mailbox_provider.html
 Redirect 301 /User_Guide/Statistics/mailbox_provider_compare.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/mailbox_provider_comparison.html
-Redirect 301 
+Redirect 301 /User_Guide/Statistics/parse.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/inbound_parse.html
+Redirect 301 /User_Guide/Statistics/subuser.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/subuser.html
+Redirect 301 /User_Guide/Statistics/subuser_compare.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/subuser_comparison.html
