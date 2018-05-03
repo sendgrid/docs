@@ -3,7 +3,7 @@ title: "custom elements"
 category: "sending-email"
 group: "tracking"
 ---
-<aside>
+<!-- <aside>
 
 #### Included In This Article
 
@@ -18,6 +18,26 @@ group: "tracking"
 [Horizontal Rule](#hr)
 [Line Breaks](#lines)
 [Embed Videos](#videos)
+
+</aside> -->
+
+<aside>
+
+- [What is domain authentication ok?](#-What-is-domain-authentication)
+- [Key terminology](#-Key-terminology)
+    - [DNS](#-DNS)
+    - [DKIM](#-DKIM)
+    - [SPF](#-SPF)
+    - [CNAME](#-CNAME)
+- [Setting up domain authentication](#-Setting-up-domain-authentication)
+    - [Before you begin](#-Before-you-begin)
+    - [Setting up DNS](#-Setting-up-DNS)
+- [Advanced settings](#-Advanced-settings)
+    - [Using automated security](#-Using-automated-security)
+    - [Using a custom return path](#-Using-a-custom-return-path)
+    - [Using a custom DKIM selector](#-Using-a-custom-DKIM-selector)
+    - [Assigning a subuser](#-Assigning-a-subuser)
+- [Migrating from legacy Whitelabel](#-Migrating-from-legacy-Whitelabel)
 
 </aside>
 

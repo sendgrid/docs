@@ -19,6 +19,7 @@ $aside-width: 300px;
 }
 
 .doc-wrap > div > aside {
+  padding-top: $scaleup-2;
   width: $aside-width;
   position: absolute;
   top: 0;
@@ -27,8 +28,22 @@ $aside-width: 300px;
 .doc-wrap aside a {
   display: block;
   margin-bottom: $scaledown-3;
+  font-size: $scaledown-1;
 
   @include colfax(600);
+}
+
+.doc-wrap aside p {
+  margin: 0 0 0 0;
+}
+
+.doc-wrap aside > ul{
+  padding-left: 0;
+}
+
+// Only show circle on sub nav items
+.doc-wrap aside ul li > ul {
+  list-style: circle;
 }
 
 .doc-main {
@@ -37,7 +52,6 @@ $aside-width: 300px;
 }
 
 // custom Markdown components
-
 .callout {
   padding: $scaledown-3 $scaleup-2;
   margin: $scaleup-4 0;
