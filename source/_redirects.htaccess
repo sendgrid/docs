@@ -1057,6 +1057,6 @@ Redirect 301 /User_Guide/Marketing_Campaigns/Managing_Contacts/adding_contacts.h
 Redirect 301 /User_Guide/Marketing_Campaigns/Managing_Contacts/formating_a_CSV.html https://sendgrid.com/docs/Help/Managing_Contacts/formatting_a_CSV.html
 Redirect 301 /User_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html https://sendgrid.com/docs/Help/Managing_Contacts/managing_contact_list.html
 Redirect 301 /User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html https://sendgrid.com/docs/Help/Managing_Contacts/segmenting_your_contacts.html
-
-
-
+Redirect 301 /User_Guide/Statistics/index.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/index.html
+Redirect 301 /User_Guide/Statistics/browser.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/index.html
+Redirect 301 
