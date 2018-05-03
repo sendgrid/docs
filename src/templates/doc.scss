@@ -1,5 +1,56 @@
-.post-meta {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+@import '../scss/global/variables';
+@import '../scss/global/mixins';
+
+$aside-width: 300px;
+
+.doc-wrap {
+  max-width: 100%;
+  position: relative;
+}
+
+.doc-wrap .page-title {
+  margin-left: $aside-width;
+  padding-left: $scaleup-8;
+}
+
+.doc-main,
+.doc-wrap > div > aside {
+  overflow: hidden;
+}
+
+.doc-wrap > div > aside {
+  width: $aside-width;
+  position: absolute;
+  top: 0;
+}
+
+.doc-wrap aside a {
+  display: block;
+  margin-bottom: $scaledown-3;
+
+  @include colfax(600);
+}
+
+.doc-main {
+  padding: 0 $scaleup-8;
+  margin-left: $aside-width;
+}
+
+// custom Markdown components
+
+.callout {
+  padding: $scaledown-3 $scaleup-2;
+  margin: $scaleup-4 0;
+}
+
+.callout > p {
+  margin: $scaledown-3 0;
+}
+
+.callout--info {
+  border-left: 4px solid $sg-blue;
+}
+
+.callout--alert {
+  border-left: 4px solid $alert-danger-text;
 }

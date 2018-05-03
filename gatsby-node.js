@@ -1,7 +1,6 @@
 const path = require('path');
 const _ = require('lodash');
 const webpackLodashPlugin = require('lodash-webpack-plugin');
-const axios = require('axios');
 const crypto = require('crypto');
 
 /**
@@ -143,7 +142,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           .update(JSON.stringify(cat))
           .digest('hex');
 
-        // add it to userNode
+        // add it to contentNode
         cat.internal.contentDigest = contentDigest;
 
         // Create node with the gatsby createNode() API

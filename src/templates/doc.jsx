@@ -8,13 +8,12 @@ import './b16-tomorrow-dark.css';
 import './doc.scss';
 
 import Callout from '../componentsMarkdown/Callout';
-import PageAnchor from '../componentsMarkdown/PageAnchor';
+// import PageAnchor from '../componentsMarkdown/PageAnchor';
 
 const renderAst = new RehypeReact({
   createElement: React.createElement,
   components: {
     'call-out': Callout,
-    'page-anchor': PageAnchor,
   },
 }).Compiler;
 
@@ -23,23 +22,25 @@ export default class PostTemplate extends React.Component {
     const { slug } = this.props.pathContext;
     const postNode = this.props.data.markdownRemark;
     const post = postNode.frontmatter;
+
     if (!post.id) {
       post.id = slug;
     }
+
     if (!post.category_id) {
       post.category_id = config.postDefaultCategoryID;
     }
+
     return (
-      <div className="docs-main">
+      <div>
         <NavSub />
-        <div className="container">
+        <div className="container-lg">
           <Helmet>
             <title>{`${post.title} | ${config.siteTitle}`}</title>
           </Helmet>
           <SEO postPath={slug} postNode={postNode} postSEO />
-          <div>
-            <h1>{post.title}</h1>
-            {/* <div dangerouslySetInnerHTML={{ __html: postNode.html }} /> */}
+          <div className="doc-wrap">
+            <h1 className="page-title">{post.title}</h1>
             {renderAst(postNode.htmlAst)}
           </div>
         </div>

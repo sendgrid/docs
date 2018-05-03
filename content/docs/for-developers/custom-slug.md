@@ -1,21 +1,11 @@
 ---
-title: "custom URI"
+title: "custom elements"
 category: "sending-email"
 group: "tracking"
-# path: "foo/bar"
 ---
+<aside>
 
-# NOTE: This "post" on [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) and is meant to test styling of Markdown generated documents.
-
-This is intended as a quick reference and showcase. For more complete info, see [John Gruber's original spec](http://daringfireball.net/projects/markdown/) and the [Github-flavored Markdown info page](http://github.github.com/github-flavored-markdown/).
-
-This cheatsheet is specifically _Markdown Here's_ version of Github-flavored Markdown. This differs slightly in styling and syntax from what Github uses, so what you see below might vary a little from what you get in a _Markdown Here_ email, but it should be pretty close.
-
-You can play around with Markdown on our [live demo page](http://www.markdown-here.com/livedemo.html).
-
-(If you're not a Markdown Here user, check out the [Markdown Cheatsheet](./Markdown-Cheatsheet) that is not specific to MDH. But, really, you should also use Markdown Here, because it's awesome. http://markdown-here.com)
-
-##### Table of Contents
+#### Included In This Article
 
 [Headers](#headers)
 [Emphasis](#emphasis)
@@ -24,11 +14,14 @@ You can play around with Markdown on our [live demo page](http://www.markdown-he
 [Images](#images)
 [Code and Syntax Highlighting](#code)
 [Tables](#tables)
-[Blockquotes](#blockquotes)
 [Inline HTML](#html)
 [Horizontal Rule](#hr)
 [Line Breaks](#lines)
-[YouTube Videos](#videos)
+[Embed Videos](#videos)
+
+</aside>
+
+<div class="doc-main"/>
 
 <a name="headers"/>
 
@@ -42,7 +35,7 @@ You can play around with Markdown on our [live demo page](http://www.markdown-he
 ##### H5
 ###### H6
 
-Alternatively, for H1 and H2, an underline-ish style:
+Alternatively, for H1 and H2, an underline-ish style like:
 
 Alt-H1
 ======
@@ -284,25 +277,6 @@ The outer pipes (|) are optional, and you don't need to make the raw Markdown li
 | _Still_  | `renders` | **nicely** |
 | 1        | 2         | 3          |
 
-<a name="blockquotes"/>
-
-## Blockquotes
-
-```no-highlight
-> Blockquotes are very handy in email to emulate reply text.
-> This line is part of the same quote.
-
-Quote break.
-
-> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote.
-```
-
-> Blockquotes are very handy in email to emulate reply text.
-> This line is part of the same quote.
-
-Quote break.
-
-> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can _put_ **Markdown** into a blockquote.
 
 <a name="html"/>
 
@@ -390,18 +364,55 @@ This line is only separated by a single newline, so it's a separate line in the 
 
 <a name="videos"/>
 
-## YouTube Videos
+## Embed Videos
 
-They can't be added directly but you can add an image with a link to the video like this:
-
-```no-highlight
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=8AkLfYOgIrE
-" target="_blank"><img src="http://img.youtube.com/vi/8AkLfYOgIrE/0.jpg"
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
-```
-
-Or, in pure Markdown, but losing the image sizing and border:
+Use an iframe :)
 
 ```no-highlight
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vCadcBR95oU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 ```
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vCadcBR95oU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+Push it. Push it good.
+
+<a name="callouts"/>
+
+## Callouts
+
+```no-highlight
+<call-out>
+  I'm callout infor
+</call-out>
+```
+
+<call-out>
+
+  **Info callout**
+
+  A consequat vestibulum per feugiat massa taciti, accumsan nascetur vehicula est phasellus in, facilisis parturient bibendum iaculis felis.
+  [You can do links!](https://sendgrid.com)
+
+  A consequat vestibulum per feugiat massa taciti, accumsan nascetur vehicula est phasellus in, facilisis parturient bibendum iaculis felis.
+  [You can do links!](https://sendgrid.com)
+
+</call-out>
+
+```no-highlight
+<call-out type="alert">
+  I'm callout infor
+</call-out>
+```
+
+<call-out type="alert">
+
+  **Info callout**
+
+  A consequat vestibulum per feugiat massa taciti, accumsan nascetur vehicula est phasellus in, facilisis parturient bibendum iaculis felis.
+  [You can do links!](https://sendgrid.com)
+
+  A consequat vestibulum per feugiat massa taciti, accumsan nascetur vehicula est phasellus in, facilisis parturient bibendum iaculis felis.
+  [You can do links!](https://sendgrid.com)
+
+</call-out>
+

@@ -31,11 +31,9 @@
     "lodash-webpack-plugin": "^0.11.4",
     "marked": "^0.3.19",
     "react": "^16.2.0",
-    "react-disqus-comments": "^1.1.1",
     "react-dom": "^16.2.0",
     "react-helmet": "^5.2.0",
     "react-share": "^2.0.0",
-    "react-twitter-widgets": "^1.7.1",
     "rehype-react": "^3.0.2",
     "stylelint-selector-bem-pattern": "^2.0.0"
   },
