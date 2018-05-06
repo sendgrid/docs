@@ -248,3 +248,11 @@ Iterators
 </ol>
 
 
+{% anchor h2 %}
+Additional Resources
+{% endanchor h2 %}
+
+- [Transactional Templates Overview]({{root_url}}/User_Guide/Transactional_Templates/index.html)
+- [Create and edit Dynamic Transactional Templates]()
+- [Mail Send with Dynamic Transactional Templates](https://dynamic-templates.api-docs.io/3.0)
+- [Transactional Email Unsubscribes]({{root_url}}/User_Guide/Transactional_Email/unsubscribes.html)
