@@ -10,6 +10,10 @@ navigation:
 ---
 FORMAT: 1A
 
+{%info%}
+Due to the hightened sensitivity of these API calls, they will generally require using an Authorization header of `Basic user:pass`, where the `user:pass` has been Base64-encoded. They will generally not allow Authorization by API Key.
+{%endinfo%}
+
 ## User Profile [/user/profile]
 
 ### GET User Profile [GET]
