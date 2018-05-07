@@ -32,6 +32,21 @@ The following new features and changes to the service are available.
 </table>
 
 {% anchor h2 %}
+1 May 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Sales tax for customers in certain US jurisdictions
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/pricing_icon.png" alt="An update to a price"></td>
+    <td>We’re beginning to charge sales tax for use of certain SendGrid products by non-tax exempt customers based in WA, NY, TX, Denver, Boulder or Chicago. This change is required to comply with applicable tax laws. For more information about our new sales tax and how to delcare your organization tax exempt, see [Sales Taxes and Tax-Exempt Status]({{root_url}}/User_Guide/Settings/taxes_and_tax_exempt.html).</td>
+  </tr>
+</table>
+
+{% anchor h2 %}
 17 April 2018
 {% endanchor %}
 
@@ -57,10 +72,41 @@ Improved Sender Authentication Process (formerly "Whitelabel")
   </tr>
 </table>
 
-For more information on the new process for sender authentication, check out our how to docs:
+For more information on the new process for sender authentication: 
+- Access [Sender Authentication](https://app.sendgrid.com/settings/sender_auth)
+- Read the [blog post](https://sendgrid.com/blog/new-sender-authentication/) about Sender Authentication.
+- Check out our how to docs on [How to set up domain authentication]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html) and [How to set up link branding]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_link_branding.html)
 
-- [How to set up domain authentication]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html)
-- [How to set up link branding]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_link_branding.html)
+
+{% anchor h2 %}
+11 April 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Magento M1 and M2 Extension Update
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/partners_icon.png" alt="An update to Partners" ></td>
+    <td>We have upgraded our Magento Extension for M1 and M2 Marketplaces to V1.0.3. SendGrid’s extension in M1 and M2 is compatible with Magento Community 2.0, 2.1, 2.2. </td>
+  </tr>
+</table>
+
+{% anchor h2 %}
+10 April 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Updated Alert Behavior
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>In order to provide a better user experience, we've updated the green alert banners you see at the top of the app. Green banners that notify users of successful actions now automatically dismiss after a few seconds, no longer stacking up within the field of view.</td>
+  </tr>
+</table>
 
 {% anchor h2 %}
 9 April 2018

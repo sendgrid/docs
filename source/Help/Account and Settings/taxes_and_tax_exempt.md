@@ -7,7 +7,7 @@ title: Sales Taxes and Tax-Exempt Status
 weight: 0
 layout: page
 navigation:
-  show: false
+  show: true
 ---
 
 - [Declaring tax-exempt status](#-Declaring-tax-exempt-status)
