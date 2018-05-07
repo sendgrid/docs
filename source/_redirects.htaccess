@@ -144,7 +144,7 @@ Redirect 301 /API_Reference/Web_API_v3/Advanced_Suppression_Manager/index.html h
 Redirect 301 /API_Reference/Web_API_v3/Advanced_Suppression_Manager/global_suppressions.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/global_suppressions.html
 Redirect 301 /API_Reference/Web_API_v3/Advanced_Suppression_Manager/groups.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/groups.html
 Redirect 301 /API_Reference/Web_API_v3/Advanced_Suppression_Manager/suppressions.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/suppressions.html
-Redirect 301 /API_Reference/Web_API_v3/IP_Management/ip_warmup_schedule.html https://sendgrid.com/docs/User_Guide/Settings/dedicated_ip_addresses.html
+Redirect 301 /API_Reference/Web_API_v3/IP_Management/ip_warmup_schedule.html ttps://sendgrid.com/docs/Help/Account_and_Settings/dedicated_ip_addresses.html
 Redirect 301 /API_Reference/Web_API_v3/Mail/overview.html http://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/index.html
 Redirect 301 /API_Reference/Web_API/parse_settings.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Webhooks/parse.html
 Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/global_unsubscribes.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/global_unsubscribes.html
@@ -161,26 +161,26 @@ Redirect 301 /API_Reference/SMTP_API/smtpapi_validator.html https://sendgrid.com
 #
 #######
 #forced a redirect file at /Apps/index.html - the following redirect wouldn't take
-Redirect 301 /Apps/index.html https://sendgrid.com/docs/User_Guide/Settings/account.html
-Redirect 301 /Apps/address_whitelisting.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
-Redirect 301 /Apps/bcc.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
+Redirect 301 /Apps/index.html ttps://sendgrid.com/docs/Help/Account_and_Settings/account.html
+Redirect 301 /Apps/address_whitelisting.html ttps://sendgrid.com/docs/Help/Account_and_Settings/mail.html
+Redirect 301 /Apps/bcc.html ttps://sendgrid.com/docs/Help/Account_and_Settings/mail.html
 #forced a redirect file at /Apps/bypass_list_management.html - the following redirect wouldn't take
-Redirect 301 /Apps/bypass_list_management.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
-Redirect 301 /Apps/click_tracking.html https://sendgrid.com/docs/User_Guide/Settings/tracking.html
+Redirect 301 /Apps/bypass_list_management.html ttps://sendgrid.com/docs/Help/Account_and_Settings/mail.html
+Redirect 301 /Apps/click_tracking.html ttps://sendgrid.com/docs/Help/Account_and_Settings/tracking.html
 Redirect 301 /Apps/domain_keys.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 Redirect 301 /Apps/dkim.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
-Redirect 301 /Apps/email_templates.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
-Redirect 301 /Apps/event_notification.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
-Redirect 301 /Apps/footer.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
-Redirect 301 /Apps/forward_spam.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
-Redirect 301 /Apps/google_analytics.html https://sendgrid.com/docs/User_Guide/Settings/tracking.html
-Redirect 301 /Apps/gravatar.html https://sendgrid.com/docs/User_Guide/Settings/account.html
-Redirect 301 /Apps/new_relic.html https://sendgrid.com/docs/User_Guide/Settings/partners.html
-Redirect 301 /Apps/open_tracking.html https://sendgrid.com/docs/User_Guide/Settings/tracking.html
-Redirect 301 /Apps/return_path_seedlist.html https://sendgrid.com/docs/User_Guide/Settings/account.html
-Redirect 301 /Apps/sendwithus.html https://sendgrid.com/docs/User_Guide/Settings/partners.html
-Redirect 301 /Apps/spam_checker.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
-Redirect 301 /Apps/subscription_tracking.html https://sendgrid.com/docs/User_Guide/Settings/tracking.html
+Redirect 301 /Apps/email_templates.html ttps://sendgrid.com/docs/Help/Account_and_Settings/mail.html
+Redirect 301 /Apps/event_notification.html ttps://sendgrid.com/docs/Help/Account_and_Settings/mail.html
+Redirect 301 /Apps/footer.html ttps://sendgrid.com/docs/Help/Account_and_Settings/mail.html
+Redirect 301 /Apps/forward_spam.html ttps://sendgrid.com/docs/Help/Account_and_Settings/mail.html
+Redirect 301 /Apps/google_analytics.html ttps://sendgrid.com/docs/Help/Account_and_Settings/tracking.html
+Redirect 301 /Apps/gravatar.html ttps://sendgrid.com/docs/Help/Account_and_Settings/account.html
+Redirect 301 /Apps/new_relic.html ttps://sendgrid.com/docs/Help/Account_and_Settings/partners.html
+Redirect 301 /Apps/open_tracking.html ttps://sendgrid.com/docs/Help/Account_and_Settings/tracking.html
+Redirect 301 /Apps/return_path_seedlist.html ttps://sendgrid.com/docs/Help/Account_and_Settings/account.html
+Redirect 301 /Apps/sendwithus.html ttps://sendgrid.com/docs/Help/Account_and_Settings/partners.html
+Redirect 301 /Apps/spam_checker.html ttps://sendgrid.com/docs/Help/Account_and_Settings/mail.html
+Redirect 301 /Apps/subscription_tracking.html ttps://sendgrid.com/docs/Help/Account_and_Settings/tracking.html
 Redirect 301 /Apps/template_engine.html https://sendgrid.com/docs/User_Guide/Transactional_Templates/create_and_edit_transactional_templates.html
 
 #######
@@ -239,7 +239,7 @@ Redirect 301 /Classroom/Deliver/warming_up_ips.html https://sendgrid.com/docs/Cl
 Redirect 301 /Classroom/Send/api_keys.html https://sendgrid.com/docs/Classroom/Send/How_Emails_Are_Sent/api_keys.html
 Redirect 301 /Classroom/Deliver/Undeliverable_Email/how_sendgrid_handles_550_requested_action_not_taken_mailbox_unavailable_bounces.html https://sendgrid.com/docs/Classroom/Track/Bounces/common_smtp_server_bounce_responses.html
 Redirect 301 /Classroom/Troubleshooting/your_account_is_still_being_provisioned_you_may_not_be_able_to_send_emails.html https://sendgrid.com/docs/Classroom/Troubleshooting/Account_Administration/your_account_is_still_being_provisioned_you_will_not_be_able_to_send_out_any_email.html
-Redirect 301 /Classroom/Basics/Security/two_factor_authentication_faq.html https://sendgrid.com/docs/User_Guide/Settings/two_factor_authentication.html
+Redirect 301 /Classroom/Basics/Security/two_factor_authentication_faq.html ttps://sendgrid.com/docs/Help/Account_and_Settings/two_factor_authentication.html
 
 #######
 #
@@ -267,16 +267,16 @@ Redirect 301 /Classroom/Basics/where_can_i_enable_subscription_tracking.html htt
 Redirect 301 /Classroom/Basics/why_are_the_pro_plans_recommended_above_all_others.html http://sendgrid.com/docs/Classroom/Basics/Account/why_are_the_pro_plans_recommended_above_all_others.html
 Redirect 301 /Classroom/Basics/your_reputation_what_is_it.html http://sendgrid.com/docs/Classroom/Basics/Misc/your_reputation_what_is_it.html
 Redirect 301 /Classroom/Basics/Security/setting_up_2_factor_authentication.html https://sendgrid.com/docsUser_Guide/Settings/two_factor_authentication.html
-Redirect 301 /Classroom/Basics/Account/adding_an_additional_dedicated_ip_to_your_account.html https://sendgrid.com/docs/User_Guide/Settings/dedicated_ip_addresses.html
-Redirect 301 /Classroom/Basics/Account/creating_multiple_user_credentials_for_sub_users.html https://sendgrid.com/docs/User_Guide/Settings/teammates.html
-Redirect 301 /Classroom/Basics/Account/im_a_multiple_credential_user_and_i_need_to_reset_my_password.html https://sendgrid.com/docs/User_Guide/Settings/teammates.html
-Redirect 301 /Classroom/Basics/Account/what_is_my_sending_originating_ip_address_with_sendgrid.html https://sendgrid.com/docs/User_Guide/Settings/dedicated_ip_addresses.html
-Redirect 301 /Classroom/Basics/Security/sendgrid_multiauth_multiple_account_credentials.html https://sendgrid.com/docs/User_Guide/Settings/teammates.html
+Redirect 301 /Classroom/Basics/Account/adding_an_additional_dedicated_ip_to_your_account.html ttps://sendgrid.com/docs/Help/Account_and_Settings/dedicated_ip_addresses.html
+Redirect 301 /Classroom/Basics/Account/creating_multiple_user_credentials_for_sub_users.html ttps://sendgrid.com/docs/Help/Account_and_Settings/teammates.html
+Redirect 301 /Classroom/Basics/Account/im_a_multiple_credential_user_and_i_need_to_reset_my_password.html ttps://sendgrid.com/docs/Help/Account_and_Settings/teammates.html
+Redirect 301 /Classroom/Basics/Account/what_is_my_sending_originating_ip_address_with_sendgrid.html ttps://sendgrid.com/docs/Help/Account_and_Settings/dedicated_ip_addresses.html
+Redirect 301 /Classroom/Basics/Security/sendgrid_multiauth_multiple_account_credentials.html ttps://sendgrid.com/docs/Help/Account_and_Settings/teammates.html
 Redirect 301 /Classroom/Basics/Security/what_security_measures_are_available_with_sendgrid_accounts.html https://sendgrid.com/policies/security/
 Redirect 301 /Classroom/Basics/Marketing_Campaigns/migration_guide_part_1_migrating_your_recipient_lists_into_contacts.html https://sendgrid.com/docs/Classroom/Basics/Marketing_Campaigns/migrating_lists.html
 Redirect 301 /Classroom/Basics/Marketing_Campaigns/migration_guide_part_2_importing_your_unsubscribes.html https://sendgrid.com/docs/Classroom/Basics/Marketing_Campaigns/migrating_unsubscribes.html
 Redirect 301 /Classroom/Basics/Marketing_Campaigns/migration_guide_part_3_moving_your_content.html https://sendgrid.com/docs/Classroom/Basics/Marketing_Campaigns/migrating_content.html
-Redirect 301 /Classroom/Basics/Misc/where_can_i_enable_subscription_tracking.html https://sendgrid.com/docs/User_Guide/Settings/tracking.html#-Subscription-Tracking
+Redirect 301 /Classroom/Basics/Misc/where_can_i_enable_subscription_tracking.html ttps://sendgrid.com/docs/Help/Account_and_Settings/tracking.html#-Subscription-Tracking
 Redirect 301 /Classroom/Basics/marketing_campaigns_video_tutorials.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/index.html
 Redirect 301 /Classroom/Basics/Marketing_Campaigns/remove_bounced_addresses.html https://sendgrid.com/docs/Classroom/Basics/Marketing_Campaigns/how_to_remove_unusable_contacts.html
 
@@ -304,7 +304,7 @@ Redirect 301 /Classroom/Build/responsive_templates_and_design.html http://sendgr
 Redirect 301 /Classroom/Build/substitution_and_section_tags.html http://sendgrid.com/docs/Classroom/Build/Add_Content/substitution_and_section_tags.html
 Redirect 301 /Classroom/Build/whats_the_recommended_message_size_limit.html http://sendgrid.com/docs/Classroom/Build/Add_Content/whats_the_recommended_message_size_limit.html
 Redirect 301 /Classroom/Build/Format_Content/responsive_templates_and_design.html https://sendgrid.com/docs/Classroom/Build/Format_Content/html_rendering__the_dos_and_donts_of_cross_platform_email_design.html
-Redirect 301 /Classroom/Build/Choose_Content/a_b_testing.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/a_b_testing.html
+Redirect 301 /Classroom/Build/Choose_Content/a_b_testing.html https://sendgrid.com/docs/Help/Sending_Email/a_b_testing.html
 #######
 #
 # /docs/Classroom/Deliver - redirects for Classroom/Deliver
@@ -364,7 +364,7 @@ Redirect 301 /Classroom/Deliver/Undeliverable_Email/how_can_i_guarantee_my_email
 Redirect 301 /Classroom/Deliver/Undeliverable_Email/my_emails_are_being_blocked.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/email_deliverability_101.html
 Redirect 301 /Classroom/Deliver/Address_Lists/why_purchase_lists_when_you_can.html https://sendgrid.com/docs/Classroom/Deliver/Address_Lists/why_purchased_email_lists_are_no_good.html
 Redirect 301 /Classroom/Deliver/Delivery_Introduction/bacn_its_whats_for_dinner.html https://sendgrid.com/docs/Classroom/Deliver/index.html
-Redirect 301 /Classroom/Deliver/Delivery_Introduction/IP_reputation_montoring.html https://sendgrid.com/docs/User_Guide/Settings/dedicated_ip_addresses.html
+Redirect 301 /Classroom/Deliver/Delivery_Introduction/IP_reputation_montoring.html ttps://sendgrid.com/docs/Help/Account_and_Settings/dedicated_ip_addresses.html
 #######
 #
 # /docs/Classroom/Send - redirects for Classroom/Send
@@ -428,7 +428,7 @@ Redirect 301 /Classroom/Track/unsubscribe_via_the_subscription_tracking.html htt
 #
 #######
 
-Redirect 301 /Classroom/Troubleshooting/Account_Administration/how_can_i_turn_off_2_factor_authentication.html https://sendgrid.com/docs/User_Guide/Settings/two_factor_authentication.html#-Disabling-TwoFactor-Authentication
+Redirect 301 /Classroom/Troubleshooting/Account_Administration/how_can_i_turn_off_2_factor_authentication.html ttps://sendgrid.com/docs/Help/Account_and_Settings/two_factor_authentication.html#-Disabling-TwoFactor-Authentication
 Redirect 301 /Classroom/Troubleshooting/Account_Administration/your_account_is_still_being_provisioned_you_will_not_be_able_to_send_any_email.html https://sendgrid.com/docs/Classroom/Basics/Account/account_sign_up_faq.html
 Redirect 301 /Classroom/Troubleshooting/account_under_review_suspended.html https://sendgrid.com/docs/Classroom/Troubleshooting/Account_Administration/account_under_review_suspended.html
 Redirect 301 /Classroom/Troubleshooting/cant_access_the_email_address_on_file_for_your_sendgrid_account.html https://sendgrid.com/docs/Classroom/Troubleshooting/Account_Administration/cant_access_the_email_address_on_file_for_your_sendgrid_account.html
@@ -474,13 +474,13 @@ Redirect 301 /Classroom/Troubleshooting/Delivery_Issues/email_was_deferred_due_t
 # /docs/Delivery_Metrics - moved to User Guide - originally sendgrid.com/docs/Delivery_Metrics/
 #
 #######
-Redirect 301 /Delivery_Metrics/index.html https://sendgrid.com/docs/User_Guide/Statistics/index.html
+Redirect 301 /Delivery_Metrics/index.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/index.html
 Redirect 301 /Delivery_Metrics/advanced_statistics.html https://sendgrid.com/docs/User_Guide/Delivery_Metrics/advanced_statistics.html
-Redirect 301 /Delivery_Metrics/alerts.html https://sendgrid.com/docs/User_Guide/Settings/alerts.html
-Redirect 301 /Delivery_Metrics/categories.html https://sendgrid.com/docs/User_Guide/Statistics/categories.html
-Redirect 301 /Delivery_Metrics/email_activity.html https://sendgrid.com/docs/User_Guide/email_activity.html
+Redirect 301 /Delivery_Metrics/alerts.html ttps://sendgrid.com/docs/Help/Account_and_Settings/alerts.html
+Redirect 301 /Delivery_Metrics/categories.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/categories.html
+Redirect 301 /Delivery_Metrics/email_activity.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/email_activity.html
 #forced a redirect file at /Delivery_Metrics/email_reports.html - the following redirect wouldn't take
-Redirect 301 /Delivery_Metrics/email_reports.html https://sendgrid.com/docs/User_Guide/Settings/alerts.html
+Redirect 301 /Delivery_Metrics/email_reports.html ttps://sendgrid.com/docs/Help/Account_and_Settings/alerts.html
 
 #######
 #
@@ -516,15 +516,15 @@ Redirect 301 /Integrate/Open_Source_Apps/wordpress.html https://sendgrid.com/doc
 #######
 Redirect 301 /Marketing_Emails/Email_Marketing_Campaigns/index.html https://sendgrid.com/docs/Glossary/Email_Types/index.html
 Redirect 301 /Marketing_Emails/index.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/index.html
-Redirect 301 /Marketing_Emails/analytics.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html
-Redirect 301 /Marketing_Emails/create_manage.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html
+Redirect 301 /Marketing_Emails/analytics.html https://sendgrid.com/docs/Help/Sending_Email/campaign_stats.html
+Redirect 301 /Marketing_Emails/create_manage.html https://sendgrid.com/docs/Help/Getting_Started/how_to_send_email.html
 Redirect 301 /Marketing_Emails/dashboard.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/index.html
 Redirect 301 /Marketing_Emails/Email_Marketing_Campaigns/peer_invitations.html https://sendgrid.com/docs/Glossary/Email_Types/peer_invitations.html
 Redirect 301 /Marketing_Emails/Email_Marketing_Campaigns/reconfirmation.html https://sendgrid.com/docs/Glossary/Email_Types/reconfirmation.html
 Redirect 301 /Marketing_Emails/tags.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html
-Redirect 301 /Marketing_Emails/unsubscribes.html https://sendgrid.com/docs/User_Guide/Suppressions/index.html
+Redirect 301 /Marketing_Emails/unsubscribes.html ttps://sendgrid.com/docs/Help/Sending_Email/index_suppressions.html
 Redirect 301 /Marketing_Emails/recipients.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html
-Redirect 301 /Marketing_Emails/sender_address.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/senders.html
+Redirect 301 /Marketing_Emails/sender_address.html https://sendgrid.com/docs/Help/Sending_Email/senders.html
 
 #######
 #
@@ -542,86 +542,86 @@ Redirect 301 /Transactional_Email/Template_Engine/setup_guide.html https://sendg
 #
 #######
 
-Redirect 301 /User_Guide/dashboard.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html
+Redirect 301 /User_Guide/dashboard.html https://sendgrid.com/docs/Help/Getting_Started/how_to_send_email.html
 Redirect 301 /User_Guide/about.html https://sendgrid.com/docs/index.html
 
 Redirect 301 /User_Guide/Account/api_keys.html https://sendgrid.com/docs/Classroom/Send/api_keys.html
-Redirect 301 /User_Guide/Account/index.html https://sendgrid.com/docs/User_Guide/Settings/account.html
-Redirect 301 /User_Guide/Account/Account_Settings/global_settings.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
-Redirect 301 /User_Guide/Account/Account_Settings/index.html https://sendgrid.com/docs/User_Guide/Settings/account.html
+Redirect 301 /User_Guide/Account/index.html ttps://sendgrid.com/docs/Help/Account_and_Settings/account.html
+Redirect 301 /User_Guide/Account/Account_Settings/global_settings.html ttps://sendgrid.com/docs/Help/Account_and_Settings/mail.html
+Redirect 301 /User_Guide/Account/Account_Settings/index.html ttps://sendgrid.com/docs/Help/Account_and_Settings/account.html
 Redirect 301 /User_Guide/Account/Account_Settings/multiple_credentials.html https://sendgrid.com/docs/User_Guide/Settings/credentials.html
 Redirect 301 /User_Guide/Account/Account_Settings/password.html https://sendgrid.com/docs/Classroom/Basics/password.html
-Redirect 301 /User_Guide/Account/Account_Settings/profile_settings.html https://sendgrid.com/docs/User_Guide/Settings/account.html
-Redirect 301 /User_Guide/Account/Account_Settings/two_factor_authentication.html https://sendgrid.com/docs/User_Guide/Settings/two_factor_authentication.html
-Redirect 301 /User_Guide/Account/billing_settings.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
-Redirect 301 /User_Guide/Account/billing_history.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
-Redirect 301 /User_Guide/Account/billing.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
-Redirect 301 /User_Guide/Account/alert_settings.html https://sendgrid.com/docs/User_Guide/Settings/alerts.html
-Redirect 301 /User_Guide/advanced_suppression_manager.html https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html
-Redirect 301 /User_Guide/Apps/address_whitelisting.html https://sendgrid.com/docs/User_Guide/Settings/mail.html
-Redirect 301 /User_Guide/Apps/bcc.html https://sendgrid.com/docs/User_Guide/Settings/mail.html#-BCC
+Redirect 301 /User_Guide/Account/Account_Settings/profile_settings.html ttps://sendgrid.com/docs/Help/Account_and_Settings/account.html
+Redirect 301 /User_Guide/Account/Account_Settings/two_factor_authentication.html ttps://sendgrid.com/docs/Help/Account_and_Settings/two_factor_authentication.html
+Redirect 301 /User_Guide/Account/billing_settings.html ttps://sendgrid.com/docs/Help/Account_and_Settings/billing.html
+Redirect 301 /User_Guide/Account/billing_history.html ttps://sendgrid.com/docs/Help/Account_and_Settings/billing.html
+Redirect 301 /User_Guide/Account/billing.html ttps://sendgrid.com/docs/Help/Account_and_Settings/billing.html
+Redirect 301 /User_Guide/Account/alert_settings.html ttps://sendgrid.com/docs/Help/Account_and_Settings/alerts.html
+Redirect 301 /User_Guide/advanced_suppression_manager.html https://sendgrid.com/docs/Help/Sending_Email/unsubscribe_groups.html
+Redirect 301 /User_Guide/Apps/address_whitelisting.html ttps://sendgrid.com/docs/Help/Account_and_Settings/mail.html
+Redirect 301 /User_Guide/Apps/bcc.html ttps://sendgrid.com/docs/Help/Account_and_Settings/mail.html#-BCC
 Redirect 301 /User_Guide/Apps/bypass_list_management.html https://sendgrid.com/docs/API_Reference/SMTP_API/apps.html#bypass_list_management
-Redirect 301 /User_Guide/Apps/click_tracking.html https://sendgrid.com/docs/User_Guide/Settings/tracking.html#-Click-tracking
+Redirect 301 /User_Guide/Apps/click_tracking.html ttps://sendgrid.com/docs/Help/Account_and_Settings/tracking.html#-Click-tracking
 Redirect 301 /User_Guide/Apps/dkim.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 Redirect 301 /User_Guide/Apps/domain_keys.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 Redirect 301 /User_Guide/Apps/email_templates.html https://sendgrid.com/docs/User_Guide/Transactional_Templates/create_and_edit_transactional_templates.html
-Redirect 301 /User_Guide/Apps/event_notification.html https://sendgrid.com/docs/User_Guide/Settings/mail.html#-Event-Notification
-Redirect 301 /User_Guide/Apps/footer.html https://sendgrid.com/docs/User_Guide/Settings/mail.html#-Footer
-Redirect 301 /User_Guide/Apps/forward_spam.html https://sendgrid.com/docs/User_Guide/Settings/mail.html#-Forward-Spam
-Redirect 301 /User_Guide/Apps/google_analytics.html https://sendgrid.com/docs/User_Guide/Settings/tracking.html
-Redirect 301 /User_Guide/Apps/index.html https://sendgrid.com/docs/User_Guide/Settings/account.html
-Redirect 301 /User_Guide/Apps/new_relic.html https://sendgrid.com/docs/User_Guide/Settings/partners.html#-SendGrid-For-New-Relic
-Redirect 301 /User_Guide/Apps/open_tracking.html https://sendgrid.com/docs/User_Guide/Settings/tracking.html#-Open-Tracking
-Redirect 301 /User_Guide/Apps/sendwithus.html https://sendgrid.com/docs/User_Guide/Settings/partners.html#-sendwithus
-Redirect 301 /User_Guide/Apps/spam_checker.html https://sendgrid.com/docs/User_Guide/Settings/mail.html#-Spam-Checker
-Redirect 301 /User_Guide/Apps/subscription_tracking.html https://sendgrid.com/docs/User_Guide/Settings/tracking.html#-Subscription-Tracking
+Redirect 301 /User_Guide/Apps/event_notification.html ttps://sendgrid.com/docs/Help/Account_and_Settings/mail.html#-Event-Notification
+Redirect 301 /User_Guide/Apps/footer.html ttps://sendgrid.com/docs/Help/Account_and_Settings/mail.html#-Footer
+Redirect 301 /User_Guide/Apps/forward_spam.html ttps://sendgrid.com/docs/Help/Account_and_Settings/mail.html#-Forward-Spam
+Redirect 301 /User_Guide/Apps/google_analytics.html ttps://sendgrid.com/docs/Help/Account_and_Settings/tracking.html
+Redirect 301 /User_Guide/Apps/index.html ttps://sendgrid.com/docs/Help/Account_and_Settings/account.html
+Redirect 301 /User_Guide/Apps/new_relic.html ttps://sendgrid.com/docs/Help/Account_and_Settings/partners.html#-SendGrid-For-New-Relic
+Redirect 301 /User_Guide/Apps/open_tracking.html ttps://sendgrid.com/docs/Help/Account_and_Settings/tracking.html#-Open-Tracking
+Redirect 301 /User_Guide/Apps/sendwithus.html ttps://sendgrid.com/docs/Help/Account_and_Settings/partners.html#-sendwithus
+Redirect 301 /User_Guide/Apps/spam_checker.html ttps://sendgrid.com/docs/Help/Account_and_Settings/mail.html#-Spam-Checker
+Redirect 301 /User_Guide/Apps/subscription_tracking.html ttps://sendgrid.com/docs/Help/Account_and_Settings/tracking.html#-Subscription-Tracking
 #merged this "App" with the new Template Engine Docs
 Redirect 301 /User_Guide/Apps/template_engine.html https://sendgrid.com/docs/User_Guide/Transactional_Templates/create_and_edit_transactional_templates.html
 Redirect 301 /User_Guide/attachments.html https://sendgrid.com/docs/Classroom/Build/attachments.html
-Redirect 301 /User_Guide/billing.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
+Redirect 301 /User_Guide/billing.html ttps://sendgrid.com/docs/Help/Account_and_Settings/billing.html
 Redirect 301 /User_Guide/clicktracking_ssl.html https://sendgrid.com/docs/Classroom/Build/content_delivery_networks.html#-Using-Fastly
-Redirect 301 /User_Guide/Delivery_Metrics/advanced_statistics.html https://sendgrid.com/docs/User_Guide/Statistics/index.html
-Redirect 301 /User_Guide/Delivery_Metrics/alerts.html https://sendgrid.com/docs/User_Guide/Settings/alerts.html
+Redirect 301 /User_Guide/Delivery_Metrics/advanced_statistics.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/index.html
+Redirect 301 /User_Guide/Delivery_Metrics/alerts.html ttps://sendgrid.com/docs/Help/Account_and_Settings/alerts.html
 Redirect 301 /User_Guide/Delivery_Metrics/email_error_messages.html https://sendgrid.com/docs/Classroom/Track/Bounces/common_smtp_server_bounce_responses.html
-Redirect 301 /User_Guide/Delivery_Metrics/email_activity.html https://sendgrid.com/docs/User_Guide/email_activity.html
-Redirect 301 /User_Guide/Delivery_Metrics/email_reports.html https://sendgrid.com/docs/User_Guide/Settings/alerts.html
+Redirect 301 /User_Guide/Delivery_Metrics/email_activity.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/email_activity.html
+Redirect 301 /User_Guide/Delivery_Metrics/email_reports.html ttps://sendgrid.com/docs/Help/Account_and_Settings/alerts.html
 Redirect 301 /User_Guide/Email_Deliverability/attachments.html https://sendgrid.com/docs/Classroom/Build/attachments.html
-Redirect 301 /User_Guide/Delivery_Metrics/categories.html https://sendgrid.com/docs/User_Guide/Statistics/categories.html
+Redirect 301 /User_Guide/Delivery_Metrics/categories.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/categories.html
 Redirect 301 /User_Guide/Email_Deliverability/index.html https://sendgrid.com/docs/Classroom/Deliver/index.html
 Redirect 301 /User_Guide/Email_Deliverability/list_scrubbing.html https://sendgrid.com/docs/Classroom/Deliver/list_scrubbing.html
-Redirect 301 /User_Guide/Delivery_Metrics/metrics.html https://sendgrid.com/docs/User_Guide/Statistics/index.html
+Redirect 301 /User_Guide/Delivery_Metrics/metrics.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/index.html
 Redirect 301 /User_Guide/Email_Deliverability/scheduling.html https://sendgrid.com/docs/API_Reference/SMTP_API/scheduling_parameters.html
 Redirect 301 /User_Guide/Email_Deliverability/sender_reputation.html https://sendgrid.com/docs/Glossary/sender_reputation.html
-Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/index.html https://sendgrid.com/docs/User_Guide/Suppressions/index.html
-Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/advanced_suppression_manager.html https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html
-Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/defining_asm_groups.html https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html#-Add-A-Suppression-Group
-Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/recipient_subscription_preferences.html https://sendgrid.com/docs/User_Guide/Suppressions/recipient_subscription_preferences.html
+Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/index.html ttps://sendgrid.com/docs/Help/Sending_Email/index_suppressions.html
+Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/advanced_suppression_manager.html https://sendgrid.com/docs/Help/Sending_Email/unsubscribe_groups.html
+Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/defining_asm_groups.html https://sendgrid.com/docs/Help/Sending_Email/unsubscribe_groups.html#-Add-A-Suppression-Group
+Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/recipient_subscription_preferences.html https://sendgrid.com/docs/Help/Sending_Email/recipient_subscription_preferences.html
 Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/suppressions_vs_unsubscribes.html https://sendgrid.com/docs/Classroom/Deliver/suppressions_vs_unsubscribes.html
 Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/using_suppression_groups.html https://sendgrid.com/docs/User_Guide/Suppressions/suppression_manager.html#-Using-the-API
-Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/advanced_suppression_manager.html https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html
-Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/defining_asm_groups.html https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html#-Add-A-Suppression-Group
-Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/index.html https://sendgrid.com/docs/User_Guide/Suppressions/index.html
-Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/recipient_subscription_preferences.html https://sendgrid.com/docs/User_Guide/Suppressions/recipient_subscription_preferences.html
+Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/advanced_suppression_manager.html https://sendgrid.com/docs/Help/Sending_Email/unsubscribe_groups.html
+Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/defining_asm_groups.html https://sendgrid.com/docs/Help/Sending_Email/unsubscribe_groups.html#-Add-A-Suppression-Group
+Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/index.html ttps://sendgrid.com/docs/Help/Sending_Email/index_suppressions.html
+Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/recipient_subscription_preferences.html https://sendgrid.com/docs/Help/Sending_Email/recipient_subscription_preferences.html
 Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/resubscription_of_users.html https://sendgrid.com/docs/Classroom/Send/resubscription_of_users.html
 Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/suppressions_vs_unsubscribes.html https://sendgrid.com/docs/Classroom/Deliver/suppressions_vs_unsubscribes.html
-Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/using_suppression_groups.html  https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html
-Redirect 301 /User_Guide/Email_Deliverability/Undelivered_Email/bounce_forwarding.html https://sendgrid.com/docs/User_Guide/Settings/mail.html#-Forward-Bounce
+Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/using_suppression_groups.html  https://sendgrid.com/docs/Help/Sending_Email/unsubscribe_groups.html
+Redirect 301 /User_Guide/Email_Deliverability/Undelivered_Email/bounce_forwarding.html ttps://sendgrid.com/docs/Help/Account_and_Settings/mail.html#-Forward-Bounce
 Redirect 301 /User_Guide/Email_Deliverability/Undelivered_Email/drops.html https://sendgrid.com/docs/Glossary/drops.html
 Redirect 301 /User_Guide/Email_Deliverability/Undelivered_Email/index.html https://sendgrid.com/docs/Glossary/undelivered_email.html
 Redirect 301 /User_Guide/Email_Deliverability/Undelivered_Email/spam.html https://sendgrid.com/docs/Glossary/spam.html
 Redirect 301 /User_Guide/Email_Settings/categories.html https://sendgrid.com/docs/Glossary/categories.html
-Redirect 301 /User_Guide/managing_unsubscribes.html https://sendgrid.com/docs/User_Guide/Suppressions/index.html
+Redirect 301 /User_Guide/managing_unsubscribes.html ttps://sendgrid.com/docs/Help/Sending_Email/index_suppressions.html
 Redirect 301 /User_Guide/Marketing_Campaigns/api.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html
 Redirect 301 /User_Guide/Marketing_Campaigns/api_campaigns.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html
 Redirect 301 /User_Guide/Marketing_Campaigns/faq.html https://support.sendgrid.com/hc/en-us/sections/201099947--NEW-Marketing-Campaigns
-Redirect 301 /User_Guide/Marketing_Emails/create_manage.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html
+Redirect 301 /User_Guide/Marketing_Emails/create_manage.html https://sendgrid.com/docs/Help/Getting_Started/how_to_send_email.html
 Redirect 301 /User_Guide/Marketing_Emails/dashboard.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/index.html
 Redirect 301 /User_Guide/Marketing_Emails/index.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/index.html
-Redirect 301 /User_Guide/Marketing_Emails/analytics.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html
+Redirect 301 /User_Guide/Marketing_Emails/analytics.html https://sendgrid.com/docs/Help/Sending_Email/campaign_stats.html
 Redirect 301 /User_Guide/Marketing_Emails/recipients.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html
-Redirect 301 /User_Guide/Marketing_Emails/sender_address.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/senders.html
+Redirect 301 /User_Guide/Marketing_Emails/sender_address.html https://sendgrid.com/docs/Help/Sending_Email/senders.html
 Redirect 301 /User_Guide/Marketing_Emails/tags.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html
-Redirect 301 /User_Guide/Marketing_Emails/unsubscribes.html https://sendgrid.com/docs/User_Guide/Suppressions/index.html
+Redirect 301 /User_Guide/Marketing_Emails/unsubscribes.html ttps://sendgrid.com/docs/Help/Sending_Email/index_suppressions.html
 #forced a redirect file at /User_Guide/multiple_credentials.html - the following redirect wouldn't take
 Redirect 301 /User_Guide/multiple_credentials.html https://sendgrid.com/docs/User_Guide/Settings/credentials.html
 Redirect 301 /User_Guide/peer_invitations.html https://sendgrid.com/docs/Glossary/Email_Types/peer_invitations.html
@@ -639,29 +639,29 @@ Redirect 301 /User_Guide/Setting_Up_Your_Server/Whitelabeling/dns_setup.html htt
 Redirect 301 /User_Guide/Setting_Up_Your_Server/Whitelabeling/index.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 Redirect 301 /User_Guide/Setting_Up_Your_Server/Whitelabeling/spf.html https://sendgrid.com/docs/Glossary/spf.html
 Redirect 301 /User_Guide/Setting_Up_Your_Server/Whitelabeling/whitelabel_wizard.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
-Redirect 301 /User_Guide/Settings/alert_settings.html https://sendgrid.com/docs/User_Guide/Settings/alerts.html
+Redirect 301 /User_Guide/Settings/alert_settings.html ttps://sendgrid.com/docs/Help/Account_and_Settings/alerts.html
 Redirect 301 /User_Guide/Settings/dkim.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 #forced a redirect file at /User_Guide/Settings/domain_keys.html
 Redirect 301 /User_Guide/Settings/domain_keys.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 #this app went away as of May 27, 2015
-Redirect 301 /User_Guide/Settings/credentials.html https://sendgrid.com/docs/User_Guide/Settings/teammates.html
-Redirect 301 /User_Guide/Settings/gravatar.html https://sendgrid.com/docs/User_Guide/Settings/account.html
-Redirect 301 /User_Guide/Settings/ips.html https://sendgrid.com/docs/User_Guide/Settings/dedicated_ip_addresses.html
+Redirect 301 /User_Guide/Settings/credentials.html ttps://sendgrid.com/docs/Help/Account_and_Settings/teammates.html
+Redirect 301 /User_Guide/Settings/gravatar.html ttps://sendgrid.com/docs/Help/Account_and_Settings/account.html
+Redirect 301 /User_Guide/Settings/ips.html ttps://sendgrid.com/docs/Help/Account_and_Settings/dedicated_ip_addresses.html
 Redirect 301 /User_Guide/smtp_ports.html https://sendgrid.com/docs/User_Guide/Setting_Up_Your_Server/smtp_ports.html
 Redirect 301 /User_Guide/template_engine_setup.html https://sendgrid.com/docs/User_Guide/Transactional_Email/Template_Engine/setup_guide.html
 Redirect 301 /User_Guide/throttling.html https://sendgrid.com/docs/Glossary/throttling.html
-Redirect 301 /User_Guide/two_factor_authentication.html https://sendgrid.com/docs/User_Guide/Settings/two_factor_authentication.html
+Redirect 301 /User_Guide/two_factor_authentication.html ttps://sendgrid.com/docs/Help/Account_and_Settings/two_factor_authentication.html
 Redirect 301 /User_Guide/Transactional_Email/Template_Engine/setup_guide.html https://sendgrid.com/docs/User_Guide/Transactional_Templates/create_and_edit_transactional_templates.html
 Redirect 301 /User_Guide/warming_up.html https://sendgrid.com/docs/Classroom/Deliver/warming_up_ips.html
 Redirect 301 /User_Guide/whitelabel_wizard.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
-Redirect 301 /User_Guide/Settings/multifactor_authentication.html https://sendgrid.com/docs/User_Guide/Settings/two_factor_authentication.html
-Redirect 301 /User_Guide/multifactor_authentication.html https://sendgrid.com/docs/User_Guide/Settings/two_factor_authentication.html
+Redirect 301 /User_Guide/Settings/multifactor_authentication.html ttps://sendgrid.com/docs/Help/Account_and_Settings/two_factor_authentication.html
+Redirect 301 /User_Guide/multifactor_authentication.html ttps://sendgrid.com/docs/Help/Account_and_Settings/two_factor_authentication.html
 Redirect 301 /User_Guide/Marketing_Campaigns/Campaigns/index.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaigns.html
-Redirect 301 /User_Guide/Marketing_Campaigns/Campaigns/a_b_testing.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/a_b_testing.html
-Redirect 301 /User_Guide/Settings/index.html https://sendgrid.com/docs/User_Guide/Settings/account.html
-Redirect 301 /User_Guide/Marketing_Campaigns/design_editor.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/editor.html
-Redirect 301 /User_Guide/Marketing_Campaigns/code_editor.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/editor.html
-Redirect 301 /User_Guide/Marketing_Campaigns/beta_editors.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/editor.html
+Redirect 301 /User_Guide/Marketing_Campaigns/Campaigns/a_b_testing.html https://sendgrid.com/docs/Help/Sending_Email/a_b_testing.html
+Redirect 301 /User_Guide/Settings/index.html ttps://sendgrid.com/docs/Help/Account_and_Settings/account.html
+Redirect 301 /User_Guide/Marketing_Campaigns/design_editor.html https://sendgrid.com/docs/Help/Sending_Email/editor.html
+Redirect 301 /User_Guide/Marketing_Campaigns/code_editor.html https://sendgrid.com/docs/Help/Sending_Email/editor.html
+Redirect 301 /User_Guide/Marketing_Campaigns/beta_editors.html https://sendgrid.com/docs/Help/Sending_Email/editor.html
 
 #######
 #
@@ -669,14 +669,14 @@ Redirect 301 /User_Guide/Marketing_Campaigns/beta_editors.html https://sendgrid.
 #
 #######
 
-Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/analytics.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html
-Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/create_manage.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html
+Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/analytics.html https://sendgrid.com/docs/Help/Sending_Email/campaign_stats.html
+Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/create_manage.html https://sendgrid.com/docs/Help/Getting_Started/how_to_send_email.html
 Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/dashboard.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/overview.html
-Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/index.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/index.html https://sendgrid.com/docs/Help/Sending_Email/Legacy_Newsletter/index.html
 Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/recipients.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html
-Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/sender_address.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/senders.html
+Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/sender_address.html https://sendgrid.com/docs/Help/Sending_Email/senders.html
 Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/tags.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html
-Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/unsubscribes.html https://sendgrid.com/docs/User_Guide/Suppressions/index.html
+Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/unsubscribes.html ttps://sendgrid.com/docs/Help/Sending_Email/index_suppressions.html
 
 #######
 #
@@ -710,29 +710,29 @@ Redirect 301 /User_Guide/Templates/manage.html http://sendgrid.com/docs/User_Gui
 # /docs/VidGrid
 #
 #######
-Redirect 301 /VidGrid/activity.html https://sendgrid.com/docs/User_Guide/email_activity.html
-Redirect 301 /VidGrid/advanced_suppression_manager.html https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html
+Redirect 301 /VidGrid/activity.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/email_activity.html
+Redirect 301 /VidGrid/advanced_suppression_manager.html https://sendgrid.com/docs/Help/Sending_Email/unsubscribe_groups.html
 Redirect 301 /VidGrid/Email_Activity/activity.html https://sendgrid.com/docs/VidGrid/email_activity.html
 Redirect 301 /VidGrid/Event_Notification/configure.html https://sendgrid.com/docs/API_Reference/Webhooks/event.html
 Redirect 301 /VidGrid/Event_Notification/eventkit.html https://sendgrid.com/docs/API_Reference/Webhooks/event.html
 Redirect 301 /VidGrid/Event_Notification/index.html https://sendgrid.com/docs/API_Reference/Webhooks/event.html
 Redirect 301 /VidGrid/index.html https://sendgrid.com/docs/index.html
 Redirect 301 /VidGrid/Tools/listassist.html https://sendgrid.com/docs/Utilities/list_assist.html
-Redirect 301 /VidGrid/Marketing_Emails/Analytics/index.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html
-Redirect 301 /VidGrid/Marketing_Emails/Analytics/marketing_statistics.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html
-Redirect 301 /VidGrid/Marketing_Emails/Analytics/unsubscribe_management.html https://sendgrid.com/docs/User_Guide/Suppressions/index.html
+Redirect 301 /VidGrid/Marketing_Emails/Analytics/index.html https://sendgrid.com/docs/Help/Sending_Email/campaign_stats.html
+Redirect 301 /VidGrid/Marketing_Emails/Analytics/marketing_statistics.html https://sendgrid.com/docs/Help/Sending_Email/campaign_stats.html
+Redirect 301 /VidGrid/Marketing_Emails/Analytics/unsubscribe_management.html ttps://sendgrid.com/docs/Help/Sending_Email/index_suppressions.html
 Redirect 301 /VidGrid/Marketing_Emails/Design/drag_and_drop.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html
 Redirect 301 /VidGrid/Marketing_Emails/Design/index.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/index.html
 Redirect 301 /VidGrid/Marketing_Emails/Design/newsletter_basics.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html
 Redirect 301 /VidGrid/Marketing_Emails/Design/subscription_widget.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html
 Redirect 301 /VidGrid/Marketing_Emails/Design/weblink.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html
 Redirect 301 /VidGrid/Marketing_Emails/index.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/index.html
-Redirect 301 /VidGrid/Marketing_Emails/marketing_emails_setup.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html
+Redirect 301 /VidGrid/Marketing_Emails/marketing_emails_setup.html https://sendgrid.com/docs/Help/Getting_Started/how_to_send_email.html
 Redirect 301 /VidGrid/Marketing_Emails/Recipients/exporting.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html
 Redirect 301 /VidGrid/Marketing_Emails/Recipients/index.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html
 Redirect 301 /VidGrid/Marketing_Emails/Recipients/recipient_list.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html
-Redirect 301 /VidGrid/Marketing_Emails/Review_and_Schedule/scheduling.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html
-Redirect 301 /VidGrid/Marketing_Emails/Review_and_Schedule/split_testing.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/a_b_testing.html
+Redirect 301 /VidGrid/Marketing_Emails/Review_and_Schedule/scheduling.html https://sendgrid.com/docs/Help/Getting_Started/how_to_send_email.html
+Redirect 301 /VidGrid/Marketing_Emails/Review_and_Schedule/split_testing.html https://sendgrid.com/docs/Help/Sending_Email/a_b_testing.html
 Redirect 301 /VidGrid/Marketing_Emails/Setup/overview.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/index.html
 Redirect 301 /VidGrid/Subuser/create_subuser.html https://sendgrid.com/docs/User_Guide/Settings/Subusers/index.html
 Redirect 301 /VidGrid/Subuser/create_subuser_whitelabel.html https://sendgrid.com/docs/User_Guide/Settings/Subusers/settings.html
@@ -741,7 +741,7 @@ Redirect 301 /VidGrid/Template_Engine/template_engine.html https://sendgrid.com/
 Redirect 301 /VidGrid/Tools/index.html https://sendgrid.com/docs/Utilities/index.html
 Redirect 301 /VidGrid/Whitelabel/whitelabel.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
 Redirect 301 /VidGrid/whitelabel.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
-Redirect 301 /VidGrid/Marketing_Emails/Review_and_Schedule/index.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/a_b_testing.html
+Redirect 301 /VidGrid/Marketing_Emails/Review_and_Schedule/index.html https://sendgrid.com/docs/Help/Sending_Email/a_b_testing.html
 
 #######
 #
@@ -758,37 +758,37 @@ Redirect 301 /User_Guide/Marketing_Campaigns/beta_editors.html#-Edit-HTML-Head  
 #
 #######
 
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/index.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/analytics.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/create_manage.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/dashboard.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/index.html https://sendgrid.com/docs/Help/Sending_Email/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/analytics.html https://sendgrid.com/docs/Help/Sending_Email/campaign_stats.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/create_manage.html https://sendgrid.com/docs/Help/Getting_Started/how_to_send_email.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/dashboard.html https://sendgrid.com/docs/Help/Sending_Email/Legacy_Newsletter/index.html
 Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/recipients.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/sender_address.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/senders.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/sender_address.html https://sendgrid.com/docs/Help/Sending_Email/senders.html
 Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/tags.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/unsubscribes.html https://sendgrid.com/docs/User_Guide/Suppressions/index.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/index.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/faq.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/migration_checklist.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/index.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_recipient_lists.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_unsubscribes.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
-Redriect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_images.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/downloading_historical_statistics.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/api_migration.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/Migrating_API.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/index.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/campaign_building.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/contact_management.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/statistics_reporting.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/pricing.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/api_comparison.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/security_compliance.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_content.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
-Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/letter_from_our_CPO.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
-Redirect 301 /Classroom/Basics/Marketing_Campaigns/migrating_content.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
-Redirect 301 /Classroom/Basics/Marketing_Campaigns/migrating_images.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
-Redirect 301 /Classroom/Basics/Marketing_Campaigns/migrating_lists.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
-Redirect 301 /Classroom/Basics/Marketing_Campaigns/migrating_unsubscribes.html https://sendgrid.com/docs/User_Guide/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/unsubscribes.html ttps://sendgrid.com/docs/Help/Sending_Email/index_suppressions.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/index.html https://sendgrid.com/docs/Help/Sending_Email/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/faq.html https://sendgrid.com/docs/Help/Sending_Email/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/migration_checklist.html https://sendgrid.com/docs/Help/Sending_Email/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/index.html https://sendgrid.com/docs/Help/Sending_Email/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_recipient_lists.html https://sendgrid.com/docs/Help/Sending_Email/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_unsubscribes.html https://sendgrid.com/docs/Help/Sending_Email/Legacy_Newsletter/index.html
+Redriect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_images.html https://sendgrid.com/docs/Help/Sending_Email/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/downloading_historical_statistics.html https://sendgrid.com/docs/Help/Sending_Email/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/api_migration.html https://sendgrid.com/docs/Help/Sending_Email/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/Migrating_API.html https://sendgrid.com/docs/Help/Sending_Email/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/index.html https://sendgrid.com/docs/Help/Sending_Email/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/campaign_building.html https://sendgrid.com/docs/Help/Sending_Email/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/contact_management.html https://sendgrid.com/docs/Help/Sending_Email/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/statistics_reporting.html https://sendgrid.com/docs/Help/Sending_Email/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/pricing.html https://sendgrid.com/docs/Help/Sending_Email/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/api_comparison.html https://sendgrid.com/docs/Help/Sending_Email/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/security_compliance.html https://sendgrid.com/docs/Help/Sending_Email/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_content.html https://sendgrid.com/docs/Help/Sending_Email/Legacy_Newsletter/index.html
+Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/letter_from_our_CPO.html https://sendgrid.com/docs/Help/Sending_Email/Legacy_Newsletter/index.html
+Redirect 301 /Classroom/Basics/Marketing_Campaigns/migrating_content.html https://sendgrid.com/docs/Help/Sending_Email/Legacy_Newsletter/index.html
+Redirect 301 /Classroom/Basics/Marketing_Campaigns/migrating_images.html https://sendgrid.com/docs/Help/Sending_Email/Legacy_Newsletter/index.html
+Redirect 301 /Classroom/Basics/Marketing_Campaigns/migrating_lists.html https://sendgrid.com/docs/Help/Sending_Email/Legacy_Newsletter/index.html
+Redirect 301 /Classroom/Basics/Marketing_Campaigns/migrating_unsubscribes.html https://sendgrid.com/docs/Help/Sending_Email/Legacy_Newsletter/index.html
 
 #######
 #
@@ -796,16 +796,16 @@ Redirect 301 /Classroom/Basics/Marketing_Campaigns/migrating_unsubscribes.html h
 #
 #######
 
-Redirect 301 /Classroom/Deliver/Address_Lists/list_scrubbing_guide.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html
-Redirect 301 /Classroom/Deliver/Address_Lists/where_did_you_get_my_address_permission_reminders.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html
-Redirect 301 /Classroom/Deliver/Address_Lists/let_old_addresses_sleep_in_peace.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html
+Redirect 301 /Classroom/Deliver/Address_Lists/list_scrubbing_guide.html https://sendgrid.com/docs/Help/Managing_Contacts/managing_contact_list.html
+Redirect 301 /Classroom/Deliver/Address_Lists/where_did_you_get_my_address_permission_reminders.html https://sendgrid.com/docs/Help/Managing_Contacts/managing_contact_list.html
+Redirect 301 /Classroom/Deliver/Address_Lists/let_old_addresses_sleep_in_peace.html https://sendgrid.com/docs/Help/Managing_Contacts/managing_contact_list.html
 Redirect 301 /Glossary/opt_in_email.html https://sendgrid.com/docs/User_Guide/User_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html
-Redirect 301 /Classroom/Deliver/Address_Lists/preference_centers_giving_subscribers_control.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html
-Redirect 301 /Classroom/Deliver/Address_Lists/affiliate_lists_and_list_sharing.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html
+Redirect 301 /Classroom/Deliver/Address_Lists/preference_centers_giving_subscribers_control.html https://sendgrid.com/docs/Help/Managing_Contacts/managing_contact_list.html
+Redirect 301 /Classroom/Deliver/Address_Lists/affiliate_lists_and_list_sharing.html https://sendgrid.com/docs/Help/Managing_Contacts/managing_contact_list.html
 Redirect 301 /Classroom/Deliver/Address_Lists/peer_initiated_email_invitation_requirements.html https://sendgrid.com/docs/User_Guide/MarketingUser_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html
-Redirect 301 /Classroom/Deliver/Address_Lists/tips_to_keep_your_list_organized.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html
-Redirect 301 /Classroom/Deliver/Address_Lists/tips_to_keep_your_list_organized.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html
-Redirect 301 /Classroom/Deliver/Address_Lists/why_purchased_email_lists_are_no_good.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html
+Redirect 301 /Classroom/Deliver/Address_Lists/tips_to_keep_your_list_organized.html https://sendgrid.com/docs/Help/Managing_Contacts/managing_contact_list.html
+Redirect 301 /Classroom/Deliver/Address_Lists/tips_to_keep_your_list_organized.html https://sendgrid.com/docs/Help/Managing_Contacts/managing_contact_list.html
+Redirect 301 /Classroom/Deliver/Address_Lists/why_purchased_email_lists_are_no_good.html https://sendgrid.com/docs/Help/Managing_Contacts/managing_contact_list.html
 
 Redirect 301 /Classroom/Basics/Account/resetting_your_password_without_breaking_current_integrations.html https://sendgrid.com/docs/Classroom/Basics/Account/how_do_i_reset_my_password.html
 
@@ -830,7 +830,7 @@ Redirect 301 /Classroom/Basics/Marketing_Campaigns/marketing_campaigns_video_tut
 #######
 
 Redirect 301 /Classroom/Troubleshooting/dont_know_your_username.html https://sendgrid.com/docs/Classroom/Troubleshooting/Account_Administration/recovering_your_username.html
-Redirect 301 /Delivery_Metrics/metrics.html https://sendgrid.com/docs/User_Guide/email_activity.html
+Redirect 301 /Delivery_Metrics/metrics.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/email_activity.html
 
 #######
 #
@@ -851,15 +851,15 @@ Redirect 301 /API_Reference/Web_API_v3/Transactional_Templates/smtpapi.html http
 #
 #######
 
-Redirect 301 /User_Guide/Settings/Subusers/profile.html https://sendgrid.com/docs/User_Guide/Settings/subusers.html
-Redirect 301 /User_Guide/Settings/Subusers/impersonation.html https://sendgrid.com/docs/User_Guide/Settings/subusers.html
-Redirect 301 /User_Guide/Settings/Subusers/settings.html https://sendgrid.com/docs/User_Guide/Settings/subusers.html
-Redirect 301 /User_Guide/Settings/Subusers/index.html https://sendgrid.com/docs/User_Guide/Settings/subusers.html
-Redirect 301 /Classroom/Basics/Account/what_are_subusers.html https://sendgrid.com/docs/User_Guide/Settings/subusers.html
-Redirect 301 /Classroom/Basics/Account/how_do_i_add_more_subusers_to_my_account.html https://sendgrid.com/docs/User_Guide/Settings/subusers.html
-Redirect 301 /Classroom/Basics/Account/why_am_i_seeing_credential_resource_already_exists_when_i_am_creating_a_subuser_or_credential.html https://sendgrid.com/docs/User_Guide/Settings/subusers.html
-Redirect 301 /Classroom/Send/How_Emails_Are_Sent/how_do_i_send_mail_through_subuser_accounts.html https://sendgrid.com/docs/User_Guide/Settings/subusers.html
-Redirect 301 /Classroom/Deliver/Delivery_Introduction/segment_your_email_traffic_with_subusers.html https://sendgrid.com/docs/User_Guide/Settings/subusers.html
+Redirect 301 /User_Guide/Settings/Subusers/profile.html ttps://sendgrid.com/docs/Help/Account_and_Settings/subusers.html
+Redirect 301 /User_Guide/Settings/Subusers/impersonation.html ttps://sendgrid.com/docs/Help/Account_and_Settings/subusers.html
+Redirect 301 /User_Guide/Settings/Subusers/settings.html ttps://sendgrid.com/docs/Help/Account_and_Settings/subusers.html
+Redirect 301 /User_Guide/Settings/Subusers/index.html ttps://sendgrid.com/docs/Help/Account_and_Settings/subusers.html
+Redirect 301 /Classroom/Basics/Account/what_are_subusers.html ttps://sendgrid.com/docs/Help/Account_and_Settings/subusers.html
+Redirect 301 /Classroom/Basics/Account/how_do_i_add_more_subusers_to_my_account.html ttps://sendgrid.com/docs/Help/Account_and_Settings/subusers.html
+Redirect 301 /Classroom/Basics/Account/why_am_i_seeing_credential_resource_already_exists_when_i_am_creating_a_subuser_or_credential.html ttps://sendgrid.com/docs/Help/Account_and_Settings/subusers.html
+Redirect 301 /Classroom/Send/How_Emails_Are_Sent/how_do_i_send_mail_through_subuser_accounts.html ttps://sendgrid.com/docs/Help/Account_and_Settings/subusers.html
+Redirect 301 /Classroom/Deliver/Delivery_Introduction/segment_your_email_traffic_with_subusers.html ttps://sendgrid.com/docs/Help/Account_and_Settings/subusers.html
 
 #######
 #
@@ -873,8 +873,8 @@ Redirect 301 /API_Reference/SMTP_API/using_the_smtp_api.html https://sendgrid.co
 Redirect 301 /Classroom/Track/Bounces/common_smtp_server_bounce_responses.html https://sendgrid.com/docs/API_Reference/SMTP_API/errors_and_troubleshooting.html
 Redirect 301 /Classroom/Troubleshooting/Authentication/certificate_verification_failed.html https://sendgrid.com/docs/API_Reference/SMTP_API/errors_and_troubleshooting.html
 Redirect 301 /Classroom/Troubleshooting/Authentication/invalid_smtp_api_header.html https://sendgrid.com/docs/API_Reference/SMTP_API/errors_and_troubleshooting.html
-Redirect 301 /User_Guide/Marketing_Campaigns/drag_drop.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/editor.html
-Redirect 301 /Classroom/Troubleshooting/Account_Administration/recovering_your_username.html https://sendgrid.com/docs/User_Guide/Settings/reset_username_password.html
+Redirect 301 /User_Guide/Marketing_Campaigns/drag_drop.html https://sendgrid.com/docs/Help/Sending_Email/editor.html
+Redirect 301 /Classroom/Troubleshooting/Account_Administration/recovering_your_username.html ttps://sendgrid.com/docs/Help/Account_and_Settings/reset_username_password.html
 
 #######
 #
@@ -882,9 +882,9 @@ Redirect 301 /Classroom/Troubleshooting/Account_Administration/recovering_your_u
 #
 #######
 
-Redirect 301 /Classroom/Deliver/Delivery_Introduction/ip_warmup_schedule.html https://sendgrid.com/docs/User_Guide/Settings/ip_warmup.html
-Redirect 301 /Classroom/Deliver/Delivery_Introduction/warming_up_ips.html https://sendgrid.com/docs/User_Guide/Settings/ip_warmup.html
-Redirect 301 /Classroom/Basics/Misc/automated_ip_warmup.html https://sendgrid.com/docs/User_Guide/Settings/ip_warmup.html
+Redirect 301 /Classroom/Deliver/Delivery_Introduction/ip_warmup_schedule.html ttps://sendgrid.com/docs/Help/Account_and_Settings/ip_warmup.html
+Redirect 301 /Classroom/Deliver/Delivery_Introduction/warming_up_ips.html ttps://sendgrid.com/docs/Help/Account_and_Settings/ip_warmup.html
+Redirect 301 /Classroom/Basics/Misc/automated_ip_warmup.html ttps://sendgrid.com/docs/Help/Account_and_Settings/ip_warmup.html
 
 #######
 #
@@ -892,28 +892,28 @@ Redirect 301 /Classroom/Basics/Misc/automated_ip_warmup.html https://sendgrid.co
 #
 #######
 
-Redirect 301 /Classroom/Basics/Billing/when_do_credits_reset.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
-Redirect 301 /Classroom/Basics/Billing/how_to_read_your_invoice.html https://sendgrid.com/docs/User_Guide/Settings/reading_your_invoice.html
-Redirect 301 /Classroom/Basics/Billing/update_your_credit_card_and_resubmit_payments.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
-Redirect 301 /Classroom/Basics/Billing/lite_account_minimum_charge.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
-Redirect 301 /Classroom/Basics/Billing/legacy_lite_plan.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
-Redirect 301 /Classroom/Basics/Billing/is_your_account_billing_warned.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
-Redirect 301 /Classroom/Basics/Billing/is_your_account_billing_frozen.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
-Redirect 301 /Classroom/Basics/Billing/index.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
-Redirect 301 /Classroom/Basics/Billing/i_would_like_to_request_a_refund.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
-Redirect 301 /Classroom/Basics/Billing/i_would_like_to_request_a_refund.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
-Redirect 301 /Classroom/Basics/Billing/how_does_overage_pricing_work.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
-Redirect 301 /Classroom/Basics/Billing/how_does_billing_work_for_marketing_campaigns.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
-Redirect 301 /Classroom/Basics/Billing/how_does_billing_work_for_legacy_newsletter.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
-Redirect 301 /Classroom/Basics/Billing/how_do_i_upgrade_or_downgrade_my_account.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
-Redirect 301 /Classroom/Basics/Billing/forgot_to_cancel_or_upgrade.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
-Redirect 301 /Classroom/Basics/Billing/did_you_receive_a_billing_notification.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
-Redirect 301 /Classroom/Basics/Billing/billing_info_and_faqs.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
-Redirect 301 /Classroom/Basics/Account/why_are_the_pro_plans_recommended_above_all_others.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
-Redirect 301 /Classroom/Basics/Account/sending_practices.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
-Redirect 301 /Classroom/Basics/Billing/index.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
-Redirect 301 /Classroom/Basics/Billing/where_can_i_find_my_invoices.html https://sendgrid.com/docs/User_Guide/Settings/reading_your_invoice.html
-Redirect 301 /Classroom/Basics/Billing/alternate_payment_methods.html https://sendgrid.com/docs/User_Guide/Settings/billing.html
+Redirect 301 /Classroom/Basics/Billing/when_do_credits_reset.html ttps://sendgrid.com/docs/Help/Account_and_Settings/billing.html
+Redirect 301 /Classroom/Basics/Billing/how_to_read_your_invoice.html ttps://sendgrid.com/docs/Help/Account_and_Settings/reading_your_invoice.html
+Redirect 301 /Classroom/Basics/Billing/update_your_credit_card_and_resubmit_payments.html ttps://sendgrid.com/docs/Help/Account_and_Settings/billing.html
+Redirect 301 /Classroom/Basics/Billing/lite_account_minimum_charge.html ttps://sendgrid.com/docs/Help/Account_and_Settings/billing.html
+Redirect 301 /Classroom/Basics/Billing/legacy_lite_plan.html ttps://sendgrid.com/docs/Help/Account_and_Settings/billing.html
+Redirect 301 /Classroom/Basics/Billing/is_your_account_billing_warned.html ttps://sendgrid.com/docs/Help/Account_and_Settings/billing.html
+Redirect 301 /Classroom/Basics/Billing/is_your_account_billing_frozen.html ttps://sendgrid.com/docs/Help/Account_and_Settings/billing.html
+Redirect 301 /Classroom/Basics/Billing/index.html ttps://sendgrid.com/docs/Help/Account_and_Settings/billing.html
+Redirect 301 /Classroom/Basics/Billing/i_would_like_to_request_a_refund.html ttps://sendgrid.com/docs/Help/Account_and_Settings/billing.html
+Redirect 301 /Classroom/Basics/Billing/i_would_like_to_request_a_refund.html ttps://sendgrid.com/docs/Help/Account_and_Settings/billing.html
+Redirect 301 /Classroom/Basics/Billing/how_does_overage_pricing_work.html ttps://sendgrid.com/docs/Help/Account_and_Settings/billing.html
+Redirect 301 /Classroom/Basics/Billing/how_does_billing_work_for_marketing_campaigns.html ttps://sendgrid.com/docs/Help/Account_and_Settings/billing.html
+Redirect 301 /Classroom/Basics/Billing/how_does_billing_work_for_legacy_newsletter.html ttps://sendgrid.com/docs/Help/Account_and_Settings/billing.html
+Redirect 301 /Classroom/Basics/Billing/how_do_i_upgrade_or_downgrade_my_account.html ttps://sendgrid.com/docs/Help/Account_and_Settings/billing.html
+Redirect 301 /Classroom/Basics/Billing/forgot_to_cancel_or_upgrade.html ttps://sendgrid.com/docs/Help/Account_and_Settings/billing.html
+Redirect 301 /Classroom/Basics/Billing/did_you_receive_a_billing_notification.html ttps://sendgrid.com/docs/Help/Account_and_Settings/billing.html
+Redirect 301 /Classroom/Basics/Billing/billing_info_and_faqs.html ttps://sendgrid.com/docs/Help/Account_and_Settings/billing.html
+Redirect 301 /Classroom/Basics/Account/why_are_the_pro_plans_recommended_above_all_others.html ttps://sendgrid.com/docs/Help/Account_and_Settings/billing.html
+Redirect 301 /Classroom/Basics/Account/sending_practices.html ttps://sendgrid.com/docs/Help/Account_and_Settings/billing.html
+Redirect 301 /Classroom/Basics/Billing/index.html ttps://sendgrid.com/docs/Help/Account_and_Settings/billing.html
+Redirect 301 /Classroom/Basics/Billing/where_can_i_find_my_invoices.html ttps://sendgrid.com/docs/Help/Account_and_Settings/reading_your_invoice.html
+Redirect 301 /Classroom/Basics/Billing/alternate_payment_methods.html ttps://sendgrid.com/docs/Help/Account_and_Settings/billing.html
 
 #######
 #
@@ -921,22 +921,22 @@ Redirect 301 /Classroom/Basics/Billing/alternate_payment_methods.html https://se
 #
 #######
 
-Redirect 301 /Classroom/Troubleshooting/Delivery_Issues/max_hourly_limit.html https://sendgrid.com/docs/User_Guide/email_activity.html
-Redirect 301 /Classroom/Troubleshooting/Delivery_Issues/max_connection_limit.html https://sendgrid.com/docs/User_Guide/email_activity.html
-Redirect 301 /Classroom/Troubleshooting/Delivery_Issues/my_client_is_complaining_that_they_have_not_received_an_email.html https://sendgrid.com/docs/User_Guide/email_activity.html
-Redirect 301 /Classroom/Track/Introduction/how_can_i_tell_if_an_email_was_actually_delivered.html https://sendgrid.com/docs/User_Guide/email_activity.html
-Redirect 301 /Classroom/Track/Introduction/discrepancies_between_requests_and_deliveries.html https://sendgrid.com/docs/User_Guide/email_activity.html
-Redirect 301 /Classroom/Track/Drops/resend_dropped_messages.html https://sendgrid.com/docs/User_Guide/email_activity.html
-Redirect 301 /Classroom/Track/Drops/drop_reason_unsubscribed_address.html https://sendgrid.com/docs/User_Guide/email_activity.html
-Redirect 301 /Classroom/Track/Drops/drop_reason_bounced_address.html https://sendgrid.com/docs/User_Guide/email_activity.html
-Redirect 301 /Classroom/Track/Collecting_Data/can_i_download_a_list_of_click_and_or_open_events.html https://sendgrid.com/docs/User_Guide/email_activity.html
-Redirect 301 /Classroom/Track/Bounces/implementing_bounce_notification_for_multiple_from_addresses.html https://sendgrid.com/docs/User_Guide/email_activity.html
-Redirect 301 /Classroom/Track/Bounces/how_to_set_up_bounce_forwarding_to_go_to_the_emails_from_address.html https://sendgrid.com/docs/User_Guide/email_activity.html
-Redirect 301 /Classroom/Track/Bounces/how_to_set_up_bounce_forwarding.html https://sendgrid.com/docs/User_Guide/email_activity.html
-Redirect 301 /Classroom/Track/Bounces/delete_from_bounce_list_option_in_email_activity.html https://sendgrid.com/docs/User_Guide/email_activity.html
-Redirect 301 /Classroom/Track/Bounces/bounce_reports_how_can_i_be_notified.html https://sendgrid.com/docs/User_Guide/email_activity.html
-Redirect 301 /Classroom/Track/Bounces/bounce_forwarding_and_gmail.html https://sendgrid.com/docs/User_Guide/email_activity.html
-Redirect 301 /Classroom/Deliver/Undeliverable_Email/why_did_my_message_show_as_delivered_first_then_as_bounced.html https://sendgrid.com/docs/User_Guide/email_activity.html
+Redirect 301 /Classroom/Troubleshooting/Delivery_Issues/max_hourly_limit.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/email_activity.html
+Redirect 301 /Classroom/Troubleshooting/Delivery_Issues/max_connection_limit.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/email_activity.html
+Redirect 301 /Classroom/Troubleshooting/Delivery_Issues/my_client_is_complaining_that_they_have_not_received_an_email.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/email_activity.html
+Redirect 301 /Classroom/Track/Introduction/how_can_i_tell_if_an_email_was_actually_delivered.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/email_activity.html
+Redirect 301 /Classroom/Track/Introduction/discrepancies_between_requests_and_deliveries.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/email_activity.html
+Redirect 301 /Classroom/Track/Drops/resend_dropped_messages.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/email_activity.html
+Redirect 301 /Classroom/Track/Drops/drop_reason_unsubscribed_address.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/email_activity.html
+Redirect 301 /Classroom/Track/Drops/drop_reason_bounced_address.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/email_activity.html
+Redirect 301 /Classroom/Track/Collecting_Data/can_i_download_a_list_of_click_and_or_open_events.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/email_activity.html
+Redirect 301 /Classroom/Track/Bounces/implementing_bounce_notification_for_multiple_from_addresses.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/email_activity.html
+Redirect 301 /Classroom/Track/Bounces/how_to_set_up_bounce_forwarding_to_go_to_the_emails_from_address.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/email_activity.html
+Redirect 301 /Classroom/Track/Bounces/how_to_set_up_bounce_forwarding.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/email_activity.html
+Redirect 301 /Classroom/Track/Bounces/delete_from_bounce_list_option_in_email_activity.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/email_activity.html
+Redirect 301 /Classroom/Track/Bounces/bounce_reports_how_can_i_be_notified.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/email_activity.html
+Redirect 301 /Classroom/Track/Bounces/bounce_forwarding_and_gmail.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/email_activity.html
+Redirect 301 /Classroom/Deliver/Undeliverable_Email/why_did_my_message_show_as_delivered_first_then_as_bounced.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/email_activity.html
 Redirect 301 /search.html https://sendgrid.com/docs
 
 
@@ -947,13 +947,13 @@ Redirect 301 /search.html https://sendgrid.com/docs
 #######
 
 Redirect 301 /Classroom/Troubleshooting/Authentication/list_upload_troubleshooting.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/formatting_a_CSV.html
-Redirect 301 /User_Guide/Marketing_Campaigns/contacts.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/adding_contacts.html
-Redirect 301 /Classroom/Basics/Marketing_Campaigns/how_to_remove_unusable_contacts.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html
-Redirect 301 /User_Guide/Compliance/improving_contact_lists.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html
-Redirect 301 /Classroom/Send/Who_You_Can_Send_To/segmenting_traffic.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html
-Redirect 301 /Classroom/Deliver/Delivery_Introduction/keep_in_touch_the_importance_of_engagement.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/building_your_contact_list.html
-Redirect 301 /Classroom/Send/Who_You_Can_Send_To/resubscription_of_users.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html
-Redirect 301 /Classroom/Send/Who_You_Can_Send_To/can_i_send_to_purchased_lists.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/building_your_contact_list.html
+Redirect 301 /User_Guide/Marketing_Campaigns/contacts.html https://sendgrid.com/docs/Help/Managing_Contacts/adding_contacts.html
+Redirect 301 /Classroom/Basics/Marketing_Campaigns/how_to_remove_unusable_contacts.html https://sendgrid.com/docs/Help/Managing_Contacts/managing_contact_list.html
+Redirect 301 /User_Guide/Compliance/improving_contact_lists.html https://sendgrid.com/docs/Help/Managing_Contacts/managing_contact_list.html
+Redirect 301 /Classroom/Send/Who_You_Can_Send_To/segmenting_traffic.html https://sendgrid.com/docs/Help/Managing_Contacts/segmenting_your_contacts.html
+Redirect 301 /Classroom/Deliver/Delivery_Introduction/keep_in_touch_the_importance_of_engagement.html https://sendgrid.com/docs/Help/Managing_Contacts/building_your_contact_list.html
+Redirect 301 /Classroom/Send/Who_You_Can_Send_To/resubscription_of_users.html https://sendgrid.com/docs/Help/Managing_Contacts/segmenting_your_contacts.html
+Redirect 301 /Classroom/Send/Who_You_Can_Send_To/can_i_send_to_purchased_lists.html https://sendgrid.com/docs/Help/Managing_Contacts/building_your_contact_list.html
 
 #######
 #
@@ -961,11 +961,11 @@ Redirect 301 /Classroom/Send/Who_You_Can_Send_To/can_i_send_to_purchased_lists.h
 #
 #######
 
-Redirect 301 /Classroom/Basics/Account/creating_teammates_for_subusers.html https://sendgrid.com/docs/User_Guide/Settings/teammates.html
-Redirect 301 /Classroom/Basics/Account/what_is_the_difference_between_subusers_and_multiple_credentials.html https://sendgrid.com/docs/User_Guide/Settings/teammates.html
-Redirect 301 /Classroom/Basics/Account/resetting_your_password_as_a_teammate.html https://sendgrid.com/docs/User_Guide/Settings/teammates.html
-Redirect 301 /Classroom/Troubleshooting/Account_Administration/teammates.html https://sendgrid.com/docs/User_Guide/Settings/teammates.html
-Redirect 301 /Classroom/Basics/Account/teammates_faq.html https://sendgrid.com/docs/User_Guide/Settings/teammates.html
+Redirect 301 /Classroom/Basics/Account/creating_teammates_for_subusers.html ttps://sendgrid.com/docs/Help/Account_and_Settings/teammates.html
+Redirect 301 /Classroom/Basics/Account/what_is_the_difference_between_subusers_and_multiple_credentials.html ttps://sendgrid.com/docs/Help/Account_and_Settings/teammates.html
+Redirect 301 /Classroom/Basics/Account/resetting_your_password_as_a_teammate.html ttps://sendgrid.com/docs/Help/Account_and_Settings/teammates.html
+Redirect 301 /Classroom/Troubleshooting/Account_Administration/teammates.html ttps://sendgrid.com/docs/Help/Account_and_Settings/teammates.html
+Redirect 301 /Classroom/Basics/Account/teammates_faq.html ttps://sendgrid.com/docs/Help/Account_and_Settings/teammates.html
 
 #######
 #
@@ -973,10 +973,10 @@ Redirect 301 /Classroom/Basics/Account/teammates_faq.html https://sendgrid.com/d
 #
 #######
 
-Redirect 301 /Classroom/Troubleshooting/a_custom_field_value_did_not_substitute_during_a_send.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html
-Redirect 301 /Classroom/Basics/Marketing_Campaigns/contact_fields.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html
-Redirect 301 /Classroom/Troubleshooting/Authentication/you_have_used_a_reserved_field_name_for_your_custom_field.html# https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html
-Redirect 301 /Classroom/Basics/Marketing_Campaigns/contact_fields.html# https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html
+Redirect 301 /Classroom/Troubleshooting/a_custom_field_value_did_not_substitute_during_a_send.html https://sendgrid.com/docs/Help/Sending_Email/custom_fields.html
+Redirect 301 /Classroom/Basics/Marketing_Campaigns/contact_fields.html https://sendgrid.com/docs/Help/Sending_Email/custom_fields.html
+Redirect 301 /Classroom/Troubleshooting/Authentication/you_have_used_a_reserved_field_name_for_your_custom_field.html# https://sendgrid.com/docs/Help/Sending_Email/custom_fields.html
+Redirect 301 /Classroom/Basics/Marketing_Campaigns/contact_fields.html# https://sendgrid.com/docs/Help/Sending_Email/custom_fields.html
 Redirect 301 /User_Guide/Marketing_Campaigns/format_CSV.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/formating_a_CSV.html
 
 Redirect 301 /User_Guide/email_activity_beta.html https://sendgrid.com/docs/User_Guide/email_activity_feed.html
@@ -1002,30 +1002,30 @@ Redirect 301 /User_Guide/Transactional_Templates/index.html https://sendgrid.com
 #
 #######
 
-Redirect 301 /User_Guide/Settings/Whitelabel/ips.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_reverse_dns.html
-Redirect 301 /User_Guide/Settings/Whitelabel/links.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_link_branding.html
-Redirect 301 /User_Guide/Settings/Whitelabel/domains.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
-Redirect 301 /User_Guide/Settings/Whitelabel/overview.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
-Redirect 301 /User_Guide/Settings/Sender_Authentication/How_to_set_up_domain_authentication.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
-Redirect 301 /User_Guide/Settings/Whitelabel/index.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
-Redirect 301 /User_Guide/Settings/Sender_Authentication/How_to_set_up_domain_authentication.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
-Redirect 301 /Classroom/Troubleshooting/Authentication/whitelabel_video_tutorials.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
-Redirect 301 /Classroom/Troubleshooting/Authentication/upgrading_your_whitelabel.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
-Redirect 301 /Classroom/Troubleshooting/Authentication/i_have_created_dns_records_but_the_whitelabel_wizard_is_not_validating_them.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/Troubleshooting.html
-Redirect 301 /Classroom/Troubleshooting/Authentication/dns_records_and_underscores.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/Troubleshooting.html
-Redirect 301 /Classroom/Deliver/Sender_Authentication/what_is_automated_security_in_the_whitelabel_settings.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
-Redirect 301 /Classroom/Deliver/Delivery_Introduction/creating_and_whitelabeling_a_subuser_to_a_new_sending_domain.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
-Redirect 301 /Classroom/Deliver/Delivery_Introduction/all_you_need_to_know_about_whitelabeling.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
+Redirect 301 /User_Guide/Settings/Whitelabel/ips.html https://sendgrid.com/docs/Help/Getting_Started/How_to_set_up_reverse_dns.html
+Redirect 301 /User_Guide/Settings/Whitelabel/links.html https://sendgrid.com/docs/Help/Getting_Started/How_to_set_up_link_branding.html
+Redirect 301 /User_Guide/Settings/Whitelabel/domains.html https://sendgrid.com/docs/Help/Getting_Started/How_to_set_up_domain_authentication.html
+Redirect 301 /User_Guide/Settings/Whitelabel/overview.html https://sendgrid.com/docs/Help/Getting_Started/How_to_set_up_domain_authentication.html
+Redirect 301 /User_Guide/Settings/Sender_Authentication/How_to_set_up_domain_authentication.html https://sendgrid.com/docs/Help/Getting_Started/How_to_set_up_domain_authentication.html
+Redirect 301 /User_Guide/Settings/Whitelabel/index.html https://sendgrid.com/docs/Help/Getting_Started/How_to_set_up_domain_authentication.html
+Redirect 301 /User_Guide/Settings/Sender_Authentication/How_to_set_up_domain_authentication.html https://sendgrid.com/docs/Help/Getting_Started/How_to_set_up_domain_authentication.html
+Redirect 301 /Classroom/Troubleshooting/Authentication/whitelabel_video_tutorials.html https://sendgrid.com/docs/Help/Getting_Started/How_to_set_up_domain_authentication.html
+Redirect 301 /Classroom/Troubleshooting/Authentication/upgrading_your_whitelabel.html https://sendgrid.com/docs/Help/Getting_Started/How_to_set_up_domain_authentication.html
+Redirect 301 /Classroom/Troubleshooting/Authentication/i_have_created_dns_records_but_the_whitelabel_wizard_is_not_validating_them.html https://sendgrid.com/docs/Help/Getting_Started/troubleshooting.html
+Redirect 301 /Classroom/Troubleshooting/Authentication/dns_records_and_underscores.html https://sendgrid.com/docs/Help/Getting_Started/troubleshooting.html
+Redirect 301 /Classroom/Deliver/Sender_Authentication/what_is_automated_security_in_the_whitelabel_settings.html https://sendgrid.com/docs/Help/Getting_Started/How_to_set_up_domain_authentication.html
+Redirect 301 /Classroom/Deliver/Delivery_Introduction/creating_and_whitelabeling_a_subuser_to_a_new_sending_domain.html https://sendgrid.com/docs/Help/Getting_Started/How_to_set_up_domain_authentication.html
+Redirect 301 /Classroom/Deliver/Delivery_Introduction/all_you_need_to_know_about_whitelabeling.html https://sendgrid.com/docs/Help/Getting_Started/How_to_set_up_domain_authentication.html
 Redirect 301 /Classroom/Basics/Email_Infrastructure/everything_about_dmarc.html https://sendgrid.com/docs/Glossary/dmarc.html
 Redirect 301 /Classroom/Basics/Whitelabel/whitelabel_vs_whitelist.html https://sendgrid.com/docs/Glossary/whitelabel.html
-Redirect 301 /Classroom/Basics/Whitelabel/subuser_whitelabels.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
-Redirect 301 /Classroom/Basics/Whitelabel/setup_domain_whitelabel.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
-Redirect 301 /Classroom/Basics/Whitelabel/link_whitelabels_explained.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_link_branding.html
-Redirect 301 /Classroom/Basics/Whitelabel/index.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
-Redirect 301 /User_Guide/Settings/Whitelabel/providers.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/providers.html
+Redirect 301 /Classroom/Basics/Whitelabel/subuser_whitelabels.html https://sendgrid.com/docs/Help/Getting_Started/How_to_set_up_domain_authentication.html
+Redirect 301 /Classroom/Basics/Whitelabel/setup_domain_whitelabel.html https://sendgrid.com/docs/Help/Getting_Started/How_to_set_up_domain_authentication.html
+Redirect 301 /Classroom/Basics/Whitelabel/link_whitelabels_explained.html https://sendgrid.com/docs/Help/Getting_Started/How_to_set_up_link_branding.html
+Redirect 301 /Classroom/Basics/Whitelabel/index.html https://sendgrid.com/docs/Help/Getting_Started/How_to_set_up_domain_authentication.html
+Redirect 301 /User_Guide/Settings/Whitelabel/providers.html https://sendgrid.com/docs/Help/Getting_Started/dns_providers.html
 Redirect 301 /User_Guide/Settings/Whitelabel/faq.html https://sendgrid.com/docs/Glossary/whitelabel.html
-Redirect 301 /User_Guide/Settings/Sender_Authentication/How_to_set_up_reverse_DNS.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_reverse_dns.html
-Redirect 301 /User_Guide/Settings/Sender_Authentication/How_to_set_up_link_branding.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_link_branding.html
+Redirect 301 /User_Guide/Settings/Sender_Authentication/How_to_set_up_reverse_DNS.html https://sendgrid.com/docs/Help/Getting_Started/How_to_set_up_reverse_dns.html
+Redirect 301 /User_Guide/Settings/Sender_Authentication/How_to_set_up_link_branding.html https://sendgrid.com/docs/Help/Getting_Started/How_to_set_up_link_branding.html
 
 
 #######
@@ -1052,9 +1052,9 @@ Redirect 301 /User_Guide/Marketing_Campaigns/custom_fields.html https://sendgrid
 Redirect 301 /User_Guide/Marketing_Campaigns/a_b_testing.html https://sendgrid.com/docs/Help/Sending_Email/a_b_testing.html
 Redirect 301 /User_Guide/Marketing_Campaigns/campaign_stats.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/campaign_stats.html
 Redirect 301 /User_Guide/Marketing_Campaigns/Old_Editor_Sunset.html https://sendgrid.com/docs/Help/Sending_Email/editor.html
-Redirect 301 /User_Guide/Marketing_Campaigns/Managing_Contacts/building_your_contact_list.html https://sendgrid.com/docs/Help/Managing_Contacts/editor.html
+Redirect 301 /User_Guide/Marketing_Campaigns/Managing_Contacts/building_your_contact_list.html https://sendgrid.com/docs/Help/Managing_Contacts/building_your_contact_list.html
 Redirect 301 /User_Guide/Marketing_Campaigns/Managing_Contacts/adding_contacts.html https://sendgrid.com/docs/Help/Managing_Contacts/adding_contacts.html
-Redirect 301 /User_Guide/Marketing_Campaigns/Managing_Contacts/formating_a_CSV.html https://sendgrid.com/docs/Help/Managing_Contacts/formatting_a_CSV.html
+Redirect 301 /User_Guide/Marketing_Campaigns/Managing_Contacts/formatting_a_CSV.html https://sendgrid.com/docs/Help/Managing_Contacts/formatting_a_CSV.html
 Redirect 301 /User_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html https://sendgrid.com/docs/Help/Managing_Contacts/managing_contact_list.html
 Redirect 301 /User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html https://sendgrid.com/docs/Help/Managing_Contacts/segmenting_your_contacts.html
 Redirect 301 /User_Guide/Statistics/index.html https://sendgrid.com/docs/Help/Analytics_and_Reporting/Statistics/index.html
