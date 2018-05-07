@@ -99,6 +99,10 @@ Cancel or pause a scheduled send.
             "batch_id" : "invalid batch id"
             "batch_id" : "a status for this batch id exists, try PATCH to update the status"
 
+{% warning %}
+Scheduled sends cancelled less than 10 minutes before the scheduled time are not guaranteed to be cancelled.
+{% endwarning %}
+
 ### Retrieve all Cancelled and Paused scheduled sends [GET]
 
 Get all cancel/paused scheduled send information.
