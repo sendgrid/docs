@@ -25,16 +25,12 @@ Personalizing email with Handlebars
 
 Currently, dynamic templates only supports the following helpers:
 
-* equals(a, b) - evaluates decimals, strings, and dates
-* not_equals(a, b) - evaluates decimals, strings, and dates
-* greater_than(a, b) - evaluates decimals, strings
-* less_than(a, b) - evaluates decimals, strings
-* and(a, b) - evaluates booleans
-* or(a, b) - evaluates booleans
-* length(a)  - evaluates arrays and strings
-* isBefore(a, b) - evaluates epoch form dates
-* isAfter(a, b) - evaluates epoch form dates
-* format_date(date, format, timezone) - epoch form dates, format follows [these guidelines](http://support.sas.com/documentation/cdl/en/lrdict/64316/HTML/default/viewer.htm#a003169814.htm), timezone is +/-n 
+The current helpers are:
+
+* (a) - replacement
+* if/else(a) - evaluate conditional statements
+* unless(a) - evaluate conditional statements
+* each(a) - iterator
 
 Here are some example scenarios you can use to substitute data with Handlebars. 
 
@@ -248,3 +244,11 @@ Iterators
 </ol>
 
 
+{% anchor h2 %}
+Additional Resources
+{% endanchor h2 %}
+
+- [Transactional Templates Overview]({{root_url}}/User_Guide/Transactional_Templates/index.html)
+- [Create and edit Dynamic Transactional Templates]()
+- [Mail Send with Dynamic Transactional Templates](https://dynamic-templates.api-docs.io/3.0)
+- [Transactional Email Unsubscribes]({{root_url}}/User_Guide/Transactional_Email/unsubscribes.html)
