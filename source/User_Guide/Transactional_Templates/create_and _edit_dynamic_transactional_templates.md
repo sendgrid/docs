@@ -157,6 +157,6 @@ When you add the ```<%asm_preferences_url%>``` tag to your email, we will replac
 Additional Resources
 {% endanchor h2 %}
 
-- [Transactional Templates Overview](https://sendgrid.com/docs/User_Guide/Transactional_Templates/index.html)
+- [Transactional Templates Overview]({{root_url}}/User_Guide/Transactional_Templates/index.html)
 - [Manage Templates](https://sendgrid.com/docs/User_Guide/Transactional_Templates/manage.html)
 - [Transactional Email Unsubscribes]({{root_url}}/User_Guide/Transactional_Email/unsubscribes.html)
