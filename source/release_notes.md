@@ -32,6 +32,21 @@ The following new features and changes to the service are available.
 </table>
 
 {% anchor h2 %}
+1 May 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Sales tax for customers in certain US jurisdictions
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/pricing_icon.png" alt="An update to a price"></td>
+    <td>We’re beginning to charge sales tax for use of certain SendGrid products by non-tax exempt customers based in WA, NY, TX, Denver, Boulder or Chicago. This change is required to comply with applicable tax laws. For more information about our new sales tax and how to delcare your organization tax exempt, see [Sales Taxes and Tax-Exempt Status]({{root_url}}/User_Guide/Settings/taxes_and_tax_exempt.html).</td>
+  </tr>
+</table>
+
+{% anchor h2 %}
 17 April 2018
 {% endanchor %}
 
