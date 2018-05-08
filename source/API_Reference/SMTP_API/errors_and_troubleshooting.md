@@ -19,7 +19,7 @@ navigation:
 Response codes
 {% endanchor %}
 
-Each SMTP call you make returns a response. `200` responses are usually success responses, and `400` responses are usually deferrals. SendGrid continues to retry resending `400` messages for up to 72 hours. `500` responses are hard failures that are not retried by our servers. This table has possible response codes with example errors and a general explanation of that sort of response. This is not an all-inclusive list -  if you are getting an error you don't recognize, check out our [Deliverability center](https://sendgrid.com/deliverabilitycenter/#/).
+Each SMTP call you make returns a response. `200` responses are usually success responses, and `400` responses are usually deferrals. SendGrid continues to retry resending `400` messages for up to 72 hours. `500` responses are hard failures that are not retried by our servers. This table has possible response codes with example errors and a general explanation of that sort of response. 
 
 <table class="table" style="table-layout:fixed">
   <tr>

@@ -12,7 +12,7 @@ navigation:
 
 <iframe src="https://player.vimeo.com/video/190122014" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-You can also send email with [the UI](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html) and with [the API]({{root_url}}/API_Reference/api_v3.html).
+You can also send email with [the UI]({{root_url}}Help/Getting_Started/how_to_send_email.html) and with [the API]({{root_url}}/API_Reference/api_v3.html).
 
 - [What is SMTP?](#-What-is-smtp)
 - [Sending a test SMTP email with Telnet](#-Sending-a-test-SMTP-email-with-Telnet)
@@ -37,7 +37,7 @@ Sending a test SMTP email with Telnet
 Before you begin
 {% endanchor %}
 
-- Create a SendGrid API key on the [API Keys page](https://app.sendgrid.com/settings/api_keys).
+- Create a SendGrid API key on the [API Keys page](https://app.sendgrid.com/Account_and_Settings/api_keys).
 - Open your command line, bash, shell, or Terminal functionality (depending on what OS you are using). You'll use this window to input the commands to initiate a telnet connection.
 - Convert your API key to Base64. It is not secure to put your API key into an external webpage for a conversion, so we recommend using a bash conversion. If you are on Mac or Linux, you can use the pre-installed OpenSSL package. Use this cmd to convert your API key using OpenSSL: `echo -n '<<YOUR_API_KEY>>' | openssl base64`. Save your converted key for a later step.
 
@@ -74,7 +74,7 @@ Now that you've sent a test email, learn to [integrate your servers with our SMT
 Additional Resources
 {% endanchor h2 %}
 
-- [Getting Started with the UI]({{root_url}}/User_Guide/Marketing_Campaigns/getting_started.html)
+- [Getting Started with the UI]({{root_url}}Help/Getting_Started/how_to_send_email.html)
 - [Getting Started with the API]({{root_url}}/API_Reference/api_v3.html)
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
 - [Integrating with the SMTP API]({{root_url}}/API_Reference/SMTP_API/integrating_with_the_smtp_api.html)
