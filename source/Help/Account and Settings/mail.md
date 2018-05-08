@@ -130,7 +130,7 @@ Activating this setting allows you to specify an email address to which spam rep
 Forwarding abuse@ and postmaster@ Emails
 {% endanchor %}
 
-The email address specified in the Forward Spam mail setting may also be used to receive emails sent to abuse@ and postmaster@ role addresses if you have [authenticated your domain]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html).
+The email address specified in the Forward Spam mail setting may also be used to receive emails sent to abuse@ and postmaster@ role addresses if you have [authenticated your domain]({{root_url}}/Getting_Started/How_to_set_up_domain_authentication.html).
 
 For example, if you create a valid authenticated domain with a custom return path of `sub` and a root domain `example` *and* have turned on Forward Spam, any emails sent to abuse@sub.example.com or postmaster@sub.example.com will be forwarded to the email address you entered in the Forward Spam mail setting.
 
@@ -147,7 +147,7 @@ Legacy Email Template
 {% endanchor %}
 
 {% warning %}
-This setting refers to our original Email Templates. We now support more full featured [transactional templates]({{root_url}}/User_Guide/Transactional_Templates/index.html), with support for multiple templates, versioning and more.
+This setting refers to our original Email Templates. We now support more full featured [transactional templates]({{root_url}}/Help/Sending_Email/how_to_send_an_email_with_transactional_templates.html), with support for multiple templates, versioning and more.
 {% endwarning %}
 
 This setting wraps an HTML template around your email content. This can be useful for sending out marketing email and/or other HTML formatted messages. Use the embedded, full-featured HTML editor to create a template that your emails will be wrapped in. Be sure to include a tag to place the content of your email.

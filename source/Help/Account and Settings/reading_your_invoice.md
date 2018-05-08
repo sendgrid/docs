@@ -32,7 +32,7 @@ Need to send invoices to multiple addresses? Consider creating a [role address](
 3. Charge Summary
 {% endanchor %}
 
-If you are in [a jurisdiction that SendGrid is required to charge sales tax]({{root_url}}/User_Guide/Settings/taxes_and_tax_exempt.html), here is your tax summary:
+If you are in [a jurisdiction that SendGrid is required to charge sales tax]({{root_url}}/Help/Account_and_Settings/taxes_and_tax_exempt.html), here is your tax summary:
 
 ![Tax summary section]({{root_url}}/img/invoice_tax.png)
 
@@ -75,7 +75,7 @@ The overage charge rate for the Pro 100k plan is $0.00085 per extra email(20,000
 
 ![Highest number of stored Marketing Campaigns Contacts in the previous month.]({{root_url}}/img/invoice_contact_storage.png)
 
-**Contact List Usage** - This item refers to highest number of **stored Marketing Campaigns Contacts in the previous month.** For more detailed breakdown on how Contact Storage billing works in Marketing Campaigns, [click here]({{root_url}}/Classroom/Basics/Billing/how_does_billing_work_for_marketing_campaigns.html).
+**Contact List Usage** - This item refers to highest number of **stored Marketing Campaigns Contacts in the previous month.** For more detailed breakdown on how Contact Storage billing works in Marketing Campaigns, [click here](https://sendgrid.com/pricing/).
 
 In this example, the number under the "Used" column refers to the number of "blocks" of 10,000 contacts being stored in the prior month. We see that the highest number of blocks stored in that month was 5, or 50,000 contacts.
 
@@ -87,7 +87,7 @@ The charge for contact storage is **$10.00 PER 10,000 contacts(1 block),** so th
 
 ![Transaction and payment summary]({{root_url}}/img/invoice_payment_summary.png)
 
-The Transaction Summary shows the total charges for the month, and the Payment Summary area shows the payment type, and last 4 digits of the card that was charged. For more information about updating your payment method, [click here](https://sendgrid.com/docs/Classroom/Basics/Billing/update_your_credit_card_and_resubmit_payments.html). 
+The Transaction Summary shows the total charges for the month, and the Payment Summary area shows the payment type, and last 4 digits of the card that was charged. You can update your card information, retry a failed payment, and export past invoices for your business on the [Plan & Billing Details page](https://app.sendgrid.com/settings/billing)
 
 **These line items always reflect the plan you currently have, not necessarily "Pro 100k", which is shown for the purposes of demonstration.**
 
@@ -96,4 +96,4 @@ Additional Resources
 {% endanchor h2 %}
 
 - [SendGrid Pricing]({{site.site_url}}/pricing/)
-- [Billing]({{root_url}}/User_Guide/Settings/billing.html)
+- [Billing]({{root_url}}/Help/Account_and_Settings/billing.html)

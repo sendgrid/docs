@@ -30,7 +30,7 @@ An Internet Protocol (IP) address is a unique numerical address that defines a l
 Why would I want a Dedicated IP Address?
 {% endanchor %}
 
-If you are sending any significant amount of email, we typically suggest sending your marketing and transactional emails to from separate IP addresses. In addition, it is strongly recommended to associate your sending domain with your new outbound IP address (provided to you by SendGrid).  This is available at no extra cost and can be accomplished by [completing an rDNS setup for your dedicated IP (here's a video tutorial and documentation help)](https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_reverse_dns.html).
+If you are sending any significant amount of email, we typically suggest sending your marketing and transactional emails to from separate IP addresses. In addition, it is strongly recommended to associate your sending domain with your new outbound IP address (provided to you by SendGrid).  This is available at no extra cost and can be accomplished by [completing an rDNS setup for your dedicated IP (here's a video tutorial and documentation help)](https://sendgrid.com/docs/Help/Getting_Started/How_to_set_up_reverse_dns.html).
 
 We also suggest having at least two promotional IP addresses when your volume reaches 200-300K/month.
 
@@ -67,11 +67,11 @@ You can purchase an additional Dedicated IP Address from the IP Addresses Settin
 
 Under "Additional Options" you will find the following options:
 
-  * *Use automated IP warmup:* when checked, SendGrid will gradually increase the amount of email sent over this IP. Note: It is best practice to [warm an IP address]({{root_url}}/Classroom/Deliver/Delivery_Introduction/warming_up_ips.html) over time before sending fully over that IP address. When using automated warm up, you must have at least one other warm IP that can handle the overflow traffic from the IP in warmup.
+  * *Use automated IP warmup:* when checked, SendGrid will gradually increase the amount of email sent over this IP. Note: It is best practice to [warm an IP address]({{root_url}}/Help/Account_and_Settings/warming_up_an_ip_address.html) over time before sending fully over that IP address. When using automated warm up, you must have at least one other warm IP that can handle the overflow traffic from the IP in warmup.
   * *Allow my parent account to send mail using these IP addresses:* check this if you want your parent account to be able to send over this IP. If you are assigning this IP to a subuser and only want that subuser to have permission to send on this IP, leave this box unchecked.
   * *Allow my subusers to send mail using these IP addresses:* check this to select which subusers can send on this IP address
 
-After purchasing your IP, we strongly encourage you to set up reverse DNS. For more information about setting up reverse DNS, see [link text]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_reverse_dns.html).
+After purchasing your IP, we strongly encourage you to set up reverse DNS. For more information about setting up reverse DNS, see [How to set up reverse DNS]({{root_url}}/Help/Getting_Started/How_to_set_up_reverse_dns.html).
 
 {% info %} Purchasing and adding dedicated IPs can only be performed by the Parent account, or Teammates with either Billing or Admin permissions. {% endinfo %}
 
@@ -96,12 +96,12 @@ In addition, SendGrid does offer [Delivery Consultation](https://sendgrid.com/ma
 Warming Up a Dedicated IP Address
 {% endanchor %}
 
-For more information on warming up an IP Address, see [Warming up a dedicated IP]({{root_url}}/User_Guide/Settings/ip_warmup.html).
+For more information on warming up an IP Address, see [Warming up a dedicated IP]({{root_url}}/Help/Account_and_Settings/warming_up_an_ip_address.html).
 
 {% anchor h2 %}
 Additional Resources
 {% endanchor h2 %}
 
-- [Warming up a dedicated IP]({{root_url}}/User_Guide/Settings/ip_warmup.html)
-- [API IP Access Management]({{root_url}}/User_Guide/Settings/ip_access_management.html)
-- [SendGrid billing information]({{root_url}}/User_Guide/Settings/billing.html)
+- [Warming up a dedicated IP]({{root_url}}/Help/Account_and_Settings/warming_up_an_ip_address.html)
+- [API IP Access Management]({{root_url}}/Help/Account_and_Settings/ip_access_management.html)
+- [SendGrid billing information]({{root_url}}/Help/Account_and_Settings/billing.html)

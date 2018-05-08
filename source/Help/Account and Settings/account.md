@@ -22,7 +22,7 @@ To edit your name and email address, click the “Change Contact Info” button 
 
 **Username** - Your SendGrid Username is used to access our API and our SMTP Relay. Changing this will immediately cause all of your calls to SendGrid to stop working.
 
-**Password** -  Please see our [Password requirements]({{root_url}}{{site.password_requirements}}) page.
+**Password** -  The minimum password criterium that your SendGrid password must meet include 8 to 128 characters, at least one number and one letter. 
 
 **Company** - The name of your company.
 

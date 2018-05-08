@@ -31,6 +31,6 @@ Email notifications about CSV upload summaries, sender verifications, A/B test w
 Additional Resources
 {% endanchor h3 %}
 
-- [Contacts](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html)
+- [Contacts](https://sendgrid.com/docs/Help/Managing_Contacts/adding_contacts.html)
 
 
