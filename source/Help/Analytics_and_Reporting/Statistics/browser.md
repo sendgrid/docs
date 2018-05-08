@@ -22,9 +22,9 @@ There are similarities between Device and Browser statistics and we are working 
 
 Choose a browser from the list to see statistics about how your recipients interact with your email based on the application they use to look at the internet.
 
-The actual statistics included vary depending upon [your account settings]({{root_url}}/User_Guide/Settings/account.html). Emails sent, bounces and spam reports will always get tracked. Unsubscribes, clicks, and opens require that the associated settings are enabled.
+The actual statistics included vary depending upon [your account settings]({{root_url}}/Help/Account_and_Settings/account.html). Emails sent, bounces and spam reports will always get tracked. Unsubscribes, clicks, and opens require that the associated settings are enabled.
 
-You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters).
+You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/Help/Analytics_and_Reporting/Statistics/index.html#-Statistics-Filters).
 
 {% anchor h2 %}
 Figures
@@ -38,6 +38,6 @@ This table will refresh with new or adjusted data based on the various filters a
 Additional Resources
 {% endanchor %}
 
-- [Account Settings]({{root_url}}/User_Guide/Settings/account.html)
-- [Statistics Filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters)
-- [Browser Comparison]({{root_url}}/User_Guide/Statistics/browser_compare.html)
+- [Account Settings]({{root_url}}/Help/Account_and_Settings/account.html)
+- [Statistics Filters]({{root_url}}/Help/Analytics_and_Reporting/Statistics/index.html#-Statistics-Filters)
+- [Browser Comparison]({{root_url}}/Analytics_and_Reporting/Statistics/browser_comparison.html)
