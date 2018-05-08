@@ -580,7 +580,7 @@ If you are writing your own custom HTML that you plan on importing into the desi
 4. Click **Import**.
    <br>A window opens where you can paste in your own HTML.
 
-   ![](<% root_url %>/img/import_custom_html.png)
+   ![]({{root_url}}/img/import_custom_html.png)
 
 5. Paste or enter the HTML you want to use, and then click **Import**.
 
