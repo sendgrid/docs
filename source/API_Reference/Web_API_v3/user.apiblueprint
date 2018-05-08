@@ -11,7 +11,7 @@ navigation:
 FORMAT: 1A
 
 {%info%}
-Due to the hightened sensitivity of these API calls, they will generally require using an Authorization header of `Basic user:pass`, where the `user:pass` has been Base64-encoded. They will generally not allow Authorization by API Key.
+These API calls require Authorization with an API Key that [has User scopes](https://sendgrid.com/docs/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html#User-Settings), or `Basic` Authorization with the Base64-encoded `username:password` of the account.
 {%endinfo%}
 
 ## User Profile [/user/profile]
