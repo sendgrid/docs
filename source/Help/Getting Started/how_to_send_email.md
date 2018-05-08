@@ -89,7 +89,7 @@ Be sure your account is set to the correct time zone in order to ensure that you
 Additional Resources
 {% endanchor h3 %}
 
-- [Campaign Statistics](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html) 
-- [Billing](https://sendgrid.com/docs/Classroom/Basics/index.html#Billing)
+- [Campaign Statistics](https://sendgrid.com/docs/Help/Analytics_and_Reporting/campaign_stats.html) 
+- [Billing](https://sendgrid.com/docs/Help/Account_and_Settings/billing.html)
 - [Sending with the API]({{root_url}}/API_Reference/api_v3.html)
 - [Sending with SMTP]({{root_url}}/API_Reference/SMTP_API/using_the_smtp_api.html)

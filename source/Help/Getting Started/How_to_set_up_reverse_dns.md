@@ -130,6 +130,6 @@ There is a character limit in SPF records that means that if you have more than 
 Additional resources
 {% endanchor %}
 
-- [How to set up link branding]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_link_branding.html)
-- [How to set up domain authentication]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html)
-- [Troubleshooting]({{root_url}}/User_Guide/Settings/Sender_authentication/Troubleshooting.html)
+- [How to set up link branding]({{root_url}}/Help/Getting_Started/How_to_set_up_link_branding.html)
+- [How to set up domain authentication]({{root_url}}/Help/Getting_Started/How_to_set_up_domain_authentication.html)
+- [Troubleshooting]({{root_url}}/Help/Getting_Started/Troubleshooting_sender_authentication.html)

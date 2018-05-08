@@ -72,7 +72,7 @@ Note that you can also set up link branding when you set up your domain authenti
 1. In the link branding section, click **Get Started**.
 1. Next, add in information about your DNS host. CLick **Next**.
 1. Enter the domain that you want to brand the links and images with and add advanced settings. Make sure that you only enter the name of your root domain. Do not include `www` or `http://www` in this field! Your domain needs to match the domain of your from address on the emails you are sending out. For example, if I am branding with the domain `example.sendgrid.com`, I would set my link branding domain to be `sendgrid.com`. Click **Next**. For more information about advanced settings, see [Advanced settings](#-Advanced-settings).
-1. Next, you need to add all of the CNAME records on this screen to your DNS host. This process varies depending on your DNS host. For videos on how to add your CNAME to some popular DNS service providers, check out these [videos](https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/providers.html). If you don't have access to modify your companies DNS records, you can also email a request to a co-worker. This email includes a direct link to the CNAME records. This link does expire. The recipient doesn't need login access to your SendGrid account.
+1. Next, you need to add all of the CNAME records on this screen to your DNS host. This process varies depending on your DNS host. For videos on how to add your CNAME to some popular DNS service providers, check out these [videos](https://sendgrid.com/docs/Help/Getting_Started/dns_providers.html). If you don't have access to modify your companies DNS records, you can also email a request to a co-worker. This email includes a direct link to the CNAME records. This link does expire. The recipient doesn't need login access to your SendGrid account.
 
 Now links and images in your emails are from your custom domain. You only need to update your link branding if you want to update the domain that appears in the links in your email.
 
@@ -85,7 +85,7 @@ Verifying your DNS
 Once you add the CNAME records to your DNS host, return to the [Sender authentication page](https://app.sendgrid.com/settings/whitelabel) and click **Verify**.
 
 {% info %}
-If you click verify, and only half of your CNAME records verify, this usually means that you need to wait a bit longer. It's also possible that you entered one of your records in incorrectly. For other troubleshooting information, see [Sender authentication troubleshooting]({{root_url}}/User_Guide/Settings/Sender_authentication/Troubleshooting.html).
+If you click verify, and only half of your CNAME records verify, this usually means that you need to wait a bit longer. It's also possible that you entered one of your records in incorrectly. For other troubleshooting information, see [Sender authentication troubleshooting]({{root_url}}/Help/Getting_Started/Troubleshooting_sender_authentication.html).
 {% endinfo %}
 
 Any time that you send an email with image or links that match the branded link, SendGrid applies that link to your email. You only need to update your link branding if you want to update the links used in your emails.
@@ -124,6 +124,6 @@ If you set up a whitelabel after 2015, it has been automatically migrated to our
 Additional resources
 {% endanchor %}
 
-- [How to set up domain authentication]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html)
-- [How to set up reverse DNS]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_reverse_dns.html)
-- [Troubleshooting]({{root_url}}/User_Guide/Settings/Sender_authentication/Troubleshooting.html)
+- [How to set up domain authentication]({{root_url}}/Help/Getting_Started/How_to_set_up_domain_authentication.html)
+- [How to set up reverse DNS]({{root_url}}/Help/Getting_Started/How_to_set_up_reverse_dns.html)
+- [Troubleshooting]({{root_url}}/Help/Getting_Started/Troubleshooting_sender_authentication.html)

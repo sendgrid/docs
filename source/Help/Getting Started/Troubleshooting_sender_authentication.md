@@ -237,6 +237,7 @@ For subusers, SendGrid attaches authenticated domain information in the followin
 Additional resources
 {% endanchor %}
 
-- [How to set up domain authentication]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html)
-- [How to set up link branding]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_link_branding.html)
-- [How to set up reverse DNS]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_reverse_dns.html)
+- [How to set up domain authentication]({{root_url}}/Help/Getting_Started/How_to_set_up_domain_authentication.html)
+- [How to set up link branding]({{root_url}}/Help/Getting_Started/How_to_set_up_link_branding.html)
+- [How to set up reverse DNS]({{root_url}}/Help/Getting_Started/How_to_set_up_reverse_dns.html)
+
