@@ -29,7 +29,6 @@ You can play around with Markdown on our [live demo page](http://www.markdown-he
 [Line Breaks](#lines)
 [YouTube Videos](#videos)
 
-<a name="headers"/>
 
 ## Headers
 
@@ -68,8 +67,6 @@ Alternatively, for H1 and H2, an underline-ish style:
 
 ## Alt-H2
 
-<a name="emphasis"/>
-
 ## Emphasis
 
 ```no-highlight
@@ -89,8 +86,6 @@ Strong emphasis, aka bold, with **asterisks** or **underscores**.
 Combined emphasis with **asterisks and _underscores_**.
 
 Strikethrough uses two tildes. ~~Scratch this.~~
-
-<a name="lists"/>
 
 ## Lists
 
@@ -127,8 +122,6 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 - Or minuses
 
 * Or pluses
-
-<a name="links"/>
 
 ## Links
 
@@ -172,8 +165,6 @@ Some text to show that the reference links can follow later.
 [1]: http://slashdot.org
 [link text itself]: http://www.reddit.com
 
-<a name="images"/>
-
 ## Images
 
 ```no-highlight
@@ -197,8 +188,6 @@ Reference-style:
 ![alt text][logo]
 
 [logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png 'Logo Title Text 2'
-
-<a name="code"/>
 
 ## Code and Syntax Highlighting
 

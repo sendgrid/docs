@@ -1,5 +1,75 @@
-.post-meta {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+@import '../scss/global/variables';
+@import '../scss/global/mixins';
+
+$aside-width: 300px;
+
+.doc-wrap {
+  display: flex;
+  padding-top: $scaleup-4;
+  padding-bottom: $scaleup-4;
+}
+
+.doc-main {
+  flex: 1;
+  overflow: hidden;
+  padding: 0 $scaleup-8;
+}
+
+.aside-nav {
+  padding-top: $scaledown-2;
+  position: sticky;
+  align-self: flex-start;
+  flex: 0 0 300px;
+  top: 0;
+}
+
+.aside-nav a {
+  display: block;
+  margin-bottom: $scale-0;
+  padding-left: $scaledown-6;
+  padding-top: 2px;
+  line-height: $scaleup-1;
+  border-left: 3px solid transparent;
+  font-size: 14px;
+
+  @include colfax(600);
+}
+
+.aside-nav .h3 {
+  margin-left: $scaleup-2;
+  font-size: 13px;
+  color: $slate-60;
+
+  @include colfax(300);
+}
+
+.aside-nav__title {
+  color: $slate-40;
+  margin-bottom: $scale-0;
+  text-transform: uppercase;
+  font-size: 13px;
+
+  @include colfax(600);
+}
+
+.doc-wrap aside a.active {
+  border-color: $sg-blue;
+}
+
+// custom Markdown components
+.callout {
+  padding: $scaledown-3 $scaleup-2;
+  margin: $scaleup-4 0;
+}
+
+.callout > p {
+  margin: $scaledown-3 0;
+}
+
+.callout--info {
+  border-left: 4px solid $sg-blue;
+}
+
+.callout--alert {
+  border-left: 4px solid $alert-danger-text;
 }

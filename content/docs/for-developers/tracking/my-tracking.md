@@ -1,35 +1,8 @@
 ---
-title: "dev email article working with templates"
+title: "my tracking"
 category: "sending-email"
-group: "working-with-templates-content"
+
 ---
-
-# NOTE: This "post" on [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) and is meant to test styling of Markdown generated documents.
-
-This is intended as a quick reference and showcase. For more complete info, see [John Gruber's original spec](http://daringfireball.net/projects/markdown/) and the [Github-flavored Markdown info page](http://github.github.com/github-flavored-markdown/).
-
-This cheatsheet is specifically _Markdown Here's_ version of Github-flavored Markdown. This differs slightly in styling and syntax from what Github uses, so what you see below might vary a little from what you get in a _Markdown Here_ email, but it should be pretty close.
-
-You can play around with Markdown on our [live demo page](http://www.markdown-here.com/livedemo.html).
-
-(If you're not a Markdown Here user, check out the [Markdown Cheatsheet](./Markdown-Cheatsheet) that is not specific to MDH. But, really, you should also use Markdown Here, because it's awesome. http://markdown-here.com)
-
-##### Table of Contents
-
-[Headers](#headers)
-[Emphasis](#emphasis)
-[Lists](#lists)
-[Links](#links)
-[Images](#images)
-[Code and Syntax Highlighting](#code)
-[Tables](#tables)
-[Blockquotes](#blockquotes)
-[Inline HTML](#html)
-[Horizontal Rule](#hr)
-[Line Breaks](#lines)
-[YouTube Videos](#videos)
-
-<a name="headers"/>
 
 ## Headers
 
@@ -41,7 +14,7 @@ You can play around with Markdown on our [live demo page](http://www.markdown-he
 ##### H5
 ###### H6
 
-Alternatively, for H1 and H2, an underline-ish style:
+Alternatively, for H1 and H2, an underline-ish style like
 
 Alt-H1
 ======
@@ -49,26 +22,42 @@ Alt-H1
 Alt-H2
 ------
 ```
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
 
-# H1
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
 
-## H2
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
 
-### H3
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
 
-#### H4
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
 
-##### H5
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
 
-###### H6
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
 
-Alternatively, for H1 and H2, an underline-ish style:
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
 
-# Alt-H1
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
 
-## Alt-H2
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
 
-<a name="emphasis"/>
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
 
 ## Emphasis
 
@@ -90,7 +79,6 @@ Combined emphasis with **asterisks and _underscores_**.
 
 Strikethrough uses two tildes. ~~Scratch this.~~
 
-<a name="lists"/>
 
 ## Lists
 
@@ -128,7 +116,6 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 * Or pluses
 
-<a name="links"/>
 
 ## Links
 
@@ -172,21 +159,51 @@ Some text to show that the reference links can follow later.
 [1]: http://slashdot.org
 [link text itself]: http://www.reddit.com
 
-<a name="images"/>
 
-## Images
 
-```no-highlight
-Here's our logo (hover to see the title text):
+### Images
 
-Inline-style:
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+<code-group>
 
-Reference-style:
-![alt text][logo]
+```php
+  // Create array containing abbreviations of days of week.
+  $daysOfWeek = array('S','M','T','W','T','F','S');
 
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+  // What is the first day of the month in question?
+  $firstDayOfMonth = mktime(0,0,0,$month,1,$year);
+
+  // How many days does this month contain?
 ```
+
+```python
+  static int
+  _is_legal_capsule(PyCapsule *capsule, const char *invalid_capsule)
+  {
+      if (!capsule || !PyCapsule_CheckExact(capsule) || capsule->pointer == NULL) {
+          PyErr_SetString(PyExc_ValueError, invalid_capsule);
+          return 0;
+      }
+      return 1;
+  }
+```
+
+```javascript
+  const cat = {
+    id: `${i}`,
+    slug: category,
+    parent: '__SOURCE__',
+    children: [],
+    internal: {
+      type: 'forDeveloperCategories',
+    },
+  };
+  // Get content digest of node. (Required field)
+  const contentDigest = crypto
+    .createHash('md5')
+    .update(JSON.stringify(cat))
+    .digest('hex');
+```
+</code-group>
 
 Here's our logo (hover to see the title text):
 
@@ -198,7 +215,6 @@ Reference-style:
 
 [logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png 'Logo Title Text 2'
 
-<a name="code"/>
 
 ## Code and Syntax Highlighting
 
@@ -245,8 +261,6 @@ But let's throw in a <b>tag</b>.
 
 Again, to see what languages are available for highlighting, and how to write those language names, see the [highlight.js demo page](http://softwaremaniacs.org/media/soft/highlight/test.html).
 
-<a name="tables"/>
-
 ## Tables
 
 Tables aren't part of the core Markdown spec, but they are part of GFM and _Markdown Here_ supports them. They are an easy way of adding tables to your email -- a task that would otherwise require copy-pasting from another application.
@@ -283,28 +297,6 @@ The outer pipes (|) are optional, and you don't need to make the raw Markdown li
 | _Still_  | `renders` | **nicely** |
 | 1        | 2         | 3          |
 
-<a name="blockquotes"/>
-
-## Blockquotes
-
-```no-highlight
-> Blockquotes are very handy in email to emulate reply text.
-> This line is part of the same quote.
-
-Quote break.
-
-> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote.
-```
-
-> Blockquotes are very handy in email to emulate reply text.
-> This line is part of the same quote.
-
-Quote break.
-
-> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can _put_ **Markdown** into a blockquote.
-
-<a name="html"/>
-
 ## Inline HTML
 
 You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
@@ -327,9 +319,7 @@ You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
   <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
 </dl>
 
-<a name="hr"/>
-
-## Horizontal Rule
+### Horizontal Rule
 
 ```
 Three or more...
@@ -361,7 +351,6 @@ Asterisks
 
 Underscores
 
-<a name="lines"/>
 
 ## Line Breaks
 
@@ -387,20 +376,56 @@ This line is only separated by a single newline, so it's a separate line in the 
 
 (Technical note: _Markdown Here_ uses GFM line breaks, so there's no need to use MD's two-space line breaks.)
 
-<a name="videos"/>
 
-## YouTube Videos
+## Embed Videos
 
-They can't be added directly but you can add an image with a link to the video like this:
-
-```no-highlight
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=8AkLfYOgIrE
-" target="_blank"><img src="http://img.youtube.com/vi/8AkLfYOgIrE/0.jpg"
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
-```
-
-Or, in pure Markdown, but losing the image sizing and border:
+Use an iframe :)
 
 ```no-highlight
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vCadcBR95oU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 ```
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vCadcBR95oU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+Push it. Push it good.
+
+
+
+### Callouts & more
+
+```no-highlight
+<call-out>
+  I'm callout infor
+</call-out>
+```
+
+<call-out>
+
+  **Info callout**
+
+  A consequat vestibulum per feugiat massa taciti, accumsan nascetur vehicula est phasellus in, facilisis parturient bibendum iaculis felis.
+  [You can do links!](https://sendgrid.com)
+
+  A consequat vestibulum per feugiat massa taciti, accumsan nascetur vehicula est phasellus in, facilisis parturient bibendum iaculis felis.
+  [You can do links!](https://sendgrid.com)
+
+</call-out>
+
+```no-highlight
+<call-out type="alert">
+  I'm callout infor
+</call-out>
+```
+
+<call-out type="alert">
+
+  **Info callout**
+
+  A consequat vestibulum per feugiat massa taciti, accumsan nascetur vehicula est phasellus in, facilisis parturient bibendum iaculis felis.
+  [You can do links!](https://sendgrid.com)
+
+  A consequat vestibulum per feugiat massa taciti, accumsan nascetur vehicula est phasellus in, facilisis parturient bibendum iaculis felis.
+  [You can do links!](https://sendgrid.com)
+
+</call-out>
+

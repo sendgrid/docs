@@ -29,7 +29,6 @@ You can play around with Markdown on our [live demo page](http://www.markdown-he
 [Line Breaks](#lines)
 [YouTube Videos](#videos)
 
-<a name="headers"/>
 
 ## Headers
 
@@ -68,7 +67,6 @@ Alternatively, for H1 and H2, an underline-ish style:
 
 ## Alt-H2
 
-<a name="emphasis"/>
 
 ## Emphasis
 
@@ -90,7 +88,6 @@ Combined emphasis with **asterisks and _underscores_**.
 
 Strikethrough uses two tildes. ~~Scratch this.~~
 
-<a name="lists"/>
 
 ## Lists
 
@@ -128,7 +125,6 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 * Or pluses
 
-<a name="links"/>
 
 ## Links
 
@@ -172,7 +168,6 @@ Some text to show that the reference links can follow later.
 [1]: http://slashdot.org
 [link text itself]: http://www.reddit.com
 
-<a name="images"/>
 
 ## Images
 
@@ -198,7 +193,6 @@ Reference-style:
 
 [logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png 'Logo Title Text 2'
 
-<a name="code"/>
 
 ## Code and Syntax Highlighting
 
@@ -245,7 +239,6 @@ But let's throw in a <b>tag</b>.
 
 Again, to see what languages are available for highlighting, and how to write those language names, see the [highlight.js demo page](http://softwaremaniacs.org/media/soft/highlight/test.html).
 
-<a name="tables"/>
 
 ## Tables
 
@@ -283,7 +276,6 @@ The outer pipes (|) are optional, and you don't need to make the raw Markdown li
 | _Still_  | `renders` | **nicely** |
 | 1        | 2         | 3          |
 
-<a name="blockquotes"/>
 
 ## Blockquotes
 
@@ -303,7 +295,6 @@ Quote break.
 
 > This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can _put_ **Markdown** into a blockquote.
 
-<a name="html"/>
 
 ## Inline HTML
 
