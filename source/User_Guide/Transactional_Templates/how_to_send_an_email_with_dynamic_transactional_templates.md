@@ -46,7 +46,7 @@ In order to send a dynamic transactional email using cURL, set your call up to l
 
 {% codeblock %}
 curl -X "POST" "https://api.sendgrid.com/v3/mail/send" \
-     -H 'Authorization: Bearer [YourAPIKeyGoesHere!]' \
+     -H 'Authorization: Bearer <<YOUR_API_KEY>>' \
      -H 'Content-Type: application/json' \
      -d '{
   "from": {
