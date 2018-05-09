@@ -16,7 +16,7 @@ navigation:
 
 SendGrid’s OEM process allows customers to use SendGrid’s service to send email on behalf of your customers, and can also include direct sending for your own business.
 
-Typically this is achieved by utilizing our subuser functionality, where you create a parent account and then separate your customers into [subusers]({{root_url}}/User_Guide/Settings/Subusers/index.html): child accounts that belong to (and live within) a parent account. Subusers have their own permissions and sending limits, which you assign as you create them. For most customers who are sending email on behalf of their customers as an OEM, it's a great way to separate their users' data. It also gives you the ability to create a [domain whitelabel]({{root_url}}/User_Guide/Settings/Whitelabel/domains.html) for each of your customers, effectively masking SendGrid as the delivery engine for the end recipient, and you as the account owner if you choose.
+Typically this is achieved by utilizing our subuser functionality, where you create a parent account and then separate your customers into [subusers]({{root_url}}/User_Guide/Settings/Subusers/index.html): child accounts that belong to (and live within) a parent account. Subusers have their own permissions and sending limits, which you assign as you create them. For most customers who are sending email on behalf of their customers as an OEM, it's a great way to separate their users' data. It also gives you the ability to [authenticate a domain]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html) for each of your customers, effectively masking SendGrid as the delivery engine for the end recipient, and you as the account owner if you choose.
 
 # Why It Matters
 

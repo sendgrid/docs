@@ -12,6 +12,8 @@ seo:
   
 ---
 
+<iframe src="https://player.vimeo.com/video/248169751" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 - [Changing your password](#-Changing-your-password)
     - [Changing your password through the SendGrid UI](#-Changing-your-password-through-the-SendGrid-UI)
     - [Changing your password via Forgot Password](#-Changing-your-password-via-Forgot-Password)

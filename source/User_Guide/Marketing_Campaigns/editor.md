@@ -96,7 +96,7 @@ Getting Started With The Code Editor
 You can only edit unsent campaigns.
 {% endinfo %}
 
-You can select a Blank Template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates](<% root_url %>/User_Guide/Marketing_Campaigns/templates.html).
+You can select a Blank Template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html).
 
 {% info %}
 When you open one of your existing campaigns or templates in the new editor, SendGrid creates a duplicate of the original campaign or template. You may always open the original campaign or template in the previous editor.
@@ -175,18 +175,18 @@ Substitution tags allow you to easily generate dynamic content for each recipien
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>{% raw %}<%asm_group_unsubscribe_raw_url%>{% endraw %}</code>* </td>
+   <td><code>{% raw %}<%asm_group_unsubscribe_<br>raw_url%>{% endraw %}</code>* </td>
    <td>This tag is replaced with a link allowing your recipients opt out of any emails you send using the chosen Unsubscribe Group.</td>
    <td>Unsubscribe</td>
  </tr>
  <tr>
-   <td><code>{% raw %}<%asm_preferences_raw_url%>{% endraw %}</code>
+   <td><code>{% raw %}<%asm_preferences_<br>raw_url%>{% endraw %}</code>
    * </td>
    <td>This tag is replaced with a link allowing your recipients to opt out of any email unsubscribe groups you offer.</td>
    <td>Unsubscribe</td>
  </tr>
    <tr>
-   <td><code>{% raw %}<%asm_global_unsubscribe_raw_url%>{% endraw %}</code>
+   <td><code>{% raw %}<%asm_global_unsubscribe<br>_raw_url%>{% endraw %}</code>
    * </td>
    <td>This tag is replaced with a link allowing your recipients to opt out of all email communication.</td>
    <td>Unsubscribe</td>
@@ -580,7 +580,7 @@ If you are writing your own custom HTML that you plan on importing into the desi
 4. Click **Import**.
    <br>A window opens where you can paste in your own HTML.
 
-   ![](<% root_url %>/img/import_custom_html.png)
+  ![]({{root_url}}/img/import_custom_html.png "Import custom HTML")
 
 5. Paste or enter the HTML you want to use, and then click **Import**.
 

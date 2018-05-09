@@ -13,6 +13,8 @@ navigation:
  show: true
 ---
 
+<iframe src="https://player.vimeo.com/video/248169751" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 Two-factor authentication, commonly referred to as multi-factor authentication, allows you to make your SendGrid account more secure by requiring authentication beyond a simple username and password when logging in.
 
 SendGrid’s Two-Factor Authentication can be configured to accept a code sent to your mobile phone either via the [Authy App](https://www.authy.com/app/mobile/), or an SMS message.

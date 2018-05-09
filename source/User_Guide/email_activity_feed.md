@@ -96,10 +96,6 @@ The Email Activity feed allows you to view specific information about messages s
     <td>Spam Reports</td>
     <td>Whenever a recipient marks your email as spam and their mail server tells us about it.</td>
   </tr>
-  <tr>
-    <td>Parse</td>
-    <td>Triggered if you're using the Inbound Parse Webhook.</td>
-  </tr>
 </table>
 
 {% anchor H2 %}
@@ -136,7 +132,6 @@ In addition to viewing the email activity associated with your account by recipi
 * Subject Line
 * Template ID
 * Template Name
-* Unique Arguments
 
 *To use advanced search:*
 
@@ -154,7 +149,7 @@ or
 * Search emails by **all** of the following - This search will return fewer results and will pull in events that meet *every* criteria specified by the selected filters. 
 
 {% anchor H2 %}
-Viewing Event History
+Viewing event history 
 {% endanchor %}
 
 *To view event history:*

@@ -10,6 +10,10 @@ navigation:
 ---
 FORMAT: 1A
 
+{%info%}
+These API calls require Authorization with an API Key that [has User scopes](https://sendgrid.com/docs/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html#User-Settings), or `Basic` Authorization with the Base64-encoded `username:password` of the account.
+{%endinfo%}
+
 ## User Profile [/user/profile]
 
 ### GET User Profile [GET]

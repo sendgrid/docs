@@ -15,7 +15,7 @@ navigation:
 
 **1. Establish the New Subuser ** (required)
 
-With the [subuser creation API call](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/subusers.html) you will be able to establish the new subuser's account and profile settings. This call will create the new subuser account, however it does not apply the sending IP for the account, nor does it establish a whitelabel entry or enable website/SMTP access for the subuser.  
+With the [subuser creation API call](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/subusers.html) you will be able to establish the new subuser's account and profile settings. This call will create the new subuser account, however it does not apply the sending IP for the account, nor does it establish a domain authentication entry or enable website/SMTP access for the subuser.  
 
 **Call Example:** https://api.sendgrid.com/apiv2/customer.add.json?api\_user=ryan.burrer@sendgrid.com&api\_key=xxxxxx&username=newsubuser\_username&website=yourdomain.com&password=newsubuser\_password&confirm\_password=newsubuser\_password&first\_name=Ryan&last\_name=Burrer&address=555\_anystreet&city=any\_city&state=CO&zip=80203&email=example@example.com&country=US&phone=555-5555
 
@@ -58,11 +58,11 @@ When defining this call's 'set' parameter, you have a few options for appending 
 
  
 
-**3. Assign a Whitelabel for the Subuser Account ** (optional)
+**3. Assign a domain authentication for the Subuser Account ** (optional)
 
-After you have created the subuser account and have appended an IP address, you are now ready to assign an _existing_  [whitelabel](https://sendgrid.zendesk.com/hc/en-us/articles/200548228-All-You-Need-to-Know-About-Whitelabeling) to the account. If you have not yet created the required records for whitelabeling for your chosen domain then this step should be skipped. Unfortunately, new whitelabel records cannot be established through API calls.
+After you have created the subuser account and have appended an IP address, you are now ready to assign an _existing_  [authenticated domain](https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html) to the account. If you have not yet created the required records for authenticating your chosen domain then this step should be skipped.
 
-First, you should find out what whitelabel entries you have associated with your account. This call will [list your available whitelabel domains](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/whitelabel.html#-List):
+First, you should find out what authenticated domains you have associated with your account. This call will [list your available authenticated domains](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/whitelabel.html#-List):
 
 **Call Example: ** https://api.sendgrid.com/apiv2/customer.whitelabel.json?api\_user=ryan.burrer@sendgrid.com&api\_key=xxxxxx&task=list
 
@@ -71,9 +71,9 @@ First, you should find out what whitelabel entries you have associated with your
 <p class="wysiwyg-text-align-left"><img src="http://content.screencast.com/users/Ryan.Burrer/folders/Jing/media/9d491f57-d3c8-4376-a31d-a04b49590747/00000097.png" alt=""></p>
 </center>
 
-The API response above shows that email.sendgrid.com and email.example.com are both already established whitelabel entries, and can be used by this subuser. If none are displayed then the next step in this process should be skipped.
+The API response above shows that email.sendgrid.com and email.example.com are both already established domain entries, and can be used by this subuser. If none are displayed then the next step in this process should be skipped.
 
-If you have a whitelabel entry that you wish to apply to your subuser then you will need to [append the whitelabel entry](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/whitelabel.html#-Append) to your subuser:
+If you have a authenticated domain entry that you wish to apply to your subuser then you will need to [append the whitelabel entry](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/whitelabel.html#-Append) to your subuser:
 
 **Call Example:**  https://api.sendgrid.com/apiv2/customer.whitelabel.json?api\_user=ryan.burrer@sendgrid.com&api\_key=xxxxxx&task=append&user=newsubuser\_username&mail\_domain=YOUR.ALREADY.EXISTING.WHITELABEL
 
