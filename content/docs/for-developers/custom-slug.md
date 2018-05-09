@@ -1,51 +1,11 @@
 ---
 title: "custom elements"
 category: "sending-email"
-group: "tracking"
 ---
-<!-- <aside>
 
-#### Included In This Article
-
-[Headers](#headers)
-[Emphasis](#emphasis)
-[Lists](#lists)
-[Links](#links)
-[Images](#images)
-[Code and Syntax Highlighting](#code)
-[Tables](#tables)
-[Inline HTML](#html)
-[Horizontal Rule](#hr)
-[Line Breaks](#lines)
-[Embed Videos](#videos)
-
-</aside> -->
-
-<aside>
-
-- [What is domain authentication ok?](#-What-is-domain-authentication)
-- [Key terminology](#-Key-terminology)
-    - [DNS](#-DNS)
-    - [DKIM](#-DKIM)
-    - [SPF](#-SPF)
-    - [CNAME](#-CNAME)
-- [Setting up domain authentication](#-Setting-up-domain-authentication)
-    - [Before you begin](#-Before-you-begin)
-    - [Setting up DNS](#-Setting-up-DNS)
-- [Advanced settings](#-Advanced-settings)
-    - [Using automated security](#-Using-automated-security)
-    - [Using a custom return path](#-Using-a-custom-return-path)
-    - [Using a custom DKIM selector](#-Using-a-custom-DKIM-selector)
-    - [Assigning a subuser](#-Assigning-a-subuser)
-- [Migrating from legacy Whitelabel](#-Migrating-from-legacy-Whitelabel)
-
-</aside>
-
-<div class="doc-main"/>
-
-<a name="headers"/>
 
 ## Headers
+
 
 ```no-highlight
 # H1
@@ -55,7 +15,7 @@ group: "tracking"
 ##### H5
 ###### H6
 
-Alternatively, for H1 and H2, an underline-ish style like:
+Alternatively, for H1 and H2, an underline-ish style like
 
 Alt-H1
 ======
@@ -63,26 +23,42 @@ Alt-H1
 Alt-H2
 ------
 ```
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
 
-# H1
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
 
-## H2
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
 
-### H3
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
 
-#### H4
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
 
-##### H5
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
 
-###### H6
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
 
-Alternatively, for H1 and H2, an underline-ish style:
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
 
-# Alt-H1
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
 
-## Alt-H2
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
 
-<a name="emphasis"/>
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
 
 ## Emphasis
 
@@ -104,7 +80,6 @@ Combined emphasis with **asterisks and _underscores_**.
 
 Strikethrough uses two tildes. ~~Scratch this.~~
 
-<a name="lists"/>
 
 ## Lists
 
@@ -142,7 +117,6 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 * Or pluses
 
-<a name="links"/>
 
 ## Links
 
@@ -186,21 +160,51 @@ Some text to show that the reference links can follow later.
 [1]: http://slashdot.org
 [link text itself]: http://www.reddit.com
 
-<a name="images"/>
 
-## Images
 
-```no-highlight
-Here's our logo (hover to see the title text):
+### Images
 
-Inline-style:
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+<code-group>
 
-Reference-style:
-![alt text][logo]
+```php
+  // Create array containing abbreviations of days of week.
+  $daysOfWeek = array('S','M','T','W','T','F','S');
 
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+  // What is the first day of the month in question?
+  $firstDayOfMonth = mktime(0,0,0,$month,1,$year);
+
+  // How many days does this month contain?
 ```
+
+```python
+  static int
+  _is_legal_capsule(PyCapsule *capsule, const char *invalid_capsule)
+  {
+      if (!capsule || !PyCapsule_CheckExact(capsule) || capsule->pointer == NULL) {
+          PyErr_SetString(PyExc_ValueError, invalid_capsule);
+          return 0;
+      }
+      return 1;
+  }
+```
+
+```javascript
+  const cat = {
+    id: `${i}`,
+    slug: category,
+    parent: '__SOURCE__',
+    children: [],
+    internal: {
+      type: 'forDeveloperCategories',
+    },
+  };
+  // Get content digest of node. (Required field)
+  const contentDigest = crypto
+    .createHash('md5')
+    .update(JSON.stringify(cat))
+    .digest('hex');
+```
+</code-group>
 
 Here's our logo (hover to see the title text):
 
@@ -212,7 +216,6 @@ Reference-style:
 
 [logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png 'Logo Title Text 2'
 
-<a name="code"/>
 
 ## Code and Syntax Highlighting
 
@@ -259,8 +262,6 @@ But let's throw in a <b>tag</b>.
 
 Again, to see what languages are available for highlighting, and how to write those language names, see the [highlight.js demo page](http://softwaremaniacs.org/media/soft/highlight/test.html).
 
-<a name="tables"/>
-
 ## Tables
 
 Tables aren't part of the core Markdown spec, but they are part of GFM and _Markdown Here_ supports them. They are an easy way of adding tables to your email -- a task that would otherwise require copy-pasting from another application.
@@ -298,8 +299,6 @@ The outer pipes (|) are optional, and you don't need to make the raw Markdown li
 | 1        | 2         | 3          |
 
 
-<a name="html"/>
-
 ## Inline HTML
 
 You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
@@ -322,9 +321,7 @@ You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
   <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
 </dl>
 
-<a name="hr"/>
-
-## Horizontal Rule
+### Horizontal Rule
 
 ```
 Three or more...
@@ -356,7 +353,6 @@ Asterisks
 
 Underscores
 
-<a name="lines"/>
 
 ## Line Breaks
 
@@ -382,7 +378,6 @@ This line is only separated by a single newline, so it's a separate line in the 
 
 (Technical note: _Markdown Here_ uses GFM line breaks, so there's no need to use MD's two-space line breaks.)
 
-<a name="videos"/>
 
 ## Embed Videos
 
@@ -396,9 +391,9 @@ Use an iframe :)
 
 Push it. Push it good.
 
-<a name="callouts"/>
 
-## Callouts
+
+### Callouts & more
 
 ```no-highlight
 <call-out>

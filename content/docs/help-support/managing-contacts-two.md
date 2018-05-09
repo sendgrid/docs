@@ -28,8 +28,6 @@ You can play around with Markdown on our [live demo page](http://www.markdown-he
 [Line Breaks](#lines)
 [YouTube Videos](#videos)
 
-<a name="headers"/>
-
 ## Headers
 
 ```no-highlight
@@ -67,8 +65,6 @@ Alternatively, for H1 and H2, an underline-ish style:
 
 ## Alt-H2
 
-<a name="emphasis"/>
-
 ## Emphasis
 
 ```no-highlight
@@ -88,8 +84,6 @@ Strong emphasis, aka bold, with **asterisks** or **underscores**.
 Combined emphasis with **asterisks and _underscores_**.
 
 Strikethrough uses two tildes. ~~Scratch this.~~
-
-<a name="lists"/>
 
 ## Lists
 
@@ -126,8 +120,6 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 - Or minuses
 
 * Or pluses
-
-<a name="links"/>
 
 ## Links
 
@@ -171,8 +163,6 @@ Some text to show that the reference links can follow later.
 [1]: http://slashdot.org
 [link text itself]: http://www.reddit.com
 
-<a name="images"/>
-
 ## Images
 
 ```no-highlight
@@ -196,8 +186,6 @@ Reference-style:
 ![alt text][logo]
 
 [logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png 'Logo Title Text 2'
-
-<a name="code"/>
 
 ## Code and Syntax Highlighting
 
@@ -244,8 +232,6 @@ But let's throw in a <b>tag</b>.
 
 Again, to see what languages are available for highlighting, and how to write those language names, see the [highlight.js demo page](http://softwaremaniacs.org/media/soft/highlight/test.html).
 
-<a name="tables"/>
-
 ## Tables
 
 Tables aren't part of the core Markdown spec, but they are part of GFM and _Markdown Here_ supports them. They are an easy way of adding tables to your email -- a task that would otherwise require copy-pasting from another application.
@@ -282,8 +268,6 @@ The outer pipes (|) are optional, and you don't need to make the raw Markdown li
 | _Still_  | `renders` | **nicely** |
 | 1        | 2         | 3          |
 
-<a name="blockquotes"/>
-
 ## Blockquotes
 
 ```no-highlight
@@ -301,8 +285,6 @@ Quote break.
 Quote break.
 
 > This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can _put_ **Markdown** into a blockquote.
-
-<a name="html"/>
 
 ## Inline HTML
 
@@ -325,8 +307,6 @@ You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
   <dt>Markdown in HTML</dt>
   <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
 </dl>
-
-<a name="hr"/>
 
 ## Horizontal Rule
 
@@ -360,8 +340,6 @@ Asterisks
 
 Underscores
 
-<a name="lines"/>
-
 ## Line Breaks
 
 My basic recommendation for learning how line breaks work is to experiment and discover -- hit &lt;Enter&gt; once (i.e., insert one newline), then hit it twice (i.e., insert two newlines), see what happens. You'll soon learn to get what you want. "Markdown Toggle" is your friend.
@@ -386,15 +364,11 @@ This line is only separated by a single newline, so it's a separate line in the 
 
 (Technical note: _Markdown Here_ uses GFM line breaks, so there's no need to use MD's two-space line breaks.)
 
-<a name="videos"/>
-
 ## YouTube Videos
 
 They can't be added directly but you can add an image with a link to the video like this:
 
-```no-highlight
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=8AkLfYOgIrE
-" target="_blank"><img src="http://img.youtube.com/vi/8AkLfYOgIrE/0.jpg"
+```no-highlight" target="_blank"><img src="http://img.youtube.com/vi/8AkLfYOgIrE/0.jpg"
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 ```
 

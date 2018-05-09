@@ -146,7 +146,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         cat.internal.contentDigest = contentDigest;
 
         // Create node with the gatsby createNode() API
-        createNode(cat);
+        // createNode(cat);
 
         // Create "/for-developers/<category-slug>" pages.
         createPage({
@@ -181,7 +181,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         cat.internal.contentDigest = contentDigest;
 
         // Create node with the gatsby createNode() API
-        createNode(cat);
+        // createNode(cat);
 
         // Create "/help-support/<category-slug>" pages.
         createPage({
