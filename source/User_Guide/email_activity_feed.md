@@ -120,18 +120,27 @@ Advanced Search
 
 In addition to viewing the email activity associated with your account by recipient email address, domain, or event date, you can also use the following filters to sort your data:
 
+* API Key ID
+* API Key Name
 * Campaign ID
 * Campaign Name
 * Categories
-* Event Type
-* From Address
+* Date Processed
+* Event Type (Bounced, Clicked, etc.)
+* From Email Address
 * Message ID
-* Sending API Key ID
-* Sending API Key Name
+* Number of Clicks
+* Number of Opens
+* Requesting IP Address
 * Sending IP Address
+* Status (Delivered, Not Delivered, Processing)
 * Subject Line
-* Template ID
-* Template Name
+* Teammate
+* To Email Address
+* Transactional Template ID
+* Transactional Template Name
+* Unsubscribe Group ID
+* Unsubscribe Group Name
 
 *To use advanced search:*
 
