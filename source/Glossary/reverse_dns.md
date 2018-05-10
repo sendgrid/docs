@@ -14,7 +14,7 @@ Setting up reverse DNS on IP addresses allows mailbox providers to verify the se
 
 {% info %}
 In an attempt to clarify complex functionality, SendGrid is upgrading the name of Whitelabel. A whitelabel is now generally called sender authentication. A domain whitelabel is now called domain authentication. A link whitelabel is now called link branding. An IP Whitelabel is now called reverse DNS.
-{% endinfo %
+{% endinfo %}
 
 {% anchor h2 %}
 Additional Resources
