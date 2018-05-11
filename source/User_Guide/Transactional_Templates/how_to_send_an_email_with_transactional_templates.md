@@ -36,7 +36,7 @@ Design a dynamic transactional template
 
 For sample templates that have example receipts, password resets, account activations, newsletters, and sale notifications, check out the [dynamic-template section of our email templates github repo](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates).
 
-These cURL calls on this page use the [receipt example template](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates/receipt).
+The cURL calls on this page use the [receipt example template](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates/receipt).
 
 {% info %}
 For the full API documentation, see [Mail Send with Dynamic Transactional Templates](https://dynamic-templates.api-docs.io/3.0).
@@ -100,7 +100,7 @@ curl -X "POST" "https://api.sendgrid.com/v3/mail/send" \
 
 It is important to note two sections of this call when using dynamic templates.
 
-In order to send dynamic content, you need to specify a collection of key/value pairs in the `dynamic_template_data` object following the pattern `"handlebar_tag":"value to substitute"`. These handlebar substitutions apply to the text and html content of the body of your email. The total collective size of your handle bar substitutions may not exceed 10,000 bytes per personalization object.
+In order to send dynamic content, you need to specify a JSON blob containing the dynamic data your template will use in the `dynamic_template_data` object. The handlebars script you write will refer to the values in your JSON blob by referencing the JSON key, check out [these examples]({{root_url}}/User_Guide/Transactional_Templates/Using_handlebars.html#-Handlebarjs-reference). This handlebars templating can be used in the text, html, and subject lines of your template. The total collective size of your dynamic data may not exceed 10,000 bytes per personalization object.
 
 {% codeblock %}
 {  
