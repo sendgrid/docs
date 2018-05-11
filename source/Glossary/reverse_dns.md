@@ -10,6 +10,16 @@ navigation:
   show: false
 ---
 
-Reverse DNS (rDNS) is a method of resolving an IP address into a [domain name]({{root_url}}/Glossary/domain.html), just as the domain name system (DNS) resolves domain names into associated IP addresses. One of the applications of reverse DNS is as a spam filter.
+Setting up reverse DNS on IP addresses allows mailbox providers to verify the sender when they do a reverse DNS lookup upon receipt of the emails you send. This differs from domain authentication in that, while you should have your IP addresses in your SPF records, setting up reverse DNS on the IP addresses does not require a change to SPF or DKIM records.
 
-For more information please check out our [Email Infrastructure Guide](https://go.sendgrid.com/SendGrid-Infrastructure-Guide.html?mc=Direct&mcd=https://sendgrid.com/docs/index.html)
+{% info %}
+In an attempt to clarify complex functionality, SendGrid is upgrading the name of Whitelabel. A whitelabel is now generally called sender authentication. A domain whitelabel is now called domain authentication. A link whitelabel is now called link branding. An IP Whitelabel is now called reverse DNS.
+{% endinfo %}
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor h2 %}
+
+- [How to set up reverse DNS]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_reverse_dns.html)
+- [How to set up link branding]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_link_branding.html)
+- [How to set up domain authentication]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html)

@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 50
-title: Create and edit Dynamic Transactional Temmplates
+title: Create and edit Dynamic Transactional Templates
 navigation:
   show: false
 seo:
@@ -10,6 +10,8 @@ seo:
   description: Transactional email templates are pre-coded email layouts that anyone can use to easily create and send transactional emails.
   keywords: transactional email templates, email template, template engine
 ---
+
+![]({{root_url}}/img/dynamic-templates.gif "demo of dynamic templates")
 
 - [Create a template](#-Create-a-template)
 - [Editing your HTML template](#-Editing-your-HTML-template)
@@ -147,6 +149,6 @@ When you add the ```<%asm_preferences_url%>``` tag to your email, we will replac
 Additional Resources
 {% endanchor h2 %}
 
-- [Transactional Templates Overview](https://sendgrid.com/docs/User_Guide/Transactional_Templates/index.html)
+- [Transactional Templates Overview]({{root_url}}/User_Guide/Transactional_Templates/index.html)
 - [Manage Templates](https://sendgrid.com/docs/User_Guide/Transactional_Templates/manage.html)
 - [Transactional Email Unsubscribes]({{root_url}}/User_Guide/Transactional_Email/unsubscribes.html)
