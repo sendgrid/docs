@@ -43,10 +43,9 @@ Personalizing email with Handlebars
 
 We do not support full Handlebars.js functionality. Currently, dynamic templates supports the following helpers:
 
-  - [Substitution](#-Substitution) - `(a)`
-  - [Conditional statements](#-Conditional-statements) - `if/else(a)`
-  - [Iterations](#-Iterations) - `each(a)`
-  - [Unless](#-Unless) - `unless(a)`
+  - [Substitution](#-Substitution)
+  - [Conditional statements](#-Conditional-statements) (including `if/else` and `unless`)
+  - [Iterations](#-Iterations)
 
 For a full helper reference, with examples, see the [Handlebar.js reference](#-Handlebar.js-reference). This page has use cases with examples that include the supported helpers.
 
@@ -64,9 +63,9 @@ This is an [example receipt template](https://github.com/sendgrid/email-template
 
 This reciept template is using these helpers:
 
-  - [Substitution](#-Substitution) - `(a)`
-  - [Conditional statements](#-Conditional-statements) - `if/else(a)`
-  - [Iterations](#-Iterations) - `each(a)`
+  - [Substitution](#-Substitution)
+  - [Conditional statements](#-Conditional-statements)
+  - [Iterations](#-Iterations)
 
 {% anchor h3 %}
 Password reset
@@ -76,7 +75,7 @@ This is an [example transactional template](https://github.com/sendgrid/email-te
 
 This transactional template is using this helper:
 
-- [Substitution](#-Substitution) - `(a)`
+- [Substitution](#-Substitution)
 
 {% anchor h3 %}
 Muliple languages
@@ -86,7 +85,7 @@ This is an [example template that lets you have content in multiple languages](h
 
 This reciept template is using this helper:
 
-- [Conditional statements](#-Conditional-statements) - `if/else(a)`
+- [Conditional statements](#-Conditional-statements) - `if/else`
 
 {% anchor h3 %}
 Newsletter
@@ -96,8 +95,8 @@ This is an [example newsletter template](https://github.com/sendgrid/email-templ
 
 This reciept template is using these helpers:
 
-  - [Substitution](#-Substitution) - `(a)`
-  - [Iterations](#-Iterations) - `each(a)`
+  - [Substitution](#-Substitution)
+  - [Iterations](#-Iterations)
 
 {% anchor h3 %}
 Advertisement
@@ -107,9 +106,9 @@ This is an [example template that is advertising items on sale](https://github.c
 
 This reciept template is using these helpers:
 
-  - [Substitution](#-Substitution) - `(a)`
-  - [Conditional statements](#-Conditional-statements) - `if/else(a)`
-  - [Iterations](#-Iterations) - `each(a)`
+  - [Substitution](#-Substitution)
+  - [Conditional statements](#-Conditional-statements) - `if/else`
+  - [Iterations](#-Iterations)
 
 {% anchor h2 %}
 Handlebar.js reference
@@ -121,12 +120,13 @@ This reference goes through examples of each helper - including HTML email snipp
 Substitution
 {% endanchor %}
 
-There are four main types of substitutions:
+There are five main types of substitutions:
 
 - [Basic replacement](#-Basic-replacement)
 - [Deep object replacement](#-Deep-object-replacement)
 - [Object failure](#-Object-failure)
 - [Replacement with HTML](#-Replacement-with-HTML)
+- [Unless](#-Unless)
 
 {% anchor h4 %}
 Basic replacement
@@ -134,7 +134,7 @@ Basic replacement
 
 HTML should contain:
 {% codeblock %}
-<p>Hello {{firstName}}</p>
+{% raw %}<p>Hello {{firstName}}</p>{% endraw %}
 {% endcodeblock %}
 
 Test Data should contain:
@@ -144,7 +144,7 @@ Test Data should contain:
 
 Resulting replacement:
 {% codeblock %}
-<p>Hello Ben</p>
+{% raw %}<p>Hello Ben</p>{% endraw %}
 {% endcodeblock %}
 
 {% anchor h4 %}
@@ -153,7 +153,7 @@ Deep object replacement
 
 HTML should contain:
 {% codeblock %}
-<p>Hello {{user.profile.firstName}}</p>
+{% raw %}<p>Hello {{user.profile.firstName}}</p>{% endraw %}
 {% endcodeblock %}
 
 Test Data should contain:
@@ -169,7 +169,7 @@ Test Data should contain:
 
 Resulting replacement:
 {% codeblock %}
-<p>Hello Ben</p>
+{% raw %}<p>Hello Ben</p>{% endraw %}
 {% endcodeblock %}
 
 {% anchor h4 %}
@@ -178,7 +178,7 @@ Object failure
 
 HTML should contain:
 {% codeblock %}
-<p>Hello {{user.profile.firstName}}</p>
+{% raw %}<p>Hello {{user.profile.firstName}}</p>{% endraw %}
 {% endcodeblock %}
 
 Test Data should contain:
@@ -201,7 +201,7 @@ Test Data should contain:
 
 Resulting replacement:
 {% codeblock %}
-<p>Hello </p>
+{% raw %}<p>Hello</p>{% endraw %}
 {% endcodeblock %}
 
 {% anchor h4 %}
@@ -210,17 +210,43 @@ Replacement with HTML
 
 HTML should contain:
 {% codeblock %}
-<p>Hello {{{firstName}}}</p>
+{% raw %}<p>Hello {{{firstName}}}</p>{% endraw %}
 {% endcodeblock %}
 
 Test Data should contain:
 {% codeblock %}
-{"firstName":"<strong>Ben</strong>"}
+{% raw %}{"firstName":"<strong>Ben</strong>"}{% endraw %}
 {% endcodeblock %}
 
 Resulting replacement:
 {% codeblock %}
-<p>Hello <strong>Ben</strong></p>
+{% raw %}<p>Hello <strong>Ben</strong></p>{% endraw %}
+{% endcodeblock %}
+
+{% anchor h4 %}
+Unless
+{% endanchor %}
+
+HTML should contain:
+{% codeblock %}
+{{#unless user.active}}
+	<p>Warning! Your account is suspended, please call: {{@root.supportPhone}}</p>
+{{/unless}}
+{% endcodeblock %}
+
+Test Data should contain:
+{% codeblock %}
+{  
+   "user":{  
+      "active":false
+   },
+   "supportPhone":"1-800-1234567"
+}
+{% endcodeblock %}
+
+Resulting replacement:
+{% codeblock %}
+{% raw %}<p>Warning! Your account is suspended, please call: 1-800-1234567</p>{% endraw %}
 {% endcodeblock %}
 
 
@@ -239,13 +265,13 @@ Basic If, Else, Else If
 
 HTML should contain:
 {% codeblock %}
-{{#if user.profile.male}}
+{% raw %}{{#if user.profile.male}}
 <p>Dear Sir</p>
 {{else if user.profile.female}}
 <p>Dear Madame</p>
 {{else}}
 <p> Dear Customer</p>
-{{/if}}
+{{/if}}{% endraw %}
 {% endcodeblock %}
 
 Test Data should contain:
@@ -285,17 +311,17 @@ Test Data should contain:
 Resulting replacement:
 ###1
 {% codeblock %}
-<p>Dear Sir</p>
+{% raw %}<p>Dear Sir</p>{% endraw %}
 {% endcodeblock %}
 
 ###2
 {% codeblock %}
-<p>Dear Madame</p>
+{% raw %}<p>Dear Madame</p>{% endraw %}
 {% endcodeblock %}
 
 ###3
 {% codeblock %}
-<p>Dear Customer</p>
+{% raw %}<p>Dear Customer</p>{% endraw %}
 {% endcodeblock %}
 
 {% anchor h4 %}
@@ -304,9 +330,9 @@ If with a root
 
 HTML should contain:
 {% codeblock %}
-{{#if user.suspended}}
+{% raw %}{{#if user.suspended}}
 	<p>Warning! Your account is suspended, please call: {{@root.supportPhone}}</p>
-{{/if}}
+{{/if}}{% endraw %}
 {% endcodeblock %}
 
 Test Data should contain:
@@ -321,7 +347,7 @@ Test Data should contain:
 
 Resulting replacement:
 {% codeblock %}
-<p>Warning! Your account is suspended, please call: 1-800-1234567</p>
+{% raw %}<p>Warning! Your account is suspended, please call: 1-800-1234567</p>{% endraw %}
 {% endcodeblock %}
 
 {% anchor h3 %}
@@ -334,11 +360,11 @@ Basic Iterator
 
 HTML should contain:
 {% codeblock %}
-<ol>
+{% raw %}<ol>
 {{#each user.orderHistory}}
 	<li>You ordered: {{this.item}} on: {{this.date}}</li>
 {{/each}}
-</ol>
+</ol>{% endraw %}
 {% endcodeblock %}
 
 Test Data should contain:
@@ -361,40 +387,10 @@ Test Data should contain:
 
 Resulting replacement:
 {% codeblock %}
-<ol>
+{% raw %}<ol>
 	<li>You ordered: shoes on: 2/1/2018</li>
 	<li>You ordered: hat on: 1/42017</li>
-</ol>
-{% endcodeblock %}
-
-{% anchor h3 %}
-Unless
-{% endanchor %}
-
-{% anchor h4 %}
-Basic Unless
-{% endanchor %}
-
-HTML should contain:
-{% codeblock %}
-{{#unless user.active}}
-	<p>Warning! Your account is suspended, please call: {{@root.supportPhone}}</p>
-{{/unless}}
-{% endcodeblock %}
-
-Test Data should contain:
-{% codeblock %}
-{  
-   "user":{  
-      "active":false
-   },
-   "supportPhone":"1-800-1234567"
-}
-{% endcodeblock %}
-
-Resulting replacement:
-{% codeblock %}
-<p>Warning! Your account is suspended, please call: 1-800-1234567</p>
+</ol>{% endraw %}
 {% endcodeblock %}
 
 {% anchor h3 %}
@@ -411,14 +407,14 @@ Dynamic content creation
 {% endanchor %}
 
 HTML should contain:
-{% codeblock %}
+{% codeblock %}{% raw %}
     {{#each user.story}}
       {{#if this.male}}
         <p>{{this.date}}</p>
       {{else if this.female}}
         <p>{{this.item}}</p>
       {{/if}}
-    {{/each}}
+    {{/each}}{% endraw %}
 {% endcodeblock %}
 
 
@@ -450,10 +446,10 @@ Formatted JSON Data
 {% endcodeblock %}
 
 Resulting replacement:
-{% codeblock %}
+{% codeblock %}{% raw %}
     <p>2/1/2018</p>
     <p>1/4/2017</p>
-    <p>shirt</p>
+    <p>shirt</p>{% endraw %}
 {% endcodeblock %}
 
 {% anchor h4 %}
@@ -461,7 +457,7 @@ Dynamic content creation with dynamic parts
 {% endanchor %}
 
 HTML should contain:
-{% codeblock %}
+{% codeblock %}{% raw %}
     {{#each user.story}}
       {{#if this.male}}
         {{#if this.date}}
@@ -478,7 +474,7 @@ HTML should contain:
           <p>{{this.item}}</p>
         {{/if}}
       {{/if}}
-    {{/each}}
+    {{/each}}{% endraw %}
 {% endcodeblock %}
 
 Test Data should contain:
@@ -509,11 +505,11 @@ Formatted JSON Data
 {% endcodeblock %}
 
 Resulting replacement:
-{% codeblock %}
+{% codeblock %}{% raw %}
     <p>2/1/2018</p>
     <p>shoes</p>
     <p>1/4/2017</p>
-    <p>shirt</p>
+    <p>shirt</p>{% endraw %}
 {% endcodeblock %}
 
 {% anchor h2 %}

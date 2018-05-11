@@ -156,7 +156,7 @@ curl --request GET \
   --header 'Content-Type: application/json'
 {% endcodeblock %}
 
-You can also copy your template ID from the app and paste it into your call. 
+You can also copy your template ID from the app and paste it into your call.
 
 ![]({{root_url}}/img/dynamic_template_id.png "Dynamic Template ID")
 
