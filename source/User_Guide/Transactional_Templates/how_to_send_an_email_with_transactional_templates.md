@@ -97,13 +97,7 @@ You can also copy your template ID from the app and paste it into your call.
 Additional Resources
 {% endanchor h2 %}
 
-<<<<<<< HEAD:source/User_Guide/Transactional_Templates/how_to_send_an_email_with_dynamic_transactional_templates.md
 - [Transactional Templates Overview]({{root_url}}/User_Guide/Transactional_Templates/index.html)
 - [Mail Send with Dynamic Transactional Templates](https://dynamic-templates.api-docs.io/3.0)
 - [Transactional Email Unsubscribes]({{root_url}}/User_Guide/Transactional_Email/unsubscribes.html)
 - [Using Handlebars]({{root_url}}/User_Guide/Transactional_Templates/Using_handlebars.html)
-=======
-- [Transactional Templates Overview](https://sendgrid.com/docs/User_Guide/Transactional_Templates/index.html)
-- [Dynamic Templates API](https://dynamic-templates.api-docs.io/3.0)
-- [Transactional Email Unsubscribes]({{root_url}}/User_Guide/Transactional_Email/unsubscribes.html)
->>>>>>> upstream/develop:source/User_Guide/Transactional_Templates/how_to_send_an_email_with_transactional_templates.md
