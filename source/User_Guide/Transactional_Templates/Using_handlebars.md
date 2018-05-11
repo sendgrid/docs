@@ -23,6 +23,15 @@ Handlebars syntax provides a simple, powerful way to include dynamic content, di
 Personalizing email with Handlebars
 {% endanchor %}
 
+Currently, dynamic templates only supports the following helpers:
+
+The current helpers are:
+
+* (a) - replacement
+* if/else(a) - evaluate conditional statements
+* unless(a) - evaluate conditional statements
+* each(a) - iterator
+
 Here are some example scenarios you can use to substitute data with Handlebars. 
 
 {% anchor h3 %}
@@ -235,3 +244,11 @@ Iterators
 </ol>
 
 
+{% anchor h2 %}
+Additional Resources
+{% endanchor h2 %}
+
+- [Transactional Templates Overview]({{root_url}}/User_Guide/Transactional_Templates/index.html)
+- [Create and edit Dynamic Transactional Templates]()
+- [Mail Send with Dynamic Transactional Templates](https://dynamic-templates.api-docs.io/3.0)
+- [Transactional Email Unsubscribes]({{root_url}}/User_Guide/Transactional_Email/unsubscribes.html)
