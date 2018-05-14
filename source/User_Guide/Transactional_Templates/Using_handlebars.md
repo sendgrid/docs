@@ -120,13 +120,12 @@ This reference goes through examples of each helper - including HTML email snipp
 Substitution
 {% endanchor %}
 
-There are five main types of substitutions:
+There are four main types of substitutions:
 
 - [Basic replacement](#-Basic-replacement)
 - [Deep object replacement](#-Deep-object-replacement)
 - [Object failure](#-Object-failure)
 - [Replacement with HTML](#-Replacement-with-HTML)
-- [Unless](#-Unless)
 
 {% anchor h4 %}
 Basic replacement
@@ -222,28 +221,6 @@ Resulting replacement:
 {% codeblock %}
 {% raw %}<p>Hello <strong>Ben</strong></p>{% endraw %}
 {% endcodeblock %}
-
-{% anchor h4 %}
-Unless
-{% endanchor %}
-
-HTML should contain:
-{% codeblock %}
-{{#unless user.active}}
-	<p>Warning! Your account is suspended, please call: {{@root.supportPhone}}</p>
-{{/unless}}
-{% endcodeblock %}
-
-Test Data should contain:
-{% codeblock %}
-{  
-   "user":{  
-      "active":false
-   },
-   "supportPhone":"1-800-1234567"
-}
-{% endcodeblock %}
-
 Resulting replacement:
 {% codeblock %}
 {% raw %}<p>Warning! Your account is suspended, please call: 1-800-1234567</p>{% endraw %}
@@ -254,10 +231,11 @@ Resulting replacement:
 Conditional statements
 {% endanchor %}
 
-Here are two types of if/else conditonal statements:
+Here are three types of conditonal statements:
 
 - [Basic If, Else, Else If](#-Basic-If--Else-Else-If)
 - [If with a root](#-If-with-a-root)
+- [Unless](#-Unless)
 
 {% anchor h4 %}
 Basic If, Else, Else If
@@ -266,11 +244,11 @@ Basic If, Else, Else If
 HTML should contain:
 {% codeblock %}
 {% raw %}{{#if user.profile.male}}
-<p>Dear Sir</p>
+  <p>Dear Sir</p>
 {{else if user.profile.female}}
-<p>Dear Madame</p>
+  <p>Dear Madame</p>
 {{else}}
-<p> Dear Customer</p>
+  <p> Dear Customer</p>
 {{/if}}{% endraw %}
 {% endcodeblock %}
 
@@ -350,6 +328,28 @@ Resulting replacement:
 {% raw %}<p>Warning! Your account is suspended, please call: 1-800-1234567</p>{% endraw %}
 {% endcodeblock %}
 
+{% anchor h4 %}
+Unless
+{% endanchor %}
+
+HTML should contain:
+{% codeblock %}
+{{#unless user.active}}
+	<p>Warning! Your account is suspended, please call: {{@root.supportPhone}}</p>
+{{/unless}}
+{% endcodeblock %}
+
+Test Data should contain:
+{% codeblock %}
+{  
+   "user":{  
+      "active":false
+   },
+   "supportPhone":"1-800-1234567"
+}
+{% endcodeblock %}
+
+
 {% anchor h3 %}
 Iterations
 {% endanchor %}
@@ -408,20 +408,18 @@ Dynamic content creation
 
 HTML should contain:
 {% codeblock %}{% raw %}
-    {{#each user.story}}
-      {{#if this.male}}
-        <p>{{this.date}}</p>
-      {{else if this.female}}
-        <p>{{this.item}}</p>
-      {{/if}}
-    {{/each}}{% endraw %}
+{{#each user.story}}
+  {{#if this.male}}
+    <p>{{this.date}}</p>
+  {{else if this.female}}
+    <p>{{this.item}}</p>
+  {{/if}}
+{{/each}}{% endraw %}
 {% endcodeblock %}
 
 
 Test Data should contain:
 {% codeblock %}
-VALID JSON (RFC 4627)
-Formatted JSON Data
 {  
    "user":{  
       "story":[  
@@ -447,9 +445,9 @@ Formatted JSON Data
 
 Resulting replacement:
 {% codeblock %}{% raw %}
-    <p>2/1/2018</p>
-    <p>1/4/2017</p>
-    <p>shirt</p>{% endraw %}
+<p>2/1/2018</p>
+<p>1/4/2017</p>
+<p>shirt</p>{% endraw %}
 {% endcodeblock %}
 
 {% anchor h4 %}
@@ -458,31 +456,29 @@ Dynamic content creation with dynamic parts
 
 HTML should contain:
 {% codeblock %}{% raw %}
-    {{#each user.story}}
-      {{#if this.male}}
-        {{#if this.date}}
-          <p>{{this.date}}</p>
-        {{/if}}
-        {{#if this.item}}
-          <p>{{this.item}}</p>
-        {{/if}}
-      {{else if this.female}}
-        {{#if this.date}}
-          <p>{{this.date}}</p>
-        {{/if}}
-        {{#if this.item}}
-          <p>{{this.item}}</p>
-        {{/if}}
-      {{/if}}
-    {{/each}}{% endraw %}
+{{#each user.story}}
+  {{#if this.male}}
+    {{#if this.date}}
+      <p>{{this.date}}</p>
+    {{/if}}
+    {{#if this.item}}
+      <p>{{this.item}}</p>
+    {{/if}}
+  {{else if this.female}}
+    {{#if this.date}}
+      <p>{{this.date}}</p>
+    {{/if}}
+    {{#if this.item}}
+      <p>{{this.item}}</p>
+    {{/if}}
+  {{/if}}
+{{/each}}{% endraw %}
 {% endcodeblock %}
 
 Test Data should contain:
 {% codeblock %}
 16
 May 11th 2018, 2:18:20 pm
-VALID JSON (RFC 4627)
-Formatted JSON Data
 {  
    "user":{  
       "story":[  
@@ -506,10 +502,10 @@ Formatted JSON Data
 
 Resulting replacement:
 {% codeblock %}{% raw %}
-    <p>2/1/2018</p>
-    <p>shoes</p>
-    <p>1/4/2017</p>
-    <p>shirt</p>{% endraw %}
+<p>2/1/2018</p>
+<p>shoes</p>
+<p>1/4/2017</p>
+<p>shirt</p>{% endraw %}
 {% endcodeblock %}
 
 {% anchor h2 %}
