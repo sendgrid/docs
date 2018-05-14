@@ -34,7 +34,7 @@ Design a dynamic transactional template
 1. Select an editor and click **Continue**.
 1. Design your template. For more information on designing a Dynamic Transactional Template using the Design Editor or Code Editor, see [Create and edit Dynamic Transactional Templates]({{root_url}}/User_Guide/Transactional_Templates/Create_and_edit_dynamic_transactional_templates.html).
 
-For sample templates that have example receipts, password resets, account activations, newsletters, and sale notifications, check out the [dynamic-template section of our email templates github repo](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates).
+For sample templates that that include examples of receipts, password resets, account activations, newsletters, and sale notifications, check out the [dynamic-template section of our email templates github repo](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates).
 
 The cURL calls on this page use the [receipt example template](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates/receipt).
 
@@ -103,17 +103,6 @@ It is important to note two sections of this call when using dynamic templates.
 In order to send dynamic content, you need to specify a JSON blob containing the dynamic data your template will use in the `dynamic_template_data` object. The handlebars script you write will refer to the values in your JSON blob by referencing the JSON key, check out [these examples]({{root_url}}/User_Guide/Transactional_Templates/Using_handlebars.html#-Handlebarjs-reference). This handlebars templating can be used in the text, html, and subject lines of your template. The total collective size of your dynamic data may not exceed 10,000 bytes per personalization object.
 
 {% codeblock %}
-{  
-   "from":{  
-      "email":"example@.sendgrid.net"
-   },
-   "personalizations":[  
-      {  
-         "to":[  
-            {  
-               "email":"example@sendgrid.net"
-            }
-         ],
          "dynamic_template_data":{  
             "total":"$ 239.85",
             "items":[  
@@ -140,18 +129,14 @@ In order to send dynamic content, you need to specify a JSON blob containing the
             "city":"Place",
             "state":"CO",
             "zip":"80202"
-         },
-         "template_id":"[template_id]"
-      }
-   ]
-}
+         }
 {% endcodeblock %}
 
 In addition to specifying the dynamic template data, you need to specify the template ID. The template ID is 64 characters with one dash (d-uuid). If you forget your template ID and want to access it from the API, use the following curl call to retrieve all of your transactional templates:
 
 {% codeblock %}
 curl --request GET \
-  --url 'https://api.sendgrid.com/v3/templates?generations\[\]=legacy&generations\[\]=dynamic' \
+  --url 'https://api.sendgrid.com/v3/templates?generations\%5C=legacy&generations\%5C=dynamic' \
   --header 'Authorization: <<YOUR_API_KEY>>' \
   --header 'Content-Type: application/json'
 {% endcodeblock %}
