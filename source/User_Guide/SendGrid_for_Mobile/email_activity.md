@@ -1,7 +1,7 @@
 ---
 seo:
   title: SendGrid for iPhone and iPad Email Activity
-title: Email Activity
+title: Email Activity for Mobile
 weight: 700
 layout: page
 navigation:
@@ -26,7 +26,7 @@ navigation:
   <sup>2</sup>
 </p>
 
-Here you can view the real-time logs of all [email activity]({{root_url}}/User_Guide/email_activity.html) from your account in the last 7 days. You can also narrow your search by pulling down on the screen and searching for an email address, and/or selecting the “More” button in the top right corner, selecting “Search Options,” and selecting only certain events to show.
+Here you can view the real-time logs of all [email activity]({{root_url}}/User_Guide/email_activity.html) from your account. You can also narrow your search by pulling down on the screen and searching for an email address, and/or selecting the “More” button in the top right corner, selecting “Search Options,” and selecting only certain events to show.
 
 Tapping on any event will reveal more information, such as server responses or user agents.
 

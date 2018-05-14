@@ -37,7 +37,7 @@ Managing your account
 
 - [Adding a Dedicated IP Address](#-Adding-a-Dedicated-IP-Address)
 - [Adding Subusers](#-Adding-Subusers)
-- [Adding Domain and Link Whitelabels](#-Adding-Domain-and-Link-Whitelabels)
+- [Adding domain authentication and link branding](#-Adding-domain-authentication-and-link-branding)
 - [Upgrading or Downgrading Your Account](#-Upgrading-or-Downgrading-Your-Account)
 - [Managing Billing Options](#-Managing-Billing-Options)
 - [Canceling Your SendGrid Subscription](#-Canceling-Your-SendGrid-Subscription)
@@ -62,10 +62,10 @@ You can only add a Dedicated IP Address if you are on an AWS Pro plan. To upgrad
 1. Click **Add**.
 
 {% anchor h3 %}
-Adding Domain and Link Whitelabels 
+Adding domain authentication and link branding 
 {% endanchor %}
 
-Whitelabeling shows ISPs that SendGrid has your permission to send emails on your behalf. Whitelabeling works by pointing DNS entries from your domain registrar to SendGrid, which drastically increases your ability to deliver email and allows you to begin building a sender reputation for your domain and for your IP addresses. For more information, see [our guides on setting up Domain and Link whitelabels]({{root_url}}/User_Guide/Settings/Whitelabel/index.html)
+Sender authentication shows email providers that SendGrid has your permission to send emails on your behalf. Domain authentication works by pointing DNS entries from your domain registrar to SendGrid, which drastically increases your ability to deliver email and allows you to begin building a sender reputation for your domain and for your IP addresses. For more information domain authentication , see [How to Set Up Domain Authentication]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html)
 
 {% anchor h3 %}
 Adding Subusers

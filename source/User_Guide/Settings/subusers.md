@@ -20,7 +20,7 @@ Subusers help you segment your email sending and API activity. You assign permis
 - [Manage Subusers](#-Manage-Subusers)
 - [Optional Profile Information](#-Optional-Profile-Information)
 - [Allocating or Removing Credits From a Subuser](#-Allocating-or-Removing-Credits-From-a-Subuser)
-- [Adding a whitelabel domain to a Subuser account](#-Adding-a-whitelabel-domain-to-a-Subuser-account)
+- [Adding an authenticated domain](#-adding-an-authenticated-domain)
 - [Monitoring Subuser email content](#-Monitoring-Subuser-email-content)
 - [Impersonating a Subuser](#-Impersonating-a-Subuser)
 - [Export Subuser Information](#-Export-Subuser-Information)
@@ -96,24 +96,6 @@ You can only allocate credits by selecting the nonrecurring credit option.
 {% endwarning %}
 
 If your Subuser account has nonrecurring credits, you can allocate credits to, or remove credits from this Subuser account. On the Subuser's profile, click **Change Credit Rules** and then choose the appropriate credit amount for the Subuser. 
-
-{% anchor h2 %}
-Adding a Domain Whitelabel
-{% endanchor %}
-
-Using a domain whitelabel removes the “sent via sendgrid.net” message that your recipients see by authenticating your domain. It also gives you complete control over your sending reputation.
-
-{% info %}
-To add a domain whitelabel or whitelabel link to a Subuser account, there must be one or more of these whitelabels set up in the parent account. 
-{% endinfo %}
-
-*To add a domain whitelabel to a Subuser account:*
-
-1. Navigate to **Settings** and select **Subuser Management**. 
-1. Locate the Subuser account you wish to delete and click on the name to view the account details. 
-1. On the *Account Settings* page, navigate to the Whitelabel Domain section and then click **Change Sending**. 
-1. From the drop-down menus that appear, select a whitelabel domain and a whitelabel link to associate with the Subuser account. 
-1. Once you've made all of your selections, click **Save**. 
 
 {% anchor h2 %}
 Monitoring Subuser email content

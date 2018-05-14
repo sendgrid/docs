@@ -130,9 +130,9 @@ Activating this setting allows you to specify an email address to which spam rep
 Forwarding abuse@ and postmaster@ Emails
 {% endanchor %}
 
-The email address specified in the Forward Spam mail setting may also be used to receive emails sent to abuse@ and postmaster@ role addresses if you have [properly configured your domain whitelabel]({{root_url}}/Classroom/Basics/Whitelabel/setup_domain_whitelabel.html).
+The email address specified in the Forward Spam mail setting may also be used to receive emails sent to abuse@ and postmaster@ role addresses if you have [authenticated your domain]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html).
 
-For example, if you create a valid domain whitelabel using the subdomain `sub` and root domain `example` *and* have turned on Forward Spam, any emails sent to abuse@sub.example.com or postmaster@sub.example.com will be forwarded to the email address you entered in the Forward Spam mail setting.
+For example, if you create a valid authenticated domain with a custom return path of `sub` and a root domain `example` *and* have turned on Forward Spam, any emails sent to abuse@sub.example.com or postmaster@sub.example.com will be forwarded to the email address you entered in the Forward Spam mail setting.
 
 {% anchor h3 %}
 Settings

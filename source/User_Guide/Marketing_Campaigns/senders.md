@@ -49,7 +49,7 @@ You must verify your sender identity before you can edit it or use it to send a 
 {% endwarning %}
    To resend your verification email, hover over the Action Menu on the Sender Management page and select **Resend Verification**.
 {% info %}
-If you have a [verified whitelabel domain]({{root_url}}/User_Guide/Settings/Whitelabel/index.html) and your sender email address matches that domain exactly, your sender identity will automatically verify.
+If you have an [authenticated domain]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html) and your sender email address matches that domain exactly, your sender identity will automatically verify.
 {% endinfo %}
 
 {% warning %}
@@ -89,8 +89,3 @@ To show your sender's full address and information in the footer of the email, S
 [Sender_City], [Sender_State] [Sender_Zip]
 {% endcodeblock %}
 
-{% anchor h3 %}
-Additional Resources
-{% endanchor h3 %}
-
-- [Whitelabel](https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html)

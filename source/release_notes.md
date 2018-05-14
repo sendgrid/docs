@@ -32,6 +32,136 @@ The following new features and changes to the service are available.
 </table>
 
 {% anchor h2 %}
+1 May 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Sales tax for customers in certain US jurisdictions
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/pricing_icon.png" alt="An update to a price"></td>
+    <td>We’re beginning to charge sales tax for use of certain SendGrid products by non-tax exempt customers based in WA, NY, TX, Denver, Boulder or Chicago. This change is required to comply with applicable tax laws. For more information about our new sales tax and how to delcare your organization tax exempt, see <a href="https://sendgrid.com/docs/User_Guide/Settings/taxes_and_tax_exempt.html" target="_blank">Sales Taxes and Tax-Exempt Status</a>.</td>
+  </tr>
+</table>
+
+{% anchor h2 %}
+17 April 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Whitelabel is becoming Sender Authentication!
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>To clarify authentication at SendGrid, we are updating the names of Whitelabel! A whitelabel is now generally called sender authentication. A domain whitelabel is now called domain authentication. A link whitelabel is now called link branding. An IP Whitelabel is now called reverse DNS.</td>
+  </tr>
+</table>
+
+{% anchor h3 %}
+Improved Sender Authentication Process (formerly "Whitelabel")
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>SendGrid’s whitelabel has become sender authentication, which simplifies the process for senders to demonstrate domain ownership through multiple authentication methods to recipient mailbox providers in order to improve their email delivery. This launch includes improvements to the set up flow and a more accurate name for the functionality. All pending and verified whitelabels can be found under sender authentication.</td>
+  </tr>
+</table>
+
+For more information on the new process for sender authentication: 
+- Access [Sender Authentication](https://app.sendgrid.com/settings/sender_auth)
+- Read the [blog post](https://sendgrid.com/blog/new-sender-authentication/) about Sender Authentication.
+- Check out our how to docs on [How to set up domain authentication]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html) and [How to set up link branding]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_link_branding.html)
+
+
+{% anchor h2 %}
+11 April 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Magento M1 and M2 Extension Update
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/partners_icon.png" alt="An update to Partners" ></td>
+    <td>We have upgraded our Magento Extension for M1 and M2 Marketplaces to V1.0.3. SendGrid’s extension in M1 and M2 is compatible with Magento Community 2.0, 2.1, 2.2. </td>
+  </tr>
+</table>
+
+{% anchor h2 %}
+10 April 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Updated Alert Behavior
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>In order to provide a better user experience, we've updated the green alert banners you see at the top of the app. Green banners that notify users of successful actions now automatically dismiss after a few seconds, no longer stacking up within the field of view.</td>
+  </tr>
+</table>
+
+{% anchor h2 %}
+9 April 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Truncating fields that go over max field character limits
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ><img src="{{root_url}}/images/code_icon.png" alt="An update to the API" width="100" height="100"></td>
+  <td>This change applies to contacts added by uploading a CSV in the UI or when using the <code>POST /contactdb/lists/{list_id}/recipients/{recipient_id}</code> Add a Single Recipient to a List method. When adding or updating the <code>first_name</code> and <code>last_name</code> fields, SendGrid automatically truncates any field that exceeds the maximum character limit to ensure that the field is valid. Non-unicode characters are still not valid.</td>
+  </tr>
+</table>
+
+{% anchor h2 %}
+29 March 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Email Activity Feed
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ><img src="{{root_url}}/images/code_icon.png" alt="An update to the API" width="100" height="100"></td>
+    <td>The Email Activity Feed has been updated to include enhancements to email activity feed details, filtering, search options, and CSV export capability to ease the process of troubleshooting email delivery issues. In addition to the new enhancements, customers have the option to purchase 30 days of additional email activity history which includes API endpoint access.</td> 
+  </tr>
+</table>
+
+{% info %}
+High-volume (100M+) customers do not have the option to access this feature at this time.
+{% endinfo %}
+
+ * Access the Email Activity Feed [here](https://app.sendgrid.com/email_activity)
+ * For more information about the UI updates, see the [documentation](https://sendgrid.com/docs/User_Guide/email_activity_feed.html)
+ * For more information about the API updates, see the [documentation](https://sendgrid.api-docs.io/v3.0/email-activity/filter-all-messages)
+ 
+{% anchor h2 %}
+16 March 2018
+{% endanchor %}
+
+{% anchor h3 %}
+New Design Templates for Marketing Campaigns
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>We've added two new templates to the SendGrid Marketing template library! These templates, named "Modern" and "Coffee", offer fully-responsive and clean designs, giving you the framework you need to build beautifully engaging marketing campaigns. The new templates can be accessed by clicking **Templates** in the navigation, and selecting the **Marketing** option.</td>
+  </tr>
+</table>
+
+{% anchor h2 %}
 14 March 2018
 {% endanchor %}
 
@@ -47,21 +177,6 @@ Fixed a segmentation date issue
 </table>
 
 {% anchor h2 %}
-06 March 2018
-{% endanchor %}
-
-{% anchor h3 %}
-Code Editor Color Scheme
-{% endanchor %}
-
-<table class="table" style="width: 100%;">
-  <tr>
-    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
-    <td>The color scheme (theme) of the code editor within Marketing Campaigns has been updated to be more visually clean and consistent. The new look helps code appear less cluttered, while aligning more closely with the SendGrid brand.</td>
-  </tr>
-</table>
-
-{% anchor h2 %}
 08 March 2018
 {% endanchor %}
 
@@ -73,6 +188,21 @@ Unsubscribe Tag Support for Transactional Templates
   <tr>
     <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
     <td>The Unsubscribe module now uses asm tags in order to work with both Marketing Campaigns and Transactional email. To add unsubscribe links to your template, use the `<%asm_group_unsubscribe_raw_url%>`,  `<%asm_global_unsubscribe_raw_url%>`, or `<%asm_preferences_raw_url%>` tags.</td>
+  </tr>
+</table>
+
+{% anchor h2 %}
+06 March 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Code Editor Color Scheme
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>The color scheme (theme) of the code editor within Marketing Campaigns has been updated to be more visually clean and consistent. The new look helps code appear less cluttered, while aligning more closely with the SendGrid brand.</td>
   </tr>
 </table>
 

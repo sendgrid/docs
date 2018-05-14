@@ -64,13 +64,13 @@ Pointing to a Hostname and URL
 
   Here you will specify the subdomain and root domain of the receiving domain (or hostname). All emails sent to this receiving domain will be parsed.
 
-  If you use the same subdomain as your Whitelabeled Domain, you must have Automatic Security disabled on the Domain Whitelabel. Otherwise, those messages will bounce due to an infinite CNAME>MX loop.
+  If you use the same return path (subdomain) as your authenticated domain, you must have Automatic Security disabled on the authenticated domain. Otherwise, those messages will bounce due to an infinite CNAME>MX loop.
 
 {% info %}
 The URL must be accessible from the public web.
 {% endinfo %}
 
-  **(3)** Enter the subdomain (e.g. "parse") and select the whitelabeled root domain for your receiving domain. Enter the public URL where you would like the parsed data to be POSTed.
+  **(3)** Enter the subdomain (e.g. "parse") and select the authenticated root domain for your receiving domain. Enter the public URL where you would like the parsed data to be POSTed.
 
   ![]({{root}}/images/setting_up_inbound_parse_1.png)
 
