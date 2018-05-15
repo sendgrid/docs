@@ -63,7 +63,7 @@ This is an example event response that includes all of the SendGrid generated ev
    {  
       "email":"example@test.com",
       "timestamp":1513299569,
-      "smtp-id":"\u003c14c5d75ce93.dfd.64b469@ismtpd-555\u003e",
+      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
       "event":"processed",
       "category":"cat facts",
       "sg_event_id":"sg_event_id",
@@ -72,7 +72,7 @@ This is an example event response that includes all of the SendGrid generated ev
    {  
       "email":"example@test.com",
       "timestamp":1513299569,
-      "smtp-id":"\u003c14c5d75ce93.dfd.64b469@ismtpd-555\u003e",
+      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
       "event":"deferred",
       "category":"cat facts",
       "sg_event_id":"sg_event_id",
@@ -83,7 +83,7 @@ This is an example event response that includes all of the SendGrid generated ev
    {  
       "email":"example@test.com",
       "timestamp":1513299569,
-      "smtp-id":"\u003c14c5d75ce93.dfd.64b469@ismtpd-555\u003e",
+      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
       "event":"delivered",
       "category":"cat facts",
       "sg_event_id":"sg_event_id",
@@ -93,7 +93,7 @@ This is an example event response that includes all of the SendGrid generated ev
    {  
       "email":"example@test.com",
       "timestamp":1513299569,
-      "smtp-id":"\u003c14c5d75ce93.dfd.64b469@ismtpd-555\u003e",
+      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
       "event":"open",
       "category":"cat facts",
       "sg_event_id":"sg_event_id",
@@ -104,7 +104,7 @@ This is an example event response that includes all of the SendGrid generated ev
    {  
       "email":"example@test.com",
       "timestamp":1513299569,
-      "smtp-id":"\u003c14c5d75ce93.dfd.64b469@ismtpd-555\u003e",
+      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
       "event":"click",
       "category":"cat facts",
       "sg_event_id":"sg_event_id",
@@ -116,7 +116,7 @@ This is an example event response that includes all of the SendGrid generated ev
    {  
       "email":"example@test.com",
       "timestamp":1513299569,
-      "smtp-id":"\u003c14c5d75ce93.dfd.64b469@ismtpd-555\u003e",
+      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
       "event":"bounce",
       "category":"cat facts",
       "sg_event_id":"sg_event_id",
@@ -127,7 +127,7 @@ This is an example event response that includes all of the SendGrid generated ev
    {  
       "email":"example@test.com",
       "timestamp":1513299569,
-      "smtp-id":"\u003c14c5d75ce93.dfd.64b469@ismtpd-555\u003e",
+      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
       "event":"dropped",
       "category":"cat facts",
       "sg_event_id":"sg_event_id",
@@ -138,7 +138,7 @@ This is an example event response that includes all of the SendGrid generated ev
    {  
       "email":"example@test.com",
       "timestamp":1513299569,
-      "smtp-id":"\u003c14c5d75ce93.dfd.64b469@ismtpd-555\u003e",
+      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
       "event":"spamreport",
       "category":"cat facts",
       "sg_event_id":"sg_event_id",
@@ -147,7 +147,7 @@ This is an example event response that includes all of the SendGrid generated ev
    {  
       "email":"example@test.com",
       "timestamp":1513299569,
-      "smtp-id":"\u003c14c5d75ce93.dfd.64b469@ismtpd-555\u003e",
+      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
       "event":"unsubscribe",
       "category":"cat facts",
       "sg_event_id":"sg_event_id",
@@ -156,7 +156,7 @@ This is an example event response that includes all of the SendGrid generated ev
    {  
       "email":"example@test.com",
       "timestamp":1513299569,
-      "smtp-id":"\u003c14c5d75ce93.dfd.64b469@ismtpd-555\u003e",
+      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
       "event":"group_unsubscribe",
       "category":"cat facts",
       "sg_event_id":"sg_event_id",
@@ -169,7 +169,7 @@ This is an example event response that includes all of the SendGrid generated ev
    {  
       "email":"example@test.com",
       "timestamp":1513299569,
-      "smtp-id":"\u003c14c5d75ce93.dfd.64b469@ismtpd-555\u003e",
+      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
       "event":"group_resubscribe",
       "category":"cat facts",
       "sg_event_id":"sg_event_id",
@@ -208,7 +208,7 @@ Delivery events include bounce, deferred, delivered, dropped, and processed.
             "name": "new_MY_test",
             "id": 210
         },
-      "smtp-id":"\u003c14c5d75ce93.dfd.64b469@ismtpd-555\u003e",
+      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
       "event":"processed",
       "category":"cat facts",
       "sg_event_id":"rbtnWrG1DVDGGGFHFyun0A==",
@@ -225,7 +225,7 @@ Delivery events include bounce, deferred, delivered, dropped, and processed.
    {  
       "email":"example@test.com",
       "timestamp":1513299569,
-      "smtp-id":"\u003c14c5d75ce93.dfd.64b469@ismtpd-555\u003e",
+      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
       "event":"dropped",
       "category":"cat facts",
       "sg_event_id":"zmzJhfJgAfUSOW80yEbPyw==",
@@ -244,7 +244,7 @@ Delivery events include bounce, deferred, delivered, dropped, and processed.
    {  
       "email":"example@test.com",
       "timestamp":1513299569,
-      "smtp-id":"\u003c14c5d75ce93.dfd.64b469@ismtpd-555\u003e",
+      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
       "event":"delivered",
       "category":"cat facts",
       "sg_event_id":"rWVYmVk90MjZJ9iohOBa3w==",
@@ -262,7 +262,7 @@ Delivery events include bounce, deferred, delivered, dropped, and processed.
    {  
       "email":"example@test.com",
       "timestamp":1513299569,
-      "smtp-id":"\u003c14c5d75ce93.dfd.64b469@ismtpd-555\u003e",
+      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
       "event":"deferred",
       "category":"cat facts",
       "sg_event_id":"t7LEShmowp86DTdUW8M-GQ==",
@@ -281,7 +281,7 @@ Delivery events include bounce, deferred, delivered, dropped, and processed.
    {  
       "email":"example@test.com",
       "timestamp":1513299569,
-      "smtp-id":"\u003c14c5d75ce93.dfd.64b469@ismtpd-555\u003e",
+      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
       "event":"bounce",
       "category":"cat facts",
       "sg_event_id":"6g4ZI7SA-xmRDv57GoPIPw==",
@@ -316,7 +316,7 @@ Engagement events include click, open, spam report, unsubscribe, group unsubscri
    {  
       "email":"example@test.com",
       "timestamp":1513299569,
-      "smtp-id":"\u003c14c5d75ce93.dfd.64b469@ismtpd-555\u003e",
+      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
       "event":"open",
       "category":"cat facts",
       "sg_event_id":"FOTFFO0ecsBE-zxFXfs6WA==",
@@ -335,7 +335,7 @@ Engagement events include click, open, spam report, unsubscribe, group unsubscri
    {  
       "email":"example@test.com",
       "timestamp":1513299569,
-      "smtp-id":"\u003c14c5d75ce93.dfd.64b469@ismtpd-555\u003e",
+      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
       "event":"click",
       "category":"cat facts",
       "sg_event_id":"kCAi1KttyQdEKHhdC-nuEA==",
@@ -355,7 +355,7 @@ Engagement events include click, open, spam report, unsubscribe, group unsubscri
    {  
       "email":"example@test.com",
       "timestamp":1513299569,
-      "smtp-id":"\u003c14c5d75ce93.dfd.64b469@ismtpd-555\u003e",
+      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
       "event":"spamreport",
       "category":"cat facts",
       "sg_event_id":"37nvH5QBz858KGVYCM4uOA==",
@@ -372,7 +372,7 @@ Engagement events include click, open, spam report, unsubscribe, group unsubscri
    {  
       "email":"example@test.com",
       "timestamp":1513299569,
-      "smtp-id":"\u003c14c5d75ce93.dfd.64b469@ismtpd-555\u003e",
+      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
       "event":"unsubscribe",
       "category":"cat facts",
       "sg_event_id":"zz_BjPgU_5pS-J8vlfB1sg==",
@@ -389,7 +389,7 @@ Engagement events include click, open, spam report, unsubscribe, group unsubscri
    {  
       "email":"example@test.com",
       "timestamp":1513299569,
-      "smtp-id":"\u003c14c5d75ce93.dfd.64b469@ismtpd-555\u003e",
+      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
       "event":"group_unsubscribe",
       "category":"cat facts",
       "sg_event_id":"ahSCB7xYcXFb-hEaawsPRw==",
@@ -410,7 +410,7 @@ Engagement events include click, open, spam report, unsubscribe, group unsubscri
    {  
       "email":"example@test.com",
       "timestamp":1513299569,
-      "smtp-id":"\u003c14c5d75ce93.dfd.64b469@ismtpd-555\u003e",
+      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
       "event":"group_resubscribe",
       "category":"cat facts",
       "sg_event_id":"w_u0vJhLT-OFfprar5N93g==",
