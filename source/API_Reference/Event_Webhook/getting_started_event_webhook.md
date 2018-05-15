@@ -17,11 +17,7 @@ navigation:
 
 SendGrid's Event Webhook will notify a URL of your choice via HTTP POST with information about events that occur as SendGrid processes your email. You can use this data to remove unsubscribes, react to spam reports, [determine unengaged recipients]({{site.blog_url}}/infer-engagement-with-the-event-api/), Identify bounced email addresses, or create advanced analytics of your email program. With Unique Arguments and Category parameters, you can insert dynamic data that will help build a sharp, clear image of your mailings.
 
-You should set up the Event Webhook if you want to keep track of more event data then we store for you. Due to the sheer volume of email we send, we can only store so much information. Your Email Activity Feed page holds records up to 500 events, and our internal database records only go back about 30 days. After that time passes, email event data is gone.
-
-{% info %}
-The Event Webhook is available to all accounts except [Legacy Lite]({{root_url}}/Classroom/Basics/Billing/legacy_lite_plan.html).
-{% endinfo %}
+You should set up the Event Webhook if you want to keep track of more event data then we store for you. Due to the sheer volume of email we send, we can only store so much information. Your [Email Activity Feed]({{root_url}}/User_Guide/email_activity_feed.html) can hold up to 30 days worth of events. After that time passes, the email event data is gone.
 
 {% anchor h2 %}
 Getting started
