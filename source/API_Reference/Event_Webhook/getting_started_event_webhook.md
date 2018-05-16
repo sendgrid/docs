@@ -15,9 +15,9 @@ navigation:
     - [Data storage](#-Data-storage)
     - [Integrating](#-Integrating)
 
-SendGrid's Event Webhook will notify a URL of your choice via HTTP POST with information about events that occur as SendGrid processes your email. You can use this data to remove unsubscribes, react to spam reports, [determine unengaged recipients]({{site.blog_url}}/infer-engagement-with-the-event-api/), Identify bounced email addresses, or create advanced analytics of your email program. With Unique Arguments and Category parameters, you can insert dynamic data that will help build a sharp, clear image of your mailings.
+SendGrid's Event Webhook will notify a URL of your choice via HTTP POST with information about events that occur as SendGrid processes your email. You can use this data to remove unsubscribes, react to spam reports, [determine unengaged recipients]({{site.blog_url}}/infer-engagement-with-the-event-api/), identify bounced email addresses, or create advanced analytics of your email program. With Unique Arguments and Category parameters, you can insert dynamic data that will help build a sharp, clear image of your mailings.
 
-You should set up the Event Webhook if you want to keep track of more event data then we store for you. Due to the sheer volume of email we send, we can only store so much information. Your [Email Activity Feed]({{root_url}}/User_Guide/email_activity_feed.html) can hold up to 30 days worth of events. After that time passes, the email event data is gone.
+You should set up the Event Webhook if you want to keep track of more event data than we store for you. Due to the sheer volume of email we send, we can only store so much information. Your [Email Activity Feed]({{root_url}}/User_Guide/email_activity_feed.html) can hold up to 30 days worth of events. After that time passes, the email event data is gone.
 
 {% anchor h2 %}
 Getting started
@@ -52,15 +52,15 @@ Now that you understand what Event data looks like and the basics of the webhook
 Data Storage
 {% endanchor %}
 
-Events post every 30 seconds or when the batch size reaches 768 kilobytes - whichever occurs first. This is per server, so if you send a high volume of emails, the webhook URL receive tens, and may even hundreds of posts per second. Because of this, storage should be a significant consideration of the type of integration you set up.
+Events post every 30 seconds or when the batch size reaches 768 kilobytes - whichever occurs first. This is per server, so if you send a high volume of emails, the webhook URL may receive tens or even hundreds of posts per second. Because of this, storage should be a significant consideration of the type of integration you set up.
 
 Storage integrations are infinitely flexible, but here are some popular options:
 
 - Locally on your servers.
-- SendGrids [open source Event Kit](https://github.com/sendgrid/eventkit-rails) stores the data on a Heroku instance.
-- SendGrids partner, Keen.io provides a platform to analyze, visualize, and store SendGrid Event data. For more information about getting started with Keen IO, see the [Keen.io Getting Started page](https://sendgrid.com/docs/Integrate/Tutorials/analytics_with_keen_io.html).
+- SendGrid's [open source Event Kit](https://github.com/sendgrid/eventkit-rails) stores the data on a Heroku instance.
+- SendGrid's partner, Keen.io provides a platform to analyze, visualize, and store SendGrid Event data. For more information about getting started with Keen IO, see the [Keen.io Getting Started page](https://sendgrid.com/docs/Integrate/Tutorials/analytics_with_keen_io.html).
 - You could also use [Snowplow](https://github.com/snowplow/snowplow/wiki/SendGrid-webhook-setup), a web open source platform that supports SendGrid and stores the data on Amazon Redshift.
-- Several open source web libraries support SendGrids Event Webhook. For a full list of these libraries, see the [Webhook libraries section]({{root_url}}/Integrate/libraries.html#-Webhook-Libraries) of our API Libraries list.
+- Several open source web libraries support SendGrid's Event Webhook. For a full list of these libraries, see the [Webhook libraries section]({{root_url}}/Integrate/libraries.html#-Webhook-Libraries) of our API Libraries list.
 
 {% warning %}
 If your email traffic generates a lot of events, the incoming data can quickly overload a web server if not configured correctly. You can load test your endpoints with loader.io for free.
@@ -76,8 +76,8 @@ Once you choose a storage option, follow steps 3 through 8 in [Getting started](
 Additional Resources
 {% endanchor h2 %}
 
-- [Event webhook reference]({{root_url}}/API_Reference/Event_Webhook/event.html)
-- [Troubleshooting the event webhook]({{root_url}}/API_Reference/Event_Webhook/troubleshooting.html)
+- [Event Webhook reference]({{root_url}}/API_Reference/Event_Webhook/event.html)
+- [Troubleshooting the Event Webhook]({{root_url}}/API_Reference/Event_Webhook/troubleshooting.html)
 - [An Event Webhook case study](https://sendgrid.com/blog/leveraging-sendgrids-event-api/)
 - [Webhook web libraries]({{root_url}}/Integrate/libraries.html#-Webhook-Libraries)
 - [Getting started with Keen.io]({{root_url}}/Integrate/Tutorials/analytics_with_keen_io.html)
