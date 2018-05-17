@@ -98,7 +98,7 @@ Delete a specific contact
 1. Click **delete** to remove the contact permanently.
 
 {% warning %}
-Use this to permanently delete your recipients from your contact list if they submit a GDPR data subject delete request.
+Use this to permanently delete your recipients from all of your contact lists and all segments if they submit a GDPR data subject delete request.
 {% endwarning %}
 
 {% anchor h3 %}
