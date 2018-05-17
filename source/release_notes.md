@@ -32,6 +32,21 @@ The following new features and changes to the service are available.
 </table>
 
 {% anchor h2 %}
+15 May 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Send To and Export All Contacts
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>We've updated Marketing Campaigns to allow you to send to and export all contacts within your database. Your 'All Contacts' database now operates like other lists that you create. To send to all contacts, select "All Contacts" from the recipients dropdown when editing a campaign. To export all contacts, select "Export" from the action menu on the [Contacts page](https://sendgrid.com/marketing_campaigns/ui/contacts) or by clicking the "Export CSV" button, now located in the top-right when viewing [All Contacts](https://sendgrid.com/marketing_campaigns/ui/all_contacts).</td>
+  </tr>
+</table>
+
+{% anchor h2 %}
 1 May 2018
 {% endanchor %}
 
