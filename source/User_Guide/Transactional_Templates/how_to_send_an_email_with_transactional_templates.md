@@ -32,7 +32,7 @@ Design a dynamic transactional template
 1. Add a unique template name and then click **Save**.
 1. To begin editing your new template, click **Add Version**.
 1. Select an editor and click **Continue**.
-1. Design your template. For more information on designing a Dynamic Transactional Template using the Design Editor or Code Editor, see [Create and edit Dynamic Transactional Templates]({{root_url}}/User_Guide/Transactional_Templates/Create_and_edit_dynamic_transactional_templates.html).
+1. Design your template. For more information on using Handlebars, see [Using handlebars]({{root_url}}/User_Guide/Transactional_Templates/Using_handlebars.html).
 
 For sample templates that that include examples of receipts, password resets, account activations, newsletters, and sale notifications, check out the [dynamic-template section of our email templates github repo](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates).
 

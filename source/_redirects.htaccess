@@ -1008,6 +1008,7 @@ Redirect 301 /Release_Notes/release_notes.html https://sendgrid.com/docs/release
 
 Redirect 301 /User_Guide/Transactional_Templates/manage.html http://sendgrid.com/docs/User_Guide/Transactional_Templates/create_and_edit_transactional_templates.html
 Redirect 301 /User_Guide/Transactional_Templates/index.html https://sendgrid.com/docs/User_Guide/Transactional_Templates/create_and_edit_transactional_templates.html
+Redirect 301 /User_Guide/Transactional_Templates/how_to_send_an_email_with_dynamic_transactional_templates.html https://sendgrid.com/docs/User_Guide/Transactional_Templates/how_to_send_an_email_with_transactional_templates.html
 
 #######
 #
