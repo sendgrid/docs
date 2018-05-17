@@ -643,7 +643,7 @@ Event objects
   </tr>
   <tr>
     <td><a href="#asmgroupid">asm_group_id</a></td>
-    <td></td>
+    <td>X*</td>
     <td></td>
     <td></td>
     <td></td>
@@ -726,6 +726,8 @@ Event objects
     <td></td>
   </tr>
 </table>
+
+*when available
 
 {% anchor h3 %}
 JSON objects
@@ -834,7 +836,7 @@ You will receive the same unique argument included with the data returned to the
 {% endcodeblock %}
 
 {% warning %}
-You can create unique arguments with the same keys as reserved words, such as "event" or "email". In this case, SendGrid defaults to the reserved key and NOT your unique argument. An example of this is below.
+You can't create unique arguments with the same keys as reserved words, such as "event" or "email".
 {% endwarning %}
 
 {% anchor h4 %}
