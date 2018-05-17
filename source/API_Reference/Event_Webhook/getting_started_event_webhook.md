@@ -25,21 +25,28 @@ Getting started
 
 *To get started with the Event Webhook:*
 
-1. Go to [RequestBin](https://requestb.in/). Select **Private (only viewable from this browser)**.
-1. Select that you're not a robot, and then click **Create a RequestBin**.
-1. In the new RequestBin, copy the Bin URL.
+1. Go to the [Webhook tester](https://webhook.site/).
+1. Copy the unique URL.
 1. In a new window, open [Settings > Mail Settings](https://app.sendgrid.com/settings/mail_settings) in the [SendGrid UI](https://app.sendgrid.com).
 1. Turn on **Event Notification**.
-1. In the **HTTP POST URL field**, paste the Bin URL that you copied in step 2.
+1. In the **HTTP POST URL field**, paste the unique URL that you copied in step 2.
 1. Select the Event notifications you would like to test.
 1. Click the checkmark in the top corner to save these updates into your settings.
 1. Click **Test Your Integration**.
     <br> This returns an HTTP POST containing a JSON array of your selected events in one request after a very short delay. Our servers send these POSTs to the URL you defined in the Event Notification app options.
-1. Go back to your RequestBin and reload the page.
+1. Go back to the [Webhook tester](https://webhook.site/) and reload the page.
      <br> This loads the JSON array of your selected events that you set in the last step.
+
+{% warning %}
+The Webhook tester site has a public URL. This is usually safe for testing purposes, just make sure that you remove the `webhook.site` URL from your Event Notifications settings after you are done testing.
+{% endwarning %}
 
 {% info %}
 You can also update your Event Webhook mail settings using the [PATCH /user/webhooks/event/settings](https://sendgrid.api-docs.io/v3.0/webhooks/update-event-notification-settings) API method, and you can test the webhook integration using the [POST /user/webhooks/event/test](https://sendgrid.api-docs.io/v3.0/webhooks/test-event-notification-settings) API method.
+{% endinfo %}
+
+{% info %}
+If you want to test your webhook locally, deploy a local version of [Webhook tester](https://github.com/fredsted/webhook.site), or [RequestBin](https://github.com/Runscope/requestbin#readme). Other browser options are [beeceptor](http://beeceptor.com), or [ngrok](https://ngrok.com/).
 {% endinfo %}
 
 {% anchor h2 %}
@@ -70,7 +77,11 @@ If your email traffic generates a lot of events, the incoming data can quickly o
 Integrating
 {% endanchor %}
 
-Once you choose a storage option, follow steps 3 through 8 in [Getting started](#-Getting-started]) to update your [Settings > Mail Settings](https://app.sendgrid.com/settings/mail_settings) in the [SendGrid UI](https://app.sendgrid.com). Update the **HTTP POST URL field** to your URL, and make sure you've selected the events that you want to receive. The Event Webhook does not follow redirects. If you want to receive encrypted posts, your callback URL needs to support TLS 1.2.
+Once you choose a storage option, follow steps 3 through 8 in [Getting started](#-Getting-started]) to update your [Settings > Mail Settings](https://app.sendgrid.com/settings/mail_settings) in the [SendGrid UI](https://app.sendgrid.com). Update the **HTTP POST URL field** to your URL, and make sure you've selected the events that you want to receive. 
+
+The Event Webhook does not follow redirects.
+
+If you want to receive encrypted posts, your callback URL needs to support TLS 1.2.
 
 {% anchor h2 %}
 Additional Resources
