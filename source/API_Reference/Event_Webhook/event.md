@@ -50,13 +50,13 @@ navigation:
 Events
 {% endanchor %}
 
-Email events generate when email is processed by SendGrid and by the email service providers. There are two types of events - delivery events, and engagement events. Delivery events indicate successful delivery to the recipient. Engagement events indicate how the recipient is interacting with the email.
+Events are generated when email is processed by SendGrid and email service providers. There are two types of events - delivery and engagement events. Delivery events indicate the status of email delivery to the recipient. Engagement events indicate how the recipient is interacting with the email.
 
-Here is a flow of how emails are processed:
+Here is a flow of email events:
 
 ![event flow]({{root_url}}/images/email_event_flow.jpg "Event Flow")
 
-This is an example event response that includes all of the SendGrid generated events:
+Here is an event response that includes an example of each type of event:
 
 {% codeblock lang:json %}
 [  
@@ -187,7 +187,7 @@ Delivery events
 {% endanchor %}
 
 
-Delivery events include bounce, deferred, delivered, dropped, and processed.
+Delivery events include processed, dropped, delivered, deferred, and bounce.
 
 <table class="table">
    <tbody>
@@ -219,7 +219,7 @@ Delivery events include bounce, deferred, delivered, dropped, and processed.
       </tr>
       <tr>
          <td><a name="dropped"></a>Dropped</td>
-         <td>You may see the following drop reasons: Invalid SMTPAPI header, Spam Content (if spam checker app enabled), Unsubscribed Address, Bounced Address, Spam Reporting Address, Invalid, Recipient List over Package Quota</td>
+         <td>You may see the following drop reasons: Invalid SMTPAPI header, Spam Content (if Spam Checker app is enabled), Unsubscribed Address, Bounced Address, Spam Reporting Address, Invalid, Recipient List over Package Quota</td>
          <td>{% codeblock lang:json %}
 [
    {  
@@ -256,7 +256,7 @@ Delivery events include bounce, deferred, delivered, dropped, and processed.
       </tr>
       <tr>
          <td><a name="deferred"></a>Deferred</td>
-         <td>Recipient's email server temporarily rejected message.</td>
+         <td>Receiving server temporarily rejected the message.</td>
          <td>{% codeblock lang:json %}
 [
    {  
@@ -275,7 +275,7 @@ Delivery events include bounce, deferred, delivered, dropped, and processed.
       </tr>
       <tr>
          <td><a name="bounce"></a>Bounce</td>
-         <td>Receiving server could not or would not accept the message. If a reciepient has previously unsubscribed from your emails, your attempt to send to them is bounced.</td>
+         <td>Receiving server could not or would not accept the message. If a recipient has previously unsubscribed from your emails, the message is bounced.</td>
          <td>{% codeblock lang:json %}
 [
    {  
@@ -299,7 +299,7 @@ Delivery events include bounce, deferred, delivered, dropped, and processed.
 Engagement events
 {% endanchor %}
 
-Engagement events include click, open, spam report, unsubscribe, group unsubscribe, and group resubscribe.
+Engagement events include open, click, spam report, unsubscribe, group unsubscribe, and group resubscribe.
 
 <table class="table">
    <tbody>
@@ -310,7 +310,7 @@ Engagement events include click, open, spam report, unsubscribe, group unsubscri
       </tr>
       <tr>
          <td><a name="open"></a>Open</td>
-         <td>Recipient has opened the HTML message. You need to enable Open Tracking for getting this type of event.</td>
+         <td>Recipient has opened the HTML message. Open Tracking needs to be enabled for this type of event.</td>
          <td>{% codeblock lang:json %}
 [
    {  
@@ -329,7 +329,7 @@ Engagement events include click, open, spam report, unsubscribe, group unsubscri
       </tr>
       <tr>
          <td><a name="click"></a>Click</td>
-         <td>Recipient clicked on a link within the message. You need to enable Click Tracking for getting this type of event.</td>
+         <td>Recipient clicked on a link within the message. Click Tracking needs to be enabled for this type of event.</td>
          <td>{% codeblock lang:json %}
 [
    {  
@@ -366,7 +366,7 @@ Engagement events include click, open, spam report, unsubscribe, group unsubscri
       </tr>
       <tr>
          <td><a name="unsubscribe"></a>Unsubscribe</td>
-         <td>Recipient clicked on the 'Opt Out of All Emails' link (available after clicking the message's subscription management link). You need to enable Subscription Tracking for getting this type of event.</td>
+         <td>Recipient clicked on the 'Opt Out of All Emails' link (available after clicking the message's subscription management link). Subscription Tracking needs to be enabled for this type of event.</td>
          <td>{% codeblock lang:json %}
 [
    {  
@@ -383,7 +383,7 @@ Engagement events include click, open, spam report, unsubscribe, group unsubscri
       </tr>
       <tr>
          <td><a name="groupunsubscribe"></a>Group Unsubscribe</td>
-         <td>Recipient unsubscribed from specific group, by either direct link or updating preferences. You need to enable Subscription Tracking for getting this type of event.</td>
+         <td>Recipient unsubscribed from a specific group either by clicking the link directly or updating their preferences. Subscription Tracking needs to be enabled for this type of event.</td>
          <td>{% codeblock lang:json %}
 [
    {  
@@ -404,7 +404,7 @@ Engagement events include click, open, spam report, unsubscribe, group unsubscri
       </tr>
       <tr>
          <td><a name="groupresubscribe"></a>Group Resubscribe</td>
-         <td>Recipient resubscribes to specific group by updating preferences. You need to enable Subscription Tracking for getting this type of event.</td>
+         <td>Recipient resubscribed to a specific group by updating their preferences. Subscription Tracking needs to be enabled for this type of event.</td>
          <td>{% codeblock lang:json %}
 [
    {  
@@ -643,7 +643,7 @@ Event objects
   </tr>
   <tr>
     <td><a href="#asmgroupid">asm_group_id</a></td>
-    <td>X*</td>
+    <td></td>
     <td></td>
     <td></td>
     <td></td>
@@ -727,26 +727,24 @@ Event objects
   </tr>
 </table>
 
-*when available
-
 {% anchor h3 %}
 JSON objects
 {% endanchor %}
 
-- <a name="email"></a>`email` - the email address of the reciepeint
+- <a name="email"></a>`email` - the email address of the recipient
 - <a name="timestamp"></a>`timestamp` - the <a href="https://en.wikipedia.org/wiki/Unix_time">UNIX timestamp</a> of when the message was sent
-- <a name="event"></a>`event` - the event type. Possible values are bounce, deferred, delivered, dropped, processed, click, open, spam report, and unsubscribe.
+- <a name="event"></a>`event` - the event type. Possible values are processed, dropped, delivered, deferred, bounce, open, click, spam report, unsubscribe, group unsubscribe, and group resubscribe.
 - <a name="smtpid"></a>`smtp-id` - a unique ID attached to the message by the originating system.
 - <a name="useragent"></a>`useragent` - the user agent responsible for the event. This is usually a web browser. For example, "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36".
-- <a name="ip"></a>`IP` - the IP address used to send the email, except for `open` and `click` events, where it is the IP address of the user who sent the email.
-- <a name="sgeventid"></a>`sg_event_id` - a unique ID to this event that you can use for deduplication purposes. These IDs are either 22 or 48 characters.
-- <a name="sgmessageid"></a>`sg_message_id` - an internal SendGrid unique ID for the message type. The first half of this is pulled from the `smtp-id`.
-- <a name="reason"></a>`reason` - any sort of error response returned by the server that describes the reason this event type was triggered.
+- <a name="ip"></a>`IP` - the IP address used to send the email. For `open` and `click` events, it is the IP address of the recipient who engaged with the email.
+- <a name="sgeventid"></a>`sg_event_id` - a unique ID to this event that you can use for deduplication purposes. These IDs are either 22 or 48 characters long.
+- <a name="sgmessageid"></a>`sg_message_id` - a unique, internal SendGrid ID for the message. The first half of this is pulled from the `smtp-id`.
+- <a name="reason"></a>`reason` - any sort of error response returned by the receiving server that describes the reason this event type was triggered.
 - <a name="status"></a>`status` - status code string. Corresponds to HTTP status code - for example, a JSON response of 5.0.0 is the same as a 500 error response.
-- <a name="response"></a>`response` - the full text of the HTTP response error returned from the server.
+- <a name="response"></a>`response` - the full text of the HTTP response error returned from the receiving server.
 - <a name="tls"></a>`tls` - indicates whether TLS encription was used in sending this message. For more information about TLS, see the [TLS Glossary page]({{root_url}}/Glossary/tls.html).
-- <a name="url"></a>`url` - the URL where the event originates, unless it's a click event, and this is the URL clicked by the reciepient.
-- <a name="attempt"></a>`attempt` - the number of times the server has attempted to deliver this mail.
+- <a name="url"></a>`url` - the URL where the event originates. For click events, this is the URL clicked on by the recipient.
+- <a name="attempt"></a>`attempt` - the number of times SendGrid has attempted to deliver this message.
 - <a name="category"></a>`category` - [Categories]({{root_url}}/Glossary/categories.html) are custom tags that you set for the purpose of organizing your emails. If you send single categories as an array, they will be returned by the webhook as an array. If you send single categories as a string, they will be returned by the webhook as a string.
 
 String categories:
@@ -790,25 +788,25 @@ Array:
 ]
 {% endcodeblock %}
 
-- <a name="asmgroupid"></a>`asm_group_id` - The ID of the unsubscribe group the recipients email is included in. ASM IDs correspond to the ID that is returned when you create an unsubscribe group.
-- <a name="uniqueargs"></a>`unique_args` or `custom_args` - 
+- <a name="asmgroupid"></a>`asm_group_id` - The ID of the unsubscribe group the recipient's email address is included in. ASM IDs correspond to the ID that is returned when you create an unsubscribe group.
+- <a name="uniqueargs"></a>`unique_args` or `custom_args`
 {% anchor h2 %}
 Unique Arguments and Custom Arguments
 {% endanchor %}
 
-Events generated by SendGrid may also include any [unique arguments]({{root_url}}/API_Reference/SMTP_API/unique_arguments.html) or custom arguments.
+Events generated by SendGrid can include [unique arguments]({{root_url}}/API_Reference/SMTP_API/unique_arguments.html) or custom arguments.
 
 {% info %}
-In the SMTP API or V2 Mail Send, they're referred to as unique arguments and are known as custom arguments in V3 Mail Send.
+Unique arguments and custom arguments essentially have the same function. However, unique arguments are used in the SMTP API or V2 Mail Send, and custom arguments are used in the V3 Mail Send.
 {% endinfo %}
 
 {% anchor h3 %}
 Unique Arguments
 {% endanchor %}
 
-To define and receive unique arguments when sending email with the [SMTP API]({{root_url}}/API_Reference/SMTP_API/index.html) or the [v2 Mail Send endpoint]({{root_url}}/API_Reference/Web_API/mail.html), use the `unique_args` parameter in the X-SMTPAPI header or parameter. For example, if you have an application and want to receive custom parameters such as the `userid` and the email `template`, you would submit them with the X-SMTPAPI header or parameter, as described [here]({{root_url}}/API_Reference/SMTP_API/unique_arguments.html).
+To define and receive unique arguments when sending email with the [SMTP API]({{root_url}}/API_Reference/SMTP_API/index.html) or the [v2 Mail Send endpoint]({{root_url}}/API_Reference/Web_API/mail.html), use the `unique_args` parameter in the X-SMTPAPI header. For example, if you have an application and want to receive custom parameters such as the `userid` and the email `template`, you would submit them with the X-SMTPAPI header, as described [here]({{root_url}}/API_Reference/SMTP_API/unique_arguments.html).
 
-For example, if you include the following unique arguments in your x-smtpapi parameter for an email sent via the v2 Mail Send endpoint:
+For example, if you include the following unique arguments in your x-smtpapi header for an email sent via the v2 Mail Send endpoint:
 
 {% codeblock lang:json %}
 {
@@ -819,7 +817,7 @@ For example, if you include the following unique arguments in your x-smtpapi par
 }
 {% endcodeblock %}
 
-You will receive the same unique argument included with the data returned to the Event Webhook:
+You will receive the same unique argument included with the data posted to your Event Webhook:
 
 {% codeblock lang:json %}
 [
@@ -836,7 +834,7 @@ You will receive the same unique argument included with the data returned to the
 {% endcodeblock %}
 
 {% warning %}
-You can't create unique arguments with the same keys as reserved words, such as "event" or "email".
+You can create unique arguments with the same words as reserved keys, such as "event" or "email". However, SendGrid will default to the reserved key and NOT your unique argument for events that contain a reserved key as an object. An example of this is below.
 {% endwarning %}
 
 {% anchor h4 %}
@@ -874,7 +872,7 @@ The resulting webhook call
 {% endcodeblock %}
 
 {% info %}
-The event and the email do not get overwritten because "event" and "email" are reserved, and SendGrid defaults to the reserved key for webhooks.
+You'll notice that the unique arguments, "event" and "email", were overwritten because they are reserved keys for SendGrid's values.
 {% endinfo %}
 
 {% anchor h3 %}
@@ -925,7 +923,7 @@ The Event Webhook response:
 - <a name="marketingcampaignid"></a>`marketing_campaign_id`
 - <a name="marketingcampaignname"></a>`marketing_campaign_name`
 
-For emails sent through our Marketing Campaigns feature, we add Marketing Campaigns specific params to the Event Webhook. Both `marketing_campaign_name` and `marketing_campaign_id` are displayed as unique arguments in the event data.
+For emails sent through our Marketing Campaigns feature, we add Marketing Campaigns specific parameters to the Event Webhook. Both `marketing_campaign_name` and `marketing_campaign_id` are displayed as unique arguments in the event data.
 
 {% anchor h3 %}
 Example event from a standard (non-A/B test) campaign send:
@@ -1017,7 +1015,7 @@ For emails sent through our Legacy Marketing Email tool, unsubscribes look like 
 ]
 {% endcodeblock %}
 
-<a name="pool"></a>`pool` - For emails sent with a specified IP Pool, you can view the IP Pool used in the event post for a processed event.
+<a name="pool"></a>`pool` - For emails sent with a specified IP Pool, you can view the IP Pool in the event data for a processed event.
 
 {% codeblock lang:json %}
 [
