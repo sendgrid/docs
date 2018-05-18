@@ -3,6 +3,48 @@ title: "custom elements"
 category: "sending-email"
 ---
 
+<code-group langs="PHP,Python,JavaScript">
+
+```php
+  // Create array containing abbreviations of days of week.
+  $daysOfWeek = array('S','M','T','W','T','F','S');
+
+  // What is the first day of the month in question?
+  $firstDayOfMonth = mktime(0,0,0,$month,1,$year);
+
+  // How many days does this month contain?
+```
+
+```python
+  static int
+  _is_legal_capsule(PyCapsule *capsule, const char *invalid_capsule)
+  {
+      if (!capsule || !PyCapsule_CheckExact(capsule) || capsule->pointer == NULL) {
+          PyErr_SetString(PyExc_ValueError, invalid_capsule);
+          return 0;
+      }
+      return 1;
+  }
+```
+
+```javascript
+  const cat = {
+    id: `${i}`,
+    slug: category,
+    parent: '__SOURCE__',
+    children: [],
+    internal: {
+      type: 'forDeveloperCategories',
+    },
+  };
+  // Get content digest of node. (Required field)
+  const contentDigest = crypto
+    .createHash('md5')
+    .update(JSON.stringify(cat))
+    .digest('hex');
+```
+
+</code-group>
 
 ## Headers
 
@@ -164,7 +206,7 @@ Some text to show that the reference links can follow later.
 
 ### Images
 
-<code-group>
+
 
 ```php
   // Create array containing abbreviations of days of week.
@@ -204,7 +246,7 @@ Some text to show that the reference links can follow later.
     .update(JSON.stringify(cat))
     .digest('hex');
 ```
-</code-group>
+
 
 Here's our logo (hover to see the title text):
 
