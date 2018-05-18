@@ -46,7 +46,7 @@ You can also update your Event Webhook mail settings using the [PATCH /user/webh
 {% endinfo %}
 
 {% info %}
-If you want to test your webhook locally, deploy a local version of [Webhook tester](https://github.com/fredsted/webhook.site), or [RequestBin](https://github.com/Runscope/requestbin#readme). Other browser options are [beeceptor](http://beeceptor.com), or [ngrok](https://ngrok.com/).
+If you want to test your webhook locally, deploy a local version of [Webhook tester](https://github.com/fredsted/webhook.site), or [RequestBin](https://github.com/Runscope/requestbin#readme). Other browser options are [Beeceptor](https://beeceptor.com), or [ngrok](https://ngrok.com/).
 {% endinfo %}
 
 {% anchor h2 %}
