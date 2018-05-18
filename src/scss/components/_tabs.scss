@@ -2,6 +2,7 @@
   display: flex;
   justify-content: flex-start;
   border-bottom: 1px solid $slate-10;
+  padding-left: 0;
 
   &.is-centered {
     justify-content: center;

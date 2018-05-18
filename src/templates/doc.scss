@@ -73,3 +73,15 @@ $aside-width: 300px;
 .callout--alert {
   border-left: 4px solid $alert-danger-text;
 }
+
+.tabbed-code__block {
+  display: none;
+}
+
+.tabbed-code__block.show {
+  display: block;
+}
+
+.tabbed-code .tab {
+  flex: 1;
+}
