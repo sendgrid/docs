@@ -41,8 +41,15 @@ img {
   max-width: 1600px;
   margin: 0 auto;
   background-color: #fff;
+  overflow: hidden;
 }
 
 .main {
   padding: $scaleup-4 0;
+}
+
+.card__link {
+  display: block;
+  width: 100%;
+  margin-bottom: $scaleup-1;
 }
