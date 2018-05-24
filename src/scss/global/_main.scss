@@ -46,3 +46,9 @@ img {
 .main {
   padding: $scaleup-4 0;
 }
+
+.card__link {
+  display: block;
+  width: 100%;
+  margin-bottom: $scaleup-1;
+}
