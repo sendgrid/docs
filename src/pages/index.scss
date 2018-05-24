@@ -2,13 +2,17 @@
 @import '../scss/global/mixins';
 $card-gutter: 30px;
 
+.docs-home {
+  overflow: hidden;
+}
+
 .page-title {
-  font-size: $scaleup-6;
+  font-size: $scaleup-5;
   line-height: 1.2;
   margin-bottom: $scaledown-6;
   margin-top: $scaleup-2;
 
-  @include colfax(500);
+  @include colfax(600);
 }
 
 .search-hero {
@@ -37,17 +41,25 @@ $card-gutter: 30px;
   right: initial;
 }
 
+.callout--marketing .home-callout__badge {
+  color: #62ffae;
+}
+
+.callout--development .home-callout__badge {
+  color: $seafoam;
+}
+
 .card--no-pad {
   padding: 0 0 0 0;
 }
 
 .card--home {
-  margin-top: $card-gutter;
+  margin-bottom: $card-gutter;
+}
 
-  h3 {
-    display: block;
-    width: 100%;
-  }
+.card__title {
+  display: block;
+  width: 100%;
 }
 
 .row--home-cards {
@@ -55,12 +67,11 @@ $card-gutter: 30px;
 }
 
 .home-featured {
+  padding-top: $scaleup-1;
   position: relative;
 
   h2 {
     text-align: center;
-    display: block;
-    width: 100%;
     position: relative;
     color: #fff;
   }
@@ -68,8 +79,9 @@ $card-gutter: 30px;
 
 .home-featured::before {
   background: $seafoam;
+  background: linear-gradient(to bottom right, #62ffae, $seafoam);
   content: "";
-  height: 110%;
+  height: 105%;
   left: -25%;
   position: absolute;
   top: 4rem;
@@ -85,25 +97,31 @@ $card-gutter: 30px;
   z-index: 2;
 }
 
+.home-callout {
+  padding: $scaleup-5 $scaleup-3;
+}
+
 .home-glossary {
-  margin: $scaleup-8 0 $scaleup-6;
+  margin: $scaleup-5 0;
   z-index: 2;
 
   h2 {
     position: relative;
-    display: block;
-    width: 100%;
     text-align: center;
   }
 }
 
 .home-glossary__container {
-  padding-left: $scaleup-8;
-  padding-right: $scaleup-8;
+  padding-left: $scaleup-10;
+  padding-right: $scaleup-10;
 }
 
 .glossary-link {
   display: block;
   width: 100%;
   margin-bottom: $scaleup-1;
+}
+
+.glossary-icon {
+  margin-left: $scaleup-1;
 }
