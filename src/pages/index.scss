@@ -41,6 +41,14 @@ $card-gutter: 30px;
   right: initial;
 }
 
+.home-callout__badge {
+  margin-bottom: $scaleup-1;
+  text-transform: uppercase;
+  font-size: $scaledown-1;
+
+  @include colfax(600);
+}
+
 .callout--marketing .home-callout__badge {
   color: #62ffae;
 }
@@ -92,13 +100,27 @@ $card-gutter: 30px;
 }
 
 .home-callouts {
+  display: block;
   margin-top: -30px;
   position: relative;
   z-index: 2;
 }
 
 .home-callout {
-  padding: $scaleup-5 $scaleup-3;
+  padding: $scaleup-4 $scaleup-3 $scaleup-7;
+
+  .row {
+    grid-column-gap: 3%;
+  }
+
+  .btn {
+    height: 40px;
+    widows: 132px;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    margin-left: -66px;
+  }
 }
 
 .home-glossary {

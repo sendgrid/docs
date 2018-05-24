@@ -28,9 +28,9 @@ class Index extends React.Component {
           <div className="home-callout__badge">
             {card.BADGE}
           </div>
-          <h3 className="card__title">{card.TITLE}</h3>
-          <p>{card.COPY}</p>
-          <Link to={card.LINK} className="btn btn-primary">Get Started</Link>
+          <h3 className="card__title is-size-h2 m-bottom-4">{card.TITLE}</h3>
+          <div className="is-p">{card.COPY}</div>
+          <Link to={card.LINK} className="btn btn-primary center">Get Started</Link>
         </div>
       );
     });
