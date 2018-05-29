@@ -78,10 +78,11 @@ $width-large: 1200px;
 
 // stack md and lg columns up to small
 @media (max-width: $width-small) {
-  [class^='col-lg'],
-  [class^='col-md'] {
-    grid-column-start: 1;
+  [class*='col-lg'],
+  [class*='col-md'] {
+    // grid-column-start: 1;
     grid-column: span 12;
+    margin-bottom: $scale-0;
   }
 }
 

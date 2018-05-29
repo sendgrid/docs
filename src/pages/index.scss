@@ -104,14 +104,15 @@ $card-gutter: 30px;
   margin-top: -30px;
   position: relative;
   z-index: 2;
+
+  // increase gutter for callouts
+  .row {
+    grid-column-gap: 3%;
+  }
 }
 
 .home-callout {
   padding: $scaleup-4 $scaleup-3 $scaleup-7;
-
-  .row {
-    grid-column-gap: 3%;
-  }
 
   .btn {
     height: 40px;
