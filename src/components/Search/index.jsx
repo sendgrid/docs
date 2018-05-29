@@ -2,7 +2,7 @@ import React from 'react';
 import './search.scss';
 
 class Search extends React.Component {
-  static swiftype() {
+  componentDidMount() {
     /* eslint-disable */
     (function (w, d, t, u, n, s, e) {
       w.SwiftypeObject = n; w[n] = w[n] || function () {
@@ -28,7 +28,6 @@ class Search extends React.Component {
             <input type="button" value="Search" className="input-btn" />
           </div>
         </form>
-        {Search.swiftype()}
       </div>
     );
   }

@@ -50,6 +50,8 @@ class NavMain extends Component {
       <div className="nav-wrap">
         <div className="nav-secondary">
           <div className="container-lg">
+            <Link className="nav-secondary__link" to="/">Release Notes</Link>
+            <a className="nav-secondary__link" href="https://sendgrid.com">SendGrid.com</a>
             {user ? (
               <div className="nav-secondary__account">
                 <div className="nav-secondary__name">{user.first_name} {user.last_name} <span className="carret">▾</span></div>
@@ -59,7 +61,7 @@ class NavMain extends Component {
                 </div>
               </div>
             ) : (
-              <a href="https://app.sendgrid.com/">Log In</a>
+              <a className="nav-secondary__link" href="https://app.sendgrid.com/">Log In</a>
             )}
           </div>
         </div>
@@ -68,7 +70,7 @@ class NavMain extends Component {
           <div className="container-lg">
             <nav className="nav-main">
               <Link className="nav-main__logo" to="/">
-                Logo
+                <span className="nav-main__help-center" >Help Center</span>
               </Link>
 
               <button

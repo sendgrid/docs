@@ -6,11 +6,12 @@
   border-bottom: 1px solid $slate-10;
 }
 
-.nav-secondary a {
-  color: $slate;
+.nav-secondary__link {
+  color: $slate-60;
   padding: $scaledown-3 0;
   display: inline-block;
   font-size: $scaledown-1;
+  margin-left: $scaleup-2;
 }
 
 .nav-main-wrap {
@@ -49,13 +50,29 @@
 .nav-main__logo {
   padding: $scaleup-4 0;
   background-image: url('https://sendgrid.com/brand/sg-logo-300.png');
-  text-indent: -999px;
   background-position: 0;
   background-repeat: no-repeat;
   background-size: 150px auto;
   display: block;
   height: 27px;
-  width: 150px;
+  width: 280px;
+  text-align: right;
+  position: relative;
+}
+
+.nav-main__help-center {
+  text-transform: capitalize;
+  display: inline-block;
+  padding: 3px 8px 0;
+  border-left: 2px solid $slate-40;
+  color: $slate-40;
+  position: absolute;
+  line-height: 1;
+  right: 0;
+  top: 28px;
+  font-size: 18px;
+
+  @include colfax(600);
 }
 
 .nav-main .nav-main__login {
