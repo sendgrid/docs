@@ -14,7 +14,7 @@ export default class CategoryTemplate extends React.Component {
 
   render() {
     const { pathContext } = this.props;
-
+    console.log(this);
     return (
       <div className="category-container container">
         <h1>{CATEGORIES[pathContext.category]}</h1>
