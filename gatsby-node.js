@@ -2,6 +2,7 @@ const path = require('path');
 const _ = require('lodash');
 const webpackLodashPlugin = require('lodash-webpack-plugin');
 const crypto = require('crypto');
+const CATEGORIES = require('./src/constants/categories');
 
 /**
  * Generate node edges
@@ -124,12 +125,12 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         });
       });
 
-      const categoryList = Array.from(developerCategorySet);
-      categoryList.forEach((category, i) => {
+
+      _.forOwn(CATEGORIES, (value, key) => {
         // Create "for-developer" category nodes.
         const cat = {
-          id: `${i}`,
-          slug: category,
+          id: `${key}`,
+          slug: key,
           parent: '__SOURCE__',
           children: [],
           internal: {
@@ -150,49 +151,93 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
         // Create "/for-developers/<category-slug>" pages.
         createPage({
-          path: `/for-developers/${_.kebabCase(category)}/`,
+          path: `/for-developers/${_.kebabCase(key)}/`,
           component: categoryPage,
+          docType: 'for-developers',
           context: {
-            category,
+            key,
           },
         });
-      });
-
-
-      const helpCategoryList = Array.from(helpCategorySet);
-      helpCategoryList.forEach((category, i) => {
-        // Create "help-support" category nodes.
-        const cat = {
-          id: `${i}`,
-          slug: category,
-          parent: '__SOURCE__',
-          children: [],
-          internal: {
-            type: 'helpSupportCategories',
-          },
-        };
-        // Get content digest of node. (Required field)
-        const contentDigest = crypto
-          .createHash('md5')
-          .update(JSON.stringify(cat))
-          .digest('hex');
-
-        // add it to userNode
-        cat.internal.contentDigest = contentDigest;
-
-        // Create node with the gatsby createNode() API
-        // createNode(cat);
-
-        // Create "/help-support/<category-slug>" pages.
         createPage({
-          path: `/help-support/${_.kebabCase(category)}/`,
+          path: `/help-support/${_.kebabCase(key)}/`,
           component: categoryPage,
           docType: 'help-support',
           context: {
-            category,
+            key,
           },
         });
       });
+
+
+      // const categoryList = Array.from(developerCategorySet);
+      // categoryList.forEach((category, i) => {
+      //   // Create "for-developer" category nodes.
+      //   const cat = {
+      //     id: `${i}`,
+      //     slug: category,
+      //     parent: '__SOURCE__',
+      //     children: [],
+      //     internal: {
+      //       type: 'forDeveloperCategories',
+      //     },
+      //   };
+      //   // Get content digest of node. (Required field)
+      //   const contentDigest = crypto
+      //     .createHash('md5')
+      //     .update(JSON.stringify(cat))
+      //     .digest('hex');
+
+      //   // add it to contentNode
+      //   cat.internal.contentDigest = contentDigest;
+
+      //   // Create node with the gatsby createNode() API
+      //   // createNode(cat);
+
+      //   // Create "/for-developers/<category-slug>" pages.
+      //   createPage({
+      //     path: `/for-developers/${_.kebabCase(category)}/`,
+      //     component: categoryPage,
+      //     context: {
+      //       category,
+      //     },
+      //   });
+      // });
+
+
+      // const helpCategoryList = Array.from(helpCategorySet);
+      // helpCategoryList.forEach((category, i) => {
+      //   // Create "help-support" category nodes.
+      //   const cat = {
+      //     id: `${i}`,
+      //     slug: category,
+      //     parent: '__SOURCE__',
+      //     children: [],
+      //     internal: {
+      //       type: 'helpSupportCategories',
+      //     },
+      //   };
+      //   // Get content digest of node. (Required field)
+      //   const contentDigest = crypto
+      //     .createHash('md5')
+      //     .update(JSON.stringify(cat))
+      //     .digest('hex');
+
+      //   // add it to userNode
+      //   cat.internal.contentDigest = contentDigest;
+
+      //   // Create node with the gatsby createNode() API
+      //   // createNode(cat);
+
+      //   // Create "/help-support/<category-slug>" pages.
+      //   createPage({
+      //     path: `/help-support/${_.kebabCase(category)}/`,
+      //     component: categoryPage,
+      //     docType: 'help-support',
+      //     context: {
+      //       category,
+      //     },
+      //   });
+      // });
     }));
   });
 };
