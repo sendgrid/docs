@@ -82,9 +82,9 @@ class NavMain extends Component {
 
               <div className={`nav-main__mobile ${menuState}`}>
                 <div className="nav-item">
-                  <Link className="nav-main__plain" to="/">
+                  <a className="nav-main__plain" href="https://support.sendgrid.com/">
                     Support
-                  </Link>
+                  </a>
                 </div>
 
                 <div className="nav-item">
@@ -94,15 +94,15 @@ class NavMain extends Component {
                 </div>
 
                 <div className="nav-item">
-                  <Link className="nav-main__plain" to="/">
+                  <Link className="nav-main__plain" to="/glossary">
                     Glossary
                   </Link>
                 </div>
 
                 <div className="nav-item">
-                  <Link className="nav-main__plain" to="/">
+                  <a className="nav-main__plain" href="http://status.sendgrid.com/">
                     Status
-                  </Link>
+                  </a>
                 </div>
 
                 <div className="nav-item nav-item--btn">

@@ -1,0 +1,18 @@
+@import '../scss/global/variables';
+@import '../scss/global/mixins';
+$card-gutter: 30px;
+
+.for-devs-callouts {
+  padding: $scaleup-3 0;
+}
+
+.for-devs-glossary {
+  background: linear-gradient(to right,  lighten($mantis, 25%), $mantis);
+  padding: $scaleup-2 0;
+
+  p,
+  h2 {
+    color: #fff;
+  }
+}
+
