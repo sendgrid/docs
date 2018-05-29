@@ -153,6 +153,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           path: `/for-developers/${_.kebabCase(category)}/`,
           component: categoryPage,
           context: {
+            docType: 'for-developers',
             category,
           },
         });
@@ -187,8 +188,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         createPage({
           path: `/help-support/${_.kebabCase(category)}/`,
           component: categoryPage,
-          docType: 'help-support',
           context: {
+            docType: 'help-support',
             category,
           },
         });
