@@ -47,20 +47,6 @@ When viewing the API keys page, you will see a list of your current API keys alo
 Creating an API key
 {% endanchor %}
 
-<<<<<<< HEAD
-*To create an API Key:*
-1. Navigate to the settings page, and click **API Keys**. 
-1. Click **Create API Key**. 
-1. Give your API Key a name and select the level of permissions (link to API key permissions table) you want to assign to the new key. 
-1. When finished, click **Create & View**. 
-
-{% info %}
-The API key name will follow your API key around through the SendGrid customer portal, so it is important that you choose a name that is meaningful to you.
-{% endinfo %}
-
-{% warning %}
-You will only be shown your API key one time. SendGrid cannot retrieve or restore the key for you if lost, so please store it somewhere safe and secure.
-=======
 1. Go to the API Keys page in the SendGrid UI, and click `Create API Key`.
 1. Give your API key a name.
 1. Select **Full Access**, **Restricted Access**, or **Billing Access**.
@@ -70,7 +56,6 @@ You will only be shown your API key one time. SendGrid cannot retrieve or restor
 
 {% warning %}
 You will only be shown your API key one time. Please store it somewhere safe as we will not be able to retrieve or restore it.
->>>>>>> Whatthefoxsays/ease-ui
 {% endwarning %}
 
 {% info %} There is a limit of 100 API Keys per account. {% endinfo %}
@@ -91,9 +76,6 @@ When assigning permissions to your API key, select one of the following levels o
 You may not give an API key greater permissions than you currently have.
 {% endinfo %}
 
-<<<<<<< HEAD
-After you click the “Save” button, your API key is displayed. This key will only be shown here, so copy it down! Once you leave this page, you will not be able to see this key again.
-=======
 {% anchor h2 %}
 Replacing an old API key with a new one
 {% endanchor %}
@@ -117,17 +99,12 @@ You can easily test your newly created API key using cURL:
 {%endcodeblock%}
 
 Look for a **202 Accepted** in the HTTP response headers.
->>>>>>> Whatthefoxsays/ease-ui
 
 {% anchor h2 %}
 Edit an API Key
 {% endanchor %}
 
-<<<<<<< HEAD
-Click the action menu the same row as the key you would like to edit. From here you can delete a key, making it completely inactive, or you can edit your key’s name and permissions.
-=======
 Click the action menu in the same row as the key you would like to edit. From here you can delete a key, making it completely inactive, or you can edit your key’s name and permissions.
->>>>>>> Whatthefoxsays/ease-ui
 
 {% anchor h2 %}
 Inactivate an API Key
