@@ -44,6 +44,8 @@ A campaign requires a title to be created.
 In order to send or schedule the campaign, you will be required to provide a subject, sender ID, content (we suggest both html and plain text), and at least one list or segment ID.
 {% endinfo %}
 
+{% warning %} We require that both the html and plain text content have an `[unsubscribe]` tag in them.{% endwarning %}
+
 ### Create a Campaign [POST]
 
 + Request (application/json)
@@ -81,7 +83,8 @@ In order to send or schedule the campaign, you will be required to provide a sub
                 "ip_pool": "marketing",
                 "html_content": "<html><head><title></title></head><body><p>Check out our spring line!</p></body></html>",
                 "plain_content": "Check out our spring line!",
-                "status": "Draft"
+                "status": "Draft",
+                "editor": "code"
             }
 
 + Response 400
@@ -99,6 +102,7 @@ In order to send or schedule the campaign, you will be required to provide a sub
             "segment_ids": "segment_ids do not all exist"
             "ip_pool": "The ip pool you provided is invalid"
             "suppression_group_id": "suppression_group_id does not exist"
+            "editor": "editor must be 'code' or 'design' if included. If not included, 'code' will be selected by default."
             "unsubscribes": "Either suppression_group_id or custom_unsubscribe_url may be set/used, but not both. Please remove one before setting the other."
             "": "The JSON you have submitted cannot be parsed."
             "": "You've reached your limit of 2500 campaigns. Please delete one or more and try again."
@@ -131,6 +135,7 @@ Returns an empty array if no campaigns exist
                      "ip_pool": "marketing",
                      "html_content": "<html><head><title></title></head><body><p>Check out our spring line!</p></body></html>",
                      "plain_content": "Check out our spring line!",
+                     "editor": "design",
                      "status": "Draft"
                 },
                 {
@@ -146,6 +151,7 @@ Returns an empty array if no campaigns exist
                      "ip_pool": "marketing",
                      "html_content": "<html><head><title></title></head><body><p>Last call for winter clothes!</p></body></html>",
                      "plain_content": "Last call for winter clothes!",
+                     "editor": "code",
                      "status": "Sent"
                 }
             ]}
@@ -173,6 +179,7 @@ Returns an empty array if no campaigns exist
                 "ip_pool": "marketing",
                 "html_content": "<html><head><title></title></head><body><p>Check out our spring line!</p></body></html>",
                 "plain_content": "Check out our spring line!",
+                "editor": "design",
                 "status": "Draft"
             }
 
@@ -241,6 +248,7 @@ Returns an empty array if no campaigns exist
             "segment_ids": "segment_ids do not all exist"
             "ip_pool": "The ip pool you provided is invalid"
             "suppression_group_id": "suppression_group_id does not exist"
+            "editor": "You cannot switch editors once a campaign has been created."
             "unsubscribes": "Either suppression_group_id or custom_unsubscribe_url may be set/used, but not both. Please remove one before setting the other."
             "": "The JSON you have submitted cannot be parsed."
 
@@ -448,7 +456,7 @@ To send to multiple addresses, use an array for the JSON "to" value ["one@addres
     + Body
 
             {
-                "to": "your.email@example.com"
+                "to": "example@example.com"
             }
 
 + Response 204

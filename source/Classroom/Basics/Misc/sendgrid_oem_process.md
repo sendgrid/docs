@@ -20,11 +20,8 @@ Typically this is achieved by utilizing our subuser functionality, where you cre
 
 # Why It Matters
 
-All SendGrid Pro and Premier level accounts have the ability to create subusers, but the number of potential subaccounts is initially capped at 15.
+All SendGrid Pro and Premier level accounts have the ability to create subusers, but the number of potential subaccounts is initially capped at 15. 
 
-If your use case requires more than 15 subaccounts, we can expand that
-number with compliance with our [OEM Terms and Conditions](https://sendgrid.com/policies/tos/) (Section 24 of our Terms of Service).
+To become a SendGrid OEM customer, please [fill out this form](https://sendgrid.com/contact-us-form/) to contact our Customer Success team.
 
-To become a SendGrid OEM customer, please contact our Customer Success team at [customersuccess@sendgrid.com](mailto:customersuccess@sendgrid.com).
-
-*NOTE:* _Once you are an OEM customer, you are responsible for the sending practices of your customers using the SendGrid service on your account. This also applies to mitigations, content, delisting requests, support, and education for your clients. If you engage in direct sending of emails to your customers (as permitted by the OEM Agreement), you will also be responsible for your content and sending/data collection practices._
+*NOTE:* _You are responsible for the sending practices of your customers using the SendGrid service on your account. This also applies to mitigations, content, delisting requests, support, and education for your clients. If you engage in direct sending of emails to your customers, you will also be responsible for your content and sending/data collection practices._

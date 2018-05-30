@@ -17,7 +17,7 @@ curl --request POST \
   --url https://api.sendgrid.com/v3/mail/send \
   --header 'Authorization: Bearer YOUR_API_KEY' \
   --header 'Content-Type: application/json' \
-  --data '{"personalizations": [{"to": [{"email": "your.email@example.com"}]}],"from": {"email": "example@example.com"},"subject": "Hello, World!","content": [{"type": "text/plain", "value": "Heya!"}]}'
+  --data '{"personalizations": [{"to": [{"email": "example@example.com"}]}],"from": {"email": "example@example.com"},"subject": "Hello, World!","content": [{"type": "text/plain", "value": "Heya!"}]}'
 {% endcodeblock %}
 
 {% info %}
@@ -45,7 +45,9 @@ Every API request you make to the Web API v3 must be authenticated by including 
 
 ###[Requests]({{root_url}}/API_Reference/Web_API_v3/How_To_Use_The_Web_API_v3/requests.html)
 
-All requests to the Web API v3 must be made via HTTPS. The Web API v3 is completely RESTful and accepts GET, POST, PUT, and DELETE requests, depending on the resource.
+All requests to the Web API v3 must be made via HTTPS. It is a best practice to include the `Content-Type: application/json` header in all of your requests.
+
+The Web API v3 is completely RESTful and accepts GET, POST, PUT, and DELETE requests, depending on the resource.
 
 {% codeblock lang:http %}
 POST https://api.sendgrid.com/v3/templates/ HTTP/1.1

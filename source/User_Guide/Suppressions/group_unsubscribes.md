@@ -10,7 +10,7 @@ navigation:
   show: true
 ---
 
-A group unsubscribe happens when a recipient indicates that they would like to opt out from a specific type of email that you send via the [Unsubscribe Groups link]({{root_url}}/User_Guide/Suppressions/group_unsubscribes.html#-Group-Unsubscribe-Substitution-Tag) from within your email.  The list provided here can be filtered by email address or date.
+A group unsubscribe happens when a recipient indicates that they would like to opt out from a specific type of email that you send via the [Unsubscribe Groups link]({{root_url}}/User_Guide/Suppressions/group_unsubscribes.html#-Group-Unsubscribe-Substitution-Tag) from within your email. The list provided here can be filtered by email address or date.
 
 {% anchor h2 %}
 Searching Group Unsubscribes by Date
@@ -47,7 +47,9 @@ Using the API
 You can manage your Global Unsubscribes via the [Group Suppressions API]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/groups.html).
 
 {% anchor h2 %}
-Related
+Additional Resources
 {% endanchor %}
 
-[Global unsubscribes vs. Group Unsubscribes]({{root_url}}/User_Guide/Email_Deliverability/Subscription_Tracking/suppressions_vs_unsubscribes.html).
+- [Global unsubscribes vs. Group Unsubscribes]({{root_url}}/User_Guide/Email_Deliverability/Subscription_Tracking/suppressions_vs_unsubscribes.html)
+- [Global Unsubscribes]({{root_url}}/User_Guide/Suppressions/global_unsubscribes.html)
+- [Invalid Emails]({{root_url}}/User_Guide/Suppressions/invalid_emails.html)

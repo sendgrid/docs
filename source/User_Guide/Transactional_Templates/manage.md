@@ -21,7 +21,7 @@ When viewing your transactional templates, you may choose to display, or hide, a
 
 {% anchor h2 %}
 Managing Templates
-{% endanchor %}
+{% endanchor h2 %}
 
 <div class="row">
   <div class="col-md-6">
@@ -40,3 +40,11 @@ You will also see a gear icon for each template version. Clicking this presents 
 {% info %}
 To delete a template, you must first delete all the versions of your template.
 {% endinfo %}
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor h2 %}
+
+- [Transactional Templates Overview](https://sendgrid.com/docs/User_Guide/Transactional_Templates/index.html)
+- [Create and Edit Templates](https://sendgrid.com/docs/User_Guide/Transactional_Templates/create_edit.html)
+- [Transactional Email](https://sendgrid.com/docs/User_Guide/Transactional_Email/index.html)

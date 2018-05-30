@@ -13,7 +13,7 @@ navigation:
   show: true
 ---
 
-When you sign up for a SendGrid account, there are a few steps that our users must complete before they can start using their accounts fully. You will have either one, two, or three seperate steps to complete before you fully unlock the credit limits available to your chosen plan level. We require these steps for your security, as well as to help you get started more quickly! 
+When you sign up for a SendGrid account, there are a few steps that our users must complete before they can start using their accounts fully. You will have either one, two, or three separate steps to complete before you fully unlock the credit limits available to your chosen plan level. We require these steps for your security, as well as to help you get started more quickly! 
 
 
 {% anchor h3 %}How long does the verification process take?{% endanchor %}
@@ -26,7 +26,7 @@ You will either have to verify your email address, set up two-factor authenticat
 
 {% anchor h3 %}Can I send email right away?{% endanchor %}
 
-Yes, you can send up to 100 emails per day even when your account is in a pre-verified state.  
+Yes, you can send up to 100 emails per day even when your account is in a pre-verified state. 
 
 {% anchor h3 %}Can I skip a verification step?{% endanchor %} 
 
@@ -34,7 +34,7 @@ Unfortunately you cannot skip a verification step, we require our users to compl
 
 {% anchor h3 %}Why do I only have 100 credits a day?{% endanchor %} 
 
-You have either not yet completed the verification steps for your account, or your 30 day trail period has expired. Either complete the verification steps, or [upgrade your account](https://app.sendgrid.com/settings/billing) to send more email.
+You have either not yet completed the verification steps for your account, or your 30 day trial period has expired. Either complete the verification steps, or [upgrade your account](https://app.sendgrid.com/settings/billing) to send more email.
 
 {% anchor h3 %}Why don't I have all the credits available on my paid plan?{% endanchor %}
 

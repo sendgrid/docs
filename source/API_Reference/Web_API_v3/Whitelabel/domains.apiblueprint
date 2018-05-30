@@ -15,8 +15,8 @@ FORMAT: 1A
 # Group Domain Whitelabels
 
 A domain whitelabel consists of a subdomain and domain that will be used to set the appropriate DKIM, SPF, and Return-Path.
-There is an option to allow SendGrid to manage security or the customers may manage their own DNS records.  For customers using the manual
-security option, they will need to create the appropriate MX, DKIM, and SPF records with their hosting provider.  With automatic security,
+There is an option to allow SendGrid to manage security or the customers may manage their own DNS records. For customers using the manual
+security option, they will need to create the appropriate MX, DKIM, and SPF records with their hosting provider. With automatic security,
 the customer will just need to create a few CNAMEs to SendGrid, and SendGrid will manage the MX, DKIM and SPF records.
 
 
@@ -120,8 +120,12 @@ the customer will just need to create a few CNAMEs to SendGrid, and SendGrid wil
     + subdomain news (required, string) - Subdomain being whitelabeled.
     + automatic_security false (optional, boolean) - Whether to allow SendGrid to manage your SPF records, DKIM keys, and DKIM key rotation.
     + ips ["192.168.1.1"] (optional, array[string]) - Specify IPs to be used in your SPF record.
-    + custom_spf true (optional, boolean) - Specify whether to use a custom spf or allow SendGrid to manage your SPF.  This option is only available to domain whitelabels setup for manual security.
+    + custom_spf true (optional, boolean) - Specify whether to use a custom spf or allow SendGrid to manage your SPF. This option is only available to domain whitelabels setup for manual security.
     + default false (optional, boolean) - Whether to use this whitelabel as the fallback if no domain whitelabels match the sender's domain.
+
+{% info %}
+You may create up to a maximum of 1500 domain whitelabels.
+{% endinfo %}
 
 + Request (application/json)
 
@@ -231,8 +235,8 @@ the customer will just need to create a few CNAMEs to SendGrid, and SendGrid wil
 ### Update a Domain [PATCH]
 
 + Attributes
-    + default false (optional, boolean) - Inidcates whether this domain whitelabel should be considered the default.  Defaults to false.
-    + custom_spf false (optional, boolean) - Indicates whether to generate a custom SPF record for manual security.  Defaults to false.
+    + default false (optional, boolean) - Indicates whether this domain whitelabel should be considered the default. Defaults to false.
+    + custom_spf false (optional, boolean) - Indicates whether to generate a custom SPF record for manual security. Defaults to false.
 
 + Request (application/json)
 
@@ -465,7 +469,7 @@ the customer will just need to create a few CNAMEs to SendGrid, and SendGrid wil
         {
           "id": 1,
           "valid": true,
-          "validation_resuts": {
+          "validation_results": {
             "mail_cname": {
                 "valid": false,
                 "reason": "Expected your MX record to be \"mx.sendgrid.net\" but found \"example.com\"."
@@ -494,9 +498,9 @@ the customer will just need to create a few CNAMEs to SendGrid, and SendGrid wil
 
 ## Associated Domain [/whitelabel/domains/subuser?username={username}]
 
-Domain Whitelabels can be associated with subusers via parent accounts.  This functionality allows
-subusers to send mail off their parent's Whitelabels.  To associate a Whitelabel, the parent account
-must first create a Whitelabel and validate it.  Then the parent may associate the Whitelabel in
+Domain Whitelabels can be associated with subusers via parent accounts. This functionality allows
+subusers to send mail off their parent's Whitelabels. To associate a Whitelabel, the parent account
+must first create a Whitelabel and validate it. Then the parent may associate the Whitelabel in
 subuser management.
 
 
@@ -563,14 +567,14 @@ subuser management.
 ### Associate Domain [POST]
 
 + Attributes
-    + username jane@example.com (required, string) - Username to associate with the domain whitelabel.
+    + username janeexampexample@example.com (required, string) - Username to associate with the domain whitelabel.
 
 
 + Request
 
   + Body
         {
-            "username": "jane@example.com"
+            "username": "janeexampexample@example.com"
         }
 
 + Response 201 (application/json)

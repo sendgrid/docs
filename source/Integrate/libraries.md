@@ -13,7 +13,7 @@ navigation:
 These libraries allow quick integration between SendGrid and your project, and are available for a variety of languages and frameworks.
 
 {% anchor h2 %}
-Official libraries 
+Official libraries
 {% endanchor %}
 
 SendGrid maintains the following official libraries for mail sending.
@@ -41,21 +41,21 @@ The following official library is maintained by SendGrid to use the [Event Webho
 -   [EventKit](https://github.com/sendgrid/eventkit-rails) *by SendGrid* - An app to consume and store SendGrid Events.
 
 {% info %}
-If you find a problem with any of the official libraries please submit issues on their respective GitHub projects and we'll address them ASAP 
+If you find a problem with any of the official libraries please submit issues on their respective GitHub projects and we'll address them ASAP
 {% endinfo %}
 
 {% anchor h2 %}
-Community libraries 
+Community libraries
 {% endanchor %}
 
 Open source library contributions from the awesome SendGrid community.
 
 {% info %}
-If you create a library, please let us know, by editing this page [in our github repo](https://github.com/sendgrid/docs/blob/develop/source/{{page.path}}). 
+If you create a library, please let us know, by editing this page [in our github repo](https://github.com/sendgrid/docs/blob/develop/source/{{page.path}}).
 {% endinfo %}
 
 {% anchor h2 %}
-Web API Libraries 
+Web API Libraries
 {% endanchor %}
 
 {% anchor h3 %}
@@ -63,6 +63,9 @@ Web API Libraries
 {% endanchor %}
 
 -   [StrongGrid](https://github.com/Jericho/StrongGrid) *by Jeremie Desautels* - Strongly typed library (no dynamic types!) for working with SendGrid's v3 API. Available as a [nuget package](https://www.nuget.org/packages/StrongGrid/). This library also includes a parser for Events and Inbounce Email webhooks.
+-   [MinimalSendGrid](https://github.com/TanukiSharp/MinimalSendGrid) *by Sebastien Robert* - Minimal implementation of the SendGrid HTTP v3 API to send emails, compatible with .NET Standard 1.0
+-   [SendGridSharp](https://github.com/shibayan/SendGridSharp) *by Tatsuro Shibamura* - SendGrid Client for C# (.NET 4.5) Simple interface, support to the new API, there is a feature that is not dependent on the System.Net.Mail.
+
 
 {% anchor h3 %}
 Universal
@@ -78,7 +81,13 @@ Android
 -   [sendgrid-android](https://github.com/danysantiago/sendgrid-android) - The Android library for SendGrid by [DannySantiago](https://github.com/danysantiago)
 
 {% anchor h3 %}
-Command Line 
+ColdFusion
+{% endanchor %}
+
+-   [sendgrid.cfc](https://github.com/mjclemente/sendgrid.cfc) - *by Matthew Clemente* - A CFML wrapper for the SendGrid API
+
+{% anchor h3 %}
+Command Line
 {% endanchor %}
 
 -   [cmdgrid](http://github.com/martyndavies/cmdgrid) *by Martyn Davies* - CLI for working with SendGrid's Parse API
@@ -86,20 +95,26 @@ Command Line
 -   [sg](http://github.com/awwa/sg) *by Wataru Sato* - CLI for all SendGrid v3 endpoints.
 
 {% anchor h3 %}
-Elixir 
+Elixir
 {% endanchor %}
 
 -   [sendgrid_elixir](http://github.com/alexgaribay/sendgrid_elixir) *by Alex Garibay* - Elixir package for sending SendGrid transactional emails
 -   [sendgrid_elixir](https://github.com/thoughtbot/bamboo) *by Thoughtbot* - Elixir emailing package, with SendGrid adapter
 
 {% anchor h3 %}
-Groovy 
+Groovy
 {% endanchor %}
 
 -   [grails-sendgrid](http://github.com/aiten/grails-sendgrid) *by Antony Jones* - Grails framework plugin
 
 {% anchor h3 %}
-Java 
+Haskell
+{% endanchor %}
+
+-   [sendgrid-v3](https://github.com/marcelbuesing/sendgrid-v3) *by Marcel Buesing* - Haskell package for sending Mails via the SendGrid v3 Mail API
+
+{% anchor h3 %}
+Java
 {% endanchor %}
 
 -   [sendgrid-google-java](https://github.com/sendgrid/sendgrid-google-java) *by SendGrid* - Java library for use with Google App Engine
@@ -110,26 +125,27 @@ Java
 JavaScript / Node.js
 {% endanchor %}
 
--   [sendgrid-mailer](https://www.npmjs.com/package/sendgrid-mailer) *by Adam Reis* - A simple wrapper around the official SendGrid library to make sending emails easy.
--   [node-sendgrid-web](http://github.com/jesusabdullah/node-sendgrid-web) *by Joshua Holbrook* - Send emails via SendGrid using the JSON web API and the request module.
+-   [sendgrid-mailer](https://github.com/adamreisnz) *by Adam Reis* - JavaScript wrapper for the the official Sendgrid library.
 -   [node-sendgrid](https://github.com/HerdHound/node-sendgrid) *by Branko Vukelick* - Generate X-SMTPAPI headers in node.js.
 -   [node_subscription_widget](https://github.com/devchas/sendgrid_subscription_widget) *by Devin Chasanoff* - General purpose subscription widget created in node.js
+-   [loopback-sendgrid-connector](https://github.com/VMois/loopback-sendgrid-connector) *by Vladyslav Moisieienkov* - Simple Loopback connector for SendGrid Mail Service
+-   [sts-sendgrid](https://github.com/oritpersik) *by Orit Persik* - Easily use the SendGrid Web API via Node.js.
 
 {% anchor h3 %}
-Meteor 
+Meteor
 {% endanchor %}
 
 -   [meteor-sendgrid](https://github.com/DavidBrear/meteor-sendgrid) *by David Brear* - Meteorite package for SendGrid API
 
 {% anchor h3 %}
-Perl 
+Perl
 {% endanchor %}
 
 -   [sendgrid-perl](http://github.com/sendgrid/sendgrid-perl) *by SendGrid* -  Perl library for the SendGrid API
 -   [WebService--SendGrid](http://github.com/majrmovies/WebService--SendGrid) *by Jonathan Lloyd* - Perl interface for SendGrid API
 
 {% anchor h3 %}
-PHP 
+PHP
 {% endanchor %}
 
 -   [sendgrid-openshift-php](https://github.com/sendgrid/openshift-sendgrid-php) *by SendGrid* - Official PHP wrapper for use with Red Hat OpenShift
@@ -140,19 +156,23 @@ PHP
 -   [codeigniter-sendgrid-mail](http://github.com/bold/codeigniter-sendgrid-mail) *by Garrett St John* - CodeIgniter wrapper for the SendGrid Mail API
 -   [sendgrid-component](http://github.com/damusnet/sendgrid-component) *by Damien Varron* - CakePHP component that extends the base email component with SendGrid functionality
 -   [sendgrid-subuser-api](https://github.com/eliksir/sendgrid-subuser-api) *by Eliksir* - Library that makes it easy to work with the SendGrid Subuser API
--   [sendgrid-webapi-v3-php](https://github.com/idimensionz/sendgrid-webapi-v3-php) *by iDimensionz* - A complete implementation of the V3 WebAPI in PHP.  Very structured, OO implementation with excellent test coverage.  A repo containing examples showing how simple it is to utilize our implementation is available at [example](https://github.com/idimensionz/sendgrid-webapi-v3-examples).
+-   [sendgrid-webapi-v3-php](https://github.com/idimensionz/sendgrid-webapi-v3-php) *by iDimensionz* - A complete implementation of the V3 WebAPI in PHP. Very structured, OO implementation with excellent test coverage. A repo containing examples showing how simple it is to utilize our implementation is available at [example](https://github.com/idimensionz/sendgrid-webapi-v3-examples).
 -   [laravel-sendgrid-driver](https://github.com/s-ichikawa/laravel-sendgrid-driver) *by Shingo Ichikawa* - This liblary can add sendgrid driver into the laravel's mail configure.
+-   [godpod/sendgrid](https://packagist.org/packages/godpod/sendgrid) *by Ravi Rajendra* - This library allows you to quickly and easily send emails or make api calls through SendGrid using PHP.
+-   [fastglass/sendgrid](https://github.com/taz77) *by taz77* - This library allows you to send emails through SendGrid using PHP and Guzzle 6.x.
 
 {% anchor h3 %}
-Python 
+Python
 {% endanchor %}
 
 -   [greplin-tornado-sendgrid](https://github.com/Cue/greplin-tornado-sendgrid) *by Daniel Gross* - SendGrid client for Tornado Web Server
--   [django-sendgrid](https://github.com/RyanBalfanz/django-sendgrid) *by Ryan Balfanz* - SendGrid SMTP API interface for Django
+-   [django-sendgrid-v5](https://github.com/sklarsa/django-sendgrid-v5/) *by Steven Sklar* - SendGrid Web API Email Backend for Django
 -   [sendgrid-django](https://github.com/elbuo8/sendgrid-django) *by Yamil Asusta* - SendGrid Web API interface for Django
+-   [Flask-SendGrid](https://github.com/frankV/flask-sendgrid) *by Frank Valcarcel* - SendGrid SMTP API interface for Flask
+-   [aiohttp-sendgrid](https://github.com/Kurlov/aiohttp-sendgrid) *by Aleksandr Kurlov* - SendGrid SMTP API interface for aiohttp
 
 {% anchor h3 %}
-Ruby 
+Ruby
 {% endanchor %}
 
 -   [sendgrid](http://github.com/stephenb/sendgrid) *by Stephen Blankenship* - SendGrid rubygem (ActionMailer)
@@ -170,13 +190,13 @@ Rust
 
 
 {% anchor h3 %}
-Titanium 
+Titanium
 {% endanchor %}
 
 -   [ti.sendgrid](http://github.com/sendgrid/ti.sendgrid) - SendGrid Titanium wrapper
 
 {% anchor h2 %}
-Webhook Libraries 
+Webhook Libraries
 {% endanchor %}
 
 {% anchor h3 -C-sharp-webhooks %}
@@ -191,11 +211,30 @@ Python
 {% endanchor %}
 
 -   [Django eventhooks](https://github.com/agiliq/sendgrid-eventhooks) *by agiliq* - An app to consume and store SendGrid Events with Django
--   [Pyramid Webhooks](https://github.com/GoodRx/pyramid-sendgrid-webhooks) *by GoodRx* - Parses incoming Sendgrid Webhook events in Pyramid apps
+-   [Pyramid Webhooks](https://github.com/GoodRx/pyramid-sendgrid-webhooks) *by GoodRx* - Parses incoming SendGrid Webhook events in Pyramid apps
 
 {% anchor h3 -Ruby-Webhooks %}
-Ruby 
+Ruby
 {% endanchor %}
 -   [gridhook](https://github.com/injekt/gridhook) *by Lee Jarvis* - Ruby Gem for handling inbound batches from our Event API
 -   [griddler](https://github.com/thoughtbot/griddler-sendgrid) *by Thoughtbot* - Rails engine that provides an endpoint for SendGrid's Parse API
 -   [Pokey](https://github.com/ccallebs/pokey-sendgrid) *by Chuck Callebs* - Ruby Gem for simulating events to your code for QA or development environments
+
+{% anchor h2 %}
+Standard Drivers
+{% endanchor %}
+
+{% anchor h3 -ado-net %}
+ADO.NET Providers
+{% endanchor %}
+-    [CData ADO.NET Provider for SendGrid](http://www.cdata.com/drivers/sendgrid/ado) *by CData Software* - Fully-managed ADO.NET Provider with support for Entity Framework, ADO.NET 2.0, LINQ, and more. Use SendGrid Data Provider objects to connect and access data just as you would access any traditional database.
+
+{% anchor h3 -jdbc %}
+JDBC Drivers
+{% endanchor %}
+-    [CData JDBC Driver for SendGrid](http://www.cdata.com/drivers/sendgrid/jdbc) *by CData Software* - Pure Java Type 4/5 JDBC Driver with bi-directional access from Java/J2EE applications. Easily connect to live SendGrid data through any JDBC capable application or tool!
+
+{% anchor h3 -odbc %}
+ODBC Drivers
+{% endanchor %}
+-    [CData ODBC Driver for SendGrid](http://www.cdata.com/drivers/sendgrid/odbc) *by CData Software* - Unicode-enabled 32/64-bit ODBC 3.8 compliant Driver for Windows, Mac, & Linux. Access SendGrid the same way that you would connect to any other ODBC data source!

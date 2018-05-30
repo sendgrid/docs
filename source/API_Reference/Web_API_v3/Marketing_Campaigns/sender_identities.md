@@ -21,6 +21,8 @@ Create a Sender Identity [POST]
 
 This endpoint allows you to create a sender identity.
 
+{% info %} You may create up to 100 unique sender identities.{% endinfo %}
+
 Sender Identities are required to be verified before use. If your domain has been whitelabeled it will auto verify on creation. Otherwise an email will be sent to the  `from.email`.
 
 {% apiv3example post POST https://api.sendgrid.com/v3/senders %}
@@ -32,7 +34,7 @@ Sender Identities are required to be verified before use. If your domain has bee
     "name": "Example INC"
   },
   "reply_to": {
-    "email": "replyto@example.com",
+    "email": "example@example.com",
     "name": "Example INC"
   },
   "address": "123 Elm St.",
@@ -53,7 +55,7 @@ Sender Identities are required to be verified before use. If your domain has bee
     "name": "Example INC"
   },
   "reply_to": {
-    "email": "replyto@example.com",
+    "email": "example@example.com",
     "name": "Example INC"
   },
   "address": "123 Elm St.",
@@ -88,7 +90,7 @@ This endpoint allows you to retrieve a list of all of your sender identities.
         "name": "Example INC"
       },
       "reply_to": {
-        "email": "replyto@example.com",
+        "email": "example@example.com",
         "name": "Example INC"
       },
       "address": "123 Elm St.",
@@ -125,7 +127,7 @@ Partial updates are allowed, but fields that are marked as "required" in the POS
     "name": "Example INC"
   },
   "reply_to": {
-    "email": "replyto@example.com",
+    "email": "example@example.com",
     "name": "Example INC"
   },
   "address": "123 Elm St.",
@@ -146,7 +148,7 @@ Partial updates are allowed, but fields that are marked as "required" in the POS
     "name": "Example INC"
   },
   "reply_to": {
-    "email": "replyto@example.com",
+    "email": "example@example.com",
     "name": "Example INC"
   },
   "address": "123 Elm St.",
@@ -206,7 +208,7 @@ This endoint allows you to retrieve a specific sender identity.
     "name": "Example INC"
   },
   "reply_to": {
-    "email": "replyto@example.com",
+    "email": "example@example.com",
     "name": "Example INC"
   },
   "address": "123 Elm St.",

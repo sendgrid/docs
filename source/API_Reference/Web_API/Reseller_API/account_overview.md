@@ -14,8 +14,11 @@ View general account information regarding your customers, including billing cyc
  {% parameter 'user' 'Yes' 'Customer that is registered under your account.' 'The customer' %}
 {% endparameters %}
 
+{% info %}
+These are Reseller Only APIs. For more information, see [Reseller Overview](https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/index.html).
+{% endinfo %}
 
-{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=overview&user=customer@example.com %}
+{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.account api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=overview&user=eexampexample@example.com %}
   {% response json %}
 {
   "reputation": "100",

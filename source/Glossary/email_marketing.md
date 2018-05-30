@@ -27,11 +27,11 @@ Following email best practices in your marketing emails can yield great rewards 
 SendGrid can help you achieve your email marketing goals with our [Marketing Email Service]({{site.site_url}}/solutions/email-marketing). This service provides the following and much more:
 
 * [Pre-designed email templates]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html)
-* [Drag and drop editor]({{root_url}}/User_Guide/Marketing_Campaigns/drag_drop.html)
+* [Importing Custom HTML With Drag & Drop Markup]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Importing-Custom-HTML-With-Drag-&-Drop-Markup)
 * [Ability to use your own HTML]({{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html)
 * [Scheduled Marketing campaigns delivery]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html)
 * [Powerful analytics]({{root_url}}/User_Guide/Statistics/index.html)
 * [A/B testing]({{root_url}}/User_Guide/Marketing_Campaigns/a_b_testing.html)
-* [List Segmentation]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html)
+* [List Segmentation]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html)
 
 This level of visibility into your email marketing performance is invaluable when it comes to determining what resonates best with your audience. Overall, the key to a successful email marketing is that it drives an action. You should strive to provide relevant content by using segmentation strategies to tailor your communications. This is best achieved by testing your design, content, and offers to determine what resonates best with your subscribers.

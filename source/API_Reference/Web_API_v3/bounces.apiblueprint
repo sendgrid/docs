@@ -18,6 +18,8 @@ FORMAT: 1A
 
     + start_time (optional, number, `1443651141`) ... Refers start of the time range in unix timestamp when a bounce was created (inclusive).
     + end_time (optional, number, `1443651154`) ... Refers end of the time range in unix timestamp when a bounce was created (inclusive).
+    + limit (optional, number Some integer <= 500) ... Optional field to limit the number of results returned. If not used, then 500 is the default limit.
+    + offset (optional, number Some integer) ... Optional beginning point in the list to retrieve from.
 
 ### List all bounces [GET]
 
@@ -42,9 +44,9 @@ FORMAT: 1A
 
 ## Bounces Collection [/suppression/bounces]
 
-There're two bounce delete options:
+There are two bounce delete options:
 1) deleting all bounces by specifying "delete_all" to true in the request body, or
-2) deleteing some emails by specificy "emails" and an array of emails in the request body.
+2) deleting some bounces by specifying "emails" and an array of emails in the request body.
 
 ### Delete bounces [DELETE]
 

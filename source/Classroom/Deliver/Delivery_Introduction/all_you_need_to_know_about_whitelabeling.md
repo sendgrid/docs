@@ -25,7 +25,7 @@ These records all work in tandem in order to remove SendGrid as the message sign
 **The Records**  
 To complete the whitelabeling process, you will need to create DNS records within your domain's DNS settings.
 
-# **1.  [SPF Record](http://en.wikipedia.org/wiki/Sender_Policy_Framework) (Sender Policy Framework)**
+# **1. [SPF Record](http://en.wikipedia.org/wiki/Sender_Policy_Framework) (Sender Policy Framework)**
 
 What it should look like:
 
@@ -66,4 +66,4 @@ All of the DNS records are created within the Settings > Whitelabels within your
 
 After those records have become public facing you will be able to verify them within the Whitelabel settings section of your SendGrid account. If you notice that any records are not validating after you have added them to your DNS settings then it means that either the record was improperly configured or it has not become public yet. For more help with validating your whitelabel DNS records, see [here]({{root_url}}/Classroom/Troubleshooting/Authentication/i_have_created_dns_records_but_the_whitelabel_wizard_is_not_validating_them.html).
 
-We understand that this process can be challenging, especially on the first attempt, so if you continue to have any questions or concerns about whitelabeling after taking a look at our other resources, please feel free to contact our support team. We’re here to help!
+We understand that this process can be challenging, especially on the first attempt, so if you continue to have any questions or concerns about whitelabeling after taking a look at our other resources, please feel free to [contact support](https://support.sendgrid.com). We’re here to help!

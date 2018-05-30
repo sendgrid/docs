@@ -10,13 +10,13 @@ navigation:
   show: true
 ---
 
-This extension allows you to configure Magento 2.0 to send all emails using SendGrid. To get started, [click here](https://www.magentocommerce.com/magento-connect/sendgrid-email-delivery-1.html)!
+This extension allows you to configure Magento 2.0 to send all emails using SendGrid. To get started, [click here](https://marketplace.magento.com/sendgrid-email-delivery-simplified.html)!
 
 {% anchor h2 %}
 Description
 {% endanchor %}
 
-The official SendGrid extension for Magento 2.0 makes it easy to ensure delivery of your most important transactional emails.  Purchase receipts, shipping confirmations, and password reset emails are at the core of how you engage with your customers, helping to fuel your store’s growth.  Email delivery is our passion. Entrust our industry-leading email delivery platform, including world-class deliverability tools and expertise to make sure your transactional emails get to the inbox.
+The official SendGrid extension for Magento 2.0 makes it easy to ensure delivery of your most important transactional emails. Purchase receipts, shipping confirmations, and password reset emails are at the core of how you engage with your customers, helping to fuel your store’s growth. Email delivery is our passion. Entrust our industry-leading email delivery platform, including world-class deliverability tools and expertise to make sure your transactional emails get to the inbox.
 
 Transactional email is an important component of any email communication strategy. SendGrid relieves businesses of the cost and complexity of maintaining custom email systems. SendGrid provides reliable delivery, scalability and real-time analytics along with flexible APIs that make custom integration a breeze. SendGrid for Magento 2.0 allows you to choose between the SMTP relay or the Email API to send outgoing emails from your Magento installation.
 

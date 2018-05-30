@@ -32,7 +32,7 @@ Global Unsubscribes are email addresses that will not receive any emails.
                     },
                     {
                         "created": 1443651154,
-                        "email": "user2@example.com"
+                        "email": "exampexample@example.comom"
                     }
                 ]
 
@@ -80,5 +80,39 @@ If the email address does not belongs to the Global Unsubscribes collection:
                 { }
 
 ### Remove an email address from the Global Unsubscribes collection [DELETE]
+
++ Response 204 (application/json)
+
+## Global Unsubscribes Collection [/suppression/unsubscribe]
+
+### Remove multiple email addresses from the Global Unsubscribes collection [DELETE]
+
+{%info%}
+Maximum of 500 addresses in the `emails` Array.
+{%endinfo%}
+
++ Request (application/json)
+
+    + Body
+
+                {
+                  "emails": [
+                    "test1@example.com",
+                    "test2@example.com"
+                  ]
+                }
+
++ Response 204 (application/json)
+
+## Global Unsubscribes Collection [/suppression/unsubscribe]
+
+### Remove all email addresses from the Global Unsubscribes collection [DELETE]
++ Request (application/json)
+
+    + Body
+
+                {
+                  "delete_all": true
+                }
 
 + Response 204 (application/json)

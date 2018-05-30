@@ -160,7 +160,7 @@ Create a Customer
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.add.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=newcustomer@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=newcustomer@example.com&country=US&phone=555-555&free_user=tru
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=neweexampexample@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=neweexampexample@example.com&country=US&phone=555-555&free_user=tru
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -199,7 +199,7 @@ Create a Customer
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.add.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=newcustomer@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=newcustomer@example.com&country=US&phone=555-55
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&username=neweexampexample@example.com&website=example.com&password=samplepassword&confirm_password=samplepassword&first_name=fname&last_name=lname&address=555_anystreet&city=any_city&state=CA&zip=91234&email=neweexampexample@example.com&country=US&phone=555-55
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -259,7 +259,7 @@ This is the same thing as closing out a customers account at the end of their bi
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.delete.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=customer@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=eexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -298,7 +298,7 @@ This is the same thing as closing out a customers account at the end of their bi
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.delete.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=customer@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=eexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -500,7 +500,7 @@ Enable a customer so they may start sending out emails again. This call will not
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=enable&user=customer@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=enable&user=eexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -534,7 +534,7 @@ Enable a customer so they may start sending out emails again. This call will not
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=enable&user=customer@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=enable&user=eexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -598,7 +598,7 @@ This prevents them from sending out emails with SendGrid.
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=disable&user=customer@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=disable&user=eexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -696,7 +696,7 @@ Allow a customer to login to the SendGrid.com website. This call will not enable
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_enable&user=customer@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_enable&user=eexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -730,7 +730,7 @@ Allow a customer to login to the SendGrid.com website. This call will not enable
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_enable&user=customer@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_enable&user=eexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -794,7 +794,7 @@ Disallow a customer to login to the SendGrid.com website. This call will not pre
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_disable&user=customer@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=website_disable&user=eexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -948,7 +948,7 @@ Allows you to update your customers profile information
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=set&user=customer@example.com&first_name=newFirstName&last_name=&newLastNam
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=set&user=eexampexample@example.com&first_name=newFirstName&last_name=&newLastNam
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -987,7 +987,7 @@ Allows you to update your customers profile information
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=set&user=customer@example.com&first_name=newFirstName&last_name=&newLastNam
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=set&user=eexampexample@example.com&first_name=newFirstName&last_name=&newLastNam
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -1066,7 +1066,7 @@ Passwords are encrypted by default and therefore cannot be retrieved; however, y
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=password&user=customer@example.com&password=newPasword&confirm_password=newPasswor
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=password&user=eexampexample@example.com&password=newPasword&confirm_password=newPasswor
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -1105,7 +1105,7 @@ Passwords are encrypted by default and therefore cannot be retrieved; however, y
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=password&user=customer@example.com&password=newPasword&confirm_password=newPasswor
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=password&user=eexampexample@example.com&password=newPasword&confirm_password=newPasswor
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -1195,7 +1195,7 @@ Note that your customer account username is used to login to our SMTP server *an
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setUsername&user=customer@example.com&username=newcustomer@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setUsername&user=eexampexample@example.com&username=neweexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -1234,7 +1234,7 @@ Note that your customer account username is used to login to our SMTP server *an
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setUsername&user=customer@example.com&username=newcustomer@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setUsername&user=eexampexample@example.com&username=neweexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -1316,7 +1316,7 @@ This is the contact email we use for your customers. Changes take place immediat
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setEmail&user=customer@example.com&email=newcustomer@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setEmail&user=eexampexample@example.com&email=neweexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -1355,7 +1355,7 @@ This is the contact email we use for your customers. Changes take place immediat
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setEmail&user=customer@example.com&email=newcustomer@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=profile&task=setEmail&user=eexampexample@example.com&email=neweexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}

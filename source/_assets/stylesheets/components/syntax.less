@@ -1,32 +1,4 @@
 .code-wrapper, #overlay {
-	.code-buttons {
-		margin-top: 36px;
-	  > .nav-tabs {
-	    border-bottom: 0px;
-	    &:first-child {
-	    	margin-right: -2px;
-	    }
-	    > li > .code-button {
-	      padding-top: 7px;
-	      padding-bottom: 5px;
-	      border: 1px solid @gray;
-	      background-color: @gray-light;
-	      font-size: 12px;
-	      color: rgb(0,112,205);
-	      font-weight: 300;
-	      text-transform: none;
-	      letter-spacing: 0;
-	      &:hover, &:active, &:focus {
-	        cursor: pointer;
-	        background-color: @gray-light;
-	      }
-	    }
-	    i {
-	      margin-right: 4px;
-	    }
-	  }
-	}
-
 	figure.code {
 		margin-bottom: 36px;
 		border-radius: 0 2px 2px 0;
@@ -353,20 +325,6 @@
 	figure.code pre, figure.code .highlight {
 		margin-bottom: 0;
 	}
-}
-
-#overlay .copycode {
-	display: none;
-}
-
-#copy-prompt {
-	position: absolute;
-	color: #fff;
-	background-color: rgba(0,0,0,.6);
-	font-size: 20px;
-	border-radius: 10px;
-	padding: 15px;
-	margin-top: 20px;
 }
 
 code.wrap, code.requestdata {

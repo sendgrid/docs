@@ -30,7 +30,7 @@ $this->email->initialize(array(
 ));
 
 $this->email->from('your@example.com', 'Your Name');
-$this->email->to('someone@example.com');
+$this->email->to('someoneexampexample@example.com');
 $this->email->cc('another@another-example.com');
 $this->email->bcc('them@their-example.com');
 $this->email->subject('Email Test');

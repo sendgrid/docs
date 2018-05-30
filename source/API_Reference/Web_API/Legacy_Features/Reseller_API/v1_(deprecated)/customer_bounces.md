@@ -68,7 +68,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 ### Call
 
 {% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=bounces&amp;user=customer@example.com&amp;task=get&amp;date=
+https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=bounces&amp;user=eexampexample@example.com&amp;task=get&amp;date=
 {% endcodeblock %}
 <h3>Response</h3>
 {% codeblock lang:xml %}
@@ -76,15 +76,15 @@ https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_userna
 
 <bounces>
    <bounce>
-      <email>email1@domain.com</email>
+      <email>emaieexampexample@example.com</email>
       <status>5.1.1</status>
-      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com</reason>
+      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: emaieexampexample@example.com</reason>
       <created>2009-06-10 12:40:30</created>
    </bounce>
    <bounce>
-      <email>email2@domain2.com</email>
+      <email>emaileexampexample@example.com</email>
       <status>5.1.1</status>
-      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com</reason>
+      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: emaileexampexample@example.com</reason>
       <created>2009-06-10 12:40:30</created>
    </bounce>
 </bounces>
@@ -96,22 +96,22 @@ https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_userna
 ### Call
 
 {% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=bounces&amp;user=customer@example.com&amp;task=get&amp;date=
+https://api.sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=bounces&amp;user=eexampexample@example.com&amp;task=get&amp;date=
 {% endcodeblock %}
 <h3>Response</h3>
 
 {% codeblock lang:json %}
 [
   {
-    "email": "email1@domain.com",
+    "email": "emaieexampexample@example.com",
     "status": "5.1.1",
-    "reason": "host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com",
+    "reason": "host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: emaieexampexample@example.com",
     "created": "2009-06-01 19:41:39"
   },
   {
-    "email": "email2@domain2.com",
+    "email": "emaileexampexample@example.com",
     "status": "5.1.1",
-    "reason": "host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com",
+    "reason": "host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: emaileexampexample@example.com",
     "created": "2009-06-01 19:41:39"
   }
 ]
@@ -178,7 +178,7 @@ Since SendGrid does not re-deliver to bounced addresses, users can remove bounce
 ### Call
 
 {% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=bounces&amp;user=customer@example.com&amp;task=delete&amp;email=bounce@example.com
+https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=bounces&amp;user=eexampexample@example.com&amp;task=delete&amp;email=bounceexampexample@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 {% codeblock lang:xml %}
@@ -206,7 +206,7 @@ https://api.sendgrid.com/apiv2/reseller.manage.xml?api_user=your_sendgrid_userna
 ### Call
 
 {% codeblock %}
-https://api.sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=bounces&amp;user=customer@example.com&amp;task=delete&amp;email=bounce@example.com
+https://api.sendgrid.com/apiv2/reseller.manage.json?api_user=your_sendgrid_username&amp;api_key=your_sendgrid_password&amp;method=bounces&amp;user=eexampexample@example.com&amp;task=delete&amp;email=bounceexampexample@example.com
 {% endcodeblock %}
 <h3>Response: Success</h3>
 

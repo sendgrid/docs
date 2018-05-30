@@ -20,11 +20,11 @@ Retrieve Unsubscribes
   {% response json %}
 [
   {
-    "email": "email1@domain.com",
+    "email": "emaieexampexample@example.com",
     "created": "2009-06-01 19:41:39"
   },
   {
-    "email": "email2@domain2.com",
+    "email": "emaileexampexample@example.com",
     "created": "2009-06-01 19:41:39"
   }
 ]
@@ -32,11 +32,11 @@ Retrieve Unsubscribes
   {% response xml %}
 <unsubscribes>
    <unsubscribe>
-      <email>email1@domain.com</email>
+      <email>emaieexampexample@example.com</email>
       <created>2009-06-10 12:40:30</created>
    </unsubscribe>
    <unsubscribe>
-      <email>email2@domain2.com</email>
+      <email>emaileexampexample@example.com</email>
       <created>2009-06-10 12:40:30</created>
    </unsubscribe>
 </unsubscribes>
@@ -53,7 +53,7 @@ SendGrid suppresses messages to unsubscribed addresses, but entries can be remov
 
 {% parameters delete %}
  {% parameter task Yes 'Must be set to <code>delete</code>' 'Task to remove unsubscribed address from subuser' %}
- {% parameter user Yes 'Subuser must be under your account' 'Subuser to remove unsubsribed address from' %}
+ {% parameter user Yes 'Subuser must be under your account' 'Subuser to remove unsubscribed address from' %}
  {% parameter email Yes 'Address exists on the list' 'Address to remove from the Unsubscribe suppression list' %}
 {% endparameters %}
 

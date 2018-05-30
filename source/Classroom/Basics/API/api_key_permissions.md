@@ -40,6 +40,8 @@ How can I use API Key permissions?
 General API Keys
 {% endanchor h3 %}
 
+{% info %} There is a limit of 100 API Keys per account. {% endinfo %}
+
 To create a new General API Key and assign it permissions, first navigate to your Settings and select API Keys. This page displays your current API Keys. To create a new key, click the Create API Key button and select "General API Key".
 
 ![]({{root_url}}/images/select_general_api_key.png)
@@ -75,6 +77,8 @@ You will then be able to name your key and assign it permissions.
 
 ![]({{root_url}}/images/select_billing_api_key_permissions.png)
 
+{% info %} There is a limit of 100 API Keys per account. {% endinfo %}
+
 API Key permissions are not permanent and may be changed any time after the key has been created. Simply click the gear icon next to the API Key you would like to make changes to, and click "Edit Details".
 
 ![]({{root_url}}/images/editing_api_keys.png)
@@ -82,19 +86,10 @@ API Key permissions are not permanent and may be changed any time after the key 
 Several specific use cases for an API Key and the permissions that you might want to assign to that key, are described below. A complete list of all possible permissions scopes can be found [here]({{root_url}}/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html).
 
 {% anchor h3 %}
-Adding Additional API Key Permissons Not Listed In the User Interface
+Adding Additional API Key Permissions Not Listed In the User Interface
 {% endanchor h3 %}
 
 As it turns out, the [API Key Permissions List](https://sendgrid.com/docs/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html) contains more permissions that can be added to your API key than those listed when creating a new API key. Currently, when you create new key in the user interface and give it full access, it excludes additional permissions that can be added via an API call. The best way to see what permissions your API key has is by making [this call](https://sendgrid.com/docs/API_Reference/Web_API_v3/API_Keys/api_keys_permissions.html) using the same API key to make the request.
-
-For the user profile request you're attempting to make, you will need to make sure you have these permissions:
-
-{% codeblock %}
-"scopes": [
-  "user.account.read",
-  "user.profile.read"
-]
-{% endcodeblock %}
 
 To give your API key these extra permissions you will need to make [this request](https://sendgrid.com/docs/API_Reference/Web_API_v3/API_Keys/index.html#Update-the-name-amp-scopes-of-an-API-Key-PUT).
 
@@ -125,9 +120,9 @@ Example Permissions for Common API Key Use Cases
   <li><a href="#-Read-Only-Access-for-Suppressions">Suppressions: Read Only Access</a></li>
   <li><a href="#-Full-Access-for-Suppressions">Suppressions: Full Access</a></li>
   <li><a href="#-Read-Only-Access-for-Whitelabels">Whitelabels: Read Only Access</a></li>
-  <li><a href="#-Full-Access-for-Whitelables">Whitelabels: Full Access</a></li>
+  <li><a href="#-Full-Access-for-Whitelabels">Whitelabels: Full Access</a></li>
   <li><a href="#-Read-Only-Access-for-IP-Management">IP Management: Read Only Access</a></li>
-  <li><a href="#-Full-Access-for-IP-Manaagement">IP Management: Full Access</a></li>
+  <li><a href="#-Full-Access-for-IP-Management">IP Management: Full Access</a></li>
   <li><a href="#-Read-Only-Access-for-Templates">Templates: Read Only Access</a></li>
   <li><a href="#-Full-Access-for-Templates">Templates: Full Access</a></li>
   <li><a href="#-Read-Only-Access-for-Inbound-Parse">Inbound Parse: Read Only Access</a></li>
@@ -538,6 +533,10 @@ Below is a list of every scope included in an administrator level API Key.
   "suppression.unsubscribes.read",
   "suppression.unsubscribes.update",
   "suppression.update",
+  "teammates.create",
+  "teammates.delete",
+  "teammates.read",
+  "teammates.update",
   "templates.create",
   "templates.delete",
   "templates.read",
@@ -580,6 +579,7 @@ Below is a list of every scope included in an administrator level API Key.
   "user.settings.enforced_tls.read",
   "user.settings.enforced_tls.update",
   "user.timezone.read",
+  "user.timezone.update",
   "user.username.read",
   "user.username.update",
   "user.webhooks.event.settings.read",

@@ -16,18 +16,19 @@ Once logged in to your account, on the left side of your [SendGrid.com](https://
 []({{root_url}}/images/Screen_Shot_2015-05-20_at_3.32.24_PM.png)
 
 {% info %}
-Please note that the SendGrid Reputation does not necessarily represent your inboxing percentage at mailbox providers.
+Please note that the SendGrid Reputation does not represent your inboxing percentage at mailbox providers.
 {% endinfo %}
 
 **How is the SendGrid Reputation Calculated?**
 
 The SendGrid account reputation is computed based on a calculation of:
 
-- The percentage of requests that are able to be delivered out of the total amount requested (delivered / requests). This takes into account bounces, invalid emails, and drops (repeat bounces, unsubscribes, etc.) Please review our [Delivery Metrics](http://sendgrid.com/docs/Delivery_Metrics/index.html) article for more detail on these terms.
+- The percentage of requests that are able to be delivered out of the total amount requested (delivered / requests). This takes into account bounces, invalid emails, and drops (repeat bounces, unsubscribes, etc.) Please review our [Statistics](https://sendgrid.com/docs/User_Guide/Statistics/index.html) article for more detail on these terms.
+
 - Spam Reports. Each spam report is a user actively rejecting your mail, and has a strong negative affect.
 
 {% info %}
-You can increase the SendGrid reputation score by removing unengaged users and [dropped addresses}(https://sendgrid.com/docs/Classroom/Deliver/Undeliverable_Email/my_emails_are_being_dropped.html) from your lists before sending. Also be sure you are only sending to users who have opted in to receive your email to help prevent spam reports. 
+You can increase the SendGrid reputation score by removing unengaged users and [dropped addresses](https://sendgrid.com/docs/Classroom/Deliver/Undeliverable_Email/my_emails_are_being_dropped.html) from your lists before sending. Also be sure you are only sending to users who have opted in to receive your email to help prevent spam reports. 
 {% endinfo %}
 
 **The Effect of Reputation on your Account**

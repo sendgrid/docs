@@ -28,7 +28,7 @@ Retrieve a list of Unsubscribes with addresses and optionally with dates.
   {% response json %}
 [
   {
-    "email": "brandon.west@sendgrid.com",
+    "email": "example@example.com",
     "created": "2012-09-06 14:03:18"
   }
 ]
@@ -36,7 +36,7 @@ Retrieve a list of Unsubscribes with addresses and optionally with dates.
   {% response xml %}
 <unsubscribes>
    <unsubscribe>
-      <email>brandon.west@sendgrid.com</email>
+      <email>example@example.com</email>
       <created>2012-09-06 14:03:18</created>
    </unsubscribe>
 </unsubscribes>

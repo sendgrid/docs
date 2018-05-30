@@ -21,7 +21,7 @@ CORS implements headers in the response of any request to the server to say what
 Why can’t I send email in my browser application?
 {% endanchor %}
 
-When you have a browser-only application that reaches out to APIs, the API key has to be embedded in the application.  Anyone with access to a browser-only application can access all of the Javascript source code, including your API keys.
+When you have a browser-only application that reaches out to APIs, the API key has to be embedded in the application. Anyone with access to a browser-only application can access all of the Javascript source code, including your API keys.
 
 Making your API key publicly accessible could result in anyone authenticating API calls with your API key — this is a significant security concern both for you and SendGrid.
 

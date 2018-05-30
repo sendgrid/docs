@@ -14,7 +14,7 @@ If you are not using suppression management with Unsubscribe Groups, it is the d
 
 When using Unsubscribe Groups, a recipient clicking an unsubscribe link can choose which groups to unsubscribe from, called a "group unsubscribe", or may choose to opt out of all emails, called a "global unsubscribe".
 
-You can manage your global unsubscribes via [Email Reports > Unsubscribes]({{site.app_url}}/suppressions/global_unsubscribes) in the SendGrid portal.
+You can manage your global unsubscribes via [Email Reports > Unsubscribes]({{site.app_url}}/suppressions/global_unsubscribes) in the SendGrid UI.
 
 {% info %}
 Group Unsubscribes will trigger [Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html) events.

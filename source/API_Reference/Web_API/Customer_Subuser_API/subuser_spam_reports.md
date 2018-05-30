@@ -23,11 +23,11 @@ Retrieve Spam Reports
   {% response json %}
 [
   {
-    "email": "email1@domain.com",
+    "email": "emaieexampexample@example.com",
     "created": "2009-06-01 19:41:39"
   },
   {
-    "email": "email2@domain2.com",
+    "email": "emaileexampexample@example.com",
     "created": "2009-06-01 19:41:39"
   }
 ]
@@ -35,11 +35,11 @@ Retrieve Spam Reports
   {% response xml %}
 <spamreports>
    <spamreport>
-      <email>email1@domain.com</email>
+      <email>emaieexampexample@example.com</email>
       <created>2009-06-10 12:40:30</created>
    </spamreport>
    <spamreport>
-      <email>email2@domain2.com</email>
+      <email>emaileexampexample@example.com</email>
       <created>2009-06-10 12:40:30</created>
    </spamreport>
 </spamreports>

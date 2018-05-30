@@ -48,7 +48,7 @@ If you add a new default email link whitelabel for a email link domain that is a
 Your email link whitelabel will not affect your domain whitelabel and vice versa.
 {% endinfo %}
 
-The root domain for your subdomain. This is the domain that will receive the reputation from the whitelabel.  Your root domain should match your FROM email address. If you are sending from newsletter@example.com, then you should whitelabel example.com so the domains match.
+The root domain for your subdomain. This is the domain that will receive the reputation from the whitelabel. Your root domain should match your FROM email address. If you are sending from newsletteexampexample@example.com, then you should whitelabel example.com so the domains match.
 
 {% anchor h3 %}
 Use new Domain
@@ -71,6 +71,10 @@ Creating An Email Link Whitelabel
 {% endanchor %}
 
 When you enter the information for your whitelabel and click “Save,” we will show you the DNS entries that you need to make to match the settings you provided.
+
+{% info %}
+You may create up to a maximum of 1500 link whitelabels.
+{% endinfo %}
 
 {% anchor h2 %}
 Validate Your Email Link Whitelabel

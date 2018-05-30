@@ -48,11 +48,13 @@ Requirements
 
 There are several requirements that you must complete before you can begin using universal links in your email:
 
-- Universal links for iOS require an "apple-app-site-association" JSON file.
-- Universal links for Android require that you set up an "digital asset links" JSON file, along with configuring intent filters in your Android "app manifest" file.
+- Universal links for iOS require an "apple-app-site-association" JSON file. 
+- Universal links for Android require that you set up an "digital asset links" JSON file, along with configuring intent filters in your Android app's manifest file.
 - Your **apple-app-site-association** and **digital asset links** files must be hosted on an HTTPS web server or content delivery network (CDN).
 - To ensure that your universal links register click tracking events, and to ensure that your recipient is taken to the correct page within your app, you must properly [resolve your links](#-Resolving-SendGrid-Click-Tracking-Links).
-- You must complete the [link whitelabeling process]({{root_url}}/User_Guide/Settings/Whitelabel/links.html) for your account. When whitelabeling your links, you must use the same domain that will be used for your universal links. (e.g. links.example.com)
+- You must complete the [link whitelabeling process]({{root_url}}/User_Guide/Settings/Whitelabel/links.html) for your account. When whitelabeling your links, you must use the same domain that will be used for your universal links. (e.g. links.example.com) 
+- On iOS, you must include your email link whitelabel subdomain in the "Associated Domains" for your app. Using the example above, you'd need to add an entry for "applinks:links.example.com" like this:
+![]({{root_url}}/images/universal_links_ios.png)
 
 {% anchor h2 %}
 What are "apple-app-site-association" and "digital asset links" files?
@@ -60,7 +62,7 @@ What are "apple-app-site-association" and "digital asset links" files?
 
 To keep your app secure, Google and Apple want to restrict which resources or websites are allowed to link directly to different pages within your app. This prevents bad actors from using universal links to gain access to sensitive information within your app.
 
-"Apple-app-site" and "digital asset links" files serve as secure means of authenticating your universal links; they verify that your website is allowed to open up a page within your app.
+Your "apple-app-site-association" and "digital asset links" files serve as secure means of authenticating your universal links; they verify that your website is allowed to open up a page within your app.
 
 {% info %}
 You must create your own digital asset links and apple-app-site-association files, and you must upload these files to a secure server.
@@ -93,9 +95,9 @@ Example apple-app-site-association file:
 }
 {% endcodeblock %}
 
-{% info %}
+{% warning %}
 **Do not** append the .json file extension to your apple-app-site-association file!
-{% endinfo %}
+{% endwarning %}
 
 {% anchor h3 %}
 Example assetlinks.json file:
@@ -119,13 +121,9 @@ Example assetlinks.json file:
 {% endcodeblock %}
 
 {% info %}
-When configuring your universal links for Android devices, you must specify which URLs should be handled by the app and which should not.
+When configuring your universal links in iOS, you specify which paths you want to be handled by the app by using the `paths` argument in the `apple-app-site-association` file. By specifing only the path `["/uni/*"]`, and using the `universal=true` attribute on your links as documented below, only appropriate links will be handled by the app, and others will be opened in the phone's browser.
 
-For iOS this is set in the "apple-app-site-association" file by including "paths": ["/uni/\*"], indicating that any URL containing the path "/uni" should be opened in your app.
-
-Android requires that you specify these paths inside your app, rather than the assetlinks.json file.
-
-This is accomplished by adding an "intent" filter. Please visit [Google's Developer Documentation](https://developer.android.com/training/app-indexing/deep-linking.html) to learn how to add an intent filter in your app.
+Android requires that you specify these paths inside your app, rather than the assetlinks.json file. This is accomplished by adding intent filters for specific hosts and paths. Please visit [Google's Developer Documentation](https://developer.android.com/training/app-indexing/deep-linking.html) to learn how to add an intent filter to your app manifest that can handle your universal links.
 {% endinfo %}
 
 
@@ -141,20 +139,20 @@ After creating your iOS "apple-app-site-association" file and/or your Android "d
 
 2. Upload your "apple-app-site-association" file into the root of the new S3 bucket
 
-3. Under **Permissions** on the uploaded file, add a permission for **Everyone** to **Open/Download**, then hit **Save**
+3. Under **Permissions** on the uploaded file, add a permission for **Everyone** to **Open/Download** (or **Read** in the new S3 UI), then hit **Save**
 
 4. Under **Metadata** on the uploaded file, change the **Content-Type** value to **application/json**, then hit **Save**
 
     ![]({{root_url}}/images/universal_links_1.png)
 5. Create a new folder in the bucket called “.well-known”
 
-6. Inside of the ".well-known" folder, uplaod the same "apple-app-site-association" file as in step 2
+6. Inside of the ".well-known" folder, upload the same "apple-app-site-association" file as in step 2
 
-7. As above, add a permission for **Everyone** to **Open/Download** and change the Content-Type to “application/json”
+7. As above, add a permission for **Everyone** to **Open/Download** (or **Read** in the new S3 UI) and change the Content-Type to “application/json”
 
 8. Inside of the “.well-known” folder, upload your “assetlinks.json”
 
-9. Repeat step 7 for your "assetlinks.json" file: add a permission for **Everyone** to **Open/Download** and change the Content-Type to “application/json”
+9. Repeat step 7 for your "assetlinks.json" file: add a permission for **Everyone** to **Open/Download** (or **Read** in the new S3 UI) and change the Content-Type to “application/json”
 
 10. Navigate to the **AWS Certificate Manager**
 
@@ -181,8 +179,8 @@ After creating your iOS "apple-app-site-association" file and/or your Android "d
 
     ![]({{root_url}}/images/universal_links_4.png)
 
-    * **Forward Headers:** All
-    * **Forward Query Strings:** Yes
+    * **Forward Headers:** Yes
+    * **Forward Query Strings:** Forward all, cache based on all
 18. Under the **Distribution Settings** section, set the fields as follows:
 
     ![]({{root_url}}/images/universal_links_5.png)
@@ -219,9 +217,9 @@ After creating your iOS "apple-app-site-association" file and/or your Android "d
 
 27. Create a third behavior with the following details
 
-    **Path Pattern:** .well-known/assetlinks.json
-    **Origin:** s3
-    **Viewer Protocol Policy:** HTTPS Only
+    * **Path Pattern:** .well-known/assetlinks.json
+    * **Origin:** s3
+    * **Viewer Protocol Policy:** HTTPS Only
 28. Hit **Create**
 
 29. Ensure that the **Behaviors** are sorted so that the **Default** is the last onNewIntent
@@ -235,6 +233,7 @@ After creating your iOS "apple-app-site-association" file and/or your Android "d
     * https://links.example.com/.well-known/apple-app-site-association
     * https://links.example.com/.well-known/assetlinks.json
     * https://links.example.com/wf/click?upn=
+
 32. Verify behavior using [https://branch.io/resources/universal-links/](https://branch.io/resources/universal-links/)
 
 {% anchor h2 %}
@@ -305,7 +304,10 @@ For example:
 
 `<a href="links.example.com" universal="true">Link to your app!</a>`
 
+This way, as long as your association file has the `paths` restricted to `/uni/*` as we recommend above, only the links that you want to be handled by your app will be.
+
 If you exclude the `universal="true"` attribute, your links will still function, but they will take your recipient to their mobile browser.
+If you exclude the `/uni/*` path in your `apple-app-site-association`, the _all_ links for your Whitelabeled domain will be forwarded for your app to handle, which may cause issues.
 
 {% anchor h2 %}
 Resolving SendGrid Click Tracking Links
@@ -412,8 +414,8 @@ protected void onNewIntent(Intent intent) {
         new Thread(new Runnable() {
             public void run() {
                 try {
-                    URL orginalURL = new URL(encodedURL);
-                    HttpURLConnection ucon = (HttpURLConnection) orginalURL.openConnection();
+                    URL originalURL = new URL(encodedURL);
+                    HttpURLConnection ucon = (HttpURLConnection) originalURL.openConnection();
                     ucon.setInstanceFollowRedirects(false);
                     URL resolvedURL = new URL(ucon.getHeaderField("Location"));
                     Log.d("App Link", resolvedURL.toString());

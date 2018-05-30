@@ -10,6 +10,9 @@ navigation:
 Retrieve Bounces 
 {% endanchor %}
 
+{% info %}
+These are Reseller Only APIs. For more information, see [Reseller Overview](https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/index.html).
+{% endinfo %}
 
 {% parameters get %}
  {% parameter 'user' 'Yes' 'Customer must be registered under your account' 'The customer we are retrieving bounces from' %}
@@ -18,20 +21,19 @@ Retrieve Bounces
  {% parameter 'method' 'Yes' 'Must be set to <em>bounces</em>' 'Allows you to access bounces functionality' %}
 {% endparameters %}
 
-
-{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=customer@example.com&task=get&date=1 %}
+{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=eexampexample@example.com&task=get&date=1 %}
   {% response json %}
 [
   {
-    "email": "email1@domain.com",
+    "email": "emaieexampexample@example.com",
     "status": "5.1.1",
-    "reason": "host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com",
+    "reason": "host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: emaieexampexample@example.com",
     "created": "2009-06-01 19:41:39"
   },
   {
-    "email": "email2@domain2.com",
+    "email": "emaileexampexample@example.com",
     "status": "5.1.1",
-    "reason": "host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com",
+    "reason": "host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: emaileexampexample@example.com",
     "created": "2009-06-01 19:41:39"
   }
 ]
@@ -39,15 +41,15 @@ Retrieve Bounces
   {% response xml %}
 <bounces>
    <bounce>
-      <email>email1@domain.com</email>
+      <email>emaieexampexample@example.com</email>
       <status>5.1.1</status>
-      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com</reason>
+      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: emaieexampexample@example.com</reason>
       <created>2009-06-10 12:40:30</created>
    </bounce>
    <bounce>
-      <email>email2@domain2.com</email>
+      <email>emaileexampexample@example.com</email>
       <status>5.1.1</status>
-      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com</reason>
+      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: emaileexampexample@example.com</reason>
       <created>2009-06-10 12:40:30</created>
    </bounce>
 </bounces>
@@ -72,7 +74,7 @@ Since SendGrid does not re-deliver to bounced addresses, users can remove bounce
 {% endparameters %}
 
 
-{% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=customer@example.com&task=delete&email=bounce@example.com %}
+{% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=eexampexample@example.com&task=delete&email=bounceexampexample@example.com %}
   {% response json %}
 {
   "message": "success"

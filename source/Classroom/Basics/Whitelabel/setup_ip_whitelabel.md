@@ -24,7 +24,7 @@ Creating an IP Whitelabel
 {% endanchor %}
 
 {% info %}
-Only the parent account can create IP whitelabels, but the parent account can assign the IP with its whitelabel to subusers.
+Only the parent account or a Teammate with the Whitelabel permission can create IP whitelabels; however, the parent account can assign the whitelabeled IP to subusers.
 {% endinfo %}
 
 **(1)** Navigate to your SendGrid Dashboard, click **Settings** in the left hand sidebar, and select **Whitelabels**.
@@ -44,14 +44,14 @@ You will be shown a window containing a list of all of your IP addresses, the ac
 ![]({{root_url}}/images/ip_whitelabel_setup_2.png)
 
 {% info %}
-An IP address can only be whitelabled to a single domain. However, you can whitelable multiple IP addresses to the same domain or different domains depending on your sending needs.
+An IP address can only be whitelabeled to a single domain. However, you can whitelabel multiple IP addresses to the same domain or different domains depending on your sending needs.
 {% endinfo %}
 
 **(6)** Once you have entered the subdomain and selected the domain, click **Save**.
 
 **(7)** Click **Confirm** in the validation notification that appears.
 
-**(8)** You should be taken to the IP validation page where you can review the IP address being whitelabled, the user that this IP whitelabel will be assigned to, the updated rDNS information, and the A record that you will need to give your DNS provider.
+**(8)** You should be taken to the IP validation page where you can review the IP address being whitelabeled, the user that this IP whitelabel will be assigned to, the updated rDNS information, and the A record that you will need to give your DNS provider.
 
 ![]({{root_url}}/images/ip_whitelabel_setup_3.png)
 
@@ -67,13 +67,13 @@ Managing Your IP Whitelabels
 Adding an IP Address
 {% endanchor %}
 
-Whenever you add a dedicated IP address to your account, you should make sure to whitelabel it by following the steps above.
+Whenever you add a dedicated IP address to your account, you should make sure to whitelabel it by following the steps above. To add additional IPs to your Pro or Premier account, first, log into your account, and then click the **Add a Dedicated IP** button on the [Plan & Billing Details](https://app.sendgrid.com/settings/billing) page.
 
 {% anchor h3 %}
 Deleting an IP Whitelabel
 {% endanchor %}
 
-You can delete an IP whitelabel at any time. Simply navigating to your SendGrid dashboard, click **Settings** in the lefthand sidebar, and click **IPs** under **Whitelabels**. You will see a list of your IP whitelabels. Click the action cog next to the whitelabel you want to delete and click **Delete**.
+You can delete an IP whitelabel at any time. Simply navigating to your SendGrid dashboard, click **Settings** in the lefthand sidebar, and click **IPs** under **Whitelabels**. You will see a list of your IP whitelabels. Click the action menu next to the whitelabel you want to delete and click **Delete**.
 
 {% warning %}
 Deleting an IP whitelabel is permanent! You cannot recover a deleted IP whitelabel.

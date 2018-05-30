@@ -16,8 +16,11 @@ Retrieve
  {% parameter 'method' 'Yes' 'Must be set to <em>eventposturl</em>' 'Allows you to access post event url functionality' %}
 {% endparameters %}
 
+{% info %}
+These are Reseller Only APIs. For more information, see [Reseller Overview](https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/index.html).
+{% endinfo %}
 
-{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=customer@example.com&method=eventpostur %}
+{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=get&user=eexampexample@example.com&method=eventpostur %}
   {% response json %}
 {
   "url": "http://www.SubUserPostUrlHere.com"
@@ -43,7 +46,7 @@ Update / Set URL
 {% endparameters %}
 
 
-{% apiexample set POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=customer@example.com&url=http://www.SubUserPostUrlHere.com&method=eventposturl %}
+{% apiexample set POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=set&user=eexampexample@example.com&url=http://www.SubUserPostUrlHere.com&method=eventposturl %}
   {% response json %}
 {
   "message": "success"
@@ -70,7 +73,7 @@ Delete
 {% endparameters %}
 
 
-{% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com&method=eventposturl %}
+{% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=eexampexample@example.com&method=eventposturl %}
   {% response json %}
 {
   "message": "success"

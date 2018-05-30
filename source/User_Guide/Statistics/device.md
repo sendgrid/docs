@@ -15,7 +15,7 @@ navigation:
 Parent accounts will see aggregated stats for their account and all subuser accounts. Subuser accounts will only see their own stats.
 {% endinfo %}
 
-The clients report breaks down which devices and clients are most frequently used to open the mail you send.  The devices and types that SendGrid tracks are:
+The clients report breaks down which devices and clients are most frequently used to open the mail you send. The devices and types that SendGrid tracks are:
 
 <table class="table table-striped">
   <tr>
@@ -72,3 +72,11 @@ When you initially choose the devices to compare, this graph will show you the a
 You can remove individual devices from the list of devices at the top of this page. The graph will refresh, showing only the selected subusers.
 
 You can also choose to show actual counts or percentages, by clicking the corresponding button above and to the right of the table.
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor %}
+
+- [Statistics Filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters)
+- [Subusers]({{root_url}}/User_Guide/Settings/Subusers/index.html)
+- [SendGrid for Mobile]({{root_url}}/User_Guide/SendGrid_for_Mobile/index.html)

@@ -152,9 +152,9 @@ Update the status of a scheduled send.
 
             "" : "batch id not found"
 
-### Delete a cancellation or pause of a scheduled send [DELETE]
+### Delete a cancellation or pause state of a scheduled send [DELETE]
 
-Delete the cancellation/pause of a scheduled send. Any messages still in the sending queue with this Batch ID will revert to an active state, and delivery will be attempted when their `send_at` value is reached. Any "past due" messages (such as those that were *paused*) will be attempted to be delivered immediately.
+Delete the cancellation/pause state of a scheduled send. Any messages still in the sending queue with this Batch ID will revert to an active state, and delivery will be attempted when their `send_at` value is reached. Any paused messages past their scheduled send time will be attempted to be delivered immediately. Any cancelled messages past their scheduled sent time will be dropped. 
 
 
 + Request (application/json)

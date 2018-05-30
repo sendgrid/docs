@@ -14,6 +14,7 @@ function apidocs_iframe() {
     }
 
     $('#content .iframe-container').html('<iframe frameborder="0" src="'+url+'" width="1500" height="1000"></iframe>');
+    $('#content .iframe-container').html($('<iframe frameborder="0" width="1500" height="1000"></iframe>').attr('src', url));
   }
 }
 

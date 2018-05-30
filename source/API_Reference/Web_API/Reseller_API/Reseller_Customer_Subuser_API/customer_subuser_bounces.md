@@ -23,15 +23,15 @@ Retrieve Bounces
   {% response json %}
 [
   {
-    "email": "email1@domain.com",
+    "email": "emaieexampexample@example.com",
     "status": "5.1.1",
-    "reason": "host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com",
+    "reason": "host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: emaieexampexample@example.com",
     "created": "2009-06-01 19:41:39"
   },
   {
-    "email": "email2@domain2.com",
+    "email": "emaileexampexample@example.com",
     "status": "5.1.1",
-    "reason": "host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com",
+    "reason": "host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: emaileexampexample@example.com",
     "created": "2009-06-01 19:41:39"
   }
 ]
@@ -39,15 +39,15 @@ Retrieve Bounces
   {% response xml %}
 <bounces>
    <bounce>
-      <email>email1@domain.com</email>
+      <email>emaieexampexample@example.com</email>
       <status>5.1.1</status>
-      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email1@domain.com</reason>
+      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: emaieexampexample@example.com</reason>
       <created>2009-06-10 12:40:30</created>
    </bounce>
    <bounce>
-      <email>email2@domain2.com</email>
+      <email>emaileexampexample@example.com</email>
       <status>5.1.1</status>
-      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: email2@domain2.com</reason>
+      <reason>host [127.0.0.1] said: 550 5.1.1 unknown or illegal user: emaileexampexample@example.com</reason>
       <created>2009-06-10 12:40:30</created>
    </bounce>
 </bounces>
@@ -72,7 +72,7 @@ Since SendGrid does not re-deliver to bounced addresses, users can remove bounce
 {% endparameters %}
 
 
-{% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=delete&email=bounce@example.com %}
+{% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.subuserManage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=bounces&user=example@example.com&task=delete&email=bounceexampexample@example.com %}
   {% response json %}
 {
   "message": "success"

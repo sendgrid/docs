@@ -8,7 +8,7 @@ navigation:
 
 Monitor records will send samples from one or more subusers at a frequency you set.
 
-The first step is to create a Monitor Record. Once the monitor record has been created, you can append asubuser to a monitor record. Multiple subusers can be appended to a single monitor record.
+The first step is to create a Monitor Record. Once the monitor record has been created, you can append a subuser to a monitor record. Multiple subusers can be appended to a single monitor record.
 
 {% anchor h2 %}
 Create Monitor Record 
@@ -122,7 +122,7 @@ List all available monitor records on your account.
     "frequency": "10000",
     "users": [
       "user1@example.com",
-      "user2@example.com"
+      "exampexample@example.comom"
     ]
   }
 ]
@@ -141,7 +141,7 @@ List all available monitor records on your account.
       <frequency>10000</frequency>
       <users>
          <user>user1@example.com</user>
-         <user>user2@example.com</user>
+         <user>exampexample@example.comom</user>
       </users>
    </monitor>
 </monitors>

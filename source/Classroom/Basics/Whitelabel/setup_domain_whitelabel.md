@@ -91,11 +91,11 @@ Once you have created and validated your domain whitelabel, there is little work
 
 Any time that you send email with a FROM address whose domain matches the domain of your new whitelabel, SendGrid will apply that whitelabel to your email.
 
-You can change a whitelabel's default status at any time by navigating to your whitelabel settings page, clicking the action cog next to your default whitelabel and clicking **Remove Default Status**.
+You can change a whitelabel's default status at any time by navigating to your whitelabel settings page, clicking the action menu next to your default whitelabel and clicking **Remove Default Status**.
 
 ![]({{root_url}}/images/domain_whitelabel_setup_8.png)
 
-To delete one of your domain whitelabels, navigate to your whitelabel settings page, click to view the whitelabel you want to delete and click **Delete**. Alternatively, you can click the action cog next to your domain whitelabel and click **Delete**.
+To delete one of your domain whitelabels, navigate to your whitelabel settings page, click to view the whitelabel you want to delete and click **Delete**. Alternatively, you can click the action menu next to your domain whitelabel and click **Delete**.
 
 {% anchor h2 %}
 Related Resources
@@ -104,5 +104,4 @@ Related Resources
 * [How to Setup an IP Whitelabel]({{root_url}}/Classroom/Basics/Whitelabel/setup_ip_whitelabel.html)
 * [Whitelabel User Guide]({{root_url}}/User_Guide/Settings/Whitelabel/index.html)
 * [Domain Whitelabel API Reference]({{root_url}}/API_Reference/Web_API_v3/Whitelabel/domains.html)
-* [Upgrading Your Whitelabel]({{root_url}}/Classroom/Troubleshooting/Authentication/upgrading_your_whitelabel.html)
 * [Whitelabel Video Tutorials]({{root_url}}/Classroom/Troubleshooting/Authentication/whitelabel_video_tutorials.html)

@@ -70,7 +70,7 @@ function use_wpbe_template( $message, $content_type ) {
 add_filter( 'sendgrid_override_template', 'use_wpbe_template', 10, 2 );
 {% endcodeblock %}
 
-Using the default templates from WP Better Emails will cause all emails to be sent as HTML (i.e.  content-type of text/html). In order to send emails as plain text (i.e. a content-type of text/plain) you should remove the HTML Template from WP Better Emails settings page. This is can be done by removing the `%content%` tag from the HTML template.
+Using the default templates from WP Better Emails will cause all emails to be sent as HTML (i.e. content-type of text/html). In order to send emails as plain text (i.e. a content-type of text/plain) you should remove the HTML Template from WP Better Emails settings page. This is can be done by removing the `%content%` tag from the HTML template.
 
 {% anchor h2 %}
 Why are my emails sent as HTML instead of plain text?
@@ -91,7 +91,7 @@ What permissions should my API keys have?
 For the API Key used for sending emails (the General tab):
 – Full Access to Mail Send.
 – Read Access to Stats.
-– Read Access to Supressions > Unsubscribe Groups.
+– Read Access to Suppressions > Unsubscribe Groups.
 – Read Access to Template Engine.
 For the API Key used for contact upload (the Subscription Widget tab):
 – Full Access to Marketing Campaigns.

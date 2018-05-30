@@ -94,4 +94,4 @@ Runscope
 
 [Runscope](https://runscope.com) is a tool for debugging APIs. It acts as a proxy, collecting all data sent to it and passes it on to another point. You may then, later, review what was sent to the API you're debugging.
 
-This can be extrordinarily helpful when debugging webhooks, and [Runscope has a tutorial on how to do this](https://www.runscope.com/provider-guide/troubleshooting-webhooks).
+This can be extraordinarily helpful when debugging webhooks, and [Runscope has a tutorial on how to do this](https://www.runscope.com/provider-guide/troubleshooting-webhooks).

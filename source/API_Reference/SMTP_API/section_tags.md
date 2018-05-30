@@ -1,15 +1,19 @@
 ---
-layout: page
-weight: 0
+seo:
+  title: Section Tags
+  description: Section tags allow you to substitute in content in an SMTP message.
+  keywords: SMTP, send email, section tags
 title: Section Tags
+weight: 10
+layout: page
 navigation:
   show: true
 ---
 
-Section tags are similar to [substitution tags]({{root_url}}/API_Reference/SMTP_API/substitution_tags.html) in how they're built, but are specific to the message, not the recipient. You have to have a substitution tag value for **each** recipient, but you can have any number of section tags. Section tags can then contain Substitution tags for the recipient if needed. Section tags have to be contained within a Substitution tag, since SendGrid needs to know which data to populate for the recipient.
+Section tags allow you to substitute in content in an SMTP message. Section tags are similar to [substitution tags]({{root_url}}/API_Reference/SMTP_API/substitution_tags.html) but are specific to the message, and not the recipient. You have to have a substitution tag value for **each** recipient, but you can have any number of section tags. Section tags can then contain Substitution tags for the recipient if needed. Section tags have to be contained within a Substitution tag since SendGrid needs to know which data to populate for the recipient.
 See the [Section Tag Example Walkthrough](#-Section-Tag-Example-Walkthrough) below.
 
-It's possible & acceptable to use only Substition tags. However, that method is not [DRY](http://en.wikipedia.org/wiki/Don%27t_repeat_yourself), and you may come against [message size limitations]({{root_url}}/Classroom/Build/Add_Content/whats_the_recommended_message_size_limit.html).
+It's possible & acceptable to use only Substitution tags. However, that method is not [DRY](http://en.wikipedia.org/wiki/Don%27t_repeat_yourself), and you may come against [message size limitations]({{root_url}}/Classroom/Build/Add_Content/whats_the_recommended_message_size_limit.html).
 
 * * * * *
 
@@ -28,8 +32,11 @@ How you flag your section tags may depend on the library you use to create your 
 {% endinfo %}
 
 {% warning %}
-Do not use spaces inside your section or substitution tags! e.g. `%first name%`
-The space breaks the string.
+Do not use spaces inside your section or substitution tags! For example: `%first name%`. The space breaks the string.
+{% endwarning %}
+
+{% warning %}
+Do not nest section tags in sections - this causes your section to not be replaced.
 {% endwarning %}
 
 * * * * *
@@ -38,7 +45,7 @@ The space breaks the string.
 Section Tag Walkthrough
 {% endanchor %}
 
-Message body sent to SendGrid: 
+Message body sent to SendGrid:
 
 {% codeblock lang:html %}
 <html>
@@ -60,9 +67,10 @@ The accompanying X-SMTPAPI JSON header would look like:
 {% codeblock lang:json %}
 {
   "to": [
-    "alice@foo.com",
+    "example@example.com",
     "bob@bar.com",
-    "casey@baz.com"
+    "example@example.com",
+    "example@example.com"
   ],
   "sub": {
     ":salutation": [
@@ -143,3 +151,13 @@ Casey receives:
  </body>
 </html>
 {% endcodeblock %}
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor h2 %}
+
+- [Substitution Tags]({{root_url}}/API_Reference/SMTP_API/substitution_tags.html)
+- [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
+- [Getting Started with the SMTP API]({{root_url}}/API_Reference/SMTP_API/getting_started_smtp.html)
+- [Integrating with SMTP]({{root_url}}/API_Reference/SMTP_API/integrating_with_the_smtp_api.html)
+- [Building an SMTP Email]({{root_url}}/API_Reference/SMTP_API/building_an_smtp_email.html)
