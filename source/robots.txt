@@ -1,4 +1,3 @@
-<!-- don't forget to update https://wiki.sendgrid.net/display/DX/Current+beta+docs -->
 User-agent: *
 Disallow /docs/User_Guide/Transactional_Templates/Using_handlebars.html
 Disallow /docs/User_Guide/Transactional_Templates/migrating_from_legacy_templates.html
