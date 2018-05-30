@@ -20,14 +20,9 @@ API keys are used by your application, mail client, or website to authenticate a
 
 There are two different types of API keys:
 
-<<<<<<< HEAD
 1. **Billing API Keys** are used only to authenticate billing related API calls.
 1. **General API Keys** are used to authenticate all other API calls.
-=======
-1. **Full Access** gives all of the API methods.
-1. **Restricted Access** lets you customize the level of access.
-1. **Billing Access** gives you access to the billing endpoints.
->>>>>>> Whatthefoxsays/ease-ui
+
 
 SendGrid requires a separate API key for making billing related API calls. This segmentation adds an extra level of security by giving you more control over who has access to the various areas of your account.
 
@@ -68,9 +63,9 @@ During the API key creation process, you can select specific permissions, or sco
 
 When assigning permissions to your API key, select one of the following levels of access:
 
-* **No Access** prevents the API key from accessing any endpoint within the selected permission.
-* **Read Access** allows the API key to access GET endpoints within the selected permission.
-* **Full Access** allows the API key to access GET, PATCH, PUT, DELETE, and POST endpoints within the selected permission.
+1. **Full Access** gives all of the API methods.
+1. **Restricted Access** lets you customize the level of access.
+1. **Billing Access** gives you access to the billing endpoints.
 
 {% info %}
 You may not give an API key greater permissions than you currently have.
@@ -114,4 +109,4 @@ Inactivate an API Key
 Once you delete a key, it can no longer be used to access SendGrid’s services.
 {% endwarning %}
 
-Click the action menu in the same row as the key you want to inactivate. Choose “Delete.” This will delete the key permanently, making it inactive. Any subsequent API calls using this deleted API key will be rejected by SendGrid.
+Click the action menu in the same row as the key you want to inactivate. Select **Delete**.  This will delete the key permanently, making it inactive. Any subsequent API calls using this deleted API key will be rejected by SendGrid.
