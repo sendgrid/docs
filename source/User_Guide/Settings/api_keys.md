@@ -1,19 +1,26 @@
+---
+seo:
+  title: API Keys
+  description: Create and Manage API Keys
+  keywords: sendgrid API keys, email API Keys, mail API Keys, email credentials, send credentials, authentication
+title: API Keys
+weight: 0
+layout: page
+navigation:
+  show: true
+---
 
-
-{% anchor h2 %}
-Table of Contents
-{% endanchor %}
-
-* [What are API keys?](#-What-are-API-keys)
-* [Creating an API key](#-Creating-an-API-key)
+* [What is an API key?](#-What-is-an-API-key)
+* [How to create an API key](#-How-to-create-an-API-key)
 * [API key permissions](#-API-key-permissions)
 * [Replacing an old API key with a new one](#-Replacing-an-old-API-key-with-a-new-one)
-* [Edit an API key](#-Edit-an-API-key)
-* [Testing an API key](#-Testing-an-API-key)
-* [Inactivate an API Key](#-Inactivate-an-API-key)
+* [Managing API Keys](#-Managing-API-Keys)
+  * [Edit an API key](#-Edit-an-API-key)
+  * [Testing an API key](#-Testing-an-API-key)
+  * [Deleting an API Key](#-Inactivate-an-API-key)
 
 {% anchor h2 %}
-What are API keys?
+What is an API key?
 {% endanchor %}
 
 API keys are used by your application, mail client, or website to authenticate access to SendGrid services. They are the preferred alternative to using a username and password because you can revoke an API key at any time without having to change your username and password. We recommend using API keys for connecting to all of SendGrid’s services.
@@ -23,8 +30,7 @@ There are two different types of API keys:
 1. **Billing API Keys** are used only to authenticate billing related API calls.
 1. **General API Keys** are used to authenticate all other API calls.
 
-
-SendGrid requires a separate API key for making billing related API calls. This segmentation adds an extra level of security by giving you more control over who has access to the various areas of your account.
+SendGrid requires a separate API key for making billing related API calls. This separation adds an extra level of security by giving you more control over who has access to the various areas of your account.
 
 For more detailed information about API key permissions, see our [API Keys permissions page]({{root_url}}/Classroom/Basics/API/api_key_permissions.html).
 
@@ -39,7 +45,7 @@ When viewing the API keys page, you will see a list of your current API keys alo
 {% info %} There is a limit of 100 API Keys per account. {% endinfo %}
 
 {% anchor h2 %}
-Creating an API key
+How to create an API key
 {% endanchor %}
 
 1. Go to the API Keys page in the SendGrid UI, and click `Create API Key`.
@@ -72,14 +78,6 @@ You may not give an API key greater permissions than you currently have.
 {% endinfo %}
 
 {% anchor h2 %}
-Replacing an old API key with a new one
-{% endanchor %}
-
-1. Locate the API key you would like to replace in your list of keys and select the action menu drop down at the right on the same row, then select **Delete API Key**. 
-1. Next, [create an API key](#-Creating-an-API-key).
-1. Replace the old API key with the new one in your code.
-
-{% anchor h2 %}
 Testing an API key
 {% endanchor %}
 
@@ -109,4 +107,5 @@ Delete an API Key
 Once you delete a key, it can no longer be used to access SendGrid’s services.
 {% endwarning %}
 
-Click the action menu in the same row as the key you want to inactivate. Select **Delete**.  This will delete the key permanently, making it inactive. Any subsequent API calls using this deleted API key will be rejected by SendGrid.
+Click the action menu in the same row as the key you want to inactivate. Select **Delete**. This permanently delet delete the key permanently, making it inactive. Any subsequent API calls using this deleted API key will be rejected by SendGrid.
+
