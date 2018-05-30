@@ -8,6 +8,7 @@ seo:
   title: How to set up reverse DNS
   override: true
   description: Set up reverse DNS to improve your deliverability and security of your emails.
+  keywords: reverse DNS, rDNS, whitelabel, IP whitelabel
 ---
 
 <iframe src="https://player.vimeo.com/video/265831363" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
