@@ -1,6 +1,7 @@
 ---
 title: "custom elements"
 category: "sending-email"
+group: "tracking"
 ---
 
 <code-group langs="PHP,Python,JavaScript">

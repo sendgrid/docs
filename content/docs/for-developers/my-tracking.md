@@ -1,7 +1,6 @@
 ---
-title: "my tracking"
-category: "sending-email"
-
+title: "No Category"
+group: "foo-bar"
 ---
 
 ## Headers

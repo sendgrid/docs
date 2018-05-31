@@ -31,7 +31,7 @@ export const pageQuery = graphql`
   query CategoryPage($category: String, $docType: String) {
     allMarkdownRemark(
       limit: 1000
-      sort: { fields: [frontmatter___date], order: DESC }
+      # sort: { fields: [frontmatter___date], order: DESC }
       filter: {
         frontmatter: { category: { eq: $category } }
         fields: {docType: {eq: $docType}}
@@ -47,9 +47,6 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
-            tags
-            cover
-            date
             group
           }
         }
