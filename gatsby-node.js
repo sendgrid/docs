@@ -59,13 +59,48 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     /**
      * Check if doc is "help-support" or "for developers" and add a field slug to represent this.
      */
-    let docType = false;
-    if (parsedFilePath.dir.match('help-support')) {
+    let docType;
+    if (permalink.match(/help-support\/[^/]+/)) {
       docType = 'help-support';
-    } else if (parsedFilePath.dir.match('for-developers')) {
+    } else if (permalink.match(/for-developers\/[^/]+/)) {
       docType = 'for-developers';
     }
+
     createNodeField({ node, name: 'docType', value: docType });
+
+    let cat;
+    if (
+      Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
+      Object.prototype.hasOwnProperty.call(node.frontmatter, 'category')
+    ) {
+      cat = node.frontmatter.category;
+    } else {
+      // remove docType prefix
+      cat = parsedFilePath.dir.replace(`${docType}`, '');
+      cat = cat.split('/');
+      cat = (cat.length > 1 && cat[1].length) ? cat[1] : 'uncategorized';
+    }
+    createNodeField({ node, name: 'category', value: cat });
+
+    let group = 'ungrouped';
+    if (
+      Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
+      Object.prototype.hasOwnProperty.call(node.frontmatter, 'group')
+    ) {
+      group = node.frontmatter.group;
+    }
+    createNodeField({ node, name: 'group', value: group });
+
+    let title;
+    if (
+      Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
+      Object.prototype.hasOwnProperty.call(node.frontmatter, 'title')
+    ) {
+      title = node.frontmatter.title;
+    } else {
+      title = parsedFilePath.name.replace('-', '');
+    }
+    createNodeField({ node, name: 'title', value: title });
   }
 };
 
@@ -88,6 +123,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                 fields {
                   permalink
                   slug
+                  category
+                  docType
                 }
               }
             }
@@ -104,14 +141,21 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       const developerCategorySet = new Set();
 
       result.data.allMarkdownRemark.edges.forEach((edge) => {
+        // console.log(edge.node.fields.category);
+
+        const {
+          category,
+          docType,
+        } = edge.node.fields;
+
         // aggregate "help-support" categories
-        if (edge.node.frontmatter.category && edge.node.fileAbsolutePath.match(/help-support\/[^/]+/)) {
-          helpCategorySet.add(edge.node.frontmatter.category);
+        if (docType === 'help-support') {
+          helpCategorySet.add(category);
         }
 
         // aggregate "for-developers" categories
-        if (edge.node.frontmatter.category && edge.node.fileAbsolutePath.match(/for-developers\/[^/]+/)) {
-          developerCategorySet.add(edge.node.frontmatter.category);
+        if (docType === 'for-developers') {
+          developerCategorySet.add(category);
         }
 
         // Create docs pages
@@ -145,9 +189,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         // add it to contentNode
         cat.internal.contentDigest = contentDigest;
 
-        // Create node with the gatsby createNode() API
-        // createNode(cat);
-
         // Create "/for-developers/<category-slug>" pages.
         createPage({
           path: `/for-developers/${_.kebabCase(category)}/`,
@@ -158,7 +199,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           },
         });
       });
-
 
       const helpCategoryList = Array.from(helpCategorySet);
       helpCategoryList.forEach((category, i) => {
@@ -172,6 +212,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             type: 'helpSupportCategories',
           },
         };
+
         // Get content digest of node. (Required field)
         const contentDigest = crypto
           .createHash('md5')
@@ -180,9 +221,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
         // add it to userNode
         cat.internal.contentDigest = contentDigest;
-
-        // Create node with the gatsby createNode() API
-        // createNode(cat);
 
         // Create "/help-support/<category-slug>" pages.
         createPage({
@@ -197,7 +235,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     }));
   });
 };
-
 
 exports.modifyWebpackConfig = ({ config, stage }) => {
   if (stage === 'build-javascript') {

@@ -1,34 +1,54 @@
 ---
-title: "Help Managing contacts two"
-category: "managing-contacts"
+title: "custom elements"
+category: "sending-email"
+group: "tracking"
 ---
 
-# NOTE: This "post" on [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) and is meant to test styling of Markdown generated documents.
+<code-group langs="PHP,Python,JavaScript">
 
-This is intended as a quick reference and showcase. For more complete info, see [John Gruber's original spec](http://daringfireball.net/projects/markdown/) and the [Github-flavored Markdown info page](http://github.github.com/github-flavored-markdown/).
+```php
+  // Create array containing abbreviations of days of week.
+  $daysOfWeek = array('S','M','T','W','T','F','S');
 
-This cheatsheet is specifically _Markdown Here's_ version of Github-flavored Markdown. This differs slightly in styling and syntax from what Github uses, so what you see below might vary a little from what you get in a _Markdown Here_ email, but it should be pretty close.
+  // What is the first day of the month in question?
+  $firstDayOfMonth = mktime(0,0,0,$month,1,$year);
 
-You can play around with Markdown on our [live demo page](http://www.markdown-here.com/livedemo.html).
+  // How many days does this month contain?
+```
 
-(If you're not a Markdown Here user, check out the [Markdown Cheatsheet](./Markdown-Cheatsheet) that is not specific to MDH. But, really, you should also use Markdown Here, because it's awesome. http://markdown-here.com)
+```python
+  static int
+  _is_legal_capsule(PyCapsule *capsule, const char *invalid_capsule)
+  {
+      if (!capsule || !PyCapsule_CheckExact(capsule) || capsule->pointer == NULL) {
+          PyErr_SetString(PyExc_ValueError, invalid_capsule);
+          return 0;
+      }
+      return 1;
+  }
+```
 
-##### Table of Contents
+```javascript
+  const cat = {
+    id: `${i}`,
+    slug: category,
+    parent: '__SOURCE__',
+    children: [],
+    internal: {
+      type: 'forDeveloperCategories',
+    },
+  };
+  // Get content digest of node. (Required field)
+  const contentDigest = crypto
+    .createHash('md5')
+    .update(JSON.stringify(cat))
+    .digest('hex');
+```
 
-[Headers](#headers)
-[Emphasis](#emphasis)
-[Lists](#lists)
-[Links](#links)
-[Images](#images)
-[Code and Syntax Highlighting](#code)
-[Tables](#tables)
-[Blockquotes](#blockquotes)
-[Inline HTML](#html)
-[Horizontal Rule](#hr)
-[Line Breaks](#lines)
-[YouTube Videos](#videos)
+</code-group>
 
 ## Headers
+
 
 ```no-highlight
 # H1
@@ -38,7 +58,7 @@ You can play around with Markdown on our [live demo page](http://www.markdown-he
 ##### H5
 ###### H6
 
-Alternatively, for H1 and H2, an underline-ish style:
+Alternatively, for H1 and H2, an underline-ish style like
 
 Alt-H1
 ======
@@ -46,24 +66,42 @@ Alt-H1
 Alt-H2
 ------
 ```
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
 
-# H1
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
 
-## H2
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
 
-### H3
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
 
-#### H4
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
 
-##### H5
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
 
-###### H6
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
 
-Alternatively, for H1 and H2, an underline-ish style:
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
 
-# Alt-H1
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
 
-## Alt-H2
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
+
+Mauris potenti porta ad litora mattis lorem euismod, quisque auctor lacinia cubilia velit lectus suscipit platea, ornare tellus felis etiam et dui.
 
 ## Emphasis
 
@@ -84,6 +122,7 @@ Strong emphasis, aka bold, with **asterisks** or **underscores**.
 Combined emphasis with **asterisks and _underscores_**.
 
 Strikethrough uses two tildes. ~~Scratch this.~~
+
 
 ## Lists
 
@@ -120,6 +159,7 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 - Or minuses
 
 * Or pluses
+
 
 ## Links
 
@@ -163,19 +203,51 @@ Some text to show that the reference links can follow later.
 [1]: http://slashdot.org
 [link text itself]: http://www.reddit.com
 
-## Images
 
-```no-highlight
-Here's our logo (hover to see the title text):
 
-Inline-style:
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+### Images
 
-Reference-style:
-![alt text][logo]
 
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+
+```php
+  // Create array containing abbreviations of days of week.
+  $daysOfWeek = array('S','M','T','W','T','F','S');
+
+  // What is the first day of the month in question?
+  $firstDayOfMonth = mktime(0,0,0,$month,1,$year);
+
+  // How many days does this month contain?
 ```
+
+```python
+  static int
+  _is_legal_capsule(PyCapsule *capsule, const char *invalid_capsule)
+  {
+      if (!capsule || !PyCapsule_CheckExact(capsule) || capsule->pointer == NULL) {
+          PyErr_SetString(PyExc_ValueError, invalid_capsule);
+          return 0;
+      }
+      return 1;
+  }
+```
+
+```javascript
+  const cat = {
+    id: `${i}`,
+    slug: category,
+    parent: '__SOURCE__',
+    children: [],
+    internal: {
+      type: 'forDeveloperCategories',
+    },
+  };
+  // Get content digest of node. (Required field)
+  const contentDigest = crypto
+    .createHash('md5')
+    .update(JSON.stringify(cat))
+    .digest('hex');
+```
+
 
 Here's our logo (hover to see the title text):
 
@@ -186,6 +258,7 @@ Reference-style:
 ![alt text][logo]
 
 [logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png 'Logo Title Text 2'
+
 
 ## Code and Syntax Highlighting
 
@@ -268,23 +341,6 @@ The outer pipes (|) are optional, and you don't need to make the raw Markdown li
 | _Still_  | `renders` | **nicely** |
 | 1        | 2         | 3          |
 
-## Blockquotes
-
-```no-highlight
-> Blockquotes are very handy in email to emulate reply text.
-> This line is part of the same quote.
-
-Quote break.
-
-> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote.
-```
-
-> Blockquotes are very handy in email to emulate reply text.
-> This line is part of the same quote.
-
-Quote break.
-
-> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can _put_ **Markdown** into a blockquote.
 
 ## Inline HTML
 
@@ -308,7 +364,7 @@ You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
   <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
 </dl>
 
-## Horizontal Rule
+### Horizontal Rule
 
 ```
 Three or more...
@@ -340,6 +396,7 @@ Asterisks
 
 Underscores
 
+
 ## Line Breaks
 
 My basic recommendation for learning how line breaks work is to experiment and discover -- hit &lt;Enter&gt; once (i.e., insert one newline), then hit it twice (i.e., insert two newlines), see what happens. You'll soon learn to get what you want. "Markdown Toggle" is your friend.
@@ -364,16 +421,56 @@ This line is only separated by a single newline, so it's a separate line in the 
 
 (Technical note: _Markdown Here_ uses GFM line breaks, so there's no need to use MD's two-space line breaks.)
 
-## YouTube Videos
 
-They can't be added directly but you can add an image with a link to the video like this:
+## Embed Videos
 
-```no-highlight" target="_blank"><img src="http://img.youtube.com/vi/8AkLfYOgIrE/0.jpg"
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
-```
-
-Or, in pure Markdown, but losing the image sizing and border:
+Use an iframe :)
 
 ```no-highlight
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vCadcBR95oU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 ```
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vCadcBR95oU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+Push it. Push it good.
+
+
+
+### Callouts & more
+
+```no-highlight
+<call-out>
+  I'm callout infor
+</call-out>
+```
+
+<call-out>
+
+  **Info callout**
+
+  A consequat vestibulum per feugiat massa taciti, accumsan nascetur vehicula est phasellus in, facilisis parturient bibendum iaculis felis.
+  [You can do links!](https://sendgrid.com)
+
+  A consequat vestibulum per feugiat massa taciti, accumsan nascetur vehicula est phasellus in, facilisis parturient bibendum iaculis felis.
+  [You can do links!](https://sendgrid.com)
+
+</call-out>
+
+```no-highlight
+<call-out type="alert">
+  I'm callout infor
+</call-out>
+```
+
+<call-out type="alert">
+
+  **Info callout**
+
+  A consequat vestibulum per feugiat massa taciti, accumsan nascetur vehicula est phasellus in, facilisis parturient bibendum iaculis felis.
+  [You can do links!](https://sendgrid.com)
+
+  A consequat vestibulum per feugiat massa taciti, accumsan nascetur vehicula est phasellus in, facilisis parturient bibendum iaculis felis.
+  [You can do links!](https://sendgrid.com)
+
+</call-out>
+

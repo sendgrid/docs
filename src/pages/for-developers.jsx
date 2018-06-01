@@ -16,6 +16,11 @@ class ForDevelopers extends Component {
   }
 
   render() {
+    const url = '/foo/bar/new/';
+
+    const parts = url.split('/');
+    console.log(parts);
+
     return (
       <div className="for-developers">
         <div className="container for-devs-callouts">

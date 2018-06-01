@@ -2,19 +2,20 @@ import React from 'react';
 import Group from '../components/Group';
 import CATEGORIES from '../constants/categories';
 import GROUPS from '../constants/groups';
+import './category.scss';
 
 export default class CategoryTemplate extends React.Component {
   renderGroups() {
-    const allGroups = Object.keys(GROUPS).map(group => (
-      <Group key={group} edges={this.props.data.allMarkdownRemark.edges} slug={group} />
+    return this.props.data.docs.group.map(group => (
+      <div key={group.fieldValue} className="category-container col-md-6">
+        <h2>{group.fieldValue}</h2>
+        <Group edges={group.edges} />
+      </div>
     ));
-
-    return allGroups;
   }
 
   render() {
     const { pathContext } = this.props;
-    console.log(this);
     return (
       <div className="category-container container">
         <h1>{CATEGORIES[pathContext.category]}</h1>
@@ -29,28 +30,28 @@ export default class CategoryTemplate extends React.Component {
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
   query CategoryPage($category: String, $docType: String) {
-    allMarkdownRemark(
+    docs: allMarkdownRemark(
       limit: 1000
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { fields: [frontmatter___title], order: ASC }
       filter: {
-        frontmatter: { category: { eq: $category } }
-        fields: {docType: {eq: $docType}}
+        fields: {
+          docType: {eq: $docType}
+          category: {eq: $category}
+        }
       }
     ) {
-      totalCount
-      edges {
-        node {
-          fields {
-            docType
-            slug
-            permalink
-          }
-          frontmatter {
-            title
-            tags
-            cover
-            date
-            group
+    group(field: fields___group){
+        totalCount
+        fieldValue
+        edges {
+          node {
+            fields {
+              docType
+              slug
+              permalink
+              category
+              title
+            }
           }
         }
       }
