@@ -65,7 +65,7 @@ Telnet does not register backspaces correctly - so you have to type your command
 1. Include a subject line: `Subject: <<EMAIL_SUBJECT>>`
 1. Add the content of the message: `<<MESSAGE>>`. For example: `“This is a test for the SMTP relay."`
 1. Finally, send the email with a period and then press enter: `.[Enter]`
-    <br>The mail server returns `250 Ok: queued as …` - This means the email has been queued to send. This queue moves very quickly, and your.
+    <br>The mail server returns `250 Ok: queued as …` - This means the email has been queued to send. This queue moves very quickly.
 1. Exit the Telnet connection with: `quit`.
 
 Now that you've sent a test email, learn to [integrate your servers with our SMTP API]({{root_url}}/API_Reference/SMTP_API/integrating_with_the_smtp_api.html).

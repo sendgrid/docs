@@ -80,7 +80,7 @@ Unfortunately, we cannot provide estimates of sales tax for an individual custom
 Will my tax amount vary from month to month?
 {% endanchor %}
 
-Taxes charged can vary month-to-month based on local tax laws changing, or if your product mix causes your bill to be ßgreater or less than in previous months.
+Taxes charged can vary month-to-month based on local tax laws changing, or if your product mix causes your bill to be greater or less than in previous months.
 
 {% anchor h3 %}
 How does SendGrid calculate the sales tax owed?
