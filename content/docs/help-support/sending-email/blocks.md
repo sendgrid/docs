@@ -8,6 +8,7 @@ seo:
   keywords: blocks, bounces, hard bounces, blacklists, ISP Blocks, Mail provider blocks
 navigation:
   show: true
+group: "tracking"
 ---
 
 [Blocks]({{root_url}}/Glossary/blocks.html) happen when your message was rejected for a reason related to the message, not the recipient address. This can happen when your mail server IP address has been added to a blacklist or blocked by an ISP, or if the message content is flagged by a filter on the receiving server.

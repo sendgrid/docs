@@ -8,6 +8,7 @@ seo:
   title: A/B Testing Your Campaign
   override: true
   description: Optimize engagement of your campaigns with A/B testing, by sending different versions of your emails to a small subset of your contacts and measuring the engagement results.
+group: "tracking"
 ---
 Optimize the engagement of your Marketing Campaigns with A/B testing. A/B testing allows you to send different versions of your emails to small subsets of your contacts.
 
@@ -28,14 +29,14 @@ When recipients interact with the A/B test emails, you can compare the engagemen
 
  *To set up an A/B test on an existing campaign:*
 
-1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**. 
-1. Locate the campaign you want to A/B test and click on the campaign to open it in the editor it was created in. 
+1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**.
+1. Locate the campaign you want to A/B test and click on the campaign to open it in the editor it was created in.
 1. Depending on the editor used to create the campaign, A/B testing is located on either the *Settings* tab or the *A/B Testing* tab.
-1. Once you have located the A/B Testing settings, toggle the *Activate A/B Testing* switch to **ON**. 
+1. Once you have located the A/B Testing settings, toggle the *Activate A/B Testing* switch to **ON**.
 
 {% anchor h2 %} Choose the Type of A/B Test To Run {% endanchor %}
 
-When you are A/B testing your email campaigns, you want to optimize for a specific metric. Determine whether you want to optimize your Open Rates, by testing the Subject Line; or your Click Rates, by testing the Email Content. 
+When you are A/B testing your email campaigns, you want to optimize for a specific metric. Determine whether you want to optimize your Open Rates, by testing the Subject Line; or your Click Rates, by testing the Email Content.
 
 {% info %}
 You can test up to 6 different variations for each A/B test campaign.
@@ -50,9 +51,9 @@ You can test up to 6 different variations for each A/B test campaign.
 - **Email Content - Optimize Click Rates**
 
 	Select the Email Content A/B test to optimize the Click Rate of your email campaign, since the recipient will not see this content unless they open your email.
-		
+
     High click rates means that you have compelling content and calls to action (CTAs).
-    
+
 {% anchor h2 %} Adding Your Email Versions {% endanchor %}
 
 Enter the different versions of your email where you would normally edit that piece of content in you email campaign.
@@ -64,7 +65,7 @@ Enter the different versions of your email where you would normally edit that pi
 - **Email Content Testing**
 
   For email content testing, you will see additional tabs at the top of the content area, one for each email content variation. The number of tabs you see will depend on how many versions you have decided to test.
-  
+
   Make edits to each of your email content variations by selecting one of the tabs.
 
 {% info %}
@@ -129,7 +130,7 @@ When a variation wins, based on your criteria and duration, you will be notified
   ![]({{root_url}}/images/ab_testing_3.png "Choose a winner badge")
 
   ![]({{root_url}}/images/ab_testing_2.png "Manually choose a test winner")
-  
+
 {% info %}
 **A/B Testing Tip - Manually Picking the Winning Variation**
 

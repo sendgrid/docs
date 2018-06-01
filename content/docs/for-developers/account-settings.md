@@ -1,6 +1,7 @@
 ---
-title: "No Category"
-group: "foo-bar"
+title: "Sending Group"
+category: "sending-email"
+group: "sending"
 ---
 
 ## Headers

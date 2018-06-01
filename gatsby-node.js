@@ -80,10 +80,9 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
       cat = cat.split('/');
       cat = (cat.length > 1 && cat[1].length) ? cat[1] : 'uncategorized';
     }
-
     createNodeField({ node, name: 'category', value: cat });
 
-    let group = null;
+    let group = 'ungrouped';
     if (
       Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
       Object.prototype.hasOwnProperty.call(node.frontmatter, 'group')
@@ -91,6 +90,17 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
       group = node.frontmatter.group;
     }
     createNodeField({ node, name: 'group', value: group });
+
+    let title;
+    if (
+      Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
+      Object.prototype.hasOwnProperty.call(node.frontmatter, 'title')
+    ) {
+      title = node.frontmatter.title;
+    } else {
+      title = parsedFilePath.name.replace('-', '');
+    }
+    createNodeField({ node, name: 'title', value: title });
   }
 };
 
@@ -179,9 +189,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         // add it to contentNode
         cat.internal.contentDigest = contentDigest;
 
-        // Create node with the gatsby createNode() API
-        // createNode(cat);
-
         // Create "/for-developers/<category-slug>" pages.
         createPage({
           path: `/for-developers/${_.kebabCase(category)}/`,
@@ -192,7 +199,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           },
         });
       });
-
 
       const helpCategoryList = Array.from(helpCategorySet);
       helpCategoryList.forEach((category, i) => {
@@ -206,6 +212,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             type: 'helpSupportCategories',
           },
         };
+
         // Get content digest of node. (Required field)
         const contentDigest = crypto
           .createHash('md5')
@@ -214,9 +221,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
         // add it to userNode
         cat.internal.contentDigest = contentDigest;
-
-        // Create node with the gatsby createNode() API
-        // createNode(cat);
 
         // Create "/help-support/<category-slug>" pages.
         createPage({
@@ -231,7 +235,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     }));
   });
 };
-
 
 exports.modifyWebpackConfig = ({ config, stage }) => {
   if (stage === 'build-javascript') {

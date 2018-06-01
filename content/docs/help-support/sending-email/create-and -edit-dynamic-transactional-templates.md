@@ -9,6 +9,7 @@ seo:
   override: true
   description: Transactional email templates are pre-coded email layouts that anyone can use to easily create and send transactional emails.
   keywords: transactional email templates, email template, template engine
+group: "magento"
 ---
 
 - [Create a template](#-Create-a-template)
@@ -19,7 +20,7 @@ seo:
 - [Activate your template](#-Activate-your-template)
 
 {% info %}
-The maximum number of transactional templates and versions per user ID is limited to 300. This means you can have 300 templates with 1 version each, or fewer templates with more versions of each template. 
+The maximum number of transactional templates and versions per user ID is limited to 300. This means you can have 300 templates with 1 version each, or fewer templates with more versions of each template.
 {% endinfo %}
 
 {% info %}
@@ -31,11 +32,11 @@ Create a template
 {% endanchor h2 %}
 
 1. Open the [Transactional Templates](https://sendgrid.com/dynamic_templates) page and click **Create Template**.
-1. Add a unique template name in the dialogue box and then click **Save**. 
-1. Click **Add Version**. 
+1. Add a unique template name in the dialogue box and then click **Save**.
+1. Click **Add Version**.
 1. Select the editor you want to use to build your template.
 
-The Code Editor is perfect for users who are  creating or editing custom HTML. It offers a robust environment to upload images, backed by a feature-packed editor – complete with split-screen preview, error flagging, scroll-syncing, syntax highlighting and more. 
+The Code Editor is perfect for users who are  creating or editing custom HTML. It offers a robust environment to upload images, backed by a feature-packed editor – complete with split-screen preview, error flagging, scroll-syncing, syntax highlighting and more.
 
 The Design Editor, complete with HTML access to each content module, offers powerful “what you see is what you get” (WYSIWYG) editing. It features a diverse library of content blocks, allowing you to build beautiful templates quickly and intuitively. Once placed into your template, each module offers access to edit the HTML and a robust panel of settings – perfect for customizing content precisely to your needs.
 
@@ -55,10 +56,10 @@ Using the Code Editor
 
 *To edit a template using the Code Editor:*
 
-1. If you selected the Code Editor, copy and paste your HTML code into the code editor. 
-<br></br>If you paste in an email template, it is likely that you will overwrite the default and very basic email HTML that is provided in the code editor. 
+1. If you selected the Code Editor, copy and paste your HTML code into the code editor.
+<br></br>If you paste in an email template, it is likely that you will overwrite the default and very basic email HTML that is provided in the code editor.
 2. To add an image to your template, select the **images** icon above the HTML code.
-3. Select the image you want to add from your image library. To add more images to your library, drag them into the box at the top of the library or click **choose images to upload**. 
+3. Select the image you want to add from your image library. To add more images to your library, drag them into the box at the top of the library or click **choose images to upload**.
 4. Select the **Image Details** tab and copy the URL in the *Image Source URL* tab by clicking **Copy URL**.
 5. Paste this URL in an image source tag in your campaign or template's HTML.
 Example: `<img src="your image URL here">`
@@ -77,10 +78,10 @@ Preview and test your template
 SendGrid suggests previewing and testing your template once you have created it to ensure that the format and layout look the way you expect.
 
 *To preview your template:*
- 
+
 1. Select **Preview**.  <br></br>A window pops out with a preview of the email that you’re going to test, with the option to view the template formatted for both mobile and desktop platforms.
-1. Click **Send Test** to send a test email using your new template. 
-1. Fill in the *recipient* and *subject line* fields and then click **Send**.  
+1. Click **Send Test** to send a test email using your new template.
+1. Fill in the *recipient* and *subject line* fields and then click **Send**.
 Any Substitution tags will not be populated in this test, but you will be able to confirm the layout and format of your template.
 
 {% anchor h2 %}
@@ -90,7 +91,7 @@ Activate your template
 *To activate your template:*
 
 1. Navigate to the template you wish to use and select the action menu.
-1. Select **Make Active**.  
+1. Select **Make Active**.
 
 {% info %}
 
@@ -105,7 +106,7 @@ Duplicate a Template
 *To duplicate a template:*
 
 1. Navigate to the template you wish to use and select the action menu.
-1. Select **Duplicate**.  
+1. Select **Duplicate**.
 
 This creates a clone, giving it a name that includes the original version name, the word “copy,” and today’s date. This duplicate version will not be active until you activate it.
 

@@ -31,7 +31,7 @@ export default class siteMap extends React.Component {
           <h3>For Developers Categories</h3>
           {forDevsCats.group.map(cat => (
             <div key={cat.fieldValue}>
-              <Link to={`/help-support/${kebabCase(cat.fieldValue)}/`}>
+              <Link to={`/for-developers/${kebabCase(cat.fieldValue)}/`}>
                 {cat.fieldValue} ({cat.totalCount})
               </Link>
             </div>
@@ -55,6 +55,7 @@ export default class siteMap extends React.Component {
               <div><strong>uri: </strong><Link to={doc.node.fields.permalink}>{doc.node.fields.permalink} </Link></div>
               <div><strong>category: </strong>{doc.node.fields.category}</div>
               <div><strong>group: </strong>{doc.node.fields.group}</div>
+              <div><strong>path: </strong>{doc.node.fileAbsolutePath}</div>
             </div>
           ))}
         </div>
@@ -105,6 +106,7 @@ export const pageQuery = graphql`
             category
             group
           }
+          fileAbsolutePath
           id
           frontmatter {
             title
