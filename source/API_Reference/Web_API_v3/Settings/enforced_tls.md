@@ -12,7 +12,7 @@ support TLS or have a valid certificate. See the
 information on opportunistic TLS.
 
 {% info %}
-If either setting is enabled and the recipient does not support TLS or have a 
+If either setting is enabled and the recipient does not support TLS 1.1 or higher or have a 
 valid certificate, we drop the message and send a block event with "TLS required 
 but not supported" as the description.
 {% endinfo %}
