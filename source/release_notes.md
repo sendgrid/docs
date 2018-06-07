@@ -32,6 +32,23 @@ The following new features and changes to the service are available.
 </table>
 
 {% anchor h2 %}
+6 June 2018
+{% endanchor %}
+
+{% anchor h3 %}
+TLS security 
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/code_icon.png" alt="An update to the API" ></td>
+    <td>SendGrid now uses Transport Layer Security (TLS) protocol v1.1 to send encrypted mail. If you have the Enforce TLS feature activated on one of your SendGrid accounts, messages sent to inbox providers that can only accept TLS v1.0 trigger a “TLS required but not supported” drop event. Based on our testing, most inbox providers support TLS versions v1.1 and above.</td>
+  </tr>
+</table>
+
+If you have the Enforce TLS feature activated, but you do not need to send all of your email encrypted, you can deactivate enforced TLS with the API. By default, SendGrid sends all email with opportunistic TLS, which encrypts email whenever possible, but switches to unencrypted transmission if necessary.
+
+{% anchor h2 %}
 15 May 2018
 {% endanchor %}
 
