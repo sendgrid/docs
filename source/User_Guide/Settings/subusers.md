@@ -20,7 +20,6 @@ Subusers help you segment your email sending and API activity. You assign permis
 - [Manage Subusers](#-Manage-Subusers)
 - [Optional Profile Information](#-Optional-Profile-Information)
 - [Allocating or Removing Credits From a Subuser](#-Allocating-or-Removing-Credits-From-a-Subuser)
-- [Adding an authenticated domain](#-adding-an-authenticated-domain)
 - [Monitoring Subuser email content](#-Monitoring-Subuser-email-content)
 - [Impersonating a Subuser](#-Impersonating-a-Subuser)
 - [Export Subuser Information](#-Export-Subuser-Information)
@@ -177,5 +176,5 @@ Deleting a Subuser account cannot be undone. Please make sure that you are ready
 Additional Resources
 {% endanchor h2 %}
 
-- [Domain Whitelabel]({{root_url}}/Classroom/Basics/Whitelabel/setup_domain_whitelabel.html)
+- [Assigning a Domain Whitelabel to a subuser]({{root_url}}/Classroom/Basics/Whitelabel/setup_domain_whitelabel.html#-Assigning-a-subuser)
 - [Teammates]({{root_url}}/User_Guide/Settings/teammates.html)
