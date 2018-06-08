@@ -33,7 +33,7 @@ You can only set up reverse DNS if you have a dedicated IP.
 What is reverse DNS?
 {% endanchor %}
 
-Setting up reverse DNS on IP addresses allows mailbox providers to verify the sender when they do a reverse DNS lookup upon receipt of the emails you send. When you update your DNS provider with a DNS record provided by SendGrid, and then send mail over your IP, the recipient's email service provider performs a reverse DNS lookup (rDNS) using an A Record (address record). An A Record maps your domain to your IP address. When a mailbox provider looks up your A Record, they see your SendGrid IP address. When they look at your IP address, they see the rDNS that match your A Record. This circular checking proves your SendGrid IP association with your domain and your domain association with your SendGrid IP.
+Setting up reverse DNS on an IP address allows mailbox providers to verify the sender when they do a reverse DNS lookup upon receipt of the emails you send. When you update your DNS provider with a DNS record provided by SendGrid, and then send mail over your IP, the recipient's email service provider performs a reverse DNS lookup (rDNS) using an A Record (address record). An A Record maps your domain to your IP address. When a mailbox provider looks up your A Record, they see your SendGrid IP address. When they look at your IP address, they see the rDNS that matches your A Record. This circular checking proves your SendGrid IP association with your domain and your domain association with your SendGrid IP.
 
 {% anchor h2 %}
 Key terminology
@@ -49,7 +49,7 @@ An Internet Protocol (IP) Address is a unique numerical address that defines an 
 DNS
 {% endanchor %}
 
-DNS stands for Domain Name System. This is a naming system for domains on the internet. When SendGrid refers to your DNS, we are talking about your domain name that you want to send emails from, or that you want to link images from. When we talk about your DNS provider, we are talking about the service that hosts your domain name. For example, GoDaddy, Rackspace, or Cloudflare. For more information about DNS, see our [DNS glossary page]({{root_url}}/Glossary/dns.html).
+DNS stands for Domain Name System. This is a naming system for domains on the internet. When SendGrid refers to your DNS, we are talking about your domain name that you want to send emails from. When we talk about your DNS provider, we are talking about the service that hosts your domain name. For example, GoDaddy, Rackspace, or Cloudflare. For more information about DNS, see our [DNS glossary page]({{root_url}}/Glossary/dns.html).
 
 {% anchor h3 %}
 A Record
@@ -57,7 +57,7 @@ A Record
 
 The A Record (address record) links your dedicated IP address to your chosen domain. It does this by mapping your domain to your IP address through records that you export from SendGrid and upload into your DNS host.
 
-If your domain+ subdomain is `marketing.example.com`, and your dedicated IP address is `101.10.10.101`, setting up the SendGrid A Record links your domain with your dedicated IP address - so anything sent over your domain associates with your dedicated IP, and anything sent over your dedicated IP associates with your domain.
+If your domain+subdomain is `marketing.example.com`, and your dedicated IP address is `101.10.10.101`, setting up the SendGrid A Record links your domain with your dedicated IP address - so anything sent over your domain associates with your dedicated IP, and anything sent over your dedicated IP associates with your domain.
 
 {% anchor h3 %}
 Subdomain
@@ -79,7 +79,7 @@ To set up reverse DNS, you must submit the DNS records provided by SendGrid to y
 1. In the reverse DNS section, click **Get Started**.
 1. Next, select the IP to set up reverse DNS.
 1. Add a subdomain. For more information about picking a subdomain, see [Subdomains](#-Subdomain).
-1. Select or enter a domain you want to associate with the IP. Make sure that you only enter the name of your root domain. Do not include `www` or `http://www` in this field! Your domain needs to match the domain of your from address on the emails you are sending out. For example, if I am setting up the domain `example.sendgrid.com`, I would set my domain to be `sendgrid.com`. Click **Save** and then **Confirm**. An individual IP address can only have reverse DNS set up for a single domain, but a domain can have reverse DNS set up for multiple IPs. This allows for you to use IP pooling for your email sending.
+1. Select or enter a domain you want to associate with the IP. Make sure that you only enter the name of your root domain. Do not include `www` or `http://www` in this field! Your domain needs to match the domain of your from address on the emails you are sending out. For example, if I am setting up the domain `example.sendgrid.com`, I would set my domain to be `sendgrid.com`. Click **Save** and then **Confirm**. An individual IP address can only have one reverse DNS set up.
 1. Next, you need to add all of the A Records on this screen to your DNS host. This process varies depending on your DNS host. For videos on how to add your A Records to some popular DNS service providers, check out these [videos](https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/providers.html).
 
 {% info %}
@@ -110,7 +110,7 @@ Only a parent account can set up reverse DNS for an IP address. For a subuser ac
 What do I do if I have more than 10 IPs?
 {% endanchor %}
 
-There is a character limit in SPF (sender policy framework) records that means that if you have more than 10 IP addresses, they will not fit in the record. When this is true, we will provide you with the generic SendGrid SPF record which includes all IPs at SendGrid, not just yours. If you would like to secure your SPF record only to include your IPs, you can chain multiple SPF records together manually. For more information see Open SPF’s website.
+There is a character limit in SPF (sender policy framework) records that means that if you have more than 10 IP addresses, they will not fit in the record. When this is true, we will provide you with the generic SendGrid SPF record which includes all IPs at SendGrid, not just yours. If you would like to secure your SPF record only to include your IPs, you can chain multiple SPF records together manually. For more information see Open SPF’s [website](http://www.openspf.org/).
 
 {% anchor h2 %}
 Additional resources
