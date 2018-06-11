@@ -8,6 +8,7 @@ seo:
   keywords: spam reports, recipient spam report, recipient marked as spam, spam email report
 navigation:
   show: true
+group: "tracking"
 ---
 
 [Spam reports]({{root_url}}/Glossary/spam_reports.html) happen when a recipient indicates that they think your email is [spam]({{root_url}}/Glossary/spam.html) and then their email provider tells SendGrid. The list provided here can be filtered by email address or date.

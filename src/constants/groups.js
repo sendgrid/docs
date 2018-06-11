@@ -10,7 +10,7 @@ const GROUPS = {
   'aws': 'AWS',
   'google': 'Google',
   'azure': 'Azure',
-  'magento': 'magento',
+  'magento': 'Magento',
   'marketing-campaigns': 'Marketing Campaigns',
   'building-your-list': 'Building your list',
   'segmenting-your-list': 'Segmenting your list',
@@ -20,6 +20,7 @@ const GROUPS = {
   'sender-authentication': 'Sending Authentication',
   'dedicated-ips': 'Dedicated IPs',
   'teammates-and-subusers': 'Teammates & Subusers',
+  'ungrouped': 'Ungrouped',
 };
 
 export default GROUPS;

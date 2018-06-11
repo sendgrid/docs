@@ -7,13 +7,15 @@ navigation:
 seo:
   title: How to send an email with Dynamic Transactional Templates
   override: true
-  description: 
+  description:
+group: email-activity
+
 ---
 
 - [Before you begin](#-Before-you-begin)
 - [Design a dynamic transactional template](#-Design-a-dynamic-template)
 - [Send a transactional email](#-Send-a-transactional-email)
- 
+
 {% anchor h2 %}
 Before you begin
 {% endanchor %}
@@ -29,7 +31,7 @@ Design a dynamic template
 {% endanchor %}
 
 1. Open the [transactional templates](https://sendgrid.com/dynamic_templates) page and click **Create Template**.
-1. Add a unique template name and then click **Save**. 
+1. Add a unique template name and then click **Save**.
 1. To begin editing your new template, click **Add Version**.
 1. Select an editor and click **Continue**.
 1. Design your template. For more information on designing a Dynamic Transactional Template using the Design Editor or Code Editor, see [Create and edit Dynamic Transactional Templates]({{root_url}}/User_Guide/Transactional_Templates/create_and_edit_dynamic_transactional_templates.html).
@@ -91,7 +93,7 @@ curl --request GET \
   --header 'Content-Type: application/json'
 {% endcodeblock %}
 
-You can also copy your template ID from the app and paste it into your call. 
+You can also copy your template ID from the app and paste it into your call.
 
 ![]({{root_url}}/img/dynamic_template_id.png "Dynamic Template ID")
 

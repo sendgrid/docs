@@ -8,6 +8,8 @@ seo:
   keywords: Global suppressions, global unsubscribes, global email unsubscribe, global email suppression
 navigation:
   show: true
+group: email-activity
+
 ---
 
 Global unsubscribes happen when a recipient indicates that they would like to opt out from any email that you send by clicking on the [Unsubscribe From All Emails link]({{root_url}}/User_Guide/Suppressions/global_unsubscribes.html#-Global-Unsubscribe-Substitution-Tags) within your emails. The list provided here can be filtered by email address or date.

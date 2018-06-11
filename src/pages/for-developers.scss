@@ -2,8 +2,85 @@
 @import '../scss/global/mixins';
 $card-gutter: 30px;
 
+.for-devs-libraries,
+.for-devs-featured {
+  margin-bottom: $scaleup-8;
+}
+
+.for-developers {
+  overflow: hidden;
+  position: relative;
+
+  .page-title {
+    color: #fff;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: $scaleup-5;
+    margin-bottom: $scaleup-5;
+
+    @include colfax(600);
+  }
+}
+
 .for-devs-callouts {
   padding: $scaleup-3 0;
+  position: relative;
+
+  .card {
+    border: none;
+  }
+}
+
+.for-devs-callouts::before {
+  background: $slate;
+  background: linear-gradient(to bottom, darken($slate, 10%), $slate);
+  content: "";
+  height: 210%;
+  left: -75%;
+  position: absolute;
+  top: 0;
+  transform: rotate(-9deg);
+  transform-origin: left top;
+  width: 250%;
+  z-index: 0;
+}
+
+.for-devs-featured {
+  position: relative;
+}
+
+.for-devs-featured::before {
+  background: $slate-02;
+  content: "";
+  height: 55%;
+  left: -75%;
+  position: absolute;
+  top: 350px;
+  transform: rotate(-9deg);
+  transform-origin: left top;
+  width: 250%;
+  z-index: 0;
+}
+
+.for-devs-callouts__bar {
+  height: 20px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: linear-gradient(to right,  lighten($mantis, 30%), $mantis);;
+}
+
+.for-devs-callouts__get-started-btns {
+  width: 100%;
+  grid-column-gap: 4%;
+
+  .btn {
+    flex: 1;
+    padding-left: $scaleup-1;
+    padding-right: $scaleup-1;
+  }
 }
 
 .for-devs-glossary {

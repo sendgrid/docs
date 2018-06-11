@@ -8,6 +8,7 @@ seo:
   title: Marketing Templates
   override: true
   description:
+group: statistics
 ---
 
 <iframe src="https://player.vimeo.com/video/120738522" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -29,8 +30,8 @@ Creating a New Template
 
 *To create a new template:*
 
-1. From the left-hand navigation, select **Campaigns**, and then select **Templates**. 
-2. Click **Create New Template**. 
+1. From the left-hand navigation, select **Campaigns**, and then select **Templates**.
+2. Click **Create New Template**.
 3. Select the editor you want to use, and then click **Continue**.
 
 {% info %}
@@ -62,8 +63,8 @@ You can easily duplicate a pre-built template provided by SendGrid.
 
 *To duplicate a SendGrid template:*
 
-1. From the left-hand navigation, select **Campaigns**  
-1. Click **Templates**. 
+1. From the left-hand navigation, select **Campaigns**
+1. Click **Templates**.
 1. Locate the template you want to duplicate and then click the action menu.
 1. Select **Duplicate**. The duplicate opens in the design editor.
 
@@ -73,7 +74,7 @@ Duplicating a Custom Template
 
 *To duplicate one of your custom templates:*
 
-1. From the left-hand navigation, select **Marketing Campaigns**,  
+1. From the left-hand navigation, select **Marketing Campaigns**,
 1. Click **Templates**.
 1. Click the **action menu** and select **Duplicate**.
 

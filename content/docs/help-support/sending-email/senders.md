@@ -8,6 +8,8 @@ seo:
   title: Senders
   override: true
   description:
+group: statistics
+
 ---
 * [Before you Begin](#-Before-you-Begin)
 * [Adding a Sender](#-Adding a Sender)
