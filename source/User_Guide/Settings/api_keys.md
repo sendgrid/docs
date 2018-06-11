@@ -75,6 +75,104 @@ When assigning permissions to your API key, select one of the following levels o
 You may not give an API key greater permissions than you currently have.
 {% endinfo %}
 
+<table>
+  <tr>
+    <th>Scope</th>
+    <th>Description</th>
+    <th>Permission Levels</th>
+  </tr>
+  <tr>
+    <td>API Keys</td>
+    <td>Allows the API key holder to create and edit existing API keys. </td>
+    <td>No Access, Read Access, Full Access</td>
+  </tr>
+  <tr>
+    <td>Alerts</td>
+    <td>Allows the API key holder to manage alerts. </td>
+    <td>No Access, Read Access, Full Access</td>
+  </tr>
+  <tr>
+    <td>Category Management</td>
+    <td>Allows the API key holder to create and manage categories.</td>
+    <td>No Access, Read Access, Full Access</td>
+  </tr>
+  <tr>
+    <td>Email Activity<br>* Messages</td>
+    <td>Allows the API key holder to view, filter, and download email activity statistics. <br>**Note** this service must be purchased separately. For more information, see the [documentation]({{root_url}}//User_Guide/email_activity_feed.html).</td>
+    <td>No Access, Read Access</td>
+  </tr>
+  <tr>
+    <td>IP Management</td>
+    <td>Allows the API key holder to view, add, or delete whitelisted IP addresses.</td>
+    <td>No Access, Read Access, Full Access</td>
+  </tr>
+  <tr>
+    <td>Inbound Parse</td>
+    <td></td>
+    <td>No Access, Read Access, Full Access</td>
+  </tr>
+  <tr>
+    <td>Mail Send<br>* Scheduled Sends</td>
+    <td>Allows the API Key holder to send email using the SendGrid V3 API.<br>* Allows the API Key holder to schedule email using the SendGrid V3 API.</td>
+    <td>NoAccess, Full Access<br>No Access, Read Access, Full Access</td>
+  </tr>
+  <tr>
+    <td>Mail Settings<br>* Address Whitelist<br>* BCC<br>* Bounce Purge<br>* Event Notification<br>* Footer<br>* Forward Bounce<br>* Forward Spam<br>* Legacy Email Template<br>* Plain Content<br>* Spam Checker</td>
+    <td>Allows the API key holder to view and update all mail settings listed. </td>
+    <td>No Access, Read Access, Full Access</td>
+  </tr>
+  <tr>
+    <td>Marketing Campaigns</td>
+    <td>Allows the API Key holder to view, create, and delete campaigns. </td>
+    <td>No Access, Full Access</td>
+  </tr>
+  <tr>
+    <td>Partners</td>
+    <td>Allows the API key holder to view and edit partner settings.</td>
+    <td>No Access, Read Access, Full Access</td>
+  </tr>
+  <tr>
+    <td>Security</td>
+    <td></td>
+    <td>No Access, Read Access, Full Access</td>
+  </tr>
+  <tr>
+    <td>Stats<br>* Browser Stats<br>* Category Stats<br>* Email Clients and Devices<br>* Geographical<br>* Global Stats<br>* Mailbox Provider Stats<br>* Parse Webhook<br>* Stats Overview<br>* Subuser Stats</td>
+    <td>Allows the API key holder to view stats according to the filters listed. </td>
+    <td>No Access, Read Access</td>
+  </tr>
+  <tr>
+    <td>Subusers</td>
+    <td>Allows the API key holder to view, create, manage, and delete subusers. </td>
+    <td>No Access, Read Access, Full Access</td>
+  </tr>
+  <tr>
+    <td>Suppressions<br>* Unsubscribe Groups</td>
+    <td></td>
+    <td>No Access, Read Access, Full Access</td>
+  </tr>
+  <tr>
+    <td>Template Engine</td>
+    <td>Allows the API key holder to create, edit, and delete templates. </td>
+    <td>No Access, Read Access, Full Access</td>
+  </tr>
+  <tr>
+    <td>Tracking<br>* Click Tracking<br>* Google Analytics <br>* Open Tracking<br>* Subscription Tracking</td>
+    <td>Allows the API key holder to view and manage tracking settings. </td>
+    <td>No Access, Read Access, Full Access</td>
+  </tr>
+  <tr>
+    <td>User Account<br>* Enforced TLS<br>* Timezone</td>
+    <td>* Allows the API key holder to view and update Enforced TLS settings. <br>* Allows the API key holder to view and update the time zone the account is associated with. </td>
+    <td>No Access, Read Access, Full Access</td>
+  </tr>
+  <tr>
+    <td>Whitelabel (Sender Authentication)</td>
+    <td>Allows the API key holder to view, edit, and delete authenticated domains, senders, IPs, and links. </td>
+    <td>No Access, Read Access, Full Access</td>
+  </tr>
+</table>
+
 {% anchor h2 %}
 Managing API Keys
 {% endanchor %}
