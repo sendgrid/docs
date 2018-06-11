@@ -8,6 +8,7 @@ seo:
   keywords: subscription manager, suppression manager, unsubscribe manager, unsubscribe manager
 navigation:
   show: true
+group: statistics
 ---
 
 <iframe src="https://player.vimeo.com/video/221494705" width="500" height="312" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>

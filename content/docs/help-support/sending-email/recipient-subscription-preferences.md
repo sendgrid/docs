@@ -8,6 +8,7 @@ seo:
   keywords: unsubscribe page, suppression page, recipient unsubscribe
 navigation:
   show: true
+group: statistics
 ---
 
 Emails that are sent with an unsubscribe group specified will have two links at the bottom of the email: an “Email Preferences” link, and an “Unsubscribe” link.

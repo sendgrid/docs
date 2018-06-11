@@ -8,6 +8,7 @@ seo:
   keywords: invalid emails, malformed emails
 navigation:
   show: true
+group: email-activity
 ---
 
 An invalid email occurs when you attempt to send email to an address that is formatted in a manner that does not meet internet email format standards or the email does not exist at the recipient's mail server. Examples include addresses without the “@” sign or addresses that include certain special characters and/or spaces. This response can come from our own server or the recipient mail server.

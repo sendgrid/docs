@@ -2,13 +2,14 @@ import React from 'react';
 import Group from '../components/Group';
 import CATEGORIES from '../constants/categories';
 import GROUPS from '../constants/groups';
+import NavSub from '../components/NavSub';
 import './category.scss';
 
 export default class CategoryTemplate extends React.Component {
   renderGroups() {
     return this.props.data.docs.group.map(group => (
       <div key={group.fieldValue} className="category-container col-md-6">
-        <h2>{group.fieldValue}</h2>
+        <h2>{GROUPS[group.fieldValue]}</h2>
         <Group edges={group.edges} />
       </div>
     ));
@@ -16,11 +17,15 @@ export default class CategoryTemplate extends React.Component {
 
   render() {
     const { pathContext } = this.props;
+    console.log(this.props);
     return (
-      <div className="category-container container">
-        <h1>{CATEGORIES[pathContext.category]}</h1>
-        <div className="row">
-          {this.renderGroups()}
+      <div>
+        <NavSub />
+        <div className="category-container container">
+          <h1>{CATEGORIES[pathContext.category]}</h1>
+          <div className="row">
+            {this.renderGroups()}
+          </div>
         </div>
       </div>
     );

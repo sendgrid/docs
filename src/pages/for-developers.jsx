@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Link from 'gatsby-link';
 import GlossaryPartial from '../components/GlossaryPartial';
 import FOR_DEVS_CARDS from '../constants/forDevelopersCards';
+import Libaries from '../components/Libaries';
 import './for-developers.scss';
 
 class ForDevelopers extends Component {
@@ -16,25 +17,27 @@ class ForDevelopers extends Component {
   }
 
   render() {
-    const url = '/foo/bar/new/';
-
-    const parts = url.split('/');
-    console.log(parts);
-
     return (
       <div className="for-developers">
-        <div className="container for-devs-callouts">
+        <div className="container for-devs-callouts m-bottom-6">
+          <h1 className="page-title">For Developers</h1>
           <div className="row">
-            <div className="col-lg-4 col-offset-lg-2 card">API</div>
-            <div className="col-lg-4 card">Get Started</div>
+            <div className="col-lg-4 col-offset-lg-2 card ta-center">
+              <div className="for-devs-callouts__bar" />
+              <h2>API</h2>
+              <Link to="/" className="btn btn-primary center">Visit API reference</Link>
+            </div>
+            <div className="col-lg-4 card ta-center">
+              <div className="for-devs-callouts__bar" />
+              <h2>Get Started</h2>
+              <div className="row for-devs-callouts__get-started-btns">
+                <Link to="/" className="btn btn-primary col-sm-6">Use API</Link>
+                <Link to="/" className="btn btn-primary col-sm-6">Use SMTP</Link>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="libraries container">
-          <div className="card">
-            <h2>Open Source Libraries</h2>
-            <div className="is-p">Prebuilt libraries and sample code for popular languages.</div>
-          </div>
-        </div>
+        <Libaries />
         <div className="for-devs-featured container">
           <h2>Featured Resources</h2>
           <div className="row">

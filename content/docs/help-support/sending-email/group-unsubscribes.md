@@ -8,6 +8,8 @@ seo:
   keywords: Group suppressions, Group unsubscribes, Group email unsubscribe, Group email suppression
 navigation:
   show: true
+group: email-activity
+
 ---
 
 A group unsubscribe happens when a recipient indicates that they would like to opt out from a specific type of email that you send via the [Unsubscribe Groups link]({{root_url}}/User_Guide/Suppressions/group_unsubscribes.html#-Group-Unsubscribe-Substitution-Tag) from within your email. The list provided here can be filtered by email address or date.

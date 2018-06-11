@@ -3,11 +3,12 @@ layout: page
 weight: 50
 title: Using Handlebars
 navigation:
-  show: false 
+  show: false
 seo:
   title: Using Handlebars
   override: true
-  description:
+	description:
+group: statistics
 ---
 
 - [Handlebars overview](#-Handlebars-overview)
@@ -34,9 +35,9 @@ Currently, dynamic templates only supports the following helpers:
 * length(a)  - evaluates arrays and strings
 * isBefore(a, b) - evaluates epoch form dates
 * isAfter(a, b) - evaluates epoch form dates
-* format_date(date, format, timezone) - epoch form dates, format follows [these guidelines](http://support.sas.com/documentation/cdl/en/lrdict/64316/HTML/default/viewer.htm#a003169814.htm), timezone is +/-n 
+* format_date(date, format, timezone) - epoch form dates, format follows [these guidelines](http://support.sas.com/documentation/cdl/en/lrdict/64316/HTML/default/viewer.htm#a003169814.htm), timezone is +/-n
 
-Here are some example scenarios you can use to substitute data with Handlebars. 
+Here are some example scenarios you can use to substitute data with Handlebars.
 
 {% anchor h3 %}
 Substitution
@@ -47,26 +48,26 @@ Substitution
 *HTML should contain:*
 {% codeblock %}
 <p>Hello {{firstName}}</p>
-{% endcodeblock %} 
+{% endcodeblock %}
 
 *Test Data should contain:*
 {% codeblock %}
 {"firstName":"Ben"}
 {% endcodeblock %}
 
-Resulting replacement: 
+Resulting replacement:
 
 <p>Hello Ben</p>
 
 **Deep object replacement**
 
-*HTML should contain:* 
+*HTML should contain:*
 
 {% codeblock %}
 <p>Hello {{user.profile.firstName}}</p>
 {% endcodeblock %}
 
-*Test Data should contain:* 
+*Test Data should contain:*
 
 {% codeblock %}
 {
@@ -90,7 +91,7 @@ Resulting replacement:
 <p>Hello {{user.profile.firstName}}</p>
 {% endcodeblock %}
 
-*Test Data should contain:* 
+*Test Data should contain:*
 
 {% codeblock %}
 {
@@ -103,7 +104,7 @@ Resulting replacement:
 }
 {% endcodeblock %}
 
-*Resulting replacement:* 
+*Resulting replacement:*
 
 <p>Hello </p>
 
@@ -113,7 +114,7 @@ Conditionals
 
 **Basic If, Else, Else If**
 
-*HTML should contain:* 
+*HTML should contain:*
 
 {% codeblock %}
 {{#if user.profile.male}}
@@ -126,7 +127,7 @@ Conditionals
 {% endcodeblock %}
 
 
-Test Data should contain: 
+Test Data should contain:
 
 {% codeblock %}
 {
@@ -136,7 +137,7 @@ Test Data should contain:
 }
 }
 {% endcodeblock %}
- 
+
 {% codeblock %}
 {
 “user”:
@@ -145,7 +146,7 @@ Test Data should contain:
 }
 }
 {% endcodeblock %}
- 
+
 {% codeblock %}
 {
 “user”:
@@ -165,7 +166,7 @@ Test Data should contain:
 
 **If w/ root**
 
-*HTML should contain*: 
+*HTML should contain*:
 
 {% codeblock %}
 {{#if user.suspended}}
@@ -173,7 +174,7 @@ Test Data should contain:
 {{/if}}
 {% endcodeblock %}
 
-*Test Data should contain:* 
+*Test Data should contain:*
 
 {% codeblock %}
 {
@@ -189,7 +190,7 @@ Test Data should contain:
 
 **Basic Unless**
 
-*HTML should contain:* 
+*HTML should contain:*
 
 {% codeblock %}
 {{#unless user.active}}
@@ -197,7 +198,7 @@ Test Data should contain:
 {{/unless}}
 {% endcodeblock %}
 
-*Test Data should contain:* 
+*Test Data should contain:*
 
 {% codeblock %}
 {
