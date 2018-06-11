@@ -34,7 +34,7 @@ You can also choose to manually add the `<%asm_preferences_url%>` tag to your em
 
 Alternatively, you can use the `<%asm_preferences_raw_url%>` substitution tag. This will be replaced with just the URL pointing to your [Subscription Preference page]({{root_url}}/User_Guide/Suppressions/recipient_subscription_preferences.html) without the hyperlinked text "Manage Email Preferences".
 
-For more substitution tags, please see our [transactional templates]({{root_url}}/User_Guide/Transactional_Templates/create_edit.html#-Unsubscribe-Substitution-Tags).
+For more substitution tags, please see our [transactional templates]({{root_url}}/User_Guide/Transactional_Templates/create_and_edit_transactional_templates.html#-Adding-unsubscribe-links-to-a-template).
 
 {% anchor h2 %}
 Additional Resources

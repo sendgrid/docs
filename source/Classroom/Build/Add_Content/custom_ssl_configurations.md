@@ -10,7 +10,7 @@ navigation:
 
 If you can't or don't want to use Content Delivery Networks when setting up SSL for click and open tracking, then you can setup custom SSL configuration.
 
-Before Adding a Custom SSL configuration, you need to set up a valid [email link whitelabel](https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/links.html) on your account like this:
+Before Adding a Custom SSL configuration, you need to set up a valid [link branding](https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_link_branding.html) on your account like this:
 
 ![Email Links Whitelabel]({{root_url}}/images/email_link_whitelabel.png)
 
@@ -22,7 +22,7 @@ Before Adding a Custom SSL configuration, you need to set up a valid [email link
 1. Point the CNAME record to your proxy. For example, `CNAME mailing.example.com proxy.example.com`.
 
 {% warning %}
-Don't validate the DNS record more than once, because after changing the CNAME, a second validation fails and the whitelabel stops working.
+Don't validate the DNS record more than once, because after changing the CNAME, a second validation fails and the authentication stops working.
 {% endwarning %}
 
 [Contact SendGrid Support](https://support.sendgrid.com/hc/en-us) to enable SSL click and open tracking.

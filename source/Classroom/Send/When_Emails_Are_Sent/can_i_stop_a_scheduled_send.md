@@ -95,9 +95,9 @@ If you have the flexibility, it's better to schedule mail for off-peak times. Mo
 
 Now that your email has been scheduled and has a batch ID assigned, you can [pause or cancel the send]({{root_url}}/API_Reference/Web_API_v3/cancel_schedule_send.html#-Cancel-Scheduled-Sends) at any time up to 10 minutes before the scheduled send time.
 
-{% info %}
+{% warning %}
 Scheduled sends cancelled less than 10 minutes before the scheduled time are not guaranteed to be cancelled.
-{% endinfo %}
+{% endwarning %}
 
 To only pause your scheduled send, simply set the `status` parameter in your request to "pause". To completely cancel your request, set `status` to "cancel".
 

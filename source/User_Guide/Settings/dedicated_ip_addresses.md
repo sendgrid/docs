@@ -18,6 +18,7 @@ navigation:
 - [Reputation Monitoring for Dedicated IP Accounts](#-Reputation-Monitoring-for-Dedicated-IP-Accounts)
 - [Warming up a Dedicated IP Address](#-Warming-up-a-Dedicated-IP-Address)
 - [Automatic IP Warmup Schedule](#-Automatic-IP-Warmup-Schedule)
+- [Assigning a Dedicated IP address to a subuser](#-Assigning-a-Dedicated-IP-address-to-a-subuser)
 
 {% anchor h2 %}
 What are Dedicated IP Addresses?
@@ -30,7 +31,7 @@ An Internet Protocol (IP) address is a unique numerical address that defines a l
 Why would I want a Dedicated IP Address?
 {% endanchor %}
 
-If you are sending any significant amount of email, we typically suggest sending your marketing and transactional emails to from separate IP addresses. You can learn more from our comprehensive blog post on [whitelabeling and subusers best practices](https://sendgrid.com/blog/whitelabeling-and-subusers-best-practices/).
+If you are sending any significant amount of email, we typically suggest sending your marketing and transactional emails to from separate IP addresses. In addition, it is strongly recommended to associate your sending domain with your new outbound IP address (provided to you by SendGrid).  This is available at no extra cost and can be accomplished by [completing an rDNS setup for your dedicated IP (here's a video tutorial and documentation help)](https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_reverse_dns.html).
 
 We also suggest having at least two promotional IP addresses when your volume reaches 200-300K/month.
 
@@ -71,7 +72,7 @@ Under "Additional Options" you will find the following options:
   * *Allow my parent account to send mail using these IP addresses:* check this if you want your parent account to be able to send over this IP. If you are assigning this IP to a subuser and only want that subuser to have permission to send on this IP, leave this box unchecked.
   * *Allow my subusers to send mail using these IP addresses:* check this to select which subusers can send on this IP address
 
-After purchasing your IP, we strongly encourage you to whitelabel it. [Click here for a step-by-step tutorial explaining how to whitelabel your new IP address.]({{root_url}}/Classroom/Basics/Whitelabel/setup_ip_whitelabel.html)
+After purchasing your IP, we strongly encourage you to set up reverse DNS. For more information about setting up reverse DNS, see [link text]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_reverse_dns.html).
 
 {% info %} Purchasing and adding dedicated IPs can only be performed by the Parent account, or Teammates with either Billing or Admin permissions. {% endinfo %}
 
@@ -97,6 +98,26 @@ Warming Up a Dedicated IP Address
 {% endanchor %}
 
 For more information on warming up an IP Address, see [Warming up a dedicated IP]({{root_url}}/User_Guide/Settings/ip_warmup.html).
+
+{% anchor h2 %}
+Assigning a Dedicated IP address to a subuser
+{% endanchor %}
+
+Subusers cannot set up and add reverse DNS to their own dedicated IPs, but you can set it up for them and assign it to them. You can add a dedicated IP to a subuser when you [create the subuser]({{root_url}}/User_Guide/Settings/subusers.html#-Create-a-Subuser), or in the [Subuser management](https://app.sendgrid.com/settings/subusers) page.
+
+{% anchor h3 %}
+Before you begin
+{% endanchor %}
+
+You need to have a [subuser]({{root_url}}/User_Guide/Settings/subusers.html#-Create-a-Subuser), and a [dedicated IP address](https://sendgrid.com/docs/User_Guide/Settings/dedicated_ip_addresses.html#-Adding-an-additional-Dedicated-IP-Address) you want to assign the subuser.
+
+*To assign a Dedicated IP to a subuser after the subuser is already created:*
+
+1. Navigate to **Settings** and select [Subuser Management](https://app.sendgrid.com/settings/subusers).
+1. Select the Subuser to assign the dedicated IP.
+1. Select **Change Sending**.
+1. Under I.P. Addresses, select an IP address to assign to the subuser.
+1. Select **Save**
 
 {% anchor h2 %}
 Additional Resources

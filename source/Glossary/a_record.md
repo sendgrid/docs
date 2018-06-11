@@ -10,14 +10,8 @@ navigation:
   show: false
 ---
 
-The A record is what links your dedicated IP address to your chosen subdomain. Creating this record will, for example, point traffic for o1.subdomain.yourdomain.com back to your dedicated IP, and vice versa.
+The A record (address record) links your dedicated IP address to your chosen domain. It does this by mapping your domain to your IP address through records that you export from SendGrid and upload into your DNS host.
 
-You can create multiple A records for a domain with as many IP addresses as you wish, however you can only [whitelabel]({{root_url}}/User_Guide/Setting_Up_Your_Server/Whitelabeling/index.html) one IP to one domain at a time.
+If your domain+ subdomain is `marketing.example.com`, and your dedicated IP address is `101.10.10.101`, setting up the SendGrid A record links your domain with your dedicated IP address - so anything sent over your domain associates with your dedicated IP, and anything sent over your dedicated IP associates with your domain.
 
 
-{% anchor h2%}
-Example A Record
-{% endanchor %}
-
-What it should look like:
-```em.yourdomain.com. |  A  |  192.168.250.1```

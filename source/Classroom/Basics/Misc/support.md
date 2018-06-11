@@ -9,6 +9,7 @@ layout: page
 navigation:
   show: true
 ---
+<iframe src="https://player.vimeo.com/video/263354373" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 <div class="row">
   <div class="col-md-4"></div>

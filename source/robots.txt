@@ -1,2 +1,5 @@
 User-agent: *
-Disallow: /docs/User_Guide/Settings/taxes_and_tax_exempt.html
+Disallow /docs/User_Guide/Transactional_Templates/Using_handlebars.html
+Disallow /docs/User_Guide/Transactional_Templates/migrating_from_legacy_templates.html
+Disallow /docs/User_Guide/Transactional_Templates/how_to_send_an_email_with_transactional_templates.html
+Disallow /docs/User_Guide/Transactional_Templates/create_and_edit_dynamic_transactional_templates.html

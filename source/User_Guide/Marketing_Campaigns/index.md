@@ -54,7 +54,7 @@ The sender identity contains the  <em>from name</em>, <em>from email address</em
 Custom Fields
 {% endanchor %}
 
-<p><strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/custom_fields.html">Custom Fields</a></strong> - Set up your <a href="{{site.marketing_campaigns_url}}/custom_fields">custom fields</a> so that you can upload contact-specific data, automatically generate substitution tags for your emails, and segment your contacts.l.
+<p><strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/custom_fields.html">Custom Fields</a></strong> - Set up your <a href="{{site.marketing_campaigns_url}}/custom_fields">custom fields</a> so that you can upload contact-specific data, automatically generate substitution tags for your emails, and segment your contacts.
 </p>
 <p><iframe src="https://player.vimeo.com/video/120709155" width="700" height="400" frameborder="0" allowfullscreen=""></iframe></p>
 

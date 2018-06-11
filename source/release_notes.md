@@ -32,6 +32,130 @@ The following new features and changes to the service are available.
 </table>
 
 {% anchor h2 %}
+6 June 2018
+{% endanchor %}
+
+{% anchor h3 %}
+TLS security 
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/code_icon.png" alt="An update to the API" ></td>
+    <td>SendGrid now uses Transport Layer Security (TLS) protocol v1.1 to send encrypted mail. If you have the Enforce TLS feature activated on one of your SendGrid accounts, messages sent to inbox providers that can only accept TLS v1.0 trigger a “TLS required but not supported” drop event. Based on our testing, most inbox providers support TLS versions v1.1 and above.</td>
+  </tr>
+</table>
+
+If you have the Enforce TLS feature activated, but you do not need to send all of your email encrypted, you can deactivate enforced TLS with the API. By default, SendGrid sends all email with opportunistic TLS, which encrypts email whenever possible, but switches to unencrypted transmission if necessary.
+
+{% anchor h2 %}
+15 May 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Send To and Export All Contacts
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>We've updated Marketing Campaigns to allow you to send to and export all contacts within your database. Your 'All Contacts' database now operates like other lists that you create. To send to all contacts, select "All Contacts" from the recipients dropdown when editing a campaign. To export all contacts, select "Export" from the action menu on the href="https://sendgrid.com/marketing_campaigns/ui/contacts" target="_blank">Contacts page</a> or by clicking the "Export CSV" button, now located in the top-right when viewing <a href="https://sendgrid.com/marketing_campaigns/ui/all_contacts" target="_blank">All Contacts</a>.</td>
+  </tr>
+</table>
+
+{% anchor h2 %}
+1 May 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Sales tax for customers in certain US jurisdictions
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/pricing_icon.png" alt="An update to a price"></td>
+    <td>We’re beginning to charge sales tax for use of certain SendGrid products by non-tax exempt customers based in WA, NY, TX, Denver, Boulder or Chicago. This change is required to comply with applicable tax laws. For more information about our new sales tax and how to delcare your organization tax exempt, see <a href="https://sendgrid.com/docs/User_Guide/Settings/taxes_and_tax_exempt.html" target="_blank">Sales Taxes and Tax-Exempt Status</a>.</td>
+  </tr>
+</table>
+
+{% anchor h2 %}
+17 April 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Whitelabel is becoming Sender Authentication!
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>To clarify authentication at SendGrid, we are updating the names of Whitelabel! A whitelabel is now generally called sender authentication. A domain whitelabel is now called domain authentication. A link whitelabel is now called link branding. An IP Whitelabel is now called reverse DNS.</td>
+  </tr>
+</table>
+
+{% anchor h3 %}
+Improved Sender Authentication Process (formerly "Whitelabel")
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>SendGrid’s whitelabel has become sender authentication, which simplifies the process for senders to demonstrate domain ownership through multiple authentication methods to recipient mailbox providers in order to improve their email delivery. This launch includes improvements to the set up flow and a more accurate name for the functionality. All pending and verified whitelabels can be found under sender authentication.</td>
+  </tr>
+</table>
+
+For more information on the new process for sender authentication: 
+- Access [Sender Authentication](https://app.sendgrid.com/settings/sender_auth)
+- Read the [blog post](https://sendgrid.com/blog/new-sender-authentication/) about Sender Authentication.
+- Check out our how to docs on [How to set up domain authentication]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html) and [How to set up link branding]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_link_branding.html)
+
+
+{% anchor h2 %}
+11 April 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Magento M1 and M2 Extension Update
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/partners_icon.png" alt="An update to Partners" ></td>
+    <td>We have upgraded our Magento Extension for M1 and M2 Marketplaces to V1.0.3. SendGrid’s extension in M1 and M2 is compatible with Magento Community 2.0, 2.1, 2.2. </td>
+  </tr>
+</table>
+
+{% anchor h2 %}
+10 April 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Updated Alert Behavior
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>In order to provide a better user experience, we've updated the green alert banners you see at the top of the app. Green banners that notify users of successful actions now automatically dismiss after a few seconds, no longer stacking up within the field of view.</td>
+  </tr>
+</table>
+
+{% anchor h2 %}
+9 April 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Truncating fields that go over max field character limits
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ><img src="{{root_url}}/images/code_icon.png" alt="An update to the API" width="100" height="100"></td>
+  <td>This change applies to contacts added by uploading a CSV in the UI or when using the <code>POST /contactdb/lists/{list_id}/recipients/{recipient_id}</code> Add a Single Recipient to a List method. When adding or updating the <code>first_name</code> and <code>last_name</code> fields, SendGrid automatically truncates any field that exceeds the maximum character limit to ensure that the field is valid. Non-unicode characters are still not valid.</td>
+  </tr>
+</table>
+
+{% anchor h2 %}
 29 March 2018
 {% endanchor %}
 
@@ -65,7 +189,7 @@ New Design Templates for Marketing Campaigns
 <table class="table" style="width: 100%;">
   <tr>
     <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
-    <td>We've added two new templates to the SendGrid Marketing template library! These templates, named "Modern" and "Coffee", offer fully-responsive and clean designs, giving you the framework you need to build beautifully engaging marketing campaigns. The new templates can be accessed by clicking "Templates" in the navigation, and selecting the "Marketing" option.</td>
+    <td>We've added two new templates to the SendGrid Marketing template library! These templates, named "Modern" and "Coffee", offer fully-responsive and clean designs, giving you the framework you need to build beautifully engaging marketing campaigns. The new templates can be accessed by clicking **Templates** in the navigation, and selecting the **Marketing** option.</td>
   </tr>
 </table>
 

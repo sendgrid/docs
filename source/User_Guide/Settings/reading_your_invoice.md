@@ -32,6 +32,10 @@ Need to send invoices to multiple addresses? Consider creating a [role address](
 3. Charge Summary
 {% endanchor %}
 
+If you are in [a jurisdiction that SendGrid is required to charge sales tax]({{root_url}}/User_Guide/Settings/taxes_and_tax_exempt.html), here is your tax summary:
+
+![Tax summary section]({{root_url}}/img/invoice_tax.png)
+
 These are the total charges for services used **in the current and previous month**: 
 
 ![Charge summary section]({{root_url}}/img/invoice_NL_usage.png)

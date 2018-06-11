@@ -13,6 +13,8 @@ seo:
 Higher volume users may not yet have access to the new Email Activity Feed. For information about the legacy Email Activity Feed, see [Legacy Email Activity]({{root_url}}/User_Guide/email_activity.html).
 {% endinfo %}
 
+<iframe src="https://player.vimeo.com/video/259928139" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 The Email Activity feed allows you to view a snapshot of email-related activity associated with your account and any subusers. Enhanced email activity and storage gives you increased visibility into the email delivery flow of each email message to expedite the troubleshooting process.  
 
 
@@ -94,10 +96,6 @@ The Email Activity feed allows you to view specific information about messages s
     <td>Spam Reports</td>
     <td>Whenever a recipient marks your email as spam and their mail server tells us about it.</td>
   </tr>
-  <tr>
-    <td>Parse</td>
-    <td>Triggered if you're using the Inbound Parse Webhook.</td>
-  </tr>
 </table>
 
 {% anchor H2 %}
@@ -122,19 +120,27 @@ Advanced Search
 
 In addition to viewing the email activity associated with your account by recipient email address, domain, or event date, you can also use the following filters to sort your data:
 
+* API Key ID
+* API Key Name
 * Campaign ID
 * Campaign Name
 * Categories
-* Event Type
-* From Address
+* Date Processed
+* Event Type (Bounced, Clicked, etc.)
+* From Email Address
 * Message ID
-* Sending API Key ID
-* Sending API Key Name
+* Number of Clicks
+* Number of Opens
+* Requesting IP Address
 * Sending IP Address
+* Status (Delivered, Not Delivered, Processing)
 * Subject Line
-* Template ID
-* Template Name
-* Unique Arguments
+* Teammate
+* To Email Address
+* Transactional Template ID
+* Transactional Template Name
+* Unsubscribe Group ID
+* Unsubscribe Group Name
 
 *To use advanced search:*
 
@@ -152,7 +158,7 @@ or
 * Search emails by **all** of the following - This search will return fewer results and will pull in events that meet *every* criteria specified by the selected filters. 
 
 {% anchor H2 %}
-Viewing Event History
+Viewing event history 
 {% endanchor %}
 
 *To view event history:*
