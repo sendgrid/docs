@@ -59,7 +59,7 @@ You will only be shown your API key one time. Please store it somewhere safe as 
 
 {% info %} There is a limit of 100 API Keys per account. {% endinfo %}
 
-{% anchor h3 %}
+{% anchor h2 %}
 API key permissions
 {% endanchor %}
 
@@ -75,7 +75,13 @@ When assigning permissions to your API key, select one of the following levels o
 You may not give an API key greater permissions than you currently have.
 {% endinfo %}
 
-<table>
+{% anchor h3 %}
+API Keys
+{% endanchor %}
+
+Allows the API key holder to create and edit existing API keys.
+
+<table class="table">
   <tr>
     <th>Scope</th>
     <th>Description</th>
@@ -108,7 +114,7 @@ You may not give an API key greater permissions than you currently have.
   </tr>
   <tr>
     <td>Inbound Parse</td>
-    <td></td>
+    <td>Allows the API key holder to view, create, or delete parse settings.  </td>
     <td>No Access, Read Access, Full Access</td>
   </tr>
   <tr>
