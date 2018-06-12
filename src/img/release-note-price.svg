@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Release-Notes" transform="translate(-530.000000, -671.000000)">
+            <g id="Group-12-Copy" transform="translate(530.000000, 671.000000)">
+                <g id="Group-6-Copy-3">
+                    <g id="Group">
+                        <g id="Group-2">
+                            <g id="Group-5" fill="#FFF2EE">
+                                <circle id="Oval-2" cx="35" cy="35" r="35"></circle>
+                            </g>
+                            <g id="Group-11" transform="translate(17.500000, 17.500000)" stroke="#FF5722" stroke-linecap="round" stroke-linejoin="round">
+                                <g id="Group-222" stroke-width="1.75">
+                                    <polyline id="Stroke-6175" points="29.842225 35 31.530975 26.4145 22.814225 27.19675"></polyline>
+                                    <polyline id="Stroke-6176" points="4.906475 0.2051 3.217725 8.7906 11.934475 8.00835"></polyline>
+                                    <path d="M31.45555,26.3662 C28.4928,30.93195 23.3478,33.9542 17.4993,33.9542 C8.31705,33.9542 0.8743,26.5097 0.8743,17.3292 C0.8743,16.4577 0.9408,15.6002 1.07205,14.76545" id="Stroke-6177"></path>
+                                    <path d="M3.228225,8.797775 C6.131475,3.948525 11.435725,0.704025 17.499475,0.704025 C26.681725,0.704025 34.124475,8.145025 34.124475,17.329025 C34.124475,18.788525 33.937225,20.207775 33.583725,21.553525" id="Stroke-6178"></path>
+                                </g>
+                                <g id="Group-10" transform="translate(12.833333, 9.333333)" stroke-width="1.6985138">
+                                    <path d="M1.48195329,11.3249455 C1.48195329,13.0703915 2.907431,14.4846956 4.66666667,14.4846956 C6.42590234,14.4846956 7.85138004,13.0703915 7.85138004,11.3249455 C7.85138004,9.5807635 6.42590234,8.16519546 4.66666667,8.16519546 C2.907431,8.16519546 1.48195329,6.75089132 1.48195329,5.00544537 C1.48195329,3.26126333 2.907431,1.84569529 4.66666667,1.84569529 C6.42590234,1.84569529 7.85138004,3.26126333 7.85138004,5.00544537" id="Stroke-6804"></path>
+                                    <path d="M4.45435244,0.160495242 L4.45435244,16.1698957" id="Stroke-6805"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

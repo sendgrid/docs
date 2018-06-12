@@ -1,0 +1,50 @@
+@import '../scss/global/variables';
+@import '../scss/global/mixins';
+
+// release note cols
+.release-row {
+  display: flex;
+  align-items: stretch;
+  margin: 0 -40px;
+}
+
+.icons {
+  margin: 0 40px;
+  flex: 0 0 70px;
+  position: relative;
+  font-size: $scaledown-1;
+  text-align: center;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    height: 100%;
+    width: 2px;
+    margin-left: -1px;
+    background: $slate-20;
+    display: block;
+    position: absolute;
+    left: 50%;
+  }
+}
+
+.icons__icon {
+  padding: $scaleup-8 0 $scaledown-1;
+  background-size: contain;
+}
+
+.icon-partners {
+  background: url('../img/release-note-partners.svg') no-repeat;
+}
+
+.icon-price {
+  background: url('../img/release-note-price.svg') no-repeat;
+}
+
+.icon-ui {
+  background: url('../img/release-note-ui.svg') no-repeat;
+}
+
+.icon-api {
+  background: url('../img/release-note-api.svg') no-repeat;
+}

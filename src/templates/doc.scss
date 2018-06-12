@@ -52,7 +52,7 @@ $aside-width: 300px;
   @include colfax(600);
 }
 
-.doc-wrap aside a.active {
+aside a.active {
   border-color: $sg-blue;
 }
 
