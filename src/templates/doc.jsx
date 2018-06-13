@@ -3,7 +3,6 @@ import Helmet from 'react-helmet';
 import RehypeReact from 'rehype-react';
 import _ from 'lodash';
 import SEO from '../components/SEO';
-import NavSub from '../components/NavSub';
 import AsideMenu from '../components/AsideMenu';
 import config from '../../data/SiteConfig';
 import './b16-tomorrow-dark.css';
@@ -39,18 +38,15 @@ export default class DocTemplate extends React.Component {
     const asideLinks = this.getLinks();
 
     return (
-      <div>
-        <NavSub />
-        <div className="container-lg doc-wrap">
-          <Helmet>
-            <title>{`${post.title} | ${config.siteTitle}`}</title>
-          </Helmet>
-          <SEO postPath={slug} postNode={postNode} postSEO />
-          <AsideMenu asideLinks={asideLinks} />
-          <div className="doc-main">
-            <h1>{post.title}</h1>
-            {renderAst(postNode.htmlAst)}
-          </div>
+      <div className="container-lg doc-wrap">
+        <Helmet>
+          <title>{`${post.title} | ${config.siteTitle}`}</title>
+        </Helmet>
+        <SEO postPath={slug} postNode={postNode} postSEO />
+        <AsideMenu asideLinks={asideLinks} />
+        <div className="doc-main">
+          <h1>{post.title}</h1>
+          {renderAst(postNode.htmlAst)}
         </div>
       </div>
     );

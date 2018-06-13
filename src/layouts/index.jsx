@@ -1,19 +1,24 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import NavMain from '../components/NavMain';
+import NavSub from '../components/NavSub';
 import config from '../../data/SiteConfig';
 import Footer from '../components/Footer';
 import '../scss/style-guide.scss';
+
+export const PathContext = React.createContext('/kjkj');
 
 export default class MainLayout extends React.Component {
   getLocalTitle() {
     function capitalize(string) {
       return string.charAt(0).toUpperCase() + string.slice(1);
     }
+
     const pathPrefix = config.pathPrefix ? config.pathPrefix : '/';
     const currentPath = this.props.location.pathname
       .replace(pathPrefix, '')
       .replace('/', '');
+
     let title = '';
     if (currentPath === '') {
       title = 'Home';
@@ -43,6 +48,7 @@ export default class MainLayout extends React.Component {
 
   render() {
     const { children } = this.props;
+    const foo = { foo: 'bar' };
     return (
       <div className="docs-wrap">
         <Helmet>
@@ -50,6 +56,9 @@ export default class MainLayout extends React.Component {
           <meta name="description" content={config.siteDescription} />
         </Helmet>
         <NavMain />
+        <PathContext.Provider value={foo} />
+        <NavSub />
+        <PathContext.Provider />
         {children()}
         <Footer />
       </div>

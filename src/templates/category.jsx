@@ -17,15 +17,12 @@ export default class CategoryTemplate extends React.Component {
 
   render() {
     const { pathContext } = this.props;
-    console.log(this.props);
+
     return (
-      <div>
-        <NavSub />
-        <div className="category-container container">
-          <h1>{CATEGORIES[pathContext.category]}</h1>
-          <div className="row">
-            {this.renderGroups()}
-          </div>
+      <div className="category-container container">
+        <h1>{CATEGORIES[pathContext.category]}</h1>
+        <div className="row">
+          {this.renderGroups()}
         </div>
       </div>
     );
