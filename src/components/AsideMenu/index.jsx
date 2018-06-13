@@ -28,8 +28,8 @@ export default class AsideMenu extends React.Component {
   }
 
   scrollSpy() {
-    // const headers = document.getElementsByClassName('anchor');
-    const headers = Array.from(document.getElementsByClassName('anchor'));
+    // Only us h2 & h3 header links.
+    const headers = Array.from(document.querySelectorAll('h2 .anchor, h3 .anchor'));
 
     // headers with offset
     const headersOffset = headers.map((el, i) => {
@@ -47,6 +47,7 @@ export default class AsideMenu extends React.Component {
       return { slug, offset };
     });
 
+
     // Headers with postive scrolltop value
     const headersScrollTop = headersOffset.filter(el => el.offset > 0);
 
@@ -54,20 +55,23 @@ export default class AsideMenu extends React.Component {
   }
 
   render() {
-    const navItems = this.getHeaders();
+    const navItems = this.props.asideLinks;
 
     return (
       <aside className="aside-nav">
         <div className="aside-nav__title is-size-h5">In the article</div>
         {navItems.map((el) => {
-            const { id } = el.properties;
+            const {
+              id,
+              textNode,
+            } = el;
             let classes = `doc-header ${el.tagName}`;
 
-            if (el.properties.id === this.state.activeNavItem.slug) {
+            if (el.id === this.state.activeNavItem.slug) {
               classes += ' active';
             }
 
-            return <a key={id} className={classes} href={`#${id}`}>{el.children[1].value}</a>;
+            return <a key={id} className={classes} href={`#${id}`}>{textNode}</a>;
         })}
       </aside>
     );

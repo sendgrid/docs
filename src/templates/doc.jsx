@@ -21,10 +21,22 @@ const renderAst = new RehypeReact({
 }).Compiler;
 
 export default class DocTemplate extends React.Component {
+  getLinks() {
+    const headers = this.props.data.markdownRemark.htmlAst.children.filter(el => el.type === 'element' && _.includes(['h2', 'h3'], el.tagName));
+    return headers.map((header) => {
+      const link = {};
+      link.tagName = header.tagName;
+      link.textNode = header.children[1].value;
+      link.id = header.properties.id;
+      return link;
+    });
+  }
+
   render() {
     const { slug } = this.props.pathContext;
     const postNode = this.props.data.markdownRemark;
     const post = postNode.frontmatter;
+    const asideLinks = this.getLinks();
 
     return (
       <div>
@@ -34,7 +46,7 @@ export default class DocTemplate extends React.Component {
             <title>{`${post.title} | ${config.siteTitle}`}</title>
           </Helmet>
           <SEO postPath={slug} postNode={postNode} postSEO />
-          <AsideMenu htmlAst={postNode.htmlAst} />
+          <AsideMenu asideLinks={asideLinks} />
           <div className="doc-main">
             <h1>{post.title}</h1>
             {renderAst(postNode.htmlAst)}

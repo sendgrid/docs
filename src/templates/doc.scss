@@ -5,8 +5,6 @@ $aside-width: 300px;
 
 .doc-wrap {
   display: flex;
-  padding-top: $scaleup-4;
-  padding-bottom: $scaleup-4;
 }
 
 .doc-main {
@@ -26,10 +24,9 @@ $aside-width: 300px;
 .aside-nav a {
   display: block;
   margin-bottom: $scale-0;
-  padding-left: $scaledown-6;
+  padding-left: 0;
   padding-top: 2px;
   line-height: $scaleup-1;
-  border-left: 3px solid transparent;
   font-size: 14px;
 
   @include colfax(600);
@@ -52,8 +49,10 @@ $aside-width: 300px;
   @include colfax(600);
 }
 
-.doc-wrap aside a.active {
-  border-color: $sg-blue;
+aside a.active {
+  border-left: 3px solid $sg-blue;
+  padding-left: 5px;
+  color: $slate-80;
 }
 
 // custom Markdown components

@@ -66,6 +66,8 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
       docType = 'for-developers';
     } else if (permalink.match(/glossary\/[^/]+/)) {
       docType = 'glossary';
+    } else if (permalink.match(/release-notes\/[^/]+/)) {
+      docType = 'release-notes';
     }
 
     createNodeField({ node, name: 'docType', value: docType });
