@@ -11,7 +11,7 @@ navigation:
 ---
 
 {% anchor h2 %}
-Click Tracking
+Click tracking
 {% endanchor %}
 
 Enabling Click Tracking causes all the links and URLs in your emails to be overwritten and pointed to either SendGrid’s servers or the domain you branded your link with so that any time a customer clicks a link, SendGrid can track those [clicks]({{root_url}}/Glossary/clicks.html). SendGrid can track up to 1000 links per email.
