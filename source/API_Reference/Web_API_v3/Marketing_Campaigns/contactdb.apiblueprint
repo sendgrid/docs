@@ -506,6 +506,10 @@ Updates one or more recipients. If the recipient does not exist, it will be crea
 
 Deletes one or more recipients. The body is a list of recipient ids to delete.
 
+{% warning %}
+Use this to permanently delete your recipients from all of your contact lists and all segments if required by applicable law.
+{% endwarning %}
+
 + Request (application/json)
 
      + Body
