@@ -10,16 +10,20 @@ navigation:
   show: true
 ---
 
+- [Manage inbound parse](#-manage-inbound-parse)
+- [Add host and URL](#-Add-host-and-url)
+- [Using the API](#-Using-the-API)
+
 SendGrid’s Inbound Parse Webhook allows you to receive emails that get automatically broken apart by SendGrid and then sent to a URL of your choosing. SendGrid will grab the content, attachments, and the headers from any email it receives for your specified hostname. Please see our [Inbound Parse Webhook]({{root_url}}/Classroom/Basics/Inbound_Parse_Webhook/setting_up_the_inbound_parse_webhook.html) technical docs for more information about how to handle the information coming to you from SendGrid’s Inbound Parse.
 
 {% anchor h2 %}
-Manage Inbound Parse
+Manage inbound parse
 {% endanchor %}
 
 You can see all of your hostname and URL pairs that you have set up in the table on the main [Inbound Parse page](https://app.sendgrid.com/settings/parse). From there, you can use the gear icon on the right side of each pair to remove and edit the Inbound Parse Webhook settings.
 
 {% anchor h2 %}
-Add Host & URL
+Add host and URL
 {% endanchor %}
 
 The Inbound Parse Webhook requires a hostname, where the emails will be sent, and the URL where SendGrid will POST the data it builds from every incoming email.

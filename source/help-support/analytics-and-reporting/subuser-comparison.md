@@ -18,7 +18,7 @@ This page refers to our beta UI functionality. To find these features, please cl
 On all other stats pages, your subuser stats are “rolled up” into the parent account’s statistics. From this page, you can see how each subuser affects your overall stats.
 {% endinfo %}
 
-Subusers can help organize your email sending an analytics by enabling you to segment by a different sender and IP address. As a result, you may want to compare one subuser to another. The category comparison tool allows you to do this. You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters).
+Subusers can help organize your email sending an analytics by enabling you to segment by a different sender and IP address. As a result, you may want to compare one subuser to another. The category comparison tool allows you to do this. You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}help-support/analytics-and-reporting/stats-overview.html#-Statistics-Filters).
 
 {% anchor h2 %}
 Select Your Subusers
@@ -61,5 +61,5 @@ Additional Resources
 {% endanchor %}
 
 - [Subuser Stats]({{root_url}}/API_Reference/Web_API_v3/Stats/subusers.html)
-- [Email Activity]({{root_url}}/User_Guide/email_activity.html)
-- [Statistics Filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters)
+- [Email Activity]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed.html)
+- [Statistics Filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview.html#-Statistics-Filters)

@@ -14,13 +14,13 @@ navigation:
 Parent accounts will see aggregated stats for their account and all subuser accounts. Subuser accounts will only see their own stats.
 {% endinfo %}
 
-Categories can help organize your email analytics by enabling you to “tag” emails by type. Just as you can view the statistics on all your [email activity]({{root_url}}/Help/Analytics_and_Reporting/email_activity_feed.html), you can go a step further and view the statistics broken down to a particular category.
+Categories can help organize your email analytics by enabling you to “tag” emails by type. Just as you can view the statistics on all your [email activity]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed.html), you can go a step further and view the statistics broken down to a particular category.
 
-The actual statistics included vary depending upon your [account settings]({{root_url}}/Help/Account_and_Settings/account.html). Emails sent, bounces and spam reports will always get tracked. Unsubscribes, clicks, and opens require that the associated settings are enabled.
+The actual statistics included vary depending upon your [account settings]({{root_url}}/help-support/account-and-settings/account.html). Emails sent, bounces and spam reports will always get tracked. Unsubscribes, clicks, and opens require that the associated settings are enabled.
 
 In order to see statistics for a category, select the category and the page will show you both a graph and a table of your category’s email statistics.
 
-You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/Help/Analytics_and_Reporting_Statistics/index.html#-Statistics-Filters).
+You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/help-supportelp/analytics-and-reporting/index.html#-Statistics-Filters).
 
 {% anchor h2 %}
 Figures
@@ -40,6 +40,6 @@ Using the API
 Additional Resources
 {% endanchor %}
 
-- [Email Activity]({{root_url}}/Help/Analytics_and_Reporting/email_activity_feed.html)
-- [Statistics Filters]({{root_url}}/Help/Analytics_and_Reporting_Statistics/index.html#-Statistics-Filters).
-- [Account Settings]({{root_url}}/Help/Account_and_Settings/account.html)
+- [Email Activity]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed.html)
+- [Statistics Filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview.html#-Statistics-Filters).
+- [Account Settings]({{root_url}}/help-support/account-and-settings/account.html)
