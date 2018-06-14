@@ -177,5 +177,5 @@ Deleting a Subuser account cannot be undone. Please make sure that you are ready
 Additional Resources
 {% endanchor h2 %}
 
-- [Domain Authentication]({{root_url}}/Help/Getting_Started/How_to_set_up_domain_authentication.html)
-- [Teammates]({{root_url}}/Help/Account_and_Settings/teammates.html)
+- [Domain Authentication]({{root_url}}/help-support/getting_started/how-to-set-up-domain-authentication.html)
+- [Teammates]({{root_url}}/help-support/account-and-settings/teammates.html)

@@ -32,7 +32,7 @@ Need to send invoices to multiple addresses? Consider creating a [role address](
 3. Charge Summary
 {% endanchor %}
 
-If you are in [a jurisdiction that SendGrid is required to charge sales tax]({{root_url}}/Help/Account_and_Settings/taxes_and_tax_exempt.html), here is your tax summary:
+If you are in [a jurisdiction that SendGrid is required to charge sales tax]({{root_url}}/help-support/account-and-settings/taxes-and-tax-exempt.html), here is your tax summary:
 
 ![Tax summary section]({{root_url}}/img/invoice_tax.png)
 
@@ -96,4 +96,4 @@ Additional Resources
 {% endanchor h2 %}
 
 - [SendGrid Pricing]({{site.site_url}}/pricing/)
-- [Billing]({{root_url}}/Help/Account_and_Settings/billing.html)
+- [Billing]({{root_url}}/help-support/account-and-settings/billing.html)
