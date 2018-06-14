@@ -474,11 +474,11 @@ Redirect 301 /Classroom/Troubleshooting/Delivery_Issues/email_was_deferred_due_t
 # /docs/Delivery_Metrics - moved to User Guide - originally sendgrid.com/docs/Delivery_Metrics/
 #
 #######
-Redirect 301 /Delivery_Metrics/index.html https://sendgrid.com/docs/help-support/analytics-and-reporting/Statistics/index.html
+Redirect 301 /Delivery_Metrics/index.html https://sendgrid.com/docs/help-support/analytics-and-reporting/index.html
 Redirect 301 /Delivery_Metrics/advanced_statistics.html https://sendgrid.com/docs/User_Guide/Delivery_Metrics/advanced_statistics.html
 Redirect 301 /Delivery_Metrics/alerts.html ttps://sendgrid.com/docs/help-support/account-and-settings/alerts.html
-Redirect 301 /Delivery_Metrics/categories.html https://sendgrid.com/docs/help-support/analytics-and-reporting/Statistics/categories.html
-Redirect 301 /Delivery_Metrics/email_activity.html https://sendgrid.com/docs/help-support/analytics-and-reporting/Statistics/email_activity.html
+Redirect 301 /Delivery_Metrics/categories.html https://sendgrid.com/docs/help-support/analytics-and-reporting/categories.html
+Redirect 301 /Delivery_Metrics/email_activity.html https://sendgrid.com/docs/help-support/analytics-and-reporting/email_activity.html
 #forced a redirect file at /Delivery_Metrics/email_reports.html - the following redirect wouldn't take
 Redirect 301 /Delivery_Metrics/email_reports.html ttps://sendgrid.com/docs/help-support/account-and-settings/alerts.html
 
@@ -580,16 +580,16 @@ Redirect 301 /User_Guide/Apps/template_engine.html https://sendgrid.com/docs/Use
 Redirect 301 /User_Guide/attachments.html https://sendgrid.com/docs/Classroom/Build/attachments.html
 Redirect 301 /User_Guide/billing.html ttps://sendgrid.com/docs/help-support/account-and-settings/billing.html
 Redirect 301 /User_Guide/clicktracking_ssl.html https://sendgrid.com/docs/Classroom/Build/content_delivery_networks.html#-Using-Fastly
-Redirect 301 /User_Guide/Delivery_Metrics/advanced_statistics.html https://sendgrid.com/docs/help-support/analytics-and-reporting/Statistics/index.html
+Redirect 301 /User_Guide/Delivery_Metrics/advanced_statistics.html https://sendgrid.com/docs/help-support/analytics-and-reporting/index.html
 Redirect 301 /User_Guide/Delivery_Metrics/alerts.html ttps://sendgrid.com/docs/help-support/account-and-settings/alerts.html
 Redirect 301 /User_Guide/Delivery_Metrics/email_error_messages.html https://sendgrid.com/docs/Classroom/Track/Bounces/common_smtp_server_bounce_responses.html
-Redirect 301 /User_Guide/Delivery_Metrics/email_activity.html https://sendgrid.com/docs/help-support/analytics-and-reporting/Statistics/email_activity.html
+Redirect 301 /User_Guide/Delivery_Metrics/email_activity.html https://sendgrid.com/docs/help-support/analytics-and-reporting/email_activity.html
 Redirect 301 /User_Guide/Delivery_Metrics/email_reports.html ttps://sendgrid.com/docs/help-support/account-and-settings/alerts.html
 Redirect 301 /User_Guide/Email_Deliverability/attachments.html https://sendgrid.com/docs/Classroom/Build/attachments.html
-Redirect 301 /User_Guide/Delivery_Metrics/categories.html https://sendgrid.com/docs/help-support/analytics-and-reporting/Statistics/categories.html
+Redirect 301 /User_Guide/Delivery_Metrics/categories.html https://sendgrid.com/docs/help-support/analytics-and-reporting/categories.html
 Redirect 301 /User_Guide/Email_Deliverability/index.html https://sendgrid.com/docs/Classroom/Deliver/index.html
 Redirect 301 /User_Guide/Email_Deliverability/list_scrubbing.html https://sendgrid.com/docs/Classroom/Deliver/list_scrubbing.html
-Redirect 301 /User_Guide/Delivery_Metrics/metrics.html https://sendgrid.com/docs/help-support/analytics-and-reporting/Statistics/index.html
+Redirect 301 /User_Guide/Delivery_Metrics/metrics.html https://sendgrid.com/docs/help-support/analytics-and-reporting/index.html
 Redirect 301 /User_Guide/Email_Deliverability/scheduling.html https://sendgrid.com/docs/API_Reference/SMTP_API/scheduling_parameters.html
 Redirect 301 /User_Guide/Email_Deliverability/sender_reputation.html https://sendgrid.com/docs/Glossary/sender_reputation.html
 Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/index.html ttps://sendgrid.com/docs/help-support/sending-email/index_suppressions.html
@@ -710,7 +710,7 @@ Redirect 301 /User_Guide/Templates/manage.html http://sendgrid.com/docs/User_Gui
 # /docs/VidGrid
 #
 #######
-Redirect 301 /VidGrid/activity.html https://sendgrid.com/docs/help-support/analytics-and-reporting/Statistics/email_activity.html
+Redirect 301 /VidGrid/activity.html https://sendgrid.com/docs/help-support/analytics-and-reporting/email_activity.html
 Redirect 301 /VidGrid/advanced_suppression_manager.html https://sendgrid.com/docs/help-support/sending-email/unsubscribe_groups.html
 Redirect 301 /VidGrid/Email_Activity/activity.html https://sendgrid.com/docs/VidGrid/email_activity.html
 Redirect 301 /VidGrid/Event_Notification/configure.html https://sendgrid.com/docs/API_Reference/Webhooks/event.html
