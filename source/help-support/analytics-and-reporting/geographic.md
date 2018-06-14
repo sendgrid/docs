@@ -20,7 +20,7 @@ The geographical report shows a map of where your emails are being opened and cl
 Top 5
 {% endanchor %}
 
-The top 5 section will show you the most engaged geographical areas based on the selected metric. By default, clicks are select, but you can change that by choosing a metric from the button at the top of this section. You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters).
+The top 5 section will show you the most engaged geographical areas based on the selected metric. By default, clicks are select, but you can change that by choosing a metric from the button at the top of this section. You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview.html#-Statistics-Filters).
 
 {% anchor h2 %}
 Activity Map
@@ -42,6 +42,6 @@ To see only the figures from a specific geographic area, change the Activity Map
 Additional Resources
 {% endanchor %}
 
-- [Statistics Filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters)
+- [Statistics Filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview.html#-Statistics-Filters)
 - [Global Stats]({{root_url}}/API_Reference/Web_API_v3/Stats/global.html)
-- [Timezones]({{root_url}}/Glossary/timezone.html)
+- [Timezones]({{root_url}}/glossary/timezone.html)

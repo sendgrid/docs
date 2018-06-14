@@ -1058,12 +1058,12 @@ Redirect 301 /User_Guide/Marketing_Campaigns/a_b_testing.html https://sendgrid.c
 Redirect 301 /User_Guide/Marketing_Campaigns/campaign_stats.html https://sendgrid.com/docs/help-support/analytics-and-reporting/campaign-stats.html
 Redirect 301 /User_Guide/Marketing_Campaigns/Old_Editor_Sunset.html https://sendgrid.com/docs/help-support/sending-email/editor.html
 Redirect 301 /User_Guide/Marketing_Campaigns/Managing_Contacts/building_your_contact_list.html https://sendgrid.com/docs/help-support/managing-contacts/building-your-contact-list.html
-Redirect 301 /User_Guide/Marketing_Campaigns/Managing_Contacts/adding_contacts.html https://sendgrid.com/docs/help-support/managing-contacts/adding_contacts.html
-Redirect 301 /User_Guide/Marketing_Campaigns/Managing_Contacts/formatting_a_CSV.html https://sendgrid.com/docs/help-support/managing-contacts/formatting_a_CSV.html
+Redirect 301 /User_Guide/Marketing_Campaigns/Managing_Contacts/adding_contacts.html https://sendgrid.com/docs/help-support/managing-contacts/adding-contacts.html
+Redirect 301 /User_Guide/Marketing_Campaigns/Managing_Contacts/formatting_a_CSV.html https://sendgrid.com/docs/help-support/managing-contacts/formatting-a-CSV.html
 Redirect 301 /User_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html https://sendgrid.com/docs/help-support/managing-contacts/managing-contact-list.html
 Redirect 301 /User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html https://sendgrid.com/docs/help-support/managing-contacts/segmenting-your-contacts.html
-Redirect 301 /User_Guide/Statistics/index.html https://sendgrid.com/docs/help-support/analytics-and-reporting/index.html
-Redirect 301 /User_Guide/Statistics/browser.html https://sendgrid.com/docs/help-support/analytics-and-reporting/browser.html
+Redirect 301 /User_Guide/Statistics/index.html https://sendgrid.com/docs/help-support/analytics-and-reporting/stats-overview.html
+Redirect 301 /User_Guide/Statistics/browser.html https://sendgrid.com/docs/help-support/analytics-and-reporting/browser-comparison.html
 Redirect 301 /User_Guide/Statistics/browser_compare.html https://sendgrid.com/docs/help-support/analytics-and-reporting/browser-comparison.html
 Redirect 301 /User_Guide/Statistics/categories.html https://sendgrid.com/docs/help-support/analytics-and-reporting/categories.html
 Redirect 301 /User_Guide/Statistics/device.html https://sendgrid.com/docs/help-support/analytics-and-reporting/device.html

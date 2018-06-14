@@ -10,7 +10,6 @@ navigation:
   show: true
 ---
 
-
 {% info %}
 Parent accounts will see aggregated stats for their account and all subuser accounts. Subuser accounts will only see their own stats.
 {% endinfo %}
@@ -51,7 +50,7 @@ The clients report breaks down which devices and clients are most frequently use
 Top 5
 {% endanchor %}
 
-The top 5 section will show you the most engaged email clients and devices based on the selected metric. By default, clicks are select, but you can change that by choosing a metric from the button at the top of this section. You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters).
+The top 5 section will show you the most engaged email clients and devices based on the selected metric. By default, clicks are select, but you can change that by choosing a metric from the button at the top of this section. You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/help-support/analytics-and-support/stats-overview.html#-Statistics-Filters).
 
 {% anchor h2 %}
 Individual Metrics Activity
@@ -77,6 +76,5 @@ You can also choose to show actual counts or percentages, by clicking the corres
 Additional Resources
 {% endanchor %}
 
-- [Statistics Filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters)
-- [Subusers]({{root_url}}/User_Guide/Settings/Subusers/index.html)
-- [SendGrid for Mobile]({{root_url}}/User_Guide/SendGrid_for_Mobile/index.html)
+- [Statistics Filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview.html#-Statistics-Filters)
+- [Subusers]({{root_url}}/help-support/analytics-and-reporting/subusers.html)
