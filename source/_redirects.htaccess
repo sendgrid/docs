@@ -167,8 +167,8 @@ Redirect 301 /Apps/bcc.html ttps://sendgrid.com/docs/help-support/account-and-se
 #forced a redirect file at /Apps/bypass_list_management.html - the following redirect wouldn't take
 Redirect 301 /Apps/bypass_list_management.html ttps://sendgrid.com/docs/help-support/account-and-settings/mail.html
 Redirect 301 /Apps/click_tracking.html ttps://sendgrid.com/docs/help-support/account-and-settings/tracking.html
-Redirect 301 /Apps/domain_keys.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
-Redirect 301 /Apps/dkim.html https://sendgrid.com/docs/User_Guide/Settings/Whitelabel/index.html
+Redirect 301 /Apps/domain_keys.html https://sendgrid.com/docs/help-support/getting-started/how-to-set-up-domain-authentication.html
+Redirect 301 /Apps/dkim.html https://sendgrid.com/docs/help-support/getting-started/how-to-set-up-domain-authentication.html
 Redirect 301 /Apps/email_templates.html ttps://sendgrid.com/docs/help-support/account-and-settings/mail.html
 Redirect 301 /Apps/event_notification.html ttps://sendgrid.com/docs/help-support/account-and-settings/mail.html
 Redirect 301 /Apps/footer.html ttps://sendgrid.com/docs/help-support/account-and-settings/mail.html
@@ -181,7 +181,7 @@ Redirect 301 /Apps/return_path_seedlist.html ttps://sendgrid.com/docs/help-suppo
 Redirect 301 /Apps/sendwithus.html ttps://sendgrid.com/docs/help-support/account-and-settings/partners.html
 Redirect 301 /Apps/spam_checker.html ttps://sendgrid.com/docs/help-support/account-and-settings/mail.html
 Redirect 301 /Apps/subscription_tracking.html ttps://sendgrid.com/docs/help-support/account-and-settings/tracking.html
-Redirect 301 /Apps/template_engine.html https://sendgrid.com/docs/User_Guide/Transactional_Templates/create_and_edit_transactional_templates.html
+Redirect 301 /Apps/template_engine.html https://sendgrid.com/docs/help-support/sending-mail/create_and_edit_transactional_templates.html
 
 #######
 #
@@ -232,7 +232,7 @@ Redirect 301 /Integrate/Code_Examples/ruby.html http://sendgrid.com/docs/Integra
 # /docs/Classroom - redirects to avoid confusion
 #
 #######
-Redirect 301 /Classroom/Send/index.html https://sendgrid.com/docs/index.html
+Redirect 301 /Classroom/Send/index.html https://sendgrid.com/docs/help-support/getting-started/index.html
 Redirect 301 /Classroom/Track/index.html https://sendgrid.com/docs/index.html
 Redirect 301 /Classroom/Basics/password.html https://sendgrid.com/docs/Classroom/Basics/Security/password.html
 Redirect 301 /Classroom/Deliver/warming_up_ips.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/warming_up_ips.html
