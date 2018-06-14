@@ -112,7 +112,7 @@ Edit an API Key
 Click the action menu in the same row as the key you would like to edit. From here you can delete a key, making it completely inactive, or you can edit your key’s name and permissions.
 
 {% anchor h2 %}
-Inactivate an API Key
+Delete an API Key
 {% endanchor %}
 
 {% warning %}
