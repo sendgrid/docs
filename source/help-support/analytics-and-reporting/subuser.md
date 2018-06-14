@@ -10,13 +10,13 @@ navigation:
   show: true
 ---
 
-Subusers can help organize your email sending and analytics by enabling you to segment by a different sender and IP address. Just as you can view the statistics on all your [email activity]({{root_url}}/User_Guide/email_activity.html), you can go a step further and view the statistics broken down to a particular subuser.
+Subusers can help organize your email sending and analytics by enabling you to segment by a different sender and IP address. Just as you can view the statistics on all your [email activity]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed.html), you can go a step further and view the statistics broken down to a particular subuser.
 
-The actual statistics included vary depending upon your [account settings]({{root_url}}/User_Guide/Settings/account.html). Emails sent, bounces and spam reports will always get tracked. Unsubscribes, clicks, and opens require that the associated settings are enabled.
+The actual statistics included vary depending upon your [account settings]({{root_url}}/help-support/account-and-settings/account.html). Emails sent, bounces and spam reports will always get tracked. Unsubscribes, clicks, and opens require that the associated settings are enabled.
 
 In order to see statistics for a subuser, select the subuser and the page will show you both a graph and a table of email statistics.
 
-You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters).
+You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview.html#-Statistics-Filters).
 
 {% anchor h2 %}
 Figures
@@ -31,5 +31,5 @@ Additional Resources
 {% endanchor %}
 
 - [Subuser Stats]({{root_url}}/API_Reference/Web_API_v3/Stats/subusers.html)
-- [Email Activity]({{root_url}}/User_Guide/email_activity.html)
-- [Statistics Filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters)
+- [Email Activity]({{root_url}}//help-support/analytics-and-reporting/email-activity-feed.html)
+- [Statistics Filters]({{root_url}}//help-support/analytics-and-reporting/stats-overview.html#-Statistics-Filters)
