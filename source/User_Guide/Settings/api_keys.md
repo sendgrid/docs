@@ -81,6 +81,12 @@ API Keys
 
 Allows the API key holder to create and edit existing API keys.
 
+**Permission levels:**
+
+* No Access
+* Read Access
+* Full Access
+
 <table class="table">
   <tr>
     <th>Scope</th>
