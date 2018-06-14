@@ -279,7 +279,11 @@ Redirect 301 /Classroom/Basics/Marketing_Campaigns/migration_guide_part_3_moving
 Redirect 301 /Classroom/Basics/Misc/where_can_i_enable_subscription_tracking.html ttps://sendgrid.com/docs/help-support/account-and-settings/tracking.html#-Subscription-Tracking
 Redirect 301 /Classroom/Basics/marketing_campaigns_video_tutorials.html https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/index.html
 Redirect 301 /Classroom/Basics/Marketing_Campaigns/remove_bounced_addresses.html https://sendgrid.com/docs/Classroom/Basics/Marketing_Campaigns/how_to_remove_unusable_contacts.html
-
+Redirect 301 /Classroom/Basics/Account/account_sign_up_faq.html https://sendgrid.com/docs/help-support/account-and-settings/account
+Redirect 301 /Classroom/Basics/Account/how_do_i_add_more_emails_to_my_account.html https://sendgrid.com/docs/help-support/account-and-settings/account
+Redirect 301 /Classroom/Basics/Account/how_do_i_reset_my_password.html https://sendgrid.com/docs/help-support/account-and-settings/account
+Redirect 301 /Classroom/Basics/Account/why_cant_I_reset_my_password_if_my_account_is_not_provisioned.html https://sendgrid.com/docs/help-support/account-and-settings/account
+Redirect 301 /Classroom/Basics/index.html https://sendgrid.com/docs/help-support/account-and-settings/account
 
 #######
 #
@@ -305,6 +309,7 @@ Redirect 301 /Classroom/Build/substitution_and_section_tags.html http://sendgrid
 Redirect 301 /Classroom/Build/whats_the_recommended_message_size_limit.html http://sendgrid.com/docs/Classroom/Build/Add_Content/whats_the_recommended_message_size_limit.html
 Redirect 301 /Classroom/Build/Format_Content/responsive_templates_and_design.html https://sendgrid.com/docs/Classroom/Build/Format_Content/html_rendering__the_dos_and_donts_of_cross_platform_email_design.html
 Redirect 301 /Classroom/Build/Choose_Content/a_b_testing.html https://sendgrid.com/docs/help-support/sending-email/a_b_testing.html
+
 #######
 #
 # /docs/Classroom/Deliver - redirects for Classroom/Deliver
