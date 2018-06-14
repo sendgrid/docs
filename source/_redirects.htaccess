@@ -292,7 +292,25 @@ Redirect 301 /Classroom/Basics/Marketing_Campaigns/marketing_campaigns_faqs.html
 Redirect 301 /Classroom/Basics/Marketing_Campaigns/default_mc_tags.html https://sendgrid.com/docs/help-support/account-and-settings/sending-email/global-unsubscribes.html
 Redirect 301 /Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html https://sendgrid.com/docs/help-support/sending-email/global-unsubscribes.html
 Redirect 301 /Classroom/Basics/Marketing_Campaigns/engagement_stats.html https://sendgrid.com/docs/help-support/analytics-and-reporting/campaign-stats.html
-Redirect 301 /Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html https://sendgrid.com/docs/help-support/sending-email/global-unsubscribes.html
+Redirect 301 /Classroom/Basics/Marketing_Campaigns/third_party_partner_marketing_campaigns_access.html https://sendgrid.com/docs/help-support/account-and-settings/getting-started/how-to-send-email.html
+Redirect 301 /Classroom/Basics/Integrate/how_to_integrate_with_mailpoet.html https://sendgrid.com/docs/for-developers/sending-email/mailpoet.html
+Redirect 301 /Classroom/Basics/Integrate/interspire_integration.html https://sendgrid.com/docs/for-developers/sending-email/interspire.html
+Redirect 301 /Classroom/Basics/Integrate/sugarcrm_integration.html https://sendgrid.com/docs/for-developers/sending-email/sugarcrm.html
+Redirect 301 /Classroom/Basics/Misc/support.html https://sendgrid.com/docs/help-support/account-and-settings/support.html
+Redirect 301 /Classroom/Basics/Misc/sendgrid_oem_process.html https://sendgrid.com/docs/help-support/account-and-settings/subusers.html
+Redirect 301 /Classroom/Basics/Misc/what_is_the_difference_between_marketing_and_transactional_emails.html https://sendgrid.com/docs/glossary/transactional-email.html
+Redirect 301 /Classroom/Basics/Misc/a_sendgrid_user_is_spamming_me.html https://sendgrid.com/report-spam/
+Redirect 301 /Classroom/Basics/Email_Infrastructure/email_flow.html https://sendgrid.com/docs/help-support/sending-email/email-flow.html
+Redirect 301 /Classroom/Basics/Email_Infrastructure/everything_about_dmarc.html https://sendgrid.com/docs/help-support/sending-email/dmarc.html
+Redirect 301 /Classroom/Basics/Email_Infrastructure/does_sendgrid_support_end_to_end_tls.html https://sendgrid.com/docs/help-support/sending-email/tls.html
+Redirect 301 /Classroom/Basics/Email_Infrastructure/does_sendgrid_support_end_to_end_tls.html https://sendgrid.com/docs/help-support/sending-email/ssl-vs-tls.html
+Redirect 301 /Classroom/Basics/API/cors.html https://sendgrid.com/docs/for-developers/getting-started/cors.html
+Redirect 301 /Classroom/Basics/API/does_sendgrid_offer_a_sandbox_or_test_environment.html https://sendgrid.com/docs/for-developers/getting-started/sandbox.html
+Redirect 301 /Classroom/Basics/API/how_do_i_integrate_with_sendgrid.html https://sendgrid.com/docs/for-developers/getting-started/getting-started-api.html
+Redirect 301 /Classroom/Basics/API/how_to_create_a_subuser_with_the_api.html https://sendgrid.com/docs/for-developers/getting-started/how_to_create_a_subuser_with_the_api.html
+Redirect 301 /Classroom/Basics/API/what_are_the_sendgrid_apis_and_what_do_they_do.html https://sendgrid.com/docs/for-developers/getting-started/getting-started-api.html
+Redirect 301 /Classroom/Basics/API/what_is_my_api_key.html https://sendgrid.com/docs/help-support/account-and-settings/api-keys.html
+
 
 
 #######
