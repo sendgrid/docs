@@ -358,6 +358,7 @@ Redirect 301 /Classroom/Build/Format_Content/plain_text_emails_converted_to_html
 Redirect 301 /Classroom/Build/index.html https://sendgrid.com/docs/help-support/sending-email/editor.html
 Redirect 301 /Classroom/Send/How_Emails_Are_Sent/api_keys.html https://sendgrid.com/docs/help-support/account-and-settings/api-keys.html
 
+
 #######
 #
 # /docs/Classroom/Deliver - redirects for Classroom/Deliver
@@ -441,6 +442,10 @@ Redirect 301 /Classroom/Send/can_i_send_to_purchased_lists.html https://sendgrid
 Redirect 301 /Classroom/Send/resubscription_of_users.html https://sendgrid.com/docs/Classroom/Send/Who_You_Can_Send_To/resubscription_of_users.html
 Redirect 301 /Classroom/Send/segmenting_traffic.html https://sendgrid.com/docs/Classroom/Send/Who_You_Can_Send_To/segmenting_traffic.html
 Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/resubscription_of_users.html https://sendgrid.com/docs/Classroom/Send/Who_You_Can_Send_To/resubscription_of_users.html
+Redirect 301 /Classroom/Send/How_Emails_Are_Sent/can_i_send_from_multiple_domains.html https://sendgrid.com/docs/help-support/account-and-settings/subusers.html
+Redirect 301 /Classroom/Send/How_Emails_Are_Sent/can_i_send_from_multiple_from_addresses.html https://sendgrid.com/help-support/sending-email/senders.html
+Redirect 301 /Classroom/Send/How_Emails_Are_Sent/email_to_sms.html https://sendgrid.com/help-support/sending-email/email-to-sms.html
+Redirect 301 
 
 #######
 #
@@ -541,14 +546,14 @@ Redirect 301 /Delivery_Metrics/email_reports.html https://sendgrid.com/docs/help
 #
 #######
 
-Redirect 301 /Glossary/Email_Types/peer_invitations.html https://sendgrid.com/docs/Glossary/peer-invitations.html
+Redirect 301 /Glossary/Email_Types/peer_invitations.html https://sendgrid.com/docs/glossary/peer-invitations.html
 Redirect 301 /Glossary/ip_whitelabeling.html https://sendgrid.com/docs/help-support/getting-started/how-to-set-up-reverse-dns.html
-Redirect 301 /Glossary/bulk_sender_notification.html https://sendgrid.com/docs/Glossary/index.html
+Redirect 301 /Glossary/bulk_sender_notification.html https://sendgrid.com/docs/glossary/index.html
 Redirect 301 /Glossary/provisioning.html https://sendgrid.com/docs/Classroom/Basics/Account/account_sign_up_faq.html
 Redirect 301 /Glossary/marketing_email.html https://sendgrid.com/docs/Glossary/email-marketing.html
 Redirect 301 /Glossary/email_error_messages.html https://sendgrid.com/docs/Classroom/Track/Bounces/common_smtp_server_bounce_responses.html
 Redirect 301 /Glossary/sender_reputation.html https://sendgrid.com/docs/Classroom/Basics/Misc/your_reputation_what_is_it.html
-Redirect 301 /Glossary/triggering_events.html https://sendgrid.com/docs/Glossary/automated-email.html
+Redirect 301 /Glossary/triggering_events.html https://sendgrid.com/docs/glossary/automated-email.html
 
 #######
 #
