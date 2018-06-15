@@ -474,7 +474,6 @@ Redirect 301 /Classroom/Send/How_Emails_Are_Sent/sendmail_relay_all_local_mail_t
 Redirect 301 /Classroom/Send/How_Emails_Are_Sent/unauthenticated_sender.html https://sendgrid.com/docs/for-developers/getting-started/getting-started-smtp.html
 Redirect 301 /Classroom/Send/index.html https://sendgrid.com/docs/help-support/sending-email/how-to-send-email.html
 Redirect 301 /Classroom/Send/v3_Mail_Send/index.html https://sendgrid.api-docs.io/v3.0/mail-send
-Redirect 301 
 
 #######
 #
@@ -543,7 +542,7 @@ Redirect 301 /Classroom/Troubleshooting/safely_test_your_sending_speed.html http
 Redirect 301 /Classroom/Troubleshooting/testing_your_connectivity_to_sendgrids_smtp_relay_usinng_telnet.html https://sendgrid.com/docs/Classroom/Troubleshooting/Delivery_Issues/testing_your_connectivity_to_sendgrids_smtp_relay_using_telnet.html
 Redirect 301 /Classroom/Troubleshooting/troubleshooting_delays_and_latency.html https://sendgrid.com/docs/Classroom/Troubleshooting/Delivery_Issues/troubleshooting_delays_and_latency.html
 Redirect 301 /Classroom/Troubleshooting/a_custom_field_did_not_substitute_during_a_send.html https://sendgrid.com/docs/Classroom/Troubleshooting/Authentication/a_custom_field_did_not_substitute_during_a_send.html
-Redirect 301 /Classroom/Troubleshooting/certificate_verification_failed.html https://sendgrid.com/docs/Classroom/Troubleshooting/Authentication/certificate_verification_failed.html
+Redirect 301 /Classroom/Troubleshooting/certificate_verification_failed.html https:/c/sendgrid.com/docs/Classroom/Troubleshooting/Authentication/certificate_verification_failed.html
 Redirect 301 /Classroom/Troubleshooting/dns_records_and_underscores.html https://sendgrid.com/docs/Classroom/Troubleshooting/Authentication/dns_records_and_underscores.html
 Redirect 301 /Classroom/Troubleshooting/how_do_i_check_the_headers_raw_source_of_an_email.html https://sendgrid.com/docs/Classroom/Troubleshooting/Authentication/how_do_i_check_the_headers_raw_source_of_an_email.html
 Redirect 301 /Classroom/Troubleshooting/i_have_created_dns_records_but_the_whitelabel_wizard_is_not_validating_them.html https://sendgrid.com/docs/Classroom/Troubleshooting/Authentication/i_have_created_dns_records_but_the_whitelabel_wizard_is_not_validating_them.html
@@ -552,8 +551,32 @@ Redirect 301 /Classroom/Troubleshooting/list_upload_troubleshooting.html https:/
 Redirect 301 /Classroom/Troubleshooting/my_emails_are_displaying_as_on_behalf_of_or_via_in_some_mail_clients.html https://sendgrid.com/docs/Classroom/Troubleshooting/Authentication/my_emails_are_displaying_as_on_behalf_of_or_via_in_some_mail_clients.html
 Redirect 301 /Classroom/Troubleshooting/upgrading_your_whitelabel.html https://sendgrid.com/docs/Classroom/Troubleshooting/Authentication/upgrading_your_whitelabel.html
 Redirect 301 /Classroom/Troubleshooting/you_have_used_a_reserved_field_name_for_your_custom_field.html https://sendgrid.com/docs/Classroom/Troubleshooting/Authentication/you_have_used_a_reserved_field_name_for_your_custom_field.html
-
 Redirect 301 /Classroom/Troubleshooting/Delivery_Issues/email_was_deferred_due_to_the_following_reasons_ip_deferrals_messages.html https://sendgrid.com/docs/Classroom/Troubleshooting/index.html#Delivery-Issues
+Redirect 301 /Classroom/Troubleshooting/Account_Administration/account_under_review_suspended.html https://sendgrid.com/docs/help-support/account-and-settings/account-under-review.html
+Redirect 301 /Classroom/Troubleshooting/Account_Administration/cant_access_the_email_address_on_file_for_your_sendgrid_account.html https://sendgrid.com/docs/help-support/account-and-settings/cant-access-the-email-address-on-file-for-your-sendgrid-account.html
+Redirect 301 /Classroom/Troubleshooting/Account_Administration/cant_log_in_to_your_account.html https://sendgrid.com/docs/help-support/account-and-settings/log-in-issues.html
+Redirect 301 /Classroom/Troubleshooting/Account_Administration/help_i_cant_find_my_smtp_username_and_password.html https://sendgrid.com/docs/help-support/account-and-settings/resetting-your-username-and-password.html
+Redirect 301 /Classroom/Troubleshooting/Account_Administration/help_my_account_has_been_compromised.html https://sendgrid.com/docs/help-support/account-and-settings/account-compromised.html
+Redirect 301 /Classroom/Troubleshooting/Account_Administration/heroku_users_find_your_sendgrid_credentials.html https://sendgrid.com/docs/help-support/account-and-settings/heroku-credentials.html
+Redirect 301 /Classroom/Troubleshooting/Account_Administration/how_to_change_password_when_integrated_via_appdirect.html https://sendgrid.com/docs/help-support/account-and-settings/password-reset-appdirect.html
+Redirect 301 /Classroom/Troubleshooting/Account_Administration/how_to_change_the_password_for_your_sendgrid_account_via_softlayer.html https://sendgrid.com/docs/help-support/account-and-settings/password-reset-softlayer.html
+Redirect 301 /Classroom/Troubleshooting/Account_Administration/how_to_change_the_password_for_your_sendgrid_add_on_via_azure.html https://sendgrid.com/docs/help-support/account-and-settings/password-reset-azure.html
+Redirect 301 /Classroom/Troubleshooting/Account_Administration/how_to_change_password_when_integrated_via_appdirect.html https://sendgrid.com/docs/help-support/account-and-settings/password-reset-appdirect.html
+Redirect 301 /Classroom/Troubleshooting/Account_Administration/how_to_change_the_password_for_your_sendgrid_add_on_via_openshift.html https://sendgrid.com/docs/help-support/account-and-settings/password-reset-openshift.html
+Redirect 301 /Classroom/Troubleshooting/Account_Administration/heroku_users_find_your_sendgrid_credentials.html https://sendgrid.com/docs/help-support/account-and-settings/heroku-credentials.html
+Redirect 301 /Classroom/Troubleshooting/Account_Administration/how_to_change_the_password_for_your_sendgrid_add_on_via_the_ibm_cloud_marketplace.html https://sendgrid.com/docs/help-support/account-and-settings/password-reset-ibm-cloud-marketplace.html
+Redirect 301 /Classroom/Troubleshooting/Account_Administration/ip_access_management_has_locked_me_out_of_my_account.html https://sendgrid.com/docs/help-support/account-and-settings/ip-access-management.html
+Redirect 301 /Classroom/Troubleshooting/Account_Administration/ip_access_management_has_locked_me_out_of_my_account.html https://sendgrid.com/docs/help-support/account-and-settings/ip-access-management.html
+Redirect 301 /Classroom/Troubleshooting/Account_Administration/i_didnt_receive_the_password_reset_email.html https://sendgrid.com/docs/help-support/account-and-settings/password-reset-email.html
+Redirect 301 /Classroom/Troubleshooting/Account_Administration/i_didnt_receive_the_password_reset_email.html https://sendgrid.com/docs/help-support/account-and-settings/password-reset-email.html
+Redirect 301 /Classroom/Troubleshooting/Account_Administration/my_provision_was_declined_what_should_i_do.html https://sendgrid.com/docs/help-support/account-and-settings/account.html
+Redirect 301 /Classroom/Troubleshooting/Account_Administration/my_provision_was_declined_what_should_i_do.html https://sendgrid.com/docs/help-support/account-and-settings/account.html
+Redirect 301 /Classroom/Troubleshooting/Account_Administration/you_cannot_change_your_package_at_this_time_because_your_account_is_not_active.html https://sendgrid.com/docs/help-support/account-and-settings/account.html
+Redirect 301 /Classroom/Troubleshooting/index.html https://sendgrid.com/docs/help-support/account-and-settings/account.html
+Redirect 301 /Classroom/Troubleshooting/Authentication/how_do_i_check_the_headers_raw_source_of_an_email.html https://sendgrid.com/docs/help-support/account-and-settings/checking-email-source.html
+Redirect 301 /Classroom/Troubleshooting/Authentication/my_emails_are_displaying_as_on_behalf_of_or_via_in_some_mail_clients.html https://sendgrid.com/docs/help-support/getting-started/how-to-set-up-domain-authentication.html
+Redirect 301 /Classroom/Troubleshooting/Delivery_Issues/safely_test_your_sending_speed.html https://sendgrid.com/docs/help-support/account-and-settings/safely-test-your-sending-speed.html
+Redirect 301 /Classroom/Troubleshooting/Delivery_Issues/troubleshooting_delays_and_latency.html https://sendgrid.com/docs/help-support/account-and-settings/troubleshooting-delays-and-latency.html
 
 
 #######
