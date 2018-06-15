@@ -348,6 +348,10 @@ Redirect 301 /Classroom/Build/Add_Content/link_shorteners.html https://sendgrid.
 Redirect 301 /Classroom/Build/Add_Content/universal_links.html https://sendgrid.com/docs/help-support/sending-email/universal-links.html
 Redirect 301 /Classroom/Build/Add_Content/whats_the_recommended_message_size_limit.html https://sendgrid.com/docs/help-support/getting-started/how-to-send-email.html
 Redirect 301 /Classroom/Build/Add_Content/attachments.html https://sendgrid.com/docs/help-support/sending-email/attachments-with-digioh.html
+Redirect 301 /Classroom/Build/Choose_Content/adaptive_email_content.html https://sendgrid.com/blog/create-more-personalized-email-content-and-turn-engagement-into-revenue/
+Redirect 301 /Classroom/Build/Choose_Content/brand_consistency_why_its_important.html https://sendgrid.com/blog/how-to-maintain-brand-standards-in-your-email-designs/
+Redirect 301 /Classroom/Build/Choose_Content/gmail_promotions_tab.html https://sendgrid.com/blog/i-fought-the-tabs-and-the-tabs-won/
+Redirect 301 /Classroom/Build/Choose_Content/personalization_making_your_messages_count.html https://sendgrid.com/blog/create-more-personalized-email-content-and-turn-engagement-into-revenue/
 
 #######
 #
