@@ -1143,3 +1143,13 @@ Redirect 301 /User_Guide/Settings/Sender_authentication/how-to-set-up-link-brand
 Redirect 301 /User_Guide/Settings/Sender_authentication/how-to-set-up-reverse-dns.html https://sendgrid.com/docs/help-support/getting-started/how-to-set-up-reverse-dns.html
 Redirect 301 /User_Guide/Settings/Sender_authentication/Troubleshooting.html https://sendgrid.com/docs/help-support/getting-started/troubleshooting-sender-authentication.html
 Redirect 301 /User_Guide/Settings/Sender_authentication/providers.html https://sendgrid.com/docs/help-support/getting-started/dns-providers.html
+
+
+
+#######
+#
+# Classroom redirects - Build
+#
+#######
+
+Redirect 301 /Classroom/Build/Add_Content/can_i_use_substitution_tags_in_subject_lines.html https://sendgrid.com/docs/help-support/sending-email/editor.html
