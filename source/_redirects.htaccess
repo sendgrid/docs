@@ -352,6 +352,8 @@ Redirect 301 /Classroom/Build/Choose_Content/adaptive_email_content.html https:/
 Redirect 301 /Classroom/Build/Choose_Content/brand_consistency_why_its_important.html https://sendgrid.com/blog/how-to-maintain-brand-standards-in-your-email-designs/
 Redirect 301 /Classroom/Build/Choose_Content/gmail_promotions_tab.html https://sendgrid.com/blog/i-fought-the-tabs-and-the-tabs-won/
 Redirect 301 /Classroom/Build/Choose_Content/personalization_making_your_messages_count.html https://sendgrid.com/blog/create-more-personalized-email-content-and-turn-engagement-into-revenue/
+Redirect 301 /Classroom/Build/Format_Content/html_formatting_issues.html https://sendgrid.com/docs/help-support/sending-email/formatting-html.html
+Redirect 301 /Classroom/Build/Format_Content/html_rendering__the_dos_and_donts_of_cross_platform_email_design.html https://sendgrid.com/docs/help-support/sending-email/cross-platform-html-design.html
 
 #######
 #
