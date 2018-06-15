@@ -337,6 +337,17 @@ Redirect 301 /Classroom/Build/substitution_and_section_tags.html http://sendgrid
 Redirect 301 /Classroom/Build/whats_the_recommended_message_size_limit.html http://sendgrid.com/docs/Classroom/Build/Add_Content/whats_the_recommended_message_size_limit.html
 Redirect 301 /Classroom/Build/Format_Content/responsive_templates_and_design.html https://sendgrid.com/docs/Classroom/Build/Format_Content/html_rendering__the_dos_and_donts_of_cross_platform_email_design.html
 Redirect 301 /Classroom/Build/Choose_Content/a_b_testing.html https://sendgrid.com/docs/help-support/sending-email/a_b_testing.html
+Redirect 301 /Classroom/Build/Add_Content/can_i_use_substitution_tags_in_subject_lines.html https://sendgrid.com/docs/help-support/sending-email/editor.html
+Redirect 301 /Classroom/Build/Add_Content/change_email_content_after_send.html https://sendgrid.com/docs/help-support/getting-started/how-to-send-email.html
+Redirect 301 /Classroom/Build/Add_Content/content_delivery_networks.html https://sendgrid.com/docs/help-support/sending-email/content-delivery-networks.html
+Redirect 301 /Classroom/Build/Add_Content/custom_ssl_configurations.html https://sendgrid.com/docs/help-support/sending-email/custom-ssl-configurations.html
+Redirect 301 /Classroom/Build/Add_Content/substitution_and_section_tags.html https://sendgrid.com/docs/help-support/sending-email/substitution-and-section-tags.html
+Redirect 301 /Classroom/Build/Add_Content/embedding_videos_in_your_emails.html https://sendgrid.com/docs/help-support/getting-started/how-to-send-email.html
+Redirect 301 /Classroom/Build/Add_Content/how_do_i_add_a_list_unsubscribe_header_to_my_emails.html https://sendgrid.com/docs/help-support/sending-email/index-suppressions.html
+Redirect 301 /Classroom/Build/Add_Content/link_shorteners.html https://sendgrid.com/docs/help-support/getting-started/how-to-send-email.html
+Redirect 301 /Classroom/Build/Add_Content/universal_links.html https://sendgrid.com/docs/help-support/sending-email/universal-links.html
+Redirect 301 /Classroom/Build/Add_Content/whats_the_recommended_message_size_limit.html https://sendgrid.com/docs/help-support/getting-started/how-to-send-email.html
+Redirect 301 /Classroom/Build/Add_Content/attachments.html https://sendgrid.com/docs/help-support/sending-email/attachments-with-digioh.html
 
 #######
 #
@@ -1144,12 +1155,3 @@ Redirect 301 /User_Guide/Settings/Sender_authentication/how-to-set-up-reverse-dn
 Redirect 301 /User_Guide/Settings/Sender_authentication/Troubleshooting.html https://sendgrid.com/docs/help-support/getting-started/troubleshooting-sender-authentication.html
 Redirect 301 /User_Guide/Settings/Sender_authentication/providers.html https://sendgrid.com/docs/help-support/getting-started/dns-providers.html
 
-
-
-#######
-#
-# Classroom redirects - Build
-#
-#######
-
-Redirect 301 /Classroom/Build/Add_Content/can_i_use_substitution_tags_in_subject_lines.html https://sendgrid.com/docs/help-support/sending-email/editor.html
