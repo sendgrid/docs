@@ -356,6 +356,7 @@ Redirect 301 /Classroom/Build/Format_Content/html_formatting_issues.html https:/
 Redirect 301 /Classroom/Build/Format_Content/html_rendering__the_dos_and_donts_of_cross_platform_email_design.html https://sendgrid.com/docs/help-support/sending-email/cross-platform-html-design.html
 Redirect 301 /Classroom/Build/Format_Content/plain_text_emails_converted_to_html.html https://sendgrid.com/docs/help-support/sending-email/cross-platform-html-design.html
 Redirect 301 /Classroom/Build/index.html https://sendgrid.com/docs/help-support/sending-email/editor.html
+Redirect 301 /Classroom/Send/How_Emails_Are_Sent/api_keys.html https://sendgrid.com/docs/help-support/account-and-settings/api-keys.html
 
 #######
 #
