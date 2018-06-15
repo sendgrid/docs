@@ -530,7 +530,7 @@ Redirect 301 /Classroom/Track/Clicks/click_tracking_links_have_stopped_working.h
 Redirect 301 /Classroom/Track/Clicks/clicktracking_ssl.html https://sendgrid.com/docs/help-support/analytics-and-reporting/click-tracking-ssl.html
 Redirect 301 /Classroom/Track/Unsubscribes/how_do_i_unsubscribe_a_user.html https://sendgrid.com/docs/help-support/sending-email/index-suppressions.html
 Redirect 301 /Classroom/Track/Unsubscribes/list_unsubscribe.html https://sendgrid.com/docs/help-support/sending-email/unsubcribe-groups.html
-Redirect 301 
+Redirect 301 /Classroom/Track/Unsubscribes/unsubscribe_via_subscription_tracking.html https://sendgrid.com/docs/help-support/analytics-and-reporting/subscription-tracking.html
 
 #######
 #
