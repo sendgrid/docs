@@ -445,7 +445,9 @@ Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/resubscripti
 Redirect 301 /Classroom/Send/How_Emails_Are_Sent/can_i_send_from_multiple_domains.html https://sendgrid.com/docs/help-support/account-and-settings/subusers.html
 Redirect 301 /Classroom/Send/How_Emails_Are_Sent/can_i_send_from_multiple_from_addresses.html https://sendgrid.com/help-support/sending-email/senders.html
 Redirect 301 /Classroom/Send/How_Emails_Are_Sent/email_to_sms.html https://sendgrid.com/help-support/sending-email/email-to-sms.html
-Redirect 301 
+Redirect 301 /Classroom/Send/How_Emails_Are_Sent/sendmail_relay_all_local_mail_through_sendgrid.html https://sendgrid.com/docs/help-support/sending-email/sendmail.html
+Redirect 301 /Classroom/Send/How_Emails_Are_Sent/unauthenticated_sender.html https://sendgrid.com/docs/for-developers/getting-started/getting-started-smtp.html
+Redirect 301
 
 #######
 #
