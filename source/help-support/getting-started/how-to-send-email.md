@@ -16,10 +16,10 @@ If you want to send email programatically, see the [API reference]({{root_url}}/
 Before sending your first campaign, you need to do the following:
 
 - [Create an Account](https://sendgrid.com/pricing/?mc=SendGrid%20Documentation) 
-- [Add a Sender](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/senders.html) 
-- [Upload Contacts](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html) 
-- [Add an Unsubscribe Group](https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html) 
-- [Segment Your Contact List](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/lists.html) (Optional) 
+- [Add a Sender](https://sendgrid.com/docs/help-support/sending-email/senders.html) 
+- [Upload Contacts](https://sendgrid.com/docs/help-support/managing-contacts/adding-contacts.html) 
+- [Add an Unsubscribe Group](https://sendgrid.com/docs/help-support/sending-email/index-suppressions.html) 
+- [Segment Your Contact List](https://sendgrid.com/docs/help-support/managing-contacts/managing-contact-list.html) (Optional) 
 
 *To send your first campaign:*
 
@@ -30,7 +30,7 @@ Before sending your first campaign, you need to do the following:
 ![]({{root_url}}/images/campaigns_dashboard_categories_search.png)
 
 1. Select the template that you want to use for your campaign. 
-<br> You can select a **Blank Template**, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Marketing Templates](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/templates.html).
+<br> You can select a **Blank Template**, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Marketing Templates](https://sendgrid.com/docs/help-support/sending-email/create-and-edit-transactional-templates.html).
 
 1. Select an editor. 
 <br> You can choose between the **Design Editor** and the **Code Editor**.
