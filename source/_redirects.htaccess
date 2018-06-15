@@ -311,6 +311,7 @@ Redirect 301 /Classroom/Basics/API/how_to_create_a_subuser_with_the_api.html htt
 Redirect 301 /Classroom/Basics/API/what_are_the_sendgrid_apis_and_what_do_they_do.html https://sendgrid.com/docs/for-developers/getting-started/getting-started-api.html
 Redirect 301 /Classroom/Basics/API/what_is_my_api_key.html https://sendgrid.com/docs/help-support/account-and-settings/api-keys.html
 Redirect 301 /Classroom/Basics/API/what_is_my_api_key.html https://sendgrid.com/docs/help-support/account-and-settings/api-keys.html
+Redirect 301 /Classroom/index.html https://sendgrid.com/docs/
 
 #######
 #
