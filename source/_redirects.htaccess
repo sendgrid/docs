@@ -310,8 +310,7 @@ Redirect 301 /Classroom/Basics/API/how_do_i_integrate_with_sendgrid.html https:/
 Redirect 301 /Classroom/Basics/API/how_to_create_a_subuser_with_the_api.html https://sendgrid.com/docs/for-developers/getting-started/how_to_create_a_subuser_with_the_api.html
 Redirect 301 /Classroom/Basics/API/what_are_the_sendgrid_apis_and_what_do_they_do.html https://sendgrid.com/docs/for-developers/getting-started/getting-started-api.html
 Redirect 301 /Classroom/Basics/API/what_is_my_api_key.html https://sendgrid.com/docs/help-support/account-and-settings/api-keys.html
-
-
+Redirect 301 /Classroom/Basics/API/what_is_my_api_key.html https://sendgrid.com/docs/help-support/account-and-settings/api-keys.html
 
 #######
 #
@@ -398,6 +397,32 @@ Redirect 301 /Classroom/Deliver/Undeliverable_Email/my_emails_are_being_blocked.
 Redirect 301 /Classroom/Deliver/Address_Lists/why_purchase_lists_when_you_can.html https://sendgrid.com/docs/Classroom/Deliver/Address_Lists/why_purchased_email_lists_are_no_good.html
 Redirect 301 /Classroom/Deliver/Delivery_Introduction/bacn_its_whats_for_dinner.html https://sendgrid.com/docs/Classroom/Deliver/index.html
 Redirect 301 /Classroom/Deliver/Delivery_Introduction/IP_reputation_montoring.html https://sendgrid.com/docs/help-support/account-and-settings/dedicated_ip_addresses.html
+Redirect 301 /Classroom/Deliver/Delivery_Introduction/email_deliverability_101.html https://sendgrid.com/docs/help-support/getting-started/email-deliverability.html
+Redirect 301 /Classroom/Deliver/Delivery_Introduction/russian_data_localization_law.html https://sendgrid.com/resource/general-data-protection-regulation/
+Redirect 301 /Classroom/Deliver/Delivery_Introduction/suppressions_vs_unsubscribes.html https://sendgrid.com/docs/help-support/sending-email/global-unsubscribes.html
+Redirect 301 /Classroom/Deliver/Delivery_Introduction/the_art_of_notifications.html https://sendgrid.com/docs/help-support/account-and-settings/notifications.html
+Redirect 301 /Classroom/Deliver/Delivery_Introduction/unsubscribes_explained.html https://sendgrid.com/docs/help-support/sending-email/global-unsubscribes.html
+Redirect 301 /Classroom/Deliver/index.html https://sendgrid.com/docs/help-support/getting-started/email-deliverability.html
+Redirect 301 /Classroom/Deliver/shared_ip_throttling.html https://sendgrid.com/docs/help-support/getting-started/email-deliverability.html
+Redirect 301 /Classroom/Deliver/Sender_Authentication/gmail_dmarc_changes.html https://sendgrid.com/docs/help-support/account-and-settings/gmail-dmarc.html
+Redirect 301 /Classroom/Deliver/Sender_Authentication/aol_dmarc_changes_refused_due_to_provided_dmarc_policy.html https://sendgrid.com/docs/help-support/account-and-settings/aol-dmarc.html
+Redirect 301 /Classroom/Deliver/Sender_Authentication/microsoft_dmarc_changes.html https://sendgrid.com/docs/help-support/account-and-settings/microsoft-dmarc.html
+Redirect 301 /Classroom/Deliver/Sender_Authentication/yahoo_dmarc_changes_message_not_accepted_for_policy_reasons.html https://sendgrid.com/docs/help-support/account-and-settings/yahoo-dmarc.html
+Redirect 301 /Classroom/Deliver/Sender_Authentication/spf_records_explained.html https://sendgrid.com/docs/help-support/account-and-settings/spf_records.html
+Redirect 301 /Classroom/Deliver/Sender_Authentication/spf_dont_exceed_ten_dns_lookups.html https://sendgrid.com/docs/help-support/account-and-settings/spf_limitations.html
+Redirect 301 /Classroom/Deliver/Sender_Authentication/the_importance_of_a_physical_mailing_address.html https://sendgrid.com/docs/help-support/sending-email/senders.html
+Redirect 301 /Classroom/Deliver/Sender_Authentication/internet_standards_spf_and_dkim_and_deliverability.html https://sendgrid.com/docs/help-support/account-and-settings/spf-dkim.html
+Redirect 301 /Classroom/Deliver/Sender_Authentication/help_my_emails_arent_being_delivered.html https://sendgrid.com/docs/help-support/getting-started/email-deliverability.html
+Redirect 301 /Classroom/Deliver/Sender_Authentication/how_do_i_keep_emails_from_dropping.html https://sendgrid.com/docs/help-support/getting-started/email-deliverability.html
+Redirect 301 /Classroom/Deliver/Sender_Authentication/my_emails_are_being_dropped.html https://sendgrid.com/docs/help-support/getting-started/email-deliverability.html
+Redirect 301 /Classroom/Deliver/Sender_Authentication/my_emails_are_going_to_spam.html https://sendgrid.com/docs/help-support/getting-started/email-deliverability.html
+Redirect 301 /Classroom/Deliver/Sender_Authentication/my_emails_are_going_to_spam.html https://sendgrid.com/docs/help-support/getting-started/email-deliverability.html
+Redirect 301 /Classroom/Deliver/Sender_Authentication/what_do_i_do_if_im_blacklisted.html https://sendgrid.com/docs/help-support/sending-email/blacklists.html
+Redirect 301 /Classroom/Deliver/Sender_Authentication/spam_trapped.html https://sendgrid.com/docs/help-support/sending-email/spam-traps.html
+Redirect 301 /Classroom/Deliver/Sender_Authentication/google_feedback_loop_spam_complaints.html https://sendgrid.com/docs/help-support/sending-email/spam.html
+Redirect 301 /Classroom/Deliver/Sender_Authentication/why_is_sendgrid_net_greylisted.html https://sendgrid.com/docs/help-support/sending-email/sendgrid.net-greylisted.html
+
+
 #######
 #
 # /docs/Classroom/Send - redirects for Classroom/Send
@@ -821,7 +846,7 @@ Redirect 301 /User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/letter_fr
 Redirect 301 /Classroom/Basics/Marketing_Campaigns/migrating_content.html https://sendgrid.com/docs/help-support/sending-email/legacy-newsletter/index.html
 Redirect 301 /Classroom/Basics/Marketing_Campaigns/migrating_images.html https://sendgrid.com/docs/help-support/sending-email/legacy-newsletter/index.html
 Redirect 301 /Classroom/Basics/Marketing_Campaigns/migrating_lists.html https://sendgrid.com/docs/help-support/sending-email/legacy-newsletter/index.html
-Redirect 301 /Classroom/Basics/Marketing_Campaigns/migrating_unsubscribes.html https://sendgrid.com/docs/help-support/sending-email/legacy-newsletter/index.html
+Redirect 301 /Classroom/Basics/Marketing_Campaigns/migrating_unsubscribes.html https://sendgrid.com/docs/help-support/gettig/legacy-newsletter/index.html
 
 #######
 #
