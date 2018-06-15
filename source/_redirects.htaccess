@@ -520,6 +520,16 @@ Redirect 301 /Classroom/Track/Introduction/what_do_all_these_delivery_statistics
 Redirect 301 /Classroom/Track/Collecting_Data/sendwithus.html https://support.sendwithus.com/esp_accounts/connect_sendgrid/
 Redirect 301 /Classroom/Track/unsubscribe_via_the_subscription_tracking.html https://sendgrid.com/docs/Classroom/Track/Unsubscribes/unsubscribe_via_subscription_tracking.html
 Redirect 301 /Classroom/Track/index.html https://sendgrid.com/docs/help-support/analytics-and-reporting/stats-overview.html
+Redirect 301 /Classroom/Track/Collecting_Data/a_guide_for_tracking_data_with_keen_io.html https://sendgrid.com/docs/help-support/analytics-and-reporting/tracking-data-with-keen-io.html
+Redirect 301 /Classroom/Track/Collecting_Data/google_analytics_demystified_ga_statistics_vs_sg_statistics.html https://sendgrid.com/docs/help-support/analytics-and-reporting/google-analytics.html
+Redirect 301 /Classroom/Track/Collecting_Data/is_there_a_way_to_see_the_content_of_transactional_emails_i_send.html https://sendgrid.com/docs/help-support/sending-email/create-and-edit-transactional-templates.html
+Redirect 301 /Classroom/Track/Collecting_Data/new_relic.html https://sendgrid.com/docs/help-support/analytics-and-reporting/tracking-stats-using-new-relic.html
+Redirect 301 /Classroom/Track/Clicks/click_tracking_links_with_substitution_tags.html https://sendgrid.com/docs/help-support/analytics-and-reporting/campaign-stats.html
+Redirect 301 /Classroom/Track/Clicks/click_tracking_html_best_practices.html https://sendgrid.com/docs/help-support/analytics-and-reporting/click-tracking-html-best-practices.html
+Redirect 301 /Classroom/Track/Clicks/click_tracking_links_have_stopped_working.html https://sendgrid.com/docs/help-support/analytics-and-reporting/click-tracking.html
+Redirect 301 /Classroom/Track/Clicks/clicktracking_ssl.html https://sendgrid.com/docs/help-support/analytics-and-reporting/click-tracking-ssl.html
+Redirect 301 /Classroom/Track/Unsubscribes/how_do_i_unsubscribe_a_user.html https://sendgrid.com/docs/help-support/sending-email/index-suppressions.html
+Redirect 301 /Classroom/Track/Unsubscribes/list_unsubscribe.html https://sendgrid.com/docs/help-support/sending-email/unsubcribe-groups.html
 Redirect 301 
 
 #######
