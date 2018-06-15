@@ -449,7 +449,8 @@ Redirect 301 /Classroom/Send/How_Emails_Are_Sent/sendmail_relay_all_local_mail_t
 Redirect 301 /Classroom/Send/How_Emails_Are_Sent/unauthenticated_sender.html https://sendgrid.com/docs/for-developers/getting-started/getting-started-smtp.html
 Redirect 301 /Classroom/Send/index.html https://sendgrid.com/docs/help-support/sending-email/how-to-send-email.html
 Redirect 301 /Classroom/Send/v3_Mail_Send/index.html https://sendgrid.api-docs.io/v3.0/mail-send
-Redirect 301 
+Redirect 301 /Classroom/Send/v3_Mail_Send/how_to_migrate_from_v2_to_v3_mail_send.html https://sendgrid.com/docs/for-developers/getting-started/migrating-from-v2-to-v3-mail-send.html
+
 
 #######
 #
