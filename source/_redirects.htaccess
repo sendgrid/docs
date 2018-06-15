@@ -484,7 +484,7 @@ Redirect 301 /Classroom/Send/When_Emails_Are_Sent/can_i_stop_a_scheduled_send.ht
 Redirect 301 /Classroom/Send/When_Emails_Are_Sent/can_i_stop_a_send_in_progress.html https://sendgrid.com/docs/for-developers/sending-email/stopping-an-in-progress-send.html
 Redirect 301 /Classroom/Send/When_Emails_Are_Sent/how_can_i_schedule_emails_to_send_at_specific_times.html https://sendgrid.com/docs/for-developers/sending-email/scheduling-email.html
 Redirect 301 /Classroom/Send/When_Emails_Are_Sent/seeing_a_delay_with_your_first_few_sends.html https://sendgrid.com/docs/help-support/getting-started/warming-up-an-ip-address.html
-Redirect 301
+Redirect 301 
 
 
 #######
