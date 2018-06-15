@@ -82,6 +82,28 @@ All Mail clients render HTML/CSS differently, in their own ways and for their ow
 
     - Try align="top" to the image in question.
 
+
+{% anchor h2 %}
+Controlling converted plain text email output
+{% endanchor %}
+
+_To control the output of plain-text conversion do one of the following:_
+
+* Turn off the filters causing the conversion from plain text to HTML.
+* Start each line with a space, this will add a "preformatted" `<pre>` tag around the line.
+* Separate new sentences with double newlines, which will add a "paragraph" <p> tag around the sentence.
+* Convert your message to HTML, bypassing our need to convert it altogether.
+
+- To disable conversion globally, click **Mail Settings** and select **Plain Content** and enable the suppression.
+
+**Why can't you just automatically add <br /> tags to newlines upon conversion?**
+
+Due to the way plain text emails are sent ( [RFC 5822](http://www.rfc-editor.org/rfc/rfc5322.txt "Link: http://www.rfc-editor.org/rfc/rfc5322.txt"), Revised 2008) mailers are required to wrap lines at 998 characters, and recommends wrapping at 78 characters (excluding CR/LF). As a result, long sentences can often be broken up into multiple lines. Adding <br /> tags to each newline, would therefore create formatting problems.
+
+**For more information**
+
+We use the open-source library [MKDoc-Text-Structured](http://search.cpan.org/~bpostle/MKDoc-Text-Structured-0.83/lib/MKDoc/Text/Structured.pm) to perform the plain-text to HTML conversion. More information about this library and how it works can be found on the [MKDoc-Text-Structured documentation page](http://search.cpan.org/~bpostle/MKDoc-Text-Structured-0.83/lib/MKDoc/Text/Structured.pm).
+
 **VIDEOS**
 
 - **Don't do it... Just don't do it...**

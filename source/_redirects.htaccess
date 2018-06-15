@@ -354,6 +354,8 @@ Redirect 301 /Classroom/Build/Choose_Content/gmail_promotions_tab.html https://s
 Redirect 301 /Classroom/Build/Choose_Content/personalization_making_your_messages_count.html https://sendgrid.com/blog/create-more-personalized-email-content-and-turn-engagement-into-revenue/
 Redirect 301 /Classroom/Build/Format_Content/html_formatting_issues.html https://sendgrid.com/docs/help-support/sending-email/formatting-html.html
 Redirect 301 /Classroom/Build/Format_Content/html_rendering__the_dos_and_donts_of_cross_platform_email_design.html https://sendgrid.com/docs/help-support/sending-email/cross-platform-html-design.html
+Redirect 301 /Classroom/Build/Format_Content/plain_text_emails_converted_to_html.html https://sendgrid.com/docs/help-support/sending-email/cross-platform-html-design.html
+Redirect 301 /Classroom/Build/index.html https://sendgrid.com/docs/help-support/sending-email/editor.html
 
 #######
 #
