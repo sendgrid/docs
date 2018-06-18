@@ -1,9 +1,9 @@
 import React from 'react';
-import kebabCase from 'lodash/kebabCase';
 import Link from 'gatsby-link';
 import './glossary.scss';
+import withSubNav from '../components/NavSub';
 
-export default class glossary extends React.Component {
+class glossary extends React.Component {
   constructor(props) {
     super(props);
     this.glossary = this.alphaEdges();
@@ -32,7 +32,7 @@ export default class glossary extends React.Component {
         <h1>Glossary</h1>
         <div className="row">
           {Object.keys(this.glossary).map(key => (
-            <div className="col-md-6 glossary-alpha-section">
+            <div key={key} className="col-md-6 glossary-alpha-section">
               <h3>{key}</h3>
               {this.glossary[key].map(edge => (
                 <Link
@@ -49,6 +49,8 @@ export default class glossary extends React.Component {
     );
   }
 }
+
+export default withSubNav()(glossary);
 
 export const pageQuery = graphql`
   query glossary {

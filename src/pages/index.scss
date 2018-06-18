@@ -7,10 +7,8 @@ $card-gutter: 30px;
 }
 
 .page-title {
-  font-size: $scaleup-5;
   line-height: 1.2;
   margin-bottom: $scaledown-6;
-  margin-top: $scaleup-2;
 
   @include colfax(600);
 }
