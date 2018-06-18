@@ -1300,11 +1300,16 @@ Redirect 301 /Glossary/ip_warmup.html https://sendgrid.com/docs/glossary/ip-warm
 Redirect 301 /Glossary/link_branding.html https://sendgrid.com/docs/glossary/link-branding.html
 Redirect 301 /Glossary/lists.html https://sendgrid.com/docs/glossary/lists.html
 Redirect 301 /Glossary/mail_merge.html https://sendgrid.com/docs/glossary/mail-merge.html
+Redirect 301 /Glossary/mailbox_provider.html  https://sendgrid.com/docs/glossary/mailbox-provider.html
 Redirect 301 /Glossary/message_id.html https://sendgrid.com/docs/glossary/message-id.html
 Redirect 301 /Glossary/mta.html https://sendgrid.com/docs/glossary/mta.html
 Redirect 301 /Glossary/mx_record.html https://sendgrid.com/docs/glossary/mx-record.html
 Redirect 301 /Glossary/open_rate.html https://sendgrid.com/docs/glossary/open-rate.html
-Redirect 301 /Glossary/reconfirmation.html https://sendgrid.com/docs/glossary/reconfirmation.html
+Redirect 301 /Glossary/openrelay.html https://sendgrid.com/docs/glossary/openrelay.html
+Redirect 301 /Glossary/peer_invitations.html https://sendgrid.com/docs/glossary/peer-invitations.html
+Redirect 301 /Glossary/phishing.html https://sendgrid.com/docs/glossary/phishing.html 
+Redirect 301 /Glossary/preheader.html https://sendgrid.com/docs/glossary/preheader.html
+Redirect 301 /Glossary/rate_limiting.html https://sendgrid.com/docs/glossary/rate-limiting.html
 Redirect 301 /Glossary/reputation_monitoring.html https://sendgrid.com/docs/glossary/reputation-monitoring.html
 Redirect 301 /Glossary/request.html https://sendgrid.com/docs/glossary/request.html
 Redirect 301 /Glossary/reseller_email_account.html https://sendgrid.com/docs/glossary/reseller-email-account.html
