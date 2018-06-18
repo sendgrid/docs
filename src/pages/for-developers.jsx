@@ -3,6 +3,7 @@ import Link from 'gatsby-link';
 import GlossaryPartial from '../components/GlossaryPartial';
 import FOR_DEVS_CARDS from '../constants/forDevelopersCards';
 import Libaries from '../components/Libaries';
+import withSubNav from '../components/NavSub';
 import './for-developers.scss';
 
 class ForDevelopers extends Component {
@@ -52,4 +53,4 @@ class ForDevelopers extends Component {
   }
 }
 
-export default ForDevelopers;
+export default withSubNav({ showBreadCrumbs: true })(ForDevelopers);

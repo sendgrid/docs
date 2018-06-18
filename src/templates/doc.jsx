@@ -5,11 +5,11 @@ import _ from 'lodash';
 import SEO from '../components/SEO';
 import AsideMenu from '../components/AsideMenu';
 import config from '../../data/SiteConfig';
-import './b16-tomorrow-dark.css';
-import './doc.scss';
-
 import Callout from '../componentsMarkdown/Callout';
 import CodeGroup from '../componentsMarkdown/CodeGroup';
+import withSubNav from '../components/NavSub';
+import './b16-tomorrow-dark.css';
+import './doc.scss';
 
 const renderAst = new RehypeReact({
   createElement: React.createElement,
@@ -19,9 +19,9 @@ const renderAst = new RehypeReact({
   },
 }).Compiler;
 
-export default class DocTemplate extends React.Component {
+class DocTemplate extends React.Component {
   getLinks() {
-    const headers = this.props.data.markdownRemark.htmlAst.children.filter(el => el.type === 'element' && _.includes(['h2', 'h3'], el.tagName));
+    const headers = this.props.data.doc.htmlAst.children.filter(el => el.type === 'element' && _.includes(['h2', 'h3'], el.tagName));
     return headers.map((header) => {
       const link = {};
       link.tagName = header.tagName;
@@ -33,7 +33,7 @@ export default class DocTemplate extends React.Component {
 
   render() {
     const { slug } = this.props.pathContext;
-    const postNode = this.props.data.markdownRemark;
+    const postNode = this.props.data.doc;
     const post = postNode.frontmatter;
     const asideLinks = this.getLinks();
 
@@ -45,7 +45,7 @@ export default class DocTemplate extends React.Component {
         <SEO postPath={slug} postNode={postNode} postSEO />
         <AsideMenu asideLinks={asideLinks} />
         <div className="doc-main">
-          <h1>{post.title}</h1>
+          <h1 className="page-title">{post.title}</h1>
           {renderAst(postNode.htmlAst)}
         </div>
       </div>
@@ -53,10 +53,12 @@ export default class DocTemplate extends React.Component {
   }
 }
 
+export default withSubNav()(DocTemplate);
+
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    doc: markdownRemark(fields: { slug: { eq: $slug } }) {
       htmlAst
       html
       frontmatter {
@@ -64,6 +66,8 @@ export const pageQuery = graphql`
       }
       fields {
         slug
+        title
+        category
       }
     }
   }

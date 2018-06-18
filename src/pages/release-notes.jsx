@@ -3,10 +3,10 @@ import _ from 'lodash';
 import AsideMenu from '../components/AsideMenu';
 import ReleaseKey from '../components/ReleaseNotes/ReleaseKey';
 import ReleaseNotePost from '../components/ReleaseNotes/ReleaseNotePost';
-import NavSub from '../components/NavSub';
+import withSubNav from '../components/NavSub';
 import './release-notes.scss';
 
-export default class ReleaseNotes extends React.Component {
+class ReleaseNotes extends React.Component {
   getAsideLinks() {
     const { edges } = this.props.data.releaseNotes;
     const overview = {
@@ -54,6 +54,7 @@ export default class ReleaseNotes extends React.Component {
   }
 }
 
+export default withSubNav()(ReleaseNotes);
 
 export const pageQuery = graphql`
   query releaseNote {

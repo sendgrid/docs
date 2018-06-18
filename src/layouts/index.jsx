@@ -6,7 +6,8 @@ import config from '../../data/SiteConfig';
 import Footer from '../components/Footer';
 import '../scss/style-guide.scss';
 
-export const PathContext = React.createContext('/kjkj');
+const PathContext = React.createContext();
+// const PathContext = React.createContext();
 
 export default class MainLayout extends React.Component {
   getLocalTitle() {
@@ -48,7 +49,7 @@ export default class MainLayout extends React.Component {
 
   render() {
     const { children } = this.props;
-    const foo = { foo: 'bar' };
+
     return (
       <div className="docs-wrap">
         <Helmet>
@@ -56,12 +57,13 @@ export default class MainLayout extends React.Component {
           <meta name="description" content={config.siteDescription} />
         </Helmet>
         <NavMain />
-        <PathContext.Provider value={foo} />
-        <NavSub />
-        <PathContext.Provider />
+
         {children()}
+
         <Footer />
       </div>
     );
   }
 }
+
+export const PathConsumer = PathContext.Consumer;
