@@ -29,7 +29,7 @@ navigation:
   * [Template Engine](#-Template-Engine)
   * [Tracking](#-Tracking)
   * [User Account](#-User-Account)
-  * [Whitelabel (Sender Authentication)](#-Whitelabel--Sender-Authentication-)
+  * [Whitelabel - Sender Authentication](#-Whitelabel--Sender-Authentication)
 * [Managing API Keys](#-Managing-API-Keys)
   * [Edit an API key](#-Edit-an-API-key)
   * [Deleting an API Key](#-Inactivate-an-API-key)
@@ -45,9 +45,9 @@ There are two different types of API keys:
 1. **Billing API Keys** are used only to authenticate billing related API calls.
 1. **General API Keys** are used to authenticate all other API calls.
 
-SendGrid requires a separate API key for making billing related API calls. This separation adds an extra level of security by giving you more control over who has access to the various areas of your account.
+SendGrid requires a separate API key for making billing related API calls. This separation adds an extra level of security by giving you more control over who has access to the various areas of your account. Billing permissions are mutually exclusive from all others. An API Key can either have Billing permissions, or any other set of permissions.
 
-For more detailed information about API key permissions, see our [API Keys permissions page]({{root_url}}/Classroom/Basics/API/api_key_permissions.html).
+For more detailed information about API key permissions, see our [API key permissions](#-API-key-permissions).
 
 When viewing the API keys page, you will see a list of your current API keys along with the following information:
 
@@ -81,6 +81,10 @@ API key permissions
 {% endanchor %}
 
 During the API key creation process, you can select specific permissions, or scopes, that you would like to assign to your new API key. These permissions restrict which areas of your account your API key can access.
+
+{% info %}
+Not all API Key permissions can be accessed or edited through the web app. For a detailed list of all API key permissions, see our [API Reference]({{root_url}}/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html).
+{% endinfo %}
 
 When assigning permissions to your API key, select one of the following levels of access:
 
@@ -346,7 +350,7 @@ Allows the API key holder to view and update settings.
 * Full Access
 
 {% anchor h3 %}
-Whitelabel (Sender Authentication)
+Whitelabel - Sender Authentication
 {% endanchor %}
 
 Allows the API key holder to view, edit, and delete authenticated domains, senders, IPs, and links.
