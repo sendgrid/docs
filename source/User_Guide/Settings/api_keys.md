@@ -12,7 +12,24 @@ navigation:
 
 * [What is an API key?](#-What-is-an-API-key)
 * [How to create an API key](#-How-to-create-an-API-key)
-* [API key permissions](#-API-key-permissions)
+* [API key permissions](#-API-key-permissions) 
+  * [API Keys](#-API-Keys)
+  * [Alerts](#-Alerts)
+  * [Email Activity](#-Email-Activity)
+  * [IP Management](#-IP-Management)
+  * [Inbound Parse](#-Inbound-Parse)
+  * [Mail Send](#-Mail-Send)
+  * [Mail Settings](#-Mail-Settings)
+  * [Marketing Campaigns](#-Marketing-Campaigns)
+  * [Partners](#-Partners)
+  * [Security](#-Security)
+  * [Stats](#-Stats)
+  * [Subusers](#-Subusers)
+  * [Suppressions](#-Supressions)
+  * [Template Engine](#-Template-Engine)
+  * [Tracking](#-Tracking)
+  * [User Account](#-User-Account)
+  * [Whitelabel (Sender Authentication)](#-Whitelabel--Sender-Authentication-)
 * [Managing API Keys](#-Managing-API-Keys)
   * [Edit an API key](#-Edit-an-API-key)
   * [Deleting an API Key](#-Inactivate-an-API-key)
@@ -339,8 +356,6 @@ Allows the API key holder to view, edit, and delete authenticated domains, sende
 * No Access
 * Read Access
 * Full Access
-
-
 
 {% anchor h2 %}
 Managing API Keys
