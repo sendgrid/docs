@@ -87,103 +87,260 @@ Allows the API key holder to create and edit existing API keys.
 * Read Access
 * Full Access
 
-<table class="table">
-  <tr>
-    <th>Scope</th>
-    <th>Description</th>
-    <th>Permission Levels</th>
-  </tr>
-  <tr>
-    <td>API Keys</td>
-    <td>Allows the API key holder to create and edit existing API keys. </td>
-    <td>No Access, Read Access, Full Access</td>
-  </tr>
-  <tr>
-    <td>Alerts</td>
-    <td>Allows the API key holder to manage alerts. </td>
-    <td>No Access, Read Access, Full Access</td>
-  </tr>
-  <tr>
-    <td>Category Management</td>
-    <td>Allows the API key holder to create and manage categories.</td>
-    <td>No Access, Read Access, Full Access</td>
-  </tr>
-  <tr>
-    <td>Email Activity<br>* Messages</td>
-    <td>Allows the API key holder to view, filter, and download email activity statistics. <br>**Note** this service must be purchased separately. For more information, see the [documentation]({{root_url}}//User_Guide/email_activity_feed.html).</td>
-    <td>No Access, Read Access</td>
-  </tr>
-  <tr>
-    <td>IP Management</td>
-    <td>Allows the API key holder to view, add, or delete whitelisted IP addresses.</td>
-    <td>No Access, Read Access, Full Access</td>
-  </tr>
-  <tr>
-    <td>Inbound Parse</td>
-    <td>Allows the API key holder to view, create, or delete parse settings.  </td>
-    <td>No Access, Read Access, Full Access</td>
-  </tr>
-  <tr>
-    <td>Mail Send<br>* Scheduled Sends</td>
-    <td>Allows the API Key holder to send email using the SendGrid V3 API.<br>* Allows the API Key holder to schedule email using the SendGrid V3 API.</td>
-    <td>NoAccess, Full Access<br>No Access, Read Access, Full Access</td>
-  </tr>
-  <tr>
-    <td>Mail Settings<br>* Address Whitelist<br>* BCC<br>* Bounce Purge<br>* Event Notification<br>* Footer<br>* Forward Bounce<br>* Forward Spam<br>* Legacy Email Template<br>* Plain Content<br>* Spam Checker</td>
-    <td>Allows the API key holder to view and update all mail settings listed. </td>
-    <td>No Access, Read Access, Full Access</td>
-  </tr>
-  <tr>
-    <td>Marketing Campaigns</td>
-    <td>Allows the API Key holder to view, create, and delete campaigns. </td>
-    <td>No Access, Full Access</td>
-  </tr>
-  <tr>
-    <td>Partners</td>
-    <td>Allows the API key holder to view and edit partner settings.</td>
-    <td>No Access, Read Access, Full Access</td>
-  </tr>
-  <tr>
-    <td>Security</td>
-    <td></td>
-    <td>No Access, Read Access, Full Access</td>
-  </tr>
-  <tr>
-    <td>Stats<br>* Browser Stats<br>* Category Stats<br>* Email Clients and Devices<br>* Geographical<br>* Global Stats<br>* Mailbox Provider Stats<br>* Parse Webhook<br>* Stats Overview<br>* Subuser Stats</td>
-    <td>Allows the API key holder to view stats according to the filters listed. </td>
-    <td>No Access, Read Access</td>
-  </tr>
-  <tr>
-    <td>Subusers</td>
-    <td>Allows the API key holder to view, create, manage, and delete subusers. </td>
-    <td>No Access, Read Access, Full Access</td>
-  </tr>
-  <tr>
-    <td>Suppressions<br>* Unsubscribe Groups</td>
-    <td></td>
-    <td>No Access, Read Access, Full Access</td>
-  </tr>
-  <tr>
-    <td>Template Engine</td>
-    <td>Allows the API key holder to create, edit, and delete templates. </td>
-    <td>No Access, Read Access, Full Access</td>
-  </tr>
-  <tr>
-    <td>Tracking<br>* Click Tracking<br>* Google Analytics <br>* Open Tracking<br>* Subscription Tracking</td>
-    <td>Allows the API key holder to view and manage tracking settings. </td>
-    <td>No Access, Read Access, Full Access</td>
-  </tr>
-  <tr>
-    <td>User Account<br>* Enforced TLS<br>* Timezone</td>
-    <td>* Allows the API key holder to view and update Enforced TLS settings. <br>* Allows the API key holder to view and update the time zone the account is associated with. </td>
-    <td>No Access, Read Access, Full Access</td>
-  </tr>
-  <tr>
-    <td>Whitelabel (Sender Authentication)</td>
-    <td>Allows the API key holder to view, edit, and delete authenticated domains, senders, IPs, and links. </td>
-    <td>No Access, Read Access, Full Access</td>
-  </tr>
-</table>
+{% anchor h3 %}
+Alerts
+{% endanchor %}
+
+Allows the API key holder to manage alerts.
+
+**Permission levels:**
+
+* No Access
+* Read Access
+* Full Access
+
+{% anchor h3 %}
+Category Management
+{% endanchor %}
+
+Allows the API key holder to create and manage categories.
+
+**Permission levels:**
+
+* No Access
+* Read Access
+* Full Access
+
+{% anchor h3 %}
+Email Activity
+{% endanchor %}
+
+**Includes:**
+
+* Messages
+
+Allows the API key holder to view, filter, and download email activity statistics. 
+
+{% info %}
+This service must be purchased separately. For more information, see the [documentation]({{root_url}}//User_Guide/email_activity_feed.html).
+{% endinfo %}
+
+**Permission levels:**
+
+* No Access
+* Read Access
+
+{% anchor h3 %}
+IP Managment
+{% endanchor %}
+
+Allows the API key holder to view, add, or delete whitelisted IP addresses.
+
+**Permission levels:**
+
+* No Access
+* Read Access
+* Full Access
+
+{% anchor h3 %}
+Inbound Parse
+{% endanchor %}
+ 
+Allows the API key holder to view, create, or delete parse settings.
+
+**Permission levels:**
+
+* No Access
+* Read Access
+* Full Access
+
+{% anchor h3 %}
+Mail Send
+{% endanchor %}
+
+**Includes:**
+
+* Scheduled Sends
+
+Allows the API Key holder to send and schedule  email using the SendGrid V3 API.
+ 
+ **Permission levels:**
+
+* No Access
+* Read Access
+* Full Access
+
+
+{% anchor h3 %}
+Mail Settings
+{% endanchor %}
+
+**Includes:**
+
+* Address Whitelist
+* BCC
+* Bounce Purge
+* Event Notification
+* Footer
+* Forward Bounce
+* Forward Spam
+* Legacy Email Template
+* Plain Content
+* Spam Checker
+
+Allows the API key holder to view and update all mail settings listed.
+
+ **Permission levels:**
+
+* No Access
+* Read Access
+* Full Access
+
+{% anchor h3 %}
+Marketing Campaigns
+{% endanchor %}
+
+Allows the API Key holder to view, create, and delete campaigns.
+
+ **Permission levels:**
+
+* No Access
+* Full Access
+
+{% anchor h3 %}
+Partners
+{% endanchor %}
+
+Allows the API key holder to view and edit partner settings.
+
+ **Permission levels:**
+
+* No Access
+* Read Access
+* Full Access
+
+{% anchor h3 %}
+Security
+{% endanchor %}
+
+[NEEDS DEFINITION]
+ 
+**Permission levels:**
+
+* No Access
+* Read Access
+* Full Access
+
+{% anchor h3 %}
+Stats
+{% endanchor %}
+
+**Includes:**
+
+* Browser Stats
+* Category Stats
+* Email Clients and Devices
+* Geographical
+* Global Stags
+* Mailbox Provider Stats
+* Parse Webhook
+* Stats Overview
+* Subuser Stats
+
+Allows the API key holder to view stats according to the filters listed.
+
+ **Permission levels:**
+
+* No Access
+* Read Access
+* Full Access
+
+{% anchor h3 %}
+Subusers
+{% endanchor %}
+
+Allows the API key holder to view, create, manage, and delete subusers.
+
+ **Permission levels:**
+
+* No Access
+* Read Access
+* Full Access
+
+{% anchor h3 %}
+Suppressions
+{% endanchor %}
+
+**Includes:**
+
+* Unsubscribe Groups
+
+ **Permission levels:**
+
+* No Access
+* Read Access
+* Full Access
+
+{% anchor h3 %}
+Template Engine
+{% endanchor %}
+
+
+ **Permission levels:**
+
+* No Access
+* Read Access
+* Full Access
+
+{% anchor h3 %}
+Tracking
+{% endanchor %}
+
+**Includes:**
+
+* Cick Tracking
+* Google Analytics
+* Open Tracking
+
+Allows the API key holder to view and manage tracking settings.
+
+ **Permission levels:**
+
+* No Access
+* Read Access
+* Full Access
+
+{% anchor h3 %}
+User Account
+{% endanchor %}
+
+**Includes:**
+
+* User Account
+* Enforced TLS
+* Timezone
+
+Allows the API key holder to view and update settings. 
+
+ **Permission levels:**
+
+* No Access
+* Read Access
+* Full Access
+
+{% anchor h3 %}
+Whitelabel (Sender Authentication)
+{% endanchor %}
+
+Allows the API key holder to view, edit, and delete authenticated domains, senders, IPs, and links.
+
+ **Permission levels:**
+
+* No Access
+* Read Access
+* Full Access
+
+
 
 {% anchor h2 %}
 Managing API Keys
