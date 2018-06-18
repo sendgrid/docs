@@ -1310,6 +1310,7 @@ Redirect 301 /Glossary/peer_invitations.html https://sendgrid.com/docs/glossary/
 Redirect 301 /Glossary/phishing.html https://sendgrid.com/docs/glossary/phishing.html 
 Redirect 301 /Glossary/preheader.html https://sendgrid.com/docs/glossary/preheader.html
 Redirect 301 /Glossary/rate_limiting.html https://sendgrid.com/docs/glossary/rate-limiting.html
+Redirect 301 /Glossary/reconfirmation.html https://sendgrid.com/docs/glossary/reconfirmation.html
 Redirect 301 /Glossary/reputation_monitoring.html https://sendgrid.com/docs/glossary/reputation-monitoring.html
 Redirect 301 /Glossary/request.html https://sendgrid.com/docs/glossary/request.html
 Redirect 301 /Glossary/reseller_email_account.html https://sendgrid.com/docs/glossary/reseller-email-account.html
@@ -1317,6 +1318,7 @@ Redirect 301 /Glossary/reserved_fields.html https://sendgrid.com/docs/glossary/r
 Redirect 301 /Glossary/reverse_dns.html https://sendgrid.com/docs/glossary/reverse-dns.html
 Redirect 301 /Glossary/scheduled_emails.html https://sendgrid.com/docs/glossary/scheduled-emails.html
 Redirect 301 /Glossary/segments.html https://sendgrid.com/docs/glossary/segments.html
+
 Redirect 301 /Glossary/senders.html https://sendgrid.com/docs/glossary/senders.html
 Redirect 301 /Glossary/sends.html https://sendgrid.com/docs/glossary/sends.html
 Redirect 301 /Glossary/sender_authentication.html https://sendgrid.com/docs/glossary/sender-authentication.html
