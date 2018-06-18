@@ -23,6 +23,8 @@ There are several ways you can get started with the SendGrid API
 Prerequisites
 {% endanchor %}
 
+These instructions describe how to send your first email using cURL calls. This is one of many ways to send email with the SendGrid - we also have [PHP](https://github.com/sendgrid/sendgrid-php), [Python](https://github.com/sendgrid/sendgrid-python), [Node.js](https://github.com/sendgrid/sendgrid-nodejs), [Java](https://github.com/sendgrid/sendgrid-java), [C#](https://github.com/sendgrid/sendgrid-csharp), [Go](https://github.com/sendgrid/sendgrid-go), and [Ruby](https://github.com/sendgrid/sendgrid-ruby) libraries. 
+
 Before you can start using the API, you need to do the following:
 
 1. Create a SendGrid [account](https://sendgrid.com/pricing/). 
@@ -85,7 +87,6 @@ Next Steps
 
 For more information on SendGrid and where you can go from here, check out these pages:
 
-- [API Reference]({{root_url}}/API_Reference/api_v3.html) - From this reference you can use the "try it out" functionality to test out real code samples. 
-- [SendGrid Libraries](https://github.com/sendgrid) - Choose from six different languages to set up your integration. 
-- [Sender Authentication]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html) - To improve your deliverability and add your own brand to your emails, set up Sender Authentication and Link Branding. 
-- [How to Send Email]({{root_url}}/User_Guide/Marketing_Campaigns/getting_started.html) - Learn how to create and send Marketing Campaigns from this tutorial. 
+- [API Reference]({{root_url}}/API_Reference/api_v3.html)
+- [Sender Authentication]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html)
+- [How to Send Email]({{root_url}}/User_Guide/Marketing_Campaigns/getting_started.html)

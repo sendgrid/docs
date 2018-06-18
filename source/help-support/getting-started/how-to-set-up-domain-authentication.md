@@ -87,7 +87,7 @@ To set up domain authentication, you must submit the DNS records provided by Sen
 1. Next, you need to add all of the CNAME records on this screen to your DNS host. This process varies depending on your DNS host. For videos on how to add your CNAME to some popular DNS service providers, check out these [videos]({{root_url}}/docs/Help/Getting_Started/dns_providers.html). If you don't have access to modify your companies DNS records, you can also email a request to a co-worker. This email includes a direct link to the CNAME records. This link does expire. The recipient doesn't need login access to your SendGrid account.
 
 {% info %}
-If you [turn off automated security](#-Using-automated-security), you add TXT and MT records in this step instead of CNAME records.
+If you [turn off automated security](#-Using-automated-security), you add TXT and MX records in this step instead of CNAME records.
 {% endinfo %}
 
 It can take up to 48 hours for the records to verify after you upload them into your DNS host, so you will likely have to come back later to verify.

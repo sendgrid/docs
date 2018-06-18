@@ -111,35 +111,7 @@ The app creates a clone, giving it a name that starts with "untitled". You can g
 Adding unsubscribe links to a template
 {% endanchor h2 %}
 
-You can use [substitution tags]({{root_url}}/API_Reference/SMTP_API/substitution_tags.html) to add links to your email to allow recipients to unsubscribe from only these emails, from all of your emails, and to manage their unsubscribe settings for your emails.
-
-{% warning %}
-When using the group unsubscribe substitution tag, you must specify which unsubscribe group you would like to use. If you are sending your email via our SMTP API, please add the group ID into the X-SMTPAPI header. If you are sending via our Web API, please enter the group ID into the x-smtpapi parameter of the mail. Send API call.
-
-You must also specify which unsubscribe groups to include on the Manage Preferences page if you are using the Manage Email Preferences substitution tag. For more detailed information, please visit our [API Reference]({{root_url}}/API_Reference/SMTP_API/suppressions.html).
-{% endwarning %}
-
-{% info %}
-You can find your group IDs by looking at the Group ID column in the [Unsubscribe Groups UI]({{site.app_url}}/suppressions/advanced_suppression_manager), or by calling the [GET method]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/groups.html#-GET) of the groups resource.
-{% endinfo %}
-
-{% anchor h3 %}
-Unsubscribe From This List
-{% endanchor h3 %}
-
-When you add the ```<%asm_group_unsubscribe_url%>``` tag to your email, we will replace that tag with the text "Unsubscribe From This List," in your email. This link allows your recipients to unsubscribe from the [unsubscribe group]({{root_url}}/User_Guide/Suppressions/group_unsubscribes.html) that you attached to this email.
-
-{% anchor h3 %}
-Unsubscribe From All Emails
-{% endanchor h3 %}
-
-When you add the ```<%asm_global_unsubscribe_url%>``` tag to your email, we will replace that tag with the text "Unsubscribe From All Emails," in your email. This allows your recipient to be [globally unsubscribed]({{root_url}}/User_Guide/Suppressions/global_unsubscribes.html) from all of your emails.
-
-{% anchor h3 %}
-Manage Email Preferences
-{% endanchor h3 %}
-
-When you add the ```<%asm_preferences_url%>``` tag to your email, we will replace that tag with the text "Manage Email Preferences," in your email. This allows your recipients to see your Unsubscribe Groups in a [Subscription Preference page]({{root_url}}/User_Guide/Suppressions/recipient_subscription_preferences.html) and then choose which groups they are interested in.
+For more information about unsubscribes, check out our [unsubscribe documentation]({{root_url}}/User_Guide/Transactional_Email/unsubscribes.html).
 
 {% anchor h2 %}
 Additional Resources
