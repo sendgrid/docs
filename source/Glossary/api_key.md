@@ -19,3 +19,5 @@ SendGrid requires a dedicated API Key for billing related API calls that is dist
 By assigning specific [permissions]({{root_url}}/User_Guide/Settings/api-keys.html#-API-key-permissions) to an API Key, you can limit exactly which calls an API Key is able to authenticate, very similar to the way in which a computer administrator can assign file "read" or "write" access to certain users.
 
 For example, if you create an API Key for authenticating calls that result in creating, reading, or sending email, you want to assign the `mail.send` permission to that key to allow it to send email. However, you would not want to assign it the `billing.update` permission, since that would be outside the scope of its intended use.
+
+For more information on API keys and permissions, see the [documentation]({{root_url}}/User_Guide/Settings/api_keys.html)
