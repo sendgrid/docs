@@ -1330,4 +1330,18 @@ Redirect 301 /Glossary/spf.html https://sendgrid.com/docs/glossary/spf.html
 Redirect 301 /Glossary/spoofing.html https://sendgrid.com/docs/glossary/spoofing.html
 Redirect 301 /Glossary/subscriber_list_management.html https://sendgrid.com/docs/glossary/subscriber-list-management.html
 Redirect 301 /Glossary/system_fields.html https://sendgrid.com/docs/glossary/system-fields.html
-Redirect 301 
+Redirect 301 /Glossary/teammates.html https://sendgrid.com/docs/glossary/teammates.html
+Redirect 301 /Glossary/throttling.html https://sendgrid.com/docs/glossary/throttling.html
+Redirect 301 /Glossary/tls.html https://sendgrid.com/docs/glossary/tls.html
+Redirect 301 /Glossary/transactional_email.html https://sendgrid.com/docs/glossary/transactional-email.html
+Redirect 301 /Glossary/transactional_email_templates.html https://sendgrid.com/docs/glossary/transactional-email-templates.html
+Redirect 301 /Glossary/triggered_actions.html https://sendgrid.com/docs/glossary/triggered-actions.html
+Redirect 301 /Glossary/triggered_email.html https://sendgrid.com/docs/glossary/triggered-email.html
+Redirect 301 /Glossary/two_factor_authentication.html https://sendgrid.com/docs/glossary/two-factor-authentication.html
+Redirect 301 /Glossary/undelivered_email.html https://sendgrid.com/docs/glossary/undelivered-email.html
+Redirect 301 /Glossary/unknown_user.html https://sendgrid.com/docs/glossary/unknown-user.html
+Redirect 301 /Glossary/web_api.html https://sendgrid.com/docs/glossary/web-api.html
+Redirect 301 /Glossary/white_hat_sender.html https://sendgrid.com/docs/glossary/white-hat-sender.html
+Redirect 301 /Glossary/whitelabel.html https://sendgrid.com/docs/glossary/whitelabel.html
+Redirect 301 /Glossary/whitelist.html https://sendgrid.com/docs/Glossary/whitelist.html
+Redirect 301 /Glossary/x_message_id.html https://sendgrid.com/docs/glossary/x-message-id.html
