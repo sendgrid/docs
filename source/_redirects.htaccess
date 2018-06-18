@@ -1319,4 +1319,15 @@ Redirect 301 /Glossary/sender_id.html https://sendgrid.com/docs/glossary/sender-
 Redirect 301 /Glossary/smtp.html https://sendgrid.com/docs/glossary/smtp.html
 Redirect 301 /Glossary/smtp_api.html https://sendgrid.com/docs/glossary/smtp_api.html
 Redirect 301 /Glossary/smtp_provider.html https://sendgrid.com/docs/glossary/smtp-provider.html
+Redirect 301 /Glossary/smtp_relay.html https://sendgrid.com/docs/glossary/smtp-relay.html
+Redirect 301 /Glossary/smtp_server.html https://sendgrid.com/docs/glossary/smtp-server.html
+Redirect 301 /Glossary/smtp_service.html https://sendgrid.com/docs/glossary/smtp-service.html
+Redirect 301 /Glossary/spam.html https://sendgrid.com/docs/glossary/spam.html
+Redirect 301 /Glossary/spam_filter.html https://sendgrid.com/docs/glossary/spam-filter.html
+Redirect 301 /Glossary/spam_reports.html https://sendgrid.com/docs/glossary/spam-reports.html
+Redirect 301 /Glossary/spam_traps.html https://sendgrid.com/docs/glossary/spam-traps.html
+Redirect 301 /Glossary/spf.html https://sendgrid.com/docs/glossary/spf.html
+Redirect 301 /Glossary/spoofing.html https://sendgrid.com/docs/glossary/spoofing.html
+Redirect 301 /Glossary/subscriber_list_management.html https://sendgrid.com/docs/glossary/subscriber-list-management.html
+Redirect 301 /Glossary/system_fields.html https://sendgrid.com/docs/glossary/system-fields.html
 Redirect 301 
