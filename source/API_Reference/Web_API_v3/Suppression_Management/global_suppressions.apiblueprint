@@ -83,7 +83,7 @@ If the email address does not belongs to the Global Unsubscribes collection:
 
 + Response 204 (application/json)
 
-## Global Unsubscribes Collection [/suppression/unsubscribe]
+## Global Unsubscribes Collection [/suppression/unsubscribes]
 
 ### Remove multiple email addresses from the Global Unsubscribes collection [DELETE]
 
@@ -104,7 +104,7 @@ Maximum of 500 addresses in the `emails` Array.
 
 + Response 204 (application/json)
 
-## Global Unsubscribes Collection [/suppression/unsubscribe]
+## Global Unsubscribes Collection [/suppression/unsubscribes]
 
 ### Remove all email addresses from the Global Unsubscribes collection [DELETE]
 + Request (application/json)

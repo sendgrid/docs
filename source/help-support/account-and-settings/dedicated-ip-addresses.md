@@ -10,14 +10,15 @@ navigation:
   show: true
 ---
 
-- [What are dedicated IP addresses?](#-What-are-dedicated-IP-addresses)
-- [Why would I want a dedicated IP address?](#-Why-would-I-want-a-dedicated-IP-address)
-- [Do I have a dedicated IP address?](#-Do-I-have-a-dedicated-IP-address)
-- [How many dedicated IPs should I have?](#-How-many-dedicated-IPs-should-I-have)
-- [Adding an additional dedicated IP address](#-Adding-an-additional-dedicated-IP-address)
-- [Reputation monitoring for dedicated IP accounts](#-Reputation-monitoring-for-dedicated-IP-accounts)
-- [Warming up a dedicated IP address](#-Warming-up-a-d-IP-address)
-- [Automatic IP warmup schedule](#-Automatic-IP-warmup-schedule)
+- [What are Dedicated IP Addresses?](#-What-are-Dedicated-IP-Addresses)
+- [Why would I want a Dedicated IP Address?](#-Why-would-I-want-a-Dedicated-IP-Address)
+- [Do I have a Dedicated IP Address?](#-Do-I-have-a-Dedicated-IP-Address)
+- [How many Dedicated IPs should I have?](#-How-many-Dedicated-IPs-should-I-have)
+- [Adding an additional Dedicated IP Address](#-Adding-an-additional-Dedicated-IP-Address)
+- [Reputation Monitoring for Dedicated IP Accounts](#-Reputation-Monitoring-for-Dedicated-IP-Accounts)
+- [Warming up a Dedicated IP Address](#-Warming-up-a-Dedicated-IP-Address)
+- [Automatic IP Warmup Schedule](#-Automatic-IP-Warmup-Schedule)
+- [Assigning a Dedicated IP address to a subuser](#-Assigning-a-Dedicated-IP-address-to-a-subuser)
 
 {% anchor h2 %}
 What are d IP Addresses?
@@ -97,6 +98,26 @@ Warming Up a d IP Address
 {% endanchor %}
 
 For more information on warming up an IP Address, see [Warming up a dedicated IP]({{root_url}}/help-support/account-and-settings/warming-up-an-ip-address.html).
+
+{% anchor h2 %}
+Assigning a Dedicated IP address to a subuser
+{% endanchor %}
+
+Subusers cannot set up and add reverse DNS to their own dedicated IPs, but you can set it up for them and assign it to them. You can add a dedicated IP to a subuser when you [create the subuser]({{root_url}}/User_Guide/Settings/subusers.html#-Create-a-Subuser), or in the [Subuser management](https://app.sendgrid.com/settings/subusers) page.
+
+{% anchor h3 %}
+Before you begin
+{% endanchor %}
+
+You need to have a [subuser]({{root_url}}/User_Guide/Settings/subusers.html#-Create-a-Subuser), and a [dedicated IP address](https://sendgrid.com/docs/User_Guide/Settings/dedicated_ip_addresses.html#-Adding-an-additional-Dedicated-IP-Address) you want to assign the subuser.
+
+*To assign a Dedicated IP to a subuser after the subuser is already created:*
+
+1. Navigate to **Settings** and select [Subuser Management](https://app.sendgrid.com/settings/subusers).
+1. Select the Subuser to assign the dedicated IP.
+1. Select **Change Sending**.
+1. Under I.P. Addresses, select an IP address to assign to the subuser.
+1. Select **Save**
 
 {% anchor h2 %}
 Additional Resources

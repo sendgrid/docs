@@ -7,7 +7,7 @@ navigation:
 seo:
   title: How to send an email with Dynamic Transactional Templates
   override: true
-  description: 
+  description:
 ---
 
 - [Before you begin](#-Before-you-begin)
@@ -22,19 +22,25 @@ Before you create and send an email using a dynamic transactional template you n
 
 * Create a SendGrid account
 * Create an [API Key]({{root_url}}/User_Guide/Settings/api_keys.html)
-* Add an unsubscribe group (optional)
+* Add an [unsubscribe group]({{root_url}}/User_Guide/Transactional_Email/unsubscribes.html) (optional)
 
 {% anchor h2 %}
-Design a dynamic template
+Design a dynamic transactional template
 {% endanchor %}
 
 1. Open the [transactional templates](https://sendgrid.com/dynamic_templates) page and click **Create Template**.
-1. Add a unique template name and then click **Save**. 
+1. Add a unique template name and then click **Save**.
 1. To begin editing your new template, click **Add Version**.
 1. Select an editor and click **Continue**.
-1. Design your template. For more information on designing a Dynamic Transactional Template using the Design Editor or Code Editor, see [Create and edit Dynamic Transactional Templates]({{root_url}}/User_Guide/Transactional_Templates/create_and_edit_dynamic_transactional_templates.html).
+1. Design your template. For more information on using Handlebars, see [Using handlebars]({{root_url}}/User_Guide/Transactional_Templates/Using_handlebars.html).
 
-Here's a sample template: <a href="/source/assets/sample_dynamic_template.html" target="_blank">Hipster Cat Cafe</a>
+For sample templates that that include examples of receipts, password resets, account activations, newsletters, and sale notifications, check out the [dynamic-template section of our email templates github repo](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates).
+
+The cURL calls on this page use the [receipt example template](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates/receipt).
+
+{% info %}
+For the full API documentation, see [Mail Send with Dynamic Transactional Templates](https://dynamic-templates.api-docs.io/3.0).
+{% endinfo %}
 
 {% anchor h2 %}
 Send a transactional email
@@ -46,52 +52,96 @@ In order to send a dynamic transactional email using cURL, set your call up to l
 
 {% codeblock %}
 curl -X "POST" "https://api.sendgrid.com/v3/mail/send" \
-     -H 'Authorization: Bearer [YourAPIKeyGoesHere!]' \
+     -H 'Authorization: Bearer <<YOUR_API_KEY>>' \
      -H 'Content-Type: application/json' \
-     -d $'{
-  "from": {
-    "email": "example@.sendgrid.net"
-  },
-  "personalizations": [{
-    "to": [{
-      "email": "example@sendgrid.net"
-    }],
-    "dynamic_template_data": {
-      "guest": "Anthony Wang"
-      "partysize": 4,
-      "english": true,
-      "date": "April 1st, 2018"
-    }
-  }],
-  "template_id": "[template_id]",
+     -d '{  
+   "from":{  
+      "email":"example@.sendgrid.net"
+   },
+   "personalizations":[  
+      {  
+         "to":[  
+            {  
+               "email":"example@sendgrid.net"
+            }
+         ],
+         "dynamic_template_data":{  
+            "total":"$ 239.85",
+            "items":[  
+               {  
+                  "text":"New Line Sneakers",
+                  "image":"https://marketing-image-production.s3.amazonaws.com/uploads/8dda1131320a6d978b515cc04ed479df259a458d5d45d58b6b381cae0bf9588113e80ef912f69e8c4cc1ef1a0297e8eefdb7b270064cc046b79a44e21b811802.png",
+                  "price":"$ 79.95"
+               },
+               {  
+                  "text":"Old Line Sneakers",
+                  "image":"https://marketing-image-production.s3.amazonaws.com/uploads/3629f54390ead663d4eb7c53702e492de63299d7c5f7239efdc693b09b9b28c82c924225dcd8dcb65732d5ca7b7b753c5f17e056405bbd4596e4e63a96ae5018.png",
+                  "price":"$ 79.95"
+               },
+               {  
+                  "text":"Blue Line Sneakers",
+                  "image":"https://marketing-image-production.s3.amazonaws.com/uploads/00731ed18eff0ad5da890d876c456c3124a4e44cb48196533e9b95fb2b959b7194c2dc7637b788341d1ff4f88d1dc88e23f7e3704726d313c57f350911dd2bd0.png",
+                  "price":"$ 79.95"
+               }
+            ],
+            "receipt":true,
+            "name":"Sample Name",
+            "address01":"1234 Fake St.",
+            "address02":"Apt. 123",
+            "city":"Place",
+            "state":"CO",
+            "zip":"80202"
+         },
+         "template_id":"[template_id]"
+      }
+   ]
 }'
 {% endcodeblock %}
 
 It is important to note two sections of this call when using dynamic templates.
 
-In order to send dynamic content, you need to specify a collection of key/value pairs in the `dynamic_template_data` object following the pattern `"handlebar_tag":"value to substitute"`. All are assumed to be strings. These handlebar substitutions apply to the text and html content of the body of your email, in addition to the subject and reply-to parameters. The total collective size of your handle bar substitutions may not exceed 10,000 bytes per personalization object.
+In order to send dynamic content, you need to specify a JSON blob containing the dynamic data your template will use in the `dynamic_template_data` object. The handlebars script you write will refer to the values in your JSON blob by referencing the JSON key, check out [these examples]({{root_url}}/User_Guide/Transactional_Templates/Using_handlebars.html#-Handlebarjs-reference). This handlebars templating can be used in the text, html, and subject lines of your template. The total collective size of your dynamic data may not exceed 10,000 bytes per personalization object.
 
 {% codeblock %}
- }],
-    "dynamic_template_data": {
-      "guest": "Anthony Wang"
-      "partysize": 4,
-      "english": true,
-      "date": "April 1st, 2018"
-    }
-  }],
+         "dynamic_template_data":{  
+            "total":"$ 239.85",
+            "items":[  
+               {  
+                  "text":"New Line Sneakers",
+                  "image":"https://marketing-image-production.s3.amazonaws.com/uploads/8dda1131320a6d978b515cc04ed479df259a458d5d45d58b6b381cae0bf9588113e80ef912f69e8c4cc1ef1a0297e8eefdb7b270064cc046b79a44e21b811802.png",
+                  "price":"$ 79.95"
+               },
+               {  
+                  "text":"Old Line Sneakers",
+                  "image":"https://marketing-image-production.s3.amazonaws.com/uploads/3629f54390ead663d4eb7c53702e492de63299d7c5f7239efdc693b09b9b28c82c924225dcd8dcb65732d5ca7b7b753c5f17e056405bbd4596e4e63a96ae5018.png",
+                  "price":"$ 79.95"
+               },
+               {  
+                  "text":"Blue Line Sneakers",
+                  "image":"https://marketing-image-production.s3.amazonaws.com/uploads/00731ed18eff0ad5da890d876c456c3124a4e44cb48196533e9b95fb2b959b7194c2dc7637b788341d1ff4f88d1dc88e23f7e3704726d313c57f350911dd2bd0.png",
+                  "price":"$ 79.95"
+               }
+            ],
+            "receipt":true,
+            "name":"Sample Name",
+            "address01":"1234 Fake St.",
+            "address02":"Apt. 123",
+            "city":"Place",
+            "state":"CO",
+            "zip":"80202"
+         }
 {% endcodeblock %}
 
 In addition to specifying the dynamic template data, you need to specify the template ID. The template ID is 64 characters with one dash (d-uuid). If you forget your template ID and want to access it from the API, use the following curl call to retrieve all of your transactional templates:
 
 {% codeblock %}
 curl --request GET \
-  --url 'https://api.sendgrid.com/v3/templates?generations\[\]=legacy&generations\[\]=dynamic' \
-  --header 'Authorization: Bearer SG.keyhere' \
+  --url 'https://api.sendgrid.com/v3/templates?generations\%5C=legacy&generations\%5C=dynamic' \
+  --header 'Authorization: <<YOUR_API_KEY>>' \
   --header 'Content-Type: application/json'
 {% endcodeblock %}
 
-You can also copy your template ID from the app and paste it into your call. 
+You can also copy your template ID from the app and paste it into your call.
 
 ![]({{root_url}}/img/dynamic_template_id.png "Dynamic Template ID")
 
@@ -99,6 +149,7 @@ You can also copy your template ID from the app and paste it into your call.
 Additional Resources
 {% endanchor h2 %}
 
-- [Transactional Templates Overview](https://sendgrid.com/docs/User_Guide/Transactional_Templates/index.html)
-- [Dynamic Templates API](https://dynamic-templates.api-docs.io/3.0)
+- [Transactional Templates Overview]({{root_url}}/User_Guide/Transactional_Templates/index.html)
+- [Mail Send with Dynamic Transactional Templates](https://dynamic-templates.api-docs.io/3.0)
 - [Transactional Email Unsubscribes]({{root_url}}/User_Guide/Transactional_Email/unsubscribes.html)
+- [Using Handlebars]({{root_url}}/User_Guide/Transactional_Templates/Using_handlebars.html)

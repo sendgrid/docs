@@ -93,9 +93,13 @@ Delete a specific contact
 
 *To remove one or more contacts from a list:*
 
-1. Navigate to the contact you wish to modify and click the Action Menu.
-1. Click **Remove From List**.
-   This option removes the contact from the list. To remove the contact completely, select **delete**.
+1. Navigate to the {All Contacts list](https://sendgrid.com/marketing_campaigns/ui/all_contacts).
+1. Search for the contact you want to delete.
+1. Click **delete** to remove the contact permanently.
+
+{% warning %}
+Use this to permanently delete your recipients from all of your contact lists and all segments if required by applicable law.
+{% endwarning %}
 
 {% anchor h3 %}
 Delete all contacts

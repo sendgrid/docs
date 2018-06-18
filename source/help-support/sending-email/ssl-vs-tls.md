@@ -17,7 +17,7 @@ It used to be believed that TLS v1.0 was marginally more secure than SSL v3.0, i
 
 SSL v3.0 is effectively “dead” as a useful security protocol. Places that still allow its use for web hosting as placing their “secure web sites” at risk; Organizations that allow SSL v3 use to persist for other protocols (e.g. IMAP) should take steps to remove that support at the soonest software update maintenance window.
 
-Subsequent versions of TLS — v1.1 and v1.2 are _significantly more secure _and fix many vulnerabilities present in SSL v3.0 and TLS v1.0. The newer TLS versions, if properly configured, prevent attacks and provide many stronger ciphers and encryption methods.
+Subsequent versions of TLS — v1.1 and v1.2 are _significantly more secure_ and fix many vulnerabilities present in SSL v3.0 and TLS v1.0. The newer TLS versions, if properly configured, prevent attacks and provide many stronger ciphers and encryption methods. SendGrid supports TLS v.1.1 and higher.
 
  
 

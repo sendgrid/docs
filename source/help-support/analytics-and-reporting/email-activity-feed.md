@@ -120,18 +120,27 @@ Advanced Search
 
 In addition to viewing the email activity associated with your account by recipient email address, domain, or event date, you can also use the following filters to sort your data:
 
+* API Key ID
+* API Key Name
 * Campaign ID
 * Campaign Name
 * Categories
-* Event Type
-* From Address
+* Date Processed
+* Event Type (Bounced, Clicked, etc.)
+* From Email Address
 * Message ID
-* Sending API Key ID
-* Sending API Key Name
+* Number of Clicks
+* Number of Opens
+* Requesting IP Address
 * Sending IP Address
+* Status (Delivered, Not Delivered, Processing)
 * Subject Line
-* Template ID
-* Template Name
+* Teammate
+* To Email Address
+* Transactional Template ID
+* Transactional Template Name
+* Unsubscribe Group ID
+* Unsubscribe Group Name
 
 *To use advanced search:*
 
@@ -175,7 +184,7 @@ Additional Resources
 {% endanchor h2 %}
 
 - [Email Activity API](https://sendgrid.api-docs.io/v3.0/email-activity/filter-all-messages)
-- [Legacy Email Activity](https://sendgrid.com/docs/help-support/analytics-and-reporting/email-activity.html)
-- [Getting Started with the Email Activity API](https://sendgrid.com/docs/API_Reference/Web_API_v3/tutorials/getting_started_email_activity_api.html)
-- [Building compound Email Activity queries](https://sendgrid.com/docs/API_Reference/Web_API_v3/tutorials/getting_started_email_activity_api.html)
+- [Legacy Email Activity](https://sendgrid.com/docs/User_Guide/email_activity.html)
+- [Getting Started with the Email Activity API](https://sendgrid.com/docs/API_Reference/Web_API_v3/Tutorials/getting_started_email_activity_api.html)
+- [Building compound Email Activity queries](https://sendgrid.com/docs/API_Reference/Web_API_v3/Tutorials/getting_started_email_activity_api.html#-Creating-compound-queries)
 
