@@ -1296,11 +1296,12 @@ Redirect 301 /Glossary/reserved_fields.html https://sendgrid.com/docs/glossary/r
 Redirect 301 /Glossary/reverse_dns.html https://sendgrid.com/docs/glossary/reverse-dns.html
 Redirect 301 /Glossary/scheduled_emails.html https://sendgrid.com/docs/glossary/scheduled-emails.html
 Redirect 301 /Glossary/segments.html https://sendgrid.com/docs/glossary/segments.html
-
+Redirect 301 /Glossary/segmentation.html https://sendgrid.com/docs/Glossary/segmentation.html
 Redirect 301 /Glossary/senders.html https://sendgrid.com/docs/glossary/senders.html
 Redirect 301 /Glossary/sends.html https://sendgrid.com/docs/glossary/sends.html
 Redirect 301 /Glossary/sender_authentication.html https://sendgrid.com/docs/glossary/sender-authentication.html
 Redirect 301 /Glossary/sender_id.html https://sendgrid.com/docs/glossary/sender-id.html
+Redirect 301 /Glossary/sends.html https://sendgrid.com/docs/glossary/sends.html 
 Redirect 301 /Glossary/smtp.html https://sendgrid.com/docs/glossary/smtp.html
 Redirect 301 /Glossary/smtp_api.html https://sendgrid.com/docs/glossary/smtp_api.html
 Redirect 301 /Glossary/smtp_provider.html https://sendgrid.com/docs/glossary/smtp-provider.html
@@ -1313,10 +1314,12 @@ Redirect 301 /Glossary/spam_reports.html https://sendgrid.com/docs/glossary/spam
 Redirect 301 /Glossary/spam_traps.html https://sendgrid.com/docs/glossary/spam-traps.html
 Redirect 301 /Glossary/spf.html https://sendgrid.com/docs/glossary/spf.html
 Redirect 301 /Glossary/spoofing.html https://sendgrid.com/docs/glossary/spoofing.html
+Redirect 301 /Glossary/subjects.html https://sendgrid.com/docs/glossary/subjects.html
 Redirect 301 /Glossary/subscriber_list_management.html https://sendgrid.com/docs/glossary/subscriber-list-management.html
 Redirect 301 /Glossary/system_fields.html https://sendgrid.com/docs/glossary/system-fields.html
 Redirect 301 /Glossary/teammates.html https://sendgrid.com/docs/glossary/teammates.html
 Redirect 301 /Glossary/throttling.html https://sendgrid.com/docs/glossary/throttling.html
+Redirect 301 /Glossary/timezone.html https://sendgrid.com/docs/glossary/timezone.html
 Redirect 301 /Glossary/tls.html https://sendgrid.com/docs/glossary/tls.html
 Redirect 301 /Glossary/transactional_email.html https://sendgrid.com/docs/glossary/transactional-email.html
 Redirect 301 /Glossary/transactional_email_templates.html https://sendgrid.com/docs/glossary/transactional-email-templates.html
