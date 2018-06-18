@@ -1,6 +1,6 @@
 ---
 seo:
-  title: API Keys
+  title: Create and Manage API Keys
   description: Create and Manage API Keys
   keywords: sendgrid API keys, email API Keys, mail API Keys, email credentials, send credentials, authentication
 title: API Keys
@@ -385,3 +385,9 @@ Once you delete a key, it can no longer be used to access SendGrid’s services.
 1. Select **Delete**. 
 1. Click **Confirm** to permanently delete the API key. Any subsequent API calls using this deleted API key will be rejected by SendGrid.
 
+{% anchor h2 %}
+Additional Resources
+{% endanchor h2 %}
+
+- [API Key Permissions List]({{root_url}}/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html)
+- [Getting Started with the SendGrid API]({{root_url}}/API_Reference/api_getting_started.html)
