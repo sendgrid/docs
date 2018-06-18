@@ -1164,6 +1164,38 @@ Redirect 301 /User_Guide/Transactional_Templates/using_handlebars.html https://s
 #
 #######
 
+Redirect 301 /User_Guide/Settings/Whitelabel/ips.html https://sendgrid.com/docs/help-support/getting-started/how-to-set-up-reverse-dns.html
+Redirect 301 /User_Guide/Settings/Whitelabel/links.html https://sendgrid.com/docs/help-support/getting-started/how-to-set-up-link-branding.html
+Redirect 301 /User_Guide/Settings/Whitelabel/domains.html https://sendgrid.com/docs/help-support/getting-started/how-to-set-up-domain-authentication.html
+Redirect 301 /User_Guide/Settings/Whitelabel/overview.html https://sendgrid.com/docs/help-support/getting-started/how-to-set-up-domain-authentication.html
+Redirect 301 /User_Guide/Settings/Sender_Authentication/how-to-set-up-domain-authentication.html https://sendgrid.com/docs/help-support/getting-started/how-to-set-up-domain-authentication.html
+Redirect 301 /User_Guide/Settings/Whitelabel/index.html https://sendgrid.com/docs/help-support/getting-started/how_to_set_up_domain_authentication.html
+Redirect 301 /User_Guide/Settings/Sender_Authentication/how-to-set-up-domain-authentication.html https://sendgrid.com/docs/help-support/getting-started/how-to-set-up-domain-authentication.html
+Redirect 301 /Classroom/Troubleshooting/Authentication/whitelabel_video_tutorials.html https://sendgrid.com/docs/help-support/getting-started/how-to-set-up-domain-authentication.html
+Redirect 301 /Classroom/Troubleshooting/Authentication/upgrading_your_whitelabel.html https://sendgrid.com/docs/help-support/getting-started/how-to-set-up-domain-authentication.html
+Redirect 301 /Classroom/Troubleshooting/Authentication/i_have_created_dns_records_but_the_whitelabel_wizard_is_not_validating_them.html https://sendgrid.com/docs/help-support/getting-started/troubleshooting.html
+Redirect 301 /Classroom/Troubleshooting/Authentication/dns_records_and_underscores.html https://sendgrid.com/docs/help-support/getting-started/troubleshooting.html
+Redirect 301 /Classroom/Deliver/Sender_Authentication/what_is_automated_security_in_the_whitelabel_settings.html https://sendgrid.com/docs/help-support/getting-started/how-to-set-up-domain-authentication.html
+Redirect 301 /Classroom/Deliver/Delivery_Introduction/creating_and_whitelabeling_a_subuser_to_a_new_sending_domain.html https://sendgrid.com/docs/help-support/getting-started/how-to-set-up-domain-authentication.html
+Redirect 301 /Classroom/Deliver/Delivery_Introduction/all_you_need_to_know_about_whitelabeling.html https://sendgrid.com/docs/help-support/getting-started/how-to-set-up-domain-authentication.html
+Redirect 301 /Classroom/Basics/Email_Infrastructure/everything_about_dmarc.html https://sendgrid.com/docs/glossary/dmarc.html
+Redirect 301 /Classroom/Basics/Whitelabel/whitelabel_vs_whitelist.html https://sendgrid.com/docs/glossary/whitelabel.html
+Redirect 301 /Classroom/Basics/Whitelabel/subuser_whitelabels.html https://sendgrid.com/docs/help-support/getting-started/how-to-set-up-domain-authentication.html
+Redirect 301 /Classroom/Basics/Whitelabel/setup_domain_whitelabel.html https://sendgrid.com/docs/help-support/getting-started/how-to-set-up-domain-authentication.html
+Redirect 301 /Classroom/Basics/Whitelabel/link_whitelabels_explained.html https://sendgrid.com/docs/help-support/getting-started/how-to-set-up-link-branding.html
+Redirect 301 /Classroom/Basics/Whitelabel/index.html https://sendgrid.com/docs/help-support/getting-started/how-to-set-up-domain-authentication.html
+Redirect 301 /User_Guide/Settings/Whitelabel/providers.html https://sendgrid.com/docs/help-support/getting-started/dns-providers.html
+Redirect 301 /User_Guide/Settings/Whitelabel/faq.html https://sendgrid.com/docs/glossary/whitelabel.html
+Redirect 301 /User_Guide/Settings/Sender_Authentication/How_to_set_up_reverse_DNS.html https://sendgrid.com/docs/help-support/getting-started/how-to-set-up-reverse-dns.html
+Redirect 301 /User_Guide/Settings/Sender_Authentication/how-to-set-up-link-branding.html https://sendgrid.com/docs/help-support/getting-started/how-to-set-up-link-branding.html
+Redirect 301 /Classroom/Basics/Whitelabel/setup_ip_whitelabel.html https://sendgrid.com/docs/help-support/getting-started/how-to-set-up-reverse-dns.html
+
+#######
+#
+# Help Navigation - User Guide
+#
+#######
+
 Redirect 301 /User_Guide/Settings/Whitelabel/ips.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_reverse_dns.html
 Redirect 301 /User_Guide/Settings/Whitelabel/links.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_link_branding.html
 Redirect 301 /User_Guide/Settings/Whitelabel/domains.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html
@@ -1192,3 +1224,102 @@ Redirect 301 /Classroom/Basics/Whitelabel/setup_ip_whitelabel.html https://sendg
 Redirect 301 /Classroom/Deliver/Delivery_Introduction/whitelabel_do_i_need_to_make_dns_changes_pro_and_higher.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_reverse_dns.html
 
 
+#######
+#
+# Glossary > glossary
+#
+#######
+
+Redirect 301 /Glossary/7_bit_encoding.html https://sendgrid.com/docs/glossary/7-bit-encoding.html
+Redirect 301 /Glossary/a_record.html https://sendgrid.com/docs/glossary/a-record.html
+Redirect 301 /Glossary/api-keys https://sendgrid.com/docs/glossary/api-keys.html 
+Redirect 301 /Glossary/automated_email.html https://sendgrid.com/docs/glossary/automated-email.html
+Redirect 301 /Glossary/autoresponder.html https://sendgrid.com/docs/glossary/autoresponder.html
+Redirect 301 /Glossary/bayesian_filter.html https://sendgrid.com/docs/glossary/bayesian-filter.html
+Redirect 301 /Glossary/black_hat_sender.html https://sendgrid.com/docs/glossary/black-hat-sender.html
+Redirect 301 /Glossary/blacklists.html https://sendgrid.com/docs/glossary/blacklists.html
+Redirect 301 /Glossary/blocks.html https://sendgrid.com/docs/glossary/blocks.html
+Redirect 301 /Glossary/bounces.html https://sendgrid.com/docs/glossary/bounces.html
+Redirect 301 /Glossary/bulk_email_service.html https://sendgrid.com/docs/glossary/bulk-email-service.html
+Redirect 301 /Glossary/bulk_mail_folder.html https://sendgrid.com/docs/glossary/bulk-mail-folder.html
+Redirect 301 /Glossary/campaigns.html https://sendgrid.com/docs/glossary/campaigns.html
+Redirect 301 /Glossary/can_spam.html https://sendgrid.com/docs/glossary/can-spam.html
+Redirect 301 /Glossary/categories.html https://sendgrid.com/docs/glossary/categories.html
+Redirect 301 /Glossary/challenge_response.html https://sendgrid.com/docs/glossary/challenge-response.html
+Redirect 301 /Glossary/clicks.html https://sendgrid.com/docs/glossary/clicks.html
+Redirect 301 /Glossary/cname.html https://sendgrid.com/docs/glossary/cname.html
+Redirect 301 /Glossary/complaint.html https://sendgrid.com/docs/glossary/complaint.html
+Redirect 301 /Glossary/ctr.html https://sendgrid.com/docs/glossary/ctr.html
+Redirect 301 /Glossary/custom_fields.html https://sendgrid.com/docs/glossary/custom-fields.html
+Redirect 301 /Glossary/deferrals.html https://sendgrid.com/docs/glossary/deferrals.html
+Redirect 301 /Glossary/deliveries.html https://sendgrid.com/docs/glossary/deliveries.html
+Redirect 301 /Glossary/deliveries.html https://sendgrid.com/docs/glossary/deliveries.html
+Redirect 301 /Glossary/dkim.html https://sendgrid.com/docs/glossary/dkim.html
+Redirect 301 /Glossary/dmarc.html https://sendgrid.com/docs/glossary/dmarc.html
+Redirect 301 /Glossary/dns.html https://sendgrid.com/docs/glossary/dns.html
+Redirect 301 /Glossary/domain.html https://sendgrid.com/docs/glossary/domain.html
+Redirect 301 /Glossary/domain_authentication.html https://sendgrid.com/docs/glossary/domain-authentication.html
+Redirect 301 /Glossary/drip_campaign.html https://sendgrid.com/docs/glossary/drip-campaign.html
+Redirect 301 /Glossary/drops.html https://sendgrid.com/docs/glossary/drops.html
+Redirect 301 /Glossary/email_api_integration.html https://sendgrid.com/docs/glossary/email-api-integration.html
+Redirect 301 /Glossary/email_authentication.html https://sendgrid.com/docs/glossary/email-authentication.html
+Redirect 301 /Glossary/email_deliverability.html https://sendgrid.com/docs/glossary/email-deliverability.html
+Redirect 301 /Glossary/email_harvesting.html https://sendgrid.com/docs/glossary/email-harvesting.html
+Redirect 301 /Glossary/email_marketing.html https://sendgrid.com/docs/glossary/email-marketing.html
+Redirect 301 /Glossary/email_service_provider.html https://sendgrid.com/docs/glossary/email-service-provider.html
+Redirect 301 /Glossary/event_webhook.html https://sendgrid.com/docs/glossary/event-webhook.html
+Redirect 301 /Glossary/expired.html https://sendgrid.com/docs/glossary/expired.html
+Redirect 301 /Glossary/feedback_loop.html https://sendgrid.com/docs/glossary/feedback-loop.html
+Redirect 301 /Glossary/header.html https://sendgrid.com/docs/glossary/header.html
+Redirect 301 /Glossary/imap.html https://sendgrid.com/docs/glossary/imap.html
+Redirect 301 /Glossary/invalid_email.html https://sendgrid.com/docs/glossary/invalid-email.html
+Redirect 301 /Glossary/ip_address.html https://sendgrid.com/docs/glossary/ip-address.html
+Redirect 301 /Glossary/ip_warmup.html https://sendgrid.com/docs/glossary/ip-warmup.html
+Redirect 301 /Glossary/link_branding.html https://sendgrid.com/docs/glossary/link-branding.html
+Redirect 301 /Glossary/lists.html https://sendgrid.com/docs/glossary/lists.html
+Redirect 301 /Glossary/mail_merge.html https://sendgrid.com/docs/glossary/mail-merge.html
+Redirect 301 /Glossary/message_id.html https://sendgrid.com/docs/glossary/message-id.html
+Redirect 301 /Glossary/mta.html https://sendgrid.com/docs/glossary/mta.html
+Redirect 301 /Glossary/mx_record.html https://sendgrid.com/docs/glossary/mx-record.html
+Redirect 301 /Glossary/open_rate.html https://sendgrid.com/docs/glossary/open-rate.html
+Redirect 301 /Glossary/reconfirmation.html https://sendgrid.com/docs/glossary/reconfirmation.html
+Redirect 301 /Glossary/reputation_monitoring.html https://sendgrid.com/docs/glossary/reputation-monitoring.html
+Redirect 301 /Glossary/request.html https://sendgrid.com/docs/glossary/request.html
+Redirect 301 /Glossary/reseller_email_account.html https://sendgrid.com/docs/glossary/reseller-email-account.html
+Redirect 301 /Glossary/reserved_fields.html https://sendgrid.com/docs/glossary/reserved-fields.html
+Redirect 301 /Glossary/reverse_dns.html https://sendgrid.com/docs/glossary/reverse-dns.html
+Redirect 301 /Glossary/scheduled_emails.html https://sendgrid.com/docs/glossary/scheduled-emails.html
+Redirect 301 /Glossary/segments.html https://sendgrid.com/docs/glossary/segments.html
+Redirect 301 /Glossary/senders.html https://sendgrid.com/docs/glossary/senders.html
+Redirect 301 /Glossary/sends.html https://sendgrid.com/docs/glossary/sends.html
+Redirect 301 /Glossary/sender_authentication.html https://sendgrid.com/docs/glossary/sender-authentication.html
+Redirect 301 /Glossary/sender_id.html https://sendgrid.com/docs/glossary/sender-id.html
+Redirect 301 /Glossary/smtp.html https://sendgrid.com/docs/glossary/smtp.html
+Redirect 301 /Glossary/smtp_api.html https://sendgrid.com/docs/glossary/smtp_api.html
+Redirect 301 /Glossary/smtp_provider.html https://sendgrid.com/docs/glossary/smtp-provider.html
+Redirect 301 /Glossary/smtp_relay.html https://sendgrid.com/docs/glossary/smtp-relay.html
+Redirect 301 /Glossary/smtp_server.html https://sendgrid.com/docs/glossary/smtp-server.html
+Redirect 301 /Glossary/smtp_service.html https://sendgrid.com/docs/glossary/smtp-service.html
+Redirect 301 /Glossary/spam.html https://sendgrid.com/docs/glossary/spam.html
+Redirect 301 /Glossary/spam_filter.html https://sendgrid.com/docs/glossary/spam-filter.html
+Redirect 301 /Glossary/spam_reports.html https://sendgrid.com/docs/glossary/spam-reports.html
+Redirect 301 /Glossary/spam_traps.html https://sendgrid.com/docs/glossary/spam-traps.html
+Redirect 301 /Glossary/spf.html https://sendgrid.com/docs/glossary/spf.html
+Redirect 301 /Glossary/spoofing.html https://sendgrid.com/docs/glossary/spoofing.html
+Redirect 301 /Glossary/subscriber_list_management.html https://sendgrid.com/docs/glossary/subscriber-list-management.html
+Redirect 301 /Glossary/system_fields.html https://sendgrid.com/docs/glossary/system-fields.html
+Redirect 301 /Glossary/teammates.html https://sendgrid.com/docs/glossary/teammates.html
+Redirect 301 /Glossary/throttling.html https://sendgrid.com/docs/glossary/throttling.html
+Redirect 301 /Glossary/tls.html https://sendgrid.com/docs/glossary/tls.html
+Redirect 301 /Glossary/transactional_email.html https://sendgrid.com/docs/glossary/transactional-email.html
+Redirect 301 /Glossary/transactional_email_templates.html https://sendgrid.com/docs/glossary/transactional-email-templates.html
+Redirect 301 /Glossary/triggered_actions.html https://sendgrid.com/docs/glossary/triggered-actions.html
+Redirect 301 /Glossary/triggered_email.html https://sendgrid.com/docs/glossary/triggered-email.html
+Redirect 301 /Glossary/two_factor_authentication.html https://sendgrid.com/docs/glossary/two-factor-authentication.html
+Redirect 301 /Glossary/undelivered_email.html https://sendgrid.com/docs/glossary/undelivered-email.html
+Redirect 301 /Glossary/unknown_user.html https://sendgrid.com/docs/glossary/unknown-user.html
+Redirect 301 /Glossary/web_api.html https://sendgrid.com/docs/glossary/web-api.html
+Redirect 301 /Glossary/white_hat_sender.html https://sendgrid.com/docs/glossary/white-hat-sender.html
+Redirect 301 /Glossary/whitelabel.html https://sendgrid.com/docs/glossary/whitelabel.html
+Redirect 301 /Glossary/whitelist.html https://sendgrid.com/docs/Glossary/whitelist.html
+Redirect 301 /Glossary/x_message_id.html https://sendgrid.com/docs/glossary/x-message-id.html
