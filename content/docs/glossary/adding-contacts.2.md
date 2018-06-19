@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 90
-title: A title three
+title: A title two
 navigation:
   show: true
 seo:

@@ -2,10 +2,10 @@ import React from 'react';
 import Group from '../components/Group';
 import CATEGORIES from '../constants/categories';
 import GROUPS from '../constants/groups';
-import NavSub from '../components/NavSub';
+import withSubNav from '../components/NavSub';
 import './category.scss';
 
-export default class CategoryTemplate extends React.Component {
+class CategoryTemplate extends React.Component {
   renderGroups() {
     return this.props.data.docs.group.map(group => (
       <div key={group.fieldValue} className="category-container col-md-6">
@@ -28,6 +28,8 @@ export default class CategoryTemplate extends React.Component {
     );
   }
 }
+
+export default withSubNav()(CategoryTemplate);
 
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
