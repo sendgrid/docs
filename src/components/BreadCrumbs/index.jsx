@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
 import _ from 'lodash';
+import { all } from 'rsvp';
 
 export default class BreadCrumbs extends Component {
   constructor(props) {
@@ -8,7 +9,7 @@ export default class BreadCrumbs extends Component {
     this.pathParts = this.getPathParts();
 
     this.state = {
-      items: this.getBreadCrumbs(),
+      items: this.getSubPaths(),
     };
   }
 
@@ -18,36 +19,33 @@ export default class BreadCrumbs extends Component {
     return parts.filter(item => item.length);
   }
 
-  getBreadCrumbs() {
-    const isForDevsOrHelp = this.pathParts[0] === 'help-support' || this.pathParts[0] === 'for-developers';
-    // Always add home
-    const items = [
+  getSubPaths() {
+    const { pathname } = this.props.location;
+
+    // No matter what, add and object that represents the docs home
+    const home = [
       {
         textNode: 'home',
         to: '/',
       },
     ];
 
-    // check for help-support & for-developers
-    // Only add if it's a nested page
-    if (isForDevsOrHelp && this.pathParts.length > 1) {
-      const { category } = this.props.data.doc.fields;
+    const allPaths = this.pathParts.map((textNode) => {
+      const to = pathname.substring(0, pathname.indexOf(textNode)) + textNode;
+      return (
+        {
+          textNode,
+          to,
+        }
+      );
+    });
 
-      items.push({
-        textNode: this.pathParts[0].replace('-', ' '),
-        to: `/${this.pathParts[0]}`,
-      });
+    // All paths but current page -- title is added in render method
+    const subPaths = [...allPaths.slice(0, allPaths.length - 1)];
 
-      items.push({
-        textNode: category.replace('-', ' '),
-        to: `/${this.pathParts[0]}/${category}`,
-      });
-    }
-
-
-    return items;
+    // Combine with home object and return.
+    return [...home, ...subPaths];
   }
-
 
   getTitle() {
     let pageTitle;

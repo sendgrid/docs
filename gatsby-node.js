@@ -109,7 +109,21 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
 };
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
-  const { createPage, createNode } = boundActionCreators;
+  const { createPage, createRedirect } = boundActionCreators;
+
+  createRedirect({
+    fromPath: '/help-support/',
+    isPermanent: true,
+    redirectInBrowser: true,
+    toPath: '/',
+  });
+
+  createRedirect({
+    fromPath: '/help-support',
+    isPermanent: true,
+    redirectInBrowser: true,
+    toPath: '/',
+  });
 
   return new Promise((resolve, reject) => {
     const docsPage = path.resolve('src/templates/doc.jsx');
