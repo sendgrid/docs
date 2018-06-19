@@ -35,7 +35,9 @@ class DocTemplate extends React.Component {
     const { slug } = this.props.pathContext;
     const postNode = this.props.data.doc;
     const post = postNode.frontmatter;
-    const asideLinks = this.getLinks();
+    // const asideLinks = this.getLinks();
+
+    // console.log(this);
 
     return (
       <div className="container-lg doc-wrap">
@@ -43,7 +45,9 @@ class DocTemplate extends React.Component {
           <title>{`${post.title} | ${config.siteTitle}`}</title>
         </Helmet>
         <SEO postPath={slug} postNode={postNode} postSEO />
-        <AsideMenu asideLinks={asideLinks} />
+        {postNode.fields.docType !== 'glossary' &&
+          <AsideMenu asideLinks={this.getLinks()} />
+        }
         <div className="doc-main">
           <h1 className="page-title">{post.title}</h1>
           {renderAst(postNode.htmlAst)}
@@ -68,6 +72,7 @@ export const pageQuery = graphql`
         slug
         title
         category
+        docType
       }
     }
   }

@@ -48,10 +48,15 @@ export default class MainLayout extends React.Component {
   }
 
   render() {
-    const { children } = this.props;
+    const {
+      children,
+      location,
+    } = this.props;
+    const pathClass = location.pathname.replace(/\//g, '');
+    const classNames = `docs-wrap ${pathClass}`;
 
     return (
-      <div className="docs-wrap">
+      <div className={classNames}>
         <Helmet>
           <title>{`${config.siteTitle} | ${this.getLocalTitle()}`}</title>
           <meta name="description" content={config.siteDescription} />

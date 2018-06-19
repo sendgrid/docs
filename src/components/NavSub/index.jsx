@@ -6,7 +6,7 @@ import './NavSub.scss';
 
 const withSubNav = (args = { showBreadCrumbs: true }) => Page => props => (
   <div>
-    <div className="nav-sub m-bottom-6">
+    <div className="nav-sub">
       <div className="container-lg">
         <div className="row">
           <div className="col-md-8">
