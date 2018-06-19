@@ -159,8 +159,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       const developerCategorySet = new Set();
 
       result.data.allMarkdownRemark.edges.forEach((edge) => {
-        // console.log(edge.node.fields.category);
-
         const {
           category,
           docType,

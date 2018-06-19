@@ -46,7 +46,7 @@ class ReleaseNotes extends React.Component {
               <p className="is-size-h3">Some categories featured in our release notes include:</p>
             </div>
             <ReleaseKey />
-            {edges.map(edge => <ReleaseNotePost node={edge.node} />)}
+            {edges.map(edge => <ReleaseNotePost key={edge.node.frontmatter.date} node={edge.node} />)}
           </div>
         </div>
       </div>
