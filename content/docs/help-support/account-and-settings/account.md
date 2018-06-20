@@ -37,7 +37,9 @@ To edit your name and email address, click the “Change Contact Info” button 
 
 **Country** - The country in which your company operates.
 
-**Zip** - The zip code in which your company operates.
+**Zip** - The zip code in which your company operates kjkjk.
+
+<gist id='6468d6db11bc11db9616c2098cd64f2f' ></gist>
 
 {% info %}
 If you find that your scheduled sends or stats seem like they are not quite correct, please double check your timezone.

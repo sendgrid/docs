@@ -2,14 +2,14 @@ import React from 'react';
 
 class Gist extends React.PureComponent {
   componentDidMount() {
-    this._updateIframeContent();
+    this.updateIframeContent();
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    this._updateIframeContent();
+  componentDidUpdate() {
+    this.updateIframeContent();
   }
 
-  _defineUrl() {
+  defineUrl() {
     const { id, file } = this.props;
 
     const fileArg = file ? `?file=${file}` : '';
@@ -17,7 +17,7 @@ class Gist extends React.PureComponent {
     return `https://gist.github.com/${id}.js${fileArg}`;
   }
 
-  _updateIframeContent() {
+  updateIframeContent() {
     const { id, file } = this.props;
 
     const iframe = this.iframeNode;
@@ -26,7 +26,7 @@ class Gist extends React.PureComponent {
     if (iframe.contentDocument) doc = iframe.contentDocument;
     else if (iframe.contentWindow) doc = iframe.contentWindow.document;
 
-    const gistLink = this._defineUrl();
+    const gistLink = this.defineUrl();
     const gistScript = `<script type="text/javascript" src="${gistLink}"></script>`;
     const styles = '<style>*{font-size:12px;}</style>';
     const elementId = file ? `gist-${id}-${file}` : `gist-${id}`;
@@ -47,6 +47,7 @@ class Gist extends React.PureComponent {
         width="100%"
         frameBorder={0}
         id={file ? `gist-${id}-${file}` : `gist-${id}`}
+        title="GitHub Gist"
       />
     );
   }

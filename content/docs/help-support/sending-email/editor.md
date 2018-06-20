@@ -214,7 +214,7 @@ Some text to show that the reference links can follow later.
 
 ### Images
 
-
+<gist id='e13d44e8bd192d9077b6ece832f7e61e' ></gist>
 
 ```php
   // Create array containing abbreviations of days of week.
@@ -373,6 +373,8 @@ You can also use raw HTML in your Markdown, and it'll mostly work pretty well.
 
 ### Horizontal Rule
 
+lorm
+
 ```
 Three or more...
 
@@ -424,6 +426,9 @@ Here's a line for us to start with.
 This line is separated from the one above by two newlines, so it will be a _separate paragraph_.
 
 This line is also begins a separate paragraph, but...
+
+<gist id='6468d6db11bc11db9616c2098cd64f2f' ></gist>
+
 This line is only separated by a single newline, so it's a separate line in the _same paragraph_.
 
 (Technical note: _Markdown Here_ uses GFM line breaks, so there's no need to use MD's two-space line breaks.)
