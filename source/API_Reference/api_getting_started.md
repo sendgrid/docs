@@ -26,7 +26,7 @@ These instructions describe how to send your first email using cURL calls. This 
 Before you can start using the API, you need to do the following:
 
 1. Create a SendGrid [account](https://sendgrid.com/pricing/). 
-1. Create an [API Key]({{root_url}}/User_Guide/Settings/api_keys.html). 
+1. Create an [API Key]({{root_url}}/User_Guide/Settings/create-and-manage-api-keys.html). 
 1. Make sure you have [curl](https://curl.haxx.se/) installed on your machine. 
 
 {% info %}
