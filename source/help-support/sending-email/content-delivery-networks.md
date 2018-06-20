@@ -10,7 +10,7 @@ navigation:
 
 Content Delivery Networks are a great mechanism that you can use to serve up content very quickly and easily across multiple mediums as well as handle security certificates for you.
 
-We suggest [CloudFlare]({{root_url}}/User_Guide/Setting_Up_Your_Server/content_delivery_networks.html#-Using-CloudFlare), [Fastly]({{root_url}}/User_Guide/Setting_Up_Your_Server/content_delivery_networks.html#-Using-Fastly), or [KeyCDN]({{root_url}}/User_Guide/Setting_Up_Your_Server/content_delivery_networks.html#-Using-KeyCDN) when using Content Delivery Networks with SendGrid.
+We suggest [CloudFlare](#-Using-CloudFlare), [Fastly](#-Using-Fastly), or [KeyCDN](#-Using-KeyCDN) when using Content Delivery Networks with SendGrid.
 
 {% anchor h2 %}
 Using CloudFlare
