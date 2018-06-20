@@ -50,13 +50,13 @@ Depending on your editor selection, you use different methods to design your cam
 1. Edit your campaign by filling in the fields in the **Settings** Tab. 
 
 1. Add your custom content. 
-<br> For more information about customizing your campaign, see [Using the Design Editor]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html) or [Using the Code Editor]({{root_url}}/User_Guide/Marketing_Campaigns/code_editor.html). 
+<br> For more information about customizing your campaign, see [Using the Design Editor]({{root_url}}/help-support/sending-email/editor.html#-The-Design-Editor or [Using the Code Editor]({{root_url}}/help-support/sending-email/editor.html#-The-Code-Editor). 
 
 1. Once you’ve finished editing your campaign, you can see what it looks like by clicking **Preview**.
 
 1. To send a test email, enter the email addresses you want to send your campaign to and then click **Send Test**. 
 
-1. If you would like to test the effectiveness of your email subject or content, you can set up an A/B test. For more information, see [A/B Testing](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/a_b_testing.html).
+1. If you would like to test the effectiveness of your email subject or content, you can set up an A/B test. For more information, see [A/B Testing](https://sendgrid.com/docs/help-support/sending-email/a-b-testing.html).
 
 1. Add a list or segment of recipients to receive your campaign.
 
@@ -90,7 +90,7 @@ Be sure your account is set to the correct time zone in order to ensure that you
 Additional Resources
 {% endanchor h3 %}
 
-- [Campaign Statistics](https://sendgrid.com/docs/Help/Analytics_and_Reporting/campaign_stats.html) 
-- [Billing](https://sendgrid.com/docs/Help/Account_and_Settings/billing.html)
-- [Sending with the API]({{root_url}}/API_Reference/api_v3.html)
-- [Sending with SMTP]({{root_url}}/API_Reference/SMTP_API/using_the_smtp_api.html)
+- [Campaign Statistics](https://sendgrid.com/docs/help-support/analytics-and-reporting/campaign-stats.html) 
+- [Billing](https://sendgrid.com/docs/help-support/account-and-settings/billing.html)
+- [Sending with the API]({{root_url}}/for-developers/getting-started/api-getting-started.html)
+- [Sending with SMTP]({{root_url}}/for-developers/getting-started/getting-started-smtp.html)
