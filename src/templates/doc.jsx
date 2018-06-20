@@ -6,6 +6,7 @@ import SEO from '../components/SEO';
 import AsideMenu from '../components/AsideMenu';
 import config from '../../data/SiteConfig';
 import Callout from '../componentsMarkdown/Callout';
+import Gist from '../componentsMarkdown/Gist';
 import CodeGroup from '../componentsMarkdown/CodeGroup';
 import withSubNav from '../components/NavSub';
 import './b16-tomorrow-dark.css';
@@ -14,6 +15,7 @@ import './doc.scss';
 const renderAst = new RehypeReact({
   createElement: React.createElement,
   components: {
+    gist: Gist,
     'call-out': Callout,
     'code-group': CodeGroup,
   },
@@ -35,9 +37,6 @@ class DocTemplate extends React.Component {
     const { slug } = this.props.pathContext;
     const postNode = this.props.data.doc;
     const post = postNode.frontmatter;
-    // const asideLinks = this.getLinks();
-
-    // console.log(this);
 
     return (
       <div className="container-lg doc-wrap">
