@@ -63,7 +63,7 @@ Automated IP warmup
 Automated IP warmup API
 {% endanchor %}
 
-You can also put your IP address into warmup mode with our [Automated Warmup API]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_warmup.html) - this automatically throttles traffic sent through your new IP according to our [warm up schedule]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_warmup_schedule.html).
+You can also put your IP address into warmup mode with our [Automated Warmup API]({{root_url}}/for-developers/getting-started/ip-warmup.html) - this automatically throttles traffic sent through your new IP according to our [warm up schedule]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_warmup_schedule.html).
 
 {% warning %}
 When automatically warming up an IP, SendGrid limits the amount of email sent through that IP per hour. Any email requests that exceed this hourly limit will overflow to any other existing warm IPs on your account. If you do not have any other warm IPs, you should [warm up your IP manually](#-Manually-warm-up-your-IP).
@@ -433,6 +433,6 @@ Having a dedicated IP allows you to control your own reputation completely, and 
 Additional Resources
 {% endanchor h2 %}
 
-- [Adding a dedicated IP]({{root_url}}/Help/Account_and_Settings/dedicated_ip_addresses.html)
-- [API IP Access Management]({{root_url}}/Help/Account_and_Settings/ip_access_management.html)
-- [SendGrid billing information]({{root_url}}/Help/Account_and_Settings/billing.html)
+- [Adding a dedicated IP]({{root_url}}/help-support/account-and-settings/dedicated-ip-addresses.html)
+- [API IP Access Management]({{root_url}}/help-support/account-and-settings/ip-access-management.html)
+- [SendGrid billing information]({{root_url}}/help-support/account-and-settings/billing.html)
