@@ -4,8 +4,6 @@ import Link from 'gatsby-link';
 
 export default class siteMap extends React.Component {
   render() {
-    console.log(this.props.data);
-
     const {
       helpSupportCats,
       forDevsCats,
