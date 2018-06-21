@@ -73,6 +73,7 @@ When automatically warming up an IP, SendGrid limits the amount of email sent th
 Automated IP warmup hourly send schedule
 {% endanchor %}
 
+
 <table class="table table-striped table-bordered">
  <tr>
    <td>
