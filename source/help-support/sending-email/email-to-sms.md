@@ -28,7 +28,7 @@ Here’s a relevant comment about SMS from [RFC 5724](http://www.ietf.org/rfc/rf
   and performance of SMS message transmission.
   >
 
-Essentially, email to SMS may work for occasional messages at low volume, and even then it can be a gamble. If you need to send lots of SMS messages to your recipients, we recommend checking out our friends over at [Twilio](http://www.twilio.com/sms) for more SMS notification functionality. 
+Essentially, email to SMS may work for occasional messages at low volume, and even then it can be a gamble.  
 
 
  

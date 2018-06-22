@@ -16,7 +16,7 @@ We also realize that the actual journey of an email message from sender to the i
 
 In the email flowchart below, you can see the main components that all email messages pass through. Granted, there are many other finer details involved within each step, but for the sake of this post, we’re keeping it to the basics.
 
-![]({{root_url}}/images/MailFlow.png "Email Flow")
+![]({{root_url}}/img/MailFlow.png "Email Flow")
 
 First, a sender puts together the content that their recipients will love. Then it’s time for the “SMTP conversation” to take place. SMTP stands for Simple Mail Transfer Protocol, and this conversation is what makes email messages get from the sender to the recipient. It’s easiest to think of an SMTP conversation as a “handshake.”
 
