@@ -41,5 +41,5 @@ Additional Resources
 {% endanchor %}
 
 - [Set up Bounce Forwarding to go to the email’s from address]({{site.support_url}}/hc/en-us/articles/200181478)
-- [Global Unsubscribes]({{root_url}}/User_Guide/Suppressions/global_unsubscribes.html)
-- [Group Unsubscribes]({{site.app_url}}/suppressions/group_unsubscribes)
+- [Global Unsubscribes]({{root_url}}/help-support/sending-email/global-unsubscribes.html)
+- [Group Unsubscribes]({{site.app_url}}/help-support/sending-email/group-unsubscribes)

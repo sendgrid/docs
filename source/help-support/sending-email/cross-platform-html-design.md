@@ -106,8 +106,6 @@ We use the open-source library [MKDoc-Text-Structured](http://search.cpan.org/~b
 
 **VIDEOS**
 
-- **Don't do it... Just don't do it...**
-
   - Many clients simply cannot support rendering video (other than GIFs) in their emails
   - JavaScript nor the object tag are supported in many clients or browsers and thus can't support video rendering
 
