@@ -38,6 +38,6 @@ You can download your list as a CSV by clicking the gear icon at the top of the 
 Additional Resources
 {% endanchor %}
 
-- [Recipient Subscription Preferences]({{root_url}}/User_Guide/Suppressions/recipient_subscription_preferences.html)
-- [Spam Reports]({{root_url}}/User_Guide/Suppressions/spam_reports.html)
+- [Recipient Subscription Preferences]({{root_url}}/help-support/sending-email/recipient_subscription_preferences.html)
+- [Spam Reports]({{root_url}}/help-support/analytics-and-reporting/spam-reports.html)
 - [Invalid Emails API]({{root_url}}/API_Reference/Web_API_v3/invalid_emails.html)
