@@ -1,5 +1,6 @@
 import React from 'react';
 import _ from 'lodash';
+import SEO from '../components/SEO';
 import AsideMenu from '../components/AsideMenu';
 import ReleaseKey from '../components/ReleaseNotes/ReleaseKey';
 import ReleaseNotePost from '../components/ReleaseNotes/ReleaseNotePost';
@@ -32,6 +33,7 @@ class ReleaseNotes extends React.Component {
 
     return (
       <div className="container-lg">
+        <SEO postNode={this.props} title="Release Notes" description="SendGrid API and Marketing Campaigns Release Notes" />
         <div className="row">
           <div className="col-md-3">
             <AsideMenu asideLinks={asideLinks} />

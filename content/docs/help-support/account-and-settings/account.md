@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: Account Details
+title: Account Details title
 group: tracking
 seo:
   title: Account Details

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
+import SEO from '../components/SEO';
 import GlossaryPartial from '../components/GlossaryPartial';
 import FOR_DEVS_CARDS from '../constants/forDevelopersCards';
 import Libaries from '../components/Libaries';
@@ -20,6 +21,7 @@ class ForDevelopers extends Component {
   render() {
     return (
       <div className="for-developers">
+        <SEO postNode={this.props} title="For Developers" description="SendGrid API and Marketing Campaigns documentation for Developers" />
         <div className="container for-devs-callouts m-bottom-6">
           <h1 className="page-title">For Developers</h1>
           <div className="row">

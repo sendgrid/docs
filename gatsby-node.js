@@ -20,12 +20,10 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     const parsedFilePath = path.parse(fileNode.relativePath);
     if (
       Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
-      Object.prototype.hasOwnProperty.call(node.frontmatter, 'title')
+      Object.prototype.hasOwnProperty.call(node.frontmatter, 'slug')
     ) {
-      slug = `/${_.kebabCase(node.frontmatter.title)}`;
+      slug = `/${node.frontmatter.slug}`;
     } else if (parsedFilePath.name !== 'index' && parsedFilePath.dir !== '') {
-      slug = `/${parsedFilePath.dir}/${parsedFilePath.name}/`;
-    } else if (parsedFilePath.dir === '') {
       slug = `/${parsedFilePath.name}/`;
     } else {
       slug = `/${parsedFilePath.dir}/`;
@@ -36,7 +34,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     ) {
       slug = `/${_.kebabCase(node.frontmatter.slug)}`;
     }
-    createNodeField({ node, name: 'slug', value: slug });
+    createNodeField({ node, name: 'slug', value: _.kebabCase(slug).toLowerCase() });
 
     /**
      * Add permalink edge
@@ -54,7 +52,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     } else {
       permalink = slug;
     }
-    createNodeField({ node, name: 'permalink', value: permalink });
+    createNodeField({ node, name: 'permalink', value: permalink.toLowerCase() });
 
     /**
      * Check if doc is "help-support" or "for developers" and add a field slug to represent this.
