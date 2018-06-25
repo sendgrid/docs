@@ -1,10 +1,8 @@
 import React from 'react';
-import Helmet from 'react-helmet';
 import RehypeReact from 'rehype-react';
 import _ from 'lodash';
 import SEO from '../components/SEO';
 import AsideMenu from '../components/AsideMenu';
-import config from '../../data/SiteConfig';
 import Callout from '../componentsMarkdown/Callout';
 import Gist from '../componentsMarkdown/Gist';
 import CodeGroup from '../componentsMarkdown/CodeGroup';
@@ -34,21 +32,16 @@ class DocTemplate extends React.Component {
   }
 
   render() {
-    const { slug } = this.props.pathContext;
     const postNode = this.props.data.doc;
-    const post = postNode.frontmatter;
 
     return (
       <div className="container-lg doc-wrap">
-        <Helmet>
-          <title>{`${post.title} | ${config.siteTitle}`}</title>
-        </Helmet>
-        <SEO postPath={slug} postNode={postNode} postSEO />
+        <SEO postNode={postNode} postType="doc" />
         {postNode.fields.docType !== 'glossary' &&
           <AsideMenu asideLinks={this.getLinks()} />
         }
         <div className="doc-main">
-          <h1 className="page-title">{post.title}</h1>
+          <h1 className="page-title">{postNode.fields.title}</h1>
           {renderAst(postNode.htmlAst)}
         </div>
       </div>
@@ -65,13 +58,18 @@ export const pageQuery = graphql`
       htmlAst
       html
       frontmatter {
-        title
+        seo {
+          title
+          description
+          keywords
+        }
       }
       fields {
         slug
         title
         category
         docType
+        permalink
       }
     }
   }

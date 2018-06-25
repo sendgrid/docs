@@ -39,12 +39,11 @@ class Index extends React.Component {
   render() {
     return (
       <div className="docs-home">
+        <SEO postNode={this.props} title={config.siteTitle} description="SendGrid documentation home" />
         <div className="search-hero ta-center color-white">
           <div className="container">
             <div className="search-hero__bg">
-              <Helmet title={config.siteTitle} />
               <h1 className="page-title">Help Center</h1>
-              <Search />
             </div>
           </div>
         </div>

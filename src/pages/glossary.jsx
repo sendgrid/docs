@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import SEO from '../components/SEO';
 import './glossary.scss';
 import withSubNav from '../components/NavSub';
 
@@ -29,6 +30,7 @@ class glossary extends React.Component {
   render() {
     return (
       <div className="container">
+        <SEO postNode={this.props} title="Glossary" description="SendGrid documentation glossary" />
         <h1>Glossary</h1>
         <div className="row">
           {Object.keys(this.glossary).map(key => (
