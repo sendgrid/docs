@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
 import _ from 'lodash';
-import { all } from 'rsvp';
 
 export default class BreadCrumbs extends Component {
   constructor(props) {
@@ -30,8 +29,9 @@ export default class BreadCrumbs extends Component {
       },
     ];
 
-    const allPaths = this.pathParts.map((textNode) => {
-      const to = pathname.substring(0, pathname.indexOf(textNode)) + textNode;
+    const allPaths = this.pathParts.map((text) => {
+      const to = pathname.substring(0, pathname.indexOf(text)) + text;
+      const textNode = text.replace('-', ' ');
       return (
         {
           textNode,
@@ -39,6 +39,8 @@ export default class BreadCrumbs extends Component {
         }
       );
     });
+
+    this.allPaths = allPaths;
 
     // All paths but current page -- title is added in render method
     const subPaths = [...allPaths.slice(0, allPaths.length - 1)];
@@ -57,17 +59,49 @@ export default class BreadCrumbs extends Component {
       pageTitle = this.pathParts.slice(-1)[0].replace('-', ' ');
     }
 
+    // update the last textNode with page title
+    this.allPaths[this.allPaths.length - 1].textNode = pageTitle;
+
     return pageTitle;
+  }
+
+  getJSONLD() {
+    const json = {
+      '@context': 'http://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [],
+    };
+
+    const itemList = this.allPaths.map((item, index) => {
+      const listItem = {
+        '@type': 'ListItem',
+        position: index + 1,
+        item: {
+          '@id': item.to,
+          name: item.textNode,
+        },
+      };
+      return listItem;
+    });
+
+    json.itemListElement = [...itemList];
+
+    return json;
   }
 
   render() {
     return (
-      <ul className="breadcrumb">
-        {this.state.items.map(item => (
-          <li key={item.textNode} ><Link to={item.to}>{item.textNode}</Link></li>
-        ))}
-        <li>{this.getTitle()}</li>
-      </ul>
+      <div>
+        <ul className="breadcrumb">
+          {this.state.items.map(item => (
+            <li key={item.textNode} ><Link to={item.to}>{item.textNode}</Link></li>
+          ))}
+          <li>{this.getTitle()}</li>
+        </ul>
+        <script type="application/ld+json">
+          {JSON.stringify(this.getJSONLD())}
+        </script>
+      </div>
     );
   }
 }
