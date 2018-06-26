@@ -141,8 +141,9 @@ Meteor
 Perl
 {% endanchor %}
 
--   [sendgrid-perl](http://github.com/sendgrid/sendgrid-perl) *by SendGrid* -  Perl library for the SendGrid API
--   [WebService--SendGrid](http://github.com/majrmovies/WebService--SendGrid) *by Jonathan Lloyd* - Perl interface for SendGrid API
+-   [Email::SendGrid::V3](https://metacpan.org/pod/Email::SendGrid::V3) *by Grant Street Group Inc* -  Perl library for the SendGrid v3 Web API
+-   [sendgrid-perl](http://github.com/sendgrid/sendgrid-perl) *by SendGrid* -  Perl library for the SendGrid v2 API
+-   [WebService--SendGrid](http://github.com/majrmovies/WebService--SendGrid) *by Jonathan Lloyd* - Perl interface for SendGrid v2 API
 
 {% anchor h3 %}
 PHP
