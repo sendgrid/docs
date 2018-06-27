@@ -365,7 +365,7 @@ Redirect 301 /Classroom/Send/How_Emails_Are_Sent/api_keys.html https://sendgrid.
 #
 #######
 
-Redirect 301 /Classroom/Deliver/overview.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/overview.html
+Redirect 301 /Classroom/Deliver/overview.html https://sendgrid.com/docs/help-support/getting-started/email-deliverability.html
 Redirect 301 /Classroom/Deliver/all_you_need_to_know_about_whitelabeling.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/all_you_need_to_know_about_whitelabeling.html
 Redirect 301 /Classroom/Deliver/bacn_its_whats_for_dinner.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/bacn_its_whats_for_dinner.html
 Redirect 301 /Classroom/Deliver/Delivery_Introduction/bacn_its_whats_for_dinner.html https://sendgrid.com/docs/Classroom/Deliver/index.html
@@ -414,10 +414,10 @@ Redirect 301 /Classroom/Deliver/spam_trapped.html https://sendgrid.com/docs/Clas
 Redirect 301 /Classroom/Deliver/what_do_i_do_if_im_blacklisted.html https://sendgrid.com/docs/Classroom/Deliver/Undeliverable_Email/what_do_i_do_if_im_blacklisted.html
 Redirect 301 /Classroom/Deliver/enabling_custom_dkim.html https://sendgrid.com/docs/Classroom/Deliver/Sender_Authentication/internet_standards_spf_and_dkim_and_deliverability.html
 Redirect 301 /Classroom/Deliver/Delivery_Introduction/sendgrids_recommended_sending_practices_and_methods.html https://sendgrid.com/docs/Classroom/Deliver/index.html
-Redirect 301 /Classroom/Deliver/Undeliverable_Email/how_can_i_guarantee_my_emails_arrive_in_my_recipients_inbox.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/email_deliverability_101.html
-Redirect 301 /Classroom/Deliver/Undeliverable_Email/my_emails_are_being_blocked.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/email_deliverability_101.html
+Redirect 301 /Classroom/Deliver/Undeliverable_Email/how_can_i_guarantee_my_emails_arrive_in_my_recipients_inbox.html https://sendgrid.com/docs/help-support/getting-started/email-deliverability.html
+Redirect 301 /Classroom/Deliver/Undeliverable_Email/my_emails_are_being_blocked.html https://sendgrid.com/docs/help-support/getting-started/email-deliverability.html
 Redirect 301 /Classroom/Deliver/Address_Lists/why_purchase_lists_when_you_can.html https://sendgrid.com/docs/Classroom/Deliver/Address_Lists/why_purchased_email_lists_are_no_good.html
-Redirect 301 /Classroom/Deliver/Delivery_Introduction/bacn_its_whats_for_dinner.html https://sendgrid.com/docs/Classroom/Deliver/index.html
+Redirect 301 /Classroom/Deliver/Delivery_Introduction/bacn_its_whats_for_dinner.html https://sendgrid.com/docs/help-support/getting-started/email-deliverability.html
 Redirect 301 /Classroom/Deliver/Delivery_Introduction/IP_reputation_montoring.html https://sendgrid.com/docs/help-support/account-and-settings/dedicated_ip_addresses.html
 Redirect 301 /Classroom/Deliver/Delivery_Introduction/email_deliverability_101.html https://sendgrid.com/docs/help-support/getting-started/email-deliverability.html
 Redirect 301 /Classroom/Deliver/Delivery_Introduction/russian_data_localization_law.html https://sendgrid.com/resource/general-data-protection-regulation/
