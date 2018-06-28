@@ -21,8 +21,8 @@ Before you begin
 Before you create and send an email using a dynamic transactional template you need to do the following:
 
 * Create a SendGrid account
-* Create an [API Key]({{root_url}}/User_Guide/Settings/api_keys.html)
-* Add an [unsubscribe group]({{root_url}}/User_Guide/Transactional_Email/unsubscribes.html) (optional)
+* Create an [API Key]({{root_url}}/help-support/account-and-settings/api-keys.html)
+* Add an [unsubscribe group]({{root_url}}/help-support/sending-email/group-unsubscribes.html) (optional)
 
 {% anchor h2 %}
 Design a dynamic transactional template
@@ -32,7 +32,7 @@ Design a dynamic transactional template
 1. Add a unique template name and then click **Save**.
 1. To begin editing your new template, click **Add Version**.
 1. Select an editor and click **Continue**.
-1. Design your template. For more information on using Handlebars, see [Using handlebars]({{root_url}}/User_Guide/Transactional_Templates/Using_handlebars.html).
+1. Design your template. For more information on using Handlebars, see [Using handlebars]({{root_url}}/help-support/sending-email/using-handlebars.html).
 
 For sample templates that that include examples of receipts, password resets, account activations, newsletters, and sale notifications, check out the [dynamic-template section of our email templates github repo](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates).
 
@@ -100,7 +100,7 @@ curl -X "POST" "https://api.sendgrid.com/v3/mail/send" \
 
 It is important to note two sections of this call when using dynamic templates.
 
-In order to send dynamic content, you need to specify a JSON blob containing the dynamic data your template will use in the `dynamic_template_data` object. The handlebars script you write will refer to the values in your JSON blob by referencing the JSON key, check out [these examples]({{root_url}}/User_Guide/Transactional_Templates/Using_handlebars.html#-Handlebarjs-reference). This handlebars templating can be used in the text, html, and subject lines of your template. The total collective size of your dynamic data may not exceed 10,000 bytes per personalization object.
+In order to send dynamic content, you need to specify a JSON blob containing the dynamic data your template will use in the `dynamic_template_data` object. The handlebars script you write will refer to the values in your JSON blob by referencing the JSON key, check out [these examples]({{root_url}}/help-support/sending-email/using-handlebars.html#-Handlebarjs-reference). This handlebars templating can be used in the text, html, and subject lines of your template. The total collective size of your dynamic data may not exceed 10,000 bytes per personalization object.
 
 {% codeblock %}
          "dynamic_template_data":{  
@@ -149,7 +149,6 @@ You can also copy your template ID from the app and paste it into your call.
 Additional Resources
 {% endanchor h2 %}
 
-- [Transactional Templates Overview]({{root_url}}/User_Guide/Transactional_Templates/index.html)
 - [Mail Send with Dynamic Transactional Templates](https://dynamic-templates.api-docs.io/3.0)
-- [Transactional Email Unsubscribes]({{root_url}}/User_Guide/Transactional_Email/unsubscribes.html)
-- [Using Handlebars]({{root_url}}/User_Guide/Transactional_Templates/Using_handlebars.html)
+- [Unsubscribe Groups]({{root_url}}/help-support/sending-email/group-unsubscribes.html)
+- [Using Handlebars]({{root_url}}/help-support/sending-email/using-handlebars.html)

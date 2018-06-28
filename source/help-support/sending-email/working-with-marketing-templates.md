@@ -90,6 +90,6 @@ Creating a Template from a Campaign
 Additional Resources
 {% endanchor h3 %}
 
-- For more information, see [Sending an Email](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html) or [view the next video](https://vimeo.com/139274837) in our Getting Started Series.
-- [Design Editor](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html)
-- [Code Editor](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/code_editor.html)
+- For more information, see [Sending an Email](https://sendgrid.com/docs/help-support/getitng-started/how-to-send-email.html) or [view the next video](https://vimeo.com/139274837) in our Getting Started Series.
+- [Design Editor](https://sendgrid.com/docs/help-support/sending-email/editor.html#-The-Design-Editor)
+- [Code Editor](https://sendgrid.com/docs/help-support/sending-email/code_editor.html#-The-Code-Editor)

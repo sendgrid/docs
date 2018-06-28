@@ -255,7 +255,7 @@ Getting Started With the Design Editor
 ![]({{root_url}}/img/campaigns_dashboard_categories_search.png)
 
 3. Select the template that you want to use for your campaign.
-<br>You can select a Blank Template, a custom template that you have already created, or one of SendGrid’s pre-built templates. For more information, see [Working With Templates](<% root_url %>/User_Guide/Marketing_Campaigns/templates.html).
+<br>You can select a Blank Template, a custom template that you have already created, or one of SendGrid’s pre-built templates. For more information, see [Working With Marketing Templates]({{root_url}}/help-support/sending-email/working-with-marketing-templates.html)
 4. Select **Design Editor**, and then click **Continue**.
 <br>The Design Editor opens.
 
@@ -269,7 +269,7 @@ Drag & drop editing helps you swiftly build your campaign, using pre-built conte
 
 1. Navigate to the **Build** tab, and then click **Add Modules**.
 
-   ![](<% root_url %>/img/design_editor_drag_drop.png)
+  (![]({{root_url}}/img/design_editor_drag_drop.png "Drag and drop editor")
 
 2. Find the module tile you want to add to your campaign and drag and drop it into your content area.
 3. Edit the module settings and add your custom content to build your campaign.
@@ -836,13 +836,8 @@ Assigning categories to a campaign allows you to track emails based on your own 
 Additional Resources
 {% endanchor %}
 
-* [Sending an Email]({{root_url}}/User_Guide/Marketing_Campaigns/getting_started.html)
-* [A/B Testing]({{root_url}}/User_Guide/Marketing_Campaigns/a_b_testing.html)
-* [Campaign Statistics]({{root_url}}/User_Guide/Marketing_Campaigns/campaign_stats.html)
-* [Marketing Templates]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html)
-    * [Creating a New Template]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html#-Creating-a-New-Template)
-    * [Editing an Existing Template]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html#-Editing-an-Existing-Template)
-    * [Duplicating a SendGrid Template]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html#-Duplicating-a-SendGrid-Template)
-    * [Duplicating a Custom Template]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html#-Duplicating-a-Custom-Template)
-    * [Creating a Template from a Campaign]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html#-Creating-a-Template-from-a-Campaign)
+* [Sending an Email]({{root_url}}/help-support/getting-started/how-to-send-email.html)
+* [A/B Testing]({{root_url}}/help-support/sending-email/a-b-testing.html)
+* [Campaign Statistics]({{root_url}}/help-support/analytics-and-reporting/campaign-stats.html)
+* [Marketing Templates]({{root_url}}/help-support/sending-email/working-with-marketing-templates.html)
 

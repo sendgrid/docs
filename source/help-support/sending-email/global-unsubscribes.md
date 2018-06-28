@@ -10,7 +10,7 @@ navigation:
   show: true
 ---
 
-Global unsubscribes happen when a recipient indicates that they would like to opt out from any email that you send by clicking on the [Unsubscribe From All Emails link]({{root_url}}/User_Guide/Suppressions/global_unsubscribes.html#-Global-Unsubscribe-Substitution-Tags) within your emails. The list provided here can be filtered by email address or date.
+Global unsubscribes happen when a recipient indicates that they would like to opt out from any email that you send by clicking on the [Unsubscribe From All Emails link](#-Global-Unsubscribe-Substitution-Tags) within your emails. The list provided here can be filtered by email address or date.
 
 {% anchor h2 %}
 Searching Global Unsubscribes by Date
@@ -35,11 +35,11 @@ Global Unsubscribe Substitution Tag
 {% endanchor %}
 
 
-When you add the `<%asm_global_unsubscribe_url%>` tag to your email, we will replace that tag with the text "Unsubscribe From All Emails", wherever the tag is found in your email. This will allow your recipient to be [globally unsubscribed]({{root_url}}/User_Guide/Suppressions/global_unsubscribes.html) from all of your emails.
+When you add the `<%asm_global_unsubscribe_url%>` tag to your email, we will replace that tag with the text "Unsubscribe From All Emails", wherever the tag is found in your email. This will allow your recipient to be globally unsubscribed from all of your emails.
 
 Alternatively, you can use the `<%asm_global_unsubscribe_raw_url%>` tag, which will be replaced with only the global unsubscribe URL without the hyperlinked text "Unsubscribe From All Emails".
 
-For more substitution tags, please see our [transactional templates]({{root_url}}/User_Guide/Transactional_Templates/create_and_edit_transactional_templates.html#-Adding-unsubscribe-links-to-a-template).
+For more substitution tags, please see our [transactional templates]({{root_url}}/help-suppport/sending-email/create_and_edit_transactional_templates.html#-Adding-unsubscribe-links-to-a-template).
 
 {% anchor h2 %}
 Using the API
@@ -51,6 +51,6 @@ You can manage your Global Unsubscribes via the [Global Suppressions API]({{root
 Additional Resources
 {% endanchor %}
 
-- [Global unsubscribes vs. Group Unsubscribes]({{root_url}}/User_Guide/Email_Deliverability/Subscription_Tracking/suppressions_vs_unsubscribes.html)
-- [Group Unsubscribes]({{root_url}}/User_Guide/Suppressions/group_unsubscribes.html)
-- [Invalid Emails]({{root_url}}/User_Guide/Suppressions/invalid_emails.html)
+- [Global unsubscribes vs. Group Unsubscribes]({{root_url}}/help-support/analytics-and-reporting/subscription-tracking.html)
+- [Group Unsubscribes]({{root_url}}/help-support/sending-email/group-unsubscribes.html)
+- [Invalid Emails]({{root_url}}/help-support/sending-email/index-suppressions.html)

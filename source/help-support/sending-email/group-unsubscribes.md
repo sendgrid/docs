@@ -10,7 +10,7 @@ navigation:
   show: true
 ---
 
-A group unsubscribe happens when a recipient indicates that they would like to opt out from a specific type of email that you send via the [Unsubscribe Groups link]({{root_url}}/User_Guide/Suppressions/group_unsubscribes.html#-Group-Unsubscribe-Substitution-Tag) from within your email. The list provided here can be filtered by email address or date.
+A group unsubscribe happens when a recipient indicates that they would like to opt out from a specific type of email that you send via the [Unsubscribe Groups link](#-Group-Unsubscribe-Substitution-Tag) from within your email. The list provided here can be filtered by email address or date.
 
 {% anchor h2 %}
 Searching Group Unsubscribes by Date
@@ -34,11 +34,11 @@ When you select the checkboxes next to the recipient names or select all, using 
 Group Unsubscribe Substitution Tag
 {% endanchor %}
 
-When you add the `<%asm_group_unsubscribe_url%>` tag to your email, we will replace that tag with the text "Unsubscribe From This List", wherever the tag is found in your email. This link will allow your recipients to unsubscribe from the [unsubscribe group]({{root_url}}/User_Guide/Suppressions/group_unsubscribes.html) that you attached to this email.
+When you add the `<%asm_group_unsubscribe_url%>` tag to your email, we will replace that tag with the text "Unsubscribe From This List", wherever the tag is found in your email. This link will allow your recipients to unsubscribe from the unsubscribe group that you attached to this email.
 
 Alternatively, you can use the `<%asm_group_unsubscribe_raw_url%>` tag which will be replaced with only the group unsubscribe URL without the hyperlinked text "Unsubscribe From This List".
 
-For more substitution tags, please see our [transactional templates]({{root_url}}/User_Guide/Transactional_Templates/create_and_edit_transactional_templates.html#-Adding-unsubscribe-links-to-a-template).
+For more substitution tags, please see our [transactional templates]({{root_url}}/help-support/sending-email/create-and-edit-transactional-templates.html#-Adding-unsubscribe-links-to-a-template).
 
 {% anchor h2 %}
 Using the API
@@ -50,6 +50,6 @@ You can manage your Global Unsubscribes via the [Group Suppressions API]({{root_
 Additional Resources
 {% endanchor %}
 
-- [Global unsubscribes vs. Group Unsubscribes]({{root_url}}/User_Guide/Email_Deliverability/Subscription_Tracking/suppressions_vs_unsubscribes.html)
-- [Global Unsubscribes]({{root_url}}/User_Guide/Suppressions/global_unsubscribes.html)
-- [Invalid Emails]({{root_url}}/User_Guide/Suppressions/invalid_emails.html)
+- [Global unsubscribes vs. Group Unsubscribes]({{root_url}}/helps-support/sending-email/index-suppressions.html#-Suppressions-vs--Unsubscribes)
+- [Global Unsubscribes]({{root_url}}/help-support/sending-email/global-unsubscribes.html)
+- [Invalid Emails]({{root_url}}/help-support/sending-email/invalid_emails.html)
