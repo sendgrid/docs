@@ -82,7 +82,7 @@ class TestEmail extends Mailable
                     ->bcc($address, $name)
                     ->replyTo($address, $name)
                     ->subject($subject)
-                    ->with([ 'message' => $data['message'] ]);
+                    ->with([ 'message' => $this->data['message'] ]);
     }
 }
 {% endcodeblock %}
@@ -174,7 +174,7 @@ class TestEmail extends Mailable
                     ->bcc($address, $name)
                     ->replyTo($address, $name)
                     ->subject($subject)
-                    ->with([ 'data' => $data ]);
+                    ->with([ 'data' => $this->data ]);
     }
 
     private function asJSON($data)
