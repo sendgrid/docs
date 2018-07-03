@@ -41,8 +41,8 @@ Example DKIM Record: Automated Security ON
 {% codeblock %}
 
 subdomain.yourdomain.com. | CNAME | uXXXXXXX.wlXXX.sendgrid.net
-s1.domainkey.yourdomain.com. | CNAME | s1.domainkey.uXXX.wlXXX.sendgrid.net.
-s2.domainkey.yourdomain.com. | CNAME | s2.domainkey.uXXX.wlXXX.sendgrid.net.
+s1._domainkey.yourdomain.com. | CNAME | s1._domainkey.uXXX.wlXXX.sendgrid.net.
+s2._domainkey.yourdomain.com. | CNAME | s2._domainkey.uXXX.wlXXX.sendgrid.net.
 
 {% endcodeblock %}
 
