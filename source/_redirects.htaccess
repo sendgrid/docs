@@ -604,7 +604,7 @@ Redirect 301 /Classroom/Troubleshooting/Delivery_Issues/troubleshooting_delays_a
 #
 #######
 Redirect 301 /Delivery_Metrics/index.html https://sendgrid.com/docs/help-support/analytics-and-reporting/index.html
-Redirect 301 /Delivery_Metrics/advanced_statistics.html https://sendgrid.com/docs/User_Guide/Delivery_Metrics/advanced_statistics.html
+Redirect 301 /Delivery_Metrics/advanced_statistics.html https://sendgrid.com/docs/help-support/email-activity-feed.html
 Redirect 301 /Delivery_Metrics/alerts.html https://sendgrid.com/docs/help-support/account-and-settings/alerts.html
 Redirect 301 /Delivery_Metrics/categories.html https://sendgrid.com/docs/help-support/analytics-and-reporting/categories.html
 Redirect 301 /Delivery_Metrics/email_activity.html https://sendgrid.com/docs/help-support/analytics-and-reporting/email-activity-feed.html
@@ -622,8 +622,8 @@ Redirect 301 /Glossary/ip_whitelabeling.html https://sendgrid.com/docs/help-supp
 Redirect 301 /Glossary/bulk_sender_notification.html https://sendgrid.com/docs/glossary/index.html
 Redirect 301 /Glossary/provisioning.html https://sendgrid.com/docs/help-support/account-and-settings/account.html
 Redirect 301 /Glossary/marketing_email.html https://sendgrid.com/docs/glossary/email-marketing.html
-Redirect 301 /Glossary/email_error_messages.html https://sendgrid.com/docs/Classroom/Track/Bounces/common_smtp_server_bounce_responses.html
-Redirect 301 /Glossary/sender_reputation.html https://sendgrid.com/docs/Classroom/Basics/Misc/your_reputation_what_is_it.html
+Redirect 301 /Glossary/email_error_messages.html https://sendgrid.com/docs/for-developers/smtp-errors-and-troubleshooting.html
+Redirect 301 /Glossary/sender_reputation.html https://sendgrid.com/docs/help-support/getting-started/deliverability-overview.html
 Redirect 301 /Glossary/triggering_events.html https://sendgrid.com/docs/glossary/automated-email.html
 
 #######
@@ -631,7 +631,7 @@ Redirect 301 /Glossary/triggering_events.html https://sendgrid.com/docs/glossary
 # /docs/Integrate
 #
 #######
-Redirect 301 /Integrate/Mail_Clients/outlook_2010.html https://sendgrid.com/docs/Integrate/Mail_Clients/outlook_2013.html
+Redirect 301 /Integrate/Mail_Clients/outlook_2010.html https://sendgrid.com/docs/help-support/account-and-settings/microsoft-dmarc.html
 Redirect 301 /Integrate/Partners/Tutorials/EngineYard.html https://sendgrid.com/docs/Integrate/Tutorials/EngineYard.html
 Redirect 301 /Integrate/Partners/Tutorials/OpenShift.html https://sendgrid.com/docs/Integrate/Tutorials/OpenShift.html
 Redirect 301 /Integrate/Partners/Tutorials/WindowsAzure.html https://sendgrid.com/docs/Integrate/Tutorials/WindowsAzure.html
