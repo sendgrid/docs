@@ -17,7 +17,7 @@ navigation:
 
 SendGrid's Event Webhook will notify a URL of your choice via HTTP POST with information about events that occur as SendGrid processes your email. You can use this data to remove unsubscribes, react to spam reports, [determine unengaged recipients]({{site.blog_url}}/infer-engagement-with-the-event-api/), identify bounced email addresses, or create advanced analytics of your email program. With Unique Arguments and Category parameters, you can insert dynamic data that will help build a sharp, clear image of your mailings.
 
-You should set up the Event Webhook if you want to keep track of more event data than we store for you. Due to the sheer volume of email we send, we can only store so much information. Your [Email Activity Feed]({{root_url}}/User_Guide/email_activity_feed.html) can hold up to 30 days worth of events. After that time passes, the email event data is gone.
+You should set up the Event Webhook if you want to keep track of more event data than we store for you. Due to the sheer volume of email we send, we can only store so much information. Your [Email Activity Feed]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed.html) can hold up to 30 days worth of events. After that time passes, the email event data is gone.
 
 {% anchor h2 %}
 Getting started
@@ -65,7 +65,7 @@ Storage integrations are infinitely flexible, but here are some popular options:
 
 - Locally on your servers.
 - SendGrid's [open source Event Kit](https://github.com/sendgrid/eventkit-rails) stores the data on a Heroku instance.
-- SendGrid's partner, Keen.io provides a platform to analyze, visualize, and store SendGrid Event data. For more information about getting started with Keen IO, see the [Keen.io Getting Started page](https://sendgrid.com/docs/Integrate/Tutorials/analytics_with_keen_io.html).
+- SendGrid's partner, Keen.io provides a platform to analyze, visualize, and store SendGrid Event data. For more information about getting started with Keen IO, see the [Keen.io Getting Started page](https://sendgrid.com/docs/help-and-support/analytics-and-reporting/tracking-data-with-keen-io.html).
 - You could also use [Snowplow](https://github.com/snowplow/snowplow/wiki/SendGrid-webhook-setup), a web open source platform that supports SendGrid and stores the data on Amazon Redshift.
 - Several open source web libraries support SendGrid's Event Webhook. For a full list of these libraries, see the [Webhook libraries section]({{root_url}}/Integrate/libraries.html#-Webhook-Libraries) of our API Libraries list.
 
@@ -91,4 +91,4 @@ Additional Resources
 - [Troubleshooting the Event Webhook]({{root_url}}/API_Reference/Event_Webhook/troubleshooting.html)
 - [An Event Webhook case study](https://sendgrid.com/blog/leveraging-sendgrids-event-api/)
 - [Webhook web libraries]({{root_url}}/Integrate/libraries.html#-Webhook-Libraries)
-- [Getting started with Keen.io]({{root_url}}/Integrate/Tutorials/analytics_with_keen_io.html)
+- [Getting started with Keen.io](https://sendgrid.com/docs/help-and-support/analytics-and-reporting/tracking-data-with-keen-io.html)

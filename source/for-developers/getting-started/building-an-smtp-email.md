@@ -201,7 +201,7 @@ Categories should only be used for broad topics. To attach unique identifiers, p
 Unique Arguments
 {% endanchor %}
 
-Use unique arguments to track your emails based on specific identifiers unique to individual messages. Unique arguments can be retrieved via SendGrid's [Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html) or your [email activity page]({{root_url}}/User_Guide/email_activity.html).
+Use unique arguments to track your emails based on specific identifiers unique to individual messages. Unique arguments can be retrieved via SendGrid's [Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html) or your [email activity page]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed.html).
 
 For more information, see our [unique arguments documentation]({{root_url}}/API_Reference/SMTP_API/unique_arguments.html).
 
@@ -209,8 +209,8 @@ For more information, see our [unique arguments documentation]({{root_url}}/API_
 Additional Resources
 {% endanchor h2 %}
 
-- [Getting Started with the UI]({{root_url}}/User_Guide/Marketing_Campaigns/getting_started.html)
-- [Getting Started with the API]({{root_url}}/API_Reference/api_v3.html)
+- [How to send email]({{root_url}}/help-support/getting-started/how-to-send-email.html)
+- [Getting started with the API]({{root_url}}/API_Reference/api_v3.html)
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
 - [Getting Started with the SMTP API]({{root_url}}/API_Reference/SMTP_API/getting_started_smtp.html)
 - [Integrating with SMTP]({{root_url}}/API_Reference/SMTP_API/integrating_with_the_smtp_api.html)

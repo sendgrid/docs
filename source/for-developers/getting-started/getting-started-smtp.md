@@ -12,7 +12,7 @@ navigation:
 
 <iframe src="https://player.vimeo.com/video/190122014" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-You can also send email with [the UI]({{root_url}}Help/Getting_Started/how_to_send_email.html) and with [the API]({{root_url}}/API_Reference/api_v3.html).
+You can also send email with [the UI]({{root_url}}help-support/getting-started/how-to-send-email.html) and with [the API]({{root_url}}/API_Reference/api_v3.html).
 
 - [What is SMTP?](#-What-is-smtp)
 - [Sending a test SMTP email with Telnet](#-Sending-a-test-SMTP-email-with-Telnet)
@@ -21,7 +21,7 @@ You can also send email with [the UI]({{root_url}}Help/Getting_Started/how_to_se
 What is SMTP?
 {% endanchor %}
 
-[SMTP]({{root_url}}/Glossary/smtp.html), or _simple mail transfer protocol_, is a quick and easy way to send email from one server to another. SendGrid provides an SMTP service that allows you to deliver your email via our server instead of your client or server.
+[SMTP]({{root_url}}/glossary/smtp.html), or _simple mail transfer protocol_, is a quick and easy way to send email from one server to another. SendGrid provides an SMTP service that allows you to deliver your email via our server instead of your client or server.
 
 SendGrid’s SMTP API allows developers to specify custom handling instructions for e-mail using an X-SMTPAPI header inserted into the message. The header is a JSON encoded list of instructions and options for that email.
 
@@ -74,8 +74,8 @@ Now that you've sent a test email, learn to [integrate your servers with our SMT
 Additional Resources
 {% endanchor h2 %}
 
-- [Getting Started with the UI]({{root_url}}Help/Getting_Started/how_to_send_email.html)
+- [Getting Started with the UI]({{root_url}}help-support/getting-started/how-to-send-email.html)
 - [Getting Started with the API]({{root_url}}/API_Reference/api_v3.html)
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
-- [Integrating with the SMTP API]({{root_url}}/API_Reference/SMTP_API/integrating_with_the_smtp_api.html)
-- [Building an SMTP Email]({{root_url}}/API_Reference/SMTP_API/building_an_smtp_email.html)
+- [Integrating with the SMTP API]({{root_url}}/for-developers/getting-started/integrating-with-the-smtp-api.html)
+- [Building an SMTP Email]({{root_url}}/for-developers/getting-started/building-an-smtp-email.html)

@@ -28,7 +28,7 @@ These instructions describe how to send your first email using cURL calls. This 
 Before you can start using the API, you need to do the following:
 
 1. Create a SendGrid [account](https://sendgrid.com/pricing/). 
-1. Create an [API Key]({{root_url}}/User_Guide/Settings/api_keys.html). 
+1. Create an [API Key]({{root_url}}/help-support/account-and-settings/api-keys.html). 
 1. Make sure you have [curl](https://curl.haxx.se/) installed on your machine. 
 
 {% info %}
@@ -47,7 +47,7 @@ Your API call must have the following components:
 
 * A Host. The host for Web API v3 requests is always https://sendgrid.com/v3/
 * An [Authorization Header](https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-authentication#authorization-header)
-* An [API Key]({{root_url}}/User_Guide/Settings/api_keys.html) within the Authorization Header
+* An [API Key]({{root_url}}/help-support/account-and-settings/api-keys.html) within the Authorization Header
 * A Request. When submitting data to a resource via POST or PUT, you must submit your payload in JSON.
  
 {% anchor h3 %}
@@ -72,7 +72,7 @@ curl --request POST \
 7. Check the inbox of the address you specified as the "to" email and see your message!
 
 {% info %}
-If you have not yet set up [Sender Authentication]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html) in your account, you may need to check your spam folder for the email you just sent. 
+If you have not yet set up [Sender Authentication]({{root_url}}/help-support/getting-started/how-to-set-up-domain-authentication.html) in your account, you may need to check your spam folder for the email you just sent. 
 {% endinfo %}
 
 {% anchor h3 %}
@@ -88,5 +88,5 @@ Next Steps
 For more information on SendGrid and where you can go from here, check out these pages:
 
 - [API Reference]({{root_url}}/API_Reference/api_v3.html)
-- [Sender Authentication]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html)
-- [How to Send Email]({{root_url}}/User_Guide/Marketing_Campaigns/getting_started.html)
+- [Sender Authentication]({{root_url}}/help-support/getting-started/how-to-set-up-domain-authentication.html)
+- [How to Send Email]({{root_url}}/help-support/getting-started/how-to-send-email.html)

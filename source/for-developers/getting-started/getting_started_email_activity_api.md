@@ -306,5 +306,4 @@ Additional Resources
 {% endanchor h2 %}
 
 - [Email Activity Feed API Reference](https://sendgrid.api-docs.io/v3.0/email-activity/filter-all-messages)
-- [Legacy Email Activity Feed UI](https://sendgrid.com/docs/User_Guide/email_activity.html)
-- [Email Activity Feed UI](https://sendgrid.com/docs/User_Guide/email_activity_feed.html)
+- [Email Activity Feed UI](https://sendgrid.com/docs/help-support/analytics-and-reporting/email-activity-feed.html)
