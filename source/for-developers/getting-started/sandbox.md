@@ -15,7 +15,7 @@ SendGrid offers a [free trial](https://sendgrid.com/transactional-email/pricing)
 
 We have a [sink email address]({{root_url}}/Classroom/Troubleshooting/Delivery_Issues/safely_test_your_sending_speed.html) that can help you test message throughput for your SMTP integration. 
 
-If you are looking to test your API sending integration, you can enable the sandbox_mode in the [mail_settings parameters of our Mail Send API](https://sendgrid.com/docs/Classroom/Send/v3_Mail_Send/sandbox_mode.html). **Sandbox Mode allows you to validate each included parameter and the structure of your JSON payload - all without sending a message.**
+If you are looking to test your API sending integration, you can enable the sandbox_mode in the [mail_settings parameters of our Mail Send API](https://sendgrid.com/docs/help-support/getting-started/sandbox-mode.html). **Sandbox Mode allows you to validate each included parameter and the structure of your JSON payload - all without sending a message.**
 
 {% info %}
 Free Trial users will be limited to 100 emails per day until they have verified their account. After account verification, they may send up to a total of 40,000 emails for the remainder of the 30 day period.

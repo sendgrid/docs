@@ -62,9 +62,9 @@ Configuring Your Credentials
 
 To enable the Subscription Widget, you’ll first need an API key to authenticate your access to SendGrid services. If you’ve already set up the General settings for the plugin, you may choose to use the same API key by checking the “Use same authentication as transactional” option.
 
-Alternatively, you may create a separate API key specifically for uploading contacts from the Subscription Widget. We recommend creating this API Key dedicated to your WordPress plugin with only the [minimum permissions]({{root_url}}/Integrate/Tutorials/WordPress/wordpress_integration_faq.html#-What-permissions-should-my-API-keys-have) necessary to perform the plugin's tasks. This is a security best practice that prevents someone who might obtain your API Key from accessing all areas of your account. For a more detailed discussion of the benefits of API Key permissions, please visit our [Classroom]({{root_url}}/Classroom/Basics/API/api_key_permissions.html).
+Alternatively, you may create a separate API key specifically for uploading contacts from the Subscription Widget. We recommend creating this API Key dedicated to your WordPress plugin with only the [minimum permissions]({{root_url}}/help-support/sending-email/wordpress-faq.html) necessary to perform the plugin's tasks. This is a security best practice that prevents someone who might obtain your API Key from accessing all areas of your account. For a more detailed discussion of the benefits of API Key permissions, please visit our [Classroom]({{root_url}}/Classroom/Basics/API/api_key_permissions.html).
 
-To create a dedicated API Key for your plugin, log into your SendGrid account, navigate to **Settings** in the lefthand sidebar, and click on **API Keys**. You can learn more about API Keys and how to create them [here]({{root_url}}/User_Guide/Settings/api_keys.html).
+To create a dedicated API Key for your plugin, log into your SendGrid account, navigate to **Settings** in the lefthand sidebar, and click on **API Keys**. You can learn more about API Keys and how to create them [here]({{root_url}}/help-support/account-and-settings/api-keys.html).
 
 ![]({{root_url}}/images/wp_subscription_widget_1.png)
 

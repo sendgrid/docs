@@ -125,6 +125,6 @@ For additional resources on the v3 Mail Send endpoint, please first visit our ot
 * [SandBox Mode]({{root_url}}/Classroom/Send/v3_Mail_Send/sandbox_mode.html)
 * [Errors]({{root_url}}/API_Reference/Web_API_v3/Mail/errors.html)
 * [Personalizations]({{root_url}}/Classroom/Send/v3_Mail_Send/personalizations.html)
-* [cURL Examples for Common Use Cases]({{root_url}}/Classroom/Send/v3_Mail_Send/curl_examples.html)
+* [cURL Examples for Common Use Cases]({{root_url}}/for-developers/getting-started/curl-examples.html)
 
 You may also visit our [Support page](https://support.sendgrid.com/hc/en-us).
