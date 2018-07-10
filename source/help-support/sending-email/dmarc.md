@@ -1,13 +1,11 @@
 ---
 seo:
   title: Everything about DMARC
-  canonical: https://sendgrid.com/blog/dmarc-domain-based-message-authentication-reporting-conformance/
   description: Everything about DMARC
   keywords: security, secure, dmarc, spf, dkim, white, label, whitelabel, wizard, rua, reject, quarantine
 title: Everything about DMARC
 weight: 0
 layout: page
-zendesk_id: 200182958
 navigation:
   show: true
 ---
