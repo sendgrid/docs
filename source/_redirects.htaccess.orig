@@ -449,23 +449,23 @@ Redirect 301 /Classroom/Deliver/Sender_Authentication/why_is_sendgrid_net_greyli
 #
 #######
 
-Redirect 301 /Classroom/Send/how_can_i_schedule_emails_to_send_at_specific_times.html https://sendgrid.com/docs/Classroom/Send/When_Emails_Are_Sent/how_can_i_schedule_emails_to_send_at_specific_times.html
+Redirect 301 /Classroom/Send/how_can_i_schedule_emails_to_send_at_specific_times.html https://sendgrid.com/docs/for-developers/sending-email/scheduling-email.html
 Redirect 301 /Classroom/Send/seeing_a_delay_with_your_first_few_sends.html https://sendgrid.com/docs/Classroom/Send/When_Emails_Are_Sent/seeing_a_delay_with_your_first_few_sends.html
-Redirect 301 /Classroom/Send/can_i_stop_a_send_in_progress.html https://sendgrid.com/docs/Classroom/Send/When_Emails_Are_Sent/can_i_stop_a_send_in_progress.html
-Redirect 301 /Classroom/Send/api_keys.html https://sendgrid.com/docs/Classroom/Send/How_Emails_Are_Sent/api_keys.html
-Redirect 301 /Classroom/Send/can_i_send_from_multiple_domains.html https://sendgrid.com/docs/Classroom/Send/How_Emails_Are_Sent/can_i_send_from_multiple_domains.html
-Redirect 301 /Classroom/Send/can_i_send_from_multiple_from_addresses.html https://sendgrid.com/docs/Classroom/Send/How_Emails_Are_Sent/can_i_send_from_multiple_from_addresses.html
-Redirect 301 /Classroom/Send/email_to_sms.html https://sendgrid.com/docs/Classroom/Send/How_Emails_Are_Sent/email_to_sms.html
-Redirect 301 /Classroom/Send/how_do_i_send_mail_through_subuser_accounts.html https://sendgrid.com/docs/Classroom/Send/How_Emails_Are_Sent/how_do_i_send_mail_through_subuser_accounts.html
-Redirect 301 /Classroom/Send/sendmail_relay_all_local_mail_through_sendgrid.html https://sendgrid.com/docs/Classroom/Send/How_Emails_Are_Sent/sendmail_relay_all_local_mail_through_sendgrid.html
-Redirect 301 /Classroom/Send/sending.html https://sendgrid.com/docs/Classroom/Send/How_Emails_Are_Sent/sending.html
+Redirect 301 /Classroom/Send/can_i_stop_a_send_in_progress.html https://sendgrid.com/docs/for-developers/sending-email/stopping-an-in-progress-send.html
+Redirect 301 /Classroom/Send/api_keys.html https://sendgrid.com/docs/help-support/account-and-settings/api-keys.html
+Redirect 301 /Classroom/Send/can_i_send_from_multiple_domains.html https://sendgrid.com/docs/help-support/account-and-settings/subusers.html
+Redirect 301 /Classroom/Send/can_i_send_from_multiple_from_addresses.html https://sendgrid.com/help-support/sending-email/senders.html
+Redirect 301 /Classroom/Send/email_to_sms.html https://sendgrid.com/help-support/sending-email/email-to-sms.html
+Redirect 301 /Classroom/Send/how_do_i_send_mail_through_subuser_accounts.html https://sendgrid.com/docs/help-support/account-and-settings/subusers.html
+Redirect 301 /Classroom/Send/sendmail_relay_all_local_mail_through_sendgrid.html https://sendgrid.com/docs/help-support/sending-email/sendmail.html
+Redirect 301 /Classroom/Send/sending.html https://sendgrid.com/docs/help-support/getting-started/how-to-send-email.html
 Redirect 301 /Classroom/Send/can_i_resend_messages_that_were_dropped.html https://sendgrid.com/docs/Classroom/Send/What_You_Can_Send/can_i_resend_messages_that_were_dropped.html
-Redirect 301 /Classroom/Send/can_i_send_adult_content_in_my_emails.html https://sendgrid.com/docs/Classroom/Send/What_You_Can_Send/can_i_send_adult_content_in_my_emails.html
-Redirect 301 /Classroom/Send/welcome_emails_making_a_good_first_impression.html https://sendgrid.com/docs/Classroom/Send/What_You_Can_Send/welcome_emails_making_a_good_first_impression.html
-Redirect 301 /Classroom/Send/can_i_send_to_purchased_lists.html https://sendgrid.com/docs/Classroom/Send/Who_You_Can_Send_To/can_i_send_to_purchased_lists.html
-Redirect 301 /Classroom/Send/resubscription_of_users.html https://sendgrid.com/docs/Classroom/Send/Who_You_Can_Send_To/resubscription_of_users.html
-Redirect 301 /Classroom/Send/segmenting_traffic.html https://sendgrid.com/docs/Classroom/Send/Who_You_Can_Send_To/segmenting_traffic.html
-Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/resubscription_of_users.html https://sendgrid.com/docs/Classroom/Send/Who_You_Can_Send_To/resubscription_of_users.html
+Redirect 301 /Classroom/Send/can_i_send_adult_content_in_my_emails.html https://sendgrid.com/docs/help-support/getting-started/can-i-send-adult-content-in-my-emails.html
+Redirect 301 /Classroom/Send/welcome_emails_making_a_good_first_impression.html https://sendgrid.com/blog/how-to-send-the-perfect-welcome-email/
+Redirect 301 /Classroom/Send/can_i_send_to_purchased_lists.html https://sendgrid.com/docs/help-support/managing-contacts/building-your-contact-list.html
+Redirect 301 /Classroom/Send/resubscription_of_users.html https://sendgrid.com/docs/help-support/sending-email/recipient-subscription-preferences.html
+Redirect 301 /Classroom/Send/segmenting_traffic.html https://sendgrid.com/docs/help-support/managing-contacts/segmenting-your-contacts.html
+Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/resubscription_of_users.html https://sendgrid.com/docs/help-support/sending-email/recipient-subscription-preferences.html
 Redirect 301 /Classroom/Send/How_Emails_Are_Sent/can_i_send_from_multiple_domains.html https://sendgrid.com/docs/help-support/account-and-settings/subusers.html
 Redirect 301 /Classroom/Send/How_Emails_Are_Sent/can_i_send_from_multiple_from_addresses.html https://sendgrid.com/help-support/sending-email/senders.html
 Redirect 301 /Classroom/Send/How_Emails_Are_Sent/email_to_sms.html https://sendgrid.com/help-support/sending-email/email-to-sms.html
@@ -476,7 +476,7 @@ Redirect 301 /Classroom/Send/v3_Mail_Send/index.html https://sendgrid.api-docs.i
 Redirect 301 /Classroom/Send/v3_Mail_Send/how_to_migrate_from_v2_to_v3_mail_send.html https://sendgrid.com/docs/for-developers/getting-started/migrating-from-v2-to-v3-mail-send.html
 Redirect 301 /Classroom/Send/v3_Mail_Send/personalizations.html https://sendgrid.com/docs/for-developers/sending-email/personalizations.html
 Redirect 301 /Classroom/Send/v3_Mail_Send/sandbox_mode.html https://sendgrid.com/docs/for-developers/getting-started/sandbox-mode.html
-Redirect 301 /Classroom/Send/v3_Mail_Send/v3_mail_send_faq.html https:://sendgrid.com/docs/for-developers/getting-started/v3-mail-send-faq.html
+Redirect 301 /Classroom/Send/v3_Mail_Send/v3_mail_send_faq.html https://sendgrid.com/docs/for-developers/getting-started/v3-mail-send-faq.html
 Redirect 301 /Classroom/Send/What_You_Can_Send/can_i_send_adult_content_in_my_emails.html https://sendgrid.com/docs/help-support/getting-started/can-i-send-adult-content-in-my-emails.html
 Redirect 301 /Classroom/Send/What_You_Can_Send/welcome_emails_making_a_good_first_impression.html https://sendgrid.com/blog/how-to-send-the-perfect-welcome-email/
 Redirect 301 /Classroom/Send/When_Emails_Are_Sent/can_i_stop_a_scheduled_send.html https://sendgrid.com/docs/for-developers/sending-email/stopping-a-scheduled-send.html
