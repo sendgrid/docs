@@ -62,7 +62,7 @@ Configuring Your Credentials
 
 To enable the Subscription Widget, you’ll first need an API key to authenticate your access to SendGrid services. If you’ve already set up the General settings for the plugin, you may choose to use the same API key by checking the “Use same authentication as transactional” option.
 
-Alternatively, you may create a separate API key specifically for uploading contacts from the Subscription Widget. We recommend creating this API Key dedicated to your WordPress plugin with only the [minimum permissions]({{root_url}}/help-support/sending-email/wordpress-faq.html) necessary to perform the plugin's tasks. This is a security best practice that prevents someone who might obtain your API Key from accessing all areas of your account. For a more detailed discussion of the benefits of API Key permissions, please visit our [Classroom]({{root_url}}/Classroom/Basics/API/api_key_permissions.html).
+Alternatively, you may create a separate API key specifically for uploading contacts from the Subscription Widget. We recommend creating this API Key dedicated to your WordPress plugin with only the [minimum permissions]({{root_url}}/help-support/sending-email/wordpress-faq.html) necessary to perform the plugin's tasks. This is a security best practice that prevents someone who might obtain your API Key from accessing all areas of your account. For a more detailed discussion of the benefits of API Key permissions, please see our documentation on [API Keys]({{root_url}}/help-support/account-and-settings/api-keys.html).
 
 To create a dedicated API Key for your plugin, log into your SendGrid account, navigate to **Settings** in the lefthand sidebar, and click on **API Keys**. You can learn more about API Keys and how to create them [here]({{root_url}}/help-support/account-and-settings/api-keys.html).
 
@@ -76,7 +76,7 @@ After you set up a valid API key you must choose a specific list where your new 
 
 ![]({{root_url}}/images/wp_subscription_widget_2.png)
 
-If you don't have a list set up for your signups from the Subscription Widget, open your SendGrid Dashboard, click on **Marketing Campaigns** in the sidebar, then select **Contacts** and [create a new list]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html).
+If you don't have a list set up for your signups from the Subscription Widget, open your SendGrid Dashboard, click on **Marketing Campaigns** in the sidebar, then select **Contacts** and [create a new list]({{root_url}}/help-support/managing-contacts/segmenting-your-contacts.html).
 
 ![]({{root_url}}/images/wp_subscription_widget_2_1.png)
 
@@ -194,7 +194,7 @@ You can use an API key to authenticate when integrating with the SendGrid WordPr
 
 If you are using your login credentials, both your username and password will need to be set in order to retrieve credentials from variables and not from the database.
 
-You must set the Mail Send permissions to FULL ACCESS, Stats to READ ACCESS and Template Engine to READ or FULL ACCESS when creating the API Key, so you can send emails and see statistics on wordpress. For more information about API Key Permissions, click [here]({{root_url}}/Classroom/Basics/API/api_key_permissions.html).
+You must set the Mail Send permissions to FULL ACCESS, Stats to READ ACCESS and Template Engine to READ or FULL ACCESS when creating the API Key, so you can send emails and see statistics on wordpress. For more information about API Key Permissions, click [here]({{root_url}}/help-support/account-and-settings/api-keys.html).
 
 {% anchor h4 %}
 Credentials Settings for the SendGrid WordPress Subscription Widget
@@ -230,7 +230,7 @@ Email Settings for the SendGrid WordPress Subscription Widget
 *****
 - **Categories**: `define('SENDGRID_CATEGORIES', 'category_1,category_2');`
 
-  Any [categories]({{root_url}}/User_Guide/Statistics/categories.html) that you would like to tag your WordPress emails with.
+  Any [categories]({{root_url}}/help-support/analytics-and-reporting/categories.html) that you would like to tag your WordPress emails with.
 *****
 - **Template**: `define('SENDGRID_TEMPLATE', 'templateID');`
 
@@ -304,5 +304,5 @@ Widget Settings
 Related Content
 {% endanchor %}
 
-* [SendGrid's WordPress Plugin]({{root_url}}/Integrate/Tutorials/WordPress/sendgrid_wordpress_plugin.html)
-* [SendGrid's WordPress Integration FAQ]({{root_url}}/Integrate/Tutorials/WordPress/wordpress_integration_faq.html)
+* [SendGrid's WordPress Plugin]({{root_url}}/help-support/sending-email/wordpress-plugin.html)
+* [SendGrid's WordPress Integration FAQ]({{root_url}}/help-support/sending-email/wordpress-faq.html)

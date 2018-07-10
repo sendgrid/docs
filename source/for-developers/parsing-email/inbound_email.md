@@ -6,10 +6,6 @@ navigation:
   show: true
 ---
 
-{% info %}
-Available to all accounts except [Legacy Lite]({{root_url}}/Classroom/Basics/Billing/legacy_lite_plan.html).
-{% endinfo %}
-
 SendGrid can parse the attachments and contents of incoming emails. Application examples include receiving uploads and posting blog articles via email.
 
 The Parse API will POST the parsed email to a URL that you specify. If a POST is unsuccessful, SendGrid automatically queues and retries any POSTs that respond with a 4XX or 5XX status. This prevents data loss for customers who have misconfigured their website or POST URL.
@@ -39,7 +35,7 @@ You must ensure that the subdomain-domain combination for your receiving domain 
 Only whitelabeled domains may be used when configuring Inbound Parse!
 {% endwarning %}
 
-See [Setting Up The Inbound Parse Webhook]({{root_url}}/Classroom/Basics/Inbound_Parse_Webhook/setting_up_the_inbound_parse_webhook.html) for step-by-step instructions.
+See [Setting Up The Inbound Parse Webhook]({{root_url}}/help-support/parsing-email/setting-up-the-inbound-parse-webhook.html) for step-by-step instructions.
 
 {% info %}
 The total message size limit, including the message itself and any number of attachments, is 20MB. Be aware that other mail handlers will have their own limitations, and some ISPs and companies may either dramatically limit the size and/or type of attachments, or even block them altogether.

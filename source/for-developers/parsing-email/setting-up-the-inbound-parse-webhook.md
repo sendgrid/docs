@@ -19,7 +19,7 @@ XML is only available in v2.
 What your application does with this parsed data is up to you. For some ideas of what the Inbound Parse Webhook can do, check out this [blog post](https://sendgrid.com/blog/parse-api-oh-what-you-can-do/).
 
 {% info %}
-Check out some pre-made integrations for the SendGrid Parse Webhook in the [Library Index]({{root_url}}/Integrate/libraries.html#-Webhook-Libraries).
+Check out some pre-made integrations for the SendGrid Parse Webhook in the [Library Index]({{root_url}}/for-developers/getting-started/libraries.html#-Webhook-Libraries).
 {% endinfo %}
 
 {% anchor h2 %}
