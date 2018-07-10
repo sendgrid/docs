@@ -307,7 +307,7 @@ Redirect 301 /Classroom/Basics/Email_Infrastructure/does_sendgrid_support_end_to
 Redirect 301 /Classroom/Basics/API/cors.html https://sendgrid.com/docs/for-developers/getting-started/cors.html
 Redirect 301 /Classroom/Basics/API/does_sendgrid_offer_a_sandbox_or_test_environment.html https://sendgrid.com/docs/for-developers/getting-started/sandbox.html
 Redirect 301 /Classroom/Basics/API/how_do_i_integrate_with_sendgrid.html https://sendgrid.com/docs/for-developers/getting-started/getting-started-api.html
-Redirect 301 /Classroom/Basics/API/how_to_create_a_subuser_with_the_api.html https://sendgrid.com/docs/for-developers/getting-started/how_to_create_a_subuser_with_the_api.html
+Redirect 301 /Classroom/Basics/API/how_to_create_a_subuser_with_the_api.html https://sendgrid.com/docs/for-developers/sending-email/how-to-create-a-subuser-with-the-api.html
 Redirect 301 /Classroom/Basics/API/what_are_the_sendgrid_apis_and_what_do_they_do.html https://sendgrid.com/docs/for-developers/getting-started/getting-started-api.html
 Redirect 301 /Classroom/Basics/API/what_is_my_api_key.html https://sendgrid.com/docs/help-support/account-and-settings/api-keys.html
 Redirect 301 /Classroom/index.html https://sendgrid.com/docs/
@@ -746,7 +746,7 @@ Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/advanced_supp
 Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/defining_asm_groups.html https://sendgrid.com/docs/help-support/sending-email/unsubscribe-groups.html#-Add-A-Suppression-Group
 Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/index.html https://sendgrid.com/docs/help-support/sending-email/index-suppressions.html
 Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/recipient_subscription_preferences.html https://sendgrid.com/docs/help-support/sending-email/recipient-subscription-preferences.html
-Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/resubscription_of_users.html https://sendgrid.com/docs/Classroom/Send/resubscription_of_users.html
+Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/resubscription_of_users.html https://sendgrid.com/docs/help-support/sending-email/recipient-subscription-preferences.html
 Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/suppressions_vs_unsubscribes.html https://sendgrid.com/docs/help-support/sending-email/index-suppressions.html
 Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/using_suppression_groups.html  https://sendgrid.com/docs/help-support/sending-email/unsubscribe-groups.html
 Redirect 301 /User_Guide/Email_Deliverability/Undelivered_Email/bounce_forwarding.html https://sendgrid.com/docs/help-support/account-and-settings/mail.html#-Forward-Bounce
@@ -754,7 +754,7 @@ Redirect 301 /User_Guide/Email_Deliverability/Undelivered_Email/drops.html https
 Redirect 301 /User_Guide/Email_Deliverability/Undelivered_Email/index.html https://sendgrid.com/docs/glossary/undelivered-email.html
 Redirect 301 /User_Guide/Email_Deliverability/Undelivered_Email/spam.html https://sendgrid.com/docs/glossary/spam.html
 Redirect 301 /User_Guide/Email_Settings/categories.html https://sendgrid.com/docs/glossary/categories.html
-Redirect 301 /User_Guide/managing_unsubscribes.html https://sendgrid.com/docs/help-support/sending-email/index_suppressions.html
+Redirect 301 /User_Guide/managing_unsubscribes.html https://sendgrid.com/docs/help-support/sending-email/index-suppressions.html
 Redirect 301 /User_Guide/Marketing_Campaigns/api.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html
 Redirect 301 /User_Guide/Marketing_Campaigns/api_campaigns.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html
 Redirect 301 /User_Guide/Marketing_Campaigns/faq.html https://support.sendgrid.com/docs/help-support/getting-started/how-to-send-email.html
@@ -767,7 +767,7 @@ Redirect 301 /User_Guide/Marketing_Emails/sender_address.html https://sendgrid.c
 Redirect 301 /User_Guide/Marketing_Emails/tags.html https://sendgrid.com/docs/help-support/sending-email/editor.html
 Redirect 301 /User_Guide/Marketing_Emails/unsubscribes.html https://sendgrid.com/docs/help-support/sending-email/index-suppressions.html
 #forced a redirect file at /User_Guide/multiple_credentials.html - the following redirect wouldn't take
-Redirect 301 /User_Guide/multiple_credentials.html https://sendgrid.com/docs/User_Guide/Settings/credentials.html
+Redirect 301 /User_Guide/multiple_credentials.html https://sendgrid.com/docs/help-support/account-and-settings/teammates.html
 Redirect 301 /User_Guide/peer_invitations.html https://sendgrid.com/docs/glossary/peer-invitations.html
 Redirect 301 /User_Guide/reconfirmation.html https://sendgrid.com/docs/glossary/reconfirmation.html
 Redirect 301 /User_Guide/sending_practices.html https://sendgrid.com/docs/glossary/rate-limiting.html
@@ -1142,7 +1142,7 @@ Redirect 301 /User_Guide/email_activity_beta.html https://sendgrid.com/docs/help
 
 Redirect 301 /API_Reference/Webhooks/event.html https://sendgrid.com/docs/for-developers/tracking-events/event.html
 Redirect 301 /API_Reference/Webhooks/event_deprecated.html https://sendgrid.com/docs/for-developers/tracking-events/event.html
-Redirect 301 /API_Reference/Webhooks/debug.html https://sendgrid.com/docs/API_Reference/Event_Webhook/troubleshooting.html
+Redirect 301 /API_Reference/Webhooks/debug.html https://sendgrid.com/docs/for-developers/tracking-events/troubleshooting.html
 Redirect 301 /API_Reference/Webhooks/index.html https://sendgrid.com/docs/for-developers/getting-started/getting-started-event-webhook.html
 Redirect 301 /API_Reference/Webhooks/inbound_email.html https://sendgrid.com/docs/for-developers/parsing-email/inbound-email.html
 Redirect 301 /Classroom/Basics/API/why_event_api.html https://sendgrid.com/docs/for-developers/getting-started/getting-started-event-webhook.html
