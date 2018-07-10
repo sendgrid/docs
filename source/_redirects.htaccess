@@ -19,7 +19,7 @@ Redirect 301 /API_Reference/Marketing_Emails_API/schedule.html https://sendgrid.
 Redirect 301 /API_Reference/Marketing_Emails_API/sender_address.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/sender_address.html
 Redirect 301 /API_Reference/Marketing_Emails_API/variations.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/variations.html
 Redirect 301 /API_Reference/Customer_Subuser_API/account_limits.html https://sendgrid.com/docs/API_Reference/Web_API/Customer_Subuser_API/account_limits.html
-Redirect 301 /API_Reference/Customer_Subuser_API/apps.html https://sendgrid.com/docs/API_Reference/Web_API/Customer_Subuser_API/apps.html
+Redirect 301 /API_Reference/Customer_Subuser_API/apps.html https://sendgrid.com/docs/for-developers/sending-email/smtp-filters.html
 Redirect 301 /API_Reference/Customer_Subuser_API/authenticate_a_subuser.html https://sendgrid.com/docs/API_Reference/Web_API/Customer_Subuser_API/authenticate_a_subuser.html
 Redirect 301 /API_Reference/Customer_Subuser_API/index.html https://sendgrid.com/docs/API_Reference/Web_API/Customer_Subuser_API/index.html
 Redirect 301 /API_Reference/Customer_Subuser_API/invalid_emails.html https://sendgrid.com/docs/API_Reference/Web_API/Customer_Subuser_API/invalid_emails.html
@@ -39,7 +39,7 @@ Redirect 301 /API_Reference/Customer_Subuser_API/v1_(deprecated)/subuser_spam_re
 Redirect 301 /API_Reference/Customer_Subuser_API/v1_(deprecated)/subuser_unsubscribes.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Customer_Subuser_API/v1_(deprecated)/subuser_unsubscribes.html
 Redirect 301 /API_Reference/Customer_Subuser_API/whitelabel.html https://sendgrid.com/docs/API_Reference/Web_API/Customer_Subuser_API/whitelabel.html
 Redirect 301 /API_Reference/Reseller_API/account_overview.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/account_overview.html
-Redirect 301 /API_Reference/Reseller_API/apps.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/apps.html
+Redirect 301 /API_Reference/Reseller_API/apps.html https://sendgrid.com/docs/for-developers/sending-email/smtp-filters.html
 Redirect 301 /API_Reference/Reseller_API/authenticate_a_customer_subuser.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/authenticate_a_customer_subuser.html
 Redirect 301 /API_Reference/Reseller_API/authenticate_a_customer.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/authenticate_a_customer.html
 Redirect 301 /API_Reference/Reseller_API/automatic_login.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/index.html
@@ -87,7 +87,7 @@ Redirect 301 /API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_
 Redirect 301 /API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_unsubscribes.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_unsubscribes.html
 Redirect 301 /API_Reference/Reseller_API/Reseller_Customer_Subuser_API/index.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/index.html
 Redirect 301 /API_Reference/Reseller_API/v1_(deprecated)/account_overview.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/account_overview.html
-Redirect 301 /API_Reference/Reseller_API/v1_(deprecated)/apps.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/apps.html
+Redirect 301 /API_Reference/Reseller_API/v1_(deprecated)/apps.html https://sendgrid.com/docs/for-developers/sending-email/smtp-filters.html
 Redirect 301 /API_Reference/Reseller_API/v1_(deprecated)/authenticate_a_customer_subuser.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/authenticate_a_customer_subuser.html
 Redirect 301 /API_Reference/Reseller_API/v1_(deprecated)/authenticate_a_customer.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/authenticate_a_customer.html
 Redirect 301 /API_Reference/Reseller_API/v1_(deprecated)/automatic_login.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/index.html
@@ -704,7 +704,7 @@ Redirect 301 /User_Guide/Account/alert_settings.html https://sendgrid.com/docs/h
 Redirect 301 /User_Guide/advanced_suppression_manager.html https://sendgrid.com/docs/help-support/sending-email/unsubscribe-groups.html
 Redirect 301 /User_Guide/Apps/address_whitelisting.html https://sendgrid.com/docs/help-support/account-and-settings/mail.html
 Redirect 301 /User_Guide/Apps/bcc.html https://sendgrid.com/docs/help-support/account-and-settings/mail.html#-BCC
-Redirect 301 /User_Guide/Apps/bypass_list_management.html https://sendgrid.com/docs/API_Reference/SMTP_API/apps.html#bypass_list_management
+Redirect 301 /User_Guide/Apps/bypass_list_management.html https://sendgrid.com/docs/for-developers/sending-email/smtp-filters.html#bypass_list_management
 Redirect 301 /User_Guide/Apps/click_tracking.html https://sendgrid.com/docs/help-support/account-and-settings/tracking.html#-Click-tracking
 Redirect 301 /User_Guide/Apps/dkim.html https://sendgrid.com/docs/help-support/getting-started/how-to-set-up-domain-authentication.html
 Redirect 301 /User_Guide/Apps/domain_keys.html https://sendgrid.com/docs/help-support/getting-started/how-to-set-up-domain-whitelabel.html
