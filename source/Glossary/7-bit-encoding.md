@@ -17,6 +17,6 @@ The reason for the characters to be encoded to 7-bits, is because early computer
 
 In this encoding we get 7 digit representations in 0s and 1s for each of the English letters we are trying to transmit.
 
-SendGrid requires 7 bit encoding in our [SMTPAPI categories header]({{root_url}}/API_Reference/SMTP_API/categories.html).
+SendGrid requires 7 bit encoding in our [SMTPAPI categories header]({{root_url}}/for-developers/sending-email/categories.html)).
 
 For more information, visit Wikipedia for the entire [history of ASCII](http://en.wikipedia.org/wiki/ASCII).

@@ -10,10 +10,10 @@ navigation:
   show: true
 ---
 
-Section tags allow you to substitute in content in an SMTP message. Section tags are similar to [substitution tags]({{root_url}}/API_Reference/SMTP_API/substitution_tags.html) but are specific to the message, and not the recipient. You have to have a substitution tag value for **each** recipient, but you can have any number of section tags. Section tags can then contain Substitution tags for the recipient if needed. Section tags have to be contained within a Substitution tag since SendGrid needs to know which data to populate for the recipient.
+Section tags allow you to substitute in content in an SMTP message. Section tags are similar to [substitution tags]({{root_url}}/for-developers/sending-email/substitution-tags.html) but are specific to the message, and not the recipient. You have to have a substitution tag value for **each** recipient, but you can have any number of section tags. Section tags can then contain Substitution tags for the recipient if needed. Section tags have to be contained within a Substitution tag since SendGrid needs to know which data to populate for the recipient.
 See the [Section Tag Example Walkthrough](#-Section-Tag-Example-Walkthrough) below.
 
-It's possible & acceptable to use only Substitution tags. However, that method is not [DRY](http://en.wikipedia.org/wiki/Don%27t_repeat_yourself), and you may come against [message size limitations]({{root_url}}/Classroom/Build/Add_Content/whats_the_recommended_message_size_limit.html).
+It's possible & acceptable to use only Substitution tags. However, that method is not [DRY](http://en.wikipedia.org/wiki/Don%27t_repeat_yourself), and you may come against [message size limitations]({{root_url}}/help-support/getting-started/how-to-send-email.html).
 
 * * * * *
 
@@ -156,8 +156,8 @@ Casey receives:
 Additional Resources
 {% endanchor h2 %}
 
-- [Substitution Tags]({{root_url}}/API_Reference/SMTP_API/substitution_tags.html)
+- [Substitution Tags]({{root_url}}/for-developers/sending-email/substitution-tags.html)
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
-- [Getting Started with the SMTP API]({{root_url}}/API_Reference/SMTP_API/getting_started_smtp.html)
-- [Integrating with SMTP]({{root_url}}/API_Reference/SMTP_API/integrating_with_the_smtp_api.html)
-- [Building an SMTP Email]({{root_url}}/API_Reference/SMTP_API/building_an_smtp_email.html)
+- [Getting Started with the SMTP API]({{root_url}}/for-developers/getting-started/getting-started-smtp.html)
+- [Integrating with SMTP]({{root_url}}/for-developers/getting-started/integrating-with-the-smtp-api.html)
+- [Building an SMTP Email]({{root_url}}/for-developers/getting-started/building-an-smtp-email.html)

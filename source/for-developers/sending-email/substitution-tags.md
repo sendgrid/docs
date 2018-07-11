@@ -135,14 +135,14 @@ Email HTML content:
 {% anchor h2 %}
 SendGrid Defined Substitution Tags
 {% endanchor %}
-While the tags above are tags that you define at the time of your send in the SMTPAPI headers, SendGrid also offers [Unsubscribe Groups tags]({{root_url}}/User_Guide/Transactional_Templates/create_and_edit_transactional_templates.html#-Adding-unsubscribe-links-to-a-template) that have been pre-defined for you. You can use these tags within the content of your email, and you do not have to and should not, define them.
+While the tags above are tags that you define at the time of your send in the SMTPAPI headers, SendGrid also offers [Unsubscribe Groups tags]({{root_url}}/help-support/sending-email/create-and-edit-transactional-templates.html#-Adding-unsubscribe-links-to-a-template) that have been pre-defined for you. You can use these tags within the content of your email, and you do not have to and should not, define them.
 
 {% anchor h2 %}
 Additional Resources
 {% endanchor h2 %}
 
-- [Section Tags]({{root_url}}/API_Reference/SMTP_API/section_tags.html)
+- [Section Tags]({{root_url}}/for-developers/sending-email/section-tags.html)
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
-- [Getting Started with the SMTP API]({{root_url}}/API_Reference/SMTP_API/getting_started_smtp.html)
-- [Integrating with SMTP]({{root_url}}/API_Reference/SMTP_API/integrating_with_the_smtp_api.html)
-- [Building an SMTP Email]({{root_url}}/API_Reference/SMTP_API/building_an_smtp_email.html)
+- [Getting Started with the SMTP API]({{root_url}}/for-developers/getting-started/getting-started-smtp.html)
+- [Integrating with SMTP]({{root_url}}/for-developers/getting-started/integrating-with-the-smtp-api.html)
+- [Building an SMTP Email]({{root_url}}/for-developers/getting-started/building-an-smtp-email.html)

@@ -28,7 +28,7 @@ In order to set Email Marketer's outbound mail server to point to SendGrid, clic
 - **SMTP Hostname** : smtp.sendgrid.net
 - **SMTP Username** : [your SendGrid account's username]
 - **SMTP Password** : [your SendGrid account's password]
-- **SMTP Port** : [the port of your choosing. For more information, see [How to Send an SMTP Email](https://sendgrid.com/docs/API_Reference/SMTP_API/getting_started_smtp.html)]
+- **SMTP Port** : [the port of your choosing. For more information, see [How to Send an SMTP Email]({{root_url}}/for-developers/getting-started/getting-started-smtp.html)]
 
 Once these settings changes have been made within the Email Settings page within your Email Marketer account, all mail from the application will be sent to SendGrid so we can send it to the end recipient. Simple as that.
 

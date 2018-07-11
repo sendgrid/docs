@@ -9,7 +9,7 @@ layout: page
 navigation:
   show: true
 ---
-Now that you've sent a [sent a test SMTP email with Telnet]({{root_url}}/API_Reference/SMTP_API/getting_started_smtp.html), and [integrated with SendGrid]({{root_url}}/API_Reference/SMTP_API/integrating_with_the_smtp_api.html), it's time to build content.
+Now that you've sent a [sent a test SMTP email with Telnet]({{root_url}}/for-developers/getting-started/getting-started-smtp.html), and [integrated with SendGrid]({{root_url}}/for-developers/getting-started/integrating-with-the-smtp-api.html), it's time to build content.
 
 - [Getting started building](#-Getting-started-building)
    - [Limitations](#-Limitations)
@@ -117,7 +117,7 @@ Schedule your email send time using the `send_at` parameter within your X-SMTPAP
 }
 {% endcodeblock %}
 
-For more information, see our [scheduling parameters documentation]({{root_url}}/API_Reference/SMTP_API/scheduling_parameters.html).
+For more information, see our [scheduling parameters documentation]({{root_url}}/for-developers/sending-email/scheduling-parameters.html).
 
 {% anchor h3 %}
 Substitution Tags
@@ -155,7 +155,7 @@ To define the value that will replace the {% raw %}{{name}}{% endraw %} tag, def
 }
 {% endcodeblock %}
 
-For more information, see our [substitution tags documentation]({{root_url}}/API_Reference/SMTP_API/substitution_tags.html).
+For more information, see our [substitution tags documentation]({{root_url}}/for-developers/sending-email/substitution-tags.html).
 
 {% anchor h3 %}
 Section Tags
@@ -163,7 +163,7 @@ Section Tags
 
 Section tags are similar to substitution tags, but rather than replace tags with content for each recipient; section tags allow you to replace a tag with more generic content— like a salutation.
 
-For more information, see our [section tags documentation]({{root_url}}/API_Reference/SMTP_API/section_tags.html).
+For more information, see our [section tags documentation]({{root_url}}/for-developers/sending-email/section-tags.html).
 
 {% anchor h3 %}
 Suppression Groups
@@ -177,7 +177,7 @@ You can easily specify an unsubscribe group for an email sent via SMTP by includ
 }
 {% endcodeblock %}
 
-For more information, see our [suppression groups documentation]({{root_url}}/API_Reference/SMTP_API/suppressions.html).
+For more information, see our [suppression groups documentation]({{root_url}}/for-developers/sending-email/suppressions.html).
 
 {% anchor h3 %}
 Categories
@@ -191,7 +191,7 @@ Categories allow you to track your emails according to broad topics that you def
 }
 {% endcodeblock %}
 
-For more information, see our [categories documentation]({{root_url}}/API_Reference/SMTP_API/categories.html)
+For more information, see our [categories documentation]({{root_url}}/for-developers/sending-email/categories.html)
 
 {% info %}
 Categories should only be used for broad topics. To attach unique identifiers, please use [unique arguments]({{root_url}}/API_Reference/SMTP_API/unique_arguments.html).
@@ -212,5 +212,5 @@ Additional Resources
 - [How to send email]({{root_url}}/help-support/getting-started/how-to-send-email.html)
 - [Getting started with the API]({{root_url}}/API_Reference/api_v3.html)
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
-- [Getting Started with the SMTP API]({{root_url}}/API_Reference/SMTP_API/getting_started_smtp.html)
-- [Integrating with SMTP]({{root_url}}/API_Reference/SMTP_API/integrating_with_the_smtp_api.html)
+- [Getting Started with the SMTP API]({{root_url}}/for-developers/getting-started/getting-started-smtp.html)
+- [Integrating with SMTP]({{root_url}}/for-developers/getting-started/integrating-with-the-smtp-api.html)

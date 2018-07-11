@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-There are 3 easy ways to schedule your emails; use [Marketing Campaigns](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/index.html), use the [SMTP API](https://sendgrid.com/docs/API_Reference/SMTP_API/scheduling_parameters.html) header, or use the API.
+There are 3 easy ways to schedule your emails; use [Marketing Campaigns]({{root_url}}/help-support/getting-started/how-to-send-email.html), use the [SMTP API]({{root_url}}/for-developers/sending-email/scheduling-parameters.html) header, or use the API.
 
 {% info %}
 If you have the flexibility, it's better to schedule mail for off-peak times. Most emails are scheduled and sent at the top of the hour or half hour. Scheduling email to avoid those times (for example, scheduling at 10:53) can result in lower deferral rates because it won't be going through our servers at the same times as everyone else's mail.
@@ -27,7 +27,7 @@ You can you can schedule a time to send your email by using the the `send_at` ob
 
 
 #3. SMTP API
-You can use the [SMTP API](https://sendgrid.com/docs/API_Reference/SMTP_API/scheduling_parameters.html) header to schedule your emails when sending via [SMTP](https://sendgrid.com/docs/Integrate/index.html#-SMTP-Relay) or our [mail.send API endpoint](https://sendgrid.com/docs/API_Reference/Web_API/mail.html). SendGrid will allow you to queue batches of emails targeting individual recipients by using a UNIX time stamp parameter in your SMTP API header.
+You can use the [SMTP API]({{root_url}}/for-developers/sending-email/scheduling-parameters.html) header to schedule your emails when sending via [SMTP](https://sendgrid.com/docs/Integrate/index.html#-SMTP-Relay) or our [mail.send API endpoint](https://sendgrid.com/docs/API_Reference/Web_API/mail.html). SendGrid will allow you to queue batches of emails targeting individual recipients by using a UNIX time stamp parameter in your SMTP API header.
 
 This parameter allows SendGrid to begin processing your email requests before sending. SendGrid will then queue those messages and release them when the specified time rolls around.
 

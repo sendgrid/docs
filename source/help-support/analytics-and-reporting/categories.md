@@ -34,7 +34,7 @@ This table will refresh with new or adjusted data based on the various filters a
 Using the API
 {% endanchor %}
 
-[Using Categories with the SMTP API]({{root_url}}/API_Reference/SMTP_API/categories.html)
+[Using Categories with the SMTP API]({{root_url}}/for-developers/sending-email/categories.html))
 
 {% anchor h2 %}
 Additional Resources

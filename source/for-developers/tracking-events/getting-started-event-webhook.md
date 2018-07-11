@@ -87,8 +87,8 @@ If you want to receive encrypted posts, your callback URL needs to support TLS 1
 Additional Resources
 {% endanchor h2 %}
 
-- [Event Webhook reference]({{root_url}}/API_Reference/Event_Webhook/event.html)
-- [Troubleshooting the Event Webhook]({{root_url}}/API_Reference/Event_Webhook/troubleshooting.html)
+- [Event Webhook reference]({{root_url}}/for-developers/tracking-events/event.html)
+- [Troubleshooting the Event Webhook]({{root_url}}/for-developers/tracking-events/troubleshooting.html)
 - [An Event Webhook case study](https://sendgrid.com/blog/leveraging-sendgrids-event-api/)
 - [Webhook web libraries]({{root_url}}/Integrate/libraries.html#-Webhook-Libraries)
 - [Getting started with Keen.io](https://sendgrid.com/docs/help-and-support/analytics-and-reporting/tracking-data-with-keen-io.html)

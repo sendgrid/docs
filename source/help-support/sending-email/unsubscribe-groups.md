@@ -56,7 +56,7 @@ Default Groups
 
 Default groups are those that are shown by default when a recipient chooses to unsubscribe from your emails. SendGrid will always show all of the default groups, so if you don’t want one of those groups to be displayed all the time, make sure that it is not set as a default group.
 
-You can also specify which groups to display at send time, but using the [asm_groups_to_display feature]({{root_url}}/API_Reference/SMTP_API/suppressions.html#-Defining-ASM-Groups-to-display-on-the-Manage-Preferences-page) of the SMTP API.
+You can also specify which groups to display at send time, but using the [asm_groups_to_display feature]({{root_url}}/for-developers/sending-email/suppressions.html#-Defining-ASM-Groups-to-display-on-the-Manage-Preferences-page) of the SMTP API.
 
 {% anchor h2 %}
 Add Recipients to an Unsubscribe Group

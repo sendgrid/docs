@@ -71,8 +71,8 @@ Substitutions and Sections
 {% endanchor %}
 
 You can use SMTP API
-[substitution]({{root_url}}/API_Reference/SMTP_API/substitution_tags.html)
-and [section]({{root_url}}/API_Reference/SMTP_API/section_tags.html)
+[substitution]({{root_url}}/for-developers/sending-email/substitution-tags.html)
+and [section]({{root_url}}/for-developers/sending-email/section-tags.html)
 tags in your template's subject and body content, and they will be replaced with the values
 specified when you send the message.
 

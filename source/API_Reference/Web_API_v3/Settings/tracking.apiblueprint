@@ -129,7 +129,7 @@ FORMAT: 1A
 ### Update Open Tracking Settings [PATCH]
 
 <p>
-  By default, the open tracking image used to determine when an email is opened is inserted at the end of your email. It is possible to specify an alternative location by using a replacement tag and the open tracking <a href="{{root_url}}/API_Reference/SMTP_API/apps.html#opentrack">SMTP API header</a>.
+  By default, the open tracking image used to determine when an email is opened is inserted at the end of your email. It is possible to specify an alternative location by using a replacement tag and the open tracking <a href="{{root_url}}/for-developers/sending-email/smtp-filters.html#opentrack">SMTP API header</a>.
 </p>
 
 <p>

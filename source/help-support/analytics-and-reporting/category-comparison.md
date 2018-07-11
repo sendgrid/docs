@@ -61,5 +61,5 @@ Additional Resources
 {% endanchor %}
 
 - [Subusers]({{root_url}}/help-support/account-and-settings/subusers.html)
-- [Using Categories with the SMTP API]({{root_url}}/API_Reference/SMTP_API/categories.html)
+- [Using Categories with the SMTP API]({{root_url}}/for-developers/sending-email/categories.html))
 - [Statistics Filters]({{root_url}}/help-support/account-and-settings/stats-overview.html#-Statistics-Filters)
