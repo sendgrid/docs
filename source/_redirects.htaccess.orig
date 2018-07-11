@@ -285,7 +285,6 @@ Redirect 301 /Classroom/Basics/Account/how_do_i_reset_my_password.html https://s
 Redirect 301 /Classroom/Basics/Account/why_cant_I_reset_my_password_if_my_account_is_not_provisioned.html https://sendgrid.com/docs/help-support/account-and-settings/account.html
 Redirect 301 /Classroom/Basics/index.html https://sendgrid.com/docs/help-support/account-and-settings/account.html
 Redirect 301 /Classroom/Basics/Inbound_Parse_Webhook/setting_up_the_inbound_parse_webhook.html https://sendgrid.com/docs/for-developers/parsing-email/setting-up-the-inbound-parse-webhook.html
-Redirect 301 /Classroom/Basics/index.html https://sendgrid.com/docs/for-developers/getting-started/getting-started-api.html
 Redirect 301 /Classroom/Basics/Marketing_Campaigns/index.html https://sendgrid.com/docs/help-support/account-and-settings/getting-started/how-to-send-email.html
 Redirect 301 /Classroom/Basics/Marketing_Campaigns/marketing_campaigns_faqs.html https://sendgrid.com/docs/help-support/account-and-settings/getting-started/how-to-send-email.html
 Redirect 301 /Classroom/Basics/Marketing_Campaigns/marketing_campaigns_faqs.html https://sendgrid.com/docs/help-support/account-and-settings/getting-started/how-to-send-email.html
