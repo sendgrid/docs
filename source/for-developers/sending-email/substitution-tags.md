@@ -24,7 +24,7 @@ navigation:
 {% endcodeblock %}
 
 {% info %}
-Substitution tags will work in the Subject line, body of the email and in [Unique Arguments]({{root_url}}/API_Reference/SMTP_API/unique_arguments.html). 
+Substitution tags will work in the Subject line, body of the email and in [Unique Arguments]({{root_url}}/for-developers/sending-email/unique-arguments.html). 
 {% endinfo %}
 
 {% info %}

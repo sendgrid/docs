@@ -194,16 +194,16 @@ Categories allow you to track your emails according to broad topics that you def
 For more information, see our [categories documentation]({{root_url}}/for-developers/sending-email/categories.html)
 
 {% info %}
-Categories should only be used for broad topics. To attach unique identifiers, please use [unique arguments]({{root_url}}/API_Reference/SMTP_API/unique_arguments.html).
+Categories should only be used for broad topics. To attach unique identifiers, please use [unique arguments]({{root_url}}/for-developers/sending-email/unique-arguments.html).
 {% endinfo %}
 
 {% anchor h3 %}
 Unique Arguments
 {% endanchor %}
 
-Use unique arguments to track your emails based on specific identifiers unique to individual messages. Unique arguments can be retrieved via SendGrid's [Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html) or your [email activity page]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed.html).
+Use unique arguments to track your emails based on specific identifiers unique to individual messages. Unique arguments can be retrieved via SendGrid's [Event Webhook]({{root_url}}/for-developers/tracking-events/event.html) or your [email activity page]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed.html).
 
-For more information, see our [unique arguments documentation]({{root_url}}/API_Reference/SMTP_API/unique_arguments.html).
+For more information, see our [unique arguments documentation]({{root_url}}/for-developers/sending-email/unique-arguments.html).
 
 {% anchor h2 %}
 Additional Resources

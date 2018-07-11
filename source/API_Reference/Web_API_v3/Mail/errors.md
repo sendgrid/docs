@@ -165,11 +165,11 @@ Personalizations Errors
 {% api_error_table personalizations.custom_args "" message.personalizations.custom_args %}
   {% api_error_table_row 400 %}
 
-  {% api_error_table_message "All values of custom arguments object must be strings" "Custom argument values must always be strings. You cannot define arrays, integers, or booleans as custom argument values. Click <a href=\"{{root_url}}/API_Reference/SMTP_API/unique_arguments.html\">here</a> more information about how to use custom arguments." %}
+  {% api_error_table_message "All values of custom arguments object must be strings" "Custom argument values must always be strings. You cannot define arrays, integers, or booleans as custom argument values. Click <a href=\"{{root_url}}/for-developers/sending-email/unique-arguments.html\">here</a> more information about how to use custom arguments." %}
 
-  {% api_error_table_message "<code>custom_args</code> cannot be empty." "If you include the <code>custom_args</code> parameter, you must include at least one value. If you do not want to use any custom arguments, simply omit the <code>custom_arg</code> param from your request. Click <a href=\"{{root_url}}/API_Reference/SMTP_API/unique_arguments.html\">here</a> more information about how to use custom arguments." %}
+  {% api_error_table_message "<code>custom_args</code> cannot be empty." "If you include the <code>custom_args</code> parameter, you must include at least one value. If you do not want to use any custom arguments, simply omit the <code>custom_arg</code> param from your request. Click <a href=\"{{root_url}}/for-developers/sending-email/unique-arguments.html\">here</a> more information about how to use custom arguments." %}
 
-  {% api_error_table_message "The combined size of both global and personalization custom arguments may not exceed 10,000 bytes per personalization." "<code>personalizations[x].custom_args</code> will be merged with message level <code>custom_args</code>, overriding any conflicting keys. The combined total size of the resulting custom arguments, after merging, for each personalization may not exceed 10,000 bytes. Click <a href=\"{{root_url}}/API_Reference/SMTP_API/unique_arguments.html\">here</a> more information about how to use custom arguments." %}
+  {% api_error_table_message "The combined size of both global and personalization custom arguments may not exceed 10,000 bytes per personalization." "<code>personalizations[x].custom_args</code> will be merged with message level <code>custom_args</code>, overriding any conflicting keys. The combined total size of the resulting custom arguments, after merging, for each personalization may not exceed 10,000 bytes. Click <a href=\"{{root_url}}/for-developers/sending-email/unique-arguments.html\">here</a> more information about how to use custom arguments." %}
 {% endapi_error_table %}
 
 {% api_error_table personalizations.headers "" message.personalizations.headers %}

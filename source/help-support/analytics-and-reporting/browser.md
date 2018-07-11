@@ -38,6 +38,6 @@ This table will refresh with new or adjusted data based on the various filters a
 Additional Resources
 {% endanchor %}
 
-- [Account Settings]({{root_url}}/Help/Account_and_Settings/account.html)
-- [Statistics Filters]({{root_url}}/Help/Analytics_and_Reporting/Statistics/index.html#-Statistics-Filters)
-- [Browser Comparison]({{root_url}}/Analytics_and_Reporting/Statistics/browser_comparison.html)
+- [Account Settings]({{root_url}}/help-support/account-and-settings/account.html)
+- [Statistics Filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview.html#-Statistics-Filters)
+- [Browser Comparison]({{root_url}}/analytics-and-reporting/browser-comparison.html)

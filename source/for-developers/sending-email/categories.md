@@ -17,7 +17,7 @@ Currently, there is no limit to the number of categories you can track. However,
 {% endinfo %}
 
 {% warning %}
-Categories should be used to group messages together by broad topic. If you need to attach unique data or identifiers to a message, use [Unique Arguments]({{root_url}}/API_Reference/SMTP_API/unique_arguments.html) instead. 
+Categories should be used to group messages together by broad topic. If you need to attach unique data or identifiers to a message, use [Unique Arguments]({{root_url}}/for-developers/sending-email/unique-arguments.html) instead. 
 {% endwarning %}
 
 {% anchor h2 %}
