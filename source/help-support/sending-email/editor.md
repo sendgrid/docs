@@ -96,7 +96,7 @@ Getting Started With The Code Editor
 You can only edit unsent campaigns.
 {% endinfo %}
 
-You can select a Blank Template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates]({{root_url}}/User_Guide/Marketing_Campaigns/templates.html).
+You can select a Blank Template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates]({{root_url}}/help-support/sending-email/creating-and-editing-transactional-templates.html).
 
 {% info %}
 When you open one of your existing campaigns or templates in the new editor, SendGrid creates a duplicate of the original campaign or template. You may always open the original campaign or template in the previous editor.

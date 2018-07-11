@@ -84,5 +84,5 @@ Related Resources:
 * [SandBox Mode]({{root_url}}/Classroom/Send/v3_Mail_Send/sandbox_mode.html)
 * [Errors]({{root_url}}/API_Reference/Web_API_v3/Mail/errors.html)
 * [Personalizations]({{root_url}}/Classroom/Send/v3_Mail_Send/personalizations.html)
-* [Examples for Common Use Cases]({{root_url}}/Classroom/Send/v3_Mail_Send/curl_examples.html)
+* [Examples for Common Use Cases]({{root_url}}/for-developers/getting-started/curl-examples.html)
 * [How to Migrate from V2 to V3 Mail Send]({{root_url}}/Classroom/Send/v3_Mail_Send/how_to_migrate_from_v2_to_v3_mail_send.html)
