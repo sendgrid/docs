@@ -68,7 +68,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "deploy": "gatsby build && s3-deploy './public/**' --cwd './public/' --bucket sendgrid-knowledge-center-staging --deleteRemoved --gzip",
-    "clear": "aws-cloudfront-invalidate [your CloudFront Distribution ID]",
+    "clear": "aws-cloudfront-invalidate [your CloudFront Distribution]",
     "dev": "npm run develop",
     "serve": "gatsby serve",
     "build": "gatsby build",
