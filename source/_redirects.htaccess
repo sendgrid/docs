@@ -625,24 +625,6 @@ Redirect 301 /Glossary/email_error_messages.html https://sendgrid.com/docs/for-d
 Redirect 301 /Glossary/sender_reputation.html https://sendgrid.com/blog/what-is-a-domain-reputation/
 Redirect 301 /Glossary/triggering_events.html https://sendgrid.com/docs/glossary/automated-email.html
 
-#######
-#
-# /docs/Integrate
-#
-#######
-
-Kaylyn Sigler
-
-
-
-
-
- 
-Message List
-
-kaylyn [2:22 PM]
-added this Plain Text snippet: Untitled 
-```#######
 #
 # /docs/Integrate
 #
