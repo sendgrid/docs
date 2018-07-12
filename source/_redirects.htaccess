@@ -232,7 +232,6 @@ Redirect 301 /Integrate/Code_Examples/ruby.html http://sendgrid.com/docs/Integra
 # /docs/Classroom - redirects to avoid confusion
 #
 #######
-Redirect 301 /Classroom/Send/index.html https://sendgrid.com/docs/help-support/getting-started/index.html
 Redirect 301 /Classroom/Track/index.html https://sendgrid.com/docs/index.html
 Redirect 301 /Classroom/Basics/password.html https://sendgrid.com/docs/Classroom/Basics/Security/password.html
 Redirect 301 /Classroom/Deliver/warming_up_ips.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/warming_up_ips.html
@@ -283,7 +282,6 @@ Redirect 301 /Classroom/Basics/Account/account_sign_up_faq.html https://sendgrid
 Redirect 301 /Classroom/Basics/Account/how_do_i_add_more_emails_to_my_account.html https://sendgrid.com/docs/help-support/account-and-settings/account
 Redirect 301 /Classroom/Basics/Account/how_do_i_reset_my_password.html https://sendgrid.com/docs/help-support/account-and-settings/account
 Redirect 301 /Classroom/Basics/Account/why_cant_I_reset_my_password_if_my_account_is_not_provisioned.html https://sendgrid.com/docs/help-support/account-and-settings/account
-Redirect 301 /Classroom/Basics/index.html https://sendgrid.com/docs/help-support/account-and-settings/account
 Redirect 301 /Classroom/Basics/Inbound_Parse_Webhook/setting_up_the_inbound_parse_webhook.html https://sendgrid.com/docs/for-developers/parsing-email/setting-up-the-inbound-parse-webhook.html
 Redirect 301 /Classroom/Basics/index.html https://sendgrid.com/docs/for-developers/getting-started/getting-started-api.html
 Redirect 301 /Classroom/Basics/Marketing_Campaigns/index.html https://sendgrid.com/docs/help-support/account-and-settings/getting-started/how-to-send-email.html
@@ -303,7 +301,6 @@ Redirect 301 /Classroom/Basics/Misc/a_sendgrid_user_is_spamming_me.html https://
 Redirect 301 /Classroom/Basics/Email_Infrastructure/email_flow.html https://sendgrid.com/docs/help-support/sending-email/email-flow.html
 Redirect 301 /Classroom/Basics/Email_Infrastructure/everything_about_dmarc.html https://sendgrid.com/docs/help-support/sending-email/dmarc.html
 Redirect 301 /Classroom/Basics/Email_Infrastructure/does_sendgrid_support_end_to_end_tls.html https://sendgrid.com/docs/help-support/sending-email/tls.html
-Redirect 301 /Classroom/Basics/Email_Infrastructure/does_sendgrid_support_end_to_end_tls.html https://sendgrid.com/docs/help-support/sending-email/ssl-vs-tls.html
 Redirect 301 /Classroom/Basics/API/cors.html https://sendgrid.com/docs/for-developers/getting-started/cors.html
 Redirect 301 /Classroom/Basics/API/does_sendgrid_offer_a_sandbox_or_test_environment.html https://sendgrid.com/docs/for-developers/getting-started/sandbox.html
 Redirect 301 /Classroom/Basics/API/how_do_i_integrate_with_sendgrid.html https://sendgrid.com/docs/for-developers/getting-started/getting-started-api.html
