@@ -233,7 +233,6 @@ Redirect 301 /Integrate/Code_Examples/ruby.html http://sendgrid.com/docs/Integra
 #
 #######
 Redirect 301 /Classroom/Send/index.html https://sendgrid.com/docs/help-support/getting-started/index.html
-Redirect 301 /Classroom/Track/index.html https://sendgrid.com/docs/index.html
 Redirect 301 /Classroom/Basics/password.html https://sendgrid.com/docs/Classroom/Basics/Security/password.html
 Redirect 301 /Classroom/Deliver/warming_up_ips.html https://sendgrid.com/docs/Classroom/Deliver/Delivery_Introduction/warming_up_ips.html
 Redirect 301 /Classroom/Send/api_keys.html https://sendgrid.com/docs/Classroom/Send/How_Emails_Are_Sent/api_keys.html
@@ -517,7 +516,7 @@ Redirect 301 /Classroom/Track/drop_reason_bounced_address.html https://sendgrid.
 Redirect 301 /Classroom/Track/drop_reason_unsubscribed_address.html https://sendgrid.com/docs/Classroom/Track/Drops/drop_reason_unsubscribed_address.html
 Redirect 301 /Classroom/Track/how_do_i_unsubscribe_a_user.html https://sendgrid.com/docs/Classroom/Track/Unsubscribes/how_do_i_unsubscribe_a_user.html
 Redirect 301 /Classroom/Track/unsubscribe_via_subscription_tracking.html https://sendgrid.com/docs/Classroom/Track/Unsubscribes/unsubscribe_via_subscription_tracking.html
-Redirect 301 /Classroom/Track/Introduction/what_do_all_these_delivery_statistics_mean.html https://sendgrid.com/docs/Classroom/Track/index.html
+Redirect 301 /Classroom/Track/Introduction/what_do_all_these_delivery_statistics_mean.html https://sendgrid.com/docs/help-support/analytics-and-reporting/stats-overview.html
 Redirect 301 /Classroom/Track/Collecting_Data/sendwithus.html https://support.sendwithus.com/esp_accounts/connect_sendgrid/
 Redirect 301 /Classroom/Track/unsubscribe_via_the_subscription_tracking.html https://sendgrid.com/docs/Classroom/Track/Unsubscribes/unsubscribe_via_subscription_tracking.html
 Redirect 301 /Classroom/Track/index.html https://sendgrid.com/docs/help-support/analytics-and-reporting/stats-overview.html
