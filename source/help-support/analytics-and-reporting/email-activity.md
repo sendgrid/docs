@@ -11,7 +11,7 @@ navigation:
 ---
 
 {% warning %}
-If you are looking for the new Email Activity documentation, please go [here]({{root_url}}/help-support/analytics-and-reporting/email_activity_feed.html). 
+If you are looking for the new Email Activity documentation, please go [here]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed.html). 
 {% endwarning %}
 
 <iframe src="https://player.vimeo.com/video/130900679" width="500" height="312" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
