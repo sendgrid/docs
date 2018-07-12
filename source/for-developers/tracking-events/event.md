@@ -1038,7 +1038,7 @@ For emails sent through our Legacy Marketing Email tool, unsubscribes look like 
 Additional Resources
 {% endanchor h2 %}
 
-- [Getting started with the Event Webhook]({{root_url}}/for-developers/tracking-events/getting-started-with-event-webhook.html)
+- [Getting started with the Event Webhook]({{root_url}}/for-developers/tracking-events/getting-started-event-webhook.html)
 - [Troubleshooting the event webhook]({{root_url}}/for-developers/tracking-events/troubleshooting.html)
 - [An Event Webhook case study](https://sendgrid.com/blog/leveraging-sendgrids-event-api/)
 - [Webhook web libraries]({{root_url}}/Integrate/libraries.html#-Webhook-Libraries)

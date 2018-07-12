@@ -65,4 +65,4 @@ Additional Resources
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
 - [Getting Started with the SMTP API]({{root_url}}/for-developers/getting-started/getting-started-smtp.html)
 - [Integrating with SMTP]({{root_url}}/for-developers/getting-started/integrating-with-the-smtp-api.html)
-- [Building an SMTP Email]({{root_url}}/for-developers/sending-email/building-an-smtp-email.html)
+- [Building an SMTP Email]({{root_url}}/for-developers/getting-started/building-an-smtp-email.html)
