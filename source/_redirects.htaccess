@@ -630,7 +630,7 @@ Redirect 301 /Glossary/triggering_events.html https://sendgrid.com/docs/glossary
 #######
 Redirect 301 /Integrate/Mail_Clients/outlook_2010.html https://sendgrid.com/docs/Integrate/Mail_Clients/outlook_2013.html
 Redirect 301 /Integrate/Partners/Tutorials/EngineYard.html https://sendgrid.com/docs/Integrate/Tutorials/EngineYard.html
-Redirect 301 /Integrate/Partners/Tutorials/OpenShift.html https://sendgrid.com/docs/Integrate/Tutorials/OpenShift.html
+Redirect 301 /Integrate/Partners/Tutorials/OpenShift.html https://sendgrid.com/docs/help-support/account-and-settings/password-reset-openshift.html
 Redirect 301 /Integrate/Partners/Tutorials/WindowsAzure.html https://sendgrid.com/docs/Integrate/Tutorials/WindowsAzure.html
 Redirect 301 /Integrate/Tutorials/segment/sendgrid_source.html https://sendgrid.com/docs/Integrate/Tutorials/Segment/sendgrid_source.html
 Redirect 301 /Integrate/Open_Source_Apps/wordpress.html https://sendgrid.com/docs/Integrate/Tutorials/WordPress/index.html
