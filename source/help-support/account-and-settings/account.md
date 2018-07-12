@@ -42,7 +42,7 @@ To edit your name and email address, click the “Change Contact Info” button 
 If you find that your scheduled sends or stats seem like they are not quite correct, please double check your timezone.
 {% endinfo %}
 
-**Timezone** - The [timezone]({{root_url}}/glossary/timezone.html) in which your company operates. This setting will be used by other SendGrid functionality such as [Statistics]({{root_url}}/help-support/analytics-and-reporting/index.html) and scheduling sends in [Marketing Campaigns]({{root_url}}/help-support/getting-started/how-to-send-email.html). Please make sure that your timezone is set to the same as your business.
+**Timezone** - The [timezone]({{root_url}}/glossary/timezone.html) in which your company operates. This setting will be used by other SendGrid functionality such as [Statistics]({{root_url}}/help-support/analytics-and-reporting/stats-overview.html) and scheduling sends in [Marketing Campaigns]({{root_url}}/help-support/getting-started/how-to-send-email.html). Please make sure that your timezone is set to the same as your business.
 
 **Website** - Your company’s website
 
