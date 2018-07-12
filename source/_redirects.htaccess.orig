@@ -600,8 +600,8 @@ Redirect 301 /Classroom/Troubleshooting/Delivery_Issues/troubleshooting_delays_a
 # /docs/Delivery_Metrics - moved to User Guide - originally sendgrid.com/docs/Delivery_Metrics/
 #
 #######
-Redirect 301 /Delivery_Metrics/index.html https://sendgrid.com/docs/help-support/analytics-and-reporting/index.html
-Redirect 301 /Delivery_Metrics/advanced_statistics.html https://sendgrid.com/docs/help-support/analytics-and-reporting/index.html
+Redirect 301 /Delivery_Metrics/index.html https://sendgrid.com/docs/help-support/analytics-and-reporting/stats-overview.html
+Redirect 301 /Delivery_Metrics/advanced_statistics.html https://sendgrid.com/docs/help-support/analytics-and-reporting/stats-overview.html
 Redirect 301 /Delivery_Metrics/alerts.html https://sendgrid.com/docs/help-support/account-and-settings/alerts.html
 Redirect 301 /Delivery_Metrics/categories.html https://sendgrid.com/docs/help-support/analytics-and-reporting/categories.html
 Redirect 301 /Delivery_Metrics/email_activity.html https://sendgrid.com/docs/help-support/analytics-and-reporting/email-activity-feed.html
@@ -795,7 +795,7 @@ Redirect 301 /User_Guide/Apps/template_engine.html https://sendgrid.com/docs/hel
 Redirect 301 /User_Guide/attachments.html https://sendgrid.com/docs/help-support/sending-email/attachments-with-digioh.html
 Redirect 301 /User_Guide/billing.html https://sendgrid.com/docs/help-support/account-and-settings/billing.html
 Redirect 301 /User_Guide/clicktracking_ssl.html https://sendgrid.com/docs/help-support/sending-email/content-delivery-networks.html
-Redirect 301 /User_Guide/Delivery_Metrics/advanced_statistics.html https://sendgrid.com/docs/help-support/analytics-and-reporting/index.html
+Redirect 301 /User_Guide/Delivery_Metrics/advanced_statistics.html https://sendgrid.com/docs/help-support/analytics-and-reporting/stats-overview.html
 Redirect 301 /User_Guide/Delivery_Metrics/alerts.html https://sendgrid.com/docs/help-support/account-and-settings/alerts.html
 Redirect 301 /User_Guide/Delivery_Metrics/email_error_messages.html https://sendgrid.com/docs/for-developers/sending-email/smtp-errors-and-troubleshooting.html
 Redirect 301 /User_Guide/Delivery_Metrics/email_activity.html https://sendgrid.com/docs/help-support/analytics-and-reporting/email-activity-feed.html
@@ -804,7 +804,7 @@ Redirect 301 /User_Guide/Email_Deliverability/attachments.html https://sendgrid.
 Redirect 301 /User_Guide/Delivery_Metrics/categories.html https://sendgrid.com/docs/help-support/analytics-and-reporting/categories.html
 Redirect 301 /User_Guide/Email_Deliverability/index.html https://sendgrid.com/docs/help-support/getting-started/email-deliverability.html
 Redirect 301 /User_Guide/Email_Deliverability/list_scrubbing.html https://sendgrid.com/docs/help-support/managing-contacts/managing-contact-list.html
-Redirect 301 /User_Guide/Delivery_Metrics/metrics.html https://sendgrid.com/docs/help-support/analytics-and-reporting/index.html
+Redirect 301 /User_Guide/Delivery_Metrics/metrics.html https://sendgrid.com/docs/help-support/analytics-and-reporting/stats-overview.html
 Redirect 301 /User_Guide/Email_Deliverability/scheduling.html https://sendgrid.com/docs/for-developers/sending-email/scheduling-parameters.html
 Redirect 301 /User_Guide/Email_Deliverability/sender_reputation.html https://sendgrid.com/docs/glossary/sender-reputation.html
 Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/index.html https://sendgrid.com/docs/help-support/sending-email/index-suppressions.html

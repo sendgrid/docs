@@ -600,8 +600,8 @@ Redirect 301 /Classroom/Troubleshooting/Delivery_Issues/troubleshooting_delays_a
 # /docs/Delivery_Metrics - moved to User Guide - originally sendgrid.com/docs/Delivery_Metrics/
 #
 #######
-Redirect 301 /Delivery_Metrics/index.html https://sendgrid.com/docs/help-support/analytics-and-reporting/index.html
-Redirect 301 /Delivery_Metrics/advanced_statistics.html https://sendgrid.com/docs/help-support/analytics-and-reporting/index.html
+Redirect 301 /Delivery_Metrics/index.html https://sendgrid.com/docs/help-support/analytics-and-reporting/stats-overview.html
+Redirect 301 /Delivery_Metrics/advanced_statistics.html https://sendgrid.com/docs/help-support/analytics-and-reporting/stats-overview.html
 Redirect 301 /Delivery_Metrics/alerts.html https://sendgrid.com/docs/help-support/account-and-settings/alerts.html
 Redirect 301 /Delivery_Metrics/categories.html https://sendgrid.com/docs/help-support/analytics-and-reporting/categories.html
 Redirect 301 /Delivery_Metrics/email_activity.html https://sendgrid.com/docs/help-support/analytics-and-reporting/email-activity-feed.html
