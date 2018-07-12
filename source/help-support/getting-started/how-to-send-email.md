@@ -62,6 +62,10 @@ Depending on your editor selection, you use different methods to design your cam
 
 1. To send your campaign, click **Send Campaign**. 
 
+{% info %}
+Message size limit:  The total message size should not exceed 20MB. This includes the message itself, headers, and the combined size of any attachments.
+{% endinfo %}
+
 {% anchor h3 %}
 Scheduling Your Campaign
 {% endanchor h3 %}
