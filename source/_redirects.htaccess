@@ -218,14 +218,14 @@ Redirect 301 /Code_Examples/SMTP_API_Header_Examples/ruby.html https://sendgrid.
 # /docs/Integrate/Code_Examples - moved to v2 specific folder
 #
 #######
-Redirect 301 /Integrate/Code_Examples/csharp.html http://sendgrid.com/docs/Integrate/Code_Examples/v2_Mail/csharp.html
-Redirect 301 /Integrate/Code_Examples/go.html http://sendgrid.com/docs/Integrate/Code_Examples/v2_Mail/go.html
-Redirect 301 /Integrate/Code_Examples/java.html http://sendgrid.com/docs/Integrate/Code_Examples/v2_Mail/java.html
-Redirect 301 /Integrate/Code_Examples/nodejs.html http://sendgrid.com/docs/Integrate/Code_Examples/v2_Mail/nodejs.html
-Redirect 301 /Integrate/Code_Examples/perl.html http://sendgrid.com/docs/Integrate/Code_Examples/v2_Mail/perl.html
-Redirect 301 /Integrate/Code_Examples/php.html http://sendgrid.com/docs/Integrate/Code_Examples/v2_Mail/php.html
-Redirect 301 /Integrate/Code_Examples/python.html http://sendgrid.com/docs/Integrate/Code_Examples/v2_Mail/python.html
-Redirect 301 /Integrate/Code_Examples/ruby.html http://sendgrid.com/docs/Integrate/Code_Examples/v2_Mail/ruby.html
+Redirect 301 /Integrate/Code_Examples/csharp.html https://sendgrid.com/docs/getting-started/v2-csharp-code-example.html
+Redirect 301 /Integrate/Code_Examples/go.html https://sendgrid.com/docs/getting-started/v2-go-code-example.html
+Redirect 301 /Integrate/Code_Examples/java.html https://sendgrid.com/docs/getting-started/v2-java-code-example.html
+Redirect 301 /Integrate/Code_Examples/nodejs.html https://sendgrid.com/docs/getting-started/v2-nodejs-code-example.html
+Redirect 301 /Integrate/Code_Examples/perl.html https://sendgrid.com/docs/getting-started/v2-perl-code-example.html
+Redirect 301 /Integrate/Code_Examples/php.html https://sendgrid.com/docs/getting-started/v2-php-code-example.html
+Redirect 301 /Integrate/Code_Examples/python.html https://sendgrid.com/docs/getting-started/v2-python-code-example.html
+Redirect 301 /Integrate/Code_Examples/ruby.html https://sendgrid.com/docs/getting-started/v2-ruby-code-example.html
 
 #######
 #
@@ -629,18 +629,18 @@ Redirect 301 /Glossary/triggering_events.html https://sendgrid.com/docs/glossary
 #
 #######
 Redirect 301 /Integrate/Mail_Clients/outlook_2010.html https://sendgrid.com/docs/for-developers/sending-email/outlook-2013.html
-Redirect 301 /Integrate/Partners/Tutorials/EngineYard.html https://sendgrid.com/docs/Integrate/Tutorials/EngineYard.html
+Redirect 301 /Integrate/Partners/Tutorials/EngineYard.html https://sendgrid.com/docs/for-developers/sending-email/engineyard.html
 Redirect 301 /Integrate/Partners/Tutorials/OpenShift.html https://sendgrid.com/docs/help-support/account-and-settings/password-reset-openshift.html
-Redirect 301 /Integrate/Partners/Tutorials/WindowsAzure.html https://sendgrid.com/docs/Integrate/Tutorials/WindowsAzure.html
-Redirect 301 /Integrate/Tutorials/segment/sendgrid_source.html https://sendgrid.com/docs/Integrate/Tutorials/Segment/sendgrid_source.html
-Redirect 301 /Integrate/Open_Source_Apps/wordpress.html https://sendgrid.com/docs/Integrate/Tutorials/WordPress/index.html
+Redirect 301 /Integrate/Partners/Tutorials/WindowsAzure.html https://sendgrid.com/docs/for-developers/partners/microsoft-azure.html
+Redirect 301 /Integrate/Tutorials/segment/sendgrid_source.html https://sendgrid.com/docs
+Redirect 301 /Integrate/Open_Source_Apps/wordpress.html https://sendgrid.com/docs/for-developers/sending-email/wordpress-faq.html
 Redirect 301 /Integrate/libraries.html https://sendgrid.com/docs/for-developers/getting-started/libraries.html
 Redirect 301 /Integrate/index.html https://sendgrid.com/docs/for-developers/getting-started/overview.html
 Redirect 301 /Integrate/Tutorials/analytics_with_keen_io.html https://sendgrid.com/docs/for-developers/tracking-events/analytics-with-keen-io.html
 Redirect 301 /Integrate/Tutorials/BriteVerify.html https://sendgrid.com/docs/for-developers/managing-contacts/brite-verify.html
 Redirect 301 /Integrate/Tutorials/Formio.html https://sendgrid.com/docs/for-developers/managing-contacts/formio.html
 Redirect 301 /Integrate/Tutorials/CloudRail.html https://sendgrid.com/docs/for-developers/sending-email/cloud-rail.html
-Redirect 301 /Integrate/Tutorials/OpenShift.html https://sendgrid.com/docs/
+Redirect 301 /Integrate/Tutorials/OpenShift.html https://sendgrid.com/docs/help-support/account-and-settings/password-reset-openshift.html
 Redirect 301 /Integrate/Tutorials/WindowsAzure.html https://sendgrid.com/docs/for-developers/partners/azure.html
 Redirect 301 /Integrate/Tutorials/event_kit.html https://sendgrid.com/docs/for-developers/tracking-events/event-kit.html
 Redirect 301 /Integrate/Tutorials/Segment/sendgrid_source.html https://sendgrid.com/docs/for-developers/tracking-events/segment-sendgrid-source.html
