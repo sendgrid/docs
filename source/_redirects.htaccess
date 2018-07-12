@@ -232,13 +232,9 @@ Redirect 301 /Integrate/Code_Examples/ruby.html http://sendgrid.com/docs/Integra
 # /docs/Classroom - redirects to avoid confusion
 #
 #######
-Redirect 301 /Classroom/Send/index.html https://sendgrid.com/docs/help-support/getting-started/index.html
-Redirect 301 /Classroom/Track/index.html https://sendgrid.com/docs.html
 Redirect 301 /Classroom/Basics/password.html https://sendgrid.com/docs/help-support/account-and-settings/resetting-your-username-and-password.html
-Redirect 301 /Classroom/Deliver/warming_up_ips.html https://sendgrid.com/docs/help-support/getting-started/warming-up-an-ip-address.html
-Redirect 301 /Classroom/Send/api_keys.html https://sendgrid.com/docs/Classroom/Send/How_Emails_Are_Sent/api_keys.html
 Redirect 301 /Classroom/Deliver/Undeliverable_Email/how_sendgrid_handles_550_requested_action_not_taken_mailbox_unavailable_bounces.html https://sendgrid.com/docs/help-support/sending-email/smtp-errors-and-troubleshooting.html
-Redirect 301 /Classroom/Troubleshooting/your_account_is_still_being_provisioned_you_may_not_be_able_to_send_emails.html https://sendgrid.com/docs/Classroom/Troubleshooting/Account_Administration/your_account_is_still_being_provisioned_you_will_not_be_able_to_send_out_any_email.html
+Redirect 301 /Classroom/Troubleshooting/your_account_is_still_being_provisioned_you_may_not_be_able_to_send_emails.html https://sendgrid.com/docs/help-support/account-and-settings/account-under-review.html
 Redirect 301 /Classroom/Basics/Security/two_factor_authentication_faq.html https://sendgrid.com/docs/help-support/account-and-settings/two_factor_authentication.html
 
 #######
@@ -302,7 +298,6 @@ Redirect 301 /Classroom/Basics/Misc/a_sendgrid_user_is_spamming_me.html https://
 Redirect 301 /Classroom/Basics/Email_Infrastructure/email_flow.html https://sendgrid.com/docs/help-support/sending-email/email-flow.html
 Redirect 301 /Classroom/Basics/Email_Infrastructure/everything_about_dmarc.html https://sendgrid.com/docs/help-support/sending-email/dmarc.html
 Redirect 301 /Classroom/Basics/Email_Infrastructure/does_sendgrid_support_end_to_end_tls.html https://sendgrid.com/docs/help-support/sending-email/tls.html
-Redirect 301 /Classroom/Basics/Email_Infrastructure/does_sendgrid_support_end_to_end_tls.html https://sendgrid.com/docs/help-support/sending-email/ssl-vs-tls.html
 Redirect 301 /Classroom/Basics/API/cors.html https://sendgrid.com/docs/for-developers/getting-started/cors.html
 Redirect 301 /Classroom/Basics/API/does_sendgrid_offer_a_sandbox_or_test_environment.html https://sendgrid.com/docs/for-developers/getting-started/sandbox.html
 Redirect 301 /Classroom/Basics/API/how_do_i_integrate_with_sendgrid.html https://sendgrid.com/docs/for-developers/getting-started/getting-started-api.html
