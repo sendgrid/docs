@@ -36,7 +36,7 @@ There are two different types of API keys:
 
 We require that you create a separate API key for making billing related API calls. This segmentation adds an extra level of security by giving you more control over who has access to the various areas of your account.
 
-For more detailed information about API key permissions, see our [API Keys permissions page]({{root_url}}/Classroom/Basics/API/api_key_permissions.html).
+For more detailed information about API key permissions, see our [API Keys permissions page]({{root_url}}/help-support/account-and-settings/api-keys.html).
 
 When viewing the API keys page, you will see a list of your current API keys along with the following information:
 
