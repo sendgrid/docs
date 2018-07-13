@@ -26,7 +26,7 @@ Spam traps are so important because so many large ISPs, spam filter providers an
 
  The first medium to avoid is **bad list sources**. This includes any list that has not opted in to receiving a company’s messages such as purchased lists. Avoid unsolicited lists to ensure a business’s reputability. Chances are (99.99%) there is a spam trap included in these lists.
 
-The second critical aspect to pay attention to is **list contamination**. List contamination is when an email address that is a spam trap was added deliberately or accidentally to an unconfirmed list. (This is a list with single opt-in or notified opt-in)  To avoid list contamination make sure to check the correct spelling of the list’s email addresses and take advantage of [double opt-in]({{root_url}}/glossary/opt-in-email.html) for every list.
+The second critical aspect to pay attention to is **list contamination**. List contamination is when an email address that is a spam trap was added deliberately or accidentally to an unconfirmed list. (This is a list with single opt-in or notified opt-in)  To avoid list contamination make sure to check the correct spelling of the list’s email addresses and take advantage of double opt-in for every list.
 
 The last important tool in avoiding spam traps is the **age of the list**. Like previously mentioned, spam traps are sometimes sourced in outdated email addresses that are no longer valid. Going for long periods of time (over one year) without sending mail to an address can lead to getting caught in a spam trap. To prevent this type of spam trap, [clean out old addresses]({{root_url}}/help-support/managing-contacts/managing-contact-list.html).
 
