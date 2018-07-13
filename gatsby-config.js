@@ -2,12 +2,6 @@ const config = require('./data/SiteConfig');
 
 const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix;
 
-const env = () => process.env.GATSBY_ENV;
-
-console.log('====================================');
-console.log(process.env.GATSBY_ENV);
-console.log('====================================');
-
 module.exports = {
   pathPrefix: config.pathPrefix,
   siteMetadata: {
