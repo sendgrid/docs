@@ -23,9 +23,9 @@ Getting Started
 
 *To quickly get started with SendGrid:*
 
-- See [Getting Started With Marketing Campaigns]({{root_url}}/User_Guide/Marketing_Campaigns/getting_started.html) for all of the tools you need to get started sending with the SendGrid application.
+- See [Getting Started With Marketing Campaigns]({{root_url}}/help-support/getting-started/how-to-send-email.html) for all of the tools you need to get started sending with the SendGrid application.
 - Look at the [API Reference]({{root_url}}/API_Reference/api_v3.html) for all of the API endpoints as well as information about using SMTP and the Webhooks.
-- See the [API Libraries]({{root_url}}/Integrate/libraries.html) page for information about using the SendGrid code libraries in C#, Go, Java, Node.js, PHP, Python, and Ruby.
+- See the [API Libraries]({{root_url}}/for-developers/getting-started/libraries.html) page for information about using the SendGrid code libraries in C#, Go, Java, Node.js, PHP, Python, and Ruby.
 
 {% info %}
 **Warm up your sending** - Since ISP spam filters look at volume as a significant factor when determining whether or not you are sending spam, we recommend that you begin sending a low to moderate volume, eventually working your way up to larger volumes. This gives the receiving email providers a chance to closely observe your sending habits and the way your customers treat the emails they receive from you.
@@ -58,14 +58,14 @@ You can only add a Dedicated IP Address if you are on an AWS Pro plan. To upgrad
    ![]({{root_url}}/images/dedicated_ip_button.png "Dedicated IP button")
    This takes you to the Dedicated IP Addresses page 
 1. Next, click **Add an IP Address**.
-1. Select the number of IP Addresses to add, and select whether you want to warm up your IP automatically. Warming up an IP gradually increases the amount of email sent over this IP over time to improve your email deliverability. For more information, see [Warming Up IPs]({{root_url}}/Classroom/Deliver/Delivery_Introduction/warming_up_ips.html).
+1. Select the number of IP Addresses to add, and select whether you want to warm up your IP automatically. Warming up an IP gradually increases the amount of email sent over this IP over time to improve your email deliverability. For more information, see [Warming Up IPs]({{root_url}}/help-support/getting-started/how-to-warm-up-an-ip-address.html).
 1. Click **Add**.
 
 {% anchor h3 %}
 Adding domain authentication and link branding 
 {% endanchor %}
 
-Sender authentication shows email providers that SendGrid has your permission to send emails on your behalf. Domain authentication works by pointing DNS entries from your domain registrar to SendGrid, which drastically increases your ability to deliver email and allows you to begin building a sender reputation for your domain and for your IP addresses. For more information domain authentication , see [How to Set Up Domain Authentication]({{root_url}}/help-support/getting-started/how-to-set-up-domain-athentication.html)
+Sender authentication shows email providers that SendGrid has your permission to send emails on your behalf. Domain authentication works by pointing DNS entries from your domain registrar to SendGrid, which drastically increases your ability to deliver email and allows you to begin building a sender reputation for your domain and for your IP addresses. For more information domain authentication , see [How to Set Up Domain Authentication]({{root_url}}help-support/getting-started/how-to-set-up-domain-authentication).
 
 {% anchor h3 %}
 Adding Subusers
@@ -73,7 +73,7 @@ Adding Subusers
 
 You can only add Subusers if you are on an AWS Pro plan. To upgrade your plan, see [Upgrading or Downgrading Your Account](#-Upgrading-or-Downgrading-Your-Account). Subusers are SendGrid accounts that belong to a parent account. They have their permissions and credit limits, which you assign as you create the subusers. Subusers help you segment your email sending and API activity.
 
-To get started with using Subusers, see the [Subusers overview]({{root_url}}/User_Guide/Settings/Subusers/index.html).
+To get started with using Subusers, see the [Subusers overview]({{root_url}}/help-support/account-and-settings/subusers.html).
 
 {% anchor h3 %}
 Upgrading or Downgrading Your Account

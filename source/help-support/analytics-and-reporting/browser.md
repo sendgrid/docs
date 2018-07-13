@@ -24,7 +24,7 @@ Choose a browser from the list to see statistics about how your recipients inter
 
 The actual statistics included vary depending upon [your account settings]({{root_url}}/help-support/account-and-settings/account.html). Emails sent, bounces and spam reports will always get tracked. Unsubscribes, clicks, and opens require that the associated settings are enabled.
 
-You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/help-support/analytics-and-reporting/statistics-overview.html#-Statistics-Filters).
+You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview.html#-Statistics-Filters).
 
 {% anchor h2 %}
 Figures

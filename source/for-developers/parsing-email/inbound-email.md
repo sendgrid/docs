@@ -35,7 +35,7 @@ You must ensure that the subdomain-domain combination for your receiving domain 
 Only whitelabeled domains may be used when configuring Inbound Parse!
 {% endwarning %}
 
-See [Setting Up The Inbound Parse Webhook]({{root_url}}/help-support/parsing-email/setting-up-the-inbound-parse-webhook.html) for step-by-step instructions.
+See [Setting Up The Inbound Parse Webhook]({{root_url}}/for-developers/parsing-email/setting-up-the-inbound-parse-webhook.html) for step-by-step instructions.
 
 {% info %}
 The total message size limit, including the message itself and any number of attachments, is 20MB. Be aware that other mail handlers will have their own limitations, and some ISPs and companies may either dramatically limit the size and/or type of attachments, or even block them altogether.

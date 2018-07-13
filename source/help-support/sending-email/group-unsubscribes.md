@@ -50,6 +50,6 @@ You can manage your Global Unsubscribes via the [Group Suppressions API]({{root_
 Additional Resources
 {% endanchor %}
 
-- [Global unsubscribes vs. Group Unsubscribes]({{root_url}}/helps-support/sending-email/index-suppressions.html#-Suppressions-vs--Unsubscribes)
+- [Global unsubscribes vs. Group Unsubscribes]({{root_url}}/help-support/sending-email/index-suppressions.html#-Suppressions-vs--Unsubscribes)
 - [Global Unsubscribes]({{root_url}}/help-support/sending-email/global-unsubscribes.html)
-- [Invalid Emails]({{root_url}}/help-support/sending-email/invalid_emails.html)
+- [Invalid Emails]({{root_url}}/help-support/sending-email/invalid-emails.html)

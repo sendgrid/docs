@@ -20,7 +20,7 @@ The actual statistics included vary depending upon your [account settings]({{roo
 
 In order to see statistics for a category, select the category and the page will show you both a graph and a table of your category’s email statistics.
 
-You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/help-supportelp/analytics-and-reporting/index.html#-Statistics-Filters).
+You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview.html#-Statistics-Filters).
 
 {% anchor h2 %}
 Figures

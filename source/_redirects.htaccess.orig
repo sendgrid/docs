@@ -810,7 +810,7 @@ Redirect 301 /User_Guide/Email_Deliverability/sender_reputation.html https://sen
 Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/index.html https://sendgrid.com/docs/help-support/sending-email/index-suppressions.html
 Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/advanced_suppression_manager.html https://sendgrid.com/docs/help-support/sending-email/unsubscribe_groups.html
 Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/defining_asm_groups.html https://sendgrid.com/docs/help-support/sending-email/unsubscribe-groups.html#-Add-A-Suppression-Group
-Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/recipient_subscription_preferences.html https://sendgrid.com/docs/help-support/sending-email/recipient_subscription_preferences.html
+Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/recipient_subscription_preferences.html https://sendgrid.com/docs/help-support/sending-email/recipient-subscription-preferences.html
 Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/suppressions_vs_unsubscribes.html https://sendgrid.com/docs/help-support/sending-email/index-suppressions.html
 Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/using_suppression_groups.html https://sendgrid.com/docs/help-support/sending-email/index-suppressions.html
 Redirect 301 /User_Guide/Email_Deliverability/Suppression_Tracking/advanced_suppression_manager.html https://sendgrid.com/docs/help-support/sending-email/unsubscribe-groups.html

@@ -28,4 +28,4 @@ Additional Resources
 
 - [Webhooks Overview]({{root_url}}/API_Reference/Webhooks/index.html)
 - [Debugging a Webhook]({{root_url}}/API_Reference/Webhooks/debug.html)
-- [Statistics Filters]({{root_url}}/help-support/analytics-reporting/stats-overview.html#-Statistics-Filters)
+- [Statistics Filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview.html#-Statistics-Filters)
