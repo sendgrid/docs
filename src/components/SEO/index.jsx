@@ -21,7 +21,7 @@ class SEO extends Component {
         title = seo.title ? seo.title : postNode.title;
         description = seo.description ? seo.description : false;
       } else {
-        title = postNode.title;
+        ({ title } = postNode);
       }
     } else {
       permalink = sitePath + postNode.location.pathname;

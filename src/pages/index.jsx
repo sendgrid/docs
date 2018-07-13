@@ -44,6 +44,7 @@ class Index extends React.Component {
           <div className="container">
             <div className="search-hero__bg">
               <h1 className="page-title">Help Center</h1>
+              <Search />
             </div>
           </div>
         </div>
