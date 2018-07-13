@@ -39,7 +39,7 @@ When you add the `<%asm_global_unsubscribe_url%>` tag to your email, we will rep
 
 Alternatively, you can use the `<%asm_global_unsubscribe_raw_url%>` tag, which will be replaced with only the global unsubscribe URL without the hyperlinked text "Unsubscribe From All Emails".
 
-For more substitution tags, please see our [transactional templates]({{root_url}}/help-suppport/sending-email/create-and-edit-transactional-templates.html#-Adding-unsubscribe-links-to-a-template).
+For more substitution tags, please see our [transactional templates]({{root_url}}/help-suppport/sending-email/create-and-edit-transactional-templates.html).
 
 {% anchor h2 %}
 Using the API

@@ -1411,7 +1411,7 @@ Redirect 301 /Glossary/spam_reports.html https://sendgrid.com/docs/glossary/spam
 Redirect 301 /Glossary/spam_traps.html https://sendgrid.com/docs/glossary/spam-traps.html
 Redirect 301 /Glossary/spf.html https://sendgrid.com/docs/glossary/spf.html
 Redirect 301 /Glossary/spoofing.html https://sendgrid.com/docs/glossary/spoofing.html
-Redirect 301 /Glossary/subjects.html https://sendgrid.com/docs/glossary/subjects.html
+Redirect 301 /Glossary/subjects.html https://sendgrid.com/docs/glossary/index.html
 Redirect 301 /Glossary/subscriber_list_management.html https://sendgrid.com/docs/glossary/subscriber-list-management.html
 Redirect 301 /Glossary/system_fields.html https://sendgrid.com/docs/glossary/system-fields.html
 Redirect 301 /Glossary/teammates.html https://sendgrid.com/docs/glossary/teammates.html

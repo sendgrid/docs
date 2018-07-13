@@ -20,7 +20,7 @@ How SMTP Works
 
 Once you’ve composed and sent an email, it no longer appears as the sleek interface you see when you look at Gmail, Yahoo!, or Outlook. After hitting “send,” your email is transformed into a long string of plain text that contains information like timestamp, sender, recipient, heading, and message body. This string of code is sent to an SMTP server.
 
-An [SMTP server]({{root_url}}/glossary/smtp_server.html) is a constantly-running application that speaks SMTP. The server decodes your email, determines which server the message must be sent to for your recipient to retrieve it, and relays the message there.
+An [SMTP server]({{root_url}}/glossary/smtp-server.html) is a constantly-running application that speaks SMTP. The server decodes your email, determines which server the message must be sent to for your recipient to retrieve it, and relays the message there.
 
 After the message has been relayed to the next server, the recipient’s email provider, like Yahoo! or Gmail, downloads the message and delivers it to the appropriate inbox.
 

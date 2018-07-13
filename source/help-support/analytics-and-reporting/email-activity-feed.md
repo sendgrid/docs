@@ -10,7 +10,7 @@ seo:
   description:
 ---
 {% info %}
-Higher volume users may not yet have access to the new Email Activity Feed. For information about the legacy Email Activity Feed, see [Legacy Email Activity]({{root_url}}/help-support/analytics-reporting-email-activity-feed.html).
+Higher volume users may not yet have access to the new Email Activity Feed. For information about the legacy Email Activity Feed, see [Legacy Email Activity]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed.html).
 {% endinfo %}
 
 <iframe src="https://player.vimeo.com/video/259928139" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
