@@ -27,6 +27,14 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: config.siteUrl + pathPrefix,
+        sitemap: `${config.siteUrl + pathPrefix}/sitemap.xml`,
+        policy: [{ userAgent: '*', disallow: ['/'] }],
+      },
+    },
+    {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
@@ -61,7 +69,7 @@ module.exports = {
     },
     'gatsby-plugin-sharp',
     'gatsby-plugin-catch-links',
-    'gatsby-plugin-sitemap',
+    // 'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {

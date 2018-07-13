@@ -16,6 +16,7 @@
     "gatsby-plugin-nprogress": "^1.0.11",
     "gatsby-plugin-offline": "^1.0.13",
     "gatsby-plugin-react-helmet": "^2.0.4",
+    "gatsby-plugin-robots-txt": "^1.1.0",
     "gatsby-plugin-sass": "^1.0.25",
     "gatsby-plugin-sharp": "^1.6.27",
     "gatsby-plugin-sitemap": "^1.2.11",

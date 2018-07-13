@@ -11,13 +11,18 @@ class SEO extends Component {
     // These will be set differently for a doc or page
     let title;
     let permalink;
-    let description;
+    let description = false;
 
     if (postType === 'doc') {
       const { seo } = postNode.frontmatter;
       permalink = sitePath + postNode.fields.permalink;
-      title = seo.title ? seo.title : postNode.title;
-      description = seo.description ? seo.description : false;
+
+      if (seo) {
+        title = seo.title ? seo.title : postNode.title;
+        description = seo.description ? seo.description : false;
+      } else {
+        ({ title } = postNode);
+      }
     } else {
       permalink = sitePath + postNode.location.pathname;
       ({ title } = this.props);
