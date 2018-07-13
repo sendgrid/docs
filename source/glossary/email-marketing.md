@@ -30,7 +30,7 @@ SendGrid can help you achieve your email marketing goals with our [Marketing Ema
 * [Importing Custom HTML With Drag & Drop Markup]({{root_url}}/help-support/sending-email/editor.html#-Importing-Custom-HTML-With-Drag-&-Drop-Markup)
 * [Ability to use your own HTML]({{root_url}}/help-support/sending-email/editor.html)
 * [Scheduled Marketing campaigns delivery]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html)
-* [Powerful analytics]({{root_url}}/help-support/analytics-and-reporting/statistics-overview.html)
+* [Powerful analytics]({{root_url}}/help-support/analytics-and-reporting/stats-overview.html)
 * [A/B testing]({{root_url}}/help-support/sending-email/a-b-testing.html)
 * [List Segmentation]({{root_url}}/help-support/managing-contacts/segmenting-your-contacts.html)
 
