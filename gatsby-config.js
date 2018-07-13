@@ -2,6 +2,12 @@ const config = require('./data/SiteConfig');
 
 const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix;
 
+const env = () => process.env.GATSBY_ENV;
+
+console.log('====================================');
+console.log(process.env.GATSBY_ENV);
+console.log('====================================');
+
 module.exports = {
   pathPrefix: config.pathPrefix,
   siteMetadata: {
@@ -24,6 +30,14 @@ module.exports = {
       options: {
         name: 'docs',
         path: `${__dirname}/content/${config.docsDir}`,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: config.siteUrl + pathPrefix,
+        sitemap: `${config.siteUrl + pathPrefix}/sitemap.xml`,
+        policy: [{ userAgent: '*', disallow: ['/'] }],
       },
     },
     {
@@ -61,7 +75,7 @@ module.exports = {
     },
     'gatsby-plugin-sharp',
     'gatsby-plugin-catch-links',
-    'gatsby-plugin-sitemap',
+    // 'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
