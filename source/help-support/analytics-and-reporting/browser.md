@@ -40,4 +40,4 @@ Additional Resources
 
 - [Account Settings]({{root_url}}/help-support/account-and-settings/account.html)
 - [Statistics Filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview.html#-Statistics-Filters)
-- [Browser Comparison]({{root_url}}/analytics-and-reporting/browser-comparison.html)
+- [Browser Comparison]({{root_url}}/help-support/analytics-and-reporting/browser-comparison.html)

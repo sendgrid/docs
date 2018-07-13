@@ -73,7 +73,7 @@ Adding Subusers
 
 You can only add Subusers if you are on an AWS Pro plan. To upgrade your plan, see [Upgrading or Downgrading Your Account](#-Upgrading-or-Downgrading-Your-Account). Subusers are SendGrid accounts that belong to a parent account. They have their permissions and credit limits, which you assign as you create the subusers. Subusers help you segment your email sending and API activity.
 
-To get started with using Subusers, see the [Subusers overview]({{root_url}}/User_Guide/Settings/Subusers/index.html).
+To get started with using Subusers, see the [Subusers overview]({{root_url}}/help-support/account-and-settings/subusers/.html).
 
 {% anchor h3 %}
 Upgrading or Downgrading Your Account

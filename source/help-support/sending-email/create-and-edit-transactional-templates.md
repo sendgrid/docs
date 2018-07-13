@@ -113,8 +113,4 @@ Adding unsubscribe links to a template
 
 For more information about unsubscribes, check out our [unsubscribe documentation]({{root_url}}/help-support/sending-email/index-suppressions.html).
 
-{% anchor h2 %}
-Additional Resources
-{% endanchor h2 %}
 
-- [Transactional Email Unsubscribes]({{root_url}}/User_Guide/Transactional_Email/unsubscribes.html)
