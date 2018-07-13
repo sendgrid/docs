@@ -550,7 +550,7 @@ Redirect 301 /Classroom/Troubleshooting/you_cannot_change_your_package_at_this_t
 Redirect 301 /Classroom/Troubleshooting/your_account_is_still_being_provisioned_you_may_not_be_able_to_send_out_any_email.html https://sendgrid.com/docs/help-support/account-and-settings/account.html
 Redirect 301 /Classroom/Troubleshooting/your_account_is_still_being_provisioned_you_will_not_be_able_to_send_out_any_email.html https://sendgrid.com/docs/help-support/account-and-settings/account.html
 Redirect 301 /Classroom/Troubleshooting/your_sendgrid_account_is_at_risk_for_suspension_what_should_i_do.html https://sendgrid.com/docs/help-support/account-and-settings/account-under-review.html
-Redirect 301 /Classroom/Troubleshooting/email_was_deferred_due_to_the_following_reasons_ip_deferrals_messages.html https://sendgrid.com/docs/help-support/getting-started/how-to-warm-up-an-ip-address.html
+Redirect 301 /Classroom/Troubleshooting/email_was_deferred_due_to_the_following_reasons_ip_deferrals_messages.html https://sendgrid.com/docs/help-support/getting-started/warming-up-an-ip-address.html
 Redirect 301 /Classroom/Troubleshooting/emails_are_being_sent_multiple_times.html https://sendgrid.com/docs/help-support/account-and-settings/account.html
 Redirect 301 /Classroom/Troubleshooting/my_client_is_complaining_that_they_have_not_received_an_email.html https://sendgrid.com/docs/help-support/getting-started/email-deliverability.html
 Redirect 301 /Classroom/Troubleshooting/testing_your_connectivity_to_sendgrids_smtp_relay_usinng_telnet.html https://sendgrid.com/docs/for-developers/getting-started/getting-started-smtp.html

@@ -58,14 +58,14 @@ You can only add a Dedicated IP Address if you are on an AWS Pro plan. To upgrad
    ![]({{root_url}}/images/dedicated_ip_button.png "Dedicated IP button")
    This takes you to the Dedicated IP Addresses page 
 1. Next, click **Add an IP Address**.
-1. Select the number of IP Addresses to add, and select whether you want to warm up your IP automatically. Warming up an IP gradually increases the amount of email sent over this IP over time to improve your email deliverability. For more information, see [Warming Up IPs]({{root_url}}/help-support/getting-started/how-to-warm-up-an-ip-address.html).
+1. Select the number of IP Addresses to add, and select whether you want to warm up your IP automatically. Warming up an IP gradually increases the amount of email sent over this IP over time to improve your email deliverability. For more information, see [Warming Up IPs]({{root_url}}/help-support/getting-started/warming-up-an-ip-address.html).
 1. Click **Add**.
 
 {% anchor h3 %}
 Adding domain authentication and link branding 
 {% endanchor %}
 
-Sender authentication shows email providers that SendGrid has your permission to send emails on your behalf. Domain authentication works by pointing DNS entries from your domain registrar to SendGrid, which drastically increases your ability to deliver email and allows you to begin building a sender reputation for your domain and for your IP addresses. For more information domain authentication , see [How to Set Up Domain Authentication]({{root_url}}help-support/getting-started/how-to-set-up-domain-authentication).
+Sender authentication shows email providers that SendGrid has your permission to send emails on your behalf. Domain authentication works by pointing DNS entries from your domain registrar to SendGrid, which drastically increases your ability to deliver email and allows you to begin building a sender reputation for your domain and for your IP addresses. For more information domain authentication , see [How to Set Up Domain Authentication]({{root_url}}/help-support/getting-started/how-to-set-up-domain-authentication).
 
 {% anchor h3 %}
 Adding Subusers

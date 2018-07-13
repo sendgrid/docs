@@ -14,7 +14,7 @@ Email Marketing (also known as commercial or promotional email) as defined by th
 
 * Coupons
 * Newsletters
-* [Peer Initiated Invitations]({{root_url}}/glossary/peer_invitations.html)
+* [Peer Initiated Invitations]({{root_url}}/glossary/peer-invitations.html)
 * Product Announcements
 * Promotional Emails
 * [Reconfirmation Email Campaigns]({{root_url}}/glossary/reconfirmation.html)

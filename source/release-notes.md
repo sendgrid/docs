@@ -107,7 +107,7 @@ Improved Sender Authentication Process (formerly "Whitelabel")
 For more information on the new process for sender authentication: 
 - Access [Sender Authentication](https://app.sendgrid.com/settings/sender_auth)
 - Read the [blog post](https://sendgrid.com/blog/new-sender-authentication/) about Sender Authentication.
-- Check out our how to docs on [How to set up domain authentication]({{root_url}}/help-support/how-to-set-up-domain-authentication.html) and [How to set up link branding]({{root_url}}/help-support/how-to-set-up-link-branding.html)
+- Check out our how to docs on [How to set up domain authentication]({{root_url}}/help-support/getting-started/how-to-set-up-domain-authentication.html) and [How to set up link branding]({{root_url}}/help-support/getting-started/how-to-set-up-link-branding.html)
 
 
 {% anchor h2 %}
