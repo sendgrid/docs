@@ -19,6 +19,5 @@ Additional Resources
 {% endanchor %}
 
 * [Delivery Metrics]({{root_url}}/User_Guide/Statistics/index.html)
-* [Bounces]({{root_url}}/Glossary/bounces.html)
-* [Subscriber List Management]({{root_url}}/Glossary/subscriber_list_management.html)
-* [Deliverability Center](https://sendgrid.com/deliverabilitycenter)
+* [Bounces]({{root_url}}/glossary/bounces.html)
+* [Subscriber List Management]({{root_url}}/glossary/subscriber-list-management.html)

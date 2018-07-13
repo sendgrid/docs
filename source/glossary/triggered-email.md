@@ -11,5 +11,5 @@ navigation:
 ---
 
 {% info %}
-Triggered email is another term for email automation, or [automated email]({{root_url}}/Glossary/automated_email.html).
+Triggered email is another term for email automation, or [automated email]({{root_url}}/glossary/automated-email.html).
 {% endinfo %}
