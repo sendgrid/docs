@@ -742,10 +742,10 @@ JSON objects
 - <a name="reason"></a>`reason` - any sort of error response returned by the receiving server that describes the reason this event type was triggered.
 - <a name="status"></a>`status` - status code string. Corresponds to HTTP status code - for example, a JSON response of 5.0.0 is the same as a 500 error response.
 - <a name="response"></a>`response` - the full text of the HTTP response error returned from the receiving server.
-- <a name="tls"></a>`tls` - indicates whether TLS encription was used in sending this message. For more information about TLS, see the [TLS Glossary page]({{root_url}}/Glossary/tls.html).
+- <a name="tls"></a>`tls` - indicates whether TLS encription was used in sending this message. For more information about TLS, see the [TLS Glossary page]({{root_url}}/glossary/tls.html).
 - <a name="url"></a>`url` - the URL where the event originates. For click events, this is the URL clicked on by the recipient.
 - <a name="attempt"></a>`attempt` - the number of times SendGrid has attempted to deliver this message.
-- <a name="category"></a>`category` - [Categories]({{root_url}}/Glossary/categories.html) are custom tags that you set for the purpose of organizing your emails. If you send single categories as an array, they will be returned by the webhook as an array. If you send single categories as a string, they will be returned by the webhook as a string.
+- <a name="category"></a>`category` - [Categories]({{root_url}}/glossary/categories.html) are custom tags that you set for the purpose of organizing your emails. If you send single categories as an array, they will be returned by the webhook as an array. If you send single categories as a string, they will be returned by the webhook as a string.
 
 String categories:
 
