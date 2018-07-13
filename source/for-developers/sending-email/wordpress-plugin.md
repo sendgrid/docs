@@ -18,7 +18,7 @@ What is the SendGrid WordPress Plugin?
 
 SendGrid's cloud-based email infrastructure relieves businesses of the cost and complexity of maintaining custom email systems. SendGrid provides reliable deliverability, scalability, and real-time analytics along with flexible APIs that make custom integration with your application a breeze.
 
-SendGrid’s [WordPress plugin](https://wordpress.org/plugins/sendgrid-email-delivery-simplified/) replaces WordPress’s default **wp_mail()** function by using either an SMTP or API integration with SendGrid to send outgoing email from your WordPress installation. It also allows you to upload contacts directly to your SendGrid [Marketing Campaigns]({{root_url}}/User_Guide/Marketing_Campaigns/index.html) account via a [subscription widget]({{root_url}}/Integrate/Tutorials/WordPress/subscription_widget.html).
+SendGrid’s [WordPress plugin](https://wordpress.org/plugins/sendgrid-email-delivery-simplified/) replaces WordPress’s default **wp_mail()** function by using either an SMTP or API integration with SendGrid to send outgoing email from your WordPress installation. It also allows you to upload contacts directly to your SendGrid [Marketing Campaigns]({{root_url}}/User_Guide/Marketing_Campaigns/index.html) account via a [subscription widget]({{root_url}}/for-developers/managing-contacts/wordpress-subscription-widget.html).
 
 By using the SendGrid plugin, you will be able to take advantage of improved deliverability and an expanded feature set, including tracking and analytics, to enhance user engagement on your WordPress installation. SendGrid also provides world class customer support, should you run into any issues.
 
@@ -211,5 +211,5 @@ If you have already installed the SendGrid plugin in a multisite environment and
 {% anchor h2 %}
 Related content
 {% endanchor %}
-* [SendGrid's WordPress Subscription Widget]({{root_url}}/Integrate/Tutorials/WordPress/subscription_widget.html)
+* [SendGrid's WordPress Subscription Widget]({{root_url}}/for-developers/managing-contacts/wordpress-subscription-widget.html)
 * [SendGrid's WordPress Integration FAQ]({{root_url}}/Integrate/Tutorials/WordPress/wordpress_integration_faq.html)

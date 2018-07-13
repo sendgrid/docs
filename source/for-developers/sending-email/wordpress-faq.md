@@ -180,4 +180,4 @@ Related Content
 {% endanchor %}
 
 * [SendGrid’s WordPress Plugin]({{root_url}}/Integrate/Tutorials/WordPress/sendgrid_wordpress_plugin.html)
-* [SendGrid’s WordPress Subscription Widget]({{root_url}}/Integrate/Tutorials/WordPress/subscription_widget.html)
+* [SendGrid’s WordPress Subscription Widget]({{root_url}}/for-developers/managing-contacts/wordpress-subscription-widget.html)
