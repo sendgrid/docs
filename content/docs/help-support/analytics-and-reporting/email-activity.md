@@ -11,7 +11,7 @@ navigation:
 ---
 
 {% warning %}
-If you are looking for the new Email Activity documentation, please go [here]({{root_url}}/User_Guide/email_activity_feed.html). 
+If you are looking for the new Email Activity documentation, please go [here]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed.html). 
 {% endwarning %}
 
 <iframe src="https://player.vimeo.com/video/130900679" width="500" height="312" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -58,7 +58,7 @@ Searching the Activity Feed
 Subuser email activity
 {% endanchor h2 %}
 
-To see a subuser’s email activity, log in as that subuser or [impersonate]({{root_url}}/User_Guide/Settings/Subusers/impersonation.html) the subuser account.
+To see a subuser’s email activity, log in as that subuser or [impersonate]({{root_url}}/help-support/account-and-settings/subusers.html) the subuser account.
 
 You cannot see a parent accounts email activity from a subuser account.
 
@@ -139,7 +139,7 @@ You can check email delivery status by using the Email Activity page, or by usin
 
 - For a successful delivery, the Email Activity page, or the Event Webhook shows a delivered event - expanding it shows a reason code of 250 OK. This means the receiving server has accepted the message. You can also check bounced, deferred and processed messages.
 
-- If you can't find an email on the Email Activity page, check your suppression lists; [bounces]({{root_url}}/User_Guide/Suppressions/bounces.html), [blocks]({{root_url}}/User_Guide/Suppressions/blocks.html), [spam reports]({{root_url}}/User_Guide/Suppressions/spam_reports.html), [invalid email]({{root_url}}/User_Guide/Suppressions/invalid_emails.html).
+- If you can't find an email on the Email Activity page, check your suppression lists; [bounces]({{root_url}}/help-support/sending-email/bounces.html), [blocks]({{root_url}}/help-support/sending-email/blocks.html), [spam reports]({{root_url}}/help-support/analytics-and-reporting/spam-reports.html), [invalid email]({{root_url}}/help-support/sending-email/invalid-emails.html).
 
 - Have the recipient check their spam folder.
 
@@ -151,7 +151,7 @@ In your logs, you may see the following error message accompanying a deferral ev
 
 `Email was deferred due to the following reason(s): ["IPs reached ISP-suggested hourly limits" http://send.gd/1uKnEBh]`
 
-This deferral means you've been going over IP warmup limits on a new IP. For more information about IP Warmup, see [Warming up an IP Address]({{root_url}}/User_Guide/Settings/ip_warmup.html).
+This deferral means you've been going over IP warmup limits on a new IP. For more information about IP Warmup, see [Warming up an IP Address]({{root_url}}/help-support/getting-started/warming-up-an-ip-address.html).
 
 In your logs, you may see the following error message accompanying a deferral event:
 
@@ -224,6 +224,4 @@ These are some common issues people see with reading their email activity feed.
 Additional Resources
 {% endanchor h2 %}
 
-- [Email Activity for Mobile ]({{root_url}}/User_Guide/SendGrid_for_Mobile/email_activity.html)
-- [Dashboard]({{root_url}}/User_Guide/dashboard.html)
 - [Option to "Delete From Bounce List" in Email Activity]({{root_url}}/Classroom/Track/Bounces/delete_from_bounce_list_option_in_email_activity.html)

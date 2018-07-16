@@ -8,8 +8,6 @@ seo:
   title: Senders
   override: true
   description:
-group: statistics
-
 ---
 * [Before you Begin](#-Before-you-Begin)
 * [Adding a Sender](#-Adding a Sender)
@@ -51,7 +49,7 @@ You must verify your sender identity before you can edit it or use it to send a 
 {% endwarning %}
    To resend your verification email, hover over the Action Menu on the Sender Management page and select **Resend Verification**.
 {% info %}
-If you have an [authenticated domain]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html) and your sender email address matches that domain exactly, your sender identity will automatically verify.
+If you have an [authenticated domain]({{root_url}}/help-support/getting-started/how-to-set-up-domain-authentication.html) and your sender email address matches that domain exactly, your sender identity will automatically verify.
 {% endinfo %}
 
 {% warning %}

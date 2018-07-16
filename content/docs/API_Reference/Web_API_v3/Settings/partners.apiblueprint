@@ -1,0 +1,73 @@
+---
+layout: page
+title: Partner
+weight: 0
+navigation:
+  show: true
+breadcrumbs: true
+seo:
+  title: Partner Settings API
+  keywords: partner settings api, New Relic settings, sendwithus settings
+  description: Manage SendGrid partner settings with the SendGrid API.
+---
+
+FORMAT: 1A
+
+# Group Partner Settings
+
+## Partner Settings Collection [/partner_settings?limit={limit}&offset={offset}]
+
++ Parameters
+    + limit (optional, number, `20`) ... Number of settings to return.
+    + offset (optional, number, `1`) ... Paging offset.
+
+### Get Partner Settings [GET]
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "result":
+                [
+                  {
+                    "name": "new_relic",
+                    "title": "New Relic",
+                    "description": "lorem ipsum... .",
+                    "enabled": true
+                  }
+                ]
+            }
+
+## New Relic Partner Settings Resource [/partner_settings/new_relic]
+
+### Get New Relic Settings [GET]
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "enabled": true,
+              "license_key": "key"
+            }
+
+### Update New Relic Settings [PATCH]
+
++ Request (application/json)
+
+    + Body
+
+            {
+              "enabled": true,
+              "license_key": "key"
+            }
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "enabled": true,
+              "license_key": "key"
+            }

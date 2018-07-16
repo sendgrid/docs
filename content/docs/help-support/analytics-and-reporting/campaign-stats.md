@@ -64,7 +64,7 @@ Every stats CSV that you export will contain a row containing the totals for eac
 Leveraging Engagement Statistics
 {% endanchor %}
 
-To learn how to leverage your engagement statistics, please visit our [Classroom]({{root_url}}/Classroom/Basics/Marketing_Campaigns/engagement_stats.html).
+To learn how to leverage your engagement statistics, please visit our [Classroom]({{root_url}}/help-support/analytics-and-reporting/campaign-stats.html).
 
 {% anchor h3 %}
 Viewing Campaign Clicks and Opens
@@ -87,7 +87,7 @@ Creating a Segment Based on Your Engagement Metrics
 1. From the Campaigns page or the individual campaign stats page, hover over the **Unique Opens** or **Unique Clicks** stats.
 1. Click **View Details** and then select **Create Segment**.
 
-   A window opens with segmentation options. By default, the segment will contain the conditions to capture all recipients who either opened your campaign or clicked within your campaign. The segment will be given the name _“Contacts who [clicked/opened] [your campaign name]”_. You can rename this segment or modify the conditions of the segment as you wish directly in this window. For more information on segmentation, [click here]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html#-Creating-a-Segment).
+   A window opens with segmentation options. By default, the segment will contain the conditions to capture all recipients who either opened your campaign or clicked within your campaign. The segment will be given the name _“Contacts who [clicked/opened] [your campaign name]”_. You can rename this segment or modify the conditions of the segment as you wish directly in this window. For more information on segmentation, [click here]({{root_url}}/help-support/managing-contacts/segmenting-your-contacts.html#-Creating-a-Segment).
 
 1. Click **Save**. 
 <br>You now have a dynamic segment that will continuously update as recipients engage with this campaign.
@@ -109,5 +109,5 @@ In addition to creating a dynamic segment based on campaign engagement as descri
 Additional Resources
 {% endanchor h2 %}
 
-- [Sending a Campaign](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html)
-- [A/B Testing Your Campaign](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/a_b_testing.html)
+- [Sending a Campaign](https://sendgrid.com/docs/help-support/getting-started/how-to-send-email.html)
+- [A/B Testing Your Campaign](https://sendgrid.com/docs/help-support/sending-email/a-b-testing.html)

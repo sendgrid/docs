@@ -1,0 +1,114 @@
+---
+layout: page
+title: Parse API
+weight: 80
+navigation:
+  show: true
+---
+FORMAT: 1A
+
+The following Parse API settings allow you to manage the [Inbound Parse Webhook]({{root_url}}/API_Reference/Webhooks/parse.html).
+
+In addition to configuring the Inbound Parse via our API, you may also configure the Inbound Parse in the Settings menu available from your SendGrid dashboard. For more information, see our [User Guide]({{root_url}}/User_Guide/Settings/parse.html).
+
+## Parse Settings Collection [/user/webhooks/parse/settings?limit={limit}&offset={offset}]
+
+### Get Parse Settings [GET]
+
+Retrieves all of your current inbound parse settings.
+
++ Parameters
+    + limit (optional, number, `20`) ... Number of settings to return.
+    + offset (optional, number, `1`) ... Paging offset.
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "result":
+                [
+                  {
+                    "url": "http://mydomain.com/parse",
+                    "hostname": "mail.mydomain.com",
+                    "spam_check": true,
+                    "send_raw": true
+                  }
+                ]
+            }
+
+## Parse Settings Create Resource [/user/webhooks/parse/settings]
+
+### Create Parse Setting [POST]
+
+Creates a new inbound parse setting.
+
++ Request (application/json)
+
+    + Body
+
+            {
+               "hostname": "myhostname.com",
+               "url": "http://email.myhosthame.com",
+               "spam_check": true,
+               "send_raw": false
+            }
+
++ Response 201 (application/json)
+
+    + Body
+
+            {
+              "url": "http://email.myhostname.com",
+              "hostname": "myhostname.com",
+              "spam_check": false,
+              "send_raw": true
+            }
+
+## Parse Settings Resource [/user/webhooks/parse/settings/{hostname}]
+
+### Get Parse Setting [GET]
+
+Retrieves a specific inbound parse setting.
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "url": "http://mydomain.com/parse",
+              "hostname": "mail.mydomain.com",
+              "spam_check": true,
+              "send_raw": true
+            }
+
+### Update Parse Setting [PATCH]
+
+Updates one of your current inbound parse settings.
+
++ Request (application/json)
+
+    + Body
+
+            {
+               "url": "http://newdomain.com/parse",
+               "spam_check": false,
+               "send_raw": true
+            }
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              "url": "http://mydomain.com/parse",
+              "hostname": "mail.mydomain.com",
+              "spam_check": true,
+              "send_raw": true
+            }
+
+### Delete Parse Setting [DELETE]
+
+Deletes one of your current inbound parse settings.
+
++ Response 204 (application/json)

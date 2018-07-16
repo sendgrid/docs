@@ -15,7 +15,7 @@ seo:
 
 <iframe src="https://player.vimeo.com/video/229916004" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-You can filter the information stored in your [contact lists](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html) to create segments. Segmenting contacts using different conditions allows you to create marketing campaigns that directly addresses the wants and needs of a particular audience. You can create a segment that pulls from ALL CONTACTS or a specific existing list. [Custom fields](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html) allow you to use unique information to identify contacts for different segments.
+You can filter the information stored in your contact lists to create segments. Segmenting contacts using different conditions allows you to create marketing campaigns that directly addresses the wants and needs of a particular audience. You can create a segment that pulls from ALL CONTACTS or a specific existing list. [Custom fields](https://sendgrid.com/docs/help-support/managing-contacts/custom-fields.html) allow you to use unique information to identify contacts for different segments.
 Segments are dynamically updated over time as you add contacts who meet the criteria of your segment, or as the traits of your contacts change. For example, a segment with the criteria ”opened an email within 30 days” will evolve as contacts engage (or don’t engage) with your email. 
 
 {% anchor h2 %}
@@ -140,6 +140,6 @@ The download link for your CSV export will be valid for 24 hours.
 Additional Resources
 {% endanchor h3 %}
 
-- [Contacts](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/contacts.html) 
-- [Custom Fields](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html)
+- [Contacts](https://sendgrid.com/docs/help-support/managing-contacts/adding-contacts.html) 
+- [Custom Fields](https://sendgrid.com/docs/help-support/managing-contacts/custom-fields.html)
 - [Tips on Segmenting Your Active Subscribers](https://sendgrid.com/blog/tips-on-segmenting-your-active-subscribers/)

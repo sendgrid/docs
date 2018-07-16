@@ -1,0 +1,30 @@
+---
+layout: page
+weight: 300
+title: Customer Change
+navigation:
+   show: true
+---
+
+{% anchor h2 %}
+Change
+{% endanchor %}
+
+Change the plan of a SendGrid reseller customer account.
+
+{% parameters post %}
+ {% parameter id Yes 'Id of the customer on SendGrid side' 'This value is returned in the <a href="customer_provision.html">Provision call </a> '%}
+ {% parameter partner_id Yes 'Must be a unique identifier from Reseller side' 'The partner_id provided at provision of the SendGrid account'%}
+ {% parameter plan Yes 'New plan that the customer selected' 'SendGrid plan, which defines customer credits and permissions' %}
+{% endparameters %}
+
+{% apiv3example put PUT https://api.sendgrid.com/reseller.php/plug/:partner_name/resources/:id partner_id=customer_unique_id&plan=bronze %}
+  {% v3response %}
+HTTP/1.1 200 OK
+
+{
+  "config": null,
+  "message": "You have successfully upgraded or downgraded your plan"
+}
+  {% endv3response %}
+{% endapiv3example %}

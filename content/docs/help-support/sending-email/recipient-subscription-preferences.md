@@ -8,7 +8,6 @@ seo:
   keywords: unsubscribe page, suppression page, recipient unsubscribe
 navigation:
   show: true
-group: statistics
 ---
 
 Emails that are sent with an unsubscribe group specified will have two links at the bottom of the email: an “Email Preferences” link, and an “Unsubscribe” link.
@@ -31,14 +30,14 @@ If you choose not to use substitution tags, your emails will automatically have 
 Manage Email Preferences
 {% endanchor %}
 
-You can also choose to manually add the `<%asm_preferences_url%>` tag to your email. We will automatically replace that tag with the text "Manage Email Preferences" wherever the tag is found in your email. This will allow your recipients to see your Unsubscribe Groups in a [Subscription Preference page]({{root_url}}/User_Guide/Suppressions/recipient_subscription_preferences.html) and then choose which groups they are interested in.
+You can also choose to manually add the `<%asm_preferences_url%>` tag to your email. We will automatically replace that tag with the text "Manage Email Preferences" wherever the tag is found in your email. This will allow your recipients to see your Unsubscribe Groups in a [Subscription Preference page]({{root_url}}/help-support/sending-email/recipient-subscription-preferences.html) and then choose which groups they are interested in.
 
-Alternatively, you can use the `<%asm_preferences_raw_url%>` substitution tag. This will be replaced with just the URL pointing to your [Subscription Preference page]({{root_url}}/User_Guide/Suppressions/recipient_subscription_preferences.html) without the hyperlinked text "Manage Email Preferences".
+Alternatively, you can use the `<%asm_preferences_raw_url%>` substitution tag. This will be replaced with just the URL pointing to your [Subscription Preference page]({{root_url}}/help-support/sending-email/recipient-subscription-preferences.html) without the hyperlinked text "Manage Email Preferences".
 
-For more substitution tags, please see our [transactional templates]({{root_url}}/User_Guide/Transactional_Templates/create_and_edit_transactional_templates.html#-Adding-unsubscribe-links-to-a-template).
+For more substitution tags, please see our [transactional templates]({{root_url}}/help-support/sending-email/create-and-edit-transactional-templates.html#-Adding-unsubscribe-links-to-a-template).
 
 {% anchor h2 %}
 Additional Resources
 {% endanchor %}
 
-- [Spam Reports]({{root_url}}/User_Guide/Suppressions/spam_reports.html)
+- [Spam Reports]({{root_url}}/help-support/analytics-and-reporting/spam-reports.html)

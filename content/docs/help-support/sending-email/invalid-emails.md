@@ -8,7 +8,6 @@ seo:
   keywords: invalid emails, malformed emails
 navigation:
   show: true
-group: email-activity
 ---
 
 An invalid email occurs when you attempt to send email to an address that is formatted in a manner that does not meet internet email format standards or the email does not exist at the recipient's mail server. Examples include addresses without the “@” sign or addresses that include certain special characters and/or spaces. This response can come from our own server or the recipient mail server.
@@ -39,6 +38,6 @@ You can download your list as a CSV by clicking the gear icon at the top of the 
 Additional Resources
 {% endanchor %}
 
-- [Recipient Subscription Preferences]({{root_url}}/User_Guide/Suppressions/recipient_subscription_preferences.html)
-- [Spam Reports]({{root_url}}/User_Guide/Suppressions/spam_reports.html)
+- [Recipient Subscription Preferences]({{root_url}}/help-support/sending-email/recipient-subscription-preferences.html)
+- [Spam Reports]({{root_url}}/help-support/analytics-and-reporting/spam-reports.html)
 - [Invalid Emails API]({{root_url}}/API_Reference/Web_API_v3/invalid_emails.html)

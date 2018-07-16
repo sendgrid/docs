@@ -8,7 +8,6 @@ seo:
   keywords: Bounce suppressions, bounce unsubscribes, bounce email unsubscribe, bounce email suppression
 navigation:
   show: true
-group: "tracking"
 ---
 
 A bounce occurs when a sent message is rejected by the receiving mail server. The most common causes for bounced email messages include a misspelled or nonexistent email address. A repeat bounce is when an address has bounced, then bounced a second time and logged to the bounce suppression list, but you ask us to send to this recipient again. Our system will suppress the message, because it ‘knows’ that recipient address is bad.
@@ -42,5 +41,5 @@ Additional Resources
 {% endanchor %}
 
 - [Set up Bounce Forwarding to go to the email’s from address]({{site.support_url}}/hc/en-us/articles/200181478)
-- [Global Unsubscribes]({{root_url}}/User_Guide/Suppressions/global_unsubscribes.html)
-- [Group Unsubscribes]({{site.app_url}}/suppressions/group_unsubscribes)
+- [Global Unsubscribes]({{root_url}}/help-support/sending-email/global-unsubscribes.html)
+- [Group Unsubscribes]({{site.app_url}}/help-support/sending-email/group-unsubscribes)

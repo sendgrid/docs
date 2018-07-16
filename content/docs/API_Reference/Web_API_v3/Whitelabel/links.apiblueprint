@@ -1,0 +1,357 @@
+---
+layout: page
+weight: 0
+title: Links
+seo:
+  title: Whitelabel Links
+  description: Whitelabel click tracking links and open tracking image with SendGrid over the v3 API
+  keywords: link whitelabel, whitelabel link, whitelabel click tracking links, whitelabel open tracking image
+navigation:
+  show: true
+---
+
+FORMAT: 1A
+
+# Group Link Whitelabel
+
+A link whitelabel consists of a subdomain and domain that will be used to rewrite links in mail messages. Our customer will be asked
+to create a couple CNAME records for the links to be rewritten to and for us to verify that they are the domain owners.
+
+## Links Collection [/whitelabel/links]
+
+### List all Links [GET]
+
++ Response 200 (application/json)
+
+  + Body
+        [{
+            "id": 1,
+            "domain": "example.com",
+            "subdomain":"mail",
+            "username": "john@example.com",
+            "user_id": 7,
+            "default": true,
+            "valid": true,
+            "legacy": false,
+            "dns": {
+                "domain_cname": {
+                    "valid": true,
+                    "type": "cname",
+                    "host": "mail.example.com",
+                    "data": "sendgrid.net"
+                },
+                "owner_cname": {
+                    "valid": true,
+                    "type": "cname",
+                    "host": "7.example.com",
+                    "data": "sendgrid.net"
+                }
+            }
+        }, {
+            "id": 2,
+            "domain": "example2.com",
+            "subdomain":"news",
+            "username": "john@example.com",
+            "user_id": 8,
+            "default": false,
+            "valid": false,
+            "legacy": false,
+            "dns": {
+                "domain_cname": {
+                    "valid": true,
+                    "type": "cname",
+                    "host": "news.example2.com",
+                    "data": "sendgrid.net"
+                },
+                "owner_cname": {
+                    "valid": false,
+                    "type": "cname",
+                    "host": "8.example2.com",
+                    "data": "sendgrid.net"
+                }
+            }
+         }]
+
+### Create a Link [POST]
+
++ Attributes
+    + domain example.com (required, string) - Domain to create the whitelabel for.
+    + subdomain mail (required, string) - Subdomain to create the whitelabel for.
+    + default true (optional, boolean) - Whether to use this link whitelabel as the fallback when a match cannot be found.
+
+{% info %}
+You may create up to a maximum of 1500 link whitelabels.
+{% endinfo %}
+
++ Request (application/json)
+
+  + Body
+        {
+            "domain": "example.com",
+            "subdomain": "mail",
+            "default": true
+        }
+
++ Response 201 (application/json)
+
+  + Body
+        {
+            "id": 1,
+            "domain": "example.com",
+            "subdomain": "mail",
+            "username": "john@example.com",
+            "user_id": 7,
+            "default": false,
+            "valid": true,
+            "legacy": false,
+            "dns": {
+                "domain_cname": {
+                    "valid": true,
+                    "type": "cname",
+                    "host": "mail.example.com",
+                    "data": "sendgrid.net"
+                },
+                "owner_cname": {
+                    "valid": true,
+                    "type": "cname",
+                    "host": "7.example.com",
+                    "data": "sendgrid.net"
+                }
+            }
+        }
+
+## Link [/whitelabel/links/{id}]
+
++ Parameters
+   + ID (required, integer, `1234`) ... The ID of your link whitelabel
+
+### Retrieve a Link [GET]
+
++ Response 200 (application/json)
+
+  + Body
+        {
+            "id": 1,
+            "domain": "example.com",
+            "subdomain": "mail",
+            "username": "john@example.com",
+            "user_id": 7,
+            "default": false,
+            "valid": true,
+            "legacy": false,
+            "dns": {
+                "domain_cname": {
+                    "valid": true,
+                    "type": "cname",
+                    "host": "mail.example.com",
+                    "data": "sendgrid.net"
+                },
+                "owner_cname": {
+                    "valid": true,
+                    "type": "cname",
+                    "host": "7.example.com",
+                    "data": "sendgrid.net"
+                }
+            }
+        }
+
+### Update a Link [PATCH]
++ Request (application/json)
+
+  + Body
+        {
+            "default": true
+        }
+
++ Response 200 (application/json)
+
+  + Body
+        {
+            "id": 1,
+            "domain": "example.com",
+            "subdomain": "mail",
+            "username": "john@example.com",
+            "user_id": 7,
+            "default": true,
+            "valid": true,
+            "legacy": false,
+            "dns": {
+                "domain_cname": {
+                    "valid": true,
+                    "type": "cname",
+                    "host": "mail.example.com",
+                    "data": "sendgrid.net"
+                },
+                "owner_cname": {
+                    "valid": true,
+                    "type": "cname",
+                    "host": "7.example.com",
+                    "data": "sendgrid.net"
+                }
+            }
+        }
+
+### Delete a Link [DELETE]
++ Response 204
+
+## Default Link [/whitelabel/links/default?domain={domain}]
+Default link is the actual link whitelabel to be used when sending messages. If there are multiple link whitelabels, the default is determined by the following order:
+
+<ul>
+  <li>Validated link whitelabels marked as "default"</li>
+  <li>Legacy link whitelabels (migrated from the whitelabel wizard)</li>
+  <li>Default SendGrid link whitelabel (i.e. 100.ct.sendgrid.net)</li>
+</ul>
+
++ Parameters
+    + domain (optional, string) ... Domain to match against when finding a corresponding link whitelabel.
+
+### Default Link [GET]
+
+
++ Response 200 (application/json)
+
+  + Body
+        {
+            "id": 1,
+            "domain": "example.com",
+            "subdomain": "mail",
+            "username": "john@example.com",
+            "user_id": 7,
+            "default": false,
+            "valid": true,
+            "legacy": false,
+            "dns": {
+                "domain_cname": {
+                    "valid": true,
+                    "type": "cname",
+                    "host": "mail.example.com",
+                    "data": "sendgrid.net"
+                },
+                "owner_cname": {
+                    "valid": true,
+                    "type": "cname",
+                    "host": "7.example.com",
+                    "data": "sendgrid.net"
+                }
+            }
+        }
+
+## Validate Link [/whitelabel/links/{id}/validate]
+
+### Validate a Link [POST]
+
++ Response 200 (application/json)
+
+  + Body
+        {
+            "id": 1,
+            "valid": true,
+            "validation_results": {
+                "domain_cname": {
+                    "valid": false,
+                    "reason": "Expected CNAME to match \"sendgrid.net.\" but found \"example.com.\"."
+                },
+                "owner_cname": {
+                    "valid": true,
+                    "reason": null
+                }
+            }
+        }
+
++ Response 500 (application/json)
+
+  + Body
+        {
+            "errors": [{"message": "internal error getting CNAME"}]
+        }
+
+## Associated Link [/whitelabel/links/subuser?username={username}]
+
+Link Whitelabels can be associated with subusers via parent accounts. This functionality allows
+subusers to send mail off their parent's Whitelabels. To associate a Whitelabel, the parent account
+must first create a Whitelabel and validate it. Then the parent may associate the Whitelabel in
+subuser management.
+
++ Parameters
+    + username (required, string) ... Username of the subuser to retrieve associated links for.
+
+### List Associated Link [GET]
+
+
++ Response 200 (application/json)
+
+  + Body
+        {
+            "id": 1,
+            "domain": "example.com",
+            "subdomain": "mail",
+            "username": "john@example.com",
+            "user_id": 7,
+            "default": false,
+            "valid": true,
+            "legacy": false,
+            "dns": {
+                "domain_cname": {
+                    "valid": true,
+                    "type": "cname",
+                    "host": "mail.example.com",
+                    "data": "sendgrid.net"
+                },
+                "owner_cname": {
+                    "valid": true,
+                    "type": "cname",
+                    "host": "7.example.com",
+                    "data": "sendgrid.net"
+                }
+            }
+        }
+
+### Disassociate Link [DELETE]
+
++ Response 204
+
+## Associate Link [/whitelabel/links/{link_id}/subuser]
+
++ Parameters
+    + link_id (required, string) ... Username of the subuser to retrieve associated links for.
+
+### Associate Link [POST]
+
++ Attributes
+    + username janeexampexample@example.com (required, string) - User to associate with the link whitelabel.
+
++ Request
+
+  + Body
+        {
+            "username": "janeexampexample@example.com"
+        }
+
++ Response 201 (application/json)
+
+  + Body
+        {
+            "id": 1,
+            "domain": "example.com",
+            "subdomain": "mail",
+            "username": "john@example.com",
+            "user_id": 7,
+            "default": false,
+            "valid": true,
+            "legacy": false,
+            "dns": {
+                "domain_cname": {
+                    "valid": true,
+                    "type": "cname",
+                    "host": "mail.example.com",
+                    "data": "sendgrid.net"
+                },
+                "owner_cname": {
+                    "valid": true,
+                    "type": "cname",
+                    "host": "7.example.com",
+                    "data": "sendgrid.net"
+                }
+            }
+        }
