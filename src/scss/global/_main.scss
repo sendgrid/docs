@@ -52,3 +52,20 @@ img {
   width: 100%;
   margin-bottom: $scaleup-1;
 }
+
+.btn-white {
+  color: $sg-blue;
+  background-color: $white;
+  border-color: $white;
+
+  &:hover,
+  &:focus {
+    color: $sg-blue;
+    background-color: $white;
+  }
+
+  &:active,
+  &.is-active {
+    @include btn-shadow;
+  }
+}
