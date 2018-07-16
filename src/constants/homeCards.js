@@ -1,4 +1,7 @@
 import plane from '../img/icon-sending-email.svg';
+import contacts from '../img/icon-contacts.svg';
+import analytics from '../img/icon-analytics.svg';
+import account from '../img/icon-account.svg';
 
 const HOME_CARDS = [
   {
@@ -12,7 +15,7 @@ const HOME_CARDS = [
     BUTTON_LINK: '/help-support/sending-email',
   },
   {
-    ICON: plane,
+    ICON: contacts,
     TITLE: 'Managing Contacts',
     LINKS: [
       { URL: '/foo-bar', TEXTNODE: 'Sending Email with Markting Campaigns' },
@@ -22,7 +25,7 @@ const HOME_CARDS = [
     BUTTON_LINK: '/help-support/managing-contacts',
   },
   {
-    ICON: plane,
+    ICON: analytics,
     TITLE: 'Analytics & Reporting',
     LINKS: [
       { URL: '/foo-bar', TEXTNODE: 'Sending Email with Markting Campaigns' },
@@ -32,7 +35,7 @@ const HOME_CARDS = [
     BUTTON_LINK: '/help-support/analytics-reporting',
   },
   {
-    ICON: plane,
+    ICON: account,
     TITLE: 'Account & Settings',
     LINKS: [
       { URL: '/foo-bar', TEXTNODE: 'Sending Email with Markting Campaigns' },
