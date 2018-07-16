@@ -1,0 +1,228 @@
+@import '../../scss/global/variables';
+@import '../../scss/global/mixins';
+
+.nav-secondary {
+  text-align: right;
+  border-bottom: 1px solid $slate-10;
+}
+
+.nav-secondary__link {
+  color: $slate-60;
+  padding: $scaledown-3 0;
+  display: inline-block;
+  font-size: $scaledown-1;
+  margin-left: $scaleup-2;
+}
+
+.nav-main-wrap {
+  box-shadow: 0 1px 3px $slate-10;
+  z-index: 100;
+  position: relative;
+}
+
+.nav-main {
+  display: flex;
+  text-transform: uppercase;
+}
+
+.nav-main__mobile {
+  display: flex;
+  flex-grow: 1;
+}
+
+.nav-main .nav-item {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.nav-main .nav-item--btn {
+  text-align: right;
+}
+
+.nav-main__plain {
+  padding: $scaleup-4 $scaledown-7;
+  color: $slate;
+  font-size: $scaledown-1;
+  font-weight: 600;
+  display: block;
+}
+
+.nav-main__logo {
+  padding: $scaleup-4 0;
+  background-image: url('https://sendgrid.com/brand/sg-logo-300.png');
+  background-position: 0;
+  background-repeat: no-repeat;
+  background-size: 150px auto;
+  display: block;
+  height: 27px;
+  width: 280px;
+  text-align: right;
+  position: relative;
+}
+
+.nav-main__help-center {
+  text-transform: capitalize;
+  display: inline-block;
+  padding: 3px 8px 0;
+  border-left: 2px solid $slate-40;
+  color: $slate-40;
+  position: absolute;
+  line-height: 1;
+  right: 0;
+  top: 28px;
+  font-size: 18px;
+
+  @include colfax(600);
+}
+
+.nav-main .nav-main__login {
+  padding: $scaledown-1 0;
+  height: 47px;
+  width: 103px;
+  margin-top: $scale-0;
+  line-height: $scaleup-1;
+}
+
+// Mobile menu.
+.nav-main__menu {
+  background: #1a82e2;
+  display: block;
+  height: 2px;
+  overflow: visible;
+  position: absolute;
+  transition: background 0.3s;
+  width: 1.875rem;
+}
+
+.nav-main__toggle {
+  display: none;
+  font-size: 1.875rem;
+  position: absolute;
+  width: 32px;
+  right: 1rem;
+  top: 0;
+  height: 73px;
+  background: transparent;
+  border: none;
+  z-index: 1000;
+  line-height: 1;
+  padding: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+// hamburger animation
+.nav-main__menu::after,
+.nav-main__menu::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 1.875rem;
+  height: 2px;
+  background: #1a82e2;
+  transition: transform 0.2s;
+}
+
+.nav-main__menu::before {
+  top: -8px;
+}
+
+.nav-main__menu::after {
+  top: 8px;
+}
+
+.in .nav-main__menu::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.in .nav-main__menu::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.in .nav-main__menu {
+  background: transparent;
+  transition: background-color 0s;
+}
+
+// Secondary nav - login & account dropdown
+.nav-secondary__account-links {
+  position: absolute;
+  right: 0;
+  background: #fff;
+  z-index: $dropdown-menu-z-index;
+  padding: $scaledown-4 $scaleup-2;
+  border: 1px solid $slate-10;
+  display: none;
+
+  @include dropdown-shadow();
+}
+
+.nav-secondary__account {
+  position: relative;
+  display: inline-block;
+
+  @include colfax(300);
+
+  &:hover .nav-secondary__account-links {
+    display: block;
+  }
+}
+
+.nav-secondary__name {
+  font-size: $scaledown-1;
+  padding: $scaledown-6 0;
+  display: inline-block;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.nav-secondary__account-links a {
+  display: block;
+}
+
+@media (max-width: $width-mobile) {
+  .nav-main__toggle {
+    display: block;
+  }
+
+  .nav-main-wrap {
+    width: 100%;
+  }
+
+  .nav-secondary {
+    display: none;
+  }
+
+  .nav-main {
+    display: block;
+  }
+
+  .nav-main__mobile {
+    display: block;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .nav-main__plain {
+    text-align: left;
+    padding: $scale-0;
+    font-weight: 300;
+    text-transform: initial;
+    font-size: $scale-0;
+  }
+
+  .nav-main__mobile.in {
+    max-height: 1000px;
+  }
+
+  .nav-item--btn {
+    display: none;
+  }
+}

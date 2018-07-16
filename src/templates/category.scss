@@ -1,0 +1,7 @@
+@import '../scss/global/variables';
+@import '../scss/global/mixins';
+
+.group-links a {
+  display: block;
+  margin-bottom: $scale-0;
+}

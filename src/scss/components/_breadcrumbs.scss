@@ -1,0 +1,20 @@
+.breadcrumb {
+  padding-left: 0;
+
+  li {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 20px;
+    text-transform: capitalize;
+  }
+
+  li + li::before {
+    padding: 0 6px;
+    color: $steel;
+    content: "/\00a0";
+  }
+}
+
+.nav-sub .row {
+  align-items: center;
+}

@@ -1,0 +1,171 @@
+@import '../scss/global/variables';
+@import '../scss/global/mixins';
+$card-gutter: 40px;
+
+.docs-home {
+  overflow: hidden;
+}
+
+.page-title {
+  font-size: $scaleup-5;
+  line-height: 1.2;
+  margin-bottom: $scaledown-6;
+
+  @include colfax(600);
+}
+
+.search-hero {
+  background: $gradient-hero;
+}
+
+.search-hero__bg {
+  padding: $scaleup-6 0 13rem 0;
+  background: url('../img/help-center-hero.svg') no-repeat;
+  background-position: bottom center;
+}
+
+// Override SendGrid search input styles for the hero search
+.search-hero .input-text-wrap .search-hero__query {
+  background-color: #fff;
+  padding: $scaleup-1 $scaleup-2 $scaleup-1 $scaleup-7;
+  font-size: $scaleup-1;
+  box-sizing: border-box;
+  color: $sg-blue-60;
+  border: 0;
+
+  &::placeholder {
+    color: $sg-blue-60;
+  }
+}
+
+.search-hero .input-text-wrap.is-search::after {
+  color: $sg-blue;
+  font-size: $scaleup-2;
+  top: 37px;
+  left: 20px;
+  right: initial;
+}
+
+.home-callout__badge {
+  margin-bottom: $scale-0;
+  text-transform: uppercase;
+  font-size: $scaledown-1;
+
+  @include colfax(600);
+}
+
+.callout--marketing .home-callout__badge {
+  color: #62ffae;
+}
+
+.callout--development .home-callout__badge {
+  color: $seafoam;
+}
+
+.card--no-pad {
+  padding: 0 0 0 0;
+}
+
+.card--home {
+  margin-bottom: $card-gutter;
+  .card__title {
+    margin-bottom: $scaleup-4;
+  }
+  .btn {
+    margin-top: $scaleup-1;
+  }
+}
+
+.card__title {
+  display: block;
+  width: 100%;
+}
+
+.card--glossary {
+  .card__title {
+    margin-bottom: $scaleup-2;
+  }
+}
+
+.row--home-cards {
+  grid-column-gap: $card-gutter;
+}
+
+.home-featured {
+  padding-top: $scaleup-1;
+  position: relative;
+
+  h2 {
+    font-size: $scaleup-3;
+    margin-bottom: $scaleup-4;
+    text-align: center;
+    position: relative;
+    color: #fff;
+  }
+}
+
+.home-featured::before {
+  background: $seafoam;
+  background: linear-gradient(to bottom right, #62ffae, $seafoam);
+  content: "";
+  height: 100%;
+  left: -25%;
+  position: absolute;
+  top: 4rem;
+  transform: rotate(-5deg);
+  transform-origin: left top;
+  width: 150%;
+  z-index: 0;
+}
+
+.home-callouts {
+  display: block;
+  margin-top: -30px;
+  position: relative;
+  z-index: 2;
+
+  // increase gutter for callouts
+  .row {
+    grid-column-gap: 3%;
+  }
+}
+
+.home-callout {
+  padding: $scaleup-4 $scaleup-3 $scaleup-7;
+  display: block;
+
+  .btn {
+    height: 40px;
+    widows: 132px;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    margin-left: -66px;
+  }
+}
+
+.home-glossary {
+  margin: $scaleup-5 0;
+  z-index: 2;
+
+  h2 {
+    position: relative;
+    text-align: center;
+  }
+}
+
+.home-glossary__container {
+  padding-left: $scaleup-11;
+  padding-right: $scaleup-11;
+}
+
+.glossary-link {
+  display: block;
+  width: 100%;
+  margin-bottom: $scaleup-1;
+}
+
+.glossary-icon {
+  margin: 0 auto 0 $scaleup-1;
+  display: block;
+}

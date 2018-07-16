@@ -1,0 +1,11 @@
+@import '../../scss/global/variables';
+
+.nav-sub {
+  background: $slate-02;
+  border-bottom: 1px solid $slate-10;
+  margin-bottom: $scaleup-6;
+}
+
+.for-developers .nav-sub {
+  margin-bottom: 0;
+}

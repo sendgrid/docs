@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 21</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Release-Notes" transform="translate(-530.000000, -2436.000000)">
+            <g id="Group-15-Copy-2" transform="translate(530.000000, 2299.000000)">
+                <g id="Group-23" transform="translate(0.000000, 137.000000)">
+                    <g id="Group-21">
+                        <g id="Group-5" fill="#DFFFEF">
+                            <circle id="Oval-2" cx="35" cy="35" r="35"></circle>
+                        </g>
+                        <g id="Group-4" transform="translate(17.500000, 18.666667)">
+                            <g id="Group-20">
+                                <g id="Group-3-Copy" stroke="#18C96E" stroke-width="1.4">
+                                    <g id="Group-941" transform="translate(0.000000, 2.819444)" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M0.7,4.93402778 L34.3,4.93402778" id="Stroke-2829"></path>
+                                        <path d="M7.7,1.40972222 C7.7,1.79880556 7.3864,2.11458333 7,2.11458333 C6.6136,2.11458333 6.3,1.79880556 6.3,1.40972222 C6.3,1.02063889 6.6136,0.704861111 7,0.704861111 C7.3864,0.704861111 7.7,1.02063889 7.7,1.40972222 L7.7,1.40972222 Z" id="Stroke-2830"></path>
+                                        <path d="M11.9,1.40972222 C11.9,1.79880556 11.5864,2.11458333 11.2,2.11458333 C10.8136,2.11458333 10.5,1.79880556 10.5,1.40972222 C10.5,1.02063889 10.8136,0.704861111 11.2,0.704861111 C11.5864,0.704861111 11.9,1.02063889 11.9,1.40972222 L11.9,1.40972222 Z" id="Stroke-2831"></path>
+                                        <path d="M16.1,1.40972222 C16.1,1.79880556 15.7864,2.11458333 15.4,2.11458333 C15.0136,2.11458333 14.7,1.79880556 14.7,1.40972222 C14.7,1.02063889 15.0136,0.704861111 15.4,0.704861111 C15.7864,0.704861111 16.1,1.02063889 16.1,1.40972222 L16.1,1.40972222 Z" id="Stroke-2832"></path>
+                                    </g>
+                                    <rect id="Rectangle-5" x="0.7" y="0.7" width="33.6" height="32.4333333"></rect>
+                                </g>
+                                <text id="&lt;/&gt;" font-family="Menlo-Regular, Menlo" font-size="15.1666667" font-weight="normal" fill="#18C96E">
+                                    <tspan x="3.80334473" y="25.6666667">&lt;/&gt;</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
