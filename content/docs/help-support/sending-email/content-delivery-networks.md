@@ -12,9 +12,9 @@ Content Delivery Networks are a great mechanism that you can use to serve up con
 
 We suggest [CloudFlare](#-Using-CloudFlare), [Fastly](#-Using-Fastly), or [KeyCDN](#-Using-KeyCDN) when using Content Delivery Networks with SendGrid.
 
-{% anchor h2 %}
-Using CloudFlare
-{% endanchor %}
+
+## Using CloudFlare
+
 
 The following instructions assume you already have a CloudFlare account made, using either a [Full DNS setup](https://support.cloudflare.com/hc/en-us/articles/205195708) or a [CNAME setup](https://support.cloudflare.com/hc/en-us/articles/200168706). You can compare the two different setups [here](https://support.cloudflare.com/hc/en-us/articles/203685674). Note that a CNAME setup is only available to Business or Enterprise level CloudFlare plans.
 

@@ -25,7 +25,7 @@ class DocTemplate extends React.Component {
     return headers.map((header) => {
       const link = {};
       link.tagName = header.tagName;
-      link.textNode = header.children[1].value;
+      link.textNode = header.children[1] ? header.children[1].value : '';
       link.id = header.properties.id;
       return link;
     });

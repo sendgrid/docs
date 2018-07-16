@@ -10,7 +10,7 @@ navigation:
  show: true
 ---
 
-As you’re probably aware, SendGrid is great at sending your email, but SendGrid can also help you process email using the Inbound Parse Webhook. The Inbound Parse Webhook processes all incoming email for a domain or subdomain, parses the contents and attachments then POSTs multipart/form-data to a URL that you choose. 
+As you’re probably aware, SendGrid is great at sending your email, but SendGrid can also help you process email using the Inbound Parse Webhook. The Inbound Parse Webhook processes all incoming email for a domain or subdomain, parses the contents and attachments then POSTs multipart/form-data to a URL that you choose.
 
 {% info %}
 XML is only available in v2.
@@ -205,7 +205,7 @@ Content-Type: multipart/mixed; boundary=001a113f8ad03e85160538a4343c
 </div></div>
 "
   ["from"]=>
-  string(33) "Sender Name <example@example.com>"
+  string(33) "Sender Name example@example.com"
   ["text"]=>
   string(139) "Here's an email with multiple attachments
 "
@@ -306,6 +306,8 @@ Raw Parameters
       </tr>
     </tbody>
 </table>
+
+
 
 {% info %}
 The total message size limit, including the message itself and all attachments, is 20MB. Be aware that other mail handlers will have their own limitations, and some ISPs and companies may either dramatically limit the size and/or type of attachments, or even block them altogether.
