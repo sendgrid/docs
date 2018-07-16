@@ -32,7 +32,7 @@
 
 .nav-main .nav-item {
   flex-grow: 1;
-  text-align: center;
+  text-align: right;
 }
 
 .nav-main .nav-item--btn {
@@ -40,7 +40,7 @@
 }
 
 .nav-main__plain {
-  padding: $scaleup-4 $scaledown-1;
+  padding: $scaleup-4 $scaledown-7;
   color: $slate;
   font-size: $scaledown-1;
   font-weight: 600;

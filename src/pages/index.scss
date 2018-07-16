@@ -75,6 +75,12 @@ $card-gutter: 40px;
   width: 100%;
 }
 
+.card--glossary {
+  .card__title {
+    margin-bottom: $scaleup-2;
+  }
+}
+
 .row--home-cards {
   grid-column-gap: $card-gutter;
 }
@@ -142,8 +148,8 @@ $card-gutter: 40px;
 }
 
 .home-glossary__container {
-  padding-left: $scaleup-10;
-  padding-right: $scaleup-10;
+  padding-left: $scaleup-11;
+  padding-right: $scaleup-11;
 }
 
 .glossary-link {
@@ -153,5 +159,6 @@ $card-gutter: 40px;
 }
 
 .glossary-icon {
-  margin-left: $scaleup-1;
+  margin: 0 auto 0 $scaleup-1;
+  display: block;
 }
