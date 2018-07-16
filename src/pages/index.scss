@@ -1,12 +1,13 @@
 @import '../scss/global/variables';
 @import '../scss/global/mixins';
-$card-gutter: 30px;
+$card-gutter: 40px;
 
 .docs-home {
   overflow: hidden;
 }
 
 .page-title {
+  font-size: $scaleup-5;
   line-height: 1.2;
   margin-bottom: $scaledown-6;
 
@@ -14,11 +15,11 @@ $card-gutter: 30px;
 }
 
 .search-hero {
-  background: $sg-blue-20;
+  background: $gradient-hero;
 }
 
 .search-hero__bg {
-  padding: $scaleup-4 0 13rem 0;
+  padding: $scaleup-6 0 13rem 0;
   background: url('../img/help-center-hero.svg') no-repeat;
   background-position: bottom center;
 }
@@ -40,7 +41,7 @@ $card-gutter: 30px;
 }
 
 .home-callout__badge {
-  margin-bottom: $scaleup-1;
+  margin-bottom: $scale-0;
   text-transform: uppercase;
   font-size: $scaledown-1;
 
@@ -61,6 +62,12 @@ $card-gutter: 30px;
 
 .card--home {
   margin-bottom: $card-gutter;
+  .card__title {
+    margin-bottom: $scaleup-4;
+  }
+  .btn {
+    margin-top: $scaleup-1;
+  }
 }
 
 .card__title {
@@ -77,6 +84,8 @@ $card-gutter: 30px;
   position: relative;
 
   h2 {
+    font-size: $scaleup-3;
+    margin-bottom: $scaleup-4;
     text-align: center;
     position: relative;
     color: #fff;
@@ -87,7 +96,7 @@ $card-gutter: 30px;
   background: $seafoam;
   background: linear-gradient(to bottom right, #62ffae, $seafoam);
   content: "";
-  height: 105%;
+  height: 100%;
   left: -25%;
   position: absolute;
   top: 4rem;
