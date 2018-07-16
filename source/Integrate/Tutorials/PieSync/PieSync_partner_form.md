@@ -13,7 +13,7 @@ seo:
 Setting up a sync is as easy as following these steps:
 1. [Create a PieSync account](#-Create-a-PieSync-account)
 2. [Select your apps](#Select-your-apps)
-3. [Authorise your apps](#Authorise-your-apps)
+3. [Authorize your apps](#Authorize-your-apps)
 4. [Set up your sync configuration](#Set-up-your-sync-configuration)
 
 {% anchor h2 %}
@@ -26,17 +26,17 @@ Sign up for a PieSync account [here](https://app.piesync.com/).
 Select your apps
 {% endanchor %}
 
-Select Sendgrid and the app you would like to sync it with from within the PieSync application.
+Select Sendgrid and the app you would like to sync with from within the PieSync application.
 
 {% anchor h2 %}
-Authorise your apps
+Authorize your apps
 {% endanchor %}
 
-To authorise, simply follow the steps as described below and make sure you meet the requirements to be able to sync. We need your API key.
+To authorize, follow the steps as described and make sure you have your [API Key]({{root_url}}/User_Guide/Settings/api_keys.html) before getting started.
 
 ** SENDGRID IMAGE 1 **
 
-If you already authorized SendGrid account(s) in the past or in any other PieSync integration, you'll be able to skip the first part of the authorization and choose from your CONNECTED ACCOUNTS.
+If you have already authorized SendGrid account(s) in the past or have another PieSync integration, you can skip the first part of the authorization and choose from your **Conncted Accounts**.
 
 ** SENDGRID IMAGE 2 **
 
@@ -66,7 +66,7 @@ Depending on the other app you're syncing with, you'll see a number of standard 
 
 3. Customizable Field Mapping
 
-You can custom map your SendGrid Custom Fields and any additional standard fields that aren't included in the default mapping yet. Bear in mind a mapping between two fields can only exist if the types of fields are compatible, and the particular compatibility will determine the direction of the mapping as well. More information on Customizable Field Mapping [here](https://help.piesync.com/features/new-customizable-field-mapping).
+You can custom map your SendGrid Custom Fields and any additional standard fields that aren't included in the default mapping yet. Remember, a mapping between two fields can only exist if the types of fields are compatible, and the particular compatibility will determine the direction of the mapping. See our documentation [Customizable Field Mapping] (https://help.piesync.com/features/new-customizable-field-mapping) for more information.
 
 ** SENDGRID IMAGE 6 **
 
