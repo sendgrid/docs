@@ -14,7 +14,16 @@
   }
 
   hr {
-    border-top: 1px solid $slate-80;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+    height: 1px;
+    background: $slate-40;
+    border: 0;
+    opacity: 0.1;
+    margin: 0 auto 35px;
+  }
+
+  &__soc-legal {
+    padding-bottom: $scaledown-6;
   }
 }
 
@@ -50,7 +59,7 @@
   content: 'Try for Free!';
   background: $sg-blue;
   padding: $scaledown-7 $scaledown-5;
-  font-size: $scaledown-2;
+  font-size: $scaledown-1;
   margin-left: $scaledown-3;
 }
 

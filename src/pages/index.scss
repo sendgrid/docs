@@ -1,12 +1,13 @@
 @import '../scss/global/variables';
 @import '../scss/global/mixins';
-$card-gutter: 30px;
+$card-gutter: 40px;
 
 .docs-home {
   overflow: hidden;
 }
 
 .page-title {
+  font-size: $scaleup-5;
   line-height: 1.2;
   margin-bottom: $scaledown-6;
 
@@ -14,11 +15,11 @@ $card-gutter: 30px;
 }
 
 .search-hero {
-  background: $sg-blue-20;
+  background: $gradient-hero;
 }
 
 .search-hero__bg {
-  padding: $scaleup-4 0 13rem 0;
+  padding: $scaleup-6 0 13rem 0;
   background: url('../img/help-center-hero.svg') no-repeat;
   background-position: bottom center;
 }
@@ -26,21 +27,27 @@ $card-gutter: 30px;
 // Override SendGrid search input styles for the hero search
 .search-hero .input-text-wrap .search-hero__query {
   background-color: #fff;
-  padding: $scaleup-2 $scaleup-2 $scaleup-2 $scaleup-7;
+  padding: $scaleup-1 $scaleup-2 $scaleup-1 $scaleup-7;
   font-size: $scaleup-1;
   box-sizing: border-box;
+  color: $sg-blue-60;
+  border: 0;
+
+  &::placeholder {
+    color: $sg-blue-60;
+  }
 }
 
 .search-hero .input-text-wrap.is-search::after {
   color: $sg-blue;
   font-size: $scaleup-2;
-  top: 40px;
+  top: 37px;
   left: 20px;
   right: initial;
 }
 
 .home-callout__badge {
-  margin-bottom: $scaleup-1;
+  margin-bottom: $scale-0;
   text-transform: uppercase;
   font-size: $scaledown-1;
 
@@ -61,11 +68,23 @@ $card-gutter: 30px;
 
 .card--home {
   margin-bottom: $card-gutter;
+  .card__title {
+    margin-bottom: $scaleup-4;
+  }
+  .btn {
+    margin-top: $scaleup-1;
+  }
 }
 
 .card__title {
   display: block;
   width: 100%;
+}
+
+.card--glossary {
+  .card__title {
+    margin-bottom: $scaleup-2;
+  }
 }
 
 .row--home-cards {
@@ -77,6 +96,8 @@ $card-gutter: 30px;
   position: relative;
 
   h2 {
+    font-size: $scaleup-3;
+    margin-bottom: $scaleup-4;
     text-align: center;
     position: relative;
     color: #fff;
@@ -87,7 +108,7 @@ $card-gutter: 30px;
   background: $seafoam;
   background: linear-gradient(to bottom right, #62ffae, $seafoam);
   content: "";
-  height: 105%;
+  height: 100%;
   left: -25%;
   position: absolute;
   top: 4rem;
@@ -111,6 +132,7 @@ $card-gutter: 30px;
 
 .home-callout {
   padding: $scaleup-4 $scaleup-3 $scaleup-7;
+  display: block;
 
   .btn {
     height: 40px;
@@ -133,8 +155,8 @@ $card-gutter: 30px;
 }
 
 .home-glossary__container {
-  padding-left: $scaleup-10;
-  padding-right: $scaleup-10;
+  padding-left: $scaleup-11;
+  padding-right: $scaleup-11;
 }
 
 .glossary-link {
@@ -144,5 +166,6 @@ $card-gutter: 30px;
 }
 
 .glossary-icon {
-  margin-left: $scaleup-1;
+  margin: 0 auto 0 $scaleup-1;
+  display: block;
 }

@@ -7,11 +7,11 @@ const GlossaryPartial = () => (
   <div className="home-glossary">
     <div className="container home-glossary__container">
       <h2>Glossary</h2>
-      <p>Not sure what something means? Find terms from our library sorted A-Z.</p>
+      <p className="ta-center">Not sure what something means? Find terms from our library sorted A-Z.</p>
       <div className="row">
-        <div className="col-md-7">
-          <div className="card is-thin">
-            <h3>Featured Terms</h3>
+        <div className="col-md-8">
+          <div className="card card--glossary is-thin">
+            <h3 className="card__title">Featured Terms</h3>
             <Link className="glossary-link" to="/">lorem ipsum</Link>
             <Link className="glossary-link" to="/">lorem ipsum</Link>
             <Link className="glossary-link" to="/">lorem ipsum</Link>

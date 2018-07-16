@@ -4,6 +4,7 @@ import Link from 'gatsby-link';
 import SEO from '../components/SEO';
 import Search from '../components/Search';
 import GlossaryPartial from '../components/GlossaryPartial';
+import FooterCallout from '../components/FooterCallout';
 import config from '../../data/SiteConfig';
 import HOME_CARDS from '../constants/homeCards';
 import CALLOUTS from '../constants/homeCallouts';
@@ -13,6 +14,7 @@ class Index extends React.Component {
   static renderCards() {
     return HOME_CARDS.map(card => (
       <div className="card card--home col-md-6 ta-center" key={card.TITLE}>
+        <img className="card-icon" src={card.ICON} alt={card.TITLE} />
         <h3 className="card__title" >{card.TITLE}</h3>
         {card.LINKS.map(link => <Link key={link.TEXTNODE} to={link.URL} className="card__link">{link.TEXTNODE}</Link>)}
         <Link className="btn center" to={card.BUTTON_LINK}>View All</Link>
@@ -28,7 +30,7 @@ class Index extends React.Component {
           <div className="home-callout__badge">
             {card.BADGE}
           </div>
-          <h3 className="card__title is-size-h2 m-bottom-4">{card.TITLE}</h3>
+          <h3 className="card__title is-size-h2 m-bottom-2">{card.TITLE}</h3>
           <div className="is-p">{card.COPY}</div>
           <Link to={card.LINK} className="btn btn-primary center">Get Started</Link>
         </div>
@@ -66,6 +68,7 @@ class Index extends React.Component {
           </div>
           <GlossaryPartial />
         </div>
+        <FooterCallout />
       </div>
     );
   }
