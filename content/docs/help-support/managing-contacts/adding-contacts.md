@@ -28,7 +28,7 @@ Your first 2,000 contacts are free. After 2,000 contacts, SendGrid charges $10 f
 Formatting a CSV
 {% endanchor %}
 
-You can easily add contacts to your contact database by uploading a CSV of your contacts to SendGrid. If you have your contacts in a spreadsheet, simply save that sheet as a .csv file using a spreadsheet application like Microsoft Excel or Google Sheets. You can also export your contacts from most database systems as a .csv file. For more information, see the documentation on [Formatting a CSV](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/formating_a_CSV.html).
+You can easily add contacts to your contact database by uploading a CSV of your contacts to SendGrid. If you have your contacts in a spreadsheet, simply save that sheet as a .csv file using a spreadsheet application like Microsoft Excel or Google Sheets. You can also export your contacts from most database systems as a .csv file. For more information, see the documentation on [Formatting a CSV](https://sendgrid.com/docs/help-support/managing-contacts/formating-a-CSV.html).
 
 {% anchor h3 %}
 Uploading a CSV
@@ -50,7 +50,7 @@ Uploading a CSV
 1. Once you've gone through all of the headers, click **Next:Add Contacts**.
 
 {% info %}
-After uploading contacts, you can define segments for individual contacts or lists based on specified criteria. For more information, see [Lists and Segmentation](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html).
+After uploading contacts, you can define segments for individual contacts or lists based on specified criteria. For more information, see [Lists and Segmentation](https://sendgrid.com/docs/help-support/managing-contacts/segmenting-your-contacts.html).
 {% endinfo %}
 
 {% warning %}
@@ -69,7 +69,7 @@ The notification email contains the following information:
 * Number of errors
 * Error messages for each errored row
 
-If there are any errors, there will be a link to download a CSV containing the errored rows so that you can reformat and reupload those contacts. For more help resolving issues with uploading a CSV, see [Formatting a CSV](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/format_CSV.html).
+If there are any errors, there will be a link to download a CSV containing the errored rows so that you can reformat and reupload those contacts. For more help resolving issues with uploading a CSV, see [Formatting a CSV](https://sendgrid.com/docs/help-support/managing-contacts/formatting-a-csv.html).
 
 {% info %}
 The download link to your CSV of errored rows will be available for 24 hours.
@@ -120,7 +120,7 @@ Add Contacts to a List
 1. Click **Save Contact**.
 
 {% info %}
-If you [create a segment]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html#-Creating-a-Segment) before you upload a list, contacts that fit the segment criteria populate that segment when uploaded.
+If you [create a segment]({{root_url}}/help-support/managing-contacts/segmenting-your-contacts.html#-Creating-a-Segment) before you upload a list, contacts that fit the segment criteria populate that segment when uploaded.
 {% endinfo %}
 
 {% anchor h3 %}
@@ -128,5 +128,5 @@ Additional Resources
 {% endanchor h3 %}
 
 - [Contacts API](https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html)
-- [Segmenting your Contacts](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/lists.html)
-- [Building your Contact list](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/build_contact_list.html)
+- [Segmenting your Contacts](https://sendgrid.com/docs/help-support/managing-contacts/segmenting-your-contacts.html)
+- [Building your Contact list](https://sendgrid.com/docs/help-support/managing-contacts/building-your-contact-list.html)

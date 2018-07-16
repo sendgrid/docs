@@ -1,8 +1,7 @@
 ---
 layout: page
 weight: 0
-title: Account Details title
-group: tracking
+title: Account Details
 seo:
   title: Account Details
   description: Manage your SendGrid account settings
@@ -23,7 +22,7 @@ To edit your name and email address, click the “Change Contact Info” button 
 
 **Username** - Your SendGrid Username is used to access our API and our SMTP Relay. Changing this will immediately cause all of your calls to SendGrid to stop working.
 
-**Password** -  The minimum password criterium that your SendGrid password must meet include 8 to 128 characters, at least one number and one letter.
+**Password** -  The minimum password criterium that your SendGrid password must meet include 8 to 128 characters, at least one number and one letter. 
 
 **Company** - The name of your company.
 
@@ -37,15 +36,13 @@ To edit your name and email address, click the “Change Contact Info” button 
 
 **Country** - The country in which your company operates.
 
-**Zip** - The zip code in which your company operates kjkjk.
-
-<gist id='6468d6db11bc11db9616c2098cd64f2f' ></gist>
+**Zip** - The zip code in which your company operates.
 
 {% info %}
 If you find that your scheduled sends or stats seem like they are not quite correct, please double check your timezone.
 {% endinfo %}
 
-**Timezone** - The [timezone]({{root_url}}/Glossary/timezone.html) in which your company operates. This setting will be used by other SendGrid functionality such as [Statistics]({{root_url}}/Help/Analytics_and_Reporting/Statistics/index.html) and scheduling sends in [Marketing Campaigns]({{root_url}}/Help/Getting_Started/how_to_send_email.html). Please make sure that your timezone is set to the same as your business.
+**Timezone** - The [timezone]({{root_url}}/glossary/timezone.html) in which your company operates. This setting will be used by other SendGrid functionality such as [Statistics]({{root_url}}/help-support/analytics-and-reporting/stats-overview.html) and scheduling sends in [Marketing Campaigns]({{root_url}}/help-support/getting-started/how-to-send-email.html). Please make sure that your timezone is set to the same as your business.
 
 **Website** - Your company’s website
 

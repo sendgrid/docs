@@ -8,7 +8,6 @@ seo:
   keywords: subscription manager, suppression manager, unsubscribe manager, unsubscribe manager
 navigation:
   show: true
-group: statistics
 ---
 
 <iframe src="https://player.vimeo.com/video/221494705" width="500" height="312" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -57,7 +56,7 @@ Default Groups
 
 Default groups are those that are shown by default when a recipient chooses to unsubscribe from your emails. SendGrid will always show all of the default groups, so if you don’t want one of those groups to be displayed all the time, make sure that it is not set as a default group.
 
-You can also specify which groups to display at send time, but using the [asm_groups_to_display feature]({{root_url}}/API_Reference/SMTP_API/suppressions.html#-Defining-ASM-Groups-to-display-on-the-Manage-Preferences-page) of the SMTP API.
+You can also specify which groups to display at send time, but using the [asm_groups_to_display feature]({{root_url}}/for-developers/sending-email/suppressions.html#-Defining-ASM-Groups-to-display-on-the-Manage-Preferences-page) of the SMTP API.
 
 {% anchor h2 %}
 Add Recipients to an Unsubscribe Group
@@ -117,6 +116,6 @@ When you use the [SendGrid API with unsubscribe groups]({{root_url}}/API_Referen
 Additional Resources
 {% endanchor %}
 
-- [Bounces]({{root_url}}/User_Guide/Suppressions/bounces.html)
+- [Bounces]({{root_url}}/help-support/sending-email/bounces.html)
 - [Group Unsubscribes]({{site.app_url}}/suppressions/group_unsubscribes)
 - [SendGrid API with unsubscribe groups]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/index.html)

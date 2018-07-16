@@ -71,7 +71,7 @@ SendGrid requires underscores for sender authentication, but some DNS providers 
 
 If your provider does not allow you to use underscores in zone files, consider changing your DNS hosting provider.
 
-You can also disable automated security - this allows you to set up TXT and CX records that don't have underscores. For more information about setting up automated security, see [Using automated security]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html#-Using-automated-security).
+You can also disable automated security - this allows you to set up TXT and CX records that don't have underscores. For more information about setting up automated security, see [Using automated security]({{root_url}}/help-support/getting-started/how-to-set-up-domain-authentication.html#-Using-automated-security).
 
 {% anchor h3 %}
 Manually validating records
@@ -237,7 +237,7 @@ For subusers, SendGrid attaches authenticated domain information in the followin
 Additional resources
 {% endanchor %}
 
-- [How to set up domain authentication]({{root_url}}/Help/Getting_Started/How_to_set_up_domain_authentication.html)
-- [How to set up link branding]({{root_url}}/Help/Getting_Started/How_to_set_up_link_branding.html)
-- [How to set up reverse DNS]({{root_url}}/Help/Getting_Started/How_to_set_up_reverse_dns.html)
+- [How to set up domain authentication]({{root_url}}/help-support/getting-started/how-to-set-up-domain-authentication.html)
+- [How to set up link branding]({{root_url}}/help-support/getting-started/how-to-set-up-link-branding.html)
+- [How to set up reverse DNS]({{root_url}}/help-support/getting-started/how-to-set-up-reverse-dns.html)
 

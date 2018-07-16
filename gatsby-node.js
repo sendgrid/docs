@@ -82,6 +82,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
       cat = cat.split('/');
       cat = (cat.length > 1 && cat[1].length) ? cat[1] : 'uncategorized';
     }
+
     createNodeField({ node, name: 'category', value: cat });
 
     let group = 'ungrouped';
@@ -133,9 +134,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             edges {
               node {
                 fileAbsolutePath
-                frontmatter {
-                  category
-                }
                 fields {
                   permalink
                   slug

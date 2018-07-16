@@ -9,6 +9,7 @@ seo:
   override: true
   description: Send your first email using the Marketing Campaigns tool.
 ---
+
 <iframe src="https://player.vimeo.com/video/221496578" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 If you want to send email programatically, see the [API reference]({{root_url}}/API_Reference/api_v3.html), or the [SMTP Reference]({{root_url}}/API_Reference/SMTP_API/using_the_smtp_api.html).
@@ -16,10 +17,10 @@ If you want to send email programatically, see the [API reference]({{root_url}}/
 Before sending your first campaign, you need to do the following:
 
 - [Create an Account](https://sendgrid.com/pricing/?mc=SendGrid%20Documentation) 
-- [Add a Sender](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/senders.html) 
-- [Upload Contacts](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/contacts.html) 
-- [Add an Unsubscribe Group](https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html) 
-- [Segment Your Contact List](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/lists.html) (Optional) 
+- [Add a Sender](https://sendgrid.com/docs/help-support/sending-email/senders.html) 
+- [Upload Contacts](https://sendgrid.com/docs/help-support/managing-contacts/adding-contacts.html) 
+- [Add an Unsubscribe Group](https://sendgrid.com/docs/help-support/sending-email/index-suppressions.html) 
+- [Segment Your Contact List](https://sendgrid.com/docs/help-support/managing-contacts/managing-contact-list.html) (Optional) 
 
 *To send your first campaign:*
 
@@ -30,7 +31,7 @@ Before sending your first campaign, you need to do the following:
 ![]({{root_url}}/images/campaigns_dashboard_categories_search.png)
 
 1. Select the template that you want to use for your campaign. 
-<br> You can select a **Blank Template**, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Marketing Templates](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/templates.html).
+<br> You can select a **Blank Template**, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Marketing Templates](https://sendgrid.com/docs/help-support/sending-email/create-and-edit-transactional-templates.html).
 
 1. Select an editor. 
 <br> You can choose between the **Design Editor** and the **Code Editor**.
@@ -49,17 +50,21 @@ Depending on your editor selection, you use different methods to design your cam
 1. Edit your campaign by filling in the fields in the **Settings** Tab. 
 
 1. Add your custom content. 
-<br> For more information about customizing your campaign, see [Using the Design Editor]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html) or [Using the Code Editor]({{root_url}}/User_Guide/Marketing_Campaigns/code_editor.html). 
+<br> For more information about customizing your campaign, see [Using the Design Editor]({{root_url}}/help-support/sending-email/editor.html#-The-Design-Editor or [Using the Code Editor]({{root_url}}/help-support/sending-email/editor.html#-The-Code-Editor). 
 
 1. Once you’ve finished editing your campaign, you can see what it looks like by clicking **Preview**.
 
 1. To send a test email, enter the email addresses you want to send your campaign to and then click **Send Test**. 
 
-1. If you would like to test the effectiveness of your email subject or content, you can set up an A/B test. For more information, see [A/B Testing](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/a_b_testing.html).
+1. If you would like to test the effectiveness of your email subject or content, you can set up an A/B test. For more information, see [A/B Testing](https://sendgrid.com/docs/help-support/sending-email/a-b-testing.html).
 
 1. Add a list or segment of recipients to receive your campaign.
 
 1. To send your campaign, click **Send Campaign**. 
+
+{% info %}
+Message size limit:  The total message size should not exceed 20MB. This includes the message itself, headers, and the combined size of any attachments.
+{% endinfo %}
 
 {% anchor h3 %}
 Scheduling Your Campaign
@@ -89,7 +94,7 @@ Be sure your account is set to the correct time zone in order to ensure that you
 Additional Resources
 {% endanchor h3 %}
 
-- [Campaign Statistics](https://sendgrid.com/docs/Help/Analytics_and_Reporting/campaign_stats.html) 
-- [Billing](https://sendgrid.com/docs/Help/Account_and_Settings/billing.html)
-- [Sending with the API]({{root_url}}/API_Reference/api_v3.html)
-- [Sending with SMTP]({{root_url}}/API_Reference/SMTP_API/using_the_smtp_api.html)
+- [Campaign Statistics](https://sendgrid.com/docs/help-support/analytics-and-reporting/campaign-stats.html) 
+- [Billing](https://sendgrid.com/docs/help-support/account-and-settings/billing.html)
+- [Sending with the API]({{root_url}}/for-developers/getting-started/api-getting-started.html)
+- [Sending with SMTP]({{root_url}}/for-developers/getting-started/getting-started-smtp.html)
