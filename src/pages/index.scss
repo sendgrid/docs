@@ -169,22 +169,3 @@ $card-gutter: 40px;
   margin: 0 auto 0 $scaleup-1;
   display: block;
 }
-
-.home-dev-callout {
-  background: $gradient-callout;
-  position: relative;
-  padding: $scaleup-8 0;
-
-  &-pattern {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    background: url('../img/pixel-pattern-left-bottom-dark.svg') no-repeat bottom right;
-    width: 100%;
-    height: 100%;
-  }
-
-  .container {
-    position: relative;
-  }
-}

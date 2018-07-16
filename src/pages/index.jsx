@@ -4,6 +4,7 @@ import Link from 'gatsby-link';
 import SEO from '../components/SEO';
 import Search from '../components/Search';
 import GlossaryPartial from '../components/GlossaryPartial';
+import FooterCallout from '../components/FooterCallout';
 import config from '../../data/SiteConfig';
 import HOME_CARDS from '../constants/homeCards';
 import CALLOUTS from '../constants/homeCallouts';
@@ -67,27 +68,7 @@ class Index extends React.Component {
           </div>
           <GlossaryPartial />
         </div>
-        <div className="home-dev-callout">
-          <div className="home-dev-callout-pattern" />
-          <div className="container">
-            <div className="row">
-              <div className="col-md-6">
-                <h2 className="is-size-h1 color-white">For Developers</h2>
-                <p className="color-slate-10">Integrate with SendGrid using our API or SMTP. Lorem ipsum dollor sit amer.</p>
-                <Link className="btn btn-white" to="/">View Developer Docs</Link>
-              </div>
-              <div className="col-md-6">
-                <div className="card card--glossary is-thin">
-                  <h3 className="card__title">Quicklinks</h3>
-                  <Link className="glossary-link" to="/">Getting Started</Link>
-                  <Link className="glossary-link" to="/">API Documentation</Link>
-                  <Link className="glossary-link" to="/">Code Libraries</Link>
-                  <Link className="glossary-link" to="/">API Keys</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <FooterCallout />
       </div>
     );
   }
