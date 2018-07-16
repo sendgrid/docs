@@ -60,6 +60,6 @@ SendGrid strongly recommends:
 Additional Resources
 {% endanchor %}
 
-- [Lists and Segmentation](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/lists.html)
-- [Unsubscribe Groups](https://sendgrid.com/docs/User_Guide/Suppressions/advanced_suppression_manager.html)
-- [Custom Fields](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html)
+- [Lists and Segmentation]({{root_url}}/help-support/managing-contacts/segmenting-your-contacts.html)
+- [Unsubscribe Groups]({{root_url}}//docs/help-support/sending-email/index-suppressions.html)
+- [Custom Fields]({{root_url}}//help-support/sending-email/custom-fields.html)

@@ -40,7 +40,7 @@ Key terminology
 DNS
 {% endanchor %}
 
-DNS stands for Domain Name System. This is a naming system for domains on the internet. When SendGrid refers to your DNS, we are talking about your domain name that you want to send emails from, or that you want to link images from. When we talk about your DNS provider, we are talking about the service that hosts your domain name. For example, GoDaddy, Rackspace, or Cloudflare. For more information about DNS, see our [DNS glossary page]({{root_url}}/Glossary/dns.html).
+DNS stands for Domain Name System. This is a naming system for domains on the internet. When SendGrid refers to your DNS, we are talking about your domain name that you want to send emails from, or that you want to link images from. When we talk about your DNS provider, we are talking about the service that hosts your domain name. For example, GoDaddy, Rackspace, or Cloudflare. For more information about DNS, see our [DNS glossary page]({{root_url}}/glossary/dns.html).
 
 {% anchor h3 %}
 CDN
@@ -48,13 +48,13 @@ CDN
 
 A CDN (content delivery network) is a network that delivers the content of webpages to the end user. The network selects the servers for delivery based on the location of the end user, the originating location of the webpage and the location of the content delivery server. Content Delivery Networks are a great mechanism that you can use to serve up content very quickly and easily across multiple mediums as well as handle security certificates for you.
 
-We suggest [CloudFlare]({{root_url}}/User_Guide/Setting_Up_Your_Server/content_delivery_networks.html#-Using-CloudFlare), [Fastly]({{root_url}}/User_Guide/Setting_Up_Your_Server/content_delivery_networks.html#-Using-Fastly), or [KeyCDN]({{root_url}}/User_Guide/Setting_Up_Your_Server/content_delivery_networks.html#-Using-KeyCDN) when using Content Delivery Networks with SendGrid.
+We suggest [CloudFlare]({{root_url}}/help-support/sending-email/content-delivery-networks.html#-Using-CloudFlare), [Fastly]({{root_url}}/help-support/sending-email/content-delivery-networks.html#-Using-Fastly), or [KeyCDN]({{root_url}}/help-support/sending-email/content-delivery-networks.html#-Using-KeyCDN) when using Content Delivery Networks with SendGrid.
 
 {% anchor h3 %}
 CNAME
 {% endanchor %}
 
-The CNAME record creates an alias for subdomain.yourdomain.com and points to sendgrid.net. The CNAME is needed for our click and open tracking features in order for those statistics to be routed back to your SendGrid account. This will also be what your messages are signed by, so your recipients will be able see what you have chosen for your CNAME. You set up the CNAME files that SendGrid provides with your DNS host. For more information about CNAME, see our [CNAME glossary page]({{root_url}}/Glossary/cname.html).
+The CNAME record creates an alias for subdomain.yourdomain.com and points to sendgrid.net. The CNAME is needed for our click and open tracking features in order for those statistics to be routed back to your SendGrid account. This will also be what your messages are signed by, so your recipients will be able see what you have chosen for your CNAME. You set up the CNAME files that SendGrid provides with your DNS host. For more information about CNAME, see our [CNAME glossary page]({{root_url}}/glossary/cname.html).
 
 {% anchor h3 %}
 Before you begin
@@ -72,7 +72,7 @@ Note that you can also set up link branding when you set up your domain authenti
 1. In the link branding section, click **Get Started**.
 1. Next, add in information about your DNS host. CLick **Next**.
 1. Enter the domain that you want to brand the links and images with and add advanced settings. Make sure that you only enter the name of your root domain. Do not include `www` or `http://www` in this field! Your domain needs to match the domain of your from address on the emails you are sending out. For example, if I am branding with the domain `example.sendgrid.com`, I would set my link branding domain to be `sendgrid.com`. Click **Next**. For more information about advanced settings, see [Advanced settings](#-Advanced-settings).
-1. Next, you need to add all of the CNAME records on this screen to your DNS host. This process varies depending on your DNS host. For videos on how to add your CNAME to some popular DNS service providers, check out these [videos](https://sendgrid.com/docs/Help/Getting_Started/dns_providers.html). If you don't have access to modify your companies DNS records, you can also email a request to a co-worker. This email includes a direct link to the CNAME records. This link does expire. The recipient doesn't need login access to your SendGrid account.
+1. Next, you need to add all of the CNAME records on this screen to your DNS host. This process varies depending on your DNS host. For videos on how to add your CNAME to some popular DNS service providers, check out these [videos](https://sendgrid.com/docs/help-support/getting-started/dns-providers.html). If you don't have access to modify your companies DNS records, you can also email a request to a co-worker. This email includes a direct link to the CNAME records. This link does expire. The recipient doesn't need login access to your SendGrid account.
 
 Now links and images in your emails are from your custom domain. You only need to update your link branding if you want to update the domain that appears in the links in your email.
 
@@ -82,10 +82,10 @@ It can take up to 48 hours for the records to verify after you upload them into 
 Verifying your DNS
 {% endanchor %}
 
-Once you add the CNAME records to your DNS host, return to the [Sender authentication page](https://app.sendgrid.com/settings/whitelabel) and click **Verify**.
+Once you add the CNAME records to your DNS host, return to the [Sender authentication page](https://app.sendgrid.com/settings/sender_auth) and click **Verify**.
 
 {% info %}
-If you click verify, and only half of your CNAME records verify, this usually means that you need to wait a bit longer. It's also possible that you entered one of your records in incorrectly. For other troubleshooting information, see [Sender authentication troubleshooting]({{root_url}}/Help/Getting_Started/Troubleshooting_sender_authentication.html).
+If you click verify, and only half of your CNAME records verify, this usually means that you need to wait a bit longer. It's also possible that you entered one of your records in incorrectly. For other troubleshooting information, see [Sender authentication troubleshooting]({{root_url}}/help-support/getting-started/troubleshooting-sender-authentication.html).
 {% endinfo %}
 
 Any time that you send an email with image or links that match the branded link, SendGrid applies that link to your email. You only need to update your link branding if you want to update the links used in your emails.
@@ -124,6 +124,6 @@ If you set up a whitelabel after 2015, it has been automatically migrated to our
 Additional resources
 {% endanchor %}
 
-- [How to set up domain authentication]({{root_url}}/Help/Getting_Started/How_to_set_up_domain_authentication.html)
-- [How to set up reverse DNS]({{root_url}}/Help/Getting_Started/How_to_set_up_reverse_dns.html)
-- [Troubleshooting]({{root_url}}/Help/Getting_Started/Troubleshooting_sender_authentication.html)
+- [How to set up domain authentication]({{root_url}}/help-support/getting-started/how-to-set-up-domain-authentication.html)
+- [How to set up reverse DNS]({{root_url}}/help-support/getting-started/how-to-set-up-reverse-dns.html)
+- [Troubleshooting]({{root_url}}/help-support/getting-started/troubleshooting-sender-authentication.html)

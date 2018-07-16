@@ -44,7 +44,7 @@ Key terminology
 DNS
 {% endanchor %}
 
-DNS stands for Domain Name System. This is a naming system for domains on the internet. When SendGrid refers to your DNS, we are talking about your domain name that you want to send emails from, or that you want to link images from. When we talk about your DNS provider, we are talking about the service that hosts your domain name. For example, GoDaddy, Rackspace, or Cloudflare. For more information about DNS, see our [DNS glossary page]({{root_url}}/Glossary/dns.html).
+DNS stands for Domain Name System. This is a naming system for domains on the internet. When SendGrid refers to your DNS, we are talking about your domain name that you want to send emails from, or that you want to link images from. When we talk about your DNS provider, we are talking about the service that hosts your domain name. For example, GoDaddy, Rackspace, or Cloudflare. For more information about DNS, see our [DNS glossary page]({{root_url}}/glossary/dns.html).
 
 {% anchor h3 %}
 DKIM
@@ -54,19 +54,19 @@ DKIM stands for DomainKeys Identified Mail which was designed to help email prov
 
 As one of the most popular email authentication methodologies, it works by using cryptographic technology that adds a digital signature to your message header. This DKIM signature validates and authorizes your domain name in the eyes of the receiver. The DKIM signature is created using a unique string of characters stored as a public key.
 
-When your email is received, the public key is retrieved through the DNS and decrypted by the receiver to allow them to confidently verify the identity of your domain. For more information about DKIM, see our [DKIM glossary page]({{root_url}}/Glossary/dkim.html).
+When your email is received, the public key is retrieved through the DNS and decrypted by the receiver to allow them to confidently verify the identity of your domain. For more information about DKIM, see our [DKIM glossary page]({{root_url}}/glossary/dkim.html).
 
 {% anchor h3 %}
 SPF
 {% endanchor %}
 
-Sender Policy Framework (SPF) is an email authentication standard developed by AOL that compares the email sender’s actual IP address to a list of IP addresses authorized to send mail from that domain. The IP list is published in the domain’s DNS record. For more information about SPF, check out our [SPF glossary page]({{root_url}}/Glossary/spf.html).
+Sender Policy Framework (SPF) is an email authentication standard developed by AOL that compares the email sender’s actual IP address to a list of IP addresses authorized to send mail from that domain. The IP list is published in the domain’s DNS record. For more information about SPF, check out our [SPF glossary page]({{root_url}}/glossary/spf.html).
 
 {% anchor h3 %}
 CNAME
 {% endanchor %}
 
-The CNAME record creates an alias for subdomain.yourdomain.com and points to sendgrid.net. The CNAME is needed for our click and open tracking features in order for those statistics to be routed back to your SendGrid account. This will also be what your messages are signed by, so your recipients will be able see what you have chosen for your CNAME. You set up the CNAME files that SendGrid provides with your DNS host. For more information about CNAME, see our [CNAME glossary page]({{root_url}}/Glossary/cname.html).
+The CNAME record creates an alias for subdomain.yourdomain.com and points to sendgrid.net. The CNAME is needed for our click and open tracking features in order for those statistics to be routed back to your SendGrid account. This will also be what your messages are signed by, so your recipients will be able see what you have chosen for your CNAME. You set up the CNAME files that SendGrid provides with your DNS host. For more information about CNAME, see our [CNAME glossary page]({{root_url}}/glossary/cname.html).
 
 {% anchor h2 %}
 Setting up domain authentication
@@ -82,12 +82,12 @@ To set up domain authentication, you must submit the DNS records provided by Sen
 
 1. In the SendGrid UI, select [Settings > Sender Authentication](https://app.sendgrid.com/settings/sender_auth).
 1. In the domain authentication section, click **Get Started**.
-1. Next, add in information about your DNS host, and indicate whether you also want to set up link branding. Click **Next**. For more information about link branding, check out [What is link branding?]({{root_url}}/Help/Getting_Started/How_to_set_up_link_branding.html#-What-is-link-branding).
+1. Next, add in information about your DNS host, and indicate whether you also want to set up link branding. Click **Next**. For more information about link branding, check out [What is link branding?]({{root_url}}/help-support/getting-started/how-to-set-up-link-branding.html#-What-is-link-branding).
 1. Fill in the domain that you want to send from and add advanced settings as needed. Make sure that you only enter the name of your root domain. Do not include `www` or `http://www` in this field! Your domain needs to match the domain of your FROM address on the emails you are sending out. For example, if I am sending an email from `example@sendgrid.com`, I would set my domain authentication domain to be `sendgrid.com`. Click **Next**. For more information about advanced settings, see [Advanced settings](#-Advanced-settings).
-1. Next, you need to add all of the CNAME records on this screen to your DNS host. This process varies depending on your DNS host. For videos on how to add your CNAME to some popular DNS service providers, check out these [videos]({{root_url}}/docs/Help/Getting_Started/dns_providers.html). If you don't have access to modify your companies DNS records, you can also email a request to a co-worker. This email includes a direct link to the CNAME records. This link does expire. The recipient doesn't need login access to your SendGrid account.
+1. Next, you need to add all of the CNAME records on this screen to your DNS host. This process varies depending on your DNS host. For videos on how to add your CNAME to some popular DNS service providers, check out these [videos]({{root_url}}/help-support/getting-started/dns-providers.html). If you don't have access to modify your companies DNS records, you can also email a request to a co-worker. This email includes a direct link to the CNAME records. This link does expire. The recipient doesn't need login access to your SendGrid account.
 
 {% info %}
-If you [turn off automated security](#-Using-automated-security), you add TXT and MT records in this step instead of CNAME records.
+If you [turn off automated security](#-Using-automated-security), you add TXT and MX records in this step instead of CNAME records.
 {% endinfo %}
 
 It can take up to 48 hours for the records to verify after you upload them into your DNS host, so you will likely have to come back later to verify.
@@ -99,7 +99,7 @@ Verifying your DNS
 Once you add the CNAME records to your DNS host, return to the [Sender authentication page](https://app.sendgrid.com/settings/sender_auth) and click **Verify**.
 
 {% info %}
-If you click verify, and only half of your CNAME records verify, this usually means that you need to wait a bit longer. It's also possible that you entered one of your records in incorrectly. For other troubleshooting information, see [Sender authentication troubleshooting]({{root_url}}/Help/Getting_Started//Troubleshooting_sender_authentication.html).
+If you click verify, and only half of your CNAME records verify, this usually means that you need to wait a bit longer. It's also possible that you entered one of your records in incorrectly. For other troubleshooting information, see [Sender authentication troubleshooting]({{root_url}}/help-support/getting-started/troubleshooting-sender-authentication.html).
 {% endinfo %}
 
 Any time that you send an email with a FROM address whose domain matches the domain set in the domain authentication, SendGrid applies that domain to your email. You only need to update your domain authentication if you want to update the domain you are emailing from.
@@ -168,6 +168,6 @@ If you set up a whitelabel after 2015, it has been automatically migrated to our
 Additional resources
 {% endanchor %}
 
-- [How to set up link branding]({{root_url}}/Help/Getting_Started/How_to_set_up_link_branding.html)
-- [How to set up reverse DNS]({{root_url}}/Help/Getting_Started/How_to_set_up_reverse_dns.html)
-- [Troubleshooting]({{root_url}}/Help/Getting_Started/Troubleshooting_sender_authentication.html)
+- [How to set up link branding]({{root_url}}/help-support/getting-started/how-to-set-up-link-branding.html)
+- [How to set up reverse DNS]({{root_url}}/help-support/getting-started/how-to-set-up-reverse-dns.html)
+- [Troubleshooting]({{root_url}}/help-support/getting-started/troubleshooting-sender-authentication.html)

@@ -35,6 +35,13 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-google-tagmanager',
+      options: {
+        id: 'GTM-PQC59L',
+        includeInDevelopment: false,
+      },
+    },
+    {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
