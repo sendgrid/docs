@@ -35,6 +35,7 @@ export default class HTML extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
+          <script src="//cdn.optimizely.com/js/72168671.js" />
           {this.props.headComponents}
           {/* <link rel="shortcut icon" href={favicon} /> */}
           {css}
