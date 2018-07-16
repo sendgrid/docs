@@ -93,7 +93,6 @@ Here is an event response that includes an example of each type of event:
    {  
       "email":"example@test.com",
       "timestamp":1513299569,
-      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
       "event":"open",
       "category":"cat facts",
       "sg_event_id":"sg_event_id",
@@ -104,7 +103,6 @@ Here is an event response that includes an example of each type of event:
    {  
       "email":"example@test.com",
       "timestamp":1513299569,
-      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
       "event":"click",
       "category":"cat facts",
       "sg_event_id":"sg_event_id",
@@ -316,7 +314,6 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
    {  
       "email":"example@test.com",
       "timestamp":1513299569,
-      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
       "event":"open",
       "category":"cat facts",
       "sg_event_id":"FOTFFO0ecsBE-zxFXfs6WA==",
@@ -335,7 +332,6 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
    {  
       "email":"example@test.com",
       "timestamp":1513299569,
-      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
       "event":"click",
       "category":"cat facts",
       "sg_event_id":"kCAi1KttyQdEKHhdC-nuEA==",
@@ -494,8 +490,8 @@ Event objects
     <td>X</td>
     <td>X</td>
     <td>X</td>
-    <td>X</td>
-    <td>X</td>
+    <td></td>
+    <td></td>
     <td>X</td>
     <td>X</td>
     <td>X</td>
