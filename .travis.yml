@@ -18,7 +18,6 @@ deploy:
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   bucket: sendgrid-knowledge-center-staging
-  acl: public
   skip_cleanup: true
   local_dir: public
   on:
