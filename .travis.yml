@@ -2,21 +2,17 @@ sudo: required
 dist: trusty
 language: node_js
 node_js:
-  - "8.4.0"
+- 8.4.0
 python:
-  - "3.5"
+- '3.5'
 cache:
-  - pip
-  - yarn
+- pip
+- yarn
 install:
-  # Install any dependencies required for building your site here.
-  # `awscli` is required for invalidation of CloudFront distributions.
-  - pip install --user awscli
+- pip install --user awscli
 before_script:
-  - yarn
-script:
-  # Build your site (e.g., HTML, CSS, JS) here.
-  yarn run build
+- yarn
+script: yarn run build
 deploy:
   provider: s3
   access_key_id: AKIAJJGRGM2JGDDBAZ4Q
@@ -28,5 +24,9 @@ deploy:
     repo: sendgrid/docs
     branch: a-new-hope-episode-iv
 after_deploy:
-  - aws configure set preview.cloudfront true
-  - test $TRAVIS_BRANCH = "a-new-hope-episode-iv" && aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
+- aws configure set preview.cloudfront true
+- test $TRAVIS_BRANCH = "a-new-hope-episode-iv" && aws cloudfront create-invalidation
+  --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
+env:
+  global:
+    secure: J+tpvFSa6ifg4zMHtjHHBNKKF9EDplyTljR2YLt57pVp3+TF3Wqm8g3xxQdg9afSsKaoYRFsX0aLH59lV3csxqRwMmtZZiam6l4fpQspq293DOOBaAj5S8sc614+FMsqPbnlhOtAyzEeQMwWZIRmcsGV+eetWeQU7xCwYT6y+so=
