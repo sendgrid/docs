@@ -11,6 +11,7 @@ class ForDevelopers extends Component {
   static renderFeaturedCards() {
     return FOR_DEVS_CARDS.map(card => (
       <div className="card card--home col-md-6 ta-center" key={card.TITLE}>
+        <img className="card-icon" src={card.ICON} alt={card.TITLE} />
         <h3 className="card__title" >{card.TITLE}</h3>
         {card.LINKS.map(link => <Link key={link.TEXTNODE} to={link.URL} className="card__link">{link.TEXTNODE}</Link>)}
         <Link className="btn center" to={card.BUTTON_LINK}>View All</Link>
@@ -24,10 +25,10 @@ class ForDevelopers extends Component {
         <SEO postNode={this.props} title="For Developers" description="SendGrid API and Marketing Campaigns documentation for Developers" />
         <div className="container for-devs-callouts m-bottom-6">
           <h1 className="page-title">For Developers</h1>
-          <div className="row">
+          <div className="row row--home-cards">
             <div className="col-lg-4 col-offset-lg-2 card ta-center">
               <div className="for-devs-callouts__bar" />
-              <h2>API</h2>
+              <h2>API Reference</h2>
               <Link to="/" className="btn btn-primary center">Visit API reference</Link>
             </div>
             <div className="col-lg-4 card ta-center">
@@ -43,7 +44,7 @@ class ForDevelopers extends Component {
         <Libaries />
         <div className="for-devs-featured container">
           <h2>Featured Resources</h2>
-          <div className="row">
+          <div className="row row--home-cards">
             {ForDevelopers.renderFeaturedCards()}
           </div>
         </div>
