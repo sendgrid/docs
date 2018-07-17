@@ -15,9 +15,8 @@ before_script:
 script: yarn run build
 deploy:
   provider: s3
-  access_key_id: AKIAJJGRGM2JGDDBAZ4Q
-  secret_access_key:
-    secure: J+tpvFSa6ifg4zMHtjHHBNKKF9EDplyTljR2YLt57pVp3+TF3Wqm8g3xxQdg9afSsKaoYRFsX0aLH59lV3csxqRwMmtZZiam6l4fpQspq293DOOBaAj5S8sc614+FMsqPbnlhOtAyzEeQMwWZIRmcsGV+eetWeQU7xCwYT6y+so=
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
   bucket: sendgrid-knowledge-center-staging
   acl: public
   skip_cleanup: true
