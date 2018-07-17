@@ -20,6 +20,7 @@ deploy:
   bucket: sendgrid-knowledge-center-staging
   skip_cleanup: true
   local_dir: public
+  acl: public_read
   on:
     repo: sendgrid/docs
     branch: a-new-hope-episode-iv
