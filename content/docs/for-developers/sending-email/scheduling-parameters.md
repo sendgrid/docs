@@ -52,13 +52,13 @@ Send Each At
 To schedule a send request for individual recipients; use `send_each_at` to send emails to each recipient at the specified time. `send_each_at` is a sequence of UNIX timestamps, provided as an array. There must be one timestamp per email you wish to send.
 
 <h4>Example of send_each_at email header</h4>
-{% codeblock lang:json %}
+```
 {
   "to": [
-    "<ben@example.com>",
+    "ben@example.com",
     "john@example.com",
     "mikeexampexample@example.com",
-    "<example@example.com>",
+    "example@example.com",
     "example@example.com",
     "example@example.com"
   ],
@@ -68,26 +68,26 @@ To schedule a send request for individual recipients; use `send_each_at` to send
     1409348515
   ]
 }
-{% endcodeblock %}
+```
 
 To allow for the cancellation of a scheduled send, you must include a `batch_id` with your send. To generate a valid `batch_id`, use the [batch id generation endpoint]({{root_url}}/API_Reference/Web_API_v3/cancel_scheduled_send.html#Cancel-Scheduled-Sends). A `batch_id` is valid for 10 days (864,000 seconds) after generation.
 
 <h4>Example of including a batch_id</h4>
-{% codeblock lang:json %}
+```
 {
   "to": [
 
-    "<ben@example.com>",
+    "ben@example.com",
     "john@example.com",
     "mikeexampexample@example.com",
-    "<example@example.com>",
+    "example@example.com",
     "example@example.com",
     "example@example.com"
   ],
   "send_at": 1409348513,
   "batch_id": "MWQxZmIyODYtNjE1Ni0xMWU1LWI3ZTUtMDgwMDI3OGJkMmY2LWEzMmViMjYxMw"
 }
-{% endcodeblock %}
+```
 
 {% anchor h2 %}
 Additional Resources
