@@ -25,5 +25,4 @@ source/_assets/bower_components
 source/.asset_pipeline
 npm-debug.log
 package-lock.json
-yarn.lock
 .cache
