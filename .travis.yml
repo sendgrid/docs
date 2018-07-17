@@ -20,6 +20,7 @@ deploy:
     secure: J+tpvFSa6ifg4zMHtjHHBNKKF9EDplyTljR2YLt57pVp3+TF3Wqm8g3xxQdg9afSsKaoYRFsX0aLH59lV3csxqRwMmtZZiam6l4fpQspq293DOOBaAj5S8sc614+FMsqPbnlhOtAyzEeQMwWZIRmcsGV+eetWeQU7xCwYT6y+so=
   bucket: sendgrid-knowledge-center-staging
   acl: public
+  skip_cleanup: true
   on:
     repo: sendgrid/docs
     branch: a-new-hope-episode-iv
