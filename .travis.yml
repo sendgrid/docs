@@ -21,7 +21,7 @@ deploy:
   provider: s3
   access_key_id: AKIAJJGRGM2JGDDBAZ4Q
   secret_access_key:
-    secure: jTjAzmGxCU0pSn5v4Gm5hHrYCAnbOCm12Hl5Fuxo4BWbJvOeqanBPptLmhYPNfYYvUJXmbBZi7jXukLD8Xeb9GCTEZCn4f62uwJqdYO3Tr7TrDSPQcjpd+XFaNner3DrYmkm9mk4k3OKDIVhPL5UJz3VFf8tO+VJtT0fFkICfOU=
+    secure: NYj1uuCbtq9+8eoVj2RGqwMMeqssbfY/2p0wcjv890lMHBXiiK4f2qIKsojWbjIWyQ7tHYtHdt3j79WkCL4xjiflgneJOUO1/VPlhNFiIp3VQIejQWbffYRVqC3JdaoTL2YCppWrm10Kz+PAy5iuTpAyWfIhSAnVuJ2x4qbDnGw=
   bucket: sendgrid-knowledge-center-staging
   acl: private
   on:
