@@ -1,6 +1,13 @@
+import plane from '../img/icon-sending-email.svg';
+import contacts from '../img/icon-contacts.svg';
+import analytics from '../img/icon-analytics.svg';
+import account from '../img/icon-account.svg';
+import api from '../img/icon-api.svg';
+import parse from '../img/icon-parse.svg';
+
 const FOR_DEVS_CARDS = [
   {
-    ICON: 'plane',
+    ICON: plane,
     TITLE: 'Sending Email',
     LINKS: [
       { URL: '/foo-bar', TEXTNODE: 'Sending Email with Markting Campaigns' },
@@ -10,7 +17,7 @@ const FOR_DEVS_CARDS = [
     BUTTON_LINK: '/for-developers/sending-email',
   },
   {
-    ICON: 'plane',
+    ICON: parse,
     TITLE: 'Parsing Email',
     LINKS: [
       { URL: '/foo-bar', TEXTNODE: 'Sending Email with Markting Campaigns' },
@@ -20,7 +27,7 @@ const FOR_DEVS_CARDS = [
     BUTTON_LINK: '/for-developers/parsing-email',
   },
   {
-    ICON: 'plane',
+    ICON: contacts,
     TITLE: 'Managing Contacts',
     LINKS: [
       { URL: '/foo-bar', TEXTNODE: 'Sending Email with Markting Campaigns' },
@@ -30,7 +37,7 @@ const FOR_DEVS_CARDS = [
     BUTTON_LINK: '/for-developers/managing-contacts',
   },
   {
-    ICON: 'plane',
+    ICON: analytics,
     TITLE: 'Tracking Events',
     LINKS: [
       { URL: '/foo-bar', TEXTNODE: 'Sending Email with Markting Campaigns' },
@@ -40,8 +47,8 @@ const FOR_DEVS_CARDS = [
     BUTTON_LINK: '/for-developers/tracking-events',
   },
   {
-    ICON: 'plane',
-    TITLE: 'Account Management',
+    ICON: api,
+    TITLE: 'Account & Settings',
     LINKS: [
       { URL: '/foo-bar', TEXTNODE: 'Sending Email with Markting Campaigns' },
       { URL: '/foo-bar', TEXTNODE: 'Using the Template Editor' },
@@ -50,8 +57,8 @@ const FOR_DEVS_CARDS = [
     BUTTON_LINK: '/for-developers/tracking-events',
   },
   {
-    ICON: 'plane',
-    TITLE: 'Account & Settings',
+    ICON: account,
+    TITLE: 'Account Management',
     LINKS: [
       { URL: '/foo-bar', TEXTNODE: 'Sending Email with Markting Campaigns' },
       { URL: '/foo-bar', TEXTNODE: 'Using the Template Editor' },

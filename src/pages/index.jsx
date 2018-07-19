@@ -52,7 +52,7 @@ class Index extends React.Component {
         </div>
         <div className="home-callouts">
           <div className="container-lg">
-            <div className="row">
+            <div className="row row--home-cards">
               {Index.renderCallouts()}
             </div>
           </div>

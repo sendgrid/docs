@@ -15,6 +15,7 @@ $card-gutter: 40px;
 }
 
 .search-hero {
+  background: $sg-blue-20;
   background: $gradient-hero;
 }
 
@@ -68,9 +69,16 @@ $card-gutter: 40px;
 
 .card--home {
   margin-bottom: $card-gutter;
+
+  .card-icon {
+    max-width: 40px;
+    margin: 0 auto 20px;
+  }
+
   .card__title {
     margin-bottom: $scaleup-4;
   }
+
   .btn {
     margin-top: $scaleup-1;
   }
@@ -106,7 +114,7 @@ $card-gutter: 40px;
 
 .home-featured::before {
   background: $seafoam;
-  background: linear-gradient(to bottom right, #62ffae, $seafoam);
+  background: $gradient-home-featured;
   content: "";
   height: 100%;
   left: -25%;
@@ -123,11 +131,6 @@ $card-gutter: 40px;
   margin-top: -30px;
   position: relative;
   z-index: 2;
-
-  // increase gutter for callouts
-  .row {
-    grid-column-gap: 3%;
-  }
 }
 
 .home-callout {
