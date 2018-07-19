@@ -58,7 +58,7 @@ Here is a flow of email events:
 
 Here is an event response that includes an example of each type of event:
 
-{% codeblock lang:json %}
+```json
 [
    {
       "email":"example@test.com",
@@ -180,7 +180,7 @@ Here is an event response that includes an example of each type of event:
       "asm_group_id":10
    }
 ]
-{% endcodeblock %}
+```
 
 {% anchor h3 %}
 Delivery events
@@ -199,7 +199,7 @@ Delivery events include processed, dropped, delivered, deferred, and bounce.
       <tr>
          <td><a name="processed"></a>Processed</td>
          <td>Message has been received and is ready to be delivered.</td>
-         <td>{% codeblock lang:json %}
+         <td>```json
 [
    {
       "email":"example@test.com",
@@ -215,12 +215,12 @@ Delivery events include processed, dropped, delivered, deferred, and bounce.
       "sg_message_id":"14c5d75ce93.dfd.64b469.filter0001.16648.5515E0B88.0"
    }
 ]
-{% endcodeblock %}</td>
+```</td>
       </tr>
       <tr>
          <td><a name="dropped"></a>Dropped</td>
          <td>You may see the following drop reasons: Invalid SMTPAPI header, Spam Content (if Spam Checker app is enabled), Unsubscribed Address, Bounced Address, Spam Reporting Address, Invalid, Recipient List over Package Quota</td>
-         <td>{% codeblock lang:json %}
+         <td>```json
 [
    {
       "email":"example@test.com",
@@ -234,12 +234,12 @@ Delivery events include processed, dropped, delivered, deferred, and bounce.
       "status":"5.0.0"
    }
 ]
-{% endcodeblock %}</td>
+```</td>
       </tr>
       <tr>
          <td><a name="delivered"></a>Delivered</td>
          <td>Message has been successfully delivered to the receiving server.</td>
-         <td>{% codeblock lang:json %}
+         <td>```json
 [
    {
       "email":"example@test.com",
@@ -252,12 +252,12 @@ Delivery events include processed, dropped, delivered, deferred, and bounce.
       "response":"250 OK"
    }
 ]
-{% endcodeblock %}</td>
+```</td>
       </tr>
       <tr>
          <td><a name="deferred"></a>Deferred</td>
          <td>Receiving server temporarily rejected the message.</td>
-         <td>{% codeblock lang:json %}
+         <td>```json
 [
    {
       "email":"example@test.com",
@@ -271,12 +271,12 @@ Delivery events include processed, dropped, delivered, deferred, and bounce.
       "attempt":"5"
    }
 ]
-{% endcodeblock %}</td>
+```</td>
       </tr>
       <tr>
          <td><a name="bounce"></a>Bounce</td>
          <td>Receiving server could not or would not accept the message. If a recipient has previously unsubscribed from your emails, the message is bounced.</td>
-         <td>{% codeblock lang:json %}
+         <td>```json
 [
    {
       "email":"example@test.com",
@@ -290,7 +290,7 @@ Delivery events include processed, dropped, delivered, deferred, and bounce.
       "status":"5.0.0"
    }
 ]
-{% endcodeblock %}</td>
+```</td>
       </tr>
    </tbody>
 </table>
@@ -311,7 +311,7 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
       <tr>
          <td><a name="open"></a>Open</td>
          <td>Recipient has opened the HTML message. Open Tracking needs to be enabled for this type of event.</td>
-         <td>{% codeblock lang:json %}
+         <td>```json
 [
    {
       "email":"example@test.com",
@@ -325,12 +325,12 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
       "ip":"255.255.255.255"
    }
 ]
-{% endcodeblock %}</td>
+```</td>
       </tr>
       <tr>
          <td><a name="click"></a>Click</td>
          <td>Recipient clicked on a link within the message. Click Tracking needs to be enabled for this type of event.</td>
-         <td>{% codeblock lang:json %}
+         <td>```json
 [
    {
       "email":"example@test.com",
@@ -345,12 +345,12 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
       "url":"http://www.sendgrid.com/"
    }
 ]
-{% endcodeblock %}</td>
+```</td>
       </tr>
       <tr>
          <td><a name="spamreport"></a>Spam Report</td>
          <td>Recipient marked message as spam.</td>
-         <td>{% codeblock lang:json %}
+         <td>```json
 [
    {
       "email":"example@test.com",
@@ -362,12 +362,12 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
       "sg_message_id":"14c5d75ce93.dfd.64b469.filter0001.16648.5515E0B88.0"
    }
 ]
-{% endcodeblock %}</td>
+```</td>
       </tr>
       <tr>
          <td><a name="unsubscribe"></a>Unsubscribe</td>
          <td>Recipient clicked on the 'Opt Out of All Emails' link (available after clicking the message's subscription management link). Subscription Tracking needs to be enabled for this type of event.</td>
-         <td>{% codeblock lang:json %}
+         <td>```json
 [
    {
       "email":"example@test.com",
@@ -379,12 +379,12 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
       "sg_message_id":"14c5d75ce93.dfd.64b469.filter0001.16648.5515E0B88.0"
    }
 ]
-{% endcodeblock %}</td>
+```</td>
       </tr>
       <tr>
          <td><a name="groupunsubscribe"></a>Group Unsubscribe</td>
          <td>Recipient unsubscribed from a specific group either by clicking the link directly or updating their preferences. Subscription Tracking needs to be enabled for this type of event.</td>
-         <td>{% codeblock lang:json %}
+         <td>```json
 [
    {
       "email":"example@test.com",
@@ -400,12 +400,12 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
       "asm_group_id":10
    }
 ]
-{% endcodeblock %}</td>
+```</td>
       </tr>
       <tr>
          <td><a name="groupresubscribe"></a>Group Resubscribe</td>
          <td>Recipient resubscribed to a specific group by updating their preferences. Subscription Tracking needs to be enabled for this type of event.</td>
-         <td>{% codeblock lang:json %}
+         <td>```json
 [
    {
       "email":"example@test.com",
@@ -421,7 +421,7 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
       "asm_group_id":10
    }
 ]
-{% endcodeblock %}</td>
+```</td>
       </tr>
    </tbody>
 </table>
@@ -749,7 +749,7 @@ JSON objects
 
 String categories:
 
-{% codeblock lang:json %}
+```json
 [
   {
     "email": "john.doe@sendgrid.com",
@@ -764,11 +764,11 @@ String categories:
     "event": "open"
   }
 ]
-{% endcodeblock %}
+```
 
 Array:
 
-{% codeblock lang:json %}
+```json
 [
   {
     "email": "john.doe@sendgrid.com",
@@ -786,7 +786,7 @@ Array:
     "event": "open"
   }
 ]
-{% endcodeblock %}
+```
 
 - <a name="asmgroupid"></a>`asm_group_id` - The ID of the unsubscribe group the recipient's email address is included in. ASM IDs correspond to the ID that is returned when you create an unsubscribe group.
 - <a name="uniqueargs"></a>`unique_args` or `custom_args`
@@ -808,18 +808,18 @@ To define and receive unique arguments when sending email with the [SMTP API]({{
 
 For example, if you include the following unique arguments in your x-smtpapi header for an email sent via the v2 Mail Send endpoint:
 
-{% codeblock lang:json %}
+```json
 {
   "unique_args": {
     "userid": "1123",
     "template": "welcome"
   }
 }
-{% endcodeblock %}
+```
 
 You will receive the same unique argument included with the data posted to your Event Webhook:
 
-{% codeblock lang:json %}
+```json
 [
   {
     "sg_message_id":"sendgrid_internal_message_id",
@@ -831,7 +831,7 @@ You will receive the same unique argument included with the data posted to your 
     "template": "welcome"
   }
 ]
-{% endcodeblock %}
+```
 
 <call-out type="warning">
 You can create unique arguments with the same words as reserved keys, such as "event" or "email". However, SendGrid will default to the reserved key and NOT your unique argument for events that contain a reserved key as an object. An example of this is below.
@@ -841,7 +841,7 @@ You can create unique arguments with the same words as reserved keys, such as "e
 Reserved Keys in Unique Arguments
 {% endanchor %}
 
-{% codeblock lang:json %}
+```json
 //for this example, assume we're sending to john.doe@sendgrid.com
 {
   "unique_args": {
@@ -852,13 +852,13 @@ Reserved Keys in Unique Arguments
     "event": "SendEmail"
   }
 }
-{% endcodeblock %}
+```
 
 {% anchor h4 %}
 The resulting webhook call
 {% endanchor %}
 
-{% codeblock lang:json %}
+```json
 [
   {
     "event": "Processed",
@@ -869,7 +869,7 @@ The resulting webhook call
     "email": "john.doe@sendgrid.com"
   }
 ]
-{% endcodeblock %}
+```
 
 <call-out>
 You'll notice that the unique arguments, "event" and "email", were overwritten because they are reserved keys for SendGrid's values.
@@ -883,7 +883,7 @@ Any custom arguments that you include with an email sent through [v3 Mail Send](
 
 For example, if you were to include the following custom arguments in a personalization in your payload to the v3 Mail Send endpoint:
 
-{% codeblock lang:json %}
+```json
 {
   "personalizations": [
     {
@@ -908,17 +908,17 @@ For example, if you were to include the following custom arguments in a personal
     }
   ]
 }
-{% endcodeblock %}
+```
 
 The Event Webhook response:
 
-{% codeblock lang:json %}
+```json
 [
   {
     "userid": "1123"
   }
 ]
-{% endcodeblock %}
+```
 
 - <a name="marketingcampaignid"></a>`marketing_campaign_id`
 - <a name="marketingcampaignname"></a>`marketing_campaign_name`
@@ -929,7 +929,7 @@ For emails sent through our Marketing Campaigns feature, we add Marketing Campai
 Example event from a standard (non-A/B test) campaign send:
   {% endanchor %}
 
-{% codeblock lang:json %}
+```json
   {
     "category": [],
     "email": "email@example.com",
@@ -943,7 +943,7 @@ Example event from a standard (non-A/B test) campaign send:
     "smtp-id": "",
     "timestamp": 1442349428
   }
-{% endcodeblock %}
+```
 
 {% anchor h3 %}
 Example event from an A/B Test:
@@ -951,7 +951,7 @@ Example event from an A/B Test:
 
  `marketing_campaign_version` is displayed in the event data for emails sent as part of an A/B Test. The value for `marketing_campaign_version` are returned as `A`, `B`, `C`, etc.
 
-{% codeblock lang:json %}
+```json
 {
   "category": [],
   "email": "tadpole_0010@stbase-018.sjc1.sendgrid.net",
@@ -967,13 +967,13 @@ Example event from an A/B Test:
   "smtp-id": "<5lFl7Fr1Rjme_EyzNNB_5A@stismtpd-006.sjc1.sendgrid.net>",
   "timestamp": 1442349848
 }
-{% endcodeblock %}
+```
 
 {% anchor h3 %}
 Example event from the winning phase of an A/B Test:
 {% endanchor %}
 
-{% codeblock lang:json %}
+```json
 {
   "category": [],
   "email": "tadpole_0001@stbase-018.sjc1.sendgrid.net",
@@ -988,7 +988,7 @@ Example event from the winning phase of an A/B Test:
   "smtp-id": "",
   "timestamp": 1442349911
 }
-{% endcodeblock %}
+```
 
 {% anchor h3 %}
 Legacy Marketing Email Unsubscribes
@@ -996,7 +996,7 @@ Legacy Marketing Email Unsubscribes
 
 For emails sent through our Legacy Marketing Email tool, unsubscribes look like the following example:
 
-{% codeblock lang:json %}
+```json
 [
   {
     "email": "nick@sendgrid.com",
@@ -1013,11 +1013,11 @@ For emails sent through our Legacy Marketing Email tool, unsubscribes look like 
     "event": "unsubscribe"
   }
 ]
-{% endcodeblock %}
+```
 
 <a name="pool"></a>`pool` - For emails sent with a specified IP Pool, you can view the IP Pool in the event data for a processed event.
 
-{% codeblock lang:json %}
+```json
 [
     {
         "email": "john.doe@sendgrid.com",
@@ -1032,7 +1032,7 @@ For emails sent through our Legacy Marketing Email tool, unsubscribes look like 
         "event": "processed"
     }
 ]
-{% endcodeblock %}
+```
 
 {% anchor h2 %}
 Additional Resources

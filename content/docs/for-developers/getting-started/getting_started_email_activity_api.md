@@ -34,11 +34,11 @@ Getting started
 
 Start with this basic query to the Email Activity Feed API (replace `<<your API key>>` with an API key from your account):
 
-{% codeblock %}
+```
 curl --request GET \
  --url 'http://api.sendgrid.com/v3/messages?limit=10' \
  --header 'authorization: Bearer <<your API key>>'
-{% endcodeblock %}
+```
 
 This returns a list of the 10 most recent emails you've sent. Next, check out some of the common use cases to narrow down your search.
 
@@ -66,11 +66,11 @@ Filter by subject
 
 Use this query to filter by email subject (replace `<<your API key>>` with an API key from your account, and replace <<subject>> with the subject you want to search):
 
-{% codeblock %}
+```
 curl --request GET \
  --url 'https://api.sendgrid.com/v3/messages?limit=10&query=subject%3D<<subject>>' \
  --header 'authorization: Bearer <<your API key>>'
-{% endcodeblock %}
+```
 
 Subject queries have this format:
 
@@ -86,11 +86,11 @@ Filter by recipient email
 
 Use this query to filter by a recipient's email: (replace `<<your API key>>` with an API key from your account, and replace <<email>> with the URL encoded recipients email):
 
-{% codeblock %}
+```
 curl --request GET \
  --url 'https://api.sendgrid.com/v3/messages?limit=10&query=to_email%3D%22<<email>>%22' \
  --header 'authorization: Bearer <<your API key>>'
-{% endcodeblock %}
+```
 
 Recipient email queries have this format:
 
@@ -106,11 +106,11 @@ Filter by bounced emails
 
 Use this query to filter by all bounced emails: (replace `<<your API key>>` with an API key from your account):
 
-{% codeblock %}
+```
 curl --request GET \
  --url 'https://api.sendgrid.com/v3/messages?limit=10&query=status%3D%22bouced%22' \
  --header 'authorization: Bearer <<your API key>>'
-{% endcodeblock %}
+```
 
 Subject queries have this format:
 
@@ -132,11 +132,11 @@ Filter by a recipient email that was bounced
 
 Use this query to filter by a recipient's email and by emails that are bounced: (replace `<<your API key>>` with an API key from your account, and replace <<email>> with the URL encoded recipients email):
 
-{% codeblock %}
+```
 curl --request GET \
  --url 'https://api.sendgrid.com/v3/messages?limit=10&query=status%3D%22bounced%22%20AND%20to_email%3D%22<<email>>%22' \
  --header 'authorization: Bearer <<your API key>>'
-{% endcodeblock %}
+```
 
 {% anchor h3 %}
 Filter by date range
@@ -144,11 +144,11 @@ Filter by date range
 
 Use this query to filter to emails between specific dates: (replace `<<your API key>>` with an API key from your account, and replace {start_date} and {end_date} with a URL encoded UTC date string in this format: `YYYY-MM-DD HH:mm:SS`. Encoded, this looks like this: `2018-02-01T00%3A00%3A00.000Z`)
 
-{% codeblock %}
+```
 curl --request GET \
  --url 'https://api.sendgrid.com/v3/messages?limit=10&query=last_event_time%20BETWEEN%20TIMESTAMP%20%{start_date}%22%20AND%20TIMESTAMP%20%22{end_date}%22' \
  --header 'authorization: Bearer <<your API key>>'
-{% endcodeblock %}
+```
 
 {% anchor h3 %}
 Filter by a recipient and a date range
@@ -156,11 +156,11 @@ Filter by a recipient and a date range
 
 Use this query to filter to emails by recipient and between specific dates: (replace `<<your API key>>` with an API key from your account, replace <<start_date>> and <<end_date>> with a URL encoded UTC date string in this format: `YYYY-MM-DD HH:mm:SS`, and and replace <<email>> with the URL encoded recipient's email)
 
-{% codeblock %}
+```
 curl --request GET \
  --url 'https://api.sendgrid.com/v3/messages?limit=10&query=last_event_time%20BETWEEN%20TIMESTAMP%20%{start_date}%22%20AND%20TIMESTAMP%20%22{end_date}%22AND%20to_email%3D%22<<email>>%22' \
  --header 'authorization: Bearer <<your API key>>'
-{% endcodeblock %}
+```
 
 {% anchor h2 %}
 Keywords and Operator reference

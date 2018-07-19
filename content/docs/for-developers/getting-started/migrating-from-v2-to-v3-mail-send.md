@@ -53,7 +53,7 @@ Previously, the only way to specify custom handling instructions for your email 
 
 For example, if you wanted to schedule an email to be sent at a certain time using the v2 mail send endpoint, your request body would look like:
 
-{% codeblock %}
+```
 api_user=YOUR_USER_NAME&
 api_key=YOUR_PASSWORD&
 to=john.doeexampexample@example.com&
@@ -62,11 +62,11 @@ subject=Hello, World!&
 text=Hello, World!&
 from=from_address@example.com
 x-smtpapi={"send_at":1459728000}
-{% endcodeblock %}
+```
 
 However, the equivalent API call for the the v3 mail send endpoint would look like:
 
-{% codeblock lang:json %}
+```json
 {
 	"personalizations": [{
 		"to": [{
@@ -83,7 +83,7 @@ However, the equivalent API call for the the v3 mail send endpoint would look li
 		"value": "Hello, World!"
 	}
 }
-{% endcodeblock %}
+```
 
 Notice that while the call to the v2 Mail Send endpoint does include JSON, it is only defined from within the x-smtpapi parameter, whereas the entire payload for the v3 Mail Send API Call is formatted in JSON.
 
@@ -103,7 +103,7 @@ When attaching files to an email sent over the v3 Mail Send endpoint, you must i
 
 For example, when attaching a single file named "example_file.jpg", the `attachments` object would look like:
 
-{% codeblock lang:json %}
+```json
 {
   "attachments": [
     {
@@ -116,7 +116,7 @@ For example, when attaching a single file named "example_file.jpg", the `attachm
     }
   ]
 }
-{% endcodeblock %}
+```
 
 More Resources
 For additional resources on the v3 Mail Send endpoint, please first visit our other documentation on the v3 Mail Send endpoint:

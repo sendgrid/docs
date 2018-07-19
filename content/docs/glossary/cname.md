@@ -14,9 +14,9 @@ The CNAME record creates an alias for subdomain.yourdomain.com and points to sen
 
 What it should look like:
 
-{% codeblock %}
+```
 subdomain.yourdomain.com. |  CNAME  |  sendgrid.net.
-{% endcodeblock %}
+```
 
 If your account has a dedicated IP and you are looking to set up [reverse DNS]({{root_url}}/help-support/getting-started/how-to-set-up-reverse-dns.html) your IP, you will need to add some records to your DNS host. In this group of records you will have 1 CNAME record.
 

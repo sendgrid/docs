@@ -12,7 +12,7 @@ The library does not officially support the V2 API, but you can use V2 with an o
 </call-out>
 
 {% anchor h2 %} Using SendGrid's Node.js Library {% endanchor %}
-{% codeblock lang:js %}
+```javascript
 // using SendGrid's Node.js Library
 // https://github.com/sendgrid/sendgrid-nodejs
 var sendgrid = require("sendgrid")("SENDGRID_APIKEY");
@@ -24,4 +24,4 @@ email.setSubject("Sending with SendGrid is Fun");
 email.setHtml("and easy to do anywhere, even with Node.js");
 
 sendgrid.send(email);
-{% endcodeblock %}
+```

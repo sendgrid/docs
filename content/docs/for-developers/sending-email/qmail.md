@@ -12,4 +12,4 @@ Alternately, you can [take a look at Fehcom's very complete description of authe
 
 In general, you will need to add the following to **/var/qmail/control/smtproutes**, but you should verify the actual path and file you need to update.
 
-{% codeblock %} :smtp.sendgrid.net:587 username password {% endcodeblock %} As with all configuration changes, make sure to restart qmail.
+``` :smtp.sendgrid.net:587 username password ``` As with all configuration changes, make sure to restart qmail.

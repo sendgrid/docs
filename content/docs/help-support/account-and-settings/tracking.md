@@ -86,9 +86,9 @@ Settings
 
 **HTML Unsubscribe Content** - The information and HTML for your unsubscribe link. In this HTML, you should include the link text you would like displayed in your email within the tag, like so:
 
-{% codeblock lang:html %}
+```html
 <% Unsubscribe Here %>
-{% endcodeblock %}
+```
 
 **Text Unsubscribe Content** - The information in plain text for your unsubscribe link. You should have the “<% %>” tag in your content, otherwise the user will have no URL for unsubscribing.
 

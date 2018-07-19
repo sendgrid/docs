@@ -140,7 +140,7 @@ For example, if you want your form to look like the following:
 
 You would need to add the following to your .css file:
 
-{% codeblock lang:css %}
+```css
 .sendgrid_mc_label{
   color: #ff0000;
 }
@@ -150,7 +150,7 @@ You would need to add the following to your .css file:
 .sendgrid_mc_button {
   background-color: #0000ff !important;
 }
-{% endcodeblock %}
+```
 
 {% anchor h3 %}
 Testing Your Subscription Widget

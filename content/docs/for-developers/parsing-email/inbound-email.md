@@ -51,8 +51,8 @@ Messages and their headers can have character set data associated with them. In 
 
 The charsets variable will contain a JSON encoded hash of the header / field name and its respective character set. For instance, it may look like:
 
-{% codeblock lang:ruby %}
+```ruby
 [charsets] => {"to":"UTF-8","cc":"UTF-8","subject":"UTF-8","from":"UTF-8","text":"iso-8859-1"}
-{% endcodeblock %}
+```
 
 This shows that all headers should be treated as UTF-8, and the text body is latin1.

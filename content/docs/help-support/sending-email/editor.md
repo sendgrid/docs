@@ -555,20 +555,20 @@ This list may change, and we cannot guarantee 100% support from any of these cli
 1. Insert a `<link>` tag containing an href attribute pointing to your web font.
 
 For example:
-{% codeblock lang:html %}
+```html
 <link href="https://fonts.google.com/specimen/Oswald" rel="stylesheet">
-{% endcodeblock %}
+```
 
 Next, you’ll have to add add a `<style>` to specify that you want to use this new font family:
 
-{% codeblock lang:html %}
+```html
 <style>
     body {
         font-family: 'Oswald',
         sans-serif;
     }
 </style>
-{% endcodeblock %}
+```
 
 {% anchor h3 %}
 Importing Custom HTML With Drag & Drop Markup
@@ -611,7 +611,7 @@ If you don't include the "modules-container" attribute in any of your custom HTM
 
 Following is an example of how you should structure and organize your custom HTML, where [module content] represents the content of your modules.
 
-{% codeblock lang:html %}
+```html
 <div role=”modules-container”>
   <table role=”module” data-type=”button”>
     [ module content ]
@@ -623,7 +623,7 @@ Following is an example of how you should structure and organize your custom HTM
     [ module content ]
   </table>
 </div>
-{% endcodeblock %}
+```
 
 {% anchor h3 %}
 Drag & Drop Code Examples
@@ -636,19 +636,19 @@ Drag & Drop Code Examples
   </tr>
   <tr>
    <td>Image</td>
-    <td>{% codeblock lang:html %}
+    <td>```html
 <table class="wrapper" role="module" data-type="image">
   <tr>
     <td [styles go here] align=['left' or 'right']>
       [MODULE CONTENT]
     </td>
   </tr>
-{% endcodeblock %}
+```
 </td>
   </tr>
   <tr>
     <td>Image &amp; Text</td>
-    <td>{% codeblock lang:html %}
+    <td>```html
 <table role="module" data-type="imagetext">
   <tr>
     <td>
@@ -689,11 +689,11 @@ Drag & Drop Code Examples
     </td>
   </tr>
 </table>
-{% endcodeblock %}</td>
+```</td>
   </tr>
   <tr>
     <td>Text</td>
-    <td>{% codeblock lang:html %}
+    <td>```html
     <table class="module" role="module" data-type="text">
   <tr>
     <td [styles go here] bgcolor=[some color]>
@@ -701,11 +701,11 @@ Drag & Drop Code Examples
     </td>
   </tr>
 </table>
-{% endcodeblock %}</td>
+```</td>
   </tr>
   <tr>
     <td>Code</td>
-    <td>{% codeblock lang:html %}
+    <td>```html
     <table class="module" role="module" data-type="code">
   <tr>
     <td>
@@ -713,11 +713,11 @@ Drag & Drop Code Examples
     </td>
   </tr>
 </table>
-{% endcodeblock %}</td>
+```</td>
   </tr>
   <tr>
     <td>Columns</td>
-    <td>{% codeblock lang:html %}
+    <td>```html
     <table role="module" data-type="columns">
   <tr>
     <td [styles go here] bgcolor=[some color]>
@@ -734,11 +734,11 @@ Drag & Drop Code Examples
     </td>
   </tr>
 </table>
-{% endcodeblock %}</td>
+```</td>
   </tr>
   <tr>
     <td>Button</td>
-    <td>{% codeblock lang:html %}
+    <td>```html
  <table class="module" role="module" data-type="button">
   <tr>
     <td [styles go here] bgcolor=[some color] align=['left' or 'right']>
@@ -752,11 +752,11 @@ Drag & Drop Code Examples
     </td>
   </tr>
 </table>
-{% endcodeblock %}</td>
+```</td>
   </tr>
   <tr>
     <td>Divider</td>
-    <td>{% codeblock lang:html %}
+    <td>```html
     <table class="module" role="module" data-type="divider">
   <tr>
     <td [styles go here] bgcolor=[some color]>
@@ -768,22 +768,22 @@ Drag & Drop Code Examples
     </td>
   </tr>
 </table>
-{% endcodeblock %}</td>
+```</td>
   </tr>
   <tr>
     <td>Spacer</td>
-    <td >{% codeblock lang:html %}
+    <td >```html
     <table class="module" role="module" data-type="spacer">
   <tr>
     <td style="padding: 50px 0 0 0" bgcolor=[some color]>
     </td>
   </tr>
 </table>
-{% endcodeblock %}</td>
+```</td>
   </tr>
   <tr>
     <td>Social</td>
-    <td>{% codeblock lang:html %}
+    <td>```html
     <table class="module" role="module" data-type="social">
  <tbody>
   <tr>
@@ -800,7 +800,7 @@ Drag & Drop Code Examples
  </tbody>
 </table>
 
-{% endcodeblock %}</td>
+```</td>
   </tr>
 </table>
 

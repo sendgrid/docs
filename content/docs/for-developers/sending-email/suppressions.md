@@ -24,11 +24,11 @@ The method used to specify an unsubscribe group for an email depends on how you 
 You may only specify one group per send, and you should wait one minute after creating the group before sending with it.
 </call-out>
 
-{% codeblock lang:json %}
+```json
 {
   "asm_group_id": 1
 }
-{% endcodeblock %}
+```
 
 {% anchor h2 %}
 Defining Unsubscribe Groups to display on the Manage Preferences page
@@ -42,11 +42,11 @@ If you omit the asm_groups_to_display header, your default groups is shown on th
 You can specify up to 25 groups to display.
 </call-out>
 
-{% codeblock lang:json %}
+```json
 {
   "asm_groups_to_display": [1, 2, 3]
 }
-{% endcodeblock %}
+```
 
 {% anchor h2 %}
 Groups

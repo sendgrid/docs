@@ -18,17 +18,17 @@ In this example, we want to parse all emails at *address*@email.sendgrid.biz and
 
 Given this scenario, the following are the parameters you would set at the [Parse API settings page]({{site.site_url}}/developer/reply):
 
-{% codeblock %}
+```
 Hostname: email.sendgrid.biz
-{% endcodeblock %}
+```
 
-{% codeblock %}
+```
 URL: http://sendgrid.biz/parse
-{% endcodeblock %}
+```
 
   To test this scenario, we sent an email to example@example.com and created the following code:
 
-{% codeblock lang:python %}
+```python
 from flask import Flask, request
 import simplejson
 app = Flask(__name__)
@@ -61,4 +61,4 @@ def sendgrid_parser():
 if __name__ == '__main__':
     app.run(debug=True)
 
-{% endcodeblock %}
+```

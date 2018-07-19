@@ -50,7 +50,7 @@ Send a transactional email
 
 In order to send a dynamic transactional email using cURL, set your call up to look something like this:
 
-{% codeblock %}
+```
 curl -X "POST" "https://api.sendgrid.com/v3/mail/send" \
      -H 'Authorization: Bearer <<YOUR_API_KEY>>' \
      -H 'Content-Type: application/json' \
@@ -96,13 +96,13 @@ curl -X "POST" "https://api.sendgrid.com/v3/mail/send" \
       }
    ]
 }'
-{% endcodeblock %}
+```
 
 It is important to note two sections of this call when using dynamic templates.
 
 In order to send dynamic content, you need to specify a JSON blob containing the dynamic data your template will use in the `dynamic_template_data` object. The handlebars script you write will refer to the values in your JSON blob by referencing the JSON key, check out [these examples]({{root_url}}/help-support/sending-email/using-handlebars.html#-Handlebarjs-reference). This handlebars templating can be used in the text, html, and subject lines of your template. The total collective size of your dynamic data may not exceed 10,000 bytes per personalization object.
 
-{% codeblock %}
+```
          "dynamic_template_data":{
             "total":"$ 239.85",
             "items":[
@@ -130,16 +130,16 @@ In order to send dynamic content, you need to specify a JSON blob containing the
             "state":"CO",
             "zip":"80202"
          }
-{% endcodeblock %}
+```
 
 In addition to specifying the dynamic template data, you need to specify the template ID. The template ID is 64 characters with one dash (d-uuid). If you forget your template ID and want to access it from the API, use the following curl call to retrieve all of your transactional templates:
 
-{% codeblock %}
+```
 curl --request GET \
   --url 'https://api.sendgrid.com/v3/templates?generations\%5C=legacy&generations\%5C=dynamic' \
   --header 'Authorization: <<YOUR_API_KEY>>' \
   --header 'Content-Type: application/json'
-{% endcodeblock %}
+```
 
 You can also copy your template ID from the app and paste it into your call.
 

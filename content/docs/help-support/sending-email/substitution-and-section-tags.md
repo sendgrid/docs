@@ -1,5 +1,5 @@
 ---
-seo:		
+seo:
   title: Substitution and Section Tags
   description: Substitution and Section Tags
   keywords:
@@ -25,15 +25,15 @@ Email Content
 Text
 {% endanchor %}
 
-{% codeblock %}
+```
 Hello {% raw %}{{name}}{% endraw %},
-{% endcodeblock %}
+```
 
 {% anchor h4 %}
 HTML
 {% endanchor %}
 
-{% codeblock lang:html %}
+```html
 <html>
   <head></head>
   <body>
@@ -41,13 +41,13 @@ HTML
     </p>
   </body>
 </html>
-{% endcodeblock %}
+```
 
 {% anchor h3 %}
 X-SMTPAPI Header
 {% endanchor %}
 
-{% codeblock lang:json %}
+```json
 {
 	"to": [
 		"example01@domain.com",
@@ -58,13 +58,13 @@ X-SMTPAPI Header
 		"{% raw %}{{name}}{% endraw %}": ["John", "Jane", "Matt"]
 	}
 }
-{% endcodeblock %}
+```
 
 {% anchor h3 %}
 v3 Mail Send
 {% endanchor %}
 
-{% codeblock lang:json %}
+```json
 {
 	"personalizations": [{
 		"to": [{
@@ -112,7 +112,7 @@ v3 Mail Send
 	}]
 
 }
-{% endcodeblock %}
+```
 
 {% anchor h3 %}
 Example Outcome:
@@ -126,15 +126,15 @@ example01@domain.com
 Text
 {% endanchor %}
 
-{% codeblock %}
+```
 Hello John,
-{% endcodeblock %}
+```
 
 {% anchor h5 %}
 HTML
 {% endanchor %}
 
-{% codeblock lang:html %}
+```html
 <html>
   <head></head>
   <body>
@@ -142,7 +142,7 @@ HTML
     </p>
   </body>
 </html>
-{% endcodeblock %}
+```
 
 {% anchor h4 %}
 example02@domain.com
@@ -152,15 +152,15 @@ example02@domain.com
 Text
 {% endanchor %}
 
-{% codeblock %}
+```
 Hello Jane,
-{% endcodeblock %}
+```
 
 {% anchor h5 %}
 HTML
 {% endanchor %}
 
-{% codeblock lang:html %}
+```html
 <html>
   <head></head>
   <body>
@@ -168,7 +168,7 @@ HTML
     </p>
   </body>
 </html>
-{% endcodeblock %}
+```
 
 {% anchor h4 %}
 example03@domain.com
@@ -178,15 +178,15 @@ example03@domain.com
 Text
 {% endanchor %}
 
-{% codeblock %}
+```
 Hello Matt,
-{% endcodeblock %}
+```
 
 {% anchor h5 %}
 HTML
 {% endanchor %}
 
-{% codeblock lang:html %}
+```html
 <html>
   <head></head>
   <body>
@@ -194,7 +194,7 @@ HTML
     </p>
   </body>
 </html>
-{% endcodeblock %}
+```
 
 {% anchor h2 %}
 First Name and Last Name Substitutions
@@ -210,15 +210,15 @@ Email Content
 Text
 {% endanchor %}
 
-{% codeblock %}
+```
 Hello {% raw %}{{first_name}}{% endraw %} {% raw %} {{last_name}}{% endraw %},
-{% endcodeblock %}
+```
 
 {% anchor h4 %}
 HTML
 {% endanchor %}
 
-{% codeblock lang:html %}
+```html
 <html>
   <head></head>
   <body>
@@ -226,13 +226,13 @@ HTML
     </p>
   </body>
 </html>
-{% endcodeblock %}
+```
 
 {% anchor h3 %}
 X-SMTPAPI Header
 {% endanchor %}
 
-{% codeblock lang:json %}
+```json
 {
 	"to": [
 		"example01@domain.com",
@@ -244,13 +244,13 @@ X-SMTPAPI Header
 		"{% raw %}{{last_name}}{% endraw %}": ["Smith", "Williams", "Johnson"]
 	}
 }
-{% endcodeblock %}
+```
 
 {% anchor h3 %}
 v3 Mail Send
 {% endanchor %}
 
-{% codeblock lang:json %}
+```json
 {
 	"personalizations": [{
 		"to": [{
@@ -301,7 +301,7 @@ v3 Mail Send
 	}]
 
 }
-{% endcodeblock %}
+```
 
 {% anchor h3 %}
 Example Outcome:
@@ -315,15 +315,15 @@ example01@domain.com
 Text
 {% endanchor %}
 
-{% codeblock %}
+```
 Hello John Smith,
-{% endcodeblock %}
+```
 
 {% anchor h5 %}
 HTML
 {% endanchor %}
 
-{% codeblock lang:html %}
+```html
 <html>
   <head></head>
   <body>
@@ -331,7 +331,7 @@ HTML
     </p>
   </body>
 </html>
-{% endcodeblock %}
+```
 
 {% anchor h4 %}
 example02@domain.com
@@ -341,15 +341,15 @@ example02@domain.com
 Text
 {% endanchor %}
 
-{% codeblock %}
+```
 Hello Jane Williams,
-{% endcodeblock %}
+```
 
 {% anchor h5 %}
 HTML
 {% endanchor %}
 
-{% codeblock lang:html %}
+```html
 <html>
   <head></head>
   <body>
@@ -357,7 +357,7 @@ HTML
     </p>
   </body>
 </html>
-{% endcodeblock %}
+```
 
 {% anchor h4 %}
 example03@domain.com
@@ -367,15 +367,15 @@ example03@domain.com
 Text
 {% endanchor %}
 
-{% codeblock %}
+```
 Hello Matt Johnson,
-{% endcodeblock %}
+```
 
 {% anchor h5 %}
 HTML
 {% endanchor %}
 
-{% codeblock lang:html %}
+```html
 <html>
   <head></head>
   <body>
@@ -383,7 +383,7 @@ HTML
     </p>
   </body>
 </html>
-{% endcodeblock %}
+```
 
 {% anchor h2 %}
 Simple Greeting Section with Name Substitution
@@ -399,15 +399,15 @@ Email Content
 Text
 {% endanchor %}
 
-{% codeblock %}
+```
 {% raw %}{{warm_welcome}}{% endraw %}
-{% endcodeblock %}
+```
 
 {% anchor h4 %}
 HTML
 {% endanchor %}
 
-{% codeblock lang:html %}
+```html
 <html>
   <head></head>
   <body>
@@ -415,13 +415,13 @@ HTML
     </p>
   </body>
 </html>
-{% endcodeblock %}
+```
 
 {% anchor h3 %}
 X-SMTPAPI Header
 {% endanchor %}
 
-{% codeblock lang:json %}
+```json
 {
 	"to": [
 		"example01@domain.com",
@@ -436,13 +436,13 @@ X-SMTPAPI Header
 		"{% raw %}{{greeting}}{% endraw %}": "Hello {% raw %}{{name}}{% endraw %},"
 	}
 }
-{% endcodeblock %}
+```
 
 {% anchor h3 %}
 v3 Mail Send
 {% endanchor %}
 
-{% codeblock lang:json %}
+```json
 {
 	"personalizations": [{
 		"to": [{
@@ -495,7 +495,7 @@ v3 Mail Send
 		"{% raw %}{{greeting}}{% endraw %}": "Welcome {% raw %}{{name}}{% endraw %},"
 	}
 }
-{% endcodeblock %}
+```
 
 {% anchor h3 %}
 Example Outcome:
@@ -509,15 +509,15 @@ example01@domain.com
 Text
 {% endanchor %}
 
-{% codeblock %}
+```
 Hello John,
-{% endcodeblock %}
+```
 
 {% anchor h5 %}
 HTML
 {% endanchor %}
 
-{% codeblock lang:html %}
+```html
 <html>
   <head></head>
   <body>
@@ -525,7 +525,7 @@ HTML
     </p>
   </body>
 </html>
-{% endcodeblock %}
+```
 
 {% anchor h4 %}
 example02@domain.com
@@ -535,15 +535,15 @@ example02@domain.com
 Text
 {% endanchor %}
 
-{% codeblock %}
+```
 Hello Jane,
-{% endcodeblock %}
+```
 
 {% anchor h5 %}
 HTML
 {% endanchor %}
 
-{% codeblock lang:html %}
+```html
 <html>
   <head></head>
   <body>
@@ -551,7 +551,7 @@ HTML
     </p>
   </body>
 </html>
-{% endcodeblock %}
+```
 
 {% anchor h4 %}
 example03@domain.com
@@ -561,15 +561,15 @@ example03@domain.com
 Text
 {% endanchor %}
 
-{% codeblock %}
+```
 Hello Matt,
-{% endcodeblock %}
+```
 
 {% anchor h5 %}
 HTML
 {% endanchor %}
 
-{% codeblock lang:html %}
+```html
 <html>
   <head></head>
   <body>
@@ -577,7 +577,7 @@ HTML
     </p>
   </body>
 </html>
-{% endcodeblock %}
+```
 
 {% anchor h2 %}
 Greeting Section with First & Last Name Substitutions
@@ -593,15 +593,15 @@ Email Content
 Text
 {% endanchor %}
 
-{% codeblock %}
+```
 {% raw %}{{warm_welcome}}{% endraw %}
-{% endcodeblock %}
+```
 
 {% anchor h4 %}
 HTML
 {% endanchor %}
 
-{% codeblock lang:html %}
+```html
 <html>
   <head></head>
   <body>
@@ -609,13 +609,13 @@ HTML
     </p>
   </body>
 </html>
-{% endcodeblock %}
+```
 
 {% anchor h3 %}
 X-SMTPAPI Header
 {% endanchor %}
 
-{% codeblock lang:json %}
+```json
 {
 	"to": [
 		"example01@domain.com",
@@ -631,13 +631,13 @@ X-SMTPAPI Header
 		"{% raw %}{{greeting}}{% endraw %}": "Hello {% raw %}{{first_name}}{% endraw %} {% raw %}{{last_name}}{% endraw %},"
 	}
 }
-{% endcodeblock %}
+```
 
 {% anchor h3 %}
 v3 Mail Send
 {% endanchor %}
 
-{% codeblock lang:json %}
+```json
 {
 	"personalizations": [{
 		"to": [{
@@ -693,7 +693,7 @@ v3 Mail Send
 		"{% raw %}{{greeting}}{% endraw %}": "Welcome {% raw %}{{first_name}}{% endraw %} {% raw %}{{last_name}}{% endraw %},"
 	}
 }
-{% endcodeblock %}
+```
 
 {% anchor h3 %}
 Example Outcome:
@@ -707,15 +707,15 @@ example01@domain.com
 Text
 {% endanchor %}
 
-{% codeblock %}
+```
 Hello John Smith,
-{% endcodeblock %}
+```
 
 {% anchor h5 %}
 HTML
 {% endanchor %}
 
-{% codeblock lang:html %}
+```html
 <html>
   <head></head>
   <body>
@@ -723,7 +723,7 @@ HTML
     </p>
   </body>
 </html>
-{% endcodeblock %}
+```
 
 {% anchor h4 %}
 example02@domain.com
@@ -733,15 +733,15 @@ example02@domain.com
 Text
 {% endanchor %}
 
-{% codeblock %}
+```
 Hello Jane Williams,
-{% endcodeblock %}
+```
 
 {% anchor h5 %}
 HTML
 {% endanchor %}
 
-{% codeblock lang:html %}
+```html
 <html>
   <head></head>
   <body>
@@ -749,7 +749,7 @@ HTML
     </p>
   </body>
 </html>
-{% endcodeblock %}
+```
 
 {% anchor h4 %}
 example03@domain.com
@@ -759,15 +759,15 @@ example03@domain.com
 Text
 {% endanchor %}
 
-{% codeblock %}
+```
 Hello Matt Johnson,
-{% endcodeblock %}
+```
 
 {% anchor h5 %}
 HTML
 {% endanchor %}
 
-{% codeblock lang:html %}
+```html
 <html>
   <head></head>
   <body>
@@ -775,7 +775,7 @@ HTML
     </p>
   </body>
 </html>
-{% endcodeblock %}
+```
 
 {% anchor h2 %}
 Three Different Greeting Sections with First & Last Name Substitutions
@@ -791,15 +791,15 @@ Email Content
 Text
 {% endanchor %}
 
-{% codeblock %}
+```
 {% raw %}{{warm_welcome}}{% endraw %}
-{% endcodeblock %}
+```
 
 {% anchor h4 %}
 HTML
 {% endanchor %}
 
-{% codeblock lang:html %}
+```html
 <html>
   <head></head>
   <body>
@@ -807,13 +807,13 @@ HTML
     </p>
   </body>
 </html>
-{% endcodeblock %}
+```
 
 {% anchor h3 %}
 X-SMTPAPI Header
 {% endanchor %}
 
-{% codeblock lang:json %}
+```json
 {
 	"to": [
 		"example01@domain.com",
@@ -831,13 +831,13 @@ X-SMTPAPI Header
 		"{% raw %}{{greeting03}}{% endraw %}": "Dear {% raw %}{{first_name}}{% endraw %} {% raw %}{{last_name}}{% endraw %},"
 	}
 }
-{% endcodeblock %}
+```
 
 {% anchor h3 %}
 v3 Mail Send
 {% endanchor %}
 
-{% codeblock lang:json %}
+```json
 {
 	"personalizations": [{
 		"to": [{
@@ -895,7 +895,7 @@ v3 Mail Send
 		"{% raw %}{{greeting03}}{% endraw %}": "Dear {% raw %}{{first_name}}{% endraw %} {% raw %}{{last_name}}{% endraw %},"
 	}
 }
-{% endcodeblock %}
+```
 
 {% anchor h3 %}
 Example Outcome:
@@ -909,15 +909,15 @@ example01@domain.com
 Text
 {% endanchor %}
 
-{% codeblock %}
+```
 Welcome John Smith,
-{% endcodeblock %}
+```
 
 {% anchor h5 %}
 HTML
 {% endanchor %}
 
-{% codeblock lang:html %}
+```html
 <html>
   <head></head>
   <body>
@@ -925,7 +925,7 @@ HTML
     </p>
   </body>
 </html>
-{% endcodeblock %}
+```
 
 {% anchor h4 %}
 example02@domain.com
@@ -935,15 +935,15 @@ example02@domain.com
 Text
 {% endanchor %}
 
-{% codeblock %}
+```
 Hello Jane Williams,
-{% endcodeblock %}
+```
 
 {% anchor h5 %}
 HTML
 {% endanchor %}
 
-{% codeblock lang:html %}
+```html
 <html>
   <head></head>
   <body>
@@ -951,7 +951,7 @@ HTML
     </p>
   </body>
 </html>
-{% endcodeblock %}
+```
 
 {% anchor h4 %}
 example03@domain.com
@@ -961,15 +961,15 @@ example03@domain.com
 Text
 {% endanchor %}
 
-{% codeblock %}
+```
 Dear Matt Johnson,
-{% endcodeblock %}
+```
 
 {% anchor h5 %}
 HTML
 {% endanchor %}
 
-{% codeblock lang:html %}
+```html
 <html>
   <head></head>
   <body>
@@ -977,7 +977,7 @@ HTML
     </p>
   </body>
 </html>
-{% endcodeblock %}
+```
 
 {% anchor h2 %}
 Three Confirmation Sections and Substitutions
@@ -993,16 +993,16 @@ Email Content
 Text
 {% endanchor %}
 
-{% codeblock %}
+```
 Hello {% raw %}{{name}}{% endraw %},
 {% raw %}{{confirmations}}{% endraw %}
-{% endcodeblock %}
+```
 
 {% anchor h4 %}
 HTML
 {% endanchor %}
 
-{% codeblock lang:html %}
+```html
 <html>
   <head></head>
   <body>
@@ -1011,13 +1011,13 @@ HTML
     </p>
   </body>
 </html>
-{% endcodeblock %}
+```
 
 {% anchor h3 %}
 X-SMTPAPI Header
 {% endanchor %}
 
-{% codeblock lang:json %}
+```json
 {
 	"to": ["example01@domain.com", "example02@domain.com", "example03@domain.com"],
 	"sub": {
@@ -1031,13 +1031,13 @@ X-SMTPAPI Header
 		"{% raw %}{{confirmation_003}}{% endraw %}": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order {% raw %}{{order_id}}{% endraw %}. You can download your invoice as a PDF for your records."
 	}
 }
-{% endcodeblock %}
+```
 
 {% anchor h3 %}
 v3 Mail Send
 {% endanchor %}
 
-{% codeblock lang:json %}
+```json
 {
 	"personalizations": [{
 		"to": [{
@@ -1095,7 +1095,7 @@ v3 Mail Send
 		"{% raw %}{{confirmation_003}}{% endraw %}": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order {% raw %}{{order_id}}{% endraw %}. You can download your invoice as a PDF for your records."
 	}
 }
-{% endcodeblock %}
+```
 
 {% anchor h3 %}
 Example Outcome:
@@ -1109,16 +1109,16 @@ example01@domain.com
 Text
 {% endanchor %}
 
-{% codeblock %}
+```
 Welcome John,
 Thanks for choosing SendGrid. This email is to confirm that we have processed your order 12345.
-{% endcodeblock %}
+```
 
 {% anchor h5 %}
 HTML
 {% endanchor %}
 
-{% codeblock lang:html %}
+```html
 <html>
   <head></head>
   <body>
@@ -1127,7 +1127,7 @@ HTML
     </p>
   </body>
 </html>
-{% endcodeblock %}
+```
 
 {% anchor h4 %}
 example02@domain.com
@@ -1137,16 +1137,16 @@ example02@domain.com
 Text
 {% endanchor %}
 
-{% codeblock %}
+```
 Hello Jane,
 Thanks for choosing SendGrid. This email is to confirm that we have processed your order 23456. This invoice is to be paid by bank transfer within 7 days from the date of your monthly statement.
-{% endcodeblock %}
+```
 
 {% anchor h5 %}
 HTML
 {% endanchor %}
 
-{% codeblock lang:html %}
+```html
 <html>
   <head></head>
   <body>
@@ -1155,7 +1155,7 @@ HTML
     </p>
   </body>
 </html>
-{% endcodeblock %}
+```
 
 {% anchor h4 %}
 example03@domain.com
@@ -1165,16 +1165,16 @@ example03@domain.com
 Text
 {% endanchor %}
 
-{% codeblock %}
+```
 Dear Matt,
 Thanks for choosing SendGrid. This email is to confirm that we have processed your order 34567. You can download your invoice as a PDF for your records.
-{% endcodeblock %}
+```
 
 {% anchor h5 %}
 HTML
 {% endanchor %}
 
-{% codeblock lang:html %}
+```html
 <html>
   <head></head>
   <body>
@@ -1183,4 +1183,4 @@ HTML
     </p>
   </body>
 </html>
-{% endcodeblock %}
+```

@@ -14,7 +14,7 @@ SmtpApiHeader.rb
 
 This header is required for each example.
 
-{% codeblock lang:ruby %}
+```ruby
 #!/usr/bin/ruby
 # Version 1.0
 # Last Updated 6/22/2009
@@ -24,7 +24,7 @@ class SmtpApiHeader
 
   def initialize()
     @data = {}
-  end  
+  end
 
   def addTo(to)
     @data['to'] ||= []
@@ -36,9 +36,9 @@ class SmtpApiHeader
       @data['sub'] = {}
     end
     if val.instance_of?(Array)
-      @data['sub'][var] = val  
+      @data['sub'][var] = val
     else
-      @data['sub'][var] = [val]    
+      @data['sub'][var] = [val]
     end
   end
 
@@ -74,18 +74,18 @@ class SmtpApiHeader
   def as_string()
     json  = asJSON()
     str = 'X-SMTPAPI: %s' % json.gsub(/(.{1,72})( +|$\n?)|(.{1,72})/,"\\1\\3\n")
-    return str    
+    return str
   end
 
 end
-{% endcodeblock %}
+```
 
 
 {% anchor h2 %}
 Example Ruby Usage
 {% endanchor %}
 
-{% codeblock lang:ruby %}
+```ruby
 require './SmtpApiHeader.rb'
 require 'mail'
 
@@ -121,4 +121,4 @@ mail = Mail.deliver do
   end
 end
 
-{% endcodeblock %}
+```

@@ -27,11 +27,11 @@ Example
 You can use SendGrid's [SMTP API]({{root_url}}/API_Reference/SMTP_API/) to add these categories to your email. The following should be added to the email's header:
 
 <h4>Example Category Header</h4>
-{% codeblock lang:json %}
+```json
 {
   "category": "Example Category"
 }
-{% endcodeblock %}
+```
 
 In this example, SendGrid would associate statistics for the email containing that header with the category **Example Category**.
 
@@ -41,7 +41,7 @@ Limitations
 
 You can assign up to 10 categories per message:
 
-{% codeblock lang:json %}
+```json
 {
   "category": [
     "dogs",
@@ -50,4 +50,4 @@ You can assign up to 10 categories per message:
     "mammals"
   ]
 }
-{% endcodeblock %}
+```

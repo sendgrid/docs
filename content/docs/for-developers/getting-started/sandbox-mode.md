@@ -49,7 +49,7 @@ Example Sandbox Mode JSON
 *Please note:* The following is an invalid request body intended to demonstrate the validation behavior of sandbox mode for a bad request.
 
 **Request**
-{% codeblock lang:json %}
+```json
 {
 	"personalizations": [{
 		"to": [{
@@ -70,10 +70,10 @@ Example Sandbox Mode JSON
 		}
 	}
 }
-{% endcodeblock %}
+```
 
 **Response**
-{% codeblock %}
+```
 {
   "errors": [
     {
@@ -83,4 +83,4 @@ parameter with a valid email address and may also contain a 'name' parameter. e.
     }
   ]
 }
-{% endcodeblock %}
+```

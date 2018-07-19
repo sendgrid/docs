@@ -27,7 +27,8 @@ Getting started building
 
 SMTP works by passing a JSON string with as many SMTP objects as you want to SendGrid. To do this, add the JSON string to your message under a header named "X-SMTPAPI" like this:
 
-{% codeblock lang:json %}{
+```json
+{
   "to": [
     "example@example.com",
     "example@example.com"
@@ -63,7 +64,7 @@ SMTP works by passing a JSON string with as many SMTP objects as you want to Sen
   },
   "send_at": 1409348513
 }
-{% endcodeblock %}
+```
 
 {% anchor h3 %}
 Limitations
@@ -83,7 +84,7 @@ You can customize the emails you send via SMTP by using different settings (also
 
 For example, to send a blind carbon copy (BCC) of your email to the address example@example.com, include the following in your X-SMTPAPI header:
 
-{% codeblock lang:json %}
+```json
 {
   "filters" : {
     "bcc" : {
@@ -94,7 +95,7 @@ For example, to send a blind carbon copy (BCC) of your email to the address exam
     }
   }
 }
-{% endcodeblock %}
+```
 
 The X-SMTPAPI header is a JSON-encoded associative array consisting of several sections, below are examples of JSON strings using each section. Add this header to any SMTP message sent to SendGrid and the instructions in the header will be interpreted and applied to that message’s transaction. You can enable these sections with the X-SMTPAPI header:
 
@@ -111,11 +112,11 @@ Scheduling Your Send
 
 Schedule your email send time using the `send_at` parameter within your X-SMTPAPI header. Set the value of `send_at` to the [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time).
 
-{% codeblock lang:json %}
+```json
 {
   "send_at": 1409348513
 }
-{% endcodeblock %}
+```
 
 For more information, see our [scheduling parameters documentation]({{root_url}}/for-developers/sending-email/scheduling-parameters.html).
 
@@ -127,7 +128,7 @@ Substitution tags allow you to dynamically insert specific content relevant to e
 
 For example, to use a substitution tag to replace the first name of your recipient, insert the tag {% raw %}{{name}}{% endraw %} in the HTML of your message:
 
-{% codeblock lang:html %}
+```html
 <html>
   <head></head>
   <body>
@@ -136,11 +137,11 @@ For example, to use a substitution tag to replace the first name of your recipie
     </p>
   </body>
 </html>
-{% endcodeblock %}
+```
 
 To define the value that will replace the {% raw %}{{name}}{% endraw %} tag, define the following in your X-SMTPAPI header:
 
-{% codeblock lang:json %}
+```json
 {
   "to": [
     "john.doeexampexample@example.com",
@@ -153,7 +154,7 @@ To define the value that will replace the {% raw %}{{name}}{% endraw %} tag, def
     ]
   }
 }
-{% endcodeblock %}
+```
 
 For more information, see our [substitution tags documentation]({{root_url}}/for-developers/sending-email/substitution-tags.html).
 
@@ -171,11 +172,11 @@ Suppression Groups
 
 You can easily specify an unsubscribe group for an email sent via SMTP by including the `asm_group_id` parameter in your X-SMTPAPI header. Simply set the value of `asm_group_id` to the numerical ID of the group you would like to use.
 
-{% codeblock lang:json %}
+```json
 {
   "asm_group_id": 1
 }
-{% endcodeblock %}
+```
 
 For more information, see our [suppression groups documentation]({{root_url}}/for-developers/sending-email/suppressions.html).
 
@@ -185,11 +186,11 @@ Categories
 
 Categories allow you to track your emails according to broad topics that you define, like "Weekly Newsletter" or "Confirmation Email". Simply define the category by using the `category` parameter within your X-SMTPAPI header:
 
-{% codeblock lang:json %}
+```json
 {
   "category": "Example Category"
 }
-{% endcodeblock %}
+```
 
 For more information, see our [categories documentation]({{root_url}}/for-developers/sending-email/categories.html)
 

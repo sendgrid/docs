@@ -25,9 +25,9 @@ General troubleshooting
 - http://httpresponder.com/ is a helpful tool for debugging webhooks.
 - You can use the **Test Your Integration** button on the [Settings > Mail Settings](https://app.sendgrid.com/settings/mail_settings) page in the [SendGrid UI](https://app.sendgrid.com) to send simulated events to your callback URL. You can also send a POST from a shell using cURL - this will give you the full response your server is returning including the HTTP headers:
 
-{% codeblock lang:bash %}
+```bash
 curl -X POST -H "Content-Type: application/json" -d '[{"email":"john.doe@sendgrid.com","timestamp":1337197600,"smtp-id":"<4FB4041F.6080505@sendgrid.com>","event":"processed"},{"email":"john.doe@sendgrid.com","timestamp":1337966815,"category":"newuser","event":"click","url":"https://sendgrid.com"},{"email":"john.doe@sendgrid.com","timestamp":1337969592,"smtp-id":"<20120525181309.C1A9B40405B3@Example-Mac.local>","event":"processed"}]'
-{% endcodeblock %}
+```
 
 - If you're not getting a response from your server, follow the steps in [Getting started with the Event Webhook]({{root_url}}/for-developers/tracking-events/getting-started-event-webhook.html) to test your SendGrid instance with Webhook tester. You could also use tools like ngrok, or Runscope.
 
@@ -43,7 +43,7 @@ Duplicate events
 
 We recommend that you use some form of deduplication when processing or storing your Event Webhook data using the `sg_event_id` as a differentiator since this ID is unique for every event where `sg_event_id` is present.
 
-The `sg_event_id` is a [UUIDv4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random) string that is `Base64url` encoded. 
+The `sg_event_id` is a [UUIDv4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random) string that is `Base64url` encoded.
 
 {% anchor h2 %}
 Additional Resources

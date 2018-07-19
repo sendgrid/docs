@@ -46,16 +46,16 @@ For example, a CNAME for “email.” becomes “email.domain.com”
 Error validating domain: Expected TXT record at...
 {% endanchor %}
 
-{% codeblock %}
+```
 Error validating domain:
 Expected TXT record at "m1._domainkey.example.com" to match "k=rsa; t=s; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDHLyl8Wk4J06nv56v5+OeEgp9LW3f/""LOlBjWJ9NS4l9X5UlbPJkKeHDXThTig2CxhVuKmIVvRcc9yJ27Tdthj1C1q0rvRtFpNlHbdrJvD8wpxe5rmFeiRPH1KUYbvtbs84aApMwN6Y3A0dgQE7vGkHnPTjwT7q/xv3mu2CvkVntQIDAQAB", but got the following error: lookup m1._domainkey.example.com: no such host
-{% endcodeblock %}
+```
 
 If you get an error like this, the problem is that the text record has been split up. The solution is to combine the key back together into one set of quotes, which looks something like this:
 
-{% codeblock %}
+```
 "k=rsa; t=s; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDHLyl8Wk4J06nv56v5+OeEgp9LW3f/LOlBjWJ9NS4l9X5UlbPJkKeHDXThTig2CxhVuKmIVvRcc9yJ27Tdthj1C1q0rvRtFpNlHbdrJvD8wpxe5rmFeiRPH1KUYbvtbs84aApMwN6Y3A0dgQE7vGkHnPTjwT7q/xv3mu2CvkVntQIDAQAB"
-{% endcodeblock %}
+```
 
 {% anchor h3 %}
 DNS record duplication
@@ -198,9 +198,9 @@ Where is my domain hosted?
 
 If you aren't sure what DNS provider hosts your domain use this command to find out:
 
-{% codeblock %}
+```
 dig <<your_domain.com>> ns
-{% endcodeblock %}
+```
 
 {% anchor h2 %}
 Can I authenticate multiple domains?

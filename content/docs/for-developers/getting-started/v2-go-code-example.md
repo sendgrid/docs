@@ -15,7 +15,7 @@ The library does not officially support the V2 API, but you can use V2 with an o
 </call-out>
 
 {% anchor h2 %} Using SendGrid's Go Library {% endanchor %}
-{% codeblock lang:go %}
+```go
 // using SendGrid's Go Library
 // https://github.com/sendgrid/sendgrid-go
 package main
@@ -35,4 +35,4 @@ func main() {
 
 	sg.Send(message)
 }
-{% endcodeblock %}
+```

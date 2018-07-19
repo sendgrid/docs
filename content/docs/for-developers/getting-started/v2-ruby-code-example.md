@@ -13,7 +13,7 @@ The library does not officially support the V2 API, but you can use V2 with an o
 </call-out>
 
 {% anchor h2 %} Using SendGrid's Ruby Library {% endanchor %}
-{% codeblock lang:ruby %}
+```ruby
 # using SendGrid's Ruby Library
 # https://github.com/sendgrid/sendgrid-ruby
 require 'sendgrid-ruby'
@@ -30,11 +30,11 @@ email = SendGrid::Mail.new do |m|
 end
 
 sendgrid.send(email)
-{% endcodeblock %}
+```
 
 This example shows how to send email plain text and HTML email using Ruby. The gem [Mail](https://github.com/mikel/mail) is required.
 
-{% codeblock lang:ruby %}
+```ruby
 require 'mail'
 Mail.defaults do
   delivery_method :smtp, { :address   => "smtp.sendgrid.net",
@@ -58,10 +58,10 @@ mail = Mail.deliver do
     body '<b>Hello world in HTML</b>'
   end
 end
-{% endcodeblock %}
+```
 
  To install the [Mail](https://github.com/mikel/mail) gem please note that you need the OpenSSL library installed, then run the following:
 
-{% codeblock lang:bash %}
+```bash
 gem install mail
-{% endcodeblock %}
+```

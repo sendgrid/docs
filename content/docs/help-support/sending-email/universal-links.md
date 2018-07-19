@@ -79,7 +79,7 @@ Both "apple-app-site-association" and "digital asset links" files are comprised 
 Example apple-app-site-association file:
 {% endanchor %}
 
-{% codeblock lang:json %}
+```json
 {
   "applinks": {
     "apps": [],
@@ -93,7 +93,7 @@ Example apple-app-site-association file:
     ]
   }
 }
-{% endcodeblock %}
+```
 
 <call-out type="warning">
 **Do not** append the .json file extension to your apple-app-site-association file!
@@ -103,7 +103,7 @@ Example apple-app-site-association file:
 Example assetlinks.json file:
 {% endanchor %}
 
-{% codeblock lang:json %}
+```json
 [
   {
     "target": {
@@ -118,7 +118,7 @@ Example assetlinks.json file:
     ]
   }
 ]
-{% endcodeblock %}
+```
 
 <call-out>
 When configuring your universal links in iOS, you specify which paths you want to be handled by the app by using the `paths` argument in the `apple-app-site-association` file. By specifing only the path `["/uni/*"]`, and using the `universal=true` attribute on your links as documented below, only appropriate links will be handled by the app, and others will be opened in the phone's browser.
@@ -260,7 +260,7 @@ After creating your iOS "apple-app-site-association" file and/or your Android "d
 
 9. Create the file **/etc/nginx/conf.d/links.example.com.conf**, with the following content:
 
-{% codeblock %}
+```
 
 server {
   listen 80;
@@ -286,7 +286,7 @@ server {
   }
 }
 
-{% endcodeblock %}
+```
 
 {% anchor h2 %}
 Flagging Your Universal Links
@@ -334,7 +334,7 @@ For example:
 
 #### Using Swift
 
-{% codeblock %}
+```
 
 func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
     if userActivity.activityType == NSUserActivityTypeBrowsingWeb {
@@ -356,11 +356,11 @@ func application(_ application: UIApplication, continue userActivity: NSUserActi
     return true
 }
 
-{% endcodeblock %}
+```
 
 #### Using Objective-C
 
-{% codeblock lang:m %}
+```
 
 - (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray * _Nullable))restorationHandler {
     if (userActivity.activityType == NSUserActivityTypeBrowsingWeb) {
@@ -385,7 +385,7 @@ func application(_ application: UIApplication, continue userActivity: NSUserActi
     return YES;
 }
 
-{% endcodeblock %}
+```
 
 {% anchor h3 %}
 Resolving Links in Android
@@ -397,7 +397,7 @@ For example:
 
 #### Using Java
 
-{% codeblock lang:java %}
+```java
 
 @Override
 protected void onCreate(Bundle savedInstanceState) {
@@ -431,4 +431,4 @@ protected void onNewIntent(Intent intent) {
     }
 }
 
-{% endcodeblock %}
+```

@@ -15,7 +15,7 @@ The library does not officially support the V2 API, but you can use V2 with an o
 </call-out>
 
 {% anchor h2 %} Using SendGrid's Python Library {% endanchor %}
-{% codeblock lang:python %}
+```python
 # using SendGrid's Python Library
 # https://github.com/sendgrid/sendgrid-python
 import sendgrid
@@ -29,4 +29,4 @@ message.set_subject("Sending with SendGrid is Fun")
 message.set_html("and easy to do anywhere, even with Python")
 
 client.send(message)
-{% endcodeblock %}
+```

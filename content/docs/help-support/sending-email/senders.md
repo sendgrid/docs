@@ -83,9 +83,9 @@ You can insert your sender identity information into your campaigns using the fo
 1. Click in the text module you added previously and paste the tag into the module.
 
 To show your sender's full address and information in the footer of the email, SendGrid recommends adding the tags as shown:
-{% codeblock %}
+```
 [Sender_Name]
 [Sender_Address]
 [Sender_City], [Sender_State] [Sender_Zip]
-{% endcodeblock %}
+```
 

@@ -39,11 +39,11 @@ Send At
 To schedule a send request for a large batch of emails, use the `send_at` parameter which will send all emails at approximately the same time. `send_at` is a [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time).
 
 <h4>Example of send_at email header</h4>
-{% codeblock lang:json %}
+```json
 {
   "send_at": 1409348513
 }
-{% endcodeblock %}
+```
 
 {% anchor h2 %}
 Send Each At

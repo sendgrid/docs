@@ -18,7 +18,7 @@ To use a transactional template when you send, enable the `templates`
 filter and set the `template_id` to one of your transactional templates.
 
 Example
-{% codeblock lang:json %}
+```json
 {
   "filters": {
     "templates": {
@@ -29,7 +29,7 @@ Example
     }
   }
 }
-{% endcodeblock %}
+```
 
 You can use this JSON in the `X-SMTPAPI` header of an SMTP message, or in
 the `x-smtpapi` parameter of a [Web API v2 mail send]({{root_url}}/API_Reference/Web_API/mail.html#-send) call.
@@ -78,18 +78,18 @@ specified when you send the message.
 
 For example, consider a template with a subject of `Dear :name, big sale on <%subject%>!` and following text content:
 
-{% codeblock lang:html %}
+```html
 <%body%>
 
 Hello there :name!
 
 You can buy it for only :price! Yay!
-{% endcodeblock %}
+```
 
 Now let's specify what to replace the `:name` and `:price` tags with,
 using the SMTP API header:
 
-{% codeblock lang:json %}
+```json
 {
   "to": [
     "example@example.com",
@@ -117,14 +117,14 @@ using the SMTP API header:
     }
   }
 }
-{% endcodeblock %}
+```
 
 This combination of template and substitutions, when used with a message
 that has a subject of `bacon` and a body of `Big news from Good Food
 Company!` will produce the following email to Alice, and a separate
 customized email for Bob.
 
-{% codeblock %}
+```
 Subject: Dear Alice, big sale on bacon!
 
 Big news from Good Food Company!
@@ -132,4 +132,4 @@ Big news from Good Food Company!
 Hello there Alice!
 
 You can buy it for only $4! Yay!
-{% endcodeblock %}
+```

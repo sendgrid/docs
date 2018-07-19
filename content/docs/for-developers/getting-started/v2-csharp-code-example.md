@@ -15,7 +15,7 @@ The library does not officially support the V2 API, but you can use V2 with an o
 </call-out>
 
 {% anchor h2 %}Using SendGrid's C# Library{% endanchor %}
-{% codeblock lang:csharp %}
+```csharp
 // using SendGrid's C# Library - https://github.com/sendgrid/sendgrid-csharp
 using System.Net.Http;
 using System.Net.Mail;
@@ -31,7 +31,7 @@ transportWeb.DeliverAsync(myMessage);
 // NOTE: If you're developing a Console Application,
 // use the following so that the API call has time to complete
 // transportWeb.DeliverAsync(myMessage).Wait();
-{% endcodeblock %}
+```
 
 {% anchor h2 %}
 Using .NET's Built-in SMTP Library
@@ -41,7 +41,7 @@ If you choose not to use SendGrid's client library you may use .NET's built in l
 
 If you are using ASP.NET, you can specify SMTP settings in web.config.
 
-{% codeblock lang:xml %}
+```xml
 <system.net>
   <mailSettings>
     <smtp from="test@domain.com">
@@ -49,13 +49,13 @@ If you are using ASP.NET, you can specify SMTP settings in web.config.
     </smtp>
   </mailSettings>
 </system.net>
-{% endcodeblock %}
+```
 
 This C# program will build a MIME email and send it through SendGrid. .NET already has built in libraries to send and receive emails.
 This example uses:
 [.NET Mail](http://msdn.microsoft.com/en-us/library/system.net.mail.aspx)
 
-{% codeblock lang:csharp %}
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -100,4 +100,4 @@ namespace SmtpMail
     }
   }
 }
-{% endcodeblock %}
+```

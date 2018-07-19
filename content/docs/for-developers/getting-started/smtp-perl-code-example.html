@@ -9,7 +9,7 @@ navigation:
 {% anchor h2 %}
 SmtpApiHeader.pm
 {% endanchor %}
-{% codeblock lang:perl %}
+```perl
 #!/usr/bin/perl
 
 # Version 1.0
@@ -98,12 +98,12 @@ sub as_string
   my $str = "X-SMTPAPI: $json";
   return $str;
 }
-{% endcodeblock %}
+```
 
 {% anchor h2 %}
 Example Perl Usage
 {% endanchor %}
-{% codeblock lang:perl %}
+```perl
 #!/usr/bin/perl
 use SmtpApiHeader;
 
@@ -235,4 +235,4 @@ $smtp->mail($from);
 $smtp->to($to);
 $smtp->data($mime->stringify);
 $smtp->quit();
-{% endcodeblock %}
+```

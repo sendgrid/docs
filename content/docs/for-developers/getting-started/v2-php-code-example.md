@@ -16,7 +16,7 @@ The library does not officially support the V2 API, but you can use V2 with an o
 </call-out>
 
 {% anchor h2 %}Using SendGrid's PHP Library{% endanchor %}
-{% codeblock lang:php %}
+```php
 // using SendGrid's PHP Library
 // https://github.com/sendgrid/sendgrid-php
 require 'vendor/autoload.php';
@@ -29,14 +29,14 @@ $email->addTo("test@sendgrid.com")
       ->setHtml("and easy to do anywhere, even with PHP");
 
 $sendgrid->send($email);
-{% endcodeblock %}
+```
 
 {% anchor h2 %}
 Using PHP with cURL
 {% endanchor %}
 If you choose not to use SendGrid's client library you may use PHP's cURL function to query the web API.
 
-{% codeblock lang:php %}
+```php
 <?php
 
 require 'vendor/autoload.php';
@@ -85,13 +85,13 @@ curl_close($session);
 print_r($response);
 
 ?>
-{% endcodeblock %}
+```
 
 ## An Email Sent Using the SMTPAPI Header
 
 This example takes the previous example a step further by adding our SMTPAPI header to set a category and send out to multiple recipients. The category is called test_category, and the email will go out to both example1@sendgrid.com and example2@sendgrid.com. The normal to address, example3@sendgrid.com, will not receive an email.
 
-{% codeblock lang:php %}
+```php
 <?php
 
 $url = 'https://api.sendgrid.com/';
@@ -141,13 +141,13 @@ curl_close($session);
 print_r($response);
 
 ?>
-{% endcodeblock %}
+```
 
 ## An Email Sent Including a File Attachment
 
 This example adds the additional attachment parameter to attach a file called myfile. This example assumes the file is in the same directory as your code otherwise you need to specify the full path of the file in the \$filePath variable.
 
-{% codeblock lang:php %}
+```php
 <?php
 
 $url = 'https://api.sendgrid.com/';
@@ -195,4 +195,4 @@ curl_close($session);
 print_r($response);
 
 ?>
-{% endcodeblock %}
+```

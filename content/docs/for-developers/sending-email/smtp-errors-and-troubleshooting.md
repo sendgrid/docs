@@ -19,7 +19,7 @@ navigation:
 Response codes
 {% endanchor %}
 
-Each SMTP call you make returns a response. `200` responses are usually success responses, and `400` responses are usually deferrals. SendGrid continues to retry resending `400` messages for up to 72 hours. `500` responses are hard failures that are not retried by our servers. This table has possible response codes with example errors and a general explanation of that sort of response. 
+Each SMTP call you make returns a response. `200` responses are usually success responses, and `400` responses are usually deferrals. SendGrid continues to retry resending `400` messages for up to 72 hours. `500` responses are hard failures that are not retried by our servers. This table has possible response codes with example errors and a general explanation of that sort of response.
 
 <table class="table" style="table-layout:fixed">
   <tr>
@@ -90,7 +90,7 @@ Turning off click tracking
 
 To turn off click tracking, add this to your X-SMTPAPI header:
 
-{% codeblock lang:json %}
+```json
 {
   "filters": {
     "clicktrack": {
@@ -101,7 +101,7 @@ To turn off click tracking, add this to your X-SMTPAPI header:
     }
   }
 }
-{% endcodeblock %}
+```
 
 {% anchor h2 %}
 Invalid SMTP API header

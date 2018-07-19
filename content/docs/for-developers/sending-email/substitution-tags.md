@@ -12,16 +12,16 @@ navigation:
 
 <p>Substitution tags allow you to generate dynamic content for each recipient on your list. When you send to a list of recipients over SMTP API, you can specify substitution tags specific to each recipient. For example, a first name that will then be inserted into an opening greeting like the following, where each recipient sees -firstName- replaced with their first name.</p>
 
-{% codeblock lang:html %}
+```html
 "Dear -firstName-"
-{% endcodeblock %}
+```
 
 <p>These tags can also be used in more complex scenarios. For example, you could use a -customerID- to build a custom URL that is specific to that user.</p>
 
 <h4>A customer specific ID can replace -customerID- in the URL within your email</h4>
-{% codeblock lang:html %}
+```html
 <a href="http://example.com/customerOffer?id=-customerID-">Claim your offer!</a>
-{% endcodeblock %}
+```
 
 <call-out>
 Substitution tags will work in the Subject line, body of the email and in [Unique Arguments]({{root_url}}/for-developers/sending-email/unique-arguments.html).
@@ -48,7 +48,7 @@ Substitution Tag Example
 {% endanchor %}
 
 Email HTML content:
-{% codeblock lang:html %}
+```html
 <html>
   <head></head>
   <body>
@@ -62,11 +62,11 @@ Email HTML content:
     </p>
   </body>
 </html>
-{% endcodeblock %}
+```
 
 <p>An accompanying SMTP API JSON header might look something like this:</p>
 
-{% codeblock lang:json %}{
+```json{
   "to": [
     "example@example.com",
     "example@example.com"
@@ -94,10 +94,10 @@ Email HTML content:
     ]
   }
 }
-{% endcodeblock %}
+```
 
 <p>The resulting email for John would look like this:</p>
-{% codeblock lang:html %}
+```html
 <html>
   <head></head>
   <body>
@@ -112,10 +112,10 @@ Email HTML content:
     </p>
   </body>
 </html>
-{% endcodeblock %}
+```
 
 <p>In contrast, the resulting email for Jane will look like the following, with her specific values replaced in for each tag:</p>
-{% codeblock lang:html %}
+```html
 <html>
   <head></head>
   <body>
@@ -130,7 +130,7 @@ Email HTML content:
     </p>
   </body>
 </html>
-{% endcodeblock %}
+```
 
 {% anchor h2 %}
 SendGrid Defined Substitution Tags

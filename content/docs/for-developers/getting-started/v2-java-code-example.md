@@ -12,7 +12,7 @@ The library does not officially support the V2 API, but you can use V2 with an o
 </call-out>
 
 {% anchor h2 %} Using SendGrid's Java Library {% endanchor %}
-{% codeblock lang:java %}
+```java
 // using SendGrid's Java Library
 // https://github.com/sendgrid/sendgrid-java
 import com.sendgrid.*;
@@ -31,4 +31,4 @@ public class SendGridExample {
     SendGrid.Response response = sendgrid.send(email);
   }
 }
-{% endcodeblock %}
+```

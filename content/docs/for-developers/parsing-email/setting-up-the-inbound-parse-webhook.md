@@ -175,7 +175,7 @@ Default Parameters
 Example Default Payload
 {% endanchor %}
 
-{% codeblock %}
+```
 [Date] array(16) {
   ["headers"]=>
   string(1970) "Received: by mx0047p1mdw1.sendgrid.net with SMTP id 6WCVv7KAWn Wed, 27 Jul 2016 20:53:06 +0000 (UTC)
@@ -248,7 +248,7 @@ Content analysis details:   (2.6 points, 5.0 required)
 }
 
 
-{% endcodeblock %}
+```
 
 {% anchor h2 %}
 Raw Parameters
@@ -317,7 +317,7 @@ The total message size limit, including the message itself and all attachments, 
 Example Raw Payload
 {% endanchor %}
 
-{% codeblock %}
+```
 array(11) {
   ["dkim"]=>
   string(22) "{@sendgrid.com : pass}"
@@ -497,7 +497,7 @@ Content analysis details:   (0.4 points, 5.0 required)
   ["SPF"]=>
   string(4) "pass"
 }
-{% endcodeblock %}
+```
 
 {% anchor h2 %}
 Other Inbound Parse Documentation

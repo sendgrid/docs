@@ -81,26 +81,26 @@ Testing Your New Configuration
 
 First, let's test using Telnet. Open up a telnet client within Windows. You do that in the Command Prompt by entering the following:
 
-{% codeblock %}
+```
 telnet localhost 25
-{% endcodeblock %}
+```
 
 <p>Now, with telnet running, enter the following commands just as you see them, pressing ENTER for each new line (if configured correctly, the server won't do anything until you enter the period):</p>
 
-{% codeblock %}
+```
 EHLO yourdomain.com
 MAIL FROM: test@yourdomain.com
 RCPT TO: recipient@anotherdomain.com
 DATA
 This is a test email for SendGrid operations.
 .
-{% endcodeblock %}
+```
 
 The **EHLO** command with your domain inserted tells the mail server which domain it will be sending from. The **MAIL FROM:** command is a standard MIME entry for that inserts the email address of the sender. The **RCPT TO:** command tells the server to which address to send the message. The **DATA** command tells the server that the next incoming information is the body of the message. Finally, after the data is entered, the period (.) tells the server you are done. When you press Enter, it will send the message. It's quite nice to have servers to handle all this mess, isn't it!
 
 If these manually entered commands work, then you should have the following success code returned:
 
-{% codeblock %} 250….Queued mail for delivery {% endcodeblock %}
+``` 250….Queued mail for delivery ```
 
 You can also test using the logging feature we had you activate earlier. You can view the logs by navigating to and opening the IIS 6.0 7.5 log files with a text editor. It will probably be under the C:\\Windows\\System32\\LogFiles directory unless you changed the log file location during installation.
 
