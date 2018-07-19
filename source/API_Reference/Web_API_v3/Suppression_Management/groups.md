@@ -173,7 +173,6 @@ DELETE
 Delete a suppression group.
 
 {% info %}
-You can only delete groups that have not been attached to sent mail in the last 60 days.
 If a recipient uses the "one-click unsubscribe" option on an email
 associated with a deleted group, that recipient will be added to the
 global suppression list.
