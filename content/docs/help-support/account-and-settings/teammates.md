@@ -31,32 +31,32 @@ Adding Teammates
 _To invite a Teammate to your account:_
 
 1. Navigate to **Settings**, and click on **Teammates** in the sidebar.
-<br>This is where you can see the list of all of your current teammates with their details: username, email address, first name, and last name. 
-2. To add a new Teammate, click **Add Teammate**. 
-3. Enter the Teammate's email address and then select their permission level. 
-<br>Depending on the selected permission level, you may need to do some additional permission [configuration](#-Configuring-permissions). 
-4. Click **Invite**. 
+<br>This is where you can see the list of all of your current teammates with their details: username, email address, first name, and last name.
+2. To add a new Teammate, click **Add Teammate**.
+3. Enter the Teammate's email address and then select their permission level.
+<br>Depending on the selected permission level, you may need to do some additional permission [configuration](#-Configuring-permissions).
+4. Click **Invite**.
 <br>If you have already sent a teammate invitation, you will see a list titled **Pending Invites**. This list contains the email address of the invitee and the invitation expiration date.
 
-{% warning %}
+<call-out type="warning">
 Teammate invitations are valid for seven days.
-{% endwarning %}
+</call-out>
 
-{% info %}
+<call-out>
 While only administrators can create teammates, it is possible for one administrator to create another teammate with administrator permissions. This new teammate would then be able to create and manage other teammates and have access to the account's billing settings. **Please be very careful about who you assign administrator permissions!**
-{% endinfo %}
+</call-out>
 
-{% info %}
+<call-out>
 Only administrator teammates may impersonate subusers.
-{% endinfo %}
+</call-out>
 
 {% anchor h2 %}
 Managing Teammates
 {% endanchor %}
 
-{% info %}
+<call-out>
 Only administrator teammates may impersonate subusers.
-{% endinfo %}
+</call-out>
 
 {% anchor h3 %}
 Configuring permissions
@@ -70,11 +70,11 @@ The three different permission levels are:
 
 If you select **Invite with Restricted Access** when inviting a Teammate, you need to select a preset access level or create your own by selecting **Custom Access**.  You can choose from several pre-defined permission levels to fit a variety of roles: Developer Access, Marketer Access, and Accountant Access or you can customize access for the teammate.
 
-_To modify an existing teammate's permissions:_ 
+_To modify an existing teammate's permissions:_
 
-1. Navigate to the **Teammates Page** under **Settings**. 
+1. Navigate to the **Teammates Page** under **Settings**.
 1. Under the list of current teammates, click the action menu next to the teammate you would like to edit.
-1. Click **Edit** to open a modal window presenting the teammate's current permissions. 
+1. Click **Edit** to open a modal window presenting the teammate's current permissions.
 1. Make your desired changes and click **Update**.
 
 {% anchor h3 %}
@@ -83,12 +83,12 @@ Removing Teammates
 
 _To delete a teammate:_
 
-1. Navigate to the **Teammates Page** under **Settings**. 
+1. Navigate to the **Teammates Page** under **Settings**.
 1. Click the action menu next to the teammate you want to delete and click **Delete**.
 
-{% warning %}
+<call-out type="warning">
 You cannot recover deleted teammates. Once a teammate has been deleted, it can never be restored. SendGrid will not remove any templates, campaigns, contacts, or API keys created by the teammate.
-{% endwarning %}
+</call-out>
 
 {% anchor h2 %}
 Requesting feature access
@@ -96,7 +96,7 @@ Requesting feature access
 
 If you are already signed into a SendGrid account as a teammate, but do not have access to a page or feature, you may request access to that page by clicking **Request Access**.
 
-Once a request is made, all account administrators recieve a notification via email that a request is pending approval. 
+Once a request is made, all account administrators recieve a notification via email that a request is pending approval.
 
 {% anchor h3 %}
 Granting feature access
@@ -106,15 +106,15 @@ You can find any access requests listed under **Pending Requests** on the **Team
 
 To grant that teammate access to the feature, click **Approve**.
 
-{% warning %}
+<call-out type="warning">
 **By clicking "Approve" you are giving that teammate full access to the feature!** If you only want to give them limited access to the feature, you must navigate back to their teammate settings to make adjustments to their granular permissions.
-{% endwarning %}
+</call-out>
 
 If you do not want to grant them access, click **Deny**.
 
-{% info %}
+<call-out>
 The teammate receives a notification email when they are either granted or denied access. SendGrid delivers these emails, but the "reply to" address is the email address on file for the account owner.
-{% endinfo %}
+</call-out>
 
 {% anchor h2 %}
 Managing Teammates
@@ -126,11 +126,11 @@ Teammates and API Keys
 
 API Keys are used to authenticate API calls. Just as a teammate can be given specific permissions, API keys can be assigned specific [permissions]({{root_url}}/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html) to restrict which API calls they can authenticate.
 
-{% info %}
+<call-out>
 API Keys and Teammates can be used as two different methods of restricting access to the same SendGrid features.
 
 However, a teammate cannot change their own permissions via API key. For example, a teammate with restricted access to features in the SendGrid user interface but full access to API Keys cannot make an API call to modify their permissions in the user interface.
-{% endinfo %}
+</call-out>
 
 
 {% anchor h2 %}

@@ -20,9 +20,9 @@ The method used to specify an unsubscribe group for an email depends on how you 
 * When sending an email via the [Web API v2]({{root_url}}/API_Reference/Web_API/mail.html), add the group's ID in the `x-smtpapi` parameter.
 * When sending an email via the [Web API v3]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html), define the group's ID in the `asm.group_id` parameter.
 
-{% warning %}
+<call-out type="warning">
 You may only specify one group per send, and you should wait one minute after creating the group before sending with it.
-{% endwarning %}
+</call-out>
 
 {% codeblock lang:json %}
 {
@@ -38,9 +38,9 @@ To specify which groups to display on the Manage Preferences page of an email, a
 call]({{root_url}}/API_Reference/Web_API/mail.html).
 If you omit the asm_groups_to_display header, your default groups is shown on the Manage Preferences page instead.
 
-{% warning %}
+<call-out type="warning">
 You can specify up to 25 groups to display.
-{% endwarning %}
+</call-out>
 
 {% codeblock lang:json %}
 {

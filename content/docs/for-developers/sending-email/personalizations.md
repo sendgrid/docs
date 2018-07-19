@@ -24,15 +24,15 @@ Think of the personalizations section of the request body like the envelope of a
 * "custom_args" - Any custom arguments you would like to include in your email.
 * "send_at" - A specific time that you would like your email to be sent.
 
-{% info %}
+<call-out>
 You must include at least one "to" object within the personalizations array.
-{% endinfo %}
+</call-out>
 
 Since the `personalizations` parameter is an array, you may include multiple objects allowing you to specify different handling instructions for different copies of your email. For example, you could send the same email to both &lt;john@example.com&gt; and &lt;janeexampexample@example.com&gt;, but set each email to be delivered at different times.
 
-{% info %}
+<call-out>
 You may not include more than 1000 personalizations per API request. If you need to include more than 1000 personalizations, please divide these across multiple API requests.
-{% endinfo %}
+</call-out>
 
 There are certain parameters that can be defined both at the "message level" and at the "personalizations" level.
 
@@ -42,9 +42,9 @@ Individual fields within the personalization array will override any other globa
 
 Keys within objects like custom_args will be merged. If any of the keys conflict, the keys in the personalizations object will replace the message level object’s keys.
 
-{% info %}
+<call-out>
 All of the recipients in a single personalization object (either in the `to`, `cc`, or `bcc` fields), will see exactly the same email, as defined by the data in that personalization, as such we do not allow duplicate emails between these three arrays in a single personalization.
-{% endinfo %}
+</call-out>
 
 Below are some examples of how you can use personalizations for various use cases.
 

@@ -14,9 +14,9 @@ navigation:
 
 The “Reason on the Block” will clarify what the exact reason is. Typically, it’s possible to have your IP address removed from a blacklist, and some lists automatically do this after a period of time. Message content can be modified to correct a filtered block.
 
-{% info %}
+<call-out>
 Unlike addresses on our other suppression lists, new messages to blocked addresses will be attempted, as the message content is likely different, and may not be blocked.
-{% endinfo %}
+</call-out>
 
 The list provided here can be filtered by email address or date.
 

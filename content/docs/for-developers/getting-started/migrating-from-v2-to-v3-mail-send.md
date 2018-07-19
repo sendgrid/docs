@@ -14,9 +14,9 @@ navigation:
 Why should you migrate?
 {% endanchor %}
 
-{% info %}
+<call-out>
 If you are currently using the [Web API v2 mail send endpoint]({{root_url}}/API_Reference/Web_API/mail.html), we recommend that you upgrade to the [latest version]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html).
-{% endinfo %}
+</call-out>
 
 With a few quick changes you will be able to take advantage of the improvements and added features provided by the v3 mail send endpoint, such as:
 

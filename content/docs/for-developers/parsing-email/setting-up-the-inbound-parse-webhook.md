@@ -12,15 +12,15 @@ navigation:
 
 As you’re probably aware, SendGrid is great at sending your email, but SendGrid can also help you process email using the Inbound Parse Webhook. The Inbound Parse Webhook processes all incoming email for a domain or subdomain, parses the contents and attachments then POSTs multipart/form-data to a URL that you choose.
 
-{% info %}
+<call-out>
 XML is only available in v2.
-{% endinfo %}
+</call-out>
 
 What your application does with this parsed data is up to you. For some ideas of what the Inbound Parse Webhook can do, check out this [blog post](https://sendgrid.com/blog/parse-api-oh-what-you-can-do/).
 
-{% info %}
+<call-out>
 Check out some pre-made integrations for the SendGrid Parse Webhook in the [Library Index]({{root_url}}/for-developers/getting-started/libraries.html#-Webhook-Libraries).
-{% endinfo %}
+</call-out>
 
 {% anchor h2 %}
 Setup
@@ -36,21 +36,21 @@ Setting up an MX Record
 
   **(2)** Create a new MX record for the subdomain (e.g. parse.yourdomain.com) you want to process incoming email.
 
-{% info %}
+<call-out>
 This hostname should be used exclusively to parse your incoming email.
-{% endinfo %}
+</call-out>
 
-{% warning %}
+<call-out type="warning">
 Do not change the MX record for your domain. If you do, you will no longer receive email.
-{% endwarning %}
+</call-out>
 
   **(3)** Assign the MX record a priority of 10, and point it to the address: `mx.sendgrid.net.`
 
   It should look something like this ![]({{root_url}}/images/Inbound_Parse_01_MX_Record.png)
 
-{% info %}
+<call-out>
 If there is no field for priority, type 10 before the address. e.g. `10 mx.sendgrid.net.`
-{% endinfo %}
+</call-out>
 
 {% anchor h3 %}
 Pointing to a Hostname and URL
@@ -66,9 +66,9 @@ Pointing to a Hostname and URL
 
   If you use the same return path (subdomain) as your authenticated domain, you must have Automatic Security disabled on the authenticated domain. Otherwise, those messages will bounce due to an infinite CNAME>MX loop.
 
-{% info %}
+<call-out>
 The URL must be accessible from the public web.
-{% endinfo %}
+</call-out>
 
   **(3)** Enter the subdomain (e.g. "parse") and select the authenticated root domain for your receiving domain. Enter the public URL where you would like the parsed data to be POSTed.
 
@@ -78,9 +78,9 @@ The URL must be accessible from the public web.
 
   **(5)** (Optional) Check **Send Raw** if you would prefer to receive the full MIME message URL encoded in multipart/form-data.
 
-{% warning %}
+<call-out type="warning">
 If you do not check **Send Raw**, the post will be multipart/form-data with the email content URL encoded, but the attachments will be in multipart/form-data. If your code is only set up to read URL encoding, attachments could be dropped.
-{% endwarning %}
+</call-out>
 
   **(6)** Click Save.
 
@@ -92,15 +92,15 @@ Testing
 
 To test if everything is working, send an email from your email account to example@example.com.
 
-{% info %}
+<call-out>
 The local-part (i.e. anything before @) can be any word or combination because all email for the domain or subdomain will be processed.
-{% endinfo %}
+</call-out>
 
 You can check the [Activity Feed](https://app.sendgrid.com/email_activity?) from your SendGrid dashboard to see if incoming mail was parsed. For more help, see [Debugging a Webhook]({{root_url}}/API_Reference/Webhooks/debug.html).
 
-{% warning %}
+<call-out type="warning">
 Remember to direct your incoming email to your hostname (e.g. example@example.com). If you do not, your incoming email will not be parsed.
-{% endwarning %}
+</call-out>
 
 {% anchor h2 %}
 Default Parameters
@@ -309,9 +309,9 @@ Raw Parameters
 
 
 
-{% info %}
+<call-out>
 The total message size limit, including the message itself and all attachments, is 20MB. Be aware that other mail handlers will have their own limitations, and some ISPs and companies may either dramatically limit the size and/or type of attachments, or even block them altogether.
-{% endinfo %}
+</call-out>
 
 {% anchor h2 %}
 Example Raw Payload

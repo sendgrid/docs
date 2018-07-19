@@ -21,8 +21,8 @@ Drip campaigns help you to send relevant and well timed emails that your custome
 seeing. Striving to send emails that are relevant to your recipients can help to improve your [sender
 reputation](https://sendgrid.com/blog/what-is-a-domain-reputation/), cultivate customer satisfaction, and increase customer retention.
 
-{% info %}
+<call-out>
 It is important to avoid initiating a series of messages that your customer doesn’t want to receive. Make sure
 that you give your recipient the option of opting out of the drip campaign by including an [unsubscribe link]({{root_url}}/help-support/sending-email/group-unsubscribes.html) in
 every email you send.
-{% endinfo %}
+</call-out>

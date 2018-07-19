@@ -10,9 +10,9 @@ seo:
   description: Track how many times your emails are opened with SendGrid
 ---
 
-{% info %}
+<call-out>
 In order to track opens, you must have the [Open Tracking app]({{root_url}}/User_Guide/Settings/tracking.html) enabled.
-{% endinfo %}
+</call-out>
 
 
 SendGrid inserts a small, transparent image into all emails that will be tracked. When a customer reads an email, their client application loads the tracking image which registers the open event with SendGrid.
@@ -23,6 +23,6 @@ In [Statistics]({{root_url}}/User_Guide/Statistics/index.html) the "opens percen
 
 The “Unique opens” percentage is the number of unique individuals that have opened your emails, divided by the total number of Delivered messages.
 
-{% info %}
+<call-out>
 SendGrid will store tracking data for unique open events for up to 7 days.
-{% endinfo %}
+</call-out>

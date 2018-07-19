@@ -23,9 +23,9 @@ v=spf1 include:sendgrid.net ~all
 
 Do not create more than one SPF1 record for a given domain. If you need more than one SPF record, you will want to merge the additional SPF records into a single SPF record.
 
-{% info %}
+<call-out>
 You cannot have more than 10 DNS lookups in your SPF record.
-{% endinfo %}
+</call-out>
 
 {% anchor h2 %}
 Already have an SPF record for your domain?

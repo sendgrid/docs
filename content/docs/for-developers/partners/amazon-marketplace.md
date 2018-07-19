@@ -27,9 +27,9 @@ Getting Started
 - Look at the [API Reference]({{root_url}}/API_Reference/api_v3.html) for all of the API endpoints as well as information about using SMTP and the Webhooks.
 - See the [API Libraries]({{root_url}}/for-developers/getting-started/libraries.html) page for information about using the SendGrid code libraries in C#, Go, Java, Node.js, PHP, Python, and Ruby.
 
-{% info %}
+<call-out>
 **Warm up your sending** - Since ISP spam filters look at volume as a significant factor when determining whether or not you are sending spam, we recommend that you begin sending a low to moderate volume, eventually working your way up to larger volumes. This gives the receiving email providers a chance to closely observe your sending habits and the way your customers treat the emails they receive from you.
-{% endinfo %}
+</call-out>
 
 {% anchor h2 %}
 Managing your account
@@ -54,15 +54,15 @@ You can only add a Dedicated IP Address if you are on an AWS Pro plan. To upgrad
 *To add a dedicated IP Address*:
 
 1. Navigate to the [Plan & Billing Details page](https://app.sendgrid.com/settings/billing) in the SendGrid UI.
-1. Click **Add a Dedicated IP**. 
+1. Click **Add a Dedicated IP**.
    ![]({{root_url}}/images/dedicated_ip_button.png "Dedicated IP button")
-   This takes you to the Dedicated IP Addresses page 
+   This takes you to the Dedicated IP Addresses page
 1. Next, click **Add an IP Address**.
 1. Select the number of IP Addresses to add, and select whether you want to warm up your IP automatically. Warming up an IP gradually increases the amount of email sent over this IP over time to improve your email deliverability. For more information, see [Warming Up IPs]({{root_url}}/help-support/getting-started/warming-up-an-ip-address.html).
 1. Click **Add**.
 
 {% anchor h3 %}
-Adding domain authentication and link branding 
+Adding domain authentication and link branding
 {% endanchor %}
 
 Sender authentication shows email providers that SendGrid has your permission to send emails on your behalf. Domain authentication works by pointing DNS entries from your domain registrar to SendGrid, which drastically increases your ability to deliver email and allows you to begin building a sender reputation for your domain and for your IP addresses. For more information domain authentication, see [How to Set Up Domain Authentication]({{root_url}}/help-support/getting-started/how-to-set-up-domain-authentication.html).
@@ -102,7 +102,7 @@ Canceling Your SendGrid Subscription
 
 1. Navigate to your [Software Subscriptions page](https://aws.amazon.com/marketplace/library?productType=saas&ref_=lbr_tab_saas) on AWS.
 1. Click **Cancel Subscription** in the SendGrid section.
-            
+
 ![]({{root_url}}/images/aws_cancel.png "AWS cancel button")
 
 {% anchor h3 %}

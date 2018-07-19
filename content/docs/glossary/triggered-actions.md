@@ -14,6 +14,6 @@ Triggered actions are automatically initiated when a specific [triggering event]
 
 SendGrid has partnered with [Klaviyo](https://sendgrid.com/partners/klaviyo/) to help you drive sales by using data to send triggered email, segment your lists, run better Facebook ads, and more. An example of a triggered action might be an email message (or series of messages) welcoming a new user to your website or application.
 
-{% info %}
+<call-out>
 To learn more about the different actions that Klaviyo can provide visit their [website](https://www.klaviyo.com/).
-{% endinfo %}
+</call-out>

@@ -9,9 +9,9 @@ layout: page
 navigation:
  show: true
 ---
-{% info %}
-In order to gain access to the Email Activity Feed API, you must purchase [additional email activity history](https://app.sendgrid.com/settings/billing/addons/email_activity). 
-{% endinfo %}
+<call-out>
+In order to gain access to the Email Activity Feed API, you must purchase [additional email activity history](https://app.sendgrid.com/settings/billing/addons/email_activity).
+</call-out>
 
 - [Getting started](#-Getting-started)
    - [Encoding queries](#-Encoding-queries)

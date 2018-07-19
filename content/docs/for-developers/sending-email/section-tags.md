@@ -27,17 +27,17 @@ The format of the SMTP API section tag has the form:
 }
 {% endcodeblock %}
 
-{% info %}
+<call-out>
 How you flag your section tags may depend on the library you use to create your SMTP connection, the language you are writing your code in, or any intermediate mail servers that your servers will send mail through. In some cases `-subVal-` may be the best choice while in other cases, `%subVal%`, `#subVal#`, or `:subVal` may make more sense. The flag doesn't matter, as long as it's a unique string.
-{% endinfo %}
+</call-out>
 
-{% warning %}
+<call-out type="warning">
 Do not use spaces inside your section or substitution tags! For example: `%first name%`. The space breaks the string.
-{% endwarning %}
+</call-out>
 
-{% warning %}
+<call-out type="warning">
 Do not nest section tags in sections - this causes your section to not be replaced.
-{% endwarning %}
+</call-out>
 
 * * * * *
 

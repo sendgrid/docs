@@ -59,8 +59,8 @@ Here is a flow of email events:
 Here is an event response that includes an example of each type of event:
 
 {% codeblock lang:json %}
-[  
-   {  
+[
+   {
       "email":"example@test.com",
       "timestamp":1513299569,
       "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
@@ -69,7 +69,7 @@ Here is an event response that includes an example of each type of event:
       "sg_event_id":"sg_event_id",
       "sg_message_id":"sg_message_id"
    },
-   {  
+   {
       "email":"example@test.com",
       "timestamp":1513299569,
       "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
@@ -80,7 +80,7 @@ Here is an event response that includes an example of each type of event:
       "response":"400 try again later",
       "attempt":"5"
    },
-   {  
+   {
       "email":"example@test.com",
       "timestamp":1513299569,
       "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
@@ -90,7 +90,7 @@ Here is an event response that includes an example of each type of event:
       "sg_message_id":"sg_message_id",
       "response":"250 OK"
    },
-   {  
+   {
       "email":"example@test.com",
       "timestamp":1513299569,
       "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
@@ -101,7 +101,7 @@ Here is an event response that includes an example of each type of event:
       "useragent":"Mozilla/4.0 (compatible; MSIE 6.1; Windows XP; .NET CLR 1.1.4322; .NET CLR 2.0.50727)",
       "ip":"255.255.255.255"
    },
-   {  
+   {
       "email":"example@test.com",
       "timestamp":1513299569,
       "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
@@ -113,7 +113,7 @@ Here is an event response that includes an example of each type of event:
       "ip":"255.255.255.255",
       "url":"http://www.sendgrid.com/"
    },
-   {  
+   {
       "email":"example@test.com",
       "timestamp":1513299569,
       "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
@@ -124,7 +124,7 @@ Here is an event response that includes an example of each type of event:
       "reason":"500 unknown recipient",
       "status":"5.0.0"
    },
-   {  
+   {
       "email":"example@test.com",
       "timestamp":1513299569,
       "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
@@ -135,7 +135,7 @@ Here is an event response that includes an example of each type of event:
       "reason":"Bounced Address",
       "status":"5.0.0"
    },
-   {  
+   {
       "email":"example@test.com",
       "timestamp":1513299569,
       "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
@@ -144,7 +144,7 @@ Here is an event response that includes an example of each type of event:
       "sg_event_id":"sg_event_id",
       "sg_message_id":"sg_message_id"
    },
-   {  
+   {
       "email":"example@test.com",
       "timestamp":1513299569,
       "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
@@ -153,7 +153,7 @@ Here is an event response that includes an example of each type of event:
       "sg_event_id":"sg_event_id",
       "sg_message_id":"sg_message_id"
    },
-   {  
+   {
       "email":"example@test.com",
       "timestamp":1513299569,
       "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
@@ -166,7 +166,7 @@ Here is an event response that includes an example of each type of event:
       "url":"http://www.sendgrid.com/",
       "asm_group_id":10
    },
-   {  
+   {
       "email":"example@test.com",
       "timestamp":1513299569,
       "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
@@ -200,8 +200,8 @@ Delivery events include processed, dropped, delivered, deferred, and bounce.
          <td><a name="processed"></a>Processed</td>
          <td>Message has been received and is ready to be delivered.</td>
          <td>{% codeblock lang:json %}
-[  
-   {  
+[
+   {
       "email":"example@test.com",
       "timestamp":1513299569,
       "pool": {
@@ -222,7 +222,7 @@ Delivery events include processed, dropped, delivered, deferred, and bounce.
          <td>You may see the following drop reasons: Invalid SMTPAPI header, Spam Content (if Spam Checker app is enabled), Unsubscribed Address, Bounced Address, Spam Reporting Address, Invalid, Recipient List over Package Quota</td>
          <td>{% codeblock lang:json %}
 [
-   {  
+   {
       "email":"example@test.com",
       "timestamp":1513299569,
       "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
@@ -241,7 +241,7 @@ Delivery events include processed, dropped, delivered, deferred, and bounce.
          <td>Message has been successfully delivered to the receiving server.</td>
          <td>{% codeblock lang:json %}
 [
-   {  
+   {
       "email":"example@test.com",
       "timestamp":1513299569,
       "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
@@ -259,7 +259,7 @@ Delivery events include processed, dropped, delivered, deferred, and bounce.
          <td>Receiving server temporarily rejected the message.</td>
          <td>{% codeblock lang:json %}
 [
-   {  
+   {
       "email":"example@test.com",
       "timestamp":1513299569,
       "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
@@ -278,7 +278,7 @@ Delivery events include processed, dropped, delivered, deferred, and bounce.
          <td>Receiving server could not or would not accept the message. If a recipient has previously unsubscribed from your emails, the message is bounced.</td>
          <td>{% codeblock lang:json %}
 [
-   {  
+   {
       "email":"example@test.com",
       "timestamp":1513299569,
       "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
@@ -313,7 +313,7 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
          <td>Recipient has opened the HTML message. Open Tracking needs to be enabled for this type of event.</td>
          <td>{% codeblock lang:json %}
 [
-   {  
+   {
       "email":"example@test.com",
       "timestamp":1513299569,
       "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
@@ -332,7 +332,7 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
          <td>Recipient clicked on a link within the message. Click Tracking needs to be enabled for this type of event.</td>
          <td>{% codeblock lang:json %}
 [
-   {  
+   {
       "email":"example@test.com",
       "timestamp":1513299569,
       "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
@@ -352,7 +352,7 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
          <td>Recipient marked message as spam.</td>
          <td>{% codeblock lang:json %}
 [
-   {  
+   {
       "email":"example@test.com",
       "timestamp":1513299569,
       "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
@@ -369,7 +369,7 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
          <td>Recipient clicked on the 'Opt Out of All Emails' link (available after clicking the message's subscription management link). Subscription Tracking needs to be enabled for this type of event.</td>
          <td>{% codeblock lang:json %}
 [
-   {  
+   {
       "email":"example@test.com",
       "timestamp":1513299569,
       "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
@@ -386,7 +386,7 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
          <td>Recipient unsubscribed from a specific group either by clicking the link directly or updating their preferences. Subscription Tracking needs to be enabled for this type of event.</td>
          <td>{% codeblock lang:json %}
 [
-   {  
+   {
       "email":"example@test.com",
       "timestamp":1513299569,
       "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
@@ -407,7 +407,7 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
          <td>Recipient resubscribed to a specific group by updating their preferences. Subscription Tracking needs to be enabled for this type of event.</td>
          <td>{% codeblock lang:json %}
 [
-   {  
+   {
       "email":"example@test.com",
       "timestamp":1513299569,
       "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
@@ -796,9 +796,9 @@ Unique Arguments and Custom Arguments
 
 Events generated by SendGrid can include [unique arguments]({{root_url}}/for-developers/sending-email/unique-arguments.html) or custom arguments.
 
-{% info %}
+<call-out>
 Unique arguments and custom arguments essentially have the same function. However, unique arguments are used in the SMTP API or V2 Mail Send, and custom arguments are used in the V3 Mail Send.
-{% endinfo %}
+</call-out>
 
 {% anchor h3 %}
 Unique Arguments
@@ -833,9 +833,9 @@ You will receive the same unique argument included with the data posted to your 
 ]
 {% endcodeblock %}
 
-{% warning %}
+<call-out type="warning">
 You can create unique arguments with the same words as reserved keys, such as "event" or "email". However, SendGrid will default to the reserved key and NOT your unique argument for events that contain a reserved key as an object. An example of this is below.
-{% endwarning %}
+</call-out>
 
 {% anchor h4 %}
 Reserved Keys in Unique Arguments
@@ -871,9 +871,9 @@ The resulting webhook call
 ]
 {% endcodeblock %}
 
-{% info %}
+<call-out>
 You'll notice that the unique arguments, "event" and "email", were overwritten because they are reserved keys for SendGrid's values.
-{% endinfo %}
+</call-out>
 
 {% anchor h3 %}
 Custom Arguments

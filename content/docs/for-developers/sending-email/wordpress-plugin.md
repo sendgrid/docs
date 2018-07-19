@@ -40,9 +40,9 @@ You can have an individual email sent to each recipient by specifying the x-smtp
 x-smtpapi-to: example@example.com, example2@example.com
 {% endcodeblock %}
 
-{% info %}
+<call-out>
 When using the SMTP method you must also define the `To` address. It does not matter what address you set in the `To` field since it will be overwritten by `x-smtpapi-to`.
-{% endinfo %}
+</call-out>
 
 Emails are automatically tracked, allowing you to retrieve delivery and engagement statistics from within the SendGrid Dashboard. You can also specify certain [categories](#-How-to-Use-Categories) for any of your emails to help you organize them by type.
 
@@ -81,9 +81,9 @@ If you want to send an email with HTML content, set the content type to 'text/ht
 add_filter('wp_mail_content_type', 'set_html_content_type');
 {% endcodeblock %}
 
-{% warning %}
+<call-out type="warning">
 After you’ve run wp_mail(), you must remove the ‘text/html’ filter in order to return to your initial settings.
-{% endwarning %}
+</call-out>
 
 {% codeblock lang:php %}
 remove_filter('wp_mail_content_type', 'set_html_content_type');
@@ -202,9 +202,9 @@ Once you have enabled SendGrid for use across your multisite network, you will b
 
 You can enable access for SendGrid settings to each subsite in the Multisite Settings tab. If the checkbox is unchecked then that site will not see the SendGrid settings page and it will use the settings set on the network.
 
-{% info %}
+<call-out>
 **Please note!** When you activate SendGrid management for a subsite, that site will not be able to send emails until the admin updates the SendGrid settings on that subsite.
-{% endinfo %}
+</call-out>
 
 If you have already installed the SendGrid plugin in a multisite environment and you update to any version **after** 1.9.0 you may need to re-configure your plugin.
 

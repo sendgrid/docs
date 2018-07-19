@@ -4,7 +4,7 @@ weight: 100
 title: Building your Contact list
 navigation:
   show: true
-seo: 
+seo:
   title: Building your Contact list
   keywords: Marketing Campaigns, Contacts, Contact lists, opt-in email
   override: true
@@ -14,7 +14,7 @@ seo:
   * [Email opt-in types](#-Email-opt--in-types)
 * [Peer-Initiated Email Invitation Requirements](#-Peer--Initiated-Email-Invitation-Requirements)
 
-The best way to protect your sending reputation and get more messages in the inbox is by building your contact list organically. Here are a few ways SendGrid recommends building your contact list. 
+The best way to protect your sending reputation and get more messages in the inbox is by building your contact list organically. Here are a few ways SendGrid recommends building your contact list.
 
 {% anchor h2 %}
 Opt-In Email
@@ -30,9 +30,9 @@ Email opt-in types
 - **Double Opt-in** refers to the practice of requesting permission twice from a recipient. For example, you could ask them if they want to receive email at registration, and then send another email asking them to verify their confirmation.
 - **Confirmed Opt-in** refers to the practice of sending emails to your recipients asking them to confirm their continued interest in receiving your future emails.
 
-{% info %}
+<call-out>
 To avoid blocked emails, double check the spelling of the emails on your list. SendGrid recommends having the recipient input their address twice to ensure it is correct during the registration/sign-up process.
-{% endinfo %}
+</call-out>
 
 {% anchor h2 %}
 Peer-Initiated Email Invitation Requirements

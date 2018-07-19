@@ -36,11 +36,11 @@ the `x-smtpapi` parameter of a [Web API v2 mail send]({{root_url}}/API_Reference
 
 If you are using the [Web API v3 mail send endpoint]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html), you can specify which transactional template you would like to use simply by setting the template ID in the `template_id` parameter of your JSON payload.
 
-{% info %}
+<call-out>
 Make sure that the version of the template you want to use is set to active
 by using the [activate endpoint]({{ root_url }}/API_Reference/Web_API_v3/Transactional_Templates/versions.html#-POST) or by activating it in the
 UI.
-{% endinfo %}
+</call-out>
 
 * * * * *
 
@@ -58,9 +58,9 @@ If you want only the template's content to be displayed, leave the message field
 Text or HTML Templates?
 {% endanchor %}
 
-{% info %}
+<call-out>
 It is best practice to provide content for both the ```html``` and the ```text``` properties in all of your emails.
-{% endinfo %}
+</call-out>
 
 The ```text``` property is substituted into the `<%body%>` of the text template and ```html``` is substituted into the `<%body%>` of the HTML template. If the ```text``` property is present, but not ```html```, then the resulting email will only contain the text version of the template, not the HTML version. The `<%subject%>` property is used for both Text and HTML templates.
 

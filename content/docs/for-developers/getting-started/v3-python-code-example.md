@@ -10,9 +10,9 @@ navigation:
 We recommend using SendGrid Python, our client library, <a href="https://github.com/sendgrid/sendgrid-python">available on Github</a>, with full documentation.
 {% endgithub %}
 
-{% info %}
+<call-out>
 Do you have an [API Key](https://app.sendgrid.com/settings/api_keys) yet? If not, go get one. You're going to need it to integrate!
-{% endinfo %}
+</call-out>
 
 {% anchor h2 %}Using SendGrid's Python Library{% endanchor %}
 

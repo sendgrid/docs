@@ -193,9 +193,9 @@ Categories allow you to track your emails according to broad topics that you def
 
 For more information, see our [categories documentation]({{root_url}}/for-developers/sending-email/categories.html)
 
-{% info %}
+<call-out>
 Categories should only be used for broad topics. To attach unique identifiers, please use [unique arguments]({{root_url}}/for-developers/sending-email/unique-arguments.html).
-{% endinfo %}
+</call-out>
 
 {% anchor h3 %}
 Unique Arguments

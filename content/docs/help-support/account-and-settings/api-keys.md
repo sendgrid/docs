@@ -46,7 +46,7 @@ When viewing the API keys page, you will see a list of your current API keys alo
 
 **Action** - Actions you can perform on your API keys, such as editing or deleting the key.
 
-{% info %} There is a limit of 100 API Keys per account. {% endinfo %}
+<call-out> There is a limit of 100 API Keys per account. </call-out>
 
 {% anchor h2 %}
 Creating an API key
@@ -59,11 +59,11 @@ Creating an API key
 1. Click `Create a Key`.
 1. Copy your API Key somewhere safe. For security reasons, do not put it directly in your code, or commit it somewhere like Github.
 
-{% warning %}
+<call-out type="warning">
 You will only be shown your API key one time. Please store it somewhere safe as we will not be able to retrieve or restore it.
-{% endwarning %}
+</call-out>
 
-{% info %} There is a limit of 100 API Keys per account. {% endinfo %}
+<call-out> There is a limit of 100 API Keys per account. </call-out>
 
 {% anchor h3 %}
 API key permissions
@@ -77,15 +77,15 @@ When assigning permissions to your API key, you will be given the option to sele
 * **Read Access** allows the API key to access GET endpoints within the selected permission.
 * **Full Access** allows the API key to access GET, PATCH, PUT, DELETE, and POST endpoints within the selected permission.
 
-{% info %}
+<call-out>
 You may not give an API key greater permissions than you currently have.
-{% endinfo %}
+</call-out>
 
 {% anchor h2 %}
 Replacing an old API key with a new one
 {% endanchor %}
 
-1. Locate the API key you would like to replace in your list of keys and select the action menu drop down at the right on the same row, then select **Delete API Key**. 
+1. Locate the API key you would like to replace in your list of keys and select the action menu drop down at the right on the same row, then select **Delete API Key**.
 1. Next, [create an API key](#-Creating-an-API-key).
 1. Replace the old API key with the new one in your code.
 
@@ -115,8 +115,8 @@ Click the action menu in the same row as the key you would like to edit. From he
 Delete an API Key
 {% endanchor %}
 
-{% warning %}
+<call-out type="warning">
 Once you delete a key, it can no longer be used to access SendGrid’s services.
-{% endwarning %}
+</call-out>
 
 Click the action menu in the same row as the key you want to inactivate. Choose “Delete.” This will delete the key permanently, making it inactive. Any subsequent API calls using this deleted API key will be rejected by SendGrid.

@@ -61,9 +61,9 @@ You can purchase an additional d IP Address from the IP Addresses Settings page 
 
 *To add an additional d IP Address:*
 
-1. In the left navigation, select **Settings** and then click **IP Addresses**.  
+1. In the left navigation, select **Settings** and then click **IP Addresses**.
    Here you'll see a list of your current d IPs. Your IPs in warmup will have a 'warmup' label
-1. Click **Add an IP Address**. 
+1. Click **Add an IP Address**.
 1. Select the number of IP addresses you would like to purchase.
 
 Under "Additional Options" you will find the following options:
@@ -74,9 +74,9 @@ Under "Additional Options" you will find the following options:
 
 After purchasing your IP, we strongly encourage you to set up reverse DNS. For more information about setting up reverse DNS, see [How to set up reverse DNS]({{root_url}}/help-support/getting-started/how-to-set-up-reverse-dns.html).
 
-{% info %} Purchasing and adding dedicated IPs can only be performed by the Parent account, or Teammates with either Billing or Admin permissions. {% endinfo %}
+<call-out> Purchasing and adding dedicated IPs can only be performed by the Parent account, or Teammates with either Billing or Admin permissions. </call-out>
 
-{% info %} Additional IPs cost an extra $30 per additional IP per month. You may only add up to 3 new IP addresses to your account per month. {% endinfo %}
+<call-out> Additional IPs cost an extra $30 per additional IP per month. You may only add up to 3 new IP addresses to your account per month. </call-out>
 
 
 {% anchor h2 %}

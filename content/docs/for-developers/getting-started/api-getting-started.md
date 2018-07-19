@@ -19,23 +19,23 @@ this is a new test!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   * [API Response messages](#-API-Response-messages)
 * [Next steps](#-Next-steps)
 
-There are several ways you can get started with the SendGrid API 
+There are several ways you can get started with the SendGrid API
 
 {% anchor h2 %}
 Prerequisites
 {% endanchor %}
 
-These instructions describe how to send your first email using cURL calls. This is one of many ways to send email with the SendGrid - we also have [PHP](https://github.com/sendgrid/sendgrid-php), [Python](https://github.com/sendgrid/sendgrid-python), [Node.js](https://github.com/sendgrid/sendgrid-nodejs), [Java](https://github.com/sendgrid/sendgrid-java), [C#](https://github.com/sendgrid/sendgrid-csharp), [Go](https://github.com/sendgrid/sendgrid-go), and [Ruby](https://github.com/sendgrid/sendgrid-ruby) libraries. 
+These instructions describe how to send your first email using cURL calls. This is one of many ways to send email with the SendGrid - we also have [PHP](https://github.com/sendgrid/sendgrid-php), [Python](https://github.com/sendgrid/sendgrid-python), [Node.js](https://github.com/sendgrid/sendgrid-nodejs), [Java](https://github.com/sendgrid/sendgrid-java), [C#](https://github.com/sendgrid/sendgrid-csharp), [Go](https://github.com/sendgrid/sendgrid-go), and [Ruby](https://github.com/sendgrid/sendgrid-ruby) libraries.
 
 Before you can start using the API, you need to do the following:
 
-1. Create a SendGrid [account](https://sendgrid.com/pricing/). 
-1. Create an [API Key]({{root_url}}/help-support/account-and-settings/api-keys.html). 
-1. Make sure you have [curl](https://curl.haxx.se/) installed on your machine. 
+1. Create a SendGrid [account](https://sendgrid.com/pricing/).
+1. Create an [API Key]({{root_url}}/help-support/account-and-settings/api-keys.html).
+1. Make sure you have [curl](https://curl.haxx.se/) installed on your machine.
 
-{% info %}
+<call-out>
 Curl comes standard on Mac operating systems.
-{% endinfo %}
+</call-out>
 
 {% anchor h2 %}
 How to send an API email
@@ -51,7 +51,7 @@ Your API call must have the following components:
 * An [Authorization Header](https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-authentication#authorization-header)
 * An [API Key]({{root_url}}/help-support/account-and-settings/api-keys.html) within the Authorization Header
 * A Request. When submitting data to a resource via POST or PUT, you must submit your payload in JSON.
- 
+
 {% anchor h3 %}
 Send your email using the API
 {% endanchor %}
@@ -66,16 +66,16 @@ curl --request POST \
 --data '{"personalizations":[{"to":[{"email":"john.doe@example.com","name":"John Doe"}],"subject":"Hello, World!"}],"from":{"email":"sam.smith@example.com","name":"Sam Smith"},"reply_to":{"email":"sam.smith@example.com","name":"Sam Smith"}}'{% endcodeblock %}
 
 1. Copy the curl example above.
-2. Paste the curl call into your favorite text editor. 
-3. Copy your API key and paste it in the authorization header. 
+2. Paste the curl call into your favorite text editor.
+3. Copy your API key and paste it in the authorization header.
 4. In the data section, specify the "to", "from", and "reply to" names and email addresses and enter a subject.
-5. Copy the code and paste it in your terminal. 
+5. Copy the code and paste it in your terminal.
 6. Hit **Enter**.
 7. Check the inbox of the address you specified as the "to" email and see your message!
 
-{% info %}
-If you have not yet set up [Sender Authentication]({{root_url}}/help-support/getting-started/how-to-set-up-domain-authentication.html) in your account, you may need to check your spam folder for the email you just sent. 
-{% endinfo %}
+<call-out>
+If you have not yet set up [Sender Authentication]({{root_url}}/help-support/getting-started/how-to-set-up-domain-authentication.html) in your account, you may need to check your spam folder for the email you just sent.
+</call-out>
 
 {% anchor h3 %}
 API Response messages

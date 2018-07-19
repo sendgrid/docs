@@ -9,7 +9,7 @@ navigation:
 These instructions show how to add an SMTP server to an existing Mail account, but you can also add these settings at the account creation stage.
 
 {% anchor h2 %}
-Adding SMTP settings 
+Adding SMTP settings
 {% endanchor %}
 
 Go to Mail -\> Preferences (⌘,). On the account you want to edit, click the tab that says **Server Settings**, then click the **Outgoing Mail Account** dropdown and select **Edit SMTP Server List...**.
@@ -39,9 +39,9 @@ Now the SendGrid SMTP Server can be specified on the **Accounts** tab of the **P
 
 ![The dropdown menu to select the SMTP server to use for this send.]({{root_url}}/images/NewAppleMail_Step_4.png "SMTP server dropdown")
 
-{% info %}
-Unfortunately, there is not an easy way to add SMTP API headers to a message in Mail. 
-{% endinfo %}
+<call-out>
+Unfortunately, there is not an easy way to add SMTP API headers to a message in Mail.
+</call-out>
 
 {% anchor h2 %}
 Attachment Compatibility

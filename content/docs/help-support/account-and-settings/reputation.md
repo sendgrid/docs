@@ -15,9 +15,9 @@ Once logged in to your account, on the left side of your [SendGrid.com](https://
 
 []({{root_url}}/images/Screen_Shot_2015-05-20_at_3.32.24_PM.png)
 
-{% info %}
+<call-out>
 Please note that the SendGrid Reputation does not represent your inboxing percentage at mailbox providers.
-{% endinfo %}
+</call-out>
 
 **How is the SendGrid Reputation Calculated?**
 
@@ -27,9 +27,9 @@ The SendGrid account reputation is computed based on a calculation of:
 
 - Spam Reports. Each spam report is a user actively rejecting your mail, and has a strong negative affect.
 
-{% info %}
-You can increase the SendGrid reputation score by removing unengaged users and [dropped addresses](https://sendgrid.com/docs/Classroom/Deliver/Undeliverable_Email/my_emails_are_being_dropped.html) from your lists before sending. Also be sure you are only sending to users who have opted in to receive your email to help prevent spam reports. 
-{% endinfo %}
+<call-out>
+You can increase the SendGrid reputation score by removing unengaged users and [dropped addresses](https://sendgrid.com/docs/Classroom/Deliver/Undeliverable_Email/my_emails_are_being_dropped.html) from your lists before sending. Also be sure you are only sending to users who have opted in to receive your email to help prevent spam reports.
+</call-out>
 
 **The Effect of Reputation on your Account**
 
@@ -39,9 +39,9 @@ If you're using a Free or Essentials plan, we will put your account in a "New" I
 
 If you're a Pro plan or higher, you instead send from a dedicated IP, and our internal reputation metric does not have as much weight. Instead, you should keep a closer eye on your _domain reputation_. Domain Reputation is an important part of how mailbox providers decide whether or not your email lands in the spam folder, or the inbox.
 
-{% info %}
+<call-out>
 Learn more about [Domain Reputation, and why it's important.](https://sendgrid.com/blog/what-is-a-domain-reputation/)
-{% endinfo %}
+</call-out>
 
 **SendGrid's Reputation Policy**
 

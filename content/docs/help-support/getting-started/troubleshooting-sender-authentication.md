@@ -47,7 +47,7 @@ Error validating domain: Expected TXT record at...
 {% endanchor %}
 
 {% codeblock %}
-Error validating domain: 
+Error validating domain:
 Expected TXT record at "m1._domainkey.example.com" to match "k=rsa; t=s; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDHLyl8Wk4J06nv56v5+OeEgp9LW3f/""LOlBjWJ9NS4l9X5UlbPJkKeHDXThTig2CxhVuKmIVvRcc9yJ27Tdthj1C1q0rvRtFpNlHbdrJvD8wpxe5rmFeiRPH1KUYbvtbs84aApMwN6Y3A0dgQE7vGkHnPTjwT7q/xv3mu2CvkVntQIDAQAB", but got the following error: lookup m1._domainkey.example.com: no such host
 {% endcodeblock %}
 
@@ -214,9 +214,9 @@ Domain authentication application logic
 
 Run through the application logic to understand why your sent emails may not be using `SendGrid.net` instead of the domain you authenticated.
 
-{% info %}
+<call-out>
 If SendGrid cannot match your email to a valid authenticated domain, `SendGrid.net` is used.
-{% endinfo %}
+</call-out>
 
 For any account, SendGrid attaches authenticated domain information in the following order, starting at the top of the list and applying the domain when the criteria are matched:
 

@@ -13,7 +13,7 @@ navigation:
 <p>Substitution tags allow you to generate dynamic content for each recipient on your list. When you send to a list of recipients over SMTP API, you can specify substitution tags specific to each recipient. For example, a first name that will then be inserted into an opening greeting like the following, where each recipient sees -firstName- replaced with their first name.</p>
 
 {% codeblock lang:html %}
-"Dear -firstName-" 
+"Dear -firstName-"
 {% endcodeblock %}
 
 <p>These tags can also be used in more complex scenarios. For example, you could use a -customerID- to build a custom URL that is specific to that user.</p>
@@ -23,25 +23,25 @@ navigation:
 <a href="http://example.com/customerOffer?id=-customerID-">Claim your offer!</a>
 {% endcodeblock %}
 
-{% info %}
-Substitution tags will work in the Subject line, body of the email and in [Unique Arguments]({{root_url}}/for-developers/sending-email/unique-arguments.html). 
-{% endinfo %}
+<call-out>
+Substitution tags will work in the Subject line, body of the email and in [Unique Arguments]({{root_url}}/for-developers/sending-email/unique-arguments.html).
+</call-out>
 
-{% info %}
+<call-out>
 Substitutions are limited to 10000 bytes per personalization block.
-{% endinfo %}
+</call-out>
 
-{% info %}
+<call-out>
 How you format your substitution tags may depend on the library you use to create your SMTP connection, the language you are writing your code in, or any intermediate mail servers that your servers will send mail through. In some cases -subVal- may be the best choice while in other %subVal% or #subVal# may make more sense. It is best to avoid characters that have special meaning in HTML, such as <,>, and &. These might end up encoded and will not be properly substituted.
-{% endinfo %}
+</call-out>
 
-{% warning %}
+<call-out type="warning">
 Do not use spaces inside your substitution tags, for example: `%first name%`
-{% endwarning %}
+</call-out>
 
-{% warning %}
+<call-out type="warning">
 Do not nest substitution tags in substitutions as they will fail and your substitution will not take place.
-{% endwarning %}
+</call-out>
 
 {% anchor h2%}
 Substitution Tag Example
@@ -54,9 +54,9 @@ Email HTML content:
   <body>
     <p>Hello -name-,<br>
        Thank you for your interest in our products. I have set up an appointment to call you at -time- EST to discuss your needs in more detail. If you would like to reschedule this call, please visit the following link: `<a href="http://example.com/reschedule?id=-customerID-">reschedule</a>`
- 
+
                 Regards,
- 
+
                 -salesContact-
                 -contactPhoneNumber-<br>
     </p>
@@ -102,11 +102,11 @@ Email HTML content:
   <head></head>
   <body>
     <p>Hello John,<br>
-       Thank you for your interest in our products. I have set up an appointment to call you at 3:00 pm EST to discuss your needs in more detail. If you would like to reschedule this call, please visit the following link: 
+       Thank you for your interest in our products. I have set up an appointment to call you at 3:00 pm EST to discuss your needs in more detail. If you would like to reschedule this call, please visit the following link:
       <a href="http://example.com/reschedule?id=1234">reschedule</a>
- 
+
                 Regards,
- 
+
                 Jared
                 555.555.5555<br>
     </p>
@@ -120,11 +120,11 @@ Email HTML content:
   <head></head>
   <body>
     <p>Hello Jane,<br>
-       Thank you for your interest in our products. I have set up an appointment to call you at 5:15pm EST to discuss your needs in more detail. If you would like to reschedule this call please visit the following link: 
+       Thank you for your interest in our products. I have set up an appointment to call you at 5:15pm EST to discuss your needs in more detail. If you would like to reschedule this call please visit the following link:
    <a href="http://example.com/reschedule?id=5678">reschedule</a>
- 
+
                 Regards,
- 
+
                 Ben
                 777.777.7777<br>
     </p>

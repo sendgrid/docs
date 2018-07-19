@@ -14,7 +14,7 @@ navigation:
 - [Suspended](#-Suspended)
 - [Deactivated](#-Deactivated)
 - [Banned](#-Banned)
-- [Reactivation](#-Reactivation) 
+- [Reactivation](#-Reactivation)
 
 To preserve your reputation as a sender, SendGrid reviews accounts with apparent abnormal activity. Have you received a warning, suspension, deactivation, or ban notice from SendGrid? Please respond to any questions asked in the email notice. The fastest way to get your account reactivated is to respond directly to the ticket sent to your email address. In most cases, SendGrid Support cannot reactivate a warned, suspended, deactivated or banned account, so contacting them directly may delay reactivation.
 
@@ -22,7 +22,7 @@ To preserve your reputation as a sender, SendGrid reviews accounts with apparent
 Stages of review
 {% endanchor %}
 
-Once your account is under review, SendGrid sends a notification to the address associated with your account indicating that it is one of the following states: 
+Once your account is under review, SendGrid sends a notification to the address associated with your account indicating that it is one of the following states:
 
 {% anchor h3 %}
 Warned
@@ -34,31 +34,31 @@ The account maintains full sending functionality during a warning period. Howeve
 Suspended
 {% endanchor %}
 
-SendGrid accepts and queues mail while the account is under review. The account holds mail until issues are resolved or up to 72 hours from the time of send. Any message queued for over 72 hours from sending expires and is not delivered. Delivered mail sent before the suspension is still functional, including open and click tracking, as well as link redirects. 
+SendGrid accepts and queues mail while the account is under review. The account holds mail until issues are resolved or up to 72 hours from the time of send. Any message queued for over 72 hours from sending expires and is not delivered. Delivered mail sent before the suspension is still functional, including open and click tracking, as well as link redirects.
 
-{% info %}
+<call-out>
 An account in a suspended state continues to incur auto-renewal billing for your monthly subscription and any Marketing Campaigns contact storage.
-{% endinfo %}
+</call-out>
 
 {% anchor h3 %}
 Deactivated
 {% endanchor %}
 
-A deactivated SendGrid account cannot accept mail. Upon deactivation, SendGrid deletes any undelivered mail queued on the system. Click and Open tracking links are disabled in the deactivated account.  Deactivated sub-users are not accessible via the ‘log in as’ method available to parent accounts. However, deactivated sub-users can still log in directly. 
+A deactivated SendGrid account cannot accept mail. Upon deactivation, SendGrid deletes any undelivered mail queued on the system. Click and Open tracking links are disabled in the deactivated account.  Deactivated sub-users are not accessible via the ‘log in as’ method available to parent accounts. However, deactivated sub-users can still log in directly.
 
-{% info %}
+<call-out>
 An account in a deactivated state continues to incur auto-renewal billing for your monthly subscription and any contacts storage.
-{% endinfo %}
+</call-out>
 
 {% anchor h3 %}
 Banned
 {% endanchor %}
 
-Banned accounts cannot access our system either through SendGrid.com or the API. Our system does not accept email requests from banned accounts. Dedicated IPs assigned to the account are removed.  Related sub-users are unable to send email or access their account. 
+Banned accounts cannot access our system either through SendGrid.com or the API. Our system does not accept email requests from banned accounts. Dedicated IPs assigned to the account are removed.  Related sub-users are unable to send email or access their account.
 
-{% info %}
+<call-out>
 An account in a banned state will stop any auto-renewal billing, though you will still be charged for any overages or Marketing Campaigns contact storage during the current month.
-{% endinfo %}
+</call-out>
 
 {% anchor h3 %}
 Reactivation

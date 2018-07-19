@@ -16,8 +16,8 @@ An autoresponder is a computer program that generates a response to an email, re
 
 - Autoresponders can also be **installed server-side**, giving you complete control while requiring you to provide the infrastructure and technical skill to maintain the autoresponder.
 
-{% info %}
+<call-out>
 You can set up an autoresponder with SendGrid, by utilizing the [Inbound Parse Webhook]({{root_url}}/Classroom/Basics/Inbound_Parse_Webhook/setting_up_the_inbound_parse_webhook.html) and the [v3 Mail Send endpoint]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html).
-{% endinfo %}
+</call-out>
 
 More information about autoresponders can be found [here](https://en.wikipedia.org/wiki/Autoresponder).

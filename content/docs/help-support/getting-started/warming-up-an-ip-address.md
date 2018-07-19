@@ -32,9 +32,9 @@ When an ISP observes email suddenly coming from a new or "cold" IP address, they
 
 A gradual warm-up does not always guarantee a perfect sending reputation. It is still important to follow sending [best practices](https://sendgrid.com/blog/10-tips-to-keep-email-out-of-the-spam-folder/).
 
-{% info %}
+<call-out>
 It is much easier to establish a positive reputation as a new sender, than it is to repair an existing reputation.
-{% endinfo %}
+</call-out>
 
 {% anchor h2 %}
 Warmup types
@@ -65,9 +65,9 @@ Automated IP warmup API
 
 You can also put your IP address into warmup mode with our [Automated Warmup API]({{root_url}}/help-support/getting-started/warming-up-an-ip-address.html) - this automatically throttles traffic sent through your new IP according to our [warm up schedule]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_warmup_schedule.html).
 
-{% warning %}
+<call-out type="warning">
 When automatically warming up an IP, SendGrid limits the amount of email sent through that IP per hour. Any email requests that exceed this hourly limit will overflow to any other existing warm IPs on your account. If you do not have any other warm IPs, you should [warm up your IP manually](#-Manually-warm-up-your-IP).
-{% endwarning %}
+</call-out>
 
 {% anchor h3 %}
 Automated IP warmup hourly send schedule

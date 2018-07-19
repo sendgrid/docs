@@ -36,9 +36,9 @@ Suppression Management gives you the ability to create unsubscribe groups that r
 
 You can then give your recipients more control over the types of emails they want to receive by letting them opt out of messages from a certain group. This means getting the right messages to your recipient’s inbox, resulting in a stronger relationship with your recipients and a better sending reputation.
 
-{% info %}
+<call-out>
 Make sure your group names and descriptions are customer friendly! Your customers will see these group names and descriptions when they unsubscribe from your emails.
-{% endinfo %}
+</call-out>
 
 All of your groups will be visible on the [Suppression Management]({{site.app_url}}/suppressions/advanced_suppression_manager) page, along with the descriptions you defined when you created the groups. There are also [Suppression Management API]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/index.html) endpoints for managing your groups and suppressions.
 
@@ -46,7 +46,7 @@ All of your groups will be visible on the [Suppression Management]({{site.app_ur
 Add An Unsubscribe Group
 {% endanchor %}
 
-{% info %} There is a limit of 25 groups per user. {% endinfo %}
+<call-out> There is a limit of 25 groups per user. </call-out>
 
 To add a new group, click the “Create New Group” button at the top right of the page. Then, you will be asked to name your Unsubscribe Group and add the description. Click “Done” and you will see your new group in the list of all of your unsubscribe groups.
 
@@ -68,13 +68,13 @@ You may want to preload an unsubscribe group or add recipients to an unsubscribe
 Upload a CSV To Add Unsubscribe Group Recipients
 {% endanchor %}
 
-{% warning %}
+<call-out type="warning">
 The emails should not be enclosed in quotes and should be NOT be formatted like `fname lname <email@example.com>`
-{% endwarning %}
+</call-out>
 
-{% info %}
+<call-out>
 This CSV should have a list of email addresses in the first column. It can include a header row or extra columns but this ancillary information will be ignored.
-{% endinfo %}
+</call-out>
 
 To upload a CSV of recipients who should not receive this group’s emails, click the gear icon at the right of the Unsubscribe Group name. When you select “upload CSV” a window will pop out. Drag your CSV and click “Done”. SendGrid will consume your CSV file and add the emails it finds to your group. From that point on, any emails sent with this group will not go to the recipients in this list. To view which group a recipient is in, go to the [Group Unsubscribes]({{site.app_url}}/suppressions/group_unsubscribes) page and search by that recipient’s email address.
 
@@ -100,9 +100,9 @@ To Edit an unsubscribe group, you can either choose “Edit Details” from the 
 Delete an Unsubscribe Group
 {% endanchor %}
 
-{% warning %}
+<call-out type="warning">
 Deleting a group is permanent. It cannot be undone.
-{% endwarning %}
+</call-out>
 
 To delete an unsubscribe group, select “Delete” and then “confirm” from the gear icon to the right of your group in the group list or click the name of your group and then click the “Delete” and then “Confirm” buttons.
 

@@ -10,9 +10,9 @@ seo:
   description: Configuration information for Exim 4 and Sendgrid.
 ---
 
-{% warning %}
-Versions of Exim prior to the current major release are considered obsolete. If you are using Exim 3.x or earlier it is suggested by the Exim development team that you upgrade to the current release. 
-{% endwarning %}
+<call-out type="warning">
+Versions of Exim prior to the current major release are considered obsolete. If you are using Exim 3.x or earlier it is suggested by the Exim development team that you upgrade to the current release.
+</call-out>
 
 The following configuration file, which can be found at **/etc/exim4/update-exim4.conf.conf**, was pulled from Ubuntu Server 10.4 and is for example purposes only:
 
@@ -28,16 +28,16 @@ dc_smarthost='smtp.sendgrid.net::587'
 CFILEMODE='644'
 dc_use_split_config='false'
 dc_hide_mailname='true'
-dc_mailname_in_oh='true' 
+dc_mailname_in_oh='true'
 {% endcodeblock %}
 
 Enable TLS support in **/etc/exim4/exim4.conf.localmacros**.
 
-  
- 
-{% info %}
-If this file does not exist, you will need to create it: 
-{% endinfo %}
+
+
+<call-out>
+If this file does not exist, you will need to create it:
+</call-out>
 
 {% codeblock lang:bash %}
 MAIN_TLS_ENABLE = 1
@@ -55,9 +55,9 @@ Once you have completed and saved all changes to Exim's configuration files, you
 $ /etc/init.d/exim4 restart
 {% endcodeblock %}
 
- 
+
 {% anchor h2 %}
-cPanel 
+cPanel
 {% endanchor %}
 
 If you are using cPanel with Exim and want to relay your email through SendGrid, go to **Main \> Service Configuration \> Exim Configuration Editor**, click on the Advanced Editor button, and enter the following in the **AUTH** Box:
@@ -71,10 +71,10 @@ sendgrid_login:
   client_send = : YourSendGridUsername : YourSendGridPassword
 {% endcodeblock %}
 
- 
-{% info %}
-Only include "begin authenticators" if it's not already in the configuration. 
-{% endinfo %}
+
+<call-out>
+Only include "begin authenticators" if it's not already in the configuration.
+</call-out>
 
 Add a route in the **Router Configuration** Box:
 

@@ -10,9 +10,9 @@ navigation:
   show: true
 ---
 
-{% info %}
+<call-out>
 If you have a **Pro plan or higher**, you may create up to 15 Subusers through your account. If you reach the maximum of 15 and require more Subusers, please use the form in the [Subuser Management]({{site.app_url}}/settings/Subusers) page to request more.
-{% endinfo %}
+</call-out>
 
 Subusers help you segment your email sending and API activity. You assign permissions and credit limits when you create the Subusers. We recommend creating Subusers for each of the different types of emails you send - so one Subuser for transactional emails, and another for marketing emails. Breaking your sending up this way allows you to get separate statistics for each type of email you send.
 
@@ -34,13 +34,13 @@ New SendGrid accounts do not come with Subusers and must be created by the paren
 
 *To create a Subuser:*
 
-1. Navigate to **Settings** and select **Subuser Management**. 
-1. Click **Create New Subuser**. 
+1. Navigate to **Settings** and select **Subuser Management**.
+1. Click **Create New Subuser**.
 1. Enter the following required information into the corresponding fields:
   * Username - The username your Subuser will use to send emails and access the API.
   * Email Address - The contact email address for this Subuser. This must be an active email account as SendGrid may contact a Subuser to provide support,  resolve sending and deliverability issues, or to enforce SendGrid's Terms of Service. Whenever we contact a Subuser, it is our policy to contact the parent account email address at the same time.
   * Password - The password your Subuser will use to access SendGrid.com.
-  * Avatar - If you have [gravatar](http://gravatar.com), or globally recognized avatar, that you use for other applications, it is automatically associated with this Subuser when you enter an email address. This makes it easier to identify all of the Subusers attached to your account. 
+  * Avatar - If you have [gravatar](http://gravatar.com), or globally recognized avatar, that you use for other applications, it is automatically associated with this Subuser when you enter an email address. This makes it easier to identify all of the Subusers attached to your account.
 
 1. Assign an IP Address to the Subuser account.
   You are assigned a dedicated IP address when you create a Pro 100k plan or higher. If you send at a high volume, and you're using Subusers to separate out your sending traffic, it's best practice to purchase a separate IP for each sending type.
@@ -62,7 +62,7 @@ Optional Profile Information
 
 We do not require this information for your Subusers, but we suggest that you fill out as much as possible to improve the deliverability for this Subuser, especially if the information does not match your parent account’s information. This will also allow SendGrid to contact your Subuser directly if we notice anything on their account.
 
-The following fields in the Subuser profile are optional: 
+The following fields in the Subuser profile are optional:
 
 **First Name** - The first name of the person responsible for this Subuser.
 
@@ -90,20 +90,20 @@ The following fields in the Subuser profile are optional:
 Allocating or removing credits from a Subuser
 {% endanchor %}
 
-{% warning %}
+<call-out type="warning">
 You can only allocate credits by selecting the nonrecurring credit option.
-{% endwarning %}
+</call-out>
 
-If your Subuser account has nonrecurring credits, you can allocate credits to, or remove credits from this Subuser account. On the Subuser's profile, click **Change Credit Rules** and then choose the appropriate credit amount for the Subuser. 
+If your Subuser account has nonrecurring credits, you can allocate credits to, or remove credits from this Subuser account. On the Subuser's profile, click **Change Credit Rules** and then choose the appropriate credit amount for the Subuser.
 
 {% anchor h2 %}
 Monitoring Subuser email content
 {% endanchor %}
 
-This feature allows you to receive a sample of a Subuser's email content to help ensure that the content is not damaging your reputation. 
-{% warning %}
+This feature allows you to receive a sample of a Subuser's email content to help ensure that the content is not damaging your reputation.
+<call-out type="warning">
 Each monitor email costs one email credit.
-{% endwarning %}
+</call-out>
 
 The “Collect Sample Rate” is the frequency is the number of emails SendGrid will allow through before copying the email address you set on the next email sent. For example, if you set the collect sample rate at 100 then you will receive a copy of every 100th email this Subuser sends.
 
@@ -116,9 +116,9 @@ To make this easier, we’ve made it so you can impersonate a Subuser from your 
 
 *To impersonate a Subuser:*
 
-1. Log into SendGrid. 
+1. Log into SendGrid.
 2. Go to the top left corner of the portal screen and click on your name just above the navigation menu.
-3. Click **Switch User**. 
+3. Click **Switch User**.
 4. Choose the Subuser you want to impersonate by clicking that Subuser’s name.
 
 The page will refresh, and you will notice a message at the top of the screen that says, “You're currently logged in as [Subuser name]”.
@@ -136,22 +136,22 @@ Click the link at the top left that says “Back to Parent Account”. This will
 Export Subuser Information
 {% endanchor %}
 
-If you would like to see how your Subusers are performing in comparison to each other, you can export Subuser data. 
+If you would like to see how your Subusers are performing in comparison to each other, you can export Subuser data.
 
 *To export Subuser information:*
 
-1. Navigate to **Settings** and select **Subuser Management**. 
-1. Click **Export Data**. 
+1. Navigate to **Settings** and select **Subuser Management**.
+1. Click **Export Data**.
  <br>This downloads a CSV file with each Subuser’s reputation, the number of requests they made this month, and the number of requests they made last month.
 
  {% anchor h2 %}
-Disabling a Subuser account 
+Disabling a Subuser account
 {% endanchor %}
 
 *To turn off a Subuser’s access to SendGrid temporarily:*
 
-1. Navigate to **Settings** and select **Subuser Management**.  
-1. Locate the Subuser account you wish to disable and click on the name to view the account details. 
+1. Navigate to **Settings** and select **Subuser Management**.
+1. Locate the Subuser account you wish to disable and click on the name to view the account details.
 1. Click **Enable**.
 
 To re-enable a Subuser’s account, click **Disable**.
@@ -160,17 +160,17 @@ To re-enable a Subuser’s account, click **Disable**.
 Deleting a Subuser account
 {% endanchor %}
 
-{% warning %}
+<call-out type="warning">
 Deleting a Subuser account cannot be undone. Please make sure that you are ready to delete this account before you delete it. All access for this Subuser will immediately be revoked upon deletion.
-{% endwarning %}
+</call-out>
 
 *To delete a Subuser account:*
 
-1. Navigate to **Settings** and select **Subuser Management**. 
-1. Locate the Subuser account you wish to delete and click on the name to view the account details. 
-1. On the *Account Settings* page, click **Delete**. 
-   A confirmation window appears. 
-1. Click **Confirm** to delete the Subuser account.  
+1. Navigate to **Settings** and select **Subuser Management**.
+1. Locate the Subuser account you wish to delete and click on the name to view the account details.
+1. On the *Account Settings* page, click **Delete**.
+   A confirmation window appears.
+1. Click **Confirm** to delete the Subuser account.
 
 {% anchor h2 %}
 Additional Resources

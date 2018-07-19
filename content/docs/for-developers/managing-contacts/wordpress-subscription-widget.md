@@ -86,9 +86,9 @@ Configuring Your Subscription Widget Form
 
 Once you have selected the contact list to which you would like your new signups to be uploaded, simply complete the form to reflect your preferences. You can decide whether you’ll include first and last names on your signup form and whether they’ll be required. You can also craft the subject line and content of the opt-in confirmation email. Lastly, you’ll be able to choose the page your new signups see upon clicking the confirmation link within the opt-in confirmation email.
 
-{% info %}
+<call-out>
 Note: The default text [my site name] is **not** a substitution tag. You should replace the text within the "Signup email subject" field with your entire desired subject text.
-{% endinfo %}
+</call-out>
 
 ![]({{root_url}}/images/wp_subscription_widget_3.png)
 

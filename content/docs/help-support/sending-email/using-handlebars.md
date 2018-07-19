@@ -33,9 +33,9 @@ Handlebars overview
 
 This page uses examples from the [dynamic-template section of our email templates github repo](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates).
 
-{% info %}
+<call-out>
 For the full API documentation, see [Mail Send with Dynamic Transactional Templates](https://dynamic-templates.api-docs.io/3.0).
-{% endinfo %}
+</call-out>
 
 {% anchor h2 %}
 Personalizing email with Handlebars
@@ -157,9 +157,9 @@ HTML should contain:
 
 Test Data should contain:
 {% codeblock %}
-{  
-   "user":{  
-      "profile":{  
+{
+   "user":{
+      "profile":{
          "firstName":"Ben"
       }
    }
@@ -182,14 +182,14 @@ HTML should contain:
 
 Test Data should contain:
 {% codeblock %}
-{  
-   "user":{  
-      "orderHistory":[  
-         {  
+{
+   "user":{
+      "orderHistory":[
+         {
             "date":"2/1/2018",
             "item":"shoes"
          },
-         {  
+         {
             "date":"1/4/2017",
             "item":"hat"
          }
@@ -255,9 +255,9 @@ HTML should contain:
 Test Data should contain:
 ###1
 {% codeblock %}
-{  
-   "user":{  
-      "profile":{  
+{
+   "user":{
+      "profile":{
          "male":"true"
       }
    }
@@ -266,9 +266,9 @@ Test Data should contain:
 
 ###2
 {% codeblock %}
-{  
-   "user":{  
-      "profile":{  
+{
+   "user":{
+      "profile":{
          "female":true
       }
    }
@@ -277,9 +277,9 @@ Test Data should contain:
 
 ###3
 {% codeblock %}
-{  
-   "user":{  
-      "profile":{  
+{
+   "user":{
+      "profile":{
 
       }
    }
@@ -315,8 +315,8 @@ HTML should contain:
 
 Test Data should contain:
 {% codeblock %}
-{  
-   "user":{  
+{
+   "user":{
       "suspended":true
    },
    "supportPhone":"1-800-1234567"
@@ -341,8 +341,8 @@ HTML should contain:
 
 Test Data should contain:
 {% codeblock %}
-{  
-   "user":{  
+{
+   "user":{
       "active":false
    },
    "supportPhone":"1-800-1234567"
@@ -369,14 +369,14 @@ HTML should contain:
 
 Test Data should contain:
 {% codeblock %}
-{  
-   "user":{  
-      "orderHistory":[  
-         {  
+{
+   "user":{
+      "orderHistory":[
+         {
             "date":"2/1/2018",
             "item":"shoes"
          },
-         {  
+         {
             "date":"1/4/2017",
             "item":"hat"
          }
@@ -420,20 +420,20 @@ HTML should contain:
 
 Test Data should contain:
 {% codeblock %}
-{  
-   "user":{  
-      "story":[  
-         {  
+{
+   "user":{
+      "story":[
+         {
             "male":true,
             "date":"2/1/2018",
             "item":"shoes"
          },
-         {  
+         {
             "male":true,
             "date":"1/4/2017",
             "item":"hat"
          },
-         {  
+         {
             "female":true,
             "date":"1/1/2016",
             "item":"shirt"
@@ -479,19 +479,19 @@ Test Data should contain:
 {% codeblock %}
 16
 May 11th 2018, 2:18:20 pm
-{  
-   "user":{  
-      "story":[  
-         {  
+{
+   "user":{
+      "story":[
+         {
             "male":true,
             "date":"2/1/2018",
             "item":"shoes"
          },
-         {  
+         {
             "male":true,
             "date":"1/4/2017"
          },
-         {  
+         {
             "female":true,
             "item":"shirt"
          }

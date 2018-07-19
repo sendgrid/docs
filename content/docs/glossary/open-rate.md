@@ -10,9 +10,9 @@ seo:
   description: The rate in which your customers open emails you've sent to them.
 ---
 
-{% info %}
+<call-out>
 Tracking open rates requires that the Open Tracking app be enabled.
-{% endinfo %}
+</call-out>
 
 The “Opens” percentage is the total number of times your users opened your emails, divided by the total number of Delivered messages.
 

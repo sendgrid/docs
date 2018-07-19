@@ -6,9 +6,9 @@ navigation:
   show: true
 ---
 
-{% info %}
-This document was written using Windows Server 2008 R2 running IIS version 7.5 and ASP.NET scripting technology for sending email. If you require SSL/TLS, you will need to configure those elements separately. 
-{% endinfo %}
+<call-out>
+This document was written using Windows Server 2008 R2 running IIS version 7.5 and ASP.NET scripting technology for sending email. If you require SSL/TLS, you will need to configure those elements separately.
+</call-out>
 
 {% anchor h2 %}
 IIS 7.5 Configuration
@@ -32,9 +32,9 @@ Before you get going, you'll need to set up IIS in order to support SendGrid int
 
 </center>
 
-{% info %}
+<call-out>
 If you want to configure additional security to the localhost IIS 6.0 server you would set it here and match the same authentication in the IIS 6.0 GUI.
-{% endinfo %}
+</call-out>
 
 {% anchor h2 %}
 Enable SMTP Service:
