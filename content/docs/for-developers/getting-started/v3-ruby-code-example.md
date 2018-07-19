@@ -6,7 +6,11 @@ navigation:
   show: true
 ---
 
-{% github sendgrid/sendgrid-ruby#usage PHP %} We recommend using SendGrid Ruby, our client library, <a href="https://github.com/sendgrid/sendgrid-ruby">available on Github</a>, with full documentation. {% endgithub %}
+<call-out>
+
+We recommend using SendGrid Ruby, our client library, <a href="https://github.com/sendgrid/sendgrid-ruby">available on Github</a>, with full documentation.
+
+</call-out>
 
 <call-out>
 

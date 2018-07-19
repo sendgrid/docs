@@ -6,9 +6,11 @@ navigation:
   show: true
 ---
 
-{% github sendgrid/sendgrid-go#example golang %}
+<call-out>
+
 We recommend using SendGrid Go, our client library, <a href="https://github.com/sendgrid/sendgrid-go">available on Github</a>, with full documentation.
-{% endgithub %}
+
+</call-out>
 
 <call-out>
 

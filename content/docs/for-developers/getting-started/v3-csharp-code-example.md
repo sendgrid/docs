@@ -6,9 +6,11 @@ navigation:
     show: true
 ---
 
-{% github sendgrid/sendgrid-csharp#how-to-create-an-email C# %}
+<call-out>
+
 We recommend using SendGrid C#, our client library, <a href="https://github.com/sendgrid/sendgrid-csharp">available on Github</a>, with full documentation.
-{% endgithub %}
+
+</call-out>
 
 <call-out>
 
