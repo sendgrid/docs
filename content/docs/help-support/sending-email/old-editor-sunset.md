@@ -10,9 +10,11 @@ seo:
   description: On 16 April 2018, the old Marketing Campaigns editor is going away.
 ---
 <call-out type="warning">
+
 On 16 April 2018, SendGrid will be discontinuing the old Marketing Campaigns editor. At that time, all campaigns will be opened and edited in the powerful new Marketing Campaigns experience.
 
 Some maintenance may be required when moving an old campaign in the new editor for the first time. We strongly encourage you to move any remaining campaigns into the new editor by 16 April, 2018 to ensure your sending is not interrupted when the deprecation occurs.
+
 </call-out>
 
 {% anchor h2 %}
@@ -48,7 +50,9 @@ I use both Design and Code. Why do I need to choose one?
 Good news! If you like to build your campaigns visually, but like to roll up your sleeves to edit some code to make it perfect, the Design Editor will a great option for you. While it's called the "Design Editor," this experience still features a number ways to access and edit HTML. Each visual drag and drop module in the new builder features one-click access to your HTML content. To access, click the action menu at the top of the blue bar in each drag-and-drop module and then select the `< >` icon to get to your code. Learn more about the [new editing experience]({{root_url}}/help-support/sending-email/editor.html).
 
 <call-out>
+
 If you’ve edited code in your current template but want to use it with the new visual, drag and drop editor, you will need to add our [Drag-&-Drop Markup]({{root_url}}/help-support/sending-email/editor.html#-Importing-Custom-HTML-With-Drag--Drop-Markup).
+
 </call-out>
 
 {% anchor h3 %}

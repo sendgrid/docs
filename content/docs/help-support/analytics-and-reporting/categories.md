@@ -11,7 +11,9 @@ navigation:
 ---
 
 <call-out>
+
 Parent accounts will see aggregated stats for their account and all subuser accounts. Subuser accounts will only see their own stats.
+
 </call-out>
 
 Categories can help organize your email analytics by enabling you to “tag” emails by type. Just as you can view the statistics on all your [email activity]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed.html), you can go a step further and view the statistics broken down to a particular category.

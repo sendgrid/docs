@@ -15,9 +15,11 @@ Send Email From Your Application {% endanchor %}
 through our <a href="{{root_url}}/API_Reference/Web_API_v3/index.html">Web API</a>.</p>
 
 <call-out>
+
 <p><strong>SendGrid provides <a href="{{root_url}}/Integrate/libraries.html">client libraries</a> in many languages. This is the preferred way to integrate with SendGrid.</strong></p>
 
 <p>If you choose to use SendGrid without a client library, the Web API is recommended in most cases as it is faster,  provides some benefit with encoding, and tends to be easier to use. SMTP provides many features by default, but is harder to setup.</p>
+
 </call-out>
 
 {% anchor h3 %}
@@ -54,12 +56,16 @@ SMTP Relay
 </ul>
 
 <call-out>
+
 For most users we suggest <strong>port 587</strong> to avoid rate limits set by some
 hosting companies.
+
 </call-out>
 
 <call-out>
+
 With SMTP, 100 messages can be sent with each connection.
+
 </call-out>
 
 <p>SendGrid extends SMTP with the X-SMTPAPI header, giving you more
@@ -67,13 +73,17 @@ control over how SendGrid sends your email. See the <a href="{{root_url}}/API_Re
 more information.</p>
 
 <call-out>
+
 Customers should utilize SMTPAPI if this is an option. As with SMTP, 100 messages can be sent with each connection, but there can be 1000 recipients for each message.
+
 </call-out>
 
 <call-out type="warning">
+
 We strongly discourage users from sending mail directly through a single specific IP address when integrating with SendGrid. Always point your traffic to <strong>smtp.sendgrid.net</strong>.
 
 The IP addresses at smtp.sendgrid.net are changed often and without notice. If you point your traffic to one specific IP, you will experience interruptions in your service when these IPs are changed.
+
 </call-out>
 
 {% anchor h2 %}

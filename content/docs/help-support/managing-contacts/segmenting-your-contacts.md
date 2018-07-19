@@ -25,7 +25,9 @@ Creating a Segment
 You can create a new segment with multiple conditions based on the information you have stored about your contacts, and based on some of the information SendGrid has stored about your Marketing Campaigns.
 
 <call-out>
+
 You can create up to 200 segments.
+
 </call-out>
 
 *To create a segment:*
@@ -50,7 +52,9 @@ For example, to create a segment of recipients that have clicked on a link in a 
 1. From the last drop-down, select the name of the campaign you want to use for the segment.
 
 <call-out>
+
 The *Condition* drop-down contains required CSV fields, custom fields, and internal event data to help you get your email campaigns to the correct audience. The *Criteria* drop-down contains operators that tell the segment *how* to handle the data sepcified by the condition.
+
 </call-out>
 
  Depending on which condition is selected, the criteria you can choose from differ. The criteria available to assign to conditions will depend on the field type (Text, Date, or Number).  For example, a condition labeled "Number” will show `GREATER THAN`, `LESS THAN`, and `EQUALS` as options whereas a “Text” field will show `IS` and `IS NOT` as options.
@@ -116,7 +120,9 @@ The *Condition* drop-down contains required CSV fields, custom fields, and inter
 When using more than one condition to segment your contacts, you can select `AND` or `OR` as options, where `AND` requires both conditions to be true and `OR` requires either condition to be true. Once you’ve selected the Condition and the Criteria, you can layer additional conditions in the segment to narrow the results to a more targeted audience.
 
 <call-out>
+
 You can add up to 15 different conditions per segment.
+
 </call-out>
 
 {% anchor h3 %}
@@ -132,7 +138,9 @@ This triggers SendGrid to send an email to the primary email address on the acco
 download the CSV of all the contacts in the list and their associated custom field values.
 
 <call-out>
+
 The download link for your CSV export will be valid for 24 hours.
+
 </call-out>
 
 

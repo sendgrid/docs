@@ -17,5 +17,7 @@ Segmentation can be achieved by either creating and sending mail through a new s
 SendGrid's [IP Pooling feature]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_pools.html) is a powerful tool that allows you to set up separate IP pools that you can use to organize your dedicated IPs. When sending different types of email you can specify which IP Pool to associate your message with, and the IP Pooling feature will automatically **segment** your traffic by sending it through the corresponding dedicated IP address.
 
 <call-out>
+
 For more information about how you can segment your email traffic, please visit our [Classroom]({{root_url}}/Classroom/Deliver/Delivery_Introduction/segment_your_email_traffic_with_subusers.html).
+
 </call-out>

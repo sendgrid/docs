@@ -11,7 +11,9 @@ seo:
 ---
 
 <call-out>
+
 In order to track opens, you must have the [Open Tracking app]({{root_url}}/User_Guide/Settings/tracking.html) enabled.
+
 </call-out>
 
 
@@ -24,5 +26,7 @@ In [Statistics]({{root_url}}/User_Guide/Statistics/index.html) the "opens percen
 The “Unique opens” percentage is the number of unique individuals that have opened your emails, divided by the total number of Delivered messages.
 
 <call-out>
+
 SendGrid will store tracking data for unique open events for up to 7 days.
+
 </call-out>

@@ -38,7 +38,9 @@ When recipients interact with the A/B test emails, you can compare the engagemen
 When you are A/B testing your email campaigns, you want to optimize for a specific metric. Determine whether you want to optimize your Open Rates, by testing the Subject Line; or your Click Rates, by testing the Email Content.
 
 <call-out>
+
 You can test up to 6 different variations for each A/B test campaign.
+
 </call-out>
 
 - **Subject Line - Optimize Open Rates**
@@ -68,9 +70,11 @@ Enter the different versions of your email where you would normally edit that pi
   Make edits to each of your email content variations by selecting one of the tabs.
 
 <call-out>
+
 **A/B Testing Tip - Adding Variations**
 
 To know the direct cause for the best performing variation, only make one change per variation rather than many changes. That way you can point to a direct cause for the differences in your stats.
+
 </call-out>
 
 {% anchor h2 %} Select the A/B Test Campaign Sample Size {% endanchor %}
@@ -103,11 +107,13 @@ You can set your A/B test duration between 30min - 24 hours.
 While you can test your email variations for up to 24 hours, emails will only be sent to the subset of contacts you've chosen to participate in the A/B test, during the test duration you set. The remainder of your contacts will only be sent the winning variation of your A/B test email after the test duration has completed.
 
 <call-out>
+
 **A/B Testing Tip - Setting the Test Duration**
 
 You should be mindful of your test duration, with respect to the timeliness of your campaign content.
 
 For example, if you have a one-day sale that happens the day of your campaign, you should set the A/B test duration to less than 24 hours so that your remaining contacts still have time to get the final email campaign, and participate in your oney-day sale.
+
 </call-out>
 
 {% anchor h2 %} Pick and Send the Winning A/B Test Variation {% endanchor %}
@@ -131,9 +137,11 @@ When a variation wins, based on your criteria and duration, you will be notified
   ![]({{root_url}}/images/ab_testing_2.png "Manually choose a test winner")
 
 <call-out>
+
 **A/B Testing Tip - Manually Picking the Winning Variation**
 
 If you chose to Manually determine the A/B test winning criteria, you need to remember to manually choose the winning email variation. The remainder of your contacts will not be sent the email campaign until you choose a winning variation.
+
 </call-out>
 
 

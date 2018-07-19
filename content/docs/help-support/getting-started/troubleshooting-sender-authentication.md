@@ -215,7 +215,9 @@ Domain authentication application logic
 Run through the application logic to understand why your sent emails may not be using `SendGrid.net` instead of the domain you authenticated.
 
 <call-out>
+
 If SendGrid cannot match your email to a valid authenticated domain, `SendGrid.net` is used.
+
 </call-out>
 
 For any account, SendGrid attaches authenticated domain information in the following order, starting at the top of the list and applying the domain when the criteria are matched:

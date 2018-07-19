@@ -37,7 +37,9 @@ Suspended
 SendGrid accepts and queues mail while the account is under review. The account holds mail until issues are resolved or up to 72 hours from the time of send. Any message queued for over 72 hours from sending expires and is not delivered. Delivered mail sent before the suspension is still functional, including open and click tracking, as well as link redirects.
 
 <call-out>
+
 An account in a suspended state continues to incur auto-renewal billing for your monthly subscription and any Marketing Campaigns contact storage.
+
 </call-out>
 
 {% anchor h3 %}
@@ -47,7 +49,9 @@ Deactivated
 A deactivated SendGrid account cannot accept mail. Upon deactivation, SendGrid deletes any undelivered mail queued on the system. Click and Open tracking links are disabled in the deactivated account.  Deactivated sub-users are not accessible via the ‘log in as’ method available to parent accounts. However, deactivated sub-users can still log in directly.
 
 <call-out>
+
 An account in a deactivated state continues to incur auto-renewal billing for your monthly subscription and any contacts storage.
+
 </call-out>
 
 {% anchor h3 %}
@@ -57,7 +61,9 @@ Banned
 Banned accounts cannot access our system either through SendGrid.com or the API. Our system does not accept email requests from banned accounts. Dedicated IPs assigned to the account are removed.  Related sub-users are unable to send email or access their account.
 
 <call-out>
+
 An account in a banned state will stop any auto-renewal billing, though you will still be charged for any overages or Marketing Campaigns contact storage during the current month.
+
 </call-out>
 
 {% anchor h3 %}

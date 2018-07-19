@@ -18,6 +18,7 @@ We have a [sink email address]({{root_url}}/Classroom/Troubleshooting/Delivery_I
 If you are looking to test your API sending integration, you can enable the sandbox_mode in the [mail_settings parameters of our Mail Send API](https://sendgrid.com/docs/help-support/getting-started/sandbox-mode.html). **Sandbox Mode allows you to validate each included parameter and the structure of your JSON payload - all without sending a message.**
 
 <call-out>
+
 Free Trial users will be limited to 100 emails per day until they have verified their account. After account verification, they may send up to a total of 40,000 emails for the remainder of the 30 day period.
 
 The 30 day period begins immediately after account _creation_, **not** account _verification_. Once the 30 day period has ended, Free Trial users will be limited to sending 100 emails per day at no additional cost.
@@ -25,4 +26,5 @@ The 30 day period begins immediately after account _creation_, **not** account _
 Messages sent to the sink address count against your monthly email limits.
 
 Mail Send API calls using sandbox_mode *do not* count against your monthly or trial account limits.
+
 </call-out>

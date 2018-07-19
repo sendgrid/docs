@@ -74,7 +74,9 @@ Adding a Segment
 A segment will allow you to track a specific campaign or filter on a particular field like a customer ID. To create a segment, select “Add Segment” from the top left corner. The following pop-out menu will allow you to define your segment name, the date you’d like to look at, and, most importantly, select a property by which you’d like to measure the effectiveness of a campaign.
 
 <call-out>
+
 This is explaining a different process from creating an [customer email segment]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html#-Creating-a-Segment) in SendGrid
+
 </call-out>
 
 ![SendGrid- Email Analytics App Create a Segment]({{root_url}}/images/keen/sendgrid_create_a_segment.png)
@@ -110,7 +112,9 @@ You can track your campaign’s performance over time by selecting the timeframe
 The app’s dashboard defaults to 72 Hours.
 
 <call-out>
+
 Uniform timeframes that compare each campaign to the same period of performance gives you consistent data points that you can measure against.
+
 </call-out>
 
 Your data is stored in Keen and does not expire for as long as your account is active. The SendGrid Email Analytics integration results in a data warehouse or archive of all of your SendGrid email data. This means your user transaction and email behavior data is stored for as long as you need it.
@@ -186,7 +190,9 @@ Once you’ve found the query you need, you can either copy the URL right from y
 Saved queries are the most efficient way to revisit your favorite metrics. Rather than entering the same query parameters over and over again, queries can shared with your teammates.
 
 <call-out>
+
 Your saved query can be edited and cloned.
+
 </call-out>
 
 **Step 2: Add your graph to a dashboard.**

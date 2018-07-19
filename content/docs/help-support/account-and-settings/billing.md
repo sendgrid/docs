@@ -50,7 +50,9 @@ Subusers
 Each subuser may store up to 2,000 contacts for free before we charge the same rate of $10.00 per 10,000 contacts each month. Any additional charges due for storing contacts on a subuser account will appear in the parent account's monthly invoice.
 
 <call-out>
+
 We bill the parent account for each unique contact, regardless of how many lists or segments that contact appears on. However, if there are one or more subusers under a parent account, we bill the parent account for all unique contacts stored on each account, even for the same contacts stored on multiple accounts.
+
 </call-out>
 
 {% anchor h2 %}
@@ -82,7 +84,9 @@ Overages
 Depending on your package, you will be charged a small amount per-email for each email that you send beyond the credit limit of your current package. Any overage charges get added to the invoice of the month _after_ the over-limit sending occurred.
 
 <call-out>
+
 Upgrading your account does NOT absorb overage charges already incurred, so make sure you are using the right package for your usage case.
+
 </call-out>
 
 {% anchor h2 %}
@@ -115,7 +119,9 @@ We are truly sorry to see you go. Please don’t forget that [we have 24/7 suppo
 To cancel, go the bottom of your billing details page, click **Cancel**, and follow the prompts.
 
 <call-out>
+
 Canceled accounts are not deleted. Accounts are changed to our [free]({{site.site_url}}/free?mc=SendGrid%20Documentation) plan.
+
 </call-out>
 
 {% anchor h2 %}

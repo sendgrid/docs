@@ -39,15 +39,21 @@ _To invite a Teammate to your account:_
 <br>If you have already sent a teammate invitation, you will see a list titled **Pending Invites**. This list contains the email address of the invitee and the invitation expiration date.
 
 <call-out type="warning">
+
 Teammate invitations are valid for seven days.
+
 </call-out>
 
 <call-out>
+
 While only administrators can create teammates, it is possible for one administrator to create another teammate with administrator permissions. This new teammate would then be able to create and manage other teammates and have access to the account's billing settings. **Please be very careful about who you assign administrator permissions!**
+
 </call-out>
 
 <call-out>
+
 Only administrator teammates may impersonate subusers.
+
 </call-out>
 
 {% anchor h2 %}
@@ -55,7 +61,9 @@ Managing Teammates
 {% endanchor %}
 
 <call-out>
+
 Only administrator teammates may impersonate subusers.
+
 </call-out>
 
 {% anchor h3 %}
@@ -87,7 +95,9 @@ _To delete a teammate:_
 1. Click the action menu next to the teammate you want to delete and click **Delete**.
 
 <call-out type="warning">
+
 You cannot recover deleted teammates. Once a teammate has been deleted, it can never be restored. SendGrid will not remove any templates, campaigns, contacts, or API keys created by the teammate.
+
 </call-out>
 
 {% anchor h2 %}
@@ -107,13 +117,17 @@ You can find any access requests listed under **Pending Requests** on the **Team
 To grant that teammate access to the feature, click **Approve**.
 
 <call-out type="warning">
+
 **By clicking "Approve" you are giving that teammate full access to the feature!** If you only want to give them limited access to the feature, you must navigate back to their teammate settings to make adjustments to their granular permissions.
+
 </call-out>
 
 If you do not want to grant them access, click **Deny**.
 
 <call-out>
+
 The teammate receives a notification email when they are either granted or denied access. SendGrid delivers these emails, but the "reply to" address is the email address on file for the account owner.
+
 </call-out>
 
 {% anchor h2 %}
@@ -127,9 +141,11 @@ Teammates and API Keys
 API Keys are used to authenticate API calls. Just as a teammate can be given specific permissions, API keys can be assigned specific [permissions]({{root_url}}/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html) to restrict which API calls they can authenticate.
 
 <call-out>
+
 API Keys and Teammates can be used as two different methods of restricting access to the same SendGrid features.
 
 However, a teammate cannot change their own permissions via API key. For example, a teammate with restricted access to features in the SendGrid user interface but full access to API Keys cannot make an API call to modify their permissions in the user interface.
+
 </call-out>
 
 

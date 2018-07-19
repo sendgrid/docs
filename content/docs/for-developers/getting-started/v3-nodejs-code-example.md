@@ -8,7 +8,9 @@ navigation:
 {% github sendgrid/sendgrid-nodejs#usage Node.js %} We recommend using SendGrid Node.js, our client library, <a href="https://github.com/sendgrid/sendgrid-nodejs">available on Github</a>, with full documentation. {% endgithub %}
 
 <call-out>
+
 Do you have an [API Key](https://app.sendgrid.com/settings/api_keys) yet? If not, go get one. You're going to need it to integrate!
+
 </call-out>
 
 {% anchor h2 %}Using SendGrid's Node.js Library{% endanchor %}

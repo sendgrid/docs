@@ -41,7 +41,9 @@ The following official library is maintained by SendGrid to use the [Event Webho
 -   [EventKit](https://github.com/sendgrid/eventkit-rails) *by SendGrid* - An app to consume and store SendGrid Events.
 
 <call-out>
+
 If you find a problem with any of the official libraries please submit issues on their respective GitHub projects and we'll address them ASAP
+
 </call-out>
 
 {% anchor h2 %}
@@ -51,7 +53,9 @@ Community libraries
 Open source library contributions from the awesome SendGrid community.
 
 <call-out>
+
 If you create a library, please let us know, by editing this page [in our github repo](https://github.com/sendgrid/docs/blob/develop/source/{{page.path}}).
+
 </call-out>
 
 {% anchor h2 %}

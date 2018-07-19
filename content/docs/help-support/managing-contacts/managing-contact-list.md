@@ -28,7 +28,9 @@ Viewing a contact
 To view a specific contact profile, find the contact in one of your lists or segments by searching your contact database. Then click the contact’s email address. You will then be able to view the email, engagement data, profile information, custom fields, and list associations for this contact.
 
 <call-out>
+
 Searches are case agnostic but must be done using a whole email address that includes an "@" and any top-level domain like ".com" or ".io".
+
 </call-out>
 
 To view any custom fields you have assigned to this contact, or to view any lists that you have added this contact to, you may flip through the tabs beneath the Contact Details. You may either view all custom fields at once, or you can filter them by the following types: “Text”, “Date”, and “Number”.
@@ -98,7 +100,9 @@ Delete a specific contact
 1. Click **delete** to remove the contact permanently.
 
 <call-out type="warning">
+
 Use this to permanently delete your recipients from all of your contact lists and all segments if required by applicable law.
+
 </call-out>
 
 {% anchor h3 %}

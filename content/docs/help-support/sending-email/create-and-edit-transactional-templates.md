@@ -21,11 +21,15 @@ navigation:
 Creating email templates involves a mix of content writing, HTML, and CSS expertise. Email templates should look good on different email clients and be responsive for mobile devices. Many non-technical customers will hire a front-end or email template developer to build their templates. We also suggest testing your templates with rendering applications like [Litmus](http://litmus.com) before sending them to your customers.
 
 <call-out>
+
 The maximum number of transactional templates and versions per user ID is limited to 300. This means you can have 300 templates with 1 version each, or fewer templates with more versions of each template.
+
 </call-out>
 
 <call-out>
+
 Transactional templates are account and subuser specific. Templates created on a parent account will not be accessible from the subuser accounts.
+
 </call-out>
 
 {% anchor h2 %}
@@ -45,7 +49,9 @@ Editing your HTML template
 {% endanchor h2 %}
 
 <call-out>
+
 Email templates are table-based HTML with inline or header styles, because some well known email applications will only read table-based HTML.
+
 </call-out>
 
 *To add a template:*
@@ -79,7 +85,9 @@ Managing templates
 From the main template view on each template group, you will see an actions menu. From this menu, you can choose to edit the name of your template, add a version, preview and test, or delete the template. You will also see a gear icon for each template version. Clicking this presents a menu that allows you to preview and test, edit, duplicate, and delete the template version. You can also use the preview function to send a test.
 
 <call-out>
+
 To delete a template, you must first delete all the versions of your template.
+
 </call-out>
 
 {% anchor h3 %}
@@ -92,7 +100,9 @@ Activate your template
 1. Select **Make Active**.
 
 <call-out>
+
 A template can only have one active version at a time. If you’ve created a new version with different HTML that you want your customers to start receiving, you’ll need to make that version “Active.”
+
 </call-out>
 
 {% anchor h3 %}

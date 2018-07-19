@@ -49,11 +49,13 @@ The [**Design Editor**](#-The-Design-Editor), complete with HTML access to each 
 
 <call-out type="warning">
 
+
 The [Design Editor](#-The-Design-Editor) features a number of convenient ways to edit the HTML content of your email –– including the ability to [edit the HTML of each drag-and-drop module](#-Editing-Module-HTML), [edit the HTML `head` of your message](#-Editing-the-HTML-Head), and even import complete code using our [Drag & Drop Markup](#-Importing-Custom-HTML-With-Drag--Drop-Markup).
+
 
 </call-out>
 
-{% anchor h2 %}
+##
 The Code Editor
 {% endanchor %}
 
@@ -65,7 +67,7 @@ SendGrid’s marketer-friendly code editor features a powerful, split screen edi
 * [Using Substitution Tags](#-Using-Substitution-Tags)
 * [Adding Categories](#-Adding-Categories)
 
-{% anchor h3 %}
+<anchor>
 Code Editor Features
 {% endanchor %}
 
@@ -95,13 +97,17 @@ Getting Started With The Code Editor
 4. Select **Code Editor**, and then click **Continue**.
 
 <call-out>
+
 You can only edit unsent campaigns.
+
 </call-out>
 
 You can select a Blank Template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates]({{root_url}}/help-support/sending-email/create-and-edit-transactional-templates.html).
 
 <call-out>
+
 When you open one of your existing campaigns or templates in the new editor, SendGrid creates a duplicate of the original campaign or template. You may always open the original campaign or template in the previous editor.
+
 </call-out>
 
 If you have already built the HTML that you want to use in another application, copy and paste that code directly into the content area of the code editor. You can also write the HTML for your campaign or template directly in the code editor.
@@ -109,7 +115,9 @@ If you have already built the HTML that you want to use in another application, 
 The split-screen view of the Code Editor allows you to see a real-time preview of your campaign. You can toggle between a preview of how your campaign or template appears on a recipient’s desktop and mobile phone by clicking either the desktop or mobile phone icons above the content area. You can also view a plain-text version of your campaign or template by clicking the **T** icon. When in this preview mode, you can edit the plain text content of your campaign or template by clicking the **Edit Plain Text** button.
 
 <call-out type="warning">
+
 Once you create a new campaign or template in the Code Editor, it cannot be edited using the Design Editor.
+
 </call-out>
 
 {% anchor h3 %}
@@ -204,9 +212,13 @@ Substitution tags allow you to easily generate dynamic content for each recipien
 &ast; For your convenience, these substitution tags are included by default in the Unsubscribe Module found on the Build tab of the Design Editor.
 
 <call-out>
+
+
 For contacts with no entry in a custom field, the substitution tag appears blank. To set a default value, use the following pattern:
 
-<!-- `[%first_name | Valued Customer%]` -->
+`[%first_name | Valued Customer%]`
+
+
 </call-out>
 
 {% anchor h3 %}
@@ -221,7 +233,9 @@ Assigning categories to a campaign allows you to track emails based on your own 
 1. Select the *Add Categories* field. Type in the tag that you'd like to add, and press enter.
 
 <call-out>
+
 Currently, only 10 categories can be added to each campaign.
+
 </call-out>
 
 {% anchor h2 %}
@@ -388,7 +402,9 @@ Editing Module HTML
 1. When you are finished editing the HTML, click **Update**.
 
 <call-out>
+
 If you make any structural code changes, you need to convert the module to a code module.
+
 </call-out>
 
 {% anchor h3 %}
@@ -398,7 +414,9 @@ Code Modules
 The code module is a unique drag & drop module that allows you to insert any custom HTML in your campaign as a single module which can be relocated and edited.
 
 <call-out type="warning">
+
 The Design Editor does not modify or validate any HTML inserted via a code module. Please be careful when using custom HTML, and always preview your campaign before sending it.
+
 </call-out>
 
 {% anchor h3 %}
@@ -534,7 +552,9 @@ Adding Custom Fonts Using the HTML Head
 Most commonly, users add custom fonts by using the <link> tag to reference a web font hosted somewhere on the internet. For example, [Google Fonts](https://fonts.google.com).
 
 <call-out type="warning">
+
 Make sure that you define a web-safe font to use as a fallback if one of your recipient’s clients does not support your custom font.
+
 </call-out>
 
 While some inbox providers do not support web fonts, the following popular clients do provide web font support:
@@ -589,7 +609,9 @@ If you are writing your own custom HTML that you plan on importing into the desi
 5. Paste or enter the HTML you want to use, and then click **Import**.
 
 <call-out type="warning">
+
 Any HTML that you import replaces all existing content in your campaign or template. If you want to import only a section of HTML, use a [code module](#-Code-Modules).
+
 </call-out>
 
 {% anchor h3 %}
@@ -603,27 +625,17 @@ SendGrid parses your custom HTML, looking for any [drag & drop compatible module
 
 The `role="modules-container"` attribute is required so that we know where your drag and drop modules are located. All of the SendGrid pre-built templates include the `role="modules-container"` by default. You are only required to include this attribute when creating a campaign or template from scratch that you want to be compatible with the design editor.
 
-<!-- <call-out type="warning">
+<call-out type="warning">
+
+
 Any HTML outside an element with the "modules-container" attribute is discarded. Only [supported styling options and attributes](#-Drag-&-Drop-Module-Descriptions-and-Styles) are included.
 
 If you don't include the "modules-container" attribute in any of your custom HTML, then all of your HTML is imported as a single text module.
-</call-out> -->
+
+
+</call-out>
 
 Following is an example of how you should structure and organize your custom HTML, where [module content] represents the content of your modules.
-
-```html
-<div role=”modules-container”>
-  <table role=”module” data-type=”button”>
-    [ module content ]
-  </table>
-  <table role=”module” data-type=”text”>
-    [ module content ]
-  </table>
-  <table role=”module” data-type=”image”>
-    [ module content ]
-  </table>
-</div>
-```
 
 {% anchor h3 %}
 Drag & Drop Code Examples

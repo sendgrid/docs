@@ -39,7 +39,9 @@ For sample templates that that include examples of receipts, password resets, ac
 The cURL calls on this page use the [receipt example template](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates/receipt).
 
 <call-out>
+
 For the full API documentation, see [Mail Send with Dynamic Transactional Templates](https://dynamic-templates.api-docs.io/3.0).
+
 </call-out>
 
 {% anchor h2 %}

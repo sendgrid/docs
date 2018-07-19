@@ -11,7 +11,9 @@ We recommend using SendGrid Python, our client library, <a href="https://github.
 {% endgithub %}
 
 <call-out>
+
 The library does not officially support the V2 API, but you can use V2 with an older version of the library. For more information, see [Continue Using V2 in Python](https://github.com/sendgrid/sendgrid-python/blob/master/TROUBLESHOOTING.md#v2).
+
 </call-out>
 
 {% anchor h2 %} Using SendGrid's Python Library {% endanchor %}

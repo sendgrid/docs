@@ -11,7 +11,9 @@ seo:
 ---
 
 <call-out type="warning">
+
 Versions of Exim prior to the current major release are considered obsolete. If you are using Exim 3.x or earlier it is suggested by the Exim development team that you upgrade to the current release.
+
 </call-out>
 
 The following configuration file, which can be found at **/etc/exim4/update-exim4.conf.conf**, was pulled from Ubuntu Server 10.4 and is for example purposes only:
@@ -36,7 +38,9 @@ Enable TLS support in **/etc/exim4/exim4.conf.localmacros**.
 
 
 <call-out>
+
 If this file does not exist, you will need to create it:
+
 </call-out>
 
 ```bash
@@ -73,7 +77,9 @@ sendgrid_login:
 
 
 <call-out>
+
 Only include "begin authenticators" if it's not already in the configuration.
+
 </call-out>
 
 Add a route in the **Router Configuration** Box:

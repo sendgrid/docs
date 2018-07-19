@@ -24,7 +24,9 @@ If you would like to have notifications sent to an email other than your parent 
 1. Click **Save**.
 
 <call-out>
+
 Email notifications about CSV upload summaries, sender verifications, A/B test winner notifications, and list/segment exports can be sent to up to 10 different email addresses.
+
 </call-out>
 
 {% anchor h3 %}

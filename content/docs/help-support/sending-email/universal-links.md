@@ -31,15 +31,19 @@ Mobile devices are increasingly becoming the preferred method of receiving, read
 This is accomplished by using **universal links**. A universal link is a unique URL that can be configured to open a window in either the recipient's web browser, mobile browser, or mobile application depending on the device the recipient is using. SendGrid enables you to simply tag individual links that you would like to be converted to universal links, without sacrificing the ability to track clicks on those links.
 
 <call-out>
+
 These links are sometimes referred to as "deep links" in the context of Google's Android OS. Apple uses the term "universal links".
 
 Regardless of the OS you are configuring your links for, we will use the term "universal links".
+
 </call-out>
 
 When setting up universal links for your app, it is important to ensure that you maintain the ability to track when users click those links. After configuring your universal links, we will explain [how to ensure that your universal links are tracked](#-Resolving-SendGrid-Click-Tracking-Links).
 
 <call-out type="warning">
+
 **Marketing Campaigns does not support universal links by default!** If you would like to include universal links in your campaign, you must ensure that you edit the HTML of your template to appropriately [flag your links as universal](#-Flagging-Your-Universal-Links).
+
 </call-out>
 
 {% anchor h2 %}
@@ -65,7 +69,9 @@ To keep your app secure, Google and Apple want to restrict which resources or we
 Your "apple-app-site-association" and "digital asset links" files serve as secure means of authenticating your universal links; they verify that your website is allowed to open up a page within your app.
 
 <call-out>
+
 You must create your own digital asset links and apple-app-site-association files, and you must upload these files to a secure server.
+
 </call-out>
 
 Both "apple-app-site-association" and "digital asset links" files are comprised of a series of JSON key/value pairs that associate external URLs with pages within your application.
@@ -96,7 +102,9 @@ Example apple-app-site-association file:
 ```
 
 <call-out type="warning">
+
 **Do not** append the .json file extension to your apple-app-site-association file!
+
 </call-out>
 
 {% anchor h3 %}
@@ -121,9 +129,11 @@ Example assetlinks.json file:
 ```
 
 <call-out>
+
 When configuring your universal links in iOS, you specify which paths you want to be handled by the app by using the `paths` argument in the `apple-app-site-association` file. By specifing only the path `["/uni/*"]`, and using the `universal=true` attribute on your links as documented below, only appropriate links will be handled by the app, and others will be opened in the phone's browser.
 
 Android requires that you specify these paths inside your app, rather than the assetlinks.json file. This is accomplished by adding intent filters for specific hosts and paths. Please visit [Google's Developer Documentation](https://developer.android.com/training/app-indexing/deep-linking.html) to learn how to add an intent filter to your app manifest that can handle your universal links.
+
 </call-out>
 
 
@@ -293,7 +303,9 @@ Flagging Your Universal Links
 {% endanchor %}
 
 <call-out>
+
 It is important to make sure that only the links within your email that point to your app are flagged as universal links.
+
 </call-out>
 
 It is not unusual to include links to pages outside of your app alongside links to your app in the same email. Not all of these links should be treated as universal links. For example, if you have Facebook or Twitter links tagged as universal links, users will be taken to your app when they click those links instead of being taken to your Facebook and Twitter pages.

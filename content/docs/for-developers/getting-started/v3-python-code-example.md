@@ -11,7 +11,9 @@ We recommend using SendGrid Python, our client library, <a href="https://github.
 {% endgithub %}
 
 <call-out>
+
 Do you have an [API Key](https://app.sendgrid.com/settings/api_keys) yet? If not, go get one. You're going to need it to integrate!
+
 </call-out>
 
 {% anchor h2 %}Using SendGrid's Python Library{% endanchor %}

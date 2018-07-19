@@ -11,5 +11,7 @@ navigation:
 ---
 
 <call-out>
+
 Triggered email is another term for email automation, or [automated email]({{root_url}}/glossary/automated-email.html).
+
 </call-out>

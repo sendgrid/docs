@@ -13,7 +13,9 @@ navigation:
 If you have scheduled an email or a campaign to be sent, but decided to cancel or reschedule the email then you have several options.
 
 <call-out type="warning">
+
 If you are looking for information on how to stop a send that is currently in progress, [click here]({{root_url}}/Classroom/Send/When_Emails_Are_Sent/can_i_stop_a_send_in_progress.html)!
+
 </call-out>
 
 {% anchor h2 %}
@@ -27,7 +29,9 @@ Cancel Scheduled Sends
 There is a [group of endpoints]({{root_url}}/API_Reference/Web_API_v3/cancel_schedule_send.html) in the SendGrid API v3 that makes it possible to batch transactional email together and to schedule a time for that batch to be delivered. You can also pause or cancel the delivery of one of these batches.
 
 <call-out>
+
 You can have no more than 10 different batches (10 different groups of emails with each group identified by a unique `batch_id`) in a 'paused' or 'pending cancellation' state at one time.
+
 </call-out>
 
 To create a batch ID, assign that ID to an email or group of emails, and cancel the send, refer to the following steps:
@@ -86,7 +90,9 @@ The batch ID generated in step 1 can now be used when scheduling an email via th
 {% endapiv3example %}
 
 <call-out>
+
 If you have the flexibility, it's better to schedule mail for off-peak times. Most emails are scheduled and sent at the top of the hour or half hour. Scheduling email to avoid those times (for example, scheduling at 10:53) can result in lower deferral rates because it won't be going through our servers at the same times as everyone else's mail.
+
 </call-out>
 
 {% anchor h4 %}
@@ -96,7 +102,9 @@ If you have the flexibility, it's better to schedule mail for off-peak times. Mo
 Now that your email has been scheduled and has a batch ID assigned, you can [pause or cancel the send]({{root_url}}/API_Reference/Web_API_v3/cancel_schedule_send.html#-Cancel-Scheduled-Sends) at any time up to 10 minutes before the scheduled send time.
 
 <call-out type="warning">
+
 Scheduled sends cancelled less than 10 minutes before the scheduled time are not guaranteed to be cancelled.
+
 </call-out>
 
 To only pause your scheduled send, simply set the `status` parameter in your request to "pause". To completely cancel your request, set `status` to "cancel".

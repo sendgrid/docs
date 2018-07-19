@@ -11,7 +11,9 @@ navigation:
 ---
 
 <call-out>
+
 If you have a **Pro plan or higher**, you may create up to 15 Subusers through your account. If you reach the maximum of 15 and require more Subusers, please use the form in the [Subuser Management]({{site.app_url}}/settings/Subusers) page to request more.
+
 </call-out>
 
 Subusers help you segment your email sending and API activity. You assign permissions and credit limits when you create the Subusers. We recommend creating Subusers for each of the different types of emails you send - so one Subuser for transactional emails, and another for marketing emails. Breaking your sending up this way allows you to get separate statistics for each type of email you send.
@@ -91,7 +93,9 @@ Allocating or removing credits from a Subuser
 {% endanchor %}
 
 <call-out type="warning">
+
 You can only allocate credits by selecting the nonrecurring credit option.
+
 </call-out>
 
 If your Subuser account has nonrecurring credits, you can allocate credits to, or remove credits from this Subuser account. On the Subuser's profile, click **Change Credit Rules** and then choose the appropriate credit amount for the Subuser.
@@ -102,7 +106,9 @@ Monitoring Subuser email content
 
 This feature allows you to receive a sample of a Subuser's email content to help ensure that the content is not damaging your reputation.
 <call-out type="warning">
+
 Each monitor email costs one email credit.
+
 </call-out>
 
 The “Collect Sample Rate” is the frequency is the number of emails SendGrid will allow through before copying the email address you set on the next email sent. For example, if you set the collect sample rate at 100 then you will receive a copy of every 100th email this Subuser sends.
@@ -161,7 +167,9 @@ Deleting a Subuser account
 {% endanchor %}
 
 <call-out type="warning">
+
 Deleting a Subuser account cannot be undone. Please make sure that you are ready to delete this account before you delete it. All access for this Subuser will immediately be revoked upon deletion.
+
 </call-out>
 
 *To delete a Subuser account:*

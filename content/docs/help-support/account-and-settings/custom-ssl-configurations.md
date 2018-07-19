@@ -22,7 +22,9 @@ Before Adding a Custom SSL configuration, you need to set up a valid [link brand
 1. Point the CNAME record to your proxy. For example, `CNAME mailing.example.com proxy.example.com`.
 
 <call-out type="warning">
+
 Don't validate the DNS record more than once, because after changing the CNAME, a second validation fails and the authentication stops working.
+
 </call-out>
 
 [Contact SendGrid Support](https://support.sendgrid.com/hc/en-us) to enable SSL click and open tracking.

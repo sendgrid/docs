@@ -11,13 +11,17 @@ navigation:
 ---
 
 <call-out>
+
 Parent accounts will see aggregated stats for their account and all subuser accounts. Subuser accounts will only see their own stats.
+
 </call-out>
 
 The browser statistics report you which browsers, such as Safari, Firefox and Chrome, that your recipients use to view your email.
 
 <call-out>
+
 There are similarities between Device and Browser statistics and we are working on ways to consolidate the data. The current reasoning for two separate reports is that in some cases an open from a device can result with a click from a browser that represents the device (e.g. Open on an Iphone -> Click on an Iphone), in other cases an open from one device can result in a click from a different browser (e.g. an Open on a desktop computer -> Click on FireFox).
+
 </call-out>
 
 Choose a browser from the list to see statistics about how your recipients interact with your email based on the application they use to look at the internet.

@@ -74,9 +74,13 @@ Under "Additional Options" you will find the following options:
 
 After purchasing your IP, we strongly encourage you to set up reverse DNS. For more information about setting up reverse DNS, see [How to set up reverse DNS]({{root_url}}/help-support/getting-started/how-to-set-up-reverse-dns.html).
 
-<call-out> Purchasing and adding dedicated IPs can only be performed by the Parent account, or Teammates with either Billing or Admin permissions. </call-out>
+<call-out>
+ Purchasing and adding dedicated IPs can only be performed by the Parent account, or Teammates with either Billing or Admin permissions.
+</call-out>
 
-<call-out> Additional IPs cost an extra $30 per additional IP per month. You may only add up to 3 new IP addresses to your account per month. </call-out>
+<call-out>
+ Additional IPs cost an extra $30 per additional IP per month. You may only add up to 3 new IP addresses to your account per month.
+</call-out>
 
 
 {% anchor h2 %}

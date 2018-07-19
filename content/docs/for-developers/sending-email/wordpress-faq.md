@@ -129,9 +129,11 @@ add_filter( 'sendgrid_mail_html', 'change_sendgrid_html_email' );
 ```
 
 <call-out>
+
 **Please note:** what is changed in your emails depends on the content-type that you have set in the settings page or overwritten in a filter.
 
 For "text/plain," only the text part is overwritten by the filter. For "text/html," both the text and the HTML filters are called.
+
 </call-out>
 
 The code snippets above are usually added in the functions.php file of your theme.
@@ -147,7 +149,9 @@ To use the SendGrid plugin on your multisite network, navigate to your WordPress
 The settings for all sites in the network can only be configured by the network admin in the Network Admin dashboard.
 
 <call-out>
+
 **Please note:** Since 1.10.5 the Network Admin can delegate the configuration for each subsite to their respective owners. This will allow any subsite to use it’s own SendGrid Plugin configuration.
+
 </call-out>
 
 {% anchor h2 %}

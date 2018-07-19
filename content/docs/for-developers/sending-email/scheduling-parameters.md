@@ -14,6 +14,7 @@ With scheduling, you can send large volumes of email in queued batches or target
 Using the parameters defined below, you can queue batches of emails targeting individual recipients.
 
 <call-out>
+
 **Emails can be scheduled up to 72 hours in advance.** However, this scheduling constraint does not apply to campaigns sent via [Marketing Campaigns]({{root_url}}/User_Guide/Marketing_Campaigns/index.html).
 {% endinfo%}
 
@@ -25,11 +26,15 @@ This parameter allows SendGrid to begin processing a customer’s email requests
 * Is available for free to all SendGrid customers.
 
 <call-out>
+
 Cancel Scheduled sends by including a batch ID with your send. For more information, check out [Cancel Scheduled Sends]({{root_url}}/API_Reference/Web_API_v3/cancel_schedule_send.html)!
+
 </call-out>
 
 <call-out type="warning">
+
 Using both `send_at` and `send_each_at` is not valid. Setting both causes your request to be dropped.
+
 </call-out>
 
 {% anchor h2 %}

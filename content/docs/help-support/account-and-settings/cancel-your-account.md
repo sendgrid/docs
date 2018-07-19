@@ -21,5 +21,7 @@ We’re sorry to see anyone leave, but things happen and we totally understand.
 1. At the bottom of the page, click **Cancel Account**.
 
 <call-out>
+
 Cancellations take full effect on the first day of the next calendar month, at which point your account will still be usable, but will be at the Free package level.
+
 </call-out>

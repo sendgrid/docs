@@ -9,7 +9,9 @@ navigation:
 {% github sendgrid/sendgrid-ruby#usage PHP %} We recommend using SendGrid Ruby, our client library, <a href="https://github.com/sendgrid/sendgrid-ruby">available on Github</a>, with full documentation. {% endgithub %}
 
 <call-out>
+
 The library does not officially support the V2 API, but you can use V2 with an older version of the library. For more information, see [Continue Using V2 in Ruby](https://github.com/sendgrid/sendgrid-ruby/blob/master/TROUBLESHOOTING.md#v2).
+
 </call-out>
 
 {% anchor h2 %} Using SendGrid's Ruby Library {% endanchor %}

@@ -51,7 +51,9 @@ Open Tracking
 {% endanchor %}
 
 <call-out>
+
 If you are using email link branding, then your open tracking image will be served from your branded domain instead of from SendGrid.net.
+
 </call-out>
 
 Open Tracking adds an invisible, one pixel image at the end of the email which can track email [opens]({{root_url}}/glossary/opens.html). If the email recipient has images enabled on their email client and a request to SendGrid’s server for the invisible image is executed, then an open event is logged. These events are logged in the Statistics UI, Email Activity interface, and are reported by the Event Webhook.

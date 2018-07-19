@@ -63,7 +63,9 @@ Depending on your editor selection, you use different methods to design your cam
 1. To send your campaign, click **Send Campaign**.
 
 <call-out>
+
 Message size limit:  The total message size should not exceed 20MB. This includes the message itself, headers, and the combined size of any attachments.
+
 </call-out>
 
 {% anchor h3 %}
@@ -77,11 +79,15 @@ Scheduling Your Campaign
 1. Click **Schedule Campaign**.
 
 <call-out>
+
 If you have the flexibility, it's better to schedule mail for off-peak times. Most emails are scheduled and sent at the top of the hour or half hour. Scheduling email to avoid those times (for example, scheduling at 10:53) can result in lower deferral rates because it won't be going through our servers at the same times as everyone else's mail.
+
 </call-out>
 
 <call-out type="warning">
+
 Be sure your account is set to the correct time zone in order to ensure that your emails get sent at the time you intend.
+
 </call-out>
 
 *To change your time zone:*

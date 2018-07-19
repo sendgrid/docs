@@ -9,11 +9,15 @@ navigation:
 If your organization is using Microsoft's Exchange 2010 for email services, this document outlines the basics required in order to use SendGrid for SMTP. This requires the configuration of a send connector in the Exchange Management Console.
 
 <call-out type="warning">
+
 This documentation assumes that you already have a working installation of Exchange 2010 that is configured for client access and is able to send messages to the public internet. **If you do not configure this connector correctly it may result in the unintended delivery of messages through your SendGrid account, resulting in the consumption of account emails.**
+
 </call-out>
 
 <call-out>
+
 [For more information regarding Send Connectors, check out this swank TechNet documentation on the subject](http://technet.microsoft.com/en-us/library/aa998662.aspx).
+
 </call-out>
 
 The configuration of a new send connector is straight forward. It is the associated configurations that you may require in order to properly control access to the connector that may be complicated. Let's start with just sending email through SendGrid:

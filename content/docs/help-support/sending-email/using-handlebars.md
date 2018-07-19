@@ -34,7 +34,9 @@ Handlebars overview
 This page uses examples from the [dynamic-template section of our email templates github repo](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates).
 
 <call-out>
+
 For the full API documentation, see [Mail Send with Dynamic Transactional Templates](https://dynamic-templates.api-docs.io/3.0).
+
 </call-out>
 
 {% anchor h2 %}

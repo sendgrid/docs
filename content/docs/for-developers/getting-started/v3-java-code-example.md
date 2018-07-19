@@ -8,7 +8,9 @@ navigation:
 {% github sendgrid/sendgrid-java#usage Java %} We recommend using SendGrid Java, our client library, <a href="https://github.com/sendgrid/sendgrid-java">available on Github</a>, with full documentation. {% endgithub %}
 
 <call-out>
+
 Do you have an [API Key](https://app.sendgrid.com/settings/api_keys) yet? If not, go get one. You're going to need it to integrate!
+
 </call-out>
 
 {% anchor h2 %}Using SendGrid's Java Library{% endanchor %}

@@ -12,7 +12,9 @@ navigation:
 
 
 <call-out>
+
 Sandbox mode is only used to validate your request. The email will never be delivered while this feature is enabled!
+
 </call-out>
 
 Sandbox mode is an optional parameter within `mail_settings`. Enabling sandbox mode allows you to send a test email to ensure that your request body is formatted correctly without delivering the email to any of your recipients.
@@ -24,9 +26,11 @@ Using Sandbox Mode
 {% endanchor %}
 
 <call-out type="warning">
+
 When using sandbox mode, you must include the "enable" parameter and it must be given a boolean value of either true, or false. **Do not enclose the boolean value in quotes**, or you will receive the error:
 
 `The sandbox mode enable param should be a boolean value.`
+
 </call-out>
 
 {% anchor h3 %}

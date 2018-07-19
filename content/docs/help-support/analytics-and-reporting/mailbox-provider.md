@@ -11,7 +11,9 @@ navigation:
 ---
 
 <call-out>
+
 Parent accounts will see aggregated stats for their account and all subuser accounts. Subuser accounts will only see their own stats.
+
 </call-out>
 
 The [mailbox provider statistics](https://app.sendgrid.com/statistics/mailbox_provider) highlights how your mail performs across all the major providers, such as Hotmail, Yahoo, Gmail, and others. The list of available providers is based on your recipient interaction with your emails. As you send mail and your recipient list diversifies, you will start to see more providers in the list.

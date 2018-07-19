@@ -31,7 +31,9 @@ Email opt-in types
 - **Confirmed Opt-in** refers to the practice of sending emails to your recipients asking them to confirm their continued interest in receiving your future emails.
 
 <call-out>
+
 To avoid blocked emails, double check the spelling of the emails on your list. SendGrid recommends having the recipient input their address twice to ensure it is correct during the registration/sign-up process.
+
 </call-out>
 
 {% anchor h2 %}

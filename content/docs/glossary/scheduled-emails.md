@@ -17,5 +17,7 @@ For example if I am a retailer who has a promotion starting at 10:00am you want 
 Whether using [Marketing Campaigns]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html) or [our transactional APIs]({{root_url}}/for-developers/sending-email/scheduling-parameters.html) you can define parameters on when to send a single email or batches of emails.
 
 <call-out>
+
 If you have the flexibility, it's better to schedule mail for off-peak times. Most emails are scheduled and sent at the top of the hour or half hour. Scheduling email to avoid those times (for example, scheduling at 10:53) can result in lower deferral rates because it won't be going through our servers at the same times as everyone else's mail.
+
 </call-out>

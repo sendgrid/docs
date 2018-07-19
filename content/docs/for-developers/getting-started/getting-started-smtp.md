@@ -42,7 +42,9 @@ Before you begin
 - Convert your API key to Base64. It is not secure to put your API key into an external webpage for a conversion, so we recommend using a bash conversion. If you are on Mac or Linux, you can use the pre-installed OpenSSL package. Use this cmd to convert your API key using OpenSSL: `echo -n '<<YOUR_API_KEY>>' | openssl base64`. Save your converted key for a later step.
 
 <call-out type="warning">
+
 Telnet does not register backspaces correctly - so you have to type your commands correctly (or copy and paste it from here).
+
 </call-out>
 
 *To send SMTP email using Telnet:*

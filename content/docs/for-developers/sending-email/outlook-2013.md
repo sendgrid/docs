@@ -20,7 +20,9 @@ The following 'Change E-mail Account’ window will appear. This setting (in the
 Under Login Information, please enter your SendGrid username and password.
 
 <call-out>
+
 Your SendGrid username may not necessarily be an email address. If your SendGrid username is example_user, enter example_user in the User Name field, not your email address.
+
 </call-out>
 
 ![]({{root_url}}/images/outlook_2013_3.png "Change Account")

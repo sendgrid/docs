@@ -34,7 +34,9 @@ Before you can start using the API, you need to do the following:
 1. Make sure you have [curl](https://curl.haxx.se/) installed on your machine.
 
 <call-out>
+
 Curl comes standard on Mac operating systems.
+
 </call-out>
 
 {% anchor h2 %}
@@ -74,7 +76,9 @@ curl --request POST \
 7. Check the inbox of the address you specified as the "to" email and see your message!
 
 <call-out>
+
 If you have not yet set up [Sender Authentication]({{root_url}}/help-support/getting-started/how-to-set-up-domain-authentication.html) in your account, you may need to check your spam folder for the email you just sent.
+
 </call-out>
 
 {% anchor h3 %}

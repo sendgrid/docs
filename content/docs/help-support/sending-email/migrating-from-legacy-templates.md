@@ -14,7 +14,9 @@ seo:
 If you have transactional templates you want to use with handlebars syntax, you need to migrate your legacy templates to the new dynamic templates page.
 
 <call-out>
+
 The original template you copy won't be modified and remains active in any API or SMTP calls. To use the new template, update the template ID parameter in your code.
+
 </call-out>
 
 *To convert a legacy transactional template:*

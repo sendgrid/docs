@@ -58,7 +58,9 @@ The reaction of its other recipients to mail sent by that same IP and domain (i.
 Where the receiving server previously decided to place any mail from the same IP and domain.
 
 <call-out>
+
 The reputation of the domains included in the links within the body content will also factor into delivery.
+
 </call-out>
 
 {% anchor h3 %}

@@ -28,10 +28,12 @@ The total message size of emails sent via the [v2 mail send endpoint]({{root_url
 19.5MB. This includes all headers, the body, and attachments. We recommend that your attachments do not exceed 7MB.
 
 <call-out>
+
 Keep in mind that the size of your file on disk or in memory may
 not be the same as the size of the file once it is attached, as files must
 be encoded as text to be sent. You can expect an increase in size of up
 to 30%.
+
 </call-out>
 
 {% anchor h2 %}

@@ -7,13 +7,17 @@ navigation:
 ---
 
 <call-out type="warning">
+
 Sendmail requires libsasl in order to properly send authentication requests to SendGrid servers. The saslauthd server daemon is not required unless you plan to receive authentication requests to the same server. [For more information on configuring sendmail for SASL support, check the official documentation](http://www.sendmail.com/sm/open_source/tips/compiling_sendmail/#SASL).
+
 </call-out>
 
 Set the authorization credentials in **/etc/mail/access**
 
 <call-out type="warning">
+
 We have had reports that some customers have needed to install `cyrus-sasl-plain` in order to avoid authentication issues as well. We have not validated this requirement, so please make sure your system administrators, Ops, and/or InfoSec people approve this change before you make it!
+
 </call-out>
 
 ```bash

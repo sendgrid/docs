@@ -10,7 +10,9 @@ seo:
   description:
 ---
 <call-out>
+
 Higher volume users may not yet have access to the new Email Activity Feed. For information about the legacy Email Activity Feed, see [Legacy Email Activity]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed.html).
+
 </call-out>
 
 <iframe src="https://player.vimeo.com/video/259928139" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -34,7 +36,9 @@ With the Email Activity feed you can:
 * Call all events by an email from the API with additional storage purchase.
 
 <call-out>
+
 In order to gain access to the Email Activity Feed API, you must purchase [additional email activity history](https://app.sendgrid.com/settings/billing/addons/email_activity).
+
 </call-out>
 
 {% anchor H2 %}
@@ -111,7 +115,9 @@ Basic search
 The email address field filters with an approximate, or fuzzy search. The date field pulls filters events that fit within the precise date range specified.
 
 <call-out>
+
 To filter by event type, like in the legacy Email Activity Feed, use [Advanced search](#-Advanced-search), and select Event Type, and choose an event type to filter by.
+
 </call-out>
 
 {% anchor H3 %}

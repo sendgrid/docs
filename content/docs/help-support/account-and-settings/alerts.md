@@ -36,7 +36,9 @@ Usage limit
 {% endanchor %}
 
 <call-out>
+
 Any accounts or subusers without an email limit alert on May 5th, 2015 or that were created after May 5th, 2015 will find this alert set up with a threshold of 90% on their account automatically.
+
 </call-out>
 
 You will receive an alert when you have used 90% of your current package’s number of emails. Subusers with recurring or nonrecurring email limits will have this alert set up automatically. Subusers who have unlimited emails will not have this alert set up automatically.

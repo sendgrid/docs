@@ -14,7 +14,9 @@ navigation:
 There are 3 easy ways to schedule your emails; use [Marketing Campaigns]({{root_url}}/help-support/getting-started/how-to-send-email.html), use the [SMTP API]({{root_url}}/for-developers/sending-email/scheduling-parameters.html) header, or use the API.
 
 <call-out>
+
 If you have the flexibility, it's better to schedule mail for off-peak times. Most emails are scheduled and sent at the top of the hour or half hour. Scheduling email to avoid those times (for example, scheduling at 10:53) can result in lower deferral rates because it won't be going through our servers at the same times as everyone else's mail.
+
 </call-out>
 
 #1. Marketing Campaigns

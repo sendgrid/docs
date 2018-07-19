@@ -27,7 +27,9 @@ Changing your password
 If you already know your password, you can change your SendGrid password by editing your [Account Details](https://app.sendgrid.com/settings/account) in the UI. If you've forgotten your password, you can reset it on the [Reset password page](https://app.sendgrid.com/forgot_password).
 
 <call-out type="warning">
+
 When you change your account password, your SMTP and API access will change as well. Make sure you update your account information on all systems and software.
+
 </call-out>
 
 {% anchor h3 %}
@@ -65,7 +67,9 @@ Changing your username
 1. Enter a new username and then click **Save**.
 
 <call-out type="warning">
+
 When you change your account username, your SMTP and API access will change as well. Make sure you update your account information on all systems and software.
+
 </call-out>
 
 {% anchor h3 %}

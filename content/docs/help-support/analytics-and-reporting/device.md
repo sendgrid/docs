@@ -11,7 +11,9 @@ navigation:
 ---
 
 <call-out>
+
 Parent accounts will see aggregated stats for their account and all subuser accounts. Subuser accounts will only see their own stats.
+
 </call-out>
 
 The clients report breaks down which devices and clients are most frequently used to open the mail you send. The devices and types that SendGrid tracks are:

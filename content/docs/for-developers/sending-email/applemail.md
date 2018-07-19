@@ -40,7 +40,9 @@ Now the SendGrid SMTP Server can be specified on the **Accounts** tab of the **P
 ![The dropdown menu to select the SMTP server to use for this send.]({{root_url}}/images/NewAppleMail_Step_4.png "SMTP server dropdown")
 
 <call-out>
+
 Unfortunately, there is not an easy way to add SMTP API headers to a message in Mail.
+
 </call-out>
 
 {% anchor h2 %}

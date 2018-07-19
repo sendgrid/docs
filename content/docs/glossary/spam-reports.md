@@ -15,7 +15,9 @@ Spam Reports are triggered when a customer clicks the spam button or puts your e
 It is important that spam reporter email addresses are permanently removed from your send list even if the customer has previously opted in. Continuing to send to customers that have reported your email as spam can severely affect your deliverability rating.
 
 <call-out>
+
 Important Tip: Make it easier for someone to find the unsubscribe button than it is to find the spam button.
+
 </call-out>
 
 

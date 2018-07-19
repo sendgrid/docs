@@ -38,15 +38,21 @@ Getting started
      <br> This loads the JSON array of your selected events that you set in the last step.
 
 <call-out type="warning">
+
 The Webhook tester site has a public URL. This is usually safe for testing purposes, just make sure that you remove the `webhook.site` URL from your Event Notifications settings after you are done testing.
+
 </call-out>
 
 <call-out>
+
 You can also update your Event Webhook mail settings using the [PATCH /user/webhooks/event/settings](https://sendgrid.api-docs.io/v3.0/webhooks/update-event-notification-settings) API method, and you can test the webhook integration using the [POST /user/webhooks/event/test](https://sendgrid.api-docs.io/v3.0/webhooks/test-event-notification-settings) API method.
+
 </call-out>
 
 <call-out>
+
 If you want to test your webhook locally, deploy a local version of [Webhook tester](https://github.com/fredsted/webhook.site), or [RequestBin](https://github.com/Runscope/requestbin#readme). Other browser options are [Beeceptor](https://beeceptor.com), or [ngrok](https://ngrok.com/).
+
 </call-out>
 
 {% anchor h2 %}
@@ -70,7 +76,9 @@ Storage integrations are infinitely flexible, but here are some popular options:
 - Several open source web libraries support SendGrid's Event Webhook. For a full list of these libraries, see the [Webhook libraries section]({{root_url}}/Integrate/libraries.html#-Webhook-Libraries) of our API Libraries list.
 
 <call-out type="warning">
+
 If your email traffic generates a lot of events, the incoming data can quickly overload a web server if not configured correctly. You can load test your endpoints with loader.io for free.
+
 </call-out>
 
 {% anchor h3 %}
