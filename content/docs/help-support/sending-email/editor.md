@@ -603,11 +603,11 @@ SendGrid parses your custom HTML, looking for any [drag & drop compatible module
 
 The `role="modules-container"` attribute is required so that we know where your drag and drop modules are located. All of the SendGrid pre-built templates include the `role="modules-container"` by default. You are only required to include this attribute when creating a campaign or template from scratch that you want to be compatible with the design editor.
 
-<call-out type="warning">
+<!-- <call-out type="warning">
 Any HTML outside an element with the "modules-container" attribute is discarded. Only [supported styling options and attributes](#-Drag-&-Drop-Module-Descriptions-and-Styles) are included.
 
 If you don't include the "modules-container" attribute in any of your custom HTML, then all of your HTML is imported as a single text module.
-</call-out>
+</call-out> -->
 
 Following is an example of how you should structure and organize your custom HTML, where [module content] represents the content of your modules.
 
@@ -629,14 +629,9 @@ Following is an example of how you should structure and organize your custom HTM
 Drag & Drop Code Examples
 {% endanchor h3 %}
 
-<table class="table" style="table-layout:fixed">
-  <tr>
-    <th>Module</th>
-    <th>Custom Module Code Examples</th>
-  </tr>
-  <tr>
-   <td>Image</td>
-    <td>```html
+<code-group langs="Image,Image & Text,text,code,columns,button,divider,spacer,social">
+
+```image
 <table class="wrapper" role="module" data-type="image">
   <tr>
     <td [styles go here] align=['left' or 'right']>
@@ -644,165 +639,144 @@ Drag & Drop Code Examples
     </td>
   </tr>
 ```
-</td>
-  </tr>
-  <tr>
-    <td>Image &amp; Text</td>
-    <td>```html
-<table role="module" data-type="imagetext">
-  <tr>
-    <td>
-      <table>
-        <tr role="module-content">
-          <td class="templateColumnContainer" >
-            <table>
-              <tr>
-                <td class="leftColumnContent" role="column-one">
-                  <table role="module" data-type="image">
-                    <tr>
-                      <td role="module-content">
-                        [MODULE CONTENT]
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-          <td class="templateColumnContainer" >
-            <table>
-              <tr>
-                <td class="rightColumnContent" role="column-two">
-                  <table role="module" data-type="text">
-                    <tr>
-                      <td role="module-content">
-                        [MODULE CONTENT]
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-```</td>
-  </tr>
-  <tr>
-    <td>Text</td>
-    <td>```html
-    <table class="module" role="module" data-type="text">
-  <tr>
-    <td [styles go here] bgcolor=[some color]>
-      [MODULE CONTENT]
-    </td>
-  </tr>
-</table>
-```</td>
-  </tr>
-  <tr>
-    <td>Code</td>
-    <td>```html
-    <table class="module" role="module" data-type="code">
-  <tr>
-    <td>
-      [MODULE CONTENT]
-    </td>
-  </tr>
-</table>
-```</td>
-  </tr>
-  <tr>
-    <td>Columns</td>
-    <td>```html
-    <table role="module" data-type="columns">
-  <tr>
-    <td [styles go here] bgcolor=[some color]>
-      <table>
-        <tr>
-          <td class="templateColumnContainer column-drop-area">
-          [MODULE CONTENT]
-          </td>
-          <td class="templateColumnContainer column-drop-area">
-          [ANOTHER MODULE CONTENT]
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-```</td>
-  </tr>
-  <tr>
-    <td>Button</td>
-    <td>```html
- <table class="module" role="module" data-type="button">
-  <tr>
-    <td [styles go here] bgcolor=[some color] align=['left' or 'right']>
-      <table class="wrapper-mobile">
-        <tr>
-          <td [styles go here too] bgcolor=[some color]>
-            [MODULE CONTENT]
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-```</td>
-  </tr>
-  <tr>
-    <td>Divider</td>
-    <td>```html
-    <table class="module" role="module" data-type="divider">
-  <tr>
-    <td [styles go here] bgcolor=[some color]>
-      <table height=[some height]>
-        <tr>
-          <td bgcolor=[some color]></td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-```</td>
-  </tr>
-  <tr>
-    <td>Spacer</td>
-    <td >```html
-    <table class="module" role="module" data-type="spacer">
-  <tr>
-    <td style="padding: 50px 0 0 0" bgcolor=[some color]>
-    </td>
-  </tr>
-</table>
-```</td>
-  </tr>
-  <tr>
-    <td>Social</td>
-    <td>```html
-    <table class="module" role="module" data-type="social">
- <tbody>
-  <tr>
-   <td [styles go here] data-align=['left', 'right', or 'center']>
-    <table>
-     <tbody>
-      <tr>
-       [MODULE CONTENT]
-      </tr>
-     </tbody>
-    </table>
-   </td>
-  </tr>
- </tbody>
-</table>
 
-```</td>
-  </tr>
-</table>
+```image & text
+  <table role="module" data-type="imagetext">
+    <tr>
+      <td>
+        <table>
+          <tr role="module-content">
+            <td class="templateColumnContainer" >
+              <table>
+                <tr>
+                  <td class="leftColumnContent" role="column-one">
+                    <table role="module" data-type="image">
+                      <tr>
+                        <td role="module-content">
+                          [MODULE CONTENT]
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td class="templateColumnContainer" >
+              <table>
+                <tr>
+                  <td class="rightColumnContent" role="column-two">
+                    <table role="module" data-type="text">
+                      <tr>
+                        <td role="module-content">
+                          [MODULE CONTENT]
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+```
+
+```text
+  <table class="module" role="module" data-type="text">
+    <tr>
+      <td [styles go here] bgcolor=[some color]>
+        [MODULE CONTENT]
+      </td>
+    </tr>
+  </table>
+```
+```code
+  <table class="module" role="module" data-type="code">
+    <tr>
+      <td>
+        [MODULE CONTENT]
+      </td>
+    </tr>
+  </table>
+```
+
+```columns
+  <table role="module" data-type="columns">
+    <tr>
+      <td [styles go here] bgcolor=[some color]>
+        <table>
+          <tr>
+            <td class="templateColumnContainer column-drop-area">
+            [MODULE CONTENT]
+            </td>
+            <td class="templateColumnContainer column-drop-area">
+            [ANOTHER MODULE CONTENT]
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+```
+
+```button
+  <table class="module" role="module" data-type="button">
+    <tr>
+      <td [styles go here] bgcolor=[some color] align=['left' or 'right']>
+        <table class="wrapper-mobile">
+          <tr>
+            <td [styles go here too] bgcolor=[some color]>
+              [MODULE CONTENT]
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+```
+
+```divider
+  <table class="module" role="module" data-type="divider">
+    <tr>
+      <td [styles go here] bgcolor=[some color]>
+        <table height=[some height]>
+          <tr>
+            <td bgcolor=[some color]></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+```
+```spacer
+  <table class="module" role="module" data-type="spacer">
+    <tr>
+      <td style="padding: 50px 0 0 0" bgcolor=[some color]>
+      </td>
+    </tr>
+  </table>
+```
+```social
+  <table class="module" role="module" data-type="social">
+    <tbody>
+      <tr>
+      <td [styles go here] data-align=['left', 'right', or 'center']>
+        <table>
+        <tbody>
+          <tr>
+          [MODULE CONTENT]
+          </tr>
+        </tbody>
+        </table>
+      </td>
+      </tr>
+    </tbody>
+  </table>
+```
+</code-group>
+
 
 {% anchor h3 %}
 Exporting HTML From the Design Editor
