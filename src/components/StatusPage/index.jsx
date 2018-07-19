@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 
 export default class MainLayout extends React.Component {
   constructor(props) {
@@ -10,11 +11,10 @@ export default class MainLayout extends React.Component {
   }
 
   componentWillMount() {
-    fetch('https://3tgl2vf85cht.statuspage.io/api/v2/status.json')
-      .then(response => response.json())
-      .then((status) => {
+    axios.get('https://3tgl2vf85cht.statuspage.io/api/v2/status.json')
+      .then((res) => {
         this.setState({
-          status,
+          status: res.data,
         });
       })
       .catch(error => console.log(error));
