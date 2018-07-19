@@ -1,5 +1,6 @@
 import React from 'react';
 import NavMain from '../components/NavMain';
+import StatusPage from '../components/StatusPage';
 import Footer from '../components/Footer';
 import '../scss/style-guide.scss';
 
@@ -15,6 +16,7 @@ export default class MainLayout extends React.Component {
 
     return (
       <div className={classNames}>
+        <StatusPage />
         <NavMain />
         {children()}
         {renderFooter}
