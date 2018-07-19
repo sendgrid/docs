@@ -10,7 +10,7 @@ export default class MainLayout extends React.Component {
   }
 
   componentWillMount() {
-    fetch('hjttps://3tgl2vf85cht.statuspage.io/api/v2/status.json')
+    fetch('https://3tgl2vf85cht.statuspage.io/api/v2/status.json')
       .then(response => response.json())
       .then((status) => {
         this.setState({
