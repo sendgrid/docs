@@ -52,10 +52,6 @@ $scaledown-5: 0.37rem; //6px
 $scaledown-6: 0.296rem; //5px
 $scaledown-7: 0.197rem; //3px
 
-// gradients
-$gradient-hero: linear-gradient(165deg, rgba(209,230,249,1) 0%, rgba(243,249,253,1) 75%, rgba(255,255,255,1) 100%);
-$gradient-callout: linear-gradient(300deg, rgba(36,132,223,1) 0%, rgba(92,176,255,1) 75%);
-
 // colors - primary
 $sg-blue: #1a82e2;
 $slate: #294661;
@@ -117,6 +113,13 @@ $alert-danger: #f4dddd;
 $alert-danger-text: #b71c1c;
 $alert-verification: $mantis;
 $alert-trial: $slate;
+
+// gradients
+$gradient-hero: linear-gradient(165deg, rgba(209,230,249,1) 0%, rgba(243,249,253,1) 75%, rgba(255,255,255,1) 100%);
+$gradient-home-featured: linear-gradient(to bottom right, #62ffae, $seafoam);
+$gradient-callout: linear-gradient(300deg, rgba(36,132,223,1) 0%, rgba(92,176,255,1) 75%);
+$gradient-dev-glossary: linear-gradient(315deg, rgba(24,201,110,1) 0%, rgba(106,252,177,1) 100%);
+$gradient-dev-callout: linear-gradient(to bottom, darken($slate, 10%), $slate);
 
 // buttons
 $btn-primary-bg: $sg-blue-80;
