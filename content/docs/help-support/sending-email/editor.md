@@ -88,8 +88,8 @@ Getting Started With The Code Editor
 
 1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**.
 2. Click **Create Campaign**.
-<br>To create a campaign using an existing campaign, find the campaign you want to use and click the action menu next to the campaign. 
-3. Then, select **Edit** or **Duplicate**. 
+<br>To create a campaign using an existing campaign, find the campaign you want to use and click the action menu next to the campaign.
+3. Then, select **Edit** or **Duplicate**.
 4. Select **Code Editor**, and then click **Continue**.
 
 {% info %}
@@ -133,6 +133,8 @@ Substitution tags allow you to easily generate dynamic content for each recipien
 3. Locate the tag you want to add to your campaign and click it to automatically copy it to your clipboard.
 4. Paste the tag into the campaign.
 
+
+
 <table class="table" style="table-layout:fixed">
  <tr>
    <th>Substitution Tag</th>
@@ -140,59 +142,59 @@ Substitution tags allow you to easily generate dynamic content for each recipien
    <th>Type</th>
  </tr>
  <tr>
-   <td><code>{% raw %}[%email%]{% endraw %}</code></td>
+   <td><code class="language-text">[%email%]</code></td>
    <td>The email address of the recipient</td>
    <td>Personalization</td>
  </tr>
  <tr>
-   <td><code>{% raw %}[%first_name%]{% endraw %}</code></td>
+   <td><code class="language-text">[%first_name%]</code></td>
    <td>The first name of the recipient</td>
    <td>Personalization</td>
  </tr>
  <tr>
-   <td><code>{% raw %}[%last_name%]{% endraw %}</code></td>
+   <td><code class="language-text">[%last_name%]</code></td>
    <td>The last name of the recipient</td>
    <td>Personalization</td>
  </tr>
  <tr>
-   <td><code>{% raw %}[sender_name]{% endraw %}</code>* </td>
+   <td><code class="language-text">[sender_name]</code>* </td>
    <td>The name of the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>{% raw %}[sender_city]{% endraw %}</code>* </td>
+   <td><code class="language-text">[sender_city]</code>* </td>
    <td>The city on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>{% raw %}[sender_state]{% endraw %}</code>* </td>
+   <td><code class="language-text">[sender_state]</code>* </td>
    <td>The state on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>{% raw %}[sender_zip]{% endraw %}</code>* </td>
+   <td><code class="language-text">[sender_zip]</code>* </td>
    <td>The zip code on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>{% raw %}<%asm_group_unsubscribe_<br>raw_url%>{% endraw %}</code>* </td>
+   <td><code class="language-text"><%asm_group_unsubscribe_<br>raw_url%></code>* </td>
    <td>This tag is replaced with a link allowing your recipients opt out of any emails you send using the chosen Unsubscribe Group.</td>
    <td>Unsubscribe</td>
  </tr>
  <tr>
-   <td><code>{% raw %}<%asm_preferences_<br>raw_url%>{% endraw %}</code>
+   <td><code class="language-text"><%asm_preferences_<br>raw_url%></code>
    * </td>
    <td>This tag is replaced with a link allowing your recipients to opt out of any email unsubscribe groups you offer.</td>
    <td>Unsubscribe</td>
  </tr>
    <tr>
-   <td><code>{% raw %}<%asm_global_unsubscribe<br>_raw_url%>{% endraw %}</code>
+   <td><code class="language-text"><%asm_global_unsubscribe<br>_raw_url%></code>
    * </td>
    <td>This tag is replaced with a link allowing your recipients to opt out of all email communication.</td>
    <td>Unsubscribe</td>
  </tr>
  <tr>
-   <td><code>{% raw %}[Weblink]{% endraw %}</code></td>
+   <td><code class="language-text">[Weblink]</code></td>
    <td>This tag is replaced with a link allowing your recipients to view your campaign content directly within their web browser.</td>
    <td>Weblink</td>
  </tr>
@@ -440,53 +442,53 @@ You'll also see a number of System Fields that you can place in the body of your
    <th>Type</th>
  </tr>
  <tr>
-   <td><code>{% raw %}<% email %>{% endraw %}</code></td>
+   <td><code class="language-text"><% email %></code></td>
    <td>The email address of the recipient</td>
    <td>Personalization</td>
  </tr>
  <tr>
-   <td><code>{% raw %}<% first_name %>{% endraw %}</code></td>
+   <td><code class="language-text"><% first_name %></code></td>
    <td>The first name of the recipient</td>
    <td>Personalization</td>
  </tr>
  <tr>
-   <td><code>{% raw %}<% last_name %>{% endraw %}</code></td>
+   <td><code class="language-text"><% last_name %></code></td>
    <td>The last name of the recipient</td>
    <td>Personalization</td>
  </tr>
  <tr>
-   <td><code>{% raw %}<% sender_name %>{% endraw %}</code>* </td>
+   <td><code class="language-text"><% sender_name %></code>* </td>
    <td>The name of the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>{% raw %}<% sender_city %>{% endraw %}</code>* </td>
+   <td><code class="language-text"><% sender_city %></code>* </td>
    <td>The city on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>{% raw %}<% sender_state %>{% endraw %}</code>* </td>
+   <td><code class="language-text"><% sender_state %></code>* </td>
    <td>The state on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>{% raw %}<% sender_zip %>{% endraw %}</code>* </td>
+   <td><code class="language-text"><% sender_zip %></code>* </td>
    <td>The zip code on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code>{% raw %}<% unsubscribe %>{% endraw %}</code>* </td>
+   <td><code class="language-text"><% unsubscribe %></code>* </td>
    <td>This tag is replaced with a link allowing your recipients opt out of any emails you send using the chosen Unsubscribe Group.</td>
    <td>Unsubscribe</td>
  </tr>
  <tr>
-   <td><code>{% raw %}<% unsubscribe_</br>preferences %>{% endraw %}</code>
+   <td><code class="language-text"><% unsubscribe_</br>preferences %></code>
    * </td>
    <td>This tag is replaced with a link allowing your recipients to opt out of any email unsubscribe groups you offer.</td>
    <td>Unsubscribe</td>
  </tr>
  <tr>
-   <td><code>{% raw %}<% Weblink %>{% endraw %}</code></td>
+   <td><code class="language-text"><% Weblink %></code></td>
    <td>This tag is replaced with a link allowing your recipients to view your campaign content directly within their web browser.</td>
    <td>Weblink</td>
  </tr>
