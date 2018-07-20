@@ -3,20 +3,12 @@ import './search.scss';
 
 class Search extends React.Component {
   componentDidMount() {
-    /* eslint-disable */
-    (function (w, d, t, u, n, s, e) {
-      w.SwiftypeObject = n; w[n] = w[n] || function () {
-        (w[n].q = w[n].q || []).push(arguments);
-      };
-      s = d.createElement(t);
-      e = d.getElementsByTagName(t)[0];
-      s.async = 1;
-      s.src = u;
-      e.parentNode.insertBefore(s, e);
-    }(window, document, 'script', '//s.swiftypecdn.com/install/v2/st.js', '_st'));
-
-    _st('install', 'NC4TVEWaL6p6zBLuL7eo', '2.0.0');
-    /* eslint-enable */
+    window.docsearch({
+      apiKey: '621c583d8098d07c471dbaf6c2178e56',
+      indexName: 'sendgrid_hc',
+      inputSelector: '.search-query',
+      debug: true, // Set debug to true if you want to inspect the dropdown
+    });
   }
 
   render() {
