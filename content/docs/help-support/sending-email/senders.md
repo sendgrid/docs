@@ -42,19 +42,27 @@ The footer of your emails automatically contains your sender information, becaus
 <br></br>
 1. Check the email account associated with your SendGrid account and click the link in the email to verify the Sender email.
 
-{% info %} You may create up to 100 unique senders.{% endinfo %}
+<call-out>
+ You may create up to 100 unique senders.
+</call-out>
 
-{% warning %}
+<call-out type="warning">
+
 You must verify your sender identity before you can edit it or use it to send a campaign.
-{% endwarning %}
-   To resend your verification email, hover over the Action Menu on the Sender Management page and select **Resend Verification**.
-{% info %}
-If you have an [authenticated domain]({{root_url}}/help-support/getting-started/how-to-set-up-domain-authentication.html) and your sender email address matches that domain exactly, your sender identity will automatically verify.
-{% endinfo %}
 
-{% warning %}
+</call-out>
+   To resend your verification email, hover over the Action Menu on the Sender Management page and select **Resend Verification**.
+<call-out>
+
+If you have an [authenticated domain]({{root_url}}/help-support/getting-started/how-to-set-up-domain-authentication.html) and your sender email address matches that domain exactly, your sender identity will automatically verify.
+
+</call-out>
+
+<call-out type="warning">
+
 Once you schedule a campaign, you cannot delete the sender identity associated with that campaign.
-{% endwarning %}
+
+</call-out>
 
 {% anchor h2 %}
 Adding Sender Information to a Campaign
@@ -83,9 +91,9 @@ You can insert your sender identity information into your campaigns using the fo
 1. Click in the text module you added previously and paste the tag into the module.
 
 To show your sender's full address and information in the footer of the email, SendGrid recommends adding the tags as shown:
-{% codeblock %}
+```
 [Sender_Name]
 [Sender_Address]
 [Sender_City], [Sender_State] [Sender_Zip]
-{% endcodeblock %}
+```
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 
+weight:
 title: Email Activity Feed
 navigation:
   show: true
@@ -9,13 +9,15 @@ seo:
   override: true
   description:
 ---
-{% info %}
+<call-out>
+
 Higher volume users may not yet have access to the new Email Activity Feed. For information about the legacy Email Activity Feed, see [Legacy Email Activity]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed.html).
-{% endinfo %}
+
+</call-out>
 
 <iframe src="https://player.vimeo.com/video/259928139" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-The Email Activity feed allows you to view a snapshot of email-related activity associated with your account and any subusers. Enhanced email activity and storage gives you increased visibility into the email delivery flow of each email message to expedite the troubleshooting process.  
+The Email Activity feed allows you to view a snapshot of email-related activity associated with your account and any subusers. Enhanced email activity and storage gives you increased visibility into the email delivery flow of each email message to expedite the troubleshooting process.
 
 
 * [Types of Email activity data](#-Filtering-email-activity)
@@ -33,15 +35,17 @@ With the Email Activity feed you can:
 * Increase storage available for up to 30 days for historical visibility within the UI by purchasing an upgrade.
 * Call all events by an email from the API with additional storage purchase.
 
-{% info %}
-In order to gain access to the Email Activity Feed API, you must purchase [additional email activity history](https://app.sendgrid.com/settings/billing/addons/email_activity). 
-{% endinfo %}
+<call-out>
+
+In order to gain access to the Email Activity Feed API, you must purchase [additional email activity history](https://app.sendgrid.com/settings/billing/addons/email_activity).
+
+</call-out>
 
 {% anchor H2 %}
 Types of email activity data
 {% endanchor %}
 
-The Email Activity feed allows you to view specific information about messages sent from your account. 
+The Email Activity feed allows you to view specific information about messages sent from your account.
 
 <table class="table" style="table-layout:fixed">
   <tr>
@@ -102,7 +106,7 @@ The Email Activity feed allows you to view specific information about messages s
 Filtering email activity
 {% endanchor %}
 
-The Email Activity feed lists each email sent. Click on each email to view the current list of triggered events for that email. Use our basic or advanced search to filter by email subject, recipients, or event types. 
+The Email Activity feed lists each email sent. Click on each email to view the current list of triggered events for that email. Use our basic or advanced search to filter by email subject, recipients, or event types.
 
 {% anchor H3 %}
 Basic search
@@ -110,9 +114,11 @@ Basic search
 
 The email address field filters with an approximate, or fuzzy search. The date field pulls filters events that fit within the precise date range specified.
 
-{% info %}
+<call-out>
+
 To filter by event type, like in the legacy Email Activity Feed, use [Advanced search](#-Advanced-search), and select Event Type, and choose an event type to filter by.
-{% endinfo %}
+
+</call-out>
 
 {% anchor H3 %}
 Advanced Search
@@ -144,28 +150,28 @@ In addition to viewing the email activity associated with your account by recipi
 
 *To use advanced search:*
 
-1. At the top of the Activity Feed page, click **Advanced** search. 
-1. In the field on the far left, select the criteria to filter your event data. 
-1. Once you have filled in all of the fields associated with that filter, click **Search**. 
-   To add additional search criteria, click **Add a Filter**. 
+1. At the top of the Activity Feed page, click **Advanced** search.
+1. In the field on the far left, select the criteria to filter your event data.
+1. Once you have filled in all of the fields associated with that filter, click **Search**.
+   To add additional search criteria, click **Add a Filter**.
 
    ![]({{root_url}}/img/EASE_advanced_search_filter.gif "Email Activity Advanced Search")
 
 *To further narrow your search results:*
 
-* Search emails by **any** of the following - This search will return more results and will pull in all events that meet *one or more* of the criterion specified by the selected filters. 
+* Search emails by **any** of the following - This search will return more results and will pull in all events that meet *one or more* of the criterion specified by the selected filters.
 or
-* Search emails by **all** of the following - This search will return fewer results and will pull in events that meet *every* criteria specified by the selected filters. 
+* Search emails by **all** of the following - This search will return fewer results and will pull in events that meet *every* criteria specified by the selected filters.
 
 {% anchor H2 %}
-Viewing event history 
+Viewing event history
 {% endanchor %}
 
 *To view event history:*
 
-1. Navigate to the event you wish to view and click on the entry. 
-   Once the entry loads, you can click into each of the sections to view more details of each email message. 
-1. When you have finished reviewing the data, click **close**. 
+1. Navigate to the event you wish to view and click on the entry.
+   Once the entry loads, you can click into each of the sections to view more details of each email message.
+1. When you have finished reviewing the data, click **close**.
 
 ![]({{root_url}}/img/EASE_email_information.gif "Email Activity information panel")
 
@@ -175,9 +181,9 @@ Exporting a CSV
 
 *To export a CSV:*
 
-1. In the top right corner of the activity feed, click **Export CSV**. 
-   This triggers an email to the email address associated with your SendGrid account. 
-1. Open the email and then click **Download**. 
+1. In the top right corner of the activity feed, click **Export CSV**.
+   This triggers an email to the email address associated with your SendGrid account.
+1. Open the email and then click **Download**.
 
 {% anchor h2 %}
 Additional Resources

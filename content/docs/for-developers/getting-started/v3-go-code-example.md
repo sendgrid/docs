@@ -6,13 +6,17 @@ navigation:
   show: true
 ---
 
-{% github sendgrid/sendgrid-go#example golang %}
-We recommend using SendGrid Go, our client library, <a href="https://github.com/sendgrid/sendgrid-go">available on Github</a>, with full documentation.
-{% endgithub %}
+<call-out>
 
-{% info %}
+We recommend using SendGrid Go, our client library, <a href="https://github.com/sendgrid/sendgrid-go">available on Github</a>, with full documentation.
+
+</call-out>
+
+<call-out>
+
 Do you have an [API Key](https://app.sendgrid.com/settings/api_keys) yet? If not, go get one. You're going to need it to integrate!
-{% endinfo %}
+
+</call-out>
 
 {% anchor h2 %}Using SendGrid's Go Library{% endanchor %}
 

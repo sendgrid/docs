@@ -15,17 +15,19 @@ Sender Policy Framework (SPF) is an email authentication standard developed by A
 SPF and sender authentication
 {% endanchor %}
 
-If you have an SPF record set for your root domain (i.e. yourdomain.com), you must add {% codeblock %}include:sendgrid.net{% endcodeblock %} before the all mechanism of this record. If you do not have an SPF record for your domain you must create a TXT record with the value:
+If you have an SPF record set for your root domain (i.e. yourdomain.com), you must add ```include:sendgrid.net``` before the all mechanism of this record. If you do not have an SPF record for your domain you must create a TXT record with the value:
 
-{% codeblock %}
+```
 v=spf1 include:sendgrid.net ~all
-{% endcodeblock %}
+```
 
 Do not create more than one SPF1 record for a given domain. If you need more than one SPF record, you will want to merge the additional SPF records into a single SPF record.
 
-{% info %}
+<call-out>
+
 You cannot have more than 10 DNS lookups in your SPF record.
-{% endinfo %}
+
+</call-out>
 
 {% anchor h2 %}
 Already have an SPF record for your domain?
@@ -35,15 +37,15 @@ No problem. You simply need to add the SendGrid include mechanism lookup into yo
 
 For example, if your record looks like this:
 
-{% codeblock %}
+```
 v=spf1 a mx include:_spf.google.com include:spf.protection.outlook.com ~all
-{% endcodeblock %}
+```
 
-You would just need to add our lookup at the end of the string, before the {% codeblock %}~all{% endcodeblock %} mechanism, like so:
+You would just need to add our lookup at the end of the string, before the ```~all``` mechanism, like so:
 
-{% codeblock %}
+```
 v=spf1 a mx include:_spf.google.com include:spf.protection.outlook.com include:sendgrid.net ~all
-{% endcodeblock %}
+```
 
 
 {% anchor h2 %}
@@ -54,13 +56,13 @@ If you would rather not include SendGrid's SPF hostname lookup in your record, o
 
 If you have a Silver or higher level package, you can choose to specify your dedicated IP address as a lookup, meaning that only mail coming from that particular IP address will be considered a permitted sender within SendGrid for that domain. An example of such an include looks like this:
 
-{% codeblock %}
+```
 v=spf1 a mx include:_spf.google.com include:spf.protection.outlook.com ip4:12.34.56.78 ~all
-{% endcodeblock %}
+```
 
 If you wish to add multiple ip4 lookups (if you have an account that sends from multiple dedicated IPs, for example), simply add them into your record separated by spaces. Unlike with include:hostname lookups, a SPF1 record can have any number of ip4 includes.
 
-Please note, the validation step in the setting up domain authentication will not recognize the ip4 mechanism, it will only accept {% codeblock %}include:sendgrid.net{% endcodeblock %}
+Please note, the validation step in the setting up domain authentication will not recognize the ip4 mechanism, it will only accept ```include:sendgrid.net```
 
 For more information on SPF best practices and syntax, check out [www.openspf.org](http://www.openspf.org)
 

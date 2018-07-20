@@ -11,9 +11,11 @@ navigation:
 ---
 
 
-{% info %}
+<call-out>
+
 Sandbox mode is only used to validate your request. The email will never be delivered while this feature is enabled!
-{% endinfo %}
+
+</call-out>
 
 Sandbox mode is an optional parameter within `mail_settings`. Enabling sandbox mode allows you to send a test email to ensure that your request body is formatted correctly without delivering the email to any of your recipients.
 
@@ -23,11 +25,13 @@ When making a request with sandbox mode enabled, we will validate the form, type
 Using Sandbox Mode
 {% endanchor %}
 
-{% warning %}
+<call-out type="warning">
+
 When using sandbox mode, you must include the "enable" parameter and it must be given a boolean value of either true, or false. **Do not enclose the boolean value in quotes**, or you will receive the error:
 
 `The sandbox mode enable param should be a boolean value.`
-{% endwarning %}
+
+</call-out>
 
 {% anchor h3 %}
 Valid Request Body
@@ -49,7 +53,7 @@ Example Sandbox Mode JSON
 *Please note:* The following is an invalid request body intended to demonstrate the validation behavior of sandbox mode for a bad request.
 
 **Request**
-{% codeblock lang:json %}
+```json
 {
 	"personalizations": [{
 		"to": [{
@@ -70,10 +74,10 @@ Example Sandbox Mode JSON
 		}
 	}
 }
-{% endcodeblock %}
+```
 
 **Response**
-{% codeblock %}
+```
 {
   "errors": [
     {
@@ -83,4 +87,4 @@ parameter with a valid email address and may also contain a 'name' parameter. e.
     }
   ]
 }
-{% endcodeblock %}
+```

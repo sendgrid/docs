@@ -27,9 +27,11 @@ The following links, even though they may still resolve, will not be captured or
 `<a href= http://www.sendgrid.com>SendGrid</a>`
 
 
-{% info %}
+<call-out>
+
 _Please note: If you are in the habit of BASE64 encoding your email content we will be unable to detect the encoded `<a>` tags and overwrite them, so clicks will not be tracked in this case._
-{% endinfo %}
+
+</call-out>
 
 Click tracking can be turned off for individual links by including the `clicktracking=off` attribute inside the anchor of an HTML link *before* the `href`. For example, `<a clicktracking=off href="http://example.com">link text</a>` would not be tracked.
 

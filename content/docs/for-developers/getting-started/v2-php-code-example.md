@@ -9,42 +9,46 @@ seo:
 navigation:
   show: true
 ---
-{% github sendgrid/sendgrid-php#usage PHP %} We recommend using SendGrid PHP, our client library, <a href="https://github.com/sendgrid/sendgrid-php">available on Github</a>, with full documentation. {% endgithub %} 
+<call-out>
 
-{% info %}
+ We recommend using SendGrid PHP, our client library, <a href="https://github.com/sendgrid/sendgrid-php">available on Github</a>, with full documentation. </call-out>
+
+<call-out>
+
 The library does not officially support the V2 API, but you can use V2 with an older version of the library. For more information, see [Continue Using V2 in PHP](https://github.com/sendgrid/sendgrid-php/blob/master/TROUBLESHOOTING.md#v2).
-{% endinfo %}
+
+</call-out>
 
 {% anchor h2 %}Using SendGrid's PHP Library{% endanchor %}
-{% codeblock lang:php %}
+```php
 // using SendGrid's PHP Library
 // https://github.com/sendgrid/sendgrid-php
 require 'vendor/autoload.php';
 $sendgrid = new SendGrid("SENDGRID_APIKEY");
 $email    = new SendGrid\Email();
- 
+
 $email->addTo("test@sendgrid.com")
       ->setFrom("you@youremail.com")
       ->setSubject("Sending with SendGrid is Fun")
       ->setHtml("and easy to do anywhere, even with PHP");
- 
+
 $sendgrid->send($email);
-{% endcodeblock %}
+```
 
 {% anchor h2 %}
-Using PHP with cURL 
+Using PHP with cURL
 {% endanchor %}
-If you choose not to use SendGrid's client library you may use PHP's cURL function to query the web API. 
+If you choose not to use SendGrid's client library you may use PHP's cURL function to query the web API.
 
-{% codeblock lang:php %}
+```php
 <?php
 
 require 'vendor/autoload.php';
 Dotenv::load(__DIR__);
 $sendgrid_apikey = getenv('YOUR_SENDGRID_APIKEY');
 $sendgrid = new SendGrid($sendgrid_apikey);
-$url = 'https://api.sendgrid.com/'; 
-$pass = $sendgrid_apikey; 
+$url = 'https://api.sendgrid.com/';
+$pass = $sendgrid_apikey;
 $template_id = '<your_template_id>';
 $js = array(
   'sub' => array(':name' => array('Elmer')),
@@ -52,16 +56,16 @@ $js = array(
 );
 
 $params = array(
-    'to'        => "test@example.com", 
+    'to'        => "test@example.com",
     'toname'    => "Example User",
     'from'      => "you@youremail.com",
     'fromname'  => "Your Name",
-    'subject'   => "PHP Test", 
+    'subject'   => "PHP Test",
     'text'      => "I'm text!",
     'html'      => "<strong>I'm HTML!</strong>",
     'x-smtpapi' => json_encode($js),
   );
-  
+
 $request =  $url.'api/mail.send.json';
 
 // Generate curl request
@@ -85,28 +89,28 @@ curl_close($session);
 print_r($response);
 
 ?>
-{% endcodeblock %}
+```
 
 ## An Email Sent Using the SMTPAPI Header
 
 This example takes the previous example a step further by adding our SMTPAPI header to set a category and send out to multiple recipients. The category is called test_category, and the email will go out to both example1@sendgrid.com and example2@sendgrid.com. The normal to address, example3@sendgrid.com, will not receive an email.
 
-{% codeblock lang:php %}
+```php
 <?php
 
 $url = 'https://api.sendgrid.com/';
 $user = 'USERNAME';
 $pass = 'PASSWORD';
- 
+
 $json_string = array(
- 
+
   'to' => array(
     'example1@sendgrid.com', 'example2@sendgrid.com'
   ),
   'category' => 'test_category'
 );
- 
- 
+
+
 $params = array(
     'api_user'  => $user,
     'api_key'   => $pass,
@@ -117,10 +121,10 @@ $params = array(
     'text'      => 'testing body',
     'from'      => 'example@sendgrid.com',
   );
- 
- 
+
+
 $request =  $url.'api/mail.send.json';
- 
+
 // Generate curl request
 $session = curl_init($request);
 // Tell curl to use HTTP POST
@@ -132,22 +136,22 @@ curl_setopt($session, CURLOPT_HEADER, false);
 // Tell PHP not to use SSLv3 (instead opting for TLS)
 curl_setopt($session, CURLOPT_SSLVERSION, CURL_SSLVERSION_TLSv1_2);
 curl_setopt($session, CURLOPT_RETURNTRANSFER, true);
- 
+
 // obtain response
 $response = curl_exec($session);
 curl_close($session);
- 
+
 // print everything out
 print_r($response);
 
 ?>
-{% endcodeblock %}
+```
 
 ## An Email Sent Including a File Attachment
 
 This example adds the additional attachment parameter to attach a file called myfile. This example assumes the file is in the same directory as your code otherwise you need to specify the full path of the file in the \$filePath variable.
 
-{% codeblock lang:php %}
+```php
 <?php
 
 $url = 'https://api.sendgrid.com/';
@@ -195,4 +199,4 @@ curl_close($session);
 print_r($response);
 
 ?>
-{% endcodeblock %}
+```

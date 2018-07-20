@@ -16,19 +16,25 @@ What is IP access management?
 
 [IP Access Management]({{root_url}}http://app.sendgrid.com/settings/access) is a security feature that allows you to control who can access your SendGrid account based on their [IP address]({{root_url}}/glossary/ip-address.html). After you whitelist an IP address, you can only access the SendGrid UI, API, and SMTP relay if you are connecting from a whitelisted IP address. Any other access attempts will be blocked. This is a powerful security tool that you can use to help prevent malicious activity on your account.
 
-{% info %}
-There is no limit on how many IP addresses you can whitelist.
-{% endinfo %}
+<call-out>
 
-{% warning %}
+There is no limit on how many IP addresses you can whitelist.
+
+</call-out>
+
+<call-out type="warning">
+
 It is possible to remove your own IP address from your whitelist, thus blocking your own access to your account. While we are able to restore your access, we do require thorough proof of your identify and ownership of your account. We take the security of your account very seriously, and wish to prevent any "bad actors" from maliciously gaining access to your account.
 
 Your current IP is clearly displayed to help prevent you from accidentally removing it from the whitelist.
-{% endwarning %}
 
-{% warning %}
+</call-out>
+
+<call-out type="warning">
+
 If you do not access SendGrid via a static IP address (e.g. via VPN or from a business internet service), setting up IP Access Management may result in being locked out of your SendGrid account. If you do discover that you have locked yourself out of your account, please contact SendGrid Support.
-{% endwarning %}
+
+</call-out>
 
 {% anchor h2 %}
 Whitelisting an IP Address
@@ -60,18 +66,22 @@ You will see a dialogue box presenting you with a blank form in which you may en
 
 ![]({{root_url}}/images/ip_access_management_add_ip.png)
 
-It is possible for advanced users to use CIDR notation to whitelist a range of IP addresses. To do so, simply enter your routing prefix followed by a `/` and then the number of bits in your routing mask. For example: `192.168.100.14/24`. 
+It is possible for advanced users to use CIDR notation to whitelist a range of IP addresses. To do so, simply enter your routing prefix followed by a `/` and then the number of bits in your routing mask. For example: `192.168.100.14/24`.
 
-{% warning %}
+<call-out type="warning">
+
 Explaining CIDR notation is beyond the scope of this article, and we only recommend that advanced users use this notation when whitelisting IPs. If you are unfamiliar with CIDR notation, we recommend that you enter each IP individually when whitelisting a range of IPs.
-{% endwarning %}
+
+</call-out>
 
 To enter a range of IP addresses using a “wildcard”, simply add an asterisk to the end of the IP. For example, `25.203.44.*` would include all IPs that begin with `25.203.44`.
 
 After entering the IP addresses you would like to whitelist, click Save.
 
-{% info %}
+<call-out>
+
 If you remove every IP address from your whitelist, you will again be able to log in to your account from any IP address.
-{% endinfo %}
+
+</call-out>
 
 For additional information about using IP Access Management through our API, see our [API Reference]({{root_url}}/API_Reference/Web_API_v3/ip_access_management.html).

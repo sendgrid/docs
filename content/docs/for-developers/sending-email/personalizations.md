@@ -24,15 +24,19 @@ Think of the personalizations section of the request body like the envelope of a
 * "custom_args" - Any custom arguments you would like to include in your email.
 * "send_at" - A specific time that you would like your email to be sent.
 
-{% info %}
+<call-out>
+
 You must include at least one "to" object within the personalizations array.
-{% endinfo %}
+
+</call-out>
 
 Since the `personalizations` parameter is an array, you may include multiple objects allowing you to specify different handling instructions for different copies of your email. For example, you could send the same email to both &lt;john@example.com&gt; and &lt;janeexampexample@example.com&gt;, but set each email to be delivered at different times.
 
-{% info %}
+<call-out>
+
 You may not include more than 1000 personalizations per API request. If you need to include more than 1000 personalizations, please divide these across multiple API requests.
-{% endinfo %}
+
+</call-out>
 
 There are certain parameters that can be defined both at the "message level" and at the "personalizations" level.
 
@@ -42,9 +46,11 @@ Individual fields within the personalization array will override any other globa
 
 Keys within objects like custom_args will be merged. If any of the keys conflict, the keys in the personalizations object will replace the message level object’s keys.
 
-{% info %}
+<call-out>
+
 All of the recipients in a single personalization object (either in the `to`, `cc`, or `bcc` fields), will see exactly the same email, as defined by the data in that personalization, as such we do not allow duplicate emails between these three arrays in a single personalization.
-{% endinfo %}
+
+</call-out>
 
 Below are some examples of how you can use personalizations for various use cases.
 
@@ -63,7 +69,7 @@ Sending a Single Email to a Single Recipient
 
 The following example shows you what the personalization parameter would look like if you wanted to send a single email to a single recipient.
 
-{% codeblock lang:json %}
+```json
 {
 	"personalizations": [{
 		"to": [{
@@ -76,7 +82,7 @@ The following example shows you what the personalization parameter would look li
 		"subject": "YOUR SUBJECT LINE GOES HERE"
 	}]
 }
-{% endcodeblock %}
+```
 
 {% anchor h2 %}
 Sending a Single Email to a Single Recipient With a CC
@@ -84,7 +90,7 @@ Sending a Single Email to a Single Recipient With a CC
 
 The following example shows how to send one email to recipient1&#064;example&period;com with a carbon copy sent to recipient2&#064;example&period;com. Both emails will have the same headers.
 
-{% codeblock lang:json %}
+```json
 {
 	"personalizations": [{
 		"to": [{
@@ -100,7 +106,7 @@ The following example shows how to send one email to recipient1&#064;example&per
 		"subject": "YOUR SUBJECT LINE GOES HERE"
 	}]
 }
-{% endcodeblock %}
+```
 
 {% anchor h2 %}
 Sending a Single Email to a Single Recipient With a CC and a BCC
@@ -108,7 +114,7 @@ Sending a Single Email to a Single Recipient With a CC and a BCC
 
 The following example shows how to send one email to recipient1&#064;example&period;com with a CC sent to recipient2&#064;example&period;com and a BCC sent to recipient3&#064;example&period;com.
 
-{% codeblock lang:json %}
+```json
 {
 	"personalizations": [{
 		"to": [{
@@ -126,7 +132,7 @@ The following example shows how to send one email to recipient1&#064;example&per
 		}
 	}]
 }
-{% endcodeblock %}
+```
 
 {% anchor h2 %}
 Sending the same Email to Multiple Recipients
@@ -134,7 +140,7 @@ Sending the same Email to Multiple Recipients
 
 The following shows how to send one email to three different recipients: recipient1&#064;example&period;com, recipient2&#064;example&period;com, and recipient3&#064;example&period;com. These recipients will all be able to see each other on the email.
 
-{% codeblock lang:json %}
+```json
 {
 	"personalizations": [{
 		"to": [{
@@ -151,7 +157,7 @@ The following shows how to send one email to three different recipients: recipie
 		"subject": "YOUR SUBJECT LINE GOES HERE"
 	}]
 }
-{% endcodeblock %}
+```
 
 {% anchor h2 %}
 Sending a Single Email to a Single Recipient With Multiple CCs/BCCs
@@ -159,7 +165,7 @@ Sending a Single Email to a Single Recipient With Multiple CCs/BCCs
 
 The following shows what personalizations are required to send the same email to one recipient, with multiple CCs and/or BCCs.
 
-{% codeblock lang:json %}
+```json
 {
 	"personalizations": [{
 		"to": [{
@@ -179,7 +185,7 @@ The following shows what personalizations are required to send the same email to
 		"subject": "YOUR SUBJECT LINE GOES HERE"
 	}]
 }
-{% endcodeblock %}
+```
 
 {% anchor h2 %}
 Sending Two Different Emails to Two Different Groups of Recipients
@@ -187,7 +193,7 @@ Sending Two Different Emails to Two Different Groups of Recipients
 
 The following shows how to send two different emails to two different groups of recipients.
 
-{% codeblock lang:json %}
+```json
 {
 	"personalizations": [{
 		"to": [{
@@ -223,4 +229,4 @@ The following shows how to send two different emails to two different groups of 
 		"subject": "YOUR SUBJECT LINE GOES HERE"
 	}]
 }
-{% endcodeblock %}
+```

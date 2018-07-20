@@ -13,7 +13,14 @@ class SEO extends Component {
     let permalink;
     let description = false;
 
-    if (postType === 'doc') {
+    if (postType === 'category') {
+      const {
+        docType,
+        category,
+      } = postNode.pathContext;
+
+      title = `${docType.replace('-', ' ').cap} | ${category.replace('-', ' ')}`;
+    } else if (postType === 'doc') {
       const { seo } = postNode.frontmatter;
       permalink = sitePath + postNode.fields.permalink;
 
@@ -21,7 +28,7 @@ class SEO extends Component {
         title = seo.title ? seo.title : postNode.title;
         description = seo.description ? seo.description : false;
       } else {
-        ({ title } = postNode);
+        ({ title } = postNode.fields);
       }
     } else {
       permalink = sitePath + postNode.location.pathname;

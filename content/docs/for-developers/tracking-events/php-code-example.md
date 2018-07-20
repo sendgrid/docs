@@ -14,17 +14,17 @@ In this example, we want to parse all emails at *address*@email.sendgrid.biz and
 
 Given this scenario, the following are the parameters you would set at the [Parse API settings page]({{site.site_url}}/developer/reply):
 
-{% codeblock %}
+```
 Hostname: email.sendgrid.biz
-{% endcodeblock %}
+```
 
-{% codeblock %}
+```
 URL: https://sendgrid.com/email.php
-{% endcodeblock %}
+```
 
  To test this scenario, we sent an email to example@example.com and created the following form at https://sendgrid.com/email.php:
 
-{% codeblock lang:php %}
+```php
 <?php
 $to = $_POST["to"];
 $from = $_POST["from"];
@@ -40,7 +40,7 @@ if($num_attachments){
   }
 }
 ?>
-{% endcodeblock %}
+```
 
 
 {% anchor h2 %}
@@ -51,7 +51,7 @@ To use the Event Webhook, you must first [setup Event Notification]({{%20root_ur
 
 In this scenario, we assume you've set the Event Notification URL to go the endpoint `/parse.php` on your server. Given this scenario the following code will allow you to process events:
 
-{% codeblock lang:php %}
+```php
 <?php
 $data = file_get_contents("php://input");
 $events = json_decode($data, true);
@@ -61,5 +61,5 @@ foreach ($events as $event) {
   process_event($event);
 }
 
-{% endcodeblock %}
+```
 

@@ -10,9 +10,11 @@ navigation:
   show: true
 ---
 
-{% warning %}
-If you are looking for the new Email Activity documentation, please go [here]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed.html). 
-{% endwarning %}
+<call-out type="warning">
+
+If you are looking for the new Email Activity documentation, please go [here]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed.html).
+
+</call-out>
 
 <iframe src="https://player.vimeo.com/video/130900679" width="500" height="312" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
@@ -30,9 +32,11 @@ If you are looking for the new Email Activity documentation, please go [here]({{
 
 The Email Activity feed allows you to view a snapshot of email-related activity associated with your account. These logs display all of your email events - filter by event type or search by email address.
 
-{% info %}
+<call-out>
+
 Email activity shows the most recent 500 events. To access data in real time, implement our Event Webhook.
-{% endinfo %}
+
+</call-out>
 
 {% anchor h2 %}
 Filtering the Activity Feed
@@ -66,7 +70,7 @@ You cannot see a parent accounts email activity from a subuser account.
 Email Events
 {% endanchor h2 %}
 
-The Email Activity feed allows you to view specific information about messages sent from your account. 
+The Email Activity feed allows you to view specific information about messages sent from your account.
 
 <table class="table" style="table-layout:fixed">
   <tr>
@@ -177,9 +181,11 @@ You can visit the [Bounces list](https://app.sendgrid.com/suppressions/bounces) 
 
 A bounced message cannot be resent automatically. To resend a message, first [remove the email from the suppression list](#-Removing-an-email-from-a-suppression-list), and then recreate and resend the email.
 
-{% info %}
+<call-out>
+
 A delayed bounce occurs when a recipient server accepts a message (Delivered) and then is promptly declined (Bounced). This is an infrequent occurrence, and SendGrid treats these messages as a bounce, and any future sends to this address are dropped, unless you remove the email from your bounce suppression list.
-{% endinfo %}
+
+</call-out>
 
 {% anchor h3 %}
 Removing an email from a suppression list
@@ -187,9 +193,11 @@ Removing an email from a suppression list
 
 SendGrid automatically drops emails sent to addresses on suppression lists. If you want to retry sending an email to an address that is on a suppressions list, you need to remove it from the list first.
 
-{% warning %}
+<call-out type="warning">
+
 Only remove emails from these lists if you're sure the recipients want to receive the email. Otherwise, continuously sending to recipients who don't want your emails can negatively impact your sender reputation.
-{% endwarning %}
+
+</call-out>
 
 *To remove an email from a suppression list:*
 
@@ -210,13 +218,15 @@ You can receive bounce notifications to a specific address by enabling the "Forw
 1. Leave the "Use the from address" box ticked.
 1. Leave the **email address** entry field blank.
 
-{% info %}
+<call-out>
+
 If you are sending bounce messages to a Gmail account, you need to set up an email filter in your inbox to tell Gmail not to send these messages to your spam folder.
 
 When Gmail doesn’t see a corresponding message in the sent folder connecting the bounce message, it may decide that the bounce message isn’t valid and send it to spam.
 
 One way to do this is in the filter, set up **From** `daemon` and **Has the words** `daemon`, and check the box **Never send it to Spam**.
-{% endinfo %}
+
+</call-out>
 
 These are some common issues people see with reading their email activity feed.
 

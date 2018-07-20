@@ -45,9 +45,9 @@ How can I define a plugin setting to be used for all sites?
 
 To define a plugin setting that you want to use on all of your WordPress sites, simply add it into your wp-config.php file. For example, the following API Key setting would be applicable across each of your WordPress sites:
 
-{% codeblock lang:php %}
+```php
 define('SENDGRID_API_KEY', 'your_api_key');
-{% endcodeblock %}
+```
 
 {% anchor h2 %}
 How do I use SendGrid with the WP Better Emails plugin?
@@ -55,7 +55,7 @@ How do I use SendGrid with the WP Better Emails plugin?
 
 If you have the [WP Better Emails plugin](https://wordpress.org/plugins/wp-better-emails/) installed and you want to use the template defined here instead of the SendGrid template, you can add the following code in your functions.php file from your theme:
 
-{% codeblock lang:php %}
+```php
 function use_wpbe_template( $message, $content_type ) {
     global $wp_better_emails;
     if ( 'text/plain' == $content_type ) {
@@ -68,7 +68,7 @@ function use_wpbe_template( $message, $content_type ) {
 }
 
 add_filter( 'sendgrid_override_template', 'use_wpbe_template', 10, 2 );
-{% endcodeblock %}
+```
 
 Using the default templates from WP Better Emails will cause all emails to be sent as HTML (i.e. content-type of text/html). In order to send emails as plain text (i.e. a content-type of text/plain) you should remove the HTML Template from WP Better Emails settings page. This is can be done by removing the `%content%` tag from the HTML template.
 
@@ -110,29 +110,31 @@ Yes, you can change the content by adding a filter. You need to declare a functi
 
 If you want to change the _text content_ of all emails before they are delivered, add the following to the functions.php file of your WordPress installation.
 
-{% codeblock lang:php %}
+```php
 function change_sendgrid_text_email( $message ) {
     return $message . ' changed by way of text filter ';
 }
 
 add_filter( 'sendgrid_mail_text', 'change_sendgrid_text_email' );
-{% endcodeblock %}
+```
 
 If you want to change the _HTML content_ of all emails before they are delivered, simply add the following to the **functions.php** file of your WordPress installation.
 
-{% codeblock lang:php %}
+```php
 function change_sendgrid_html_email( $message ) {
     return $message . ' changed by way of html filter ';
 }
 
 add_filter( 'sendgrid_mail_html', 'change_sendgrid_html_email' );
-{% endcodeblock %}
+```
 
-{% info %}
+<call-out>
+
 **Please note:** what is changed in your emails depends on the content-type that you have set in the settings page or overwritten in a filter.
 
 For "text/plain," only the text part is overwritten by the filter. For "text/html," both the text and the HTML filters are called.
-{% endinfo %}
+
+</call-out>
 
 The code snippets above are usually added in the functions.php file of your theme.
 
@@ -146,9 +148,11 @@ To use the SendGrid plugin on your multisite network, navigate to your WordPress
 
 The settings for all sites in the network can only be configured by the network admin in the Network Admin dashboard.
 
-{% info %}
+<call-out>
+
 **Please note:** Since 1.10.5 the Network Admin can delegate the configuration for each subsite to their respective owners. This will allow any subsite to use it’s own SendGrid Plugin configuration.
-{% endinfo %}
+
+</call-out>
 
 {% anchor h2 %}
 Can I use shortcodes to customize the subscription confirmation page?
@@ -156,12 +160,12 @@ Can I use shortcodes to customize the subscription confirmation page?
 
 Yes. You need to create custom page and select it from the settings page. You can place any of these shortcodes in the body of that page. Here’s an example :
 
-{% codeblock lang:php %}
+```php
     Hi [sendgridSubscriptionFirstName] [sendgridSubscriptionLastName],
     Your email address : [sendgridSubscriptionEmail] has been successfully added.
 
     You'll hear from us soon!
-{% endcodeblock %}
+```
 
 You need to enable the use of the First Name and Last Name fields from the settings page in order to use the shortcodes for them.
 
@@ -171,9 +175,9 @@ Can I use this plugin with BuddyPress?
 
 Yes. Our plugin required special integration with BuddyPress and it’s regularly tested to ensure it behaves as expected. If you have noticed issues caused by installing this plugin along with BuddyPress, you can add the following line to your `wp-config.php` to disable it :
 
-{% codeblock lang:php %}
+```php
 define('SENDGRID_DISABLE_BUDDYPRESS', '1');
-{% endcodeblock %}
+```
 
 {% anchor h2 %}
 Related Content

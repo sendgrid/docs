@@ -36,13 +36,15 @@ If you would like to use [templates]({{root_url}}/User_Guide/Transactional_Templ
 
 You can have an individual email sent to each recipient by specifying the x-smtpapi-to header. For example:
 
-{% codeblock lang:php %}
+```php
 x-smtpapi-to: example@example.com, example2@example.com
-{% endcodeblock %}
+```
 
-{% info %}
+<call-out>
+
 When using the SMTP method you must also define the `To` address. It does not matter what address you set in the `To` field since it will be overwritten by `x-smtpapi-to`.
-{% endinfo %}
+
+</call-out>
 
 Emails are automatically tracked, allowing you to retrieve delivery and engagement statistics from within the SendGrid Dashboard. You can also specify certain [categories](#-How-to-Use-Categories) for any of your emails to help you organize them by type.
 
@@ -62,9 +64,9 @@ The SendGrid plugin makes adjustments to the `wp_mail()` function so that all em
 
 You can send emails using the following function:
 
-{% codeblock lang:php %}
+```php
 wp_mail($to, $subject, $message, $headers ="", $attachments = array())
-{% endcodeblock %}
+```
 
 <table class="table">
   <tr><th>Variable</th><th>Description</th></tr>
@@ -77,17 +79,19 @@ wp_mail($to, $subject, $message, $headers ="", $attachments = array())
 
 If you want to send an email with HTML content, set the content type to 'text/html' by running the following function before `wp_mail()`:
 
-{% codeblock lang:php %}
+```php
 add_filter('wp_mail_content_type', 'set_html_content_type');
-{% endcodeblock %}
+```
 
-{% warning %}
+<call-out type="warning">
+
 After you’ve run wp_mail(), you must remove the ‘text/html’ filter in order to return to your initial settings.
-{% endwarning %}
 
-{% codeblock lang:php %}
+</call-out>
+
+```php
 remove_filter('wp_mail_content_type', 'set_html_content_type');
-{% endcodeblock %}
+```
 
 {% anchor h2 %}
 Sending HTML In Your Email Using Different Headers
@@ -97,7 +101,7 @@ Sending HTML In Your Email Using Different Headers
 Using an Array to Set Your Headers
 {% endanchor %}
 
-{% codeblock lang:php %}
+```php
 $subject = 'Test SendGrid plugin';
 $message = 'testing WordPress plugin';
 $to = array('address1@sendgrid.com', 'Address2 <address2@sendgrid.com>', 'address3@sendgrid.com');
@@ -117,13 +121,13 @@ add_filter('wp_mail_content_type', 'set_html_content_type');
 $mail = wp_mail($to, $subject, $message, $headers, $attachments);
 
 remove_filter('wp_mail_content_type', 'set_html_content_type');
-{% endcodeblock %}
+```
 
 {% anchor h3 %}
 Using SendGrid\Email() to Set Your Headers
 {% endanchor %}
 
-{% codeblock lang:php %}
+```php
 $subject = 'Test SendGrid plugin';
 $message = 'testing WordPress plugin';
 $to = array('address1@sendgrid.com', 'Address2 <address2@sendgrid.com>', 'address3@sendgrid.com');
@@ -144,13 +148,13 @@ add_filter('wp_mail_content_type', 'set_html_content_type');
 $mail = wp_mail($to, $subject, $message, $headers, $attachments);
 
 remove_filter('wp_mail_content_type', 'set_html_content_type');
-{% endcodeblock %}
+```
 
 {% anchor h2 %}
 Substitution Tags and Sections
 {% endanchor %}
 
-{% codeblock lang:php %}
+```php
 $subject = 'Hey %name%, you work at %place%';
 $message = 'testing WordPress plugin';
 $to = array('address1@sendgrid.com');
@@ -166,7 +170,7 @@ $headers
     ->addSection("%home%", "your house");
 
 $mail = wp_mail($to, $subject, $message, $headers);
-{% endcodeblock %}
+```
 
 For more examples of how you can use SendGrid SMTPAPI headers, please visit the [SendGrid PHP Library on GitHub](https://github.com/sendgrid/sendgrid-php#smtpapi).
 
@@ -182,9 +186,9 @@ To set categories globally, thus applying a category to every email sent, simply
 
 You can also assign a specific category to an email by using the headers array. Use the following format when assigning specific categories to an email:
 
-{% codeblock lang:php %}
+```php
 $headers[] = 'categories: category1, category2';
-{% endcodeblock %}
+```
 
 If you would like to configure categories for statistics tracking, simply set your desired category as the value of the 'Categories' field in the 'Statistics settings' section.
 
@@ -202,9 +206,11 @@ Once you have enabled SendGrid for use across your multisite network, you will b
 
 You can enable access for SendGrid settings to each subsite in the Multisite Settings tab. If the checkbox is unchecked then that site will not see the SendGrid settings page and it will use the settings set on the network.
 
-{% info %}
+<call-out>
+
 **Please note!** When you activate SendGrid management for a subsite, that site will not be able to send emails until the admin updates the SendGrid settings on that subsite.
-{% endinfo %}
+
+</call-out>
 
 If you have already installed the SendGrid plugin in a multisite environment and you update to any version **after** 1.9.0 you may need to re-configure your plugin.
 

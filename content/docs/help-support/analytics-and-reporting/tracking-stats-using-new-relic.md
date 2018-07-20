@@ -33,9 +33,11 @@ This can be found by accessing the SendGrid's Plugin page on New Relic or from t
 
 In the New Relic settings you can enable the statistics for your subusers.
 
-{% warning %}
+<call-out type="warning">
+
 You will receive statistics only for 100 subusers
-{% endwarning %}
+
+</call-out>
 
 After you have entered your settings and saved them, enable the app.
 

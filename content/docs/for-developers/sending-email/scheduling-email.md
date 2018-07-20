@@ -13,9 +13,11 @@ navigation:
 
 There are 3 easy ways to schedule your emails; use [Marketing Campaigns]({{root_url}}/help-support/getting-started/how-to-send-email.html), use the [SMTP API]({{root_url}}/for-developers/sending-email/scheduling-parameters.html) header, or use the API.
 
-{% info %}
+<call-out>
+
 If you have the flexibility, it's better to schedule mail for off-peak times. Most emails are scheduled and sent at the top of the hour or half hour. Scheduling email to avoid those times (for example, scheduling at 10:53) can result in lower deferral rates because it won't be going through our servers at the same times as everyone else's mail.
-{% endinfo %}
+
+</call-out>
 
 #1. Marketing Campaigns
 If you are using Marketing Campaigns, you can schedule a time to send your campaign from the Settings tab by turning Off the option to Send Immediately. Next, verify that you are using the the correct time zone, and then simply choose the date and time that you would like to send your campaign at.
@@ -31,7 +33,7 @@ You can use the [SMTP API]({{root_url}}/for-developers/sending-email/scheduling-
 
 This parameter allows SendGrid to begin processing your email requests before sending. SendGrid will then queue those messages and release them when the specified time rolls around.
 
-Here's an example of how this timestamp might look in your SMTP API JSON header. 
+Here's an example of how this timestamp might look in your SMTP API JSON header.
 
 **{ "send\_at": 1409348513 }**
 

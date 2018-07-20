@@ -18,26 +18,32 @@ It's possible & acceptable to use only Substitution tags. However, that method i
 * * * * *
 
 The format of the SMTP API section tag has the form:
-{% codeblock lang:json %}
+```json
 {
   "section": {
     ":sectionName1": "section 1 text",
     ":sectionName2": "section 2 text"
   }
 }
-{% endcodeblock %}
+```
 
-{% info %}
+<call-out>
+
 How you flag your section tags may depend on the library you use to create your SMTP connection, the language you are writing your code in, or any intermediate mail servers that your servers will send mail through. In some cases `-subVal-` may be the best choice while in other cases, `%subVal%`, `#subVal#`, or `:subVal` may make more sense. The flag doesn't matter, as long as it's a unique string.
-{% endinfo %}
 
-{% warning %}
+</call-out>
+
+<call-out type="warning">
+
 Do not use spaces inside your section or substitution tags! For example: `%first name%`. The space breaks the string.
-{% endwarning %}
 
-{% warning %}
+</call-out>
+
+<call-out type="warning">
+
 Do not nest section tags in sections - this causes your section to not be replaced.
-{% endwarning %}
+
+</call-out>
 
 * * * * *
 
@@ -47,7 +53,7 @@ Section Tag Walkthrough
 
 Message body sent to SendGrid:
 
-{% codeblock lang:html %}
+```html
 <html>
  <body>
    Hi :salutation,<br />
@@ -60,11 +66,11 @@ Message body sent to SendGrid:
    The SendGrid Team
  </body>
 </html>
-{% endcodeblock %}
+```
 
 The accompanying X-SMTPAPI JSON header would look like:
 
-{% codeblock lang:json %}
+```json
 {
   "to": [
     "example@example.com",
@@ -102,10 +108,10 @@ The accompanying X-SMTPAPI JSON header would look like:
     ":event2": "Veteran User Appreciation on :event_date"
   }
 }
-{% endcodeblock %}
+```
 
 Alice receives:
-{% codeblock lang:html %}
+```html
 <html>
  <body>
    Hi Ms. Alice,<br />
@@ -118,10 +124,10 @@ Alice receives:
    The SendGrid Team
  </body>
 </html>
-{% endcodeblock %}
+```
 
 Bob receives:
-{% codeblock lang:html %}
+```html
 <html>
  <body>
    Hi Mr. Bob,<br />
@@ -134,10 +140,10 @@ Bob receives:
    The SendGrid Team
  </body>
 </html>
-{% endcodeblock %}
+```
 
 Casey receives:
-{% codeblock lang:html %}
+```html
 <html>
  <body>
    Hi Casey,<br />
@@ -150,7 +156,7 @@ Casey receives:
    The SendGrid Team
  </body>
 </html>
-{% endcodeblock %}
+```
 
 {% anchor h2 %}
 Additional Resources

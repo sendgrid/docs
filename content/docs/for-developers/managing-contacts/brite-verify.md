@@ -15,13 +15,15 @@ navigation:
 ---
 ##Creating a new API Key
 
-To use BriteVerify to verify your SendGrid list, you will need to generate an API Key within SendGrid. 
+To use BriteVerify to verify your SendGrid list, you will need to generate an API Key within SendGrid.
 
-{% warning %}
-The Sendgrid-generated key is generated and visible only once, so be sure to copy the API Key somewhere safe for future reference. 
-{% endwarning %}
+<call-out type="warning">
 
-To get started, open the BriteVerify app and click **Import List** and then click **Sendgrid**. The app triggers the prompt to input the Sendgrid API key. This authentication is required only once to link the two applications. 
+The Sendgrid-generated key is generated and visible only once, so be sure to copy the API Key somewhere safe for future reference.
+
+</call-out>
+
+To get started, open the BriteVerify app and click **Import List** and then click **Sendgrid**. The app triggers the prompt to input the Sendgrid API key. This authentication is required only once to link the two applications.
 
 ![]({{root_url}}/images/Briteverify_Picture_01.jpeg) ![]({{root_url}}/images/Briteverify_Picture_02.jpeg)
 
@@ -29,7 +31,7 @@ To generate the Sendgrid API key, log into your SendGrid account. On the left si
 
 ![]({{root_url}}/images/Briteverify_Picture_03.jpeg)
 
-On the API Keys page, click **Create API Key** and then click **General API Key**. 
+On the API Keys page, click **Create API Key** and then click **General API Key**.
 
 ![]({{root_url}}/images/Briteverify_Picture_04.jpeg)
 <sub>*NOTE: API KEYS COVERED FOR SECURITY PURPOSES*</sub>
@@ -49,9 +51,11 @@ To allow BriteVerify to work with your SendGrid list, make the following changes
 ![]({{root_url}}/images/Briteverify_Picture_07.jpeg)
 <sub>*THE API PERMISSION SETTINGS*</sub>
 
-When you are finished, click **Save** to generate your API Key. 
+When you are finished, click **Save** to generate your API Key.
 
-{% warning %}Remember to store this key somewhere safe because you will not be able to retrieve or restore it once you navigate away from this page.{% endwarning %}
+<call-out type="warning">
+Remember to store this key somewhere safe because you will not be able to retrieve or restore it once you navigate away from this page.
+</call-out>
 
 ![]({{root_url}}/images/Briteverify_Picture_08.jpeg)
 <sub>*NOTE: API KEY COVERED FOR SECURITY PURPOSES*</sub>
@@ -61,11 +65,12 @@ Copy the key then paste it in the textbox in the Briteverify app. Make sure that
 ![]({{root_url}}/images/Briteverify_Picture_09.jpeg)
 <sub>*NOTE: API KEY COVERED FOR SECURITY PURPOSES*</sub>
 
-Once the correct API Key is provided, the applications sync, and you may now verify your Sendgrid data. 
+Once the correct API Key is provided, the applications sync, and you may now verify your Sendgrid data.
 
 ![]({{root_url}}/images/Briteverify_Picture_10.jpeg)
 <sub>*THE IMPORT SCREEN AFTER API KEY HAS BEEN VERIFIED*</sub>
 
-{% info %}
+<call-out>
+
 For more information or support contact [BriteVerify](http://www.briteverify.com/)
 {% endinfo%}

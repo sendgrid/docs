@@ -54,11 +54,13 @@ You can export a CSV containing the statistics for multiple campaigns. This expo
 1. Check the box next to each campaign that you want to include in your stats CSV.
 1. Once you’ve selected the campaigns that you want to include in your CSV, click **Export CSV**.
 
-{% info %}
+<call-out>
+
 Campaigns are ordered from most to least recent.
 The CSV will include a row for each day that SendGrid has gathered statistics.
 Every stats CSV that you export will contain a row containing the totals for each column.
-{% endinfo %}
+
+</call-out>
 
 {% anchor h2 %}
 Leveraging Engagement Statistics
@@ -89,7 +91,7 @@ Creating a Segment Based on Your Engagement Metrics
 
    A window opens with segmentation options. By default, the segment will contain the conditions to capture all recipients who either opened your campaign or clicked within your campaign. The segment will be given the name _“Contacts who [clicked/opened] [your campaign name]”_. You can rename this segment or modify the conditions of the segment as you wish directly in this window. For more information on segmentation, [click here]({{root_url}}/help-support/managing-contacts/segmenting-your-contacts.html#-Creating-a-Segment).
 
-1. Click **Save**. 
+1. Click **Save**.
 <br>You now have a dynamic segment that will continuously update as recipients engage with this campaign.
 
 {% anchor h3 %}

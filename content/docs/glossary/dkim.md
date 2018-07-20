@@ -38,25 +38,25 @@ When you set up a [authenticated domain]({{root_url}}/help-support/getting-start
 Example DKIM Record: Automated Security ON
 {% endanchor %}
 
-{% codeblock %}
+```
 
 subdomain.yourdomain.com. | CNAME | uXXXXXXX.wlXXX.sendgrid.net
 s1._domainkey.yourdomain.com. | CNAME | s1._domainkey.uXXX.wlXXX.sendgrid.net.
 s2._domainkey.yourdomain.com. | CNAME | s2._domainkey.uXXX.wlXXX.sendgrid.net.
 
-{% endcodeblock %}
+```
 
 {% anchor h3 %}
 Example DKIM Record: Automated Security OFF
 {% endanchor %}
 
-{% codeblock %}
+```
 
 m1._domainkey.yourdomain.com. | MX | mx.sendgrid.net
 s1.domainkey.yourdomain.com. | TXT | k=rsa; t=s; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDPtW5iwpXVPiH5FzJ7Nrl8USzuY9zqqzjE0D1r04xDN6qwziDnmgcFNNfMewVKN2D1O+2J9N14hRprzByFwfQW76yojh54Xu3uSbQ3JP0A7k8o8GutRF8zbFUA8n0ZH2y0cIEjMliXY4W4LwPA7m4q0ObmvSjhd63O9d8z1XkUBwIDAQAB
 s2.domainkey.yourdomain.com. | TXT | v=spf1 include:sendgrid.net ~all
 
-{% endcodeblock %}
+```
 
 
 Additional resources:

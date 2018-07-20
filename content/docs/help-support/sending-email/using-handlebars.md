@@ -33,9 +33,11 @@ Handlebars overview
 
 This page uses examples from the [dynamic-template section of our email templates github repo](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates).
 
-{% info %}
+<call-out>
+
 For the full API documentation, see [Mail Send with Dynamic Transactional Templates](https://dynamic-templates.api-docs.io/3.0).
-{% endinfo %}
+
+</call-out>
 
 {% anchor h2 %}
 Personalizing email with Handlebars
@@ -132,99 +134,99 @@ Basic replacement
 {% endanchor %}
 
 HTML should contain:
-{% codeblock %}
+```
 {% raw %}<p>Hello {{firstName}}</p>{% endraw %}
-{% endcodeblock %}
+```
 
 Test Data should contain:
-{% codeblock %}
+```
 {"firstName":"Ben"}
-{% endcodeblock %}
+```
 
 Resulting replacement:
-{% codeblock %}
+```
 {% raw %}<p>Hello Ben</p>{% endraw %}
-{% endcodeblock %}
+```
 
 {% anchor h4 %}
 Deep object replacement
 {% endanchor %}
 
 HTML should contain:
-{% codeblock %}
+```
 {% raw %}<p>Hello {{user.profile.firstName}}</p>{% endraw %}
-{% endcodeblock %}
+```
 
 Test Data should contain:
-{% codeblock %}
-{  
-   "user":{  
-      "profile":{  
+```
+{
+   "user":{
+      "profile":{
          "firstName":"Ben"
       }
    }
 }
-{% endcodeblock %}
+```
 
 Resulting replacement:
-{% codeblock %}
+```
 {% raw %}<p>Hello Ben</p>{% endraw %}
-{% endcodeblock %}
+```
 
 {% anchor h4 %}
 Object failure
 {% endanchor %}
 
 HTML should contain:
-{% codeblock %}
+```
 {% raw %}<p>Hello {{user.profile.firstName}}</p>{% endraw %}
-{% endcodeblock %}
+```
 
 Test Data should contain:
-{% codeblock %}
-{  
-   "user":{  
-      "orderHistory":[  
-         {  
+```
+{
+   "user":{
+      "orderHistory":[
+         {
             "date":"2/1/2018",
             "item":"shoes"
          },
-         {  
+         {
             "date":"1/4/2017",
             "item":"hat"
          }
       ]
    }
 }
-{% endcodeblock %}
+```
 
 Resulting replacement:
-{% codeblock %}
+```
 {% raw %}<p>Hello</p>{% endraw %}
-{% endcodeblock %}
+```
 
 {% anchor h4 %}
 Replacement with HTML
 {% endanchor %}
 
 HTML should contain:
-{% codeblock %}
+```
 {% raw %}<p>Hello {{{firstName}}}</p>{% endraw %}
-{% endcodeblock %}
+```
 
 Test Data should contain:
-{% codeblock %}
+```
 {% raw %}{"firstName":"<strong>Ben</strong>"}{% endraw %}
-{% endcodeblock %}
+```
 
 Resulting replacement:
-{% codeblock %}
+```
 {% raw %}<p>Hello <strong>Ben</strong></p>{% endraw %}
-{% endcodeblock %}
+```
 Resulting replacement:
-{% codeblock %}
+```
 {% raw %}<p>Warning! Your account is suspended, please call: 1-800-1234567</p>{% endraw %}
-{% endcodeblock %}
+```
 
 
 {% anchor h3 %}
@@ -242,7 +244,7 @@ Basic If, Else, Else If
 {% endanchor %}
 
 HTML should contain:
-{% codeblock %}
+```
 {% raw %}{{#if user.profile.male}}
   <p>Dear Sir</p>
 {{else if user.profile.female}}
@@ -250,104 +252,104 @@ HTML should contain:
 {{else}}
   <p> Dear Customer</p>
 {{/if}}{% endraw %}
-{% endcodeblock %}
+```
 
 Test Data should contain:
 ###1
-{% codeblock %}
-{  
-   "user":{  
-      "profile":{  
+```
+{
+   "user":{
+      "profile":{
          "male":"true"
       }
    }
 }
-{% endcodeblock %}
+```
 
 ###2
-{% codeblock %}
-{  
-   "user":{  
-      "profile":{  
+```
+{
+   "user":{
+      "profile":{
          "female":true
       }
    }
 }
-{% endcodeblock %}
+```
 
 ###3
-{% codeblock %}
-{  
-   "user":{  
-      "profile":{  
+```
+{
+   "user":{
+      "profile":{
 
       }
    }
 }
-{% endcodeblock %}
+```
 
 Resulting replacement:
 ###1
-{% codeblock %}
+```
 {% raw %}<p>Dear Sir</p>{% endraw %}
-{% endcodeblock %}
+```
 
 ###2
-{% codeblock %}
+```
 {% raw %}<p>Dear Madame</p>{% endraw %}
-{% endcodeblock %}
+```
 
 ###3
-{% codeblock %}
+```
 {% raw %}<p>Dear Customer</p>{% endraw %}
-{% endcodeblock %}
+```
 
 {% anchor h4 %}
 If with a root
 {% endanchor %}
 
 HTML should contain:
-{% codeblock %}
+```
 {% raw %}{{#if user.suspended}}
 	<p>Warning! Your account is suspended, please call: {{@root.supportPhone}}</p>
 {{/if}}{% endraw %}
-{% endcodeblock %}
+```
 
 Test Data should contain:
-{% codeblock %}
-{  
-   "user":{  
+```
+{
+   "user":{
       "suspended":true
    },
    "supportPhone":"1-800-1234567"
 }
-{% endcodeblock %}
+```
 
 Resulting replacement:
-{% codeblock %}
+```
 {% raw %}<p>Warning! Your account is suspended, please call: 1-800-1234567</p>{% endraw %}
-{% endcodeblock %}
+```
 
 {% anchor h4 %}
 Unless
 {% endanchor %}
 
 HTML should contain:
-{% codeblock %}
+```
 {{#unless user.active}}
 	<p>Warning! Your account is suspended, please call: {{@root.supportPhone}}</p>
 {{/unless}}
-{% endcodeblock %}
+```
 
 Test Data should contain:
-{% codeblock %}
-{  
-   "user":{  
+```
+{
+   "user":{
       "active":false
    },
    "supportPhone":"1-800-1234567"
 }
-{% endcodeblock %}
+```
 
 
 {% anchor h3 %}
@@ -359,39 +361,39 @@ Basic Iterator
 {% endanchor %}
 
 HTML should contain:
-{% codeblock %}
+```
 {% raw %}<ol>
 {{#each user.orderHistory}}
 	<li>You ordered: {{this.item}} on: {{this.date}}</li>
 {{/each}}
 </ol>{% endraw %}
-{% endcodeblock %}
+```
 
 Test Data should contain:
-{% codeblock %}
-{  
-   "user":{  
-      "orderHistory":[  
-         {  
+```
+{
+   "user":{
+      "orderHistory":[
+         {
             "date":"2/1/2018",
             "item":"shoes"
          },
-         {  
+         {
             "date":"1/4/2017",
             "item":"hat"
          }
       ]
    }
 }
-{% endcodeblock %}
+```
 
 Resulting replacement:
-{% codeblock %}
+```
 {% raw %}<ol>
 	<li>You ordered: shoes on: 2/1/2018</li>
 	<li>You ordered: hat on: 1/42017</li>
 </ol>{% endraw %}
-{% endcodeblock %}
+```
 
 {% anchor h3 %}
 Combined examples
@@ -407,7 +409,7 @@ Dynamic content creation
 {% endanchor %}
 
 HTML should contain:
-{% codeblock %}{% raw %}
+```{% raw %}
 {{#each user.story}}
   {{#if this.male}}
     <p>{{this.date}}</p>
@@ -415,25 +417,25 @@ HTML should contain:
     <p>{{this.item}}</p>
   {{/if}}
 {{/each}}{% endraw %}
-{% endcodeblock %}
+```
 
 
 Test Data should contain:
-{% codeblock %}
-{  
-   "user":{  
-      "story":[  
-         {  
+```
+{
+   "user":{
+      "story":[
+         {
             "male":true,
             "date":"2/1/2018",
             "item":"shoes"
          },
-         {  
+         {
             "male":true,
             "date":"1/4/2017",
             "item":"hat"
          },
-         {  
+         {
             "female":true,
             "date":"1/1/2016",
             "item":"shirt"
@@ -441,21 +443,21 @@ Test Data should contain:
       ]
    }
 }
-{% endcodeblock %}
+```
 
 Resulting replacement:
-{% codeblock %}{% raw %}
+```{% raw %}
 <p>2/1/2018</p>
 <p>1/4/2017</p>
 <p>shirt</p>{% endraw %}
-{% endcodeblock %}
+```
 
 {% anchor h4 %}
 Dynamic content creation with dynamic parts
 {% endanchor %}
 
 HTML should contain:
-{% codeblock %}{% raw %}
+```{% raw %}
 {{#each user.story}}
   {{#if this.male}}
     {{#if this.date}}
@@ -473,40 +475,40 @@ HTML should contain:
     {{/if}}
   {{/if}}
 {{/each}}{% endraw %}
-{% endcodeblock %}
+```
 
 Test Data should contain:
-{% codeblock %}
+```
 16
 May 11th 2018, 2:18:20 pm
-{  
-   "user":{  
-      "story":[  
-         {  
+{
+   "user":{
+      "story":[
+         {
             "male":true,
             "date":"2/1/2018",
             "item":"shoes"
          },
-         {  
+         {
             "male":true,
             "date":"1/4/2017"
          },
-         {  
+         {
             "female":true,
             "item":"shirt"
          }
       ]
    }
 }
-{% endcodeblock %}
+```
 
 Resulting replacement:
-{% codeblock %}{% raw %}
+```{% raw %}
 <p>2/1/2018</p>
 <p>shoes</p>
 <p>1/4/2017</p>
 <p>shirt</p>{% endraw %}
-{% endcodeblock %}
+```
 
 {% anchor h2 %}
 Additional Resources

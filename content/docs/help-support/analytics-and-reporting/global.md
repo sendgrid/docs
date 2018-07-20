@@ -11,9 +11,11 @@ navigation:
 ---
 
 
-{% info %}
+<call-out>
+
 Global stats shown are not an aggregate total for parent accounts and subusers. The stats outlined will only contain data for whichever account you are currently accessing. Subuser stats can, however, be accessed from the Parent account's Stats menu either on an individual basis, or by comparing multiple subusers.
-{% endinfo %}
+
+</call-out>
 
 Your Global Stats page is where you can really dig into your email stats. From here you will be able to filter through your stats by type, but you will also be able to look at the actual numbers for each stat by date. You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview.html#-Statistics-Filters).
 

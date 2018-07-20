@@ -18,7 +18,7 @@ To use a transactional template when you send, enable the `templates`
 filter and set the `template_id` to one of your transactional templates.
 
 Example
-{% codeblock lang:json %}
+```json
 {
   "filters": {
     "templates": {
@@ -29,18 +29,20 @@ Example
     }
   }
 }
-{% endcodeblock %}
+```
 
 You can use this JSON in the `X-SMTPAPI` header of an SMTP message, or in
 the `x-smtpapi` parameter of a [Web API v2 mail send]({{root_url}}/API_Reference/Web_API/mail.html#-send) call.
 
 If you are using the [Web API v3 mail send endpoint]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html), you can specify which transactional template you would like to use simply by setting the template ID in the `template_id` parameter of your JSON payload.
 
-{% info %}
+<call-out>
+
 Make sure that the version of the template you want to use is set to active
 by using the [activate endpoint]({{ root_url }}/API_Reference/Web_API_v3/Transactional_Templates/versions.html#-POST) or by activating it in the
 UI.
-{% endinfo %}
+
+</call-out>
 
 * * * * *
 
@@ -58,9 +60,11 @@ If you want only the template's content to be displayed, leave the message field
 Text or HTML Templates?
 {% endanchor %}
 
-{% info %}
+<call-out>
+
 It is best practice to provide content for both the ```html``` and the ```text``` properties in all of your emails.
-{% endinfo %}
+
+</call-out>
 
 The ```text``` property is substituted into the `<%body%>` of the text template and ```html``` is substituted into the `<%body%>` of the HTML template. If the ```text``` property is present, but not ```html```, then the resulting email will only contain the text version of the template, not the HTML version. The `<%subject%>` property is used for both Text and HTML templates.
 
@@ -78,18 +82,18 @@ specified when you send the message.
 
 For example, consider a template with a subject of `Dear :name, big sale on <%subject%>!` and following text content:
 
-{% codeblock lang:html %}
+```html
 <%body%>
 
 Hello there :name!
 
 You can buy it for only :price! Yay!
-{% endcodeblock %}
+```
 
 Now let's specify what to replace the `:name` and `:price` tags with,
 using the SMTP API header:
 
-{% codeblock lang:json %}
+```json
 {
   "to": [
     "example@example.com",
@@ -117,14 +121,14 @@ using the SMTP API header:
     }
   }
 }
-{% endcodeblock %}
+```
 
 This combination of template and substitutions, when used with a message
 that has a subject of `bacon` and a body of `Big news from Good Food
 Company!` will produce the following email to Alice, and a separate
 customized email for Bob.
 
-{% codeblock %}
+```
 Subject: Dear Alice, big sale on bacon!
 
 Big news from Good Food Company!
@@ -132,4 +136,4 @@ Big news from Good Food Company!
 Hello there Alice!
 
 You can buy it for only $4! Yay!
-{% endcodeblock %}
+```

@@ -86,9 +86,11 @@ To set up domain authentication, you must submit the DNS records provided by Sen
 1. Fill in the domain that you want to send from and add advanced settings as needed. Make sure that you only enter the name of your root domain. Do not include `www` or `http://www` in this field! Your domain needs to match the domain of your FROM address on the emails you are sending out. For example, if I am sending an email from `example@sendgrid.com`, I would set my domain authentication domain to be `sendgrid.com`. Click **Next**. For more information about advanced settings, see [Advanced settings](#-Advanced-settings).
 1. Next, you need to add all of the CNAME records on this screen to your DNS host. This process varies depending on your DNS host. For videos on how to add your CNAME to some popular DNS service providers, check out these [videos]({{root_url}}/help-support/getting-started/dns-providers.html). If you don't have access to modify your companies DNS records, you can also email a request to a co-worker. This email includes a direct link to the CNAME records. This link does expire. The recipient doesn't need login access to your SendGrid account.
 
-{% info %}
+<call-out>
+
 If you [turn off automated security](#-Using-automated-security), you add TXT and MX records in this step instead of CNAME records.
-{% endinfo %}
+
+</call-out>
 
 It can take up to 48 hours for the records to verify after you upload them into your DNS host, so you will likely have to come back later to verify.
 
@@ -98,9 +100,11 @@ Verifying your DNS
 
 Once you add the CNAME records to your DNS host, return to the [Sender authentication page](https://app.sendgrid.com/settings/sender_auth) and click **Verify**.
 
-{% info %}
+<call-out>
+
 If you click verify, and only half of your CNAME records verify, this usually means that you need to wait a bit longer. It's also possible that you entered one of your records in incorrectly. For other troubleshooting information, see [Sender authentication troubleshooting]({{root_url}}/help-support/getting-started/troubleshooting-sender-authentication.html).
-{% endinfo %}
+
+</call-out>
 
 Any time that you send an email with a FROM address whose domain matches the domain set in the domain authentication, SendGrid applies that domain to your email. You only need to update your domain authentication if you want to update the domain you are emailing from.
 
@@ -122,9 +126,11 @@ When Automated Security is **On**, SendGrid generates three different CNAME reco
 
 If you select **Off**, we generate 1 MX record and 2 TXT records. In a later step of setting up domain authentication, you give these records to your DNS provider, and then you verify that they upload correctly.
 
-{% info %}
+<call-out>
+
 If you turn off automated security, you are responsible for managing and updating the MX and TXT records yourself.
-{% endinfo %}
+
+</call-out>
 
 {% anchor h3 %}
 Using a custom return path

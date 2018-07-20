@@ -14,17 +14,17 @@ In this example, we want to parse all emails at *address*@email.sendgrid.biz and
 
 Given this scenario, the following are the parameters you would set at the [Parse API settings page]({{site.site_url}}/developer/reply):
 
-{% codeblock %}
+```
 Hostname: email.sendgrid.biz
-{% endcodeblock %}
+```
 
-{% codeblock %}
+```
 URL: http://sendgrid.biz/upload
-{% endcodeblock %}
+```
 
  Put this C\# model in your models folder:
 
-{% codeblock lang:csharp %}
+```csharp
 /// <summary>
 /// A model with the data format of the Inbound Parse API's POST
 /// </summary>
@@ -85,11 +85,11 @@ public class Email
   /// </summary>
   public string Spf { get; set; }
 }
-{% endcodeblock %}
+```
 
  To test this, we send an email to example@example.com, and put the following method in our ApiController. Note: Don't forget the attribute.
 
-{% codeblock lang:csharp %}
+```csharp
 // POST api/inbound
 [HttpPost]
 public async Task<HttpResponseMessage> Post()
@@ -117,15 +117,15 @@ public async Task<HttpResponseMessage> Post()
 
 	return new HttpResponseMessage(HttpStatusCode.OK);
 }
-{% endcodeblock %}
+```
 
 The above code used the following `using`'s
 
-{% codeblock lang:csharp %}
+```csharp
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Http;
-{% endcodeblock %}
+```

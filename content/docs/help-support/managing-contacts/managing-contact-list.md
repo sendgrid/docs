@@ -27,9 +27,11 @@ Viewing a contact
 
 To view a specific contact profile, find the contact in one of your lists or segments by searching your contact database. Then click the contact’s email address. You will then be able to view the email, engagement data, profile information, custom fields, and list associations for this contact.
 
-{% info %}
+<call-out>
+
 Searches are case agnostic but must be done using a whole email address that includes an "@" and any top-level domain like ".com" or ".io".
-{% endinfo %}
+
+</call-out>
 
 To view any custom fields you have assigned to this contact, or to view any lists that you have added this contact to, you may flip through the tabs beneath the Contact Details. You may either view all custom fields at once, or you can filter them by the following types: “Text”, “Date”, and “Number”.
 
@@ -60,12 +62,12 @@ Sending to a well-managed address list can drastically help improve your deliver
 Identifying Suppressions
 {% endanchor %}
 
-In your SendGrid Account there are different [Suppressions]({{root_url}}/help-support/sending-email/index-suppressions.html) lists. 
+In your SendGrid Account there are different [Suppressions]({{root_url}}/help-support/sending-email/index-suppressions.html) lists.
 
-**Global Unsubscribes** - Addresses on this list are opted out of all mailing 
+**Global Unsubscribes** - Addresses on this list are opted out of all mailing
 **Bounces** - Addresses that have failed to deliver to the recipient's inbox. Once an address has been added to this list, we do not attempt to deliver further messages to it, we will instead Drop them to protect your external reputation.
 **Spam Reports** - Addresses that have marked your mail as spam
-**Blocks** - Addresses that have blocked your mail temporarily, usually due to factors like a blacklisted IP address. You can attempt to resend to these addresses. 
+**Blocks** - Addresses that have blocked your mail temporarily, usually due to factors like a blacklisted IP address. You can attempt to resend to these addresses.
 **Invalid** - Addresses on this list are malformed and do not have a valid email address structure. (Ex. info.sendgrid.com, info@sendgridcom, info @ sendgrid.com)
 
 Emails sent to addresses listed in the Bounce, invalid, Spam, and Unsubscribe list are automatically dropped by SendGrid. Feel free to remove these addresses from your lists to save money and time.
@@ -85,7 +87,7 @@ It is common to have contacts that result in a group unsubscribe, block, bounce,
 1. In the upper right corner click **Add Contacts** and select **Upload CSV**.
 1. Select **Create New List** and name it something obvious, like "Remove Invalid Emails."
 1. Once uploaded, click the action menu to the right of that new list and select **Delete**.
-1. Check the box indicating to delete "all contacts associated with this list." 
+1. Check the box indicating to delete "all contacts associated with this list."
 
 {% anchor h3 %}
 Delete a specific contact
@@ -97,9 +99,11 @@ Delete a specific contact
 1. Search for the contact you want to delete.
 1. Click **delete** to remove the contact permanently.
 
-{% warning %}
+<call-out type="warning">
+
 Use this to permanently delete your recipients from all of your contact lists and all segments if required by applicable law.
-{% endwarning %}
+
+</call-out>
 
 {% anchor h3 %}
 Delete all contacts

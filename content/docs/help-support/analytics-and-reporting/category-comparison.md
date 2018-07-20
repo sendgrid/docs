@@ -11,9 +11,11 @@ navigation:
 ---
 
 
-{% info %}
+<call-out>
+
 Parent accounts will see aggregated stats for their account and all subuser accounts. Subuser accounts will only see their own stats.
-{% endinfo %}
+
+</call-out>
 
 
 Categories can help organize your email analytics by enabling you to “tag” emails by type. As a result, you may want to compare one category to another. The category comparison tool allows you to do this.

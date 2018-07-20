@@ -40,9 +40,11 @@ The following official libraries are maintained by SendGrid to create [SMTP API 
 The following official library is maintained by SendGrid to use the [Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html):
 -   [EventKit](https://github.com/sendgrid/eventkit-rails) *by SendGrid* - An app to consume and store SendGrid Events.
 
-{% info %}
+<call-out>
+
 If you find a problem with any of the official libraries please submit issues on their respective GitHub projects and we'll address them ASAP
-{% endinfo %}
+
+</call-out>
 
 {% anchor h2 %}
 Community libraries
@@ -50,9 +52,11 @@ Community libraries
 
 Open source library contributions from the awesome SendGrid community.
 
-{% info %}
+<call-out>
+
 If you create a library, please let us know, by editing this page [in our github repo](https://github.com/sendgrid/docs/blob/develop/source/{{page.path}}).
-{% endinfo %}
+
+</call-out>
 
 {% anchor h2 %}
 Web API Libraries

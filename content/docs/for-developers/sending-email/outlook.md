@@ -14,7 +14,7 @@ First, go to: 'Tools' \> 'Account Settings'
 
 The 'Account Settings' window should appear as below; please select the account you receive e-mail through and click the 'Change' button.
 
-![]({{root_url}}/images/outlook_2007_2.png "AcctSetEmAccts")  
+![]({{root_url}}/images/outlook_2007_2.png "AcctSetEmAccts")
 
 The following 'Change E-mail Account' window will appear. This setting (in the red rectangle below) needs to be set for our SMTP address.
 
@@ -22,9 +22,11 @@ The following 'Change E-mail Account' window will appear. This setting (in the r
 
 After you are finished, click the 'More Settings' button. The following 'Internet E-mail Settings' window will appear. Click on the  'Outgoing Server' tab and input the settings shown (username and password are your SendGrid credentials).
 
-{% info %}
-Your SendGrid username may not necessarily be an email address. If your SendGrid username is example_user, enter example_user in the User Name field, not example_user@sendgrid.com. 
-{% endinfo %}
+<call-out>
+
+Your SendGrid username may not necessarily be an email address. If your SendGrid username is example_user, enter example_user in the User Name field, not example_user@sendgrid.com.
+
+</call-out>
 
 ![]({{root_url}}/images/outlook_2007_4.png "IntMail_Settings_2")
 
@@ -46,6 +48,8 @@ Click 'Next' and then 'Finish' to complete the setup.
 
 You are all set to send mail through us.
 
-{% info %}
-Unfortunately, there is not an easy way to add SMTP API headers to a message in Outlook 2007. 
-{% endinfo %}
+<call-out>
+
+Unfortunately, there is not an easy way to add SMTP API headers to a message in Outlook 2007.
+
+</call-out>

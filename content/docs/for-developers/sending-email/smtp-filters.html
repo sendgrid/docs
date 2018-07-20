@@ -8,21 +8,25 @@ navigation:
 
 <p>Following are the settings that can be specified in the filters section of the X-SMTPAPI header. All filters and setting names must be lowercase.</p>
 
-{% info %}
+<call-out>
+
 <ul>
   <li>If you're enabling a Setting, also called a filter, via SMTPAPI, you are required to define all of the parameters for that Setting.</li>
   <li>Setting enabled status will always default to your settings on the website, unless otherwise defined in your X-SMTPAPI header</li>
   <li>If you enable a disabled setting, our system will not pull your settings for the disabled setting. You will need to define the settings in your X-SMTPAPI header <em>Example:</em> If you have a footer designed but disabled, you can't just enable it via the API; you need to define the footer in the API call itself.</li>
   <li>All filter names and setting names must be lowercase.</li>
 </ul>
-{% endinfo %}
+
+</call-out>
 
 <p>For more information on the utility of these settings, please check out the <a href="{{root_url}}/User_Guide/Settings/">Settings</a> section.</p>
 
-{% info %}
+<call-out>
+
 Some Settings are not listed here, because they cannot be defined on a per-message basis. To update these other Settings, please refer to the
 <a href="{{root_url}}/API_Reference/Web_API/filter_settings.html">Web API Filter Settings</a> commands.
-{% endinfo %}
+
+</call-out>
 
 {% anchor h3 bcc %}
 Filter: <code>bcc</code>
@@ -50,7 +54,7 @@ Filter: <code>bcc</code>
 </tbody>
 </table>
 
-{% codeblock lang:json %}
+```json
 {
   "filters" : {
     "bcc" : {
@@ -61,7 +65,7 @@ Filter: <code>bcc</code>
     }
   }
 }
-{% endcodeblock %}
+```
 
 <hr/>
 
@@ -69,9 +73,11 @@ Filter: <code>bcc</code>
 Filter: <code>bypass_list_management</code>
 {% endanchor %}
 
-{% warning %}
+<call-out type="warning">
+
 This setting is very powerful, and can only be used on a per-message basis. Use with extreme caution.
-{% endwarning %}
+
+</call-out>
 
 <p>Some emails are too important to do normal list management checks, such as password resets or critical alerts. Enabling this filter will bypass the normal unsubscribe / bounce / spam report checks and queue the email for delivery.</p>
 
@@ -90,7 +96,7 @@ This setting is very powerful, and can only be used on a per-message basis. Use 
 </tbody>
 </table>
 
-{% codeblock lang:json %}
+```json
 {
   "filters" : {
     "bypass_list_management" : {
@@ -100,7 +106,7 @@ This setting is very powerful, and can only be used on a per-message basis. Use 
     }
   }
 }
-{% endcodeblock %}
+```
 
 <hr />
 
@@ -126,7 +132,7 @@ Filter: <code>clicktrack</code>
 </table>
 
 <h4>Example X-SMTPAPI Header Value</h4>
-{% codeblock lang:json %}
+```json
 {
   "filters" : {
     "clicktrack" : {
@@ -136,7 +142,7 @@ Filter: <code>clicktrack</code>
     }
   }
 }
-{% endcodeblock %}
+```
 
 <hr/>
 
@@ -169,7 +175,7 @@ of your email.</p>
 </table>
 
 <h4>Example X-SMTPAPI Header Value</h4>
-{% codeblock lang:json %}
+```json
 {
   "filters" : {
     "dkim" : {
@@ -180,7 +186,7 @@ of your email.</p>
     }
   }
 }
-{% endcodeblock %}
+```
 
 
 <hr/>
@@ -217,7 +223,7 @@ Filter: <code>footer</code>
 </table>
 
 <h4>Example X-SMTPAPI Header Value</h4>
-{% codeblock lang:json %}
+```json
 {
   "filters" : {
     "footer" : {
@@ -229,7 +235,7 @@ Filter: <code>footer</code>
     }
   }
 }
-{% endcodeblock %}
+```
 
 <hr/>
 
@@ -280,7 +286,7 @@ Filter: <code>ganalytics</code>
 </table>
 
 <h4>Example X-SMTPAPI Header Value</h4>
-{% codeblock lang:json %}
+```json
 {
   "filters" : {
     "ganalytics" : {
@@ -294,7 +300,7 @@ Filter: <code>ganalytics</code>
     }
   }
 }
-{% endcodeblock %}
+```
 
 <hr/>
 
@@ -325,7 +331,7 @@ Filter: <code>opentrack</code>
 </table>
 
 <h4>Example X-SMTPAPI Header Value</h4>
-{% codeblock lang:json %}
+```json
 {
   "filters" : {
     "opentrack" : {
@@ -336,7 +342,7 @@ Filter: <code>opentrack</code>
     }
   }
 }
-{% endcodeblock %}
+```
 
 <hr/>
 
@@ -372,7 +378,7 @@ Filter: <code>spamcheck</code>
 </table>
 
 <h4>Example X-SMTPAPI Header Value</h4>
-{% codeblock lang:json %}
+```json
 {
   "filters" : {
     "spamcheck" : {
@@ -384,7 +390,7 @@ Filter: <code>spamcheck</code>
     }
   }
 }
-{% endcodeblock %}
+```
 
 <hr/>
 
@@ -425,12 +431,14 @@ Filter: <code>subscriptiontrack</code>
 </tbody>
 </table>
 
-{% warning %}
+<call-out type="warning">
+
 The <code>landing</code> argument cannot be used in SMTPAPI. It can only be setup via the UI or WebAPI, as an account-level setting.
-{% endwarning %}
+
+</call-out>
 
 <h4>Example X-SMTPAPI Header Value</h4>
-{% codeblock lang:json %}
+```json
 {
     "filters": {
         "subscriptiontrack": {
@@ -442,7 +450,7 @@ The <code>landing</code> argument cannot be used in SMTPAPI. It can only be setu
         }
     }
 }
-{% endcodeblock %}
+```
 
 <hr/>
 
@@ -450,9 +458,11 @@ The <code>landing</code> argument cannot be used in SMTPAPI. It can only be setu
 Filter: <code>templates</code>
 {% endanchor %}
 
-{% info %}
+<call-out>
+
 This setting refers to SendGrid's <a href="{{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/index.html">transactional templates</a>. SendGrid supports versioning, and the ability to create multiple transactional templates. Previously, we had a Template App, which is now referred to as the <a href="#template">Legacy Template App</a>.
-{% endinfo %}
+
+</call-out>
 
 
 <p>Uses a <a href="{{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/index.html">transactional template</a> when sending an email.
@@ -478,7 +488,7 @@ This setting refers to SendGrid's <a href="{{root_url}}/API_Reference/Web_API_v3
 </table>
 
 <h4>Example X-SMTPAPI Header Value</h4>
-{% codeblock lang:json %}
+```json
 {
   "filters": {
     "templates": {
@@ -489,7 +499,7 @@ This setting refers to SendGrid's <a href="{{root_url}}/API_Reference/Web_API_v3
     }
   }
 }
-{% endcodeblock %}
+```
 
 <hr/>
 
@@ -497,9 +507,11 @@ This setting refers to SendGrid's <a href="{{root_url}}/API_Reference/Web_API_v3
 Filter: <code>template</code>
 {% endanchor %}
 
-{% warning %}
+<call-out type="warning">
+
 This setting refers to our original Email Template app. We now support more fully featured <a href="#templates">transactional templates</a>. You may create multiple transactional templates that allow for versioning, in addition to several other features.
-{% endwarning %}
+
+</call-out>
 
 
 <p>Wraps a template around your email content. Useful for sending out marketing email and other nicely formatted messages.</p>
@@ -525,7 +537,7 @@ This setting refers to our original Email Template app. We now support more full
 </table>
 
 <h4>Example X-SMTPAPI Header Value</h4>
-{% codeblock lang:json %}
+```json
 {
   "filters" : {
     "template" : {
@@ -536,6 +548,6 @@ This setting refers to our original Email Template app. We now support more full
     }
   }
 }
-{% endcodeblock %}
+```
 
 <hr/>

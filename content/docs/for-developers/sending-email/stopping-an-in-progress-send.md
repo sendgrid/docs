@@ -13,9 +13,11 @@ navigation:
 
 Oops! You accidentally sent a whole pile of mail you didn't mean to send... No worries, take a deep breath and read on. Be it a misspelled subject line or a rogue script, we can help!
 
-{% warning %}
+<call-out type="warning">
+
 If you are looking for information on how to cancel a scheduled email or campaign, [click here]({{root_url}}/Classroom/Send/When_Emails_Are_Sent/can_i_stop_a_scheduled_send.html)!
-{% endwarning %}
+
+</call-out>
 
 {% anchor h2 %}
 Stopping Transactional Email
@@ -27,13 +29,15 @@ Stopping an ongoing send that is using SMTP or the Web API can be tricky, becaus
 1. Change Your Password
 {% endanchor %}
 
-The simple act of [changing your password](https://app.sendgrid.com/settings/account) can break your existing email integration by causing a mismatch between what your app is trying to authenticate with and what we have on record. 
+The simple act of [changing your password](https://app.sendgrid.com/settings/account) can break your existing email integration by causing a mismatch between what your app is trying to authenticate with and what we have on record.
 
 This method is great if you have a runaway script or have just started a send accidentally. Be sure to verify that the credentials your app is using belong either to the parent account or a [teammate](https://app.sendgrid.com/settings/teammates) so you can change the proper one.
 
-{% warning %}
+<call-out type="warning">
+
 We cannot guarantee that changing your password will prevent 100% of your email requests from being delivered. We only recommend this method as a last resort that may allow you to stop at least some of your emails from begin sent.
-{% endwarning %}
+
+</call-out>
 
 {% anchor h3 %}
 2. Contact Support

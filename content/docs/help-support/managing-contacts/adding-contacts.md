@@ -4,7 +4,7 @@ weight: 90
 title: Adding Contacts
 navigation:
   show: true
-seo: 
+seo:
   title: Adding Contacts
   keywords: Marketing Contacts, Adding Contacts, Contact Lists
   override: true
@@ -13,16 +13,18 @@ seo:
 * [Formatting a CSV](#-Formatting-a-CSV)
 * [Uploading a CSV](#-Uploading-a-CSV)
 * [Manually Add a Contact](#-Manually-Add-a-Contact)
-* [Creating a New List](#-Creating-a-New-List)  
+* [Creating a New List](#-Creating-a-New-List)
 
 <iframe src="https://player.vimeo.com/video/121404093" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
 From our [Contacts]({{site.marketing_campaigns_url}}/contacts) page, you can add, upload, modify, and delete your contacts. Contacts can be added to your contacts database using the [API](https://sendgrid.com/docs/API_Reference/api_v3.html), or by  manually adding or uploading a CSV file through the [SendGrid App](https://app.sendgrid.com/).
 
-{% info %}
+<call-out>
+
 Your first 2,000 contacts are free. After 2,000 contacts, SendGrid charges $10 for every additional 10,000 contacts.
-{% endinfo %}
+
+</call-out>
 
 {% anchor h3 %}
 Formatting a CSV
@@ -39,7 +41,7 @@ Uploading a CSV
 1. Click **Add Contacts** and then select **Upload CSV**.
 1. Choose an existing list or create a new list.
 
-    If you choose to add the contacts without assigning them to a list, they exist in the contacts database without any additional context. 
+    If you choose to add the contacts without assigning them to a list, they exist in the contacts database without any additional context.
 
 1. Upload your file by dragging it into or clicking the CSV upload area.
 1. Once the CSV has populated, click **Next:Custom Fields**.
@@ -49,15 +51,19 @@ Uploading a CSV
 1. Select **Skip Column** to omit data from the contacts list.
 1. Once you've gone through all of the headers, click **Next:Add Contacts**.
 
-{% info %}
+<call-out>
+
 After uploading contacts, you can define segments for individual contacts or lists based on specified criteria. For more information, see [Lists and Segmentation](https://sendgrid.com/docs/help-support/managing-contacts/segmenting-your-contacts.html).
-{% endinfo %}
 
-{% warning %}
+</call-out>
+
+<call-out type="warning">
+
    The maximum CSV file size is 2GB.
-{% endwarning %}
 
-Once we have completed processing your new contacts, you will receive an email to any addresses specified under [Notifications](https://sendgrid.com/marketing_campaigns/ui/notifications). If there is no email address specified for notifications, the report will go to the address associated with the account by default. To add an additional notification email address, click **Add Notification Email Address**  
+</call-out>
+
+Once we have completed processing your new contacts, you will receive an email to any addresses specified under [Notifications](https://sendgrid.com/marketing_campaigns/ui/notifications). If there is no email address specified for notifications, the report will go to the address associated with the account by default. To add an additional notification email address, click **Add Notification Email Address**
 
 ![]({{root_url}}/img/add_notification_email_contacts.png "Add Notification Email Address")
 
@@ -71,13 +77,17 @@ The notification email contains the following information:
 
 If there are any errors, there will be a link to download a CSV containing the errored rows so that you can reformat and reupload those contacts. For more help resolving issues with uploading a CSV, see [Formatting a CSV](https://sendgrid.com/docs/help-support/managing-contacts/formatting-a-csv.html).
 
-{% info %}
-The download link to your CSV of errored rows will be available for 24 hours.
-{% endinfo %}
+<call-out>
 
-{% info %}
+The download link to your CSV of errored rows will be available for 24 hours.
+
+</call-out>
+
+<call-out>
+
 If you upload the same contact more than once, SendGrid updates the data, assuming the most recent upload has the most up-to-date information. Updates to your contacts cannot be rolled back. Multiples of the same contact (as identified by email) can be added to different lists or segments and count as one contact against your total contacts per account or subuser account.
-{% endinfo %}
+
+</call-out>
 
 {% anchor h3 %}
 Manually Add a Contact
@@ -92,9 +102,11 @@ Manually Add a Contact
 1. Enter the information for the new contact.
 1. Click **Save**.
 
-{% info %}
-To add Custom Field data to a manually imported contact, navigate to the Contact Details page of the new contact. 
-{% endinfo %}
+<call-out>
+
+To add Custom Field data to a manually imported contact, navigate to the Contact Details page of the new contact.
+
+</call-out>
 
 {% anchor h3 %}
 Creating a New List
@@ -119,9 +131,11 @@ Add Contacts to a List
 1. Enter the information for the new contact.
 1. Click **Save Contact**.
 
-{% info %}
+<call-out>
+
 If you [create a segment]({{root_url}}/help-support/managing-contacts/segmenting-your-contacts.html#-Creating-a-Segment) before you upload a list, contacts that fit the segment criteria populate that segment when uploaded.
-{% endinfo %}
+
+</call-out>
 
 {% anchor h3 %}
 Additional Resources

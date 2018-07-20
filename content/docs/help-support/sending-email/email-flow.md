@@ -54,12 +54,14 @@ Reputation
 {% endanchor %}
 When reviewing the sending IP and domain, the receiving server will factor in both of the following items:
 
-The reaction of its other recipients to mail sent by that same IP and domain (i.e. marked as spam or not). 
+The reaction of its other recipients to mail sent by that same IP and domain (i.e. marked as spam or not).
 Where the receiving server previously decided to place any mail from the same IP and domain.
 
-{% info %}
+<call-out>
+
 The reputation of the domains included in the links within the body content will also factor into delivery.
-{% endinfo %}
+
+</call-out>
 
 {% anchor h3 %}
 User Level Filtering

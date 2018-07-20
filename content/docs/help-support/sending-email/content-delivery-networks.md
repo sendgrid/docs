@@ -62,9 +62,11 @@ Finally, click the **Create**. The new service will appear in the list of availa
 
 Contact SendGrid support to validate your CDN settings and enable SSL click and open tracking.
 
-{% info %}
+<call-out>
+
 For more information, please visit [Fastly's documentation](https://docs.fastly.com/guides/basic-setup/working-with-services#creating-a-new-service).
-{% endinfo %}
+
+</call-out>
 
 {% anchor h2 %}
 Using KeyCDN

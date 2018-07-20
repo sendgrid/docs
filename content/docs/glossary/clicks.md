@@ -10,9 +10,11 @@ seo:
   description: Track the links your customers click from your emails with SendGrid.
 ---
 
-{% info %}
+<call-out>
+
 In order to track clicks, you must have the [Click Tracking App]({{root_url}}/User_Guide/Settings/tracking.html) enabled.
-{% endinfo %}
+
+</call-out>
 
 SendGrid can replace the links in your email templates with a custom link that when clicked, will redirect your customers to the original link from your template. When the user clicks, SendGrid will record the click event. SendGrid can track 1000 link clicks per email.
 
@@ -20,6 +22,8 @@ In [Stats]({{root_url}}/User_Guide/Delivery_Metrics/email_activity.html), The â€
 
 Users clicking a SendGrid Unsubscribe link will not count as a Click. However, if you use a third-party unsubscribe link, it will be tracked as a Click.
 
-{% info %}
+<call-out>
+
 SendGrid will store tracking data for unique click events for up to 7 days.
-{% endinfo %}
+
+</call-out>

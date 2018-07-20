@@ -43,7 +43,7 @@ Log into your SendGrid account, click on **Settings** from the left menu → Sel
 ```
 https://api.keen.io/3.0/projects/YOUR_KEEN_PROJECT_ID/email/sendgrid/1.0?api_key=YOUR_KEEN_API_WRITE_KEY
 ```
-You can snag a prebuilt URL in Keen’s UI or make your own. 
+You can snag a prebuilt URL in Keen’s UI or make your own.
 
 In the settings, select the events you want to post to Keen IO (why not all of them?). To do this, under **Select Actions**, check **All**.
 
@@ -53,17 +53,17 @@ That’s it! Now, as your emails make their way through SendGrid, all of the eve
 Testing Your Integration
 {% endanchor h3 %}
 
-Test that everything is working by clicking  on the **"Test Your Integration"** button in SendGrid’s “Event Notification” Settings. This will send sample email data from SendGrid into your Keen IO Project. In the Keen UI, click on **“Check for SendGrid Data”** button. 
+Test that everything is working by clicking  on the **"Test Your Integration"** button in SendGrid’s “Event Notification” Settings. This will send sample email data from SendGrid into your Keen IO Project. In the Keen UI, click on **“Check for SendGrid Data”** button.
 
-Your SendGrid email data should now be populated in Keen IO. 
+Your SendGrid email data should now be populated in Keen IO.
 
 {% anchor h3 %}
 Using SendGrid Email Analytics
 {% endanchor h3 %}
 
-Once you have data successfully flowing from SendGrid to Keen, a new application called SendGrid Email Analytics will appear on your projects page’s “Apps” tab. 
+Once you have data successfully flowing from SendGrid to Keen, a new application called SendGrid Email Analytics will appear on your projects page’s “Apps” tab.
 
-To find it, visit your [Keen home screen](https://keen.io/home), select the project you’ve connected, in and click on the “Apps” tab. Find SendGrid and select “Launch App”. If you’ve successfully sent SendGrid data to Keen for storage, you will see the dashboard below. 
+To find it, visit your [Keen home screen](https://keen.io/home), select the project you’ve connected, in and click on the “Apps” tab. Find SendGrid and select “Launch App”. If you’ve successfully sent SendGrid data to Keen for storage, you will see the dashboard below.
 
 ![SendGrid- Email Analytics App Dashboard Home]({{root_url}}/images/keen/sendgrid_email_analytics_dashboard_empty.png)
 
@@ -73,17 +73,19 @@ Adding a Segment
 
 A segment will allow you to track a specific campaign or filter on a particular field like a customer ID. To create a segment, select “Add Segment” from the top left corner. The following pop-out menu will allow you to define your segment name, the date you’d like to look at, and, most importantly, select a property by which you’d like to measure the effectiveness of a campaign.
 
-{% info %}
+<call-out>
+
 This is explaining a different process from creating an [customer email segment]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html#-Creating-a-Segment) in SendGrid
-{% endinfo %}
+
+</call-out>
 
 ![SendGrid- Email Analytics App Create a Segment]({{root_url}}/images/keen/sendgrid_create_a_segment.png)
 
-Here’s an example of a segment created to look at delivered, open, and click rates for emails sent within the United States. 
+Here’s an example of a segment created to look at delivered, open, and click rates for emails sent within the United States.
 
 ![SendGrid- Email Analytics App Segment Now Created]({{root_url}}/images/keen/sendgrid_segment_created.png)
 
-You can see Delivered Rates, Unique Opens, Unique Clicks, Click Rates, Unsubscribe Rates, Bounces, and Number of Emails Marked as Spam. For each of these metrics, you can download a CSV of the detailed event data. Just click on any cell, and you’ll see a menu with the option to download a CSV. Learn who did or did not open an email for example, and with this list of email addresses you can build a more targeted user campaign. 
+You can see Delivered Rates, Unique Opens, Unique Clicks, Click Rates, Unsubscribe Rates, Bounces, and Number of Emails Marked as Spam. For each of these metrics, you can download a CSV of the detailed event data. Just click on any cell, and you’ll see a menu with the option to download a CSV. Learn who did or did not open an email for example, and with this list of email addresses you can build a more targeted user campaign.
 
 To edit a segment, click on the segment you newly created: you’ll find a menu that allows you to edit it, clone, or remove it.
 
@@ -107,11 +109,13 @@ You can track your campaign’s performance over time by selecting the timeframe
 
 ![SendGrid- Email Analytics App Timeframe Picker]({{root_url}}/images/keen/sendgrid_timeframe.png)
 
-The app’s dashboard defaults to 72 Hours. 
+The app’s dashboard defaults to 72 Hours.
 
-{% info %}
+<call-out>
+
 Uniform timeframes that compare each campaign to the same period of performance gives you consistent data points that you can measure against.
-{% endinfo %}
+
+</call-out>
 
 Your data is stored in Keen and does not expire for as long as your account is active. The SendGrid Email Analytics integration results in a data warehouse or archive of all of your SendGrid email data. This means your user transaction and email behavior data is stored for as long as you need it.
 
@@ -121,7 +125,7 @@ The report has fixed timeframe options, but that doesn’t mean that we stop sto
 Understanding User Behavior
 {% endanchor h4 %}
 
-Each column in the the Analytics App represents a different user action and each column is a unique step. From left to right, the columns display the number of people that successfully make it through each event. The fewest number of users have successful delivered events, open events, clicked events, and then unsubscribe events.    
+Each column in the the Analytics App represents a different user action and each column is a unique step. From left to right, the columns display the number of people that successfully make it through each event. The fewest number of users have successful delivered events, open events, clicked events, and then unsubscribe events.
 
 ![SendGrid- Email Analytics App Funnel]({{root_url}}/images/keen/sendgrid_funnel.png)
 
@@ -179,17 +183,19 @@ Once you’ve found the query you need, you can either copy the URL right from y
 
 *To create a dashboard*:
 
-**Step 1: Save your query.** Create your query in the Explorer and click **Run**. After running the query, click **Save**. 
+**Step 1: Save your query.** Create your query in the Explorer and click **Run**. After running the query, click **Save**.
 
 ![Save Your Query]({{root_url}}/images/keen/sendgrid_saved_query.png)
 
-Saved queries are the most efficient way to revisit your favorite metrics. Rather than entering the same query parameters over and over again, queries can shared with your teammates. 
+Saved queries are the most efficient way to revisit your favorite metrics. Rather than entering the same query parameters over and over again, queries can shared with your teammates.
 
-{% info %}
+<call-out>
+
 Your saved query can be edited and cloned.
-{% endinfo %}
 
-**Step 2: Add your graph to a dashboard.** 
+</call-out>
+
+**Step 2: Add your graph to a dashboard.**
 
 Select **Create Dashboard**, name your dashboard, and add the query we saved to the first tile. Then click **Save**.
 

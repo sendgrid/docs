@@ -9,25 +9,27 @@ navigation:
   show: true
 ---
 
-{% github sendgrid/sendgrid-perl#basic-usage Perl %}
+<call-out>
+
 We recommend using SendGrid Perl, our client library, <a href="https://github.com/sendgrid/sendgrid-perl">available on Github</a>, with full documentation.
-{% endgithub %}
+
+</call-out>
 
 {% anchor h2 %}Using SendGrid's Perl Library{% endanchor %}
-{% codeblock lang:perl %}
+```perl
 # using SendGrid's Perl Library - https://github.com/sendgrid/sendgrid-perl
 use Mail::SendGrid;
 use Mail::SendGrid::Transport::REST;
- 
+
 my $sendgrid = Mail::SendGrid->new(
   from => "test@sendgrid.com",
   to => "example@example.com",
   subject => "Sending with SendGrid is Fun",
   html => "and easy to do anywhere, even with Perl"
 );
- 
+
 Mail::SendGrid::Transport::REST->new( username => $api_user, password => $api_key );
-{% endcodeblock %}
+```
 
 {% anchor h2 %}
 Without sendgrid-perl
@@ -41,20 +43,20 @@ The following code builds a MIME mail message demonstrating all the portions of 
 	<li><a href="http://search.cpan.org/perldoc?Authen::SASL">Authen::SASL</a></li>
 </ul>
 
-{% codeblock lang:perl %}
+```perl
 #!/usr/bin/perl
- 
+
 use strict;
 use MIME::Entity;
 use Net::SMTP;
- 
+
 # from is your email address
 # to is who you are sending your email to
 # subject will be the subject line of your email
 my $from = 'you@yourdomain.com';
 my $to = 'example@example.com';
 my $subject = 'Example Perl Email';
- 
+
 # Create the MIME message that will be sent. Check out MIME::Entity on CPAN for more details
 my $mime = MIME::Entity->build(Type  => 'multipart/alternative',
                             Encoding => '-SUGGEST',
@@ -78,12 +80,12 @@ my $html = <<EOM;
   </body>
 </html>
 EOM
- 
+
 # attach the body of the email
 $mime->attach(Type => 'text/plain',
             Encoding =>'-SUGGEST',
             Data => $text);
- 
+
 $mime->attach(Type => 'text/html',
             Encoding =>'-SUGGEST',
             Data => $html);
@@ -99,19 +101,19 @@ $mime->attach ( Path      => $my_file_txt,
 # Login credentials
 my $username = 'example@example.com';
 my $password = "yourpassword";
- 
+
 # Open a connection to the SendGrid mail server
 my $smtp = Net::SMTP->new('smtp.sendgrid.net',
                         Port=> 587,
                         Timeout => 20,
                         Hello => "yourdomain.com");
- 
+
 # Authenticate
 $smtp->auth($username, $password);
- 
+
 # Send the rest of the SMTP stuff to the server
 $smtp->mail($from);
 $smtp->to($to);
 $smtp->data($mime->stringify);
 $smtp->quit();
-{% endcodeblock %}
+```
