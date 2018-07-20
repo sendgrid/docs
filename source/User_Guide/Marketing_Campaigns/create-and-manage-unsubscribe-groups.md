@@ -16,4 +16,25 @@ navigation:
    * [Exporting an Unsubscribe Group List](#-Exporting-an-Unsubscribe-Group-List)
    * [Editing an Unsubscribe Group](#-Editing-an-Unsubscribe-Group)
    * [Deleting an Unsubscribe Group](#-Deleting-an-Unsubscribe-Group)
+
+Adding Unsubscribe Groups to your emails makes it easy to honor your recipients' email preferences and protects your sender reputation by complying with anti-spam legislation. 
  
+{% anchor h2 %}
+Create an Unsubscribe Group
+{% endanchor %}
+
+*To create an Unsubscribe Group:*
+1. Select **Marketing Campaigns** and then click **Unsubscribe Groups**.
+1. Click **Add Unsubscribe Group**. 
+1. Add a *Group Name* and *Group Description* and then click **Save Unsubscribe Group**. 
+
+{% info %}
+Your note
+{% endinfo %}
+
+{% anchor h2 %}
+Add recipients to an Unsubscribe Group
+{% endanchor %}
+
+*To add recipients to an Unsubscribe Group:*
+1. 
