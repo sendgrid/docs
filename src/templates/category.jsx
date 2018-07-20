@@ -1,6 +1,7 @@
 import React from 'react';
 import Group from '../components/Group';
 import CATEGORIES from '../constants/categories';
+import SEO from '../components/SEO';
 import GROUPS from '../constants/groups';
 import withSubNav from '../components/NavSub';
 import './category.scss';
@@ -20,6 +21,7 @@ class CategoryTemplate extends React.Component {
 
     return (
       <div className="category-container container">
+        <SEO postNode={this.props} postType="category" />
         <h1>{CATEGORIES[pathContext.category]}</h1>
         <div className="row">
           {this.renderGroups()}
