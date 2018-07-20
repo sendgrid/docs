@@ -36,5 +36,29 @@ Your note
 Add recipients to an Unsubscribe Group
 {% endanchor %}
 
-*To add recipients to an Unsubscribe Group:*
+*To upload a CSV:*
+1. Find the group you want to add recipients to and click the action menu. 
+![]({{root_url}}/img/<unsub_action_menu>.png "Unsubcribe Group action menu")
+1. Select **Upload a CSV**. 
 1. 
+
+*To manually add recipients to an Unsubscribe Group:*
+1. Find the group you want to add recipients to and click the action menu.
+1. Select **Manually Add**. 
+1. Enter a recipient email address and then click **Save**. 
+
+{% anchor h2 %}
+Managing Unsubscribe Groups
+{% endanchor %}
+
+{% anchor h3 %}
+Exporting an Unsubscribe Group List
+{% endanchor %}
+
+{% anchor h3 %}
+Editing an Unsubscribe Group
+{% endanchor %}
+
+{% anchor h3 %}
+Deleting an Unsubscribe Group
+{% endanchor %}
