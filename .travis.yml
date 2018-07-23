@@ -15,7 +15,7 @@ install:
 - pip install --user awscli
 before_script:
 - yarn
-script: yarn run build
+script: yarn run build --prefix-paths
 deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY
