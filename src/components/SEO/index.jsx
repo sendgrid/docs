@@ -3,6 +3,16 @@ import Helmet from 'react-helmet';
 import config from '../../../data/SiteConfig';
 
 class SEO extends Component {
+  static capitalizeFirstLetter(str) {
+    str = str.split(' ');
+
+    for (let i = 0, x = str.length; i < x; i++) {
+      str[i] = str[i][0].toUpperCase() + str[i].substr(1);
+    }
+
+    return str.join(' ');
+  }
+
   render() {
     const { postNode, postType } = this.props;
     const image = config.siteLogo;
@@ -19,7 +29,8 @@ class SEO extends Component {
         category,
       } = postNode.pathContext;
 
-      title = `${docType.replace('-', ' ').cap} | ${category.replace('-', ' ')}`;
+
+      title = SEO.capitalizeFirstLetter(`${docType.replace('-', ' ')} | ${category.replace('-', ' ')}`);
     } else if (postType === 'doc') {
       const { seo } = postNode.frontmatter;
       permalink = sitePath + postNode.fields.permalink;
