@@ -3,7 +3,7 @@ layout: page
 weight: 100
 title: How to send an email with Dynamic Transactional Templates
 navigation:
-  show: false
+  show: true
 seo:
   title: How to send an email with Dynamic Transactional Templates
   override: true
