@@ -3,7 +3,7 @@ layout: page
 weight: 90
 title: Migrating from Legacy Templates
 navigation:
-  show: false
+  show: true
 seo:
   title: Migrating from Legacy Templates
   override: true
@@ -11,7 +11,7 @@ seo:
   keywords: transactional email templates, email template, dynamic content, personalization, handlebars
 ---
 
-If you have transactional templates you want to use with handlebars syntax, you need to migrate your legacy templates to the new dynamic templates page. 
+If you have transactional templates you want to use with handlebars syntax, you need to migrate your legacy templates to the new dynamic templates page.
 
 {% info %}
 The original template you copy won't be modified and remains active in any API or SMTP calls. To use the new template, update the template ID parameter in your code.
