@@ -41,7 +41,7 @@ Dynamic content for transactional templates
 
 <table class="table" style="width: 100%;">
   <tr>
-    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ><img src="{{root_url}}/images/code_icon.png" alt="An update to the API" width="100" height="100"></td>
     <td>We’ve added native support for a subset of Handlebars syntax in transactional templates sent using V3 of our Mail Send API. This new functionality allows you to iterate over lists, take advantage of conditionals, and use JSON test data to verify substitutions in the UI. For more information, check out our <a href="https://sendgrid.com/docs/User_Guide/Transactional_Templates/how_to_send_an_email_with_transactional_templates.html" target="_blank">Getting started with Handlebars documentation</a>, and our in-depth look at the <a href="https://sendgrid.com/docs/User_Guide/Transactional_Templates/Using_handlebars.html" target="_blank">Handlebars functionality</a> that we support.</td>
   </tr>
 </table>
