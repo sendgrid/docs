@@ -129,7 +129,7 @@ Frequently Asked Questions
 What credentials do I need to add on settings page?
 {% endanchor %}
 
-[Create a SendGrid account](https://sendgrid.com/partners/magento/) and [generate a new API key](https://app.sendgrid.com/settings/api_keys). For more information about API Keys, [click here]({{root_url}}/User_Guide/Settings/api_keys.html).
+[Create a SendGrid account](https://sendgrid.com/partners/magento/) and [generate a new API key](https://app.sendgrid.com/settings/api_keys). For more information about API Keys, [click here]({{root_url}}/User_Guide/Settings/create-and-manage-api-keys.html).
 
 {% anchor h3 %}
 What permissions should my API keys have?
