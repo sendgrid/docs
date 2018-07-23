@@ -46,6 +46,20 @@ Dynamic content for transactional templates
   </tr>
 </table>
 
+{% anchor h3 %}
+Known issue in the V2 API `to` parameter
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/code_icon.png" alt="An update to the API" width="100" height="100"></td>
+  <td>If you use the API <code>to</code> parameter to specify a single recipient, that recipient is visible in the <code>For</code> field of the received header - so if you specify a single address, it should be an address that you are comfortable with your customer seeing. For example, use a generic email address in the <code>to</code> field that your customer is already going to see, like your from address. To completely omit the email showing up in the <code>from</code> header:.</td>
+  </tr>
+</table>
+- specify multiple addresses in the `to` field as an array, for example, `to[]=a@mail.com&to[]=b@mail.com`
+- Use the V3 mail send endpoint
+
+
 {% anchor h2 %}
 6 June 2018
 {% endanchor %}
