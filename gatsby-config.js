@@ -1,6 +1,7 @@
 const config = require('./data/SiteConfig');
 
 const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix;
+const policyAccess = process.env.GATSBY_ENV === 'production' ? [{ userAgent: '*', allow: ['/'] }] : [{ userAgent: '*', disallow: ['/'] }];
 
 module.exports = {
   pathPrefix: config.pathPrefix,
@@ -31,7 +32,7 @@ module.exports = {
       options: {
         host: config.siteUrl + pathPrefix,
         sitemap: `${config.siteUrl + pathPrefix}/sitemap.xml`,
-        policy: [{ userAgent: '*', disallow: ['/'] }],
+        policy: policyAccess,
       },
     },
     {
