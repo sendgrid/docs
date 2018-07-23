@@ -3,7 +3,7 @@ layout: page
 weight: 50
 title: Create and edit Dynamic Transactional Templates
 navigation:
-  show: false
+  show: true
 seo:
   title: Create and edit Dynamic Transactional Templates
   override: true
