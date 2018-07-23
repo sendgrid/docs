@@ -82,7 +82,7 @@ class NavMain extends Component {
 
               <div className={`nav-main__mobile ${menuState}`}>
                 <div className="nav-item">
-                  <Link className="nav-main__plain" href="/">
+                  <Link className="nav-main__plain" to="/">
                     Home
                   </Link>
                 </div>
