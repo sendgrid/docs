@@ -31,7 +31,7 @@ export default class BreadCrumbs extends Component {
 
     const allPaths = this.pathParts.map((text) => {
       const to = pathname.substring(0, pathname.indexOf(text)) + text;
-      const textNode = text.replace('-', ' ');
+      const textNode = text.replace(/-/g, ' ');
       return (
         {
           textNode,
@@ -56,7 +56,7 @@ export default class BreadCrumbs extends Component {
     if (data && _.has(data[Object.keys(data)], 'fields')) {
       pageTitle = data[Object.keys(data)].fields.title;
     } else {
-      pageTitle = this.pathParts.slice(-1)[0].replace('-', ' ');
+      pageTitle = this.pathParts.slice(-1)[0].replace(/-/g, ' ');
     }
 
     // update the last textNode with page title
