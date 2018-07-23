@@ -10,9 +10,6 @@ seo:
   description: Transactional email templates are pre-coded email layouts that anyone can use to easily create and send transactional emails.
   keywords: transactional email templates, email template, template engine
 ---
-
-![]({{root_url}}/img/dynamic-templates.gif "demo of dynamic templates")
-
 - [Create a template](#-Create-a-template)
 - [Editing your HTML template](#-Editing-your-HTML-template)
   - [Using the Design Editor](#-Using-the-Design-Editor)
