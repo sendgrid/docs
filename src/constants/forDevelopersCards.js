@@ -14,7 +14,7 @@ const FOR_DEVS_CARDS = [
       { URL: '/foo-bar', TEXTNODE: 'Using the Template Editor' },
       { URL: '/foo-bar', TEXTNODE: 'A/B Testing Your Content' },
     ],
-    BUTTON_LINK: '/for-developers/sending-email',
+    BUTTON_LINK: '/for-developers/sending-email/',
   },
   {
     ICON: parse,
@@ -24,7 +24,7 @@ const FOR_DEVS_CARDS = [
       { URL: '/foo-bar', TEXTNODE: 'Using the Template Editor' },
       { URL: '/foo-bar', TEXTNODE: 'A/B Testing Your Content' },
     ],
-    BUTTON_LINK: '/for-developers/parsing-email',
+    BUTTON_LINK: '/for-developers/parsing-email/',
   },
   {
     ICON: contacts,
@@ -34,7 +34,7 @@ const FOR_DEVS_CARDS = [
       { URL: '/foo-bar', TEXTNODE: 'Using the Template Editor' },
       { URL: '/foo-bar', TEXTNODE: 'A/B Testing Your Content' },
     ],
-    BUTTON_LINK: '/for-developers/managing-contacts',
+    BUTTON_LINK: '/for-developers/managing-contacts/',
   },
   {
     ICON: analytics,
@@ -44,7 +44,7 @@ const FOR_DEVS_CARDS = [
       { URL: '/foo-bar', TEXTNODE: 'Using the Template Editor' },
       { URL: '/foo-bar', TEXTNODE: 'A/B Testing Your Content' },
     ],
-    BUTTON_LINK: '/for-developers/tracking-events',
+    BUTTON_LINK: '/for-developers/tracking-events/',
   },
   {
     ICON: api,
@@ -54,17 +54,17 @@ const FOR_DEVS_CARDS = [
       { URL: '/foo-bar', TEXTNODE: 'Using the Template Editor' },
       { URL: '/foo-bar', TEXTNODE: 'A/B Testing Your Content' },
     ],
-    BUTTON_LINK: '/for-developers/tracking-events',
+    BUTTON_LINK: '/for-developers/account-and-settings/',
   },
   {
     ICON: account,
-    TITLE: 'Account Management',
+    TITLE: 'Partners',
     LINKS: [
       { URL: '/foo-bar', TEXTNODE: 'Sending Email with Markting Campaigns' },
       { URL: '/foo-bar', TEXTNODE: 'Using the Template Editor' },
       { URL: '/foo-bar', TEXTNODE: 'A/B Testing Your Content' },
     ],
-    BUTTON_LINK: '/for-developers/tracking-events',
+    BUTTON_LINK: '/for-developers/partners/',
   },
 ];
 

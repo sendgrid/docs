@@ -12,7 +12,7 @@ const HOME_CARDS = [
       { URL: '/foo-bar', TEXTNODE: 'Using the Template Editor' },
       { URL: '/foo-bar', TEXTNODE: 'A/B Testing Your Content' },
     ],
-    BUTTON_LINK: '/help-support/sending-email',
+    BUTTON_LINK: '/help-support/sending-email/',
   },
   {
     ICON: contacts,
@@ -22,7 +22,7 @@ const HOME_CARDS = [
       { URL: '/foo-bar', TEXTNODE: 'Using the Template Editor' },
       { URL: '/foo-bar', TEXTNODE: 'A/B Testing Your Content' },
     ],
-    BUTTON_LINK: '/help-support/managing-contacts',
+    BUTTON_LINK: '/help-support/managing-contacts/',
   },
   {
     ICON: analytics,
@@ -32,7 +32,7 @@ const HOME_CARDS = [
       { URL: '/foo-bar', TEXTNODE: 'Using the Template Editor' },
       { URL: '/foo-bar', TEXTNODE: 'A/B Testing Your Content' },
     ],
-    BUTTON_LINK: '/help-support/analytics-reporting',
+    BUTTON_LINK: '/help-support/analytics-and-reporting/',
   },
   {
     ICON: account,
@@ -42,7 +42,7 @@ const HOME_CARDS = [
       { URL: '/foo-bar', TEXTNODE: 'Using the Template Editor' },
       { URL: '/foo-bar', TEXTNODE: 'A/B Testing Your Content' },
     ],
-    BUTTON_LINK: '/help-support/account-settings',
+    BUTTON_LINK: '/help-support/account-and-settings/',
   },
 ];
 

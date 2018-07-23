@@ -50,7 +50,7 @@ class NavMain extends Component {
       <div className="nav-wrap">
         <div className="nav-secondary">
           <div className="container-lg">
-            <Link className="nav-secondary__link" to="/release-notes">Release Notes</Link>
+            <Link className="nav-secondary__link" to="/release-notes/">Release Notes</Link>
             <a className="nav-secondary__link" href="https://sendgrid.com">SendGrid.com</a>
             {user ? (
               <div className="nav-secondary__account">
@@ -82,9 +82,9 @@ class NavMain extends Component {
 
               <div className={`nav-main__mobile ${menuState}`}>
                 <div className="nav-item">
-                  <a className="nav-main__plain" href="/">
+                  <Link className="nav-main__plain" to="/">
                     Home
-                  </a>
+                  </Link>
                 </div>
 
                 <div className="nav-item">
