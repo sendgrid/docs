@@ -73,6 +73,10 @@ aside a.active {
   border-left: 4px solid $alert-danger-text;
 }
 
+.tabbed-code {
+  margin-bottom: $scaledown-2;
+}
+
 .tabbed-code__block {
   display: none;
 }
