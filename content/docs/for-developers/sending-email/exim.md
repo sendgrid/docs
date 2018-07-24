@@ -60,10 +60,8 @@ $ /etc/init.d/exim4 restart
 ```
 
 
-{% anchor h2 %}
-cPanel
-{% endanchor %}
-
+## 	cPanel
+ 	
 If you are using cPanel with Exim and want to relay your email through SendGrid, go to **Main \> Service Configuration \> Exim Configuration Editor**, click on the Advanced Editor button, and enter the following in the **AUTH** Box:
 
 ```bash
@@ -110,7 +108,5 @@ Once you have completed and saved all changes to Exim's configuration files, you
 $ /etc/init.d/exim4 restart
 ```
 
-{% anchor h2 %}
-Exim Documentation
-{% endanchor %}
-If your version of Exim does not match the version above or you are not finding the answer you need, please check out the Official [Exim Documentation](http://www.exim.org/docs.html) for more information.
+## 	Exim Documentation
+ 	If your version of Exim does not match the version above or you are not finding the answer you need, please check out the Official [Exim Documentation](http://www.exim.org/docs.html) for more information.

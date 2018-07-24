@@ -24,8 +24,7 @@ When recipients interact with the A/B test emails, you can compare the engagemen
 
 <iframe src="https://player.vimeo.com/video/225916632" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-{% anchor h2 %} Set up an A/B test {% endanchor %}
-
+##  Set up an A/B test  	
  *To set up an A/B test on an existing campaign:*
 
 1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**.
@@ -33,8 +32,7 @@ When recipients interact with the A/B test emails, you can compare the engagemen
 1. Depending on the editor used to create the campaign, A/B testing is located on either the *Settings* tab or the *A/B Testing* tab.
 1. Once you have located the A/B Testing settings, toggle the *Activate A/B Testing* switch to **ON**.
 
-{% anchor h2 %} Choose the Type of A/B Test To Run {% endanchor %}
-
+##  Choose the Type of A/B Test To Run  	
 When you are A/B testing your email campaigns, you want to optimize for a specific metric. Determine whether you want to optimize your Open Rates, by testing the Subject Line; or your Click Rates, by testing the Email Content.
 
 <call-out>
@@ -55,8 +53,7 @@ You can test up to 6 different variations for each A/B test campaign.
 
     High click rates means that you have compelling content and calls to action (CTAs).
 
-{% anchor h2 %} Adding Your Email Versions {% endanchor %}
-
+##  Adding Your Email Versions  	
 Enter the different versions of your email where you would normally edit that piece of content in you email campaign.
 
 - **Subject Line Testing**
@@ -77,16 +74,14 @@ To know the direct cause for the best performing variation, only make one change
 
 </call-out>
 
-{% anchor h2 %} Select the A/B Test Campaign Sample Size {% endanchor %}
-
+##  Select the A/B Test Campaign Sample Size  	
 Choose percentage of your contact list that will participate in the A/B test.
 
 Each variation of the email will be sent to the same number of contacts, within the participating subset of your list.
 
 
 
-{% anchor h2 %} Determine the Winning Criteria for the A/B Test {% endanchor %}
-
+##  Determine the Winning Criteria for the A/B Test  	
 - **Open Rate**
 
   SendGrid automatically selects the winning variation based on how many recipients [open]({{root_url}}/glossary/opens.html) your email.
@@ -100,8 +95,7 @@ Each variation of the email will be sent to the same number of contacts, within 
 	Allows you to select the version you think best engages with your customers after reviewing the results of the A/B Test.
 
 
-{% anchor h2 %} Set the AB Test Duration {% endanchor %}
-
+##  Set the AB Test Duration  	
 You can set your A/B test duration between 30min - 24 hours.
 
 While you can test your email variations for up to 24 hours, emails will only be sent to the subset of contacts you've chosen to participate in the A/B test, during the test duration you set. The remainder of your contacts will only be sent the winning variation of your A/B test email after the test duration has completed.
@@ -116,8 +110,7 @@ For example, if you have a one-day sale that happens the day of your campaign, y
 
 </call-out>
 
-{% anchor h2 %} Pick and Send the Winning A/B Test Variation {% endanchor %}
-
+##  Pick and Send the Winning A/B Test Variation  	
 When a variation wins, based on your criteria and duration, you will be notified that a winner was chosen and which variation won.
 
 - **Automatically Send the Winning Version**
@@ -147,10 +140,8 @@ If you chose to Manually determine the A/B test winning criteria, you need to re
 
 ---------------
 
-{% anchor h3 %}
-Additional Resources
-{% endanchor h3 %}
-
+ ### 	Additional Resources
+  	
 - [Campaign Statistics]({{root_url}}/help-support/analytics-and-reporting/campaign-stats.html)
 - [Design Editor]({{root_url}}/help-support/sending-email/editor.html#-The-Design-Editor)
 - [Code Editor]({{root_url}}/help-support/sending-email/editor.html#-The-Code-Editor)

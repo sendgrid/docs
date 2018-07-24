@@ -8,16 +8,12 @@ navigation:
   show: true
 ---
 
-{% anchor h2 %}
-Overview
-{% endanchor %}
-
+## 	Overview
+ 	
 SendGrid supports SSL enabled click and open tracking. This feature is enabled automatically if you are using a shared IP address or have a non-whitelabeled domain. To enable SSL click and open tracking for a whitelabeled domain, additional configuration for SSL keys is required.
 
-{% anchor h2 %}
-Configuring SSL Certificates and Keys
-{% endanchor %}
-
+## 	Configuring SSL Certificates and Keys
+ 	
 In order for click and open tracking to work over SSL, SendGrid needs to present a valid certificate that will be trusted by the email recipient's browser. For whitelabeled domains, SendGrid is not able to request and/or manage certificates, as it is not the record owner for the domain.
 
 To work around this restriction, you may use a CDN service, such as 

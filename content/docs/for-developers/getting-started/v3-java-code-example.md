@@ -15,6 +15,5 @@ Do you have an [API Key](https://app.sendgrid.com/settings/api_keys) yet? If not
 
 </call-out>
 
-{% anchor h2 %}Using SendGrid's Java Library{% endanchor %}
-
+## Using SendGrid's Java Library 	
 <script src="https://gist.github.com/sendgrid-gists/78d8385f823e0d69580644cc6ca97101.js"></script>

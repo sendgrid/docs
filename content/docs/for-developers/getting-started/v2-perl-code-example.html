@@ -15,8 +15,7 @@ We recommend using SendGrid Perl, our client library, <a href="https://github.co
 
 </call-out>
 
-{% anchor h2 %}Using SendGrid's Perl Library{% endanchor %}
-```perl
+## Using SendGrid's Perl Library 	```perl
 # using SendGrid's Perl Library - https://github.com/sendgrid/sendgrid-perl
 use Mail::SendGrid;
 use Mail::SendGrid::Transport::REST;
@@ -31,10 +30,8 @@ my $sendgrid = Mail::SendGrid->new(
 Mail::SendGrid::Transport::REST->new( username => $api_user, password => $api_key );
 ```
 
-{% anchor h2 %}
-Without sendgrid-perl
-{% endanchor %}
-
+## 	Without sendgrid-perl
+ 	
 <p>If you choose not to use SendGrid's client library you may use Perl's generic SMTP library.</p>
 
 The following code builds a MIME mail message demonstrating all the portions of the SMTP API protocol. To use this example, you will need to have the following perl modules installed:

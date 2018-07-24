@@ -18,6 +18,5 @@ Do you have an [API Key](https://app.sendgrid.com/settings/api_keys) yet? If not
 
 </call-out>
 
-{% anchor h2 %}Using SendGrid's Node.js Library{% endanchor %}
-
+## Using SendGrid's Node.js Library 	
 <script src="https://gist.github.com/sendgrid-gists/069d788aefb7853706f424cbdfd7ee3c.js"></script>

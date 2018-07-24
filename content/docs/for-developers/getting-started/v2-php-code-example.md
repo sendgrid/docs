@@ -19,8 +19,7 @@ The library does not officially support the V2 API, but you can use V2 with an o
 
 </call-out>
 
-{% anchor h2 %}Using SendGrid's PHP Library{% endanchor %}
-```php
+## Using SendGrid's PHP Library 	```php
 // using SendGrid's PHP Library
 // https://github.com/sendgrid/sendgrid-php
 require 'vendor/autoload.php';
@@ -35,10 +34,8 @@ $email->addTo("test@sendgrid.com")
 $sendgrid->send($email);
 ```
 
-{% anchor h2 %}
-Using PHP with cURL
-{% endanchor %}
-If you choose not to use SendGrid's client library you may use PHP's cURL function to query the web API.
+## 	Using PHP with cURL
+ 	If you choose not to use SendGrid's client library you may use PHP's cURL function to query the web API.
 
 ```php
 <?php

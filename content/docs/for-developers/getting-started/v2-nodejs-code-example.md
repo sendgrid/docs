@@ -15,8 +15,7 @@ The library does not officially support the V2 API, but you can use V2 with an o
 
 </call-out>
 
-{% anchor h2 %} Using SendGrid's Node.js Library {% endanchor %}
-```javascript
+##  Using SendGrid's Node.js Library  	```javascript
 // using SendGrid's Node.js Library
 // https://github.com/sendgrid/sendgrid-nodejs
 var sendgrid = require("sendgrid")("SENDGRID_APIKEY");

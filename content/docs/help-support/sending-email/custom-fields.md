@@ -26,10 +26,8 @@ You can create up to 120 custom fields.
 
 </call-out>
 
-{% anchor h2 %}
-Creating Custom Fields
-{% endanchor %}
-
+## 	Creating Custom Fields
+ 	
 *To add a custom field:*
 
 1. Navigate to the [Custom Fields page]({{site.marketing_campaigns_url}}/custom_fields).
@@ -54,10 +52,8 @@ Text custom fields are limited to a size of 32,766 bytes.
 
 </call-out>
 
-{% anchor h3 %}
-Reserved Fields
-{% endanchor %}
-
+ ### 	Reserved Fields
+ 	
 Your account comes preloaded with reserved fields that cannot be removed. The following field names are all reserved:
 
 <table class="table">
@@ -77,10 +73,8 @@ Your account comes preloaded with reserved fields that cannot be removed. The fo
 
 Except for first_name, last_name, and email these fields are auto-populated by SendGrid and correspond to data for each contact in the app. Reserved fields are used to track useful metrics for your contacts by default.
 
-{% anchor h2 %}
-Deleting a Custom Field
-{% endanchor %}
-
+## 	Deleting a Custom Field
+ 	
 *To delete a custom field:*
 
 1. Navigate to **Marketing Campaigns** and select **Custom Fields**.
@@ -95,19 +89,15 @@ Deleting a custom field deletes all values for that field across your contact da
 
 </call-out>
 
-{% anchor h2 %}
-Troubleshooting
-{% endanchor %}
-
+## 	Troubleshooting
+ 	
 
 If a Custom Field value does not appear in the corresponding [Substitution Tag]({{root_url}}/help-support/sending-email/editor.html#-Using-Substitution-Tags), make sure that there is a value for that custom field associated with the contact in your contact database. If there is no value for a particular custom field, a space will be substituted instead.
 
 If you do find that the custom field has an associated value on the contact’s profile page, check the spelling of the substitution tag in the content of your campaign.
 
-{% anchor h3 %}
-Additional Resources
-{% endanchor h3 %}
-
+ ### 	Additional Resources
+  	
 - [Substitution Tags](https://sendgrid.com/docs/help-support/sending-email/editor.html#-Using-Substitution-Tags)
 - [Contacts](https://sendgrid.com/docs/help-support/managing-contacts/adding-contacts.html)
 - [Creating and exporting segments](https://sendgrid.com/docs/help-support/manging-contacts/segmenting-your-contacts.html)
