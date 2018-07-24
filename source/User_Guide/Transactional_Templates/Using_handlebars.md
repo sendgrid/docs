@@ -3,7 +3,7 @@ layout: page
 weight: 50
 title: Using Handlebars
 navigation:
-  show: false
+  show: true
 seo:
   title: Using Handlebars
   override: true
