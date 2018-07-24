@@ -22,10 +22,8 @@ When you add a new dedicated IP address to your account, you need to warm it up.
    - [Automated IP warmup hourly send schedule](#-Automated-IP-warmup-hourly-send-schedule)
    - [Why don't other ESPs require IP warmup?](#-Why-dont-other-ESPs-require-IP-warmup)
 
-{% anchor h2 %}
-What is warming up an IP?
-{% endanchor %}
-
+## 	What is warming up an IP?
+ 	
 IP warming is the practice of gradually increasing the volume of mail sent with a dedicated IP address according to a predetermined schedule. This gradual process helps to establish a reputation with ISPs (Internet Service Providers) as a legitimate email sender.
 
 When an ISP observes email suddenly coming from a new or "cold" IP address, they will take notice and immediately begin evaluating the traffic coming from that IP. Since ISPs treat email volume as a key determining factor when detecting spam, it is best to begin sending a low to moderate volume, eventually working your way up to larger volumes. This gives the receiving email providers a chance to closely observe your sending habits and record how your recipients engage with your email.
@@ -38,22 +36,16 @@ It is much easier to establish a positive reputation as a new sender, than it is
 
 </call-out>
 
-{% anchor h2 %}
-Warmup types
-{% endanchor %}
-
+## 	Warmup types
+ 	
 There are three ways to warm up your IP. If your dedicated IP is relatively new, or you've never had one before, you need to warm up your IP manually. If you are adding new dedicated IPs to existing warm IPs, you can automatically warm up your IP with the UI or the API. When your IP is being warmed up, this is your hourly sending limit:
 
-{% anchor h3 %}
-Manually warm up your IP
-{% endanchor %}
-
+ ### 	Manually warm up your IP
+ 	
 To manually warm up your IP, you need to gradually send more and more email over your IP address at the rate in our suggested [IP Warmup Schedule]({{root_url}}/assets/IPWarmupSchedule.pdf).
 
-{% anchor h3 %}
-Automated IP warmup
-{% endanchor %}
-
+ ### 	Automated IP warmup
+ 	
 *To set up automated IP warmup in the UI:*
 
 1. Go to [Settings > IP Addresses](https://app.sendgrid.com/settings/ip_addresses).
@@ -61,10 +53,8 @@ Automated IP warmup
 1. Select **Use Automated IP warmup**.
 1. Save the **Edit Your Dedicated IP Address** screen.
 
-{% anchor h3 %}
-Automated IP warmup API
-{% endanchor %}
-
+ ### 	Automated IP warmup API
+ 	
 You can also put your IP address into warmup mode with our [Automated Warmup API]({{root_url}}/help-support/getting-started/warming-up-an-ip-address.html) - this automatically throttles traffic sent through your new IP according to our [warm up schedule]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_warmup_schedule.html).
 
 <call-out type="warning">
@@ -73,10 +63,8 @@ When automatically warming up an IP, SendGrid limits the amount of email sent th
 
 </call-out>
 
-{% anchor h3 %}
-Automated IP warmup hourly send schedule
-{% endanchor %}
-
+ ### 	Automated IP warmup hourly send schedule
+ 	
 <table class="table table-striped table-bordered">
  <tr>
    <td>
@@ -425,18 +413,14 @@ Automated IP warmup hourly send schedule
 </table>
 
 
-{% anchor h2 %}
-Why don't other ESPs require IP warmup?
-{% endanchor %}
-
+## 	Why don't other ESPs require IP warmup?
+ 	
 Many other email service providers do not offer dedicated IP addresses to their customers - they place all of their customers on shared IP groups by default. Warming up is not required for a shared IP group - SendGrid handles this automatically.
 
 Having a dedicated IP allows you to control your own reputation completely, and prevents your sending from being impacted by the reputations of other SendGrid users.
 
-{% anchor h2 %}
-Additional Resources
-{% endanchor h2 %}
-
+## 	Additional Resources
+ 	
 - [Adding a dedicated IP]({{root_url}}/help-support/account-and-settings/dedicated-ip-addresses.html)
 - [API IP Access Management]({{root_url}}/help-support/account-and-settings/ip-access-management.html)
 - [SendGrid billing information]({{root_url}}/help-support/account-and-settings/billing.html)

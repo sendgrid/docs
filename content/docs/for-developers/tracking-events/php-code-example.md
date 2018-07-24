@@ -6,10 +6,8 @@ navigation:
   show: true
 ---
 
-{% anchor h2 %}
-Parse Webhook
-{% endanchor %}
-
+## 	Parse Webhook
+ 	
 In this example, we want to parse all emails at *address*@email.sendgrid.biz and post the parsed email to https://sendgrid.com/email.php.
 
 Given this scenario, the following are the parameters you would set at the [Parse API settings page]({{site.site_url}}/developer/reply):
@@ -43,11 +41,9 @@ if($num_attachments){
 ```
 
 
-{% anchor h2 %}
-Event Webhook
-{% endanchor %}
-
-To use the Event Webhook, you must first [setup Event Notification]({{%20root_url%20}}/API_Reference/Webhooks/event.html#-Setup).
+## 	Event Webhook
+ 	
+To use the Event Webhook, you must first [setup Event Notification]({{root_url}}/API_Reference/Webhooks/event.html#-Setup).
 
 In this scenario, we assume you've set the Event Notification URL to go the endpoint `/parse.php` on your server. Given this scenario the following code will allow you to process events:
 

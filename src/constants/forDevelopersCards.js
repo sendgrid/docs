@@ -10,7 +10,7 @@ const FOR_DEVS_CARDS = [
     ICON: plane,
     TITLE: 'Sending Email',
     LINKS: [
-      { URL: '/foo-bar', TEXTNODE: 'Sending Email with Markting Campaigns' },
+      { URL: '/foo-bar', TEXTNODE: 'Sending Email with Markting Campaigns :)' },
       { URL: '/foo-bar', TEXTNODE: 'Using the Template Editor' },
       { URL: '/foo-bar', TEXTNODE: 'A/B Testing Your Content' },
     ],

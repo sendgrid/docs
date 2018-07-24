@@ -21,20 +21,14 @@ For most alerts, you can choose to have the alert sent to you as needed, hourly,
 
 You can also change which email address these alerts are sent to.
 
-{% anchor h2 %}
-Add alert
-{% endanchor %}
-
+## 	Add alert
+ 	
 To add a new alert, click the large “+” or the “Add Alert” button. When the window appears, select the type of alert you would like to receive. Some alerts have options for being sent when a certain threshold is met or when a time period is met.
 
-{% anchor h2 %}
-Alerts
-{% endanchor %}
-
-{% anchor h3 %}
-Usage limit
-{% endanchor %}
-
+## 	Alerts
+ 	
+ ### 	Usage limit
+ 	
 <call-out>
 
 Any accounts or subusers without an email limit alert on May 5th, 2015 or that were created after May 5th, 2015 will find this alert set up with a threshold of 90% on their account automatically.
@@ -43,10 +37,8 @@ Any accounts or subusers without an email limit alert on May 5th, 2015 or that w
 
 You will receive an alert when you have used 90% of your current package’s number of emails. Subusers with recurring or nonrecurring email limits will have this alert set up automatically. Subusers who have unlimited emails will not have this alert set up automatically.
 
-{% anchor h3 %}
-Stats notifications
-{% endanchor %}
-
+ ### 	Stats notifications
+ 	
 An email containing your stats sent at the frequency you define. For example:
 
 Weekly stats will be sent once week and show the trailing week.

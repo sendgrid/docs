@@ -22,10 +22,8 @@ First, a sender puts together the content that their recipients will love. Then 
 
 Imagine that a sender is a host at a party and all of the other guests are the recipients of the message. The host will then shake every guest’s hand and during that “handshake” they will have this SMTP conversation. In the end, the guest (i.e. recipient and its recipient server) will determine if they will accept the message or not. In this scenario, you can think of SendGrid as a person at the party grabbing both the host’s and guest’s hands and making the handshake and discussion actually happen.
 
-{% anchor h2 %}
-The “Handshake” Details and Results
-{% endanchor %}
-
+## 	The “Handshake” Details and Results
+ 	
 The sender connects to the SMTP server through SendGrid and tells the server the final destination it would like its message to go to. Let’s say it is example@example.com. The SMTP server recognizes the domain portion (the part after the @ sign) of “customer.com” and contacts the receiving server responsible for accepting messages for that domain. During this connection the two servers exchange multiple pieces of information. The receiving server typically then says one of the following:
 
 * “Yes, I know who ‘person’ is and all is in order to deliver it to their inbox.”
@@ -33,26 +31,18 @@ The sender connects to the SMTP server through SendGrid and tells the server the
 * “Yes, I know who ‘person’ is and there are still some items I have to identify so I am not going to delivery the message at this time but I am not sending it back to the sender.” (aka a deferred message)
 * “No, I do not know who ‘person’ is and will be sending the message back to the sender.” (aka a bounced message)
 
-{% anchor h2 %}
-Determining Factors of Delivery
-{% endanchor %}
-
+## 	Determining Factors of Delivery
+ 	
 As mentioned before, there are many pieces of information exchanged between the sending and receiving mail servers. As you can see from the email flow diagram, the other two places SendGrid assists in the message path (along with the Outbound Mail Server) are the DNS (Domain Name System) and Authentication portions. The receiving server wants to trust the mail that is being exchanged in order to accept it. DNS and Authentication assists with this decision.
 
-{% anchor h3 %}
-DNS
-{% endanchor %}
-This stands for “Domain Name System” and it is thought of as the “phone book for the internet.” It houses many pieces of information for the sending domain of a message. The receiving server checks this phone book to see if it can determine who the sender is and if they are trusted.
+ ### 	DNS
+ 	This stands for “Domain Name System” and it is thought of as the “phone book for the internet.” It houses many pieces of information for the sending domain of a message. The receiving server checks this phone book to see if it can determine who the sender is and if they are trusted.
 
-{% anchor h3 %}
-Authentication
-{% endanchor %}
-The receiving server will check to see if there is an SPF (Sender Policy Framework) record in place (to see if the mail is coming from an IP authorized by that domain's administrators) if there is a DKIM (DomainKeys Identified Mail) record in place (to see if the message was tampered with in transit by someone other than the sender) and if there is a DMARC (Domain-based Mail Authentication Reporting and Conformance) record in place (this tells the receiving server where to place the mail based on the results of the SPF and DKIM authentication). SendGrid’s sender authentication feature assists with setting up both SPF and DKIM properly. This assists the the host (Sender) in being more recognizable and for the guest (recipient) and their mailbox provider to more easily trust the content attempting to be shared during the conversation.
+ ### 	Authentication
+ 	The receiving server will check to see if there is an SPF (Sender Policy Framework) record in place (to see if the mail is coming from an IP authorized by that domain's administrators) if there is a DKIM (DomainKeys Identified Mail) record in place (to see if the message was tampered with in transit by someone other than the sender) and if there is a DMARC (Domain-based Mail Authentication Reporting and Conformance) record in place (this tells the receiving server where to place the mail based on the results of the SPF and DKIM authentication). SendGrid’s sender authentication feature assists with setting up both SPF and DKIM properly. This assists the the host (Sender) in being more recognizable and for the guest (recipient) and their mailbox provider to more easily trust the content attempting to be shared during the conversation.
 
-{% anchor h3 %}
-Reputation
-{% endanchor %}
-When reviewing the sending IP and domain, the receiving server will factor in both of the following items:
+ ### 	Reputation
+ 	When reviewing the sending IP and domain, the receiving server will factor in both of the following items:
 
 The reaction of its other recipients to mail sent by that same IP and domain (i.e. marked as spam or not).
 Where the receiving server previously decided to place any mail from the same IP and domain.
@@ -63,17 +53,11 @@ The reputation of the domains included in the links within the body content will
 
 </call-out>
 
-{% anchor h3 %}
-User Level Filtering
-{% endanchor %}
-
+ ### 	User Level Filtering
+ 	
 Along with these items listed above, some recipients may also have their own individual rules within their inbox of where certain mail will go. This placement is harder to change, aside from making sure that your content is desired by the recipient and they won’t be creating any custom filters to have your messages delivered anywhere but the inbox.
 
-{% anchor h2 %}
-Reacting to Opinions of the “Guests”
-{% endanchor %}
-
-{% anchor h3 %}
-Feedback for the Guests to Give the Host
-{% endanchor %}
-Within email, there is a function known as a Feedback Loop. These are created by the mailbox providers and a Sender can get set up to receive notification through them to inform them when a recipient complains about the Sender’s message (aka, marking a message as junk or spam). This should help the host (Sender) to be aware of when certain guests didn’t prefer the content included in their interaction and the host (Sender) should not try to have another conversation (aka send a message) to this guest in the future.
+## 	Reacting to Opinions of the “Guests”
+ 	
+ ### 	Feedback for the Guests to Give the Host
+ 	Within email, there is a function known as a Feedback Loop. These are created by the mailbox providers and a Sender can get set up to receive notification through them to inform them when a recipient complains about the Sender’s message (aka, marking a message as junk or spam). This should help the host (Sender) to be aware of when certain guests didn’t prefer the content included in their interaction and the host (Sender) should not try to have another conversation (aka send a message) to this guest in the future.

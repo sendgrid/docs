@@ -8,9 +8,7 @@ navigation:
   show: true
 ---
 
-{% anchor h2 %}
-Send Email From Your Application {% endanchor %}
-
+## 	Send Email From Your Application  	
 <p>SendGrid provides two ways to send email: through our <a href="{{root_url}}/API_Reference/SMTP_API/index.html">SMTP relay</a> or
 through our <a href="{{root_url}}/API_Reference/Web_API_v3/index.html">Web API</a>.</p>
 
@@ -22,10 +20,8 @@ through our <a href="{{root_url}}/API_Reference/Web_API_v3/index.html">Web API</
 
 </call-out>
 
-{% anchor h3 %}
-Web API
-{% endanchor %}
-
+ ### 	Web API
+ 	
 <p>The <a href="{{root_url}}/API_Reference/Web_API_v3/index.html">Web API</a> has some advantages over SMTP:</p>
 
 <ul>
@@ -42,10 +38,8 @@ Web API
   against a web API provides quicker development.</li>
 </ul>
 
-{% anchor h3 %}
-SMTP Relay
-{% endanchor %}
-
+ ### 	SMTP Relay
+ 	
 <p>If you are integrating SendGrid with an existing application, setting up the application to use our SMTP relay is easiest, as it only requires modifying SMTP configuration.
 
 <ul>
@@ -86,10 +80,8 @@ The IP addresses at smtp.sendgrid.net are changed often and without notice. If y
 
 </call-out>
 
-{% anchor h2 %}
-Receive Email From Your Application
-{% endanchor %}
-<p>Though SendGrid does not store messages or provide mailboxes,
+## 	Receive Email From Your Application
+ 	<p>Though SendGrid does not store messages or provide mailboxes,
 the <a href="{{root_url}}/Classroom/Basics/Inbound_Parse_Webhook/setting_up_the_inbound_parse_webhook.html">Inbound Parse
   Webhook</a> parses the email bodies and attachments from incoming emails
 and posts them to a URL that you choose.</p>
@@ -97,10 +89,8 @@ and posts them to a URL that you choose.</p>
 <p>Examples include posting blog articles via email or processing email
 replies.</p>
 
-{% anchor h2 %}
-Power Users and High Volume Senders
-{% endanchor %}
-
+## 	Power Users and High Volume Senders
+ 	
 <p>A local mail server, such as Postfix, is the most robust way to send
 email through SendGrid when configured to queue all email from your application and then
 relay the messages through SendGrid as a smart host. This has the least

@@ -14,10 +14,8 @@ If an email address (user) does not exist at the organization or domain, it will
 
 It is usually caused due to SMTP 5.5.0 errors which cause an email to be undeliverable to an inactive, incorrect, or disabled recipient address.
 
-{% anchor h3 %}
-Additional Resources
-{% endanchor %}
-
+ ### 	Additional Resources
+ 	
 * [Delivery Metrics]({{root_url}}/User_Guide/Statistics/index.html)
 * [Bounces]({{root_url}}/glossary/bounces.html)
 * [Subscriber List Management]({{root_url}}/glossary/subscriber-list-management.html)

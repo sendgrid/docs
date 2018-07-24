@@ -41,10 +41,8 @@ In order to gain access to the Email Activity Feed API, you must purchase [addit
 
 </call-out>
 
-{% anchor H2 %}
-Types of email activity data
-{% endanchor %}
-
+## 	Types of email activity data
+ 	
 The Email Activity feed allows you to view specific information about messages sent from your account.
 
 <table class="table" style="table-layout:fixed">
@@ -102,16 +100,12 @@ The Email Activity feed allows you to view specific information about messages s
   </tr>
 </table>
 
-{% anchor H2 %}
-Filtering email activity
-{% endanchor %}
-
+## 	Filtering email activity
+ 	
 The Email Activity feed lists each email sent. Click on each email to view the current list of triggered events for that email. Use our basic or advanced search to filter by email subject, recipients, or event types.
 
-{% anchor H3 %}
-Basic search
-{% endanchor %}
-
+## 	Basic search
+ 	
 The email address field filters with an approximate, or fuzzy search. The date field pulls filters events that fit within the precise date range specified.
 
 <call-out>
@@ -120,10 +114,8 @@ To filter by event type, like in the legacy Email Activity Feed, use [Advanced s
 
 </call-out>
 
-{% anchor H3 %}
-Advanced Search
-{% endanchor %}
-
+## 	Advanced Search
+ 	
 In addition to viewing the email activity associated with your account by recipient email address, domain, or event date, you can also use the following filters to sort your data:
 
 * API Key ID
@@ -163,10 +155,8 @@ In addition to viewing the email activity associated with your account by recipi
 or
 * Search emails by **all** of the following - This search will return fewer results and will pull in events that meet *every* criteria specified by the selected filters.
 
-{% anchor H2 %}
-Viewing event history
-{% endanchor %}
-
+## 	Viewing event history
+ 	
 *To view event history:*
 
 1. Navigate to the event you wish to view and click on the entry.
@@ -175,20 +165,16 @@ Viewing event history
 
 ![]({{root_url}}/img/EASE_email_information.gif "Email Activity information panel")
 
-{% anchor H2 %}
-Exporting a CSV
-{% endanchor %}
-
+## 	Exporting a CSV
+ 	
 *To export a CSV:*
 
 1. In the top right corner of the activity feed, click **Export CSV**.
    This triggers an email to the email address associated with your SendGrid account.
 1. Open the email and then click **Download**.
 
-{% anchor h2 %}
-Additional Resources
-{% endanchor h2 %}
-
+## 	Additional Resources
+ 	
 - [Email Activity API](https://sendgrid.api-docs.io/v3.0/email-activity/filter-all-messages)
 - [Legacy Email Activity](https://sendgrid.com/docs/User_Guide/email_activity.html)
 - [Getting Started with the Email Activity API](https://sendgrid.com/docs/API_Reference/Web_API_v3/Tutorials/getting_started_email_activity_api.html)

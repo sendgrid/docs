@@ -16,10 +16,8 @@ In less than five minutes your stats should be sent to your New Relic Dashboard.
 
 * * * * *
 
-{% anchor h2 %}
-Settings
-{% endanchor %}
-
+## 	Settings
+ 	
 Settings may be changed through:
 
 -   [Web API]({{root_url}}/API_Reference/Web_API/filter_settings.html#-SendGrid-for-New-Relic) (on an account wide basis)
@@ -43,10 +41,8 @@ After you have entered your settings and saved them, enable the app.
 
 * * * * *
 
-{% anchor h2 %}
-New Relic Dashboard
-{% endanchor %}
-
+## 	New Relic Dashboard
+ 	
 Go on New Relic site and there you will find the SendGrid extension on the left menu. After clicking on 'SendGrid' extension, a SendGrid instance will be displayed and if you activated the subuser options beneath the stats of the primary account will be the stats for subusers.
 
 ![]({{root_url}}/images/newrelic-dashboard1.png)
