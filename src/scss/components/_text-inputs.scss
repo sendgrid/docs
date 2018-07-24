@@ -1,0 +1,293 @@
+input {
+  &:focus,
+  &:active {
+    outline: 0;
+  }
+}
+
+.input-info,
+.input-text-info {
+  display: inline-block;
+  padding-top: 6px;
+  font-size: 12px;
+  line-height: 18px;
+
+  &.danger {
+    color: $ron-burgundy;
+  }
+}
+
+.input-text-wrap {
+  position: relative;
+  padding-top: 15px;
+  margin-bottom: 20px;
+
+  &.is-required {
+    label::after {
+      position: absolute;
+      top: 6px;
+      right: -9px;
+      width: 4px;
+      height: 4px;
+      background: $ron-burgundy;
+      border-radius: 4px;
+      content: "";
+    }
+  }
+
+  &.is-focused,
+  &.has-value {
+    .input-text-label {
+      top: 0;
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    label::after {
+      top: 4px;
+    }
+  }
+
+  &.is-disabled {
+    .input-text-label {
+      color: $text-input-disabled-color;
+    }
+
+    [type="text"],
+    [type="password"],
+    [type="number"],
+    [type="email"],
+    [type="tel"] {
+      pointer-events: none;
+      border-bottom-color: $text-input-disabled-border;
+    }
+  }
+
+  &.is-error,
+  &.is-error.is-focused,
+  &.is-error.has-value {
+    [type="text"],
+    [type="password"],
+    [type="number"],
+    [type="email"],
+    [type="tel"] {
+      border-bottom-color: $ron-burgundy;
+      box-shadow: $ron-burgundy 0 1px 0;
+    }
+  }
+
+  &.is-valid::after,
+  &.is-invalid::after,
+  &.is-search::after {
+    @include icon-font-base;
+    position: absolute;
+    top: 19px;
+    right: 0;
+    pointer-events: none;
+  }
+
+
+  &.is-valid::after {
+    color: $mantis;
+    content: $icon-status-positive;
+  }
+
+  &.is-invalid::after {
+    color: $ron-burgundy;
+    content: $icon-status-negative;
+  }
+
+  &.is-search {
+    &::after {
+      content: $icon-search;
+    }
+
+    &.is-focused::after {
+      font-weight: bold;
+      color: $sg-blue;
+    }
+  }
+
+  &.is-calendar {
+    &::before {
+      @include icon-font-base;
+      position: absolute;
+      top: 19px;
+      right: 0;
+      pointer-events: none;
+      content: $icon-calendar;
+    }
+
+    &.is-focused::before {
+      color: $sg-blue;
+    }
+  }
+
+  &.has-units {
+    &[class*="has-arrow-"]::before {
+      @include icon-font-base;
+      position: absolute;
+      top: 19px;
+      left: 0;
+    }
+
+    &.has-arrow-top::before {
+      content: $icon-sort-asc;
+    }
+
+    &.has-arrow-right::before {
+      content: $icon-sort-asc;
+      transform: rotate(90deg);
+    }
+
+    &.has-arrow-bottom::before {
+      content: $icon-sort-desc;
+    }
+
+    &.has-arrow-left::before {
+      content: $icon-sort-asc;
+      transform: rotate(-90deg);
+    }
+
+    &::after {
+      position: absolute;
+      top: 20px;
+      right: 3px;
+      font-size: 12px;
+      content: attr(data-units);
+    }
+
+    &[class*="has-arrow-"] [type="text"],
+    &[class*="has-arrow-"] [type="number"] {
+      padding-right: 20px;
+      padding-left: 20px;
+      text-align: right;
+    }
+  }
+
+  &.is-large {
+    .input-text-label {
+      top: 15px;
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    [type="text"],
+    [type="password"],
+    [type="number"],
+    [type="email"],
+    [type="tel"] {
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+
+  &.is-large.is-focused,
+  &.is-large.has-value {
+    .input-text-label {
+      top: 0;
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+
+  [type="text"],
+  [type="password"],
+  [type="number"],
+  [type="email"],
+  [type="tel"] {
+    display: block;
+    width: 100%;
+    padding: 0;
+    font-size: 13px;
+    line-height: 24px;
+    color: $slate;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid $slate-20;
+    box-shadow: transparent 0 1px 0;
+    transition: 0.3s border-color, 0.3s box-shadow;
+
+    &:focus {
+      border-color: $sg-blue;
+      box-shadow: $sg-blue 0 1px 0;
+    }
+
+    &:disabled {
+      background: transparent;
+    }
+  }
+
+  // add right padding to push number selector over so it doesn't overlap icons
+  [type="number"] {
+    padding-right: 20px;
+  }
+}
+
+.input-text-label {
+  position: absolute;
+  top: 18px;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 18px;
+  pointer-events: none;
+  transition: 0.3s top, 0.3s font-size;
+  transition-timing-function: cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+.input-info-tooltip {
+  position: absolute;
+  top: 19px;
+  right: 0;
+}
+
+.input-search-results {
+  @include dropdown-shadow;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: $slate-02;
+  border: 1px solid $slate-10;
+  border-radius: $border-radius;
+
+  .loading {
+    display: none;
+
+    &.is-visible {
+      display: block;
+    }
+  }
+}
+
+.search-results-title,
+.search-result {
+  padding: 9px 18px 9px 30px;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.search-results-title {
+  margin-bottom: 0;
+  color: $slate;
+  background-color: $text-input-search-title-bg;
+}
+
+.search-results {
+  padding: 0;
+  margin: 0;
+}
+
+.search-result {
+  overflow: hidden;
+  color: $slate-80;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: 0.3s color, 0.3s background-color;
+
+  &:hover {
+    color: $slate;
+    cursor: pointer;
+    background-color: $slate-05;
+  }
+}

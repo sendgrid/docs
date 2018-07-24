@@ -1,0 +1,67 @@
+.conf-alert {
+  @include dropdown-shadow;
+  width: 330px;
+  padding: 18px 30px;
+  background: $slate-02;
+  border: 1px solid $slate-10;
+}
+
+.sg-modal .conf-alert {
+  margin-top: -40px;
+  opacity: 0;
+  transition: margin-top 0.4s, opacity 0.4s;
+}
+
+.sg-modal.show .conf-alert,
+.sg-modal.is-visible .conf-alert {
+  margin-top: 0;
+  opacity: 1;
+}
+
+.conf-alert-header {
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+  color: $slate;
+}
+
+.conf-alert-header-with-icon {
+  position: relative;
+  padding-left: 20px;
+
+  i {
+    position: absolute;
+    top: 0;
+    left: -10px;
+  }
+}
+
+.conf-alert-body {
+  margin-top: 12px;
+}
+
+.conf-alert-text {
+  margin-bottom: 20px;
+  font-size: 12px;
+  line-height: 18px;
+  color: $slate;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.conf-alert-actions {
+  margin-top: 20px;
+  text-align: right;
+
+  .btn {
+    margin-left: 12px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}

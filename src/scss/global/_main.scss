@@ -1,0 +1,71 @@
+@import '../../scss/global/variables';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $slate-10;
+}
+
+a,
+a:hover,
+a:active,
+a:focus,
+button,
+button:hover,
+button:active,
+button:focus {
+  outline: none;
+}
+
+a,
+.link {
+  color: $sg-blue-80;
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &:hover {
+    color: $sg-blue;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.docs-wrap {
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.main {
+  padding: $scaleup-6 0;
+}
+
+.card__link {
+  display: block;
+  width: 100%;
+  margin-bottom: $scaleup-1;
+}
+
+.btn-white {
+  color: $sg-blue;
+  background-color: $white;
+  border-color: $white;
+
+  &:hover,
+  &:focus {
+    color: $sg-blue;
+    background-color: $white;
+  }
+
+  &:active,
+  &.is-active {
+    @include btn-shadow;
+  }
+}

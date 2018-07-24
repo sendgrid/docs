@@ -1,0 +1,124 @@
+// sass-lint:disable no-vendor-prefixes
+// linting disabled due to browser specific styles
+
+.input-select-wrap {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+
+  .input-select-label {
+    display: block;
+    font-size: 12px;
+    line-height: 15px;
+    cursor: pointer;
+  }
+
+  &.is-required {
+    label::after {
+      position: absolute;
+      top: 4px;
+      width: 4px;
+      height: 4px;
+      margin-left: 5px;
+      background: $ron-burgundy;
+      border-radius: 4px;
+      content: "";
+    }
+  }
+
+  &.is-disabled {
+    .input-select-label {
+      cursor: default;
+    }
+
+    .input-select-label,
+    .input-select::after {
+      color: $select-disabled-color;
+    }
+  }
+
+  &.is-error {
+    .input-select-label {
+      color: $slate-60;
+    }
+
+    .input-select,
+    .select2-container {
+      border-bottom-color: $ron-burgundy;
+      box-shadow: $ron-burgundy 0 1px 0;
+    }
+  }
+
+  .option-filter {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+    border-radius: 100%;
+
+    &.option-filter-delivered {
+      background-color: $mantis;
+    }
+
+    &.option-filter-processed {
+      background-color: $slate-20;
+    }
+
+    &.option-filter-not-delivered {
+      background-color: $ron-burgundy;
+    }
+  }
+}
+
+.input-select {
+  position: relative;
+  background-color: transparent;
+  border-bottom: 1px solid $slate-20;
+  outline: 0;
+  box-shadow: transparent 0 1px 0;
+
+  &::after {
+    @include icon-font-base;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    color: $slate-60;
+    pointer-events: none;
+    content: $icon-caret;
+  }
+
+  select {
+    display: block;
+    width: 100%;
+    height: 24px;
+    font-size: 13px;
+    line-height: 24px;
+    color: $slate;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -moz-margin-start: -3px;
+
+    &:-moz-focusring {
+      color: transparent;
+      text-shadow: 0 0 0 $slate;
+    }
+
+    &::-ms-expand {
+      display: none;
+    }
+
+    &[disabled] {
+      color: $select-disabled-color;
+      background-color: transparent;
+    }
+  }
+
+  &.is-focused {
+    border-bottom-color: $sg-blue;
+    box-shadow: $sg-blue 0 1px 0;
+  }
+}
