@@ -24,6 +24,7 @@ Create an Unsubscribe Group
 {% endanchor %}
 
 *To create an Unsubscribe Group:*
+
 1. Select **Marketing Campaigns** and then click **Unsubscribe Groups**.
 1. Click **Add Unsubscribe Group**. 
 1. Add a *Group Name* and *Group Description* and then click **Save Unsubscribe Group**. 
@@ -37,12 +38,15 @@ Add recipients to an Unsubscribe Group
 {% endanchor %}
 
 *To upload a CSV:*
+
 1. Find the group you want to add recipients to and click the action menu. 
 ![]({{root_url}}/img/<unsub_action_menu>.png "Unsubcribe Group action menu")
 1. Select **Upload a CSV**. 
-1. 
+1. Drag the CSV you want to upload into the field, or click **select a CSV file to upload** and locate the file you want to upload.
+1. Click **Upload CSV**. 
 
 *To manually add recipients to an Unsubscribe Group:*
+
 1. Find the group you want to add recipients to and click the action menu.
 1. Select **Manually Add**. 
 1. Enter a recipient email address and then click **Save**. 
