@@ -2,6 +2,7 @@
 layout: page
 weight: 90
 title: Amazon Marketplace
+group: aws
 navigation:
   show: true
 ---
