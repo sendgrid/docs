@@ -46,6 +46,7 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
+          'sendgrid-remark-paths',
           {
             resolve: 'gatsby-remark-images',
             options: {
