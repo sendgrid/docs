@@ -27,11 +27,11 @@ Check out some pre-made integrations for the SendGrid Parse Webhook in the [Libr
 </call-out>
 
 ## 	Setup
- 	
+
 To begin processing email using SendGrid's Inbound Parse Webhook, you will have to setup MX Records, choose the hostname (or receiving domain) that will be receiving the emails you want to parse, and define the URL where you want to POST your parsed emails.
 
  ### 	Setting up an MX Record
- 	
+
   **(1)** Navigate to the MX Records page on your hosting provider’s website. If you’re unsure who your hosting or DNS provider is, please contact your website administrator.
 
   **(2)** Create a new MX record for the subdomain (e.g. parse.yourdomain.com) you want to process incoming email.
@@ -59,7 +59,7 @@ If there is no field for priority, type 10 before the address. e.g. `10 mx.sendg
 </call-out>
 
  ### 	Pointing to a Hostname and URL
- 	
+
   **(1)** From your SendGrid Dashboard click **Settings**, and then click **Inbound Parse**.
 
   You are now on the Inbound Parse page.
@@ -78,7 +78,7 @@ The URL must be accessible from the public web.
 
   **(3)** Enter the subdomain (e.g. "parse") and select the authenticated root domain for your receiving domain. Enter the public URL where you would like the parsed data to be POSTed.
 
-  ![]({{root}}/images/setting_up_inbound_parse_1.png)
+  ![]({{root_url}}/images/setting_up_inbound_parse_1.png)
 
   **(4)** (Optional) Check **Spam Check** if you want Inbound Parse to check incoming email for spam. Checking this box will also include the spam report and spam score in the payload.
 
@@ -95,7 +95,7 @@ If you do not check **Send Raw**, the post will be multipart/form-data with the 
 You have just finished configuring Inbound Parse!
 
 ## 	Testing
- 	
+
 To test if everything is working, send an email from your email account to example@example.com.
 
 <call-out>
@@ -113,7 +113,7 @@ Remember to direct your incoming email to your hostname (e.g. example@example.co
 </call-out>
 
 ## 	Default Parameters
- 	
+
 <table class="table table-bordered table-striped">
    <tbody>
       <tr>
@@ -180,7 +180,7 @@ Remember to direct your incoming email to your hostname (e.g. example@example.co
 </table>
 
 ## 	Example Default Payload
- 	
+
 ```
 [Date] array(16) {
   ["headers"]=>
@@ -257,7 +257,7 @@ Content analysis details:   (2.6 points, 5.0 required)
 ```
 
 ## 	Raw Parameters
- 	
+
 <table class="table table-bordered table-striped">
    <tbody>
       <tr>
@@ -320,7 +320,7 @@ The total message size limit, including the message itself and all attachments, 
 </call-out>
 
 ## 	Example Raw Payload
- 	
+
 ```
 array(11) {
   ["dkim"]=>
@@ -504,7 +504,7 @@ Content analysis details:   (0.4 points, 5.0 required)
 ```
 
 ## 	Other Inbound Parse Documentation
- 	
+
   - [Parse API]({{root_url}}/API_Reference/Web_API_v3/Webhooks/parse.html) -
     Manage Inbound Parse Webhook settings using the Parse API (Web API v3).
   - [Parse Settings Subuser]({{root_url}}/API_Reference/Web_API/Customer_Subuser_API/parse_settings.html) -
@@ -515,7 +515,7 @@ Content analysis details:   (0.4 points, 5.0 required)
     Get current Parse settings and create, edit, and delete entries using the Reseller Customer Subuser API (Web API v2).
 
 ## 	Statistics
- 	
+
 SendGrid provides [statistics](https://app.sendgrid.com/statistics/parse_webhook) of how many emails parsed over time. You can specify what is displayed on the graph by adjusting the statistics filters.
 
 For more information, please see [Parse Webhook Stats]({{root_url}}/API_Reference/Web_API_v3/Stats/parse.html).
