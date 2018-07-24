@@ -39,9 +39,7 @@ Marketing Campaigns is all about supporting your unique workflow, so you can get
   * [Creating Categories](#-Creating-Categories)
 
 
-{% anchor h2 %}
-Choosing The Right Editor
-{% endanchor %}
+## Choosing The Right Editor
 
 The [**Code Editor**](#-The-Code-Editor) is perfect for users who are importing, creating or editing custom HTML. It offers a robust environment to upload images, backed by a feature-packed editor – complete with split-screen preview, error flagging, scroll-syncing, syntax highlighting and more. While other email editors may be notorious for adding excess code to your project, rest assured that our editor never modifies your carefully crafted HTML.
 
@@ -55,9 +53,7 @@ The [Design Editor](#-The-Design-Editor) features a number of convenient ways to
 
 </call-out>
 
-##
-The Code Editor
-{% endanchor %}
+## The Code Editor
 
 SendGrid’s marketer-friendly code editor features a powerful, split screen editing experience – perfect for building campaigns with your own custom HTML. It offers a number of helpful features, often found in native editors.
 
@@ -67,9 +63,8 @@ SendGrid’s marketer-friendly code editor features a powerful, split screen edi
 * [Using Substitution Tags](#-Using-Substitution-Tags)
 * [Adding Categories](#-Adding-Categories)
 
-<anchor>
+
 Code Editor Features
-{% endanchor %}
 
 **Live Template Preview** -
 See how your email looks in real-time, as you write and edit code. No more tabbing between windows, refreshing or re-rendering. Marketing Campaigns’ split-screen editing experience displays your code on the left, and a pixel-perfect preview on the right.
@@ -86,9 +81,8 @@ Easily pinpoint the HTML element you wish to edit. Click anywhere on the right-s
 **Syntax Highlighting** -
 As you edit, parts of your code highlights in various colors according to the type of syntax. This added dimension provides clarity and efficiency as you search for, locate and edit code elements.
 
-{% anchor h3 %}
-Getting Started With The Code Editor
-{% endanchor %}
+
+### Getting Started With The Code Editor
 
 1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**.
 2. Click **Create Campaign**.
@@ -120,9 +114,7 @@ Once you create a new campaign or template in the Code Editor, it cannot be edit
 
 </call-out>
 
-{% anchor h3 %}
-Uploading Images
-{% endanchor %}
+### Uploading Images
 
 1. Select the **images** icon above the HTML code. A window opens where you can upload images to your library.
 2. Select the image you want to add from your image library.
@@ -130,9 +122,7 @@ Uploading Images
 4. Paste this URL in an image source tag in your campaign or template's HTML.
 Example: `<img src="your image URL here">`
 
-{% anchor h3 %}
-Using Substitution Tags
-{% endanchor %}
+### Using Substitution Tags
 
 Substitution tags allow you to easily generate dynamic content for each recipient on your contact list. When you send to a list of recipients, you can specify substitution tags specific to each recipient.
 
@@ -221,9 +211,7 @@ For contacts with no entry in a custom field, the substitution tag appears blank
 
 </call-out>
 
-{% anchor h3 %}
-Adding Categories
-{% endanchor %}
+### Adding Categories
 
 Assigning categories to a campaign allows you to track emails based on your own categorization system. By assigning your campaign to a category, you can track statistics across multiple similar campaigns. Example categories may include: “Weekly Digest,” “Product Announcements.”
 
@@ -238,9 +226,7 @@ Currently, only 10 categories can be added to each campaign.
 
 </call-out>
 
-{% anchor h2 %}
-The Design Editor
-{% endanchor %}
+## The Design Editor
 
 <iframe src="https://player.vimeo.com/video/221496251" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
@@ -262,9 +248,7 @@ SendGrid’s flexible design editor allows you to build your templates and campa
 * [Exporting HTML From the Design Editor](#-Exporting-HTML-From-the-Design-Editor)
 * [Creating Categories](#-Creating-Categories)
 
-{% anchor h3 %}
-Getting Started With the Design Editor
-{% endanchor %}
+### Getting Started With the Design Editor
 
 1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**.
 1. Click **Create Campaign**.
@@ -277,9 +261,7 @@ Getting Started With the Design Editor
 4. Select **Design Editor**, and then click **Continue**.
 <br>The Design Editor opens.
 
-{% anchor h3 %}
-Using Drag & Drop Modules
-{% endanchor %}
+### Using Drag & Drop Modules
 
 Drag & drop editing helps you swiftly build your campaign, using pre-built content modules. You can easily edit individual modules in the left-hand sidebar and reorder modules in your campaign body with a simple click and drag of your mouse.
 
@@ -292,9 +274,8 @@ Drag & drop editing helps you swiftly build your campaign, using pre-built conte
 2. Find the module tile you want to add to your campaign and drag and drop it into your content area.
 3. Edit the module settings and add your custom content to build your campaign.
 
-{% anchor h3 %}
-Drag & Drop Module Descriptions and Styles
-{% endanchor h3 %}
+### Drag & Drop Module Descriptions and Styles
+
 <iframe src="https://player.vimeo.com/video/233699442" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <iframe src="https://player.vimeo.com/video/233699948" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <iframe src="https://player.vimeo.com/video/233700782" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -359,9 +340,7 @@ You can add the following drag & drop modules to your campaign:
   </tr>
 </table>
 
-{% anchor h3 %}
-Using Global Styles
-{% endanchor h3 %}
+### Using Global Styles
 
 In addition to editing the styles for individual modules within your campaign/template, you may also make changes to the global styling of your entire campaign/template. This includes attributes such as the background color, text color, or font family.
 
@@ -391,9 +370,7 @@ Under the Global Styles dropdown menu in the left hand sidebar, click **Email Bo
   </tr>
 </table>
 
-{% anchor h3 %}
-Editing Module HTML
-{% endanchor h3 %}
+### Editing Module HTML
 
 *To edit Module HTML:*
 
@@ -407,9 +384,7 @@ If you make any structural code changes, you need to convert the module to a cod
 
 </call-out>
 
-{% anchor h3 %}
-Code Modules
-{% endanchor h3 %}
+### Code Modules
 
 The code module is a unique drag & drop module that allows you to insert any custom HTML in your campaign as a single module which can be relocated and edited.
 
@@ -419,9 +394,7 @@ The Design Editor does not modify or validate any HTML inserted via a code modul
 
 </call-out>
 
-{% anchor h3 %}
-Adding Images
-{% endanchor h3 %}
+### Adding Images
 
 *To upload an image:*
 
@@ -439,9 +412,7 @@ Adding Images
    <br>The Image Details tab opens.
 1. Insert your image in the campaign by clicking **Save Image**.
 
-{% anchor h3 %}
-Using Substitution Tags
-{% endanchor h3 %}
+### Using Substitution Tags
 
 Substitution tags allow you to use any custom field data you've added to Marketing Campaigns to dynamically generate unique content for each recipient of your campaign. A common example is to add a recipient's first name to the body (or even the subject line) of your campaign.
 
@@ -519,9 +490,7 @@ For contacts with no entry in a custom field, the substitution tag appears blank
 
 `[%first_name | Valued Customer%]`
 
-{% anchor h3 %}
-Previewing Your Campaign
-{% endanchor h3 %}
+### Previewing Your Campaign
 
 To preview your campaign or template, click the **Preview** button in the upper-left corner.
 
@@ -531,9 +500,7 @@ To view a plain-text version of your campaign or template, click the **T** icon.
 
 When previewing a campaign, you also see a preview of the From name, the Subject, and the preheader text that you have selected.
 
-{% anchor h3 %}
-Editing the HTML Head
-{% endanchor %}
+### Editing the HTML Head
 
 The HTML `<head>` element is where you can define any metadata you would like to include with your campaign or template. For example, you can use the `<head>` element to define any custom fonts or CSS styles you would like to use.
 
@@ -545,9 +512,8 @@ The HTML `<head>` element is where you can define any metadata you would like to
    <br>A window appears where you can insert your custom HTML.
 1. Once you've finished making your changes, click the **Update** button.
 
-{% anchor h4 %}
-Adding Custom Fonts Using the HTML Head
-{% endanchor %}
+
+#### Adding Custom Fonts Using the HTML Head
 
 Most commonly, users add custom fonts by using the <link> tag to reference a web font hosted somewhere on the internet. For example, [Google Fonts](https://fonts.google.com).
 
@@ -590,9 +556,7 @@ Next, you’ll have to add add a `<style>` to specify that you want to use this 
 </style>
 ```
 
-{% anchor h3 %}
-Importing Custom HTML With Drag & Drop Markup
-{% endanchor h3 %}
+### Importing Custom HTML With Drag & Drop Markup
 
 If you are writing your own custom HTML that you plan on importing into the design editor, refer to the [drag & drop code examples](#-Drag--Drop-Code-Examples) to ensure that any modules you create are compatible with our drag & drop functionality. If you do not specify a data type that matches one of our drag & drop modules your code is imported as a text module.
 
@@ -614,9 +578,7 @@ Any HTML that you import replaces all existing content in your campaign or templ
 
 </call-out>
 
-{% anchor h3 %}
-Drag & Drop Markup
-{% endanchor h3 %}
+### Drag & Drop Markup
 
 SendGrid parses your custom HTML, looking for any [drag & drop compatible modules](#-Drag--Drop-Code-Examples).
 
@@ -637,9 +599,7 @@ If you don't include the "modules-container" attribute in any of your custom HTM
 
 Following is an example of how you should structure and organize your custom HTML, where [module content] represents the content of your modules.
 
-{% anchor h3 %}
-Drag & Drop Code Examples
-{% endanchor h3 %}
+### Drag & Drop Code Examples
 
 <code-group langs="Image,Image & Text,text,code,columns,button,divider,spacer,social">
 
@@ -790,9 +750,7 @@ Drag & Drop Code Examples
 </code-group>
 
 
-{% anchor h3 %}
-Exporting HTML From the Design Editor
-{% endanchor h3 %}
+### Exporting HTML From the Design Editor
 
 *To export template HTML from the design editor:*
 
@@ -810,9 +768,7 @@ SendGrid hosts the images included in the pre-built templates and any images you
 1. Select **Code Editor**.
 1. Paste the raw SendGrid template HTML into the code editor.
 
-{% anchor h3 %}
-Creating Categories
-{% endanchor h3 %}
+### Creating Categories
 
 Assigning categories to a campaign allows you to track emails based on your own categorization system. By assigning your campaign to a category, you can track statistics across multiple similar campaigns. Example categories: “Weekly Digest,” “Product Announcements.”
 
@@ -822,9 +778,7 @@ Assigning categories to a campaign allows you to track emails based on your own 
 1. Find the *Categories* field.
 1. Enter the name of a new category or select a previously used category from the drop-down menu.
 
-{% anchor h2 %}
-Additional Resources
-{% endanchor %}
+## Additional Resources
 
 * [Sending an Email]({{root_url}}/help-support/getting-started/how-to-send-email.html)
 * [A/B Testing]({{root_url}}/help-support/sending-email/a-b-testing.html)
