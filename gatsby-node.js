@@ -173,7 +173,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
         // Create docs pages
         createPage({
-          path: `${edge.node.fields.permalink}/`,
+          path: edge.node.fields.permalink,
           component: docsPage,
           context: {
             slug: edge.node.fields.slug,
