@@ -1,6 +1,7 @@
 ---
 layout: page
 weight: 0
+group: google
 title: Google
 navigation:
   show: true
@@ -23,4 +24,4 @@ Compute Engine
 
 If you're using Google's Compute Engine, click [here](https://cloud.google.com/compute/docs/sending-mail#sendgrid)
 
-Check out our blog for more information on how to make Google and SendGrid work together [here]({{site.blog_url}}/?s=google+app+engine&submit=). 
+Check out our blog for more information on how to make Google and SendGrid work together [here]({{site.blog_url}}/?s=google+app+engine&submit=).

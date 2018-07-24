@@ -5,6 +5,7 @@ seo:
   keywords: Magento, SendGrid, Extension, partner, e-commerse, transactional email
 title: SendGrid Extension for Magento 2.0
 weight: 0
+group: magento
 layout: page
 navigation:
   show: true

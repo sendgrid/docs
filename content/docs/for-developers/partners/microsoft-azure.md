@@ -1,6 +1,7 @@
 ---
 layout: page
 weight: 0
+group: azure
 title: Microsoft Azure
 navigation:
   show: true
