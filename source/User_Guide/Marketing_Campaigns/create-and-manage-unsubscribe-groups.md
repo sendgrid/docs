@@ -28,6 +28,11 @@ Create an Unsubscribe Group
 1. Select **Marketing Campaigns** and then click **Unsubscribe Groups**.
 1. Click **Add Unsubscribe Group**. 
 1. Add a *Group Name* and *Group Description*. 
+
+{% info %}
+Make sure your Group Names and Group Descriptions are customer-friendly. This is what your recipients will see. 
+{% endinfo %}
+
 1. Select the checkbox if you want the Unsubscribe Group to display on the unsubscribe preferences page. 
 1. click **Save Unsubscribe Group**. 
 
@@ -58,6 +63,7 @@ Add recipients to an Unsubscribe Group
 Managing Unsubscribe Groups
 {% endanchor %}
 
+From the UI, you can edit Unsubscribe Groups or download a list of recipients that have unsubscribed from your emails. For more information on managing unsubscribes, see the SendGrid [Suppressions Overview]({{root_url}}Suppressions/index.html#-Managing-Unsubscribes)
 
 {% anchor h3 %}
 Exporting an Unsubscribe Group List
@@ -68,6 +74,8 @@ Exporting an Unsubscribe Group List
 1. Navigate to the Unsubscribe Group you want to export.
 1. Click the action menu.
 1. Select **Export**. A CSV file begins downloading.
+
+[QUESTION - Does the account holder get an email notification like they do with MC Contacts?]
 
 {% anchor h3 %}
 Editing an Unsubscribe Group
