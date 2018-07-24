@@ -27,11 +27,12 @@ Create an Unsubscribe Group
 
 1. Select **Marketing Campaigns** and then click **Unsubscribe Groups**.
 1. Click **Add Unsubscribe Group**. 
-1. Add a *Group Name* and *Group Description* and then click **Save Unsubscribe Group**. 
+1. Add a *Group Name* and *Group Description*. 
+1. Select the checkbox if you want the Unsubscribe Group to display on the unsubscribe preferences page. 
+1. click **Save Unsubscribe Group**. 
 
 {% info %}
-Your note
-{% endinfo %}
+To view the unsubscribe preferences page, select the action menu next to an Unsubscribe Group and then click **Preview**. Toggle to the Unsubscribe Preferences tab to view all of the options listed. {% endinfo %}
 
 {% anchor h2 %}
 Add recipients to an Unsubscribe Group
