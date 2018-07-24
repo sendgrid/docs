@@ -6,6 +6,11 @@
     font-size: 13px;
     line-height: 20px;
     text-transform: capitalize;
+    color: $slate;
+
+    a {
+      color: $slate;
+    }
   }
 
   li + li::before {

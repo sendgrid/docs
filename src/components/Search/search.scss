@@ -1,4 +1,5 @@
 @import '../../scss/global/mixins';
+@import '../../scss/global/variables';
 
 .input-text-wrap [type="text"] {
   border-radius: 0;
@@ -11,8 +12,12 @@
 
 .input-text-wrap .search-hero__query {
   @include colfax(400);
-
+  color: $slate-60;
   background-image: none;
+
+  &::placeholder {
+    color: $slate;
+  }
 }
 
 .search-hero__bg #query:focus {

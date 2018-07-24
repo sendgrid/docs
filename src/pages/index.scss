@@ -31,11 +31,12 @@ $card-gutter: 40px;
   padding: $scaleup-1 $scaleup-2 $scaleup-1 $scaleup-7;
   font-size: $scaleup-1;
   box-sizing: border-box;
-  color: $sg-blue-60;
+  color: $slate;
   border: 0;
+  box-shadow: 0 5px 8px 0 rgba(118, 180, 238, 0.1);
 
   &::placeholder {
-    color: $sg-blue-60;
+    color: $slate;
   }
 }
 
@@ -97,6 +98,10 @@ $card-gutter: 40px;
 
 .row--home-cards {
   grid-column-gap: $card-gutter;
+
+  @media (max-width: $width-mobile) {
+    grid-column-gap: 2%;
+  }
 }
 
 .home-featured {
@@ -124,6 +129,11 @@ $card-gutter: 40px;
   transform-origin: left top;
   width: 150%;
   z-index: 0;
+
+  @media (max-width: $width-medium) {
+    transform: rotate(-2deg);
+    top: 0;
+  }
 }
 
 .home-callouts {
@@ -160,6 +170,11 @@ $card-gutter: 40px;
 .home-glossary__container {
   padding-left: $scaleup-11;
   padding-right: $scaleup-11;
+
+  @media (max-width: $width-mobile) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .glossary-link {
@@ -171,4 +186,8 @@ $card-gutter: 40px;
 .glossary-icon {
   margin: 0 auto 0 $scaleup-1;
   display: block;
+
+  @media (max-width: $width-mobile) {
+    margin: $scaleup-1 auto 0;
+  }
 }
