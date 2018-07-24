@@ -29,5 +29,5 @@ The original template you copy won't be modified and remains active in any API o
 1. To replace any existing substitution tags, click **Replace your subsitution tags**.
 1. Enter the opening and closing characters of your substition tags and click **Replace**.
 1. The module replaces all of the substitution tags in your template with handlebars.
-   For example,{% raw %}{{your_tag_here}}{% endraw %}.
+   For example,{{your_tag_here}}.
 

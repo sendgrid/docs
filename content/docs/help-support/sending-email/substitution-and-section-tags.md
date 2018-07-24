@@ -13,14 +13,14 @@ navigation:
 
 ## 	Simple Name Substitution
  	
-This example will show you how to create a name substitution for your emails. We will be using the tag {% raw %}{{name}}{% endraw %} in this example. In this example the tag {% raw %}{{name}}{% endraw %} will get replaced with the name of the recipient.
+This example will show you how to create a name substitution for your emails. We will be using the tag {{name}} in this example. In this example the tag {{name}} will get replaced with the name of the recipient.
 
  ### 	Email Content
  	
  ### 	Text
  	
 ```
-Hello {% raw %}{{name}}{% endraw %},
+Hello {{name}},
 ```
 
  ### 	HTML
@@ -29,7 +29,7 @@ Hello {% raw %}{{name}}{% endraw %},
 <html>
   <head></head>
   <body>
-    <p>Hello {% raw %}{{name}}{% endraw %},<br>
+    <p>Hello {{name}},<br>
     </p>
   </body>
 </html>
@@ -45,7 +45,7 @@ Hello {% raw %}{{name}}{% endraw %},
 		"example03@domain.com"
 	],
 	"sub": {
-		"{% raw %}{{name}}{% endraw %}": ["John", "Jane", "Matt"]
+		"{{name}}": ["John", "Jane", "Matt"]
 	}
 }
 ```
@@ -61,7 +61,7 @@ Hello {% raw %}{{name}}{% endraw %},
 		}],
 		"subject": "Example 01",
 		"substitutions": {
-			"{% raw %}{{name}}{% endraw %}": "John"
+			"{{name}}": "John"
 		}
 	}, {
 		"to": [{
@@ -70,7 +70,7 @@ Hello {% raw %}{{name}}{% endraw %},
 		}],
 		"subject": "Example 02",
 		"substitutions": {
-			"{% raw %}{{name}}{% endraw %}": "Jane"
+			"{{name}}": "Jane"
 		}
 	}, {
 		"to": [{
@@ -79,7 +79,7 @@ Hello {% raw %}{{name}}{% endraw %},
 		}],
 		"subject": "Example 03",
 		"substitutions": {
-			"{% raw %}{{name}}{% endraw %}": "Matt"
+			"{{name}}": "Matt"
 		}
 	}],
 	"from": {
@@ -93,10 +93,10 @@ Hello {% raw %}{{name}}{% endraw %},
 	"subject": "Example",
 	"content": [{
 		"type": "text/plain",
-		"value": "Hello {% raw %}{{name}}{% endraw %},"
+		"value": "Hello {{name}},"
 	}, {
 		"type": "text/html",
-		"value": "Hello {% raw %}{{name}}{% endraw %},"
+		"value": "Hello {{name}},"
 	}]
 
 }
@@ -166,14 +166,14 @@ Hello Matt,
 
 ## 	First Name and Last Name Substitutions
  	
-This example will show you how to create a first name and last name substitution for your emails. We will be using the tags "{% raw %}{{first_name}}{% endraw %}" and "{% raw %}{last_name}}{% endraw %}" in this example. In this example the tag {% raw %}{{first_name}}{% endraw %} will get replaced with the first name of the recipient and the tag {% raw %}{{last_name}}{% endraw %} will get replaced with the last name of the recipient.
+This example will show you how to create a first name and last name substitution for your emails. We will be using the tags "{{first_name}}" and "{last_name}}" in this example. In this example the tag {{first_name}} will get replaced with the first name of the recipient and the tag {{last_name}} will get replaced with the last name of the recipient.
 
  ### 	Email Content
  	
  ### 	Text
  	
 ```
-Hello {% raw %}{{first_name}}{% endraw %} {% raw %} {{last_name}}{% endraw %},
+Hello {{first_name}}  {{last_name}},
 ```
 
  ### 	HTML
@@ -182,7 +182,7 @@ Hello {% raw %}{{first_name}}{% endraw %} {% raw %} {{last_name}}{% endraw %},
 <html>
   <head></head>
   <body>
-    <p>Hello {% raw %}{{first_name}}{% endraw %} {% raw %}{{last_name}}{% endraw %},<br>
+    <p>Hello {{first_name}} {{last_name}},<br>
     </p>
   </body>
 </html>
@@ -198,8 +198,8 @@ Hello {% raw %}{{first_name}}{% endraw %} {% raw %} {{last_name}}{% endraw %},
 		"example03@domain.com"
 	],
 	"sub": {
-		"{% raw %}{{first_name}}{% endraw %}": ["John", "Jane", "Matt"],
-		"{% raw %}{{last_name}}{% endraw %}": ["Smith", "Williams", "Johnson"]
+		"{{first_name}}": ["John", "Jane", "Matt"],
+		"{{last_name}}": ["Smith", "Williams", "Johnson"]
 	}
 }
 ```
@@ -215,8 +215,8 @@ Hello {% raw %}{{first_name}}{% endraw %} {% raw %} {{last_name}}{% endraw %},
 		}],
 		"subject": "Example 01",
 		"substitutions": {
-			"{% raw %}{{first_name}}{% endraw %}": "John",
-			"{% raw %}{{last_name}}{% endraw %}": "Smith"
+			"{{first_name}}": "John",
+			"{{last_name}}": "Smith"
 		}
 	}, {
 		"to": [{
@@ -225,8 +225,8 @@ Hello {% raw %}{{first_name}}{% endraw %} {% raw %} {{last_name}}{% endraw %},
 		}],
 		"subject": "Example 02",
 		"substitutions": {
-			"{% raw %}{{first_name}}{% endraw %}": "Jane",
-			"{% raw %}{{last_name}}{% endraw %}": "Williams"
+			"{{first_name}}": "Jane",
+			"{{last_name}}": "Williams"
 		}
 	}, {
 		"to": [{
@@ -235,8 +235,8 @@ Hello {% raw %}{{first_name}}{% endraw %} {% raw %} {{last_name}}{% endraw %},
 		}],
 		"subject": "Example 03",
 		"substitutions": {
-			"{% raw %}{{first_name}}{% endraw %}": "Matt",
-			"{% raw %}{{last_name}}{% endraw %}": "Johnson"
+			"{{first_name}}": "Matt",
+			"{{last_name}}": "Johnson"
 		}
 	}],
 	"from": {
@@ -250,10 +250,10 @@ Hello {% raw %}{{first_name}}{% endraw %} {% raw %} {{last_name}}{% endraw %},
 	"subject": "Example",
 	"content": [{
 		"type": "text/plain",
-		"value": "Hello {% raw %}{{first_name}}{% endraw %} {% raw %}{{last_name}}{% endraw %},"
+		"value": "Hello {{first_name}} {{last_name}},"
 	}, {
 		"type": "text/html",
-		"value": "Hello {% raw %}{{first_name}}{% endraw %} {% raw %}{{last_name}}{% endraw %},"
+		"value": "Hello {{first_name}} {{last_name}},"
 	}]
 
 }
@@ -323,14 +323,14 @@ Hello Matt Johnson,
 
 ## 	Simple Greeting Section with Name Substitution
  	
-This example will show you how to create a section as a greeting with a name substitution. We will be using the tags "{% raw %}{{warm_welcome}}{% endraw %}", "{% raw %}{{greeting}}{% endraw %}" and "{% raw %}{{name}}{% endraw %}" in this example. In this example we have created a greeting using the section tag {% raw %}{{warm_welcome}}{% endraw %}. The {% raw %}{{warm_welcome}}{% endraw %} tag is replaced with the {% raw %}{{greeting}}{% endraw %} substitution which calls the section "Hello {% raw %}{{name}}{% endraw %},". The {% raw %}{{name}}{% endraw %} tag in "Hello {% raw %}{{name}}{% endraw %}," is then replaced with the recipients name.
+This example will show you how to create a section as a greeting with a name substitution. We will be using the tags "{{warm_welcome}}", "{{greeting}}" and "{{name}}" in this example. In this example we have created a greeting using the section tag {{warm_welcome}}. The {{warm_welcome}} tag is replaced with the {{greeting}} substitution which calls the section "Hello {{name}},". The {{name}} tag in "Hello {{name}}," is then replaced with the recipients name.
 
  ### 	Email Content
  	
  ### 	Text
  	
 ```
-{% raw %}{{warm_welcome}}{% endraw %}	```
+{{warm_welcome}}	```
 
  ### 	HTML
  	
@@ -338,7 +338,7 @@ This example will show you how to create a section as a greeting with a name sub
 <html>
   <head></head>
   <body>
-    <p>{% raw %}{{warm_welcome}}{% endraw %}<br>
+    <p>{{warm_welcome}}<br>
     </p>
   </body>
 </html>
@@ -354,11 +354,11 @@ This example will show you how to create a section as a greeting with a name sub
 		"example03@domain.com"
 	],
 	"sub": {
-		"{% raw %}{{name}}{% endraw %}": ["John", "Jane", "Matt"],
-		"{% raw %}{{warm_welcome}}{% endraw %}": ["{% raw %}{{greeting}}{% endraw %}", "{% raw %}{{greeting}}{% endraw %}", "{% raw %}{{greeting}}{% endraw %}"]
+		"{{name}}": ["John", "Jane", "Matt"],
+		"{{warm_welcome}}": ["{{greeting}}", "{{greeting}}", "{{greeting}}"]
 	},
 	"section": {
-		"{% raw %}{{greeting}}{% endraw %}": "Hello {% raw %}{{name}}{% endraw %},"
+		"{{greeting}}": "Hello {{name}},"
 	}
 }
 ```
@@ -374,8 +374,8 @@ This example will show you how to create a section as a greeting with a name sub
 		}],
 		"subject": "Example 01",
 		"substitutions": {
-			"{% raw %}{{name}}{% endraw %}": "John",
-			"{% raw %}{{warm_welcome}}{% endraw %}": "{% raw %}{{greeting}}{% endraw %}"
+			"{{name}}": "John",
+			"{{warm_welcome}}": "{{greeting}}"
 		}
 	}, {
 		"to": [{
@@ -384,8 +384,8 @@ This example will show you how to create a section as a greeting with a name sub
 		}],
 		"subject": "Example 02",
 		"substitutions": {
-			"{% raw %}{{name}}{% endraw %}": "Jane",
-			"{% raw %}{{warm_welcome}}{% endraw %}": "{% raw %}{{greeting}}{% endraw %}"
+			"{{name}}": "Jane",
+			"{{warm_welcome}}": "{{greeting}}"
 		}
 	}, {
 		"to": [{
@@ -394,8 +394,8 @@ This example will show you how to create a section as a greeting with a name sub
 		}],
 		"subject": "Example 03",
 		"substitutions": {
-			"{% raw %}{{name}}{% endraw %}": "Matt",
-			"{% raw %}{{warm_welcome}}{% endraw %}": "{% raw %}{{greeting}}{% endraw %}"
+			"{{name}}": "Matt",
+			"{{warm_welcome}}": "{{greeting}}"
 		}
 	}],
 	"from": {
@@ -409,13 +409,13 @@ This example will show you how to create a section as a greeting with a name sub
 	"subject": "Example",
 	"content": [{
 		"type": "text/plain",
-		"value": "{% raw %}{{warm_welcome}}{% endraw %}"
+		"value": "{{warm_welcome}}"
 	}, {
 		"type": "text/html",
-		"value": "{% raw %}{{warm_welcome}}{% endraw %}"
+		"value": "{{warm_welcome}}"
 	}],
 	"sections": {
-		"{% raw %}{{greeting}}{% endraw %}": "Welcome {% raw %}{{name}}{% endraw %},"
+		"{{greeting}}": "Welcome {{name}},"
 	}
 }
 ```
@@ -484,14 +484,14 @@ Hello Matt,
 
 ## 	Greeting Section with First & Last Name Substitutions
  	
-This example will show you how to create a section with first name and last name substitution for your emails. We will be using the tags "{% raw %}{{warm_welcome}}{% endraw %}", "{% raw %}{{greeting}}{% endraw %}", "{% raw %}{{first_name}}{% endraw %}" and "{% raw %}{{last_name}}{% endraw %}" in this example. In this example we have created a greeting using the section tag {% raw %}{{warm_welcome}}{% endraw %}. The {% raw %}{{warm_welcome}}{% endraw %} tag is replaced with the {% raw %}{{greeting}}{% endraw %} substitution which calls the section "Hello {% raw %}{{first_name}}{% endraw %} {% raw %}{{last_name}}{% endraw %},". The {% raw %}{{first_name}}{% endraw %} and {% raw %}{{last_name}}{% endraw %} tags in "Hello {% raw %}{{first_name}}{% endraw %} {% raw %}{{last_name}}{% endraw %}," is then replaced with the recipients first and last names.
+This example will show you how to create a section with first name and last name substitution for your emails. We will be using the tags "{{warm_welcome}}", "{{greeting}}", "{{first_name}}" and "{{last_name}}" in this example. In this example we have created a greeting using the section tag {{warm_welcome}}. The {{warm_welcome}} tag is replaced with the {{greeting}} substitution which calls the section "Hello {{first_name}} {{last_name}},". The {{first_name}} and {{last_name}} tags in "Hello {{first_name}} {{last_name}}," is then replaced with the recipients first and last names.
 
  ### 	Email Content
  	
  ### 	Text
  	
 ```
-{% raw %}{{warm_welcome}}{% endraw %}	```
+{{warm_welcome}}	```
 
  ### 	HTML
  	
@@ -499,7 +499,7 @@ This example will show you how to create a section with first name and last name
 <html>
   <head></head>
   <body>
-    <p>{% raw %}{{warm_welcome}}{% endraw %}<br>
+    <p>{{warm_welcome}}<br>
     </p>
   </body>
 </html>
@@ -515,12 +515,12 @@ This example will show you how to create a section with first name and last name
 		"example03@domain.com"
 	],
 	"sub": {
-		"{% raw %}{{first_name}}{% endraw %}": ["John", "Jane", "Matt"],
-		"{% raw %}{{last_name}}{% endraw %}": ["Smith", "Williams", "Johnson"],
-		"{% raw %}{{warm_welcome}}{% endraw %}": ["{% raw %}{{greeting}}{% endraw %}", "{% raw %}{{greeting}}{% endraw %}", "{% raw %}{{greeting}}{% endraw %}"]
+		"{{first_name}}": ["John", "Jane", "Matt"],
+		"{{last_name}}": ["Smith", "Williams", "Johnson"],
+		"{{warm_welcome}}": ["{{greeting}}", "{{greeting}}", "{{greeting}}"]
 	},
 	"section": {
-		"{% raw %}{{greeting}}{% endraw %}": "Hello {% raw %}{{first_name}}{% endraw %} {% raw %}{{last_name}}{% endraw %},"
+		"{{greeting}}": "Hello {{first_name}} {{last_name}},"
 	}
 }
 ```
@@ -536,9 +536,9 @@ This example will show you how to create a section with first name and last name
 		}],
 		"subject": "Example 01",
 		"substitutions": {
-			"{% raw %}{{first_name}}{% endraw %}": "John",
-			"{% raw %}{{last_name}}{% endraw %}": "Smith",
-			"{% raw %}{{warm_welcome}}{% endraw %}": "{% raw %}{{greeting}}{% endraw %}"
+			"{{first_name}}": "John",
+			"{{last_name}}": "Smith",
+			"{{warm_welcome}}": "{{greeting}}"
 		}
 	}, {
 		"to": [{
@@ -547,9 +547,9 @@ This example will show you how to create a section with first name and last name
 		}],
 		"subject": "Example 02",
 		"substitutions": {
-			"{% raw %}{{first_name}}{% endraw %}": "Jane",
-			"{% raw %}{{last_name}}{% endraw %}": "Williams",
-			"{% raw %}{{warm_welcome}}{% endraw %}": "{% raw %}{{greeting}}{% endraw %}"
+			"{{first_name}}": "Jane",
+			"{{last_name}}": "Williams",
+			"{{warm_welcome}}": "{{greeting}}"
 		}
 	}, {
 		"to": [{
@@ -558,9 +558,9 @@ This example will show you how to create a section with first name and last name
 		}],
 		"subject": "Example 03",
 		"substitutions": {
-			"{% raw %}{{first_name}}{% endraw %}": "Matt",
-			"{% raw %}{{last_name}}{% endraw %}": "Johnson",
-			"{% raw %}{{warm_welcome}}{% endraw %}": "{% raw %}{{greeting}}{% endraw %}"
+			"{{first_name}}": "Matt",
+			"{{last_name}}": "Johnson",
+			"{{warm_welcome}}": "{{greeting}}"
 		}
 	}],
 	"from": {
@@ -574,13 +574,13 @@ This example will show you how to create a section with first name and last name
 	"subject": "Example",
 	"content": [{
 		"type": "text/plain",
-		"value": "{% raw %}{{warm_welcome}}{% endraw %}"
+		"value": "{{warm_welcome}}"
 	}, {
 		"type": "text/html",
-		"value": "{% raw %}{{warm_welcome}}{% endraw %}"
+		"value": "{{warm_welcome}}"
 	}],
 	"sections": {
-		"{% raw %}{{greeting}}{% endraw %}": "Welcome {% raw %}{{first_name}}{% endraw %} {% raw %}{{last_name}}{% endraw %},"
+		"{{greeting}}": "Welcome {{first_name}} {{last_name}},"
 	}
 }
 ```
@@ -649,14 +649,14 @@ Hello Matt Johnson,
 
 ## 	Three Different Greeting Sections with First & Last Name Substitutions
  	
-This example will show you how to create three different sections, each with first name and last name substitution for your emails. We will be using the tags "{% raw %}{{warm_welcome}}{% endraw %}", "{% raw %}{{greeting01}}{% endraw %}", "{% raw %}{{greeting02}}{% endraw %}", "{% raw %}{{greeting03}}{% endraw %}", "{% raw %}{{first_name}}{% endraw %}" and "{% raw %}{{last_name}}{% endraw %}" in this example. In this example we have created three different greetings using the section tag {% raw %}{{warm_welcome}}{% endraw %}. The {% raw %}{{warm_welcome}}{% endraw %} tag is replaced with either {% raw %}{{greeting01}}{% endraw %}, {% raw %}{{greeting02}}{% endraw %} or {% raw %}{{greeting03}}{% endraw %} substitution. This will call one of the three sections. In each of these sections there is the {% raw %}{{first_name}}{% endraw %} and {% raw %}{{last_name}}{% endraw %} tags which will get replaced with the recipients first and last names.
+This example will show you how to create three different sections, each with first name and last name substitution for your emails. We will be using the tags "{{warm_welcome}}", "{{greeting01}}", "{{greeting02}}", "{{greeting03}}", "{{first_name}}" and "{{last_name}}" in this example. In this example we have created three different greetings using the section tag {{warm_welcome}}. The {{warm_welcome}} tag is replaced with either {{greeting01}}, {{greeting02}} or {{greeting03}} substitution. This will call one of the three sections. In each of these sections there is the {{first_name}} and {{last_name}} tags which will get replaced with the recipients first and last names.
 
  ### 	Email Content
  	
  ### 	Text
  	
 ```
-{% raw %}{{warm_welcome}}{% endraw %}	```
+{{warm_welcome}}	```
 
  ### 	HTML
  	
@@ -664,7 +664,7 @@ This example will show you how to create three different sections, each with fir
 <html>
   <head></head>
   <body>
-    <p>{% raw %}{{warm_welcome}}{% endraw %}<br>
+    <p>{{warm_welcome}}<br>
     </p>
   </body>
 </html>
@@ -680,14 +680,14 @@ This example will show you how to create three different sections, each with fir
 		"example03@domain.com"
 	],
 	"sub": {
-		"{% raw %}{{first_name}}{% endraw %}": ["John", "Jane", "Matt"],
-		"{% raw %}{{last_name}}{% endraw %}": ["Smith", "Williams", "Johnson"],
-		"{% raw %}{{warm_welcome}}{% endraw %}": ["{% raw %}{{greeting01}}{% endraw %}", "{% raw %}{{greeting02}}{% endraw %}", "{% raw %}{{greeting03}}{% endraw %}"]
+		"{{first_name}}": ["John", "Jane", "Matt"],
+		"{{last_name}}": ["Smith", "Williams", "Johnson"],
+		"{{warm_welcome}}": ["{{greeting01}}", "{{greeting02}}", "{{greeting03}}"]
 	},
 	"section": {
-		"{% raw %}{{greeting01}}{% endraw %}": "Welcome {% raw %}{{first_name}}{% endraw %} {% raw %}{{last_name}}{% endraw %},",
-		"{% raw %}{{greeting02}}{% endraw %}": "Hello {% raw %}{{first_name}}{% endraw %} {% raw %}{{last_name}}{% endraw %},",
-		"{% raw %}{{greeting03}}{% endraw %}": "Dear {% raw %}{{first_name}}{% endraw %} {% raw %}{{last_name}}{% endraw %},"
+		"{{greeting01}}": "Welcome {{first_name}} {{last_name}},",
+		"{{greeting02}}": "Hello {{first_name}} {{last_name}},",
+		"{{greeting03}}": "Dear {{first_name}} {{last_name}},"
 	}
 }
 ```
@@ -703,9 +703,9 @@ This example will show you how to create three different sections, each with fir
 		}],
 		"subject": "Example 01",
 		"substitutions": {
-			"{% raw %}{{first_name}}{% endraw %}": "John",
-			"{% raw %}{{last_name}}{% endraw %}": "Smith",
-			"{% raw %}{{warm_welcome}}{% endraw %}": "{% raw %}{{greeting01}}{% endraw %}"
+			"{{first_name}}": "John",
+			"{{last_name}}": "Smith",
+			"{{warm_welcome}}": "{{greeting01}}"
 		}
 	}, {
 		"to": [{
@@ -714,9 +714,9 @@ This example will show you how to create three different sections, each with fir
 		}],
 		"subject": "Example 02",
 		"substitutions": {
-			"{% raw %}{{first_name}}{% endraw %}": "Jane",
-			"{% raw %}{{last_name}}{% endraw %}": "Williams",
-			"{% raw %}{{warm_welcome}}{% endraw %}": "{% raw %}{{greeting02}}{% endraw %}"
+			"{{first_name}}": "Jane",
+			"{{last_name}}": "Williams",
+			"{{warm_welcome}}": "{{greeting02}}"
 		}
 	}, {
 		"to": [{
@@ -725,9 +725,9 @@ This example will show you how to create three different sections, each with fir
 		}],
 		"subject": "Example 03",
 		"substitutions": {
-			"{% raw %}{{first_name}}{% endraw %}": "Matt",
-			"{% raw %}{{last_name}}{% endraw %}": "Johnson",
-			"{% raw %}{{warm_welcome}}{% endraw %}": "{% raw %}{{greeting03}}{% endraw %}"
+			"{{first_name}}": "Matt",
+			"{{last_name}}": "Johnson",
+			"{{warm_welcome}}": "{{greeting03}}"
 		}
 	}],
 	"from": {
@@ -741,15 +741,15 @@ This example will show you how to create three different sections, each with fir
 	"subject": "Example",
 	"content": [{
 		"type": "text/plain",
-		"value": "{% raw %}{{warm_welcome}}{% endraw %}"
+		"value": "{{warm_welcome}}"
 	}, {
 		"type": "text/html",
-		"value": "{% raw %}{{warm_welcome}}{% endraw %}"
+		"value": "{{warm_welcome}}"
 	}],
 	"sections": {
-		"{% raw %}{{greeting01}}{% endraw %}": "Welcome {% raw %}{{first_name}}{% endraw %} {% raw %}{{last_name}}{% endraw %},",
-		"{% raw %}{{greeting02}}{% endraw %}": "Hello {% raw %}{{first_name}}{% endraw %} {% raw %}{{last_name}}{% endraw %},",
-		"{% raw %}{{greeting03}}{% endraw %}": "Dear {% raw %}{{first_name}}{% endraw %} {% raw %}{{last_name}}{% endraw %},"
+		"{{greeting01}}": "Welcome {{first_name}} {{last_name}},",
+		"{{greeting02}}": "Hello {{first_name}} {{last_name}},",
+		"{{greeting03}}": "Dear {{first_name}} {{last_name}},"
 	}
 }
 ```
@@ -818,15 +818,15 @@ Dear Matt Johnson,
 
 ## 	Three Confirmation Sections and Substitutions
  	
-This example will show you how to create three different sections for confirmation emails. We will be using the tags "{% raw %}{{name}}{% endraw %}", "{% raw %}{{confirmations}}{% endraw %}", "{% raw %}{{confirmation_001}}{% endraw %}", "{% raw %}{{confirmation_002}}{% endraw %}", "{% raw %}{{confirmation_003}}{% endraw %}" and "{% raw %}{{order_id}}{% endraw %}" in this example. In this example we have created three different confirmations using the section tag {% raw %}{{confirmations}}{% endraw %}. The {% raw %}{{confirmations}}{% endraw %} tag is replaced with either {% raw %}{{confirmation_001}}{% endraw %}, {% raw %}{{confirmation_002}}{% endraw %} or {% raw %}{{confirmation_003}}{% endraw %} substitution. This will call one of the three sections. In each of these sections there is the {% raw %}{{order_id}}{% endraw %} tag which will get replaced with the recipients order id.
+This example will show you how to create three different sections for confirmation emails. We will be using the tags "{{name}}", "{{confirmations}}", "{{confirmation_001}}", "{{confirmation_002}}", "{{confirmation_003}}" and "{{order_id}}" in this example. In this example we have created three different confirmations using the section tag {{confirmations}}. The {{confirmations}} tag is replaced with either {{confirmation_001}}, {{confirmation_002}} or {{confirmation_003}} substitution. This will call one of the three sections. In each of these sections there is the {{order_id}} tag which will get replaced with the recipients order id.
 
  ### 	Email Content
  	
  ### 	Text
  	
 ```
-Hello {% raw %}{{name}}{% endraw %},
-{% raw %}{{confirmations}}{% endraw %}	```
+Hello {{name}},
+{{confirmations}}	```
 
  ### 	HTML
  	
@@ -834,8 +834,8 @@ Hello {% raw %}{{name}}{% endraw %},
 <html>
   <head></head>
   <body>
-    <p>Hello {% raw %}{{name}}{% endraw %},<br>
-	    {% raw %}{{confirmations}}{% endraw %}	    </p>
+    <p>Hello {{name}},<br>
+	    {{confirmations}}	    </p>
   </body>
 </html>
 ```
@@ -846,14 +846,14 @@ Hello {% raw %}{{name}}{% endraw %},
 {
 	"to": ["example01@domain.com", "example02@domain.com", "example03@domain.com"],
 	"sub": {
-		"{% raw %}{{name}}{% endraw %}": ["John", "Jane", "Matt"],
-		"{% raw %}{{confirmations}}{% endraw %}": ["{% raw %}{{confirmation_001}}{% endraw %}", "{% raw %}{{confirmation_002}}{% endraw %}", "{% raw %}{{confirmation_003}}{% endraw %}"],
-		"{% raw %}{{order_id}}{% endraw %}": ["12345", "23456", "34567"]
+		"{{name}}": ["John", "Jane", "Matt"],
+		"{{confirmations}}": ["{{confirmation_001}}", "{{confirmation_002}}", "{{confirmation_003}}"],
+		"{{order_id}}": ["12345", "23456", "34567"]
 	},
 	"section": {
-		"{% raw %}{{confirmation_001}}{% endraw %}": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order {% raw %}{{order_id}}{% endraw %}.",
-		"{% raw %}{{confirmation_002}}{% endraw %}": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order {% raw %}{{order_id}}{% endraw %}. This invoice is to be paid by bank transfer within 7 days from the date of your monthly statement.",
-		"{% raw %}{{confirmation_003}}{% endraw %}": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order {% raw %}{{order_id}}{% endraw %}. You can download your invoice as a PDF for your records."
+		"{{confirmation_001}}": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order {{order_id}}.",
+		"{{confirmation_002}}": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order {{order_id}}. This invoice is to be paid by bank transfer within 7 days from the date of your monthly statement.",
+		"{{confirmation_003}}": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order {{order_id}}. You can download your invoice as a PDF for your records."
 	}
 }
 ```
@@ -869,9 +869,9 @@ Hello {% raw %}{{name}}{% endraw %},
 		}],
 		"subject": "Example 01",
 		"substitutions": {
-			"{% raw %}{{name}}{% endraw %}": "John",
-			"{% raw %}{{order_id}}{% endraw %}": "12345",
-			"{% raw %}{{confirmations}}{% endraw %}": "{% raw %}{{confirmation_001}}{% endraw %}"
+			"{{name}}": "John",
+			"{{order_id}}": "12345",
+			"{{confirmations}}": "{{confirmation_001}}"
 		}
 	}, {
 		"to": [{
@@ -880,9 +880,9 @@ Hello {% raw %}{{name}}{% endraw %},
 		}],
 		"subject": "Example 02",
 		"substitutions": {
-			"{% raw %}{{name}}{% endraw %}": "Jane",
-			"{% raw %}{{order_id}}{% endraw %}": "23456",
-			"{% raw %}{{confirmations}}{% endraw %}": "{% raw %}{{confirmation_002}}{% endraw %}"
+			"{{name}}": "Jane",
+			"{{order_id}}": "23456",
+			"{{confirmations}}": "{{confirmation_002}}"
 		}
 	}, {
 		"to": [{
@@ -891,9 +891,9 @@ Hello {% raw %}{{name}}{% endraw %},
 		}],
 		"subject": "Example 03",
 		"substitutions": {
-			"{% raw %}{{name}}{% endraw %}": "Matt",
-			"{% raw %}{{order_id}}{% endraw %}": "34567",
-			"{% raw %}{{confirmations}}{% endraw %}": "{% raw %}{{confirmation_003}}{% endraw %}"
+			"{{name}}": "Matt",
+			"{{order_id}}": "34567",
+			"{{confirmations}}": "{{confirmation_003}}"
 		}
 	}],
 	"from": {
@@ -907,15 +907,15 @@ Hello {% raw %}{{name}}{% endraw %},
 	"subject": "Example",
 	"content": [{
 		"type": "text/plain",
-		"value": "Hello {% raw %}{{name}}{% endraw %},\r\n{% raw %}{{confirmations}}{% endraw %}"
+		"value": "Hello {{name}},\r\n{{confirmations}}"
 	}, {
 		"type": "text/html",
-		"value": "<p>Hello {% raw %}{{name}}{% endraw %},<br>{% raw %}{{confirmations}}{% endraw %}"
+		"value": "<p>Hello {{name}},<br>{{confirmations}}"
 	}],
 	"sections": {
-		"{% raw %}{{confirmation_001}}{% endraw %}": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order {% raw %}{{order_id}}{% endraw %}.",
-		"{% raw %}{{confirmation_002}}{% endraw %}": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order {% raw %}{{order_id}}{% endraw %}. This invoice is to be paid by bank transfer within 7 days from the date of your monthly statement.",
-		"{% raw %}{{confirmation_003}}{% endraw %}": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order {% raw %}{{order_id}}{% endraw %}. You can download your invoice as a PDF for your records."
+		"{{confirmation_001}}": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order {{order_id}}.",
+		"{{confirmation_002}}": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order {{order_id}}. This invoice is to be paid by bank transfer within 7 days from the date of your monthly statement.",
+		"{{confirmation_003}}": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order {{order_id}}. You can download your invoice as a PDF for your records."
 	}
 }
 ```

@@ -116,20 +116,20 @@ For more information, see our [scheduling parameters documentation]({{root_url}}
  	
 Substitution tags allow you to dynamically insert specific content relevant to each of your recipients, such as their first and last names.
 
-For example, to use a substitution tag to replace the first name of your recipient, insert the tag {% raw %}{{name}}{% endraw %} in the HTML of your message:
+For example, to use a substitution tag to replace the first name of your recipient, insert the tag {{name}} in the HTML of your message:
 
 ```html
 <html>
   <head></head>
   <body>
-    <p>Hello {% raw %}{{name}}{% endraw %},<br>
+    <p>Hello {{name}},<br>
         The body of your email would go here...
     </p>
   </body>
 </html>
 ```
 
-To define the value that will replace the {% raw %}{{name}}{% endraw %} tag, define the following in your X-SMTPAPI header:
+To define the value that will replace the {{name}} tag, define the following in your X-SMTPAPI header:
 
 ```json
 {
@@ -138,7 +138,7 @@ To define the value that will replace the {% raw %}{{name}}{% endraw %} tag, def
     "example@example.com"
   ],
   "sub": {
-    "{% raw %}{{name}}{% endraw %}": [
+    "{{name}}": [
       "John",
       "Jane"
     ]

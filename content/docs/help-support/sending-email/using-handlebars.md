@@ -113,7 +113,7 @@ There are four main types of substitutions:
  	
 HTML should contain:
 ```
-{% raw %}<p>Hello {{firstName}}</p>{% endraw %}	```
+<p>Hello {{firstName}}</p>	```
 
 Test Data should contain:
 ```
@@ -122,13 +122,13 @@ Test Data should contain:
 
 Resulting replacement:
 ```
-{% raw %}<p>Hello Ben</p>{% endraw %}	```
+<p>Hello Ben</p>	```
 
  ### 	Deep object replacement
  	
 HTML should contain:
 ```
-{% raw %}<p>Hello {{user.profile.firstName}}</p>{% endraw %}	```
+<p>Hello {{user.profile.firstName}}</p>	```
 
 Test Data should contain:
 ```
@@ -143,13 +143,13 @@ Test Data should contain:
 
 Resulting replacement:
 ```
-{% raw %}<p>Hello Ben</p>{% endraw %}	```
+<p>Hello Ben</p>	```
 
  ### 	Object failure
  	
 HTML should contain:
 ```
-{% raw %}<p>Hello {{user.profile.firstName}}</p>{% endraw %}	```
+<p>Hello {{user.profile.firstName}}</p>	```
 
 Test Data should contain:
 ```
@@ -171,24 +171,24 @@ Test Data should contain:
 
 Resulting replacement:
 ```
-{% raw %}<p>Hello</p>{% endraw %}	```
+<p>Hello</p>	```
 
  ### 	Replacement with HTML
  	
 HTML should contain:
 ```
-{% raw %}<p>Hello {{{firstName}}}</p>{% endraw %}	```
+<p>Hello {{{firstName}}}</p>	```
 
 Test Data should contain:
 ```
-{% raw %}{"firstName":"<strong>Ben</strong>"}{% endraw %}	```
+{"firstName":"<strong>Ben</strong>"}	```
 
 Resulting replacement:
 ```
-{% raw %}<p>Hello <strong>Ben</strong></p>{% endraw %}	```
+<p>Hello <strong>Ben</strong></p>	```
 Resulting replacement:
 ```
-{% raw %}<p>Warning! Your account is suspended, please call: 1-800-1234567</p>{% endraw %}	```
+<p>Warning! Your account is suspended, please call: 1-800-1234567</p>	```
 
 
  ### 	Conditional statements
@@ -203,13 +203,13 @@ Here are three types of conditonal statements:
  	
 HTML should contain:
 ```
-{% raw %}{{#if user.profile.male}}
+{{#if user.profile.male}}
   <p>Dear Sir</p>
 {{else if user.profile.female}}
   <p>Dear Madame</p>
 {{else}}
   <p> Dear Customer</p>
-{{/if}}{% endraw %}	```
+{{/if}}	```
 
 Test Data should contain:
 ###1
@@ -248,23 +248,23 @@ Test Data should contain:
 Resulting replacement:
 ###1
 ```
-{% raw %}<p>Dear Sir</p>{% endraw %}	```
+<p>Dear Sir</p>	```
 
 ###2
 ```
-{% raw %}<p>Dear Madame</p>{% endraw %}	```
+<p>Dear Madame</p>	```
 
 ###3
 ```
-{% raw %}<p>Dear Customer</p>{% endraw %}	```
+<p>Dear Customer</p>	```
 
  ### 	If with a root
  	
 HTML should contain:
 ```
-{% raw %}{{#if user.suspended}}
+{{#if user.suspended}}
 	<p>Warning! Your account is suspended, please call: {{@root.supportPhone}}</p>
-{{/if}}{% endraw %}	```
+{{/if}}	```
 
 Test Data should contain:
 ```
@@ -278,7 +278,7 @@ Test Data should contain:
 
 Resulting replacement:
 ```
-{% raw %}<p>Warning! Your account is suspended, please call: 1-800-1234567</p>{% endraw %}	```
+<p>Warning! Your account is suspended, please call: 1-800-1234567</p>	```
 
  ### 	Unless
  	
@@ -306,11 +306,11 @@ Test Data should contain:
  	
 HTML should contain:
 ```
-{% raw %}<ol>
+<ol>
 {{#each user.orderHistory}}
 	<li>You ordered: {{this.item}} on: {{this.date}}</li>
 {{/each}}
-</ol>{% endraw %}	```
+</ol>	```
 
 Test Data should contain:
 ```
@@ -332,10 +332,10 @@ Test Data should contain:
 
 Resulting replacement:
 ```
-{% raw %}<ol>
+<ol>
 	<li>You ordered: shoes on: 2/1/2018</li>
 	<li>You ordered: hat on: 1/42017</li>
-</ol>{% endraw %}	```
+</ol>	```
 
  ### 	Combined examples
  	
@@ -347,13 +347,13 @@ Here are two combined examples:
  ### 	Dynamic content creation
  	
 HTML should contain:
-```{% raw %}	{{#each user.story}}
+```	{{#each user.story}}
   {{#if this.male}}
     <p>{{this.date}}</p>
   {{else if this.female}}
     <p>{{this.item}}</p>
   {{/if}}
-{{/each}}{% endraw %}	```
+{{/each}}	```
 
 
 Test Data should contain:
@@ -382,14 +382,14 @@ Test Data should contain:
 ```
 
 Resulting replacement:
-```{% raw %}	<p>2/1/2018</p>
+```	<p>2/1/2018</p>
 <p>1/4/2017</p>
-<p>shirt</p>{% endraw %}	```
+<p>shirt</p>	```
 
  ### 	Dynamic content creation with dynamic parts
  	
 HTML should contain:
-```{% raw %}	{{#each user.story}}
+```	{{#each user.story}}
   {{#if this.male}}
     {{#if this.date}}
       <p>{{this.date}}</p>
@@ -405,7 +405,7 @@ HTML should contain:
       <p>{{this.item}}</p>
     {{/if}}
   {{/if}}
-{{/each}}{% endraw %}	```
+{{/each}}	```
 
 Test Data should contain:
 ```
@@ -433,10 +433,10 @@ May 11th 2018, 2:18:20 pm
 ```
 
 Resulting replacement:
-```{% raw %}	<p>2/1/2018</p>
+```	<p>2/1/2018</p>
 <p>shoes</p>
 <p>1/4/2017</p>
-<p>shirt</p>{% endraw %}	```
+<p>shirt</p>	```
 
 ## 	Additional Resources
  	
