@@ -133,6 +133,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           allMarkdownRemark {
             edges {
               node {
+                id
                 fileAbsolutePath
                 fields {
                   permalink
@@ -172,10 +173,11 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
         // Create docs pages
         createPage({
-          path: `${edge.node.fields.permalink  }/`,
+          path: `${edge.node.fields.permalink}/`,
           component: docsPage,
           context: {
             slug: edge.node.fields.slug,
+            id: edge.node.id,
           },
         });
       });

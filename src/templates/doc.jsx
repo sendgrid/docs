@@ -53,8 +53,8 @@ export default withSubNav()(DocTemplate);
 
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
-    doc: markdownRemark(fields: { slug: { eq: $slug } }) {
+  query BlogPostByID($id: String!) {
+    doc: markdownRemark(id: { eq: $id } ) {
       htmlAst
       html
       frontmatter {
