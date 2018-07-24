@@ -16,7 +16,7 @@ Using the parameters defined below, you can queue batches of emails targeting in
 <call-out>
 
 **Emails can be scheduled up to 72 hours in advance.** However, this scheduling constraint does not apply to campaigns sent via [Marketing Campaigns]({{root_url}}/User_Guide/Marketing_Campaigns/index.html).
-{% endinfo%}	
+ 	
 This parameter allows SendGrid to begin processing a customer’s email requests before sending. SendGrid queues the messages and releases them when the timestamp indicates. This technique allows for a more efficient way to distribute large email requests and can **improve overall mail delivery time** performance. This functionality:
 
 * Improves efficiency of processing and distributing large volumes of email.
@@ -90,7 +90,7 @@ To allow for the cancellation of a scheduled send, you must include a `batch_id`
 ```
 
 ## 	Additional Resources
-{% endanchor h2 %}	
+ 	
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
 - [Getting Started with the SMTP API]({{root_url}}/for-developers/getting-started/getting-started-smtp.html)
 - [Integrating with SMTP]({{root_url}}/for-developers/getting-started/integrating-with-the-smtp-api.html)

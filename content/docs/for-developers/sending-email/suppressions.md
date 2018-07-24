@@ -57,7 +57,7 @@ Related Articles:
 * You can create Unsubscribe groups via the [API V3 > Unsubscribe Groups Endpoint]({{root_url}}/API_Reference/Web_API_v3/Unsubscribe_Manager/groups.html#-POST).
 
 ## 	Additional Resources
-{% endanchor h2 %}	
+ 	
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
 - [Getting Started with the SMTP API]({{root_url}}/for-developers/getting-started/getting-started-smtp.html)
 - [Integrating with SMTP]({{root_url}}/for-developers/getting-started/integrating-with-the-smtp-api.html)

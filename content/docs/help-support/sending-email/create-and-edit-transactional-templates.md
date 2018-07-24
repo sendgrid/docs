@@ -33,7 +33,7 @@ Transactional templates are account and subuser specific. Templates created on a
 </call-out>
 
 ## 	Creating a template
-{% endanchor h2 %}	
+ 	
 1. Open the transactional templates page and then click **Create Template**.
 1. Add a unique template name in the dialogue box and then click **Save**.
 1. Open the **Actions** drop-down menu to create a new version.
@@ -43,7 +43,7 @@ Transactional templates are account and subuser specific. Templates created on a
 The easiest way to get started with a new template is to use one of your previous email templates or a free template from the internet, and then modify it to fit your needs.
 
 ## 	Editing your HTML template
-{% endanchor h2 %}	
+ 	
 <call-out>
 
 Email templates are table-based HTML with inline or header styles, because some well known email applications will only read table-based HTML.
@@ -60,7 +60,7 @@ Email templates are table-based HTML with inline or header styles, because some 
 1. When you’re done editing, click **Save**. <br></br>Please double check that the content is formatted correctly before you send an email using this template.
 
 ## 	Preview and test your template
-{% endanchor h2 %}	
+ 	
 SendGrid suggests previewing and testing your template once you have created it to ensure that the format and layout look the way you expect.
 
 *To preview your template:*
@@ -83,7 +83,7 @@ To delete a template, you must first delete all the versions of your template.
 </call-out>
 
  ### 	Activate your template
-{% endanchor h2 %}	
+ 	
 *To activate your template:*
 
 1. Navigate to the template you wish to use and select the action menu.
@@ -96,7 +96,7 @@ A template can only have one active version at a time. If you’ve created a new
 </call-out>
 
  ### 	Duplicate a Template
-{% endanchor h2 %}	
+ 	
 *To duplicate a template:*
 
 1. Navigate to the template you wish to use and select the action menu.
@@ -106,7 +106,7 @@ The app creates a clone, giving it a name that starts with "untitled". You can g
 
 
 ## 	Adding unsubscribe links to a template
-{% endanchor h2 %}	
+ 	
 For more information about unsubscribes, check out our [unsubscribe documentation]({{root_url}}/help-support/sending-email/index-suppressions.html).
 
 

@@ -78,7 +78,7 @@ While you're waiting for DNS to be ready, you can prepare your SendGrid Incoming
 Once the DNS has propagated, you’ll be able to receive email to any email address `@playlist.example.com`. In the next step, we’ll make sure your website on Windows Azure is ready to accept those emails.
 
 ## 	Prepare the Code to Run on Windows Azure
-{% endanchor%}	
+ 	
 Before you can put the code in place, you need to prepare your source control system, which will be Git in this case. Make sure you have Git installed on your local machine before proceeding. There are downloads for Windows, Mac, Linux and Solaris.
 Now set up your repository within the Windows Azure interface:
 
@@ -170,16 +170,19 @@ Now you need to add a table to the database:
 
 In your index.html file add the following code near the closing body tag to add the Windows Mobile Services library to your app:
 
-{%codeblock lang:html%}	<script src="https://website.azure-mobile.net/client/MobileServices.Web-1.0.0.min.js"></script>
-{%endcodeblock%}	
+``` html
+<script src="https://website.azure-mobile.net/client/MobileServices.Web-1.0.0.min.js"></script>
+```
 ![Mobile Services]({{root_url}}/images/azure_13.png)
 
 In the `js/app.js` file, after the `$("#queue").append…` line, add the following code:
 
-{%codeblock lang:javascript%}	var client = new WindowsAzure.MobileServiceClient("https://website.azure-mobile.net/",  "<Password>");
+``` javascript
+var client = new WindowsAzure.MobileServiceClient("https://website.azure-mobile.net/",  "<Password>");
 var item = { request: data.name, song: data.track, user: data.user };
 client.getTable("playlist_songs").insert(item);
-{%endcodeblock%}	
+```
+
 To allow for your app to have access to the DB, add your URL to the cross origin resource sharing (cors) setting.
 
 ![cors]({{root_url}}/images/azure_14.png)
@@ -208,7 +211,8 @@ Now you’ll want to edit the sample app you downloaded from Windows Azure:
 ![Credentials]({{root_url}}/images/azure_17.png)
 3.	Update the function refreshDataOnSuccess in `QSTodoService.m` to return all from the queue. Remove the existing code there and replace it with:
 
-{%codeblock lang:objc%}	// Return all song request titles from the table
+``` objc
+// Return all song request titles from the table
 // items: An NSArray of the records that matched your query.
 // totalCount: The total count of items in all pages of the query, not just those returned in the current page. This value is set to -1, unless you explicitly request the total count in your request. For more info, see Return data in pages.
 // error: Any error that occurred; otherwise nil.
@@ -218,9 +222,12 @@ items = [results mutableCopy];
 // Let the caller know that we finished
 completion();
 }];
-{%endcodeblock%}	![Code]({{root_url}}/images/azure_18.png)
+```
+![Code]({{root_url}}/images/azure_18.png)
 4.	Now, go to the file QSToDoListViewController.m, and replace the onAdd function’s contents with:
-{%codeblock lang:objc%}	// Populate the parameters for the SendGrid Web API Call
+
+``` objc
+// Populate the parameters for the SendGrid Web API Call
 // Find more details about the [Web API here]({{root_url}}/API_Reference/Web_API/index.html).
 NSString *username = @"<Your SendGrid Username>";
 NSString *apikey = @"<Your SendGrid Password>";
@@ -259,11 +266,12 @@ UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Error"
 [message show];
 }
 itemText.text = @"";
+```
 5.	In the same file, replace this line:
-label.text = [item objectForKey:@"text"];
+```label.text = [item objectForKey:@"text"];```
 with this line:
-label.text = [item objectForKey:@"request"];
-{%endcodeblock%}	
+```label.text = [item objectForKey:@"request"];```
+
 Now you can make some adjustments to the interface:
 
 1.	Click on the storyboard, then the TEXT INPUT field.

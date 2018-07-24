@@ -102,7 +102,7 @@ Use this to permanently delete your recipients from all of your contact lists an
  1. Select the check box to confirm that you want to delete all contacts and then click **Delete**.
 
  ### 	Additional Resources
-{% endanchor h3 %}	
+  	
 - [Segmentation](https://sendgrid.com/docs/help-support/managing-contacts/segmenting-your-contacts.html)
 - [Unsubscribe Groups](https://sendgrid.com/docs/help-support/sending-email/index-suppressions.html)
 - [Custom Fields](https://sendgrid.com/docs/help-support/sending-email/custom-fields.html)

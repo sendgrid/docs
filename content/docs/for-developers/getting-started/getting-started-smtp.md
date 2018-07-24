@@ -74,7 +74,7 @@ Now that you've sent a test email, learn to [integrate your servers with our SMT
 
 ## 
 Additional Resources
-{% endanchor h2 %}
+ 
 
 - [Getting Started with the UI]({{root_url}}/help-support/getting-started/how-to-send-email.html)
 - [Getting Started with the API]({{root_url}}/API_Reference/api_v3.html)

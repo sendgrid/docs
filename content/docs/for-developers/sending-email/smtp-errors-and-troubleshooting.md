@@ -119,7 +119,7 @@ When you try to send an invalid X-SMTPAPI header, you will get an email with det
  If the mail server communicates with more than just us, add this certificate to your existing CA bundle (frequently called `ca-bundle.crt`).
 
 ## 	Additional Resources
-{% endanchor h2 %}	
+ 	
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
 - [Getting Started with the SMTP API]({{root_url}}/for-developers/getting-started/getting-started-smtp.html)
 - [Integrating with SMTP]({{root_url}}/for-developers/getting-started/integrating-with-the-smtp-api.html)

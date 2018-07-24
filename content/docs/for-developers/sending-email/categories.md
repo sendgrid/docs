@@ -39,7 +39,7 @@ You can use SendGrid's [SMTP API]({{root_url}}/API_Reference/SMTP_API/) to add t
 
 In this example, SendGrid would associate statistics for the email containing that header with the category **Example Category**.
 
-{% anchor h2%}	Limitations
+  ## 	Limitations
  	
 You can assign up to 10 categories per message:
 

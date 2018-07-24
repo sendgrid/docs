@@ -82,6 +82,6 @@ The Transaction Summary shows the total charges for the month, and the Payment S
 **These line items always reflect the plan you currently have, not necessarily "Pro 100k", which is shown for the purposes of demonstration.**
 
 ## 	Additional Resources
-{% endanchor h2 %}	
+ 	
 - [SendGrid Pricing]({{site.site_url}}/pricing/)
 - [Billing]({{root_url}}/help-support/account-and-settings/billing.html)

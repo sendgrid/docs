@@ -107,6 +107,6 @@ Canceled accounts are not deleted. Accounts are changed to our [free]({{site.sit
 </call-out>
 
 ## 	Additional Resources
-{% endanchor h2 %}	
+ 	
 - [SendGrid Pricing]({{site.site_url}}/pricing/)
 - [Reading your invoice]({{root_url}}/help-support/account-and-settings/reading-your-invoice.html)

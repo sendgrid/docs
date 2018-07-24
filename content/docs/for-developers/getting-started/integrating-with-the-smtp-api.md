@@ -38,7 +38,7 @@ Now that you've integrated, learn to [build SMTP email]({{root_url}}/for-develop
 - You may open up to **10 concurrent connections from a single server**.
 
 ## 	Additional Resources
-{% endanchor h2 %}	
+ 	
 - [Sending email]({{root_url}}/help-support/getting-started/how-to-send-email.html)
 - [Getting Started with the API]({{root_url}}/API_Reference/api_v3.html)
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)

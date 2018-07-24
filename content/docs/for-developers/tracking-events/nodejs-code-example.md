@@ -52,7 +52,7 @@ var server = app.listen(app.get('port'), function() {
 
 ## 	Event Webhook
  	
-To use the Event Webhook, you must first [setup Event Notification]({{%20root_url%20}}/API_Reference/Webhooks/event.html#-Setup).
+To use the Event Webhook, you must first [setup Event Notification]({{root_url}}/API_Reference/Webhooks/event.html#-Setup).
 
 In this scenario, we assume you've set the Event Notification URL to go the endpoint `/event` on your server. Given this scenario the following code will allow you to process events:
 

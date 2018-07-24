@@ -84,7 +84,7 @@ The Event Webhook does not follow redirects.
 If you want to receive encrypted posts, your callback URL needs to support TLS 1.2.
 
 ## 	Additional Resources
-{% endanchor h2 %}	
+ 	
 - [Event Webhook reference]({{root_url}}/for-developers/tracking-events/event.html)
 - [Troubleshooting the Event Webhook]({{root_url}}/for-developers/tracking-events/troubleshooting.html)
 - [An Event Webhook case study](https://sendgrid.com/blog/leveraging-sendgrids-event-api/)

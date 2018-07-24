@@ -36,16 +36,22 @@ To create a batch ID, assign that ID to an email or group of emails, and cancel 
  	
 First, generate a batch id by calling the [v3/mail/batch endpoint]({{root_url}}/API_Reference/Web_API_v3/cancel_schedule_send.html#-Batch-IDs). When successful, you should receive a 201 response along with your batch ID.
 
-{% apiv3example post POST https://api.sendgrid.com/v3/mail/batch %}	{% v3response %}	  HTTP/1.1 201
+`POST https://api.sendgrid.com/v3/mail/batch`
+``` json
+HTTP/1.1 201
   {
     "batch_id": "YOUR_BATCH_ID"
   }
-{% endv3response %}	{% endapiv3example %}	
+```
+
  ### 	2. Assign Batch ID to an Email
  	
 The batch ID generated in step 1 can now be used when scheduling an email via the SendGrid API v3 by setting the value of `batch_id` to your new batch ID in a [v3/mail/send]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html) request and setting the value of `send_at` to a UNIX timestamp representing the time you want your email sent. For example:
 
-{% apiv3example post POST https://api.sendgrid.com/v3/mail/send %}	{% apiv3requestbody %}	{
+`POST https://api.sendgrid.com/v3/mail/send`
+
+``` json
+{
   "personalizations": [
     {
     "to": [
@@ -65,12 +71,13 @@ The batch ID generated in step 1 can now be used when scheduling an email via th
   "send_at": 1484913600,
   "batch_id": "YOUR_BATCH_ID"
 }
-{% endapiv3requestbody %}	
-{% v3response %}	{
+```
+``` json
+{
   HTTP/1.1 202
 }
-{% endv3response %}	
-{% endapiv3example %}	
+```
+
 <call-out>
 
 If you have the flexibility, it's better to schedule mail for off-peak times. Most emails are scheduled and sent at the top of the hour or half hour. Scheduling email to avoid those times (for example, scheduling at 10:53) can result in lower deferral rates because it won't be going through our servers at the same times as everyone else's mail.
@@ -93,12 +100,18 @@ When a Batch is **cancelled**, all messages associated with that batch will stay
 
 When a Batch is **paused**, all messages associated with that batch will stay in your sending queue, even past their `send_at` value. Any messages that are more than 72 hours old will be discarded as Expired.
 
-{% apiv3example post POST https://api.sendgrid.com/v3/user/scheduled_sends %}	{% apiv3requestbody %}	  {
+`POST https://api.sendgrid.com/v3/user/scheduled_sends`
+``` json
+{
   "batch_id": "YOUR_BATCH_ID",
   "status": "pause"
   }
-{% endapiv3requestbody %}	{% v3response %}	  HTTP/1.1 201
-{% endv3response %}	{% endapiv3example %}	
+```
+
+``` json
+HTTP/1.1 201
+```
+
 For more details, please see our [Cancel Scheduled Sends API Reference]({{root_url}}/API_Reference/Web_API_v3/cancel_schedule_send.html).
 
 ## 	Canceling a Marketing Campaign
@@ -113,5 +126,6 @@ If you scheduled a specific time to send your campaign, it's easy to unschedule 
  	
 You can unschedule a campaign by making a call to [/v3/campaigns/{campaign_id}/schedules]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html#Unschedule-a-Scheduled-Campaign-DELETE) where `{campaign_id}` is the ID of the campaign you want to unschedule. A successful unschedule will return a 204. **You cannot unschedule campaigns that are already in the process of being sent. You should instead cancel or delete the campaign.**
 
-{% apiv3example delete DELETE https://api.sendgrid.com/v3/campaigns/{campaign_id}/schedules %}	{% v3response %}	  HTTP/1.1 204
-{% endv3response %}	{% endapiv3example %}	
+`DELETE https://api.sendgrid.com/v3/campaigns/{campaign_id}/schedules`
+
+`HTTP/1.1 204`

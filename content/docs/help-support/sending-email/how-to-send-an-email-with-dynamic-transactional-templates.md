@@ -142,7 +142,7 @@ You can also copy your template ID from the app and paste it into your call.
 ![]({{root_url}}/img/dynamic_template_id.png "Dynamic Template ID")
 
 ## 	Additional Resources
-{% endanchor h2 %}	
+ 	
 - [Mail Send with Dynamic Transactional Templates](https://dynamic-templates.api-docs.io/3.0)
 - [Unsubscribe Groups]({{root_url}}/help-support/sending-email/group-unsubscribes.html)
 - [Using Handlebars]({{root_url}}/help-support/sending-email/using-handlebars.html)

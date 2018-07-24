@@ -106,7 +106,7 @@ You need to have a [subuser]({{root_url}}/help-support/account-and-settings/subu
 1. Select **Save**
 
 ## 	Additional Resources
-{% endanchor h2 %}	
+ 	
 - [Warming up a dedicated IP]({{root_url}}/help-support/getting-started/warming-up-an-ip-address.html)
 - [API IP Access Management]({{root_url}}/help-support/account-and-settings/ip-access-management.html)
 - [SendGrid billing information]({{root_url}}/help-support/account-and-settings/billing.html)

@@ -94,6 +94,6 @@ In addition to creating a dynamic segment based on campaign engagement as descri
 1. Click **Export CSV**.
 
 ## 	Additional Resources
-{% endanchor h2 %}	
+ 	
 - [Sending a Campaign](https://sendgrid.com/docs/help-support/getting-started/how-to-send-email.html)
 - [A/B Testing Your Campaign](https://sendgrid.com/docs/help-support/sending-email/a-b-testing.html)

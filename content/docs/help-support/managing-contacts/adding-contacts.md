@@ -128,7 +128,7 @@ If you [create a segment]({{root_url}}/help-support/managing-contacts/segmenting
 </call-out>
 
  ### 	Additional Resources
-{% endanchor h3 %}	
+  	
 - [Contacts API](https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html)
 - [Segmenting your Contacts](https://sendgrid.com/docs/help-support/managing-contacts/segmenting-your-contacts.html)
 - [Building your Contact list](https://sendgrid.com/docs/help-support/managing-contacts/building-your-contact-list.html)

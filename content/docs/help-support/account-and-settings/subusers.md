@@ -161,6 +161,6 @@ Deleting a Subuser account cannot be undone. Please make sure that you are ready
 1. Click **Confirm** to delete the Subuser account.
 
 ## 	Additional Resources
-{% endanchor h2 %}	
+ 	
 - [Assigning a Domain Whitelabel to a subuser]({{root_url}}/Classroom/Basics/Whitelabel/setup_domain_whitelabel.html#-Assigning-a-subuser)
 - [Teammates]({{root_url}}/User_Guide/Settings/teammates.html)

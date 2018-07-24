@@ -53,7 +53,7 @@ Do not nest substitution tags in substitutions as they will fail and your substi
 
 </call-out>
 
-{% anchor h2%}	Substitution Tag Example
+  ## 	Substitution Tag Example
  	
 Email HTML content:
 ```html
@@ -144,7 +144,7 @@ Email HTML content:
  	While the tags above are tags that you define at the time of your send in the SMTPAPI headers, SendGrid also offers [Unsubscribe Groups tags]({{root_url}}/help-support/sending-email/create-and-edit-transactional-templates.html#-Adding-unsubscribe-links-to-a-template) that have been pre-defined for you. You can use these tags within the content of your email, and you do not have to and should not, define them.
 
 ## 	Additional Resources
-{% endanchor h2 %}	
+ 	
 - [Section Tags]({{root_url}}/for-developers/sending-email/section-tags.html)
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
 - [Getting Started with the SMTP API]({{root_url}}/for-developers/getting-started/getting-started-smtp.html)

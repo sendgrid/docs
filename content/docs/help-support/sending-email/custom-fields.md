@@ -97,7 +97,7 @@ If a Custom Field value does not appear in the corresponding [Substitution Tag](
 If you do find that the custom field has an associated value on the contact’s profile page, check the spelling of the substitution tag in the content of your campaign.
 
  ### 	Additional Resources
-{% endanchor h3 %}	
+  	
 - [Substitution Tags](https://sendgrid.com/docs/help-support/sending-email/editor.html#-Using-Substitution-Tags)
 - [Contacts](https://sendgrid.com/docs/help-support/managing-contacts/adding-contacts.html)
 - [Creating and exporting segments](https://sendgrid.com/docs/help-support/manging-contacts/segmenting-your-contacts.html)

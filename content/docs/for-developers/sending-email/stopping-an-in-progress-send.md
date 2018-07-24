@@ -69,5 +69,6 @@ If you have **Send Immediately** under the **Scheduling** dropdown menu in the c
  	
 You can delete a campaign by making a call to [/v3/campaigns/{campaign_id}]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html#Delete-a-Campaign-DELETE) where `{campaign_id}` is the ID of the campaign you want to stop. A successful deletion will return a 204.
 
-{% apiv3example delete DELETE https://api.sendgrid.com/v3/campaigns/{campaign_id} %}	{% v3response %}	  HTTP/1.1 204
-{% endv3response %}	{% endapiv3example %}	
+`DELETE https://api.sendgrid.com/v3/campaigns/{campaign_id}`
+
+`HTTP/1.1 204`

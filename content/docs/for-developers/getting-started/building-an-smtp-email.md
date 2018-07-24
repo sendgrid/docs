@@ -191,7 +191,7 @@ Use unique arguments to track your emails based on specific identifiers unique t
 For more information, see our [unique arguments documentation]({{root_url}}/for-developers/sending-email/unique-arguments.html).
 
 ## 	Additional Resources
-{% endanchor h2 %}	
+ 	
 - [How to send email]({{root_url}}/help-support/getting-started/how-to-send-email.html)
 - [Getting started with the API]({{root_url}}/API_Reference/api_v3.html)
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)

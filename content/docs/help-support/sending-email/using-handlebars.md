@@ -439,7 +439,7 @@ Resulting replacement:
 <p>shirt</p>{% endraw %}	```
 
 ## 	Additional Resources
-{% endanchor h2 %}	
+ 	
 - [Transactional Templates Overview]({{root_url}}/help-support/sending-email/transactional-email.html)
 - [Create and edit Dynamic Transactional Templates]({{root_url}}/help-support/sending-email/create-and-edit-transactional-templates.html)
 - [Mail Send with Dynamic Transactional Templates](https://dynamic-templates.api-docs.io/3.0)

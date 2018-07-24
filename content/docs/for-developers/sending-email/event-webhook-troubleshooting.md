@@ -40,7 +40,7 @@ We recommend that you use some form of deduplication when processing or storing 
 The `sg_event_id` is a [UUIDv4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random) string that is `Base64url` encoded.
 
 ## 	Additional Resources
-{% endanchor h2 %}	
+ 	
 - [Getting started with the Event Webhook]({{root_url}}/for-developers/tracking-events/getting-started-event-webhook.html)
 - [Event webhook reference]({{root_url}}/for-developers/tracking-events/event.html)
 - [An Event Webhook case study](https://sendgrid.com/blog/leveraging-sendgrids-event-api/)

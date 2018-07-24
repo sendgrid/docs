@@ -39,7 +39,7 @@ Email activity shows the most recent 500 events. To access data in real time, im
 </call-out>
 
 ## 	Filtering the Activity Feed
-{% endanchor h2 %}	
+ 	
 *To filter by event type:*
 
 1. On the [Email Activity page](https://app.sendgrid.com/email_activity), in the filter drop down, click the checkbox next to “All Filters”.
@@ -47,7 +47,7 @@ Email activity shows the most recent 500 events. To access data in real time, im
     </br>The activity feed refreshes with the event types you selected.
 
 ## 	Searching the Activity Feed
-{% endanchor h2 %}	
+ 	
 *To search the Activity feed by email, mailbox name or domain name:*
 
 - To search by email, enter the recipient’s entire email address into the search field and click enter.
@@ -55,13 +55,13 @@ Email activity shows the most recent 500 events. To access data in real time, im
 - To search by domain name (the part of an email after the @ symbol), enter the domain into the search field and click enter.
 
 ## 	Subuser email activity
-{% endanchor h2 %}	
+ 	
 To see a subuser’s email activity, log in as that subuser or [impersonate]({{root_url}}/help-support/account-and-settings/subusers.html) the subuser account.
 
 You cannot see a parent accounts email activity from a subuser account.
 
 ## 	Email Events
-{% endanchor h2 %}	
+ 	
 The Email Activity feed allows you to view specific information about messages sent from your account.
 
 <table class="table" style="table-layout:fixed">
@@ -209,5 +209,5 @@ One way to do this is in the filter, set up **From** `daemon` and **Has the word
 These are some common issues people see with reading their email activity feed.
 
 ## 	Additional Resources
-{% endanchor h2 %}	
+ 	
 - [Option to "Delete From Bounce List" in Email Activity]({{root_url}}/Classroom/Track/Bounces/delete_from_bounce_list_option_in_email_activity.html)

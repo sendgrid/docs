@@ -162,28 +162,28 @@ If you create a library, please let us know, by editing this page [in our github
 
 ## 	Webhook Libraries
  	
-{% anchor h3 -C-sharp-webhooks %}	C#
+### 	C#
  	
 -   [StrongGrid](https://github.com/Jericho/StrongGrid) *by Jeremie Desautels* - Strongly typed library (no dynamic types!) for working with SendGrid's v3 API. Available as a [nuget package](https://www.nuget.org/packages/StrongGrid/). This library also includes a parser for Events and Inbounce Email webhooks.
 -   [C# Webhooks](https://github.com/mirajavora/sendgrid-webhooks) - *Community contributed library*
 
-{% anchor h3 -Python-Webhooks %}	Python
+###	Python
  	
 -   [Django eventhooks](https://github.com/agiliq/sendgrid-eventhooks) *by agiliq* - An app to consume and store SendGrid Events with Django
 -   [Pyramid Webhooks](https://github.com/GoodRx/pyramid-sendgrid-webhooks) *by GoodRx* - Parses incoming SendGrid Webhook events in Pyramid apps
 
-{% anchor h3 -Ruby-Webhooks %}	Ruby
+###	Ruby
  	-   [gridhook](https://github.com/injekt/gridhook) *by Lee Jarvis* - Ruby Gem for handling inbound batches from our Event API
 -   [griddler](https://github.com/thoughtbot/griddler-sendgrid) *by Thoughtbot* - Rails engine that provides an endpoint for SendGrid's Parse API
 -   [Pokey](https://github.com/ccallebs/pokey-sendgrid) *by Chuck Callebs* - Ruby Gem for simulating events to your code for QA or development environments
 
 ## 	Standard Drivers
  	
-{% anchor h3 -ado-net %}	ADO.NET Providers
+###	ADO.NET Providers
  	-    [CData ADO.NET Provider for SendGrid](http://www.cdata.com/drivers/sendgrid/ado) *by CData Software* - Fully-managed ADO.NET Provider with support for Entity Framework, ADO.NET 2.0, LINQ, and more. Use SendGrid Data Provider objects to connect and access data just as you would access any traditional database.
 
-{% anchor h3 -jdbc %}	JDBC Drivers
+###	JDBC Drivers
  	-    [CData JDBC Driver for SendGrid](http://www.cdata.com/drivers/sendgrid/jdbc) *by CData Software* - Pure Java Type 4/5 JDBC Driver with bi-directional access from Java/J2EE applications. Easily connect to live SendGrid data through any JDBC capable application or tool!
 
-{% anchor h3 -odbc %}	ODBC Drivers
+### ODBC Drivers
  	-    [CData ODBC Driver for SendGrid](http://www.cdata.com/drivers/sendgrid/odbc) *by CData Software* - Unicode-enabled 32/64-bit ODBC 3.8 compliant Driver for Windows, Mac, & Linux. Access SendGrid the same way that you would connect to any other ODBC data source!

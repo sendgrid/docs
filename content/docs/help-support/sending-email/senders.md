@@ -17,11 +17,11 @@ seo:
 <iframe src="https://player.vimeo.com/video/120703745" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ## 	Before you Begin
-{% endanchor h2 %}	
+ 	
 Before you begin, go to your SendGrid [account settings]({{site.app_url}}/user/account) to verify that your timezone and account email address are correct. Verifying your account information ensures that when you upload contacts, you receive notifications and that we deliver scheduled emails at the correct time.
 
 ## 	Adding a Sender
-{% endanchor h2 %}	
+ 	
 The footer of your emails automatically contains your sender information, because CAN-SPAM regulations require this information in every email you send.
 
 *To add a sender:*

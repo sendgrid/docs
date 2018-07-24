@@ -280,6 +280,6 @@ This is a full list of basic query types and examples: (replace the data in quot
 </table>
 
 ## 	Additional Resources
-{% endanchor h2 %}	
+ 	
 - [Email Activity Feed API Reference](https://sendgrid.api-docs.io/v3.0/email-activity/filter-all-messages)
 - [Email Activity Feed UI](https://sendgrid.com/docs/help-support/analytics-and-reporting/email-activity-feed.html)

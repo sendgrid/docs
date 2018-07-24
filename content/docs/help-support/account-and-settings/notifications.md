@@ -28,7 +28,7 @@ Email notifications about CSV upload summaries, sender verifications, A/B test w
 </call-out>
 
  ### 	Additional Resources
-{% endanchor h3 %}	
+  	
 - [Contacts](https://sendgrid.com/docs/help-support/managing-contacts/adding-contacts.html)
 
 
