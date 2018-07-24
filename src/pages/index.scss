@@ -57,11 +57,11 @@ $card-gutter: 40px;
 }
 
 .callout--marketing .home-callout__badge {
-  color: #62ffae;
+  color: $seafoam;
 }
 
 .callout--development .home-callout__badge {
-  color: $seafoam;
+  color: $mantis;
 }
 
 .card--no-pad {
