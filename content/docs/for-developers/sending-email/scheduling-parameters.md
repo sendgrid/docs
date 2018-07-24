@@ -36,8 +36,8 @@ Using both `send_at` and `send_each_at` is not valid. Setting both causes your r
 
 </call-out>
 
-{% anchor h2 %}	Send At
-{% endanchor %}	
+## 	Send At
+ 	
 To schedule a send request for a large batch of emails, use the `send_at` parameter which will send all emails at approximately the same time. `send_at` is a [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time).
 
 <h4>Example of send_at email header</h4>
@@ -47,8 +47,8 @@ To schedule a send request for a large batch of emails, use the `send_at` parame
 }
 ```
 
-{% anchor h2 %}	Send Each At
-{% endanchor %}	
+## 	Send Each At
+ 	
 To schedule a send request for individual recipients; use `send_each_at` to send emails to each recipient at the specified time. `send_each_at` is a sequence of UNIX timestamps, provided as an array. There must be one timestamp per email you wish to send.
 
 <h4>Example of send_each_at email header</h4>
@@ -89,7 +89,7 @@ To allow for the cancellation of a scheduled send, you must include a `batch_id`
 }
 ```
 
-{% anchor h2 %}	Additional Resources
+## 	Additional Resources
 {% endanchor h2 %}	
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
 - [Getting Started with the SMTP API]({{root_url}}/for-developers/getting-started/getting-started-smtp.html)

@@ -10,8 +10,8 @@ navigation:
   show: true
 ---
 
-{% anchor h2 %}	What is IP access management?
-{% endanchor %}	
+## 	What is IP access management?
+ 	
 [IP Access Management]({{root_url}}http://app.sendgrid.com/settings/access) is a security feature that allows you to control who can access your SendGrid account based on their [IP address]({{root_url}}/glossary/ip-address.html). After you whitelist an IP address, you can only access the SendGrid UI, API, and SMTP relay if you are connecting from a whitelisted IP address. Any other access attempts will be blocked. This is a powerful security tool that you can use to help prevent malicious activity on your account.
 
 <call-out>
@@ -34,22 +34,22 @@ If you do not access SendGrid via a static IP address (e.g. via VPN or from a bu
 
 </call-out>
 
-{% anchor h2 %}	Whitelisting an IP Address
-{% endanchor %}	
+## 	Whitelisting an IP Address
+ 	
 There are several different ways to whitelist an IP address. If you navigate to the IP Access Management page under Settings, you will see a list of any currently whitelisted IP addresses and a list of IPs that recently attempted to access your account.
 
 ![]({{root_url}}/images/ip_access_management.png)
 
-{% anchor h3 %}	Recent Access Attempts
-{% endanchor %}	
+ ### 	Recent Access Attempts
+ 	
 Under Recent Access Attempts, you will see a list of recent IPs that attempted to connect to your account, regardless of whether or not they are whitelisted. You will also see some additional information about those IPs, such as the date of the first and most recent access attempt, the physical location of the IP, and the method by which they attempted to access your account.
 
 You can whitelist one of these IPs by clicking the gear icon in the row of the IP you would like to whitelist, then clicking “Add To Whitelist”.
 
 ![]({{root_url}}/images/add_ip_from_recent_access_attempts.png)
 
-{% anchor h3 %}	Adding IP Addresses Manually
-{% endanchor %}	
+ ### 	Adding IP Addresses Manually
+ 	
 To manually whitelist one or more IP addresses, click the Add IP Addresses button.
 
 ![]({{root_url}}/images/add_ip_address_button.png)

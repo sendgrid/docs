@@ -47,8 +47,8 @@ Do not nest section tags in sections - this causes your section to not be replac
 
 * * * * *
 
-{% anchor h2 %}	Section Tag Walkthrough
-{% endanchor %}	
+## 	Section Tag Walkthrough
+ 	
 Message body sent to SendGrid:
 
 ```html
@@ -156,7 +156,7 @@ Casey receives:
 </html>
 ```
 
-{% anchor h2 %}	Additional Resources
+## 	Additional Resources
 {% endanchor h2 %}	
 - [Substitution Tags]({{root_url}}/for-developers/sending-email/substitution-tags.html)
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)

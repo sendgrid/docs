@@ -13,14 +13,14 @@ seo:
   override: true
 ---
 
-{% anchor h2 %}	What is DMARC?
-{% endanchor %}	
+## 	What is DMARC?
+ 	
 Ever received an email message that claimed to be from a company or a brand, and clearly wasn’t? This “phishy” behavior is often the result of domain spoofing, and is likely the work of someone trying to phish personal details of the messages’ recipients. Current email infrastructure standards aren’t perfect, and can sometimes be exploited. So how do you protect your own domain or brand from being spoofed in this way?  
 
 Enter DMARC, "Domain-based Message Authentication, Reporting & Conformance". Which was created to tell a participating receiving server what to do with a message that fails both SPF and DKIM validation. In other words, what to do if a message claims to be from you, but isn't.
 
-{% anchor h2 %}	How do I implement DMARC?
-{% endanchor %}	
+## 	How do I implement DMARC?
+ 	
 Deploying DMARC for your email systems is a powerful way to help prevent malicious entities from potentially spoofing or otherwise tarnishing your good name. DMARC isn't for everyone, if you own a small domain, you're probably ok without it. If you have ever had problems with phishing in the past, or have a business that is financial oriented in nature, It might be right for you.  
 
 DMARC, in conjunction with a dedicated IP (included in Pro or higher accounts) is a great start to getting industry-supported piece of mind. The DMARC aggregate and forensic reports are designed to be machine readable, and can be difficult for humans to make sense of. You will also need to utilize a DMARC report monitoring service to collect the reports and present the information in a meaningful way that leads to actionable insights.  
@@ -52,8 +52,8 @@ Within your DNS registrar, you'll need to create a TXT resource record that rece
 ![](https://lh6.googleusercontent.com/d9Cpjrw0_rW_s9KuXTYdfQNISzwOTFTunaDbkHU5frW7se-a3nsEkR2MkTIBGdUF8i6IhOCF88jLF0zGrjajwy2iIxcTdJ6ptxX4avQLsXYeThW_MhI)
 
  
-{% anchor h3 %}	A simple DMARC record
-{% endanchor %}	
+ ### 	A simple DMARC record
+ 	
     “v=DMARC1; p=quarantine; pct=100; rua=mailto:dmarc.rua@customddomain.com”
 
 The record explained:  
@@ -103,8 +103,8 @@ Up until now you should have only been using the p=none policy to get reports of
 
 **p=reject** - When you’re absolutely sure you know every server and service that is sending email for your domain, signing is in place for each of these services and you want anything with the audacity to claim otherwise completely denied. Unqualified mail is completely deleted by the recipient mail server, never to be seen again. 
 
-{% anchor h2 %}	Additional resources
-{% endanchor %}	
+## 	Additional resources
+ 	
 - Frequently Asked Questions:   [http://dmarc.org/faq.html](http://dmarc.org/faq.html)  
 - DMARK Specification: [http://dmarc.org/specification.html](http://dmarc.org/specification.html)  
 - SendGrid Blog Post: [http://sendgrid.com/blog/what-is-dmarc-and-why-should-you-care/](http://sendgrid.com/blog/what-is-dmarc-and-why-should-you-care/)  

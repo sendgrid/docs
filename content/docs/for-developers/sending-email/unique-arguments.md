@@ -67,7 +67,7 @@ To apply different unique arguments to individual emails, you may use [substitut
 }
 ```
 
-{% anchor h2 %}	Additional Resources
+## 	Additional Resources
 {% endanchor h2 %}	
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
 - [Getting Started with the SMTP API]({{root_url}}/for-developers/getting-started/getting-started-smtp.html)

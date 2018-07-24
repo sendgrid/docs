@@ -24,16 +24,16 @@ You can authenticate with DKIM yourself or the DKIM signature can be created by 
 
 SendGrid automatically enables DKIM for all email to improve your [email deliverability]({{root_url}}/glossary/email-deliverability.html), whether you’re on a shared IP or a dedicated one. This is just one more example of how SendGrid helps thousands of customers follow email best practices to ensure maximum delivery for their emails.
 
-{% anchor h2 %}	Automated Security and Your DKIM Signature
-{% endanchor %}	
+## 	Automated Security and Your DKIM Signature
+ 	
 When you set up a [authenticated domain]({{root_url}}/help-support/getting-started/how-to-set-up-domain-authentication.html), you will be given the option of using [automated or manual security]({{root_url}}//help-support/getting-started/how-to-set-up-domain-authentication.html#-Using-automated-security). When you select automated security, SendGrid will manage your DKIM and SPF records for you. This means that whenever you make a change to your account that could impact your deliverability, such as adding a new dedicated sending [IP address]({{root_url}}/glossary/ip-address.html), SendGrid will automatically update your DNS settings and your DKIM signature.
 
 **SendGrid will always provide you with a custom DKIM signature. However, your custom DKIM signature is only automatically updated if you select automated security when authenticating your domain. If you turn automated security OFF, you will be responsible for updating your DKIM signature whenever you make a change to your sending domain.**
 
 
 
-{% anchor h3 %}	Example DKIM Record: Automated Security ON
-{% endanchor %}	
+ ### 	Example DKIM Record: Automated Security ON
+ 	
 ```
 
 subdomain.yourdomain.com. | CNAME | uXXXXXXX.wlXXX.sendgrid.net
@@ -42,8 +42,8 @@ s2._domainkey.yourdomain.com. | CNAME | s2._domainkey.uXXX.wlXXX.sendgrid.net.
 
 ```
 
-{% anchor h3 %}	Example DKIM Record: Automated Security OFF
-{% endanchor %}	
+ ### 	Example DKIM Record: Automated Security OFF
+ 	
 ```
 
 m1._domainkey.yourdomain.com. | MX | mx.sendgrid.net

@@ -11,20 +11,20 @@ navigation:
   show: true
 ---
 
-{% anchor h2 %}	Simple Name Substitution
-{% endanchor %}	
+## 	Simple Name Substitution
+ 	
 This example will show you how to create a name substitution for your emails. We will be using the tag {% raw %}{{name}}{% endraw %} in this example. In this example the tag {% raw %}{{name}}{% endraw %} will get replaced with the name of the recipient.
 
-{% anchor h3 %}	Email Content
-{% endanchor %}	
-{% anchor h4 %}	Text
-{% endanchor %}	
+ ### 	Email Content
+ 	
+ ### 	Text
+ 	
 ```
 Hello {% raw %}{{name}}{% endraw %},
 ```
 
-{% anchor h4 %}	HTML
-{% endanchor %}	
+ ### 	HTML
+ 	
 ```html
 <html>
   <head></head>
@@ -35,8 +35,8 @@ Hello {% raw %}{{name}}{% endraw %},
 </html>
 ```
 
-{% anchor h3 %}	X-SMTPAPI Header
-{% endanchor %}	
+ ### 	X-SMTPAPI Header
+ 	
 ```json
 {
 	"to": [
@@ -50,8 +50,8 @@ Hello {% raw %}{{name}}{% endraw %},
 }
 ```
 
-{% anchor h3 %}	v3 Mail Send
-{% endanchor %}	
+ ### 	v3 Mail Send
+ 	
 ```json
 {
 	"personalizations": [{
@@ -102,18 +102,18 @@ Hello {% raw %}{{name}}{% endraw %},
 }
 ```
 
-{% anchor h3 %}	Example Outcome:
-{% endanchor %}	
-{% anchor h4 %}	example01@domain.com
-{% endanchor %}	
-{% anchor h5 %}	Text
-{% endanchor %}	
+ ### 	Example Outcome:
+ 	
+ ### 	example01@domain.com
+ 	
+ ### 	Text
+ 	
 ```
 Hello John,
 ```
 
-{% anchor h5 %}	HTML
-{% endanchor %}	
+ ### 	HTML
+ 	
 ```html
 <html>
   <head></head>
@@ -124,16 +124,16 @@ Hello John,
 </html>
 ```
 
-{% anchor h4 %}	example02@domain.com
-{% endanchor %}	
-{% anchor h5 %}	Text
-{% endanchor %}	
+ ### 	example02@domain.com
+ 	
+ ### 	Text
+ 	
 ```
 Hello Jane,
 ```
 
-{% anchor h5 %}	HTML
-{% endanchor %}	
+ ### 	HTML
+ 	
 ```html
 <html>
   <head></head>
@@ -144,16 +144,16 @@ Hello Jane,
 </html>
 ```
 
-{% anchor h4 %}	example03@domain.com
-{% endanchor %}	
-{% anchor h5 %}	Text
-{% endanchor %}	
+ ### 	example03@domain.com
+ 	
+ ### 	Text
+ 	
 ```
 Hello Matt,
 ```
 
-{% anchor h5 %}	HTML
-{% endanchor %}	
+ ### 	HTML
+ 	
 ```html
 <html>
   <head></head>
@@ -164,20 +164,20 @@ Hello Matt,
 </html>
 ```
 
-{% anchor h2 %}	First Name and Last Name Substitutions
-{% endanchor %}	
+## 	First Name and Last Name Substitutions
+ 	
 This example will show you how to create a first name and last name substitution for your emails. We will be using the tags "{% raw %}{{first_name}}{% endraw %}" and "{% raw %}{last_name}}{% endraw %}" in this example. In this example the tag {% raw %}{{first_name}}{% endraw %} will get replaced with the first name of the recipient and the tag {% raw %}{{last_name}}{% endraw %} will get replaced with the last name of the recipient.
 
-{% anchor h3 %}	Email Content
-{% endanchor %}	
-{% anchor h4 %}	Text
-{% endanchor %}	
+ ### 	Email Content
+ 	
+ ### 	Text
+ 	
 ```
 Hello {% raw %}{{first_name}}{% endraw %} {% raw %} {{last_name}}{% endraw %},
 ```
 
-{% anchor h4 %}	HTML
-{% endanchor %}	
+ ### 	HTML
+ 	
 ```html
 <html>
   <head></head>
@@ -188,8 +188,8 @@ Hello {% raw %}{{first_name}}{% endraw %} {% raw %} {{last_name}}{% endraw %},
 </html>
 ```
 
-{% anchor h3 %}	X-SMTPAPI Header
-{% endanchor %}	
+ ### 	X-SMTPAPI Header
+ 	
 ```json
 {
 	"to": [
@@ -204,8 +204,8 @@ Hello {% raw %}{{first_name}}{% endraw %} {% raw %} {{last_name}}{% endraw %},
 }
 ```
 
-{% anchor h3 %}	v3 Mail Send
-{% endanchor %}	
+ ### 	v3 Mail Send
+ 	
 ```json
 {
 	"personalizations": [{
@@ -259,18 +259,18 @@ Hello {% raw %}{{first_name}}{% endraw %} {% raw %} {{last_name}}{% endraw %},
 }
 ```
 
-{% anchor h3 %}	Example Outcome:
-{% endanchor %}	
-{% anchor h4 %}	example01@domain.com
-{% endanchor %}	
-{% anchor h5 %}	Text
-{% endanchor %}	
+ ### 	Example Outcome:
+ 	
+ ### 	example01@domain.com
+ 	
+ ### 	Text
+ 	
 ```
 Hello John Smith,
 ```
 
-{% anchor h5 %}	HTML
-{% endanchor %}	
+ ### 	HTML
+ 	
 ```html
 <html>
   <head></head>
@@ -281,16 +281,16 @@ Hello John Smith,
 </html>
 ```
 
-{% anchor h4 %}	example02@domain.com
-{% endanchor %}	
-{% anchor h5 %}	Text
-{% endanchor %}	
+ ### 	example02@domain.com
+ 	
+ ### 	Text
+ 	
 ```
 Hello Jane Williams,
 ```
 
-{% anchor h5 %}	HTML
-{% endanchor %}	
+ ### 	HTML
+ 	
 ```html
 <html>
   <head></head>
@@ -301,16 +301,16 @@ Hello Jane Williams,
 </html>
 ```
 
-{% anchor h4 %}	example03@domain.com
-{% endanchor %}	
-{% anchor h5 %}	Text
-{% endanchor %}	
+ ### 	example03@domain.com
+ 	
+ ### 	Text
+ 	
 ```
 Hello Matt Johnson,
 ```
 
-{% anchor h5 %}	HTML
-{% endanchor %}	
+ ### 	HTML
+ 	
 ```html
 <html>
   <head></head>
@@ -321,19 +321,19 @@ Hello Matt Johnson,
 </html>
 ```
 
-{% anchor h2 %}	Simple Greeting Section with Name Substitution
-{% endanchor %}	
+## 	Simple Greeting Section with Name Substitution
+ 	
 This example will show you how to create a section as a greeting with a name substitution. We will be using the tags "{% raw %}{{warm_welcome}}{% endraw %}", "{% raw %}{{greeting}}{% endraw %}" and "{% raw %}{{name}}{% endraw %}" in this example. In this example we have created a greeting using the section tag {% raw %}{{warm_welcome}}{% endraw %}. The {% raw %}{{warm_welcome}}{% endraw %} tag is replaced with the {% raw %}{{greeting}}{% endraw %} substitution which calls the section "Hello {% raw %}{{name}}{% endraw %},". The {% raw %}{{name}}{% endraw %} tag in "Hello {% raw %}{{name}}{% endraw %}," is then replaced with the recipients name.
 
-{% anchor h3 %}	Email Content
-{% endanchor %}	
-{% anchor h4 %}	Text
-{% endanchor %}	
+ ### 	Email Content
+ 	
+ ### 	Text
+ 	
 ```
 {% raw %}{{warm_welcome}}{% endraw %}	```
 
-{% anchor h4 %}	HTML
-{% endanchor %}	
+ ### 	HTML
+ 	
 ```html
 <html>
   <head></head>
@@ -344,8 +344,8 @@ This example will show you how to create a section as a greeting with a name sub
 </html>
 ```
 
-{% anchor h3 %}	X-SMTPAPI Header
-{% endanchor %}	
+ ### 	X-SMTPAPI Header
+ 	
 ```json
 {
 	"to": [
@@ -363,8 +363,8 @@ This example will show you how to create a section as a greeting with a name sub
 }
 ```
 
-{% anchor h3 %}	v3 Mail Send
-{% endanchor %}	
+ ### 	v3 Mail Send
+ 	
 ```json
 {
 	"personalizations": [{
@@ -420,18 +420,18 @@ This example will show you how to create a section as a greeting with a name sub
 }
 ```
 
-{% anchor h3 %}	Example Outcome:
-{% endanchor %}	
-{% anchor h4 %}	example01@domain.com
-{% endanchor %}	
-{% anchor h5 %}	Text
-{% endanchor %}	
+ ### 	Example Outcome:
+ 	
+ ### 	example01@domain.com
+ 	
+ ### 	Text
+ 	
 ```
 Hello John,
 ```
 
-{% anchor h5 %}	HTML
-{% endanchor %}	
+ ### 	HTML
+ 	
 ```html
 <html>
   <head></head>
@@ -442,16 +442,16 @@ Hello John,
 </html>
 ```
 
-{% anchor h4 %}	example02@domain.com
-{% endanchor %}	
-{% anchor h5 %}	Text
-{% endanchor %}	
+ ### 	example02@domain.com
+ 	
+ ### 	Text
+ 	
 ```
 Hello Jane,
 ```
 
-{% anchor h5 %}	HTML
-{% endanchor %}	
+ ### 	HTML
+ 	
 ```html
 <html>
   <head></head>
@@ -462,16 +462,16 @@ Hello Jane,
 </html>
 ```
 
-{% anchor h4 %}	example03@domain.com
-{% endanchor %}	
-{% anchor h5 %}	Text
-{% endanchor %}	
+ ### 	example03@domain.com
+ 	
+ ### 	Text
+ 	
 ```
 Hello Matt,
 ```
 
-{% anchor h5 %}	HTML
-{% endanchor %}	
+ ### 	HTML
+ 	
 ```html
 <html>
   <head></head>
@@ -482,19 +482,19 @@ Hello Matt,
 </html>
 ```
 
-{% anchor h2 %}	Greeting Section with First & Last Name Substitutions
-{% endanchor %}	
+## 	Greeting Section with First & Last Name Substitutions
+ 	
 This example will show you how to create a section with first name and last name substitution for your emails. We will be using the tags "{% raw %}{{warm_welcome}}{% endraw %}", "{% raw %}{{greeting}}{% endraw %}", "{% raw %}{{first_name}}{% endraw %}" and "{% raw %}{{last_name}}{% endraw %}" in this example. In this example we have created a greeting using the section tag {% raw %}{{warm_welcome}}{% endraw %}. The {% raw %}{{warm_welcome}}{% endraw %} tag is replaced with the {% raw %}{{greeting}}{% endraw %} substitution which calls the section "Hello {% raw %}{{first_name}}{% endraw %} {% raw %}{{last_name}}{% endraw %},". The {% raw %}{{first_name}}{% endraw %} and {% raw %}{{last_name}}{% endraw %} tags in "Hello {% raw %}{{first_name}}{% endraw %} {% raw %}{{last_name}}{% endraw %}," is then replaced with the recipients first and last names.
 
-{% anchor h3 %}	Email Content
-{% endanchor %}	
-{% anchor h4 %}	Text
-{% endanchor %}	
+ ### 	Email Content
+ 	
+ ### 	Text
+ 	
 ```
 {% raw %}{{warm_welcome}}{% endraw %}	```
 
-{% anchor h4 %}	HTML
-{% endanchor %}	
+ ### 	HTML
+ 	
 ```html
 <html>
   <head></head>
@@ -505,8 +505,8 @@ This example will show you how to create a section with first name and last name
 </html>
 ```
 
-{% anchor h3 %}	X-SMTPAPI Header
-{% endanchor %}	
+ ### 	X-SMTPAPI Header
+ 	
 ```json
 {
 	"to": [
@@ -525,8 +525,8 @@ This example will show you how to create a section with first name and last name
 }
 ```
 
-{% anchor h3 %}	v3 Mail Send
-{% endanchor %}	
+ ### 	v3 Mail Send
+ 	
 ```json
 {
 	"personalizations": [{
@@ -585,18 +585,18 @@ This example will show you how to create a section with first name and last name
 }
 ```
 
-{% anchor h3 %}	Example Outcome:
-{% endanchor %}	
-{% anchor h4 %}	example01@domain.com
-{% endanchor %}	
-{% anchor h5 %}	Text
-{% endanchor %}	
+ ### 	Example Outcome:
+ 	
+ ### 	example01@domain.com
+ 	
+ ### 	Text
+ 	
 ```
 Hello John Smith,
 ```
 
-{% anchor h5 %}	HTML
-{% endanchor %}	
+ ### 	HTML
+ 	
 ```html
 <html>
   <head></head>
@@ -607,16 +607,16 @@ Hello John Smith,
 </html>
 ```
 
-{% anchor h4 %}	example02@domain.com
-{% endanchor %}	
-{% anchor h5 %}	Text
-{% endanchor %}	
+ ### 	example02@domain.com
+ 	
+ ### 	Text
+ 	
 ```
 Hello Jane Williams,
 ```
 
-{% anchor h5 %}	HTML
-{% endanchor %}	
+ ### 	HTML
+ 	
 ```html
 <html>
   <head></head>
@@ -627,16 +627,16 @@ Hello Jane Williams,
 </html>
 ```
 
-{% anchor h4 %}	example03@domain.com
-{% endanchor %}	
-{% anchor h5 %}	Text
-{% endanchor %}	
+ ### 	example03@domain.com
+ 	
+ ### 	Text
+ 	
 ```
 Hello Matt Johnson,
 ```
 
-{% anchor h5 %}	HTML
-{% endanchor %}	
+ ### 	HTML
+ 	
 ```html
 <html>
   <head></head>
@@ -647,19 +647,19 @@ Hello Matt Johnson,
 </html>
 ```
 
-{% anchor h2 %}	Three Different Greeting Sections with First & Last Name Substitutions
-{% endanchor %}	
+## 	Three Different Greeting Sections with First & Last Name Substitutions
+ 	
 This example will show you how to create three different sections, each with first name and last name substitution for your emails. We will be using the tags "{% raw %}{{warm_welcome}}{% endraw %}", "{% raw %}{{greeting01}}{% endraw %}", "{% raw %}{{greeting02}}{% endraw %}", "{% raw %}{{greeting03}}{% endraw %}", "{% raw %}{{first_name}}{% endraw %}" and "{% raw %}{{last_name}}{% endraw %}" in this example. In this example we have created three different greetings using the section tag {% raw %}{{warm_welcome}}{% endraw %}. The {% raw %}{{warm_welcome}}{% endraw %} tag is replaced with either {% raw %}{{greeting01}}{% endraw %}, {% raw %}{{greeting02}}{% endraw %} or {% raw %}{{greeting03}}{% endraw %} substitution. This will call one of the three sections. In each of these sections there is the {% raw %}{{first_name}}{% endraw %} and {% raw %}{{last_name}}{% endraw %} tags which will get replaced with the recipients first and last names.
 
-{% anchor h3 %}	Email Content
-{% endanchor %}	
-{% anchor h4 %}	Text
-{% endanchor %}	
+ ### 	Email Content
+ 	
+ ### 	Text
+ 	
 ```
 {% raw %}{{warm_welcome}}{% endraw %}	```
 
-{% anchor h4 %}	HTML
-{% endanchor %}	
+ ### 	HTML
+ 	
 ```html
 <html>
   <head></head>
@@ -670,8 +670,8 @@ This example will show you how to create three different sections, each with fir
 </html>
 ```
 
-{% anchor h3 %}	X-SMTPAPI Header
-{% endanchor %}	
+ ### 	X-SMTPAPI Header
+ 	
 ```json
 {
 	"to": [
@@ -692,8 +692,8 @@ This example will show you how to create three different sections, each with fir
 }
 ```
 
-{% anchor h3 %}	v3 Mail Send
-{% endanchor %}	
+ ### 	v3 Mail Send
+ 	
 ```json
 {
 	"personalizations": [{
@@ -754,18 +754,18 @@ This example will show you how to create three different sections, each with fir
 }
 ```
 
-{% anchor h3 %}	Example Outcome:
-{% endanchor %}	
-{% anchor h4 %}	example01@domain.com
-{% endanchor %}	
-{% anchor h5 %}	Text
-{% endanchor %}	
+ ### 	Example Outcome:
+ 	
+ ### 	example01@domain.com
+ 	
+ ### 	Text
+ 	
 ```
 Welcome John Smith,
 ```
 
-{% anchor h5 %}	HTML
-{% endanchor %}	
+ ### 	HTML
+ 	
 ```html
 <html>
   <head></head>
@@ -776,16 +776,16 @@ Welcome John Smith,
 </html>
 ```
 
-{% anchor h4 %}	example02@domain.com
-{% endanchor %}	
-{% anchor h5 %}	Text
-{% endanchor %}	
+ ### 	example02@domain.com
+ 	
+ ### 	Text
+ 	
 ```
 Hello Jane Williams,
 ```
 
-{% anchor h5 %}	HTML
-{% endanchor %}	
+ ### 	HTML
+ 	
 ```html
 <html>
   <head></head>
@@ -796,16 +796,16 @@ Hello Jane Williams,
 </html>
 ```
 
-{% anchor h4 %}	example03@domain.com
-{% endanchor %}	
-{% anchor h5 %}	Text
-{% endanchor %}	
+ ### 	example03@domain.com
+ 	
+ ### 	Text
+ 	
 ```
 Dear Matt Johnson,
 ```
 
-{% anchor h5 %}	HTML
-{% endanchor %}	
+ ### 	HTML
+ 	
 ```html
 <html>
   <head></head>
@@ -816,20 +816,20 @@ Dear Matt Johnson,
 </html>
 ```
 
-{% anchor h2 %}	Three Confirmation Sections and Substitutions
-{% endanchor %}	
+## 	Three Confirmation Sections and Substitutions
+ 	
 This example will show you how to create three different sections for confirmation emails. We will be using the tags "{% raw %}{{name}}{% endraw %}", "{% raw %}{{confirmations}}{% endraw %}", "{% raw %}{{confirmation_001}}{% endraw %}", "{% raw %}{{confirmation_002}}{% endraw %}", "{% raw %}{{confirmation_003}}{% endraw %}" and "{% raw %}{{order_id}}{% endraw %}" in this example. In this example we have created three different confirmations using the section tag {% raw %}{{confirmations}}{% endraw %}. The {% raw %}{{confirmations}}{% endraw %} tag is replaced with either {% raw %}{{confirmation_001}}{% endraw %}, {% raw %}{{confirmation_002}}{% endraw %} or {% raw %}{{confirmation_003}}{% endraw %} substitution. This will call one of the three sections. In each of these sections there is the {% raw %}{{order_id}}{% endraw %} tag which will get replaced with the recipients order id.
 
-{% anchor h3 %}	Email Content
-{% endanchor %}	
-{% anchor h4 %}	Text
-{% endanchor %}	
+ ### 	Email Content
+ 	
+ ### 	Text
+ 	
 ```
 Hello {% raw %}{{name}}{% endraw %},
 {% raw %}{{confirmations}}{% endraw %}	```
 
-{% anchor h4 %}	HTML
-{% endanchor %}	
+ ### 	HTML
+ 	
 ```html
 <html>
   <head></head>
@@ -840,8 +840,8 @@ Hello {% raw %}{{name}}{% endraw %},
 </html>
 ```
 
-{% anchor h3 %}	X-SMTPAPI Header
-{% endanchor %}	
+ ### 	X-SMTPAPI Header
+ 	
 ```json
 {
 	"to": ["example01@domain.com", "example02@domain.com", "example03@domain.com"],
@@ -858,8 +858,8 @@ Hello {% raw %}{{name}}{% endraw %},
 }
 ```
 
-{% anchor h3 %}	v3 Mail Send
-{% endanchor %}	
+ ### 	v3 Mail Send
+ 	
 ```json
 {
 	"personalizations": [{
@@ -920,19 +920,19 @@ Hello {% raw %}{{name}}{% endraw %},
 }
 ```
 
-{% anchor h3 %}	Example Outcome:
-{% endanchor %}	
-{% anchor h4 %}	example01@domain.com
-{% endanchor %}	
-{% anchor h5 %}	Text
-{% endanchor %}	
+ ### 	Example Outcome:
+ 	
+ ### 	example01@domain.com
+ 	
+ ### 	Text
+ 	
 ```
 Welcome John,
 Thanks for choosing SendGrid. This email is to confirm that we have processed your order 12345.
 ```
 
-{% anchor h5 %}	HTML
-{% endanchor %}	
+ ### 	HTML
+ 	
 ```html
 <html>
   <head></head>
@@ -944,17 +944,17 @@ Thanks for choosing SendGrid. This email is to confirm that we have processed yo
 </html>
 ```
 
-{% anchor h4 %}	example02@domain.com
-{% endanchor %}	
-{% anchor h5 %}	Text
-{% endanchor %}	
+ ### 	example02@domain.com
+ 	
+ ### 	Text
+ 	
 ```
 Hello Jane,
 Thanks for choosing SendGrid. This email is to confirm that we have processed your order 23456. This invoice is to be paid by bank transfer within 7 days from the date of your monthly statement.
 ```
 
-{% anchor h5 %}	HTML
-{% endanchor %}	
+ ### 	HTML
+ 	
 ```html
 <html>
   <head></head>
@@ -966,17 +966,17 @@ Thanks for choosing SendGrid. This email is to confirm that we have processed yo
 </html>
 ```
 
-{% anchor h4 %}	example03@domain.com
-{% endanchor %}	
-{% anchor h5 %}	Text
-{% endanchor %}	
+ ### 	example03@domain.com
+ 	
+ ### 	Text
+ 	
 ```
 Dear Matt,
 Thanks for choosing SendGrid. This email is to confirm that we have processed your order 34567. You can download your invoice as a PDF for your records.
 ```
 
-{% anchor h5 %}	HTML
-{% endanchor %}	
+ ### 	HTML
+ 	
 ```html
 <html>
   <head></head>

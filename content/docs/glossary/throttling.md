@@ -16,8 +16,8 @@ SendGrid continues to attempt to send messages for up to 72 hours or until succe
 
 Throttling is when a receiving server refuses a message, but with a specific explanation that tells our server that it's only a temporary refusal. The error is usually something like "user is receiving mail at too great a rate right now, please try again later", or "user's mailbox is over quota." These errors are most often 400 errors - indicating a temporary failure. They are not often 500 errors - indicating a permanent failure. 
 
-{% anchor h2 %}	What causes a deferral?
-{% endanchor %}	
+## 	What causes a deferral?
+ 	
 -   The receiving server doesn't recognize your IP, and may think you're sending spam. This is why [warming up your IP]({{root_url}}/Classroom/Deliver/warming_up_ips.html) is so important. IP Warmup allows recipient mail servers to become familiar with your sending habits, and later anticipate your messages. 
 
 -   The receiving server doesn't have any open ports to receive email.

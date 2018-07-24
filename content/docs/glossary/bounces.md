@@ -19,8 +19,8 @@ If you want to receive notification of bounces in your application, you can enab
 
 You can also [retrieve and edit your list of bounces]({{root_url}}/API_Reference/Web_API/bounces.html) through our Web API.
 
-{% anchor h3 %}	Helpful Knowledge Base articles:
-{% endanchor %}	
+ ### 	Helpful Knowledge Base articles:
+ 	
 * [Drop Reason: Bounced Address](https://sendgrid.com/docs/Classroom/Track/Drops/drop_reason_bounced_address.html)
 * [Bounce Forwarding APP](https://sendgrid.com/docs/Classroom/Track/Bounces/how_to_set_up_bounce_forwarding.html)
 * [Implementing Bounce Notification For Multiple From Addresses](https://sendgrid.com/docs/Classroom/Track/Bounces/implementing_bounce_notification_for_multiple_from_addresses.html)

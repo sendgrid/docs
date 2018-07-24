@@ -6,8 +6,8 @@ navigation:
   show: true
 ---
 
-{% anchor h2 %}	Parse Webhook
-{% endanchor %}	
+## 	Parse Webhook
+ 	
 <call-out>
 
 We recommend using our official Python SDK, our client library with full documentation, when integrating with <a href="https://github.com/sendgrid/sendgrid-python/tree/master/sendgrid/helpers/inbound">SendGrid's Inbound Parse Webhook</a>.

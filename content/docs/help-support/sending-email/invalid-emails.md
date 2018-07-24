@@ -16,20 +16,20 @@ Before you send, SendGrid does a check against the format of the email address t
 
 The list provided here can be filtered by email address or date.
 
-{% anchor h2 %}	Searching Invalid Emails by Date
-{% endanchor %}	
+## 	Searching Invalid Emails by Date
+ 	
 In the top right corner, you will see a calendar icon. Click this and choose the dates you would like to search between. Your recipient list will refresh, showing the invalid email address reports from between those dates.
 
-{% anchor h2 %}	Removing Recipients From The List
-{% endanchor %}	
+## 	Removing Recipients From The List
+ 	
 When you select the checkboxes next to the recipient names or select all, using the checkbox next to the search box, you will see a new button at the top of the page. From this list, you can choose to remove the selected recipients from the list.
 
-{% anchor h2 %}	Download Invalid Emails as CSV
-{% endanchor %}	
+## 	Download Invalid Emails as CSV
+ 	
 You can download your list as a CSV by clicking the gear icon at the top of the page and selecting “Download CSV.” The file will download in your browser right away.
 
-{% anchor h2 %}	Additional Resources
-{% endanchor %}	
+## 	Additional Resources
+ 	
 - [Recipient Subscription Preferences]({{root_url}}/help-support/sending-email/recipient-subscription-preferences.html)
 - [Spam Reports]({{root_url}}/help-support/analytics-and-reporting/spam-reports.html)
 - [Invalid Emails API]({{root_url}}/API_Reference/Web_API_v3/invalid_emails.html)

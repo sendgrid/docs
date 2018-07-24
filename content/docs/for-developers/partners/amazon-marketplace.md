@@ -9,14 +9,14 @@ SendGrid has partnered with Amazon to offer our email services on the [Amazon Ma
 
 Once you have an AWS account, you can to [subscribe to SendGrid](https://aws.amazon.com/marketplace/pp/B074CQY6KB) and access it directly from the [AWS Management Console](https://console.aws.amazon.com/). Once you’ve subscribed to SendGrid, you have access to the [SendGrid application](https://app.sendgrid.com/) and the APIs. Use the AWS Management Console if you want to reset your password, cancel your account, or manage billing.
 
-{% anchor h3 %}	Pricing
-{% endanchor %}	
+ ### 	Pricing
+ 	
 There are two plans: AWS Basic, and AWS Pro. For more information, check out our[ AWS Marketplace page](https://aws.amazon.com/marketplace/pp/B074CQY6KB). Here's a monthly view of cost:
 
 ![]({{root_url}}/images/aws_pricing.png "AWS pricing")
 
-{% anchor h2 %}	Getting Started
-{% endanchor %}	
+## 	Getting Started
+ 	
 *To quickly get started with SendGrid:*
 
 - See [Getting Started With Marketing Campaigns]({{root_url}}/help-support/getting-started/how-to-send-email.html) for all of the tools you need to get started sending with the SendGrid application.
@@ -29,8 +29,8 @@ There are two plans: AWS Basic, and AWS Pro. For more information, check out our
 
 </call-out>
 
-{% anchor h2 %}	Managing your account
-{% endanchor %}	
+## 	Managing your account
+ 	
 - [Adding a Dedicated IP Address](#-Adding-a-Dedicated-IP-Address)
 - [Adding Subusers](#-Adding-Subusers)
 - [Adding domain authentication and link branding](#-Adding-domain-authentication-and-link-branding)
@@ -39,8 +39,8 @@ There are two plans: AWS Basic, and AWS Pro. For more information, check out our
 - [Canceling Your SendGrid Subscription](#-Canceling-Your-SendGrid-Subscription)
 - [Troubleshooting](#-Troubleshooting)
 
-{% anchor h3 %}	Adding a Dedicated IP Address
-{% endanchor %}	
+ ### 	Adding a Dedicated IP Address
+ 	
 You can purchase IP addresses dedicated to your account. Since you are the only one sending email over this IP, your sending practices determine the sender reputation associated with this IP. You can purchase up to 3 IP addresses per month. If you need more than 3 IPs, then you should [contact support](https://support.sendgrid.com/hc/en-us).
 
 You can only add a Dedicated IP Address if you are on an AWS Pro plan. To upgrade your plan, see [Upgrading or Downgrading Your Account](#-Upgrading-or-Downgrading-Your-Account).
@@ -55,18 +55,18 @@ You can only add a Dedicated IP Address if you are on an AWS Pro plan. To upgrad
 1. Select the number of IP Addresses to add, and select whether you want to warm up your IP automatically. Warming up an IP gradually increases the amount of email sent over this IP over time to improve your email deliverability. For more information, see [Warming Up IPs]({{root_url}}/help-support/getting-started/warming-up-an-ip-address.html).
 1. Click **Add**.
 
-{% anchor h3 %}	Adding domain authentication and link branding
-{% endanchor %}	
+ ### 	Adding domain authentication and link branding
+ 	
 Sender authentication shows email providers that SendGrid has your permission to send emails on your behalf. Domain authentication works by pointing DNS entries from your domain registrar to SendGrid, which drastically increases your ability to deliver email and allows you to begin building a sender reputation for your domain and for your IP addresses. For more information domain authentication, see [How to Set Up Domain Authentication]({{root_url}}/help-support/getting-started/how-to-set-up-domain-authentication.html).
 
-{% anchor h3 %}	Adding Subusers
-{% endanchor %}	
+ ### 	Adding Subusers
+ 	
 You can only add Subusers if you are on an AWS Pro plan. To upgrade your plan, see [Upgrading or Downgrading Your Account](#-Upgrading-or-Downgrading-Your-Account). Subusers are SendGrid accounts that belong to a parent account. They have their permissions and credit limits, which you assign as you create the subusers. Subusers help you segment your email sending and API activity.
 
 To get started with using Subusers, see the [Subusers overview]({{root_url}}/help-support/account-and-settings/subusers.html).
 
-{% anchor h3 %}	Upgrading or Downgrading Your Account
-{% endanchor %}	
+ ### 	Upgrading or Downgrading Your Account
+ 	
 You can upgrade or downgrade your account from the [SendGrid UI](https://app.sendgrid.com/settings/billing).
 
 *To change your account plan:*
@@ -76,12 +76,12 @@ You can upgrade or downgrade your account from the [SendGrid UI](https://app.sen
 
 ![]({{root_url}}/images/aws_upgrade.png "AWS upgrading or downgrading")
 
-{% anchor h3 %}	Managing Billing Options
-{% endanchor %}	
+ ### 	Managing Billing Options
+ 	
 Manage your billing options from the [AWS Billing & Cost Management Dashboard](https://console.aws.amazon.com/billing/).
 
-{% anchor h3 %}	Canceling Your SendGrid Subscription
-{% endanchor %}	
+ ### 	Canceling Your SendGrid Subscription
+ 	
 *To remove SendGrid from your AWS account:*
 
 1. Navigate to your [Software Subscriptions page](https://aws.amazon.com/marketplace/library?productType=saas&ref_=lbr_tab_saas) on AWS.
@@ -89,6 +89,6 @@ Manage your billing options from the [AWS Billing & Cost Management Dashboard](h
 
 ![]({{root_url}}/images/aws_cancel.png "AWS cancel button")
 
-{% anchor h3 %}	Troubleshooting
-{% endanchor %}	
+ ### 	Troubleshooting
+ 	
 If you run into issues with your AWS SendGrid account, you can contact our support team by [logging in here](https://support.sendgrid.com) and opening a support ticket.

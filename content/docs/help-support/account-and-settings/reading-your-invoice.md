@@ -14,18 +14,18 @@ Your SendGrid invoice contains a lot of information, which may be difficult to r
 
 ![A screen shot of an example invoice]({{root_url}}/img/invoice_legend.png)
 
-{% anchor h2 %}	1. Physical Address
-{% endanchor %}	
+## 	1. Physical Address
+ 	
 **The physical address of your business.** This address is the same address you entered when you first signed up. If you would like to update the address as it appears on your invoices, click Change Invoice Address on the [Plan & Billing Details](https://app.sendgrid.com/settings/billing) page. If you need to change the address on an existing invoice, please send an email to [billing@sendgrid.com](mailto:billing@sendgrid.com).
 
-{% anchor h2 %}	2. Billing Email
-{% endanchor %}	
+## 	2. Billing Email
+ 	
 **The email address where you receive SendGrid statements.** By default, this is the primary email address on file in your account. You can update it anytime from the [Plan & Billing Details](https://app.sendgrid.com/settings/billing) page. If you override the billing email address in this way, the primary email address on file will stop receiving invoices. 
 
 Need to send invoices to multiple addresses? Consider creating a [role address](https://sendgrid.com/docs/Classroom/Deliver/Address_Lists/role_addresses.html) on your side that includes the all of billing stakeholders in your organization, or send an email to [billing@sendgrid.com](mailto:billing@sendgrid.com).
 
-{% anchor h2 %}	3. Charge Summary
-{% endanchor %}	
+## 	3. Charge Summary
+ 	
 If you are in [a jurisdiction that SendGrid is required to charge sales tax]({{root_url}}/help-support/account-and-settings/taxes-and-tax-exempt.html), here is your tax summary:
 
 ![Tax summary section]({{root_url}}/img/invoice_tax.png)
@@ -52,8 +52,8 @@ Refer to "Contact List Usage" in the Usage Summary section below for more inform
 
 **Email Activity History** - This charge is for access to the Email Activity Feed API as well as 30 days worth of Email Activity History. These two features are sold as a package and cannot be added individually. 
 
-{% anchor h2 %}	4. Usage Summary
-{% endanchor %}	
+## 	4. Usage Summary
+ 	
 This is how charges from the Usage Summary section are calculated:
 
 ![Overage charges section]({{root_url}}/img/invoice_overage.png)
@@ -73,15 +73,15 @@ In this example, the number under the "Used" column refers to the number of "blo
 
 The charge for contact storage is **$10.00 PER 10,000 contacts(1 block),** so this example works out to a $0.00 usage charge for contacts stored in the previous month. 
 
-{% anchor h2 %}	5. Transaction and Payment Summary
-{% endanchor %}	
+## 	5. Transaction and Payment Summary
+ 	
 ![Transaction and payment summary]({{root_url}}/img/invoice_payment_summary.png)
 
 The Transaction Summary shows the total charges for the month, and the Payment Summary area shows the payment type, and last 4 digits of the card that was charged. You can update your card information, retry a failed payment, and export past invoices for your business on the [Plan & Billing Details page](https://app.sendgrid.com/settings/billing)
 
 **These line items always reflect the plan you currently have, not necessarily "Pro 100k", which is shown for the purposes of demonstration.**
 
-{% anchor h2 %}	Additional Resources
+## 	Additional Resources
 {% endanchor h2 %}	
 - [SendGrid Pricing]({{site.site_url}}/pricing/)
 - [Billing]({{root_url}}/help-support/account-and-settings/billing.html)

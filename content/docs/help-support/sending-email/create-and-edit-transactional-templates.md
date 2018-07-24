@@ -32,7 +32,7 @@ Transactional templates are account and subuser specific. Templates created on a
 
 </call-out>
 
-{% anchor h2 %}	Creating a template
+## 	Creating a template
 {% endanchor h2 %}	
 1. Open the transactional templates page and then click **Create Template**.
 1. Add a unique template name in the dialogue box and then click **Save**.
@@ -42,7 +42,7 @@ Transactional templates are account and subuser specific. Templates created on a
 
 The easiest way to get started with a new template is to use one of your previous email templates or a free template from the internet, and then modify it to fit your needs.
 
-{% anchor h2 %}	Editing your HTML template
+## 	Editing your HTML template
 {% endanchor h2 %}	
 <call-out>
 
@@ -59,7 +59,7 @@ Email templates are table-based HTML with inline or header styles, because some 
 
 1. When you’re done editing, click **Save**. <br></br>Please double check that the content is formatted correctly before you send an email using this template.
 
-{% anchor h2 %}	Preview and test your template
+## 	Preview and test your template
 {% endanchor h2 %}	
 SendGrid suggests previewing and testing your template once you have created it to ensure that the format and layout look the way you expect.
 
@@ -72,8 +72,8 @@ SendGrid suggests previewing and testing your template once you have created it 
 
 Any Substitution tags will not be populated in this test, but you will be able to confirm the layout and format of your template.
 
-{% anchor h2 %}	Managing templates
-{% endanchor %}	
+## 	Managing templates
+ 	
 From the main template view on each template group, you will see an actions menu. From this menu, you can choose to edit the name of your template, add a version, preview and test, or delete the template. You will also see a gear icon for each template version. Clicking this presents a menu that allows you to preview and test, edit, duplicate, and delete the template version. You can also use the preview function to send a test.
 
 <call-out>
@@ -82,7 +82,7 @@ To delete a template, you must first delete all the versions of your template.
 
 </call-out>
 
-{% anchor h3 %}	Activate your template
+ ### 	Activate your template
 {% endanchor h2 %}	
 *To activate your template:*
 
@@ -95,7 +95,7 @@ A template can only have one active version at a time. If you’ve created a new
 
 </call-out>
 
-{% anchor h3 %}	Duplicate a Template
+ ### 	Duplicate a Template
 {% endanchor h2 %}	
 *To duplicate a template:*
 
@@ -105,7 +105,7 @@ A template can only have one active version at a time. If you’ve created a new
 The app creates a clone, giving it a name that starts with "untitled". You can give the template a unique name by selecting the action menu next to that version and clicking **Edit**. Once the editor has opened, enter a unique name in the *Template Name* field. This duplicate version will not be active until you activate it.
 
 
-{% anchor h2 %}	Adding unsubscribe links to a template
+## 	Adding unsubscribe links to a template
 {% endanchor h2 %}	
 For more information about unsubscribes, check out our [unsubscribe documentation]({{root_url}}/help-support/sending-email/index-suppressions.html).
 

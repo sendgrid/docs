@@ -10,8 +10,8 @@ navigation:
   show: true
 ---
 
-{% anchor h2 %}	Table of Contents
-{% endanchor %}	
+## 	Table of Contents
+ 	
 * [What are Universal Links?](#-What-are-universal-links)
 * [Requirements](#-Requirements)
 * [What are "apple-app-site-association" and "digital asset links" files?](#-What-are-appleappsiteassociation-and-digital-asset-links-files)
@@ -20,8 +20,8 @@ navigation:
 * [Flagging Your Universal Links](#-Flagging-Your-Universal-Links)
 * [Resolving SendGrid Click Tracking Links](#-Resolving-SendGrid-Click-Tracking-Links)
 
-{% anchor h2 %}	What are universal links?
-{% endanchor %}	
+## 	What are universal links?
+ 	
 Mobile devices are increasingly becoming the preferred method of receiving, reading, and engaging with email. If you send an email containing a link to your website, but you also have a corresponding mobile application, it is possible to ensure that any recipients who click the link on their mobile device are taken directly to your app instead of their web browsers.
 
 This is accomplished by using **universal links**. A universal link is a unique URL that can be configured to open a window in either the recipient's web browser, mobile browser, or mobile application depending on the device the recipient is using. SendGrid enables you to simply tag individual links that you would like to be converted to universal links, without sacrificing the ability to track clicks on those links.
@@ -42,8 +42,8 @@ When setting up universal links for your app, it is important to ensure that you
 
 </call-out>
 
-{% anchor h2 %}	Requirements
-{% endanchor %}	
+## 	Requirements
+ 	
 There are several requirements that you must complete before you can begin using universal links in your email:
 
 - Universal links for iOS require an "apple-app-site-association" JSON file.
@@ -54,8 +54,8 @@ There are several requirements that you must complete before you can begin using
 - On iOS, you must include your branded link subdomain in the "Associated Domains" for your app. You can customize your subdoman using the custom return path in advanced settings while setting it up. Using the example above, you'd need to add an entry for "applinks:links.example.com" like this:
 ![]({{root_url}}/images/universal_links_ios.png)
 
-{% anchor h2 %}	What are "apple-app-site-association" and "digital asset links" files?
-{% endanchor %}	
+## 	What are "apple-app-site-association" and "digital asset links" files?
+ 	
 To keep your app secure, Google and Apple want to restrict which resources or websites are allowed to link directly to different pages within your app. This prevents bad actors from using universal links to gain access to sensitive information within your app.
 
 Your "apple-app-site-association" and "digital asset links" files serve as secure means of authenticating your universal links; they verify that your website is allowed to open up a page within your app.
@@ -73,8 +73,8 @@ Both "apple-app-site-association" and "digital asset links" files are comprised 
 **For detailed instructions on how to configure an Android "digital asset links" file, please visit [Google's Developer Documentation](https://developers.google.com/digital-asset-links/v1/getting-started).**
 
 
-{% anchor h3 %}	Example apple-app-site-association file:
-{% endanchor %}	
+ ### 	Example apple-app-site-association file:
+ 	
 ```json
 {
   "applinks": {
@@ -97,8 +97,8 @@ Both "apple-app-site-association" and "digital asset links" files are comprised 
 
 </call-out>
 
-{% anchor h3 %}	Example assetlinks.json file:
-{% endanchor %}	
+ ### 	Example assetlinks.json file:
+ 	
 ```json
 [
   {
@@ -127,8 +127,8 @@ Android requires that you specify these paths inside your app, rather than the a
 
 Once you have created and configured your Android and iOS configuration files, you will have to host them on a secure HTTPS server. Keep reading below to learn how you can host these files on either [Amazon CloudFront](https://aws.amazon.com/cloudfront/) or [NGINX](https://www.nginx.com/).
 
-{% anchor h2 %}	Setting Up Universal Links Using CloudFront
-{% endanchor %}	
+## 	Setting Up Universal Links Using CloudFront
+ 	
 After creating your iOS "apple-app-site-association" file and/or your Android "digital asset links" file, you need to host them on a secure content delivery network. The following instructions will guide you through setting up Amazon's CloudFront to host these files.
 
 1. Navigate to [Amazon CloudFront](https://aws.amazon.com/cloudfront/). Once you have created an account or are logged into your existing account, create a new **S3 bucket** and give it a unique name (e.g. links-example-com)
@@ -232,8 +232,8 @@ After creating your iOS "apple-app-site-association" file and/or your Android "d
 
 32. Verify behavior using [https://branch.io/resources/universal-links/](https://branch.io/resources/universal-links/)
 
-{% anchor h2 %}	Setting Up Universal Links Using NGINX
-{% endanchor %}	
+## 	Setting Up Universal Links Using NGINX
+ 	
 After creating your iOS "apple-app-site-association" file and/or your Android "digital asset links" file, you need to host them on a secure content delivery network. The following instructions will guide you through setting up NGINX to host these files.
 
 1. Request a new certificate for the domain your link branding is configured for (e.g. links.example.com)
@@ -282,8 +282,8 @@ server {
 
 ```
 
-{% anchor h2 %}	Flagging Your Universal Links
-{% endanchor %}	
+## 	Flagging Your Universal Links
+ 	
 <call-out>
 
 It is important to make sure that only the links within your email that point to your app are flagged as universal links.
@@ -303,10 +303,10 @@ This way, as long as your association file has the `paths` restricted to `/uni/*
 If you exclude the `universal="true"` attribute, your links will still function, but they will take your recipient to their mobile browser.
 If you exclude the `/uni/*` path in your `apple-app-site-association`, the _all_ links for your authenticated domain will be forwarded for your app to handle, which may cause issues.
 
-{% anchor h2 %}	Resolving SendGrid Click Tracking Links
-{% endanchor %}	
-{% anchor h3 %}	Handling Click Tracking Links In Your App
-{% endanchor %}	
+## 	Resolving SendGrid Click Tracking Links
+ 	
+ ### 	Handling Click Tracking Links In Your App
+ 	
 Now that you've successfully set up your app to open SendGrid click tracking links, you'll want to ensure that your app handles them properly. The link your app receives will be the SendGrid encoded link, so you'll want to resolve the link in order to:
 
 1. Trigger the "click" event in your SendGrid account for statistics.
@@ -314,8 +314,8 @@ Now that you've successfully set up your app to open SendGrid click tracking lin
 
 The following code examples help to illustrate what logic should be included within your own app to guarantee that your links are resolved, and tracked by SendGrid.
 
-{% anchor h3 %}	Resolving Links in iOS
-{% endanchor %}	
+ ### 	Resolving Links in iOS
+ 	
 If you have written your app for iOS, you can use `NSURLSession` resolve the link.
 
 For example:
@@ -375,8 +375,8 @@ func application(_ application: UIApplication, continue userActivity: NSUserActi
 
 ```
 
-{% anchor h3 %}	Resolving Links in Android
-{% endanchor %}	
+ ### 	Resolving Links in Android
+ 	
 If you have written your app for Android, you can use `HttpURLConnection` to resolve the URL by setting `setInstanceFollowRedirects` to `false`.
 
 For example:

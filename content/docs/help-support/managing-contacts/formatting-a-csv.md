@@ -21,14 +21,14 @@ seo:
   
 You can easily add contacts to your contact database by uploading a CSV into Marketing Campaigns. If you have your contacts in a spreadsheet, simply save that sheet as a CSV file using a spreadsheet application like Microsoft Excel or Google Sheets. You can also export your contacts from most database systems as a CSV file.
 
-{% anchor h2 %} 
+##  
 General Formatting Rules
-{% endanchor %}	
+ 	
 Here are some rules to follow when formatting a CSV to upload into Marketing Campaigns.
 
-{% anchor h3 %} 
+ ###  
 Contact Info 
-{% endanchor %}	
+ 	
 Your CSV should contain the following information about each contact:
 
 * email (required)
@@ -37,22 +37,22 @@ Your CSV should contain the following information about each contact:
 
 You can also include [custom fields](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/custom_fields.html) with additional identifying information for each contact in the CSV. For example, you can specify “country,” “city,” and “age” as the custom fields. The data in the custom fields are critical for both segmentation and content personalization.
 
-{% anchor h3 %} 
+ ###  
 Header Row 
-{% endanchor %}	
+ 	
 The first row of your CSV must be a header row containing labels identifying each column. Headers must only use letters, numbers, and underscores. If you add custom field data to your CSV, you can save some time when uploading by naming the columns the same as the custom fields you have previously defined.
 
 SendGrid identifies individual contacts by their email address, so "email" must be one of the CSV headers. If you do not include the email column, SendGrid will not add any information to your contact database or list. Rows in your CSV without an email address in the email column will automatically fail, but will not cause the entire upload to fail.
 
-{% anchor h3 %} 
+ ###  
 Character Encoding 
-{% endanchor %}	
+ 	
 If your contacts list has non-English characters, please make sure that you're using a CSV file that is UTF-8 encoded.
 
-{% anchor h3 %} Not all addresses populate in UI {% endanchor %}	
+ ###  Not all addresses populate in UI  	
 SendGrid removes duplicate and invalid email addresses (including email addresses with special characters) from your list during upload, so the number of contacts can potentially change between your CSV and your Marketing Campaigns list.
 
-{% anchor h3 %} Numbers and Text {% endanchor %}	
+ ###  Numbers and Text  	
 Make sure that you don’t have text fields that look like numbers. Text that look like numbers are those that contain punctuation characters like a dash, underscore, parenthesis, or multiple dots.
 
 ```
@@ -60,11 +60,11 @@ Make sure that you don’t have text fields that look like numbers. Text that lo
 - Phone numbers: “(555) 555-5555” or “555.555.5555”
 - Monetary Values with the currency indicator such as $3.50 or €5.73
 ```
-{% anchor h3 %} CSV Header {% endanchor %}	
+ ###  CSV Header  	
 - Header fields can be blank in your CSV, but must be named and have their type defined later during the upload process.
 
-{% anchor h3 %}	Date Formatting 
-{% endanchor %}	
+ ### 	Date Formatting 
+ 	
 Properly format any dates in your CSV. If you created your CSV with Excel and it is not displaying properly, force the date format before exporting to CSV. Use one of the following date formats: `MM/DD/YYYY, MM/D/YYYY, M/D/YYYY, or M/DD/YYYY`
 
 **I have more than one of the same email in my database**
@@ -73,8 +73,8 @@ Marketing Campaigns uses email as the unique identifier for each contact. So, if
 
 If it's necessary to have a duplicate entry in your contacts database What you may want to do is add logic to set a custom field, based on the reason why you have duplicate emails in your system (for example multiple product lines) and then [segment](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/lists.html) your user to be in lists based on those custom fields.
 
-{% anchor h2 %}	Troubleshooting
-{% endanchor %}	
+## 	Troubleshooting
+ 	
 Listed below are a few errors you may encounter when uploading a CSV to Marketing Campaigns, along with tips to correct the root issue. 
 
 **We were unable to detect an email column in the CSV file headers. The email column must always have a header of "email"**
@@ -112,8 +112,8 @@ Number fields can include monetary values without the currency symbols. For exam
 
 ![]({{root_url}}/img/listupload_table.png)
 
-{% anchor h3 %}	Additional Resources
-{% endanchor %}	
+ ### 	Additional Resources
+ 	
 - [Contacts API](https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html)
 - [Segmenting your Contacts](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/lists.html)
 - [Building your Contact list](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/build_contact_list.html)

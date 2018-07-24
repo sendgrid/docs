@@ -83,8 +83,8 @@ All Mail clients render HTML/CSS differently, in their own ways and for their ow
     - Try align="top" to the image in question.
 
 
-{% anchor h2 %}	Controlling converted plain text email output
-{% endanchor %}	
+## 	Controlling converted plain text email output
+ 	
 _To control the output of plain-text conversion do one of the following:_
 
 * Turn off the filters causing the conversion from plain text to HTML.

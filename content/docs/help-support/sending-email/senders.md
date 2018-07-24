@@ -16,11 +16,11 @@ seo:
 
 <iframe src="https://player.vimeo.com/video/120703745" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-{% anchor h2 %}	Before you Begin
+## 	Before you Begin
 {% endanchor h2 %}	
 Before you begin, go to your SendGrid [account settings]({{site.app_url}}/user/account) to verify that your timezone and account email address are correct. Verifying your account information ensures that when you upload contacts, you receive notifications and that we deliver scheduled emails at the correct time.
 
-{% anchor h2 %}	Adding a Sender
+## 	Adding a Sender
 {% endanchor h2 %}	
 The footer of your emails automatically contains your sender information, because CAN-SPAM regulations require this information in every email you send.
 
@@ -60,8 +60,8 @@ Once you schedule a campaign, you cannot delete the sender identity associated w
 
 </call-out>
 
-{% anchor h2 %}	Adding Sender Information to a Campaign
-{% endanchor %}	
+## 	Adding Sender Information to a Campaign
+ 	
 You can insert your sender identity information into your campaigns using the following tags within your campaign or template content:
 
 1. **[Sender_Name]** - The sender's name.

@@ -12,44 +12,44 @@ navigation:
 
 This extension allows you to configure Magento 2.0 to send all emails using SendGrid. To get started, [click here](https://marketplace.magento.com/sendgrid-email-delivery-simplified.html)!
 
-{% anchor h2 %}	Description
-{% endanchor %}	
+## 	Description
+ 	
 The official SendGrid extension for Magento 2.0 makes it easy to ensure delivery of your most important transactional emails. Purchase receipts, shipping confirmations, and password reset emails are at the core of how you engage with your customers, helping to fuel your store’s growth. Email delivery is our passion. Entrust our industry-leading email delivery platform, including world-class deliverability tools and expertise to make sure your transactional emails get to the inbox.
 
 Transactional email is an important component of any email communication strategy. SendGrid relieves businesses of the cost and complexity of maintaining custom email systems. SendGrid provides reliable delivery, scalability and real-time analytics along with flexible APIs that make custom integration a breeze. SendGrid for Magento 2.0 allows you to choose between the SMTP relay or the Email API to send outgoing emails from your Magento installation.
 
-{% anchor h2 %}	SendGrid Pricing Plans
-{% endanchor %}	
+## 	SendGrid Pricing Plans
+ 	
 Plans start at $9.95/month. Please see our [pricing page](https://sendgrid.com/partners/magento/) for more information.
 
 For a free trial, [click here](https://sendgrid.com/partners/magento/)!
 
-{% anchor h2 %}	Main Features
-{% endanchor %}	
-{% anchor h3 %}	Proven Deliverability
-{% endanchor %}	
+## 	Main Features
+ 	
+ ### 	Proven Deliverability
+ 	
 Trusted email deliverability features including email authentication, reputation monitoring, dedicated IP addresses, and more.
 
-{% anchor h3 %}	Scale with Confidence
-{% endanchor %}	
+ ### 	Scale with Confidence
+ 	
 Our world-class email platform delivers over 30 billion emails per month for our customers.
 
-{% anchor h3 %}	Support
-{% endanchor %}	
+ ### 	Support
+ 	
 [24/7 support](https://support.sendgrid.com) available to answer your email needs. We also provide a full library of self-support materials here.
 
-{% anchor h3 %}	Reporting
-{% endanchor %}	
+ ### 	Reporting
+ 	
 Learn more about your shoppers’ engagement with performance feedback and real-time analytics on requests, deliveries, opens, bounces, unsubscribes, clicks, and more.
 
-{% anchor h2 %}	What’s the functionality of your extension?
-{% endanchor %}	
+## 	What’s the functionality of your extension?
+ 	
 * Our extension easily integrates with your SendGrid API key and allows you to send your Magento email with confidence through our world class infrastructure.
 * In addition to reliable delivery and scalability, our extension allows you have access to real-time analytics and insights for quick, well-informed decision making about your customers to grow your e-commerce store.
 * Integrate easily with your SendGrid API key
 
-{% anchor h2 %}	What makes your extension unique?
-{% endanchor %}	
+## 	What makes your extension unique?
+ 	
 * SendGrid pioneered the cloud-based email industry, and we are trusted by leading senders like Uber, AirBnB, and Spotify to achieve optimal deliverability at scale.
 * Flexible API and SMTP setup for for easy transactional email Integration.
 * Key email deliverability features including email authentication, reputation monitoring, dedicated IP addresses, and more.
@@ -57,8 +57,8 @@ Learn more about your shoppers’ engagement with performance feedback and real-
 * Leverage our step-by-step [documentation](https://sendgrid.com/docs) or get quick help from our [24/7 Support Team](https://support.sendgrid.com).
 * This official extension was built for M2 by SendGrid’s dedicated partner-focused teams for continued management and future development.
 
-{% anchor h2 %}	Configuration
-{% endanchor %}	
+## 	Configuration
+ 	
 First, log in to your **Magento Dashboard**, then click  **System** in the left hand navigation bar. Select **SendGrid** and click **Settings**. Here, you can enter your SendGrid account settings.
 
 1. To get the SendGrid plugin running after activation, navigate to the plugin's settings page and enter your **SendGrid API Key**. Next, choose how your email will be sent (SMTP Relay or Email API).
@@ -87,24 +87,24 @@ First, log in to your **Magento Dashboard**, then click  **System** in the left 
 
     ![]({{root_url}}/images/magento_7.png)
 
-{% anchor h3 %}	Statistics
-{% endanchor %}	
+ ### 	Statistics
+ 	
 Log into your **Magento Dashboard**, then click **System** in the left hand navigation bar. Select **SendGrid** and click **Statistics** to see your statistics.
 
   ![]({{root_url}}/images/magento_8.jpg)
 
-{% anchor h3 %}	Requirements
-{% endanchor %}	
+ ### 	Requirements
+ 	
 * Magento Community Edition 2.x or Magento Enterprise Edition 2.x
 
-{% anchor h2 %}	Frequently Asked Questions
-{% endanchor %}	
-{% anchor h3 %}	What credentials do I need to add on settings page?
-{% endanchor %}	
+## 	Frequently Asked Questions
+ 	
+ ### 	What credentials do I need to add on settings page?
+ 	
 [Create a SendGrid account](https://sendgrid.com/partners/magento/) and [generate a new API key](https://app.sendgrid.com/settings/api_keys). For more information about API Keys, [click here]({{root_url}}/User_Guide/Settings/api_keys.html).
 
-{% anchor h3 %}	What permissions should my API keys have?
-{% endanchor %}	
+ ### 	What permissions should my API keys have?
+ 	
 Your API Key must have  the following permissions:
 
 <table class="table">

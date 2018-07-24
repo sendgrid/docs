@@ -12,7 +12,7 @@ The SendGrid [Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html) let
 
 It only takes a couple of minutes to start streaming email event data from SendGrid to Keen IO and once you do you can start analyzing and visualizing your data in a whole bunch of different ways.
 
-{% anchor h3 %}	Send your SendGrid Data to Keen IO
+ ### 	Send your SendGrid Data to Keen IO
 {% endanchor h3 %}	
 **Step 1: Create a Keen IO and SendGrid account**
 
@@ -37,13 +37,13 @@ In the Keen IO settings, select the events you want to post to Keen IO. To do th
 
 That’s it! Now, as your emails make their way through SendGrid, all of the event information will be posted to Keen IO. A new Event Collection, for each type of email event, will be created within your Keen Project.
 
-{% anchor h3 %}	Test Your Integration
+ ### 	Test Your Integration
 {% endanchor h3 %}	
 Test that everything is working by clicking  on the **"Test Your Integration"** button in SendGrid’s “Event Notification” Settings. This will send sample email data from SendGrid into your Keen IO Project. In the Keen UI, click on **“Check for SendGrid Data”** button. 
 
 Your SendGrid email data should now be populated in Keen IO.
 
-{% anchor h3 %}	SendGrid Email Analytics
+ ### 	SendGrid Email Analytics
 {% endanchor h3 %}	
 Once you have data successfully flowing from SendGrid to Keen, a new application called SendGrid Email Analytics will appear on your projects page’s “Apps” tab. 
 
@@ -56,7 +56,7 @@ Now you can start tracking the performance of your emails by creating segments! 
 For each of these metrics, you can download a CSV of the detailed event data. Just click on any cell, and you’ll see a menu with the option to download a CSV. Learn who did or did not open an email for example, and with this list of email addresses you can build a more targeted user campaign.
 
 
-{% anchor h4 %}	Additional Resources:
+ ### 	Additional Resources:
 {% endanchor h4 %}	
 - [Integration Guide that includes analysis and visualization info](https://sendgrid.com/docs/Integrate/Tutorials/analytics_with_keen_io.html)
 - [Keen IO API Reference](https://keen.io/docs/api/)

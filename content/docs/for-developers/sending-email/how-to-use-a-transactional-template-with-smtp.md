@@ -10,8 +10,8 @@ navigation:
   show: true
 ---
 
-{% anchor h2 %}	Enabling a Template
-{% endanchor %}	
+## 	Enabling a Template
+ 	
 To use a transactional template when you send, enable the `templates`
 filter and set the `template_id` to one of your transactional templates.
 
@@ -44,16 +44,16 @@ UI.
 
 * * * * *
 
-{% anchor h2 %}	Body and Subject Tags
-{% endanchor %}	
+## 	Body and Subject Tags
+ 	
 Enabling a transactional template means that the `subject` and `body`
 content of your message will behave differently.
 
 If you want only the message's content to be displayed, populate only the token in the template's field.
 If you want only the template's content to be displayed, leave the message field (subject or body) empty, and the template will populate.
 
-{% anchor h3 %}	Text or HTML Templates?
-{% endanchor %}	
+ ### 	Text or HTML Templates?
+ 	
 <call-out>
 
 It is best practice to provide content for both the ```html``` and the ```text``` properties in all of your emails.
@@ -64,8 +64,8 @@ The ```text``` property is substituted into the `<%body%>` of the text template 
 
 * * * * *
 
-{% anchor h2 %}	Substitutions and Sections
-{% endanchor %}	
+## 	Substitutions and Sections
+ 	
 You can use SMTP API
 [substitution]({{root_url}}/for-developers/sending-email/substitution-tags.html)
 and [section]({{root_url}}/for-developers/sending-email/section-tags.html)

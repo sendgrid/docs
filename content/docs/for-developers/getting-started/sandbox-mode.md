@@ -21,8 +21,8 @@ Sandbox mode is an optional parameter within `mail_settings`. Enabling sandbox m
 
 When making a request with sandbox mode enabled, we will validate the form, type, and shape of your request. In other words, sandbox mode will validate each parameter you include and the structure of your JSON payload. If you include a `template_id` in your sandbox mode request, it will be assumed that you have included a subject line and body within the template. We will not validate this content.
 
-{% anchor h2 %}	Using Sandbox Mode
-{% endanchor %}	
+## 	Using Sandbox Mode
+ 	
 <call-out type="warning">
 
 When using sandbox mode, you must include the "enable" parameter and it must be given a boolean value of either true, or false. **Do not enclose the boolean value in quotes**, or you will receive the error:
@@ -31,16 +31,16 @@ When using sandbox mode, you must include the "enable" parameter and it must be 
 
 </call-out>
 
-{% anchor h3 %}	Valid Request Body
-{% endanchor %}	
+ ### 	Valid Request Body
+ 	
 When your request validates, you will receive a 200 OK response (as opposed to the 202 ACCEPTED response that is returned for successful non-sandbox requests).
 
-{% anchor h3 %}	Invalid Request Body
-{% endanchor %}	
+ ### 	Invalid Request Body
+ 	
 If you submit a request with sandbox mode enabled, but your request body is invalid, you will receive one or more error messages with error codes, detailed explanations for the error or errors, and links to any relevant documentation.
 
-{% anchor h3 %}	Example Sandbox Mode JSON
-{% endanchor %}	
+ ### 	Example Sandbox Mode JSON
+ 	
 
 *Please note:* The following is an invalid request body intended to demonstrate the validation behavior of sandbox mode for a bad request.
 

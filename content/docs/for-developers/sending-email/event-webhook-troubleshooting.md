@@ -14,8 +14,8 @@ navigation:
     - [Duplicate events]()
     - [Load handling]()
 
-{% anchor h2 %}	General troubleshooting
-{% endanchor %}	
+## 	General troubleshooting
+ 	
 *Considerations for troubleshooting your Event Webhook instance:*
 
 - Start by making sure your web server is returning a 2xx response to our servers. Any other response type will result in our server retrying a POST until we receive a 2xx response or the maximum time has expired. All events are retried at increasing intervals for up to 24 hours after the event occurs.
@@ -29,17 +29,17 @@ curl -X POST -H "Content-Type: application/json" -d '[{"email":"john.doe@sendgri
 
 - If you're not getting a response from your server, follow the steps in [Getting started with the Event Webhook]({{root_url}}/for-developers/tracking-events/getting-started-event-webhook.html) to test your SendGrid instance with Webhook tester. You could also use tools like ngrok, or Runscope.
 
-{% anchor h2 %}	Common issues
-{% endanchor %}	
-{% anchor h3 %}	Duplicate events
-{% endanchor %}	
+## 	Common issues
+ 	
+ ### 	Duplicate events
+ 	
 **It is possible to see duplicate events in the data posted by the Event Webhook.**
 
 We recommend that you use some form of deduplication when processing or storing your Event Webhook data using the `sg_event_id` as a differentiator since this ID is unique for every event where `sg_event_id` is present.
 
 The `sg_event_id` is a [UUIDv4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random) string that is `Base64url` encoded.
 
-{% anchor h2 %}	Additional Resources
+## 	Additional Resources
 {% endanchor h2 %}	
 - [Getting started with the Event Webhook]({{root_url}}/for-developers/tracking-events/getting-started-event-webhook.html)
 - [Event webhook reference]({{root_url}}/for-developers/tracking-events/event.html)

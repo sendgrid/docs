@@ -12,8 +12,8 @@ navigation:
 
 Below are some cURL examples for several basic use cases to get you sending email through SendGrid's v3 Mail Send endpoint right away!
 
-{% anchor h2 %}	Hello, World!
-{% endanchor %}	
+## 	Hello, World!
+ 	
 ```bash
 curl --request POST \
   --url https://api.sendgrid.com/v3/mail/send \
@@ -22,8 +22,8 @@ curl --request POST \
   --data '{"personalizations": [{"to": [{"email": "recipient@example.com"}]}],"from": {"email": "sendeexampexample@example.com"},"subject": "Hello, World!","content": [{"type": "text/plain", "value": "Heya!"}]}'
 ```
 
-{% anchor h2 %}	Sending a Basic Email to Multiple Recipients
-{% endanchor %}	
+## 	Sending a Basic Email to Multiple Recipients
+ 	
 ```bash
 curl --request POST \
   --url https://api.sendgrid.com/v3/mail/send \
@@ -32,8 +32,8 @@ curl --request POST \
   --data '{"personalizations": [{"to": [{"email": "recipient@example.com"}],"cc": [{"email":"recipient2@example.com"}, {"email": "recipient3@example.com"}, {"email":"recipient4@example.com"}]}], "from": {"email": "sendeexampexample@example.com"},"subject":"Hello, World!", "content": [{"type": "text/plain", "value": "Heya!"}]}'
 ```
 
-{% anchor h2 %}	Sending a Basic Email to Multiple Recipients
-{% endanchor %}	
+## 	Sending a Basic Email to Multiple Recipients
+ 	
 ```bash
 curl --request POST \
   --url https://api.sendgrid.com/v3/mail/send \
@@ -42,8 +42,8 @@ curl --request POST \
   --data '{"personalizations": [{"to": [{"email": "recipient@example.com"}],"cc": [{"email":"recipient2@example.com"}, {"email": "recipient3@example.com"}, {"email":"recipient4@example.com"}]}], "from": {"email": "sendeexampexample@example.com"},"subject":"Hello, World!", "content": [{"type": "text/plain", "value": "Heya!"}]}'
 ```
 
-{% anchor h2 %}	Sending a Basic Email Using a Template
-{% endanchor %}	
+## 	Sending a Basic Email Using a Template
+ 	
 ```bash
 curl --request POST \
   --url https://api.sendgrid.com/v3/mail/send \
@@ -52,8 +52,8 @@ curl --request POST \
   --data '{"personalizations": [{"to": [{"email": "recipient@example.com"}]}],"from": {"email": "sendeexampexample@example.com"},"subject":"Hello, World!","content": [{"type": "text/plain","value": "Heya!"}], "template_id" : "YOUR_TEMPLATE_ID"}'
 ```
 
-{% anchor h2 %}	Sending a Basic Email at a Scheduled Time
-{% endanchor %}	
+## 	Sending a Basic Email at a Scheduled Time
+ 	
 ```bash
 curl --request POST \
   --url https://api.sendgrid.com/v3/mail/send \
@@ -62,8 +62,8 @@ curl --request POST \
   --data '{"personalizations": [{"to": [{"email": "recipient@example.com"}]}],"from": {"email": "sendeexampexample@example.com"},"subject":"Hello, World!","content": [{"type": "text/plain","value": "Heya!"}], "send_at" : "UNIX_TIMESTAMP_HERE"}'
 ```
 
-{% anchor h2 %}	Scheduling and Cancelling an Email
-{% endanchor %}	
+## 	Scheduling and Cancelling an Email
+ 	
 You may schedule an email to be sent up to 72 hours in the future by using the "send_at" parameter. You may cancel this same scheduled email by using the [Cancel Scheduled Sends endpoint]({{root_url}}/API_Reference/Web_API_v3/cancel_schedule_send.html).
 
 **Step 1: Generate a batch ID**

@@ -20,33 +20,33 @@ navigation:
 - [Automatic IP Warmup Schedule](#-Automatic-IP-Warmup-Schedule)
 - [Assigning a Dedicated IP address to a subuser](#-Assigning-a-Dedicated-IP-address-to-a-subuser)
 
-{% anchor h2 %}	What are d IP Addresses?
-{% endanchor %}	
+## 	What are d IP Addresses?
+ 	
 An Internet Protocol (IP) address is a unique numerical address that defines a location. At SendGrid, you can purchase IP addresses dedicated to your account. Since you are the only one sending email over this IP, the sender reputation associated with this IP is determined purely by your sending practices.
 
 
-{% anchor h2 %}	Why would I want a dedicated IP address?
-{% endanchor %}	
+## 	Why would I want a dedicated IP address?
+ 	
 If you are sending any significant amount of email, we typically suggest sending your marketing and transactional emails to from separate IP addresses. In addition, it is strongly recommended to associate your sending domain with your new outbound IP address (provided to you by SendGrid).  This is available at no extra cost and can be accomplished by [completing an rDNS setup for your dedicated IP (here's a video tutorial and documentation help)](https://sendgrid.com/docs/Help/Getting_Started/How_to_set_up_reverse_dns.html).
 
 We also suggest having at least two promotional IP addresses when your volume reaches 200-300K/month.
 
 
-{% anchor h2 %}	Do I have a dedicated IP address?
-{% endanchor %}	
+## 	Do I have a dedicated IP address?
+ 	
 Depending on the plan you have chosen, you either have a dedicated sending IP address or you are using a shared sending IP address.
 
 - All Pro and Premier customers are given at least one dedicated sending IP by default. You can view any IPs attached to your account [here](https://app.sendgrid.com/settings/ip_addresses).
 - Free and Essential customers send from groups of shared IP addresses, where they are grouped with senders of similar reputation and deliverability. Shared IPs addresses that these accounts send from can change without notice as your reputation changes, or as we make changes to IP groups to improve deliverability. In theses cases, you will not be able to view your shared sending IP addresses from within your account.
 
 
-{% anchor h2 %}	How many dedicated IPs should I have?
-{% endanchor %}	
+## 	How many dedicated IPs should I have?
+ 	
 Please see our document on [suggested IP allocation based on volume](https://sendgrid.com/docs/assets/IPWarmupSchedule.pdf).
 
 
-{% anchor h2 %}	Adding an additional dedicated IP address
-{% endanchor %}	
+## 	Adding an additional dedicated IP address
+ 	
 You can purchase an additional d IP Address from the IP Addresses Settings page or from your [Plan & Billing Details](https://app.sendgrid.com/settings/billing) page.
 
 *To add an additional d IP Address:*
@@ -73,8 +73,8 @@ After purchasing your IP, we strongly encourage you to set up reverse DNS. For m
 </call-out>
 
 
-{% anchor h2 %}	Reputation Monitoring for d IP Accounts
-{% endanchor %}	
+## 	Reputation Monitoring for d IP Accounts
+ 	
 SendGrid does not offer dedicated IP address reputation monitoring as a service.  We do not manage the reputation of your dedicated IP address since only your mail is being sent via your dedicated IP. This means that you have ultimate control over the content that is being sent out and therefore are responsible for monitoring and maintaining its reputation and listing status. However, there are many services that can help you maintain your IP’s reputation.
 
 The following are some third party tools available to assist you in maintaining your reputation:
@@ -85,16 +85,16 @@ The following are some third party tools available to assist you in maintaining 
 
 In addition, SendGrid does offer [Delivery Consultation](https://sendgrid.com/marketing/delivery-consult/) services to Pro and Premier accounts that can help with deliverability and on-boarding. Services include how to maintain/improve domain and IP reputation, reviewing message content, dedicated IP configuration, and creating a custom IP warm-up plan just to name a few.
 
-{% anchor h2 %}	Warming Up a d IP Address
-{% endanchor %}	
+## 	Warming Up a d IP Address
+ 	
 For more information on warming up an IP Address, see [Warming up a dedicated IP]({{root_url}}/help-support/getting-started/warming-up-an-ip-address.html).
 
-{% anchor h2 %}	Assigning a Dedicated IP address to a subuser
-{% endanchor %}	
+## 	Assigning a Dedicated IP address to a subuser
+ 	
 Subusers cannot set up and add reverse DNS to their own dedicated IPs, but you can set it up for them and assign it to them. You can add a dedicated IP to a subuser when you [create the subuser]({{root_url}}/help-support/account-and-settings/subusers.html#-Create-a-Subuser), or in the [Subuser management](https://app.sendgrid.com/settings/subusers) page.
 
-{% anchor h3 %}	Before you begin
-{% endanchor %}	
+ ### 	Before you begin
+ 	
 You need to have a [subuser]({{root_url}}/help-support/account-and-settings/subusers.html#-Create-a-Subuser), and a [dedicated IP address](https://sendgrid.com/docs/help-support/account-and-settings/dedicated-ip-addresses.html#-Adding-an-additional-Dedicated-IP-Address) you want to assign the subuser.
 
 *To assign a Dedicated IP to a subuser after the subuser is already created:*
@@ -105,7 +105,7 @@ You need to have a [subuser]({{root_url}}/help-support/account-and-settings/subu
 1. Under I.P. Addresses, select an IP address to assign to the subuser.
 1. Select **Save**
 
-{% anchor h2 %}	Additional Resources
+## 	Additional Resources
 {% endanchor h2 %}	
 - [Warming up a dedicated IP]({{root_url}}/help-support/getting-started/warming-up-an-ip-address.html)
 - [API IP Access Management]({{root_url}}/help-support/account-and-settings/ip-access-management.html)
