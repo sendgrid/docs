@@ -40,10 +40,10 @@ Add recipients to an Unsubscribe Group
 *To upload a CSV:*
 
 1. Find the group you want to add recipients to and click the action menu. 
-![]({{root_url}}/img/<unsub_action_menu>.png "Unsubcribe Group action menu")
-1. Select **Upload a CSV**. 
-1. Drag the CSV you want to upload into the field, or click **select a CSV file to upload** and locate the file you want to upload.
-1. Click **Upload CSV**. 
+![]({{root_url}}/img/unsub_action_menu.png "Unsubcribe Group action menu")
+2. Select **Upload a CSV**. 
+3. Drag the CSV you want to upload into the field, or click **select a CSV file to upload** and locate the file you want to upload from your files.
+4. Click **Upload CSV**. 
 
 *To manually add recipients to an Unsubscribe Group:*
 
@@ -55,14 +55,37 @@ Add recipients to an Unsubscribe Group
 Managing Unsubscribe Groups
 {% endanchor %}
 
+
 {% anchor h3 %}
 Exporting an Unsubscribe Group List
 {% endanchor %}
+
+*To export an Unsubscribe Group List:*
+
+1. Navigate to the Unsubscribe Group you want to export.
+1. Click the action menu.
+1. Select **Export**. A CSV file begins downloading.
 
 {% anchor h3 %}
 Editing an Unsubscribe Group
 {% endanchor %}
 
+*To edit an Unsubscribe Group:*
+
+1. Navigate to the Unsubuscribe Group you want to edit.
+1. Click the action menu.
+1. Select **Edit**. 
+From the Edit Group page, you can change the Group Name, Group Description, and display preferences. 
+
 {% anchor h3 %}
 Deleting an Unsubscribe Group
 {% endanchor %}
+
+*To delete an Unsubscribe Group:*
+
+1. Navigate to the Unsubuscribe Group you want to delete.
+1. Click the action menu.
+1. Select **Edit**. The Edit Group page opens.
+1. Click **Delete Group**. 
+1. Confirm that you want to delete the selected group and then click **Delete**.
+![]({{root_url}}/img/confirm_unsub_group_delete.png "Confirm Unsubscribe Group Delete")
