@@ -17,9 +17,9 @@ You can also send email with [the UI]({{root_url}}/help-support/getting-started/
 - [What is SMTP?](#-What-is-smtp)
 - [Sending a test SMTP email with Telnet](#-Sending-a-test-SMTP-email-with-Telnet)
 
-{% anchor h2 %}
+## 
 What is SMTP?
-{% endanchor %}
+ 
 
 [SMTP]({{root_url}}/glossary/smtp.html), or _simple mail transfer protocol_, is a quick and easy way to send email from one server to another. SendGrid provides an SMTP service that allows you to deliver your email via our server instead of your client or server.
 
@@ -29,13 +29,13 @@ The X-SMTPAPI headers that you add are stripped from the final email because the
 
 For a deeper dive into what SMTP is, the benefits of sending an email with SMTP, and how SendGrid can help, see the [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/) on our blog.
 
-{% anchor h2 %}
+## 
 Sending a test SMTP email with Telnet
-{% endanchor %}
+ 
 
-{% anchor h3 %}
+ ### 
 Before you begin
-{% endanchor %}
+ 
 
 - Create a SendGrid API key on the [API Keys page](https://app.sendgrid.com/Account_and_Settings/api_keys).
 - Open your command line, bash, shell, or Terminal functionality (depending on what OS you are using). You'll use this window to input the commands to initiate a telnet connection.
@@ -72,9 +72,9 @@ Telnet does not register backspaces correctly - so you have to type your command
 
 Now that you've sent a test email, learn to [integrate your servers with our SMTP API]({{root_url}}/for-developers/getting-started/integrating-with-the-smtp-api.html).
 
-{% anchor h2 %}
+## 
 Additional Resources
-{% endanchor h2 %}
+ 
 
 - [Getting Started with the UI]({{root_url}}/help-support/getting-started/how-to-send-email.html)
 - [Getting Started with the API]({{root_url}}/API_Reference/api_v3.html)

@@ -21,6 +21,5 @@ Do you have an [API Key](https://app.sendgrid.com/settings/api_keys) yet? If not
 
 </call-out>
 
-{% anchor h2 %}Using SendGrid's PHP Library{% endanchor %}
-
+## Using SendGrid's PHP Library 	
 <script src="https://gist.github.com/sendgrid-gists/bd1b8a0b2adce2acf72aa8ecb82b51a5.js"></script>

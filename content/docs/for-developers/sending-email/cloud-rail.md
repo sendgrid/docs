@@ -14,10 +14,8 @@ In this tutorial, the integration of the Android SDK into an application is demo
 Gradle is used as the build tool (Android Studio standard).
 Head to the [Website](https://cloudrail.com/) for all the details about CloudRail and instructions for other platforms.
 
-{% anchor h2 %}
-Setup
-{% endanchor %}
-
+## 	Setup
+ 	
 The easiest way to integrate CloudRail for Android is via Maven.
 It suffices to add the following to your build.gradle:
 
@@ -27,10 +25,8 @@ dependencies {
 }
 ```
 
-{% anchor h2 %}
-Send a simple email
-{% endanchor %}
-
+## 	Send a simple email
+ 	
 After setup, sending an email with SendGrid is a breeze.
 Just add code like the one below:
 
@@ -53,10 +49,8 @@ new Thread() {
 }.start();
 ```
 
-{% anchor h2 %}
-Send a personalized email
-{% endanchor %}
-
+## 	Send a personalized email
+ 	
 Since you've already integrated CloudRail SI, why not make use of some of the other APIs that come with it?
 Let's use Facebook to get a user's info to personalize the email:
 

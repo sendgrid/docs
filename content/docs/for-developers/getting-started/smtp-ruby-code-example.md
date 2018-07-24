@@ -8,10 +8,8 @@ navigation:
 
 These examples require the [JSON Ruby Library](http://www.ruby-doc.org/stdlib-2.0.0/libdoc/json/rdoc/JSON.html).
 
-{% anchor h2 %}
-SmtpApiHeader.rb
-{% endanchor %}
-
+## 	SmtpApiHeader.rb
+ 	
 This header is required for each example.
 
 ```ruby
@@ -81,10 +79,8 @@ end
 ```
 
 
-{% anchor h2 %}
-Example Ruby Usage
-{% endanchor %}
-
+## 	Example Ruby Usage
+ 	
 ```ruby
 require './SmtpApiHeader.rb'
 require 'mail'

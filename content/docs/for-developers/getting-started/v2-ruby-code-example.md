@@ -16,8 +16,7 @@ The library does not officially support the V2 API, but you can use V2 with an o
 
 </call-out>
 
-{% anchor h2 %} Using SendGrid's Ruby Library {% endanchor %}
-```ruby
+##  Using SendGrid's Ruby Library  	```ruby
 # using SendGrid's Ruby Library
 # https://github.com/sendgrid/sendgrid-ruby
 require 'sendgrid-ruby'

@@ -43,10 +43,8 @@ The Code Editor provides users who are importing, editing, or crafting custom HT
 
 The Design Editor offers users powerful drag & drop WYSIWYG editing tools making it possible for anyone to build beautiful emails, regardless of HTML knowledge. For those familiar with HTML looking to leverage the design editor you can modify the HTML of individual content modules.
 
-{% anchor h3 %}
-Designing Your Campaign
-{% endanchor h3 %}
-
+ ### 	Designing Your Campaign
+  	
 Depending on your editor selection, you use different methods to design your campaign. Both the Design Editor and the Code Editor have the same three tabs: **Settings**, **Tags**, and **A/B Testing**.
 
 1. Edit your campaign by filling in the fields in the **Settings** Tab.
@@ -70,10 +68,8 @@ Message size limit:  The total message size should not exceed 20MB. This include
 
 </call-out>
 
-{% anchor h3 %}
-Scheduling Your Campaign
-{% endanchor h3 %}
-
+ ### 	Scheduling Your Campaign
+  	
 *To schedule your campaign:*
 
 1. To send your campaign at a later time or date, toggle the **Send Immediately** button to **Off**.
@@ -98,10 +94,8 @@ Be sure your account is set to the correct time zone in order to ensure that you
 1. Click **Account Details** or go to https://app.sendgrid.com/settings/account.
 1. Scroll to the bottom of the page, find **TIME ZONE**, and ensure your desired timezone is correct.
 
-{% anchor h3 %}
-Additional Resources
-{% endanchor h3 %}
-
+ ### 	Additional Resources
+  	
 - [Campaign Statistics](https://sendgrid.com/docs/help-support/analytics-and-reporting/campaign-stats.html)
 - [Billing](https://sendgrid.com/docs/help-support/account-and-settings/billing.html)
 - [Sending with the API]({{root_url}}/for-developers/getting-started/api-getting-started.html)

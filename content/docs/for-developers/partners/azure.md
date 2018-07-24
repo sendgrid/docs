@@ -7,10 +7,8 @@ navigation:
   show: true
 ---
 
-{% anchor h2 %}
-Point and Click Setup in Windows Azure
-{% endanchor %}
-
+## 	Point and Click Setup in Windows Azure
+ 	
 You can control a website, mobile backend and SendGrid all from within the Windows Azure management portal. We will cover all three of these in this tutorial.
 
 To start, create a SendGrid account from the management portal:
@@ -37,10 +35,8 @@ Now, we’ll create a Windows Azure Website:
 
 That’s it! You now have a website running on Azure. Now let’s create something cool.
 
-{% anchor h2 %}
-Connect to the SendGrid Inbound Parse API
-{% endanchor %}
-
+## 	Connect to the SendGrid Inbound Parse API
+ 	
 SendGrid can both send and receive email for your domain name. The playlist app uses incoming mail, which means setting up DNS at your domain registrar or host. The process to do this is going to be different depending on who controls your DNS. This tutorial will walk through the Azure and SendGrid part of this process, but you may need to ask for help on changing DNS in your system.
 
 It’s a good idea to choose a subdomain like playlist.example.com, rather than a domain itself. That’s because the Inbound Parse API must collect all mail and you don’t want to interrupt other email for your domain. To use custom domains in Windows Azure, your website will need to run in either Shared mode or the Standard tier; however, Shared mode is currently not available.
@@ -82,10 +78,8 @@ While you're waiting for DNS to be ready, you can prepare your SendGrid Incoming
 
 Once the DNS has propagated, you’ll be able to receive email to any email address `@playlist.example.com`. In the next step, we’ll make sure your website on Windows Azure is ready to accept those emails.
 
-{% anchor h2 %}
-Prepare the Code to Run on Windows Azure
-{% endanchor%}
-
+## 	Prepare the Code to Run on Windows Azure
+ 	
 Before you can put the code in place, you need to prepare your source control system, which will be Git in this case. Make sure you have Git installed on your local machine before proceeding. There are downloads for Windows, Mac, Linux and Solaris.
 Now set up your repository within the Windows Azure interface:
 
@@ -153,10 +147,8 @@ One last thing, you need to update the receiving email address:
 
 With your changes pushed to Azure, you can restart the server with the button at the bottom of the web server’s dashboard. Then click the BROWSE button within the same menu to see your website live. At this point, people can send in their song requests, assuming that the DNS has propagated.
 
-{% anchor h2 %}
-Add a Backend Using Windows Mobile Services
-{% endanchor %}
-
+## 	Add a Backend Using Windows Mobile Services
+ 	
 Windows Azure can also run a backend-as-a-service for your app, which allows you to store data, authenticate users, send push notifications, and do other common mobile tasks. This backend can also be used for non-mobile applications.
 
 Follow these steps to enable Mobile Services from the Windows Azure interface:
@@ -179,19 +171,18 @@ Now you need to add a table to the database:
 
 In your index.html file add the following code near the closing body tag to add the Windows Mobile Services library to your app:
 
-{%codeblock lang:html%}
+``` html
 <script src="https://website.azure-mobile.net/client/MobileServices.Web-1.0.0.min.js"></script>
-{%endcodeblock%}
-
+```
 ![Mobile Services]({{root_url}}/images/azure_13.png)
 
 In the `js/app.js` file, after the `$("#queue").append…` line, add the following code:
 
-{%codeblock lang:javascript%}
+``` javascript
 var client = new WindowsAzure.MobileServiceClient("https://website.azure-mobile.net/",  "<Password>");
 var item = { request: data.name, song: data.track, user: data.user };
 client.getTable("playlist_songs").insert(item);
-{%endcodeblock%}
+```
 
 To allow for your app to have access to the DB, add your URL to the cross origin resource sharing (cors) setting.
 
@@ -201,10 +192,8 @@ Add your changes via git and push to Azure.
 
 Now your website, mobile service, and SendGrid account are all in harmony on Windows Azure. You could stop here, but to see the real power of Mobile Services, you’ll want to create a native mobile application.
 
-{% anchor h2 %}
-Connect Windows Azure Mobile Services to iOS
-{% endanchor %}
-
+## 	Connect Windows Azure Mobile Services to iOS
+ 	
 The Windows Azure Mobile Services SDK simplifies the process of standing up a backend for your app in Windows Azure. The Windows Azure team also has SDKs for Android, HTML, Windows Store, and Windows Phone. For this example we’re going to use iOS.
 
 We can download a pre-packaged mobile app from within the Windows Azure interface:
@@ -223,7 +212,7 @@ Now you’ll want to edit the sample app you downloaded from Windows Azure:
 ![Credentials]({{root_url}}/images/azure_17.png)
 3.	Update the function refreshDataOnSuccess in `QSTodoService.m` to return all from the queue. Remove the existing code there and replace it with:
 
-{%codeblock lang:objc%}
+``` objc
 // Return all song request titles from the table
 // items: An NSArray of the records that matched your query.
 // totalCount: The total count of items in all pages of the query, not just those returned in the current page. This value is set to -1, unless you explicitly request the total count in your request. For more info, see Return data in pages.
@@ -234,10 +223,11 @@ items = [results mutableCopy];
 // Let the caller know that we finished
 completion();
 }];
-{%endcodeblock%}
+```
 ![Code]({{root_url}}/images/azure_18.png)
 4.	Now, go to the file QSToDoListViewController.m, and replace the onAdd function’s contents with:
-{%codeblock lang:objc%}
+
+``` objc
 // Populate the parameters for the SendGrid Web API Call
 // Find more details about the [Web API here]({{root_url}}/API_Reference/Web_API/index.html).
 NSString *username = @"<Your SendGrid Username>";
@@ -277,11 +267,11 @@ UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Error"
 [message show];
 }
 itemText.text = @"";
+```
 5.	In the same file, replace this line:
-label.text = [item objectForKey:@"text"];
+```label.text = [item objectForKey:@"text"];```
 with this line:
-label.text = [item objectForKey:@"request"];
-{%endcodeblock%}
+```label.text = [item objectForKey:@"request"];```
 
 Now you can make some adjustments to the interface:
 
