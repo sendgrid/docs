@@ -40,7 +40,9 @@ Add recipients to an Unsubscribe Group
 *To upload a CSV:*
 
 1. Find the group you want to add recipients to and click the action menu. 
+
 ![]({{root_url}}/img/unsub_action_menu.png "Unsubcribe Group action menu")
+
 2. Select **Upload a CSV**. 
 3. Drag the CSV you want to upload into the field, or click **select a CSV file to upload** and locate the file you want to upload from your files.
 4. Click **Upload CSV**. 
@@ -88,4 +90,14 @@ Deleting an Unsubscribe Group
 1. Select **Edit**. The Edit Group page opens.
 1. Click **Delete Group**. 
 1. Confirm that you want to delete the selected group and then click **Delete**.
+
 ![]({{root_url}}/img/confirm_unsub_group_delete.png "Confirm Unsubscribe Group Delete")
+
+{% anchor h3 %}
+Additional Resources
+{% endanchor h3 %}
+
+- [Suppressions Overview]({{root_url}}/User_Guide/Suppressions/index.html)
+- [Group Unsubscribes]({{root_url}}/User_Guide/Suppressions/group_unsubscribes.html)
+- [Global Unsubscribes]({{root_url}}/User_Guide/Suppressions/global_unsubscribes.html)
+
