@@ -15,8 +15,7 @@ The library does not officially support the V2 API, but you can use V2 with an o
 
 </call-out>
 
-{% anchor h2 %} Using SendGrid's Java Library {% endanchor %}
-```java
+{% anchor h2 %} Using SendGrid's Java Library {% endanchor %}	```java
 // using SendGrid's Java Library
 // https://github.com/sendgrid/sendgrid-java
 import com.sendgrid.*;

@@ -18,10 +18,8 @@ seo:
 You can filter the information stored in your contact lists to create segments. Segmenting contacts using different conditions allows you to create marketing campaigns that directly addresses the wants and needs of a particular audience. You can create a segment that pulls from ALL CONTACTS or a specific existing list. [Custom fields](https://sendgrid.com/docs/help-support/managing-contacts/custom-fields.html) allow you to use unique information to identify contacts for different segments.
 Segments are dynamically updated over time as you add contacts who meet the criteria of your segment, or as the traits of your contacts change. For example, a segment with the criteria ”opened an email within 30 days” will evolve as contacts engage (or don’t engage) with your email.
 
-{% anchor h2 %}
-Creating a Segment
-{% endanchor %}
-
+{% anchor h2 %}	Creating a Segment
+{% endanchor %}	
 You can create a new segment with multiple conditions based on the information you have stored about your contacts, and based on some of the information SendGrid has stored about your Marketing Campaigns.
 
 <call-out>
@@ -125,10 +123,8 @@ You can add up to 15 different conditions per segment.
 
 </call-out>
 
-{% anchor h3 %}
-Exporting a Segment
-{% endanchor %}
-
+{% anchor h3 %}	Exporting a Segment
+{% endanchor %}	
 *To export a Segment:*
 
 1. Click the Action Menu next to the name of the segment you wish to export.
@@ -144,10 +140,8 @@ The download link for your CSV export will be valid for 24 hours.
 </call-out>
 
 
-{% anchor h3 %}
-Additional Resources
-{% endanchor h3 %}
-
+{% anchor h3 %}	Additional Resources
+{% endanchor h3 %}	
 - [Contacts](https://sendgrid.com/docs/help-support/managing-contacts/adding-contacts.html)
 - [Custom Fields](https://sendgrid.com/docs/help-support/managing-contacts/custom-fields.html)
 - [Tips on Segmenting Your Active Subscribers](https://sendgrid.com/blog/tips-on-segmenting-your-active-subscribers/)

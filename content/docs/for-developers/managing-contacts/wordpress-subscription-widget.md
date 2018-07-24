@@ -13,53 +13,39 @@ navigation:
  show: true
 ---
 
-{% anchor h2 %}
-What is the Subscription Widget
-{% endanchor %}
-
+{% anchor h2 %}	What is the Subscription Widget
+{% endanchor %}	
 SendGrid’s WordPress Subscription Widget makes it easy for people visiting your WordPress site to subscribe to your marketing emails, such as any newsletters, announcements, or promotional offers you may send. Upon signup, they’ll automatically receive an opt-in email allowing them to confirm their desire to begin receiving your emails. This confirmation constitutes “double opt-in,” a deliverability best practice.
 
-{% anchor h2 %}
-Installing the Subscription Widget
-{% endanchor %}
-
-{% anchor h3 %}
-Requirements
-{% endanchor %}
-
+{% anchor h2 %}	Installing the Subscription Widget
+{% endanchor %}	
+{% anchor h3 %}	Requirements
+{% endanchor %}	
 * PHP version >= 5.6 and <= 7.1. Installing this plugin on PHP versions 5.3 and earlier will cause your website to break. Installation on PHP versions 5.4 and 5.5 will work but it is not recommended.
 * To send emails through SMTP you need to install the [Swift Mailer plugin](https://wordpress.org/plugins/swift-mailer/).
 * If the `wp_mail()` function has been declared by another plugin that you have installed, you won't be able to use the SendGrid plugin.
 
-{% anchor h3 %}
-Automatically Install the SendGrid Plugin from the WordPress Admin Page
-{% endanchor %}
-
+{% anchor h3 %}	Automatically Install the SendGrid Plugin from the WordPress Admin Page
+{% endanchor %}	
 1. After logging into your WordPress account, navigate to **Plugins** and click **Add New**.
 2. Search for "SendGrid Plugin" and click **Install Now**
 3. Activate the plugin from the **Plugins** menu in WordPress or from the plugin installation screen.
 4. [Create a SendGrid account](http://sendgrid.com/partner/wordpress) on the WordPress Partner's Page
 5. Navigate to **Settings**, select **SendGrid Settings**, and enter your SendGrid credentials.
 
-{% anchor h3 %}
-Manually Install the SendGrid Plugin by Uploading the SendGrid Plugin .ZIP File
-{% endanchor %}
-
+{% anchor h3 %}	Manually Install the SendGrid Plugin by Uploading the SendGrid Plugin .ZIP File
+{% endanchor %}	
 1. Upload the WordPress SendGrid Plugin to the **/wp-contents/plugins/** folder.
 2. Activate the plugin from the **Plugins** menu in WordPress.
 4. [Create a SendGrid account](http://sendgrid.com/partner/wordpress) on the WordPress Partner's Page
 4. Navigate to **Settings**, select **SendGrid Settings**, and enter your SendGrid credentials.
 
-{% anchor h2 %}
-Configuring the SendGrid Subscription Widget in WordPress
-{% endanchor %}
-
+{% anchor h2 %}	Configuring the SendGrid Subscription Widget in WordPress
+{% endanchor %}	
 To set up the subscription widget from the WordPress interface, open the SendGrid WordPress plugin page, navigate to **Settings**, and click on the tab labeled **Subscription Widget**.
 
-{% anchor h3 %}
-Configuring Your Credentials
-{% endanchor %}
-
+{% anchor h3 %}	Configuring Your Credentials
+{% endanchor %}	
 To enable the Subscription Widget, you’ll first need an API key to authenticate your access to SendGrid services. If you’ve already set up the General settings for the plugin, you may choose to use the same API key by checking the “Use same authentication as transactional” option.
 
 Alternatively, you may create a separate API key specifically for uploading contacts from the Subscription Widget. We recommend creating this API Key dedicated to your WordPress plugin with only the [minimum permissions]({{root_url}}/for-developers/sending-email/wordpress-faq.html) necessary to perform the plugin's tasks. This is a security best practice that prevents someone who might obtain your API Key from accessing all areas of your account. For a more detailed discussion of the benefits of API Key permissions, please see our documentation on [API Keys]({{root_url}}/help-support/account-and-settings/api-keys.html).
@@ -68,10 +54,8 @@ To create a dedicated API Key for your plugin, log into your SendGrid account, n
 
 ![]({{root_url}}/images/wp_subscription_widget_1.png)
 
-{% anchor h3 %}
-Choosing Your Marketing Campaigns Recipient List
-{% endanchor %}
-
+{% anchor h3 %}	Choosing Your Marketing Campaigns Recipient List
+{% endanchor %}	
 After you set up a valid API key you must choose a specific list where your new contacts will be stored.
 
 ![]({{root_url}}/images/wp_subscription_widget_2.png)
@@ -80,10 +64,8 @@ If you don't have a list set up for your signups from the Subscription Widget, o
 
 ![]({{root_url}}/images/wp_subscription_widget_2_1.png)
 
-{% anchor h3 %}
-Configuring Your Subscription Widget Form
-{% endanchor %}
-
+{% anchor h3 %}	Configuring Your Subscription Widget Form
+{% endanchor %}	
 Once you have selected the contact list to which you would like your new signups to be uploaded, simply complete the form to reflect your preferences. You can decide whether you’ll include first and last names on your signup form and whether they’ll be required. You can also craft the subject line and content of the opt-in confirmation email. Lastly, you’ll be able to choose the page your new signups see upon clicking the confirmation link within the opt-in confirmation email.
 
 <call-out>
@@ -100,10 +82,8 @@ When writing the content for your signup confirmation email, you can choose betw
 
 Finally, select the WordPress page that will be displayed to the user by selecting it from the drop down menu on the settings page.
 
-{% anchor h3 %}
-Configuring Your Subscription Opt-In Confirmation Page
-{% endanchor %}
-
+{% anchor h3 %}	Configuring Your Subscription Opt-In Confirmation Page
+{% endanchor %}	
 If you would like to create your own custom opt-in confirmation page, simply create a static WordPress page as you would for any other area of your site (for example, your "About" or "Contact" page).
 
 ![]({{root_url}}/images/wp_plugin_confirmation_page.png)
@@ -120,10 +100,8 @@ Once you have created and saved this new page, it will appear in the dropdown me
 
 For more information on how to create a new WordPress page, please visit the [WordPress documentation](https://codex.wordpress.org/Pages).
 
-{% anchor h3 %}
-Form Customization
-{% endanchor %}
-
+{% anchor h3 %}	Form Customization
+{% endanchor %}	
 If you want to customize your subscription form, you can do so from the settings page. You can set labels for the "First Name", "Last Name", and "Email" fields in addition to the "Subscribe" button.
 
 You can also adjust the padding surrounding the input fields and buttons.
@@ -154,10 +132,8 @@ You would need to add the following to your .css file:
 }
 ```
 
-{% anchor h3 %}
-Testing Your Subscription Widget
-{% endanchor %}
-
+{% anchor h3 %}	Testing Your Subscription Widget
+{% endanchor %}	
 Once you have configured your credentials and have selected a valid list for your new contacts, a form to test the subscription widget will appear at the bottom of the page of the Subscription Widget settings tab. You can test the subscription process by entering an email address and clicking **Test**.
 
 ![]({{root_url}}/images/wp_subscription_widget_4.png)
@@ -166,10 +142,8 @@ The opt-in confirmation email you configured for the subscription widget will be
 
 ![]({{root_url}}/images/wp_subscription_widget_5.png)
 
-{% anchor h3 %}
-Using Your Subscription Widget
-{% endanchor %}
-
+{% anchor h3 %}	Using Your Subscription Widget
+{% endanchor %}	
 To display the widget on your website, navigate to the widgets page in WordPress and, using drag and drop, add it to the section of your page where you would like it to be displayed. Remember that only the "email" field is required by default, but you may include the first and last name fields.
 
 ![]({{root_url}}/images/wp_subscription_widget_6.png)
@@ -180,40 +154,30 @@ If you would like to add the “First Name” and “Last Name” fields, and re
 
 You may also configure your installation of the subscription widget by defining specific SendGrid settings as global variables within the wp-config.php file. See the next section for a list of specific settings and the corresponding PHP required to add those settings to the wp-config.php file.
 
-{% anchor h2 %}
-Manually Configuring Your Subscription Widget (Advanced)
-{% endanchor %}
-
+{% anchor h2 %}	Manually Configuring Your Subscription Widget (Advanced)
+{% endanchor %}	
 You can manually configure your subscription widget by defining your settings within the wp-config.php file. **It is important to note that the information presented below refers to the same configuration steps previously described.** There is no added functionality that comes with manually editing your wp-config.php file, it is simply an alternative method of changing the same settings.
 
 Continue reading below for examples of what PHP should be included in your wp-config.php file to configure your subscription widget.
 
-{% anchor h3 %}
-Manually Configuring Your Credentials In wp-config.php (Advanced)
-{% endanchor %}
-
+{% anchor h3 %}	Manually Configuring Your Credentials In wp-config.php (Advanced)
+{% endanchor %}	
 You can use an API key to authenticate when integrating with the SendGrid WordPress Subscription Widget
 
 If you are using your login credentials, both your username and password will need to be set in order to retrieve credentials from variables and not from the database.
 
 You must set the Mail Send permissions to FULL ACCESS, Stats to READ ACCESS and Template Engine to READ or FULL ACCESS when creating the API Key, so you can send emails and see statistics on wordpress. For more information about API Key Permissions, click [here]({{root_url}}/help-support/account-and-settings/api-keys.html).
 
-{% anchor h4 %}
-Credentials Settings for the SendGrid WordPress Subscription Widget
-{% endanchor %}
-
+{% anchor h4 %}	Credentials Settings for the SendGrid WordPress Subscription Widget
+{% endanchor %}	
 - **API Key**: `define('SENDGRID_API_KEY', 'sendgrid_api_key');`
 
   Your SendGrid API Key.
 
-{% anchor h3 %}
-Manually Configuring Your Email Settings (Advanced)
-{% endanchor %}
-
-{% anchor h4 %}
-Email Settings for the SendGrid WordPress Subscription Widget
-{% endanchor %}
-
+{% anchor h3 %}	Manually Configuring Your Email Settings (Advanced)
+{% endanchor %}	
+{% anchor h4 %}	Email Settings for the SendGrid WordPress Subscription Widget
+{% endanchor %}	
 - **Send Method**: `define('SENDGRID_SEND_METHOD', 'api');`
 
   The method used to deliver email. Can be either SMTP or the Web API. SMTP can only be used if the Swift Mailer plugin is installed.
@@ -242,14 +206,10 @@ Email Settings for the SendGrid WordPress Subscription Widget
 
   Denotes the type of data included in your email. Can be "plaintext" or "html".
 
-{% anchor h3 %}
-Manually Configuring Your Widget Settings (Advanced)
-{% endanchor %}
-
-{% anchor h4 %}
-Widget Settings
-{% endanchor %}
-
+{% anchor h3 %}	Manually Configuring Your Widget Settings (Advanced)
+{% endanchor %}	
+{% anchor h4 %}	Widget Settings
+{% endanchor %}	
 - **Marketing Campaigns API Keys**: `define('SENDGRID_MC_API_KEY', 'sendgrid_mc_api_key');`
 
   Your API Key generated to authenticate use of the Marketing Campaigns API.
@@ -302,9 +262,7 @@ Widget Settings
 
   Subscribe Button Label
 
-{% anchor h2 %}
-Related Content
-{% endanchor %}
-
+{% anchor h2 %}	Related Content
+{% endanchor %}	
 * [SendGrid's WordPress Plugin]({{root_url}}/for-developers/sending-email/wordpress-plugin.html)
 * [SendGrid's WordPress Integration FAQ]({{root_url}}/for-developers/sending-email/wordpress-faq.html)

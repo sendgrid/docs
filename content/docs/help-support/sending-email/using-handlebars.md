@@ -25,10 +25,8 @@ seo:
   - [Unless](#-Unless)
   - [Combined examples](#-Combined-examples)
 
-{% anchor h2 %}
-Handlebars overview
-{% endanchor %}
-
+{% anchor h2 %}	Handlebars overview
+{% endanchor %}	
 [Handlebars.js syntax](https://handlebarsjs.com/) provides a simple, powerful way to include dynamic content, directly within email templates.  Handlebars.js syntax allows all of this dynamic templating to occur outside of code, meaning changes are done quickly in the template, with no update to a code base required.
 
 This page uses examples from the [dynamic-template section of our email templates github repo](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates).
@@ -39,10 +37,8 @@ For the full API documentation, see [Mail Send with Dynamic Transactional Templa
 
 </call-out>
 
-{% anchor h2 %}
-Personalizing email with Handlebars
-{% endanchor %}
-
+{% anchor h2 %}	Personalizing email with Handlebars
+{% endanchor %}	
 We do not support full Handlebars.js functionality. Currently, dynamic templates supports the following helpers:
 
   - [Substitution](#-Substitution)
@@ -51,16 +47,12 @@ We do not support full Handlebars.js functionality. Currently, dynamic templates
 
 For a full helper reference, with examples, see the [Handlebar.js reference](#-Handlebar.js-reference). This page has use cases with examples that include the supported helpers.
 
-{% anchor h2 %}
-Use cases
-{% endanchor %}
-
+{% anchor h2 %}	Use cases
+{% endanchor %}	
 Here are example use cases listed with the Handlebars.js helpers used to build the example templates.
 
-{% anchor h3 %}
-Receipts
-{% endanchor %}
-
+{% anchor h3 %}	Receipts
+{% endanchor %}	
 This is an [example receipt template](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates/receipt).
 
 This reciept template is using these helpers:
@@ -69,30 +61,24 @@ This reciept template is using these helpers:
   - [Conditional statements](#-Conditional-statements)
   - [Iterations](#-Iterations)
 
-{% anchor h3 %}
-Password reset
-{% endanchor %}
-
+{% anchor h3 %}	Password reset
+{% endanchor %}	
 This is an [example transactional template](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates/transactional-actions).
 
 This transactional template is using this helper:
 
 - [Substitution](#-Substitution)
 
-{% anchor h3 %}
-Muliple languages
-{% endanchor %}
-
+{% anchor h3 %}	Muliple languages
+{% endanchor %}	
 This is an [example template that lets you have content in multiple languages](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates/different-languages).
 
 This reciept template is using this helper:
 
 - [Conditional statements](#-Conditional-statements) - `if/else`
 
-{% anchor h3 %}
-Newsletter
-{% endanchor %}
-
+{% anchor h3 %}	Newsletter
+{% endanchor %}	
 This is an [example newsletter template](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates/newsletter).
 
 This reciept template is using these helpers:
@@ -100,10 +86,8 @@ This reciept template is using these helpers:
   - [Substitution](#-Substitution)
   - [Iterations](#-Iterations)
 
-{% anchor h3 %}
-Advertisement
-{% endanchor %}
-
+{% anchor h3 %}	Advertisement
+{% endanchor %}	
 This is an [example template that is advertising items on sale](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates/special-sale).
 
 This reciept template is using these helpers:
@@ -112,16 +96,12 @@ This reciept template is using these helpers:
   - [Conditional statements](#-Conditional-statements) - `if/else`
   - [Iterations](#-Iterations)
 
-{% anchor h2 %}
-Handlebar.js reference
-{% endanchor %}
-
+{% anchor h2 %}	Handlebar.js reference
+{% endanchor %}	
 This reference goes through examples of each helper - including HTML email snippits, and JSON test data.
 
-{% anchor h3 %}
-Substitution
-{% endanchor %}
-
+{% anchor h3 %}	Substitution
+{% endanchor %}	
 There are four main types of substitutions:
 
 - [Basic replacement](#-Basic-replacement)
@@ -129,14 +109,11 @@ There are four main types of substitutions:
 - [Object failure](#-Object-failure)
 - [Replacement with HTML](#-Replacement-with-HTML)
 
-{% anchor h4 %}
-Basic replacement
-{% endanchor %}
-
+{% anchor h4 %}	Basic replacement
+{% endanchor %}	
 HTML should contain:
 ```
-{% raw %}<p>Hello {{firstName}}</p>{% endraw %}
-```
+{% raw %}<p>Hello {{firstName}}</p>{% endraw %}	```
 
 Test Data should contain:
 ```
@@ -145,17 +122,13 @@ Test Data should contain:
 
 Resulting replacement:
 ```
-{% raw %}<p>Hello Ben</p>{% endraw %}
-```
+{% raw %}<p>Hello Ben</p>{% endraw %}	```
 
-{% anchor h4 %}
-Deep object replacement
-{% endanchor %}
-
+{% anchor h4 %}	Deep object replacement
+{% endanchor %}	
 HTML should contain:
 ```
-{% raw %}<p>Hello {{user.profile.firstName}}</p>{% endraw %}
-```
+{% raw %}<p>Hello {{user.profile.firstName}}</p>{% endraw %}	```
 
 Test Data should contain:
 ```
@@ -170,17 +143,13 @@ Test Data should contain:
 
 Resulting replacement:
 ```
-{% raw %}<p>Hello Ben</p>{% endraw %}
-```
+{% raw %}<p>Hello Ben</p>{% endraw %}	```
 
-{% anchor h4 %}
-Object failure
-{% endanchor %}
-
+{% anchor h4 %}	Object failure
+{% endanchor %}	
 HTML should contain:
 ```
-{% raw %}<p>Hello {{user.profile.firstName}}</p>{% endraw %}
-```
+{% raw %}<p>Hello {{user.profile.firstName}}</p>{% endraw %}	```
 
 Test Data should contain:
 ```
@@ -202,47 +171,36 @@ Test Data should contain:
 
 Resulting replacement:
 ```
-{% raw %}<p>Hello</p>{% endraw %}
-```
+{% raw %}<p>Hello</p>{% endraw %}	```
 
-{% anchor h4 %}
-Replacement with HTML
-{% endanchor %}
-
+{% anchor h4 %}	Replacement with HTML
+{% endanchor %}	
 HTML should contain:
 ```
-{% raw %}<p>Hello {{{firstName}}}</p>{% endraw %}
-```
+{% raw %}<p>Hello {{{firstName}}}</p>{% endraw %}	```
 
 Test Data should contain:
 ```
-{% raw %}{"firstName":"<strong>Ben</strong>"}{% endraw %}
-```
+{% raw %}{"firstName":"<strong>Ben</strong>"}{% endraw %}	```
 
 Resulting replacement:
 ```
-{% raw %}<p>Hello <strong>Ben</strong></p>{% endraw %}
-```
+{% raw %}<p>Hello <strong>Ben</strong></p>{% endraw %}	```
 Resulting replacement:
 ```
-{% raw %}<p>Warning! Your account is suspended, please call: 1-800-1234567</p>{% endraw %}
-```
+{% raw %}<p>Warning! Your account is suspended, please call: 1-800-1234567</p>{% endraw %}	```
 
 
-{% anchor h3 %}
-Conditional statements
-{% endanchor %}
-
+{% anchor h3 %}	Conditional statements
+{% endanchor %}	
 Here are three types of conditonal statements:
 
 - [Basic If, Else, Else If](#-Basic-If--Else-Else-If)
 - [If with a root](#-If-with-a-root)
 - [Unless](#-Unless)
 
-{% anchor h4 %}
-Basic If, Else, Else If
-{% endanchor %}
-
+{% anchor h4 %}	Basic If, Else, Else If
+{% endanchor %}	
 HTML should contain:
 ```
 {% raw %}{{#if user.profile.male}}
@@ -251,8 +209,7 @@ HTML should contain:
   <p>Dear Madame</p>
 {{else}}
   <p> Dear Customer</p>
-{{/if}}{% endraw %}
-```
+{{/if}}{% endraw %}	```
 
 Test Data should contain:
 ###1
@@ -291,29 +248,23 @@ Test Data should contain:
 Resulting replacement:
 ###1
 ```
-{% raw %}<p>Dear Sir</p>{% endraw %}
-```
+{% raw %}<p>Dear Sir</p>{% endraw %}	```
 
 ###2
 ```
-{% raw %}<p>Dear Madame</p>{% endraw %}
-```
+{% raw %}<p>Dear Madame</p>{% endraw %}	```
 
 ###3
 ```
-{% raw %}<p>Dear Customer</p>{% endraw %}
-```
+{% raw %}<p>Dear Customer</p>{% endraw %}	```
 
-{% anchor h4 %}
-If with a root
-{% endanchor %}
-
+{% anchor h4 %}	If with a root
+{% endanchor %}	
 HTML should contain:
 ```
 {% raw %}{{#if user.suspended}}
 	<p>Warning! Your account is suspended, please call: {{@root.supportPhone}}</p>
-{{/if}}{% endraw %}
-```
+{{/if}}{% endraw %}	```
 
 Test Data should contain:
 ```
@@ -327,13 +278,10 @@ Test Data should contain:
 
 Resulting replacement:
 ```
-{% raw %}<p>Warning! Your account is suspended, please call: 1-800-1234567</p>{% endraw %}
-```
+{% raw %}<p>Warning! Your account is suspended, please call: 1-800-1234567</p>{% endraw %}	```
 
-{% anchor h4 %}
-Unless
-{% endanchor %}
-
+{% anchor h4 %}	Unless
+{% endanchor %}	
 HTML should contain:
 ```
 {{#unless user.active}}
@@ -352,22 +300,17 @@ Test Data should contain:
 ```
 
 
-{% anchor h3 %}
-Iterations
-{% endanchor %}
-
-{% anchor h4 %}
-Basic Iterator
-{% endanchor %}
-
+{% anchor h3 %}	Iterations
+{% endanchor %}	
+{% anchor h4 %}	Basic Iterator
+{% endanchor %}	
 HTML should contain:
 ```
 {% raw %}<ol>
 {{#each user.orderHistory}}
 	<li>You ordered: {{this.item}} on: {{this.date}}</li>
 {{/each}}
-</ol>{% endraw %}
-```
+</ol>{% endraw %}	```
 
 Test Data should contain:
 ```
@@ -392,32 +335,25 @@ Resulting replacement:
 {% raw %}<ol>
 	<li>You ordered: shoes on: 2/1/2018</li>
 	<li>You ordered: hat on: 1/42017</li>
-</ol>{% endraw %}
-```
+</ol>{% endraw %}	```
 
-{% anchor h3 %}
-Combined examples
-{% endanchor %}
-
+{% anchor h3 %}	Combined examples
+{% endanchor %}	
 Here are two combined examples:
 
 - [Dynamic content creation](#-Dynamic-content-creation)
 - [Dynamic content creation with dynamic parts](#-Dynamic-content-creation-with-dynamic-parts)
 
-{% anchor h4 %}
-Dynamic content creation
-{% endanchor %}
-
+{% anchor h4 %}	Dynamic content creation
+{% endanchor %}	
 HTML should contain:
-```{% raw %}
-{{#each user.story}}
+```{% raw %}	{{#each user.story}}
   {{#if this.male}}
     <p>{{this.date}}</p>
   {{else if this.female}}
     <p>{{this.item}}</p>
   {{/if}}
-{{/each}}{% endraw %}
-```
+{{/each}}{% endraw %}	```
 
 
 Test Data should contain:
@@ -446,19 +382,14 @@ Test Data should contain:
 ```
 
 Resulting replacement:
-```{% raw %}
-<p>2/1/2018</p>
+```{% raw %}	<p>2/1/2018</p>
 <p>1/4/2017</p>
-<p>shirt</p>{% endraw %}
-```
+<p>shirt</p>{% endraw %}	```
 
-{% anchor h4 %}
-Dynamic content creation with dynamic parts
-{% endanchor %}
-
+{% anchor h4 %}	Dynamic content creation with dynamic parts
+{% endanchor %}	
 HTML should contain:
-```{% raw %}
-{{#each user.story}}
+```{% raw %}	{{#each user.story}}
   {{#if this.male}}
     {{#if this.date}}
       <p>{{this.date}}</p>
@@ -474,8 +405,7 @@ HTML should contain:
       <p>{{this.item}}</p>
     {{/if}}
   {{/if}}
-{{/each}}{% endraw %}
-```
+{{/each}}{% endraw %}	```
 
 Test Data should contain:
 ```
@@ -503,17 +433,13 @@ May 11th 2018, 2:18:20 pm
 ```
 
 Resulting replacement:
-```{% raw %}
-<p>2/1/2018</p>
+```{% raw %}	<p>2/1/2018</p>
 <p>shoes</p>
 <p>1/4/2017</p>
-<p>shirt</p>{% endraw %}
-```
+<p>shirt</p>{% endraw %}	```
 
-{% anchor h2 %}
-Additional Resources
-{% endanchor h2 %}
-
+{% anchor h2 %}	Additional Resources
+{% endanchor h2 %}	
 - [Transactional Templates Overview]({{root_url}}/help-support/sending-email/transactional-email.html)
 - [Create and edit Dynamic Transactional Templates]({{root_url}}/help-support/sending-email/create-and-edit-transactional-templates.html)
 - [Mail Send with Dynamic Transactional Templates](https://dynamic-templates.api-docs.io/3.0)

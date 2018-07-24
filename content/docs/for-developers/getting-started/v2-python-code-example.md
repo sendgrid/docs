@@ -18,8 +18,7 @@ The library does not officially support the V2 API, but you can use V2 with an o
 
 </call-out>
 
-{% anchor h2 %} Using SendGrid's Python Library {% endanchor %}
-```python
+{% anchor h2 %} Using SendGrid's Python Library {% endanchor %}	```python
 # using SendGrid's Python Library
 # https://github.com/sendgrid/sendgrid-python
 import sendgrid

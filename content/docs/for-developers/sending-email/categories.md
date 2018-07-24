@@ -26,10 +26,8 @@ Categories should be used to group messages together by broad topic. If you need
 
 </call-out>
 
-{% anchor h2 %}
-Example
-{% endanchor %}
-
+{% anchor h2 %}	Example
+{% endanchor %}	
 You can use SendGrid's [SMTP API]({{root_url}}/API_Reference/SMTP_API/) to add these categories to your email. The following should be added to the email's header:
 
 <h4>Example Category Header</h4>
@@ -41,10 +39,8 @@ You can use SendGrid's [SMTP API]({{root_url}}/API_Reference/SMTP_API/) to add t
 
 In this example, SendGrid would associate statistics for the email containing that header with the category **Example Category**.
 
-{% anchor h2%}
-Limitations
-{% endanchor %}
-
+{% anchor h2%}	Limitations
+{% endanchor %}	
 You can assign up to 10 categories per message:
 
 ```json

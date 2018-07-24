@@ -28,10 +28,8 @@ Some Settings are not listed here, because they cannot be defined on a per-messa
 
 </call-out>
 
-{% anchor h3 bcc %}
-Filter: <code>bcc</code>
-{% endanchor %}
-
+{% anchor h3 bcc %}	Filter: <code>bcc</code>
+{% endanchor %}	
 <p>Sends a BCC copy of the email created in this transaction to the address specified.</p>
 
 <table class="table table-striped table-bordered">
@@ -69,10 +67,8 @@ Filter: <code>bcc</code>
 
 <hr/>
 
-{% anchor h3 bypass_list_management %}
-Filter: <code>bypass_list_management</code>
-{% endanchor %}
-
+{% anchor h3 bypass_list_management %}	Filter: <code>bypass_list_management</code>
+{% endanchor %}	
 <call-out type="warning">
 
 This setting is very powerful, and can only be used on a per-message basis. Use with extreme caution.
@@ -110,10 +106,8 @@ This setting is very powerful, and can only be used on a per-message basis. Use 
 
 <hr />
 
-{% anchor h3 clicktrack %}
-Filter: <code>clicktrack</code>
-{% endanchor %}
-
+{% anchor h3 clicktrack %}	Filter: <code>clicktrack</code>
+{% endanchor %}	
 <p>Rewrites links in email text and html bodies to go through our webservers, allowing for tracking when a link is clicked on.</p>
 
 <table class="table table-striped table-bordered">
@@ -146,10 +140,8 @@ Filter: <code>clicktrack</code>
 
 <hr/>
 
-{% anchor h3 dkim %}
-Filter: <code>dkim</code>
-{% endanchor %}
-
+{% anchor h3 dkim %}	Filter: <code>dkim</code>
+{% endanchor %}	
 <p>Allows you to specify the domain to use to sign messages with DKIM
 certification. This domain should match the domain in the From address
 of your email.</p>
@@ -191,10 +183,8 @@ of your email.</p>
 
 <hr/>
 
-{% anchor h3 footer %}
-Filter: <code>footer</code>
-{% endanchor %}
-
+{% anchor h3 footer %}	Filter: <code>footer</code>
+{% endanchor %}	
 <p>Inserts a footer at the bottom of the text and HTML bodies.</p>
 
 <table class="table table-striped table-bordered">
@@ -239,10 +229,8 @@ Filter: <code>footer</code>
 
 <hr/>
 
-{% anchor h3 ganalytics %}
-Filter: <code>ganalytics</code>
-{% endanchor %}
-
+{% anchor h3 ganalytics %}	Filter: <code>ganalytics</code>
+{% endanchor %}	
 <p>Re-writes links to integrate with Google Analytics.</p>
 
 <table class="table table-striped table-bordered">
@@ -304,10 +292,8 @@ Filter: <code>ganalytics</code>
 
 <hr/>
 
-{% anchor h3 opentrack %}
-Filter: <code>opentrack</code>
-{% endanchor %}
-
+{% anchor h3 opentrack %}	Filter: <code>opentrack</code>
+{% endanchor %}	
 <p>If you don't use 'replace' this will insert an <code>&lt;img&gt;</code> tag at the bottom of the html section of an email which will be used to track if an email is opened. If you choose to use 'replace', you can put the tracking pixel wherever you would like in the email and SendGrid will replace it at send time.</p>
 
 <table class="table table-striped table-bordered">
@@ -346,10 +332,8 @@ Filter: <code>opentrack</code>
 
 <hr/>
 
-{% anchor h3 spamcheck %}
-Filter: <code>spamcheck</code>
-{% endanchor %}
-
+{% anchor h3 spamcheck %}	Filter: <code>spamcheck</code>
+{% endanchor %}	
 <p>Tests message with <a href="http://spamassassin.apache.org/">SpamAssassin</a> to determine if it is spam, and drop it if it is.</p>
 
 <table class="table table-striped table-bordered">
@@ -394,10 +378,8 @@ Filter: <code>spamcheck</code>
 
 <hr/>
 
-{% anchor h3 subscriptiontrack %}
-Filter: <code>subscriptiontrack</code>
-{% endanchor %}
-<p>Inserts a subscription management link at the bottom of the text and html bodies or insert the link anywhere in the email.</p>
+{% anchor h3 subscriptiontrack %}	Filter: <code>subscriptiontrack</code>
+{% endanchor %}	<p>Inserts a subscription management link at the bottom of the text and html bodies or insert the link anywhere in the email.</p>
 
 <p>If you wish to append an unsubscription link, use the <code>text/html</code> and <code>text/plain</code> parameters. However, if you wish to have the link replace a tag (such as <code>[unsubscribe]</code>), use the <code>replace</code> parameter.</p>
 
@@ -454,10 +436,8 @@ The <code>landing</code> argument cannot be used in SMTPAPI. It can only be setu
 
 <hr/>
 
-{% anchor h3 templates %}
-Filter: <code>templates</code>
-{% endanchor %}
-
+{% anchor h3 templates %}	Filter: <code>templates</code>
+{% endanchor %}	
 <call-out>
 
 This setting refers to SendGrid's <a href="{{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/index.html">transactional templates</a>. SendGrid supports versioning, and the ability to create multiple transactional templates. Previously, we had a Template App, which is now referred to as the <a href="#template">Legacy Template App</a>.
@@ -503,10 +483,8 @@ This setting refers to SendGrid's <a href="{{root_url}}/API_Reference/Web_API_v3
 
 <hr/>
 
-{% anchor h3 template %}
-Filter: <code>template</code>
-{% endanchor %}
-
+{% anchor h3 template %}	Filter: <code>template</code>
+{% endanchor %}	
 <call-out type="warning">
 
 This setting refers to our original Email Template app. We now support more fully featured <a href="#templates">transactional templates</a>. You may create multiple transactional templates that allow for versioning, in addition to several other features.

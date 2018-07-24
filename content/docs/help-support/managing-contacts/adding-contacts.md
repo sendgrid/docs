@@ -26,16 +26,12 @@ Your first 2,000 contacts are free. After 2,000 contacts, SendGrid charges $10 f
 
 </call-out>
 
-{% anchor h3 %}
-Formatting a CSV
-{% endanchor %}
-
+{% anchor h3 %}	Formatting a CSV
+{% endanchor %}	
 You can easily add contacts to your contact database by uploading a CSV of your contacts to SendGrid. If you have your contacts in a spreadsheet, simply save that sheet as a .csv file using a spreadsheet application like Microsoft Excel or Google Sheets. You can also export your contacts from most database systems as a .csv file. For more information, see the documentation on [Formatting a CSV](https://sendgrid.com/docs/help-support/managing-contacts/formating-a-CSV.html).
 
-{% anchor h3 %}
-Uploading a CSV
-{% endanchor %}
-
+{% anchor h3 %}	Uploading a CSV
+{% endanchor %}	
 *To add new contacts:*
 
 1. Click **Add Contacts** and then select **Upload CSV**.
@@ -89,10 +85,8 @@ If you upload the same contact more than once, SendGrid updates the data, assumi
 
 </call-out>
 
-{% anchor h3 %}
-Manually Add a Contact
-{% endanchor %}
-
+{% anchor h3 %}	Manually Add a Contact
+{% endanchor %}	
 *To manually add a contact to your contact database:*
 
 1. Navigate to **Marketing Campaigns** and then click **Contacts**.
@@ -108,20 +102,16 @@ To add Custom Field data to a manually imported contact, navigate to the Contact
 
 </call-out>
 
-{% anchor h3 %}
-Creating a New List
-{% endanchor %}
-
+{% anchor h3 %}	Creating a New List
+{% endanchor %}	
 *To create a new list:*
 
 1. Click **Add Contacts** and then select **Upload CSV**.
 1. Click **+Add to New List** and enter the name of the list you would like to create.
 1. Choose a CSV file for upload and complete the steps listed in [Uploading a CSV ](#-Uploading-a-CSV).
 
-{% anchor h3 %}
-Add Contacts to a List
-{% endanchor %}
-
+{% anchor h3 %}	Add Contacts to a List
+{% endanchor %}	
 *To manually add contacts to an existing list:*
 
 1. Navigate to **Marketing Campaigns** and then click **Contacts**.
@@ -137,10 +127,8 @@ If you [create a segment]({{root_url}}/help-support/managing-contacts/segmenting
 
 </call-out>
 
-{% anchor h3 %}
-Additional Resources
-{% endanchor h3 %}
-
+{% anchor h3 %}	Additional Resources
+{% endanchor h3 %}	
 - [Contacts API](https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html)
 - [Segmenting your Contacts](https://sendgrid.com/docs/help-support/managing-contacts/segmenting-your-contacts.html)
 - [Building your Contact list](https://sendgrid.com/docs/help-support/managing-contacts/building-your-contact-list.html)

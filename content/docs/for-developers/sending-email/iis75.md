@@ -12,10 +12,8 @@ This document was written using Windows Server 2008 R2 running IIS version 7.5 a
 
 </call-out>
 
-{% anchor h2 %}
-IIS 7.5 Configuration
-{% endanchor %}
-
+{% anchor h2 %}	IIS 7.5 Configuration
+{% endanchor %}	
 Before you get going, you'll need to set up IIS in order to support SendGrid integration. This tutorial assumes that you have set up a working site and that the root directory tests as valid.
 
 1. Open IIS 7.0/7.5 Manager in Windows
@@ -40,10 +38,8 @@ If you want to configure additional security to the localhost IIS 6.0 server you
 
 </call-out>
 
-{% anchor h2 %}
-Enable SMTP Service:
-{% endanchor %}
-
+{% anchor h2 %}	Enable SMTP Service:
+{% endanchor %}	
 1. Go to Start \> All Programs \> Administrative Tools \> Server Manager
 2. Click on the Features item in the navigation pane
 3. Click the Add Features link to start the wizard
@@ -54,10 +50,8 @@ Enable SMTP Service:
 
 Once the SMTP Server service is installed, the IIS 6.0 virtual server technology is activated, and the IIS 6.0 administration snap-in will now be active.
 
-{% anchor h2 %}
-Configure IIS 6.0 to Relay Outbound Email to SendGrid
-{% endanchor %}
-
+{% anchor h2 %}	Configure IIS 6.0 to Relay Outbound Email to SendGrid
+{% endanchor %}	
 1. Go to Start \> All Programs \> Administrative Tools \> IIS 6.0 Manager
 2. Right click on the SMTP Virtual Server \#1 and select the Properties option
 3. Click the box to enable logging section to assist you in configuring the server
@@ -75,14 +69,10 @@ Configure IIS 6.0 to Relay Outbound Email to SendGrid
 15. In the Smart host field: enter smtp.sendgrid.net
 16. Click on OK twice and you can close the IIS 6.0 admin MMC
 
-{% anchor h2 %}
-Configure Domains
-{% endanchor %}
-At this point you will need to configure an SMTP domain that relays messages to SendGrid. Please follow [Microsoft's instructions](http://www.microsoft.com/technet/prodtechnol/WindowsServer2003/Library/IIS/e2156172-7118-4ff2-9a6a-1b7dd52580fa.mspx?mfr=true).
-{% anchor h2 %}
-Testing Your New Configuration
-{% endanchor %}
-
+{% anchor h2 %}	Configure Domains
+{% endanchor %}	At this point you will need to configure an SMTP domain that relays messages to SendGrid. Please follow [Microsoft's instructions](http://www.microsoft.com/technet/prodtechnol/WindowsServer2003/Library/IIS/e2156172-7118-4ff2-9a6a-1b7dd52580fa.mspx?mfr=true).
+{% anchor h2 %}	Testing Your New Configuration
+{% endanchor %}	
 First, let's test using Telnet. Open up a telnet client within Windows. You do that in the Command Prompt by entering the following:
 
 ```

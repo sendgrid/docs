@@ -20,10 +20,8 @@ seo:
    * [Creating a Segment Based on Your Engagement Metrics](#-Creating-a-Segment-Based-on-Your-Engagement-Metrics)
    * [Exporting a list of Engaged Recipients](#-Exporting-a-list-of-Engaged-Recipients)
 
-{% anchor h2 %}
-Viewing Campaign Statistics
-{% endanchor %}
-Once you send a campaign, you can view statistics related to that campaign.
+{% anchor h2 %}	Viewing Campaign Statistics
+{% endanchor %}	Once you send a campaign, you can view statistics related to that campaign.
 
 *To view campaign statistics from the Campaigns page:*
 
@@ -32,20 +30,16 @@ Once you send a campaign, you can view statistics related to that campaign.
 
 From the campaign stats page, you will be able to see your bounces, clicks, opens, etc.
 
-{% anchor h3 %}
-Exporting Campaign Statistics
-{% endanchor %}
-
+{% anchor h3 %}	Exporting Campaign Statistics
+{% endanchor %}	
 *To export a CSV with raw stats:*
 
  1. From the Campaigns page, click on the name of the campaign you want to review.
     <br>The Campaign Statistics page opens.
  1. Download the raw data by clicking **Export CSV** in the right-hand corner.
 
-{% anchor h3 %}
-Exporting Statistics for Multiple Campaigns
-{% endanchor %}
-
+{% anchor h3 %}	Exporting Statistics for Multiple Campaigns
+{% endanchor %}	
 You can export a CSV containing the statistics for multiple campaigns. This exported CSV will closely resemble the CSV exported for a single campaign’s statistics, except for two additional columns containing the campaign name and ID for each row of statistics. These columns will be labeled “Campaign Name” and “Campaign ID”, respectively.
 
 *To export statistics for multiple campaigns:*
@@ -62,16 +56,12 @@ Every stats CSV that you export will contain a row containing the totals for eac
 
 </call-out>
 
-{% anchor h2 %}
-Leveraging Engagement Statistics
-{% endanchor %}
-
+{% anchor h2 %}	Leveraging Engagement Statistics
+{% endanchor %}	
 To learn how to leverage your engagement statistics, please visit our [Classroom]({{root_url}}/help-support/analytics-and-reporting/campaign-stats.html).
 
-{% anchor h3 %}
-Viewing Campaign Clicks and Opens
-{% endanchor %}
-
+{% anchor h3 %}	Viewing Campaign Clicks and Opens
+{% endanchor %}	
 Marketing Campaigns makes it very easy to view recipients who have either opened one of your campaigns or have clicked links within your campaign.
 
 *To view campaign clicks and opens:*
@@ -80,10 +70,8 @@ Marketing Campaigns makes it very easy to view recipients who have either opened
 1. Click **View Details**.
    <br>A real-time list of all recipients who either opened your campaign or clicked a link within your campaign appears.
 
-{% anchor h3 %}
-Creating a Segment Based on Your Engagement Metrics
-{% endanchor %}
-
+{% anchor h3 %}	Creating a Segment Based on Your Engagement Metrics
+{% endanchor %}	
 *To create a segment of recipients based on who clicked within or opened one of your campaigns:*
 
 1. From the Campaigns page or the individual campaign stats page, hover over the **Unique Opens** or **Unique Clicks** stats.
@@ -94,10 +82,8 @@ Creating a Segment Based on Your Engagement Metrics
 1. Click **Save**.
 <br>You now have a dynamic segment that will continuously update as recipients engage with this campaign.
 
-{% anchor h3 %}
-Exporting a list of Engaged Recipients
-{% endanchor %}
-
+{% anchor h3 %}	Exporting a list of Engaged Recipients
+{% endanchor %}	
 In addition to creating a dynamic segment based on campaign engagement as described above, you can also export a list of all contacts who have either opened your campaign or have clicked a link within your campaign (up until that moment).
 
 *To export a list of engaged recipients:*
@@ -107,9 +93,7 @@ In addition to creating a dynamic segment based on campaign engagement as descri
 <br>A real-time list of all recipients who either opened your campaign, or clicked a link within your campaign appears.
 1. Click **Export CSV**.
 
-{% anchor h2 %}
-Additional Resources
-{% endanchor h2 %}
-
+{% anchor h2 %}	Additional Resources
+{% endanchor h2 %}	
 - [Sending a Campaign](https://sendgrid.com/docs/help-support/getting-started/how-to-send-email.html)
 - [A/B Testing Your Campaign](https://sendgrid.com/docs/help-support/sending-email/a-b-testing.html)

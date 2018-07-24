@@ -14,20 +14,16 @@ seo:
 - [Design a dynamic transactional template](#-Design-a-dynamic-template)
 - [Send a transactional email](#-Send-a-transactional-email)
 
-{% anchor h2 %}
-Before you begin
-{% endanchor %}
-
+{% anchor h2 %}	Before you begin
+{% endanchor %}	
 Before you create and send an email using a dynamic transactional template you need to do the following:
 
 * Create a SendGrid account
 * Create an [API Key]({{root_url}}/help-support/account-and-settings/api-keys.html)
 * Add an [unsubscribe group]({{root_url}}/help-support/sending-email/group-unsubscribes.html) (optional)
 
-{% anchor h2 %}
-Design a dynamic transactional template
-{% endanchor %}
-
+{% anchor h2 %}	Design a dynamic transactional template
+{% endanchor %}	
 1. Open the [transactional templates](https://sendgrid.com/dynamic_templates) page and click **Create Template**.
 1. Add a unique template name and then click **Save**.
 1. To begin editing your new template, click **Add Version**.
@@ -44,10 +40,8 @@ For the full API documentation, see [Mail Send with Dynamic Transactional Templa
 
 </call-out>
 
-{% anchor h2 %}
-Send a transactional email
-{% endanchor %}
-
+{% anchor h2 %}	Send a transactional email
+{% endanchor %}	
 *To send a dynamic transactional email:*
 
 In order to send a dynamic transactional email using cURL, set your call up to look something like this:
@@ -147,10 +141,8 @@ You can also copy your template ID from the app and paste it into your call.
 
 ![]({{root_url}}/img/dynamic_template_id.png "Dynamic Template ID")
 
-{% anchor h2 %}
-Additional Resources
-{% endanchor h2 %}
-
+{% anchor h2 %}	Additional Resources
+{% endanchor h2 %}	
 - [Mail Send with Dynamic Transactional Templates](https://dynamic-templates.api-docs.io/3.0)
 - [Unsubscribe Groups]({{root_url}}/help-support/sending-email/group-unsubscribes.html)
 - [Using Handlebars]({{root_url}}/help-support/sending-email/using-handlebars.html)

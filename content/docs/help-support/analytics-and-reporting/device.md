@@ -48,35 +48,27 @@ The clients report breaks down which devices and clients are most frequently use
 
 
 
-{% anchor h2 %}
-Top 5
-{% endanchor %}
-
+{% anchor h2 %}	Top 5
+{% endanchor %}	
 The top 5 section will show you the most engaged email clients and devices based on the selected metric. By default, clicks are select, but you can change that by choosing a metric from the button at the top of this section. You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview.html#-Statistics-Filters).
 
-{% anchor h2 %}
-Individual Metrics Activity
-{% endanchor %}
-
+{% anchor h2 %}	Individual Metrics Activity
+{% endanchor %}	
 Based on the selected devices and metric at the top of this page, this graph will refresh. You can see how your recipients engage with your emails by device type over time.
 
 You can remove individual device types from the list at the top of the page. This will affect all the data on this page.
 
 To change this graph to see another metric for your recipient’s devices, choose the metric from the button at the top of this page.
 
-{% anchor h2 %}
-Individual Metrics Figures
-{% endanchor %}
-
+{% anchor h2 %}	Individual Metrics Figures
+{% endanchor %}	
 When you initially choose the devices to compare, this graph will show you the actual open numbers over time for each of the compared devices.
 
 You can remove individual devices from the list of devices at the top of this page. The graph will refresh, showing only the selected subusers.
 
 You can also choose to show actual counts or percentages, by clicking the corresponding button above and to the right of the table.
 
-{% anchor h2 %}
-Additional Resources
-{% endanchor %}
-
+{% anchor h2 %}	Additional Resources
+{% endanchor %}	
 - [Statistics Filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview.html#-Statistics-Filters)
 - [Subusers]({{root_url}}/help-support/account-and-settings/subusers.html)

@@ -44,10 +44,8 @@ If you are using a CNAME setup, you will also need to change DNS to point to the
 
 Once all of this is done, you will need to contact [SendGrid support](https://support.sendgrid.com/) and request that SSL click and open tracking be enabled on your account. They will then verify the configuration and enable the setting on your account.
 
-{% anchor h2 %}
-Using Fastly
-{% endanchor %}
-
+{% anchor h2 %}	Using Fastly
+{% endanchor %}	
 1. [Sign up for Fastly](https://www.fastly.com/signup/) or [log in](https://manage.fastly.com) to an existing account.
 2. Click **Configure** on the Dashboard.
 3. Click the gear icon to open the **Manage Service** menu and click **Create**.
@@ -68,10 +66,8 @@ For more information, please visit [Fastly's documentation](https://docs.fastly.
 
 </call-out>
 
-{% anchor h2 %}
-Using KeyCDN
-{% endanchor %}
-
+{% anchor h2 %}	Using KeyCDN
+{% endanchor %}	
 This section is maintained by KeyCDN, if you have any questions about KeyCDN please [contact their support](https://www.keycdn.com/support/) team.
 
 [Sign up for KeyCDN](https://www.keycdn.com) or login to your

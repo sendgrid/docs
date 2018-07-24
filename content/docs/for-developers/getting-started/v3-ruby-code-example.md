@@ -18,6 +18,5 @@ Do you have an [API Key](https://app.sendgrid.com/settings/api_keys) yet? If not
 
 </call-out>
 
-{% anchor h2 %} Using SendGrid's Ruby Library {% endanchor %}
-
+{% anchor h2 %} Using SendGrid's Ruby Library {% endanchor %}	
 <script src="https://gist.github.com/sendgrid-gists/4be3a76b716e16c274c2ad0f6a99e9b4.js"></script>

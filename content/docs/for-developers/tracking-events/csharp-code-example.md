@@ -6,10 +6,8 @@ navigation:
   show: true
 ---
 
-{% anchor h2 %}
-Parse Webhook
-{% endanchor %}
-
+{% anchor h2 %}	Parse Webhook
+{% endanchor %}	
 In this example, we want to parse all emails at *address*@email.sendgrid.biz and post the parsed email to http://sendgrid.biz/upload
 
 Given this scenario, the following are the parameters you would set at the [Parse API settings page]({{site.site_url}}/developer/reply):

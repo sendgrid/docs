@@ -8,10 +8,8 @@ navigation:
 
 These instructions show how to add an SMTP server to an existing Mail account, but you can also add these settings at the account creation stage.
 
-{% anchor h2 %}
-Adding SMTP settings
-{% endanchor %}
-
+{% anchor h2 %}	Adding SMTP settings
+{% endanchor %}	
 Go to Mail -\> Preferences (⌘,). On the account you want to edit, click the tab that says **Server Settings**, then click the **Outgoing Mail Account** dropdown and select **Edit SMTP Server List...**.
 
 ![Mail, Preferences, Outgoing Mail Server (SMTP) dropdown, Edit SMTP Server List]({{root_url}}/images/NewAppleMail_Step_1.png "Edit SMTP Server List")
@@ -45,10 +43,8 @@ Unfortunately, there is not an easy way to add SMTP API headers to a message in 
 
 </call-out>
 
-{% anchor h2 %}
-Attachment Compatibility
-{% endanchor %}
-
+{% anchor h2 %}	Attachment Compatibility
+{% endanchor %}	
 Mail will sometimes attach images in a way that is incompatible with other email readers.  However, this behavior can be be changed so that Mail will send more traditional non-inline attachments.
 
 1. Open Terminal (found in Finder > Applications > Utilities).

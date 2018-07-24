@@ -63,10 +63,8 @@ Personalization Examples Index
 * [Sending a Single Email to a Single Recipient with Multiple CCs/BCCs](#-Sending-a-Single-Email-to-a-Single-Recipient-With-Multiple-CCs/BCCs)
 * [Sending Two Different Emails to Two Different Groups of Recipients](#-Sending-Two-Different-Emails-to-Two-Different-Groups-of-Recipients)
 
-{% anchor h2 %}
-Sending a Single Email to a Single Recipient
-{% endanchor %}
-
+{% anchor h2 %}	Sending a Single Email to a Single Recipient
+{% endanchor %}	
 The following example shows you what the personalization parameter would look like if you wanted to send a single email to a single recipient.
 
 ```json
@@ -84,10 +82,8 @@ The following example shows you what the personalization parameter would look li
 }
 ```
 
-{% anchor h2 %}
-Sending a Single Email to a Single Recipient With a CC
-{% endanchor %}
-
+{% anchor h2 %}	Sending a Single Email to a Single Recipient With a CC
+{% endanchor %}	
 The following example shows how to send one email to recipient1&#064;example&period;com with a carbon copy sent to recipient2&#064;example&period;com. Both emails will have the same headers.
 
 ```json
@@ -108,10 +104,8 @@ The following example shows how to send one email to recipient1&#064;example&per
 }
 ```
 
-{% anchor h2 %}
-Sending a Single Email to a Single Recipient With a CC and a BCC
-{% endanchor %}
-
+{% anchor h2 %}	Sending a Single Email to a Single Recipient With a CC and a BCC
+{% endanchor %}	
 The following example shows how to send one email to recipient1&#064;example&period;com with a CC sent to recipient2&#064;example&period;com and a BCC sent to recipient3&#064;example&period;com.
 
 ```json
@@ -134,10 +128,8 @@ The following example shows how to send one email to recipient1&#064;example&per
 }
 ```
 
-{% anchor h2 %}
-Sending the same Email to Multiple Recipients
-{% endanchor %}
-
+{% anchor h2 %}	Sending the same Email to Multiple Recipients
+{% endanchor %}	
 The following shows how to send one email to three different recipients: recipient1&#064;example&period;com, recipient2&#064;example&period;com, and recipient3&#064;example&period;com. These recipients will all be able to see each other on the email.
 
 ```json
@@ -159,10 +151,8 @@ The following shows how to send one email to three different recipients: recipie
 }
 ```
 
-{% anchor h2 %}
-Sending a Single Email to a Single Recipient With Multiple CCs/BCCs
-{% endanchor %}
-
+{% anchor h2 %}	Sending a Single Email to a Single Recipient With Multiple CCs/BCCs
+{% endanchor %}	
 The following shows what personalizations are required to send the same email to one recipient, with multiple CCs and/or BCCs.
 
 ```json
@@ -187,10 +177,8 @@ The following shows what personalizations are required to send the same email to
 }
 ```
 
-{% anchor h2 %}
-Sending Two Different Emails to Two Different Groups of Recipients
-{% endanchor %}
-
+{% anchor h2 %}	Sending Two Different Emails to Two Different Groups of Recipients
+{% endanchor %}	
 The following shows how to send two different emails to two different groups of recipients.
 
 ```json

@@ -10,10 +10,8 @@ navigation:
   show: true
 ---
 
-{% anchor h2 %}
-Why should you migrate?
-{% endanchor %}
-
+{% anchor h2 %}	Why should you migrate?
+{% endanchor %}	
 <call-out>
 
 If you are currently using the [Web API v2 mail send endpoint]({{root_url}}/API_Reference/Web_API/mail.html), we recommend that you upgrade to the [latest version]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html).
@@ -29,18 +27,14 @@ With a few quick changes you will be able to take advantage of the improvements 
 
 <iframe src="https://player.vimeo.com/video/168940206" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-{% anchor h2 %}
-What do you need to migrate?
-{% endanchor %}
-
+{% anchor h2 %}	What do you need to migrate?
+{% endanchor %}	
 All you need to migrate from the v2 to v3 mail send endpoint is a SendGrid account.
 
 If you are a new SendGrid user and haven’t begun sending email yet, please go straight to our [v3 Mail Send documentation]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html) to get started.
 
-{% anchor h2 %}
-JSON Schema
-{% endanchor %}
-
+{% anchor h2 %}	JSON Schema
+{% endanchor %}	
 Some of the biggest improvements made to the mail send endpoint reside in the JSON schema used to format and submit the data payload for your email. While the v2 mail send endpoint relies on a combination of JSON and SendGrid’s x-smtpapi headers, all content and metadata sent via the v3 mail send endpoint is defined using JSON within a single request body.
 
 Below you will find a visual comparison of the v2 and v3 JSON schemas that highlights equivalent parameters between the two versions and any parameters that have been added or removed. Significant additions include the "personalizations", "sandbox_mode", and "bypass_list_management" parameters.
@@ -89,16 +83,12 @@ However, the equivalent API call for the the v3 mail send endpoint would look li
 
 Notice that while the call to the v2 Mail Send endpoint does include JSON, it is only defined from within the x-smtpapi parameter, whereas the entire payload for the v3 Mail Send API Call is formatted in JSON.
 
-{% anchor h2 %}
-Requirements and Limitations
-{% endanchor %}
-
+{% anchor h2 %}	Requirements and Limitations
+{% endanchor %}	
 There are few limitations and requirements differences between the v2 and v3 mail send endpoints, making it even easier to migrate your integration to the latest version.
 
-{% anchor h2 %}
-Attachments
-{% endanchor %}
-
+{% anchor h2 %}	Attachments
+{% endanchor %}	
 Attachments are handled differently between the v2 and v3 Mail Send endpoints. When attaching files in an email sent over the v2 Mail Send endpoint, you simply needed to attach your file to the transport and specify the file names and content IDs of those files in your API call. Essentially, you specified which files you were attaching in the API call, but the files were actually sent differently.
 
 When attaching files to an email sent over the v3 Mail Send endpoint, you must include the BASE64 encoded content of your file, file type, filename, disposition, and content_id for each file you are attaching. These are all defined as separate objects within the `attachments` array.
