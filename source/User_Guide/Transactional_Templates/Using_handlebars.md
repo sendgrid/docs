@@ -221,11 +221,6 @@ Resulting replacement:
 {% codeblock %}
 {% raw %}<p>Hello <strong>Ben</strong></p>{% endraw %}
 {% endcodeblock %}
-Resulting replacement:
-{% codeblock %}
-{% raw %}<p>Warning! Your account is suspended, please call: 1-800-1234567</p>{% endraw %}
-{% endcodeblock %}
-
 
 {% anchor h3 %}
 Conditional statements
