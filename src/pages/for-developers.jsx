@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
 import SEO from '../components/SEO';
+import GlossaryPartialDevs from '../components/GlossaryPartial/glossaryPartialDevs';
 import FOR_DEVS_CARDS from '../constants/forDevelopersCards';
 import Libaries from '../components/Libaries';
 import withSubNav from '../components/NavSub';
@@ -49,30 +50,7 @@ class ForDevelopers extends Component {
           </div>
         </div>
         <div className="for-devs-glossary">
-          <div className="home-glossary">
-            <div className="container home-glossary__container">
-              <div className="row">
-                <div className="col-md-12">
-                  <h2>Glossary</h2>
-                  <p className="ta-center">Not sure what something means? Find terms from our library sorted A-Z.</p>
-                  <div className="row">
-                    <div className="col-md-8">
-                      <div className="card card--glossary is-thin">
-                        <h3 className="card__title">Featured Terms</h3>
-                        <Link className="glossary-link" to="/">lorem ipsum</Link>
-                        <Link className="glossary-link" to="/">lorem ipsum</Link>
-                        <Link className="glossary-link" to="/">lorem ipsum</Link>
-                        <Link className="btn btn-primary" to="/">View All</Link>
-                      </div>
-                    </div>
-                    <div className="col-md-4">
-                      <img className="glossary-icon" src={magnifyImageDevs} alt="SendGrid Glossary" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <GlossaryPartialDevs />
         </div>
       </div>
     );

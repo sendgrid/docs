@@ -3,11 +3,12 @@ import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 import SEO from '../components/SEO';
 import Search from '../components/Search';
+import GlossaryPartialHome from '../components/GlossaryPartial/glossaryPartialHome';
 import FooterCallout from '../components/FooterCallout';
 import config from '../../data/SiteConfig';
 import HOME_CARDS from '../constants/homeCards';
 import CALLOUTS from '../constants/homeCallouts';
-import magnifyImageHome from '../img/help-center-magnify.svg';
+// import magnifyImageHome from '../img/help-center-magnify.svg';
 import './index.scss';
 
 class Index extends React.Component {
@@ -66,30 +67,7 @@ class Index extends React.Component {
               </div>
             </div>
           </div>
-          <div className="home-glossary">
-            <div className="container home-glossary__container">
-              <div className="row">
-                <div className="col-md-12">
-                  <h2>Glossary</h2>
-                  <p className="ta-center">Not sure what something means? Find terms from our library sorted A-Z.</p>
-                  <div className="row">
-                    <div className="col-md-8">
-                      <div className="card card--glossary is-thin">
-                        <h3 className="card__title">Featured Terms</h3>
-                        <Link className="glossary-link" to="/">lorem ipsum</Link>
-                        <Link className="glossary-link" to="/">lorem ipsum</Link>
-                        <Link className="glossary-link" to="/">lorem ipsum</Link>
-                        <Link className="btn btn-primary" to="/">View All</Link>
-                      </div>
-                    </div>
-                    <div className="col-md-4">
-                      <img className="glossary-icon" src={magnifyImageHome} alt="SendGrid Glossary" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <GlossaryPartialHome />
         </div>
         <FooterCallout />
       </div>

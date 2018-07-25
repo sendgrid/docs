@@ -156,38 +156,3 @@ $card-gutter: 40px;
     margin-left: -66px;
   }
 }
-
-.home-glossary {
-  margin: $scaleup-5 0;
-  z-index: 2;
-
-  h2 {
-    position: relative;
-    text-align: center;
-  }
-}
-
-.home-glossary__container {
-  padding-left: $scaleup-11;
-  padding-right: $scaleup-11;
-
-  @media (max-width: $width-mobile) {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-.glossary-link {
-  display: block;
-  width: 100%;
-  margin-bottom: $scaleup-1;
-}
-
-.glossary-icon {
-  margin: 0 auto 0 $scaleup-1;
-  display: block;
-
-  @media (max-width: $width-mobile) {
-    margin: $scaleup-1 auto 0;
-  }
-}
