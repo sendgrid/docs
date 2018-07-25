@@ -820,7 +820,7 @@ Redirect 301 /User_Guide/Marketing_Campaigns/api.html https://sendgrid.com/docs/
 Redirect 301 /User_Guide/Marketing_Campaigns/api_campaigns.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html
 Redirect 301 /User_Guide/Marketing_Campaigns/faq.html https://support.sendgrid.com/docs/help-support/getting-started/how-to-send-email.html
 Redirect 301 /User_Guide/Marketing_Emails/create_manage.html https://sendgrid.com/docs/help-support/getting-started/how-to-send-email.html
-Redirect 301 /User_Guide/Marketing_Emails/dashboard.html https://sendgrid.com/docs/help-support/getting-started/editor.html
+Redirect 301 /User_Guide/Marketing_Emails/dashboard.html https://sendgrid.com/docs/help-support/sending-email/editor.html
 Redirect 301 /User_Guide/Marketing_Emails/index.html https://sendgrid.com/docs/help-support/getting-started/how-to-send-email.html
 Redirect 301 /User_Guide/Marketing_Emails/analytics.html https://sendgrid.com/docs/help-support/sending-email/campaign-stats.html
 Redirect 301 /User_Guide/Marketing_Emails/recipients.html https://sendgrid.com/docs/help-support/managing-contacts/managing-contact-list.html
