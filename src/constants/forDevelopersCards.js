@@ -47,7 +47,7 @@ const FOR_DEVS_CARDS = [
     BUTTON_LINK: '/for-developers/tracking-events/',
   },
   {
-    ICON: api,
+    ICON: account,
     TITLE: 'Account & Settings',
     LINKS: [
       { URL: '/foo-bar', TEXTNODE: 'Sending Email with Markting Campaigns' },
@@ -57,7 +57,7 @@ const FOR_DEVS_CARDS = [
     BUTTON_LINK: '/for-developers/account-and-settings/',
   },
   {
-    ICON: account,
+    ICON: api,
     TITLE: 'Partners',
     LINKS: [
       { URL: '/foo-bar', TEXTNODE: 'Sending Email with Markting Campaigns' },

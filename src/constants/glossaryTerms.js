@@ -1,9 +1,9 @@
 import magnifyImage from '../img/help-center-magnify.svg';
 import magnifyImageDevs from '../img/help-center-magnify-devs.svg';
 
-const GLOSSARY_TERMS = [];
+// const GLOSSARY_TERMS = [];
 
-GLOSSARY_TERMS.HOME = {
+export const GLOSSARY_TERMS_HOME = {
   HEADER: 'Featured Terms',
   LINKS: [
     { URL: '/', TEXTNODE: 'lorem ipsum home 1' },
@@ -14,7 +14,7 @@ GLOSSARY_TERMS.HOME = {
   IMAGE: magnifyImage,
 };
 
-GLOSSARY_TERMS.DEVS = {
+export const GLOSSARY_TERMS_DEVS = {
   HEADER: 'Featured Terms',
   LINKS: [
     { URL: '/', TEXTNODE: 'lorem ipsum devs 1' },
@@ -25,4 +25,4 @@ GLOSSARY_TERMS.DEVS = {
   IMAGE: magnifyImageDevs,
 };
 
-export default GLOSSARY_TERMS;
+// export default GLOSSARY_TERMS;

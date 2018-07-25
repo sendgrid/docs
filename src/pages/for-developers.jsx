@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
 import SEO from '../components/SEO';
-import GlossaryPartialDevs from '../components/GlossaryPartial/glossaryPartialDevs';
+import { GLOSSARY_TERMS_DEVS } from '../constants/glossaryTerms';
+import GlossaryPartial from '../components/GlossaryPartial/glossaryPartial';
 import FOR_DEVS_CARDS from '../constants/forDevelopersCards';
 import Libaries from '../components/Libaries';
 import withSubNav from '../components/NavSub';
-import magnifyImageDevs from '../img/help-center-magnify-devs.svg';
 import './for-developers.scss';
 
 class ForDevelopers extends Component {
@@ -50,7 +50,7 @@ class ForDevelopers extends Component {
           </div>
         </div>
         <div className="for-devs-glossary">
-          <GlossaryPartialDevs />
+          <GlossaryPartial data={GLOSSARY_TERMS_DEVS} />
         </div>
       </div>
     );

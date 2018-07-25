@@ -3,7 +3,8 @@ import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 import SEO from '../components/SEO';
 import Search from '../components/Search';
-import GlossaryPartialHome from '../components/GlossaryPartial/glossaryPartialHome';
+import { GLOSSARY_TERMS_HOME } from '../constants/glossaryTerms';
+import GlossaryPartial from '../components/GlossaryPartial/glossaryPartial';
 import FooterCallout from '../components/FooterCallout';
 import config from '../../data/SiteConfig';
 import HOME_CARDS from '../constants/homeCards';
@@ -66,7 +67,7 @@ class Index extends React.Component {
               </div>
             </div>
           </div>
-          <GlossaryPartialHome />
+          <GlossaryPartial data={GLOSSARY_TERMS_HOME} />
         </div>
         <FooterCallout />
       </div>
