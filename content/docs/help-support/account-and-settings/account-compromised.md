@@ -1,10 +1,11 @@
 ---
 seo:
-  title: Help! My account has been compromised!
-  description: Help! My account has been compromised!
+  title: Compromised Account Recovery
+  description: Compromised Account Recovery
   keywords: spam, password, security, hack, script, hacked, run, rogue, compromise, stolen, fraud
-title: Help! My account has been compromised!
+title: Compromised Account Recovery
 weight: 0
+group: security
 layout: page
 zendesk_id: 200182818
 navigation:

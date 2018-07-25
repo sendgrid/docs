@@ -5,6 +5,7 @@ seo:
   keywords: sendgrid API keys, email API Keys, mail API Keys, email credentials, send credentials
 title: API Keys
 weight: 0
+group: account-management
 layout: page
 navigation:
   show: true
