@@ -172,13 +172,22 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         }
 
         // Create docs pages
+        const { permalink } = edge.node.fields;
+
         createPage({
-          path: edge.node.fields.permalink,
+          path: permalink,
           component: docsPage,
           context: {
             slug: edge.node.fields.slug,
             id: edge.node.id,
           },
+        });
+
+        createRedirect({
+          fromPath: permalink.slice(0, -1),
+          isPermanent: true,
+          redirectInBrowser: true,
+          toPath: permalink,
         });
       });
 
@@ -211,6 +220,13 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             docType: 'for-developers',
             category,
           },
+        });
+
+        createRedirect({
+          fromPath: `/for-developers/${_.kebabCase(category)}`,
+          isPermanent: true,
+          redirectInBrowser: true,
+          toPath: `/for-developers/${_.kebabCase(category)}/`,
         });
       });
 

@@ -34,7 +34,6 @@ class DocTemplate extends React.Component {
   render() {
     const postNode = this.props.data.doc;
     const asideLinks = this.getLinks();
-    console.log(asideLinks);
 
     return (
       <div className="container-lg doc-wrap">
@@ -44,7 +43,7 @@ class DocTemplate extends React.Component {
          : null
         }
         <div className="doc-main">
-          <h1 className="page-title">{postNode.fields.title}</h1>
+          <h1 dangerouslySetInnerHTML={{ __html: postNode.fields.title }} />
           {renderAst(postNode.htmlAst)}
         </div>
       </div>
