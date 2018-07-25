@@ -798,7 +798,7 @@ Redirect 301 /User_Guide/Delivery_Metrics/metrics.html https://sendgrid.com/docs
 Redirect 301 /User_Guide/Email_Deliverability/scheduling.html https://sendgrid.com/docs/for-developers/sending-email/scheduling-parameters.html
 Redirect 301 /User_Guide/Email_Deliverability/sender_reputation.html https://sendgrid.com/docs/glossary/sender-reputation.html
 Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/index.html https://sendgrid.com/docs/help-support/sending-email/index-suppressions.html
-Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/advanced_suppression_manager.html https://sendgrid.com/docs/help-support/sending-email/unsubscribe_groups.html
+Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/advanced_suppression_manager.html https://sendgrid.com/docs/help-support/sending-email/unsubscribe-groups.html
 Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/defining_asm_groups.html https://sendgrid.com/docs/help-support/sending-email/unsubscribe-groups.html#-Add-A-Suppression-Group
 Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/recipient_subscription_preferences.html https://sendgrid.com/docs/help-support/sending-email/recipient-subscription-preferences.html
 Redirect 301 /User_Guide/Email_Deliverability/Subscription_Tracking/suppressions_vs_unsubscribes.html https://sendgrid.com/docs/help-support/sending-email/index-suppressions.html
@@ -891,7 +891,7 @@ Redirect 301 /User_Guide/Legacy_Features/Marketing_Emails/unsubscribes.html http
 
 Redirect 301 /Utilities/event_kit.html https://sendgrid.com/docs/for-developers/tracking-events/event-kit.html
 Redirect 301 /Utilities/deliverabilitycenter.html https://sendgrid.com/docs/help-support/getting-started/email-deliverability.html
-Redirect 301 /Utilities/index.html https://sendgrid.com/docs.html
+Redirect 301 /Utilities/index.html https://sendgrid.com/docs/index.html
 Redirect 301 /Utilities/list_assist.html https://sendgrid.com/docs/help-support/managing-contacts/adding-contacts.html
 Redirect 301 /Utilities/smtpapi_validator.html https://sendgrid.com/docs/for-developers/getting-started/getting-started-smtp.html
 
@@ -921,7 +921,7 @@ Redirect 301 /VidGrid/Email_Activity/activity.html https://sendgrid.com/docs/hel
 Redirect 301 /VidGrid/Event_Notification/configure.html https://sendgrid.com/docs/for-developers/tracking-events/event.html
 Redirect 301 /VidGrid/Event_Notification/eventkit.html https://sendgrid.com/docs/for-developers/tracking-events/event-kit.html
 Redirect 301 /VidGrid/Event_Notification/index.html https://sendgrid.com/docs/for-developers/tracking-events/event.html
-Redirect 301 /VidGrid/index.html https://sendgrid.com/docs.html
+Redirect 301 /VidGrid/index.html https://sendgrid.com/docs/index.html
 Redirect 301 /VidGrid/Tools/listassist.html https://sendgrid.com/docs/help-support/managing-contacts/managing-contact-list.html
 Redirect 301 /VidGrid/Marketing_Emails/Analytics/index.html https://sendgrid.com/docs/help-support/sending-email/campaign-stats.html
 Redirect 301 /VidGrid/Marketing_Emails/Analytics/marketing_statistics.html https://sendgrid.com/docs/help-support/sending-email/campaign-stats.html
@@ -943,7 +943,7 @@ Redirect 301 /VidGrid/Subuser/create_subuser.html https://sendgrid.com/docs/help
 Redirect 301 /VidGrid/Subuser/create_subuser_whitelabel.html https://sendgrid.com/docs/help-support/account-and-settings/subusers.html
 Redirect 301 /VidGrid/template_engine.html https://sendgrid.com/docs/User_Guide/Transactional_Templates/create-and-edit-transactional-templates.html
 Redirect 301 /VidGrid/Template_Engine/template_engine.html https://sendgrid.com/docs/help-support/sending-email/create-and-edit-transactional-templates.html
-Redirect 301 /VidGrid/Tools/index.html https://sendgrid.com/docs.html
+Redirect 301 /VidGrid/Tools/index.html https://sendgrid.com/docs/index.html
 Redirect 301 /VidGrid/Whitelabel/whitelabel.html https://sendgrid.com/docs/help-support/account-and-settings/how-to-set-up-domain-authentication.html
 Redirect 301 /VidGrid/whitelabel.html https://sendgrid.com/docs/help-support/account-and-settings/how-to-set-up-domain-authentication.html
 Redirect 301 /VidGrid/Marketing_Emails/Review_and_Schedule/index.html https://sendgrid.com/docs/help-support/sending-email/a-b-testing.html
