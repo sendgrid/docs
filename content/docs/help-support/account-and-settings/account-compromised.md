@@ -11,7 +11,7 @@ zendesk_id: 200182818
 navigation:
   show: true
 ---
-
+HELP HELP HELP
 If you believe your account has been compromised, please login to your account and **_change your account username and password immediately_** under the [SendGrid Account Settings](https://apps.sendgrid.com/settings/account) page. You will also need to update the username and password in your sending application or code in order to get mail flowing again.
 
 After changing your account username and password, please [contact support](https://support.sendgrid.com). We can help you investigate, and get our Compliance team involved if necessary. 

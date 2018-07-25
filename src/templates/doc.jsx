@@ -7,7 +7,11 @@ import Callout from '../componentsMarkdown/Callout';
 import Gist from '../componentsMarkdown/Gist';
 import CodeGroup from '../componentsMarkdown/CodeGroup';
 import withSubNav from '../components/NavSub';
+<<<<<<< HEAD
 // import './b16-tomorrow-dark.css';
+=======
+import './syntax.scss';
+>>>>>>> upstream/a-new-hope-episode-iv
 import './doc.scss';
 
 const renderAst = new RehypeReact({
