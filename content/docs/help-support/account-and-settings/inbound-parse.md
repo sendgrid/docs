@@ -5,6 +5,7 @@ seo:
   keywords: inbound parse, inbound parse webhook, parse settings, inbound parse settings
 title: Inbound Parse
 weight: 0
+group: account-management
 layout: page
 navigation:
   show: true

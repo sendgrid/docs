@@ -5,7 +5,7 @@ seo:
   keywords: sendgrid alerts, account alerts, deliverability alerts
 title: Alerts
 weight: 0
-group: notifications
+group: account-management
 layout: page
 navigation:
   show: true

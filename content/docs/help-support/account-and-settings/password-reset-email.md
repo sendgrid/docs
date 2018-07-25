@@ -1,13 +1,12 @@
 ---
-st:
-  published_at: 2016-06-10
-  type: Classroom
+
 seo:
   title: I didn't receive the password reset email
   description: Initiate a password reset and haven't received it? 
   keywords: password, reset, email, account, bad username/password, login
 title: I didn't receive the password reset email
 weight: 0
+group: account-management
 layout: page
 zendesk_id: 204628887
 navigation:

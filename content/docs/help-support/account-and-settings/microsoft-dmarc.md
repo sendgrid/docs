@@ -1,13 +1,11 @@
 ---
-st:
-  published_at: 2016-06-13
-  type: Classroom
 seo:
   title: Microsoft DMARC Changes
   description: 550 5.7.1 The messages violates the DMARC policy of...
   keywords: dmarc, microsoft, live, outlook, from, spf, dkim, hotmail, msn
 title: Microsoft DMARC Changes
 weight: 0
+group: sender-authentication
 layout: page
 zendesk_id: 202449646
 navigation:
@@ -36,4 +34,4 @@ This is because Microsoft will no longer be accepting messages where the From do
 
  
 
-For more extended reading, check out check out [this article on the DMARC changes](http://www.mediapost.com/publications/article/277884/dmarc-changes-coming-soon-to-an-inbox-near-you.html?utm_source=newsletter&utm_medium=email&utm_content=headline&utm_campaign=93744), as well as our [DMARC Classroom article]({{root_url}}/Classroom/Basics/Email_Infrastructure/everything_about_dmarc.html).
+For more information, check out check out [this article on the DMARC changes](http://www.mediapost.com/publications/article/277884/dmarc-changes-coming-soon-to-an-inbox-near-you.html?utm_source=newsletter&utm_medium=email&utm_content=headline&utm_campaign=93744). 

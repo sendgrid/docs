@@ -5,6 +5,7 @@ seo:
   keywords: mail settings, access management, IP Whitelisting, security
 title: IP Access Management
 weight: 0
+group: account-management
 layout: page
 navigation:
   show: true
