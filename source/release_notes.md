@@ -32,6 +32,35 @@ The following new features and changes to the service are available.
 </table>
 
 {% anchor h2 %}
+23 July 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Dynamic content for transactional templates
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ><img src="{{root_url}}/images/code_icon.png" alt="An update to the API" width="100" height="100"></td>
+    <td>We’ve added native support for a subset of Handlebars syntax in transactional templates sent using V3 of our Mail Send API. This new functionality allows you to iterate over lists, take advantage of conditionals, and use JSON test data to verify substitutions in the UI. For more information, check out our <a href="https://sendgrid.com/docs/User_Guide/Transactional_Templates/how_to_send_an_email_with_transactional_templates.html" target="_blank">Getting started with Handlebars documentation</a>, and our in-depth look at the <a href="https://sendgrid.com/docs/User_Guide/Transactional_Templates/Using_handlebars.html" target="_blank">Handlebars functionality</a> that we support.</td>
+  </tr>
+</table>
+
+{% anchor h3 %}
+Known issue in the V2 API `to` parameter
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/code_icon.png" alt="An update to the API" width="100" height="100"></td>
+  <td>If you use the API <code>to</code> parameter to specify a single recipient, that recipient is visible in the <code>For</code> field of the received header - so if you specify a single address, it should be an address that you are comfortable with your customer seeing. For example, use a generic email address in the <code>to</code> field that your customer is already going to see, like your from address. To completely omit the email showing up in the <code>from</code> header:.</td>
+  </tr>
+</table>
+- specify multiple addresses in the `to` field as an array, for example, `to[]=a@mail.com&to[]=b@mail.com`
+- Use the V3 mail send endpoint
+
+
+{% anchor h2 %}
 6 June 2018
 {% endanchor %}
 

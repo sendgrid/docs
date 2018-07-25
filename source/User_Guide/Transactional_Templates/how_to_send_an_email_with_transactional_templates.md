@@ -3,7 +3,7 @@ layout: page
 weight: 100
 title: How to send an email with Dynamic Transactional Templates
 navigation:
-  show: false
+  show: true
 seo:
   title: How to send an email with Dynamic Transactional Templates
   override: true
@@ -91,10 +91,10 @@ curl -X "POST" "https://api.sendgrid.com/v3/mail/send" \
             "city":"Place",
             "state":"CO",
             "zip":"80202"
-         },
-         "template_id":"[template_id]"
+         }
       }
-   ]
+   ],
+   "template_id":"[template_id]"
 }'
 {% endcodeblock %}
 
