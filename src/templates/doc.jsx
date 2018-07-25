@@ -33,12 +33,15 @@ class DocTemplate extends React.Component {
 
   render() {
     const postNode = this.props.data.doc;
+    const asideLinks = this.getLinks();
+    console.log(asideLinks);
 
     return (
       <div className="container-lg doc-wrap">
         <SEO postNode={postNode} postType="doc" />
-        {postNode.fields.docType !== 'glossary' &&
-          <AsideMenu asideLinks={this.getLinks()} />
+        {postNode.fields.docType !== 'glossary' && asideLinks.length ?
+         (<AsideMenu asideLinks={this.getLinks()} />)
+         : null
         }
         <div className="doc-main">
           <h1 className="page-title">{postNode.fields.title}</h1>
