@@ -212,6 +212,13 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             category,
           },
         });
+
+        createRedirect({
+          fromPath: `/for-developers/${_.kebabCase(category)}`,
+          isPermanent: true,
+          redirectInBrowser: true,
+          toPath: `/for-developers/${_.kebabCase(category)}/`,
+        });
       });
 
       const helpCategoryList = Array.from(helpCategorySet);
