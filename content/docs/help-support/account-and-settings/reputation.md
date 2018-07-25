@@ -1,17 +1,17 @@
 ---
 seo:
-  title: Your Reputation... What is it?
+  title: Understanding and protecting your sender reputation
   description: Learn more about what the SendGrid reputation score means, and how it differs from your Domain Reputation...
   keywords: reputation, domain, sender, IP, bounces
-title: Your Reputation... What is it?
+title: Understanding and protecting your sender reputation
 weight: 0
+group: account-management
 layout: page
-zendesk_id: 200181658
 navigation:
   show: true
 ---
 
-Once logged in to your account, on the left side of your [SendGrid.com](https://sendgrid.com) dashboard, you can find your  **SendGrid account reputation**. This reputation is an indicator of how we view your email sending practices.
+Once logged in to your account, on the left side of your [SendGrid.com](https://sendgrid.com) dashboard, you can find your **SendGrid account reputation**. This reputation is an indicator of how we view your email sending practices.
 
 []({{root_url}}/images/Screen_Shot_2015-05-20_at_3.32.24_PM.png)
 
@@ -25,13 +25,13 @@ Please note that the SendGrid Reputation does not represent your inboxing percen
 
 The SendGrid account reputation is computed based on a calculation of:
 
-- The percentage of requests that are able to be delivered out of the total amount requested (delivered / requests). This takes into account bounces, invalid emails, and drops (repeat bounces, unsubscribes, etc.) Please review our [Statistics](https://sendgrid.com/docs/User_Guide/Statistics/index.html) article for more detail on these terms.
+- The percentage of requests that are able to be delivered out of the total amount requested (delivered / requests). This takes into account bounces, invalid emails, and drops (repeat bounces, unsubscribes, etc.) Please review our [Statistics]({{root_url}}/docs/help-support/analytics-and-reporting/stats-overview.html) article for more detail on these terms.
 
 - Spam Reports. Each spam report is a user actively rejecting your mail, and has a strong negative affect.
 
 <call-out>
 
-You can increase the SendGrid reputation score by removing unengaged users and [dropped addresses](https://sendgrid.com/docs/Classroom/Deliver/Undeliverable_Email/my_emails_are_being_dropped.html) from your lists before sending. Also be sure you are only sending to users who have opted in to receive your email to help prevent spam reports.
+You can increase the SendGrid reputation score by removing unengaged users and [dropped addresses]({{root_url}}/glossary/drops) from your lists before sending. Also be sure you are only sending to users who have opted in to receive your email to help prevent spam reports.
 
 </call-out>
 

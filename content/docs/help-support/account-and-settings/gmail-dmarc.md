@@ -8,6 +8,7 @@ seo:
   keywords: dmarc, gmail, google, from, spf, dkim
 title: Gmail DMARC Changes
 weight: 0
+group: sender-authentication
 layout: page
 zendesk_id: 202449646
 navigation:
@@ -24,10 +25,10 @@ This is because Gmail will no longer be accepting messages where the From domain
 
 **What this means:**  Soon, you will no longer be able send with the From address being anything from a Gmail address when sending to a domain that checks DMARC before accepting mail. 
 
-**What you can do: ** You will need to change the From address you use in emails to a non-Gmail address. We recommend using one at your own mail domain, or one you control that is legitimate. You can then set the Reply-To field to be the original Gmail address that previously was used in the From field. 
+**What you can do:** You will need to change the From address you use in emails to a non-Gmail address. We recommend using one at your own mail domain, or one you control that is legitimate. You can then set the Reply-To field to be the original Gmail address that previously was used in the From field. 
 
 **What about these messages, are they lost?** : Yes, any send with this bounce message is discarded and tracked as a  [Block](http://sendgrid.com/blocks). You will need to adjust your From address field settings, and then try resending from your side.
 
  
 
-For more extended reading, check out [this article on the DMARC changes](http://www.mediapost.com/publications/article/277884/dmarc-changes-coming-soon-to-an-inbox-near-you.html?utm_source=newsletter&utm_medium=email&utm_content=headline&utm_campaign=93744), as well as our  [DMARC Classroom article]({{root_url}}/Classroom/Basics/Email_Infrastructure/everything_about_dmarc.html).
+For more information, check out [this article on the DMARC changes](http://www.mediapost.com/publications/article/277884/dmarc-changes-coming-soon-to-an-inbox-near-you.html?utm_source=newsletter&utm_medium=email&utm_content=headline&utm_campaign=93744).

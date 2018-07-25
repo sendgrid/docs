@@ -1,21 +1,16 @@
 ---
 seo:
-  title: Suspended, Warned, Deactivated, or Banned
+  title: Account Under Review
   description: Was your account suspended or is otherwise under review? Learn more here...
   keywords: suspend, suspended, account, deactivated, banned, ban, deactivate, warn, warning, access, compromise, reactivate, stopped, stop, reactivated, turn, frozen, under, review, deactivated, compliance
-title: Suspended, Warned, Deactivated, or Banned
+title: Account Under Review
 weight: 0
+group: account-management
 layout: page
 
 navigation:
   show: true
 ---
-- [Warned](#-Warned)
-- [Suspended](#-Suspended)
-- [Deactivated](#-Deactivated)
-- [Banned](#-Banned)
-- [Reactivation](#-Reactivation)
-
 To preserve your reputation as a sender, SendGrid reviews accounts with apparent abnormal activity. Have you received a warning, suspension, deactivation, or ban notice from SendGrid? Please respond to any questions asked in the email notice. The fastest way to get your account reactivated is to respond directly to the ticket sent to your email address. In most cases, SendGrid Support cannot reactivate a warned, suspended, deactivated or banned account, so contacting them directly may delay reactivation.
 
 ## 	Stages of review

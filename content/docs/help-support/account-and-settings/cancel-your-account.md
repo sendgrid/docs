@@ -1,6 +1,7 @@
 ---
 layout: page
 weight: 0
+group: account-management
 title: Canceling your account
 navigation:
   show: true
@@ -8,11 +9,7 @@ seo:
   title: Canceling your account
   override: true
   description: Steps for canceling your SendGrid account using the SendGrid UI
-
-
 ---
-
-We’re sorry to see anyone leave, but things happen and we totally understand.
 
 *To cancel your SendGrid account:*
 
