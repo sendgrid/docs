@@ -8,7 +8,6 @@ import FooterCallout from '../components/FooterCallout';
 import config from '../../data/SiteConfig';
 import HOME_CARDS from '../constants/homeCards';
 import CALLOUTS from '../constants/homeCallouts';
-// import magnifyImageHome from '../img/help-center-magnify.svg';
 import './index.scss';
 
 class Index extends React.Component {

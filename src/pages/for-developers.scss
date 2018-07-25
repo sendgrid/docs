@@ -28,6 +28,7 @@ $card-gutter: 30px;
   position: relative;
 
   .card {
+    padding: $scale-base-up-09 $scale-base-up-06 $scale-base-up-06;
     border: none;
   }
 }
@@ -59,7 +60,7 @@ $card-gutter: 30px;
 }
 
 .for-devs-featured::before {
-  background: $slate-02;
+  background: $slate-05;
   content: "";
   height: 70%;
   left: -75%;
