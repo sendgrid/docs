@@ -835,7 +835,7 @@ Redirect 301 /User_Guide/sending_practices.html https://sendgrid.com/docs/glossa
 Redirect 301 /User_Guide/Settings/multiple_credentials.html https://sendgrid.com/docs/help-support/account-and-settings/teammates.html
 Redirect 301 /User_Guide/Setting_Up_Your_Server/clicktracking_ssl.html https://sendgrid.com/docs/help-support/analytics-and-reporting/click-tracking-ssl.html
 Redirect 301 /User_Guide/Setting_Up_Your_Server/content_delivery_networks.html https://sendgrid.com/docs/help-support/sending-email/content-delivery-networks.html
-Redirect 301 /User_Guide/Setting_Up_Your_Server/Segmenting_Your_Traffic/index.html https://sendgrid.com/docs/help-support/managing-contact/segmenting-your-contacts.html
+Redirect 301 /User_Guide/Setting_Up_Your_Server/Segmenting_Your_Traffic/index.html https://sendgrid.com/docs/help-support/managing-contacts/segmenting-your-contacts.html
 Redirect 301 /User_Guide/Setting_Up_Your_Server/Segmenting_Your_Traffic/subusers.html https://sendgrid.com/docs/help-support/account-and-settings/subusers.html
 Redirect 301 /User_Guide/Setting_Up_Your_Server/smtp_ports.html https://sendgrid.com/docs/for-developers/getting-started/getting-started-smtp.html
 Redirect 301 /User_Guide/Setting_Up_Your_Server/warming_up_ips.html https://sendgrid.com/docs/help-support/getting-started/warming-up-an-ip-address.html
@@ -853,11 +853,11 @@ Redirect 301 /User_Guide/Settings/credentials.html https://sendgrid.com/docs/hel
 Redirect 301 /User_Guide/Settings/gravatar.html https://sendgrid.com/docs/help-support/account-and-settings/account.html
 Redirect 301 /User_Guide/Settings/ips.html https://sendgrid.com/docs/help-support/account-and-settings/dedicated-ip-addresses.html
 Redirect 301 /User_Guide/smtp_ports.html https://sendgrid.com/docs/for-developers/getting-started/getting-started-smtp.html
-Redirect 301 /User_Guide/template_engine_setup.html https://sendgrid.com/docs/help-support/sending-email/how-to-create-and-edit-transactional-templates.html
+Redirect 301 /User_Guide/template_engine_setup.html https://sendgrid.com/docs/help-support/sending-email/create-and-edit-transactional-templates.html
 Redirect 301 /User_Guide/throttling.html https://sendgrid.com/docs/glossary/throttling.html
 Redirect 301 /User_Guide/two_factor_authentication.html https://sendgrid.com/docs/help-support/account-and-settings/two-factor-authentication.html
 Redirect 301 /User_Guide/Transactional_Email/Template_Engine/setup_guide.html https://sendgrid.com/docs/help-support/sending-email/create-and-edit-transactional-templates.html
-Redirect 301 /User_Guide/warming_up.html https://sendgrid.com/docs/help-support/getting-started/warming_up_an-ip-address.html
+Redirect 301 /User_Guide/warming_up.html https://sendgrid.com/docs/help-support/getting-started/warming-up-an-ip-address.html
 Redirect 301 /User_Guide/whitelabel_wizard.html https://sendgrid.com/docs/help-support/getting-started/how-to-set-up-domain-authentication.html
 Redirect 301 /User_Guide/Settings/multifactor_authentication.html https://sendgrid.com/docs/help-support/account-and-settings/two-factor-authentication.html
 Redirect 301 /User_Guide/multifactor_authentication.html https://sendgrid.com/docs/help-support/account-and-settings/two-factor-authentication.html
@@ -941,7 +941,7 @@ Redirect 301 /VidGrid/Marketing_Emails/Review_and_Schedule/split_testing.html ht
 Redirect 301 /VidGrid/Marketing_Emails/Setup/overview.html https://sendgrid.com/docs/help-support/getting-started/how-to-send-email.html
 Redirect 301 /VidGrid/Subuser/create_subuser.html https://sendgrid.com/docs/help-support/account-and-settings/subusers.html
 Redirect 301 /VidGrid/Subuser/create_subuser_whitelabel.html https://sendgrid.com/docs/help-support/account-and-settings/subusers.html
-Redirect 301 /VidGrid/template_engine.html https://sendgrid.com/docs/User_Guide/Transactional_Templates/create-and-edit-transactional-templates.html
+Redirect 301 /VidGrid/template_engine.html https://sendgrid.com/docs/help-support/sending-email/create-and-edit-transactional-templates.html
 Redirect 301 /VidGrid/Template_Engine/template_engine.html https://sendgrid.com/docs/help-support/sending-email/create-and-edit-transactional-templates.html
 Redirect 301 /VidGrid/Tools/index.html https://sendgrid.com/docs/index.html
 Redirect 301 /VidGrid/Whitelabel/whitelabel.html https://sendgrid.com/docs/help-support/account-and-settings/how-to-set-up-domain-authentication.html
@@ -1400,7 +1400,7 @@ Redirect 301 /Glossary/segmentation.html https://sendgrid.com/docs/glossary/segm
 Redirect 301 /Glossary/senders.html https://sendgrid.com/docs/glossary/senders.html
 Redirect 301 /Glossary/sender_authentication.html https://sendgrid.com/docs/glossary/sender-authentication.html
 Redirect 301 /Glossary/smtp.html https://sendgrid.com/docs/glossary/smtp.html
-Redirect 301 /Glossary/smtp_api.html https://sendgrid.com/docs/glossary/smtp_api.html
+Redirect 301 /Glossary/smtp_api.html https://sendgrid.com/docs/glossary/smtp-api.html
 Redirect 301 /Glossary/smtp_provider.html https://sendgrid.com/docs/glossary/smtp-provider.html
 Redirect 301 /Glossary/smtp_relay.html https://sendgrid.com/docs/glossary/smtp-relay.html
 Redirect 301 /Glossary/smtp_server.html https://sendgrid.com/docs/glossary/smtp-server.html
