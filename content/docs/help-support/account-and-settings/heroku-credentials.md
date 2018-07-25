@@ -1,13 +1,11 @@
 ---
-st:
-  published_at: 2016-06-22
-  type: Classroom
 seo:
   title: Heroku Users - Find your SendGrid Credentials
   description: Learn how to find and recover your username/password as a SendGrid add-on user...
   keywords: heroku, password, reset, recover, username
 title: Heroku Users - Find your SendGrid Credentials
 weight: 0
+group: account-management
 layout: page
 zendesk_id: 200181998
 navigation:
@@ -22,7 +20,7 @@ If you are a Heroku user using [the SendGrid add-on](https://addons.heroku.com/s
 
     ![]({{root_url}}/images/HerokuPW1.png "Heroku SendGrid App Screenshot")
 
-1. Click on "Settings" and then click “Reveal Config Vars”
+1. Click **Settings** and then click **Reveal Config Vars**.
 
     ![]({{root_url}}/images/HerokuPW2.png "Heroku Config Vars Screenshot")
 

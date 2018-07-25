@@ -5,6 +5,7 @@ seo:
   keywords: invoice, bill, receipt, refund, line, item, marketing, campaigns, charge, contacts, usage, overage
 title: Reading your invoice
 weight: 0
+group: billing
 layout: page
 navigation:
   show: true
