@@ -182,13 +182,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             id: edge.node.id,
           },
         });
-
-        createRedirect({
-          fromPath: permalink.slice(0, -1),
-          isPermanent: true,
-          redirectInBrowser: true,
-          toPath: permalink,
-        });
       });
 
       const categoryList = Array.from(developerCategorySet);
@@ -220,13 +213,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             docType: 'for-developers',
             category,
           },
-        });
-
-        createRedirect({
-          fromPath: `/for-developers/${_.kebabCase(category)}`,
-          isPermanent: true,
-          redirectInBrowser: true,
-          toPath: `/for-developers/${_.kebabCase(category)}/`,
         });
       });
 
