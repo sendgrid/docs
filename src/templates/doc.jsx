@@ -7,7 +7,7 @@ import Callout from '../componentsMarkdown/Callout';
 import Gist from '../componentsMarkdown/Gist';
 import CodeGroup from '../componentsMarkdown/CodeGroup';
 import withSubNav from '../components/NavSub';
-import './syntax.scss';
+import './syntax-highlighting.scss';
 import './doc.scss';
 
 const renderAst = new RehypeReact({
