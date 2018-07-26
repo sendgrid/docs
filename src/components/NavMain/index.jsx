@@ -12,6 +12,7 @@ class NavMain extends Component {
     };
 
     this.toggleMenu = this.toggleMenu.bind(this);
+    this.closeMenu = this.closeMenu.bind(this);
   }
 
   componentWillMount() {
@@ -36,6 +37,10 @@ class NavMain extends Component {
 
   toggleMenu() {
     this.setState({ showMenu: !this.state.showMenu });
+  }
+
+  closeMenu() {
+    this.setState({ showMenu: false });
   }
 
   render() {
@@ -69,7 +74,7 @@ class NavMain extends Component {
         <div className="nav-main-wrap">
           <div className="container-lg">
             <nav className="nav-main">
-              <Link className="nav-main__logo" to="/">
+              <Link className="nav-main__logo" onClick={this.closeMenu} to="/" >
                 <span className="nav-main__help-center" >Knowledge Center</span>
               </Link>
 
@@ -80,36 +85,36 @@ class NavMain extends Component {
                 <span className="nav-main__menu" />
               </button>
 
-              <div className={`nav-main__mobile ${menuState}`}>
+              <div className={`nav-main__mobile ${menuState}`} >
 
                 <div className="nav-item">
-                  <a className="nav-main__plain" href="https://support.sendgrid.com/">
+                  <a className="nav-main__plain" onClick={this.closeMenu} href="https://support.sendgrid.com/">
                     Contact Support
                   </a>
                 </div>
 
                 <div className="nav-item">
-                  <Link className="nav-main__plain" to="/for-developers/">
+                  <Link className="nav-main__plain" onClick={this.closeMenu} to="/for-developers/">
                     For Developers
                   </Link>
                 </div>
 
                 <div className="nav-item">
-                  <a className="nav-main__plain" href="http://status.sendgrid.com/">
+                  <a className="nav-main__plain" onClick={this.closeMenu} href="http://status.sendgrid.com/">
                     Status
                   </a>
                 </div>
 
                 <div className="nav-item">
-                  <a className="nav-main__plain" href="http://learn.sendgrid.com">
+                  <a className="nav-main__plain" onClick={this.closeMenu} href="http://learn.sendgrid.com">
                     Academy
                   </a>
                 </div>
 
                 <div className="nav-item nav-item--btn">
-                  <Link className="btn nav-main__login" to="/">
+                  <a className="btn nav-main__login" to="https://signup.sendgrid.com/">
                     Sign Up
-                  </Link>
+                  </a>
                 </div>
               </div>
             </nav>
