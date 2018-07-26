@@ -1,0 +1,27 @@
+@import '../scss/global/variables';
+
+.puppy-wrap {
+  min-height: 300px;
+  overflow: hidden;
+  font-size: $scaleup-2;
+  line-height: 1.3;
+  height: 100vh;
+  background: linear-gradient(rgba(26,130,226,12.65),rgba(26,130,226,.65)), url('../img/puppy.gif') no-repeat 50% fixed;
+  background-size: cover;
+  color: #fff;
+
+  h1 {
+    color: #fff;
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: $scaleup-1;
+  }
+}
+
+.not-found-content {
+  margin-top: 25%;
+}
