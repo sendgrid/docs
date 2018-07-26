@@ -4,13 +4,14 @@ seo:
 title: Adding a Custom SSL configuration
 layout: page
 weight: 0
+group: account-management
 navigation:
   show: true
 ---
 
 If you can't or don't want to use Content Delivery Networks when setting up SSL for click and open tracking, then you can setup custom SSL configuration.
 
-Before Adding a Custom SSL configuration, you need to set up a valid [link branding](https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_link_branding.html) on your account like this:
+Before Adding a Custom SSL configuration, you need to set up a valid [link branding]({{root_url}}/help-support/getting-started/how-to-set-up-link-branding.html) on your account like this:
 
 ![Email Links Whitelabel]({{root_url}}/images/email_link_whitelabel.png)
 

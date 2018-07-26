@@ -10,7 +10,7 @@ const Group = props => (
       } = doc.node.fields;
 
       return (
-        <Link key={permalink} to={permalink}>{title}</Link>
+        <Link key={permalink} to={permalink} dangerouslySetInnerHTML={{ __html: title }} />
       );
     })}
   </div>

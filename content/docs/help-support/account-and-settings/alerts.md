@@ -5,15 +5,11 @@ seo:
   keywords: sendgrid alerts, account alerts, deliverability alerts
 title: Alerts
 weight: 0
+group: account-management
 layout: page
 navigation:
   show: true
 ---
-
-- [Add alert](#-Add-alert)
-- [Alerts](#-Alerts)
-- [Usage limit](#-Usage-limit)
-- [Stats notifications](#-Stats-notifications)
 
 You can set up alerts to be sent to a specific email address on a recurring basis, whether for informational purposes or when specific account actions occur.
 
