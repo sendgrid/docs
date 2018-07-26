@@ -6,9 +6,9 @@ import magnifyImageDevs from '../img/help-center-magnify-devs.svg';
 export const GLOSSARY_TERMS_HOME = {
   HEADER: 'Featured Terms',
   LINKS: [
-    { URL: '/', TEXTNODE: 'lorem ipsum home 1' },
-    { URL: '/', TEXTNODE: 'lorem ipsum home 2' },
-    { URL: '/', TEXTNODE: 'lorem ipsum home 3' },
+    { URL: '/glossary/sender-authentication/', TEXTNODE: 'Sender Authentication' },
+    { URL: '/glossary/ip-address/', TEXTNODE: 'IP Address' },
+    { URL: '/glossary/phishing/', TEXTNODE: 'Phishing' },
   ],
   BUTTON_LINK: '/',
   IMAGE: magnifyImage,
@@ -17,9 +17,9 @@ export const GLOSSARY_TERMS_HOME = {
 export const GLOSSARY_TERMS_DEVS = {
   HEADER: 'Featured Terms',
   LINKS: [
-    { URL: '/', TEXTNODE: 'lorem ipsum devs 1' },
-    { URL: '/', TEXTNODE: 'lorem ipsum devs 2' },
-    { URL: '/', TEXTNODE: 'lorem ipsum devs 3' },
+    { URL: '/glossary/sender-authentication/', TEXTNODE: 'Sender Authentication' },
+    { URL: '/glossary/event-webhook/', TEXTNODE: 'Event Webhook' },
+    { URL: '/glossary/email-deliverability/', TEXTNODE: 'Email Deliverability' },
   ],
   BUTTON_LINK: '/',
   IMAGE: magnifyImageDevs,
