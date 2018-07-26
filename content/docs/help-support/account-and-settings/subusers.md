@@ -1,6 +1,7 @@
 ---
 layout: page
 weight: 0
+group: teammates-subusers
 title: Subusers
 seo:
   title: Subusers

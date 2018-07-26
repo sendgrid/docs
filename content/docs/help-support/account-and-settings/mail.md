@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-Mail Settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid’s [Web API]({{root_url}}/API_Reference/Web_API/mail.html) or [SMTP Relay]({{root_url}}/glossary/smtp-relay.html).
+Mail Settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid’s [Web API]({{root_url}}/API_Reference/Web_API/mail/) or [SMTP Relay]({{root_url}}/glossary/smtp-relay/).
 
 ## 	Address Whitelist
  	
@@ -55,7 +55,7 @@ Allows you to set a schedule for SendGrid to automatically delete contacts from 
  	
 The Event Notification setting controls webhook notifications for events, such as bounces, clicks, opens, and more. This setting allows these events to be POSTed to a URL of your choosing.
 
-Please see our technical [Event Webhook API docs](/API_Reference/Webhooks/event.html) for more information about Event Webhook.
+Please see our technical [Event Webhook API docs](/API_Reference/Webhooks/event/) for more information about Event Webhook.
 
 **Settings**
  	

@@ -5,6 +5,7 @@ seo:
   keywords: down, outage, latency, header, intermittant, trace, ping, wireshark, traceroute, hop, node, slowness, having issues?, delivering, after, mins, minutes, seconds, ms, miliseconds, slow, delay, hours, delays
 title: Troubleshooting Delays and Latency
 weight: 0
+group: account-management
 layout: page
 zendesk_id: 203884108
 navigation:
@@ -19,9 +20,17 @@ navigation:
 
 ### 1. Check these suggestions first:
 
-**1.** If you are integrated with SendGrid using code, we _highly_ recommend using the official SendGrid libraries available on our [Github account](https://github.com/sendgrid). These are written with efficiency in mind. If you need help getting started with our libraries, check out our [Code Workshop](https://sendgrid.com/docs/Utilities/code_workshop.html) tool.
+**1.** If you are integrated with SendGrid using code, we _highly_ recommend using the official SendGrid libraries available on our [Github account](https://github.com/sendgrid). These are written with efficiency in mind. If you need help getting started with our libraries, check out the tutorials in each of the languages:
 
-**2.** You can use our  [SMTPAPI]({{root_url}}/API_Reference/SMTP_API/index.html) to greatly increase your message throughput. As with SMTP, 100 messages can be sent with each connection, but there can be 1000 [TO: recipients](https://sendgrid.com/docs/API_Reference/SMTP_API/using_the_smtp_api.html) for each message using the x-smtpapi header. You can use this option through [SMTP]({{root_url}}/Classroom/Basics/Email_Infrastructure/recommended_smtp_settings.html) sending as well as the [Web API v3](https://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/index.html).
+* [C Sharp](https://github.com/sendgrid/sendgrid-csharp/blob/master/README.md)
+* [PHP](https://github.com/sendgrid/sendgrid-php/blob/master/README.md)
+* [Ruby](https://github.com/sendgrid/sendgrid-ruby/blob/master/README.md)
+* [Node.js](https://github.com/sendgrid/sendgrid-nodejs/blob/master/README.md)
+* [Python](https://github.com/sendgrid/sendgrid-python/blob/master/README.md)
+* [Go](https://github.com/sendgrid/sendgrid-go/blob/master/README.md)
+* [Java](https://github.com/sendgrid/sendgrid-java/blob/master/README.md)
+
+**2.** You can use our  [SMTPAPI]({{root_url}}/API_Reference/SMTP_API/index/) to greatly increase your message throughput. As with SMTP, 100 messages can be sent with each connection, but there can be 1000 [TO: recipients](https://sendgrid.com/docs/API_Reference/SMTP_API/using_the_smtp_api/) for each message using the x-smtpapi header. You can use this option through SMTP sending as well as the [Web API v3](https://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/index/).
 
 **3.** Lastly, you can try to open additional connections from your end: Generally, we recommend a maximum of 10 concurrent connections. However, please note that SendGrid can generally handle as much mail as you can throw at us. One thing to ensure is to make certain that the maximum amount of mail is passed before terminating each connection. We recommend using caution when incrementing your number of active connections.
 

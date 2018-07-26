@@ -5,6 +5,7 @@ seo:
   keywords: click tracking, clicks, open tracking, opens, google analytics, tracking with analytics, subscription tracking
 title: Tracking
 weight: 0
+group: account-management
 layout: page
 navigation:
   show: true
@@ -12,7 +13,7 @@ navigation:
 
 ## 	Click tracking
  	
-Enabling Click Tracking causes all the links and URLs in your emails to be overwritten and pointed to either SendGrid’s servers or the domain you branded your link with so that any time a customer clicks a link, SendGrid can track those [clicks]({{root_url}}/glossary/clicks.html). SendGrid can track up to 1000 links per email.
+Enabling Click Tracking causes all the links and URLs in your emails to be overwritten and pointed to either SendGrid’s servers or the domain you branded your link with so that any time a customer clicks a link, SendGrid can track those [clicks]({{root_url}}/glossary/clicks/). SendGrid can track up to 1000 links per email.
 
  ### 	Settings
  	
@@ -22,7 +23,7 @@ Enabling Click Tracking causes all the links and URLs in your emails to be overw
  	
 For more information about using this app, please refer to [Google’s URL Builder](https://support.google.com/analytics/answer/1033867?hl=en) and their article on "[Best Practices for Campaign Building](https://support.google.com/analytics/answer/1037445)".
 
-We default the settings to Google’s recommendations. Anything you enter into those fields in the app settings or via API will take precedence. For more information see [Google Analytics Demystified](https://sendgrid.com/docs/Classroom/Track/Collecting_Data/google_analytics_demystified_ga_statistics_vs_sg_statistics.html).
+We default the settings to Google’s recommendations. Anything you enter into those fields in the app settings or via API will take precedence. For more information see [Google Analytics]({{root_url}}/help-support/analytics-and-reporting/google-analytics/html).
 
  ### 	Settings
  	
@@ -46,7 +47,7 @@ If you are using email link branding, then your open tracking image will be serv
 
 </call-out>
 
-Open Tracking adds an invisible, one pixel image at the end of the email which can track email [opens]({{root_url}}/glossary/opens.html). If the email recipient has images enabled on their email client and a request to SendGrid’s server for the invisible image is executed, then an open event is logged. These events are logged in the Statistics UI, Email Activity interface, and are reported by the Event Webhook.
+Open Tracking adds an invisible, one pixel image at the end of the email which can track email [opens]({{root_url}}/glossary/opens/). If the email recipient has images enabled on their email client and a request to SendGrid’s server for the invisible image is executed, then an open event is logged. These events are logged in the Statistics UI, Email Activity interface, and are reported by the Event Webhook.
 
 When using this service customers often ask the difference between a unique open versus an open. A unique open is logged only the first time a given recipient opens the email whereas normal opens are logged for all opens of the email in question.
 
@@ -54,9 +55,9 @@ When using this service customers often ask the difference between a unique open
  	
 **Status** - On or Off
 
-**Replacement Tag** - If you do not want the open tracking image to be inserted at the end of your email, it is possible to specify an alternative location by using a replacement tag and the open tracking [SMTP API header]({{root_url}}/for-developers/sending-email/smtp-filters.html#opentrack).
+**Replacement Tag** - If you do not want the open tracking image to be inserted at the end of your email, it is possible to specify an alternative location by using a replacement tag and the open tracking [SMTP API header]({{root_url}}/for-developers/sending-email/smtp-filters/#opentrack).
 
-If you are sending email through our [v3 Web API]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html), you may also enable the `open_tracking` parameter, and set the `substitution_tag` parameter to a value of your choice. You may insert that substitution tag anywhere in your email, and it will be replaced with the open tracking image.
+If you are sending email through our [v3 Web API]({{root_url}}/API_Reference/Web_API_v3/Mail/index/), you may also enable the `open_tracking` parameter, and set the `substitution_tag` parameter to a value of your choice. You may insert that substitution tag anywhere in your email, and it will be replaced with the open tracking image.
 
 **Related Information** - [How Google’s Image Caching effects your opens]({{site.blog_url}}/googles-new-image-caching-5-things-need-know/)
 

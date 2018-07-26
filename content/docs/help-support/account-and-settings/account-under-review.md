@@ -1,7 +1,7 @@
 ---
 seo:
   title: Account Under Review
-  description: Was your account suspended or is otherwise under review? Learn more here...
+  description: If your account is suspended or is otherwise under review, learn how to bring your account into good standing. 
   keywords: suspend, suspended, account, deactivated, banned, ban, deactivate, warn, warning, access, compromise, reactivate, stopped, stop, reactivated, turn, frozen, under, review, deactivated, compliance
 title: Account Under Review
 weight: 0
@@ -47,7 +47,7 @@ Banned accounts cannot access our system either through SendGrid.com or the API.
 
 <call-out>
 
-An account in a banned state will stop any auto-renewal billing, though you will still be charged for any overages or Marketing Campaigns contact storage during the current month.
+An account in a banned state will stop any auto-renewal billing,though you will still be charged for any overages or Marketing Campaigns contact storage during the current month.
 
 </call-out>
 

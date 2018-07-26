@@ -80,7 +80,8 @@ You may not give an API key greater permissions than you currently have.
  	
 You can easily test your newly created API key using cURL:
 
-```curl -i --request POST \
+```curl
+curl -i --request POST \
 --url https://api.sendgrid.com/v3/mail/send \
 --header 'Authorization: Bearer YOUR_API_KEY_HERE' \
 --header 'Content-Type: application/json' \

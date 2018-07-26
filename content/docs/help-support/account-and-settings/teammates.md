@@ -5,21 +5,11 @@ seo:
   keywords: teammates, teammate, permissions
 title: Teammates
 weight: 0
+group: teammates-subusers
 layout: page
 navigation:
   show: true
 ---
-
-## 	Table of Contents
- 	
-* [Adding Teammates](#-Adding-Teammates)
-* [Managing Teammates](#-Managing-Teammates)
-  * [Configuring permissions](#-Configuring-permisisons)
-  * [Removing Teammates](#-Removing-Teammates)
-  * [Requesting feature access](#-Requesting-feature-access)
-  * [Granting feature access](#-Granting-feature-access)
-* [Teammates and API Keys](#-Teammates-and-API-Keys)
-
 Teammates allows multiple users, or teammates, to send email from a single SendGrid account. It enables groups of users to with different roles and responsibilities to share one account, where each of these users has access to varying SendGrid features depending on their needs. By only giving your individual team members access to the features that they need to do their jobs, you can limit access to sensitive areas of your account. Teammates makes it incredibly easy to add, remove, and manage different users.
 
 ## 	Adding Teammates
@@ -120,7 +110,7 @@ The teammate receives a notification email when they are either granted or denie
  	
 ## 	Teammates and API Keys
  	
-API Keys are used to authenticate API calls. Just as a teammate can be given specific permissions, API keys can be assigned specific [permissions]({{root_url}}/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html) to restrict which API calls they can authenticate.
+API Keys are used to authenticate API calls. Just as a teammate can be given specific permissions, API keys can be assigned specific [permissions]({{root_url}}/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list/) to restrict which API calls they can authenticate.
 
 <call-out>
 
@@ -133,6 +123,6 @@ However, a teammate cannot change their own permissions via API key. For example
 
 ## 	Related Resources
  	
-* [API Reference]({{root_url}}/API_Reference/Web_API_v3/teammates.html)
-* [Glossary](https://sendgrid.com/docs/glossary/teammates.html)
+* [API Reference]({{root_url}}/API_Reference/Web_API_v3/teammates/)
+* [Glossary](https://sendgrid.com/docs/glossary/teammates/)
 
