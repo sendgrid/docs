@@ -31,7 +31,7 @@ export default class BreadCrumbs extends Component {
 
     const allPaths = this.pathParts.map((text) => {
       const path = pathname.substring(0, pathname.indexOf(text)) + text;
-      const to = `${path.replace('/docs', '')  }/`;
+      const to = `${path.replace('/docs', '') }/`;
       const textNode = text.replace(/-/g, ' ');
       return (
         {
@@ -74,7 +74,6 @@ export default class BreadCrumbs extends Component {
     };
 
     const itemList = this.allPaths.map((item, index) => {
-      console.log(item.to);
       const listItem = {
         '@type': 'ListItem',
         position: index + 1,
