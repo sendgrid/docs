@@ -70,7 +70,7 @@ class NavMain extends Component {
           <div className="container-lg">
             <nav className="nav-main">
               <Link className="nav-main__logo" to="/">
-                <span className="nav-main__help-center" >Help Center</span>
+                <span className="nav-main__help-center" >Knowledge Center</span>
               </Link>
 
               <button
@@ -81,15 +81,10 @@ class NavMain extends Component {
               </button>
 
               <div className={`nav-main__mobile ${menuState}`}>
-                <div className="nav-item">
-                  <Link className="nav-main__plain" to="/">
-                    Home
-                  </Link>
-                </div>
 
                 <div className="nav-item">
                   <a className="nav-main__plain" href="https://support.sendgrid.com/">
-                    Support
+                    Contact Support
                   </a>
                 </div>
 
@@ -102,6 +97,12 @@ class NavMain extends Component {
                 <div className="nav-item">
                   <a className="nav-main__plain" href="http://status.sendgrid.com/">
                     Status
+                  </a>
+                </div>
+
+                <div className="nav-item">
+                  <a className="nav-main__plain" href="http://learn.sendgrid.com">
+                    Academy
                   </a>
                 </div>
 

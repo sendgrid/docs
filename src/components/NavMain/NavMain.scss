@@ -55,7 +55,7 @@
   background-size: 150px auto;
   display: block;
   height: 27px;
-  width: 280px;
+  width: 334px;
   text-align: right;
   position: relative;
 }
@@ -186,7 +186,7 @@
   display: block;
 }
 
-@media (max-width: $width-mobile) {
+@media (max-width: $width-medium) {
   .nav-main__toggle {
     display: block;
   }

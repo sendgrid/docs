@@ -24,10 +24,12 @@ $card-gutter: 30px;
 }
 
 .for-devs-callouts {
-  padding: $scaleup-3 0;
+  padding-top: $scaleup-3;
+  padding-bottom: $scaleup-3;
   position: relative;
 
   .card {
+    padding: $scale-base-up-09 $scale-base-up-04 $scale-base-up-06;
     border: none;
   }
 }
@@ -59,7 +61,7 @@ $card-gutter: 30px;
 }
 
 .for-devs-featured::before {
-  background: $slate-02;
+  background: $slate-05;
   content: "";
   height: 70%;
   left: -75%;
@@ -89,16 +91,5 @@ $card-gutter: 30px;
     flex: 1;
     padding-left: $scaleup-1;
     padding-right: $scaleup-1;
-  }
-}
-
-.for-devs-glossary {
-  background: $mantis;
-  background: $gradient-dev-glossary;
-  padding: $scaleup-2 0;
-
-  p,
-  h2 {
-    color: #fff;
   }
 }
