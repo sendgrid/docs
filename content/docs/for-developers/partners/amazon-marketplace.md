@@ -2,7 +2,7 @@
 layout: page
 weight: 90
 title: Amazon Marketplace
-group: aws
+group: platform-partners
 navigation:
   show: true
 ---

@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-group: azure
+group: platform-partners
 title: Building an iOS App on Windows Azure
 navigation:
   show: true
