@@ -5,6 +5,7 @@ seo:
   keywords: policy, dmarc, spf, dkim, Yahoo, yahoogroups, y7mail, p=, reject, p=reject
 title: Yahoo DMARC Changes "Message not accepted for policy reasons"
 weight: 0
+group: account-management
 layout: page
 zendesk_id: 201876356
 navigation:

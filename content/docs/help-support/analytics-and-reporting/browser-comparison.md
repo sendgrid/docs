@@ -5,6 +5,7 @@ seo:
   keywords: Browser comparison statistics, Compare SendGrid Browser statistics
 title: Browser Comparison
 weight: 0
+group: 
 layout: page
 navigation:
   show: true
