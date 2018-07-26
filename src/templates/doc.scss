@@ -5,12 +5,20 @@ $aside-width: 300px;
 
 .doc-wrap {
   display: flex;
+
+  @media (max-width: $width-medium) {
+    flex-direction: column;
+  }
 }
 
 .doc-main {
   flex: 1;
   overflow: hidden;
   padding: 0 $scaleup-8 $scaleup-6;
+
+  @media (max-width: $width-medium) {
+    padding: 0 0 $scaleup-6;
+  }
 
   h2, h3 {
     margin-left: -25px;
@@ -55,6 +63,10 @@ $aside-width: 300px;
   align-self: flex-start;
   flex: 0 0 300px;
   top: 0;
+
+  @media (max-width: $width-medium) {
+    display: none;
+  }
 }
 
 .aside-nav a {
