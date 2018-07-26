@@ -5,15 +5,11 @@ seo:
   keywords: sendgrid alerts, account alerts, deliverability alerts
 title: Alerts
 weight: 0
+group: account-management
 layout: page
 navigation:
   show: true
 ---
-
-- [Add alert](#-Add-alert)
-- [Alerts](#-Alerts)
-- [Usage limit](#-Usage-limit)
-- [Stats notifications](#-Stats-notifications)
 
 You can set up alerts to be sent to a specific email address on a recurring basis, whether for informational purposes or when specific account actions occur.
 
@@ -44,4 +40,4 @@ An email containing your stats sent at the frequency you define. For example:
 Weekly stats will be sent once week and show the trailing week.
 Daily Stats will be sent every day, but with trailing 7 day stats included.
 
-For more in depth statistics, we suggest using the [Event Webhook]({{root_url}}/for-developers/tracking-events/event.html).
+For more in depth statistics, we suggest using the [Event Webhook]({{root_url}}/for-developers/tracking-events/event/).

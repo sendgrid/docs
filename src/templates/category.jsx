@@ -17,12 +17,14 @@ class CategoryTemplate extends React.Component {
   }
 
   render() {
-    const { pathContext } = this.props;
+    const { category } = this.props.pathContext;
+    // If we don't have a "pretty category", make one out of the category context.
+    const title = CATEGORIES[category] ? CATEGORIES[category] : category.replace(/-/g, ' ');
 
     return (
       <div className="category-container container">
         <SEO postNode={this.props} postType="category" />
-        <h1>{CATEGORIES[pathContext.category]}</h1>
+        <h1 className="page-title">{title}</h1>
         <div className="row">
           {this.renderGroups()}
         </div>

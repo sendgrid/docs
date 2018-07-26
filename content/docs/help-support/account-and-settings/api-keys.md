@@ -5,23 +5,12 @@ seo:
   keywords: sendgrid API keys, email API Keys, mail API Keys, email credentials, send credentials
 title: API Keys
 weight: 0
+group: account-management
 layout: page
 navigation:
   show: true
 ---
-
-## 	Table of Contents
- 	
-* [What are API keys?](#-What-are-API-keys)
-* [Creating an API key](#-Creating-an-API-key)
-* [API key permissions](#-API-key-permissions)
-* [Replacing an old API key with a new one](#-Replacing-an-old-API-key-with-a-new-one)
-* [Edit an API key](#-Edit-an-API-key)
-* [Testing an API key](#-Testing-an-API-key)
-* [Inactivate an API Key](#-Inactivate-an-API-key)
-
-## 	What are API keys?
- 	
+		
 API keys are used by your application, mail client, or website to authenticate access to SendGrid services. They are the preferred alternative to using a username and password because you can revoke an API key at any time without having to change your username and password. We suggest that you use API keys for connecting to all of SendGrid’s services.
 
 There are two different types of API keys:
@@ -91,12 +80,12 @@ You may not give an API key greater permissions than you currently have.
  	
 You can easily test your newly created API key using cURL:
 
-``` curl
-  curl -i --request POST \
-  --url https://api.sendgrid.com/v3/mail/send \
-  --header 'Authorization: Bearer YOUR_API_KEY_HERE' \
-  --header 'Content-Type: application/json' \
-  --data '{"personalizations": [{"to": [{"email": "recipient@example.com"}]}],"from": {"email": "sendeexampexample@example.com"},"subject": "Hello, World!","content": [{"type": "text/plain", "value": "Howdy!"}]}'
+```curl
+curl -i --request POST \
+--url https://api.sendgrid.com/v3/mail/send \
+--header 'Authorization: Bearer YOUR_API_KEY_HERE' \
+--header 'Content-Type: application/json' \
+--data '{"personalizations": [{"to": [{"email": "recipient@example.com"}]}],"from": {"email": "sendeexampexample@example.com"},"subject": "Hello, World!","content": [{"type": "text/plain", "value": "Howdy!"}]}'
 ```
 
 Look for a **202 Accepted** in the HTTP response headers.

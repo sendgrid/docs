@@ -7,7 +7,7 @@ import Callout from '../componentsMarkdown/Callout';
 import Gist from '../componentsMarkdown/Gist';
 import CodeGroup from '../componentsMarkdown/CodeGroup';
 import withSubNav from '../components/NavSub';
-import './b16-tomorrow-dark.css';
+import './syntax-highlighting.scss';
 import './doc.scss';
 
 const renderAst = new RehypeReact({
@@ -33,15 +33,17 @@ class DocTemplate extends React.Component {
 
   render() {
     const postNode = this.props.data.doc;
+    const asideLinks = this.getLinks();
 
     return (
       <div className="container-lg doc-wrap">
         <SEO postNode={postNode} postType="doc" />
-        {postNode.fields.docType !== 'glossary' &&
-          <AsideMenu asideLinks={this.getLinks()} />
+        {postNode.fields.docType !== 'glossary' && asideLinks.length ?
+         (<AsideMenu asideLinks={this.getLinks()} />)
+         : null
         }
         <div className="doc-main">
-          <h1 className="page-title">{postNode.fields.title}</h1>
+          <h1 dangerouslySetInnerHTML={{ __html: postNode.fields.title }} />
           {renderAst(postNode.htmlAst)}
         </div>
       </div>

@@ -1,6 +1,7 @@
 ---
 layout: page
 weight: 0
+group: billing
 title: Billing
 seo:
   title: Billing
@@ -9,15 +10,6 @@ seo:
 navigation:
   show: true
 ---
-
-- [Payment methods](#-Payment-methods)
-- [Marketing Campaigns Contacts](#-Marketing-Campaigns-Contacts)
-- [Billing frozen and billing warned](#-Billing-frozen-and-warned)
-- [Email credits](#-Email-credits)
-- [Overages](#-Overages)
-- [Requesting a refund](#-Requesting-a-refund)
-- [Changing your plan](#-Changing-your-plan)
-- [Cancel your account](#-Cancel-your-account)
 
 You can update your plan and billing details on the [Plan & Billing Details page](https://app.sendgrid.com/settings/billing) in the UI.
 

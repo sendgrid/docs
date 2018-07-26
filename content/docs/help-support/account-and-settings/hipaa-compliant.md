@@ -5,6 +5,7 @@ seo:
   keywords: security, hipaa, encryption, tls, ssl, secure, GLBA, gramm leach, bliley, act, health, law
 title: Is Sendgrid HIPAA Compliant?
 weight: 0
+group: security
 layout: page
 zendesk_id: 200182978
 navigation:

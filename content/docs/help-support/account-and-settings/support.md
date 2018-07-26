@@ -5,6 +5,7 @@ seo:
   keywords: SendGrid support, support contact, sendgrid support chat, sendgrid support phone number
 title: How to contact SendGrid support
 weight: 0
+group: account-management
 layout: page
 navigation:
   show: true

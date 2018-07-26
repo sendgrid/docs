@@ -22,6 +22,10 @@ input {
   padding-top: 15px;
   margin-bottom: 20px;
 
+  @media (max-width: $width-mobile) {
+    padding-top: 0;
+  }
+
   &.is-required {
     label::after {
       position: absolute;
@@ -84,6 +88,10 @@ input {
     top: 19px;
     right: 0;
     pointer-events: none;
+
+    @media (max-width: $width-mobile) {
+      top: 0;
+    }
   }
 
 

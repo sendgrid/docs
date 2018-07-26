@@ -5,6 +5,7 @@ seo:
   keywords: password, azure, microsoft, change
 title: How to change the password for your SendGrid add-on via Azure
 weight: 0
+group: account-management
 layout: page
 zendesk_id: 205027298
 navigation:

@@ -116,9 +116,9 @@ $alert-trial: $slate;
 
 // gradients
 $gradient-hero: linear-gradient(165deg, rgba(209,230,249,1) 0%, rgba(243,249,253,1) 75%, rgba(255,255,255,1) 100%);
-$gradient-home-featured: linear-gradient(to bottom right, #62ffae, $seafoam);
+$gradient-home-featured: linear-gradient(315deg, $seafoam, #6afcb1 );
 $gradient-callout: linear-gradient(300deg, rgba(36,132,223,1) 0%, rgba(92,176,255,1) 75%);
-$gradient-dev-glossary: linear-gradient(315deg, rgba(24,201,110,1) 0%, rgba(106,252,177,1) 100%);
+$gradient-dev-glossary: linear-gradient(to bottom right, $kiwi, $mantis);
 $gradient-dev-callout: linear-gradient(to bottom, darken($slate, 10%), $slate);
 
 // buttons

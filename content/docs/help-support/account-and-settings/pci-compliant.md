@@ -5,6 +5,7 @@ seo:
   keywords: credit, card, pci, dss, compliant
 title: Is Sendgrid PCI compliant?
 weight: 0
+group: account-management
 layout: page
 zendesk_id: 205104628
 navigation:

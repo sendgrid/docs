@@ -31,7 +31,7 @@ export default class BreadCrumbs extends Component {
 
     const allPaths = this.pathParts.map((text) => {
       const path = pathname.substring(0, pathname.indexOf(text)) + text;
-      const to = path.replace('/docs', '');
+      const to = `${path.replace('/docs', '') }/`;
       const textNode = text.replace(/-/g, ' ');
       return (
         {
@@ -97,7 +97,7 @@ export default class BreadCrumbs extends Component {
           {this.state.items.map(item => (
             <li key={item.textNode} ><Link to={item.to}>{item.textNode}</Link></li>
           ))}
-          <li>{this.getTitle()}</li>
+          <li dangerouslySetInnerHTML={{ __html: this.getTitle() }} />
         </ul>
         <script type="application/ld+json">
           {JSON.stringify(this.getJSONLD())}

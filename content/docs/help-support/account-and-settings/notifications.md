@@ -1,6 +1,7 @@
 ---
 layout: page
 weight: 90
+group: account-management
 title: Notifications
 navigation:
   show: true
@@ -9,8 +10,6 @@ seo:
   override: true
   description:
 ---
-
-## 	Set notifications
  	
 If you would like to have notifications sent to an email other than your parent account address, you can opt in to receive email notifications from SendGrid about your account's marketing campaigns activity.
 
@@ -27,8 +26,8 @@ Email notifications about CSV upload summaries, sender verifications, A/B test w
 
 </call-out>
 
- ### 	Additional Resources
+ ## 	Additional Resources
   	
-- [Contacts](https://sendgrid.com/docs/help-support/managing-contacts/adding-contacts.html)
+- [Contacts](https://sendgrid.com/docs/help-support/managing-contacts/adding-contacts/)
 
 

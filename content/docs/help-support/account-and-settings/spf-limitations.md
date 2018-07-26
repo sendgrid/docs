@@ -5,8 +5,8 @@ seo:
   keywords:
 title: SPF&#58; Don't Exceed Ten DNS Lookups!
 weight: 0
+group: account-management
 layout: page
-zendesk_id: 200185168
 navigation:
   show: true
 ---

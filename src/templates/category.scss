@@ -3,5 +3,17 @@
 
 .group-links a {
   display: block;
-  margin-bottom: $scale-0;
+  margin-top: $scaledown-3;
+  margin-bottom: $scaledown-3;
+  line-height: 27px;
+}
+
+.category-container {
+  margin-top: $scaleup-3;
+  margin-bottom: $scaleup-3;
+  padding-right: $scaleup-1;
+
+  .page-title {
+    text-transform: capitalize;
+  }
 }

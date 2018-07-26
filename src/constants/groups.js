@@ -8,6 +8,7 @@ const GROUPS = {
   'sending': 'Sending',
   'heroku': 'Heroku',
   'aws': 'AWS',
+  'billing': 'Billing',
   'google': 'Google',
   'azure': 'Azure',
   'magento': 'Magento',

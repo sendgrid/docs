@@ -1,11 +1,17 @@
 .breadcrumb {
   padding-left: 0;
 
+  @media (max-width: $width-mobile) {
+    margin-top: $scaledown-1;
+    margin-bottom: $scaledown-1;
+  }
+
   li {
     display: inline-block;
     font-size: 13px;
     line-height: 20px;
     text-transform: capitalize;
+    color: $slate;
   }
 
   li + li::before {
