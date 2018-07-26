@@ -1,7 +1,7 @@
 module.exports = {
   docsDir: 'docs',
-  siteTitle: 'SendGrid Documentation',
-  siteTitleAlt: 'SendGrid Documentation',
+  siteTitle: 'SendGrid Knowledge Center',
+  siteTitleAlt: 'SendGrid Knowledge Center',
   siteLogo: 'https://sendgrid.com/brand/sg-logo-300.png',
   siteUrl: 'https://sendgrid.com',
   pathPrefix: '/docs',
