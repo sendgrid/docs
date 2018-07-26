@@ -5,6 +5,7 @@ seo:
   keywords: Browser statistics, SendGrid Browser statistics
 title: Browser
 weight: 0
+group: statistics
 layout: page
 navigation:
   show: true
@@ -26,9 +27,9 @@ There are similarities between Device and Browser statistics and we are working 
 
 Choose a browser from the list to see statistics about how your recipients interact with your email based on the application they use to look at the internet.
 
-The actual statistics included vary depending upon [your account settings]({{root_url}}/help-support/account-and-settings/account.html). Emails sent, bounces and spam reports will always get tracked. Unsubscribes, clicks, and opens require that the associated settings are enabled.
+The actual statistics included vary depending upon [your account settings]({{root_url}}/help-support/account-and-settings/account/). Emails sent, bounces and spam reports will always get tracked. Unsubscribes, clicks, and opens require that the associated settings are enabled.
 
-You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview.html#-Statistics-Filters).
+You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview/#-Statistics-Filters).
 
 ## 	Figures
  	
@@ -38,6 +39,6 @@ This table will refresh with new or adjusted data based on the various filters a
 
 ## 	Additional Resources
  	
-- [Account Settings]({{root_url}}/help-support/account-and-settings/account.html)
-- [Statistics Filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview.html#-Statistics-Filters)
-- [Browser Comparison]({{root_url}}/help-support/analytics-and-reporting/browser-comparison.html)
+- [Account Settings]({{root_url}}/help-support/account-and-settings/account/)
+- [Statistics Filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview/#-Statistics-Filters)
+- [Browser Comparison]({{root_url}}/help-support/analytics-and-reporting/browser-comparison/)
