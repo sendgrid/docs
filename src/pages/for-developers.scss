@@ -24,11 +24,12 @@ $card-gutter: 30px;
 }
 
 .for-devs-callouts {
-  padding: $scaleup-3 0;
+  padding-top: $scaleup-3;
+  padding-bottom: $scaleup-3;
   position: relative;
 
   .card {
-    padding: $scale-base-up-09 $scale-base-up-06 $scale-base-up-06;
+    padding: $scale-base-up-09 $scale-base-up-04 $scale-base-up-06;
     border: none;
   }
 }

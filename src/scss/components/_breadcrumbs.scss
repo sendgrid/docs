@@ -1,6 +1,10 @@
 .breadcrumb {
   padding-left: 0;
 
+  @media (max-width: $width-mobile) {
+    margin-top: 15px;
+  }
+
   li {
     display: inline-block;
     font-size: 13px;

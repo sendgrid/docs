@@ -2,7 +2,7 @@ import plane from '../img/icon-sending-email.svg';
 import contacts from '../img/icon-contacts.svg';
 import analytics from '../img/icon-analytics.svg';
 import account from '../img/icon-account.svg';
-import api from '../img/icon-api.svg';
+import partners from '../img/icon-partners.svg';
 import parse from '../img/icon-parse.svg';
 
 const FOR_DEVS_CARDS = [
@@ -57,7 +57,7 @@ const FOR_DEVS_CARDS = [
     BUTTON_LINK: '/for-developers/account-and-settings/',
   },
   {
-    ICON: api,
+    ICON: partners,
     TITLE: 'Partners',
     LINKS: [
       { URL: '/foo-bar', TEXTNODE: 'Sending Email with Markting Campaigns' },
