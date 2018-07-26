@@ -10,7 +10,33 @@ $aside-width: 300px;
 .doc-main {
   flex: 1;
   overflow: hidden;
-  padding: 0 $scaleup-8;
+  padding: 0 $scaleup-8 $scaleup-6;
+
+  h2, h3 {
+    margin-left: -25px;
+    display: flex;
+  }
+
+  ol, ul {
+    margin: $scaleup-1 0 $scaleup-1 $scaleup-1;
+
+    li {
+      list-style: decimal;
+      font-size: $scale-0;
+      line-height: 27px;
+    }
+  }
+
+  ul {
+    li {
+      list-style: disc;
+    }
+  }
+
+  li > ul {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .aside-nav {
@@ -87,4 +113,14 @@ aside a.active {
 
 .tabbed-code .tab {
   flex: 1;
+}
+
+.gatsby-resp-iframe-wrapper {
+  margin: $scaleup-2 0;
+}
+
+.anchor {
+  svg {
+    margin-right: $scaledown-3;
+  }
 }

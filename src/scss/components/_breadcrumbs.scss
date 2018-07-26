@@ -2,7 +2,8 @@
   padding-left: 0;
 
   @media (max-width: $width-mobile) {
-    margin-top: 15px;
+    margin-top: $scaledown-1;
+    margin-bottom: $scaledown-1;
   }
 
   li {
