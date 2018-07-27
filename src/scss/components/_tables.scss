@@ -1,11 +1,27 @@
 // sass-lint:disable force-attribute-nesting
 // linting disabled due to complexity of moving styles
+.table-col-100 {
+  width: 100px;
+}
+
+.table-col-150 {
+  width: 150px;
+}
+
+.table-col-200 {
+  width: 200px;
+}
 
 .table-wrap {
   width: 100%;
   // override app max-width that causes some issues w/ checkbox tables
   max-width: none;
   margin-bottom: 20px;
+
+  table {
+    table-layout: fixed;
+    width: 100%;
+  }
 
   // pull checkbox cells into grid gutters
   &.has-checkboxes {
@@ -79,7 +95,7 @@
   }
 
   td {
-    word-break: break-all;
+    // word-break: break-all;
     vertical-align: middle;
 
     p {
