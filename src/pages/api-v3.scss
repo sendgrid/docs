@@ -4,6 +4,7 @@
   height: 100%;
   position: absolute;
   left: 0;
+  min-height: 400px;
 
   iframe {
     height: 100%;
@@ -19,4 +20,5 @@
   overflow: scroll;
   height: 100%;
   max-width: 1600px;
+  min-height: 400px;
 }
