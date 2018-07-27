@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
 import Cookies from 'js-cookie';
-import SendGridLink from '../Link';
 import LINKS from '../../constants/pageLinks';
 import './NavMain.scss';
 
@@ -76,9 +75,9 @@ class NavMain extends Component {
         <div className="nav-main-wrap">
           <div className="container-lg">
             <nav className="nav-main">
-              <SendGridLink className="nav-main__logo" onClick={this.closeMenu} to="/" >
+              <Link className="nav-main__logo" onClick={this.closeMenu} to="/" >
                 <span className="nav-main__help-center" >Knowledge Center</span>
-              </SendGridLink>
+              </Link>
 
               <button
                 className={`nav-main__toggle js-menu-toggle ${menuState}`}
@@ -96,9 +95,9 @@ class NavMain extends Component {
                 </div>
 
                 <div className="nav-item">
-                  <SendGridLink className="nav-main__plain" onClick={this.closeMenu} to={LINKS.FOR_DEVELOPERS}>
+                  <Link className="nav-main__plain" onClick={this.closeMenu} to={LINKS.FOR_DEVELOPERS}>
                     For Developers
-                  </SendGridLink>
+                  </Link>
                 </div>
 
                 <div className="nav-item">
