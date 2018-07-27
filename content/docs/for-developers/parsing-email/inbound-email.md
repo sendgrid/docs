@@ -2,6 +2,7 @@
 layout: page
 weight: 0
 title: Inbound Email Parse Webhook
+group: inbound-parse
 navigation:
   show: true
 ---

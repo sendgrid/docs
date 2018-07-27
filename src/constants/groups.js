@@ -16,6 +16,7 @@ const GROUPS = {
   'email-activity': 'Email Activity Feed',
   'settings': 'Account Settings',
   'account-management': 'Account Management',
+  'inbound-parse': 'Inbound Parse',
   'sender-authentication': 'Sender Authentication',
   'ip-management': 'IP Management',
   'teammates-subusers': 'Teammates & Subusers',
