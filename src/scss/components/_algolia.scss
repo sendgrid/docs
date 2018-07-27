@@ -16,6 +16,10 @@
       padding: $scaledown-3;
     }
 
+    .algolia-docsearch-suggestion.algolia-docsearch-suggestion__main .algolia-docsearch-suggestion--category-header {
+      margin-top: $scaledown-1;
+    }
+
     .algolia-docsearch-suggestion {
 
       .algolia-docsearch-suggestion--subcategory-column {
