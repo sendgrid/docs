@@ -1,7 +1,7 @@
 .breadcrumb {
   padding-left: 0;
 
-  @media (max-width: $width-mobile) {
+  @media (max-width: $width-small) {
     margin-top: $scaledown-1;
     margin-bottom: $scaledown-1;
   }

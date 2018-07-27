@@ -19,12 +19,22 @@
 .for-devs-libraries__lang {
   width: 25%;
 
+  @media (max-width: $width-mobile) {
+    width: 100%;
+  }
+
   a {
     margin: 12px 15px;
     background: $mantis;
     display: block;
     border-radius: 35px;
     padding: $scaledown-3 $scale-0;
+    transition: all 0.1s ease-in-out;
+
+    &:hover {
+      background: #009D4C;
+      transform: translateY(-1px);
+    }
   }
 
   img {
