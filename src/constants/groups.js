@@ -22,6 +22,10 @@ const GROUPS = {
   'security': 'Security',
   'billing': 'Billing',
   'marketing-campaigns': 'Marketing Campaigns',
+  'getting-started':'Getting Started',
+  'reference-troubleshooting':'Reference & Troubleshooting',
+  'code-examples':'Code Examples',
+  'partners':'Partners',
   'ungrouped': 'Ungrouped'
 };
 

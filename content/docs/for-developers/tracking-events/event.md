@@ -4,47 +4,12 @@ seo:
   description: Full Event Webhook event list and descriptions, event examples, and the objects each event contains.
   keywords: event webhook API reference, reference, events, event webhook
 title: Event Webhook Reference
+group: reference-troubleshooting
 weight: 90
 layout: page
 navigation:
   show: true
 ---
-
-- [Events](#-Events)
-- [Example Response](#-Example-response)
-- [Delivery events](#-Delivery-events)
-    - [Processed](#processed)
-    - [Dropped](#dropped)
-    - [Delivered](#delivered)
-    - [Deferred](#deferred)
-    - [Bounce](#bounce)
-- [Engagement events](#-Engangement-events)
-    - [Open](#open)
-    - [Click](#click)
-    - [Spam Report](#spamreport)
-    - [Unsubscribe](#unsubscribe)
-    - [Group Unsubscribe](#groupunsubscribe)
-    - [Group Resubscribe](#groupresubscribe)
-- [Event JSON objects](#-Event-JSON-objects)
-    - [email](#email)
-    - [timestamp](#timestamp)
-    - [event](#event)
-    - [smtp-id](#smtpid)
-    - [useragent](#useragent)
-    - [IP](#ip)
-    - [sg_event_id](#sgeventid)
-    - [sg_message_id](#sgmessageid)
-    - [reason](#reason)
-    - [status](#status)
-    - [response](#response)
-    - [tls](#tls)
-    - [url](#url)
-    - [attempt](#attempt)
-    - [category](#category)
-    - [asm_group_id](#asmgroupid)
-    - [unique_args or custom_args](#uniqueargs)
-    - [marketing_campaign_id](#marketingcampaignid)
-    - [marketing_campaign_name](#marketingcampaignname)
 
 ## 	Events
 

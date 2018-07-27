@@ -9,9 +9,6 @@ seo:
   override: true
   description: Send your first email using the Marketing Campaigns tool.
 ---
-
-!!!!!!!!!!!!!!
-
 <iframe src="https://player.vimeo.com/video/221496578" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 If you want to send email programatically, see the [API reference]({{root_url}}/API_Reference/api_v3.html), or the [SMTP Reference]({{root_url}}/API_Reference/SMTP_API/using_the_smtp_api.html).
@@ -28,7 +25,7 @@ Before sending your first campaign, you need to do the following:
 
 1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**.
 
-1. Click **Create Campaign**.
+2. Click **Create Campaign**.
 <br> To create a campaign from an existing one, find the version you want to use and click the **action menu** to the far right of the campaign and then select **Edit** or **Duplicate**.
 ![]({{root_url}}/images/campaigns_dashboard_categories_search.png)
 

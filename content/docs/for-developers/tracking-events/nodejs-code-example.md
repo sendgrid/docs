@@ -2,6 +2,7 @@
 layout: page
 weight: 10
 title: Node.js
+group: code-examples
 navigation:
   show: true
 ---

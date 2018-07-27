@@ -7,6 +7,7 @@ seo:
   description: Learn how to better track your data with the open source SendGrid EventKit.
   keywords: event, store, clicks, opens, download, heroku, eventkit, event, kit, database, post, activity
 title: SendGrid EventKit
+group: partners
 weight: 0
 layout: page
 navigation:

@@ -4,6 +4,7 @@ seo:
   description: Analyze, Visualize, and Store SendGrid Email Event Data
   keywords: Keen IO, integrate, event data, analytics
 title: Analyze, Visualize, and Store SendGrid Event Data with Keen IO
+group: partners
 weight: 142
 layout: page
 navigation:

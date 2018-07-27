@@ -4,6 +4,7 @@ seo:
   description: Use RequestBin to get started or to troubleshoot your Event Webhook.
   keywords: webhook, RequestBin, troubleshoot, event webhook
 title: Getting Started
+group: getting-started
 weight: 100
 layout: page
 navigation:
