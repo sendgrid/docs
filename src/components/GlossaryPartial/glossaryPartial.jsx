@@ -1,20 +1,17 @@
 import React, { Component } from 'react';
+import Link from 'gatsby-link';
+import LINKS from '../../constants/pageLinks';
 import './GlossaryPartial.scss';
 
 class GlossaryPartial extends Component {
-  static getLinks(link) {
-    return link.map((item) => {
-      if (item.URL) {
-        return <a key={item.TEXTNODE} className="glossary-link" href={item.URL}>{item.TEXTNODE}</a>;
-      }
-    });
+  static getLinks(anchors) {
+    return anchors.map(anchor => <Link key={anchor.TEXTNODE} className="glossary-link" to={anchor.URL}>{anchor.TEXTNODE}</Link>);
   }
 
   render() {
     const {
       HEADER,
-      LINKS,
-      BUTTON_LINK,
+      ANCHORS,
       IMAGE,
     } = this.props.data;
 
@@ -29,8 +26,8 @@ class GlossaryPartial extends Component {
                 <div className="col-md-8">
                   <div className="card card--glossary is-thin">
                     <h3 className="card__title">{HEADER}</h3>
-                    { GlossaryPartial.getLinks(LINKS) }
-                    <a className="btn btn-primary" href={BUTTON_LINK}>View All</a>
+                    { GlossaryPartial.getLinks(ANCHORS) }
+                    <Link className="btn btn-primary" to={LINKS.GLOSSARY}>View All</Link>
                   </div>
                 </div>
                 <div className="col-md-4">

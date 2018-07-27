@@ -46,6 +46,7 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
+          'sendgrid-remark-code-in-html',
           'sendgrid-remark-paths',
           {
             resolve: 'gatsby-remark-images',
@@ -78,7 +79,6 @@ module.exports = {
     },
     'gatsby-plugin-sharp',
     'gatsby-plugin-catch-links',
-    // 'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {

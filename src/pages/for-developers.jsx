@@ -30,14 +30,14 @@ class ForDevelopers extends Component {
             <div className="col-md-4 col-offset-md-2 col-lg-4 col-offset-lg-2 card ta-center">
               <div className="for-devs-callouts__bar" />
               <h2>API Reference</h2>
-              <Link to="/" className="btn btn-primary center">Visit API reference</Link>
+              <Link to="/api-v3/" className="btn btn-primary center">Visit API reference</Link>
             </div>
             <div className="col-lg-4 card ta-center">
               <div className="for-devs-callouts__bar" />
               <h2>Get Started</h2>
               <div className="row for-devs-callouts__get-started-btns">
-                <Link to="/" className="btn btn-primary col-sm-6">Use API</Link>
-                <Link to="/" className="btn btn-primary col-sm-6">Use SMTP</Link>
+                <Link to="/for-developers/sending-email/api-getting-started/" className="btn btn-primary col-sm-6">Use API</Link>
+                <Link to="/for-developers/sending-email/getting-started-smtp/" className="btn btn-primary col-sm-6">Use SMTP</Link>
               </div>
             </div>
           </div>

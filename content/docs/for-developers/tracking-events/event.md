@@ -47,7 +47,7 @@ navigation:
     - [marketing_campaign_name](#marketingcampaignname)
 
 ## 	Events
- 	
+
 Events are generated when email is processed by SendGrid and email service providers. There are two types of events - delivery and engagement events. Delivery events indicate the status of email delivery to the recipient. Engagement events indicate how the recipient is interacting with the email.
 
 Here is a flow of email events:
@@ -181,11 +181,15 @@ Here is an event response that includes an example of each type of event:
 ```
 
  ### 	Delivery events
- 	
 
 Delivery events include processed, dropped, delivered, deferred, and bounce.
 
 <table class="table">
+  <colgroup>
+    <col class="table-col-100">
+    <col class="table-col-200">
+    <col>
+  </colgroup>
    <tbody>
       <tr>
          <th>Event</th>
@@ -195,9 +199,10 @@ Delivery events include processed, dropped, delivered, deferred, and bounce.
       <tr>
          <td><a name="processed"></a>Processed</td>
          <td>Message has been received and is ready to be delivered.</td>
-         <td>```json
+         <td>
+```raw
 [
-   {
+  {
       "email":"example@test.com",
       "timestamp":1513299569,
       "pool": {
@@ -208,17 +213,19 @@ Delivery events include processed, dropped, delivered, deferred, and bounce.
       "event":"processed",
       "category":"cat facts",
       "sg_event_id":"rbtnWrG1DVDGGGFHFyun0A==",
-      "sg_message_id":"14c5d75ce93.dfd.64b469.filter0001.16648.5515E0B88.0"
-   }
+      "sg_message_id":"14c5d75ce93.dfd.64b469.filter0001.16648.5515E0B88.000000000000000000000"
+  }
 ]
-```</td>
+```
+        </td>
       </tr>
       <tr>
          <td><a name="dropped"></a>Dropped</td>
          <td>You may see the following drop reasons: Invalid SMTPAPI header, Spam Content (if Spam Checker app is enabled), Unsubscribed Address, Bounced Address, Spam Reporting Address, Invalid, Recipient List over Package Quota</td>
-         <td>```json
+         <td>
+```raw
 [
-   {
+  {
       "email":"example@test.com",
       "timestamp":1513299569,
       "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
@@ -228,14 +235,16 @@ Delivery events include processed, dropped, delivered, deferred, and bounce.
       "sg_message_id":"14c5d75ce93.dfd.64b469.filter0001.16648.5515E0B88.0",
       "reason":"Bounced Address",
       "status":"5.0.0"
-   }
+  }
 ]
-```</td>
+```
+        </td>
       </tr>
       <tr>
          <td><a name="delivered"></a>Delivered</td>
          <td>Message has been successfully delivered to the receiving server.</td>
-         <td>```json
+         <td>
+```raw
 [
    {
       "email":"example@test.com",
@@ -248,12 +257,14 @@ Delivery events include processed, dropped, delivered, deferred, and bounce.
       "response":"250 OK"
    }
 ]
-```</td>
+```
+      </td>
       </tr>
       <tr>
          <td><a name="deferred"></a>Deferred</td>
          <td>Receiving server temporarily rejected the message.</td>
-         <td>```json
+         <td>
+```raw
 [
    {
       "email":"example@test.com",
@@ -267,12 +278,14 @@ Delivery events include processed, dropped, delivered, deferred, and bounce.
       "attempt":"5"
    }
 ]
-```</td>
+```
+    </td>
       </tr>
       <tr>
          <td><a name="bounce"></a>Bounce</td>
          <td>Receiving server could not or would not accept the message. If a recipient has previously unsubscribed from your emails, the message is bounced.</td>
-         <td>```json
+         <td>
+```raw
 [
    {
       "email":"example@test.com",
@@ -286,13 +299,14 @@ Delivery events include processed, dropped, delivered, deferred, and bounce.
       "status":"5.0.0"
    }
 ]
-```</td>
+```
+</td>
       </tr>
    </tbody>
 </table>
 
  ### 	Engagement events
- 	
+
 Engagement events include open, click, spam report, unsubscribe, group unsubscribe, and group resubscribe.
 
 <table class="table">
@@ -305,7 +319,8 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
       <tr>
          <td><a name="open"></a>Open</td>
          <td>Recipient has opened the HTML message. Open Tracking needs to be enabled for this type of event.</td>
-         <td>```json
+         <td>
+```raw
 [
    {
       "email":"example@test.com",
@@ -319,12 +334,14 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
       "ip":"255.255.255.255"
    }
 ]
-```</td>
+```
+</td>
       </tr>
       <tr>
          <td><a name="click"></a>Click</td>
          <td>Recipient clicked on a link within the message. Click Tracking needs to be enabled for this type of event.</td>
-         <td>```json
+         <td>
+```raw
 [
    {
       "email":"example@test.com",
@@ -339,12 +356,14 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
       "url":"http://www.sendgrid.com/"
    }
 ]
-```</td>
+```
+    </td>
       </tr>
       <tr>
          <td><a name="spamreport"></a>Spam Report</td>
          <td>Recipient marked message as spam.</td>
-         <td>```json
+         <td>
+```raw
 [
    {
       "email":"example@test.com",
@@ -356,12 +375,14 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
       "sg_message_id":"14c5d75ce93.dfd.64b469.filter0001.16648.5515E0B88.0"
    }
 ]
-```</td>
+```
+    </td>
       </tr>
       <tr>
          <td><a name="unsubscribe"></a>Unsubscribe</td>
          <td>Recipient clicked on the 'Opt Out of All Emails' link (available after clicking the message's subscription management link). Subscription Tracking needs to be enabled for this type of event.</td>
-         <td>```json
+         <td>
+```raw
 [
    {
       "email":"example@test.com",
@@ -373,12 +394,14 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
       "sg_message_id":"14c5d75ce93.dfd.64b469.filter0001.16648.5515E0B88.0"
    }
 ]
-```</td>
+```
+      </td>
       </tr>
       <tr>
          <td><a name="groupunsubscribe"></a>Group Unsubscribe</td>
          <td>Recipient unsubscribed from a specific group either by clicking the link directly or updating their preferences. Subscription Tracking needs to be enabled for this type of event.</td>
-         <td>```json
+         <td>
+```raw
 [
    {
       "email":"example@test.com",
@@ -394,12 +417,14 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
       "asm_group_id":10
    }
 ]
-```</td>
+```
+    </td>
       </tr>
       <tr>
          <td><a name="groupresubscribe"></a>Group Resubscribe</td>
          <td>Recipient resubscribed to a specific group by updating their preferences. Subscription Tracking needs to be enabled for this type of event.</td>
-         <td>```json
+         <td>
+```raw
 [
    {
       "email":"example@test.com",
@@ -415,13 +440,14 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
       "asm_group_id":10
    }
 ]
-```</td>
+```
+</td>
       </tr>
    </tbody>
 </table>
 
 ## 	Event objects
- 	
+
 <table class="table">
   <tr>
     <th></th>
@@ -720,7 +746,7 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
 </table>
 
  ### 	JSON objects
- 	
+
 - <a name="email"></a>`email` - the email address of the recipient
 - <a name="timestamp"></a>`timestamp` - the <a href="https://en.wikipedia.org/wiki/Unix_time">UNIX timestamp</a> of when the message was sent
 - <a name="event"></a>`event` - the event type. Possible values are processed, dropped, delivered, deferred, bounce, open, click, spam report, unsubscribe, group unsubscribe, and group resubscribe.
@@ -781,7 +807,7 @@ Array:
 - <a name="asmgroupid"></a>`asm_group_id` - The ID of the unsubscribe group the recipient's email address is included in. ASM IDs correspond to the ID that is returned when you create an unsubscribe group.
 - <a name="uniqueargs"></a>`unique_args` or `custom_args`
 ## 	Unique Arguments and Custom Arguments
- 	
+
 Events generated by SendGrid can include [unique arguments]({{root_url}}/for-developers/sending-email/unique-arguments.html) or custom arguments.
 
 <call-out>
@@ -791,7 +817,7 @@ Unique arguments and custom arguments essentially have the same function. Howeve
 </call-out>
 
  ### 	Unique Arguments
- 	
+
 To define and receive unique arguments when sending email with the [SMTP API]({{root_url}}/API_Reference/SMTP_API/index.html) or the [v2 Mail Send endpoint]({{root_url}}/API_Reference/Web_API/mail.html), use the `unique_args` parameter in the X-SMTPAPI header. For example, if you have an application and want to receive custom parameters such as the `userid` and the email `template`, you would submit them with the X-SMTPAPI header, as described [here]({{root_url}}/for-developers/sending-email/unique-arguments.html).
 
 For example, if you include the following unique arguments in your x-smtpapi header for an email sent via the v2 Mail Send endpoint:
@@ -828,7 +854,7 @@ You can create unique arguments with the same words as reserved keys, such as "e
 </call-out>
 
  ### 	Reserved Keys in Unique Arguments
- 	
+
 ```json
 //for this example, assume we're sending to john.doe@sendgrid.com
 {
@@ -843,7 +869,7 @@ You can create unique arguments with the same words as reserved keys, such as "e
 ```
 
  ### 	The resulting webhook call
- 	
+
 ```json
 [
   {
@@ -864,7 +890,7 @@ You'll notice that the unique arguments, "event" and "email", were overwritten b
 </call-out>
 
  ### 	Custom Arguments
- 	
+
 Any custom arguments that you include with an email sent through [v3 Mail Send]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html) gets added to your Event Webhook response.
 
 For example, if you were to include the following custom arguments in a personalization in your payload to the v3 Mail Send endpoint:
@@ -912,7 +938,7 @@ The Event Webhook response:
 For emails sent through our Marketing Campaigns feature, we add Marketing Campaigns specific parameters to the Event Webhook. Both `marketing_campaign_name` and `marketing_campaign_id` are displayed as unique arguments in the event data.
 
  ### 	Example event from a standard (non-A/B test) campaign send:
-   	
+
 ```json
   {
     "category": [],
@@ -930,7 +956,7 @@ For emails sent through our Marketing Campaigns feature, we add Marketing Campai
 ```
 
  ### 	Example event from an A/B Test:
- 	
+
  `marketing_campaign_version` is displayed in the event data for emails sent as part of an A/B Test. The value for `marketing_campaign_version` are returned as `A`, `B`, `C`, etc.
 
 ```json
@@ -952,7 +978,7 @@ For emails sent through our Marketing Campaigns feature, we add Marketing Campai
 ```
 
  ### 	Example event from the winning phase of an A/B Test:
- 	
+
 ```json
 {
   "category": [],
@@ -971,7 +997,7 @@ For emails sent through our Marketing Campaigns feature, we add Marketing Campai
 ```
 
  ### 	Legacy Marketing Email Unsubscribes
- 	
+
 For emails sent through our Legacy Marketing Email tool, unsubscribes look like the following example:
 
 ```json
@@ -1013,7 +1039,7 @@ For emails sent through our Legacy Marketing Email tool, unsubscribes look like 
 ```
 
 ## 	Additional Resources
- 	
+
 - [Getting started with the Event Webhook]({{root_url}}/for-developers/tracking-events/getting-started-event-webhook.html)
 - [Troubleshooting the event webhook]({{root_url}}/for-developers/tracking-events/troubleshooting.html)
 - [An Event Webhook case study](https://sendgrid.com/blog/leveraging-sendgrids-event-api/)
