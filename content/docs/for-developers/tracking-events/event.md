@@ -185,6 +185,11 @@ Here is an event response that includes an example of each type of event:
 Delivery events include processed, dropped, delivered, deferred, and bounce.
 
 <table class="table">
+  <colgroup>
+    <col class="table-col-100">
+    <col class="table-col-200">
+    <col>
+  </colgroup>
    <tbody>
       <tr>
          <th>Event</th>
@@ -195,11 +200,9 @@ Delivery events include processed, dropped, delivered, deferred, and bounce.
          <td><a name="processed"></a>Processed</td>
          <td>Message has been received and is ready to be delivered.</td>
          <td>
-<div class="gatsby-highlight" data-language="json">
-<pre class="language-json" >
-<code class="language-json">
+```raw
 [
-   {
+  {
       "email":"example@test.com",
       "timestamp":1513299569,
       "pool": {
@@ -211,19 +214,18 @@ Delivery events include processed, dropped, delivered, deferred, and bounce.
       "category":"cat facts",
       "sg_event_id":"rbtnWrG1DVDGGGFHFyun0A==",
       "sg_message_id":"14c5d75ce93.dfd.64b469.filter0001.16648.5515E0B88.000000000000000000000"
-   }
+  }
 ]
-</code>
-</pre>
-</div>
-</td>
+```
+        </td>
       </tr>
       <tr>
          <td><a name="dropped"></a>Dropped</td>
          <td>You may see the following drop reasons: Invalid SMTPAPI header, Spam Content (if Spam Checker app is enabled), Unsubscribed Address, Bounced Address, Spam Reporting Address, Invalid, Recipient List over Package Quota</td>
-         <td>```json
+         <td>
+```raw
 [
-   {
+  {
       "email":"example@test.com",
       "timestamp":1513299569,
       "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
@@ -233,14 +235,16 @@ Delivery events include processed, dropped, delivered, deferred, and bounce.
       "sg_message_id":"14c5d75ce93.dfd.64b469.filter0001.16648.5515E0B88.0",
       "reason":"Bounced Address",
       "status":"5.0.0"
-   }
+  }
 ]
-```</td>
+```
+        </td>
       </tr>
       <tr>
          <td><a name="delivered"></a>Delivered</td>
          <td>Message has been successfully delivered to the receiving server.</td>
-         <td>```json
+         <td>
+```raw
 [
    {
       "email":"example@test.com",
@@ -253,12 +257,14 @@ Delivery events include processed, dropped, delivered, deferred, and bounce.
       "response":"250 OK"
    }
 ]
-```</td>
+```
+      </td>
       </tr>
       <tr>
          <td><a name="deferred"></a>Deferred</td>
          <td>Receiving server temporarily rejected the message.</td>
-         <td>```json
+         <td>
+```raw
 [
    {
       "email":"example@test.com",
@@ -272,12 +278,14 @@ Delivery events include processed, dropped, delivered, deferred, and bounce.
       "attempt":"5"
    }
 ]
-```</td>
+```
+    </td>
       </tr>
       <tr>
          <td><a name="bounce"></a>Bounce</td>
          <td>Receiving server could not or would not accept the message. If a recipient has previously unsubscribed from your emails, the message is bounced.</td>
-         <td>```json
+         <td>
+```raw
 [
    {
       "email":"example@test.com",
@@ -291,7 +299,8 @@ Delivery events include processed, dropped, delivered, deferred, and bounce.
       "status":"5.0.0"
    }
 ]
-```</td>
+```
+</td>
       </tr>
    </tbody>
 </table>
@@ -310,7 +319,8 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
       <tr>
          <td><a name="open"></a>Open</td>
          <td>Recipient has opened the HTML message. Open Tracking needs to be enabled for this type of event.</td>
-         <td>```json
+         <td>
+```raw
 [
    {
       "email":"example@test.com",
@@ -324,12 +334,14 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
       "ip":"255.255.255.255"
    }
 ]
-```</td>
+```
+</td>
       </tr>
       <tr>
          <td><a name="click"></a>Click</td>
          <td>Recipient clicked on a link within the message. Click Tracking needs to be enabled for this type of event.</td>
-         <td>```json
+         <td>
+```raw
 [
    {
       "email":"example@test.com",
@@ -344,12 +356,14 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
       "url":"http://www.sendgrid.com/"
    }
 ]
-```</td>
+```
+    </td>
       </tr>
       <tr>
          <td><a name="spamreport"></a>Spam Report</td>
          <td>Recipient marked message as spam.</td>
-         <td>```json
+         <td>
+```raw
 [
    {
       "email":"example@test.com",
@@ -361,12 +375,14 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
       "sg_message_id":"14c5d75ce93.dfd.64b469.filter0001.16648.5515E0B88.0"
    }
 ]
-```</td>
+```
+    </td>
       </tr>
       <tr>
          <td><a name="unsubscribe"></a>Unsubscribe</td>
          <td>Recipient clicked on the 'Opt Out of All Emails' link (available after clicking the message's subscription management link). Subscription Tracking needs to be enabled for this type of event.</td>
-         <td>```json
+         <td>
+```raw
 [
    {
       "email":"example@test.com",
@@ -378,12 +394,14 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
       "sg_message_id":"14c5d75ce93.dfd.64b469.filter0001.16648.5515E0B88.0"
    }
 ]
-```</td>
+```
+      </td>
       </tr>
       <tr>
          <td><a name="groupunsubscribe"></a>Group Unsubscribe</td>
          <td>Recipient unsubscribed from a specific group either by clicking the link directly or updating their preferences. Subscription Tracking needs to be enabled for this type of event.</td>
-         <td>```json
+         <td>
+```raw
 [
    {
       "email":"example@test.com",
@@ -399,12 +417,14 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
       "asm_group_id":10
    }
 ]
-```</td>
+```
+    </td>
       </tr>
       <tr>
          <td><a name="groupresubscribe"></a>Group Resubscribe</td>
          <td>Recipient resubscribed to a specific group by updating their preferences. Subscription Tracking needs to be enabled for this type of event.</td>
-         <td>```json
+         <td>
+```raw
 [
    {
       "email":"example@test.com",
@@ -420,7 +440,8 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
       "asm_group_id":10
    }
 ]
-```</td>
+```
+</td>
       </tr>
    </tbody>
 </table>
