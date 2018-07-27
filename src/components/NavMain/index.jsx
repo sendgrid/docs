@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
 import Cookies from 'js-cookie';
+import LINKS from '../../constants/pageLinks';
 import './NavMain.scss';
 
 class NavMain extends Component {
@@ -55,18 +56,18 @@ class NavMain extends Component {
       <div className="nav-wrap">
         <div className="nav-secondary">
           <div className="container-lg">
-            <Link className="nav-secondary__link" to="/release-notes/">Release Notes</Link>
-            <a className="nav-secondary__link" href="https://sendgrid.com">SendGrid.com</a>
+            <Link className="nav-secondary__link" to={LINKS.RELEASE_NOTES}>Release Notes</Link>
+            <a className="nav-secondary__link" href={LINKS.SENDGRID}>SendGrid.com</a>
             {user ? (
               <div className="nav-secondary__account">
                 <div className="nav-secondary__name">{user.first_name} {user.last_name} <span className="carret">▾</span></div>
                 <div className="nav-secondary__account-links">
-                  <a href="/">Dashboard</a>
-                  <a href="/">Sign Out</a>
+                  <a href={LINKS.APP}>Dashboard</a>
+                  <a href={LINKS.LOGOUT}>Sign Out</a>
                 </div>
               </div>
             ) : (
-              <a className="nav-secondary__link" href="https://app.sendgrid.com/">Log In</a>
+              <a className="nav-secondary__link" href={LINKS.APP}>Log In</a>
             )}
           </div>
         </div>
@@ -88,31 +89,31 @@ class NavMain extends Component {
               <div className={`nav-main__mobile ${menuState}`} >
 
                 <div className="nav-item">
-                  <a className="nav-main__plain" onClick={this.closeMenu} href="https://support.sendgrid.com/">
+                  <a className="nav-main__plain" onClick={this.closeMenu} href={LINKS.SUPPORT}>
                     Contact Support
                   </a>
                 </div>
 
                 <div className="nav-item">
-                  <Link className="nav-main__plain" onClick={this.closeMenu} to="/for-developers/">
+                  <Link className="nav-main__plain" onClick={this.closeMenu} to={LINKS.FOR_DEVELOPERS}>
                     For Developers
                   </Link>
                 </div>
 
                 <div className="nav-item">
-                  <a className="nav-main__plain" onClick={this.closeMenu} href="http://status.sendgrid.com/">
+                  <a className="nav-main__plain" onClick={this.closeMenu} href={LINKS.STATUS}>
                     Status
                   </a>
                 </div>
 
                 <div className="nav-item">
-                  <a className="nav-main__plain" onClick={this.closeMenu} href="http://learn.sendgrid.com">
+                  <a className="nav-main__plain" onClick={this.closeMenu} href={LINKS.ACADEMY}>
                     Academy
                   </a>
                 </div>
 
                 <div className="nav-item nav-item--btn">
-                  <a className="btn nav-main__login" to="https://signup.sendgrid.com/">
+                  <a className="btn nav-main__login" href={LINKS.APP}>
                     Sign Up
                   </a>
                 </div>

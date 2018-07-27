@@ -14,12 +14,8 @@ navigation:
 
 You can also send email with [the UI]({{root_url}}/help-support/getting-started/how-to-send-email.html) and with [the API]({{root_url}}/API_Reference/api_v3.html).
 
-- [What is SMTP?](#-What-is-smtp)
-- [Sending a test SMTP email with Telnet](#-Sending-a-test-SMTP-email-with-Telnet)
 
-## 
-What is SMTP?
- 
+## What is SMTP?
 
 [SMTP]({{root_url}}/glossary/smtp.html), or _simple mail transfer protocol_, is a quick and easy way to send email from one server to another. SendGrid provides an SMTP service that allows you to deliver your email via our server instead of your client or server.
 
@@ -29,13 +25,10 @@ The X-SMTPAPI headers that you add are stripped from the final email because the
 
 For a deeper dive into what SMTP is, the benefits of sending an email with SMTP, and how SendGrid can help, see the [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/) on our blog.
 
-## 
-Sending a test SMTP email with Telnet
- 
+## Sending a test SMTP email with Telnet
 
- ### 
-Before you begin
- 
+
+### Before you begin
 
 - Create a SendGrid API key on the [API Keys page](https://app.sendgrid.com/Account_and_Settings/api_keys).
 - Open your command line, bash, shell, or Terminal functionality (depending on what OS you are using). You'll use this window to input the commands to initiate a telnet connection.
@@ -70,14 +63,12 @@ Telnet does not register backspaces correctly - so you have to type your command
     <br>The mail server returns `250 Ok: queued as …` - This means the email has been queued to send. This queue moves very quickly.
 1. Exit the Telnet connection with: `quit`.
 
-Now that you've sent a test email, learn to [integrate your servers with our SMTP API]({{root_url}}/for-developers/getting-started/integrating-with-the-smtp-api.html).
+Now that you've sent a test email, learn to [integrate your servers with our SMTP API]({{root_url}}/for-developers/getting-started/integrating-with-the-smtp-api/).
 
-## 
-Additional Resources
- 
+## Additional Resources
 
-- [Getting Started with the UI]({{root_url}}/help-support/getting-started/how-to-send-email.html)
+- [Getting Started with the UI]({{root_url}}/help-support/getting-started/how-to-send-email/)
 - [Getting Started with the API]({{root_url}}/API_Reference/api_v3.html)
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
-- [Integrating with the SMTP API]({{root_url}}/for-developers/getting-started/integrating-with-the-smtp-api.html)
-- [Building an SMTP Email]({{root_url}}/for-developers/getting-started/building-an-smtp-email.html)
+- [Integrating with the SMTP API]({{root_url}}/for-developers/getting-started/integrating-with-the-smtp-api/)
+- [Building an SMTP Email]({{root_url}}/for-developers/getting-started/building-an-smtp-email/)
