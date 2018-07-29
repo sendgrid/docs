@@ -3,6 +3,7 @@ module.exports = {
   siteTitle: 'SendGrid Documentation',
   siteTitleAlt: 'SendGrid Knowledge Center',
   siteLogo: 'https://sendgrid.com/brand/sg-logo-300.png',
+  ogImage: 'https://sendgrid.com/brand/sg-logo-dark-facebook.jpg',
   siteUrl: 'https://sendgrid.com',
   pathPrefix: '/docs',
   siteDescription: 'Learn how to get started using SendGrid. Integrate in minutes, test for free, and get access to documents to help solve your email deliverability problems.',
