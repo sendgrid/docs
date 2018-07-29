@@ -2,6 +2,7 @@
 layout: page
 weight: 81
 title: Design & Code Editor
+group: building-email
 navigation:
   show: true
 seo:
@@ -13,31 +14,6 @@ seo:
 <iframe src="https://player.vimeo.com/video/249110555" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 Marketing Campaigns is all about supporting your unique workflow, so you can get your work done more efficiently. You have complete control over the way that you create and edit each new campaign, thanks to two distinct editing experiences.
-
-* **[Choosing The Right Editor](#-Choosing-The-Right-Editor)**
-* **[The Code Editor](#-The-Code-Editor)**
-  * [Code Editor Features](#-Code-Editor-Features)
-  * [Getting Started with the Code Editor](#-Getting-Started-with-the-Code-Editor)
-  * [Uploading Images](#-Uploading-Images)
-  * [Using Substitution Tags](#-Using-Substitution-Tags)
-  * [Adding Categories](#-Adding-Categories)
-* **[The Design Editor](#-The-Design-Editor)**
-  * [Getting Started With the Design Editor](#-Getting-Started-With-the-Design-Editor)
-  * [Using Drag & Drop Modules](#-Using-Drag--Drop-Modules)
-  * [Drag & Drop Module Descriptions and Styles](#-Drag--Drop-Module-Descriptions-and-Styles)
-  * [Using Global Styles](#-Using-Global-Styles)
-  * [Editing Module HTML](#-Editing-Module-HTML)
-  * [Code Modules](#-Code-Modules)
-  * [Adding Images](#-Adding-Images)
-  * [Using Substitution Tags](#-Using-Substitution-Tags)
-  * [Previewing Your Campaign](#-Previewing-Your-Campaign)
-  * [Editing the HTML Head](#-Editing-the-HTML-Head)
-  * [Importing Custom HTML With Drag & Drop Markup](#-Importing-Custom-HTML-With-Drag--Drop-Markup)
-    * [Drag & Drop Markup](#-Drag--Drop-Markup)
-    * [Drag & Drop Code Examples](#-Drag--Drop-Code-Examples)
-  * [Exporting HTML From the Design Editor](#-Exporting-HTML-From-the-Design-Editor)
-  * [Creating Categories](#-Creating-Categories)
-
 
 ## Choosing The Right Editor
 

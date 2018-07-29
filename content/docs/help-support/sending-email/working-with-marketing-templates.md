@@ -2,6 +2,7 @@
 layout: page
 weight: 85
 title: Marketing Templates
+group: building
 navigation:
   show: true
 seo:
@@ -15,13 +16,6 @@ seo:
 Marketing Campaigns templates determine how the content of your campaign will be built and displayed to your recipients. Templates also serve as a quick starting point for future campaigns by saving you time from having to rebuild your campaign's layout. Consequently, templates allow you to reuse content and maintain brand consistency across all of your campaign efforts.
 
 We provide a collection of pre-built, responsive templates that you may begin using and customizing immediately, or you can create your own template from scratch.
-
-- [Creating a New Template](#-Creating-a-New-Template)
-- [Editing an Existing Template](#-Editing-an-Existing-Template)
-- [Duplicating a SendGrid Template](#-Duplicating-a-SendGrid-Template)
-- [Duplicating a Custom Template](#-Duplicating-a-Custom-Template)
-- [Creating a Template from a Campaign](#-Creating-a-Template-from-a-Campaign)
-- [Additional Resources](#-Additional-Resources)
 
  ### 	Creating a New Template
   	

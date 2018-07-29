@@ -2,6 +2,7 @@
 layout: page
 weight: 99
 title: How to Send Email
+group: getting-started
 navigation:
   show: true
 seo:

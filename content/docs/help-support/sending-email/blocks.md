@@ -2,6 +2,7 @@
 layout: page
 weight: 0
 title: Blocks
+group: delivery-optimization
 seo:
   title: Blocks
   description: When your email has been blocked by an ISP or your IP is on a blacklist.

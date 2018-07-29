@@ -3,7 +3,7 @@ const GROUPS = {
   'tracking-events': 'Tracking Events',
   'parsing-email': 'Parsing Email',
   'sending-email': 'Sending Email',
-  'email-templates': 'Email Templates & Content',
+  'building-email': 'Building Email',
   'delivery-optimization': 'Delivery & Optimization',
   'troubleshooting': 'Troubleshooting',
   'platform-partners': 'Platform Partners',

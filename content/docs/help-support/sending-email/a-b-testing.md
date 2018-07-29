@@ -2,6 +2,7 @@
 layout: page
 weight: 50
 title: A/B Testing Your Campaign
+group: tracking
 navigation:
   show: true
 seo:
@@ -13,24 +14,15 @@ Optimize the engagement of your Marketing Campaigns with A/B testing. A/B testin
 
 When recipients interact with the A/B test emails, you can compare the engagement metrics and choose the version to send to the remainder of your contacts, or allow SendGrid to automatically choose the winning version of your campaign according to the A/B test criteria you set.
 
-- [Set up an A/B test](#-Set-up-an-AB-test)
-- [Choose the Type of A/B Test To Run](#-Choose-the-Type-of-AB-Test-To-Run)
-- [Adding Your Email Versions](#-Adding-Your-Email-Versions)
-- [Select the A/B Test Campaign Sample Size](#-Select-the-AB-Test-Campaign-Sample-Size)
-- [Determine the Winning Criteria for the A/B Test](#-Determine-the-Winning-Criteria-for-the-AB-Test)
-- [Set the A/B Test Duration](#-Set-the-AB-Test-Duration)
-- [Pick and Send the Winning A/B Test Variation](#-Pick-and-Send-the-Winning-AB-Test-Variation)
-- [A/B Testing FAQ](#-AB-Testing-FAQ)
-
 <iframe src="https://player.vimeo.com/video/225916632" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ##  Set up an A/B test  	
  *To set up an A/B test on an existing campaign:*
 
 1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**.
-1. Locate the campaign you want to A/B test and click on the campaign to open it in the editor it was created in.
-1. Depending on the editor used to create the campaign, A/B testing is located on either the *Settings* tab or the *A/B Testing* tab.
-1. Once you have located the A/B Testing settings, toggle the *Activate A/B Testing* switch to **ON**.
+2. Locate the campaign you want to A/B test and click on the campaign to open it in the editor it was created in.
+3. Depending on the editor used to create the campaign, A/B testing is located on either the *Settings* tab or the *A/B Testing* tab.
+4. Once you have located the A/B Testing settings, toggle the *Activate A/B Testing* switch to **ON**.
 
 ##  Choose the Type of A/B Test To Run  	
 When you are A/B testing your email campaigns, you want to optimize for a specific metric. Determine whether you want to optimize your Open Rates, by testing the Subject Line; or your Click Rates, by testing the Email Content.

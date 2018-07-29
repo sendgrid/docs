@@ -2,6 +2,7 @@
 layout: page
 weight: 0
 title: Recipient Subscription Preferences
+group: tracking
 seo:
   title: Recipient Subscription Preferences
   description: When your users unsubscribe they will see a very specific page where they can manage their subscriptions with your emails.
