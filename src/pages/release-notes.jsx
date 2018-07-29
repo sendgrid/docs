@@ -16,6 +16,8 @@ class ReleaseNotes extends React.Component {
       id: 'overview',
     };
 
+    console.log(edges);
+
     const asideLinks = edges.map((edge) => {
       const link = {};
       link.tagName = 'h2';
@@ -69,7 +71,7 @@ export const pageQuery = graphql`
           htmlAst
           frontmatter {
             releaseType
-            date(formatString: "Do MMMM, YYYY")
+            date(formatString: "Do MMMM YYYY")
           }
         }
       }
