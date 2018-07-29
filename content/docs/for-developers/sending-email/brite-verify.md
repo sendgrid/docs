@@ -1,8 +1,4 @@
 ---
-st:
- published_at: 2016-06-02
- type: [integrate]
-
 seo:
  title: Using SendGrid with BriteVerify
  description: Verify your SendGrid email list with Briteverify
