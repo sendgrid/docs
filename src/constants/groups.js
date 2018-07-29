@@ -22,6 +22,7 @@ const GROUPS = {
   'security': 'Security',
   'billing': 'Billing',
   'marketing-campaigns': 'Marketing Campaigns',
+  'inbound-parse': 'Inbound Parse',
   'ungrouped': 'Ungrouped'
 };
 
