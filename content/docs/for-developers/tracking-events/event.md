@@ -310,6 +310,11 @@ Delivery events include processed, dropped, delivered, deferred, and bounce.
 Engagement events include open, click, spam report, unsubscribe, group unsubscribe, and group resubscribe.
 
 <table class="table">
+  <colgroup>
+  <col class="table-col-100">
+  <col class="table-col-200">
+  <col>
+  </colgroup>
    <tbody>
       <tr>
          <th>Event</th>
@@ -448,7 +453,7 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
 
 ## 	Event objects
 
-<table class="table">
+<table class="table auto">
   <tr>
     <th></th>
     <th><a href="#processed">Processed</a></th>
