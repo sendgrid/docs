@@ -12,10 +12,14 @@ class ForDevelopers extends Component {
   static renderFeaturedCards() {
     return FOR_DEVS_CARDS.map(card => (
       <div className="card card--home col-md-6 ta-center" key={card.TITLE}>
-        <img className="card-icon" src={card.ICON} alt={card.TITLE} />
-        <h3 className="card__title" >{card.TITLE}</h3>
-        {card.LINKS.map(link => <Link key={link.TEXTNODE} to={link.URL} className="card__link">{link.TEXTNODE}</Link>)}
-        <Link className="btn center" to={card.BUTTON_LINK}>View All</Link>
+        <div className="card__inner">
+          <img className="card-icon" src={card.ICON} alt={card.TITLE} />
+          <h3 className="card__title" >{card.TITLE}</h3>
+          {card.LINKS.map(link => <Link key={link.TEXTNODE} to={link.URL} className="card__link">{link.TEXTNODE}</Link>)}
+        </div>
+        <div className="card__button">
+          <Link className="btn center" to={card.BUTTON_LINK}>View All</Link>
+        </div>
       </div>
     ));
   }

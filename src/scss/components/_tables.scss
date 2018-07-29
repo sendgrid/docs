@@ -17,10 +17,15 @@
   // override app max-width that causes some issues w/ checkbox tables
   max-width: none;
   margin-bottom: 20px;
+  overflow: scroll;
 
   table {
     table-layout: fixed;
     width: 100%;
+  }
+
+  table.auto {
+    table-layout: auto;
   }
 
   // pull checkbox cells into grid gutters

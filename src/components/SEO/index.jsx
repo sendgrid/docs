@@ -15,7 +15,7 @@ class SEO extends Component {
 
   render() {
     const { postNode, postType } = this.props;
-    const image = config.siteLogo;
+    const image = config.ogImage;
     const sitePath = config.siteUrl + config.pathPrefix;
 
     // These will be set differently for a doc or page
