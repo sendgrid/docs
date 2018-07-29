@@ -4,6 +4,7 @@ seo:
   description: Learn how to receive a SendGrid email for a new Event Webhook post by using Zapier.
   keywords: integrate, tutorial, Event Webhook, SendGrid, Zapier
 title: Send Emails Through SendGrid For New Caught Webhook Data
+group: partners
 weight: 0
 layout: page
 navigation:

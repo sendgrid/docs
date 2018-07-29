@@ -3,10 +3,11 @@ st:
  published_at: 2016-07-25
  type: [integrate]
 seo:
- title: FAQ
+ title: Wordpress FAQ
  description: Learn how to send your WordPress email through SendGrid.
  keywords: WordPress, SendGrid, integrate, plugin, subscription widget
-title: FAQ
+title: Wordpress FAQ
+group: plugins
 weight: 100
 layout: page
 navigation:

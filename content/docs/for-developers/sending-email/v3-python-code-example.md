@@ -2,6 +2,7 @@
 layout: page
 weight: 0
 title: Python
+group: v3
 navigation:
   show: true
 ---

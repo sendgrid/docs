@@ -4,22 +4,13 @@ seo:
   description: Learn how to build email content, add recipients and schedule your send.
   keywords: SMTP, send email, integrate, building, filters, scheduling, substitution, suppression groups, unique arguments, recipients
 title: Building an SMTP Email
+group: smtp
 weight: 949
 layout: page
 navigation:
   show: true
 ---
 Now that you've sent a [sent a test SMTP email with Telnet]({{root_url}}/for-developers/getting-started/getting-started-smtp.html), and [integrated with SendGrid]({{root_url}}/for-developers/getting-started/integrating-with-the-smtp-api.html), it's time to build content.
-
-- [Getting started building](#-Getting-started-building)
-   - [Limitations](#-Limitations)
-- [Customizing Your Send](#-Customizing-your-send-filters)
-   - [Scheduling Your Send](#-Scheduling-Your-Send)
-   - [Substitution Tags](#-Substitution-Tags)
-   - [Section Tags](#-Section-Tags)
-   - [Suppression Groups](#-Suppression-Groups)
-   - [Categories](#-Categories)
-   - [Unique Arguments](#-Unique-Arguments)
 
 ## 	Getting started building
  	

@@ -2,6 +2,7 @@
 layout: page
 weight: 0
 title: MODX
+group: open-source
 navigation:
   show: true
 ---

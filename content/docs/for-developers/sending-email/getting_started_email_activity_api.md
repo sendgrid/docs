@@ -4,6 +4,7 @@ seo:
  description: Use the Email Activity Feed query language to get started with the Email Activity Feed API.
  keywords: email activity, query language, email stats, email events
 title: Getting Started with the Email Activity Feed API
+group: tracking
 weight: 0
 layout: page
 navigation:

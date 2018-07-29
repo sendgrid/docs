@@ -26,7 +26,14 @@ const GROUPS = {
   'getting-started':'Getting Started',
   'reference-troubleshooting':'Reference & Troubleshooting',
   'code-examples':'Code Examples',
-  'partners':'Partners',
+  'partners':'SendGrid Partners',
+  'plugins': 'SendGrid Plugins',
+  'smtp': 'SMTP API',
+  'v2': 'SendGrid v2 API',
+  'v3': 'SendGrid v3 API',
+  'mail-servers': 'Mail Servers',
+  'mail-clients': 'Mail Clients',
+  'open-source': 'Open Source Apps',
   'ungrouped': 'Ungrouped'
 };
 

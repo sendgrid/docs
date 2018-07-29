@@ -4,6 +4,7 @@ seo:
   description: Sending your first email using the SendGrid REST API.
   keywords: Getting Started, API, v3, REST, SendGrid REST API
 title: Getting Started with the SendGrid API
+group: v3
 weight: 100
 layout: page
 navigation:

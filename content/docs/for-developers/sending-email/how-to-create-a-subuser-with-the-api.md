@@ -4,6 +4,7 @@ seo:
   description: How to Create a Subuser with the API
   keywords: subuser, api, IP, account, new, create, /customer.
 title: How to Create a Subuser with the API
+group: v3
 weight: 0
 layout: page
 zendesk_id: 201750787

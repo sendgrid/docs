@@ -4,6 +4,7 @@ seo:
   description: Use Telnet to send your first SMTP email
   keywords: telnet, ports, connection, SMTP, send email, getting started
 title: How to Send an SMTP Email
+group: smtp
 weight: 960
 layout: page
 navigation:

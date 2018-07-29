@@ -4,6 +4,7 @@ seo:
   description: Learn how to use Zapier to send mail through SendGrid when new PostgreSQL rows are created.
   keywords: integrate, tutorial, PostgreSQL, SendGrid, Zapier
 title: Sending SendGrid Emails For New PostgreSQL Custom Query Row Matches
+group: partners
 weight: 0
 layout: page
 navigation:

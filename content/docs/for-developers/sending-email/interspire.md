@@ -4,6 +4,7 @@ seo:
   description: Interspire Integration
   keywords: marketing, interspire, integration
 title: Interspire Integration
+group: partners
 weight: 0
 layout: page
 zendesk_id: 200182048

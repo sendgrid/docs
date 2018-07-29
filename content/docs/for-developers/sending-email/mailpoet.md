@@ -4,6 +4,7 @@ seo:
   description: How to integrate with MailPoet
   keywords: deliverability, wordpress, mailpoet, poet
 title: How to integrate with MailPoet
+group: partner
 weight: 0
 layout: page
 zendesk_id: 204730027

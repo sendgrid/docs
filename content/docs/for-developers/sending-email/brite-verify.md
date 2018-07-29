@@ -8,6 +8,7 @@ seo:
  description: Verify your SendGrid email list with Briteverify
  keywords: SendGrid email list, SendGrid integrate, Briteverify, Tutorial
 title: Using SendGrid with BriteVerify
+group: plugins
 weight: 90
 layout: page
 navigation:

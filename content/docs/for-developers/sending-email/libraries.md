@@ -2,6 +2,7 @@
 layout: page
 weight: 0
 title: API Libraries
+group: open-source
 seo:
   title: API Libraries & Clients - SendGrid Documentation | SendGrid
   override: true

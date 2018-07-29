@@ -4,6 +4,7 @@ seo:
   description: SugarCRM Integration
   keywords: CRM, sugarCRM, integration, smtp
 title: SugarCRM Integration
+group: plugins
 weight: 0
 layout: page
 zendesk_id: 200182078

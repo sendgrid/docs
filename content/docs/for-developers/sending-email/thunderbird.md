@@ -2,6 +2,7 @@
 layout: page
 weight: 0
 title: Thunderbird
+group: mail-clients
 navigation:
   show: true
 ---

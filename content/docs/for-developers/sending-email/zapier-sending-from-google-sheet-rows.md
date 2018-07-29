@@ -4,6 +4,7 @@ seo:
   description: Learn how to use Zapier to automatically send mail when you update a Google Sheets document.
   keywords: integrate, tutorial, Google Sheets, SendGrid, Zapier
 title: Sending SendGrid Emails From New Google Sheets Rows
+group: partners
 weight: 0
 layout: page
 navigation:

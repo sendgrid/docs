@@ -4,6 +4,7 @@ seo:
   description: Can I stop a send in progress?
   keywords: pause, halt, delete, queue, stop, interrupt
 title: Can I stop a send in progress?
+group: api
 weight: 0
 layout: page
 zendesk_id: 204117516

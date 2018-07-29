@@ -4,6 +4,7 @@ seo:
   description: Learn how to use Zapier to send email through your SendGrid account to your Infusionsoft contacts.
   keywords: integrate, tutorial, Infusionsoft, contacts, SendGrid, Zapier
 title: Sending Emails From SendGrid to Tagged Infusionsoft Contacts
+group: partners
 weight: 0
 layout: page
 navigation:
