@@ -4,6 +4,7 @@ seo:
   description: View and compare your geographic location specific email statistics.
   keywords: Geographic statistics, SendGrid geographic statistics
 title: Geographic
+group: statistics
 weight: 0
 layout: page
 navigation:

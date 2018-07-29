@@ -4,6 +4,7 @@ seo:
   description: View and compare your subuser specific email statistics.
   keywords: compare subuser statistics, SendGrid compare subuser statistics, subuser statistic comparison
 title: Subuser Comparison
+group: statistics
 weight: 0
 layout: page
 navigation:

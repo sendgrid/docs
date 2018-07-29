@@ -13,6 +13,7 @@ const GROUPS = {
   'segmenting-your-list': 'Segmenting Your List',
   'stats-reporting': 'Statistics & Reporting',
   'statistics': 'Statistics',
+  'click-tracking': 'Click Tracking',
   'email-activity': 'Email Activity Feed',
   'settings': 'Account Settings',
   'account-management': 'Account Management',

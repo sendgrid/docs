@@ -4,6 +4,7 @@ seo:
   description: Click Tracking & HTML Best Practices
   keywords: a href, /wf/, cname, <a>, http, https, click, html, click_tracking
 title: Click Tracking & HTML Best Practices
+group: click-tracking
 weight: 0
 layout: page
 zendesk_id: 200181448

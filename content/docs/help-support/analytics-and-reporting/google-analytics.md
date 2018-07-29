@@ -1,9 +1,10 @@
 ---
 seo:
-  title: Google Analytics Demystified&#58; GA Statistics vs SG Statistics
+  title: Google Analytics and SendGrid Statistics
   description: Google Analytics Demystified&#58; GA Statistics vs SG Statistics
   keywords: statistics, page, tracking, URL, google, analytics, GA, stats, events, view, UTM
-title: Google Analytics Demystified&#58; GA Statistics vs SG Statistics
+title: Google Analytics and SendGrid Statistics
+group: statistics
 weight: 0
 layout: page
 zendesk_id: 200181468
