@@ -2,6 +2,7 @@
 layout: page
 weight: 70
 title: Segmenting your Contacts
+group: managing-contacts
 navigation:
   show: true
 seo:
@@ -10,8 +11,6 @@ seo:
   override: true
   description:
 ---
-- [Creating a Segment](#-Creating-a-Segment)
-- [Exporting a Segment](#-Exporting-a-Segment)
 
 <iframe src="https://player.vimeo.com/video/229916004" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
@@ -31,12 +30,12 @@ You can create up to 200 segments.
 *To create a segment:*
 
 1. Navigate to **Marketing** and then select **Contacts**.
-1. Click **Create Segment**.
-1. Choose **Segment all contacts** or **Segment an existing list**.
-1. Enter a *Segment Name*.
-1. To segment an existing list, select a list from the *Select List to Segment* drop-down.
-1. From the *Condition* drop-down, choose the desired condition or custom field.
-1. From the *Criteria* drop-down, choose from a list of available operators based on the chosen condition.
+2. Click **Create Segment**.
+3. Choose **Segment all contacts** or **Segment an existing list**.
+4. Enter a *Segment Name*.
+5. To segment an existing list, select a list from the *Select List to Segment* drop-down.
+6. From the *Condition* drop-down, choose the desired condition or custom field.
+7. From the *Criteria* drop-down, choose from a list of available operators based on the chosen condition.
 
 
 For example, to create a segment of recipients that have clicked on a link in a specific marketing campaign:
