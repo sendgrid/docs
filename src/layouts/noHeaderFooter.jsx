@@ -6,7 +6,7 @@ export default class NoHeaderFooter extends React.Component {
       children,
       location,
     } = this.props;
-    const pathClass = location.pathname.replace(/\//g, '');
+    const pathClass = location.pathname.replace(/\/docs\\|\//g, '');
     const classNames = `docSearch-content docs-wrap ${pathClass}`;
 
     return (

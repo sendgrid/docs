@@ -8,4 +8,10 @@
 
 .for-developers .nav-sub {
   margin-bottom: 0;
+
+  @media (max-width: $width-small) {
+    .input-text-wrap.is-search, .breadcrumb {
+      margin-bottom: 0;
+    }
+  }
 }
