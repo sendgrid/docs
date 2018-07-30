@@ -2,7 +2,7 @@
 layout: page
 weight: 0
 title: v2 Node.js
-group: v2
+group: api-v2
 navigation:
   show: true
 ---

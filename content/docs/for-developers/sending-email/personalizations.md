@@ -4,7 +4,7 @@ seo:
   description: Learn how to use personalizations to customize your messages sent over the Web API v3.
   keywords: personalizations, v3 mail send
 title: Personalizations
-group: v3
+group: api-v3
 weight: 0
 layout: page
 navigation:

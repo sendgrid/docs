@@ -2,7 +2,7 @@
 layout: page
 weight: 0
 title: PHP
-group: v2
+group: api-v2
 seo:
   override: true
   title: Send Email with PHP and SendGrid - SendGrid Documentation | SendGrid

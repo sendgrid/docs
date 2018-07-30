@@ -2,7 +2,7 @@
 layout: page
 weight: 0
 title: Go
-group: v3
+group: api-v3
 navigation:
   show: true
 ---
