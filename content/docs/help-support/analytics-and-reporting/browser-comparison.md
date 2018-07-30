@@ -4,7 +4,6 @@ seo:
   description: Compare your Browser specific email statistics.
   keywords: Browser comparison statistics, Compare SendGrid Browser statistics
 title: Browser Comparison
-group: statistics
 weight: 0
 group: statistics
 layout: page
