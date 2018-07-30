@@ -20,7 +20,7 @@ If you don't want email messages to be retried in case of an error in delivery, 
 To avoid returning an error your link must return a 2xx HTTP code when the email is received. This response lets our system know that your link has received the email. It is then removed from our send queue. If we do **not** get a valid 2xx HTTP response, our servers will believe they have failed to deliver your message and will continue trying to send it. Messages that cannot be delivered after 3 days will be dropped.
 
 ## 	Setup
- 	
+
 The following steps are required to begin parsing email:
 
 -   Point the MX Record of a Domain/Hostname or Subdomain to **mx.sendgrid.net**
@@ -40,7 +40,7 @@ Only whitelabeled domains may be used when configuring Inbound Parse!
 
 </call-out>
 
-See [Setting Up The Inbound Parse Webhook]({{root_url}}/for-developers/parsing-email/setting-up-the-inbound-parse-webhook.html) for step-by-step instructions.
+See [Setting Up The Inbound Parse Webhook]({{root_url}}/for-developers/parsing-email/setting-up-the-inbound-parse-webhook/) for step-by-step instructions.
 
 <call-out>
 
@@ -49,7 +49,7 @@ The total message size limit, including the message itself and any number of att
 </call-out>
 
 ## 	Character Sets and Header Decoding
- 	
+
 If you receive email which is not in ASCII only format, you will want to read this section.
 
 Messages and their headers can have character set data associated with them. In order to simplify the parsing of messages for the end user, SendGrid will decode the to, from, cc, and subject headers if needed. All headers will be converted to UTF-8 for uniformity, since technically a header can be in many different character sets.

@@ -14,7 +14,7 @@ Once you have an AWS account, you can to [subscribe to SendGrid](https://aws.ama
 
 *To quickly get started with SendGrid:*
 
-- See [Getting Started With Marketing Campaigns]({{root_url}}/help-support/getting-started/how-to-send-email.html) for all of the tools you need to get started sending with the SendGrid application.
+- See [Getting Started With Marketing Campaigns]({{root_url}}/help-support/sending-email/how-to-send-email/) for all of the tools you need to get started sending with the SendGrid application.
 - Look at the [API Reference]({{root_url}}/api-reference/) for all of the API endpoints as well as information about using SMTP and the Webhooks.
 - See the [API Libraries]({{root_url}}/for-developers/sending-email/libraries/) page for information about using the SendGrid code libraries in C#, Go, Java, Node.js, PHP, Python, and Ruby.
 
@@ -43,18 +43,18 @@ You can only add a Dedicated IP Address if you are on an AWS Pro plan. To upgrad
    ![]({{root_url}}/images/dedicated_ip_button.png "Dedicated IP button")
    This takes you to the Dedicated IP Addresses page
 3. Next, click **Add an IP Address**.
-4. Select the number of IP Addresses to add, and select whether you want to warm up your IP automatically. Warming up an IP gradually increases the amount of email sent over this IP over time to improve your email deliverability. For more information, see [Warming Up IPs]({{root_url}}/help-support/getting-started/warming-up-an-ip-address.html).
+4. Select the number of IP Addresses to add, and select whether you want to warm up your IP automatically. Warming up an IP gradually increases the amount of email sent over this IP over time to improve your email deliverability. For more information, see [Warming Up IPs]({{root_url}}/help-support/sending-email/warming-up-an-ip-address/).
 5. Click **Add**.
 
 ### Adding domain authentication and link branding
 
-Sender authentication shows email providers that SendGrid has your permission to send emails on your behalf. Domain authentication works by pointing DNS entries from your domain registrar to SendGrid, which drastically increases your ability to deliver email and allows you to begin building a sender reputation for your domain and for your IP addresses. For more information domain authentication, see [How to Set Up Domain Authentication]({{root_url}}/help-support/getting-started/how-to-set-up-domain-authentication.html).
+Sender authentication shows email providers that SendGrid has your permission to send emails on your behalf. Domain authentication works by pointing DNS entries from your domain registrar to SendGrid, which drastically increases your ability to deliver email and allows you to begin building a sender reputation for your domain and for your IP addresses. For more information domain authentication, see [How to Set Up Domain Authentication]({{root_url}}/help-support/sending-email/how-to-set-up-domain-authentication/).
 
 ### Adding Subusers
 
-You can only add Subusers if you are on an AWS Pro plan. To upgrade your plan, see [Upgrading or Downgrading Your Account](#-Upgrading-or-Downgrading-Your-Account). Subusers are SendGrid accounts that belong to a parent account. They have their permissions and credit limits, which you assign as you create the subusers. Subusers help you segment your email sending and API activity.
+You can only add Subusers if you are on an AWS Pro plan. To upgrade your plan, see [Upgrading or Downgrading Your Account](#upgrading-or-downgrading-your-account). Subusers are SendGrid accounts that belong to a parent account. They have their permissions and credit limits, which you assign as you create the subusers. Subusers help you segment your email sending and API activity.
 
-To get started with using Subusers, see the [Subusers overview]({{root_url}}/help-support/account-and-settings/subusers.html).
+To get started with using Subusers, see the [Subusers overview]({{root_url}}/help-support/account-and-settings/subusers/).
 
 ### Upgrading or Downgrading Your Account
 
