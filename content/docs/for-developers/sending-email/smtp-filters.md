@@ -29,8 +29,8 @@ Some Settings are not listed here, because they cannot be defined on a per-messa
 
 </call-out>
 
-<h3>Filter:</h3> <code>bcc</code>
- 	
+## Filter: bcc
+
 <p>Sends a BCC copy of the email created in this transaction to the address specified.</p>
 
 <table class="table table-striped table-bordered">
@@ -68,8 +68,8 @@ Some Settings are not listed here, because they cannot be defined on a per-messa
 
 <hr/>
 
-<h3>Filter:</h3> <code>bypass_list_management</code>
- 	
+## Filter: bypass_list_management
+
 <call-out type="warning">
 
 This setting is very powerful, and can only be used on a per-message basis. Use with extreme caution.
@@ -107,8 +107,8 @@ This setting is very powerful, and can only be used on a per-message basis. Use 
 
 <hr />
 
-<h3>Filter:</h3> <code>clicktrack</code>
- 	
+## Filter: clicktrack
+
 <p>Rewrites links in email text and html bodies to go through our webservers, allowing for tracking when a link is clicked on.</p>
 
 <table class="table table-striped table-bordered">
@@ -126,7 +126,7 @@ This setting is very powerful, and can only be used on a per-message basis. Use 
 </tbody>
 </table>
 
-<h4>Example X-SMTPAPI Header Value</h4>
+### Example X-SMTPAPI Header Value
 ```json
 {
   "filters" : {
@@ -141,8 +141,8 @@ This setting is very powerful, and can only be used on a per-message basis. Use 
 
 <hr/>
 
-<h3>Filter:</h3> <code>dkim</code>
- 	
+## Filter: dkim
+
 <p>Allows you to specify the domain to use to sign messages with DKIM
 certification. This domain should match the domain in the From address
 of your email.</p>
@@ -167,7 +167,7 @@ of your email.</p>
 </tbody>
 </table>
 
-<h4>Example X-SMTPAPI Header Value</h4>
+### Example X-SMTPAPI Header Value
 ```json
 {
   "filters" : {
@@ -184,8 +184,8 @@ of your email.</p>
 
 <hr/>
 
-<h3>Filter:</h3> <code>footer</code>
- 	
+## Filter: footer
+
 <p>Inserts a footer at the bottom of the text and HTML bodies.</p>
 
 <table class="table table-striped table-bordered">
@@ -213,7 +213,7 @@ of your email.</p>
 </tbody>
 </table>
 
-<h4>Example X-SMTPAPI Header Value</h4>
+### Example X-SMTPAPI Header Value
 ```json
 {
   "filters" : {
@@ -230,8 +230,8 @@ of your email.</p>
 
 <hr/>
 
-<h3>Filter:</h3> <code>ganalytics</code>
- 	
+## Filter: ganalytics
+
 <p>Re-writes links to integrate with Google Analytics.</p>
 
 <table class="table table-striped table-bordered">
@@ -293,8 +293,8 @@ of your email.</p>
 
 <hr/>
 
-<h3>Filter:</h3> <code>opentrack</code>
- 	
+Filter:</h3> <code>opentrack</code>
+
 <p>If you don't use 'replace' this will insert an <code>&lt;img&gt;</code> tag at the bottom of the html section of an email which will be used to track if an email is opened. If you choose to use 'replace', you can put the tracking pixel wherever you would like in the email and SendGrid will replace it at send time.</p>
 
 <table class="table table-striped table-bordered">
@@ -317,7 +317,7 @@ of your email.</p>
 </tbody>
 </table>
 
-<h4>Example X-SMTPAPI Header Value</h4>
+### Example X-SMTPAPI Header Value
 ```json
 {
   "filters" : {
@@ -333,8 +333,8 @@ of your email.</p>
 
 <hr/>
 
-<h3>Filter:</h3> <code>spamcheck</code>
- 	
+## Filter: spamcheck
+
 <p>Tests message with <a href="http://spamassassin.apache.org/">SpamAssassin</a> to determine if it is spam, and drop it if it is.</p>
 
 <table class="table table-striped table-bordered">
@@ -362,7 +362,7 @@ of your email.</p>
 </tbody>
 </table>
 
-<h4>Example X-SMTPAPI Header Value</h4>
+### Example X-SMTPAPI Header Value
 ```json
 {
   "filters" : {
@@ -379,7 +379,7 @@ of your email.</p>
 
 <hr/>
 
-<h3>Filter:</h3> <code>subscriptiontrack</code>
+## Filter: subscriptiontrack
  	<p>Inserts a subscription management link at the bottom of the text and html bodies or insert the link anywhere in the email.</p>
 
 <p>If you wish to append an unsubscription link, use the <code>text/html</code> and <code>text/plain</code> parameters. However, if you wish to have the link replace a tag (such as <code>[unsubscribe]</code>), use the <code>replace</code> parameter.</p>
@@ -416,11 +416,11 @@ of your email.</p>
 
 <call-out type="warning">
 
-The <code>landing</code> argument cannot be used in SMTPAPI. It can only be setup via the UI or WebAPI, as an account-level setting.
+The `landing` argument cannot be used in SMTPAPI. It can only be setup via the UI or WebAPI, as an account-level setting.
 
 </call-out>
 
-<h4>Example X-SMTPAPI Header Value</h4>
+### Example X-SMTPAPI Header Value
 ```json
 {
     "filters": {
@@ -437,8 +437,8 @@ The <code>landing</code> argument cannot be used in SMTPAPI. It can only be setu
 
 <hr/>
 
-<h3>Filter:</h3> <code>templates</code>
- 	
+## Filter: templates
+
 <call-out>
 
 This setting refers to SendGrid's <a href="{{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/index.html">transactional templates</a>. SendGrid supports versioning, and the ability to create multiple transactional templates. Previously, we had a Template App, which is now referred to as the <a href="#template">Legacy Template App</a>.
@@ -468,7 +468,7 @@ This setting refers to SendGrid's <a href="{{root_url}}/API_Reference/Web_API_v3
 </tbody>
 </table>
 
-<h4>Example X-SMTPAPI Header Value</h4>
+### Example X-SMTPAPI Header Value
 ```json
 {
   "filters": {
@@ -484,8 +484,8 @@ This setting refers to SendGrid's <a href="{{root_url}}/API_Reference/Web_API_v3
 
 <hr/>
 
-<h3>Filter:</h3> <code>template</code>
- 	
+## Filter: template
+
 <call-out type="warning">
 
 This setting refers to our original Email Template app. We now support more fully featured <a href="#templates">transactional templates</a>. You may create multiple transactional templates that allow for versioning, in addition to several other features.
@@ -515,7 +515,7 @@ This setting refers to our original Email Template app. We now support more full
 </tbody>
 </table>
 
-<h4>Example X-SMTPAPI Header Value</h4>
+### Example X-SMTPAPI Header Value
 ```json
 {
   "filters" : {
@@ -528,5 +528,3 @@ This setting refers to our original Email Template app. We now support more full
   }
 }
 ```
-
-<hr/>

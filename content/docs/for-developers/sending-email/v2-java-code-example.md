@@ -8,7 +8,9 @@ navigation:
 ---
 <call-out>
 
-We recommend using SendGrid Java, our client library, <a href="https://github.com/sendgrid/sendgrid-java">available on Github</a>, with full documentation. </call-out>
+We recommend using SendGrid Java, our client library, <a href="https://github.com/sendgrid/sendgrid-java">available on Github</a>, with full documentation.
+
+</call-out>
 
 <call-out>
 
@@ -16,7 +18,8 @@ The library does not officially support the V2 API, but you can use V2 with an o
 
 </call-out>
 
-##  Using SendGrid's Java Library  	```java
+##  Using SendGrid's Java Library
+```java
 // using SendGrid's Java Library
 // https://github.com/sendgrid/sendgrid-java
 import com.sendgrid.*;
