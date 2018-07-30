@@ -35,6 +35,8 @@ class DocTemplate extends React.Component {
     const postNode = this.props.data.doc;
     const asideLinks = this.getLinks();
 
+    console.log(this);
+
     return (
       <div className="container-lg doc-wrap">
         <SEO postNode={postNode} postType="doc" />
