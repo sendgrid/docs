@@ -62,8 +62,8 @@ class NavMain extends Component {
               <div className="nav-secondary__account">
                 <div className="nav-secondary__name">{user.first_name} {user.last_name} <span className="carret">▾</span></div>
                 <div className="nav-secondary__account-links">
-                  <a href={LINKS.APP}>Dashboard</a>
-                  <a href={LINKS.LOGOUT}>Sign Out</a>
+                  <a className="nav-secondary__dashboard" href={LINKS.APP}>Dashboard</a>
+                  <a className="nav-secondary__sign-out" href={LINKS.LOGOUT}>Sign Out</a>
                 </div>
               </div>
             ) : (
