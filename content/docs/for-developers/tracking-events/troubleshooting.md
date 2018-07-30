@@ -4,15 +4,12 @@ seo:
   description: Tips and tricks to troubleshoot your SendGrid Event Webhook, including common issues.
   keywords: event webhook, troubleshooting, events, duplication, load handling, duplicate events
 title: Troubleshooting
+group: reference-troubleshooting
 weight: 80
 layout: page
 navigation:
   show: true
 ---
-- [General troubleshooting]()
-- [Common issues]()
-    - [Duplicate events]()
-    - [Load handling]()
 
 ## 	General troubleshooting
  	

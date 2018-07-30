@@ -4,6 +4,7 @@ seo:
   description:
   keywords: migration, v2 mail send, v3 mail send, upgrade
 title: How To Migrate From v2 to v3 Mail Send
+group: v2
 weight: 0
 layout: page
 navigation:

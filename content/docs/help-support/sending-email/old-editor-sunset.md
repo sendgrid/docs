@@ -2,8 +2,9 @@
 layout: page
 weight: 11
 title: Old Editor Sunset
+group: building-email
 navigation:
-  show: true
+  show: false
 seo:
   title: Marketing Campaigns - Old Editor Sunset
   override: true

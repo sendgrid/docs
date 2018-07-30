@@ -7,6 +7,7 @@ seo:
  description: Two-Factor Authentication gives you an extra layer of security to protect your SendGrid account.
  keywords: 2FA, two-factor authentication, authentication, security, authy
 title: Two-Factor Authentication
+group: account-management
 weight: 0
 layout: page
 navigation:

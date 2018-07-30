@@ -2,6 +2,7 @@
 layout: page
 weight: 0
 title: Go
+group: v2
 navigation:
   show: true
 ---

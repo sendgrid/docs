@@ -4,6 +4,7 @@ seo:
   description: Learn how to use Zapier to send email when new Firebase Child Records Are Added.
   keywords: integrate, tutorial, Firebase, Child Records, SendGrid, Zapier
 title: Sending SendGrid Email When New Firebase Child Records Are Added
+group: partners
 weight: 0
 layout: page
 navigation:

@@ -2,6 +2,7 @@
 layout: page
 weight: 0
 title: Legacy Email Activity
+group: email-activity
 seo:
   title: SendGrid Legacy Email Activity
   description: Email activity allows you to see and search the email events on your account.

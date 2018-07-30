@@ -2,6 +2,7 @@
 layout: page
 weight: 0
 title: Invalid Emails
+group: delivery-optimization
 seo:
   title: Invalid Emails
   description: When an email is malformed or a mailbox provider says the email is invalid, SendGrid will keep these reports for you.

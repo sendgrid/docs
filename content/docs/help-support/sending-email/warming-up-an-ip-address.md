@@ -4,6 +4,7 @@ seo:
   description: Learn how to warm up your new dedicated IP address and why it's important.
   keywords: warm, up, warmup, auto, automatic, manual API, v3, ip, pool, warmup, pools
 title: Warming Up an IP Address
+group: delivery-optimization
 weight: 0
 layout: page
 navigation:
@@ -13,14 +14,6 @@ navigation:
 
 
 When you add a new dedicated IP address to your account, you need to warm it up. You also need to warm up your IP if you haven't sent on it in more than 30 days. [Warming up your IP]({{root_url}}/glossary/ip-warmup.html) allows you to gradually send more emails over your new IP to establish a good [sender reputation]({{root_url}}/glossary/reputation-monitoring.html).
-
-- [What is warming up an IP?](#-What-is-warming-up-an-IP)
-- [Warmup types](#-Warmup-types)
-   - [Manually warm up your IP](#-Manually-warm-up-your-IP)
-   - [Automated IP warmup](#-Automated-IP-warmup)
-   - [Automated IP warmup API](#-Automated-IP-warmup-API)
-   - [Automated IP warmup hourly send schedule](#-Automated-IP-warmup-hourly-send-schedule)
-   - [Why don't other ESPs require IP warmup?](#-Why-dont-other-ESPs-require-IP-warmup)
 
 ## 	What is warming up an IP?
  	
@@ -49,9 +42,9 @@ To manually warm up your IP, you need to gradually send more and more email over
 *To set up automated IP warmup in the UI:*
 
 1. Go to [Settings > IP Addresses](https://app.sendgrid.com/settings/ip_addresses).
-1. Click the action menu for the IP you want to warm up. This brings up the **Edit Your Dedicated IP Address** screen.
-1. Select **Use Automated IP warmup**.
-1. Save the **Edit Your Dedicated IP Address** screen.
+2. Click the action menu for the IP you want to warm up. This brings up the **Edit Your Dedicated IP Address** screen.
+3. Select **Use Automated IP warmup**.
+4. Save the **Edit Your Dedicated IP Address** screen.
 
  ### 	Automated IP warmup API
  	

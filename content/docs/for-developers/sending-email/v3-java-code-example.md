@@ -2,6 +2,7 @@
 layout: page
 weight: 0
 title: Java
+group: v3
 navigation:
   show: true
 ---

@@ -4,6 +4,7 @@ seo:
   description: SSL vs. TLS
   keywords:
 title: SSL vs. TLS
+group: delivery-optimization
 weight: 0
 layout: page
 zendesk_id: 204577087

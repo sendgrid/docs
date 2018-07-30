@@ -7,6 +7,7 @@ seo:
   description: Email to SMS
   keywords: sms, short, service, carrier, media, gateway, 5724, provider, vtext, message, text, att, tmobile, verizon
 title: Email to SMS
+group: delivery-optimization
 weight: 0
 layout: page
 zendesk_id: 202603863

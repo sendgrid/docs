@@ -2,6 +2,7 @@
 layout: page
 weight: 0
 title: Outlook 2013
+group: mail-clients
 navigation:
   show: true
 ---

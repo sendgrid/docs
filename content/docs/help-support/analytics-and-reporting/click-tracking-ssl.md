@@ -2,6 +2,7 @@
 seo:
   title: Setting up SSL for click tracking
 title: Setting up SSL for click tracking
+group: click-tracking
 layout: page
 weight: 0
 navigation:

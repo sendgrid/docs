@@ -2,6 +2,7 @@
 layout: page
 weight: 0
 title: Apple Mail
+group: plugins
 navigation:
   show: true
 ---

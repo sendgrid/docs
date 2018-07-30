@@ -2,6 +2,7 @@
 layout: page
 weight: 10
 title: Go
+group: code-examples
 navigation:
   show: true
 ---

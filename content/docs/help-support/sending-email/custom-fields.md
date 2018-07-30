@@ -2,6 +2,7 @@
 layout: page
 weight: 55
 title: Using Custom Fields
+group: building-email
 navigation:
   show: true
 seo:

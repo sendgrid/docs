@@ -4,6 +4,7 @@ seo:
   description: Can I send adult content in my emails?
   keywords: content, adult, porn, dating, nudity, sex, sexual
 title: Can I send adult content in my emails?
+group: delivery-optimization
 weight: 0
 layout: page
 zendesk_id: 204119236

@@ -4,6 +4,7 @@ seo:
   description: Set your systems up to use SendGrid SMTP API
   keywords: ports, connection, SMTP, send email, integrate, rate limits, setting up
 title: Integrating with the SMTP API
+group: smtp
 weight: 950
 layout: page
 navigation:

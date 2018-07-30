@@ -2,6 +2,7 @@
 layout: page
 weight: 100
 title: How to send an email with Dynamic Transactional Templates
+group: sending-email
 navigation:
   show: false
 seo:
@@ -9,10 +10,6 @@ seo:
   override: true
   description:
 ---
-
-- [Before you begin](#-Before-you-begin)
-- [Design a dynamic transactional template](#-Design-a-dynamic-template)
-- [Send a transactional email](#-Send-a-transactional-email)
 
 ## 	Before you begin
  	
@@ -25,10 +22,10 @@ Before you create and send an email using a dynamic transactional template you n
 ## 	Design a dynamic transactional template
  	
 1. Open the [transactional templates](https://sendgrid.com/dynamic_templates) page and click **Create Template**.
-1. Add a unique template name and then click **Save**.
-1. To begin editing your new template, click **Add Version**.
-1. Select an editor and click **Continue**.
-1. Design your template. For more information on using Handlebars, see [Using handlebars]({{root_url}}/help-support/sending-email/using-handlebars.html).
+2. Add a unique template name and then click **Save**.
+3. To begin editing your new template, click **Add Version**.
+4. Select an editor and click **Continue**.
+5. Design your template. For more information on using Handlebars, see [Using handlebars]({{root_url}}/help-support/sending-email/using-handlebars.html).
 
 For sample templates that that include examples of receipts, password resets, account activations, newsletters, and sale notifications, check out the [dynamic-template section of our email templates github repo](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates).
 

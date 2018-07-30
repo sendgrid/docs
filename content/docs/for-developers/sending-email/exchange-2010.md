@@ -2,6 +2,7 @@
 layout: page
 weight: 0
 title: Exchange 2010
+group: mail-servers
 navigation:
   show: true
 ---

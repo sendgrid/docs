@@ -4,6 +4,7 @@ seo:
   description: Compare your email category statistics. SendGrid's simplified, real-time analytics allows you to compare up to 10 email categories to measure results.
   keywords: compare category statistics, SendGrid compare category statistics, category statistic comparison
 title: Category Comparison
+group: statistics
 weight: 0
 layout: page
 navigation:

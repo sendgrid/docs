@@ -2,6 +2,7 @@
 layout: page
 weight: 0
 title: How to set up domain authentication
+group: delivery-optimization
 navigation:
   show: true
 seo:
@@ -11,22 +12,6 @@ seo:
 ---
 
 <iframe src="https://player.vimeo.com/video/265066856" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-- [What is domain authentication?](#-What-is-domain-authentication)
-- [Key terminology](#-Key terminology)
-    - [DNS](#-DNS)
-    - [DKIM](#-DKIM)
-    - [SPF](#-SPF)
-    - [CNAME](#-CNAME)
-- [Setting up domain authentication](#-Setting-up-domain-authentication)
-    - [Before you begin](#-Before-you-begin)
-    - [Setting up DNS](#-Setting-up-DNS)
-- [Advanced settings](#-Advanced-settings)
-    - [Using automated security](#-Using-automated-security)
-    - [Using a custom return path](#-Using-a-custom-return-path)
-    - [Using a custom DKIM selector](#-Using-a-custom-DKIM-selector)
-    - [Assigning a subuser](#-Assigning-a-subuser)
-- [Migrating from legacy Whitelabel](#-Migrating-from-legacy-Whitelabel)
 
 ## 	What is domain authentication?
  	
@@ -65,10 +50,10 @@ To set up domain authentication, you must submit the DNS records provided by Sen
 *To set up domain authentication:*
 
 1. In the SendGrid UI, select [Settings > Sender Authentication](https://app.sendgrid.com/settings/sender_auth).
-1. In the domain authentication section, click **Get Started**.
-1. Next, add in information about your DNS host, and indicate whether you also want to set up link branding. Click **Next**. For more information about link branding, check out [What is link branding?]({{root_url}}/help-support/getting-started/how-to-set-up-link-branding.html#-What-is-link-branding).
-1. Fill in the domain that you want to send from and add advanced settings as needed. Make sure that you only enter the name of your root domain. Do not include `www` or `http://www` in this field! Your domain needs to match the domain of your FROM address on the emails you are sending out. For example, if I am sending an email from `example@sendgrid.com`, I would set my domain authentication domain to be `sendgrid.com`. Click **Next**. For more information about advanced settings, see [Advanced settings](#-Advanced-settings).
-1. Next, you need to add all of the CNAME records on this screen to your DNS host. This process varies depending on your DNS host. For videos on how to add your CNAME to some popular DNS service providers, check out these [videos]({{root_url}}/help-support/getting-started/dns-providers.html). If you don't have access to modify your companies DNS records, you can also email a request to a co-worker. This email includes a direct link to the CNAME records. This link does expire. The recipient doesn't need login access to your SendGrid account.
+2. In the domain authentication section, click **Get Started**.
+3. Next, add in information about your DNS host, and indicate whether you also want to set up link branding. Click **Next**. For more information about link branding, check out [What is link branding?]({{root_url}}/help-support/getting-started/how-to-set-up-link-branding.html#-What-is-link-branding).
+4. Fill in the domain that you want to send from and add advanced settings as needed. Make sure that you only enter the name of your root domain. Do not include `www` or `http://www` in this field! Your domain needs to match the domain of your FROM address on the emails you are sending out. For example, if I am sending an email from `example@sendgrid.com`, I would set my domain authentication domain to be `sendgrid.com`. Click **Next**. For more information about advanced settings, see [Advanced settings](#-Advanced-settings).
+5. Next, you need to add all of the CNAME records on this screen to your DNS host. This process varies depending on your DNS host. For videos on how to add your CNAME to some popular DNS service providers, check out these [videos]({{root_url}}/help-support/getting-started/dns-providers.html). If you don't have access to modify your companies DNS records, you can also email a request to a co-worker. This email includes a direct link to the CNAME records. This link does expire. The recipient doesn't need login access to your SendGrid account.
 
 <call-out>
 
