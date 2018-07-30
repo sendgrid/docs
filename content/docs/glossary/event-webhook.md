@@ -16,8 +16,8 @@ Some of the traditional APIs that SendGrid provides include:
 
 * [SMTP API]({{root_url}}/API_Reference/SMTP_API/index.html) – Provides custom handling instructions for email headers within messages.
 * [Web API]({{root_url}}/API_Reference/Web_API/index.html) – Allows users to retrieve account information like bounces, unsubscribes, or spam reports.
-* [Marketing Email API]({{site.site_url}}/email-marketing) – Offers developers the ability to manage the lists, identities, and delivery events for marketing emails.
-* [Template Engine API]({{site.site_url}}/transactional-email) – Provides a way for marketers and developers to create, iterate, and deploy transactional email templates.
+* [Marketing Email API](https://sendgrid.com/email-marketing) – Offers developers the ability to manage the lists, identities, and delivery events for marketing emails.
+* [Template Engine API](https://sendgrid.com/transactional-email) – Provides a way for marketers and developers to create, iterate, and deploy transactional email templates.
 
 While webhooks are traditionally more complex to set up, the speed and efficiency of webhooks has increased their popularity in the developer community. There are three main types of webhooks:
 
@@ -35,4 +35,4 @@ To help users take full advantage of the Event Webhook, SendGrid has also create
 
 In addition to the Event Webhook, SendGrid has also created the Parse Webhook to improve engagement with recipients. The [SendGrid Parse Webhook]({{root_url}}/API_Reference/Webhooks/parse.html) allows users to parse the contents and attachments of messages. Using Parse Webhook, SendGrid users can post blog articles or receive uploads directly from email replies.
 
-SendGrid provides a full service solution for solving your total [email delivery needs]({{site.site_url}}). We’re the world’s largest email infrastructure as a service provider working hand in hand with developers to ensure that we’re providing tools and services that solve real world problems. The webhook will then POST the parsed portions of the email to a URL specified by the user.
+SendGrid provides a full service solution for solving your total [email delivery needs](https://sendgrid.com). We’re the world’s largest email infrastructure as a service provider working hand in hand with developers to ensure that we’re providing tools and services that solve real world problems. The webhook will then POST the parsed portions of the email to a URL specified by the user.

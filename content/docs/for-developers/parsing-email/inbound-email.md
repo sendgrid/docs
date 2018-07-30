@@ -24,7 +24,7 @@ To avoid returning an error your link must return a 2xx HTTP code when the email
 The following steps are required to begin parsing email:
 
 -   Point the MX Record of a Domain/Hostname or Subdomain to **mx.sendgrid.net**
--   Associate the Domain/Hostname and the URL in the [Parse API settings page]({{site.site_url}}/developer/reply).
+-   Associate the Domain/Hostname and the URL in the [Parse API settings page](https://sendgrid.com/developer/reply/).
 
 <call-out type="warning">
 
