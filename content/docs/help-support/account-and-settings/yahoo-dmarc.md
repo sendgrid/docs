@@ -6,7 +6,6 @@ seo:
 title: Yahoo DMARC Changes "Message not accepted for policy reasons"
 group: sender-authentication
 weight: 0
-group: account-management
 layout: page
 zendesk_id: 201876356
 navigation:
