@@ -19,18 +19,6 @@ If you are looking for the new Email Activity documentation, please go [here]({{
 
 <iframe src="https://player.vimeo.com/video/130900679" width="500" height="312" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-- [Filtering the Activity Feed](#-Filtering-the-Activity-Feed)
-- [Searching the Activity Feed](#-Searching-the-Activity-Feed)
-- [Subuser email activity](#-Subuser-email-activity)
-- [Email events](#-Email-events)
-- [Troubleshooting](#-Troubleshooting)
-    - [Checking to see if a specific email was delivered](#-Checking-to-see-if-a-specific-email-was-delivered)
-    - [Deferrals](#-Deferrals)
-    - [Drops](#-Drops)
-    - [Bounces](#-Bounces)
-    - [Removing an email from a suppression list](#-Removing-an-email-from-a-suppression-list)
-    - [Setting up bounce forwarding](#-Setting-up-bounce-forwarding)
-
 The Email Activity feed allows you to view a snapshot of email-related activity associated with your account. These logs display all of your email events - filter by event type or search by email address.
 
 <call-out>
@@ -57,7 +45,7 @@ Email activity shows the most recent 500 events. To access data in real time, im
 
 ## 	Subuser email activity
  	
-To see a subuser’s email activity, log in as that subuser or [impersonate]({{root_url}}/help-support/account-and-settings/subusers.html) the subuser account.
+To see a subuser’s email activity, log in as that subuser or [impersonate]({{root_url}}/help-support/account-and-settings/subusers/) the subuser account.
 
 You cannot see a parent accounts email activity from a subuser account.
 

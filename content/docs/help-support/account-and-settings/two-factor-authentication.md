@@ -1,7 +1,4 @@
 ---
-st:
- published_at: 2016-06-16
- type: "User_Guide"
 seo:
  title: Two-Factor Authentication
  description: Two-Factor Authentication gives you an extra layer of security to protect your SendGrid account.
@@ -19,11 +16,6 @@ navigation:
 Two-factor authentication, commonly referred to as multi-factor authentication, allows you to make your SendGrid account more secure by requiring authentication beyond a simple username and password when logging in.
 
 SendGrid’s Two-Factor Authentication can be configured to accept a code sent to your mobile phone either via the [Authy App](https://www.authy.com/app/mobile/), or an SMS message.
-
-* [Setting Up Two-Factor Authentication](#-Setting-Up-Two-Factor-Authentication)
-* [Using Two-Factor Authentication](#-Using-Two-Factor-Authentication)
-* [Disabling Two-Factor Authentication](#-Disabling-Two-Factor-Authentication)
-* [Regaining access to my account when I've been locked out by Two-Factor Authentication](#-Regaining-access-to-my-account-when-I--ve-been-locked-out-by-Two-Factor-Authentication)
 
 ## 	Setting Up Two-Factor Authentication
  	

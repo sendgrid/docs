@@ -10,15 +10,6 @@ layout: page
 navigation:
   show: true
 ---
-
-- [Creating a template](#-Create-a-template)
-- [Editing your HTML template](#-Editing-your-HTML-template)
-- [Preview and test your template](#-Preview-and-test-your-template)
-- [Managing templates](#-Managing-templates)
-  - [Activate your template](#-Activate-your-template)
-  - [Duplicate a template](#-Duplicate-a-template)
-- [Adding unsubscribe links to a template](#-Adding-unsubscribe-links-to-a-template)
-
 Creating email templates involves a mix of content writing, HTML, and CSS expertise. Email templates should look good on different email clients and be responsive for mobile devices. Many non-technical customers will hire a front-end or email template developer to build their templates. We also suggest testing your templates with rendering applications like [Litmus](http://litmus.com) before sending them to your customers.
 
 <call-out>
@@ -53,7 +44,7 @@ Email templates are table-based HTML with inline or header styles, because some 
 
 *To add a template:*
 
-1. Open a new template in the Code Editor or [Design Editor]({{root_url}}/help-support/sending-email/editor.html#-The-Design_Editor) by clicking **Actions** and selecting **New Version**.
+1. Open a new template in the Code Editor or [Design Editor]({{root_url}}/help-support/sending-email/editor/#-The-Design_Editor) by clicking **Actions** and selecting **New Version**.
 
 1. If you selected the Code Editor, copy and paste your HTML code into the code editor.
 <br></br>If you paste in an email template, it is likely that you will overwrite the default basic HTML provided in the code editor. If you selected the Design Editor, use the WYSIWYG editor with drag & drop modules to create your email template.
@@ -108,6 +99,6 @@ The app creates a clone, giving it a name that starts with "untitled". You can g
 
 ## 	Adding unsubscribe links to a template
  	
-For more information about unsubscribes, check out our [unsubscribe documentation]({{root_url}}/help-support/sending-email/index-suppressions.html).
+For more information about unsubscribes, check out our [unsubscribe documentation]({{root_url}}/help-support/sending-email/index-suppressions/).
 
 

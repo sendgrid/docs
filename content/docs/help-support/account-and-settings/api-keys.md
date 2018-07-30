@@ -21,7 +21,7 @@ There are two different types of API keys:
 
 We require that you create a separate API key for making billing related API calls. This segmentation adds an extra level of security by giving you more control over who has access to the various areas of your account.
 
-For more detailed information about API key permissions, see our [API Keys permissions page]({{root_url}}/help-support/account-and-settings/api-keys.html).
+For more detailed information about API key permissions, see our [API Keys permissions page]({{root_url}}/help-support/account-and-settings/api-keys/).
 
 When viewing the API keys page, you will see a list of your current API keys along with the following information:
 
@@ -102,4 +102,4 @@ Once you delete a key, it can no longer be used to access SendGrid’s services.
 
 </call-out>
 
-Click the action menu in the same row as the key you want to inactivate. Choose “Delete.” This will delete the key permanently, making it inactive. Any subsequent API calls using this deleted API key will be rejected by SendGrid.
+Click the action menu in the same row as the key you want to inactivate. Select **Delete**.  This will delete the key permanently, making it inactive. Any subsequent API calls using this deleted API key will be rejected by SendGrid.
