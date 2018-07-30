@@ -12,7 +12,7 @@ navigation:
 ---
 
 ## 	Defining an Unsubscribe Group When Sending
- 	
+
 The method used to specify an unsubscribe group for an email depends on how you will be sending that email:
 
 * When sending an SMTP message, add the group's ID to the X-SMTPAPI header.
@@ -32,7 +32,7 @@ You may only specify one group per send, and you should wait one minute after cr
 ```
 
 ## 	Defining Unsubscribe Groups to display on the Manage Preferences page
- 	
+
 To specify which groups to display on the Manage Preferences page of an email, add the group IDs to the X-SMTPAPI header of an SMTP message, or in the x-smtpapi parameter of a [mail.send API
 call]({{root_url}}/API_Reference/Web_API/mail.html).
 If you omit the asm_groups_to_display header, your default groups is shown on the Manage Preferences page instead.
@@ -50,7 +50,7 @@ You can specify up to 25 groups to display.
 ```
 
 ## 	Groups
- 	
+
 You can find your group IDs by looking at the Group ID column in the Unsubscribe Groups UI, or by calling the [GET method]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/groups.html#-GET) of the groups resource.
 
 Related Articles:
@@ -58,8 +58,8 @@ Related Articles:
 * You can create Unsubscribe groups via the [API V3 > Unsubscribe Groups Endpoint]({{root_url}}/API_Reference/Web_API_v3/Unsubscribe_Manager/groups.html#-POST).
 
 ## 	Additional Resources
- 	
+
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
-- [Getting Started with the SMTP API]({{root_url}}/for-developers/getting-started/getting-started-smtp.html)
-- [Integrating with SMTP]({{root_url}}/for-developers/getting-started/integrating-with-the-smtp-api.html)
-- [Building an SMTP Email]({{root_url}}/for-developers/getting-started/building-an-smtp-email.html)
+- [Getting Started with the SMTP API]({{root_url}}/for-developers/sending-email/getting-started-smtp/)
+- [Integrating with SMTP]({{root_url}}/for-developers/sending-email/integrating-with-the-smtp-api/)
+- [Building an SMTP Email]({{root_url}}/for-developers/sending-email/building-an-smtp-email/)

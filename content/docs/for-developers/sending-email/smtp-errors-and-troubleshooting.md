@@ -17,7 +17,7 @@ navigation:
 - [Certificate verification failed for smtp.sendgrid.net](#-Certificate-verification-failed-for-smtp.sendgrid.net)
 
  ### 	Response codes
- 	
+
 Each SMTP call you make returns a response. `200` responses are usually success responses, and `400` responses are usually deferrals. SendGrid continues to retry resending `400` messages for up to 72 hours. `500` responses are hard failures that are not retried by our servers. This table has possible response codes with example errors and a general explanation of that sort of response.
 
 <table class="table" style="table-layout:fixed">
@@ -84,7 +84,7 @@ Each SMTP call you make returns a response. `200` responses are usually success 
 </table>
 
 ## 	Turning off click tracking
- 	
+
 To turn off click tracking, add this to your X-SMTPAPI header:
 
 ```json
@@ -101,11 +101,11 @@ To turn off click tracking, add this to your X-SMTPAPI header:
 ```
 
 ## 	Invalid SMTP API header
- 	
+
 When you try to send an invalid X-SMTPAPI header, you will get an email with details about the invalidations. You may also see errors on your Email Activity page or in your Event Webhook data. If this happens, the email should give you the information you need to begin troubleshooting. We also recommend uploading your JSON into a JSON validator, because this is often an invalid JSON issue.
 
 ## 	Certificate verification failed for smtp.sendgrid.net
- 	
+
  `"certificate verification failed for [smtp.sendgrid.net](http://smtp.sendgrid.net/)[198.37.144.225]:587: untrusted issuer /C=US/O=The Go Daddy Group, Inc./OU=Go Daddy Class 2 Certification Authority"`
 
  If you receive this error, the connection is still encrypted; it's just that your server doesn't have the necessary CA (certificate authority) certificates to confirm that our certificate is valid.
@@ -120,8 +120,8 @@ When you try to send an invalid X-SMTPAPI header, you will get an email with det
  If the mail server communicates with more than just us, add this certificate to your existing CA bundle (frequently called `ca-bundle.crt`).
 
 ## 	Additional Resources
- 	
+
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
-- [Getting Started with the SMTP API]({{root_url}}/for-developers/getting-started/getting-started-smtp.html)
-- [Integrating with SMTP]({{root_url}}/for-developers/getting-started/integrating-with-the-smtp-api.html)
-- [Building an SMTP Email]({{root_url}}/for-developers/getting-started/building-an-smtp-email.html)
+- [Getting Started with the SMTP API]({{root_url}}/for-developers/sending-email/getting-started-smtp/)
+- [Integrating with SMTP]({{root_url}}/for-developers/sending-email/integrating-with-the-smtp-api/)
+- [Building an SMTP Email]({{root_url}}/for-developers/sending-email/building-an-smtp-email/)

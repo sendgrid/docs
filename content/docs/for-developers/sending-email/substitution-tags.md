@@ -26,7 +26,7 @@ navigation:
 
 <call-out>
 
-Substitution tags will work in the Subject line, body of the email and in [Unique Arguments]({{root_url}}/for-developers/sending-email/unique-arguments.html).
+Substitution tags will work in the Subject line, body of the email and in [Unique Arguments]({{root_url}}/for-developers/sending-email/unique-arguments/).
 
 </call-out>
 
@@ -55,7 +55,7 @@ Do not nest substitution tags in substitutions as they will fail and your substi
 </call-out>
 
   ## 	Substitution Tag Example
- 	
+
 Email HTML content:
 ```html
 <html>
@@ -145,9 +145,9 @@ Email HTML content:
  	While the tags above are tags that you define at the time of your send in the SMTPAPI headers, SendGrid also offers [Unsubscribe Groups tags]({{root_url}}/help-support/sending-email/create-and-edit-transactional-templates.html#-Adding-unsubscribe-links-to-a-template) that have been pre-defined for you. You can use these tags within the content of your email, and you do not have to and should not, define them.
 
 ## 	Additional Resources
- 	
-- [Section Tags]({{root_url}}/for-developers/sending-email/section-tags.html)
+
+- [Section Tags]({{root_url}}/for-developers/sending-email/section-tags/)
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
-- [Getting Started with the SMTP API]({{root_url}}/for-developers/getting-started/getting-started-smtp.html)
-- [Integrating with SMTP]({{root_url}}/for-developers/getting-started/integrating-with-the-smtp-api.html)
-- [Building an SMTP Email]({{root_url}}/for-developers/getting-started/building-an-smtp-email.html)
+- [Getting Started with the SMTP API]({{root_url}}/for-developers/sending-email/getting-started-smtp/)
+- [Integrating with SMTP]({{root_url}}/for-developers/sending-email/integrating-with-the-smtp-api/)
+- [Building an SMTP Email]({{root_url}}/for-developers/sending-email/building-an-smtp-email/)

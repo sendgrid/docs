@@ -64,12 +64,12 @@ Telnet does not register backspaces correctly - so you have to type your command
     <br>The mail server returns `250 Ok: queued as …` - This means the email has been queued to send. This queue moves very quickly.
 1. Exit the Telnet connection with: `quit`.
 
-Now that you've sent a test email, learn to [integrate your servers with our SMTP API]({{root_url}}/for-developers/getting-started/integrating-with-the-smtp-api/).
+Now that you've sent a test email, learn to [integrate your servers with our SMTP API]({{root_url}}/for-developers/sending-email/integrating-with-the-smtp-api/).
 
 ## Additional Resources
 
 - [Getting Started with the UI]({{root_url}}/help-support/getting-started/how-to-send-email/)
 - [Getting Started with the API]({{root_url}}/API_Reference/api_v3.html)
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
-- [Integrating with the SMTP API]({{root_url}}/for-developers/getting-started/integrating-with-the-smtp-api/)
-- [Building an SMTP Email]({{root_url}}/for-developers/getting-started/building-an-smtp-email/)
+- [Integrating with the SMTP API]({{root_url}}/for-developers/sending-email/integrating-with-the-smtp-api/)
+- [Building an SMTP Email]({{root_url}}/for-developers/sending-email/building-an-smtp-email/)
