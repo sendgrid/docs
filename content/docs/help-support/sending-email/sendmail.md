@@ -4,6 +4,7 @@ seo:
   description: sendmail&#58; Relay all local mail through Sendgrid
   keywords:
 title: sendmail&#58; Relay all local mail through Sendgrid
+group: partners
 weight: 0
 layout: page
 zendesk_id: 200185188

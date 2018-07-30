@@ -7,6 +7,7 @@ seo:
   description: What do I do if I'm blacklisted?
   keywords: dedicated, blacklist, list, delist, best, blocked, BL, black, RBL, DNSBL
 title: What do I do if I'm blacklisted?
+group: delivery-optimization
 weight: 0
 layout: page
 zendesk_id: 200256676

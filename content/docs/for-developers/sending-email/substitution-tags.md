@@ -4,6 +4,7 @@ seo:
   description: Section tags allow you to substitute in content for individual recipients in an SMTP message.
   keywords: SMTP, send email, Substitution tags
 title: Substitution Tags
+group: smtp
 weight: 10
 layout: page
 navigation:

@@ -2,6 +2,7 @@
 layout: page
 weight: 0
 title: Group Unsubscribes
+group: tracking
 seo:
   title: Group Unsubscribes
   description: Allow recipients to unsubscribe from specific types of email you send, rather than everything you send, and stay out of the spam folder.

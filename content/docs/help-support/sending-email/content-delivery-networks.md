@@ -2,6 +2,7 @@
 seo:
   title: Content Delivery Networks
 title: Content Delivery Networks
+group: delivery-optimization
 layout: page
 weight: 0
 navigation:

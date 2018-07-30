@@ -4,6 +4,7 @@ seo:
   description: Suppression groups allow you to set up unsubscribe lists and options
   keywords: SMTP, suppression groups, unsubscribe lists
 title: Suppression Groups
+group: smtp
 weight: 10
 layout: page
 navigation:

@@ -4,6 +4,7 @@ seo:
   description: Learn how to use Sandbox Mode when sending mail over SendGrid's Web API v3.
   keywords: sandbox mode, test, validation, v3 mail send
 title: Sandbox Mode
+group: api-v3
 weight: 0
 layout: page
 navigation:

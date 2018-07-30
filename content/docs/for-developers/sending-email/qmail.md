@@ -2,6 +2,7 @@
 layout: page
 weight: 0
 title: Qmail
+group: mail-servers
 navigation:
   show: true
 ---

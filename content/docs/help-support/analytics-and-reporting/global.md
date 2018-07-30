@@ -4,6 +4,7 @@ seo:
   description: View and filter your global SendGrid statistics for your entire account.
   keywords: Global SendGrid Statistics, SendGrid Global Statistics
 title: Global
+group: statistics
 weight: 0
 layout: page
 navigation:

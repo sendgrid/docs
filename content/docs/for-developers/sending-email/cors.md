@@ -2,6 +2,7 @@
 layout: page
 weight: 0
 title: Cross Origin Resource Sharing (CORS)
+group: api-v3
 navigation:
   show: true
 seo:

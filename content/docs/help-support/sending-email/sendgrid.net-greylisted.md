@@ -7,6 +7,7 @@ seo:
   description: Noticing sendgrid.net is greylisted...
   keywords: grey, list, greylist, greylisted, deliverability
 title: Why is sendgrid.net “greylisted”?
+group: delivery-optimization
 weight: 0
 layout: page
 navigation:

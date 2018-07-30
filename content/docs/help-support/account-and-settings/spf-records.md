@@ -7,6 +7,7 @@ seo:
   description: SPF Records Explained
   keywords: permission, spf, white, label, whitelabel, include, spf1, spf2, return, path, ~all, -all, +all, sender, permitted, forgery, spoofing, spoof, fail, failed, validation, validate
 title: SPF Records Explained
+group: account-management
 weight: 0
 layout: page
 zendesk_id: 202517236

@@ -2,6 +2,7 @@
 layout: page
 weight: 0
 title: Global Unsubscribes
+group: tracking
 seo:
   title: Global Unsubscribes
   description: Recipients can unsubscribe from everything you send, rather than just a single group.

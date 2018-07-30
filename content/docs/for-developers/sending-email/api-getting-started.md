@@ -4,17 +4,12 @@ seo:
   description: Sending your first email using the SendGrid REST API.
   keywords: Getting Started, API, v3, REST, SendGrid REST API
 title: Getting Started with the SendGrid API
+group: api-v3
 weight: 100
 layout: page
 navigation:
   show: true
 ---
-* [Prerequisites](#-Prerequisites)
-* [How to send an API email](#-How-to-send-an-API-email)
-  * [Build your API call](#-Build-your-API-call)
-  * [Send-your-email-using-the-API](#-Send-your-email-using-the-API)
-  * [API Response messages](#-API-Response-messages)
-* [Next steps](#-Next-steps)
 
 There are several ways you can get started with the SendGrid API
 

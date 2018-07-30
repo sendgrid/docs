@@ -4,6 +4,7 @@ seo:
   description:
   keywords: v2 mail send, v3 mail send, faq, frequently asked questions
 title: v3 Mail Send FAQ
+group: api-v3
 weight: 0
 layout: page
 navigation:

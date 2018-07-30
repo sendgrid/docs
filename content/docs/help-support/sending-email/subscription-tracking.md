@@ -4,6 +4,7 @@ seo:
   description: Unsubscribe via Subscription Tracking
   keywords: subscription, page, landing, replacement, tag, text, unsubscribe, unsub, html, click_tracking, body, <% %>
 title: Unsubscribe via Subscription Tracking
+group: tracking
 weight: 0
 layout: page
 zendesk_id: 200181498

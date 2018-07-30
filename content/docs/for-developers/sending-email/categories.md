@@ -2,6 +2,7 @@
 layout: page
 weight: 0
 title: Categories
+group: smtp
 navigation:
   show: true
 ---

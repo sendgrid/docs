@@ -1,5 +1,6 @@
 ---
 title: Create and Edit Transactional Templates
+group: building-email
 seo:
   title: Create and Edit Templates
   description: Transactional email templates are pre-coded email layouts that anyone can use to easily create and send transactional emails.

@@ -4,6 +4,7 @@ seo:
   description: HTML Rendering - The Do's and Dont's of Cross-Platform Email Design
   keywords: render, message, layout, html, css
 title: HTML Rendering - The Do's and Dont's of Cross-Platform Email Design
+group: building-email
 weight: 0
 layout: page
 zendesk_id: 200184928

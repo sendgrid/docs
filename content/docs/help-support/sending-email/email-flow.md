@@ -2,6 +2,7 @@
 layout: page
 weight: 0
 title: Email Flow
+group: delivery-optimization
 navigation:
   show: true
 seo:

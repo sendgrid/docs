@@ -2,6 +2,7 @@
 layout: page
 weight: 0
 title: SendGrid for New Relic
+group: partners
 navigation:
   show: true
 seo:

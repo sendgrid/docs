@@ -4,6 +4,7 @@ seo:
   description:
   keywords: migration, v2 mail send, v3 mail send, upgrade
 title: cURL Examples for Common Use Cases
+group: api-v2
 weight: 0
 layout: page
 navigation:

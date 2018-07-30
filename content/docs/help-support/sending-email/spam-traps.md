@@ -5,6 +5,7 @@ seo:
   description: Spam Trapped
   keywords: spam, role, address, trap, honey, pot, double, segmentation, opt-in, bad, old, spam traps, purchased, lists
 title: Spam Trapped
+group: tracking
 weight: 0
 layout: page
 zendesk_id: 200182968
@@ -13,8 +14,6 @@ navigation:
 ---
 
  **What Spam Traps Are & Why You Should Pay Attention To Them** :
-
- 
 
 Spam Traps are simply ways to identify and monitor spam. Creating them is as easy as taking an email address or even an entire domain that hasn’t been subscribed to any emails and sending an email to it. Since they haven’t subscribed to any mail, it will be considered spam.
 

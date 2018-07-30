@@ -2,6 +2,7 @@
 layout: page
 weight: 90
 title: Migrating from Legacy Templates
+group: building-email
 navigation:
   show: false
 seo:

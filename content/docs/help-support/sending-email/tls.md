@@ -4,6 +4,7 @@ seo:
   description: Does SendGrid support end-to-end TLS?
   keywords: encryption, tls, encrypt, 587, enforce
 title: Does SendGrid support end-to-end TLS?
+group: delivery-optimization
 weight: 0
 layout: page
 zendesk_id: 202523426

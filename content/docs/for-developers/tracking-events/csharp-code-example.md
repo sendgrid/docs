@@ -2,6 +2,7 @@
 layout: page
 weight: 10
 title: C#
+group: code-examples
 navigation:
   show: true
 ---

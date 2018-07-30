@@ -2,6 +2,7 @@
 layout: page
 weight: 100
 title: SendGrid Source
+group: partners
 seo:
   description: Learn how to integrate your SendGrid account with Segment.
 navigation:

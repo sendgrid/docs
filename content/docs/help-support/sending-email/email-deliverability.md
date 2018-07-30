@@ -4,6 +4,7 @@ seo:
   description: Email Deliverability Overview
   keywords: spam, bulk, box, segmentation, folder, inbox, list, deliverability, best, practice, engagement, blocked, not, delivered, delivery, spammy, can, can-spam, deliver
 title: Email Deliverability Overview
+group: delivery-optimization
 weight: 0
 layout: page
 zendesk_id: 200181718

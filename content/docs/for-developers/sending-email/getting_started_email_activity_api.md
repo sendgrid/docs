@@ -4,6 +4,7 @@ seo:
  description: Use the Email Activity Feed query language to get started with the Email Activity Feed API.
  keywords: email activity, query language, email stats, email events
 title: Getting Started with the Email Activity Feed API
+group: tracking
 weight: 0
 layout: page
 navigation:
@@ -14,19 +15,6 @@ navigation:
 In order to gain access to the Email Activity Feed API, you must purchase [additional email activity history](https://app.sendgrid.com/settings/billing/addons/email_activity).
 
 </call-out>
-
-- [Getting started](#-Getting-started)
-   - [Encoding queries](#-Encoding-queries)
-- [Queries for common use cases](#-Queries-for-common-use-cases)
- - [Filter by subject](#-Filter-by-subject)
- - [Filter by recipient email](#-Filter-by-recipient-email)
- - [Filter by bounced emails](#-Filter-by-bounced-emails)
-- [Creating compound queries](#-Creating-compound-queries)
- - [Filter by a recipient email that was bounced](#-Filter-by-a-recipient-email-that-was-bounced)
- - [Filter by date range](#-Filter-by-date-range)
- - [Filter by a recipient and and a date range](#-Filter-by-a-recipient-and-a-date-range)
-- [Keyword and Operator reference](#-Keyword-and-Operator-reference)
-- [Query reference](#-Query-reference)
 
 The API gives you access to query all of your stored messages, to query individual messages, and to download a CSV with data about the stored messages.
 

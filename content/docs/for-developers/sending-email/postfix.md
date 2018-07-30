@@ -2,6 +2,7 @@
 layout: page
 weight: 0
 title: Postfix
+group: mail-servers
 seo:
   title: Integrate SendGrid with Postfix - SendGrid Documentation | SendGrid
   description: Setup SendGrid as a Postfix relay host for better deliverability and advanced statistics on your email.

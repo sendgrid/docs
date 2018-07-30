@@ -4,6 +4,7 @@ seo:
   description: Learn how to set up universal links with click tracking in your emails.
   keywords: deep links, universal links, Google, android, Apple, iOS, app, click tracking
 title: Universal Links
+group: tracking
 weight: 0
 layout: page
 navigation:

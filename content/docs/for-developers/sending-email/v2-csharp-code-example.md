@@ -2,6 +2,7 @@
 layout: page
 weight: 0
 title: C#
+group: api-v2
 navigation:
     show: true
 ---

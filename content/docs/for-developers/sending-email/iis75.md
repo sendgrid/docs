@@ -2,6 +2,7 @@
 layout: page
 weight: 0
 title: Microsoft IIS 7.5
+group: mail-servers
 navigation:
   show: true
 ---

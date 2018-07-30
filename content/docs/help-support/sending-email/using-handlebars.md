@@ -2,6 +2,7 @@
 layout: page
 weight: 50
 title: Using Handlebars
+group: building-email
 navigation:
   show: false
 seo:
@@ -9,21 +10,6 @@ seo:
   override: true
   description:
 ---
-
-- [Handlebars overview](#-Handlebars-overview)
-- [Personalizing email with Handlebars](#-Personalizing-email-with-Handlebars)
-- [Use cases](#-Use-cases)
-  - [Receipts](#-Receipts)
-  - [Password reset](#-Password-reset)
-  - [Muliple languages](#-Muliple-languages)
-  - [Newsletter](#-Newsletter)
-  - [Advertisement](#-Advertisement)
-- [Handlebar.js reference](#-Handlebar.js-reference)
-  - [Substitution](#-Substitution)
-  - [Conditional statements](#-Conditional-statements)
-  - [Iterations](#-Iterations)
-  - [Unless](#-Unless)
-  - [Combined examples](#-Combined-examples)
 
 ## 	Handlebars overview
  	
