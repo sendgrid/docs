@@ -12,7 +12,9 @@ navigation:
 ---
 <call-out>
 
- We recommend using SendGrid PHP, our client library, <a href="https://github.com/sendgrid/sendgrid-php">available on Github</a>, with full documentation. </call-out>
+ We recommend using SendGrid PHP, our client library, <a href="https://github.com/sendgrid/sendgrid-php">available on Github</a>, with full documentation.
+
+ </call-out>
 
 <call-out>
 
@@ -20,7 +22,8 @@ The library does not officially support the V2 API, but you can use V2 with an o
 
 </call-out>
 
-## Using SendGrid's PHP Library 	```php
+## Using SendGrid's PHP Library
+```php
 // using SendGrid's PHP Library
 // https://github.com/sendgrid/sendgrid-php
 require 'vendor/autoload.php';
