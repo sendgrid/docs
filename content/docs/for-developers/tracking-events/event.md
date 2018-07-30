@@ -788,7 +788,7 @@ Unique arguments and custom arguments essentially have the same function. Howeve
 
  ### 	Unique Arguments
 
-To define and receive unique arguments when sending email with the [SMTP API]({{root_url}}/API_Reference/SMTP_API/index.html) or the [v2 Mail Send endpoint]({{root_url}}/API_Reference/Web_API/mail.html), use the `unique_args` parameter in the X-SMTPAPI header. For example, if you have an application and want to receive custom parameters such as the `userid` and the email `template`, you would submit them with the X-SMTPAPI header, as described [here]({{root_url}}/for-developers/sending-email/unique-arguments).
+To define and receive unique arguments when sending email with the [SMTP API]({{root_url}}/API_Reference/SMTP_API/index.html) or the [v2 Mail Send endpoint]({{root_url}}/API_Reference/Web_API/mail.html), use the `unique_args` parameter in the X-SMTPAPI header. For example, if you have an application and want to receive custom parameters such as the `userid` and the email `template`, you would submit them with the X-SMTPAPI header, as described [here]({{root_url}}/for-developers/sending-email/unique-arguments/).
 
 For example, if you include the following unique arguments in your x-smtpapi header for an email sent via the v2 Mail Send endpoint:
 

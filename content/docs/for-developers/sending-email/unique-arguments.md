@@ -52,7 +52,7 @@ These arguments can then be seen in posts from the [SendGrid Event Webhook]({{ro
 Bounces returned with the Return-Path cause `unique_rgs not to be attached to an event. This can cause issues when developing unique_args POST handling.
 </call-out>
 
-To apply different unique arguments to individual emails, you may use [substitution tags]({{root_url}}/for-developers/sending-email/substitution-tags.html). An example of this would look like:
+To apply different unique arguments to individual emails, you may use [substitution tags]({{root_url}}/for-developers/sending-email/substitution-tags/). An example of this would look like:
 
 ```json
 {
@@ -69,7 +69,7 @@ To apply different unique arguments to individual emails, you may use [substitut
 ```
 
 ## 	Additional Resources
- 	
+
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
 - [Getting Started with the SMTP API]({{root_url}}/for-developers/getting-started/getting-started-smtp.html)
 - [Integrating with SMTP]({{root_url}}/for-developers/getting-started/integrating-with-the-smtp-api.html)
