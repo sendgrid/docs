@@ -19,7 +19,8 @@ The library does not officially support the V2 API, but you can use V2 with an o
 
 </call-out>
 
-## Using SendGrid's C# Library 	```csharp
+## Using SendGrid's C# Library
+```csharp
 // using SendGrid's C# Library - https://github.com/sendgrid/sendgrid-csharp
 using System.Net.Http;
 using System.Net.Mail;
@@ -38,7 +39,7 @@ transportWeb.DeliverAsync(myMessage);
 ```
 
 ## 	Using .NET's Built-in SMTP Library
- 	
+
 If you choose not to use SendGrid's client library you may use .NET's built in library.
 
 If you are using ASP.NET, you can specify SMTP settings in web.config.

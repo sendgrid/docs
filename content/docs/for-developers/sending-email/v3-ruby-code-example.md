@@ -19,5 +19,22 @@ Do you have an [API Key](https://app.sendgrid.com/settings/api_keys) yet? If not
 
 </call-out>
 
-##  Using SendGrid's Ruby Library  	
-<script src="https://gist.github.com/sendgrid-gists/4be3a76b716e16c274c2ad0f6a99e9b4.js"></script>
+##  Using SendGrid's Ruby Library
+```ruby
+# using SendGrid's Ruby Library
+# https://github.com/sendgrid/sendgrid-ruby
+require 'sendgrid-ruby'
+include SendGrid
+
+from = Email.new(email: 'test@example.com')
+to = Email.new(email: 'test@example.com')
+subject = 'Sending with SendGrid is Fun'
+content = Content.new(type: 'text/plain', value: 'and easy to do anywhere, even with Ruby')
+mail = Mail.new(from, subject, to, content)
+
+sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
+response = sg.client.mail._('send').post(request_body: mail.to_json)
+puts response.status_code
+puts response.body
+puts response.headers
+```
