@@ -45,6 +45,17 @@ class DocTemplate extends React.Component {
         <div className="doc-main">
           <h1 dangerouslySetInnerHTML={{ __html: postNode.fields.title }} />
           {renderAst(postNode.htmlAst)}
+
+          <div className="card card__feedback">
+            <div className="card__inner">
+              <h3 className="card__title" >Feedback</h3>
+              <p>If you have a question that needs an answer, please <a href="https://support.sendgrid.com" title="contact support" target="_blank" rel="noopener noreferrer">contact support</a>.
+                Otherwise, please <a href="https://github.com/sendgrid/docs/issues/new" title="open an issue in our github" target="_blank" rel="noopener noreferrer">open an issue in our github</a>!
+                Thanks for helping us improve our docs!
+              </p>
+            </div>
+          </div>
+
         </div>
       </div>
     );
