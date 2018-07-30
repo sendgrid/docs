@@ -38,8 +38,8 @@ The `sg_event_id` is a [UUIDv4](https://en.wikipedia.org/wiki/Universally_unique
 
 ## 	Additional Resources
 
-- [Getting started with the Event Webhook]({{root_url}}/for-developers/tracking-events/getting-started-event-webhook)
-- [Event webhook reference]({{root_url}}/for-developers/tracking-events/event)
+- [Getting started with the Event Webhook]({{root_url}}/for-developers/tracking-events/getting-started-event-webhook/)
+- [Event webhook reference]({{root_url}}/for-developers/tracking-events/event/)
 - [An Event Webhook case study](https://sendgrid.com/blog/leveraging-sendgrids-event-api/)
 - [Webhook web libraries]({{root_url}}/Integrate/libraries.html#-Webhook-Libraries)
-- [Getting started with Keen.io]({{root_url}}/for-developers/tracking-events/analytics-with-keen-io)
+- [Getting started with Keen.io]({{root_url}}/for-developers/tracking-events/analytics-with-keen-io/)

@@ -63,6 +63,8 @@ Collections are the groupings of resources we pull from your source. In your war
 
 For a complete visual breakdown of the SendGrid collections and all their properties, [view the Visual Schema here](https://www.lucidchart.com/invitations/accept/c639887d-09da-4f91-a846-1409f6dd0d56).
 
+<div class="table-wrap">
+
 |  Collection | Type | Description |
 |  ------ | ------ | ------ |
 |  activity | Event | The union of all SendGrid **event** tables. Useful for creating funnels |
@@ -78,3 +80,5 @@ For a complete visual breakdown of the SendGrid collections and all their proper
 |  lists | Object | [Groups of contacts](https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html). |
 |  segments | Object | [Slices of lists](https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html). |
 |  recipients | Object | All contacts who have received an email, with information about their last activities and custom activities. [More Info](https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html) |
+
+</div>
