@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-The SMTP API JSON string allows you to attach an unlimited number of unique arguments to your email **up to 10,000 bytes**. The arguments are used only for tracking. They can be retrieved through the [Event API]({{root_url}}/API_Reference/Webhooks/event.html) or the [Email Activity]({{root_url}}/User_Guide/Delivery_Metrics/email_activity.html) page.
+The SMTP API JSON string allows you to attach an unlimited number of unique arguments to your email **up to 10,000 bytes**. The arguments are used only for tracking. They can be retrieved through the [Event API]({{root_url}}/for-developers/tracking-events/event/) or the [Email Activity]({{root_url}}/User_Guide/Delivery_Metrics/email_activity.html) page.
 
 These arguments can be added using a JSON string like this:
 
@@ -28,7 +28,7 @@ These arguments can be added using a JSON string like this:
 }
 ```
 
-These arguments can then be seen in posts from the [SendGrid Event Webhook]({{root_url}}/API_Reference/Webhooks/index.html). The contents of one of these POST requests would look something like this:
+These arguments can then be seen in posts from the [SendGrid Event Webhook]({{root_url}}/for-developers/tracking-events/event/). The contents of one of these POST requests would look something like this:
 
 <h4>Example Webhook Post Data</h4>
 ```json
@@ -52,7 +52,7 @@ These arguments can then be seen in posts from the [SendGrid Event Webhook]({{ro
 Bounces returned with the Return-Path cause `unique_rgs not to be attached to an event. This can cause issues when developing unique_args POST handling.
 </call-out>
 
-To apply different unique arguments to individual emails, you may use [substitution tags]({{root_url}}/for-developers/sending-email/substitution-tags.html). An example of this would look like:
+To apply different unique arguments to individual emails, you may use [substitution tags]({{root_url}}/for-developers/sending-email/substitution-tags/). An example of this would look like:
 
 ```json
 {
@@ -69,8 +69,8 @@ To apply different unique arguments to individual emails, you may use [substitut
 ```
 
 ## 	Additional Resources
- 	
+
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
-- [Getting Started with the SMTP API]({{root_url}}/for-developers/getting-started/getting-started-smtp.html)
-- [Integrating with SMTP]({{root_url}}/for-developers/getting-started/integrating-with-the-smtp-api.html)
-- [Building an SMTP Email]({{root_url}}/for-developers/getting-started/building-an-smtp-email.html)
+- [Getting Started with the SMTP API]({{root_url}}/for-developers/sending-email/getting-started-smtp/)
+- [Integrating with SMTP]({{root_url}}/for-developers/sending-email/integrating-with-the-smtp-api/)
+- [Building an SMTP Email]({{root_url}}/for-developers/sending-email/building-an-smtp-email/)

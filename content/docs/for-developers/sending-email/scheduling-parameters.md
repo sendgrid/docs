@@ -17,7 +17,9 @@ Using the parameters defined below, you can queue batches of emails targeting in
 <call-out>
 
 **Emails can be scheduled up to 72 hours in advance.** However, this scheduling constraint does not apply to campaigns sent via [Marketing Campaigns]({{root_url}}/User_Guide/Marketing_Campaigns/index.html).
- 	
+
+</call-out>
+
 This parameter allows SendGrid to begin processing a customer’s email requests before sending. SendGrid queues the messages and releases them when the timestamp indicates. This technique allows for a more efficient way to distribute large email requests and can **improve overall mail delivery time** performance. This functionality:
 
 * Improves efficiency of processing and distributing large volumes of email.
@@ -38,7 +40,7 @@ Using both `send_at` and `send_each_at` is not valid. Setting both causes your r
 </call-out>
 
 ## 	Send At
- 	
+
 To schedule a send request for a large batch of emails, use the `send_at` parameter which will send all emails at approximately the same time. `send_at` is a [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time).
 
 <h4>Example of send_at email header</h4>
@@ -49,7 +51,7 @@ To schedule a send request for a large batch of emails, use the `send_at` parame
 ```
 
 ## 	Send Each At
- 	
+
 To schedule a send request for individual recipients; use `send_each_at` to send emails to each recipient at the specified time. `send_each_at` is a sequence of UNIX timestamps, provided as an array. There must be one timestamp per email you wish to send.
 
 <h4>Example of send_each_at email header</h4>
@@ -91,8 +93,8 @@ To allow for the cancellation of a scheduled send, you must include a `batch_id`
 ```
 
 ## 	Additional Resources
- 	
+
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
-- [Getting Started with the SMTP API]({{root_url}}/for-developers/getting-started/getting-started-smtp.html)
-- [Integrating with SMTP]({{root_url}}/for-developers/getting-started/integrating-with-the-smtp-api.html)
-- [Building an SMTP Email]({{root_url}}/for-developers/getting-started/building-an-smtp-email.html)
+- [Getting Started with the SMTP API]({{root_url}}/for-developers/sending-email/getting-started-smtp/)
+- [Integrating with SMTP]({{root_url}}/for-developers/sending-email/integrating-with-the-smtp-api/)
+- [Building an SMTP Email]({{root_url}}/for-developers/sending-email/building-an-smtp-email/)

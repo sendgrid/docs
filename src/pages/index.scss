@@ -23,6 +23,14 @@ $card-gutter: 40px;
   padding: $scaleup-6 0 13rem 0;
   background: url('../img/help-center-hero.svg') no-repeat;
   background-position: bottom center;
+
+  @media (max-width: $width-mobile) {
+    background-size: contain;
+  }
+
+  @media (max-width: $width-small-mobile) {
+    padding-bottom: $scaleup-11;
+  }
 }
 
 // Override SendGrid search input styles for the hero search
@@ -37,6 +45,10 @@ $card-gutter: 40px;
 
   &::placeholder {
     color: $slate;
+  }
+
+  @media (max-width: $width-mobile) {
+    font-size: $scale-0;
   }
 }
 
