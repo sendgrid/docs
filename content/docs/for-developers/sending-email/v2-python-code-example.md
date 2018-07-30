@@ -19,7 +19,8 @@ The library does not officially support the V2 API, but you can use V2 with an o
 
 </call-out>
 
-##  Using SendGrid's Python Library  	```python
+##  Using SendGrid's Python Library
+```python
 # using SendGrid's Python Library
 # https://github.com/sendgrid/sendgrid-python
 import sendgrid

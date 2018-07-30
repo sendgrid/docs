@@ -18,7 +18,8 @@ The library does not officially support the V2 API, but you can use V2 with an o
 
 </call-out>
 
-##  Using SendGrid's Go Library  	```go
+##  Using SendGrid's Go Library
+```go
 // using SendGrid's Go Library
 // https://github.com/sendgrid/sendgrid-go
 package main
