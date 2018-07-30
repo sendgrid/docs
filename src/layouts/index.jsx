@@ -13,7 +13,7 @@ export default class MainLayout extends React.Component {
 
     const pathClass = location.pathname.replace(/\/docs\\|\//g, '');
     const classNames = `docSearch-content docs-wrap ${pathClass}`;
-    const renderFooter = location.pathname.indexOf('/api-v3') === -1 ? <Footer /> : null;
+    const renderFooter = location.pathname.indexOf('/api-reference') === -1 ? <Footer /> : null;
 
     return (
       <div className={classNames}>

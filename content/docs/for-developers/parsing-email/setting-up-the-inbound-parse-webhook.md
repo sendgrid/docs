@@ -23,7 +23,7 @@ What your application does with this parsed data is up to you. For some ideas of
 
 <call-out>
 
-Check out some pre-made integrations for the SendGrid Parse Webhook in the [Library Index]({{root_url}}/for-developers/getting-started/libraries.html#-Webhook-Libraries).
+Check out some pre-made integrations for the SendGrid Parse Webhook in the [Library Index]({{root_url}}/for-developers/sending-email/libraries/#web-api-libraries).
 
 </call-out>
 
@@ -105,7 +105,7 @@ The local-part (i.e. anything before @) can be any word or combination because a
 
 </call-out>
 
-You can check the [Activity Feed](https://app.sendgrid.com/email_activity?) from your SendGrid dashboard to see if incoming mail was parsed. For more help, see [Debugging a Webhook]({{root_url}}/API_Reference/Webhooks/debug.html).
+You can check the [Activity Feed](https://app.sendgrid.com/email_activity?) from your SendGrid dashboard to see if incoming mail was parsed. For more help, see [Debugging a Webhook]({{root_url}}/for-developers/tracking-events/troubleshooting/).
 
 <call-out type="warning">
 

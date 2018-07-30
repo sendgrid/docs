@@ -4,6 +4,7 @@ const LINKS = {
   FOR_DEVELOPERS: '/for-developers/',
   GLOSSARY: '/glossary/',
   LOGOUT: 'https://app.sendgrid.com/logout/',
+  PRICING: 'https://sendgrid.com/pricing/',
   RELEASE_NOTES: '/release-notes/',
   SENDGRID: 'https://sendgrid.com/',
   SUPPORT: 'https://support.sendgrid.com/',
