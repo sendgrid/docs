@@ -11,6 +11,13 @@ $aside-width: 300px;
   }
 }
 
+.release-notes {
+  h2, h3 {
+    margin-left: -25px;
+    display: flex;
+  }
+}
+
 .doc-main {
   flex: 1;
   overflow: hidden;
@@ -59,6 +66,7 @@ $aside-width: 300px;
 
 .aside-nav {
   padding-top: $scaledown-2;
+  padding-bottom: $scaledown-2;
   position: sticky;
   align-self: flex-start;
   flex: 0 0 300px;
