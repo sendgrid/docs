@@ -1,5 +1,5 @@
 import React from 'react';
-import './api-v3.scss';
+import './api-reference.scss';
 
 class stopLight extends React.Component {
   render() {

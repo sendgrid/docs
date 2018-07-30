@@ -34,7 +34,7 @@ class ForDevelopers extends Component {
             <div className="col-md-4 col-offset-md-2 col-lg-4 col-offset-lg-2 card ta-center">
               <div className="for-devs-callouts__bar" />
               <h2>API Reference</h2>
-              <Link to="/api-v3/" className="btn btn-primary center">Visit API reference</Link>
+              <Link to="/api-reference/" className="btn btn-primary center">Visit API reference</Link>
             </div>
             <div className="col-lg-4 card ta-center">
               <div className="for-devs-callouts__bar" />

@@ -14,7 +14,7 @@ An email SMTP relay service is used every time you send an email to someone outs
 
 A relay is not used when an email is sent between parties on the same domain, because there is only one server involved. However, if there are multiple domains involved between email messages, then a relay is required to deliver between each server.
 
-When you’re sending a large volume of email, that handoff—the SMTP relay—becomes very important. If you’re sending [marketing email]({{site.site_url}}/email-marketing) like newsletters or [transactional email]({{site.site_url}}/transactional-email) from your applications, you want to make sure that other servers trust that your server is sending good email. An email SMTP relay service is a trusted third party that adheres to sending best practices to help emails get delivered.
+When you’re sending a large volume of email, that handoff—the SMTP relay—becomes very important. If you’re sending [marketing email](https://sendgrid.com/email-marketing) like newsletters or [transactional email](https://sendgrid.com/transactional-email) from your applications, you want to make sure that other servers trust that your server is sending good email. An email SMTP relay service is a trusted third party that adheres to sending best practices to help emails get delivered.
 
 In an effort to reduce spam, many internet providers will limit the amount of SMTP relays it will conduct each day. This means that a business that sends large amounts of email may get their legitimate emails categorized as spam. Even a peer-to-peer email server will experience this when sending bulk email messages. An SMTP relay service provider can help prevent this deliverability problem and ensure that your emails get to the inbox.
 
