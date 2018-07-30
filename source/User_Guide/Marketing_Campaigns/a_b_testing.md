@@ -136,9 +136,6 @@ When a variation wins, based on your criteria and duration, you will be notified
 If you chose to Manually determine the A/B test winning criteria, you need to remember to manually choose the winning email variation. The remainder of your contacts will not be sent the email campaign until you choose a winning variation.
 {% endinfo %}
 
-
----------------
-
 {% anchor h3 %}
 Additional Resources
 {% endanchor h3 %}
