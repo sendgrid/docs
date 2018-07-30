@@ -2,6 +2,7 @@
 layout: page
 weight: 0
 title: Resetting your username and password
+group: account-management
 navigation:
   show: true
 seo:

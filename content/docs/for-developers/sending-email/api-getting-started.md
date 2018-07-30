@@ -10,12 +10,6 @@ layout: page
 navigation:
   show: true
 ---
-* [Prerequisites](#-Prerequisites)
-* [How to send an API email](#-How-to-send-an-API-email)
-  * [Build your API call](#-Build-your-API-call)
-  * [Send-your-email-using-the-API](#-Send-your-email-using-the-API)
-  * [API Response messages](#-API-Response-messages)
-* [Next steps](#-Next-steps)
 
 There are several ways you can get started with the SendGrid API
 

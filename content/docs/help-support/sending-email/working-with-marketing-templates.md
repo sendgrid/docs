@@ -2,7 +2,7 @@
 layout: page
 weight: 85
 title: Marketing Templates
-group: building
+group: building-email
 navigation:
   show: true
 seo:

@@ -2,7 +2,7 @@
 layout: page
 weight: 0
 title: ssmtp
-group: mail-server
+group: mail-servers
 navigation:
   show: true
 ---
