@@ -10,7 +10,7 @@ navigation:
   show: false
 ---
 
-[DKIM]({{site.blog_url}}/what-is-dkim/) stands for DomainKeys Identified Mail which was designed to help ISPs prevent malicious email senders by validating email from specific domains.
+[DKIM](https://sendgrid.com/blog/what-is-dkim/) stands for DomainKeys Identified Mail which was designed to help ISPs prevent malicious email senders by validating email from specific domains.
 
 Spoofers and phishers can be sending email to unwitting recipients by purporting to be from a trusted brand or sender. By “signing” email with DKIM, legitimate senders can label which domains belong to them, and by doing so, empower ISPs to block email streams that have not been properly authenticated using DKIM.
 
@@ -25,7 +25,7 @@ You can authenticate with DKIM yourself or the DKIM signature can be created by 
 SendGrid automatically enables DKIM for all email to improve your [email deliverability]({{root_url}}/glossary/email-deliverability.html), whether you’re on a shared IP or a dedicated one. This is just one more example of how SendGrid helps thousands of customers follow email best practices to ensure maximum delivery for their emails.
 
 ## 	Automated Security and Your DKIM Signature
- 	
+
 When you set up a [authenticated domain]({{root_url}}/help-support/getting-started/how-to-set-up-domain-authentication.html), you will be given the option of using [automated or manual security]({{root_url}}//help-support/getting-started/how-to-set-up-domain-authentication.html#-Using-automated-security). When you select automated security, SendGrid will manage your DKIM and SPF records for you. This means that whenever you make a change to your account that could impact your deliverability, such as adding a new dedicated sending [IP address]({{root_url}}/glossary/ip-address.html), SendGrid will automatically update your DNS settings and your DKIM signature.
 
 **SendGrid will always provide you with a custom DKIM signature. However, your custom DKIM signature is only automatically updated if you select automated security when authenticating your domain. If you turn automated security OFF, you will be responsible for updating your DKIM signature whenever you make a change to your sending domain.**
@@ -33,7 +33,7 @@ When you set up a [authenticated domain]({{root_url}}/help-support/getting-start
 
 
  ### 	Example DKIM Record: Automated Security ON
- 	
+
 ```
 
 subdomain.yourdomain.com. | CNAME | uXXXXXXX.wlXXX.sendgrid.net
@@ -43,7 +43,7 @@ s2._domainkey.yourdomain.com. | CNAME | s2._domainkey.uXXX.wlXXX.sendgrid.net.
 ```
 
  ### 	Example DKIM Record: Automated Security OFF
- 	
+
 ```
 
 m1._domainkey.yourdomain.com. | MX | mx.sendgrid.net

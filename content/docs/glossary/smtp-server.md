@@ -10,7 +10,7 @@ navigation:
   show: false
 ---
 
-An SMTP server is used to send email. Though server is in the name, they do not necessarily reside on an entire machine. Rather, an [SMTP server is an application]({{site.blog_url}}/what-is-an-smtp-server/) that runs all the time awaiting new mail to send.
+An SMTP server is used to send email. Though server is in the name, they do not necessarily reside on an entire machine. Rather, an [SMTP server is an application](https://sendgrid.com/blog/what-is-an-smtp-server/) that runs all the time awaiting new mail to send.
 
 Email is sent using SMTP—Simple Mail Transfer Protocol. At its most basic, an SMTP server must speak this protocol. Modern SMTP servers must also consider methods for authenticating, such as DKIM and SPF. Authenticating email is one of the best ways to signal to receiving servers that the email you are sending is legitimate.
 

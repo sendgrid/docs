@@ -16,12 +16,12 @@ navigation:
     - [Data storage](#-Data-storage)
     - [Integrating](#-Integrating)
 
-SendGrid's Event Webhook will notify a URL of your choice via HTTP POST with information about events that occur as SendGrid processes your email. You can use this data to remove unsubscribes, react to spam reports, [determine unengaged recipients]({{site.blog_url}}/infer-engagement-with-the-event-api/), identify bounced email addresses, or create advanced analytics of your email program. With Unique Arguments and Category parameters, you can insert dynamic data that will help build a sharp, clear image of your mailings.
+SendGrid's Event Webhook will notify a URL of your choice via HTTP POST with information about events that occur as SendGrid processes your email. You can use this data to remove unsubscribes, react to spam reports, [determine unengaged recipients](https://sendgrid.com/blog/infer-engagement-with-the-event-api/), identify bounced email addresses, or create advanced analytics of your email program. With Unique Arguments and Category parameters, you can insert dynamic data that will help build a sharp, clear image of your mailings.
 
 You should set up the Event Webhook if you want to keep track of more event data than we store for you. Due to the sheer volume of email we send, we can only store so much information. Your [Email Activity Feed]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed.html) can hold up to 30 days worth of events. After that time passes, the email event data is gone.
 
 ## 	Getting started
- 	
+
 *To get started with the Event Webhook:*
 
 1. Go to the [Webhook tester](https://webhook.site/).
@@ -55,11 +55,11 @@ If you want to test your webhook locally, deploy a local version of [Webhook tes
 </call-out>
 
 ## 	Next steps
- 	
+
 Now that you understand what Event data looks like and the basics of the webhook, it's time to evaluate your own needs for the types of events you want to store, what kind of data storage that requires, and then switch your integration from the RequestBin test to a more permanent integration.
 
  ### 	Data Storage
- 	
+
 Events post every 30 seconds or when the batch size reaches 768 kilobytes - whichever occurs first. This is per server, so if you send a high volume of emails, the webhook URL may receive tens or even hundreds of posts per second. Because of this, storage should be a significant consideration of the type of integration you set up.
 
 Storage integrations are infinitely flexible, but here are some popular options:
@@ -77,7 +77,7 @@ If your email traffic generates a lot of events, the incoming data can quickly o
 </call-out>
 
  ### 	Integrating
- 	
+
 Once you choose a storage option, follow steps 3 through 8 in [Getting started](#-Getting-started]) to update your [Settings > Mail Settings](https://app.sendgrid.com/settings/mail_settings) in the [SendGrid UI](https://app.sendgrid.com). Update the **HTTP POST URL field** to your URL, and make sure you've selected the events that you want to receive.
 
 The Event Webhook does not follow redirects.
@@ -85,7 +85,7 @@ The Event Webhook does not follow redirects.
 If you want to receive encrypted posts, your callback URL needs to support TLS 1.2.
 
 ## 	Additional Resources
- 	
+
 - [Event Webhook reference]({{root_url}}/for-developers/tracking-events/event.html)
 - [Troubleshooting the Event Webhook]({{root_url}}/for-developers/tracking-events/troubleshooting.html)
 - [An Event Webhook case study](https://sendgrid.com/blog/leveraging-sendgrids-event-api/)
