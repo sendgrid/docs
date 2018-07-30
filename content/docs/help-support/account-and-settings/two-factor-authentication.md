@@ -6,7 +6,6 @@ seo:
 title: Two-Factor Authentication
 group: account-management
 weight: 0
-group: account-management
 layout: page
 navigation:
  show: true
