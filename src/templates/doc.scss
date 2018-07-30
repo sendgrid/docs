@@ -161,6 +161,17 @@ aside a.active {
 .anchor {
   svg {
     margin-right: $scaledown-3;
+    path {
+      fill: $slate-20;
+    }
+  }
+
+  &:hover {
+    svg {
+      path {
+        fill: $sg-blue;
+      }
+    }
   }
 }
 

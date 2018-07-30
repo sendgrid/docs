@@ -17,6 +17,10 @@
     align-self: flex-end;
   }
 
+  &--glossary {
+    padding: $scaleup-4;
+  }
+
   &:hover {
     .actions .sg-icon-ellipsis {
       opacity: 0;

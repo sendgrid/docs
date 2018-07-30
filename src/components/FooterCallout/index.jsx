@@ -10,11 +10,11 @@ const FooterCallout = () => (
       <div className="row">
         <div className="col-md-6">
           <h2 className="is-size-h1 color-white">For Developers</h2>
-          <p className="color-slate-10">Integrate with SendGrid using our API or SMTP. Lorem ipsum dollor sit amer.</p>
+          <p className="color-slate-10">Integrate with SendGrid using our API or SMTP.</p>
           <Link className="btn btn-white" to="/for-developers/">View Developer Docs</Link>
         </div>
         <div className="col-md-6">
-          <div className="card card--glossary is-thin">
+          <div className="card card--glossary">
             <h3 className="card__title">Quicklinks</h3>
             <Link className="glossary-link" to="/for-developers/sending-email/api-getting-started/">Getting Started</Link>
             <Link className="glossary-link" to="/api-v3/">API Documentation</Link>
