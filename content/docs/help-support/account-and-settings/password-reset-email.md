@@ -8,7 +8,6 @@ title: I didn't receive the password reset email
 weight: 0
 group: account-management
 layout: page
-zendesk_id: 204628887
 navigation:
   show: true
 ---

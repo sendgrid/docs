@@ -10,7 +10,6 @@ title: SPF Records Explained
 group: account-management
 weight: 0
 layout: page
-zendesk_id: 202517236
 navigation:
   show: true
 ---
