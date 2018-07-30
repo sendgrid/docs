@@ -27,7 +27,7 @@ Need to send invoices to multiple addresses? Consider creating a role address on
 
 ## 	3. Charge Summary
  	
-If you are in [a jurisdiction that SendGrid is required to charge sales tax]({{root_url}}/help-support/account-and-settings/taxes-and-tax-exempt.html), here is your tax summary:
+If you are in [a jurisdiction that SendGrid is required to charge sales tax]({{root_url}}/help-support/account-and-settings/taxes-and-tax-exempt/), here is your tax summary:
 
 ![Tax summary section]({{root_url}}/img/invoice_tax.png)
 
@@ -85,4 +85,4 @@ The Transaction Summary shows the total charges for the month, and the Payment S
 ## 	Additional Resources
  	
 - [SendGrid Pricing]({{site.site_url}}/pricing/)
-- [Billing]({{root_url}}/help-support/account-and-settings/billing.html)
+- [Billing]({{root_url}}/help-support/account-and-settings/billing/)
