@@ -13,14 +13,6 @@ seo:
 
 <iframe src="https://player.vimeo.com/video/221496791" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-* [Viewing Campaign Statistics](#-Viewing-Campaign-Statistics)
-   * [Exporting Campaign Statistics](#-Exporting-Campaign-Statistics)
-   * [Exporting Statistics for Multiple Campaigns](#-Exporting-Statistics-for-Multiple-Campaigns)
-* [Leveraging Engagement Statistics](#-Leveraging-Engagement-Statistics)
-   * [Viewing Campaign Clicks and Opens](#-Viewing-Campaign-Clicks-and-Opens)
-   * [Creating a Segment Based on Your Engagement Metrics](#-Creating-a-Segment-Based-on-Your-Engagement-Metrics)
-   * [Exporting a list of Engaged Recipients](#-Exporting-a-list-of-Engaged-Recipients)
-
 ## 	Viewing Campaign Statistics
  	Once you send a campaign, you can view statistics related to that campaign.
 
@@ -59,7 +51,7 @@ Every stats CSV that you export will contain a row containing the totals for eac
 
 ## 	Leveraging Engagement Statistics
  	
-To learn how to leverage your engagement statistics, please visit our [Classroom]({{root_url}}/help-support/analytics-and-reporting/campaign-stats.html).
+To learn how to leverage your engagement statistics, please visit our [Classroom]({{root_url}}/help-support/analytics-and-reporting/campaign-stats/).
 
  ### 	Viewing Campaign Clicks and Opens
  	
@@ -78,7 +70,7 @@ Marketing Campaigns makes it very easy to view recipients who have either opened
 1. From the Campaigns page or the individual campaign stats page, hover over the **Unique Opens** or **Unique Clicks** stats.
 1. Click **View Details** and then select **Create Segment**.
 
-   A window opens with segmentation options. By default, the segment will contain the conditions to capture all recipients who either opened your campaign or clicked within your campaign. The segment will be given the name _“Contacts who [clicked/opened] [your campaign name]”_. You can rename this segment or modify the conditions of the segment as you wish directly in this window. For more information on segmentation, [click here]({{root_url}}/help-support/managing-contacts/segmenting-your-contacts.html#-Creating-a-Segment).
+   A window opens with segmentation options. By default, the segment will contain the conditions to capture all recipients who either opened your campaign or clicked within your campaign. The segment will be given the name _“Contacts who [clicked/opened] [your campaign name]”_. You can rename this segment or modify the conditions of the segment as you wish directly in this window. For more information on segmentation, [click here]({{root_url}}/help-support/managing-contacts/segmenting-your-contacts/#-Creating-a-Segment).
 
 1. Click **Save**.
 <br>You now have a dynamic segment that will continuously update as recipients engage with this campaign.
@@ -96,5 +88,5 @@ In addition to creating a dynamic segment based on campaign engagement as descri
 
 ## 	Additional Resources
  	
-- [Sending a Campaign](https://sendgrid.com/docs/help-support/getting-started/how-to-send-email.html)
-- [A/B Testing Your Campaign](https://sendgrid.com/docs/help-support/sending-email/a-b-testing.html)
+- [Sending a Campaign](https://sendgrid.com/docs/help-support/getting-started/how-to-send-email/)
+- [A/B Testing Your Campaign](https://sendgrid.com/docs/help-support/sending-email/a-b-testing/)
