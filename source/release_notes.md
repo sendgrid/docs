@@ -32,6 +32,21 @@ The following new features and changes to the service are available.
 </table>
 
 {% anchor h2 %}
+6 August 2018
+{% endanchor %}
+
+{% anchor h3 %}
+Unsubscribe Group Workflow
+{% endanchor %}
+
+<table class="table" style="width: 100%;">
+  <tr>
+    <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
+    <td>We've updated Marketing Campaigns to allow you to add Unsubscribe Groups. This new expanded UI functionality offers more visibility into Unsubscribe Groups and Unsubscribe Preferences to eliminate any confusion. For more information, see the href="https://sendgrid.com/docs/Marketing_Campaigns/create-and-manage-unsubscribe-groups" target="_blank">documentation</a>.</td>
+  </tr>
+</table>
+
+{% anchor h2 %}
 23 July 2018
 {% endanchor %}
 
@@ -58,7 +73,6 @@ Known issue in the V2 API `to` parameter
 </table>
 - specify multiple addresses in the `to` field as an array, for example, `to[]=a@mail.com&to[]=b@mail.com`
 - Use the V3 mail send endpoint
-
 
 {% anchor h2 %}
 6 June 2018
