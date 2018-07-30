@@ -10,7 +10,7 @@ layout: page
 navigation:
   show: true
 ---
-The SendGrid [Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html) lets you stream all [email events]({{root_url}}/User_Guide/email_activity.html#-Email-Events) directly to <a href="https://keen.io/signup?utm_source=sendgrid_docs&utm_campaign=sendgrid">Keen IO</a> for real-time analysis and long term raw storage.
+The SendGrid [Event Webhook]({{root_url}}/for-developers/tracking-events/event/) lets you stream all [email events]({{root_url}}/User_Guide/email_activity.html#-Email-Events) directly to <a href="https://keen.io/signup?utm_source=sendgrid_docs&utm_campaign=sendgrid">Keen IO</a> for real-time analysis and long term raw storage.
 
 It only takes a couple of minutes to start streaming email event data from SendGrid to Keen IO and once you do you can start analyzing and visualizing your data in a whole bunch of different ways.
 
@@ -182,5 +182,5 @@ Many customers find it useful to embed analytics into their products for their c
  ### 	Additional Resources:
 
 - Know someone who’d appreciate SendGrid Email Analytics? Share our [product briefing](https://keen.io/sendgrid-email-analytics/) with them.
-- SendGrid's complete <a href="{{root_url}}/API_Reference/Webhooks/event.html">Event Webhooks Documentation</a> is a great resource on SendGrid email events. As you start to do more analysis, it's worth a read. You can even skip a lot of the sections, because we've done much of the work for you.
+- SendGrid's complete <a href="{{root_url}}/for-developers/tracking-events/event/">Event Webhooks Documentation</a> is a great resource on SendGrid email events. As you start to do more analysis, it's worth a read. You can even skip a lot of the sections, because we've done much of the work for you.
 - Build a campaign and email marketing dashboard. Create and display your email metrics using one of our [dashboard templates](http://keen.github.io/dashboards/).
