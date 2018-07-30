@@ -24,7 +24,7 @@ Email marketing attempts to encourage the recipient to take an action like makin
 
 Following email best practices in your marketing emails can yield great rewards and doesn’t have to be difficult. Great content along with quality sending and data collection practices present prime opportunities for email marketing to yield high response rates that drive your customer acquisition strategy.
 
-SendGrid can help you achieve your email marketing goals with our [Marketing Email Service]({{site.site_url}}/solutions/email-marketing). This service provides the following and much more:
+SendGrid can help you achieve your email marketing goals with our [Marketing Email Service](https://sendgrid.com/solutions/email-marketing). This service provides the following and much more:
 
 * [Pre-designed email templates]
 * [Importing Custom HTML With Drag & Drop Markup]({{root_url}}/help-support/sending-email/editor.html#-Importing-Custom-HTML-With-Drag-&-Drop-Markup)

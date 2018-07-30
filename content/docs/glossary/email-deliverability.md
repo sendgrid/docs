@@ -22,7 +22,7 @@ Good email deliverability is influenced by a lot of factors, including having a 
 * Monitoring your sending data
 * Sending wanted mail
 
-SendGrid helps you [achieve strong email deliverability]({{site.site_url}}/solutions) by providing the following features in each of these best practices and more:
+SendGrid helps you [achieve strong email deliverability](https://sendgrid.com/solutions) by providing the following features in each of these best practices and more:
 
 * Reputation monitoring
 * ISP monitoring

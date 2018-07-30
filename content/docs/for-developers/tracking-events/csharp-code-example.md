@@ -8,10 +8,10 @@ navigation:
 ---
 
 ## 	Parse Webhook
- 	
+
 In this example, we want to parse all emails at *address*@email.sendgrid.biz and post the parsed email to http://sendgrid.biz/upload
 
-Given this scenario, the following are the parameters you would set at the [Parse API settings page]({{site.site_url}}/developer/reply):
+Given this scenario, the following are the parameters you would set at the [Parse API settings page](https://sendgrid.com/developer/reply):
 
 ```
 Hostname: email.sendgrid.biz
