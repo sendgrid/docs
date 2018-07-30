@@ -11,12 +11,12 @@ SendGrid has partnered with Amazon to offer our email services on the [Amazon Ma
 Once you have an AWS account, you can to [subscribe to SendGrid](https://aws.amazon.com/marketplace/pp/B074CQY6KB) and access it directly from the [AWS Management Console](https://console.aws.amazon.com/). Once you’ve subscribed to SendGrid, you have access to the [SendGrid application](https://app.sendgrid.com/) and the APIs. Use the AWS Management Console if you want to reset your password, cancel your account, or manage billing.
 
 ## 	Getting Started
- 	
+
 *To quickly get started with SendGrid:*
 
 - See [Getting Started With Marketing Campaigns]({{root_url}}/help-support/getting-started/how-to-send-email.html) for all of the tools you need to get started sending with the SendGrid application.
-- Look at the [API Reference]({{root_url}}/API_Reference/api_v3.html) for all of the API endpoints as well as information about using SMTP and the Webhooks.
-- See the [API Libraries]({{root_url}}/for-developers/getting-started/libraries.html) page for information about using the SendGrid code libraries in C#, Go, Java, Node.js, PHP, Python, and Ruby.
+- Look at the [API Reference]({{root_url}}/api-reference/) for all of the API endpoints as well as information about using SMTP and the Webhooks.
+- See the [API Libraries]({{root_url}}/for-developers/sending-email/libraries/) page for information about using the SendGrid code libraries in C#, Go, Java, Node.js, PHP, Python, and Ruby.
 
 <call-out>
 
