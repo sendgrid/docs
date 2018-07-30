@@ -13,7 +13,7 @@ navigation:
 
 You can update your plan and billing details on the [Plan & Billing Details page](https://app.sendgrid.com/settings/billing) in the UI.
 
-For more information about understanding your bill, see [Reading your invoice]({{root_url}}/help-support/account-and-settings/reading-your-invoice.html).
+For more information about understanding your bill, see [Reading your invoice]({{root_url}}/help-support/account-and-settings/reading-your-invoice/).
 
 When you create or upgrade to a paid account, you add a credit card in for automatic payments. This will allow SendGrid to make the recurring package charges for your account without having to notify you each month of the bill. SendGrid relies on a PCI-DSS compliant 3rd party billing provider to store, process, and manage payment card processing.
 
@@ -101,4 +101,4 @@ Canceled accounts are not deleted. Accounts are changed to our [free]({{site.sit
 ## 	Additional Resources
  	
 - [SendGrid Pricing]({{site.site_url}}/pricing/)
-- [Reading your invoice]({{root_url}}/help-support/account-and-settings/reading-your-invoice.html)
+- [Reading your invoice]({{root_url}}/help-support/account-and-settings/reading-your-invoice/)
