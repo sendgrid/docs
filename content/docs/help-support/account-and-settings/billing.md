@@ -99,12 +99,6 @@ Canceled accounts are not deleted. Accounts are changed to our [free](https://se
 </call-out>
 
 ## 	Additional Resources
-<<<<<<< HEAD
  	
 - [SendGrid Pricing]({{site.site_url}}/pricing/)
 - [Reading your invoice]({{root_url}}/help-support/account-and-settings/reading-your-invoice/)
-=======
-
-- [SendGrid Pricing](https://sendgrid.com/pricing/)
-- [Reading your invoice]({{root_url}}/help-support/account-and-settings/reading-your-invoice.html)
->>>>>>> upstream/a-new-hope-episode-iv
