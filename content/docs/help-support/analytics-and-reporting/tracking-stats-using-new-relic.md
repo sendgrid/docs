@@ -1,7 +1,6 @@
 ---
 layout: page
 weight: 0
-group: account-management
 title: SendGrid for New Relic
 group: partners
 navigation:
