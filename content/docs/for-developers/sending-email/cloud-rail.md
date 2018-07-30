@@ -2,6 +2,7 @@
 layout: page
 weight: 0
 title: Using CloudRail to integrate SendGrid into your application
+group: plugins
 navigation:
   show: true
 ---

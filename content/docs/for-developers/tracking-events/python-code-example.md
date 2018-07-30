@@ -2,6 +2,7 @@
 layout: page
 weight: 10
 title: Python
+group: code-examples
 navigation:
   show: true
 ---

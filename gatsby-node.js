@@ -252,6 +252,22 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   });
 };
 
+exports.onCreatePage = async ({ page, boundActionCreators }) => {
+  const { createPage } = boundActionCreators;
+
+  return new Promise((resolve) => {
+    if (page.path.match(/^\/404/)) {
+      // It's assumed that `landingPage.js` exists in the `/layouts/` directory
+      page.layout = 'noHeaderFooter';
+
+      // Update the page.
+      createPage(page);
+    }
+
+    resolve();
+  });
+};
+
 exports.modifyWebpackConfig = ({ config, stage }) => {
   if (stage === 'build-javascript') {
     config.plugin('Lodash', webpackLodashPlugin, null);

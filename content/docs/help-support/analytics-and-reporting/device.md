@@ -4,6 +4,7 @@ seo:
   description: View and filter your device specific email statistics.
   keywords: Device statistics, SendGrid device statistics
 title: Device
+group: statistics
 weight: 0
 layout: page
 navigation:

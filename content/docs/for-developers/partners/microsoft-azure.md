@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-group: azure
+group: platform-partners
 title: Microsoft Azure
 navigation:
   show: true

@@ -4,6 +4,7 @@ seo:
  description: How to set up the Inbound Parse Webhook to process and parse incoming email
  keywords: Inbound Parse, Inbound Parse Webhook, Email Processing
 title: Setting Up The Inbound Parse Webhook
+group: inbound-parse
 weight: 90
 layout: page
 navigation:

@@ -11,6 +11,7 @@ export default class AsideMenu extends React.Component {
 
     this.state = {
       activeNavItem: false,
+      pageType: this.props.pageType || false,
     };
   }
 
@@ -23,13 +24,9 @@ export default class AsideMenu extends React.Component {
     window.removeEventListener('scroll', this.scrollSpy);
   }
 
-  getHeaders() {
-    return this.props.htmlAst.children.filter(el => el.type === 'element' && _.includes(['h2', 'h3'], el.tagName));
-  }
-
   scrollSpy() {
-    // Only us h2 & h3 header links.
-    const headers = Array.from(document.querySelectorAll('h2 .anchor, h3 .anchor'));
+    const selector = this.state.pageType === 'release-notes' ? 'h2 .anchor' : 'h2 .anchor, h3 .anchor';
+    const headers = Array.from(document.querySelectorAll(selector));
 
     // headers with offset
     const headersOffset = headers.map((el, i) => {

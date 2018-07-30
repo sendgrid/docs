@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-group: google
+group: platform-partners
 title: Google
 navigation:
   show: true

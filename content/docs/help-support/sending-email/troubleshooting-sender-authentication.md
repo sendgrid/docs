@@ -1,24 +1,15 @@
 ---
 layout: page
 weight: 0
-title: Troubleshooting
+title: Troubleshooting Sender Authentication
+group: troubleshooting
 navigation:
   show: true
 seo:
-  title: Troubleshooting
+  title: Troubleshooting Sender Authentication
   override: true
   description: Troubleshoot your sender authentication.
 ---
-
-- [My DNS records aren't validating](#-My-DNS-records-arent-validating)
-    - [Allow your DNS records to propagate](#-Allow-your-DNS-records-to-propagate)
-    - [Auto appending](#-Auto-appending)
-    - [Error validating domain: Expected TXT record at...](#-Error-validating-domain--Expected-TXT-record-at)
-    - [DNS record duplication](#-DNS-record-duplication)
-    - [Manually validating records](#-Manually-validating-records)
-- [Where is my domain hosted?](#-Where-is-my-domain-hosted)
-- [Can I authenticate multiple domains?]()
-- [Domain authentication application logic](#-Domain-authentication-application-logic)
 
 ## 	My DNS records aren't validating
  	
@@ -191,7 +182,7 @@ If SendGrid cannot match your email to a valid authenticated domain, `SendGrid.n
 For any account, SendGrid attaches authenticated domain information in the following order, starting at the top of the list and applying the domain when the criteria are matched:
 
 1. Valid authenticated domain that matches the domain in the FROM address.
-1. Valid default authenticated domain.
+2. Valid default authenticated domain.
 
 *If no valid authenticated domains can be found, your mail domain defaults to sendgrid.net.*
 

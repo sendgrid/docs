@@ -2,6 +2,7 @@
 layout: page
 weight: 80
 title: Managing Contact Lists
+group: managing-contacts
 navigation:
   show: true
 seo:
@@ -10,12 +11,6 @@ seo:
   keywords: Marketing Campaigns Contacts, delete contacts, organize contacts
   description: Directions on how to manage contact lists using Marketing Campaigns
 ---
-  * [Viewing a contact](#-Viewing-a-contact)
-  * [Editing a contact](#-Editing-a-contact)
-  * [Managing your list](#-Managing-Your-List)
-   * [Delete unusable contacts](#-Delete-unusable-contacts)
-   * [Delete a specific contact](#-Delete-a-specific-contact)
-   * [Delete all contacts](#-Delete-all-contacts)
 
 <iframe src="https://player.vimeo.com/video/227937591" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
@@ -40,8 +35,8 @@ When you are viewing a contact, click any of the Edit buttons to edit the contac
 *To edit the associated lists for your contact:*
 
 1. Select the **Associated Lists** tab.
-1. Enter or select the list you would like to use.
-1. Click **Add**.
+2. Enter or select the list you would like to use.
+3. Click **Add**.
 
 ## 	Managing your list
  	

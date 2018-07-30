@@ -4,6 +4,7 @@ seo:
   description: View and filter your subuser specific SendGrid email statistics.
   keywords: Subuser statistics, SendGrid subuser statistics
 title: Subuser Statistics
+group: statistics
 weight: 0
 layout: page
 navigation:

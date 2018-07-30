@@ -4,6 +4,7 @@ seo:
   description: How can I schedule emails to send at specific times?
   keywords: drip, newsletter, email, future, automate, automated, delay, schedule, delivery
 title: How can I schedule emails to send at specific times?
+group: api-v3
 weight: 0
 layout: page
 zendesk_id: 204820097

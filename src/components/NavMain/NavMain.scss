@@ -58,6 +58,16 @@
   width: 334px;
   text-align: right;
   position: relative;
+
+  @media (max-width: $width-small) {
+    background-size: 112px auto;
+    width: 277px;
+  }
+
+  @media (max-width: $width-small-mobile) {
+    background-size: 93px auto;
+    width: 240px;
+  }
 }
 
 .nav-main__help-center {
@@ -71,8 +81,15 @@
   right: 0;
   top: 28px;
   font-size: 18px;
-
   @include colfax(600);
+
+  @media (max-width: $width-small) {
+    font-size: $scale-0;
+  }
+
+  @media (max-width: $width-small-mobile) {
+    font-size: 14px;
+  }
 }
 
 .nav-main .nav-main__login {

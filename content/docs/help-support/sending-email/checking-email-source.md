@@ -7,6 +7,7 @@ seo:
   description: How do I check the headers/raw source of an email?
   keywords: bounces, email, headers, raw, source
 title: How do I check the headers/raw source of an email?
+group: delivery-optimization
 weight: 0
 layout: page
 zendesk_id: 203965613

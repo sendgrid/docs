@@ -7,6 +7,7 @@ seo:
   description: Safely Test Your Sending Speed
   keywords: throughput, through, put, speed, requests, sending
 title: Safely Test Your Sending Speed
+group: account-management
 weight: 0
 layout: page
 zendesk_id: 201995663

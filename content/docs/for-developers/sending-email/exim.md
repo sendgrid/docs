@@ -2,6 +2,7 @@
 layout: page
 weight: 0
 title: Exim 4
+group: mail-servers
 navigation:
   show: true
 seo:

@@ -3,6 +3,7 @@ layout: page
 weight: 90
 group:
 title: Email Event Data with Keen IO
+group: partners
 navigation:
   show: true
 seo:

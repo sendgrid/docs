@@ -2,6 +2,7 @@
 layout: page
 weight: 40
 title: Campaign Statistics
+group: statistics
 navigation:
   show: true
 seo:

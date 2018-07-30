@@ -2,6 +2,7 @@
 layout: page
 weight: 70
 title: Senders
+group: sending-email
 navigation:
   show: true
 seo:

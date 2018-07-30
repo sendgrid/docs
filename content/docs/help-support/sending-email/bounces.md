@@ -2,6 +2,7 @@
 layout: page
 weight: 0
 title: Bounces
+group: delivery-optimization
 seo:
   title: Bounces
   description: SendGrid will help prevent you from resending to a recipient whose email server rejects the messages.

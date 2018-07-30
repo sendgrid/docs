@@ -4,6 +4,7 @@ seo:
   description: View and filter your Mailbox Provider specific email statistics.
   keywords: Mailbox Provider statistics, SendGrid Mailbox Provider statistics, email domain, stats by domain
 title: Mailbox Provider
+group: statistics
 weight: 0
 layout: page
 navigation:

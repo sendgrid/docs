@@ -16,6 +16,8 @@ class ReleaseNotes extends React.Component {
       id: 'overview',
     };
 
+    console.log(edges);
+
     const asideLinks = edges.map((edge) => {
       const link = {};
       link.tagName = 'h2';
@@ -36,7 +38,7 @@ class ReleaseNotes extends React.Component {
         <SEO postNode={this.props} title="Release Notes" description="SendGrid API and Marketing Campaigns Release Notes" />
         <div className="row">
           <div className="col-md-3">
-            <AsideMenu asideLinks={asideLinks} />
+            <AsideMenu asideLinks={asideLinks} pageType="release-notes" />
           </div>
           <div className="col-md-9">
             <h1>Release Notes</h1>
@@ -69,7 +71,7 @@ export const pageQuery = graphql`
           htmlAst
           frontmatter {
             releaseType
-            date(formatString: "Do MMMM, YYYY")
+            date(formatString: "Do MMMM YYYY")
           }
         }
       }

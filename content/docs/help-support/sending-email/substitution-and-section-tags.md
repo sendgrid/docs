@@ -4,6 +4,7 @@ seo:
   description: Substitution and Section Tags
   keywords:
 title: Substitution and Section Tags
+group: building-email
 weight: 0
 layout: page
 zendesk_id: 204382358

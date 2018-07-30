@@ -4,6 +4,7 @@ seo:
   description: Learn how to send an email whenever you receive a new Gravity Form submission.
   keywords: integration, tutorial, Gravity Forms Submissions, SendGrid, Zapier
 title: Sending New Emails via SendGrid For New Gravity Forms Submissions
+group: partners
 weight: 0
 layout: page
 navigation:

@@ -2,6 +2,7 @@
 layout: page
 weight: 80
 title: Formatting a CSV
+group: managing-contacts
 navigation:
   show: true
 seo: 
@@ -11,14 +12,6 @@ seo:
   description: Directions on how to format a CSV for upload using SendGrid Marketing Campaigns
 ---
 
-* [General Formatting Rules](#-General-Formatting-Rules)
-  * [Contact Info](#-Contact-Info)
-  * [Header Row](#-Header-Row)
-  * [Character Encoding](#-Character-Encoding)
-  * [Numbers and Text](#-Numbers-and-Text)
-  * [Date Formatting](#-Date-Formatting)
-* [Troubleshooting](#-Troubleshooting)
-  
 You can easily add contacts to your contact database by uploading a CSV into Marketing Campaigns. If you have your contacts in a spreadsheet, simply save that sheet as a CSV file using a spreadsheet application like Microsoft Excel or Google Sheets. You can also export your contacts from most database systems as a CSV file.
 
 ##  

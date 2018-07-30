@@ -7,6 +7,7 @@ seo:
  description: Learn how to send your WordPress email through SendGrid.
  keywords: WordPress, SendGrid, integrate, plugin, subscription widget
 title: SendGrid's WordPress Plugin
+group: plugins
 weight: 100
 layout: page
 navigation:

@@ -2,6 +2,7 @@
 layout: page
 weight:
 title: Email Activity Feed
+group: email-activity
 navigation:
   show: true
 seo:
