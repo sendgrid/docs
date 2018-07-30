@@ -2,7 +2,7 @@
 layout: page
 weight: 0
 title: Troubleshooting Sender Authentication
-Troubleshooting Sender Authentication
+group: troubleshooting
 navigation:
   show: true
 seo:
