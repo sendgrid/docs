@@ -1,6 +1,7 @@
 import React from 'react';
 import RehypeReact from 'rehype-react';
 import _ from 'lodash';
+import config from '../../data/SiteConfig';
 import SEO from '../components/SEO';
 import AsideMenu from '../components/AsideMenu';
 import Callout from '../componentsMarkdown/Callout';
@@ -31,10 +32,21 @@ class DocTemplate extends React.Component {
     });
   }
 
+  getRepoLink() {
+    const {
+      permalink,
+      slug,
+    } = this.props.data.doc.fields;
+    const path = permalink.replace(`${slug}/`, '');
+    const absPath = this.props.data.doc.fileAbsolutePath;
+    const filename = absPath.substring(absPath.lastIndexOf('/') + 1);
+    const gitHubURL = config.gitHubMarkdownPath + path + filename;
+    return gitHubURL;
+  }
+
   render() {
     const postNode = this.props.data.doc;
     const asideLinks = this.getLinks();
-
     return (
       <div className="container-lg doc-wrap">
         <SEO postNode={postNode} postType="doc" />
@@ -45,7 +57,6 @@ class DocTemplate extends React.Component {
         <div className="doc-main">
           <h1 dangerouslySetInnerHTML={{ __html: postNode.fields.title }} />
           {renderAst(postNode.htmlAst)}
-
           <div className="card card__feedback">
             <div className="card__inner">
               <h3 className="card__title" >Feedback</h3>
@@ -55,7 +66,7 @@ class DocTemplate extends React.Component {
               </p>
             </div>
           </div>
-
+          <div className="edit-this-page m-top-4 ta-center"><strong>See a mistake?</strong> <a href={this.getRepoLink()}>Edit this page</a></div>
         </div>
       </div>
     );
@@ -70,6 +81,7 @@ export const pageQuery = graphql`
     doc: markdownRemark(id: { eq: $id } ) {
       htmlAst
       html
+      fileAbsolutePath
       frontmatter {
         seo {
           title
