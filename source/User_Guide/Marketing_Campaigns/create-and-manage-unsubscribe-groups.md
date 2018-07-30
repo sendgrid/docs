@@ -25,8 +25,8 @@ Create an Unsubscribe Group
 
 *To create an Unsubscribe Group:*
 
-1. Select **Marketing Campaigns** and then click **Unsubscribe Groups**.
-1. Click **Add Unsubscribe Group**. 
+1. Select **Marketing** and then click **Unsubscribe Groups**.
+1. Click **Add Unsubscribe Groups**. 
 1. Add a *Group Name* and *Group Description*. 
 
 {% info %}
@@ -74,8 +74,6 @@ Exporting an Unsubscribe Group List
 1. Navigate to the Unsubscribe Group you want to export.
 1. Click the action menu.
 1. Select **Export**. A CSV file begins downloading.
-
-[QUESTION - Does the account holder get an email notification like they do with MC Contacts?]
 
 {% anchor h3 %}
 Editing an Unsubscribe Group
