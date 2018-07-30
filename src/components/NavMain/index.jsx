@@ -113,7 +113,7 @@ class NavMain extends Component {
                 </div>
 
                 <div className="nav-item nav-item--btn">
-                  <a className="btn nav-main__login" href={LINKS.APP}>
+                  <a className="btn nav-main__login" href={LINKS.PRICING}>
                     Sign Up
                   </a>
                 </div>
