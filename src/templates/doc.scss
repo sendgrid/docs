@@ -91,9 +91,9 @@ $aside-width: 300px;
 .aside-nav .h3 {
   margin-left: $scaleup-2;
   font-size: 13px;
-  color: $slate-60;
+  color: $slate-80;
 
-  @include colfax(300);
+  @include colfax(400);
 }
 
 .aside-nav__title {
