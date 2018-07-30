@@ -50,7 +50,6 @@ export default class HTML extends React.Component {
             src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"
           />
           {this.props.headComponents}
-          {/* <link rel="shortcut icon" href={favicon} /> */}
 
           <link rel="shortcut icon" type="image/x-icon" href="https://sendgrid.com/brand/favicons/favicon.ico">
           <link rel="apple-touch-icon" sizes="57x57" href="https://sendgrid.com/brand/favicons/apple-icon-57x57.png">
