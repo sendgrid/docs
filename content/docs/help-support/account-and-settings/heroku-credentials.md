@@ -7,7 +7,6 @@ title: Heroku Users - Find your SendGrid Credentials
 weight: 0
 group: account-management
 layout: page
-zendesk_id: 200181998
 navigation:
   show: true
 ---
