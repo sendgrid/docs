@@ -12,9 +12,7 @@ navigation:
   show: true
 ---
 
-_07 April, 2014_
-
-Yahoo mail domains have battened down the hatches, so to speak, and are starting to embrace [DMARC](http://sendgrid.com/blog/dmarc-domain-based-message-authentication-reporting-conformance/) more explicitly. You may have seen an increase in bounce messages with the following explanation:
+Yahoo mail domains are starting to embrace [DMARC](http://sendgrid.com/blog/dmarc-domain-based-message-authentication-reporting-conformance/) more explicitly. You may have seen an increase in bounce messages with the following explanation:
 
 **"554 5.7.9 Message not accepted for policy reasons. See http://postmaster.yahoo.com/errors/postmaster-28.html"  **
 

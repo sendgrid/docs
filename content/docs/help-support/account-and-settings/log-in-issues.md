@@ -21,14 +21,14 @@ Usually this is as simple a retyping one or both fields (you're only human after
 Did you just sign up? If you don't verify your email address we never create your account, so be sure to check your registration email and click on the link we send!
 
 ## Check with other users 	
-You may have at some point shared your credentials with someone else/another department, check with them to make sure they haven't changed anything. Also consider implementing [Teammates]({{root_url}}/help-support/account-and-settings/teammates.html) to set different levels of permissions. 
+You may have at some point shared your credentials with someone else/another department, check with them to make sure they haven't changed anything. Also consider implementing [Teammates]({{root_url}}/help-support/account-and-settings/teammates/) to set different levels of permissions. 
 
 
 ## Reset your password 	
 Sometimes passwords just vanish from memory, it happens to the best of us. Use the reset password link from the login screen to start the reset process via email. **_Be careful_** though, changing your password can break existing API and SMTP integrations you have in production, so be sure to update your password wherever else it is used after resetting.
 
 ## Usernames can be anything 	
-We don't have a strict username syntax policy, so it may be something you wouldn't normally use. Read more about finding and recovering your username [here]({{root_url}}/help-support/account-and-settings/resetting-your-username-and-password.html).
+We don't have a strict username syntax policy, so it may be something you wouldn't normally use. Read more about finding and recovering your username [here]({{root_url}}/help-support/account-and-settings/resetting-your-username-and-password/).
  
 
 ## Bad username/password 	

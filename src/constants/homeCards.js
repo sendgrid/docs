@@ -8,7 +8,7 @@ const HOME_CARDS = [
     ICON: plane,
     TITLE: 'Sending Email',
     LINKS: [
-      { URL: '/help-support/sending-email/how-to-send-email/', TEXTNODE: 'Sending Email with Markting Campaigns' },
+      { URL: '/help-support/sending-email/how-to-send-email/', TEXTNODE: 'Sending Email with Marketing Campaigns' },
       { URL: '/help-support/sending-email/editor/', TEXTNODE: 'The Design & Code Editor' },
       { URL: '/help-support/sending-email/a-b-testing/', TEXTNODE: 'A/B Testing Your Content' },
     ],
@@ -40,7 +40,7 @@ const HOME_CARDS = [
     LINKS: [
       { URL: '/help-support/account-and-settings/resetting-your-username-and-password/', TEXTNODE: 'Resetting Your Username and Password' },
       { URL: '/help-support/account-and-settings/subusers/', TEXTNODE: 'Subusers' },
-      { URL: '/help-support/account-and-settings/reading-your-invoice/', TEXTNODE: 'Reading your invoice' },
+      { URL: '/help-support/account-and-settings/reading-your-invoice/', TEXTNODE: 'Reading Your Invoice' },
     ],
     BUTTON_LINK: '/help-support/account-and-settings/',
   },

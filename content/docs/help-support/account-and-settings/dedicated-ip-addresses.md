@@ -5,7 +5,7 @@ seo:
   keywords: sendgrid ip address, ips, ip addresses, purchase IPs, add, additional, more, new, IP, address, purchase, dedicated, account, another, need, IPs, warmup, sending, originating, originate, plan, reputation, monitoring, monitor
 title: Dedicated IP addresses
 weight: 0
-group: account-management
+group: ip-management
 layout: page
 navigation:
   show: true
@@ -18,7 +18,7 @@ An Internet Protocol (IP) address is a unique numerical address that defines a l
 
 ## 	Why would I want a dedicated IP address?
  	
-If you are sending any significant amount of email, we typically suggest sending your marketing and transactional emails to from separate IP addresses. In addition, it is strongly recommended to associate your sending domain with your new outbound IP address (provided to you by SendGrid).  This is available at no extra cost and can be accomplished by [completing an rDNS setup for your dedicated IP (here's a video tutorial and documentation help)](https://sendgrid.com/docs/Help/Getting_Started/How_to_set_up_reverse_dns/).
+If you are sending any significant amount of email, we typically suggest sending your marketing and transactional emails to from separate IP addresses. In addition, it is strongly recommended to associate your sending domain with your new outbound IP address (provided to you by SendGrid). This is available at no extra cost and can be accomplished by [completing an rDNS setup for your dedicated IP (here's a video tutorial and documentation help)](https://sendgrid.com/docs/help-support/sending-email/how-to-set-up-reverse-dns/).
 
 We also suggest having at least two promotional IP addresses when your volume reaches 200-300K/month.
 

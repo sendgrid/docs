@@ -23,7 +23,7 @@ Enabling Click Tracking causes all the links and URLs in your emails to be overw
 
 For more information about using this app, please refer to [Google’s URL Builder](https://support.google.com/analytics/answer/1033867?hl=en) and their article on "[Best Practices for Campaign Building](https://support.google.com/analytics/answer/1037445)".
 
-We default the settings to Google’s recommendations. Anything you enter into those fields in the app settings or via API will take precedence. For more information see [Google Analytics]({{root_url}}/help-support/analytics-and-reporting/google-analytics/html).
+We default the settings to Google’s recommendations. Anything you enter into those fields in the app settings or via API will take precedence. For more information see [Google Analytics]({{root_url}}/help-support/analytics-and-reporting/google-analytics/).
 
  ### 	Settings
 
