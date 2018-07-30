@@ -31,7 +31,7 @@ Once you have selected the categories, your top most graph will show you how eac
 
 You can remove individual categories from the list of categories you selected initially, by clicking the “Categories” button and unchecking categories. The graph will refresh, showing only the selected categories.
 
-You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview.html#-Statistics-Filters).
+You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview/#-Statistics-Filters).
 
 ## 	Individual Metrics Comparison
 

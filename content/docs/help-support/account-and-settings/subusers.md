@@ -19,16 +19,6 @@ If you have a **Pro plan or higher**, you may create up to 15 Subusers through y
 
 Subusers help you segment your email sending and API activity. You assign permissions and credit limits when you create the Subusers. We recommend creating Subusers for each of the different types of emails you send - so one Subuser for transactional emails, and another for marketing emails. Breaking your sending up this way allows you to get separate statistics for each type of email you send.
 
-- [Create a Subuser](#-Create-a-Subuser)
-- [Manage Subusers](#-Manage-Subusers)
-- [Optional Profile Information](#-Optional-Profile-Information)
-- [Allocating or Removing Credits From a Subuser](#-Allocating-or-Removing-Credits-From-a-Subuser)
-- [Monitoring Subuser email content](#-Monitoring-Subuser-email-content)
-- [Impersonating a Subuser](#-Impersonating-a-Subuser)
-- [Export Subuser Information](#-Export-Subuser-Information)
-- [Disabling a Subuser account](#-Disabling-Subuser-account)
-- [Deleting a Subuser account](#-Deleting-a-Subuser-account)
-
 ## 	Create a Subuser
  	
 New SendGrid accounts do not come with Subusers and must be created by the parent account.
@@ -163,5 +153,5 @@ Deleting a Subuser account cannot be undone. Please make sure that you are ready
 
 ## 	Additional Resources
  	
-- [Assigning a Domain Whitelabel to a subuser]({{root_url}}/Classroom/Basics/Whitelabel/setup_domain_whitelabel.html#-Assigning-a-subuser)
-- [Teammates]({{root_url}}/User_Guide/Settings/teammates.html)
+- [Assigning a Domain Whitelabel to a subuser]({{root_url}}/help-support/sending-email/how-to-set-up-domain-authentication/#assigning-a-subuser/)
+- [Teammates]({{root_url}}/help-spport/account-and-settings/teammates.html)

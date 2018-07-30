@@ -23,11 +23,16 @@ Your SendGrid invoice contains a lot of information, which may be difficult to r
 
 **The email address where you receive SendGrid statements.** By default, this is the primary email address on file in your account. You can update it anytime from the [Plan & Billing Details](https://app.sendgrid.com/settings/billing) page. If you override the billing email address in this way, the primary email address on file will stop receiving invoices.
 
-Need to send invoices to multiple addresses? Consider creating a [role address](https://sendgrid.com/docs/Classroom/Deliver/Address_Lists/role_addresses.html) on your side that includes the all of billing stakeholders in your organization, or send an email to [billing@sendgrid.com](mailto:billing@sendgrid.com).
+Need to send invoices to multiple addresses? Consider creating a role address on your side that includes the all of billing stakeholders in your organization, or send an email to [billing@sendgrid.com](mailto:billing@sendgrid.com).
 
 ## 	3. Charge Summary
+<<<<<<< HEAD
+ 	
+If you are in [a jurisdiction that SendGrid is required to charge sales tax]({{root_url}}/help-support/account-and-settings/taxes-and-tax-exempt/), here is your tax summary:
+=======
 
 If you are in [a jurisdiction that SendGrid is required to charge sales tax]({{root_url}}/help-support/account-and-settings/taxes-and-tax-exempt.html), here is your tax summary:
+>>>>>>> upstream/a-new-hope-episode-iv
 
 ![Tax summary section]({{root_url}}/img/invoice_tax.png)
 
@@ -83,6 +88,12 @@ The Transaction Summary shows the total charges for the month, and the Payment S
 **These line items always reflect the plan you currently have, not necessarily "Pro 100k", which is shown for the purposes of demonstration.**
 
 ## 	Additional Resources
+<<<<<<< HEAD
+ 	
+- [SendGrid Pricing]({{site.site_url}}/pricing/)
+- [Billing]({{root_url}}/help-support/account-and-settings/billing/)
+=======
 
 - [SendGrid Pricing](https://sendgrid.com/pricing/)
 - [Billing]({{root_url}}/help-support/account-and-settings/billing.html)
+>>>>>>> upstream/a-new-hope-episode-iv

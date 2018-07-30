@@ -108,7 +108,7 @@ You will not be charged an email when these reports are forwarded to you.
 
  ### 	Forwarding abuse@ and postmaster@ Emails
  	
-The email address specified in the Forward Spam mail setting may also be used to receive emails sent to abuse@ and postmaster@ role addresses if you have [authenticated your domain]({{root_url}}/help-support/getting-started/how-to-set-up-domain-authentication.html).
+The email address specified in the Forward Spam mail setting may also be used to receive emails sent to abuse@ and postmaster@ role addresses if you have [authenticated your domain]({{root_url}}/help-support/getting-started/how-to-set-up-domain-authentication/).
 
 For example, if you create a valid authenticated domain with a custom return path of `sub` and a root domain `example` *and* have turned on Forward Spam, any emails sent to abuse@sub.example.com or postmaster@sub.example.com will be forwarded to the email address you entered in the Forward Spam mail setting.
 
@@ -122,7 +122,7 @@ For example, if you create a valid authenticated domain with a custom return pat
  	
 <call-out type="warning">
 
-This setting refers to our original Email Templates. We now support more full featured [transactional templates]({{root_url}}/help-support/sending-email/how-to-send-an-email-with-dynamic-transactional-templates.html), with support for multiple templates, versioning and more.
+This setting refers to our original Email Templates. We now support more full featured [transactional templates]({{root_url}}/help-support/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/), with support for multiple templates, versioning and more.
 
 </call-out>
 
@@ -132,7 +132,7 @@ This setting wraps an HTML template around your email content. This can be usefu
  	
 * Status - On or Off
 
-* Template - Click “Edit” to define your HTML template within the WYSIWYG editor.
+* Template - Click **Edit** to define your HTML template within the WYSIWYG editor.
 
 ## 	Plain Content
  	
@@ -166,4 +166,4 @@ We use [SpamAssassin](http://spamassassin.apache.org/full/3.4.x/doc/Mail_SpamAss
 
 * Spam Threshold - Click **Edit** to change the threshold from 1-10 (**see the message above**)
 
-* URL To Post Spam Messages To - Click **Edit** to provide an Inbound Parse URL to send spam messages to, so you can inspect them. If you don't have an Inbound Parse URL, check out [Setting Up The Inbound Parse Webhook]({{root_url}}/for-developers/parsing-email/inbound-email.html).
+* URL To Post Spam Messages To - Click **Edit** to provide an Inbound Parse URL to send spam messages to, so you can inspect them. If you don't have an Inbound Parse URL, check out [Setting Up The Inbound Parse Webhook]({{root_url}}/for-developers/parsing-email/inbound-email/).

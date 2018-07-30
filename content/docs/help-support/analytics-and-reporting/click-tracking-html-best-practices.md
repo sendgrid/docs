@@ -40,5 +40,3 @@ Click tracking can be turned off for individual links by including the `clicktra
 If you have a Pro 100K package or higher and you have whitelabeled your sending IP address, the replaced click tracking links lie under the whitelabeled subdomain. Pro 100K and higher packages that have not whitelabeled, Essentials packages, and Free packages have click tracking links that resolve through one of SendGrid's domains (sendgrid.net, sendgrid.info, sendgrid.me, etc.).
 
 
-
-If you are having issues where click tracking links are being placed properly, but the resultant links simply not working, [check here]({{root_url}}/Classroom/Track/Clicks/click_tracking_links_have_stopped_working.html) for more troubleshooting tips.
