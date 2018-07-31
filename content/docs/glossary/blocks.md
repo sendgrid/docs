@@ -22,5 +22,5 @@ See the block reason column for more detail specific to the blocked email.
 
 Additional Resources:
 
-* [Web API & Blocks]({{root_url}}/API_Reference/Web_API/blocks/)
+* [Web API & Blocks]({{root_url}}/API_Reference/Web_API/blocks.html)
 

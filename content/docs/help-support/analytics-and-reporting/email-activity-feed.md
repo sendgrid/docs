@@ -170,6 +170,6 @@ or
  	
 - [Email Activity API](https://sendgrid.api-docs.io/v3.0/email-activity/filter-all-messages)
 - [Legacy Email Activity](https://sendgrid.com/docs/help-support/analytics-and-reporting/email-activity/)
-- [Getting Started with the Email Activity API](https://sendgrid.com/docs/API_Reference/Web_API_v3/Tutorials/getting_started_email_activity_api/)
-- [Building compound Email Activity queries](https://sendgrid.com/docs/API_Reference/Web_API_v3/Tutorials/getting_started_email_activity_api/#-Creating-compound-queries)
+- [Getting Started with the Email Activity API](https://sendgrid.com/docs/for-developers/sending-email/getting-started-email-activity-api/)
+- [Building compound Email Activity queries](https://sendgrid.com/docs/for-developers/sending-email/getting-started-email-activity-api/#-Creating-compound-queries)
 
