@@ -126,5 +126,5 @@ But wait, there's more...
 Now that you have created a new subuser you can change the [Event Notification URL](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/event_notification_url.html), the subuser's enabled [apps](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/apps.html), and even set [account limits](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/account_limits.html) for the subuser.
 
 <center>
-<p> </p>
+
 </center>
