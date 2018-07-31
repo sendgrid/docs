@@ -9,14 +9,6 @@ seo:
   override: true
   description: Track how many times your emails are opened with SendGrid
 ---
-
-<call-out>
-
-In order to track opens, you must have the [Open Tracking app]({{root_url}}/User_Guide/Settings/tracking.html) enabled.
-
-</call-out>
-
-
 SendGrid inserts a small, transparent image into all emails that will be tracked. When a customer reads an email, their client application loads the tracking image which registers the open event with SendGrid.
 
 Not all email clients load images by default. Microsoft’s Outlook, Apple’s Mail.app, Mozilla’s Thunderbird, and Google’s Gmail do not load images. As such, there may be many occasions where recipients will have received a message, opened it, and it will never be counted as opened because there is no way to track the event.
