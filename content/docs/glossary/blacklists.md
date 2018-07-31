@@ -1,7 +1,5 @@
 ---
-st:
-  published_at: 2016-09-02
-  type: Classroom
+
 seo:
   title: Blacklist
   description: A list of IP addresses that are known to send unsolicited or unwanted emails

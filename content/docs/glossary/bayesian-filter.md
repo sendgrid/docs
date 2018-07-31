@@ -18,7 +18,7 @@ More information about Bayesian filtering can be found [here](https://en.wikiped
 
 Related Articles:
 
-- [Spam]({{root_url}}/glossary/spam.html)
-- [Spam Filter]({{root_url}}/glossary/spam-filter.html)
-- [Spam Reports]({{root_url}}/glossary/spam-reports.html)
-- [Spam Trap]({{root_url}}/glossary/spam-traps.html)
+- [Spam]({{root_url}}/glossary/spam/)
+- [Spam Filter]({{root_url}}/glossary/spam-filter/)
+- [Spam Reports]({{root_url}}/glossary/spam-reports/)
+- [Spam Trap]({{root_url}}/glossary/spam-traps/)

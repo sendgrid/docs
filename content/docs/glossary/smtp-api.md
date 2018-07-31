@@ -10,7 +10,7 @@ navigation:
   show: false
 ---
 
-[SMTP]({{root_url}}/glossary/smtp.html) stands for Simple Mail Transfer Protocol. SMTP allows software to transfer email over the internet. The term API stands for Application Programming Interface, which allows software to talk to each other. Therefore the SMTP API allows two or more software platforms to talk to each other over the internet, based on a set of defined parameters and rules between systems.
+[SMTP]({{root_url}}/glossary/smtp/) stands for Simple Mail Transfer Protocol. SMTP allows software to transfer email over the internet. The term API stands for Application Programming Interface, which allows software to talk to each other. Therefore the SMTP API allows two or more software platforms to talk to each other over the internet, based on a set of defined parameters and rules between systems.
 
 The SendGrid SMTP API gives developers the ability to customize email handling instructions using an X-SMTPAPI header. This JSON header is placed in each email message providing specific instructions on what to do with the email message. The customized header can be added to any SMTP message sent to SendGrid for interpretation by the receiver.
 
@@ -27,6 +27,6 @@ In addition to our SMTP API, we also provide customers a Web API. Unlike the SMT
 Finally, SendGrid also offers custom webhooks and other tools to give customers even more insight into their email programs. Some of our most versatile tools and apps include:
 
 * [Event Webhook]({{root_url}}/for-developers/tracking-events/event/) – This webhook allows customers to automatically receive information about the performance of their email program through JSON posts to a url of their choosing. Event Webhook provides an easy way to track the status of messages and whether they have been delivered to specific email addresses.
-* [Parse Webhook]({{root_url}}/API_Reference/Webhooks/parse.html) – Rather than sending email from an address that doesn’t allow responses, customers can use the Parse Webhook to receive emails and even parse out the content and attachments.
-* [IP Whitelabeling]({{root_url}}/glossary/reverse-dns.html) – If you’re sending email through SendGrid, IP whitelabeling allows you to remove the “sent via SendGrid” address in your messages, giving you a better sending reputation and removing SendGrid from the entire message.
+* [Parse Webhook]({{root_url}}/for-developers/parsing-email/setting-up-the-inbound-parse-webhook/) – Rather than sending email from an address that doesn’t allow responses, customers can use the Parse Webhook to receive emails and even parse out the content and attachments.
+* [IP Whitelabeling]({{root_url}}/glossary/reverse-dns/) – If you’re sending email through SendGrid, IP whitelabeling allows you to remove the “sent via SendGrid” address in your messages, giving you a better sending reputation and removing SendGrid from the entire message.
 * [Transactional templates](https://sendgrid.com/dynamic_templates) – We created transactional templates to make creating different versions of templates easier for marketers and developers. With transactional templates, marketers can create and send email without the assistance of a technical person.

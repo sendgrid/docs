@@ -31,7 +31,7 @@ Make sure your group names and descriptions are customer friendly! Your customer
 
 </call-out>
 
-All of your groups will be visible on the [Suppression Management]({{site.app_url}}/suppressions/advanced_suppression_manager) page, along with the descriptions you defined when you created the groups. There are also [Suppression Management API]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/index/) endpoints for managing your groups and suppressions.
+All of your groups will be visible on the [Suppression Management]({{site.app_url}}/suppressions/advanced_suppression_manager) page, along with the descriptions you defined when you created the groups. There are also [Suppression Management API]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/index.html) endpoints for managing your groups and suppressions.
 
 ## 	Add An Unsubscribe Group
 
@@ -91,10 +91,10 @@ To delete an unsubscribe group, select “Delete” and then “confirm” from 
 
 ## 	Using the API
 
-When you use the [SendGrid API with unsubscribe groups]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/index/), you can include the unsubscribe group ID with your mail send calls. To get the ID, go to your unsubscribe group list and you will find the ID in the “Group ID” column.
+When you use the [SendGrid API with unsubscribe groups]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/index.html), you can include the unsubscribe group ID with your mail send calls. To get the ID, go to your unsubscribe group list and you will find the ID in the “Group ID” column.
 
 ## 	Additional Resources
 
 - [Bounces]({{root_url}}/help-support/sending-email/bounces/)
 - [Group Unsubscribes]({{site.app_url}}/suppressions/group_unsubscribes)
-- [SendGrid API with unsubscribe groups]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/index/)
+- [SendGrid API with unsubscribe groups]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/index.html)

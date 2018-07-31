@@ -110,7 +110,7 @@ The teammate receives a notification email when they are either granted or denie
  	
 ## 	Teammates and API Keys
  	
-API Keys are used to authenticate API calls. Just as a teammate can be given specific permissions, API keys can be assigned specific [permissions]({{root_url}}/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list/) to restrict which API calls they can authenticate.
+API Keys are used to authenticate API calls. Just as a teammate can be given specific permissions, API keys can be assigned specific [permissions]({{root_url}}/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html) to restrict which API calls they can authenticate.
 
 <call-out>
 
@@ -123,6 +123,6 @@ However, a teammate cannot change their own permissions via API key. For example
 
 ## 	Related Resources
  	
-* [API Reference]({{root_url}}/API_Reference/Web_API_v3/teammates/)
+* [API Reference]({{root_url}}/API_Reference/Web_API_v3/teammates.html)
 * [Glossary](https://sendgrid.com/docs/glossary/teammates/)
 
