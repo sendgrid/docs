@@ -49,12 +49,12 @@ You can purchase an additional d IP Address from the IP Addresses Settings page 
 
 Under "Additional Options" you will find the following options:
 
-  - *Use automated IP warmup:* when checked, SendGrid will gradually increase the amount of email sent over this IP. Note: It is best practice to [warm an IP address]({{root_url}}/help-support/getting-started/warming-up-an-ip-address/) over time before sending fully over that IP address. When using automated warm up, you must have at least one other warm IP that can handle the overflow traffic from the IP in warmup.
+  - *Use automated IP warmup:* when checked, SendGrid will gradually increase the amount of email sent over this IP. Note: It is best practice to [warm an IP address]({{root_url}}/help-support/sending-email/warming-up-an-ip-address/) over time before sending fully over that IP address. When using automated warm up, you must have at least one other warm IP that can handle the overflow traffic from the IP in warmup.
   - *Allow my parent account to send mail using these IP addresses:* check this if you want your parent account to be able to send over this IP. If you are assigning this IP to a subuser and only want that subuser to have permission to send on this IP, leave this box unchecked.
   - *Allow my subusers to send mail using these IP addresses:* check this to select which subusers can send on this IP address
 
 
-After purchasing your IP, we strongly encourage you to set up reverse DNS. For more information about setting up reverse DNS, see [How to set up reverse DNS]({{root_url}}/help-support/getting-started/how-to-set-up-reverse-dns/).
+After purchasing your IP, we strongly encourage you to set up reverse DNS. For more information about setting up reverse DNS, see [How to set up reverse DNS]({{root_url}}/help-support/sending-email/how-to-set-up-reverse-dns/).
 
 <call-out>
 
@@ -83,7 +83,7 @@ In addition, SendGrid does offer [Delivery Consultation](https://sendgrid.com/ma
 
 ## 	Warming Up a dedicated IP Address
  	
-For more information on warming up an IP Address, see [Warming up a dedicated IP]({{root_url}}/help-support/getting-started/warming-up-an-ip-address/).
+For more information on warming up an IP Address, see [Warming up a dedicated IP]({{root_url}}/help-support/sending-email/warming-up-an-ip-address/).
 
 ## 	Assigning a Dedicated IP address to a subuser
  	
@@ -103,6 +103,6 @@ You need to have a [subuser]({{root_url}}/help-support/account-and-settings/subu
 
 ## 	Additional Resources
  	
-- [Warming up a dedicated IP]({{root_url}}/help-support/getting-started/warming-up-an-ip-address/)
+- [Warming up a dedicated IP]({{root_url}}/help-support/sending-email/warming-up-an-ip-address/)
 - [API IP Access Management]({{root_url}}/help-support/account-and-settings/ip-access-management/)
 - [SendGrid billing information]({{root_url}}/help-support/account-and-settings/billing/)

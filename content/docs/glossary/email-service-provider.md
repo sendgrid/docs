@@ -20,10 +20,10 @@ Most ESPs include features that allow customers to:
 * Improve email deliverability
 * Monitor statistics of your email campaigns
 
-ESPs like SendGrid also provide expertise on increasing your [email deliverability]({{root_url}}/glossary/email-deliverability.html), preserving your sending reputation. They may utilize features and tools to accomplish this, such as:
+ESPs like SendGrid also provide expertise on increasing your [email deliverability]({{root_url}}/glossary/email-deliverability/), preserving your sending reputation. They may utilize features and tools to accomplish this, such as:
 
-* [IP Whitelabeling]({{root_url}}/glossary/reverse-dns.html)
-* [Dedicated IPs]({{root_url}}/API_Reference/Web_API_v3/IP_Management/index.html)
-* [IP warming]({{root_url}}/help-support/getting-started/warming-up-an-ip-address.html)
+* [IP Whitelabeling]({{root_url}}/glossary/reverse-dns/)
+* [Dedicated IPs]({{root_url}}/API_Reference/Web_API_v3/IP_Management/index/)
+* [IP warming]({{root_url}}/help-support/sending-email/warming-up-an-ip-address/)
 
-An ESP may provide email services via a user interface (UI), or may also be an [SMTP provider]({{root_url}}/glossary/smtp-provider.html). SendGrid provides both services.
+An ESP may provide email services via a user interface (UI), or may also be an [SMTP provider]({{root_url}}/glossary/smtp-provider/). SendGrid provides both services.

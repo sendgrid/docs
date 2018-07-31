@@ -7,7 +7,6 @@ title: HTML Formatting Issues
 group: building-email
 weight: 0
 layout: page
-zendesk_id: 200182068
 navigation:
   show: true
 ---

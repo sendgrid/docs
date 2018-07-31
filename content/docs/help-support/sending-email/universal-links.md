@@ -10,18 +10,6 @@ layout: page
 navigation:
   show: true
 ---
-
-## 	Table of Contents
- 	
-* [What are Universal Links?](#-What-are-universal-links)
-* [Requirements](#-Requirements)
-* [What are "apple-app-site-association" and "digital asset links" files?](#-What-are-appleappsiteassociation-and-digital-asset-links-files)
-* [Setting Up Universal Links Using CloudFront](#-Setting-Up-Universal-Links-Using-CloudFront)
-* [Setting Up Universal Links Using NGINX](#-Setting-Up-Universal-Links-Using-NGINX)
-* [Flagging Your Universal Links](#-Flagging-Your-Universal-Links)
-* [Resolving SendGrid Click Tracking Links](#-Resolving-SendGrid-Click-Tracking-Links)
-
-## 	What are universal links?
  	
 Mobile devices are increasingly becoming the preferred method of receiving, reading, and engaging with email. If you send an email containing a link to your website, but you also have a corresponding mobile application, it is possible to ensure that any recipients who click the link on their mobile device are taken directly to your app instead of their web browsers.
 
@@ -51,7 +39,7 @@ There are several requirements that you must complete before you can begin using
 - Universal links for Android require that you set up an "digital asset links" JSON file, along with configuring intent filters in your Android app's manifest file.
 - Your **apple-app-site-association** and **digital asset links** files must be hosted on an HTTPS web server or content delivery network (CDN).
 - To ensure that your universal links register click tracking events, and to ensure that your recipient is taken to the correct page within your app, you must properly [resolve your links](#-Resolving-SendGrid-Click-Tracking-Links).
-- You must complete the [link branding process]({{root_url}}/help-support/getting-started/how-to-set-up-link-branding.html) for your account. When branding your links, you must use the same domain that will be used for your universal links. (e.g. links.example.com)
+- You must complete the [link branding process]({{root_url}}/help-support/sending-email/how-to-set-up-link-branding.html) for your account. When branding your links, you must use the same domain that will be used for your universal links. (e.g. links.example.com)
 - On iOS, you must include your branded link subdomain in the "Associated Domains" for your app. You can customize your subdoman using the custom return path in advanced settings while setting it up. Using the example above, you'd need to add an entry for "applinks:links.example.com" like this:
 ![]({{root_url}}/images/universal_links_ios.png)
 
@@ -71,7 +59,7 @@ Both "apple-app-site-association" and "digital asset links" files are comprised 
 
 **For detailed instructions on how to configure an iOS "apple-app-site-association" file, please see [Apple's Developer Documentation](https://developer.apple.com/library/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html).**
 
-**For detailed instructions on how to configure an Android "digital asset links" file, please visit [Google's Developer Documentation](https://developers.google.com/digital-asset-links/v1/getting-started).**
+**For detailed instructions on how to configure an Android "digital asset links" file, please visit [Google's Developer Documentation](https://developers.google.com/digital-asset-links/v1/sending-email).**
 
 
  ### 	Example apple-app-site-association file:

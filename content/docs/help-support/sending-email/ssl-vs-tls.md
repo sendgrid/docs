@@ -7,7 +7,6 @@ title: SSL vs. TLS
 group: delivery-optimization
 weight: 0
 layout: page
-zendesk_id: 204577087
 navigation:
   show: true
 ---
@@ -22,7 +21,7 @@ Subsequent versions of TLS — v1.1 and v1.2 are _significantly more secure_ and
 
  
 
-[Read more about configuring ports with SendGrid](https://sendgrid.com/docs/User_Guide/smtp_ports.html)
+[Read more about configuring ports with SendGrid]({{root_url}}/for-developers/sending-email/getting-started-smtp)
 
  
 

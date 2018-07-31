@@ -130,7 +130,7 @@ In your logs, you may see the following error message accompanying a deferral ev
 
 `Email was deferred due to the following reason(s): ["IPs reached ISP-suggested hourly limits" http://send.gd/1uKnEBh]`
 
-This deferral means you've been going over IP warmup limits on a new IP. For more information about IP Warmup, see [Warming up an IP Address]({{root_url}}/help-support/getting-started/warming-up-an-ip-address/).
+This deferral means you've been going over IP warmup limits on a new IP. For more information about IP Warmup, see [Warming up an IP Address]({{root_url}}/help-support/sending-email/warming-up-an-ip-address/).
 
 In your logs, you may see the following error message accompanying a deferral event:
 

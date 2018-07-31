@@ -14,6 +14,6 @@ Whitelabeling refers to the process of showing ISPs that SendGrid has your permi
 
 ## 	Additional Resources
  	
-- [How to set up link branding]({{root_url}}/help-support/getting-started/how-to-set-up-link-branding.html)
-- [How to set up domain authentication]({{root_url}}/help-support/getting-started/how-to-set-up-domain-authentication.html)
-- [How to set up reverse DNS]({{root_url}}/help-support/getting-started/how-to-set-up-reverse-dns.html)
+- [How to set up link branding]({{root_url}}/help-support/sending-email/how-to-set-up-link-branding.html)
+- [How to set up domain authentication]({{root_url}}/help-support/sending-email/how-to-set-up-domain-authentication.html)
+- [How to set up reverse DNS]({{root_url}}/help-support/sending-email/how-to-set-up-reverse-dns.html)

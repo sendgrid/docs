@@ -16,15 +16,14 @@ navigation:
  	
 This example will show you how to create a name substitution for your emails. We will be using the tag {{name}} in this example. In this example the tag {{name}} will get replaced with the name of the recipient.
 
- ### 	Email Content
+ #### 	Email Content
  	
- ### 	Text
  	
 ```
 Hello {{name}},
 ```
 
- ### 	HTML
+ #### 	HTML
  	
 ```html
 <html>
@@ -36,7 +35,7 @@ Hello {{name}},
 </html>
 ```
 
- ### 	X-SMTPAPI Header
+ #### 	X-SMTPAPI Header
  	
 ```json
 {
@@ -51,7 +50,7 @@ Hello {{name}},
 }
 ```
 
- ### 	v3 Mail Send
+ #### 	v3 Mail Send
  	
 ```json
 {
@@ -103,17 +102,17 @@ Hello {{name}},
 }
 ```
 
- ### 	Example Outcome:
+ ####	Example Outcome:
  	
- ### 	example01@domain.com
+  	example01@domain.com
  	
- ### 	Text
+ #### 	Text
  	
 ```
 Hello John,
 ```
 
- ### 	HTML
+ #### 	HTML
  	
 ```html
 <html>
@@ -124,16 +123,16 @@ Hello John,
   </body>
 </html>
 ```
-
- ### 	example02@domain.com
+ #### 	Example Outcome:
+  	example02@domain.com
  	
- ### 	Text
+ #### 	Text
  	
 ```
 Hello Jane,
 ```
 
- ### 	HTML
+ ####	HTML
  	
 ```html
 <html>
@@ -145,15 +144,16 @@ Hello Jane,
 </html>
 ```
 
- ### 	example03@domain.com
+ #### 	Example Outcome:
+ 	example03@domain.com
  	
- ### 	Text
+ #### 	Text
  	
 ```
 Hello Matt,
 ```
 
- ### 	HTML
+ #### 	HTML
  	
 ```html
 <html>
@@ -165,19 +165,17 @@ Hello Matt,
 </html>
 ```
 
-## 	First Name and Last Name Substitutions
+##	First Name and Last Name Substitutions
  	
 This example will show you how to create a first name and last name substitution for your emails. We will be using the tags "{{first_name}}" and "{last_name}}" in this example. In this example the tag {{first_name}} will get replaced with the first name of the recipient and the tag {{last_name}} will get replaced with the last name of the recipient.
-
- ### 	Email Content
  	
- ### 	Text
+ #### 	Text
  	
 ```
 Hello {{first_name}}  {{last_name}},
 ```
 
- ### 	HTML
+ #### 	HTML
  	
 ```html
 <html>
@@ -189,7 +187,7 @@ Hello {{first_name}}  {{last_name}},
 </html>
 ```
 
- ### 	X-SMTPAPI Header
+ #### 	X-SMTPAPI Header
  	
 ```json
 {
@@ -205,7 +203,7 @@ Hello {{first_name}}  {{last_name}},
 }
 ```
 
- ### 	v3 Mail Send
+ #### 	v3 Mail Send
  	
 ```json
 {
@@ -260,17 +258,17 @@ Hello {{first_name}}  {{last_name}},
 }
 ```
 
- ### 	Example Outcome:
+ #### 	Example Outcome:
  	
- ### 	example01@domain.com
+  	example01@domain.com
  	
- ### 	Text
+ #### 	Text
  	
 ```
 Hello John Smith,
 ```
 
- ### 	HTML
+ #### 	HTML
  	
 ```html
 <html>
@@ -281,16 +279,16 @@ Hello John Smith,
   </body>
 </html>
 ```
-
- ### 	example02@domain.com
+ #### 	Example Outcome:
+ 	example02@domain.com
  	
- ### 	Text
+ #### 	Text
  	
 ```
 Hello Jane Williams,
 ```
 
- ### 	HTML
+ #### 	HTML
  	
 ```html
 <html>
@@ -302,15 +300,16 @@ Hello Jane Williams,
 </html>
 ```
 
- ### 	example03@domain.com
+ #### 	Example Outcome:
+ 	example03@domain.com
  	
- ### 	Text
+ #### 	Text
  	
 ```
 Hello Matt Johnson,
 ```
 
- ### 	HTML
+ #### 	HTML
  	
 ```html
 <html>
@@ -325,15 +324,13 @@ Hello Matt Johnson,
 ## 	Simple Greeting Section with Name Substitution
  	
 This example will show you how to create a section as a greeting with a name substitution. We will be using the tags "{{warm_welcome}}", "{{greeting}}" and "{{name}}" in this example. In this example we have created a greeting using the section tag {{warm_welcome}}. The {{warm_welcome}} tag is replaced with the {{greeting}} substitution which calls the section "Hello {{name}},". The {{name}} tag in "Hello {{name}}," is then replaced with the recipients name.
-
- ### 	Email Content
  	
- ### 	Text
+ #### 	Text
  	
 ```
 {{warm_welcome}}	```
 
- ### 	HTML
+ #### 	HTML
  	
 ```html
 <html>
@@ -345,7 +342,7 @@ This example will show you how to create a section as a greeting with a name sub
 </html>
 ```
 
- ### 	X-SMTPAPI Header
+ #### 	X-SMTPAPI Header
  	
 ```json
 {
@@ -364,7 +361,7 @@ This example will show you how to create a section as a greeting with a name sub
 }
 ```
 
- ### 	v3 Mail Send
+ #### 	v3 Mail Send
  	
 ```json
 {
@@ -421,17 +418,17 @@ This example will show you how to create a section as a greeting with a name sub
 }
 ```
 
- ### 	Example Outcome:
+ #### 	Example Outcome:
  	
- ### 	example01@domain.com
+	example01@domain.com
  	
- ### 	Text
+ #### 	Text
  	
 ```
 Hello John,
 ```
 
- ### 	HTML
+ #### 	HTML
  	
 ```html
 <html>
@@ -442,16 +439,16 @@ Hello John,
   </body>
 </html>
 ```
-
- ### 	example02@domain.com
+ #### 	Example Outcome:
+ 	example02@domain.com
  	
- ### 	Text
+ #### 	Text
  	
 ```
 Hello Jane,
 ```
 
- ### 	HTML
+ #### 	HTML
  	
 ```html
 <html>
@@ -462,16 +459,16 @@ Hello Jane,
   </body>
 </html>
 ```
-
- ### 	example03@domain.com
+ #### 	Example Outcome:
+  	example03@domain.com
  	
- ### 	Text
+ #### 	Text
  	
 ```
 Hello Matt,
 ```
 
- ### 	HTML
+ #### 	HTML
  	
 ```html
 <html>
@@ -487,14 +484,14 @@ Hello Matt,
  	
 This example will show you how to create a section with first name and last name substitution for your emails. We will be using the tags "{{warm_welcome}}", "{{greeting}}", "{{first_name}}" and "{{last_name}}" in this example. In this example we have created a greeting using the section tag {{warm_welcome}}. The {{warm_welcome}} tag is replaced with the {{greeting}} substitution which calls the section "Hello {{first_name}} {{last_name}},". The {{first_name}} and {{last_name}} tags in "Hello {{first_name}} {{last_name}}," is then replaced with the recipients first and last names.
 
- ### 	Email Content
  	
- ### 	Text
+ #### 	Text
  	
 ```
-{{warm_welcome}}	```
+{{warm_welcome}}	
+```
 
- ### 	HTML
+#### 	HTML
  	
 ```html
 <html>
@@ -506,7 +503,7 @@ This example will show you how to create a section with first name and last name
 </html>
 ```
 
- ### 	X-SMTPAPI Header
+ #### 	X-SMTPAPI Header
  	
 ```json
 {
@@ -526,7 +523,7 @@ This example will show you how to create a section with first name and last name
 }
 ```
 
- ### 	v3 Mail Send
+ #### 	v3 Mail Send
  	
 ```json
 {
@@ -586,17 +583,17 @@ This example will show you how to create a section with first name and last name
 }
 ```
 
- ### 	Example Outcome:
+ #### 	Example Outcome:
  	
- ### 	example01@domain.com
+	example01@domain.com
  	
- ### 	Text
+ #### 	Text
  	
 ```
 Hello John Smith,
 ```
 
- ### 	HTML
+ #### 	HTML
  	
 ```html
 <html>
@@ -607,16 +604,16 @@ Hello John Smith,
   </body>
 </html>
 ```
-
- ### 	example02@domain.com
+#### 	Example Outcome:
+ 	example02@domain.com
  	
- ### 	Text
+ #### 	Text
  	
 ```
 Hello Jane Williams,
 ```
 
- ### 	HTML
+ #### 	HTML
  	
 ```html
 <html>
@@ -627,16 +624,16 @@ Hello Jane Williams,
   </body>
 </html>
 ```
-
- ### 	example03@domain.com
+#### 	Example Outcome:
+ 	example03@domain.com
  	
- ### 	Text
+ #### 	Text
  	
 ```
 Hello Matt Johnson,
 ```
 
- ### 	HTML
+ #### 	HTML
  	
 ```html
 <html>
@@ -648,18 +645,17 @@ Hello Matt Johnson,
 </html>
 ```
 
-## 	Three Different Greeting Sections with First & Last Name Substitutions
+##	Three Different Greeting Sections with First & Last Name Substitutions
  	
 This example will show you how to create three different sections, each with first name and last name substitution for your emails. We will be using the tags "{{warm_welcome}}", "{{greeting01}}", "{{greeting02}}", "{{greeting03}}", "{{first_name}}" and "{{last_name}}" in this example. In this example we have created three different greetings using the section tag {{warm_welcome}}. The {{warm_welcome}} tag is replaced with either {{greeting01}}, {{greeting02}} or {{greeting03}} substitution. This will call one of the three sections. In each of these sections there is the {{first_name}} and {{last_name}} tags which will get replaced with the recipients first and last names.
-
- ### 	Email Content
  	
- ### 	Text
+ #### 	Text
  	
 ```
-{{warm_welcome}}	```
+{{warm_welcome}}	
+```
 
- ### 	HTML
+ #### 	HTML
  	
 ```html
 <html>
@@ -671,7 +667,7 @@ This example will show you how to create three different sections, each with fir
 </html>
 ```
 
- ### 	X-SMTPAPI Header
+ #### 	X-SMTPAPI Header
  	
 ```json
 {
@@ -693,7 +689,7 @@ This example will show you how to create three different sections, each with fir
 }
 ```
 
- ### 	v3 Mail Send
+ #### 	v3 Mail Send
  	
 ```json
 {
@@ -755,17 +751,17 @@ This example will show you how to create three different sections, each with fir
 }
 ```
 
- ### 	Example Outcome:
+ #### 	Example Outcome:
  	
- ### 	example01@domain.com
+  	example01@domain.com
  	
- ### 	Text
+ #### 	Text
  	
 ```
 Welcome John Smith,
 ```
 
- ### 	HTML
+ #### 	HTML
  	
 ```html
 <html>
@@ -776,16 +772,16 @@ Welcome John Smith,
   </body>
 </html>
 ```
-
- ### 	example02@domain.com
+#### 	Example Outcome:
+  	example02@domain.com
  	
- ### 	Text
+ #### 	Text
  	
 ```
 Hello Jane Williams,
 ```
 
- ### 	HTML
+ #### 	HTML
  	
 ```html
 <html>
@@ -796,16 +792,16 @@ Hello Jane Williams,
   </body>
 </html>
 ```
-
- ### 	example03@domain.com
+#### 	Example Outcome:
+  	example03@domain.com
  	
- ### 	Text
+ #### 	Text
  	
 ```
 Dear Matt Johnson,
 ```
 
- ### 	HTML
+ #### 	HTML
  	
 ```html
 <html>
@@ -820,16 +816,14 @@ Dear Matt Johnson,
 ## 	Three Confirmation Sections and Substitutions
  	
 This example will show you how to create three different sections for confirmation emails. We will be using the tags "{{name}}", "{{confirmations}}", "{{confirmation_001}}", "{{confirmation_002}}", "{{confirmation_003}}" and "{{order_id}}" in this example. In this example we have created three different confirmations using the section tag {{confirmations}}. The {{confirmations}} tag is replaced with either {{confirmation_001}}, {{confirmation_002}} or {{confirmation_003}} substitution. This will call one of the three sections. In each of these sections there is the {{order_id}} tag which will get replaced with the recipients order id.
-
- ### 	Email Content
  	
- ### 	Text
+ #### 	Text
  	
 ```
 Hello {{name}},
 {{confirmations}}	```
 
- ### 	HTML
+ #### 	HTML
  	
 ```html
 <html>
@@ -841,7 +835,7 @@ Hello {{name}},
 </html>
 ```
 
- ### 	X-SMTPAPI Header
+ #### 	X-SMTPAPI Header
  	
 ```json
 {
@@ -859,7 +853,7 @@ Hello {{name}},
 }
 ```
 
- ### 	v3 Mail Send
+ #### 	v3 Mail Send
  	
 ```json
 {
@@ -921,18 +915,18 @@ Hello {{name}},
 }
 ```
 
- ### 	Example Outcome:
+ #### 	Example Outcome:
  	
- ### 	example01@domain.com
+ 	example01@domain.com
  	
- ### 	Text
+ #### 	Text
  	
 ```
 Welcome John,
 Thanks for choosing SendGrid. This email is to confirm that we have processed your order 12345.
 ```
 
- ### 	HTML
+ #### 	HTML
  	
 ```html
 <html>
@@ -944,17 +938,17 @@ Thanks for choosing SendGrid. This email is to confirm that we have processed yo
   </body>
 </html>
 ```
-
- ### 	example02@domain.com
+ #### 	Example Outcome:
+	example02@domain.com
  	
- ### 	Text
+ #### 	Text
  	
 ```
 Hello Jane,
 Thanks for choosing SendGrid. This email is to confirm that we have processed your order 23456. This invoice is to be paid by bank transfer within 7 days from the date of your monthly statement.
 ```
 
- ### 	HTML
+ #### 	HTML
  	
 ```html
 <html>
@@ -966,17 +960,17 @@ Thanks for choosing SendGrid. This email is to confirm that we have processed yo
   </body>
 </html>
 ```
-
- ### 	example03@domain.com
+ #### 	Example Outcome:
+ 	example03@domain.com
  	
- ### 	Text
+ #### 	Text
  	
 ```
 Dear Matt,
 Thanks for choosing SendGrid. This email is to confirm that we have processed your order 34567. You can download your invoice as a PDF for your records.
 ```
 
- ### 	HTML
+ #### 	HTML
  	
 ```html
 <html>
