@@ -2,7 +2,7 @@
 layout: page
 weight: 50
 title: A/B Testing Your Campaign
-group: tracking
+group: building-email
 navigation:
   show: true
 seo:
@@ -35,7 +35,7 @@ You can test up to 6 different variations for each A/B test campaign.
 
 - **Subject Line - Optimize Open Rates**
 
-	Select the Subject Line A/B test to optimize the [Open Rate]({{root_url}}/glossary/open-rate.html) of your email campaign, since the subject usually is all the recipient sees until they open your email.
+	Select the Subject Line A/B test to optimize the [Open Rate]({{root_url}}/glossary/open-rate/) of your email campaign, since the subject usually is all the recipient sees until they open your email.
 
 	High open rates shows the strength of a subject line. Once you find a subject line that works well, you will potentially see other engagement metrics improve as well.
 
@@ -76,11 +76,11 @@ Each variation of the email will be sent to the same number of contacts, within 
 ##  Determine the Winning Criteria for the A/B Test  	
 - **Open Rate**
 
-  SendGrid automatically selects the winning variation based on how many recipients [open]({{root_url}}/glossary/opens.html) your email.
+  SendGrid automatically selects the winning variation based on how many recipients [open]({{root_url}}/glossary/opens/) your email.
 
 - **Click Rate**
 
-  SendGrid automatically selects the winning version based on how many recipients [click]({{root_url}}/glossary/clicks.html) links and engage with the content in your email.
+  SendGrid automatically selects the winning version based on how many recipients [click]({{root_url}}/glossary/clicks/) links and engage with the content in your email.
 
 - **Manual**
 
@@ -134,6 +134,6 @@ If you chose to Manually determine the A/B test winning criteria, you need to re
 
  ### 	Additional Resources
   	
-- [Campaign Statistics]({{root_url}}/help-support/analytics-and-reporting/campaign-stats.html)
-- [Design Editor]({{root_url}}/help-support/sending-email/editor.html#-The-Design-Editor)
-- [Code Editor]({{root_url}}/help-support/sending-email/editor.html#-The-Code-Editor)
+- [Campaign Statistics]({{root_url}}/help-support/analytics-and-reporting/campaign-stats/)
+- [Design Editor]({{root_url}}/help-support/sending-email/editor/#-The-Design-Editor)
+- [Code Editor]({{root_url}}/help-support/sending-email/editor/#-The-Code-Editor)

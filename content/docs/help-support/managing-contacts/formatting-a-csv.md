@@ -64,7 +64,7 @@ Properly format any dates in your CSV. If you created your CSV with Excel and it
 
 Marketing Campaigns uses email as the unique identifier for each contact. So, if you upload the same email address multiple times, the [custom field]({{root_url}}/help-support/sending-email/custom-fields/) data associated with that email will be updated with each upload to the most recently uploaded/updated information. This feature helps prevent you from accidentally emailing the user after they have unsubscribed.
 
-If it's necessary to have a duplicate entry in your contacts database What you may want to do is add logic to set a custom field, based on the reason why you have duplicate emails in your system (for example multiple product lines) and then [segment](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/Managing_Contacts/lists.html) your user to be in lists based on those custom fields.
+If it's necessary to have a duplicate entry in your contacts database What you may want to do is add logic to set a custom field, based on the reason why you have duplicate emails in your system (for example multiple product lines) and then [segment]({{root_url}}/help-support/managing-contacts/managing-contact-list/) your user to be in lists based on those custom fields.
 
 ## 	Troubleshooting
 

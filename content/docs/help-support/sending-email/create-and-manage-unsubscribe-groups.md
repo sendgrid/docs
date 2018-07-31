@@ -13,9 +13,7 @@ navigation:
 
 Adding Unsubscribe Groups to your emails makes it easy to honor your recipients' email preferences and protects your sender reputation by complying with anti-spam legislation. 
  
-{% anchor h2 %}
-Create an Unsubscribe Group
-{% endanchor %}
+## Create an Unsubscribe Group
 
 *To create an Unsubscribe Group:*
 
@@ -23,19 +21,27 @@ Create an Unsubscribe Group
 1. Click **Add Unsubscribe Groups**. 
 1. Add a *Group Name* and *Group Description*. 
 
-{% info %}
+
+<call-out>
+
 Make sure your Group Names and Group Descriptions are customer-friendly. This is what your recipients will see. 
-{% endinfo %}
+
+
+</call-out>
 
 1. Select the checkbox if you want the Unsubscribe Group to display on the unsubscribe preferences page. 
 1. click **Save Unsubscribe Group**. 
 
-{% info %}
-To view the unsubscribe preferences page, select the action menu next to an Unsubscribe Group and then click **Preview**. Toggle to the Unsubscribe Preferences tab to view all of the options listed. {% endinfo %}
 
-{% anchor h2 %}
-Add recipients to an Unsubscribe Group
-{% endanchor %}
+<call-out>
+
+To view the unsubscribe preferences page, select the action menu next to an Unsubscribe Group and then click **Preview**. Toggle to the Unsubscribe Preferences tab to view all of the options listed.
+
+</call-out>
+
+
+
+## Add recipients to an Unsubscribe Group
 
 *To upload a CSV:*
 
@@ -53,15 +59,13 @@ Add recipients to an Unsubscribe Group
 1. Select **Manually Add**. 
 1. Enter a recipient email address and then click **Save**. 
 
-{% anchor h2 %}
-Managing Unsubscribe Groups
-{% endanchor %}
+## Managing Unsubscribe Groups
 
 From the UI, you can edit Unsubscribe Groups or download a list of recipients that have unsubscribed from your emails. For more information on managing unsubscribes, see the SendGrid [Suppressions Overview]({{root_url}}/help-support/sending-email/index-suppressions/#-Managing-Unsubscribes)
 
-{% anchor h3 %}
-Exporting an Unsubscribe Group List
-{% endanchor %}
+
+### Exporting an Unsubscribe Group List
+
 
 *To export an Unsubscribe Group List:*
 
@@ -69,9 +73,7 @@ Exporting an Unsubscribe Group List
 1. Click the action menu.
 1. Select **Export**. A CSV file begins downloading.
 
-{% anchor h3 %}
-Editing an Unsubscribe Group
-{% endanchor %}
+### Editing an Unsubscribe Group
 
 *To edit an Unsubscribe Group:*
 
@@ -80,9 +82,7 @@ Editing an Unsubscribe Group
 1. Select **Edit**. 
 From the Edit Group page, you can change the Group Name, Group Description, and display preferences. 
 
-{% anchor h3 %}
-Deleting an Unsubscribe Group
-{% endanchor %}
+### Deleting an Unsubscribe Group
 
 *To delete an Unsubscribe Group:*
 
@@ -94,10 +94,8 @@ Deleting an Unsubscribe Group
 
 ![]({{root_url}}/img/confirm_unsub_group_delete.png "Confirm Unsubscribe Group Delete")
 
-{% anchor h3 %}
-Additional Resources
-{% endanchor h3 %}
+### Additional Resources
 
 - [Suppressions Overview]({{root_url}}/help-support/sending-email/index-suppressions/)
 - [Group Unsubscribes]({{root_url}}/help-support/sending-email/group-unsubscribes/)
-- [Global Unsubscribes]({{root_url}}/User_Guide/Suppressions/global_unsubscribes/)
+- [Global Unsubscribes]({{root_url}}/help-support/sending-email/global-unsubscribes/)

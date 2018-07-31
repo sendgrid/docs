@@ -32,5 +32,5 @@ This table will refresh with new or adjusted data based on the various filters a
 ## 	Additional Resources
  	
 - [Mailbox Provider Stats]({{site.app_url}}/statistics/mailbox_provider)
-- [Statistics Filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters)
-- [Account Settings]({{root_url}}/User_Guide/Settings/account.html)
+- [Statistics Filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview/#-Statistics-Filters)
+- [Account Settings]({{root_url}}/help-support/account-and-settings/account/)

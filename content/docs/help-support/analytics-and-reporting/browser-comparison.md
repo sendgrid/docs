@@ -3,7 +3,7 @@ seo:
   title: Browser Comparison Statistics
   description: Compare your Browser specific email statistics.
   keywords: Browser comparison statistics, Compare SendGrid Browser statistics
-title: Browser Comparison
+title: Browser Comparison Statistics
 weight: 0
 group: statistics
 layout: page
@@ -37,6 +37,6 @@ You can also choose to show actual counts or percentages, by clicking the corres
 
 ## 	Additional Resources
  	
-- [Statistics Filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview.html#-Statistics-Filters)
+- [Statistics Filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview/#-Statistics-Filters)
 - [Subusers]({{root_url}}/help-support/analytics-and-reporting/subusers/)
 - [Statistics]({{root_url}}/help-support/analytics-and-reporting/stats-overview/)

@@ -49,7 +49,7 @@ Sending to a well-managed address list can drastically help improve your deliver
 
  ### 	Identifying Suppressions
  	
-In your SendGrid Account there are different [Suppressions]({{root_url}}/help-support/sending-email/index-suppressions.html) lists.
+In your SendGrid Account there are different [Suppressions]({{root_url}}/help-support/sending-email/index-suppressions/) lists.
 
 **Global Unsubscribes** - Addresses on this list are opted out of all mailing
 **Bounces** - Addresses that have failed to deliver to the recipient's inbox. Once an address has been added to this list, we do not attempt to deliver further messages to it, we will instead Drop them to protect your external reputation.
@@ -78,7 +78,7 @@ It is common to have contacts that result in a group unsubscribe, block, bounce,
  	
 *To remove one or more contacts from a list:*
 
-1. Navigate to the {All Contacts list](https://sendgrid.com/marketing_campaigns/ui/all_contacts).
+1. Navigate to the [All Contacts list](https://sendgrid.com/marketing_campaigns/ui/all_contacts).
 1. Search for the contact you want to delete.
 1. Click **delete** to remove the contact permanently.
 
@@ -98,6 +98,6 @@ Use this to permanently delete your recipients from all of your contact lists an
 
  ### 	Additional Resources
   	
-- [Segmentation](https://sendgrid.com/docs/help-support/managing-contacts/segmenting-your-contacts.html)
-- [Unsubscribe Groups](https://sendgrid.com/docs/help-support/sending-email/index-suppressions.html)
-- [Custom Fields](https://sendgrid.com/docs/help-support/sending-email/custom-fields.html)
+- [Segmentation](https://sendgrid.com/docs/help-support/managing-contacts/segmenting-your-contacts/)
+- [Unsubscribe Groups](https://sendgrid.com/docs/help-support/sending-email/index-suppressions/)
+- [Custom Fields](https://sendgrid.com/docs/help-support/sending-email/custom-fields/)

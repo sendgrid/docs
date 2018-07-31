@@ -3,7 +3,7 @@ seo:
   title: Geographic Statistics
   description: View and compare your geographic location specific email statistics.
   keywords: Geographic statistics, SendGrid geographic statistics
-title: Geographic
+title: Geographic Statistics
 group: statistics
 weight: 0
 layout: page
@@ -21,7 +21,7 @@ The geographical report shows a map of where your emails are being opened and cl
 
 ## 	Top 5
  	
-The top 5 section will show you the most engaged geographical areas based on the selected metric. By default, clicks are select, but you can change that by choosing a metric from the button at the top of this section. You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview.html#-Statistics-Filters).
+The top 5 section will show you the most engaged geographical areas based on the selected metric. By default, clicks are select, but you can change that by choosing a metric from the button at the top of this section. You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview/#-Statistics-Filters).
 
 ## 	Activity Map
  	
@@ -37,6 +37,6 @@ To see only the figures from a specific geographic area, change the Activity Map
 
 ## 	Additional Resources
  	
-- [Statistics Filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview.html#-Statistics-Filters)
-- [Global Stats]({{root_url}}/API_Reference/Web_API_v3/Stats/global.html)
-- [Timezones]({{root_url}}/glossary/timezone.html)
+- [Statistics Filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview/#-Statistics-Filters)
+- [Global Stats]({{root_url}}/API_Reference/Web_API_v3/Stats/global/)
+- [Timezones]({{root_url}}/glossary/timezone/)
