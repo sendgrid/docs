@@ -12,11 +12,11 @@ navigation:
   show: false
 ---
 
-## _Why_ to integrate Interspire with SendGrid
+## Why to integrate Interspire with SendGrid
 
 Interspire's [Email Marketer](http://www.interspire.com/emailmarketer/) is a powerful email marketing tool used by some SendGrid customers to carry out more in-depth marketing campaigns. Email Marketer has all the bells and whistles of an email marketing suite, and it's really good at helping customers carry out marketing campaigns from start to finish. SendGrid is really good at giving mail senders all the necessary tools to ensure their mail gets delivered to the inbox. This is why some customers choose to create their email marketing campaigns with Interspire and send the mail through SendGrid, to ensure optimized deliverability of the mail to the inbox. Luckily, Interspire makes this integration with SendGrid simple.
 
-## _How_ to integrate Interspire with SendGrid
+## How to integrate Interspire with SendGrid
 
 First things first, you'll need to log into your Email Marketer account. Once you've done that you can set the application's outbound mail server to point to SendGrid, allowing you to send the mail to us so we can send it to the end recipient. You'll want to navigate to the Dashboard within the account, which should look like this: ![Interspire_doc.1.png](https://sendgrid.zendesk.com/attachments/token/adaznndwouktdj1/?name=Interspire_doc.1.png)
 

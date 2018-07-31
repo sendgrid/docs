@@ -32,7 +32,7 @@ If the email address is on the Unsubscribe list the reason will say "Unsubscribe
 
 1. Email triggers SendGrid's spam filters if you have the [Spam Checker filter]({{root_url}}/User_Guide/Settings/mail.html#-Spam-Checker) enabled. You can identify these drops only through the data received through the [Event Webhook]({{root_url}}/for-developers/tracking-events/event/) or in [Email Activity]({{root_url}}/User_Guide/email_activity_feed.html). In both cases, the reason displayed will say "Spam Content".
 
-2. The SMTPAPI header is built incorrectly - this will cause the emails to be dropped with the reason "Invalid SMTPAPI header". For more details about how to build the SMTPAPI header, please view our documentation on [SMTP API]({{root_url}}/API_Reference/SMTP_API/index.html).
+2. The SMTPAPI header is built incorrectly - this will cause the emails to be dropped with the reason "Invalid SMTPAPI header". For more details about how to build the SMTPAPI header, please view our documentation on [SMTP API]({{root_url}}/for-developers/sending-email/building-an-smtp-email/).
 
 3. Duplicate message - emails are dropped with this reason only when they are sent through the Marketing Email App or through the Marketing API. If a recipient's address is showing on multiple lists and you assign those lists to one campaign, our systems automatically identify that the address is on multiple lists and drops the duplicate messages. This prevents having the same message sent to the same recipient multiple times.
 

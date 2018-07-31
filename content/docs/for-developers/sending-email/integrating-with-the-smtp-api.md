@@ -11,10 +11,6 @@ navigation:
   show: true
 ---
 
-- [Integrating with SendGrid](#-Integrating-with-SendGrid])
-- [Ports](#-SMTP-Ports)
-- [Rate limits](#-Rate-limits)
-
 ## 	Integrating with Sendgrid
 
 *To integrate with SendGrids SMTP API:*
@@ -30,8 +26,8 @@ Now that you've integrated, learn to [build SMTP email]({{root_url}}/for-develop
 
  ### 	SMTP Ports
 
-- For an unencrypted or a [TLS connections]({{root_url}}//help-support/sending-email/ssl-vs-tls.html), use port `25`, `2525`, or `587`.
-- For a [SSL connections]({{root_url}}https://sendgrid.com/docs/help-support/sending-email/tls.html), use port `465`.
+- For an unencrypted or a [TLS connections]({{root_url}}/help-support/sending-email/ssl-vs-tls.html), use port `25`, `2525`, or `587`.
+- For a [SSL connections]({{root_url}}/help-support/sending-email/tls.html), use port `465`.
 
  ### 	Rate limits
 
@@ -40,7 +36,8 @@ Now that you've integrated, learn to [build SMTP email]({{root_url}}/for-develop
 
 ## 	Additional Resources
 
-- [Sending email]({{root_url}}/help-support/sending-email/how-to-send-email.html)
+
+- [Sending email]({{root_url}}/help-support/sending-email/how-to-send-email/)
 - [Getting Started with the API]({{root_url}}/API_Reference/api_v3.html)
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
 - [Getting Started with the SMTP API]({{root_url}}/for-developers/sending-email/getting-started-smtp/)

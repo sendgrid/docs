@@ -43,7 +43,8 @@ Using both `send_at` and `send_each_at` is not valid. Setting both causes your r
 
 To schedule a send request for a large batch of emails, use the `send_at` parameter which will send all emails at approximately the same time. `send_at` is a [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time).
 
-<h4>Example of send_at email header</h4>
+
+### Example of send_at email header
 ```json
 {
   "send_at": 1409348513
@@ -54,7 +55,8 @@ To schedule a send request for a large batch of emails, use the `send_at` parame
 
 To schedule a send request for individual recipients; use `send_each_at` to send emails to each recipient at the specified time. `send_each_at` is a sequence of UNIX timestamps, provided as an array. There must be one timestamp per email you wish to send.
 
-<h4>Example of send_each_at email header</h4>
+
+### Example of send_each_at email header
 ```
 {
   "to": [
@@ -75,7 +77,8 @@ To schedule a send request for individual recipients; use `send_each_at` to send
 
 To allow for the cancellation of a scheduled send, you must include a `batch_id` with your send. To generate a valid `batch_id`, use the [batch id generation endpoint]({{root_url}}/API_Reference/Web_API_v3/cancel_scheduled_send.html#Cancel-Scheduled-Sends). A `batch_id` is valid for 10 days (864,000 seconds) after generation.
 
-<h4>Example of including a batch_id</h4>
+
+### Example of including a batch_id
 ```
 {
   "to": [

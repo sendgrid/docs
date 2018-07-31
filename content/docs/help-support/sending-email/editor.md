@@ -175,6 +175,7 @@ Substitution tags allow you to easily generate dynamic content for each recipien
    <td>Weblink</td>
  </tr>
 </table>
+
 &ast; For your convenience, these substitution tags are included by default in the Unsubscribe Module found on the Build tab of the Design Editor.
 
 <call-out>

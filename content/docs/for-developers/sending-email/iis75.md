@@ -14,7 +14,7 @@ This document was written using Windows Server 2008 R2 running IIS version 7.5 a
 </call-out>
 
 ## 	IIS 7.5 Configuration
- 	
+
 Before you get going, you'll need to set up IIS in order to support SendGrid integration. This tutorial assumes that you have set up a working site and that the root directory tests as valid.
 
 1. Open IIS 7.0/7.5 Manager in Windows
@@ -40,7 +40,7 @@ If you want to configure additional security to the localhost IIS 6.0 server you
 </call-out>
 
 ## 	Enable SMTP Service:
- 	
+
 1. Go to Start \> All Programs \> Administrative Tools \> Server Manager
 2. Click on the Features item in the navigation pane
 3. Click the Add Features link to start the wizard
@@ -52,7 +52,7 @@ If you want to configure additional security to the localhost IIS 6.0 server you
 Once the SMTP Server service is installed, the IIS 6.0 virtual server technology is activated, and the IIS 6.0 administration snap-in will now be active.
 
 ## 	Configure IIS 6.0 to Relay Outbound Email to SendGrid
- 	
+
 1. Go to Start \> All Programs \> Administrative Tools \> IIS 6.0 Manager
 2. Right click on the SMTP Virtual Server \#1 and select the Properties option
 3. Click the box to enable logging section to assist you in configuring the server
@@ -73,14 +73,14 @@ Once the SMTP Server service is installed, the IIS 6.0 virtual server technology
 ## 	Configure Domains
  	At this point you will need to configure an SMTP domain that relays messages to SendGrid. Please follow [Microsoft's instructions](http://www.microsoft.com/technet/prodtechnol/WindowsServer2003/Library/IIS/e2156172-7118-4ff2-9a6a-1b7dd52580fa.mspx?mfr=true).
 ## 	Testing Your New Configuration
- 	
+
 First, let's test using Telnet. Open up a telnet client within Windows. You do that in the Command Prompt by entering the following:
 
 ```
 telnet localhost 25
 ```
 
-<p>Now, with telnet running, enter the following commands just as you see them, pressing ENTER for each new line (if configured correctly, the server won't do anything until you enter the period):</p>
+Now, with telnet running, enter the following commands just as you see them, pressing ENTER for each new line (if configured correctly, the server won't do anything until you enter the period):
 
 ```
 EHLO yourdomain.com
