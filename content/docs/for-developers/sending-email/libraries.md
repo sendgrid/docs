@@ -26,7 +26,7 @@ SendGrid maintains the following official libraries for mail sending.
 -   [sendgrid-ruby](http://github.com/sendgrid/sendgrid-ruby) - Official Ruby library
 
 
-The following official libraries are maintained by SendGrid to create [SMTP API Headers]({{root_url}}/API_Reference/SMTP_API/index.html), they are included in the above official libraries.
+The following official libraries are maintained by SendGrid to create [SMTP API Headers]({{root_url}}/for-developers/sending-email/building-an-smtp-email/), they are included in the above official libraries.
 
 -   [smtpapi-csharp](http://github.com/sendgrid/smtpapi-csharp) - Official C\# SMTP API library
 -   [smtpapi-go](http://github.com/sendgrid/smtpapi-go) - Official Go SMTP API library

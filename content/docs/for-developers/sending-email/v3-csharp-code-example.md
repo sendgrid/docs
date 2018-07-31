@@ -9,7 +9,7 @@ navigation:
 
 <call-out>
 
-We recommend using SendGrid C#, our client library, <a href="https://github.com/sendgrid/sendgrid-csharp">available on Github</a>, with full documentation.
+We recommend using SendGrid C#, our client library, [available on Github](https://github.com/sendgrid/sendgrid-csharp), with full documentation.
 
 </call-out>
 

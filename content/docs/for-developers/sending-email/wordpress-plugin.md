@@ -14,7 +14,7 @@ navigation:
  show: true
 ---
 ## 	What is the SendGrid WordPress Plugin?
- 	
+
 SendGrid's cloud-based email infrastructure relieves businesses of the cost and complexity of maintaining custom email systems. SendGrid provides reliable deliverability, scalability, and real-time analytics along with flexible APIs that make custom integration with your application a breeze.
 
 SendGrid’s [WordPress plugin](https://wordpress.org/plugins/sendgrid-email-delivery-simplified/) replaces WordPress’s default **wp_mail()** function by using either an SMTP or API integration with SendGrid to send outgoing email from your WordPress installation. It also allows you to upload contacts directly to your SendGrid [Marketing Campaigns]({{root_url}}/User_Guide/Marketing_Campaigns/index.html) account via a [subscription widget]({{root_url}}/for-developers/managing-contacts/wordpress-subscription-widget.html).
@@ -22,7 +22,7 @@ SendGrid’s [WordPress plugin](https://wordpress.org/plugins/sendgrid-email-del
 By using the SendGrid plugin, you will be able to take advantage of improved deliverability and an expanded feature set, including tracking and analytics, to enhance user engagement on your WordPress installation. SendGrid also provides world class customer support, should you run into any issues.
 
 ## 	Installing SendGrid’s WordPress Plugin
- 	
+
 In order to send emails through SMTP, you first need to install the [Swift Mailer](https://wordpress.org/plugins/swift-mailer/) plugin.
 
 To get the SendGrid plugin running after you have activated Swift Mailer, navigate to Settings and enter your SendGrid credentials. Finally, select how you want your email to be delivered: either via SMTP or API.
@@ -46,13 +46,13 @@ When using the SMTP method you must also define the `To` address. It does not ma
 Emails are automatically tracked, allowing you to retrieve delivery and engagement statistics from within the SendGrid Dashboard. You can also specify certain [categories](#-How-to-Use-Categories) for any of your emails to help you organize them by type.
 
 ## 	Configuring SendGrid’s WordPress Plugin
- 	
+
 While it is possible to simply install and configure the SendGrid plugin for WordPress as described above to immediately begin sending your emails through SendGrid, you may take steps to further customize the SendGrid WordPress plugin.
 
 The following explanations and examples show how you can use SendGrid to adjust WordPress’s `wp_mail()` function.
 
  ### 	The wp_mail() Function
- 	
+
 The SendGrid plugin makes adjustments to the `wp_mail()` function so that all emails sent from WordPress are delivered by SendGrid.
 
 You can send emails using the following function:
@@ -87,9 +87,9 @@ remove_filter('wp_mail_content_type', 'set_html_content_type');
 ```
 
 ## 	Sending HTML In Your Email Using Different Headers
- 	
+
  ### 	Using an Array to Set Your Headers
- 	
+
 ```php
 $subject = 'Test SendGrid plugin';
 $message = 'testing WordPress plugin';
@@ -113,7 +113,7 @@ remove_filter('wp_mail_content_type', 'set_html_content_type');
 ```
 
  ### 	Using SendGrid\Email() to Set Your Headers
- 	
+
 ```php
 $subject = 'Test SendGrid plugin';
 $message = 'testing WordPress plugin';
@@ -138,7 +138,7 @@ remove_filter('wp_mail_content_type', 'set_html_content_type');
 ```
 
 ## 	Substitution Tags and Sections
- 	
+
 ```php
 $subject = 'Hey %name%, you work at %place%';
 $message = 'testing WordPress plugin';
@@ -160,7 +160,7 @@ $mail = wp_mail($to, $subject, $message, $headers);
 For more examples of how you can use SendGrid SMTPAPI headers, please visit the [SendGrid PHP Library on GitHub](https://github.com/sendgrid/sendgrid-php#smtpapi).
 
 ## 	How to Use Categories
- 	
+
 You can use [categories]({{root_url}}/User_Guide/Statistics/categories.html) to help organize and track the emails sent from WordPress via the SendGrid plugin.
 
 Categories used for emails can be set either globally, or on an email-by-email basis.
@@ -176,7 +176,7 @@ $headers[] = 'categories: category1, category2';
 If you would like to configure categories for statistics tracking, simply set your desired category as the value of the 'Categories' field in the 'Statistics settings' section.
 
 ## 	Multisite
- 	
+
 If you are using the SendGrid plugin in a multisite environment, you need to enable it for use across your multisite network.
 
 Simply navigate to **My Sites**, click on **Network Admin**, and select **Plugins**.
@@ -197,4 +197,4 @@ If you have already installed the SendGrid plugin in a multisite environment and
 
 ## 	Related content
  	* [SendGrid's WordPress Subscription Widget]({{root_url}}/for-developers/managing-contacts/wordpress-subscription-widget.html)
-* [SendGrid's WordPress Integration FAQ]({{root_url}}/Integrate/Tutorials/WordPress/wordpress_integration_faq.html)
+* [SendGrid's WordPress Integration FAQ]({{root_url}}/for-developers/sending-email/wordpress-faq/)

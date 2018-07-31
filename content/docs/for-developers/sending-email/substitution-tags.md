@@ -11,13 +11,14 @@ navigation:
   show: true
 ---
 
-<p>Substitution tags allow you to generate dynamic content for each recipient on your list. When you send to a list of recipients over SMTP API, you can specify substitution tags specific to each recipient. For example, a first name that will then be inserted into an opening greeting like the following, where each recipient sees -firstName- replaced with their first name.</p>
+Substitution tags allow you to generate dynamic content for each recipient on your list. When you send to a list of recipients over SMTP API, you can specify substitution tags specific to each recipient. For example, a first name that will then be inserted into an opening greeting like the following, where each recipient sees -firstName- replaced with their first name.
 
 ```html
 "Dear -firstName-"
 ```
 
-<p>These tags can also be used in more complex scenarios. For example, you could use a -customerID- to build a custom URL that is specific to that user.</p>
+These tags can also be used in more complex scenarios. For example, you could use a -customerID- to build a custom URL that is specific to that user.
+
 
 ### A customer specific ID can replace -customerID- in the URL within your email
 ```html
@@ -75,7 +76,8 @@ Email HTML content:
 
 <p>An accompanying SMTP API JSON header might look something like this:</p>
 
-```json{
+```json
+{
   "to": [
     "example@example.com",
     "example@example.com"

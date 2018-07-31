@@ -63,7 +63,7 @@ Storage integrations are infinitely flexible, but here are some popular options:
 - SendGrid's [open source Event Kit](https://github.com/sendgrid/eventkit-rails) stores the data on a Heroku instance.
 - SendGrid's partner, Keen.io provides a platform to analyze, visualize, and store SendGrid Event data. For more information about getting started with Keen IO, see the [Keen.io Getting Started page](https://sendgrid.com/docs/help-and-support/analytics-and-reporting/tracking-data-with-keen-io).
 - You could also use [Snowplow](https://github.com/snowplow/snowplow/wiki/SendGrid-webhook-setup), a web open source platform that supports SendGrid and stores the data on Amazon Redshift.
-- Several open source web libraries support SendGrid's Event Webhook. For a full list of these libraries, see the [Webhook libraries section]({{root_url}}/Integrate/libraries.html#-Webhook-Libraries) of our API Libraries list.
+- Several open source web libraries support SendGrid's Event Webhook. For a full list of these libraries, see the [Webhook libraries section]({{root_url}}/for-developers/sending-email/libraries/) of our API Libraries list.
 
 <call-out type="warning">
 
@@ -84,5 +84,5 @@ If you want to receive encrypted posts, your callback URL needs to support TLS 1
 - [Event Webhook reference]({{root_url}}/for-developers/tracking-events/event/)
 - [Troubleshooting the Event Webhook]({{root_url}}/for-developers/tracking-events/troubleshooting/)
 - [An Event Webhook case study](https://sendgrid.com/blog/leveraging-sendgrids-event-api/)
-- [Webhook web libraries]({{root_url}}/Integrate/libraries.html#-Webhook-Libraries)
+- [Webhook web libraries]({{root_url}}/for-developers/sending-email/libraries/)
 - [Getting started with Keen.io](https://sendgrid.com/docs/help-and-support/analytics-and-reporting/tracking-data-with-keen-io/)

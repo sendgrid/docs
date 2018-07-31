@@ -14,6 +14,6 @@ The documentation that accompanies the body of an email message, the header cont
 
 More information:
 
-* [Managing headers with SMTPAPI]({{root_url}}/API_Reference/SMTP_API/index.html)
+* [Managing headers with SMTPAPI]({{root_url}}/for-developers/sending-email/building-an-smtp-email/)
 * [Managing headers with the Web API]({{root_url}}/API_Reference/Web_API/mail.html#-send)
 * [Transactional Email Templating]({{root_url}}/help-support/sending-email/create-and-edit-transactional-templates.html)
