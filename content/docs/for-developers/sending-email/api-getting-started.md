@@ -73,6 +73,6 @@ All responses are returned in JSON format. We specify this by sending the ``Cont
  	
 For more information on SendGrid and where you can go from here, check out these pages:
 
-- [API Reference]({{root_url}}/API_Reference/api_v3.html)
+- [API Reference]({{root_url}}/api-reference/.html)
 - [Sender Authentication]({{root_url}}/help-support/sending-email/how-to-set-up-domain-authentication.html)
 - [How to Send Email]({{root_url}}/help-support/sending-email/how-to-send-email.html)

@@ -55,7 +55,7 @@ Allows you to set a schedule for SendGrid to automatically delete contacts from 
  	
 The Event Notification setting controls webhook notifications for events, such as bounces, clicks, opens, and more. This setting allows these events to be POSTed to a URL of your choosing.
 
-Please see our technical [Event Webhook API docs](/API_Reference/Webhooks/event/) for more information about Event Webhook.
+Please see our technical [Event Webhook API docs]({{root_url}}/for-developers/tracking-events/getting-started-event-webhook/) for more information about Event Webhook.
 
 **Settings**
  	
