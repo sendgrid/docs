@@ -26,7 +26,7 @@ SendGrid automatically enables DKIM for all email to improve your [email deliver
 
 ## 	Automated Security and Your DKIM Signature
 
-When you set up a [authenticated domain]({{root_url}}/help-support/sending-email/how-to-set-up-domain-authentication.html), you will be given the option of using [automated or manual security]({{root_url}}//help-support/sending-email/how-to-set-up-domain-authentication.html#-Using-automated-security). When you select automated security, SendGrid will manage your DKIM and SPF records for you. This means that whenever you make a change to your account that could impact your deliverability, such as adding a new dedicated sending [IP address]({{root_url}}/glossary/ip-address.html), SendGrid will automatically update your DNS settings and your DKIM signature.
+When you set up a [authenticated domain]({{root_url}}/help-support/sending-email/how-to-set-up-domain-authentication.html), you will be given the option of using [automated or manual security]({{root_url}}//help-support/sending-email/how-to-set-up-domain-authentication/#-Using-automated-security). When you select automated security, SendGrid will manage your DKIM and SPF records for you. This means that whenever you make a change to your account that could impact your deliverability, such as adding a new dedicated sending [IP address]({{root_url}}/glossary/ip-address/), SendGrid will automatically update your DNS settings and your DKIM signature.
 
 **SendGrid will always provide you with a custom DKIM signature. However, your custom DKIM signature is only automatically updated if you select automated security when authenticating your domain. If you turn automated security OFF, you will be responsible for updating your DKIM signature whenever you make a change to your sending domain.**
 
@@ -51,10 +51,3 @@ s1.domainkey.yourdomain.com. | TXT | k=rsa; t=s; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNA
 s2.domainkey.yourdomain.com. | TXT | v=spf1 include:sendgrid.net ~all
 
 ```
-
-
-Additional resources:
-
-* [Internet Standards (SPF and DKIM) and Deliverability]({{root_url}}/Classroom/Deliver/Sender_Authentication/internet_standards_spf_and_dkim_and_deliverability.html)
-* [the DKIM.org website](http://www.dkim.org/)
-* [DNS Records and Underscores]({{root_url}}/Classroom/Troubleshooting/Authentication/dns_records_and_underscores.html)

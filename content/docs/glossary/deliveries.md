@@ -16,4 +16,4 @@ If an email is indicated as delivered you can be certain that it was not deferre
 
 Related to delivery is deliverability, which is the measurement of email that reaches the inbox. So while an email could be "delivered" (i.e. accepted by the recipient email server), 100% "deliverability" would only be achieved if that email was then delivered to the recipient's inbox.
 
-Visit [Statistics]({{root_url}}/User_Guide/Statistics/index.html) to find more information about all the statistics SendGrid provides.
+Visit [Statistics]({{root_url}}/help-support/analytics-and-reporting/stats-overview/) to find more information about all the statistics SendGrid provides.

@@ -12,4 +12,4 @@ navigation:
 
 A mailbox provider, mail service provider or Email Service Provider (ESP) is a service organization that provides transactional and/or marketing email services.
 
-More info here: [Email Service Provider (ESP)](https://sendgrid.com/docs/glossary/email-service-provider.html)
+More info here: [Email Service Provider (ESP)](https://sendgrid.com/docs/glossary/email-service-provider/)

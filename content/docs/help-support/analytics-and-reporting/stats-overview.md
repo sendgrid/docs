@@ -119,7 +119,7 @@ These filters are available on most of the statistics pages. They will help you 
 ## 	Additional Resources
  	
 <ul>
-  <li><a href="{{root_url}}/API_Reference/Web_API_v3/Stats/index/" target="_blank">Stats Overview</a></li>
-  <li><a href="{{root_url}}/API_Reference/Web_API/Statistics/index/" target="_blank">General analytics-and-reporting</a></li>
-  <li><a href="{{root_url}}/API_Reference/Web_API/Statistics/statistics_advanced/" target="_blank">Advanced analytics-and-reporting</a></li>
+  <li><a href="{{root_url}}/API_Reference/Web_API_v3/Stats/index.html" target="_blank">Stats Overview</a></li>
+  <li><a href="{{root_url}}/API_Reference/Web_API/Statistics/index.html" target="_blank">General analytics-and-reporting</a></li>
+  <li><a href="{{root_url}}/API_Reference/Web_API/Statistics/statistics_advanced.html" target="_blank">Advanced analytics-and-reporting</a></li>
 </ul>

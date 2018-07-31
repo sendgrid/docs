@@ -26,5 +26,5 @@ When you select the checkboxes next to the recipient names or select all, using 
 
 ## 	Additional Resources
  	
-- [Spam Reports API]({{root_url}}/API_Reference/Web_API_v3/spam_reports/)
-- [Invalid Emails API]({{root_url}}/API_Reference/Web_API_v3/invalid_emails/)
+- [Spam Reports API]({{root_url}}/API_Reference/Web_API_v3/spam_reports.html)
+- [Invalid Emails API]({{root_url}}/API_Reference/Web_API_v3/invalid_emails.html)
