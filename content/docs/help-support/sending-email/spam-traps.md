@@ -19,7 +19,7 @@ Spam Traps are simply ways to identify and monitor spam. Creating them is as eas
 
 There are a wide variety of spam traps. Sources for spam traps are usually old addresses that were used as role addresses (sales@ info@ support@) in domain registrations or email addresses that were once valid but have been reassigned for trapping spam. This type of spam trap has once opted in to receive email and was likely published on a page somewhere online. (This is not that case for dictionary attackers since they generate millions of randomized addresses at common domains i.e. example@example.com, example@example.com and so on.)
 
-Spam traps are so important because so many large ISPs, spam filter providers and Domain Name System [blacklists]({{root_url}}/glossary/blacklists.html) use them. In short, sending an email to a spam trap can lead directly to being blacklisted by the organization that set up the trap. Remember that blacklisting can ruin a business’s reputation and halt further email deliverability.
+Spam traps are so important because so many large ISPs, spam filter providers and Domain Name System [blacklists]({{root_url}}/glossary/blacklists/) use them. In short, sending an email to a spam trap can lead directly to being blacklisted by the organization that set up the trap. Remember that blacklisting can ruin a business’s reputation and halt further email deliverability.
 
 **How a Spam Trap Ended Up on a List** :
 
@@ -27,7 +27,7 @@ Spam traps are so important because so many large ISPs, spam filter providers an
 
 The second critical aspect to pay attention to is **list contamination**. List contamination is when an email address that is a spam trap was added deliberately or accidentally to an unconfirmed list. (This is a list with single opt-in or notified opt-in)  To avoid list contamination make sure to check the correct spelling of the list’s email addresses and take advantage of double opt-in for every list.
 
-The last important tool in avoiding spam traps is the **age of the list**. Like previously mentioned, spam traps are sometimes sourced in outdated email addresses that are no longer valid. Going for long periods of time (over one year) without sending mail to an address can lead to getting caught in a spam trap. To prevent this type of spam trap, [clean out old addresses]({{root_url}}/help-support/managing-contacts/managing-contact-list.html).
+The last important tool in avoiding spam traps is the **age of the list**. Like previously mentioned, spam traps are sometimes sourced in outdated email addresses that are no longer valid. Going for long periods of time (over one year) without sending mail to an address can lead to getting caught in a spam trap. To prevent this type of spam trap, [clean out old addresses]({{root_url}}/help-support/managing-contacts/managing-contact-list/).
 
  
 
@@ -35,7 +35,7 @@ The last important tool in avoiding spam traps is the **age of the list**. Like 
 
  
 
-Removing a spam trap is tricky business not to mention time consuming. It is inefficient and expensive to throw out a whole list and one way to avoid this is [list segmentation]({{root_url}}/help-support/managing-contacts/segmenting-your-contacts.html). Identify clean list segments that are free of any possible spam traps. If an address has not opened any emails for over six months, it may be a spam trap and should be sent one last [confirmatory email]({{root_url}}/glossary/reconfirmation.html). Clean list segments need not be sent a confirmatory email. 
+Removing a spam trap is tricky business not to mention time consuming. It is inefficient and expensive to throw out a whole list and one way to avoid this is [list segmentation]({{root_url}}/help-support/managing-contacts/segmenting-your-contacts/). Identify clean list segments that are free of any possible spam traps. If an address has not opened any emails for over six months, it may be a spam trap and should be sent one last [confirmatory email]({{root_url}}/glossary/reconfirmation/). Clean list segments need not be sent a confirmatory email. 
 
 Why not repermission the whole list? Because confirming every subscriber’s consent to receive emails isn’t ideal. Subscribers who want to continue to receive mail may not re-subscribe because they did not notice the email or just forgot to reconfirm. 
 

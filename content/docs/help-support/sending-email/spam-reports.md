@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-[Spam reports]({{root_url}}/glossary/spam-reports.html) happen when a recipient indicates that they think your email is [spam]({{root_url}}/glossary/spam.html) and then their email provider tells SendGrid. The list provided here can be filtered by email address or date.
+[Spam reports]({{root_url}}/glossary/spam-reports/) happen when a recipient indicates that they think your email is [spam]({{root_url}}/glossary/spam/) and then their email provider tells SendGrid. The list provided here can be filtered by email address or date.
 
 ## 	Searching Spam Reports by Date
  	
@@ -26,5 +26,5 @@ When you select the checkboxes next to the recipient names or select all, using 
 
 ## 	Additional Resources
  	
-- [Spam Reports API]({{root_url}}/API_Reference/Web_API_v3/spam_reports.html)
-- [Invalid Emails API]({{root_url}}/API_Reference/Web_API_v3/invalid_emails.html)
+- [Spam Reports API]({{root_url}}/API_Reference/Web_API_v3/spam_reports/)
+- [Invalid Emails API]({{root_url}}/API_Reference/Web_API_v3/invalid_emails/)

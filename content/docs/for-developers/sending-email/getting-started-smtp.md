@@ -13,12 +13,12 @@ navigation:
 
 <iframe src="https://player.vimeo.com/video/190122014" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-You can also send email with [the UI]({{root_url}}/help-support/getting-started/how-to-send-email.html) and with [the API]({{root_url}}/API_Reference/api_v3.html).
+You can also send email with [the UI]({{root_url}}/help-support/getting-started/how-to-send-email/) and with [the API]({{root_url}}/API_Reference/api_v3/).
 
 
 ## What is SMTP?
 
-[SMTP]({{root_url}}/glossary/smtp.html), or _simple mail transfer protocol_, is a quick and easy way to send email from one server to another. SendGrid provides an SMTP service that allows you to deliver your email via our server instead of your client or server.
+[SMTP]({{root_url}}/glossary/smtp/), or _simple mail transfer protocol_, is a quick and easy way to send email from one server to another. SendGrid provides an SMTP service that allows you to deliver your email via our server instead of your client or server.
 
 SendGrid’s SMTP API allows developers to specify custom handling instructions for e-mail using an X-SMTPAPI header inserted into the message. The header is a JSON encoded list of instructions and options for that email.
 
@@ -69,7 +69,7 @@ Now that you've sent a test email, learn to [integrate your servers with our SMT
 ## Additional Resources
 
 - [Getting Started with the UI]({{root_url}}/help-support/getting-started/how-to-send-email/)
-- [Getting Started with the API]({{root_url}}/API_Reference/api_v3.html)
+- [Getting Started with the API]({{root_url}}/API_Reference/api_v3/)
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
 - [Integrating with the SMTP API]({{root_url}}/for-developers/sending-email/integrating-with-the-smtp-api/)
 - [Building an SMTP Email]({{root_url}}/for-developers/sending-email/building-an-smtp-email/)
