@@ -33,14 +33,7 @@ The [Design Editor](#-The-Design-Editor) features a number of convenient ways to
 
 SendGrid’s marketer-friendly code editor features a powerful, split screen editing experience – perfect for building campaigns with your own custom HTML. It offers a number of helpful features, often found in native editors.
 
-* [Code Editor Features](#-Code-Editor-Features)
-* [Getting Started with the Code Editor](#-Getting-Started-with-the-Code-Editor)
-* [Uploading Images](#-Uploading-Images)
-* [Using Substitution Tags](#-Using-Substitution-Tags)
-* [Adding Categories](#-Adding-Categories)
-
-
-Code Editor Features
+### Code Editor Features
 
 **Live Template Preview** -
 See how your email looks in real-time, as you write and edit code. No more tabbing between windows, refreshing or re-rendering. Marketing Campaigns’ split-screen editing experience displays your code on the left, and a pixel-perfect preview on the right.

@@ -1,7 +1,4 @@
 ---
-st:
-  published_at: 2016-07-21
-  type: Classroom
 seo:
   title: SPF Records Explained
   description: SPF Records Explained
