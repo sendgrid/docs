@@ -98,4 +98,4 @@ From the Edit Group page, you can change the Group Name, Group Description, and 
 
 - [Suppressions Overview]({{root_url}}/help-support/sending-email/index-suppressions/)
 - [Group Unsubscribes]({{root_url}}/help-support/sending-email/group-unsubscribes/)
-- [Global Unsubscribes]({{root_url}}/User_Guide/Suppressions/global_unsubscribes/)
+- [Global Unsubscribes]({{root_url}}/help-support/sending-email/global-unsubscribes/)
