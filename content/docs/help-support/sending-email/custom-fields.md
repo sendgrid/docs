@@ -12,11 +12,6 @@ seo:
   description: Custom fields help you segment your lists dynamically based on your user information.
 ---
 
-- [Creating Custom Fields](#-Creating-Custom-Fields)
-- [Reserved Fields](#-Reserved-Fields)
-- [Deleting a Custom Field](#-Deleting-a-Custom-Field)
-- [Troubleshooting](#-Troubleshooting)
-
 <iframe src="https://player.vimeo.com/video/120709155" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 Custom fields allow you to add extra information about a contact to your contact database when you upload a CSV. With custom fields, you can create custom segments from your individual contacts or from your contact database that dynamically update your content with the values for the individual contact receiving the email. Your custom fields are completely customizable to the use cases and user information that you need.
@@ -28,7 +23,7 @@ You can create up to 120 custom fields.
 </call-out>
 
 ## 	Creating Custom Fields
- 	
+
 *To add a custom field:*
 
 1. Navigate to the [Custom Fields page]({{site.marketing_campaigns_url}}/custom_fields).
@@ -54,7 +49,7 @@ Text custom fields are limited to a size of 32,766 bytes.
 </call-out>
 
  ### 	Reserved Fields
- 	
+
 Your account comes preloaded with reserved fields that cannot be removed. The following field names are all reserved:
 
 <table class="table">
@@ -75,7 +70,7 @@ Your account comes preloaded with reserved fields that cannot be removed. The fo
 Except for first_name, last_name, and email these fields are auto-populated by SendGrid and correspond to data for each contact in the app. Reserved fields are used to track useful metrics for your contacts by default.
 
 ## 	Deleting a Custom Field
- 	
+
 *To delete a custom field:*
 
 1. Navigate to **Marketing Campaigns** and select **Custom Fields**.
@@ -91,14 +86,14 @@ Deleting a custom field deletes all values for that field across your contact da
 </call-out>
 
 ## 	Troubleshooting
- 	
+
 
 If a Custom Field value does not appear in the corresponding [Substitution Tag]({{root_url}}/help-support/sending-email/editor/#-Using-Substitution-Tags), make sure that there is a value for that custom field associated with the contact in your contact database. If there is no value for a particular custom field, a space will be substituted instead.
 
 If you do find that the custom field has an associated value on the contact’s profile page, check the spelling of the substitution tag in the content of your campaign.
 
  ### 	Additional Resources
-  	
+
 - [Substitution Tags](https://sendgrid.com/docs/help-support/sending-email/editor/#-Using-Substitution-Tags)
 - [Contacts](https://sendgrid.com/docs/help-support/managing-contacts/adding-contacts/)
 - [Creating and exporting segments](https://sendgrid.com/docs/help-support/manging-contacts/segmenting-your-contacts/)
