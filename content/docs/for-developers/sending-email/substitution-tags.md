@@ -19,7 +19,7 @@ navigation:
 
 <p>These tags can also be used in more complex scenarios. For example, you could use a -customerID- to build a custom URL that is specific to that user.</p>
 
-<h4>A customer specific ID can replace -customerID- in the URL within your email</h4>
+### A customer specific ID can replace -customerID- in the URL within your email
 ```html
 <a href="http://example.com/customerOffer?id=-customerID-">Claim your offer!</a>
 ```
@@ -54,7 +54,7 @@ Do not nest substitution tags in substitutions as they will fail and your substi
 
 </call-out>
 
-  ## 	Substitution Tag Example
+## 	Substitution Tag Example
 
 Email HTML content:
 ```html
@@ -105,7 +105,8 @@ Email HTML content:
 }
 ```
 
-<p>The resulting email for John would look like this:</p>
+The resulting email for John would look like this:
+
 ```html
 <html>
   <head></head>
@@ -113,36 +114,33 @@ Email HTML content:
     <p>Hello John,<br>
        Thank you for your interest in our products. I have set up an appointment to call you at 3:00 pm EST to discuss your needs in more detail. If you would like to reschedule this call, please visit the following link:
       <a href="http://example.com/reschedule?id=1234">reschedule</a>
+      Regards,
 
-                Regards,
-
-                Jared
-                555.555.5555<br>
-    </p>
+      Jared
+      555.555.5555
   </body>
 </html>
 ```
 
-<p>In contrast, the resulting email for Jane will look like the following, with her specific values replaced in for each tag:</p>
+In contrast, the resulting email for Jane will look like the following, with her specific values replaced in for each tag:
+
 ```html
 <html>
   <head></head>
   <body>
-    <p>Hello Jane,<br>
+  <p>Hello Jane,<br>
        Thank you for your interest in our products. I have set up an appointment to call you at 5:15pm EST to discuss your needs in more detail. If you would like to reschedule this call please visit the following link:
    <a href="http://example.com/reschedule?id=5678">reschedule</a>
+    Regards,
 
-                Regards,
-
-                Ben
-                777.777.7777<br>
-    </p>
+    Ben
+    777.777.7777
   </body>
 </html>
 ```
 
 ## 	SendGrid Defined Substitution Tags
- 	While the tags above are tags that you define at the time of your send in the SMTPAPI headers, SendGrid also offers [Unsubscribe Groups tags]({{root_url}}/help-support/sending-email/create-and-edit-transactional-templates.html#-Adding-unsubscribe-links-to-a-template) that have been pre-defined for you. You can use these tags within the content of your email, and you do not have to and should not, define them.
+ 	While the tags above are tags that you define at the time of your send in the SMTPAPI headers, SendGrid also offers [Unsubscribe Groups tags]({{root_url}}/help-support/sending-email/create-and-edit-transactional-templates/) that have been pre-defined for you. You can use these tags within the content of your email, and you do not have to and should not, define them.
 
 ## 	Additional Resources
 

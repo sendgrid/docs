@@ -18,14 +18,14 @@ SendGrid's [Event Notification]({{root_url}}/for-developers/tracking-events/even
 
 Our open source EventKit app alleviates the hassle of needing to set up an endpoint on your own domain, and provides a simple yet powerful user interface to view and sort your SendGrid event data. Check out the videos below to walk you through the setup and configuration of EventKit.
 
-##[Click here](https://github.com/sendgrid/eventkit-rails) to visit the EventKit Github repository.
+[Click here](https://github.com/sendgrid/eventkit-rails) to visit the EventKit Github repository.
 
 
-###1. Learn how to install the EventKit app using a free [Heroku](https://www.heroku.com/) instance by watching this step-by-step video:
+## Learn how to install the EventKit app using a free [Heroku](https://www.heroku.com/) instance by watching this step-by-step video:
 
 <iframe src="https://player.vimeo.com/video/167121552" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
-###2. Once you have EventKit set up, watch this video to learn more about the features within as well as how to navigate the user interface.
+## Once you have EventKit set up, watch this video to learn more about the features within as well as how to navigate the user interface.
 
 <iframe src="https://player.vimeo.com/video/179804115" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
