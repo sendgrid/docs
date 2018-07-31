@@ -24,12 +24,13 @@ $card-gutter: 40px;
   background: url('../img/help-center-hero.svg') no-repeat;
   background-position: bottom center;
 
-  @media (max-width: $width-mobile) {
+  @media (max-width: $width-small) {
     background-size: contain;
+    padding-bottom: $scaleup-10;
   }
 
   @media (max-width: $width-small-mobile) {
-    padding-bottom: $scaleup-11;
+    padding-bottom: $scaleup-8;
   }
 }
 
