@@ -24,7 +24,7 @@ With a few quick changes you will be able to take advantage of the improvements 
 * Simple, intuitive, and consistent request body format.
 * Sandbox Mode allows you to test and validate your email.
 * Improved error reporting and documentation.
-* Extensive code examples in each of our [libraries]({{root_url}}/Integrate/libraries.html) to help you integrate quickly.
+* Extensive code examples in each of our [libraries]({{root_url}}/for-developers/sending-email/libraries/) to help you integrate quickly.
 
 <iframe src="https://player.vimeo.com/video/168940206" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
@@ -44,9 +44,9 @@ For a more detailed discussion of these new parameters, please visit the [v3 Mai
 
 ![]({{root_url}}/images/v2_vs_v3_mail_send_ga.png)
 
-One of the more prominent changes you may notice, is that many of the settings that were previously handled by SendGrid’s [x-smtpapi]({{root_url}}/API_Reference/SMTP_API/index.html) are now defined explicitly within the JSON schema of the request body to the mail send endpoint.
+One of the more prominent changes you may notice, is that many of the settings that were previously handled by SendGrid’s [x-smtpapi]({{root_url}}/for-developers/sending-email/building-an-smtp-email/) are now defined explicitly within the JSON schema of the request body to the mail send endpoint.
 
-Previously, the only way to specify custom handling instructions for your email was to include individual blocks of JSON for each "setting" or "app" that you wanted to use according to the [SMTP API]({{root_url}}/API_Reference/SMTP_API/index.html).
+Previously, the only way to specify custom handling instructions for your email was to include individual blocks of JSON for each "setting" or "app" that you wanted to use according to the [SMTP API]({{root_url}}/for-developers/sending-email/building-an-smtp-email/).
 
 For example, if you wanted to schedule an email to be sent at a certain time using the v2 mail send endpoint, your request body would look like:
 
@@ -115,9 +115,9 @@ More Resources
 For additional resources on the v3 Mail Send endpoint, please first visit our other documentation on the v3 Mail Send endpoint:
 
 * [V3 Mail Send Overview]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html)
-* [SandBox Mode]({{root_url}}/Classroom/Send/v3_Mail_Send/sandbox_mode.html)
+* [SandBox Mode]({{root_url}}/for-developers/sending-email/sandbox-mode/)
 * [Errors]({{root_url}}/API_Reference/Web_API_v3/Mail/errors.html)
-* [Personalizations]({{root_url}}/Classroom/Send/v3_Mail_Send/personalizations.html)
+* [Personalizations]({{root_url}}/for-developers/sending-email/personalizations/)
 * [cURL Examples for Common Use Cases]({{root_url}}/for-developers/sending-email/curl-examples/)
 
 You may also visit our [Support page](https://support.sendgrid.com/hc/en-us).

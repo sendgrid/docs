@@ -54,7 +54,7 @@ Using the default templates from WP Better Emails will cause all emails to be se
 
 ## 	Why are my emails sent as HTML instead of plain text?
 
-For a detailed explanation of why your emails might be converted to HTML instead of plain text, please see this [helpful article in our Classroom]({{root_url}}/Classroom/Build/Format_Content/plain_text_emails_converted_to_html.html).
+For a detailed explanation of why your emails might be converted to HTML instead of plain text, please see this [helpful article in our Classroom]({{root_url}}/help-support/sending-email/cross-platform-html-design/).
 
 ## 	Will contacts from the widget be uploaded to Marketing Campaigns or Legacy Newsletter?
 
@@ -145,5 +145,5 @@ define('SENDGRID_DISABLE_BUDDYPRESS', '1');
 
 ## 	Related Content
 
-* [SendGrid’s WordPress Plugin]({{root_url}}/Integrate/Tutorials/WordPress/sendgrid_wordpress_plugin.html)
+* [SendGrid’s WordPress Plugin]({{root_url}}/for-developers/sending-email/wordpress-plugin/)
 * [SendGrid’s WordPress Subscription Widget]({{root_url}}/for-developers/managing-contacts/wordpress-subscription-widget.html)
