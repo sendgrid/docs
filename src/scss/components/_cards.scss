@@ -17,6 +17,25 @@
     align-self: flex-end;
   }
 
+
+  &--glossary {
+    padding: $scaleup-4;
+  }
+
+  &__feedback {
+    margin-top: $scaleup-7;
+    padding: $scaleup-3;
+
+    .card__title {
+      margin-left: 0;
+      display: block;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
   &:hover {
     .actions .sg-icon-ellipsis {
       opacity: 0;

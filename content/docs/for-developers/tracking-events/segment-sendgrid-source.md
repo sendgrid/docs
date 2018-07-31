@@ -19,7 +19,7 @@ This documentation is managed by [Segment](https://segment.com/?utm_medium=docs&
 1. Create a Segment [account](https://segment.com/sources/sendgrid)
 2. Add SendGrid in the “Cloud Apps” Category and enter your credentials
 3. Setup a warehouse by bringing your own or having Segment setup and host
-4. Give the Source a nickname and schema name. *We recommend sticking to something that reflects the source itself, like `SendGrid` for nickname and `sengrid` or `sendgrid_prod` for the schema name.*
+4. Give the Source a nickname and schema name. *We recommend sticking to something that reflects the source itself, like `SendGrid` for nickname and `sendgrid` or `sendgrid_prod` for the schema name.*
 4. You’ll soon see SendGrid data in your data warehouse
 
 
@@ -29,7 +29,7 @@ In order to pull information about your contacts, we’ll make requests to SendG
 
 We recommend providing read permissions for **Email Activity** and **Marketing Activity**.
 
-Finally, copy the resulting API Key into the Segment interface, taking care to trim any errant trailing spaces from copying and pasting, and press connect. 
+Finally, copy the resulting API Key into the Segment interface, taking care to trim any errant trailing spaces from copying and pasting, and press connect.
 
 In the next step, copy the auto-generated Webhook URL and paste it into SendGrid’s Event Notification settings pane under **Settings > Mail Settings**.
 
@@ -37,7 +37,7 @@ Once you enable the Event Notification, you’re good to go! Press **Next**, and
 
 ### Event URL
 
-SendGrid has a single Event URL location. By using the SendGrid source, you will be using your only Event URL location. If you remove a pre-existing URL, then that location will no longer receive events. 
+SendGrid has a single Event URL location. By using the SendGrid source, you will be using your only Event URL location. If you remove a pre-existing URL, then that location will no longer receive events.
 
 ## Components
 
@@ -45,7 +45,7 @@ SendGrid has a single Event URL location. By using the SendGrid source, you will
 
 SendGrid has a sync component, which means we’ll make requests to their API on your behalf on a 3 hour interval to pull the latest data into Segment. In the initial sync, we’ll grab all the SendGrid objects (and their corresponding properties) according to the [Collections Table]() below. SendGrid objects will be written into a separate schema, corresponding to the source instance’s schema name you designated upon creation.
 
-Our sync component gets resources from SendGrid and forwards them to Segment using an upsert API, so the dimensional data in your warehouse loaded will reflect the latest state of the corresponding resource in SendGrid. For example,  if `lists.recipient_count` goes from `100` to `200` between syncs, on its next flush to your warehouse, that tickets status will be  `200`. 
+Our sync component gets resources from SendGrid and forwards them to Segment using an upsert API, so the dimensional data in your warehouse loaded will reflect the latest state of the corresponding resource in SendGrid. For example,  if `lists.recipient_count` goes from `100` to `200` between syncs, on its next flush to your warehouse, that tickets status will be  `200`.
 
 
 ### Streaming
@@ -55,13 +55,15 @@ The SendGrid source also has a streaming component which listens in real time fo
 
 ## Collections
 
-Collections are the groupings of resources we pull from your source. In your warehouse, each collection gets its own table. 
+Collections are the groupings of resources we pull from your source. In your warehouse, each collection gets its own table.
 
-**Object** collections are updated with each sync. These are pulled via our sync component. 
+**Object** collections are updated with each sync. These are pulled via our sync component.
 
 **Event** collections are append only, represent a user action or activity, and may be likened to fact tables in a traditional data warehouse.
 
 For a complete visual breakdown of the SendGrid collections and all their properties, [view the Visual Schema here](https://www.lucidchart.com/invitations/accept/c639887d-09da-4f91-a846-1409f6dd0d56).
+
+<div class="table-wrap">
 
 |  Collection | Type | Description |
 |  ------ | ------ | ------ |
@@ -78,3 +80,5 @@ For a complete visual breakdown of the SendGrid collections and all their proper
 |  lists | Object | [Groups of contacts](https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html). |
 |  segments | Object | [Slices of lists](https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html). |
 |  recipients | Object | All contacts who have received an email, with information about their last activities and custom activities. [More Info](https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html) |
+
+</div>

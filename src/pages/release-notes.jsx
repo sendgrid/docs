@@ -16,8 +16,6 @@ class ReleaseNotes extends React.Component {
       id: 'overview',
     };
 
-    console.log(edges);
-
     const asideLinks = edges.map((edge) => {
       const link = {};
       link.tagName = 'h2';

@@ -24,7 +24,7 @@ class GlossaryPartial extends Component {
               <p className="ta-center">Not sure what something means? Find terms from our library sorted A-Z.</p>
               <div className="row">
                 <div className="col-md-8">
-                  <div className="card card--glossary is-thin">
+                  <div className="card card--glossary">
                     <h3 className="card__title">{HEADER}</h3>
                     { GlossaryPartial.getLinks(ANCHORS) }
                     <Link className="btn btn-primary" to={LINKS.GLOSSARY}>View All</Link>

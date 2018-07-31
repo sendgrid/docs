@@ -9,7 +9,9 @@ navigation:
 
 <call-out>
 
-We recommend using SendGrid Ruby, our client library, <a href="https://github.com/sendgrid/sendgrid-ruby">available on Github</a>, with full documentation. </call-out>
+We recommend using SendGrid Ruby, our client library, <a href="https://github.com/sendgrid/sendgrid-ruby">available on Github</a>, with full documentation.
+
+</call-out>
 
 <call-out>
 
@@ -17,7 +19,8 @@ The library does not officially support the V2 API, but you can use V2 with an o
 
 </call-out>
 
-##  Using SendGrid's Ruby Library  	```ruby
+##  Using SendGrid's Ruby Library
+```ruby
 # using SendGrid's Ruby Library
 # https://github.com/sendgrid/sendgrid-ruby
 require 'sendgrid-ruby'

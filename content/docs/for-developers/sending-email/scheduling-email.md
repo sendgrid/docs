@@ -12,7 +12,7 @@ navigation:
   show: true
 ---
 
-There are 3 easy ways to schedule your emails; use [Marketing Campaigns]({{root_url}}/help-support/getting-started/how-to-send-email.html), use the [SMTP API]({{root_url}}/for-developers/sending-email/scheduling-parameters.html) header, or use the API.
+There are 3 easy ways to schedule your emails; use [Marketing Campaigns]({{root_url}}/help-support/getting-started/how-to-send-email.html), use the [SMTP API]({{root_url}}/for-developers/sending-email/scheduling-parameters/) header, or use the API.
 
 <call-out>
 
@@ -30,7 +30,7 @@ You can you can schedule a time to send your email by using the the `send_at` ob
 
 
 #3. SMTP API
-You can use the [SMTP API]({{root_url}}/for-developers/sending-email/scheduling-parameters.html) header to schedule your emails when sending via [SMTP](https://sendgrid.com/docs/Integrate/index.html#-SMTP-Relay) or our [mail.send API endpoint](https://sendgrid.com/docs/API_Reference/Web_API/mail.html). SendGrid will allow you to queue batches of emails targeting individual recipients by using a UNIX time stamp parameter in your SMTP API header.
+You can use the [SMTP API]({{root_url}}/for-developers/sending-email/scheduling-parameters/) header to schedule your emails when sending via [SMTP](https://sendgrid.com/docs/Integrate/index.html#-SMTP-Relay) or our [mail.send API endpoint](https://sendgrid.com/docs/API_Reference/Web_API/mail.html). SendGrid will allow you to queue batches of emails targeting individual recipients by using a UNIX time stamp parameter in your SMTP API header.
 
 This parameter allows SendGrid to begin processing your email requests before sending. SendGrid will then queue those messages and release them when the specified time rolls around.
 
