@@ -14,18 +14,22 @@ navigation:
 
 <center>Creating a new subuser through SendGrid's API is a multi-step process. This guide will walk you through the necessary steps in order to create a new subuser account using only API calls.</center>
 
-**1. Establish the New Subuser ** (required)
+## Establish the New Subuser (required)
 
-With the [subuser creation API call](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/subusers.html) you will be able to establish the new subuser's account and profile settings. This call will create the new subuser account, however it does not apply the sending IP for the account, nor does it establish a domain authentication entry or enable website/SMTP access for the subuser.  
+With the [subuser creation API call](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/subusers.html) you will be able to establish the new subuser's account and profile settings. This call will create the new subuser account, however it does not apply the sending IP for the account, nor does it establish a domain authentication entry or enable website/SMTP access for the subuser.
 
-**Call Example:** https://api.sendgrid.com/apiv2/customer.add.json?api\_user=ryan.burrer@sendgrid.com&api\_key=xxxxxx&username=newsubuser\_username&website=yourdomain.com&password=newsubuser\_password&confirm\_password=newsubuser\_password&first\_name=Ryan&last\_name=Burrer&address=555\_anystreet&city=any\_city&state=CO&zip=80203&email=example@example.com&country=US&phone=555-5555
+## Call Example:
+
+```
+https://api.sendgrid.com/apiv2/customer.add.json?api_user=ryan.burrer@sendgrid.com&api_key=xxxxxx&username=newsubuser_username&website=yourdomain.com&password=newsubuser_password&confirm_password=newsubuser_password&first_name=Ryan&last_name=Burrer&address=555_anystreet&city=any_city&state=CO&zip=80203&email=example@example.com&country=US&phone=555-5555
+```
 
 <center>
 <strong>Success Message<br></strong><img src="http://content.screencast.com/users/Ryan.Burrer/folders/Jing/media/5e355c42-487e-442a-bd2b-89c9d80dd7d0/00000094.png" alt=""><center><strong> <br>Failure Message<br></strong></center>
 <img src="http://content.screencast.com/users/Ryan.Burrer/folders/Jing/media/d8482205-976f-4f82-ad3a-77503e867c2f/00000095.png" alt=""> <strong><span class="wysiwyg-font-size-medium"><br><br></span></strong>
 </center>
 
-**2. Assign an IP to be Used by the New Subuser**  (required)   
+**2. Assign an IP to be Used by the New Subuser**  (required)
 
 Now that you have created the new subuser account, you will need to [add an IP](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/ip_management.html#-Subuser-IP-Assignment) so that it can send emails. We advise that you first find an available IP for this subuser. You can do so by using the following call:
 
@@ -57,7 +61,7 @@ When defining this call's 'set' parameter, you have a few options for appending 
 <p class="wysiwyg-text-align-left"><img src="http://content.screencast.com/users/Ryan.Burrer/folders/Jing/media/d8482205-976f-4f82-ad3a-77503e867c2f/00000095.png" alt="" align="middle"></p>
 </center>
 
- 
+
 
 **3. Assign a domain authentication for the Subuser Account ** (optional)
 
@@ -101,14 +105,14 @@ The final step in creating your new subuser requires you to simply [activate the
 <br><strong>That's All, Folks!</strong>
 </center>
 
-If you have followed all of these steps then you have just created a new subuser using the Subuser API. Give yourself a high five!  
+If you have followed all of these steps then you have just created a new subuser using the Subuser API. Give yourself a high five!
 
-But wait, there's more... 
+But wait, there's more...
 
-Now that you have created a new subuser you can change the [Event Notification URL](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/event_notification_url.html), the subuser's enabled [apps](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/apps.html), and even set [account limits](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/account_limits.html) for the subuser.  
+Now that you have created a new subuser you can change the [Event Notification URL](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/event_notification_url.html), the subuser's enabled [apps](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/apps.html), and even set [account limits](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/account_limits.html) for the subuser.
 
 <center>
 <p> </p>
 </center>
 
- 
+
