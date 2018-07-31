@@ -72,9 +72,3 @@ If you choose to use this functionality, we suggest that you test it extensively
  ### 	SPF Wizard
  	[The SPF Wizard](http://www.spfwizard.net/) is a browser based SPF record generation tool. Fill out the form and the site generates an SPF record for you.
 
-
-Related Links:
-
-* <a href="{{root_url}}/Classroom/Deliver/Sender_Authentication/spf_records_explained.html">SPF Records Explained</a>
-* <a href="{{root_url}}/Classroom/Deliver/Sender_Authentication/spf_dont_exceed_ten_dns_lookups.html">SPF: Don't Exceed Ten DNS Lookups!</a>
-* <a href="{{root_url}}/Classroom/Deliver/Sender_Authentication/internet_standards_spf_and_dkim_and_deliverability.html">Internet Standards (SPF and DKIM) and Deliverability</a>

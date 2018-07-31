@@ -10,21 +10,19 @@ navigation:
   show: false
 ---
 
-[Teammates]({{root_url}}/User_Guide/Settings/teammates.html) is an account administration and security tool designed to help manage multiple users on a single SendGrid account. Teammates is built for groups of shared users, where each user has a different role and thus requires access to different SendGrid features.
+[Teammates]({{root_url}}/help-support/account-and-settings/teammates/) is an account administration and security tool designed to help manage multiple users on a single SendGrid account. Teammates is built for groups of shared users, where each user has a different role and thus requires access to different SendGrid features.
 
 A marketer, developer, and accountant would each have their own teammate account under one SendGrid parent account. The parent SendGrid account will always have administrator level teammate permissions, and may grant any or all of these permissions to other teammates.
 
 As an example of role specific permissions, the marketer would be given the following levels of access:
 
-* [Alerts]({{root_url}}/User_Guide/Settings/alerts.html) - Full Access
-* [Category Management]({{root_url}}/User_Guide/Statistics/categories.html) - Read Access
-* [Email Activity]({{root_url}}/help-support/analytics-and-reporting/email-activity/) - Read Access
-* [Mail Send: Scheduled Sends]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html) - Read Access
-* [Mail Settings: Spam Checker]({{root_url}}/User_Guide/Settings/mail.html#-Spam-Checker) - Full Access
-* [Marketing Campaigns]({{root_url}}/User_Guide/Marketing_Campaigns/index.html) - Full Access
-* [Stats]({{root_url}}/User_Guide/Statistics/index.html) - Read Access
-* [Suppressions]({{root_url}}/User_Guide/Suppressions/index.html) - Full Access
-* [Template Engine]({{root_url}}/User_Guide/Transactional_Templates/index.html) - Full Access
-* [Tracking]({{root_url}}/User_Guide/Settings/tracking.html) - Full Access
-
-For more information about Teammates please see our [documentation]({{root_url}}/User_Guide/Settings/teammates.html).
+* [Alerts]({{root_url}}/help-support/account-and-settings/alerts/) - Full Access
+* [Category Management]({{root_url}}/help-support/analytics-and-reporting/categories/) - Read Access
+* [Email Activity]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed/) - Read Access
+* [Mail Send: Scheduled Sends]({{root_url}}/API_Reference/Web_API_v3/Mail/index/) - Read Access
+* [Mail Settings: Spam Checker]({{root_url}}/help-support/account-and-settings/mail/#-Spam-Checker) - Full Access
+* [Marketing Campaigns]({{root_url}}/help-support/sending-email/how-to-send-email/) - Full Access
+* [Stats]({{root_url}}//help-support/analytics-and-reporting/stats-overview/) - Read Access
+* [Suppressions]({{root_url}}/help-support/sending-email/index-suppressions/) - Full Access
+* [Template Engine]({{root_url}}/help-support/sending-email/create-and-edit-transactional-templates/) - Full Access
+* [Tracking]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed/) - Full Access
