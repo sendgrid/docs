@@ -183,8 +183,8 @@ For more information, see our [unique arguments documentation]({{root_url}}/for-
 
 ## 	Additional Resources
 
-- [How to send email]({{root_url}}/help-support/getting-started/how-to-send-email.html)
+- [How to send email]({{root_url}}/help-support/sending-email/how-to-send-email.html)
 - [Getting started with the API]({{root_url}}/API_Reference/api_v3.html)
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
-- [Getting Started with the SMTP API]({{root_url}}/for-developers/sending-email/getting-started-smtp/)
+- [Getting Started with the SMTP API]({{root_url}}/for-developers/sending-email/sending-email-smtp/)
 - [Integrating with SMTP]({{root_url}}/for-developers/sending-email/integrating-with-the-smtp-api/)

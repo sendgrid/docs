@@ -426,7 +426,7 @@ Resulting replacement:
 
 ## 	Additional Resources
  	
-- [Transactional Templates Overview]({{root_url}}/help-support/sending-email/transactional-email.html)
-- [Create and edit Dynamic Transactional Templates]({{root_url}}/help-support/sending-email/create-and-edit-transactional-templates.html)
+- [Transactional Templates Overview]({{root_url}}/help-support/sending-email/transactional-email/)
+- [Create and edit Dynamic Transactional Templates]({{root_url}}/help-support/sending-email/create-and-edit-transactional-templates/)
 - [Mail Send with Dynamic Transactional Templates](https://dynamic-templates.api-docs.io/3.0)
-- [How to send an email with dynamic templates]({{root_url}}/help-support/sending-email/how-to-send-an-email-with-dynamic-transactional-templates.html)
+- [How to send an email with dynamic templates]({{root_url}}/help-support/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/)

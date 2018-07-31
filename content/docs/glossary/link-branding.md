@@ -18,6 +18,6 @@ In an attempt to clarify complex functionality, SendGrid is upgrading the name o
 
 ## 	Additional Resources
  	
-- [How to set up link branding]({{root_url}}/help-support/getting-started/how-to-set-up-link-branding.html)
-- [How to set up domain authentication]({{root_url}}/help-support/getting-started/how-to-set-up-domain-authentication.html)
-- [How to set up reverse DNS]({{root_url}}/help-support/getting-started/how-to-set-up-reverse-dns.html)
+- [How to set up link branding]({{root_url}}/help-support/sending-email/how-to-set-up-link-branding.html)
+- [How to set up domain authentication]({{root_url}}/help-support/sending-email/how-to-set-up-domain-authentication.html)
+- [How to set up reverse DNS]({{root_url}}/help-support/sending-email/how-to-set-up-reverse-dns.html)

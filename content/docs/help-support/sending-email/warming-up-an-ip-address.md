@@ -13,9 +13,7 @@ navigation:
 <iframe src="https://player.vimeo.com/video/80755248" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
-When you add a new dedicated IP address to your account, you need to warm it up. You also need to warm up your IP if you haven't sent on it in more than 30 days. [Warming up your IP]({{root_url}}/glossary/ip-warmup.html) allows you to gradually send more emails over your new IP to establish a good [sender reputation]({{root_url}}/glossary/reputation-monitoring.html).
-
-## 	What is warming up an IP?
+When you add a new dedicated IP address to your account, you need to warm it up. You also need to warm up your IP if you haven't sent on it in more than 30 days. [Warming up your IP]({{root_url}}/glossary/ip-warmup/) allows you to gradually send more emails over your new IP to establish a good [sender reputation]({{root_url}}/glossary/reputation-monitoring/).
  	
 IP warming is the practice of gradually increasing the volume of mail sent with a dedicated IP address according to a predetermined schedule. This gradual process helps to establish a reputation with ISPs (Internet Service Providers) as a legitimate email sender.
 
@@ -48,7 +46,7 @@ To manually warm up your IP, you need to gradually send more and more email over
 
  ### 	Automated IP warmup API
  	
-You can also put your IP address into warmup mode with our [Automated Warmup API]({{root_url}}/help-support/getting-started/warming-up-an-ip-address.html) - this automatically throttles traffic sent through your new IP according to our [warm up schedule]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_warmup_schedule.html).
+You can also put your IP address into warmup mode with our [Automated Warmup API]({{root_url}}/help-support/getting-started/warming-up-an-ip-address/) - this automatically throttles traffic sent through your new IP according to our [warm up schedule]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_warmup_schedule/).
 
 <call-out type="warning">
 
@@ -414,6 +412,6 @@ Having a dedicated IP allows you to control your own reputation completely, and 
 
 ## 	Additional Resources
  	
-- [Adding a dedicated IP]({{root_url}}/help-support/account-and-settings/dedicated-ip-addresses.html)
-- [API IP Access Management]({{root_url}}/help-support/account-and-settings/ip-access-management.html)
-- [SendGrid billing information]({{root_url}}/help-support/account-and-settings/billing.html)
+- [Adding a dedicated IP]({{root_url}}/help-support/account-and-settings/dedicated-ip-addresses/)
+- [API IP Access Management]({{root_url}}/help-support/account-and-settings/ip-access-management/)
+- [SendGrid billing information]({{root_url}}/help-support/account-and-settings/billing/)

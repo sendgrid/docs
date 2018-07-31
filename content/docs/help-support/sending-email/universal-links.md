@@ -10,18 +10,6 @@ layout: page
 navigation:
   show: true
 ---
-
-## 	Table of Contents
- 	
-* [What are Universal Links?](#-What-are-universal-links)
-* [Requirements](#-Requirements)
-* [What are "apple-app-site-association" and "digital asset links" files?](#-What-are-appleappsiteassociation-and-digital-asset-links-files)
-* [Setting Up Universal Links Using CloudFront](#-Setting-Up-Universal-Links-Using-CloudFront)
-* [Setting Up Universal Links Using NGINX](#-Setting-Up-Universal-Links-Using-NGINX)
-* [Flagging Your Universal Links](#-Flagging-Your-Universal-Links)
-* [Resolving SendGrid Click Tracking Links](#-Resolving-SendGrid-Click-Tracking-Links)
-
-## 	What are universal links?
  	
 Mobile devices are increasingly becoming the preferred method of receiving, reading, and engaging with email. If you send an email containing a link to your website, but you also have a corresponding mobile application, it is possible to ensure that any recipients who click the link on their mobile device are taken directly to your app instead of their web browsers.
 
