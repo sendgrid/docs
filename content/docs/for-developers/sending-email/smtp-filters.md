@@ -66,8 +66,6 @@ Some Settings are not listed here, because they cannot be defined on a per-messa
 }
 ```
 
-<hr/>
-
 ## Filter: bypass_list_management
 
 <call-out type="warning">
@@ -105,8 +103,6 @@ This setting is very powerful, and can only be used on a per-message basis. Use 
 }
 ```
 
-<hr />
-
 ## Filter: clicktrack
 
 <p>Rewrites links in email text and html bodies to go through our webservers, allowing for tracking when a link is clicked on.</p>
@@ -138,8 +134,6 @@ This setting is very powerful, and can only be used on a per-message basis. Use 
   }
 }
 ```
-
-<hr/>
 
 ## Filter: dkim
 
@@ -180,9 +174,6 @@ of your email.</p>
   }
 }
 ```
-
-
-<hr/>
 
 ## Filter: footer
 
@@ -227,8 +218,6 @@ of your email.</p>
   }
 }
 ```
-
-<hr/>
 
 ## Filter: ganalytics
 
@@ -291,8 +280,6 @@ of your email.</p>
 }
 ```
 
-<hr/>
-
 Filter:</h3> <code>opentrack</code>
 
 <p>If you don't use 'replace' this will insert an <code>&lt;img&gt;</code> tag at the bottom of the html section of an email which will be used to track if an email is opened. If you choose to use 'replace', you can put the tracking pixel wherever you would like in the email and SendGrid will replace it at send time.</p>
@@ -330,8 +317,6 @@ Filter:</h3> <code>opentrack</code>
   }
 }
 ```
-
-<hr/>
 
 ## Filter: spamcheck
 
@@ -376,8 +361,6 @@ Filter:</h3> <code>opentrack</code>
   }
 }
 ```
-
-<hr/>
 
 ## Filter: subscriptiontrack
  	<p>Inserts a subscription management link at the bottom of the text and html bodies or insert the link anywhere in the email.</p>
@@ -435,8 +418,6 @@ The `landing` argument cannot be used in SMTPAPI. It can only be setup via the U
 }
 ```
 
-<hr/>
-
 ## Filter: templates
 
 <call-out>
@@ -481,8 +462,6 @@ This setting refers to SendGrid's <a href="{{root_url}}/API_Reference/Web_API_v3
   }
 }
 ```
-
-<hr/>
 
 ## Filter: template
 
