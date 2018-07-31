@@ -32,5 +32,5 @@ When you select the checkboxes next to the recipient names or select all, using 
 ## 	Additional Resources
  	
 - [Set up Bounce Forwarding to go to the email’s from address]({{site.support_url}}/hc/en-us/articles/200181478)
-- [Global Unsubscribes]({{root_url}}/help-support/sending-email/global-unsubscribes.html)
-- [Group Unsubscribes]({{site.app_url}}/help-support/sending-email/group-unsubscribes)
+- [Global Unsubscribes]({{root_url}}/help-support/sending-email/global-unsubscribes/)
+- [Group Unsubscribes]({{site.app_url}}/help-support/sending-email/group-unsubscribes/)

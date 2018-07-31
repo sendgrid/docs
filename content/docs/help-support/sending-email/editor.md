@@ -460,6 +460,7 @@ You'll also see a number of System Fields that you can place in the body of your
    <td>Weblink</td>
  </tr>
 </table>
+
 &ast; For your convenience, these substitution tags are included by default in the Unsubscribe Module found on the Build tab of the Design Editor.
 
 For contacts with no entry in a custom field, the substitution tag appears blank. To set a default value, use the following pattern:
@@ -756,8 +757,8 @@ Assigning categories to a campaign allows you to track emails based on your own 
 
 ## Additional Resources
 
-* [Sending an Email]({{root_url}}/help-support/getting-started/how-to-send-email.html)
-* [A/B Testing]({{root_url}}/help-support/sending-email/a-b-testing.html)
-* [Campaign Statistics]({{root_url}}/help-support/analytics-and-reporting/campaign-stats.html)
-* [Marketing Templates]({{root_url}}/help-support/sending-email/working-with-marketing-templates.html)
+* [Sending an Email]({{root_url}}/help-support/getting-started/how-to-send-email/)
+* [A/B Testing]({{root_url}}/help-support/sending-email/a-b-testing/)
+* [Campaign Statistics]({{root_url}}/help-support/analytics-and-reporting/campaign-stats/)
+* [Marketing Templates]({{root_url}}/help-support/sending-email/working-with-marketing-templates/)
 

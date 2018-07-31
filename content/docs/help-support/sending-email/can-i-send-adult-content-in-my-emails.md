@@ -7,7 +7,6 @@ title: Can I send adult content in my emails?
 group: delivery-optimization
 weight: 0
 layout: page
-zendesk_id: 204119236
 navigation:
   show: true
 ---

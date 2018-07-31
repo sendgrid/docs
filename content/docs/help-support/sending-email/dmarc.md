@@ -36,7 +36,7 @@ Return Path's Brand Monitor is one, and Agari is another.
 ## 1. Deploy DKIM & SPF by setting up reverse DNS for your SendGrid IP
 
 Start by setting up reverse DNS for your account. This ensures that emails sent through your SendGrid account will be properly signed using DKIM and SPF for your unique domain.
-For more information on completing this process, see [How to set up reverse DNS]({{root_url}}/help-support/getting-started/how-to-set-up-reverse-dns.html)
+For more information on completing this process, see [How to set up reverse DNS]({{root_url}}/help-support/getting-started/how-to-set-up-reverse-dns/)
 
 ## 2. Ensure proper DKIM and SPF signing for your authenticated domain
 
@@ -64,7 +64,12 @@ The record explained:
 
 **rua** = [mailto:example@example.com](mailto:postmaster@whitelabeldomain.com) Reporting URI of aggregate reports - Send aggregate reports to dmarc.rua [@customdomain.com](mailto:postmaster@whitelabeldomain.com), set this to an email address you control that is closely monitored.
 
-Note: This example uses the p=quarantine policy, but always start out using the p=none policy at first.
+<call-out>
+
+This example uses the p=quarantine policy, but always start out using the p=none policy at first.
+
+</call-out>
+
 
 ### Policies
 
@@ -88,7 +93,13 @@ Example: receiver.org!sender.com!1335571200!1335657599.zip
 
     <?xml version="1.0" encoding="UTF-8" ?><feedback>  <report_metadata>    <org_name>receiver.com</org_name>    <email>noreply-dmarc-support@receiver.com</email>    <extra_contact_info>http://receiver.com/dmarc/support</extra_contact_info>    <report_id>9391651994964116463</report_id>    <date_range>      <begin>1335571200</begin>      <end>1335657599</end>    </date_range>  </report_metadata>  <policy_published>    <domain>sender.com</domain>    <adkim>r</adkim>    <aspf>r</aspf>    <p>none</p>    <sp>none</sp>    <pct>100</pct>  </policy_published>  <record>    <row>      <source_ip>72.150.241.94</source_ip>      <count>2</count>      <policy_evaluated>        <disposition>none</disposition>        <dkim>fail</dkim>        <spf>pass</spf>      </policy_evaluated>    </row>    <identifiers>      <header_from>sender.com</header_from>    </identifiers>    <auth_results>      <dkim>        <domain>sender.com</domain>        <result>fail</result>        <human_result></human_result>      </dkim>      <dkim>        <domain>sender.net</domain>        <result>pass</result>        <human_result></human_result>      </dkim>      <spf>        <domain>sender.com</domain>        <result>pass</result>      </spf>    </auth_results>  </record></feedback>
 
-\*Note: Aggregate reports are sent as a .zip attachment, so be sure the address you’re defining is able to accept attachments in this file type.
+
+<call-out>
+
+ Aggregate reports are sent as a .zip attachment, so be sure the address you’re defining is able to accept attachments in this file type.
+
+</call-out>
+
 
 ## 5. Escalate your DMARC policy tags from p=none to p=quarantine to p=reject as you gain experience
 

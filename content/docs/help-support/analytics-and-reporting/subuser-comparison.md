@@ -3,7 +3,7 @@ seo:
   title: Subuser Statistics Comparison
   description: View and compare your subuser specific email statistics.
   keywords: compare subuser statistics, SendGrid compare subuser statistics, subuser statistic comparison
-title: Subuser Comparison
+title: Subuser Statistics Comparison
 group: statistics
 weight: 0
 layout: page
@@ -23,7 +23,7 @@ On all other stats pages, your subuser stats are “rolled up” into the parent
 
 </call-out>
 
-Subusers can help organize your email sending an analytics by enabling you to segment by a different sender and IP address. As a result, you may want to compare one subuser to another. The category comparison tool allows you to do this. You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview.html#-Statistics-Filters).
+Subusers can help organize your email sending an analytics by enabling you to segment by a different sender and IP address. As a result, you may want to compare one subuser to another. The category comparison tool allows you to do this. You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview/#-Statistics-Filters).
 
 ## 	Select Your Subusers
  	
@@ -55,6 +55,6 @@ You can also choose to show actual counts or percentages, by clicking the corres
 
 ## 	Additional Resources
  	
-- [Subuser Stats]({{root_url}}/API_Reference/Web_API_v3/Stats/subusers.html)
-- [Email Activity]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed.html)
-- [Statistics Filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview.html#-Statistics-Filters)
+- [Subuser Stats]({{root_url}}/API_Reference/Web_API_v3/Stats/subusers/)
+- [Email Activity]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed/)
+- [Statistics Filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview/#-Statistics-Filters)
