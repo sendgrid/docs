@@ -1,4 +1,5 @@
 import React from 'react';
+import _ from 'lodash';
 import Group from '../components/Group';
 import CATEGORIES from '../constants/categories';
 import SEO from '../components/SEO';
@@ -7,8 +8,33 @@ import withSubNav from '../components/NavSub';
 import './category.scss';
 
 class CategoryTemplate extends React.Component {
+  static sortGroups(groupEdges) {
+    const groupEdgesSorted = [];
+    const groupsWithKey = [];
+
+    // Add slug to category object
+    _.forOwn(GROUPS, (val, key) => {
+      val.slug = key;
+      // groupsWithKey.push(val);
+    });
+
+    const groupsOrdered = _.sortBy(GROUPS, ['order', 'name']);
+
+    _.forEach(groupsOrdered, (group, i) => {
+      const match = groupEdges.filter(edge => edge.fieldValue === group.slug);
+
+      if (match.length) {
+        groupEdgesSorted.push(match[0]);
+      }
+    });
+
+    return groupEdgesSorted;
+  }
+
   renderGroups() {
-    return this.props.data.docs.group.map(group => (
+    const sortedGroups = CategoryTemplate.sortGroups(this.props.data.docs.group);
+
+    return sortedGroups.map(group => (
       <div key={group.fieldValue} className="category-container col-md-6">
         <h2>{GROUPS[group.fieldValue]}</h2>
         <Group edges={group.edges} />
