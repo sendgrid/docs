@@ -40,7 +40,7 @@ One of the most important parts of CAN-SPAM is this line:
 
 **"Tell recipients how to opt out of receiving future email from you."**
 
-All email providers look for an unsubscribe method (or links) in all emails. Even though it may not make sense for transactional mail, it can make the difference in messages arriving in the inbox or the spam folder. [Subscription tracking](http://sendgrid.com/docs/help-support/analytics-and-reporting/subscription-tracking.html) automatically inserts an unsubscribe link into all your emails and maintains the Unsubscribe list.
+All email providers look for an unsubscribe method (or links) in all emails. Even though it may not make sense for transactional mail, it can make the difference in messages arriving in the inbox or the spam folder. [Subscription tracking](http://sendgrid.com/docs/help-support/analytics-and-reporting/subscription-tracking/) automatically inserts an unsubscribe link into all your emails and maintains the Unsubscribe list.
 
 Think of it this way: would you rather a recipient politely decline future emails from you, or mark your messages as spam because they have no other option?
 
@@ -60,7 +60,7 @@ The day then comes where one of your recipients simply can't take it any more, a
 
 The potential fallback from this is that not only will that recipient no longer receive their important receipts, invoices, and password resets, but it then becomes possible that ALL recipients at the same domain or ISP may also run afoul of the same problem. Yikes!
 
-Consider setting up a [new subuser account]({{root_url}}/help-support/account-and-settings/subusers.html) with an [additional dedicated IP address]({{root_url}}/help-support/account-and-settings/dedicated-ip-addresses.html) specifically for your marketing email, for example:
+Consider setting up a [new subuser account]({{root_url}}/help-support/account-and-settings/subusers/) with an [additional dedicated IP address]({{root_url}}/help-support/account-and-settings/dedicated-ip-addresses/) specifically for your marketing email, for example:
 
 * Parent account | IP 1 | Receipts, invoices, and password resets
 * Subuser account | IP 2 | Marketing/Promotional emails
@@ -75,7 +75,7 @@ Encouraging your recipients to do certain things can help bolster the trust ISPs
 
 - "Add us to your address book!" - Having a recipient add your from address you their address book or trusted senders list can go a long way. More often than not, if one of an ISPs recipients trust a sender, they will be more lenient to similar messages to different recipients!
 - Star or Mark as important - A simple inbox action like this is just another way your recipients can tell their mail providers that "Hey, I want these messages".
-- IP Whitelist - Some ISPs or mail admins can add rules to always allow _all_ incoming mail from specific IP addresses! Consider reaching out to the postmaster(usually example@example.com) of problematic mail domains to see if they can whitelist [your dedicated IP address]({{root_url}}/help-support/account-and-settings/ip-access-management.html).
+- IP Whitelist - Some ISPs or mail admins can add rules to always allow _all_ incoming mail from specific IP addresses! Consider reaching out to the postmaster(usually example@example.com) of problematic mail domains to see if they can whitelist [your dedicated IP address]({{root_url}}/help-support/account-and-settings/ip-access-management/).
 - "If you don't receive an email right away, please check your spam folder and mark "not spam"" - Adding this simple sentence to your sign-up form area can solve a lot of potential heartache. If a message you sent ends up in the Spam folder, and the recipient manually goes in and pulls it out, that's fantastic! This not only helps an ISPs incoming mail filters in avoiding false positives, but also improves your standing with that ISP.
 
  ### 	Nuts and Bolts
@@ -107,6 +107,6 @@ Finally, there are some great 3rd party services you can use to get an idea of h
 
 You can send emails to a capture address at one of these services and they will reply with a breakdown of all the positive and negative factors of your emails. This helps you isolate and fix specific issues that may be sending your email to the Spam folder rather than the inbox. These services are _HIGHLY recommended_ for troubleshooting **spam folder delivery.**
 
-[Senderscore](https://senderscore.org/) is another great resource you can use to get a good idea of how the internet email community ranks the [IP address you send mail from]({{root_url}}/help-support/account-and-settings/ip-access-management.html).
+[Senderscore](https://senderscore.org/) is another great resource you can use to get a good idea of how the internet email community ranks the [IP address you send mail from]({{root_url}}/help-support/account-and-settings/ip-access-management/).
 
 SendGrid has also released the article [Everything You Need To Know About Email Delivery](http://go.sendgrid.com/DeliverabilityGuide.html) highlighting these and more deliverability tips.

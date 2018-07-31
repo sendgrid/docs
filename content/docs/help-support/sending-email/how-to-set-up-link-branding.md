@@ -21,17 +21,17 @@ Email link branding allows all of the click-tracked links and opens tracked imag
  	
  ### 	DNS
  	
-DNS stands for Domain Name System. This is a naming system for domains on the internet. When SendGrid refers to your DNS, we are talking about your domain name that you want to send emails from, or that you want to link images from. When we talk about your DNS provider, we are talking about the service that hosts your domain name. For example, GoDaddy, Rackspace, or Cloudflare. For more information about DNS, see our [DNS glossary page]({{root_url}}/glossary/dns.html).
+DNS stands for Domain Name System. This is a naming system for domains on the internet. When SendGrid refers to your DNS, we are talking about your domain name that you want to send emails from, or that you want to link images from. When we talk about your DNS provider, we are talking about the service that hosts your domain name. For example, GoDaddy, Rackspace, or Cloudflare. For more information about DNS, see our [DNS glossary page]({{root_url}}/glossary/dns/).
 
  ### 	CDN
  	
 A CDN (content delivery network) is a network that delivers the content of webpages to the end user. The network selects the servers for delivery based on the location of the end user, the originating location of the webpage and the location of the content delivery server. Content Delivery Networks are a great mechanism that you can use to serve up content very quickly and easily across multiple mediums as well as handle security certificates for you.
 
-We suggest [CloudFlare]({{root_url}}/help-support/sending-email/content-delivery-networks.html#-Using-CloudFlare), [Fastly]({{root_url}}/help-support/sending-email/content-delivery-networks.html#-Using-Fastly), or [KeyCDN]({{root_url}}/help-support/sending-email/content-delivery-networks.html#-Using-KeyCDN) when using Content Delivery Networks with SendGrid.
+We suggest [CloudFlare]({{root_url}}/help-support/sending-email/content-delivery-networks/#-Using-CloudFlare), [Fastly]({{root_url}}/help-support/sending-email/content-delivery-networks/#-Using-Fastly), or [KeyCDN]({{root_url}}/help-support/sending-email/content-delivery-networks/#-Using-KeyCDN) when using Content Delivery Networks with SendGrid.
 
  ### 	CNAME
  	
-The CNAME record creates an alias for subdomain.yourdomain.com and points to sendgrid.net. The CNAME is needed for our click and open tracking features in order for those statistics to be routed back to your SendGrid account. This will also be what your messages are signed by, so your recipients will be able see what you have chosen for your CNAME. You set up the CNAME files that SendGrid provides with your DNS host. For more information about CNAME, see our [CNAME glossary page]({{root_url}}/glossary/cname.html).
+The CNAME record creates an alias for subdomain.yourdomain.com and points to sendgrid.net. The CNAME is needed for our click and open tracking features in order for those statistics to be routed back to your SendGrid account. This will also be what your messages are signed by, so your recipients will be able see what you have chosen for your CNAME. You set up the CNAME files that SendGrid provides with your DNS host. For more information about CNAME, see our [CNAME glossary page]({{root_url}}/glossary/cname/).
 
  ### 	Before you begin
  	
@@ -49,7 +49,7 @@ Note that you can also set up link branding when you set up your domain authenti
 2. In the link branding section, click **Get Started**.
 3. Next, add in information about your DNS host. CLick **Next**.
 4. Enter the domain that you want to brand the links and images with and add advanced settings. Make sure that you only enter the name of your root domain. Do not include `www` or `http://www` in this field! Your domain needs to match the domain of your from address on the emails you are sending out. For example, if I am branding with the domain `example.sendgrid.com`, I would set my link branding domain to be `sendgrid.com`. Click **Next**. For more information about advanced settings, see [Advanced settings](#-Advanced-settings).
-5. Next, you need to add all of the CNAME records on this screen to your DNS host. This process varies depending on your DNS host. For videos on how to add your CNAME to some popular DNS service providers, check out these [videos](https://sendgrid.com/docs/help-support/getting-started/dns-providers.html). If you don't have access to modify your companies DNS records, you can also email a request to a co-worker. This email includes a direct link to the CNAME records. This link does expire. The recipient doesn't need login access to your SendGrid account.
+5. Next, you need to add all of the CNAME records on this screen to your DNS host. This process varies depending on your DNS host. For videos on how to add your CNAME to some popular DNS service providers, check out these [videos](https://sendgrid.com/docs/help-support/getting-started/dns-providers/). If you don't have access to modify your companies DNS records, you can also email a request to a co-worker. This email includes a direct link to the CNAME records. This link does expire. The recipient doesn't need login access to your SendGrid account.
 
 Now links and images in your emails are from your custom domain. You only need to update your link branding if you want to update the domain that appears in the links in your email.
 
@@ -61,7 +61,7 @@ Once you add the CNAME records to your DNS host, return to the [Sender authentic
 
 <call-out>
 
-If you click verify, and only half of your CNAME records verify, this usually means that you need to wait a bit longer. It's also possible that you entered one of your records in incorrectly. For other troubleshooting information, see [Sender authentication troubleshooting]({{root_url}}/help-support/getting-started/troubleshooting-sender-authentication.html).
+If you click verify, and only half of your CNAME records verify, this usually means that you need to wait a bit longer. It's also possible that you entered one of your records in incorrectly. For other troubleshooting information, see [Sender authentication troubleshooting]({{root_url}}/help-support/getting-started/troubleshooting-sender-authentication/).
 
 </call-out>
 
@@ -91,6 +91,6 @@ If you set up a whitelabel after 2015, it has been automatically migrated to our
 
 ## 	Additional resources
  	
-- [How to set up domain authentication]({{root_url}}/help-support/getting-started/how-to-set-up-domain-authentication.html)
-- [How to set up reverse DNS]({{root_url}}/help-support/getting-started/how-to-set-up-reverse-dns.html)
-- [Troubleshooting]({{root_url}}/help-support/getting-started/troubleshooting-sender-authentication.html)
+- [How to set up domain authentication]({{root_url}}/help-support/getting-started/how-to-set-up-domain-authentication/)
+- [How to set up reverse DNS]({{root_url}}/help-support/getting-started/how-to-set-up-reverse-dns/)
+- [Troubleshooting]({{root_url}}/help-support/getting-started/troubleshooting-sender-authentication/)

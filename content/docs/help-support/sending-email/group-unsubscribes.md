@@ -31,14 +31,14 @@ When you add the `<%asm_group_unsubscribe_url%>` tag to your email, we will repl
 
 Alternatively, you can use the `<%asm_group_unsubscribe_raw_url%>` tag which will be replaced with only the group unsubscribe URL without the hyperlinked text "Unsubscribe From This List".
 
-For more substitution tags, please see our [transactional templates]({{root_url}}/help-support/sending-email/create-and-edit-transactional-templates.html#-Adding-unsubscribe-links-to-a-template).
+For more substitution tags, please see our [transactional templates]({{root_url}}/help-support/sending-email/create-and-edit-transactional-templates/#-Adding-unsubscribe-links-to-a-template).
 
 ## 	Using the API
  	
-You can manage your Global Unsubscribes via the [Group Suppressions API]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/groups.html).
+You can manage your Global Unsubscribes via the [Group Suppressions API]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/groups/).
 
 ## 	Additional Resources
  	
-- [Global unsubscribes vs. Group Unsubscribes]({{root_url}}/help-support/sending-email/index-suppressions.html#-Suppressions-vs--Unsubscribes)
-- [Global Unsubscribes]({{root_url}}/help-support/sending-email/global-unsubscribes.html)
-- [Invalid Emails]({{root_url}}/help-support/sending-email/invalid-emails.html)
+- [Global unsubscribes vs. Group Unsubscribes]({{root_url}}/help-support/sending-email/index-suppressions/#-Suppressions-vs--Unsubscribes)
+- [Global Unsubscribes]({{root_url}}/help-support/sending-email/global-unsubscribes/)
+- [Invalid Emails]({{root_url}}/help-support/sending-email/invalid-emails/)

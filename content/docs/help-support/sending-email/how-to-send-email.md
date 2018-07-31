@@ -12,15 +12,15 @@ seo:
 ---
 <iframe src="https://player.vimeo.com/video/221496578" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-If you want to send email programatically, see the [API reference]({{root_url}}/API_Reference/api_v3.html), or the [SMTP Reference]({{root_url}}/API_Reference/SMTP_API/using_the_smtp_api.html).
+If you want to send email programatically, see the [API reference]({{root_url}}/API_Reference/api_v3/), or the [SMTP Reference]({{root_url}}/for-developers/sending-email/getting-started-smtp/).
 
 Before sending your first campaign, you need to do the following:
 
 - [Create an Account](https://sendgrid.com/pricing/?mc=SendGrid%20Documentation)
-- [Add a Sender](https://sendgrid.com/docs/help-support/sending-email/senders.html)
-- [Upload Contacts](https://sendgrid.com/docs/help-support/managing-contacts/adding-contacts.html)
-- [Add an Unsubscribe Group](https://sendgrid.com/docs/help-support/sending-email/index-suppressions.html)
-- [Segment Your Contact List](https://sendgrid.com/docs/help-support/managing-contacts/managing-contact-list.html) (Optional)
+- [Add a Sender]({{root_url}}/help-support/sending-email/senders/)
+- [Upload Contacts]({{root_url}}/help-support/managing-contacts/adding-contacts/)
+- [Add an Unsubscribe Group]({{root_url}}/help-support/sending-email/index-suppressions/)
+- [Segment Your Contact List]({{root_url}}/help-support/managing-contacts/managing-contact-list/) (Optional)
 
 *To send your first campaign:*
 
@@ -31,7 +31,7 @@ Before sending your first campaign, you need to do the following:
 ![]({{root_url}}/images/campaigns_dashboard_categories_search.png)
 
 1. Select the template that you want to use for your campaign.
-<br> You can select a **Blank Template**, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Marketing Templates](https://sendgrid.com/docs/help-support/sending-email/create-and-edit-transactional-templates.html).
+<br> You can select a **Blank Template**, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Marketing Templates]({{root_url}}/help-support/sending-email/create-and-edit-transactional-templates/).
 
 1. Select an editor.
 <br> You can choose between the **Design Editor** and the **Code Editor**.
@@ -48,13 +48,13 @@ Depending on your editor selection, you use different methods to design your cam
 1. Edit your campaign by filling in the fields in the **Settings** Tab.
 
 1. Add your custom content.
-<br> For more information about customizing your campaign, see [Using the Design Editor]({{root_url}}/help-support/sending-email/editor.html#-The-Design-Editor or [Using the Code Editor]({{root_url}}/help-support/sending-email/editor.html#-The-Code-Editor).
+<br> For more information about customizing your campaign, see [Using the Design Editor]({{root_url}}/help-support/sending-email/editor/#-The-Design-Editor or [Using the Code Editor]({{root_url}}/help-support/sending-email/editor/#-The-Code-Editor).
 
 1. Once you’ve finished editing your campaign, you can see what it looks like by clicking **Preview**.
 
 1. To send a test email, enter the email addresses you want to send your campaign to and then click **Send Test**.
 
-1. If you would like to test the effectiveness of your email subject or content, you can set up an A/B test. For more information, see [A/B Testing](https://sendgrid.com/docs/help-support/sending-email/a-b-testing.html).
+1. If you would like to test the effectiveness of your email subject or content, you can set up an A/B test. For more information, see [A/B Testing](https://sendgrid.com/docs/help-support/sending-email/a-b-testing/).
 
 1. Add a list or segment of recipients to receive your campaign.
 
@@ -94,7 +94,7 @@ Be sure your account is set to the correct time zone in order to ensure that you
 
  ### 	Additional Resources
 
-- [Campaign Statistics](https://sendgrid.com/docs/help-support/analytics-and-reporting/campaign-stats.html)
-- [Billing](https://sendgrid.com/docs/help-support/account-and-settings/billing.html)
+- [Campaign Statistics](https://sendgrid.com/docs/help-support/analytics-and-reporting/campaign-stats/)
+- [Billing](https://sendgrid.com/docs/help-support/account-and-settings/billing/)
 - [Sending with the API]({{root_url}}/for-developers/sending-email/api-getting-started/)
 - [Sending with SMTP]({{root_url}}/for-developers/sending-email/getting-started-smtp/)
