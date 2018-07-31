@@ -8,7 +8,7 @@ navigation:
 ---
 <call-out>
 
-We recommend using SendGrid Java, our client library, <a href="https://github.com/sendgrid/sendgrid-java">available on Github</a>, with full documentation.
+We recommend using SendGrid Java, our client library, [available on Github](https://github.com/sendgrid/sendgrid-java), with full documentation.
 
 </call-out>
 

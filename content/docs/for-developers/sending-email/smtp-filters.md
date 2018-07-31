@@ -7,25 +7,24 @@ navigation:
   show: true
 ---
 
-<p>Following are the settings that can be specified in the filters section of the X-SMTPAPI header. All filters and setting names must be lowercase.</p>
+Following are the settings that can be specified in the filters section of the X-SMTPAPI header. All filters and setting names must be lowercase.
 
 <call-out>
 
-<ul>
-  <li>If you're enabling a Setting, also called a filter, via SMTPAPI, you are required to define all of the parameters for that Setting.</li>
-  <li>Setting enabled status will always default to your settings on the website, unless otherwise defined in your X-SMTPAPI header</li>
-  <li>If you enable a disabled setting, our system will not pull your settings for the disabled setting. You will need to define the settings in your X-SMTPAPI header <em>Example:</em> If you have a footer designed but disabled, you can't just enable it via the API; you need to define the footer in the API call itself.</li>
-  <li>All filter names and setting names must be lowercase.</li>
-</ul>
+
+* If you're enabling a Setting, also called a filter, via SMTPAPI, you are required to define all of the parameters for that Setting.
+* Setting enabled status will always default to your settings on the website, unless otherwise defined in your X-SMTPAPI header.
+* If you enable a disabled setting, our system will not pull your settings for the disabled setting. You will need to define the settings in your X-SMTPAPI header <em>Example:</em> If you have a footer designed but disabled, you can't just enable it via the API; you need to define the footer in the API call itself.
+* All filter names and setting names must be lowercase.
 
 </call-out>
 
-<p>For more information on the utility of these settings, please check out the <a href="{{root_url}}/User_Guide/Settings/">Settings</a> section.</p>
+For more information on the utility of these settings, please check out the [Settings]({{root_url}}/User_Guide/Settings/) section.
 
 <call-out>
 
 Some Settings are not listed here, because they cannot be defined on a per-message basis. To update these other Settings, please refer to the
-<a href="{{root_url}}/API_Reference/Web_API/filter_settings.html">Web API Filter Settings</a> commands.
+[Web API Filter Settings]({{root_url}}/API_Reference/Web_API/filter_settings.html) commands.
 
 </call-out>
 
@@ -76,7 +75,7 @@ This setting is very powerful, and can only be used on a per-message basis. Use 
 
 </call-out>
 
-<p>Some emails are too important to do normal list management checks, such as password resets or critical alerts. Enabling this filter will bypass the normal unsubscribe / bounce / spam report checks and queue the email for delivery.</p>
+Some emails are too important to do normal list management checks, such as password resets or critical alerts. Enabling this filter will bypass the normal unsubscribe / bounce / spam report checks and queue the email for delivery.
 
 <table class="table table-striped table-bordered">
 <tbody>
@@ -109,7 +108,7 @@ This setting is very powerful, and can only be used on a per-message basis. Use 
 
 ## Filter: clicktrack
 
-<p>Rewrites links in email text and html bodies to go through our webservers, allowing for tracking when a link is clicked on.</p>
+Rewrites links in email text and html bodies to go through our webservers, allowing for tracking when a link is clicked on.
 
 <table class="table table-striped table-bordered">
 <tbody>
@@ -143,9 +142,9 @@ This setting is very powerful, and can only be used on a per-message basis. Use 
 
 ## Filter: dkim
 
-<p>Allows you to specify the domain to use to sign messages with DKIM
+Allows you to specify the domain to use to sign messages with DKIM
 certification. This domain should match the domain in the From address
-of your email.</p>
+of your email.
 
 <table class="table table-striped table-bordered">
 <tbody>
@@ -186,7 +185,7 @@ of your email.</p>
 
 ## Filter: footer
 
-<p>Inserts a footer at the bottom of the text and HTML bodies.</p>
+Inserts a footer at the bottom of the text and HTML bodies.
 
 <table class="table table-striped table-bordered">
 <tbody>
@@ -232,7 +231,7 @@ of your email.</p>
 
 ## Filter: ganalytics
 
-<p>Re-writes links to integrate with Google Analytics.</p>
+Re-writes links to integrate with Google Analytics.
 
 <table class="table table-striped table-bordered">
 <tbody>
@@ -274,7 +273,8 @@ of your email.</p>
 </tbody>
 </table>
 
-<h4>Example X-SMTPAPI Header Value</h4>
+#### Example X-SMTPAPI Header Value
+
 ```json
 {
   "filters" : {
@@ -293,9 +293,9 @@ of your email.</p>
 
 <hr/>
 
-Filter:</h3> <code>opentrack</code>
+### Filter: opentrack
 
-<p>If you don't use 'replace' this will insert an <code>&lt;img&gt;</code> tag at the bottom of the html section of an email which will be used to track if an email is opened. If you choose to use 'replace', you can put the tracking pixel wherever you would like in the email and SendGrid will replace it at send time.</p>
+If you don't use 'replace' this will insert an <code>&lt;img&gt;</code> tag at the bottom of the html section of an email which will be used to track if an email is opened. If you choose to use 'replace', you can put the tracking pixel wherever you would like in the email and SendGrid will replace it at send time.
 
 <table class="table table-striped table-bordered">
 <tbody>
@@ -380,9 +380,9 @@ Filter:</h3> <code>opentrack</code>
 <hr/>
 
 ## Filter: subscriptiontrack
- 	<p>Inserts a subscription management link at the bottom of the text and html bodies or insert the link anywhere in the email.</p>
+Inserts a subscription management link at the bottom of the text and html bodies or insert the link anywhere in the email.
 
-<p>If you wish to append an unsubscription link, use the <code>text/html</code> and <code>text/plain</code> parameters. However, if you wish to have the link replace a tag (such as <code>[unsubscribe]</code>), use the <code>replace</code> parameter.</p>
+If you wish to append an unsubscription link, use the <code>text/html</code> and <code>text/plain</code> parameters. However, if you wish to have the link replace a tag (such as <code>[unsubscribe]</code>), use the <code>replace</code> parameter.
 
 <table class="table table-striped table-bordered">
 <tbody>
@@ -446,7 +446,7 @@ This setting refers to SendGrid's <a href="{{root_url}}/API_Reference/Web_API_v3
 </call-out>
 
 
-<p>Uses a <a href="{{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/index.html">transactional template</a> when sending an email.
+Uses a [transactional template]({{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/index.html) when sending an email.
 
 <table class="table table-striped table-bordered">
 <tbody>
@@ -488,7 +488,7 @@ This setting refers to SendGrid's <a href="{{root_url}}/API_Reference/Web_API_v3
 
 <call-out type="warning">
 
-This setting refers to our original Email Template app. We now support more fully featured <a href="#templates">transactional templates</a>. You may create multiple transactional templates that allow for versioning, in addition to several other features.
+This setting refers to our original Email Template app. We now support more fully featured [transactional templates](#templates). You may create multiple transactional templates that allow for versioning, in addition to several other features.
 
 </call-out>
 

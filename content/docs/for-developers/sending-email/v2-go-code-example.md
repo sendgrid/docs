@@ -8,7 +8,7 @@ navigation:
 ---
 <call-out>
 
-We recommend using SendGrid Go, our client library, <a href="https://github.com/sendgrid/sendgrid-go">available on Github</a>, with full documentation.
+We recommend using SendGrid Go, our client library, [available on Github](https://github.com/sendgrid/sendgrid-go), with full documentation.
 
 </call-out>
 

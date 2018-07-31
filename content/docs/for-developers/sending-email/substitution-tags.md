@@ -11,15 +11,16 @@ navigation:
   show: true
 ---
 
-<p>Substitution tags allow you to generate dynamic content for each recipient on your list. When you send to a list of recipients over SMTP API, you can specify substitution tags specific to each recipient. For example, a first name that will then be inserted into an opening greeting like the following, where each recipient sees -firstName- replaced with their first name.</p>
+Substitution tags allow you to generate dynamic content for each recipient on your list. When you send to a list of recipients over SMTP API, you can specify substitution tags specific to each recipient. For example, a first name that will then be inserted into an opening greeting like the following, where each recipient sees -firstName- replaced with their first name.
 
 ```html
 "Dear -firstName-"
 ```
 
-<p>These tags can also be used in more complex scenarios. For example, you could use a -customerID- to build a custom URL that is specific to that user.</p>
+These tags can also be used in more complex scenarios. For example, you could use a -customerID- to build a custom URL that is specific to that user.
 
-<h4>A customer specific ID can replace -customerID- in the URL within your email</h4>
+#### A customer specific ID can replace -customerID- in the URL within your email
+
 ```html
 <a href="http://example.com/customerOffer?id=-customerID-">Claim your offer!</a>
 ```
@@ -75,7 +76,8 @@ Email HTML content:
 
 <p>An accompanying SMTP API JSON header might look something like this:</p>
 
-```json{
+```json
+{
   "to": [
     "example@example.com",
     "example@example.com"
@@ -105,7 +107,8 @@ Email HTML content:
 }
 ```
 
-<p>The resulting email for John would look like this:</p>
+The resulting email for John would look like this:
+
 ```html
 <html>
   <head></head>
@@ -123,7 +126,8 @@ Email HTML content:
 </html>
 ```
 
-<p>In contrast, the resulting email for Jane will look like the following, with her specific values replaced in for each tag:</p>
+In contrast, the resulting email for Jane will look like the following, with her specific values replaced in for each tag:
+
 ```html
 <html>
   <head></head>

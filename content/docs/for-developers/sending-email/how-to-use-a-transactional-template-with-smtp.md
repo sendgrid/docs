@@ -38,7 +38,7 @@ If you are using the [Web API v3 mail send endpoint]({{root_url}}/API_Reference/
 <call-out>
 
 Make sure that the version of the template you want to use is set to active
-by using the [activate endpoint]({{ root_url }}/API_Reference/Web_API_v3/Transactional_Templates/versions.html#-POST) or by activating it in the
+by using the [activate endpoint]({{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/versions.html#-POST) or by activating it in the
 UI.
 
 </call-out>

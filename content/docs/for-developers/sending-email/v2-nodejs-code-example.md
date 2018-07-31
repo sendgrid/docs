@@ -8,7 +8,7 @@ navigation:
 ---
 <call-out>
 
-We recommend using <a href="https://sendgrid.com/docs/Integrate/Code_Examples/v3_Mail/nodejs.html">v3</a> SendGrid Node.js, our client library, <a href="https://github.com/sendgrid/sendgrid-nodejs">available on Github</a>, with full documentation.
+We recommend using [v3]({{root_url}}/for-developers/sending-email/v3-nodejs-code-example/) SendGrid Node.js, our client library, [available on Github](https://github.com/sendgrid/sendgrid-nodejs), with full documentation.
 
 </call-out>
 
