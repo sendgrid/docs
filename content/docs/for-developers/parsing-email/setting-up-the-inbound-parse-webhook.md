@@ -115,7 +115,11 @@ Remember to direct your incoming email to your hostname (e.g. example@example.co
 
 ## 	Default Parameters
 
-<table class="table table-bordered table-striped">
+<table class="table">
+  <colgroup>
+  <col class="table-col-200">
+  <col>
+  </colgroup>
    <tbody>
       <tr>
          <th>headers</th>
@@ -145,7 +149,7 @@ Remember to direct your incoming email to your hostname (e.g. example@example.co
          <th>sender_ip</th>
          <td>A string of the sender’s ip address.</td>
       </tr>
-      <tr>
+     <tr>
          <th>spam_report</th>
          <td>Spam Assassin’s spam report.</td>
       </tr>
@@ -163,7 +167,7 @@ Remember to direct your incoming email to your hostname (e.g. example@example.co
       </tr>
       <tr>
          <th>spam_score</th>
-         <td>Spam Assassin’s rating for whether or not this is spam.<td>
+         <td>Spam Assassin’s rating for whether or not this is spam.</td>
       </tr>
       <tr>
          <th>attachment-info</th>
@@ -179,6 +183,7 @@ Remember to direct your incoming email to your hostname (e.g. example@example.co
       </tr>
       </tbody>
 </table>
+
 
 ## 	Example Default Payload
 
@@ -260,6 +265,9 @@ Content analysis details:   (2.6 points, 5.0 required)
 ## 	Raw Parameters
 
 <table class="table table-bordered table-striped">
+  <colgroup>
+  <col class="table-col-200">
+  </colgroup>
    <tbody>
       <tr>
          <th>dkim</th>
