@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-Mail Settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid’s [Web API]({{root_url}}/API_Reference/Web_API/mail/) or [SMTP Relay]({{root_url}}/glossary/smtp-relay/).
+Mail Settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid’s [Web API](https://sendgrid.com/docs/Web_API/mail/) or [SMTP Relay]({{root_url}}/glossary/smtp-relay/).
 
 ## 	Address Whitelist
  	

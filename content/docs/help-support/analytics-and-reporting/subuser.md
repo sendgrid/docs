@@ -27,6 +27,6 @@ This table will refresh with new or adjusted data based on the various filters a
 
 ## 	Additional Resources
  	
-- [Subuser Stats]({{root_url}}/API_Reference/Web_API_v3/Stats/subusers/)
+- [Subuser Stats](https://sendgrid.com/docs/Web_API_v3/Stats/subusers/)
 - [Email Activity]({{root_url}}//help-support/analytics-and-reporting/email-activity-feed/)
 - [Statistics Filters]({{root_url}}//help-support/analytics-and-reporting/stats-overview/#-Statistics-Filters)

@@ -34,7 +34,7 @@ Alternatively, you can use the `<%asm_global_unsubscribe_raw_url%>` tag, which w
 
 ## 	Using the API
  	
-You can manage your Global Unsubscribes via the [Global Suppressions API]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/global_suppressions.html).
+You can manage your Global Unsubscribes via the [Global Suppressions API](https://sendgrid.com/docs/Web_API_v3/Suppression_Management/global_suppressions.html).
 
 ## 	Additional Resources
  	

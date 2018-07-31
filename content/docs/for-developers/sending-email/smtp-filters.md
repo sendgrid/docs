@@ -24,7 +24,7 @@ For more information on the utility of these settings, please check out the [Set
 <call-out>
 
 Some Settings are not listed here, because they cannot be defined on a per-message basis. To update these other Settings, please refer to the
-[Web API Filter Settings]({{root_url}}/API_Reference/Web_API/filter_settings.html) commands.
+[Web API Filter Settings](https://sendgrid.com/docs/Web_API/filter_settings.html) commands.
 
 </call-out>
 
@@ -423,12 +423,12 @@ The `landing` argument cannot be used in SMTPAPI. It can only be setup via the U
 
 <call-out>
 
-This setting refers to SendGrid's <a href="{{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/index.html">transactional templates</a>. SendGrid supports versioning, and the ability to create multiple transactional templates. Previously, we had a Template App, which is now referred to as the <a href="#template">Legacy Template App</a>.
+This setting refers to SendGrid's <a href="https://sendgrid.com/docs/Web_API_v3/Transactional_Templates/index.html">transactional templates</a>. SendGrid supports versioning, and the ability to create multiple transactional templates. Previously, we had a Template App, which is now referred to as the <a href="#template">Legacy Template App</a>.
 
 </call-out>
 
 
-Uses a [transactional template]({{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/index.html) when sending an email.
+Uses a [transactional template](https://sendgrid.com/docs/Web_API_v3/Transactional_Templates/index.html) when sending an email.
 
 <table class="table table-striped table-bordered">
 <tbody>

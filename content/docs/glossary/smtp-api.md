@@ -22,7 +22,7 @@ The power of SMTP can be extended using our SMTP API which enables advanced func
 
 For more information about the SendGrid SMTP API, you can visit our [Documentation page]({{root_url}}/for-developers/sending-email/building-an-smtp-email/). There, you’ll be able to learn how to use the API and implement the right headers to gain the statistics you need.
 
-In addition to our SMTP API, we also provide customers a Web API. Unlike the SMTP API, our [Web API]({{root_url}}/API_Reference/Web_API/index.html) allows customers to retrieve information about their account and the messages they send to their recipient list. The Web API allows customers to see what messages are bounced back, what are reported as spam, and how many recipients unsubscribed from their email program.
+In addition to our SMTP API, we also provide customers a Web API. Unlike the SMTP API, our [Web API](https://sendgrid.com/docs/Web_API/index.html) allows customers to retrieve information about their account and the messages they send to their recipient list. The Web API allows customers to see what messages are bounced back, what are reported as spam, and how many recipients unsubscribed from their email program.
 
 Finally, SendGrid also offers custom webhooks and other tools to give customers even more insight into their email programs. Some of our most versatile tools and apps include:
 

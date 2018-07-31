@@ -52,5 +52,5 @@ Your lists will be cleaner and even if we do drop the messages intended to addre
 
  ### 	Cleaning your lists
 
-We recommend Using the [Web API]({{root_url}}/API_Reference/Web_API/index.html) to export any of the suppression lists. Once you export that data, you can use it to clean your distribution lists.
+We recommend Using the [Web API](https://sendgrid.com/docs/Web_API/index.html) to export any of the suppression lists. Once you export that data, you can use it to clean your distribution lists.
 

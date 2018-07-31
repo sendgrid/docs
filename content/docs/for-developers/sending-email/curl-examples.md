@@ -65,7 +65,7 @@ curl --request POST \
 
 ## 	Scheduling and Cancelling an Email
  	
-You may schedule an email to be sent up to 72 hours in the future by using the "send_at" parameter. You may cancel this same scheduled email by using the [Cancel Scheduled Sends endpoint]({{root_url}}/API_Reference/Web_API_v3/cancel_schedule_send.html).
+You may schedule an email to be sent up to 72 hours in the future by using the "send_at" parameter. You may cancel this same scheduled email by using the [Cancel Scheduled Sends endpoint](https://sendgrid.com/docs/Web_API_v3/cancel_schedule_send.html).
 
 **Step 1: Generate a batch ID**
 ```bash
