@@ -16,11 +16,16 @@ navigation:
 - [Invalid SMTP API Header](#-Invalid-SMTP-API-Hheader)
 - [Certificate verification failed for smtp.sendgrid.net](#-Certificate-verification-failed-for-smtp.sendgrid.net)
 
- ### 	Response codes
+ ##	Response codes
 
 Each SMTP call you make returns a response. `200` responses are usually success responses, and `400` responses are usually deferrals. SendGrid continues to retry resending `400` messages for up to 72 hours. `500` responses are hard failures that are not retried by our servers. This table has possible response codes with example errors and a general explanation of that sort of response.
 
-<table class="table" style="table-layout:fixed">
+<table class="table">
+  <colgroup>
+  <col class="table-col-100">
+  <col>
+  <col>
+  </colgroup>
   <tr>
     <th>Error</th>
     <th>Message</th>
