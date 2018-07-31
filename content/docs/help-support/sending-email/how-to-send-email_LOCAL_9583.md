@@ -19,13 +19,8 @@ Before sending your first campaign, you need to do the following:
 - [Create an Account](https://sendgrid.com/pricing/?mc=SendGrid%20Documentation)
 - [Add a Sender]({{root_url}}/help-support/sending-email/senders/)
 - [Upload Contacts]({{root_url}}/help-support/managing-contacts/adding-contacts/)
-<<<<<<< HEAD
 - [Add an Unsubscribe Group]({{root_url}}/help-support/sending-email/create-and-manage-unsubscribe-groups/)
 - [Segment Your Contact List]({{root_url}}/help-support/managing-contacts/managing-contact-list/) (Optional)
-=======
-- [Add an Unsubscribe Group]({{root_url}}/help-support/sending-email/index-suppressions/)
-- [Segment Your Contact List]({{root_url}}/help-support/managing-contacts/segmenting-your-contacts/) (Optional)
->>>>>>> upstream/a-new-hope-episode-iv
 
 *To send your first campaign:*
 
@@ -53,7 +48,7 @@ Depending on your editor selection, you use different methods to design your cam
 1. Edit your campaign by filling in the fields in the **Settings** Tab.
 
 1. Add your custom content.
-<br> For more information about customizing your campaign, see [Using the Design Editor]({{root_url}}/help-support/sending-email/editor/#-The-Design-Editor) or [Using the Code Editor]({{root_url}}/help-support/sending-email/editor/#-The-Code-Editor).
+<br> For more information about customizing your campaign, see [Using the Design Editor]({{root_url}}/help-support/sending-email/editor/#-The-Design-Editor or [Using the Code Editor]({{root_url}}/help-support/sending-email/editor/#-The-Code-Editor).
 
 1. Once you’ve finished editing your campaign, you can see what it looks like by clicking **Preview**.
 

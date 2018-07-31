@@ -16,7 +16,7 @@ Using the parameters defined below, you can queue batches of emails targeting in
 
 <call-out>
 
-**Emails can be scheduled up to 72 hours in advance.** However, this scheduling constraint does not apply to campaigns sent via [Marketing Campaigns]({{root_url}}/User_Guide/Marketing_Campaigns/index.html).
+**Emails can be scheduled up to 72 hours in advance.** However, this scheduling constraint does not apply to campaigns sent via [Marketing Campaigns]({{root_url}}/help-support/sending-email/how-to-send-email/).
 
 </call-out>
 

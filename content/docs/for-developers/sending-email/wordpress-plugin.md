@@ -17,7 +17,7 @@ navigation:
 
 SendGrid's cloud-based email infrastructure relieves businesses of the cost and complexity of maintaining custom email systems. SendGrid provides reliable deliverability, scalability, and real-time analytics along with flexible APIs that make custom integration with your application a breeze.
 
-SendGrid’s [WordPress plugin](https://wordpress.org/plugins/sendgrid-email-delivery-simplified/) replaces WordPress’s default **wp_mail()** function by using either an SMTP or API integration with SendGrid to send outgoing email from your WordPress installation. It also allows you to upload contacts directly to your SendGrid [Marketing Campaigns]({{root_url}}/User_Guide/Marketing_Campaigns/index.html) account via a [subscription widget]({{root_url}}/for-developers/managing-contacts/wordpress-subscription-widget.html).
+SendGrid’s [WordPress plugin](https://wordpress.org/plugins/sendgrid-email-delivery-simplified/) replaces WordPress’s default **wp_mail()** function by using either an SMTP or API integration with SendGrid to send outgoing email from your WordPress installation. It also allows you to upload contacts directly to your SendGrid Marketing Campaigns account via a [subscription widget]({{root_url}}/for-developers/managing-contacts/wordpress-subscription-widget/).
 
 By using the SendGrid plugin, you will be able to take advantage of improved deliverability and an expanded feature set, including tracking and analytics, to enhance user engagement on your WordPress installation. SendGrid also provides world class customer support, should you run into any issues.
 
@@ -29,7 +29,7 @@ To get the SendGrid plugin running after you have activated Swift Mailer, naviga
 
 You can also set default values for the "Name," "Sending Address," and the "Reply Address” headers so that you don’t have to define these headers every time you want to send an email.
 
-If you would like to use [templates]({{root_url}}/User_Guide/Transactional_Templates/index.html), you can set the template ID to be used in all of your emails on the settings page or you can set it individually for each email in the headers.
+If you would like to use [templates]({{root_url}}/help-support/sending-email/how-to-send-email-with-dynamic-transactional-templates/), you can set the template ID to be used in all of your emails on the settings page or you can set it individually for each email in the headers.
 
 You can have an individual email sent to each recipient by specifying the x-smtpapi-to header. For example:
 
@@ -161,7 +161,7 @@ For more examples of how you can use SendGrid SMTPAPI headers, please visit the 
 
 ## 	How to Use Categories
 
-You can use [categories]({{root_url}}/User_Guide/Statistics/categories.html) to help organize and track the emails sent from WordPress via the SendGrid plugin.
+You can use [categories]({{root_url}}/help-support/analytics-and-reporting/categories/) to help organize and track the emails sent from WordPress via the SendGrid plugin.
 
 Categories used for emails can be set either globally, or on an email-by-email basis.
 

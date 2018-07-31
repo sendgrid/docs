@@ -7,7 +7,7 @@ navigation:
   show: true
 ---
 
-To send email using Thunderbird you will have to modify your outgoing server settings in Thunderbird accordingly. Additionally you can modify settings in Thunderbird that will allow you to include an [SMTP API]({{root_url}}/for-developers/sending-email/building-an-smtp-email/) header in your emails if you wish to leverage [categories]({{root_url}}/User_Guide/Statistics/categories.html) or other features of the SMTP API when sending mail via the Thunderbird client.
+To send email using Thunderbird you will have to modify your outgoing server settings in Thunderbird accordingly. Additionally you can modify settings in Thunderbird that will allow you to include an [SMTP API]({{root_url}}/for-developers/sending-email/building-an-smtp-email/) header in your emails if you wish to leverage [categories]({{root_url}}/help-support/analytics-and-reporting/categories/) or other features of the SMTP API when sending mail via the Thunderbird client.
 
 ## Start by going to: 'Tools' -\> 'Account Settings'
 

@@ -1,7 +1,4 @@
 ---
-st:
-  published_at: 2016-06-17
-  type: Classroom
 seo:
   title: Email to SMS
   description: Email to SMS

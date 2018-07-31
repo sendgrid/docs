@@ -16,6 +16,6 @@ It is usually caused due to SMTP 5.5.0 errors which cause an email to be undeliv
 
  ### 	Additional Resources
  	
-* [Delivery Metrics]({{root_url}}/User_Guide/Statistics/index.html)
+* [Delivery Metrics]({{root_url}}/help-support/analytics-and-reporting/stats-overview)
 * [Bounces]({{root_url}}/glossary/bounces.html)
 * [Subscriber List Management]({{root_url}}/glossary/subscriber-list-management.html)

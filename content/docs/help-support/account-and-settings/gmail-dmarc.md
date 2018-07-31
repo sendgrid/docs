@@ -1,7 +1,4 @@
 ---
-st:
-  published_at: 2016-06-13
-  type: Classroom
 seo:
   title: Gmail DMARC Changes
   description: 550 5.7.1 Unauthenticated email from domain.tld is not accepted due...
@@ -10,7 +7,6 @@ title: Gmail DMARC Changes
 weight: 0
 group: sender-authentication
 layout: page
-zendesk_id: 202449646
 navigation:
   show: true
 ---
