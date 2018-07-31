@@ -108,7 +108,7 @@ You will not be charged an email when these reports are forwarded to you.
 
  ### 	Forwarding abuse@ and postmaster@ Emails
  	
-The email address specified in the Forward Spam mail setting may also be used to receive emails sent to abuse@ and postmaster@ role addresses if you have [authenticated your domain]({{root_url}}/help-support/getting-started/how-to-set-up-domain-authentication/).
+The email address specified in the Forward Spam mail setting may also be used to receive emails sent to abuse@ and postmaster@ role addresses if you have [authenticated your domain]({{root_url}}/help-support/sending-email/how-to-set-up-domain-authentication/).
 
 For example, if you create a valid authenticated domain with a custom return path of `sub` and a root domain `example` *and* have turned on Forward Spam, any emails sent to abuse@sub.example.com or postmaster@sub.example.com will be forwarded to the email address you entered in the Forward Spam mail setting.
 

@@ -13,7 +13,7 @@ navigation:
 
 <iframe src="https://player.vimeo.com/video/190122014" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-You can also send email with [the UI]({{root_url}}/help-support/getting-started/how-to-send-email/) and with [the API]({{root_url}}/API_Reference/api_v3/).
+You can also send email with [the UI]({{root_url}}/help-support/sending-email/how-to-send-email/) and with [the API]({{root_url}}/API_Reference/api_v3/).
 
 
 ## What is SMTP?
@@ -68,7 +68,7 @@ Now that you've sent a test email, learn to [integrate your servers with our SMT
 
 ## Additional Resources
 
-- [Getting Started with the UI]({{root_url}}/help-support/getting-started/how-to-send-email/)
+- [Getting Started with the UI]({{root_url}}/help-support/sending-email/how-to-send-email/)
 - [Getting Started with the API]({{root_url}}/API_Reference/api_v3/)
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
 - [Integrating with the SMTP API]({{root_url}}/for-developers/sending-email/integrating-with-the-smtp-api/)

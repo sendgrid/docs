@@ -61,7 +61,7 @@ curl --request POST \
 
 <call-out>
 
-If you have not yet set up [Sender Authentication]({{root_url}}/help-support/getting-started/how-to-set-up-domain-authentication.html) in your account, you may need to check your spam folder for the email you just sent.
+If you have not yet set up [Sender Authentication]({{root_url}}/help-support/sending-email/how-to-set-up-domain-authentication.html) in your account, you may need to check your spam folder for the email you just sent.
 
 </call-out>
 
@@ -74,5 +74,5 @@ All responses are returned in JSON format. We specify this by sending the ``Cont
 For more information on SendGrid and where you can go from here, check out these pages:
 
 - [API Reference]({{root_url}}/API_Reference/api_v3.html)
-- [Sender Authentication]({{root_url}}/help-support/getting-started/how-to-set-up-domain-authentication.html)
-- [How to Send Email]({{root_url}}/help-support/getting-started/how-to-send-email.html)
+- [Sender Authentication]({{root_url}}/help-support/sending-email/how-to-set-up-domain-authentication.html)
+- [How to Send Email]({{root_url}}/help-support/sending-email/how-to-send-email.html)

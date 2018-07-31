@@ -59,7 +59,7 @@ To set up reverse DNS, you must submit the DNS records provided by SendGrid to y
 3. Next, select the IP to set up reverse DNS.
 4. Add a subdomain. For more information about picking a subdomain, see [Subdomains](#-Subdomain).
 5. Select or enter a domain you want to associate with the IP. Make sure that you only enter the name of your root domain. Do not include `www` or `http://www` in this field! Your domain needs to match the domain of your from address on the emails you are sending out. For example, if I am setting up the domain `example.sendgrid.com`, I would set my domain to be `sendgrid.com`. Click **Save** and then **Confirm**. An individual IP address can only have one reverse DNS set up.
-6. Next, you need to add all of the A Records on this screen to your DNS host. This process varies depending on your DNS host. For videos on how to add your A Records to some popular DNS service providers, check out these [videos](https://sendgrid.com/docs/help-support/getting-started/dns-providers/).
+6. Next, you need to add all of the A Records on this screen to your DNS host. This process varies depending on your DNS host. For videos on how to add your A Records to some popular DNS service providers, check out these [videos](https://sendgrid.com/docs/help-support/sending-email/dns-providers/).
 
 <call-out>
 
@@ -75,7 +75,7 @@ Once you add the A Records to your DNS host, return to the [Sender authenticatio
 
 <call-out>
 
-If you click verify, and only half of your A name records verify, this usually means that you need to wait a bit longer. It's also possible that you entered one of your records in incorrectly. For other troubleshooting information, see [Sender authentication troubleshooting]({{root_url}}/help-support/getting-started/troubleshooting-sender-authentication/).
+If you click verify, and only half of your A name records verify, this usually means that you need to wait a bit longer. It's also possible that you entered one of your records in incorrectly. For other troubleshooting information, see [Sender authentication troubleshooting]({{root_url}}/help-support/sending-email/troubleshooting-sender-authentication/).
 
 </call-out>
 
@@ -91,6 +91,6 @@ There is a character limit in SPF (sender policy framework) records that means t
 
 ## 	Additional resources
  	
-- [How to set up domain authentication]({{root_url}}/help-support/getting-started/how-to-set-up-domain-authentication/)
-- [How to set up link branding]({{root_url}}/help-support/getting-started/how-to-set-up-link-branding/)
-- [Troubleshooting]({{root_url}}/help-support/getting-started/troubleshooting-sender-authentication/)
+- [How to set up domain authentication]({{root_url}}/help-support/sending-email/how-to-set-up-domain-authentication/)
+- [How to set up link branding]({{root_url}}/help-support/sending-email/how-to-set-up-link-branding/)
+- [Troubleshooting]({{root_url}}/help-support/sending-email/troubleshooting-sender-authentication/)
