@@ -37,13 +37,11 @@ If you are using the [Web API v3 mail send endpoint]({{root_url}}/API_Reference/
 
 <call-out>
 
-Make sure that the version of the template you want to use is set to active
-by using the [activate endpoint]({{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/versions.html#-POST) or by activating it in the
-UI.
+Make sure that the version of the template you want to use is set to active by using the [activate endpoint]({{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/versions.html#-POST) or by activating it in the UI.
 
 </call-out>
 
-* * * * *
+
 
 ## 	Body and Subject Tags
 
@@ -63,7 +61,7 @@ It is best practice to provide content for both the ```html``` and the ```text``
 
 The ```text``` property is substituted into the `<%body%>` of the text template and ```html``` is substituted into the `<%body%>` of the HTML template. If the ```text``` property is present, but not ```html```, then the resulting email will only contain the text version of the template, not the HTML version. The `<%subject%>` property is used for both Text and HTML templates.
 
-* * * * *
+
 
 ## 	Substitutions and Sections
 

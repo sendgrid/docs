@@ -65,8 +65,6 @@ Some Settings are not listed here, because they cannot be defined on a per-messa
 }
 ```
 
-<hr/>
-
 ## Filter: bypass_list_management
 
 <call-out type="warning">
@@ -104,8 +102,6 @@ Some emails are too important to do normal list management checks, such as passw
 }
 ```
 
-<hr />
-
 ## Filter: clicktrack
 
 Rewrites links in email text and html bodies to go through our webservers, allowing for tracking when a link is clicked on.
@@ -137,8 +133,6 @@ Rewrites links in email text and html bodies to go through our webservers, allow
   }
 }
 ```
-
-<hr/>
 
 ## Filter: dkim
 
@@ -179,9 +173,6 @@ of your email.
   }
 }
 ```
-
-
-<hr/>
 
 ## Filter: footer
 
@@ -226,8 +217,6 @@ Inserts a footer at the bottom of the text and HTML bodies.
   }
 }
 ```
-
-<hr/>
 
 ## Filter: ganalytics
 
@@ -291,7 +280,6 @@ Re-writes links to integrate with Google Analytics.
 }
 ```
 
-<hr/>
 
 ### Filter: opentrack
 
@@ -330,8 +318,6 @@ If you don't use 'replace' this will insert an <code>&lt;img&gt;</code> tag at t
   }
 }
 ```
-
-<hr/>
 
 ## Filter: spamcheck
 
@@ -376,8 +362,6 @@ If you don't use 'replace' this will insert an <code>&lt;img&gt;</code> tag at t
   }
 }
 ```
-
-<hr/>
 
 ## Filter: subscriptiontrack
 Inserts a subscription management link at the bottom of the text and html bodies or insert the link anywhere in the email.
@@ -435,8 +419,6 @@ The `landing` argument cannot be used in SMTPAPI. It can only be setup via the U
 }
 ```
 
-<hr/>
-
 ## Filter: templates
 
 <call-out>
@@ -481,8 +463,6 @@ Uses a [transactional template]({{root_url}}/API_Reference/Web_API_v3/Transactio
   }
 }
 ```
-
-<hr/>
 
 ## Filter: template
 
