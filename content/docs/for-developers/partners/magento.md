@@ -72,7 +72,6 @@ First, log in to your **Magento Dashboard**, then click  **System** in the left 
 
     ![]({{root_url}}/images/magento_3.jpg)
 
-3. Emails are automatically tracked and tagged to provide you deliverability and engagement statistics viewable from the **SendGrid Dashboard**. You can also add other [categories]({{root_url}}/User_Guide/Statistics/categories.html) for your emails in the field Categories.
 3. Emails are automatically tracked and tagged to provide you deliverability and engagement statistics viewable from the **SendGrid Dashboard**. You can also add other [categories]({{root_url}}help-support/analytics-and-reporting/categories/) for your emails in the field Categories.
 
     ![]({{root_url}}/images/magento_4.png)
@@ -81,12 +80,10 @@ First, log in to your **Magento Dashboard**, then click  **System** in the left 
 
     ![]({{root_url}}/images/magento_5.png)
 
-5. Next, select the [unsubscribe group]({{root_url}}/User_Guide/Suppressions/advanced_suppression_manager.html).
 5. Next, select the [unsubscribe group]({{root_url}}/help-support/sending-email/index-suppressions/).
 
     ![]({{root_url}}/images/magento_6.png)
 
-6. If you would like to [configure categories for statistics]({{root_url}}/User_Guide/Statistics/categories.html), you can configure it by setting the **Categories** field under **Statistics Settings**.
 6. If you would like to [configure categories for statistics]({{root_url}}/help-support/analytics-and-reporting/categories/), you can configure it by setting the **Categories** field under **Statistics Settings**.
 
     ![]({{root_url}}/images/magento_7.png)
@@ -105,7 +102,6 @@ Log into your **Magento Dashboard**, then click **System** in the left hand navi
  	
  ### 	What credentials do I need to add on settings page?
  	
-[Create a SendGrid account](https://sendgrid.com/partners/magento/) and [generate a new API key](https://app.sendgrid.com/settings/api_keys). For more information about API Keys, [click here]({{root_url}}/User_Guide/Settings/api_keys.html).
 [Create a SendGrid account](https://sendgrid.com/partners/magento/) and [generate a new API key](https://app.sendgrid.com/settings/api_keys). For more information about API Keys, [click here]({{root_url}}/help-support/account-and-settings/api-keys/).
 
  ### 	What permissions should my API keys have?
