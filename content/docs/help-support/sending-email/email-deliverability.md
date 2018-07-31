@@ -7,7 +7,6 @@ title: Email Deliverability Overview
 group: delivery-optimization
 weight: 0
 layout: page
-zendesk_id: 200181718
 navigation:
   show: true
 ---
