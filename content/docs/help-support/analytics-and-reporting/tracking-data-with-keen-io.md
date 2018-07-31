@@ -9,7 +9,7 @@ seo:
   title:  Email Event Data with Keen IO
 ---
 
-The SendGrid [Event Webhook]({{root_url}}/API_Reference/Webhooks/event/) lets you stream all [email events]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed/) directly to Keen IO for real-time analysis and long term raw storage.
+The SendGrid [Event Webhook]({{root_url}}/for-developers/tracking-events/event/) lets you stream all [email events]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed/) directly to Keen IO for real-time analysis and long term raw storage.
 
 It only takes a couple of minutes to start streaming email event data from SendGrid to Keen IO and once you do you can start analyzing and visualizing your data in a whole bunch of different ways.
 
@@ -59,6 +59,6 @@ For each of these metrics, you can download a CSV of the detailed event data. Ju
 
  ### 	Additional Resources:
   	
-- [Integration Guide that includes analysis and visualization info](https://sendgrid.com/docs/Integrate/Tutorials/analytics_with_keen_io.html)
+- [Integration Guide that includes analysis and visualization info]({{root_url}}/for-developers/tracking-events/tracking-data-with-keen-io/)
 - [Keen IO API Reference](https://keen.io/docs/api/)
 - [Docs for Visualization](https://keen.io/docs/visualize/)
