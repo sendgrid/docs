@@ -1,7 +1,4 @@
 ---
-st:
-  published_at: 2016-09-01
-  type: Classroom
 seo:
   title: How do I check the headers/raw source of an email?
   description: How do I check the headers/raw source of an email?
@@ -10,7 +7,6 @@ title: How do I check the headers/raw source of an email?
 group: delivery-optimization
 weight: 0
 layout: page
-zendesk_id: 203965613
 navigation:
   show: true
 ---
