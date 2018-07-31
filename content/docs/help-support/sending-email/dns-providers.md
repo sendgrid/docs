@@ -15,9 +15,8 @@ navigation:
 ---
 
 #Whitelabeling with GoDaddy
-<p><iframe src="https://player.vimeo.com/video/149805633" width="700" height="400" frameborder="0" allowfullscreen=""></iframe></p>
-
+<iframe src="https://player.vimeo.com/video/149805633" width="700" height="400" frameborder="0" allowfullscreen=""></iframe>
 
 #Whitelabeling with Hover
-<p><iframe src="https://player.vimeo.com/video/158954155" width="700" height="400" frameborder="0" allowfullscreen=""></iframe></p>
+<iframe src="https://player.vimeo.com/video/158954155" width="700" height="400" frameborder="0" allowfullscreen=""></iframe>
 

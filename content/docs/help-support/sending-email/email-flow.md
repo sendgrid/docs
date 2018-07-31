@@ -24,7 +24,7 @@ First, a sender puts together the content that their recipients will love. Then 
 Imagine that a sender is a host at a party and all of the other guests are the recipients of the message. The host will then shake every guest’s hand and during that “handshake” they will have this SMTP conversation. In the end, the guest (i.e. recipient and its recipient server) will determine if they will accept the message or not. In this scenario, you can think of SendGrid as a person at the party grabbing both the host’s and guest’s hands and making the handshake and discussion actually happen.
 
 ## 	The “Handshake” Details and Results
- 	
+
 The sender connects to the SMTP server through SendGrid and tells the server the final destination it would like its message to go to. Let’s say it is example@example.com. The SMTP server recognizes the domain portion (the part after the @ sign) of “customer.com” and contacts the receiving server responsible for accepting messages for that domain. During this connection the two servers exchange multiple pieces of information. The receiving server typically then says one of the following:
 
 * “Yes, I know who ‘person’ is and all is in order to deliver it to their inbox.”
@@ -33,7 +33,7 @@ The sender connects to the SMTP server through SendGrid and tells the server the
 * “No, I do not know who ‘person’ is and will be sending the message back to the sender.” (aka a bounced message)
 
 ## 	Determining Factors of Delivery
- 	
+
 As mentioned before, there are many pieces of information exchanged between the sending and receiving mail servers. As you can see from the email flow diagram, the other two places SendGrid assists in the message path (along with the Outbound Mail Server) are the DNS (Domain Name System) and Authentication portions. The receiving server wants to trust the mail that is being exchanged in order to accept it. DNS and Authentication assists with this decision.
 
  ### 	DNS
@@ -55,10 +55,11 @@ The reputation of the domains included in the links within the body content will
 </call-out>
 
  ### 	User Level Filtering
- 	
+
 Along with these items listed above, some recipients may also have their own individual rules within their inbox of where certain mail will go. This placement is harder to change, aside from making sure that your content is desired by the recipient and they won’t be creating any custom filters to have your messages delivered anywhere but the inbox.
 
 ## 	Reacting to Opinions of the “Guests”
- 	
- ### 	Feedback for the Guests to Give the Host
- 	Within email, there is a function known as a Feedback Loop. These are created by the mailbox providers and a Sender can get set up to receive notification through them to inform them when a recipient complains about the Sender’s message (aka, marking a message as junk or spam). This should help the host (Sender) to be aware of when certain guests didn’t prefer the content included in their interaction and the host (Sender) should not try to have another conversation (aka send a message) to this guest in the future.
+
+### 	Feedback for the Guests to Give the Host
+
+Within email, there is a function known as a Feedback Loop. These are created by the mailbox providers and a Sender can get set up to receive notification through them to inform them when a recipient complains about the Sender’s message (aka, marking a message as junk or spam). This should help the host (Sender) to be aware of when certain guests didn’t prefer the content included in their interaction and the host (Sender) should not try to have another conversation (aka send a message) to this guest in the future.
