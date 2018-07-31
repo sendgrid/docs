@@ -1,6 +1,6 @@
 const LINKS = {
   APP: 'https://app.sendgrid.com/',
-  ACADEMY: 'https://learn.sendgrid.com/',
+  ACADEMY: 'http://learn.sendgrid.com/',
   FOR_DEVELOPERS: '/for-developers/',
   GLOSSARY: '/glossary/',
   LOGOUT: 'https://app.sendgrid.com/logout/',
