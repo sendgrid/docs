@@ -1,7 +1,4 @@
 ---
-st:
-  published_at: 2016-06-07
-  type: Classroom
 seo:
   title: Why is sendgrid.net “greylisted”?
   description: Noticing sendgrid.net is greylisted...

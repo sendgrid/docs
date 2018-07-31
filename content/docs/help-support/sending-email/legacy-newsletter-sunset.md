@@ -30,7 +30,7 @@ for free today.
 ## 	Additional Resources
  	
 <ul>
-  <li><a href="{{root_url}}/help-support/getting-started/how-to-send-email.html" target="_blank">Marketing Campaigns Overview</a></li>
-  <li><a href="{{root_url}}/help-support/managing-contacts/adding-contacts.html" target="_blank">Adding Contacts</a></li>
-  <li><a href="{{root_url}}/help-support/managing-contacts/segmenting-your-contacts.html" target="_blank">Segmenting your contacts</a></li>
+  <li><a href="{{root_url}}/help-support/getting-started/how-to-send-email/" target="_blank">Marketing Campaigns Overview</a></li>
+  <li><a href="{{root_url}}/help-support/managing-contacts/adding-contacts/" target="_blank">Adding Contacts</a></li>
+  <li><a href="{{root_url}}/help-support/managing-contacts/segmenting-your-contacts/" target="_blank">Segmenting your contacts</a></li>
 </ul>

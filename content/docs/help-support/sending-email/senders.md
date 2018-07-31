@@ -10,11 +10,6 @@ seo:
   override: true
   description:
 ---
-* [Before you Begin](#-Before-you-Begin)
-* [Adding a Sender](#-Adding a Sender)
-* [Adding Sender Information to a Campaign](#-Adding-Sender-Information-to-a-Campaign)
-* [Additional Resources](#-Additional-Resources)
-
 <iframe src="https://player.vimeo.com/video/120703745" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ## 	Before you Begin
@@ -51,7 +46,7 @@ You must verify your sender identity before you can edit it or use it to send a 
    To resend your verification email, hover over the Action Menu on the Sender Management page and select **Resend Verification**.
 <call-out>
 
-If you have an [authenticated domain]({{root_url}}/help-support/getting-started/how-to-set-up-domain-authentication.html) and your sender email address matches that domain exactly, your sender identity will automatically verify.
+If you have an [authenticated domain]({{root_url}}/help-support/getting-started/how-to-set-up-domain-authentication/) and your sender email address matches that domain exactly, your sender identity will automatically verify.
 
 </call-out>
 
