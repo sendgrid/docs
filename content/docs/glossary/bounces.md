@@ -17,7 +17,7 @@ Soft Bounces - A soft bounce is an e-mail message that gets as far as the recipi
 
 If you want to receive notification of bounces in your application, you can enable the Real-time Event Notification API and SendGrid will alert your application of any bounces, clicks, opens, or otherwise that happen to the emails you send. Alternatively, you can enable Bounce Forwarding within your account to receive an email each time a bounce occurs.
 
-You can also [retrieve and edit your list of bounces](https://sendgrid.com/docs/Web_API/bounces.html) through our Web API.
+You can also [retrieve and edit your list of bounces](https://sendgrid.com/docs/API_Reference/Web_API/bounces.html) through our Web API.
 
  ### Additional Resources:
 

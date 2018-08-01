@@ -16,4 +16,4 @@ A sender’s complaint rate is calculated by dividing the total number of emails
 
 Higher numbers of complaints can negatively impact your [email deliverability]({{root_url}}/glossary/email-deliverability/).
 
-To get more information please check out our [Email Infrastructure Guide.](https://go.sendgrid.com/SendGrid-Infrastructure-Guide.html?mc=Direct&mcd=https://sendgrid.com/docs/index.html)
+To get more information please check out our [Email Infrastructure Guide.](https://go.sendgrid.com/SendGrid-Infrastructure-Guide.html?mc=Direct&mcd=https://sendgrid.com/docs/API_Reference/index.html)

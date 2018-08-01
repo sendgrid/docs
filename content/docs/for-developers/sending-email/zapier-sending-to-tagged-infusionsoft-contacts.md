@@ -29,7 +29,7 @@ You will need:
 
 To connect your Infusionsoft to Zapier you will need an active Infusionsoft account. To get started with Infusionsoft, go [here](http://help.infusionsoft.com/userguides/get-started). You can learn more about getting started with Infusionsoft on Zapier, [here](https://zapier.com/help/infusionsoft/#how-get-started-infusionsoft).
 
-To connect your Infusionsoft account to SendGrid, you must have an active SendGrid account. To learn more about getting started with SendGrid basics, start [here](https://sendgrid.com/docs/index.html). For more information about getting started with SendGrid on Zapier, go [here](https://zapier.com/help/sendgrid/#how-get-started-sendgrid).
+To connect your Infusionsoft account to SendGrid, you must have an active SendGrid account. To learn more about getting started with SendGrid basics, start [here](https://sendgrid.com/docs/API_Reference/index.html). For more information about getting started with SendGrid on Zapier, go [here](https://zapier.com/help/sendgrid/#how-get-started-sendgrid).
 
 
 ### Connecting your accounts<a name="connect"></a>

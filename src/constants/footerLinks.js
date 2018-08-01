@@ -28,7 +28,7 @@ FOOTER_LINKS.SUPPORT = {
   HEADER: 'Support',
   LINKS: [
     { URL: 'https://support.sendgrid.com/', TEXTNODE: 'Contact Support' },
-    { URL: 'https://sendgrid.com/docs/', TEXTNODE: 'Documentation' },
+    { URL: 'https://sendgrid.com/docs/API_Reference/', TEXTNODE: 'Documentation' },
     { URL: 'https://sendgrid.com/report-spam/', TEXTNODE: 'Report Spam' },
   ],
 };

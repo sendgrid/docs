@@ -33,4 +33,4 @@ When entering your host name (also referred to as the receiving domain), the sub
 
 ## 	Using the API
  	
-If you're interested in how to use the Inbound Parse Webhook, please check out our [Inbound Parse Webhook API](https://sendgrid.com/docs/Web_API_v3/Webhooks/parse/).
+If you're interested in how to use the Inbound Parse Webhook, please check out our [Inbound Parse Webhook API](https://sendgrid.com/docs/API_Reference/Web_API_v3/Webhooks/parse/).

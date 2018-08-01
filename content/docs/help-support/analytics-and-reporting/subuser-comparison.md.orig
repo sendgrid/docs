@@ -56,7 +56,7 @@ You can also choose to show actual counts or percentages, by clicking the corres
 ## 	Additional Resources
  	
 <<<<<<< HEAD
-- [Subuser Stats](https://sendgrid.com/docs/Web_API_v3/Stats/subusers/)
+- [Subuser Stats](https://sendgrid.com/docs/API_Reference/Web_API_v3/Stats/subusers/)
 =======
 - [Subuser Stats]({{root_url}}/API_Reference/Web_API_v3/Stats/subusers.html)
 >>>>>>> upstream/a-new-hope-episode-iv

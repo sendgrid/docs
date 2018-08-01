@@ -27,4 +27,4 @@ server for www.sendgrid.com to get a Web page.
 For more information:
 
 * [CNAMES]({{root_url}}/glossary/cname/)
-* The SendGrid [Email Infrastructure Guide](https://go.sendgrid.com/SendGrid-Infrastructure-Guide.html?mc=Direct&mcd=https://sendgrid.com/docs/index.html)
+* The SendGrid [Email Infrastructure Guide](https://go.sendgrid.com/SendGrid-Infrastructure-Guide.html?mc=Direct&mcd=https://sendgrid.com/docs/API_Reference/index.html)

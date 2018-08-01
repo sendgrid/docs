@@ -39,7 +39,7 @@ To see only the figures from a specific geographic area, change the Activity Map
  	
 - [Statistics Filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview/#-Statistics-Filters)
 <<<<<<< HEAD
-- [Global Stats](https://sendgrid.com/docs/Web_API_v3/Stats/global/)
+- [Global Stats](https://sendgrid.com/docs/API_Reference/Web_API_v3/Stats/global/)
 =======
 - [Global Stats]({{root_url}}/API_Reference/Web_API_v3/Stats/global.html)
 >>>>>>> upstream/a-new-hope-episode-iv

@@ -29,7 +29,7 @@ You will need:
 
 To connect your Google Sheets to Zapier, make sure [you have created a new sheet for this purpose](http://www.gcflearnfree.org/googlespreadsheets/8.2). You can learn more about getting started with Google Sheets on Zapier, [here](https://zapier.com/help/google-sheets/#how-get-started-google-sheets-zapier).
 
-To link your Google Sheets to SendGrid, you must have an active SendGrid account. To learn more about getting started with SendGrid basics, start [here](https://sendgrid.com/docs/index.html). For more information about getting started with SendGrid on Zapier, go [here](https://zapier.com/help/sendgrid/#how-get-started-sendgrid).
+To link your Google Sheets to SendGrid, you must have an active SendGrid account. To learn more about getting started with SendGrid basics, start [here](https://sendgrid.com/docs/API_Reference/index.html). For more information about getting started with SendGrid on Zapier, go [here](https://zapier.com/help/sendgrid/#how-get-started-sendgrid).
 
 ### Connecting your accounts<a name="connect"></a>
 

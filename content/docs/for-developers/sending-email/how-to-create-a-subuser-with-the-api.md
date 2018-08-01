@@ -16,7 +16,7 @@ navigation:
 
 ## Establish the New Subuser (required)
 
-With the [subuser creation API call](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/subusers.html) you will be able to establish the new subuser's account and profile settings. This call will create the new subuser account, however it does not apply the sending IP for the account, nor does it establish a domain authentication entry or enable website/SMTP access for the subuser.
+With the [subuser creation API call](https://sendgrid.com/docs/API_Reference/Customer_Subuser_API/subusers.html) you will be able to establish the new subuser's account and profile settings. This call will create the new subuser account, however it does not apply the sending IP for the account, nor does it establish a domain authentication entry or enable website/SMTP access for the subuser.
 
 #### Call Example
 
@@ -31,7 +31,7 @@ https://api.sendgrid.com/apiv2/customer.add.json?api_user=ryan.burrer@sendgrid.c
 
 ## Assign an IP to be Used by the New Subuser (required)
 
-Now that you have created the new subuser account, you will need to [add an IP](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/ip_management.html#-Subuser-IP-Assignment) so that it can send emails. We advise that you first find an available IP for this subuser. You can do so by using the following call:
+Now that you have created the new subuser account, you will need to [add an IP](https://sendgrid.com/docs/API_Reference/Customer_Subuser_API/ip_management.html#-Subuser-IP-Assignment) so that it can send emails. We advise that you first find an available IP for this subuser. You can do so by using the following call:
 
 #### Call Example
 ```
@@ -48,7 +48,7 @@ When defining the parameter 'list' there are a few options you can choose:
 <strong>Response Example<br></strong><img src="http://content.screencast.com/users/Ryan.Burrer/folders/Jing/media/0dc1923b-fff9-4446-aff1-5dcab41929a4/00000096.png" alt="" align="middle">
 </center>
 
-After you have selected the IP that you wish to assign to your subuser account, simply make the API call to [append the IP address](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/ip_management.html#-Subuser-IP-Assignment).
+After you have selected the IP that you wish to assign to your subuser account, simply make the API call to [append the IP address](https://sendgrid.com/docs/API_Reference/Customer_Subuser_API/ip_management.html#-Subuser-IP-Assignment).
 
 #### Call Example
 ```
@@ -71,9 +71,9 @@ When defining this call's 'set' parameter, you have a few options for appending 
 
 ## Assign a domain authentication for the Subuser Account (optional)
 
-After you have created the subuser account and have appended an IP address, you are now ready to assign an _existing_  [authenticated domain](https://sendgrid.com/docs/help-support/sending-email/how-to-set-up-domain-authentication.html) to the account. If you have not yet created the required records for authenticating your chosen domain then this step should be skipped.
+After you have created the subuser account and have appended an IP address, you are now ready to assign an _existing_  [authenticated domain](https://sendgrid.com/docs/API_Reference/help-support/sending-email/how-to-set-up-domain-authentication.html) to the account. If you have not yet created the required records for authenticating your chosen domain then this step should be skipped.
 
-First, you should find out what authenticated domains you have associated with your account. This call will [list your available authenticated domains](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/whitelabel.html#-List):
+First, you should find out what authenticated domains you have associated with your account. This call will [list your available authenticated domains](https://sendgrid.com/docs/API_Reference/Customer_Subuser_API/whitelabel.html#-List):
 
 #### Call Example
 ```
@@ -87,7 +87,7 @@ https://api.sendgrid.com/apiv2/customer.whitelabel.json?api\_user=ryan.burrer@se
 
 The API response above shows that email.sendgrid.com and email.example.com are both already established domain entries, and can be used by this subuser. If none are displayed then the next step in this process should be skipped.
 
-If you have a authenticated domain entry that you wish to apply to your subuser then you will need to [append the whitelabel entry](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/whitelabel.html#-Append) to your subuser:
+If you have a authenticated domain entry that you wish to apply to your subuser then you will need to [append the whitelabel entry](https://sendgrid.com/docs/API_Reference/Customer_Subuser_API/whitelabel.html#-Append) to your subuser:
 
 #### Call Example
 ```
@@ -102,7 +102,7 @@ https://api.sendgrid.com/apiv2/customer.whitelabel.json?api_user=ryan.burrer@sen
 
 ## Authenticating the Subuser to Have Website/SMTP Access ** (required)
 
-The final step in creating your new subuser requires you to simply [activate the subuser](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/authenticate_a_subuser.html) account so that they have website and SMTP access.
+The final step in creating your new subuser requires you to simply [activate the subuser](https://sendgrid.com/docs/API_Reference/Customer_Subuser_API/authenticate_a_subuser.html) account so that they have website and SMTP access.
 
 #### Call Example
 ```
@@ -123,7 +123,7 @@ If you have followed all of these steps then you have just created a new subuser
 
 But wait, there's more...
 
-Now that you have created a new subuser you can change the [Event Notification URL](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/event_notification_url.html), the subuser's enabled [apps](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/apps.html), and even set [account limits](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/account_limits.html) for the subuser.
+Now that you have created a new subuser you can change the [Event Notification URL](https://sendgrid.com/docs/API_Reference/Customer_Subuser_API/event_notification_url.html), the subuser's enabled [apps](https://sendgrid.com/docs/API_Reference/Customer_Subuser_API/apps.html), and even set [account limits](https://sendgrid.com/docs/API_Reference/Customer_Subuser_API/account_limits.html) for the subuser.
 
 <center>
 

@@ -33,4 +33,4 @@ You can download your list as a CSV by clicking the gear icon at the top of the 
  	
 - [Recipient Subscription Preferences]({{root_url}}/help-support/sending-email/recipient-subscription-preferences/)
 - [Spam Reports]({{root_url}}/help-support/analytics-and-reporting/spam-reports/)
-- [Invalid Emails API](https://sendgrid.com/docs/Web_API_v3/invalid_emails.html)
+- [Invalid Emails API](https://sendgrid.com/docs/API_Reference/Web_API_v3/invalid_emails.html)

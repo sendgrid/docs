@@ -31,13 +31,13 @@ Example
 ```
 
 You can use this JSON in the `X-SMTPAPI` header of an SMTP message, or in
-the `x-smtpapi` parameter of a [Web API v2 mail send](https://sendgrid.com/docs/Web_API/mail.html#-send) call.
+the `x-smtpapi` parameter of a [Web API v2 mail send](https://sendgrid.com/docs/API_Reference/Web_API/mail.html#-send) call.
 
-If you are using the [Web API v3 mail send endpoint](https://sendgrid.com/docs/Web_API_v3/Mail/index.html), you can specify which transactional template you would like to use simply by setting the template ID in the `template_id` parameter of your JSON payload.
+If you are using the [Web API v3 mail send endpoint](https://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/index.html), you can specify which transactional template you would like to use simply by setting the template ID in the `template_id` parameter of your JSON payload.
 
 <call-out>
 
-Make sure that the version of the template you want to use is set to active by using the [activate endpoint](https://sendgrid.com/docs/Web_API_v3/Transactional_Templates/versions.html#-POST) or by activating it in the UI.
+Make sure that the version of the template you want to use is set to active by using the [activate endpoint](https://sendgrid.com/docs/API_Reference/Web_API_v3/Transactional_Templates/versions.html#-POST) or by activating it in the UI.
 
 </call-out>
 

@@ -16,7 +16,7 @@ seo:
 
 
 <<<<<<< HEAD
-From our [Contacts]({{site.marketing_campaigns_url}}/contacts) page, you can add, upload, modify, and delete your contacts. Contacts can be added to your contacts database using the [API](https://sendgrid.com/docs/api-reference//), or by  manually adding or uploading a CSV file through the [SendGrid App](https://app.sendgrid.com/).
+From our [Contacts]({{site.marketing_campaigns_url}}/contacts) page, you can add, upload, modify, and delete your contacts. Contacts can be added to your contacts database using the [API](https://sendgrid.com/docs/API_Reference/api-reference//), or by  manually adding or uploading a CSV file through the [SendGrid App](https://app.sendgrid.com/).
 =======
 From our [Contacts]({{site.marketing_campaigns_url}}/contacts) page, you can add, upload, modify, and delete your contacts. Contacts can be added to your contacts database using the [API](https://sendgrid.com/docs/API_Reference/api_v3.html), or by  manually adding or uploading a CSV file through the [SendGrid App](https://app.sendgrid.com/).
 >>>>>>> upstream/a-new-hope-episode-iv
@@ -29,7 +29,7 @@ Your first 2,000 contacts are free. After 2,000 contacts, SendGrid charges $10 f
 
  ### 	Formatting a CSV
  	
-You can easily add contacts to your contact database by uploading a CSV of your contacts to SendGrid. If you have your contacts in a spreadsheet, simply save that sheet as a .csv file using a spreadsheet application like Microsoft Excel or Google Sheets. You can also export your contacts from most database systems as a .csv file. For more information, see the documentation on [Formatting a CSV](https://sendgrid.com/docs/help-support/managing-contacts/formating-a-csv/).
+You can easily add contacts to your contact database by uploading a CSV of your contacts to SendGrid. If you have your contacts in a spreadsheet, simply save that sheet as a .csv file using a spreadsheet application like Microsoft Excel or Google Sheets. You can also export your contacts from most database systems as a .csv file. For more information, see the documentation on [Formatting a CSV](https://sendgrid.com/docs/API_Reference/help-support/managing-contacts/formating-a-csv/).
 
  ### 	Uploading a CSV
  	
@@ -50,7 +50,7 @@ You can easily add contacts to your contact database by uploading a CSV of your 
 
 <call-out>
 
-After uploading contacts, you can define segments for individual contacts or lists based on specified criteria. For more information, see [Lists and Segmentation](https://sendgrid.com/docs/help-support/managing-contacts/segmenting-your-contacts/).
+After uploading contacts, you can define segments for individual contacts or lists based on specified criteria. For more information, see [Lists and Segmentation](https://sendgrid.com/docs/API_Reference/help-support/managing-contacts/segmenting-your-contacts/).
 
 </call-out>
 
@@ -72,7 +72,7 @@ The notification email contains the following information:
 * Number of errors
 * Error messages for each errored row
 
-If there are any errors, there will be a link to download a CSV containing the errored rows so that you can reformat and reupload those contacts. For more help resolving issues with uploading a CSV, see [Formatting a CSV](https://sendgrid.com/docs/help-support/managing-contacts/formatting-a-csv/).
+If there are any errors, there will be a link to download a CSV containing the errored rows so that you can reformat and reupload those contacts. For more help resolving issues with uploading a CSV, see [Formatting a CSV](https://sendgrid.com/docs/API_Reference/help-support/managing-contacts/formatting-a-csv/).
 
 <call-out>
 
@@ -131,5 +131,5 @@ If you [create a segment]({{root_url}}/help-support/managing-contacts/segmenting
  ### 	Additional Resources
   	
 - [Contacts API](https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html)
-- [Segmenting your Contacts](https://sendgrid.com/docs/help-support/managing-contacts/segmenting-your-contacts/)
-- [Building your Contact list](https://sendgrid.com/docs/help-support/managing-contacts/building-your-contact-list/)
+- [Segmenting your Contacts](https://sendgrid.com/docs/API_Reference/help-support/managing-contacts/segmenting-your-contacts/)
+- [Building your Contact list](https://sendgrid.com/docs/API_Reference/help-support/managing-contacts/building-your-contact-list/)

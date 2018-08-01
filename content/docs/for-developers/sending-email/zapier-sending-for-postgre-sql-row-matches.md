@@ -29,7 +29,7 @@ You will need:
 
 To connect your PostgreSQL account to Zapier you will need an active PostgreSQL, and a database that you wish to pull data from. To get started with PostgreSQL, including information on how to install the program and how to create a database, go [here](http://www.postgresql.org/docs/9.4/static/tutorial-start.html). You can learn more about getting started with PostgreSQL on Zapier, [here](https://zapier.com/help/postgresql/#how-get-started-postgresql).
 
-To link your PostgreSQL to SendGrid, you must have an active SendGrid account. To learn more about getting started with SendGrid basics, start [here](https://sendgrid.com/docs/index.html). For more information about getting started with SendGrid on Zapier, go [here](https://zapier.com/help/sendgrid/#how-get-started-sendgrid).
+To link your PostgreSQL to SendGrid, you must have an active SendGrid account. To learn more about getting started with SendGrid basics, start [here](https://sendgrid.com/docs/API_Reference/index.html). For more information about getting started with SendGrid on Zapier, go [here](https://zapier.com/help/sendgrid/#how-get-started-sendgrid).
 
 ### Connecting your accounts<a name="connect"></a>
 

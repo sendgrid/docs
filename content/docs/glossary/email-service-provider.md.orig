@@ -24,7 +24,7 @@ ESPs like SendGrid also provide expertise on increasing your [email deliverabili
 
 * [IP Whitelabeling]({{root_url}}/glossary/reverse-dns/)
 <<<<<<< HEAD
-* [Dedicated IPs](https://sendgrid.com/docs/Web_API_v3/IP_Management/index/)
+* [Dedicated IPs](https://sendgrid.com/docs/API_Reference/Web_API_v3/IP_Management/index/)
 =======
 * [Dedicated IPs]({{root_url}}/API_Reference/Web_API_v3/IP_Management/index.html)
 >>>>>>> upstream/a-new-hope-episode-iv

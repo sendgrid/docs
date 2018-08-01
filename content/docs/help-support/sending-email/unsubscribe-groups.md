@@ -31,7 +31,7 @@ Make sure your group names and descriptions are customer friendly! Your customer
 
 </call-out>
 
-All of your groups will be visible on the [Suppression Management]({{site.app_url}}/suppressions/advanced_suppression_manager) page, along with the descriptions you defined when you created the groups. There are also [Suppression Management API](https://sendgrid.com/docs/Web_API_v3/Suppression_Management/index.html) endpoints for managing your groups and suppressions.
+All of your groups will be visible on the [Suppression Management]({{site.app_url}}/suppressions/advanced_suppression_manager) page, along with the descriptions you defined when you created the groups. There are also [Suppression Management API](https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/index.html) endpoints for managing your groups and suppressions.
 
 ## 	Add An Unsubscribe Group
 

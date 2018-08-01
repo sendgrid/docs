@@ -15,7 +15,7 @@ navigation:
 
 <call-out>
 
-If you are currently using the [Web API v2 mail send endpoint](https://sendgrid.com/docs/Web_API/mail.html), we recommend that you upgrade to the [latest version](https://sendgrid.com/docs/Web_API_v3/Mail/index.html).
+If you are currently using the [Web API v2 mail send endpoint](https://sendgrid.com/docs/API_Reference/Web_API/mail.html), we recommend that you upgrade to the [latest version](https://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/index.html).
 
 </call-out>
 
@@ -32,7 +32,7 @@ With a few quick changes you will be able to take advantage of the improvements 
 
 All you need to migrate from the v2 to v3 mail send endpoint is a SendGrid account.
 
-If you are a new SendGrid user and haven’t begun sending email yet, please go straight to our [v3 Mail Send documentation](https://sendgrid.com/docs/Web_API_v3/Mail/index.html) to get started.
+If you are a new SendGrid user and haven’t begun sending email yet, please go straight to our [v3 Mail Send documentation](https://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/index.html) to get started.
 
 ## 	JSON Schema
 
@@ -40,7 +40,7 @@ Some of the biggest improvements made to the mail send endpoint reside in the JS
 
 Below you will find a visual comparison of the v2 and v3 JSON schemas that highlights equivalent parameters between the two versions and any parameters that have been added or removed. Significant additions include the "personalizations", "sandbox_mode", and "bypass_list_management" parameters.
 
-For a more detailed discussion of these new parameters, please visit the [v3 Mail Send Overview](https://sendgrid.com/docs/Web_API_v3/Mail/index.html).
+For a more detailed discussion of these new parameters, please visit the [v3 Mail Send Overview](https://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/index.html).
 
 ![]({{root_url}}/images/v2_vs_v3_mail_send_ga.png)
 
@@ -114,9 +114,9 @@ For example, when attaching a single file named "example_file.jpg", the `attachm
 More Resources
 For additional resources on the v3 Mail Send endpoint, please first visit our other documentation on the v3 Mail Send endpoint:
 
-* [V3 Mail Send Overview](https://sendgrid.com/docs/Web_API_v3/Mail/index.html)
+* [V3 Mail Send Overview](https://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/index.html)
 * [SandBox Mode]({{root_url}}/for-developers/sending-email/sandbox-mode/)
-* [Errors](https://sendgrid.com/docs/Web_API_v3/Mail/errors.html)
+* [Errors](https://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/errors.html)
 * [Personalizations]({{root_url}}/for-developers/sending-email/personalizations/)
 * [cURL Examples for Common Use Cases]({{root_url}}/for-developers/sending-email/curl-examples/)
 

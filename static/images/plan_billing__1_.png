@@ -60,7 +60,7 @@
 </form>            <p>Don't have a SendGrid Account?<a href="https://sendgrid.com/transactional-email/pricing"> Sign Up</a></p>
             <p>Forgot Password?<a href="https://sendgrid.com/user/forgotPassword"> Click Here</a></p>
             <div id="docs">
-                <img id="docs-icon" src="/support/sso/assets/docs_icon-0e5bb41ee48ece300c27f69676de3527.png" alt="Docs icon" />Are you looking for our <a href="https://sendgrid.com/docs">Documentation</a>?
+                <img id="docs-icon" src="/support/sso/assets/docs_icon-0e5bb41ee48ece300c27f69676de3527.png" alt="Docs icon" />Are you looking for our <a href="https://sendgrid.com/docs/API_Reference">Documentation</a>?
             </div>
         </div>
         <footer id="footer">

@@ -74,6 +74,6 @@ You can easily duplicate a pre-built template provided by SendGrid.
 
  ### 	Additional Resources
   	
-- For more information, see [Sending an Email](https://sendgrid.com/docs/help-support/sending-email/how-to-send-email/) or [view the next video](https://vimeo.com/139274837) in our Getting Started Series.
-- [Design Editor](https://sendgrid.com/docs/help-support/sending-email/editor/#-The-Design-Editor)
-- [Code Editor](https://sendgrid.com/docs/help-support/sending-email/code_editor/#-The-Code-Editor)
+- For more information, see [Sending an Email](https://sendgrid.com/docs/API_Reference/help-support/sending-email/how-to-send-email/) or [view the next video](https://vimeo.com/139274837) in our Getting Started Series.
+- [Design Editor](https://sendgrid.com/docs/API_Reference/help-support/sending-email/editor/#-The-Design-Editor)
+- [Code Editor](https://sendgrid.com/docs/API_Reference/help-support/sending-email/code_editor/#-The-Code-Editor)

@@ -27,7 +27,7 @@ You can also schedule your campaigns with the [Marketing Campaigns API](https://
 
 #2. API
 <<<<<<< HEAD
-You can you can schedule a time to send your email by using the the `send_at` object of the `POST /mail/send` method of the [V3 API](https://sendgrid.com/docs/api-reference/.html). For more information about scheduling and stopping scheduled sends with the API, see [Can I Stop a Scheduled Send]({{root_url}}/Classroom/Send/When_Emails_Are_Sent/can_i_stop_a_scheduled_send.html).
+You can you can schedule a time to send your email by using the the `send_at` object of the `POST /mail/send` method of the [V3 API](https://sendgrid.com/docs/API_Reference/api-reference/.html). For more information about scheduling and stopping scheduled sends with the API, see [Can I Stop a Scheduled Send]({{root_url}}/Classroom/Send/When_Emails_Are_Sent/can_i_stop_a_scheduled_send.html).
 =======
 You can you can schedule a time to send your email by using the the `send_at` object of the `POST /mail/send` method of the [V3 API](https://sendgrid.com/docs/API_Reference/api_v3.html). For more information about scheduling and stopping scheduled sends with the API, see [Can I Stop a Scheduled Send]({{root_url}}/for-developers/sending-email/stopping-a-secheduled-send/).
 >>>>>>> upstream/a-new-hope-episode-iv

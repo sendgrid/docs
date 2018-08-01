@@ -15,7 +15,7 @@ A webhook is an HTTP callback that allows a web application to POST a message to
 Some of the traditional APIs that SendGrid provides include:
 
 * [SMTP API]({{root_url}}/for-developers/sending-email/building-an-smtp-email/) – Provides custom handling instructions for email headers within messages.
-* [Web API](https://sendgrid.com/docs/Web_API/index.html) – Allows users to retrieve account information like bounces, unsubscribes, or spam reports.
+* [Web API](https://sendgrid.com/docs/API_Reference/Web_API/index.html) – Allows users to retrieve account information like bounces, unsubscribes, or spam reports.
 * [Marketing Email API](https://sendgrid.com/email-marketing) – Offers developers the ability to manage the lists, identities, and delivery events for marketing emails.
 * [Template Engine API](https://sendgrid.com/transactional-email) – Provides a way for marketers and developers to create, iterate, and deploy transactional email templates.
 

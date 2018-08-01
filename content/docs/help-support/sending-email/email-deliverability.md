@@ -40,7 +40,7 @@ One of the most important parts of CAN-SPAM is this line:
 
 **"Tell recipients how to opt out of receiving future email from you."**
 
-All email providers look for an unsubscribe method (or links) in all emails. Even though it may not make sense for transactional mail, it can make the difference in messages arriving in the inbox or the spam folder. [Subscription tracking](http://sendgrid.com/docs/help-support/analytics-and-reporting/subscription-tracking/) automatically inserts an unsubscribe link into all your emails and maintains the Unsubscribe list.
+All email providers look for an unsubscribe method (or links) in all emails. Even though it may not make sense for transactional mail, it can make the difference in messages arriving in the inbox or the spam folder. [Subscription tracking](https://sendgrid.com/docs/API_Reference/help-support/analytics-and-reporting/subscription-tracking/) automatically inserts an unsubscribe link into all your emails and maintains the Unsubscribe list.
 
 Think of it this way: would you rather a recipient politely decline future emails from you, or mark your messages as spam because they have no other option?
 
