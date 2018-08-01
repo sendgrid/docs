@@ -32,3 +32,7 @@ The original template you copy won't be modified and remains active in any API o
 1. The module replaces all of the substitution tags in your template with handlebars.
    For example,{{your_tag_here}}.
 
+## Additional Resources
+
+- [How to send an email with Dynamic Transactional Templates]({{root_url}}/help-support/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/)
+- [Using Handlebars]({{root_url}}/help-support/sending-email/using-handlebars/)

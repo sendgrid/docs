@@ -11,12 +11,6 @@ seo:
   override: true
   description: Custom fields help you segment your lists dynamically based on your user information.
 ---
-
-- [Creating Custom Fields](#-Creating-Custom-Fields)
-- [Reserved Fields](#-Reserved-Fields)
-- [Deleting a Custom Field](#-Deleting-a-Custom-Field)
-- [Troubleshooting](#-Troubleshooting)
-
 <iframe src="https://player.vimeo.com/video/120709155" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 Custom fields allow you to add extra information about a contact to your contact database when you upload a CSV. With custom fields, you can create custom segments from your individual contacts or from your contact database that dynamically update your content with the values for the individual contact receiving the email. Your custom fields are completely customizable to the use cases and user information that you need.
@@ -36,9 +30,9 @@ You can create up to 120 custom fields.
 1. Add a _Field Name_ and _Field Type_.
 1. Click **Save**.
 
-You can also add custom fields when you [upload]({{root_url}}/help-support/managing-contacts/adding-contacts/#-Uploading-a-CSV) a CSV to the contacts database.
+You can also add custom fields when you [upload]({{root_url}}/help-support/managing-contacts/adding-contacts/#uploading-a-csv) a CSV to the contacts database.
 
-The field name should be created using only alphanumeric characters (A-Z and 0-9) and underscores “_”. The field type can be date, text, or number fields. The *field type* is important for creating [segments](https://sendgrid.com/docs/help-support/managing-contacts/segmenting-your-contacts/) from your contact
+The field name should be created using only alphanumeric characters (A-Z and 0-9) and underscores “_”. The field type can be date, text, or number fields. The *field type* is important for creating [segments]({{root_url}}/help-support/managing-contacts/segmenting-your-contacts/) from your contact
 database.
 
 You can query your list in different ways, based on the data type:
@@ -93,12 +87,12 @@ Deleting a custom field deletes all values for that field across your contact da
 ## 	Troubleshooting
  	
 
-If a Custom Field value does not appear in the corresponding [Substitution Tag]({{root_url}}/help-support/sending-email/editor/#-Using-Substitution-Tags), make sure that there is a value for that custom field associated with the contact in your contact database. If there is no value for a particular custom field, a space will be substituted instead.
+If a Custom Field value does not appear in the corresponding [Substitution Tag]({{root_url}}/help-support/sending-email/editor/#using-substitution-tags), make sure that there is a value for that custom field associated with the contact in your contact database. If there is no value for a particular custom field, a space will be substituted instead.
 
 If you do find that the custom field has an associated value on the contact’s profile page, check the spelling of the substitution tag in the content of your campaign.
 
  ### 	Additional Resources
   	
-- [Substitution Tags](https://sendgrid.com/docs/help-support/sending-email/editor/#-Using-Substitution-Tags)
-- [Contacts](https://sendgrid.com/docs/help-support/managing-contacts/adding-contacts/)
-- [Creating and exporting segments](https://sendgrid.com/docs/help-support/manging-contacts/segmenting-your-contacts/)
+- [Substitution Tags]({{root_url}}/help-support/sending-email/editor/#using-substitution-tags)
+- [Contacts]({{root_url}}/help-support/managing-contacts/adding-contacts/)
+- [Creating and exporting segments]({{root_url}}/help-support/manging-contacts/segmenting-your-contacts/)

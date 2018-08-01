@@ -44,7 +44,7 @@ Email templates are table-based HTML with inline or header styles, because some 
 
 *To add a template:*
 
-1. Open a new template in the Code Editor or [Design Editor]({{root_url}}/help-support/sending-email/editor/#-The-Design_Editor) by clicking **Actions** and selecting **New Version**.
+1. Open a new template in the Code Editor or [Design Editor]({{root_url}}/help-support/sending-email/editor/#the-design-editor) by clicking **Actions** and selecting **New Version**.
 
 1. If you selected the Code Editor, copy and paste your HTML code into the code editor.
 <br></br>If you paste in an email template, it is likely that you will overwrite the default basic HTML provided in the code editor. If you selected the Design Editor, use the WYSIWYG editor with drag & drop modules to create your email template.
@@ -62,7 +62,13 @@ SendGrid suggests previewing and testing your template once you have created it 
 1. Click **Send Test** to send a test email using your new template.
 1. Fill in the *recipient* and *subject line* fields and then click **Send**.
 
+
+<call-out>
+
 Any Substitution tags will not be populated in this test, but you will be able to confirm the layout and format of your template.
+
+
+</call-out>
 
 ## 	Managing templates
  	
