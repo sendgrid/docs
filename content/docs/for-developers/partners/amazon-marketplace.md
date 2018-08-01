@@ -34,7 +34,7 @@ There are two plans: AWS Basic, and AWS Pro. For more information, check out our
 
 You can purchase IP addresses dedicated to your account. Since you are the only one sending email over this IP, your sending practices determine the sender reputation associated with this IP. You can purchase up to 3 IP addresses per month. If you need more than 3 IPs, then you should [contact support](https://support.sendgrid.com/hc/en-us).
 
-You can only add a Dedicated IP Address if you are on an AWS Pro plan. To upgrade your plan, see [Upgrading or Downgrading Your Account](#-Upgrading-or-Downgrading-Your-Account).
+You can only add a Dedicated IP Address if you are on an AWS Pro plan. To upgrade your plan, see [Upgrading or Downgrading Your Account](#upgrading-or-downgrading-your-account).
 
 *To add a dedicated IP Address*:
 
