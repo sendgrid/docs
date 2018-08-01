@@ -39,4 +39,4 @@ You can download your Global Unsubscribe list as a CSV by clicking the gear icon
 
 - [Bounces]({{root_url}}/help-support/sending-email/bounces/)
 - [Global Unsubscribes]({{root_url}}/help-support/sending-email/global-unsubscribes/)
-- [Web API and Blocks]({{root_url}}/API_Reference/Web_API/blocks.html)
+- [Web API and Blocks](https://sendgrid.com/docs/API_Reference/Web_API/blocks.html)

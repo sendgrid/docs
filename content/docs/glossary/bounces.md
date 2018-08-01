@@ -21,5 +21,5 @@ You can also [retrieve and edit your list of bounces]({{root_url}}/API_Reference
 
  ### Additional Resources:
 
-* [Bounce Forwarding APP]({{root_url}}/help-support/sending0email/bounces/)
+* [Bounce Forwarding ]({{root_url}}/help-support/sending-email/bounces/)
 * [Email Activity & Bounces]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed/)

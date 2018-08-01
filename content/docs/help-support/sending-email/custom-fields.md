@@ -91,7 +91,7 @@ If a Custom Field value does not appear in the corresponding [Substitution Tag](
 
 If you do find that the custom field has an associated value on the contact’s profile page, check the spelling of the substitution tag in the content of your campaign.
 
- ### 	Additional Resources
+ ## 	Additional Resources
   	
 - [Substitution Tags]({{root_url}}/help-support/sending-email/editor/#using-substitution-tags)
 - [Contacts]({{root_url}}/help-support/managing-contacts/adding-contacts/)
