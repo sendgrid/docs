@@ -15,7 +15,7 @@ seo:
 <iframe src="https://player.vimeo.com/video/121404093" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
-From our [Contacts]({{site.marketing_campaigns_url}}/contacts) page, you can add, upload, modify, and delete your contacts. Contacts can be added to your contacts database using the [API](https://sendgrid.com/docs/api-reference//), or by  manually adding or uploading a CSV file through the [SendGrid App](https://app.sendgrid.com/).
+From our [Contacts]({{site.marketing_campaigns_url}}/contacts) page, you can add, upload, modify, and delete your contacts. Contacts can be added to your contacts database using the [API](https://sendgrid.com/docs/api-reference/), or by  manually adding or uploading a CSV file through the [SendGrid App](https://app.sendgrid.com/).
 
 <call-out>
 
@@ -126,6 +126,6 @@ If you [create a segment]({{root_url}}/help-support/managing-contacts/segmenting
 
  ### 	Additional Resources
   	
-- [Contacts API](https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb/)
+- [Contacts API](https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html)
 - [Segmenting your Contacts](https://sendgrid.com/docs/help-support/managing-contacts/segmenting-your-contacts/)
 - [Building your Contact list](https://sendgrid.com/docs/help-support/managing-contacts/building-your-contact-list/)

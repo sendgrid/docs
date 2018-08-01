@@ -22,7 +22,7 @@ Transactional templates allow users to modify their content via WYSIWG or HTML. 
 
 The transactional templates design section allows marketers to easily design a template, without the need for complex coding. Developers can then manage multiple templates created with a RESTful API and integrate them into applications.
 
-To learn more about the SendGrid transactional email templates, you can visit the [technical documentation]({{root_url}}/help-support/sending-email/create-and-edit-transactional-templates.html), or the [API Reference](https://sendgrid.com/docs/Web_API_v3/Transactional_Templates/index.html)
-By using SendGrid's transactional template application, marketers can maintain control of their email design while enjoying the strong [email deliverability]({{root_url}}/glossary/email-deliverability.html) that SendGrid provides. They can create a vast array of different email templates, all with the confidence of knowing their emails will reach the inbox.
+To learn more about the SendGrid transactional email templates, you can visit the [technical documentation]({{root_url}}/help-support/sending-email/create-and-edit-transactional-templates/), or the [API Reference]({{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/index.html)
+By using SendGrid's transactional template application, marketers can maintain control of their email design while enjoying the strong [email deliverability]({{root_url}}/glossary/email-deliverability/) that SendGrid provides. They can create a vast array of different email templates, all with the confidence of knowing their emails will reach the inbox.
 
 [Contact the SendGrid support team](https://sendgrid.zendesk.com/hc/en-us) if you have any questions about implementing and using transactional templates or visit our blog to learn more about [marketing and transactional email best practices](https://sendgrid.com/blog/marketing-and-transactional-email-best-practices-checklist-2/).

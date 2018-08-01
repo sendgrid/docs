@@ -77,4 +77,4 @@ If you remove every IP address from your whitelist, you will again be able to lo
 
 </call-out>
 
-For additional information about using IP Access Management through our API, see our [API Reference](https://sendgrid.com/docs/Web_API_v3/ip_access_management/).
+For additional information about using IP Access Management through our API, see our [API Reference](https://sendgrid.com/docs/Web_API_v3/ip_access_management.html).

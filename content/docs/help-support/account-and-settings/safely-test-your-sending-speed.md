@@ -1,7 +1,4 @@
 ---
-st:
-  published_at: 2016-07-20
-  type: Classroom
 seo:
   title: Safely Test Your Sending Speed
   description: Safely Test Your Sending Speed
@@ -10,7 +7,6 @@ title: Safely Test Your Sending Speed
 group: account-management
 weight: 0
 layout: page
-zendesk_id: 201995663
 navigation:
   show: true
 ---

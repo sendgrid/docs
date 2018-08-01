@@ -62,7 +62,7 @@ Keep in mind that many modern network nodes will de-prioritize ICMP packets, whi
 
 **Google Header Analyzer**
 
-Google provides a great free [header analyzer tool](https://toolbox.googleapps.com/apps/messageheader/analyzeheader) that you can use to analyze the headers of an email, and find out how long an email spent in a particular location. For more information on how to grab the original headers from an email, [check here.]({{root_url}}/Classroom/Troubleshooting/Authentication/how_do_i_check_the_headers_raw_source_of_an_email.html)
+Google provides a great free [header analyzer tool](https://toolbox.googleapps.com/apps/messageheader/analyzeheader) that you can use to analyze the headers of an email, and find out how long an email spent in a particular location. For more information on how to grab the original headers from an email, [check here.]({{root_url}}/help0support/account-and-settings/checking-email-source/)
 
 1. Grab the headers of the message you want to analyze. Make sure you just grab the received headers, which is everything above the first content boundary.
   ![]({{root_url}}/images/headersnocontent.gif)

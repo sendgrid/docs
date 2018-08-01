@@ -1,7 +1,4 @@
----
-st:
-  published_at: 2016-06-09
-  type: User_Guide
+-
 seo:
   title: DNS Providers
   description: Here are guides for setting up sender authentication with specific DNS providers
