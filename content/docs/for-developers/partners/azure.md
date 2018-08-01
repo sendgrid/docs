@@ -229,7 +229,7 @@ completion();
 
 ``` objc
 // Populate the parameters for the SendGrid Web API Call
-// Find more details about the [Web API here](https://sendgrid.com/docs/API_Reference/Web_API/index.html).
+// Find more details about the [Web API here]({{root_url}}/api-reference/).
 NSString *username = @"<Your SendGrid Username>";
 NSString *apikey = @"<Your SendGrid Password>";
 NSString *to = @"<Email to Playlist Service from Appendix A>";

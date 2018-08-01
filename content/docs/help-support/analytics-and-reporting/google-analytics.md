@@ -18,9 +18,7 @@ SendGrid's [Google Analytics Tracking ](https://app.sendgrid.com/settings/tracki
 
 This article describes differences in the results and terminology of both. In general what they track & what terms they use are different than what we do, so we thought it would be helpful to provide the following equivalencies.
 
-_For general guidance on how our Google Analytics app works, please refer to our [documentation](https://sendgrid.com/docs/API_Reference/Apps/google_analytics.html)._
-
-Google Analytics has Clicks, Visits, Visitors, Pageviews, and Unique Pageviews. SendGrid has Clicks & Opens, as well as all of our [Statistics](https://sendgrid.com/docs/API_Reference/help-support/analytics-and-reporting/stats-overview/).  
+Google Analytics has Clicks, Visits, Visitors, Pageviews, and Unique Pageviews. SendGrid has Clicks & Opens, as well as all of our [Statistics]({{root_url}}/help-support/analytics-and-reporting/stats-overview/).  
 
 The key here is that Google Analytics Clicks **are in no way related**  to SendGrid Clicks.
 

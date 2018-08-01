@@ -270,4 +270,4 @@ This is a full list of basic query types and examples: (replace the data in quot
 ## 	Additional Resources
  	
 - [Email Activity Feed API Reference](https://sendgrid.api-docs.io/v3.0/email-activity/filter-all-messages)
-- [Email Activity Feed UI](https://sendgrid.com/docs/API_Reference/help-support/analytics-and-reporting/email-activity-feed.html)
+- [Email Activity Feed UI]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed/)

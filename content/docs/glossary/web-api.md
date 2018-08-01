@@ -10,7 +10,7 @@ navigation:
   show: false
 ---
 
-An API is an application programming interface (API) that serves as an interface between a web server and a web browser. A web API allows for the sharing of data and functionality between web apps. For example, [SendGrid’s Web API](https://sendgrid.com/docs/API_Reference/Web_API/index.html) enables users to retrieve data about their email program like spam reports or blocked email addresses.
+An API is an application programming interface (API) that serves as an interface between a web server and a web browser. A web API allows for the sharing of data and functionality between web apps. For example, [SendGrid’s Web API]({{root_url}}/api-reference/) enables users to retrieve data about their email program like spam reports or blocked email addresses.
 
 Using a web API is extremely efficient because it eliminates the need for code-sharing – a process that can be complex and messy while making some developers uncomfortable. Web APIs allow you to easily share a certain set of features and data with a large group of people while maintaining privacy and to create consistency in the delivery of that data and functionality while saving valuable development time and money. Channel the notoriously private Google and you’ll quickly understand why using web APIs has become the preferred method in the development community.
 

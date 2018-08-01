@@ -13,4 +13,4 @@ Mail Transfer Agent or Message Transfer Agent (MTA) is software that transfers e
 
 An MTA implements both the client (sending) and server (receiving) portions of the [Simple Mail Transfer Protocol]({{root_url}}/glossary/smtp/).
 
-To get more information please check out our [Email Infrastructure Guide](https://go.sendgrid.com/SendGrid-Infrastructure-Guide.html?mc=Direct&mcd=https://sendgrid.com/docs/API_Reference/index.html).
+To get more information please check out our [Email Infrastructure Guide](https://go.sendgrid.com/SendGrid-Infrastructure-Guide.html??mc=Direct&mcd=https://sendgrid.com/docs/index.html).

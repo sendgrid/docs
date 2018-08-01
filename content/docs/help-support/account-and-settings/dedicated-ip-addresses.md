@@ -18,7 +18,7 @@ An Internet Protocol (IP) address is a unique numerical address that defines a l
 
 ## 	Why would I want a dedicated IP address?
  	
-If you are sending any significant amount of email, we typically suggest sending your marketing and transactional emails to from separate IP addresses. In addition, it is strongly recommended to associate your sending domain with your new outbound IP address (provided to you by SendGrid). This is available at no extra cost and can be accomplished by [completing an rDNS setup for your dedicated IP (here's a video tutorial and documentation help)](https://sendgrid.com/docs/API_Reference/help-support/sending-email/how-to-set-up-reverse-dns/).
+If you are sending any significant amount of email, we typically suggest sending your marketing and transactional emails to from separate IP addresses. In addition, it is strongly recommended to associate your sending domain with your new outbound IP address (provided to you by SendGrid). This is available at no extra cost and can be accomplished by [completing an rDNS setup for your dedicated IP (here's a video tutorial and documentation help)]({{root_url}}/help-support/sending-email/how-to-set-up-reverse-dns/).
 
 We also suggest having at least two promotional IP addresses when your volume reaches 200-300K/month.
 
@@ -33,7 +33,7 @@ Depending on the plan you have chosen, you either have a dedicated sending IP ad
 
 ## 	How many dedicated IPs should I have?
  	
-Please see our document on [suggested IP allocation based on volume](https://sendgrid.com/docs/API_Reference/assets/IPWarmupSchedule.pdf).
+Please see our document on [suggested IP allocation based on volume](https://sendgrid.com/docs/assets/IPWarmupSchedule.pdf).
 
 
 ## 	Adding an additional dedicated IP address
@@ -91,7 +91,7 @@ Subusers cannot set up and add reverse DNS to their own dedicated IPs, but you c
 
  ### 	Before you begin
  	
-You need to have a [subuser]({{root_url}}/help-support/account-and-settings/subusers/#-Create-a-Subuser), and a [dedicated IP address](https://sendgrid.com/docs/API_Reference/help-support/account-and-settings/dedicated-ip-addresses/#-Adding-an-additional-Dedicated-IP-Address) you want to assign the subuser.
+You need to have a [subuser]({{root_url}}/help-support/account-and-settings/subusers/#-Create-a-Subuser), and a [dedicated IP address]({{root_url}}/help-support/account-and-settings/dedicated-ip-addresses/#-Adding-an-additional-Dedicated-IP-Address) you want to assign the subuser.
 
 *To assign a Dedicated IP to a subuser after the subuser is already created:*
 

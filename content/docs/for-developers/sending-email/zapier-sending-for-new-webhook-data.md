@@ -27,7 +27,7 @@ You will need:
 
 To establish a Webhook on Zapier, you will need only your Zapier account. Zapier will set up a custom Webhook url, for information on how to get started using these Webhooks, check [here](https://zapier.com/help/webhooks/#how-get-started-webhooks-zapier).
 
-To link your Webhooks on Zapier to SendGrid, you must have an active SendGrid account. To learn more about getting started with SendGrid basics, start [here](https://sendgrid.com/docs/API_Reference/index.html). For more information about getting started with SendGrid on Zapier, go [here](https://zapier.com/help/sendgrid/#how-get-started-sendgrid).
+To link your Webhooks on Zapier to SendGrid, you must have an active SendGrid account. To learn more about getting started with SendGrid basics, start [here](https://sendgrid.com/docs/api-reference/). For more information about getting started with SendGrid on Zapier, go [here](https://zapier.com/help/sendgrid/#how-get-started-sendgrid).
 
 ### Connecting your accounts<a name="connect"></a>
 

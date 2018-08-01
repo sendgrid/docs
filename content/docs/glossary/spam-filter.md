@@ -14,4 +14,4 @@ Spam Filters are software based email filters that block email on a range of att
 
 Spam filters typically will move the messages they find to the [spam folder]({{root_url}}/glossary/bulk-mail-folder/) within the user's respective email application, keeping that email out of the user's inbox entirely.
 
-To get more information please check out our [Email Infrastructure Guide](https://go.sendgrid.com/SendGrid-Infrastructure-Guide.html?mc=Direct&mcd=https://sendgrid.com/docs/API_Reference/index.html)
+To get more information please check out our [Email Infrastructure Guide](https://go.sendgrid.com/SendGrid-Infrastructure-Guide.html??mc=Direct&mcd=https://sendgrid.com/docs/index.html)

@@ -38,7 +38,7 @@ You can create up to 120 custom fields.
 
 You can also add custom fields when you [upload]({{root_url}}/help-support/managing-contacts/adding-contacts/#-Uploading-a-CSV) a CSV to the contacts database.
 
-The field name should be created using only alphanumeric characters (A-Z and 0-9) and underscores “_”. The field type can be date, text, or number fields. The *field type* is important for creating [segments](https://sendgrid.com/docs/API_Reference/help-support/managing-contacts/segmenting-your-contacts/) from your contact
+The field name should be created using only alphanumeric characters (A-Z and 0-9) and underscores “_”. The field type can be date, text, or number fields. The *field type* is important for creating [segments]({{root_url}}/help-support/managing-contacts/segmenting-your-contacts/) from your contact
 database.
 
 You can query your list in different ways, based on the data type:
@@ -99,6 +99,6 @@ If you do find that the custom field has an associated value on the contact’s 
 
  ### 	Additional Resources
   	
-- [Substitution Tags](https://sendgrid.com/docs/API_Reference/help-support/sending-email/editor/#-Using-Substitution-Tags)
-- [Contacts](https://sendgrid.com/docs/API_Reference/help-support/managing-contacts/adding-contacts/)
-- [Creating and exporting segments](https://sendgrid.com/docs/API_Reference/help-support/manging-contacts/segmenting-your-contacts/)
+- [Substitution Tags]({{root_url}}/help-support/sending-email/editor/#-Using-Substitution-Tags)
+- [Contacts]({{root_url}}/help-support/managing-contacts/adding-contacts/)
+- [Creating and exporting segments]({{root_url}}/help-support/manging-contacts/segmenting-your-contacts/)

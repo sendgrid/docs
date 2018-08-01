@@ -71,7 +71,7 @@ When defining this call's 'set' parameter, you have a few options for appending 
 
 ## Assign a domain authentication for the Subuser Account (optional)
 
-After you have created the subuser account and have appended an IP address, you are now ready to assign an _existing_  [authenticated domain](https://sendgrid.com/docs/API_Reference/help-support/sending-email/how-to-set-up-domain-authentication.html) to the account. If you have not yet created the required records for authenticating your chosen domain then this step should be skipped.
+After you have created the subuser account and have appended an IP address, you are now ready to assign an _existing_  [authenticated domain]({{root_url}}/help-support/sending-email/how-to-set-up-domain-authentication.html) to the account. If you have not yet created the required records for authenticating your chosen domain then this step should be skipped.
 
 First, you should find out what authenticated domains you have associated with your account. This call will [list your available authenticated domains](https://sendgrid.com/docs/API_Reference/Customer_Subuser_API/whitelabel.html#-List):
 
