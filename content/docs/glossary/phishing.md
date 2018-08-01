@@ -14,4 +14,4 @@ Phishing is a technique for acquiring information such as user names, passwords,
 
 SendGrid employs both technology and staff to prevent the sending of phishing emails. We have a solid track record of working with the global email community to detect and stop the sending of phishing and spam emails.
 
-To get more information please check out our [Email Infrastructure Guide](https://go.sendgrid.com/SendGrid-Infrastructure-Guide.html??mc=Direct&mcd=https://sendgrid.com/docs/index.html).
+To get more information please check out our [Email Infrastructure Guide](https://go.sendgrid.com/SendGrid-Infrastructure-Guide.html?mc=Direct&mcd=https://sendgrid.com/docs/index.html).
