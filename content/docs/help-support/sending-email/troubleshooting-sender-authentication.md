@@ -50,7 +50,7 @@ SendGrid requires underscores for sender authentication, but some DNS providers 
 
 If your provider does not allow you to use underscores in zone files, consider changing your DNS hosting provider.
 
-You can also disable automated security - this allows you to set up TXT and CX records that don't have underscores. For more information about setting up automated security, see [Using automated security]({{root_url}}/help-support/sending-email/how-to-set-up-domain-authentication/#-Using-automated-security).
+You can also disable automated security - this allows you to set up TXT and CX records that don't have underscores. For more information about setting up automated security, see [Using automated security]({{root_url}}/help-support/sending-email/how-to-set-up-domain-authentication/#using-automated-security).
 
  ### 	Manually validating records
  	
