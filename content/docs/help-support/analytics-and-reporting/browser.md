@@ -29,7 +29,7 @@ Choose a browser from the list to see statistics about how your recipients inter
 
 The actual statistics included vary depending upon [your account settings]({{root_url}}/help-support/account-and-settings/account/). Emails sent, bounces and spam reports will always get tracked. Unsubscribes, clicks, and opens require that the associated settings are enabled.
 
-You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview/#-Statistics-Filters).
+You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview/#statistics-filters).
 
 ## 	Figures
  	
@@ -40,5 +40,5 @@ This table will refresh with new or adjusted data based on the various filters a
 ## 	Additional Resources
  	
 - [Account Settings]({{root_url}}/help-support/account-and-settings/account/)
-- [Statistics Filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview/#-Statistics-Filters)
+- [Statistics Filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview/#statistics-filters)
 - [Browser Comparison]({{root_url}}/help-support/analytics-and-reporting/browser-comparison/)

@@ -33,7 +33,7 @@ The timezone for stats pages is set in your [account settings]({{root_url}}/help
 </call-out>
 
 <p>
-<strong><a href="#-analytics-and-reporting-Filters"Overview</a></strong> - The overview is your at-a-glance stats. We give you the highlight reel so that you can keep an eye out for any issues and make sure you’re on the right track.
+<strong><a href="#analytics-and-reporting-Filters"Overview</a></strong> - The overview is your at-a-glance stats. We give you the highlight reel so that you can keep an eye out for any issues and make sure you’re on the right track.
 </p><p>
 <strong><a href="{{root_url}}/help-support/analytics-and-reporting/global/">Global Stats</a></strong> - All of your stats, aggregated in one place so you can see the high level view of everything.
 </p><p>

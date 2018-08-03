@@ -23,7 +23,7 @@ The actual statistics included vary depending upon your [account settings]({{roo
 
 In order to see statistics for a category, select the category and the page will show you both a graph and a table of your category’s email statistics.
 
-You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview/#-Statistics-Filters).
+You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview/#statistics-filters).
 
 ## 	Figures
 
@@ -38,5 +38,5 @@ This table will refresh with new or adjusted data based on the various filters a
 ## 	Additional Resources
  	
 - [Email Activity]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed/)
-- [Statistics Filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview/#-Statistics-Filters).
+- [Statistics Filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview/#statistics-filters).
 - [Account Settings]({{root_url}}/help-support/account-and-settings/account/)
