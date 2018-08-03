@@ -42,7 +42,7 @@ Good news! If you like to build your campaigns visually, but like to roll up you
 
 <call-out>
 
-If you’ve edited code in your current template but want to use it with the new visual, drag and drop editor, you will need to add our [Drag-&-Drop Markup]({{root_url}}/help-support/sending-email/editor/#-Importing-Custom-HTML-With-Drag--Drop-Markup).
+If you’ve edited code in your current template but want to use it with the new visual, drag and drop editor, you will need to add our [Drag-&-Drop Markup]({{root_url}}/help-support/sending-email/editor/#importing-custom-html-with-drag--drop-markup).
 
 </call-out>
 
@@ -53,7 +53,7 @@ Depending on how you created and edited your campaign in the old experience, som
 While these improvements offer far greater stability and speed for the long term, we know that these initial changes can be a bit frustrating. To help, we've identified two possible scenarios when migrating a campaign into the new editor, with some details on how to resolve these issues, below:
 
 **I have a custom coded template, but want to use the Design Editor:**
-<br>If you get custom code from your designer or developer and want to use it with our powerful new drag-and-drop Design editor, you can! First, our Design editor needs to be able to understand what kind of content blocks are in your email, and how it should group your content. To do this, you (or your developer) will need to add some of our [Drag and Drop Markup]({{root_url}}/help-support/sending-email/editor/#-Importing-Custom-HTML-With-Drag--Drop-Markup) to the code.
+<br>If you get custom code from your designer or developer and want to use it with our powerful new drag-and-drop Design editor, you can! First, our Design editor needs to be able to understand what kind of content blocks are in your email, and how it should group your content. To do this, you (or your developer) will need to add some of our [Drag and Drop Markup]({{root_url}}/help-support/sending-email/editor/#importing-custom-html-with-drag--drop-markup) to the code.
 
 **When I opened the new editor, my entire email got dropped into one big code module:**
 <br>If you created a campaign using drag-and-drop modules in the old editor, but then edited some of the code yourself, this can cause the Design editor to view your email as a single block of code. If this is the case, we recommend that you take a few minutes to rebuild the campaign in the new drag-and-drop editor. This will ensure that your campaigns are stable, clean and any bugs from the old editor aren't copied over into the new experience.
