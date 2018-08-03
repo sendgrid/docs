@@ -29,5 +29,5 @@ This table will refresh with new or adjusted data based on the various filters a
 ## 	Additional Resources
  	
 - [Statistics Filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview.html#-Statistics-Filters)
-- [Global Stats]({{root_url}}/API_Reference/Web_API_v3/Stats/global.html)
+- [Global Stats](https://sendgrid.com/docs/API_Reference/Web_API_v3/Stats/global.html)
 - [Timezones]({{root_url}}/glossary/timezone.html)

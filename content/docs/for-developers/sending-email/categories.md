@@ -7,7 +7,7 @@ navigation:
   show: true
 ---
 
-You can add [categories]({{root_url}}/help-support/analytics-and-reporting/categories/) to the X-SMTPAPI header of the emails you send via SendGrid. This will allow you to track emails based on your own categorization system.
+You can add [categories]({{root_url}}/glossary/categories/) to the X-SMTPAPI header of the emails you send via SendGrid. This will allow you to track emails based on your own categorization system.
 
 <call-out type="warning">
 
@@ -29,7 +29,7 @@ Categories should be used to group messages together by broad topic. If you need
 
 ## 	Example
 
-You can use SendGrid's [SMTP API]({{root_url}}/API_Reference/SMTP_API/) to add these categories to your email. The following should be added to the email's header:
+You can use SendGrid's [SMTP API]({{root_url}/for-developers/sending-email/getting-started-smtp/) to add these categories to your email. The following should be added to the email's header:
 
 ### Example Category Header
 ```json

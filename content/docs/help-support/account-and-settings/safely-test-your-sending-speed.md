@@ -20,7 +20,7 @@ We have configured a special domain for any users who are interested in testing 
 </call-out>
 
 
-If you are looking to test your API integration, you can enable the sandbox_mode in the [mail_settings parameters of our Mail Send API](https://sendgrid.com/docs/for-developers/sending-email//sandbox-mode/). **This will allow you to validate each parameter you include, and the structure of your JSON payload, all without actually sending a message.**
+If you are looking to test your API integration, you can enable the sandbox_mode in the [mail_settings parameters of our Mail Send API]({{root_url}}/for-developers/sending-email//sandbox-mode/). **This will allow you to validate each parameter you include, and the structure of your JSON payload, all without actually sending a message.**
 
 <call-out>
 

@@ -28,6 +28,4 @@ Email notifications about CSV upload summaries, sender verifications, A/B test w
 
  ## 	Additional Resources
   	
-- [Contacts](https://sendgrid.com/docs/help-support/managing-contacts/adding-contacts/)
-
-
+- [Contacts]({{root_url}}/docs/API_Reference/help-support/managing-contacts/adding-contacts/)

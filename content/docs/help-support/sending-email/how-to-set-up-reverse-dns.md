@@ -59,7 +59,7 @@ To set up reverse DNS, you must submit the DNS records provided by SendGrid to y
 3. Next, select the IP to set up reverse DNS.
 4. Add a subdomain. For more information about picking a subdomain, see [Subdomains](#subdomain).
 5. Select or enter a domain you want to associate with the IP. Make sure that you only enter the name of your root domain. Do not include `www` or `http://www` in this field! Your domain needs to match the domain of your from address on the emails you are sending out. For example, if I am setting up the domain `example.sendgrid.com`, I would set my domain to be `sendgrid.com`. Click **Save** and then **Confirm**. An individual IP address can only have one reverse DNS set up.
-6. Next, you need to add all of the A Records on this screen to your DNS host. This process varies depending on your DNS host. For videos on how to add your A Records to some popular DNS service providers, check out these [videos](https://sendgrid.com/docs/help-support/sending-email/dns-providers/).
+6. Next, you need to add all of the A Records on this screen to your DNS host. This process varies depending on your DNS host. For videos on how to add your A Records to some popular DNS service providers, check out these [videos]({{root_url}}/help-support/sending-email/dns-providers/).
 
 <call-out>
 

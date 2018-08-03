@@ -17,6 +17,7 @@ Marketing Campaigns templates determine how the content of your campaign will be
 
 We provide a collection of pre-built, responsive templates that you may begin using and customizing immediately, or you can create your own template from scratch.
 
+
  ## 	Creating a New Template
   	
 *To create a new template:*
@@ -46,6 +47,7 @@ You can only edit custom templates (templates that you have created yourself or 
 
    This navigates you to the editor originally used to create the campaign. After you create a template, you cannot switch between the design and code editor. However, if you choose the design editor you'll still have HTML editing options, and with the code editor you'll enjoy convenient visual tools like side-by-side code and preview panes.
 
+
  ## 	Duplicating a SendGrid Template
   	
 You can easily duplicate a pre-built template provided by SendGrid.
@@ -58,7 +60,7 @@ You can easily duplicate a pre-built template provided by SendGrid.
 1. Select **Duplicate**. The duplicate opens in the design editor.
 
  ## 	Duplicating a Custom Template
-  	
+
 *To duplicate one of your custom templates:*
 
 1. From the left-hand navigation, select **Marketing Campaigns**,
@@ -74,6 +76,6 @@ You can easily duplicate a pre-built template provided by SendGrid.
 
  ## 	Additional Resources
   	
-- For more information, see [How to Send Email](https://sendgrid.com/docs/help-support/sending-email/how-to-send-email/) or [view the next video](https://vimeo.com/139274837) in our Getting Started Series.
-- [Design Editor](https://sendgrid.com/docs/help-support/sending-email/editor/#the-design-editor)
-- [Code Editor](https://sendgrid.com/docs/help-support/sending-email/code_editor/#the-code-editor)
+- For more information, see [Sending an Email]({{root_url}}/help-support/sending-email/how-to-send-email/) or [view the next video](https://vimeo.com/139274837) in our Getting Started Series.
+- [Design Editor]({{root_url}}/help-support/sending-email/editor/#-The-Design-Editor)
+- [Code Editor]({{root_url}}/help-support/sending-email/editor/#the-code-editor)

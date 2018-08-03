@@ -88,5 +88,5 @@ In addition to creating a dynamic segment based on campaign engagement as descri
 
 ## 	Additional Resources
  	
-- [Sending a Campaign](https://sendgrid.com/docs/help-support/sending-email/how-to-send-email/)
-- [A/B Testing Your Campaign](https://sendgrid.com/docs/help-support/sending-email/a-b-testing/)
+- [Sending a Campaign]({{root_url}}/help-support/sending-email/how-to-send-email/)
+- [A/B Testing Your Campaign]({{root_url}}help-support/sending-email/a-b-testing/)

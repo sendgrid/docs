@@ -14,8 +14,8 @@ Once an email send has been attempted, but failed, a couple things can happen to
 
 * Bounced emails are ones that were rejected by the recipient's server
 * Invalid emails were sent to email addresses that do not exist
-* Emails can be marked as <a href="{{root_url}}/glossary/spam.html">spam</a> by the recipient for various reasons
-* An email is <a href="{{root_url}}/glossary/drops.html">Dropped</a> when the recipient is on a <a href="{{root_url}}/help-support/analytics-and-reporting/index-suppressions.html">suppression list</a>
+* Emails can be marked as [spam]({{root_url}}/glossary/spam/) by the recipient for various reasons
+* An email is [Dropped]({{root_url}}/glossary/drops/) when the recipient is on a [suppression list]({{root_url}}/help-support/sending-email/index-suppressions/).
 
 
 
