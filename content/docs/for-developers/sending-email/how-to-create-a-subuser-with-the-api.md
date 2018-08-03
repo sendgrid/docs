@@ -31,7 +31,7 @@ https://api.sendgrid.com/apiv2/customer.add.json?api_user=ryan.burrer@sendgrid.c
 
 ## Assign an IP to be Used by the New Subuser (required)
 
-Now that you have created the new subuser account, you will need to [add an IP](https://sendgrid.com/docs/API_Reference/Customer_Subuser_API/ip_management.html#-Subuser-IP-Assignment) so that it can send emails. We advise that you first find an available IP for this subuser. You can do so by using the following call:
+Now that you have created the new subuser account, you will need to [add an IP](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/ip_management.html#subuser-ip-assignment) so that it can send emails. We advise that you first find an available IP for this subuser. You can do so by using the following call:
 
 #### Call Example
 ```
@@ -48,7 +48,7 @@ When defining the parameter 'list' there are a few options you can choose:
 <strong>Response Example<br></strong><img src="http://content.screencast.com/users/Ryan.Burrer/folders/Jing/media/0dc1923b-fff9-4446-aff1-5dcab41929a4/00000096.png" alt="" align="middle">
 </center>
 
-After you have selected the IP that you wish to assign to your subuser account, simply make the API call to [append the IP address](https://sendgrid.com/docs/API_Reference/Customer_Subuser_API/ip_management.html#-Subuser-IP-Assignment).
+After you have selected the IP that you wish to assign to your subuser account, simply make the API call to [append the IP address](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/ip_management.html#subuser-ip-assignment).
 
 #### Call Example
 ```
@@ -73,7 +73,7 @@ When defining this call's 'set' parameter, you have a few options for appending 
 
 After you have created the subuser account and have appended an IP address, you are now ready to assign an _existing_  [authenticated domain]({{root_url}}/help-support/sending-email/how-to-set-up-domain-authentication.html) to the account. If you have not yet created the required records for authenticating your chosen domain then this step should be skipped.
 
-First, you should find out what authenticated domains you have associated with your account. This call will [list your available authenticated domains](https://sendgrid.com/docs/API_Reference/Customer_Subuser_API/whitelabel.html#-List):
+First, you should find out what authenticated domains you have associated with your account. This call will [list your available authenticated domains](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/whitelabel.html#list):
 
 #### Call Example
 ```
@@ -87,7 +87,7 @@ https://api.sendgrid.com/apiv2/customer.whitelabel.json?api\_user=ryan.burrer@se
 
 The API response above shows that email.sendgrid.com and email.example.com are both already established domain entries, and can be used by this subuser. If none are displayed then the next step in this process should be skipped.
 
-If you have a authenticated domain entry that you wish to apply to your subuser then you will need to [append the whitelabel entry](https://sendgrid.com/docs/API_Reference/Customer_Subuser_API/whitelabel.html#-Append) to your subuser:
+If you have a authenticated domain entry that you wish to apply to your subuser then you will need to [append the whitelabel entry](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/whitelabel.html#append) to your subuser:
 
 #### Call Example
 ```

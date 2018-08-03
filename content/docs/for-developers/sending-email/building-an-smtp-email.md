@@ -84,12 +84,12 @@ For example, to send a blind carbon copy (BCC) of your email to the address exam
 
 The X-SMTPAPI header is a JSON-encoded associative array consisting of several sections, below are examples of JSON strings using each section. Add this header to any SMTP message sent to SendGrid and the instructions in the header will be interpreted and applied to that message’s transaction. You can enable these sections with the X-SMTPAPI header:
 
-- [Scheduling Your Send](#-Scheduling-your-send)
-- [Substitution Tags](#-Substitution-tags)
-- [Section Tags](#-Section-tags)
-- [Suppression Groups](#-Suppression-groups)
-- [Categories](#-Categories)
-- [Unique Arguments](#-Unique-arguments)
+- [Scheduling Your Send](#scheduling-your-send)
+- [Substitution Tags](#substitution-tags)
+- [Section Tags](#section-tags)
+- [Suppression Groups](#suppression-groups)
+- [Categories](#categories)
+- [Unique Arguments](#unique-arguments)
 
  ### 	Scheduling Your Send
 

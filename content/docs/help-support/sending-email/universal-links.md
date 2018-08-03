@@ -23,11 +23,11 @@ Regardless of the OS you are configuring your links for, we will use the term "u
 
 </call-out>
 
-When setting up universal links for your app, it is important to ensure that you maintain the ability to track when users click those links. After configuring your universal links, we will explain [how to ensure that your universal links are tracked](#-Resolving-SendGrid-Click-Tracking-Links).
+When setting up universal links for your app, it is important to ensure that you maintain the ability to track when users click those links. After configuring your universal links, we will explain [how to ensure that your universal links are tracked](#resolving-sendgrid-click-tracking-links).
 
 <call-out type="warning">
 
-**Marketing Campaigns does not support universal links by default!** If you would like to include universal links in your campaign, you must ensure that you edit the HTML of your template to appropriately [flag your links as universal](#-Flagging-Your-Universal-Links).
+**Marketing Campaigns does not support universal links by default!** If you would like to include universal links in your campaign, you must ensure that you edit the HTML of your template to appropriately [flag your links as universal](#flagging-your-universal-links).
 
 </call-out>
 
@@ -38,8 +38,8 @@ There are several requirements that you must complete before you can begin using
 - Universal links for iOS require an "apple-app-site-association" JSON file.
 - Universal links for Android require that you set up an "digital asset links" JSON file, along with configuring intent filters in your Android app's manifest file.
 - Your **apple-app-site-association** and **digital asset links** files must be hosted on an HTTPS web server or content delivery network (CDN).
-- To ensure that your universal links register click tracking events, and to ensure that your recipient is taken to the correct page within your app, you must properly [resolve your links](#-Resolving-SendGrid-Click-Tracking-Links).
-- You must complete the [link branding process]({{root_url}}/help-support/sending-email/how-to-set-up-link-branding/) for your account. When branding your links, you must use the same domain that will be used for your universal links. (e.g. links.example.com)
+- To ensure that your universal links register click tracking events, and to ensure that your recipient is taken to the correct page within your app, you must properly [resolve your links](#resolving-sendgrid-click-tracking-links).
+- You must complete the [link branding process]({{root_url}}/help-support/sending-email/how-to-set-up-link-branding.html) for your account. When branding your links, you must use the same domain that will be used for your universal links. (e.g. links.example.com)
 - On iOS, you must include your branded link subdomain in the "Associated Domains" for your app. You can customize your subdoman using the custom return path in advanced settings while setting it up. Using the example above, you'd need to add an entry for "applinks:links.example.com" like this:
 ![]({{root_url}}/images/universal_links_ios.png)
 

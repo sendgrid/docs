@@ -48,7 +48,7 @@ Depending on your editor selection, you use different methods to design your cam
 1. Edit your campaign by filling in the fields in the **Settings** Tab.
 
 1. Add your custom content.
-<br> For more information about customizing your campaign, see [Using the Design Editor]({{root_url}}/help-support/sending-email/editor/#the-design-editor) or [Using the Code Editor]({{root_url}}/help-support/sending-email/editor/#-the-code-editor).
+<br> For more information about customizing your campaign, see [Using the Design Editor]({{root_url}}/help-support/sending-email/editor/#the-design-editor) or [Using the Code Editor]({{root_url}}/help-support/sending-email/editor/#the-code-editor).
 
 1. Once you’ve finished editing your campaign, you can see what it looks like by clicking **Preview**.
 

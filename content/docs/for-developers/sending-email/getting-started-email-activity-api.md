@@ -42,7 +42,7 @@ Encoded, this query would look like this:
 
 ## 	Queries for common use cases
  	
-Here are some queries for common use cases. For a full list of possible query types, see the [query reference](#-Query-reference).
+Here are some queries for common use cases. For a full list of possible query types, see the [query reference](#query-reference).
 
  ### 	Filter by subject
  	
@@ -100,7 +100,7 @@ Encoded, this query would look like this:
 
 ## 	Creating compound queries
  	
-Use [operators and keywords](#-Keywords-and-Operator-reference) to combine queries for a compound query. For example, you could filter for emails between a date range, or you could filter for when a specific recipients email is bounced. Here are some common use cases:
+Use [operators and keywords](#keywords-and-Operator-reference) to combine queries for a compound query. For example, you could filter for emails between a date range, or you could filter for when a specific recipients email is bounced. Here are some common use cases:
 
  ### 	Filter by a recipient email that was bounced
  	
@@ -134,7 +134,7 @@ curl --request GET \
 
 ## 	Keywords and Operator reference
  	
-There are several operators and keywords that you can use to build [Compound queries](#-Creating-compound-queries). Use these operators between query statements. If the character used as the delimiter if it is found within the string. The escape character is `\`, which must be escaped with a preceding `\`. All queries need to be URL encoded.
+There are several operators and keywords that you can use to build [Compound queries](#creating-compound-queries). Use these operators between query statements. If the character used as the delimiter if it is found within the string. The escape character is `\`, which must be escaped with a preceding `\`. All queries need to be URL encoded.
 
 *This is a full list of accepted operators and keywords:*
 

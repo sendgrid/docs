@@ -43,7 +43,7 @@ When using the SMTP method you must also define the `To` address. It does not ma
 
 </call-out>
 
-Emails are automatically tracked, allowing you to retrieve delivery and engagement statistics from within the SendGrid Dashboard. You can also specify certain [categories](#-How-to-Use-Categories) for any of your emails to help you organize them by type.
+Emails are automatically tracked, allowing you to retrieve delivery and engagement statistics from within the SendGrid Dashboard. You can also specify certain [categories](#how-to-use-categories) for any of your emails to help you organize them by type.
 
 ## 	Configuring SendGrid’s WordPress Plugin
 

@@ -142,7 +142,7 @@ This deferral is created by SendGrid to control the rate of delivery by ISP to h
  	
 A drop occurs when you try to send a message to an email address listed on one of the suppression lists: Bounces, Unsubscribes, Spam reports and Invalid Emails. If an email is already on one of the lists, our systems automatically drop the email to protect your Sender Reputation.
 
-A dropped message cannot be resent automatically. To resend a message, first [remove the email from the suppression list](#-Removing-an-email-from-a-suppression-list), and then recreate and resend the email.
+A dropped message cannot be resent automatically. To resend a message, first [remove the email from the suppression list](#removing-an-email-from-a-suppression-list), and then recreate and resend the email.
 
  ### 	Bounces
  	
@@ -150,7 +150,7 @@ A bounce is a Drop event that occurs when a message to an address has previously
 
 You can visit the [Bounces list](https://app.sendgrid.com/suppressions/bounces) under the Suppressions tab, and search the address to find the details of the original attempt, such as the date and full error reason code. Once an address is on this list, we do not attempt to deliver further messages to it; we drop the message to protect your external reputation.
 
-A bounced message cannot be resent automatically. To resend a message, first [remove the email from the suppression list](#-Removing-an-email-from-a-suppression-list), and then recreate and resend the email.
+A bounced message cannot be resent automatically. To resend a message, first [remove the email from the suppression list](#removing-an-email-from-a-suppression-list), and then recreate and resend the email.
 
 <call-out>
 

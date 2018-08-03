@@ -347,8 +347,8 @@ Resulting replacement:
 
 Here are two combined examples:
 
-- [Dynamic content creation](#-Dynamic-content-creation)
-- [Dynamic content creation with dynamic parts](#-Dynamic-content-creation-with-dynamic-parts)
+- [Dynamic content creation](#dynamic-content-creation)
+- [Dynamic content creation with dynamic parts](#dynamic-content-creation-with-dynamic-parts)
 
  ### 	Dynamic content creation
 

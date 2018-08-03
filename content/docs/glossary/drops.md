@@ -30,7 +30,7 @@ If the email address is on the Unsubscribe list the reason will say "Unsubscribe
 
 ## 	Other reasons for dropped emails:
 
-1. Email triggers SendGrid's spam filters if you have the [Spam Checker filter]({{root_url}}/help-support/account-and-settings/mail/#-Spam-Checker) enabled. You can identify these drops only through the data received through the [Event Webhook]({{root_url}}/for-developers/tracking-events/event/) or in [Email Activity]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed/). In both cases, the reason displayed will say "Spam Content".
+1. Email triggers SendGrid's spam filters if you have the [Spam Checker filter]({{root_url}}/help-support/account-and-settings/mail/#spam-checker) enabled. You can identify these drops only through the data received through the [Event Webhook]({{root_url}}/for-developers/tracking-events/event/) or in [Email Activity]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed/). In both cases, the reason displayed will say "Spam Content".
 
 2. The SMTPAPI header is built incorrectly - this will cause the emails to be dropped with the reason "Invalid SMTPAPI header". For more details about how to build the SMTPAPI header, please view our documentation on [SMTP API]({{root_url}}/for-developers/sending-email/building-an-smtp-email/).
 

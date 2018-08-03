@@ -20,7 +20,7 @@ _To invite a Teammate to your account:_
 <br>This is where you can see the list of all of your current teammates with their details: username, email address, first name, and last name.
 2. To add a new Teammate, click **Add Teammate**.
 3. Enter the Teammate's email address and then select their permission level.
-<br>Depending on the selected permission level, you may need to do some additional permission [configuration](#-Configuring-permissions).
+<br>Depending on the selected permission level, you may need to do some additional permission [configuration](#configuring-permissions).
 4. Click **Invite**.
 <br>If you have already sent a teammate invitation, you will see a list titled **Pending Invites**. This list contains the email address of the invitee and the invitation expiration date.
 
@@ -54,7 +54,7 @@ Only administrator teammates may impersonate subusers.
  	
 The three different permission levels are:
 
-* **Restricted Access -** Teammates with no access to a feature cannot change that feature’s settings or view it within the SendGrid UI.. However, you can still [grant them access to specific features](#-Granting-feature-access).
+* **Restricted Access -** Teammates with no access to a feature cannot change that feature’s settings or view it within the SendGrid UI.. However, you can still [grant them access to specific features](#granting-feature-access).
 * **Read-only Access -** Teammates with read-only access will not be able to change or configure a feature. However, they will be able to view any information provided by that feature.
 * **Admin -** Teammates with full access that can view and make any changes.
 

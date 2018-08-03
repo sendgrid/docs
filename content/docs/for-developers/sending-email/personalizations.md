@@ -57,12 +57,12 @@ Below are some examples of how you can use personalizations for various use case
 
 Personalization Examples Index
 
-* [Sending a Single Email to a Single Recipient](#-Sending-a-Single-Email-to-a-Single-Recipient)
-* [Sending a Single Email to a Single Recipient with a CC](#-Sending-a-Single-Email-to-a-Single-Recipient-With-a-CC)
-* [Sending a Single Email to a Single Recipient with a CC and a BCC](#-Sending-a-Single-Email-to-a-Single-Recipient-With-a-CC-and-a-BCC)
-* [Sending a Single Email to Multiple Recipients](#-Sending-the-same-Email-to-Multiple-Recipients)
-* [Sending a Single Email to a Single Recipient with Multiple CCs/BCCs](#-Sending-a-Single-Email-to-a-Single-Recipient-With-Multiple-CCs/BCCs)
-* [Sending Two Different Emails to Two Different Groups of Recipients](#-Sending-Two-Different-Emails-to-Two-Different-Groups-of-Recipients)
+* [Sending a Single Email to a Single Recipient](#sending-a-single-email-to-a-single-recipient)
+* [Sending a Single Email to a Single Recipient with a CC](#sending-a-single-email-to-a-single-recipient-with-a-cc)
+* [Sending a Single Email to a Single Recipient with a CC and a BCC](#sending-a-single-email-to-a-single-recipient-with-a-cc-and-a-bcc)
+* [Sending a Single Email to Multiple Recipients](#sending-the-same-email-to-multiple-recipients)
+* [Sending a Single Email to a Single Recipient with Multiple CCs/BCCs](#sending-a-single-email-to-a-single-recipient-with-multiple-ccs/bccs)
+* [Sending Two Different Emails to Two Different Groups of Recipients](#sending-two-different-emails-to-two-different-groups-of-recipients)
 
 ## 	Sending a Single Email to a Single Recipient
  	

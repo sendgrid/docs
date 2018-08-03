@@ -24,11 +24,6 @@ Tracking your emails is an important part of being a good sender and learning ab
 We have broken up stats in specific ways so that you can get at-a-glance data, as well as allowing you to get into the details of how your email is being used.
 </p>
 
-- [Available Email analytics-and-reporting Reports](#-Available-Email-analytics-and-reporting-Reports)
-- [Metrics](#-Metrics)
-- [analytics-and-reporting_Filter](#-analytics-and-reporting-Filters)
-- [Top_5_Categories](#-Top-5-Categories)
-
 ## 	Available Email analytics-and-reporting Reports
  	
 <call-out>
@@ -38,7 +33,7 @@ The timezone for stats pages is set in your [account settings]({{root_url}}/help
 </call-out>
 
 <p>
-<strong><a href="#-analytics-and-reporting-Filters"Overview</a></strong> - The overview is your at-a-glance stats. We give you the highlight reel so that you can keep an eye out for any issues and make sure you’re on the right track.
+<strong><a href="#analytics-and-reporting-Filters"Overview</a></strong> - The overview is your at-a-glance stats. We give you the highlight reel so that you can keep an eye out for any issues and make sure you’re on the right track.
 </p><p>
 <strong><a href="{{root_url}}/help-support/analytics-and-reporting/global/">Global Stats</a></strong> - All of your stats, aggregated in one place so you can see the high level view of everything.
 </p><p>

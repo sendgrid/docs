@@ -20,7 +20,7 @@ As an example of role specific permissions, the marketer would be given the foll
 * [Category Management]({{root_url}}/help-support/analytics-and-reporting/categories/) - Read Access
 * [Email Activity]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed/) - Read Access
 * [Mail Send: Scheduled Sends](https://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/index.html) - Read Access
-* [Mail Settings: Spam Checker]({{root_url}}/help-support/account-and-settings/mail/#-Spam-Checker) - Full Access
+* [Mail Settings: Spam Checker]({{root_url}}/help-support/account-and-settings/mail/#spam-checker) - Full Access
 * [Marketing Campaigns]({{root_url}}/help-support/sending-email/how-to-send-email/) - Full Access
 * [Stats]({{root_url}}//help-support/analytics-and-reporting/stats-overview/) - Read Access
 * [Suppressions]({{root_url}}/help-support/sending-email/index-suppressions/) - Full Access

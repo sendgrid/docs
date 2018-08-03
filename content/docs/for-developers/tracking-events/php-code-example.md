@@ -44,7 +44,7 @@ if($num_attachments){
 
 ## 	Event Webhook
 
-To use the Event Webhook, you must first [setup Event Notification]({{root_url}}/for-developers/tracking-events/event/#-Setup).
+To use the Event Webhook, you must first [setup Event Notification]({{root_url}}/for-developers/tracking-events/event/#setup).
 
 In this scenario, we assume you've set the Event Notification URL to go the endpoint `/parse.php` on your server. Given this scenario the following code will allow you to process events:
 
