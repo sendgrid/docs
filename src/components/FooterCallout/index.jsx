@@ -16,10 +16,10 @@ const FooterCallout = () => (
         <div className="col-md-6">
           <div className="card card--glossary">
             <h3 className="card__title">Quicklinks</h3>
-            <Link className="glossary-link" to="/for-developers/sending-email/api-getting-started/">Getting Started</Link>
-            <Link className="glossary-link" to="/api-v3/">API Documentation</Link>
-            <Link className="glossary-link" to="/for-developers/sending-email/libraries/">Code Libraries</Link>
-            <Link className="glossary-link" to="/help-support/account-and-settings/api-keys/">API Keys</Link>
+            <p className="glossary-link"><Link to="/for-developers/sending-email/api-getting-started/">Getting Started</Link></p>
+            <p className="glossary-link"><Link to="/api-v3/">API Documentation</Link></p>
+            <p className="glossary-link"><Link to="/for-developers/sending-email/libraries/">Code Libraries</Link></p>
+            <p className="glossary-link"><Link to="/help-support/account-and-settings/api-keys/">API Keys</Link></p>
           </div>
         </div>
       </div>
