@@ -30,7 +30,7 @@ navigation:
 * [Go](https://github.com/sendgrid/sendgrid-go/blob/master/README.md)
 * [Java](https://github.com/sendgrid/sendgrid-java/blob/master/README.md)
 
-**2.** You can use our  [SMTPAPI]({{root_url}}/API_Reference/SMTP_API/index/) to greatly increase your message throughput. As with SMTP, 100 messages can be sent with each connection, but there can be 1000 [TO: recipients](https://sendgrid.com/docs/API_Reference/SMTP_API/using_the_smtp_api/) for each message using the x-smtpapi header. You can use this option through SMTP sending as well as the [Web API v3](https://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/index/).
+**2.** You can use our  [SMTPAPI]({{root_url}}/API_Reference/SMTP_API/index.html) to greatly increase your message throughput. As with SMTP, 100 messages can be sent with each connection, but there can be 1000 [TO: recipients](https://sendgrid.com/docs/API_Reference/SMTP_API/using_the_smtp_api.html) for each message using the x-smtpapi header. You can use this option through SMTP sending as well as the [Web API v3](https://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/index.html).
 
 **3.** Lastly, you can try to open additional connections from your end: Generally, we recommend a maximum of 10 concurrent connections. However, please note that SendGrid can generally handle as much mail as you can throw at us. One thing to ensure is to make certain that the maximum amount of mail is passed before terminating each connection. We recommend using caution when incrementing your number of active connections.
 
@@ -62,7 +62,7 @@ Keep in mind that many modern network nodes will de-prioritize ICMP packets, whi
 
 **Google Header Analyzer**
 
-Google provides a great free [header analyzer tool](https://toolbox.googleapps.com/apps/messageheader/analyzeheader) that you can use to analyze the headers of an email, and find out how long an email spent in a particular location. For more information on how to grab the original headers from an email, [check here.]({{root_url}}/Classroom/Troubleshooting/Authentication/how_do_i_check_the_headers_raw_source_of_an_email.html)
+Google provides a great free [header analyzer tool](https://toolbox.googleapps.com/apps/messageheader/analyzeheader) that you can use to analyze the headers of an email, and find out how long an email spent in a particular location. For more information on how to grab the original headers from an email, [check here.]({{root_url}}/help0support/account-and-settings/checking-email-source/)
 
 1. Grab the headers of the message you want to analyze. Make sure you just grab the received headers, which is everything above the first content boundary.
   ![]({{root_url}}/images/headersnocontent.gif)

@@ -29,7 +29,7 @@ This parameter allows SendGrid to begin processing a customer’s email requests
 
 <call-out>
 
-Cancel Scheduled sends by including a batch ID with your send. For more information, check out [Cancel Scheduled Sends]({{root_url}}/API_Reference/Web_API_v3/cancel_schedule_send.html)!
+Cancel Scheduled sends by including a batch ID with your send. For more information, check out [Cancel Scheduled Sends]({{root_url}}/API_Reference/Web_API_v3/cancel_schedule_send.html).
 
 </call-out>
 

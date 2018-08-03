@@ -6,7 +6,6 @@ seo:
 title: Click-Through Rate (CTR)
 weight: 0
 layout: page
-zendesk_id: 200591267
 navigation:
   show: false
 ---

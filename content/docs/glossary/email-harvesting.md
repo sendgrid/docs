@@ -17,4 +17,4 @@ Spammers may use bots to find valid email addresses on the Internet by spidering
 
 The email addresses of your customers are valuable, so SendGrid takes the security of your send lists very seriously. 
 
-For tips on getting your messages to the Inbox, please see our [email deliverability page]({{root_url}}/Classroom/Deliver/index.html).
+For tips on getting your messages to the Inbox, please see our [email deliverability page]({{root_url}}/help-support/sending-email/email-deliverability/).

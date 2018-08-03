@@ -21,7 +21,7 @@ When evaluating your email API integration needs, look for ESP providers with ro
 SendGrid provides a series of flexible web and SMTP APIs for easy email API integration for both transactional email and marketing email. We have a series of APIs, each of which provide comprehensive solutions to customize and power your platform, including:
 
 * [Event Webhook]({{root_url}}/for-developers/tracking-events/event/) – This will notify a URL via HTTP POST of events that occur as SendGrid processes email. Most Event Webhook users automatically remove unsubscribes, determine unengaged recipients, identify bounced addresses, or react to spam reports.
-* [Parse Webhook]({{root_url}}/API_Reference/Webhooks/parse.html) – Parses the attachments and contents of incoming emails and POST the parsed email to a URL. This allows users to receive mail from any of the addresses on their recipient list.
+* [Parse Webhook]({{root_url}}/for-developers/parsing-email/setting-up-the-inbound-parse-webhook/) – Parses the attachments and contents of incoming emails and POST the parsed email to a URL. This allows users to receive mail from any of the addresses on their recipient list.
 * [SMTP API]({{root_url}}/for-developers/sending-email/building-an-smtp-email/) – Allows users to specify custom-handling instructions for their email through a header inserted into the body of the message. The header can be added to any SMTP message sent to SendGrid.
 * [Web API]({{root_url}}/API_Reference/Web_API/index.html) – Allows SendGrid customers to retrieve information and statistics about their account, including spam reports, bounces, and unsubscribes.
 

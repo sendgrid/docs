@@ -10,8 +10,8 @@ navigation:
   show: false
 ---
 
-You will notice on your [Account Overview]({{site.app_url}}) page you will see your IP reputation score, which will be somewhere from 0% to 100%. This score will go up or down based on your [bounce]({{root_url}}/glossary/bounces.html), [block]({{root_url}}/glossary/blocks.html), [spam]({{root_url}}/glossary/spam-reports.html) and invalid rates.
+You will notice on your [Account Overview]({{site.app_url}}) page you will see your IP reputation score, which will be somewhere from 0% to 100%. This score will go up or down based on your [bounce]({{root_url}}/glossary/bounces/), [block]({{root_url}}/glossary/blocks/), [spam]({{root_url}}/glossary/spam-reports/) and invalid rates.
 
 ![Reputation Monitoring]({{root_url}}/images/reputation_monitoring_1.png)
 
-It is important to monitor your global stats on a daily basis to make sure you keep your IP reputation score high to avoid getting on [blacklists]({{root_url}}/glossary/blacklists.html).
+It is important to monitor your global stats on a daily basis to make sure you keep your IP reputation score high to avoid getting on [blacklists]({{root_url}}/glossary/blacklists/).

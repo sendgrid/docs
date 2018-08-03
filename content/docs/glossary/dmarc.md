@@ -1,8 +1,4 @@
 ---
-st:
-  published_at: 2016-09-21
-  type: Glossary
-  
 layout: page
 weight: 0
 title: DMARC
