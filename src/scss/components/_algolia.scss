@@ -3,37 +3,37 @@
   .algolia-autocomplete {
 
     .ds-dropdown-menu {
-      width: 100%;
-      max-width: 100%;
-      min-width: 100%;
+      width: 100% !important;
+      max-width: 100% !important;
+      min-width: 100% !important;
     }
 
     .ds-suggestion.ds-cursor .algolia-docsearch-suggestion:not(.suggestion-layout-simple) .algolia-docsearch-suggestion--content {
-      padding: $scaledown-3;
+      padding: $scaledown-3 !important;
     }
 
     .algolia-docsearch-suggestion--wrapper {
-      padding: $scaledown-3;
+      padding: $scaledown-3 !important;
     }
 
     .algolia-docsearch-suggestion.algolia-docsearch-suggestion__main .algolia-docsearch-suggestion--category-header {
-      margin-top: $scaledown-1;
+      margin-top: $scaledown-1 !important;
     }
 
     .algolia-docsearch-suggestion {
 
       .algolia-docsearch-suggestion--subcategory-column {
-        width: 100%;
-        margin-bottom: $scaledown-5;
-        font-weight: normal;
+        width: 100% !important;
+        margin-bottom: $scaledown-5 !important;
+        font-weight: normal !important;
 
         &::after {
-          display: none;
+          display: none !important;
         }
       }
 
       .algolia-docsearch-suggestion--content {
-        width: 100%;
+        width: 100% !important;
       }
     }
   }
