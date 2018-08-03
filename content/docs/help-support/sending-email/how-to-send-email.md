@@ -12,7 +12,7 @@ seo:
 ---
 <iframe src="https://player.vimeo.com/video/221496578" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-If you want to send email programatically, see the [API reference]({{root_url}}/API_Reference/api_v3.html), or the [SMTP Reference]({{root_url}}/for-developers/sending-email/getting-started-smtp/).
+If you want to send email programatically, see the [API reference]({{root_url}}/api-reference/), or the [SMTP Reference]({{root_url}}/for-developers/sending-email/getting-started-smtp/).
 
 Before sending your first campaign, you need to do the following:
 
@@ -94,7 +94,7 @@ Be sure your account is set to the correct time zone in order to ensure that you
 
  ### 	Additional Resources
 
-- [Campaign Statistics](https://sendgrid.com/docs/help-support/analytics-and-reporting/campaign-stats/)
-- [Billing](https://sendgrid.com/docs/help-support/account-and-settings/billing/)
+- [Campaign Statistics]({{root_url}}/help-support/analytics-and-reporting/campaign-stats/)
+- [Billing]({{root_url}}/help-support/account-and-settings/billing/)
 - [Sending with the API]({{root_url}}/for-developers/sending-email/api-getting-started/)
 - [Sending with SMTP]({{root_url}}/for-developers/sending-email/getting-started-smtp/)

@@ -98,6 +98,6 @@ Use this to permanently delete your recipients from all of your contact lists an
 
  ### 	Additional Resources
   	
-- [Segmentation](https://sendgrid.com/docs/help-support/managing-contacts/segmenting-your-contacts/)
-- [Unsubscribe Groups](https://sendgrid.com/docs/help-support/sending-email/index-suppressions/)
-- [Custom Fields](https://sendgrid.com/docs/help-support/sending-email/custom-fields/)
+- [Segmentation]({{root_url}}/help-support/managing-contacts/segmenting-your-contacts/)
+- [Unsubscribe Groups]({{root_url}}/help-support/sending-email/index-suppressions/)
+- [Custom Fields]({{root_url}}/help-support/sending-email/custom-fields/)

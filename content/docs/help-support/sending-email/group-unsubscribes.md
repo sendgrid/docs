@@ -35,7 +35,7 @@ For more substitution tags, please see our [transactional templates]({{root_url}
 
 ## 	Using the API
  	
-You can manage your Global Unsubscribes via the [Group Suppressions API]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/groups.html).
+You can manage your Global Unsubscribes via the [Group Suppressions API](https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/groups.html).
 
 ## 	Additional Resources
  	
