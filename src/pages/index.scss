@@ -48,10 +48,6 @@ $card-gutter: 40px;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.08);
   }
 
-  &::placeholder {
-    color: $slate;
-  }
-
   @media (max-width: $width-mobile) {
     font-size: $scale-0;
   }

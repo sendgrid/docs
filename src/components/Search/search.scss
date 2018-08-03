@@ -18,6 +18,12 @@
   &::placeholder {
     color: $slate;
   }
+
+  &:focus {
+    &::placeholder {
+      color: transparent;
+    }
+  }
 }
 
 .search-hero__bg #query:focus {
