@@ -1,41 +1,149 @@
 /* eslint quote-props: ["error", "consistent-as-needed"] */
 const GROUPS = {
-  'tracking-events': 'Tracking Events',
-  'parsing-email': 'Parsing Email',
-  'sending-email': 'Sending Email',
-  'building-email': 'Building Email',
-  'delivery-optimization': 'Delivery & Optimization',
-  'troubleshooting': 'Troubleshooting',
-  'platform-partners': 'Platform Partners',
-  'tracking': 'Tracking',
-  'managing-contacts': 'Managing Contacts',
-  'building-your-list': 'Building Your List',
-  'segmenting-your-list': 'Segmenting Your List',
-  'stats-reporting': 'Statistics & Reporting',
-  'statistics': 'Statistics',
-  'click-tracking': 'Click Tracking',
-  'email-activity': 'Email Activity Feed',
-  'settings': 'Account Settings',
-  'account-management': 'Account Management',
-  'inbound-parse': 'Inbound Parse',
-  'sender-authentication': 'Sender Authentication',
-  'ip-management': 'IP Management',
-  'teammates-subusers': 'Teammates & Subusers',
-  'security': 'Security',
-  'billing': 'Billing',
-  'marketing-campaigns': 'Marketing Campaigns',
-  'getting-started': 'Getting Started',
-  'reference-troubleshooting': 'Reference & Troubleshooting',
-  'code-examples': 'Code Examples',
-  'partners': 'SendGrid Partners',
-  'plugins': 'SendGrid Plugins',
-  'smtp': 'SMTP API',
-  'api-v2': 'SendGrid v2 API',
-  'api-v3': 'SendGrid v3 API',
-  'mail-servers': 'Mail Servers',
-  'mail-clients': 'Mail Clients',
-  'open-source': 'Open Source Apps',
-  'ungrouped': 'Ungrouped'
+  'tracking-events': {
+    name: 'Tracking Events',
+    order: null,
+  },
+  'parsing-email': {
+    name: 'Parsing Email',
+    order: null,
+  },
+  'sending-email': {
+    name: 'Sending Email',
+    order: null,
+  },
+  'building-email': {
+    name: 'Building Email',
+    order: null,
+  },
+  'delivery-optimization': {
+    name: 'Delivery & Optimization',
+    order: null,
+  },
+  'troubleshooting': {
+    name: 'Troubleshooting',
+    order: null,
+  },
+  'platform-partners': {
+    name: 'Platform Partners',
+    order: null,
+  },
+  'tracking': {
+    name: 'Tracking',
+    order: null,
+  },
+  'managing-contacts': {
+    name: 'Managing Contacts',
+    order: null,
+  },
+  'building-your-list': {
+    name: 'Building Your List',
+    order: null,
+  },
+  'segmenting-your-list': {
+    name: 'Segmenting Your List',
+    order: null,
+  },
+  'stats-reporting': {
+    name: 'Statistics & Reporting',
+    order: null,
+  },
+  'statistics': {
+    name: 'Statistics',
+    order: null,
+  },
+  'click-tracking': {
+    name: 'Click Tracking',
+    order: null,
+  },
+  'email-activity': {
+    name: 'Email Activity Feed',
+    order: null,
+  },
+  'settings': {
+    name: 'Account Settings',
+    order: null,
+  },
+  'account-management': {
+    name: 'Account Management',
+    order: null,
+  },
+  'inbound-parse': {
+    name: 'Inbound Parse',
+    order: null,
+  },
+  'sender-authentication': {
+    name: 'Sender Authentication',
+    order: null,
+  },
+  'ip-management': {
+    name: 'IP Management',
+    order: null,
+  },
+  'teammates-subusers': {
+    name: 'Teammates & Subusers',
+    order: null,
+  },
+  'security': {
+    name: 'Security',
+    order: null,
+  },
+  'billing': {
+    name: 'Billing',
+    order: null,
+  },
+  'marketing-campaigns': {
+    name: 'Marketing Campaigns',
+    order: null,
+  },
+  'getting-started': {
+    name: 'Getting Started',
+    order: null,
+  },
+  'reference-troubleshooting': {
+    name: 'Reference & Troubleshooting',
+    order: null,
+  },
+  'code-examples': {
+    name: 'Code Examples',
+    order: null,
+  },
+  'partners': {
+    name: 'SendGrid Partners',
+    order: null,
+  },
+  'plugins': {
+    name: 'SendGrid Plugins',
+    order: null,
+  },
+  'smtp': {
+    name: 'SMTP API',
+    order: null,
+  },
+  'api-v2': {
+    name: 'SendGrid v2 API',
+    order: null,
+  },
+  'api-v3': {
+    name: 'SendGrid v3 API',
+    order: 1,
+  },
+  'mail-servers': {
+    name: 'Mail Servers',
+    order: null,
+  },
+  'mail-clients': {
+    name: 'Mail Clients',
+    order: null,
+  },
+  'open-source': {
+    name: 'Open Source Apps',
+    order: null,
+  },
+  'ungrouped': {
+    name: 'Ungrouped',
+    order: null,
+  },
 };
 
 export default GROUPS;
