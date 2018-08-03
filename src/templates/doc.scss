@@ -118,7 +118,7 @@ aside a.active {
 
 // custom Markdown components
 .callout {
-  padding: 0 $scaleup-2;
+  padding: $scaleup-4;
   margin: $scaleup-4 0;
 }
 
@@ -127,11 +127,13 @@ aside a.active {
 }
 
 .callout--info {
-  border-left: 4px solid $sg-blue;
+  background: $sg-blue-05;
+  border-left: 2px solid $sg-blue;
 }
 
 .callout--warning {
-  border-left: 4px solid $alert-danger-text;
+  background: rgba(183, 28, 28, 0.05);
+  border-left: 2px solid $alert-danger-text;
 }
 
 .tabbed-code {
