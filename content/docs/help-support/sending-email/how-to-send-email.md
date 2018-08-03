@@ -19,7 +19,7 @@ Before sending your first campaign, you need to do the following:
 - [Create an Account](https://sendgrid.com/pricing/?mc=SendGrid%20Documentation)
 - [Add a Sender]({{root_url}}/help-support/sending-email/senders/)
 - [Upload Contacts]({{root_url}}/help-support/managing-contacts/adding-contacts/)
-- [Add an Unsubscribe Group]({{root_url}}/help-support/sending-email/index-suppressions/)
+- [Add an Unsubscribe Group]({{root_url}}/help-support/sending-email/create-and-manage-unsubscribe-groups/)
 - [Segment Your Contact List]({{root_url}}/help-support/managing-contacts/segmenting-your-contacts/) (Optional)
 
 *To send your first campaign:*
@@ -31,7 +31,7 @@ Before sending your first campaign, you need to do the following:
 ![]({{root_url}}/images/campaigns_dashboard_categories_search.png)
 
 1. Select the template that you want to use for your campaign.
-<br> You can select a **Blank Template**, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Marketing Templates]({{root_url}}/help-support/sending-email/create-and-edit-transactional-templates/).
+<br> You can select a **Blank Template**, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Marketing Templates]({{root_url}}/help-support/sending-email/working-with-marketing-templates/).
 
 1. Select an editor.
 <br> You can choose between the **Design Editor** and the **Code Editor**.
@@ -48,7 +48,7 @@ Depending on your editor selection, you use different methods to design your cam
 1. Edit your campaign by filling in the fields in the **Settings** Tab.
 
 1. Add your custom content.
-<br> For more information about customizing your campaign, see [Using the Design Editor]({{root_url}}/help-support/sending-email/editor/#-The-Design-Editor) or [Using the Code Editor]({{root_url}}/help-support/sending-email/editor/#-The-Code-Editor).
+<br> For more information about customizing your campaign, see [Using the Design Editor]({{root_url}}/help-support/sending-email/editor/#the-design-editor) or [Using the Code Editor]({{root_url}}/help-support/sending-email/editor/#-the-code-editor).
 
 1. Once you’ve finished editing your campaign, you can see what it looks like by clicking **Preview**.
 

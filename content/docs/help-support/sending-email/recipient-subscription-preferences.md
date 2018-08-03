@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-Emails that are sent with an unsubscribe group specified will have two links at the bottom of the email: an “Email Preferences” link, and an “Unsubscribe” link.
+Emails that are sent with an unsubscribe group specified will have two links at the bottom of the email; an “Email Preferences” link, and an “Unsubscribe” link.
 
 If you do not specify an unsubscribe group when sending an email, the unsubscribe link will act as a global unsubscribe. This means that the recipient will no longer get any emails at all, including potentially important emails like password resets. To avoid this, create unsubscribe groups.
 
@@ -29,7 +29,7 @@ You can also choose to manually add the `<%asm_preferences_url%>` tag to your em
 
 Alternatively, you can use the `<%asm_preferences_raw_url%>` substitution tag. This will be replaced with just the URL pointing to your [Subscription Preference page]({{root_url}}/help-support/sending-email/recipient-subscription-preferences/) without the hyperlinked text "Manage Email Preferences".
 
-For more substitution tags, please see our [transactional templates]({{root_url}}/help-support/sending-email/create-and-edit-transactional-templates/#-Adding-unsubscribe-links-to-a-template).
+For more substitution tags, please see our [transactional templates]({{root_url}}/help-support/sending-email/create-and-edit-transactional-templates/#adding-unsubscribe-links-to-a-template).
 
 ## 	Additional Resources
  	

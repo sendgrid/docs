@@ -17,14 +17,14 @@ Marketing Campaigns is all about supporting your unique workflow, so you can get
 
 ## Choosing The Right Editor
 
-The [**Code Editor**](#-The-Code-Editor) is perfect for users who are importing, creating or editing custom HTML. It offers a robust environment to upload images, backed by a feature-packed editor – complete with split-screen preview, error flagging, scroll-syncing, syntax highlighting and more. While other email editors may be notorious for adding excess code to your project, rest assured that our editor never modifies your carefully crafted HTML.
+The [**Code Editor**](#the-code-editor) is perfect for users who are importing, creating or editing custom HTML. It offers a robust environment to upload images, backed by a feature-packed editor – complete with split-screen preview, error flagging, scroll-syncing, syntax highlighting and more. While other email editors may be notorious for adding excess code to your project, rest assured that our editor never modifies your carefully crafted HTML.
 
-The [**Design Editor**](#-The-Design-Editor), complete with HTML access to each content module, offers powerful “what you see is what you get” (WYSIWYG) editing. It features a diverse library of content blocks, allowing you to build beautiful emails quickly and intuitively. Once placed into your campaign, each module offers access to edit the HTML and a robust panel of settings – perfect for customizing content precisely to your needs.
+The [**Design Editor**](#the-design-editor), complete with HTML access to each content module, offers powerful “what you see is what you get” (WYSIWYG) editing. It features a diverse library of content blocks, allowing you to build beautiful emails quickly and intuitively. Once placed into your campaign, each module offers access to edit the HTML and a robust panel of settings – perfect for customizing content precisely to your needs.
 
 <call-out type="warning">
 
 
-The [Design Editor](#-The-Design-Editor) features a number of convenient ways to edit the HTML content of your email –– including the ability to [edit the HTML of each drag-and-drop module](#-Editing-Module-HTML), [edit the HTML `head` of your message](#-Editing-the-HTML-Head), and even import complete code using our [Drag & Drop Markup](#-Importing-Custom-HTML-With-Drag--Drop-Markup).
+The [Design Editor](#the-design-editor) features a number of convenient ways to edit the HTML content of your email –– including the ability to [edit the HTML of each drag-and-drop module](#editing-module-html), [edit the HTML `head` of your message](#editing-the-html-head), and even import complete code using our [Drag & Drop Markup](#importing-custom-html-with-drag--drop-markup).
 
 
 </call-out>
@@ -201,22 +201,6 @@ Currently, only 10 categories can be added to each campaign.
 <iframe src="https://player.vimeo.com/video/221496251" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 SendGrid’s flexible design editor allows you to build your templates and campaigns using intuitive, drag and drop tools. The “What you see is what you get” (WYSIWYG) editing experience features a library of modules for easily adding content to your campaign.
-
-* [Getting Started With the Design Editor](#-Getting-Started-With-the-Design-Editor)
-* [Using Drag & Drop Modules](#-Using-Drag--Drop-Modules)
-* [Drag & Drop Module Descriptions and Styles](#-Drag--Drop-Module-Descriptions-and-Styles)
-* [Using Global Styles](#-Using-Global-Styles)
-* [Editing Module HTML](#-Editing-Module-HTML)
-* [Code Modules](#-Code-Modules)
-* [Adding Images](#-Adding-Images)
-* [Using Substitution Tags](#-Using-Substitution-Tags)
-* [Previewing Your Campaign](#-Previewing-Your-Campaign)
-* [Editing the HTML Head](#-Editing-the-HTML-Head)
-* [Importing Custom HTML With Drag & Drop Markup](#-Importing-Custom-HTML-With-Drag--Drop-Markup)
-    * [Drag & Drop Markup](#-Drag--Drop-Markup)
-    * [Drag & Drop Code Examples](#-Drag--Drop-Code-Examples)
-* [Exporting HTML From the Design Editor](#-Exporting-HTML-From-the-Design-Editor)
-* [Creating Categories](#-Creating-Categories)
 
 ### Getting Started With the Design Editor
 
@@ -457,9 +441,13 @@ You'll also see a number of System Fields that you can place in the body of your
 
 &ast; For your convenience, these substitution tags are included by default in the Unsubscribe Module found on the Build tab of the Design Editor.
 
+<call-out>
+
 For contacts with no entry in a custom field, the substitution tag appears blank. To set a default value, use the following pattern:
 
 `[%first_name | Valued Customer%]`
+
+</call-out>
 
 ### Previewing Your Campaign
 
@@ -529,7 +517,7 @@ Next, you’ll have to add add a `<style>` to specify that you want to use this 
 
 ### Importing Custom HTML With Drag & Drop Markup
 
-If you are writing your own custom HTML that you plan on importing into the design editor, refer to the [drag & drop code examples](#-Drag--Drop-Code-Examples) to ensure that any modules you create are compatible with our drag & drop functionality. If you do not specify a data type that matches one of our drag & drop modules your code is imported as a text module.
+If you are writing your own custom HTML that you plan on importing into the design editor, refer to the [drag & drop code examples](#drag--drop-code-examples) to ensure that any modules you create are compatible with our drag & drop functionality. If you do not specify a data type that matches one of our drag & drop modules your code is imported as a text module.
 
 *To import custom HTML:*
 
@@ -545,13 +533,13 @@ If you are writing your own custom HTML that you plan on importing into the desi
 
 <call-out type="warning">
 
-Any HTML that you import replaces all existing content in your campaign or template. If you want to import only a section of HTML, use a [code module](#-Code-Modules).
+Any HTML that you import replaces all existing content in your campaign or template. If you want to import only a section of HTML, use a [code module](#code-modules).
 
 </call-out>
 
 ### Drag & Drop Markup
 
-SendGrid parses your custom HTML, looking for any [drag & drop compatible modules](#-Drag--Drop-Code-Examples).
+SendGrid parses your custom HTML, looking for any [drag & drop compatible modules](#drag--drop-code-examples).
 
   * First, we look for any HTML elements that contain the attribute `role="modules-container"`.
   * Next, we look for all HTML elements with the attribute `role="module"` that are descendants of the "modules-container" element.
@@ -561,7 +549,7 @@ The `role="modules-container"` attribute is required so that we know where your 
 <call-out type="warning">
 
 
-Any HTML outside an element with the "modules-container" attribute is discarded. Only [supported styling options and attributes](#-Drag-&-Drop-Module-Descriptions-and-Styles) are included.
+Any HTML outside an element with the "modules-container" attribute is discarded. Only [supported styling options and attributes](#drag--drop-module-descriptions-and-styles) are included.
 
 If you don't include the "modules-container" attribute in any of your custom HTML, then all of your HTML is imported as a single text module.
 

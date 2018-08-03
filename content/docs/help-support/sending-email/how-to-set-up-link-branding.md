@@ -27,7 +27,7 @@ DNS stands for Domain Name System. This is a naming system for domains on the in
  	
 A CDN (content delivery network) is a network that delivers the content of webpages to the end user. The network selects the servers for delivery based on the location of the end user, the originating location of the webpage and the location of the content delivery server. Content Delivery Networks are a great mechanism that you can use to serve up content very quickly and easily across multiple mediums as well as handle security certificates for you.
 
-We suggest [CloudFlare]({{root_url}}/help-support/sending-email/content-delivery-networks/#-Using-CloudFlare), [Fastly]({{root_url}}/help-support/sending-email/content-delivery-networks/#-Using-Fastly), or [KeyCDN]({{root_url}}/help-support/sending-email/content-delivery-networks/#-Using-KeyCDN) when using Content Delivery Networks with SendGrid.
+We suggest [CloudFlare]({{root_url}}/help-support/sending-email/content-delivery-networks/#using-cloudFflare), [Fastly]({{root_url}}/help-support/sending-email/content-delivery-networks/#using-fastly), or [KeyCDN]({{root_url}}/help-support/sending-email/content-delivery-networks/#using-keycdn) when using Content Delivery Networks with SendGrid.
 
  ### 	CNAME
  	

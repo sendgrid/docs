@@ -27,11 +27,11 @@ For the full API documentation, see [Mail Send with Dynamic Transactional Templa
  	
 We do not support full Handlebars.js functionality. Currently, dynamic templates supports the following helpers:
 
-  - [Substitution](#-Substitution)
-  - [Conditional statements](#-Conditional-statements) (including `if/else` and `unless`)
-  - [Iterations](#-Iterations)
+  - [Substitution](#substitution)
+  - [Conditional statements](#conditional-statements) (including `if/else` and `unless`)
+  - [Iterations](#iterations)
 
-For a full helper reference, with examples, see the [Handlebar.js reference](#-Handlebar.js-reference). This page has use cases with examples that include the supported helpers.
+For a full helper reference, with examples, see the [Handlebar.js reference](#handlebar.js-reference). This page has use cases with examples that include the supported helpers.
 
 ## 	Use cases
  	
@@ -43,9 +43,9 @@ This is an [example receipt template](https://github.com/sendgrid/email-template
 
 This reciept template is using these helpers:
 
-  - [Substitution](#-Substitution)
-  - [Conditional statements](#-Conditional-statements)
-  - [Iterations](#-Iterations)
+  - [Substitution](#substitution)
+  - [Conditional statements](#conditional-statements)
+  - [Iterations](#iterations)
 
  ### 	Password reset
  	
@@ -53,7 +53,7 @@ This is an [example transactional template](https://github.com/sendgrid/email-te
 
 This transactional template is using this helper:
 
-- [Substitution](#-Substitution)
+- [Substitution](#substitution)
 
  ### 	Muliple languages
  	
@@ -61,7 +61,7 @@ This is an [example template that lets you have content in multiple languages](h
 
 This reciept template is using this helper:
 
-- [Conditional statements](#-Conditional-statements) - `if/else`
+- [Conditional statements](#conditional-statements) - `if/else`
 
  ### 	Newsletter
  	
@@ -69,8 +69,8 @@ This is an [example newsletter template](https://github.com/sendgrid/email-templ
 
 This reciept template is using these helpers:
 
-  - [Substitution](#-Substitution)
-  - [Iterations](#-Iterations)
+  - [Substitution](#substitution)
+  - [Iterations](#iterations)
 
  ### 	Advertisement
  	
@@ -78,9 +78,9 @@ This is an [example template that is advertising items on sale](https://github.c
 
 This reciept template is using these helpers:
 
-  - [Substitution](#-Substitution)
-  - [Conditional statements](#-Conditional-statements) - `if/else`
-  - [Iterations](#-Iterations)
+  - [Substitution](#substitution)
+  - [Conditional statements](#conditional-statements) - `if/else`
+  - [Iterations](#iterations)
 
 ## 	Handlebar.js reference
  	
@@ -90,10 +90,10 @@ This reference goes through examples of each helper - including HTML email snipp
  	
 There are four main types of substitutions:
 
-- [Basic replacement](#-Basic-replacement)
-- [Deep object replacement](#-Deep-object-replacement)
-- [Object failure](#-Object-failure)
-- [Replacement with HTML](#-Replacement-with-HTML)
+- [Basic replacement](#basic-replacement)
+- [Deep object replacement](#deep-object-replacement)
+- [Object failure](#object-failure)
+- [Replacement with HTML](#replacement-with-html)
 
  ### 	Basic replacement
  	
@@ -181,9 +181,9 @@ Resulting replacement:
  	
 Here are three types of conditonal statements:
 
-- [Basic If, Else, Else If](#-Basic-If--Else-Else-If)
-- [If with a root](#-If-with-a-root)
-- [Unless](#-Unless)
+- [Basic If, Else, Else If](#basic-if--else-else-if)
+- [If with a root](#if-with-a-root)
+- [Unless](#unless)
 
  ### 	Basic If, Else, Else If
  	
@@ -286,7 +286,7 @@ Test Data should contain:
 ```
 
 
- ### 	Iterations
+ ##	Iterations
  	
  ### 	Basic Iterator
  	

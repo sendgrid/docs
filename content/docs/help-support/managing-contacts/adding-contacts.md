@@ -37,12 +37,12 @@ You can easily add contacts to your contact database by uploading a CSV of your 
     If you choose to add the contacts without assigning them to a list, they exist in the contacts database without any additional context.
 
 3. Upload your file by dragging it into or clicking the CSV upload area.
-4. Once the CSV has populated, click **Next:Custom Fields**.
+4. Once the CSV has populated, click **Next: Custom Fields**.
 
    A page appears displaying the data from the header row from of the CSV file. From the list, you can select a custom field to associate with the data in the column. If there isn't a corresponding field, you can add one. Only the **Email** field is required to complete the upload. Skipped column headers are not uploaded and do not appear as custom fields within an individual contact's profile.
 
 5. Select **Skip Column** to omit data from the contacts list.
-6. Once you've gone through all of the headers, click **Next:Add Contacts**.
+6. Once you've gone through all of the headers, click **Next: Add Contacts**.
 
 <call-out>
 
@@ -105,7 +105,7 @@ To add Custom Field data to a manually imported contact, navigate to the Contact
 
 1. Click **Add Contacts** and then select **Upload CSV**.
 1. Click **+Add to New List** and enter the name of the list you would like to create.
-1. Choose a CSV file for upload and complete the steps listed in [Uploading a CSV ](#-Uploading-a-CSV).
+1. Choose a CSV file for upload and complete the steps listed in [Uploading a CSV ](#uploading-a-csv).
 
  ### 	Add Contacts to a List
  	
@@ -120,7 +120,7 @@ To add Custom Field data to a manually imported contact, navigate to the Contact
 
 <call-out>
 
-If you [create a segment]({{root_url}}/help-support/managing-contacts/segmenting-your-contacts/#-Creating-a-Segment) before you upload a list, contacts that fit the segment criteria populate that segment when uploaded.
+If you [create a segment]({{root_url}}/help-support/managing-contacts/segmenting-your-contacts/#creating-a-segment) before you upload a list, contacts that fit the segment criteria populate that segment when uploaded.
 
 </call-out>
 

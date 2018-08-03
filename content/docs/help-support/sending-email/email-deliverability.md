@@ -40,7 +40,7 @@ One of the most important parts of CAN-SPAM is this line:
 
 **"Tell recipients how to opt out of receiving future email from you."**
 
-All email providers look for an unsubscribe method (or links) in all emails. Even though it may not make sense for transactional mail, it can make the difference in messages arriving in the inbox or the spam folder. [Subscription tracking]({{root_url}}/help-support/analytics-and-reporting/subscription-tracking/) automatically inserts an unsubscribe link into all your emails and maintains the Unsubscribe list.
+All email providers look for an unsubscribe method (or links) in all emails. Even though it may not make sense for transactional mail, it can make the difference in messages arriving in the inbox or the spam folder. [Subscription tracking]({{root_url}}/help-support/sending-email/subscription-tracking/) automatically inserts an unsubscribe link into all your emails and maintains the Unsubscribe list.
 
 Think of it this way: would you rather a recipient politely decline future emails from you, or mark your messages as spam because they have no other option?
 
@@ -52,7 +52,7 @@ We've all ignored phone calls from numbers we don't recognize, the same goes for
 
  ### 	Segment your traffic
  	
-Keeping your mail streams separated can make a huge difference in the long run. Specifically, segmenting your marketing email from your transactional email is a great way to keep legitimate mail out of trouble.
+Keeping your mail streams separated can make a huge difference in the long run. Specifically, [segmenting]({{root_url}}/help-support/managing-contacts/segmenting-your-contacts/) your marketing email from your transactional email is a great way to keep legitimate mail out of trouble.
 
 Say for example you are sending your Daily Knitting Update emails on the same account and the same IP address as your receipts, invoices, and password resets.
 
