@@ -73,7 +73,7 @@ If your email traffic generates a lot of events, the incoming data can quickly o
 
  ### 	Integrating
 
-Once you choose a storage option, follow steps 3 through 8 in [Getting started](#-Getting-started]) to update your [Settings > Mail Settings](https://app.sendgrid.com/settings/mail_settings) in the [SendGrid UI](https://app.sendgrid.com). Update the **HTTP POST URL field** to your URL, and make sure you've selected the events that you want to receive.
+Once you choose a storage option, follow steps 3 through 8 in [Getting started](#getting-started]) to update your [Settings > Mail Settings](https://app.sendgrid.com/settings/mail_settings) in the [SendGrid UI](https://app.sendgrid.com). Update the **HTTP POST URL field** to your URL, and make sure you've selected the events that you want to receive.
 
 The Event Webhook does not follow redirects.
 

@@ -105,7 +105,7 @@ Uniform timeframes that compare each campaign to the same period of performance 
 
 Your data is stored in Keen and does not expire for as long as your account is active. The SendGrid Email Analytics integration results in a data warehouse or archive of all of your SendGrid email data. This means your user transaction and email behavior data is stored for as long as you need it.
 
-The report has fixed timeframe options, but that doesn’t mean that we stop storing your data after 14 days. If you need to access older data, see the section below on [Ad-hoc Querying](#-ad-hoc-querying-and-raw-data-access).
+The report has fixed timeframe options, but that doesn’t mean that we stop storing your data after 14 days. If you need to access older data, see the section below on [Ad-hoc Querying](#ad-hoc-querying-and-raw-data-access).
 
 
 ## 	Understanding User Behavior
