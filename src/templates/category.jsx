@@ -9,37 +9,27 @@ import './category.scss';
 
 class CategoryTemplate extends React.Component {
   static sortGroups(groupEdges) {
-    const groupEdgesSorted = [];
-    const groupsWithKey = [];
-
-    // Add slug to category object
-    _.forOwn(GROUPS, (val, key) => {
-      val.slug = key;
-      // groupsWithKey.push(val);
+    const groupsEdgesWithOrder = groupEdges.map((edge) => {
+      const order = GROUPS[edge.fieldValue] ? GROUPS[edge.fieldValue].order : null;
+      return { ...edge, order };
     });
 
-    const groupsOrdered = _.sortBy(GROUPS, ['order', 'name']);
-
-    _.forEach(groupsOrdered, (group, i) => {
-      const match = groupEdges.filter(edge => edge.fieldValue === group.slug);
-
-      if (match.length) {
-        groupEdgesSorted.push(match[0]);
-      }
-    });
-
+    const groupEdgesSorted = _.sortBy(groupsEdgesWithOrder, ['order', 'name']);
     return groupEdgesSorted;
   }
 
   renderGroups() {
     const sortedGroups = CategoryTemplate.sortGroups(this.props.data.docs.group);
 
-    return sortedGroups.map(group => (
-      <div key={group.fieldValue} className="category-container col-md-6">
-        <h2>{GROUPS[group.fieldValue]}</h2>
-        <Group edges={group.edges} />
-      </div>
-    ));
+    return sortedGroups.map((group) => {
+      const title = GROUPS[group.fieldValue] ? GROUPS[group.fieldValue].name : group.fieldValue;
+      return (
+        <div key={group.fieldValue} className="category-container col-md-6">
+          <h2>{title}</h2>
+          <Group edges={group.edges} />
+        </div>
+      );
+    });
   }
 
   render() {

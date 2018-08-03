@@ -4,7 +4,7 @@ seo:
   description: How to integrate with MailPoet
   keywords: deliverability, wordpress, mailpoet, poet
 title: How to integrate with MailPoet
-group: partner
+group: partners
 weight: 0
 layout: page
 zendesk_id: 204730027
@@ -16,9 +16,9 @@ MailPoet is a great way to send mail in WordPress. The best way to get MailPoet 
 
 1. Check off "Third Party"
 
-2. Enter in SMTP hostname as smtp.sendgrid.net 
+2. Enter in SMTP hostname as smtp.sendgrid.net
 
-3. Enter in your SendGrid username and password 
+3. Enter in your SendGrid username and password
 
 4. Check off "Use Web API"
 
