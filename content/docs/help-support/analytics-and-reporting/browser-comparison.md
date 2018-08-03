@@ -17,7 +17,7 @@ Parent accounts will see aggregated stats for their account and all subuser acco
 
 </call-out>
 
-Browser information can help optimize your email sending by showing you how different browser usage affects how your recipients interact with your email. As a result, you may want to compare one browser’s stats to another to see differences or to see if a recent change has made an improvement. The browser comparison tool allows you to do this. You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview.html/#-Statistics-Filters).
+Browser information can help optimize your email sending by showing you how different browser usage affects how your recipients interact with your email. As a result, you may want to compare one browser’s stats to another to see differences or to see if a recent change has made an improvement. The browser comparison tool allows you to do this. You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview.html/#statistics-filters).
 
 ## 	Comparison Overview
  	
@@ -37,6 +37,6 @@ You can also choose to show actual counts or percentages, by clicking the corres
 
 ## 	Additional Resources
  	
-- [Statistics Filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview/#-Statistics-Filters)
+- [Statistics Filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview/#statistics-filters)
 - [Subusers]({{root_url}}/help-support/analytics-and-reporting/subusers/)
 - [Statistics]({{root_url}}/help-support/analytics-and-reporting/stats-overview/)

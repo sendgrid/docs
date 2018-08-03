@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-SendGrid now collects sales tax in 6 jurisdictions: Denver Colorado, Boulder Colorado, Chicago Illinois, Washington state, New York state, and Texas. We assign tax jurisdiction by the billing address you have in our system. If your billing address is in one of these jurisdictions, and you don't have 501(c)(3) tax-exempt status, you will see a line for sales tax [on your invoice]({{root_url}}/help-support/account-and-settings/reading-your-invoice/). For more information about declaring your tax-exempt status, see [Declaring tax-exempt status](#-Declaring-tax-exempt-status).
+SendGrid now collects sales tax in 6 jurisdictions: Denver Colorado, Boulder Colorado, Chicago Illinois, Washington state, New York state, and Texas. We assign tax jurisdiction by the billing address you have in our system. If your billing address is in one of these jurisdictions, and you don't have 501(c)(3) tax-exempt status, you will see a line for sales tax [on your invoice]({{root_url}}/help-support/account-and-settings/reading-your-invoice/). For more information about declaring your tax-exempt status, see [Declaring tax-exempt status](#declaring-tax-exempt-status).
 
 ## 	Declaring tax-exempt status
  	

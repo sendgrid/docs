@@ -87,11 +87,11 @@ For more information on warming up an IP Address, see [Warming up a dedicated IP
 
 ## 	Assigning a Dedicated IP address to a subuser
  	
-Subusers cannot set up and add reverse DNS to their own dedicated IPs, but you can set it up for them and assign it to them. You can add a dedicated IP to a subuser when you [create the subuser]({{root_url}}/help-support/account-and-settings/subusers/#-Create-a-Subuser), or in the [Subuser management](https://app.sendgrid.com/settings/subusers) page.
+Subusers cannot set up and add reverse DNS to their own dedicated IPs, but you can set it up for them and assign it to them. You can add a dedicated IP to a subuser when you [create the subuser]({{root_url}}/help-support/account-and-settings/subusers/#create-a-subuser), or in the [Subuser management](https://app.sendgrid.com/settings/subusers) page.
 
  ### 	Before you begin
  	
-You need to have a [subuser]({{root_url}}/help-support/account-and-settings/subusers/#-Create-a-Subuser), and a [dedicated IP address]({{root_url}}/help-support/account-and-settings/dedicated-ip-addresses/#-Adding-an-additional-Dedicated-IP-Address) you want to assign the subuser.
+You need to have a [subuser]({{root_url}}/help-support/account-and-settings/subusers/#create-a-subuser), and a [dedicated IP address]({{root_url}}/help-support/account-and-settings/dedicated-ip-addresses/#adding-an-additional-dedicated-ip-address) you want to assign the subuser.
 
 *To assign a Dedicated IP to a subuser after the subuser is already created:*
 
