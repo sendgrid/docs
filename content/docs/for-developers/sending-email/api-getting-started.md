@@ -14,13 +14,13 @@ navigation:
 There are several ways you can get started with the SendGrid API
 
 ## 	Prerequisites
- 	
+
 These instructions describe how to send your first email using cURL calls. This is one of many ways to send email with the SendGrid - we also have [PHP](https://github.com/sendgrid/sendgrid-php), [Python](https://github.com/sendgrid/sendgrid-python), [Node.js](https://github.com/sendgrid/sendgrid-nodejs), [Java](https://github.com/sendgrid/sendgrid-java), [C#](https://github.com/sendgrid/sendgrid-csharp), [Go](https://github.com/sendgrid/sendgrid-go), and [Ruby](https://github.com/sendgrid/sendgrid-ruby) libraries.
 
 Before you can start using the API, you need to do the following:
 
 1. Create a SendGrid [account](https://sendgrid.com/pricing/).
-2. Create an [API Key]({{root_url}}/help-support/account-and-settings/api-keys.html).
+2. Create an [API Key]({{root_url}}/help-support/account-and-settings/api-keys/).
 3. Make sure you have [curl](https://curl.haxx.se/) installed on your machine.
 
 <call-out>
@@ -30,18 +30,18 @@ Curl comes standard on Mac operating systems.
 </call-out>
 
 ## 	How to send an API email
- 	
+
  ### 	Build your API call
- 	
+
 Your API call must have the following components:
 
 * A Host. The host for Web API v3 requests is always https://sendgrid.com/v3/
 * An [Authorization Header](https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-authentication#authorization-header)
-* An [API Key]({{root_url}}/help-support/account-and-settings/api-keys.html) within the Authorization Header
+* An [API Key]({{root_url}}/help-support/account-and-settings/api-keys/) within the Authorization Header
 * A Request. When submitting data to a resource via POST or PUT, you must submit your payload in JSON.
 
  ### 	Send your email using the API
- 	
+
 _To Send an email using the SendGrid API:_
 
 ```
@@ -66,11 +66,11 @@ If you have not yet set up [Sender Authentication]({{root_url}}/help-support/sen
 </call-out>
 
  ### 	API Response messages
- 	
+
 All responses are returned in JSON format. We specify this by sending the ``Content-Type`` header. The Web API v3 provides a selection of [response codes](https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-responses#status-codes),[content-type headers](https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-responses#content-type-header), and [pagination](https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-responses#pagination) options to help you interpret the responses to your API requests.
 
 ## 	Next Steps
- 	
+
 For more information on SendGrid and where you can go from here, check out these pages:
 
 - [API Reference]({{root_url}}/api-reference/)

@@ -19,10 +19,10 @@ SSL v3.0 is effectively “dead” as a useful security protocol. Places that st
 
 Subsequent versions of TLS — v1.1 and v1.2 are _significantly more secure_ and fix many vulnerabilities present in SSL v3.0 and TLS v1.0. The newer TLS versions, if properly configured, prevent attacks and provide many stronger ciphers and encryption methods. SendGrid supports TLS v.1.1 and higher.
 
- 
 
-[Read more about configuring ports with SendGrid]({{root_url}}/for-developers/sending-email/getting-started-smtp)
 
- 
+[Read more about configuring ports with SendGrid]({{root_url}}/for-developers/sending-email/getting-started-smtp/)
 
- 
+
+
+

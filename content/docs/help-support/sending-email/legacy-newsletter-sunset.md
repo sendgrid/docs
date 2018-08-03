@@ -19,18 +19,15 @@ Legacy Newsletter has been retired.
 
 </call-out>
 
-Your email marketing needs can now be met by <a href="https://sendgrid.com/solutions/email-marketing/" target="_blank">Marketing Campaigns</a>, which offers a best in class editing experience,
+Your email marketing needs can now be met by [Marketing Campaigns](https://sendgrid.com/solutions/email-marketing/), which offers a best in class editing experience,
 contact segmentation for powerful targeting, and actionable analytics to help you measure and improve your results.
 
-Ready to give Marketing Campaigns a try? You can upload your first <a href="https://app.sendgrid.com/login?redirect_to=%2Fmarketing_campaigns%2Fui%2Fwelcome" target="_blank">2,000 contacts</a>
-for free today.
+Ready to give Marketing Campaigns a try? You can upload your first [2,000 contacts](https://app.sendgrid.com/login?redirect_to=%2Fmarketing_campaigns%2Fui%2Fwelcome) for free today.
 
 <iframe src="https://player.vimeo.com/video/185514373" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ## 	Additional Resources
- 	
-<ul>
-  <li><a href="{{root_url}}/help-support/sending-email/how-to-send-email/" target="_blank">Marketing Campaigns Overview</a></li>
-  <li><a href="{{root_url}}/help-support/managing-contacts/adding-contacts/" target="_blank">Adding Contacts</a></li>
-  <li><a href="{{root_url}}/help-support/managing-contacts/segmenting-your-contacts/" target="_blank">Segmenting your contacts</a></li>
-</ul>
+
+* [Marketing Campaigns Overview]({{root_url}}/help-support/sending-email/how-to-send-email/)
+* [Adding Contacts]({{root_url}}/help-support/managing-contacts/adding-contacts/)
+* [Segmenting your contacts]({{root_url}}/help-support/managing-contacts/segmenting-your-contacts/)

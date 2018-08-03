@@ -7,7 +7,7 @@ navigation:
   show: true
 ---
 
-You can add [categories]({{root_url}}/help-support/analytics-and-reporting/categories/) to the X-SMTPAPI header of the emails you send via SendGrid. This will allow you to track emails based on your own categorization system.
+You can add [categories]({{root_url}}/glossary/categories/) to the X-SMTPAPI header of the emails you send via SendGrid. This will allow you to track emails based on your own categorization system.
 
 <call-out type="warning">
 
