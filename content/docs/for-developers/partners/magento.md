@@ -55,7 +55,7 @@ Learn more about your shoppers’ engagement with performance feedback and real-
 * Flexible API and SMTP setup for for easy transactional email Integration.
 * Key email deliverability features including email authentication, reputation monitoring, dedicated IP addresses, and more.
 * Real-time analytics and reporting including opens, clicks, bounces, unsubscribe tracking, and more.
-* Leverage our step-by-step [documentation](https://sendgrid.com/docs) or get quick help from our [24/7 Support Team](https://support.sendgrid.com).
+* Leverage our step-by-step [documentation](https://sendgrid.com/docs/api-reference/) or get quick help from our [24/7 Support Team](https://support.sendgrid.com).
 * This official extension was built for M2 by SendGrid’s dedicated partner-focused teams for continued management and future development.
 
 ## 	Configuration
@@ -72,6 +72,7 @@ First, log in to your **Magento Dashboard**, then click  **System** in the left 
 
     ![]({{root_url}}/images/magento_3.jpg)
 
+
 3. Emails are automatically tracked and tagged to provide you deliverability and engagement statistics viewable from the **SendGrid Dashboard**. You can also add other [categories]({{root_url}}/help-support/analytics-and-reporting/categories/) for your emails in the field Categories.
 
     ![]({{root_url}}/images/magento_4.png)
@@ -79,6 +80,7 @@ First, log in to your **Magento Dashboard**, then click  **System** in the left 
 4. Set the **template ID** to be used in all your emails on the settings page.
 
     ![]({{root_url}}/images/magento_5.png)
+
 
 5. Next, select the [unsubscribe group]({{root_url}}/help-support/sending-email/unsubscribe-groups/).
 

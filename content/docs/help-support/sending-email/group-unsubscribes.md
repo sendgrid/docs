@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-A group unsubscribe happens when a recipient indicates that they would like to opt out from a specific type of email that you send via the [Unsubscribe Groups link](#-Group-Unsubscribe-Substitution-Tag) from within your email. The list provided here can be filtered by email address or date.
+A group unsubscribe happens when a recipient indicates that they would like to opt out from a specific type of email that you send via the [Unsubscribe Groups link](#group-unsubscribe-substitution-tag) from within your email. The list provided here can be filtered by email address or date.
 
 ## 	Searching Group Unsubscribes by Date
  	
@@ -31,14 +31,14 @@ When you add the `<%asm_group_unsubscribe_url%>` tag to your email, we will repl
 
 Alternatively, you can use the `<%asm_group_unsubscribe_raw_url%>` tag which will be replaced with only the group unsubscribe URL without the hyperlinked text "Unsubscribe From This List".
 
-For more substitution tags, please see our [transactional templates]({{root_url}}/help-support/sending-email/create-and-edit-transactional-templates/#-Adding-unsubscribe-links-to-a-template).
+For more substitution tags, please see our [transactional templates]({{root_url}}/help-support/sending-email/create-and-edit-transactional-templates/#-adding-unsubscribe-links-to-a-template).
 
 ## 	Using the API
  	
-You can manage your Global Unsubscribes via the [Group Suppressions API]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/groups.html).
+You can manage your Global Unsubscribes via the [Group Suppressions API](https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/groups.html).
 
 ## 	Additional Resources
  	
-- [Global unsubscribes vs. Group Unsubscribes]({{root_url}}/help-support/sending-email/index-suppressions/#-Suppressions-vs--Unsubscribes)
+- [Global unsubscribes vs. Group Unsubscribes]({{root_url}}/help-support/sending-email/index-suppressions/#sppressions-vs-unsubscribes)
 - [Global Unsubscribes]({{root_url}}/help-support/sending-email/global-unsubscribes/)
 - [Invalid Emails]({{root_url}}/help-support/sending-email/invalid-emails/)

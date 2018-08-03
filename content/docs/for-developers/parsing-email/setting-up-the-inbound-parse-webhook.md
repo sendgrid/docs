@@ -514,17 +514,17 @@ Content analysis details:   (0.4 points, 5.0 required)
 
 ## 	Other Inbound Parse Documentation
 
-  - [Parse API]({{root_url}}/API_Reference/Web_API_v3/Webhooks/parse.html) -
+  - [Parse API](https://sendgrid.com/docs/API_Reference/Web_API_v3/Webhooks/parse.html) -
     Manage Inbound Parse Webhook settings using the Parse API (Web API v3).
-  - [Parse Settings Subuser]({{root_url}}/API_Reference/Web_API/Customer_Subuser_API/parse_settings.html) -
+  - [Parse Settings Subuser](https://sendgrid.com/docs/API_Reference/Web_API/Customer_Subuser_API/parse_settings.html) -
     Get current Parse settings and create, edit, and delete entries using the Subuser API (Web API v2).
-  - [Reseller API Parse Settings]({{root_url}}/API_Reference/Web_API/Reseller_API/parse_settings.html) -
+  - [Reseller API Parse Settings](https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/parse_settings.html) -
     Get current Parse settings and create, edit, and delete entries using the Reseller API (Web API v2).
-  - [Reseller Customer Subuser Parse Settings]({{root_url}}/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_parse_settings.html) -
+  - [Reseller Customer Subuser Parse Settings](https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_parse_settings.html) -
     Get current Parse settings and create, edit, and delete entries using the Reseller Customer Subuser API (Web API v2).
 
 ## 	Statistics
 
 SendGrid provides [statistics](https://app.sendgrid.com/statistics/parse_webhook) of how many emails parsed over time. You can specify what is displayed on the graph by adjusting the statistics filters.
 
-For more information, please see [Parse Webhook Stats]({{root_url}}/API_Reference/Web_API_v3/Stats/parse.html).
+For more information, please see [Parse Webhook Stats](https://sendgrid.com/docs/API_Reference/Web_API_v3/Stats/parse.html).

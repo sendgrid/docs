@@ -1,9 +1,9 @@
 ---
 seo:
-  title: HTML Rendering - The Do's and Dont's of Cross-Platform Email Design
+  title: HTML Rendering - Cross-Platform Email Design
   description: HTML Rendering - The Do's and Dont's of Cross-Platform Email Design
   keywords: render, message, layout, html, css
-title: HTML Rendering - The Do's and Dont's of Cross-Platform Email Design
+title: Cross-Platform Email Design
 group: building-email
 weight: 0
 layout: page
@@ -14,7 +14,7 @@ navigation:
 
 All Mail clients render HTML/CSS differently, in their own ways and for their own reasons. The differences in what HTML and CSS they support depends on many factors. When rendering HTML and CSS in emails many things impact what the end user is going to see. The mail exchange server, the preprocessor, the browsers, the rendering engines, and more; all affect the way your message is going to be displayed. These vary from client to client; browser to browser; server to server. However, don't start pulling your hair out just yet, because there are some best practices you can utilize so that your emails' coding will stay intact across different clients and platforms.
 
-**LAYOUT**
+## Layout
 
 - **Avoid Using padding or margins**
 
@@ -47,7 +47,7 @@ All Mail clients render HTML/CSS differently, in their own ways and for their ow
   - Mobile devices and different browsers may change the font styling to increase readability
   - ie. comic sans not supported on mobile devices
 
-**BACKGROUNDS**
+## Backgrounds
 
 - **Use the older more basic background HTML tags**
 
@@ -55,7 +55,7 @@ All Mail clients render HTML/CSS differently, in their own ways and for their ow
   - Many browsers and clients experience issues when trying to support compound CSS values so be sure to use individual values such as "background-image" and "background-repeat"
 - **Always offer reset background colors or fall back background colors to defer to if your specific background isn't supported**
 
-**IMAGES**
+## Images 
 
 - **Always avoid PNG images ->** Try to always use either JPEG or GIF images
 - **Always provide image dimensions**
@@ -103,11 +103,11 @@ Due to the way plain text emails are sent ( [RFC 5822](http://www.rfc-editor.org
 
 We use the open-source library [MKDoc-Text-Structured](http://search.cpan.org/~bpostle/MKDoc-Text-Structured-0.83/lib/MKDoc/Text/Structured.pm) to perform the plain-text to HTML conversion. More information about this library and how it works can be found on the [MKDoc-Text-Structured documentation page](http://search.cpan.org/~bpostle/MKDoc-Text-Structured-0.83/lib/MKDoc/Text/Structured.pm).
 
-**VIDEOS**
+## Videos
 
   - Many clients simply cannot support rendering video (other than GIFs) in their emails
   - JavaScript nor the object tag are supported in many clients or browsers and thus can't support video rendering
 
-STILL HAVING ISSUES?  QUESTIONS? CONCERNS?  Just contact our support team and we will be happy to help. We can provide the tools and the knowledge base to help you understand what your mail will look like across platforms and how to gain insight in making them appear consistent across these platforms.
+If you're still having issues contact our support team for help. We can provide the tools and the knowledge base to help you understand what your mail will look like across platforms and how to gain insight in making them appear consistent across these platforms.
 
 

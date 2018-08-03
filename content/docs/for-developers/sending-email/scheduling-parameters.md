@@ -16,7 +16,7 @@ Using the parameters defined below, you can queue batches of emails targeting in
 
 <call-out>
 
-**Emails can be scheduled up to 72 hours in advance.** However, this scheduling constraint does not apply to campaigns sent via [Marketing Campaigns]({{root_url}}/User_Guide/Marketing_Campaigns/index.html).
+**Emails can be scheduled up to 72 hours in advance.** However, this scheduling constraint does not apply to campaigns sent via [Marketing Campaigns]({{root_url}}/help-support/sending-email/how-to-send-email/).
 
 </call-out>
 
@@ -29,7 +29,7 @@ This parameter allows SendGrid to begin processing a customer’s email requests
 
 <call-out>
 
-Cancel Scheduled sends by including a batch ID with your send. For more information, check out [Cancel Scheduled Sends]({{root_url}}/API_Reference/Web_API_v3/cancel_schedule_send.html).
+Cancel Scheduled sends by including a batch ID with your send. For more information, check out [Cancel Scheduled Sends](https://sendgrid.com/docs/API_Reference/Web_API_v3/cancel_schedule_send.html)!
 
 </call-out>
 
@@ -75,7 +75,7 @@ To schedule a send request for individual recipients; use `send_each_at` to send
 }
 ```
 
-To allow for the cancellation of a scheduled send, you must include a `batch_id` with your send. To generate a valid `batch_id`, use the [batch id generation endpoint]({{root_url}}/API_Reference/Web_API_v3/cancel_scheduled_send.html#Cancel-Scheduled-Sends). A `batch_id` is valid for 10 days (864,000 seconds) after generation.
+To allow for the cancellation of a scheduled send, you must include a `batch_id` with your send. To generate a valid `batch_id`, use the [batch id generation endpoint](https://sendgrid.com/docs/API_Reference/Web_API_v3/cancel_scheduled_send.html#Cancel-Scheduled-Sends). A `batch_id` is valid for 10 days (864,000 seconds) after generation.
 
 
 ### Example of including a batch_id

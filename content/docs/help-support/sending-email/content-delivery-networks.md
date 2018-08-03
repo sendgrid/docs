@@ -11,7 +11,7 @@ navigation:
 
 Content Delivery Networks are a great mechanism that you can use to serve up content very quickly and easily across multiple mediums as well as handle security certificates for you.
 
-We suggest [CloudFlare](#-Using-CloudFlare), [Fastly](#-Using-Fastly), or [KeyCDN](#-Using-KeyCDN) when using Content Delivery Networks with SendGrid.
+We suggest [CloudFlare](#using-cloudflare), [Fastly](#using-fastly), or [KeyCDN](#using-keycdn) when using Content Delivery Networks with SendGrid.
 
 
 ## Using CloudFlare
@@ -19,7 +19,7 @@ We suggest [CloudFlare](#-Using-CloudFlare), [Fastly](#-Using-Fastly), or [KeyCD
 
 The following instructions assume you already have a CloudFlare account made, using either a [Full DNS setup](https://support.cloudflare.com/hc/en-us/articles/205195708) or a [CNAME setup](https://support.cloudflare.com/hc/en-us/articles/200168706). You can compare the two different setups [here](https://support.cloudflare.com/hc/en-us/articles/203685674). Note that a CNAME setup is only available to Business or Enterprise level CloudFlare plans.
 
-The instructions also assume that you have set up a valid [branded link](https://sendgrid.com/docs/help-support/sending-email/how-to-set-up-link-branding/) on your account. This step is essential for the following instructions to work.
+The instructions also assume that you have set up a valid [branded link]({{root_url}}/help-support/sending-email/how-to-set-up-link-branding/) on your account. This step is essential for the following instructions to work.
 
 Begin by logging into your CloudFlare account, and navigating to the DNS settings for your domain.
 

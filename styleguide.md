@@ -28,7 +28,7 @@ Where possible, write pages in a "jobs to be done" format. Jobs to be done style
 * Table of contents at the beginning
 * "Additional Resources" section at the end
 * Include sections to achieve the goal, with steps for each task (numbered steps, clear directions, and correct UI workflow)
-	For an example, see [Sending a Campaign](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html)
+	For an example, see [Sending a Campaign]({{root_url}}/help-support/sending-email/how-to-send-email/)
 	
 **Avoid passive voice.** A good way to check if your sentence is in passive or not is to add "by zombies" to the end of it. If zombies end up doing the action, it's passive. 
 
@@ -54,18 +54,17 @@ NO: For more information, click [here].
 
 "Additional Resources" is an h2 section that contains three to five bullet points with links out to other closely related pages. These pages could be SendGrid blogs or docs pages with information about next steps, use cases, or other things a user should consider when they are completing the task on the page. Every page should have an additional resources page, so if it doesn't, feel free to add one!
 
-Here is an example "Additional Resources" section: https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html#-Additional-Resources
+Here is an example "Additional Resources" section: {{root_url}}/help-support/sending-email/editor.html#-Additional-Resources
 
 Here is example formatting:
 
 ```
-{% anchor h2 %}
-Additional Resources
-{% endanchor h2 %}
+## Additional Resources
 
-- [link text]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML)(https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html)
-- [link text]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML)(https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html)
-- [link text]({{root_url}}/User_Guide/Marketing_Campaigns/design_editor.html#-Using-Custom-HTML)(https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/campaign_stats.html)
+* [Sending an Email]({{root_url}}/help-support/sending-email/how-to-send-email/)
+* [A/B Testing]({{root_url}}/help-support/sending-email/a-b-testing/)
+* [Campaign Statistics]({{root_url}}/help-support/analytics-and-reporting/campaign-stats/)
+* [Marketing Templates]({{root_url}}/help-support/sending-email/working-with-marketing-templates/)
 ```
 
 <a name="terminology"></a>

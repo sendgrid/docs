@@ -1,7 +1,4 @@
 ---
-st:
-  published_at: 2016-07-20
-  type: Classroom
 seo:
   title: Safely Test Your Sending Speed
   description: Safely Test Your Sending Speed
@@ -10,7 +7,6 @@ title: Safely Test Your Sending Speed
 group: account-management
 weight: 0
 layout: page
-zendesk_id: 201995663
 navigation:
   show: true
 ---
@@ -24,7 +20,7 @@ We have configured a special domain for any users who are interested in testing 
 </call-out>
 
 
-If you are looking to test your API integration, you can enable the sandbox_mode in the [mail_settings parameters of our Mail Send API](https://sendgrid.com/docs/for-developers/sending-email//sandbox-mode/). **This will allow you to validate each parameter you include, and the structure of your JSON payload, all without actually sending a message.**
+If you are looking to test your API integration, you can enable the sandbox_mode in the [mail_settings parameters of our Mail Send API]({{root_url}}/for-developers/sending-email//sandbox-mode/). **This will allow you to validate each parameter you include, and the structure of your JSON payload, all without actually sending a message.**
 
 <call-out>
 

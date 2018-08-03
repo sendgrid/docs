@@ -19,12 +19,12 @@ Following are the settings that can be specified in the filters section of the X
 
 </call-out>
 
-For more information on the utility of these settings, please check out the [Settings]({{root_url}}/User_Guide/Settings/) section.
+For more information on the utility of these settings, please check out the [Settings]({{root_url}}/help-support/account-and-settings/account/) section.
 
 <call-out>
 
 Some Settings are not listed here, because they cannot be defined on a per-message basis. To update these other Settings, please refer to the
-[Web API Filter Settings]({{root_url}}/API_Reference/Web_API/filter_settings.html) commands.
+[Web API Filter Settings](https://sendgrid.com/docs/API_Reference/Web_API/filter_settings.html) commands.
 
 </call-out>
 
@@ -343,7 +343,7 @@ If you don't use 'replace' this will insert an <code>&lt;img&gt;</code> tag at t
 <tr>
 <td>url</td>
 <td><code>url</code></td>
-<td>an optional url to POST the email and a copy of the report to. Refer to the <a href="{{root_url}}/User_Guide/Settings/mail.html#-Spam-Checker">Spam Checker documentation</a> for POST details.</td>
+<td>an optional url to POST the email and a copy of the report to. Refer to the <a href="{{root_url}}/help-support/account-and-settings/mail/#-Spam-Checker">Spam Checker documentation</a> for POST details.</td>
 </tr>
 </tbody>
 </table>
@@ -423,12 +423,12 @@ The `landing` argument cannot be used in SMTPAPI. It can only be setup via the U
 
 <call-out>
 
-This setting refers to SendGrid's <a href="{{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/index.html">transactional templates</a>. SendGrid supports versioning, and the ability to create multiple transactional templates. Previously, we had a Template App, which is now referred to as the <a href="#template">Legacy Template App</a>.
+This setting refers to SendGrid's <a href="https://sendgrid.com/docs/API_Reference/Web_API_v3/Transactional_Templates/index.html">transactional templates</a>. SendGrid supports versioning, and the ability to create multiple transactional templates. Previously, we had a Template App, which is now referred to as the <a href="#template">Legacy Template App</a>.
 
 </call-out>
 
 
-Uses a [transactional template]({{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/index.html) when sending an email.
+Uses a [transactional template](https://sendgrid.com/docs/API_Reference/Web_API_v3/Transactional_Templates/index.html) when sending an email.
 
 <table class="table table-striped table-bordered">
 <tbody>

@@ -1,7 +1,4 @@
 ---
-st:
-  published_at: 2017-03-02
-  type: Classroom
 seo:
   title: Whitelist
   description: Whitelisting refers to granting IPs access to a server or system.

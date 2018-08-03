@@ -97,7 +97,6 @@ Use this to permanently delete your recipients from all of your contact lists an
  1. Select the check box to confirm that you want to delete all contacts and then click **Delete**.
 
  ### 	Additional Resources
-
 - [Segmentation]({{root_url}}/help-support/managing-contacts/segmenting-your-contacts/)
 - [Unsubscribe Groups]({{root_url}}/help-support/sending-email/index-suppressions/)
 - [Custom Fields]({{root_url}}/help-support/sending-email/custom-fields/)

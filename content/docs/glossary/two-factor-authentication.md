@@ -14,7 +14,5 @@ Two-Factor Authentication (also known as: 2FA, two step verification, or TFA) is
 
 With SendGrid, you can turn this security feature on in your [Account Settings]({{root_url}}/help-support/account-and-settings/two-factor-authentication/).
 
-Related Articles:
-
+## Additional Resources
 * [Two-Factor Authentication FAQ]({{root_url}}/help-support/account-and-settings/two-factor-authentication/)
-* [SendGrid's password requirements]({{root_url}}{{site.password_requirements}})

@@ -17,7 +17,7 @@ Our Support agents may sometimes ask you to give us the raw source or headers of
 
  
 
-**Gmail** :
+**Gmail**
 
 ![]({{root_url}}/images/headersgif2.gif)
 
@@ -27,7 +27,7 @@ Our Support agents may sometimes ask you to give us the raw source or headers of
 
  
 
-**Thunderbird** :
+**Thunderbird**
 
 ![]({{root_url}}/images/TbirdheadersGIF.gif)
 
@@ -37,7 +37,7 @@ Our Support agents may sometimes ask you to give us the raw source or headers of
 
  
 
-**Outlook: **
+**Outlook**
 
 ![]({{root_url}}/images/Outlookheaders.gif)
 
@@ -45,7 +45,7 @@ Our Support agents may sometimes ask you to give us the raw source or headers of
 
  
 
-**Yahoo:**
+**Yahoo**
 
 Look for the option called "View Raw Message" under the More menu (displayed as 3 dots).
 

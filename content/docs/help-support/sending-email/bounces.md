@@ -23,7 +23,7 @@ In the top right corner, you will see a calendar icon. Click this and choose the
 
 ## 	Download Bounces as CSV
  	
-You can download your Bounce list as a CSV by clicking the gear icon at the top of the page and selecting “Download CSV”. The file will download in your browser right away.
+You can download your Bounce list as a CSV by clicking the gear icon at the top of the page and selecting **Download CSV**. The file will download in your browser right away.
 
 ## 	Removing Recipients From The List
  	
@@ -31,6 +31,5 @@ When you select the checkboxes next to the recipient names or select all, using 
 
 ## 	Additional Resources
  	
-- [Set up Bounce Forwarding to go to the email’s from address]({{site.support_url}}/hc/en-us/articles/200181478)
 - [Global Unsubscribes]({{root_url}}/help-support/sending-email/global-unsubscribes/)
 - [Group Unsubscribes]({{site.app_url}}/help-support/sending-email/group-unsubscribes/)

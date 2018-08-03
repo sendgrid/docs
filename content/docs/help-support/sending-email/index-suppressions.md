@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 100
-title: Overview
+title: Suppressions Overview
 group: tracking
 seo:
   title: SendGrid Suppressions Overview
@@ -40,21 +40,20 @@ The Subscription Tracking setting also has a number of options for customization
 
 SendGrid automatically suppresses emails sent to users for a variety of reasons in order to aid our customers in having the best possible reputation they can have by attempting to prevent unwanted mail.
 
-
-
 **[Blocks]({{root_url}}/help-support/sending-email/blocks/)** - The recipient's email server rejects the message for a reason related to the message, not the recipient address. This may be due to your Sending IP, or the message content. Since these are message-specific issues, future messages to these addresses are *not* suppressed.
 
 **[Bounces]({{root_url}}/help-support/sending-email/bounces/)** - The recipient’s email server rejects the message, or sends the message back to SendGrid, due to an issue with the recipient address.
 
 **[Invalid Emails]({{root_url}}/help-support/sending-email/invalid-emails/)** - The recipient address does not exist at the mail server you sent to.
 
-**[Spam Reports({{root_url}}/help-support/analytics-and-reporting/spam-reports/)** - The recipient marks your email as spam.
+**[Spam Reports]({{root_url}}/help-support/analytics-and-reporting/spam-reports/)** -  The recipient marks your email as spam.
 
-**[Global Unsubscribes]({{root_url}}/help-support/sending-email/global-unsubscribes/)** - When a user unsubscribes from everything you might email them.
+**[Global Unsubscribes]({{root_url}}//help-support/sending-email/global-unsubscribes/)** - When a user unsubscribes from everything you might email them.
 
 **[Group Unsubscribes]({{root_url}}/help-support/sending-email/group-unsubscribes/)** - When a user unsubscribes from a specific group of your emails.
 
-## 	Additional Resources
 
-* [Unsubscribe Groups]({{root_url}}/help-support/sending-email/unsubscribe-groups/)
-* [Blocks]({{root_url}}/help-support/sending-email/blocks/)
+## 	Additional resources
+ 	
+- [Unsubscribe Groups]({{root_url}}/help-support/sending-email/unsubscribe-groups/)
+- [Create and Manage Unsubscribe Groups]({{root_url}}/help-support/sending-email/create-and-manage-unsubscribe-groups/)

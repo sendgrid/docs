@@ -12,14 +12,14 @@ navigation:
   show: true
 ---
 
-# What does it do?
+## What does it do?
 
 - Automatically add an unsubscribe link to the bottom of your emails.
 - Customize the unsubscribe link that is added automatically
 - Create a replacement tag that will allow you to put the unsubscribe link anywhere you would like using HTML.
 - Automatically incorporates the [list-unsubscribe](https://sendgrid.com/blog/list-unsubscribe/) header in your emails.
 
-## How do I enable Subscription Tracking? ** **
+## How do I enable Subscription Tracking?
 
 From your Account Overview page, visit the sidebar menu and click “Settings”. From there, select "Tracking". Locate the Subscription Tracking option and click on the arrow on the right side and click on the "Off/On" button.
 
