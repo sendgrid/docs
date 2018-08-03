@@ -18,7 +18,7 @@ Parent accounts will see aggregated stats for their account and all subuser acco
 
 </call-out>
 
-Mailbox provider information can help optimize your email sending by showing you how different mailbox providers affect how your recipients interact with your email. As a result, you may want to compare one mailbox provider to another to see differences or to see if a recent change has made an improvement. The mailbox provider comparison tool allows you to do this. You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview.html#-Statistics-Filters).
+Mailbox provider information can help optimize your email sending by showing you how different mailbox providers affect how your recipients interact with your email. As a result, you may want to compare one mailbox provider to another to see differences or to see if a recent change has made an improvement. The mailbox provider comparison tool allows you to do this. You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview.html#statistics-filters).
 
 ## 	Comparison Overview
  	
@@ -39,5 +39,5 @@ You can also choose to show actual counts or percentages, by clicking the corres
 ## 	Additional Resources
  	
 - [Mailbox Provider Stats]({{site.app_url}}/statistics/mailbox_provider)
-- [Statistics Filters]({{root_url}}//help-support/analytics-and-reporting/stats-overview/#-Statistics-Filters)
+- [Statistics Filters]({{root_url}}//help-support/analytics-and-reporting/stats-overview/#statistics-filters)
 - [Account Settings]({{root_url}}/help-support/account-and-settings/account/)

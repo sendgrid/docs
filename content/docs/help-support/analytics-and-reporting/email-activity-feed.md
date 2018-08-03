@@ -103,7 +103,7 @@ The email address field filters with an approximate, or fuzzy search. The date f
 
 <call-out>
 
-To filter by event type, like in the legacy Email Activity Feed, use [Advanced search](#-Advanced-search), and select Event Type, and choose an event type to filter by.
+To filter by event type, like in the legacy Email Activity Feed, use [Advanced search](#advanced-search), and select Event Type, and choose an event type to filter by.
 
 </call-out>
 
@@ -171,5 +171,5 @@ or
 - [Email Activity API](https://sendgrid.api-docs.io/v3.0/email-activity/filter-all-messages)
 - [Legacy Email Activity]({{root_url}}/help-support/analytics-and-reporting/email-activity/)
 - [Getting Started with the Email Activity API]({{root_url}}/for-developers/sending-email/getting-started-email-activity-api/)
-- [Building compound Email Activity queries]({{root_url}}/for-developers/sending-email/getting-started-email-activity-api/#-Creating-compound-queries)
+- [Building compound Email Activity queries]({{root_url}}/for-developers/sending-email/getting-started-email-activity-api/#creating-compound-queries)
 

@@ -17,7 +17,7 @@ The actual statistics included vary depending upon your [account settings]({{roo
 
 In order to see statistics for a subuser, select the subuser and the page will show you both a graph and a table of email statistics.
 
-You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview/#-Statistics-Filters).
+You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview/#statistics-filters).
 
 ## 	Figures
  	
@@ -29,4 +29,4 @@ This table will refresh with new or adjusted data based on the various filters a
  	
 - [Subuser Stats](https://sendgrid.com/docs/API_Reference/Web_API_v3/Stats/subusers/)
 - [Email Activity]({{root_url}}//help-support/analytics-and-reporting/email-activity-feed/)
-- [Statistics Filters]({{root_url}}//help-support/analytics-and-reporting/stats-overview/#-Statistics-Filters)
+- [Statistics Filters]({{root_url}}//help-support/analytics-and-reporting/stats-overview/#statistics-filters)

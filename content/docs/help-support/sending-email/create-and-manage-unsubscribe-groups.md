@@ -61,7 +61,7 @@ To view the unsubscribe preferences page, select the action menu next to an Unsu
 
 ## Managing Unsubscribe Groups
 
-From the UI, you can edit Unsubscribe Groups or download a list of recipients that have unsubscribed from your emails. For more information on managing unsubscribes, see the SendGrid [Suppressions Overview]({{root_url}}/help-support/sending-email/index-suppressions/#-Managing-Unsubscribes)
+From the UI, you can edit Unsubscribe Groups or download a list of recipients that have unsubscribed from your emails. For more information on managing unsubscribes, see the SendGrid [Suppressions Overview]({{root_url}}/help-support/sending-email/index-suppressions/#managing-unsubscribes)
 
 
 ### Exporting an Unsubscribe Group List

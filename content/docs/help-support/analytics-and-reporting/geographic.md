@@ -21,7 +21,7 @@ The geographical report shows a map of where your emails are being opened and cl
 
 ## 	Top 5
  	
-The top 5 section will show you the most engaged geographical areas based on the selected metric. By default, clicks are select, but you can change that by choosing a metric from the button at the top of this section. You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview/#-Statistics-Filters).
+The top 5 section will show you the most engaged geographical areas based on the selected metric. By default, clicks are select, but you can change that by choosing a metric from the button at the top of this section. You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview/#statistics-filters).
 
 ## 	Activity Map
  	
@@ -37,6 +37,6 @@ To see only the figures from a specific geographic area, change the Activity Map
 
 ## 	Additional Resources
  	
-- [Statistics Filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview/#-Statistics-Filters)
+- [Statistics Filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview/#statistics-filters)
 - [Global Stats](https://sendgrid.com/docs/API_Reference/Web_API_v3/Stats/global.html)
 - [Timezones]({{root_url}}/glossary/timezone/)

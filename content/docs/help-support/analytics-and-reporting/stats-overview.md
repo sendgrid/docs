@@ -24,11 +24,6 @@ Tracking your emails is an important part of being a good sender and learning ab
 We have broken up stats in specific ways so that you can get at-a-glance data, as well as allowing you to get into the details of how your email is being used.
 </p>
 
-- [Available Email analytics-and-reporting Reports](#-Available-Email-analytics-and-reporting-Reports)
-- [Metrics](#-Metrics)
-- [analytics-and-reporting_Filter](#-analytics-and-reporting-Filters)
-- [Top_5_Categories](#-Top-5-Categories)
-
 ## 	Available Email analytics-and-reporting Reports
  	
 <call-out>

@@ -343,7 +343,7 @@ If you don't use 'replace' this will insert an <code>&lt;img&gt;</code> tag at t
 <tr>
 <td>url</td>
 <td><code>url</code></td>
-<td>an optional url to POST the email and a copy of the report to. Refer to the <a href="{{root_url}}/help-support/account-and-settings/mail/#-Spam-Checker">Spam Checker documentation</a> for POST details.</td>
+<td>an optional url to POST the email and a copy of the report to. Refer to the <a href="{{root_url}}/help-support/account-and-settings/mail/#spam-checker">Spam Checker documentation</a> for POST details.</td>
 </tr>
 </tbody>
 </table>

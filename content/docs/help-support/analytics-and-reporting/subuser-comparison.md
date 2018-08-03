@@ -23,7 +23,7 @@ On all other stats pages, your subuser stats are “rolled up” into the parent
 
 </call-out>
 
-Subusers can help organize your email sending an analytics by enabling you to segment by a different sender and IP address. As a result, you may want to compare one subuser to another. The category comparison tool allows you to do this. You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview/#-Statistics-Filters).
+Subusers can help organize your email sending an analytics by enabling you to segment by a different sender and IP address. As a result, you may want to compare one subuser to another. The category comparison tool allows you to do this. You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview/#statistics-filters).
 
 ## 	Select Your Subusers
  	
@@ -57,4 +57,4 @@ You can also choose to show actual counts or percentages, by clicking the corres
  	
 - [Subuser Stats](https://sendgrid.com/docs/API_Reference/Web_API_v3/Stats/subusers/)
 - [Email Activity]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed/)
-- [Statistics Filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview/#-Statistics-Filters)
+- [Statistics Filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview/#statistics-filters)

@@ -54,11 +54,7 @@ NO: For more information, click [here].
 
 "Additional Resources" is an h2 section that contains three to five bullet points with links out to other closely related pages. These pages could be SendGrid blogs or docs pages with information about next steps, use cases, or other things a user should consider when they are completing the task on the page. Every page should have an additional resources page, so if it doesn't, feel free to add one!
 
-<<<<<<< HEAD
 Here is an example "Additional Resources" section: https://sendgrid.com/docs/help-support/sending-email/editor.html#additional-resources
-=======
-Here is an example "Additional Resources" section: {{root_url}}/help-support/sending-email/editor.html#-Additional-Resources
->>>>>>> upstream/a-new-hope-episode-iv
 
 Here is example formatting:
 

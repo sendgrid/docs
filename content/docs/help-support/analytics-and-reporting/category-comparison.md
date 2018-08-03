@@ -55,4 +55,4 @@ You can also choose to show actual counts or percentages, by clicking the corres
 
 - [Subusers]({{root_url}}/help-support/account-and-settings/subusers.html)
 - [Using Categories with the SMTP API]({{root_url}}/for-developers/sending-email/categories/))
-- [Statistics Filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview.html#-Statistics-Filters)
+- [Statistics Filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview.html#statistics-filters)

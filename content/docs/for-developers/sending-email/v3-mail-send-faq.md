@@ -27,11 +27,11 @@ The v3 Mail Send endpoint offers many improvements over the v2 endpoint, and we 
 
 ## 	How do I migrate from V2 to V3?
 
-If you are currently using the v2 Mail Send endpoint, we have provided some [helpful instructions]({{root_url}}/for-developers/sending-email/migrating-from-v2-to-v3-mail-send/) on how to migrate from sending mail over the Web API v2 to the Web API v3.
+If you are currently using the v2 Mail Send endpoint, we have provided some [helpful instructions]({{root_url}}/for-developers/sending-email/migrating-from-v2-to-v3-mail-send/integrating-with-the-smtp-api/) on how to migrate from sending mail over the Web API v2 to the Web API v3.
 
 ## 	What’s the difference between sending mail via SMTP and the Web API?
 
-Sending email via the [SMTP-Relay]({{root_url}}/Integrate/index.html#-SMTP-Relay) is a quick and simple way to integrate your existing SMTP code with SendGrid’s email functionality. All you have to do is modify your SMTP configuration to point to SendGrid’s SMTP server and your email will be routed through SendGrid’s SMTP-Relay. You may then specify special instructions for how you would like SendGrid to handle your email by means of the [X-SMTPAPI header]({{root_url}}/for-developers/sending-email/building-an-smtp-email/).
+Sending email via the [SMTP-Relay]({{root_url}}/for-developers/sending-email/) is a quick and simple way to integrate your existing SMTP code with SendGrid’s email functionality. All you have to do is modify your SMTP configuration to point to SendGrid’s SMTP server and your email will be routed through SendGrid’s SMTP-Relay. You may then specify special instructions for how you would like SendGrid to handle your email by means of the [X-SMTPAPI header]({{root_url}}/for-developers/sending-email/building-an-smtp-email/).
 
 The Web API, on the other hand, requires you to make an HTTP request to an endpoint in SendGrid’s API. Previously, SendGrid has only offered a mail sending endpoint in the Web API v2, but now you can use the RESTful Web API v3 to send your email. Simply make an `HTTP POST` request to `https://api.sendgrid.com/v3/mail/send` with the data for your email included in a JSON payload. For more information, please visit our [v3 Mail Send documentation](https://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/index.html).
 

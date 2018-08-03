@@ -42,10 +42,10 @@ When you are viewing a contact, click any of the Edit buttons to edit the contac
 
 Sending to a well-managed address list can drastically help improve your delivery. We have put together some simple steps and guidelines that will improve any senders list.
 
-* [Suppressions](#-Identifying-Suppressions)
-* [Delete unusable contacts](#-Delete-unusable-contacts)
-* [Delete a specific contact](#-Delete-a-specific-contact)
-* [Delete all contacts](#-Delete-all-contacts)
+* [Suppressions](#identifying-suppressions)
+* [Delete unusable contacts](#delete-unusable-contacts)
+* [Delete a specific contact](#delete-a-specific-contact)
+* [Delete all contacts](#delete-all-contacts)
 
  ### 	Identifying Suppressions
 
