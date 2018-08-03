@@ -44,6 +44,10 @@ $card-gutter: 40px;
   border: 0;
   box-shadow: 0 5px 8px 0 rgba(118, 180, 238, 0.1);
 
+  &:hover, &:focus {
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  }
+
   &::placeholder {
     color: $slate;
   }

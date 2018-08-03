@@ -94,6 +94,10 @@ $aside-width: 300px;
   color: $slate-80;
 
   @include colfax(400);
+
+  &.active {
+    @include colfax(600);
+  }
 }
 
 .aside-nav__title {
@@ -109,6 +113,7 @@ aside a.active {
   border-left: 3px solid $sg-blue;
   padding-left: 5px;
   color: $slate-80;
+  @include colfax(600);
 }
 
 // custom Markdown components
