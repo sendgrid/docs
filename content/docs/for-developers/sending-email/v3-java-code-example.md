@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: Java
+title: v3 API Java Code Example
 group: api-v3
 navigation:
   show: true

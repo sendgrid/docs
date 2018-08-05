@@ -26,8 +26,8 @@ Now that you've integrated, learn to [build SMTP email]({{root_url}}/for-develop
 
  ### 	SMTP Ports
 
-- For an unencrypted or a [TLS connections]({{root_url}}/help-support/sending-email/ssl-vs-tls.html), use port `25`, `2525`, or `587`.
-- For a [SSL connections]({{root_url}}/help-support/sending-email/tls.html), use port `465`.
+- For an unencrypted or a [TLS connections]({{root_url}}/help-support/sending-email/ssl-vs-tls/), use port `25`, `2525`, or `587`.
+- For a [SSL connections]({{root_url}}/help-support/sending-email/tls/), use port `465`.
 
  ### 	Rate limits
 

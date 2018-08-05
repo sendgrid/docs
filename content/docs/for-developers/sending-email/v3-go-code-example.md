@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: Go
+title: v3 API Go Code Example
 group: api-v3
 navigation:
   show: true

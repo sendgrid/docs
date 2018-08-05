@@ -196,5 +196,5 @@ You can enable access for SendGrid settings to each subsite in the Multisite Set
 If you have already installed the SendGrid plugin in a multisite environment and you update to any version **after** 1.9.0 you may need to re-configure your plugin.
 
 ## 	Related content
- 	* [SendGrid's WordPress Subscription Widget]({{root_url}}/for-developers/managing-contacts/wordpress-subscription-widget.html)
+ 	* [SendGrid's WordPress Subscription Widget]({{root_url}}/for-developers/managing-contacts/wordpress-subscription-widget/)
 * [SendGrid's WordPress Integration FAQ]({{root_url}}/for-developers/sending-email/wordpress-faq/)

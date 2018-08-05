@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: Ruby
+title: v3 API Ruby Code Example
 group: api-v3
 navigation:
   show: true

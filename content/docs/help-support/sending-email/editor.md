@@ -65,7 +65,7 @@ You can only edit unsent campaigns.
 
 </call-out>
 
-You can select a Blank Template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates]({{root_url}}/help-support/sending-email/create-and-edit-transactional-templates.html).
+You can select a Blank Template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates]({{root_url}}/help-support/sending-email/create-and-edit-transactional-templates/).
 
 <call-out>
 
@@ -211,7 +211,7 @@ SendGrid’s flexible design editor allows you to build your templates and campa
 ![]({{root_url}}/img/campaigns_dashboard_categories_search.png)
 
 3. Select the template that you want to use for your campaign.
-<br>You can select a Blank Template, a custom template that you have already created, or one of SendGrid’s pre-built templates. For more information, see [Working With Marketing Templates]({{root_url}}/help-support/sending-email/working-with-marketing-templates.html)
+<br>You can select a Blank Template, a custom template that you have already created, or one of SendGrid’s pre-built templates. For more information, see [Working With Marketing Templates]({{root_url}}/help-support/sending-email/working-with-marketing-templates/)
 4. Select **Design Editor**, and then click **Continue**.
 <br>The Design Editor opens.
 

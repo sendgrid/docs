@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: Perl
+title: SMTP Perl Code Example
 group: smtp
 navigation:
   show: true

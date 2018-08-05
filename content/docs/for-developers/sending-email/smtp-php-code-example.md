@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: PHP
+title: SMTP PHP Code Example
 group: smtp
 navigation:
   show: true
