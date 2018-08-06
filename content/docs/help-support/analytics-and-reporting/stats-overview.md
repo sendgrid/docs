@@ -81,38 +81,35 @@ On the available statistics reports, you will find that your deliverability is b
 
 **[Spam Reports]({{{{root_url}}/glossary/spam-reports/)** - The number of recipients who marked your email as spam.
 
-**[Opens]({{root_url}}{{root_url}}/glossary/opens/) - The number of unique recipients who opened your emails.
-</p><p>
-  <strong><a href="{{root_url}}/glossary/clicks/">Unique Clicks</a></strong> - The number of unique recipients who clicked links in your emails.
-</p><p>
-  <strong>Unsubscribes</strong> - The number of recipients who unsubscribed from your emails.
-</p><p>
-  <strong>Unsubscribe Drops</strong> - The number of emails dropped by SendGrid because the recipient unsubscribed from your emails.
-</p>
+**[Opens]({{root_url}}{{root_url}}/glossary/opens/)** - The number of unique recipients who opened your emails.
+
+**[Unique Clicks]({{root_url}}/glossary/clicks/)** - The number of unique recipients who clicked links in your emails.
+
+**Unsubscribes** - The number of recipients who unsubscribed from your emails.
+
+**Unsubscribe Drops** - The number of emails dropped by SendGrid because the recipient unsubscribed from your emails.
+
 
 ## Filters
- 	<p>
-These filters are available on most of the statistics pages. They will help you see your stats in more or less details, depending on your needs.
-</p>
 
-<p>
-  <strong>Metric Filters</strong> - You can select all of the metrics or only some of them.
-</p><p>
-  <strong>Date Filters</strong> - To display stats between specific dates, choose your date range.
-</p><p>
-  <strong>Grouping Filter</strong> - Display stats grouped by day, week, or month.
-</p>
+These filters are available on most of the statistics pages. They will help you see your stats in more or less details, depending on your needs.
+
+
+**Metric Filters** - You can select all of the metrics or only some of them.
+
+**Date Filters** - To display stats between specific dates, choose your date range.
+
+**Grouping Filter** - Display stats grouped by day, week, or month.
+
 
 ## 	Top 5 Categories
  	
-<p>
   The Top 5 Categories report allows you to see your top 5 most used categories by number of requests. Switch your view by actual number of emails or percentage using the toggle at the top right of this section.
-</p>
+
 
 ## 	Additional Resources
  	
-<ul>
-  <li><a href="https://sendgrid.com/docs/API_Reference/Web_API_v3/Stats/index/" target="_blank">Stats Overview</a></li>
-  <li><a href="https://sendgrid.com/docs/API_Reference/Web_API/Statistics/index/" target="_blank">General analytics-and-reporting</a></li>
-  <li><a href="https://sendgrid.com/docs/API_Reference/Web_API/Statistics/statistics_advanced/" target="_blank">Advanced analytics-and-reporting</a></li>
-</ul>
+* [API Stats Overview]({{root_url}}/API_Reference/Web_API_v3/Stats/index/)
+
+* [Advanced Analytics and Reporting({{root_url}}/API_Reference/Web_API/Statistics/statistics_advanced/)
+
