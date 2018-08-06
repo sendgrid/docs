@@ -88,7 +88,6 @@ To change your plan, click **Change Plan** next to your [billing details](https:
 
 ## 	Cancel your account
 
-We are truly sorry to see you go. Please don’t forget that [we have 24/7 support]({{site.support_url}}) and would love the opportunity to help and chat about why you’re leaving if we can.
 We are truly sorry to see you go. Please don’t forget that [we have 24/7 support](https://support.sendgrid.com) and would love the opportunity to help and chat about why you’re leaving if we can.
 
 To cancel, go the bottom of your billing details page, click **Cancel**, and follow the prompts.
@@ -101,6 +100,5 @@ Canceled accounts are not deleted. Accounts are changed to our [free](https://se
 
 ## 	Additional Resources
  	
-- [SendGrid Pricing]({{site.site_url}}/pricing/)
 - [SendGrid Pricing](https://sendgrid.com/pricing/)
 - [Reading your invoice]({{root_url}}/help-support/account-and-settings/reading-your-invoice/)

@@ -139,7 +139,7 @@ The download link for your CSV export will be valid for 24 hours.
 </call-out>
 
 
- ## 	Additional Resources
+ ##	Additional Resources
   	
 - [Contacts]({{root_url}}/help-support/managing-contacts/adding-contacts/)
 - [Custom Fields]({{root_url}}/help-support/managing-contacts/custom-fields/)

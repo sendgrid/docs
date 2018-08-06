@@ -14,6 +14,7 @@ seo:
 
 ## 	Before you Begin
  	
+Before you begin, go to your SendGrid [account settings](https://app.sendgrid.com/user/account) to verify that your timezone and account email address are correct. Verifying your account information ensures that when you upload contacts, you receive notifications and that we deliver scheduled emails at the correct time.
 
 ## 	Adding a Sender
  	

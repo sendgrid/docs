@@ -28,5 +28,4 @@ SMTP is important because it provides a common set of guidelines for messages to
 
 While sending one email is fairly simple, for larger organizations that send thousands or millions of [marketing](https://sendgrid.com/email-marketing) or [transactional email](https://sendgrid.com/transactional-email), the SMTP process can get much more complicated, requiring [SMTP relay service](https://sendgrid.com/blog/smtp-relay-service-basics/) and custom headers for multiple recipients.
 
-If you have any SMTP questions, or if you want to know more about how SendGrid uses SMTP to send billions of email every month, contact the [SendGrid support]({{site.support_url}}/hc/en-us) team today.
 If you have any SMTP questions, or if you want to know more about how SendGrid uses SMTP to send billions of email every month, contact the [SendGrid support](https://support.sendgrid.com/hc/en-us) team today.
