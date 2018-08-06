@@ -32,4 +32,6 @@ When you select the checkboxes next to the recipient names or select all, using 
 ## 	Additional Resources
  	
 - [Global Unsubscribes]({{root_url}}/help-support/sending-email/global-unsubscribes/)
-- [Group Unsubscribes](https://app.sendgrid.com/help-support/sending-email/group-unsubscribes/)
+
+- [Group Unsubscribes]({{root_url}}/help-support/sending-email/group-unsubscribes/)
+

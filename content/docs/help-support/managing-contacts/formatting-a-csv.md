@@ -30,15 +30,15 @@ You can also include [custom fields]({{root_url}}/help-support/sending-email/cus
 
 ### Header Row
 
+
 The first row of your CSV must be a header row containing labels identifying each column. Headers must only use letters, numbers, and underscores. If you add custom field data to your CSV, you can save some time when uploading by naming the columns the same as the custom fields you have previously defined.
 
 SendGrid identifies individual contacts by their email address, so "email" must be one of the CSV headers. If you do not include the email column, SendGrid will not add any information to your contact database or list. Rows in your CSV without an email address in the email column will automatically fail, but will not cause the entire upload to fail.
 
-### Character Encoding
-
 If your contacts list has non-English characters, please make sure that you're using a CSV file that is UTF-8 encoded.
 
-###  Not all addresses populate in UI
+###  Removing invalid and duplicate addresses
+
 SendGrid removes duplicate and invalid email addresses (including email addresses with special characters) from your list during upload, so the number of contacts can potentially change between your CSV and your Marketing Campaigns list.
 
 ###  Numbers and Text
@@ -53,7 +53,7 @@ Make sure that you don’t have text fields that look like numbers. Text that lo
 
 Header fields can be blank in your CSV, but must be named and have their type defined later during the upload process.
 
-### 	Date Formatting
+## 	Date Formatting
 
 Properly format any dates in your CSV. If you created your CSV with Excel and it is not displaying properly, force the date format before exporting to CSV. Use one of the following date formats: `MM/DD/YYYY, MM/D/YYYY, M/D/YYYY, or M/DD/YYYY`
 
@@ -102,7 +102,7 @@ Number fields can include monetary values without the currency symbols. For exam
 
 ![]({{root_url}}/img/listupload_table.png)
 
-### Additional Resources
+ ## 	Additional Resources
 
 - [Contacts API](https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html)
 - [Segmenting your Contacts]({{root_url}}/help-support/managing-contacts/managing-contact-list/)

@@ -44,7 +44,7 @@ Email templates are table-based HTML with inline or header styles, because some 
 
 *To add a template:*
 
-1. Open a new template in the Code Editor or [Design Editor]({{root_url}}/help-support/sending-email/editor/#the-design-editor) by clicking **Actions** and selecting **New Version**.
+1. Open a new template in the [Code Editor]({{root_url}}/help-support/sending-email/editor/#the-code-editor) or [Design Editor]({{root_url}}/help-support/sending-email/editor/#the-design-editor) by clicking **Actions** and selecting **New Version**.
 
 1. If you selected the Code Editor, copy and paste your HTML code into the code editor.
 <br></br>If you paste in an email template, it is likely that you will overwrite the default basic HTML provided in the code editor. If you selected the Design Editor, use the WYSIWYG editor with drag & drop modules to create your email template.
@@ -72,7 +72,7 @@ Any Substitution tags will not be populated in this test, but you will be able t
 
 ## 	Managing templates
  	
-From the main template view on each template group, you will see an actions menu. From this menu, you can choose to edit the name of your template, add a version, preview and test, or delete the template. You will also see a gear icon for each template version. Clicking this presents a menu that allows you to preview and test, edit, duplicate, and delete the template version. You can also use the preview function to send a test.
+From the main template view on each template group, you will see an actions menu. From this menu, you can choose to edit the name of your template, add a version, preview and test, or delete the template. You will also see an action menu for each template version. Clicking this presents a menu that allows you to preview and test, edit, duplicate, and delete the template version. You can also use the preview function to send a test.
 
 <call-out>
 

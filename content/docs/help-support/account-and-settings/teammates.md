@@ -16,7 +16,7 @@ Teammates allows multiple users, or teammates, to send email from a single SendG
  	
 _To invite a Teammate to your account:_
 
-1. Navigate to **Settings**, and click on **Teammates** in the sidebar.
+1. Navigate to **Settings**, and click on **Teammates**.
 <br>This is where you can see the list of all of your current teammates with their details: username, email address, first name, and last name.
 2. To add a new Teammate, click **Add Teammate**.
 3. Enter the Teammate's email address and then select their permission level.

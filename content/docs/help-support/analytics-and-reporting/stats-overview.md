@@ -32,33 +32,32 @@ The timezone for stats pages is set in your [account settings]({{root_url}}/help
 
 </call-out>
 
-<p>
-<strong><a href="#analytics-and-reporting-Filters"Overview</a></strong> - The overview is your at-a-glance stats. We give you the highlight reel so that you can keep an eye out for any issues and make sure you’re on the right track.
-</p><p>
-<strong><a href="{{root_url}}/help-support/analytics-and-reporting/global/">Global Stats</a></strong> - All of your stats, aggregated in one place so you can see the high level view of everything.
-</p><p>
-<strong><a href="{{root_url}}/help-support/analytics-and-reporting/categories/">Category Stats</a></strong> - You can define your categories when you send, so that you can view your email performance by category later.
-</p><p>
-<strong><a href="{{root_url}}/help-support/analytics-and-reporting/category-comparison/">Category Comparison</a></strong> - Compare the performance of emails from up to 10 categories against each other.
-</p><p>
-<strong><a href="{{root_url}}/help-support/analytics-and-reporting/subuser/">Subuser Stats</a></strong> - You can segment your email to be sent by different subusers, which allows you to compare how each type or subset of your email is performing.
-</p><p>
-<strong><a href="{{root_url}}/help-support/analytics-and-reporting/subuser-comparison/">Subuser Comparison</a></strong> - Compare the performance of emails from up to 10 subusers against each other.
-</p><p>
-<strong><a href="{{root_url}}/help-support/analytics-and-reporting/geographic/">Geographical</a></strong> - See where you get the best engagement and compare engagement by geographical region.
-</p><p>
-<strong><a href="{{root_url}}/help-support/analytics-and-reporting/device/">Email Clients and Devices</a></strong> - Find out which applications and devices your recipients use to view your mail and see the stats for each.
-</p><p>
-<strong><a href="{{root_url}}/help-support/analytics-and-reporting/mailbox-provider/">Mailbox Provider Stats</a></strong> - See all the stats for the mailbox providers your recipients use.
-</p><p>
-<strong><a href="{{root_url}}/help-support/analytics-and-reporting/mailbox-provider-comparison/">Mailbox Provider Comparison</a></strong> - Compare the performance of emails by statistic and provider.
-</p><p>
-<strong><a href="{{root_url}}/help-support/analytics-and-reporting/browser/">Browser Stats</a></strong> - See all the stats for the web browsers your users view your emails from.
-</p><p>
-<strong><a href="{{root_url}}/help-support/analytics-and-reporting/browser-comparison/">Browser Comparison</a></strong> - Compare the performance of your emails by statistic and browser.
-</p><p>
-<strong><a href="{{root_url}}/help-support/analytics-and-reporting/inbound-parse/">Parse Webhook</a></strong> - View the number of requests you have received via the Parse Webhook.
-</p>
+**Overview** - The overview is your at-a-glance stats. We give you the highlight reel so that you can keep an eye out for any issues and make sure you’re on the right track.
+
+**[Global Stats]({{root_url}}/help-support/analytics-and-reporting/global/)** - All of your stats, aggregated in one place so you can see the high level view of everything.
+
+**[Category Stats]({{root_url}}/help-support/analytics-and-reporting/categories/)** -You can define your categories when you send, so that you can view your email performance by category later.
+
+**[Category Comparison]({{root_url}}/help-support/analytics-and-reporting/category-comparison/)** - Compare the performance of emails from up to 10 categories against each other.
+
+**[Subuser Stats]({{root_url}}/help-support/analytics-and-reporting/subuser/)** - You can segment your email to be sent by different subusers, which allows you to compare how each type or subset of your email is performing.
+
+**[Subuser Comparison]({{root_url}}/help-support/analytics-and-reporting/subuser-comparison/)**  - Compare the performance of emails from up to 10 subusers against each other.
+
+**[Geographical]({{root_url}}/help-support/analytics-and-reporting/geographic/)** - See where you get the best engagement and compare engagement by geographical region.
+
+**[Email Clients and Devices]({{root_url}}/help-support/analytics-and-reporting/device/)** - Find out which applications and devices your recipients use to view your mail and see the stats for each.
+
+**Mailbox Provider Stats** - See all the stats for the mailbox providers your recipients use.
+
+**[Mailbox Provider Comparison]({{root_url}}/help-support/analytics-and-reporting/mailbox-provider-comparison/)** - Compare the performance of emails by statistic and provider.
+
+**[Browser Stats]({{root_url}}/help-support/analytics-and-reporting/browser/)** - See all the stats for the web browsers your users view your emails from.
+
+**[Browser Comparison]({{root_url}}/help-support/analytics-and-reporting/browser-comparison/)** - Compare the performance of your emails by statistic and browser.
+
+**[Parse Webhook]({{root_url}}/help-support/analytics-and-reporting/inbound-parse/)** - View the number of requests you have received via the Parse Webhook.
+
 
 ## 	Metrics
  	<p>
@@ -92,7 +91,7 @@ On the available statistics reports, you will find that your deliverability is b
   <strong>Unsubscribe Drops</strong> - The number of emails dropped by SendGrid because the recipient unsubscribed from your emails.
 </p>
 
-## 	analytics-and-reporting Filters
+## Filters
  	<p>
 These filters are available on most of the statistics pages. They will help you see your stats in more or less details, depending on your needs.
 </p>
