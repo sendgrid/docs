@@ -42,7 +42,7 @@ Unsubscribe Group Workflow
 <table class="table" style="width: 100%;">
   <tr>
     <td style="width:75px; height:75px"><img src="{{root_url}}/images/ui_icon.png" alt="An update to the UI" ></td>
-    <td>We’ve made managing your Unsubscribe Groups more intuitive and beautiful than ever. Create and edit Unsubscribe Groups with confidence, knowing exactly what your recipients will see, thanks to a side-by-side preview of both your Unsubscribe Preferences and confirmation pages. To learn more, take a look at our <a href=”{{root_url}}/User_Guide/Marketing_Campaigns/create-and-manage-unsubscribe-groups.html” target=”_blank”>documentation</a>.</td>
+    <td>We’ve made managing your Unsubscribe Groups more intuitive and beautiful than ever. Create and edit Unsubscribe Groups with confidence, knowing exactly what your recipients will see, thanks to a side-by-side preview of both your Unsubscribe Preferences and confirmation pages. To learn more, take a look at our <a href=”{{root_url}}/help-support/sending-email/create-and-manage-unsubscribe-groups.html” target=”_blank”>documentation</a>.</td>
   </tr>
 </table>
 
