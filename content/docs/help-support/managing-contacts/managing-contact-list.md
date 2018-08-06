@@ -51,10 +51,14 @@ Sending to a well-managed address list can drastically help improve your deliver
 
 In your SendGrid Account there are different [Suppressions]({{root_url}}/help-support/sending-email/index-suppressions/) lists.
 
-**Global Unsubscribes** - Addresses on this list are opted out of all mailing
+**Global Unsubscribes** - Addresses on this list are opted out of all mail.
+
 **Bounces** - Addresses that have failed to deliver to the recipient's inbox. Once an address has been added to this list, we do not attempt to deliver further messages to it, we will instead Drop them to protect your external reputation.
-**Spam Reports** - Addresses that have marked your mail as spam
+
+**Spam Reports** - Addresses that have marked your mail as spam.
+
 **Blocks** - Addresses that have blocked your mail temporarily, usually due to factors like a blacklisted IP address. You can attempt to resend to these addresses.
+
 **Invalid** - Addresses on this list are malformed and do not have a valid email address structure. (Ex. info.sendgrid.com, info@sendgridcom, info @ sendgrid.com)
 
 Emails sent to addresses listed in the Bounce, invalid, Spam, and Unsubscribe list are automatically dropped by SendGrid. Feel free to remove these addresses from your lists to save money and time.
@@ -96,7 +100,7 @@ Use this to permanently delete your recipients from all of your contact lists an
  1. Click the trash can icon.
  1. Select the check box to confirm that you want to delete all contacts and then click **Delete**.
 
- ### 	Additional Resources
+ ##	Additional Resources
 - [Segmentation]({{root_url}}/help-support/managing-contacts/segmenting-your-contacts/)
 - [Unsubscribe Groups]({{root_url}}/help-support/sending-email/index-suppressions/)
 - [Custom Fields]({{root_url}}/help-support/sending-email/custom-fields/)
