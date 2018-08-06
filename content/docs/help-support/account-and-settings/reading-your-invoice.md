@@ -84,5 +84,5 @@ The Transaction Summary shows the total charges for the month, and the Payment S
 
 ## 	Additional Resources
  	
-- [SendGrid Pricing]({{site.site_url}}/pricing/)
+- [SendGrid Pricing](https://sendgrid.com/pricing/)
 - [Billing]({{root_url}}/help-support/account-and-settings/billing/)

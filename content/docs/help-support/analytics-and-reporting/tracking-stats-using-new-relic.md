@@ -21,7 +21,7 @@ In less than five minutes your stats should be sent to your New Relic Dashboard.
  	
 Settings may be changed through:
 
--   [SendGrid UI]({{site.app_url}}/settings/partners) (on an account wide basis)
+-   [SendGrid UI](https://app.sendgrid.com/settings/partners) (on an account wide basis)
 
 If you would like get your statistics in the New Relic Dashboard, you need to provide us your New Relic license key.
 
