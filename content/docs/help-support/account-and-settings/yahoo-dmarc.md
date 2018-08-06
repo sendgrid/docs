@@ -24,7 +24,7 @@ This is because Yahoo no longer accepts messages where the From domain is a Yaho
 
 **What you can do:** You will need to change the From address to a non-Yahoo address. We recommend using your own mail domain, or one you control that is legitimate. You can then set the Reply-To field to be the original Yahoo address that previously was used in the From field. 
 
-**What about these messages, are they lost?** : Yes, any send with this bounce message is discarded and tracked as a [Block]({{site.app_url}}/suppressions/blocks). You will need to adjust your From address field settings, and then try resending from your side.
+**What about these messages, are they lost?** : Yes, any send with this bounce message is discarded and tracked as a [Block](https://app.sendgrid.com/suppressions/blocks). You will need to adjust your From address field settings, and then try resending from your side.
 
  
 

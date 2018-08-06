@@ -14,7 +14,7 @@ A bulk email service allows you to send email communications to large lists of m
 
 Commonly, bulk email is used for newsletters or marketing email. If you have a list of customers or prospects, you can send them content relevant to their business or interest, from a single application. A bulk email service allows you to send to any list, regardless of its size. The frequency at which you send is entirely up to you, and should be based on what the recipients expect. Your engagement data, including spam reports, unsubscribes, and open and click rates, will tell you whether your message is hitting the mark.
 
-SendGrid is a bulk email service for both marketing email and transactional email (single emails triggered by actions within your application). SendGrid's [bulk transactional email pricing]({{site.pricing_url}}?mc=SendGrid%20Documentation) and [bulk email marketing pricing]({{site.pricing_url}}?mc=SendGrid%20Documentation) are based on the volume of email you send, not the size of your list. SendGrid provides valuable insights across your entire email program:
+SendGrid is a bulk email service for both marketing email and transactional email (single emails triggered by actions within your application). SendGrid's [bulk transactional email pricing](https://sendgrid.com/pricing?mc=SendGrid%20Documentation) and [bulk email marketing pricing](https://sendgrid.com/pricing?mc=SendGrid%20Documentation) are based on the volume of email you send, not the size of your list. SendGrid provides valuable insights across your entire email program:
 
 * Deliverability rate to ensure your email is getting to the recipient's server
 * Open and click tracking to measure engagement

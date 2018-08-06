@@ -31,7 +31,11 @@ Make sure your group names and descriptions are customer friendly! Your customer
 
 </call-out>
 
-All of your groups will be visible on the [Suppression Management](https://app.sendgrid.com/suppressions/advanced_suppression_manager) page, along with the descriptions you defined when you created the groups. There are also [Suppression Management API](https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/index.html) endpoints for managing your groups and suppressions.
+<<<<<<< HEAD
+All of your groups will be visible on the [Suppression Management](https://app.sendgrid.com/suppressions/advanced_suppression_manager) page, along with the descriptions you defined when you created the groups. There are also [Suppression Management API](https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/index/) endpoints for managing your groups and suppressions.
+=======
+All of your groups will be visible on the [Suppression Management](https://app.sendgrid.com/suppressions/advanced_suppression_manager) page, along with the descriptions you defined when you created the groups. There are also [Suppression Management API]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/index.html) endpoints for managing your groups and suppressions.
+>>>>>>> upstream/a-new-hope-episode-iv
 
 ## 	Add An Unsubscribe Group
 
@@ -45,7 +49,7 @@ To add a new group, click the “Create New Group” button at the top right of 
 
 Default groups are those that are shown by default when a recipient chooses to unsubscribe from your emails. SendGrid will always show all of the default groups, so if you don’t want one of those groups to be displayed all the time, make sure that it is not set as a default group.
 
-You can also specify which groups to display at send time, but using the [asm_groups_to_display feature]({{root_url}}/for-developers/sending-email/suppressions#defining-asm-groups-to-display-on-the-manage-preferences-page) of the SMTP API.
+You can also specify which groups to display at send time, but using the [asm_groups_to_display feature]({{root_url}}/for-developers/sending-email/suppressions#-Defining-ASM-Groups-to-display-on-the-Manage-Preferences-page) of the SMTP API.
 
 ## 	Add Recipients to an Unsubscribe Group
 
@@ -91,10 +95,18 @@ To delete an unsubscribe group, select “Delete” and then “confirm” from 
 
 ## 	Using the API
 
+<<<<<<< HEAD
+When you use the [SendGrid API with unsubscribe groups](https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/index/), you can include the unsubscribe group ID with your mail send calls. To get the ID, go to your unsubscribe group list and you will find the ID in the “Group ID” column.
+=======
 When you use the [SendGrid API with unsubscribe groups]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/index.html), you can include the unsubscribe group ID with your mail send calls. To get the ID, go to your unsubscribe group list and you will find the ID in the “Group ID” column.
+>>>>>>> upstream/a-new-hope-episode-iv
 
 ## 	Additional Resources
 
 - [Bounces]({{root_url}}/help-support/sending-email/bounces/)
 - [Group Unsubscribes](https://app.sendgrid.com/suppressions/group_unsubscribes)
+<<<<<<< HEAD
+- [SendGrid API with unsubscribe groups](https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/index/)
+=======
 - [SendGrid API with unsubscribe groups]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/index.html)
+>>>>>>> upstream/a-new-hope-episode-iv
