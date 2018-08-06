@@ -27,7 +27,11 @@ You can create up to 120 custom fields.
 *To add a custom field:*
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. Navigate to the Custom Fields page in the app.
+=======
+1. Navigate to the [Custom Fields page](https://sendgrid.com/marketing_campaigns/custom_fields).
+>>>>>>> upstream/a-new-hope-episode-iv
 =======
 1. Navigate to the [Custom Fields page](https://sendgrid.com/marketing_campaigns/custom_fields).
 >>>>>>> upstream/a-new-hope-episode-iv
