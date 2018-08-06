@@ -18,4 +18,4 @@ For more information:
 * [Bulk Email Folder]({{root_url}}/glossary/bulk-mail-folder/)
 * [Email Deliverability]({{root_url}}/glossary/email-deliverability/)
 * [Sender authentication]({{root_url}}/help-support/sending-email/how-to-set-up-domain-authentication/)
-* [Black Hat Sender]({{root_url}}/glossary/black-hat-sender.html)
+* [Black Hat Sender]({{root_url}}/glossary/black-hat-sender/)

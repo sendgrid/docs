@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: Node.js
+title: v3 API Node.js Code Example
 group: api-v3
 navigation:
   show: true

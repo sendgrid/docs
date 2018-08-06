@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: PHP
+title: v3 API PHP Code Example
 group: api-v3
 seo:
   override: true

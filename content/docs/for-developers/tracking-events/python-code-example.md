@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 10
-title: Python
+title: Event Webhook Python Code Example
 group: code-examples
 navigation:
   show: true

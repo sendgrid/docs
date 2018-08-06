@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 10
-title: Go
+title: Event Webhook Go Code Example
 group: code-examples
 navigation:
   show: true

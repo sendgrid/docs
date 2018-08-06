@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 10
-title: C#
+title: Event Webhook C# Code Example
 group: code-examples
 navigation:
   show: true

@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: v2 Node.js
+title: v2 API Node.js Code Example
 group: api-v2
 navigation:
   show: true

@@ -154,4 +154,4 @@ Deleting a Subuser account cannot be undone. Please make sure that you are ready
 ## 	Additional Resources
  	
 - [Assigning a Domain Whitelabel to a subuser]({{root_url}}/help-support/sending-email/how-to-set-up-domain-authentication/#assigning-a-subuser/)
-- [Teammates]({{root_url}}/help-spport/account-and-settings/teammates.html)
+- [Teammates]({{root_url}}/help-spport/account-and-settings/teammates/)
