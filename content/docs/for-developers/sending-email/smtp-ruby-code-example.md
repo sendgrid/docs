@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: Ruby
+title: SMTP Ruby Code Example
 group: smtp
 navigation:
   show: true

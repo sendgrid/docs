@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: Python
+title: SMTP Python Code Example
 group: smtp
 navigation:
   show: true

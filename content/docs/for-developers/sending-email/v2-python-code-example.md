@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: Python
+title: v2 API Python Code Example
 group: api-v2
 navigation:
   show: true
