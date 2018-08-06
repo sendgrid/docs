@@ -11,6 +11,7 @@ navigation:
 ---
 
 So, you tried to send a bunch of emails, and when you checked your [Event Webhook]({{root_url}}/for-developers/tracking-events/event/) or your [Email Activity]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed/) page, you see a number of messages are marked as "Deferred" instead of "Delivered". Or maybe you're noticing a lot of addresses in your [Blocks]({{site.app_url}}/suppressions/blocks), but not many in your Bounces. What? Why aren't your recipients currently in awe at the glory of your amazing message?
+So, you tried to send a bunch of emails, and when you checked your [Event Webhook]({{root_url}}/for-developers/tracking-events/event/) or your [Email Activity]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed/) page, you see a number of messages are marked as "Deferred" instead of "Delivered". Or maybe you're noticing a lot of addresses in your [Blocks](https://app.sendgrid.com/suppressions/blocks), but not many in your Bounces. What? Why aren't your recipients currently in awe at the glory of your amazing message?
 
 SendGrid continues to attempt to send messages for up to 72 hours or until successful delivery. Normally, it takes between a few minutes and a few hours for a deferred messages successful delivery - it depends on the receiving mail server.
 

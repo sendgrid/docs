@@ -14,6 +14,7 @@ navigation:
 <call-out>
 
 If you have a **Pro plan or higher**, you may create up to 15 Subusers through your account. If you reach the maximum of 15 and require more Subusers, please use the form in the [Subuser Management]({{site.app_url}}/settings/subusers) page to request more.
+If you have a **Pro plan or higher**, you may create up to 15 Subusers through your account. If you reach the maximum of 15 and require more Subusers, please use the form in the [Subuser Management](https://app.sendgrid.com/settings/subusers) page to request more.
 
 </call-out>
 

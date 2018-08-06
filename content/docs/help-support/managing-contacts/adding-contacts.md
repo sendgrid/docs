@@ -16,6 +16,7 @@ seo:
 
 
 From our [Contacts]({{site.marketing_campaigns_url}}/contacts) page, you can add, upload, modify, and delete your contacts. Contacts can be added to your contacts database using the [API]({{root_url}}/api-reference/), or by  manually adding or uploading a CSV file through the [SendGrid App](https://app.sendgrid.com/).
+From our [Contacts](https://sendgrid.com/marketing_campaigns/contacts) page, you can add, upload, modify, and delete your contacts. Contacts can be added to your contacts database using the [API]({{root_url}}/api-reference/), or by  manually adding or uploading a CSV file through the [SendGrid App](https://app.sendgrid.com/).
 
 <call-out>
 
