@@ -106,7 +106,7 @@ You will not be charged an email when these reports are forwarded to you.
 </call-out>
 
 
- ### 	Forwarding abuse@ and postmaster@ Emails
+###	Forwarding abuse
  	
 The email address specified in the Forward Spam mail setting may also be used to receive emails sent to abuse@ and postmaster@ role addresses if you have [authenticated your domain]({{root_url}}/help-support/sending-email/how-to-set-up-domain-authentication/).
 
