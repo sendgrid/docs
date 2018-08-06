@@ -48,7 +48,7 @@ The timezone for stats pages is set in your [account settings]({{root_url}}/help
 
 **[Email Clients and Devices]({{root_url}}/help-support/analytics-and-reporting/device/)** - Find out which applications and devices your recipients use to view your mail and see the stats for each.
 
-**[Mailbox Provider Stats]** - See all the stats for the mailbox providers your recipients use.
+**Mailbox Provider Stats** - See all the stats for the mailbox providers your recipients use.
 
 **[Mailbox Provider Comparison]({{root_url}}/help-support/analytics-and-reporting/mailbox-provider-comparison/)** - Compare the performance of emails by statistic and provider.
 
