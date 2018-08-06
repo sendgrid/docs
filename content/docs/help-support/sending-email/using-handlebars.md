@@ -210,7 +210,7 @@ HTML should contain:
 ```
 
 Test Data should contain:
-###1
+#### 1
 ```
 {
    "user":{
@@ -221,7 +221,7 @@ Test Data should contain:
 }
 ```
 
-###2
+#### 2
 ```
 {
    "user":{
@@ -232,7 +232,7 @@ Test Data should contain:
 }
 ```
 
-###3
+#### 3
 ```
 {
    "user":{
@@ -244,17 +244,17 @@ Test Data should contain:
 ```
 
 Resulting replacement:
-###1
+#### 1
 ```
 <p>Dear Sir</p>
 ```
 
-###2
+#### 2
 ```
 <p>Dear Madame</p>
 ```
 
-###3
+#### 3
 ```
 <p>Dear Customer</p>
 ```

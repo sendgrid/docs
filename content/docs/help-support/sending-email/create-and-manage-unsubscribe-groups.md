@@ -29,8 +29,8 @@ Make sure your Group Names and Group Descriptions are customer-friendly. This is
 
 </call-out>
 
-1. Select the checkbox if you want the Unsubscribe Group to display on the unsubscribe preferences page. 
-1. click **Save Unsubscribe Group**. 
+4. Select the checkbox if you want the Unsubscribe Group to display on the unsubscribe preferences page. 
+5. Click **Save Unsubscribe Group**. 
 
 
 <call-out>
