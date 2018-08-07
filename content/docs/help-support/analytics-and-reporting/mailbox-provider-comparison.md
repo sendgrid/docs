@@ -39,5 +39,5 @@ You can also choose to show actual counts or percentages, by clicking the corres
 ## 	Additional Resources
  	
 - [Mailbox Provider Stats](https://app.sendgrid.com/statistics/mailbox_provider)
-- [Statistics Filters]({{root_url}}//help-support/analytics-and-reporting/stats-overview/#statistics-filters)
+- [Statistics Filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview/#statistics-filters)
 - [Account Settings]({{root_url}}/help-support/account-and-settings/account/)

@@ -29,7 +29,7 @@ While webhooks are traditionally more complex to set up, the speed and efficienc
 
 With the Event Webhook, users can create advanced email analytics, customize the delivery of your email analytics to their platform, set up triggered email campaigns synced to third party platforms, and insert dynamic data. In all, there are nine email events that can be captured.
 
-Using the SendGrid Event Webhook allows users to follow the email best practices that will increase their [email deliverability]({{root_url}}//glossary/email-deliverability/). For instance, by immediately responding to bounces, unsubscribes, and spam reports, users can ensure that they’re always sending to a clean list. By using the open and click tracking, they can remove unresponsive users and ensure that they’re always sending to a highly engaged list.
+Using the SendGrid Event Webhook allows users to follow the email best practices that will increase their [email deliverability]({{root_url}}/glossary/email-deliverability/). For instance, by immediately responding to bounces, unsubscribes, and spam reports, users can ensure that they’re always sending to a clean list. By using the open and click tracking, they can remove unresponsive users and ensure that they’re always sending to a highly engaged list.
 
 To help users take full advantage of the Event Webhook, SendGrid has also created the EventKit. The SendGrid EventKit allows users to create a user-friendly app where they download a php script and then upload it to their server in order to take advantage of the Event Webhook. You can learn more by visiting the [EventKit blog post](https://sendgrid.com/blog/open-source-eventkit-for-event-webhook/).
 
