@@ -46,7 +46,7 @@ SendGrid automatically suppresses emails sent to users for a variety of reasons 
 
 **[Invalid Emails]({{root_url}}/help-support/sending-email/invalid-emails/)** - The recipient address does not exist at the mail server you sent to.
 
-**[Spam Reports]({{root_url}}/help-support/analytics-and-reporting/spam-reports/)** -  The recipient marks your email as spam.
+**[Spam Reports]({{root_url}}/glossary/spam-reports/)** -  The recipient marks your email as spam.
 
 **[Global Unsubscribes]({{root_url}}/help-support/sending-email/global-unsubscribes/)** - When a user unsubscribes from everything you might email them.
 

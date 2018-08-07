@@ -108,3 +108,9 @@ The app creates a clone, giving it a name that starts with "untitled". You can g
 For more information about unsubscribes, check out our [unsubscribe documentation]({{root_url}}/help-support/sending-email/index-suppressions/).
 
 
+
+## Additional Resources
+
+- [Dynamic Templates]({{root_url}}/help-support/sending-email/how-to-send-an-email-with-dynamic-transactional-teplates/)
+- [Using Handlebars]({{root_url}}/help-support/sending-email/using-handlebars/)
+- [Design & Code Editor]({{root_url}}/help-support/sending-email/editor/)

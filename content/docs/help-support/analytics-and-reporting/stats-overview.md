@@ -24,7 +24,7 @@ Tracking your emails is an important part of being a good sender and learning ab
 We have broken up stats in specific ways so that you can get at-a-glance data, as well as allowing you to get into the details of how your email is being used.
 </p>
 
-## 	Available Email analytics-and-reporting Reports
+## 	Available Email Reports
  	
 <call-out>
 
@@ -111,5 +111,5 @@ These filters are available on most of the statistics pages. They will help you 
  	
 * [API Stats Overview]({{root_url}}/API_Reference/Web_API_v3/Stats/index/)
 
-* [Advanced Analytics and Reporting({{root_url}}/API_Reference/Web_API/Statistics/statistics_advanced/)
+* [Advanced Analytics and Reporting]({{root_url}}/API_Reference/Web_API/Statistics/statistics_advanced/)
 

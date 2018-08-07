@@ -26,22 +26,14 @@ You can create up to 120 custom fields.
 
 *To add a custom field:*
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-1. Navigate to the Custom Fields page in the app.
-=======
 1. Navigate to the [Custom Fields page](https://sendgrid.com/marketing_campaigns/custom_fields).
->>>>>>> upstream/a-new-hope-episode-iv
-=======
-1. Navigate to the [Custom Fields page](https://sendgrid.com/marketing_campaigns/custom_fields).
->>>>>>> upstream/a-new-hope-episode-iv
 1. Click **Create New Field**.
 1. Add a _Field Name_ and _Field Type_.
 1. Click **Save**.
 
 You can also add custom fields when you [upload]({{root_url}}/help-support/managing-contacts/adding-contacts/#uploading-a-csv) a CSV to the contacts database.
 
-The field name should be created using only alphanumeric characters (A-Z and 0-9) and underscores “_”. The field type can be date, text, or number fields. The *field type* is important for creating [segments]({{root_url}}/help-support/managing-contacts/segmenting-your-contacts/) from your contact
+The field name should be created using only alphanumeric characters (A-Z and 0-9) and underscores **_**. The field type can be date, text, or number fields. The *field type* is important for creating [segments]({{root_url}}/help-support/managing-contacts/segmenting-your-contacts/) from your contact
 database.
 
 You can query your list in different ways, based on the data type:
