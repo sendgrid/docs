@@ -16,7 +16,6 @@ API keys are used by your application, mail client, or website to authenticate a
 There are two different types of API keys:
 
 1. **Full Access** gives all of the API methods.
-1. **Restricted Access** lets you customize the level of access.
 1. **Billing Access** gives you access to the billing endpoints.
 
 We require that you create a separate API key for making billing related API calls. This segmentation adds an extra level of security by giving you more control over who has access to the various areas of your account.
