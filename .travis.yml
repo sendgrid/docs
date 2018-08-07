@@ -7,7 +7,7 @@ branches:
 node_js:
 - 8.4.0
 python:
-- '3.5'
+- '3.7'
 pip:
 - '18.0'
 cache:
