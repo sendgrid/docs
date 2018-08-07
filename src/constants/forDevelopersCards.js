@@ -37,7 +37,7 @@ const FOR_DEVS_CARDS = [
     ICON: partners,
     TITLE: 'Partners',
     LINKS: [
-      { URL: 'for-developers/partners/amazon-marketplace/', TEXTNODE: 'Amazon' },
+      { URL: '/for-developers/partners/amazon-marketplace/', TEXTNODE: 'Amazon' },
       { URL: '/for-developers/partners/google/', TEXTNODE: 'Google' },
       { URL: '/for-developers/partners/microsoft-azure/', TEXTNODE: 'Microsoft Azure' },
     ],
