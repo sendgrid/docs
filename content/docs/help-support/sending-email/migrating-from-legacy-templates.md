@@ -1,12 +1,12 @@
 ---
 layout: page
 weight: 90
-title: Migrating from Legacy Templates
+title: Migrating from Legacy Transactional Templates
 group: building-email
 navigation:
   show: false
 seo:
-  title: Migrating from Legacy Templates
+  title: Migrating from Legacy Transactional Templates
   override: true
   description: Migrating from legacy transactional templates to dynamic transactional templates utilizing handlebars syntax.
   keywords: transactional email templates, email template, dynamic content, personalization, handlebars

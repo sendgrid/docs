@@ -14,7 +14,7 @@ navigation:
 - [Delisting Dedicated IP Plans](#delisting-dedicated-ip-plans)
 - [Checking Your IP Address](#checking-your-ip-address)
 - [Delisting Request Forms](#delisting-request-forms)
-- [Gmail, Yahoo, Hotmail and AOL Bulk Email Sender Guidelines](#gmail--yahoo--hotmail-and-aol-bulk-email-sender-guidelines)
+- [Gmail, Yahoo, Hotmail and AOL Bulk Email Sender Guidelines](#gmail-yahoo-hotmail-and-aol-bulk-email-sender-guidelines)
 
 A Blacklist is a list of IP addresses that have been detected sending unsolicited and unwanted emails. Inbox service providers (like Gmail, Microsoft, Yahoo, and AOL) and enterprises use blacklists to identify and filter illegitimate mail streams. Blacklisting can also occur for specific sending domains in addition to sending IPs.
 
@@ -40,7 +40,7 @@ SendGrid IP on a blacklist. SendGrid is happy to step in and assist with these d
 
 <call-out>
 
-Please note:  If a sending domain (and not the IP address) is blacklisted, that domain’s controller is responsible for handling the delisting request.
+If a sending domain (and not the IP address) is blacklisted, that domain’s controller is responsible for handling the delisting request.
 
 </call-out>
 

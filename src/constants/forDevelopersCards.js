@@ -9,7 +9,7 @@ const FOR_DEVS_CARDS = [
     TITLE: 'Sending Email',
     LINKS: [
       { URL: '/for-developers/sending-email/curl-examples/', TEXTNODE: 'cURL Examples for Common Use Cases' },
-      { URL: '/sending-email/sandbox-mode/', TEXTNODE: 'Sandbox Mode' },
+      { URL: '/for-developers/sending-email/sandbox-mode/', TEXTNODE: 'Sandbox Mode' },
       { URL: '/for-developers/sending-email/getting-started-smtp/', TEXTNODE: 'How to Send an SMTP Email' },
     ],
     BUTTON_LINK: '/for-developers/sending-email/',
@@ -37,7 +37,7 @@ const FOR_DEVS_CARDS = [
     ICON: partners,
     TITLE: 'Partners',
     LINKS: [
-      { URL: 'for-developers/partners/amazon-marketplace/', TEXTNODE: 'Amazon' },
+      { URL: '/for-developers/partners/amazon-marketplace/', TEXTNODE: 'Amazon' },
       { URL: '/for-developers/partners/google/', TEXTNODE: 'Google' },
       { URL: '/for-developers/partners/microsoft-azure/', TEXTNODE: 'Microsoft Azure' },
     ],

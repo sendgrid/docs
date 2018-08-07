@@ -15,19 +15,21 @@ It only takes a couple of minutes to start streaming email event data from SendG
 
  ### 	Send your SendGrid Data to Keen IO
 
-**Step 1: Create a Keen IO and SendGrid account**
+**Create a Keen IO and SendGrid account**
 
-* Create a <a href="https://keen.io/signup?utm_source=sendgrid_docs&utm_campaign=sendgrid">Keen IO account</a> (if you don't already have one)
-* Create a <a href="https://sendgrid.com/user/signup"> SendGrid account</a>
+1. Create a <a href="https://keen.io/signup?utm_source=sendgrid_docs&utm_campaign=sendgrid">Keen IO account</a> (if you don't already have one)
+1. Create a <a href="https://sendgrid.com/user/signup"> SendGrid account</a>
 
 
-**Step 2: Activate SendGrid's Event Notification App**
+**Activate SendGrid's Event Notification App**
 
-Log into your SendGrid account, click on **Settings** from the left menu → Select <a href="http://app.sendgrid.com/settings/mail_settings">Mail Settings</a>. Then click **Event Notification**.
+1. Log into your SendGrid account, click on **Settings**. 
+1. Select <a href="http://app.sendgrid.com/settings/mail_settings">Mail Settings</a>. 
+1. Then click **Event Notification**.
 
 ![SendGrid- Mail Settings]({{root_url}}/images/keen/sendgrid_mailsettings_eventnotification.png)
 
-**Step 3: Set the HTTP POST URL (example below) as the endpoint where SendGrid will stream all of your email data. **
+**Set the HTTP POST URL (example below) as the endpoint where SendGrid will stream all of your email data.**
 
 ```
 https://api.keen.io/3.0/projects/YOUR_KEEN_PROJECT_ID/email/sendgrid/1.0?api_key=YOUR_KEEN_API_WRITE_KEY
@@ -36,7 +38,7 @@ You can snag a prebuilt URL in Keen’s UI or make your own.
 
 In the Keen IO settings, select the events you want to post to Keen IO. To do this, under **Select Actions**, check **All**.
 
-That’s it! Now, as your emails make their way through SendGrid, all of the event information will be posted to Keen IO. A new Event Collection, for each type of email event, will be created within your Keen Project.
+Going forward, as your emails make their way through SendGrid, all of the event information will be posted to Keen IO. A new Event Collection, for each type of email event, will be created within your Keen Project.
 
  ### 	Test Your Integration
 

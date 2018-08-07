@@ -94,7 +94,7 @@ From the Edit Group page, you can change the Group Name, Group Description, and 
 
 ![]({{root_url}}/img/confirm_unsub_group_delete.png "Confirm Unsubscribe Group Delete")
 
-### Additional Resources
+## Additional Resources
 
 - [Suppressions Overview]({{root_url}}/help-support/sending-email/index-suppressions/)
 - [Group Unsubscribes]({{root_url}}/help-support/sending-email/group-unsubscribes/)

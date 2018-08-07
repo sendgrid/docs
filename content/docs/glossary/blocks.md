@@ -20,7 +20,7 @@ See the block reason column for more detail specific to the blocked email.
 
 ![Blocks]({{root_url}}/images/blocks_1.png)
 
-Additional Resources:
+## Additional Resources:
 
 * [Web API & Blocks](https://sendgrid.com/docs/API_Reference/Web_API/blocks.html)
 

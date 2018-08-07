@@ -12,8 +12,6 @@ navigation:
   show: true
 ---
 
-Oops! You accidentally sent a whole pile of mail you didn't mean to send... No worries, take a deep breath and read on. Be it a misspelled subject line or a rogue script, we can help!
-
 <call-out type="warning">
 
 If you are looking for information on how to cancel a scheduled email or campaign, [click here]({{root_url}}/for-developers/sending-email/stopping-a-scheduled-send/)!
@@ -50,7 +48,7 @@ If you have **Send Immediately** under the **Scheduling** dropdown menu in the c
 
 1. **Deleting the Campaign**
 
-    Navigate to your [Campaigns page](https://sendgrid.com/marketing_campaigns/ui/campaigns). Find the campaign you want to stop, click the gear icon and select **Delete**.
+    Navigate to your [Campaigns page](https://sendgrid.com/marketing_campaigns/ui/campaigns). Find the campaign you want to stop, click the action menu and select **Delete**.
 
 2. **Canceling the Campaign**
 

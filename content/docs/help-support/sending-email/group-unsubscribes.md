@@ -19,7 +19,11 @@ In the top right corner, you will see a calendar icon. Click this and choose the
 
 ## 	Download Group Unsubscribes as CSV
  	
-You can download your Group Unsubscribe list as a CSV by clicking the gear icon at the top of the page and selecting “Download CSV”. The file will download in your browser right away.
+*To download your Group Unsubscribe list as a CSV:*
+
+1. Navigate to the Unsubscribe Groups page and locate the list you want to download. 
+1. Click the action menu next to the list.
+1. Select **Export**. The file will download in your browser right away.
 
 ## 	Removing Recipients From The List
  	
