@@ -30,4 +30,4 @@ deploy:
     repo: sendgrid/docs
     branch: a-new-hope-episode-iv
 after_deploy:
-- travis-ci-cloudfront-invalidation -a $AWS_ACCESS_KEY -s $AWS_SECRET_KEY -c $CLOUDFRONT_DISTRIBUTION_ID -i '/*' -b $TRAVIS_BRANCH -p $TRAVIS_PULL_REQUEST -o 'a-new-hope-episode-iv'
+- travis-ci-cloudfront-invalidation -a $AWS_ACCESS_KEY -s $AWS_SECRET_KEY -c $CLOUDFRONT_DIST_ID -i '/*' -b $TRAVIS_BRANCH -p $TRAVIS_PULL_REQUEST -o 'a-new-hope-episode-iv'
