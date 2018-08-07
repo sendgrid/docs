@@ -50,8 +50,8 @@ Every stats CSV that you export will contain a row containing the totals for eac
 </call-out>
 
 ## 	Leveraging Engagement Statistics
- 	
-To learn how to leverage your engagement statistics, please see [Campaign Statistics]({{root_url}}/help-support/analytics-and-reporting/campaign-stats/).
+
+Using your campaign statistics, you can identify unengaged recipients and reignite those relationships as well as continue to reach your engaged audience.
 
  ### 	Viewing Campaign Clicks and Opens
  	
