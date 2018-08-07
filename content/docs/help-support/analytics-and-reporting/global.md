@@ -18,7 +18,7 @@ Global stats shown are not an aggregate total for parent accounts and subusers. 
 
 </call-out>
 
-Your Global Stats page is where you can really dig into your email stats. From here you will be able to filter through your stats by type, but you will also be able to look at the actual numbers for each stat by date. You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview.html#statistics-filters).
+Your Global Stats page is where you can really dig into your email stats. From here you will be able to filter through your stats by type, but you will also be able to look at the actual numbers for each stat by date. You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview/#statistics-filters).
 
 ## 	Figures
  	
@@ -28,6 +28,6 @@ This table will refresh with new or adjusted data based on the various filters a
 
 ## 	Additional Resources
  	
-- [Statistics Filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview.html#statistics-filters)
+- [Statistics Filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview/#statistics-filters)
 - [Global Stats](https://sendgrid.com/docs/API_Reference/Web_API_v3/Stats/global.html)
-- [Timezones]({{root_url}}/glossary/timezone.html)
+- [Timezones]({{root_url}}/glossary/timezone/)

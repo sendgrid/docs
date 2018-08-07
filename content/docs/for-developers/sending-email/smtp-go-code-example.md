@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: Go
+title: SMTP Go Code Example
 group: smtp
 navigation:
   show: true

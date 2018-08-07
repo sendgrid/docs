@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: Java
+title: v2 API Java Code Example
 group: api-v2
 navigation:
   show: true

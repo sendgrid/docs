@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: Perl
+title: SMTP Perl Code Example
 group: smtp
 navigation:
   show: true
@@ -112,7 +112,7 @@ my $time = '1pm';
 my $name = 'kyle';
 
 $hdr->addFilterSetting('subscriptiontrack', 'enable', 1);
-$hdr->addFilterSetting('twitter', 'enable', 1); #please check the apps available for your current package at {{site.pricing_url}}
+$hdr->addFilterSetting('twitter', 'enable', 1); #please check the apps available for your current package at https://sendgrid.com/pricing
 $hdr->addTo(@receiver);
 $hdr->addTo('kyle2');
 

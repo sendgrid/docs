@@ -26,7 +26,7 @@ You can create up to 120 custom fields.
 
 *To add a custom field:*
 
-1. Navigate to the [Custom Fields page]({{site.marketing_campaigns_url}}/custom_fields).
+1. Navigate to the [Custom Fields page](https://sendgrid.com/marketing_campaigns/custom_fields).
 1. Click **Create New Field**.
 1. Add a _Field Name_ and _Field Type_.
 1. Click **Save**.

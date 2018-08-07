@@ -22,11 +22,11 @@ While DKIM authentication is an email best practice, it’s important to underst
 
 You can authenticate with DKIM yourself or the DKIM signature can be created by your sending MTA, but setting it up can be a complex process. If not done right, ISPs will block your email, particularly because incorrect implementation is a telltale sign of a spammer.
 
-SendGrid automatically enables DKIM for all email to improve your [email deliverability]({{root_url}}/glossary/email-deliverability.html), whether you’re on a shared IP or a dedicated one. This is just one more example of how SendGrid helps thousands of customers follow email best practices to ensure maximum delivery for their emails.
+SendGrid automatically enables DKIM for all email to improve your [email deliverability]({{root_url}}/glossary/email-deliverability/), whether you’re on a shared IP or a dedicated one. This is just one more example of how SendGrid helps thousands of customers follow email best practices to ensure maximum delivery for their emails.
 
 ## 	Automated Security and Your DKIM Signature
 
-When you set up a [authenticated domain]({{root_url}}/help-support/sending-email/how-to-set-up-domain-authentication.html), you will be given the option of using [automated or manual security]({{root_url}}//help-support/sending-email/how-to-set-up-domain-authentication/#using-automated-security). When you select automated security, SendGrid will manage your DKIM and SPF records for you. This means that whenever you make a change to your account that could impact your deliverability, such as adding a new dedicated sending [IP address]({{root_url}}/glossary/ip-address/), SendGrid will automatically update your DNS settings and your DKIM signature.
+When you set up a [authenticated domain]({{root_url}}/help-support/sending-email/how-to-set-up-domain-authentication/), you will be given the option of using [automated or manual security]({{root_url}}/help-support/sending-email/how-to-set-up-domain-authentication/#using-automated-security). When you select automated security, SendGrid will manage your DKIM and SPF records for you. This means that whenever you make a change to your account that could impact your deliverability, such as adding a new dedicated sending [IP address]({{root_url}}/glossary/ip-address/), SendGrid will automatically update your DNS settings and your DKIM signature.
 
 **SendGrid will always provide you with a custom DKIM signature. However, your custom DKIM signature is only automatically updated if you select automated security when authenticating your domain. If you turn automated security OFF, you will be responsible for updating your DKIM signature whenever you make a change to your sending domain.**
 

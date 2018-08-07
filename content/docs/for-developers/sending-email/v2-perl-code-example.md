@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: Perl
+title: v2 API Perl Code Example
 group: api-v2
 seo:
   title: Send Email with Perl and SendGrid

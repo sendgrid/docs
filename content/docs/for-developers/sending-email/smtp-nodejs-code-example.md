@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: Node.js
+title: SMTP Node.js Code Example
 group: smtp
 navigation:
   show: true

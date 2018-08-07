@@ -48,7 +48,7 @@ SendGrid automatically suppresses emails sent to users for a variety of reasons 
 
 **[Spam Reports]({{root_url}}/help-support/analytics-and-reporting/spam-reports/)** -  The recipient marks your email as spam.
 
-**[Global Unsubscribes]({{root_url}}//help-support/sending-email/global-unsubscribes/)** - When a user unsubscribes from everything you might email them.
+**[Global Unsubscribes]({{root_url}}/help-support/sending-email/global-unsubscribes/)** - When a user unsubscribes from everything you might email them.
 
 **[Group Unsubscribes]({{root_url}}/help-support/sending-email/group-unsubscribes/)** - When a user unsubscribes from a specific group of your emails.
 

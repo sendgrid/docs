@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 10
-title: Node.js
+title: Event Webhook Node.js Code Example
 group: code-examples
 navigation:
   show: true

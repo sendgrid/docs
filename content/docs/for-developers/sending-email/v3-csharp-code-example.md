@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: C#
+title: v3 API C# Code Example
 group: api-v3
 navigation:
     show: true

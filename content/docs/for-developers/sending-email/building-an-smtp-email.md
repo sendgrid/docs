@@ -177,7 +177,7 @@ Categories should only be used for broad topics. To attach unique identifiers, p
 
  ### 	Unique Arguments
 
-Use unique arguments to track your emails based on specific identifiers unique to individual messages. Unique arguments can be retrieved via SendGrid's [Event Webhook]({{root_url}}/for-developers/tracking-events/event.html) or your [email activity page]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed.html).
+Use unique arguments to track your emails based on specific identifiers unique to individual messages. Unique arguments can be retrieved via SendGrid's [Event Webhook]({{root_url}}/for-developers/tracking-events/event/) or your [email activity page]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed/).
 
 For more information, see our [unique arguments documentation]({{root_url}}/for-developers/sending-email/unique-arguments/).
 
