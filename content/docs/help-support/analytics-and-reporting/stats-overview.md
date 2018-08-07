@@ -64,56 +64,52 @@ The timezone for stats pages is set in your [account settings]({{root_url}}/help
 On the available statistics reports, you will find that your deliverability is broken down by the following metrics. Each one gives you a different piece of information about how SendGrid or your recipients interact with your email.
 </p>
 <p>
-<strong><a href="{{root_url}}/glossary/blocks/">Blocks</a></strong> - The number of emails that were not allowed to be delivered by ISPs.
-</p><p>
-  <strong><a href="{{root_url}}/glossary/bounces/">Bounces</a></strong> - The number of emails that bounced instead of being delivered.
-</p><p>
-  <strong><a href="{{root_url}}/glossary/clicks/">Clicks</a></strong> - The number of links that were clicked in your emails.
-</p><p>
-  <strong><a href="{{root_url}}/glossary/deliveries/">Deliveries</a></strong> - The number of emails SendGrid was able to confirm were actually delivered to a recipient.
-</p><p>
-  <strong>Invalid Emails</strong> - The number of recipients that you sent emails to, who had malformed email addresses or whose mail provider reported the address as invalid.
-</p><p>
-  <strong><a href="{{root_url}}/glossary/opens/">Opens</a></strong> - The total number of times your emails were opened by recipients.
-</p><p>
-  <strong><a href="{{root_url}}/glossary/request/">Requests</a></strong> - The number of emails you requested to send via SendGrid.
-</p><p>
-  <strong><a href="{{root_url}}/glossary/spam-reports/">Spam Reports</a></strong> - The number of recipients who marked your email as spam.
-</p><p>
-  <strong><a href="{{root_url}}/glossary/spam-reports/">Spam Report Drops</a></strong> - The number of emails dropped by SendGrid because that recipient previously marked your emails as spam.
-</p><p>
-  <strong><a href="{{root_url}}/glossary/opens/">Unique Opens</a></strong> - The number of unique recipients who opened your emails.
-</p><p>
-  <strong><a href="{{root_url}}/glossary/clicks/">Unique Clicks</a></strong> - The number of unique recipients who clicked links in your emails.
-</p><p>
-  <strong>Unsubscribes</strong> - The number of recipients who unsubscribed from your emails.
-</p><p>
-  <strong>Unsubscribe Drops</strong> - The number of emails dropped by SendGrid because the recipient unsubscribed from your emails.
-</p>
+
+**[Blocks]({{root_url}}/glossary/blocks/)** - The number of emails that were not allowed to be delivered by ISPs.
+
+**[Bounces]({{root_url}}/glossary/bounces/)** - The number of emails that bounced instead of being delivered.
+
+**[Clicks]({{root_url}}/glossary/clicks/)** - The number of links that were clicked in your emails.
+
+**[Delivered]({{root_url}}/glossary/deliveries/)** - The number of emails SendGrid was able to confirm were actually delivered to a recipient.
+
+**Invalid Emails** - The number of recipients that you sent emails to, who had malformed email addresses or whose mail provider reported the address as invalid.
+
+**[Opens]({{root_url}}//glossary/opens/)** - The total number of times your emails were opened by recipients.
+
+**[Requests]({{root_url}}/glossary/request/)** - The number of emails you requested to send via SendGrid.
+
+**[Spam Reports]({{{{root_url}}/glossary/spam-reports/)** - The number of recipients who marked your email as spam.
+
+**[Opens]({{root_url}}{{root_url}}/glossary/opens/)** - The number of unique recipients who opened your emails.
+
+**[Unique Clicks]({{root_url}}/glossary/clicks/)** - The number of unique recipients who clicked links in your emails.
+
+**Unsubscribes** - The number of recipients who unsubscribed from your emails.
+
+**Unsubscribe Drops** - The number of emails dropped by SendGrid because the recipient unsubscribed from your emails.
+
 
 ## Filters
- 	<p>
-These filters are available on most of the statistics pages. They will help you see your stats in more or less details, depending on your needs.
-</p>
 
-<p>
-  <strong>Metric Filters</strong> - You can select all of the metrics or only some of them.
-</p><p>
-  <strong>Date Filters</strong> - To display stats between specific dates, choose your date range.
-</p><p>
-  <strong>Grouping Filter</strong> - Display stats grouped by day, week, or month.
-</p>
+These filters are available on most of the statistics pages. They will help you see your stats in more or less details, depending on your needs.
+
+
+**Metric Filters** - You can select all of the metrics or only some of them.
+
+**Date Filters** - To display stats between specific dates, choose your date range.
+
+**Grouping Filter** - Display stats grouped by day, week, or month.
+
 
 ## 	Top 5 Categories
  	
-<p>
   The Top 5 Categories report allows you to see your top 5 most used categories by number of requests. Switch your view by actual number of emails or percentage using the toggle at the top right of this section.
-</p>
+
 
 ## 	Additional Resources
  	
-<ul>
-  <li><a href="https://sendgrid.com/docs/API_Reference/Web_API_v3/Stats/index/" target="_blank">Stats Overview</a></li>
-  <li><a href="https://sendgrid.com/docs/API_Reference/Web_API/Statistics/index/" target="_blank">General analytics-and-reporting</a></li>
-  <li><a href="https://sendgrid.com/docs/API_Reference/Web_API/Statistics/statistics_advanced/" target="_blank">Advanced analytics-and-reporting</a></li>
-</ul>
+* [API Stats Overview]({{root_url}}/API_Reference/Web_API_v3/Stats/index/)
+
+* [Advanced Analytics and Reporting({{root_url}}/API_Reference/Web_API/Statistics/statistics_advanced/)
+
