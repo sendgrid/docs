@@ -42,11 +42,11 @@ If you would like us to attempt to deliver messages to a specific address again,
 
 <call-out>
 
-NOTE: SendGrid cannot re-send messages that have been Dropped or appear on suppression lists, but will attempt future deliveries once the address has been removed from the list and is sent to again.
+SendGrid cannot re-send messages that have been Dropped or appear on suppression lists, but will attempt future deliveries once the address has been removed from the list and is sent to again.
 
 </call-out>
 
-*Since SendGrid has my back, and my reputation is not affected by these Drops, why should I care about removing them?*
+**Since SendGrid has my back, and my reputation is not affected by these Drops, why should I care about removing them?**
 
 Your lists will be cleaner and even if we do drop the messages intended to addresses that are already on one of the suppression lists, we do accept and process these requests before we drop them. Since this is the case, dropped emails will still count towards your monthly plan email limit.
 

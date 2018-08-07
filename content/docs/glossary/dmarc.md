@@ -38,7 +38,10 @@ For more information on reverse DNS,
 
 ## 2. Ensure proper DKIM and SPF signing for your authenticated domain
 
-Send yourself some test emails if you're unsure of this step. You're looking to verify that the DKIM and SPF signatures in your email headers align to your authenticated domain. ![](https://lh4.googleusercontent.com/kjZ6aO15x8UB3TcHG6X6N3G78rm601i7L6knyLCxw2Ujg4lFNpbG_5DrNK1wHYB6cZ27sIFb87q3rF8wx3xitTJxWQAdtOHqkAlS8CdyoIydj3gKY9w)  
+Send yourself some test emails if you're unsure of this step. You're looking to verify that the DKIM and SPF signatures in your email headers align to your authenticated domain.
+
+ ![](https://lh4.googleusercontent.com/kjZ6aO15x8UB3TcHG6X6N3G78rm601i7L6knyLCxw2Ujg4lFNpbG_5DrNK1wHYB6cZ27sIFb87q3rF8wx3xitTJxWQAdtOHqkAlS8CdyoIydj3gKY9w)  
+
 As long as both are passing, you’re in business!
 
 ## 3. Publish a DMARC record with your DNS registrar, then monitor the results
@@ -61,7 +64,11 @@ The record explained:
 
 **rua** = [mailto:example@example.com](mailto:postmaster@whitelabeldomain.com) Reporting URI of aggregate reports - Send aggregate reports to dmarc.rua [@customdomain.com](mailto:postmaster@whitelabeldomain.com), set this to an email address you control that is closely monitored.
 
-Note: This example uses the p=quarantine policy, but always start out using the p=none policy at first.
+<call-out>
+
+This example uses the p=quarantine policy, but always start out using the p=none policy at first.
+
+</call-out>
 
 ### Policies
 
@@ -85,7 +92,11 @@ Example: receiver.org!sender.com!1335571200!1335657599.zip
 
     <?xml version="1.0" encoding="UTF-8" ?><feedback>  <report_metadata>    <org_name>receiver.com</org_name>    <email>noreply-dmarc-support@receiver.com</email>    <extra_contact_info>http://receiver.com/dmarc/support</extra_contact_info>    <report_id>9391651994964116463</report_id>    <date_range>      <begin>1335571200</begin>      <end>1335657599</end>    </date_range>  </report_metadata>  <policy_published>    <domain>sender.com</domain>    <adkim>r</adkim>    <aspf>r</aspf>    <p>none</p>    <sp>none</sp>    <pct>100</pct>  </policy_published>  <record>    <row>      <source_ip>72.150.241.94</source_ip>      <count>2</count>      <policy_evaluated>        <disposition>none</disposition>        <dkim>fail</dkim>        <spf>pass</spf>      </policy_evaluated>    </row>    <identifiers>      <header_from>sender.com</header_from>    </identifiers>    <auth_results>      <dkim>        <domain>sender.com</domain>        <result>fail</result>        <human_result></human_result>      </dkim>      <dkim>        <domain>sender.net</domain>        <result>pass</result>        <human_result></human_result>      </dkim>      <spf>        <domain>sender.com</domain>        <result>pass</result>      </spf>    </auth_results>  </record></feedback>
 
-\*Note: Aggregate reports are sent as a .zip attachment, so be sure the address you’re defining is able to accept attachments in this file type.
+<call-out>
+
+ Aggregate reports are sent as a .zip attachment, so be sure the address you’re defining is able to accept attachments in this file type.
+
+ </call-out>
 
 ## 5. Escalate your DMARC policy tags from p=none to p=quarantine to p=reject as you gain experience
 
@@ -101,12 +112,11 @@ Up until now you should have only been using the p=none policy to get reports of
 
 ## 	Additional resources
  	
-- Frequently Asked Questions:   [http://dmarc.org/faq.html](http://dmarc.org/faq.html)  
-- DMARK Specification: [http://dmarc.org/specification.html](http://dmarc.org/specification.html)  
-- SendGrid Blog Post: [http://sendgrid.com/blog/what-is-dmarc-and-why-should-you-care/](http://sendgrid.com/blog/what-is-dmarc-and-why-should-you-care/)  
-- SPF Syntax: [http://www.openspf.org/SPF\_Record\_Syntax](http://www.openspf.org/SPF_Record_Syntax)
-
-- Returnpath:  [http://www.returnpath.com/solution-content/dmarc-support/](http://www.returnpath.com/solution-content/dmarc-support/
-- Agari:  [http://agari.com/dmarc/](http://www.openspf.org/SPF_Record_Syntax)  
-- SPF record validator: [http://www.kitterman.com/spf/validate.html](http://www.kitterman.com/spf/validate.html)  
-- DMARC record validator: [http://kitterman.com/dmarc/assistant.html](http://kitterman.com/dmarc/assistant.html)
+- [Frequently Asked Questions](http://dmarc.org/faq.html)  
+- [DMARC Specification](http://dmarc.org/specification.html) 
+- [What is DMARC?](http://sendgrid.com/blog/what-is-dmarc-and-why-should-you-care/) 
+- [SPF Syntax](http://www.openspf.org/SPF_Record_Syntax)
+- [Returnpath](http://www.returnpath.com/solution-content/dmarc-support/)
+- [Agari](http://www.openspf.org/SPF_Record_Syntax)  
+- [SPF record validator](http://www.kitterman.com/spf/validate.html)  
+- [DMARC record validator](http://kitterman.com/dmarc/assistant.html)

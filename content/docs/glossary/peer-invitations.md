@@ -19,7 +19,9 @@ Peer-initiated invitations are a common way of launching a new business and gain
 * After the initial invitation, don't send more than one follow-up (reminder) email to invitees that didn't respond to the first invitation.
 
 <call-out>
+
  You increase the odds of your invitations reaching the recipient when you structure your systems and processes to send the right message, to the right person, at the right time, with the right frequency. If you don't, your messages will be marked as spam and your marketing results will suffer.
+ 
 </call-out>
 
 SendGrid also strongly recommends:
