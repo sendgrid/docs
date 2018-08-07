@@ -8,6 +8,8 @@ node_js:
 - 8.4.0
 python:
 - '3.5'
+pip:
+- '18.0'
 cache:
 - pip
 - yarn
