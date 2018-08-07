@@ -40,7 +40,7 @@ const HOME_CARDS = [
     LINKS: [
       { URL: '/help-support/account-and-settings/resetting-your-username-and-password/', TEXTNODE: 'Resetting Your Username and Password' },
       { URL: '/help-support/account-and-settings/subusers/', TEXTNODE: 'Subusers' },
-      { URL: '/help-support/account-and-settings/reading-your-invoice/', TEXTNODE: 'Reading Your Invoice' },
+      { URL: '/help-support/analytics-and-reporting/stats-overview/', TEXTNODE: 'Statistics Overview' },
     ],
     BUTTON_LINK: '/help-support/account-and-settings/',
   },

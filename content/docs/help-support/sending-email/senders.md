@@ -43,8 +43,11 @@ The footer of your emails automatically contains your sender information, becaus
 You must verify your sender identity before you can edit it or use it to send a campaign.
 
 </call-out>
-   To resend your verification email, hover over the Action Menu on the Sender Management page and select **Resend Verification**.
+
+  To resend your verification email, hover over the Action Menu on the Sender Management page and select **Resend Verification**.
+  
 <call-out>
+
 
 If you have an [authenticated domain]({{root_url}}/help-support/sending-email/how-to-set-up-domain-authentication/) and your sender email address matches that domain exactly, your sender identity will automatically verify.
 

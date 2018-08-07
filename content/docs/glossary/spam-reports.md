@@ -10,13 +10,13 @@ navigation:
   show: false
 ---
 
-Spam Reports are triggered when a customer clicks the spam button or puts your email in their [spam folder]({{root_url}}/glossary/bulk-mail-folder/) within their email client such as Yahoo, Outlook or AOL. Spam reports can only be gathered from Internet Service Providers that provide a Feedback loop.
+Spam Reports are triggered when a customer clicks the spam button or puts your email in their [spam folder]({{root_url}}/glossary/bulk-mail-folder/) within their email client such as Yahoo, Outlook or AOL. Spam reports can only be gathered from Internet Service Providers (ISPs) that provide a Feedback loop.
 
 It is important that spam reporter email addresses are permanently removed from your send list even if the customer has previously opted in. Continuing to send to customers that have reported your email as spam can severely affect your deliverability rating.
 
 <call-out>
 
-Important Tip: Make it easier for someone to find the unsubscribe button than it is to find the spam button.
+Make it easier for someone to find the unsubscribe button than it is to find the spam button.
 
 </call-out>
 

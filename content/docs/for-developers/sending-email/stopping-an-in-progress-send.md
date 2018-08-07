@@ -48,7 +48,7 @@ If you have **Send Immediately** under the **Scheduling** dropdown menu in the c
 
 1. **Deleting the Campaign**
 
-    Navigate to your [Campaigns page](https://sendgrid.com/marketing_campaigns/ui/campaigns). Find the campaign you want to stop, click the gear icon and select **Delete**.
+    Navigate to your [Campaigns page](https://sendgrid.com/marketing_campaigns/ui/campaigns). Find the campaign you want to stop, click the action menu and select **Delete**.
 
 2. **Canceling the Campaign**
 
