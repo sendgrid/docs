@@ -13,6 +13,8 @@ cache:
 - yarn
 install:
 - pip install --user awscli
+- npm install -g travis-ci-cloudfront-invalidation
+- npm install
 before_script:
 - yarn
 script: yarn run build
@@ -28,5 +30,4 @@ deploy:
     repo: sendgrid/docs
     branch: a-new-hope-episode-iv
 after_deploy:
-- aws configure set preview.cloudfront true
-- aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths /*
+- travis-ci-cloudfront-invalidation -a $AWS_ACCESS_KEY -s $AWS_SECRET_KEY -c $CLOUDFRONT_DISTRIBUTION_ID -i '/*' -b $TRAVIS_BRANCH -p $TRAVIS_PULL_REQUEST -o 'a-new-hope-episode-iv'
