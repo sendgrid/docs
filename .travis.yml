@@ -28,4 +28,5 @@ deploy:
     repo: sendgrid/docs
     branch: a-new-hope-episode-iv
 after_deploy:
-- aws cloudfront create-invalidation --access-key $AWS_ACCESS_KEY --secret-key $AWS_SECRET_KEY --distribution-id $CLOUDFRONT_DIST_ID --paths /*
+- aws configure set preview.cloudfront true
+- test $TRAVIS_BRANCH = "a-new-hope-episode-iv" && aws cloudfront create-invalidation --access-key $AWS_ACCESS_KEY --secret-key $AWS_SECRET_KEY --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths "/*"
