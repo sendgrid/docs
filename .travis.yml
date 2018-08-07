@@ -28,7 +28,5 @@ deploy:
     repo: sendgrid/docs
     branch: a-new-hope-episode-iv
 after_deploy:
-  access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: $AWS_SECRET_ACCESS_KEY
 - aws configure set preview.cloudfront true
 - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths /*
