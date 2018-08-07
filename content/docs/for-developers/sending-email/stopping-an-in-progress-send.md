@@ -1,9 +1,9 @@
 ---
 seo:
-  title: Can I stop a send in progress?
+  title: Stopping an in-progress send
   description: Can I stop a send in progress?
   keywords: pause, halt, delete, queue, stop, interrupt
-title: Can I stop a send in progress?
+title: Stopping an in-progress send
 group: api-v3
 weight: 0
 layout: page
@@ -11,8 +11,6 @@ zendesk_id: 204117516
 navigation:
   show: true
 ---
-
-Oops! You accidentally sent a whole pile of mail you didn't mean to send... No worries, take a deep breath and read on. Be it a misspelled subject line or a rogue script, we can help!
 
 <call-out type="warning">
 
