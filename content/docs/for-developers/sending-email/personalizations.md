@@ -16,7 +16,7 @@ When sending email via the v3 Mail Send endpoint, the various metadata about the
 
 Think of the personalizations section of the request body like the envelope of a letter: the fields defined within personalizations apply to each individual email, not the recipient. Like an envelope, personalizations are used to identify who should receive the email as well as specifics about how you would like the email to be handled. For example, you can define when you would like it to be sent, what headers you would like to include, and any substitutions or custom arguments you would like to be included with the email.
 
-`personalizations` allow you to define:
+Personalizations allow you to define:
 
 * "to", "cc", "bcc" - The recipients of your email.
 * "subject" - The subject of your email.

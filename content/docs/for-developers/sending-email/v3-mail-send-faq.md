@@ -51,7 +51,7 @@ Everything that could be accomplished by using the x-smtpapi parameter in the v2
 
 For more general information about the v3 Mail Send endpoint, please visit the [v3 Mail Send Overview](https://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/index.html). Below, you will find links to more in depth information about the endpoint.
 
-Related Resources:
+## Additional Resources
 
 * [v3 Mail Send Overview](https://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/index.html)
 * [SandBox Mode]({{root_url}}/for-developers/sending-email/sandbox-mode/)
