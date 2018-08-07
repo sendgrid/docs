@@ -40,10 +40,10 @@ https://api.sendgrid.com/apiv2/customer.ip.xml?api_user=ryan.burrer@sendgrid.com
 
 When defining the parameter 'list' there are a few options you can choose:
 
-- **All ** = Will list all of the IPs on your account, taken or available.
-- **Free ** = Will list all the free IPs on your account. For instance, if an IP is in use by a subuser or parent account then that IP will not be listed.
-- **Taken ** = Will list all of the IP addresses that are assigned to your parent and/or subuser accounts.
-- **Available ** = Will list all of the unassigned IP addresses for the account. If a subuser is deactivated _and it _is assigned an IP, that IP will show up on this list since that IP address is not technically in use.
+- **All** - Will list all of the IPs on your account, taken or available.
+- **Free** - Will list all the free IPs on your account. For instance, if an IP is in use by a subuser or parent account then that IP will not be listed.
+- **Taken** - Will list all of the IP addresses that are assigned to your parent and/or subuser accounts.
+- **Available** - Will list all of the unassigned IP addresses for the account. If a subuser is deactivated _and it _is assigned an IP, that IP will show up on this list since that IP address is not technically in use.
 <center>
 <strong>Response Example<br></strong><img src="http://content.screencast.com/users/Ryan.Burrer/folders/Jing/media/0dc1923b-fff9-4446-aff1-5dcab41929a4/00000096.png" alt="" align="middle">
 </center>
@@ -57,9 +57,9 @@ https://api.sendgrid.com/apiv2/customer.sendip.json?api_user=ryan.burrer@sendgri
 
 When defining this call's 'set' parameter, you have a few options for appending the subuser's IP:
 
-- **None ** = removes all of the IPs on the associated account.
-- **All ** = applies all of the possible IPs to the account.
-- **Specify** = Specify the IPs to the subuser
+- **None** - removes all of the IPs on the associated account.
+- **All** - applies all of the possible IPs to the account.
+- **Specify** - Specify the IPs to the subuser
 <center>
 <strong>Success Message</strong>
 <p class="wysiwyg-text-align-left"><img src="http://content.screencast.com/users/Ryan.Burrer/folders/Jing/media/5e355c42-487e-442a-bd2b-89c9d80dd7d0/00000094.png" alt="" align="middle"></p>
@@ -116,15 +116,11 @@ https://api.sendgrid.com/apiv2/customer.auth.json?api_user=ryan.burrer@sendgrid.
 <p><img src="http://content.screencast.com/users/Ryan.Burrer/folders/Jing/media/d8482205-976f-4f82-ad3a-77503e867c2f/00000095.png" alt=""></p>
 </center>
 <center>
-<br><strong>That's All, Folks!</strong>
-</center>
 
-If you have followed all of these steps then you have just created a new subuser using the Subuser API. Give yourself a high five!
 
-But wait, there's more...
+## Additonal Resources
 
-Now that you have created a new subuser you can change the [Event Notification URL](https://sendgrid.com/docs/API_Reference/Customer_Subuser_API/event_notification_url.html), the subuser's enabled [apps](https://sendgrid.com/docs/API_Reference/Customer_Subuser_API/apps.html), and even set [account limits](https://sendgrid.com/docs/API_Reference/Customer_Subuser_API/account_limits.html) for the subuser.
+* [Event Notification URL](https://sendgrid.com/docs/API_Reference/Customer_Subuser_API/event_notification_url.html)
+* [Apps](https://sendgrid.com/docs/API_Reference/Customer_Subuser_API/apps.html)
+* [Account Limits](https://sendgrid.com/docs/API_Reference/Customer_Subuser_API/account_limits.html)
 
-<center>
-
-</center>
