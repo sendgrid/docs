@@ -60,7 +60,6 @@
     "stylefmt": "^6.0.0",
     "stylelint": "^8.4.0",
     "stylelint-config-standard": "^18.0.0",
-    "travis-ci-cloudfront-invalidation": "^1.1.0",
     "write-good": "^0.11.3"
   },
   "keywords": [
