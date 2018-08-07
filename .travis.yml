@@ -6,10 +6,6 @@ branches:
   - a-new-hope-episode-iv
 node_js:
 - 8.4.0
-python:
-- 3.7
-pip:
-- 18.0
 cache:
 - pip
 - yarn
@@ -31,4 +27,4 @@ deploy:
     branch: a-new-hope-episode-iv
 after_deploy:
 - aws configure set preview.cloudfront true
-- test $TRAVIS_BRANCH = "a-new-hope-episode-iv" && aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DIST_ID --paths "/*"
+- test $TRAVIS_BRANCH = "a-new-hope-episode-iv" && sudo aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DIST_ID --paths "/*"
