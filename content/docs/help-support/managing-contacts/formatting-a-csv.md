@@ -18,15 +18,7 @@ You can easily add contacts to your contact database by uploading a CSV into Mar
 
 Here are some rules to follow when formatting a CSV to upload into Marketing Campaigns.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
- ### Contact Info
-=======
 ### Contact Info
->>>>>>> upstream/a-new-hope-episode-iv
-=======
-### Contact Info
->>>>>>> upstream/a-new-hope-episode-iv
 
 Your CSV should contain the following information about each contact:
 
