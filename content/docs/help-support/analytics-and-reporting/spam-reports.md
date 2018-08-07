@@ -1,23 +1,30 @@
 ---
+layout: page
+weight: 0
+title: Spam Reports
+group: tracking
 seo:
   title: Spam Reports
-  description: Spam Reports are triggered when a customer clicks the spam button in their email client.
-  keywords: spam report, spam reports
-title: Spam Reports
-weight: 0
-layout: page
+  description: When a recipient marks your email as spam, their mail provider will let SendGrid know. We will help to prevent you from sending email to this recipient again.
+  keywords: spam reports, recipient spam report, recipient marked as spam, spam email report
 navigation:
-  show: false
+  show: true
 ---
 
-Spam Reports are triggered when a customer clicks the spam button or puts your email in their [spam folder]({{root_url}}/glossary/bulk-mail-folder/) within their email client such as Yahoo, Outlook or AOL. Spam reports can only be gathered from Internet Service Providers (ISPs) that provide a Feedback loop.
+[Spam reports]({{root_url}}/glossary/spam-reports/) happen when a recipient indicates that they think your email is [spam]({{root_url}}/glossary/spam/) and then their email provider tells SendGrid. The list provided here can be filtered by email address or date.
 
-It is important that spam reporter email addresses are permanently removed from your send list even if the customer has previously opted in. Continuing to send to customers that have reported your email as spam can severely affect your deliverability rating.
+## 	Searching Spam Reports by Date
+ 	
+In the top right corner, you will see a calendar icon. Click this and choose the spam report dates you would like to search between. Your recipient list will refresh, showing the recipients who marked your email as spam between these dates.
 
-<call-out>
+## 	Removing Recipients From The List
+ 	
+When you select the checkboxes next to the recipient names or select all, using the checkbox next to the search box, you will see a new button at the top of the page. From this list, you can choose to remove the selected recipients from the list.
 
-Make it easier for someone to find the unsubscribe button than it is to find the spam button.
+## 	Download Spam Reports as CSV
+ 	You can download your Global Unsubscribe list as a CSV by clicking the gear icon at the top of the page and selecting “Download CSV.” The file will download in your browser right away.
 
-</call-out>
-
-
+## 	Additional Resources
+ 	
+- [Spam Reports API](https://sendgrid.com/docs/API_Reference/Web_API_v3/spam_reports.html)
+- [Invalid Emails API](https://sendgrid.com/docs/API_Reference/Web_API_v3/invalid_emails.html)
