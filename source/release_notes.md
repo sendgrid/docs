@@ -32,7 +32,7 @@ The following new features and changes to the service are available.
 </table>
 
 {% anchor h2 %}
-7 August 2018
+8 August 2018
 {% endanchor %}
 
 {% anchor h3 %}
