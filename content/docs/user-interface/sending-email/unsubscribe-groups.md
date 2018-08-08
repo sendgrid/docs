@@ -95,6 +95,6 @@ When you use the [SendGrid API with unsubscribe groups]({{root_url}}/API_Referen
 
 ## 	Additional Resources
 
-- [Bounces]({{root_url}}/help-support/sending-email/bounces/)
+- [Bounces]({{root_url}}/user-interface/sending-email/bounces/)
 - [Group Unsubscribes](https://app.sendgrid.com/suppressions/group_unsubscribes)
 - [SendGrid API with unsubscribe groups]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/index.html)

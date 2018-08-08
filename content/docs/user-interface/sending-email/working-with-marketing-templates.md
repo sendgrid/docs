@@ -19,7 +19,7 @@ We provide a collection of pre-built, responsive templates that you may begin us
 
 
  ## 	Creating a New Template
-  	
+
 *To create a new template:*
 
 1. From the left-hand navigation, select **Campaigns**, and then select **Templates**.
@@ -33,7 +33,7 @@ Developers can use the [POST /campaigns API](https://sendgrid.api-docs.io/v3.0/c
 </call-out>
 
  ## 	Editing an Existing Template
-  	
+
 You can only edit custom templates (templates that you have created yourself or duplicated from a SendGrid pre-built template).
 
 *To edit a template:*
@@ -49,7 +49,7 @@ You can only edit custom templates (templates that you have created yourself or 
 
 
  ## 	Duplicating a SendGrid Template
-  	
+
 You can easily duplicate a pre-built template provided by SendGrid.
 
 *To duplicate a SendGrid template:*
@@ -68,14 +68,14 @@ You can easily duplicate a pre-built template provided by SendGrid.
 1. Click the **action menu** and select **Duplicate**.
 
  ## 	Creating a Template from a Campaign
-  	
+
 *To create a new template from an existing campaign:*
 
 1. From the left-hand navigation, select **Marketing Campaigns**, and then click **Campaigns**.
 1. Find the campaign you would like to use, click the **action menu**, and then select **Create Template**.
 
  ## 	Additional Resources
-  	
-- [Sending an Email]({{root_url}}/help-support/sending-email/how-to-send-email/)
-- [Design Editor]({{root_url}}/help-support/sending-email/editor/#-The-Design-Editor)
-- [Code Editor]({{root_url}}/help-support/sending-email/editor/#the-code-editor)
+
+- [Sending an Email]({{root_url}}/user-interface/sending-email/how-to-send-email/)
+- [Design Editor]({{root_url}}/user-interface/sending-email/editor/#-The-Design-Editor)
+- [Code Editor]({{root_url}}/user-interface/sending-email/editor/#the-code-editor)
