@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-The SMTP API JSON string allows you to attach an unlimited number of unique arguments to your email **up to 10,000 bytes**. The arguments are used only for tracking. They can be retrieved through the [Event API]({{root_url}}/for-developers/tracking-events/event/) or the [Email Activity]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed/) page.
+The SMTP API JSON string allows you to attach an unlimited number of unique arguments to your email **up to 10,000 bytes**. The arguments are used only for tracking. They can be retrieved through the [Event API]({{root_url}}/for-developers/tracking-events/event/) or the [Email Activity]({{root_url}}/user-interface/analytics-and-reporting/email-activity-feed/) page.
 
 These arguments can be added using a JSON string like this:
 

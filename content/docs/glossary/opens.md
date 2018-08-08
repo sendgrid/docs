@@ -13,7 +13,7 @@ SendGrid inserts a small, transparent image into all emails that will be tracked
 
 Not all email clients load images by default. Microsoft’s Outlook, Apple’s Mail.app, Mozilla’s Thunderbird, and Google’s Gmail do not load images. As such, there may be many occasions where recipients will have received a message, opened it, and it will never be counted as opened because there is no way to track the event.
 
-In [Statistics]({{root_url}}/help-support/analytics-and-reporting/stats-overview/) the "opens percentage" is the total number of times your users opened your emails, divided by the total number of Delivered messages.
+In [Statistics]({{root_url}}/user-interface/analytics-and-reporting/stats-overview/) the "opens percentage" is the total number of times your users opened your emails, divided by the total number of Delivered messages.
 
 The “Unique opens” percentage is the number of unique individuals that have opened your emails, divided by the total number of Delivered messages.
 
