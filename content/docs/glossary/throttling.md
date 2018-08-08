@@ -10,7 +10,7 @@ navigation:
   show: false
 ---
 
-So, you tried to send a bunch of emails, and when you checked your [Event Webhook]({{root_url}}/for-developers/tracking-events/event/) or your [Email Activity]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed/) page, you see a number of messages are marked as "Deferred" instead of "Delivered". Or maybe you're noticing a lot of addresses in your [Blocks](https://app.sendgrid.com/suppressions/blocks), but not many in your Bounces. What? Why aren't your recipients currently in awe at the glory of your amazing message?
+So, you tried to send a bunch of emails, and when you checked your [Event Webhook]({{root_url}}/for-developers/tracking-events/event/) or your [Email Activity]({{root_url}}/ui/analytics-and-reporting/email-activity-feed/) page, you see a number of messages are marked as "Deferred" instead of "Delivered". Or maybe you're noticing a lot of addresses in your [Blocks](https://app.sendgrid.com/suppressions/blocks), but not many in your Bounces. What? Why aren't your recipients currently in awe at the glory of your amazing message?
 
 SendGrid continues to attempt to send messages for up to 72 hours or until successful delivery. Normally, it takes between a few minutes and a few hours for a deferred messages successful delivery - it depends on the receiving mail server.
 
@@ -18,7 +18,7 @@ Throttling is when a receiving server refuses a message, but with a specific exp
 
 ## 	What causes a deferral?
 
--   The receiving server doesn't recognize your IP, and may think you're sending spam. This is why [warming up your IP]({{root_url}}/help-support/sending-email/how-to-warm-up-an-ip/) is so important. IP Warmup allows recipient mail servers to become familiar with your sending habits, and later anticipate your messages.
+-   The receiving server doesn't recognize your IP, and may think you're sending spam. This is why [warming up your IP]({{root_url}}/ui/sending-email/how-to-warm-up-an-ip/) is so important. IP Warmup allows recipient mail servers to become familiar with your sending habits, and later anticipate your messages.
 
 -   The receiving server doesn't have any open ports to receive email.
 

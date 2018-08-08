@@ -24,11 +24,11 @@ Your first 2,000 contacts are free. After 2,000 contacts, SendGrid charges $10 f
 </call-out>
 
  ### 	Formatting a CSV
- 	
+
 You can easily add contacts to your contact database by uploading a CSV of your contacts to SendGrid. If you have your contacts in a spreadsheet, simply save that sheet as a .csv file using a spreadsheet application like Microsoft Excel or Google Sheets. You can also export your contacts from most database systems as a .csv file.
 
  ### 	Uploading a CSV
- 	
+
 *To add new contacts:*
 
 1. Click **Add Contacts** and then select **Upload CSV**.
@@ -46,7 +46,7 @@ You can easily add contacts to your contact database by uploading a CSV of your 
 
 <call-out>
 
-After uploading contacts, you can define segments for individual contacts or lists based on specified criteria. For more information, see [Segmenting Your Contacts]({{root_url}}/help-support/managing-contacts/segmenting-your-contacts/).
+After uploading contacts, you can define segments for individual contacts or lists based on specified criteria. For more information, see [Segmenting Your Contacts]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/).
 
 </call-out>
 
@@ -68,7 +68,7 @@ The notification email contains the following information:
 * Number of errors
 * Error messages for each errored row
 
-If there are any errors, there will be a link to download a CSV containing the errored rows so that you can reformat and reupload those contacts. For more help resolving issues with uploading a CSV, see [Formatting a CSV]({{root_url}}/help-support/managing-contacts/formatting-a-csv/).
+If there are any errors, there will be a link to download a CSV containing the errored rows so that you can reformat and reupload those contacts. For more help resolving issues with uploading a CSV, see [Formatting a CSV]({{root_url}}/ui/managing-contacts/formatting-a-csv/).
 
 <call-out>
 
@@ -83,7 +83,7 @@ If you upload the same contact more than once, SendGrid updates the data, assumi
 </call-out>
 
  ### 	Manually Add a Contact
- 	
+
 *To manually add a contact to your contact database:*
 
 1. Navigate to **Marketing Campaigns** and then click **Contacts**.
@@ -100,7 +100,7 @@ To add Custom Field data to a manually imported contact, navigate to the Contact
 </call-out>
 
  ### 	Creating a New List
- 	
+
 *To create a new list:*
 
 1. Click **Add Contacts** and then select **Upload CSV**.
@@ -108,7 +108,7 @@ To add Custom Field data to a manually imported contact, navigate to the Contact
 1. Choose a CSV file for upload and complete the steps listed in [Uploading a CSV ](#uploading-a-csv).
 
  ### 	Add Contacts to a List
- 	
+
 *To manually add contacts to an existing list:*
 
 1. Navigate to **Marketing Campaigns** and then click **Contacts**.
@@ -120,12 +120,12 @@ To add Custom Field data to a manually imported contact, navigate to the Contact
 
 <call-out>
 
-If you [create a segment]({{root_url}}/help-support/managing-contacts/segmenting-your-contacts/#creating-a-segment) before you upload a list, contacts that fit the segment criteria populate that segment when uploaded.
+If you [create a segment]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/#creating-a-segment) before you upload a list, contacts that fit the segment criteria populate that segment when uploaded.
 
 </call-out>
 
  ### 	Additional Resources
-  	
+
 - [Contacts API](https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html)
-- [Segmenting your Contacts]({{root_url}}/help-support/managing-contacts/segmenting-your-contacts/)
-- [Building your Contact list]({{root_url}}/help-support/managing-contacts/building-your-contact-list/)
+- [Segmenting your Contacts]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/)
+- [Building your Contact list]({{root_url}}/ui/managing-contacts/building-your-contact-list/)

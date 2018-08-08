@@ -20,7 +20,7 @@ These instructions describe how to send your first email using cURL calls. This 
 Before you can start using the API, you need to do the following:
 
 1. Create a SendGrid [account](https://sendgrid.com/pricing/).
-2. Create an [API Key]({{root_url}}/help-support/account-and-settings/api-keys/).
+2. Create an [API Key]({{root_url}}/ui/account-and-settings/api-keys/).
 3. Make sure you have [curl](https://curl.haxx.se/) installed on your machine.
 
 <call-out>
@@ -37,7 +37,7 @@ Your API call must have the following components:
 
 * A Host. The host for Web API v3 requests is always `https://api.sendgrid.com/v3/`
 * An [Authorization Header](https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-authentication#authorization-header)
-* An [API Key]({{root_url}}/help-support/account-and-settings/api-keys/) within the Authorization Header
+* An [API Key]({{root_url}}/ui/account-and-settings/api-keys/) within the Authorization Header
 * A Request. When submitting data to a resource via POST or PUT, you must submit your payload in JSON.
 
  ### 	Send your email using the API
@@ -62,7 +62,7 @@ curl --request POST \
 
 <call-out>
 
-If you have not yet set up [Sender Authentication]({{root_url}}/help-support/sending-email/how-to-set-up-domain-authentication/) in your account, you may need to check your spam folder for the email you just sent.
+If you have not yet set up [Sender Authentication]({{root_url}}/ui/sending-email/how-to-set-up-domain-authentication/) in your account, you may need to check your spam folder for the email you just sent.
 
 </call-out>
 
@@ -75,5 +75,5 @@ All responses are returned in JSON format. We specify this by sending the ``Cont
 For more information on SendGrid and where you can go from here, check out these pages:
 
 - [API Reference]({{root_url}}/api-reference/)
-- [Sender Authentication]({{root_url}}/help-support/sending-email/how-to-set-up-domain-authentication/)
-- [How to Send Email]({{root_url}}/help-support/sending-email/how-to-send-email/)
+- [Sender Authentication]({{root_url}}/ui/sending-email/how-to-set-up-domain-authentication/)
+- [How to Send Email]({{root_url}}/ui/sending-email/how-to-send-email/)

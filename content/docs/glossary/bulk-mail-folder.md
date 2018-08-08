@@ -14,4 +14,4 @@ The Bulk Mail Folder is also called the “spam” or “junk” folder, the fol
 
 There are many factors which determine whether or not a message lands in the Bulk Mail Folder. Each receiving mail server will use its own criteria to determine the quality of each message it receives.
 
-SendGrid offers many [best practices]({{root_url}}/help-support/sending-email/email-deliverability/) to help ensure your message lands appropriately in the inbox. Keep your emails out of the Junk folder by learning more about email deliverability.
+SendGrid offers many [best practices]({{root_url}}/ui/sending-email/email-deliverability/) to help ensure your message lands appropriately in the inbox. Keep your emails out of the Junk folder by learning more about email deliverability.

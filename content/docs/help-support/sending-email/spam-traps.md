@@ -27,16 +27,16 @@ Spam traps are so important because so many large ISPs, spam filter providers an
 
 The second critical aspect to pay attention to is **list contamination**. List contamination is when an email address that is a spam trap was added deliberately or accidentally to an unconfirmed list. (This is a list with single opt-in or notified opt-in)  To avoid list contamination make sure to check the correct spelling of the list’s email addresses and take advantage of double opt-in for every list.
 
-The last important tool in avoiding spam traps is the **age of the list**. Like previously mentioned, spam traps are sometimes sourced in outdated email addresses that are no longer valid. Going for long periods of time (over one year) without sending mail to an address can lead to getting caught in a spam trap. To prevent this type of spam trap, [clean out old addresses]({{root_url}}/help-support/managing-contacts/managing-contact-list/).
+The last important tool in avoiding spam traps is the **age of the list**. Like previously mentioned, spam traps are sometimes sourced in outdated email addresses that are no longer valid. Going for long periods of time (over one year) without sending mail to an address can lead to getting caught in a spam trap. To prevent this type of spam trap, [clean out old addresses]({{root_url}}/ui/managing-contacts/managing-contact-list/).
 
- 
+
 
 **How to Remove Spam Traps from Lists** :
 
- 
 
-Removing a spam trap is tricky business not to mention time consuming. It is inefficient and expensive to throw out a whole list and one way to avoid this is [list segmentation]({{root_url}}/help-support/managing-contacts/segmenting-your-contacts/). Identify clean list segments that are free of any possible spam traps. If an address has not opened any emails for over six months, it may be a spam trap and should be sent one last [confirmatory email]({{root_url}}/glossary/reconfirmation/). Clean list segments need not be sent a confirmatory email. 
 
-Why not repermission the whole list? Because confirming every subscriber’s consent to receive emails isn’t ideal. Subscribers who want to continue to receive mail may not re-subscribe because they did not notice the email or just forgot to reconfirm. 
+Removing a spam trap is tricky business not to mention time consuming. It is inefficient and expensive to throw out a whole list and one way to avoid this is [list segmentation]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/). Identify clean list segments that are free of any possible spam traps. If an address has not opened any emails for over six months, it may be a spam trap and should be sent one last [confirmatory email]({{root_url}}/glossary/reconfirmation/). Clean list segments need not be sent a confirmatory email.
+
+Why not repermission the whole list? Because confirming every subscriber’s consent to receive emails isn’t ideal. Subscribers who want to continue to receive mail may not re-subscribe because they did not notice the email or just forgot to reconfirm.
 
 To escape the woes that come with list reconfirmation, remember to ensure thorough and routine list maintenance. This will save time, reputation and a big headache.

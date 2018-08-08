@@ -14,11 +14,11 @@ navigation:
 Partner settings allow you to integrate your SendGrid account with our partners to increase your SendGrid experience and functionality.
 
 ## 	SendGrid For New Relic
- 	
-Access your email statistics via the [New Relic Dashboard](http://newrelic.com/). In less than five minutes your stats should be sent to your New Relic Dashboard. We send stats to New Relic every 5 minutes for users with the setting enabled. For more information, please see our [Setting up SendGrid for New Relic page]({{root_url}}/help-support/analytics-and-reporting/tracking-stats-using-new-relic/).
+
+Access your email statistics via the [New Relic Dashboard](http://newrelic.com/). In less than five minutes your stats should be sent to your New Relic Dashboard. We send stats to New Relic every 5 minutes for users with the setting enabled. For more information, please see our [Setting up SendGrid for New Relic page]({{root_url}}/ui/analytics-and-reporting/tracking-stats-using-new-relic/).
 
  **Settings**
- 	
+
 * Status - On or Off
 
 * New Relic License Key - The license key provided with your New Relic account.

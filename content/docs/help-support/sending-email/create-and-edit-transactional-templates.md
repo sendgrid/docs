@@ -25,7 +25,7 @@ Transactional templates are account and subuser specific. Templates created on a
 </call-out>
 
 ## 	Creating a template
- 	
+
 1. Open the transactional templates page and then click **Create Template**.
 1. Add a unique template name in the dialogue box and then click **Save**.
 1. Open the **Actions** drop-down menu to create a new version.
@@ -35,7 +35,7 @@ Transactional templates are account and subuser specific. Templates created on a
 The easiest way to get started with a new template is to use one of your previous email templates or a free template from the internet, and then modify it to fit your needs.
 
 ## 	Editing your HTML template
- 	
+
 <call-out>
 
 Email templates are table-based HTML with inline or header styles, because some well known email applications will only read table-based HTML.
@@ -44,7 +44,7 @@ Email templates are table-based HTML with inline or header styles, because some 
 
 *To add a template:*
 
-1. Open a new template in the [Code Editor]({{root_url}}/help-support/sending-email/editor/#the-code-editor) or [Design Editor]({{root_url}}/help-support/sending-email/editor/#the-design-editor) by clicking **Actions** and selecting **New Version**.
+1. Open a new template in the [Code Editor]({{root_url}}/ui/sending-email/editor/#the-code-editor) or [Design Editor]({{root_url}}/ui/sending-email/editor/#the-design-editor) by clicking **Actions** and selecting **New Version**.
 
 1. If you selected the Code Editor, copy and paste your HTML code into the code editor.
 <br></br>If you paste in an email template, it is likely that you will overwrite the default basic HTML provided in the code editor. If you selected the Design Editor, use the WYSIWYG editor with drag & drop modules to create your email template.
@@ -52,7 +52,7 @@ Email templates are table-based HTML with inline or header styles, because some 
 1. When you’re done editing, click **Save**. <br></br>Please double check that the content is formatted correctly before you send an email using this template.
 
 ## 	Preview and test your template
- 	
+
 SendGrid suggests previewing and testing your template once you have created it to ensure that the format and layout look the way you expect.
 
 *To preview your template:*
@@ -71,7 +71,7 @@ Any Substitution tags will not be populated in this test, but you will be able t
 </call-out>
 
 ## 	Managing templates
- 	
+
 From the main template view on each template group, you will see an actions menu. From this menu, you can choose to edit the name of your template, add a version, preview and test, or delete the template. You will also see an action menu for each template version. Clicking this presents a menu that allows you to preview and test, edit, duplicate, and delete the template version. You can also use the preview function to send a test.
 
 <call-out>
@@ -81,7 +81,7 @@ To delete a template, you must first delete all the versions of your template.
 </call-out>
 
  ### 	Activate your template
- 	
+
 *To activate your template:*
 
 1. Navigate to the template you wish to use and select the action menu.
@@ -94,7 +94,7 @@ A template can only have one active version at a time. If you’ve created a new
 </call-out>
 
  ### 	Duplicate a Template
- 	
+
 *To duplicate a template:*
 
 1. Navigate to the template you wish to use and select the action menu.
@@ -104,13 +104,13 @@ The app creates a clone, giving it a name that starts with "untitled". You can g
 
 
 ## 	Adding unsubscribe links to a template
- 	
-For more information about unsubscribes, check out our [unsubscribe documentation]({{root_url}}/help-support/sending-email/index-suppressions/).
+
+For more information about unsubscribes, check out our [unsubscribe documentation]({{root_url}}/ui/sending-email/index-suppressions/).
 
 
 
 ## Additional Resources
 
-- [Dynamic Templates]({{root_url}}/help-support/sending-email/how-to-send-an-email-with-dynamic-transactional-teplates/)
-- [Using Handlebars]({{root_url}}/help-support/sending-email/using-handlebars/)
-- [Design & Code Editor]({{root_url}}/help-support/sending-email/editor/)
+- [Dynamic Templates]({{root_url}}/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-teplates/)
+- [Using Handlebars]({{root_url}}/ui/sending-email/using-handlebars/)
+- [Design & Code Editor]({{root_url}}/ui/sending-email/editor/)

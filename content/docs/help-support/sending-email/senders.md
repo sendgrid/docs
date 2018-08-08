@@ -13,11 +13,11 @@ seo:
 <iframe src="https://player.vimeo.com/video/120703745" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ## 	Before you Begin
- 	
+
 Before you begin, go to your SendGrid [account settings](https://app.sendgrid.com/user/account) to verify that your timezone and account email address are correct. Verifying your account information ensures that when you upload contacts, you receive notifications and that we deliver scheduled emails at the correct time.
 
 ## 	Adding a Sender
- 	
+
 The footer of your emails automatically contains your sender information, because CAN-SPAM regulations require this information in every email you send.
 
 *To add a sender:*
@@ -45,11 +45,11 @@ You must verify your sender identity before you can edit it or use it to send a 
 </call-out>
 
   To resend your verification email, hover over the Action Menu on the Sender Management page and select **Resend Verification**.
-  
+
 <call-out>
 
 
-If you have an [authenticated domain]({{root_url}}/help-support/sending-email/how-to-set-up-domain-authentication/) and your sender email address matches that domain exactly, your sender identity will automatically verify.
+If you have an [authenticated domain]({{root_url}}/ui/sending-email/how-to-set-up-domain-authentication/) and your sender email address matches that domain exactly, your sender identity will automatically verify.
 
 </call-out>
 
@@ -60,7 +60,7 @@ Once you schedule a campaign, you cannot delete the sender identity associated w
 </call-out>
 
 ## 	Adding Sender Information to a Campaign
- 	
+
 You can insert your sender identity information into your campaigns using the following tags within your campaign or template content:
 
 1. **[Sender_Name]** - The sender's name.

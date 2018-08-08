@@ -49,7 +49,7 @@ Sending to a well-managed address list can drastically help improve your deliver
 
  ### 	Identifying Suppressions
 
-In your SendGrid Account there are different [Suppressions]({{root_url}}/help-support/sending-email/index-suppressions/) lists.
+In your SendGrid Account there are different [Suppressions]({{root_url}}/ui/sending-email/index-suppressions/) lists.
 
 **Global Unsubscribes** - Addresses on this list are opted out of all mail.
 
@@ -101,6 +101,6 @@ Use this to permanently delete your recipients from all of your contact lists an
  1. Select the check box to confirm that you want to delete all contacts and then click **Delete**.
 
  ##	Additional Resources
-- [Segmentation]({{root_url}}/help-support/managing-contacts/segmenting-your-contacts/)
-- [Unsubscribe Groups]({{root_url}}/help-support/sending-email/index-suppressions/)
-- [Custom Fields]({{root_url}}/help-support/sending-email/custom-fields/)
+- [Segmentation]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/)
+- [Unsubscribe Groups]({{root_url}}/ui/sending-email/index-suppressions/)
+- [Custom Fields]({{root_url}}/ui/sending-email/custom-fields/)

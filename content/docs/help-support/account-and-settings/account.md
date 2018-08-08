@@ -11,9 +11,9 @@ navigation:
   show: true
 ---
 
-Your profile provides SendGrid with the information we need to contact you with alerts and notifications as well as send and track your emails. Each section of your profile can be edited by clicking **Edit** next to each section. Once you have made your changes, click **Save** . This will only save the settings for that section. If you decide to abandon your changes, click **Cancel**. 
+Your profile provides SendGrid with the information we need to contact you with alerts and notifications as well as send and track your emails. Each section of your profile can be edited by clicking **Edit** next to each section. Once you have made your changes, click **Save** . This will only save the settings for that section. If you decide to abandon your changes, click **Cancel**.
 
-To edit your name and email address, click  **Change Contact Info**. 
+To edit your name and email address, click  **Change Contact Info**.
 
 **First Name** - This is be the first name of the representative from your company who should receive contacts from SendGrid.
 
@@ -45,7 +45,7 @@ If you find that your scheduled sends or stats seem like they are not quite corr
 
 </call-out>
 
-**Timezone** - The [timezone]({{root_url}}/glossary/timezone/) in which your company operates. This setting will be used by other SendGrid functionality such as [Statistics]({{root_url}}/help-support/analytics-and-reporting/stats-overview/) and scheduling sends in [Marketing Campaigns]({{root_url}}/help-support/sending-email/how-to-send-email/). Please make sure that your timezone is set to the same as your business.
+**Timezone** - The [timezone]({{root_url}}/glossary/timezone/) in which your company operates. This setting will be used by other SendGrid functionality such as [Statistics]({{root_url}}/ui/analytics-and-reporting/stats-overview/) and scheduling sends in [Marketing Campaigns]({{root_url}}/ui/sending-email/how-to-send-email/). Please make sure that your timezone is set to the same as your business.
 
 **Website** - Your company’s website
 
