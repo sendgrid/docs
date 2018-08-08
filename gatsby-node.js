@@ -55,11 +55,11 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     createNodeField({ node, name: 'permalink', value: permalink.toLowerCase() });
 
     /**
-     * Check if doc is "help-support" or "for developers" and add a field slug to represent this.
+     * Check if doc is "ui" or "for developers" and add a field slug to represent this.
      */
     let docType;
-    if (permalink.match(/help-support\/[^/]+/)) {
-      docType = 'help-support';
+    if (permalink.match(/ui\/[^/]+/)) {
+      docType = 'ui';
     } else if (permalink.match(/for-developers\/[^/]+/)) {
       docType = 'for-developers';
     } else if (permalink.match(/glossary\/[^/]+/)) {
@@ -111,14 +111,14 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage, createRedirect } = boundActionCreators;
 
   createRedirect({
-    fromPath: '/help-support/',
+    fromPath: '/ui/',
     isPermanent: true,
     redirectInBrowser: true,
     toPath: '/',
   });
 
   createRedirect({
-    fromPath: '/help-support',
+    fromPath: '/ui',
     isPermanent: true,
     redirectInBrowser: true,
     toPath: '/',
@@ -161,8 +161,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           docType,
         } = edge.node.fields;
 
-        // aggregate "help-support" categories
-        if (docType === 'help-support') {
+        // aggregate "ui" categories
+        if (docType === 'ui') {
           helpCategorySet.add(category);
         }
 
@@ -218,7 +218,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
       const helpCategoryList = Array.from(helpCategorySet);
       helpCategoryList.forEach((category, i) => {
-        // Create "help-support" category nodes.
+        // Create "ui" category nodes.
         const cat = {
           id: `${i}`,
           slug: category,
@@ -238,12 +238,12 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         // add it to userNode
         cat.internal.contentDigest = contentDigest;
 
-        // Create "/help-support/<category-slug>" pages.
+        // Create "/ui/<category-slug>" pages.
         createPage({
-          path: `/help-support/${_.kebabCase(category)}/`,
+          path: `/ui/${_.kebabCase(category)}/`,
           component: categoryPage,
           context: {
-            docType: 'help-support',
+            docType: 'ui',
             category,
           },
         });

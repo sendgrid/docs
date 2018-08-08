@@ -16,4 +16,4 @@ More information:
 
 * [Managing headers with SMTPAPI]({{root_url}}/for-developers/sending-email/building-an-smtp-email/)
 * [Managing headers with the Web API](https://sendgrid.com/docs/API_Reference/Web_API/mail.html#-send)
-* [Transactional Email Templating]({{root_url}}/help-support/sending-email/create-and-edit-transactional-templates/)
+* [Transactional Email Templating]({{root_url}}/ui/sending-email/create-and-edit-transactional-templates/)
