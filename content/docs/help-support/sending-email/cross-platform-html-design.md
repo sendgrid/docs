@@ -17,31 +17,33 @@ All Mail clients render HTML/CSS differently, in their own ways and for their ow
 ## Layout
 
 - **Avoid Using padding or margins**
+  - Certain email clients don't support these formatting settings. For example, Outlook cannot support padding, and Hotmail cannot support margins.
+  - These can be especially problematic when added inside of a table in either mail client.
 
-  - Outlook cannot support padding, and Hotmail cannot support margins
-  - Especially problematic when added inside of a table in either mail client
 
-- **Always use _inline _CSS**
-
+- **Always use inline CSS**
   - Most webmail clients (outlook.com, yahoo.com, gmail, etc) will strip CSS out when stripping the head and body tags.
 
-    - Have to render coding very carefully so it conforms to their already set HTML that you would view the message in.
+    - Make sure you render coding very carefully so it conforms to the email client's pre-set HTML.
 
 - **Avoid BR, HR, and height tags in your emails**
 
-  - Every browser/client has their own default line height and will default to this. most of the time.
+  - Every browser/client has their own default line height and will default to     this. most of the time.
   - Work around in next bullet point below.
+
 
 - **Use Tables to create general layout of email**
 
-  - Be sure that you set the width of each cell in the table
+  - Set the width of each cell in the table.
 
-    - Try to avoid cellspacing and padding
+    - Try to avoid cell spacing and padding.
+
 - **Always set a "doctype" in your code**
 - **Set wrapper reset styles in "wrapper div"**
 
   - This can override a browser or client's default styling of certain elements.
   - For more info - http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/
+  
 - **Be aware of text and font changes per device (mobile especially) and browsers**
 
   - Mobile devices and different browsers may change the font styling to increase readability
