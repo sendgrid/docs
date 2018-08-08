@@ -33,9 +33,9 @@ To begin processing email using SendGrid's Inbound Parse Webhook, you will have 
 
  ### 	Setting up an MX Record
 
-  **(1)** Navigate to the MX Records page on your hosting provider’s website. If you’re unsure who your hosting or DNS provider is, please contact your website administrator.
+1. Navigate to the MX Records page on your hosting provider’s website. If you’re unsure who your hosting or DNS provider is, please contact your website administrator.
 
-  **(2)** Create a new MX record for the subdomain (e.g. parse.yourdomain.com) you want to process incoming email.
+2. Create a new MX record for the subdomain (e.g. parse.yourdomain.com) you want to process incoming email.
 
 <call-out>
 
@@ -49,9 +49,11 @@ Do not change the MX record for your domain. If you do, you will no longer recei
 
 </call-out>
 
-  **(3)** Assign the MX record a priority of 10, and point it to the address: `mx.sendgrid.net.`
+3. Assign the MX record a priority of 10, and point it to the address: `mx.sendgrid.net.`
 
-  It should look something like this ![]({{root_url}}/images/Inbound_Parse_01_MX_Record.png)
+  It should look something like this:
+  
+   ![]({{root_url}}/images/Inbound_Parse_01_MX_Record.png)
 
 <call-out>
 
@@ -61,11 +63,11 @@ If there is no field for priority, type 10 before the address. e.g. `10 mx.sendg
 
  ### 	Pointing to a Hostname and URL
 
-  **(1)** From your SendGrid Dashboard click **Settings**, and then click **Inbound Parse**.
+ 1. From your SendGrid Dashboard click **Settings**, and then click **Inbound Parse**.
 
   You are now on the Inbound Parse page.
 
-  **(2)** Click **Add Host & URL**.
+ 2.  Click **Add Host & URL**.
 
   Here you will specify the subdomain and root domain of the receiving domain (or hostname). All emails sent to this receiving domain will be parsed.
 
@@ -77,13 +79,13 @@ The URL must be accessible from the public web.
 
 </call-out>
 
-  **(3)** Enter the subdomain (e.g. "parse") and select the authenticated root domain for your receiving domain. Enter the public URL where you would like the parsed data to be POSTed.
+3. Enter the subdomain (for example, "parse") and select the authenticated root domain for your receiving domain. Enter the public URL where you would like the parsed data to be POSTed.
 
   ![]({{root_url}}/images/setting_up_inbound_parse_1.png)
 
-  **(4)** (Optional) Check **Spam Check** if you want Inbound Parse to check incoming email for spam. Checking this box will also include the spam report and spam score in the payload.
+4. (Optional) Check **Spam Check** if you want Inbound Parse to check incoming email for spam. Checking this box will also include the spam report and spam score in the payload.
 
-  **(5)** (Optional) Check **Send Raw** if you would prefer to receive the full MIME message URL encoded in multipart/form-data.
+5. (Optional) Check **Send Raw** if you would prefer to receive the full MIME message URL encoded in multipart/form-data.
 
 <call-out type="warning">
 
@@ -91,7 +93,7 @@ If you do not check **Send Raw**, the post will be multipart/form-data with the 
 
 </call-out>
 
-  **(6)** Click Save.
+6. Click Save.
 
 You have just finished configuring Inbound Parse!
 
@@ -109,7 +111,7 @@ You can check the [Activity Feed](https://app.sendgrid.com/email_activity?) from
 
 <call-out type="warning">
 
-Remember to direct your incoming email to your hostname (e.g. example@example.com). If you do not, your incoming email will not be parsed.
+Remember to direct your incoming email to your hostname (for example, example@example.com). If you do not, your incoming email will not be parsed.
 
 </call-out>
 

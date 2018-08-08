@@ -1,9 +1,9 @@
 ---
 seo:
-  title: Can I stop a send in progress?
+  title: Stopping an in-progress send
   description: Can I stop a send in progress?
   keywords: pause, halt, delete, queue, stop, interrupt
-title: Can I stop a send in progress?
+title: Stopping an in-progress send
 group: api-v3
 weight: 0
 layout: page

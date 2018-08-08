@@ -36,11 +36,11 @@ When viewing the API keys page, you will see a list of your current API keys alo
 
 ## 	Creating an API key
  	
-1. Go to the API Keys page in the SendGrid UI, and click `Create API Key`.
+1. Go to the API Keys page in the SendGrid UI, and click **Create API Key**.
 1. Give your API key a name.
 1. Select **Full Access**, **Restricted Access**, or **Billing Access**.
 1. If you're selecting **Restricted Access**, or **Billing Access**, select the specific permissions to give each category. For more information, see [API key permissions](#api-key-permissions).
-1. Click `Create a Key`.
+1. Click **Create and View**.
 1. Copy your API Key somewhere safe. For security reasons, do not put it directly in your code, or commit it somewhere like Github.
 
 <call-out type="warning">

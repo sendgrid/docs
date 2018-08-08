@@ -13,25 +13,35 @@ You can control a website, mobile backend and SendGrid all from within the Windo
 
 To start, create a SendGrid account from the management portal:
 
-1.	Click NEW at the bottom left
-<br/>
-![Click New]({{root_url}}/images/azure_1.png)
-<br/>
-2.	Click STORE to load up the list of Add-ons
-3.	Find SendGrid in the list and click it
-![Find SendGrid]({{root_url}}/images/azure_2.png)
-4.	Then click the arrow at the lower right to go to step 2
-5.	Choose the Free plan for now for 25,000 free emails per month
-![Choose]({{root_url}}/images/azure_3.png)
-6.	Proceed to step 3 and click Purchase
+1.	Click **New** at the bottom left.
 
-Now, we’ll create a Windows Azure Website:
 
-1.	Click NEW at the bottom left
-2.	Click Website, then Quick Create
-![Click]({{root_url}}/images/azure_4.png)
-3.	Set the URL, such as `website.azurewebsites.net`
-4.	Click Create Web Site on the bottom right
+![]({{root_url}}/images/azure_1.png)
+
+
+2.	Click **Store** to load up the list of Add-ons.
+
+3.	Select **SendGrid**.
+
+![]({{root_url}}/images/azure_2.png)
+
+4.	Then click the arrow at the lower right to go to step 2.
+5.	Choose the Free plan for now for 25,000 free emails per month.
+
+![]({{root_url}}/images/azure_3.png)
+
+6.	Proceed to step 3 and click **Purchase**.
+
+*To create a Windows Azure Website:*
+
+1.	Click **New** at the bottom left.
+2.	Select **Website**, then **Quick Create**.
+
+
+![]({{root_url}}/images/azure_4.png)
+
+3.	Set the URL, such as `website.azurewebsites.net`.
+4.	Click **Create Web Site** on the bottom right.
 
 That’s it! You now have a website running on Azure. Now let’s create something cool.
 
@@ -44,11 +54,15 @@ It’s a good idea to choose a subdomain like playlist.example.com, rather than 
 Find your IP address and note the further instructions in the management portal:
 
 1.	Select your website from the list and then click SCALE on the top menu bar.
+
 ![Select]({{root_url}}/images/azure_5.png)
-2.	Change the Web Site Mode to Shared, click SAVE, then YES
-3.	Click CONFIGURE at the top menu bar, then scroll down to click MANAGE DOMAINS
+
+2.	Change the Web Site Mode to Shared, click **Save**, then select **Yes**.
+3.	Click **Configure** at the top menu bar, then scroll down to click **Manage Domains**.
 4.	Add your full subdomain plus domain, like playlist.example.com and click the check mark
+
 ![Add]({{root_url}}/images/azure_6.png)
+
 5.	Note the IP address and the instructions on this page. You’ll use these at your host or registrar when you modify your DNS settings.
 
 Now you need to update your own DNS settings outside of the Windows Azure interface. This points your domain’s web traffic to Windows Azure and your email to SendGrid. How you change your DNS depends on where your DNS is administered, which could be your host or domain registrar.
@@ -63,10 +77,12 @@ DNS changes can take an hour or more to propagate. Back at Windows Azure’s dom
 
 While you're waiting for DNS to be ready, you can prepare your SendGrid Incoming Parse API webhook. From the Windows Azure interface:
 
-1.	Click the SENDGRID APP SERVICE from your all items list
-2.	In the management section, click the GO TO THE SENDGRID WEBSITE FOR NEXT STEPS link
+1.	Click the **SendGrid App Service** from your all items list.
+2.	In the management section, select  **Go to the SendGrid website for next steps**.
+
 ![Click]({{root_url}}/images/azure_7.png)
-3.	Now you’re looking at the SendGrid interface--click DEVELOPERS at the top
+
+3.	Now you’re looking at the SendGrid interface--click **Developers** at the top.
 4.	Click PARSE INCOMING EMAILS on the right and you’ll see some fields to fill out
 ![Click]({{root_url}}/images/azure_8.png)
 5.	Fill in the values you’ve used for your hostname and URL. For example:
@@ -74,7 +90,7 @@ While you're waiting for DNS to be ready, you can prepare your SendGrid Incoming
 	* Hostname: `playlist.example.com`
 
 	* URL: `http://website.azurewebsites.net/email`
-6.	Click ADD HOST & URL
+6.	Click **Add Host & URL**.
 
 Once the DNS has propagated, you’ll be able to receive email to any email address `@playlist.example.com`. In the next step, we’ll make sure your website on Windows Azure is ready to accept those emails.
 
@@ -83,25 +99,27 @@ Once the DNS has propagated, you’ll be able to receive email to any email addr
 Before you can put the code in place, you need to prepare your source control system, which will be Git in this case. Make sure you have Git installed on your local machine before proceeding. There are downloads for Windows, Mac, Linux and Solaris.
 Now set up your repository within the Windows Azure interface:
 
-1.	Click the website name from your all items list
-2.	Under quick glance, click SET UP DEPLOYMENT FROM SOURCE CONTROL
-3.	Choose LOCAL GIT REPOSITORY
+1.	Click the website name from your all items list.
+2.	Under quick glance, click **Set up deployment from source control**.
+3.	Choose **local git repository**.
 4.	Copy the Git URL to your clipboard--you will need it later, and it should look similar to `https://username@subdomain.scm.azurewebsites.net/playlist.git`
 
 Now you need to set some environment variables, so you don’t expose these credentials in your code. Follow these steps to find those credentials:
 
-You can find the SendGrid credentials within the Windows Azure management portal:
+*To find your SendGrid credentials within the Windows Azure management portal:*
 
-1.	Click SENDGRID from the all items list.
-2.	In the bar on the bottom, click CONNECTION INFO
+1.	Click **SendGrid** from the all items list.
+2.	In the bar on the bottom, click **Connection Info**.
+
 ![In]({{root_url}}/images/azure_9.png)
+
 3.	A screen will pop up with your password, SMTP server, and username
 
 To get your Rdio API Key, which you'll use to create your playlist, follow the “How to get started” instructions here: [http://developer.rdio.com](http://developer.rdio.com).
 
 With the credentials in hand, it’s time to add them as environment variables within the Windows Azure management portal:
 
-1.	Choose your web site from the all items list, then click CONFIGURE
+1.	Choose your web site from the all items list, then click **Configure**.
 2.	Under “app settings” set the following KEY VALUE pairs
 
 	* `SENDGRID_USER = username`
@@ -153,20 +171,25 @@ Windows Azure can also run a backend-as-a-service for your app, which allows you
 
 Follow these steps to enable Mobile Services from the Windows Azure interface:
 
-1.	Click NEW at the bottom left, select MOBILE SERVICE, then click CREATE
+1.	Click NEW at the bottom left, select MOBILE SERVICE, then click **Create**.
 2.	Choose a URL -- this is up to you, it will be internal to your app
-![Choose]({{root_url}}/images/azure_10.png)
-3.	Click NEXT
-4.	Choose a Server Login Name and Password
-5.	Choose CONFIGURE ADVANCED DATABASE SETTINGS
-![Choose]({{root_url}}/images/azure_11.png)
-6.	Click NEXT, then review and click COMPLETE
 
-Now you need to add a table to the database:
+![Choose]({{root_url}}/images/azure_10.png)
+
+3.	Click **Next**.
+4.	Choose a Server Login Name and Password
+5.	Choose **Configure advanced database settings**.
+
+![Choose]({{root_url}}/images/azure_11.png)
+
+6.	Click **Next**, then review and click **Complete**.
+
+*To add a table to the database:*
 
 1.	Click on the name of your mobile service to access its settings
-2.	Click DATA, then Add a Table
-3.	Choose a table name, update permissions and click COMPLETE
+2.	Click **Data**, then Add a Table
+3.	Choose a table name, update permissions and click **Complete**.
+
 ![Choose]({{root_url}}/images/azure_12.png)
 
 In your index.html file add the following code near the closing body tag to add the Windows Mobile Services library to your app:
@@ -198,9 +221,10 @@ The Windows Azure Mobile Services SDK simplifies the process of standing up a ba
 
 We can download a pre-packaged mobile app from within the Windows Azure interface:
 
-1.	Click the name of your mobile service from the all items menu
+1.	Click the name of your mobile service from the all items menu.
 2.	You should see the quickstart tab. Click iOS then Create a new iOS app.
-3.	Click the DOWNLOAD button to grab the source code.
+3.	Click **Download** to grab the source code.
+
 ![Download]({{root_url}}/images/azure_15.png)
 
 To create a native iPhone app, you’ll need to have XCode installed on a Mac. It’s a big download (over 1 GB), so find something to do while you wait.
@@ -209,7 +233,9 @@ Now you’ll want to edit the sample app you downloaded from Windows Azure:
 
 1.	Expand the files on your computer and open the project file using XCode.
 2.	Update the credentials and table name in `QSTodoService.m` with the ones you used when you created your mobile service.
+
 ![Credentials]({{root_url}}/images/azure_17.png)
+
 3.	Update the function refreshDataOnSuccess in `QSTodoService.m` to return all from the queue. Remove the existing code there and replace it with:
 
 ``` objc
@@ -275,10 +301,13 @@ with this line:
 
 Now you can make some adjustments to the interface:
 
-1.	Click on the storyboard, then the TEXT INPUT field.
+1.	Click on the storyboard, then the **Text Input** field.
+
 ![Click]({{root_url}}/images/azure_19.png)
+
 2.	On the right, change the placeholder text to read: “Enter your song request”
 3.	Next, double click on the button and rename it to “Send”. You will have to adjust the size of the text box and button by single clicking and adjusting.
+
 ![Buttons]({{root_url}}/images/azure_20.png)
 
 Your project in XCode should look like the above screenshot. When you run the iPhone app, you should be able to see requested songs and add your own songs to the shared playlist.

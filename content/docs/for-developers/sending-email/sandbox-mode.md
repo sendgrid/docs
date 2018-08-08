@@ -43,7 +43,7 @@ If you submit a request with sandbox mode enabled, but your request body is inva
  ### 	Example Sandbox Mode JSON
  	
 
-*Please note:* The following is an invalid request body intended to demonstrate the validation behavior of sandbox mode for a bad request.
+The following is an invalid request body intended to demonstrate the validation behavior of sandbox mode for a bad request.
 
 **Request**
 ```json
