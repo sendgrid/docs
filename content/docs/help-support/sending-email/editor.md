@@ -65,7 +65,7 @@ You can only edit unsent campaigns.
 
 </call-out>
 
-You can select a Blank Template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates]({{root_url}}/help-support/sending-email/create-and-edit-transactional-templates/).
+You can select a Blank Template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates]({{root_url}}/knowledge-center/sending-email/create-and-edit-transactional-templates/).
 
 <call-out>
 
@@ -211,7 +211,7 @@ SendGrid’s flexible design editor allows you to build your templates and campa
 ![]({{root_url}}/img/campaigns_dashboard_categories_search.png)
 
 3. Select the template that you want to use for your campaign.
-<br>You can select a Blank Template, a custom template that you have already created, or one of SendGrid’s pre-built templates. For more information, see [Working With Marketing Templates]({{root_url}}/help-support/sending-email/working-with-marketing-templates/)
+<br>You can select a Blank Template, a custom template that you have already created, or one of SendGrid’s pre-built templates. For more information, see [Working With Marketing Templates]({{root_url}}/knowledge-center/sending-email/working-with-marketing-templates/)
 4. Select **Design Editor**, and then click **Continue**.
 <br>The Design Editor opens.
 
@@ -739,8 +739,8 @@ Assigning categories to a campaign allows you to track emails based on your own 
 
 ## Additional Resources
 
-* [Sending an Email]({{root_url}}/help-support/sending-email/how-to-send-email/)
-* [A/B Testing]({{root_url}}/help-support/sending-email/a-b-testing/)
-* [Campaign Statistics]({{root_url}}/help-support/analytics-and-reporting/campaign-stats/)
-* [Marketing Templates]({{root_url}}/help-support/sending-email/working-with-marketing-templates/)
+* [Sending an Email]({{root_url}}/knowledge-center/sending-email/how-to-send-email/)
+* [A/B Testing]({{root_url}}/knowledge-center/sending-email/a-b-testing/)
+* [Campaign Statistics]({{root_url}}/knowledge-center/analytics-and-reporting/campaign-stats/)
+* [Marketing Templates]({{root_url}}/knowledge-center/sending-email/working-with-marketing-templates/)
 

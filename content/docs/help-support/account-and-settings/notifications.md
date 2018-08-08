@@ -10,7 +10,7 @@ seo:
   override: true
   description:
 ---
- 	
+
 If you would like to have notifications sent to an email other than your parent account address, you can opt in to receive email notifications from SendGrid about your account's marketing campaigns activity.
 
 *To add an email address to notifications:*
@@ -27,5 +27,5 @@ Email notifications about CSV upload summaries, sender verifications, A/B test w
 </call-out>
 
  ## 	Additional Resources
-  	
-- [Contacts]({{root_url}}/docs/API_Reference/help-support/managing-contacts/adding-contacts/)
+
+- [Contacts]({{root_url}}/docs/API_Reference/knowledge-center/managing-contacts/adding-contacts/)

@@ -31,7 +31,7 @@ Once you have selected the categories, your top most graph will show you how eac
 
 You can remove individual categories from the list of categories you selected initially, by clicking **Categories** and unchecking categories. The graph will refresh, showing only the selected categories.
 
-You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview/#statistics-filters).
+You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/knowledge-center/analytics-and-reporting/stats-overview/#statistics-filters).
 
 ## 	Individual Metrics Comparison
 
@@ -53,6 +53,6 @@ You can also choose to show actual counts or percentages, by clicking the corres
 
 ## 	Additional Resources
 
-- [Subusers]({{root_url}}/help-support/account-and-settings/subusers.html)
+- [Subusers]({{root_url}}/knowledge-center/account-and-settings/subusers.html)
 - [Using Categories with the SMTP API]({{root_url}}/for-developers/sending-email/categories/)
-- [Statistics Filters]({{root_url}}/help-support/analytics-and-reporting/stats-overview.html#statistics-filters)
+- [Statistics Filters]({{root_url}}/knowledge-center/analytics-and-reporting/stats-overview.html#statistics-filters)

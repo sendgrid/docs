@@ -24,7 +24,7 @@ seo:
 From the campaign stats page, you will be able to see your bounces, clicks, opens, etc.
 
  ### 	Exporting Campaign Statistics
- 	
+
 *To export a CSV with raw stats:*
 
  1. From the Campaigns page, click on the name of the campaign you want to review.
@@ -32,7 +32,7 @@ From the campaign stats page, you will be able to see your bounces, clicks, open
  1. Download the raw data by clicking **Export CSV** in the right-hand corner.
 
  ### 	Exporting Statistics for Multiple Campaigns
- 	
+
 You can export a CSV containing the statistics for multiple campaigns. This exported CSV will closely resemble the CSV exported for a single campaign’s statistics, except for two additional columns containing the campaign name and ID for each row of statistics. These columns will be labeled “Campaign Name” and “Campaign ID”, respectively.
 
 *To export statistics for multiple campaigns:*
@@ -54,7 +54,7 @@ Every stats CSV that you export will contain a row containing the totals for eac
 Using your campaign statistics, you can identify unengaged recipients and reignite those relationships as well as continue to reach your engaged audience.
 
  ### 	Viewing Campaign Clicks and Opens
- 	
+
 Marketing Campaigns makes it very easy to view recipients who have either opened one of your campaigns or have clicked links within your campaign.
 
 *To view campaign clicks and opens:*
@@ -64,19 +64,19 @@ Marketing Campaigns makes it very easy to view recipients who have either opened
    <br>A real-time list of all recipients who either opened your campaign or clicked a link within your campaign appears.
 
  ### 	Creating a Segment Based on Your Engagement Metrics
- 	
+
 *To create a segment of recipients based on who clicked within or opened one of your campaigns:*
 
 1. From the Campaigns page or the individual campaign stats page, hover over the **Unique Opens** or **Unique Clicks** stats.
 1. Click **View Details** and then select **Create Segment**.
 
-   A window opens with segmentation options. By default, the segment will contain the conditions to capture all recipients who either opened your campaign or clicked within your campaign. The segment will be given the name _“Contacts who [clicked/opened] [your campaign name]”_. You can rename this segment or modify the conditions of the segment as you wish directly in this window. For more information on segmentation, [click here]({{root_url}}/help-support/managing-contacts/segmenting-your-contacts/#creating-a-segment).
+   A window opens with segmentation options. By default, the segment will contain the conditions to capture all recipients who either opened your campaign or clicked within your campaign. The segment will be given the name _“Contacts who [clicked/opened] [your campaign name]”_. You can rename this segment or modify the conditions of the segment as you wish directly in this window. For more information on segmentation, [click here]({{root_url}}/knowledge-center/managing-contacts/segmenting-your-contacts/#creating-a-segment).
 
 1. Click **Save**.
 <br>You now have a dynamic segment that will continuously update as recipients engage with this campaign.
 
  ### 	Exporting a list of Engaged Recipients
- 	
+
 In addition to creating a dynamic segment based on campaign engagement as described above, you can also export a list of all contacts who have either opened your campaign or have clicked a link within your campaign (up until that moment).
 
 *To export a list of engaged recipients:*
@@ -87,6 +87,6 @@ In addition to creating a dynamic segment based on campaign engagement as descri
 1. Click **Export CSV**.
 
 ## 	Additional Resources
- 	
-- [Sending a Campaign]({{root_url}}/help-support/sending-email/how-to-send-email/)
-- [A/B Testing Your Campaign]({{root_url}}help-support/sending-email/a-b-testing/)
+
+- [Sending a Campaign]({{root_url}}/knowledge-center/sending-email/how-to-send-email/)
+- [A/B Testing Your Campaign]({{root_url}}knowledge-center/sending-email/a-b-testing/)

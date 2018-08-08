@@ -34,6 +34,6 @@ The original template you copy won't be modified and remains active in any API o
 
 ## Additional Resources
 
-- [How to send an email with Dynamic Transactional Templates]({{root_url}}/help-support/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/)
-- [Using Handlebars]({{root_url}}/help-support/sending-email/using-handlebars/)
+- [How to send an email with Dynamic Transactional Templates]({{root_url}}/knowledge-center/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/)
+- [Using Handlebars]({{root_url}}/knowledge-center/sending-email/using-handlebars/)
 - [Mail Send with Dynamic Transactional Templates](https://dynamic-templates.api-docs.io/3.0)

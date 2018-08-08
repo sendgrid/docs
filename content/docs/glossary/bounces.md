@@ -21,5 +21,5 @@ You can also [retrieve and edit your list of bounces](https://sendgrid.com/docs/
 
  ### Additional Resources:
 
-* [Bounce Forwarding]({{root_url}}/help-support/sending-email/bounces/)
-* [Email Activity & Bounces]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed/)
+* [Bounce Forwarding]({{root_url}}/knowledge-center/sending-email/bounces/)
+* [Email Activity & Bounces]({{root_url}}/knowledge-center/analytics-and-reporting/email-activity-feed/)

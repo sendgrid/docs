@@ -141,7 +141,7 @@ In contrast, the resulting email for Jane will look like the following, with her
 ```
 
 ## 	SendGrid Defined Substitution Tags
- 	While the tags above are tags that you define at the time of your send in the SMTPAPI headers, SendGrid also offers [Unsubscribe Groups tags]({{root_url}}/help-support/sending-email/create-and-edit-transactional-templates/) that have been pre-defined for you. You can use these tags within the content of your email, and you do not have to and should not, define them.
+ 	While the tags above are tags that you define at the time of your send in the SMTPAPI headers, SendGrid also offers [Unsubscribe Groups tags]({{root_url}}/knowledge-center/sending-email/create-and-edit-transactional-templates/) that have been pre-defined for you. You can use these tags within the content of your email, and you do not have to and should not, define them.
 
 ## 	Additional Resources
 

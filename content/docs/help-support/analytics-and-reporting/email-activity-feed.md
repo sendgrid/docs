@@ -12,7 +12,7 @@ seo:
 ---
 <call-out>
 
-Higher volume users may not yet have access to the new Email Activity Feed. For information about the legacy Email Activity Feed, see [Legacy Email Activity]({{root_url}}/help-support/analytics-and-reporting/email-activity/).
+Higher volume users may not yet have access to the new Email Activity Feed. For information about the legacy Email Activity Feed, see [Legacy Email Activity]({{root_url}}/knowledge-center/analytics-and-reporting/email-activity/).
 
 </call-out>
 
@@ -35,7 +35,7 @@ In order to gain access to the Email Activity Feed API, you must purchase [addit
 </call-out>
 
 ## 	Types of email activity data
- 	
+
 The Email Activity feed allows you to view specific information about messages sent from your account.
 
 <table class="table" style="table-layout:fixed">
@@ -94,11 +94,11 @@ The Email Activity feed allows you to view specific information about messages s
 </table>
 
 ## 	Filtering email activity
- 	
+
 The Email Activity feed lists each email sent. Click on each email to view the current list of triggered events for that email. Use our basic or advanced search to filter by email subject, recipients, or event types.
 
 ## 	Basic search
- 	
+
 The email address field filters with an approximate, or fuzzy search. The date field pulls filters events that fit within the precise date range specified.
 
 <call-out>
@@ -108,7 +108,7 @@ To filter by event type, like in the legacy Email Activity Feed, use [Advanced s
 </call-out>
 
 ## 	Advanced Search
- 	
+
 In addition to viewing the email activity associated with your account by recipient email address, domain, or event date, you can also use the following filters to sort your data:
 
 * API Key ID
@@ -149,7 +149,7 @@ or
 * Search emails by **all** of the following - This search will return fewer results and will pull in events that meet *every* criteria specified by the selected filters.
 
 ## 	Viewing event history
- 	
+
 *To view event history:*
 
 1. Navigate to the event you wish to view and click on the entry.
@@ -159,7 +159,7 @@ or
 ![]({{root_url}}/img/EASE_email_information.gif "Email Activity information panel")
 
 ## 	Exporting a CSV
- 	
+
 *To export a CSV:*
 
 1. In the top right corner of the activity feed, click **Export CSV**.
@@ -167,9 +167,9 @@ or
 1. Open the email and then click **Download**.
 
 ## 	Additional Resources
- 	
+
 - [Email Activity API](https://sendgrid.api-docs.io/v3.0/email-activity/filter-all-messages)
-- [Legacy Email Activity]({{root_url}}/help-support/analytics-and-reporting/email-activity/)
+- [Legacy Email Activity]({{root_url}}/knowledge-center/analytics-and-reporting/email-activity/)
 - [Getting Started with the Email Activity API]({{root_url}}/for-developers/sending-email/getting-started-email-activity-api/)
 - [Building compound Email Activity queries]({{root_url}}/for-developers/sending-email/getting-started-email-activity-api/#creating-compound-queries)
 

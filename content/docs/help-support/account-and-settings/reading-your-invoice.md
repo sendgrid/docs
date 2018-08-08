@@ -26,8 +26,8 @@ Your SendGrid invoice contains a lot of information, which may be difficult to r
 Need to send invoices to multiple addresses? Consider creating a role address on your side that includes the all of billing stakeholders in your organization, or send an email to [billing@sendgrid.com](mailto:billing@sendgrid.com).
 
 ## 	3. Charge Summary
- 	
-If you are in [a jurisdiction that SendGrid is required to charge sales tax]({{root_url}}/help-support/account-and-settings/taxes-and-tax-exempt/), here is your tax summary:
+
+If you are in [a jurisdiction that SendGrid is required to charge sales tax]({{root_url}}/knowledge-center/account-and-settings/taxes-and-tax-exempt/), here is your tax summary:
 
 ![Tax summary section]({{root_url}}/img/invoice_tax.png)
 
@@ -83,6 +83,6 @@ The Transaction Summary shows the total charges for the month, and the Payment S
 **These line items always reflect the plan you currently have, not necessarily "Pro 100k", which is shown for the purposes of demonstration.**
 
 ## 	Additional Resources
- 	
+
 - [SendGrid Pricing](https://sendgrid.com/pricing/)
-- [Billing]({{root_url}}/help-support/account-and-settings/billing/)
+- [Billing]({{root_url}}/knowledge-center/account-and-settings/billing/)

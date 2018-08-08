@@ -14,7 +14,7 @@ navigation:
 
 
 When you add a new dedicated IP address to your account, you need to warm it up. You also need to warm up your IP if you haven't sent on it in more than 30 days. [Warming up your IP]({{root_url}}/glossary/ip-warmup/) allows you to gradually send more emails over your new IP to establish a good [sender reputation]({{root_url}}/glossary/reputation-monitoring/).
- 	
+
 IP warming is the practice of gradually increasing the volume of mail sent with a dedicated IP address according to a predetermined schedule. This gradual process helps to establish a reputation with ISPs (Internet Service Providers) as a legitimate email sender.
 
 When an ISP observes email suddenly coming from a new or "cold" IP address, they will take notice and immediately begin evaluating the traffic coming from that IP. Since ISPs treat email volume as a key determining factor when detecting spam, it is best to begin sending a low to moderate volume, eventually working your way up to larger volumes. This gives the receiving email providers a chance to closely observe your sending habits and record how your recipients engage with your email.
@@ -28,15 +28,15 @@ It is much easier to establish a positive reputation as a new sender, than it is
 </call-out>
 
 ## 	Warmup types
- 	
+
 There are three ways to warm up your IP. If your dedicated IP is relatively new, or you've never had one before, you need to warm up your IP manually. If you are adding new dedicated IPs to existing warm IPs, you can automatically warm up your IP with the UI or the API. When your IP is being warmed up, this is your hourly sending limit:
 
  ### 	Manually warm up your IP
- 	
+
 To manually warm up your IP, you need to gradually send more and more email over your IP address at the rate in our suggested [IP Warmup Schedule]({{root_url}}/assets/IPWarmupSchedule.pdf).
 
  ### 	Automated IP warmup
- 	
+
 *To set up automated IP warmup in the UI:*
 
 1. Go to [Settings > IP Addresses](https://app.sendgrid.com/settings/ip_addresses).
@@ -45,8 +45,8 @@ To manually warm up your IP, you need to gradually send more and more email over
 4. Save the **Edit Your Dedicated IP Address** screen.
 
  ### 	Automated IP warmup API
- 	
-You can also put your IP address into warmup mode with our [Automated Warmup API]({{root_url}}/help-support/sending-email/warming-up-an-ip-address/) - this automatically throttles traffic sent through your new IP according to our [warm up schedule](https://sendgrid.com/docs/API_Reference/Web_API_v3/IP_Management/ip_warmup_schedule.html).
+
+You can also put your IP address into warmup mode with our [Automated Warmup API]({{root_url}}/knowledge-center/sending-email/warming-up-an-ip-address/) - this automatically throttles traffic sent through your new IP according to our [warm up schedule](https://sendgrid.com/docs/API_Reference/Web_API_v3/IP_Management/ip_warmup_schedule.html).
 
 <call-out type="warning">
 
@@ -55,7 +55,7 @@ When automatically warming up an IP, SendGrid limits the amount of email sent th
 </call-out>
 
  ### 	Automated IP warmup hourly send schedule
- 	
+
 <table class="table table-striped table-bordered">
  <tr>
    <td>
@@ -405,13 +405,13 @@ When automatically warming up an IP, SendGrid limits the amount of email sent th
 
 
 ## 	Why don't other ESPs require IP warmup?
- 	
+
 Many other email service providers do not offer dedicated IP addresses to their customers - they place all of their customers on shared IP groups by default. Warming up is not required for a shared IP group - SendGrid handles this automatically.
 
 Having a dedicated IP allows you to control your own reputation completely, and prevents your sending from being impacted by the reputations of other SendGrid users.
 
 ## 	Additional Resources
- 	
-- [Adding a dedicated IP]({{root_url}}/help-support/account-and-settings/dedicated-ip-addresses/)
-- [API IP Access Management]({{root_url}}/help-support/account-and-settings/ip-access-management/)
-- [SendGrid billing information]({{root_url}}/help-support/account-and-settings/billing/)
+
+- [Adding a dedicated IP]({{root_url}}/knowledge-center/account-and-settings/dedicated-ip-addresses/)
+- [API IP Access Management]({{root_url}}/knowledge-center/account-and-settings/ip-access-management/)
+- [SendGrid billing information]({{root_url}}/knowledge-center/account-and-settings/billing/)

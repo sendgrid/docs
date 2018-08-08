@@ -19,7 +19,7 @@ We suggest [CloudFlare](#using-cloudflare), [Fastly](#using-fastly), or [KeyCDN]
 
 The following instructions assume you already have a CloudFlare account made, using either a [Full DNS setup](https://support.cloudflare.com/hc/en-us/articles/205195708) or a [CNAME setup](https://support.cloudflare.com/hc/en-us/articles/200168706). You can compare the two different setups [here](https://support.cloudflare.com/hc/en-us/articles/203685674). Note that a CNAME setup is only available to Business or Enterprise level CloudFlare plans.
 
-The instructions also assume that you have set up a valid [branded link]({{root_url}}/help-support/sending-email/how-to-set-up-link-branding/) on your account. This step is essential for the following instructions to work.
+The instructions also assume that you have set up a valid [branded link]({{root_url}}/knowledge-center/sending-email/how-to-set-up-link-branding/) on your account. This step is essential for the following instructions to work.
 
 Begin by logging into your CloudFlare account, and navigating to the DNS settings for your domain.
 
@@ -46,7 +46,7 @@ If you are using a CNAME setup, you will also need to change DNS to point to the
 Once all of this is done, you will need to contact [SendGrid support](https://support.sendgrid.com/) and request that SSL click and open tracking be enabled on your account. They will then verify the configuration and enable the setting on your account.
 
 ## 	Using Fastly
- 	
+
 1. [Sign up for Fastly](https://www.fastly.com/signup/) or [log in](https://manage.fastly.com) to an existing account.
 2. Click **Configure** on the Dashboard.
 3. Click the gear icon to open the **Manage Service** menu and click **Create**.
@@ -68,7 +68,7 @@ For more information, please visit [Fastly's documentation](https://docs.fastly.
 </call-out>
 
 ## 	Using KeyCDN
- 	
+
 This section is maintained by KeyCDN, if you have any questions about KeyCDN please [contact their support](https://www.keycdn.com/support/) team.
 
 [Sign up for KeyCDN](https://www.keycdn.com) or login to your
