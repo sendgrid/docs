@@ -38,7 +38,7 @@ Please see our document on [suggested IP allocation based on volume](https://sen
 
 ## 	Adding an additional dedicated IP address
  	
-You can purchase an additional d IP Address from the IP Addresses Settings page or from your [Plan & Billing Details](https://app.sendgrid.com/settings/billing) page.
+You can purchase an additional dedicated IP Address from the IP Addresses Settings page or from your [Plan & Billing Details](https://app.sendgrid.com/settings/billing) page.
 
 *To add an additional dedicated IP Address:*
 

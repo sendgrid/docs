@@ -56,6 +56,8 @@ All Mail clients render HTML/CSS differently, in their own ways and for their ow
 
   - "background-image" ; "bgcolor" ; "background"
   - Many browsers and clients experience issues when trying to support compound CSS values so be sure to use individual values such as "background-image" and "background-repeat"
+
+
 - **Always offer reset background colors or fall back background colors to defer to if your specific background isn't supported**
 
 ## Images 
