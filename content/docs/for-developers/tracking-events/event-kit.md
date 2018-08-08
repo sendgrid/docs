@@ -21,7 +21,7 @@ Our open source EventKit app alleviates the hassle of needing to set up an endpo
 [Click here](https://github.com/sendgrid/eventkit-rails) to visit the EventKit Github repository.
 
 
-## Learn how to install the EventKit app using a free [Heroku](https://www.heroku.com/) instance by watching this step-by-step video:
+## Learn how to install the Event Kit app using a free [Heroku](https://www.heroku.com/) instance by watching this step-by-step video:
 
 <iframe src="https://player.vimeo.com/video/167121552" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
