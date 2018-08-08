@@ -91,10 +91,10 @@ curl -X "POST" "https://api.sendgrid.com/v3/mail/send" \
             "city":"Place",
             "state":"CO",
             "zip":"80202"
-         },
-         "template_id":"[template_id]"
+         }
       }
-   ]
+   ],
+   "template_id":"[template_id]"
 }'
 {% endcodeblock %}
 
@@ -149,7 +149,7 @@ You can also copy your template ID from the app and paste it into your call.
 Additional Resources
 {% endanchor h2 %}
 
-- [Transactional Templates Overview]({{root_url}}/User_Guide/Transactional_Templates/index.html)
-- [Mail Send with Dynamic Transactional Templates](https://dynamic-templates.api-docs.io/3.0)
+- [Transactional Templates Overview](https://sendgrid.com/docs/User_Guide/Transactional_Templates/index.html)
+- [Dynamic Templates API](https://dynamic-templates.api-docs.io/3.0)
 - [Transactional Email Unsubscribes]({{root_url}}/User_Guide/Transactional_Email/unsubscribes.html)
-- [Using Handlebars]({{root_url}}/User_Guide/Transactional_Templates/Using_handlebars.html)
+
