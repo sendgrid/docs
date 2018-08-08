@@ -29,7 +29,7 @@ To get the SendGrid plugin running after you have activated Swift Mailer, naviga
 
 You can also set default values for the "Name," "Sending Address," and the "Reply Address” headers so that you don’t have to define these headers every time you want to send an email.
 
-If you would like to use [templates]({{root_url}}/help-support/sending-email/how-to-send-email-with-dynamic-transactional-templates/), you can set the template ID to be used in all of your emails on the settings page or you can set it individually for each email in the headers.
+If you would like to use [templates]({{root_url}}/knowledge-center/sending-email/how-to-send-email-with-dynamic-transactional-templates/), you can set the template ID to be used in all of your emails on the settings page or you can set it individually for each email in the headers.
 
 You can have an individual email sent to each recipient by specifying the x-smtpapi-to header. For example:
 
@@ -161,7 +161,7 @@ For more examples of how you can use SendGrid SMTPAPI headers, please visit the 
 
 ## 	How to Use Categories
 
-You can use [categories]({{root_url}}/help-support/analytics-and-reporting/categories/) to help organize and track the emails sent from WordPress via the SendGrid plugin.
+You can use [categories]({{root_url}}/knowledge-center/analytics-and-reporting/categories/) to help organize and track the emails sent from WordPress via the SendGrid plugin.
 
 Categories used for emails can be set either globally, or on an email-by-email basis.
 

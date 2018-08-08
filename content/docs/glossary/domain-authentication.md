@@ -19,7 +19,7 @@ In an attempt to clarify complex functionality, SendGrid is upgrading the name o
 </call-out>
 
 ## 	Additional Resources
- 	
-- [How to set up domain authentication]({{root_url}}/help-support/sending-email//how-to-set-up-domain-authentication/)
-- [How to set up link branding]({{root_url}}/help-support/sending-email/how-to-set-up-link-branding/)
-- [How to set up reverse DNS]({{root_url}}/help-support/sending-email/how-to-set-up-reverse-dns/)
+
+- [How to set up domain authentication]({{root_url}}/knowledge-center/sending-email//how-to-set-up-domain-authentication/)
+- [How to set up link branding]({{root_url}}/knowledge-center/sending-email/how-to-set-up-link-branding/)
+- [How to set up reverse DNS]({{root_url}}/knowledge-center/sending-email/how-to-set-up-reverse-dns/)

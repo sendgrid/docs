@@ -18,7 +18,7 @@ SendGrid users can always delete entries from these lists if an email address is
 
 ## 	Identifying Drops
 
-On the [Global Stats Dashboard]({{root_url}}/help-support/analytics-and-reporting/global/), the Drops can also be identified as Repeated Bounces, Repeated Spam Reports, Repeated Unsubscribes and Invalid Emails:
+On the [Global Stats Dashboard]({{root_url}}/knowledge-center/analytics-and-reporting/global/), the Drops can also be identified as Repeated Bounces, Repeated Spam Reports, Repeated Unsubscribes and Invalid Emails:
 
 You will also find drops in your [Email Activity](https://app.sendgrid.com/email_activity). Clicking on the event, will show more details about it, including the reason for which the email was dropped.
 
@@ -30,7 +30,7 @@ If the email address is on the Unsubscribe list the reason will say "Unsubscribe
 
 ## 	Other reasons for dropped emails:
 
-1. Email triggers SendGrid's spam filters if you have the [Spam Checker filter]({{root_url}}/help-support/account-and-settings/mail/#spam-checker) enabled. You can identify these drops only through the data received through the [Event Webhook]({{root_url}}/for-developers/tracking-events/event/) or in [Email Activity]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed/). In both cases, the reason displayed will say "Spam Content".
+1. Email triggers SendGrid's spam filters if you have the [Spam Checker filter]({{root_url}}/knowledge-center/account-and-settings/mail/#spam-checker) enabled. You can identify these drops only through the data received through the [Event Webhook]({{root_url}}/for-developers/tracking-events/event/) or in [Email Activity]({{root_url}}/knowledge-center/analytics-and-reporting/email-activity-feed/). In both cases, the reason displayed will say "Spam Content".
 
 2. The SMTPAPI header is built incorrectly - this will cause the emails to be dropped with the reason "Invalid SMTPAPI header". For more details about how to build the SMTPAPI header, please view our documentation on [SMTP API]({{root_url}}/for-developers/sending-email/building-an-smtp-email/).
 

@@ -10,7 +10,7 @@ layout: page
 navigation:
   show: true
 ---
-The SendGrid [Event Webhook]({{root_url}}/for-developers/tracking-events/event/) lets you stream all [email events]({{root_url}}/help-support/analytics-and-reporting/email-activity/) directly to <a href="https://keen.io/signup?utm_source=sendgrid_docs&utm_campaign=sendgrid">Keen IO</a> for real-time analysis and long term raw storage.
+The SendGrid [Event Webhook]({{root_url}}/for-developers/tracking-events/event/) lets you stream all [email events]({{root_url}}/knowledge-center/analytics-and-reporting/email-activity/) directly to <a href="https://keen.io/signup?utm_source=sendgrid_docs&utm_campaign=sendgrid">Keen IO</a> for real-time analysis and long term raw storage.
 
 It only takes a couple of minutes to start streaming email event data from SendGrid to Keen IO and once you do you can start analyzing and visualizing your data in a whole bunch of different ways.
 
@@ -63,7 +63,7 @@ A segment will allow you to track a specific campaign or filter on a particular 
 
 <call-out>
 
-This is explaining a different process from creating an [customer email segment]({{root_url}}/help-support/managing-contacts/segmenting-your-contacts/) in SendGrid
+This is explaining a different process from creating an [customer email segment]({{root_url}}/knowledge-center/managing-contacts/segmenting-your-contacts/) in SendGrid
 
 </call-out>
 
@@ -82,7 +82,7 @@ To edit a segment, click on the segment you newly created: you’ll find a menu 
 
 ## 	Custom Attributes
 
-SendGrid gives you the ability to include additional data about your contacts using [custom fields]({{root_url}}/help-support/sending-email/custom-fields/). These fields are automatically fully available for segmentation and filtering in this app.
+SendGrid gives you the ability to include additional data about your contacts using [custom fields]({{root_url}}/knowledge-center/sending-email/custom-fields/). These fields are automatically fully available for segmentation and filtering in this app.
 
 Once you’ve added an attribute you’d like to use for analysis (for example: customer_ID, company_name, email campaign ID or campaign names), you can use segments to track email performance for these custom attributes. Here’s an example:
 

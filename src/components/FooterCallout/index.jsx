@@ -19,7 +19,7 @@ const FooterCallout = () => (
             <p className="glossary-link"><Link to="/for-developers/sending-email/api-getting-started/">Getting Started</Link></p>
             <p className="glossary-link"><Link to="/api-v3/">API Documentation</Link></p>
             <p className="glossary-link"><Link to="/for-developers/sending-email/libraries/">Code Libraries</Link></p>
-            <p className="glossary-link"><Link to="/help-support/account-and-settings/api-keys/">API Keys</Link></p>
+            <p className="glossary-link"><Link to="/knowledge-center/account-and-settings/api-keys/">API Keys</Link></p>
           </div>
         </div>
       </div>
