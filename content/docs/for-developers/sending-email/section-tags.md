@@ -14,7 +14,7 @@ navigation:
 Section tags allow you to substitute in content in an SMTP message. Section tags are similar to [substitution tags]({{root_url}}/for-developers/sending-email/substitution-tags/) but are specific to the message, and not the recipient. You have to have a substitution tag value for **each** recipient, but you can have any number of section tags. Section tags can then contain Substitution tags for the recipient if needed. Section tags have to be contained within a Substitution tag since SendGrid needs to know which data to populate for the recipient.
 See the [Section Tag Example Walkthrough](#section-tag-example-walkthrough) below.
 
-It's possible & acceptable to use only Substitution tags. However, that method is not [DRY](http://en.wikipedia.org/wiki/Don%27t_repeat_yourself), and you may come against [message size limitations]({{root_url}}/help-support/sending-email/how-to-send-email/).
+It's possible & acceptable to use only Substitution tags. However, that method is not [DRY](http://en.wikipedia.org/wiki/Don%27t_repeat_yourself), and you may come against [message size limitations]({{root_url}}/user-interface/sending-email/how-to-send-email/).
 
 The format of the SMTP API section tag has the form:
 ```json

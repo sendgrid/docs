@@ -23,7 +23,7 @@ Bounced emails are commonly due to SMTP 4.X.X errors or SMTP 5.X.X errors, which
 * Too many invalid recipients
 
  ### 	Additional Resources
- 	
+
 * [Bounces]({{root_url}}/glossary/bounces/)
 * [Retrieve and Edit your List of Bounces](https://sendgrid.com/docs/API_Reference/Web_API/bounces.html)
-* [Email Activity & Bounces]({{root_url}}/help-support/analytics-and-reporting/email-activity-feed/)
+* [Email Activity & Bounces]({{root_url}}/user-interface/analytics-and-reporting/email-activity-feed/)

@@ -18,6 +18,6 @@ SendGrid's [IP Pooling feature](https://sendgrid.com/docs/API_Reference/Web_API_
 
 <call-out>
 
-For more information about how you can segment your email traffic, please see [Segmenting Your Contacts]({{root_url}}/help-support/managing-contacts/segmenting-your-contacts/).
+For more information about how you can segment your email traffic, please see [Segmenting Your Contacts]({{root_url}}/user-interface/managing-contacts/segmenting-your-contacts/).
 
 </call-out>

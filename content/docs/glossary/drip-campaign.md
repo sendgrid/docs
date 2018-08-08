@@ -24,7 +24,7 @@ reputation](https://sendgrid.com/blog/what-is-a-domain-reputation/), cultivate c
 <call-out>
 
 It is important to avoid initiating a series of messages that your customer doesn’t want to receive. Make sure
-that you give your recipient the option of opting out of the drip campaign by including an [unsubscribe link]({{root_url}}/help-support/sending-email/group-unsubscribes/) in
+that you give your recipient the option of opting out of the drip campaign by including an [unsubscribe link]({{root_url}}/user-interface/sending-email/group-unsubscribes/) in
 every email you send.
 
 </call-out>
