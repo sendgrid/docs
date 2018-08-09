@@ -41,7 +41,7 @@ $card-gutter: 40px;
   font-size: $scaleup-1;
   box-sizing: border-box;
   color: $slate;
-  border: 0;
+  border: 1px solid $sg-blue-10;
   box-shadow: 0 5px 8px 0 rgba(118, 180, 238, 0.1);
 
   &:hover, &:focus {

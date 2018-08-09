@@ -120,6 +120,18 @@ aside a.active {
 .callout {
   padding: $scaleup-4;
   margin: $scaleup-4 0;
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    top: $scaleup-1;
+    left: $scaleup-4;
+    text-transform: uppercase;
+    @include colfax(600);
+    font-size: $scaledown-1;
+    letter-spacing: 0.7px;
+  }
 }
 
 .callout > p {
@@ -129,11 +141,21 @@ aside a.active {
 .callout--info {
   background: $sg-blue-05;
   border-left: 2px solid $sg-blue;
+
+  &::before {
+    content: 'Tip';
+    color: $sg-blue;
+  }
 }
 
 .callout--warning {
   background: rgba(183, 28, 28, 0.05);
   border-left: 2px solid $alert-danger-text;
+
+  &::before {
+    content: 'Alert';
+    color: $alert-danger-text;
+  }
 }
 
 .tabbed-code {
