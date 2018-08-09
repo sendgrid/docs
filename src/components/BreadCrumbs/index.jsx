@@ -7,8 +7,6 @@ export default class BreadCrumbs extends Component {
     super(props);
     this.pathParts = this.getPathParts();
 
-    console.log(this.pathParts);
-
     this.state = {
       items: this.getSubPaths(),
     };
