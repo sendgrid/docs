@@ -28,5 +28,3 @@ deploy:
 after_deploy:
 - aws configure set preview.cloudfront true
 - test $TRAVIS_BRANCH = "a-new-hope-episode-iv" && sudo aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DIST_ID --paths "/*"
-
-/ui/sending-email/editor/
