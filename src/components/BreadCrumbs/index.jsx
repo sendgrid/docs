@@ -16,7 +16,7 @@ export default class BreadCrumbs extends Component {
     const { pathname } = this.props.location;
     const parts = pathname.split('/');
     // We don't want "docs" or "UI" in the breadcrumbs
-    return parts.filter(item => item.length && _.includes(['docs', 'ui'], item) === false);
+    return parts.filter(item => item.length && item !== 'docs');
   }
 
   getSubPaths() {
@@ -33,7 +33,7 @@ export default class BreadCrumbs extends Component {
     const allPaths = this.pathParts.map((text) => {
       const path = pathname.substring(0, pathname.indexOf(text)) + text;
       const to = `${path.replace('/docs', '')}/`;
-      const textNode = text.replace(/-/g, ' ');
+      const textNode = text === 'ui' ? 'User Interface' : text.replace(/-/g, ' ');
       return (
         {
           textNode,
@@ -95,9 +95,12 @@ export default class BreadCrumbs extends Component {
     return (
       <div>
         <ul className="breadcrumb">
-          {this.state.items.map(item => (
-            <li key={item.textNode} ><Link to={item.to}>{item.textNode}</Link></li>
-          ))}
+          {this.state.items.map((item) => {
+            const classes = `breadcrumb-item-${item.textNode.replace(' ', '-').toLowerCase()}`;
+            return (
+              <li key={item.textNode} className={classes} ><Link to={item.to}>{item.textNode}</Link></li>
+            );
+          })}
           <li dangerouslySetInnerHTML={{ __html: this.getTitle() }} />
         </ul>
         <script type="application/ld+json">

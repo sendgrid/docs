@@ -7,7 +7,18 @@ class Search extends React.Component {
       apiKey: '621c583d8098d07c471dbaf6c2178e56',
       indexName: 'sendgrid_hc',
       inputSelector: '.search-query',
-      debug: true, // Set debug to true if you want to inspect the dropdown
+      debug: false, // Set debug to true if you want to inspect the dropdown
+      // transformData(hits) {
+      //   const stageURL = 'http://sendgrid-knowledge-center-staging.s3-website-us-east-1.amazonaws.com';
+      //   const prodURL = 'https://sendgrid.com/docs';
+
+      //   const updatedUrlHits = hits.map(((hit) => {
+      //     hit.url = hit.url.replace(stageURL, prodURL);
+      //     return hit;
+      //   }));
+      //   // modify hits
+      //   return updatedUrlHits;
+      // },
     });
   }
 
