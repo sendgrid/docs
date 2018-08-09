@@ -15,7 +15,8 @@ export default class BreadCrumbs extends Component {
   getPathParts() {
     const { pathname } = this.props.location;
     const parts = pathname.split('/');
-    return parts.filter(item => item.length && item !== 'docs');
+    // We don't want "docs" or "UI" in the breadcrumbs
+    return parts.filter(item => item.length && _.includes(['docs', 'ui'], item) === false);
   }
 
   getSubPaths() {
@@ -31,7 +32,7 @@ export default class BreadCrumbs extends Component {
 
     const allPaths = this.pathParts.map((text) => {
       const path = pathname.substring(0, pathname.indexOf(text)) + text;
-      const to = `${path.replace('/docs', '') }/`;
+      const to = `${path.replace('/docs', '')}/`;
       const textNode = text.replace(/-/g, ' ');
       return (
         {
