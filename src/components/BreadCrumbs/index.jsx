@@ -7,6 +7,8 @@ export default class BreadCrumbs extends Component {
     super(props);
     this.pathParts = this.getPathParts();
 
+    console.log(this.pathParts);
+
     this.state = {
       items: this.getSubPaths(),
     };
@@ -16,7 +18,7 @@ export default class BreadCrumbs extends Component {
     const { pathname } = this.props.location;
     const parts = pathname.split('/');
     // We don't want "docs" or "UI" in the breadcrumbs
-    return parts.filter(item => item.length && _.includes(['docs', 'ui'], item) !== false);
+    return parts.filter(item => item.length && _.includes(['docs', 'ui'], item) === false);
   }
 
   getSubPaths() {
