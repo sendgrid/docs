@@ -54,7 +54,7 @@ Using the default templates from WP Better Emails will cause all emails to be se
 
 ## 	Why are my emails sent as HTML instead of plain text?
 
-For a detailed explanation of why your emails might be converted to HTML instead of plain text, please see [Cross-platform Email Design]({{root_url}}/help-support/sending-email/cross-platform-html-design/).
+For a detailed explanation of why your emails might be converted to HTML instead of plain text, please see [Cross-platform Email Design]({{root_url}}/ui/sending-email/cross-platform-html-design/).
 
 ## 	Will contacts from the widget be uploaded to Marketing Campaigns or Legacy Newsletter?
 

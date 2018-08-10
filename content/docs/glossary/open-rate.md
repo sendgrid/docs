@@ -20,4 +20,4 @@ The “Opens” percentage is the total number of times your users opened your e
 
 The “Unique opens” percentage is the number of unique individuals that have opened your emails, divided by the total number of Delivered messages.
 
-For more information visit our [Statistics]({{root_url}}/help-support/analytics-and-reporting/stats-overview/) page.
+For more information visit our [Statistics]({{root_url}}/ui/analytics-and-reporting/stats-overview/) page.

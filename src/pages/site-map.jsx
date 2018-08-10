@@ -19,7 +19,7 @@ export default class siteMap extends React.Component {
           <h3>Help Support Categories</h3>
           {helpSupportCats.group.map(cat => (
             <div key={cat.fieldValue}>
-              <Link to={`/help-support/${kebabCase(cat.fieldValue)}/`}>
+              <Link to={`/ui/${kebabCase(cat.fieldValue)}/`}>
                 {cat.fieldValue} ({cat.totalCount})
               </Link>
             </div>
@@ -68,7 +68,7 @@ export const pageQuery = graphql`
   query SiteMap {
     helpSupportCats: allMarkdownRemark(
       limit: 2000,
-      filter: { fields: {docType: { eq: "help-support" } } }
+      filter: { fields: {docType: { eq: "ui" } } }
     ) {
       group(field: fields___category) {
         fieldValue
@@ -86,7 +86,7 @@ export const pageQuery = graphql`
     }
     pages: allSitePage(
       filter: {
-        path: {regex:"/^((?!help-support|for-developers\/[^/]+).)*$/"}
+        path: {regex:"/^((?!ui|for-developers\/[^/]+).)*$/"}
       }
     ) {
       edges {
