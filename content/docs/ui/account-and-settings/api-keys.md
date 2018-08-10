@@ -41,7 +41,7 @@ When viewing the API keys page, you will see a list of your current API keys alo
 1. Select **Full Access**, **Restricted Access**, or **Billing Access**.
 1. If you're selecting **Restricted Access**, or **Billing Access**, select the specific permissions to give each category. For more information, see [API key permissions](#api-key-permissions).
 1. Click **Create and View**.
-1. Copy your API Key somewhere safe. For security reasons, do not put it directly in your code, or commit it somewhere like Github.
+1. Copy your API Key somewhere safe. For security reasons, do not put it directly in your code, or commit it somewhere like GitHub.
 
 <call-out type="warning">
 

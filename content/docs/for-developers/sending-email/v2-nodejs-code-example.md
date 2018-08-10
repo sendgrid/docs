@@ -8,7 +8,7 @@ navigation:
 ---
 <call-out>
 
-We recommend using [v3]({{root_url}}/for-developers/sending-email/v3-nodejs-code-example/) SendGrid Node.js, our client library, [available on Github](https://github.com/sendgrid/sendgrid-nodejs), with full documentation.
+We recommend using [v3]({{root_url}}/for-developers/sending-email/v3-nodejs-code-example/) SendGrid Node.js, our client library, [available on GitHub](https://github.com/sendgrid/sendgrid-nodejs), with full documentation.
 
 </call-out>
 

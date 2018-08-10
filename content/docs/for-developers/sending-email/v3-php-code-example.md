@@ -12,7 +12,7 @@ navigation:
 ---
 <call-out>
 
-We recommend using SendGrid PHP, our client library, [available on Github](https://github.com/sendgrid/sendgrid-php), with full documentation.
+We recommend using SendGrid PHP, our client library, [available on GitHub](https://github.com/sendgrid/sendgrid-php), with full documentation.
 
 </call-out>
 

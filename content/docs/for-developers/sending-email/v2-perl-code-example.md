@@ -12,7 +12,7 @@ navigation:
 
 <call-out>
 
-We recommend using SendGrid Perl, our client library, <a href="https://github.com/sendgrid/sendgrid-perl">available on Github</a>, with full documentation.
+We recommend using SendGrid Perl, our client library, <a href="https://github.com/sendgrid/sendgrid-perl">available on GitHub</a>, with full documentation.
 
 </call-out>
 
