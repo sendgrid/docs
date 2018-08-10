@@ -87,8 +87,8 @@ Each variation of the email will be sent to the same number of contacts, within 
 	Allows you to select the version you think best engages with your customers after reviewing the results of the A/B Test.
 
 
-##  Set the AB Test Duration
-You can set your A/B test duration between 30min - 24 hours.
+##  Set the A/B Test Duration
+You can set your A/B test duration between 30 minutes and 24 hours.
 
 While you can test your email variations for up to 24 hours, emails will only be sent to the subset of contacts you've chosen to participate in the A/B test, during the test duration you set. The remainder of your contacts will only be sent the winning variation of your A/B test email after the test duration has completed.
 
