@@ -17,35 +17,38 @@ All Mail clients render HTML/CSS differently, in their own ways and for their ow
 ## Layout
 
 - **Avoid Using padding or margins**
+  - Certain email clients don't support these formatting settings. For example, Outlook cannot support padding, and Hotmail cannot support margins.
+  - These can be especially problematic when added inside of a table in either mail client.
 
-  - Outlook cannot support padding, and Hotmail cannot support margins
-  - Especially problematic when added inside of a table in either mail client
 
-- **Always use _inline _CSS**
-
+- **Always use inline CSS**
   - Most webmail clients (outlook.com, yahoo.com, gmail, etc) will strip CSS out when stripping the head and body tags.
 
-    - Have to render coding very carefully so it conforms to their already set HTML that you would view the message in.
+    - Make sure you render coding very carefully so it conforms to the email client's pre-set HTML.
 
 - **Avoid BR, HR, and height tags in your emails**
 
-  - Every browser/client has their own default line height and will default to this. most of the time.
+  - Every browser/client has their own default line height and will default to     this. most of the time.
   - Work around in next bullet point below.
+
 
 - **Use Tables to create general layout of email**
 
-  - Be sure that you set the width of each cell in the table
+  - Set the width of each cell in the table.
 
-    - Try to avoid cellspacing and padding
+  - Avoid cell spacing and padding.
+
 - **Always set a "doctype" in your code**
 - **Set wrapper reset styles in "wrapper div"**
 
   - This can override a browser or client's default styling of certain elements.
-  - For more info - http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/
+  - Click [here](http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/) for more information on reset styles.
+
+
 - **Be aware of text and font changes per device (mobile especially) and browsers**
 
-  - Mobile devices and different browsers may change the font styling to increase readability
-  - ie. comic sans not supported on mobile devices
+  - Mobile devices and different browsers may change the font styling to increase readability.
+  - For example, comic sans not supported on mobile devices.
 
 ## Backgrounds
 
@@ -53,47 +56,42 @@ All Mail clients render HTML/CSS differently, in their own ways and for their ow
 
   - "background-image" ; "bgcolor" ; "background"
   - Many browsers and clients experience issues when trying to support compound CSS values so be sure to use individual values such as "background-image" and "background-repeat"
+
+
 - **Always offer reset background colors or fall back background colors to defer to if your specific background isn't supported**
 
 ## Images 
 
-- **Always avoid PNG images ->** Try to always use either JPEG or GIF images
+- **Always avoid PNG images**  - Try to always use either JPEG or GIF images
 - **Always provide image dimensions**
 
-  - some clients will automatically apply their own if none are given which can lead to major issues when rendering these images in relation to spacing and alignment.
+  - Some mail clients will automatically apply their own if none are given which can lead to major issues when rendering these images in relation to spacing and alignment.
 
-    - it is important to note however that some mail clients will do this regardless as a default setting
-- **Make sure to give ALL of your images 'alt' attributes**
+    - It is important to note however that some mail clients will do this regardless as a default setting.
 
-  - This simple step will keep the overall sizing of your images the same across platforms
-  - ie. http://www.w3schools.com/tags/att\_img\_alt.asp
+- **Make sure to give ALL of your images 'alt' attributes** - This simple step will keep the overall sizing of your images the same across platforms.
+ 
 - **Outlook.com adds some pixels at the end of each image which can rearrange spacing, alignment, or padding**
 
-  - Use the "Outlook.com hack"
+  - Use the "Outlook.com hack" - `img {display:block;}`. This removes the padding in outlook.com and gives predictable results across many other email clients in terms of added spacing or padding to images.
 
-    - img {display:block;}
-    - This removes the padding in outlook.com and gives predictable results across many other email clients in terms of added spacing or padding to images.
+
 - **Avoid 'float' tags**
 
-  - Outlook cannot support these tags
-  - Instead use 'align'
-
-    - ie. `<img src="image.jpeg" align="right">`
-  - _Seeing issues with Yahoo! as well in this respect?_
-
-    - Try align="top" to the image in question.
+  - Outlook cannot support these tags, so SendGrid recommends using align tags. For example, `<img src="image.jpeg" align="right">`.
+  
+  - Yahoo! has similar issues, so SendGrid recommends using align="top" for the image in question.
 
 
 ## 	Controlling converted plain text email output
 
-_To control the output of plain-text conversion do one of the following:_
+*To control the output of plain-text conversion do one of the following:*
 
-* Turn off the filters causing the conversion from plain text to HTML.
-* Start each line with a space, this will add a "preformatted" `<pre>` tag around the line.
-* Separate new sentences with double newlines, which will add a "paragraph" `<p>` tag around the sentence.
-* Convert your message to HTML, bypassing our need to convert it altogether.
-
-- To disable conversion globally, click **Mail Settings** and select **Plain Content** and enable the suppression.
+1. Turn off the filters causing the conversion from plain text to HTML.
+1. Start each line with a space, this will add a "preformatted" `<pre>` tag around the line.
+1. Separate new sentences with double newlines, which will add a "paragraph" `<p>` tag around the sentence.
+1. Convert your message to HTML, bypassing our need to convert it altogether.
+1. To disable conversion globally, click **Mail Settings** and select **Plain Content** and enable the suppression.
 
 **Why can't you just automatically add `<br />` tags to newlines upon conversion?**
 
