@@ -46,7 +46,7 @@ To manually warm up your IP, you need to gradually send more and more email over
 
  ### 	Automated IP warmup API
 
-You can also put your IP address into warmup mode with our [Automated Warmup API]({{root_url}}/ui/sending-email/warming-up-an-ip-address/) - this automatically throttles traffic sent through your new IP according to our [warm up schedule](https://sendgrid.com/docs/API_Reference/Web_API_v3/IP_Management/ip_warmup_schedule.html).
+You can also put your IP address into warmup mode with our [Automated Warmup API]({{root_url}}/ui/sending-email/warming-up-an-ip-address/) - this automatically throttles traffic sent through your new IP according to our [warm up schedule]({{root_url}}/assets/IPWarmupSchedule.pdf).
 
 <call-out type="warning">
 
