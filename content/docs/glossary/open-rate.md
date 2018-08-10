@@ -19,7 +19,7 @@ Tracking open rates requires that the Open Tracking app be enabled.
 
 </call-out>
 
-*To enable Open tracking:*
+*To enable the Open Tracking app:*
 1. Navigate to **Settings** and select **Tracking**.
 1. Locate the line that says Open Tracking and select the action menu to expand the line.
 1. Toggle the switch to **On**. Open Tracking is now enabled.
