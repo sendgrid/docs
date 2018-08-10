@@ -9,7 +9,7 @@ navigation:
 
 <call-out>
 
-We recommend using SendGrid Ruby, our client library, [availableon Github](https://github.com/sendgrid/sendgrid-ruby), with full documentation.
+We recommend using SendGrid Ruby, our client library, [availableon GitHub](https://github.com/sendgrid/sendgrid-ruby), with full documentation.
 
 </call-out>
 
