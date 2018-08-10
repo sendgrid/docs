@@ -16,7 +16,7 @@ You can easily add contacts to your contact database by uploading a CSV into Mar
 
 ## General Formatting Rules
 
-Here are some rules to follow when formatting a CSV to upload into Marketing Campaigns.
+Here are some rules to follow when formatting a CSV to upload into Marketing Campaigns. Click [here]({{root_url}}/assets/example.csv) to download a sample csv file.
 
 ### Contact Info
 
