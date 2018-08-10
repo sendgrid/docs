@@ -37,7 +37,7 @@ Now that you've integrated, learn to [build SMTP email]({{root_url}}/for-develop
 ## 	Additional Resources
 
 
-- [Sending email]({{root_url}}/ui/sending-email/how-to-send-email/)
+- [Sending email]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/)
 - [Getting Started with the API]({{root_url}}/api-reference/)
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
 - [Getting Started with the SMTP API]({{root_url}}/for-developers/sending-email/getting-started-smtp/)

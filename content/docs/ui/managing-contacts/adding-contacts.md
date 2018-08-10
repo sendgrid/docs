@@ -39,7 +39,7 @@ You can easily add contacts to your contact database by uploading a CSV of your 
 3. Upload your file by dragging it into or clicking the CSV upload area.
 4. Once the CSV has populated, click **Next: Custom Fields**.
 
-   A page appears displaying the data from the header row from of the CSV file. From the list, you can select a custom field to associate with the data in the column. If there isn't a corresponding field, you can add one. Only the **Email** field is required to complete the upload. Skipped column headers are not uploaded and do not appear as custom fields within an individual contact's profile.
+   A page appears displaying the data from the header row of the CSV file. From the list, you can select a custom field to associate with the data in the column. If there isn't a corresponding field, you can add one. Only the **Email** field is required to complete the upload. Skipped column headers are not uploaded and do not appear as custom fields within an individual contact's profile.
 
 5. Select **Skip Column** to omit data from the contacts list.
 6. Once you've gone through all of the headers, click **Next: Add Contacts**.

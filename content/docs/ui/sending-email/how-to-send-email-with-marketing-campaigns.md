@@ -1,12 +1,12 @@
 ---
 layout: page
 weight: 99
-title: How to Send Email
+title: How to Send Email with Marketing Campaigns
 group: getting-started
 navigation:
   show: true
 seo:
-  title: How to Send Email
+  title: How to Send Email with Marketing Campaigns
   override: true
   description: Send your first email using the Marketing Campaigns tool.
 ---

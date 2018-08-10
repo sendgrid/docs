@@ -28,6 +28,6 @@ Ready to give Marketing Campaigns a try? You can upload your first [2,000 contac
 
 ## 	Additional Resources
 
-* [Marketing Campaigns Overview]({{root_url}}/ui/sending-email/how-to-send-email/)
+* [Marketing Campaigns Overview]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/)
 * [Adding Contacts]({{root_url}}/ui/managing-contacts/adding-contacts/)
 * [Segmenting your contacts]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/)

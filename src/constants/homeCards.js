@@ -8,7 +8,7 @@ const HOME_CARDS = [
     ICON: plane,
     TITLE: 'Sending Email',
     LINKS: [
-      { URL: '/ui/sending-email/how-to-send-email/', TEXTNODE: 'Sending Email with Marketing Campaigns' },
+      { URL: '/ui/sending-email/how-to-send-email-with-marketing-campaigns/', TEXTNODE: 'Sending Email with Marketing Campaigns' },
       { URL: '/ui/sending-email/editor/', TEXTNODE: 'The Design & Code Editor' },
       { URL: '/ui/sending-email/a-b-testing/', TEXTNODE: 'A/B Testing Your Content' },
     ],

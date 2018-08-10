@@ -739,7 +739,7 @@ Assigning categories to a campaign allows you to track emails based on your own 
 
 ## Additional Resources
 
-* [Sending an Email]({{root_url}}/ui/sending-email/how-to-send-email/)
+* [Sending an Email]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/)
 * [A/B Testing]({{root_url}}/ui/sending-email/a-b-testing/)
 * [Campaign Statistics]({{root_url}}/ui/analytics-and-reporting/campaign-stats/)
 * [Marketing Templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/)

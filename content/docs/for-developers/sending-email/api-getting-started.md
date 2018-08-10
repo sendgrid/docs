@@ -76,4 +76,4 @@ For more information on SendGrid and where you can go from here, check out these
 
 - [API Reference]({{root_url}}/api-reference/)
 - [Sender Authentication]({{root_url}}/ui/sending-email/how-to-set-up-domain-authentication/)
-- [How to Send Email]({{root_url}}/ui/sending-email/how-to-send-email/)
+- [How to Send Email]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/)
