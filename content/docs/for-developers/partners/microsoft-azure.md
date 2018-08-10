@@ -7,14 +7,14 @@ navigation:
   show: true
 ---
 
-If you are using Microsoft’s cloud platform you can easily integrate with SendGrid. Simply navigate to the Azure Marketplace, locate the SendGrid add-on, select the appropriate plan, and get ready to start sending. The following documentation covers signing up, sending an email, adding an attachment, as well as using filters. Click [here](http://azure.microsoft.com/en-us/documentation/articles/sendgrid-dotnet-how-to-send-email/) to start learning how Azure and SendGrid can solve your email deliverability problems.
+If you are using Microsoft’s cloud platform you can easily integrate with SendGrid. Simply navigate to the Azure Marketplace, locate the SendGrid add-on, select the appropriate plan, and get ready to start sending. The following documentation covers signing up, sending an email, adding an attachment, as well as using filters. Click [here](http://azure.microsoft.com/en-us/documentation/articles/sendgrid-dotnet-how-to-send-email-with-marketing-campaigns/) to start learning how Azure and SendGrid can solve your email deliverability problems.
 
 ## 	Code Examples
 
-1. [PHP](http://azure.microsoft.com/en-us/documentation/articles/store-sendgrid-php-how-to-send-email/)
-2. [Node.js](http://azure.microsoft.com/en-us/documentation/articles/store-sendgrid-nodejs-how-to-send-email/)
-3. [.NET](http://azure.microsoft.com/en-us/documentation/articles/sendgrid-dotnet-how-to-send-email/)
-4. [Java](http://azure.microsoft.com/en-us/documentation/articles/store-sendgrid-java-how-to-send-email/)
+1. [PHP](http://azure.microsoft.com/en-us/documentation/articles/store-sendgrid-php-how-to-send-email-with-marketing-campaigns/)
+2. [Node.js](http://azure.microsoft.com/en-us/documentation/articles/store-sendgrid-nodejs-how-to-send-email-with-marketing-campaigns/)
+3. [.NET](http://azure.microsoft.com/en-us/documentation/articles/sendgrid-dotnet-how-to-send-email-with-marketing-campaigns/)
+4. [Java](http://azure.microsoft.com/en-us/documentation/articles/store-sendgrid-java-how-to-send-email-with-marketing-campaigns/)
 5. [Java]({{root_url}}/for-developers/partners/azure/) via an Azure webpage
 6. [Mobile Services](http://azure.microsoft.com/en-us/documentation/articles/store-sendgrid-mobile-services-send-email-scripts/)
 

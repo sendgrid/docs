@@ -88,5 +88,5 @@ In addition to creating a dynamic segment based on campaign engagement as descri
 
 ## 	Additional Resources
 
-- [Sending a Campaign]({{root_url}}/ui/sending-email/how-to-send-email/)
+- [Sending a Campaign]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/)
 - [A/B Testing Your Campaign]({{root_url}}ui/sending-email/a-b-testing/)

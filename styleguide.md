@@ -28,7 +28,7 @@ Where possible, write pages in a "jobs to be done" format. Jobs to be done style
 * Table of contents at the beginning
 * "Additional Resources" section at the end
 * Include sections to achieve the goal, with steps for each task (numbered steps, clear directions, and correct UI workflow)
-	For an example, see [Sending a Campaign]({{root_url}}/ui/sending-email/how-to-send-email/)
+	For an example, see [Sending a Campaign]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/)
 
 **Avoid passive voice.** A good way to check if your sentence is in passive or not is to add "by zombies" to the end of it. If zombies end up doing the action, it's passive.
 
@@ -61,7 +61,7 @@ Here is example formatting:
 ```
 ## Additional Resources
 
-* [Sending an Email]({{root_url}}/ui/sending-email/how-to-send-email/)
+* [Sending an Email]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/)
 * [A/B Testing]({{root_url}}/ui/sending-email/a-b-testing/)
 * [Campaign Statistics]({{root_url}}/ui/analytics-and-reporting/campaign-stats/)
 * [Marketing Templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/)

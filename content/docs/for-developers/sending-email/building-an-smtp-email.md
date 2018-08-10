@@ -184,7 +184,7 @@ For more information, see our [unique arguments documentation]({{root_url}}/for-
 ## 	Additional Resources
 
 
-- [How to send email]({{root_url}}/ui/sending-email/how-to-send-email/)
+- [How to send email]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/)
 - [Getting started with the API]({{root_url}}/api-reference/)
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
 - [Getting Started with the SMTP API]({{root_url}}/for-developers/sending-email/sending-email-smtp/)

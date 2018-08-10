@@ -14,7 +14,7 @@ Once you have an AWS account, you can to [subscribe to SendGrid](https://aws.ama
 
 *To quickly get started with SendGrid:*
 
-- See [Getting Started With Marketing Campaigns]({{root_url}}/ui/sending-email/how-to-send-email/) for all of the tools you need to get started sending with the SendGrid application.
+- See [Getting Started With Marketing Campaigns]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/) for all of the tools you need to get started sending with the SendGrid application.
 - Look at the [API Reference]({{root_url}}/api-reference/) for all of the API endpoints as well as information about using SMTP and the Webhooks.
 - See the [API Libraries]({{root_url}}/for-developers/sending-email/libraries/) page for information about using the SendGrid code libraries in C#, Go, Java, Node.js, PHP, Python, and Ruby.
 

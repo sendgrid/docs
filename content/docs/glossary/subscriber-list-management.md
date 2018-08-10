@@ -12,7 +12,7 @@ navigation:
 
 Maintaining good list management is a key element in keeping your users happy. Sending email to someone who has unsubscribed or never signed up in the 1st place is a big no-no in the email game.
 
-Make sure to check your list stats. You can do this in [Marketing Campaigns]({{root_url}}/ui/sending-email/how-to-send-email/) by clicking on the stats button next to your recipient list name. You can also [manage your unsubscribes]({{root_url}}/ui/sending-email/index-suppressions/) by clicking the manage unsubscribes button next to your recipient list name.
+Make sure to check your list stats. You can do this in [Marketing Campaigns]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/) by clicking on the stats button next to your recipient list name. You can also [manage your unsubscribes]({{root_url}}/ui/sending-email/index-suppressions/) by clicking the manage unsubscribes button next to your recipient list name.
 
 Make sure you are sending mail to people who actually want your mail. Otherwise, you will get lots of [spam reports]({{root_url}}/glossary/spam-reports/), [blocks]({{root_url}}/glossary/blocks/) and [bounces]({{root_url}}/glossary/bounces/).
 

@@ -29,7 +29,7 @@ To get the SendGrid plugin running after you have activated Swift Mailer, naviga
 
 You can also set default values for the "Name," "Sending Address," and the "Reply Address” headers so that you don’t have to define these headers every time you want to send an email.
 
-If you would like to use [templates]({{root_url}}/ui/sending-email/how-to-send-email-with-dynamic-transactional-templates/), you can set the template ID to be used in all of your emails on the settings page or you can set it individually for each email in the headers.
+If you would like to use [templates]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns-with-dynamic-transactional-templates/), you can set the template ID to be used in all of your emails on the settings page or you can set it individually for each email in the headers.
 
 You can have an individual email sent to each recipient by specifying the x-smtpapi-to header. For example:
 
