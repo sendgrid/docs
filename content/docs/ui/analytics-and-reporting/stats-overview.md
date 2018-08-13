@@ -1,6 +1,6 @@
 ---
 seo:
-  title: analytics-and-reporting Overview
+  title: Statistics Overview
   description: View and filter all of your SendGrid account email statistics.
   keywords: analytics-and-reporting, SendGrid analytics-and-reporting, analytics-and-reporting Overview, analytics-and-reporting UI
 title: Statistics Overview
@@ -109,7 +109,7 @@ These filters are available on most of the statistics pages. They will help you 
 
 ## 	Additional Resources
 
-* [API Stats Overview]({{root_url}}/API_Reference/Web_API_v3/Stats/index/)
+* [API Stats Overview](https://sendgrid.com/docs/API_Reference/Web_API_v3/Stats/index/)
 
-* [Advanced Analytics and Reporting]({{root_url}}/API_Reference/Web_API/Statistics/statistics_advanced/)
+* [Advanced Analytics and Reporting](https://sendgrid.com/docs/API_Reference/Web_API/Statistics/statistics_advanced/)
 

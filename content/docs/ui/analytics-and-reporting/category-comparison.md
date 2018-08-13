@@ -53,6 +53,6 @@ You can also choose to show actual counts or percentages, by clicking the corres
 
 ## 	Additional Resources
 
-- [Subusers]({{root_url}}/ui/account-and-settings/subusers.html)
+- [Subusers]({{root_url}}/ui/account-and-settings/subusers/)
 - [Using Categories with the SMTP API]({{root_url}}/for-developers/sending-email/categories/)
-- [Statistics Filters]({{root_url}}/ui/analytics-and-reporting/stats-overview.html#statistics-filters)
+- [Statistics Filters]({{root_url}}/ui/analytics-and-reporting/stats-overview/#statistics-filters)

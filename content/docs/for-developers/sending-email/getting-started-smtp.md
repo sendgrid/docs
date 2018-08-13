@@ -1,7 +1,7 @@
 ---
 seo:
   title: How to Send an SMTP Email
-  description: Use Telnet to send your first SMTP email
+  description: Use Telnet to send your first SMTP email. SendGrid’s SMTP API allows developers to specify custom handling instructions for e-mail using an X-SMTPAPI header inserted into the message.
   keywords: telnet, ports, connection, SMTP, send email, getting started
 title: How to Send an SMTP Email
 group: smtp

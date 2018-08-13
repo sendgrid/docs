@@ -8,6 +8,6 @@ navigation:
 ---
 <call-out>
 
-It is recommended that you use our [Python SMTPAPI library](https://github.com/sendgrid/smtpapi-python), full documentation can be found on Github. You can more deeply integrate with SendGrid by using our [Python API library](https://github.com/sendgrid/sendgrid-python).
+It is recommended that you use our [Python SMTPAPI library](https://github.com/sendgrid/smtpapi-python), full documentation can be found on GitHub. You can more deeply integrate with SendGrid by using our [Python API library](https://github.com/sendgrid/sendgrid-python).
 
 </call-out>

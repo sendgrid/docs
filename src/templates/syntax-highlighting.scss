@@ -1,10 +1,14 @@
 @import '../scss/global/variables';
 
+$code_purple: #7c4dff;
+$code_blue: #1a82e2;
+$code_green: #18c96e;
+
 code[class*="language-"],
 pre[class*="language-"] {
-    font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+    font-family: Menlo, Consolas, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
     font-size: 14px;
-    line-height: 1.375;
+    line-height: 1.75;
     direction: ltr;
     text-align: left;
     white-space: pre;
@@ -17,8 +21,8 @@ pre[class*="language-"] {
     -moz-hyphens: none;
     -ms-hyphens: none;
     hyphens: none;
-    background: $slate;
-    color: $slate-05;
+    background: $slate-05;
+    color: $slate-80;
 }
 
 pre[class*="language-"]::-moz-selection,
@@ -26,7 +30,7 @@ pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection,
 code[class*="language-"] ::-moz-selection {
     text-shadow: none;
-    background: $slate-40;
+    background: $slate-20;
 }
 
 pre[class*="language-"]::selection,
@@ -34,7 +38,7 @@ pre[class*="language-"] ::selection,
 code[class*="language-"]::selection,
 code[class*="language-"] ::selection {
     text-shadow: none;
-    background: $slate-40;
+    background: $slate-20;
 }
 
 pre[class*="language-"] {
@@ -51,11 +55,15 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-    color: $slate-05;
+    color: $slate-80;
+}
+
+.token.comment {
+    color: $code_purple;
 }
 
 .token.punctuation {
-    color: $slate-05;
+    color: $slate-80;
 }
 
 .token.namespace {
@@ -65,34 +73,26 @@ pre[class*="language-"] {
 .token.operator,
 .token.boolean,
 .token.number {
-    color: $carrot;
+    color: $code_purple;
 }
 
 .token.property {
-    color: $mango;
-}
-
-.token.tag {
-    color: $sg-blue-20;
-}
-
-.token.string {
-    color: $mantis;
+    color: $code_blue;
 }
 
 .token.selector {
-    color: $screample;
+    color: $code_purple;
 }
 
 .token.attr-name {
-    color: $carrot;
+    color: $code_purple;
 }
 
 .token.entity,
 .token.url,
 .language-css .token.string,
 .style .token.string {
-    color: $seafoam;
+    color: $code_green;
 }
 
 .token.attr-value,
@@ -100,18 +100,18 @@ pre[class*="language-"] {
 .token.control,
 .token.directive,
 .token.unit {
-    color: $lime;
+    color: $code_green;
 }
 
 .token.statement,
 .token.regex,
 .token.atrule {
-    color: $seafoam;
+    color: $code_purple;
 }
 
 .token.placeholder,
 .token.variable {
-    color: $sg-blue-20;
+    color: $code_blue;
 }
 
 .token.deleted {
@@ -133,7 +133,7 @@ pre[class*="language-"] {
 }
 
 .token.important {
-    color: $burnt-orange;
+    color: $code_blue;
 }
 
 .token.entity {
@@ -141,6 +141,6 @@ pre[class*="language-"] {
 }
 
 pre > code.highlight {
-    outline: 0.4em solid $burnt-orange;
+    outline: 0.4em solid $code_blue;
     outline-offset: 0.4em;
 }

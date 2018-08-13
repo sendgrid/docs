@@ -20,7 +20,7 @@ navigation:
 
 ### 1. Check these suggestions first:
 
-**1.** If you are integrated with SendGrid using code, we _highly_ recommend using the official SendGrid libraries available on our [Github account](https://github.com/sendgrid). These are written with efficiency in mind. If you need help getting started with our libraries, check out the tutorials in each of the languages:
+**1.** If you are integrated with SendGrid using code, we _highly_ recommend using the official SendGrid libraries available on our [GitHub account](https://github.com/sendgrid). These are written with efficiency in mind. If you need help getting started with our libraries, check out the tutorials in each of the languages:
 
 * [C Sharp](https://github.com/sendgrid/sendgrid-csharp/blob/master/README.md)
 * [PHP](https://github.com/sendgrid/sendgrid-php/blob/master/README.md)
