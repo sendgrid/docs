@@ -22,7 +22,7 @@ Most ESPs include features that allow customers to:
 
 ESPs like SendGrid also provide expertise on increasing your [email deliverability]({{root_url}}/glossary/email-deliverability/), preserving your sending reputation. They may utilize features and tools to accomplish this, such as:
 
-* [IP Whitelabeling]({{root_url}}/glossary/reverse-dns/)
+* [Reverse DNS]({{root_url}}/glossary/reverse-dns/)
 * [Dedicated IPs](?https://sendgrid.com/docs/API_Reference/Web_API_v3/IP_Management/index.html)
 * [IP warming]({{root_url}}/ui/sending-email/warming-up-an-ip-address/)
 
