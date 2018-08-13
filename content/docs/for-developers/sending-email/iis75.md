@@ -19,9 +19,9 @@ Before you get going, you'll need to set up IIS in order to support SendGrid int
 
 1. Open IIS 7.0/7.5 Manager in Windows
 2. Click on your site (see image below, noting that your configuration will look different), and the main configuration options page will be displayed to the right
-3. Double-click on the "SMTP E-mail" under the ASP.NET section (to get the below screen)
+3. Double-click **SMTP E-mail** under the ASP.NET section.
 4. In the email address field: type the email address that will be the "sender"
-5. Click on the "Deliver e-mail to SMTP server" radio button if not already enabled
+5. Select **Deliver e-mail to SMTP server**.
 6. In the SMTP Server field: type localhost
 7. In the Port field: type 25
 8. In Authentication Settings click the "Not required" option.
