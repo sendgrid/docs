@@ -13,7 +13,7 @@ navigation:
  	
  ### 	v3 Mail Send
  	
-The total message size of emails sent via the [v3 mail send endpoint](https://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/index.html) is limited to 30MB. This includes all headers, the body, and attachments. That means
+The total message size of emails sent via the [v3 mail send endpoint](https://sendgrid.com/docs/API_Reference/Web_API_v3/Mail/index.html) is limited to 20MB. This includes all headers, the body, and attachments. That means
 that the maximum attachment size depends on the size of the rest of the
 stuff in your message, but we do recommend that your attachments do not exceed 10MB.
 
