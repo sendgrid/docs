@@ -10,79 +10,116 @@ layout: page
 navigation:
   show: true
 ---
+Your SendGrid invoice contains a lot of information which may be difficult to read. To see your invoice, check your email or visit your [Plan & Billing details](https://app.sendgrid.com/settings/billing) page. Here's information on how to read your invoice:
 
-Your SendGrid invoice contains a lot of information, which may be difficult to read, particularly if you've made changes to your account during the previous month. To see your invoice, see the [Plan & Billing details](https://app.sendgrid.com/settings/billing) page. Here's information on how to read your invoice:
+![A screen shot of an example invoice]({{root_url}}/img/invoice_legend.jpg)
 
-![A screen shot of an example invoice]({{root_url}}/img/invoice_legend.png)
 
-## 	1. Physical Address
+## 1. Physical Address
+
 
 **The physical address of your business.** This address is the same address you entered when you first signed up. If you would like to update the address as it appears on your invoices, click Change Invoice Address on the [Plan & Billing Details](https://app.sendgrid.com/settings/billing) page. If you need to change the address on an existing invoice, please send an email to [billing@sendgrid.com](mailto:billing@sendgrid.com).
 
-## 	2. Billing Email
 
-**The email address where you receive SendGrid statements.** By default, this is the primary email address on file in your account. You can update it anytime from the [Plan & Billing Details](https://app.sendgrid.com/settings/billing) page. If you override the billing email address in this way, the primary email address on file will stop receiving invoices.
+## 2. Billing Email
+
+
+**The email address where you receive SendGrid statements**. By default, this is the primary email address on file in your account.
 
 Need to send invoices to multiple addresses? Consider creating a role address on your side that includes the all of billing stakeholders in your organization, or send an email to [billing@sendgrid.com](mailto:billing@sendgrid.com).
 
-## 	3. Charge Summary
 
-If you are in [a jurisdiction that SendGrid is required to charge sales tax]({{root_url}}/ui/account-and-settings/taxes-and-tax-exempt/), here is your tax summary:
+## 3. Charge Summary
 
-![Tax summary section]({{root_url}}/img/invoice_tax.png)
 
-These are the total charges for services used **in the current and previous month**:
+The Charge Summary section breaks down your invoice total into individual charges. Some charges covered by this invoice are retroactive, meaning you are paying for usage in the previous month, while others are proactive, meaning you are paying for services for the upcoming month. This information is broken down in the **Service Period** column.
 
-![Charge summary section]({{root_url}}/img/invoice_NL_usage.png)
+### Plan
 
-This describes the plan you subscribe to and the total charge for usage in the previous month. In this case, the user switched from the Essentials plan to the Pro plan in the middle of the previous month, and the charge reflects a credit for the part of the month they weren't on Essentials and a charge for the part of the month where they switched to Pro.
 
-![Additional IP address section]({{root_url}}/img/invoice_IP_Address.png)
+![Charge summary section]({{root_url}}/img/invoice_plan.jpg)
 
-**IP Address** - These charges indicate that you have additional IP Addresses allocated to your account. There are two lines because one IP Address was added before the IP Addresses price increased, and other was added after.
+This is the **plan you subscribe to**. In this case, the user is on a Pro 100K plan and will be charged $79.95 to use it for the month of July.
 
-Additional IPs cost $30.00 per IP/per month for Pro 100k plans and above.
+
+### IP Address
+
+![Additional IP address section]({{root_url}}/img/invoice_IP_address.jpg)
+
+These charges indicate that you have **additional Dedicated IP Addresses** allocated to your account. There are two lines in this example because one IP Address was added before the IP Address price increased, and the other was added after. The user in this example will pay $80.00 total for their IPs for the month of July (1 IP at $20, 2 IPs at $30).
+
+Additional IPs cost $30.00/mo each and are available on Pro 100K plans and above.
 
 For more information on SendGrid Plans, visit our [pricing page](https://sendgrid.com/pricing).
 
-![Contact storage section]({{root_url}}/img/invoice_contact_1.png)
 
-**Contact List Storage** - This item is the charge for the highest number of stored Marketing Campaigns Contacts in the previous month.
+### Contact List Storage
+
+
+![Contact storage section]({{root_url}}/img/invoice_contact_1.jpg)
+
+This item is the charge for the highest number of **contacts stored in Marketing Campaigns during the previous month**.
 
 Refer to "Contact List Usage" in the Usage Summary section below for more information on how this charge is calculated.
 
-**Email Activity History** - This charge is for access to the Email Activity Feed API as well as 30 days worth of Email Activity History. These two features are sold as a package and cannot be added individually.
 
-## 	4. Usage Summary
+### Email Activity History
 
-This is how charges from the Usage Summary section are calculated:
+![Email activity section]({{root_url}}/img/invoice_ease.jpg)
 
-![Overage charges section]({{root_url}}/img/invoice_overage.png)
+This charge is for access to the **Email Activity Feed API** as well as **30 days worth of Email Activity History** in the app. These two features are sold as a package and cannot be added individually.
 
-*This item is a calculation of any email credits used that go over the monthly limit of you package for sending **during the previous month.**
-
-In this example; the Pro 100k allows for 100,00 emails to be sent per month. We see that for the prior month, 120,000 email were sent, for a total of 20,000 emails over the limit.
-
-The overage charge rate for the Pro 100k plan is $0.00085 per extra email(20,000), which works out to a $17.00 overage charge.
+The price for access to this feature varies per plan. For more information on pricing for Email Activity History, visit our [pricing page](https://sendgrid.com/pricing).
 
 
-![Highest number of stored Marketing Campaigns Contacts in the previous month.]({{root_url}}/img/invoice_contact_storage.png)
+### Tax
 
-**Contact List Usage** - This item refers to highest number of **stored Marketing Campaigns Contacts in the previous month.** For more detailed breakdown on how Contact Storage billing works in Marketing Campaigns, [click here](https://sendgrid.com/pricing/).
+![Tax summary section]({{root_url}}/img/invoice_tax.jpg)
 
-In this example, the number under the "Used" column refers to the number of "blocks" of 10,000 contacts being stored in the prior month. We see that the highest number of blocks stored in that month was 5, or 50,000 contacts.
+If you are in [a jurisdiction where SendGrid is required to charge sales tax]({{root_url}}/ui/account-and-settings/taxes-and-tax-exempt/), your **tax charges** will appear here.
 
-The charge for contact storage is **$10.00 PER 10,000 contacts(1 block),** so this example works out to a $0.00 usage charge for contacts stored in the previous month.
+## 4. Usage Summary
 
-## 	5. Transaction and Payment Summary
+The Usage Summary section outlines usage-based charges on your account **during the previous month**.
 
-![Transaction and payment summary]({{root_url}}/img/invoice_payment_summary.png)
 
-The Transaction Summary shows the total charges for the month, and the Payment Summary area shows the payment type, and last 4 digits of the card that was charged. You can update your card information, retry a failed payment, and export past invoices for your business on the [Plan & Billing Details page](https://app.sendgrid.com/settings/billing)
+### Plan Overage
 
-**These line items always reflect the plan you currently have, not necessarily "Pro 100k", which is shown for the purposes of demonstration.**
+![Overage charges section]({{root_url}}/img/invoice_overage.jpg)
 
-## 	Additional Resources
+This item is a calculation of **any emails sent beyond the monthly limit** of your package **during the previous month**.
 
-- [SendGrid Pricing](https://sendgrid.com/pricing/)
+In this example, the Pro 100K plan allows for 100,00 emails to be sent per month. We see that in the previous month, 120,000 emails were sent for a total of 20,000 emails over the limit. The overage rate for the Pro 100K plan is $0.00085 per extra email, which works out to a $17.00 overage charge (20,000 x .00085 = 17).
+
+### Contact List Usage
+
+![Highest number of stored Marketing Campaigns Contacts in the previous month.]({{root_url}}/img/invoice_contact_storage.jpg)
+
+This item refers to highest number of **stored Marketing Campaigns Contacts in the previous month**. For more detailed breakdown on how Contact Storage billing works in Marketing Campaigns, [click here]({{root_url}}/ui/account-and-settings/billing/).
+
+In this example, the number under the "Used" column refers to the number of "blocks" of 10,000 contacts that were stored in the previous month. We see that the highest number of blocks stored in that month was 6, or 60,000 contacts.
+
+The charge for contact storage is **$10.00/mo for every 10,000 contacts (1 block)**, so this example works out to a $60.00 usage charge for contacts stored in the previous month.
+
+
+### Newsletter Usage
+
+![Empty Newsletter usage.]({{root_url}}/img/invoice_NL_usage.jpg)
+
+This item refers to usage of our [Legacy Newsletter product]({{root_url}}/ui/sending-email/legacy-newsletter-sunset/). We no longer offer this product, so most invoices will either not include this line item or will show a balance of $0.00, as in this example.
+
+
+## 5. Transaction and Payment Summary
+
+
+![Transaction and payment summary]({{root_url}}/img/invoice_payment_summary.jpg)
+
+The Transaction Summary shows the total charges for the month, and the Payment Summary shows the payment type and last 4 digits of the card that was charged. To change  your payment method, [click here]https://app.sendgrid.com/settings/billing.
+
+**These line items always reflect the plan you currently have, not necessarily "Pro 100K", which is shown for the purposes of demonstration**.
+
+
+## Additional Resources
+
+- [SendGrid Pricing]({{site.site_url}}/pricing/)
 - [Billing]({{root_url}}/ui/account-and-settings/billing/)
