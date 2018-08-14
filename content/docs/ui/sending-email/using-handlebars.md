@@ -182,12 +182,6 @@ Resulting replacement:
 <p>Hello <strong>Ben</strong></p>
 ```
 
-Resulting replacement:
-```
-<p>Warning! Your account is suspended, please call: 1-800-1234567</p>
-```
-
-
  ### 	Conditional statements
 
 Here are three types of conditonal statements:
