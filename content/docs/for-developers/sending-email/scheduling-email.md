@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-There are 3 easy ways to schedule your emails; use [Marketing Campaigns]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/), use the [SMTP API]({{root_url}}/for-developers/sending-email/scheduling-parameters/) header, or use the API.
+There are 3 easy ways to schedule your emails; use the [Marketing Campaigns]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/), use the [SMTP API]({{root_url}}/for-developers/sending-email/scheduling-parameters/) header, or use the API.
 
 <call-out>
 
