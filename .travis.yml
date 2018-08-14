@@ -9,8 +9,9 @@ node_js:
 cache:
 - pip
 - yarn
-install:
+before_install:
 - pip install --user awscli
+- export PATH=$PATH:$HOME/.local/bin
 before_script:
 - yarn
 script: yarn run build
