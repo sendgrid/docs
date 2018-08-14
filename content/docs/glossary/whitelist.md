@@ -14,4 +14,4 @@ Whitelisting refers to the process of granting a specific IP address access to a
 
 You may also hear the term _whitelist_ when referring to a list of IP addresses that receive special treatment when sending mail to a specific inbox provider. Email whitelists are becoming less and less common. These days, the best way to ensure your messages land in the inbox is to send mail that you know your recipients will love.
 
-For more information on deliverability best practices, please visit our [Deliverability Overview]({{root_url}}/ui/sending-email/email-deliverability/).
+For more information on deliverability best practices, please visit our [Deliverability Overview]({{root_url}}/ui/sending-email/deliverability/).
