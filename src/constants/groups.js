@@ -140,10 +140,15 @@ const GROUPS = {
     name: 'Open Source Apps',
     order: null,
   },
+  'frameworks': {
+    name: 'Frameworks',
+    order: null,
+  },
   'ungrouped': {
     name: 'Ungrouped',
     order: null,
   },
 };
+
 
 export default GROUPS;

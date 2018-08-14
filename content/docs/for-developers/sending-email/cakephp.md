@@ -1,6 +1,7 @@
 ---
 layout: page
 weight: 0
+group: frameworks
 title: CakePHP
 seo:
   title: Send Email with CakePHP & SendGrid
@@ -13,28 +14,28 @@ CakePHP comes with an email library that already supports SMTP. [For more inform
 
 In **app/views/layouts/** you need to define the layout of your text and HTML emails: 
 
-{% codeblock %}
+```
 email/
 html/
 default.ctp
 text/
 default.ctp
-{% endcodeblock %}
+```
+In **app/views/layouts/email/text/default.ctp** add:
 
-In <strong>app/views/layouts/email/text/default.ctp</strong> add:
-{% codeblock lang:php %}
+``` php
 <!--?php echo $content_for_layout; ?-->
-{% endcodeblock %}
+```
 
  and in **app/views/layouts/email/html/default.ctp** add: 
 
-{% codeblock lang:php %}
+``` php
 <!--?php echo $content_for_layout; ?-->
-{% endcodeblock %}
+```
 
  Then create the template for your emails. In this example we created templates for a registration email with the following structure: 
 
-{% codeblock %}
+```
 app/
 views/
 elements/
@@ -43,8 +44,7 @@ text/
 registration.ctp
 html/
 registration.ctp
-{% endcodeblock %}
-
+```
 In <strong>app/views/elements/email/text/registration.ctp</strong> add:
 {% codeblock lang:php %}
 Dear <!--?php echo $name ?-->,
