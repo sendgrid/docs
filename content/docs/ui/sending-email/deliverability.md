@@ -1,9 +1,9 @@
 ---
 seo:
-  title: Email Deliverability Overview
+  title: Deliverability Overview
   description: Email Deliverability Overview
   keywords: spam, bulk, box, segmentation, folder, inbox, list, deliverability, best, practice, engagement, blocked, not, delivered, delivery, spammy, can, can-spam, deliver
-title: Email Deliverability Overview
+title:  Deliverability Overview
 group: delivery-optimization
 weight: 0
 layout: page
@@ -78,7 +78,13 @@ Encouraging your recipients to do certain things can help bolster the trust ISPs
 - IP Whitelist - Some ISPs or mail admins can add rules to always allow _all_ incoming mail from specific IP addresses! Consider reaching out to the postmaster(usually example@example.com) of problematic mail domains to see if they can whitelist [your dedicated IP address]({{root_url}}/ui/account-and-settings/ip-access-management/).
 - "If you don't receive an email right away, please check your spam folder and mark "not spam"" - Adding this simple sentence to your sign-up form area can solve a lot of potential heartache. If a message you sent ends up in the Spam folder, and the recipient manually goes in and pulls it out, that's fantastic! This not only helps an ISPs incoming mail filters in avoiding false positives, but also improves your standing with that ISP.
 
- ### 	Nuts and Bolts
+### Sending Adult Content
+
+If your business is adult in nature, we can send your mail to the same standards and deliverability as any of our other customers. However, **We do not allow our users to send explicit content within emails.** This applies primarily to images, but we reserve the right to refuse the sending of any type of content that we deem to be vulgar, pornographic, or otherwise explicit.
+
+If you are unsure where your emails stand, please contact our support team at [https://support.sendgrid.com](https://support.sendgrid.com)
+
+ ## 	Nuts and Bolts
 
  ### 	Tips for Click Tracked links
 
@@ -106,6 +112,7 @@ Finally, there are some great 3rd party services you can use to get an idea of h
 * [http://www.mail-tester.com/](http://www.mail-tester.com/)
 
 You can send emails to a capture address at one of these services and they will reply with a breakdown of all the positive and negative factors of your emails. This helps you isolate and fix specific issues that may be sending your email to the Spam folder rather than the inbox. These services are _HIGHLY recommended_ for troubleshooting **spam folder delivery.**
+
 
 [Senderscore](https://senderscore.org/) is another great resource you can use to get a good idea of how the internet email community ranks the [IP address you send mail from]({{root_url}}/ui/account-and-settings/ip-access-management/).
 
