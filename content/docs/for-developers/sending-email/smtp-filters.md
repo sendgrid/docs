@@ -121,7 +121,7 @@ Rewrites links in email text and html bodies to go through our webservers, allow
 </tbody>
 </table>
 
-### Example X-SMTPAPI Header Value
+#### Example X-SMTPAPI Header Value
 ```json
 {
   "filters" : {
@@ -160,7 +160,7 @@ of your email.
 </tbody>
 </table>
 
-### Example X-SMTPAPI Header Value
+#### Example X-SMTPAPI Header Value
 ```json
 {
   "filters" : {
@@ -203,7 +203,7 @@ Inserts a footer at the bottom of the text and HTML bodies.
 </tbody>
 </table>
 
-### Example X-SMTPAPI Header Value
+#### Example X-SMTPAPI Header Value
 ```json
 {
   "filters" : {
@@ -281,7 +281,7 @@ Re-writes links to integrate with Google Analytics.
 ```
 
 
-### Filter: opentrack
+## Filter: opentrack
 
 If you don't use 'replace' this will insert an <code>&lt;img&gt;</code> tag at the bottom of the html section of an email which will be used to track if an email is opened. If you choose to use 'replace', you can put the tracking pixel wherever you would like in the email and SendGrid will replace it at send time.
 
@@ -305,7 +305,7 @@ If you don't use 'replace' this will insert an <code>&lt;img&gt;</code> tag at t
 </tbody>
 </table>
 
-### Example X-SMTPAPI Header Value
+#### Example X-SMTPAPI Header Value
 ```json
 {
   "filters" : {
@@ -348,7 +348,7 @@ If you don't use 'replace' this will insert an <code>&lt;img&gt;</code> tag at t
 </tbody>
 </table>
 
-### Example X-SMTPAPI Header Value
+#### Example X-SMTPAPI Header Value
 ```json
 {
   "filters" : {
@@ -404,7 +404,7 @@ The `landing` argument cannot be used in SMTPAPI. It can only be setup via the U
 
 </call-out>
 
-### Example X-SMTPAPI Header Value
+#### Example X-SMTPAPI Header Value
 ```json
 {
     "filters": {
@@ -450,7 +450,7 @@ Uses a [transactional template](https://sendgrid.com/docs/API_Reference/Web_API_
 </tbody>
 </table>
 
-### Example X-SMTPAPI Header Value
+#### Example X-SMTPAPI Header Value
 ```json
 {
   "filters": {
@@ -495,7 +495,7 @@ This setting refers to our original Email Template app. We now support more full
 </tbody>
 </table>
 
-### Example X-SMTPAPI Header Value
+#### Example X-SMTPAPI Header Value
 ```json
 {
   "filters" : {

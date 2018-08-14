@@ -1,9 +1,9 @@
 ---
 seo:
-  title: Errors and Troubleshooting
+  title: SMTP Errors and Troubleshooting
   description: SMTP Response codes and troubleshooting tips
   keywords: SMTP, send email, integrate, building, filters, scheduling, substitution, suppression groups, unique arguments, recipients
-title: Errors and Troubleshooting
+title: SMTP Errors and Troubleshooting
 group: smtp
 weight: 0
 layout: page

@@ -6,8 +6,7 @@ group: smtp
 navigation:
   show: true
 ---
-<call-out>
+SendGrid recommends using our [Node.js SMTPAPI library](https://github.com/sendgrid/smtpapi-nodejs), full documentation can be found on GitHub. Our [Node.js API library](https://github.com/sendgrid/sendgrid-nodejs) allows you to fully integrate with SendGrid.
 
-It is recommended that you use our [Node.js SMTPAPI library](https://github.com/sendgrid/smtpapi-nodejs), full documentation can be found on GitHub. You can more deeply integrate with SendGrid by using our [Node.js API library](https://github.com/sendgrid/sendgrid-nodejs).
 
-</call-out>
+

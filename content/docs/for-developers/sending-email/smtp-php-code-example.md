@@ -6,8 +6,6 @@ group: smtp
 navigation:
   show: true
 ---
-<call-out>
+SendGrid recommends using our [PHP SMTPAPI library](https://github.com/sendgrid/smtpapi-php), full documentation can be found on GitHub. Our [PHP API library](https://github.com/sendgrid/sendgrid-php) allows you to fully integrate with SendGrid.
 
-It is recommended that you use our [PHP SMTPAPI library](https://github.com/sendgrid/smtpapi-php), full documentation can be found on GitHub. You can more deeply integrate with SendGrid by using our [PHP API library](https://github.com/sendgrid/sendgrid-php).
 
-</call-out>

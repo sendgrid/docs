@@ -179,91 +179,57 @@ You must set the Mail Send permissions to FULL ACCESS, Stats to READ ACCESS and 
 
  ### 	Email Settings for the SendGrid WordPress Subscription Widget
 
-- **Send Method**: `define('SENDGRID_SEND_METHOD', 'api');`
+- **Send Method**: `define('SENDGRID_SEND_METHOD', 'api');` - The method used to deliver email. Can be either SMTP or the Web API. SMTP can only be used if the Swift Mailer plugin is installed.
 
-  The method used to deliver email. Can be either SMTP or the Web API. SMTP can only be used if the Swift Mailer plugin is installed.
-*****
-- **From name**: `define('SENDGRID_FROM_NAME', 'Example Name');`
+- **From name**: `define('SENDGRID_FROM_NAME', 'Example Name');` - The name of the sender.
 
-  The name of the sender.
-*****
-- **From email**: `define('SENDGRID_FROM_EMAIL', 'from_email@example.com');`
+- **From email**: `define('SENDGRID_FROM_EMAIL', 'from_email@example.com');` -  The email address of the sender.
 
-  The email address of the sender.
-*****
-- **Reply to email**: `define('SENDGRID_REPLY_TO', 'reply_to@example.com');`
+- **Reply to email**: `define('SENDGRID_REPLY_TO', 'reply_to@example.com');` - The email address that will populate the "reply to" field when recipients click the "reply" button.
 
-  The email address that will populate the "reply to" field when recipients click the "reply" button.
-*****
-- **Categories**: `define('SENDGRID_CATEGORIES', 'category_1,category_2');`
+- **Categories**: `define('SENDGRID_CATEGORIES', 'category_1,category_2');` - Any [categories]({{root_url}}/ui/analytics-and-reporting/categories/) that you would like to tag your WordPress emails with.
 
-  Any [categories]({{root_url}}/ui/analytics-and-reporting/categories/) that you would like to tag your WordPress emails with.
-*****
-- **Template**: `define('SENDGRID_TEMPLATE', 'templateID');`
+- **Template**: `define('SENDGRID_TEMPLATE', 'templateID');` - The template that you would like to apply to your WordPress emails.
 
-  The template that you would like to apply to your WordPress emails.
-*****
-- **Content**: `define('SENDGRID_CONTENT_TYPE', 'html');`
-
-  Denotes the type of data included in your email. Can be "plaintext" or "html".
+- **Content**: `define('SENDGRID_CONTENT_TYPE', 'html');` - Denotes the type of data included in your email. Can be "plaintext" or "html".
 
  ### 	Manually Configuring Your Widget Settings (Advanced)
 
  ### 	Widget Settings
 
-- **Marketing Campaigns API Keys**: `define('SENDGRID_MC_API_KEY', 'sendgrid_mc_api_key');`
+- **Marketing Campaigns API Keys**: `define('SENDGRID_MC_API_KEY', 'sendgrid_mc_api_key');` - Your API Key generated to authenticate use of the Marketing Campaigns API.
 
-  Your API Key generated to authenticate use of the Marketing Campaigns API.
-*****
-- **Use the same authentication as for sending emails ('true' or 'false':)**: `define('SENDGRID_MC_OPT_USE_TRANSACTIONAL', 'false');`
+- **Use the same authentication as for sending emails ('true' or 'false':)**: `define('SENDGRID_MC_OPT_USE_TRANSACTIONAL', 'false');` - Indicates if your API Key used to authenticate sending emails should also be used when adding new contacts via the subscription widget.
 
-  Indicates if your API Key used to authenticate sending emails should also be used when adding new contacts via the subscription widget.
-*****
-- **Contact list ID**: `define('SENDGRID_MC_LIST_ID', 'listID');`
-
-  The ID of the contact list that you would like your new subscribers to be added to.
+- **Contact list ID**: `define('SENDGRID_MC_LIST_ID', 'listID');`- The ID of the contact list that you would like your new subscribers to be added to.
 
   To find your list ID, navigate to **Marketing Campaigns**, then click **Contacts**. Click on the list you would like to use. When viewing the list, the last 6 digits of the URL make up the list ID.
-*****
-- **Display the first and last name fields ('true' or 'false')**: `define('SENDGRID_MC_OPT_INCL_FNAME_LNAME', 'true');`
 
-  Indicates if you want to display fields for your subscribers to enter both their first and last names on the subscription form.
-****
-- **First and last name fields are required ('true' or 'false')**: `define('SENDGRID_MC_OPT_REQ_FNAME_LNAME', 'true');`
 
-  Indicates if you want to require your subscribers to submit both their first and last names on the subscription form.
-*****
+- **Display the first and last name fields ('true' or 'false')**: `define('SENDGRID_MC_OPT_INCL_FNAME_LNAME', 'true');` - Indicates whether you want to display fields for your subscribers to enter both their first and last names on the subscription form.
+
+- **First and last name fields are required ('true' or 'false')**: `define('SENDGRID_MC_OPT_REQ_FNAME_LNAME', 'true');` - Indicates whether you want to require your subscribers to submit both their first and last names on the subscription form.
+
 - **Signup confirmation email subject**: `define('SENDGRID_MC_SIGNUP_EMAIL_SUBJECT', 'Confirm subscription');`
 
-  The subject line of your signup confirmation emails.
-*****
 - **Signup confirmation email content**: `define('SENDGRID_MC_SIGNUP_EMAIL_CONTENT', '&lta href="%confirmation_link%"&gtclick here&lt/a&gt');`
 
-  The content of the body of your signup confirmation email.
-*****
 - **Signup confirmation page ID**: `define('SENDGRID_MC_SIGNUP_CONFIRMATION_PAGE', 'page_id');`
 
   The WordPress page ID of the page you would like to link users to when confirming their subscription.
 
   To find your page ID, log into your WordPress account and click **Pages** in the left hand nav of your dashboard. Select your confirmation page. In the URL you will see the text "post=XX" where XX represents your page ID.
-*****
+
 - **First Name Label**: `define('SENDGRID_MC_FIRST_NAME_LABEL', 'First Name');`
 
-  First Name Label
-*****
 - **Last Name Label**: `define('SENDGRID_MC_LAST_NAME_LABEL', 'Last Name');`
 
-  Last Name Label
-*****
 - **Email Label**: `define('SENDGRID_MC_EMAIL_LABEL', ‘Email’);`
 
-  Email Label
-*****
 - **Subscribe Label**: `define('SENDGRID_MC_SUBSCRIBE_LABEL', 'Subscribe');`
 
-  Subscribe Button Label
 
-## 	Related Content
+## Additional Resources
 
 * [SendGrid's WordPress Plugin]({{root_url}}/for-developers/sending-email/wordpress-plugin/)
 * [SendGrid's WordPress Integration FAQ]({{root_url}}/for-developers/sending-email/wordpress-faq/)
