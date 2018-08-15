@@ -62,7 +62,7 @@ To set up reverse DNS, you must submit the DNS records provided by SendGrid to y
 3. Next, select the IP to set up reverse DNS.
 4. Add a subdomain. For more information about picking a subdomain, see [Subdomains](#subdomain).
 5. Select or enter a domain you want to associate with the IP. Make sure that you only enter the name of your root domain. Do not include `www` or `http://www` in this field! Your domain needs to match the domain of your from address on the emails you are sending out. For example, if I am setting up the domain `example.sendgrid.com`, I would set my domain to be `sendgrid.com`. Click **Save** and then **Confirm**. An individual IP address can only have one reverse DNS set up.
-6. Next, you need to add all of the A Records on this screen to your DNS host. This process varies depending on your DNS host. For videos on how to add your A Records to some popular DNS service providers, check out these [videos]({{root_url}}/ui/sending-email/dns-providers/).
+6. Next, you need to add all of the A Records on this screen to your DNS host. This process varies depending on your DNS host. For videos on how to add your A Records to some popular DNS service providers, check out these [videos]({{root_url}}/ui/account-and-settings/dns-providers/).
 
 <call-out>
 
@@ -94,6 +94,6 @@ There is a character limit in SPF (sender policy framework) records that means t
 
 ## 	Additional resources
 
-- [How to set up domain authentication]({{root_url}}/ui/sending-email/how-to-set-up-domain-authentication/)
-- [How to set up link branding]({{root_url}}/ui/sending-email/how-to-set-up-link-branding/)
+- [How to set up domain authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/)
+- [How to set up link branding]({{root_url}}/ui/account-and-settings/how-to-set-up-link-branding/)
 - [Troubleshooting]({{root_url}}/ui/sending-email/troubleshooting-sender-authentication/)

@@ -18,7 +18,7 @@ An Internet Protocol (IP) address is a unique numerical address that defines a l
 
 ## 	Why would I want a dedicated IP address?
 
-If you are sending any significant amount of email, we typically suggest sending your marketing and transactional emails to from separate IP addresses. In addition, it is strongly recommended to associate your sending domain with your new outbound IP address (provided to you by SendGrid). This is available at no extra cost and can be accomplished by [completing an rDNS setup for your dedicated IP (here's a video tutorial and documentation help)]({{root_url}}/ui/sending-email/how-to-set-up-reverse-dns/).
+If you are sending any significant amount of email, we typically suggest sending your marketing and transactional emails to from separate IP addresses. In addition, it is strongly recommended to associate your sending domain with your new outbound IP address (provided to you by SendGrid). This is available at no extra cost and can be accomplished by [completing an rDNS setup for your dedicated IP (here's a video tutorial and documentation help)]({{root_url}}/ui/account-and-settings/how-to-set-up-reverse-dns/).
 
 We also suggest having at least two promotional IP addresses when your volume reaches 200-300K/month.
 
@@ -54,7 +54,7 @@ Under "Additional Options" you will find the following options:
   - *Allow my subusers to send mail using these IP addresses:* check this to select which subusers can send on this IP address
 
 
-After purchasing your IP, we strongly encourage you to set up reverse DNS. For more information about setting up reverse DNS, see [How to set up reverse DNS]({{root_url}}/ui/sending-email/how-to-set-up-reverse-dns/).
+After purchasing your IP, we strongly encourage you to set up reverse DNS. For more information about setting up reverse DNS, see [How to set up reverse DNS]({{root_url}}/ui/account-and-settings/how-to-set-up-reverse-dns/).
 
 <call-out>
 

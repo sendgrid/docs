@@ -10,5 +10,5 @@ navigation:
   show: false
 ---
 
-[Reserved Fields]({{root_url}}/ui/sending-email/custom-fields/) are those custom fields that cannot be deleted and do not count towards your allotment of 60 custom fields. They include fields such as **email**, **first_name**, and **last_name** in Marketing Campaigns.
+[Reserved Fields]({{root_url}}/ui/managing-contacts/custom-fields/) are those custom fields that cannot be deleted and do not count towards your allotment of 60 custom fields. They include fields such as **email**, **first_name**, and **last_name** in Marketing Campaigns.
 

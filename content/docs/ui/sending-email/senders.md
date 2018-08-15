@@ -49,7 +49,7 @@ You must verify your sender identity before you can edit it or use it to send a 
 <call-out>
 
 
-If you have an [authenticated domain]({{root_url}}/ui/sending-email/how-to-set-up-domain-authentication/) and your sender email address matches that domain exactly, your sender identity will automatically verify.
+If you have an [authenticated domain]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/) and your sender email address matches that domain exactly, your sender identity will automatically verify.
 
 </call-out>
 

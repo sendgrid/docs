@@ -17,5 +17,5 @@ For more information:
 
 * [Bulk Email Folder]({{root_url}}/glossary/bulk-mail-folder/)
 * [Email Deliverability]({{root_url}}/glossary/email-deliverability/)
-* [Sender authentication]({{root_url}}/ui/sending-email/how-to-set-up-domain-authentication/)
+* [Sender authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/)
 * [Black Hat Sender]({{root_url}}/glossary/black-hat-sender/)

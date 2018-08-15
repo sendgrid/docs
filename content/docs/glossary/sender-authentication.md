@@ -14,6 +14,6 @@ Sender authentication refers to the process of showing email providers that Send
 
 ## 	Additional Resources
 
-- [How to set up link branding]({{root_url}}/ui/sending-email/how-to-set-up-link-branding/)
-- [How to set up domain authentication]({{root_url}}/ui/sending-email/how-to-set-up-domain-authentication/)
-- [How to set up reverse DNS]({{root_url}}/ui/sending-email/how-to-set-up-reverse-dns/)
+- [How to set up link branding]({{root_url}}/ui/account-and-settings/how-to-set-up-link-branding/)
+- [How to set up domain authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/)
+- [How to set up reverse DNS]({{root_url}}/ui/account-and-settings/how-to-set-up-reverse-dns/)

@@ -54,4 +54,4 @@ SendGrid strongly recommends:
 
 - [Lists and Segmentation]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/)
 - [Unsubscribe Groups]({{root_url}}/docs/ui/sending-email/index-suppressions/)
-- [Custom Fields]({{root_url}}/ui/sending-email/custom-fields/)
+- [Custom Fields]({{root_url}}/ui/managing-contacts/custom-fields/)

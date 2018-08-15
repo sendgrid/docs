@@ -37,6 +37,6 @@ If you are in the habit of BASE64 encoding your email content we will be unable 
 Click tracking can be turned off for individual links by including the `clicktracking=off` attribute inside the anchor of an HTML link *before* the `href`. For example, `<a clicktracking=off href="http://example.com">link text</a>` would not be tracked.
 
 
-If you have a Pro 100K package or higher and you have [authenticated]({{root_url}}/ui/sending-email/how-to-set-up-reverse-dns/) your sending IP address, the replaced click tracking links lie under the authenticated subdomain. Pro 100K and higher packages that have not authenticated, Essentials packages, and Free packages have click tracking links that resolve through one of SendGrid's domains (sendgrid.net, sendgrid.info, sendgrid.me, etc.).
+If you have a Pro 100K package or higher and you have [authenticated]({{root_url}}/ui/account-and-settings/how-to-set-up-reverse-dns/) your sending IP address, the replaced click tracking links lie under the authenticated subdomain. Pro 100K and higher packages that have not authenticated, Essentials packages, and Free packages have click tracking links that resolve through one of SendGrid's domains (sendgrid.net, sendgrid.info, sendgrid.me, etc.).
 
 

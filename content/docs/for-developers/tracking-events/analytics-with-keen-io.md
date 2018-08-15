@@ -82,7 +82,7 @@ To edit a segment, click on the segment you newly created: you’ll find a menu 
 
 ## 	Custom Attributes
 
-SendGrid gives you the ability to include additional data about your contacts using [custom fields]({{root_url}}/ui/sending-email/custom-fields/). These fields are automatically fully available for segmentation and filtering in this app.
+SendGrid gives you the ability to include additional data about your contacts using [custom fields]({{root_url}}/ui/managing-contacts/custom-fields/). These fields are automatically fully available for segmentation and filtering in this app.
 
 Once you’ve added an attribute you’d like to use for analysis (for example: customer_ID, company_name, email campaign ID or campaign names), you can use segments to track email performance for these custom attributes. Here’s an example:
 
