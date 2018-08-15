@@ -10,7 +10,7 @@ navigation:
   show: false
 ---
 
-[Email Deliverability](http://sendgrid-knowledge-center-staging.s3-website-us-east-1.amazonaws.com/glossary/email-deliverability/) represents your sent emails being delivered to your recipient’s inbox as intended. Strong deliverability is critical for any company, as email is the primary method of communication to customers. Your delivery rate is the total number of emails successfully delivered to the ISPs divided by the total number of emails sent.
+Deliverability represents your sent emails being delivered to your recipient’s inbox as intended. Strong deliverability is critical for any company, as email is the primary method of communication to customers. Your delivery rate is the total number of emails successfully delivered to the ISPs divided by the total number of emails sent.
 
 The higher your delivery rate and the more emails that make it to the inbox, the better the response will be to your messages. Whether you drive revenue from email, or have goals for new user acquisition, engagement, or customer retention, paying close attention to your email deliverability is key.
 

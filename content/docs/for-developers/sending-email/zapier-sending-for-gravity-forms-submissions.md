@@ -39,13 +39,21 @@ Click here to [Send new emails via SendGrid for new Gravity Forms submissions](h
 1. Follow the directions on the first step of the Zap to connect your Gravity Forms account to Zapier.
 2. Choose your SendGrid account from the list of accounts, or connect a new account.
 3. To connect your SendGrid account to Zapier for the first time, you will enter the credentials of an API/mail account. If you have not created this account, you can do so [here](https://sendgrid.com/credentials).
+
 ![Credential entry](https://api.monosnap.com/rpc/file/download?id=gAajRq9wMKNTN4HyEKzAMosD71ifb8)
+
 4. Using fields from Gravity Forms, create and customize the **To**, **From**, and **Subject** email message that the Zap will send.
+
 ![Email entry](https://api.monosnap.com/rpc/file/download?id=5fpmLkDdv82LPlTeYCyhUE7bsFeSIE)
+
 5. Click **Save + Finish**.
 
 Now test the Zap to make sure it works. Once you’re satisfied with the results, new Gravity Forms submissions will automatically send an SendGrid email.
 
-*Note: if you ever want to change this Gravity Forms and SendGrid integration, just go to [your Zapier dashboard](https://zapier.com/app/dashboard) and tweak anything you'd like.*
+<call-out>
+
+If you ever want to change this Gravity Forms and SendGrid integration, just go to [your Zapier dashboard](https://zapier.com/app/dashboard) and tweak anything you'd like.
+
+</call-out>
 
 You can also check out all that’s possible with [Gravity Forms on Zapier](https://zapier.com/zapbook/gravity-forms/), and other ways to connect [Gravity Forms and SendGrid](https://zapier.com/zapbook/gravity-forms/sendgrid).

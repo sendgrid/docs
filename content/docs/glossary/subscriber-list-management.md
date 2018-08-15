@@ -16,4 +16,4 @@ Make sure to check your list stats. You can do this in [Marketing Campaigns]({{r
 
 Make sure you are sending mail to people who actually want your mail. Otherwise, you will get lots of [spam reports]({{root_url}}/glossary/spam-reports/), [blocks]({{root_url}}/glossary/blocks/) and [bounces]({{root_url}}/glossary/bounces/).
 
-Finally, make sure you do not buy email lists or engaging in [Email Harvesting]({{root_url}}/glossary/email-harvesting/). For tips on getting your messages to the Inbox, please see our [email deliverability]({{root_url}}/ui/sending-email/email-deliverability/) page.
+Finally, make sure you do not buy email lists or engaging in [Email Harvesting]({{root_url}}/glossary/email-harvesting/). For tips on getting your messages to the Inbox, please see our [email deliverability]({{root_url}}/ui/sending-email/deliverability/) page.

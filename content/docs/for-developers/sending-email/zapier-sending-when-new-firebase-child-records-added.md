@@ -37,19 +37,32 @@ Click here to [Send SendGrid email when new Firebase child records are added](ht
 
 1. Choose your Firebase account from the list of accounts, or connect a new account.
 2. To connect a new Firebase account to your Zapier, you will need to enter the name of the **Firebase instance** you wish to use, and the **Secret** to authenticate the connection. You can find your secret authentication under the Auth tab.
+
 ![Credentials](https://api.monosnap.com/rpc/file/download?id=mHKxFy2GGk7HAi3GiaWCjnlHFL5AwM)
+
 ![Secret](https://api.monosnap.com/rpc/file/download?id=qgDlpkBImMfmQgb8TeQCQEZXNK0wnc)
+
 3. Enter the **Path to Data** that you wish for the Zap to watch for child records.
+
 ![Path to data](https://api.monosnap.com/rpc/file/download?id=ftCyfZYQCYwIxgDZ7m61vK9wcdU2F3)
+
 4. Choose your  account from the list of accounts, or connect a new account.
 5. To connect your SendGrid account to Zapier for the first time, you will enter the credentials of an API/mail account. If you have not created this account, you can do so [here](https://sendgrid.com/credentials).
+
 ![Credential entry](https://api.monosnap.com/rpc/file/download?id=gAajRq9wMKNTN4HyEKzAMosD71ifb8)
+
 6. Using fields from Firebase, create and customize the **To**, **From**, and **Subject** email message that the Zap will send.
+
 ![Email entry](https://api.monosnap.com/rpc/file/download?id=z8bVdXOXSPszyLTNfBf0lhSYrPMlcP)
+
 7. Click **Save + Finish**.
 
 Now test the Zap to make sure it works. Once you’re satisfied with the results, new child records created in Firebase will send corresponding emails in SendGrid.
 
-*Note: if you ever want to change this Firebase and SendGrid integration, just go to [your Zapier dashboard](https://zapier.com/app/dashboard) and tweak anything you'd like.*
+<call-out>
+
+If you ever want to change this Firebase and SendGrid integration, just go to [your Zapier dashboard](https://zapier.com/app/dashboard) and tweak anything you'd like.
+
+</call-out>
 
 You can also check out all that’s possible with [Firebase on Zapier](https://zapier.com/zapbook/firebase/), and other ways to connect [Firebase and SendGrid](https://zapier.com/zapbook/firebase/sendgrid).

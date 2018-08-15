@@ -21,7 +21,7 @@ This is by no means a complete description of CAN-SPAM, please visit the [CAN-SP
 
 <call-out>
 
-The guidelines laid out in CAN-SPAM represent the “bare-minimum” regarding sending practices. Following these guidelines does not guarantee delivery to your recipients’ inboxes: CAN-SPAM leaves a considerable amount of room for improvement. Please visit [SendGrid Deliverability Tips and Tricks]({{root_url}}/ui/sending-email/email-deliverability/) for a more detailed discussion of how you can improve your sending practices.
+The guidelines laid out in CAN-SPAM represent the “bare-minimum” regarding sending practices. Following these guidelines does not guarantee delivery to your recipients’ inboxes: CAN-SPAM leaves a considerable amount of room for improvement. Please visit [SendGrid Deliverability Tips and Tricks]({{root_url}}/ui/sending-email/deliverability/) for a more detailed discussion of how you can improve your sending practices.
 
 </call-out>
 

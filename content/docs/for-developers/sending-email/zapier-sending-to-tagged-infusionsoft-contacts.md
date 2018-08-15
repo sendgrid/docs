@@ -38,17 +38,27 @@ Click here to [Send emails from SendGrid to tagged Infusionsoft Contacts](https:
 
 1. Choose your Infusionsoft account from the list of accounts, or connect a new account.
 2. To connect a new Infusionsoft account to your Zapier, simply login and click **Allow** on the pop-up window in the Zap when prompted.
+
 ![Infusionsoft login](http://cl.ly/image/2x3l3d2e0t3o/Image%202015-10-30%20at%2011.30.29%20AM.png)
+
 3. Choose your SendGrid account from the list of accounts, or connect a new account.
 4. You’ll then need to choose the Tag name you’d like the Zap to monitor.
+
 ![Infusionsoft Tag](http://cl.ly/image/3N1O0g0c3r3K/Image%202015-10-30%20at%2011.33.06%20AM.png)
+
 5. To connect your SendGrid account to Zapier for the first time, you will enter the credentials of an API/mail account. If you have not created this account, you can do so [here](https://sendgrid.com/credentials).
+
 ![Credential entry](https://api.monosnap.com/rpc/file/download?id=gAajRq9wMKNTN4HyEKzAMosD71ifb8)
+
 6. Using fields from Infusionsoft, create and customize the **To**, **From**, and **Subject** email message that the Zap will send.
 7. Click **Save + Finish**.
 
 Now test the Zap to make sure it works. Once you’re satisfied with the results, tagged contacts in Infusionsoft will automatically receive emails via SendGrid.
 
-*Note: if you ever want to change this Infusionsoft and SendGrid integration, just go to [your Zapier dashboard](https://zapier.com/app/dashboard) and tweak anything you'd like.*
+<call-out>
+
+If you ever want to change this Infusionsoft and SendGrid integration, just go to [your Zapier dashboard](https://zapier.com/app/dashboard) and tweak anything you'd like.
+
+</call-out>
 
 You can also check out all that’s possible with [Infusionsoft on Zapier](https://zapier.com/zapbook/infusionsoft/), and other ways to connect [Infusionsoft and SendGrid](https://zapier.com/zapbook/infusionsoft/sendgrid/).

@@ -9,15 +9,15 @@ navigation:
 
 These instructions will walk you through how to add an SMTP server to an existing Outlook 2013 setup, but you can also add these settings at the account creation stage.
 
-First, go to: 'File’ and then 'Account and Social Network Settings’ and click on 'Account Settings'.
+Select **File** and then select **Account and Social Network Settings**. Click  **Account Settings**.
 
 ![]({{root_url}}/images/outlook_2013_1.png "Account Settings")
 
-The 'Account Settings’ window should appear as below; please select the account you receive e-mail through and click the 'Change’ button.
+The 'Account Settings’ window appears. Select the account you receive e-mail through and click  **Change**.
 
 ![]({{root_url}}/images/outlook_2013_2.png "Change Email")
 
-The following 'Change E-mail Account’ window will appear. This setting (in the red rectangle below) needs to be set for our SMTP address. Outgoing Mail Server smtp.sendgrid.net
+The 'Change E-mail Account’ window appears. This setting (in the red rectangle below) needs to be set for our SMTP address. Outgoing Mail Server smtp.sendgrid.net
 Under Login Information, please enter your SendGrid username and password.
 
 <call-out>
@@ -28,13 +28,13 @@ Your SendGrid username may not necessarily be an email address. If your SendGrid
 
 ![]({{root_url}}/images/outlook_2013_3.png "Change Account")
 
-Next, click on the 'More Settings’ button and enter the information as shown below. (Keep in mind you can also use port 25 with no security or 587 with TLS security.)
+Next, click **More Settings** and enter the information as shown below. (Keep in mind you can also use port 25 with no security or 587 with TLS security.)
 
-Under the “Outgoing Server Tab”, check mark “My outgoing server (SMTP) requires authentication. Click “Log on using” and enter your SendGrid Username and Password. Click 'OK’ and you should return to the 'Change E-mail Account’ window.
+Under the “Outgoing Server Tab”, select **My outgoing server (SMTP) requires authentication**. Click **Log on using** and enter your SendGrid Username and Password. Click **OK** and the 'Change E-mail Account’ window appears.
 
 ![]({{root_url}}/images/outlook_2013_4.png "Internet Email Settings")
 
-Once you are back on the Change Account screen, click “Next >” to test that everything is setup correctly.
+Once you are back on the Change Account screen, click **Next** to test that everything is setup correctly.
 
 ![]({{root_url}}/images/outlook_2013_5.png "Click Next")
 

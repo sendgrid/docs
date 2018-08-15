@@ -36,7 +36,7 @@ You must ensure that the subdomain-domain combination for your receiving domain 
 
 <call-out type="warning">
 
-Only whitelabeled domains may be used when configuring Inbound Parse!
+Only authenticated domains may be used when configuring Inbound Parse!
 
 </call-out>
 

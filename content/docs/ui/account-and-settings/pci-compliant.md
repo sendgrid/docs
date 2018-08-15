@@ -1,9 +1,9 @@
 ---
 seo:
   title: Is SendGrid PCI compliant?
-  description: Is Sendgrid PCI compliant?
+  description: Is SendGrid PCI compliant?
   keywords: credit, card, pci, dss, compliant
-title: Is Sendgrid PCI compliant?
+title: Is SendGrid PCI compliant?
 weight: 0
 group: account-management
 layout: page

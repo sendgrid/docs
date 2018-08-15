@@ -182,12 +182,6 @@ Resulting replacement:
 <p>Hello <strong>Ben</strong></p>
 ```
 
-Resulting replacement:
-```
-<p>Warning! Your account is suspended, please call: 1-800-1234567</p>
-```
-
-
  ### 	Conditional statements
 
 Here are three types of conditonal statements:
@@ -456,5 +450,5 @@ Resulting replacement:
 
 - [Transactional Templates Overview]({{root_url}}/ui/sending-email/transactional-email/)
 - [Create and edit Dynamic Transactional Templates]({{root_url}}/ui/sending-email/create-and-edit-transactional-templates/)
-- [Mail Send with Dynamic Transactional Templates](https://dynamic-templates.api-docs.io/3.0)
+- [Dynamic Templates API](https://dynamic-templates.api-docs.io/3.0)
 - [How to send an email with dynamic templates]({{root_url}}/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/)

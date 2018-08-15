@@ -16,7 +16,7 @@ export const GLOSSARY_TERMS_DEVS = {
   ANCHORS: [
     { URL: '/glossary/sender-authentication/', TEXTNODE: 'Sender Authentication' },
     { URL: '/glossary/event-webhook/', TEXTNODE: 'Event Webhook' },
-    { URL: '/glossary/email-deliverability/', TEXTNODE: 'Email Deliverability' },
+    { URL: '/glossary/deliverability/', TEXTNODE: 'Email Deliverability' },
   ],
   IMAGE: magnifyImageDevs,
 };
