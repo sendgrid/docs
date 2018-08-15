@@ -24,4 +24,4 @@ deploy:
     branch: a-new-hope-episode-iv
 after_deploy:
 - aws configure set preview.cloudfront true
-- test $TRAVIS_BRANCH = "a-new-hope-episode-iv" && aws AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY cloudfront create-invalidation --distribution-id $CLOUDFRONT_DIST_ID --paths "/*"
+- test $TRAVIS_BRANCH = "a-new-hope-episode-iv" && AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DIST_ID --paths "/*"
