@@ -21,7 +21,7 @@ Before you begin
 
 If you have domain, link, and IP authentication set up, remove 5 CNAME or MX/TXT records and 1 A record from your domain’s DNS. To verify the records delete from your DNS, go to the [Sender Authentication page](https://app.sendgrid.com/settings/sender_auth) in the UI and check the DNS column:
 
-![]({{root_url}}/images/dns-records.png "Where to find your existing DNS records")
+![]({{root_url}}/img/dns-records.png "Where to find your existing DNS records")
 
 To set up sender authentication in your new account, check out [Setting up domain authentication]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html), [Setting up reverse DNS]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_link_branding.html), and [Setting up link branding]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_link_branding.html).
 
