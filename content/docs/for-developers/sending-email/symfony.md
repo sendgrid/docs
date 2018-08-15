@@ -1,6 +1,7 @@
 ---
 layout: page
 weight: 0
+group: frameworks
 title: Symfony
 seo:
   title: Send Email with Symfony & SendGrid
@@ -13,7 +14,7 @@ Symfony uses SwiftMailer to send email, read more about [sending emails from Sym
 
 To get started you need to modify parameters.yml and add the following: 
 
-{% codeblock %}
+```
 mailer:
 class: sfMailer
 param:
@@ -28,10 +29,11 @@ port: 587
 encryption: ~
 username: sendgridusername
 password: sendgridpassword
-{% endcodeblock %}
+```
 
 After that you should be able to send emails. The following shows an example:
-{% codeblock lang:php %}
+
+``` php
 <?php
 $message = Swift_Message::newInstance()
   ->setFrom('from@example.com')
@@ -41,15 +43,13 @@ $message = Swift_Message::newInstance()
   
 $this->getMailer()->send($message);
 ?>
-{% endcodeblock %}
-
+```
  
-{% anchor h3 %}
-Another Option 
-{% endanchor %}
+### Another Option 
+
 If you want more flexibility, you can use partials to define the content of the emails. Add the a class such as **lib/myEmail.class.php**. 
 
-{% codeblock lang:php %}
+``` php
 <?php
 class myEmail
 {
@@ -136,45 +136,44 @@ class myEmail
     }
 }
 ?>
-{% endcodeblock %}
+```
 
  Then configure your credentials on **apps/frontend/app.yml** 
 
-{% codeblock %}
+```
 prod:
 sendgrid:
 username: sendgridusername
 password: sendgridpassword
-{% endcodeblock %}
+```
+Now can put your partials in a module such as **apps/frontend/modules/mail**. For example, to send a registration email in both text and HTML, we would have the following structure:
 
-Now can put your partials in a module such as <strong>apps/frontend/modules/mail</strong>. For example, to send a registration email in both text and HTML, we would have the following structure
-{% codeblock %}
+```
 apps/
 frontend/
 modules/
 mail/
 _registrationHTML.php
 _registrationTEXT.php
-{% endcodeblock %}
-
+```
  Add this to **apps/frontend/modules/mail/_registrationTEXT.php** 
 
-{% codeblock lang:php %}
+``` php
 Dear <!--?php echo $name ?-->,
 Thank you for registering. Please go to http://domain.com to finish your registration.
-{% endcodeblock %}
+```
 
  Add this to **apps/frontend/modules/mail/_registrationHTML.php** 
 
-{% codeblock lang:php %}
+``` php
 Dear <!--?php echo $name ?-->,
 Thank you for registering. Please go to <a href="http://domain.com">here</a> to finish your registration.
-{% endcodeblock %}
+```
 
  And send the message as follow: 
 
-{% codeblock lang:php %}
+``` php
 <?php
 myEmail::sendEmail(array('text'=>'mail/registrationTEXT', 'html'=>'mail/registrationHTML'), array('name'=>'Recipient Name'), 'youremail@domain.com', 'recipient@example.com', 'Registration Information');
 ?>
-{% endcodeblock %}
+```

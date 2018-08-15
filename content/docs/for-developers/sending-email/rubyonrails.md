@@ -1,6 +1,7 @@
 ---
 layout: page
 weight: 0
+group: frameworks
 title: Ruby on Rails
 seo:
   title: Send Email with Ruby on Rails
@@ -11,20 +12,18 @@ navigation:
   
 This example shows how to send an email for user signups. You can also checkout <a href='https://github.com/sendgrid/sendgrid-ruby'>this gem</a> for more advanced features.
 
-{% anchor h2 %}
-Setup ActionMailer
-{% endanchor %}
+## Setup ActionMailer
 
 Let's generate a Mailer class. Mailer classes function as our
 controllers for email views.
 
-{% codeblock lang:bash %}
+``` bash
 $ rails generate mailer UserNotifier
-{% endcodeblock %}
+```
 
-Now we open up the mailer we've just generated, <code>app/mailers/user_notifier.rb</code> and add a mailer action that sends users a signup email.
+Now we open up the mailer we've just generated, `app/mailers/user_notifier.rb` and add a mailer action that sends users a signup email.
 
-{% codeblock lang:ruby %}
+``` ruby
 class UserNotifier < ActionMailer::Base
   default :from => 'any_from_address@example.com'
 
@@ -35,11 +34,11 @@ class UserNotifier < ActionMailer::Base
     :subject => 'Thanks for signing up for our amazing app' )
   end
 end
-{% endcodeblock %}
+``` 
 
-Now we need a view that corresponds to our action and outputs HTML for our email. Create a file <code>app/views/User_notifier/send_signup_email.html.erb</code> as follows:
+Now we need a view that corresponds to our action and outputs HTML for our email. Create a file `app/views/User_notifier/send_signup_email.html.erb` as follows:
 
-{% codeblock lang:html %}
+``` html
 <!DOCTYPE html>
 <html>
   <head>
@@ -51,18 +50,17 @@ Now we need a view that corresponds to our action and outputs HTML for our email
 awesome things!</p>
   </body>
 </html>
-{% endcodeblock %}
+```
 
 If you don't have a user model quite yet, generate one quickly.
 
-{% codeblock lang:bash %}
+``` bash
 $ rails generate scaffold user name email login
 $ rake db:migrate
-{% endcodeblock %}
+```
+Now in the controller for the user model `app/controllers/users_controller.rb`, add a call to UserNotifier.send_signup_email when a user is saved.
 
-Now in the controller for the user model <code>app/controllers/users_controller.rb</code>, add a call to UserNotifier.send_signup_email when a user is saved.
-
-{% codeblock lang:ruby %}
+``` ruby
 class UsersController < ApplicationController
   def create
     # Create the user from params
@@ -76,17 +74,15 @@ class UsersController < ApplicationController
     end
   end
 end
-{% endcodeblock %}
+```
 
 Alright, now we're cooking! Let's get it all going through SendGrid.
 
-{% anchor h2 %}
-Configure ActionMailer to Use SendGrid
-{% endanchor %}
+## Configure ActionMailer to Use SendGrid
 
-In <code>config/environment.rb</code> specify your ActionMailer settings to point to SendGrid's servers.
+In `config/environment.rb` specify your ActionMailer settings to point to SendGrid's servers.
 
-{% codeblock lang:ruby %}
+``` ruby
 ActionMailer::Base.smtp_settings = {
   :user_name => 'your_sendgrid_username',
   :password => 'your_sendgrid_password',
@@ -96,15 +92,16 @@ ActionMailer::Base.smtp_settings = {
   :authentication => :plain,
   :enable_starttls_auto => true
 }
-{% endcodeblock %}
-
+``` 
 That's it! When a new user object is saved, an email will be sent to
 the user via SendGrid.
 
-{% warning %}
+<call-out type="warning">
+
 As a best practice, you should not store your credentials directly in
 the source but should instead store them in configuration files or
 environment variables. See this tutorial on <a
   href='http://railsapps.github.io/rails-environment-variables.html'>environment
   variables in Rails</a>.
-{% endwarning %}
+
+</call-out>

@@ -1,6 +1,7 @@
 ---
 layout: page
 weight: 0
+group: frameworks
 title: CodeIgniter
 seo:
   title: Send Email with CodeIgniter & SendGrid

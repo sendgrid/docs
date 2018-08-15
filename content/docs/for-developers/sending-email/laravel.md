@@ -1,6 +1,7 @@
 ---
 layout: page
 weight: 0
+group: frameworks
 title: Laravel
 seo:
   title: Send Email with Laravel & SendGrid
@@ -13,13 +14,12 @@ Laravel provides a clean API over the popular SwiftMailer library with drivers f
 
 Laravel 5.5 LTS uses Mailable classes. Mailables in Laravel abstracts building emails with a mailable class. Mailables are responsible for collating data and passing them to views.
 
-{% anchor h2 %}
-Before you begin
-{% endanchor %}
+
+## Before you begin
 
 In `.env` you need to find and configure these variables: 
 
-{% codeblock %}
+```
 MAIL_DRIVER=smtp
 MAIL_HOST=smtp.sendgrid.net
 MAIL_PORT=587
@@ -28,19 +28,18 @@ MAIL_PASSWORD=sendgrid_password
 MAIL_ENCRYPTION=tls
 MAIL_FROM_NAME="John Smith"
 MAIL_FROM_ADDRESS=from@example.com
-{% endcodeblock %}
+```
 
-{% info %}
+<call-out>
 The `MAIL_FROM_NAME` field requires double quotes because there is a space in the string.
-{% endinfo %}
+</call-out>
 
-{% info %}
+<call-out>
 You can send `100 messages per SMTP connection` at a time, and open up to `10 concurrent connections` from a single server at a time.
-{% endinfo %}
+</call-out>
 
-{% anchor h2 %}
-Creating a Mailable
-{% endanchor %}
+
+## Creating a Mailable
 
 Next you need to create a Mailable class, Laravel's CLI tool called Artisan makes that a simple feat.
 Open CLI, go to the project directory and type:
@@ -49,7 +48,7 @@ Open CLI, go to the project directory and type:
 
 This command will create a new file under `app/Mail/TestEmail.php` and it should look something like this:
 
-{% codeblock lang:php %}
+``` php
 <?php
 
 namespace App\Mail;
@@ -85,11 +84,10 @@ class TestEmail extends Mailable
                     ->with([ 'message' => $this->data['message'] ]);
     }
 }
-{% endcodeblock %}
-
+```
 In Laravel `Views` are used as 'templates' when sending an email. Let's create a file under `app/resources/views/emails/test.blade.php` and insert this code:
 
-{% codeblock lang:html %}
+``` html
 <!DOCTYPE html>
     <html lang="en-US">
     	<head>
@@ -100,26 +98,21 @@ In Laravel `Views` are used as 'templates' when sending an email. Let's create a
     		<p>{{ $message }}</p>
     	</body>
     </html>
-{% endcodeblock %}
-
-{% anchor h2 %}
-Sending an email
-{% endanchor %}
+```
+## Sending an email
 
 Now that we have our Mailable Class created, all we need to do is run this code:
 
-{% codeblock lang:php %}
+``` php
 <?php
     use App\Mail\TestEmail;
 
     $data = ['message' => 'This is a test!'];
 
     Mail::to('john@example.com')->send(new TestEmail($data));
-{% endcodeblock %}
+```
 
-{% anchor h2 %}
-Adding a category or custom field
-{% endanchor %}
+## Adding a category or custom field
 
 Categories in SendGrid allow you to split your statistics into sections. For example, if you have a Whitelabeled service, you can split your statistics by the user login.
 
@@ -127,7 +120,7 @@ Another useful tool is event notifications. If you want to complete the feedback
 
 The `withSwiftMessage` method of the `Mailable` base class allows you to register the callback that is invoked with the raw SwiftMailer message instance before sending the message. This knowledge allows you to customize the message before delivery. To customize your message, use something similar to this:
 
-{% codeblock lang:php %}
+``` php
 <?php
 
 namespace App\Mail;
@@ -193,4 +186,4 @@ class TestEmail extends Mailable
         return wordwrap($json, 76, "\n   ");
     }
 }
-{% endcodeblock %}
+```
