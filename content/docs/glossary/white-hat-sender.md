@@ -11,11 +11,16 @@ navigation:
 
 A white hat sender is a sender or company who only sends email to those recipients who have given express permission to receive email from the sender. Put simply, white hat senders always strive to “send the right message, to the right person, at the right time, with the right frequency.”
 
-SendGrid has a plethora of resources to help you be a white hat sender, and to get your email to the inbox, and not to the spam folder. Check out our [email deliverability]({{root_url}}/glossary/email-deliverability/) tips to help.
+SendGrid has a plethora of resources to help you be a white hat sender, and to get your email to the inbox, and not to the spam folder. Check out our [email deliverability]({{root_url}}/glossary/deliverability/) tips to help.
 
 For more information:
 
 * [Bulk Email Folder]({{root_url}}/glossary/bulk-mail-folder/)
+<<<<<<< HEAD
 * [Email Deliverability]({{root_url}}/glossary/email-deliverability/)
 * [Sender authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/)
+=======
+* [Email Deliverability]({{root_url}}/glossary/deliverability/)
+* [Sender authentication]({{root_url}}/ui/sending-email/how-to-set-up-domain-authentication/)
+>>>>>>> upstream/a-new-hope-episode-iv
 * [Black Hat Sender]({{root_url}}/glossary/black-hat-sender/)

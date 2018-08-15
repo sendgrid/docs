@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-## 	Integrating with Sendgrid
+## 	Integrating with SendGrid
 
 *To integrate with SendGrids SMTP API:*
 

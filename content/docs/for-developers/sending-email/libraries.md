@@ -104,7 +104,7 @@ If you create a library, please let us know, by editing this page [in our github
 
  ### 	JavaScript / Node.js
 
--   [sendgrid-mailer](https://github.com/adamreisnz) *by Adam Reis* - JavaScript wrapper for the the official Sendgrid library.
+-   [sendgrid-mailer](https://github.com/adamreisnz) *by Adam Reis* - JavaScript wrapper for the the official SendGrid library.
 -   [node-sendgrid](https://github.com/HerdHound/node-sendgrid) *by Branko Vukelick* - Generate X-SMTPAPI headers in node.js.
 -   [node_subscription_widget](https://github.com/devchas/sendgrid_subscription_widget) *by Devin Chasanoff* - General purpose subscription widget created in node.js
 -   [loopback-sendgrid-connector](https://github.com/VMois/loopback-sendgrid-connector) *by Vladyslav Moisieienkov* - Simple Loopback connector for SendGrid Mail Service

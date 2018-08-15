@@ -31,10 +31,10 @@ Once you have a project created, you can now view the project live within the Pr
 
 Once you have a Form.io project, the next step is to create an **API Key** within your SendGrid account (under **Settings | API Keys**). Ensure that the API Key you create has **Full Access** for the **Mail Send** permission. Once you have your API Key, go back to your Form.io project and follow these steps.
 
- - Click the **Project Settings** button located at the top right of your screen
- - Click the **Email Providers** tab on the left and then the **SendGrid Settings** tab
- - Input the *SendGrid API Key* provided to you when the API key was created.
- - **Save** your settings.
+1. Click the **Project Settings** button located at the top right of your screen.
+1.  Click the **Email Providers** tab on the left and then the **SendGrid Settings** tab.
+1. Input the *SendGrid API Key* provided to you when the API key was created.
+1. **Save** your settings.
 
 ![Form.io SendGrid Settings]({{root_url}}/images/formio-settings.png "Form.io SendGrid Settings")
 
@@ -42,17 +42,21 @@ Once you have a Form.io project, the next step is to create an **API Key** withi
 
 Now that you have your project configured to send emails through SendGrid, the next step is to add an email action to any form within your project. A good use case for this would be to send an email anytime someone registers for your application. To achieve this capability, please follow the following steps.
 
- - Click on the **Resources** tab within your project.
- - Next, click on the **Actions** button on the **User** resource.
- - Now select the **Email** action, and then press the **+ Add Action** button.
+ 1. Click on the **Resources** tab within your project.
+ 1. Next, click on the **Actions** button on the **User** resource.
+ 1. Now select the **Email** action, and then press the **+ Add Action** button.
+
    ![Add Email Action]({{root_url}}/images/formio-add-email.png "Form.io Add Email Action")
- - Now on the email settings page, select **SendGrid** for the **Transport** of the action.
- - Input a **From** email address you would like to send the email from.
- - Input a **To** email address you would like to send the email to. For this, you can use handlebar notation, such as ```{{ data.user }}```, to access the data from the submission as you see in the following image.
- - Input a **Subject** for the message being sent.
- - Input a **Message** for the message being sent.
+
+ 4.  Now on the email settings page, select **SendGrid** for the **Transport** of the action.
+ 5. Input a **From** email address you would like to send the email from.
+ 1. Input a **To** email address you would like to send the email to. For this, you can use handlebar notation, such as ```{{ data.user }}```, to access the data from the submission as you see in the following image.
+ 1. Input a **Subject** for the message being sent.
+ 1. Input a **Message** for the message being sent.
+
    ![Email Action Settings]({{root_url}}/images/formio-email-action.png "Form.io Email Action Settings")
- - **Save** the action.
+
+ 9. **Save** the action.
 
 With this step complete, every user who registers for this application will receive your email which was sent through the SendGrid platform.
 

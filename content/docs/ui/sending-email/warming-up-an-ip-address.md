@@ -15,7 +15,7 @@ navigation:
 
 When you add a new dedicated IP address to your account, you need to warm it up. You also need to warm up your IP if you haven't sent on it in more than 30 days. [Warming up your IP]({{root_url}}/glossary/ip-warmup/) allows you to gradually send more emails over your new IP to establish a good [sender reputation]({{root_url}}/glossary/reputation-monitoring/).
 
-IP warming is the practice of gradually increasing the volume of mail sent with a dedicated IP address according to a predetermined schedule. This gradual process helps to establish a reputation with ISPs (Internet Service Providers) as a legitimate email sender.
+IP warming is the practice of gradually increasing the volume of mail sent with a dedicated IP address according to a predetermined schedule. This gradual process helps to establish a reputation with ISPs (Internet Service Providers) as a legitimate email sender.  
 
 When an ISP observes email suddenly coming from a new or "cold" IP address, they will take notice and immediately begin evaluating the traffic coming from that IP. Since ISPs treat email volume as a key determining factor when detecting spam, it is best to begin sending a low to moderate volume, eventually working your way up to larger volumes. This gives the receiving email providers a chance to closely observe your sending habits and record how your recipients engage with your email.
 
@@ -34,6 +34,12 @@ There are three ways to warm up your IP. If your dedicated IP is relatively new,
  ### 	Manually warm up your IP
 
 To manually warm up your IP, you need to gradually send more and more email over your IP address at the rate in our suggested [IP Warmup Schedule]({{root_url}}/assets/IPWarmupSchedule.pdf).
+
+<call-out>
+
+The goal of warming up is to ramp up your sending volume to your anticipated “normal” levels. For example, if you have a Pro 100k account, you don't need to warm up to 2 million emails as that will exceed your account limits and is unnecessary if you're only sending 100,000 emails a month.
+
+</call-out>
 
  ### 	Automated IP warmup
 

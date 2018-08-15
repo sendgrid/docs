@@ -14,12 +14,12 @@ navigation:
 
 MailPoet is a great way to send mail in WordPress. The best way to get MailPoet to work properly with SendGrid is;
 
-1. Check off "Third Party"
+1. Select **Third Party**.
 
-2. Enter in SMTP hostname as smtp.sendgrid.net
+2. Enter in SMTP hostname as `smtp.sendgrid.net`.
 
-3. Enter in your SendGrid username and password
+3. Enter in your SendGrid username and password.
 
-4. Check off "Use Web API"
+4. Select **Use Web API**.
 
 ![]({{root_url}}/images/Screen_Shot_2015-02-13_at_4.47.27_PM.png)

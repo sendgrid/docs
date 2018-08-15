@@ -13,8 +13,6 @@ layout: page
 navigation:
  show: true
 ---
-## 	What is the SendGrid WordPress Plugin?
-
 SendGrid's cloud-based email infrastructure relieves businesses of the cost and complexity of maintaining custom email systems. SendGrid provides reliable deliverability, scalability, and real-time analytics along with flexible APIs that make custom integration with your application a breeze.
 
 SendGrid’s [WordPress plugin](https://wordpress.org/plugins/sendgrid-email-delivery-simplified/) replaces WordPress’s default **wp_mail()** function by using either an SMTP or API integration with SendGrid to send outgoing email from your WordPress installation. It also allows you to upload contacts directly to your SendGrid Marketing Campaigns account via a [subscription widget]({{root_url}}/for-developers/managing-contacts/wordpress-subscription-widget/).
@@ -51,7 +49,7 @@ While it is possible to simply install and configure the SendGrid plugin for Wor
 
 The following explanations and examples show how you can use SendGrid to adjust WordPress’s `wp_mail()` function.
 
- ### 	The wp_mail() Function
+ ##### 	The wp_mail() Function
 
 The SendGrid plugin makes adjustments to the `wp_mail()` function so that all emails sent from WordPress are delivered by SendGrid.
 
@@ -88,7 +86,7 @@ remove_filter('wp_mail_content_type', 'set_html_content_type');
 
 ## 	Sending HTML In Your Email Using Different Headers
 
- ### 	Using an Array to Set Your Headers
+ #### 	Using an Array to Set Your Headers
 
 ```php
 $subject = 'Test SendGrid plugin';
@@ -112,7 +110,7 @@ $mail = wp_mail($to, $subject, $message, $headers, $attachments);
 remove_filter('wp_mail_content_type', 'set_html_content_type');
 ```
 
- ### 	Using SendGrid\Email() to Set Your Headers
+ #### 	Using SendGrid\Email() to Set Your Headers
 
 ```php
 $subject = 'Test SendGrid plugin';

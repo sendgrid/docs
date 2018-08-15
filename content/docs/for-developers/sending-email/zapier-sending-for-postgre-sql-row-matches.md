@@ -37,18 +37,30 @@ Click here to [Send SendGrid emails for new PostgreSQL custom query row matches]
 
 1. Choose your PostgreSQL account from the list of accounts, or connect a new account.
 2. To connect a new account, you will need the IP address or hostname of where your database is. Input this data in the **Host** field, indicate if you use an alternate **Port**, and fill in the **Database** and **Username** fields with the appropriate data. You may also need to fill out the **Password** field if your database user requires it.
+
 ![Connecting PostgreSQL](https://api.monosnap.com/rpc/file/download?id=OTK4dRBb1xZSxiiBDQXS4owNzpOlOf)
+
 3. Create or fill in the **Custom Query** you wish to use. Click **Save + Continue**.
+
 ![PostgreSQL selection](https://api.monosnap.com/rpc/file/download?id=BFLSEIzfoiaq6RfAGiP6wJ7Tj7OzaH)
+
 4. Choose your SendGrid account from the list of accounts, or connect a new account.
 5. To connect your SendGrid account to Zapier for the first time, you will enter the credentials of an API/mail account. If you have not created this account, you can do so [here](https://sendgrid.com/credentials).
+
 ![Credential entry](https://api.monosnap.com/rpc/file/download?id=gAajRq9wMKNTN4HyEKzAMosD71ifb8)
+
 6. Using fields from PostgreSQL, create and customize the email message that the Zap will send. The required fields for this step are **To**, **From**, and **Subject**, but you may fill in further fields if you desire to do so.
+
 ![Email creation](https://api.monosnap.com/rpc/file/download?id=PMa2LUCYaqGcvdy9pPUtMhtrUtp5nW)
+
 7. Click **Save + Finish**.
 
 Now test the Zap to make sure it works. Once you’re satisfied with the results, a new SendGrid email will be sent whenever your custom query is matched in your PostgreSQL.
 
-*Note: if you ever want to change this PostgreSQL and SendGrid integration, just go to [your Zapier dashboard](https://zapier.com/app/dashboard) and tweak anything you'd like.*
+<call-out>
+
+If you ever want to change this PostgreSQL and SendGrid integration, just go to [your Zapier dashboard](https://zapier.com/app/dashboard) and tweak anything you'd like.
+
+</call-out>
 
 You can also check out all that’s possible with [PostgreSQL on Zapier](https://zapier.com/zapbook/postgresql/), and other ways to connect [PostgreSQL and SendGrid](https://zapier.com/zapbook/postgresql/sendgrid).

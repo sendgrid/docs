@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-There are 3 easy ways to schedule your emails; use [Marketing Campaigns]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/), use the [SMTP API]({{root_url}}/for-developers/sending-email/scheduling-parameters/) header, or use the API.
+There are 3 easy ways to schedule your emails; use the [Marketing Campaigns]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/), use the [SMTP API]({{root_url}}/for-developers/sending-email/scheduling-parameters/) header, or use the API.
 
 <call-out>
 
@@ -33,7 +33,7 @@ You can use the [SMTP API]({{root_url}}/for-developers/sending-email/scheduling-
 
 This parameter allows SendGrid to begin processing your email requests before sending. SendGrid will then queue those messages and release them when the specified time rolls around.
 
-Here's an example of how this timestamp might look in your SMTP API JSON header.
+Here's an example of how this timestamp might look in your SMTP API JSON header:
 
-**{ "send\_at": 1409348513 }**
+`{ "send\_at": 1409348513 }`
 

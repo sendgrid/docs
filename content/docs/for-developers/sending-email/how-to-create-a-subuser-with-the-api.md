@@ -100,7 +100,7 @@ https://api.sendgrid.com/apiv2/customer.whitelabel.json?api_user=ryan.burrer@sen
 <p><img src="http://content.screencast.com/users/Ryan.Burrer/folders/Jing/media/d8482205-976f-4f82-ad3a-77503e867c2f/00000095.png" alt=""></p>
 </center>
 
-## Authenticating the Subuser to Have Website/SMTP Access ** (required)
+## Authenticating the Subuser to Have Website/SMTP Access (required)
 
 The final step in creating your new subuser requires you to simply [activate the subuser](https://sendgrid.com/docs/API_Reference/Customer_Subuser_API/authenticate_a_subuser.html) account so that they have website and SMTP access.
 

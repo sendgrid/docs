@@ -84,10 +84,10 @@ curl -X "POST" "https://api.sendgrid.com/v3/mail/send" \
             "city":"Place",
             "state":"CO",
             "zip":"80202"
-         },
-         "template_id":"[template_id]"
+          }
       }
-   ]
+   ],
+   "template_id":"[template_id]"
 }'
 ```
 

@@ -21,12 +21,6 @@ Currently, there is no limit to the number of categories you can track. However,
 
 </call-out>
 
-<call-out type="warning">
-
-Categories should be used to group messages together by broad topic. If you need to attach unique data or identifiers to a message, use [Unique Arguments]({{root_url}}/for-developers/sending-email/unique-arguments/) instead.
-
-</call-out>
-
 ## 	Example
 
 You can use SendGrid's [SMTP API]({{root_url}/for-developers/sending-email/getting-started-smtp/) to add these categories to your email. The following should be added to the email's header:
@@ -54,3 +48,9 @@ You can assign up to 10 categories per message:
   ]
 }
 ```
+
+<call-out type="warning">
+
+Categories should be used to group messages together by broad topic. If you need to attach unique data or identifiers to a message, use [Unique Arguments]({{root_url}}/for-developers/sending-email/unique-arguments/) instead.
+
+</call-out>
