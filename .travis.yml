@@ -16,7 +16,7 @@ before_script:
 script: yarn run build
 deploy:
   provider: script
-  script: test $TRAVIS_BRANCH = "a-new-hope-episode-iv" && AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY aws s3 sync --acl public-read --sse --delete s3://sendgrid-knowledge-center-staging --recursive --region=us-east-1
+  script: test $TRAVIS_BRANCH = "a-new-hope-episode-iv" && AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY aws s3 sync --acl public-read --sse --delete public s3://sendgrid-knowledge-center-staging --recursive --region=us-east-1
   bucket: sendgrid-knowledge-center-staging
   skip_cleanup: true
   on:
