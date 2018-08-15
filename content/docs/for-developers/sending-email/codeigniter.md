@@ -11,11 +11,13 @@ navigation:
 
 CodeIgniter comes with an email sending library built in. See more information on how to [use CodeIgniter with SendGrid](http://ellislab.com/codeigniter/user-guide/libraries/email.html).
 
-{% info %}
-It is important to use the correct end of lines using "crlf" =\> "\\r\\n" and "newline" =\> "\\r\\n". 
-{% endinfo %}
+<call-out>
 
-{% codeblock lang:php %}
+It is important to use the correct end of lines using "crlf" =\> "\\r\\n" and "newline" =\> "\\r\\n". 
+
+</call-out>
+
+``` php
 <?php
 $this->load->library('email');
 
@@ -39,4 +41,4 @@ $this->email->send();
 
 echo $this->email->print_debugger();
 ?>
-{% endcodeblock %}
+```
