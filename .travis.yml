@@ -15,16 +15,13 @@ before_script:
 - yarn
 script: yarn run build
 deploy:
-  provider: s3
-  access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: $AWS_SECRET_ACCESS_KEY
+  provider: script
+  script: test $TRAVIS_BRANCH = "a-new-hope-episode-iv" && AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY aws s3 sync --acl public-read --sse --delete public s3://sendgrid-knowledge-center-staging --region=us-east-1
   bucket: sendgrid-knowledge-center-staging
   skip_cleanup: true
-  local_dir: public
-  acl: public_read
   on:
     repo: sendgrid/docs
     branch: a-new-hope-episode-iv
 after_deploy:
 - aws configure set preview.cloudfront true
-- test $TRAVIS_BRANCH = "a-new-hope-episode-iv" && ~/.local/bin/aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DIST_ID --paths "/*"
+- test $TRAVIS_BRANCH = "a-new-hope-episode-iv" && AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DIST_ID --paths "/*"
