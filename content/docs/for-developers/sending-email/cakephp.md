@@ -45,31 +45,32 @@ registration.ctp
 html/
 registration.ctp
 ```
-In <strong>app/views/elements/email/text/registration.ctp</strong> add:
-{% codeblock lang:php %}
+In **app/views/elements/email/text/registration.ctp** add:
+
+``` php
 Dear <!--?php echo $name ?-->,
 Thank you for registering. Please go to http://domain.com to finish your registration.
-{% endcodeblock %}
+```
 
  and in **app/views/layouts/email/html/default.ctp** add: 
 
-{% codeblock lang:php %}
+``` php
 Dear <!--?php echo $name ?-->,
 Thank you for registering. Please go to <a href="http://domain.com">here</a> to finish your registration.
-{% endcodeblock %}
+```
 
  In your controller enable the email component:  
   
  
 
-{% codeblock lang:php %}
+``` php
 <!--?php var $components = array('Email'); ?--> 
 
-{% endcodeblock %}
+```
 
  Then anywhere in your controller you can do something like the following to send an email: 
 
-{% codeblock lang:php %}
+``` php
 <?php
 $this->Email->smtpOptions = array(
   'port'=>'587',
@@ -89,4 +90,4 @@ $this->Email->template = 'registration';
 $this->Email->sendAs = 'both';
 $this->Email->send();
 ?>
-{% endcodeblock %}
+```
