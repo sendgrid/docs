@@ -93,8 +93,8 @@ const GROUPS = {
     order: null,
   },
   'marketing-campaigns': {
-    name: 'Marketing Campaigns',
-    order: null,
+    name: 'Building email with Marketing Campaigns',
+    order: 1,
   },
   'getting-started': {
     name: 'Getting Started',

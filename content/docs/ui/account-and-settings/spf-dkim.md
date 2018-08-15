@@ -16,7 +16,7 @@ For standards like SPF and DKIM / DomainKeys, whether they improve deliverabilit
 Some other things to consider:
 
 - [DKIM](http://tools.ietf.org/html/rfc4871) is an internet standards track standard and deprecates [DomainKeys](http://tools.ietf.org/html/rfc4870)
-- If you turn off DomainKeys we'll still sign the email with DKIM which is not affected by the [on behalf of issue]({{root_url}}/ui/sending-email/troubleshooting-sender-authentication/), and is designed for the type of third-party signing we do.
+- If you turn off DomainKeys we'll still sign the email with DKIM which is not affected by the [on behalf of issue]({{root_url}}/ui/account-and-settings/troubleshooting-sender-authentication/), and is designed for the type of third-party signing we do.
 - An SPF record is invalid if it requires [more than 10 DNS lookups]({{root_url}}/ui/account-and-senttings/spf-records/)
 - An SPF record is invalid if you have more than one SPF record for a given domain. In this case you will want to merge the additional SPF records into one SPF record.
 

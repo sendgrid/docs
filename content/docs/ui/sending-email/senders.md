@@ -2,7 +2,7 @@
 layout: page
 weight: 70
 title: Senders
-group: sending-email
+group: marketing-campaigns
 navigation:
   show: true
 seo:

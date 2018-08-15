@@ -78,7 +78,7 @@ Once you add the A Records to your DNS host, return to the [Sender authenticatio
 
 <call-out>
 
-If you click verify, and only half of your A name records verify, this usually means that you need to wait a bit longer. It's also possible that you entered one of your records in incorrectly. For other troubleshooting information, see [Sender authentication troubleshooting]({{root_url}}/ui/sending-email/troubleshooting-sender-authentication/).
+If you click verify, and only half of your A name records verify, this usually means that you need to wait a bit longer. It's also possible that you entered one of your records in incorrectly. For other troubleshooting information, see [Sender authentication troubleshooting]({{root_url}}/ui/account-and-settings/troubleshooting-sender-authentication/).
 
 </call-out>
 
@@ -96,4 +96,4 @@ There is a character limit in SPF (sender policy framework) records that means t
 
 - [How to set up domain authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/)
 - [How to set up link branding]({{root_url}}/ui/account-and-settings/how-to-set-up-link-branding/)
-- [Troubleshooting]({{root_url}}/ui/sending-email/troubleshooting-sender-authentication/)
+- [Troubleshooting]({{root_url}}/ui/account-and-settings/troubleshooting-sender-authentication/)

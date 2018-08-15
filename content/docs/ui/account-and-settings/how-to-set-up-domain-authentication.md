@@ -69,7 +69,7 @@ Once you add the CNAME records to your DNS host, return to the [Sender authentic
 
 <call-out>
 
-If you click verify, and only half of your CNAME records verify, this usually means that you need to wait a bit longer. It's also possible that you entered one of your records in incorrectly. For other troubleshooting information, see [Sender authentication troubleshooting]({{root_url}}/ui/sending-email/troubleshooting-sender-authentication/).
+If you click verify, and only half of your CNAME records verify, this usually means that you need to wait a bit longer. It's also possible that you entered one of your records in incorrectly. For other troubleshooting information, see [Sender authentication troubleshooting]({{root_url}}/ui/account-and-settings/troubleshooting-sender-authentication/).
 
 </call-out>
 
@@ -129,4 +129,4 @@ If you set up a whitelabel after 2015, it has been automatically migrated to our
 
 - [How to set up link branding]({{root_url}}/ui/account-and-settings/how-to-set-up-link-branding/)
 - [How to set up reverse DNS]({{root_url}}/ui/account-and-settings/how-to-set-up-reverse-dns/)
-- [Troubleshooting]({{root_url}}/ui/sending-email/troubleshooting-sender-authentication/)
+- [Troubleshooting]({{root_url}}/ui/account-and-settings/troubleshooting-sender-authentication/)
