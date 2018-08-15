@@ -2,7 +2,7 @@
 layout: page
 weight: 50
 title: Using Handlebars
-group: building-email
+group: transactional-email
 navigation:
   show: false
 seo:

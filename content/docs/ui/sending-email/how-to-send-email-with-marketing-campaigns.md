@@ -2,7 +2,7 @@
 layout: page
 weight: 99
 title: How to Send Email with Marketing Campaigns
-group: getting-started
+group: marketing-campaigns
 navigation:
   show: true
 seo:
