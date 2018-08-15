@@ -2,7 +2,7 @@
 layout: page
 weight: 0
 title: How to set up domain authentication
-group: delivery-optimization
+group: sender-authentication
 navigation:
   show: true
 seo:

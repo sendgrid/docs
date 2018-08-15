@@ -2,7 +2,7 @@
 layout: page
 weight: 55
 title: Using Custom Fields
-group: building-email
+group: managing-contacts
 navigation:
   show: true
 seo:

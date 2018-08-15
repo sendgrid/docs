@@ -2,7 +2,7 @@
 layout: page
 weight: 0
 title: How to set up reverse DNS
-group: delivery-optimization
+group: sender-authentication
 navigation:
   show: true
 seo:
