@@ -11,7 +11,7 @@ class NotFound extends React.Component {
             <div className="col-lg-8 col-offset-lg-2 col-md-8 col-offset-md-2 col-sm-12">
               <h1>404 not found</h1>
               <div className="m-bottom-8">Looks like you’ve fallen off the grid.</div>
-              <Link className="btn btn-secondary" to="/doc/">Return to Knowledge Center</Link>
+              <Link className="btn btn-secondary" to="/docs/">Return to Knowledge Center</Link>
             </div>
           </div>
         </div>
