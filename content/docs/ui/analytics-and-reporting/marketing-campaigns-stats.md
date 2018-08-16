@@ -1,12 +1,12 @@
 ---
 layout: page
 weight: 40
-title: Campaign Statistics
+title: Marketing Campaigns Statistics
 group: statistics
 navigation:
   show: true
 seo:
-  title: Campaign Statistics
+  title: Marketing Campaigns Statistics
   override: true
   description:
 ---

@@ -103,4 +103,4 @@ Use this to permanently delete your recipients from all of your contact lists an
  ##	Additional Resources
 - [Segmentation]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/)
 - [Unsubscribe Groups]({{root_url}}/ui/sending-email/index-suppressions/)
-- [Custom Fields]({{root_url}}/ui/sending-email/custom-fields/)
+- [Custom Fields]({{root_url}}/ui/managing-contacts/custom-fields/)

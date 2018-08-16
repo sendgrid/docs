@@ -14,7 +14,11 @@ Since it’s so easy for a message to fall in this category, as a Sender you may
 
 These are some of the most common reasons for which an email may end up in the Spam Folder and ways to avoid this:
 
+<<<<<<< HEAD
+1. **Improper authentication**. Authentication is extremely important as it helps ISPs identify you as a sender. Think of it as you'd be knocking at someone’s door. You want to inspire trust in order to get invited in their home. In the email world you can do so by making sure your email server supports these protocols ([DKIM, Domain Keys]({{root_url}}/glossary/dkim/), [SPF]({{root_url}}/glossary/spf/), and [Sender ID]({{root_url}}/glossary/sender-id/)) and that they are properly implemented. SendGrid ensures authentication by setting up DKIM and SPF records automatically for you. For Pro 100k or above packages, we offer dedicated IPs which can be [whitelabeled]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/) with your sending domain and therefore strengthening the authentication.
+=======
 1. **Improper authentication**. Authentication is extremely important as it helps ISPs identify you as a sender. Think of it as you'd be knocking at someone’s door. You want to inspire trust in order to get invited in their home. In the email world you can do so by making sure your email server supports these protocols ([DKIM, Domain Keys]({{root_url}}/glossary/dkim/), [SPF]({{root_url}}/glossary/spf/), and [Sender ID]({{root_url}}/glossary/sender-id/)) and that they are properly implemented. SendGrid ensures authentication by setting up DKIM and SPF records automatically for you. For Pro 100k or above packages, we offer dedicated IPs which can be [authenticated]({{root_url}}/ui/sending-email/how-to-set-up-domain-authentication/) with your sending domain and therefore strengthening the authentication.
+>>>>>>> upstream/a-new-hope-episode-iv
 
 2. **High complaint rate**. If too many people are flagging your mail as spam, ISPs will take action and will first start sending your mail to the Spam Folder, then they may start throttling your messages or even block them. Keeping an eye on the complaint rate is critical if you want to reach the Inbox.
 

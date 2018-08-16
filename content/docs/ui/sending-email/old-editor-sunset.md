@@ -2,7 +2,7 @@
 layout: page
 weight: 11
 title: Old Editor Sunset
-group: building-email
+group: ungrouped
 navigation:
   show: false
 seo:

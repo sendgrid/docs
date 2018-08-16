@@ -2,7 +2,7 @@
 layout: page
 weight: 90
 title: Migrating from Legacy Transactional Templates
-group: building-email
+group: ungrouped
 navigation:
   show: false
 seo:

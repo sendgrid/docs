@@ -3,7 +3,7 @@ seo:
   title: Tracking Settings
   description: Track clicks, opens, and subscriptions with SendGrid
   keywords: click tracking, clicks, open tracking, opens, google analytics, tracking with analytics, subscription tracking
-title: Tracking
+title: Tracking Settings
 weight: 0
 group: account-management
 layout: page

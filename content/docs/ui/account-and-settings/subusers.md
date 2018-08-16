@@ -28,12 +28,13 @@ New SendGrid accounts do not come with Subusers and must be created by the paren
 1. Navigate to **Settings** and select **Subuser Management**.
 1. Click **Create New Subuser**.
 1. Enter the following required information into the corresponding fields:
-  * Username - The username your Subuser will use to send emails and access the API.
-  * Email Address - The contact email address for this Subuser. This must be an active email account as SendGrid may contact a Subuser to provide support,  resolve sending and deliverability issues, or to enforce SendGrid's Terms of Service. Whenever we contact a Subuser, it is our policy to contact the parent account email address at the same time.
-  * Password - The password your Subuser will use to access SendGrid.com.
-  * Avatar - If you have [gravatar](http://gravatar.com), or globally recognized avatar, that you use for other applications, it is automatically associated with this Subuser when you enter an email address. This makes it easier to identify all of the Subusers attached to your account.
+    * Username - The username your Subuser will use to send emails and access the API.
+    * Email Address - The contact email address for this Subuser. This must be an active email account as SendGrid may contact a Subuser to provide support,  resolve sending and deliverability issues, or to enforce SendGrid's Terms of Service. Whenever we contact a Subuser, it is our policy to contact the parent account email address at the same time.
+    * Password - The password your Subuser will use to access SendGrid.com.
+    * Avatar - If you have [gravatar](http://gravatar.com), or globally recognized avatar, that you use for other applications, it is automatically associated with this Subuser when you enter an email address. This makes it easier to identify all of the Subusers attached to your account.
 
-1. Assign an IP Address to the Subuser account.
+
+4. Assign an IP Address to the Subuser account.
   You are assigned a dedicated IP address when you create a Pro 100k plan or higher. If you send at a high volume, and you're using Subusers to separate out your sending traffic, it's best practice to purchase a separate IP for each sending type.
 
 ## 	Manage Subusers
@@ -153,5 +154,5 @@ Deleting a Subuser account cannot be undone. Please make sure that you are ready
 
 ## 	Additional Resources
 
-- [Assigning a Domain Whitelabel to a subuser]({{root_url}}/ui/sending-email/how-to-set-up-domain-authentication/#assigning-a-subuser/)
+- [Assigning a Domain Whitelabel to a subuser]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/#assigning-a-subuser/)
 - [Teammates]({{root_url}}/help-spport/account-and-settings/teammates/)

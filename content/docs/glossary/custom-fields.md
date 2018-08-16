@@ -10,6 +10,6 @@ navigation:
   show: false
 ---
 
-[Custom Fields]({{root_url}}/ui/sending-email/custom-fields/) allow you add extra information about your contacts to your contact database. With custom fields, you can create custom segments from your individual contacts or from your contact database that will dynamically update your content with the values for the individual contact receiving the email. Your custom fields are completely customizable to the use cases and user information that you need.
+[Custom Fields]({{root_url}}/ui/managing-contacts/custom-fields/) allow you add extra information about your contacts to your contact database. With custom fields, you can create custom segments from your individual contacts or from your contact database that will dynamically update your content with the values for the individual contact receiving the email. Your custom fields are completely customizable to the use cases and user information that you need.
 
-For more information about Custom Fields, please see our [documentation]({{root_url}}/ui/sending-email/custom-fields/).
+For more information about Custom Fields, please see our [documentation]({{root_url}}/ui/managing-contacts/custom-fields/).

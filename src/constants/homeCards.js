@@ -10,13 +10,13 @@ const HOME_CARDS = [
     LINKS: [
       { URL: '/ui/sending-email/how-to-send-email-with-marketing-campaigns/', TEXTNODE: 'Sending Email with Marketing Campaigns' },
       { URL: '/ui/sending-email/editor/', TEXTNODE: 'The Design & Code Editor' },
-      { URL: '/ui/sending-email/a-b-testing/', TEXTNODE: 'A/B Testing Your Content' },
+      { URL: '/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/', TEXTNODE: 'Sending email with Dynamic Transactional Templates' },
     ],
     BUTTON_LINK: '/ui/sending-email/',
   },
   {
     ICON: contacts,
-    TITLE: 'Managing Contacts',
+    TITLE: 'Managing Contacts with Marketing Campaigns',
     LINKS: [
       { URL: '/ui/managing-contacts/adding-contacts/', TEXTNODE: 'Adding Contacts' },
       { URL: '/ui/managing-contacts/building-your-contact-list/', TEXTNODE: 'Contacts Best Practices' },
@@ -29,8 +29,8 @@ const HOME_CARDS = [
     TITLE: 'Analytics & Reporting',
     LINKS: [
       { URL: '/ui/analytics-and-reporting/email-activity-feed/', TEXTNODE: 'The Email Activity Feed' },
-      { URL: '/ui/analytics-and-reporting/campaign-stats/', TEXTNODE: 'Campaign Statistics' },
-      { URL: '/ui/analytics-and-reporting/spam-reports/', TEXTNODE: 'Spam Reports' },
+      { URL: '/ui/analytics-and-reporting/marketing-campaigns-stats/', TEXTNODE: 'Marketing Campaigns Statistics' },
+      { URL: '/ui/analytics-and-reporting/stats-overview/', TEXTNODE: 'Statistics Overview' },
     ],
     BUTTON_LINK: '/ui/analytics-and-reporting/',
   },
@@ -38,9 +38,9 @@ const HOME_CARDS = [
     ICON: account,
     TITLE: 'Account & Settings',
     LINKS: [
+      { URL: '/ui/account-and-settings/api-keys/', TEXTNODE: 'API Keys' },
       { URL: '/ui/account-and-settings/resetting-your-username-and-password/', TEXTNODE: 'Resetting Your Username and Password' },
-      { URL: '/ui/account-and-settings/subusers/', TEXTNODE: 'Subusers' },
-      { URL: '/ui/analytics-and-reporting/stats-overview/', TEXTNODE: 'Statistics Overview' },
+      { URL: '/ui/account-and-settings/how-to-set-up-domain-authentication/', TEXTNODE: 'How to set up Domain Authentication' },
     ],
     BUTTON_LINK: '/ui/account-and-settings/',
   },

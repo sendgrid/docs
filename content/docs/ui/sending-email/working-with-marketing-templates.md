@@ -2,7 +2,7 @@
 layout: page
 weight: 85
 title: Working with Marketing Templates
-group: building-email
+group: marketing-campaigns
 navigation:
   show: true
 seo:

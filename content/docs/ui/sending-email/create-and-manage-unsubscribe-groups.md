@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 90
-group: building-email
+group: marketing-campaigns
 title: Create and Manage Unsubscribe Groups
 seo:
   title: Create and Manage Unsubscribe Groups

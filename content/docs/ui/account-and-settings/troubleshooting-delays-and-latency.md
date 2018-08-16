@@ -5,7 +5,7 @@ seo:
   keywords: down, outage, latency, header, intermittant, trace, ping, wireshark, traceroute, hop, node, slowness, having issues?, delivering, after, mins, minutes, seconds, ms, miliseconds, slow, delay, hours, delays
 title: Troubleshooting Delays and Latency
 weight: 0
-group: account-management
+group: troubleshooting
 layout: page
 zendesk_id: 203884108
 navigation:

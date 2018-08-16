@@ -5,7 +5,7 @@ seo:
   keywords: reputation, domain, sender, IP, bounces
 title: Understanding and protecting your sender reputation
 weight: 0
-group: account-management
+group: delivery-optimization
 layout: page
 navigation:
   show: true

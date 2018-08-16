@@ -2,7 +2,7 @@
 layout: page
 weight: 50
 title: A/B Testing Your Campaign
-group: building-email
+group: marketing-campaigns
 navigation:
   show: true
 seo:

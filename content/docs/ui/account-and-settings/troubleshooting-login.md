@@ -5,7 +5,7 @@ seo:
   keywords: password, log, can't, authentication, username, reset, get, failed, user, invalid, account, deactivated, banned, in, terminated, bad username/password, name, won't, 535, 535 Authentication failed&#58; Bad username / password, login, access, denied
 title: Can't log in to your account?
 weight: 0
-group: account-management
+group: troubleshooting
 layout: page
 zendesk_id: 204192663
 navigation:

@@ -4,7 +4,7 @@ seo:
   description: Here are guides for setting up sender authentication with specific DNS providers
   keywords: whitelabel, dns, provider, spf, dkim, dmarc, godaddy, hover, sender authentication
 title: DNS Provider video tutorials
-group: delivery-optimization
+group: sender-authentication
 weight: 0
 layout: page
 navigation:
