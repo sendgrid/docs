@@ -9,9 +9,9 @@ const Group = props => (
         title,
       } = doc.node.fields;
 
-      return (
-        <Link key={permalink} to={permalink} dangerouslySetInnerHTML={{ __html: title }} />
-      );
+      const docIsVisible = !!doc.node.frontmatter.navigation.show;
+
+      return docIsVisible ? <Link key={permalink} to={permalink} dangerouslySetInnerHTML={{ __html: title }} /> : null;
     })}
   </div>
 );

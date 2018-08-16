@@ -10,7 +10,7 @@ const GROUPS = {
   },
   'sending-email': {
     name: 'Sending Email',
-    order: null,
+    order: 2,
   },
   'building-email': {
     name: 'Building Email',
