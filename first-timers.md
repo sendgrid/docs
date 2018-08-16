@@ -7,7 +7,7 @@ To make changes to any page on http://sendgrid.dom/docs, follow these steps:
 
 1. Navigate to the page you would like to edit and click **View and Edit** in the upper right-hand corner.
 
-<img src="https://github.com/Whatthefoxsays/docs/blob/jabba/static/img/edit-this-page.png width="800" height="500">
+<img src="https://github.com/sendgrid/docs/blob/jabba/static/img/edit-this-page.png" width="800" height="500">
 
 This will take you to the sendgrid.com/docs GitHub repository, or repo. This is where our docs pages are stored.
 
