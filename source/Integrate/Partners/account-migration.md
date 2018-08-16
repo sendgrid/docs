@@ -1,16 +1,16 @@
 ---
 seo:
-  title: SendGrid account migration
+  title: Migrating from a partner account
   description: Sometimes if a SendGrid partner no longer supports SendGrid core functionality, you may want to migrate your account to a regular SendGrid account.
   keywords: migrate, partner sunset
-title: SendGrid account migration
+title: Migrating from a partner account
 weight: 0
 layout: page
 navigation:
   show: true
 ---
 
-If you are migrating from one SendGrid account to another, there are several things to keep in mind - make sure to stop sending mail until you migrate to a new, warmed up account, and make sure export data from your old account, and clean up the data described here so that you can import it into your new account.
+If you are setting up a new account directly with SendGrid but have previously had an account through one of our partners, there are several things to keep in mind - make sure to stop sending mail until you migrate to a new, warmed up account, and make sure export data from your old account, and clean up the data described here so that you can import it into your new account.
 
 {% anchor h2 %}
 Before you begin
