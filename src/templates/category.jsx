@@ -69,6 +69,11 @@ export const pageQuery = graphql`
         fieldValue
         edges {
           node {
+            frontmatter {
+              navigation {
+                show
+              }
+            }
             fields {
               docType
               slug
