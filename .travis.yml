@@ -14,7 +14,7 @@ install:
 - pip install --user awscli
 before_script:
 - yarn
-script: './build.sh'
+script: ./build.sh
 deploy:
   provider: script
   script: test $TRAVIS_BRANCH = "rc-production" && AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY aws s3 sync --acl public-read --sse --delete public s3://sendgrid-knowledge-center-production
