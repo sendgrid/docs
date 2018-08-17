@@ -14,20 +14,11 @@ install:
 - pip install --user awscli
 before_script:
 - yarn
-script: ./build.sh
+script: ./travis/build.sh
 deploy:
   provider: script
-  script: test $TRAVIS_BRANCH = "rc-develop" && AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY aws s3 sync --acl public-read --sse --delete public s3://sendgrid-knowledge-center-staging
+  script: ./travis/deploy.sh
   skip_cleanup: true
-  on:
-    repo: sendgrid/docs
-    branch: rc-master
-  provider: script
-  script: test $TRAVIS_BRANCH = "rc-master" && AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY aws s3 sync --acl public-read --sse --delete public s3://sendgrid-knowledge-center-staging
-  skip_cleanup: true
-  on:
-    repo: sendgrid/docs
-    branch: rc-develop
 after_deploy:
 - aws configure set preview.cloudfront true
 - test $TRAVIS_BRANCH = "rc-master" && AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DIST_ID_PROD --paths "/*"
