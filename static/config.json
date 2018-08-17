@@ -1,0 +1,33 @@
+
+{
+  "IndexDocument": {
+      "Suffix": "index.html"
+  },
+  "ErrorDocument": {
+      "Key": "404.html"
+  },
+  "RoutingRules": [
+    {
+      "Condition": {
+        "KeyPrefixEquals": "test-config-file"
+      },
+      "Redirect": {
+        "HostName": "sendgrid.com",
+        "HttpRedirectCode": "301",
+        "Protocol": "https",
+        "ReplaceKeyPrefixWith": "blog"
+      }
+    },
+    {
+      "Condition": {
+        "KeyPrefixEquals": "test-redirect-2"
+      },
+      "Redirect": {
+        "HostName": "media.giphy.com",
+        "HttpRedirectCode": "301",
+        "Protocol": "https",
+        "ReplaceKeyPrefixWith": "media/lZpmQGgO3rUoU/giphy.gi"
+      }
+    }
+  ]
+}
