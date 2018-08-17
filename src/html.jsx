@@ -41,6 +41,11 @@ export default class HTML extends React.Component {
           />
           <link
             rel="preload"
+            href="https://cdn.segment.com/analytics.js/v1/1CjnBNPybWzyv10ssZRxdwmb8vrYF4yj/analytics.min.js"
+            as="script"
+          />
+          <link
+            rel="preload"
             href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"
             as="style"
           />
