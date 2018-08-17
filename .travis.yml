@@ -22,7 +22,4 @@ deploy:
   on:
     branch: rc-master
     branch: rc-develop
-after_deploy:
-- aws configure set preview.cloudfront true
-- test $TRAVIS_BRANCH = "rc-master" && AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DIST_ID_PROD --paths "/*"
-- test $TRAVIS_BRANCH = "rc-develop" && AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DIST_ID_STAGE --paths "/*"
+after_deploy: ./travis/after_deploy.sh
