@@ -1,7 +1,7 @@
 #!/bin/sh
 
-if [[ "$TRAVIS_BRANCH" == "develop" ]]; then
+if [[ "$TRAVIS_BRANCH" == "rc-develop" ]]; then
   yarn run build
-elif [["$TRAVIS_BRANCH" == "master"]]; then
+elif [["$TRAVIS_BRANCH" == "rc-master"]]; then
   yarn run build --prefix-paths
 fi
