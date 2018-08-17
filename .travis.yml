@@ -15,8 +15,8 @@ install:
 before_script:
 - yarn
 script:
-- sh -c "if [ "$TRAVIS_BRANCH" == "rc-master" ]; then yarn run build --prefix-paths fi"
-- sh -c "if [ "$TRAVIS_BRANCH" == "rc-develop" ]; then yarn run build fi"
+- sh -c "if [ "$TRAVIS_BRANCH" == "rc-master" ]; then yarn run build --prefix-paths; fi"
+- sh -c "if [ "$TRAVIS_BRANCH" == "rc-develop" ]; then yarn run build; fi"
 deploy:
   provider: script
   script: test $TRAVIS_BRANCH = "rc-develop" && AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY aws s3 sync --acl public-read --sse --delete public s3://sendgrid-knowledge-center-staging
