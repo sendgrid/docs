@@ -6,7 +6,7 @@ import account from '../img/icon-account.svg';
 const HOME_CARDS = [
   {
     ICON: plane,
-    TITLE: 'Sending Email :)',
+    TITLE: 'Sending Email',
     LINKS: [
       { URL: '/ui/sending-email/how-to-send-email-with-marketing-campaigns/', TEXTNODE: 'Sending Email with Marketing Campaigns' },
       { URL: '/ui/sending-email/editor/', TEXTNODE: 'The Design & Code Editor' },
