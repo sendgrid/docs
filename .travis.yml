@@ -17,8 +17,11 @@ before_script:
 script: ./travis/build.sh
 deploy:
   provider: script
-  script: ./travis/deploy.sh
+  script: ./travis/build.sh
   skip_cleanup: true
+  on:
+    branch: rc-master
+    branch: rc-develop
 after_deploy:
 - aws configure set preview.cloudfront true
 - test $TRAVIS_BRANCH = "rc-master" && AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DIST_ID_PROD --paths "/*"
