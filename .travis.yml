@@ -3,6 +3,7 @@ dist: trusty
 language: node_js
 branches:
   only:
+  - rc-master
   - rc-develop
 node_js:
 - 8.4.0
@@ -18,8 +19,13 @@ script:
 - test $TRAVIS_BRANCH = "rc-develop" && yarn run build
 deploy:
   provider: script
-  script: test $TRAVIS_BRANCH = "rc-production" && AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY aws s3 sync --acl public-read --sse --delete public s3://sendgrid-knowledge-center-production
   script: test $TRAVIS_BRANCH = "rc-develop" && AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY aws s3 sync --acl public-read --sse --delete public s3://sendgrid-knowledge-center-staging
+  skip_cleanup: true
+  on:
+    repo: sendgrid/docs
+    branch: rc-master
+  provider: script
+  script: test $TRAVIS_BRANCH = "rc-master" && AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY aws s3 sync --acl public-read --sse --delete public s3://sendgrid-knowledge-center-staging
   skip_cleanup: true
   on:
     repo: sendgrid/docs
