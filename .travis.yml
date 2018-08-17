@@ -20,6 +20,7 @@ deploy:
   script: ./travis/deploy.sh
   skip_cleanup: true
   on:
-    branch: rc-master
-    branch: rc-develop
+    repo: sendgrid/docs
+    all_branches: true
+    condition: $TRAVIS_BRANCH =~ ^rc-develop|rc-master$
 after_deploy: ./travis/after_deploy.sh
