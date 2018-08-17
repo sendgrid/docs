@@ -22,5 +22,5 @@ deploy:
   on:
     repo: sendgrid/docs
     all_branches: true
-    condition: $TRAVIS_BRANCH =~ ^rc-develop|rc-master$
+    condition: $TRAVIS_BRANCH = rc-develop || $TRAVIS_BRANCH = rc-master
 after_deploy: ./travis/after_deploy.sh
