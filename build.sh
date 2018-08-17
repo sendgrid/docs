@@ -1,8 +1,4 @@
-#!/bin/sh
-
-echo "---branch--"
-echo $TRAVIS_BRANCH;
-echo "-----"
+#!/bin/bash
 
 if [ "$TRAVIS_BRANCH" == "rc-develop" ]; then
   yarn run build
