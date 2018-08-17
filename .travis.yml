@@ -17,7 +17,7 @@ before_script:
 script: ./travis/build.sh
 deploy:
   provider: script
-  script: ./travis/build.sh
+  script: ./travis/deploy.sh
   skip_cleanup: true
   on:
     branch: rc-master
