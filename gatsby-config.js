@@ -32,7 +32,7 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: config.siteUrl + pathPrefix,
-        sitemap: `${config.siteUrl + pathPrefix}/sitemap.xml`,
+        sitemap: `${config.siteUrl}/sitemap.xml`,
         policy: policyAccess,
       },
     },
