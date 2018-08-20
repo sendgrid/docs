@@ -145,8 +145,8 @@ const GROUPS = {
     order: null,
   },
   'partner-migration': {
-    name: 'Migrating From a Partner Account',
-    order: null,
+    name: 'Migration',
+    order: 1,
   },
   'ungrouped': {
     name: 'Ungrouped',
