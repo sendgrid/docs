@@ -24,7 +24,7 @@ SendGrid requires a separate API key for making billing related API calls. This 
 
 </call-out>
 
-For more detailed information about API key permissions, see our [API key permissions](#API-Key-Permissions.
+For more detailed information about API key permissions, see our [API key permissions](#api-key-permissions.
 
 When viewing the API keys page, you will see a list of your current API keys along with the following information:
 
