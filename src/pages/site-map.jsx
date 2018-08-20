@@ -14,7 +14,7 @@ export default class siteMap extends React.Component {
 
     return (
       <div className="container">
-        <h1>SiteMap</h1>
+        <h1>Site Map</h1>
         <div className="m-bottom-4">
           <h3>Help Support Categories</h3>
           {helpSupportCats.group.map(cat => (
