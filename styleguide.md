@@ -112,7 +112,9 @@ These are great for quick information that you want to highlight to a user. Espe
 Your text here
 
 </call-out>
+```
 
+```
 <call-out>
 
 Your text here
