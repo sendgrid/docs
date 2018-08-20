@@ -1,6 +1,7 @@
 ---
 layout: page
 weight: 100
+group: building-email
 title: Legacy Newsletter Sunset
 hideFeedback: false
 showTitle: false
