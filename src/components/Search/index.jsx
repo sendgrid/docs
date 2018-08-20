@@ -14,6 +14,10 @@ class Search extends React.Component {
 
         const updatedUrlHits = hits.map(((hit) => {
           hit.url = hit.url.replace(stageURL, prodURL);
+          hit.url = hit.url.replace('#___gatsby', '');
+          if (hit.anchor === '___gatsby') {
+            hit.anchor = '';
+          }
           return hit;
         }));
         // modify hits

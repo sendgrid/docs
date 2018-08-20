@@ -23,4 +23,11 @@ deploy:
     repo: sendgrid/docs
     all_branches: true
     condition: $TRAVIS_BRANCH = rc-develop || $TRAVIS_BRANCH = rc-master
+  provider: script
+  script: ./travis/deploy_open_source.sh
+  skip_cleanup: true
+  on:
+    repo: sendgrid/docs
+    all_branches: true
+    condition: $TRAVIS_BRANCH = rc-develop
 after_deploy: ./travis/after_deploy.sh
