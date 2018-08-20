@@ -2,6 +2,7 @@ const path = require('path');
 const _ = require('lodash');
 const webpackLodashPlugin = require('lodash-webpack-plugin');
 const crypto = require('crypto');
+const redirects = require('./redirects.js');
 
 /**
  * Generate node edges
@@ -110,6 +111,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage, createRedirect } = boundActionCreators;
 
+  // Redirect /ui/ to /docs/ as it's not actually nested like /docs/for-developers/
   createRedirect({
     fromPath: '/ui/',
     isPermanent: true,
@@ -122,6 +124,15 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     isPermanent: true,
     redirectInBrowser: true,
     toPath: '/',
+  });
+
+  redirects.forEach((redirect) => {
+    createRedirect({
+      fromPath: redirect.from,
+      isPermanent: true,
+      redirectInBrowser: true,
+      toPath: redirect.to,
+    });
   });
 
   return new Promise((resolve, reject) => {

@@ -6,7 +6,7 @@ const policyAccess = process.env.GATSBY_ENV === 'production' ? [{ userAgent: '*'
 module.exports = {
   pathPrefix: config.pathPrefix,
   siteMetadata: {
-    siteUrl: config.siteUrl + pathPrefix,
+    siteUrl: config.siteUrl,
     rssMetadata: {
       site_url: config.siteUrl + pathPrefix,
       feed_url: config.siteUrl + pathPrefix + config.siteRss,
@@ -32,7 +32,7 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: config.siteUrl + pathPrefix,
-        sitemap: `${config.siteUrl + pathPrefix}/sitemap.xml`,
+        sitemap: `${config.siteUrl}/sitemap.xml`,
         policy: policyAccess,
       },
     },

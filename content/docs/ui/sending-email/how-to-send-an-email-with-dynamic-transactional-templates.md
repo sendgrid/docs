@@ -16,7 +16,7 @@ seo:
 Before you create and send an email using a dynamic transactional template you need to do the following:
 
 * Create a SendGrid account
-* Create an [API Key]({{root_url}}/ui/account-and-settings/api-keys/)
+* Create an [API Key]({{root_url}}/ui/account-and-settings/create-and-manage-api-keys/)
 * Add an [unsubscribe group]({{root_url}}/ui/sending-email/group-unsubscribes/) (optional)
 
 ## 	Design a dynamic transactional template
