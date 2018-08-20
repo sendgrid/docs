@@ -4144,10 +4144,6 @@ module.exports = [
     to: '/docs/ui/account-and-settings/dns-providers/',
   },
   {
-    from: '/',
-    to: '/',
-  },
-  {
     from: '/docs/Glossary/index.html',
     to: '/docs/glossary/index/',
   },
