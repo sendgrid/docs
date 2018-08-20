@@ -14,37 +14,13 @@ install:
 - pip install --user awscli
 before_script:
 - yarn
-
-jobs:
-  include:
-    - stage: build
-      env:
-        - PEFIX_PATHS=true
-      script: ./travis/build.sh
-    - stage: deploy
-      script: skip
-      deploy:
-        provider: script
-        script: ./travis/deploy.sh
-        skip_cleanup: true
-        on:
-          repo: sendgrid/docs
-          all_branches: true
-          condition: $TRAVIS_BRANCH = rc-develop || $TRAVIS_BRANCH = rc-master
-    - stage: clear cache
-      script: ./travis/after_deploy.sh
-    - stage: build open source
-      env:
-        - PEFIX_PATHS=false
-      script: ./travis/build.sh
-    - stage: deploy open source
-      env: BUCKET=opensource
-      script: skip
-      deploy:
-        provider: script
-        script: ./travis/deploy.sh
-        skip_cleanup: true
-        on:
-          repo: sendgrid/docs
-          all_branches: true
-          condition: $TRAVIS_BRANCH = rc-develop
+script: ./travis/build.sh
+deploy:
+  provider: script
+  script: ./travis/deploy.sh
+  skip_cleanup: true
+  on:
+    repo: sendgrid/docs
+    all_branches: true
+    condition: $TRAVIS_BRANCH = rc-develop || $TRAVIS_BRANCH = rc-master
+after_deploy: ./travis/after_deploy.sh
