@@ -4,6 +4,7 @@
 cd public
 mkdir docs
 mv * docs
+touch index.html
 cd ../
 
 echo "Deploying to open source bucket"
