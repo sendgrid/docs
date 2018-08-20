@@ -172,11 +172,12 @@ Includes:
 - Bounce Purge
 - Event Notification
 - Footer
-Forward Bounce
-Forward Spam
-Legacy Email Template
-Plain Content
-Spam Checker
+- Forward Bounce
+- Forward Spam
+- Legacy Email Template
+- Plain Content
+- Spam Checker
+
 Allows the API key holder to view and update all mail settings listed.
 
 Permission levels:
