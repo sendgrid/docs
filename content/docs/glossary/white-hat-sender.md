@@ -16,11 +16,6 @@ SendGrid has a plethora of resources to help you be a white hat sender, and to g
 For more information:
 
 * [Bulk Email Folder]({{root_url}}/glossary/bulk-mail-folder/)
-<<<<<<< HEAD
-* [Email Deliverability]({{root_url}}/glossary/email-deliverability/)
-* [Sender authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/)
-=======
 * [Email Deliverability]({{root_url}}/glossary/deliverability/)
 * [Sender authentication]({{root_url}}/ui/sending-email/how-to-set-up-domain-authentication/)
->>>>>>> upstream/a-new-hope-episode-iv
 * [Black Hat Sender]({{root_url}}/glossary/black-hat-sender/)

@@ -144,6 +144,10 @@ const GROUPS = {
     name: 'Frameworks',
     order: null,
   },
+  'partner-migration': {
+    name: 'Migrating From a Partner Account',
+    order: null,
+  },
   'ungrouped': {
     name: 'Ungrouped',
     order: null,
