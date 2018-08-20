@@ -100,6 +100,9 @@ We welcome direct contributions to the sendgrid docs code base. Thank you!
 
 	`$ brew install npm`
 
+**Note:** You may need to use 'sudo' before the command to get it to work as intended. 
+
+
 * Set your Node version
 
 	`$ npm install -g n`
@@ -112,12 +115,12 @@ We welcome direct contributions to the sendgrid docs code base. Thank you!
 
 * clone repo
 
-	`$ git clone https://github.com/sendgrid/docs-2.git`
+	`$ git clone https://github.com/sendgrid/docs.git`
 
 
 * Go to your docs directory
 
-	`$ cd docs-2`
+	`$ cd docs`
 
 * switch to develop branch to make changes
 
