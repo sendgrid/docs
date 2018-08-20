@@ -45,7 +45,7 @@ There is a limit of 100 API Keys per account.
 1. Go to the API Keys page in the SendGrid UI, and click **Create API Key**.
 1. Give your API key a name.
 1. Select **Full Access**, **Restricted Access**, or **Billing Access**.
-If you're selecting Restricted Access, or Billing Access, select the specific permissions to give each category. For more information, see API key permissions.
+If you're selecting Restricted Access, or Billing Access, select the specific permissions to give each category. For more information, see [API key permissions](https://sendgrid.com/docs/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html).
 1. Click **Create a Key**.
 Copy your API Key somewhere safe. For security reasons, do not put it directly in your code, or commit it somewhere like Github.
 
@@ -67,15 +67,15 @@ During the API key creation process, you can select specific permissions, or sco
 
 <call-out>
 
-Not all API Key permissions can be accessed or edited through the web app. For a detailed list of all API key permissions, see our API Reference.
+Not all API Key permissions can be accessed or edited through the web app. For a detailed list of all API key permissions, see our [API Reference](https://sendgrid.com/docs/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html).
 
-<call-out>
+</call-out>
 
 When assigning permissions to your API key, select one of the following levels of access:
 
-Full Access gives all of the API methods.
-Restricted Access lets you customize the level of access.
-Billing Access gives you access to the billing endpoints.
+- **Full Access** gives all of the API methods.
+- **Restricted Access** lets you customize the level of access.
+- **Billing Access** gives you access to the billing endpoints.
 
 <call-out>
 
@@ -123,6 +123,7 @@ Allows the API key holder to view, filter, and download email activity statistic
 <call-out>
 
 This service must be purchased separately. For more information, see the documentation.
+
 </call-out>
 
 Permission levels:
