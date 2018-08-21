@@ -765,35 +765,35 @@ module.exports = [
   },
   {
     from: '/Integrate/Code_Examples/csharp.html',
-    to: '/sending-email/v2-csharp-code-example/',
+    to: '/for-developers/sending-email/v2-csharp-code-example/',
   },
   {
     from: '/Integrate/Code_Examples/go.html',
-    to: '/sending-email/v2-go-code-example/',
+    to: '/for-developers/sending-email/v2-go-code-example/',
   },
   {
     from: '/Integrate/Code_Examples/java.html',
-    to: '/sending-email/v2-java-code-example/',
+    to: '/for-developers/sending-email/v2-java-code-example/',
   },
   {
     from: '/Integrate/Code_Examples/nodejs.html',
-    to: '/sending-email/v2-nodejs-code-example/',
+    to: '/for-developers/sending-email/v2-nodejs-code-example/',
   },
   {
     from: '/Integrate/Code_Examples/perl.html',
-    to: '/sending-email/v2-perl-code-example/',
+    to: '/for-developers/sending-email/v2-perl-code-example/',
   },
   {
     from: '/Integrate/Code_Examples/php.html',
-    to: '/sending-email/v2-php-code-example/',
+    to: '/for-developers/sending-email/v2-php-code-example/',
   },
   {
     from: '/Integrate/Code_Examples/python.html',
-    to: '/sending-email/v2-python-code-example/',
+    to: '/for-developers/sending-email/v2-python-code-example/',
   },
   {
     from: '/Integrate/Code_Examples/ruby.html',
-    to: '/sending-email/v2-ruby-code-example/',
+    to: '/for-developers/sending-email/v2-ruby-code-example/',
   },
   {
     from: '/Classroom/Basics/password.html',
