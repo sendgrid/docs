@@ -249,6 +249,7 @@
   .nav-main__plain {
     text-align: left;
     padding: $scale-0;
+    font-weight: 400;
     text-transform: initial;
     font-size: $scale-0;
   }
@@ -269,6 +270,7 @@
   position: relative;
   top: -2px;
   font-size: $scaledown-2;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.41px;
   color: $white;
