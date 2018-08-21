@@ -56,7 +56,7 @@ The timezone for stats pages is set in your [account settings]({{root_url}}/ui/a
 
 **[Browser Comparison]({{root_url}}/ui/analytics-and-reporting/browser-comparison/)** - Compare the performance of your emails by statistic and browser.
 
-**[Parse Webhook]({{root_url}}/ui/analytics-and-reporting/inbound-parse/)** - View the number of requests you have received via the Parse Webhook.
+**[Parse Webhook]({{root_url}}//for-developers/parsing-email/inbound-email/)** - View the number of requests you have received via the Parse Webhook.
 
 
 ## 	Metrics
@@ -109,7 +109,7 @@ These filters are available on most of the statistics pages. They will help you 
 
 ## 	Additional Resources
 
-* [API Stats Overview]({{root_url}}/API_Reference/Web_API_v3/Stats/index/)
+* [API Stats Overview]({{root_url}}/API_Reference/Web_API_v3/Stats/index.html)
 
-* [Advanced Analytics and Reporting]({{root_url}}/API_Reference/Web_API/Statistics/statistics_advanced/)
+* [Advanced Analytics and Reporting]({{root_url}}/API_Reference/Web_API/Statistics/statistics_advanced.html)
 

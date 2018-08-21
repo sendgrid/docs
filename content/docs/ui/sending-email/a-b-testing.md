@@ -134,6 +134,6 @@ If you chose to Manually determine the A/B test winning criteria, you need to re
 
  ## 	Additional Resources
 
-- [Campaign Statistics]({{root_url}}/ui/analytics-and-reporting/campaign-stats/)
+- [Campaign Statistics]({{root_url}}/ui/analytics-and-reporting/marketing-campaigns-stats/)
 - [Design Editor]({{root_url}}/ui/sending-email/editor/#the-design-editor)
 - [Code Editor]({{root_url}}/ui/sending-email/editor/#the-code-editor)
