@@ -167,6 +167,12 @@ Resulting replacement:
 
  ### 	Replacement with HTML
 
+<call-out type="warning">
+
+If you include the characters `'`, `"` or `&` in a subject line replacement be sure to use three brackets like below.
+
+</call-out>
+
 HTML should contain:
 ```
 <p>Hello {{{firstName}}}</p>
