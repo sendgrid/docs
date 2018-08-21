@@ -561,7 +561,7 @@ module.exports = [
   },
   {
     from: '/API_Reference/Web_API_v3/Mail/overview.html',
-    to: '/http://sendgrid.com/API_Reference/Web_API_v3/Mail/index.html',
+    to: '/API_Reference/Web_API_v3/Mail/index.html',
   },
   {
     from: '/API_Reference/Web_API/parse_settings.html',
@@ -845,7 +845,7 @@ module.exports = [
   },
   {
     from: '/Classroom/Basics/sendgrid_multiauth_multiple_account_credentials.html',
-    to: '/http://sendgrid.com/ui/account-and-settings/teammates/',
+    to: '/ui/account-and-settings/teammates/',
   },
   {
     from: '/Classroom/Basics/sendgrid_oem_process.html',
@@ -861,19 +861,19 @@ module.exports = [
   },
   {
     from: '/Classroom/Basics/ssl_vs_tls.html',
-    to: '/http://sendgrid.com/ui/sending-email/ssl-vs-tls/',
+    to: '/ui/sending-email/ssl-vs-tls/',
   },
   {
     from: '/Classroom/Basics/tips_to_keep_your_list_organized.html',
-    to: '/http://sendgrid.com/ui/managing-contacts/managing-contact-list/',
+    to: '/ui/managing-contacts/managing-contact-list/',
   },
   {
     from: '/Classroom/Basics/what_are_subusers.html',
-    to: '/http://sendgrid.com/ui/account-and-settings/subusers/',
+    to: '/ui/account-and-settings/subusers/',
   },
   {
     from: '/Classroom/Basics/what_are_the_sendgrid_apis_and_what_do_they_do.html',
-    to: '/http://sendgrid.com/for-developers/sending-email/api-sending-email/',
+    to: '/for-developers/sending-email/api-sending-email/',
   },
   {
     from: '/Classroom/Basics/what_is_smtp.html',
@@ -881,11 +881,11 @@ module.exports = [
   },
   {
     from: '/Classroom/Basics/what_is_the_difference_between_marketing_and_transactional_emails.html',
-    to: '/http://sendgrid.com/ui/sending-email/how-to-send-email-with-marketing-campaigns/',
+    to: '/ui/sending-email/how-to-send-email-with-marketing-campaigns/',
   },
   {
     from: '/Classroom/Basics/where_can_i_enable_subscription_tracking.html',
-    to: '/http://sendgrid.com/ui/analytics-and-reporting/subuscription-tracking/',
+    to: '/ui/analytics-and-reporting/subuscription-tracking/',
   },
   {
     from: '/Classroom/Basics/why_are_the_pro_plans_recommended_above_all_others.html',
@@ -1620,10 +1620,6 @@ module.exports = [
     to: '/ui/sending-email/how-to-send-email-with-marketing-campaigns/',
   },
   {
-    from: '/Classroom/Send/v3_Mail_Send/index.html',
-    to: '/https://sendgrid.api-docs.io/v3.0/mail-send',
-  },
-  {
     from: '/Classroom/Send/v3_Mail_Send/how_to_migrate_from_v2_to_v3_mail_send.html',
     to: '/for-developers/sending-email/migrating-from-v2-to-v3-mail-send/',
   },
@@ -1682,10 +1678,6 @@ module.exports = [
   {
     from: '/Classroom/Track/google_analytics_demystified_ga_statistics_vs_sg_statistics.html',
     to: '/ui/analytics-and-reporting/google-analytics ',
-  },
-  {
-    from: '/Classroom/Track/sendwithus.html',
-    to: '/https://support.sendwithus.com/esp_accounts/connect_sendgrid/',
   },
   {
     from: '/Classroom/Track/new_relic.html',
@@ -1758,10 +1750,6 @@ module.exports = [
   {
     from: '/Classroom/Track/Introduction/what_do_all_these_delivery_statistics_mean.html',
     to: '/ui/analytics-and-reporting/stats-overview/',
-  },
-  {
-    from: '/Classroom/Track/Collecting_Data/sendwithus.html',
-    to: '/https://support.sendwithus.com/esp_accounts/connect_sendgrid/',
   },
   {
     from: '/Classroom/Track/unsubscribe_via_the_subscription_tracking.html',
@@ -2821,7 +2809,7 @@ module.exports = [
   },
   {
     from: '/User_Guide/Marketing_Campaigns/faq.html',
-    to: '/https://support.sendgrid.com/ui/sending-email/how-to-send-email-with-marketing-campaigns/',
+    to: '/ui/sending-email/how-to-send-email-with-marketing-campaigns/',
   },
   {
     from: '/User_Guide/Marketing_Emails/create_manage.html',
@@ -3057,19 +3045,19 @@ module.exports = [
   },
   {
     from: '/API_Reference/Web_API_v3/Template_Engine/index.html',
-    to: '/http://sendgrid.com/API_Reference/Web_API_v3/Transactional_Templates/index/',
+    to: '/API_Reference/Web_API_v3/Transactional_Templates/index/',
   },
   {
     from: '/API_Reference/Web_API_v3/Template_Engine/smtpapi.html',
-    to: '/http://sendgrid.com/API_Reference/Web_API_v3/Transactional_Templates/smtpapi/',
+    to: '/API_Reference/Web_API_v3/Transactional_Templates/smtpapi/',
   },
   {
     from: '/API_Reference/Web_API_v3/Template_Engine/templates.html',
-    to: '/http://sendgrid.com/API_Reference/Web_API_v3/Transactional_Templates/templates/',
+    to: '/API_Reference/Web_API_v3/Transactional_Templates/templates/',
   },
   {
     from: '/API_Reference/Web_API_v3/Template_Engine/versions.html',
-    to: '/http://sendgrid.com/API_Reference/Web_API_v3/Transactional_Templates/versions/',
+    to: '/API_Reference/Web_API_v3/Transactional_Templates/versions/',
   },
   {
     from: '/User_Guide/Templates/index.html',
@@ -3077,11 +3065,11 @@ module.exports = [
   },
   {
     from: '/User_Guide/Templates/create_edit.html',
-    to: '/http://sendgrid.com/ui/sending-email/create-and-edit-transactional-templates/',
+    to: '/ui/sending-email/create-and-edit-transactional-templates/',
   },
   {
     from: '/User_Guide/Templates/manage.html',
-    to: '/http://sendgrid.com/ui/sending-email/create-and-edit-transactional-templates/',
+    to: '/ui/sending-email/create-and-edit-transactional-templates/',
   },
   {
     from: '/VidGrid/activity.html',
@@ -3769,11 +3757,11 @@ module.exports = [
   },
   {
     from: '/User_Guide/Transactional_Templates/manage.html',
-    to: '/http://sendgrid.com/ui/sending-email/create-and-edit-transactional-templates/',
+    to: '/ui/sending-email/create-and-edit-transactional-templates/',
   },
   {
     from: '/User_Guide/Transactional_Templates/index.html',
-    to: '/http://sendgrid.com/ui/sending-email/create-and-edit-transactional-templates/',
+    to: '/ui/sending-email/create-and-edit-transactional-templates/',
   },
   {
     from: '/User_Guide/Transactional_Templates/how_to_send_an_email_with_dynamic_transactional_templates.html',
