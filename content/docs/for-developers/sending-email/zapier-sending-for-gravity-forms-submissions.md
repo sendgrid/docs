@@ -29,7 +29,7 @@ You will need:
 
 To connect your Gravity Forms account to Zapier, you will need the Gravity Forms plugin with the Zapier add-on installed. You will also need a form created in Gravity forms. To get started with Gravity forms, and for information on creating forms and installing the add-ons that you will need, check [here](https://www.gravityhelp.com/documentation/article/getting-started/). Information for getting started with Gravity Forms on Zapier can be found [here](https://zapier.com/help/gravity-forms/#how-get-started-gravity-forms).
 
-To link your Gravity Forms to SendGrid, you must have an active SendGrid account. To learn more about getting started with SendGrid basics, start [here](https://sendgrid.com/docs/api-reference/). For more information about getting started with SendGrid on Zapier, go [here](https://zapier.com/help/sendgrid/#how-get-started-sendgrid).
+To link your Gravity Forms to SendGrid, you must have an active SendGrid account. To learn more about getting started with SendGrid basics, start [here]({{root_url}}/api-reference/). For more information about getting started with SendGrid on Zapier, go [here](https://zapier.com/help/sendgrid/#how-get-started-sendgrid).
 
 
 ### Connecting your accounts<a name="connect"></a>

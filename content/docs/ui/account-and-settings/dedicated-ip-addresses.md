@@ -33,11 +33,11 @@ Depending on the plan you have chosen, you either have a dedicated sending IP ad
 
 ## 	How many dedicated IPs should I have?
 
-Please see our document on [suggested IP allocation based on volume](https://sendgrid.com/docs/assets/IPWarmupSchedule.pdf).
+Please see our document on [suggested IP allocation based on volume]({{root_url}}/assets/IPWarmupSchedule.pdf).
 
 
 ## 	Adding an additional dedicated IP address
- 	
+
 You can purchase an additional dedicated IP Address from the IP Addresses Settings page or from your [Plan & Billing Details](https://app.sendgrid.com/settings/billing) page.
 
 *To add an additional dedicated IP Address:*

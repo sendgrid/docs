@@ -16,4 +16,4 @@ If you have been tricked by a phishing email sent via SendGrid, please contact [
 
 If we find that a SendGrid customer is sending spoofed or phishing emails, we will ban their account immediately.
 
-To get more information please check out our [Email Infrastructure Guide.](https://go.sendgrid.com/SendGrid-Infrastructure-Guide.html?mc=Direct&mcd=https://sendgrid.com/docs/index.html).
+To get more information please check out our [Email Infrastructure Guide.](https://go.sendgrid.com/SendGrid-Infrastructure-Guide.html?mc=Direct&mcd={{root_url}}/index.html).

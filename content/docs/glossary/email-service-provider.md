@@ -23,7 +23,7 @@ Most ESPs include features that allow customers to:
 ESPs like SendGrid also provide expertise on increasing your [email deliverability]({{root_url}}/glossary/deliverability/), preserving your sending reputation. They may utilize features and tools to accomplish this, such as:
 
 * [Reverse DNS]({{root_url}}/glossary/reverse-dns/)
-* [Dedicated IPs](?https://sendgrid.com/docs/API_Reference/Web_API_v3/IP_Management/index.html)
+* [Dedicated IPs](?{{root_url}}/API_Reference/Web_API_v3/IP_Management/index.html)
 * [IP warming]({{root_url}}/ui/sending-email/warming-up-an-ip-address/)
 
 An ESP may provide email services via a user interface (UI), or may also be an [SMTP provider]({{root_url}}/glossary/smtp-provider/). SendGrid provides both services.
