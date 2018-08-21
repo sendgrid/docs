@@ -11026,7 +11026,7 @@
         "HostName": "sendgrid.com",
         "HttpRedirectCode": "301",
         "Protocol": "https",
-        "ReplaceKeyPrefixWith": "ui/analytics-and-reporting/inbound-parse/"
+        "ReplaceKeyPrefixWith": "/for-developers/parsing-email/inbound-email/"
       }
     },
     {
