@@ -148,6 +148,10 @@ const GROUPS = {
     name: 'Migration',
     order: 2,
   },
+  'getting-started': {
+    name: 'Getting Started',
+    order: null,
+  },
   'ungrouped': {
     name: 'Ungrouped',
     order: null,
