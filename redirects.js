@@ -796,10 +796,6 @@ module.exports = [
     to: '/for-developers/sending-email/v2-perl-code-example/',
   },
   {
-    from: '/Integrate/Code_Examples/v2_Mail/php.html',
-    to: '/for-developers/sending-email/v2-php-code-example/',
-  },
-  {
     from: '/Integrate/Code_Examples/v2_Mail/python.html',
     to: '/for-developers/sending-email/v2-python-code-example/',
   },
