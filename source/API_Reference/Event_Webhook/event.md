@@ -273,7 +273,7 @@ Delivery events include processed, dropped, delivered, deferred, and bounce.
       </tr>
       <tr>
          <td><a name="bounce"></a>Bounce</td>
-         <td>Receiving server could not or would not accept the message. If a recipient has previously unsubscribed from your emails, the message is bounced.</td>
+         <td>Receiving server could not or would not accept the message. If a recipient has previously unsubscribed from your emails, the message is bounced. **Please note that Bounce events include both Bounces and Blocked events, these are differentiated by the added "type" header in the posted event. A blocked type would reference a soft bounce for that request. A bounce type would reference a hard bounce for that request.**</td>
          <td>{% codeblock lang:json %}
 [
    {  
@@ -286,6 +286,7 @@ Delivery events include processed, dropped, delivered, deferred, and bounce.
       "sg_message_id":"14c5d75ce93.dfd.64b469.filter0001.16648.5515E0B88.0",
       "reason":"500 unknown recipient",
       "status":"5.0.0"
+      "type":"bounce"
    }
 ]
 {% endcodeblock %}</td>
