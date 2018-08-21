@@ -38,7 +38,7 @@ const HOME_CARDS = [
     ICON: account,
     TITLE: 'Account & Settings',
     LINKS: [
-      { URL: '/ui/account-and-settings/api-keys/', TEXTNODE: 'API Keys' },
+      { URL: '/ui/account-and-settings/create-and-manage-api-keys/', TEXTNODE: 'API Keys' },
       { URL: '/ui/account-and-settings/resetting-your-username-and-password/', TEXTNODE: 'Resetting Your Username and Password' },
       { URL: '/ui/account-and-settings/how-to-set-up-domain-authentication/', TEXTNODE: 'How to set up Domain Authentication' },
     ],

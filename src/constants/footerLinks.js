@@ -49,7 +49,7 @@ FOOTER_LINKS.COMPANY = {
     { URL: 'https://sendgrid.com/about/', TEXTNODE: 'About' },
     { URL: 'https://sendgrid.com/team/', TEXTNODE: 'Our Team' },
     { URL: 'https://sendgrid.com/careers/', TEXTNODE: 'Careers' },
-    { URL: 'https://github.com/news/', TEXTNODE: 'Newsroom' },
+    { URL: 'https://sendgrid.com/news/', TEXTNODE: 'Newsroom' },
     { URL: 'https://investors.sendgrid.com/', TEXTNODE: 'Investors' },
     { URL: 'https://sendgrid.com/labs/', TEXTNODE: 'Labs' },
     { URL: 'https://sendgrid.com/contact/', TEXTNODE: 'Contact Us' },
