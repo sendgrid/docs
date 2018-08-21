@@ -3772,6 +3772,10 @@ module.exports = [
     to: '/ui/sending-email/using-handlebars/',
   },
   {
+    from: '/User_Guide/Transactional_Templates/Using_handlebars.html',
+    to: '/ui/sending-email/using-handlebars/',
+  },
+  {
     from: '/User_Guide/Settings/Whitelabel/ips.html',
     to: '/ui/account-and-settings/how-to-set-up-reverse-dns/',
   },
