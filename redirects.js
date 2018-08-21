@@ -2121,7 +2121,7 @@ module.exports = [
   },
   {
     from: '/Integrate/Tutorials/segment/sendgrid_source.html',
-    to: '/docs',
+    to: '/',
   },
   {
     from: '/Integrate/Open_Source_Apps/wordpress.html',
