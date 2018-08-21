@@ -45,13 +45,13 @@ There is a limit of 100 API Keys per account.
 1. Go to the API Keys page in the SendGrid UI, and click **Create API Key**.
 1. Give your API key a name.
 1. Select **Full Access**, **Restricted Access**, or **Billing Access**.
-If you're selecting Restricted Access, or Billing Access, select the specific permissions to give each category. For more information, see [API key permissions](https://sendgrid.com/docs/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html).
+If you're selecting Restricted Access, or Billing Access, select the specific permissions to give each category. For more information, see [API key permissions]({{root_url}}/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html).
 1. Click **Create a Key**.
 Copy your API Key somewhere safe. For security reasons, do not put it directly in your code, or commit it somewhere like Github.
 
 <call-out type ="warning">
 
-You will only be shown your API key one time. Please store it somewhere safe as we will not be able to retrieve or restore it. 
+You will only be shown your API key one time. Please store it somewhere safe as we will not be able to retrieve or restore it.
 
 </call-out>
 
@@ -67,7 +67,7 @@ During the API key creation process, you can select specific permissions, or sco
 
 <call-out>
 
-Not all API Key permissions can be accessed or edited through the web app. For a detailed list of all API key permissions, see our [API Reference](https://sendgrid.com/docs/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html).
+Not all API Key permissions can be accessed or edited through the web app. For a detailed list of all API key permissions, see our [API Reference]({{root_url}}/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html).
 
 </call-out>
 
@@ -81,7 +81,7 @@ When assigning permissions to your API key, select one of the following levels o
 
 You may not give an API key greater permissions than you currently have.
 
-</call-out> 
+</call-out>
 
 ### API Keys
 
@@ -113,7 +113,7 @@ Permission levels:
 - Read Access
 - Full Access
 
-### Email Activity 
+### Email Activity
 
 Includes:
 
@@ -141,7 +141,7 @@ Permission levels:
 - Read Access
 - Full Access
 
-### Inbound Parse 
+### Inbound Parse
 
 Allows the API key holder to view, create, or delete parse settings.
 
@@ -196,7 +196,7 @@ Permission levels:
 - No Access
 - Full Access
 
-### Partners 
+### Partners
 
 Allows the API key holder to view and edit partner settings.
 
@@ -248,7 +248,7 @@ Permission levels:
 - Read Access
 - Full Access
 
-### Suppressions 
+### Suppressions
 
 Includes:
 
@@ -314,7 +314,7 @@ Permission levels:
 
 Once an API key has been created, you can edit the name and permission levels of the API key.
 
-### Edit an API Key 
+### Edit an API Key
 
 Click the action menu in the same row as the key you would like to edit. From here you can edit your key’s name and permission level.
 

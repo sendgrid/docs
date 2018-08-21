@@ -77,8 +77,8 @@ For a complete visual breakdown of the SendGrid collections and all their proper
 |  deferred | Event | Recipient’s email server temporarily rejected message. |
 |  unsubscribe | Event | Recipient clicked on message’s subscription management link. You need to enable Subscription Tracking for getting this type of event. |
 |  spam_report | Event | Recipient marked message as spam. |
-|  lists | Object | [Groups of contacts](https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html). |
-|  segments | Object | [Slices of lists](https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html). |
-|  recipients | Object | All contacts who have received an email, with information about their last activities and custom activities. [More Info](https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html) |
+|  lists | Object | [Groups of contacts]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html). |
+|  segments | Object | [Slices of lists]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html). |
+|  recipients | Object | All contacts who have received an email, with information about their last activities and custom activities. [More Info]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html) |
 
 </div>

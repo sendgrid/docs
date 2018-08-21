@@ -109,7 +109,7 @@ These filters are available on most of the statistics pages. They will help you 
 
 ## 	Additional Resources
 
-* [API Stats Overview](https://sendgrid.com/docs/API_Reference/Web_API_v3/Stats/index/)
+* [API Stats Overview]({{root_url}}/API_Reference/Web_API_v3/Stats/index/)
 
-* [Advanced Analytics and Reporting](https://sendgrid.com/docs/API_Reference/Web_API/Statistics/statistics_advanced/)
+* [Advanced Analytics and Reporting]({{root_url}}/API_Reference/Web_API/Statistics/statistics_advanced/)
 

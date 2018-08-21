@@ -38,5 +38,5 @@ To see only the figures from a specific geographic area, change the Activity Map
 ## 	Additional Resources
 
 - [Statistics Filters]({{root_url}}/ui/analytics-and-reporting/stats-overview/#statistics-filters)
-- [Global Stats](https://sendgrid.com/docs/API_Reference/Web_API_v3/Stats/global.html)
+- [Global Stats]({{root_url}}/API_Reference/Web_API_v3/Stats/global.html)
 - [Timezones]({{root_url}}/glossary/timezone/)

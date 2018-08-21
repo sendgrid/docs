@@ -107,6 +107,6 @@ Number fields can include monetary values without the currency symbols. For exam
 
  ## 	Additional Resources
 
-- [Contacts API](https://sendgrid.com/docs/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html)
+- [Contacts API]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html)
 - [Segmenting your Contacts]({{root_url}}/ui/managing-contacts/managing-contact-list/)
 - [Building your Contact list]({{root_url}}/ui/managing-contacts/building-your-contact-list/)
