@@ -94,7 +94,7 @@ Be sure your account is set to the correct time zone in order to ensure that you
 
  ##	Additional Resources
 
-- [Campaign Statistics]({{root_url}}/ui/analytics-and-reporting/campaign-stats/)
+- [Campaign Statistics]({{root_url}}/ui/analytics-and-reporting/marketing-campaigns-stats/)
 - [Billing]({{root_url}}/ui/account-and-settings/billing/)
 - [Sending with the API]({{root_url}}/for-developers/sending-email/api-getting-started/)
 - [Sending with SMTP]({{root_url}}/for-developers/sending-email/getting-started-smtp/)

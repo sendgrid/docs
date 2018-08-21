@@ -3997,7 +3997,7 @@ module.exports = [
   },
   {
     from: '/User_Guide/Statistics/parse.html',
-    to: '/ui/analytics-and-reporting/inbound-parse/',
+    to: '//for-developers/parsing-email/inbound-email/',
   },
   {
     from: '/User_Guide/Statistics/subuser.html',
