@@ -2545,7 +2545,7 @@ module.exports = [
   },
   {
     from: '/User_Guide/about.html',
-    to: '/index/',
+    to: '/',
   },
   {
     from: '/User_Guide/Account/api_keys.html',
@@ -3041,7 +3041,7 @@ module.exports = [
   },
   {
     from: '/Utilities/index.html',
-    to: '/index/',
+    to: '/',
   },
   {
     from: '/Utilities/list_assist.html',
@@ -3050,22 +3050,6 @@ module.exports = [
   {
     from: '/Utilities/smtpapi_validator.html',
     to: '/for-developers/sending-email/sending-email-smtp/',
-  },
-  {
-    from: '/API_Reference/Web_API_v3/Template_Engine/index.html',
-    to: '/API_Reference/Web_API_v3/Transactional_Templates/index/',
-  },
-  {
-    from: '/API_Reference/Web_API_v3/Template_Engine/smtpapi.html',
-    to: '/API_Reference/Web_API_v3/Transactional_Templates/smtpapi/',
-  },
-  {
-    from: '/API_Reference/Web_API_v3/Template_Engine/templates.html',
-    to: '/API_Reference/Web_API_v3/Transactional_Templates/templates/',
-  },
-  {
-    from: '/API_Reference/Web_API_v3/Template_Engine/versions.html',
-    to: '/API_Reference/Web_API_v3/Transactional_Templates/versions/',
   },
   {
     from: '/User_Guide/Templates/index.html',
@@ -3105,7 +3089,7 @@ module.exports = [
   },
   {
     from: '/VidGrid/index.html',
-    to: '/index/',
+    to: '/',
   },
   {
     from: '/VidGrid/Tools/listassist.html',
@@ -4145,7 +4129,7 @@ module.exports = [
   },
   {
     from: '/Glossary/index.html',
-    to: '/glossary/index/',
+    to: '/glossary/',
   },
   {
     from: '/Glossary/7_bit_encoding.html',
