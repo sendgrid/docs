@@ -66,6 +66,12 @@ Telnet does not register backspaces correctly - so you have to type your command
 
 Now that you've sent a test email, learn to [integrate your servers with our SMTP API]({{root_url}}/for-developers/sending-email/integrating-with-the-smtp-api/).
 
+<call-out>
+
+Message size limit:  The total message size should not exceed 20MB. This includes the message itself, headers, and the combined size of any attachments.
+
+</call-out>
+
 ## Additional Resources
 
 - [Getting Started with the UI]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/)
