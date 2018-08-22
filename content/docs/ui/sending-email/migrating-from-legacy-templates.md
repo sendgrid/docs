@@ -1,10 +1,10 @@
 ---
 layout: page
 weight: 90
+group: transactional-email
 title: Migrating from Legacy Transactional Templates
-group: ungrouped
 navigation:
-  show: false
+  show: true
 seo:
   title: Migrating from Legacy Transactional Templates
   override: true

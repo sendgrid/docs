@@ -13,7 +13,7 @@ navigation:
 Teammates allows multiple users, or teammates, to send email from a single SendGrid account. It enables groups of users to with different roles and responsibilities to share one account, where each of these users has access to varying SendGrid features depending on their needs. By only giving your individual team members access to the features that they need to do their jobs, you can limit access to sensitive areas of your account. Teammates makes it incredibly easy to add, remove, and manage different users.
 
 ## 	Adding Teammates
- 	
+
 _To invite a Teammate to your account:_
 
 1. Navigate to **Settings**, and click on **Teammates**.
@@ -43,7 +43,7 @@ Only administrator teammates may impersonate subusers.
 </call-out>
 
 ## 	Managing Teammates
- 	
+
 <call-out>
 
 Only administrator teammates may impersonate subusers.
@@ -51,7 +51,7 @@ Only administrator teammates may impersonate subusers.
 </call-out>
 
  ### 	Configuring permissions
- 	
+
 The three different permission levels are:
 
 * **Restricted Access -** Teammates with no access to a feature cannot change that feature’s settings or view it within the SendGrid UI. However, you can still [grant them access to specific features](#granting-feature-access).
@@ -68,7 +68,7 @@ _To modify an existing teammate's permissions:_
 1. Make your desired changes and click **Update**.
 
  ### 	Removing Teammates
- 	
+
 _To delete a teammate:_
 
 1. Navigate to the **Teammates Page** under **Settings**.
@@ -81,13 +81,13 @@ You cannot recover deleted teammates. Once a teammate has been deleted, it can n
 </call-out>
 
 ## 	Requesting feature access
- 	
+
 If you are already signed into a SendGrid account as a teammate, but do not have access to a page or feature, you may request access to that page by clicking **Request Access**.
 
 Once a request is made, all account administrators recieve a notification via email that a request is pending approval.
 
  ### 	Granting feature access
- 	
+
 You can find any access requests listed under **Pending Requests** on the **Teammates** page in your Settings. The request will list the username of the teammate, their email address, their first and last names, along with the feature that they requested access to.
 
 To grant that teammate access to the feature, click **Approve**.
@@ -107,10 +107,10 @@ The teammate receives a notification email when they are either granted or denie
 </call-out>
 
 ## 	Managing Teammates
- 	
+
 ## 	Teammates and API Keys
- 	
-API Keys are used to authenticate API calls. Just as a teammate can be given specific permissions, API keys can be assigned specific [permissions](https://sendgrid.com/docs/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html) to restrict which API calls they can authenticate.
+
+API Keys are used to authenticate API calls. Just as a teammate can be given specific permissions, API keys can be assigned specific [permissions]({{root_url}}/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html) to restrict which API calls they can authenticate.
 
 <call-out>
 
@@ -122,7 +122,7 @@ However, a teammate cannot change their own permissions via API key. For example
 
 
 ## 	Related Resources
- 	
-* [API Reference](https://sendgrid.com/docs/API_Reference/Web_API_v3/teammates/)
+
+* [API Reference]({{root_url}}/API_Reference/Web_API_v3/teammates/)
 * [Glossary]({{root_url}}/glossary/teammates/)
 

@@ -22,5 +22,5 @@ See the block reason column for more detail specific to the blocked email.
 
 ## Additional Resources:
 
-* [Web API & Blocks](https://sendgrid.com/docs/API_Reference/Web_API/blocks.html)
+* [Web API & Blocks]({{root_url}}/API_Reference/Web_API/blocks.html)
 

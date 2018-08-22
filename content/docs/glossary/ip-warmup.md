@@ -19,7 +19,7 @@ ISP spam filters look at volume as a significant factor when determining whether
 
 <call-out>
 
-You can now warmup your IP using our [IP Warmup API](https://sendgrid.com/docs/API_Reference/Web_API_v3/IP_Management/ip_warmup.html).
+You can now warmup your IP using our [IP Warmup API]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_warmup.html).
 
 </call-out>
 

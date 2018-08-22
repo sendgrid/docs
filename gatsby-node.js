@@ -109,31 +109,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
 };
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
-  const { createPage, createRedirect } = boundActionCreators;
-
-  // Redirect /ui/ to /docs/ as it's not actually nested like /docs/for-developers/
-  createRedirect({
-    fromPath: '/ui/',
-    isPermanent: true,
-    redirectInBrowser: true,
-    toPath: '/',
-  });
-
-  createRedirect({
-    fromPath: '/ui',
-    isPermanent: true,
-    redirectInBrowser: true,
-    toPath: '/',
-  });
-
-  redirects.forEach((redirect) => {
-    createRedirect({
-      fromPath: redirect.from,
-      isPermanent: true,
-      redirectInBrowser: true,
-      toPath: redirect.to,
-    });
-  });
+  const { createPage } = boundActionCreators;
 
   return new Promise((resolve, reject) => {
     const docsPage = path.resolve('src/templates/doc.jsx');

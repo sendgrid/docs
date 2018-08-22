@@ -26,14 +26,14 @@ const GROUPS = {
   },
   'platform-partners': {
     name: 'Platform Partners',
-    order: null,
+    order: 1,
   },
   'tracking': {
     name: 'Tracking',
     order: null,
   },
   'managing-contacts': {
-    name: 'Managing Contacts',
+    name: 'Managing Contacts with Marketing Campaigns',
     order: null,
   },
   'building-your-list': {
@@ -145,7 +145,11 @@ const GROUPS = {
     order: null,
   },
   'partner-migration': {
-    name: 'Migrating From a Partner Account',
+    name: 'Migration',
+    order: 2,
+  },
+  'getting-started': {
+    name: 'Getting Started',
     order: null,
   },
   'ungrouped': {

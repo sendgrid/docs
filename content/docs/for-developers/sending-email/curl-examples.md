@@ -14,7 +14,7 @@ navigation:
 Below are some cURL examples for several basic use cases to get you sending email through SendGrid's v3 Mail Send endpoint right away!
 
 ## 	Hello, World!
- 	
+
 ```bash
 curl --request POST \
   --url https://api.sendgrid.com/v3/mail/send \
@@ -24,7 +24,7 @@ curl --request POST \
 ```
 
 ## 	Sending a Basic Email to Multiple Recipients
- 	
+
 ```bash
 curl --request POST \
   --url https://api.sendgrid.com/v3/mail/send \
@@ -34,7 +34,7 @@ curl --request POST \
 ```
 
 ## 	Sending a Basic Email Using a Template
- 	
+
 ```bash
 curl --request POST \
   --url https://api.sendgrid.com/v3/mail/send \
@@ -44,7 +44,7 @@ curl --request POST \
 ```
 
 ## 	Sending a Basic Email at a Scheduled Time
- 	
+
 ```bash
 curl --request POST \
   --url https://api.sendgrid.com/v3/mail/send \
@@ -54,8 +54,8 @@ curl --request POST \
 ```
 
 ## 	Scheduling and Cancelling an Email
- 	
-You may schedule an email to be sent up to 72 hours in the future by using the `send_at` parameter. You may cancel this same scheduled email by using the [Cancel Scheduled Sends endpoint](https://sendgrid.com/docs/API_Reference/Web_API_v3/cancel_schedule_send.html).
+
+You may schedule an email to be sent up to 72 hours in the future by using the `send_at` parameter. You may cancel this same scheduled email by using the [Cancel Scheduled Sends endpoint]({{root_url}}/API_Reference/Web_API_v3/cancel_schedule_send.html).
 
 **Step 1: Generate a batch ID**
 ```bash

@@ -108,7 +108,7 @@ class NavMain extends Component {
 
                 <div className="nav-item">
                   <a className="nav-main__plain" onClick={this.closeMenu} href={LINKS.ACADEMY}>
-                    Academy
+                    Academy <span className="tag--beta">Beta</span>
                   </a>
                 </div>
 

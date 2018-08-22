@@ -55,6 +55,6 @@ You can also choose to show actual counts or percentages, by clicking the corres
 
 ## 	Additional Resources
 
-- [Subuser Stats](https://sendgrid.com/docs/API_Reference/Web_API_v3/Stats/subusers/)
+- [Subuser Stats]({{root_url}}/API_Reference/Web_API_v3/Stats/subusers/)
 - [Email Activity]({{root_url}}/ui/analytics-and-reporting/email-activity-feed/)
 - [Statistics Filters]({{root_url}}/ui/analytics-and-reporting/stats-overview/#statistics-filters)

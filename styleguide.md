@@ -63,7 +63,7 @@ Here is example formatting:
 
 * [Sending an Email]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/)
 * [A/B Testing]({{root_url}}/ui/sending-email/a-b-testing/)
-* [Campaign Statistics]({{root_url}}/ui/analytics-and-reporting/campaign-stats/)
+* [Campaign Statistics]({{root_url}}/ui/analytics-and-reporting/marketing-campaigns-stats/)
 * [Marketing Templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/)
 ```
 
@@ -107,13 +107,19 @@ When referring to file types, like a PDF file, or a CSV file, refer to it as a C
 These are great for quick information that you want to highlight to a user. Especially for “gotchas” or “neat tricks”. Please use the tags below to show these in your content.
 
 ```
-{% warning %}
-Your warning
-{% endwarning %}
+<call-out type="warning">
 
-{% info %}
-Your note
-{% endinfo %}
+Your text here
+
+</call-out>
+```
+
+```
+<call-out>
+
+Your text here
+
+</call-out>
 
 ```
 
@@ -154,5 +160,5 @@ As a best practice, all screenshots should have accompanying alt text.
 
 Use the following format when inserting an image into the docs:
 
-`![alt text here]({{root_url}}/images/<image_name>.png)`
+`![alt text here]({{root_url}}/img/<image_name>.png)`
 

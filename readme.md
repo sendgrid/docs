@@ -72,6 +72,8 @@ SendGrid does not merge a pull request made against a SendGrid open source proje
 * Install npm
 
 	`$ brew install npm`
+	
+**Note:** You may need to use 'sudo' before the command to get it to work as intended. 
 
 * Set your Node version
 
@@ -85,12 +87,12 @@ SendGrid does not merge a pull request made against a SendGrid open source proje
 
 * clone repo
 
-	`$ git clone https://github.com/sendgrid/docs-2.git`
+	`$ git clone https://github.com/sendgrid/docs.git`
 
 
 * Go to your docs directory
 
-	`$ cd docs-2`
+	`$ cd docs`
 
 * switch to develop branch to make changes
 

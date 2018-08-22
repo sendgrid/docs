@@ -29,7 +29,7 @@ You will need:
 
 To connect your Firebase account you will need an active Firebase account. To get started with Firebase, go [here](https://www.firebase.com/tutorial/). You can learn more about getting started with Firebase on Zapier, [here](https://zapier.com/help/firebase/#how-get-started-firebase).
 
-To link your Firebase to SendGrid, you must have an active SendGrid account. To learn more about getting started with SendGrid basics, start [here](https://sendgrid.com/docs/api-reference/). For more information about getting started with SendGrid on Zapier, go [here](https://zapier.com/help/sendgrid/#how-get-started-sendgrid).
+To link your Firebase to SendGrid, you must have an active SendGrid account. To learn more about getting started with SendGrid basics, start [here]({{root_url}}/api-reference/). For more information about getting started with SendGrid on Zapier, go [here](https://zapier.com/help/sendgrid/#how-get-started-sendgrid).
 
 ### Connecting your accounts<a name="connect"></a>
 
