@@ -1,5 +1,17 @@
 module.exports = [
   {
+    from: '/Integrate/Partners/account-migration.html',
+    to: '/for-developers/partners/account-migration/',
+  },
+  {
+    from: '/docs/API_Reference/SMTP_API/',
+    to: '/for-developers/sending-email/getting-started-smtp/',
+  },
+  {
+    from: '/API_Reference/Webhooks/',
+    to: '/for-developers/tracking-events/event/',
+  },
+  {
     from: '/API_Reference/Customer_Subuser_API/automatic_login.html',
     to: '/API_Reference/Customer_Subuser_API/index.html',
   },
@@ -673,127 +685,123 @@ module.exports = [
   },
   {
     from: '/Code_Examples/index.html',
-    to: '/Integrate/Code_Examples/index/',
+    to: 'for-developers/',
   },
   {
     from: '/Code_Examples/csharp.html',
-    to: '/Integrate/Code_Examples/csharp/',
+    to: '/for-developers/sending-email/v3-csharp-code-example/',
   },
   {
     from: '/Code_Examples/go.html',
-    to: '/Integrate/Code_Examples/go/',
+    to: 'for-developers/sending-email/v3-go-code-example/',
   },
   {
     from: '/Code_Examples/ios.html',
-    to: '/Integrate/Code_Examples/index/',
+    to: '/for-developers/',
   },
   {
     from: '/Code_Examples/java.html',
-    to: '/Integrate/Code_Examples/java/',
+    to: '/for-developers/sending-email/v3-java-code-example/',
   },
   {
     from: '/Code_Examples/nodejs.html',
-    to: '/Integrate/Code_Examples/nodejs/',
+    to: '/for-developers/sending-email/v3-nodejs-code-example/',
   },
   {
     from: '/Code_Examples/perl.html',
-    to: '/Integrate/Code_Examples/perl/',
+    to: '/for-developers/sending-email/v2-perl-code-example/',
   },
   {
     from: '/Code_Examples/php.html',
-    to: '/Integrate/Code_Examples/php/',
+    to: '/for-developers/sending-email/v3-php-code-example/',
   },
   {
     from: '/Code_Examples/python.html',
-    to: '/Integrate/Code_Examples/python/',
+    to: '/for-developers/sending-email/smtp-python-code-example/',
   },
   {
     from: '/Code_Examples/ruby.html',
-    to: '/Integrate/Code_Examples/ruby/',
+    to: '/for-developers/sending-email/v3-ruby-code-example/',
   },
   {
     from: '/Code_Examples/Webhook_Examples/index.html',
-    to: '/Integrate/Code_Examples/Webhook_Examples/index/',
+    to: '/for-developers/tracking-events/',
   },
   {
     from: '/Code_Examples/Webhook_Examples/go.html',
-    to: '/Integrate/Code_Examples/Webhook_Examples/go/',
+    to: '/for-developers/tracking-events/go-code-example/',
   },
   {
     from: '/Code_Examples/Webhook_Examples/nodejs.html',
-    to: '/Integrate/Code_Examples/Webhook_Examples/nodejs/',
+    to: '/for-developers/tracking-events/nodejs-code-example/',
   },
   {
     from: '/Code_Examples/Webhook_Examples/php.html',
-    to: '/Integrate/Code_Examples/Webhook_Examples/php/',
+    to: '/for-developers/tracking-events/php-code-example/',
   },
   {
     from: '/Code_Examples/Webhook_Examples/python.html',
-    to: '/Integrate/Code_Examples/Webhook_Examples/python/',
+    to: '/for-developers/tracking-events/python-code-example/',
   },
   {
     from: '/Code_Examples/Webhook_Examples/csharp.html',
-    to: '/Integrate/Code_Examples/Webhook_Examples/csharp/',
+    to: '/for-developers/tracking-events/csharp-code-example/',
   },
   {
     from: '/Code_Examples/SMTP_API_Header_Examples/index.html',
-    to: '/Integrate/Code_Examples/SMTP_API_Header_Examples/index/',
+    to: '/for-developers/sending-email/building-an-smtp-email/',
   },
   {
     from: '/Code_Examples/SMTP_API_Header_Examples/go.html',
-    to: '/Integrate/Code_Examples/SMTP_API_Header_Examples/go/',
+    to: '/for-developers/sending-email/smtp-go-code-example/',
   },
   {
     from: '/Code_Examples/SMTP_API_Header_Examples/nodejs.html',
-    to: '/Integrate/Code_Examples/SMTP_API_Header_Examples/nodejs/',
+    to: '/for-developers/sending-email/smtp-nodejs-code-example/',
   },
   {
     from: '/Code_Examples/SMTP_API_Header_Examples/perl.html',
-    to: '/Integrate/Code_Examples/SMTP_API_Header_Examples/perl/',
+    to: '/for-developers/sending-email/smtp-perl-code-example/',
   },
   {
     from: '/Code_Examples/SMTP_API_Header_Examples/php.html',
-    to: '/Integrate/Code_Examples/SMTP_API_Header_Examples/php/',
+    to: '/for-developers/sending-email/smtp-php-code-example/',
   },
   {
     from: '/Code_Examples/SMTP_API_Header_Examples/python.html',
-    to: '/Integrate/Code_Examples/SMTP_API_Header_Examples/python/',
+    to: '/for-developers/sending-email/smtp-python-code-example/',
   },
   {
     from: '/Code_Examples/SMTP_API_Header_Examples/ruby.html',
-    to: '/Integrate/Code_Examples/SMTP_API_Header_Examples/ruby/',
+    to: '/docs/for-developers/sending-email/smtp-ruby-code-example/',
   },
   {
-    from: '/Integrate/Code_Examples/csharp.html',
-    to: '/sending-email/v2-csharp-code-example/',
+    from: '/Integrate/Code_Examples/v2_Mail/csharp.html',
+    to: '/for-developers/sending-email/v2-csharp-code-example/',
   },
   {
-    from: '/Integrate/Code_Examples/go.html',
-    to: '/sending-email/v2-go-code-example/',
+    from: '/Integrate/Code_Examples/v2_Mail/go.html',
+    to: '/for-developers/sending-email/v2-go-code-example/',
   },
   {
-    from: '/Integrate/Code_Examples/java.html',
-    to: '/sending-email/v2-java-code-example/',
+    from: '/Integrate/Code_Examples/v2_Mail/java.html',
+    to: '/for-developers/sending-email/v2-java-code-example/',
   },
   {
-    from: '/Integrate/Code_Examples/nodejs.html',
-    to: '/sending-email/v2-nodejs-code-example/',
+    from: '/Integrate/Code_Examples/v2_Mail/nodejs.html',
+    to: '/for-developers/sending-email/v2-nodejs-code-example/',
   },
   {
-    from: '/Integrate/Code_Examples/perl.html',
-    to: '/sending-email/v2-perl-code-example/',
+    from: '/Integrate/Code_Examples/v2_Mail/perl.html',
+    to: '/for-developers/sending-email/v2-perl-code-example/',
   },
   {
-    from: '/Integrate/Code_Examples/php.html',
-    to: '/sending-email/v2-php-code-example/',
+    from: '/Integrate/Code_Examples/v2_Mail/python.html',
+    to: '/for-developers/sending-email/v2-python-code-example/',
   },
   {
-    from: '/Integrate/Code_Examples/python.html',
-    to: '/sending-email/v2-python-code-example/',
-  },
-  {
-    from: '/Integrate/Code_Examples/ruby.html',
-    to: '/sending-email/v2-ruby-code-example/',
+    from: '/Integrate/Code_Examples/v2_Mail/ruby.html',
+    to: '/for-developers/sending-email/v2-ruby-code-example/',
   },
   {
     from: '/Classroom/Basics/password.html',
@@ -2113,7 +2121,7 @@ module.exports = [
   },
   {
     from: '/Integrate/Tutorials/segment/sendgrid_source.html',
-    to: '/index/',
+    to: '/',
   },
   {
     from: '/Integrate/Open_Source_Apps/wordpress.html',
@@ -2373,107 +2381,107 @@ module.exports = [
   },
   {
     from: '/Integrate/Code_Examples/SMTP_API_Header_Examples/nodejs.html',
-    to: '/sending-email/smtp-nodejs-code-example/',
+    to: '/for-developers/sending-email/smtp-nodejs-code-example/',
   },
   {
     from: '/Integrate/Code_Examples/SMTP_API_Header_Examples/go.html',
-    to: '/sending-email/smtp-go-code-example/',
+    to: '/for-developers/sending-email/smtp-go-code-example/',
   },
   {
     from: '/Integrate/Code_Examples/SMTP_API_Header_Examples/index.html',
-    to: '/sending-email/smtp-nodejs-code-example/',
+    to: '/for-developers/sending-email/smtp-nodejs-code-example/',
   },
   {
     from: '/Integrate/Code_Examples/SMTP_API_Header_Examples/perl.html',
-    to: '/sending-email/smtp-perl-code-example/',
+    to: '/for-developers/sending-email/smtp-perl-code-example/',
   },
   {
     from: '/Integrate/Code_Examples/SMTP_API_Header_Examples/php.html',
-    to: '/sending-email/smtp-php-code-example/',
+    to: '/for-developers/sending-email/smtp-php-code-example/',
   },
   {
     from: '/Integrate/Code_Examples/SMTP_API_Header_Examples/python.html',
-    to: '/sending-email/smtp-python-code-example/',
+    to: '/for-developers/sending-email/smtp-python-code-example/',
   },
   {
     from: '/Integrate/Code_Examples/SMTP_API_Header_Examples/ruby.html',
-    to: '/sending-email/smtp-ruby-code-example/',
+    to: '/for-developers/sending-email/smtp-ruby-code-example/',
   },
   {
     from: '/Integrate/Code_Examples/v2_Mail/csharp.html',
-    to: '/sending-email/v2-csharp-code-example/',
+    to: '/for-developers/sending-email/v2-csharp-code-example/',
   },
   {
     from: '/Integrate/Code_Examples/v2_Mail/go.html',
-    to: '/sending-email/v2-go-code-example/',
+    to: '/for-developers/sending-email/v2-go-code-example/',
   },
   {
     from: '/Integrate/Code_Examples/v2_Mail/java.html',
-    to: '/sending-email/v2-java-code-example/',
+    to: '/for-developers/sending-email/v2-java-code-example/',
   },
   {
     from: '/Integrate/Code_Examples/v2_Mail/ruby.html',
-    to: '/sending-email/v2-ruby-code-example/',
+    to: '/for-developers/sending-email/v2-ruby-code-example/',
   },
   {
     from: '/Integrate/Code_Examples/v2_Mail/perl.html',
-    to: '/sending-email/v2-perl-code-example/',
+    to: '/for-developers/sending-email/v2-perl-code-example/',
   },
   {
     from: '/Integrate/Code_Examples/v2_Mail/php.html',
-    to: '/sending-email/v2-php-code-example/',
+    to: '/for-developers/sending-email/v2-php-code-example/',
   },
   {
     from: '/Integrate/Code_Examples/v2_Mail/python.html',
-    to: '/sending-email/v2-python-code-example/',
+    to: '/for-developers/sending-email/v2-python-code-example/',
   },
   {
     from: '/Integrate/Code_Examples/v2_Mail/ruby.html',
-    to: '/sending-email/v2-ruby-code-example/',
+    to: '/for-developers/sending-email/v2-ruby-code-example/',
   },
   {
     from: '/Integrate/Code_Examples/v2_Mail/index.html',
-    to: '/sending-email/v2-go-code-example/',
+    to: '/for-developers/sending-email/v2-go-code-example/',
   },
   {
     from: '/Integrate/Code_Examples/v2_Mail/nodejs.html',
-    to: '/sending-email/v2-nodejs-code-example/',
+    to: '/for-developers/sending-email/v2-nodejs-code-example/',
   },
   {
     from: '/Integrate/Code_Examples/v3_Mail/csharp.html',
-    to: '/sending-email/v3-csharp-code-example/',
+    to: '/for-developers/sending-email/v3-csharp-code-example/',
   },
   {
     from: '/Integrate/Code_Examples/v3_Mail/go.html',
-    to: '/sending-email/v3-go-code-example/',
+    to: '/for-developers/sending-email/v3-go-code-example/',
   },
   {
     from: '/Integrate/Code_Examples/v3_Mail/java.html',
-    to: '/sending-email/v3-java-code-example/',
+    to: '/for-developers/sending-email/v3-java-code-example/',
   },
   {
     from: '/Integrate/Code_Examples/v3_Mail/nodejs.html',
-    to: '/sending-email/v3-nodejs-code-example/',
+    to: '/for-developers/sending-email/v3-nodejs-code-example/',
   },
   {
     from: '/Integrate/Code_Examples/v3_Mail/php.html',
-    to: '/sending-email/v3-php-code-example/',
+    to: '/for-developers/sending-email/v3-php-code-example/',
   },
   {
     from: '/Integrate/Code_Examples/v3_Mail/python.html',
-    to: '/sending-email/v3-python-code-example/',
+    to: '/for-developers/sending-email/v3-python-code-example/',
   },
   {
     from: '/Integrate/Code_Examples/v3_Mail/ruby.html',
-    to: '/sending-email/v3-ruby-code-example/',
+    to: '/for-developers/sending-email/v3-ruby-code-example/',
   },
   {
     from: '/Integrate/Code_Examples/v3_Mail/index.html',
-    to: '/sending-email/v3-java-code-example/',
+    to: '/for-developers/sending-email/v3-java-code-example/',
   },
   {
     from: '/Integrate/Code_Examples/index.html',
-    to: '/sending-email/libraries/',
+    to: '/for-developers/sending-email/libraries/',
   },
   {
     from: '/Marketing_Emails/Email_Marketing_Campaigns/index.html',
@@ -3997,7 +4005,7 @@ module.exports = [
   },
   {
     from: '/User_Guide/Statistics/parse.html',
-    to: '/ui/analytics-and-reporting/inbound-parse/',
+    to: '//for-developers/parsing-email/inbound-email/',
   },
   {
     from: '/User_Guide/Statistics/subuser.html',
