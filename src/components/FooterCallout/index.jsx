@@ -17,7 +17,7 @@ const FooterCallout = () => (
           <div className="card card--glossary">
             <h3 className="card__title">Quicklinks</h3>
             <p className="glossary-link"><Link to="/for-developers/sending-email/api-getting-started/">Getting Started</Link></p>
-            <p className="glossary-link"><Link to="/api-reference/">API Documentation</Link></p>
+            <p className="glossary-link"><Link to="/api-v3/">API Documentation</Link></p>
             <p className="glossary-link"><Link to="/for-developers/sending-email/libraries/">Code Libraries</Link></p>
             <p className="glossary-link"><Link to="/ui/account-and-settings/create-and-manage-api-keys/">API Keys</Link></p>
           </div>

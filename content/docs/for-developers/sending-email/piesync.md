@@ -31,7 +31,7 @@ Select Sendgrid and the app you would like to sync with from within the PieSync 
 
 ## Authorize your apps
 
-To authorize, follow the steps as described and make sure you have your [API Key]({{root_url}}/ui/account-and-settings/create-and-manage-api-keys/) before getting started.
+To authorize, follow the steps as described and make sure you have your [API Key]({{root_url}}/ui/account-and-settings/api-keys/) before getting started.
 
 ![]({{root_url}}/img/piesync-api-key.png "Access your SendGrid API Key")
 
