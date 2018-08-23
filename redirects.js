@@ -2137,7 +2137,7 @@ module.exports = [
   },
   {
     from: '/Integrate/index.html',
-    to: '/for-developers/sending-email/overview/',
+    to: '/for-developers/sending-email/',
   },
   {
     from: '/Integrate/Tutorials/analytics_with_keen_io.html',
