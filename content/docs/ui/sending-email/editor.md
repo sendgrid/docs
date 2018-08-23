@@ -169,7 +169,7 @@ Substitution tags allow you to easily generate dynamic content for each recipien
  </tr>
 </table>
 
-&ast; For your convenience, these substitution tags are included by default in the Unsubscribe Module found on the Build tab of the Design Editor.
+
 
 <call-out>
 
@@ -439,7 +439,14 @@ You'll also see a number of System Fields that you can place in the body of your
  </tr>
 </table>
 
-&ast; For your convenience, these substitution tags are included by default in the Unsubscribe Module found on the Build tab of the Design Editor.
+&ast; For your convenience, these substitution tags are included by default in the Unsubscribe Module found on the Tags tab of the Design Editor.
+
+<call-out type="warning">
+
+The %asm_group_unsubscribe_raw_url%>, <%asm_preferences_raw_url%>, and <%asm_global_unsubscribe
+_raw_url%> tags are reserved for use in Transactional Templates and should not be used in Marketing Campaigns.
+
+</call-out>
 
 <call-out>
 
