@@ -43,13 +43,11 @@ To view the unsubscribe preferences page, select the action menu next to an Unsu
 
 *Using the Design Editor:*
 
-1. Select your preferred Unsubscribe Group from the **Settings** > **Recipients**.
-1. From the **Build** section you may then drag the **Unsubscribe** module to implement Sender Information and a link to the [unsubscribe] tag.
+1. Select your preferred Unsubscribe Group by clicking **Settings** and selecting the group from **Recipients**.
+1. From the **Build** tab, drag the **Unsubscribe** module to insert Sender Information and a link to the [unsubscribe] tag.
 1. To manually hyperlink to the [unsubscribe] tag, enter the text you would like to link.
 1. Highlight the text then select the link icon from the top toolbar.
-1. In the URL field enter [unsubscribe], then Save.
-
-[Possible Image for clarity]
+1. In the URL field enter [unsubscribe], then click **Save**.
 
 *Using the Code Editor:*
 1. Select your preferred Unsubscribe Group from the **Settings** > **Recipients**.
@@ -58,8 +56,6 @@ To view the unsubscribe preferences page, select the action menu next to an Unsu
 ```
 <a href="[unsubscribe]">Click here to unsubscribe.</a>
 ```
-
-[Possible Image for clarity]
 
 ## Add recipients to an Unsubscribe Group
 
