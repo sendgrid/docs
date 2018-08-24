@@ -2085,7 +2085,7 @@ module.exports = [
   },
   {
     from: '/Glossary/bulk_sender_notification.html',
-    to: '/glossary/index ',
+    to: '/glossary/',
   },
   {
     from: '/Glossary/provisioning.html',
@@ -2137,7 +2137,7 @@ module.exports = [
   },
   {
     from: '/Integrate/index.html',
-    to: '/for-developers/sending-email/overview/',
+    to: '/for-developers/sending-email/',
   },
   {
     from: '/Integrate/Tutorials/analytics_with_keen_io.html',
@@ -4526,5 +4526,13 @@ module.exports = [
   {
     from: '/API_Reference/api_v3.html',
     to: '/api-reference/',
+  },
+  {
+    from: '/Classroom/Deliver/Undeliverable_Email/my_emails_are_going_to_spam.html',
+    to: '/ui/sending-email/deliverability/',
+  },
+  {
+    from: '/User_Guide/Settings/Sender_Authentication/How_to_set_up_domain_authentication.html',
+    to: '/ui/account-and-settings/how-to-set-up-domain-authentication/',
   },
 ];

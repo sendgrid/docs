@@ -147,19 +147,19 @@ Substitution tags allow you to easily generate dynamic content for each recipien
  </tr>
  <tr>
    <td><code class="language-text"><%asm_group_unsubscribe_<br>raw_url%></code>* </td>
-   <td>This tag is replaced with a link allowing your recipients opt out of any emails you send using the chosen Unsubscribe Group.</td>
+   <td>This tag is replaced with a link allowing your recipients opt out of any emails you send using the chosen Unsubscribe Group. This tag should only be used when editing Transactional Templates.</td>
    <td>Unsubscribe</td>
  </tr>
  <tr>
    <td><code class="language-text"><%asm_preferences_<br>raw_url%></code>
    * </td>
-   <td>This tag is replaced with a link allowing your recipients to opt out of any email unsubscribe groups you offer.</td>
+   <td>This tag is replaced with a link allowing your recipients to opt out of any email unsubscribe groups you offer. This tag should only be used when editing Transactional Templates.</td>
    <td>Unsubscribe</td>
  </tr>
    <tr>
    <td><code class="language-text"><%asm_global_unsubscribe<br>_raw_url%></code>
    * </td>
-   <td>This tag is replaced with a link allowing your recipients to opt out of all email communication.</td>
+   <td>This tag is replaced with a link allowing your recipients to opt out of all email communication. This tag should only be used when editing Transactional Templates.</td>
    <td>Unsubscribe</td>
  </tr>
  <tr>
@@ -169,7 +169,7 @@ Substitution tags allow you to easily generate dynamic content for each recipien
  </tr>
 </table>
 
-&ast; For your convenience, these substitution tags are included by default in the Unsubscribe Module found on the Build tab of the Design Editor.
+
 
 <call-out>
 
@@ -289,7 +289,7 @@ You can add the following drag & drop modules to your campaign:
   </tr>
   <tr>
     <td>Unsubscribe</td>
-    <td>This module is pre-populated with your sender information and unsubscribe links which are required in order to be compliant with anti-spam laws.</td>
+    <td>This module is pre-populated with your sender information and a hyperlink to the [unsubscribe] tag which are required in order to be compliant with anti-spam laws.</td>
     <td>Background color, padding, line height, font, font size, link color, alignment, Address Line, Unsubscribe Settings.</td>
   </tr>
 </table>
@@ -439,7 +439,14 @@ You'll also see a number of System Fields that you can place in the body of your
  </tr>
 </table>
 
-&ast; For your convenience, these substitution tags are included by default in the Unsubscribe Module found on the Build tab of the Design Editor.
+&ast; For your convenience, these substitution tags are included by default in the Unsubscribe Module found on the Tags tab of the Design Editor.
+
+<call-out type="warning">
+
+The %asm_group_unsubscribe_raw_url%>, <%asm_preferences_raw_url%>, and <%asm_global_unsubscribe
+_raw_url%> tags are reserved for use in Transactional Templates and should not be used in Marketing Campaigns.
+
+</call-out>
 
 <call-out>
 
