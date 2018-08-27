@@ -37,8 +37,14 @@ Your API call must have the following components:
 
 * A Host. The host for Web API v3 requests is always `https://api.sendgrid.com/v3/`
 * An [Authorization Header](https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-authentication#authorization-header)
-* An [API Key]({{root_url}}/ui/account-and-settings/create-and-manage-api-keys/) within the Authorization Header
+* An [API Key]({{root_url}}/ui/account-and-settings/api-keys/) within the Authorization Header
 * A Request. When submitting data to a resource via POST or PUT, you must submit your payload in JSON.
+
+<call-out>
+
+Message size limit:  The total message size should not exceed 20MB. This includes the message itself, headers, and the combined size of any attachments.
+
+</call-out>
 
  ### 	Send your email using the API
 

@@ -114,7 +114,7 @@ This item refers to usage of our [Legacy Newsletter product]({{root_url}}/ui/sen
 
 ![Transaction and payment summary]({{root_url}}/img/invoice_payment_summary.jpg)
 
-The Transaction Summary shows the total charges for the month, and the Payment Summary shows the payment type and last 4 digits of the card that was charged. To change  your payment method, [click here]https://app.sendgrid.com/settings/billing.
+The Transaction Summary shows the total charges for the month, and the Payment Summary shows the payment type and last 4 digits of the card that was charged. To change  your payment method, [click here](https://app.sendgrid.com/settings/billing).
 
 **These line items always reflect the plan you currently have, not necessarily "Pro 100K", which is shown for the purposes of demonstration**.
 
