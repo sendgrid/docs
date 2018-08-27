@@ -6,6 +6,7 @@
 [![Twitter Follow](https://img.shields.io/twitter/follow/sendgrid.svg?style=social&label=Follow)](https://twitter.com/sendgrid)
 [![GitHub contributors](https://img.shields.io/github/contributors/sendgrid/docs.svg)](https://github.com/sendgrid/docs/graphs/contributors)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./license)
+[![Open Source Helpers](https://www.codetriage.com/sendgrid/docs/badges/users.svg)](https://www.codetriage.com/sendgrid/docs)
 
 This site is based on Octopress, which in turn is based on Jekyll, with a dash of Twitter Bootstrap added.
 
