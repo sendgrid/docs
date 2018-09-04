@@ -10,6 +10,7 @@ seo:
 navigation:
   show: true
 ---
+<iframe src="https://player.vimeo.com/video/287678072" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 You can update your plan and billing details on the [Plan & Billing Details page](https://app.sendgrid.com/settings/billing) in the UI.
 
@@ -57,7 +58,7 @@ To reactivate your account, please update your credit card on file by logging in
 
 ## 	Email credits
 
-Every email processed by SendGrid uses an email credit. Free, Essentials, Pro, and Premier accounts will see their email credits reset the 1st day of each month at 12:01 PST.
+Every email processed by SendGrid uses an email credit. Free, Essentials, Pro, and Premier accounts will see their email credits reset the 1st day of each month at 12:01 Pacific Time.
 
 ## 	Overages
 
