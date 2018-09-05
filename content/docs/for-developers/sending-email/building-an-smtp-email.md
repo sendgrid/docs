@@ -90,6 +90,7 @@ The X-SMTPAPI header is a JSON-encoded associative array consisting of several s
 - [Suppression Groups](#suppression-groups)
 - [Categories](#categories)
 - [Unique Arguments](#unique-arguments)
+- [SMTP Filters](#smtp-filters)
 
  ### 	Scheduling Your Send
 
