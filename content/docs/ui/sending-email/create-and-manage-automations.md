@@ -10,8 +10,8 @@ seo:
 navigation:
   show: true
 ---
-Introduction
-Includes a brief intro of what automation is and how it can benefit them. (Doesn’t actually include the headline “introduction”. )
+Automation is awesome because XYZ...
+
 ## Create an Automation
 
 
