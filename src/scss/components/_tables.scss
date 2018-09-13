@@ -1,0 +1,582 @@
+// sass-lint:disable force-attribute-nesting
+// linting disabled due to complexity of moving styles
+.table-col-100 {
+  width: 100px;
+}
+
+.table-col-150 {
+  width: 150px;
+}
+
+.table-col-200 {
+  width: 200px;
+}
+
+.table-wrap {
+  width: 100%;
+  // override app max-width that causes some issues w/ checkbox tables
+  max-width: none;
+  margin-bottom: 20px;
+  overflow: scroll;
+
+  table {
+    table-layout: fixed;
+    width: 100%;
+  }
+
+  table.auto {
+    table-layout: auto;
+  }
+
+  // pull checkbox cells into grid gutters
+  &.has-checkboxes {
+    width: calc(100% + 30px);
+    margin-left: -30px;
+  }
+
+  tr {
+    font-size: 13px;
+    line-height: 20px;
+    border: 1px solid $slate-10;
+    border-bottom: 0;
+    transition: background-color 0.3s;
+
+    // don't color checkbox cells when rows are selected
+    &.is-selected td:not(.table-checkbox) {
+      background-color: $slate-02;
+    }
+
+    // show checkboxes on hover/is-selected
+    &:hover .input-checkbox-wrap,
+    &.is-selected .input-checkbox-wrap {
+      visibility: visible;
+    }
+
+    // hide the ellipsis on hover
+    &:hover .sg-icon-ellipsis {
+      opacity: 0;
+    }
+
+    // show the action icons on hover
+    &:hover .action-icons {
+      opacity: 1;
+    }
+
+    &:hover .editor-type,
+    &.is-selected .editor-type {
+      display: block;
+    }
+
+    &:last-of-type {
+      border-bottom: 1px solid $slate-10;
+    }
+
+    &.is-disabled td {
+      background-color: $slate-05;
+    }
+  }
+
+  td,
+  th {
+    padding: 20px 12px;
+
+    &.table-checkbox {
+      border-color: transparent;
+    }
+
+    &.table-checkbox:hover,
+    &.table-checkbox.is-selected {
+      background-color: transparent;
+    }
+
+    &.align-center {
+      text-align: center;
+    }
+
+    &.actions,
+    &.align-right {
+      text-align: right;
+    }
+  }
+
+  td {
+    // word-break: break-all;
+    vertical-align: middle;
+
+    p {
+      margin-bottom: 0;
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    &.table-checkbox {
+      border-right-color: $slate-10;
+    }
+
+    &:not(.table-checkbox) {
+      background-color: $white;
+
+      // fix padding when one or more checkboxes and radio buttons are
+      // embedded within table cells.
+
+      [class^="input-"][class$="-wrap"] {
+        margin-bottom: 0;
+      }
+
+      [class^="input-"][class$="-wrap"] + [class^="input-"][class$="-wrap"] {
+        margin-top: 20px;
+      }
+    }
+
+    &.contact,
+    &.campaign-name,
+    &.list-name {
+      font-weight: 600;
+    }
+
+    &.campaign-name p {
+      position: relative;
+    }
+
+    &.campaign-name .sg-icon {
+      margin: 0;
+      cursor: help;
+    }
+
+    .editor-type {
+      position: absolute;
+      left: -20px;
+      display: none;
+      line-height: 1;
+    }
+
+    &.is-verified .sg-icon {
+      color: $mantis;
+    }
+
+    &.is-not-verified .sg-icon {
+      color: $ron-burgundy;
+    }
+
+    // set relative positioning for tooltips and inline-flex to keep width dynamic
+    .categories {
+      position: relative;
+      display: inline-flex;
+    }
+  }
+
+  th {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 1px;
+    color: $slate-60;
+    text-align: left;
+    text-transform: uppercase;
+    vertical-align: middle;
+
+    &.sort {
+      cursor: pointer;
+    }
+
+    &.sort-asc,
+    &.sort-desc {
+      font-weight: 600;
+      color: $slate;
+    }
+
+    &.sort-asc::after,
+    &.sort-desc::after {
+      @include icon-font-base;
+      font-size: 20px;
+      color: $sg-blue;
+      vertical-align: middle;
+    }
+
+    &.sort-asc::after {
+      content: $icon-sort-asc;
+    }
+
+    &.sort-desc::after {
+      content: $icon-sort-desc;
+    }
+
+    // always show the <th> checkbox
+    .input-checkbox-wrap {
+      visibility: visible;
+    }
+
+    // remove spacing from top and bottom of button to reduce height of <th>
+    .btn-dropdown {
+      z-index: 1;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    // stop gear from jumping up a few pixels on rotate
+    .sg-icon-gear {
+      letter-spacing: 0;
+    }
+
+    // adjust the position of the gear's caret
+    .btn-dropdown-gear::before {
+      top: 0;
+    }
+
+    // adjustments to dropdown menu for <th>
+    .dropdown-menu {
+      right: 0;
+      left: auto;
+      letter-spacing: 0;
+      text-transform: none;
+    }
+  }
+
+  // remove borders and background hovers on <thead> rows
+  thead tr {
+    border-color: transparent;
+  }
+
+  // auto width if you don't want 100% width tables
+  &.is-auto-width {
+    width: auto;
+  }
+
+  // tighten up row spacing
+  &.is-thin {
+    td {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  }
+
+  // striped rows
+  &.is-striped {
+    tr:nth-child(even) td:not(.table-checkbox) {
+      background-color: $slate-02;
+    }
+  }
+
+  // checkbox cells
+  .table-checkbox {
+    width: 30px;
+    padding-right: 0;
+    padding-left: 0;
+    border: 1px solid $white;
+    border-right: 1px solid $slate-10;
+  }
+
+  // rows that have a relationship to a set of rows beneath them
+  .segment-item {
+    .cell-label {
+      width: 120px;
+      padding-left: 40px;
+      border-top: 1px solid $white;
+    }
+
+    // dotted connector for showing relationships between rows
+    .cell-label::before {
+      position: absolute;
+      top: -20px;
+      left: 17px;
+      width: 6px;
+      height: 51px;
+      border-bottom: 1px solid $slate-20;
+      border-left: 1px solid $slate-20;
+      content: "";
+    }
+
+    .label {
+      margin-left: 9px;
+    }
+  }
+
+  // hide row checkboxes by default
+  .table-checkbox .input-checkbox-wrap {
+    margin-bottom: 0;
+    visibility: hidden;
+  }
+
+  .badge {
+    margin-bottom: 0;
+    line-height: 10px;
+  }
+
+  .label + .date {
+    padding-left: 21px;
+  }
+
+  .date,
+  .email,
+  .subject {
+    display: block;
+  }
+
+  .date {
+    font-size: 12px;
+    color: $steel;
+  }
+
+  .email {
+    font-weight: 600;
+  }
+
+  .subject {
+    font-weight: 400;
+  }
+
+  .stats {
+    position: relative;
+
+    &.delivered .stats-line {
+      background-color: $stats-delivered;
+    }
+
+    &.opens .stats-line {
+      background-color: $stats-opens;
+    }
+
+    &.unique-opens .stats-line {
+      background-color: $stats-unique-opens;
+    }
+
+    &.clicks .stats-line {
+      background-color: $stats-clicks;
+    }
+
+    &.unique-clicks .stats-line {
+      background-color: $stats-unique-clicks;
+    }
+
+    &.unsubscribes .stats-line {
+      background-color: $stats-unsubscribes;
+    }
+
+    &.spam-reports .stats-line {
+      background-color: $stats-spam-reports;
+    }
+  }
+
+  .stats-line {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    height: 2px;
+  }
+
+  .sg-icon {
+    vertical-align: middle;
+    transition: opacity 0.3s;
+  }
+
+  .sg-icon-ellipsis {
+    font-size: 20px;
+    opacity: 1;
+  }
+
+  .actions {
+    position: relative;
+  }
+
+  .action-icons {
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    display: inline-flex;
+    margin-top: -10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+    span {
+      display: inline-block;
+      margin: 0 3px;
+    }
+  }
+}
+
+// pull table state up into bottom of table
+.table-wrap + .table-state {
+  margin: -20px 0 20px;
+  border-top: 0;
+}
+
+.table-state {
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: $slate-02;
+  border: 1px solid $slate-10;
+
+  // increase padding for empty states
+  &.is-empty {
+    padding: 60px;
+    margin-bottom: 30px;
+    background-color: $white;
+    border-radius: $border-radius;
+  }
+
+  &.is-empty .sg-icon {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+
+  p {
+    max-width: 720px;
+    margin: 0 auto 20px;
+    font-size: 13px;
+    line-height: 20px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .btn-list {
+    margin-top: 20px;
+
+    .sg-icon {
+      margin-bottom: 0;
+      font-size: 16px;
+    }
+  }
+}
+
+.cell-label {
+  position: relative;
+
+  .label {
+    position: relative;
+    display: inline-block;
+    min-width: 70px; // prevent labels from word-breaking
+    margin-left: 21px;
+    font-size: 12px;
+    line-height: 20px;
+
+    // label dots
+    &::before {
+      position: absolute;
+      top: 3px;
+      left: -21px;
+      width: 12px;
+      height: 12px;
+      background-color: $slate-20;
+      border-radius: 50%;
+      content: "";
+    }
+
+    &-sent,
+    &-delivered {
+      @include table-label($mantis);
+    }
+
+    &-scheduled {
+      @include table-label($cobalt);
+    }
+
+    &-pick-winner {
+      @include table-label($wild-strawberry);
+    }
+
+    &-draft,
+    &-global {
+      @include table-label($steel);
+    }
+
+    &-list,
+    &-progress {
+      @include table-label($bluebird);
+    }
+
+    &-segment {
+      @include table-label($seafoam);
+    }
+
+    &-bounced,
+    &-canceled,
+    &-paused {
+      @include table-label($ron-burgundy);
+    }
+
+    &-optimized {
+      @include table-label($burnt-orange);
+    }
+
+    &-ab-test {
+      display: block;
+      font-size: 11px;
+      line-height: 15px;
+    }
+
+    // remove status dot for a/b test labels
+    &-ab-test::before {
+      content: none;
+    }
+  }
+}
+
+.compare-table-wrap {
+  font-size: 13px;
+
+  tr {
+    &:hover td {
+      background: $slate-05;
+    }
+
+    &.no-highlight:hover td {
+      background: transparent;
+    }
+
+    &.spacer {
+      height: 12px;
+    }
+
+    &.spacer td {
+      padding: 0;
+    }
+
+    &.is-top td {
+      font-weight: 600;
+    }
+
+    &.is-bottom td {
+      padding-bottom: 20px;
+    }
+
+    &.is-bottom .val {
+      border-bottom: 1px solid $compare-border-color;
+    }
+  }
+
+  th {
+    padding: 1em;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+    background: $sg-blue;
+
+    &.alt {
+      background: $mantis;
+    }
+
+    &.transparent {
+      background: transparent;
+    }
+  }
+
+  td {
+    padding: 14px 10px;
+
+    &.val {
+      text-align: center;
+      border-left: 1px solid $compare-border-color;
+    }
+
+    &.val.val-alt {
+      border-right: 1px solid $compare-border-color;
+      border-left: 1px solid $compare-border-color;
+    }
+  }
+}

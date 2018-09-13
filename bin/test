@@ -1,9 +1,0 @@
-#!/bin/sh
-
-if [ ! -r _config.yml ]; then
-    cp _config.sample.yml _config.yml
-fi
-
-bundle exec jekyll build
-bundle exec rake linklint
-bundle exec rake validate_json_xml

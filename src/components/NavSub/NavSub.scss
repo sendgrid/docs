@@ -1,0 +1,18 @@
+@import '../../scss/global/variables';
+
+.nav-sub {
+  background: $slate-02;
+  border-bottom: 1px solid $slate-10;
+  margin-bottom: $scaleup-6;
+}
+
+.docsfor-developers .nav-sub,
+.for-developers .nav-sub {
+  margin-bottom: 0;
+
+  @media (max-width: $width-small) {
+    .input-text-wrap.is-search, .breadcrumb {
+      margin-bottom: 0;
+    }
+  }
+}
