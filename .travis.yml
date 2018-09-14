@@ -8,9 +8,9 @@ branches:
   - master
   - develop
 before_install:
-- sh -c "if [ '$TRAVIS_BRANCH' = 'old-develop' ]; then echo 'staging https://travis-ci.org/$TRAVIS_REPO_SLUG/builds/$TRAVIS_BUILD_ID'  >
+- sh -c "if [ '$TRAVIS_BRANCH' = 'develop' ]; then echo 'staging https://travis-ci.org/$TRAVIS_REPO_SLUG/builds/$TRAVIS_BUILD_ID'  >
   'source/_data/version.yml' ; fi"
-- sh -c "if [ '$TRAVIS_BRANCH' = 'old-master' ]; then echo 'https://travis-ci.org/$TRAVIS_REPO_SLUG/builds/$TRAVIS_BUILD_ID'  >
+- sh -c "if [ '$TRAVIS_BRANCH' = 'master' ]; then echo 'https://travis-ci.org/$TRAVIS_REPO_SLUG/builds/$TRAVIS_BUILD_ID'  >
   'source/_data/version.yml' ; fi"
 - npm install -g bower
 install:
@@ -22,7 +22,7 @@ install:
 - travis_retry bundle install
 before_script:
 - cp _config.sample.yml _config.yml
-- sh -c "if [ '$TRAVIS_BRANCH' = 'old-master' ] && [ '$TRAVIS_PULL_REQUEST' = false ];
+- sh -c "if [ '$TRAVIS_BRANCH' = 'master' ] && [ '$TRAVIS_PULL_REQUEST' = false ];
   then ruby set_prod_config.rb; fi"
 script:
 - bundle exec jekyll build
@@ -34,7 +34,7 @@ after_success:
 - sh -c "if [ '$TRAVIS_PULL_REQUEST' = false ]; then bundle exec cap deploy; fi"
 - sh -c "if [ '$TRAVIS_PULL_REQUEST' = false ]; then bundle exec rake invalidate_cloudfront;
   fi"
-- sh -c "if [ '$TRAVIS_BRANCH' = 'old-master' ] && [ '$TRAVIS_PULL_REQUEST' = false ];
+- sh -c "if [ '$TRAVIS_BRANCH' = 'master' ] && [ '$TRAVIS_PULL_REQUEST' = false ];
   then bundle exec rake index; fi"
 env:
   global:
