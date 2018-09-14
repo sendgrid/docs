@@ -1,4 +1,4 @@
-Hello! Thank you for choosing to help contribute to one of the SendGrid open source libraries. There are many ways you can contribute and help is always welcome.  We simply ask that you follow the following contribution policies.
+Hello! Thank you for choosing to help contribute to one of the SendGrid documentation. There are many ways you can contribute and help is always welcome.  We simply ask that you follow the following contribution policies.
 
 * [CLAs and CCLAs](#cla)
 * [Feature Request](#feature-request)
