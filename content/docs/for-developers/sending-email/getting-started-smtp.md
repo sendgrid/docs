@@ -64,7 +64,7 @@ Telnet does not register backspaces correctly - so you have to type your command
     <br>The mail server returns `250 Ok: queued as …` - This means the email has been queued to send. This queue moves very quickly.
 1. Exit the Telnet connection with: `quit`.
 
-Now that you've sent a test email, learn to [integrate your servers with our SMTP API]({{root_url}}/for-developers/sending-email/integrating-with-the-smtp-api/).
+Now that you've sent a test email, learn to [integrate your servers with our SMTP service]({{root_url}}/for-developers/sending-email/integrating-with-the-smtp-api/).
 
 <call-out>
 
