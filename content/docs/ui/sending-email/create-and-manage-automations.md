@@ -2,9 +2,9 @@
 layout: page
 weight: 0
 group: sending-email
-title: Create and manage Automations
+title: Getting Started with Automation
 seo:
-  title: Create and manage Automations
+  title: Getting Started with Automation
   description: Use Automation to create a series of campaigns targeted towards a specific audience. 
   keywords: automation, triggered email, automated email, welcome series
 navigation:
@@ -16,6 +16,18 @@ Automation is awesome because XYZ...
 
 
 ### Upload contacts
+
+*To add new contacts:*
+
+1. Click **Add Contacts** and then select **Upload CSV**.
+2. Choose an existing list or create a new list.
+
+<call-out>
+
+If you choose to add the contacts without assigning them to a list, they exist in the contacts database without any additional context.
+</call-out>
+
+3. Upload your file by dragging it into or clicking the CSV upload area.
 
 ### Create a Welcome Series
 
