@@ -129,16 +129,7 @@ If you chose to Manually determine the A/B test winning criteria, you need to re
 
 </call-out>
 
-<<<<<<< HEAD:content/docs/ui/sending-email/a-b-testing.md
-
----------------
-
  ## 	Additional Resources
-=======
-{% anchor h3 %}
-Additional Resources
-{% endanchor h3 %}
->>>>>>> upstream/develop:source/User_Guide/Marketing_Campaigns/a_b_testing.md
 
 - [Campaign Statistics]({{root_url}}/ui/analytics-and-reporting/marketing-campaigns-stats/)
 - [Design Editor]({{root_url}}/ui/sending-email/editor/#the-design-editor)
