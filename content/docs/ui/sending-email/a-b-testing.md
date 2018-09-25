@@ -129,9 +129,6 @@ If you chose to Manually determine the A/B test winning criteria, you need to re
 
 </call-out>
 
-
----------------
-
  ## 	Additional Resources
 
 - [Campaign Statistics]({{root_url}}/ui/analytics-and-reporting/marketing-campaigns-stats/)
