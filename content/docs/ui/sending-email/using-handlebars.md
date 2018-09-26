@@ -55,7 +55,7 @@ This transactional template is using this helper:
 
 - [Substitution](#substitution)
 
- ### 	Muliple languages
+ ### 	Multiple languages
 
 This is an [example template that lets you have content in multiple languages](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates/different-languages).
 
