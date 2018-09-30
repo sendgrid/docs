@@ -16,9 +16,11 @@ Some implementations of Postfix only allow passwords to contain letters and numb
 {% endwarning %}
 
 Check if you have Postfix installed on your Debian/ Ubuntu server, if not follow the following:
+
 {% codeblock %}
 sudo apt install postfix
 {% endcodeblock %}
+
 Now if you have just installed postfix then it will ask for configuration. We need to set postfix server as "Satellite System".
 If you had postfix installed already, you can reconfigure the package using:
 
