@@ -15,6 +15,19 @@ Updating the Postfix configuration to use SendGrid as a relay host is easy. For 
 Some implementations of Postfix only allow passwords to contain letters and numbers, meaning you may need to ensure your SendGrid password is only alphanumeric. 
 {% endwarning %}
 
+Check if you have Postfix installed on your Debian/ Ubuntu server, if not follow the following:
+{% codeblock %}
+sudo apt install postfix
+{% endcodeblock %}
+Now if you have just installed postfix then it will ask for configuration. We need to set postfix server as "Satellite System".
+If you had postfix installed already, you can reconfigure the package using:
+
+{% codeblock %}
+dpkg-reconfigure postfix
+{% endcodeblock %}
+
+In the SMTP relay host, use SendGrid Server Info, [smtp.sendgrid.net]:587 .
+
 Find your Postfix config file, typically **/etc/postfix/main.cf**, and add the following:
 
 {% codeblock %}
@@ -24,7 +37,6 @@ smtp_sasl_security_options = noanonymous
 smtp_sasl_tls_security_options = noanonymous
 smtp_tls_security_level = encrypt
 header_size_limit = 4096000
-relayhost = [smtp.sendgrid.net]:587
 {% endcodeblock %}
 
 Now you need to specify your credentials (optionally, use `apikey` as username and an API Key as password) in the separate file **/etc/postfix/sasl_passwd** (you'll likely need to create it):
