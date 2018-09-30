@@ -69,7 +69,7 @@ SendGrid does not merge a pull request made against a SendGrid open source proje
 
 <a name="dependencies"></a>
 ### Dependencies
-
+PR FOR HACTOBERFEST
 * Required:
     * Git
     * Xcode
