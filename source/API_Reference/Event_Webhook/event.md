@@ -1030,6 +1030,59 @@ For emails sent through our Legacy Marketing Email tool, unsubscribes look like 
 ]
 {% endcodeblock %}
 
+% anchor h3 %}
+Click
+{% endanchor %}
+
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>event</th>
+         <th>email</th>
+         <th>url</th>
+         <th>category</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>click</td>
+         <td>Message recipient</td>
+         <td>URL Clicked</td>
+         <td>The category you assigned</td>
+      </tr>
+   </tbody>
+</table>
+
+{% info %}
+`url_offset` gives you more information about the link that was clicked. Links are indexed beginning at 0. `index` indicates which link was clicked based on that index. The type of link can be either text, HTML, or a header. `type` indicates the type of the link that was clicked.
+{% endinfo %}
+
+{% codeblock lang:json %}
+{
+  "sg_event_id":"sendgrid_internal_event_id",
+  "sg_message_id":"sendgrid_internal_message_id",
+  "ip":"255.255.255.255",
+  "useragent":"Mozilla/5.0 (iPhone; CPU iPhone OS 7_1_2 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Version/7.0 Mobile/11D257 Safari/9537.53",
+  "event":"click",
+  "email":"email@example.com",
+  "timestamp":1249948800,
+  "url":"http://yourdomain.com/blog/news.html",
+  "url_offset": {
+    "index": 0,
+    "type": "html"
+  },
+  "unique_arg_key":"unique_arg_value",
+  "category":["category1", "category2"],
+  "newsletter": {
+    "newsletter_user_list_id": "10557865",
+    "newsletter_id": "1943530",
+    "newsletter_send_id": "2308608"
+  },
+  "asm_group_id": 1
+}
+{% endcodeblock %}
+
+
 {% anchor h2 %}
 Additional Resources
 {% endanchor h2 %}
