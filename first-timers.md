@@ -17,7 +17,7 @@ This will take you to the sendgrid.com/docs GitHub repository, or repo. This is 
 
 Once you are viewing a Docs page in GitHub, click the pencil icon to begin editing:
 
-<img src="https://github.com/Whatthefoxsays/docs/blob/github-cheatsheet/source/img/docs_edit_github.png" width="800" height="500">
+<img src="https://raw.githubusercontent.com/sendgrid/docs/develop/source/img/docs_view_and_edit.png" width="800" height="500">
 
 
 3. Once you have made your changes, you will be given the option of creating a new branch in a Pull Request. This is a request to create a copy, or branch, of the original Docs but with your changes. Once your changes are approved, your branch will then be merged back into the original. 
