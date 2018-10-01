@@ -721,6 +721,21 @@ Event objects
     <td></td>
     <td></td>
   </tr>
+  </tr>
+    <tr>
+    <td><a href="#type">type</a></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
 </table>
 
 {% anchor h3 %}
@@ -742,7 +757,7 @@ JSON objects
 - <a name="url"></a>`url` - the URL where the event originates. For click events, this is the URL clicked on by the recipient.
 - <a name="attempt"></a>`attempt` - the number of times SendGrid has attempted to deliver this message.
 - <a name="category"></a>`category` - [Categories]({{root_url}}/Glossary/categories.html) are custom tags that you set for the purpose of organizing your emails. If you send single categories as an array, they will be returned by the webhook as an array. If you send single categories as a string, they will be returned by the webhook as a string.
-
+- <a name="type"></a>`type` - type of bounce [Bounce]({{root_url}}/Glossary/bounces.html)/[Blocked]({{root_url}}/Glossary/blocks.html)/[Expired]({{root_url}}/Glossary/expired.html)
 String categories:
 
 {% codeblock lang:json %}
