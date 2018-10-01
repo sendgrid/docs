@@ -111,6 +111,6 @@ For more information about unsubscribes, check out our [unsubscribe documentatio
 
 ## Additional Resources
 
-- [Dynamic Templates]({{root_url}}/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-teplates/)
+- [Dynamic Templates]({{root_url}}/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/)
 - [Using Handlebars]({{root_url}}/ui/sending-email/using-handlebars/)
 - [Design & Code Editor]({{root_url}}/ui/sending-email/editor/)
