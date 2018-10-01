@@ -87,7 +87,7 @@ Encouraging your recipients to do certain things can help bolster the trust ISPs
 
 - "Add us to your address book!" - Having a recipient add your from address you their address book or trusted senders list can go a long way. More often than not, if one of an ISPs recipients trust a sender, they will be more lenient to similar messages to different recipients!
 - Star or Mark as important - A simple inbox action like this is just another way your recipients can tell their mail providers that "Hey, I want these messages".
-- IP Whitelist - Some ISPs or mail admins can add rules to always allow _all_ incoming mail from specific IP addresses! Consider reaching out to the postmaster(usually postmaster@thedomain.com) of problematic mail domains to see if they can white list [your dedicated IP address]({{root_url}}/Classroom/Basics/Account/what_is_my_sending_originating_ip_address_with_sendgrid.html).
+- IP Whitelist - Some ISPs or mail admins can add rules to always allow _all_ incoming mail from specific IP addresses! Consider reaching out to the postmaster(usually example@example.com) of problematic mail domains to see if they can white list [your dedicated IP address]({{root_url}}/Classroom/Basics/Account/what_is_my_sending_originating_ip_address_with_sendgrid.html).
 - "If you don't receive an email right away, please check your spam folder and mark "not spam"" - Adding this simple sentence to your sign-up form area can solve a lot of potential heartache. If a message you sent ends up in the Spam folder, and the recipient manually goes in and pulls it out, that's fantastic! This not only helps an ISPs incoming mail filters in avoiding false positives, but also improves your standing with that ISP.
 
 {% anchor h3 %}

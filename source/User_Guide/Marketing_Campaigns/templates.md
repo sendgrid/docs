@@ -16,14 +16,21 @@ Marketing Campaigns templates determine how the content of your campaign will be
 
 We provide a collection of pre-built, responsive templates that you may begin using and customizing immediately, or you can create your own template from scratch.
 
+- [Creating a New Template](#-Creating-a-New-Template)
+- [Editing an Existing Template](#-Editing-an-Existing-Template)
+- [Duplicating a SendGrid Template](#-Duplicating-a-SendGrid-Template)
+- [Duplicating a Custom Template](#-Duplicating-a-Custom-Template)
+- [Creating a Template from a Campaign](#-Creating-a-Template-from-a-Campaign)
+- [Additional Resources](#-Additional-Resources)
+
 {% anchor h3 %}
 Creating a New Template
 {% endanchor h3 %}
 
 *To create a new template:*
 
-1. From the left-hand navigation, select **Campaigns**, and then select **Templates**.  
-2. Click **Create New Template**.  
+1. From the left-hand navigation, select **Campaigns**, and then select **Templates**. 
+2. Click **Create New Template**. 
 3. Select the editor you want to use, and then click **Continue**.
 
 {% info %}
@@ -45,7 +52,7 @@ You can only edit custom templates (templates that you have created yourself or 
 1. Navigate to the template you want to edit.  
 1. Click the **action menu** and select **Edit**.
 
-   This navigates you to the editor originally used to create the campaign. After you create a template, you cannot switch between the design and code editor.
+   This navigates you to the editor originally used to create the campaign. After you create a template, you cannot switch between the design and code editor. However, if you choose the design editor you'll still have HTML editing options, and with the code editor you'll enjoy convenient visual tools like side-by-side code and preview panes.
 
 {% anchor h3 %}
 Duplicating a SendGrid Template
@@ -56,8 +63,8 @@ You can easily duplicate a pre-built template provided by SendGrid.
 *To duplicate a SendGrid template:*
 
 1. From the left-hand navigation, select **Campaigns**  
-1. Click **Templates**.  
-1. Locate the template you want to duplicate and then click the action cog.
+1. Click **Templates**. 
+1. Locate the template you want to duplicate and then click the action menu.
 1. Select **Duplicate**. The duplicate opens in the design editor.
 
 {% anchor h3 %}

@@ -9,7 +9,7 @@ layout: page
 navigation:
   show: true
 ---
-The SendGrid [Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html) lets you stream all [email events]({{root_url}}/User_Guide/email_activity.html#-Email-Events) directly to Keen IO for real-time analysis and long term raw storage.
+The SendGrid [Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html) lets you stream all [email events]({{root_url}}/User_Guide/email_activity.html#-Email-Events) directly to <a href="https://keen.io/signup?utm_source=sendgrid_docs&utm_campaign=sendgrid">Keen IO</a> for real-time analysis and long term raw storage.
 
 It only takes a couple of minutes to start streaming email event data from SendGrid to Keen IO and once you do you can start analyzing and visualizing your data in a whole bunch of different ways.
 
@@ -43,7 +43,7 @@ Log into your SendGrid account, click on **Settings** from the left menu → Sel
 ```
 https://api.keen.io/3.0/projects/YOUR_KEEN_PROJECT_ID/email/sendgrid/1.0?api_key=YOUR_KEEN_API_WRITE_KEY
 ```
-You can snag a prebuilt URL in Keen’s UI or make your own.  
+You can snag a prebuilt URL in Keen’s UI or make your own. 
 
 In the settings, select the events you want to post to Keen IO (why not all of them?). To do this, under **Select Actions**, check **All**.
 
@@ -67,10 +67,6 @@ To find it, visit your [Keen home screen](https://keen.io/home), select the proj
 
 ![SendGrid- Email Analytics App Dashboard Home]({{root_url}}/images/keen/sendgrid_email_analytics_dashboard_empty.png)
 
-A report for **All of your Mail”** will be created automatically. You can see Delivered Rates, Unique Opens, Unique Clicks, Click Rates, Unsubscribe Rates, Bounces, and Number of Emails Marked as Spam.
-
-For each of these metrics, you can download a CSV of the detailed event data. Just click on any cell, and you’ll see a menu with the option to download a CSV. Learn who did or did not open an email for example, and with this list of email addresses you can build a more targeted user campaign.
-
 {% anchor h4 %}
 Adding a Segment
 {% endanchor h4 %}
@@ -78,7 +74,7 @@ Adding a Segment
 A segment will allow you to track a specific campaign or filter on a particular field like a customer ID. To create a segment, select “Add Segment” from the top left corner. The following pop-out menu will allow you to define your segment name, the date you’d like to look at, and, most importantly, select a property by which you’d like to measure the effectiveness of a campaign.
 
 {% info %}
-This is explaining a different process from creating an [customer email segment]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html#-Create-a-Segment) in SendGrid
+This is explaining a different process from creating an [customer email segment]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html#-Creating-a-Segment) in SendGrid
 {% endinfo %}
 
 ![SendGrid- Email Analytics App Create a Segment]({{root_url}}/images/keen/sendgrid_create_a_segment.png)
@@ -125,7 +121,7 @@ The report has fixed timeframe options, but that doesn’t mean that we stop sto
 Understanding User Behavior
 {% endanchor h4 %}
 
-Each column in the the Analytics App represents a different user action and each column is a unique step. From left to right, the columns display the number of people that successfully make it through each event. The fewest number of users have successful delivered events, open events, clicked events, and then unsubscribe events.     
+Each column in the the Analytics App represents a different user action and each column is a unique step. From left to right, the columns display the number of people that successfully make it through each event. The fewest number of users have successful delivered events, open events, clicked events, and then unsubscribe events.    
 
 ![SendGrid- Email Analytics App Funnel]({{root_url}}/images/keen/sendgrid_funnel.png)
 
@@ -183,7 +179,7 @@ Once you’ve found the query you need, you can either copy the URL right from y
 
 *To create a dashboard*:
 
-**Step 1: Save your query.** Create your query in the Explorer and click **Run**. After running the query, click **Save**.  
+**Step 1: Save your query.** Create your query in the Explorer and click **Run**. After running the query, click **Save**. 
 
 ![Save Your Query]({{root_url}}/images/keen/sendgrid_saved_query.png)
 

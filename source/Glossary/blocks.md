@@ -20,8 +20,7 @@ See the block reason column for more detail specific to the blocked email.
 
 ![Blocks]({{root_url}}/images/blocks_1.png)
 
-A few helpful links:
+Additional Resources:
 
 * [Web API & Blocks]({{root_url}}/API_Reference/Web_API/blocks.html)
-* [My Emails are being dropped](https://sendgrid.zendesk.com/hc/en-us/articles/200181708)
-* [My Emails are being dropped](https://sendgrid.zendesk.com/hc/en-us/articles/200181728)
+

@@ -1,7 +1,7 @@
 ---
 seo:
   title: SendGrid for iPhone and iPad Email Activity
-title: Email Activity
+title: Email Activity for Mobile
 weight: 700
 layout: page
 navigation:
@@ -26,11 +26,17 @@ navigation:
   <sup>2</sup>
 </p>
 
-Here you can view the real-time logs of all [email activity]({{root_url}}/User_Guide/email_activity.html) from your account in the last 7 days. You can also narrow your search by pulling down on the screen and searching for an email address, and/or selecting the “More” button in the top right corner, selecting “Search Options,” and selecting only certain events to show.
+Here you can view the real-time logs of all [email activity]({{root_url}}/User_Guide/email_activity.html) from your account. You can also narrow your search by pulling down on the screen and searching for an email address, and/or selecting the “More” button in the top right corner, selecting “Search Options,” and selecting only certain events to show.
 
 Tapping on any event will reveal more information, such as server responses or user agents.
 
 Finally, you can export your email activity by selecting the “More” button in the top right corner and selecting “Export.” This will create a CSV that you can open in another app on your device.
+
+<h2>Additional Resources</h2>
+
+- [Email Activity]({{root_url}}/User_Guide/email_activity.html)
+- [Email Service Provider]({{site.site_url}}/docs/Glossary/email_service_provider.html)
+- [Bulk Email Service]({{site.site_url}}/docs/Glossary/bulk_email_service.html)
 
 <p class="small">
   <sup>1</sup>Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.

@@ -52,8 +52,8 @@ There are several requirements that you must complete before you can begin using
 - Universal links for Android require that you set up an "digital asset links" JSON file, along with configuring intent filters in your Android app's manifest file.
 - Your **apple-app-site-association** and **digital asset links** files must be hosted on an HTTPS web server or content delivery network (CDN).
 - To ensure that your universal links register click tracking events, and to ensure that your recipient is taken to the correct page within your app, you must properly [resolve your links](#-Resolving-SendGrid-Click-Tracking-Links).
-- You must complete the [link whitelabeling process]({{root_url}}/User_Guide/Settings/Whitelabel/links.html) for your account. When whitelabeling your links, you must use the same domain that will be used for your universal links. (e.g. links.example.com) 
-- On iOS, you must include your email link whitelabel subdomain in the "Associated Domains" for your app. Using the example above, you'd need to add an entry for "applinks:links.example.com" like this:
+- You must complete the [link branding process]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_link_branding.html) for your account. When branding your links, you must use the same domain that will be used for your universal links. (e.g. links.example.com) 
+- On iOS, you must include your branded link subdomain in the "Associated Domains" for your app. You can customize your subdoman using the custom return path in advanced settings while setting it up. Using the example above, you'd need to add an entry for "applinks:links.example.com" like this:
 ![]({{root_url}}/images/universal_links_ios.png)
 
 {% anchor h2 %}
@@ -95,9 +95,9 @@ Example apple-app-site-association file:
 }
 {% endcodeblock %}
 
-{% info %}
+{% warning %}
 **Do not** append the .json file extension to your apple-app-site-association file!
-{% endinfo %}
+{% endwarning %}
 
 {% anchor h3 %}
 Example assetlinks.json file:
@@ -121,9 +121,7 @@ Example assetlinks.json file:
 {% endcodeblock %}
 
 {% info %}
-When configuring your universal links for Android devices, you must specify which URLs should be handled by the app and which should not.
-
-For iOS this is set in the "apple-app-site-association" file by including "paths": ["/uni/\*"], indicating that any URL containing the path "/uni/" should be opened in your app.
+When configuring your universal links in iOS, you specify which paths you want to be handled by the app by using the `paths` argument in the `apple-app-site-association` file. By specifing only the path `["/uni/*"]`, and using the `universal=true` attribute on your links as documented below, only appropriate links will be handled by the app, and others will be opened in the phone's browser.
 
 Android requires that you specify these paths inside your app, rather than the assetlinks.json file. This is accomplished by adding intent filters for specific hosts and paths. Please visit [Google's Developer Documentation](https://developer.android.com/training/app-indexing/deep-linking.html) to learn how to add an intent filter to your app manifest that can handle your universal links.
 {% endinfo %}
@@ -148,7 +146,7 @@ After creating your iOS "apple-app-site-association" file and/or your Android "d
     ![]({{root_url}}/images/universal_links_1.png)
 5. Create a new folder in the bucket called “.well-known”
 
-6. Inside of the ".well-known" folder, uplaod the same "apple-app-site-association" file as in step 2
+6. Inside of the ".well-known" folder, upload the same "apple-app-site-association" file as in step 2
 
 7. As above, add a permission for **Everyone** to **Open/Download** (or **Read** in the new S3 UI) and change the Content-Type to “application/json”
 
@@ -158,7 +156,7 @@ After creating your iOS "apple-app-site-association" file and/or your Android "d
 
 10. Navigate to the **AWS Certificate Manager**
 
-11. Request a new certificate for the domain your link whitelabel is configured for (e.g. links.example.com)
+11. Request a new certificate for the domain your link branding is configured for (e.g. links.example.com)
 
 12. AWS will send an email to the appropriate domain owners, requesting them to approve the certificate
 
@@ -244,7 +242,7 @@ Setting Up Universal Links Using NGINX
 
 After creating your iOS "apple-app-site-association" file and/or your Android "digital asset links" file, you need to host them on a secure content delivery network. The following instructions will guide you through setting up NGINX to host these files.
 
-1. Request a new certificate for the domain your link whitelabel is configured for (e.g. links.example.com)
+1. Request a new certificate for the domain your link branding is configured for (e.g. links.example.com)
 
 2. Place the certificate chain into the file named **/etc/pki/tls/certs/links.example.com.crt**
 
@@ -306,7 +304,10 @@ For example:
 
 `<a href="links.example.com" universal="true">Link to your app!</a>`
 
+This way, as long as your association file has the `paths` restricted to `/uni/*` as we recommend above, only the links that you want to be handled by your app will be.
+
 If you exclude the `universal="true"` attribute, your links will still function, but they will take your recipient to their mobile browser.
+If you exclude the `/uni/*` path in your `apple-app-site-association`, the _all_ links for your authenticated domain will be forwarded for your app to handle, which may cause issues.
 
 {% anchor h2 %}
 Resolving SendGrid Click Tracking Links

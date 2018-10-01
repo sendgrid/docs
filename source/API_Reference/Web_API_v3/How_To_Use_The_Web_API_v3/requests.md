@@ -43,7 +43,7 @@ Depending on the resource, we support the following HTTP verbs:
   </tr>
   <tr>
     <td>GET</td>
-    <td>Retrieve a resource or group of resouces</td>
+    <td>Retrieve a resource or group of resources</td>
   </tr>
   <tr>
     <td>POST</td>
@@ -67,9 +67,7 @@ Depending on the resource, we support the following HTTP verbs:
 Accept Header
 {% endanchor %}
 
-The API provides JSON responses. The [accept header](http://www.soapui.org/Best-Practices/understanding-rest-headers-and-parameters.html) is not currently
-required, though it may be required in the future. If not set, the
-API will use `application/json`.
+The API provides JSON responses. The [accept header](http://www.soapui.org/Best-Practices/understanding-rest-headers-and-parameters.html) is currently required for some API calls, and is recommended for all of them. It should be set to `application/json`.
 
 {% codeblock lang:http %}
 GET https://api.sendgrid.com/v3/endpoint HTTP/1.1

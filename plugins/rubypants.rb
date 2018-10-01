@@ -56,10 +56,10 @@
 # to force non-smart punctuation. It does so by transforming the
 # escape sequence into a decimal-encoded HTML entity:
 #
-#   \\    \"    \'    \.    \-    \`
+#   \\    \"    \'    \.   \-    \`
 #
 # This is useful, for example, when you want to use straight quotes as
-# foot and inch marks: 6'2" tall; a 17" iMac.  (Use <tt>6\'2\"</tt>
+# foot and inch marks: 6'2" tall; a 17" iMac. (Use <tt>6\'2\"</tt>
 # resp. <tt>17\"</tt>.)
 #
 #
@@ -329,7 +329,7 @@ class RubyPants < String
   # or other character to appear.
   #
   # Escaped are:
-  #      \\    \"    \'    \.    \-    \`
+  #      \\    \"    \'    \.   \-    \`
   #
   def process_escapes(str)
     str.gsub('\\\\', '&#92;').
@@ -360,7 +360,7 @@ class RubyPants < String
   # an en-dash HTML entity. Two reasons why: First, unlike the en- and
   # em-dash syntax supported by +educate_dashes_oldschool+, it's
   # compatible with existing entries written before SmartyPants 1.1,
-  # back when "<tt>--</tt>" was only used for em-dashes.  Second,
+  # back when "<tt>--</tt>" was only used for em-dashes. Second,
   # em-dashes are more common than en-dashes, and so it sort of makes
   # sense that the shortcut should be shorter to type. (Thanks to
   # Aaron Swartz for the idea.)
@@ -443,14 +443,14 @@ class RubyPants < String
   #
   def stupefy_entities(str)
     str.
-      gsub(/&#8211;/, '-').      # en-dash
-      gsub(/&#8212;/, '--').     # em-dash
+      gsub(/&#8211;/, '-').     # en-dash
+      gsub(/&#8212;/, '--').    # em-dash
 
-      gsub(/&#8216;/, "'").      # open single quote
-      gsub(/&#8217;/, "'").      # close single quote
+      gsub(/&#8216;/, "'").     # open single quote
+      gsub(/&#8217;/, "'").     # close single quote
 
-      gsub(/&#8220;/, '"').      # open double quote
-      gsub(/&#8221;/, '"').      # close double quote
+      gsub(/&#8220;/, '"').     # open double quote
+      gsub(/&#8221;/, '"').     # close double quote
 
       gsub(/&#8230;/, '...')     # ellipsis
   end
@@ -462,7 +462,7 @@ class RubyPants < String
   # is either :tag or :text; the second is the actual value.
   #
   # Based on the <tt>_tokenize()</tt> subroutine from Brad Choate's
-  # MTRegex plugin.  <http://www.bradchoate.com/past/mtregex.php>
+  # MTRegex plugin. <http://www.bradchoate.com/past/mtregex.php>
   #
   # This is actually the easier variant using tag_soup, as used by
   # Chad Miller in the Python port of SmartyPants.

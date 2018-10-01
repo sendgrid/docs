@@ -57,7 +57,7 @@ There is a limit of 100 IP pools per user.
 {% anchor h2 %}
 GET
 {% endanchor  %}
-List all IP pools.
+Retrieve all IP pools.
 
 {% apiv3example get GET https://api.sendgrid.com/v3/ips/pools %}
 {% v3response %}
@@ -85,9 +85,9 @@ HTTP/1.1 200
 {% anchor h2 %}
 GET
 {% endanchor %}
-List the IPs in a specified pool.
+Retrieve all IPs in a specified pool.
 
-{% apiv3example get-specific GET https://api.sendgrid.com/v3/ips/pools/:pool_name %}
+{% apiv3example get-specific GET https://api.sendgrid.com/v3/ips/pools/{pool_name} %}
 {% v3response %}
 HTTP/1.1 200 OK	
 
@@ -109,7 +109,7 @@ Update an IP pool's name.
   {% parameter name Yes 'String. max 64 characters' 'New name of the pool' %}
 {% endparameters %}
 
-{% apiv3example put PUT https://api.sendgrid.com/v3/ips/pools/:pool_name name=new_pool_name %}
+{% apiv3example put PUT https://api.sendgrid.com/v3/ips/pools/{pool_name} name=new_pool_name %}
 
 {% apiv3requestbody %} {"name":"marketing"} {% endapiv3requestbody %}
 
@@ -125,13 +125,53 @@ HTTP/1.1 200 OK
 * * * * *
 
 {% anchor h2 %}
+POST
+{% endanchor %}
+Add an IP Address to a pool.
+
+{% apiv3example post POST https://api.sendgrid.com/v3/ips/pools/{pool_name}/ips %}
+
+{% apiv3requestbody %} {"ip":"0.00.0.0"} {% endapiv3requestbody %}
+
+{% v3response %}
+HTTP/1.1 200 OK	
+
+{
+  "ip": "0.00.0.0",
+  "pools": [
+    "marketing"
+  ],
+  "start_date": null,
+  "warmup": false
+}
+{% endv3response %}
+{% endapiv3example %}
+
+* * * * *
+
+{% anchor h2 %}
+DELETE
+{% endanchor %}
+Remove an IP Address from a pool.
+
+{% apiv3example delete DELETE https://api.sendgrid.com/v3/ips/pools/{pool_name}/ips/{ip} %}
+
+{% v3response %}
+HTTP/1.1 204 NO CONTENT (OK)
+{% endv3response %}
+{% endapiv3example %}
+
+* * * * *
+
+{% anchor h2 %}
 DELETE
 {% endanchor %}
 Delete an IP pool.
 
-{% apiv3example delete DELETE https://api.sendgrid.com/v3/ips/pools/:pool_name %}
-  {% v3response %}
+{% apiv3example delete DELETE https://api.sendgrid.com/v3/ips/pools/{pool_name} %}
+
+{% v3response %}
 HTTP/1.1 204 NO CONTENT (OK)
-  {% endv3response %}
+{% endv3response %}
 {% endapiv3example %}
 

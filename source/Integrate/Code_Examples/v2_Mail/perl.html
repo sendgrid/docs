@@ -21,7 +21,7 @@ use Mail::SendGrid::Transport::REST;
  
 my $sendgrid = Mail::SendGrid->new(
   from => "test@sendgrid.com",
-  to => "you@youreamil.com",
+  to => "example@example.com",
   subject => "Sending with SendGrid is Fun",
   html => "and easy to do anywhere, even with Perl"
 );
@@ -52,7 +52,7 @@ use Net::SMTP;
 # to is who you are sending your email to
 # subject will be the subject line of your email
 my $from = 'you@yourdomain.com';
-my $to = 'person@youaremailing.com';
+my $to = 'example@example.com';
 my $subject = 'Example Perl Email';
  
 # Create the MIME message that will be sent. Check out MIME::Entity on CPAN for more details
@@ -97,7 +97,7 @@ $mime->attach ( Path      => $my_file_txt,
 ) or die "Error adding !\n";
 
 # Login credentials
-my $username = 'yourlogin@sendgrid.net';
+my $username = 'example@example.com';
 my $password = "yourpassword";
  
 # Open a connection to the SendGrid mail server

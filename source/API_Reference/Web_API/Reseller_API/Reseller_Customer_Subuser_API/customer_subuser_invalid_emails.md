@@ -23,7 +23,7 @@ Retrieve Invalid Emails
   {% response json %}
 [
   {
-    "email": "isaac@hotmail.comm",
+    "email": "example@example.com",
     "reason": "Mail domain mentioned in email address is unknown",
     "created": "2009-06-01 19:41:39"
   },
@@ -33,7 +33,7 @@ Retrieve Invalid Emails
     "created": "2009-06-01 19:41:39"
   },
   {
-    "email": "isaac@example.com",
+    "email": "example@example.com",
     "reason": "Known bad domain",
     "created": "2009-06-01 19:41:39"
   }
@@ -42,7 +42,7 @@ Retrieve Invalid Emails
   {% response xml %}
 <invalidemails>
    <invalidemail>
-      <email>isaac@hotmail.comm</email>
+      <email>example@example.com</email>
       <reason>Mail domain mentioned in email address is unknown</reason>
       <created>2009-06-10 12:40:30</created>
    </invalidemail>
@@ -52,7 +52,7 @@ Retrieve Invalid Emails
       <created>2009-06-10 12:40:30</created>
    </invalidemail>
    <invalidemail>
-      <email>isaac@example.com</email>
+      <email>example@example.com</email>
       <reason>Known bad domain</reason>
       <created>2009-06-10 12:40:30</created>
    </invalidemail>
@@ -72,8 +72,8 @@ Since SendGrid does not deliver to invalid emails, users can remove invalid emai
 
 {% parameters delete %}
  {% parameter 'user' 'Yes' 'Customer subuser must be registered under your account' 'The customer subuser we are retrieving invalid emails from' %}
- {% parameter 'task' 'Yes' 'Must be set to <em>delete</em>' 'This will allow you to delete a invalid email for the specified customer subuser' %}
- {% parameter 'email' 'No' 'Must be a invalid email' 'You must specify the invalid emails to remove' %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>delete</em>' 'This will allow you to delete an invalid email for the specified customer subuser' %}
+ {% parameter 'email' 'No' 'Must be an invalid email' 'You must specify the invalid emails to remove' %}
  {% parameter 'method' 'Yes' 'Must be set to <em>invalidemails</em>' 'Allows you to access invalid email functionality' %}
 {% endparameters %}
 

@@ -9,7 +9,7 @@ navigation:
 ---
 
 {% warning %}
-This feature is deprecated, please go to the [Version 2]({{root_url}}/API_Reference/Web_API/Reseller_API/authenticate_a_customer.html) Reseller Authenticate a Customer page.   
+This feature is deprecated, please go to the [Version 2]({{root_url}}/API_Reference/Web_API/Reseller_API/authenticate_a_customer.html) Reseller Authenticate a Customer page.  
 {% endwarning %}
 
 
@@ -54,7 +54,7 @@ Authenticate a customer on your website before displaying their account informat
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=customer@example.com&password=theirsubmittedpassword&method=aut
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=eexampexample@example.com&password=theirsubmittedpassword&method=aut
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -84,7 +84,7 @@ result><message>success</message></result>
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.manage.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=customer@example.com&password=theirsubmittedpassword&method=aut
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&user=eexampexample@example.com&password=theirsubmittedpassword&method=aut
   {% endrequestdata %}
 
 {% endrequestblock %}

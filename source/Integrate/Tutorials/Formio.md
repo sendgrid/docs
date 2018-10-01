@@ -9,9 +9,9 @@ layout: page
 navigation:
   show: true
 ---
-<a href="https://form.io" target="_blank">Form.io</a> is a combined form and data management API platform created for developers who are building "Serverless" form-based applications.  Form.io provides an easy drag-and-drop form builder workflow allowing you to build complex forms for enterprise applications quickly and easily. These forms are then embedded directly into your application with a single line of code that dynamically renders the form (using Angular or React) in your app while at the very same time generating the RESTful API to support those forms. The Form.io platform also offers numerous 3rd-party services that are fully integrated into the form building process allowing you to extend the power and capability of your apps while saving time and effort.
+<a href="https://form.io" target="_blank">Form.io</a> is a combined form and data management API platform created for developers who are building "Serverless" form-based applications. Form.io provides an easy drag-and-drop form builder workflow allowing you to build complex forms for enterprise applications quickly and easily. These forms are then embedded directly into your application with a single line of code that dynamically renders the form (using Angular or React) in your app while at the very same time generating the RESTful API to support those forms. The Form.io platform also offers numerous 3rd-party services that are fully integrated into the form building process allowing you to extend the power and capability of your apps while saving time and effort.
 
-Form.io has recently announced the integration of Sendgrid’s API into their list of standard “Form Actions”, allowing you to extend your SendGrid email capabilities further into your apps, by automatically triggering emails through your SendGrid account when forms are submitted within your application.
+Form.io has recently announced the integration of SendGrid’s API into their list of standard “Form Actions”, allowing you to extend your SendGrid email capabilities further into your apps, by automatically triggering emails through your SendGrid account when forms are submitted within your application.
 
 ![Form.io SendGrid integration]({{root_url}}/images/formio-sendgrid.png "Form.io SendGrid Integration")
 
@@ -38,7 +38,7 @@ Once you have a Form.io project, the next step is to create an <strong>API Key</
  - Input the <em>SendGrid API Key</em> provided to you when the API key was created.
  - <strong>Save</strong> your settings.
 
-![Form.io SendGrid Settings]({{root_url}}/images/formio-settings.png "Form.io Sendgrid Settings")
+![Form.io SendGrid Settings]({{root_url}}/images/formio-settings.png "Form.io SendGrid Settings")
 
 {% anchor h2 %}
 Adding an email action
@@ -64,7 +64,7 @@ With this step complete, every user who registers for this application will rece
 Deploy your Serverless Application!
 {% endanchor %}
 
-Now that your project is configured for SendGrid, you can deploy it in a number of different ways including <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>, <a href="https://cordova.apache.org/" target="_blank">Apache Cordova</a>, <a href="http://electron.atom.io/" target="_blank">Electron</a>, etc. You can also preview your application by clicking on the Preview tab of your project. Since this application is "serverless" it can be hosted in a wide range of places and immediately connect your forms with Sendgrid!
+Now that your project is configured for SendGrid, you can deploy it in a number of different ways including <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>, <a href="https://cordova.apache.org/" target="_blank">Apache Cordova</a>, <a href="http://electron.atom.io/" target="_blank">Electron</a>, etc. You can also preview your application by clicking on the Preview tab of your project. Since this application is "serverless" it can be hosted in a wide range of places and immediately connect your forms with SendGrid!
 
 ![Form.io Launch]({{root_url}}/images/formio-launch.png "Form.io Launch")
 

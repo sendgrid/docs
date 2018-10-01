@@ -10,6 +10,10 @@ Receive a sample of an outgoing message by a specific customer.
 
 The first step is to create a Monitor Record. Once the monitor record has been created, a reseller can append a monitor record to a customer. Multiple customer can be appended to a single monitor record.
 
+{% info %}
+These are Reseller Only APIs. For more information, see [Reseller Overview](https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/index.html).
+{% endinfo %}
+
 * * * * *
 
 {% anchor h2 %}
@@ -137,7 +141,7 @@ List all available monitor records a reseller has.
     "frequency": "10000",
     "users": [
       "user1@example.com",
-      "user2@example.com"
+      "exampexample@example.comom"
     ]
   }
 ]
@@ -156,7 +160,7 @@ List all available monitor records a reseller has.
       <frequency>10000</frequency>
       <users>
          <user>user1@example.com</user>
-         <user>user2@example.com</user>
+         <user>exampexample@example.comom</user>
       </users>
    </monitor>
 </monitors>
@@ -181,7 +185,7 @@ Append a monitor record to a existing record onto a customer.
 {% endparameters %}
 
 
-{% apiexample append POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=append&name=myMonitor&user=customer@example.com %}
+{% apiexample append POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=append&name=myMonitor&user=eexampexample@example.com %}
   {% response json %}
 {
   "message": "success"
@@ -211,7 +215,7 @@ Detach a customer from a monitor record.
 {% endparameters %}
 
 
-{% apiexample detach POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=detach&user=customer@example.com %}
+{% apiexample detach POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=monitor&task=detach&user=eexampexample@example.com %}
   {% response json %}
 {
   "message": "success"

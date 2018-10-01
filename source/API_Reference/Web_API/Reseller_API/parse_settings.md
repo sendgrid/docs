@@ -17,8 +17,11 @@ Get Current Settings
  {% parameter 'method' 'Yes' 'Must be set to <em>parse</em>' 'Allows you to access parse functionality' %}
 {% endparameters %}
 
+{% info %}
+These are Reseller Only APIs. For more information, see [Reseller Overview](https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/index.html).
+{% endinfo %}
 
-{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=parse&task=get&method=parse&user=customer@example.com %}
+{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=parse&task=get&method=parse&user=eexampexample@example.com %}
   {% response json %}
 {
   "parse": [
@@ -58,7 +61,7 @@ Create New Entry
 {% endparameters %}
 
 
-{% apiexample create POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=set&method=parse&user=customer@example.com %}
+{% apiexample create POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=set&method=parse&user=eexampexample@example.com %}
   {% response json %}
 {
   "message": "success"
@@ -88,7 +91,7 @@ Edit Entry
 {% endparameters %}
 
 
-{% apiexample edit POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=update&user=customer@example.com %}
+{% apiexample edit POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&url=www.mydomain.com/parse.php&spam_check=1&method=parse&task=update&user=eexampexample@example.com %}
   {% response json %}
 {
   "message": "success"
@@ -117,7 +120,7 @@ Delete Entry
 {% endparameters %}
 
 
-{% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&method=parse&user=customer@example.com %}
+{% apiexample delete POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&hostname=www.example.com&task=delete&method=parse&user=eexampexample@example.com %}
   {% response json %}
 {
   "message": "success"

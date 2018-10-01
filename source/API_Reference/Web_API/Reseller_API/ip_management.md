@@ -19,6 +19,9 @@ View all IPs under your account.
  {% parameter 'system' 'No' 'Must be set to <em>true</em> .' 'Include IPs assigned by SendGrid.' %}
 {% endparameters %}
 
+{% info %}
+These are Reseller Only APIs. For more information, see [Reseller Overview](https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/index.html).
+{% endinfo %}
 
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.ip api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=all %}
   {% response json %}
@@ -224,11 +227,11 @@ The current breakdown of users who are using your IPs.
 [
   {
     "ip": "255.255.253.0",
-    "user": "user4@example.com"
+    "user": "example@example.com"
   },
   {
     "ip": "255.255.254.0",
-    "user": "user4@example.com"
+    "user": "example@example.com"
   }
 ]
   {% endresponse %}
@@ -236,11 +239,11 @@ The current breakdown of users who are using your IPs.
 <ips>
    <entry>
       <ip>255.255.253.0</ip>
-      <user>user4@example.com</user>
+      <user>example@example.com</user>
    </entry>
    <entry>
       <ip>255.255.254.0</ip>
-      <user>user4@example.com</user>
+      <user>example@example.com</user>
    </entry>
 </ips>
 

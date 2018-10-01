@@ -114,7 +114,7 @@ https://api.sendgrid.com/api/blocks.get.json?api_user=your_sendgrid_username&api
 The Data
 {% endanchor %}
 
-When you send data a GET request, it usually means that you're sending data in the URL's query string,the part after the '?' in the url, as a key/value pair. The key is defined by the place where you are sending the data and is assumed to be URL-safe, however the data you provide may not be. So, you should urlencode the value (or the data part) of any URL-passed information. 
+When you send data a GET request, it usually means that you're sending data in the URL's query string, the part after the '?' in the url, as a key/value pair. The key is defined by the place where you are sending the data and is assumed to be URL-safe, however the data you provide may not be. So, you should urlencode the value (or the data part) of any URL-passed information. 
 
 For example, when you query google.com for "sendgrid.com/docs/" you get the following URL: 
 

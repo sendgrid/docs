@@ -148,7 +148,7 @@ Cancel/Revert a pending change.
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.pending.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=eexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -178,7 +178,7 @@ result><message>success</message></result>
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.pending.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=customer@example.com
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=delete&user=eexampexample@example.com
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -241,7 +241,7 @@ Once an upgrade happens, an invoice is generated for that user. If it's a free u
       <tr>
          <td>ip[]</td>
          <td>Maybe Yes</td>
-         <td>If the package you are upgrading your user requires a whitelabel and/or an unique IP, you must assign a free IP to this user.</td>
+         <td>If the package you are upgrading your user to requires a whitelabel and/or a unique IP, you must assign a free IP to this user.</td>
       </tr>
       <tr>
          <td>ip_group[]</td>
@@ -258,7 +258,7 @@ Once an upgrade happens, an invoice is generated for that user. If it's a free u
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.account.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=eexampexample@example.com&ip_group[]=Reseller Grou
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -288,7 +288,7 @@ result><message>success</message></result>
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.account.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_upgrade&package=Basic Package&user=eexampexample@example.com&ip_group[]=Reseller Grou
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -351,7 +351,7 @@ Once a downgrade happens, an invoice is generated for that user. Free customers 
       <tr>
          <td>ip[]</td>
          <td>Optional</td>
-         <td>If the package you are downgrading your user requires a whitelabel and/or an unique IP, you may assign a free IP to this customer using your assigned IPs in suppliment from SendGrid.</td>
+         <td>If the package you are downgrading your user to requires a whitelabel and/or a unique IP, you may assign a free IP to this customer using your assigned IPs in supplement from SendGrid.</td>
       </tr>
       <tr>
          <td>ip_group[]</td>
@@ -368,7 +368,7 @@ Once a downgrade happens, an invoice is generated for that user. Free customers 
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.account.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=eexampexample@example.com&ip_group[]=Reseller Grou
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -398,7 +398,7 @@ result><message>success</message></result>
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.account.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_downgrade&package=Basic Package&user=eexampexample@example.com&ip_group[]=Reseller Grou
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -428,7 +428,7 @@ result><message>success</message></result>
 Immediate Close 
 {% endanchor %}
 
-Close or revert an account to a free user immediately. An invoice is generated for that user with the new package price (if no overages are incurred, a invoice with zero amount due is generated.
+Close or revert an account to a free user immediately. An invoice is generated for that user with the new package price (if no overages are incurred, an invoice with zero amount due is generated.
 
 <table class="table table-bordered table-striped">
    <thead>
@@ -468,7 +468,7 @@ Close or revert an account to a free user immediately. An invoice is generated f
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.account.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Grou
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=eexampexample@example.com&ip_group[]=Reseller Grou
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -498,7 +498,7 @@ result><message>success</message></result>
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.account.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=customer@example.com&ip_group[]=Reseller Grou
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=immediate_close&user=eexampexample@example.com&ip_group[]=Reseller Grou
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -561,7 +561,7 @@ Apply an upgrade at the end of the user's billing cycle. Once an upgrade happens
       <tr>
          <td>ip[]</td>
          <td>Maybe Yes</td>
-         <td>If the package you are upgrading your user requires a whitelabel and/or an unique IP, you must assign a free IP to this user.</td>
+         <td>If the package you are upgrading your user to requires a whitelabel and/or a unique IP, you must assign a free IP to this user.</td>
       </tr>
       <tr>
          <td>ip_group[]</td>
@@ -578,7 +578,7 @@ Apply an upgrade at the end of the user's billing cycle. Once an upgrade happens
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.account.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=eexampexample@example.com&ip_group[]=Reseller Grou
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -608,7 +608,7 @@ result><message>success</message></result>
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.account.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_upgrade&package=Basic Package&user=eexampexample@example.com&ip_group[]=Reseller Grou
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -671,7 +671,7 @@ Apply a downgrade at the end of the user's billing cycle. Once a downgrade happe
       <tr>
          <td>ip[]</td>
          <td>Maybe Yes</td>
-         <td>If the package you are upgrading your user requires a whitelabel and/or an unique IP, you must assign a free IP to this user.</td>
+         <td>If the package you are upgrading your user to requires a whitelabel and/or a unique IP, you must assign a free IP to this user.</td>
       </tr>
       <tr>
          <td>ip_group[]</td>
@@ -688,7 +688,7 @@ Apply a downgrade at the end of the user's billing cycle. Once a downgrade happe
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.account.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic Package&user=eexampexample@example.com&ip_group[]=Reseller Grou
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -718,7 +718,7 @@ result><message>success</message></result>
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.account.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic Package&user=customer@example.com&ip_group[]=Reseller Grou
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_downgrade&package=Basic Package&user=eexampexample@example.com&ip_group[]=Reseller Grou
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -748,7 +748,7 @@ result><message>success</message></result>
 Scheduled Close 
 {% endanchor %}
 
-Close or revert an account to a free user at the end of the user's billing cycle. Once a closure happens, an invoice is generated for that user with the new package price (if no overages are incurred, a invoice with zero amount due is generated.
+Close or revert an account to a free user at the end of the user's billing cycle. Once a closure happens, an invoice is generated for that user with the new package price (if no overages are incurred, an invoice with zero amount due is generated.
 
 <table class="table table-bordered table-striped">
    <thead>
@@ -788,7 +788,7 @@ Close or revert an account to a free user at the end of the user's billing cycle
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.account.xml
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Grou
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=eexampexample@example.com&ip_group[]=Reseller Grou
   {% endrequestdata %}
 
 {% endrequestblock %}
@@ -818,7 +818,7 @@ result><message>success</message></result>
   {% requesturl POST %}https://api.sendgrid.com/api/distributor.account.json
   {% endrequesturl %}
 
-  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=customer@example.com&ip_group[]=Reseller Grou
+  {% requestdata Data POST %}api_user=your_sendgrid_username&api_key=your_sendgrid_password&task=scheduled_close&user=eexampexample@example.com&ip_group[]=Reseller Grou
   {% endrequestdata %}
 
 {% endrequestblock %}

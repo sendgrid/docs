@@ -12,7 +12,7 @@ seo:
 
 <iframe src="https://player.vimeo.com/video/221496791" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-*[Viewing Campaign Statistics](#-Viewing-Campaign-Statistics)
+* [Viewing Campaign Statistics](#-Viewing-Campaign-Statistics)
    * [Exporting Campaign Statistics](#-Exporting-Campaign-Statistics)
    * [Exporting Statistics for Multiple Campaigns](#-Exporting-Statistics-for-Multiple-Campaigns)
 * [Leveraging Engagement Statistics](#-Leveraging-Engagement-Statistics)
@@ -87,7 +87,7 @@ Creating a Segment Based on Your Engagement Metrics
 1. From the Campaigns page or the individual campaign stats page, hover over the **Unique Opens** or **Unique Clicks** stats.
 1. Click **View Details** and then select **Create Segment**.
 
-   A window opens with segmentation options. By default, the segment will contain the conditions to capture all recipients who either opened your campaign or clicked within your campaign. The segment will be given the name _“Contacts who [clicked/opened] [your campaign name]”_. You can rename this segment or modify the conditions of the segment as you wish directly in this window. For more information on segmentation, [click here]({{root_url}}/User_Guide/Marketing_Campaigns/lists.html#-Create-a-Segment).
+   A window opens with segmentation options. By default, the segment will contain the conditions to capture all recipients who either opened your campaign or clicked within your campaign. The segment will be given the name _“Contacts who [clicked/opened] [your campaign name]”_. You can rename this segment or modify the conditions of the segment as you wish directly in this window. For more information on segmentation, [click here]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html#-Creating-a-Segment).
 
 1. Click **Save**. 
 <br>You now have a dynamic segment that will continuously update as recipients engage with this campaign.
@@ -104,3 +104,10 @@ In addition to creating a dynamic segment based on campaign engagement as descri
 1. Click **View Details**.
 <br>A real-time list of all recipients who either opened your campaign, or clicked a link within your campaign appears.
 1. Click **Export CSV**.
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor h2 %}
+
+- [Sending a Campaign](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html)
+- [A/B Testing Your Campaign](https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/a_b_testing.html)

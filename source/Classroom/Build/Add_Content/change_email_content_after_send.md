@@ -13,4 +13,4 @@ navigation:
   show: true
 ---
 
-As it turns out, there is not a way to alter the content of your messages once an email is sent. A good practice that you can put into place is to send a test copy before sending your content out to your recipieints. Alternatively, there are services such as [Litmus](https://litmus.com/) you can use that can help you get an idea of how your content will appear when sent to various browsers.
+As it turns out, there is not a way to alter the content of your messages once an email is sent. A good practice that you can put into place is to send a test copy before sending your content out to your recipients. Alternatively, there are services such as [Litmus](https://litmus.com/) you can use that can help you get an idea of how your content will appear when sent to various browsers.

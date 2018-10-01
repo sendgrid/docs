@@ -13,9 +13,9 @@ navigation:
 
  **Why Do My Emails Look Different in Different Mail Clients?  What Have You Done!?!**
 
-Have you ever spent all day and night formatting an email, sent it out, only to find out that it looks completely different on one email client than an other?  If so, we feel your pain.  However, before declaring 'shenanigans', it may be important for you to understand that these differences are being caused by the mail clients' unique ways of rendering these emails.
+Have you ever spent all day and night formatting an email, sent it out, only to find out that it looks completely different on one email client than an other?  If so, we feel your pain. However, before declaring 'shenanigans', it may be important for you to understand that these differences are being caused by the mail clients' unique ways of rendering these emails.
 
-All Mail clients render HTML/CSS differently, in their own ways and for their own reasons.  The differences in what HTML and CSS they support depends on many factors.  When rendering HTML and CSS in emails many things affect what the end user is going to see.  The mail exchange server, the preprocessor, the browsers, the rendering engines, and more; all affect the way your message is going to be displayed. These vary from client to client; browser to browser; server to server.  However, don't start pulling your hair out just yet, because there are some best practices you can utilize so that your emails' coding will stay in tact across different clients and platforms.
+All Mail clients render HTML/CSS differently, in their own ways and for their own reasons. The differences in what HTML and CSS they support depends on many factors. When rendering HTML and CSS in emails many things affect what the end user is going to see. The mail exchange server, the preprocessor, the browsers, the rendering engines, and more; all affect the way your message is going to be displayed. These vary from client to client; browser to browser; server to server. However, don't start pulling your hair out just yet, because there are some best practices you can utilize so that your emails' coding will stay in tact across different clients and platforms.
 
 **LAYOUT**
 
@@ -90,6 +90,6 @@ All Mail clients render HTML/CSS differently, in their own ways and for their ow
   - Many clients simply cannot support rendering video (other than GIFs) in their emails
   - JavaScript nor the object tag are supported in many clients or browsers and thus can't support video rendering
 
-STILL HAVING ISSUES?  QUESTIONS? CONCERNS?  Just contact our support team and we will be happy to help.  We can provide the tools and the knowledge base to help you understand what your mail will look like across platforms and how to gain insight in making them appear consistent across these platforms.
+STILL HAVING ISSUES?  QUESTIONS? CONCERNS?  Just contact our support team and we will be happy to help. We can provide the tools and the knowledge base to help you understand what your mail will look like across platforms and how to gain insight in making them appear consistent across these platforms.
 
  

@@ -10,13 +10,13 @@ navigation:
   show: true
 ---
 
-A bounce occurs when a sent message is rejected by the receiving mail server. The most common causes for bounced email messages include a misspelled email address, a nonexistent email address, or a full recipient inbox. A repeat bounce is when an address has bounced, then bounced a second time and logged to the bounce suppression list, but you ask us to send to this recipient again. Our system will suppress the message, because it ‘knows’ that recipient address is bad.
+A bounce occurs when a sent message is rejected by the receiving mail server. The most common causes for bounced email messages include a misspelled or nonexistent email address. A repeat bounce is when an address has bounced, then bounced a second time and logged to the bounce suppression list, but you ask us to send to this recipient again. Our system will suppress the message, because it ‘knows’ that recipient address is bad.
 
 {% anchor h2 %}
 Bounce Notifications
 {% endanchor %}
 
-If you would like to recieve a notification for each bounce message, you can turn on Bounce Forwarding in your Mail Settings.
+If you would like to receive a notification for each bounce message, you can turn on Bounce Forwarding in your Mail Settings.
 
 {% anchor h2 %}
 Searching Bounces by Date
@@ -37,7 +37,9 @@ Removing Recipients From The List
 When you select the checkboxes next to the recipient names or select all, using the checkbox next to the search box, you will see a new button at the top of the page. From this list, you can choose to remove the selected recipients from the list. You can also use the Bounce Purge.
 
 {% anchor h2 %}
-Related
+Additional Resources
 {% endanchor %}
 
-[Set up Bounce Forwarding to go to the email’s from address]({{site.support_url}}/hc/en-us/articles/200181478)
+- [Set up Bounce Forwarding to go to the email’s from address]({{site.support_url}}/hc/en-us/articles/200181478)
+- [Global Unsubscribes]({{root_url}}/User_Guide/Suppressions/global_unsubscribes.html)
+- [Group Unsubscribes]({{site.app_url}}/suppressions/group_unsubscribes)

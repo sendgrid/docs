@@ -64,7 +64,7 @@ This feature is deprecated, please go to the  <a href="{{root_url}}/API_Referenc
 
 <invalidemails>
    <invalidemail>
-      <email>isaac@hotmail.comm</email>
+      <email>example@example.com</email>
       <reason>Mail domain mentioned in email address is unknown</reason>
       <created>2009-06-10 12:40:30</created>
    </invalidemail>
@@ -74,7 +74,7 @@ This feature is deprecated, please go to the  <a href="{{root_url}}/API_Referenc
       <created>2009-06-10 12:40:30</created>
    </invalidemail>
    <invalidemail>
-      <email>isaac@example.com</email>
+      <email>example@example.com</email>
       <reason>Known bad domain</reason>
       <created>2009-06-10 12:40:30</created>
    </invalidemail>
@@ -101,7 +101,7 @@ This feature is deprecated, please go to the  <a href="{{root_url}}/API_Referenc
 {% codeblock lang:json %}
 [
   {
-    "email": "isaac@hotmail.comm",
+    "email": "example@example.com",
     "reason": "Mail domain mentioned in email address is unknown",
     "created": "2009-06-01 19:41:39"
   },
@@ -111,7 +111,7 @@ This feature is deprecated, please go to the  <a href="{{root_url}}/API_Referenc
     "created": "2009-06-01 19:41:39"
   },
   {
-    "email": "isaac@example.com",
+    "email": "example@example.com",
     "reason": "Known bad domain",
     "created": "2009-06-01 19:41:39"
   }
@@ -146,12 +146,12 @@ Since SendGrid does not deliver to invalid emails, users can remove invalid emai
          <td>task</td>
          <td>Yes</td>
          <td>Must be set to *delete*</td>
-         <td>This will allow you to delete a invalid email for the specified subuser</td>
+         <td>This will allow you to delete an invalid email for the specified subuser</td>
       </tr>
       <tr>
          <td>email</td>
          <td>No</td>
-         <td>Must be a invalid email</td>
+         <td>Must be an invalid email</td>
          <td>You must specify the invalid emails to remove</td>
       </tr>
    </tbody>

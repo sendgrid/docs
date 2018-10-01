@@ -8,6 +8,10 @@ navigation:
 
 Throttle your customer when you need them to send only a specific amount of emails at a specified interval.
 
+{% info %}
+These are Reseller Only APIs. For more information, see [Reseller Overview](https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/index.html).
+{% endinfo %}
+
 {% anchor h2 %}
 Retrieve 
 {% endanchor %}
@@ -22,7 +26,7 @@ Retrieve account limits for a specific customer. If the API call response is emp
 {% endparameters %}
 
 
-{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=customer@example.com&task=retrieve %}
+{% apiexample get POST https://api.sendgrid.com/apiv2/reseller.manage api_user=your_sendgrid_username&api_key=your_sendgrid_password&method=limit&user=eexampexample@example.com&task=retrieve %}
   {% response json %}
 {
   "credit": "40000",

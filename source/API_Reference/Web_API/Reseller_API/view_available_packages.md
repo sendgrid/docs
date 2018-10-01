@@ -10,6 +10,10 @@ List all packages available to your account.
 
 There are no extra parameters required for this call
 
+{% info %}
+These are Reseller Only APIs. For more information, see [Reseller Overview](https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/index.html).
+{% endinfo %}
+
 {% apiexample get POST https://api.sendgrid.com/apiv2/reseller.packages api_user=your_sendgrid_username&api_key=your_sendgrid_password %}
   {% response json %}
 [

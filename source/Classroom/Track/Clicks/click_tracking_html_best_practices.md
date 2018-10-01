@@ -24,8 +24,6 @@ The following links, even though they may still resolve, will not be captured or
 
 `<a href="www.sendgrid.com">SendGrid</a>`
 
-`<a href=http://www.sendgrid.com>SendGrid</a>`
-
 `<a href= http://www.sendgrid.com>SendGrid</a>`
 
 

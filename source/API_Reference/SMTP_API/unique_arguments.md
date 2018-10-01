@@ -1,7 +1,11 @@
 ---
-layout: page
-weight: 0
+seo:
+  title: Unique Arguments
+  description: Add unique arguments to customize your SMTP emails event tracking
+  keywords: SMTP, unique arguments, email events, email activity
 title: Unique Arguments
+weight: 10
+layout: page
 navigation:
   show: true
 ---
@@ -23,7 +27,7 @@ These arguments can be added using a JSON string like this:
 }
 {% endcodeblock %}
 
-These arguments can then be seen in posts from the [SendGrid Event Webhook]({{root_url}}/API_Reference/Webhooks/index.html). The contents of one of these POST would look something like this:
+These arguments can then be seen in posts from the [SendGrid Event Webhook]({{root_url}}/API_Reference/Webhooks/index.html). The contents of one of these POST requests would look something like this:
 
 <h4>Example Webhook Post Data</h4>
 {% codeblock lang:json %}
@@ -32,7 +36,8 @@ These arguments can then be seen in posts from the [SendGrid Event Webhook]({{ro
   "New Argument 1": "New Value 1",
   "event": "processed",
   "New Argument 4": "New Value 4",
-  "email": "user@example.com",
+  "email": "useexampexample@example.com",
+  "email": "example@example.com",
   "smtp-id": "<145cea24eb8.1c420.57425@localhost.localdomain>",
   "timestamp": 1399331116,
   "New Argument 2": "New Value 2",
@@ -42,9 +47,7 @@ These arguments can then be seen in posts from the [SendGrid Event Webhook]({{ro
 }
 {% endcodeblock %}
 
-{% warning %} There are a few cases where unique_args cannot be attached to the Event. Specifically Bounces that are returned via the Return-Path. Please keep this in mind when developing unique_args POST handling. {% endwarning %}
-
-Unique Arguments will also be shown in the [Email Activity tab]({{site.app_url}}/email_activity) of your account.
+{% warning %}Bounces returned with the Return-Path cause `unique_rgs not to be attached to an event. This can cause issues when developing unique_args POST handling. {% endwarning %}
 
 To apply different unique arguments to individual emails, you may use [substitution tags]({{root_url}}/API_Reference/SMTP_API/substitution_tags.html). An example of this would look like:
 
@@ -61,3 +64,12 @@ To apply different unique arguments to individual emails, you may use [substitut
   }
 }
 {% endcodeblock %}
+
+{% anchor h2 %}
+Additional Resources
+{% endanchor h2 %}
+
+- [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
+- [Getting Started with the SMTP API]({{root_url}}/API_Reference/SMTP_API/getting_started_smtp.html)
+- [Integrating with SMTP]({{root_url}}/API_Reference/SMTP_API/integrating_with_the_smtp_api.html)
+- [Building an SMTP Email]({{root_url}}/API_Reference/SMTP_API/building_an_smtp_email.html)

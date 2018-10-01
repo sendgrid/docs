@@ -39,7 +39,7 @@ When you add the `<%asm_global_unsubscribe_url%>` tag to your email, we will rep
 
 Alternatively, you can use the `<%asm_global_unsubscribe_raw_url%>` tag, which will be replaced with only the global unsubscribe URL without the hyperlinked text "Unsubscribe From All Emails".
 
-For more substitution tags, please see our [transactional templates]({{root_url}}/User_Guide/Transactional_Templates/create_edit.html#-Unsubscribe-Substitution-Tags).
+For more substitution tags, please see our [transactional templates]({{root_url}}/User_Guide/Transactional_Templates/create_and_edit_transactional_templates.html#-Adding-unsubscribe-links-to-a-template).
 
 {% anchor h2 %}
 Using the API
@@ -48,7 +48,9 @@ Using the API
 You can manage your Global Unsubscribes via the [Global Suppressions API]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/global_suppressions.html).
 
 {% anchor h2 %}
-Related
+Additional Resources
 {% endanchor %}
 
-[Global unsubscribes vs. Group Unsubscribes]({{root_url}}/User_Guide/Email_Deliverability/Subscription_Tracking/suppressions_vs_unsubscribes.html).
+- [Global unsubscribes vs. Group Unsubscribes]({{root_url}}/User_Guide/Email_Deliverability/Subscription_Tracking/suppressions_vs_unsubscribes.html)
+- [Group Unsubscribes]({{root_url}}/User_Guide/Suppressions/group_unsubscribes.html)
+- [Invalid Emails]({{root_url}}/User_Guide/Suppressions/invalid_emails.html)

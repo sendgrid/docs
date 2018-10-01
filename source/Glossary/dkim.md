@@ -28,9 +28,9 @@ SendGrid automatically enables DKIM for all email to improve your [email deliver
 Automated Security and Your DKIM Signature
 {% endanchor %}
 
-When you set up a [whitelabel]({{root_url}}/Classroom/Deliver/Delivery_Introduction/all_you_need_to_know_about_whitelabeling.html), you will be given the option of using [automated or manual security]({{root_url}}/Classroom/Deliver/Sender_Authentication/what_is_automated_security_in_the_whitelabel_settings.html). When you select automated security, SendGrid will manage your DKIM and SPF records for you. This means that whenever you make a change to your account that could impact your deliverability, such as adding a new dedicated sending [IP address]({{root_url}}/Glossary/ip_address.html), SendGrid will automatically update your DNS settings and your DKIM signature.
+When you set up a [authenticated domain]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html), you will be given the option of using [automated or manual security]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html#-Using-automated-security). When you select automated security, SendGrid will manage your DKIM and SPF records for you. This means that whenever you make a change to your account that could impact your deliverability, such as adding a new dedicated sending [IP address]({{root_url}}/Glossary/ip_address.html), SendGrid will automatically update your DNS settings and your DKIM signature.
 
-**SendGrid will always provide you with a custom DKIM signature. However, your custom DKIM signature is only automatically updated if you select automated security when creating your domain whitelabel. If you turn automated security OFF, you will be responsible for updating your DKIM signature whenever you make a change to your sending domain.**
+**SendGrid will always provide you with a custom DKIM signature. However, your custom DKIM signature is only automatically updated if you select automated security when authenticating your domain. If you turn automated security OFF, you will be responsible for updating your DKIM signature whenever you make a change to your sending domain.**
 
 
 
@@ -41,8 +41,8 @@ Example DKIM Record: Automated Security ON
 {% codeblock %}
 
 subdomain.yourdomain.com. | CNAME | uXXXXXXX.wlXXX.sendgrid.net
-s1.domainkey.yourdomain.com. | CNAME | s1.domainkey.uXXX.wlXXX.sendgrid.net.
-s2.domainkey.yourdomain.com. | CNAME | s2.domainkey.uXXX.wlXXX.sendgrid.net.
+s1._domainkey.yourdomain.com. | CNAME | s1._domainkey.uXXX.wlXXX.sendgrid.net.
+s2._domainkey.yourdomain.com. | CNAME | s2._domainkey.uXXX.wlXXX.sendgrid.net.
 
 {% endcodeblock %}
 

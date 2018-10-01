@@ -130,9 +130,9 @@ Activating this setting allows you to specify an email address to which spam rep
 Forwarding abuse@ and postmaster@ Emails
 {% endanchor %}
 
-The email address specified in the Forward Spam mail setting may also be used to receive emails sent to abuse@ and postmaster@ role addresses if you have [properly configured your domain whitelabel]({{root_url}}/Classroom/Basics/Whitelabel/setup_domain_whitelabel.html).
+The email address specified in the Forward Spam mail setting may also be used to receive emails sent to abuse@ and postmaster@ role addresses if you have [authenticated your domain]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html).
 
-For example, if you create a valid domain whitelabel using the subdomain `sub` and root domain `example` *and* have turned on Forward Spam, any emails sent to abuse@sub.example.com or postmaster@sub.example.com will be forwarded to the email address you entered in the Forward Spam mail setting.
+For example, if you create a valid authenticated domain with a custom return path of `sub` and a root domain `example` *and* have turned on Forward Spam, any emails sent to abuse@sub.example.com or postmaster@sub.example.com will be forwarded to the email address you entered in the Forward Spam mail setting.
 
 {% anchor h3 %}
 Settings
@@ -186,7 +186,7 @@ The Spam Checker setting, is useful when your web application allows your end us
 The default threshold is 5.0 and can range between 1 and 10. The lower the number, the more strict the filtering. For example, a value of 2 will drop all but the most flawless emails, whereas 9 will only drop the spammiest of spam emails.
 {% endwarning %}
 
-We use [SpamAssassin](http://spamassassin.apache.org/full/3.4.x/doc/Mail_SpamAssassin_Conf.html#scoring_options) to process the spam checks for this filter. The default threshold is 5.0, but you can set this to any value between 1 and 10. You must provide an URL, so we will post the message to that URL. If a message is flagged as spam using this filter, it will automatically be dropped by our system and will not be delivered to the recipient.
+We use [SpamAssassin](http://spamassassin.apache.org/full/3.4.x/doc/Mail_SpamAssassin_Conf.html#scoring_options) to process the spam checks for this filter. The default threshold is 5.0, but you can set this to any value between 1 and 10. You must provide a URL, so we will post the message to that URL. If a message is flagged as spam using this filter, it will automatically be dropped by our system and will not be delivered to the recipient.
 
 {% anchor h3 %}
 Settings
