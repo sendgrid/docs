@@ -175,7 +175,7 @@ If you include the characters `'`, `"` or `&` in a subject line replacement be s
 
 HTML should contain:
 ```
-<p>Hello {{{firstName}}}</p>
+<p>Hello {{firstName}}</p>
 ```
 
 Test Data should contain:
