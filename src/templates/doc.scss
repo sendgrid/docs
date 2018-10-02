@@ -118,15 +118,12 @@ aside a.active {
 
 // custom Markdown components
 .callout {
-  padding: $scaleup-4;
+  padding: $scaleup-3 $scaleup-4;
   margin: $scaleup-4 0;
   position: relative;
 
   &::before {
     display: block;
-    position: absolute;
-    top: $scaleup-1;
-    left: $scaleup-4;
     text-transform: uppercase;
     @include colfax(600);
     font-size: $scaledown-1;
@@ -134,8 +131,12 @@ aside a.active {
   }
 }
 
-.callout > p {
+.callout p {
   margin: $scaledown-3 0;
+}
+
+.callout p:last-child {
+  margin-bottom: 0;
 }
 
 .callout--info {

@@ -8,6 +8,23 @@
   border-radius: $border-radius;
   box-shadow: 8px 10px 0 0 rgba($sg-blue, 0.1);
 
+  h2,
+  p,
+  .card-icon {
+    flex-basis: 100%;
+  }
+
+  // bump icon font-size if placed inline w/ title
+  h2 .sg-icon {
+    margin-right: 6px;
+    font-size: 27px;
+    vertical-align: text-bottom;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
   &__inner {
     flex: 1 1 auto;
   }
@@ -120,23 +137,6 @@
       font-size: 20px;
       color: $slate-60;
     }
-  }
-
-  h2,
-  p,
-  .card-icon {
-    flex-basis: 100%;
-  }
-
-  // bump icon font-size if placed inline w/ title
-  h2 .sg-icon {
-    margin-right: 6px;
-    font-size: 27px;
-    vertical-align: text-bottom;
-  }
-
-  p {
-    margin-bottom: 20px;
   }
 
   .card-icon {
