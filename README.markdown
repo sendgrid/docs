@@ -354,11 +354,11 @@ If you are working on API reference docs, you can generate XML and JSON nav tabs
 ```
 {% apiexample identifier GET http://some.endpoint.url var1=stuff&var2=junk %}
   {% response json %}
-{ "foo": "bar" }
+  { "foo": "bar" }
   {% endresponse %}
 
   {% response xml %}
-<foo>bar</foo>
+  <foo>bar</foo>
   {% endresponse %}
 {% endapiexample %}
 ```
