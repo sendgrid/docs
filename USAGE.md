@@ -75,6 +75,6 @@ Wait until you see `Server running... press ctrl-c to stop.` and browse to [http
 
 ### Run spell check
 
-``
+```
 npm run spellcheck
 ```
