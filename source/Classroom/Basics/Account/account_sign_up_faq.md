@@ -62,7 +62,7 @@ Yes. If you chose a paid plan during the initial signup form, your credit card i
 
 {% anchor h3 %}When does the trial period begin?{% endanchor h3 %} 
 
-Your 30 day trial starts as soon as you complete the initial sign up form. Not when you complete the final verification step.
+Your 30 day trial starts as soon as you complete the initial sign-up form. Not when you complete the final verification step.
 
 {% anchor h3 %}What happens after my 30 day free trial?{% endanchor h3 %}
 
