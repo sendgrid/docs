@@ -68,7 +68,7 @@ You can purchase an additional Dedicated IP Address from the IP Addresses Settin
 
 Under "Additional Options" you will find the following options:
 
-  * *Use automated IP warmup:* when checked, SendGrid will gradually increase the amount of email sent over this IP. Note: It is best practice to [warm an IP address]({{root_url}}/Classroom/Deliver/Delivery_Introduction/warming_up_ips.html) over time before sending fully over that IP address. When using automated warm up, you must have at least one other warm IP that can handle the overflow traffic from the IP in warmup.
+  * *Use automated IP warmup:* when checked, SendGrid will gradually increase the amount of email sent over this IP. Note: It is best practice to [warm an IP address]({{root_url}}/Classroom/Deliver/Delivery_Introduction/warming_up_ips.html) over time before sending fully over that IP address. When using automated warmup, you must have at least one other warm IP that can handle the overflow traffic from the IP in warmup.
   * *Allow my parent account to send mail using these IP addresses:* check this if you want your parent account to be able to send over this IP. If you are assigning this IP to a subuser and only want that subuser to have permission to send on this IP, leave this box unchecked.
   * *Allow my subusers to send mail using these IP addresses:* check this to select which subusers can send on this IP address
 
@@ -91,7 +91,7 @@ The following are some third party tools available to assist you in maintaining 
 * [Return Path](https://returnpath.com/request-a-demo-social/?sfdc=701000000006Za6&gclid=CIO88sevkcwCFRSPfgod6u8AXA)
 * [Sender Score](https://www.senderscore.org/blacklistlookup/)
 
-In addition, SendGrid does offer [Delivery Consultation](https://sendgrid.com/marketing/delivery-consult/) services to Pro and Premier accounts that can help with deliverability and on-boarding. Services include how to maintain/improve domain and IP reputation, reviewing message content, dedicated IP configuration, and creating a custom IP warm-up plan just to name a few.
+In addition, SendGrid does offer [Delivery Consultation](https://sendgrid.com/marketing/delivery-consult/) services to Pro and Premier accounts that can help with deliverability and on-boarding. Services include how to maintain/improve domain and IP reputation, reviewing message content, dedicated IP configuration, and creating a custom IP warmup plan just to name a few.
 
 {% anchor h2 %}
 Warming Up a Dedicated IP Address
