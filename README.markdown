@@ -8,7 +8,7 @@
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./license)
 [![Open Source Helpers](https://www.codetriage.com/sendgrid/docs/badges/users.svg)](https://www.codetriage.com/sendgrid/docs)
 
-This site is based on Octopress, which in turn is based on Jekyll, with a dash of Twitter Bootstrap added.
+This site is based on Octopress, which in turn is based on Jekyll, with a dash of Bootstrap added.
 
 The develop branch is continuously deployed to a preview site. [View dev site](http://d2w67tjf43xwdp.cloudfront.net/)
 
@@ -168,7 +168,7 @@ to install build tools.
 
 	`$ npm install -g bower`
 
-* Install client-side dependencies (jQuery, bootstrap)
+* Install client-side dependencies (jQuery, Bootstrap)
 
 	`$ bower install`
 
@@ -298,7 +298,7 @@ navigation:
 ---
 ```
 
-Weights are same as the folder weights - the higher numbers move higher up the tree. Icons are based on the CSS icon class names from Twitter Bootstrap. showTitle and navigation["show"] both default to true if not specified.
+Weights are same as the folder weights - the higher numbers move higher up the tree. Icons are based on the CSS icon class names from Bootstrap. showTitle and navigation["show"] both default to true if not specified.
 
 <a name="seo"></a>
 #### SEO

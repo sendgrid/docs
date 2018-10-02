@@ -37,11 +37,11 @@ curl -X "GET" "https://api.sendgrid.com/v3/templates" -H "Authorization: Bearer 
 On-Behalf of Subuser
 {% endanchor %}
 
-The on-behalf-of header allows you to make calls for a particular subuser through the parent account; this can be useful for automating bulk updates or administering a subuser without changing authentication in your code. In the header you are passing, you will simply need to add: `On-Behalf-Of: subuser_username`
+The On-Behalf-Of header allows you to make calls for a particular subuser through the parent account; this can be useful for automating bulk updates or administering a subuser without changing authentication in your code. In the header you are passing, you will simply need to add: `On-Behalf-Of: subuser_username`
 
 This will generate the api call as if it was the subuser account itself making the call. Just make sure you are using the correct subuser username.
 
-When authenticating using the on-behalf-of header, you will need to use the API key credentials of the parent account.
+When authenticating using the On-Behalf-Of header, you will need to use the API key credentials of the parent account.
  
 {% anchor h3 %}
 Using API Key:
@@ -54,9 +54,9 @@ curl -X GET \
 
    -H 'authorization: Bearer API Key' \
 
-   -H 'on-behalf-of: subuser_username' \
+   -H 'On-Behalf-Of: subuser_username' \
 {% endcodeblock %}
 
  {% warning %}  
- Please note: The on-behalf-of header will not work with the `mail.send` API.
+ Please note: The On-Behalf-Of header will not work with the `mail.send` API.
  {% endwarning %}  
