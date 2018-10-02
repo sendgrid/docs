@@ -15,7 +15,7 @@ Below are some email deliverability tips and tricks from leading industry expert
 
 Satisfying each of the below conditions is a great step toward resolving current or potential issues with email deliverability such as spam folder delivery or blacklisting.
 
- ### 	Who, What, When, Where, Why.
+ ## 	Who, What, When, Where, Why
 
 First and foremost, ask yourself this question:
 
