@@ -5,7 +5,7 @@ title: Node.js
 navigation:
   show: true
 ---
-{% github sendgrid/sendgrid-nodejs#usage Node.js %} We recommend using SendGrid Node.js, our client library, <a href="https://github.com/sendgrid/sendgrid-nodejs">available on Github</a>, with full documentation. {% endgithub %}
+{% github sendgrid/sendgrid-nodejs#usage Node.js %} We recommend using SendGrid Node.js, our client library, <a href="https://github.com/sendgrid/sendgrid-nodejs">available on GitHub</a>, with full documentation. {% endgithub %}
 
 {% info %}
 Do you have an [API Key](https://app.sendgrid.com/settings/api_keys) yet? If not, go get one. You're going to need it to integrate!

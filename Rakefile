@@ -67,7 +67,7 @@ end
 # Added by SendGrid #
 #####################
 
-desc "Rewrite all github style backtick code blocks with more explicit codeblocks"
+desc "Rewrite all GitHub style backtick code blocks with more explicit codeblocks"
 task :codeblocks do
   htmlfiles = File.join("**", "source", "**", "*.html")
 

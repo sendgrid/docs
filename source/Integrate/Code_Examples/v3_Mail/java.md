@@ -5,7 +5,7 @@ title: Java
 navigation:
   show: true
 ---
-{% github sendgrid/sendgrid-java#usage Java %} We recommend using SendGrid Java, our client library, <a href="https://github.com/sendgrid/sendgrid-java">available on Github</a>, with full documentation. {% endgithub %}
+{% github sendgrid/sendgrid-java#usage Java %} We recommend using SendGrid Java, our client library, <a href="https://github.com/sendgrid/sendgrid-java">available on GitHub</a>, with full documentation. {% endgithub %}
 
 {% info %}
 Do you have an [API Key](https://app.sendgrid.com/settings/api_keys) yet? If not, go get one. You're going to need it to integrate!

@@ -20,7 +20,7 @@ Password Do’s
 Password Don'ts
 - Don’t use the same password for multiple sites. Vary your passwords whenever possible.
 - Don’t use easily guessable words or phrases such as personal information, your company name, or abbreviations.
-- Don’t expose your password on public repositories like Github, in the notes in the HTML on web pages, or on social media.
+- Don’t expose your password on public repositories like GitHub, in the notes in the HTML on web pages, or on social media.
 
 **2) Don’t let web browsers automatically save your SendGrid password.**
 

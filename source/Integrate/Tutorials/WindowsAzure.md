@@ -292,4 +292,4 @@ Now you can make some adjustments to the interface:
 
 Your project in XCode should look like the above screenshot. When you run the iPhone app, you should be able to see requested songs and add your own songs to the shared playlist.
 
-The code for this tutorial is available at our [Github page](https://github.com/sendgrid/sendgrid-azure-ios/). Enjoy!
+The code for this tutorial is available at our [GitHub page](https://github.com/sendgrid/sendgrid-azure-ios/). Enjoy!

@@ -73,7 +73,7 @@ module Jekyll
       end
       url = 'https://github.com/' + @path
       source += '<meta itemprop="codeRepository" content="' + url + '">'
-      source += '<p class="link"><a href="' + url + '">View on Github &raquo;</a></p>'
+      source += '<p class="link"><a href="' + url + '">View on GitHub &raquo;</a></p>'
       source += '</div>'
       
       source

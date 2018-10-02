@@ -7,7 +7,7 @@ navigation:
 ---
 
 {% github sendgrid/sendgrid-python#example Python %}
-We recommend using SendGrid Python, our client library, <a href="https://github.com/sendgrid/sendgrid-python">available on Github</a>, with full documentation.
+We recommend using SendGrid Python, our client library, <a href="https://github.com/sendgrid/sendgrid-python">available on GitHub</a>, with full documentation.
 {% endgithub %}
 
 {% info %}

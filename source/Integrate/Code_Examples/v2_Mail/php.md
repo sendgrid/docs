@@ -9,7 +9,7 @@ seo:
 navigation:
   show: true
 ---
-{% github sendgrid/sendgrid-php#usage PHP %} We recommend using SendGrid PHP, our client library, <a href="https://github.com/sendgrid/sendgrid-php">available on Github</a>, with full documentation. {% endgithub %} 
+{% github sendgrid/sendgrid-php#usage PHP %} We recommend using SendGrid PHP, our client library, <a href="https://github.com/sendgrid/sendgrid-php">available on GitHub</a>, with full documentation. {% endgithub %} 
 
 {% info %}
 The library does not officially support the V2 API, but you can use V2 with an older version of the library. For more information, see [Continue Using V2 in PHP](https://github.com/sendgrid/sendgrid-php/blob/master/TROUBLESHOOTING.md#v2).

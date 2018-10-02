@@ -6,7 +6,7 @@ navigation:
   show: true
 ---
 
-{% github sendgrid/sendgrid-ruby#usage PHP %} We recommend using SendGrid Ruby, our client library, <a href="https://github.com/sendgrid/sendgrid-ruby">available on Github</a>, with full documentation. {% endgithub %}
+{% github sendgrid/sendgrid-ruby#usage PHP %} We recommend using SendGrid Ruby, our client library, <a href="https://github.com/sendgrid/sendgrid-ruby">available on GitHub</a>, with full documentation. {% endgithub %}
 
 {% info %}
 Do you have an [API Key](https://app.sendgrid.com/settings/api_keys) yet? If not, go get one. You're going to need it to integrate!

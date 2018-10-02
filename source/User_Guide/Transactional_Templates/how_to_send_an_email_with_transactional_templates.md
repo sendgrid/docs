@@ -34,7 +34,7 @@ Design a dynamic transactional template
 1. Select an editor and click **Continue**.
 1. Design your template. For more information on using Handlebars, see [Using handlebars]({{root_url}}/User_Guide/Transactional_Templates/Using_handlebars.html).
 
-For sample templates that that include examples of receipts, password resets, account activations, newsletters, and sale notifications, check out the [dynamic-template section of our email templates github repo](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates).
+For sample templates that that include examples of receipts, password resets, account activations, newsletters, and sale notifications, check out the [dynamic-template section of our email template's GitHub repo](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates).
 
 The cURL calls on this page use the [receipt example template](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates/receipt).
 

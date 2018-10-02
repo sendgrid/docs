@@ -57,7 +57,7 @@ Creating an API key
 1. Select **Full Access**, **Restricted Access**, or **Billing Access**.
 1. If you're selecting **Restricted Access**, or **Billing Access**, select the specific permissions to give each category. For more information, see [API key permissions](#-API-key-permissions).
 1. Click `Create a Key`.
-1. Copy your API Key somewhere safe. For security reasons, do not put it directly in your code, or commit it somewhere like Github.
+1. Copy your API Key somewhere safe. For security reasons, do not put it directly in your code, or commit it somewhere like GitHub.
 
 {% warning %}
 You will only be shown your API key one time. Please store it somewhere safe as we will not be able to retrieve or restore it.
