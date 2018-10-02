@@ -55,7 +55,7 @@ This transactional template is using this helper:
 
 - [Substitution](#substitution)
 
- ### 	Muliple languages
+ ### 	Multiple languages
 
 This is an [example template that lets you have content in multiple languages](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates/different-languages).
 
@@ -167,9 +167,15 @@ Resulting replacement:
 
  ### 	Replacement with HTML
 
+<call-out type="warning">
+
+If you include the characters `'`, `"` or `&` in a subject line replacement be sure to use three brackets like below.
+
+</call-out>
+
 HTML should contain:
 ```
-<p>Hello {{{firstName}}}</p>
+<p>Hello {{firstName}}</p>
 ```
 
 Test Data should contain:
