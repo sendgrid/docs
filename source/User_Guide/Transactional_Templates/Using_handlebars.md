@@ -123,6 +123,7 @@ Substitution
 There are four main types of substitutions:
 
 - [Basic replacement](#-Basic-replacement)
+- [Text only replacement](#-Text-only-replacement)
 - [Deep object replacement](#-Deep-object-replacement)
 - [Object failure](#-Object-failure)
 - [Replacement with HTML](#-Replacement-with-HTML)
@@ -144,6 +145,27 @@ Test Data should contain:
 Resulting replacement:
 {% codeblock %}
 {% raw %}<p>Hello Ben</p>{% endraw %}
+{% endcodeblock %}
+
+{% anchor h4 %}
+Text only replacement
+{% endanchor %}
+
+This is useful for subject line replacement, as the subject line doesn't process HTML encoding (i.e. an apostrophe would encode as &apos;).
+
+Subject line should contain:
+{% codeblock %}
+{% raw %}{{{subject}}}{% endraw %}
+{% endcodeblock %}
+
+Test Data should contain:
+{% codeblock %}
+{"subject":"James' Artisanal \"Cheeses\""}
+{% endcodeblock %}
+
+Resulting subject line replacement:
+{% codeblock %}
+{% raw %}James' Artisanal "Cheeses"{% endraw %}
 {% endcodeblock %}
 
 {% anchor h4 %}
