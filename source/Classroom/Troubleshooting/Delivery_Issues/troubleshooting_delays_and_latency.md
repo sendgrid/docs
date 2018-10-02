@@ -2,7 +2,7 @@
 seo:
   title: Troubleshooting Delays and Latency
   description: Troubleshooting Delays and Latency
-  keywords: down, outage, latency, header, intermittant, trace, ping, wireshark, traceroute, hop, node, slowness, having issues?, delivering, after, mins, minutes, seconds, ms, miliseconds, slow, delay, hours, delays
+  keywords: down, outage, latency, header, intermittent, trace, ping, wireshark, traceroute, hop, node, slowness, having issues?, delivering, after, mins, minutes, seconds, ms, milliseconds, slow, delay, hours, delays
 title: Troubleshooting Delays and Latency
 weight: 0
 layout: page

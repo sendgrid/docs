@@ -53,7 +53,7 @@
         };
         
         // Sample Function, Uncomment to use
-        // base.functionName = function(paramaters){
+        // base.functionName = function(parameters){
         // 
         // };
         

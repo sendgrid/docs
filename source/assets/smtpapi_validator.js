@@ -2517,7 +2517,7 @@ Url.prototype.resolveObject = function(relative) {
     if (psychotic) {
       result.hostname = result.host = srcPath.shift();
       //occationaly the auth can get stuck only in host
-      //this especialy happens in cases like
+      //this especially happens in cases like
       //url.resolveObject('mailto:local1@domain1', 'local2@domain2')
       var authInHost = result.host && result.host.indexOf('@') > 0 ?
                        result.host.split('@') : false;
@@ -2599,7 +2599,7 @@ Url.prototype.resolveObject = function(relative) {
     result.hostname = result.host = isAbsolute ? '' :
                                     srcPath.length ? srcPath.shift() : '';
     //occationaly the auth can get stuck only in host
-    //this especialy happens in cases like
+    //this especially happens in cases like
     //url.resolveObject('mailto:local1@domain1', 'local2@domain2')
     var authInHost = result.host && result.host.indexOf('@') > 0 ?
                      result.host.split('@') : false;
@@ -2674,7 +2674,7 @@ $(function() {
   var failAlert = document.getElementById("failAlert");
   successAlert.style.display = failAlert.style.display = "none";
 
-  // Perfom check
+  // Perform check
   document.getElementById("validate_headers").onclick = function (e) {
     successAlert.style.display = failAlert.style.display = "none";
     successAlert.innerHTML = failAlert.innerHTML = "";

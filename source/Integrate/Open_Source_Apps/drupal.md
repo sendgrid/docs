@@ -13,11 +13,11 @@ Using the SendGrid Integration Module
 
 The SendGrid Integration Module uses the SendGrid API webservices to send email. It does not use SMTP. Depending on the workload of your website, this could be of benefit to you in performance. This module also provides charts for reports of vital statistics. The module does require an advanced knowledge of Drupal in order to install and setup. Usage of Drush is required.
 
-Download and install the [SendGrid Integration Module](https://www.drupal.org/project/sendgrid_integration "SendGrid Integration Module") from Drupal.org and perform updates via Drush with Composer Manger.
+Download and install the [SendGrid Integration Module](https://www.drupal.org/project/sendgrid_integration "SendGrid Integration Module") from Drupal.org and perform updates via Drush with Composer Manager.
 
 Once installed access `admin/config/services/sendgrid` to configure your API credentials.
 
-For detailed instructions, please refer to the [module documenation](http://cgit.drupalcode.org/sendgrid_integration/tree/README.md).
+For detailed instructions, please refer to the [module documentation](http://cgit.drupalcode.org/sendgrid_integration/tree/README.md).
 
 
 {% anchor h2 %}

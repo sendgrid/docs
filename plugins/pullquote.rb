@@ -6,7 +6,7 @@
 #
 #   {% pullquote %}
 #     When writing longform posts, I find it helpful to include pullquotes, which help those scanning a post discern whether or not a post is helpful.
-#     It is important to note, {" pullquotes are merely visual in presentation and should not appear twice in the text. "} That is why it is prefered
+#     It is important to note, {" pullquotes are merely visual in presentation and should not appear twice in the text. "} That is why it is preferred
 #     to use a CSS only technique for styling pullquotes.
 #   {% endpullquote %}
 #   ...will output...
@@ -14,7 +14,7 @@
 #     <span data-pullquote="pullquotes are merely visual in presentation and should not appear twice in the text.">
 #       When writing longform posts, I find it helpful to include pullquotes, which help those scanning a post discern whether or not a post is helpful.
 #       It is important to note, pullquotes are merely visual in presentation and should not appear twice in the text. This is why a CSS only approach
-#       for styling pullquotes is prefered.
+#       for styling pullquotes is preferred.
 #     </span>
 #   </p>
 #

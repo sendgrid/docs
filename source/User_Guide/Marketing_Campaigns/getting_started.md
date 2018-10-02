@@ -12,7 +12,7 @@ seo:
 
 <iframe src="https://player.vimeo.com/video/221496578" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-If you want to send email programatically, see the [API reference]({{root_url}}/API_Reference/api_v3.html), or the [SMTP Reference]({{root_url}}/API_Reference/SMTP_API/using_the_smtp_api.html).
+If you want to send email programmatically, see the [API reference]({{root_url}}/API_Reference/api_v3.html), or the [SMTP Reference]({{root_url}}/API_Reference/SMTP_API/using_the_smtp_api.html).
 
 Before sending your first campaign, you need to do the following:
 

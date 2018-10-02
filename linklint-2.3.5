@@ -421,7 +421,7 @@ Site Checking:
   -skip linkset     Don't check html files that match linkset.
   -ignore linkset   Ignore all files matching linkset.
   -limit n          Only check up to n html files (default 500).
-  -map /a[=/b]      Subsitute leading /a with /b (for serverside image maps).
+  -map /a[=/b]      Substitute leading /a with /b (for serverside image maps).
   -local linkset    Always get files that match linkset locally.
   -no_warn_index    Don't create "index file not found" warnings
   -http_header xxx  Specifically add header "xxx" to all HTTP requests
@@ -1521,7 +1521,7 @@ TAG:
         }
     }
 
-    $/ = "\n";          # reset line seperator to "\n"
+    $/ = "\n";          # reset line separator to "\n"
     $DbP or return;    
     print '=' x 60 , "\n\n";
     $ErrTag = '';
@@ -1942,7 +1942,7 @@ sub PrintOutput
 #     doc files, summary, and summary file. Passes globals to OpenDoc(),
 #     PrintLISTS() and PrintList().
 # where to print:
-#     $DocDir    send output to seperate files in $DocDir.
+#     $DocDir    send output to separate files in $DocDir.
 # summarize:
 #     $DOCHEAD   add filenames to headers.
 #     $SUM       1: summary form, 2: summarize printLISTS to one line
@@ -2005,7 +2005,7 @@ sub OpenDoc
     $DOCFILES++;                        # count files created
     $DOCFILES{$DOCFILE} = $htmlfile;    # keep a list of .txt files
     select(DOC);                        # print's will default to DOC
-    print "file: $DOCFILE\n";           # indentify filename
+    print "file: $DOCFILE\n";           # identify filename
     print &Preamble;                    # print a file header
 }
 
@@ -2193,7 +2193,7 @@ sub HtmlDoc
 #--------------------------------------------------------------------------
 # TimeStr($gmt, $time)
 #
-#     Returns a string formated "weekday, month day year hh:mm:ss"
+#     Returns a string formatted "weekday, month day year hh:mm:ss"
 #--------------------------------------------------------------------------
 
 sub TimeStr
@@ -2757,7 +2757,7 @@ sub Regular
 #
 #     Fills $out with regular exppression made out that is the or'ed
 #     of the the specs in @in. Fills %out with all of the keys
-#     that were literal expresions.
+#     that were literal expressions.
 #--------------------------------------------------------------------------
 
 sub LinkSet
@@ -3197,7 +3197,7 @@ sub OpenCache
 #--------------------------------------------------------------------------
 # FlushCache(@valid)
 #
-#     Removes all entrys in StatCache that do not also occur in *valid
+#     Removes all entries in StatCache that do not also occur in *valid
 #--------------------------------------------------------------------------
 
 sub FlushCache
@@ -3491,7 +3491,7 @@ sub Recheck
 #     Returns:
 #        -10  if access is excluded by robots.txt
 #          0  if access is allowed
-#        < 0  if < 0 (non-http) error occured
+#        < 0  if < 0 (non-http) error occurred
 #--------------------------------------------------------------------------
 
 sub Disallowed
@@ -3523,7 +3523,7 @@ sub Disallowed
     s/\r\n?/\n/g;                 # end-of-line = \r | \n | \r\n
     @DATA = split(/\n/, $_);
     local(@agents, @disallow);
-    push(@DATA, " ");             # ensure last group gets proccessed
+    push(@DATA, " ");             # ensure last group gets processed
     foreach (@DATA) {
         next if /^\s*#/;
         s/\s+$//;

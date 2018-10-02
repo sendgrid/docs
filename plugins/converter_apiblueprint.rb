@@ -564,7 +564,7 @@ class BluePrintHTML < Redcarpet::Render::HTML
       debug "\t Desc+Example: " + description
     end
 
-    # liquidexample --- {% parameter :identifer :required :requirements :description %}
+    # liquidexample --- {% parameter :identifier :required :requirements :description %}
     debug "\t{% parameter #{identifier} #{parameter_req} \"#{requirements}\" \"#{description}\" %}\n"
     debug "\t TEST "
     debug @@param_string

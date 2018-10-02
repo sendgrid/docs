@@ -13,5 +13,5 @@ navigation:
 
 Adding a physical mailing address to the footer of your messages is not only a good sending practice, but it's also required by law. The CANSPAM act of 2003 states that all commercial messages _must_ " **include a valid physical postal address of the sender.**" 
 
-Keep in mind that while you are not required to include your physical mailing address in transactional messages, it wont hurt your deliverability and it shows your accountability to your brand. 
+Keep in mind that while you are not required to include your physical mailing address in transactional messages, it won't hurt your deliverability and it shows your accountability to your brand. 
 

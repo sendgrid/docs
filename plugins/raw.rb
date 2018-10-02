@@ -16,7 +16,7 @@ end
 
 # Author: phaer, https://github.com/phaer
 # Source: https://gist.github.com/1020852
-# Description: Raw tag for jekyll. Keeps liquid from parsing text betweeen {% raw %} and {% endraw %}
+# Description: Raw tag for jekyll. Keeps liquid from parsing text between {% raw %} and {% endraw %}
 
 module Jekyll
   class RawTag < Liquid::Block

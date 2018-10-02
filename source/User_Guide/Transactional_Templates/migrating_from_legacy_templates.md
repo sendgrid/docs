@@ -24,7 +24,7 @@ The original template you copy won't be modified and remains active in any API o
 1. Select **Copy as New Template**. 
 1. Give the template a new name and click **Copy as New Template**. 
 1. Once the template is successfully copied over, click **Continue**. The template opens in the editor and you are prompted to replace any existing substitution tags with handlebars syntax. 
-1. To replace any existing substitution tags, click **Replace your subsitution tags**. 
+1. To replace any existing substitution tags, click **Replace your substitution tags**. 
 1. Enter the opening and closing characters of your substition tags and click **Replace**. 
 1. The module replaces all of the substitution tags in your template with handlebars. 
    For example,{% raw %}{{your_tag_here}}{% endraw %}. 
