@@ -32,9 +32,9 @@ Open your modules page, find the SMTP module, and configure it with the followin
 
 -   **SMTP Server** - smtp.sendgrid.net
 -   **SMTP Port** - 587
--   **Use Encrypted Protocol** - No. If you want encryption choose "Use SSL" and set SMTP Port to 465
--   **Username** - SendGrid Username
--   **Password** - SendGrid Password
+-   **Use Encrypted Protocol** - Use TLS
+-   **Username** - "apikey"
+-   **Password** - Valid SendGrid API Key
 
 ![]({{root_url}}/images/drupal_2.png "SMTP Module Configuration")
 
