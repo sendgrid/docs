@@ -354,7 +354,7 @@ Sets subuser's <code>active</code> flag to <code>1</code>. Allows subuser to sen
 {% anchor h2 %}
 Disable Website Access To A Subuser
 {% endanchor %}
-Disallow a subuser to login to the SendGrid website. Does not affect email sending permissions.
+Disallow a subuser to log in to the SendGrid website. Does not affect email sending permissions.
 
 {% parameters disablewebsite %}
  {% parameter user Yes 'Subuser must be under your account' 'Subuser to disable website access' %}
@@ -380,7 +380,7 @@ Disallow a subuser to login to the SendGrid website. Does not affect email sendi
 {% anchor h2 %}
 Enable Website Access To A Subuser
 {% endanchor %}
-Allow a subuser to login to the SendGrid website. Does not affect email sending permissions. New subusers are enabled by default.
+Allow a subuser to log in to the SendGrid website. Does not affect email sending permissions. New subusers are enabled by default.
 
 {% parameters enablewebsite %}
  {% parameter user Yes 'Subuser must be under your account' 'Subuser to enable website access' %}

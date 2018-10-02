@@ -232,7 +232,7 @@ This prevents them from sending out emails with SendGrid.
 {% anchor h2 %}
 Enable Website Access To A Customer
 {% endanchor %}
-Allow a customer to login to the SendGrid.com website. This call will not enable the customer from sending out emails.
+Allow a customer to log in to the SendGrid.com website. This call will not enable the customer from sending out emails.
 
 {% parameters website %}
  {% parameter 'user' 'Yes' 'Must be a customer registered under your account.' 'The customer you are planning to grant website access' %}
@@ -259,7 +259,7 @@ Allow a customer to login to the SendGrid.com website. This call will not enable
 {% anchor h2 %}
 Disable Website Access To A Customer
 {% endanchor %}
-Disallow a customer to login to the SendGrid.com website. This call will not prevent them from sending out emails.
+Disallow a customer to log in to the SendGrid.com website. This call will not prevent them from sending out emails.
 
 {% parameters unwebsite %}
  {% parameter 'user' 'Yes' 'Must be a customer registered under your account.' 'The customer you are planning to disallow website access' %}
@@ -352,7 +352,7 @@ Passwords are encrypted by default and therefore cannot be retrieved; however, y
 {% anchor h2 %}
 Update Customer Username
 {% endanchor %}
-Note that your customer account username is used to login to our SMTP server *and* the website and changes take effect immediately.
+Note that your customer account username is used to log in to our SMTP server *and* the website and changes take effect immediately.
 
 {% parameters name %}
  {% parameter 'task' 'Yes' 'Must be set to **setUsername**' 'This will let us know you want to update your customers username. This is the new username your customer will be authenticating with our SMTP servers *and* to access the website. This update takes effect immediately' %}

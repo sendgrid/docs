@@ -659,7 +659,7 @@ This prevents them from sending out emails with SendGrid.
 Enable Website Access To A Customer
 {% endanchor %}
 
-Allow a customer to login to the SendGrid.com website. This call will not enable the customer from sending out emails.
+Allow a customer to log in to the SendGrid.com website. This call will not enable the customer from sending out emails.
 
 <table class="table table-bordered table-striped">
    <thead>
@@ -757,7 +757,7 @@ Allow a customer to login to the SendGrid.com website. This call will not enable
 Disable Website Access To A Customer
 {% endanchor %}
 
-Disallow a customer to login to the SendGrid.com website. This call will not prevent them from sending out emails.
+Disallow a customer to log in to the SendGrid.com website. This call will not prevent them from sending out emails.
 
 <table class="table table-bordered table-striped">
    <thead>
@@ -1135,7 +1135,7 @@ Passwords are encrypted by default and therefore cannot be retrieved; however, y
 Update Customer Username
 {% endanchor %}
 
-Note that your customer account username is used to login to our SMTP server *and* the website and changes take effect immediately.
+Note that your customer account username is used to log in to our SMTP server *and* the website and changes take effect immediately.
 
 <table class="table table-bordered table-striped">
    <thead>
