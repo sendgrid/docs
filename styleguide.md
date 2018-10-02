@@ -2,8 +2,8 @@ Hello! Thank you for choosing to help contribute to the SendGrid documentation s
 
 * [Style](#style)
     * [Numbers](#numbers)
-    * [About Additional Resources](#about-additional-resources)
-    * [Cross References](#cross-references)
+    * [About additional resources](#about-additional-resources)
+    * [Cross references](#cross-references)
 * [Terminology](#terminology)
 * [Punctuation](#punctuation)
 * [Capitalization](#capitalization)
@@ -42,7 +42,7 @@ YES: “SendGrid offers 10 templates in Marketing Campaigns.”
 YES: “Ten templates are included in Marketing Campaigns.”
 
 <a name="cross references"></a>
-### Cross References
+### Cross references
 
 When referring to other pages in the documentation, make sure your link text is descriptive. 
 
@@ -50,11 +50,11 @@ YES: For more information, see [Event Webhook] documentation.
 NO: For more information, click [here].
 
 <a name="about-additional-resources"></a>
-### About Additional Resources
+### About Additional resources
 
-"Additional Resources" is an h2 section that contains three to five bullet points with links out to other closely related pages. These pages could be SendGrid blogs or docs pages with information about next steps, use cases, or other things a user should consider when they are completing the task on the page. Every page should have an additional resources page, so if it doesn't, feel free to add one!
+"Additional resources" is an h2 section that contains three to five bullet points with links out to other closely related pages. These pages could be SendGrid blogs or docs pages with information about next steps, use cases, or other things a user should consider when they are completing the task on the page. Every page should have an additional resources page, so if it doesn't, feel free to add one!
 
-Here is an example "Additional Resources" section: https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html#-Additional-Resources
+Here is an example "Additional resources" section: https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/design_editor.html#-Additional-Resources
 
 Here is example formatting:
 
