@@ -11,7 +11,7 @@ navigation:
 ---
 
 {% info %}
-Parent accounts will see aggregated stats for their account and all subuser accounts. Subuser accounts will see only their own stats.
+Parent accounts will see aggregated statistics for their account and all subuser accounts. Subuser accounts will see only their own stats.
 {% endinfo %}
 
 The Inbound Parse Webhook accepts emails on behalf of your specified hostname, parses them, and sends the headers, contents, and attachments to a URL you select. We provide you with statistics about how many emails SendGrid is parsing for you over time. You can control the graph by adjusting the [statistics filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters).

@@ -27,10 +27,10 @@ Once you send a campaign, you can view statistics related to that campaign.
 
 *To view campaign statistics from the Campaigns page:*
 
-1. Navigate to the campaign you want to view the stats for.
+1. Navigate to the campaign you want to view the statistics for.
 1. Click the name of the campaign to view the statistics, or select the action menu next to the campaign.
 
-From the campaign stats page, you will be able to see your bounces, clicks, opens, etc.
+From the campaign statistics page, you will be able to see your bounces, clicks, opens, etc.
 
 {% anchor h3 %}
 Exporting Campaign Statistics
@@ -51,13 +51,13 @@ You can export a CSV containing the statistics for multiple campaigns. This expo
 *To export statistics for multiple campaigns:*
 
 1. Navigate to the Campaigns page within Marketing Campaigns.
-1. Check the box next to each campaign that you want to include in your stats CSV.
+1. Check the box next to each campaign that you want to include in your statistics CSV.
 1. Once you’ve selected the campaigns that you want to include in your CSV, click **Export CSV**.
 
 {% info %}
 Campaigns are ordered from most to least recent.
 The CSV will include a row for each day that SendGrid has gathered statistics.
-Every stats CSV that you export will contain a row containing the totals for each column.
+Every statistics CSV that you export will contain a row containing the totals for each column.
 {% endinfo %}
 
 {% anchor h2 %}
@@ -74,7 +74,7 @@ Marketing Campaigns makes it very easy to view recipients who have either opened
 
 *To view campaign clicks and opens:*
 
-1. From the Campaigns page or the individual campaign stats page, hover over the **Unique Opens** or **Unique Clicks** stats.
+1. From the Campaigns page or the individual campaign statistics page, hover over the **Unique Opens** or **Unique Clicks** stats.
 1. Click **View Details**.
    <br>A real-time list of all recipients who either opened your campaign or clicked a link within your campaign appears.
 
@@ -84,7 +84,7 @@ Creating a Segment Based on Your Engagement Metrics
 
 *To create a segment of recipients based on who clicked within or opened one of your campaigns:*
 
-1. From the Campaigns page or the individual campaign stats page, hover over the **Unique Opens** or **Unique Clicks** stats.
+1. From the Campaigns page or the individual campaign statistics page, hover over the **Unique Opens** or **Unique Clicks** stats.
 1. Click **View Details** and then select **Create Segment**.
 
    A window opens with segmentation options. By default, the segment will contain the conditions to capture all recipients who either opened your campaign or clicked within your campaign. The segment will be given the name _“Contacts who [clicked/opened] [your campaign name]”_. You can rename this segment or modify the conditions of the segment as you wish directly in this window. For more information on segmentation, [click here]({{root_url}}/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html#-Creating-a-Segment).
@@ -100,7 +100,7 @@ In addition to creating a dynamic segment based on campaign engagement as descri
 
 *To export a list of engaged recipients:*
 
-1. From the Campaigns page or the individual campaign stats page, hover over the **Unique Opens** or **Unique Clicks** stats.
+1. From the Campaigns page or the individual campaign statistics page, hover over the **Unique Opens** or **Unique Clicks** stats.
 1. Click **View Details**.
 <br>A real-time list of all recipients who either opened your campaign, or clicked a link within your campaign appears.
 1. Click **Export CSV**.

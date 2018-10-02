@@ -11,7 +11,7 @@ navigation:
 ---
 
 {% info %}
-Parent accounts will see aggregated stats for their account and all subuser accounts. Subuser accounts will only see their own stats.
+Parent accounts will see aggregated statistics for their account and all subuser accounts. Subuser accounts will only see their own stats.
 {% endinfo %}
 
 The browser statistics report you which browsers, such as Safari, Firefox and Chrome, that your recipients use to view your email.
@@ -30,7 +30,7 @@ You can change which metrics, date, or grouping by adjusting the [statistics fil
 Figures
 {% endanchor %}
 
-The figures table gives you all of the specific counts or percentages of each event, according to how you’ve grouped your stats (day, week, or month). For example, if you wanted to see what percentage of the emails you sent were actually opened on the second week of April based on the browser, this is a great place to look.
+The figures table gives you all of the specific counts or percentages of each event, according to how you’ve grouped your statistics (day, week, or month). For example, if you wanted to see what percentage of the emails you sent were actually opened on the second week of April based on the browser, this is a great place to look.
 
 This table will refresh with new or adjusted data based on the various filters available at the top of the page. You can also choose to show actual counts or percentages, by clicking the corresponding button above and to the right of the table.
 

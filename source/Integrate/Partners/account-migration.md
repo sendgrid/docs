@@ -84,9 +84,9 @@ If you are using a dedicated IP, our support team can migrate your dedicated IP 
 Be sure to set up reverse DNS and rewarm up your transferred IP before you start sending on it in your new account. You also need to reassign it to subusers if needed.
 
 {% anchor h2 %}
-Download stats and email activity
+Download statistics and email activity
 {% endanchor %}
 
-On all of the stats pages and on the email activity page, click **Export CSV** to download your stats for your records. Your new account cannot import this data.
+On all of the statistics pages and on the email activity page, click **Export CSV** to download your statistics for your records. Your new account cannot import this data.
 
 

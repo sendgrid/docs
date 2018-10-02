@@ -18,7 +18,7 @@ Note that you can use *either* the days parameter *or* the `start_date` and `end
  {% parameter 'days' 'No' 'Must be an integer greater than 0' 'Number of days in the past to include statistics (includes today)' %}
  {% parameter 'start_date' 'No' 'Date must be in YYYY-mm-dd format and be before the end_date parameter' 'The start date to look up statistics' %}
  {% parameter 'end_date' 'No' 'Date must be in YYYY-mm-dd format and be after the start_date parameter' 'The end date to look up statistics' %}
- {% parameter 'method' 'Yes' 'Must be set to <em>stats</em>' 'Allows you to access stats functionality' %}
+ {% parameter 'method' 'Yes' 'Must be set to <em>stats</em>' 'Allows you to access statistics functionality' %}
 {% endparameters %}
 
 
@@ -154,7 +154,7 @@ Retrieve all-time totals for your customer
 {% parameters agg %}
  {% parameter 'user' 'Yes' 'Customer must be registered under your account' 'The customer we are retrieving statistics from' %}
  {% parameter 'aggregate' 'Yes' 'Must be set to 1' 'This is used to let us know that you are interested in all time totals' %}
- {% parameter 'method' 'Yes' 'Must be set to <em>stats</em>' 'Allows you to access stats functionality' %}
+ {% parameter 'method' 'Yes' 'Must be set to <em>stats</em>' 'Allows you to access statistics functionality' %}
 {% endparameters %}
 
 
@@ -210,7 +210,7 @@ Retrieve a list of all the categories used in your customers account.
 {% parameters cat %}
  {% parameter 'list' 'Yes' 'The value must be set to <em>true</em>' 'This will allow you to retrieve a list of all categories used in your customers account.' %}
  {% parameter 'user' 'Yes' 'Customer must be registered under your account' 'The customer we are retrieving category statistics from' %}
- {% parameter 'method' 'Yes' 'Must be set to <em>stats</em>' 'Allows you to access stats functionality' %}
+ {% parameter 'method' 'Yes' 'Must be set to <em>stats</em>' 'Allows you to access statistics functionality' %}
 {% endparameters %}
 
 
@@ -250,12 +250,12 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 
 
 {% parameters catstat %}
- {% parameter 'category' 'Yes' 'Must be an existing category that has statistics. You can pass in an array of categories' 'The category you will specify to retrieve detailed stats' %}
+ {% parameter 'category' 'Yes' 'Must be an existing category that has statistics. You can pass in an array of categories' 'The category you will specify to retrieve detailed statistics' %}
  {% parameter 'user' 'Yes' 'Customer must be registered under you' 'The customer we are retrieving statistics from' %}
  {% parameter 'days' 'No' 'Must be an integer greater than 0' 'Number of days in the past to include statistics (Includes today)' %}
  {% parameter 'start_date' 'No' 'Date must be in YYYY-mm-dd format and be before the end_date parameter' 'The start date to look up statistics' %}
  {% parameter 'end_date' 'No' 'Date must be in YYYY-mm-dd format and be after the start_date parameter' 'The end date to look up statistics' %}
- {% parameter 'method' 'Yes' 'Must be set to <em>stats</em>' 'Allows you to access stats functionality' %}
+ {% parameter 'method' 'Yes' 'Must be set to <em>stats</em>' 'Allows you to access statistics functionality' %}
 {% endparameters %}
 
 

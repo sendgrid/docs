@@ -20,7 +20,7 @@ Table of Contents
   - [When can I manually select the winner of an A/B test campaign?](#-When-can-I-manually-select-the-winner-of-an-AB-test-campaign)
   - [Can I change the winning criteria after sending an A/B test campaign?](#-Can-I-change-the-winning-criteria-after-sending-an-AB-test-campaign)
   - [Can I see which A/B test variation was sent to each recipient?](#-Can-I-see-which-AB-test-variation-was-sent-to-each-recipient)
-  - [Can I export raw stats for each of my A/B test variations?](#-Can-I-export-raw-stats-for-each-of-my-AB-test-variations)
+  - [Can I export raw statistics for each of my A/B test variations?](#-Can-I-export-raw-statistics-for-each-of-my-AB-test-variations)
 * [**Billing & Pricing**](#-Billing--Pricing)
   - [Where can I find my monthly invoice?](#-Where-can-I-find-my-monthly-invoice)
   - [Which contacts am I charged for?](#-Which-contacts-am-I-charged-for)
@@ -56,9 +56,9 @@ Table of Contents
   - [Why isn't my sender ID verified after clicking the verification link?](#-Why-isnt-my-sender-ID-verified-after-clicking-the-verification-link)
   - [How long is the sender ID verification link valid?](#-How-long-is-the-sender-ID-verification-link-valid)
 * [**Stats**](#-Stats)
-  - [Are stats included for email I send via SMTP and the Web API?](#-Are-stats-included-for-email-I-send-via-SMTP-and-the-Web-API)
-  - [How do I find stats for a specific campaign?](#-How-do-I-find-stats-for-a-specific-campaign)
-  - [Is there a way for me to get more stats than are shown on the UI?](#-Is-there-a-way-for-me-to-get-more-stats-than-are-shown-on-the-UI)
+  - [Are statistics included for email I send via SMTP and the Web API?](#-Are-statistics-included-for-email-I-send-via-SMTP-and-the-Web-API)
+  - [How do I find statistics for a specific campaign?](#-How-do-I-find-statistics-for-a-specific-campaign)
+  - [Is there a way for me to get more statistics than are shown on the UI?](#-Is-there-a-way-for-me-to-get-more-statistics-than-are-shown-on-the-UI)
   - [What unit of time is used for my dashboard statistics?](#-What-unit-of-time-is-used-for-my-dashboard-statistics)
   - [How do I view statistics for a specific campaign?](#-How-do-I-view-statistics-for-a-specific-campaign)
 
@@ -70,7 +70,7 @@ A/B Testing
 Where can I manually select the winner of an A/B test campaign?
 {% endanchor %}
 
-You can navigate to the campaign's stats to select a winner.
+You can navigate to the campaign's statistics to select a winner.
 
 ![]({{root_url}}/images/mc_faq_1.gif)
 
@@ -93,10 +93,10 @@ Can I see which A/B test variation was sent to each recipient?
 No, currently you cannot see which recipient received which version.
 
 {% anchor h3 %}
-Can I export raw stats for each of my A/B test variations?
+Can I export raw statistics for each of my A/B test variations?
 {% endanchor %}
 
-Yes! Simply click the "Export CSV" button on the campaign stats page. The exported CSV will contain a line of stats for each individual variation you sent.
+Yes! Simply click the "Export CSV" button on the campaign statistics page. The exported CSV will contain a line of statistics for each individual variation you sent.
 
 ![]({{root_url}}/images/mc_faq_2.png)
 
@@ -104,11 +104,11 @@ Yes! Simply click the "Export CSV" button on the campaign stats page. The export
 Can I see which links were clicked within each of my A/B test versions?
 {% endanchor %}
 
-Yes! The link tracking tab on your campaign's stats page displays your link click tracking stats for each version of your test.
+Yes! The link tracking tab on your campaign's statistics page displays your link click tracking statistics for each version of your test.
 
 ![]({{root_url}}/images/mc_faq_3.png)
 
-To see these stats, click **Campaigns** under **Marketing Campaigns** in the left hand side bar. Click the gear icon next to your A/B test campaign and select **Stats**. Scroll down until you see the section titled **Link Tracking**. Here you will find your click tracking stats for all of the links in each of your test versions.
+To see these statistics, click **Campaigns** under **Marketing Campaigns** in the left hand side bar. Click the gear icon next to your A/B test campaign and select **Stats**. Scroll down until you see the section titled **Link Tracking**. Here you will find your click tracking statistics for all of the links in each of your test versions.
 
 {% anchor h2 %}
 Billing & Pricing
@@ -238,7 +238,7 @@ Suppression groups and unsubscribe groups are the same. We refer to suppression 
 Where can I find a list of contacts who have marked one of my campaigns as spam?
 {% endanchor %}
 
-You can find a list of contacts who have marked one of your campaigns as spam by clicking [Stats](https://app.sendgrid.com/statistics) from the left hand navigation menu then filtering the results by "Spam Reports". You can apply a category to a campaign or series of campaigns to further filter these stats.
+You can find a list of contacts who have marked one of your campaigns as spam by clicking [Stats](https://app.sendgrid.com/statistics) from the left hand navigation menu then filtering the results by "Spam Reports". You can apply a category to a campaign or series of campaigns to further filter these statistics.
 
 {% warning %}
 You will not be able to see which specific campaign was marked as spam unless you assign a unique category for every campaign.
@@ -298,13 +298,13 @@ No, click tracking is permanently enabled for all links included in your campaig
 
 However, by adding the attribute `"clicktracking=off"` to the `<a>` tag of a link in one of your campaigns **before the href attribute**, you can prevent that link from being included in the link click tracking table for that campaign.
 
-Clicks on this link are still recorded under your general SendGrid stats and the aggregate Campaign stats. To learn more about click tracking in Marketing Campaigns, [click here]({{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html#-Link-Tracking).
+Clicks on this link are still recorded under your general SendGrid statistics and the aggregate Campaign statistics. To learn more about click tracking in Marketing Campaigns, [click here]({{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html#-Link-Tracking).
 
 For example, the link:
 
 `<a clicktracking="off" href="www.example.com">Example Link</a>`
 
-would not be included in the link click tracking table, but it would still be counted in your overall SendGrid stats and the aggregate click tracking stats for the campaign.
+would not be included in the link click tracking table, but it would still be counted in your overall SendGrid statistics and the aggregate click tracking statistics for the campaign.
 
 {% anchor h3 %}
 When a recipient clicks the unsubscribe link in my campaign, are they unsubscribed from all of my emails?
@@ -349,22 +349,22 @@ Stats
 {% endanchor %}
 
 {% anchor h3 %}
-Are stats included for email I send via SMTP and the SendGrid API?
+Are statistics included for email I send via SMTP and the SendGrid API?
 {% endanchor %}
 
-No, these stats are specific to the email you send over Marketing Campaigns only.
+No, these statistics are specific to the email you send over Marketing Campaigns only.
 
 {% anchor h3 %}
-How do I find stats for a specific campaign?
+How do I find statistics for a specific campaign?
 {% endanchor %}
 
 You can go into the settings menu after your campaign has started sending, and there will be a link for “Stats”.
 
 {% anchor h3 %}
-Is there a way for me to get more stats than are shown on the UI?
+Is there a way for me to get more statistics than are shown on the UI?
 {% endanchor %}
 
-You can always export a CSV of raw stats for any of your campaigns. That will include stats like CTR, total open rates, spam report rate, and more. To learn more about stats from Marketing Campaigns, [click here]({{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html#-Campaign-Statistics).
+You can always export a CSV of raw statistics for any of your campaigns. That will include statistics like CTR, total open rates, spam report rate, and more. To learn more about statistics from Marketing Campaigns, [click here]({{root_url}}/User_Guide/Marketing_Campaigns/campaigns.html#-Campaign-Statistics).
 
 Additionally, you can use [SendGrid's Event Webhook]({{root_url}}/API_Reference/Webhooks/event.html) to collect and store your Marketing Campaigns statistics.
 
@@ -372,12 +372,12 @@ Additionally, you can use [SendGrid's Event Webhook]({{root_url}}/API_Reference/
 What unit of time is used for my dashboard statistics?
 {% endanchor %}
 
-Currently, you can see your aggregate stats over all time, and the graph displayed on the Marketing Campaigns Overview page displays stats for the previous 7 days.
+Currently, you can see your aggregate statistics over all time, and the graph displayed on the Marketing Campaigns Overview page displays statistics for the previous 7 days.
 
 {% anchor h3 %}
 How do I view statistics for a specific campaign?
 {% endanchor %}
 
-Under **Marketing Campaigns** in the left hand navigation menu, select **Campaigns**. Find the campaign you want to see stats for in the list and click the action menu on the right. Click **Stats** to view statistics for that specific campaign.
+Under **Marketing Campaigns** in the left hand navigation menu, select **Campaigns**. Find the campaign you want to see statistics for in the list and click the action menu on the right. Click **Stats** to view statistics for that specific campaign.
 
 ![]({{root_url}}/images/mc_faq_9.gif)

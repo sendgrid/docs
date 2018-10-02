@@ -37,7 +37,7 @@ Getting started with Marketing Campaigns
 {% endanchor %}
 
 <p><strong><a href="https://sendgrid.com/docs/User_Guide/Marketing_Campaigns/getting_started.html">Get started creating and sending your campaign</a></strong> to modify content, choose which lists to send to, add a suppression
-group, add categories for stats tracking, and then send right away, or schedule your email to send at another time.</p> 
+group, add categories for statistics tracking, and then send right away, or schedule your email to send at another time.</p> 
 <p><iframe src="https://player.vimeo.com/video/221496578" width="700" height="400" frameborder="0" allowfullscreen=""></iframe></p> 
 
 {% anchor h3 %}
@@ -131,7 +131,7 @@ Unsubscribe groups
 Marketing Campaigns dashboard
 {% endanchor %}
 
-<p><strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/overview.html">Marketing Campaigns Dashboard</a></strong> - Your <a href="{{site.marketing_campaigns_url}}/overview">dashboard</a> will give you aggregate stats for your SendGrid Marketing Campaigns account.</p>
+<p><strong><a href="{{root_url}}/User_Guide/Marketing_Campaigns/overview.html">Marketing Campaigns Dashboard</a></strong> - Your <a href="{{site.marketing_campaigns_url}}/overview">dashboard</a> will give you aggregate statistics for your SendGrid Marketing Campaigns account.</p>
 
 <p><iframe src="https://player.vimeo.com/video/221496791" width="700" height="400" frameborder="0" allowfullscreen=""></iframe></p>
 

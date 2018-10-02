@@ -46,7 +46,7 @@ Linking your {Partner} account to your SendGrid account
 Using {Partner} to {Send}, {Track}, {Template}, {Newsletter}
 {% endanchor %}
 
-<!-- Steps for sending first email, viewing stats, creating templates, etc - this should capture the essential point of the partnership -->
+<!-- Steps for sending first email, viewing statistics, creating templates, etc - this should capture the essential point of the partnership -->
 
 *To get started:*
 

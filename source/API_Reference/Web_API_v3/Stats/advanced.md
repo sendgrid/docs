@@ -195,7 +195,7 @@ GET
 Gets email statistics for a single client type.
 
 {% parameters get %}
- {% parameter client_type Yes 'phone|tablet|webmail|desktop' 'Specifies the type of client to retrieve stats for.' %}
+ {% parameter client_type Yes 'phone|tablet|webmail|desktop' 'Specifies the type of client to retrieve statistics for.' %}
  {% parameter start_date Yes 'Date formatted as YYYY-MM-DD' 'The starting date of the statistics to retrieve' %}
  {% parameter end_date No 'Date formatted as YYYY-MM-DD' 'The end date of the statistics to retrieve. Defaults to today.' %}
  {% parameter aggregated_by No 'Must be day|week|month' 'How to group the statistics' %}

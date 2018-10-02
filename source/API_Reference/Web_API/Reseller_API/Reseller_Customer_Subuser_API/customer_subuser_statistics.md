@@ -161,7 +161,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
 
 
 {% parameters catstat %}
- {% parameter 'category' 'Yes' 'Must be an existing category that has statistics. You can pass in an array of categories' 'The category you will specify to retrieve detailed stats' %}
+ {% parameter 'category' 'Yes' 'Must be an existing category that has statistics. You can pass in an array of categories' 'The category you will specify to retrieve detailed statistics' %}
  {% parameter 'user' 'Yes' 'Customer subuser must be registered under you' 'The customer subuser we are retrieving statistics from' %}
  {% parameter 'days' 'No' 'Must be an integer greater than 0' 'Number of days in the past to include statistics (Includes today)' %}
  {% parameter 'start_date' 'No' 'Date must be in YYYY-mm-dd format and be before the end_date parameter' 'The start date to look up statistics' %}

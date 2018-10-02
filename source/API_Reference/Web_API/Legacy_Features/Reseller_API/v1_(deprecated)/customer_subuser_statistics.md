@@ -226,7 +226,7 @@ Retrieve statistics broken down by category. If the category does not exist, the
          <td>category</td>
          <td>Yes</td>
          <td>Must be an existing category that has statistics. You can pass in an array of categories</td>
-         <td>The category you will specify to retrieve detailed stats</td>
+         <td>The category you will specify to retrieve detailed statistics</td>
       </tr>
       <tr>
          <td>user</td>

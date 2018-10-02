@@ -14,4 +14,4 @@ You will notice on your [Account Overview]({{site.app_url}}) page you will see y
 
 ![Reputation Monitoring]({{root_url}}/images/reputation_monitoring_1.png)
 
-It is important to monitor your global stats on a daily basis to make sure you keep your IP reputation score high to avoid getting on [blacklists]({{root_url}}/Glossary/blacklists.html).
+It is important to monitor your global statistics on a daily basis to make sure you keep your IP reputation score high to avoid getting on [blacklists]({{root_url}}/Glossary/blacklists.html).

@@ -59,7 +59,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
             Must be set to
             <em>stats</em>
          </td>
-         <td>Allows you to access stats functionality</td>
+         <td>Allows you to access statistics functionality</td>
       </tr>
    </tbody>
 </table>
@@ -135,7 +135,7 @@ Retrieve all-time totals for your customer
             Must be set to
             <em>stats</em>
          </td>
-         <td>Allows you to access stats functionality</td>
+         <td>Allows you to access statistics functionality</td>
       </tr>
    </tbody>
 </table>
@@ -214,7 +214,7 @@ Retrieve a list of all the categories used in your customers account.
             Must be set to
             <em>stats</em>
          </td>
-         <td>Allows you to access stats functionality</td>
+         <td>Allows you to access statistics functionality</td>
       </tr>
    </tbody>
 </table>
@@ -277,7 +277,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
          <td>category</td>
          <td>Yes</td>
          <td>Must be an existing category that has statistics. You can pass in an array of categories</td>
-         <td>The category you will specify to retrieve detailed stats</td>
+         <td>The category you will specify to retrieve detailed statistics</td>
       </tr>
       <tr>
          <td>user</td>
@@ -310,7 +310,7 @@ Note that you can use *either* the days parameter *or* the start_date and end_da
             Must be set to
             <em>stats</em>
          </td>
-         <td>Allows you to access stats functionality</td>
+         <td>Allows you to access statistics functionality</td>
       </tr>
    </tbody>
 </table>
