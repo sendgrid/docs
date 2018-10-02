@@ -143,7 +143,7 @@ Not every single page or step needs an accompanying screenshot. When in doubt, f
 
 ### File format and naming:
 
-Please use .png, .gif, or .jpg files. Give the screenshots unique, meaningful names, obeying a specific format, such as general_settings_privacy. Avoid spaces, uppercase letters, and excessively long names.
+Please use PNG, GIF, or JPG files. Give the screenshots unique, meaningful names, obeying a specific format, such as general_settings_privacy. Avoid spaces, uppercase letters, and excessively long names.
 
 ### Size and resolution:
 

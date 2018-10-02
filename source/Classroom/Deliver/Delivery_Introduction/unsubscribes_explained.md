@@ -33,7 +33,7 @@ And that's all it takes! These two unsubscribe methods are the core of managing 
 
 **Downloading Unsubscribes**
 
-Global Unsubscribes can be exported as a .CSV from the [Global Unsubscribes Suppression List](https://app.sendgrid.com/suppressions/global_unsubscribes) page by clicking the gear in the top-right.
+Global Unsubscribes can be exported as a CSV file from the [Global Unsubscribes Suppression List](https://app.sendgrid.com/suppressions/global_unsubscribes) page by clicking the gear in the top-right.
 
 **Custom HTML Unsubscribes**
 

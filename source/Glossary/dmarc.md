@@ -95,7 +95,7 @@ Example: receiver.org!sender.com!1335571200!1335657599.zip
 
     <?xml version="1.0" encoding="UTF-8" ?><feedback>  <report_metadata>    <org_name>receiver.com</org_name>    <email>noreply-dmarc-support@receiver.com</email>    <extra_contact_info>http://receiver.com/dmarc/support</extra_contact_info>    <report_id>9391651994964116463</report_id>    <date_range>      <begin>1335571200</begin>      <end>1335657599</end>    </date_range>  </report_metadata>  <policy_published>    <domain>sender.com</domain>    <adkim>r</adkim>    <aspf>r</aspf>    <p>none</p>    <sp>none</sp>    <pct>100</pct>  </policy_published>  <record>    <row>      <source_ip>72.150.241.94</source_ip>      <count>2</count>      <policy_evaluated>        <disposition>none</disposition>        <dkim>fail</dkim>        <spf>pass</spf>      </policy_evaluated>    </row>    <identifiers>      <header_from>sender.com</header_from>    </identifiers>    <auth_results>      <dkim>        <domain>sender.com</domain>        <result>fail</result>        <human_result></human_result>      </dkim>      <dkim>        <domain>sender.net</domain>        <result>pass</result>        <human_result></human_result>      </dkim>      <spf>        <domain>sender.com</domain>        <result>pass</result>      </spf>    </auth_results>  </record></feedback>
 
-\*Note: Aggregate reports are sent as a .zip attachment, so be sure the address you’re defining is able to accept attachments in this file type.
+\*Note: Aggregate reports are sent as a ZIP attachment, so be sure the address you’re defining is able to accept attachments in this file type.
 
 ## 5. Escalate your DMARC policy tags from p=none to p=quarantine to p=reject as you gain experience
 

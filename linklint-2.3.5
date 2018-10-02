@@ -447,8 +447,8 @@ Output:
   -quiet            Don't print progress on screen.
   -silent           Don't print summary on screen.
   -docbase exp      Overrides defaults for linking html output back to site.
-  -textonly         Only write .txt files in -doc directory.
-  -htmlonly         Erase .txt files after .html output files are written.
+  -textonly         Only write TXT files in -doc directory.
+  -htmlonly         Erase TXT files after HTML output files are written.
   -output_frames    Have index.html open a new window when viewing data files
   -url_doc_prefix p Prefix Remote URL output files with "p" instead of "url".
   -output_index xxx Output index files will be "xxx.txt" and "xxx.html".
@@ -2003,7 +2003,7 @@ sub OpenDoc
     };
 
     $DOCFILES++;                        # count files created
-    $DOCFILES{$DOCFILE} = $htmlfile;    # keep a list of .txt files
+    $DOCFILES{$DOCFILE} = $htmlfile;    # keep a list of TXT files
     select(DOC);                        # print's will default to DOC
     print "file: $DOCFILE\n";           # identify filename
     print &Preamble;                    # print a file header

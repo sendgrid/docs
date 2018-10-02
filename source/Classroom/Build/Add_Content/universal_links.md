@@ -96,7 +96,7 @@ Example apple-app-site-association file:
 {% endcodeblock %}
 
 {% warning %}
-**Do not** append the .json file extension to your apple-app-site-association file!
+**Do not** append the JSON file extension to your apple-app-site-association file!
 {% endwarning %}
 
 {% anchor h3 %}

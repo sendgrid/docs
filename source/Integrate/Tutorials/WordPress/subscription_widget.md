@@ -42,7 +42,7 @@ Automatically Install the SendGrid Plugin from the WordPress Admin Page
 5. Navigate to **Settings**, select **SendGrid Settings**, and enter your SendGrid credentials.
 
 {% anchor h3 %}
-Manually Install the SendGrid Plugin by Uploading the SendGrid Plugin .ZIP File
+Manually Install the SendGrid Plugin by Uploading the SendGrid Plugin ZIP File
 {% endanchor %}
 
 1. Upload the WordPress SendGrid Plugin to the **/wp-contents/plugins/** folder.
@@ -138,7 +138,7 @@ For example, if you want your form to look like the following:
 
 ![]({{root_url}}/images/example_form.png)
 
-You would need to add the following to your .css file:
+You would need to add the following to your CSS file:
 
 {% codeblock lang:css %}
 .sendgrid_mc_label{
