@@ -20,7 +20,7 @@ Table of Contents
 * [Replacing an old API key with a new one](#-Replacing-an-old-API-key-with-a-new-one)
 * [Edit an API key](#-Edit-an-API-key)
 * [Testing an API key](#-Testing-an-API-key)
-* [Inactivate an API Key](#-Inactivate-an-API-key)
+* [Deactivate an API Key](#-Deactivate-an-API-key)
 
 {% anchor h2 %}
 What are API keys?
@@ -112,11 +112,11 @@ Edit an API Key
 Click the action menu in the same row as the key you would like to edit. From here you can delete a key, making it completely inactive, or you can edit your key’s name and permissions.
 
 {% anchor h2 %}
-Inactivate an API Key
+Deactivate an API Key
 {% endanchor %}
 
 {% warning %}
 Once you delete a key, it can no longer be used to access SendGrid’s services.
 {% endwarning %}
 
-Click the action menu in the same row as the key you want to inactivate. Choose “Delete.” This will delete the key permanently, making it inactive. Any subsequent API calls using this deleted API key will be rejected by SendGrid.
+Click the action menu in the same row as the key you want to deactivate. Choose “Delete.” This will delete the key permanently, making it inactive. Any subsequent API calls using this deleted API key will be rejected by SendGrid.
