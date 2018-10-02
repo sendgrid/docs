@@ -6,7 +6,8 @@ This documentation is based on our [Docs](https://github.com/sendgrid/docs/tree/
 	* [View your install](#view)
 	* [Using Docker](#using-docker)
 
-###Local setup
+<a name="local"></a>
+## Local setup
 <a name="jekyll"></a>
 ### Configure jekyll
 
