@@ -41,6 +41,6 @@ You can manage your Global Unsubscribes via the [Global Suppressions API]({{root
 
 ## 	Additional Resources
 
-- [Global unsubscribes vs. Group Unsubscribes]({{root_url}}/ui/analytics-and-reporting/subscription-tracking/)
+- [Global unsubscribes vs. Group Unsubscribes]({{root_url}}/ui/sending-email/subscription-tracking/)
 - [Group Unsubscribes]({{root_url}}/ui/sending-email/group-unsubscribes/)
 - [Invalid Emails]({{root_url}}/ui/sending-email/index-suppressions/)

@@ -443,8 +443,8 @@ You'll also see a number of System Fields that you can place in the body of your
 
 <call-out type="warning">
 
-The %asm_group_unsubscribe_raw_url%>, <%asm_preferences_raw_url%>, and <%asm_global_unsubscribe
-_raw_url%> tags are reserved for use in Transactional Templates and should not be used in Marketing Campaigns.
+The `<%asm_group_unsubscribe_raw_url%>`, `<%asm_preferences_raw_url%>`, and `<%asm_global_unsubscribe
+_raw_url%>` tags are reserved for use in Transactional Templates and should not be used in Marketing Campaigns.
 
 </call-out>
 

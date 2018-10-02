@@ -84,7 +84,7 @@ You cannot recover deleted teammates. Once a teammate has been deleted, it can n
 
 If you are already signed into a SendGrid account as a teammate, but do not have access to a page or feature, you may request access to that page by clicking **Request Access**.
 
-Once a request is made, all account administrators recieve a notification via email that a request is pending approval.
+Once a request is made, all account administrators receive a notification via email that a request is pending approval.
 
  ### 	Granting feature access
 

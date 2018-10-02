@@ -1,9 +1,9 @@
 ---
 seo:
-  title: How to use a Transactional Template with the SMTP API
-  description: Learn how to send a transactional template with the SMTP API.
-  keywords: SMTP, send email, integrate, building, filters, scheduling, substitution, suppression groups, unique arguments, recipients, transactional template
-title: How to use a Transactional Template with the SMTP API
+  title: How to use a Legacy Template with the SMTP API
+  description: Learn how to send a legacy template with the SMTP API.
+  keywords: SMTP, send email, integrate, building, filters, scheduling, substitution, suppression groups, unique arguments, recipients, legacy template
+title: How to use a legacy Template with the SMTP API
 group: smtp
 weight: 949
 layout: page
@@ -13,8 +13,14 @@ navigation:
 
 ## 	Enabling a Template
 
-To use a transactional template when you send, enable the `templates`
+To use a legacy template when you send, enable the `templates`
 filter and set the `template_id` to one of your transactional templates.
+
+<call-out type="warning">
+
+This method of sending does not support Transactional Templates. For sending Transactional Templates you need to use v3 Mail Send.
+
+</call-out>
 
 Example
 ```json
@@ -33,7 +39,7 @@ Example
 You can use this JSON in the `X-SMTPAPI` header of an SMTP message, or in
 the `x-smtpapi` parameter of a [Web API v2 mail send]({{root_url}}/API_Reference/Web_API/mail.html#-send) call.
 
-If you are using the [Web API v3 mail send endpoint]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html), you can specify which transactional template you would like to use simply by setting the template ID in the `template_id` parameter of your JSON payload.
+If you are using the [Web API v3 mail send endpoint]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html), you can specify which legacy template you would like to use simply by setting the template ID in the `template_id` parameter of your JSON payload.
 
 <call-out>
 
@@ -45,7 +51,7 @@ Make sure that the version of the template you want to use is set to active by u
 
 ## 	Body and Subject Tags
 
-Enabling a transactional template means that the `subject` and `body`
+Enabling a legacy template means that the `subject` and `body`
 content of your message will behave differently.
 
 If you want only the message's content to be displayed, populate only the token in the template's field.
