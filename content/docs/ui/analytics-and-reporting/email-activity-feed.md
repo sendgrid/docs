@@ -18,7 +18,7 @@ Higher volume users may not yet have access to the new Email Activity Feed. For 
 
 <iframe src="https://player.vimeo.com/video/259928139" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-The Email Activity feed allows you to view a snapshot of email-related activity associated with your account and any subusers. Enhanced email activity and storage gives you increased visibility into the email delivery flow of each email message to expedite the troubleshooting process.
+The Email Activity feed allows you to view a snapshot of recent email-related activity events associated with your account and any subusers. The email activity feed provides visibility into the email delivery flow of each email message to expedite the troubleshooting process. The email activity additional history add-on extends the history of email events accessible to 30-days. 
 
 With the Email Activity feed you can:
 
@@ -26,7 +26,7 @@ With the Email Activity feed you can:
 * Pinpoint specific emails easily with advanced search and filter options --including subject line and email metadata.
 * Customize your data independently with CSV download/export option.
 * Increase storage available for up to 30 days for historical visibility within the UI by purchasing an upgrade.
-* Call all events by an email from the API with additional storage purchase.
+* Call all events by an email message from the API with additional storage purchase.
 
 <call-out>
 
