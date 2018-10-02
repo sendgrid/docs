@@ -16,7 +16,7 @@ List
 
 
 {% parameters get %}
- {% parameter 'list' 'Yes' 'Must be set to <em>list</em>' %}
+ {% parameter 'task' 'Yes' 'Must be set to <em>list</em>' %}
  {% parameter 'method' 'Yes' 'Must be set to <em>whitelabel</em>' %}
 {% endparameters %}
 
