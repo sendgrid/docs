@@ -9,37 +9,37 @@ navigation:
   show: true
 ---
 
-Symfony uses SwiftMailer to send email, read more about [sending emails from Symfony](http://www.symfony-project.org/gentle-introduction/1_4/en/11-Emails).
+Symfony uses SwiftMailer to send email. Read more about sending emails from Symfony [3.x](https://symfony.com/doc/3.4/email.html) and [4.x](https://symfony.com/doc/current/email.html).
 
-To get started you need to modify parameters.yml and add the following: 
+For Symfony 3.x, to get started you need to modify config.yml and add the following: 
 
 {% codeblock %}
-mailer:
-class: sfMailer
-param:
-logging: %SF_LOGGING_ENABLED%
-charset: %SF_CHARSET%
-delivery_strategy: realtime
-transport:
-class: Swift_SmtpTransport
-param:
+swiftmailer:
+transport: '%mailer_transport%'
 host: smtp.sendgrid.net
-port: 587
-encryption: ~
 username: sendgridusername
 password: sendgridpassword
+{% endcodeblock %}
+
+For Symfony 4.x, you need to provide your mail server connection details by modifying the MAILER_URL environment variable in the .env file as follows:
+
+{% codeblock %}
+MAILER_URL=smtp://localhost:25?encryption=ssl&auth_mode=login&username=sendgridusername&password=sendgridpassword
 {% endcodeblock %}
 
 After that you should be able to send emails. The following shows an example:
 {% codeblock lang:php %}
 <?php
-$message = Swift_Message::newInstance()
-  ->setFrom('from@example.com')
-  ->setTo('to@example.com')
-  ->setSubject('Subject')
-  ->setBody('Body');
-  
-$this->getMailer()->send($message);
+public function index(Swift_Mailer $mailer)
+{
+  $message = (new Swift_Message())
+    ->setFrom('from@example.com')
+    ->setTo('to@example.com')
+    ->setSubject('Subject')
+    ->setBody('Body');
+
+  $mailer->send($message);
+}
 ?>
 {% endcodeblock %}
 
@@ -47,7 +47,7 @@ $this->getMailer()->send($message);
 {% anchor h3 %}
 Another Option 
 {% endanchor %}
-If you want more flexibility, you can use partials to define the content of the emails. Add the a class such as **lib/myEmail.class.php**. 
+If you want more flexibility, you can use partials to define the content of the emails. Add a new class such as **lib/myEmail.class.php**. 
 
 {% codeblock lang:php %}
 <?php
@@ -171,7 +171,7 @@ Dear <!--?php echo $name ?-->,
 Thank you for registering. Please go to <a href="http://domain.com">here</a> to finish your registration.
 {% endcodeblock %}
 
- And send the message as follow: 
+ And send the message as follows: 
 
 {% codeblock lang:php %}
 <?php
