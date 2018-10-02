@@ -27,7 +27,7 @@ List all of the available apps.
   {
     "name": "bcc",
     "title": "BCC",
-    "description": "Automatically BCC an address for every e-mail sent from this account.",
+    "description": "Automatically BCC an address for every email sent from this account.",
     "activated": false
   },
   {
@@ -40,7 +40,7 @@ List all of the available apps.
    ...
    <filter>
       <name>bcc</name>
-      <description>Automatically BCC an address for every e-mail sent.</description>
+      <description>Automatically BCC an address for every email sent.</description>
       <activated>0</activated>
    </filter>
    ...

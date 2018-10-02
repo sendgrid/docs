@@ -23,7 +23,7 @@ What is SMTP?
 
 [SMTP]({{root_url}}/Glossary/smtp.html), or _simple mail transfer protocol_, is a quick and easy way to send email from one server to another. SendGrid provides an SMTP service that allows you to deliver your email via our server instead of your client or server.
 
-SendGrid’s SMTP API allows developers to specify custom handling instructions for e-mail using an X-SMTPAPI header inserted into the message. The header is a JSON encoded list of instructions and options for that email.
+SendGrid’s SMTP API allows developers to specify custom handling instructions for email using an X-SMTPAPI header inserted into the message. The header is a JSON encoded list of instructions and options for that email.
 
 The X-SMTPAPI headers that you add are stripped from the final email because they are instruction headers for how SendGrid will handle your email.
 

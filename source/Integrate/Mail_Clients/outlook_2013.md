@@ -12,7 +12,7 @@ First, go to: 'File’ and then 'Account and Social Network Settings’ and clic
 
 ![]({{root_url}}/images/outlook_2013_1.png "Account Settings")
 
-The 'Account Settings’ window should appear as below; please select the account you receive e-mail through and click the 'Change’ button.
+The 'Account Settings’ window should appear as below; please select the account you receive email through and click the 'Change’ button.
 
 ![]({{root_url}}/images/outlook_2013_2.png "Change Email")
 
