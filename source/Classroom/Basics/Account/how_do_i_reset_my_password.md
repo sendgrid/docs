@@ -38,7 +38,7 @@ You can reset your password after you're logged in.
 
 Forgot your password? No problem. 
 
-1. From the Sendgrid.com  [login screen](https://sendgrid.com/marketing/login), click the "Forgot Password" link.
+1. From the SendGrid.com  [login screen](https://sendgrid.com/marketing/login), click the "Forgot Password" link.
 2. Enter the username for your account. 
 3. Follow the instructions in the email we send you. This will go to the email address we have on file for the username you entered. 
 4. We require passwords to be a minimum of 8 alpha-numeric characters, up to a maximum of 128 characters. They must also include 1 Number and 1 Letter. 

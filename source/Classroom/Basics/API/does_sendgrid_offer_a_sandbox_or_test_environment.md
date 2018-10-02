@@ -1,9 +1,9 @@
 ---
 seo:
-  title: Does Sendgrid offer a sandbox or test environment?
+  title: Does SendGrid offer a sandbox or test environment?
   description: Learn about options to help test your integrations...
   keywords: sandbox, sand, box, throughput, development, dev, staging, speed, developers, test, sandbox, environment, trial
-title: Does Sendgrid offer a sandbox or test environment?
+title: Does SendGrid offer a sandbox or test environment?
 weight: 0
 layout: page
 zendesk_id: 203891358

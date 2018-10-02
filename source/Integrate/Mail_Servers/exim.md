@@ -7,7 +7,7 @@ navigation:
 seo:
   title: Exim 4 configuration for SendGrid
   keywords: Exim Internet Mailer, Exim, Exim and SendGrid
-  description: Configuration information for Exim 4 and Sendgrid.
+  description: Configuration information for Exim 4 and SendGrid.
 ---
 
 {% warning %}

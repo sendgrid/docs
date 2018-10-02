@@ -15,7 +15,7 @@ navigation:
 - [Rate limits](#-Rate-limits)
 
 {% anchor h2 %}
-Integrating with Sendgrid
+Integrating with SendGrid
 {% endanchor %}
 
 *To integrate with SendGrids SMTP API:*

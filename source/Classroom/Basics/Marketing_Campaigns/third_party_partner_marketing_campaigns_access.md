@@ -3,10 +3,10 @@ st:
   published_at: 2016-06-07
   type: Classroom
 seo:
-  title: Why can't I access Sendgrid's Marketing Campaigns when using 3rd party services/platforms?
+  title: Why can't I access SendGrid's Marketing Campaigns when using 3rd party services/platforms?
   description: Unable to access Marketing Campaigns with another service like Heroku or Azure...
   keywords: marketing, campaigns, azure, heroku, partner,
-title: Why can't I access Sendgrid's Marketing Campaigns when using 3rd party services/platforms?
+title: Why can't I access SendGrid's Marketing Campaigns when using 3rd party services/platforms?
 weight: 0
 layout: page
 navigation:

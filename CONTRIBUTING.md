@@ -61,7 +61,7 @@ The GitHub issue tracker is the preferred channel for library feature requests, 
 <a name="improvements-to-the-codebase"></a>
 ## Improvements to the Codebase
 
-We welcome direct contributions to the sendgrid docs code base. Thank you!
+We welcome direct contributions to the SendGrid docs code base. Thank you!
 
 
 <a name="local"></a>

@@ -18,14 +18,14 @@ navigation:
 To use BriteVerify to verify your SendGrid list, you will need to generate an API Key within SendGrid. 
 
 {% warning %}
-The Sendgrid-generated key is generated and visible only once, so be sure to copy the API Key somewhere safe for future reference. 
+The SendGrid-generated key is generated and visible only once, so be sure to copy the API Key somewhere safe for future reference. 
 {% endwarning %}
 
-To get started, open the BriteVerify app and click **Import List** and then click **Sendgrid**. The app triggers the prompt to input the Sendgrid API key. This authentication is required only once to link the two applications. 
+To get started, open the BriteVerify app and click **Import List** and then click **SendGrid**. The app triggers the prompt to input the SendGrid API key. This authentication is required only once to link the two applications. 
 
 ![]({{root_url}}/images/Briteverify_Picture_01.jpeg) ![]({{root_url}}/images/Briteverify_Picture_02.jpeg)
 
-To generate the Sendgrid API key, log into your SendGrid account. On the left side of the screen, click **Settings** and then click **API Keys**.
+To generate the SendGrid API key, log into your SendGrid account. On the left side of the screen, click **Settings** and then click **API Keys**.
 
 ![]({{root_url}}/images/Briteverify_Picture_03.jpeg)
 
@@ -61,7 +61,7 @@ Copy the key then paste it in the textbox in the Briteverify app. Make sure that
 ![]({{root_url}}/images/Briteverify_Picture_09.jpeg)
 <sub>*NOTE: API KEY COVERED FOR SECURITY PURPOSES*</sub>
 
-Once the correct API Key is provided, the applications sync, and you may now verify your Sendgrid data. 
+Once the correct API Key is provided, the applications sync, and you may now verify your SendGrid data. 
 
 ![]({{root_url}}/images/Briteverify_Picture_10.jpeg)
 <sub>*THE IMPORT SCREEN AFTER API KEY HAS BEEN VERIFIED*</sub>

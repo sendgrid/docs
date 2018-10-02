@@ -27,7 +27,7 @@ Sign up for a PieSync account [here](https://app.piesync.com/).
 Select your apps
 {% endanchor %}
 
-Select Sendgrid and the app you would like to sync with from within the PieSync application.
+Select SendGrid and the app you would like to sync with from within the PieSync application.
 
 {% anchor h2 %}
 Authorize your apps
