@@ -175,8 +175,9 @@ If you include the characters `'`, `"` or `&` in a subject line replacement be s
 
 HTML should contain:
 ```
-<p>Hello {{firstName}}</p>
+<p>Hello {{{firstName}}}</p>
 ```
+> Per Handlebars' documentation: If you don't want Handlebars to escape a value, use the "triple-stash", {{{
 
 Test Data should contain:
 ```
