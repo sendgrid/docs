@@ -2513,7 +2513,7 @@ Url.prototype.resolveObject = function(relative) {
   } else if (!isNullOrUndefined(relative.search)) {
     // just pull out the search.
     // like href='?foo'.
-    // Put this after the other two cases because it simplifies the booleans
+    // Put this after the other 2 cases because it simplifies the booleans
     if (psychotic) {
       result.hostname = result.host = srcPath.shift();
       //occationaly the auth can get stuck only in host

@@ -120,7 +120,7 @@ This reference goes through examples of each helper - including HTML email snipp
 Substitution
 {% endanchor %}
 
-There are four main types of substitutions:
+There are 4 main types of substitutions:
 
 - [Basic replacement](#-Basic-replacement)
 - [Text only replacement](#-Text-only-replacement)
@@ -248,7 +248,7 @@ Resulting replacement:
 Conditional statements
 {% endanchor %}
 
-Here are three types of conditonal statements:
+Here are 3 types of conditonal statements:
 
 - [Basic If, Else, Else If](#-Basic-If--Else-Else-If)
 - [If with a root](#-If-with-a-root)
@@ -414,7 +414,7 @@ Resulting replacement:
 Combined examples
 {% endanchor %}
 
-Here are two combined examples:
+Here are 2 combined examples:
 
 - [Dynamic content creation](#-Dynamic-content-creation)
 - [Dynamic content creation with dynamic parts](#-Dynamic-content-creation-with-dynamic-parts)

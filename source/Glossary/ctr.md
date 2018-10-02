@@ -29,11 +29,11 @@ Click-through rates help determine the relative success or failure of an email c
 
 {% anchor h2 %}My CTR seems low, what can I do to change that?{% endanchor %}
 
-As mentioned before, click-through rates can vary between campaigns depending on a lot of different factors, however the three most significant aspects are arguably message content, sending frequency, and overall consistency.
+As mentioned before, click-through rates can vary between campaigns depending on a lot of different factors, however the 3 most significant aspects are arguably message content, sending frequency, and overall consistency.
 
 {% anchor h3 %}Message Content{% endanchor %}
 
-Make sure that the content of your emails is to-the-point and relevant to your subject line. Keep your paragraphs short whenever possible, ideally no more than three to four concise sentences. Do not use images frivolously. You should try to convey your updates primarily through text, as too many images in an email body can make a message take longer to load and/or might make it look suspicious at a first glance (since many email clients do not load images within messages by default).
+Make sure that the content of your emails is to-the-point and relevant to your subject line. Keep your paragraphs short whenever possible, ideally no more than 3 to 4 concise sentences. Do not use images frivolously. You should try to convey your updates primarily through text, as too many images in an email body can make a message take longer to load and/or might make it look suspicious at a first glance (since many email clients do not load images within messages by default).
 
 {% anchor h3 %}Sending Frequency{% endanchor %}
 

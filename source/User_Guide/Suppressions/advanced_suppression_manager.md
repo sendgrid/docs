@@ -62,7 +62,7 @@ You can also specify which groups to display at send time, but using the [asm_gr
 Add Recipients to an Unsubscribe Group
 {% endanchor %}
 
-You may want to preload an unsubscribe group or add recipients to an unsubscribe group if you are moving from another email provider or have customers request to be removed from a specific list. We provide two ways to do this, via CSV file or manually.
+You may want to preload an unsubscribe group or add recipients to an unsubscribe group if you are moving from another email provider or have customers request to be removed from a specific list. We provide 2 ways to do this, via CSV file or manually.
 
 {% anchor h3 %}
 Upload a CSV To Add Unsubscribe Group Recipients

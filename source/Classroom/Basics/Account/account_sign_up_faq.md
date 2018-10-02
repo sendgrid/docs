@@ -13,7 +13,7 @@ navigation:
   show: true
 ---
 
-When you sign up for a SendGrid account, there are a few steps that our users must complete before they can start using their accounts fully. You will have either one, two, or three separate steps to complete before you fully unlock the credit limits available to your chosen plan level. We require these steps for your security, as well as to help you get started more quickly! 
+When you sign up for a SendGrid account, there are a few steps that our users must complete before they can start using their accounts fully. You will have either 1, 2, or 3 separate steps to complete before you fully unlock the credit limits available to your chosen plan level. We require these steps for your security, as well as to help you get started more quickly! 
 
 
 {% anchor h3 %}How long does the verification process take?{% endanchor %}
@@ -22,7 +22,7 @@ The time it takes to completely unlock your account can vary based on the number
 
 {% anchor h3 %}What steps are required?{% endanchor %}
 
-You will either have to verify your email address, set up two-factor authentication, and authenticate a domain . You may need to complete one or more of these steps to completely verify your account.
+You will either have to verify your email address, set up 2-factor authentication, and authenticate a domain . You may need to complete one or more of these steps to completely verify your account.
 
 {% anchor h3 %}Can I send email right away?{% endanchor %}
 
@@ -48,9 +48,9 @@ You can resend the verification to the email address you specified during the in
 
 If you entered your email address incorrectly in the initial signup form, you can correct the email address and resend the verification email to the correct address.
 
-{% anchor h3 %}How do I set up two factor authentication?{% endanchor %} 
+{% anchor h3 %}How do I set up 2 factor authentication?{% endanchor %} 
 
-Learn more about setting up and using two factor authentication [here]({{root_url}}/User_Guide/Settings/two_factor_authentication.html). 
+Learn more about setting up and using 2 factor authentication [here]({{root_url}}/User_Guide/Settings/two_factor_authentication.html). 
 
 {% anchor h3 %}How do I set up the domain whitelabel?{% endanchor h3 %} 
 

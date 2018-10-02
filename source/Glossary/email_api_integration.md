@@ -12,7 +12,7 @@ navigation:
 
 Email API integration allows you to connect your email service provider to your own platform and your marketing, sales, or CRM tools. In doing so, you can sync data and create hybrid, customized systems that empower your workforce and leverage your technology via a single interface.
 
-The term API stands for Application Programming Interface. It’s essentially a language and message format that allows communication between the web application and the program that provides the services for the web app. With email API integration, you can simply define the parameters passed between your email service provider (ESP) using some business logic and code, and set up advanced functionality between two or more separate applications.
+The term API stands for Application Programming Interface. It’s essentially a language and message format that allows communication between the web application and the program that provides the services for the web app. With email API integration, you can simply define the parameters passed between your email service provider (ESP) using some business logic and code, and set up advanced functionality between 2 or more separate applications.
 
 The main benefit of email API integration is automation. Depending on your ESP, you can use different types of email APIs to synchronize data or content, and automate many functions so you can spend less time administering your email programs. For example, by syncing your ESP with your web app, you can automatically remove emails with spam complaints from your entire database. Or, pull email response data from your ESP into your platform and deliver comprehensive reports to your team – all with a simple email API integration.
 

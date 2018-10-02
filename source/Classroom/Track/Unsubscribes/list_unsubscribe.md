@@ -45,7 +45,7 @@ It is possible to use the List-Unsubscribe header even if you do not want to use
 How does the List-Unsubscribe header work?
 {% endanchor %}
 
-The List-Unsubscribe header provides two methods of unsubscribing users: an _email_ unsubscribe, and a _web_ unsubscribe. One, or both, of these methods may be used.
+The List-Unsubscribe header provides 2 methods of unsubscribing users: an _email_ unsubscribe, and a _web_ unsubscribe. One, or both, of these methods may be used.
 
 {% anchor h3 %}
 Email Unsubscribe: mailto

@@ -49,7 +49,7 @@ Please note:  If a sending domain (and not the IP address) is blacklisted, that 
 Checking Your IP Address
 {% endanchor %}
 
-Here are two aggregation websites that anyone can use to check on the status of their IP:
+Here are 2 aggregation websites that anyone can use to check on the status of their IP:
 - [MulitRBL](http://multirbl.valli.org/)
 - [MXToolbox](http://www.mxtoolbox.com/blacklists.aspx)
 

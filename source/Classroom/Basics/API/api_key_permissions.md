@@ -13,7 +13,7 @@ seo:
 What are API Key permissions?
 {% endanchor h2 %}
 
-API Keys are used to authenticate an API call. There are two types of API Keys:
+API Keys are used to authenticate an API call. There are 2 types of API Keys:
 
 1. General API Keys
 2. Billing API Keys
@@ -95,7 +95,7 @@ To give your API key these extra permissions you will need to make [this request
 
 **Important things** to know before making the above API request:
 
-**1.** You will need to authenticate the above request with your parent account's username and password because your API key will not have the required API key permissions. There are two ways to authenticate using your username and password:
+**1.** You will need to authenticate the above request with your parent account's username and password because your API key will not have the required API key permissions. There are 2 ways to authenticate using your username and password:
 
 * You can add basic authorization to your API call yourself by base64 encoding your username and password like this: `username:password` and adding it to your Authorization header as Basic. We go into a little more detail on this [here](https://sendgrid.com/blog/magic-behind-basic-http-authentication/).
 * Or you can use a rest client like [Postman](http://www.getpostman.com/) or [Paw](https://luckymarmot.com/paw), where you can select to Authenticate with basic auth (your SendGrid parent account username and password) then update the request to add your parent account credentials encoded into the headers.

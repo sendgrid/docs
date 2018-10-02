@@ -458,7 +458,7 @@ class RubyPants < String
   # Return an array of the tokens comprising the string. Each token is
   # either a tag (possibly with nested, tags contained therein, such
   # as <tt><a href="<MTFoo>"></tt>, or a run of text between
-  # tags. Each element of the array is a two-element array; the first
+  # tags. Each element of the array is a 2-element array; the first
   # is either :tag or :text; the second is the actual value.
   #
   # Based on the <tt>_tokenize()</tt> subroutine from Brad Choate's

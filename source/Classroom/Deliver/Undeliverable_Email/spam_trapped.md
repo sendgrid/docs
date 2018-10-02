@@ -40,7 +40,7 @@ The last important tool in avoiding spam traps is the **age of the list**. Like 
 
  
 
-Removing a spam trap is tricky business not to mention time consuming. It is inefficient and expensive to throw out a whole list and one way to avoid this is [list segmentation]({{root_url}}/Classroom/Deliver/Address_Lists/affiliate_lists_and_list_sharing.html). Identify clean list segments that are free of any possible spam traps. If an address has not opened any emails for over six months, it may be a spam trap and should be sent one last [confirmatory email]({{root_url}}/Glossary/reconfirmation.html). Clean list segments need not be sent a confirmatory email. 
+Removing a spam trap is tricky business not to mention time consuming. It is inefficient and expensive to throw out a whole list and one way to avoid this is [list segmentation]({{root_url}}/Classroom/Deliver/Address_Lists/affiliate_lists_and_list_sharing.html). Identify clean list segments that are free of any possible spam traps. If an address has not opened any emails for over 6 months, it may be a spam trap and should be sent one last [confirmatory email]({{root_url}}/Glossary/reconfirmation.html). Clean list segments need not be sent a confirmatory email. 
 
 Why not repermission the whole list? Because confirming every subscriber’s consent to receive emails isn’t ideal. Subscribers who want to continue to receive mail may not re-subscribe because they did not notice the email or just forgot to reconfirm. 
 

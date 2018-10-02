@@ -100,7 +100,7 @@ The final step in creating your new subuser requires you to simply [activate the
 <br><strong>That's All, Folks!</strong>
 </center>
 
-If you have followed all of these steps then you have just created a new subuser using the Subuser API. Give yourself a high five!  
+If you have followed all of these steps then you have just created a new subuser using the Subuser API. Give yourself a high 5!  
 
 But wait, there's more... 
 

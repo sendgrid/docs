@@ -21,7 +21,7 @@ To use BriteVerify to verify your SendGrid list, you will need to generate an AP
 The SendGrid-generated key is generated and visible only once, so be sure to copy the API Key somewhere safe for future reference. 
 {% endwarning %}
 
-To get started, open the BriteVerify app and click **Import List** and then click **SendGrid**. The app triggers the prompt to input the SendGrid API key. This authentication is required only once to link the two applications. 
+To get started, open the BriteVerify app and click **Import List** and then click **SendGrid**. The app triggers the prompt to input the SendGrid API key. This authentication is required only once to link the 2 applications. 
 
 ![]({{root_url}}/images/Briteverify_Picture_01.jpeg) ![]({{root_url}}/images/Briteverify_Picture_02.jpeg)
 

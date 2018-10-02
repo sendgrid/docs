@@ -41,7 +41,7 @@ There are several causes for blocked emails: for example, your mail server IP ad
 
 ## Blocks Collection [/suppression/blocks]
 
-There are two options for deleting blocked emails:
+There are 2 options for deleting blocked emails:
 </br>
 </br>
 1. You can delete all blocked emails by setting "delete_all" to true in the request body.

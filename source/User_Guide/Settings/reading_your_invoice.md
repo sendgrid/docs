@@ -48,7 +48,7 @@ IP Address
 
 ![Additional IP address section]({{root_url}}/img/invoice_IP_address.jpg)
 
-These charges indicate that you have **additional Dedicated IP Addresses** allocated to your account. There are two lines in this example because one IP Address was added before the IP Address price increased, and the other was added after. The user in this example will pay $80.00 total for their IPs for the month of July (1 IP at $20, 2 IPs at $30).
+These charges indicate that you have **additional Dedicated IP Addresses** allocated to your account. There are 2 lines in this example because one IP Address was added before the IP Address price increased, and the other was added after. The user in this example will pay $80.00 total for their IPs for the month of July (1 IP at $20, 2 IPs at $30).
 
 Additional IPs cost $30.00/mo each and are available on Pro 100K plans and above.
 
@@ -70,7 +70,7 @@ Email Activity History
 
 ![Email activity section]({{root_url}}/img/invoice_ease.jpg)
 
-This charge is for access to the **Email Activity Feed API** as well as **30 days worth of Email Activity History** in the app. These two features are sold as a package and cannot be added individually.
+This charge is for access to the **Email Activity Feed API** as well as **30 days worth of Email Activity History** in the app. These 2 features are sold as a package and cannot be added individually.
 
 The price for access to this feature varies per plan. For more information on pricing for Email Activity History, visit our [pricing page](https://sendgrid.com/pricing).
 

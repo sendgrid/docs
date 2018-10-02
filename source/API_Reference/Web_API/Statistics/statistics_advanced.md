@@ -23,7 +23,7 @@ Get Statistics for: Browsers, Clients, Devices, Geo, Global, Isp
  {% parameter 'metric' 'No' 'One of the following (default is *all*):- *open*: Opens- *click*: Clicks- *unique_open*: Unique opens- *unique_click*: Unique clicks- *processed*: Processed emails- *delivered*: Delivered emails- *drop*: Dropped emails- *bounce*: Bounced emails- *deferred*: Deferred email tries- *spamreport*: Emails marked as spam- *blocked*: Emails that have been blocked- *all*: All metrics are returned' %}
  {% parameter 'category' 'No' 'Return statistics for the given category' %}
  {% parameter 'aggregated_by' 'No' 'Aggregate the data by the given period (default is *day*):- *day*: Keys are returned in the format yyyy-mm-dd (i.e 2012-12-13)- *week*: Keys are return in the format yyyy-ww (i.e 2012-43)- *month*: Keys are return in the format yyyy-mm (i.e 2012-11)' %}
- {% parameter 'country' 'No' 'Get statistics for each region/state for the given country. Only *US* (United States) and *CA* (Canada) is supported at this time. Country code is two letter characters based on [ISO 3166-1 alpha-2](http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) <p>This parameter is only used for when *data_type=geo*</p>' %}
+ {% parameter 'country' 'No' 'Get statistics for each region/state for the given country. Only *US* (United States) and *CA* (Canada) is supported at this time. Country code is 2 letter characters based on [ISO 3166-1 alpha-2](http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) <p>This parameter is only used for when *data_type=geo*</p>' %}
 {% endparameters %}
 
 

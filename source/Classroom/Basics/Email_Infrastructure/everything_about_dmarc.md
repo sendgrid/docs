@@ -25,7 +25,7 @@ Deploying DMARC for your email systems is a powerful way to help prevent malicio
 DMARC, in conjunction with a dedicated IP (included in Pro or higher accounts) is a great start to getting industry-supported piece of mind. The DMARC aggregate and forensic reports are designed to be machine readable, and can be difficult for humans to make sense of. You will also need to utilize a DMARC report monitoring service to collect the reports and present the information in a meaningful way that leads to actionable insights.  
 Return Path's Brand Monitor is one, and Agari is another.
 
-# The five phases:
+# The 5 phases:
 
 1. Deploy DKIM & SPF by setting up reverse DNS for your SendGrid IP.
 2. Ensure proper DKIM and SPF signing for your authenticated domain.

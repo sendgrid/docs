@@ -45,7 +45,7 @@ The Design Editor offers users powerful drag & drop WYSIWYG editing tools making
 Designing Your Campaign
 {% endanchor h3 %}
 
-Depending on your editor selection, you use different methods to design your campaign. Both the Design Editor and the Code Editor have the same three tabs: **Settings**, **Tags**, and **A/B Testing**.
+Depending on your editor selection, you use different methods to design your campaign. Both the Design Editor and the Code Editor have the same 3 tabs: **Settings**, **Tags**, and **A/B Testing**.
 
 1. Edit your campaign by filling in the fields in the **Settings** Tab. 
 

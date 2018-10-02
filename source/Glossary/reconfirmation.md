@@ -20,14 +20,14 @@ Monitoring engagement is the best tool in ensuring a good reputation as a sender
 a large push in determine whether emails will make it to the mailbox by past engagement with that sender. Popular
 receiving mailboxes like Gmail, Yahoo! and Hotmail all use engagement tracking to decipher for their users which emails
 to put in the spam folder, bounce, or allow passage to a user's mailbox. Furthermore, many mailboxes now have the option
-to prioritize emails automatically so that there are two different categories of email; those deemed by the mailbox as
+to prioritize emails automatically so that there are 2 different categories of email; those deemed by the mailbox as
 important and those that aren't. This is almost entirely determined by whether or not recipients click on their emails
 or even better, if they reply. This increases the ante for senders to send content that recipients will engage with.
 
 Thankfully SendGrid provides a window into the problem. Senders are able to make use of
 the Event API which allows senders to know if recipients have opened and/or clicked on their emails. Lower tier plans
 can view this information under the Email Activity tab. With these tools, a sender can ensure that they are not sending
-to two major pitfalls: spam traps or recipients that are likely to acknowledge the email as spam. Sending to either of
+to 2 major pitfalls: spam traps or recipients that are likely to acknowledge the email as spam. Sending to either of
 these recipients leads the receiving mailbox to believe that they are uninterested and therefore, begin to divert their
 emails to the unimportant or spam folders.
 
@@ -69,7 +69,7 @@ emails.
 How to Reconfirm
 {% endanchor %}
 
-Send an email with two links: one link to re-opt in the recipient,
+Send an email with 2 links: one link to re-opt in the recipient,
 and the other link to opt-out the recipient. If they do not
 explicitly opt back in with this email, their address should be
 removed from your list as this is an indication your recipient is not

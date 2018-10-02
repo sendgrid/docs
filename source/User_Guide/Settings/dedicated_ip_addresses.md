@@ -33,7 +33,7 @@ Why would I want a Dedicated IP Address?
 
 If you are sending any significant amount of email, we typically suggest sending your marketing and transactional emails to from separate IP addresses. In addition, it is strongly recommended to associate your sending domain with your new outbound IP address (provided to you by SendGrid).  This is available at no extra cost and can be accomplished by [completing an rDNS setup for your dedicated IP (here's a video tutorial and documentation help)](https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_reverse_dns.html).
 
-We also suggest having at least two promotional IP addresses when your volume reaches 200-300K/month.
+We also suggest having at least 2 promotional IP addresses when your volume reaches 200-300K/month.
 
 
 {% anchor h2 %}

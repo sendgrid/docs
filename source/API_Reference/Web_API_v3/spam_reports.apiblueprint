@@ -40,7 +40,7 @@ FORMAT: 1A
 
 ## Spam Reports Collection [/suppression/spam_reports]
 
-There are two options for deleting spam reports:
+There are 2 options for deleting spam reports:
 </br>
 </br>
 1) You can delete all spam reports by setting "delete_all" to true in the request body.

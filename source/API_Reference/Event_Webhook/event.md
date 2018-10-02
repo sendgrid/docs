@@ -50,7 +50,7 @@ navigation:
 Events
 {% endanchor %}
 
-Events are generated when email is processed by SendGrid and email service providers. There are two types of events - delivery and engagement events. Delivery events indicate the status of email delivery to the recipient. Engagement events indicate how the recipient is interacting with the email.
+Events are generated when email is processed by SendGrid and email service providers. There are 2 types of events - delivery and engagement events. Delivery events indicate the status of email delivery to the recipient. Engagement events indicate how the recipient is interacting with the email.
 
 Here is a flow of email events:
 

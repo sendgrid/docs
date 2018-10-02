@@ -8,7 +8,7 @@ navigation:
   show: false
 ---
 
-The most simple way to define spam in the Email world is by using these two words: ```unwanted email```.
+The most simple way to define spam in the Email world is by using these 2 words: ```unwanted email```.
 
 Since it’s so easy for a message to fall in this category, as a Sender you may want to know how and why emails can get marked as spam.
 

@@ -16,5 +16,5 @@ Along with the subject line, the preheader text is the first thing subscribers c
 
 Many businesses use preheaders in their email marketing campaigns to get more subscribers to open and read their emails – and to ensure that their campaigns are as deliverable as possible.
 
-It’s these two elements that they use to decide whether or not to open your campaign, and without getting your email opened it’s impossible to get people to click-through and take your desired conversion action (like making a purchase on your website for instance). 
+It’s these 2 elements that they use to decide whether or not to open your campaign, and without getting your email opened it’s impossible to get people to click-through and take your desired conversion action (like making a purchase on your website for instance). 
 

@@ -295,9 +295,9 @@ module Jekyll
       best_date
     end
 
-    # Which of the two dates is later
+    # Which of the 2 dates is later
     #
-    # Returns latest of two dates
+    # Returns latest of 2 dates
     def greater_date(date1, date2)
       if (date1 >= date2)
         date1

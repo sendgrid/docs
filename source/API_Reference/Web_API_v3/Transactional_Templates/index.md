@@ -20,7 +20,7 @@ Templates may have multiple versions with different content, these may be change
 
 **Sending Transactional Templates**
 
-You can send transactional templates using one of three ways:
+You can send transactional templates using one of 3 ways:
 
 * Using the [SMTP Relay]({{root_url}}/Integrate/index.html#-SMTP-Relay)
 * Including the template ID in the `templates` parameter of the [Web API v3 Mail Send endpoint]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html)

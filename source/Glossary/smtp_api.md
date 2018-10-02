@@ -10,11 +10,11 @@ navigation:
   show: false
 ---
 
-[SMTP]({{root_url}}/Glossary/smtp.html) stands for Simple Mail Transfer Protocol. SMTP allows software to transfer email over the internet. The term API stands for Application Programming Interface, which allows software to talk to each other. Therefore the SMTP API allows two or more software platforms to talk to each other over the internet, based on a set of defined parameters and rules between systems.
+[SMTP]({{root_url}}/Glossary/smtp.html) stands for Simple Mail Transfer Protocol. SMTP allows software to transfer email over the internet. The term API stands for Application Programming Interface, which allows software to talk to each other. Therefore the SMTP API allows 2 or more software platforms to talk to each other over the internet, based on a set of defined parameters and rules between systems.
 
 The SendGrid SMTP API gives developers the ability to customize email handling instructions using an X-SMTPAPI header. This JSON header is placed in each email message providing specific instructions on what to do with the email message. The customized header can be added to any SMTP message sent to SendGrid for interpretation by the receiver.
 
-There are two prime benefits to using the SMTP API. Since there are so many languages, frameworks, and mail clients, the SMTP API is the most flexible and simplest solution for delivering email. Secondly, SMTP API gives you advanced control over your email messages. You can tag or label your emails and set filters to define the type data you want to receive. You can create dynamic emails, automatically customize emails and add unique arguments using templates to make it easier to deliver your email efficiently.
+There are 2 prime benefits to using the SMTP API. Since there are so many languages, frameworks, and mail clients, the SMTP API is the most flexible and simplest solution for delivering email. Secondly, SMTP API gives you advanced control over your email messages. You can tag or label your emails and set filters to define the type data you want to receive. You can create dynamic emails, automatically customize emails and add unique arguments using templates to make it easier to deliver your email efficiently.
 
 SendGrid makes it easy for customers to integrate their existing application with SendGrid in a few simple steps using SMTP. By changing your username, password, server host name and port connections, you can start sending email in a just a few minutes.
 

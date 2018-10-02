@@ -28,7 +28,7 @@ What are API keys?
 
 API keys are used by your application, mail client, or website to authenticate access to SendGrid services. They are the preferred alternative to using a username and password because you can revoke an API key at any time without having to change your username and password. We suggest that you use API keys for connecting to all of SendGrid’s services.
 
-There are two different types of API keys:
+There are 2 different types of API keys:
 
 1. **Full Access** gives all of the API methods.
 1. **Restricted Access** lets you customize the level of access.

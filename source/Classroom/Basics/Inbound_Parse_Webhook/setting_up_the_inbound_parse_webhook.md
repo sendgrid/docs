@@ -142,7 +142,7 @@ Default Parameters
       </tr>
       <tr>
          <th>envelope</th>
-         <td>A string containing the SMTP envelope. This will have two variables: <code>to</code>, which is a single-element array containing the address that we received the email to, and <code>from</code>, which is the return path for the message.</td>
+         <td>A string containing the SMTP envelope. This will have 2 variables: <code>to</code>, which is a single-element array containing the address that we received the email to, and <code>from</code>, which is the return path for the message.</td>
       </tr>
       <tr>
          <th>attachments</th>
@@ -286,7 +286,7 @@ Raw Parameters
       </tr>
       <tr>
          <th>Envelope</th>
-         <td>A string containing the SMTP envelope. This will have two variables: <code>to</code>, which is an single-element array containing the addresses that received the email, and <code>from</code>, which is the return path for the message.</td>
+         <td>A string containing the SMTP envelope. This will have 2 variables: <code>to</code>, which is an single-element array containing the addresses that received the email, and <code>from</code>, which is the return path for the message.</td>
       </tr>
       <tr>
          <th>Subject</th>

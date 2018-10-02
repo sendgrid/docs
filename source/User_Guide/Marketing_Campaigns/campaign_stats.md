@@ -46,7 +46,7 @@ Exporting Campaign Statistics
 Exporting Statistics for Multiple Campaigns
 {% endanchor %}
 
-You can export a CSV containing the statistics for multiple campaigns. This exported CSV will closely resemble the CSV exported for a single campaign’s statistics, except for two additional columns containing the campaign name and ID for each row of statistics. These columns will be labeled “Campaign Name” and “Campaign ID”, respectively.
+You can export a CSV containing the statistics for multiple campaigns. This exported CSV will closely resemble the CSV exported for a single campaign’s statistics, except for 2 additional columns containing the campaign name and ID for each row of statistics. These columns will be labeled “Campaign Name” and “Campaign ID”, respectively.
 
 *To export statistics for multiple campaigns:*
 

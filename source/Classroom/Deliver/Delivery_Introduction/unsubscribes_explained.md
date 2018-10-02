@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-Managing your subscriber base is a vital component of sending emails successfully. At SendGrid we provide you with a variety of tools to help you trim down your recipient lists and remove uninterested users, thereby leading to campaigns with higher engagement rates. Unsubscribes are controlled through one of two ways:
+Managing your subscriber base is a vital component of sending emails successfully. At SendGrid we provide you with a variety of tools to help you trim down your recipient lists and remove uninterested users, thereby leading to campaigns with higher engagement rates. Unsubscribes are controlled through one of 2 ways:
 
  
 
@@ -29,7 +29,7 @@ Whenever you send an email using our [Advanced Suppression Manager](https://send
 
 <iframe src="https://player.vimeo.com/video/130486946" width="500" height="312" frameborder="0" allowfullscreen=""></iframe>
 
-And that's all it takes! These two unsubscribe methods are the core of managing and optimizing your recipient list.
+And that's all it takes! These 2 unsubscribe methods are the core of managing and optimizing your recipient list.
 
 **Downloading Unsubscribes**
 

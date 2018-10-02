@@ -12,7 +12,7 @@ Access your email statistics via the New Relic Dashboard.
 
 ![]({{root_url}}/images/new_relic.png)
 
-In less than five minutes your statistics should be sent to your New Relic Dashboard. We send statistics to New Relic every 5 minutes for users with the setting enabled.
+In less than 5 minutes your statistics should be sent to your New Relic Dashboard. We send statistics to New Relic every 5 minutes for users with the setting enabled.
 
 * * * * *
 
@@ -49,6 +49,6 @@ Go on New Relic site and there you will find the SendGrid extension on the left 
 
 ![]({{root_url}}/images/newrelic-dashboard1.png)
 
-Click on one of the instances and there you will see the statistics in three categories: Deliveries, Engagement and Compliance. Also on the right side you can see metrics in percentages.
+Click on one of the instances and there you will see the statistics in 3 categories: Deliveries, Engagement and Compliance. Also on the right side you can see metrics in percentages.
 
 ![]({{root_url}}/images/newrelic-dashboard2.png)

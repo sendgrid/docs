@@ -13,7 +13,7 @@ Once you have an AWS account, you can to [subscribe to SendGrid](https://aws.ama
 Pricing
 {% endanchor %}
 
-There are two plans: AWS Basic, and AWS Pro. For more information, check out our[ AWS Marketplace page](https://aws.amazon.com/marketplace/pp/B074CQY6KB). Here's a monthly view of cost:
+There are 2 plans: AWS Basic, and AWS Pro. For more information, check out our[ AWS Marketplace page](https://aws.amazon.com/marketplace/pp/B074CQY6KB). Here's a monthly view of cost:
 
 ![]({{root_url}}/images/aws_pricing.png "AWS pricing")
 

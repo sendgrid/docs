@@ -98,7 +98,7 @@ curl -X "POST" "https://api.sendgrid.com/v3/mail/send" \
 }'
 {% endcodeblock %}
 
-It is important to note two sections of this call when using dynamic templates.
+It is important to note 2 sections of this call when using dynamic templates.
 
 In order to send dynamic content, you need to specify a JSON blob containing the dynamic data your template will use in the `dynamic_template_data` object. The handlebars script you write will refer to the values in your JSON blob by referencing the JSON key, check out [these examples]({{root_url}}/User_Guide/Transactional_Templates/Using_handlebars.html#-Handlebarjs-reference). This handlebars templating can be used in the text, html, and subject lines of your template. The total collective size of your dynamic data may not exceed 10,000 bytes per personalization object.
 
