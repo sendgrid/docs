@@ -24,7 +24,7 @@ Categories should be used to group messages together by broad topic. If you need
 Example 
 {% endanchor %}
 
-You can use SendGrid's [SMTP API]({{root_url}}/API_Reference/SMTP_API/) to add these categories to your email. The following should be added to the email's header:
+You can use SendGrid's [SMTP API]({{root_url}}/API_Reference/SMTP_API/building_an_smtp_email.html) to add these categories to your email. The following should be added to the email's header:
 
 <h4>Example Category Header</h4>
 {% codeblock lang:json %}
