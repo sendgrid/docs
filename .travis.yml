@@ -5,8 +5,8 @@ rvm:
 - 2.1
 branches:
   only:
-  - master
-  - develop
+  - old-master
+  - old-develop
 before_install:
 - sh -c "if [ '$TRAVIS_BRANCH' = 'old-develop' ]; then echo 'staging https://travis-ci.org/$TRAVIS_REPO_SLUG/builds/$TRAVIS_BUILD_ID'  >
   'source/_data/version.yml' ; fi"
