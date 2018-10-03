@@ -10,6 +10,9 @@ seo:
 navigation:
   show: false
 ---
+
+<iframe src="https://player.vimeo.com/video/289518438" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 SendGrid’s Automation beta allows you to send a series of emails to contacts automatically when you add them to a list you’ve specified. Automations are simple to set up, and once created, you can trigger them by adding new recipients to your chosen list, saving you time.
 
 With the Automation beta, you can build campaigns to: 
@@ -135,17 +138,17 @@ The Welcome Series Automation has preset entry criteria and sending schedules so
 1. Navigate to **Automations** and then click **Create an Automation**. 
 1. Under Welcome, click **Select**. 
 1. Give the series a name (this is for your reference and will not be visible to your contacts).
-1. Select the first entry criteria. The default entry criteria is “The first time a contact is added to All Contacts”. (Do we need some kind of note about “all contacts” versus using a list to help users keep track of new contacts?)
+1. Select the first entry criteria. The default entry criteria is “The first time a contact is added to All Contacts”.
 1. Select the exit criteria for this series.
 
 <call-out>
 
-During the beta, the default exit criteria is “Contacts will be removed from the automation when they’ve received all of the emails”.
+During the beta, the default exit criteria is contacts will be removed from the automation “when they’ve received all of the emails”.
 
 </call-out>
 
 6. Select an Unsubscribe Group to add to the Welcome series.
-7. Add a category (link to categories documentation) to the automation (optional).
+7. Add a [category]({{root_url}}/glossary/categories/) to the automation (optional).
 8. Select the send time for the first email.
 9. To add a campaign to the first email, click **Edit Email Content**. 
 10. Select a template or click **Blank Template** to begin creating your own campaign from scratch.
@@ -179,14 +182,13 @@ During the beta, the default exit criteria is contacts will be removed from the 
 6. Add a [category]({{root_url}}/glossary/categories/) to the automation (optional).
 7. Select the send time for the first email. You can choose to send the first email instantly, or you can set a delay from the time they are added to your entry criteria list.
 8. To design your first email in the series, click **Edit Email Content**.
-9. From the “Select Template” modal that opens, choose Blank Template or one of the SendGrid templates provided. 
+9. From the Select Template modal that opens, choose Blank Template or one of the SendGrid templates provided. 
 
 <call-out>
 
 During beta, templates from Marketing Campaigns are not available in Automation. However, you can export a template from Marketing Campaigns and import it as a Blank Template into Automation.
 
 <call-out>
-
 
 10. Next, select either the [Design]({{root_url}}/ui/sending-email/editor/#the-design-editor) or [Code]({{root_url}}/ui/sending-email/editor/#the-code-editor) editor to design or edit your email.  
 
@@ -251,20 +253,29 @@ When you re-enable the automation, contacts who were already entered into the se
 
 *To delete an automation:*
 
-1. 
-1. 
+1. On the automation dashboard, find the automation you want to delete.
+1. Hover over the action menu and select the delete icon. 
+1. To delete the automation, click **Confirm**.
 
-### Migrating from Marketing Campaigns -
+## Migrating from Marketing Campaigns
+
+### Migrating Campaign HTML
+
+*To migrate Marketing Campaigns HTML:*
+
+1. Navigate to [Marketing Campaigns](https://sendgrid.com/marketing_campaigns/ui/campaigns) and locate the campaign you wish to migrate.
+1. Hover over the action menu until the icons appear.
+1. Select the **Export HTML** icon.
+   The campaign HTML downloads to the folder specified on your computer
+1. Navigate to the Automation dashboard.
+1. Locate the automation you want to add the exported email to and hover over the action menu.  
+1. Select **Edit**.
+
 -how to export a list and import it
 -how to export a segment and import it (and use cases for doing so!)
 -how to export email content and import it
 
 ## Measuring Automation Performance
-
-I think I need some help here with an overview. This section might need to be added after the internal beta starts so the functionality is there for me to play around with. 
-
-
-
 
 Per automation analytics
 Per campaign analytics
