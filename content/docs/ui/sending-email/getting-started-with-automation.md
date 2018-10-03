@@ -237,9 +237,15 @@ Edit email content
 <call-out>
 
 When you re-enable the automation, contacts who were already entered into the series will continue where they left off. Contacts who met your entry criteria during the disabled period will not be added to the automation. For this reason, do not add users to lists that are used as the entry criteria for automations in a disabled state.
+
 </call-out>
 
-### Delete an Automation Again, do we need this? I think the UI is very intuitive, but I can add it if necessary. It does kind of round out the flow I suppose.
+### Delete an Automation 
+
+*To delete an automation:*
+
+1. 
+1. 
 
 ### Migrating from Marketing Campaigns -
 -how to export a list and import it
