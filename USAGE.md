@@ -6,7 +6,8 @@ This documentation is based on our [Docs](https://github.com/sendgrid/docs/tree/
 	* [View your install](#view)
 	* [Using Docker](#using-docker)
 
-###Local setup
+<a name="local"></a>
+## Local setup
 <a name="jekyll"></a>
 ### Configure jekyll
 
@@ -75,6 +76,6 @@ Wait until you see `Server running... press ctrl-c to stop.` and browse to [http
 
 ### Run spell check
 
-``
+```
 npm run spellcheck
 ```
