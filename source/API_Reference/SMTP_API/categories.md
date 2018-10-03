@@ -9,7 +9,7 @@ navigation:
 Add [categories]({{root_url}}/User_Guide/Email_Settings/categories.html) to the X-SMTPAPI header of the emails you send via SendGrid. This will allow you to track emails based on your own categorization system.
 
 {% warning %}
-Categories must be in 7bit encoding using the US-ASCII character set. 
+Categories must be in 7 bit encoding using the US-ASCII character set. 
 {% endwarning %}
 
 {% info %}
