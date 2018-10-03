@@ -57,6 +57,10 @@ To view the unsubscribe preferences page, select the action menu next to an Unsu
 <a href="[unsubscribe]">Click here to unsubscribe.</a>
 ```
 
+If you are participating in the Automation closed beta, you will add the unsubscribe tag using the following format:  ``{{[unsubscribe]}}``
+
+For more information on the Automation beta, click [here](https://sendgrid.com/solutions/marketing-automation/). 
+
 ## Add recipients to an Unsubscribe Group
 
 *To upload a CSV:*
