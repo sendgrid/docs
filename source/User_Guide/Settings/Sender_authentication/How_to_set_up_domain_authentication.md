@@ -78,6 +78,12 @@ Before you begin
 
 To set up domain authentication, you must submit the DNS records provided by SendGrid to your DNS or hosting provider (for example, GoDaddy, Hover, CloudFlare, etc.). First, figure out who your hosting provider is and if you have access. If you don't have access to your DNS or hosting provider, you should figure out who in your company has this access before you begin setting up domain authentication.
 
+<call-out>
+
+GoDaddy automatically adds your domain to the end of any record you input. Because SendGrid CNAME records are formatted as sendgrid.domain.com, GoDaddy interprets this as sendgrid.domain.com.domain.com - this fails CNAME validation. To correct this, input the subdomain of the "host" value from SendGrid into GoDaddy - instead of sendgrid.domain.com, enter sendgrid.
+
+</call-out>
+
 *To set up domain authentication:*
 
 1. In the SendGrid UI, select [Settings > Sender Authentication](https://app.sendgrid.com/settings/sender_auth).
