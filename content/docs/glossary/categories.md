@@ -18,8 +18,8 @@ The events that can be associated with category include:
 
 -   Emails sent
 -   Clicks
--   Opens
--   Bounces
+-   Emails opened
+-   Emails bounced
 -   Spam Reports
 -   Unsubscribes
 
