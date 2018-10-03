@@ -2,7 +2,7 @@
 
 aws configure set preview.cloudfront true
 
-if [ "$TRAVIS_BRANCH" == "rc-master" ]; then
+if [ "$TRAVIS_BRANCH" == "master" ]; then
   DIST_ID=$CLOUDFRONT_DIST_ID_PROD
 else
   DIST_ID=$CLOUDFRONT_DIST_ID_STAGE
