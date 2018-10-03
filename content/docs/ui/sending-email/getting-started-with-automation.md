@@ -10,9 +10,10 @@ seo:
 navigation:
   show: false
 ---
-SendGrid’s Automation beta allows you to send a series of emails to contacts automatically when you add them to a list you’ve specified. Automations are simple to set up, and once created, you can trigger them to new recipients simply by adding them to your chosen list, saving you time.
+SendGrid’s Automation beta allows you to send a series of emails to contacts automatically when you add them to a list you’ve specified. Automations are simple to set up, and once created, you can trigger them by adding new recipients to your chosen list, saving you time.
 
-With the Automation beta, you could build campaigns to: 
+With the Automation beta, you can build campaigns to: 
+
 * Welcome new contacts when they join your list with a warm welcome and introductory tips.
 * Engage contacts who’ve downloaded an asset from you with follow-up content. 
 * Promote an upcoming event to a list of invitees with a series of reasons to attend.
@@ -24,7 +25,11 @@ For beta participants who also use Marketing Campaigns, it’s important to know
 * Templates
 * Account activity notifications (for example, the email you receive when a CSV export is complete)
 
+<call-out>
+
 Unsubscribe Groups and Senders **are shared** between Marketing Campaigns and Automation.
+
+</call-out>
 
 Additionally, during this phase of the  beta, some Marketing Campaigns features will not be available in Automation. For easy reference,the primary feature gaps include: 
 * Ability to view Automation contact list details
@@ -42,10 +47,10 @@ We’ll be working iteratively to close these feature gaps as quickly as possibl
 
 Before you start building automations, you need to complete the following:
 
-* Upload contacts (link to section)
-* Add an Automation notification email (link to section)
-* Create Unsubscribe Groups (link to new MC unsubscribe flow documentation) (link to section)
-* Add a Sender (optional) (link to current Sender docs)
+* [Upload Contacts]({{root_url}}#upload-contats)
+* Add an Automation [notification]({{root_url}}#notifications) email
+* Create [Unsubscribe Groups]({{root_url}}#create-unsubscribe-groups)
+* Add a [sender]({{root_url}}/ui/sending-email/senders/)(optional) 
 
 ### Upload contacts
 
@@ -69,7 +74,7 @@ During beta, automations will only trigger to contacts *the first time* they’r
 
 <call-out>
 
-At this phase of the beta, custom fields are not supported. You can import reserved fields, including email, first_name, and last_name, among others.
+At this phase of the beta, custom fields are not supported. You can import [reserved fields]({{root_url}}/ui/managing-contacts/custom-fields/#reserved-fields), including ``email``, ``first_name``, and ``last_name``, etc.
 
 </call-out>
 
@@ -79,9 +84,8 @@ If you choose to add contacts without assigning them to a list, they'll be added
 
 </call-out>
 
-
-
 4. Upload your file by dragging it into or clicking the CSV upload area.
+   Once the CSV has processed, you will receive a [notification]({{root_url}}/ui/sending-email/getting-started-with-automation/#notifications) email.
 
 ## Notifications
 
@@ -90,21 +94,25 @@ If you have existing notification emails added to Marketing Campaigns notificati
 </call-out>
 
 If you would like to have notifications sent to an email other than your parent account address, you can opt in to receive email notifications from SendGrid about your account's Automation activity.
-To add an email address to notifications:
-Click **Add New Email**.
-Enter the name of the person or account you are setting up the notification for.
-Enter the email address of the person or account you are setting up the notification for.
-Click **Save**.
+
+*To add an email address to notifications*:
+
+1. Navigate to Notifications and then click **Add New Email**.
+1. Enter the name of the person or account you are setting up the notification for.
+1. Enter the email address of the person or account you are setting up the notification for.
+1. Click **Save**.
+
+<call-out>
+
 Email notifications about CSV upload summaries, sender verifications, and list/segment exports can be sent to up to 10 different email addresses.
 
+</call-out>
 
 ## Create Unsubscribe Groups
 
-<call-out>
 Automation shares Unsubscribe Groups with the rest of SendGrid. If a contact unsubscribes from an email you send via Automation, they’ll be unsubscribed from any emails you send using that Unsubscribe Group in Marketing Campaigns as well. Consider whether you want to create new Unsubscribe Groups for use with the Automation, especially as you’re running test automations during beta.
-</call-out>
 
-Create (and or review) Unsubscribe Groups (link to new MC unsubscribe flow documentation)
+For information on creating Unsubscribe Groups, see [Creat and Manage Unsubscribe Groups]({{root_url}}/ui/sending-email/create-and-manage-unsubscribe-groups/).
 
 ## Add a Sender  
 
@@ -112,9 +120,11 @@ Create (and or review) Unsubscribe Groups (link to new MC unsubscribe flow docum
 Automation shares Senders with Marketing Campaigns. You can use the same senders(s), or you can create new ones for use with Automation. 
 </call-out>
 
-Add (and or review) Senders (link to Sender docs)
+For more information, see [Senders]({{root_url}}/ui/sending-email/senders/).
 
 ## Create an Automation
+
+Once you've completed the prerequisites, you can go ahead and create an automation.
 
 ### Create a Welcome Series
 
@@ -139,7 +149,7 @@ During the beta, the default exit criteria is “Contacts will be removed from t
 8. Select the send time for the first email.
 9. To add a campaign to the first email, click **Edit Email Content**. 
 10. Select a template or click **Blank Template** to begin creating your own campaign from scratch.
-11. Select either the Design or Code editor (link to documentation) to design or edit your campaign. 
+11. Select either the [Design]({{root_url}}/ui/sending-email/editor/#the-design-editor) or [Code]({{root_url}}/ui/sending-email/editor/#the-code-editor) editor to design or edit your campaign. 
 12. Once you have selected all of your campaigns for the welcome series, click **Set Live**. 
 
 ### Create a Custom Automation
@@ -165,8 +175,8 @@ During the beta, the default exit criteria is contacts will be removed from the 
 
 </call-out>
 
-5. Select an Unsubscribe Group (link to unsubscribe group docs).
-6. Add a category (link to categories documentation) to the automation (optional).
+5. Select an [Unsubscribe Group]({{root_url}}/ui/sending-email/create-and-manage-unsubscribe-groups/#create-an-unsubscribe-group).
+6. Add a [category]({{root_url}}/glossary/categories/) to the automation (optional).
 7. Select the send time for the first email. You can choose to send the first email instantly, or you can set a delay from the time they are added to your entry criteria list.
 8. To design your first email in the series, click **Edit Email Content**.
 9. From the “Select Template” modal that opens, choose Blank Template or one of the SendGrid templates provided. 
@@ -178,11 +188,11 @@ During beta, templates from Marketing Campaigns are not available in Automation.
 <call-out>
 
 
-10. Next, choose which editor you’d like to work in: Design Editor or Code Editor (link to documentation). 
+10. Next, select either the [Design]({{root_url}}/ui/sending-email/editor/#the-design-editor) or [Code]({{root_url}}/ui/sending-email/editor/#the-code-editor) editor to design or edit your email.  
 
 <call-out>
 
-During beta, there are some features of the Marketing Campaigns editor that aren’t supported in the Automation editor. (can we link to the beta considerations section?).
+During [beta]({{root_url}}#beta-considerations), there are some features of the Marketing Campaigns editor that aren’t supported in the Automation editor.
 
 <call-out>
 
