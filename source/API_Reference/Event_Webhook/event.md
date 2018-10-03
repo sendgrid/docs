@@ -439,7 +439,7 @@ Event objects
     <th><a href="#spamreport">Spam Report</a></th>
     <th><a href="#unsubscribe">Unsubscribe</a></th>
     <th><a href="#groupunsubscribe">Group Unsubscribe</a></th>
-    <th><a href="#groupresubscribe"Group Resubscribe</a></th>
+    <th><a href="#groupresubscribe">Group Resubscribe</a></th>
   </tr>
   <tr>
     <td><a href="#email">email</a></td>
