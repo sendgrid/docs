@@ -8,7 +8,7 @@ seo:
   description: Use Automation to create a series of campaigns targeted towards a specific audience. 
   keywords: automation, triggered email, automated email, welcome series
 navigation:
-  show: true
+  show: false
 ---
 SendGrid’s Automation beta allows you to send a series of emails to contacts automatically when you add them to a list you’ve specified. Automations are simple to set up, and once created, you can trigger them to new recipients simply by adding them to your chosen list, saving you time.
 
@@ -89,8 +89,6 @@ If you choose to add contacts without assigning them to a list, they'll be added
 If you have existing notification emails added to Marketing Campaigns notifications, they will not be notified for any Automation activity.  
 </call-out>
 
-### Create Automation notifications
-
 If you would like to have notifications sent to an email other than your parent account address, you can opt in to receive email notifications from SendGrid about your account's Automation activity.
 To add an email address to notifications:
 Click **Add New Email**.
@@ -100,7 +98,7 @@ Click **Save**.
 Email notifications about CSV upload summaries, sender verifications, and list/segment exports can be sent to up to 10 different email addresses.
 
 
-### Create Unsubscribe Groups
+## Create Unsubscribe Groups
 
 <call-out>
 Automation shares Unsubscribe Groups with the rest of SendGrid. If a contact unsubscribes from an email you send via Automation, they’ll be unsubscribed from any emails you send using that Unsubscribe Group in Marketing Campaigns as well. Consider whether you want to create new Unsubscribe Groups for use with the Automation, especially as you’re running test automations during beta.
@@ -108,7 +106,7 @@ Automation shares Unsubscribe Groups with the rest of SendGrid. If a contact uns
 
 Create (and or review) Unsubscribe Groups (link to new MC unsubscribe flow documentation)
 
-### Add a Sender  
+## Add a Sender  
 
 <call-out>
 Automation shares Senders with Marketing Campaigns. You can use the same senders(s), or you can create new ones for use with Automation. 
@@ -136,7 +134,6 @@ During the beta, the default exit criteria is “Contacts will be removed from t
 
 </call-out>
 
-
 6. Select an Unsubscribe Group to add to the Welcome series.
 7. Add a category (link to categories documentation) to the automation (optional).
 8. Select the send time for the first email.
@@ -152,7 +149,7 @@ During the beta, the default exit criteria is “Contacts will be removed from t
 1. Navigate to **Automations** and then click **Create an Automation**. 
 1. Under Custom, click **Select**. 
 1. Give the series a name (this is for your reference and will not be visible to your contacts).
-1. Select the entry criteria. You can choose an existing list, or you can create a new list here.
+1. Select the entry criteria. You can choose an existing criteria, or you can create a new one here.
 
 <call-out>
 
