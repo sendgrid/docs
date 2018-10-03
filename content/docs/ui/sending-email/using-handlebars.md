@@ -177,6 +177,7 @@ HTML should contain:
 ```
 <p>Hello {{{firstName}}}</p>
 ```
+> Per Handlebars' documentation: If you don't want Handlebars to escape a value, use the "triple-stash", {{{
 
 Test Data should contain:
 ```
