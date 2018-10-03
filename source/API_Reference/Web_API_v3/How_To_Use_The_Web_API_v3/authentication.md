@@ -14,7 +14,7 @@ Authorization Header
 {% endanchor %}
 
 To authenticate, add an <code>Authorization</code> header to your API
-request that contains an [API Key]({{root_url}}/API_Reference/Web_API_v3/API_Keys/index.html).
+request containing an [API Key]({{root_url}}/API_Reference/Web_API_v3/API_Keys/index.html).
 
 {% anchor h3 %}
 API Keys
