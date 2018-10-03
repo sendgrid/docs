@@ -1,0 +1,150 @@
+// sendgrid style-guide mixins
+// sass-lint:disable no-color-literals, no-vendor-prefixes
+// linting disabled due to mixins from 3rd parties
+
+// colfax
+@mixin colfax($font-weight: 400) {
+  font-family: Colfax, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: $font-weight;
+}
+
+// base icon font styles
+@mixin icon-font-base {
+  font-family: "styleguideicons";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// transition
+@mixin transition($args...) {
+  transition: $args;
+}
+
+// transform
+@mixin transform($val) {
+  transform: $val;
+}
+
+// transform origin
+@mixin transform-origin($val) {
+  -webkit-transform-origin: $val;
+  -moz-transform-origin: $val;
+  -ms-transform-origin: $val;
+  transform-origin: $val;
+}
+
+// opacity
+@mixin opacity($trans) {
+  opacity: $trans;
+}
+
+// clear floats
+@mixin clearfix {
+  &::before,
+  &::after {
+    display: table;
+    content: "";
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+
+// text image replacement
+@mixin text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+@mixin btn-shadow {
+  box-shadow: 0 1px 4px 0 rgba($sg-blue, 0.2);
+}
+
+@mixin dropdown-shadow {
+  box-shadow: 0 2px 6px 0 rgba($slate, 0.2);
+}
+
+// table labels and statuses
+@mixin table-label($color) {
+  color: $color;
+
+  &::before {
+    background-color: $color;
+  }
+}
+
+// tooltip svg arrows
+@mixin svg-arrow($color, $position: up) {
+  $width:   18px;
+  $height:  6px;
+  $degrees: 0;
+  @if ($position == down) {
+    $degrees: 180 18 6;
+  } @else if ($position == left) {
+    $degrees: -90 18 18;
+    $width: 6px;
+    $height: 18px;
+  } @else if ($position == right) {
+    $degrees: 90 6 6;
+    $width: 6px;
+    $height: 18px;
+  }
+  width: $width;
+  height: $height;
+  background: no-repeat url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20width%3D%22#{$width * 2}%22%20height%3D%22#{$height * 2}%22%3E%3Cpath%20fill%3D%22#{$color}%22%20transform%3D%22rotate(#{$degrees})%22%20d%3D%22M2.658,0.000%20C-13.615,0.000%2050.938,0.000%2034.662,0.000%20C28.662,0.000%2023.035,12.002%2018.660,12.002%20C14.285,12.002%208.594,0.000%202.658,0.000%20Z%22/%3E%3C/svg%3E");
+  background-size: 100% auto;
+}
+
+// tooltip base effects
+@mixin base-effects {
+  @include opacity(0);
+  @include transition(all 0.2s ease-out 0.2s);
+  pointer-events: none;
+}
+
+// meter base percentage
+@mixin base-percentage-meter {
+  height: 8px;
+  border-radius: 4px;
+}
+
+// meter percentage
+@mixin percentage-meter($start, $stop) {
+  @include base-percentage-meter;
+  @include background-image(linear-gradient(center left, $start, $stop));
+}
+
+// connector and arrow for email-cards
+@mixin email-card-connector($color: $slate-20) {
+  &::before {
+    position: absolute;
+    right: 50%;
+    bottom: -25px;
+    width: 2px;
+    height: 25px;
+    margin-left: -1px;
+    border-left: 1px solid $color;
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    right: calc(50% - 3.5px); // subpixel value to align point of arrow w/ border above
+    bottom: -30px;
+    border-top: 5px solid $color;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    content: "";
+  }
+}
