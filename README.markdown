@@ -10,7 +10,7 @@
 
 This site is based on Octopress, which in turn is based on Jekyll, with a dash of Bootstrap added.
 
-The develop branch is continuously deployed to a preview site. [View dev site](http://d2w67tjf43xwdp.cloudfront.net/)
+The develop branch is continuously deployed to a preview site. [View dev site](https://d2w67tjf43xwdp.cloudfront.net/)
 
 The develop branch is merged to production weekly (unless we need to do a release sooner than that).
 
@@ -97,7 +97,7 @@ SendGrid does not merge a pull request made against a SendGrid open source proje
 * Install Xcode command line tools > Xcode > Preferences > Downloads (These are bundled in Xcode as of OSX 10.9)
     * Note: You may need to run `$ xcode-select --install`
 * Install JDK  
-The yui compressor will need the full JDK to run - [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+The yui compressor will need the full JDK to run - [https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 * Install RVM
 
 	`$ \curl -sSL https://get.rvm.io | bash -s stable --ruby`
@@ -133,7 +133,7 @@ then set that version to be the default version
 
 	`$ n 6.10.1`
 
-* install git flow to manage branches ([http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/](http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/)) (optional)
+* install git flow to manage branches ([https://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/](https://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/)) (optional)
 
 	`$ brew install git-flow`
 
@@ -178,11 +178,9 @@ to install client-side dependencies.
 
 	`$ bundle install`
 
-	* If the gem installation fails with a message like "An error occurred while installing libv8 (3.16.14.7), and Bundler cannot continue", a few extra steps will be necessary in order to build and install a version of V8 that can be used by the libv8 and therubyracer gems:
+	* If the gem installation fails with a message like `"An error occurred while installing libv8 (3.16.14.7), and Bundler cannot continue"`, a few extra steps will be necessary in order to build and install a version of V8 that can be used by the libv8 and therubyracer gems:
 
 		`$ gem uninstall libv8`
-	
-		`$ brew tap homebrew/versions`
 	
 		`$ brew install --force v8-315`
 	
@@ -236,7 +234,7 @@ Note: if you receive an error message similar to "No Java Runtime Present: Reque
 * Run `java -version` again.
 
 If that worked, then add the above command to your .bash_profile or .profile file and then run 'source .profile'
-[http://stackoverflow.com/a/19582689](http://stackoverflow.com/a/19582689)
+[https://stackoverflow.com/a/19582689](https://stackoverflow.com/a/19582689)
 
 <a name="view"></a>
 ### View your install
@@ -310,7 +308,7 @@ seo:
   title: Really Great Documentation - SendGrid Documentation | SendGrid
   override: true
   description: This is some really great documentation! I hope you like it!
-  canonical: http://sendgrid.com/docs/really-great-docs
+  canonical: https://sendgrid.com/docs/really-great-docs
 ---
 ```
 
@@ -354,11 +352,11 @@ If you are working on API reference docs, you can generate XML and JSON nav tabs
 ```
 {% apiexample identifier GET http://some.endpoint.url var1=stuff&var2=junk %}
   {% response json %}
-{ "foo": "bar" }
+  { "foo": "bar" }
   {% endresponse %}
 
   {% response xml %}
-<foo>bar</foo>
+  <foo>bar</foo>
   {% endresponse %}
 {% endapiexample %}
 ```
@@ -401,7 +399,7 @@ $ npm run spellcheck-file [filename]
 <a name="spellchecker-dictionary"></a>
 ### Dictionary: English-US
 
-See [http://wordlist.aspell.net/dicts/](http://wordlist.aspell.net/dicts/).
+See [https://wordlist.aspell.net/dicts/](https://wordlist.aspell.net/dicts/).
 Also `.spelling` contains a list of custom words added to the dictionary.
 
 <a name="spellchecker-contribution"></a>
