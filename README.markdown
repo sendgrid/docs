@@ -178,11 +178,9 @@ to install client-side dependencies.
 
 	`$ bundle install`
 
-	* If the gem installation fails with a message like "An error occurred while installing libv8 (3.16.14.7), and Bundler cannot continue", a few extra steps will be necessary in order to build and install a version of V8 that can be used by the libv8 and therubyracer gems:
+	* If the gem installation fails with a message like `"An error occurred while installing libv8 (3.16.14.7), and Bundler cannot continue"`, a few extra steps will be necessary in order to build and install a version of V8 that can be used by the libv8 and therubyracer gems:
 
 		`$ gem uninstall libv8`
-	
-		`$ brew tap homebrew/versions`
 	
 		`$ brew install --force v8-315`
 	
