@@ -22,7 +22,7 @@ Code Examples
 {% anchor h2 %}
 Still have questions?
 {% endanchor %}
-Wondering how to make the most of your SendGrid/Azure integration? Check out our Azure related blog entries [here]({{site.blog_url}}/?s=Azure&submit=).
+Wondering how to make the most of your SendGrid/Azure integration? Check out our Azure related blog entries [here]({{site.blog_url}}/?s=Azure).
 
 You are limited to two SendGrid accounts per Azure subscription. This limit exists for security and compliance reasons to prevent abuse.
 
