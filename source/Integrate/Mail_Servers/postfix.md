@@ -69,3 +69,7 @@ Troubleshooting
 If port 587 is not working for you please try 2525 in your postfix config. You may also need to edit /etc/postfix/master.cf to remove # from
 
  #tlsmgr unix - - n 1000? 1 tlsmgr
+
+For other potential errors, please navigate to the default maillog file on your server for debugging purposes. For a CentOS server, the file is in /var/log/maillog by default. 
+
+This file not only reports that the server was unable to use SendGrid to send email but also serves as an excellent debugging tool for new users that catalogues server parameters.
