@@ -67,7 +67,7 @@ During the beta, automations will only trigger to contacts *the first time* they
 
 *To add new contacts:*
 
-1.  Use this CSV template to make sure your CSV is formatted correctly.
+1. Use this CSV template to make sure your CSV is formatted correctly.
 1. Click **Add Contacts** and then select **Upload CSV**.
 1. Choose an existing list or create a new list.
 
