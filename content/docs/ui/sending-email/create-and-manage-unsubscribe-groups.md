@@ -50,6 +50,7 @@ To view the unsubscribe preferences page, select the action menu next to an Unsu
 1. In the URL field enter [unsubscribe], then click **Save**.
 
 *Using the Code Editor:*
+
 1. Select your preferred Unsubscribe Group from the **Settings** > **Recipients**.
 1. Enter the following code styling to the HTML window where you would like your unsubscribe content placed:
 
