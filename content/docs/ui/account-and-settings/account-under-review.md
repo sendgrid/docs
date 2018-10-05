@@ -19,7 +19,7 @@ Once your account is under review, SendGrid sends a notification to the address 
 
  ### 	Warned
  	
-The account maintains full sending functionality during a warning period. However, if we do not receive a response, your account may be suspended to prevent further risk to your sending reputation. Accounts with a warned status can still upgrade their usage plan, or create new sub-users until the review has concluded to our satisfaction.
+The account maintains full sending functionality during a warning period. However, if we do not receive a response, your account may be suspended to prevent further risk to your sending reputation. Accounts with a warned status can still upgrade their usage plan, or create new subusers until the review has concluded to our satisfaction.
 
  ### 	Suspended
  	
@@ -33,7 +33,7 @@ An account in a suspended state continues to incur auto-renewal billing for your
 
  ### 	Deactivated
  	
-A deactivated SendGrid account cannot accept mail. Upon deactivation, SendGrid deletes any undelivered mail queued on the system. Click and Open tracking links are disabled in the deactivated account.  Deactivated sub-users are not accessible via the ‘log in as’ method available to parent accounts. However, deactivated sub-users can still log in directly.
+A deactivated SendGrid account cannot accept mail. Upon deactivation, SendGrid deletes any undelivered mail queued on the system. Click and Open tracking links are disabled in the deactivated account.  Deactivated subusers are not accessible via the ‘log in as’ method available to parent accounts. However, deactivated subusers can still log in directly.
 
 <call-out>
 
@@ -43,7 +43,7 @@ An account in a deactivated state continues to incur auto-renewal billing for yo
 
  ### 	Banned
  	
-Banned accounts cannot access our system either through SendGrid.com or the API. Our system does not accept email requests from banned accounts. Dedicated IPs assigned to the account are removed.  Related sub-users are unable to send email or access their account.
+Banned accounts cannot access our system either through SendGrid.com or the API. Our system does not accept email requests from banned accounts. Dedicated IPs assigned to the account are removed.  Related subusers are unable to send email or access their account.
 
 <call-out>
 
