@@ -35,7 +35,7 @@ You can test up to 6 different variations for each A/B test campaign.
 
 - **Subject Line - Optimize Open Rates**
 
-	Select the Subject Line A/B test to optimize the [Open Rate]({{root_url}}/glossary/open-rate/) of your email campaign, since the subject usually is all the recipient sees until they open your email.
+	Select the Subject Line A/B test to optimize the [Open Rate](https://github.com/sendgrid/docs/blob/develop/content/docs/glossary/open-rate.md) of your email campaign, since the subject usually is all the recipient sees until they open your email.
 
 	High open rates shows the strength of a subject line. Once you find a subject line that works well, you will potentially see other engagement metrics improve as well.
 
@@ -76,11 +76,11 @@ Each variation of the email will be sent to the same number of contacts, within 
 ##  Determine the Winning Criteria for the A/B Test
 - **Open Rate**
 
-  SendGrid automatically selects the winning variation based on how many recipients [open]({{root_url}}/glossary/opens/) your email.
+  SendGrid automatically selects the winning variation based on how many recipients [open](https://github.com/vydao/docs/blob/develop/content/docs/glossary/opens.md) your email.
 
 - **Click Rate**
 
-  SendGrid automatically selects the winning version based on how many recipients [click]({{root_url}}/glossary/clicks/) links and engage with the content in your email.
+  SendGrid automatically selects the winning version based on how many recipients [click](https://github.com/sendgrid/docs/blob/develop/content/docs/glossary/clicks.md) links and engage with the content in your email.
 
 - **Manual**
 
@@ -111,15 +111,15 @@ When a variation wins, based on your criteria and duration, you will be notified
 
   You can also manually choose a winner at any time after you start the test.
 
-  ![]({{root_url}}/images/ab_testing_4.png "A/B test winner")
+  ![](https://github.com/sendgrid/docs/blob/develop/static/images/ab_testing_4.png "A/B test winner")
 
 - **Manually Picking the Winning Version**
 
 	If you chose to Manually determine the A/B test winning criteria (meaning SendGrid is not automatically choosing based on Open Rate or Click Rate), you will be notified by email when the test duration time has passed. At that time, you need to choose your winner manually.
 
-  ![]({{root_url}}/images/ab_testing_3.png "Choose a winner badge")
+  ![](https://github.com/sendgrid/docs/blob/develop/static/images/ab_testing_3.png "Choose a winner badge")
 
-  ![]({{root_url}}/images/ab_testing_2.png "Manually choose a test winner")
+  ![](https://github.com/sendgrid/docs/blob/develop/static/images/ab_testing_2.png "Manually choose a test winner")
 
 <call-out>
 
@@ -134,6 +134,6 @@ If you chose to Manually determine the A/B test winning criteria, you need to re
 
  ## 	Additional Resources
 
-- [Campaign Statistics]({{root_url}}/ui/analytics-and-reporting/marketing-campaigns-stats/)
-- [Design Editor]({{root_url}}/ui/sending-email/editor/#the-design-editor)
-- [Code Editor]({{root_url}}/ui/sending-email/editor/#the-code-editor)
+- [Campaign Statistics](https://github.com/sendgrid/docs/blob/develop/content/docs/ui/analytics-and-reporting/marketing-campaigns-stats.md)
+- [Design Editor](https://github.com/sendgrid/docs/blob/develop/content/docs/ui/sending-email/editor.md/#the-design-editor)
+- [Code Editor](https://github.com/sendgrid/docs/blob/develop/content/docs/ui/sending-email/editor.md/#the-code-editor)
