@@ -19,7 +19,7 @@ This page refers to our beta UI functionality. To find these features, please cl
 
 <call-out>
 
-On all other stats pages, your subuser stats are “rolled up” into the parent account’s statistics. From this page, you can see how each subuser affects your overall stats.
+On all other stats pages, your subuser statistics are “rolled up” into the parent account’s statistics. From this page, you can see how each subuser affects your overall statistics.
 
 </call-out>
 

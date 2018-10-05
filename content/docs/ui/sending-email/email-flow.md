@@ -25,7 +25,7 @@ Imagine that a sender is a host at a party and all of the other guests are the r
 
 ## 	The “Handshake” Details and Results
 
-The sender connects to the SMTP server through SendGrid and tells the server the final destination it would like its message to go to. Let’s say it is example@example.com. The SMTP server recognizes the domain portion (the part after the @ sign) of “customer.com” and contacts the receiving server responsible for accepting messages for that domain. During this connection the two servers exchange multiple pieces of information. The receiving server typically then says one of the following:
+The sender connects to the SMTP server through SendGrid and tells the server the final destination it would like its message to go to. Let’s say it is example@example.com. The SMTP server recognizes the domain portion (the part after the @ sign) of “customer.com” and contacts the receiving server responsible for accepting messages for that domain. During this connection the 2 servers exchange multiple pieces of information. The receiving server typically then says one of the following:
 
 * “Yes, I know who ‘person’ is and all is in order to deliver it to their inbox.”
 * “Yes, I know who ‘person’ is and all is in order to deliver the message but not to the inbox.”
@@ -34,7 +34,7 @@ The sender connects to the SMTP server through SendGrid and tells the server the
 
 ## 	Determining Factors of Delivery
 
-As mentioned before, there are many pieces of information exchanged between the sending and receiving mail servers. As you can see from the email flow diagram, the other two places SendGrid assists in the message path (along with the Outbound Mail Server) are the DNS (Domain Name System) and Authentication portions. The receiving server wants to trust the mail that is being exchanged in order to accept it. DNS and Authentication assists with this decision.
+As mentioned before, there are many pieces of information exchanged between the sending and receiving mail servers. As you can see from the email flow diagram, the other 2 places SendGrid assists in the message path (along with the Outbound Mail Server) are the DNS (Domain Name System) and Authentication portions. The receiving server wants to trust the mail that is being exchanged in order to accept it. DNS and Authentication assists with this decision.
 
  ### 	DNS
  	This stands for “Domain Name System” and it is thought of as the “phone book for the internet.” It houses many pieces of information for the sending domain of a message. The receiving server checks this phone book to see if it can determine who the sender is and if they are trusted.

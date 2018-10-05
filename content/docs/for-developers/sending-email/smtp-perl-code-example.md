@@ -148,7 +148,7 @@ my @toList = ('isaac@example', 'tim@example', 'jose@example');
 # The names of the recipients
 my @nameList = ('Isaac', 'Tim', 'Jose');
 
-# Another subsitution variable
+# Another substitution variable
 my @timeList = ('4pm', '1pm', '2pm');
 
 # Set all of the above variables
@@ -165,7 +165,7 @@ $hdr->addFilterSetting('footer', "text/plain", "Thank you for your business");
 
 my $from = 'you@yourdomain.com';
 
-# For multiple recipient e-mails, the 'to' address is irrelivant
+# For multiple recipient emails, the 'to' address is irrelevant
 my $to = 'example@example.com';
 my $plain = <<EOM;
 Hello -name-,

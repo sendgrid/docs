@@ -67,7 +67,7 @@ my $mime = MIME::Entity->build(Type  => 'multipart/alternative',
 # Create the body of the message (a plain-text and an HTML version).
 # text is your plain-text email
 # html is your html version of the email
-# if the reciever is able to view html emails then only the html
+# if the receiver is able to view html emails then only the html
 # email will be displayed
 my $text = "Hi!\nHow are you?\n";
 my $html = <<EOM;

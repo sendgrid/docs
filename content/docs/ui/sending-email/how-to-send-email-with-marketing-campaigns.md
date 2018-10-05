@@ -12,7 +12,7 @@ seo:
 ---
 <iframe src="https://player.vimeo.com/video/221496578" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-If you want to send email programatically, see the [API reference]({{root_url}}/api-reference/), or the [SMTP Reference]({{root_url}}/for-developers/sending-email/getting-started-smtp/).
+If you want to send email programmatically, see the [API reference]({{root_url}}/api-reference/), or the [SMTP Reference]({{root_url}}/for-developers/sending-email/getting-started-smtp/).
 
 Before sending your first campaign, you need to do the following:
 
@@ -44,7 +44,7 @@ The Design Editor offers users powerful drag & drop WYSIWYG editing tools making
 
  ## 	Designing Your Campaign
 
-Depending on your editor selection, you use different methods to design your campaign. Both the Design Editor and the Code Editor have the same three tabs: **Settings**, **Tags**, and **A/B Testing**.
+Depending on your editor selection, you use different methods to design your campaign. Both the Design Editor and the Code Editor have the same 3 tabs: **Settings**, **Tags**, and **A/B Testing**.
 
 1. Edit your campaign by filling in the fields in the **Settings** Tab.
 

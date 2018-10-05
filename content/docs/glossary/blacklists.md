@@ -45,8 +45,8 @@ If a sending domain (and not the IP address) is blacklisted, that domain’s con
 </call-out>
 
 ## 	Checking Your IP Address
- 	
-Here are two aggregation websites that anyone can use to check on the status of their IP:
+
+Here are 2 aggregation websites that anyone can use to check on the status of their IP:
 - [MulitRBL](http://multirbl.valli.org/)
 - [MXToolbox](http://www.mxtoolbox.com/blacklists.aspx)
 
