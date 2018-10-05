@@ -74,7 +74,7 @@ Listed below are a few errors you may encounter when uploading a CSV to Marketin
 - If there is a header labeled “email”, try moving it to the column A, so it is the first header in your list.
 - Your CSV _must_ include an email header.
 
-![Move email header to colmn A]({{root_url}}/img/listupload_1.png)
+![Move email header to column A]({{root_url}}/img/listupload_1.png)
 
 **Some of your custom fields have not been selected**
 

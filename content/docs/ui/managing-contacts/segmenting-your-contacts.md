@@ -50,7 +50,7 @@ For example, to create a segment of recipients that have clicked on a link in a 
 
 <call-out>
 
-The *Condition* drop-down contains required CSV fields, custom fields, and internal event data to help you get your email campaigns to the correct audience. The *Criteria* drop-down contains operators that tell the segment *how* to handle the data sepcified by the condition.
+The *Condition* drop-down contains required CSV fields, custom fields, and internal event data to help you get your email campaigns to the correct audience. The *Criteria* drop-down contains operators that tell the segment *how* to handle the data specified by the condition.
 
 </call-out>
 

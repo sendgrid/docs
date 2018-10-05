@@ -13,7 +13,7 @@ navigation:
 
 <call-out>
 
-Parent accounts will see aggregated stats for their account and all subuser accounts. Subuser accounts will only see their own stats.
+Parent accounts will see aggregated statistics for their account and all subuser accounts. Subuser accounts will only see their own statistics.
 
 </call-out>
 

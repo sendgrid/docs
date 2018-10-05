@@ -17,7 +17,7 @@ We suggest [CloudFlare](#using-cloudflare), [Fastly](#using-fastly), or [KeyCDN]
 ## Using CloudFlare
 
 
-The following instructions assume you already have a CloudFlare account made, using either a [Full DNS setup](https://support.cloudflare.com/hc/en-us/articles/205195708) or a [CNAME setup](https://support.cloudflare.com/hc/en-us/articles/200168706). You can compare the two different setups [here](https://support.cloudflare.com/hc/en-us/articles/203685674). Note that a CNAME setup is only available to Business or Enterprise level CloudFlare plans.
+The following instructions assume you already have a CloudFlare account made, using either a [Full DNS setup](https://support.cloudflare.com/hc/en-us/articles/205195708) or a [CNAME setup](https://support.cloudflare.com/hc/en-us/articles/200168706). You can compare the 2 different setups [here](https://support.cloudflare.com/hc/en-us/articles/203685674). Note that a CNAME setup is only available to Business or Enterprise level CloudFlare plans.
 
 The instructions also assume that you have set up a valid [branded link]({{root_url}}/ui/account-and-settings/how-to-set-up-link-branding/) on your account. This step is essential for the following instructions to work.
 
