@@ -66,7 +66,7 @@ docker run --rm -it -p 4000:4000 sendgrid/docs:latest
 
 Wait until you see `Server running... press ctrl-c to stop.` and browse to [http://localhost:4000](http://localhost:4000)
 
-### Run linklinkt and jsonlink
+### Run linklint and jsonlink
 
 ```
  bundle exec rake linklint
@@ -75,6 +75,6 @@ Wait until you see `Server running... press ctrl-c to stop.` and browse to [http
 
 ### Run spell check
 
-``
+```
 npm run spellcheck
 ```

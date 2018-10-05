@@ -56,7 +56,7 @@ Teammate names have to be unique across SendGrid, so if you want to continue to 
 
 ## Create new subusers
 
-If you are using subusers, navigate to the [subusers page](https://app.sendgrid.com/settings/subusers) in the UI and click **Export data** to download all of the information on your current subsuers.
+If you are using subusers, navigate to the [subusers page](https://app.sendgrid.com/settings/subusers) in the UI and click **Export data** to download all of the information on your current subusers.
 
 To add subusers to your new account, go to the [subusers page](https://app.sendgrid.com/settings/subusers) in the UI, and click **Create a new subuser**. Use the data from the exported CSV to create a new subuser.
 

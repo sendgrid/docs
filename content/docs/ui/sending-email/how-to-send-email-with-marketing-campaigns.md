@@ -26,8 +26,9 @@ Before sending your first campaign, you need to do the following:
 
 1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**.
 
-2. Click **Create Campaign**.
-<br> To create a campaign from an existing one, find the version you want to use and click the **action menu** to the far right of the campaign and then select **Edit** or **Duplicate**.
+1. Click **Create Campaign**.
+<br> To create a campaign from an existing one, find the version you want to use and hover over the **action menu** to the far right of the campaign and then select **Duplicate**.<br>
+<br> If you have an existing draft, find the version you would like to continue working on and hover over **action menu** to the far right of the campaign then select **Edit**.
 ![]({{root_url}}/images/campaigns_dashboard_categories_search.png)
 
 1. Select the template that you want to use for your campaign.
