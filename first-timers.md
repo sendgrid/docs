@@ -3,7 +3,7 @@
 Editing the SendGrid Documentation is easy!
 If you see an error, a typo, or have something you would like to add, you can make your suggestion via GitHub, the content management system we use for the Docs. Once you have submitted your suggestion, the Docs team can easily review it before it is published to the Docs website.
 
-To make changes to any page on http://sendgrid.dom/docs, follow these steps:
+To make changes to any page on https://sendgrid.com/docs, follow these steps:
 
 1. Navigate to the page you would like to edit and click **View and Edit** in the upper right-hand corner.
 
