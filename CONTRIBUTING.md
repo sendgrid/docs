@@ -288,7 +288,7 @@ $ npm run spellcheck-file [filename]
 ```
 <a name="spellchecker-example"></a>
 #### Example output:
-![Spellcheck Output](./source/images/spellcheck-output.png?raw=true "Spellcheck Output")
+![Spellcheck Output](./static/images/spellcheck-output.png?raw=true "Spellcheck Output")
 
 <a name="spellchecker-dictionary"></a>
 ### Dictionary: English-US
