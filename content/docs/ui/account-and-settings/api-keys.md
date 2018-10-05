@@ -89,11 +89,11 @@ curl -i --request POST \
 
 Look for a **202 Accepted** in the HTTP response headers.
 
-## 	Edit an API Key
+## 	Editing an API Key
 
 Click the action menu in the same row as the key you would like to edit. From here you can delete a key, making it completely inactive, or you can edit your key’s name and permissions.
 
-## 	Delete an API Key
+## 	Deleting an API Key
 
 <call-out type="warning">
 
@@ -101,4 +101,4 @@ Once you delete a key, it can no longer be used to access SendGrid’s services.
 
 </call-out>
 
-Click the action menu in the same row as the key you want to inactivate. Select **Delete**.  This will delete the key permanently, making it inactive. Any subsequent API calls using this deleted API key will be rejected by SendGrid.
+Click the action menu in the same row as the key you want to inactivate. Select **Delete** followed by **Confirm**. This will delete the key permanently, making it inactive. Any subsequent API calls using this deleted API key will be rejected by SendGrid.
