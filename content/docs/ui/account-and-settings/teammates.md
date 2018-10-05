@@ -26,7 +26,7 @@ _To invite a Teammate to your account:_
 
 <call-out type="warning">
 
-Teammate invitations are valid for seven days.
+Teammate invitations are valid for 7 days.
 
 </call-out>
 
@@ -52,7 +52,7 @@ Only administrator teammates may impersonate subusers.
 
  ### 	Configuring permissions
 
-The three different permission levels are:
+The 3 different permission levels are:
 
 * **Restricted Access -** Teammates with no access to a feature cannot change that feature’s settings or view it within the SendGrid UI. However, you can still [grant them access to specific features](#granting-feature-access).
 * **Read-only Access -** Teammates with read-only access will not be able to change or configure a feature. However, they will be able to view any information provided by that feature.
@@ -114,7 +114,7 @@ API Keys are used to authenticate API calls. Just as a teammate can be given spe
 
 <call-out>
 
-API Keys and Teammates can be used as two different methods of restricting access to the same SendGrid features.
+API Keys and Teammates can be used as 2 different methods of restricting access to the same SendGrid features.
 
 However, a teammate cannot change their own permissions via API key. For example, a teammate with restricted access to features in the SendGrid user interface but full access to API Keys cannot make an API call to modify their permissions in the user interface.
 

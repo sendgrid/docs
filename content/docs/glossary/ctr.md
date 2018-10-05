@@ -27,7 +27,7 @@ Click-through rates help determine the relative success or failure of an email c
 As mentioned before, click-through rates can vary between campaigns depending on a lot of different factors, however the three most significant aspects are arguably message content, sending frequency, and overall consistency.
 
  ### Message Content 	
-Make sure that the content of your emails is to-the-point and relevant to your subject line. Keep your paragraphs short whenever possible, ideally no more than three to four concise sentences. Do not use images frivolously. You should try to convey your updates primarily through text, as too many images in an email body can make a message take longer to load and/or might make it look suspicious at a first glance (since many email clients do not load images within messages by default).
+Make sure that the content of your emails is to-the-point and relevant to your subject line. Keep your paragraphs short whenever possible, ideally no more than 3 to 4 concise sentences. Do not use images frivolously. You should try to convey your updates primarily through text, as too many images in an email body can make a message take longer to load and/or might make it look suspicious at a first glance (since many email clients do not load images within messages by default).
 
  ### Sending Frequency 	
 Be up front with your recipients regarding your sending rates. If you tell your users that you will send out one newsletter every week, then it's important to stick to that schedule. Better still, give your recipients options, such as the ability to choose between a weekly and a monthly newsletter.

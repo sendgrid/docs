@@ -61,7 +61,7 @@ The GitHub issue tracker is the preferred channel for library feature requests, 
 <a name="improvements-to-the-codebase"></a>
 ## Improvements to the Codebase
 
-We welcome direct contributions to the sendgrid docs code base. Thank you!
+We welcome direct contributions to the SendGrid docs code base. Thank you!
 
 
 <a name="local"></a>
@@ -338,9 +338,9 @@ The best way I've found to solve this issue without too much overhead work:
    [interactive rebase](https://help.github.com/articles/interactive-rebase)
    feature to tidy up your commits before making them public.
 
-4a. Create tests.
+   4a. Create tests.
 
-4b. Create or update the example code that demonstrates the functionality of this change to the code.
+   4b. Create or update the example code that demonstrates the functionality of this change to the code.
 
 5. Locally merge (or rebase) the upstream development branch into your topic branch:
 

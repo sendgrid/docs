@@ -38,7 +38,7 @@ If you are a new SendGrid user and haven’t begun sending email yet, please go 
 
 Some of the biggest improvements made to the mail send endpoint reside in the JSON schema used to format and submit the data payload for your email. While the v2 mail send endpoint relies on a combination of JSON and SendGrid’s x-smtpapi headers, all content and metadata sent via the v3 mail send endpoint is defined using JSON within a single request body.
 
-Below you will find a visual comparison of the v2 and v3 JSON schemas that highlights equivalent parameters between the two versions and any parameters that have been added or removed. Significant additions include the "personalizations", "sandbox_mode", and "bypass_list_management" parameters.
+Below you will find a visual comparison of the v2 and v3 JSON schemas that highlights equivalent parameters between the 2 versions and any parameters that have been added or removed. Significant additions include the "personalizations", "sandbox_mode", and "bypass_list_management" parameters.
 
 For a more detailed discussion of these new parameters, please visit the [v3 Mail Send Overview]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html).
 

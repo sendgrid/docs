@@ -60,7 +60,7 @@ public class Email
   public string SenderIp { get; set; }
 
   /// <summary>
-  /// A JSON string containing the SMTP envelope. This will have two variables: to, which is an array of recipients, and from, which is the return path for the message.
+  /// A JSON string containing the SMTP envelope. This will have 2 variables: to, which is an array of recipients, and from, which is the return path for the message.
   /// </summary>
   public string Envelope { get; set; }
 

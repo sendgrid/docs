@@ -27,7 +27,7 @@ Before you create and send an email using a dynamic transactional template you n
 4. Select an editor and click **Continue**.
 5. Design your template. For more information on using Handlebars, see [Using handlebars]({{root_url}}/ui/sending-email/using-handlebars/).
 
-For sample templates that that include examples of receipts, password resets, account activations, newsletters, and sale notifications, check out the [dynamic-template section of our email templates GitHub repo](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates).
+For sample templates that that include examples of receipts, password resets, account activations, newsletters, and sale notifications, check out the [dynamic-template section of our email template's GitHub repo](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates).
 
 The cURL calls on this page use the [receipt example template](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates/receipt).
 
@@ -91,7 +91,7 @@ curl -X "POST" "https://api.sendgrid.com/v3/mail/send" \
 }'
 ```
 
-It is important to note two sections of this call when using dynamic templates.
+It is important to note 2 sections of this call when using dynamic templates.
 
 In order to send dynamic content, you need to specify a JSON blob containing the dynamic data your template will use in the `dynamic_template_data` object. The handlebars script you write will refer to the values in your JSON blob by referencing the JSON key, check out [these examples]({{root_url}}/ui/sending-email/using-handlebars/#handlebarjs-reference). This handlebars templating can be used in the text, html, and subject lines of your template. The total collective size of your dynamic data may not exceed 10,000 bytes per personalization object.
 
