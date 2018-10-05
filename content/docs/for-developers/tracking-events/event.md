@@ -723,7 +723,7 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
 - <a name="smtpid"></a>`smtp-id` - a unique ID attached to the message by the originating system.
 - <a name="useragent"></a>`useragent` - the user agent responsible for the event. This is usually a web browser. For example, "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36".
 - <a name="ip"></a>`IP` - the IP address used to send the email. For `open` and `click` events, it is the IP address of the recipient who engaged with the email.
-- <a name="sgeventid"></a>`sg_event_id` - a unique ID to this event that you can use for deduplication purposes. These IDs are either 22 or 48 characters long.
+- <a name="sgeventid"></a>`sg_event_id` - a unique ID to this event that you can use for deduplication purposes. These IDs are 22 characters long.
 - <a name="sgmessageid"></a>`sg_message_id` - a unique, internal SendGrid ID for the message. The first half of this is pulled from the `smtp-id`.
 - <a name="reason"></a>`reason` - any sort of error response returned by the receiving server that describes the reason this event type was triggered.
 - <a name="status"></a>`status` - status code string. Corresponds to HTTP status code - for example, a JSON response of 5.0.0 is the same as a 500 error response.
