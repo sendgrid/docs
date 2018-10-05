@@ -338,9 +338,9 @@ The best way I've found to solve this issue without too much overhead work:
    [interactive rebase](https://help.github.com/articles/interactive-rebase)
    feature to tidy up your commits before making them public.
 
-4a. Create tests.
+   4a. Create tests.
 
-4b. Create or update the example code that demonstrates the functionality of this change to the code.
+   4b. Create or update the example code that demonstrates the functionality of this change to the code.
 
 5. Locally merge (or rebase) the upstream development branch into your topic branch:
 
