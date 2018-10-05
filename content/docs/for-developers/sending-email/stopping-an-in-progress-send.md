@@ -44,7 +44,7 @@ You have several options for canceling or unscheduling a campaign.
 
  ### 	Using the User Interface
 
-If you have **Send Immediately** under the **Scheduling** dropdown menu in the campaign builder set to OFF then you only have a very brief window of opportunity to cancel the campaign after clicking **Send Campaign**. You have two options:
+If you have **Send Immediately** under the **Scheduling** dropdown menu in the campaign builder set to OFF then you only have a very brief window of opportunity to cancel the campaign after clicking **Send Campaign**. You have 2 options:
 
 1. **Deleting the Campaign**
 

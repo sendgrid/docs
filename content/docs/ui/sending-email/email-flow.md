@@ -34,7 +34,7 @@ The sender connects to the SMTP server through SendGrid and tells the server the
 
 ## 	Determining Factors of Delivery
 
-As mentioned before, there are many pieces of information exchanged between the sending and receiving mail servers. As you can see from the email flow diagram, the other two places SendGrid assists in the message path (along with the Outbound Mail Server) are the DNS (Domain Name System) and Authentication portions. The receiving server wants to trust the mail that is being exchanged in order to accept it. DNS and Authentication assists with this decision.
+As mentioned before, there are many pieces of information exchanged between the sending and receiving mail servers. As you can see from the email flow diagram, the other 2 places SendGrid assists in the message path (along with the Outbound Mail Server) are the DNS (Domain Name System) and Authentication portions. The receiving server wants to trust the mail that is being exchanged in order to accept it. DNS and Authentication assists with this decision.
 
 ### 	DNS
 DNS stands for “Domain Name System” and it is thought of as the “phone book for the Internet”. It houses many pieces of information for the sending domain of a message. The receiving server checks this “phone book” to see if it can determine who the sender is and if they are trusted.

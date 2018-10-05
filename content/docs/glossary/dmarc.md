@@ -94,7 +94,7 @@ Example: receiver.org!sender.com!1335571200!1335657599.zip
 
 <call-out>
 
- Aggregate reports are sent as a .zip attachment, so be sure the address you’re defining is able to accept attachments in this file type.
+ Aggregate reports are sent as a ZIP attachment, so be sure the address you’re defining is able to accept attachments in this file type.
 
  </call-out>
 

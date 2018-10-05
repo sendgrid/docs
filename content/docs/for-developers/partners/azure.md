@@ -8,8 +8,8 @@ navigation:
 ---
 
 ## 	Point and Click Setup in Windows Azure
- 	
-You can control a website, mobile backend and SendGrid all from within the Windows Azure management portal. We will cover all three of these in this tutorial.
+
+You can control a website, mobile backend and SendGrid all from within the Windows Azure management portal. We will cover all 3 of these in this tutorial.
 
 To start, create a SendGrid account from the management portal:
 
@@ -67,7 +67,7 @@ Find your IP address and note the further instructions in the management portal:
 
 Now you need to update your own DNS settings outside of the Windows Azure interface. This points your domain’s web traffic to Windows Azure and your email to SendGrid. How you change your DNS depends on where your DNS is administered, which could be your host or domain registrar.
 
-You’ll need to make three updates to your DNS:
+You’ll need to make 3 updates to your DNS:
 
 1.	Create an A record for playlist.example.com that points to the IP noted above
 2.	Create a CNAME record according to the instructions on the screen where you obtained the IP Address

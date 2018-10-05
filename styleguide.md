@@ -2,8 +2,8 @@ Hello! Thank you for choosing to help contribute to the SendGrid documentation s
 
 * [Style](#style)
     * [Numbers](#numbers)
-    * [About Additional Resources](#about-additional-resources)
-    * [Cross References](#cross-references)
+    * [About additional resources](#about-additional-resources)
+    * [Cross references](#cross-references)
 * [Terminology](#terminology)
 * [Punctuation](#punctuation)
 * [Capitalization](#capitalization)
@@ -28,7 +28,7 @@ Where possible, write pages in a "jobs to be done" format. Jobs to be done style
 * Table of contents at the beginning
 * "Additional Resources" section at the end
 * Include sections to achieve the goal, with steps for each task (numbered steps, clear directions, and correct UI workflow)
-	For an example, see [Sending a Campaign]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/)
+	For an example, see [Sending a campaign]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/)
 
 **Avoid passive voice.** A good way to check if your sentence is in passive or not is to add "by zombies" to the end of it. If zombies end up doing the action, it's passive.
 
@@ -42,7 +42,7 @@ YES: “SendGrid offers 10 templates in Marketing Campaigns.”
 YES: “Ten templates are included in Marketing Campaigns.”
 
 <a name="cross references"></a>
-### Cross References
+### Cross references
 
 When referring to other pages in the documentation, make sure your link text is descriptive.
 
@@ -50,21 +50,21 @@ YES: For more information, see [Event Webhook] documentation.
 NO: For more information, click [here].
 
 <a name="about-additional-resources"></a>
-### About Additional Resources
+### About "Additional resources"
 
-"Additional Resources" is an h2 section that contains three to five bullet points with links out to other closely related pages. These pages could be SendGrid blogs or docs pages with information about next steps, use cases, or other things a user should consider when they are completing the task on the page. Every page should have an additional resources page, so if it doesn't, feel free to add one!
+"Additional resources" is an h2 section that contains 3 to 5 bullet points with links out to other closely related pages. These pages could be SendGrid blogs or docs pages with information about next steps, use cases, or other things a user should consider when they are completing the task on the page. Every page should have an additional resources page, so if it doesn't, feel free to add one!
 
-Here is an example "Additional Resources" section: https://sendgrid.com/docs/ui/sending-email/editor/#additional-resources
+Here is an example "Additional resources" section: https://sendgrid.com/docs/ui/sending-email/editor/#additional-resources
 
 Here is example formatting:
 
 ```
-## Additional Resources
+## Additional resources
 
-* [Sending an Email]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/)
-* [A/B Testing]({{root_url}}/ui/sending-email/a-b-testing/)
-* [Campaign Statistics]({{root_url}}/ui/analytics-and-reporting/marketing-campaigns-stats/)
-* [Marketing Templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/)
+* [Sending an email]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/)
+* [A/B testing]({{root_url}}/ui/sending-email/a-b-testing/)
+* [Campaign statistics]({{root_url}}/ui/analytics-and-reporting/marketing-campaigns-stats/)
+* [Marketing templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/)
 ```
 
 <a name="terminology"></a>
@@ -148,7 +148,7 @@ Not every single page or step needs an accompanying screenshot. When in doubt, f
 
 ### File format and naming:
 
-Please use .png, .gif, or .jpg files. Give the screenshots unique, meaningful names, obeying a specific format, such as general_settings_privacy. Avoid spaces, uppercase letters, and excessively long names.
+Please use PNG, GIF, or JPG files. Give the screenshots unique, meaningful names, obeying a specific format, such as general_settings_privacy. Avoid spaces, uppercase letters, and excessively long names.
 
 ### Size and resolution:
 

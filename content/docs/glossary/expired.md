@@ -16,7 +16,7 @@ Bounced emails are commonly due to SMTP 4.X.X errors or SMTP 5.X.X errors, which
 
 * An expired, inactive, or disabled recipient address
 * The recipient's mailbox has exceeded it's limit
-* An incorrect receipient email address
+* An incorrect recipient email address
 * Domain frequency limited
 * Connection frequency limited
 * IP frequency limited

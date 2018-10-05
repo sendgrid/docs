@@ -41,7 +41,7 @@ To edit your name and email address, click  **Change Contact Info**.
 
 <call-out>
 
-If you find that your scheduled sends or stats seem like they are not quite correct, please double check your timezone.
+If you find that your scheduled sends or statistics seem like they are not quite correct, please double check your timezone.
 
 </call-out>
 

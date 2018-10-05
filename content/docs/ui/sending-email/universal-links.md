@@ -82,7 +82,7 @@ Both "apple-app-site-association" and "digital asset links" files are comprised 
 
 <call-out type="warning">
 
-**Do not** append the .json file extension to your apple-app-site-association file!
+**Do not** append the JSON file extension to your apple-app-site-association file!
 
 </call-out>
 
@@ -107,7 +107,7 @@ Both "apple-app-site-association" and "digital asset links" files are comprised 
 
 <call-out>
 
-When configuring your universal links in iOS, you specify which paths you want to be handled by the app by using the `paths` argument in the `apple-app-site-association` file. By specifing only the path `["/uni/*"]`, and using the `universal=true` attribute on your links as documented below, only appropriate links will be handled by the app, and others will be opened in the phone's browser.
+When configuring your universal links in iOS, you specify which paths you want to be handled by the app by using the `paths` argument in the `apple-app-site-association` file. By specifying only the path `["/uni/*"]`, and using the `universal=true` attribute on your links as documented below, only appropriate links will be handled by the app, and others will be opened in the phone's browser.
 
 Android requires that you specify these paths inside your app, rather than the assetlinks.json file. This is accomplished by adding intent filters for specific hosts and paths. Please visit [Google's Developer Documentation](https://developer.android.com/training/app-indexing/deep-linking.html) to learn how to add an intent filter to your app manifest that can handle your universal links.
 

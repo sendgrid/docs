@@ -12,7 +12,7 @@ seo:
 ---
 <iframe src="https://player.vimeo.com/video/221496578" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-If you want to send email programatically, see the [API reference]({{root_url}}/api-reference/), or the [SMTP Reference]({{root_url}}/for-developers/sending-email/getting-started-smtp/).
+If you want to send email programmatically, see the [API reference]({{root_url}}/api-reference/), or the [SMTP Reference]({{root_url}}/for-developers/sending-email/getting-started-smtp/).
 
 Before sending your first campaign, you need to do the following:
 
@@ -26,8 +26,9 @@ Before sending your first campaign, you need to do the following:
 
 1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**.
 
-2. Click **Create Campaign**.
-<br> To create a campaign from an existing one, find the version you want to use and click the **action menu** to the far right of the campaign and then select **Edit** or **Duplicate**.
+1. Click **Create Campaign**.
+<br> To create a campaign from an existing one, find the version you want to use and hover over the **action menu** to the far right of the campaign and then select **Duplicate**.<br>
+<br> If you have an existing draft, find the version you would like to continue working on and hover over **action menu** to the far right of the campaign then select **Edit**.
 ![]({{root_url}}/images/campaigns_dashboard_categories_search.png)
 
 1. Select the template that you want to use for your campaign.
@@ -43,7 +44,7 @@ The Design Editor offers users powerful drag & drop WYSIWYG editing tools making
 
  ## 	Designing Your Campaign
 
-Depending on your editor selection, you use different methods to design your campaign. Both the Design Editor and the Code Editor have the same three tabs: **Settings**, **Tags**, and **A/B Testing**.
+Depending on your editor selection, you use different methods to design your campaign. Both the Design Editor and the Code Editor have the same 3 tabs: **Settings**, **Tags**, and **A/B Testing**.
 
 1. Edit your campaign by filling in the fields in the **Settings** Tab.
 

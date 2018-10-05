@@ -24,7 +24,7 @@ Each SMTP call you make returns a response. `200` responses are usually success 
   <tr>
     <th>Error</th>
     <th>Message</th>
-    <th>Explaination</th>
+    <th>Explanation</th>
   </tr>
   <tr>
     <td>250</td>
@@ -64,7 +64,7 @@ Each SMTP call you make returns a response. `200` responses are usually success 
   <tr>
     <td>552</td>
     <td>`This message is larger than the current system limit or the recipient’s mailbox is full. Create a shorter message body or remove attachments and try sending it again.`</td>
-    <td>The recepients mailbox has exceeded its storage limits. We don't resend messages with this error code because this is usually a sign this is an abandoned email.</td>
+    <td>The recipients mailbox has exceeded its storage limits. We don't resend messages with this error code because this is usually a sign this is an abandoned email.</td>
   </tr>
   <tr>
     <td>553</td>
