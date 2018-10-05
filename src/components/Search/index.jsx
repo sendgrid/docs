@@ -3,11 +3,10 @@ import _ from 'lodash';
 import STARWARS from '../../constants/starWars';
 import './search.scss';
 
-const starwars = 'yoda';
-
 class Search extends React.Component {
   componentDidMount() {
     const container = document.querySelector('.search-hero');
+    const prefix = process.env.NODE_ENV === 'development' ? '' : '/docs';
     window.docsearch({
       apiKey: '621c583d8098d07c471dbaf6c2178e56',
       indexName: 'sendgrid_hc',
@@ -16,11 +15,10 @@ class Search extends React.Component {
       queryHook(query) {
         const starKeys = Object.keys(STARWARS);
         const matches = starKeys.filter(val => _.includes(query, val));
-
         if (matches.length) {
           const gif = STARWARS[matches[0]];
           container.classList.add('star-wars');
-          container.style.backgroundImage = `url('${gif}')`;
+          container.style.backgroundImage = `url('${prefix}${gif}')`;
         } else {
           container.classList.remove('star-wars');
           container.style = 'none';
