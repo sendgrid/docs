@@ -19,6 +19,15 @@ $card-gutter: 40px;
   background: $gradient-hero;
 }
 
+.search-hero.star-wars {
+  background-size: cover;
+  background-position: center;
+
+  #query, .ds-dropdown-menu {
+    opacity: 0.9;
+  }
+}
+
 .search-hero__bg {
   padding: $scaleup-6 0 13rem 0;
   background: url('../img/help-center-hero.svg') no-repeat;
