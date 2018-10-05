@@ -72,9 +72,3 @@ Wait until you see `Server running... press ctrl-c to stop.` and browse to [http
  bundle exec rake linklint
  bundle exec rake validate_json_xml
 ```
-
-### Run spell check
-
-```
-npm run spellcheck
-```
