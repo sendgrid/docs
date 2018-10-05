@@ -1,10 +1,10 @@
 const STARWARS = {
-  'star wars': '/img/search-chewie.gif',
+  'star wars': '/docs/img/search-chewie.gif',
   'darth vader': '/img/search-darth-vader.gif',
-  r2d2: '/img/search-r2d2.gif',
-  chewie: '/img/search-chewie.gif',
-  'luke skywalker': '/img/search-luke.gif',
-  yoda: '/img/search-yoda.gif',
+  r2d2: '/docs/img/search-r2d2.gif',
+  chewie: '/docs/img/search-chewie.gif',
+  'luke skywalker': '/docs/img/search-luke.gif',
+  yoda: '/docs/img/search-yoda.gif',
 };
 
 export default STARWARS;
