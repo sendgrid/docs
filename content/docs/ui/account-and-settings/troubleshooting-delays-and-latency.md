@@ -13,7 +13,7 @@ navigation:
 ---
 
 <call-out>
- Experiencing delays? Check our _[Status Page](http://status.sendgrid.com/)_ for the current state of all SendGrid Services.
+ Experiencing delays? Check our [Status Page](http://status.sendgrid.com/) for the current state of all SendGrid Services.
 </call-out>
 
  As you send emails, you may encounter scenarios where mail seems to take more time than it should to get to it's final destination. Mail delays can manifest in a number of ways, so we've collected a list of tips to help you try to track them down!
