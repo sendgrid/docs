@@ -1,6 +1,7 @@
 ---
 layout: page
 weight: 0
+group: platform-partners
 title: Jelastic
 navigation:
   show: true
