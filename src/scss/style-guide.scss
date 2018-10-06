@@ -1,0 +1,21 @@
+// import global styles
+@import 'global/variables';
+@import 'global/mixins';
+@import 'global/reset';
+@import 'global/main';
+@import 'global/typography';
+@import 'global/grid';
+@import 'global/utilities';
+
+// import components
+@import 'components/alerts';
+@import 'components/badges';
+@import 'components/buttons';
+@import 'components/breadcrumbs';
+@import 'components/cards';
+@import 'components/tables';
+@import 'components/tabs';
+@import 'components/textareas';
+@import 'components/text-inputs';
+@import 'components/tooltips';
+@import 'components/algolia';

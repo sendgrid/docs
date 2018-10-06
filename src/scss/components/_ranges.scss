@@ -1,0 +1,164 @@
+// sass-lint:disable no-vendor-prefixes
+// linting disabled due to browser specific styles
+
+@mixin range-slider-thumb {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  background: $white;
+  border: 1px solid $slate-20;
+  border-radius: 50%;
+}
+
+@mixin range-slider-track {
+  width: 100%;
+  height: 6px;
+  margin: 0;
+  background-color: $sg-blue;
+  background-image: linear-gradient(90deg, $slate-20 100%, $sg-blue 100%);
+  background-repeat: no-repeat;
+  border-radius: 3px;
+  -webkit-appearance: none;
+}
+
+.input-range-wrap {
+  position: relative;
+  min-height: 12px;
+  margin-bottom: 20px;
+}
+
+[type="range"] {
+  @include range-slider-track;
+
+  &::-webkit-slider-thumb {
+    @include range-slider-thumb;
+    display: block;
+    overflow: visible;
+    -webkit-appearance: none;
+  }
+
+  &::-moz-range-thumb {
+    @include range-slider-thumb;
+  }
+
+  &::-moz-range-progress {
+    height: 6px;
+    background-color: $sg-blue;
+  }
+
+  &::-ms-thumb {
+    @include range-slider-thumb;
+  }
+
+  &::-ms-fill-lower {
+    background-color: $sg-blue;
+  }
+
+  &::fill-lower {
+    background-color: $sg-blue;
+  }
+}
+
+.input-range-percent {
+  margin-top: 6px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.input-multi-range-label {
+  position: relative;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  overflow: hidden;
+  cursor: pointer;
+
+  &::before {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    text-indent: 0;
+    vertical-align: top;
+    background-color: $slate-20;
+    border: 1px solid $slate-20;
+    border-radius: 50%;
+    content: "";
+  }
+
+  &:focus::before {
+    border-color: $sg-blue;
+  }
+}
+
+.input-multi-range {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  display: inline-block;
+  height: 12px;
+
+  &:nth-child(1) {
+    left: 0;
+  }
+
+  &:nth-child(2) {
+    left: 50%;
+    margin-left: -6px;
+  }
+
+  &:nth-child(3) {
+    right: 0;
+    left: auto;
+  }
+
+  &.is-not-selected .input-multi-range-label::before {
+    background-color: $sg-blue;
+    border-color: $sg-blue;
+  }
+
+  &.is-selected + .is-not-selected .input-multi-range-label::before {
+    background-color: $slate-20;
+    border-color: $slate-20;
+  }
+
+  [type="radio"]:checked + .input-multi-range-label::before {
+    background-color: $white;
+  }
+}
+
+.input-multi-range-track {
+  position: absolute;
+  top: 3px;
+  z-index: 1;
+  width: 100%;
+  height: 6px;
+  background: $slate-20;
+  border-radius: 3px;
+
+  .input-multi-range-fill {
+    width: 0;
+    height: 6px;
+    background-color: $sg-blue;
+    border-radius: 3px;
+  }
+}
+
+.input-range-small {
+
+  .input-multi-range {
+    height: 9px;
+  }
+
+  .input-multi-range-label,
+  .input-multi-range-label::before {
+    width: 9px;
+    height: 9px;
+  }
+
+  .input-multi-range-track,
+  .input-multi-range-fill {
+    top: 6px;
+    height: 3px;
+  }
+
+}

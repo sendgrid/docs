@@ -1,0 +1,30 @@
+.breadcrumb {
+  padding-left: 0;
+
+  @media (max-width: $width-small) {
+    margin-top: $scaledown-1;
+    margin-bottom: $scaledown-1;
+  }
+
+  li {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: $slate;
+  }
+
+  li + li::before {
+    padding: 0 6px;
+    color: $steel;
+    content: "/\00a0";
+  }
+}
+
+.nav-sub .row {
+  align-items: center;
+}
+
+.breadcrumb .breadcrumb-item-user-interface {
+  display: none;
+}
