@@ -13,6 +13,7 @@ navigation:
 ---
 
 <call-out>
+
  Experiencing delays? Check our [Status Page](http://status.sendgrid.com/) for the current state of all SendGrid Services.
 </call-out>
 
