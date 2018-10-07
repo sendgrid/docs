@@ -1,0 +1,167 @@
+// sass-lint:disable no-important
+// linting properties disabled due to potential for alert position to be overriden
+
+.alert {
+  position: relative;
+  z-index: 1000;
+  padding: 20px 0;
+  font-size: 13px;
+  text-align: center;
+
+  &.alert-success {
+    color: $alert-success-text;
+    background-color: $alert-success;
+
+    a {
+      color: $alert-success-text;
+    }
+
+    .btn-primary {
+      color: $alert-success-text;
+      background: $alert-success;
+      border-color: $alert-success-text;
+    }
+  }
+
+  &.alert-warning {
+    color: $alert-warning-text;
+    background-color: $alert-warning;
+
+    a {
+      color: $alert-warning-text;
+    }
+
+    .btn-primary {
+      color: $alert-warning-text;
+      background: $alert-warning;
+      border-color: $alert-warning-text;
+    }
+  }
+
+  &.alert-danger {
+    color: $alert-danger-text;
+    background-color: $alert-danger;
+
+    a {
+      color: $alert-danger-text;
+    }
+
+    .btn-primary {
+      color: $alert-danger-text;
+      background: $alert-danger;
+      border-color: $alert-danger-text;
+    }
+  }
+
+  &.alert-verification,
+  &.alert-trial {
+    color: $white;
+
+    a {
+      color: $white;
+    }
+  }
+
+  &.alert-verification {
+    background-color: $alert-verification;
+
+    .btn-primary {
+      margin-top: -5px;
+      margin-bottom: -5px;
+      color: $mantis;
+      background: $white;
+      border-color: $white;
+    }
+
+    .step,
+    .all-steps {
+      position: absolute;
+      max-width: 100%;
+      margin: 0;
+    }
+
+    .step {
+      left: 30px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .all-steps {
+      right: 30px;
+    }
+  }
+
+  &.alert-trial {
+    background-color: $alert-trial;
+
+    .btn-primary {
+      margin-top: -5px;
+      margin-bottom: -5px;
+      color: $white;
+      background: $slate;
+      border-color: $white;
+    }
+  }
+
+  &.alert-inline {
+    z-index: 0;
+    align-self: flex-end;
+    width: 100%;
+
+    p {
+      text-align: left;
+    }
+  }
+
+  &.is-hidden,
+  &.is-visible {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    transition: top 0.5s;
+  }
+
+  &.is-hidden {
+    top: -60px;
+  }
+
+  &.is-visible {
+    top: 0 !important;
+  }
+
+  &.tiara-offset {
+    left: 180px;
+    width: calc(100vw - 180px);
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  p {
+    position: relative;
+    display: inline-block;
+    max-width: 80%;
+    margin: 0 40px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .sg-icon {
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    margin-top: -10px;
+    font-size: 20px;
+
+    &.sg-icon-x {
+      right: -40px;
+      left: auto;
+      cursor: pointer;
+    }
+  }
+
+  .btn {
+    margin-left: 20px;
+  }
+}

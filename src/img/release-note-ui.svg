@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Release-Notes" transform="translate(-530.000000, -975.000000)">
+            <g id="Group-15" transform="translate(530.000000, 975.000000)">
+                <g id="Group-6-Copy-4">
+                    <g id="Group-13">
+                        <g id="Group-5">
+                            <circle id="Oval-2" fill="#D9FFF8" cx="35" cy="35" r="35"></circle>
+                            <g id="Group-3" transform="translate(17.500000, 18.666667)" stroke="#39DFC1" stroke-width="1.16666667">
+                                <g id="Group-941" transform="translate(0.000000, 2.819444)" stroke-linejoin="round">
+                                    <path d="M0.7,4.93402778 L34.3,4.93402778" id="Stroke-2829" stroke-linecap="round"></path>
+                                    <path d="M7.7,1.40972222 C7.7,1.79880556 7.3864,2.11458333 7,2.11458333 C6.6136,2.11458333 6.3,1.79880556 6.3,1.40972222 C6.3,1.02063889 6.6136,0.704861111 7,0.704861111 C7.3864,0.704861111 7.7,1.02063889 7.7,1.40972222 L7.7,1.40972222 Z" id="Stroke-2830" stroke-linecap="round"></path>
+                                    <path d="M11.9,1.40972222 C11.9,1.79880556 11.5864,2.11458333 11.2,2.11458333 C10.8136,2.11458333 10.5,1.79880556 10.5,1.40972222 C10.5,1.02063889 10.8136,0.704861111 11.2,0.704861111 C11.5864,0.704861111 11.9,1.02063889 11.9,1.40972222 L11.9,1.40972222 Z" id="Stroke-2831" stroke-linecap="round"></path>
+                                    <path d="M16.1,1.40972222 C16.1,1.79880556 15.7864,2.11458333 15.4,2.11458333 C15.0136,2.11458333 14.7,1.79880556 14.7,1.40972222 C14.7,1.02063889 15.0136,0.704861111 15.4,0.704861111 C15.7864,0.704861111 16.1,1.02063889 16.1,1.40972222 L16.1,1.40972222 Z" id="Stroke-2832" stroke-linecap="round"></path>
+                                    <path d="M14.7,4.93402778 L14.7,30.3090278" id="Stroke-2833"></path>
+                                    <path d="M6.34368,9.16319444 L10.52128,9.16319444" id="Stroke-2834" stroke-linecap="round"></path>
+                                    <path d="M6.34368,11.9826389 L10.52128,11.9826389" id="Stroke-2835" stroke-linecap="round"></path>
+                                    <path d="M6.34368,14.8020833 L10.52128,14.8020833" id="Stroke-2836" stroke-linecap="round"></path>
+                                    <path d="M6.34368,17.6215278 L10.52128,17.6215278" id="Stroke-2837" stroke-linecap="round"></path>
+                                    <path d="M6.34368,20.4409722 L10.52128,20.4409722" id="Stroke-2838" stroke-linecap="round"></path>
+                                    <path d="M6.34368,23.2604167 L10.52128,23.2604167" id="Stroke-2839" stroke-linecap="round"></path>
+                                    <path d="M6.34368,26.0798611 L10.52128,26.0798611" id="Stroke-2840" stroke-linecap="round"></path>
+                                    <polygon id="Stroke-2841" stroke-linecap="round" points="18.9 16.2118056 30.1 16.2118056 30.1 9.16319444 18.9 9.16319444"></polygon>
+                                    <polygon id="Stroke-2842" stroke-linecap="round" points="18.9 23.2604167 23.1 23.2604167 23.1 20.4409722 18.9 20.4409722"></polygon>
+                                    <polygon id="Stroke-2843" stroke-linecap="round" points="25.9 23.2604167 30.1 23.2604167 30.1 20.4409722 25.9 20.4409722"></polygon>
+                                </g>
+                                <rect id="Rectangle-5" x="0.583333333" y="0.583333333" width="33.8333333" height="32.6666667"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

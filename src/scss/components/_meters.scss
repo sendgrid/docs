@@ -1,0 +1,45 @@
+.meter-container {
+  margin-top: 13px;
+  line-height: 11px;
+}
+
+.meter-title {
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: $slate-80;
+  text-transform: uppercase;
+}
+
+.meter-value {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: $slate-80;
+  white-space: nowrap;
+}
+
+.meter-bar {
+  width: 100%;
+  height: 10px;
+  margin-top: 3px;
+  background: transparent;
+  border: 1px solid $slate-10;
+  border-radius: 4px;
+}
+
+.meter-bar-fill {
+  height: 8px;
+  border-radius: 4px;
+
+  &.is-below-25 {
+    background: $ron-burgundy;
+  }
+
+  &.is-below-50 {
+    background: $carrot;
+  }
+
+  &.is-above-50 {
+    background: $mantis;
+  }
+}

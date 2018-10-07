@@ -1,0 +1,96 @@
+@import '../scss/global/variables';
+@import '../scss/global/mixins';
+
+// release note cols
+.release-row {
+  display: flex;
+  align-items: stretch;
+  margin: 0 -20px;
+}
+
+.release-row .icons {
+  margin: -19px 20px 0;
+  flex: 0 0 70px;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  font-size: $scaledown-1;
+  text-transform: uppercase;
+  line-height: $scaleup-1;
+  color: $slate-60;
+
+  @include colfax(600);
+
+  &::after {
+    content: '';
+    height: 100%;
+    width: 5px;
+    margin-left: -2px;
+    background: $slate-10;
+    display: block;
+    position: absolute;
+    left: 50%;
+  }
+}
+
+.release-row .html-ast {
+  margin: 0 20px;
+}
+
+.release-notes-overview p {
+  @include colfax(400);
+
+  color: $slate-80;
+}
+
+.release-notes-key {
+  display: flex;
+  padding: $scaleup-4;
+  background: $slate-02;
+  max-width: 670px;
+}
+
+.release-notes-key__icon {
+  flex: 1;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: $scaledown-1;
+  color: $slate-60;
+
+  @include colfax(600);
+
+  > div {
+    padding-top: 60px;
+    margin-bottom: $scaleup-2;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+.release-notes-key .release-notes-key__icon {
+  background-size: contain;
+  background-position: center;
+}
+
+.icons__icon {
+  // background-position: 10px ;
+  padding: $scaleup-8 0 $scaledown-1;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.icon-partners {
+  background: url('../img/release-note-partners.svg') no-repeat;
+}
+
+.icon-price {
+  background: url('../img/release-note-price.svg') no-repeat;
+}
+
+.icon-ui {
+  background: url('../img/release-note-ui.svg') no-repeat;
+}
+
+.icon-api {
+  background: url('../img/release-note-api.svg') no-repeat;
+}

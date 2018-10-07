@@ -1,0 +1,302 @@
+// license: https://goo.gl/f4lsjz
+// scss-lint:disable NestingDepth
+// linting property disabled due to it being a modified 3rd party stylesheet
+
+[data-tooltip] {
+  position: relative;
+
+  &::after {
+    @include base-effects();
+    position: absolute;
+    z-index: 100;
+    padding: 6px 12px;
+    font-size: $tooltip-font-size;
+    font-weight: normal;
+    line-height: $tooltip-line-height;
+    letter-spacing: normal;
+    color: $white;
+    text-align: left;
+    word-break: keep-all;
+    white-space: nowrap;
+    background: $tooltip-bg;
+    border-radius: $border-radius;
+    content: attr(data-tooltip);
+  }
+
+  &::before {
+    @include svg-arrow($tooltip-bg);
+    @include base-effects();
+    position: absolute;
+    z-index: 10;
+    content: "";
+  }
+
+  &:hover,
+  &.is-hovered,
+  &[data-tooltip-visible] {
+    &::before,
+    &::after {
+      @include opacity(1);
+      pointer-events: auto;
+    }
+  }
+
+  &[data-tooltip-break] {
+    &::after {
+      white-space: normal;
+    }
+  }
+
+  &[data-tooltip-pos="up"] {
+    &::after {
+      @include transform(translate(-50%, 10px));
+      @include transform-origin(top);
+      bottom: 100%;
+      left: 50%;
+      margin-bottom: 5px + $tooltip-arrow-height;
+    }
+
+    &::before {
+      @include transform(translate(-50%, 10px));
+      @include transform-origin(top);
+      bottom: 100%;
+      left: 50%;
+      margin-bottom: 5px;
+    }
+
+    &:hover,
+    &.is-hovered,
+    &[data-tooltip-visible] {
+      &::after {
+        @include transform(translate(-50%, 0));
+      }
+
+      &::before {
+        @include transform(translate(-50%, 0));
+      }
+    }
+  }
+
+  &[data-tooltip-pos="down"] {
+    &::after {
+      @include transform(translate(-50%, -10px));
+      top: 100%;
+      left: 50%;
+      margin-top: 5px + $tooltip-arrow-height;
+    }
+
+    &::before {
+      @include svg-arrow($tooltip-bg, "down");
+      @include transform(translate(-50%, -10px));
+      top: 100%;
+      left: 50%;
+      margin-top: 5px;
+    }
+
+    &:hover,
+    &.is-hovered,
+    &[data-tooltip-visible] {
+      &::after {
+        @include transform(translate(-50%, 0));
+      }
+
+      &::before {
+        @include transform(translate(-50%, 0));
+      }
+    }
+  }
+
+  &[data-tooltip-pos="left"] {
+    &::after {
+      @include transform(translate(10px, -50%));
+      top: 50%;
+      right: 100%;
+      margin-right: 5px + $tooltip-arrow-height;
+    }
+
+    &::before {
+      @include svg-arrow($tooltip-bg, "left");
+      @include transform(translate(10px, -50%));
+      top: 50%;
+      right: 100%;
+      margin-right: 5px;
+    }
+
+    &:hover,
+    &.is-hovered,
+    &[data-tooltip-visible] {
+      &::after {
+        @include transform(translate(0, -50%));
+      }
+
+      &::before {
+        @include transform(translate(0, -50%));
+      }
+    }
+  }
+
+  &[data-tooltip-pos="right"] {
+    &::after {
+      @include transform(translate(-10px, -50%));
+      top: 50%;
+      left: 100%;
+      margin-left: 5px + $tooltip-arrow-height;
+    }
+
+    &::before {
+      @include svg-arrow($tooltip-bg, "right");
+      @include transform(translate(-10px, -50%));
+      top: 50%;
+      left: 100%;
+      margin-left: 5px;
+    }
+
+    &:hover,
+    &.is-hovered,
+    &[data-tooltip-visible] {
+      &::after {
+        @include transform(translate(0, -50%));
+      }
+
+      &::before {
+        @include transform(translate(0, -50%));
+      }
+    }
+  }
+
+  &[data-tooltip-length="small"] {
+    &::after {
+      width: 80px;
+      white-space: normal;
+    }
+  }
+
+  &[data-tooltip-length="medium"] {
+    &::after {
+      width: 150px;
+      white-space: normal;
+    }
+  }
+
+  &[data-tooltip-length="large"] {
+    &::after {
+      width: 260px;
+      white-space: normal;
+    }
+  }
+
+  &[data-tooltip-length="xlarge"] {
+    &::after {
+      width: 380px;
+      white-space: normal;
+
+      @media screen and (max-width: 768px) {
+        width: 90vw;
+        white-space: normal;
+      }
+    }
+  }
+
+  &.has-underline {
+    cursor: help;
+    border-bottom: 1px dotted $slate-40;
+  }
+}
+
+[data-tooltip],
+.input-info-tooltip {
+  .sg-icon {
+    margin-left: 3px;
+    color: $slate-60;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: 0.3s color;
+
+    &:hover,
+    &.is-hovered {
+      color: $slate;
+    }
+  }
+}
+
+.tooltip-js-content {
+  position: absolute;
+  left: -10000px;
+  z-index: $info-popup-z-index;
+  width: 240px;
+  padding: 12px;
+  margin-left: 6px;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: normal;
+  color: $white;
+  word-break: normal;
+  background: $slate;
+  border-radius: $border-radius;
+  opacity: 0;
+  transition: 0.3s opacity, 0s left 0.3s;
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: -3px;
+    width: 8px;
+    height: 8px;
+    margin-top: -4px;
+    background: $slate;
+    border-radius: $border-radius;
+    content: "";
+    transform: rotate(45deg);
+  }
+
+  &.is-visible {
+    left: 100%;
+    overflow: visible;
+    opacity: 1;
+    transition: 0.5s opacity;
+  }
+
+  &.is-left {
+    &.is-visible {
+      right: 22px;
+      left: auto;
+    }
+
+    &::after {
+      right: -3px;
+      left: auto;
+    }
+  }
+
+  &[data-tooltip-length="small"] {
+    width: 80px;
+  }
+
+  &[data-tooltip-length="medium"] {
+    width: 150px;
+  }
+
+  &[data-tooltip-length="large"] {
+    width: 240px;
+  }
+
+  &[data-tooltip-length="xlarge"] {
+    width: 380px;
+  }
+
+  p {
+    margin-bottom: 12px;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    color: $white;
+    text-decoration: underline;
+  }
+}
