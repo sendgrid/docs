@@ -1,0 +1,26 @@
+hr {
+  margin: $scale-base-up-06 0;
+  border: 1px solid $slate-20;
+  border-bottom: 0;
+
+  &.is-thin {
+    margin: $scale-base 0;
+  }
+
+  &.has-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1px;
+    overflow: visible;
+
+    &::after {
+      padding: 0 12px;
+      font-size: 13px;
+      line-height: 20px;
+      text-align: center;
+      background-color: $white;
+      content: attr(data-label);
+    }
+  }
+}

@@ -1,57 +1,33 @@
-language: ruby
-sudo: false
-cache: bundler
-rvm:
-- 2.1
+sudo: required
+dist: trusty
+language: node_js
 branches:
   only:
-  - master
-  - develop
-before_install:
-- sh -c "if [ '$TRAVIS_BRANCH' = 'develop' ]; then echo 'staging https://travis-ci.org/$TRAVIS_REPO_SLUG/builds/$TRAVIS_BUILD_ID'  >
-  'source/_data/version.yml' ; fi"
-- sh -c "if [ '$TRAVIS_BRANCH' = 'master' ]; then echo 'https://travis-ci.org/$TRAVIS_REPO_SLUG/builds/$TRAVIS_BUILD_ID'  >
-  'source/_data/version.yml' ; fi"
-- npm install -g bower
+  - rc-master
+  - rc-develop
+node_js:
+- 8.4.0
+cache:
+- pip
+- yarn
 install:
-- nvm install 6.10.1
-- nvm use 6.10.1
-- travis_retry npm install
-- travis_retry npm install -g bower
-- travis_retry bower install
-- travis_retry bundle install
+- pip install --user awscli
 before_script:
-- cp _config.sample.yml _config.yml
-- sh -c "if [ '$TRAVIS_BRANCH' = 'master' ] && [ '$TRAVIS_PULL_REQUEST' = false ];
-  then ruby set_prod_config.rb; fi"
-script:
-- bundle exec jekyll build
-- bundle exec rake linklint
-- bundle exec rake validate_json_xml
-after_success:
-- sh -c "if [ '$TRAVIS_PULL_REQUEST' = false ]; then bundle exec cap deploy; fi"
-- sh -c "if [ '$TRAVIS_PULL_REQUEST' = false ]; then bundle exec rake invalidate_cloudfront;
-  fi"
-- sh -c "if [ '$TRAVIS_BRANCH' = 'master' ] && [ '$TRAVIS_PULL_REQUEST' = false ];
-  then bundle exec rake index; fi"
-env:
-  global:
-  - secure: CQ+PYDS2uWc/g+LfABW812Ur+jhX00hOzJj3TYm+vT2tYhVfQC/6WhdLdIoqhGmTyb+3vHyX2abr4p+1q5ou4uOw7VmaX33uvTxKRhQ/+aOPAam91jZ2LmGNeGQ5macGWYFH2H7hQiI0FEz9vG4GBxVKnJD5IwAEqag95jp0qfw=
-  - secure: 0hTizSjrO8wdwfaXCRqPQfjGplG8yk5quLGhNRjUx1VxngMvrN7mAGAeLWsfi2usCCEb5cEoc+0Ud6FmcYfHL1jUgLMN/+QQI5HSjrzhsQ35QQZ/C22uTTmNuMkwJ2PE2VvJIV9ioVL1bcBtYzTuzrhzG60lnBZJARLpMQYAGcY=
-  - secure: LexCBKluHnq/xnV0aLuZ9FZdkPttv5jy4hBXQgqxW+EULdougCFW9rP+2cYzBw8b6FFHrAHr3oro+4EcVo88PoTS1NqvlxrSb/+rzlXEGNLLZ2I3astRJRLjiNnAe95zGBJ7fpM9bRLnVBGyTe+jbiKZR5yrgDi3j2MmvKIwAAM=
-  - secure: gbeutlnclE1yXF9yTXc1U1z1kGoUCf8ln/0FJj7ZrePV4MpyRrOnIDij+LWXSn6swJrUZcQfCb+W0MvFRfs8nOrHv5weCZuFFLRwkTIwAfPTyEnrhEXADDIhskWMUakgobFqpB6q6LsNrRbe2DzTXGQKYOklanAzdo8rq2pJsaY=
-  - secure: WhJhMOD7YRjPVliXLy9o1gtW5p7DNPc104oTv7Xzl3Z4M9/eXFEvPT08xxz/i5wiEVQWrNeJyVaPeohh8HWLd+sSM/USVmFnZl0swmV2KM3yCVgnT+iwUUWzFCE56Qrm1mTYLPU2DFxVOhdiOrhDu8lr6Gsu4dTzmBRZapNCBwI=
-  - secure: e10hIfb19oh1vQ2WdbZ/VFqocP1Cev/4xx66nHZN78Dmzh0/U+z/ZyS/G5+hOc1EUqFKoL5+/lpdFJGfMudSn4mcAo4ID7TpKnbZIBOfidP/SCpmm/zX+Sokp3skvi06+rX18XVnfmE8z6/VLXRTAIJ3yeHrgr37+9BSJ9J2pH8=
-  - secure: bJaSj4tXq5dKEKcFo2zVXaTtgS6+4mzN0qzsBKwBhrGP03Qg3yQQ9cmT/Z9sPjFNo2EKAjmfL0Ir35JR7+3nhjl4xMzs7mMZx0+pwbOfxqRh+A9uk91nMMDMgemsONRc8cDclLxCucGPsMlRVzhr+ytit2TlXg/Dpk/ftWf9KFk=
-  - secure: nQobA88hQIc6GW2Z1N0jqqDKmkvM4fiWjcdF2n07O8dSKsrEUmviQsy5oaRfgozbGeeXDlsPlpt1ezE4u+ChEzZwd6UbsSeUjr3RTWl6prrxYX4XmO7Hx6i7dsFLOV66av5gNyglfUTLXTEKJgg4Ckr/1GiqvAcEgCrXjvHyFtc=
-  - secure: 6088c9CZ3gB6UL4lZ27VU16s+O0pFoeiE1GSOEZru/1GTH1Mifhb95lpu1PqkZsvVVsyy3MVDyoZcxyHWuvmUwH8RHvZzj7cuXwwbxO2kxStECx1QUUOeSZDR7GtHQrxSDWYD7wBeKgdP7Bdq6gvUYOL8S06kTNCTFApLJbT7Yc=
-  - secure: KroLKOYGGmplD0nCxTXUB0R+tnK8bFt46yp+d2bzOWxaulKHshwXV231e2AiPHxVlSYVJRiO7pZbTuVhbH7GD1ht41TlRdzURStq4kPSDrP9ZVQwRWpkKjgIMguxPIs/46ccxbA48tBYYJyy/51Ia4isQyQ9Wl083W0mC319kv0=
-notifications:
-  hipchat:
-    rooms:
-      secure: vVKtWAX1+24dxhJFk38dbnBimswn4Tdj0PRy5UURkhuujSGYW7PPhkyJf5jcz381AsjUxzzEPLTHy41Ve/pfIng3Y7c9OfS6a/M1qjrd4c2M+Fg9ntHr4ck2G5MsSQEg/zwKSrUXMk/RXKsdn5h4qmWr06i74Lau+SeWuS5xXiA=
-    template:
-    - '<a href="https://travis-ci.org/%{repository}/builds/%{build_id}">Docs Build
-      %{build_number}</a> on branch <i>%{branch}</i> by %{author}: <strong>%{message}</strong>
-      <a href="https://github.com/sendgrid/docs/commits/%{commit}">View on GitHub</a>'
-    format: html
+- yarn
+script: ./travis/build.sh
+deploy:
+  - provider: script
+    script: ./travis/deploy.sh
+    skip_cleanup: true
+    on:
+      repo: sendgrid/docs
+      all_branches: true
+      condition: $TRAVIS_BRANCH = rc-develop || $TRAVIS_BRANCH = rc-master
+  - provider: script
+    script: ./travis/deploy_open_source.sh
+    skip_cleanup: true
+    on:
+      repo: sendgrid/docs
+      all_branches: true
+      condition: $TRAVIS_BRANCH = rc-develop
+after_deploy: ./travis/after_deploy.sh

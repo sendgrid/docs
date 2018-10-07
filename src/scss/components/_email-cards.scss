@@ -1,0 +1,241 @@
+.email-card-wrap {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+// modifiers for .is-editable
+.email-card-wrap.is-editable {
+  // show for all children except the 2nd to last (.email-card-add should be last)
+  &:not(:nth-last-child(2)) {
+    @include email-card-connector();
+  }
+}
+
+// modifiers for .is-live
+.email-card-wrap.is-live {
+  // show for all children except the last (.email-card-add should be hidden for .is-live)
+  &:not(:last-child) {
+    @include email-card-connector();
+  }
+
+  .email-card-details a {
+    color: $slate;
+    pointer-events: none;
+  }
+}
+
+// modifiers for is-paused
+.email-card-wrap.is-paused {
+  .email-card-send-time .btn {
+    border-top-color: $burnt-orange;
+  }
+}
+
+.email-card-send-time {
+  @include email-card-connector;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.email-card-send-time.has-value .btn {
+  width: 400px;
+  padding: 20px 0;
+  font-weight: 600;
+  color: $slate;
+  background-color: $white;
+  border: 1px solid $slate-20;
+  border-top: 2px solid $sg-blue;
+
+  &:hover::after {
+    @include icon-font-base;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    margin-top: -8px;
+    pointer-events: none;
+    content: $icon-pencil;
+  }
+}
+
+.email-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 68px;
+  border: 1px solid $slate-20;
+  border-radius: $border-radius;
+
+  // hide ellipsis and show action icons on hover
+  &:hover {
+    .sg-icon-ellipsis {
+      opacity: 0;
+    }
+
+    .action-icons {
+      opacity: 1;
+    }
+  }
+
+  p,
+  td {
+    margin-bottom: 0;
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+
+.email-card-wrap + .email-card-add {
+  display: flex;
+  justify-content: center;
+}
+
+.email-card-stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  border: 1px solid $slate-20;
+  border-bottom: 0;
+  border-radius: $border-radius $border-radius 0 0;
+
+  .stat,
+  .label {
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .stat {
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .delivered {
+    color: $stats-delivered;
+  }
+
+  .opens {
+    color: $stats-opens;
+  }
+
+  .unique-opens {
+    color: $stats-unique-opens;
+  }
+
+  .clicks {
+    color: $stats-clicks;
+  }
+
+  .unique-clicks {
+    color: $stats-unique-clicks;
+  }
+
+  .unsubscribes {
+    color: $stats-unsubscribes;
+  }
+
+  .spam-reports {
+    color: $stats-spam-reports;
+  }
+
+  .label {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    text-transform: uppercase;
+  }
+}
+
+.email-card-stats + .email-card {
+  border-radius: 0 0 $border-radius $border-radius;
+}
+
+// absolute positioning to keep container/border 100% height
+.email-card-count {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  border-right: 1px solid $slate-20;
+
+  p {
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    transform: rotate(270deg);
+  }
+}
+
+.email-card-content {
+  width: 166px;
+  padding: 18px;
+
+  img {
+    display: block;
+    max-width: 100%;
+    border: 1px solid $slate-40;
+    border-radius: $border-radius;
+  }
+
+  .btn {
+    width: 130px;
+    padding: 28px 12px;
+  }
+}
+
+.email-card-details {
+  flex-grow: 1;
+  padding: 18px 0;
+
+  table {
+    width: 100%;
+  }
+
+  td {
+    padding-bottom: 2px;
+  }
+
+  .label {
+    width: 120px;
+    font-weight: 600;
+  }
+}
+
+.email-row-actions {
+  position: relative;
+  align-self: center;
+  min-width: 160px;
+  padding-right: 18px;
+  margin-left: auto;
+  text-align: right;
+
+  .sg-icon {
+    vertical-align: middle;
+    transition: all 0.3s;
+  }
+
+  .sg-icon-ellipsis {
+    font-size: 20px;
+    opacity: 1;
+  }
+
+  .action-icons {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    display: inline-flex;
+    margin-top: -10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+    span {
+      display: inline-block;
+      margin: 0 3px;
+    }
+  }
+}
