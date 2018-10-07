@@ -83,9 +83,9 @@ SendGrid does not merge a pull request made against a SendGrid open source proje
 
 * Download yarn
 
-    `brew install yarn`
+  `$ brew install yarn`
 
-* clone repo
+* Clone the repo
 
 	`$ git clone https://github.com/sendgrid/docs.git`
 
@@ -94,18 +94,22 @@ SendGrid does not merge a pull request made against a SendGrid open source proje
 
 	`$ cd docs`
 
-* switch to develop branch to make changes
+* Switch to develop branch to make changes
 
 	`$ git checkout develop`
 
-* Install Gatsby
+* Install the Gatsby CLI
 
-    `yarn install`
+	`$ npm install -g gatsby-cli`
+
+* Install npm package dependencies
+
+  `$ yarn install`
 
 * Build the local site
 
-    `gatsby develop`
-    Gatsby starts a hot-reloading development environment accessible at [localhost:8000](localhost:8000)
+  `$ gatsby develop`
+  Gatsby starts a hot-reloading development environment accessible at [localhost:8000](localhost:8000)
 
 <a name="about"></a>
 ## About

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-if [ "$TRAVIS_BRANCH" == "rc-master" ]; then
+if [ "$TRAVIS_BRANCH" == "master" ]; then
   S3_BUCKET="s3://sendgrid-knowledge-center-production"
 else
   S3_BUCKET="s3://sendgrid-knowledge-center-staging"
