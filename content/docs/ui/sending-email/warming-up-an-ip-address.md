@@ -1,7 +1,7 @@
 ---
 seo:
   title: Warming Up an IP Address
-  description: Learn how to warm up your new dedicated IP address and why it's important.
+  description: Learn how to warmup your new dedicated IP address and why it's important.
   keywords: warm, up, warmup, auto, automatic, manual API, v3, ip, pool, warmup, pools
 title: Warming Up an IP Address
 group: delivery-optimization
@@ -13,7 +13,7 @@ navigation:
 <iframe src="https://player.vimeo.com/video/80755248" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
-When you add a new dedicated IP address to your account, you need to warm it up. You also need to warm up your IP if you haven't sent on it in more than 30 days. [Warming up your IP]({{root_url}}/glossary/ip-warmup/) allows you to gradually send more emails over your new IP to establish a good [sender reputation]({{root_url}}/glossary/reputation-monitoring/).
+When you add a new dedicated IP address to your account, you need to warm it up. You also need to warmup your IP if you haven't sent on it in more than 30 days. [Warming up your IP]({{root_url}}/glossary/ip-warmup/) allows you to gradually send more emails over your new IP to establish a good [sender reputation]({{root_url}}/glossary/reputation-monitoring/).
 
 IP warming is the practice of gradually increasing the volume of mail sent with a dedicated IP address according to a predetermined schedule. This gradual process helps to establish a reputation with ISPs (Internet Service Providers) as a legitimate email sender. 
 
@@ -29,15 +29,15 @@ It is much easier to establish a positive reputation as a new sender, than it is
 
 ## 	Warmup types
 
-There are 3 ways to warm up your IP. If your dedicated IP is relatively new, or you've never had one before, you need to warm up your IP manually. If you are adding new dedicated IPs to existing warm IPs, you can automatically warm up your IP with the UI or the API. When your IP is being warmed up, this is your hourly sending limit:
+There are 3 ways to warmup your IP. If your dedicated IP is relatively new, or you've never had one before, you need to warmup your IP manually. If you are adding new dedicated IPs to existing warm IPs, you can automatically warmup your IP with the UI or the API. When your IP is being warmed up, this is your hourly sending limit:
 
- ### 	Manually warm up your IP
+ ### 	Manually warmup your IP
 
-To manually warm up your IP, you need to gradually send more and more email over your IP address at the rate in our suggested [IP Warmup Schedule]({{root_url}}/assets/IPWarmupSchedule.pdf).
+To manually warmup your IP, you need to gradually send more and more email over your IP address at the rate in our suggested [IP Warmup Schedule]({{root_url}}/assets/IPWarmupSchedule.pdf).
 
 <call-out>
 
-The goal of warming up is to ramp up your sending volume to your anticipated “normal” levels. For example, if you have a Pro 100k account, you don't need to warm up to 2 million emails as that will exceed your account limits and is unnecessary if you're only sending 100,000 emails a month.
+The goal of warming up is to ramp up your sending volume to your anticipated “normal” levels. For example, if you have a Pro 100k account, you don't need to warmup to 2 million emails as that will exceed your account limits and is unnecessary if you're only sending 100,000 emails a month.
 
 </call-out>
 
@@ -46,17 +46,17 @@ The goal of warming up is to ramp up your sending volume to your anticipated “
 *To set up automated IP warmup in the UI:*
 
 1. Go to [Settings > IP Addresses](https://app.sendgrid.com/settings/ip_addresses).
-2. Click the action menu for the IP you want to warm up. This brings up the **Edit Your Dedicated IP Address** screen.
+2. Click the action menu for the IP you want to warmup. This brings up the **Edit Your Dedicated IP Address** screen.
 3. Select **Use Automated IP warmup**.
 4. Save the **Edit Your Dedicated IP Address** screen.
 
  ### 	Automated IP warmup API
 
-You can also put your IP address into warmup mode with our [Automated Warmup API]({{root_url}}/ui/sending-email/warming-up-an-ip-address/) - this automatically throttles traffic sent through your new IP according to our [warm up schedule]({{root_url}}/assets/IPWarmupSchedule.pdf).
+You can also put your IP address into warmup mode with our [Automated Warmup API]({{root_url}}/ui/sending-email/warming-up-an-ip-address/) - this automatically throttles traffic sent through your new IP according to our [warmup schedule]({{root_url}}/assets/IPWarmupSchedule.pdf).
 
 <call-out type="warning">
 
-When automatically warming up an IP, SendGrid limits the amount of email sent through that IP per hour. Any email requests that exceed this hourly limit will overflow to any other existing warm IPs on your account. If you do not have any other warm IPs, you should warm up your IP manually.
+When automatically warming up an IP, SendGrid limits the amount of email sent through that IP per hour. Any email requests that exceed this hourly limit will overflow to any other existing warm IPs on your account. If you do not have any other warm IPs, you should warmup your IP manually.
 
 </call-out>
 
