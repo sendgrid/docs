@@ -2,7 +2,7 @@
 seo:
   title: Building an SMTP Email
   description: Learn how to build email content, add recipients and schedule your send.
-  keywords: SMTP, send email, integrate, building, filters, scheduling, substitution, suppression groups, unique arguments, recipients
+  keywords: SMTP, send email, integrate, building, filters, scheduling, substitution, suppression groups, unique arguments, recipients, X-SMTPAPI
 title: Building an SMTP Email
 group: smtp
 weight: 949
@@ -91,6 +91,7 @@ The X-SMTPAPI header is a JSON-encoded associative array consisting of several s
 - [Categories](#categories)
 - [Unique Arguments](#unique-arguments)
 - [SMTP Filters](#smtp-filters)
+- [IP Pools](#ip-pools)
 
  ### 	Scheduling Your Send
 
@@ -181,6 +182,24 @@ Categories should only be used for broad topics. To attach unique identifiers, p
 Use unique arguments to track your emails based on specific identifiers unique to individual messages. Unique arguments can be retrieved via SendGrid's [Event Webhook]({{root_url}}/for-developers/tracking-events/event/) or your [email activity page]({{root_url}}/ui/analytics-and-reporting/email-activity-feed/).
 
 For more information, see our [unique arguments documentation]({{root_url}}/for-developers/sending-email/unique-arguments/).
+
+### SMTP Filters
+
+SMTP Filters can be used for turning on or off a number of different features for your sending. For example you can turn on open or click tracking on a per send basis.
+
+For more information, see our [SMTP Filters documentation]({{root_url}}/for-developers/sending-email/smtp-filters/).
+
+### IP Pools
+
+IP Pools can be used to send you mail over a specific group of IPs. It is common to create different pools for transactional and marketing email.
+
+For more information, see our [IP Pools documentation]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_pools.html#sidebar).
+
+```json
+{
+  "ip_pool": "pool_name"
+}
+```
 
 ## 	Additional Resources
 
