@@ -1,4 +1,4 @@
-const SOCIAL_LINKS = [
+const SOCIAL_LINKS = (
   {
     TEXTNODE: 'Twitter',
     URL: 'https://twitter.com/sendgrid/',
@@ -29,6 +29,6 @@ const SOCIAL_LINKS = [
     URL: 'https://sendgrid.com/blog/feed/',
     IMG: 'https://sendgrid.com/wp-content/themes/sgdotcom/assets/images/footer/icon-rss-circle.svg',
   },
-];
+);
 
 export default SOCIAL_LINKS;
