@@ -65,7 +65,7 @@ SendGrid does not merge a pull request made against a SendGrid open source proje
 
 	`$ \curl -sSL https://get.rvm.io | bash -s stable --ruby`
 
-* Install Homebrew (if you don't have it)
+* Install Homebrew (if you don't need it)
 
 	`$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
