@@ -86,7 +86,7 @@ Use this query to filter by all bounced emails: (replace `<<your API key>>` with
 
 ```
 curl --request GET \
- --url 'https://api.sendgrid.com/v3/messages?limit=10&query=status%3D%22bouced%22' \
+ --url 'https://api.sendgrid.com/v3/messages?limit=10&query=status%3D%22bounced%22' \
  --header 'authorization: Bearer <<your API key>>'
 ```
 
@@ -96,7 +96,7 @@ Subject queries have this format:
 
 Encoded, this query would look like this:
 
-`status%3D%22bouced%22`
+`status%3D%22bounced%22`
 
 ## 	Creating compound queries
 
