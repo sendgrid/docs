@@ -108,7 +108,7 @@ Log into your **Magento Dashboard**, then click **System** in the left hand navi
 
  ### 	What permissions should my API keys have?
 
-Your API Key must have  the following permissions:
+Your API Key must have the following permissions:
 
 <table class="table">
   <tr><td>Mail Send</td><td>Full Access</td></tr>

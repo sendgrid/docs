@@ -27,6 +27,6 @@ This table will refresh with new or adjusted data based on the various filters a
 
 ## 	Additional Resources
 
-- [Subuser Stats]({{root_url}}/API_Reference/Web_API_v3/Stats/subusers/)
+- [Subuser Statistics]({{root_url}}/API_Reference/Web_API_v3/Stats/subusers/)
 - [Email Activity]({{root_url}}/ui/analytics-and-reporting/email-activity-feed/)
 - [Statistics Filters]({{root_url}}/ui/analytics-and-reporting/stats-overview/#statistics-filters)
