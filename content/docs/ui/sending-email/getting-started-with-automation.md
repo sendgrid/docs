@@ -11,6 +11,12 @@ navigation:
   show: false
 ---
 
+<call-out type="warning">
+
+Automation is currently in closed beta, and you may not have access to the feature. Since this is a beta, we reserve the right to change the functionality at any time without warning. For more information on the Automation beta, see our [Email Marketing Automation](https://sendgrid.com/solutions/marketing-automation/) page. 
+
+</call-out>
+
 SendGrid’s Automation beta allows you to send a series of emails to contacts automatically when you add them to a list you’ve specified. Automations are simple to set up, and once created, you can trigger them by adding new recipients to your chosen list, saving you time.
 
 <iframe src="https://player.vimeo.com/video/289518438" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
