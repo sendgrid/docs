@@ -146,4 +146,4 @@ define('SENDGRID_DISABLE_BUDDYPRESS', '1');
 ## 	Related Content
 
 * [SendGrid’s WordPress Plugin]({{root_url}}/for-developers/sending-email/wordpress-plugin/)
-* [SendGrid’s WordPress Subscription Widget]({{root_url}}/for-developers/managing-contacts/wordpress-subscription-widget/)
+* [SendGrid’s WordPress Subscription Widget]({{root_url}}/for-developers/sending-email/wordpress-subscription-widget/)
