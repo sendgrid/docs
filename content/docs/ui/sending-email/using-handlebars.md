@@ -340,7 +340,7 @@ Resulting replacement:
 ```
 <ol>
 	<li>You ordered: shoes on: 2/1/2018</li>
-	<li>You ordered: hat on: 1/42017</li>
+	<li>You ordered: hat on: 1/4/2017</li>
 </ol>
 ```
 
