@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-group: sending-email
+group: marketing-campaigns
 title: Getting Started with Automation
 seo:
   title: Getting Started with Automation
