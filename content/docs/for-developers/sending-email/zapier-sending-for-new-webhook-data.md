@@ -40,7 +40,7 @@ Click here to [Send emails through SendGrid for new caught Webhook data](https:/
 
 ![Credential entry](https://api.monosnap.com/rpc/file/download?id=gAajRq9wMKNTN4HyEKzAMosD71ifb8)
 
-5. Using fields from the Webhook, create and customize the **To**, **From**, and **Subject** email message that the Zap will send.
+5. Using fields from the Webhook, create, and customize the **To**, **From**, and **Subject** email message that the Zap will send.
 
 ![Email entry](https://api.monosnap.com/rpc/file/download?id=nzgrqhMuvZtnagf2ns64uWZkF8P7od)
 

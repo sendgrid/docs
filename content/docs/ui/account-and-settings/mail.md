@@ -122,7 +122,7 @@ For example, if you create a valid authenticated domain with a custom return pat
 
 <call-out type="warning">
 
-This setting refers to our original Email Templates. We now support more full featured [transactional templates]({{root_url}}/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/), with support for multiple templates, versioning and more.
+This setting refers to our original Email Templates. We now support more full featured [transactional templates]({{root_url}}/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/), with support for multiple templates, versioning, and more.
 
 </call-out>
 
