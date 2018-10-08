@@ -13,7 +13,7 @@ Click **Tools** and then select **Account Settings**.
 
 ![]({{root_url}}/images/outlook_2007_1.png "Tools_Acctsettings")
 
-The 'Account Settings' window appears. Select the account you receive e-mail through and click **Change**.
+The 'Account Settings' window appears. Select the account you receive Email through and click **Change**.
 
 ![]({{root_url}}/images/outlook_2007_2.png "AcctSetEmAccts")
 
