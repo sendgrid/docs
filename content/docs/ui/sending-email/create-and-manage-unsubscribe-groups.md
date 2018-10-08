@@ -60,7 +60,7 @@ To view the unsubscribe preferences page, select the action menu next to an Unsu
 
 If you are participating in the Automation closed beta, you will add the unsubscribe tag using the following format:  ``{{[unsubscribe]}}``
 
-For more information on the Automation beta, click [here](https://sendgrid.com/solutions/marketing-automation/). 
+For more information on the Automation beta, see our [Email Marketing Automation](https://sendgrid.com/solutions/marketing-automation/) page.
 
 ## Add recipients to an Unsubscribe Group
 
