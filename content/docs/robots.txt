@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /docs/ui/sending-email/create-and-manage-unsubscribe-groups/
