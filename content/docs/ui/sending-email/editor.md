@@ -39,7 +39,7 @@ SendGrid’s marketer-friendly code editor features a powerful, split screen edi
 See how your email looks in real-time, as you write and edit code. No more tabbing between windows, refreshing or re-rendering. Marketing Campaigns’ split-screen editing experience displays your code on the left, and a pixel-perfect preview on the right.
 
 **Code & Tag Completion** -
-As you type, the editor automatically makes common suggestions. You can accept them by tapping tab or return –– or, simply continue typing to ignore.  Additionally, as you open a tag of any kind, the code editor automatically places a closing tag.
+As you type, the editor automatically makes common suggestions. You can accept them by tapping tab or return –– or, simply continue typing to ignore. Additionally, as you open a tag of any kind, the code editor automatically places a closing tag.
 
 **Error Flagging** -
 If the code editor finds something that seems odd or inconsistent with best practices, instead of interrupting your workflow, it places a small red “x” in the margin of the line so you can come back and check when it’s convenient for you.

@@ -15,7 +15,7 @@ navigation:
 
 When you add a new dedicated IP address to your account, you need to warm it up. You also need to warm up your IP if you haven't sent on it in more than 30 days. [Warming up your IP]({{root_url}}/glossary/ip-warmup/) allows you to gradually send more emails over your new IP to establish a good [sender reputation]({{root_url}}/glossary/reputation-monitoring/).
 
-IP warming is the practice of gradually increasing the volume of mail sent with a dedicated IP address according to a predetermined schedule. This gradual process helps to establish a reputation with ISPs (Internet Service Providers) as a legitimate email sender.  
+IP warming is the practice of gradually increasing the volume of mail sent with a dedicated IP address according to a predetermined schedule. This gradual process helps to establish a reputation with ISPs (Internet Service Providers) as a legitimate email sender. 
 
 When an ISP observes email suddenly coming from a new or "cold" IP address, they will take notice and immediately begin evaluating the traffic coming from that IP. Since ISPs treat email volume as a key determining factor when detecting spam, it is best to begin sending a low to moderate volume, eventually working your way up to larger volumes. This gives the receiving email providers a chance to closely observe your sending habits and record how your recipients engage with your email.
 

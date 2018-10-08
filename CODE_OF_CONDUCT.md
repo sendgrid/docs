@@ -9,7 +9,7 @@ Members of the community are open to collaboration, whether it's on pull request
 Members of the community are considerate of their peers, which include other contributors and users of SendGrid. We're thoughtful when addressing the efforts of others, keeping in mind that often the labor was completed with the intent of the good of the community. We're attentive in our communications, whether in person or online, and we're tactful when approaching differing views.
 
 ### Be Respectful
-Members of the community are respectful. We're respectful of others, their positions, their skills, their commitments and their efforts. We're respectful of the volunteer efforts that permeate the SendGrid community. We're respectful of the processes outlined in the community, and we work within them. When we disagree, we are courteous in raising our issues.  Overall, we're good to each other. We contribute to this community not because we have to, but because we want to. If we remember that, these guidelines will come naturally.
+Members of the community are respectful. We're respectful of others, their positions, their skills, their commitments and their efforts. We're respectful of the volunteer efforts that permeate the SendGrid community. We're respectful of the processes outlined in the community, and we work within them. When we disagree, we are courteous in raising our issues. Overall, we're good to each other. We contribute to this community not because we have to, but because we want to. If we remember that, these guidelines will come naturally.
 
 ## Additional Guidance 
 
@@ -17,7 +17,7 @@ Members of the community are respectful. We're respectful of others, their posit
 Community discussions often involve interested parties. We expect participants to be aware when they are conflicted due to employment or other projects they are involved in and disclose those interests to other project members. When in doubt, over-disclose. Perceived conflicts of interest are important to address so that the community’s decisions are credible even when unpopular, difficult or favorable to the interests of one group over another.
 
 ### Interpretation
-This Code is not exhaustive or complete. It is not a rulebook; it serves to distill our common understanding of a collaborative, shared environment and goals. We expect it to be followed in spirit as much as in the letter.  When in doubt, try to abide by [SendGrid’s cultural values](https://sendgrid.com/blog/employee-engagement-the-4h-way) defined by our “4H’s”: Happy, Hungry, Humble and Honest.  
+This Code is not exhaustive or complete. It is not a rulebook; it serves to distill our common understanding of a collaborative, shared environment and goals. We expect it to be followed in spirit as much as in the letter. When in doubt, try to abide by [SendGrid’s cultural values](https://sendgrid.com/blog/employee-engagement-the-4h-way) defined by our “4H’s”: Happy, Hungry, Humble and Honest. 
 
 ### Enforcement
 Most members of the SendGrid community always comply with this Code, not because of the existence of this Code, but because they have long experience participating in open source communities where the conduct described above is normal and expected. However, failure to observe this Code may be grounds for suspension, reporting the user for abuse or changing permissions for outside contributors.

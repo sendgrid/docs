@@ -101,4 +101,4 @@ Once you delete a key, it can no longer be used to access SendGrid’s services.
 
 </call-out>
 
-Click the action menu in the same row as the key you want to delete. Select **Delete**.  This will delete the key permanently, making it inactive. Any subsequent API calls using this deleted API key will be rejected by SendGrid.
+Click the action menu in the same row as the key you want to delete. Select **Delete**. This will delete the key permanently, making it inactive. Any subsequent API calls using this deleted API key will be rejected by SendGrid.

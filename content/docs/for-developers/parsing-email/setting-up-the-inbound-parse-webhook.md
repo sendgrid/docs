@@ -67,7 +67,7 @@ If there is no field for priority, type 10 before the address. e.g. `10 mx.sendg
 
   You are now on the Inbound Parse page.
 
- 2.  Click **Add Host & URL**.
+ 2. Click **Add Host & URL**.
 
   Here you will specify the subdomain and root domain of the receiving domain (or hostname). All emails sent to this receiving domain will be parsed.
 
