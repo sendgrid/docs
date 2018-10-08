@@ -87,6 +87,7 @@ If you create a library, please let us know, by editing this page [in our GitHub
 
 -   [sendgrid_elixir](http://github.com/alexgaribay/sendgrid_elixir) *by Alex Garibay* - Elixir package for sending SendGrid transactional emails
 -   [sendgrid_elixir](https://github.com/thoughtbot/bamboo) *by Thoughtbot* - Elixir emailing package, with SendGrid adapter
+-   [sendgrid_elixir](https://github.com/swoosh/swoosh) - Another Elixir emailing package, with SendGrid adapter
 
  ### 	Groovy
 
