@@ -152,7 +152,7 @@ Please use PNG, GIF, or JPG files. Give the screenshots unique, meaningful names
 
 ### Size and resolution:
 
-When possible, try to take screenshot at a size that is twice what it will need to be on the page.
+When possible, try to take screenshots at a size that is twice what it will need to be on the page.
 
 ### Alt text:
 
