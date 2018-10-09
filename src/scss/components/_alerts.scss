@@ -4,8 +4,8 @@
 .alert {
   position: relative;
   z-index: 1000;
-  padding: 20px 0;
-  font-size: 13px;
+  padding: 25px 0;
+  font-size: 15px;
   text-align: center;
 
   &.alert-success {
@@ -58,7 +58,7 @@
     color: $white;
 
     a {
-      color: $white;
+      color: 	#008080;
     }
   }
 
@@ -70,7 +70,7 @@
       margin-bottom: -5px;
       color: $mantis;
       background: $white;
-      border-color: $white;
+      border-color: #0E8F97;
     }
 
     .step,
@@ -99,7 +99,7 @@
       margin-bottom: -5px;
       color: $white;
       background: $slate;
-      border-color: $white;
+      border-color: #0E8F97;
     }
   }
 
