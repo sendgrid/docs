@@ -4,18 +4,18 @@
     "stylelint-selector-bem-pattern"
   ],
   "rules": {
-    "indentation": 2,
+    "indentation": 3,
     "at-rule-no-unknown": null,
     "plugin/selector-bem-pattern": {
       "componentName": "(([a-z0-9]+(?!-$)-?)+)",
       "componentSelectors": {
         "initial": "\\.{componentName}(((__|--)(([a-z0-9\\[\\]'=]+(?!-$)-?)+))+)?$"
       },
-      "ignoreSelectors": [
+      "ignoreSelectors": (
         ".*\\.no-js.*",
         ".*\\.js-.*",
         ".*\\.lt-ie.*"
-      ]
+      )
     }
   }
 }
