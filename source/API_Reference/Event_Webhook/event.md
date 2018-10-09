@@ -1030,7 +1030,7 @@ For emails sent through our Legacy Marketing Email tool, unsubscribes look like 
 ]
 {% endcodeblock %}
 
-% anchor h3 %}
+{% anchor h3 %}
 Click
 {% endanchor %}
 
