@@ -10,7 +10,7 @@ navigation:
   show: false
 ---
 
-The CNAME record (canonical name record) creates an alias for subdomain.yourdomain.com and points to sendgrid.net. The CNAME is needed for our click and open tracking features in order for those statistics to be routed back to your SendGrid account. This will also be what your messages are signed by, so your recipients will be able see what you have chosen for your CNAME.
+The CNAME record (canonical name record) creates an alias for subdomain.yourdomain.com and points to sendgrid.net. The CNAME is needed for our click and open tracking features in order for those statistics to be routed back to your SendGrid account. This is also what your messages will be signed by, so your recipients will be able see your CNAME.
 
 What it should look like:
 
