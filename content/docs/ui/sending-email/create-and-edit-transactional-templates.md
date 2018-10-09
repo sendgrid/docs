@@ -57,7 +57,7 @@ SendGrid suggests previewing and testing your template once you have created it 
 
 *To preview your template:*
 
-1. Select **Preview**.  <br></br>A window pops out with a preview of the email that you’re going to test, with the option to view the template formatted for both mobile and desktop platforms.
+1. Select **Preview**. <br></br>A window pops out with a preview of the email that you’re going to test, with the option to view the template formatted for both mobile and desktop platforms.
 
 1. Click **Send Test** to send a test email using your new template.
 1. Fill in the *recipient* and *subject line* fields and then click **Send**.

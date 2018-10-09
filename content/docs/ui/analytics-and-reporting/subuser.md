@@ -13,7 +13,7 @@ navigation:
 
 Subusers can help organize your email sending and analytics by enabling you to segment by a different sender and IP address. Just as you can view the statistics on all your [email activity]({{root_url}}/ui/analytics-and-reporting/email-activity-feed/), you can go a step further and view the statistics broken down to a particular subuser.
 
-The actual statistics included vary depending upon your [account settings]({{root_url}}/ui/account-and-settings/account/). Emails sent, bounces and spam reports will always get tracked. Unsubscribes, clicks, and opens require that the associated settings are enabled.
+The actual statistics included vary depending upon your [account settings]({{root_url}}/ui/account-and-settings/account/). Emails sent, bounces, and spam reports will always get tracked. Unsubscribes, clicks, and opens require that the associated settings are enabled.
 
 In order to see statistics for a subuser, select the subuser and the page will show you both a graph and a table of email statistics.
 
@@ -27,6 +27,6 @@ This table will refresh with new or adjusted data based on the various filters a
 
 ## 	Additional Resources
 
-- [Subuser Stats]({{root_url}}/API_Reference/Web_API_v3/Stats/subusers/)
+- [Subuser Statistics]({{root_url}}/API_Reference/Web_API_v3/Stats/subusers/)
 - [Email Activity]({{root_url}}/ui/analytics-and-reporting/email-activity-feed/)
 - [Statistics Filters]({{root_url}}/ui/analytics-and-reporting/stats-overview/#statistics-filters)
