@@ -123,9 +123,7 @@ For more information, see [Senders]({{root_url}}/ui/sending-email/senders/).
 
 ## Create an Automation
 
-Once you've completed the prerequisites, you can go ahead and create an automation. You'll find you have two options: start with a pre-built Welcome Series and make it your own, or start from scratch by selecting Custom Automation.
-
-
+Once you've completed the prerequisites, you can go ahead and create an automation. You'll find you have two options: start with a pre-built Welcome Series and make it your own, or start from scratch by selecting **Custom Automation**.
 
 ### Create a Custom Automation
 
