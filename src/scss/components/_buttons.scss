@@ -20,7 +20,7 @@
   border-width: 1px;
   border-radius: $border-radius;
   box-sizing: border-box;
-  transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
   user-select: none;
 
   &:hover,
@@ -28,6 +28,7 @@
     color: $sg-blue;
     background-color: $sg-blue-10;
     border-color: $sg-blue-80;
+    border-radius: 5px 5px 5px 5px;
   }
 
   &:active,
@@ -47,6 +48,7 @@
       color: $btn-disabled-secondary-color;
       background-color: $btn-disabled-secondary-bg;
       border-color: $btn-disabled-secondary-border;
+      border-radius: 5px 5px 5px 5px;
     }
   }
 
@@ -83,6 +85,7 @@
   &:focus {
     color: $btn-primary-color;
     background-color: $btn-primary-bg-hover;
+    border-radius: 5px 5px 5px 5px;
   }
 
   &:active,
