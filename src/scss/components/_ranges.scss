@@ -2,12 +2,12 @@
 // linting disabled due to browser specific styles
 
 @mixin range-slider-thumb {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
-  background: $white;
-  border: 1px solid $slate-20;
-  border-radius: 50%;
+  background: #7FE88A;
+  border: 2px solid $slate-20;
+  border-radius: 5px 5px 5px 5px;
 }
 
 @mixin range-slider-track {
