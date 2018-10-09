@@ -50,12 +50,17 @@ To view the unsubscribe preferences page, select the action menu next to an Unsu
 1. In the URL field enter [unsubscribe], then click **Save**.
 
 *Using the Code Editor:*
+
 1. Select your preferred Unsubscribe Group from the **Settings** > **Recipients**.
 1. Enter the following code styling to the HTML window where you would like your unsubscribe content placed:
 
 ```
 <a href="[unsubscribe]">Click here to unsubscribe.</a>
 ```
+
+If you are participating in the Automation closed beta, you will add the unsubscribe tag using the following format:  ``{{[unsubscribe]}}``
+
+For more information on the Automation beta, see our [Email Marketing Automation](https://sendgrid.com/solutions/marketing-automation/) page.
 
 ## Add recipients to an Unsubscribe Group
 

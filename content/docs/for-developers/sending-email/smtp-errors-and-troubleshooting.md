@@ -39,7 +39,7 @@ Each SMTP call you make returns a response. `200` responses are usually success 
   <tr>
     <td>450</td>
     <td>`too frequent connects from 198.37.147.135, please try again later.`</td>
-    <td>The message failed because the reciepients mailbox was unavailable, perhaps because it was locked or was not routable at the time. We continue to retry messages for up to 72 hours. Consider temporarily sending less messages to a domain that is returning this code because this could further delay your messages currently being tried.</td>
+    <td>The message failed because the recipient's mailbox was unavailable, perhaps because it was locked or was not routable at the time. We continue to retry messages for up to 72 hours. Consider temporarily sending less messages to a domain that is returning this code because this could further delay your messages currently being tried.</td>
   </tr>
   <tr>
     <td>451</td>
@@ -112,7 +112,7 @@ When you try to send an invalid X-SMTPAPI header, you will get an email with det
 
  *To update your certificates:*
 
-1. ownload the GoDaddy CA bundle from [https://certs.godaddy.com/anonymous/repository.pki](https://certs.godaddy.com/anonymous/repository.pki) (grab the one called `"gd\_bundle-g2-g1.crt"`).
+1. Download the GoDaddy CA bundle from [https://certs.godaddy.com/anonymous/repository.pki](https://certs.godaddy.com/anonymous/repository.pki) (grab the one called `"gd\_bundle-g2-g1.crt"`).
 1. Save that on your server.
 1. Tell Postfix where to find it by adding or editing the following line in `/etc/postfix/` [main.cf](http://main.cf/): `"smtp\_tls\_CAfile = /etc/postfix/ssl/gd\_bundle-g2-g1.crt"`
 1. Restart Postfix to make the change take effect.

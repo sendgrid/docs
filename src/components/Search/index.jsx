@@ -5,7 +5,7 @@ import './search.scss';
 
 class Search extends React.Component {
   componentDidMount() {
-    const container = document.querySelector('.search-hero');
+    const container = document.querySelector('.search-hero') || false;
     const prefix = process.env.NODE_ENV === 'development' ? '' : '/docs';
     window.docsearch({
       apiKey: '621c583d8098d07c471dbaf6c2178e56',
@@ -13,6 +13,9 @@ class Search extends React.Component {
       inputSelector: '.search-query',
       debug: false, // Set debug to true if you want to inspect the dropdown
       queryHook(query) {
+        if (!container) {
+          return;
+        }
         const starKeys = Object.keys(STARWARS);
         const matches = starKeys.filter(val => _.includes(query, val));
         if (matches.length) {
