@@ -196,12 +196,14 @@ During the beta, you are only able to edit the content, subject line, and sender
 
 *To disable an automation:*
 
+When you disable an automation, all emails in your automation will stop sending unless you set it live again. No new contacts will be entered into your automation while it's disabled. If you set the automation live again, contacts who entered the automation before it was disabled will continue receiving emails again according to where they left off.
+
 1. Navigate to **Automations** and select the series you want to stop.
-1. Select the Action Menu to the right of the Automation.I
+1. Select the Action Menu to the right of the Automation.
 1. Click **Disable Automation** in the upper right corner.
 
 
-*To re-enable a disabled automation:*
+*To set a disabled automation live again:* 
 
 1. Navigate to **Automations** and select the series you want to re-enable.
 1. Select the Action Menu to the right of the Automation.
@@ -209,7 +211,7 @@ During the beta, you are only able to edit the content, subject line, and sender
 
 <call-out>
 
-When you re-enable the automation, contacts who have already received emails in the series will continue where they left off. Contacts who met your entry criteria during the disabled period will not be added to the automation. For this reason, do not add users to lists that are used as the entry criterion for automations in a disabled state.
+When you re-enable the automation, contacts who have already received emails in the series will continue where they left off. Contacts who met your entry criteria during the disabled period will not be added to the automation. For this reason, do not add users to lists that are used as the entry criteria for automations in a disabled state.
 
 </call-out>
 
@@ -225,7 +227,7 @@ When you re-enable the automation, contacts who have already received emails in 
 
 ### Migrating Campaign HTML
 
-*To migrate Marketing Campaigns HTML:*
+*To migrate HTML from a Marketing Campaigns template or email:*
 
 1. Navigate to [Marketing Campaigns](https://sendgrid.com/marketing_campaigns/ui/campaigns) and locate the campaign you wish to migrate.
 1. Hover over the action menu until the icons appear.
@@ -237,7 +239,7 @@ When you re-enable the automation, contacts who have already received emails in 
 1. Within the automation, find the email you want to add the content to and click **Edit**.
 ![]({{root_url}}/img/edit-email-automation.png "Edit email content")
 
-8. If you're importing an entire template, select **Blank Template**.
+8. Select **Blank Template**.
 9. Select the code editor.
 10. Paste the HTML you copied from the downloaded file into the code editor and then click **Preview**. 
 
