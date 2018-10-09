@@ -262,7 +262,7 @@ This is a full list of basic query types and examples: (replace the data in quot
    <td><code>unsubscribe_group_id="1041"</code></td>
  </tr>
  <tr>
-   <td><code>teammate</code> - teamates username</td>
+   <td><code>teammate</code> - teammates username</td>
    <td><code>teammate="my_username"</code></td>
  </tr>
 </table>
