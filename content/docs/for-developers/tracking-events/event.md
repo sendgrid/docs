@@ -248,7 +248,7 @@ Delivery events include processed, dropped, delivered, deferred, and bounce.
       </tr>
       <tr>
          <td><a name="bounce"></a>Bounce</td>
-         <td>Receiving server could not or would not accept the message. If a recipient has previously unsubscribed from your emails, the message is bounced.</td>
+         <td>Receiving server could not or would not accept the message. If a recipient has previously unsubscribed from your emails, the message is dropped.</td>
          <td>
 ```raw
 [
