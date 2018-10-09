@@ -123,26 +123,7 @@ For more information, see [Senders]({{root_url}}/ui/sending-email/senders/).
 
 ## Create an Automation
 
-Once you've completed the prerequisites, you can go ahead and create an automation.
-
-### Create a Welcome Series
-
-The Welcome Series Automation has preset entry criterion and sending schedules so all you have to do is plug in existing or new emails and set the automation to live. 
-
-*To create a Welcome Series:*
-
-1. Navigate to **Automations** and then click **Create an Automation**. 
-1. Under Welcome, click **Select**. 
-1. Give the series a name (this is for your reference and will not be visible to your contacts).
-1. Select the first entry criterion. The default entry criterion is “The first time a contact is added to All Contacts”.
-1. Select the exit criterion for this series.
-1. Select an Unsubscribe Group to add to the Welcome series.
-1. Add a [category]({{root_url}}/glossary/categories/) to the automation (optional).
-1. Select the send time for the first email.
-1. To add a campaign to the first email, click **Edit Email Content**. 
-1. Select a template or click **Blank Template** to begin creating your email from scratch.
-1. Select either the [Design]({{root_url}}/ui/sending-email/editor/#the-design-editor) or [Code]({{root_url}}/ui/sending-email/editor/#the-code-editor) editor to design or edit your campaign. 
-1. Once you have selected all of your campaigns for the welcome series, click **Set Live**. 
+Once you've completed the prerequisites, you can go ahead and create an automation. You'll find you have two options: start with a pre-built Welcome Series and make it your own, or start from scratch by selecting **Custom Automation**.
 
 ### Create a Custom Automation
 
@@ -151,7 +132,7 @@ The Welcome Series Automation has preset entry criterion and sending schedules s
 1. Navigate to **Automations** and then click **Create an Automation**. 
 1. Under Custom, click **Select**. 
 1. Give the series a name (this is for your reference and will not be visible to your contacts).
-1. Select the entry criterion. You can choose an existing criterion, or you can create a new one here.
+1. Select the entry criteria. You can choose an existing criteria, or you can create a new one here.
 
 <call-out>
 
@@ -159,16 +140,16 @@ Contacts will only receive your automation if you add them to the list you selec
 
 </call-out> 
 
-5. Select the exit criterion for this series.
+5. Select the exit criteria for this series.
 6. Select an [Unsubscribe Group]({{root_url}}/ui/sending-email/create-and-manage-unsubscribe-groups/#create-an-unsubscribe-group).
 7. Add a [category]({{root_url}}/glossary/categories/) to the automation (optional).
-8. Select the send time for the first email. You can choose to send the first email instantly, or you can set a delay from the time meet the entry criterion.
+8. Select the send time for the first email. You can choose to send the first email instantly, or you can set a delay of days or hours from the time meet the entry criteria.
 9. To design your first email in the series, click **Edit Email Content**.
 10. From the Select Template modal that opens, choose Blank Template or one of the SendGrid templates provided. 
 
 <call-out>
 
-During beta, templates from Marketing Campaigns are not available in Automation. However, you can [export]({{root_url}}/#migrating-campaign-html) the template HTML from Marketing Campaigns and using the code editor import it as a Blank Template into Automation.
+During beta, templates from Marketing Campaigns are not available in Automation. However, you can [export]({{root_url}}/#migrating-campaign-html) the template HTML from Marketing Campaigns and import it as a blank template into Automation using the code editor.
 
 </call-out>
 
@@ -187,6 +168,25 @@ During beta, templates from Marketing Campaigns are not available in Automation.
 1. Select the Action Menu to the right of the automation.
 1. Click **Duplicate**. 
 1. Once you create the duplicate, the automation will open to the edit page. From here, you can change any or all of the settings within the automation.
+
+### Create a Welcome Series
+
+The pre-built Welcome Series automation provides a jumping off point to inspire you to create your own tailored welcome series. 
+
+*To create a Welcome Series:*
+
+1. Navigate to **Automations** and then click **Create an Automation**. 
+1. Under Welcome, click **Select**. 
+1. Give the series a name (this is for your reference and will not be visible to your contacts).
+1. Select the first entry criteria. The default entry criteria is “The first time a contact is added to All Contacts”.
+1. Select the exit criteria for this series.
+1. Select an Unsubscribe Group to apply to the welcome series.
+1. Add a [category]({{root_url}}/glossary/categories/) to the automation (optional).
+1. Select the send time for the first email.
+1. To add a campaign to the first email, click **Edit Email Content**. 
+1. Select a template or click **Blank Template** to begin creating your email from scratch.
+1. Select either the [Design]({{root_url}}/ui/sending-email/editor/#the-design-editor) or [Code]({{root_url}}/ui/sending-email/editor/#the-code-editor) editor to design or edit your campaign. 
+1. Once you have selected all of your campaigns for the welcome series, click **Set Live**. 
 
 ## Manage Automations
 
