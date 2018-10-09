@@ -35,7 +35,6 @@ Complete one or more of the following:
 
 You may need to complete one or more of these steps to completely verify your account. You cannot skip any of the verification steps, or your account won't be completely unlocked. 
 
-
 ### Resend the verification email
 
 You can resend the verification to the email address you specified during the initial signup form by heading to the [verification guide](https://app.sendgrid.com/guide) and clicking "Resend in the "Confirm your Email Address" step. If you entered your email address incorrectly in the initial signup form, you can correct the email address and resend the verification email to the correct address.
