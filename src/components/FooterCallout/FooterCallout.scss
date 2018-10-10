@@ -1,0 +1,21 @@
+@import '../../scss/global/variables';
+
+.footer-callout {
+  background: $slate;
+  background: $gradient-callout;
+  position: relative;
+  padding: $scaleup-8 0;
+
+  &-pattern {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: url('https://sendgrid.com/wp-content/themes/sgdotcom/assets/images/patterns/pixel-pattern-bottom-left-dark.svg') no-repeat bottom left;
+    width: 100%;
+    height: 100%;
+  }
+
+  .container {
+    position: relative;
+  }
+}

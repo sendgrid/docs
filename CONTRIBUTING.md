@@ -1,4 +1,4 @@
-Hello! Thank you for choosing to help contribute to one of the SendGrid open source libraries. There are many ways you can contribute and help is always welcome.  We simply ask that you follow the following contribution policies.
+Hello! Thank you for choosing to help contribute to one of the SendGrid open source libraries. There are many ways you can contribute and help is always welcome. We simply ask that you follow the following contribution policies.
 
 * [CLAs and CCLAs](#cla)
 * [Feature Request](#feature-request)
@@ -20,15 +20,9 @@ Hello! Thank you for choosing to help contribute to one of the SendGrid open sou
 		* [Info blocks](#info_blocks)
 		* [API Examples](#api)
 * [JS and CSS, etc](#js_and_css)
-* [Node Spellchecker](#node-spellchecker)
-	* [Init](#spellchecker-init)
-	* [Usage](#spellchecker-usage)
-		* [Example output](#spellchecker-example)
-	* [Dictionary](#spellchecker-dictionary)
-	* [Contribution](#spellchecker-contribution)
 * [Creating a Pull Request](#creating-a-pull-request)
 
-Feel free to grab an issue you want to work on. Please indicate that you have begun work on it to avoid collisions. Once a PR is made, community review, comments, suggestions and additional PRs are welcomed and encouraged.
+Feel free to grab an issue you want to work on. Please indicate that you have begun work on it to avoid collisions. Once a PR is made, community review, comments, suggestions, and additional PRs are welcomed and encouraged.
 
 **Submit all pull requests to the develop branch.**
 
@@ -61,7 +55,7 @@ The GitHub issue tracker is the preferred channel for library feature requests, 
 <a name="improvements-to-the-codebase"></a>
 ## Improvements to the Codebase
 
-We welcome direct contributions to the sendgrid docs code base. Thank you!
+We welcome direct contributions to the SendGrid docs code base. Thank you!
 
 
 <a name="local"></a>
@@ -72,175 +66,68 @@ We welcome direct contributions to the sendgrid docs code base. Thank you!
 
 * Required:
     * Git
-    * Xcode
-    * Java
     * Rvm
-    * Yaml
     * Homebrew
     * npm
-    * git-flow
-    * bundler gem
-    * bower
+    * yarn
+    * Gatsby
 
 <a name="setup-steps"></a>
 ### Setup Steps
 
+### Setup Steps
+
 * Install Git for:
-	* [Mac](https://git-scm.com/download/mac)
-	* [Windows](https://git-scm.com/download/win)
+	* [Mac](https://git-scm.com/download/mac) 
+	* [Windows](https://git-scm.com/download/win) 
 	* [Linux](https://git-scm.com/download/linux)
-* Install a GitGUI (if you want it) for:
-	* [Mac](https://mac.github.com)
-	* [Windows](https://desktop.github.com/)
-	* [Linux](https://git-scm.com/download/gui/linux)
-* Install [Xcode](https://developer.apple.com/xcode/) (if you don't have it installed. Click the link to download)
-* Install Xcode command line tools > Xcode > Preferences > Downloads (These are bundled in Xcode as of OSX 10.9)
-    * Note: You may need to run `$ xcode-select --install`
-* Install JDK
-The yui compressor will need the full JDK to run - [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+
 * Install RVM
 
-	`$ \curl -L [https://get.rvm.io](https://get.rvm.io/) | bash -s stable --ruby`
-
-* Close and reopen your terminal window
-* Check which version of Ruby you have
-
-	`$ ruby -v`
-
-The very latest stable version (2.4.0) isn't compatible with the gems we use for the build, so you'll probably need to download version 2.3.0.
-
-	$ rvm install 2.3.0
-
-then set that version to be the default version
-
-	$ rvm --default use 2.3.0
+	`$ \curl -sSL https://get.rvm.io | bash -s stable --ruby`
 
 * Install Homebrew (if you don't have it)
 
 	`$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
-* Install YAML
-
-	`$ brew install libyaml`
-
 * Install npm
 
 	`$ brew install npm`
+
+**Note:** You may need to use 'sudo' before the command to get it to work as intended. 
+
 
 * Set your Node version
 
 	`$ npm install -g n`
 
-	`$ n 6.10.1`
+	`$ n 8.4.0`
 
-* install git flow to manage branches ([http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/](http://jeffkreeftmeijer.com/2010/why-arent-you-using-git-flow/)) (optional)
+* Download yarn
 
-	`$ brew install git-flow`
+    `brew install yarn`
 
 * clone repo
 
 	`$ git clone https://github.com/sendgrid/docs.git`
 
-OR use the GitGUI tool to clone the repo
-
-
-* switch to develop branch to make changes
-
-	`$ ls docs`
-
-	`$ git checkout develop`
-
-* install bundle (if you don't have this installed)
-
-	`$ sudo gem install bundler`
 
 * Go to your docs directory
 
 	`$ cd docs`
 
-* Install the build tools
+* switch to develop branch to make changes
 
-	`$ npm install`
+	`$ git checkout develop`
 
-to install build tools.
+* Install Gatsby
 
-* Install bower
+    `yarn install`
 
-	`$ npm install -g bower`
+* Build the local site
 
-* Install client-side dependencies (jQuery, bootstrap)
-
-	`$ bower install`
-
-to install client-side dependencies.
-
-* Install required Ruby gems
-
-	`$ bundle install`
-
-	* If the gem installation fails with a message like "An error occurred while installing libv8 (3.16.14.7), and Bundler cannot continue", a few extra steps will be necessary in order to build and install a version of V8 that can be used by the libv8 and therubyracer gems:
-
-		`$ gem uninstall libv8`
-
-		`$ brew tap homebrew/versions`
-
-		`$ brew install --force v8-315`
-
-		`$ bundle config build.libv8 "--with-system-v8 --with-v8-dir=$(brew --prefix v8-315)"`
-
-		`$ sudo gem install therubyracer -v '0.12.2'`
-
-		`$ bundle config build.therubyracer "--with-v8-dir=$(brew --prefix v8-315)"`
-
-		`$ bundle install`
-
-<a name="configure-jekyll"></a>
-### Configure Jekyll
-
-* Copy, DO NOT DELETE the _config.sample.yml file - definitely do not commit a delete of this file !
-
-	`$ cp _config.sample.yml _config.yml`
-
-* Edit the following items in the _config.yml "Jekyll & Plugins" section to match your local environment:
-
-	`source: /path_to_your_files/source_`
-(if you're running locally path_to_your_files will be `/)_`
-
-	`destination: /path_to_your_files/public`
-
-For example:
-
-`The source would be: /Users/USERNAME/docs/source`
-
-`The destination would be: /Users/USERNAME/docs/public`
-
-<a name="running"></a>
-### Running
-
-* Do the following instead of Jekyll serve:
-
-	`$ bundle exec rake preview`
-
-Note: if you receive an error message similar to "No Java Runtime Present: Requesting Install" please see the following instructions
-
-* Open your Terminal or Cmd
-* If `java -version` gives you an error and a popup
-* Get the download here
-	* [Mac](https://www.java.com/en/download/faq/java_mac.xml)
-	* [Windows](https://www.java.com/en/download/)
-* Install it
-* In your terminal, type:
-
-	`$ export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"`
-
-* Run `java -version` again.
-
-If that worked, then add the above command to your .bash_profile or .profile file and then run 'source .profile'
-[http://stackoverflow.com/a/19582689](http://stackoverflow.com/a/19582689)
-
-<a name="view-your-install"></a>
-### View Your Install
-* Browse to [http://localhost:4000](http://localhost:4000)
+    `gatsby develop`
+    Gatsby starts a hot-reloading development environment accessible at [localhost:8000](localhost:8000)
 
 <a name="important"></a>
 ### Important Things to Know
@@ -309,7 +196,7 @@ seo:
   title: Really Great Documentation - SendGrid Documentation | SendGrid
   override: true
   description: This is some really great documentation! I hope you like it!
-  canonical: http://sendgrid.com/docs/really-great-docs
+  canonical: https://sendgrid.com/docs/really-great-docs
 ---
 ```
 
@@ -372,44 +259,6 @@ payload in querystring format.
 JavaScript and CSS are minified and combined. The files to be packaged and their orders are specified in `_includes/head.html` and <code>CssMinify.yml</code>. Preprocessing and options can be specified
 via `_plugins/jekyll_asset_pipeline.rb`.
 
-<a name="node-spellchecker"></a>
-## Node Spellchecker
-
-This is a spellchecker functionality using [node-markdown-spellcheck](https://www.npmjs.com/package/markdown-spellcheck) node package.
-
-<a name="spellchecker-init"></a>
-### Init
-```
-# (pull code updates before this)
-# install updated npm package dependencies!
-$ npm install
-```
-<a name="spellchecker-usage"></a>
-### Usage
-```
-# generates report of misspellings
-$ npm run spellcheck
-
-# generates report of misspellings of [filename]
-$ npm run spellcheck-file [filename]
-```
-<a name="spellchecker-example"></a>
-#### Example output:
-![Spellcheck Output](./source/images/spellcheck-output.png?raw=true "Spellcheck Output")
-
-<a name="spellchecker-dictionary"></a>
-### Dictionary: English-US
-
-See [http://wordlist.aspell.net/dicts/](http://wordlist.aspell.net/dicts/).
-Also `.spelling` contains a list of custom words added to the dictionary.
-
-<a name="spellchecker-contribution"></a>
-### Contribution
-This still needs work! Many, many words in tech jargon come back as incorrect.
-The best way I've found to solve this issue without too much overhead work:
-1. Run `$ npm run spellcheck`
-2. Edit `.spelling` to include the words that are coming back incorrect but are correct!
-
 <a name="creating-a-pull-request"></a>
 ## Creating a Pull Request
 
@@ -445,9 +294,9 @@ The best way I've found to solve this issue without too much overhead work:
    [interactive rebase](https://help.github.com/articles/interactive-rebase)
    feature to tidy up your commits before making them public.
 
-4a. Create tests.
+   4a. Create tests.
 
-4b. Create or update the example code that demonstrates the functionality of this change to the code.
+   4b. Create or update the example code that demonstrates the functionality of this change to the code.
 
 5. Locally merge (or rebase) the upstream development branch into your topic branch:
 

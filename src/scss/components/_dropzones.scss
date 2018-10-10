@@ -1,0 +1,27 @@
+.dropzone {
+  height: 200px;
+  margin-bottom: 20px;
+  background-color: $dropzone-bg;
+  border: 1px dashed $dropzone-border;
+  border-radius: $border-radius;
+  transition: background-color 0.3s, border-color 0.3s;
+
+  &.is-active {
+    background-color: $dropzone-bg-active;
+    border-color: $dropzone-border-active;
+  }
+
+  &.is-hovered,
+  &.is-editor {
+    background-color: $dropzone-hovered-bg;
+    border-color: $dropzone-hovered-border;
+  }
+
+  &.is-large {
+    height: 400px;
+  }
+
+  &.has-inline-alert {
+    display: flex;
+  }
+}

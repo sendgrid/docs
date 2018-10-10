@@ -1,0 +1,35 @@
+@import '../../scss/global/mixins';
+@import '../../scss/global/variables';
+
+.input-text-wrap [type="text"] {
+  border-radius: 0;
+  height: initial;
+}
+
+.input-text-wrap .input-btn {
+  display: none;
+}
+
+.input-text-wrap .search-hero__query {
+  @include colfax(400);
+  color: $slate-60;
+  background-image: none;
+
+  &::placeholder {
+    color: $slate;
+  }
+
+  &:focus {
+    &::placeholder {
+      color: transparent;
+    }
+  }
+}
+
+.search-hero__bg #query:focus {
+  border: none;
+}
+
+.search-docs .algolia-autocomplete {
+  width: 100%;
+}

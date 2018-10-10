@@ -1,0 +1,44 @@
+@import '../../scss/global/variables';
+@import '../../scss/global/mixins';
+
+.for-devs-libraries .card {
+  display: block;
+}
+
+.for-devs-callouts .card {
+  box-shadow: 8px 10px 0 0 darken($slate, 6%);
+}
+
+.for-devs-libraries__languages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -10px;
+}
+
+.for-devs-libraries__lang {
+  width: 25%;
+
+  @media (max-width: $width-mobile) {
+    width: 100%;
+  }
+
+  a {
+    margin: 12px 15px;
+    background: $mantis;
+    display: block;
+    border-radius: 35px;
+    padding: $scaledown-3 $scale-0;
+    transition: all 0.1s ease-in-out;
+
+    &:hover {
+      background: #009D4C;
+      transform: translateY(-1px);
+    }
+  }
+
+  img {
+    vertical-align: middle;
+    height: 50px;
+  }
+}
