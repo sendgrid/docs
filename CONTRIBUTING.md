@@ -1,4 +1,4 @@
-Hello! Thank you for choosing to help contribute to one of the SendGrid open source libraries. There are many ways you can contribute and help is always welcome.  We simply ask that you follow the following contribution policies.
+Hello! Thank you for choosing to help contribute to one of the SendGrid open source libraries. There are many ways you can contribute and help is always welcome. We simply ask that you follow the following contribution policies.
 
 * [CLAs and CCLAs](#cla)
 * [Feature Request](#feature-request)
@@ -22,7 +22,7 @@ Hello! Thank you for choosing to help contribute to one of the SendGrid open sou
 * [JS and CSS, etc](#js_and_css)
 * [Creating a Pull Request](#creating-a-pull-request)
 
-Feel free to grab an issue you want to work on. Please indicate that you have begun work on it to avoid collisions. Once a PR is made, community review, comments, suggestions and additional PRs are welcomed and encouraged.
+Feel free to grab an issue you want to work on. Please indicate that you have begun work on it to avoid collisions. Once a PR is made, community review, comments, suggestions, and additional PRs are welcomed and encouraged.
 
 **Submit all pull requests to the develop branch.**
 

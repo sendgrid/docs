@@ -13,7 +13,7 @@ navigation:
 
 <call-out>
 
-Parent accounts will see aggregated stats for their account and all subuser accounts. Subuser accounts will only see their own stats.
+Parent accounts will see aggregated statistics for their account and all subuser accounts. Subuser accounts will only see their own statistics.
 
 </call-out>
 
@@ -21,38 +21,38 @@ Parent accounts will see aggregated stats for their account and all subuser acco
 Tracking your emails is an important part of being a good sender and learning about how your users interact with your email. This includes everything from basics of clicks and opens to looking at which browsers and mailbox providers your customers use.
 </p>
 <p>
-We have broken up stats in specific ways so that you can get at-a-glance data, as well as allowing you to get into the details of how your email is being used.
+We have broken up statistics in specific ways so that you can get at-a-glance data, as well as allowing you to get into the details of how your email is being used.
 </p>
 
 ## 	Available Email Reports
 
 <call-out>
 
-The timezone for stats pages is set in your [account settings]({{root_url}}/ui/account-and-settings/account/).
+The timezone for statistics pages is set in your [account settings]({{root_url}}/ui/account-and-settings/account/).
 
 </call-out>
 
-**Overview** - The overview is your at-a-glance stats. We give you the highlight reel so that you can keep an eye out for any issues and make sure you’re on the right track.
+**Overview** - The overview is your at-a-glance statistics. We give you the highlight reel so that you can keep an eye out for any issues and make sure you’re on the right track.
 
-**[Global Stats]({{root_url}}/ui/analytics-and-reporting/global/)** - All of your stats, aggregated in one place so you can see the high level view of everything.
+**[Global Statistics]({{root_url}}/ui/analytics-and-reporting/global/)** - All of your statistics, aggregated in one place so you can see the high level view of everything.
 
-**[Category Stats]({{root_url}}/ui/analytics-and-reporting/categories/)** -You can define your categories when you send, so that you can view your email performance by category later.
+**[Category Statistics]({{root_url}}/ui/analytics-and-reporting/categories/)** -You can define your categories when you send, so that you can view your email performance by category later.
 
 **[Category Comparison]({{root_url}}/ui/analytics-and-reporting/category-comparison/)** - Compare the performance of emails from up to 10 categories against each other.
 
-**[Subuser Stats]({{root_url}}/ui/analytics-and-reporting/subuser/)** - You can segment your email to be sent by different subusers, which allows you to compare how each type or subset of your email is performing.
+**[Subuser Statistics]({{root_url}}/ui/analytics-and-reporting/subuser/)** - You can segment your email to be sent by different subusers, which allows you to compare how each type or subset of your email is performing.
 
 **[Subuser Comparison]({{root_url}}/ui/analytics-and-reporting/subuser-comparison/)**  - Compare the performance of emails from up to 10 subusers against each other.
 
 **[Geographical]({{root_url}}/ui/analytics-and-reporting/geographic/)** - See where you get the best engagement and compare engagement by geographical region.
 
-**[Email Clients and Devices]({{root_url}}/ui/analytics-and-reporting/device/)** - Find out which applications and devices your recipients use to view your mail and see the stats for each.
+**[Email Clients and Devices]({{root_url}}/ui/analytics-and-reporting/device/)** - Find out which applications and devices your recipients use to view your mail and see the statistics for each.
 
-**Mailbox Provider Stats** - See all the stats for the mailbox providers your recipients use.
+**Mailbox Provider Statistics** - See all the statistics for the mailbox providers your recipients use.
 
 **[Mailbox Provider Comparison]({{root_url}}/ui/analytics-and-reporting/mailbox-provider-comparison/)** - Compare the performance of emails by statistic and provider.
 
-**[Browser Stats]({{root_url}}/ui/analytics-and-reporting/browser/)** - See all the stats for the web browsers your users view your emails from.
+**[Browser Statistics]({{root_url}}/ui/analytics-and-reporting/browser/)** - See all the statistics for the web browsers your users view your emails from.
 
 **[Browser Comparison]({{root_url}}/ui/analytics-and-reporting/browser-comparison/)** - Compare the performance of your emails by statistic and browser.
 
@@ -92,14 +92,14 @@ On the available statistics reports, you will find that your deliverability is b
 
 ## Filters
 
-These filters are available on most of the statistics pages. They will help you see your stats in more or less details, depending on your needs.
+These filters are available on most of the statistics pages. They will help you see your statistics in more or less details, depending on your needs.
 
 
 **Metric Filters** - You can select all of the metrics or only some of them.
 
-**Date Filters** - To display stats between specific dates, choose your date range.
+**Date Filters** - To display statistics between specific dates, choose your date range.
 
-**Grouping Filter** - Display stats grouped by day, week, or month.
+**Grouping Filter** - Display statistics grouped by day, week, or month.
 
 
 ## 	Top 5 Categories
@@ -109,7 +109,6 @@ These filters are available on most of the statistics pages. They will help you 
 
 ## 	Additional Resources
 
-* [API Stats Overview]({{root_url}}/API_Reference/Web_API_v3/Stats/index.html)
+* [API Statistics Overview]({{root_url}}/API_Reference/Web_API_v3/Stats/index.html)
 
 * [Advanced Analytics and Reporting]({{root_url}}/API_Reference/Web_API/Statistics/statistics_advanced.html)
-

@@ -13,17 +13,17 @@ navigation:
 
 <call-out type="warning">
 
-Automation is currently in closed beta, and you may not have access to the feature. Since this is a beta, we reserve the right to change the functionality at any time without warning. For more information on the Automation beta, see our [Email Marketing Automation](https://sendgrid.com/solutions/marketing-automation/) page. 
+Automation is currently in closed beta. During beta, only approved participants have access to the feature and we reserve the right to change the functionality at any time without warning. For more information on the Automation beta, or to sign up for the Automation beta waitlist, see our [Email Marketing Automation](https://sendgrid.com/solutions/marketing-automation/) page. 
 
 </call-out>
 
-SendGrid’s Automation beta allows you to send a series of emails to contacts automatically when you add them to a list you’ve specified. Automations are simple to set up, and once created, you can trigger them by adding new recipients to your chosen list, saving you time.
+SendGrid’s Automation beta allows you to send a series of emails to contacts automatically at a cadence you define. Automations are simple to set up, and once created, you can trigger them to send automatically by adding new recipients to a chosen list, saving you time.
 
 <iframe src="https://player.vimeo.com/video/289518438" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-With the Automation beta, you can build campaigns to: 
+With the Automation beta, you could build email campaigns to: 
 
-* Welcome new contacts when they join your list with a warm welcome and introductory tips.
+* Welcome new contacts when they join your list with a warm message and introductory tips.
 * Engage contacts who’ve downloaded an asset from you with follow-up content. 
 * Promote an upcoming event to a list of invitees with a series of reasons to attend.
 
@@ -38,15 +38,15 @@ Unsubscribe Groups and Senders **are shared** between Marketing Campaigns and Au
 
 Additionally, during this phase of the beta, some Marketing Campaigns features will not be available in Automation. For easy reference, the primary feature gaps include: 
 * Ability to view Automation contact list details
-* Ability to Search, edit, or export Automation contacts
+* Ability to search, edit, or export Automation contacts
 * Create or use custom fields
-* Segmentation
-* A/B testing
+* Create or use segments
+* A/B testing of email content and subject lines
 * Some non-essential editor functionality
-* Link tracking
+* Link click tracking
 * API compatibility
 
-We’ll be working iteratively to close these feature gaps as quickly as possible. For more information on future releases, please see our [Coming Soon] page. (Links to page approved by legal)
+We’ll be working iteratively to close these feature gaps as quickly as possible. For more information on future releases, please see our [Coming Soon] page.
 
 ## Getting Started
 
@@ -61,11 +61,11 @@ Before you start building automations, you need to complete the following:
 
 <call-out type="warning">
 
-During the beta, contacts you upload to Automation are distinct from your existing Marketing Campaigns contacts. An automation contact will be treated as new even if they’ve been in your Marketing Campaigns contacts for some time. 
+During the beta, contacts you upload to Automation are distinct from your existing Marketing Campaigns contacts. An Automation contact will be treated as new even if they’ve been in your Marketing Campaigns contacts for some time. 
 
 </call-out>
 
-<call-out>
+<call-out type="warning">
 
 During the beta, automations will only trigger to contacts *the first time* they’re added to a list. To ensure that your contacts receive your series, add them to your entry criteria list *after* you set your automation live.
 
@@ -73,13 +73,13 @@ During the beta, automations will only trigger to contacts *the first time* they
 
 *To add new contacts:*
 
-1. Use this CSV template to make sure your CSV is formatted correctly.
+1. Use [this]({{root_url}}/assets/example.csv)CSV template to make sure your CSV is formatted correctly.
 1. Click **Add Contacts** and then select **Upload CSV**.
-1. Choose an existing list or create a new list.
+1. Choose whether to add your contacts to All Contacts, to an existing list, or to a new list you create.
 
 <call-out>
 
-At this phase of the beta, custom fields are not supported. You can import [reserved fields]({{root_url}}/ui/managing-contacts/custom-fields/#reserved-fields), including ``email``, ``first_name``, and ``last_name``, etc.
+At this phase of the beta, custom fields are not supported. You can import [reserved fields]({{root_url}}/ui/managing-contacts/custom-fields/#reserved-fields), including ``email``, ``first_name``, ``last_name``, and address fields.
 
 </call-out>
 
@@ -92,7 +92,7 @@ At this phase of the beta, custom fields are not supported. You can import [rese
 Notification emails added in Marketing Campaigns won't receive any emails regarding Automation activity. 
 </call-out>
 
-If you would like to have notifications sent to an email other than your parent account address, you can opt-in to receive email notifications from SendGrid about your account's Automation activity.
+If you would like to have notifications about your account's Automation activity sent to an email other than your parent account address, simply add them in Notifications.
 
 *To add a notification email address:*
 
@@ -116,33 +116,14 @@ For information on creating Unsubscribe Groups, see [Create and Manage Unsubscri
 ### Add a Sender  
 
 <call-out>
-Automation shares Senders with Marketing Campaigns. You can use the same senders(s), or you can create new ones for use with Automation. 
+Automation shares senders with Marketing Campaigns. You can use the same senders(s), or you can create new ones for use with Automation. 
 </call-out>
 
 For more information, see [Senders]({{root_url}}/ui/sending-email/senders/).
 
 ## Create an Automation
 
-Once you've completed the prerequisites, you can go ahead and create an automation.
-
-### Create a Welcome Series
-
-The Welcome Series Automation has preset entry criterion and sending schedules so all you have to do is plug in existing or new emails and set the automation to live. 
-
-*To create a Welcome Series:*
-
-1. Navigate to **Automations** and then click **Create an Automation**. 
-1. Under Welcome, click **Select**. 
-1. Give the series a name (this is for your reference and will not be visible to your contacts).
-1. Select the first entry criterion. The default entry criterion is “The first time a contact is added to All Contacts”.
-1. Select the exit criterion for this series.
-1. Select an Unsubscribe Group to add to the Welcome series.
-1. Add a [category]({{root_url}}/glossary/categories/) to the automation (optional).
-1. Select the send time for the first email.
-1. To add a campaign to the first email, click **Edit Email Content**. 
-1. Select a template or click **Blank Template** to begin creating your email from scratch.
-1. Select either the [Design]({{root_url}}/ui/sending-email/editor/#the-design-editor) or [Code]({{root_url}}/ui/sending-email/editor/#the-code-editor) editor to design or edit your campaign. 
-1. Once you have selected all of your campaigns for the welcome series, click **Set Live**. 
+Once you've completed the prerequisites, you can go ahead and create an automation. You'll find you have two options: start with a pre-built Welcome Series and make it your own, or start from scratch by selecting **Custom Automation**.
 
 ### Create a Custom Automation
 
@@ -151,7 +132,7 @@ The Welcome Series Automation has preset entry criterion and sending schedules s
 1. Navigate to **Automations** and then click **Create an Automation**. 
 1. Under Custom, click **Select**. 
 1. Give the series a name (this is for your reference and will not be visible to your contacts).
-1. Select the entry criterion. You can choose an existing criterion, or you can create a new one here.
+1. Select the entry criteria. You can choose an existing criteria, or you can create a new one here.
 
 <call-out>
 
@@ -159,16 +140,16 @@ Contacts will only receive your automation if you add them to the list you selec
 
 </call-out> 
 
-5. Select the exit criterion for this series.
+5. Select the exit criteria for this series.
 6. Select an [Unsubscribe Group]({{root_url}}/ui/sending-email/create-and-manage-unsubscribe-groups/#create-an-unsubscribe-group).
 7. Add a [category]({{root_url}}/glossary/categories/) to the automation (optional).
-8. Select the send time for the first email. You can choose to send the first email instantly, or you can set a delay from the time meet the entry criterion.
+8. Select the send time for the first email. You can choose to send the first email instantly, or you can set a delay of days or hours from the time meet the entry criteria.
 9. To design your first email in the series, click **Edit Email Content**.
 10. From the Select Template modal that opens, choose Blank Template or one of the SendGrid templates provided. 
 
 <call-out>
 
-During beta, templates from Marketing Campaigns are not available in Automation. However, you can [export]({{root_url}}/#migrating-campaign-html) the template HTML from Marketing Campaigns and using the code editor import it as a Blank Template into Automation.
+During beta, templates from Marketing Campaigns are not available in Automation. However, you can [export]({{root_url}}/#migrating-campaign-html) the template HTML from Marketing Campaigns and import it as a blank template into Automation using the code editor.
 
 </call-out>
 
@@ -188,6 +169,25 @@ During beta, templates from Marketing Campaigns are not available in Automation.
 1. Click **Duplicate**. 
 1. Once you create the duplicate, the automation will open to the edit page. From here, you can change any or all of the settings within the automation.
 
+### Create a Welcome Series
+
+The pre-built Welcome Series automation provides a jumping off point to inspire you to create your own tailored welcome series. 
+
+*To create a Welcome Series:*
+
+1. Navigate to **Automations** and then click **Create an Automation**. 
+1. Under Welcome, click **Select**. 
+1. Give the series a name (this is for your reference and will not be visible to your contacts).
+1. Select the first entry criteria. The default entry criteria is “The first time a contact is added to All Contacts”.
+1. Select the exit criteria for this series.
+1. Select an Unsubscribe Group to apply to the welcome series.
+1. Add a [category]({{root_url}}/glossary/categories/) to the automation (optional).
+1. Select the send time for the first email.
+1. To add a campaign to the first email, click **Edit Email Content**. 
+1. Select a template or click **Blank Template** to begin creating your email from scratch.
+1. Select either the [Design]({{root_url}}/ui/sending-email/editor/#the-design-editor) or [Code]({{root_url}}/ui/sending-email/editor/#the-code-editor) editor to design or edit your campaign. 
+1. Once you have selected all of your campaigns for the welcome series, click **Set Live**. 
+
 ## Manage Automations
 
 During the beta, you are only able to edit the content, subject line, and sender for each email in your series.
@@ -196,12 +196,14 @@ During the beta, you are only able to edit the content, subject line, and sender
 
 *To disable an automation:*
 
+When you disable an automation, all emails in your automation will stop sending unless you set it live again. No new contacts will be entered into your automation while it's disabled. If you set the automation live again, contacts who entered the automation before it was disabled will continue receiving emails again according to where they left off.
+
 1. Navigate to **Automations** and select the series you want to stop.
-1. Select the Action Menu to the right of the Automation.I
+1. Select the Action Menu to the right of the Automation.
 1. Click **Disable Automation** in the upper right corner.
 
 
-*To re-enable a disabled automation:*
+*To set a disabled automation live again:* 
 
 1. Navigate to **Automations** and select the series you want to re-enable.
 1. Select the Action Menu to the right of the Automation.
@@ -209,7 +211,7 @@ During the beta, you are only able to edit the content, subject line, and sender
 
 <call-out>
 
-When you re-enable the automation, contacts who have already received emails in the series will continue where they left off. Contacts who met your entry criteria during the disabled period will not be added to the automation. For this reason, do not add users to lists that are used as the entry criterion for automations in a disabled state.
+When you re-enable the automation, contacts who have already received emails in the series will continue where they left off. Contacts who met your entry criteria during the disabled period will not be added to the automation. For this reason, do not add users to lists that are used as the entry criteria for automations in a disabled state.
 
 </call-out>
 
@@ -225,7 +227,7 @@ When you re-enable the automation, contacts who have already received emails in 
 
 ### Migrating Campaign HTML
 
-*To migrate Marketing Campaigns HTML:*
+*To migrate HTML from a Marketing Campaigns template or email:*
 
 1. Navigate to [Marketing Campaigns](https://sendgrid.com/marketing_campaigns/ui/campaigns) and locate the campaign you wish to migrate.
 1. Hover over the action menu until the icons appear.
@@ -237,7 +239,7 @@ When you re-enable the automation, contacts who have already received emails in 
 1. Within the automation, find the email you want to add the content to and click **Edit**.
 ![]({{root_url}}/img/edit-email-automation.png "Edit email content")
 
-8. If you're importing an entire template, select **Blank Template**.
+8. Select **Blank Template**.
 9. Select the code editor.
 10. Paste the HTML you copied from the downloaded file into the code editor and then click **Preview**. 
 
