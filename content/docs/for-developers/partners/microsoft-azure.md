@@ -12,7 +12,7 @@ If you are using Microsoft’s cloud platform you can easily integrate with Send
 ## 	Code Examples
 
 1. [PHP](https://docs.microsoft.com/en-us/azure/store-sendgrid-php-how-to-send-email)
-2. [Node.js](http://azure.microsoft.com/en-us/documentation/articles/store-sendgrid-nodejs-how-to-send-email-with-marketing-campaigns/)
+2. [Node.js](https://docs.microsoft.com/en-us/azure/store-sendgrid-nodejs-how-to-send-email)
 3. [.NET](https://docs.microsoft.com/en-us/azure/sendgrid-dotnet-how-to-send-email)
 4. [Java](https://docs.microsoft.com/en-us/azure/store-sendgrid-java-how-to-send-email)
 5. [Java]({{root_url}}/for-developers/partners/azure/) via an Azure webpage
