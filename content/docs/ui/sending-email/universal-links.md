@@ -1,4 +1,4 @@
----
+﻿---
 seo:
   title: Universal Links
   description: Learn how to set up universal links with click tracking in your emails.
@@ -79,6 +79,12 @@ Both "apple-app-site-association" and "digital asset links" files are comprised 
   }
 }
 ```
+
+<call-out>
+
+When configuring your universal links in iOS, you specify which paths you want to be handled by the app by using the `paths` argument in the `apple-app-site-association` file. You must flag your universal links with the attribute `universal=true` as documeted [here](#flagging-your-universal-links). In your `apple-app-site-association`, by adding `["/uni/*"]` into `paths`, it ensures your flagged universal links clicks are properly tracked by SendGrid and [are handled by the app appropriately](#resolving-sendgrid-click-tracking-links).
+
+</call-out>
 
 <call-out type="warning">
 
@@ -282,6 +288,8 @@ It is important to make sure that only the links within your email that point to
 It is not unusual to include links to pages outside of your app alongside links to your app in the same email. Not all of these links should be treated as universal links. For example, if you have Facebook or Twitter links tagged as universal links, users will be taken to your app when they click those links instead of being taken to your Facebook and Twitter pages.
 
 **To flag links to your app as universal links, simply include the attribute `universal="true"` within the HTML link of your email.**
+
+**SendGrid adds the `/uni/` parameter to flagged universal links**
 
 For example:
 
