@@ -17,7 +17,7 @@ Events are generated when email is processed by SendGrid and email service provi
 
 Here is a flow of email events:
 
-![event flow]({{root_url}}/images/email_event_flow.jpg "Event Flow")
+![event flow](https://s3.amazonaws.com/uploads.hipchat.com/17705/5653414/J6M6JvYQTWhvas6/email_event_flow.png "Event Flow")
 
 Here is an event response that includes an example of each type of event:
 
