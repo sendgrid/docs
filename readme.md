@@ -22,7 +22,7 @@ The master branch is continuously deployed to production.
 **Before your pull request can be merged into the develop branch, you must submit a completed CLA.**
 
 
-## Table of Contents
+## Table of Contents//comment added
 
 * [CLAs and CCLAs](#cla)
 * [Local Setup](#local)
