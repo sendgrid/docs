@@ -47,6 +47,6 @@ Go on New Relic site and there you will find the SendGrid extension on the left 
 
 ![]({{root_url}}/images/newrelic-dashboard1.png)
 
-Click on one of the instances and there you will see the statistics in 3 categories: Deliveries, Engagement and Compliance. Also on the right side you can see metrics in percentages.
+Click on one of the instances and there you will see the statistics in 3 categories: Deliveries, Engagement, and Compliance. Also on the right side you can see metrics in percentages.
 
 ![]({{root_url}}/images/newrelic-dashboard2.png)

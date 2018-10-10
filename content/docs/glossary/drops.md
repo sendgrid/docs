@@ -18,7 +18,7 @@ SendGrid users can always delete entries from these lists if an email address is
 
 ## 	Identifying Drops
 
-On the [Global Stats Dashboard]({{root_url}}/ui/analytics-and-reporting/global/), the Drops can also be identified as Repeated Bounces, Repeated Spam Reports, Repeated Unsubscribes and Invalid Emails:
+On the [Global Statistics Dashboard]({{root_url}}/ui/analytics-and-reporting/global/), the Drops can also be identified as Repeated Bounces, Repeated Spam Reports, Repeated Unsubscribes and Invalid Emails:
 
 You will also find drops in your [Email Activity](https://app.sendgrid.com/email_activity). Clicking on the event, will show more details about it, including the reason for which the email was dropped.
 

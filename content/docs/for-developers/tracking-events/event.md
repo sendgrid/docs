@@ -248,7 +248,7 @@ Delivery events include processed, dropped, delivered, deferred, and bounce.
       </tr>
       <tr>
          <td><a name="bounce"></a>Bounce</td>
-         <td>Receiving server could not or would not accept the message. If a recipient has previously unsubscribed from your emails, the message is bounced.</td>
+         <td>Receiving server could not or would not accept the message. If a recipient has previously unsubscribed from your emails, the message is dropped.</td>
          <td>
 ```raw
 [
@@ -1004,6 +1004,54 @@ For emails sent through our Legacy Marketing Email tool, unsubscribes look like 
         "sg_event_id": "RHFZB1IrTD2Y9Q7bUdZxUw",
         "sg_message_id": "14c583da911.2c36.1c804d.filter-406.22375.55148AA99.0",
         "event": "processed"
+    }
+]
+```
+
+ ### 	Click
+
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>event</th>
+         <th>email</th>
+         <th>url</th>
+         <th>category</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>click</td>
+         <td>Message recipient</td>
+         <td>URL Clicked</td>
+         <td>The category you assigned</td>
+      </tr>
+   </tbody>
+</table>
+
+```json
+[
+    {
+  "sg_event_id":"sendgrid_internal_event_id",
+  "sg_message_id":"sendgrid_internal_message_id",
+  "ip":"255.255.255.255",
+  "useragent":"Mozilla/5.0 (iPhone; CPU iPhone OS 7_1_2 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Version/7.0 Mobile/11D257 Safari/9537.53",
+  "event":"click",
+  "email":"email@example.com",
+  "timestamp":1249948800,
+  "url":"http://yourdomain.com/blog/news.html",
+  "url_offset": {
+    "index": 0,
+    "type": "html"
+  },
+  "unique_arg_key":"unique_arg_value",
+  "category":["category1", "category2"],
+  "newsletter": {
+    "newsletter_user_list_id": "10557865",
+    "newsletter_id": "1943530",
+    "newsletter_send_id": "2308608"
+  },
+  "asm_group_id": 1
     }
 ]
 ```

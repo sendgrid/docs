@@ -39,6 +39,6 @@ A bounce event occurs when mail is not able to be handed off to the mail servers
 
 More info on SendGrid's Event API can be found [here]({{root_url}}/API_Reference/Webhooks/event.html)
 
-More info on Interspire's XML API can be found [here](http://www.interspire.com/emailmarketer/pdf/XMLApiDocumentation.pdf)
+More info on Interspire's XML API can be found [here](https://www.interspire.com/xml-api-documentation)
 
 

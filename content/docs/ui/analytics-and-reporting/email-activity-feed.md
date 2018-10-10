@@ -30,6 +30,12 @@ With the Email Activity feed you can:
 
 <call-out>
 
+Reseller accounts and extra high volume accounts do not have access to the new Email Activity Feed. For information about the legacy Email Activity Feed, see [Legacy Email Activity]({{root_url}}/ui/analytics-and-reporting/email-activity/)
+
+</call-out>
+
+<call-out>
+
 In order to gain access to the Email Activity Feed API, you must purchase [additional email activity history](https://app.sendgrid.com/settings/billing/addons/email_activity).
 
 </call-out>

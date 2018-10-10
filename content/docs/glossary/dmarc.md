@@ -17,9 +17,9 @@ Enter DMARC, "Domain-based Message Authentication, Reporting & Conformance". Whi
 
 ## 	How do I implement DMARC?
  	
-Deploying DMARC for your email systems is a powerful way to help prevent malicious entities from potentially spoofing or otherwise tarnishing your good name. DMARC isn't for everyone, if you own a small domain, you're probably ok without it. If you have ever had problems with phishing in the past, or have a business that is financial oriented in nature, It might be right for you.  
+Deploying DMARC for your email systems is a powerful way to help prevent malicious entities from potentially spoofing or otherwise tarnishing your good name. DMARC isn't for everyone, if you own a small domain, you're probably ok without it. If you have ever had problems with phishing in the past, or have a business that is financial oriented in nature, It might be right for you. 
 
-DMARC, in conjunction with a dedicated IP (included in Pro or higher accounts) is a great start to getting industry-supported piece of mind. The DMARC aggregate and forensic reports are designed to be machine readable, and can be difficult for humans to make sense of. You will also need to utilize a DMARC report monitoring service to collect the reports and present the information in a meaningful way that leads to actionable insights.  
+DMARC, in conjunction with a dedicated IP (included in Pro or higher accounts) is a great start to getting industry-supported piece of mind. The DMARC aggregate and forensic reports are designed to be machine readable, and can be difficult for humans to make sense of. You will also need to utilize a DMARC report monitoring service to collect the reports and present the information in a meaningful way that leads to actionable insights. 
 Return Path's Brand Monitor is one, and Agari is another.
 
 *To set up DMARC:*
@@ -33,7 +33,7 @@ Return Path's Brand Monitor is one, and Agari is another.
 
 ## 1. Deploy DKIM & SPF by setting up reverse DNS for you SendGrid IP
 
-Start by completing reverse DNS for your SendGrid IP. This ensures that emails sent through your SendGrid account will be properly signed using DKIM and SPF for your unique domain.  
+Start by completing reverse DNS for your SendGrid IP. This ensures that emails sent through your SendGrid account will be properly signed using DKIM and SPF for your unique domain. 
 For more information on reverse DNS, 
 
 ## 2. Ensure proper DKIM and SPF signing for your authenticated domain
@@ -100,13 +100,13 @@ Example: receiver.org!sender.com!1335571200!1335657599.zip
 
 ## 5. Escalate your DMARC policy tags from p=none to p=quarantine to p=reject as you gain experience
 
-Now that you’ve tested and tweaked your mail streams to determine exactly who and what is sending mail for your domain, it’s time to turn it up a notch.  
+Now that you’ve tested and tweaked your mail streams to determine exactly who and what is sending mail for your domain, it’s time to turn it up a notch. 
 
 Up until now you should have only been using the p=none policy to get reports of any errant behavior, and you should have a good idea of where email is coming from. The next step is to adjust the policy on your DMARC record to start controlling how receivers handle mail claiming to be from your domain.
 
 **p=none** - Get reports of infractions, but no action is taken by recipients as far as processing the messages themselves. 
 
-**p=quarantine** - Unqualified mail goes directly to spam, but can be recovered. This is useful when you’re fairly certain you know all the locations where mail is coming from, but want to ‘softfail’ any messages that are unqualified until you’re 100% sure.  
+**p=quarantine** - Unqualified mail goes directly to spam, but can be recovered. This is useful when you’re fairly certain you know all the locations where mail is coming from, but want to ‘softfail’ any messages that are unqualified until you’re 100% sure. 
 
 **p=reject** - When you’re absolutely sure you know every server and service that is sending email for your domain, signing is in place for each of these services and you want anything with the audacity to claim otherwise completely denied. Unqualified mail is completely deleted by the recipient mail server, never to be seen again. 
 

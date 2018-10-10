@@ -1,4 +1,4 @@
-Hello! Thank you for choosing to help contribute to one of the SendGrid open source libraries. There are many ways you can contribute and help is always welcome.  We simply ask that you follow the following contribution policies.
+Hello! Thank you for choosing to help contribute to one of the SendGrid open source libraries. There are many ways you can contribute and help is always welcome. We simply ask that you follow the following contribution policies.
 
 * [CLAs and CCLAs](#cla)
 * [Feature Request](#feature-request)
@@ -20,15 +20,9 @@ Hello! Thank you for choosing to help contribute to one of the SendGrid open sou
 		* [Info blocks](#info_blocks)
 		* [API Examples](#api)
 * [JS and CSS, etc](#js_and_css)
-* [Node Spellchecker](#node-spellchecker)
-	* [Init](#spellchecker-init)
-	* [Usage](#spellchecker-usage)
-		* [Example output](#spellchecker-example)
-	* [Dictionary](#spellchecker-dictionary)
-	* [Contribution](#spellchecker-contribution)
 * [Creating a Pull Request](#creating-a-pull-request)
 
-Feel free to grab an issue you want to work on. Please indicate that you have begun work on it to avoid collisions. Once a PR is made, community review, comments, suggestions and additional PRs are welcomed and encouraged.
+Feel free to grab an issue you want to work on. Please indicate that you have begun work on it to avoid collisions. Once a PR is made, community review, comments, suggestions, and additional PRs are welcomed and encouraged.
 
 **Submit all pull requests to the develop branch.**
 
@@ -264,44 +258,6 @@ payload in querystring format.
 
 JavaScript and CSS are minified and combined. The files to be packaged and their orders are specified in `_includes/head.html` and <code>CssMinify.yml</code>. Preprocessing and options can be specified
 via `_plugins/jekyll_asset_pipeline.rb`.
-
-<a name="node-spellchecker"></a>
-## Node Spellchecker
-
-This is a spellchecker functionality using [node-markdown-spellcheck](https://www.npmjs.com/package/markdown-spellcheck) node package.
-
-<a name="spellchecker-init"></a>
-### Init
-```
-# (pull code updates before this)
-# install updated npm package dependencies!
-$ npm install
-```
-<a name="spellchecker-usage"></a>
-### Usage
-```
-# generates report of misspellings
-$ npm run spellcheck
-
-# generates report of misspellings of [filename]
-$ npm run spellcheck-file [filename]
-```
-<a name="spellchecker-example"></a>
-#### Example output:
-![Spellcheck Output](./source/images/spellcheck-output.png?raw=true "Spellcheck Output")
-
-<a name="spellchecker-dictionary"></a>
-### Dictionary: English-US
-
-See [http://wordlist.aspell.net/dicts/](http://wordlist.aspell.net/dicts/).
-Also `.spelling` contains a list of custom words added to the dictionary.
-
-<a name="spellchecker-contribution"></a>
-### Contribution
-This still needs work! Many, many words in tech jargon come back as incorrect.
-The best way I've found to solve this issue without too much overhead work:
-1. Run `$ npm run spellcheck`
-2. Edit `.spelling` to include the words that are coming back incorrect but are correct!
 
 <a name="creating-a-pull-request"></a>
 ## Creating a Pull Request

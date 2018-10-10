@@ -67,7 +67,7 @@ If there is no field for priority, type 10 before the address. e.g. `10 mx.sendg
 
   You are now on the Inbound Parse page.
 
- 2.  Click **Add Host & URL**.
+ 2. Click **Add Host & URL**.
 
   Here you will specify the subdomain and root domain of the receiving domain (or hostname). All emails sent to this receiving domain will be parsed.
 
@@ -527,6 +527,6 @@ Content analysis details:   (0.4 points, 5.0 required)
 
 ## 	Statistics
 
-SendGrid provides [statistics](https://app.sendgrid.com/statistics/parse_webhook) of how many emails parsed over time. You can specify what is displayed on the graph by adjusting the statistics filters.
+SendGrid provides [statistics](https://app.sendgrid.com/statistics/parse_webhook) of how many emails are parsed over time. You can specify what is displayed on the graph by adjusting the statistics filters.
 
 For more information, please see [Parse Webhook Stats]({{root_url}}/API_Reference/Web_API_v3/Stats/parse.html).

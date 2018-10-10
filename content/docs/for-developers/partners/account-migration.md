@@ -64,7 +64,7 @@ To add subusers to your new account, go to the [subusers page](https://app.sendg
 
 If you are using a dedicated IP, our support team can migrate your dedicated IP for you. Access support contact options by logging into https://support.sendgrid.com. Provide us with: your current and new usernames, the IP addresses, and your preferred time for the IP transfer - we can migrate IPs between 7 am and 5 pm MST on Monday through Friday.
 
-Be sure to set up reverse DNS and rewarm up your transferred IP before you start sending on it in your new account. You also need to reassign it to subusers if needed.
+Be sure to set up reverse DNS and rewarmup your transferred IP before you start sending on it in your new account. You also need to reassign it to subusers if needed.
 
 ## Download statistics and email activity
 
