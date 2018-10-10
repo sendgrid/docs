@@ -4,6 +4,7 @@ Hello! Thank you for choosing to help contribute to the SendGrid documentation s
     * [Numbers](#numbers)
     * [About additional resources](#about-additional-resources)
     * [Cross references](#cross-references)
+    * [Head matter](#head-matter)
 * [Terminology](#terminology)
 * [Punctuation](#punctuation)
 * [Capitalization](#capitalization)
@@ -48,6 +49,83 @@ When referring to other pages in the documentation, make sure your link text is 
 
 YES: For more information, see [Event Webhook] documentation.
 NO: For more information, click [here].
+
+<a name="head matter"></a>
+### Head matter
+
+The new head matter looks like this with the new Knowledge Center:
+```
+---
+layout: page
+weight: 0
+group: 
+title: 
+seo:
+  title: 
+  description: 
+  keywords: 
+navigation:
+  show: true
+---
+```
+The sections in **Bold** are the categories. The "group" field in the head matter pertains to the different headers article residing under a specific category. The group designation is after the colon of the "group" field.
+ 
+#### UI
+
+##### Sending Email
+- Building Email: building-email
+- Delivery & Optimization: delivery-optimization
+- Building Email with Marketing Campaigns: marketing-campaigns
+- Building Transactional Email: transactional-email
+- Tracking: tracking
+- Platform Partners: platform-partners
+
+##### Managing Contacts
+- Managing Contacts with Marketing Campaigns: managing-contacts
+
+##### Analytics and Reporting
+- Statistics: statistics
+- Click Tracking: click-tracking
+- Email Activity Feed: email-activity
+- SendGrid Partners: partners
+- Tracking: tracking
+
+##### Account and Settings
+- Account Managment: account-management
+- Inbound Parse: inbound-parse
+- Sender Authentication: sender-authentication
+- IP Management: ip-management
+- Teammates & Subusers: teammates-subusers
+- Troubleshooting: troubleshooting
+- Security: security
+- Billing: billing
+
+#### For Developers
+
+##### Sending Email
+- SendGrid v2 API: api-v2
+- SendGrid v3 API: api-v3
+- Frameworks: frameworks
+- Mail Clients: mail-clients
+- Mail Servers: mail-servers
+- SendGrid Partners: partners
+- SendGrid Plugins: plugins
+- SMTP API: smtp
+- Tracking: tracking
+- Open Source Apps: open-source
+
+##### Parsing Email
+- Inbound Parse: inbound-parse
+
+##### Tracking Events
+- Code Examples: code-examples
+- Getting Started: getting-started
+- SendGrid Partners: partners
+- Reference & Troubleshooting: reference-troubleshooting
+
+##### Partners
+- Migration: partner-migration
+- Platform Partners: platform-partners
 
 <a name="about-additional-resources"></a>
 ### About "Additional resources"
