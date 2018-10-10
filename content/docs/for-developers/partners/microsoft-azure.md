@@ -20,7 +20,7 @@ If you are using Microsoft’s cloud platform you can easily integrate with Send
 
 ## 	Still have questions?
 
-Wondering how to make the most of your SendGrid/Azure integration? Check out our [Azure related blog entries](https://sendgrid.com/blog/?s=Azure&submit=).
+Wondering how to make the most of your SendGrid/Azure integration? Check out our [Azure related blog entries](https://sendgrid.com/blog/?s=Azure).
 
 You are limited to 2 SendGrid accounts per Azure subscription. This limit exists for security and compliance reasons to prevent abuse.
 
