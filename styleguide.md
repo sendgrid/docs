@@ -68,11 +68,14 @@ navigation:
   show: true
 ---
 ```
+
+### Groups
+
 The sections in **Bold** are the categories. The "group" field in the head matter pertains to the different headers article residing under a specific category. The group designation is after the colon of the "group" field.
  
 #### UI
 
-##### Sending Email
+**Sending Email**
 - Building Email: building-email
 - Delivery & Optimization: delivery-optimization
 - Building Email with Marketing Campaigns: marketing-campaigns
@@ -80,17 +83,17 @@ The sections in **Bold** are the categories. The "group" field in the head matte
 - Tracking: tracking
 - Platform Partners: platform-partners
 
-##### Managing Contacts
+**Managing Contacts**
 - Managing Contacts with Marketing Campaigns: managing-contacts
 
-##### Analytics and Reporting
+**Analytics and Reporting**
 - Statistics: statistics
 - Click Tracking: click-tracking
 - Email Activity Feed: email-activity
 - SendGrid Partners: partners
 - Tracking: tracking
 
-##### Account and Settings
+**Account and Settings**
 - Account Managment: account-management
 - Inbound Parse: inbound-parse
 - Sender Authentication: sender-authentication
@@ -102,7 +105,7 @@ The sections in **Bold** are the categories. The "group" field in the head matte
 
 #### For Developers
 
-##### Sending Email
+**Sending Email**
 - SendGrid v2 API: api-v2
 - SendGrid v3 API: api-v3
 - Frameworks: frameworks
@@ -114,16 +117,16 @@ The sections in **Bold** are the categories. The "group" field in the head matte
 - Tracking: tracking
 - Open Source Apps: open-source
 
-##### Parsing Email
+**Parsing Email**
 - Inbound Parse: inbound-parse
 
-##### Tracking Events
+**Tracking Events**
 - Code Examples: code-examples
 - Getting Started: getting-started
 - SendGrid Partners: partners
 - Reference & Troubleshooting: reference-troubleshooting
 
-##### Partners
+**Partners**
 - Migration: partner-migration
 - Platform Partners: platform-partners
 
