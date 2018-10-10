@@ -63,17 +63,14 @@ The contacts will only be uploaded to Marketing Campaigns.
 
 For the API Key used for sending emails (the General tab):
 
-1. Full Access to Mail Send.
-
-2. Read Access to Stats.
-
-3. Read Access to Suppressions > Unsubscribe Groups.
-
-4. Read Access to Template Engine.
+* Full Access to Mail Send.
+* Read Access to Stats.
+* Read Access to Suppressions > Unsubscribe Groups.
+* Read Access to Template Engine.
 
 For the API Key used for contact upload (the Subscription Widget tab):
 
-1. Full Access to Marketing Campaigns.
+* Full Access to Marketing Campaigns.
 
 ## 	Can I disable the opt-in email?
 
