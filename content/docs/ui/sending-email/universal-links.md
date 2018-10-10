@@ -59,7 +59,7 @@ Both "apple-app-site-association" and "digital asset links" files are comprised 
 
 **For detailed instructions on how to configure an iOS "apple-app-site-association" file, please see [Apple's Developer Documentation](https://developer.apple.com/library/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html).**
 
-**For detailed instructions on how to configure an Android "digital asset links" file, please visit [Google's Developer Documentation](https://developers.google.com/digital-asset-links/v1/sending-email).**
+**For detailed instructions on how to configure an Android "digital asset links" file, please visit [Google's Developer Documentation](https://developers.google.com/digital-asset-links/v1/getting-started).**
 
 
  ### 	Example apple-app-site-association file:
@@ -109,7 +109,7 @@ Both "apple-app-site-association" and "digital asset links" files are comprised 
 
 When configuring your universal links in iOS, you specify which paths you want to be handled by the app by using the `paths` argument in the `apple-app-site-association` file. By specifying only the path `["/uni/*"]`, and using the `universal=true` attribute on your links as documented below, only appropriate links will be handled by the app, and others will be opened in the phone's browser.
 
-Android requires that you specify these paths inside your app, rather than the assetlinks.json file. This is accomplished by adding intent filters for specific hosts and paths. Please visit [Google's Developer Documentation](https://developer.android.com/training/app-indexing/deep-linking.html) to learn how to add an intent filter to your app manifest that can handle your universal links.
+Android requires that you specify these paths inside your app, rather than the assetlinks.json file. This is accomplished by adding intent filters for specific hosts and paths. Please visit [Google's Android Developer Documentation](https://developer.android.com/training/app-indexing/deep-linking.html) to learn how to add an intent filter to your app manifest that can handle your universal links.
 
 </call-out>
 
