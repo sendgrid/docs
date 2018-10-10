@@ -2,7 +2,7 @@
 seo:
   title: Troubleshooting Delays and Latency
   description: Troubleshooting Delays and Latency
-  keywords: down, outage, latency, header, intermittant, trace, ping, wireshark, traceroute, hop, node, slowness, having issues?, delivering, after, mins, minutes, seconds, ms, miliseconds, slow, delay, hours, delays
+  keywords: down, outage, latency, header, intermittent, trace, ping, wireshark, traceroute, hop, node, slowness, having issues?, delivering, after, mins, minutes, seconds, ms, milliseconds, slow, delay, hours, delays
 title: Troubleshooting Delays and Latency
 weight: 0
 group: troubleshooting
@@ -13,7 +13,9 @@ navigation:
 ---
 
 <call-out>
- Experiencing delays? Check our _[Status Page](http://status.sendgrid.com/)_ for the current state of all SendGrid Services.
+
+Experiencing delays? Check our [Status Page](http://status.sendgrid.com/) for the current state of all SendGrid Services.
+
 </call-out>
 
  As you send emails, you may encounter scenarios where mail seems to take more time than it should to get to it's final destination. Mail delays can manifest in a number of ways, so we've collected a list of tips to help you try to track them down!

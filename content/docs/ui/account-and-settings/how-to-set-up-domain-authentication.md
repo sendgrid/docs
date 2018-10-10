@@ -85,7 +85,7 @@ Any time that you send an email with a FROM address whose domain matches the dom
 
 Automated security defaults to **On**. If your DNS provider does not accept underscores in CNAME records, you will have to turn off Automated Security to use MX and TXT records.
 
-When Automated Security is **On**, SendGrid generates three different CNAME records. In a later step of setting up domain authentication, you give these records to your DNS provider, and then you verify that they upload correctly.
+When Automated Security is **On**, SendGrid generates 3 different CNAME records. In a later step of setting up domain authentication, you give these records to your DNS provider, and then you verify that they upload correctly.
 
 If you select **Off**, we generate 1 MX record and 2 TXT records. In a later step of setting up domain authentication, you give these records to your DNS provider, and then you verify that they upload correctly.
 
@@ -109,7 +109,7 @@ Use a custom DKIM selector if you want to authenticate a single domain multiple 
 
 *To use a custom DKIM selector:*
 
-When you are in the process of authenticating a domain, and on the screen where you input domain settings, open the advanced settings, select **Use a custom DKIM selector** and input three letters or numbers to build a custom subdomain. If you don't select these, SendGrid automatically selects them for you. Make sure the three characters you select are different from your original selection. For example, you could use `org` or `001`.
+When you are in the process of authenticating a domain, and on the screen where you input domain settings, open the advanced settings, select **Use a custom DKIM selector** and input 3 letters or numbers to build a custom subdomain. If you don't select these, SendGrid automatically selects them for you. Make sure the 3 characters you select are different from your original selection. For example, you could use `org` or `001`.
 
  ### 	Assigning a subuser
 

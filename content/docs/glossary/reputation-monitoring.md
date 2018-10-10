@@ -14,4 +14,4 @@ You will notice on your [Account Overview](https://app.sendgrid.com) page you wi
 
 ![Reputation Monitoring]({{root_url}}/images/reputation_monitoring_1.png)
 
-It is important to monitor your global stats on a daily basis to make sure you keep your IP reputation score high to avoid getting on [blacklists]({{root_url}}/glossary/blacklists/).
+It is important to monitor your global statistics on a daily basis to make sure you keep your IP reputation score high to avoid getting on [blacklists]({{root_url}}/glossary/blacklists/).

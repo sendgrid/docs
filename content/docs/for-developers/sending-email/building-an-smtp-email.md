@@ -2,7 +2,7 @@
 seo:
   title: Building an SMTP Email
   description: Learn how to build email content, add recipients and schedule your send.
-  keywords: SMTP, send email, integrate, building, filters, scheduling, substitution, suppression groups, unique arguments, recipients
+  keywords: SMTP, send email, integrate, building, filters, scheduling, substitution, suppression groups, unique arguments, recipients, X-SMTPAPI
 title: Building an SMTP Email
 group: smtp
 weight: 949
@@ -57,10 +57,10 @@ SMTP works by passing a JSON string with as many SMTP objects as you want to Sen
 
  ### 	Limitations
 
-- There is a hard limit of 10,000 addresses in a multiple recipient e-mail. However, the best practice is to split up large jobs to around 1,000 recipients - this allows better processing load distribution. If you have a large number of additional substitutions or sections in the headers, it is best to split the send into even smaller groups.
+- There is a hard limit of 10,000 addresses in a multiple recipient email. However, the best practice is to split up large jobs to around 1,000 recipients - this allows better processing load distribution. If you have a large number of additional substitutions or sections in the headers, it is best to split the send into even smaller groups.
 - When using the X-SMTPAPI to send to multiple recipients, you cannot use the standard SMTP protocols "TO" field to send to multiple recipients because doing so can generate duplicate messages to the addresses listed in both. For more information, see [RFC 5321](https://tools.ietf.org/html/rfc5321).
-- Ensure that the header is limited to a maximum total line length of 1,000 characters. Failure to do this can cause intermediate MTA's to split the header on non-space boundaries- this causes inserted spaces in the final e-mail. If your e-mail is going through another MTA before reaching SendGrid, it is likely to have an even lower setting for maximum header length and may truncate the header.
-- When using the API, if our system encounters a parsing error, the message will be bounced to the address specified in the MAIL FROM portion of the SMTP session. The MAIL FROM address is re-written when we send the e-mail out for final delivery, so it is safe to set this to an address that can receive the bounces so that you will be alerted to any errors.
+- Ensure that the header is limited to a maximum total line length of 1,000 characters. Failure to do this can cause intermediate MTA's to split the header on non-space boundaries- this causes inserted spaces in the final email. If your email is going through another MTA before reaching SendGrid, it is likely to have an even lower setting for maximum header length and may truncate the header.
+- When using the API, if our system encounters a parsing error, the message will be bounced to the address specified in the MAIL FROM portion of the SMTP session. The MAIL FROM address is re-written when we send the email out for final delivery, so it is safe to set this to an address that can receive the bounces so that you will be alerted to any errors.
 - When sending Unicode characters via the SMTP API, you should escape these characters using the `\u` escape character. When you do this, Unicode characters like ` á` becomes `\u00E1`.
 
 ## 	Customizing your send (filters)
@@ -91,6 +91,7 @@ The X-SMTPAPI header is a JSON-encoded associative array consisting of several s
 - [Categories](#categories)
 - [Unique Arguments](#unique-arguments)
 - [SMTP Filters](#smtp-filters)
+- [IP Pools](#ip-pools)
 
  ### 	Scheduling Your Send
 
@@ -181,6 +182,24 @@ Categories should only be used for broad topics. To attach unique identifiers, p
 Use unique arguments to track your emails based on specific identifiers unique to individual messages. Unique arguments can be retrieved via SendGrid's [Event Webhook]({{root_url}}/for-developers/tracking-events/event/) or your [email activity page]({{root_url}}/ui/analytics-and-reporting/email-activity-feed/).
 
 For more information, see our [unique arguments documentation]({{root_url}}/for-developers/sending-email/unique-arguments/).
+
+### SMTP Filters
+
+SMTP Filters can be used for turning on or off a number of different features for your sending. For example you can turn on open or click tracking on a per send basis.
+
+For more information, see our [SMTP Filters documentation]({{root_url}}/for-developers/sending-email/smtp-filters/).
+
+### IP Pools
+
+IP Pools can be used to send you mail over a specific group of IPs. It is common to create different pools for transactional and marketing email.
+
+For more information, see our [IP Pools documentation]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_pools.html#sidebar).
+
+```json
+{
+  "ip_pool": "pool_name"
+}
+```
 
 ## 	Additional Resources
 

@@ -39,6 +39,6 @@ On the last week of each month, we terminate accounts with outstanding unpaid ba
 We will send out several warning emails in the course of a month if an account fails to pay on time, so you should have ample warning before Termination. However, if you believe your account has been terminated due to non-payment, please get in touch with [Support](https://support.sendgrid.com) and we can help get you out of the red and sending again.
 
 ## Account banned
-When an account is banned, it is permanently cancelled. Access to the account is blocked and no further requests to our system will be accepted. A banned account is not allowed back on SendGrid in the future. If the account had dedicated IPs they will be removed. Related sub-users will also be banned.
+When an account is banned, it is permanently cancelled. Access to the account is blocked and no further requests to our system will be accepted. A banned account is not allowed back on SendGrid in the future. If the account had dedicated IPs they will be removed. Related subusers will also be banned.
 
 We don't make a habit of letting banned accounts back on, but if you would like to discuss it, _please respond to the email you received regarding the ban._ **Support cannot assist in reactivation of banned accounts.**

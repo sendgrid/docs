@@ -19,7 +19,7 @@ SendGrid’s Two-Factor Authentication can be configured to accept a code sent t
 
 ## 	Setting Up Two-Factor Authentication
  	
-You may choose from two different verification methods when using two-factor authentication:
+You may choose from 2 different verification methods when using two-factor authentication:
 
 1. Generate a verification code with the [Authy App](https://www.authy.com/app/mobile/).
    The Authy App allows you to authenticate over WiFi if you do not have cellular service. However, you may still resort to an SMS message as a backup if you decide to use Authy.

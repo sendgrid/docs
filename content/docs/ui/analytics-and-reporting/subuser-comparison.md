@@ -19,7 +19,7 @@ This page refers to our beta UI functionality. To find these features, please cl
 
 <call-out>
 
-On all other stats pages, your subuser stats are “rolled up” into the parent account’s statistics. From this page, you can see how each subuser affects your overall stats.
+On all other statistics pages, your subuser statistics are “rolled up” into the parent account’s statistics. From this page, you can see how each subuser affects your overall statistics.
 
 </call-out>
 
@@ -55,6 +55,6 @@ You can also choose to show actual counts or percentages, by clicking the corres
 
 ## 	Additional Resources
 
-- [Subuser Stats]({{root_url}}/API_Reference/Web_API_v3/Stats/subusers/)
+- [Subuser Statistics]({{root_url}}/API_Reference/Web_API_v3/Stats/subusers/)
 - [Email Activity]({{root_url}}/ui/analytics-and-reporting/email-activity-feed/)
 - [Statistics Filters]({{root_url}}/ui/analytics-and-reporting/stats-overview/#statistics-filters)

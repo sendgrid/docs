@@ -28,4 +28,4 @@ Email notifications about CSV upload summaries, sender verifications, A/B test w
 
  ## 	Additional Resources
 
-- [Contacts]({{root_url}}/docs/API_Reference/ui/managing-contacts/adding-contacts/)
+- [Contacts]({{root_url}}/ui/managing-contacts/adding-contacts/)

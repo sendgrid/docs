@@ -34,7 +34,7 @@ It’s likely that you’re already using the new Marketing Campaigns editing ex
 
 Until 16 April 2018, if you duplicate a campaign that was originally created within the old editor, you will notice an alert banner at the top of the app. You can click the button within the alert to begin moving your campaign into the new editing experience.
 
-On 16 April 2018, if you duplicate a campaign that was originally created within the old editor, it will require you to open the campaign in one of the [new editors]({{root_url}}/ui/sending-email/editor/). While many campaigns will move over seamlessly, it’s possible that – depending how you’ve edited your campaign in the past – you’ll need to make a few tweaks or take a few moments to rebuild a template in the new editor.  Rest assured, creating templates in the new editor is quick and easy – in most cases, taking only a few minutes. That said, if you have any issues at all, our [support team is available](https://sendgrid.com/support)!
+On 16 April 2018, if you duplicate a campaign that was originally created within the old editor, it will require you to open the campaign in one of the [new editors]({{root_url}}/ui/sending-email/editor/). While many campaigns will move over seamlessly, it’s possible that – depending how you’ve edited your campaign in the past – you’ll need to make a few tweaks or take a few moments to rebuild a template in the new editor. Rest assured, creating templates in the new editor is quick and easy – in most cases, taking only a few minutes. That said, if you have any issues at all, our [support team is available](https://sendgrid.com/support)!
 
  ### 	I use both Design and Code. Why do I need to choose one?
 
@@ -50,13 +50,13 @@ If you’ve edited code in your current template but want to use it with the new
 
 Depending on how you created and edited your campaign in the old experience, some maintenance may be required when moving an old campaign in a new editor for the first time. This is due to some improvements that we made with the new experience – particularly around how HTML is handled and protected.
 
-While these improvements offer far greater stability and speed for the long term, we know that these initial changes can be a bit frustrating. To help, we've identified two possible scenarios when migrating a campaign into the new editor, with some details on how to resolve these issues, below:
+While these improvements offer far greater stability and speed for the long term, we know that these initial changes can be a bit frustrating. To help, we've identified 2 possible scenarios when migrating a campaign into the new editor, with some details on how to resolve these issues, below:
 
 **I have a custom coded template, but want to use the Design Editor:**
 <br>If you get custom code from your designer or developer and want to use it with our powerful new drag-and-drop Design editor, you can! First, our Design editor needs to be able to understand what kind of content blocks are in your email, and how it should group your content. To do this, you (or your developer) will need to add some of our [Drag and Drop Markup]({{root_url}}/ui/sending-email/editor/#importing-custom-html-with-drag--drop-markup) to the code.
 
 **When I opened the new editor, my entire email got dropped into one big code module:**
-<br>If you created a campaign using drag-and-drop modules in the old editor, but then edited some of the code yourself, this can cause the Design editor to view your email as a single block of code. If this is the case, we recommend that you take a few minutes to rebuild the campaign in the new drag-and-drop editor. This will ensure that your campaigns are stable, clean and any bugs from the old editor aren't copied over into the new experience.
+<br>If you created a campaign using drag-and-drop modules in the old editor, but then edited some of the code yourself, this can cause the Design editor to view your email as a single block of code. If this is the case, we recommend that you take a few minutes to rebuild the campaign in the new drag-and-drop editor. This will ensure that your campaigns are stable, clean, and any bugs from the old editor aren't copied over into the new experience.
 
 ## 	We're here to help
  	We're excited for all of the new value that you're going to experience with the new editor. As always, if you have any questions or concern, our [Support team](https://support.sendgrid.com) is standing by to help.

@@ -44,7 +44,7 @@ Unfortunately, there is not an easy way to add SMTP API headers to a message in 
 
 ## 	Attachment Compatibility
 
-Mail will sometimes attach images in a way that is incompatible with other email readers.  However, this behavior can be be changed so that Mail will send more traditional non-inline attachments.
+Mail will sometimes attach images in a way that is incompatible with other email readers. However, this behavior can be be changed so that Mail will send more traditional non-inline attachments.
 
 1. Open Terminal (found in Finder > Applications > Utilities).
 1. In Terminal, paste the following: ```defaults write com.apple.mail DisableInlineAttachmentViewing -bool yes```.

@@ -10,6 +10,7 @@ seo:
 navigation:
   show: true
 ---
+
 <call-out>
 
  We recommend using SendGrid PHP, our client library, [available on GitHub](https://github.com/sendgrid/sendgrid-php), with full documentation.

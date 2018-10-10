@@ -14,7 +14,7 @@ navigation:
 
 ## 	Simple Name Substitution
  	
-This example will show you how to create a name substitution for your emails. We will be using the tag {{name}} in this example. In this example the tag {{name}} will get replaced with the name of the recipient.
+This example will show you how to create a name substitution for your emails. We will be using the tag `{{name}}` in this example. In this example the tag `{{name}}` will get replaced with the name of the recipient.
 
  #### 	Email Content
  	
@@ -167,7 +167,7 @@ Hello Matt,
 
 ##	First Name and Last Name Substitutions
  	
-This example will show you how to create a first name and last name substitution for your emails. We will be using the tags "{{first_name}}" and "{last_name}}" in this example. In this example the tag {{first_name}} will get replaced with the first name of the recipient and the tag {{last_name}} will get replaced with the last name of the recipient.
+This example will show you how to create a first name and last name substitution for your emails. We will be using the tags `{{first_name}}` and `{{last_name}}` in this example. In this example the tag `{{first_name}}` will get replaced with the first name of the recipient and the tag `{{last_name}}` will get replaced with the last name of the recipient.
  	
  #### 	Text
  	
@@ -323,7 +323,7 @@ Hello Matt Johnson,
 
 ## 	Simple Greeting Section with Name Substitution
  	
-This example will show you how to create a section as a greeting with a name substitution. We will be using the tags "{{warm_welcome}}", "{{greeting}}" and "{{name}}" in this example. In this example we have created a greeting using the section tag {{warm_welcome}}. The {{warm_welcome}} tag is replaced with the {{greeting}} substitution which calls the section "Hello {{name}},". The {{name}} tag in "Hello {{name}}," is then replaced with the recipients name.
+This example will show you how to create a section as a greeting with a name substitution. We will be using the tags `{{warm_welcome}}`, `{{greeting}}` and `{{name}}` in this example. In this example we have created a greeting using the section tag `{{warm_welcome}}`. The `{{warm_welcome}}` tag is replaced with the `{{greeting}}` substitution which calls the section `"Hello {{name}},"`. The `{{name}}` tag in `"Hello {{name}},"` is then replaced with the recipients name.
  	
  #### 	Text
  	
@@ -482,7 +482,7 @@ Hello Matt,
 
 ## 	Greeting Section with First & Last Name Substitutions
  	
-This example will show you how to create a section with first name and last name substitution for your emails. We will be using the tags "{{warm_welcome}}", "{{greeting}}", "{{first_name}}" and "{{last_name}}" in this example. In this example we have created a greeting using the section tag {{warm_welcome}}. The {{warm_welcome}} tag is replaced with the {{greeting}} substitution which calls the section "Hello {{first_name}} {{last_name}},". The {{first_name}} and {{last_name}} tags in "Hello {{first_name}} {{last_name}}," is then replaced with the recipients first and last names.
+This example will show you how to create a section with first name and last name substitution for your emails. We will be using the tags `{{warm_welcome}}`, `{{greeting}}`, `{{first_name}}` and `{{last_name}}` in this example. In this example we have created a greeting using the section tag `{{warm_welcome}}`. The `{{warm_welcome}}` tag is replaced with the `{{greeting}}` substitution which calls the section `"Hello {{first_name}} {{last_name}},"`. The `{{first_name}}` and `{{last_name}}` tags in `"Hello {{first_name}} {{last_name}},"` is then replaced with the recipients first and last names.
 
  	
  #### 	Text
@@ -647,7 +647,7 @@ Hello Matt Johnson,
 
 ##	Three Different Greeting Sections with First & Last Name Substitutions
  	
-This example will show you how to create three different sections, each with first name and last name substitution for your emails. We will be using the tags "{{warm_welcome}}", "{{greeting01}}", "{{greeting02}}", "{{greeting03}}", "{{first_name}}" and "{{last_name}}" in this example. In this example we have created three different greetings using the section tag {{warm_welcome}}. The {{warm_welcome}} tag is replaced with either {{greeting01}}, {{greeting02}} or {{greeting03}} substitution. This will call one of the three sections. In each of these sections there is the {{first_name}} and {{last_name}} tags which will get replaced with the recipients first and last names.
+This example will show you how to create three different sections, each with first name and last name substitution for your emails. We will be using the tags `{{warm_welcome}}`, `{{greeting01}}`, `{{greeting02}}`, `{{greeting03}}`, `{{first_name}}` and `{{last_name}}` in this example. In this example we have created three different greetings using the section tag `{{warm_welcome}}`. The `{{warm_welcome}}` tag is replaced with either `{{greeting01}}`, `{{greeting02}}` or `{{greeting03}}` substitution. This will call one of the three sections. In each of these sections there is the `{{first_name}}` and `{{last_name}}` tags which will get replaced with the recipients first and last names.
  	
  #### 	Text
  	
@@ -815,7 +815,7 @@ Dear Matt Johnson,
 
 ## 	Three Confirmation Sections and Substitutions
  	
-This example will show you how to create three different sections for confirmation emails. We will be using the tags "{{name}}", "{{confirmations}}", "{{confirmation_001}}", "{{confirmation_002}}", "{{confirmation_003}}" and "{{order_id}}" in this example. In this example we have created three different confirmations using the section tag {{confirmations}}. The {{confirmations}} tag is replaced with either {{confirmation_001}}, {{confirmation_002}} or {{confirmation_003}} substitution. This will call one of the three sections. In each of these sections there is the {{order_id}} tag which will get replaced with the recipients order id.
+This example will show you how to create three different sections for confirmation emails. We will be using the tags `{{name}}`, `{{confirmations}}`, `{{confirmation_001}}`, `{{confirmation_002}}`, `{{confirmation_003}}` and `{{order_id}}` in this example. In this example we have created three different confirmations using the section tag `{{confirmations}}`. The `{{confirmations}}` tag is replaced with either `{{confirmation_001}}`, `{{confirmation_002}}` or `{{confirmation_003}}` substitution. This will call one of the three sections. In each of these sections there is the `{{order_id}}` tag which will get replaced with the recipients order id.
  	
  #### 	Text
  	

@@ -13,7 +13,7 @@ navigation:
 
 API keys are used by your application, mail client, or website to authenticate access to SendGrid services. They are the preferred alternative to using a username and password because you can revoke an API key at any time without having to change your username and password. We suggest that you use API keys for connecting to all of SendGrid’s services.
 
-There are two different types of API keys:
+There are 2 different types of API keys:
 
 1. **Full Access** gives all of the API methods.
 1. **Billing Access** gives you access to the billing endpoints.
@@ -101,4 +101,4 @@ Once you delete a key, it can no longer be used to access SendGrid’s services.
 
 </call-out>
 
-Click the action menu in the same row as the key you want to inactivate. Select **Delete**.  This will delete the key permanently, making it inactive. Any subsequent API calls using this deleted API key will be rejected by SendGrid.
+Click the action menu in the same row as the key you want to delete. Select **Delete**. This will delete the key permanently, making it inactive. Any subsequent API calls using this deleted API key will be rejected by SendGrid.
