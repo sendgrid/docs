@@ -17,7 +17,7 @@ Parent accounts will see aggregated statistics for their account and all subuser
 
 </call-out>
 
-The geographical report shows a map of where your emails are being opened and clicked around the world. It is based purely on where your users live. For example you don’t have any recipients engaging with your emails France, you will not see statistics for France in your stats.
+The geographical report shows a map of where your emails are being opened and clicked around the world. It is based purely on where your users live. For example if you don’t have any recipients engaging with your emails in France, you will not see statistics for France in your stats.
 
 ## 	Top 5
 

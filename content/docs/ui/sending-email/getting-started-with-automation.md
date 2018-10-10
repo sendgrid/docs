@@ -153,11 +153,11 @@ During beta, templates from Marketing Campaigns are not available in Automation.
 
 </call-out>
 
-10. Next, select either the [Design]({{root_url}}/ui/sending-email/editor/#the-design-editor) or [Code]({{root_url}}/ui/sending-email/editor/#the-code-editor) editor to design or edit your email.  
+11. Next, select either the [Design]({{root_url}}/ui/sending-email/editor/#the-design-editor) or [Code]({{root_url}}/ui/sending-email/editor/#the-code-editor) editor to design or edit your email.  
 
-11. If you did not do so within the editor, you can add a subject line and select a sender from the Edit Automation page.
-12. To add more emails to this automated series, click **Add an Email**.
-13. Repeat steps 7-12 for each additional email you add to this custom automation.
+12. If you did not do so within the editor, you can add a subject line and select a sender from the Edit Automation page.
+13. To add more emails to this automated series, click **Add an Email**.
+14. Repeat steps 7-12 for each additional email you add to this custom automation.
 
 ### Duplicate an Automation
 

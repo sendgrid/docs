@@ -25,9 +25,9 @@ If you choose not to use substitution tags, your emails will automatically have 
 
  ### 	Manage email preferences
 
-You can also choose to manually add the `<%asm_preferences_url%>` tag to your email. We will automatically replace that tag with the text "Manage Email Preferences" wherever the tag is found in your email. This will allow your recipients to see your Unsubscribe Groups in a [Subscription Preference page]({{root_url}}/ui/sending-email/recipient-subscription-preferences/) and then choose which groups they are interested in.
+You can also choose to manually add the `<%asm_preferences_url%>` tag to your email. We will automatically replace that tag with the text "Manage Email Preferences" wherever the tag is found in your email. This will allow your recipients to see your Unsubscribe Groups in a Subscription Preference page and then choose which groups they are interested in.
 
-Alternatively, you can use the `<%asm_preferences_raw_url%>` substitution tag. This will be replaced with just the URL pointing to your [Subscription Preference page]({{root_url}}/ui/sending-email/recipient-subscription-preferences/) without the hyperlinked text "Manage Email Preferences".
+Alternatively, you can use the `<%asm_preferences_raw_url%>` substitution tag. This will be replaced with just the URL pointing to your Subscription Preference page without the hyperlinked text "Manage Email Preferences".
 
 For more substitution tags, please see our [transactional templates]({{root_url}}/ui/sending-email/create-and-edit-transactional-templates/#adding-unsubscribe-links-to-a-template).
 
