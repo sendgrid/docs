@@ -71,7 +71,7 @@ For more information, please visit [Fastly's documentation](https://docs.fastly.
 
 This section is maintained by KeyCDN, if you have any questions about KeyCDN please [contact their support](https://www.keycdn.com/support/) team.
 
-[Sign up for KeyCDN](https://www.keycdn.com) or login to your
+[Sign up for KeyCDN](https://app.keycdn.com/signup) or login to your
 existing account.
 
 Create a pull zone and point the origin URL to https://sendgrid.net.
