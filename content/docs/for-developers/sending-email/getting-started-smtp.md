@@ -75,7 +75,7 @@ Message size limit:  The total message size should not exceed 20MB. This include
 ## Additional Resources
 
 - [Getting Started with the UI]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/)
-- [Getting Started with the API]({{root_url}/for-developers/sending-email/api-getting-started/)
+- [Getting Started with the API]({{root_url}}/for-developers/sending-email/api-getting-started/)
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
 - [Integrating with the SMTP API]({{root_url}}/for-developers/sending-email/integrating-with-the-smtp-api/)
 - [Building an SMTP Email]({{root_url}}/for-developers/sending-email/building-an-smtp-email/)
