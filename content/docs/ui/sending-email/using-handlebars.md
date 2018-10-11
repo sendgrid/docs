@@ -25,7 +25,7 @@ For the full API documentation, see [Mail Send with Dynamic Transactional Templa
 
 ## 	Personalizing email with Handlebars
 
-We do not support full Handlebars.js functionality. Currently, dynamic templates supports the following helpers:
+We do not support full Handlebars.js functionality. Currently, dynamic templates support the following helpers:
 
   - [Substitution](#substitution)
   - [Conditional statements](#conditional-statements) (including `if/else` and `unless`)
@@ -41,7 +41,7 @@ Here are example use cases listed with the Handlebars.js helpers used to build t
 
 This is an [example receipt template](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates/receipt).
 
-This reciept template is using these helpers:
+This receipt template is using these helpers:
 
   - [Substitution](#substitution)
   - [Conditional statements](#conditional-statements)
@@ -59,7 +59,7 @@ This transactional template is using this helper:
 
 This is an [example template that lets you have content in multiple languages](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates/different-languages).
 
-This reciept template is using this helper:
+This receipt template is using this helper:
 
 - [Conditional statements](#conditional-statements) - `if/else`
 
@@ -67,7 +67,7 @@ This reciept template is using this helper:
 
 This is an [example newsletter template](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates/newsletter).
 
-This reciept template is using these helpers:
+This receipt template is using these helpers:
 
   - [Substitution](#substitution)
   - [Iterations](#iterations)
@@ -76,7 +76,7 @@ This reciept template is using these helpers:
 
 This is an [example template that is advertising items on sale](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates/special-sale).
 
-This reciept template is using these helpers:
+This receipt template is using these helpers:
 
   - [Substitution](#substitution)
   - [Conditional statements](#conditional-statements) - `if/else`
@@ -84,7 +84,7 @@ This reciept template is using these helpers:
 
 ## 	Handlebar.js reference
 
-This reference goes through examples of each helper - including HTML email snippits, and JSON test data.
+This reference goes through examples of each helper - including HTML email snippets, and JSON test data.
 
  ### 	Substitution
 
