@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-You can utalize the SendGrid API to automate the addition of Subusers to your account. Use the following ```curl``` examples to add a Subuser using the SendGrid V3.0 API.
+You can utilize the SendGrid API to automate the addition of Subusers to your account. Use the following ```curl``` examples to add a Subuser using the SendGrid V3.0 API.
 
 ## 	Prerequisites
 
@@ -61,7 +61,7 @@ Response:
 [{"disabled":false,"email":"example@gmail.com","id":1762958,"username":"exampletestingv3subuserapi"},{"disabled":false,"email":"example@sendgrid.com","id":1766771,"username":"examplesubuser-UI"},{"disabled":false,"email":"example@sendgrid.com","id":1803837,"username":"exampleisasubuser"},{"disabled":false,"email":"example@gmail.com","id":1868534,"username":"examplecurltesting"}]
 ```
 
-3. **Create API Keys** (optional, depends on integration style): If the application would rather run on API keys rather than password, then follow this step:
+3. **Create API Keys** (optional, depends on integration style): If the application would rather run on API keys than a password, then follow this step:
 
 ```bash
 curl -X POST -H "Authorization: Basic XXXXXXXXXXXXXXXX" -H "Content-Type: application/json" -d '{"name": “API KEY NAME"}' 'https://api.sendgrid.com/v3/api_keys'
@@ -75,18 +75,17 @@ curl -X POST -H "Authorization: Bearer PARENT_APIKEY_HERE"
   'https://api.sendgrid.com/v3/api_keys'
   ```
   
-  Successful API key implementation Response:
+Successful API key implementation Response:
   
   ```bash
-  =>
-201 created
+  => 201 created
 {"api_key":"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","api_key_id":"rGaWG-xBTHiBuhCLxWZ0Hg","name":"new api key","scope_set_id":"00766089-9730-4f16-8191-b8bedc5f57f5"}
 ```
 
-Once this has been done, the Subuser has been created. From this point on we’ll cover implementing click tracking, open tracking, and the Event Webhook for those subusers.
+Once this has been done, the Subuser has been created. From this point on, we’ll cover implementing Click Tracking, Open Tracking, and the Event Webhook for those Subusers.
 
 ### Enable/Edit Applications
-As of right now this needs to be done directly through the account in question
+As of right now this needs to be done directly through the account in question.
 
 1. **Click Tracking**
 
@@ -142,7 +141,7 @@ Response:
 
 ### Whitelabel the Subuser
 
-Now we’re going to whitelabel the subusers created above. This process involves creating the parent whitelabel and then associating it with your subusers:
+Now we are going to Whitelabel the subusers created above. This process involves creating the parent Whitelabel and then associating it with your Subusers:
 
 1. **Create Domain Authentication**
 
@@ -335,7 +334,7 @@ Response:
 ```
 
 5. **Validate ID of domain Whitelabel**
-Once you have the ID of the domain whitelabel you can validate it.
+Once you have the ID of the domain Whitelabel you can Validate it.
 
 ```bash
 curl -X POST -H "Authorization: Basic XXXXXXXXXXXXXXXX" -H "Content-Type: application/json" 'https://api.sendgrid.com/v3/whitelabel/domains/50784/validate'
