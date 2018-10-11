@@ -254,7 +254,7 @@ Content analysis details:   (2.6 points, 5.0 required)
   ["spam_score"]=>
   string(5) "2.597"
   ["attachment-info"]=>
-  string(287) "{"attachment2":{"filename":"DockMcWordface.docx","type":"application/vnd.openxmlformats-officedocument.wordprocessingml.document"},"attachment1":{"filename":"MG_2359.jpg","type":"image/jpeg","content-id":"ii_1562e2169c132d83"}}"
+  string(287) "{"attachment2":{"filename":"DockMcWordface.docx","name":"DockMcWordface.docx","type":"application/vnd.openxmlformats-officedocument.wordprocessingml.document"},"attachment1":{"filename":"MG_2359.jpg","name":"_MG_2359.jpg","type":"image/jpeg","content-id":"ii_1562e2169c132d83"}}"
   ["charsets"]=>
   string(77) "{"to":"UTF-8","html":"UTF-8","subject":"UTF-8","from":"UTF-8","text":"UTF-8"}"
   ["SPF"]=>
