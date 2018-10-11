@@ -61,7 +61,7 @@ Below are links to the delisting forms used by the more popular external blackli
 - [Google](https://support.google.com/mail/contact/msgdelivery)
 - [Invalument](http://www.invaluement.com/removal/)
 - [Manitu](http://www.dnsbl.manitu.net/index.php?language=en)
-- [McAfee](https://secure.mcafee.com/apps/mcafee-labs/threat-feedback.aspx)
+- [McAfee](https://www.mcafee.com/enterprise/en-us/threat-center/threat-feedback.html)
 - [Mimecast](http://www.mimecast.com/senderfeedback)
 - [Office 365](https://sender.office.com/)
 - [SORBS](http://www.sorbs.net/)
