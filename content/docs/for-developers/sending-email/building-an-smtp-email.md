@@ -207,5 +207,5 @@ For more information, see our [IP Pools documentation]({{root_url}}/API_Referenc
 - [How to send email]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/)
 - [Getting started with the API]({{root_url}}/api-reference/)
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
-- [Getting Started with the SMTP API]({{root_url}}/for-developers/sending-email/sending-email-smtp/)
+- [Getting Started with the SMTP API]({{root_url}}/for-developers/sending-email/getting-started-smtp/)
 - [Integrating with SMTP]({{root_url}}/for-developers/sending-email/integrating-with-the-smtp-api/)
