@@ -173,9 +173,6 @@ During the beta, contacts you upload to Automation are distinct from your existi
 
 First, it's important to note that automations will only trigger to contacts who are added to an entry criteria list *after* the automation is set live. Contacts who you add to a list before the automation is set live will not receive any emails in the series.
 
-
-## Manage Contacts
-
 ### Add New Contacts
 
 1. Use [this CSV template]({{root_url}}/assets/example.csv) to make sure your CSV is formatted correctly.
@@ -190,7 +187,9 @@ At this phase of the beta, custom fields are not supported. You can import [rese
 
 4. Upload your file by dragging it into or clicking the CSV upload area.
    Once the CSV has processed, you will receive a [notification]({{root_url}}/ui/sending-email/getting-started-with-automation/#notifications) email.
-   
+
+## Managing Contacts
+
 ### Edit or Remove Contacts   
 
 During this early phase of beta, you cannot search, edit, or delete contacts.
