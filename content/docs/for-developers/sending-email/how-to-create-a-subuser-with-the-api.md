@@ -120,6 +120,7 @@ https://api.sendgrid.com/apiv2/customer.auth.json?api_user=ryan.burrer@sendgrid.
 
 ## Additonal Resources
 
+* [Automating Subusers]({{root_url}}/docs/for-developers/sending-email/automating-subusers)
 * [Event Notification URL]({{root_url}}/API_Reference/Customer_Subuser_API/event_notification_url.html)
 * [Apps]({{root_url}}/API_Reference/Customer_Subuser_API/apps.html)
 * [Account Limits]({{root_url}}/API_Reference/Customer_Subuser_API/account_limits.html)
