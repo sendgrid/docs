@@ -43,7 +43,6 @@ function use_wpbe_template( $message, $content_type ) {
     } else {
       $message = $wp_better_emails->process_email_html( $message );
     }
-
     return $message;
 }
 
@@ -63,12 +62,15 @@ The contacts will only be uploaded to Marketing Campaigns.
 ## 	What permissions should my API keys have?
 
 For the API Key used for sending emails (the General tab):
-– Full Access to Mail Send.
-– Read Access to Stats.
-– Read Access to Suppressions > Unsubscribe Groups.
-– Read Access to Template Engine.
+
+* Full Access to Mail Send.
+* Read Access to Stats.
+* Read Access to Suppressions > Unsubscribe Groups.
+* Read Access to Template Engine.
+
 For the API Key used for contact upload (the Subscription Widget tab):
-– Full Access to Marketing Campaigns.
+
+* Full Access to Marketing Campaigns.
 
 ## 	Can I disable the opt-in email?
 
@@ -100,7 +102,7 @@ add_filter( 'sendgrid_mail_html', 'change_sendgrid_html_email' );
 
 <call-out>
 
-**Please note:** what is changed in your emails depends on the content-type that you have set in the settings page or overwritten in a filter.
+**Please note:** What is changed in your emails depends on the content-type that you have set in the settings page or overwritten in a filter.
 
 For "text/plain," only the text part is overwritten by the filter. For "text/html," both the text and the HTML filters are called.
 

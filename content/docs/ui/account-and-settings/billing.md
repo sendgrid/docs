@@ -28,7 +28,7 @@ You can update your card information, retry a failed payment, and export past in
 
 Each email sent using the UI or API costs one credit - this counts towards your monthly plan volume, just like the messages you already send. In addition to this normal charge, if you are using Marketing Campaigns to store contacts, you are charged for storing those contacts:
 
-**Your first 2,000 contacts are free. After 2,000, we charge $10.00 per 10,000 stored contacts per month.**
+**Your first 2,000 contacts are free. After 2,000 contacts, we charge $10.00 per 10,000 stored contacts per month.**
 
 We charge based on the highest number of contacts stored in the preceding month. Think of it as a high-water mark, so even if you reduce your contacts before your next bill rolls around (the 1st of each calendar month), we charge for whatever upper limit was reached.
 
