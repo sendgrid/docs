@@ -508,5 +508,6 @@ Response:
 For more information on SendGrid and where you can go from here, check out these pages:
 
 - [API Reference]({{root_url}}/api-reference/)
+- [How to Create a Subuser with the API]({{root_url}}/for-developers/sending-email/how-to-create-a-subuser-with-the-api)
 - [Sender Authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/)
 - [How to Send Email]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/)
