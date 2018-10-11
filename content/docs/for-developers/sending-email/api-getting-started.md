@@ -37,7 +37,7 @@ Your API call must have the following components:
 
 * A Host. The host for Web API v3 requests is always `https://api.sendgrid.com/v3/`
 * An [Authorization Header](https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-authentication#authorization-header)
-* An [API Key]({{root_url}}/ui/account-and-settings/api-keys/) within the Authorization Header
+* An [API Key](/content/docs/ui/account-and-settings/api-keys.md) within the Authorization Header
 * A Request. When submitting data to a resource via POST or PUT, you must submit your payload in JSON.
 
 <call-out>
