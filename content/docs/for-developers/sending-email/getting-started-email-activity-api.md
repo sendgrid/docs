@@ -124,7 +124,7 @@ curl --request GET \
 
  ### 	Filter by a recipient and a date range
 
-Use this query to filter to emails by recipient and between specific dates: (replace `<<your API key>>` with an API key from your account, replace <<start_date>> and <<end_date>> with a URL encoded UTC date string in this format: `YYYY-MM-DD HH:mm:SS`, and and replace <<email>> with the URL encoded recipient's email)
+Use this query to filter to emails by recipient and between specific dates: (replace `<<your API key>>` with an API key from your account, replace <<start_date>> and <<end_date>> with a URL encoded UTC date string in this format: `YYYY-MM-DD HH:mm:SS`, and replace <<email>> with the URL encoded recipient's email)
 
 ```
 curl --request GET \
