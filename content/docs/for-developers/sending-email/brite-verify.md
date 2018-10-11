@@ -73,7 +73,7 @@ Once the correct API Key is provided, the applications sync, and you may now ver
 
 <call-out>
 
-For more information or support contact [BriteVerify](http://www.briteverify.com/)
+For more information or support contact [BriteVerify](https://support.briteverify.com/)
 
 </call-out>
  	
