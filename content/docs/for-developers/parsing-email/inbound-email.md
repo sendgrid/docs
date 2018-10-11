@@ -40,7 +40,7 @@ Only authenticated domains may be used when configuring Inbound Parse!
 
 </call-out>
 
-See [Setting Up The Inbound Parse Webhook]({{root_url}}/for-developers/parsing-email/setting-up-the-inbound-parse-webhook/) for step-by-step instructions.
+See [Setting Up The Inbound Parse Webhook](/content/docs/for-developers/parsing-email/setting-up-the-inbound-parse-webhook.md) for step-by-step instructions.
 
 <call-out>
 
