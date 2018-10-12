@@ -10,7 +10,7 @@ navigation:
   show: true
 ---
 
-Symfony uses SwiftMailer to send email, read more about [sending emails from Symfony](http://www.symfony-project.org/gentle-introduction/1_4/en/11-Emails).
+Symfony uses SwiftMailer to send email, read more about [sending emails from Symfony](https://symfony.com/doc/current/email.html).
 
 To get started you need to modify parameters.yml and add the following: 
 
