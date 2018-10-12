@@ -44,7 +44,7 @@ class ReleaseNotes extends React.Component {
               <h2 className="hidden">
                 <a href="#overview" className="anchor" data-slug="overview">Overview</a>
               </h2>
-              <p className="is-size-h3">If you’re looking for SendGrid’s opererational status, see our <a href="http://status.sendgrid.com/">Status Page</a>.</p>
+              <p className="is-size-h3">If you’re looking for SendGrid’s operational status, see our <a href="http://status.sendgrid.com/">Status Page</a>.</p>
               <p className="is-size-h3">Some categories featured in our release notes include:</p>
             </div>
             <ReleaseKey />

@@ -173,7 +173,7 @@ Remember to direct your incoming email to your hostname (for example, example@ex
       </tr>
       <tr>
          <th>attachment-info</th>
-         <td>A string containing the attachmentX keys with another JSON string as the value. This string will contain the keys <code>filename</code> and <code>name</code>, which is the name of the file (if it was provided) and <code>type</code>, which is the <a href="http://en.wikipedia.org/wiki/Internet_media_type">media type</a> of the file. X is the total number of attachments. For example, if the number of attachments is 0, there will be no attachment files. If the number of attachments is 3, parameters attachment1, attachment2, and attachment3 will have file uploads. </td>
+         <td>A JSON map where the keys are named attachment{X}. Each attachment key points to a JSON object containing three fields, <code>filename</code>, <code>type</code>, and <code>content-id</code>. The <code>filename</code> field is the name of the file (if it was provided). The <code>type</code> field is the <a href="http://en.wikipedia.org/wiki/Internet_media_type">media type</a> of the file. <code>X</<code> is the total number of attachments. For example, if the number of attachments is 0, there will be no attachment files. If the number of attachments is 3, parameters attachment1, attachment2, and attachment3 will have file uploads. </td>
       </tr>
       <tr>
          <th>charsets</th>

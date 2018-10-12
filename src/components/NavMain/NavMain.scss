@@ -194,8 +194,9 @@
 }
 
 .nav-secondary__account {
-  position: relative;
   display: inline-block;
+  position: relative;
+  margin-left: $scaleup-2;
 
   span {
     padding-left: 20px;

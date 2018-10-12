@@ -100,7 +100,7 @@ Encoded, this query would look like this:
 
 ## 	Creating compound queries
 
-Use [operators and keywords](#keywords-and-Operator-reference) to combine queries for a compound query. For example, you could filter for emails between a date range, or you could filter for when a specific recipients email is bounced. Here are some common use cases:
+Use [operators and keywords](#keywords-and-operator-reference) to combine queries for a compound query. For example, you could filter for emails between a date range, or you could filter for when a specific recipients email is bounced. Here are some common use cases:
 
  ### 	Filter by a recipient email that was bounced
 
@@ -124,7 +124,7 @@ curl --request GET \
 
  ### 	Filter by a recipient and a date range
 
-Use this query to filter to emails by recipient and between specific dates: (replace `<<your API key>>` with an API key from your account, replace <<start_date>> and <<end_date>> with a URL encoded UTC date string in this format: `YYYY-MM-DD HH:mm:SS`, and and replace <<email>> with the URL encoded recipient's email)
+Use this query to filter to emails by recipient and between specific dates: (replace `<<your API key>>` with an API key from your account, replace <<start_date>> and <<end_date>> with a URL encoded UTC date string in this format: `YYYY-MM-DD HH:mm:SS`, and replace <<email>> with the URL encoded recipient's email)
 
 ```
 curl --request GET \

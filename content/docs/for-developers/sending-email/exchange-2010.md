@@ -44,4 +44,4 @@ The configuration of a new send connector is straight forward. It is the associa
 
 Once you have completed installation of the connector, you will need to configure your server(s) to allow limited access to the new send connector. You can read more about [Send Connector permissions][send-connector-permissions].
 
-[send-connector-permissions]: http://technet.microsoft.com/en-us/library/aa998662(v=exchg.141).aspx
+[send-connector-permissions]: https://docs.microsoft.com/en-us/previous-versions/office/exchange-server-2010/aa998662(v=exchg.141)#send-connector-permissions

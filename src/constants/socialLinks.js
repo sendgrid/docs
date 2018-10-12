@@ -15,11 +15,6 @@ const SOCIAL_LINKS = [
     IMG: 'https://sendgrid.com/wp-content/themes/sgdotcom/assets/images/footer/icon-facebook-circle.svg',
   },
   {
-    TEXTNODE: 'Google Plus',
-    URL: 'https://plus.google.com/+SendGrid1/',
-    IMG: 'https://sendgrid.com/wp-content/themes/sgdotcom/assets/images/footer/icon-google-circle.svg',
-  },
-  {
     TEXTNODE: 'GitHub',
     URL: 'https://github.com/sendgrid/',
     IMG: 'https://sendgrid.com/wp-content/themes/sgdotcom/assets/images/footer/icon-github-circle.svg',
