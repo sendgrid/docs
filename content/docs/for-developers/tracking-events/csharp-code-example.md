@@ -27,8 +27,7 @@ URL: http://sendgrid.biz/upload
 /// <summary>
 /// A model with the data format of the Inbound Parse API's POST
 /// </summary>
-public class Email
-{
+public class Email {
   /// <summary>
   /// The Domain Keys Identified Email code for the email
   /// </summary>
@@ -91,14 +90,12 @@ public class Email
 ```csharp
 // POST api/inbound
 [HttpPost]
-public async Task<HttpResponseMessage> Post()
-{
+public async Task<HttpResponseMessage> Post() {
 	var root = HttpContext.Current.Server.MapPath("~/App_Data");
 	var provider = new MultipartFormDataStreamProvider(root);
 	await Request.Content.ReadAsMultipartAsync(provider);
 
-	var email = new Email
-	{
+	var email = new Email {
 		Dkim = provider.FormData.GetValues("dkim").FirstOrDefault(),
 		To = provider.FormData.GetValues("to").FirstOrDefault(),
 		Html = provider.FormData.GetValues("html").FirstOrDefault(),
