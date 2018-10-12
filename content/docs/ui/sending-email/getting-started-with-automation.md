@@ -32,7 +32,8 @@ With the Automation beta, you could build email campaigns to:
 For beta participants who also use Marketing Campaigns, it’s important to know that during the beta, there is little connection between Marketing Campaigns and Automation. Specifically, the following items are **not shared** across the two offerings: 
 * Contacts and associated data (such as custom fields or engagement data) 
 * Templates
-* Account activity notifications (for example, the email you receive when a CSV export is complete)
+* Account activity notifications (for example, the email you receive when a 
+export is complete)
 
 Unsubscribe Groups and Senders **are shared** between Marketing Campaigns and Automation.
 
