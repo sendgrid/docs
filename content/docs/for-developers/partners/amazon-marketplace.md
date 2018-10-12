@@ -52,9 +52,9 @@ Sender authentication shows email providers that SendGrid has your permission to
 
 ### Adding Subusers
 
-You can only add subusers if you are on an AWS Pro plan. To upgrade your plan, see [Upgrading or Downgrading Your Account](#upgrading-or-downgrading-your-account). Subusers are SendGrid accounts that belong to a parent account. They have their permissions and credit limits, which you assign as you create the subusers. Subusers help you segment your email sending and API activity.
+You can only add Subusers if you are on an AWS Pro plan. To upgrade your plan, see [Upgrading or Downgrading Your Account](#upgrading-or-downgrading-your-account). Subusers are SendGrid accounts that belong to a parent account. They have their permissions and credit limits, which you assign as you create the Subusers. Subusers help you segment your email sending and API activity.
 
-To get started with using subusers, see the [Subusers overview]({{root_url}}/ui/account-and-settings/subusers/).
+To get started with using Subusers, see the [Subusers overview]({{root_url}}/ui/account-and-settings/subusers/).
 
 ### Upgrading or Downgrading Your Account
 
@@ -62,7 +62,7 @@ You can upgrade or downgrade your account from the [SendGrid UI](https://app.sen
 
 *To change your account plan:*
 
-1. Navigate to the [Plan & Billing Details page](https://app.sendgrid.com/settings/billing)in the SendGrid UI.
+1. Navigate to the [Plan & Billing Details page](https://app.sendgrid.com/settings/billing) in the SendGrid UI.
 1. Select Upgrade to AWS Pro, or Downgrade to AWS Basic.
 
 ![]({{root_url}}/images/aws_upgrade.png "AWS upgrading or downgrading")
