@@ -50,11 +50,11 @@ For example, to create a segment of recipients that have clicked on a link in a 
 
 <call-out>
 
-The *Condition* drop-down contains required CSV fields, custom fields, and internal event data to help you get your email campaigns to the correct audience. The *Criteria* drop-down contains operators that tell the segment *how* to handle the data sepcified by the condition.
+The *Condition* drop-down contains required CSV fields, custom fields, and internal event data to help you get your email campaigns to the correct audience. The *Criteria* drop-down contains operators that tell the segment *how* to handle the data specified by the condition.
 
 </call-out>
 
- Depending on which condition is selected, the criteria you can choose from differ. The criteria available to assign to conditions will depend on the field type (Text, Date, or Number).  For example, a condition labeled "Number” will show `GREATER THAN`, `LESS THAN`, and `EQUALS` as options whereas a “Text” field will show `IS` and `IS NOT` as options.
+ Depending on which condition is selected, the criteria you can choose from differ. The criteria available to assign to conditions will depend on the field type (Text, Date, or Number). For example, a condition labeled "Number” will show `GREATER THAN`, `LESS THAN`, and `EQUALS` as options whereas a “Text” field will show `IS` and `IS NOT` as options.
 
  ![]({{root_url}}/img/Segmentation.png "Segmentation conditions and criteria")
 

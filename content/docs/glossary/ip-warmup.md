@@ -23,12 +23,12 @@ You can now warmup your IP using our [IP Warmup API]({{root_url}}/API_Reference/
 
 </call-out>
 
-When you place your IP in warmup mode, we divide your email requests between the dedicated IP you wish to warm up and any other warm, dedicated IPs currently assigned. Each day we will increase the amount sent directly from your warming dedicated IP. You can see the suggested [IP Warmup Schedule]({{root_url}}/assets/IPWarmupSchedule.pdf).
+When you place your IP in warmup mode, we divide your email requests between the dedicated IP you wish to warmup and any other warm, dedicated IPs currently assigned. Each day we will increase the amount sent directly from your warming dedicated IP. You can see the suggested [IP Warmup Schedule]({{root_url}}/assets/IPWarmupSchedule.pdf).
 
 <call-out type="warning">
 
 We recommend the IP warmup tool only for users that have other warm, dedicated IPs which can accept any overflow email traffic as we gradually increase the volume sent through the warming IP.
 
-If you do not have other dedicated IPs and are building your reputation from scratch, recommend that you follow [this]({{root_url}}/assets/IPWarmupSchedule.pdf) warm-up schedule.
+If you do not have other dedicated IPs and are building your reputation from scratch, recommend that you follow [this]({{root_url}}/assets/IPWarmupSchedule.pdf) warmup schedule.
 
 </call-out>

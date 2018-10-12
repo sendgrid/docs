@@ -12,7 +12,7 @@ navigation:
   show: true
 ---
 
-Ending up on a blacklist can be detrimental to your domain’s email deliverability. These days, there are hundreds, maybe thousands of blacklists out there. Some, like the Spamhaus SBL, can bring your email program to a screeching halt. Others are little more than an annoyance. Many of the world's largest inbox providers use blacklists to help them make inboxing and filtering decisions. Others rely only their own internal metrics. Always remember: if a listing service ever asks you pay a fee for a delisting request, or if they say that they do not accept delisting requests, then you should not waste your time trying to get your domain/IP delisted because these services are rarely, if ever, used. However, if you find that your IP address has been blacklisted by one of the many legitimate services, then submitting a delisting request is the top priority. Depending on the level of your account, you should approach a blacklisting in one of two ways:
+Ending up on a blacklist can be detrimental to your domain’s email deliverability. These days, there are hundreds, maybe thousands of blacklists out there. Some, like the Spamhaus SBL, can bring your email program to a screeching halt. Others are little more than an annoyance. Many of the world's largest inbox providers use blacklists to help them make inboxing and filtering decisions. Others rely only their own internal metrics. Always remember: if a listing service ever asks you pay a fee for a delisting request, or if they say that they do not accept delisting requests, then you should not waste your time trying to get your domain/IP delisted because these services are rarely, if ever, used. However, if you find that your IP address has been blacklisted by one of the many legitimate services, then submitting a delisting request is the top priority. Depending on the level of your account, you should approach a blacklisting in one of 2 ways:
 
  
 
@@ -40,7 +40,7 @@ _Please note:  in the event that a sending domain (and not the IP address) is bl
 
  
 
-Here are two aggregation websites that anyone can use to check on the status of their IP:
+Here are 2 aggregation websites that anyone can use to check on the status of their IP:
 
 - [http://multirbl.valli.org/](http://multirbl.valli.org/)
 - [http://www.mxtoolbox.com/blacklists.aspx](http://www.mxtoolbox.com/blacklists.aspx "Link: http://www.mxtoolbox.com/blacklists.aspx")
@@ -59,7 +59,7 @@ Below are links to the delisting forms used by the more popular external blackli
 - [Comcast](http://postmaster.comcast.net/block-removal-request.html)
 - [Google](https://support.google.com/mail/contact/msgdelivery)
 - [McAfee](https://secure.mcafee.com/apps/mcafee-labs/threat-feedback.aspx)
-- [Microsoft/Outlook](https://support.live.com/eform.aspx?productKey=edfsmsbl3&ct=eformts)
+- [Microsoft/Outlook](https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=edfsmsbl3&locale=en-us&ccsid=635996265829568030&forceorigin=esmc)
 - [Mimecast](http://www.mimecast.com/senderfeedback)
 - [Office365](https://sender.office.com/)
 - [ProofPoint](https://support.proofpoint.com/dnsbl-lookup.cgi)

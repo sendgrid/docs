@@ -56,7 +56,7 @@ Teammate names have to be unique across SendGrid, so if you want to continue to 
 
 ## Create new subusers
 
-If you are using subusers, navigate to the [subusers page](https://app.sendgrid.com/settings/subusers) in the UI and click **Export data** to download all of the information on your current subsuers.
+If you are using subusers, navigate to the [subusers page](https://app.sendgrid.com/settings/subusers) in the UI and click **Export data** to download all of the information on your current subusers.
 
 To add subusers to your new account, go to the [subusers page](https://app.sendgrid.com/settings/subusers) in the UI, and click **Create a new subuser**. Use the data from the exported CSV to create a new subuser.
 
@@ -64,10 +64,10 @@ To add subusers to your new account, go to the [subusers page](https://app.sendg
 
 If you are using a dedicated IP, our support team can migrate your dedicated IP for you. Access support contact options by logging into https://support.sendgrid.com. Provide us with: your current and new usernames, the IP addresses, and your preferred time for the IP transfer - we can migrate IPs between 7 am and 5 pm MST on Monday through Friday.
 
-Be sure to set up reverse DNS and rewarm up your transferred IP before you start sending on it in your new account. You also need to reassign it to subusers if needed.
+Be sure to set up reverse DNS and rewarmup your transferred IP before you start sending on it in your new account. You also need to reassign it to subusers if needed.
 
-## Download stats and email activity
+## Download statistics and email activity
 
-On all of the stats pages and on the email activity page, click **Export CSV** to download your stats for your records. Your new account cannot import this data.
+On all of the statistics pages and on the email activity page, click **Export CSV** to download your statistics for your records. Your new account cannot import this data.
 
 

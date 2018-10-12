@@ -37,7 +37,7 @@ A peer-initiated invitation system can help your subscribers spread the word abo
 * Never allow your subscribers to send invitations to their entire address book. Address books contain old, stale addresses that ISPs use as spam traps. To prevent this, design your invitation system so that your subscriber must deliberately select each invitee.
 * Limit the number of invitations each customer can send to encourage selective, quality invitations. When your customers are careful to invite only those who they think will appreciate your service, you reduce the risk of recipients reporting the invitations as spam. If enough people mark your invites as spam, they will be blocked or filtered—not what you intended.
 * Clearly display the inviter’s name or email address, so the invitee knows who sent the invitation. (Peer-initiated invitations are most effective when the invitee knows and trusts the inviter.)
-* use the inviter’s email address for the invitation emails From address.
+* Use the inviter’s email address for the invitation emails From address.
 * Clearly express the purpose of the invitation. Recipients must understand what they are being invited to.
 *  After the initial invitation, don’t send more than one follow-up (reminder) email to invitees that didn’t respond to the first invitation.
 

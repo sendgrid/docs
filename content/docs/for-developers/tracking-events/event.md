@@ -13,11 +13,11 @@ navigation:
 
 ## 	Events
 
-Events are generated when email is processed by SendGrid and email service providers. There are two types of events - delivery and engagement events. Delivery events indicate the status of email delivery to the recipient. Engagement events indicate how the recipient is interacting with the email.
+Events are generated when email is processed by SendGrid and email service providers. There are 2 types of events - delivery and engagement events. Delivery events indicate the status of email delivery to the recipient. Engagement events indicate how the recipient is interacting with the email.
 
 Here is a flow of email events:
 
-![event flow]({{root_url}}/images/email_event_flow.jpg "Event Flow")
+![]({{root_url}}/img/email-event-flow.png "The flow of events and their categories")
 
 Here is an event response that includes an example of each type of event:
 
@@ -248,7 +248,7 @@ Delivery events include processed, dropped, delivered, deferred, and bounce.
       </tr>
       <tr>
          <td><a name="bounce"></a>Bounce</td>
-         <td>Receiving server could not or would not accept the message. If a recipient has previously unsubscribed from your emails, the message is bounced.</td>
+         <td>Receiving server could not or would not accept the message. If a recipient has previously unsubscribed from your emails, the message is dropped.</td>
          <td>
 ```raw
 [
@@ -723,7 +723,7 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
 - <a name="smtpid"></a>`smtp-id` - a unique ID attached to the message by the originating system.
 - <a name="useragent"></a>`useragent` - the user agent responsible for the event. This is usually a web browser. For example, "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36".
 - <a name="ip"></a>`IP` - the IP address used to send the email. For `open` and `click` events, it is the IP address of the recipient who engaged with the email.
-- <a name="sgeventid"></a>`sg_event_id` - a unique ID to this event that you can use for deduplication purposes. These IDs are either 22 or 48 characters long.
+- <a name="sgeventid"></a>`sg_event_id` - a unique ID to this event that you can use for deduplication purposes. These IDs are 22 characters long.
 - <a name="sgmessageid"></a>`sg_message_id` - a unique, internal SendGrid ID for the message. The first half of this is pulled from the `smtp-id`.
 - <a name="reason"></a>`reason` - any sort of error response returned by the receiving server that describes the reason this event type was triggered.
 - <a name="status"></a>`status` - status code string. Corresponds to HTTP status code - for example, a JSON response of 5.0.0 is the same as a 500 error response.
@@ -1004,6 +1004,54 @@ For emails sent through our Legacy Marketing Email tool, unsubscribes look like 
         "sg_event_id": "RHFZB1IrTD2Y9Q7bUdZxUw",
         "sg_message_id": "14c583da911.2c36.1c804d.filter-406.22375.55148AA99.0",
         "event": "processed"
+    }
+]
+```
+
+ ### 	Click
+
+<table class="table table-bordered table-striped">
+   <thead>
+      <tr>
+         <th>event</th>
+         <th>email</th>
+         <th>url</th>
+         <th>category</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>click</td>
+         <td>Message recipient</td>
+         <td>URL Clicked</td>
+         <td>The category you assigned</td>
+      </tr>
+   </tbody>
+</table>
+
+```json
+[
+    {
+  "sg_event_id":"sendgrid_internal_event_id",
+  "sg_message_id":"sendgrid_internal_message_id",
+  "ip":"255.255.255.255",
+  "useragent":"Mozilla/5.0 (iPhone; CPU iPhone OS 7_1_2 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Version/7.0 Mobile/11D257 Safari/9537.53",
+  "event":"click",
+  "email":"email@example.com",
+  "timestamp":1249948800,
+  "url":"http://yourdomain.com/blog/news.html",
+  "url_offset": {
+    "index": 0,
+    "type": "html"
+  },
+  "unique_arg_key":"unique_arg_value",
+  "category":["category1", "category2"],
+  "newsletter": {
+    "newsletter_user_list_id": "10557865",
+    "newsletter_id": "1943530",
+    "newsletter_send_id": "2308608"
+  },
+  "asm_group_id": 1
     }
 ]
 ```

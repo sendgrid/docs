@@ -42,7 +42,7 @@ Click here to [Send new emails via SendGrid for new Gravity Forms submissions](h
 
 ![Credential entry](https://api.monosnap.com/rpc/file/download?id=gAajRq9wMKNTN4HyEKzAMosD71ifb8)
 
-4. Using fields from Gravity Forms, create and customize the **To**, **From**, and **Subject** email message that the Zap will send.
+4. Using fields from Gravity Forms, create, and customize the **To**, **From**, and **Subject** email message that the Zap will send.
 
 ![Email entry](https://api.monosnap.com/rpc/file/download?id=5fpmLkDdv82LPlTeYCyhUE7bsFeSIE)
 

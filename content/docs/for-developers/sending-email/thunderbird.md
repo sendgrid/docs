@@ -40,8 +40,8 @@ To send email using Thunderbird you will have to modify your outgoing server set
 4. Enter "mail.compose.other.header" under "Filter:"
 5. Double-click **mail.compose.other.header**.
 6. Enter "X-SMTPAPI"
-7.  Click **OK**.
-8.  Close the configuration editor and preferences dialog.
+7. Click **OK**.
+8. Close the configuration editor and preferences dialog.
 
 ![]({{root_url}}/images/thunderbird_4.png "thunderbird_header")
 

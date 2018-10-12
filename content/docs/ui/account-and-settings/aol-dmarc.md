@@ -23,5 +23,5 @@ This is because AOL will no longer be accepting messages where the From domain i
 
 **What about these messages, are they lost?** : Yes, any send with this bounce message is discarded and tracked as a  [Block](http://sendgrid.com/blocks). You will need to adjust your From address field settings, and then try resending from your side.
 
-For more information, check out [AOL's blog post](http://postmaster-blog.aol.com/2014/04/22/aol-mail-updates-dmarc-policy-to-reject/). 
+For more information, check out [AOL's archived blog post](https://web.archive.org/web/20180428093819/http://postmaster-blog.aol.com/2014/04/22/aol-mail-updates-dmarc-policy-to-reject) and their FAQ page on [DKIM and DMARC](https://postmaster.aol.com/dkim-dmarc). 
 

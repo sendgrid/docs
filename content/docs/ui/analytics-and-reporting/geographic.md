@@ -13,11 +13,11 @@ navigation:
 
 <call-out>
 
-Parent accounts will see aggregated stats for their account and all subuser accounts. Subuser accounts will only see their own stats.
+Parent accounts will see aggregated statistics for their account and all subuser accounts. Subuser accounts will only see their own statistics.
 
 </call-out>
 
-The geographical report shows a map of where your emails are being opened and clicked around the world. It is based purely on where your users live. For example you don’t have any recipients engaging with your emails France, you will not see stats for France in your stats.
+The geographical report shows a map of where your emails are being opened and clicked around the world. It is based purely on where your users live. For example if you don’t have any recipients engaging with your emails in France, you will not see statistics for France in your stats.
 
 ## 	Top 5
 
@@ -29,7 +29,7 @@ The activity map gives you a visualization of your metric based statistics on an
 
 ## 	Figures by Location
 
-The figures table gives you all of the specific counts or percentages of each event, according to how you’ve grouped your stats (day, week, or month). For example, if you wanted to see what percentage of the emails you sent were actually opened on the second week of April in California, this is a great place to check.
+The figures table gives you all of the specific counts or percentages of each event, according to how you’ve grouped your statistics (day, week, or month). For example, if you wanted to see what percentage of the emails you sent were actually opened on the second week of April in California, this is a great place to check.
 
 This table will refresh with new or adjusted data based on the various filters available at the top of the page. You can also choose to show actual counts or percentages, by clicking the corresponding button above and to the right of the table.
 

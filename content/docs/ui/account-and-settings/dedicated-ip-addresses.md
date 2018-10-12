@@ -20,7 +20,7 @@ An Internet Protocol (IP) address is a unique numerical address that defines a l
 
 If you are sending any significant amount of email, we typically suggest sending your marketing and transactional emails to from separate IP addresses. In addition, it is strongly recommended to associate your sending domain with your new outbound IP address (provided to you by SendGrid). This is available at no extra cost and can be accomplished by [completing an rDNS setup for your dedicated IP (here's a video tutorial and documentation help)]({{root_url}}/ui/account-and-settings/how-to-set-up-reverse-dns/).
 
-We also suggest having at least two promotional IP addresses when your volume reaches 200-300K/month.
+We also suggest having at least 2 promotional IP addresses when your volume reaches 200-300K/month.
 
 
 ## 	Do I have a dedicated IP address?
@@ -49,7 +49,7 @@ You can purchase an additional dedicated IP Address from the IP Addresses Settin
 
 Under "Additional Options" you will find the following options:
 
-  - *Use automated IP warmup:* when checked, SendGrid will gradually increase the amount of email sent over this IP. Note: It is best practice to [warm an IP address]({{root_url}}/ui/sending-email/warming-up-an-ip-address/) over time before sending fully over that IP address. When using automated warm up, you must have at least one other warm IP that can handle the overflow traffic from the IP in warmup.
+  - *Use automated IP warmup:* when checked, SendGrid will gradually increase the amount of email sent over this IP. Note: It is best practice to [warm an IP address]({{root_url}}/ui/sending-email/warming-up-an-ip-address/) over time before sending fully over that IP address. When using automated warmup, you must have at least one other warm IP that can handle the overflow traffic from the IP in warmup.
   - *Allow my parent account to send mail using these IP addresses:* check this if you want your parent account to be able to send over this IP. If you are assigning this IP to a subuser and only want that subuser to have permission to send on this IP, leave this box unchecked.
   - *Allow my subusers to send mail using these IP addresses:* check this to select which subusers can send on this IP address
 
@@ -70,7 +70,7 @@ After purchasing your IP, we strongly encourage you to set up reverse DNS. For m
 
 ## 	Reputation Monitoring for dedicated IP Accounts
 
-SendGrid does not offer dedicated IP address reputation monitoring as a service.  We do not manage the reputation of your dedicated IP address since only your mail is being sent via your dedicated IP. This means that you have ultimate control over the content that is being sent out and therefore are responsible for monitoring and maintaining its reputation and listing status. However, there are many services that can help you maintain your IP’s reputation.
+SendGrid does not offer dedicated IP address reputation monitoring as a service. We do not manage the reputation of your dedicated IP address since only your mail is being sent via your dedicated IP. This means that you have ultimate control over the content that is being sent out and therefore are responsible for monitoring and maintaining its reputation and listing status. However, there are many services that can help you maintain your IP’s reputation.
 
 The following are some third party tools available to assist you in maintaining your reputation:
 
@@ -79,7 +79,7 @@ The following are some third party tools available to assist you in maintaining 
 * [Sender Score](https://www.senderscore.org/blacklistlookup/)
 
 
-In addition, SendGrid does offer [Delivery Consultation](https://sendgrid.com/marketing/delivery-consult/) services to Pro and Premier accounts that can help with deliverability and on-boarding. Services include how to maintain/improve domain and IP reputation, reviewing message content, dedicated IP configuration, and creating a custom IP warm-up plan just to name a few.
+In addition, SendGrid does offer [Delivery Consultation](https://sendgrid.com/marketing/delivery-consult/) services to Pro and Premier accounts that can help with deliverability and on-boarding. Services include how to maintain/improve domain and IP reputation, reviewing message content, dedicated IP configuration, and creating a custom IP warmup plan just to name a few.
 
 ## 	Warming Up a dedicated IP Address
 

@@ -20,7 +20,7 @@ Once you have an AWS account, you can to [subscribe to SendGrid](https://aws.ama
 
 <call-out>
 
-**Warm up your sending** - Since ISP spam filters look at volume as a significant factor when determining whether or not you are sending spam, we recommend that you begin sending a low to moderate volume, eventually working your way up to larger volumes. This gives the receiving email providers a chance to closely observe your sending habits and the way your customers treat the emails they receive from you.
+**Warmup your sending** - Since ISP spam filters look at volume as a significant factor when determining whether or not you are sending spam, we recommend that you begin sending a low to moderate volume, eventually working your way up to larger volumes. This gives the receiving email providers a chance to closely observe your sending habits and the way your customers treat the emails they receive from you.
 
 </call-out>
 
@@ -43,7 +43,7 @@ You can only add a Dedicated IP Address if you are on an AWS Pro plan. To upgrad
    ![]({{root_url}}/images/dedicated_ip_button.png "Dedicated IP button")
    This takes you to the Dedicated IP Addresses page
 3. Next, click **Add an IP Address**.
-4. Select the number of IP Addresses to add, and select whether you want to warm up your IP automatically. Warming up an IP gradually increases the amount of email sent over this IP over time to improve your email deliverability. For more information, see [Warming Up IPs]({{root_url}}/ui/sending-email/warming-up-an-ip-address/).
+4. Select the number of IP Addresses to add, and select whether you want to warmup your IP automatically. Warming up an IP gradually increases the amount of email sent over this IP over time to improve your email deliverability. For more information, see [Warming Up IPs]({{root_url}}/ui/sending-email/warming-up-an-ip-address/).
 5. Click **Add**.
 
 ### Adding domain authentication and link branding
@@ -52,9 +52,9 @@ Sender authentication shows email providers that SendGrid has your permission to
 
 ### Adding Subusers
 
-You can only add Subusers if you are on an AWS Pro plan. To upgrade your plan, see [Upgrading or Downgrading Your Account](#upgrading-or-downgrading-your-account). Subusers are SendGrid accounts that belong to a parent account. They have their permissions and credit limits, which you assign as you create the subusers. Subusers help you segment your email sending and API activity.
+You can only add subusers if you are on an AWS Pro plan. To upgrade your plan, see [Upgrading or Downgrading Your Account](#upgrading-or-downgrading-your-account). Subusers are SendGrid accounts that belong to a parent account. They have their permissions and credit limits, which you assign as you create the subusers. Subusers help you segment your email sending and API activity.
 
-To get started with using Subusers, see the [Subusers overview]({{root_url}}/ui/account-and-settings/subusers/).
+To get started with using subusers, see the [Subusers overview]({{root_url}}/ui/account-and-settings/subusers/).
 
 ### Upgrading or Downgrading Your Account
 

@@ -49,7 +49,7 @@ Keys within objects like custom_args will be merged. If any of the keys conflict
 
 <call-out>
 
-All of the recipients in a single personalization object (either in the `to`, `cc`, or `bcc` fields), will see exactly the same email, as defined by the data in that personalization, as such we do not allow duplicate emails between these three arrays in a single personalization.
+All of the recipients in a single personalization object (either in the `to`, `cc`, or `bcc` fields), will see exactly the same email, as defined by the data in that personalization, as such we do not allow duplicate emails between these 3 arrays in a single personalization.
 
 </call-out>
 
@@ -130,8 +130,8 @@ The following example shows how to send one email to recipient1&#064;example&per
 ```
 
 ## 	Sending the same Email to Multiple Recipients
- 	
-The following shows how to send one email to three different recipients: recipient1&#064;example&period;com, recipient2&#064;example&period;com, and recipient3&#064;example&period;com. These recipients will all be able to see each other on the email.
+
+The following shows how to send 1 email to 3 different recipients: recipient1&#064;example&period;com, recipient2&#064;example&period;com, and recipient3&#064;example&period;com. These recipients will all be able to see each other on the email.
 
 ```json
 {
@@ -179,8 +179,8 @@ The following shows what personalizations are required to send the same email to
 ```
 
 ## 	Sending Two Different Emails to Two Different Groups of Recipients
- 	
-The following shows how to send two different emails to two different groups of recipients.
+
+The following shows how to send 2 different emails to 2 different groups of recipients.
 
 ```json
 {

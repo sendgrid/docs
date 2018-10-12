@@ -14,7 +14,7 @@ navigation:
 - [Delisting Dedicated IP Plans](#delisting-dedicated-ip-plans)
 - [Checking Your IP Address](#checking-your-ip-address)
 - [Delisting Request Forms](#delisting-request-forms)
-- [Gmail, Yahoo, Hotmail and AOL Bulk Email Sender Guidelines](#gmail-yahoo-hotmail-and-aol-bulk-email-sender-guidelines)
+- [Gmail, Yahoo, Hotmail, and AOL Bulk Email Sender Guidelines](#gmail-yahoo-hotmail-and-aol-bulk-email-sender-guidelines)
 
 A Blacklist is a list of IP addresses that have been detected sending unsolicited and unwanted emails. Inbox service providers (like Gmail, Microsoft, Yahoo, and AOL) and enterprises use blacklists to identify and filter illegitimate mail streams. Blacklisting can also occur for specific sending domains in addition to sending IPs.
 
@@ -45,8 +45,8 @@ If a sending domain (and not the IP address) is blacklisted, that domain’s con
 </call-out>
 
 ## 	Checking Your IP Address
- 	
-Here are two aggregation websites that anyone can use to check on the status of their IP:
+
+Here are 2 aggregation websites that anyone can use to check on the status of their IP:
 - [MulitRBL](http://multirbl.valli.org/)
 - [MXToolbox](http://www.mxtoolbox.com/blacklists.aspx)
 
@@ -61,7 +61,7 @@ Below are links to the delisting forms used by the more popular external blackli
 - [Google](https://support.google.com/mail/contact/msgdelivery)
 - [Invalument](http://www.invaluement.com/removal/)
 - [Manitu](http://www.dnsbl.manitu.net/index.php?language=en)
-- [McAfee](https://secure.mcafee.com/apps/mcafee-labs/threat-feedback.aspx)
+- [McAfee](https://www.mcafee.com/enterprise/en-us/threat-center/threat-feedback.html)
 - [Mimecast](http://www.mimecast.com/senderfeedback)
 - [Office 365](https://sender.office.com/)
 - [SORBS](http://www.sorbs.net/)
@@ -73,7 +73,7 @@ Below are links to the delisting forms used by the more popular external blackli
 - [URIBL](https://admin.uribl.com/)
 - [Yahoo](http://help.yahoo.com/l/us/yahoo/mail/postmaster/bulkv2.html)
 
-## 	Gmail, Yahoo, Hotmail and AOL Bulk Email Sender Guidelines
+## 	Gmail, Yahoo, Hotmail, and AOL Bulk Email Sender Guidelines
  	
 - [Gmail Email Sender Guidelines](https://support.google.com/mail/answer/81126)
 - [Yahoo Email Sender Guidelines](https://help.yahoo.com/kb/mail-for-desktop/SLN3435.html?impressions=true)

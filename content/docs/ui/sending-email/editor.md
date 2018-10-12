@@ -13,7 +13,7 @@ seo:
 
 <iframe src="https://player.vimeo.com/video/249110555" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-Marketing Campaigns is all about supporting your unique workflow, so you can get your work done more efficiently. You have complete control over the way that you create and edit each new campaign, thanks to two distinct editing experiences.
+Marketing Campaigns is all about supporting your unique workflow, so you can get your work done more efficiently. You have complete control over the way that you create and edit each new campaign, thanks to 2 distinct editing experiences.
 
 ## Choosing The Right Editor
 
@@ -39,7 +39,7 @@ SendGrid’s marketer-friendly code editor features a powerful, split screen edi
 See how your email looks in real-time, as you write and edit code. No more tabbing between windows, refreshing or re-rendering. Marketing Campaigns’ split-screen editing experience displays your code on the left, and a pixel-perfect preview on the right.
 
 **Code & Tag Completion** -
-As you type, the editor automatically makes common suggestions. You can accept them by tapping tab or return –– or, simply continue typing to ignore.  Additionally, as you open a tag of any kind, the code editor automatically places a closing tag.
+As you type, the editor automatically makes common suggestions. You can accept them by tapping tab or return –– or, simply continue typing to ignore. Additionally, as you open a tag of any kind, the code editor automatically places a closing tag.
 
 **Error Flagging** -
 If the code editor finds something that seems odd or inconsistent with best practices, instead of interrupting your workflow, it places a small red “x” in the margin of the line so you can come back and check when it’s convenient for you.
@@ -269,7 +269,7 @@ You can add the following drag & drop modules to your campaign:
   </tr>
   <tr>
     <td>Image and Text</td>
-    <td>This is a columns module with two columns - each can contain either an image or some text.</td>
+    <td>This is a columns module with 2 columns - each can contain either an image or some text.</td>
     <td>Image, image position, image background, image margin, text background, text margin</td>
   </tr>
   <tr>
@@ -284,7 +284,7 @@ You can add the following drag & drop modules to your campaign:
   </tr>
   <tr>
     <td>Social</td>
-    <td>Icons that allow for social media integration within your campaigns.The module offers five different social media icon options (Facebook, Twitter, Instagram, Google+, and Pinterest) all of which can be toggled on or off as well as fully customized to match individual branding and design standards. </td>
+    <td>Icons that allow for social media integration within your campaigns.The module offers 5 different social media icon options (Facebook, Twitter, Instagram, Google+, and Pinterest) all of which can be toggled on or off as well as fully customized to match individual branding and design standards. </td>
     <td>URL, size, border radius, and icon ( Facebook, Twitter, Instagram, Google+, and Pinterest).</td>
   </tr>
   <tr>

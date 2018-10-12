@@ -4,7 +4,7 @@ seo:
  description: Use the Email Activity Feed query language to get started with the Email Activity Feed API.
  keywords: email activity, query language, email stats, email events
 title: Getting Started with the Email Activity Feed API
-group: tracking
+group: sending-email
 weight: 0
 layout: page
 navigation:
@@ -86,7 +86,7 @@ Use this query to filter by all bounced emails: (replace `<<your API key>>` with
 
 ```
 curl --request GET \
- --url 'https://api.sendgrid.com/v3/messages?limit=10&query=status%3D%22bouced%22' \
+ --url 'https://api.sendgrid.com/v3/messages?limit=10&query=status%3D%22bounced%22' \
  --header 'authorization: Bearer <<your API key>>'
 ```
 
@@ -96,11 +96,11 @@ Subject queries have this format:
 
 Encoded, this query would look like this:
 
-`status%3D%22bouced%22`
+`status%3D%22bounced%22`
 
 ## 	Creating compound queries
 
-Use [operators and keywords](#keywords-and-Operator-reference) to combine queries for a compound query. For example, you could filter for emails between a date range, or you could filter for when a specific recipients email is bounced. Here are some common use cases:
+Use [operators and keywords](#keywords-and-operator-reference) to combine queries for a compound query. For example, you could filter for emails between a date range, or you could filter for when a specific recipients email is bounced. Here are some common use cases:
 
  ### 	Filter by a recipient email that was bounced
 
@@ -124,7 +124,7 @@ curl --request GET \
 
  ### 	Filter by a recipient and a date range
 
-Use this query to filter to emails by recipient and between specific dates: (replace `<<your API key>>` with an API key from your account, replace <<start_date>> and <<end_date>> with a URL encoded UTC date string in this format: `YYYY-MM-DD HH:mm:SS`, and and replace <<email>> with the URL encoded recipient's email)
+Use this query to filter to emails by recipient and between specific dates: (replace `<<your API key>>` with an API key from your account, replace <<start_date>> and <<end_date>> with a URL encoded UTC date string in this format: `YYYY-MM-DD HH:mm:SS`, and replace <<email>> with the URL encoded recipient's email)
 
 ```
 curl --request GET \
@@ -262,7 +262,7 @@ This is a full list of basic query types and examples: (replace the data in quot
    <td><code>unsubscribe_group_id="1041"</code></td>
  </tr>
  <tr>
-   <td><code>teammate</code> - teamates username</td>
+   <td><code>teammate</code> - teammates username</td>
    <td><code>teammate="my_username"</code></td>
  </tr>
 </table>

@@ -1,9 +1,10 @@
-Hello! Thank you for choosing to help contribute to the SendGrid documentation site! There are many ways you can contribute and help is always welcome.  When writing documentation, we ask you to consider the following style guidelines.
+Hello! Thank you for choosing to help contribute to the SendGrid documentation site! There are many ways you can contribute and help is always welcome. When writing documentation, we ask you to consider the following style guidelines.
 
 * [Style](#style)
     * [Numbers](#numbers)
-    * [About Additional Resources](#about-additional-resources)
-    * [Cross References](#cross-references)
+    * [About additional resources](#about-additional-resources)
+    * [Cross references](#cross-references)
+    * [Head matter](#head-matter)
 * [Terminology](#terminology)
 * [Punctuation](#punctuation)
 * [Capitalization](#capitalization)
@@ -28,7 +29,7 @@ Where possible, write pages in a "jobs to be done" format. Jobs to be done style
 * Table of contents at the beginning
 * "Additional Resources" section at the end
 * Include sections to achieve the goal, with steps for each task (numbered steps, clear directions, and correct UI workflow)
-	For an example, see [Sending a Campaign]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/)
+	For an example, see [Sending a campaign]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/)
 
 **Avoid passive voice.** A good way to check if your sentence is in passive or not is to add "by zombies" to the end of it. If zombies end up doing the action, it's passive.
 
@@ -42,29 +43,111 @@ YES: “SendGrid offers 10 templates in Marketing Campaigns.”
 YES: “Ten templates are included in Marketing Campaigns.”
 
 <a name="cross references"></a>
-### Cross References
+### Cross references
 
 When referring to other pages in the documentation, make sure your link text is descriptive.
 
 YES: For more information, see [Event Webhook] documentation.
 NO: For more information, click [here].
 
+<a name="head matter"></a>
+### Head matter
+
+The new head matter looks like this with the new Knowledge Center:
+```
+---
+layout: page
+weight: 0
+group: 
+title: 
+seo:
+  title: 
+  description: 
+  keywords: 
+navigation:
+  show: true
+---
+```
+
+### Groups
+
+The sections in **Bold** are the categories. The "group" field in the head matter pertains to the different headers article residing under a specific category. The group designation is after the colon of the "group" field.
+
+src="https://github.com/sendgrid/docs/blob/develop/static/img/docs-architecture-group.png" width="676" height="386">
+ 
+#### UI
+
+**Sending Email**
+- Building Email: building-email
+- Delivery & Optimization: delivery-optimization
+- Building Email with Marketing Campaigns: marketing-campaigns
+- Building Transactional Email: transactional-email
+- Tracking: tracking
+- Platform Partners: platform-partners
+
+**Managing Contacts**
+- Managing Contacts with Marketing Campaigns: managing-contacts
+
+**Analytics and Reporting**
+- Statistics: statistics
+- Click Tracking: click-tracking
+- Email Activity Feed: email-activity
+- SendGrid Partners: partners
+- Tracking: tracking
+
+**Account and Settings**
+- Account Managment: account-management
+- Inbound Parse: inbound-parse
+- Sender Authentication: sender-authentication
+- IP Management: ip-management
+- Teammates & Subusers: teammates-subusers
+- Troubleshooting: troubleshooting
+- Security: security
+- Billing: billing
+
+#### For Developers
+
+**Sending Email**
+- SendGrid v2 API: api-v2
+- SendGrid v3 API: api-v3
+- Frameworks: frameworks
+- Mail Clients: mail-clients
+- Mail Servers: mail-servers
+- SendGrid Partners: partners
+- SendGrid Plugins: plugins
+- SMTP API: smtp
+- Tracking: tracking
+- Open Source Apps: open-source
+
+**Parsing Email**
+- Inbound Parse: inbound-parse
+
+**Tracking Events**
+- Code Examples: code-examples
+- Getting Started: getting-started
+- SendGrid Partners: partners
+- Reference & Troubleshooting: reference-troubleshooting
+
+**Partners**
+- Migration: partner-migration
+- Platform Partners: platform-partners
+
 <a name="about-additional-resources"></a>
-### About Additional Resources
+### About "Additional resources"
 
-"Additional Resources" is an h2 section that contains three to five bullet points with links out to other closely related pages. These pages could be SendGrid blogs or docs pages with information about next steps, use cases, or other things a user should consider when they are completing the task on the page. Every page should have an additional resources page, so if it doesn't, feel free to add one!
+"Additional resources" is an h2 section that contains 3 to 5 bullet points with links out to other closely related pages. These pages could be SendGrid blogs or docs pages with information about next steps, use cases, or other things a user should consider when they are completing the task on the page. Every page should have an additional resources page, so if it doesn't, feel free to add one!
 
-Here is an example "Additional Resources" section: https://sendgrid.com/docs/ui/sending-email/editor/#additional-resources
+Here is an example "Additional resources" section: https://sendgrid.com/docs/ui/sending-email/editor/#additional-resources
 
 Here is example formatting:
 
 ```
-## Additional Resources
+## Additional resources
 
-* [Sending an Email]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/)
-* [A/B Testing]({{root_url}}/ui/sending-email/a-b-testing/)
-* [Campaign Statistics]({{root_url}}/ui/analytics-and-reporting/marketing-campaigns-stats/)
-* [Marketing Templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/)
+* [Sending an email]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/)
+* [A/B testing]({{root_url}}/ui/sending-email/a-b-testing/)
+* [Campaign statistics]({{root_url}}/ui/analytics-and-reporting/marketing-campaigns-stats/)
+* [Marketing templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/)
 ```
 
 <a name="terminology"></a>
@@ -148,11 +231,11 @@ Not every single page or step needs an accompanying screenshot. When in doubt, f
 
 ### File format and naming:
 
-Please use .png, .gif, or .jpg files. Give the screenshots unique, meaningful names, obeying a specific format, such as general_settings_privacy. Avoid spaces, uppercase letters, and excessively long names.
+Please use PNG, GIF, or JPG files. Give the screenshots unique, meaningful names, obeying a specific format, such as general_settings_privacy. Avoid spaces, uppercase letters, and excessively long names.
 
 ### Size and resolution:
 
-When possible, try to take screenshot at a size that is twice what it will need to be on the page.
+When possible, try to take screenshots at a size that is twice what it will need to be on the page.
 
 ### Alt text:
 

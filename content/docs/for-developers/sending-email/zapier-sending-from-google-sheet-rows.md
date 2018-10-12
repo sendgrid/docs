@@ -45,7 +45,7 @@ Click here to [Send SendGrid emails from new Google Sheets rows](https://zapier.
 
 ![Credential entry](https://api.monosnap.com/rpc/file/download?id=gAajRq9wMKNTN4HyEKzAMosD71ifb8)
 
-5. Using fields from Google Sheets, create and customize the **To**, **From**, and **Subject** email message that the Zap will send.
+5. Using fields from Google Sheets, create, and customize the **To**, **From**, and **Subject** email message that the Zap will send.
 
 ![Email content](https://api.monosnap.com/rpc/file/download?id=gmK4I07JxAKFtgoEBhJBwkdUh4fD7i)
 

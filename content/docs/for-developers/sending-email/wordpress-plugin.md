@@ -195,5 +195,5 @@ If you have already installed the SendGrid plugin in a multisite environment and
 
 ## 	Additional Resources
 
-* [SendGrid's WordPress Subscription Widget]({{root_url}}/for-developers/managing-contacts/wordpress-subscription-widget/)
+* [SendGrid's WordPress Subscription Widget]({{root_url}}/for-developers/sending-email/wordpress-subscription-widget/)
 * [SendGrid's WordPress Integration FAQ]({{root_url}}/for-developers/sending-email/wordpress-faq/)

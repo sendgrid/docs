@@ -118,7 +118,7 @@ The Email Activity feed allows you to view specific information about messages s
 
 You can check email delivery status by using the Email Activity page, or by using the Event Webhook.
 
-- For a successful delivery, the Email Activity page, or the Event Webhook shows a delivered event - expanding it shows a reason code of 250 OK. This means the receiving server has accepted the message. You can also check bounced, deferred and processed messages.
+- For a successful delivery, the Email Activity page, or the Event Webhook shows a delivered event - expanding it shows a reason code of 250 OK. This means the receiving server has accepted the message. You can also check bounced, deferred, and processed messages.
 
 - If you can't find an email on the Email Activity page, check your suppression lists; [bounces]({{root_url}}/ui/sending-email/bounces/), [blocks]({{root_url}}/ui/sending-email/blocks/), [spam reports]({{root_url}}/ui/analytics-and-reporting/spam-reports/), [invalid email]({{root_url}}/ui/sending-email/invalid-emails/).
 

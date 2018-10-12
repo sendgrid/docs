@@ -65,7 +65,7 @@ Depending on the other app you're syncing with, you'll see a number of standard 
 
 ### Customizable Field Mapping
 
-You can custom map your SendGrid Custom Fields and any additional standard fields that aren't included in the default mapping yet. Remember, a mapping between two fields can only exist if the types of fields are compatible, and the particular compatibility will determine the direction of the mapping. See our documentation [Customizable Field Mapping](https://help.piesync.com/features/new-customizable-field-mapping) for more information.
+You can custom map your SendGrid Custom Fields and any additional standard fields that aren't included in the default mapping yet. Remember, a mapping between 2 fields can only exist if the types of fields are compatible, and the particular compatibility will determine the direction of the mapping. See our documentation [Customizable Field Mapping](https://help.piesync.com/features/new-customizable-field-mapping) for more information.
 
 ![]({{root_url}}/img/piesync-field-mapping.png "Field mapping")
 

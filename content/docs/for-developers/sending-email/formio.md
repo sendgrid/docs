@@ -32,7 +32,7 @@ Once you have a project created, you can now view the project live within the Pr
 Once you have a Form.io project, the next step is to create an **API Key** within your SendGrid account (under **Settings | API Keys**). Ensure that the API Key you create has **Full Access** for the **Mail Send** permission. Once you have your API Key, go back to your Form.io project and follow these steps.
 
 1. Click the **Project Settings** button located at the top right of your screen.
-1.  Click the **Email Providers** tab on the left and then the **SendGrid Settings** tab.
+1. Click the **Email Providers** tab on the left and then the **SendGrid Settings** tab.
 1. Input the *SendGrid API Key* provided to you when the API key was created.
 1. **Save** your settings.
 
@@ -48,7 +48,7 @@ Now that you have your project configured to send emails through SendGrid, the n
 
    ![Add Email Action]({{root_url}}/images/formio-add-email.png "Form.io Add Email Action")
 
- 4.  Now on the email settings page, select **SendGrid** for the **Transport** of the action.
+ 4. Now on the email settings page, select **SendGrid** for the **Transport** of the action.
  5. Input a **From** email address you would like to send the email from.
  1. Input a **To** email address you would like to send the email to. For this, you can use handlebar notation, such as ```{{ data.user }}```, to access the data from the submission as you see in the following image.
  1. Input a **Subject** for the message being sent.
