@@ -16,20 +16,20 @@ All Mail clients render HTML/CSS differently, in their own ways and for their ow
 
 ## Layout
 
-- **Avoid Using padding or margins**
+- **Avoid using padding or margins**
   - Certain email clients don't support these formatting settings. For example, Outlook cannot support padding, and Hotmail cannot support margins.
   - These can be especially problematic when added inside of a table in either mail client.
 
 
 - **Always use inline CSS**
-  - Most webmail clients (outlook.com, yahoo.com, gmail, etc) will strip CSS out when stripping the head and body tags.
+  - Most webmail clients (Outlook.com, Yahoo.com, Gmail, etc) will strip CSS out when stripping the head and body tags.
 
     - Make sure you render coding very carefully so it conforms to the email client's pre-set HTML.
 
 - **Avoid BR, HR, and height tags in your emails**
 
-  - Every browser/client has their own default line height and will default to     this. most of the time.
-  - Work around in next bullet point below.
+  - Every browser/client has their own default line height and will default to it most of the time.
+  - Workaround in next bullet point below.
 
 
 - **Use Tables to create general layout of email**
@@ -48,14 +48,14 @@ All Mail clients render HTML/CSS differently, in their own ways and for their ow
 - **Be aware of text and font changes per device (mobile especially) and browsers**
 
   - Mobile devices and different browsers may change the font styling to increase readability.
-  - For example, comic sans not supported on mobile devices.
+  - For example, *Comic Sans* is not supported on mobile devices.
 
 ## Backgrounds
 
 - **Use the older more basic background HTML tags**
 
   - "background-image" ; "bgcolor" ; "background"
-  - Many browsers and clients experience issues when trying to support compound CSS values so be sure to use individual values such as "background-image" and "background-repeat"
+  - Many browsers and clients experience issues when trying to support compound CSS values, so be sure to use individual values such as "background-image" and "background-repeat"
 
 
 - **Always offer reset background colors or fall back background colors to defer to if your specific background isn't supported**
@@ -90,12 +90,12 @@ All Mail clients render HTML/CSS differently, in their own ways and for their ow
 1. Turn off the filters causing the conversion from plain text to HTML.
 1. Start each line with a space, this will add a "preformatted" `<pre>` tag around the line.
 1. Separate new sentences with double newlines, which will add a "paragraph" `<p>` tag around the sentence.
-1. Convert your message to HTML, bypassing our need to convert it altogether.
+1. Convert your message to HTML, bypassing our need to convert it all together.
 1. To disable conversion globally, click **Mail Settings** and select **Plain Content** and enable the suppression.
 
 **Why can't you just automatically add `<br />` tags to newlines upon conversion?**
 
-Due to the way plain text emails are sent ( [RFC 5822](http://www.rfc-editor.org/rfc/rfc5322.txt "Link: http://www.rfc-editor.org/rfc/rfc5322.txt"), Revised 2008) mailers are required to wrap lines at 998 characters, and recommends wrapping at 78 characters (excluding CR/LF). As a result, long sentences can often be broken up into multiple lines. Adding `<br />` tags to each newline, would therefore create formatting problems.
+Due to the way plain text emails are sent ( [RFC 5822](http://www.rfc-editor.org/rfc/rfc5322.txt "Link: http://www.rfc-editor.org/rfc/rfc5322.txt"), Revised 2008) mailers are required to wrap lines at 998 characters, and recommends wrapping at 78 characters (excluding CR/LF). As a result, long sentences can often be broken up into multiple lines. Adding `<br />` tags to each newline would create formatting problems.
 
 **For more information**
 
