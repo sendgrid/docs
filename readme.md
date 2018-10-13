@@ -7,22 +7,22 @@
 [![GitHub contributors](https://img.shields.io/github/contributors/sendgrid/docs.svg)](https://github.com/sendgrid/docs/graphs/contributors)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./license)
 
-This is a Gatsby site.
+Ini adalah situs Gatsby.
 
-The develop branch is continuously deployed to a preview site. [View dev site](http://d2w67tjf43xwdp.cloudfront.net/)
+Cabang pengembang akan terus diarahkan ke situs pratinjau. [Lihat situs dev] (http://d2w67tjf43xwdp.cloudfront.net/)
 
-The develop branch is merged to production weekly (unless we need to do a release sooner than that).
+Cabang Pengembang digabung menjadi produksi secara mingguan (kecuali kita perlu melakukan rilis lebih cepat dari itu).
 
-The master branch is continuously deployed to production.
+Cabang Pengembang akan terus ditujukan untuk produksi.
 
-### _Please_, feel free to make any contributions you feel will make SendGrid Documentation better.
+### _Tolong_, jangan ragu untuk membuat kontribusi apa pun yang Anda rasa akan membuat Dokumentasi SendGrid menjadi lebih baik.
 
-**Submit all pull requests to the develop branch**
+**Kirim semua pull requests ke branch develop**
 
-**Before your pull request can be merged into the develop branch, you must submit a completed CLA.**
+**Sebelum pull requestmu bisa di gabung ke cabang pengembang, kamu harus mengirim CLA lengkap.**
 
 
-## Table of Contents
+## Daftar isi
 
 * [CLAs and CCLAs](#cla)
 * [Local Setup](#local)
@@ -32,12 +32,12 @@ The master branch is continuously deployed to production.
 <a name="cla"></a>
 ## CLAs and CCLAs
 
-Before you get started, SendGrid requires that a SendGrid Contributor License Agreement (CLA) be filled out by every contributor to a SendGrid open source project.
+Sebelum Anda memulai, SendGrid mengharuskan Perjanjian Lisensi Kontributor SendGrid (CLA) diisi oleh setiap kontributor ke proyek open source SendGrid.
 
-Our goal with the CLA is to clarify the rights of our contributors and reduce other risks arising from inappropriate contributions. The CLA also clarifies the rights SendGrid holds in each contribution and helps to avoid misunderstandings over what rights each contributor is required to grant to SendGrid when contributing. In this way, the CLA encourages broad participation by our open source community and helps us build strong open source projects, free from any individual contributor withholding or revoking rights to any contribution.
+Tujuan kami dengan CLA adalah untuk memperjelas hak kontributor kami dan mengurangi risiko lain yang timbul dari kontribusi yang tidak pantas. CLA juga menjelaskan hak-hak pemegang SendGrid di setiap kontribusi dan membantu untuk menghindari kesalahpahaman atas hak apa yang diperlukan setiap kontributor untuk diberikan kepada SendGrid ketika berkontribusi. Dengan cara ini, CLA mendorong partisipasi luas oleh komunitas open source kami dan membantu kami membangun proyek open source yang kuat, bebas dari kontributor individual yang menahan atau mencabut hak atas kontribusi apa pun.
 
 
-SendGrid does not merge a pull request made against a SendGrid open source project until that pull request is associated with a signed CLA. Copies of the CLA are available [here](https://gist.github.com/SendGridDX/98b42c0a5d500058357b80278fde3be8#file-sendgrid_cla).
+SendGrid tidak menggabungkan permintaan tarik dibuat terhadap proyek open source SendGrid sampai permintaan tarik dikaitkan dengan CLA yang ditandatangani. Salinan CLA tersedia [di sini] (https://gist.github.com/SendGridDX/98b42c0a5d500058357b80278fde3be8#file-sendgrid_cla).
 
 <a name="local"></a>
 ## Local Setup
@@ -65,7 +65,7 @@ SendGrid does not merge a pull request made against a SendGrid open source proje
 
 	`$ \curl -sSL https://get.rvm.io | bash -s stable --ruby`
 
-* Install Homebrew (if you don't have it)
+* Install Homebrew (jika belum punya)
 
 	`$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
@@ -73,9 +73,9 @@ SendGrid does not merge a pull request made against a SendGrid open source proje
 
 	`$ brew install npm`
 	
-**Note:** You may need to use 'sudo' before the command to get it to work as intended. 
+**Note:** Kamu mungkin harus menggunakan 'sudo' di depan command agar bisa bekerja 
 
-* Set your Node version
+* Set Node versionmu
 
 	`$ npm install -g n`
 
@@ -85,20 +85,20 @@ SendGrid does not merge a pull request made against a SendGrid open source proje
 
   `$ brew install yarn`
 
-* Clone the repo
+* Cloning repo
 
 	`$ git clone https://github.com/sendgrid/docs.git`
 
 
-* Go to your docs directory
-
+* Masuk ke folder Docs
 	`$ cd docs`
 
 * Switch to develop branch to make changes
+* Ubah ke cabang pengembang untuk membuat perubahan
 
 	`$ git checkout develop`
 
-* Install the Gatsby CLI
+* Install Gatsby CLI
 
 	`$ npm install -g gatsby-cli`
 
@@ -114,8 +114,8 @@ SendGrid does not merge a pull request made against a SendGrid open source proje
 <a name="about"></a>
 ## About
 
-SendGrid is guided and supported by the SendGrid [Developer Experience Team](mailto:dx@sendgrid.com).
-It is maintained and funded by SendGrid, Inc. The names and logos are trademarks of SendGrid, Inc.
+SendGrid dipandu dan didukung oleh SendGrid [Tim Pengalaman Pengembang] (mailto: dx@sendgrid.com).
+Dipertahankan dan didanai oleh SendGrid, Inc. Nama dan logo adalah merek dagang dari SendGrid, Inc.
 
 
 <a name="license"></a>
