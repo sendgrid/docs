@@ -55,7 +55,7 @@ Learn more about your shoppers’ engagement with performance feedback and real-
 * Flexible API and SMTP setup for easy transactional email Integration.
 * Key email deliverability features including email authentication, reputation monitoring, dedicated IP addresses, and more.
 * Real-time analytics and reporting including opens, clicks, bounces, unsubscribe tracking, and more.
-* Leverage our step-by-step [documentation]({{root_url}}/api-reference/) or get quick help from our [24/7 Support Team](https://support.sendgrid.com).
+* Leverage our step-by-step [documentation]({{root_url}}/for-developers/partners/magento/) or get quick help from our [24/7 Support Team](https://support.sendgrid.com).
 * This official extension was built for M2 by SendGrid’s dedicated partner-focused teams for continued management and future development.
 
 ## 	Configuration

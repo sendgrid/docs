@@ -85,6 +85,18 @@
   .algolia-autocomplete .ds-dropdown-menu [class^=ds-dataset-] {
     padding: $scale-0 !important;
   }
+
+  .ds-dropdown-menu {
+    width: 200% !important;
+    max-width: 200% !important;
+    min-width: 200% !important;
+
+    @media (max-width: 610px) {
+      width: 100% !important;
+      max-width: 100% !important;
+      min-width: 100% !important;
+    }
+  }
 }
 
 @media (max-width: 768px) {

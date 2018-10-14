@@ -33,9 +33,7 @@ Select SendGrid and the app you would like to sync with from within the PieSync 
 
 To authorize, follow the steps as described and make sure you have your [API Key]({{root_url}}/ui/account-and-settings/api-keys/) before getting started.
 
-![]({{root_url}}/img/piesync-api-key.png "Access your SendGrid API Key")
-
-If you have already authorized SendGrid account(s) in the past or have another PieSync integration, you can skip the first part of the authorization and choose from your **Conncted Accounts**.
+If you have already authorized SendGrid account(s) in the past or have another PieSync integration, you can skip the first part of the authorization and choose from your **Connected Accounts**.
 
 ![]({{root_url}}/img/piesync-verify-api-key.png "Verify your SendGrid API Key")
 
@@ -51,14 +49,12 @@ From within the connection setup screen, you'll be able to manage the following:
    FIELD VALUES (INCLUDING CUSTOM FIELDS)
 ```
 
-![]({{root_url}}/img/piesync-if-filters.png "Add if filters")
-
 ```
 [THEN] Supported Actions
    UPDATING FIELD VALUES (INCLUDING CUSTOM FIELDS)
 ```
 
-![]({{root_url}}/img/piesync-then-filters.png "Add then filters")
+![]({{root_url}}/img/piesync-if-then-filters.png "Add then filters")
 
 ### Default Mapping
 

@@ -31,7 +31,9 @@ When viewing the API keys page, you will see a list of your current API keys alo
 **Action** - Actions you can perform on your API keys, such as editing or deleting the key.
 
 <call-out>
- There is a limit of 100 API Keys per account.
+
+There is a limit of 100 API Keys per account.
+
 </call-out>
 
 ## 	Creating an API key
@@ -50,7 +52,9 @@ You will only be shown your API key one time. Please store it somewhere safe as 
 </call-out>
 
 <call-out>
- There is a limit of 100 API Keys per account.
+
+There is a limit of 100 API Keys per account.
+
 </call-out>
 
  ### 	API key permissions
@@ -89,11 +93,11 @@ curl -i --request POST \
 
 Look for a **202 Accepted** in the HTTP response headers.
 
-## 	Edit an API Key
+## 	Editing an API Key
 
 Click the action menu in the same row as the key you would like to edit. From here you can delete a key, making it completely inactive, or you can edit your key’s name and permissions.
 
-## 	Delete an API Key
+## 	Deleting an API Key
 
 <call-out type="warning">
 

@@ -118,7 +118,7 @@ https://api.sendgrid.com/apiv2/customer.auth.json?api_user=ryan.burrer@sendgrid.
 <center>
 
 
-## Additonal Resources
+## Additional Resources
 
 * [Event Notification URL]({{root_url}}/API_Reference/Customer_Subuser_API/event_notification_url.html)
 * [Apps]({{root_url}}/API_Reference/Customer_Subuser_API/apps.html)
