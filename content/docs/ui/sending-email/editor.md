@@ -99,7 +99,7 @@ Substitution tags allow you to easily generate dynamic content for each recipien
 
 1. Click the **Settings** tab on the left side of the editor.
 2. Click the **Tags** tab at the top of the Settings window.
-3. Locate the tag you want to add to your campaign, and click it to automatically copy it to your clipboard.
+3. Locate the tag you want to add to your campaign and click it to automatically copy it to your clipboard.
 4. Paste the tag into the campaign.
 
 
