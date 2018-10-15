@@ -126,22 +126,27 @@ Substitution tags allow you to easily generate dynamic content for each recipien
    <td>Personalization</td>
  </tr>
  <tr>
-   <td><code class="language-text">[sender_name]</code>* </td>
+   <td><code class="language-text">[Sender_Name]</code>* </td>
    <td>The name of the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code class="language-text">[sender_city]</code>* </td>
+   <td><code class="language-text">[Sender_Address]</code>* </td>
+   <td>The address on record for the sender selected when sending your campaign</td>
+   <td>Sender Identity</td>
+ </tr>
+ <tr>
+   <td><code class="language-text">[Sender_City]</code>* </td>
    <td>The city on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code class="language-text">[sender_state]</code>* </td>
+   <td><code class="language-text">[Sender_State]</code>* </td>
    <td>The state on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code class="language-text">[sender_zip]</code>* </td>
+   <td><code class="language-text">[Sender_Zip]</code>* </td>
    <td>The zip code on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
