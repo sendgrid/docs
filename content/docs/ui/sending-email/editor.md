@@ -31,12 +31,12 @@ The [Design Editor](#the-design-editor) features a number of convenient ways to 
 
 ## The Code Editor
 
-SendGrid’s marketer-friendly code editor features a powerful, split screen editing experience – perfect for building campaigns with your own custom HTML. It offers a number of helpful features, often found in native editors.
+SendGrid’s marketer-friendly code editor features a powerful, split-screen editing experience – perfect for building campaigns with your own custom HTML. It offers a number of helpful features, often found in native editors.
 
 ### Code Editor Features
 
 **Live Template Preview** -
-See how your email looks in real-time, as you write and edit code. No more tabbing between windows, refreshing or re-rendering. Marketing Campaigns’ split-screen editing experience displays your code on the left, and a pixel-perfect preview on the right.
+See how your email looks in real-time, as you write and edit code. No more tabbing between windows, refreshing, or re-rendering. Marketing Campaigns’ split-screen editing experience displays your code on the left, and a pixel-perfect preview on the right.
 
 **Code & Tag Completion** -
 As you type, the editor automatically makes common suggestions. You can accept them by tapping tab or return –– or, simply continue typing to ignore. Additionally, as you open a tag of any kind, the code editor automatically places a closing tag.
@@ -48,7 +48,7 @@ If the code editor finds something that seems odd or inconsistent with best prac
 Easily pinpoint the HTML element you wish to edit. Click anywhere on the right-side preview of your email, and the code on the left automatically jumps to the corresponding line.
 
 **Syntax Highlighting** -
-As you edit, parts of your code highlights in various colors according to the type of syntax. This added dimension provides clarity and efficiency as you search for, locate and edit code elements.
+As you edit, parts of your code highlights in various colors according to the type of syntax. This added dimension provides clarity and efficiency as you search for, locate, and edit code elements.
 
 
 ### Getting Started With The Code Editor
@@ -73,7 +73,7 @@ When you open one of your existing campaigns or templates in the new editor, Sen
 
 </call-out>
 
-If you have already built the HTML that you want to use in another application, copy and paste that code directly into the content area of the code editor. You can also write the HTML for your campaign or template directly in the code editor.
+If you have already built the HTML that you want to use in another application, copy and paste that code directly into the content area of the Code Editor. You can also write the HTML for your campaign or template directly in the Code Editor.
 
 The split-screen view of the Code Editor allows you to see a real-time preview of your campaign. You can toggle between a preview of how your campaign or template appears on a recipient’s desktop and mobile phone by clicking either the desktop or mobile phone icons above the content area. You can also view a plain-text version of your campaign or template by clicking the **T** icon. When in this preview mode, you can edit the plain text content of your campaign or template by clicking the **Edit Plain Text** button.
 
