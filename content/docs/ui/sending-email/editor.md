@@ -211,7 +211,7 @@ SendGrid’s flexible design editor allows you to build your templates and campa
 
 1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**.
 1. Click **Create Campaign**.
-<br>To create a campaign using an existing campaign, find the campaign you want to use and click the action menu next to the campaign. Then, select **Edit** or **Duplicate**.
+<br>To create a campaign using an existing campaign, find the campaign you want to use, and click the action menu next to the campaign. Then, select **Edit** or **Duplicate**.
 
 ![]({{root_url}}/img/campaigns_dashboard_categories_search.png)
 
@@ -230,8 +230,8 @@ Drag & drop editing helps you swiftly build your campaign, using pre-built conte
 
   ![]({{root_url}}/img/design_editor_drag_drop.png "Drag and drop editor")
 
-2. Find the module tile you want to add to your campaign and drag and drop it into your content area.
-3. Edit the module settings and add your custom content to build your campaign.
+2. Find the module tile you want to add to your campaign. Then, drag and drop it into your content area.
+3. Edit the module settings, and add your custom content to build your campaign.
 
 ### Drag & Drop Module Descriptions and Styles
 
