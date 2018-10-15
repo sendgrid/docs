@@ -1,9 +1,9 @@
 ---
 seo:
-  title: Sending a Transactional Template Email over SMTP
-  description: Learn how to send a transactional template with the SMTP API.
+  title: Sending a Legacy Transactional Template Email over SMTP
+  description: Learn how to send a legacy transactional template with the SMTP API.
   keywords: SMTP, send email, integrate, building, filters, scheduling, substitution, suppression groups, unique arguments, recipients, legacy template, transactional template
-title: Sending a Transactional Template Email over SMTP
+title: Sending a Legacy Transactional Template Email over SMTP
 group: smtp
 weight: 949
 layout: page
@@ -30,7 +30,7 @@ The SMTP API does not support Dynamic Transactional Templates. For sending Dynam
 
 ## 	Before you begin
 
-Before you create and send a transactional template email over SMTP you need to do the following:
+Before you create and send a legacy transactional template email over SMTP you need to do the following:
 
 * [Integrate with the SendGrid SMTP API]({{root_url}}/for-developers/sending-email/integrating-with-the-smtp-api/)
 * [Send a test email over SMTP]({{root_url}}/for-developers/sending-email/getting-started-smtp/)
@@ -77,7 +77,7 @@ Make sure that the version of the template you want to use is set to active by u
 
 To use a legacy template when you send, configure the `X-SMTPAPI` header of an SMTP message:
 * Enable the `templates` filter
-* Set the `template_id` to one of your transactional templates
+* Set the `template_id` to one of your legacy transactional templates
 
 
 **Example**
