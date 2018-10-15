@@ -75,7 +75,7 @@ When you open one of your existing campaigns or templates in the new editor, Sen
 
 If you have already built the HTML that you want to use in another application, copy and paste that code directly into the content area of the Code Editor. You can also write the HTML for your campaign or template directly in the Code Editor.
 
-The split-screen view of the Code Editor allows you to see a real-time preview of your campaign. You can toggle between a preview of how your campaign or template appears on a recipient’s desktop and mobile phone by clicking either the desktop or mobile phone icons above the content area. You can also view a plain-text version of your campaign or template by clicking the **T** icon. When in this preview mode, you can edit the plain text content of your campaign or template by clicking the **Edit Plain Text** button.
+The split-screen view of the Code Editor allows you to see a real-time preview of your campaign. You can toggle between a preview of how your campaign or template appears on a recipient’s desktop and mobile phone by clicking either the desktop or mobile phone icons above the content area. You can also view a plain text version of your campaign or template by clicking the **T** icon. When in this preview mode, you can edit the plain text content of your campaign or template by clicking the **Edit Plain Text** button.
 
 <call-out type="warning">
 
@@ -99,7 +99,7 @@ Substitution tags allow you to easily generate dynamic content for each recipien
 
 1. Click the **Settings** tab on the left side of the editor.
 2. Click the **Tags** tab at the top of the Settings window.
-3. Locate the tag you want to add to your campaign and click it to automatically copy it to your clipboard.
+3. Locate the tag you want to add to your campaign, and click it to automatically copy it to your clipboard.
 4. Paste the tag into the campaign.
 
 
@@ -750,4 +750,3 @@ Assigning categories to a campaign allows you to track emails based on your own 
 * [A/B Testing]({{root_url}}/ui/sending-email/a-b-testing/)
 * [Campaign Statistics]({{root_url}}/ui/analytics-and-reporting/marketing-campaigns-stats/)
 * [Marketing Templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/)
-
