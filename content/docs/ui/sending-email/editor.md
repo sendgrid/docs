@@ -209,15 +209,15 @@ SendGrid’s flexible design editor allows you to build your templates and campa
 
 ### Getting Started With the Design Editor
 
-1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**.
+1. From the left-hand navigation, select **Marketing** and then click **Campaigns**.
 1. Click **Create Campaign**.
-<br>To create a campaign using an existing campaign, find the campaign you want to use, and click the action menu next to the campaign. Then, select **Edit** or **Duplicate**.
+<br>To create a campaign using an existing campaign, find the campaign you want to use and click the action menu next to the campaign. Then, select **Edit** or **Duplicate**.
 
 ![]({{root_url}}/img/campaigns_dashboard_categories_search.png)
 
 3. Select the template that you want to use for your campaign.
 <br>You can select a Blank Template, a custom template that you have already created, or one of SendGrid’s pre-built templates. For more information, see [Working With Marketing Templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/)
-4. Select **Design Editor**, and then click **Continue**.
+4. Select **Design Editor** and then click **Continue**.
 <br>The Design Editor opens.
 
 ### Using Drag & Drop Modules
@@ -226,12 +226,12 @@ Drag & drop editing helps you swiftly build your campaign, using pre-built conte
 
 *To add a drag & drop module:*
 
-1. Navigate to the **Build** tab, and then click **Add Modules**.
+1. Navigate to the **Build** tab and then click **Add Modules**.
 
   ![]({{root_url}}/img/design_editor_drag_drop.png "Drag and drop editor")
 
 2. Find the module tile you want to add to your campaign. Then, drag and drop it into your content area.
-3. Edit the module settings, and add your custom content to build your campaign.
+3. Edit the module settings and add your custom content to build your campaign.
 
 ### Drag & Drop Module Descriptions and Styles
 
@@ -349,7 +349,7 @@ The code module is a unique drag & drop module that allows you to insert any cus
 
 <call-out type="warning">
 
-The Design Editor does not modify or validate any HTML inserted via a code module. Please be careful when using custom HTML, and always preview your campaign before sending it.
+The Design Editor does not modify or validate any HTML inserted via a code module. Please be careful when using custom HTML.  Always preview your campaign before sending it.
 
 </call-out>
 
@@ -357,14 +357,14 @@ The Design Editor does not modify or validate any HTML inserted via a code modul
 
 *To upload an image:*
 
-1. Navigate to the **Build** tab, and then click **Add Modules**.
-1. Select the Images module, and drag and drop it into your content area.
+1. Navigate to the **Build** tab and then click **Add Modules**.
+1. Select the Images module and drag and drop it into your content area.
 <br>This opens a window where you can upload images to your image library.
 1. Drag and drop the image you want to use from your files or select **Choose images** to upload.
 
 *To insert an image:*
 
-1. Navigate to the **Build** tab, and then click **Add Modules**.
+1. Navigate to the **Build** tab and then click **Add Modules**.
 1. Drag and drop the **Images** module into your content area.
    <br>A window opens where you can select images from the image library.
 1. Select the image you want to add to your campaign.
@@ -502,7 +502,7 @@ While some inbox providers do not support web fonts, the following popular clien
 * Default Android Mail app (not the Android Gmail app)
 * iOS Mail
 
-This list may change, and we cannot guarantee 100% support from any of these clients.
+This list may change and we cannot guarantee 100% support from any of these clients.
 
 *To add a custom font using the HTML head:*
 
@@ -541,7 +541,7 @@ If you are writing your own custom HTML that you plan on importing into the desi
 
   ![]({{root_url}}/img/import_custom_html.png "Import custom HTML")
 
-5. Paste or enter the HTML you want to use, and then click **Import**.
+5. Paste or enter the HTML you want to use and then click **Import**.
 
 <call-out type="warning">
 
@@ -735,7 +735,7 @@ SendGrid hosts the images included in the pre-built templates and any images you
 *To open exported HTML in the code editor:*
 
 1. From the left-hand navigation, select **Marketing** and then click **Campaigns**.
-1. Click **New Campaign**, and then select **Blank Template**.
+1. Click **New Campaign** and then select **Blank Template**.
 1. Select **Code Editor**.
 1. Paste the raw SendGrid template HTML into the code editor.
 
@@ -745,7 +745,7 @@ Assigning categories to a campaign allows you to track emails based on your own 
 
 *To add a category:*
 
-1. Navigate to the *Settings* tab, and click **Campaign Settings** to expand the menu.
+1. Navigate to the *Settings* tab and click **Campaign Settings** to expand the menu.
 1. Find the *Categories* field.
 1. Enter the name of a new category or select a previously used category from the drop-down menu.
 
