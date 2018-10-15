@@ -90,7 +90,7 @@ Be sure your account is set to the correct time zone in order to ensure that you
 
 *To change your time zone:*
 
-1. From the left-hand navigation bar, select **Settings**.
+1. From the left-hand navigation, select **Settings**.
 1. Click **Account Details**, or go to https://app.sendgrid.com/settings/account.
 1. Scroll to the bottom of the page, find **TIME ZONE**, and ensure your desired time zone is correct.
 
