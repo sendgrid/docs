@@ -46,7 +46,7 @@ Think of it this way: would you rather a recipient politely decline future email
 
  ### 	Who are you?
 
-Maximum company visibility helps as well. Placing your company name in the subject line of your emails and including your physical mailing address and phone number in your email footers helps mail providers recognize you as a legitimate company and sender of an email. This also helps your recipients know that this message is indeed from you!
+Maximum company visibility helps as well. Placing your company name in the subject line of your emails and including your physical mailing address and phone number in your email footers helps mail providers recognize you as a legitimate company and email sender. This also helps your recipients know that this message is indeed from you!
 
 We've all ignored phone calls from numbers we don't recognize, the same goes for email!
 
@@ -73,10 +73,10 @@ With email, things don't happen overnight, and magic wands are few and far betwe
 
 Encouraging your recipients to do certain things can help bolster the trust ISPs have for you and your messages. Some examples can include:
 
-- "Add us to your address book!" - Having a recipient add you from their address book or trusted senders list can go a long way. More often than not, if one of an ISPs recipients trust a sender, they will be more lenient to similar messages to different recipients!
+- "Add us to your address book!" - Having a recipient add your *from address* to their address book or trusted senders list can go a long way. More often than not, if one of an ISPs recipients trust a sender, they will be more lenient to similar messages to different recipients!
 - Star or Mark as important - A simple inbox action like this is just another way your recipients can tell their mail providers that "Hey, I want these messages".
 - IP Whitelist - Some ISPs or mail admins can add rules to always allow _all_ incoming mail from specific IP addresses! Consider reaching out to the postmaster(usually example@example.com) of problematic mail domains to see if they can whitelist [your dedicated IP address]({{root_url}}/ui/account-and-settings/ip-access-management/).
-- "If you don't receive an email right away, please check your spam folder and mark "not spam" - Adding this simple sentence to your sign-up form area can solve a lot of potential heartaches. If a message you sent ends up in the Spam folder, and the recipient manually goes in and pulls it out, that's fantastic! This not only helps an ISPs incoming mail filters in avoiding false positives, but also improves your standing with that ISP.
+- "If you don't receive an email right away, please check your spam folder and mark "not spam" - Adding this simple sentence to your sign-up form area can solve a lot of potential heartache. If a message you sent ends up in the Spam folder, and the recipient manually goes in and pulls it out, that's fantastic! This not only helps an ISPs incoming mail filters in avoiding false positives, but also improves your standing with that ISP.
 
 ### Sending Adult Content
 
