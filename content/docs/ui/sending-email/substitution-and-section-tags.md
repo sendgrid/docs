@@ -2,7 +2,7 @@
 seo:
   title: Substitution and Section Tags
   description: Substitution and Section Tags
-  keywords:
+  keywords: substitution, section
 title: Substitution and Section Tags
 group: building-email
 weight: 0
@@ -14,13 +14,13 @@ navigation:
 
 ## 	Simple Name Substitution
  	
-This example will show you how to create a name substitution for your emails. We will be using the tag `{{name}}` in this example. In this example the tag `{{name}}` will get replaced with the name of the recipient.
+This example will show you how to create a name substitution for your emails. We will be using the tag `-name-` in this example. In this example the tag `-name-` will get replaced with the name of the recipient.
 
  #### 	Email Content
  	
  	
 ```
-Hello {{name}},
+Hello -name-,
 ```
 
  #### 	HTML
@@ -29,7 +29,7 @@ Hello {{name}},
 <html>
   <head></head>
   <body>
-    <p>Hello {{name}},<br>
+    <p>Hello -name-,<br>
     </p>
   </body>
 </html>
@@ -40,12 +40,12 @@ Hello {{name}},
 ```json
 {
 	"to": [
-		"example01@domain.com",
-		"example02@domain.com",
-		"example03@domain.com"
+		"john@domain.com",
+		"jane@domain.com",
+		"matt@domain.com"
 	],
 	"sub": {
-		"{{name}}": ["John", "Jane", "Matt"]
+		"-name-": ["John", "Jane", "Matt"]
 	}
 }
 ```
@@ -56,30 +56,30 @@ Hello {{name}},
 {
 	"personalizations": [{
 		"to": [{
-			"email": "example01@domain.com",
-			"name": "Example 01"
+			"email": "john@domain.com",
+			"name": "John"
 		}],
 		"subject": "Example 01",
 		"substitutions": {
-			"{{name}}": "John"
+			"-name-": "John"
 		}
 	}, {
 		"to": [{
-			"email": "example02@domain.com",
-			"name": "Example 02"
+			"email": "jane@domain.com",
+			"name": "Jane"
 		}],
 		"subject": "Example 02",
 		"substitutions": {
-			"{{name}}": "Jane"
+			"-name-": "Jane"
 		}
 	}, {
 		"to": [{
-			"email": "example03@domain.com",
-			"name": "Example 03"
+			"email": "matt@domain.com",
+			"name": "Matt"
 		}],
 		"subject": "Example 03",
 		"substitutions": {
-			"{{name}}": "Matt"
+			"-name-": "Matt"
 		}
 	}],
 	"from": {
@@ -93,10 +93,10 @@ Hello {{name}},
 	"subject": "Example",
 	"content": [{
 		"type": "text/plain",
-		"value": "Hello {{name}},"
+		"value": "Hello -name-,"
 	}, {
 		"type": "text/html",
-		"value": "Hello {{name}},"
+		"value": "Hello -name-,"
 	}]
 
 }
@@ -104,7 +104,7 @@ Hello {{name}},
 
  ####	Example Outcome:
  	
-  	example01@domain.com
+  	john@domain.com
  	
  #### 	Text
  	
@@ -124,7 +124,7 @@ Hello John,
 </html>
 ```
  #### 	Example Outcome:
-  	example02@domain.com
+  	jane@domain.com
  	
  #### 	Text
  	
@@ -145,7 +145,7 @@ Hello Jane,
 ```
 
  #### 	Example Outcome:
- 	example03@domain.com
+ 	matt@domain.com
  	
  #### 	Text
  	
@@ -167,12 +167,12 @@ Hello Matt,
 
 ##	First Name and Last Name Substitutions
  	
-This example will show you how to create a first name and last name substitution for your emails. We will be using the tags `{{first_name}}` and `{{last_name}}` in this example. In this example the tag `{{first_name}}` will get replaced with the first name of the recipient and the tag `{{last_name}}` will get replaced with the last name of the recipient.
+This example will show you how to create a first name and last name substitution for your emails. We will be using the tags `-first_name-` and `-last_name-` in this example. In this example the tag `-first_name-` will get replaced with the first name of the recipient and the tag `-last_name-` will get replaced with the last name of the recipient.
  	
  #### 	Text
  	
 ```
-Hello {{first_name}}  {{last_name}},
+Hello -first_name-  -last_name-,
 ```
 
  #### 	HTML
@@ -181,7 +181,7 @@ Hello {{first_name}}  {{last_name}},
 <html>
   <head></head>
   <body>
-    <p>Hello {{first_name}} {{last_name}},<br>
+    <p>Hello -first_name- -last_name-,<br>
     </p>
   </body>
 </html>
@@ -192,13 +192,13 @@ Hello {{first_name}}  {{last_name}},
 ```json
 {
 	"to": [
-		"example01@domain.com",
-		"example02@domain.com",
-		"example03@domain.com"
+		"john.smith@domain.com",
+		"jane.williams@domain.com",
+		"matt.johnson@domain.com"
 	],
 	"sub": {
-		"{{first_name}}": ["John", "Jane", "Matt"],
-		"{{last_name}}": ["Smith", "Williams", "Johnson"]
+		"-first_name-": ["John", "Jane", "Matt"],
+		"-last_name-": ["Smith", "Williams", "Johnson"]
 	}
 }
 ```
@@ -209,33 +209,33 @@ Hello {{first_name}}  {{last_name}},
 {
 	"personalizations": [{
 		"to": [{
-			"email": "example01@domain.com",
-			"name": "Example 01"
+			"email": "john.smith@domain.com",
+			"name": "John Smith"
 		}],
 		"subject": "Example 01",
 		"substitutions": {
-			"{{first_name}}": "John",
-			"{{last_name}}": "Smith"
+			"-first_name-": "John",
+			"-last_name-": "Smith"
 		}
 	}, {
 		"to": [{
-			"email": "example02@domain.com",
-			"name": "Example 02"
+			"email": "jane.williams@domain.com",
+			"name": "Jane Williams"
 		}],
 		"subject": "Example 02",
 		"substitutions": {
-			"{{first_name}}": "Jane",
-			"{{last_name}}": "Williams"
+			"-first_name-": "Jane",
+			"-last_name-": "Williams"
 		}
 	}, {
 		"to": [{
-			"email": "example03@domain.com",
-			"name": "Example 03"
+			"email": "matt.johnson@domain.com",
+			"name": "Matt Johnson"
 		}],
 		"subject": "Example 03",
 		"substitutions": {
-			"{{first_name}}": "Matt",
-			"{{last_name}}": "Johnson"
+			"-first_name-": "Matt",
+			"-last_name-": "Johnson"
 		}
 	}],
 	"from": {
@@ -249,10 +249,10 @@ Hello {{first_name}}  {{last_name}},
 	"subject": "Example",
 	"content": [{
 		"type": "text/plain",
-		"value": "Hello {{first_name}} {{last_name}},"
+		"value": "Hello -first_name- -last_name-,"
 	}, {
 		"type": "text/html",
-		"value": "Hello {{first_name}} {{last_name}},"
+		"value": "Hello -first_name- -last_name-,"
 	}]
 
 }
@@ -260,7 +260,7 @@ Hello {{first_name}}  {{last_name}},
 
  #### 	Example Outcome:
  	
-  	example01@domain.com
+  	john.smith@domain.com
  	
  #### 	Text
  	
@@ -280,7 +280,7 @@ Hello John Smith,
 </html>
 ```
  #### 	Example Outcome:
- 	example02@domain.com
+ 	jane.williams@domain.com
  	
  #### 	Text
  	
@@ -301,7 +301,7 @@ Hello Jane Williams,
 ```
 
  #### 	Example Outcome:
- 	example03@domain.com
+ 	matt.johnson@domain.com
  	
  #### 	Text
  	
@@ -323,12 +323,13 @@ Hello Matt Johnson,
 
 ## 	Simple Greeting Section with Name Substitution
  	
-This example will show you how to create a section as a greeting with a name substitution. We will be using the tags `{{warm_welcome}}`, `{{greeting}}` and `{{name}}` in this example. In this example we have created a greeting using the section tag `{{warm_welcome}}`. The `{{warm_welcome}}` tag is replaced with the `{{greeting}}` substitution which calls the section `"Hello {{name}},"`. The `{{name}}` tag in `"Hello {{name}},"` is then replaced with the recipients name.
+This example will show you how to create a section as a greeting with a name substitution. We will be using the tags `-warm_welcome-`, `-greeting-` and `-name-` in this example. In this example we have created a greeting using the section tag `-warm_welcome-`. The `-warm_welcome-` tag is replaced with the `-greeting-` substitution which calls the section `"Hello -name-,"`. The `-name-` tag in `"Hello -name-,"` is then replaced with the recipients name.
  	
  #### 	Text
  	
 ```
-{{warm_welcome}}	```
+-warm_welcome-
+```
 
  #### 	HTML
  	
@@ -336,7 +337,7 @@ This example will show you how to create a section as a greeting with a name sub
 <html>
   <head></head>
   <body>
-    <p>{{warm_welcome}}<br>
+    <p>-warm_welcome-<br>
     </p>
   </body>
 </html>
@@ -347,16 +348,16 @@ This example will show you how to create a section as a greeting with a name sub
 ```json
 {
 	"to": [
-		"example01@domain.com",
-		"example02@domain.com",
-		"example03@domain.com"
+		"john@domain.com",
+		"jane@domain.com",
+		"matt@domain.com"
 	],
 	"sub": {
-		"{{name}}": ["John", "Jane", "Matt"],
-		"{{warm_welcome}}": ["{{greeting}}", "{{greeting}}", "{{greeting}}"]
+		"-name-": ["John", "Jane", "Matt"],
+		"-warm_welcome-": ["-greeting-", "-greeting-", "-greeting-"]
 	},
 	"section": {
-		"{{greeting}}": "Hello {{name}},"
+		"-greeting-": "Hello -name-,"
 	}
 }
 ```
@@ -367,33 +368,33 @@ This example will show you how to create a section as a greeting with a name sub
 {
 	"personalizations": [{
 		"to": [{
-			"email": "example01@domain.com",
-			"name": "Example 01"
+			"email": "john@domain.com",
+			"name": "John"
 		}],
 		"subject": "Example 01",
 		"substitutions": {
-			"{{name}}": "John",
-			"{{warm_welcome}}": "{{greeting}}"
+			"-name-": "John",
+			"-warm_welcome-": "-greeting-"
 		}
 	}, {
 		"to": [{
-			"email": "example02@domain.com",
-			"name": "Example 02"
+			"email": "jane@domain.com",
+			"name": "Jane"
 		}],
 		"subject": "Example 02",
 		"substitutions": {
-			"{{name}}": "Jane",
-			"{{warm_welcome}}": "{{greeting}}"
+			"-name-": "Jane",
+			"-warm_welcome-": "-greeting-"
 		}
 	}, {
 		"to": [{
-			"email": "example03@domain.com",
-			"name": "Example 03"
+			"email": "matt@domain.com",
+			"name": "Matt"
 		}],
 		"subject": "Example 03",
 		"substitutions": {
-			"{{name}}": "Matt",
-			"{{warm_welcome}}": "{{greeting}}"
+			"-name-": "Matt",
+			"-warm_welcome-": "-greeting-"
 		}
 	}],
 	"from": {
@@ -407,20 +408,20 @@ This example will show you how to create a section as a greeting with a name sub
 	"subject": "Example",
 	"content": [{
 		"type": "text/plain",
-		"value": "{{warm_welcome}}"
+		"value": "-warm_welcome-"
 	}, {
 		"type": "text/html",
-		"value": "{{warm_welcome}}"
+		"value": "<html>\n  <head></head>\n  <body>\n    <p>-warm_welcome-<br>\n    </p>\n   </body>\n</html>"
 	}],
 	"sections": {
-		"{{greeting}}": "Welcome {{name}},"
+		"-greeting-": "Welcome -name-,"
 	}
 }
 ```
 
  #### 	Example Outcome:
  	
-	example01@domain.com
+	john@domain.com
  	
  #### 	Text
  	
@@ -440,7 +441,7 @@ Hello John,
 </html>
 ```
  #### 	Example Outcome:
- 	example02@domain.com
+ 	jane@domain.com
  	
  #### 	Text
  	
@@ -460,7 +461,7 @@ Hello Jane,
 </html>
 ```
  #### 	Example Outcome:
-  	example03@domain.com
+  	matt@domain.com
  	
  #### 	Text
  	
@@ -482,13 +483,13 @@ Hello Matt,
 
 ## 	Greeting Section with First & Last Name Substitutions
  	
-This example will show you how to create a section with first name and last name substitution for your emails. We will be using the tags `{{warm_welcome}}`, `{{greeting}}`, `{{first_name}}` and `{{last_name}}` in this example. In this example we have created a greeting using the section tag `{{warm_welcome}}`. The `{{warm_welcome}}` tag is replaced with the `{{greeting}}` substitution which calls the section `"Hello {{first_name}} {{last_name}},"`. The `{{first_name}}` and `{{last_name}}` tags in `"Hello {{first_name}} {{last_name}},"` is then replaced with the recipients first and last names.
+This example will show you how to create a section with first name and last name substitution for your emails. We will be using the tags `-warm_welcome-`, `-greeting-`, `-first_name-` and `-last_name-` in this example. In this example we have created a greeting using the section tag `-warm_welcome-`. The `-warm_welcome-` tag is replaced with the `-greeting-` substitution which calls the section `"Hello -first_name- -last_name-,"`. The `-first_name-` and `-last_name-` tags in `"Hello -first_name- -last_name-,"` is then replaced with the recipients first and last names.
 
  	
  #### 	Text
  	
 ```
-{{warm_welcome}}	
+-warm_welcome-	
 ```
 
 #### 	HTML
@@ -497,7 +498,7 @@ This example will show you how to create a section with first name and last name
 <html>
   <head></head>
   <body>
-    <p>{{warm_welcome}}<br>
+    <p>-warm_welcome-<br>
     </p>
   </body>
 </html>
@@ -508,17 +509,17 @@ This example will show you how to create a section with first name and last name
 ```json
 {
 	"to": [
-		"example01@domain.com",
-		"example02@domain.com",
-		"example03@domain.com"
+		"john.smith@domain.com",
+		"jane.williams@domain.com",
+		"matt.johnson@domain.com"
 	],
 	"sub": {
-		"{{first_name}}": ["John", "Jane", "Matt"],
-		"{{last_name}}": ["Smith", "Williams", "Johnson"],
-		"{{warm_welcome}}": ["{{greeting}}", "{{greeting}}", "{{greeting}}"]
+		"-first_name-": ["John", "Jane", "Matt"],
+		"-last_name-": ["Smith", "Williams", "Johnson"],
+		"-warm_welcome-": ["-greeting-", "-greeting-", "-greeting-"]
 	},
 	"section": {
-		"{{greeting}}": "Hello {{first_name}} {{last_name}},"
+		"-greeting-": "Hello -first_name- -last_name-,"
 	}
 }
 ```
@@ -529,36 +530,36 @@ This example will show you how to create a section with first name and last name
 {
 	"personalizations": [{
 		"to": [{
-			"email": "example01@domain.com",
-			"name": "Example 01"
+			"email": "john.smith@domain.com",
+			"name": "John Smith"
 		}],
 		"subject": "Example 01",
 		"substitutions": {
-			"{{first_name}}": "John",
-			"{{last_name}}": "Smith",
-			"{{warm_welcome}}": "{{greeting}}"
+			"-first_name-": "John",
+			"-last_name-": "Smith",
+			"-warm_welcome-": "-greeting-"
 		}
 	}, {
 		"to": [{
-			"email": "example02@domain.com",
-			"name": "Example 02"
+			"email": "jane.williams@domain.com",
+			"name": "Jane Williams"
 		}],
 		"subject": "Example 02",
 		"substitutions": {
-			"{{first_name}}": "Jane",
-			"{{last_name}}": "Williams",
-			"{{warm_welcome}}": "{{greeting}}"
+			"-first_name-": "Jane",
+			"-last_name-": "Williams",
+			"-warm_welcome-": "-greeting-"
 		}
 	}, {
 		"to": [{
-			"email": "example03@domain.com",
-			"name": "Example 03"
+			"email": "matt.johnson@domain.com",
+			"name": "Matt Johnson"
 		}],
 		"subject": "Example 03",
 		"substitutions": {
-			"{{first_name}}": "Matt",
-			"{{last_name}}": "Johnson",
-			"{{warm_welcome}}": "{{greeting}}"
+			"-first_name-": "Matt",
+			"-last_name-": "Johnson",
+			"-warm_welcome-": "-greeting-"
 		}
 	}],
 	"from": {
@@ -572,20 +573,20 @@ This example will show you how to create a section with first name and last name
 	"subject": "Example",
 	"content": [{
 		"type": "text/plain",
-		"value": "{{warm_welcome}}"
+		"value": "-warm_welcome-"
 	}, {
 		"type": "text/html",
-		"value": "{{warm_welcome}}"
+		"value": "<html>\n  <head></head>\n  <body>\n    <p>-warm_welcome-<br>\n    </p>\n   </body>\n</html>"
 	}],
 	"sections": {
-		"{{greeting}}": "Welcome {{first_name}} {{last_name}},"
+		"-greeting-": "Welcome -first_name- -last_name-,"
 	}
 }
 ```
 
  #### 	Example Outcome:
  	
-	example01@domain.com
+	john.smith@domain.com
  	
  #### 	Text
  	
@@ -605,7 +606,7 @@ Hello John Smith,
 </html>
 ```
 #### 	Example Outcome:
- 	example02@domain.com
+ 	jane.williams@domain.com
  	
  #### 	Text
  	
@@ -613,7 +614,7 @@ Hello John Smith,
 Hello Jane Williams,
 ```
 
- #### 	HTML
+#### 	HTML
  	
 ```html
 <html>
@@ -625,15 +626,15 @@ Hello Jane Williams,
 </html>
 ```
 #### 	Example Outcome:
- 	example03@domain.com
+ 	matt.johnson@domain.com
  	
- #### 	Text
+#### 	Text
  	
 ```
 Hello Matt Johnson,
 ```
 
- #### 	HTML
+#### 	HTML
  	
 ```html
 <html>
@@ -647,12 +648,12 @@ Hello Matt Johnson,
 
 ##	Three Different Greeting Sections with First & Last Name Substitutions
  	
-This example will show you how to create three different sections, each with first name and last name substitution for your emails. We will be using the tags `{{warm_welcome}}`, `{{greeting01}}`, `{{greeting02}}`, `{{greeting03}}`, `{{first_name}}` and `{{last_name}}` in this example. In this example we have created three different greetings using the section tag `{{warm_welcome}}`. The `{{warm_welcome}}` tag is replaced with either `{{greeting01}}`, `{{greeting02}}` or `{{greeting03}}` substitution. This will call one of the three sections. In each of these sections there is the `{{first_name}}` and `{{last_name}}` tags which will get replaced with the recipients first and last names.
+This example will show you how to create three different sections, each with first name and last name substitution for your emails. We will be using the tags `-warm_welcome-`, `-greeting01-`, `-greeting02-`, `-greeting03-`, `-first_name-` and `-last_name-` in this example. In this example we have created three different greetings using the section tag `-warm_welcome-`. The `-warm_welcome-` tag is replaced with either `-greeting01-`, `-greeting02-` or `-greeting03-` substitution. This will call one of the three sections. In each of these sections there is the `-first_name-` and `-last_name-` tags which will get replaced with the recipients first and last names.
  	
  #### 	Text
  	
 ```
-{{warm_welcome}}	
+-warm_welcome-	
 ```
 
  #### 	HTML
@@ -661,7 +662,7 @@ This example will show you how to create three different sections, each with fir
 <html>
   <head></head>
   <body>
-    <p>{{warm_welcome}}<br>
+    <p>-warm_welcome-<br>
     </p>
   </body>
 </html>
@@ -672,19 +673,19 @@ This example will show you how to create three different sections, each with fir
 ```json
 {
 	"to": [
-		"example01@domain.com",
-		"example02@domain.com",
-		"example03@domain.com"
+		"john.smith@domain.com",
+		"jane.williams@domain.com",
+		"matt.johnson@domain.com"
 	],
 	"sub": {
-		"{{first_name}}": ["John", "Jane", "Matt"],
-		"{{last_name}}": ["Smith", "Williams", "Johnson"],
-		"{{warm_welcome}}": ["{{greeting01}}", "{{greeting02}}", "{{greeting03}}"]
+		"-first_name-": ["John", "Jane", "Matt"],
+		"-last_name-": ["Smith", "Williams", "Johnson"],
+		"-warm_welcome-": ["-greeting01-", "-greeting02-", "-greeting03-"]
 	},
 	"section": {
-		"{{greeting01}}": "Welcome {{first_name}} {{last_name}},",
-		"{{greeting02}}": "Hello {{first_name}} {{last_name}},",
-		"{{greeting03}}": "Dear {{first_name}} {{last_name}},"
+		"-greeting01-": "Welcome -first_name- -last_name-,",
+		"-greeting02-": "Hello -first_name- -last_name-,",
+		"-greeting03-": "Dear -first_name- -last_name-,"
 	}
 }
 ```
@@ -695,36 +696,36 @@ This example will show you how to create three different sections, each with fir
 {
 	"personalizations": [{
 		"to": [{
-			"email": "example01@domain.com",
-			"name": "Example 01"
+			"email": "john.smith@domain.com",
+			"name": "John Smith"
 		}],
 		"subject": "Example 01",
 		"substitutions": {
-			"{{first_name}}": "John",
-			"{{last_name}}": "Smith",
-			"{{warm_welcome}}": "{{greeting01}}"
+			"-first_name-": "John",
+			"-last_name-": "Smith",
+			"-warm_welcome-": "-greeting01-"
 		}
 	}, {
 		"to": [{
-			"email": "example02@domain.com",
-			"name": "Example 02"
+			"email": "jane.williams@domain.com",
+			"name": "Jane Williams"
 		}],
 		"subject": "Example 02",
 		"substitutions": {
-			"{{first_name}}": "Jane",
-			"{{last_name}}": "Williams",
-			"{{warm_welcome}}": "{{greeting02}}"
+			"-first_name-": "Jane",
+			"-last_name-": "Williams",
+			"-warm_welcome-": "-greeting02-"
 		}
 	}, {
 		"to": [{
-			"email": "example03@domain.com",
-			"name": "Example 03"
+			"email": "matt.johnson@domain.com",
+			"name": "Matt Johnson"
 		}],
 		"subject": "Example 03",
 		"substitutions": {
-			"{{first_name}}": "Matt",
-			"{{last_name}}": "Johnson",
-			"{{warm_welcome}}": "{{greeting03}}"
+			"-first_name-": "Matt",
+			"-last_name-": "Johnson",
+			"-warm_welcome-": "-greeting03-"
 		}
 	}],
 	"from": {
@@ -738,22 +739,22 @@ This example will show you how to create three different sections, each with fir
 	"subject": "Example",
 	"content": [{
 		"type": "text/plain",
-		"value": "{{warm_welcome}}"
+		"value": "-warm_welcome-"
 	}, {
 		"type": "text/html",
-		"value": "{{warm_welcome}}"
+		"value": "<html>\n  <head></head>\n  <body>\n    <p>-warm_welcome-<br>\n    </p>\n   </body>\n</html>"
 	}],
 	"sections": {
-		"{{greeting01}}": "Welcome {{first_name}} {{last_name}},",
-		"{{greeting02}}": "Hello {{first_name}} {{last_name}},",
-		"{{greeting03}}": "Dear {{first_name}} {{last_name}},"
+		"-greeting01-": "Welcome -first_name- -last_name-,",
+		"-greeting02-": "Hello -first_name- -last_name-,",
+		"-greeting03-": "Dear -first_name- -last_name-,"
 	}
 }
 ```
 
  #### 	Example Outcome:
  	
-  	example01@domain.com
+  	john.smith@domain.com
  	
  #### 	Text
  	
@@ -773,7 +774,7 @@ Welcome John Smith,
 </html>
 ```
 #### 	Example Outcome:
-  	example02@domain.com
+  	jane.williams@domain.com
  	
  #### 	Text
  	
@@ -793,7 +794,7 @@ Hello Jane Williams,
 </html>
 ```
 #### 	Example Outcome:
-  	example03@domain.com
+  	matt.johnson@domain.com
  	
  #### 	Text
  	
@@ -815,13 +816,14 @@ Dear Matt Johnson,
 
 ## 	Three Confirmation Sections and Substitutions
  	
-This example will show you how to create three different sections for confirmation emails. We will be using the tags `{{name}}`, `{{confirmations}}`, `{{confirmation_001}}`, `{{confirmation_002}}`, `{{confirmation_003}}` and `{{order_id}}` in this example. In this example we have created three different confirmations using the section tag `{{confirmations}}`. The `{{confirmations}}` tag is replaced with either `{{confirmation_001}}`, `{{confirmation_002}}` or `{{confirmation_003}}` substitution. This will call one of the three sections. In each of these sections there is the `{{order_id}}` tag which will get replaced with the recipients order id.
+This example will show you how to create three different sections for confirmation emails. We will be using the tags `-name-`, `-confirmations-`, `-confirmation_001-`, `-confirmation_002-`, `-confirmation_003-` and `-order_id-` in this example. In this example we have created three different confirmations using the section tag `-confirmations-`. The `-confirmations-` tag is replaced with either `-confirmation_001-`, `-confirmation_002-` or `-confirmation_003-` substitution. This will call one of the three sections. In each of these sections there is the `-order_id-` tag which will get replaced with the recipients order id.
  	
  #### 	Text
  	
 ```
-Hello {{name}},
-{{confirmations}}	```
+Hello -name-,
+-confirmations-
+```
 
  #### 	HTML
  	
@@ -829,8 +831,8 @@ Hello {{name}},
 <html>
   <head></head>
   <body>
-    <p>Hello {{name}},<br>
-	    {{confirmations}}	    </p>
+    <p>Hello -name-,<br>
+	    -confirmations-</p>
   </body>
 </html>
 ```
@@ -839,16 +841,16 @@ Hello {{name}},
  	
 ```json
 {
-	"to": ["example01@domain.com", "example02@domain.com", "example03@domain.com"],
+	"to": ["john@domain.com", "jane@domain.com", "matt@domain.com"],
 	"sub": {
-		"{{name}}": ["John", "Jane", "Matt"],
-		"{{confirmations}}": ["{{confirmation_001}}", "{{confirmation_002}}", "{{confirmation_003}}"],
-		"{{order_id}}": ["12345", "23456", "34567"]
+		"-name-": ["John", "Jane", "Matt"],
+		"-confirmations-": ["-confirmation_001-", "-confirmation_002-", "-confirmation_003-"],
+		"-order_id-": ["12345", "23456", "34567"]
 	},
 	"section": {
-		"{{confirmation_001}}": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order {{order_id}}.",
-		"{{confirmation_002}}": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order {{order_id}}. This invoice is to be paid by bank transfer within 7 days from the date of your monthly statement.",
-		"{{confirmation_003}}": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order {{order_id}}. You can download your invoice as a PDF for your records."
+		"-confirmation_001-": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order -order_id-.",
+		"-confirmation_002-": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order -order_id-. This invoice is to be paid by bank transfer within 7 days from the date of your monthly statement.",
+		"-confirmation_003-": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order -order_id-. You can download your invoice as a PDF for your records."
 	}
 }
 ```
@@ -859,36 +861,36 @@ Hello {{name}},
 {
 	"personalizations": [{
 		"to": [{
-			"email": "example01@domain.com",
-			"name": "Example 01"
+			"email": "john@domain.com",
+			"name": "John"
 		}],
 		"subject": "Example 01",
 		"substitutions": {
-			"{{name}}": "John",
-			"{{order_id}}": "12345",
-			"{{confirmations}}": "{{confirmation_001}}"
+			"-name-": "John",
+			"-order_id-": "12345",
+			"-confirmations-": "-confirmation_001-"
 		}
 	}, {
 		"to": [{
-			"email": "example02@domain.com",
-			"name": "Example 02"
+			"email": "jane@domain.com",
+			"name": "Jane"
 		}],
 		"subject": "Example 02",
 		"substitutions": {
-			"{{name}}": "Jane",
-			"{{order_id}}": "23456",
-			"{{confirmations}}": "{{confirmation_002}}"
+			"-name-": "Jane",
+			"-order_id-": "23456",
+			"-confirmations-": "-confirmation_002-"
 		}
 	}, {
 		"to": [{
-			"email": "example03@domain.com",
-			"name": "Example 03"
+			"email": "matt@domain.com",
+			"name": "Matt"
 		}],
 		"subject": "Example 03",
 		"substitutions": {
-			"{{name}}": "Matt",
-			"{{order_id}}": "34567",
-			"{{confirmations}}": "{{confirmation_003}}"
+			"-name-": "Matt",
+			"-order_id-": "34567",
+			"-confirmations-": "-confirmation_003-"
 		}
 	}],
 	"from": {
@@ -902,22 +904,22 @@ Hello {{name}},
 	"subject": "Example",
 	"content": [{
 		"type": "text/plain",
-		"value": "Hello {{name}},\r\n{{confirmations}}"
+		"value": "Hello -name-,\n-confirmations-"
 	}, {
 		"type": "text/html",
-		"value": "<p>Hello {{name}},<br>{{confirmations}}"
+		"value": "<html>\n  <head></head>\n  <body>\n    <p>Hello -name-,<br>\n	    -confirmations-</p>\n  </body>\n</html>"
 	}],
 	"sections": {
-		"{{confirmation_001}}": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order {{order_id}}.",
-		"{{confirmation_002}}": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order {{order_id}}. This invoice is to be paid by bank transfer within 7 days from the date of your monthly statement.",
-		"{{confirmation_003}}": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order {{order_id}}. You can download your invoice as a PDF for your records."
+		"-confirmation_001-": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order -order_id-.",
+		"-confirmation_002-": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order -order_id-. This invoice is to be paid by bank transfer within 7 days from the date of your monthly statement.",
+		"-confirmation_003-": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order -order_id-. You can download your invoice as a PDF for your records."
 	}
 }
 ```
 
  #### 	Example Outcome:
  	
- 	example01@domain.com
+ 	john@domain.com
  	
  #### 	Text
  	
@@ -939,7 +941,7 @@ Thanks for choosing SendGrid. This email is to confirm that we have processed yo
 </html>
 ```
  #### 	Example Outcome:
-	example02@domain.com
+	jane@domain.com
  	
  #### 	Text
  	
@@ -961,7 +963,7 @@ Thanks for choosing SendGrid. This email is to confirm that we have processed yo
 </html>
 ```
  #### 	Example Outcome:
- 	example03@domain.com
+ 	matt@domain.com
  	
  #### 	Text
  	
