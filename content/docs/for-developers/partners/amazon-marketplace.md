@@ -20,6 +20,12 @@ Once you have an AWS account, you can to [subscribe to SendGrid](https://aws.ama
 
 <call-out>
 
+If you are using SendGrid through AWS, you cannot change your SendGrid username.
+
+</call-out>
+
+<call-out>
+
 **Warmup your sending** - Since ISP spam filters look at volume as a significant factor when determining whether or not you are sending spam, we recommend that you begin sending a low to moderate volume, eventually working your way up to larger volumes. This gives the receiving email providers a chance to closely observe your sending habits and the way your customers treat the emails they receive from you.
 
 </call-out>
