@@ -8,6 +8,7 @@
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./license)
 
 This is a Gatsby site.
+Have fun coding. 
 
 The develop branch is continuously deployed to a preview site. [View dev site](http://d2w67tjf43xwdp.cloudfront.net/)
 
