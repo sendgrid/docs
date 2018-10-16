@@ -81,18 +81,10 @@ For example, to send a blind carbon copy (BCC) of your email to the address exam
   }
 }
 ```
+
 <call-out type="warning">
 
-Make sure you include the "to" parameter in any X-SMTPAPI header you pass:
-
-```
-  "to": [
-    "example1@example.com",
-    "example2@example.com"
-  ]
-```
-
-Failing to do so could result in your customization not working.
+Make sure you include the "to" parameter in any X-SMTPAPI header you pass. Failing to do so could result in your customization not working.
 
 </call-out>
 
