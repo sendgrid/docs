@@ -11,7 +11,7 @@ navigation:
  show: true
 ---
 
-As you’re probably aware, SendGrid is great at sending your email, but SendGrid can also help you process email using the Inbound Parse Webhook. The Inbound Parse Webhook processes all incoming email for a domain or subdomain, parses the contents and attachments then POSTs multipart/form-data to a URL that you choose.
+As you are probably aware, SendGrid is great at sending your email, but SendGrid can also help you process email using the Inbound Parse Webhook. The Inbound Parse Webhook processes all incoming email for a domain or subdomain, parses the contents and attachments then POSTs multipart/form-data to a URL that you choose.
 
 <call-out>
 
@@ -33,7 +33,7 @@ To begin processing email using SendGrid's Inbound Parse Webhook, you will have 
 
  ### 	Setting up an MX Record
 
-1. Navigate to the MX Records page on your hosting provider’s website. If you’re unsure who your hosting or DNS provider is, please contact your website administrator.
+1. Navigate to the MX Records page on your hosting provider’s website. If you are unsure who your hosting or DNS provider is, please contact your website administrator.
 
 2. Create a new MX record for the subdomain (e.g. parse.yourdomain.com) you want to process incoming email.
 
@@ -51,9 +51,9 @@ Do not change the MX record for your domain. If you do, you will no longer recei
 
 3. Assign the MX record a priority of 10, and point it to the address: `mx.sendgrid.net.`
 
-  It should look something like this:
+It should look something like this:
 
-   ![]({{root_url}}/images/Inbound_Parse_01_MX_Record.png)
+  ![]({{root_url}}/images/Inbound_Parse_01_MX_Record.png)
 
 <call-out>
 
@@ -107,7 +107,7 @@ The local-part (i.e. anything before @) can be any word or combination because a
 
 </call-out>
 
-You can check the [Activity Feed](https://app.sendgrid.com/email_activity?) from your SendGrid dashboard to see if incoming mail was parsed. For more help, see [Debugging a Webhook]({{root_url}}/for-developers/tracking-events/troubleshooting/).
+You can check the [Activity Feed](https://app.sendgrid.com/email_activity?) from your SendGrid dashboard to see if the incoming mail was parsed. For more help, see [Debugging a Webhook]({{root_url}}/for-developers/tracking-events/troubleshooting/).
 
 <call-out type="warning">
 

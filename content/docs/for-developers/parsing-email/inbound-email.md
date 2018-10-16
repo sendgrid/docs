@@ -4,16 +4,16 @@ weight: 0
 title: Inbound Email Parse Webhook
 group: inbound-parse
 navigation:
-  show: true
+ show: true
 ---
 
 SendGrid can parse the attachments and contents of incoming emails. Application examples include receiving uploads and posting blog articles via email.
 
-The Parse API will POST the parsed email to a URL that you specify. If a POST is unsuccessful, SendGrid automatically queues and retries any POSTs that respond with a 4XX or 5XX status. This prevents data loss for customers who have misconfigured their website or POST URL.
+The Parse API will post the parsed email to a URL that you specify. If a post is unsuccessful, SendGrid automatically queues and retries any posts that respond with a 4XX or 5XX statuses. This prevents data loss for customers who have misconfigured their website or post URL.
 
 <call-out>
 
-If you don't want email messages to be retried in case of an error in delivery, please respond with a 2xx status to the POST request.
+If you do not want email messages to be retried in case of an error in delivery, please respond with a 2xx status to the POST request.
 
 </call-out>
 
@@ -52,9 +52,9 @@ The total message size limit, including the message itself and any number of att
 
 If you receive email which is not in ASCII only format, you will want to read this section.
 
-Messages and their headers can have character set data associated with them. In order to simplify the parsing of messages for the end user, SendGrid will decode the to, from, cc, and subject headers if needed. All headers will be converted to UTF-8 for uniformity, since technically a header can be in many different character sets.
+Messages and their headers can have character set data associated with them. In order to simplify the parsing of messages for the end user, SendGrid will decode the to, from, cc, and subject headers if needed. All headers will be converted to UTF-8 for uniformity since technically a header can be in many different character sets.
 
-The charsets variable will contain a JSON encoded hash of the header / field name and its respective character set. For instance, it may look like:
+The charsets variable will contain a JSON encoded hash of the header/field name and it's respective character set. For example, it may look like:
 
 ```ruby
 [charsets] => {"to":"UTF-8","cc":"UTF-8","subject":"UTF-8","from":"UTF-8","text":"iso-8859-1"}
