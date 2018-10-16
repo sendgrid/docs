@@ -34,7 +34,7 @@ It’s likely that you’re already using the new Marketing Campaigns editing ex
 
 Until 16 April 2018, if you duplicate a campaign that was originally created within the old editor, you will notice an alert banner at the top of the app. You can click the button within the alert to begin moving your campaign into the new editing experience.
 
-On 16 April 2018, if you duplicate a campaign that was originally created within the old editor, it will require you to open the campaign in one of the [new editors]({{root_url}}/ui/sending-email/editor/). While many campaigns will move over seamlessly, it’s possible that – depending how you’ve edited your campaign in the past – you’ll need to make a few tweaks or take a few moments to rebuild a template in the new editor. Rest assured, creating templates in the new editor is quick and easy – in most cases, taking only a few minutes. That said, if you have any issues at all, our [support team is available](https://sendgrid.com/support)!
+On 16 April 2018, if you duplicate a campaign that was originally created within the old editor, it will require you to open the campaign in one of the [new editors]({{root_url}}/ui/sending-email/editor/). While many campaigns will move over seamlessly, it’s possible that – depending how you’ve edited your campaign in the past – you’ll need to make a few tweaks or take a few moments to rebuild a template in the new editor. Rest assured, creating templates in the new editor is quick and easy – in most cases, taking only a few minutes. That said, if you have any issues at all, our [support team is available](https://support.sendgrid.com/)!
 
  ### 	I use both Design and Code. Why do I need to choose one?
 

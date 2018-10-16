@@ -20,7 +20,7 @@ The maximum number of transactional templates and versions per user ID is limite
 
 <call-out>
 
-Transactional templates are account and subuser specific. Templates created on a parent account will not be accessible from the subuser accounts.
+Transactional templates are account and Subuser specific. Templates created on a parent account will not be accessible from the Subuser accounts.
 
 </call-out>
 
@@ -38,7 +38,7 @@ The easiest way to get started with a new template is to use one of your previou
 
 <call-out>
 
-Email templates are table-based HTML with inline or header styles, because some well known email applications will only read table-based HTML.
+Email templates are table-based HTML with inline or header styles, because some well-known email applications will only read table-based HTML.
 
 </call-out>
 
@@ -72,7 +72,7 @@ Any Substitution tags will not be populated in this test, but you will be able t
 
 ## 	Managing templates
 
-From the main template view on each template group, you will see an actions menu. From this menu, you can choose to edit the name of your template, add a version, preview and test, or delete the template. You will also see an action menu for each template version. Clicking this presents a menu that allows you to preview and test, edit, duplicate, and delete the template version. You can also use the preview function to send a test.
+From the main template view on each template group, you will see an actions menu. From this menu, you can choose to edit the name of your template, add a version, preview, test, or delete the template. You will also see an action menu for each template version. Clicking this presents a menu that allows you to preview and test, edit, duplicate, and delete the template version. You can also use the preview function to send a test.
 
 <call-out>
 

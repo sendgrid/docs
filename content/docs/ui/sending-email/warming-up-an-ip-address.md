@@ -29,7 +29,7 @@ It is much easier to establish a positive reputation as a new sender, than it is
 
 ## 	Warmup types
 
-There are 3 ways to warmup your IP. If your dedicated IP is relatively new, or you've never had one before, you need to warmup your IP manually. If you are adding new dedicated IPs to existing warm IPs, you can automatically warmup your IP with the UI or the API. When your IP is being warmed up, this is your hourly sending limit:
+There are 2 ways to warmup your IP. If your dedicated IP is relatively new, or you've never had one before, you need to warmup your IP manually. If you are adding new dedicated IPs to existing warm IPs, you can automatically warmup your IP with the UI or the API. When your IP is being warmed up, this is your hourly sending limit:
 
  ### 	Manually warmup your IP
 

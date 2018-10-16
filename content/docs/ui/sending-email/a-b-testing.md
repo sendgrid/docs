@@ -25,7 +25,7 @@ When recipients interact with the A/B test emails, you can compare the engagemen
 4. Once you have located the A/B Testing settings, toggle the *Activate A/B Testing* switch to **ON**.
 
 ##  Choose the Type of A/B Test To Run
-When you are A/B testing your email campaigns, you want to optimize for a specific metric. Determine whether you want to optimize your Open Rates, by testing the Subject Line; or your Click Rates, by testing the Email Content.
+When you are A/B testing your email campaigns, you want to optimize for a specific metric. Determine whether you want to optimize your *Open Rates*, by testing the *Subject Line*; or your *Click Rates*, by testing the *Email Content*.
 
 <call-out>
 
@@ -67,7 +67,7 @@ To know the direct cause for the best performing variation, only make one change
 </call-out>
 
 ##  Select the A/B Test Campaign Sample Size
-Choose percentage of your contact list that will participate in the A/B test.
+Choose a percentage of your contact list that will participate in the A/B test.
 
 Each variation of the email will be sent to the same number of contacts, within the participating subset of your list.
 
@@ -98,7 +98,7 @@ While you can test your email variations for up to 24 hours, emails will only be
 
 You should be mindful of your test duration, with respect to the timeliness of your campaign content.
 
-For example, if you have a one-day sale that happens the day of your campaign, you should set the A/B test duration to less than 24 hours so that your remaining contacts still have time to get the final email campaign, and participate in your oney-day sale.
+For example, if you have a one-day sale that happens the day of your campaign, you should set the A/B test duration to less than 24 hours so that your remaining contacts still have time to get the final email campaign, and participate in your one-day sale.
 
 </call-out>
 
@@ -107,7 +107,7 @@ When a variation wins, based on your criteria and duration, you will be notified
 
 - **Automatically Send the Winning Version**
 
-	If you chose to determine the A/B test winning crietria based on Open Rate or Click Rate, SendGrid will automatically send the winning email variation to the rest of your list.
+	If you chose to determine the A/B test winning criteria based on Open Rate or Click Rate, SendGrid will automatically send the winning email variation to the rest of your list.
 
   You can also manually choose a winner at any time after you start the test.
 
@@ -115,7 +115,7 @@ When a variation wins, based on your criteria and duration, you will be notified
 
 - **Manually Picking the Winning Version**
 
-	If you chose to Manually determine the A/B test winning criteria (meaning SendGrid is not automatically choosing based on Open Rate or Click Rate), you will be notified by email when the test duration time has passed. At that time, you need to choose your winner manually.
+	If you chose to manually determine the A/B test winning criteria (meaning SendGrid is not automatically choosing based on Open Rate or Click Rate), you will be notified by email when the test duration time has passed. At that time, you need to choose your winner manually.
 
   ![]({{root_url}}/images/ab_testing_3.png "Choose a winner badge")
 
@@ -125,7 +125,7 @@ When a variation wins, based on your criteria and duration, you will be notified
 
 **A/B Testing Tip - Manually Picking the Winning Variation**
 
-If you chose to Manually determine the A/B test winning criteria, you need to remember to manually choose the winning email variation. The remainder of your contacts will not be sent the email campaign until you choose a winning variation.
+If you chose to manually determine the A/B test winning criteria, you need to remember to manually choose the winning email variation. The remainder of your contacts will not be sent the email campaign until you choose a winning variation.
 
 </call-out>
 

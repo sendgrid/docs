@@ -46,7 +46,7 @@ Additionally, during this phase of the beta, some Marketing Campaigns features w
 * Link click tracking
 * API compatibility
 
-We’ll be working iteratively to close these feature gaps as quickly as possible. For more information on future releases, please see our [Coming Soon] page.
+We’ll be working iteratively to close these feature gaps as quickly as possible.
 
 ## Getting Started
 

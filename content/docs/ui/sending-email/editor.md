@@ -31,12 +31,12 @@ The [Design Editor](#the-design-editor) features a number of convenient ways to 
 
 ## The Code Editor
 
-SendGrid’s marketer-friendly code editor features a powerful, split screen editing experience – perfect for building campaigns with your own custom HTML. It offers a number of helpful features, often found in native editors.
+SendGrid’s marketer-friendly code editor features a powerful, split-screen editing experience – perfect for building campaigns with your own custom HTML. It offers a number of helpful features, often found in native editors.
 
 ### Code Editor Features
 
 **Live Template Preview** -
-See how your email looks in real-time, as you write and edit code. No more tabbing between windows, refreshing or re-rendering. Marketing Campaigns’ split-screen editing experience displays your code on the left, and a pixel-perfect preview on the right.
+See how your email looks in real-time, as you write and edit code. No more tabbing between windows, refreshing, or re-rendering. Marketing Campaigns’ split-screen editing experience displays your code on the left, and a pixel-perfect preview on the right.
 
 **Code & Tag Completion** -
 As you type, the editor automatically makes common suggestions. You can accept them by tapping tab or return –– or, simply continue typing to ignore. Additionally, as you open a tag of any kind, the code editor automatically places a closing tag.
@@ -48,7 +48,7 @@ If the code editor finds something that seems odd or inconsistent with best prac
 Easily pinpoint the HTML element you wish to edit. Click anywhere on the right-side preview of your email, and the code on the left automatically jumps to the corresponding line.
 
 **Syntax Highlighting** -
-As you edit, parts of your code highlights in various colors according to the type of syntax. This added dimension provides clarity and efficiency as you search for, locate and edit code elements.
+As you edit, parts of your code highlights in various colors according to the type of syntax. This added dimension provides clarity and efficiency as you search for, locate, and edit code elements.
 
 
 ### Getting Started With The Code Editor
@@ -73,9 +73,9 @@ When you open one of your existing campaigns or templates in the new editor, Sen
 
 </call-out>
 
-If you have already built the HTML that you want to use in another application, copy and paste that code directly into the content area of the code editor. You can also write the HTML for your campaign or template directly in the code editor.
+If you have already built the HTML that you want to use in another application, copy and paste that code directly into the content area of the Code Editor. You can also write the HTML for your campaign or template directly in the Code Editor.
 
-The split-screen view of the Code Editor allows you to see a real-time preview of your campaign. You can toggle between a preview of how your campaign or template appears on a recipient’s desktop and mobile phone by clicking either the desktop or mobile phone icons above the content area. You can also view a plain-text version of your campaign or template by clicking the **T** icon. When in this preview mode, you can edit the plain text content of your campaign or template by clicking the **Edit Plain Text** button.
+The split-screen view of the Code Editor allows you to see a real-time preview of your campaign. You can toggle between a preview of how your campaign or template appears on a recipient’s desktop and mobile phone by clicking either the desktop or mobile phone icons above the content area. You can also view a plain text version of your campaign or template by clicking the **T** icon. When in this preview mode, you can edit the plain text content of your campaign or template by clicking the **Edit Plain Text** button.
 
 <call-out type="warning">
 
@@ -126,40 +126,45 @@ Substitution tags allow you to easily generate dynamic content for each recipien
    <td>Personalization</td>
  </tr>
  <tr>
-   <td><code class="language-text">[sender_name]</code>* </td>
+   <td><code class="language-text">[Sender_Name]</code>* </td>
    <td>The name of the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code class="language-text">[sender_city]</code>* </td>
+   <td><code class="language-text">[Sender_Address]</code>* </td>
+   <td>The address on record for the sender selected when sending your campaign</td>
+   <td>Sender Identity</td>
+ </tr>
+ <tr>
+   <td><code class="language-text">[Sender_City]</code>* </td>
    <td>The city on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code class="language-text">[sender_state]</code>* </td>
+   <td><code class="language-text">[Sender_State]</code>* </td>
    <td>The state on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code class="language-text">[sender_zip]</code>* </td>
+   <td><code class="language-text">[Sender_Zip]</code>* </td>
    <td>The zip code on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
    <td><code class="language-text"><%asm_group_unsubscribe_<br>raw_url%></code>* </td>
-   <td>This tag is replaced with a link allowing your recipients opt out of any emails you send using the chosen Unsubscribe Group. This tag should only be used when editing Transactional Templates.</td>
+   <td>This tag is replaced with a link allowing your recipients to opt out of any emails you send using the chosen Unsubscribe Group. This tag should only be used when editing Transactional Templates.</td>
+   <td>Unsubscribe</td>
+ </tr>
+ <tr>
+   <td><code class="language-text"><%asm_global_unsubscribe_<br>raw_url%></code>
+   * </td>
+   <td>This tag is replaced with a link allowing your recipients to opt out of all email communication. This tag should only be used when editing Transactional Templates.</td>
    <td>Unsubscribe</td>
  </tr>
  <tr>
    <td><code class="language-text"><%asm_preferences_<br>raw_url%></code>
    * </td>
    <td>This tag is replaced with a link allowing your recipients to opt out of any email unsubscribe groups you offer. This tag should only be used when editing Transactional Templates.</td>
-   <td>Unsubscribe</td>
- </tr>
-   <tr>
-   <td><code class="language-text"><%asm_global_unsubscribe<br>_raw_url%></code>
-   * </td>
-   <td>This tag is replaced with a link allowing your recipients to opt out of all email communication. This tag should only be used when editing Transactional Templates.</td>
    <td>Unsubscribe</td>
  </tr>
  <tr>
@@ -204,7 +209,7 @@ SendGrid’s flexible design editor allows you to build your templates and campa
 
 ### Getting Started With the Design Editor
 
-1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**.
+1. From the left-hand navigation, select **Marketing** and then click **Campaigns**.
 1. Click **Create Campaign**.
 <br>To create a campaign using an existing campaign, find the campaign you want to use and click the action menu next to the campaign. Then, select **Edit** or **Duplicate**.
 
@@ -212,7 +217,7 @@ SendGrid’s flexible design editor allows you to build your templates and campa
 
 3. Select the template that you want to use for your campaign.
 <br>You can select a Blank Template, a custom template that you have already created, or one of SendGrid’s pre-built templates. For more information, see [Working With Marketing Templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/)
-4. Select **Design Editor**, and then click **Continue**.
+4. Select **Design Editor** and then click **Continue**.
 <br>The Design Editor opens.
 
 ### Using Drag & Drop Modules
@@ -221,11 +226,11 @@ Drag & drop editing helps you swiftly build your campaign, using pre-built conte
 
 *To add a drag & drop module:*
 
-1. Navigate to the **Build** tab, and then click **Add Modules**.
+1. Navigate to the **Build** tab and then click **Add Modules**.
 
   ![]({{root_url}}/img/design_editor_drag_drop.png "Drag and drop editor")
 
-2. Find the module tile you want to add to your campaign and drag and drop it into your content area.
+2. Find the module tile you want to add to your campaign. Then, drag and drop it into your content area.
 3. Edit the module settings and add your custom content to build your campaign.
 
 ### Drag & Drop Module Descriptions and Styles
@@ -344,7 +349,7 @@ The code module is a unique drag & drop module that allows you to insert any cus
 
 <call-out type="warning">
 
-The Design Editor does not modify or validate any HTML inserted via a code module. Please be careful when using custom HTML, and always preview your campaign before sending it.
+The Design Editor does not modify or validate any HTML inserted via a code module. Please be careful when using custom HTML.  Always preview your campaign before sending it.
 
 </call-out>
 
@@ -352,14 +357,14 @@ The Design Editor does not modify or validate any HTML inserted via a code modul
 
 *To upload an image:*
 
-1. Navigate to the **Build** tab, and then click **Add Modules**.
-1. Select the Images module, and drag and drop it into your content area.
+1. Navigate to the **Build** tab and then click **Add Modules**.
+1. Select the Images module and drag and drop it into your content area.
 <br>This opens a window where you can upload images to your image library.
 1. Drag and drop the image you want to use from your files or select **Choose images** to upload.
 
 *To insert an image:*
 
-1. Navigate to the **Build** tab, and then click **Add Modules**.
+1. Navigate to the **Build** tab and then click **Add Modules**.
 1. Drag and drop the **Images** module into your content area.
    <br>A window opens where you can select images from the image library.
 1. Select the image you want to add to your campaign.
@@ -497,7 +502,7 @@ While some inbox providers do not support web fonts, the following popular clien
 * Default Android Mail app (not the Android Gmail app)
 * iOS Mail
 
-This list may change, and we cannot guarantee 100% support from any of these clients.
+This list may change and we cannot guarantee 100% support from any of these clients.
 
 *To add a custom font using the HTML head:*
 
@@ -536,7 +541,7 @@ If you are writing your own custom HTML that you plan on importing into the desi
 
   ![]({{root_url}}/img/import_custom_html.png "Import custom HTML")
 
-5. Paste or enter the HTML you want to use, and then click **Import**.
+5. Paste or enter the HTML you want to use and then click **Import**.
 
 <call-out type="warning">
 
@@ -730,7 +735,7 @@ SendGrid hosts the images included in the pre-built templates and any images you
 *To open exported HTML in the code editor:*
 
 1. From the left-hand navigation, select **Marketing** and then click **Campaigns**.
-1. Click **New Campaign**, and then select **Blank Template**.
+1. Click **New Campaign** and then select **Blank Template**.
 1. Select **Code Editor**.
 1. Paste the raw SendGrid template HTML into the code editor.
 
@@ -740,7 +745,7 @@ Assigning categories to a campaign allows you to track emails based on your own 
 
 *To add a category:*
 
-1. Navigate to the *Settings* tab, and click **Campaign Settings** to expand the menu.
+1. Navigate to the *Settings* tab and click **Campaign Settings** to expand the menu.
 1. Find the *Categories* field.
 1. Enter the name of a new category or select a previously used category from the drop-down menu.
 
@@ -750,4 +755,3 @@ Assigning categories to a campaign allows you to track emails based on your own 
 * [A/B Testing]({{root_url}}/ui/sending-email/a-b-testing/)
 * [Campaign Statistics]({{root_url}}/ui/analytics-and-reporting/marketing-campaigns-stats/)
 * [Marketing Templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/)
-
