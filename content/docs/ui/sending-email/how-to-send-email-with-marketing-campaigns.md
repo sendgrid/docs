@@ -27,8 +27,8 @@ Before sending your first campaign, you need to do the following:
 1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**.
 
 1. Click **Create Campaign**.
-<br> To create a campaign from an existing one, find the version you want to use and hover over the **action menu** to the far right of the campaign and then select **Duplicate**.<br>
-<br> If you have an existing draft, find the version you would like to continue working on and hover over **action menu** to the far right of the campaign then select **Edit**.
+<br> To create a campaign from an existing one, find the version you want to use and hover over the **action menu** to the far right of the campaign. Select **Duplicate**.<br>
+<br> If you have an existing draft, find the version you would like to continue working on, hover over the **action menu** to the far right of the campaign, and then select **Edit**.
 ![]({{root_url}}/images/campaigns_dashboard_categories_search.png)
 
 1. Select the template that you want to use for your campaign.
@@ -38,9 +38,9 @@ Before sending your first campaign, you need to do the following:
 <br> You can choose between the **Design Editor** and the **Code Editor**.
 ![]({{root_url}}/images/choose_editor.png)
 
-The Code Editor provides users who are importing, editing, or crafting custom HTML a robust environment to upload images, write HTML, and configure their campaign without interference from the HTML generating WYSIWYG tools.
+The Design Editor offers users powerful drag & drop WYSIWYG editing tools, making it possible for anyone to build beautiful emails, regardless of HTML knowledge. For those familiar with HTML who are looking to leverage the Design Editor, you can modify the HTML of individual content modules.
 
-The Design Editor offers users powerful drag & drop WYSIWYG editing tools making it possible for anyone to build beautiful emails, regardless of HTML knowledge. For those familiar with HTML looking to leverage the design editor you can modify the HTML of individual content modules.
+The Code Editor provides users who are importing, editing, or crafting custom HTML a robust environment to upload images, write HTML, and configure their campaign without interference from the HTML-generating WYSIWYG tools.
 
  ## 	Designing Your Campaign
 
@@ -48,13 +48,13 @@ Depending on your editor selection, you use different methods to design your cam
 
 1. Edit your campaign by filling in the fields in the **Settings** Tab.
 
-1. Add your custom content. make sure to include the [[unsubscribe]]({{root_url}}/ui/sending-email/create-and-manage-unsubscribe-groups/) tag in order to test and send your Campaign.
+1. Add your custom content. Make sure to include the [[unsubscribe]]({{root_url}}/ui/sending-email/create-and-manage-unsubscribe-groups/) tag in order to test and send your campaign.
 
 <br> For more information about customizing your campaign, see [Using the Design Editor]({{root_url}}/ui/sending-email/editor/#the-design-editor) or [Using the Code Editor]({{root_url}}/ui/sending-email/editor/#the-code-editor).
 
 1. Once you’ve finished editing your campaign, you can see what it looks like by clicking **Preview**.
 
-1. To send a test email, enter the email addresses you want to send your campaign to and then click **Send Test**.
+1. To send a test email, enter the email address(es) you want to send your campaign to, and then click **Send Test**.
 
 1. If you would like to test the effectiveness of your email subject or content, you can set up an A/B test. For more information, see [A/B Testing]({{root_url}}/ui/sending-email/a-b-testing/).
 
@@ -78,7 +78,7 @@ Message size limit:  The total message size should not exceed 20MB. This include
 
 <call-out>
 
-If you have the flexibility, it's better to schedule mail for off-peak times. Most emails are scheduled and sent at the top of the hour or half hour. Scheduling email to avoid those times (for example, scheduling at 10:53) can result in lower deferral rates because it won't be going through our servers at the same times as everyone else's mail.
+If you have the flexibility, it's better to schedule mail at off-peak times. Most emails are scheduled and sent at the top of the hour or half hour. Scheduling email to avoid those times (for example, scheduling at 10:53) can result in lower deferral rates because it won't be going through our servers at the same times as everyone else's mail.
 
 </call-out>
 
@@ -90,9 +90,9 @@ Be sure your account is set to the correct time zone in order to ensure that you
 
 *To change your time zone:*
 
-1. From the left-hand navigation select **Settings**.
-1. Click **Account Details** or go to https://app.sendgrid.com/settings/account.
-1. Scroll to the bottom of the page, find **TIME ZONE**, and ensure your desired timezone is correct.
+1. From the left-hand navigation, select **Settings**.
+1. Click **Account Details**, or go to https://app.sendgrid.com/settings/account.
+1. Scroll to the bottom of the page, find **TIME ZONE**, and ensure your desired time zone is correct.
 
  ##	Additional Resources
 
