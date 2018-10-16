@@ -19,5 +19,5 @@ If you are on a Pro 100k or above plan you will have your very own dedicated IP 
 
 ## 	More Information
 
-For more information, please download our [Email Infrastructure Guide](http://resources.sendgrid.com/email-infrastructure-guide/?mc=SendGrid%20Documentation)
+For more information, please read our [Email Infrastructure Guide](http://go.sendgrid.com/SendGrid-Infrastructure-Guide.html)
 
