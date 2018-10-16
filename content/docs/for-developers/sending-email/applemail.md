@@ -51,4 +51,4 @@ Mail will sometimes attach images in a way that is incompatible with other email
 1. Press return.
 1. Restart the Mail app.
 
-If you wish to restore the normal behavior of Mail, repeat the steps above while using the following command: ```defaults write com.apple.mail DisableInlineAttachmentViewing -bool yes```.
+If you wish to restore the normal behavior of Mail, repeat the steps above while using the following command: ```defaults write com.apple.mail DisableInlineAttachmentViewing -bool no```.
