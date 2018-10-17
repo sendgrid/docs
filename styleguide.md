@@ -233,6 +233,12 @@ Not every single page or step needs an accompanying screenshot. When in doubt, f
 
 Please use PNG, GIF, or JPG files. Give the screenshots unique, meaningful names, obeying a specific format, such as general_settings_privacy. Avoid spaces, uppercase letters, and excessively long names.
 
+### Location:
+
+Images should be located in the following directory: 
+
+docs/static/img/
+
 ### Size and resolution:
 
 When possible, try to take screenshots at a size that is twice what it will need to be on the page.
