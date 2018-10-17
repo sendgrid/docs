@@ -4,7 +4,7 @@ seo:
   description: Learn how to build email content, add recipients and schedule your send.
   keywords: SMTP, send email, integrate, building, filters, scheduling, substitution, suppression groups, unique arguments, recipients, X-SMTPAPI
 title: Building an SMTP Email
-group: smtp
+group: x-smtpapi
 weight: 949
 layout: page
 navigation:
