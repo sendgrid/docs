@@ -42,7 +42,7 @@ If you would like us to attempt to deliver messages to a specific address again,
 
 <call-out>
 
-SendGrid cannot re-send messages that have been Dropped or appear on suppression lists, but will attempt future deliveries once the address has been removed from the list and is sent to again.
+SendGrid cannot re-send messages that have been dropped or appear on suppression lists, but will attempt future deliveries once the address has been removed from the list and is sent to again.
 
 </call-out>
 
@@ -52,5 +52,5 @@ Your lists will be cleaner and even if we do drop the messages intended to addre
 
  ### 	Cleaning your lists
 
-We recommend Using the [Web API]({{root_url}}/api-reference/) to export any of the suppression lists. Once you export that data, you can use it to clean your distribution lists.
+We recommend using the [Web API]({{root_url}}/api-reference/) to export any of the suppression lists. Once you export that data, you can use it to clean your distribution lists.
 
