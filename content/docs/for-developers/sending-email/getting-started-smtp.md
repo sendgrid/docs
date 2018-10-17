@@ -1,9 +1,9 @@
 ---
 seo:
-  title: How to Send an SMTP Email
+  title: How to Send an X-SMTP Email
   description: Use Telnet to send your first SMTP email. SendGrid’s SMTP API allows developers to specify custom handling instructions for email using an X-SMTPAPI header inserted into the message.
   keywords: telnet, ports, connection, SMTP, send email, getting started
-title: How to Send an SMTP Email
+title: How to Send an X-SMTP Email
 group: smtp
 weight: 960
 layout: page
@@ -26,7 +26,7 @@ The X-SMTPAPI headers that you add are stripped from the final email because the
 
 For a deeper dive into what SMTP is, the benefits of sending an email with SMTP, and how SendGrid can help, see the [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/) on our blog.
 
-## Sending a test SMTP email with Telnet
+## Sending a test X-SMTP email with Telnet
 
 
 ### Before you begin
@@ -41,7 +41,7 @@ Telnet does not register backspaces correctly - so you have to type your command
 
 </call-out>
 
-*To send SMTP email using Telnet:*
+*To send X-SMTP email using Telnet:*
 
 1. Start your session by typing in the terminal: `TELNET smtp.sendgrid.net 25`.
     <br>SendGrid accepts unencrypted and TLS connections on ports **25**, **587**, & **2525**. You can also connect via SSL on port **465**. Many hosting providers and ISPs block port 25 as a default practice. If this is the case, contact your host/ISP to find out which ports are open for outgoing SMTP relay. We recommend port 587 to avoid any rate limiting that your server host may apply.
@@ -76,6 +76,6 @@ Message size limit:  The total message size should not exceed 20MB. This include
 
 - [Getting Started with the UI]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/)
 - [Getting Started with the API]({{root_url}}/for-developers/sending-email/api-getting-started/)
-- [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
+- [X-SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
 - [Integrating with the SMTP API]({{root_url}}/for-developers/sending-email/integrating-with-the-smtp-api/)
-- [Building an SMTP Email]({{root_url}}/for-developers/sending-email/building-an-smtp-email/)
+- [Building an X-SMTP Email]({{root_url}}/for-developers/sending-email/building-an-smtp-email/)
