@@ -16,7 +16,7 @@ Creating a new subuser through SendGrid's API is a multi-step process. This guid
 
 ## Establish the New Subuser (required)
 
-With the [subuser creation API call]({{root_url}}/API_Reference/Customer_Subuser_API/subusers.html) you will be able to establish the new subuser's account and profile settings. This call will create the new subuser account, however it does not apply the sending IP for the account, nor does it establish a domain authentication entry or enable website/SMTP access for the subuser.
+With the [subuser creation API call]({{root_url}}/API_Reference/Customer_Subuser_API/subusers.html) you will be able to establish the new subuser's account and profile settings. This call will create the new subuser account, however, it does not apply the sending IP for the account, nor does it establish a domain authentication entry or enable website/SMTP access for the subuser.
 
 #### Call Example
 
@@ -102,7 +102,7 @@ https://api.sendgrid.com/apiv2/customer.whitelabel.json?api_user=ryan.burrer@sen
 
 ## Authenticating the Subuser to Have Website/SMTP Access (required)
 
-The final step in creating your new subuser requires you to simply [activate the subuser]({{root_url}}/API_Reference/Customer_Subuser_API/authenticate_a_subuser.html) account so that they have website and SMTP access.
+The final step in creating your new subuser requires you to simply [activate the subuser]({{root_url}}/API_Reference/Customer_Subuser_API/authenticate_a_subuser.html) account so that they have a website and SMTP access.
 
 #### Call Example
 ```
