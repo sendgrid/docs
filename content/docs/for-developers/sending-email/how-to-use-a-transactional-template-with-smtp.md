@@ -4,7 +4,7 @@ seo:
   description: Learn how to send a legacy transactional template with the SMTP API.
   keywords: SMTP, send email, integrate, building, filters, scheduling, substitution, suppression groups, unique arguments, recipients, legacy template, transactional template
 title: Sending a Legacy Transactional Template Email over SMTP
-group: smtp
+group: x-smtpapi
 weight: 949
 layout: page
 navigation:
