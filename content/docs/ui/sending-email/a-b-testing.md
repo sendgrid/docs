@@ -130,7 +130,6 @@ If you chose to manually determine the A/B test winning criteria, you need to re
 </call-out>
 
 
----------------
 
  ## 	Additional Resources
 
