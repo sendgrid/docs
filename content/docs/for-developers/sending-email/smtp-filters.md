@@ -2,7 +2,7 @@
 layout: page
 weight: 0
 title: SMTP Filters
-group: smtp
+group: x-smtpapi
 navigation:
   show: true
 ---

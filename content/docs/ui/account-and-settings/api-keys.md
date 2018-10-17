@@ -26,7 +26,7 @@ When viewing the API keys page, you will see a list of your current API keys alo
 
 **Name** - The name you defined for your API key.
 
-**API Key ID** - The way you would reference your API key for management through the API. (e.g. editing or deleting a key)
+**API Key ID** - The way you would reference your API key for management through the API (e.g. editing or deleting a key).
 
 **Action** - Actions you can perform on your API keys, such as editing or deleting the key.
 

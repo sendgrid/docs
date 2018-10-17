@@ -4,7 +4,7 @@ seo:
   description: Section tags allow you to substitute in content in an SMTP message.
   keywords: SMTP, send email, section tags
 title: Section Tags
-group: smtp
+group: x-smtpapi
 weight: 10
 layout: page
 navigation:
