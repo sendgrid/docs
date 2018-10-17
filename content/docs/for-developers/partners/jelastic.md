@@ -11,7 +11,10 @@ navigation:
 
 SendGrid is the market leader in email deliverability. Our powerful cloud-based solution sends transactional and marketing email for hundreds of thousands of customers, allowing them to focus on their business, instead of their email infrastructure.
 
-For more information on SendGrid and Jelastic click [here](https://sendgrid.com/partners/jelastic/).
+### SendGrid Pricing Plans
+Plans start at $9.95/month. Please see our [pricing page](https://sendgrid.com/partners/jelastic/) for more information. 
+
+For a free trial, [click here](https://sendgrid.com/partners/jelastic/)!
 
 
 ### Application Examples
