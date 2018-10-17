@@ -53,7 +53,7 @@ NO: For more information, click [here].
 <a name="head matter"></a>
 ### Head matter
 
-The new head matter looks like this with the new Knowledge Center:
+The new head matter looks like this with the new Knowledge Centre:
 ```
 ---
 layout: page
@@ -96,7 +96,7 @@ src="https://github.com/sendgrid/docs/blob/develop/static/img/docs-architecture-
 - Tracking: tracking
 
 **Account and Settings**
-- Account Managment: account-management
+- Account Management: account-management
 - Inbound Parse: inbound-parse
 - Sender Authentication: sender-authentication
 - IP Management: ip-management
@@ -138,7 +138,7 @@ src="https://github.com/sendgrid/docs/blob/develop/static/img/docs-architecture-
 
 "Additional resources" is an h2 section that contains 3 to 5 bullet points with links out to other closely related pages. These pages could be SendGrid blogs or docs pages with information about next steps, use cases, or other things a user should consider when they are completing the task on the page. Every page should have an additional resources page, so if it doesn't, feel free to add one!
 
-Here is an example "Additional resources" section: https://sendgrid.com/docs/ui/sending-email/editor/#additional-resources
+Here is an example ["Additional resources"](https://sendgrid.com/docs/ui/sending-email/editor/#additional-resources) section
 
 Here is example formatting:
 
