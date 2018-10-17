@@ -28,7 +28,6 @@ from django.core.mail import send_mail
 send_mail('Subject here', 'Here is the message.', 'from@example.com', ['to@example.com'], fail_silently=False)
 ```
 
- 
-<call-out>
-You may also send emails with Django by using the [django-sendgrid-v5](https://github.com/sklarsa/django-sendgrid-v5) library, which utilizes the [Web API]({{%20root_url%20}}/API_Reference/Web_API/index.html) instead of SMTP as the transport mechanism. 
-</call-out>
+
+You may also send emails with Django by using the [django-sendgrid-v5](https://github.com/sklarsa/django-sendgrid-v5)
+library, which utilizes the [Web API]({{root_url}}/API_Reference/Web_API/index.html) instead of SMTP as the transport mechanism. 
