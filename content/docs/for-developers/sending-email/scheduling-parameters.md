@@ -4,7 +4,7 @@ seo:
   description: Scheduling an email with SMTP
   keywords: SMTP, send email, scheduling
 title: Scheduling Parameters
-group: smtp
+group: x-smtpapi
 weight: 10
 layout: page
 navigation:
