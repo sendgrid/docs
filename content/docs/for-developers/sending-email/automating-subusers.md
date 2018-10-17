@@ -357,6 +357,7 @@ Response:
 ```
 
 
+
 6. **Associate with a Subuser**
 Once Validated, you can associate to any Subuser accounts.
 
@@ -367,8 +368,10 @@ curl -X POST -H "Authorization: Basic XXXXXXXXXXXXXXX" -H "Content-Type: applica
 ````
 
 
+
 7. **Link Branding**
 Follow the same process with Link branding:
+
 
 ```bash
 -> GET link ID (ex. 42371)
