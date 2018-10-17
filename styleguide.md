@@ -115,7 +115,8 @@ src="https://github.com/sendgrid/docs/blob/develop/static/img/docs-architecture-
 - Mail Servers: mail-servers
 - SendGrid Partners: partners
 - SendGrid Plugins: plugins
-- SMTP API: smtp
+- Send SMTP: smtp
+- X-SMTPAPI Header: x-smtpapi
 - Tracking: tracking
 - Open Source Apps: open-source
 
