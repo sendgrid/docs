@@ -56,7 +56,7 @@ After uploading contacts, you can define segments for individual contacts or lis
 
 </call-out>
 
-Once we have completed processing your new contacts, you will receive an email to any addresses specified under [Notifications](https://sendgrid.com/marketing_campaigns/ui/notifications). If there is no email address specified for notifications, the report will go to the address associated with the account by default. To add an additional notification email address, click **Add Notification Email Address**
+Once we have completed processing your new contacts, you will receive an email to any addresses specified under [Notifications](https://sendgrid.com/marketing_campaigns/ui/notifications). If there is no email address specified for notifications, the report will go to the address associated with the account by default. To add an additional notification email address, click **Add Notification Email Address**.
 
 ![]({{root_url}}/img/add_notification_email_contacts.png "Add Notification Email Address")
 
