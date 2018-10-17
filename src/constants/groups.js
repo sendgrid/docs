@@ -117,7 +117,11 @@ const GROUPS = {
     order: null,
   },
   'smtp': {
-    name: 'SMTP API',
+    name: 'Send SMTP',
+    order: null,
+  },
+  'x-smtpapi': {
+    name: 'X-SMTPAPI Header',
     order: null,
   },
   'api-v2': {
