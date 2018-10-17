@@ -35,8 +35,8 @@ curl comes standard on Mac operating systems.
 
 ```bash
 curl -X POST -H "Authorization: Basic XXXXXXXXXXXXXX" -H "Content-Type: application/json" -d '{
-  "username": “YOUR NEW SUBUSER USERNAME",
-  "email": “CONTACT EMAIL",
+  "username": “examplecurltesting",
+  "email": "example@example.com",
   "password": “PASSWORD",
   "ips": [
   "167.89.38.39",
@@ -48,7 +48,7 @@ The successful Response looks like this:
 
 ```bash
 => 2xx
-{"username”:”YOUR NEW SUBUSER NAME","user_id":1868534,"email”:”YOUR CONTACT EMAIL","signup_session_token":"","authorization_token":"","credit_allocation":{"type":"unlimited"}}
+{"username”:”examplecurltesting","user_id":1868534,"email”:”example@example.com","signup_session_token":"","authorization_token":"","credit_allocation":{"type":"unlimited"}}
 ```
 
 2. **GET Subusers** (optional step to confirm POST):
@@ -56,9 +56,11 @@ The successful Response looks like this:
 ```bash
 curl -X GET -H "Authorization: Basic XXXXXXXXXXXXXX" -H "Content-Type: application/json" 'https://api.sendgrid.com/v3/subusers'
 ```
+
 Response:
+
 ```bash
-[{"disabled":false,"email":"example@gmail.com","id":1762958,"username":"exampletestingv3subuserapi"},{"disabled":false,"email":"example@sendgrid.com","id":1766771,"username":"examplesubuser-UI"},{"disabled":false,"email":"example@sendgrid.com","id":1803837,"username":"exampleisasubuser"},{"disabled":false,"email":"example@gmail.com","id":1868534,"username":"examplecurltesting"}]
+[{"disabled":false,"email":"example@example.com","id":1762958,"username":"exampletestingv3subuserapi"},{"disabled":false,"email":"example@testsite.com","id":1766771,"username":"examplesubuser-UI"},{"disabled":false,"email":"example@testsite.com","id":1803837,"username":"exampleisasubuser"},{"disabled":false,"email":"example@example.com","id":1868534,"username":"examplecurltesting"}]
 ```
 
 3. **Create API Keys** (optional, depends on integration style): If the application would rather run on API keys than a password, then follow this step:
@@ -66,11 +68,12 @@ Response:
 ```bash
 curl -X POST -H "Authorization: Basic XXXXXXXXXXXXXXXX" -H "Content-Type: application/json" -d '{"name": “API KEY NAME"}' 'https://api.sendgrid.com/v3/api_keys'
 ```
+
 or, you can create the key for your Subuser:
 
 ```bash
 curl -X POST -H "Authorization: Bearer PARENT_APIKEY_HERE" 
-  -H "On-Behalf-Of: SUBUSER_NAME" \
+  -H "On-Behalf-Of: examplecurltesting" \
   -H "Content-Type: application/json" -d '{"name": “API KEY NAME"}' \
   'https://api.sendgrid.com/v3/api_keys'
   ```
@@ -87,7 +90,7 @@ Once this has been done, the Subuser has been created. From this point on, we’
 ### Enable/Edit Applications
 As of right now this needs to be done directly through the account in question.
 
-1. **Click Tracking**
+**Click Tracking**
 
 ```bash
 curl -X PATCH -H "Authorization: Basic XXXXXXXXXXXXXX" -H "Content-Type: application/json" -d '{"enabled": true,"enable_text" : true}' 'https://api.sendgrid.com/v3/tracking_settings/click'
@@ -99,7 +102,8 @@ Response:
 => 200 OK
 {"enable_text":true,"enabled":true}
 ```
-2. **Open Tracking**
+
+**Open Tracking**
 
 ```bash
 curl -X PATCH -H "Authorization: Basic XXXXXXXXXXXXXX" -H "Content-Type: application/json" -d '{"enabled": true}' 'https://api.sendgrid.com/v3/tracking_settings/open'
@@ -112,7 +116,7 @@ Response:
 {"enabled":true}
 ```
 
-3. **Webhook** - Event Notification App
+**Event Webhook**
 
 ```bash
 curl -X PATCH -H "Authorization: Basic XXXXXXXXXXXXXXX" -H "Content-Type: application/json" -d '{"enabled": true,"url":"https://api.keen.io/3.0/projects/526a8a5f05cd660472000012/partners/sendgrid?api_key=081da3fc30ca5b11b1f8b133de7064817b57c86d3261f140dc36243eb6829a100d4c5e38db8dd289194d4e02159bbf7ebad74a1fba1fce7a421a00c7a2f7d0f8ba5ef6ea3cece6345904d79395c35cdeaed221c3a208c897e79dd95da399a1d2d1d3e66768af929aa52d621e5bd296a5","group_resubscribe": true,"delivered": true,"group_unsubscribe": true,"bounce": true,"deferred": true,"unsubscribe": true,"processed": true,"open": true,"click": true,"dropped": true}' 'https://api.sendgrid.com/v3/user/webhooks/event/settings'
@@ -139,15 +143,16 @@ Response:
 ```
 
 
-### Whitelabel the Subuser
+### Domain Authentication for the Subuser
 
-Now we are going to Whitelabel the subusers created above. This process involves creating the parent Whitelabel and then associating it with your Subusers:
+Now we are going to setup Domain Authentication for the Subusers created above. This process involves creating the parent Whitelabel and then associating it with your Subusers:
+
 
 1. **Create Domain Authentication**
 
 ```bash
 curl -X POST -H "Authorization: Basic XXXXXXXXXXXXXXXXXXXXX" -H "Content-Type: application/json" -d '{
-  "domain": "staples.com",
+  "domain": "example.com",
   "subdomain": "subdomain",
   "ips": [
   "167.89.38.39",
@@ -163,14 +168,14 @@ Response:
 ```bash
 => 2xx
 
-{"id":50784,"user_id":624781,"subdomain":"subdomain","domain":"staples.com","username":"ryan.burrer","ips":["167.89.38.39","198.37.152.144"],"custom_spf":false,"default":true,"legacy":false,"automatic_security":true,"valid":false,
-"dns":{"mail_cname":{"valid":false,"type":"cname","host":"subdomain.staples.com","data":"u624781.wl.sendgrid.net"},"dkim1":{"valid":false,"type":"cname","host":"s1._domainkey.staples.com","data":"s1.domainkey.u624781.wl.sendgrid.net"},"dkim2":{"valid":false,"type":"cname","host":"s2._domainkey.staples.com","data":"s2.domainkey.u624781.wl.sendgrid.net"},"spf":{"valid":false,"type":"txt","host":"staples.com","data":"v=spf1 include:u624781.wl.sendgrid.net -all"}}}
+{"id":50784,"user_id":624781,"subdomain":"subdomain","domain":"example.com","username":"examplecurltesting","ips":["167.89.38.39","198.37.152.144"],"custom_spf":false,"default":true,"legacy":false,"automatic_security":true,"valid":false,
+"dns":{"mail_cname":{"valid":false,"type":"cname","host":"subdomain.example.com","data":"u624781.wl.sendgrid.net"},"dkim1":{"valid":false,"type":"cname","host":"s1._domainkey.example.com","data":"s1.domainkey.u624781.wl.sendgrid.net"},"dkim2":{"valid":false,"type":"cname","host":"s2._domainkey.example.com","data":"s2.domainkey.u624781.wl.sendgrid.net"},"spf":{"valid":false,"type":"txt","host":"example.com","data":"v=spf1 include:u624781.wl.sendgrid.net -all"}}}
 {
 "id": 50784,
 "user_id": 624781,
 "subdomain": "subdomain",
-"domain": "staples.com",
-"username": "ryan.burrer",
+"domain": "example.com",
+"username": "examplecurltesting",
 "ips": [
 "167.89.38.39",
 "198.37.152.144"
@@ -184,38 +189,39 @@ Response:
 "mail_cname": {
 "valid": false,
 "type": "cname",
-"host": "subdomain.staples.com",
+"host": "subdomain.example.com",
 "data": "u624781.wl.sendgrid.net"
 },
 "dkim1": {
 "valid": false,
 "type": "cname",
-"host": "s1._domainkey.staples.com",
+"host": "s1._domainkey.example.com",
 "data": "s1.domainkey.u624781.wl.sendgrid.net"
 },
 "dkim2": {
 "valid": false,
 "type": "cname",
-"host": "s2._domainkey.staples.com",
+"host": "s2._domainkey.example.com",
 "data": "s2.domainkey.u624781.wl.sendgrid.net"
 },
 "spf": {
 "valid": false,
 "type": "txt",
-"host": "staples.com",
+"host": "example.com",
 "data": "v=spf1 include:u624781.wl.sendgrid.net -all"
 }
 }
 ```
 
-You will want to look for the domain Whitelabel ID here, as this will be used in the next calls to append this Whitelabel to Subusers. Also, the records needed to validate this domain Whitelabel will be passed back in the response.
+You will want to look for the Domain Authentication ID here (in this example, the ID is ```"id": 50784```), as this will be used in the next calls to append this ID to the Subusers. Also, the records needed to validate this Domain Authentication will be passed back in the response.
 
-2. **Create an IP Whitelabel**
+
+2. **Create Reverse DNS**
 
 ```bash
 curl -X POST -H "Authorization: Basic XXXXXXXXXXXXXXX" -H "Content-Type: application/json” -d '{"ip": "167.89.66.50",
   "subdomain": "email",
-  "domain": "staples.com"}' 'https://api.sendgrid.com/v3/whitelabel/ips'
+  "domain": "example.com"}' 'https://api.sendgrid.com/v3/whitelabel/ips'
  ```
   
   Successful Response: 
@@ -224,14 +230,14 @@ curl -X POST -H "Authorization: Basic XXXXXXXXXXXXXXX" -H "Content-Type: applica
   {
   "id": 11887,
   "ip": "167.89.66.50",
-  "rdns": "o4.email.staples.com",
+  "rdns": "o4.email.example.com",
   "users": [],
   "subdomain": "email",
-  "domain": "staples.com",
+  "domain": "example.com",
   "a_record": {
   "valid": false,
   "type": "a",
-  "host": "o4.email.staples.com",
+  "host": "o4.email.example.com",
   "data": "167.89.66.50"
   },
   "valid": false,
@@ -239,11 +245,12 @@ curl -X POST -H "Authorization: Basic XXXXXXXXXXXXXXX" -H "Content-Type: applica
   }
 ```
 
-3. **Create link Whitelabel**
+
+3. **Create Link Branding**
 
 ```bash
 curl -X POST -H "Authorization: Basic XXXXXXXXXXXXXX" -H "Content-Type: application/json" -d '{
-  "domain": "staples.com",
+  "domain": "example.com",
   "subdomain": "links",
   "default": true
   }' 'https://api.sendgrid.com/v3/whitelabel/links'
@@ -255,9 +262,9 @@ Response:
 {
 "id": 42371,
 "user_id": 624781,
-"domain": "staples.com",
+"domain": "example.com",
 "subdomain": "links",
-"username": "ryan.burrer",
+"username": "examplecurltesting",
 "valid": false,
 "default": true,
 "legacy": false,
@@ -265,13 +272,13 @@ Response:
 "domain_cname": {
 "valid": false,
 "type": "cname",
-"host": "links.staples.com",
+"host": "links.example.com",
 "data": "sendgrid.net"
 },
 "owner_cname": {
 "valid": false,
 "type": "cname",
-"host": "624781.staples.com",
+"host": "624781.example.com",
 "data": "sendgrid.net"
 }
 }
@@ -279,7 +286,8 @@ Response:
 ```
 After creating DNS records then wait for them to propagate and validate records.
 
-4. **GET all domain Whitelabels** - grab the ID to validate and associate to an account.
+
+4. **GET all Domain Authentication IDs** - grab the ID to validate and associate to an account.
 
 ```bash
 curl -X GET -H "Authorization: Basic XXXXXXXXXXXXXXXX" -H "Content-Type: application/json" 'https://api.sendgrid.com/v3/whitelabel/domains'
@@ -293,8 +301,8 @@ Response:
 "id": 50784,
 "user_id": 624781,
 "subdomain": "subdomain",
-"domain": "staples.com",
-"username": "ryan.burrer",
+"domain": "example.com",
+"username": "examplecurltesting",
 "ips": [
 "167.89.38.39",
 "198.37.152.144"
@@ -308,33 +316,34 @@ Response:
 "mail_cname": {
 "valid": false,
 "type": "cname",
-"host": "subdomain.staples.com",
+"host": "subdomain.example.com",
 "data": "u624781.wl.sendgrid.net"
 },
 "dkim1": {
 "valid": false,
 "type": "cname",
-"host": "s1._domainkey.staples.com",
+"host": "s1._domainkey.example.com",
 "data": "s1.domainkey.u624781.wl.sendgrid.net"
 },
 "dkim2": {
 "valid": false,
 "type": "cname",
-"host": "s2._domainkey.staples.com",
+"host": "s2._domainkey.example.com",
 "data": "s2.domainkey.u624781.wl.sendgrid.net"
 },
 "spf": {
 "valid": false,
 "type": "txt",
-"host": "staples.com",
+"host": "example.com",
 "data": "v=spf1 include:u624781.wl.sendgrid.net -all"
 }
 }
 }
 ```
 
-5. **Validate ID of domain Whitelabel**
-Once you have the ID of the domain Whitelabel you can Validate it.
+
+5. **Validate ID of the Domain Authentication**
+Once you have the ID of the Domain Authentication you can Validate it.
 
 ```bash
 curl -X POST -H "Authorization: Basic XXXXXXXXXXXXXXXX" -H "Content-Type: application/json" 'https://api.sendgrid.com/v3/whitelabel/domains/50784/validate'
@@ -347,14 +356,16 @@ Response:
 { "id”: 50784, "valid": true, "validation_resuts": { "mail_cname": { "valid": false, "reason": "Expected your MX record to be "mx.sendgrid.net" but found "example.com"." },"dkim1": { "valid": true, "reason": null }, "dkim2": { "valid": true, "reason": null }, "spf": { "valid": true, "reason": null } } }
 ```
 
+
 6. **Associate with a Subuser**
 Once Validated, you can associate to any Subuser accounts.
 
 ```bash
 curl -X POST -H "Authorization: Basic XXXXXXXXXXXXXXX" -H "Content-Type: application/json" -d '{
-"username": "ryancurltesting"
+"username": "examplecurltesting"
 }' 'https://api.sendgrid.com/v3/whitelabel/domains/50784/subuser'
 ````
+
 
 7. **Link Branding**
 Follow the same process with Link branding:
@@ -372,9 +383,9 @@ Response:
 {
 "id": 203,
 "user_id": 624781,
-"domain": "burnsey.me",
+"domain": "example.com",
 "subdomain": "links",
-"username": "ryan.burrer",
+"username": "examplecurltesting",
 "valid": true,
 "default": false,
 "legacy": false,
@@ -382,13 +393,13 @@ Response:
 "domain_cname": {
 "valid": true,
 "type": "cname",
-"host": "links.burnsey.me",
+"host": "links.example.com",
 "data": "sendgrid.net"
 },
 "owner_cname": {
 "valid": true,
 "type": "cname",
-"host": "624781.burnsey.me",
+"host": "624781.example.com",
 "data": "sendgrid.net"
 }
 }
@@ -396,9 +407,9 @@ Response:
 {
 "id": 202,
 "user_id": 624781,
-"domain": "burnsey.org",
+"domain": "example.org",
 "subdomain": "links",
-"username": "ryan.burrer",
+"username": "examplecurltesting",
 "valid": true,
 "default": false,
 "legacy": false,
@@ -406,13 +417,13 @@ Response:
 "domain_cname": {
 "valid": true,
 "type": "cname",
-"host": "links.burnsey.org",
+"host": "links.example.org",
 "data": "sendgrid.net"
 },
 "owner_cname": {
 "valid": true,
 "type": "cname",
-"host": "624781.burnsey.org",
+"host": "624781.example.org",
 "data": "sendgrid.net"
 }
 }
@@ -420,9 +431,9 @@ Response:
 {
 "id": 42371,
 "user_id": 624781,
-"domain": "staples.com",
+"domain": "example.net",
 "subdomain": "links",
-"username": "ryan.burrer",
+"username": "examplecurltesting",
 "valid": false,
 "default": true,
 "legacy": false,
@@ -430,13 +441,13 @@ Response:
 "domain_cname": {
 "valid": false,
 "type": "cname",
-"host": "links.staples.com",
+"host": "links.example.net",
 "data": "sendgrid.net"
 },
 "owner_cname": {
 "valid": false,
 "type": "cname",
-"host": "624781.staples.com",
+"host": "624781.example.net",
 "data": "sendgrid.net"
 }
 }
@@ -483,9 +494,9 @@ Response:
 {
 "id": 200,
 "user_id": 623032,
-"domain": "burnsey.me",
+"domain": "example.com",
 "subdomain": "links",
-"username": "ryan.burrer@sendgrid.com",
+"username": "examplecurltesting",
 "valid": false,
 "default": false,
 "legacy": false,
@@ -493,13 +504,13 @@ Response:
 "domain_cname": {
 "valid": false,
 "type": "cname",
-"host": "links.burnsey.me",
+"host": "links.example.com",
 "data": "sendgrid.net"
 },
 "owner_cname": {
 "valid": true,
 "type": "cname",
-"host": "623032.burnsey.me",
+"host": "623032.example.com",
 "data": "sendgrid.net"}}}
 ```
 
@@ -508,6 +519,6 @@ Response:
 For more information on SendGrid and where you can go from here, check out these pages:
 
 - [API Reference]({{root_url}}/api-reference/)
-- [How to Create a Subuser with the API]({{root_url}}/for-developers/sending-email/how-to-create-a-subuser-with-the-api)
+- [How to Create a Subuser with the API]({{root_url}}/for-developers/sending-email/how-to-create-a-subuser-with-the-api/)
 - [Sender Authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/)
 - [How to Send Email]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/)
