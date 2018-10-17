@@ -145,7 +145,7 @@ Response:
 
 ### Domain Authentication for the Subuser
 
-Now we are going to setup Domain Authentication for the Subusers created above. This process involves creating the parent Whitelabel and then associating it with your Subusers:
+Now we are going to setup Domain Authentication for the Subusers created above. This process involves creating the parent Domain Authentication and then associating it with your Subusers:
 
 
 1. **Create Domain Authentication**
