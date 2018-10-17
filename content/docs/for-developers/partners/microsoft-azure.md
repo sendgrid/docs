@@ -15,7 +15,7 @@ If you are using Microsoft’s cloud platform you can easily integrate with Send
 2. [Node.js](https://docs.microsoft.com/en-us/azure/store-sendgrid-nodejs-how-to-send-email)
 3. [.NET](https://docs.microsoft.com/en-us/azure/sendgrid-dotnet-how-to-send-email)
 4. [Java](https://docs.microsoft.com/en-us/azure/store-sendgrid-java-how-to-send-email)
-5. [Java]({{root_url}}/for-developers/partners/azure/) via an Azure webpage
+5. [Java](https://docs.microsoft.com/en-us/azure/store-sendgrid-java-how-to-send-email-example) via an Azure webpage
 6. [Mobile Services](https://docs.microsoft.com/en-us/azure/sendgrid-dotnet-how-to-send-email)
 
 ## 	Still have questions?
