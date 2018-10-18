@@ -73,7 +73,7 @@ navigation:
 
 The sections in **Bold** are the categories. The "group" field in the head matter pertains to the different headers article residing under a specific category. The group designation is after the colon of the "group" field.
 
-src="https://github.com/sendgrid/docs/blob/develop/static/img/docs-architecture-group.png" width="676" height="386">
+![Document architecture schematic.](https://github.com/sendgrid/docs/blob/develop/static/img/docs-architecture-group.png)
  
 #### UI
 
