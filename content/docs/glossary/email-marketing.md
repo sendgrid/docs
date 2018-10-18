@@ -20,7 +20,7 @@ Email Marketing (also known as commercial or promotional email) as defined by th
 * [Reconfirmation Email Campaigns]({{root_url}}/glossary/reconfirmation/)
 * Special offers
 
-Email marketing attempts to encourage the recipient to take an action like making a purchase, downloading content, registering for a service, attending an event, or visiting a store. Since the intent of email marketing is to promote a commercial product or service, it must adhere to certain legal requirements defined in the CAN-SPAM Act that were specifically developed to protect consumers and help senders provide the best possible email experience.
+Email marketing attempts to encourage the recipient to take action like making a purchase, downloading content, registering for a service, attending an event, or visiting a store. Since the intent of email marketing is to promote a commercial product or service, it must adhere to certain legal requirements defined in the CAN-SPAM Act that were specifically developed to protect consumers and help senders provide the best possible email experience.
 
 Following email best practices in your marketing emails can yield great rewards and doesn’t have to be difficult. Great content along with quality sending and data collection practices present prime opportunities for email marketing to yield high response rates that drive your customer acquisition strategy.
 

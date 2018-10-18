@@ -14,7 +14,7 @@ Even though this is a small change from your recipients' perspective, this chang
 
 <call-out>
 
-In an attempt to clarify complex functionality, SendGrid is upgrading the name of Whitelabel. A whitelabel is now generally called sender authentication. A domain whitelabel is now called domain authentication. A link whitelabel is now called link branding. An IP Whitelabel is now called reverse DNS.
+In an attempt to clarify complex functionality, SendGrid is upgrading the name of White-label. A white-label is now generally called sender authentication. A domain white-label is now called domain authentication. A link white-label is now called link branding. An IP White-label is now called reverse DNS.
 
 </call-out>
 

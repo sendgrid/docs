@@ -11,12 +11,12 @@ navigation:
   show: true
 ---
 
-A fully qualified domain name (FQDN) is the complete domain name for a specific location in the Domain Name System (DNS) heirarchy. This is sometimes referred to as the absolute domain name.
+A fully qualified domain name (FQDN) is the complete domain name for a specific location in the Domain Name System (DNS) hierarchy. This is sometimes referred to as the absolute domain name.
 
-The heirarchy can be broken down into a few parts:
+The hierarchy can be broken down into a few parts:
 
 - Top-level domain (TLD), such as .edu or .com
 - Partially qualified domain name (PQDN) or domain name, such as example.com
-- Fully qualified domain name (FQDN) or host name, such as mail.example.com
+- Fully qualified domain name (FQDN) or hostname, such as mail.example.com
 
 The format of FQDN includes all hierarchical parts, usually [hostname].[domainname].[tld]. A mail server, for example with SendGrid, could be specified by an FQDN such as `mx.sendgrid.net` as this provides the complete domain for a specific mail server. When connecting to a host the specification of a FQDN allows for the DNS to resolve the hostname to its specific IP in order to verify the connection and successfully send mail.

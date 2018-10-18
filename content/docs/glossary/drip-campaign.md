@@ -17,7 +17,7 @@ a service or purchasing a product. Drip campaigns revolve around the idea of slo
 specific emails to a recipient in an effort to generate or increase customer engagement over a finite
 period of time.
 
-Drip campaigns help you to send relevant and well timed emails that your customers are likely interested in
+Drip campaigns help you to send relevant and well-timed emails that your customers are likely interested in
 seeing. Striving to send emails that are relevant to your recipients can help to improve your [sender
 reputation](https://sendgrid.com/blog/what-is-a-domain-reputation/), cultivate customer satisfaction, and increase customer retention.
 
