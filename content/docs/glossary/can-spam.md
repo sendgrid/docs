@@ -10,7 +10,7 @@ seo:
   description: The CAN-SPAM Act lists the guidelines, requirements, and penalties regarding the sending of commercial bulk email.
 ---
 
-The [CAN-SPAM Act of 2003](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business) lists the guidelines, requirements, and potential penalties for noncompliance regarding the commercial use of email and the legal rights of recipients of commercial email. CAN-SPAM provides several requirements for commercial senders including, but not limited to:
+The [CAN-SPAM Act of 2003](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business) lists the guidelines, requirements, and potential penalties for noncompliance regarding the commercial use of email and the legal rights of recipients of the commercial email. CAN-SPAM provides several requirements for commercial senders including, but not limited to:
 
 - Senders may not use false or misleading headers.
 - Senders may not use deceptive subject lines.
