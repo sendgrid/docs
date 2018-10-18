@@ -34,12 +34,6 @@ Reseller accounts and extra high volume accounts do not have access to the new E
 
 </call-out>
 
-<call-out>
-
-In order to gain access to the Email Activity Feed API, you must purchase [additional email activity history](https://app.sendgrid.com/settings/billing/addons/email_activity).
-
-</call-out>
-
 ## 	Types of email activity data
 
 The Email Activity feed allows you to view specific information about messages sent from your account.
