@@ -14,7 +14,7 @@ seo:
 
 <iframe src="https://player.vimeo.com/video/227937591" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-Managing contacts is an integral part of your marketing campaigns lifecycle. You can create lists for contacts, as well as view and edit each individual contact within your contact database
+Managing contacts is an integral part of your marketing campaigns life cycle. You can create lists for contacts, as well as view and edit each individual contact within your contact database
 
 ## 	Viewing a contact
 

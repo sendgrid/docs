@@ -12,7 +12,7 @@ seo:
 
 A drip campaign is a type of automated [email marketing strategy]({{root_url}}/glossary/email-marketing/) that involves sending a recipient
 a series of pre-written messages according to a predetermined schedule. This schedule is often
-initiated by certain events in the recipient’s lifecycle as a customer, such as registering for
+initiated by certain events in the recipient’s life cycle as a customer, such as registering for
 a service or purchasing a product. Drip campaigns revolve around the idea of slowly “dripping”
 specific emails to a recipient in an effort to generate or increase customer engagement over a finite
 period of time.
