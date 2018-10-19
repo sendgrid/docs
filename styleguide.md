@@ -96,7 +96,7 @@ src="https://github.com/sendgrid/docs/blob/develop/static/img/docs-architecture-
 - Tracking: tracking
 
 **Account and Settings**
-- Account Managment: account-management
+- Account Management: account-management
 - Inbound Parse: inbound-parse
 - Sender Authentication: sender-authentication
 - IP Management: ip-management
