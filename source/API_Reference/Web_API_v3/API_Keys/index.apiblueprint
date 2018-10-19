@@ -261,3 +261,17 @@ Returns HTTP 400 if authentication fails.
                     "invalid API Key"
                 ]
             }
+
+
+Please note that certain scopes must be added via the API using basic authorization with the parent account credentials. This is because there are less permissions displayed in the UI's API keys settings than what actually exist in the API Key Permissions List. This list contains more permissions than what can be added to your API key via our UI.  
+Currently, when you create a key and give it access to everything, it excludes various permissions. The best way to see what permissions your key has is by making this call using the API key in question to make the call. 
+For the user profile call you're attempting to make, you will need to make sure you have these permissions:
+
+"scopes": [
+  "user.account.read",
+  "user.profile.read",
+]
+Afterwards, to give your API key these extra permissions, you will need to make this call (https://sendgrid.com/docs/API_Reference/Web_API_v3/API_Keys/index.html#Update-the-name-amp-scopes-of...)
+* You can add basic authorization to your API call yourself by base64 encoding your parent account username and password like this: username:password and adding it to your Authorization header as Basic. We go into a little more detail on this here (https://sendgrid.com/blog/magic-behind-basic-http-authentication/). 
+* Or you can use a rest client like Postman (https://www.getpostman.com/) or Paw (https://paw.cloud/), where you can select to Authenticate with basic auth (your SendGrid parent account username and password) then update the request to add your parent account credentials encoded into the headers. 
+When making the call, it is important to add all of the scopes you want for the API key to have.  If you make the call, and just list "categories.read" as the scopes, you will then have a key with only the "categories.read" scope. So make sure to list everything you get from the get existing key call (https://sendgrid.com/docs/API_Reference/Web_API_v3/API_Keys/index.html#Get-an-existing-API-Key-GET) in addition to the new scopes you want to add.
