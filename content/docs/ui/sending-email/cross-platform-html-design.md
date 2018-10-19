@@ -2,7 +2,7 @@
 seo:
   title: HTML Rendering - Cross-Platform Email Design
   description: HTML Rendering - The Do's and Dont's of Cross-Platform Email Design
-  keywords: render, message, layout, html, css
+  keywords: render, message, layout, html, css, cross-platform
 title: Cross-Platform Email Design
 group: building-email
 weight: 0
@@ -106,6 +106,6 @@ We use the open-source library [MKDoc-Text-Structured](http://search.cpan.org/~b
   - Many clients simply cannot support rendering video (other than GIFs) in their emails
   - JavaScript nor the object tag are supported in many clients or browsers and thus can't support video rendering
 
-If you're still having issues contact our support team for help. We can provide the tools and the knowledge base to help you understand what your mail will look like across platforms and how to gain insight in making them appear consistent across these platforms.
+If you're still having issues, please contact our support team for help. We can provide the tools and the knowledge base to help you understand what your mail will look like across platforms and how to gain insight in making them appear consistent across these platforms.
 
 
