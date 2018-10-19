@@ -756,10 +756,10 @@ JSON objects
 - <a name="tls"></a>`tls` - indicates whether TLS encription was used in sending this message. For more information about TLS, see the [TLS Glossary page]({{root_url}}/Glossary/tls.html).
 - <a name="url"></a>`url` - the URL where the event originates. For click events, this is the URL clicked on by the recipient.
 - <a name="attempt"></a>`attempt` - the number of times SendGrid has attempted to deliver this message.
-- <a name="category"></a>`category` - [Categories]({{root_url}}/Glossary/categories.html) are custom tags that you set for the purpose of organizing your emails. If you send single categories as an array, they will be returned by the webhook as an array. If you send single categories as a string, they will be returned by the webhook as a string.
+- <a name="category"></a>`category` - [Categories]({{root_url}}/Glossary/categories.html) are custom tags that you set for the purpose of organizing your emails. Categories can be set as an array or string, and they will be returned as such when posted in your event endpoint. 
 - <a name="type"></a>`type` - type of bounce [Bounce]({{root_url}}/Glossary/bounces.html)/[Blocked]({{root_url}}/Glossary/blocks.html)/[Expired]({{root_url}}/Glossary/expired.html)
 
-String categories:
+String:
 
 {% codeblock lang:json %}
 [
