@@ -20,7 +20,7 @@ Interspire's [Email Marketer](http://www.interspire.com/emailmarketer/) is a pow
 
 First things first, you'll need to log into your Email Marketer account. Once you've done that you can set the application's outbound mail server to point to SendGrid, allowing you to send the mail to us so we can send it to the end recipient. You'll want to navigate to the Dashboard within the account, which should look like this: ![Interspire_doc.1.png](https://sendgrid.zendesk.com/attachments/token/adaznndwouktdj1/?name=Interspire_doc.1.png)
 
-You'll then want to navigate to **Settings > Email Settings** in the upper right corner of the Dashboard. Once inside the Email Settings page you'll see the "Mail Server Details" header near the bottom of the page:
+You'll then want to navigate to **Settings > Email Settings** in the upper right corner of the Dashboard. Once inside the Email Settings page you will see the "Mail Server Details" header near the bottom of the page:
 
 ![Interspire_doc.2.png](https://sendgrid.zendesk.com/attachments/token/poikwudjgiidmmx/?name=Interspire_doc.2.png)
 
