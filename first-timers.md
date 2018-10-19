@@ -3,15 +3,18 @@
 Editing the SendGrid Documentation is easy!
 If you see an error, a typo, or have something you would like to add, you can make your suggestion via GitHub, the content management system we use for the Docs. Once you have submitted your suggestion, the Docs team can easily review it before it is published to the Docs website.
 
-To make changes to any page on https://sendgrid.com/docs, follow these steps:
+To make changes to any page on https://sendgrid.com/docs, 
+follow these steps:
 
 1. Navigate to the page you would like to edit and click **Edit this page** at the bottom of the page.
 
 <img src="https://github.com/sendgrid/docs/blob/develop/static/img/edit-this-page.png" width="800" height="500">
 
-This will take you to the sendgrid.com/docs GitHub repository, or repo. This is where our docs pages are stored.
+This will take you to the sendgrid.com/docs GitHub repository, or repo. 
+This is where our docs pages are stored.
 
-2. If you do not already have a GitHub account, you will have to create one in order to suggest a change. Click the Sign up link in the upper right-hand corner to create an account. Enter your username, password, and email address. If you are an employee of SendGrid, please use your full name with your GitHub account and enter SendGrid as your company so we can easily identify you. 
+2. If you do not already have a GitHub account, you will have to create one in order to suggest a change.
+Click the Sign up link in the upper right-hand corner to create an account. Enter your username, password, and email address. If you are an employee of SendGrid, please use your full name with your GitHub account and enter SendGrid as your company so we can easily identify you and track your account.
 
 <img src="https://github.com/sendgrid/docs/blob/develop/static/img/docs_signup.png" width="800" height="500">
 
@@ -23,7 +26,7 @@ Once you are viewing a Docs page in GitHub, click the pencil icon to begin editi
 
 4. To create a Pull Request, you’ll have to fill out a Commit Changes form. Follow the built-in template and provide information about any changes you have made to the page. Leave the default branch option and name.
 
-5. When done, click **Propose file change**. The Docs Team will be notified of your request. Once we are able to review the change, we will publish it to the site!
+5. When done, click **Propose file change**. The Docs Team will be notified of your request. Once we are able to review the change, we will publish it to the site!,and you'll grab a limited edition T-shirt..
 
 > All contributors to the SendGrid docs repo need to sign a CLA before their changes can be merged. 
 
