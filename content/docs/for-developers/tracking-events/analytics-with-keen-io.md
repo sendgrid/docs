@@ -34,7 +34,7 @@ Log into your SendGrid account, click on **Settings** from the left menu → Sel
 ```
 https://api.keen.io/3.0/projects/YOUR_KEEN_PROJECT_ID/email/sendgrid/1.0?api_key=YOUR_KEEN_API_WRITE_KEY
 ```
-You can snag a prebuilt URL in Keen’s UI or make your own.
+You can snag a pre-built URL in Keen’s UI or make your own.
 
 In the settings, select the events you want to post to Keen IO (why not all of them?). To do this, under **Select Actions**, check **All**.
 
@@ -43,7 +43,7 @@ That’s it! Now, as your emails make their way through SendGrid, all of the eve
 
 ## 	Testing Your Integration
 
-Test that everything is working by clicking  on the **"Test Your Integration"** button in SendGrid’s “Event Notification” Settings. This will send sample email data from SendGrid into your Keen IO Project. In the Keen UI, click on **“Check for SendGrid Data”** button.
+Test that everything is working by clicking on the **"Test Your Integration"** button in SendGrid’s “Event Notification” Settings. This will send sample email data from SendGrid into your Keen IO Project. In the Keen UI, click on **“Check for SendGrid Data”** button.
 
 Your SendGrid email data should now be populated in Keen IO.
 
@@ -99,7 +99,7 @@ The app’s dashboard defaults to 72 Hours.
 
 <call-out>
 
-Uniform timeframes that compare each campaign to the same period of performance gives you consistent data points that you can measure against.
+Uniform timeframes that compare each campaign to the same period of performance give you consistent data points that you can measure against.
 
 </call-out>
 
@@ -110,7 +110,7 @@ The report has fixed timeframe options, but that doesn’t mean that we stop sto
 
 ## 	Understanding User Behavior
 
-Each column in the the Analytics App represents a different user action and each column is a unique step. From left to right, the columns display the number of people that successfully make it through each event. The fewest number of users have successful delivered events, open events, clicked events, and then unsubscribe events.
+Each column in the Analytics App represents a different user action and each column is a unique step. From left to right, the columns display the number of people that successfully make it through each event. The fewest number of users have successfully delivered events, open events, clicked events, and then unsubscribe events.
 
 ![SendGrid- Email Analytics App Funnel]({{root_url}}/images/keen/sendgrid_funnel.png)
 
@@ -121,7 +121,7 @@ The value presented shows the number or percentage of users who completed the ac
 
 ## 	Downloading Email Addresses to CSV
 
-For each segment in each step, you can download the segment and retrieve a list of all unique email address who completed the user action or you can download those who didn't complete the user action. You can download a CSV for every custom segment that you create. As an example below downloads a list of all customers who successfully opened and email and clicked on a link, or a list of all the users who opened the email but didn’t click.
+For each segment in each step, you can download the segment and retrieve a list of all unique email address who completed the user action or you can download those who didn't complete the user action. You can download a CSV for every custom segment that you create. As an example below downloads a list of all customers who successfully opened an email and clicked on a link or a list of all the users who opened the email but didn’t click.
 
 ![SendGrid- Email Analytics App Choose to Download to CSV]({{root_url}}/images/keen/sendgrid_segment_created.png)
 
@@ -147,7 +147,7 @@ Open the **Explorer** tab and enter `count` as the **Analysis Type**, select `em
 
 ![Explorer to Run Query]({{root_url}}/images/keen/sendgrid_basic_count.png)
 
-For more information about the types of queries you can do with the Keen Data Explorer, see our [Compute](https://keen.io/docs/compute/) page. Some example query types are sums, averages, min or max, funnels, and select_unique.
+For more information about the types of queries, you can do with the Keen Data Explorer, see our [Compute](https://keen.io/docs/compute/) page. Some example query types are sums, averages, min or max, funnels, and select_unique.
 
 For some extra-pretty graphs and custom analyses here are some tips:
 
@@ -168,7 +168,7 @@ Once you’ve found the query you need, you can either copy the URL right from y
 
 ![Save Your Query]({{root_url}}/images/keen/sendgrid_saved_query.png)
 
-Saved queries are the most efficient way to revisit your favorite metrics. Rather than entering the same query parameters over and over again, queries can shared with your teammates.
+Saved queries are the most efficient way to revisit your favorite metrics. Rather than entering the same query parameters over and over again, queries can be shared with your teammates.
 
 <call-out>
 
@@ -195,5 +195,5 @@ Many customers find it useful to embed analytics into their products for their c
 ## 	Additional Resources:
 
 - Know someone who’d appreciate SendGrid Email Analytics? Share our [product briefing](https://keen.io/sendgrid-email-analytics/) with them.
-- SendGrid's complete <a href="{{root_url}}/for-developers/tracking-events/event/">Event Webhooks Documentation</a> is a great resource on SendGrid email events. As you start to do more analysis, it's worth a read. You can even skip a lot of the sections, because we've done much of the work for you.
+- SendGrid's complete <a href="{{root_url}}/for-developers/tracking-events/event/">Event Webhooks Documentation</a> is a great resource on SendGrid email events. As you start to do more analysis, it's worth a read. You can even skip a lot of the sections because we've done much of the work for you.
 - Build a campaign and email marketing dashboard. Create and display your email metrics using one of our [dashboard templates](http://keen.github.io/dashboards/).
