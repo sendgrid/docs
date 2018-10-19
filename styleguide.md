@@ -32,7 +32,7 @@ Where possible, write pages in a "jobs to be done" format. Jobs to be done style
 	For an example, see [Sending a campaign]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/)
 
 **Avoid passive voice.** A good way to check if your sentence is in passive or not is to add "by zombies" to the end of it. If zombies end up doing the action, it's passive.
-
+fdgfdgfdgfdg
 Example: Any templates, campaigns, contacts, or API keys created by the teammate will not be deleted....by zombies(!)
 
 <a name="numbers"></a>
