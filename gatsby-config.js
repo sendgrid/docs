@@ -2,7 +2,7 @@ const config = require('./data/SiteConfig');
 
 const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix;
 const policyAccess = process.env.GATSBY_ENV === 'production' ? [{ userAgent: '*', allow: ['/'] }] : [{ userAgent: '*', disallow: ['/'] }];
-
+alert 'hello world';
 module.exports = {
   pathPrefix: config.pathPrefix,
   siteMetadata: {
