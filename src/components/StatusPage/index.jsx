@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import axios from 'axios';
 
-export default class MainLayout extends React.Component {
+class MainLayout extends Component {
   constructor(props) {
     super(props);
 
@@ -39,3 +39,5 @@ export default class MainLayout extends React.Component {
     );
   }
 }
+
+export default MainLayout;
