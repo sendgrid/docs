@@ -22,12 +22,12 @@ The library does not officially support the V2 API, but you can use V2 with an o
 ```javascript
 // using SendGrid's Node.js Library
 // https://github.com/sendgrid/sendgrid-nodejs
-var sendgrid = require("sendgrid")("SENDGRID_APIKEY");
-var email = new sendgrid.Email();
+const sendgrid = require("sendgrid")("SENDGRID_APIKEY");
+const email = new sendgrid.Email();
 
 email.addTo("test@sendgrid.com");
 email.setFrom("you@youremail.com");
-email.setSubject("Sending with SendGrid is Fun");
+email.setSubject("Sending an email with SendGrid is Fun");
 email.setHtml("and easy to do anywhere, even with Node.js");
 
 sendgrid.send(email);
