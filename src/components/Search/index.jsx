@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import _ from 'lodash';
 import STARWARS from '../../constants/starWars';
 import './search.scss';
 
-class Search extends React.Component {
+class Search extends Component {
   componentDidMount() {
     const container = document.querySelector('.search-hero') || false;
     const prefix = process.env.NODE_ENV === 'development' ? '' : '/docs';
