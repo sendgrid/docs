@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import _ from 'lodash';
 
-export default class AsideMenu extends React.Component {
+class AsideMenu extends Component {
   constructor(props) {
     super(props);
 
@@ -74,3 +74,5 @@ export default class AsideMenu extends React.Component {
     );
   }
 }
+
+export default AsideMenu; 
