@@ -33,5 +33,4 @@ const ReleaseNotePost = ({ node }) => (
   </div>
 );
 
-
 export default ReleaseNotePost;
