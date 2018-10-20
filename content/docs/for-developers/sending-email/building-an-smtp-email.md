@@ -185,7 +185,7 @@ For more information, see our [unique arguments documentation]({{root_url}}/for-
 
 ### SMTP Filters
 
-SMTP Filters can be used for turning on or off a number of different features for your sending. For example you can turn on open or click tracking on a per send basis.
+SMTP Filters can be used for turning on or off a number of different features for your sending. For example, you can turn on open or click tracking on a per-send basis.
 
 For more information, see our [SMTP Filters documentation]({{root_url}}/for-developers/sending-email/smtp-filters/).
 

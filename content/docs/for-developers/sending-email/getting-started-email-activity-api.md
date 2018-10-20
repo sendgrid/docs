@@ -24,7 +24,7 @@ Start with this basic query to the Email Activity Feed API (replace `<<your API 
 
 ```
 curl --request GET \
- --url 'http://api.sendgrid.com/v3/messages?limit=10' \
+ --url 'https://api.sendgrid.com/v3/messages?limit=10' \
  --header 'authorization: Bearer <<your API key>>'
 ```
 

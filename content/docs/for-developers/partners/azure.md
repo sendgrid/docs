@@ -46,10 +46,10 @@ To start, create a SendGrid account from the management portal:
 That’s it! You now have a website running on Azure. Now let’s create something cool.
 
 ## 	Connect to the SendGrid Inbound Parse API
- 	
-SendGrid can both send and receive email for your domain name. The playlist app uses incoming mail, which means setting up DNS at your domain registrar or host. The process to do this is going to be different depending on who controls your DNS. This tutorial will walk through the Azure and SendGrid part of this process, but you may need to ask for help on changing DNS in your system.
 
-It’s a good idea to choose a subdomain like playlist.example.com, rather than a domain itself. That’s because the Inbound Parse API must collect all mail and you don’t want to interrupt other email for your domain. To use custom domains in Windows Azure, your website will need to run in either Shared mode or the Standard tier; however, Shared mode is currently not available.
+SendGrid can both send and receive an email for your domain name. The playlist app uses incoming mail, which means setting up DNS at your domain registrar or host. The process to do this is going to be different depending on who controls your DNS. This tutorial will walk through the Azure and SendGrid part of this process, but you may need to ask for help on changing DNS in your system.
+
+It’s a good idea to choose a subdomain like playlist.example.com, rather than a domain itself. That’s because the Inbound Parse API must collect all mail and you don’t want to interrupt another email for your domain. To use custom domains in Windows Azure, your website will need to run in either Shared mode or the Standard tier; however, Shared mode is currently not available.
 
 Find your IP address and note the further instructions in the management portal:
 
@@ -92,10 +92,10 @@ While you're waiting for DNS to be ready, you can prepare your SendGrid Incoming
 	* URL: `http://website.azurewebsites.net/email`
 6.	Click **Add Host & URL**.
 
-Once the DNS has propagated, you’ll be able to receive email to any email address `@playlist.example.com`. In the next step, we’ll make sure your website on Windows Azure is ready to accept those emails.
+Once the DNS has propagated, you’ll be able to receive an email to any email address `@playlist.example.com`. In the next step, we’ll make sure your website on Windows Azure is ready to accept those emails.
 
 ## 	Prepare the Code to Run on Windows Azure
- 	
+
 Before you can put the code in place, you need to prepare your source control system, which will be Git in this case. Make sure you have Git installed on your local machine before proceeding. There are downloads for Windows, Mac, Linux, and Solaris.
 Now set up your repository within the Windows Azure interface:
 
@@ -119,7 +119,7 @@ To get your Rdio API Key, which you'll use to create your playlist, follow the �
 
 With the credentials in hand, it’s time to add them as environment variables within the Windows Azure management portal:
 
-1.	Choose your web site from the all items list, then click **Configure**.
+1.	Choose your website from the all items list, then click **Configure**.
 2.	Under “app settings” set the following KEY VALUE pairs
 
 	* `SENDGRID_USER = username`
@@ -166,7 +166,7 @@ One last thing, you need to update the receiving email address:
 With your changes pushed to Azure, you can restart the server with the button at the bottom of the web server’s dashboard. Then click the BROWSE button within the same menu to see your website live. At this point, people can send in their song requests, assuming that the DNS has propagated.
 
 ## 	Add a Backend Using Windows Mobile Services
- 	
+
 Windows Azure can also run a backend-as-a-service for your app, which allows you to store data, authenticate users, send push notifications, and do other common mobile tasks. This backend can also be used for non-mobile applications.
 
 Follow these steps to enable Mobile Services from the Windows Azure interface:
@@ -207,7 +207,7 @@ var item = { request: data.name, song: data.track, user: data.user };
 client.getTable("playlist_songs").insert(item);
 ```
 
-To allow for your app to have access to the DB, add your URL to the cross origin resource sharing (cors) setting.
+To allow for your app to have access to the DB, add your URL to the cross-origin resource sharing (cors) setting.
 
 ![cors]({{root_url}}/images/azure_14.png)
 
@@ -216,8 +216,8 @@ Add your changes via git and push to Azure.
 Now your website, mobile service, and SendGrid account are all in harmony on Windows Azure. You could stop here, but to see the real power of Mobile Services, you’ll want to create a native mobile application.
 
 ## 	Connect Windows Azure Mobile Services to iOS
- 	
-The Windows Azure Mobile Services SDK simplifies the process of standing up a backend for your app in Windows Azure. The Windows Azure team also has SDKs for Android, HTML, Windows Store, and Windows Phone. For this example we’re going to use iOS.
+
+The Windows Azure Mobile Services SDK simplifies the process of standing up a backend for your app in Windows Azure. The Windows Azure team also has SDKs for Android, HTML, Windows Store, and Windows Phone. For this example, we are going to use iOS.
 
 We can download a pre-packaged mobile app from within the Windows Azure interface:
 

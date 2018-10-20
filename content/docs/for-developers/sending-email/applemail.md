@@ -15,7 +15,7 @@ Go to Mail -\> Preferences (⌘,). On the account you want to edit, click the ta
 
 ![Mail, Preferences, Outgoing Mail Server (SMTP) dropdown, Edit SMTP Server List]({{root_url}}/images/NewAppleMail_Step_1.png "Edit SMTP Server List")
 
-Next click the **+** under the list of SMTP servers, and add a new one.
+Next, click the **+** under the list of SMTP servers, and add a new one.
 
 ![The plus button to click to add an SMTP server]({{root_url}}/images/NewAppleMail_Step_2.png "Add SMTP Server")
 
@@ -26,7 +26,7 @@ Then enter the server details:
 -   **Password:** SendGrid account password
 -   **Host Name:** smtp.sendgrid.net
 -   Uncheck **Automatically manage connection settings** if you want to specify Custom Ports, Encryption Type and       Authentication
--   **Port:** Specify port
+-   **Port:** Specify the port
 -   **Encryption:** Check or uncheck Use TLS/SSL
 -   **Authentication:** Password
 
@@ -44,7 +44,7 @@ Unfortunately, there is not an easy way to add SMTP API headers to a message in 
 
 ## 	Attachment Compatibility
 
-Mail will sometimes attach images in a way that is incompatible with other email readers. However, this behavior can be be changed so that Mail will send more traditional non-inline attachments.
+Mail will sometimes attach images in a way that is incompatible with other email readers. However, this behavior can be changed so that Mail will send more traditional non-inline attachments.
 
 1. Open Terminal (found in Finder > Applications > Utilities).
 1. In Terminal, paste the following: ```defaults write com.apple.mail DisableInlineAttachmentViewing -bool yes```.

@@ -22,7 +22,7 @@ If you are setting up a new account directly with SendGrid but have previously h
 
 You cannot export and import sender authentication data - you need to set this up manually in your new account after you delete the current authentication records from your [DNS]({{root_url}}/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html#-DNS) provider.
 
-If you have domain, link, and IP authentication set up, remove 5 CNAME or MX/TXT records and 1 A record from your domain’s DNS. To verify the records delete from your DNS, go to the [Sender Authentication page](https://app.sendgrid.com/settings/sender_auth) in the UI and check the DNS column:
+If you have a domain, link, and IP authentication set up, remove 5 CNAME or MX/TXT records and 1 A record from your domain’s DNS. To verify the records delete from your DNS, go to the [Sender Authentication page](https://app.sendgrid.com/settings/sender_auth) in the UI and check the DNS column:
 
 ![]({{root_url}}/img/dns-records.jpg "Where to find your existing DNS records")
 
@@ -64,7 +64,7 @@ To add subusers to your new account, go to the [subusers page](https://app.sendg
 
 If you are using a dedicated IP, our support team can migrate your dedicated IP for you. Access support contact options by logging into https://support.sendgrid.com. Provide us with: your current and new usernames, the IP addresses, and your preferred time for the IP transfer - we can migrate IPs between 7 am and 5 pm MST on Monday through Friday.
 
-Be sure to set up reverse DNS and rewarmup your transferred IP before you start sending on it in your new account. You also need to reassign it to subusers if needed.
+Be sure to set up reverse DNS and rewarm up your transferred IP before you start sending on it in your new account. You also need to reassign it to subusers if needed.
 
 ## Download statistics and email activity
 

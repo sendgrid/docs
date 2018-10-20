@@ -1,6 +1,6 @@
 ---
 seo:
-  title: Sending a Legacy Transactional Template Email over SMTP
+  title: Sending a Legacy Transactional Template Email over SMTP or v2
   description: Learn how to send a legacy transactional template with the SMTP API.
   keywords: SMTP, send email, integrate, building, filters, scheduling, substitution, suppression groups, unique arguments, recipients, legacy template, transactional template
 title: Sending a Legacy Transactional Template Email over SMTP
@@ -13,15 +13,15 @@ navigation:
 
 <call-out>
 
-### Who should consider using the SMTP API?
+### Who should consider using the X-SMTPAPI?
 
-For customers who are unable to use the Web API, SMTP is a perfectly acceptable option.
+For customers who are unable to use the Web API v3, SMTP or v2 is an acceptable option.
 
 </call-out>
 
 <call-out type="warning">
 
-The SMTP API does not support Dynamic Transactional Templates. For sending Dynamic Transactional Templates you need to use v3 Mail Send.
+The X-SMTPAPI does not support Dynamic Transactional Templates. For sending Dynamic Transactional Templates you need to use v3 Mail Send.
 
 * [How to send an email with Dynamic Transactional Templates]({{root_url}}/for-developers/sending-email/how-to-send-an-email-with-dynamic-transactional-templates)
 - [Getting Started with the v3 Mail Send API]({{root_url}}/for-developers/sending-email/api-getting-started/)
@@ -52,7 +52,7 @@ Before you create and send a legacy transactional template email over SMTP you n
 
 ## Sending an Email
 
-### Code Examples with different clients
+### Code Examples with different clients for SMTP
 
 * [SMTP Go Code Example]({{root_url}}/for-developers/sending-email/smtp-go-code-example/)
 * [SMTP Node.js Code Example]({{root_url}}/for-developers/sending-email/smtp-nodejs-code-example/)
@@ -61,6 +61,16 @@ Before you create and send a legacy transactional template email over SMTP you n
 * [SMTP Python Code Example]({{root_url}}/for-developers/sending-email/smtp-python-code-example/)
 * [SMTP Ruby Code Example]({{root_url}}/for-developers/sending-email/smtp-ruby-code-example/)
 
+### Sending via v2 mail send
+
+* [Go Code Example]({{root_url}}/for-developers/sending-email/v2-go-code-example/)
+* [Node.js Code Example]({{root_url}}/for-developers/sending-email/v2-nodejs-code-example/)
+* [PHP Code Example]({{root_url}}/for-developers/sending-email/v2-php-code-example/)
+* [Perl Code Example]({{root_url}}/for-developers/sending-email/v2-perl-code-example/)
+* [Python Code Example]({{root_url}}/for-developers/sending-email/v2-python-code-example/)
+* [Ruby Code Example]({{root_url}}/for-developers/sending-email/v2-ruby-code-example/)
+* [C# Code Example]({{root_url}}/for-developers/sending-email/v2-csharp-code-example/)
+* [Java Code Example]({{root_url}}/for-developers/sending-email/v2-java-code-example/)
 
 ### Enabling a Template
 
@@ -119,7 +129,7 @@ content of your message will behave differently.
 
 ## Advanced options
 
-You can use SMTP API [substitution]({{root_url}}/for-developers/sending-email/substitution-tags/) and [section]({{root_url}}/for-developers/sending-email/section-tags/) tags in your template's subject and body content, and they will be replaced with the values specified when you send the message.
+You can use X-SMTPAPI [substitution]({{root_url}}/for-developers/sending-email/substitution-tags/) and [section]({{root_url}}/for-developers/sending-email/section-tags/) tags in your template's subject and body content, and they will be replaced with the values specified when you send the message.
 
 ### Substitution Tags
 
