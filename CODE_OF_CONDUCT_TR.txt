@@ -1,0 +1,51 @@
+﻿SendGrid Topluluk Davranış Kuralları
+
+SendGrid açık kaynak topluluğu, çeşitli yetenekler, kişilikler ve deneyimlerle dünyanın dört bir yanından üyelerden oluşuyor. Topluluğumuzun başarıları ve sürekli büyümesi deneyimlediği bu farklılıklar sayesinde. Topluluk üyeleriyle çalışırken, etkileşimlerimizi yönlendirmeye yardımcı olan ve olumlu, başarılı ve büyüyen bir topluluğa sahip olmak için çaba gösteren bu yönergeleri izlemenizi öneririz.
+
+Açık ol
+
+Topluluğun üyeleri, ister çekme talepleri, kod incelemeleri, onaylar, isterse başka konular olsun, ortak çalışmaya açıktır. Bütün üyelerin deneyimleri ve beceri setleri çabalarımızın birçoğuna katkıda bulunduğundan, yapıcı yorum ve eleştirilere karşıyız. Faaliyetlerimize katılmayı, herkesin katılabileceği bir ortamı teşvik etmeyi ve herkesin fark yaratabileceğini kabul ediyoruz.
+
+Düşünmek
+
+Topluluğun üyeleri, SendGrid'in diğer katılımcılarını ve kullanıcılarını içeren akranlarına karşı saygılıdır. Başkalarının çabalarına hitap ederken, çoğu zaman emeğin toplumun iyiliğinin amacı ile tamamlandığını akılda tutarak düşünürüz. İster bizzat ister çevrimiçi olsun, iletişimimizde dikkatliyız ve farklı görüşlere yaklaşırken taktimiz var.
+
+Saygılı ol
+
+Topluluk üyeleri saygılıdır. Başkalarına, konumlarına, yeteneklerine, sorumluluklarına ve çabalarına saygılıyız. SendGrid topluluğuna nüfuz eden gönüllü çabalara karşı saygılıyız. Toplulukta özetlenen süreçlere saygılıyız ve onların içinde çalışıyoruz. Aynı fikirde olmadığımız zaman, meselelerimizi yükseltmek için saygılıyız. Genel olarak, birbirimize iyiyiz. Bu topluluğa katkıda bulunuyoruz çünkü yapmamız gerekmiyor, çünkü biz istiyoruz. Bunu hatırlarsak, bu kurallar doğal olarak gelecek.
+
+Ek Rehberlik
+
+Potansiyel Çıkar Çatışmaları Açıklayın
+
+Topluluk tartışmaları genellikle ilgili tarafları içerir. Katılımcıların, istihdam ettikleri veya katıldığı diğer projeler nedeniyle çatıştıkları zaman haberdar olmalarını ve bu ilgi alanlarını diğer proje üyelerine açıklamasını bekleriz. Şüpheye düştüğünüzde, aşırı açıklayın. Algılanan çıkar çatışmaları, toplumun kararlarının, bir grubun bir diğerinin çıkarları için popüler olmayan, zor veya elverişsiz olsa bile inandırıcı olabilmesi için ele alınması açısından önemlidir.
+
+yorumlama
+
+Bu Kod kapsamlı veya eksiksiz değildir. Bu bir kural kitabı değil; Ortak, paylaşılan bir ortam ve hedefler hakkında ortak anlayışımızı dağıtmaya hizmet eder. Mektubun ruhunda olduğu kadar takip edilmesini bekliyoruz. Şüphe duyduğunuzda, SendGrid’in “4H’lerimiz” tarafından tanımlanan kültürel değerlere uymaya çalışın: Mutlu, Aç, Alçakgönüllü ve Dürüst.
+
+zorlama
+
+SendGrid topluluğunun çoğu üyesi, bu Kuralların varlığı nedeniyle değil, yukarıda belirtilen davranışların normal ve beklenen olduğu açık kaynak topluluklarına katılan uzun deneyime sahip oldukları için bu Kurallara her zaman uymaktadır. Ancak, bu Kurallara uyulmaması, askıya alınma, kullanıcıyı kötüye kullanım olarak bildirme veya harici katkıda bulunanlar için izinleri değiştirme nedenleri olabilir.
+
+Birinin davranışı hakkında endişeleriniz varsa
+
+Doğrudan İletişim Kurma - Bir topluluk üyesine e-posta göndermek her zaman uygundur (iletişim bilgileri mevcutsa), davranışlarının devre dışı olduğunu düşündüğünüzden ve (gerekiyorsa) bunları bu Kurallara yönlendirdiğinizden bahsedin.
+
+Herkesin Tartışması - Kamunun tartışılması her zaman kabul edilebilir. Bununla birlikte, doğrudan doğruya yaklaşmanın, daha az savunmacı olma eğiliminde olduğundan ve diğer topluluk üyelerinin zamanına saygı gösterdiğinden, daha iyi olabileceğini unutmayın, bu nedenle muhtemelen önce doğrudan kişiyi denemek isteyebilirsiniz.
+
+Moderatörlerle İletişim - SendGrid moderatörlerine dx@sendgrid.com adresine e-posta göndererek ulaşabilirsiniz.
+
+SendGrid Depolarına Gönderme
+
+Son olarak, sadece bir hatırlatma, SendGrid depolarına yapılan değişiklikler sadece SendGrid Katılımcı Anlaşması'nın tamamlanmasıyla kabul edilecektir.
+
+atfetme
+
+SendGrid, içerik ve ilham için çizdiği aşağıdakilere teşekkür eder:
+
+Python Topluluğu Davranış Kuralları
+
+Açık Kaynak Girişimi Genel Davranış Kuralları
+
+Apache Davranış Kuralları
