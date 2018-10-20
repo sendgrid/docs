@@ -1,4 +1,5 @@
-module.exports = {
+module.exports = 
+{
   docsDir: 'docs',
   siteTitle: 'SendGrid Documentation',
   siteTitleAlt: 'SendGrid Knowledge Center',
