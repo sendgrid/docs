@@ -76,6 +76,6 @@ You can easily duplicate a pre-built template provided by SendGrid.
 
  ## 	Additional Resources
 
-- [Sending an Email]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/)
-- [Design Editor]({{root_url}}/ui/sending-email/editor/#-The-Design-Editor)
-- [Code Editor]({{root_url}}/ui/sending-email/editor/#the-code-editor)
+- [Sending an Email](https://sendgrid.com/docs/ui/sending-email/how-to-send-email-with-marketing-campaigns/)
+- [Design Editor](https://sendgrid.com/docs/ui/sending-email/editor/#-The-Design-Editor)
+- [Code Editor](https://sendgrid.com/docs/ui/sending-email/editor/#the-code-editor)
