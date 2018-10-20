@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Link from 'gatsby-link';
 import _ from 'lodash';
 
-export default class BreadCrumbs extends Component {
+class BreadCrumbs extends Component {
   constructor(props) {
     super(props);
     this.pathParts = this.getPathParts();
@@ -110,3 +110,5 @@ export default class BreadCrumbs extends Component {
     );
   }
 }
+
+export default BreadCrumbs;
