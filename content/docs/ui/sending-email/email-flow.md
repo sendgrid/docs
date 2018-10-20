@@ -13,7 +13,7 @@ seo:
 
 SendGrid has helped thousands of customers send their email messages since 2009. We help our customers build their email content, send their messages, and view the success of each campaign sent.
 
-We also realize that the actual journey of an email message from sender to the inbox  is complicated. Sometimes this process may not be fully understood by all senders. This post shows the basics of the email path, along with where SendGrid is helping to make that journey less complicated.
+We also realize that the actual journey of an email message sent to an inbox  is complicated. Sometimes this process may not be fully understood by all senders. This post shows the basics of the email path, along with where SendGrid is helping to make that journey less complicated.
 
 In the email flowchart below, you can see the main components that all email messages pass through. Granted, there are many other finer details involved within each step, but for the sake of this post, we’re keeping it to the basics.
 
@@ -25,7 +25,7 @@ Imagine that a sender is a host at a party and all of the other guests are the r
 
 ## 	The “Handshake” Details and Results
 
-The sender connects to the SMTP server through SendGrid and tells the server the final destination it would like its message to go to. Let’s say it is “person@example.com”. The SMTP server recognizes the domain portion (the part after the @ sign) of “example.com” and contacts the receiving server responsible for accepting messages for that domain. During this connection the two servers exchange multiple pieces of information. The receiving server typically then says one of the following:
+The sender connects to the SMTP server through SendGrid and tells the server the final destination it would like its message to go to. Let’s say it is “person@example.com”. The SMTP server recognizes the domain portion (the part after the @ sign) of “example.com” and contacts the receiving server responsible for accepting messages for that domain. During this connection, the two servers exchange multiple pieces of information. The receiving server typically then says one of the following:
 
 * “Yes, I know who ‘person’ is and all is in order to deliver it to their inbox.”
 * “Yes, I know who ‘person’ is and all is in order to deliver the message, but not to the inbox.”
@@ -66,4 +66,4 @@ Along with these items listed above, some recipients may also have their own ind
 
 ### 	Feedback for the Guests to Give the Host
 
-Within email, there is a function known as a Feedback Loop. Feedback Loops are created by the mailbox providers and a sender can get set up to receive notifications through them to inform them when a recipient complains about the sender’s message (aka marking a message as junk or spam). This should help the host (sender) to be aware of when certain guests didn’t want the content included in their interaction. The host (sender) should not try to have another conversation with (aka send messages to) these guests in the future.
+Within an email, there is a function known as a Feedback Loop. Feedback Loops are created by the mailbox providers and a sender can get set up to receive notifications through them to inform them when a recipient complains about the sender’s message (aka marking a message as junk or spam). This should help the host (sender) to be aware of when certain guests didn’t want the content included in their interaction. The host (sender) should not try to have another conversation with (aka send messages to) these guests in the future.

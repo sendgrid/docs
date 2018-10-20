@@ -4,7 +4,7 @@ seo:
   description: Section tags allow you to substitute in content for individual recipients in an SMTP message.
   keywords: SMTP, send email, Substitution tags
 title: Substitution Tags
-group: smtp
+group: x-smtpapi
 weight: 10
 layout: page
 navigation:
@@ -40,7 +40,11 @@ Substitutions are limited to 10000 bytes per personalization block.
 
 How you format your substitution tags may depend on the library you use to create your SMTP connection, the language you are writing your code in, or any intermediate mail servers that your servers will send mail through. In some cases -subVal- may be the best choice while in other %subVal% or #subVal# may make more sense. It is best to avoid characters that have special meaning in HTML, such as <,>, and &. These might end up encoded and will not be properly substituted.
 
+<call-out>
 
+You can have up to 4 nested substitutions.
+
+</call-out>
 
 <call-out type="warning">
 

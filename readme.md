@@ -46,12 +46,12 @@ SendGrid does not merge a pull request made against a SendGrid open source proje
 ### Dependencies
 
 * Required:
-    * Git
-    * RVM
-    * Homebrew
-    * npm
-    * yarn
-    * Gatsby
+    * [Git](https://git-scm.com)
+    * [RVM](https://rvm.io)
+    * [Homebrew](https://brew.sh)
+    * [npm](https://www.npmjs.com)
+    * [yarn](https://yarnpkg.com/en/)
+    * [Gatsby](https://www.gatsbyjs.org)
 
 <a name="setup"></a>
 ### Setup Steps

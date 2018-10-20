@@ -73,7 +73,7 @@ navigation:
 
 The sections in **Bold** are the categories. The "group" field in the head matter pertains to the different headers article residing under a specific category. The group designation is after the colon of the "group" field.
 
-src="https://github.com/sendgrid/docs/blob/develop/static/img/docs-architecture-group.png" width="676" height="386">
+![Document architecture schematic.](https://github.com/sendgrid/docs/blob/develop/static/img/docs-architecture-group.png)
  
 #### UI
 
@@ -96,7 +96,7 @@ src="https://github.com/sendgrid/docs/blob/develop/static/img/docs-architecture-
 - Tracking: tracking
 
 **Account and Settings**
-- Account Managment: account-management
+- Account Management: account-management
 - Inbound Parse: inbound-parse
 - Sender Authentication: sender-authentication
 - IP Management: ip-management
@@ -115,7 +115,8 @@ src="https://github.com/sendgrid/docs/blob/develop/static/img/docs-architecture-
 - Mail Servers: mail-servers
 - SendGrid Partners: partners
 - SendGrid Plugins: plugins
-- SMTP API: smtp
+- Send SMTP: smtp
+- X-SMTPAPI Header: x-smtpapi
 - Tracking: tracking
 - Open Source Apps: open-source
 
@@ -232,6 +233,12 @@ Not every single page or step needs an accompanying screenshot. When in doubt, f
 ### File format and naming:
 
 Please use PNG, GIF, or JPG files. Give the screenshots unique, meaningful names, obeying a specific format, such as general_settings_privacy. Avoid spaces, uppercase letters, and excessively long names.
+
+### Location:
+
+Images should be located in the following directory: 
+
+docs/static/img/
 
 ### Size and resolution:
 

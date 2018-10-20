@@ -30,11 +30,19 @@ Each email you send to a suppressed address will consume one email from your acc
 
 Managing unsubscribes is key to getting maximum email delivery. If your customers have an easy way to tell you that they’d like to stop receiving your email, instead of using the spam button, it will give you valuable insights without affecting your reputation.
 
-SendGrid has two different ways of processing unsubscribes depending on how you’re sending mail. If you use [Subscription Tracking]({{root_url}}/ui/sending-email/subscription-tracking/), recipients can unsubscribe from all of the emails you’re sending. If you’re using the marketing email tool, recipients can unsubscribe from specific types of emails that they’d rather not receive anymore.
+SendGrid has three different ways of processing unsubscribes depending on how you’re sending mail. If you use [Subscription Tracking]({{root_url}}/ui/sending-email/subscription-tracking/), recipients can unsubscribe from all of the emails you’re sending. As a transactional mail user, you also have the option to create unsubscribe groups for your transactional templates using Advanced Suppression Management. Alternatively, if you’re sending Marketing Campaigns, recipients can unsubscribe from specific types of emails that they’d rather not receive anymore, also known as [Unsubscribe Groups]({{root_url}}/ui/sending-email/unsubscribe-groups/).
 
-If you are sending email through SendGrid and have the Subscription Tracking setting turned on, an unsubscribe option will be added to the footer of every email that gets sent through your account. A user who clicks the unsubscribe link will be added to your global unsubscribe list and **any** future attempts to send email to those users will be suppressed, unless they’re removed. You can also manage this list manually, adding and removing addresses via the UI or with the use of API calls.
+If you are sending Transactional email through the SendGrid API or SMTP and have the Subscription Tracking setting turned on, an unsubscribe option will be added to the footer of every email that gets sent through your account. A user who clicks the unsubscribe link will be added to your global unsubscribe list and **any** future attempts to send email to those users will be suppressed, unless they’re removed. You can also manage this list manually, adding and removing addresses via the UI or with the use of API calls.
 
 The Subscription Tracking setting also has a number of options for customization, such as a replacement tag that allows you to place the unsubscribe text somewhere in the body of the email, the ability to reword the unsubscribe message, and the ability to add a custom landing page.
+
+If using Advanced Suppression Management in place of Subscription Tracking, an ASM tag must be included in the template. 
+ - We will replace the tag with the text "Unsubscribe From All Emails" if you include <%asm_global_unsubscribe_url%>
+ - We will replace the tag with the unsubscribe URL but **without** the hyperlinked tag if you include   
+   <%asm_global_unsubscribe_raw_url%>
+ - We will replace the tag with the text "Unsubscribe from this list" if you include <%asm_group_unsubscribe_url%>
+ - We will replace the tag with only the group unsubscribe URL **without** the hyperlinked text if you include 
+   <%asm_group_unsubscribe_raw_url%>
 
 ## 	Different Types of Suppressions
 

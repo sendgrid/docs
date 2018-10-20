@@ -34,12 +34,6 @@ Reseller accounts and extra high volume accounts do not have access to the new E
 
 </call-out>
 
-<call-out>
-
-In order to gain access to the Email Activity Feed API, you must purchase [additional email activity history](https://app.sendgrid.com/settings/billing/addons/email_activity).
-
-</call-out>
-
 ## 	Types of email activity data
 
 The Email Activity feed allows you to view specific information about messages sent from your account.
@@ -105,11 +99,11 @@ The Email Activity feed lists each email sent. Click on each email to view the c
 
 ## 	Basic search
 
-The email address field filters with an approximate, or fuzzy search. The date field pulls filters events that fit within the precise date range specified.
+The email address field filters with an approximate, or fuzzy, search. The date field filters events that fit within the precise date range specified.
 
 <call-out>
 
-To filter by event type, like in the legacy Email Activity Feed, use [Advanced search](#advanced-search), and select Event Type, and choose an event type to filter by.
+To filter by event type, like in the legacy Email Activity Feed, use [Advanced search](#advanced-search), select Event Type, and choose an event type to filter by.
 
 </call-out>
 
@@ -160,7 +154,7 @@ or
 
 1. Navigate to the event you wish to view and click on the entry.
    Once the entry loads, you can click into each of the sections to view more details of each email message.
-1. When you have finished reviewing the data, click **close**.
+1. When you have finished reviewing the data, click **Close**.
 
 ![]({{root_url}}/img/EASE_email_information.gif "Email Activity information panel")
 

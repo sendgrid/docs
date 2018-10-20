@@ -4,7 +4,7 @@ seo:
   description: Add unique arguments to customize your SMTP emails event tracking
   keywords: SMTP, unique arguments, email events, email activity
 title: Unique Arguments
-group: smtp
+group: x-smtpapi
 weight: 10
 layout: page
 navigation:

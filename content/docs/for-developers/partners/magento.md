@@ -45,7 +45,7 @@ Learn more about your shoppers’ engagement with performance feedback and real-
 
 ## 	What’s the functionality of your extension?
 
-* Our extension easily integrates with your SendGrid API key and allows you to send your Magento email with confidence through our world class infrastructure.
+* Our extension easily integrates with your SendGrid API key and allows you to send your Magento email with confidence through our world-class infrastructure.
 * In addition to reliable delivery and scalability, our extension allows you have access to real-time analytics and insights for quick, well-informed decision making about your customers to grow your e-commerce store.
 * Integrate easily with your SendGrid API key
 
@@ -60,7 +60,7 @@ Learn more about your shoppers’ engagement with performance feedback and real-
 
 ## 	Configuration
 
-First, log in to your **Magento Dashboard**, then click  **System** in the left hand navigation bar. Select **SendGrid** and click **Settings**. Here, you can enter your SendGrid account settings.
+First, log in to your **Magento Dashboard**, then click  **System** in the left-hand navigation bar. Select **SendGrid** and click **Settings**. Here, you can enter your SendGrid account settings.
 
 1. To get the SendGrid plugin running after activation, navigate to the plugin's settings page and enter your **SendGrid API Key**. Next, choose how your email will be sent (SMTP Relay or Email API).
 
@@ -73,7 +73,7 @@ First, log in to your **Magento Dashboard**, then click  **System** in the left 
     ![]({{root_url}}/images/magento_3.jpg)
 
 
-3. Emails are automatically tracked and tagged to provide you deliverability and engagement statistics viewable from the **SendGrid Dashboard**. You can also add other [categories]({{root_url}}/ui/analytics-and-reporting/categories/) for your emails in the field Categories.
+3. Emails are automatically tracked and tagged to provide you with deliverability and engagement statistics viewable from the **SendGrid Dashboard**. You can also add other [categories]({{root_url}}/ui/analytics-and-reporting/categories/) for your emails in the field Categories.
 
     ![]({{root_url}}/images/magento_4.png)
 
@@ -92,7 +92,7 @@ First, log in to your **Magento Dashboard**, then click  **System** in the left 
 
  ### 	Statistics
 
-Log into your **Magento Dashboard**, then click **System** in the left hand navigation bar. Select **SendGrid** and click **Statistics** to see your statistics.
+Log into your **Magento Dashboard**, then click **System** in the left-hand navigation bar. Select **SendGrid** and click **Statistics** to see your statistics.
 
   ![]({{root_url}}/images/magento_8.jpg)
 
