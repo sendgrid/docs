@@ -1,22 +1,22 @@
 {
-    "compilerOptions": {
+    "compilerOptions":{
         "target": "ES6",
         "allowSyntheticDefaultImports": true,
         "experimentalDecorators": true,
         "baseUrl": "src",
-        "paths": {
+        "paths":{
             "*": ["*", "src/*"]
         }
     },
-    "typeAcquisition": {
+    "typeAcquisition":{
         "enable": true
     },
-    "typingOptions": {
+    "typingOptions":{
         "enableAutoDiscovery": true
     },
     "compileOnSave": true,
     "allowJS": true,
-    "include": [
+    "include":[
         "src/**/*"
-    ]
+     ]
 }
