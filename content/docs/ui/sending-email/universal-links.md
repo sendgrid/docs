@@ -1,4 +1,4 @@
-﻿---
+---
 seo:
   title: Universal Links
   description: Learn how to set up universal links with click tracking in your emails.
@@ -36,11 +36,11 @@ When setting up universal links for your app, it is important to ensure that you
 There are several requirements that you must complete before you can begin using universal links in your email:
 
 - Universal links for iOS require an "apple-app-site-association" JSON file.
-- Universal links for Android require that you set up an "digital asset links" JSON file, along with configuring intent filters in your Android app's manifest file.
+- Universal links for Android require that you set up a "digital asset links" JSON file, along with configuring intent filters in your Android app's manifest file.
 - Your **apple-app-site-association** and **digital asset links** files must be hosted on an HTTPS web server or content delivery network (CDN).
 - To ensure that your universal links register click tracking events, and to ensure that your recipient is taken to the correct page within your app, you must properly [resolve your links](#resolving-sendgrid-click-tracking-links).
 - You must complete the [link branding process]({{root_url}}/ui/account-and-settings/how-to-set-up-link-branding/) for your account. When branding your links, you must use the same domain that will be used for your universal links. (e.g. links.example.com)
-- On iOS, you must include your branded link subdomain in the "Associated Domains" for your app. You can customize your subdoman using the custom return path in advanced settings while setting it up. Using the example above, you'd need to add an entry for "applinks:links.example.com" like this:
+- On iOS, you must include your branded link subdomain in the "Associated Domains" for your app. You can customize your subdomain using the custom return path in advanced settings while setting it up. Using the example above, you'd need to add an entry for "applinks:links.example.com" like this:
 ![]({{root_url}}/images/universal_links_ios.png)
 
 ## 	What are "apple-app-site-association" and "digital asset links" files?
@@ -82,7 +82,7 @@ Both "apple-app-site-association" and "digital asset links" files are comprised 
 
 <call-out>
 
-When configuring your universal links in iOS, you specify which paths you want to be handled by the app by using the `paths` argument in the `apple-app-site-association` file. You must flag your universal links with the attribute `universal=true` as documeted [here](#flagging-your-universal-links). In your `apple-app-site-association`, by adding `["/uni/*"]` into `paths`, it ensures your flagged universal links clicks are properly tracked by SendGrid and [are handled by the app appropriately](#resolving-sendgrid-click-tracking-links).
+When configuring your universal links in iOS, you specify which paths you want to be handled by the app by using the `paths` argument in the `apple-app-site-association` file. You must flag your universal links with the attribute `universal=true` as documented [here](#flagging-your-universal-links). In your `apple-app-site-association`, by adding `["/uni/*"]` into `paths`, it ensures your flagged universal links clicks are properly tracked by SendGrid and [are handled by the app appropriately](#resolving-sendgrid-click-tracking-links).
 
 </call-out>
 
