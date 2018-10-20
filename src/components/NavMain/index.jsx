@@ -27,7 +27,7 @@ class NavMain extends Component {
         'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
         Authorization: `token ${token}`,
       },
-    }).then((response) => {
+    }).then(response => {
       if (!response.ok) {
         return false;
       }
