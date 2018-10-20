@@ -18,8 +18,8 @@ require_once '$HOME/sendgrid/Zend/library/Zend/Mail.php';
 require_once '/$HOME/sendgrid/Zend/library/Zend/Mail/Transport/Smtp.php';
 
 $smtpServer = 'smtp.sendgrid.net';
-$username = 
-$password = 
+$username = 'username';
+$password = 'password';
 
 $config = array('ssl' => 'tls',
 'port' => '587',
