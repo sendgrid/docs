@@ -34,7 +34,7 @@ $email    = new SendGrid\Email();
 $email->addTo("test@sendgrid.com")
       ->setFrom("you@youremail.com")
       ->setSubject("Sending with SendGrid is Fun")
-      ->setHtml("and easy to do anywhere, even with PHP");
+      ->setHtml("<strong>and easy to do anywhere, even with PHP</strong>");
 
 $sendgrid->send($email);
 ```
@@ -119,7 +119,7 @@ $params = array(
     'x-smtpapi' => json_encode($json_string),
     'to'        => 'example3@sendgrid.com',
     'subject'   => 'testing from curl',
-    'html'      => 'testing body',
+    'html'      => '<strong>testing body</strong>',
     'text'      => 'testing body',
     'from'      => 'example@sendgrid.com',
   );
