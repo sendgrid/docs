@@ -56,7 +56,7 @@ The timezone for statistics pages is set in your [account settings]({{root_url}}
 
 **[Browser Comparison]({{root_url}}/ui/analytics-and-reporting/browser-comparison/)** - Compare the performance of your emails by statistic and browser.
 
-**[Parse Webhook]({{root_url}}//for-developers/parsing-email/inbound-email/)** - View the number of requests you have received via the Parse Webhook.
+**[Parse Webhook]({{root_url}}/for-developers/parsing-email/inbound-email/)** - View the number of requests you have received via the Parse Webhook.
 
 
 ## 	Metrics
@@ -75,13 +75,13 @@ On the available statistics reports, you will find that your deliverability is b
 
 **Invalid Emails** - The number of recipients that you sent emails to, who had malformed email addresses or whose mail provider reported the address as invalid.
 
-**[Opens]({{root_url}}//glossary/opens/)** - The total number of times your emails were opened by recipients.
+**[Opens]({{root_url}}/glossary/opens/)** - The total number of times your emails were opened by recipients.
 
 **[Requests]({{root_url}}/glossary/request/)** - The number of emails you requested to send via SendGrid.
 
-**[Spam Reports]({{{{root_url}}/glossary/spam-reports/)** - The number of recipients who marked your email as spam.
+**[Spam Reports]({{root_url}}/glossary/spam-reports/)** - The number of recipients who marked your email as spam.
 
-**[Opens]({{root_url}}{{root_url}}/glossary/opens/)** - The number of unique recipients who opened your emails.
+**[Unique Opens]({{root_url}}/glossary/opens/)** - The number of unique recipients who opened your emails.
 
 **[Unique Clicks]({{root_url}}/glossary/clicks/)** - The number of unique recipients who clicked links in your emails.
 
