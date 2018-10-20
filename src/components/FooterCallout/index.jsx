@@ -1,6 +1,6 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import './FooterCallout.scss'
+import React from 'react';
+import Link from 'gatsby-link';
+import './FooterCallout.scss';
 
 function FooterCallout() {
   return (
@@ -25,7 +25,7 @@ function FooterCallout() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default FooterCallout
+export default FooterCallout;
