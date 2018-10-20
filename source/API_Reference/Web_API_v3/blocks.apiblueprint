@@ -50,6 +50,9 @@ There are two options for deleting blocked emails:
 
 ### Delete blocks [DELETE]
 
+{% info %} Please note, when you are completing the following requests they should not be combined. For example, if requesting to delete one address, it is not necessary to add the "delete_all=false" parameter in an effort to prevent deletion of further blocks, it is assumed. {% endinfo %}
+
+
 + Request (application/json)
 
     + Body
