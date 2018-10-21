@@ -136,7 +136,7 @@ which you usually don't have to modify but are helpful to know about.
 
 You can write pages in markdown, HTML, or HAML. They all get converted to HTML when the site is generated.
 
-Pages have a block of YAML at the top that sets a few options. They are pretty self-explanatory; here's an example
+Pages have a block of YAML at the top that sets a few options. They are pretty self-explanatory; here is an example
 
 ```
 ---
