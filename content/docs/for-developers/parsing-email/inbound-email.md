@@ -13,7 +13,7 @@ The Parse API will POST the parsed email to a URL that you specify. If a POST is
 
 <call-out>
 
-If you don't want email messages to be retried in case of an error in delivery, please respond with a 2xx status to the POST request.
+If you don't want email messages to retry sending in case of an error in delivery, please respond with a 2xx status to the POST request.
 
 </call-out>
 
