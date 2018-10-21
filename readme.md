@@ -15,7 +15,7 @@ The develop branch is merged to production weekly (unless we need to do a releas
 
 The master branch is continuously deployed to production.
 
-### _Please_, feel free to make any contributions you feel will make SendGrid Documentation better.
+### _Please_ feel free to make any contributions you feel would make SendGrid Documentation better.
 
 **Submit all pull requests to the develop branch**
 
