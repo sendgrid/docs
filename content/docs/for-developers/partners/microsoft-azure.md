@@ -7,7 +7,7 @@ navigation:
   show: true
 ---
 
-If you are using Microsoft’s cloud platform you can easily integrate with SendGrid. Simply navigate to the Azure Marketplace, locate the SendGrid add-on, select the appropriate plan, and get ready to start sending. The following documentation covers signing up, sending an email, adding an attachment, as well as using filters. See the below Code Examples to start learning how Azure and SendGrid can solve your email deliverability problems.
+If you are using Microsoft’s cloud platform you can easily integrate with SendGrid. Navigate to the Azure Marketplace, locate the SendGrid add-on, select the appropriate plan, and get ready to start sending. The following documentation covers signing up, sending an email, adding an attachment, as well as using filters. See the below Code Examples to start learning how Azure and SendGrid can solve your email deliverability problems.
 
 ## 	Code Examples
 
