@@ -9,7 +9,7 @@
 
 This is a Gatsby site.
 
-The develop branch is continuously deployed to a preview site. [View dev site](http://d2w67tjf43xwdp.cloudfront.net/)
+The develop branch is continuously deployed to a preview site. [View dev site](https://d2w67tjf43xwdp.cloudfront.net/)
 
 The develop branch is merged to production weekly (unless we need to do a release sooner than that).
 
