@@ -13,8 +13,8 @@ get
 {% endanchor %}
 Retrieve a list of Blocks with addresses and response codes, optionally with dates. {% parameters get %}
 
-  {% parameter date false 'Must be set to 1.' 'Retrieve the timestamp of the Block records. It will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS.' %}  
-  {% parameter days false 'If specified, must be an integer greater than 0.' 'Number of days in the past for which to retrieve blocks (includes today).' %}  
+  {% parameter date false 'Must be set to 1' 'Retrieve the timestamp of the Block records. It will return a date in a MySQL timestamp format - YYYY-MM-DD HH:MM:SS' %}  
+  {% parameter days false 'If specified, must be an integer greater than 0' 'Number of days in the past for which to retrieve blocks (includes today)' %}  
   {% parameter start_date false 'Date must be in YYYY-MM-DD format and be earlier than the end_date parameter.' 'The start of the date range for which to retrieve blocks.' %}  
   {% parameter end_date false 'Date must be in YYYY-MM-DD format and be later than the start_date parameter.' 'The end of the date range for which to retrieve blocks.' %}  
   {% parameter limit false 'Must be an integer.' 'Optional field to limit the number of results returned.' %}  
