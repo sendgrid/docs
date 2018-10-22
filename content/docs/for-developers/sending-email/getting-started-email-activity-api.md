@@ -32,7 +32,7 @@ This returns a list of the 10 most recent emails you've sent. Next, check out so
 
  ### 	Encoding queries
 
-All queries need to be [URL encoded](https://meyerweb.com/eric/tools/dencoder/), and have this format:
+All queries need to be [URL encoded](https://meyerweb.com/eric/tools/dencoder/) and have this format:
 
 `query={query_type}="{query_content}"`
 
@@ -100,7 +100,7 @@ Encoded, this query would look like this:
 
 ## 	Creating compound queries
 
-Use [operators and keywords](#keywords-and-operator-reference) to combine queries for a compound query. For example, you could filter for emails between a date range, or you could filter for when a specific recipients email is bounced. Here are some common use cases:
+Use [operators and keywords](#keywords-and-operator-reference) to combine queries for a compound query. For example, you could filter for emails between a date range or you could filter for when a specific recipients email is bounced. Here are some common use cases:
 
  ### 	Filter by a recipient email that was bounced
 
@@ -134,7 +134,7 @@ curl --request GET \
 
 ## 	Keywords and Operator reference
 
-There are several operators and keywords that you can use to build [Compound queries](#creating-compound-queries). Use these operators between query statements. If the character used as the delimiter if it is found within the string. The escape character is `\`, which must be escaped with a preceding `\`. All queries need to be URL encoded.
+There are several operators and keywords that you can use to build [Compound queries](#creating-compound-queries). Use these operators between query statements. If the character used as the delimiter is found within the string. The escape character is `\`, which must be escaped with a preceding `\`. All queries need to be URL encoded.
 
 *This is a full list of accepted operators and keywords:*
 
