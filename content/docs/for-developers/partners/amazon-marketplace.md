@@ -52,7 +52,7 @@ You can only add a Dedicated IP Address if you are on an AWS Pro plan. To upgrad
 4. Select the number of IP Addresses to add, and select whether you want to warm up your IP automatically. Warming up an IP gradually increases the amount of email sent over this IP over time to improve your email deliverability. For more information, see [Warming Up IPs]({{root_url}}/ui/sending-email/warming-up-an-ip-address/).
 5. Click **Add**.
 
-### Adding domain authentication and link branding
+### Adding Domain Authentication and Link Branding
 
 Sender authentication shows email providers that SendGrid has your permission to send emails on your behalf. Domain authentication works by pointing DNS entries from your domain registrar to SendGrid, which drastically increases your ability to deliver email and allows you to begin building a sender reputation for your domain and for your IP addresses. For more information domain authentication, see [How to Set Up Domain Authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/).
 
