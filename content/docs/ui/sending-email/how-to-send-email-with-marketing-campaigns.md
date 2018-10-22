@@ -26,8 +26,8 @@ Before sending your first campaign, you need to do the following:
 
 1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**.
 
-1. Click **Create Campaign**.
-<br> To create a campaign from an existing one, find the version you want to use and hover over the **action menu** to the far right of the campaign. Select **Duplicate**.<br>
+1. To create a new campaign, click **Create Campaign**.
+<br> Note: To create a campaign from an existing one, find the version you want to use and hover over the **action menu** to the far right of the campaign. Select **Duplicate**.<br>
 <br> If you have an existing draft, find the version you would like to continue working on, hover over the **action menu** to the far right of the campaign, and then select **Edit**.
 ![]({{root_url}}/images/campaigns_dashboard_categories_search.png)
 
@@ -38,7 +38,7 @@ Before sending your first campaign, you need to do the following:
 <br> You can choose between the **Design Editor** and the **Code Editor**.
 ![]({{root_url}}/images/choose_editor.png)
 
-The Design Editor offers users powerful drag & drop WYSIWYG editing tools, making it possible for anyone to build beautiful emails, regardless of HTML knowledge. For those familiar with HTML who are looking to leverage the Design Editor, you can modify the HTML of individual content modules.
+The Design Editor offers users powerful drag & drop, WYSIWYG editing tools, making it possible for anyone to build beautiful emails, regardless of HTML knowledge. For those familiar with HTML who are looking to leverage the Design Editor, you can modify the HTML of individual content modules.
 
 The Code Editor provides users who are importing, editing, or crafting custom HTML a robust environment to upload images, write HTML, and configure their campaign without interference from the HTML-generating WYSIWYG tools.
 
@@ -84,7 +84,7 @@ If you have the flexibility, it's better to schedule mail at off-peak times. Mos
 
 <call-out type="warning">
 
-Be sure your account is set to the correct time zone in order to ensure that your emails get sent at the time you intend.
+Campaigns are sent according to the time zone specified in the settings of your account. Be sure your account is set to the correct time zone in order to ensure that your emails are sent at the time you intend.
 
 </call-out>
 
