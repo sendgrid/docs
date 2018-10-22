@@ -2,7 +2,7 @@
 seo:
   title: Campaigns
   description: Campaigns are used to send custom emails to targeted recipient segments.
-  keywords:
+  keywords: campaigns
 title: Campaigns
 weight: 0
 layout: page
