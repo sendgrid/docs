@@ -1,0 +1,301 @@
+// sass-lint:disable no-color-keywords, no-important
+// linting disabled due to custom color names matching predefined colors
+
+.hidden {
+  display: none !important;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+// color map for generating color and bg-color classes
+$colors: (
+  sg-blue:            $sg-blue,
+  sg-blue-80:         $sg-blue-80,
+  sg-blue-60:         $sg-blue-60,
+  sg-blue-40:         $sg-blue-40,
+  sg-blue-20:         $sg-blue-20,
+  sg-blue-10:         $sg-blue-10,
+  sg-blue-05:         $sg-blue-05,
+  sg-blue-02:         $sg-blue-02,
+  slate:              $slate,
+  slate-80:           $slate-80,
+  slate-60:           $slate-60,
+  slate-40:           $slate-40,
+  slate-20:           $slate-20,
+  slate-10:           $slate-10,
+  slate-05:           $slate-05,
+  slate-02:           $slate-02,
+  ron-burgundy:       $ron-burgundy,
+  burnt-orange:       $burnt-orange,
+  carrot:             $carrot,
+  mango:              $mango,
+  mantis:             $mantis,
+  spruce:             $spruce,
+  grass-stain:        $grass-stain,
+  lime:               $lime,
+  cobalt:             $cobalt,
+  bluebird:           $bluebird,
+  seafoam:            $seafoam,
+  caribbean:          $caribbean,
+  crown:              $crown,
+  screample:          $screample,
+  sangria:            $sangria,
+  lavender:         $lavender,
+  wild-strawberry:    $wild-strawberry,
+  steel:              $steel,
+  logo-accent-light:  $logo-accent-light,
+  logo-accent-medium: $logo-accent-medium,
+  logo-accent-dark:   $logo-accent-dark,
+  white:            #fff
+);
+
+// Color
+@each $name, $value in $colors {
+  .color-#{$name} {
+    color: $value;
+  }
+}
+
+@each $name, $value in $colors {
+  .bg-color-#{$name} {
+    background-color: $value;
+  }
+}
+
+// alignment
+.ta-center {
+  text-align: center;
+}
+
+.ta-left {
+  text-align: left;
+}
+
+.ta-right {
+  text-align: right;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+// display
+.d-block {
+  display: block;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.hide {
+  display: none;
+}
+
+// misc
+.show-for-sr {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+// margins
+.m-top-1 {
+  margin-top: $scaleup-1;
+}
+
+.m-top-2 {
+  margin-top: $scaleup-2;
+}
+
+.m-top-3 {
+  margin-top: $scaleup-3;
+}
+
+.m-top-4 {
+  margin-top: $scaleup-4;
+}
+
+.m-top-5 {
+  margin-top: $scaleup-5;
+}
+
+.m-top-6 {
+  margin-top: $scaleup-6;
+}
+
+.m-top-7 {
+  margin-top: $scaleup-7;
+}
+
+.m-top-8 {
+  margin-top: $scaleup-8;
+}
+
+.m-top-9 {
+  margin-top: $scaleup-9;
+}
+
+.m-top-10 {
+  margin-top: $scaleup-10;
+}
+
+.m-top-down-1 {
+  margin-top: $scaledown-1;
+}
+
+.m-top-down-2 {
+  margin-top: $scaledown-2;
+}
+
+// Sized Margins - Bottom
+.m-bottom-1 {
+  margin-bottom: $scaleup-1;
+}
+
+.m-bottom-2 {
+  margin-bottom: $scaleup-2;
+}
+
+.m-bottom-3 {
+  margin-bottom: $scaleup-3;
+}
+
+.m-bottom-4 {
+  margin-bottom: $scaleup-4;
+}
+
+.m-bottom-5 {
+  margin-bottom: $scaleup-5;
+}
+
+.m-bottom-6 {
+  margin-bottom: $scaleup-6;
+}
+
+.m-bottom-7 {
+  margin-bottom: $scaleup-7;
+}
+
+.m-bottom-8 {
+  margin-bottom: $scaleup-8;
+}
+
+.m-bottom-9 {
+  margin-bottom: $scaleup-9;
+}
+
+.m-bottom-10 {
+  margin-bottom: $scaleup-10;
+}
+
+.m-bottom-down-1 {
+  margin-bottom: $scaledown-1;
+}
+
+.m-bottom-down-2 {
+  margin-bottom: $scaledown-2;
+}
+
+// padding
+.p-top-1 {
+  padding-top: $scaleup-1;
+}
+
+.p-top-2 {
+  padding-top: $scaleup-2;
+}
+
+.p-top-3 {
+  padding-top: $scaleup-3;
+}
+
+.p-top-4 {
+  padding-top: $scaleup-4;
+}
+
+.p-top-5 {
+  padding-top: $scaleup-5;
+}
+
+.p-top-6 {
+  padding-top: $scaleup-6;
+}
+
+.p-top-7 {
+  padding-top: $scaleup-7;
+}
+
+.p-top-8 {
+  padding-top: $scaleup-8;
+}
+
+.p-top-9 {
+  padding-top: $scaleup-9;
+}
+
+.p-top-10 {
+  padding-top: $scaleup-10;
+}
+
+.p-top-down-1 {
+  padding-top: $scaledown-1;
+}
+
+.p-top-down-2 {
+  padding-top: $scaledown-2;
+}
+
+// Sized Margins - Bottom
+.p-bottom-1 {
+  padding-bottom: $scaleup-1;
+}
+
+.p-bottom-2 {
+  padding-bottom: $scaleup-2;
+}
+
+.p-bottom-3 {
+  padding-bottom: $scaleup-3;
+}
+
+.p-bottom-4 {
+  padding-bottom: $scaleup-4;
+}
+
+.p-bottom-5 {
+  padding-bottom: $scaleup-5;
+}
+
+.p-bottom-6 {
+  padding-bottom: $scaleup-6;
+}
+
+.p-bottom-7 {
+  padding-bottom: $scaleup-7;
+}
+
+.p-bottom-8 {
+  padding-bottom: $scaleup-8;
+}
+
+.p-bottom-9 {
+  padding-bottom: $scaleup-9;
+}
+
+.p-bottom-10 {
+  padding-bottom: $scaleup-10;
+}

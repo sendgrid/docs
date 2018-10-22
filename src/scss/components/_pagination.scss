@@ -1,0 +1,41 @@
+.pagination {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  clear: both;
+  text-align: center;
+}
+
+.pagination-prev {
+  float: left;
+}
+
+.pagination-next {
+  float: right;
+}
+
+.pagination-links {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.pagination-link {
+  padding: 8px;
+  font-size: 13px;
+  color: $slate;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover,
+  &.is-active {
+    color: $sg-blue;
+  }
+
+  &.is-active {
+    font-weight: 600;
+  }
+}
+
+.pagination-ellipses {
+  padding: 10px;
+}

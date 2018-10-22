@@ -1,0 +1,21 @@
+{
+  "extends": "stylelint-config-standard",
+  "plugins": [
+    "stylelint-selector-bem-pattern"
+  ],
+  "rules": {
+    "indentation": 2,
+    "at-rule-no-unknown": null,
+    "plugin/selector-bem-pattern": {
+      "componentName": "(([a-z0-9]+(?!-$)-?)+)",
+      "componentSelectors": {
+        "initial": "\\.{componentName}(((__|--)(([a-z0-9\\[\\]'=]+(?!-$)-?)+))+)?$"
+      },
+      "ignoreSelectors": [
+        ".*\\.no-js.*",
+        ".*\\.js-.*",
+        ".*\\.lt-ie.*"
+      ]
+    }
+  }
+}

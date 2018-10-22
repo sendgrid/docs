@@ -1,7 +1,0 @@
--host  sendgrid.com/docs
--root  public
--doc   linklint_logs
--index index.html index.cgi
--skip /Marketing_Emails/tags.html /API_Reference/Customer_Subuser_API/subusers.html
--quiet
-/@

@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /docs/ui/sending-email/create-and-manage-unsubscribe-groups/
+Disallow: /docs/ui/sending-email/getting-started-with-automation/

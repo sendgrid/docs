@@ -1,0 +1,50 @@
+@import '../../scss/global/variables';
+
+.home-glossary {
+  margin: $scaleup-5 0;
+  z-index: 2;
+
+  h2 {
+    position: relative;
+    text-align: center;
+  }
+}
+
+.home-glossary__container {
+  padding-left: $scaleup-11;
+  padding-right: $scaleup-11;
+
+  @media (max-width: $width-mobile) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+p.glossary-link {
+  margin-bottom: $scaledown-1;
+}
+
+.glossary-icon {
+  margin: 0 auto 0 $scaleup-1;
+  display: block;
+
+  @media (max-width: $width-mobile) {
+    margin: $scaleup-1 auto 0;
+  }
+}
+
+.for-devs-glossary {
+  background: $mantis;
+  background: $gradient-dev-glossary;
+  padding: $scaleup-2 0;
+
+  p,
+  h2 {
+    color: #fff;
+    font-weight: 600;
+  }
+
+  p.glossary-link {
+    font-weight: 400;
+  }
+}

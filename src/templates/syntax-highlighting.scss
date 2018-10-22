@@ -1,0 +1,146 @@
+@import '../scss/global/variables';
+
+$code_purple: #7c4dff;
+$code_blue: #1a82e2;
+$code_green: #18c96e;
+
+code[class*="language-"],
+pre[class*="language-"] {
+    font-family: Menlo, Consolas, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+    font-size: 14px;
+    line-height: 1.75;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    background: $slate-05;
+    color: $slate-80;
+}
+
+pre[class*="language-"]::-moz-selection,
+pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection,
+code[class*="language-"] ::-moz-selection {
+    text-shadow: none;
+    background: $slate-20;
+}
+
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection,
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection {
+    text-shadow: none;
+    background: $slate-20;
+}
+
+pre[class*="language-"] {
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+}
+
+:not(pre) > code[class*="language-"] {
+    padding: 0.1em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: $slate-80;
+}
+
+.token.comment {
+    color: $code_purple;
+}
+
+.token.punctuation {
+    color: $slate-80;
+}
+
+.token.namespace {
+    opacity: 0.7;
+}
+
+.token.operator,
+.token.boolean,
+.token.number {
+    color: $code_purple;
+}
+
+.token.property {
+    color: $code_blue;
+}
+
+.token.selector {
+    color: $code_purple;
+}
+
+.token.attr-name {
+    color: $code_purple;
+}
+
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+    color: $code_green;
+}
+
+.token.attr-value,
+.token.keyword,
+.token.control,
+.token.directive,
+.token.unit {
+    color: $code_green;
+}
+
+.token.statement,
+.token.regex,
+.token.atrule {
+    color: $code_purple;
+}
+
+.token.placeholder,
+.token.variable {
+    color: $code_blue;
+}
+
+.token.deleted {
+    text-decoration: line-through;
+}
+
+.token.inserted {
+    border-bottom: 1px dotted #fff;
+    text-decoration: none;
+}
+
+.token.italic {
+    font-style: italic;
+}
+
+.token.important,
+.token.bold {
+    font-weight: bold;
+}
+
+.token.important {
+    color: $code_blue;
+}
+
+.token.entity {
+    cursor: help;
+}
+
+pre > code.highlight {
+    outline: 0.4em solid $code_blue;
+    outline-offset: 0.4em;
+}

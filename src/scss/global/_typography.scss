@@ -1,0 +1,626 @@
+// sass-lint:disable indentation, no-duplicate-properties
+// linting disabled due to @font-face declartions supporting multiple types
+
+// colfax - http://goo.gl/U2k5AW
+@font-face {
+  font-family: 'Colfax';
+  font-style: normal;
+  font-weight: 300;
+  src: url('#{$font-path}/colfax/colfax-light.woff2') format('woff2'),
+    url('#{$font-path}/colfax/colfax-light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Colfax';
+  font-style: normal;
+  font-weight: 400;
+  src: url('#{$font-path}/colfax/colfax-regular.woff2') format('woff2'),
+    url('#{$font-path}/colfax/colfax-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Colfax';
+  font-style: normal;
+  font-weight: 600;
+  src: url('#{$font-path}/colfax/colfax-medium.woff2') format('woff2'),
+    url('#{$font-path}/colfax/colfax-medium.woff') format('woff');
+}
+
+// icon font - http://icomoon.com
+@font-face {
+  font-family: 'styleguideicons';
+  font-style: normal;
+  font-weight: normal;
+  src: url('#{$font-path}/icons/style-guide-icons.eot');
+  src: url('#{$font-path}/icons/style-guide-icons.eot#iefix')
+      format('embedded-opentype'),
+    url('#{$font-path}/icons/style-guide-icons.ttf') format('truetype'),
+    url('#{$font-path}/icons/style-guide-icons.woff') format('woff'),
+    url('#{$font-path}/icons/style-guide-icons.svg#style-guide-icons')
+      format('svg');
+}
+
+body {
+  @include colfax();
+  color: $slate-80;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+.is-size-h1,
+.is-size-h2,
+.is-size-h3,
+.is-size-h4 {
+  font-weight: 600;
+  color: $slate;
+}
+
+h1,
+.is-size-h1 {
+  margin-bottom: 27px;
+  font-size: $scaleup-5;
+  line-height: $scaleup-6;
+  letter-spacing: -1px;
+}
+
+h2,
+.is-size-h2 {
+  margin-bottom: 18px;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: -0.5px;
+}
+
+h3,
+.is-size-h3 {
+  margin-bottom: 12px;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+h4,
+.is-size-h4 {
+  margin-bottom: 9px;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  color: $slate-80;
+  text-transform: uppercase;
+}
+
+p,
+.is-p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 27px;
+
+  .sg-icon {
+    margin-right: 6px;
+    vertical-align: text-bottom;
+  }
+}
+
+ol,
+ul {
+  font-size: 13px;
+  line-height: 20px;
+  padding-left: $scaleup-1;
+}
+
+strong {
+  font-weight: 600;
+}
+
+em {
+  font-style: italic;
+}
+
+strong em,
+em strong {
+  font-style: italic;
+  font-weight: 600;
+}
+
+abbr {
+  text-decoration: none;
+  background-image: linear-gradient(to right, $slate 33%, $white 0%);
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 3px 1px;
+}
+
+// TODO: only used in tables-empty.njk
+// remove after verifying that nothing is broken (replace w/ .is-centered ?)
+.is-center {
+  text-align: center;
+}
+
+.error {
+  color: $ron-burgundy;
+}
+
+small,
+.small {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.mono {
+  font-family: 'Andale Mono', Monaco, Consolas, 'Lucida Console', monospace;
+}
+
+.highlighter {
+  background-color: $color-highlighter;
+}
+
+.is-weight-light {
+  font-weight: 300;
+}
+
+.is-weight-medium {
+  font-weight: 600;
+}
+
+.sg-icon {
+  @include icon-font-base;
+
+  &.is-size-20 {
+    font-size: 20px;
+  }
+
+  &.is-size-30 {
+    font-size: 30px;
+  }
+
+  &.is-size-40 {
+    font-size: 40px;
+  }
+
+  &.is-size-60 {
+    font-size: 60px;
+  }
+}
+
+.sg-icon-airplane {
+  &::before {
+    content: $icon-airplane;
+  }
+}
+
+.sg-icon-airplane-fill {
+  &::before {
+    content: $icon-airplane-fill;
+  }
+}
+
+.sg-icon-align-center {
+  &::before {
+    content: $icon-align-center;
+  }
+}
+
+.sg-icon-align-left {
+  &::before {
+    content: $icon-align-left;
+  }
+}
+
+.sg-icon-align-right {
+  &::before {
+    content: $icon-align-right;
+  }
+}
+
+.sg-icon-analytics {
+  &::before {
+    content: $icon-analytics;
+  }
+}
+
+.sg-icon-automation {
+  &::before {
+    content: $icon-automation;
+  }
+}
+
+.sg-icon-builder {
+  &::before {
+    content: $icon-builder;
+  }
+}
+
+.sg-icon-button {
+  &::before {
+    content: $icon-button;
+  }
+}
+
+.sg-icon-calendar {
+  &::before {
+    content: $icon-calendar;
+  }
+}
+
+.sg-icon-caret {
+  &::before {
+    content: $icon-caret;
+  }
+}
+
+.sg-icon-check {
+  &::before {
+    content: $icon-check;
+  }
+}
+
+.sg-icon-check-circle {
+  &::before {
+    content: $icon-check-circle;
+  }
+}
+
+// TODO: remove once we are sure this class isn't being used by engineering teams
+.sg-icon-check-circle-fill {
+  &::before {
+    content: $icon-status-positive;
+  }
+}
+
+.sg-icon-check-thin {
+  &::before {
+    content: $icon-check-thin;
+  }
+}
+
+.sg-icon-clean-ui {
+  &::before {
+    content: $icon-clean-ui;
+  }
+}
+
+.sg-icon-click {
+  &::before {
+    content: $icon-click;
+  }
+}
+
+.sg-icon-clock {
+  &::before {
+    content: $icon-clock;
+  }
+}
+
+.sg-icon-code {
+  &::before {
+    content: $icon-code;
+  }
+}
+
+.sg-icon-columns {
+  &::before {
+    content: $icon-columns;
+  }
+}
+
+.sg-icon-contacts {
+  &::before {
+    content: $icon-contacts;
+  }
+}
+
+.sg-icon-contacts-alt {
+  &::before {
+    content: $icon-contacts-alt;
+  }
+}
+
+.sg-icon-copy {
+  &::before {
+    content: $icon-copy;
+  }
+}
+
+.sg-icon-create {
+  &::before {
+    content: $icon-create;
+  }
+}
+
+.sg-icon-csv {
+  &::before {
+    content: $icon-csv;
+  }
+}
+
+.sg-icon-desktop-view {
+  &::before {
+    content: $icon-desktop-view;
+  }
+}
+
+.sg-icon-divider {
+  &::before {
+    content: $icon-divider;
+  }
+}
+
+.sg-icon-drag {
+  &::before {
+    content: $icon-drag;
+  }
+}
+
+.sg-icon-editor-code {
+  &::before {
+    content: $icon-editor-code;
+  }
+}
+
+.sg-icon-editor-design {
+  &::before {
+    content: $icon-editor-design;
+  }
+}
+
+.sg-icon-editor-old {
+  &::before {
+    content: $icon-editor-old;
+  }
+}
+
+.sg-icon-ellipsis {
+  &::before {
+    content: $icon-ellipsis;
+  }
+}
+
+.sg-icon-export {
+  &::before {
+    content: $icon-export;
+  }
+}
+
+.sg-icon-gear {
+  &::before {
+    content: $icon-gear;
+  }
+}
+
+.sg-icon-help {
+  &::before {
+    content: $icon-help;
+  }
+}
+
+.sg-icon-image {
+  &::before {
+    content: $icon-image;
+  }
+}
+
+.sg-icon-images {
+  &::before {
+    content: $icon-images;
+  }
+}
+
+.sg-icon-image-text {
+  &::before {
+    content: $icon-image-text;
+  }
+}
+
+.sg-icon-info-circle {
+  &::before {
+    content: $icon-info-circle;
+  }
+}
+
+.sg-icon-key {
+  &::before {
+    content: $icon-key;
+  }
+}
+
+.sg-icon-list {
+  &::before {
+    content: $icon-list;
+  }
+}
+
+.sg-icon-locked {
+  &::before {
+    content: $icon-locked;
+  }
+}
+
+.sg-icon-mail {
+  &::before {
+    content: $icon-mail;
+  }
+}
+
+.sg-icon-mail-search {
+  &::before {
+    content: $icon-mail-search;
+  }
+}
+
+.sg-icon-mobile-view {
+  &::before {
+    content: $icon-mobile-view;
+  }
+}
+
+.sg-icon-pencil {
+  &::before {
+    content: $icon-pencil;
+  }
+}
+
+.sg-icon-people {
+  &::before {
+    content: $icon-people;
+  }
+}
+
+.sg-icon-pie-chart {
+  &::before {
+    content: $icon-pie-chart;
+  }
+}
+
+.sg-icon-plus {
+  &::before {
+    content: $icon-plus;
+  }
+}
+
+.sg-icon-reload {
+  &::before {
+    content: $icon-reload;
+  }
+}
+
+.sg-icon-save-draft {
+  &::before {
+    content: $icon-save-draft;
+  }
+}
+
+.sg-icon-search {
+  &::before {
+    content: $icon-search;
+  }
+}
+
+.sg-icon-segment {
+  &::before {
+    content: $icon-segment;
+  }
+}
+
+.sg-icon-social {
+  &::before {
+    content: $icon-social;
+  }
+}
+
+.sg-icon-sort-asc {
+  &::before {
+    content: $icon-sort-asc;
+  }
+}
+
+.sg-icon-sort-desc {
+  &::before {
+    content: $icon-sort-desc;
+  }
+}
+
+.sg-icon-spacer {
+  &::before {
+    content: $icon-spacer;
+  }
+}
+
+.sg-icon-status-caution {
+  &::before {
+    content: $icon-status-caution;
+  }
+}
+
+.sg-icon-status-negative {
+  &::before {
+    content: $icon-status-negative;
+  }
+}
+
+.sg-icon-status-positive {
+  &::before {
+    content: $icon-status-positive;
+  }
+}
+
+.sg-icon-teammate {
+  &::before {
+    content: $icon-teammate;
+  }
+}
+
+.sg-icon-test-data {
+  &::before {
+    content: $icon-test-data;
+  }
+}
+
+.sg-icon-text {
+  &::before {
+    content: $icon-text;
+  }
+}
+
+.sg-icon-text-only {
+  &::before {
+    content: $icon-text-only;
+  }
+}
+
+.sg-icon-trash {
+  &::before {
+    content: $icon-trash;
+  }
+}
+
+.sg-icon-unlocked {
+  &::before {
+    content: $icon-unlocked;
+  }
+}
+
+.sg-icon-unsubscribe {
+  &::before {
+    content: $icon-unsubscribe;
+  }
+}
+
+.sg-icon-user-security {
+  &::before {
+    content: $icon-user-security;
+  }
+}
+
+.sg-icon-view {
+  &::before {
+    content: $icon-view;
+  }
+}
+
+.sg-icon-warning {
+  &::before {
+    content: $icon-warning;
+  }
+}
+
+.sg-icon-warning-triangle {
+  &::before {
+    content: $icon-warning-triangle;
+  }
+}
+
+.sg-icon-x {
+  &::before {
+    content: $icon-x;
+  }
+}
+
+.sg-icon-x-legacy {
+  &::before {
+    content: $icon-x-legacy;
+  }
+}

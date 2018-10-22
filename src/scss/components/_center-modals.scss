@@ -1,0 +1,112 @@
+// TODO: separated from _modals.scss for scoping reasons in mako
+// TODO: re-join with _modals.scss as soon as mako team can refactor the .center-modal class
+
+.center-modal {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 999;
+  width: $center-modal-width;
+  padding: 60px;
+  margin-bottom: 45px;
+  margin-left: $center-modal-position;
+  pointer-events: none;
+  background-color: $center-modal-bg;
+  border-radius: $border-radius;
+  outline: none;
+  opacity: 0;
+  transition: top 0.3s, opacity 0.3s;
+
+  &.is-visible {
+    top: 100px;
+    pointer-events: all;
+    opacity: 1;
+  }
+
+  &.is-large {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: calc(90% - 60px);
+    max-height: 900px;
+    min-height: 530px;
+    padding: 0;
+    margin: 5%;
+    overflow: hidden;
+
+    &.has-padding {
+      padding: 20px;
+    }
+
+    .sg-icon-x {
+      top: 20px;
+    }
+  }
+
+  .modal-inner-scroll {
+    // removes height of title and footer buttons
+    height: calc(100% - 98px);
+    overflow: scroll;
+    border-radius: $border-radius;
+  }
+
+  .modal-footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: right;
+    background-color: $center-modal-bg;
+  }
+
+  .accordion-wrapper {
+    border: 0;
+  }
+
+  .accordion-content {
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: inherit;
+  }
+
+  .tab-wrapper {
+    padding-left: 30px;
+  }
+
+  .tab-panel {
+    display: none;
+    height: 100%;
+    padding: 30px;
+    overflow: scroll;
+
+    &.is-visible {
+      display: block;
+    }
+  }
+
+  .tab-wrapper ~ .tab-panel {
+    height: calc(100% - 60px);
+  }
+
+  .tab-panel img {
+    max-width: 100%;
+  }
+
+  .alert {
+    margin-bottom: 15px;
+  }
+
+  .alert .sg-icon-x {
+    top: 50%;
+  }
+
+  .sg-icon-x {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
