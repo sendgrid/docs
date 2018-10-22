@@ -52,7 +52,7 @@ The total message size limit, including the message itself and any number of att
 
 If you receive email which is not in ASCII only format, you will want to read this section.
 
-Messages and their headers can have character set data associated with them. In order to simplify the parsing of messages for the end user, SendGrid will decode the to, from, cc, and subject headers if needed. All headers will be converted to UTF-8 for uniformity, since technically a header can be in many different character sets.
+Messages and their headers can have character set data associated with them. In order to simplify the parsing of messages for the end user, SendGrid will decode the to, from, cc, and subject headers if needed. All headers will be converted to UTF-8 for uniformity since technically a header can be in many different character sets.
 
 The charsets variable will contain a JSON encoded hash of the header / field name and its respective character set. For instance, it may look like:
 
