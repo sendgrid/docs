@@ -16,7 +16,7 @@ You can easily add contacts to your contact database by uploading a CSV into Mar
 
 ## General Formatting Rules
 
-Here are some rules to follow when formatting a CSV to upload into Marketing Campaigns. Click [here]({{root_url}}/assets/example.csv) to download a sample csv file.
+Here are some rules to follow when formatting a CSV to upload into Marketing Campaigns. Click [here](/static/assets/example.csv) to download a sample csv file.
 
 ### Contact Info
 
@@ -26,7 +26,7 @@ Your CSV should contain the following information about each contact:
 * first_name
 * last_name
 
-You can also include [custom fields]({{root_url}}/ui/managing-contacts/custom-fields/) with additional identifying information for each contact in the CSV. For example, you can specify “country,” “city,” and “age” as the custom fields. The data in the custom fields are critical for both segmentation and content personalization.
+You can also include [custom fields](./custom-fields.md) with additional identifying information for each contact in the CSV. For example, you can specify “country,” “city,” and “age” as the custom fields. The data in the custom fields are critical for both segmentation and content personalization.
 
 ### Header Row
 
