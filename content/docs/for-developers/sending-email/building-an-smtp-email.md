@@ -10,7 +10,7 @@ layout: page
 navigation:
   show: true
 ---
-Now that you've sent a [sent a test SMTP email with Telnet]({{root_url}}/for-developers/sending-email/getting-started-smtp/), and [integrated with SendGrid]({{root_url}}/for-developers/sending-email/integrating-with-the-smtp-api/), it's time to build content.
+Now that you've [sent a test SMTP email with Telnet]({{root_url}}/for-developers/sending-email/getting-started-smtp/), and [integrated with SendGrid]({{root_url}}/for-developers/sending-email/integrating-with-the-smtp-api/), it's time to build content.
 
 ## 	Getting started building
 
