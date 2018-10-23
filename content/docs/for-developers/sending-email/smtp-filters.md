@@ -23,7 +23,7 @@ For more information on the utility of these settings, please check out the [Set
 
 <call-out>
 
-Some Settings are not listed here, because they cannot be defined on a per-message basis. To update these other Settings, please refer to the
+Some Settings are not listed here because they cannot be defined on a per-message basis. To update these other Settings, please refer to the
 [Web API Filter Settings]({{root_url}}/API_Reference/Web_API/filter_settings.html) commands.
 
 </call-out>
