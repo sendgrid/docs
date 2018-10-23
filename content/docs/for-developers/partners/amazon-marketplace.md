@@ -6,7 +6,7 @@ group: platform-partners
 navigation:
   show: true
 ---
-SendGrid has partnered with Amazon to offer our email services on the [Amazon Marketplace](https://aws.amazon.com/marketplace/pp/B074CQY6KB). Built for developers and designed for marketers, SendGrid offers developers simple SMTP and API integrations while non-technical users can leverage an intuitive interface to create, send, and analyze marketing emails.
+SendGrid has partnered with Amazon to offer our email services on the [Amazon Marketplace](https://aws.amazon.com/marketplace/pp/B074CQY6KB). Built by developers for developers, SendGrid offers developers simple SMTP and API integrations to start sending in minutes. Non-technical users can leverage Marketing Campaign's intuitive interface to create, send, and analyze marketing emails.
 
 Once you have an AWS account, you can to [subscribe to SendGrid](https://aws.amazon.com/marketplace/pp/B074CQY6KB) and access it directly from the [AWS Management Console](https://console.aws.amazon.com/). Once you’ve subscribed to SendGrid, you have access to the [SendGrid application](https://app.sendgrid.com/) and the APIs. Use the AWS Management Console if you want to reset your password, cancel your account, or manage bills.
 
@@ -32,7 +32,7 @@ If you are using SendGrid through AWS, you cannot change your SendGrid username.
 
 ### Pricing
 
-There are two plans: AWS Basic and AWS Pro. For more information, check out our[ AWS Marketplace page](https://aws.amazon.com/marketplace/pp/B074CQY6KB). Here's a monthly view of cost:
+There are two plans: AWS Basic and AWS Pro. These plans are billed on your AWS invoice. For more information, check out our[ AWS Marketplace page](https://aws.amazon.com/marketplace/pp/B074CQY6KB). Here's a monthly view of cost:
 
 ![]({{root_url}}/images/aws_pricing.png "AWS pricing")
 
@@ -54,7 +54,7 @@ You can only add a Dedicated IP Address if you are on an AWS Pro plan. To upgrad
 
 ### Adding domain authentication and link branding
 
-Sender authentication shows email providers that SendGrid has your permission to send emails on your behalf. Domain authentication works by pointing DNS entries from your domain registrar to SendGrid, which drastically increases your ability to deliver email and allows you to begin building a sender reputation for your domain and for your IP addresses. For more information domain authentication, see [How to Set Up Domain Authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/).
+Sender authentication shows email providers that SendGrid has your permission to send emails on your behalf. Domain authentication works by pointing DNS entries from your domain registrar to SendGrid, which drastically increases your ability to deliver email and allows you to begin building a sender reputation for your domain and for your IP addresses. For more information on domain authentication, see [How to Set Up Domain Authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/).
 
 ### Adding Subusers
 

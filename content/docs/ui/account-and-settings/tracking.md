@@ -57,7 +57,7 @@ When using this service customers often ask the difference between a unique open
 
 **Replacement Tag** - If you do not want the open tracking image to be inserted at the end of your email, it is possible to specify an alternative location by using a replacement tag and the open tracking [SMTP API header]({{root_url}}/for-developers/sending-email/smtp-filters/#opentrack).
 
-If you are sending email through our [v3 Web API]({{root_url}}/API_Reference/Web_API_v3/Mail/index/), you may also enable the `open_tracking` parameter, and set the `substitution_tag` parameter to a value of your choice. You may insert that substitution tag anywhere in your email, and it will be replaced with the open tracking image.
+If you are sending email through our [v3 Web API]({{root_url}}/API_Reference/Web_API_v3/index.html), you may also enable the `open_tracking` parameter, and set the `substitution_tag` parameter to a value of your choice. You may insert that substitution tag anywhere in your email, and it will be replaced with the open tracking image.
 
 **Related Information** - [How Google’s Image Caching effects your opens](https://sendgrid.com/blog/googles-new-image-caching-5-things-need-know/)
 
