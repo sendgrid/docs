@@ -1,7 +1,7 @@
 import React from 'react';
 import SOCIAL_LINKS from '../../constants/socialLinks';
 
-const SocialLinks = () => {
+function SocialLinks() {
   const links = SOCIAL_LINKS.map(item => (
     <a href={item.URL} key={item.TEXTNODE} target="_blank" rel="noopener noreferrer">
       <img alt={item.TEXTNODE} src={item.IMG} />
