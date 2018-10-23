@@ -84,7 +84,7 @@ After you’ve run wp_mail(), you must remove the ‘text/html’ filter in orde
 remove_filter('wp_mail_content_type', 'set_html_content_type');
 ```
 
-## 	Sending HTML In Your Email Using Different Headers
+## 	Sending HTML in Your Email Using Different Headers
 
  #### 	Using an Array to Set Your Headers
 

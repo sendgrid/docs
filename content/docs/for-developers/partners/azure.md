@@ -7,7 +7,7 @@ navigation:
   show: true
 ---
 
-## 	Point and Click Setup in Windows Azure
+## 	Point and click setup in Windows Azure
 
 You can control a website, mobile backend and SendGrid all from within the Windows Azure management portal. We will cover all 3 of these in this tutorial.
 
@@ -94,7 +94,7 @@ While you're waiting for DNS to be ready, you can prepare your SendGrid Incoming
 
 Once the DNS has propagated, you’ll be able to receive an email to any email address `@playlist.example.com`. In the next step, we’ll make sure your website on Windows Azure is ready to accept those emails.
 
-## 	Prepare the Code to Run on Windows Azure
+## 	Prepare the code to run on Windows Azure
 
 Before you can put the code in place, you need to prepare your source control system, which will be Git in this case. Make sure you have Git installed on your local machine before proceeding. There are downloads for Windows, Mac, Linux, and Solaris.
 Now set up your repository within the Windows Azure interface:
@@ -165,7 +165,7 @@ One last thing, you need to update the receiving email address:
 
 With your changes pushed to Azure, you can restart the server with the button at the bottom of the web server’s dashboard. Then click the BROWSE button within the same menu to see your website live. At this point, people can send in their song requests, assuming that the DNS has propagated.
 
-## 	Add a Backend Using Windows Mobile Services
+## 	Add a backend using Windows Azure Mobile Services
 
 Windows Azure can also run a backend-as-a-service for your app, which allows you to store data, authenticate users, send push notifications, and do other common mobile tasks. This backend can also be used for non-mobile applications.
 

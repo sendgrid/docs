@@ -20,7 +20,7 @@ If you are looking for information on how to cancel a scheduled email or campaig
 
 ## 	Stopping Transactional Email
 
-Stopping an ongoing send that is using SMTP or the Web API can be tricky, because we strive to accept and send email requests as quickly as possible. Sometimes stopping an accidental send is just not possible. However, following are several suggestions for how to halt a send in progress, or a send that you have scheduled.
+Stopping an ongoing send that is using SMTP or the Web API can be tricky, because we strive to accept and send email requests as quickly as possible. Sometimes stopping an accidental send is just not possible. However, following are several suggestions for how to halt a send in progress or a send that you have scheduled.
 
  ### 	1. Change Your Password
 
@@ -30,7 +30,7 @@ This method is great if you have a runaway script or have just started a send ac
 
 <call-out type="warning">
 
-We cannot guarantee that changing your password will prevent 100% of your email requests from being delivered. We only recommend this method as a last resort that may allow you to stop at least some of your emails from begin sent.
+We cannot guarantee that changing your password will prevent 100% of your email requests from being delivered. We only recommend this method as a last resort that may allow you to stop at least some of your emails from being sent.
 
 </call-out>
 
@@ -44,7 +44,7 @@ You have several options for canceling or unscheduling a campaign.
 
  ### 	Using the User Interface
 
-If you have **Send Immediately** under the **Scheduling** dropdown menu in the campaign builder set to OFF then you only have a very brief window of opportunity to cancel the campaign after clicking **Send Campaign**. You have 2 options:
+If you have **Send Immediately** under the **Scheduling** dropdown menu in the campaign builder set to OFF, then you only have a very brief window of opportunity to cancel the campaign after clicking **Send Campaign**. You have 2 options:
 
 1. **Deleting the Campaign**
 
