@@ -13,8 +13,7 @@ seo:
 A drip campaign is a type of automated [email marketing strategy]({{root_url}}/glossary/email-marketing/) that involves sending a recipient
 a series of pre-written messages according to a predetermined schedule. This schedule is often
 initiated by certain events in the recipient’s lifecycle as a customer, such as registering for
-a service or purchasing a product. Drip campaigns revolve around the idea of slowly “dripping”
-specific emails to a recipient in an effort to generate or increase customer engagement over a finite
+a service or purchasing a product. Drip campaigns are used to generate or increase customer engagement over a
 period of time.
 
 Drip campaigns help you to send relevant and well timed emails that your customers are likely interested in
@@ -22,9 +21,7 @@ seeing. Striving to send emails that are relevant to your recipients can help to
 reputation](https://sendgrid.com/blog/what-is-a-domain-reputation/), cultivate customer satisfaction, and increase customer retention.
 
 <call-out>
-
-It is important to avoid initiating a series of messages that your customer doesn’t want to receive. Make sure
-that you give your recipient the option of opting out of the drip campaign by including an [unsubscribe link]({{root_url}}/ui/sending-email/group-unsubscribes/) in
-every email you send.
+  
+Interested in sending automated drip campaigns? Doing so is ismple with SendGrid Automation, a new offering that's currently in beta among select users. [Visit SendGrid.com](https://sendgrid.com/solutions/marketing-automation/) to learn more and be added to the waitlist.
 
 </call-out>
