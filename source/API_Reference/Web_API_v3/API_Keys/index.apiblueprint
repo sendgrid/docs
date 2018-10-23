@@ -37,7 +37,6 @@ SendGrid v3 Web API, the [v3 Mail Send endpoint]({{root_url}}/API_Reference/Web_
 
 This will create a new random API Key for the user with permissions assigned. A JSON request body containing a "name" property is required. If number of maximum keys is reached, HTTP 403 will be returned. Optionally, you can specify "scopes" to limit what permissions an API Key is given. If no API Key is provided, it will assign all of the parent account's assignable scopes to the API Key. For a list of all scopes, please look at the [API Keys Permissions List]({{root_url}}/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html)
 
-
 + Request
 
     + Body
