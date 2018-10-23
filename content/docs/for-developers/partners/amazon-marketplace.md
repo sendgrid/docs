@@ -10,7 +10,7 @@ SendGrid has partnered with Amazon to offer our email services on the [Amazon Ma
 
 Once you have an AWS account, you can to [subscribe to SendGrid](https://aws.amazon.com/marketplace/pp/B074CQY6KB) and access it directly from the [AWS Management Console](https://console.aws.amazon.com/). Once you’ve subscribed to SendGrid, you have access to the [SendGrid application](https://app.sendgrid.com/) and the APIs. Use the AWS Management Console if you want to reset your password, cancel your account, or manage bills.
 
-## 	Getting Started
+## 	Getting started
 
 *To quickly get started with SendGrid:*
 
@@ -36,7 +36,7 @@ There are two plans: AWS Basic and AWS Pro. These plans are billed on your AWS i
 
 ![]({{root_url}}/images/aws_pricing.png "AWS pricing")
 
-### Adding a Dedicated IP Address
+### Adding a dedicated IP address
 
 You can purchase IP addresses dedicated to your account. Since you are the only one sending email over this IP, your sending practices determine the sender reputation associated with this IP. You can purchase up to 3 IP addresses per month. If you need more than 3 IPs, then you should [contact support](https://support.sendgrid.com/hc/en-us).
 
@@ -56,13 +56,13 @@ You can only add a Dedicated IP Address if you are on an AWS Pro plan. To upgrad
 
 Sender authentication shows email providers that SendGrid has your permission to send emails on your behalf. Domain authentication works by pointing DNS entries from your domain registrar to SendGrid, which drastically increases your ability to deliver email and allows you to begin building a sender reputation for your domain and for your IP addresses. For more information on domain authentication, see [How to Set Up Domain Authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/).
 
-### Adding Subusers
+### Adding subusers
 
 You can only add Subusers if you are on an AWS Pro plan. To upgrade your plan, see [Upgrading or Downgrading Your Account](#upgrading-or-downgrading-your-account). Subusers are SendGrid accounts that belong to a parent account. They have their permissions and credit limits, which you assign as you create the Subusers. Subusers help you segment your email sending and API activity.
 
 To get started with using Subusers, see the [Subusers overview]({{root_url}}/ui/account-and-settings/subusers/).
 
-### Upgrading or Downgrading Your Account
+### Upgrading or downgrading your account
 
 You can upgrade or downgrade your account from the [SendGrid UI](https://app.sendgrid.com/settings/billing).
 
@@ -73,11 +73,11 @@ You can upgrade or downgrade your account from the [SendGrid UI](https://app.sen
 
 ![]({{root_url}}/images/aws_upgrade.png "AWS upgrading or downgrading")
 
-### Managing Billing Options
+### Managing billing options
 
 Manage your billing options from the [AWS Billing & Cost Management Dashboard](https://console.aws.amazon.com/billing/).
 
-### Canceling Your SendGrid Subscription
+### Canceling your SendGrid subscription
 
 *To remove SendGrid from your AWS account:*
 
