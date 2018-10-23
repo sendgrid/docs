@@ -251,3 +251,6 @@ As a best practice, all screenshots should have accompanying alt text.
 Use the following format when inserting an image into the docs:
 
 `![alt text here]({{root_url}}/img/<image_name>.png)`
+
+### Style
+how we can use single style.css file for different pages like header footer
