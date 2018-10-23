@@ -7,6 +7,8 @@ navigation:
   show: true
 ---
 
+If you are using Google’s cloud platform you can easily integrate with SendGrid. Simply navigate to the [GCP Marketplace](https://console.cloud.google.com/marketplace/details/sendgrid-app/sendgrid-email), locate the [SendGrid add-on](https://console.cloud.google.com/marketplace/details/sendgrid-app/sendgrid-email), select the appropriate plan, and get ready to start sending.
+
 Using Google’s App Engine or Compute Engine? Here are a few examples of how to implement SendGrid to help improve deliverability and provide analytics for your projects.
 
 ## 	App Engine Examples
