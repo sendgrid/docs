@@ -129,4 +129,4 @@ If you set up a whitelabel after 2015, it has been automatically migrated to our
 
 - [How to set up link branding]({{root_url}}/ui/account-and-settings/how-to-set-up-link-branding/)
 - [How to set up reverse DNS]({{root_url}}/ui/account-and-settings/how-to-set-up-reverse-dns/)
-- [Troubleshooting]({{root_url}}/ui/account-and-settings/troubleshooting-sender-authentication/)
+- [Troubleshooting Sender Authentication]({{root_url}}/ui/account-and-settings/troubleshooting-sender-authentication/)
