@@ -13,7 +13,7 @@ navigation:
 
 A fully qualified domain name (FQDN) is the complete domain name for a specific location in the Domain Name System (DNS) heirarchy. This is sometimes referred to as the absolute domain name.
 
-The heirarchy can be broken down into a few parts:
+The hierarchy can be broken down into a few parts:
 
 - Top-level domain (TLD), such as .edu or .com
 - Partially qualified domain name (PQDN) or domain name, such as example.com
