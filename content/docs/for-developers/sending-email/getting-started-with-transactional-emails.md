@@ -21,7 +21,7 @@ These emails typically contain information a user wants or needs. They have the 
 
 <call-out>
 
-Well designed and useful emails help keep open rates high. Use [SendGrid’s Email Templates](https://sendgrid.com/solutions/transactional-email-templates/) to help with creation of responsive transactional email templates.
+Well designed and useful emails help keep open rates high. Use ([SendGrid’s Dynamic Transactional Email Templates]({{root_url}}/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/)) to help with creation of responsive transactional email templates.
 
 </call-out>
 
@@ -35,9 +35,7 @@ Once your SendGrid account is setup, you have choices on how to send the emails 
 2. Send [via API]({{root_url}}/api-reference)
 3. Send via other options like [Open Source]({{root_url}}/sending-email/libraries/) and [plugins]({{root_url}}/sending-email/wordpress-plugin/)
 
-
-
-## 	Next Steps
+## 	Additional Resources
 
 For more information on SendGrid and where you can go from here, check out these pages:
 
