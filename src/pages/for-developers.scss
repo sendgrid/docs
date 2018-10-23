@@ -1,0 +1,95 @@
+@import '../scss/global/variables';
+@import '../scss/global/mixins';
+$card-gutter: 30px;
+
+.for-devs-libraries {
+  margin-bottom: $scaleup-8;
+}
+
+.for-devs-featured {
+  padding-bottom: 16rem;
+}
+
+.for-developers {
+  overflow: hidden;
+  position: relative;
+
+  .page-title {
+    color: #fff;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: $scaleup-5;
+  }
+}
+
+.for-devs-callouts {
+  padding-top: $scaleup-3;
+  padding-bottom: $scaleup-3;
+  position: relative;
+
+  .card {
+    padding: $scale-base-up-09 $scale-base-up-04 $scale-base-up-06;
+    border: none;
+  }
+}
+
+.for-devs-callouts::before {
+  background: $slate;
+  background: $gradient-dev-callout;
+  content: "";
+  height: 210%;
+  left: -75%;
+  position: absolute;
+  top: 0;
+  transform: rotate(-9deg);
+  transform-origin: left top;
+  width: 250%;
+  z-index: 0;
+}
+
+.for-devs-featured {
+  position: relative;
+  background: url('../img/illustration-developers-footer.svg') no-repeat bottom center;
+
+  h2 {
+    font-size: $scaleup-3;
+    margin-bottom: $scaleup-4;
+    text-align: center;
+    position: relative;
+  }
+}
+
+.for-devs-featured::before {
+  background: $slate-05;
+  content: "";
+  height: 70%;
+  left: -75%;
+  position: absolute;
+  top: 350px;
+  transform: rotate(-9deg);
+  transform-origin: left top;
+  width: 250%;
+  z-index: 0;
+}
+
+.for-devs-callouts__bar {
+  height: 20px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: $mantis;
+  background: $gradient-dev-glossary;
+}
+
+.for-devs-callouts__get-started-btns {
+  width: 100%;
+  grid-column-gap: 4%;
+
+  .btn {
+    flex: 1;
+    padding-left: $scaleup-1;
+    padding-right: $scaleup-1;
+  }
+}

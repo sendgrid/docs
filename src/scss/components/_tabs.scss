@@ -1,0 +1,119 @@
+.tab-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid $slate-10;
+  padding-left: 0;
+
+  &.is-centered {
+    justify-content: center;
+  }
+
+  &.is-centered.has-button {
+    position: relative;
+  }
+
+  &.zero-border {
+    border-bottom: 0;
+
+    // remove negative margin on zero-border
+    .tab {
+      margin-bottom: 0;
+    }
+  }
+
+  &.is-editor,
+  &.is-ab-testing {
+    .tab {
+      justify-content: center;
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    &.is-3-up .tab {
+      width: 33.3333%;
+    }
+
+    &.is-4-up .tab {
+      width: 25%;
+    }
+  }
+
+  &.is-ab-testing {
+    &.is-2-up .tab {
+      width: 50%;
+    }
+
+    &.is-5-up .tab {
+      width: 20%;
+    }
+
+    &.is-6-up .tab {
+      width: 16.6667%;
+    }
+
+    .tab {
+      background-color: $slate-05;
+      border-right: 1px solid $slate-10;
+      transition: background-color 0.3s;
+    }
+
+    .tab:hover {
+      background-color: $slate-02;
+    }
+
+    .tab:last-of-type {
+      border-right: 0;
+    }
+
+    .tab.is-active {
+      background-color: $white;
+      border-bottom: 0;
+    }
+  }
+}
+
+.tab {
+  display: flex;
+  // less 2px on bottom to account for borders
+  padding: 20px 30px 18px;
+  // negative margin to pull active states down to cover the wrapper border
+  margin-bottom: -1px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  cursor: pointer;
+
+  &.is-active {
+    color: $sg-blue;
+    border-bottom: 2px solid $sg-blue;
+  }
+
+  &.is-btn-left {
+    position: absolute;
+    left: 0;
+    padding: 15px 0;
+  }
+
+  .badge {
+    height: 16px;
+    margin: 2px 0;
+    line-height: 1;
+  }
+}
+
+// TODO: remove
+.tab-active {
+  color: $sg-blue;
+  border-bottom: 2px solid $sg-blue;
+}
+
+.tab-number {
+  width: 30px;
+  height: 20px;
+  margin-left: 12px;
+  font-weight: 600;
+  color: $slate-80;
+  text-align: center;
+  background-color: $slate-10;
+  border-radius: 15px;
+}

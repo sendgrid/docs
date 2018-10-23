@@ -1,2 +1,0 @@
-User-agent: *
-Disallow: /docs/User_Guide/Marketing_Campaigns/beta_editors.html
