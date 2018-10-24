@@ -38,7 +38,7 @@ Once you have a Form.io project, the next step is to create an **API Key** withi
 
 ![Form.io SendGrid Settings]({{root_url}}/images/formio-settings.png "Form.io SendGrid Settings")
 
-## 	Adding an Email Action
+## 	Adding an email action
 
 Now that you have your project configured to send emails through SendGrid, the next step is to add an email action to any form within your project. A good use case for this would be to send an email anytime someone registers for your application. To achieve this capability, please follow the following steps.
 
@@ -60,7 +60,7 @@ Now that you have your project configured to send emails through SendGrid, the n
 
 With this step complete, every user who registers for this application will receive your email which was sent through the SendGrid platform.
 
-## 	Deploy Your Serverless Application!
+## 	Deploy your serverless application!
 
 Now that your project is configured for SendGrid, you can deploy it in a number of different ways including [GitHub Pages](https://pages.github.com/), [Apache Cordova](https://cordova.apache.org/), [Electron](http://electron.atom.io/), etc. You can also preview your application by clicking on the Preview tab of your project. Since this application is "serverless" it can be hosted in a wide range of places and immediately connect your forms with SendGrid!
 
