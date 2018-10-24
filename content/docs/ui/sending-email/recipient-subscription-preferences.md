@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-Emails that are sent with an unsubscribe group specified will have 2 links at the bottom of the email; an “Email Preferences” link, and an “Unsubscribe” link.
+Emails that are sent with an unsubscribe group specified will have 2 links at the bottom of the email: an “Email Preferences” link and an “Unsubscribe” link.
 
 If you do not specify an unsubscribe group when sending an email, the unsubscribe link will act as a global unsubscribe. This means that the recipient will no longer get any emails at all, including potentially important emails like password resets. To avoid this, create unsubscribe groups.
 
