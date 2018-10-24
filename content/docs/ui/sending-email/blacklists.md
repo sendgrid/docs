@@ -12,7 +12,7 @@ navigation:
   show: true
 ---
 
-Ending up on a blacklist can be detrimental to your domain’s email deliverability. These days, there are hundreds, maybe thousands of blacklists out there. Some, like the Spamhaus SBL, can bring your email program to a screeching halt. Others are little more than an annoyance. Many of the world's largest inbox providers use blacklists to help them make inboxing and filtering decisions. Others rely only their own internal metrics. Always remember: if a listing service ever asks you pay a fee for a delisting request, or if they say that they do not accept delisting requests, then you should not waste your time trying to get your domain/IP delisted because these services are rarely, if ever, used. However, if you find that your IP address has been blacklisted by one of the many legitimate services, then submitting a delisting request is the top priority. Depending on the level of your account, you should approach a blacklisting in one of 2 ways:
+Ending up on a blacklist can be detrimental to your domain’s email deliverability. These days, there are hundreds, maybe thousands of blacklists out there. Some, like the Spamhaus SBL, can bring your email program to a screeching halt. Others are little more than an annoyance. Many of the world's largest inbox providers use blacklists to help them make inboxing and filtering decisions. Others rely only on their own internal metrics. Always remember: if a listing service ever asks you pay a fee for a delisting request, or if they say that they do not accept delisting requests, then you should not waste your time trying to get your domain/IP delisted because these services are rarely, if ever, used. However, if you find that your IP address has been blacklisted by one of the many legitimate services, then submitting a delisting request is the top priority. Depending on the level of your account, you should approach a blacklisting in one of 2 ways:
 
  
 
@@ -20,7 +20,7 @@ Ending up on a blacklist can be detrimental to your domain’s email deliverabil
 
  
 
-If you are on one of our shared IP plans and you notice a block message based on one of our IP addresses then please [contact support](https://support.sendgrid.com). We will handle all delisting requests for our shared IP users.
+If you are on one of our shared IP plans and you notice a block message based on one of our IP addresses, then please [contact support](https://support.sendgrid.com). We will handle all delisting requests for our shared IP users.
 
  
 
