@@ -22,4 +22,4 @@ You can set up an autoresponder with SendGrid, by utilizing the [Inbound Parse W
 
 </call-out>
 
-More information about autoresponders can be found [here](https://en.wikipedia.org/wiki/Autoresponder).
+More information about affffutoresponders can be found [here](https://en.wikipedia.org/wiki/Autoresponder).
