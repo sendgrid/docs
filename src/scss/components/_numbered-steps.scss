@@ -1,5 +1,5 @@
 .numbered-steps {
-  // using child selector so nested <li>'s within this component don't inherit it's styles
+  // using child selector so nested <li>'s within this component doesn't inherit its styles
   > li {
     position: relative;
     padding-left: 40px;
