@@ -13,15 +13,15 @@ navigation:
 
 # What is it?
 
-Ever received an email message that claimed to be from a company or a brand, and clearly wasn’t? This “phishy” behavior is often the result of domain spoofing, and is likely the work of someone trying to phish personal details of the messages’ recipients. Current email infrastructure standards aren’t perfect, and can sometimes be exploited. So how do you protect your own domain or brand from being spoofed in this way?
+Ever received an email message that claimed to be from a company or a brand and clearly wasn’t? This “phishy” behavior is often the result of domain spoofing and is likely the work of someone trying to phish personal details of the messages’ recipients. Current email infrastructure standards aren’t perfect and can sometimes be exploited. So how do you protect your own domain or brand from being spoofed in this way?
 
-Enter DMARC, "Domain-based Message Authentication, Reporting & Conformance". Which was created to tell a participating receiving server what to do with a message that fails both SPF and DKIM validation. In other words, what to do if a message claims to be from you, but isn't.
+Enter DMARC, "Domain-based Message Authentication, Reporting & Conformance". DMARC was created to tell a participating receiving server what to do with a message that fails both SPF and DKIM validation. In other words, what to do if a message claims to be from you, but isn't.
 
 # How do I implement it?
 
 Deploying DMARC for your email systems is a powerful way to help prevent malicious entities from potentially spoofing or otherwise tarnishing your good name. DMARC isn't for everyone. If you own a small domain, you're probably OK without it. If you have ever had problems with phishing in the past, or have a business that is financial-oriented in nature, it might be right for you.
 
-DMARC, in conjunction with a dedicated IP (included in Pro or higher accounts) is a great start to getting industry-supported piece of mind. The DMARC aggregate and forensic reports are designed to be machine readable, and can be difficult for humans to make sense of. You will also need to utilize a DMARC report monitoring service to collect the reports and present the information in a meaningful way that leads to actionable insights. Return Path's Email Brand Monitor is one, and Agari is another.
+DMARC, in conjunction with a dedicated IP (included in Pro or higher accounts), is a great start to getting industry-supported peace of mind. The DMARC aggregate and forensic reports are designed to be machine readable and can be difficult for humans to make sense of. You will also need to utilize a DMARC report monitoring service to collect the reports and present the information in a meaningful way that leads to actionable insights. Return Path's Email Brand Monitor is one, and Agari is another.
 
 # The 5 phases:
 
@@ -161,7 +161,7 @@ Up until now you should have only been using the p=none policy to get reports of
 
 **p=none** - Get reports of infractions, but no action is taken by recipients as far as processing the messages themselves.
 
-**p=quarantine** - Unqualified mail goes directly to spam, but can be recovered. This is useful when you’re fairly certain you know all the locations where mail is coming from, but want to ‘softfail’ any messages that are unqualified until you’re 100% sure.
+**p=quarantine** - Unqualified mail goes directly to spam, but can be recovered. This is useful when you’re fairly certain you know all the locations where mail is coming from but want to ‘softfail’ any messages that are unqualified until you’re 100% sure.
 
 **p=reject** - When you’re absolutely sure you know every server and service that is sending email for your domain, signing is in place for each of these services and you want anything with the audacity to claim otherwise completely denied. Unqualified mail is completely deleted by the recipient mail server, never to be seen again.
 
