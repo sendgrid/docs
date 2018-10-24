@@ -38,7 +38,7 @@ database.
 
 You can query your list in different ways, based on the data type:
 
-* **Date** - allows you to select contacts before, after, or on a specific date. *Example: 30/12/2014*
+* **Date** - allows you to select contacts before, after, or on a specific date. *Example: 12/30/2014*
 * **Text** - allows you to select contacts who match the specific text. *Example: Pet field that says "Dog"*
 * **Number** - allows you to do things like “greater than,” “less than,” or “equals.” Both decimal and integer values are accepted. *Example: The age of your recipient: 27*
 
