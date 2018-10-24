@@ -27,13 +27,7 @@ Once you are viewing a Docs page in GitHub, click the pencil icon to begin editi
 
 > All contributors to the SendGrid docs repo need to sign a CLA before their changes can be merged. 
 
-The SendGrid Documentation must follow certain style guidelines. While many of these guidelines are not applicable to small changes, it is important to make sure that our Docs are:
-
-* Concise
-* Accurate
-* Organized
-* Scannable
-
+The SendGrid Documentation must follow certain style guidelines. While many of these guidelines are not applicable to small changes, it is important to make sure that our Docs.
 Docs contributors should strive for a professional and “coach-like” tone of voice. Avoid vague language, and get right to the point. Long and overly complicated explanations are not helpful to a user who wants a quick-and-easy answer. Please don’t be intimidated by these style guidelines. They don’t apply to most minor changes, and more significant changes will be reviewed and edited by the Docs Team before publication.
 
 If you are making substantial edits or are adding more than a paragraph of new content, feel free to refer to [SendGrid’s Style Guide](https://github.com/sendgrid/docs/blob/develop/styleguide.md).
