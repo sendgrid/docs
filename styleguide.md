@@ -17,6 +17,7 @@ Hello! Thank you for choosing to help contribute to the SendGrid documentation s
 
 We strive to make our documentation concise, clear, organized, and scannable.
 
+* Use US English spellling. 
 * Use conversational language and industry-standard terms when possible.
 * Contractions are OK and preferred.
 * Use bulleted lists and numbered steps where applicable.
