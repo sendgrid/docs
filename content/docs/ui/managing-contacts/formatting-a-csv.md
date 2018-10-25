@@ -63,7 +63,7 @@ Properly format any dates in your CSV. If you created your CSV with Excel and it
 
 Marketing Campaigns uses email as the unique identifier for each contact. So, if you upload the same email address multiple times, the [custom field]({{root_url}}/ui/managing-contacts/custom-fields/) data associated with that email will be updated with each upload to the most recently uploaded/updated information. This feature helps prevent you from accidentally emailing the user after they have unsubscribed.
 
-If it's necessary to have a duplicate entry in your contacts database, what you may want to do is add logic to set a custom field—based on the reason why you have duplicate emails in your system (for example multiple product lines)—and then [segment]({{root_url}}/ui/managing-contacts/managing-contact-list/) your user to be in lists based on those custom fields.
+If it's necessary to have a duplicate entry in your contacts database, you may want to add a custom field based on the reason why you have duplicate emails in your system (for example multiple product lines). Then, [segment]({{root_url}}/ui/managing-contacts/managing-contact-list/) your user to be in lists based on those custom fields.
 
 ## 	Troubleshooting
 
