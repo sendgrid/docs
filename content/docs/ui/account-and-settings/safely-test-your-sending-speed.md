@@ -16,7 +16,9 @@ Have you ever wanted to see how quickly you can send multiple messages through S
 We have configured a special domain for any users who are interested in testing out SendGrid's relay speeds at higher volumes without it negatively impacting your reputation. You can send your test messages to any address **@sink.sendgrid.net** while still using our standard integration practices. All messages to this domain are accepted for delivery and then immediately deleted. Sending to this domain will not contribute to the [IP warmup process]({{root_url}}/ui/sending-email/warming-up-an-ip-address/) if you have an account with a dedicated IP address.
 
 <call-out>
+  
  Please be aware that all of the messages you send to this domain will still consume billable email credits for your account!
+ 
 </call-out>
 
 
