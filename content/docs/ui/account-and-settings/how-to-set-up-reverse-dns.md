@@ -73,9 +73,9 @@ If you plan to send from multiple domains, you should set up reverse DNS for at 
 
 It can take up to 48 hours for the records to verify after you upload them to your DNS host, so you will likely have to come back later to verify.
 
- ### 	Verifying your DNS
+ ### 	Verifying
 
-Once you add the A Records to your DNS host, return to the IP detail page, or locate the correct IP on the [Reverse DNS listing page](https://app.sendgrid.com/settings/sender_auth/reverse_dns) and click **Verify**.
+Once you add the A Records to your DNS host, return to the IP detail page, or locate the IP on the [Reverse DNS listing page](https://app.sendgrid.com/settings/sender_auth/reverse_dns). Once you have located the correct IP, click **Verify**.
 
 <call-out>
 
