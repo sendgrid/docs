@@ -16,7 +16,7 @@ Hello! Thank you for choosing to help contribute to one of the SendGrid open sou
 		* [Anchors](#anchors)
 		* [Info blocks](#info_blocks)
 		* [API Examples](#api)
-* [JS and CSS, etc](#js_and_css)
+* [JS and CSS, etc.](#js_and_css)
 * [Creating a Pull Request](#creating-a-pull-request)
 
 Feel free to grab an issue you want to work on. Please indicate that you have begun work on it to avoid collisions. Once a PR is made, community review, comments, suggestions, and additional PRs are welcomed and encouraged.
