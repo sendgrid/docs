@@ -17,11 +17,11 @@ Parent accounts will see aggregated statistics for their account and all subuser
 
 </call-out>
 
-The geographical report shows a map of where your emails are being opened and clicked around the world. It is based purely on where your users live. For example if you don’t have any recipients engaging with your emails in France, you will not see statistics for France in your stats.
+The geographical report shows a map of where your emails are being opened and clicked around the world. It is based purely on where your users live. For example, if you don’t have any recipients engaging with your emails in France, you will not see statistics for France in your stats.
 
 ## 	Top 5
 
-The top 5 section will show you the most engaged geographical areas based on the selected metric. By default, clicks are select, but you can change that by choosing a metric from the button at the top of this section. You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/ui/analytics-and-reporting/stats-overview/#statistics-filters).
+The top 5 section will show you the most engaged geographical areas based on the selected metric. By default, clicks are selected, but you can change that by choosing a metric from the button at the top of this section. You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/ui/analytics-and-reporting/stats-overview/#statistics-filters).
 
 ## 	Activity Map
 
