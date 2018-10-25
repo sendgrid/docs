@@ -75,7 +75,7 @@ It can take up to 48 hours for the records to verify after you upload them to yo
 
  ### 	Verifying your DNS
 
-Once you add the A Records to your DNS host, return to the rDNS detail page, or locate the correct IP on the rDNS listing page [Reverse DNS listing page](https://app.sendgrid.com/settings/sender_auth/reverse_dns) and click **Verify**.
+Once you add the A Records to your DNS host, return to the IP detail page, or locate the correct IP on the [Reverse DNS listing page](https://app.sendgrid.com/settings/sender_auth/reverse_dns) and click **Verify**.
 
 <call-out>
 
