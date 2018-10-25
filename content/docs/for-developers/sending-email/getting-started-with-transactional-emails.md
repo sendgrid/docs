@@ -3,7 +3,7 @@ seo:
   title: Getting Started with Transactional Email
   description: Using SendGrid to send Transactional Email.
   keywords: Getting Started, API, v3, REST, Transactional Email
-title: Getting Started with Transactional Email on SendGrid
+title: Getting Started with Transactional Email
 group: api-v3
 weight: 100
 layout: page
