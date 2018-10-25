@@ -31,7 +31,7 @@ Your current IP is clearly displayed to help prevent you from accidentally remov
 
 <call-out type="warning">
 
-If you do not access SendGrid via a static IP address (for example, via VPN or from a business internet service), setting up IP Access Management may result in being locked out of your SendGrid account. If you do discover that you have locked yourself out of your account, please contact SendGrid Support.
+If you do not access SendGrid via a static IP address (for example, via VPN or from a business internet service), setting up IP Access Management may result in being locked out of your SendGrid account. If you do discover that you have locked yourself out of your account, please contact [SendGrid Support](https://support.sendgrid.com/hc/en-us/requests/new#ipam-lockout).
 
 </call-out>
 
