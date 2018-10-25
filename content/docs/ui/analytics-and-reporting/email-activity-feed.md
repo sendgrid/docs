@@ -12,7 +12,7 @@ seo:
 ---
 <call-out>
 
-Higher volume users may not yet have access to the new Email Activity Feed. For information about the legacy Email Activity Feed, see [Legacy Email Activity]({{root_url}}/ui/analytics-and-reporting/email-activity/).
+Higher volume users may not have access to the new Email Activity Feed yet. For information about the legacy Email Activity Feed, see [Legacy Email Activity]({{root_url}}/ui/analytics-and-reporting/email-activity/).
 
 </call-out>
 
@@ -145,7 +145,6 @@ In addition to viewing the email activity associated with your account by recipi
 *To further narrow your search results:*
 
 * Search emails by **any** of the following - This search will return more results and will pull in all events that meet *one or more* of the criterion specified by the selected filters.
-or
 * Search emails by **all** of the following - This search will return fewer results and will pull in events that meet *every* criteria specified by the selected filters.
 
 ## 	Viewing event history
