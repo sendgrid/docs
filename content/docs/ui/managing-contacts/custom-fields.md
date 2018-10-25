@@ -97,4 +97,4 @@ If you do find that the custom field has an associated value on the contact’s 
 
 - [Substitution Tags]({{root_url}}/ui/sending-email/editor/#using-substitution-tags)
 - [Contacts]({{root_url}}/ui/managing-contacts/adding-contacts/)
-- [Creating and exporting segments]({{root_url}}/ui/manging-contacts/segmenting-your-contacts/)
+- [Segmenting your Contacts]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/)
