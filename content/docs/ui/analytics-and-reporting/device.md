@@ -51,7 +51,7 @@ The clients report breaks down which devices and clients are most frequently use
 
 ## 	Top 5
 
-The top 5 section will show you the most engaged email clients and devices based on the selected metric. By default, clicks are select, but you can change that by choosing a metric from the button at the top of this section. You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/ui/analytics-and-reporting/stats-overview/#statistics-filters).
+The top 5 section will show you the most engaged email clients and devices based on the selected metric. By default, clicks are selected, but you can change that by choosing a metric from the button at the top of this section. You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/ui/analytics-and-reporting/stats-overview/#statistics-filters).
 
 ## 	Individual Metrics Activity
 
@@ -67,7 +67,7 @@ When you initially choose the devices to compare, this graph will show you the a
 
 You can remove individual devices from the list of devices at the top of this page. The graph will refresh, showing only the selected subusers.
 
-You can also choose to show actual counts or percentages, by clicking the corresponding button above and to the right of the table.
+You can also choose to show actual counts or percentages by clicking the corresponding button above and to the right of the table.
 
 ## 	Additional Resources
 
