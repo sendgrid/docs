@@ -14,11 +14,11 @@ navigation:
 
 SendGrid's [Google Analytics Tracking ](https://app.sendgrid.com/settings/tracking)appends links to integrate with Google Analytics.
 
-[Google Analytics](http://support.google.com/analytics/?hl=en) is a great tool for tracking how people get to your site, and what they do there.
+[Google Analytics](http://support.google.com/analytics/?hl=en) is a great tool for tracking how people get to your site and what they do there.
 
-This article describes differences in the results and terminology of both. In general what they track & what terms they use are different than what we do, so we thought it would be helpful to provide the following equivalencies.
+This article describes differences in the results and terminology of both. In general what they track and what terms they use are different than what we do, so we thought it would be helpful to provide the following equivalencies.
 
-Google Analytics has Clicks, Visits, Visitors, Pageviews, and Unique Pageviews. SendGrid has Clicks & Opens, as well as all of our [Statistics]({{root_url}}/ui/analytics-and-reporting/stats-overview/).
+Google Analytics has Clicks, Visits, Visitors, Pageviews, and Unique Pageviews. SendGrid has Clicks and Opens, as well as all of our [Statistics]({{root_url}}/ui/analytics-and-reporting/stats-overview/).
 
 The key here is that Google Analytics Clicks **are in no way related**  to SendGrid Clicks.
 
