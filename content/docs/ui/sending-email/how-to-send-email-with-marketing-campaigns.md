@@ -78,13 +78,13 @@ Message size limit:  The total message size should not exceed 20MB. This include
 
 <call-out>
 
-If you have the flexibility, it's better to schedule mail at off-peak times. Most emails are scheduled and sent at the top of the hour or half hour. Scheduling email to avoid those times (for example, scheduling at 10:53) can result in lower deferral rates because it won't be going through our servers at the same times as everyone else's mail.
+If possible, schedule mail for off-peak times (for example, 10:53). This can avoid peak times at the top of the hour or half hour.
 
 </call-out>
 
 <call-out type="warning">
 
-Campaigns are sent according to the time zone specified in the settings of your account. Be sure your account is set to the correct time zone in order to ensure that your emails are sent at the time you intend.
+Campaigns are sent according to the time zone specified in the settings of your account. Check the time zone for your account to have your emails sent at the correct time.
 
 </call-out>
 
@@ -92,7 +92,7 @@ Campaigns are sent according to the time zone specified in the settings of your 
 
 1. From the left-hand navigation, select **Settings**.
 1. Click **Account Details**, or go to https://app.sendgrid.com/settings/account.
-1. Scroll to the bottom of the page, find **TIME ZONE**, and ensure your desired time zone is correct.
+1. Scroll to the bottom of the page, find **TIME ZONE**, and correct it if necessary.
 
  ##	Additional Resources
 
