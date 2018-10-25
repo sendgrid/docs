@@ -14,11 +14,11 @@ seo:
 
 <iframe src="https://player.vimeo.com/video/227937591" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-Managing contacts is an integral part of your marketing campaigns lifecycle. You can create lists for contacts, as well as view and edit each individual contact within your contact database
+Managing contacts is an integral part of your marketing campaigns lifecycle. You can create lists for contacts, as well as view and edit each individual contact within your contact database.
 
 ## 	Viewing a contact
 
-To view a specific contact profile, find the contact in one of your lists or segments by searching your contact database. Then click the contact’s email address. You will then be able to view the email, engagement data, profile information, custom fields, and list associations for this contact.
+To view a specific contact profile, find the contact in one of your lists or segments by searching your contact database. Then, click the contact’s email address. You will then be able to view the email, engagement data, profile information, custom fields, and list associations for this contact.
 
 <call-out>
 
@@ -40,7 +40,7 @@ When you are viewing a contact, click any of the Edit buttons to edit the contac
 
 ## 	Managing your list
 
-Sending to a well-managed address list can drastically help improve your delivery. We have put together some simple steps and guidelines that will improve any senders list.
+Sending to a well-managed address list can drastically improve your delivery. We have put together some simple steps and guidelines that will improve any senders list.
 
 * [Suppressions](#identifying-suppressions)
 * [Delete unusable contacts](#delete-unusable-contacts)
@@ -49,11 +49,11 @@ Sending to a well-managed address list can drastically help improve your deliver
 
  ### 	Identifying Suppressions
 
-In your SendGrid Account there are different [Suppressions]({{root_url}}/ui/sending-email/index-suppressions/) lists.
+In your SendGrid Account are different [Suppressions]({{root_url}}/ui/sending-email/index-suppressions/) lists.
 
 **Global Unsubscribes** - Addresses on this list are opted out of all mail.
 
-**Bounces** - Addresses that have failed to deliver to the recipient's inbox. Once an address has been added to this list, we do not attempt to deliver further messages to it, we will instead Drop them to protect your external reputation.
+**Bounces** - Addresses that have failed to deliver to the recipient's inbox. Once an address has been added to this list, we do not attempt to deliver further messages to it. We will instead Drop them to protect your external reputation.
 
 **Spam Reports** - Addresses that have marked your mail as spam.
 
