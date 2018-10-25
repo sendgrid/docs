@@ -191,10 +191,10 @@
   .accordion-list {
     li {
       padding: 30px 100px;
-    }
 
-    li::before {
-      left: 70px;
+      &::before {
+        left: 70px;
+      }
     }
   }
 }
