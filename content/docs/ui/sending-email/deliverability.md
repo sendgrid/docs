@@ -86,7 +86,7 @@ Encouraging your recipients to do certain things can help bolster the trust ISPs
 
 ### Sending Adult Content
 
-If your business is adult in nature, we can send your mail to the same standards and deliverability as any of our other customers. However, **We do not allow our users to send explicit content within emails.** This applies primarily to images, but we reserve the right to refuse the sending of any type of content that we deem to be vulgar, pornographic or otherwise explicit.
+If your business is adult in nature, we can send your mail to the same standards and deliverability as any of our other customers. However, **We do not allow our users to send explicit content within emails.** This applies primarily to images, but we reserve the right to refuse the sending of any type of content that we deem to be vulgar, pornographic, or otherwise explicit.
 
 If you are unsure where your emails stand, please contact our support team at [https://support.sendgrid.com](https://support.sendgrid.com)
 
