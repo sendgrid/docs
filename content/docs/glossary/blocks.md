@@ -10,9 +10,9 @@ navigation:
   show: false
 ---
 
-Blocked messages will appear under Email Reports under Blocks. When your IP address has been added to a blacklist, has been blocked by an ISP or messaging organization, the affected email shows up on this list. Typically it is possible to have your IP address removed from a block list, and some lists automatically do this after a period of time.
+Blocked messages will appear under Email Reports under Blocks. When your IP address has been added to a blacklist or has been blocked by an ISP or messaging organization, the affected email shows up on this list. Typically, it is possible to have your IP address removed from a block list, and some lists automatically do this after a period of time.
 
-Blocks are less permanent than Bounces, it is a list of refused messages that were either blocked by an ISP or deferred longer than 72 hours. In addition, SendGrid does not treat the blocks list as a suppression list, subsequent sends to emails on this list will be sent like normal.
+Blocks are less permanent than Bounces, it is a list of refused messages that were either blocked by an ISP or deferred longer than 72 hours. In addition, SendGrid does not treat the blocks list as a suppression list—subsequent sends to emails on this list will be sent like normal.
 
 Having an entry on the SendGrid block list does not automatically drop email as it does for the bounce and unsubscribe list.
 
