@@ -6,11 +6,11 @@ group: platform-partners
 navigation:
   show: true
 ---
-SendGrid has partnered with Amazon to offer our email services on the [Amazon Marketplace](https://aws.amazon.com/marketplace/pp/B074CQY6KB). Built for developers and designed for marketers, SendGrid offers developers simple SMTP and API integrations while non-technical users can leverage an intuitive interface to create, send, and analyze marketing emails.
+SendGrid has partnered with Amazon to offer our email services on the [Amazon Marketplace](https://aws.amazon.com/marketplace/pp/B074CQY6KB). Built by developers for developers, SendGrid offers developers simple SMTP and API integrations to start sending in minutes. Non-technical users can leverage Marketing Campaign's intuitive interface to create, send, and analyze marketing emails.
 
 Once you have an AWS account, you can to [subscribe to SendGrid](https://aws.amazon.com/marketplace/pp/B074CQY6KB) and access it directly from the [AWS Management Console](https://console.aws.amazon.com/). Once you’ve subscribed to SendGrid, you have access to the [SendGrid application](https://app.sendgrid.com/) and the APIs. Use the AWS Management Console if you want to reset your password, cancel your account, or manage bills.
 
-## 	Getting Started
+## 	Getting started
 
 *To quickly get started with SendGrid:*
 
@@ -26,17 +26,17 @@ If you are using SendGrid through AWS, you cannot change your SendGrid username.
 
 <call-out>
 
-**Warm up your sending** - Since ISP spam filters look at volume as a significant factor when determining whether or not you are sending spam, we recommend that you begin sending a low to moderate volume, eventually working your way up to larger volumes. This gives the receiving email providers a chance to closely observe your sending habits and the way your customers treat the emails they receive from you.
+**Warm up your sending** - Since ISP spam filters look at volume as a significant factor when determining whether or not you are sending spam, we recommend that you begin sending a low to moderate volume, eventually working your way up to larger volumes. This gives the receiving email providers a chance to closely observe your sending habits and the way your customers treat the emails they receive from you. For more information, see [IP Warmup](https://sendgrid.com/docs/glossary/ip-warmup/).
 
 </call-out>
 
 ### Pricing
 
-There are two plans: AWS Basic, and AWS Pro. For more information, check out our[ AWS Marketplace page](https://aws.amazon.com/marketplace/pp/B074CQY6KB). Here's a monthly view of cost:
+There are two plans: AWS Basic and AWS Pro. These plans are billed on your AWS invoice. For more information, check out our[ AWS Marketplace page](https://aws.amazon.com/marketplace/pp/B074CQY6KB). Here's a monthly view of cost:
 
 ![]({{root_url}}/images/aws_pricing.png "AWS pricing")
 
-### Adding a Dedicated IP Address
+### Adding a dedicated IP address
 
 You can purchase IP addresses dedicated to your account. Since you are the only one sending email over this IP, your sending practices determine the sender reputation associated with this IP. You can purchase up to 3 IP addresses per month. If you need more than 3 IPs, then you should [contact support](https://support.sendgrid.com/hc/en-us).
 
@@ -54,15 +54,15 @@ You can only add a Dedicated IP Address if you are on an AWS Pro plan. To upgrad
 
 ### Adding domain authentication and link branding
 
-Sender authentication shows email providers that SendGrid has your permission to send emails on your behalf. Domain authentication works by pointing DNS entries from your domain registrar to SendGrid, which drastically increases your ability to deliver email and allows you to begin building a sender reputation for your domain and for your IP addresses. For more information domain authentication, see [How to Set Up Domain Authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/).
+Sender authentication shows email providers that SendGrid has your permission to send emails on your behalf. Domain authentication works by pointing DNS entries from your domain registrar to SendGrid, which drastically increases your ability to deliver email and allows you to begin building a sender reputation for your domain and for your IP addresses. For more information on domain authentication, see [How to Set Up Domain Authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/).
 
-### Adding Subusers
+### Adding subusers
 
 You can only add Subusers if you are on an AWS Pro plan. To upgrade your plan, see [Upgrading or Downgrading Your Account](#upgrading-or-downgrading-your-account). Subusers are SendGrid accounts that belong to a parent account. They have their permissions and credit limits, which you assign as you create the Subusers. Subusers help you segment your email sending and API activity.
 
 To get started with using Subusers, see the [Subusers overview]({{root_url}}/ui/account-and-settings/subusers/).
 
-### Upgrading or Downgrading Your Account
+### Upgrading or downgrading your account
 
 You can upgrade or downgrade your account from the [SendGrid UI](https://app.sendgrid.com/settings/billing).
 
@@ -73,11 +73,11 @@ You can upgrade or downgrade your account from the [SendGrid UI](https://app.sen
 
 ![]({{root_url}}/images/aws_upgrade.png "AWS upgrading or downgrading")
 
-### Managing Billing Options
+### Managing billing options
 
 Manage your billing options from the [AWS Billing & Cost Management Dashboard](https://console.aws.amazon.com/billing/).
 
-### Canceling Your SendGrid Subscription
+### Canceling your SendGrid subscription
 
 *To remove SendGrid from your AWS account:*
 

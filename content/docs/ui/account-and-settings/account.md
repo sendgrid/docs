@@ -15,15 +15,15 @@ Your profile provides SendGrid with the information we need to contact you with 
 
 To edit your name and email address, click  **Change Contact Info**.
 
-**First Name** - This is be the first name of the representative from your company who should receive contacts from SendGrid.
+**First Name** - This is the first name of the representative from your company who should receive contacts from SendGrid.
 
-**Last Name** - This is be the last name of the representative from your company who should receive contacts from SendGrid.
+**Last Name** - This is the last name of the representative from your company who should receive contacts from SendGrid.
 
 **Email address** - This is the address where you will be contacted by SendGrid for any account-level alerts and notifications such as billing notifications. This must be a valid and active email address that you routinely check.
 
 **Username** - Your SendGrid Username is used to access our API and our SMTP Relay. Changing this will immediately cause all of your calls to SendGrid to stop working.
 
-**Password** -  The minimum password criterium that your SendGrid password must meet include 8 to 128 characters, at least one number and one letter.
+**Password** -  The minimum password criterion that your SendGrid password must meet include 8 to 128 characters, at least one number, and one letter.
 
 **Company** - The name of your company.
 

@@ -11,9 +11,9 @@ navigation:
   show: true
 ---
 
-[Form.io](https://form.io) is a combined form and data management API platform created for developers who are building "Serverless" form-based applications. Form.io provides an easy drag-and-drop form builder workflow allowing you to build complex forms for enterprise applications quickly and easily. These forms are then embedded directly into your application with a single line of code that dynamically renders the form (using Angular or React) in your app while at the very same time generating the RESTful API to support those forms. The Form.io platform also offers numerous 3rd-party services that are fully integrated into the form building process allowing you to extend the power and capability of your apps while saving time and effort.
+[Form.io](https://form.io) is a combined form and data management API platform created for developers who are building "Serverless" form-based applications. Form.io provides an easy drag-and-drop form builder workflow, allowing you to build complex forms for enterprise applications quickly and easily. These forms are then embedded directly into your application with a single line of code that dynamically renders the form (using Angular or React) in your app while at the same time generating the RESTful API to support those forms. The Form.io platform also offers numerous 3rd-party services that are fully integrated into the form building process, allowing you to extend the power and capability of your apps while saving time and effort.
 
-Form.io has recently announced the integration of SendGrid’s API into their list of standard “Form Actions”, allowing you to extend your SendGrid email capabilities further into your apps, by automatically triggering emails through your SendGrid account when forms are submitted within your application.
+Form.io has recently announced the integration of SendGrid’s API into their list of standard “Form Actions”, allowing you to extend your SendGrid email capabilities further into your apps by automatically triggering emails through your SendGrid account when forms are submitted within your application.
 
 ![Form.io SendGrid integration]({{root_url}}/images/formio-sendgrid.png "Form.io SendGrid Integration")
 
@@ -60,7 +60,7 @@ Now that you have your project configured to send emails through SendGrid, the n
 
 With this step complete, every user who registers for this application will receive your email which was sent through the SendGrid platform.
 
-## 	Deploy your Serverless Application!
+## 	Deploy your serverless application!
 
 Now that your project is configured for SendGrid, you can deploy it in a number of different ways including [GitHub Pages](https://pages.github.com/), [Apache Cordova](https://cordova.apache.org/), [Electron](http://electron.atom.io/), etc. You can also preview your application by clicking on the Preview tab of your project. Since this application is "serverless" it can be hosted in a wide range of places and immediately connect your forms with SendGrid!
 

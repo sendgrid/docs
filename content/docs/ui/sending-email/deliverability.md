@@ -21,7 +21,7 @@ First and foremost, ask yourself this question:
 
 **Am I sending the right message to the right person at the right time with the right frequency?**
 
-Overall email deliverability is influenced by how your recipients interact with your messages. If your messages are opened in a timely manner, images are displayed, and links are clicked, then mail providers will see you as a sender whose messages their recipients want to receive. If messages pile up, remain unopened, or get marked as spam, mail providers won't be as comfortable placing your messages in the inbox, or accepting them at all!
+Overall email deliverability is influenced by how your recipients interact with your messages. If your messages are opened in a timely manner, images are displayed and links are clicked, then mail providers will see you as a sender whose messages their recipients want to receive. If messages pile up, remain unopened or get marked as spam, mail providers won't be as comfortable placing your messages in the inbox or accepting them at all!
 
 ## 	Adhere to Standards
 
@@ -29,7 +29,7 @@ The second biggest factor in inbox delivery is the actual content you send in yo
 
 Some key takeaways from [CAN-SPAM](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business):
 
-- Don't deceive your recipients. Be up front with who you are, and what kind of messages you are sending.
+- Don't deceive your recipients. Be up front with who you are and what kind of messages you are sending.
 - Provide your recipients with a way to opt-out of messages.
 
 [Read the full CAN-SPAM Act here!](http://business.ftc.gov/documents/bus61-can-spam-act-compliance-guide-business) This is required reading for any aspiring email acolyte.
@@ -40,9 +40,9 @@ One of the most important parts of CAN-SPAM is this line:
 
 **"Tell recipients how to opt out of receiving future email from you."**
 
-All email providers look for an unsubscribe method (or links) in all emails. Even though it may not make sense for transactional mail, it can make the difference in messages arriving in the inbox or the spam folder. [Subscription tracking]({{root_url}}/ui/sending-email/subscription-tracking/) automatically inserts an unsubscribe link into all your emails and maintains the Unsubscribe list.
+All email providers look for an unsubscribe method (or links) in all emails. Even though it may not make sense for transactional mail, it can make the difference between messages arriving in the inbox or the spam folder. [Subscription tracking]({{root_url}}/ui/sending-email/subscription-tracking/) automatically inserts an unsubscribe link into all your emails and maintains the Unsubscribe list.
 
-Think of it this way: would you rather a recipient politely decline future emails from you, or mark your messages as spam because they have no other option?
+Think of it this way: would you rather a recipient politely decline future emails from you or mark your messages as spam because they have no other option?
 
  ### 	Who are you?
 
@@ -50,13 +50,19 @@ Maximum company visibility helps as well. Placing your company name in the subje
 
 We've all ignored phone calls from numbers we don't recognize, the same goes for email!
 
+<call-out type="warning">
+
+CAN-SPAM actually requires you inform recipients of where you are located.
+
+</call-out>
+
  ### 	Segment your traffic
 
 Keeping your mail streams separated can make a huge difference in the long run. Specifically, [segmenting]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/) your marketing email from your transactional email is a great way to keep legitimate mail out of trouble.
 
-Say for example you are sending your Daily Knitting Update emails on the same account and the same IP address as your receipts, invoices, and password resets.
+Say, for example, you are sending your Daily Knitting Update emails on the same account and the same IP address as your receipts, invoices, and password resets.
 
-The day then comes where one of your recipients simply can't take it anymore, and marks every single Daily Knitting email they've ever received from you as spam. Knitting overload!
+The day then comes where one of your recipients simply can't take it anymore and marks every single Daily Knitting email they've ever received from you as spam. Knitting overload!
 
 The potential fallback from this is that not only will that recipient no longer receive their important receipts, invoices, and password resets, but it then becomes possible that ALL recipients at the same domain or ISP may also run afoul of the same problem. Yikes!
 
@@ -88,7 +94,7 @@ If you are unsure where your emails stand, please contact our support team at [h
 
  ### 	Tips for Click Tracked links
 
-Our click tracking application can sometimes trip up spam filters. If you have click tracking enabled, we'll replace any links within HTML `<a>` tags with unique links that redirect through our service. As such if you use the original link as the clickable link text in your `<a>` tag, when the click tracking link is replaced it creates irregularity between where the link appears to go and where it actually goes. For example the original link:
+Our click tracking application can sometimes trip up spam filters. If you have click tracking enabled, we'll replace any links within HTML `<a>` tags with unique links that redirect through our service. As such, if you use the original link as the clickable link text in your `<a>` tag, when the click tracking link is replaced it creates irregularity between where the link appears to go and where it actually goes. For example the original link:
 
 `<a href="http://www.sendgrid.com">http://www.sendgrid.com</a>`
 

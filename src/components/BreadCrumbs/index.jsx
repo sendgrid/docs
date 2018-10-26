@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Link from 'gatsby-link';
 import _ from 'lodash';
 
-export default class BreadCrumbs extends Component {
+class BreadCrumbs extends Component {
   constructor(props) {
     super(props);
     this.pathParts = this.getPathParts();
@@ -95,7 +95,7 @@ export default class BreadCrumbs extends Component {
     return (
       <div>
         <ul className="breadcrumb">
-          {this.state.items.map((item) => {
+          {this.state.items.map(item => {
             const classes = `breadcrumb-item-${item.textNode.replace(' ', '-').toLowerCase()}`;
             return (
               <li key={item.textNode} className={classes} ><Link to={item.to}>{item.textNode}</Link></li>
@@ -110,3 +110,5 @@ export default class BreadCrumbs extends Component {
     );
   }
 }
+
+export default BreadCrumbs;

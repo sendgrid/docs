@@ -107,8 +107,6 @@ The local-part (i.e. anything before @) can be any word or combination because a
 
 </call-out>
 
-You can check the [Activity Feed](https://app.sendgrid.com/email_activity?) from your SendGrid dashboard to see if incoming mail was parsed. For more help, see [Debugging a Webhook]({{root_url}}/for-developers/tracking-events/troubleshooting/).
-
 <call-out type="warning">
 
 Remember to direct your incoming email to your hostname (for example, example@example.com). If you do not, your incoming email will not be parsed.

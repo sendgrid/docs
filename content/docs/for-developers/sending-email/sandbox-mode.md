@@ -26,7 +26,7 @@ When making a request with sandbox mode enabled, we will validate the form, type
  	
 <call-out type="warning">
 
-When using sandbox mode, you must include the "enable" parameter and it must be given a boolean value of either true, or false. **Do not enclose the boolean value in quotes**, or you will receive the error:
+When using sandbox mode, you must include the "enable" parameter and it must be given a boolean value of either true or false. **Do not enclose the boolean value in quotes** or you will receive the error:
 
 `The sandbox mode enable param should be a boolean value.`
 

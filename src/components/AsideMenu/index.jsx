@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import _ from 'lodash';
 
-export default class AsideMenu extends React.Component {
+class AsideMenu extends Component {
   constructor(props) {
     super(props);
 
@@ -57,7 +57,7 @@ export default class AsideMenu extends React.Component {
     return (
       <aside className="aside-nav">
         <div className="aside-nav__title is-size-h5">In the article</div>
-        {navItems.map((el) => {
+        {navItems.map(el => {
             const {
               id,
               textNode,
@@ -74,3 +74,5 @@ export default class AsideMenu extends React.Component {
     );
   }
 }
+
+export default AsideMenu; 

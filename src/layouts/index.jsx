@@ -4,12 +4,11 @@ import StatusPage from '../components/StatusPage';
 import Footer from '../components/Footer';
 import '../scss/style-guide.scss';
 
-export default class MainLayout extends React.Component {
-  render() {
+export default function MainLayout(props) {
     const {
       children,
       location,
-    } = this.props;
+    } = props;
 
     const pathClass = location.pathname.replace(/\/docs\\|\//g, '');
     const classNames = `docSearch-content docs-wrap ${pathClass}`;
@@ -23,5 +22,4 @@ export default class MainLayout extends React.Component {
         {renderFooter}
       </div>
     );
-  }
 }

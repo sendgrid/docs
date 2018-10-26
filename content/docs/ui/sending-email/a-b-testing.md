@@ -37,13 +37,13 @@ You can test up to 6 different variations for each A/B test campaign.
 
 	Select the Subject Line A/B test to optimize the [Open Rate]({{root_url}}/glossary/open-rate/) of your email campaign, since the subject usually is all the recipient sees until they open your email.
 
-	High open rates shows the strength of a subject line. Once you find a subject line that works well, you will potentially see other engagement metrics improve as well.
+	High open rates show the strength of a subject line. Once you find a subject line that works well, you will potentially see other engagement metrics improve as well.
 
 - **Email Content - Optimize Click Rates**
 
 	Select the Email Content A/B test to optimize the Click Rate of your email campaign, since the recipient will not see this content unless they open your email.
 
-    High click rates means that you have compelling content and calls to action (CTAs).
+    High click rates mean that you have compelling content and calls to action (CTAs).
 
 ##  Adding Your Email Versions
 Enter the different versions of your email where you would normally edit that piece of content in you email campaign.
@@ -69,7 +69,7 @@ To know the direct cause for the best performing variation, only make one change
 ##  Select the A/B Test Campaign Sample Size
 Choose a percentage of your contact list that will participate in the A/B test.
 
-Each variation of the email will be sent to the same number of contacts, within the participating subset of your list.
+Each variation of the email will be sent to the same number of contacts within the participating subset of your list.
 
 
 
@@ -90,7 +90,7 @@ Each variation of the email will be sent to the same number of contacts, within 
 ##  Set the A/B Test Duration
 You can set your A/B test duration between 30 minutes and 24 hours.
 
-While you can test your email variations for up to 24 hours, emails will only be sent to the subset of contacts you've chosen to participate in the A/B test, during the test duration you set. The remainder of your contacts will only be sent the winning variation of your A/B test email after the test duration has completed.
+While you can test your email variations for up to 24 hours, emails will only be sent to the subset of contacts you've chosen to participate in the A/B test during the test duration you set. The remainder of your contacts will only be sent the winning variation of your A/B test email after the test duration has completed.
 
 <call-out>
 
@@ -98,7 +98,7 @@ While you can test your email variations for up to 24 hours, emails will only be
 
 You should be mindful of your test duration, with respect to the timeliness of your campaign content.
 
-For example, if you have a one-day sale that happens the day of your campaign, you should set the A/B test duration to less than 24 hours so that your remaining contacts still have time to get the final email campaign, and participate in your one-day sale.
+For example, if you have a one-day sale that happens the day of your campaign, you should set the A/B test duration to less than 24 hours so that your remaining contacts still have time to get the final email campaign and participate in your one-day sale.
 
 </call-out>
 

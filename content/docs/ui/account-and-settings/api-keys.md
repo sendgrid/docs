@@ -18,7 +18,7 @@ There are 2 different types of API keys:
 1. **Full Access** gives all of the API methods.
 1. **Billing Access** gives you access to the billing endpoints.
 
-We require that you create a separate API key for making billing related API calls. This segmentation adds an extra level of security by giving you more control over who has access to the various areas of your account.
+We require that you create a separate API key for making billing-related API calls. This segmentation adds an extra level of security by giving you more control over who has access to the various areas of your account.
 
 For more detailed information about API key permissions, see [API Keys permissions]({{root_url}}/ui/account-and-settings/api-keys/).
 

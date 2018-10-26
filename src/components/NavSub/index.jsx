@@ -3,7 +3,6 @@ import Search from '../Search';
 import BreadCrumbs from '../BreadCrumbs';
 import './NavSub.scss';
 
-
 const withSubNav = (args = { showBreadCrumbs: true }) => Page => props => (
   <div>
     <div className="nav-sub">
@@ -23,6 +22,5 @@ const withSubNav = (args = { showBreadCrumbs: true }) => Page => props => (
     <Page {...props} />
   </div>
 );
-
 
 export default withSubNav;

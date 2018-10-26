@@ -18,12 +18,12 @@ These libraries allow quick integration between SendGrid and your project, and a
 SendGrid maintains the following official libraries for mail sending.
 
 -   [sendgrid-csharp](https://github.com/sendgrid/sendgrid-csharp) - Official C\# Library
--   [sendgrid-go](https://github.com/sendgrid/sendgrid-go) - Official Go library
--   [sendgrid-java](https://github.com/sendgrid/sendgrid-java) - Official Java library
--   [sendgrid-nodejs](https://github.com/sendgrid/sendgrid-nodejs) - Official NodeJS library
--   [sendgrid-php](https://github.com/sendgrid/sendgrid-php) - Official PHP library
--   [sendgrid-python](https://github.com/sendgrid/sendgrid-python) - Official Python library
--   [sendgrid-ruby](https://github.com/sendgrid/sendgrid-ruby) - Official Ruby library
+-   [sendgrid-go](https://github.com/sendgrid/sendgrid-go) - Official Go Library
+-   [sendgrid-java](https://github.com/sendgrid/sendgrid-java) - Official Java Library
+-   [sendgrid-nodejs](https://github.com/sendgrid/sendgrid-nodejs) - Official NodeJS Library
+-   [sendgrid-php](https://github.com/sendgrid/sendgrid-php) - Official PHP Library
+-   [sendgrid-python](https://github.com/sendgrid/sendgrid-python) - Official Python Library
+-   [sendgrid-ruby](https://github.com/sendgrid/sendgrid-ruby) - Official Ruby Library
 
 
 The following official libraries are maintained by SendGrid to create [SMTP API Headers]({{root_url}}/for-developers/sending-email/building-an-smtp-email/), they are included in the above official libraries.

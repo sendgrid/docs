@@ -10,7 +10,7 @@ layout: page
 navigation:
   show: true
 ---
-Teammates allows multiple users, or teammates, to send email from a single SendGrid account. It enables groups of users to with different roles and responsibilities to share one account, where each of these users has access to varying SendGrid features depending on their needs. By only giving your individual team members access to the features that they need to do their jobs, you can limit access to sensitive areas of your account. Teammates makes it incredibly easy to add, remove, and manage different users. Free and Essentials customers can create 1 teammate per account, and Pro customers or higher packages up to 1000 teammates.
+Teammates allows multiple users, or teammates, to send email from a single SendGrid account. It enables groups of users with different roles and responsibilities to share one account, where each of these users has access to varying SendGrid features depending on their needs. By only giving your individual team members access to the features that they need to do their jobs, you can limit access to sensitive areas of your account. Teammates makes it incredibly easy to add, remove, and manage different users. Free and Essentials customers can create 1 teammate per account, and Pro customers or higher packages up to 1000 teammates.
 
 ## 	Adding Teammates
 
@@ -43,12 +43,6 @@ Only administrator teammates may impersonate subusers.
 </call-out>
 
 ## 	Managing Teammates
-
-<call-out>
-
-Only administrator teammates may impersonate subusers.
-
-</call-out>
 
  ### 	Configuring permissions
 

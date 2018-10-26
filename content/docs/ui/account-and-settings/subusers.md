@@ -29,7 +29,7 @@ New SendGrid accounts do not come with Subusers and must be created by the paren
 1. Click **Create New Subuser**.
 1. Enter the following required information into the corresponding fields:
     * Username - The username your Subuser will use to send emails and access the API.
-    * Email Address - The contact email address for this Subuser. This must be an active email account as SendGrid may contact a Subuser to provide support,  resolve sending and deliverability issues, or to enforce SendGrid's Terms of Service. Whenever we contact a Subuser, it is our policy to contact the parent account email address at the same time.
+    * Email Address - The contact email address for this Subuser. This must be an active email account as SendGrid may contact a Subuser to provide support,  resolve sending and deliverability issues, or to enforce [SendGrid's Terms of Service](https://sendgrid.com/policies/tos/). Whenever we contact a Subuser, it is our policy to contact the parent account email address at the same time.
     * Password - The password your Subuser will use to access SendGrid.com.
     * Avatar - If you have [gravatar](http://gravatar.com), or globally recognized avatar, that you use for other applications, it is automatically associated with this Subuser when you enter an email address. This makes it easier to identify all of the Subusers attached to your account.
 
@@ -93,7 +93,7 @@ Each monitor email costs one email credit.
 
 </call-out>
 
-The “Collect Sample Rate” is the frequency is the number of emails SendGrid will allow through before copying the email address you set on the next email sent. For example, if you set the collect sample rate at 100 then you will receive a copy of every 100th email this Subuser sends.
+The “Collect Sample Rate” is the number of emails SendGrid will allow through before copying the email address you set on the next email sent. For example, if you set the collect sample rate at 100 then you will receive a copy of every 100th email this Subuser sends.
 
 ## 	Impersonating a Subuser
 
@@ -155,4 +155,4 @@ Deleting a Subuser account cannot be undone. Please make sure that you are ready
 ## 	Additional Resources
 
 - [Assigning a Domain Whitelabel to a subuser]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/#assigning-a-subuser/)
-- [Teammates]({{root_url}}/help-spport/account-and-settings/teammates/)
+- [Teammates]({{root_url}}/ui/account-and-settings/teammates/)

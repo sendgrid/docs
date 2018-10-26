@@ -15,7 +15,7 @@ There are several ways you can get started with the SendGrid API
 
 ## 	Prerequisites
 
-These instructions describe how to send your first email using cURL calls. This is one of many ways to send email with the SendGrid - we also have [PHP](https://github.com/sendgrid/sendgrid-php), [Python](https://github.com/sendgrid/sendgrid-python), [Node.js](https://github.com/sendgrid/sendgrid-nodejs), [Java](https://github.com/sendgrid/sendgrid-java), [C#](https://github.com/sendgrid/sendgrid-csharp), [Go](https://github.com/sendgrid/sendgrid-go), and [Ruby](https://github.com/sendgrid/sendgrid-ruby) libraries.
+These instructions describe how to send your first email using cURL calls. This is one of many ways to send email with the SendGrid API - we also have [PHP](https://github.com/sendgrid/sendgrid-php), [Python](https://github.com/sendgrid/sendgrid-python), [Node.js](https://github.com/sendgrid/sendgrid-nodejs), [Java](https://github.com/sendgrid/sendgrid-java), [C#](https://github.com/sendgrid/sendgrid-csharp), [Go](https://github.com/sendgrid/sendgrid-go), and [Ruby](https://github.com/sendgrid/sendgrid-ruby) libraries.
 
 Before you can start using the API, you need to do the following:
 
@@ -82,4 +82,5 @@ For more information on SendGrid and where you can go from here, check out these
 
 - [API Reference]({{root_url}}/api-reference/)
 - [Sender Authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/)
+- [Automating Subusers]({{root_url}}/for-developers/sending-email/automating-subusers/)
 - [How to Send Email]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/)

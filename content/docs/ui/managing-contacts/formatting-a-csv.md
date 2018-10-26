@@ -30,7 +30,7 @@ You can also include [custom fields]({{root_url}}/ui/managing-contacts/custom-fi
 
 ### Header Row
 
-The first row of your CSV must be a header row containing labels identifying each column. Headers must only use letters, numbers, and underscores. **You cannot use spaces** If you add custom field data to your CSV, you can save some time when uploading by naming the columns the same as the custom fields you have previously defined.
+The first row of your CSV must be a header row containing labels identifying each column. Headers must only use letters, numbers, and underscores. **You cannot use spaces**. If you add custom field data to your CSV, you can save some time when uploading by naming the columns the same as the custom fields you have previously defined.
 
 SendGrid identifies individual contacts by their email address, so "email" must be one of the CSV headers. If you do not include the email column, SendGrid will not add any information to your contact database or list. Rows in your CSV without an email address in the email column will automatically fail, but will not cause the entire upload to fail.
 
@@ -62,8 +62,7 @@ Properly format any dates in your CSV. If you created your CSV with Excel and it
 **I have more than one of the same email in my database**
 
 Marketing Campaigns uses email as the unique identifier for each contact. So, if you upload the same email address multiple times, the [custom field]({{root_url}}/ui/managing-contacts/custom-fields/) data associated with that email will be updated with each upload to the most recently uploaded/updated information. This feature helps prevent you from accidentally emailing the user after they have unsubscribed.
-
-If it's necessary to have a duplicate entry in your contacts database What you may want to do is add logic to set a custom field, based on the reason why you have duplicate emails in your system (for example multiple product lines) and then [segment]({{root_url}}/ui/managing-contacts/managing-contact-list/) your user to be in lists based on those custom fields.
+If it's necessary to have a duplicate entry in your contacts database What you may want to do is add logic to set a custom field, based on the reason why you have duplicate emails in your system (for example multiple product lines) and then [segment]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/) your user to be in lists based on those custom fields.
 
 ## 	Troubleshooting
 
@@ -108,5 +107,5 @@ Number fields can include monetary values without the currency symbols. For exam
  ## 	Additional Resources
 
 - [Contacts API]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html)
-- [Segmenting your Contacts]({{root_url}}/ui/managing-contacts/managing-contact-list/)
+- [Segmenting your Contacts]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/)
 - [Building your Contact list]({{root_url}}/ui/managing-contacts/building-your-contact-list/)

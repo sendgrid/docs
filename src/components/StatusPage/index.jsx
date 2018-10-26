@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import axios from 'axios';
 
-export default class MainLayout extends React.Component {
+class MainLayout extends Component {
   constructor(props) {
     super(props);
 
@@ -12,7 +12,7 @@ export default class MainLayout extends React.Component {
 
   componentWillMount() {
     axios.get('https://3tgl2vf85cht.statuspage.io/api/v2/status.json')
-      .then((res) => {
+      .then(res => {
         this.setState({
           status: res.data,
         });
@@ -39,3 +39,5 @@ export default class MainLayout extends React.Component {
     );
   }
 }
+
+export default MainLayout;

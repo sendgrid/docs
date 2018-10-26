@@ -8,7 +8,7 @@ navigation:
 seo:
   title: Design & Code Editor
   override: true
-  description: SendGrid Marketing Campaigns' editing gives you complete control over your emails. Use a flexible, drag-and-drop Design editor, or a robust HTML code editor.
+  description: SendGrid Marketing Campaigns' editing gives you complete control over your emails. Use a flexible drag-and-drop Design editor or a robust HTML code editor.
 ---
 
 <iframe src="https://player.vimeo.com/video/249110555" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -17,7 +17,7 @@ Marketing Campaigns is all about supporting your unique workflow, so you can get
 
 ## Choosing The Right Editor
 
-The [**Code Editor**](#the-code-editor) is perfect for users who are importing, creating or editing custom HTML. It offers a robust environment to upload images, backed by a feature-packed editor – complete with split-screen preview, error flagging, scroll-syncing, syntax highlighting and more. While other email editors may be notorious for adding excess code to your project, rest assured that our editor never modifies your carefully crafted HTML.
+The [**Code Editor**](#the-code-editor) is perfect for users who are importing, creating, or editing custom HTML. It offers a robust environment to upload images, backed by a feature-packed editor – complete with split-screen preview, error flagging, scroll-syncing, syntax highlighting, and more. While other email editors may be notorious for adding excess code to your project, rest assured that our editor never modifies your carefully crafted HTML.
 
 The [**Design Editor**](#the-design-editor), complete with HTML access to each content module, offers powerful “what you see is what you get” (WYSIWYG) editing. It features a diverse library of content blocks, allowing you to build beautiful emails quickly and intuitively. Once placed into your campaign, each module offers access to edit the HTML and a robust panel of settings – perfect for customizing content precisely to your needs.
 
@@ -31,12 +31,12 @@ The [Design Editor](#the-design-editor) features a number of convenient ways to 
 
 ## The Code Editor
 
-SendGrid’s marketer-friendly code editor features a powerful, split-screen editing experience – perfect for building campaigns with your own custom HTML. It offers a number of helpful features, often found in native editors.
+SendGrid’s marketer-friendly code editor features a powerful split-screen editing experience – perfect for building campaigns with your own custom HTML. It offers a number of helpful features, often found in native editors.
 
 ### Code Editor Features
 
 **Live Template Preview** -
-See how your email looks in real-time, as you write and edit code. No more tabbing between windows, refreshing, or re-rendering. Marketing Campaigns’ split-screen editing experience displays your code on the left, and a pixel-perfect preview on the right.
+See how your email looks in real-time as you write and edit code. No more tabbing between windows, refreshing, or re-rendering. Marketing Campaigns’ split-screen editing experience displays your code on the left and a pixel-perfect preview on the right.
 
 **Code & Tag Completion** -
 As you type, the editor automatically makes common suggestions. You can accept them by tapping tab or return –– or, simply continue typing to ignore. Additionally, as you open a tag of any kind, the code editor automatically places a closing tag.
@@ -65,7 +65,7 @@ You can only edit unsent campaigns.
 
 </call-out>
 
-You can select a Blank Template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates]({{root_url}}/ui/sending-email/create-and-edit-transactional-templates/).
+You can select a blank template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates]({{root_url}}/ui/sending-email/create-and-edit-transactional-templates/).
 
 <call-out>
 
@@ -205,7 +205,7 @@ Currently, only 10 categories can be added to each campaign.
 
 <iframe src="https://player.vimeo.com/video/221496251" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-SendGrid’s flexible design editor allows you to build your templates and campaigns using intuitive, drag and drop tools. The “What you see is what you get” (WYSIWYG) editing experience features a library of modules for easily adding content to your campaign.
+SendGrid’s flexible design editor allows you to build your templates and campaigns using intuitive, drag & drop tools. The “What you see is what you get” (WYSIWYG) editing experience features a library of modules for easily adding content to your campaign.
 
 ### Getting Started With the Design Editor
 
@@ -294,7 +294,7 @@ You can add the following drag & drop modules to your campaign:
   </tr>
   <tr>
     <td>Unsubscribe</td>
-    <td>This module is pre-populated with your sender information and a hyperlink to the [unsubscribe] tag which are required in order to be compliant with anti-spam laws.</td>
+    <td>This module is pre-populated with your sender information and a hyperlink to the [unsubscribe] tag which are required in order to be compliant with anti-spam laws. If you are using transactional templates, you need to include sender information  the JSON array. For more information, see [How to Send Email with Dynamic Transactional Templates]({{root_url}}/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/.</td>
     <td>Background color, padding, line height, font, font size, link color, alignment, Address Line, Unsubscribe Settings.</td>
   </tr>
 </table>
@@ -529,7 +529,7 @@ Next, you’ll have to add add a `<style>` to specify that you want to use this 
 
 ### Importing Custom HTML With Drag & Drop Markup
 
-If you are writing your own custom HTML that you plan on importing into the design editor, refer to the [drag & drop code examples](#drag--drop-code-examples) to ensure that any modules you create are compatible with our drag & drop functionality. If you do not specify a data type that matches one of our drag & drop modules your code is imported as a text module.
+If you are writing your own custom HTML that you plan on importing into the design editor, refer to the [drag & drop code examples](#drag--drop-code-examples) to ensure that any modules you create are compatible with our drag & drop functionality. If you do not specify a data type that matches one of our drag & drop modules, your code is imported as a text module.
 
 *To import custom HTML:*
 

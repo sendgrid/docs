@@ -15,7 +15,7 @@ seo:
 <iframe src="https://player.vimeo.com/video/121404093" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
-From our [Contacts](https://sendgrid.com/marketing_campaigns/contacts) page, you can add, upload, modify, and delete your contacts. Contacts can be added to your contacts database using the [API]({{root_url}}/api-reference/), or by  manually adding or uploading a CSV file through the [SendGrid App](https://app.sendgrid.com/).
+From our [Contacts](https://sendgrid.com/marketing_campaigns/contacts) page, you can add, upload, modify, and delete your contacts. Contacts can be added to your contacts database using the [API]({{root_url}}/api-reference/), or by uploading a CSV file through the [SendGrid App](https://app.sendgrid.com/), or by simply adding individual contacts manually.
 
 <call-out>
 
@@ -34,12 +34,12 @@ You can easily add contacts to your contact database by uploading a CSV of your 
 1. Click **Add Contacts** and then select **Upload CSV**.
 2. Choose an existing list or create a new list.
 
-    If you choose to add the contacts without assigning them to a list, they exist in the contacts database without any additional context.
+    If you choose to add contacts without assigning them to a list, they will be uploaded into your Contacts without any additional context.
 
 3. Upload your file by dragging it into or clicking the CSV upload area.
 4. Once the CSV has populated, click **Next: Custom Fields**.
 
-   A page appears displaying the data from the header row of the CSV file. From the list, you can select a custom field to associate with the data in the column. If there isn't a corresponding field, you can add one. Only the **Email** field is required to complete the upload. Skipped column headers are not uploaded and do not appear as custom fields within an individual contact's profile.
+   Once your file uploads, a page appears displaying the data from the header row of the CSV file. From the list, you can select an existing custom field to associate with the data in the column. If there isn't already a corresponding field, you can add one. Only the **Email** field is required to complete the upload. Skipped column headers are not uploaded and do not appear as custom fields within an individual contact's profile.
 
 5. Select **Skip Column** to omit data from the contacts list.
 6. Once you've gone through all of the headers, click **Next: Add Contacts**.
@@ -56,7 +56,7 @@ After uploading contacts, you can define segments for individual contacts or lis
 
 </call-out>
 
-Once we have completed processing your new contacts, you will receive an email to any addresses specified under [Notifications](https://sendgrid.com/marketing_campaigns/ui/notifications). If there is no email address specified for notifications, the report will go to the address associated with the account by default. To add an additional notification email address, click **Add Notification Email Address**
+Once we have completed processing your new contacts, you will receive an email to any addresses specified under [Notifications](https://sendgrid.com/marketing_campaigns/ui/notifications). If there is no email address specified for notifications, the report will go to the email address that is associated with the account by default. To add an additional notification email address, click **Add Notification Email Address**.
 
 ![]({{root_url}}/img/add_notification_email_contacts.png "Add Notification Email Address")
 
@@ -78,7 +78,7 @@ The download link to your CSV of errored rows will be available for 24 hours.
 
 <call-out>
 
-If you upload the same contact more than once, SendGrid updates the data, assuming the most recent upload has the most up-to-date information. Updates to your contacts cannot be rolled back. Multiples of the same contact (as identified by email) can be added to different lists or segments and count as one contact against your total contacts per account or subuser account.
+If you upload the same contact more than once, SendGrid updates the data, assuming the most recent upload has the most up-to-date information. Updates to your contacts cannot be rolled back. The same contact (as identified by email) can be added to different lists or segments and counts as only one contact against your total contacts per account or subuser account.
 
 </call-out>
 

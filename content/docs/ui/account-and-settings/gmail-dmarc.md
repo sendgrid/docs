@@ -19,9 +19,9 @@ This is because Gmail will no longer be accepting messages where the From domain
 
  
 
-**What this means:**  Soon, you will no longer be able send with the From address being anything from a Gmail address when sending to a domain that checks DMARC before accepting mail. 
+**What this means:**  Soon, you will no longer be able to send with the From address being anything from a Gmail address when sending to a domain that checks DMARC before accepting mail. 
 
-**What you can do:** You will need to change the From address you use in emails to a non-Gmail address. We recommend using one at your own mail domain, or one you control that is legitimate. You can then set the Reply-To field to be the original Gmail address that previously was used in the From field. 
+**What you can do:** You will need to change the From address you use in emails to a non-Gmail address. We recommend using one at your own mail domain or one you control that is legitimate. You can then set the Reply-To field to be the original Gmail address that previously was used in the From field. 
 
 **What about these messages, are they lost?** : Yes, any send with this bounce message is discarded and tracked as a  [Block](http://sendgrid.com/blocks). You will need to adjust your From address field settings, and then try resending from your side.
 

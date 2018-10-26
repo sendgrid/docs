@@ -10,8 +10,10 @@ seo:
 navigation:
   show: true
 ---
-<iframe src="https://player.vimeo.com/video/221494705" width="500" height="312" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 Adding Unsubscribe Groups to your emails makes it easy to honor your recipients' email preferences and protects your sender reputation by complying with anti-spam legislation.
+
+<iframe src="https://player.vimeo.com/video/221494705" width="500" height="312" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ## Create an Unsubscribe Group
 
@@ -98,7 +100,7 @@ From the UI, you can edit Unsubscribe Groups or download a list of recipients th
 
 *To edit an Unsubscribe Group:*
 
-1. Navigate to the Unsubuscribe Group you want to edit.
+1. Navigate to the Unsubscribe Group you want to edit.
 1. Click the action menu.
 1. Select **Edit**.
 From the Edit Group page, you can change the Group Name, Group Description, and display preferences.
@@ -107,7 +109,7 @@ From the Edit Group page, you can change the Group Name, Group Description, and 
 
 *To delete an Unsubscribe Group:*
 
-1. Navigate to the Unsubuscribe Group you want to delete.
+1. Navigate to the Unsubscribe Group you want to delete.
 1. Click the action menu.
 1. Select **Edit**. The Edit Group page opens.
 1. Click **Delete Group**.

@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-[Blocks]({{root_url}}/glossary/blocks/) happen when your message was rejected for a reason related to the message, not the recipient address. This can happen when your mail server IP address has been added to a blacklist or blocked by an ISP, or if the message content is flagged by a filter on the receiving server.
+[Blocks]({{root_url}}/glossary/blocks/) happen when your message was rejected for a reason related to the message, not the recipient address. This can happen when your mail server IP address has been added to a blacklist, blocked by an ISP, or if the message content is flagged by a filter on the receiving server.
 
 The “Reason on the Block” will clarify what the exact reason is. Typically, it’s possible to have your IP address removed from a blacklist, and some lists automatically do this after a period of time. Message content can be modified to correct a filtered block.
 
