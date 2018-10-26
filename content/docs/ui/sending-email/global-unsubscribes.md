@@ -35,7 +35,11 @@ When you add the `<%asm_global_unsubscribe_url%>` tag to your email, we will rep
 
 Alternatively, you can use the `<%asm_global_unsubscribe_raw_url%>` tag, which will be replaced with only the global unsubscribe URL without the hyperlinked text "Unsubscribe From All Emails".
 
-Note: When using our ASM Global or Group Unsubscribe tags, you must pass an unsubscribe group in your API or X-SMTPAPI request for the unsubscribe link to populate.
+<call-out>
+
+When using our ASM Global or Group Unsubscribe tags, you must pass an unsubscribe group in your API or X-SMTPAPI request for the unsubscribe link to populate.
+
+</call-out>
 
 ## 	Using the API
 
