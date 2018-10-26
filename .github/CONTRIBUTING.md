@@ -72,7 +72,7 @@ We welcome direct contributions to the SendGrid docs code base. Thank you!
 <a name="setup-steps"></a>
 ### Setup Steps
 
-* Install Git for:
+* Install Github for:
 	* [Mac](https://git-scm.com/download/mac) 
 	* [Windows](https://git-scm.com/download/win) 
 	* [Linux](https://git-scm.com/download/linux)
