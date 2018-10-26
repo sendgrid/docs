@@ -51,7 +51,7 @@ If you want to test your webhook locally, deploy a local version of [Webhook tes
 
 ## 	Next steps
 
-Now that you understand what Event data looks like and the basics of the webhook, it's time to evaluate your own needs for the types of events you want to store, what kind of data storage that requires, and then switch your integration from the RequestBin test to a more permanent integration.
+Now that you understand what Event data looks like and the basics of the webhook, it's time to evaluate your own needs for the types of events you want to store, what kind of data storage that requires, and then switch your integration from the Webhook tester test to a more permanent integration.
 
  ### 	Data Storage
 
