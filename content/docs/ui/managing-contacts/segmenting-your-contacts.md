@@ -14,7 +14,7 @@ seo:
 
 <iframe src="https://player.vimeo.com/video/229916004" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-You can filter the information stored in your contact lists to create segments. Segmenting contacts using different conditions allows you to create marketing campaigns that directly address the wants and needs of a particular audience. You can create a segment that pulls from ALL CONTACTS or a specific existing list. [Custom fields]({{root_url}}/ui/managing-contacts/custom-fields/) allow you to use unique information to identify contacts for different segments.
+You can filter the information stored in your contact lists to create segments. Segmenting contacts using different conditions allows you to create Marketing Campaigns that directly address the wants and needs of a particular audience. You can create a segment that pulls from ALL CONTACTS or a specific existing list. [Custom fields]({{root_url}}/ui/managing-contacts/custom-fields/) allow you to use unique information to identify contacts for different segments.
 Segments are dynamically updated over time as you add contacts who meet the criteria of your segment, or as the traits of your contacts change. For example, a segment with the criteria ”opened an email within 30 days” will evolve as contacts engage (or don’t engage) with your email.
 
 ## 	Creating a Segment
@@ -38,7 +38,7 @@ You can create up to 200 segments.
 7. From the *Criteria* drop-down, choose from a list of available operators based on the chosen condition.
 
 
-For example, to create a segment of recipients that have clicked on a link in a specific marketing campaign:
+For example, to create a segment of recipients that have clicked on a link in a specific Marketing Campaign:
 
 1. Navigate to **Marketing** and then select **Contacts**.
 1. Click **Create Segment**.
@@ -129,7 +129,7 @@ You can add up to 15 different conditions per segment.
 1. Click the Action Menu next to the name of the segment you wish to export.
 1. Select **Export**.
 
-This triggers SendGrid to send an email to the primary email address on the account that includes a link to
+This triggers SendGrid to send an email to the primary email address on the account. The email includes a link to
 download the CSV of all the contacts in the list and their associated custom field values.
 
 <call-out>
