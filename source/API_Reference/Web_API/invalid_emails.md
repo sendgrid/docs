@@ -6,7 +6,7 @@ navigation:
   show: true
 ---
 
-An [invalid email]({{root_url}}/docs/glossary/invalid-email/) event occurs when an address is formatted in a manner that does not meet internet email format standards, such as a misspelled domain or missing @ symbol. This is determined by SendGrid systems prior to attempting to send to a designated invalid address and therefore any further requests will result in a Dropped event. 
+An [invalid email]({{root_url}}/glossary/invalid-email/) event occurs when an address is formatted in a manner that does not meet internet email format standards, such as a misspelled domain or missing @ symbol. This is determined by SendGrid systems prior to attempting to send to a designated invalid address and therefore any further requests will result in a Dropped event. 
 
 {% anchor h2 %}
 get 
