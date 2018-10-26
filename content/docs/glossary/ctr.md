@@ -24,7 +24,7 @@ SendGrid has also added total click-through rate (TCTR) as a metric for marketin
 Click-through rates help determine the relative success or failure of an email campaign based on the engagement of your recipients. The higher the click-through rate, the more successful an email campaign is considered to be. However, there is no standard value for what constitutes an ideal click-through rate because there are many different factors that can affect the click-through rate of an email such as the type of email being sent, the sending frequency, your company's industry, and even the time of day.
 
 ## My CTR seems low, what can I do to change that? 	
-As mentioned before, click-through rates can vary between campaigns depending on a lot of different factors; however, the three most significant aspects are arguably message content, sending frequency, and overall consistency.
+As mentioned before, click-through rates can vary between campaigns depending on a lot of different factors; however, the three most significant aspects that affect click-through rates are message content, sending frequency, and overall consistency.
 
  ### Message Content 	
 Make sure that the content of your emails is to the point and relevant to your subject line. Keep your paragraphs short whenever possible, ideally no more than 3 to 4 concise sentences. Do not use images frivolously. You should try to convey your updates primarily through text, as too many images in an email body can make a message take longer to load and/or might make it look suspicious at a first glance (since many email clients do not load images within messages by default).
