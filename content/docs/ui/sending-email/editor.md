@@ -65,7 +65,7 @@ You can only edit unsent campaigns.
 
 </call-out>
 
-You can select a Blank Template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates]({{root_url}}/ui/sending-email/create-and-edit-transactional-templates/).
+You can select a blank template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates]({{root_url}}/ui/sending-email/create-and-edit-transactional-templates/).
 
 <call-out>
 
