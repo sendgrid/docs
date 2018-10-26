@@ -24,15 +24,15 @@ SendGrid has also added total click-through rate (TCTR) as a metric for marketin
 Click-through rates help determine the relative success or failure of an email campaign based on the engagement of your recipients. The higher the click-through rate, the more successful an email campaign is considered to be. However, there is no standard value for what constitutes an ideal click-through rate because there are many different factors that can affect the click-through rate of an email such as the type of email being sent, the sending frequency, your company's industry, and even the time of day.
 
 ## My CTR seems low, what can I do to change that? 	
-As mentioned before, click-through rates can vary between campaigns depending on a lot of different factors, however the three most significant aspects are arguably message content, sending frequency, and overall consistency.
+As mentioned before, click-through rates can vary between campaigns depending on a lot of different factors; however, the three most significant aspects that affect click-through rates are message content, sending frequency, and overall consistency.
 
  ### Message Content 	
-Make sure that the content of your emails is to-the-point and relevant to your subject line. Keep your paragraphs short whenever possible, ideally no more than 3 to 4 concise sentences. Do not use images frivolously. You should try to convey your updates primarily through text, as too many images in an email body can make a message take longer to load and/or might make it look suspicious at a first glance (since many email clients do not load images within messages by default).
+Make sure that the content of your emails is to the point and relevant to your subject line. Keep your paragraphs short whenever possible, ideally no more than 3 to 4 concise sentences. Do not use images frivolously. You should try to convey your updates primarily through text, as too many images in an email body can make a message take longer to load and/or might make it look suspicious at a first glance (since many email clients do not load images within messages by default).
 
  ### Sending Frequency 	
 Be up front with your recipients regarding your sending rates. If you tell your users that you will send out one newsletter every week, then it's important to stick to that schedule. Better still, give your recipients options, such as the ability to choose between a weekly and a monthly newsletter.
 
  ### Consistency 	
-Ensure that all of your emails are consistent. If you decide to pick a common theme, color, or font style then you should use it across all of your campaigns so that your recipients know what to expect from you. It's also important to keep the information within your messages relevant to your company and your industry.
+Ensure that all of your emails are consistent. If you decide to pick a common theme, color, or font style, then you should use it across all of your campaigns so that your recipients know what to expect from you. It's also important to keep the information within your messages relevant to your company and your industry.
 
 Remember, email marketing is not an exact science. Since there is no average value to shoot for, CTRs can vary wildly between companies and across industries, so it's best to keep an eye on your email campaigns and adjust your messages and sending practices accordingly. Find information about the [best sending practices](http://sendgrid.com/blog/best-practices/ "Link: http://sendgrid.com/blog/best-practices/") and more details on how to improve your [deliverability](http://sendgrid.com/blog/deliverability/ "Link: http://sendgrid.com/blog/deliverability/") over on our [blog](http://sendgrid.com/blog/).
