@@ -239,7 +239,7 @@ Please use PNG, GIF, or JPG files. Give the screenshots unique, meaningful names
 
 Images should be located in the following directory: 
 
-docs/static/img/
+`docs/static/img/`
 
 ### Size and resolution:
 
