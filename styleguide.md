@@ -48,8 +48,8 @@ YES: “Ten templates are included in Marketing Campaigns.”
 
 When referring to other pages in the documentation, make sure your link text is descriptive.
 
-YES: For more information, see [Event Webhook] documentation.
-NO: For more information, click [here].
+YES: For more information, see [Event Webhook](https://sendgrid.com/docs/glossary/event-webhook/) documentation.
+NO: For more information, click [here](https://sendgrid.com/docs/glossary/event-webhook/).
 
 <a name="head matter"></a>
 ### Head matter
