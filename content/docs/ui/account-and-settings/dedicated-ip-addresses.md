@@ -18,7 +18,7 @@ An Internet Protocol (IP) address is a unique numerical address that defines a l
 
 ## 	Why would I want a dedicated IP address?
 
-If you are sending any significant amount of email, we typically suggest sending your marketing and transactional emails to from separate IP addresses. In addition, it is strongly recommended to associate your sending domain with your new outbound IP address (provided to you by SendGrid). This is available at no extra cost and can be accomplished by [completing an rDNS setup for your dedicated IP (here's a video tutorial and documentation help)]({{root_url}}/ui/account-and-settings/how-to-set-up-reverse-dns/).
+If you are sending any significant amount of email, we typically suggest sending your marketing and transactional emails from separate IP addresses. In addition, it is strongly recommended to associate your sending domain with your new outbound IP address (provided to you by SendGrid). This is available at no extra cost and can be accomplished by [completing an rDNS setup for your dedicated IP (here's a video tutorial and documentation help)]({{root_url}}/ui/account-and-settings/how-to-set-up-reverse-dns/).
 
 We also suggest having at least 2 promotional IP addresses when your volume reaches 200-300K/month.
 
@@ -27,7 +27,7 @@ We also suggest having at least 2 promotional IP addresses when your volume reac
 
 Depending on the plan you have chosen, you either have a dedicated sending IP address or you are using a shared sending IP address.
 
-- All Pro and Premier customers are given at least one dedicated sending IP by default. You can view any IPs attached to your account [here](https://app.sendgrid.com/settings/ip_addresses).
+- All Pro and Premier customers are given one dedicated sending IP by default. You can view any IPs attached to your account [here](https://app.sendgrid.com/settings/ip_addresses).
 - Free and Essential customers send from groups of shared IP addresses, where they are grouped with senders of similar reputation and deliverability. Shared IPs addresses that these accounts send from can change without notice as your reputation changes, or as we make changes to IP groups to improve deliverability. In theses cases, you will not be able to view your shared sending IP addresses from within your account.
 
 
@@ -79,7 +79,7 @@ The following are some third party tools available to assist you in maintaining 
 * [Sender Score](https://www.senderscore.org/blacklistlookup/)
 
 
-In addition, SendGrid does offer [Delivery Consultation](https://sendgrid.com/marketing/delivery-consult/) services to Pro and Premier accounts that can help with deliverability and on-boarding. Services include how to maintain/improve domain and IP reputation, reviewing message content, dedicated IP configuration, and creating a custom IP warmup plan just to name a few.
+In addition, SendGrid does offer [Expert Services](https://sendgrid.com/solutions/expert-services/) services to Pro and Premier accounts that can help with deliverability and onboarding. Services include how to maintain/improve domain and IP reputation, reviewing message content, dedicated IP configuration, and creating a custom IP warmup plan just to name a few.
 
 ## 	Warming Up a dedicated IP Address
 
