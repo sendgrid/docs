@@ -57,8 +57,21 @@ To set up domain authentication, you must submit the DNS records provided by Sen
 
 <call-out>
 
-If you [turn off automated security](#using-automated-security), you add TXT and MX records in this step instead of CNAME records.
+A recent change with how GoDaddy handles new DNS record values automatically adds your domain, resulting in a CNAME entry with too much information and a failure when trying to complete domain authentication. An example of this would be **em123.yourdomain.com.yourdomain.com**.
 
+Below is an example of the CNAME values under the HOST column as they are displayed in step 5 and how you will need to enter into your GoDaddy DNS Management:
+
+* HOST/NAME **em123.yourdomain.com** . ENTER CNAME RECORD HOST/NAME AS: **em123**
+* HOST/NAME **s1._domainkey.yourdomain.com**  ENTER CNAME RECORD HOST/NAME AS: **s1._domainkey**
+* HOST/NAME **s2._domainkey.yourdomain.com**  ENTER CNAME RECORD HOST/NAME AS: **s2._domainkey**
+
+Entries made in the VALUE or POINTS TO field do not need to be changed.
+
+</call-out>
+
+<call-out>
+
+If you [turn off automated security](#using-automated-security), you add TXT and MX records in this step instead of CNAME records.
 </call-out>
 
 It can take up to 48 hours for the records to verify after you upload them into your DNS host, so you will likely have to come back later to verify.
