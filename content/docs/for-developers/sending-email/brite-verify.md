@@ -71,7 +71,19 @@ Copy the key then paste it in the textbox in the Briteverify app. Make sure that
 
 Once the correct API Key is provided, the applications sync, and you may now verify your SendGrid data.
 
-![]({{root_url}}/images/Briteverify_Picture_10.jpeg)
+Choose the list you would like to verify and an estimated cost will display.
+
+![]({{root_url}}/images/briteverify_sgimport1.jpg)
+
+Risky emails include Unknown and Accept_all category emails and are preferred to be removed as they can dilute a marketing campaign’s overall performance. Enable the radio button to eliminate risky emails from the final list.
+
+![]({{root_url}}/images/briteverify_sgimport2.jpg)
+
+Next choose **File** as your Export Destination. Once the verification is complete the cleaned list will be transferred directly to your SendGrid account.
+
+Click **Verify List** to begin the verification.
+
+![]({{root_url}}/images/briteverify_sgimport3.jpg)
 
 <call-out>
 
