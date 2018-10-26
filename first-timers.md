@@ -37,3 +37,4 @@ The SendGrid Documentation must follow certain style guidelines. While many of t
 Docs contributors should strive for a professional and “coach-like” tone of voice. Avoid vague language, and get right to the point. Long and overly complicated explanations are not helpful to a user who wants a quick-and-easy answer. Please don’t be intimidated by these style guidelines. They don’t apply to most minor changes, and more significant changes will be reviewed and edited by the Docs Team before publication.
 
 If you are making substantial edits or are adding more than a paragraph of new content, feel free to refer to [SendGrid’s Style Guide](https://github.com/sendgrid/docs/blob/develop/styleguide.md).
+[Umme Ammara](https://github.com/UmmeAmmaraa/)
