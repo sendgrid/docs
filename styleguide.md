@@ -20,6 +20,7 @@ We strive to make our documentation concise, clear, organized, and scannable.
 * Use conversational language and industry-standard terms when possible.
 * Contractions are OK and preferred.
 * Use bulleted lists and numbered steps where applicable.
+* Use US English spelling.  
 
 When documenting a UI action, make it **bold**. Avoid using the word "button" in the step and simply refer to the name on the UI element.
     For example, "Enter your username and password, and then click **login**."
@@ -238,7 +239,7 @@ Please use PNG, GIF, or JPG files. Give the screenshots unique, meaningful names
 
 Images should be located in the following directory: 
 
-docs/static/img/
+`docs/static/img/`
 
 ### Size and resolution:
 

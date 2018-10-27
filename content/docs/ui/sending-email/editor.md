@@ -65,7 +65,7 @@ You can only edit unsent campaigns.
 
 </call-out>
 
-You can select a Blank Template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates]({{root_url}}/ui/sending-email/create-and-edit-transactional-templates/).
+You can select a blank template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates]({{root_url}}/ui/sending-email/create-and-edit-transactional-templates/).
 
 <call-out>
 
@@ -294,7 +294,7 @@ You can add the following drag & drop modules to your campaign:
   </tr>
   <tr>
     <td>Unsubscribe</td>
-    <td>This module is pre-populated with your sender information and a hyperlink to the [unsubscribe] tag which are required in order to be compliant with anti-spam laws.</td>
+    <td>This module is pre-populated with your sender information and a hyperlink to the [unsubscribe] tag which are required in order to be compliant with anti-spam laws. If you are using transactional templates, you need to include sender information  the JSON array. For more information, see [How to Send Email with Dynamic Transactional Templates]({{root_url}}/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/.</td>
     <td>Background color, padding, line height, font, font size, link color, alignment, Address Line, Unsubscribe Settings.</td>
   </tr>
 </table>

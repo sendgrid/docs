@@ -80,7 +80,7 @@ Below are links to the delisting forms used by the more popular external blackli
 - [Hotmail/Outlook/Live Bulk Email Sender Guidelines](https://mail.live.com/mail/policies.aspx)
 - [AOL Bulk Email Sender Guidelines](https://postmaster.aol.com/best-practices)
 
-If you are sending mail using these guidelines and still have problems to deliver email to those email providers, you can contact the ISP support by the following URL:
+If you are sending mail using these guidelines and still have problems delivering email to those email providers, you can contact the ISP support by the following URL:
 
 - [Gmail Bulk Sender Contact Form](https://support.google.com/mail/contact/bulk_send_new?visit_id=1-636427436775630765-3555263264&rd=1)
 - [Yahoo Bulk Sender Contact Form](http://help.yahoo.com/l/us/yahoo/mail/postmaster/bulkv2.html)

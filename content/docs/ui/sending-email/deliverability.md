@@ -21,7 +21,7 @@ First and foremost, ask yourself this question:
 
 **Am I sending the right message to the right person at the right time with the right frequency?**
 
-Overall email deliverability is influenced by how your recipients interact with your messages. If your messages are opened in a timely manner, images are displayed, and links are clicked, then mail providers will see you as a sender whose messages their recipients want to receive. If messages pile up, remain unopened, or get marked as spam, mail providers won't be as comfortable placing your messages in the inbox, or accepting them at all!
+Overall email deliverability is influenced by how your recipients interact with your messages. If your messages are opened in a timely manner, images are displayed and links are clicked, then mail providers will see you as a sender whose messages their recipients want to receive. If messages pile up, remain unopened or get marked as spam, mail providers won't be as comfortable placing your messages in the inbox or accepting them at all!
 
 ## 	Adhere to Standards
 

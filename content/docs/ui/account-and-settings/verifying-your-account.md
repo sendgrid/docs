@@ -45,7 +45,7 @@ Two-factor authentication allows you to make your SendGrid account more secure b
 
 ## Setting up Domain Authentication
 
-Domain authentication, formally known as domain whitelabel, shows email providers that SendGrid has your permission to send emails on your behalf. For more information, see see [How to set up domain authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/).
+Domain authentication, formally known as domain whitelabel, shows email providers that SendGrid has your permission to send emails on your behalf. For more information, see [How to set up domain authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/).
 
 ## Upgrading your account
 

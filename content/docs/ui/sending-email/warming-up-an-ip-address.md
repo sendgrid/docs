@@ -52,7 +52,7 @@ The goal of warming up is to ramp up your sending volume to your anticipated “
 
  ### 	Automated IP warmup API
 
-You can also put your IP address into warmup mode with our [Automated Warmup API]({{root_url}}/ui/sending-email/warming-up-an-ip-address/) - this automatically throttles traffic sent through your new IP according to our [warmup schedule]({{root_url}}/assets/IPWarmupSchedule.pdf).
+You can also put your IP address into warmup mode with our [Automated Warmup API]({{root_url}}//API_Reference/Web_API_v3/IP_Management/ip_warmup.html) - this automatically throttles traffic sent through your new IP according to our [warmup schedule]({{root_url}}/assets/IPWarmupSchedule.pdf).
 
 <call-out type="warning">
 

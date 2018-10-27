@@ -45,7 +45,7 @@ To add a new group, click the “Create New Group” button at the top right of 
 
 Default groups are those that are shown by default when a recipient chooses to unsubscribe from your emails. SendGrid will always show all of the default groups, so if you don’t want one of those groups to be displayed all the time, make sure that it is not set as a default group.
 
-You can also specify which groups to display at send time, but using the [asm_groups_to_display feature]({{root_url}}/for-developers/sending-email/suppressions#defining-asm-groups-to-display-on-the-manage-preferences-page) of the SMTP API.
+You can also specify which groups to display at send time by using the [asm_groups_to_display feature]({{root_url}}/for-developers/sending-email/suppressions#defining-asm-groups-to-display-on-the-manage-preferences-page) of the SMTP API.
 
 ## 	Add Recipients to an Unsubscribe Group
 
@@ -55,13 +55,13 @@ You may want to preload an unsubscribe group or add recipients to an unsubscribe
 
 <call-out type="warning">
 
-The emails should not be enclosed in quotes and should be NOT be formatted like `fname lname <email@example.com>`
+The emails should not be enclosed in quotes and should NOT be formatted like `fname lname <email@example.com>`
 
 </call-out>
 
 <call-out>
 
-This CSV should have a list of email addresses in the first column. It can include a header row or extra columns but this ancillary information will be ignored.
+This CSV should have a list of email addresses in the first column. It can include a header row or extra columns, but this ancillary information will be ignored.
 
 </call-out>
 

@@ -14,6 +14,7 @@ Blocked messages will appear under Email Reports under Blocks. When your IP addr
 
 Blocks are less permanent than Bounces. This is a list of refused messages that were either blocked by an ISP or deferred longer than 72 hours. In addition, SendGrid does not treat the blocks list as a suppression list - subsequent sends to emails on this list will be sent like normal.
 
+
 Having an entry on the SendGrid block list does not automatically drop email as it does for the bounce and unsubscribe list.
 
 See the block reason column for more detail specific to the blocked email.

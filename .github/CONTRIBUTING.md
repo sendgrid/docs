@@ -16,7 +16,7 @@ Hello! Thank you for choosing to help contribute to one of the SendGrid open sou
 		* [Anchors](#anchors)
 		* [Info blocks](#info_blocks)
 		* [API Examples](#api)
-* [JS and CSS, etc](#js_and_css)
+* [JS and CSS, etc.](#js_and_css)
 * [Creating a Pull Request](#creating-a-pull-request)
 
 Feel free to grab an issue you want to work on. Please indicate that you have begun work on it to avoid collisions. Once a PR is made, community review, comments, suggestions, and additional PRs are welcomed and encouraged.
@@ -228,7 +228,7 @@ via `_plugins/jekyll_asset_pipeline.rb`.
 <a name="creating-a-pull-request"></a>
 ## Creating a Pull Request
 
-1. [Fork](https://help.github.com/fork-a-repo/) the project, clone your fork,
+1. [Fork](https://help.github.com/articles/fork-a-repo/) the project, clone your fork,
    and configure the remotes:
 
    ```bash
@@ -257,7 +257,7 @@ via `_plugins/jekyll_asset_pipeline.rb`.
 4. Commit your changes in logical chunks. Please adhere to these [git commit
    message guidelines](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
    or your code is unlikely to be merged into the main project. Use Git's
-   [interactive rebase](https://help.github.com/articles/interactive-rebase)
+   [rebase](https://help.github.com/articles/about-git-rebase/)
    feature to tidy up your commits before making them public.
 
    4a. Create tests.
@@ -276,7 +276,7 @@ via `_plugins/jekyll_asset_pipeline.rb`.
    $ git push origin <topic-branch-name>
    ```
 
-7. [Open a Pull Request](https://help.github.com/articles/using-pull-requests/)
+7. [Open a Pull Request](https://help.github.com/articles/about-pull-requests/)
     with a clear title and description against the `master` branch. All tests must be passing before we will review the PR.
 
 If you have any additional questions, please feel free to [email](mailto:dx@sendgrid.com) us or create an issue in this repo.
