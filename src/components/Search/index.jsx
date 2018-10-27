@@ -28,7 +28,7 @@ class Search extends Component {
         }
       },
       transformData(hits) {
-        const updatedUrlHits = hits.map(((hit) => {
+        const updatedUrlHits = hits.map((hit => {
           hit.url = hit.url.replace('#___gatsby', '');
           if (hit.anchor === '___gatsby') {
             hit.anchor = '';
