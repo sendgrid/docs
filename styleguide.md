@@ -76,7 +76,7 @@ The sections in **Bold** are the categories. The "group" field in the head matte
 
 ![Document architecture schematic.](https://github.com/sendgrid/docs/blob/develop/static/img/docs-architecture-group.png)
  
-#### UI
+### UI
 
 **Sending Email**
 - Building Email: building-email
