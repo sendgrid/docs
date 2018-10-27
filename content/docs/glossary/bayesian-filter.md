@@ -10,7 +10,7 @@ navigation:
   show: false
 ---
 
-This is a statistical method for determining the probability that an email is spam by looking for the use of words or phrases commonly associated with spam email.
+This is a statistical method for determining the probability whether an email is spam by looking for the use of words or phrases commonly associated with spam email.
 
 A Bayesian filter detects spam by comparing the words or phrases within the questionable email to a set of known words or phrases associated with spam. Bayesian filtering has a very low rate of false positives and is a tried and true method for filtering spam.
 
