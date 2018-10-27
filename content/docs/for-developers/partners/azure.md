@@ -115,7 +115,7 @@ Now you need to set some environment variables, so you don’t expose these cred
 
 3.	A screen will pop up with your password, SMTP server, and username
 
-To get your Rdio API Key, which you'll use to create your playlist, follow the “How to get started” instructions here: [http://developer.rdio.com](http://developer.rdio.com).
+To get your Spotify API Key, which you'll use to create your playlist, follow the instructions here: [https://developer.spotify.com/documentation/general/guides/app-settings/](https://developer.spotify.com/documentation/general/guides/app-settings/).
 
 With the credentials in hand, it’s time to add them as environment variables within the Windows Azure management portal:
 
@@ -128,9 +128,9 @@ With the credentials in hand, it’s time to add them as environment variables w
 
 	* `DOMAIN = playlist.example.com`
 
-	* `RDIO_KEY = your_key`
+	* `CLIENT_ID = your_key`
 
-	* `RDIO_SECRET = your_secret`
+	* `CLIENT_SECRET = your_secret`
 
 	* `XHR_POLLING_ONLY = 1`
 3.	Click SAVE at the bottom
