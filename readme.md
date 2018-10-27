@@ -112,6 +112,20 @@ SendGrid does not merge a pull request made against a SendGrid open source proje
   Gatsby starts a hot-reloading development environment accessible at [localhost:8000](localhost:8000)
 
 <a name="about"></a>
+
+##Sample code (Nodejs)
+```
+const sgMail = require('@sendgrid/mail');
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+const msg = {
+  to: 'test@example.com',
+  from: 'test@example.com',
+  subject: 'Sending with SendGrid is Fun',
+  text: 'and easy to do anywhere, even with Node.js',
+  html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+};
+```
+sgMail.send(msg);
 ## About
 
 SendGrid is guided and supported by the SendGrid [Developer Experience Team](mailto:dx@sendgrid.com).
