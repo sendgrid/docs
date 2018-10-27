@@ -1,5 +1,5 @@
 ---
-seo:
+SEO:
  title: Setting Up The Inbound Parse Webhook
  description: How to set up the Inbound Parse Webhook to process and parse incoming email
  keywords: Inbound Parse, Inbound Parse Webhook, Email Processing
