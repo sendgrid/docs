@@ -120,4 +120,5 @@ It is maintained and funded by SendGrid, Inc. The names and logos are trademarks
 
 <a name="license"></a>
 ## License
-[The MIT License (MIT)](https://github.com/sendgrid/docs/blob/develop/license)
+This project is licensed under the [The MIT License (MIT)](https://github.com/sendgrid/docs/blob/develop/license) - see the LICENSE.md file for details
+
