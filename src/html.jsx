@@ -1,7 +1,7 @@
 /* eslint import/no-unresolved:"off" */
 /* eslint import/extensions:"off" */
 /* eslint global-require:"off" */
-import React from 'react';
+import React, {Component} from 'react';
 
 
 let inlinedStyles = '';
@@ -15,7 +15,7 @@ if (process.env.NODE_ENV === 'production') {
   }
 }
 
-export default class HTML extends React.Component {
+export default class HTML extends Component {
   render() {
     let css;
     if (process.env.NODE_ENV === 'production') {
