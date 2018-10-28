@@ -45,7 +45,7 @@ SendGrid does not merge a pull request made against a SendGrid open source proje
 <a name="dependencies"></a>
 ### Dependencies
 
-* Required:
+1. Required:
     * [Git](https://git-scm.com)
     * [RVM](https://rvm.io)
     * [Homebrew](https://brew.sh)
@@ -56,57 +56,57 @@ SendGrid does not merge a pull request made against a SendGrid open source proje
 <a name="setup"></a>
 ### Setup Steps
 
-* Install Git for:
+2. Install Git for:
 	* [Mac](https://git-scm.com/download/mac) 
 	* [Windows](https://git-scm.com/download/win) 
 	* [Linux](https://git-scm.com/download/linux)
 
-* Install RVM
+3. Install RVM
 
 	`$ \curl -sSL https://get.rvm.io | bash -s stable --ruby`
 
-* Install Homebrew (if you don't have it)
+4. Install Homebrew (if you don't have it)
 
 	`$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
-* Install npm
+5. Install npm
 
 	`$ brew install npm`
 	
 **Note:** You may need to use 'sudo' before the command to get it to work as intended. 
 
-* Set your Node version
+6. Set your Node version
 
 	`$ npm install -g n`
 
 	`$ n 8.4.0`
 
-* Download yarn
+7. Download yarn
 
   `$ brew install yarn`
 
-* Clone the repo
+8. Clone the repo
 
 	`$ git clone https://github.com/sendgrid/docs.git`
 
 
-* Go to your docs directory
+9. Go to your docs directory
 
 	`$ cd docs`
 
-* Switch to develop branch to make changes
+10. Switch to develop branch to make changes
 
 	`$ git checkout develop`
 
-* Install the Gatsby CLI
+11. Install the Gatsby CLI
 
 	`$ npm install -g gatsby-cli`
 
-* Install npm package dependencies
+12. Install npm package dependencies
 
   `$ yarn install`
 
-* Build the local site
+13. Build the local site
 
   `$ gatsby develop`
   Gatsby starts a hot-reloading development environment accessible at [localhost:8000](localhost:8000)
