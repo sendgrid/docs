@@ -33,7 +33,7 @@ This table will refresh with new or adjusted data based on the various filters a
 
 ## 	Using the API
 
-[Using Categories with the SMTP API]({{root_url}}/for-developers/sending-email/categories/))
+[Using Categories with the SMTP API]({{root_url}}/for-developers/sending-email/categories/)
 
 ## 	Additional Resources
 
