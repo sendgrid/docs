@@ -43,7 +43,7 @@ If your contacts list has non-English characters, please make sure that you're u
 SendGrid removes duplicate and invalid email addresses (including email addresses with special characters) from your list during upload, so the number of contacts can potentially change between your CSV and your Marketing Campaigns list.
 
 ###  Numbers and Text
-Make sure that you don’t have text fields that look like numbers. Text that look like numbers are those that contain punctuation characters like a dash, underscore, parenthesis or multiple dots.
+Make sure that you don’t have text fields that look like numbers. Text that look like numbers are those that contain punctuation characters like a dash, underscore, parenthesis, or multiple dots.
 
 ```
 - US Zip Code: 80202-1713
