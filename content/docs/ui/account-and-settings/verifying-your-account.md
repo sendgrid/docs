@@ -13,7 +13,7 @@ navigation:
 
 When you sign up for a SendGrid account, there are a few steps that our users must complete before they can start using their accounts fully. Even in a pre-verified state, you can send up to 100 emails per day with your SendGrid account. Once you complete the steps presented, your credit usage limits will be unlocked
 
-You will have either one, two, or three seperate steps to complete before you fully unlock the credit limits available to your chosen plan level. We require these steps for your security, as well as to help you get started more quickly!
+You will have either one, two, or three separate steps to complete before you fully unlock the credit limits available to your chosen plan level. We require these steps for your security, as well as to help you get started more quickly!
 
 <call-out>
 
@@ -33,7 +33,7 @@ Complete one or more of the following:
 * Set up [two-factor authentication]({{root_url}}/ui/account-and-settings/two-factor-authentication/#setting-up-two-factor-authentication)
 * Set up [domain authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/)
 
-You may need to complete one or more of these steps to completely verify your account. You cannot skip any of the verification steps, or your account won't be completely unlocked. 
+You may need to complete one or more of these steps to completely verify your account. You cannot skip any of the verification steps, or your account won't be completely unlocked.
 
 ### Resend the verification email
 
@@ -41,7 +41,7 @@ You can resend the verification to the email address you specified during the in
 
 ## Setting up Two-factor Authentication
 
-Two-factor authenticaiton allows you to make your SendGrid account more secure by requiring authentication beyond a simple username and password when logging in. Learn more about setting up and using [two-factor authentication]({{root_url}}/ui/account-and-settings/two-factor-authentication/#setting-up-two-factor-authentication).
+Two-factor authentication allows you to make your SendGrid account more secure by requiring authentication beyond a simple username and password when logging in. Learn more about setting up and using [two-factor authentication]({{root_url}}/ui/account-and-settings/two-factor-authentication/#setting-up-two-factor-authentication).
 
 ## Setting up Domain Authentication
 
