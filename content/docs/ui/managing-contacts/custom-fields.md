@@ -33,7 +33,7 @@ You can create up to 120 custom fields.
 
 You can also add custom fields when you [upload]({{root_url}}/ui/managing-contacts/adding-contacts/#uploading-a-csv) a CSV to the contacts database.
 
-The field name should be created using only alphanumeric characters (A-Z and 0-9) and underscores **_**. The field type can be date, text, or number fields. The *field type* is important for creating [segments]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/) from your contact
+The field name should be created using only alphanumeric characters (A-Z and 0-9) and underscores(**_**). The **field type** can be date, text, or number fields. The **field type** is important for creating [segments]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/) from your contact
 database.
 
 You can query your list in different ways, based on the data type:
@@ -81,7 +81,7 @@ Except for first_name, last_name, and email these fields are auto-populated by S
 
 <call-out type="warning">
 
-Deleting a custom field deletes all values for that field across your contact database. If you have any campaigns using the data in this field with a substitution tag, those values do NOT get replaced when you send the campaign. You cannot delete a custom field that a segment is currently using. This deletion process may take several minutes--you continue to see the custom field on this page until the process has completed.
+Deleting a custom field deletes all values for that field across your contact database. If you have any campaigns using the data in this field with a substitution tag, those values do NOT get replaced when you send the campaign. You cannot delete a custom field that a segment is currently using. This deletion process may take several minutes and you will continue to see the custom field on this page until the process completes.
 
 </call-out>
 
