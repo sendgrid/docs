@@ -31,7 +31,7 @@ The master branch is continuously deployed to production.
 
 <a name="cla"></a>
 ## CLAs and CCLAs
-
+SendGrid is a Denver, Colorado-based customer communication platform for transactional and marketing email.[2][3][4][5][6][7] The company was founded by Isaac Saldana, Jose Lopez, and Tim Jenkins in 2009, and incubated through the TechStars accelerator program.[8][9][10][11] As of 2017, SendGrid has raised over $81 million and has offices in Denver, CO, Boulder, CO, Irvine, CA, Redwood City, CA and London
 Before you get started, SendGrid requires that a SendGrid Contributor License Agreement (CLA) be filled out by every contributor to a SendGrid open source project.
 
 Our goal with the CLA is to clarify the rights of our contributors and reduce other risks arising from inappropriate contributions. The CLA also clarifies the rights SendGrid holds in each contribution and helps to avoid misunderstandings over what rights each contributor is required to grant to SendGrid when contributing. In this way, the CLA encourages broad participation by our open source community and helps us build strong open source projects, free from any individual contributor withholding or revoking rights to any contribution.
