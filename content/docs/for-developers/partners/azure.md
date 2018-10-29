@@ -192,7 +192,7 @@ Follow these steps to enable Mobile Services from the Microsoft Azure interface:
 
 ![Choose]({{root_url}}/images/azure_12.png)
 
-In your index.html file add the following code near the closing body tag to add the Windows Mobile Services library to your app:
+In your `index.html` file add the following code near the closing body tag to add the Windows Mobile Services library to your app:
 
 ``` html
 <script src="https://website.azure-mobile.net/client/MobileServices.Web-1.0.0.min.js"></script>
