@@ -99,7 +99,7 @@ Substitution tags allow you to easily generate dynamic content for each recipien
 
 1. Click the **Settings** tab on the left side of the editor.
 2. Click the **Tags** tab at the top of the Settings window.
-3. Locate the tag you want to add to your campaign and click it to automatically copy it to your clipboard.
+3. Locate the **tag** you want to add to your campaign and click it to automatically copy it to your clipboard.
 4. Paste the tag into the campaign.
 
 
@@ -215,7 +215,7 @@ SendGrid’s flexible design editor allows you to build your templates and campa
 
 ![]({{root_url}}/img/campaigns_dashboard_categories_search.png)
 
-3. Select the template that you want to use for your campaign.
+3. Select the **template** that you want to use for your campaign.
 <br>You can select a Blank Template, a custom template that you have already created, or one of SendGrid’s pre-built templates. For more information, see [Working With Marketing Templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/)
 4. Select **Design Editor** and then click **Continue**.
 <br>The Design Editor opens.
@@ -509,7 +509,7 @@ This list may change and we cannot guarantee 100% support from any of these clie
 1. Open the HTML Head by navigating to the **Build** tab in the design editor.
 1. Scroll down to the **Advanced** drop-down menu and select **Edit HTML Head**.
 1. Click **Edit** to begin making your changes.
-1. Insert a `<link>` tag containing an href attribute pointing to your web font.
+1. **Insert** a `<link>` tag containing an href attribute pointing to your web font.
 
 For example:
 ```html
