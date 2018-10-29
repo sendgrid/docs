@@ -15,19 +15,18 @@ these opted in emails do not make it to the mailbox. Worse, this leads to recent
 senders emails as well. These addresses have opted in so what is the issue?
 
 Monitoring engagement is the best tool in ensuring a good reputation as a sender. In the past few years, there has been
-a large push in determine whether emails will make it to the mailbox by past engagement with that sender. Popular
-receiving mailboxes like Gmail, Yahoo! and Hotmail all use engagement tracking to decipher for their users which emails
-to put in the spam folder, bounce, or allow passage to a user's mailbox. Furthermore, many mailboxes now have the option
+a large push to determine whether emails will make it to the mailbox by past engagement with that sender. Popular
+receiving mailboxes like Gmail, Yahoo! and Hotmail use engagement tracking to decipher which emails to put in the spam folder, bounce, or allow passage to a user's mailbox. Furthermore, many mailboxes now have the option
 to prioritize emails automatically so that there are 2 different categories of email; those deemed by the mailbox as
 important and those that aren't. This is almost entirely determined by whether or not recipients click on their emails
 or even better, if they reply. This increases the ante for senders to send content that recipients will engage with.
 
-Thankfully SendGrid provides a window into the problem. Senders are able to make use of
+Thankfully, SendGrid provides a window into the problem. Senders are able to make use of
 the Event API which allows senders to know if recipients have opened and/or clicked on their emails. Lower tier plans
 can view this information under the Email Activity tab. With these tools, a sender can ensure that they are not sending
-to 2 major pitfalls: spam traps or recipients that are likely to acknowledge the email as spam. Sending to either of
-these recipients leads the receiving mailbox to believe that they are uninterested and therefore, begin to divert their
-emails to the unimportant or spam folders.
+to 2 major pitfalls: [spam traps]({{root_url}}/docs/glossary/spam-traps) or recipients that are likely to acknowledge the email as [spam]({{root_url}}/docs/glossary/spam/). Sending to either of
+these recipients, results in the receiving mailbox to believe that they are uninterested and therefore, leads to diversion of emails to the unimportant or spam folders.
+
 
 Monitoring engagement provides a sustainable solution to sending that leaves both the sender and the recipients better off.
 Once you have been monitoring, you are primed to take some action with the subscribers who have not been active recently.
@@ -35,10 +34,10 @@ You can do this with a Reconfirmation Campaign.
 
 ## 	What is a Reconfirmation Campaign?
  	
-In order to maximize your email deliverability it is important to keep
+In order to maximize your email [deliverability]({{root_url}}/glossary/deliverability/), it is important to keep
 your address list current and clean. A reconfirmation email, otherwise
 known as a re-opt in email, reminds clients you correspond with about
-your business (which can increase your inbound marketing), effectively
+your business (which can increase your inbound marketing).This effectively
 cleans your lists with minimal impact to your deliverability, and
 prevents inadvertently spamming your clients.
 
@@ -46,7 +45,7 @@ prevents inadvertently spamming your clients.
  	
 As you opt-in your recipients, the email addresses provided to you
 initially may become obsolete. These addresses might become abandoned
-and eventually recycled or converted to spam traps. Or your recipients
+and eventually recycled or converted to [spam traps]({{root_url}}/glossary/spam-traps/). Or your recipients
 might simply become disinterested in receiving your emails.
 
 This can cause problems for your email deliverability. Old addresses
@@ -84,12 +83,11 @@ Keep in mind, the older the list, the bigger the headache it will be to clean.
 
 ## 	How Often Should We Reconfirm?
  	
-We recommend sending re opt-in messages to recipients if you haven't
+We recommend sending re opt-in messages to recipients who you haven't
 corresponded with or otherwise interacted with via email in over **3
 months**. This may seem like a short duration, however, you might be
 surprised with how quickly your recipients can lose interest in your
 emails. Of course there are many types of businesses and this
 recommendation of 3 months is only a suggestion.
 
-Ultimately, the more frequently you clean your address list, the less
-likely you will be to have deliverability problems related to old lists.
+Ultimately, the more frequently you clean your address list, the less likely you will have deliverability problems related to old lists.
