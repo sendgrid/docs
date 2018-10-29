@@ -276,3 +276,90 @@ During beta, segmentation is not enabled in Automation. You can build a segment 
 1. Select **Contacts**.
 1. To add the contacts, click **Upload Contacts**.
 1. Follow the instructions outlined in [Upload contacts]({{root_url}}#upload-contacts) to complete the process.
+
+## Planned iterative releases for Automation beta
+
+This section provides a non-binding view into the current prioritization of planned additional Automation features and functionality. 
+
+At any time, the features and functionality below, as well as the timing associated, may change. In fact, feedback from beta participants is a likely driver of reprioritization. Our degree of confidence for near term deliverables is much stronger than mid- to long-term deliverables. 
+
+Have feedback or questions? We welcome your thoughts at email_automation@sendgrid.com
+
+### Near-term (Q4 2018)
+
+<table>
+  <tr>
+    <th>Deliverable</th>
+    <th>Status</th>
+  </tr>
+  <tr>
+    <td>Ability to view the details of an Automation Contact list</td>
+    <td>In progress</td>
+  </tr>
+  <tr>
+    <td>Ability to search, edit, and delete contacts</td>
+    <td>In progress</td>
+  </tr>
+  <tr>
+    <td>Availability of the public facing Automations API</td>
+    <td>In progress</td>
+  </tr>
+  <tr>
+    <td>Insert reserved fields into email content using substitution tags</td>
+    <td>In progress</td>
+  </tr>
+</table>
+
+### Mid-term (Q1 2019)
+
+<table>
+  <tr>
+    <th>Deliverable</th>
+    <th>Status</th>
+  </tr>
+  <tr>
+    <td>Availability of a signup tool that can be embedded into a website and add signups directly to an Automation contact list.</td>
+    <td>Planned</td>
+  </tr>
+  <tr>
+    <td>Ability to save an email design as a template.</td>
+    <td>Planned</td>
+  </tr>
+  <tr>
+    <td>Ability to import custom fields and use them for email content and subject line personalization.</td>
+    <td>Planned</td>
+  </tr>
+  <tr>
+    <td>Exit criteria of no longer meeting entry criteria.</td>
+    <td>Planned</td>
+  </tr>
+</table>
+
+### Long-term (Beyond Q1 2019)
+
+<table>
+  <tr>
+    <th>Deliverable</th>
+    <th>Status</th>
+  </tr>
+  <tr>
+    <td>Ability to track clicks to links within emails</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Ability to trigger an automation when a contact joins a segment</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Ability to trigger an automation based on a calendar date</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Ability to schedule emails within an automation according to scheduled calendar dates</td>
+    <td></td>
+  </tr>
+</table>
+
+
+
+
