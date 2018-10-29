@@ -37,12 +37,12 @@ If you are sending Transactional email through the SendGrid API or SMTP and have
 The Subscription Tracking setting also has a number of options for customization, such as a replacement tag that allows you to place the unsubscribe text somewhere in the body of the email, the ability to reword the unsubscribe message, and the ability to add a custom landing page.
 
 If using Advanced Suppression Management in place of Subscription Tracking, an ASM tag must be included in the template. 
- - We will replace the tag with the text "Unsubscribe From All Emails" if you include <%asm_global_unsubscribe_url%>
+ - We will replace the tag with the text "Unsubscribe From All Emails" if you include `<%asm_global_unsubscribe_url%>`
  - We will replace the tag with the unsubscribe URL but **without** the hyperlinked tag if you include   
-   <%asm_global_unsubscribe_raw_url%>
- - We will replace the tag with the text "Unsubscribe from this list" if you include <%asm_group_unsubscribe_url%>
+   `<%asm_global_unsubscribe_raw_url%>`
+ - We will replace the tag with the text "Unsubscribe from this list" if you include `<%asm_group_unsubscribe_url%>`
  - We will replace the tag with only the group unsubscribe URL **without** the hyperlinked text if you include 
-   <%asm_group_unsubscribe_raw_url%>
+   `<%asm_group_unsubscribe_raw_url%>`
 
 ## 	Different Types of Suppressions
 
