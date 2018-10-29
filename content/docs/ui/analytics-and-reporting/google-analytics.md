@@ -34,3 +34,9 @@ A few scenarios:
 - You link to your Facebook profile in your email. A recipient clicks the link, which will result in 1 SG **Click** , but no GA **Visits**.
 - A recipient clicks a link in your message, forwards it to their friend who also clicks a link, or they re-open it in a new browser/device. This will log 1 **Unique Click** , 2 **Clicks** , 2 **Visitors** , and 2 **Visits**.
 - A recipient clicks a link in your message, comes back an hour later, and clicks the same or a different link in the message to get back to your site. This will log 1 **Unique Click** , 2 **Clicks** , 1 **Visitor** , and 2 **Visits**.
+
+<call-out>
+
+Want deeper data and insights? With [SendGrid Email Insights Reports](https://go.sendgrid.com/Email-Insights-Reports.html?utm_source=docs), you’ll get access to more data about your email performance plus customized insights from a deliverability consultant.
+
+</call-out>
