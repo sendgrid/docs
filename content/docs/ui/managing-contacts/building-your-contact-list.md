@@ -50,7 +50,7 @@ SendGrid strongly recommends:
 * Monitoring your spam complaints. Some inviters will trigger spam complaints by sending invitations to people who don’t want them. If your system correlates spam complaints with the troublesome inviter, you can limit their invitation quota to minimize the adverse effect on your email sending reputation.
 * Pre-screening the email addresses you collect before you send the invitation. Ensure addresses are syntactically correct and that the domain part of the address has a DNS MX record (which indicates that the domain accepts mail).
 
- ### 	Additional resources
+ ### 	Additional Resources
 
 - [Lists and Segmentation]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/)
 - [Unsubscribe Groups]({{root_url}}/docs/ui/sending-email/unsubscribe-groups/) 
