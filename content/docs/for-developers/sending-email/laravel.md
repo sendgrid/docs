@@ -17,7 +17,7 @@ Laravel 5.5 LTS uses Mailable classes. Mailables in Laravel abstracts building e
 
 ## Before you begin
 
-In `.env` you need to find and configure these variables: 
+Check your `.env` file and configure these variables: 
 
 ```
 MAIL_DRIVER=smtp
