@@ -20,7 +20,7 @@ If you have the flexibility, it's better to schedule mail for off-peak times. Mo
 </call-out>
 
 ## 1. Marketing Campaigns
-If you are using Marketing Campaigns, you can schedule a time to send your campaign from the Settings tab by turning Off the option to Send Immediately. Next, verify that you are using the the correct time zone, and then simply choose the date and time that you would like to send your campaign at.
+If you are using Marketing Campaigns, you can schedule a time to send your campaign from the Settings tab by turning Off the option to Send Immediately. Next, verify that you are using the correct time zone, and then simply choose the date and time that you would like to send your campaign at.
 
 You can also schedule your campaigns with the [Marketing Campaigns API]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html#Schedule-a-Campaign-POST).
 
