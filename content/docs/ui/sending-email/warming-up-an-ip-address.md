@@ -416,14 +416,15 @@ Many other email service providers do not offer dedicated IP addresses to their 
 
 Having a dedicated IP allows you to control your own reputation completely, and prevents your sending from being impacted by the reputations of other SendGrid users.
 
+<call-out>
+
+Get additional onboarding support. Save time, increase the quality of your sending, and feel confident you are set up for long-term success with [SendGrid Onboarding Services](https://sendgrid.com/marketing/onboarding-services-request/?utm_source=docs).
+
+</call-out>
+
 ## 	Additional Resources
 
 - [Adding a dedicated IP]({{root_url}}/ui/account-and-settings/dedicated-ip-addresses/)
 - [API IP Access Management]({{root_url}}/ui/account-and-settings/ip-access-management/)
 - [SendGrid billing information]({{root_url}}/ui/account-and-settings/billing/)
 
-<call-out>
-
-Get additional onboarding support. Save time, increase the quality of your sending, and feel confident you are set up for long-term success with [SendGrid Onboarding Services](https://sendgrid.com/marketing/onboarding-services-request/?utm_source=docs).
-
-</call-out>
