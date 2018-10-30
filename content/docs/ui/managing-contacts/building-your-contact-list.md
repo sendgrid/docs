@@ -14,7 +14,7 @@ seo:
 
 The best way to protect your sending reputation and get more messages in the inbox is by building your contact list organically. Here are a few ways SendGrid recommends building your contact list.
 
-## 	Opt-In Email
+## 	Opt-in email
 
 Opt-in email refers to bulk email, such as a newsletter or advertisement, that is sent out to a mailing list where every member of that list has actively requested email from the sender. Without obtaining this permission, your email is likely unwanted or unsolicited and is liable to be marked as spam by the recipient or the receiving mailbox provider.
 
@@ -30,7 +30,7 @@ To avoid blocked emails, double check the spelling of the emails on your list. S
 
 </call-out>
 
-## 	Peer-Initiated Email Invitation Requirements
+## 	Peer-initiated email invitation requirements
 
 A peer-initiated invitation system can help your subscribers spread the word about your service and grow your user base—if done well. An aggressive invitation system can backfire, and your invitations will be filtered or blocked. SendGrid customers who implement a peer-initiated invitation system must abide by the following requirements:
 
