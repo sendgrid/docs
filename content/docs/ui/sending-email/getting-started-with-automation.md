@@ -281,7 +281,7 @@ During beta, segmentation is not enabled in Automation. You can build a segment 
 
 This section provides a non-binding view into the current prioritization of planned additional Automation features and functionality. 
 
-At any time, the features and functionality below, as well as the timing associated, may change. In fact, feedback from beta participants is a likely driver of reprioritization. Our degree of confidence for near term deliverables is much stronger than mid- to long-term deliverables. 
+At any time, the features and functionality below, as well as the timing associated, may change. Feedback from beta participants is a likely driver of reprioritization. Our degree of confidence for near-term deliverables is much stronger than mid- to long-term deliverables. 
 
 Have feedback or questions? We welcome your thoughts at email_automation@sendgrid.com
 
