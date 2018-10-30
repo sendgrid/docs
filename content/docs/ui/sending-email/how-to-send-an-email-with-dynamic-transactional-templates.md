@@ -27,6 +27,12 @@ Before you create and send an email using a dynamic transactional template you n
 4. Select an editor and click **Continue**.
 5. Design your template. For more information on using Handlebars, see [Using handlebars]({{root_url}}/ui/sending-email/using-handlebars/).
 
+##  Unsubscribe modules for dynamic transactional templates
+
+If you want to create a static unsubscribe module for a dynamic transactional template, please review the following:
+
+![]({{root_url}}/img/dynamic-transactional-template-unsubscribe.gif "Create a static unsubscribe module for dynamic transactional templates")
+
 For sample templates that that include examples of receipts, password resets, account activations, newsletters, and sale notifications, check out the [dynamic-template section of our email template's GitHub repo](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates).
 
 The cURL calls on this page use the [receipt example template](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates/receipt).
