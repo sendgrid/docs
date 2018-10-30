@@ -13,7 +13,7 @@ navigation:
 
 Sender Policy Framework (SPF) is an open standard aimed at preventing sender address forgery. This article describes how SPF is configured for use with SendGrid.
 
-##SPF and sender authentication
+##  SPF and sender authentication
 
 If you have an SPF record set for your domain (i.e. yourdomain_.com_) already, you must add a unique alphanumeric string before the _all_ mechanism of this record in order to authenticate mailings through your SendGrid account. If you do not have an existing SPF record for your domain, you must create a TXT record with the value provided to you during the domain authentication creation process. Each SendGrid account gets a unique SPF TXT record to authenticate their outbound mailings. An example of such a record is:
 
@@ -25,7 +25,7 @@ Do not create more than one SPF1 record for a given domain. If this is the case,
 
 
 
-##Already have an SPF record for your domain?
+##  Already have an SPF record for your domain ?
 
 No problem. You simply need to add your SendGrid account's unique SPF inclusion into your existing record.
 
@@ -39,7 +39,7 @@ You would just need to add the SendGrid lookup at the end of the string, before 
 
 
 
-##Don't want to include another hostname lookup?
+##  Don't want to include another hostname lookup?
 
 If you would rather not include SendGrid's SPF hostname lookup in your record, or perhaps you just have [too many already]({{root_url}}/ui/account-and-settings/spf-limitations/), you can also choose to give permission to a **specific IP address** to send mail for your domain. This is accomplished using the ip4 mechanism within your SPF record.
 
