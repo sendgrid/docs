@@ -1,7 +1,4 @@
 ---
-st:
-  published_at: 2016-05-17
-  type: Utilities
 seo:
   title: SendGrid EventKit
   description: Learn how to better track your data with the open source SendGrid EventKit.

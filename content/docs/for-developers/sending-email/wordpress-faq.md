@@ -1,7 +1,4 @@
 ---
-st:
- published_at: 2016-07-25
- type: [integrate]
 seo:
  title: Wordpress FAQ
  description: Learn how to send your WordPress email through SendGrid.
