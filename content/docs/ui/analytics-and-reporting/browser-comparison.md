@@ -35,6 +35,12 @@ This table is titled “Figures for Delivered” and shows you the actual delive
 
 You can also choose to show actual counts or percentages by clicking the corresponding button above and to the right of the table.
 
+<call-out>
+
+Want deeper data and insights? With [SendGrid Email Insights Reports](https://go.sendgrid.com/Email-Insights-Reports.html?utm_source=docs), you’ll get access to more data about your email performance plus customized insights from a deliverability consultant.
+
+</call-out>
+
 ## 	Additional Resources
 
 - [Statistics Filters]({{root_url}}/ui/analytics-and-reporting/stats-overview/#statistics-filters)
