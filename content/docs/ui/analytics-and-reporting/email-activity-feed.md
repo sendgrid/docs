@@ -165,12 +165,6 @@ In addition to viewing the email activity associated with your account by recipi
    This triggers an email to the email address associated with your SendGrid account.
 1. Open the email and then click **Download**.
 
-<call-out>
-
-Want deeper data and insights? With [SendGrid Email Insights Reports](https://go.sendgrid.com/Email-Insights-Reports.html?utm_source=docs), you’ll get access to more data about your email performance plus customized insights from a deliverability consultant.
-
-</call-out>
-
 ## 	Additional Resources
 
 - [Email Activity API](https://sendgrid.api-docs.io/v3.0/email-activity/filter-all-messages)
