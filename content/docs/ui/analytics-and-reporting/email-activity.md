@@ -45,7 +45,7 @@ Email activity shows the most recent 500 events. To access data in real time, im
 
 ## 	Subuser email activity
 
-To see a subuser’s email activity, log in as that subuser or [impersonate]({{root_url}}/ui/account-and-settings/subusers/) the subuser account.
+To see a subuser’s email activity, log in as that subuser or [impersonate]({{root_url}}/ui/account-and-settings/subusers/#impersonating-a-subuser) the subuser account.
 
 You cannot see a parent accounts email activity from a subuser account.
 
