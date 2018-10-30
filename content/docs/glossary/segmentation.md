@@ -10,11 +10,11 @@ navigation:
   show: false
 ---
 
-Segmentation refers to the practice of separating the different types of email that you send, such as marketing email and transactional email. By segmenting your email traffic you can both obtain more useful engagement statistics and improve your deliverability.
+Segmentation refers to the practice of separating the different types of email that you send, such as marketing email and transactional email. By segmenting your email traffic, you can both obtain more useful engagement statistics and improve your [deliverability]({{root_url}}/glossary/deliverability/).
 
-Segmentation can be achieved by either creating and sending mail through a new subuser, or by creating a new subuser and purchasing a separate dedicated IP address to send that subuser's mail through.
+Segmentation can be achieved by either creating and sending mail through a new subuser, or by [creating a new subuser]({{root_url}}/ui/account-and-settings/subusers/#create-a-subuser) and purchasing a separate [dedicated IP address]({{root_url}}/ui/account-and-settings/dedicated-ip-addresses/) to send that subuser's mail through.
 
-SendGrid's [IP Pooling feature]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_pools.html) is a powerful tool that allows you to set up separate IP pools that you can use to organize your dedicated IPs. When sending different types of email you can specify which IP Pool to associate your message with, and the IP Pooling feature will automatically **segment** your traffic by sending it through the corresponding dedicated IP address.
+SendGrid's [IP Pooling feature]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_pools.html) is a powerful tool that allows you to set up separate IP pools that you can use to organize your dedicated IPs. When sending different types of email, you can specify which IP Pool to associate your message with, and the IP Pooling feature will automatically **segment** your traffic by sending it through the corresponding dedicated IP address.
 
 <call-out>
 
