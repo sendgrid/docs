@@ -106,6 +106,11 @@ These filters are available on most of the statistics pages. They will help you 
 
   The Top 5 Categories report allows you to see your top 5 most used categories by number of requests. Switch your view by actual number of emails or percentage using the toggle at the top right of this section.
 
+<call-out>
+
+Want deeper data and insights? With [SendGrid Email Insights Reports](https://go.sendgrid.com/Email-Insights-Reports.html?utm_source=docs), you’ll get access to more data about your email performance plus customized insights from a deliverability consultant.
+
+</call-out>
 
 ## 	Additional Resources
 
