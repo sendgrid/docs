@@ -82,3 +82,9 @@ You can customize the text attached to emails and customize the landing page. Th
 **Custom Landing Page URL** - The URL where you would like your users sent to unsubscribe. This must be a valid URL.
 
 **SendGrid Landing Page (HTML)** - The HTML that will be displayed on the page that your customers will see after clicking unsubscribe, hosted on SendGrid’s server.
+
+<call-out>
+
+Want deeper data and insights? With [SendGrid Email Insights Reports](https://go.sendgrid.com/Email-Insights-Reports.html?utm_source=docs), you’ll get access to more data about your email performance plus customized insights from a deliverability consultant.
+
+</call-out>
