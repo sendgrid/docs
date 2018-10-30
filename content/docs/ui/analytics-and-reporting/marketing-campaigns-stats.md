@@ -86,6 +86,12 @@ In addition to creating a dynamic segment based on campaign engagement as descri
 <br>A real-time list of all recipients who either opened your campaign, or clicked a link within your campaign appears.
 1. Click **Export CSV**.
 
+<call-out>
+
+Want deeper data and insights? With [SendGrid Email Insights Reports](https://go.sendgrid.com/Email-Insights-Reports.html?utm_source=docs), you’ll get access to more data about your email performance plus customized insights from a deliverability consultant.
+
+</call-out>
+
 ## 	Additional Resources
 
 - [Sending a Campaign]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/)
