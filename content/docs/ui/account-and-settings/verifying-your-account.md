@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-When you sign up for a SendGrid account, there are a few steps that our users must complete before they can start using their accounts fully. Even in a pre-verified state, you can send up to 100 emails per day with your SendGrid account. Once you complete the steps presented, your credit usage limits will be unlocked
+When you sign up for a SendGrid account, there are a few steps that our users must complete before they can start using their accounts fully. Even in a pre-verified state, you can send up to 100 emails per day with your SendGrid account. Once you complete the steps presented, your credit usage limits will be unlocked.
 
 You will have either one, two, or three separate steps to complete before you fully unlock the credit limits available to your chosen plan level. We require these steps for your security, as well as to help you get started more quickly!
 
