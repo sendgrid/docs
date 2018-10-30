@@ -17,5 +17,8 @@ Once an email send has been attempted but failed, a couple things can happen to 
 * Emails can be marked as [spam]({{root_url}}/glossary/spam/) by the recipient for various reasons
 * An email is [Dropped]({{root_url}}/glossary/drops/) when the recipient is on a [suppression list]({{root_url}}/ui/sending-email/index-suppressions/)
 
+<call-out>
 
+Looking for customized expert advice to improve your email program? Our team of email experts can help you create a plan to ensure you're optimizing your email delivery and engagement, and avoiding future issues like blacklists. Learn more on our [Expert Services](https://sendgrid.com/solutions/expert-services/?utm_source=docs) page.
 
+</call-out>
