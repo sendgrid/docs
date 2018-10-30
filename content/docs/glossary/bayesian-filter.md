@@ -16,9 +16,9 @@ A Bayesian filter detects spam by comparing the words or phrases within the ques
 
 For more information about Bayesian filtering, refer to this Wiki: [Naive Bayes spam filtering](https://en.wikipedia.org/wiki/Naive_Bayes_spam_filtering).
 
-## Related Articles:
+## Related Articles
 
-- [Spam]({{root_url}}/glossary/spam/)
-- [Spam Filter]({{root_url}}/glossary/spam-filter/)
-- [Spam Reports]({{root_url}}/glossary/spam-reports/)
-- [Spam Trap]({{root_url}}/glossary/spam-traps/)
+* [Spam]({{root_url}}/glossary/spam/)
+* [Spam Filter]({{root_url}}/glossary/spam-filter/)
+* [Spam Reports]({{root_url}}/glossary/spam-reports/)
+* [Spam Trap]({{root_url}}/glossary/spam-traps/)
