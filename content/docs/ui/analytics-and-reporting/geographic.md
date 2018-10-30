@@ -35,6 +35,12 @@ This table will refresh with new or adjusted data based on the various filters a
 
 To see only the figures from a specific geographic area, change the Activity Map to be either the world view or a specific country, then select the countries or states you want to see in the figures table using the buttons just above and to the right of the figures data.
 
+<call-out>
+
+Want deeper data and insights? With [SendGrid Email Insights Reports](https://go.sendgrid.com/Email-Insights-Reports.html?utm_source=docs), you’ll get access to more data about your email performance plus customized insights from a deliverability consultant.
+
+</call-out>
+
 ## 	Additional Resources
 
 - [Statistics Filters]({{root_url}}/ui/analytics-and-reporting/stats-overview/#statistics-filters)
