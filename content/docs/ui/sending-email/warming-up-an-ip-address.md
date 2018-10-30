@@ -419,5 +419,5 @@ Having a dedicated IP allows you to control your own reputation completely, and 
 ## 	Additional Resources
 
 - [Adding a dedicated IP]({{root_url}}/ui/account-and-settings/dedicated-ip-addresses/)
-- [API IP Access Management]({{root_url}}/ui/account-and-settings/ip-access-management/)
+- [IP Access Management]({{root_url}}/ui/account-and-settings/ip-access-management/)
 - [SendGrid billing information]({{root_url}}/ui/account-and-settings/billing/)
