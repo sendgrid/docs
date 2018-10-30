@@ -44,5 +44,5 @@ Want deeper data and insights? With [SendGrid Email Insights Reports](https://go
 ## 	Additional Resources
 
 - [Email Activity]({{root_url}}/ui/analytics-and-reporting/email-activity-feed/)
-- [Statistics Filters]({{root_url}}/ui/analytics-and-reporting/stats-overview/#statistics-filters).
+- [Statistics Filters]({{root_url}}/ui/analytics-and-reporting/stats-overview/#statistics-filters)
 - [Account Settings]({{root_url}}/ui/account-and-settings/account/)
