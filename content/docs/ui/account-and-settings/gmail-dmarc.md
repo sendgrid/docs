@@ -13,7 +13,7 @@ navigation:
 
 Gmail has recently decided to embrace  [DMARC](http://sendgrid.com/blog/dmarc-domain-based-message-authentication-reporting-conformance/) more explicitly, much like their email brethren, Yahoo and AOL. You may soon start seeing bounce messages with the Reason of:
 
-**550 5.7.1 Unauthenticated email from domain.tld is not accepted due to domain's DMARC policy. Please contact administrator of domain.tld domain if this was a legitimate mail. Please visit [https://support.google.com/mail/answer/2451690](https://support.google.com/mail/answer/2451690) to learn about DMARC initiative. 62si14044909itw.103 - gsmtp **
+**550 5.7.1 Unauthenticated email from domain.tld is not accepted due to domain's DMARC policy. Please contact administrator of domain.tld domain if this was a legitimate mail. Please visit [https://support.google.com/mail/answer/2451690](https://support.google.com/mail/answer/2451690) to learn about DMARC initiative. 62si14044909itw.103 - gsmtp**
 
 This is because Gmail will no longer be accepting messages where the From domain is a Gmail address and the message originates from a non-approved Gmail mail domain server/service. This is a security measure they will be implementing to help reduce potential address spoofing of their mail domains. 
 
