@@ -114,3 +114,4 @@ Get additional onboarding support. Save time, increase the quality of your sendi
 - [How to set up domain authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/)
 - [How to set up reverse DNS]({{root_url}}/ui/account-and-settings/how-to-set-up-reverse-dns/)
 - [Troubleshooting]({{root_url}}/ui/account-and-settings/troubleshooting-sender-authentication/)
+
