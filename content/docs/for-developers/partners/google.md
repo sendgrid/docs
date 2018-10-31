@@ -23,4 +23,4 @@ Using Google’s App Engine or Compute Engine? Here are a few examples of how to
 
 If you're using Google's Compute Engine, click [here](https://cloud.google.com/compute/docs/tutorials/sending-mail/using-sendgrid)
 
-Check out our blog for more information on how to make Google and SendGrid work together.
+Check out [our blog](https://sendgrid.com/blog/partnership-includes-google-compute-engine/) for more information on how to make Google and SendGrid work together.
