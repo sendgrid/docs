@@ -58,7 +58,7 @@ These emails remind your recipients of your services they once opted
 in, and politely ask for the recipient's permission to continue sending
 emails.
 
-## 	How to Reconfirm?
+## 	How do I Reconfirm?
  	
 Send an email with two links: one link to re-opt in the recipient,
 and the other link to opt-out the recipient. If they do not
