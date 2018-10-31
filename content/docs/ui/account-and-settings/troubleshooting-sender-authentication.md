@@ -194,6 +194,12 @@ For subusers, SendGrid attaches authenticated domain information in the followin
 
 *If no valid authenticated domains can be found, the sending domain defaults to sendgrid.net.*
 
+<call-out>
+
+Get additional onboarding support. Save time, increase the quality of your sending, and feel confident you are set up for long-term success with [SendGrid Onboarding Services](https://sendgrid.com/marketing/onboarding-services-request/?utm_source=docs).
+
+</call-out>
+
 ## 	Additional resources
 
 - [How to set up domain authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/)
