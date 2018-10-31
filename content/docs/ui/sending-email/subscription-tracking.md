@@ -23,7 +23,7 @@ navigation:
 
 From your Account Overview page, visit the sidebar menu and click “Settings”. From there, select "Tracking". Locate the Subscription Tracking option and click on the arrow on the right side and click on the "Off/On" button.
 
-![]({{root_url}}/images/unsub_app.gif) 
+![]({{root_url}}/images/unsub_tracking.gif) 
 
 ## How do I just add an unsubscribe link?
 
@@ -41,7 +41,7 @@ Notice that the words “click here” are wrapped with a <% %> symbols. This te
 
 In this example, people will click "click here" in order to unsubscribe. 
 
-![]({{root_url}}/images/Screen_Shot_2015-05-26_at_11.38.27_AM.png)
+![]({{root_url}}/images/html_body_unsubscribe.png)
 
  
 
