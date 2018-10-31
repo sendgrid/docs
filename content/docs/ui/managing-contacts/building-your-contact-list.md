@@ -16,7 +16,7 @@ The best way to protect your sending reputation and get more messages in the inb
 
 ## 	Opt-in email
 
-Opt-in email refers to bulk email, such as a newsletter or advertisement, that is sent out to a mailing list where every member of that list has actively requested email from the sender. Without obtaining this permission, your email is likely unwanted or unsolicited and is liable to be marked as spam by the recipient or the receiving mailbox provider.
+Opt-in email refers to one-to-many emails, such as a newsletter or advertisements, that is sent out to a mailing list where every member of that list has actively requested email from the sender. Without obtaining this permission, your email is likely unwanted or unsolicited and is liable to be marked as spam by the recipient or the receiving mailbox provider.
 
  ### 	Email opt-in types
 
@@ -26,7 +26,7 @@ Opt-in email refers to bulk email, such as a newsletter or advertisement, that i
 
 <call-out>
 
-To avoid blocked emails, double check the spelling of the emails on your list. SendGrid recommends having the recipient input their address twice to ensure it is correct during the registration/sign-up process.
+To avoid blocked emails, double check the spelling of the email addresses on your list. SendGrid recommends having the recipient input their address twice to ensure it is correct during the registration/sign-up process.
 
 </call-out>
 
@@ -35,7 +35,7 @@ To avoid blocked emails, double check the spelling of the emails on your list. S
 A peer-initiated invitation system can help your subscribers spread the word about your service and grow your user base—if done well. An aggressive invitation system can backfire, and your invitations will be filtered or blocked. SendGrid customers who implement a peer-initiated invitation system must abide by the following requirements:
 
 * Never allow your subscribers to send invitations to their entire address book. Address books contain old, stale addresses that ISPs use as spam traps. To prevent this, design your invitation system so that your subscriber must deliberately select each invitee.
-* Limit the number of invitations each customer can send to encourage selective, quality invitations. When your customers are careful to invite only those who they think will appreciate your service, you reduce the risk of recipients reporting the invitations as spam. If enough people mark your invites as spam, they will be blocked or filtered—not what you intended.
+* Limit the number of invitations each customer can send to encourage selective, quality invitations. When your customers are careful to invite only those who they think will appreciate your service, you reduce the risk of recipients reporting the invitations as spam. If enough people mark your invites as spam, they will be blocked or filtered.
 * Clearly display the inviter’s name or email address, so the invitee knows who sent the invitation. (Peer-initiated invitations are most effective when the invitee knows and trusts the inviter.)
 * Use the inviter’s email address for the invitation emails From address.
 * Clearly express the purpose of the invitation. Recipients must understand what they are being invited to.
