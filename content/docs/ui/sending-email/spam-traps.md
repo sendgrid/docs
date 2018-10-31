@@ -40,3 +40,9 @@ Removing a spam trap is tricky business not to mention time consuming. It is ine
 Why not repermission the whole list? Because confirming every subscriber’s consent to receive emails isn’t ideal. Subscribers who want to continue to receive mail may not re-subscribe because they did not notice the email or just forgot to reconfirm.
 
 To escape the woes that come with list reconfirmation, remember to ensure thorough and routine list maintenance. This will save time, reputation, and a big headache.
+
+<call-out>
+
+Looking for customized expert advice to improve your email program? Our team of email experts can help you create a plan to ensure you're optimizing your email delivery and engagement, and avoiding future issues like blacklists. Learn more on our [Expert Services](https://sendgrid.com/solutions/expert-services/?utm_source=docs) page.
+
+</call-out>
