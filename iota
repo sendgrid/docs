@@ -1,0 +1,11 @@
+get=list()
+while True:
+  i=input("Enter number")
+  if i=="done":
+    break
+  value=float(i)
+  get.append(value)
+
+get.sort()
+print("Maximum:",get[0])
+print("Minimum:",get[len(get)-1])
