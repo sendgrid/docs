@@ -23,7 +23,7 @@ What your application does with this parsed data is up to you. For some ideas of
 
 <call-out>
 
-Check out some pre-made integrations for the SendGrid Parse Webhook in the [Library Index]({{root_url}}/for-developers/sending-email/libraries/#web-api-libraries).
+Check out some pre-made integrations for the SendGrid Inbound Parse Webhook in the [Library Index]({{root_url}}/for-developers/sending-email/libraries/#web-api-libraries).
 
 </call-out>
 
