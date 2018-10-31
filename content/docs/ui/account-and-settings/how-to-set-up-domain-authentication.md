@@ -143,3 +143,9 @@ If you set up a whitelabel after 2015, it has been automatically migrated to our
 - [How to set up link branding]({{root_url}}/ui/account-and-settings/how-to-set-up-link-branding/)
 - [How to set up reverse DNS]({{root_url}}/ui/account-and-settings/how-to-set-up-reverse-dns/)
 - [Troubleshooting Sender Authentication]({{root_url}}/ui/account-and-settings/troubleshooting-sender-authentication/)
+
+<call-out>
+
+Get started on the right foot. Be confident that your account is optimized and set up for success now and as your email program continues to grow with [SendGrid Onboarding Services](https://sendgrid.com/marketing/onboarding-services-request/?utm_source=docs).
+
+</call-out>
