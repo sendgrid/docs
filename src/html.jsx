@@ -1,4 +1,4 @@
-/* eslint import/no-unresolved:"off" */
+﻿/* eslint import/no-unresolved:"off" */
 /* eslint import/extensions:"off" */
 /* eslint global-require:"off" */
 import React from 'react';
@@ -72,7 +72,7 @@ export default class HTML extends React.Component {
           <link rel="manifest" href="https://sendgrid.com/brand/favicons/manifest.json" />
           <meta name="msapplication-TileColor" content="#ffffff" />
           <meta name="msapplication-TileImage" content="https://sendgrid.com/brand/favicons/ms-icon-144x144.png" />
-          <meta name="theme-color" content="#ffffff" />
+          <meta name="theme-color" content="#000000" />
 
 
           {css}
