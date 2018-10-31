@@ -2,9 +2,9 @@
 seo:
   title: cURL Examples for Common Use Cases
   description:
-  keywords: migration, v2 mail send, v3 mail send, upgrade
+  keywords: cURL, v3 mail send
 title: cURL Examples for Common Use Cases
-group: api-v2
+group: api-v3
 weight: 0
 layout: page
 navigation:

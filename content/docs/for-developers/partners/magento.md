@@ -47,7 +47,7 @@ Learn more about your shoppers’ engagement with performance feedback and real-
 
 * Our extension easily integrates with your SendGrid API key and allows you to send your Magento email with confidence through our world-class infrastructure.
 * In addition to reliable delivery and scalability, our extension allows you have access to real-time analytics and insights for quick, well-informed decision making about your customers to grow your e-commerce store.
-* Integrate easily with your SendGrid API key
+* Integrate easily with your SendGrid API key.
 
 ## 	What makes your extension unique?
 

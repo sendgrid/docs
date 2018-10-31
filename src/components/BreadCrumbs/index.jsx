@@ -95,7 +95,7 @@ class BreadCrumbs extends Component {
     return (
       <div>
         <ul className="breadcrumb">
-          {this.state.items.map((item) => {
+          {this.state.items.map(item => {
             const classes = `breadcrumb-item-${item.textNode.replace(' ', '-').toLowerCase()}`;
             return (
               <li key={item.textNode} className={classes} ><Link to={item.to}>{item.textNode}</Link></li>

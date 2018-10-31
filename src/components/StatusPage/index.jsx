@@ -12,7 +12,7 @@ class MainLayout extends Component {
 
   componentWillMount() {
     axios.get('https://3tgl2vf85cht.statuspage.io/api/v2/status.json')
-      .then((res) => {
+      .then(res => {
         this.setState({
           status: res.data,
         });

@@ -1,19 +1,18 @@
 import React from 'react';
 
-export default class Callout extends React.Component {
-  render() {
-    // check for emplty callout
-    if (!this.props.children) {
+export default function Callout(props) {
+    // check for empty callout
+    if (!props.children) {
       return null;
     }
 
-    const classes = `callout callout--${this.props.type}`;
+    const classes = `callout callout--${props.type}`;
+  
     return (
       <div className={classes}>
-        {this.props.children.map(el => el)}
+        {props.children.map(el => el)}
       </div>
     );
-  }
 }
 
 Callout.defaultProps = {

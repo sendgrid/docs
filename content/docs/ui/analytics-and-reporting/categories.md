@@ -33,10 +33,16 @@ This table will refresh with new or adjusted data based on the various filters a
 
 ## 	Using the API
 
-[Using Categories with the SMTP API]({{root_url}}/for-developers/sending-email/categories/))
+[Using Categories with the SMTP API]({{root_url}}/for-developers/sending-email/categories/)
+
+<call-out>
+
+Want deeper data and insights? With [SendGrid Email Insights Reports](https://go.sendgrid.com/Email-Insights-Reports.html?utm_source=docs), you’ll get access to more data about your email performance plus customized insights from a deliverability consultant.
+
+</call-out>
 
 ## 	Additional Resources
 
 - [Email Activity]({{root_url}}/ui/analytics-and-reporting/email-activity-feed/)
-- [Statistics Filters]({{root_url}}/ui/analytics-and-reporting/stats-overview/#statistics-filters).
+- [Statistics Filters]({{root_url}}/ui/analytics-and-reporting/stats-overview/#statistics-filters)
 - [Account Settings]({{root_url}}/ui/account-and-settings/account/)

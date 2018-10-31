@@ -10,7 +10,7 @@ navigation:
   show: false
 ---
 
-[SMTP]({{root_url}}/glossary/smtp/) stands for Simple Mail Transfer Protocol. SMTP allows software to transfer email over the internet. The term API stands for Application Programming Interface, which allows software to talk to each other. Therefore the SMTP API allows two or more software platforms to talk to each other over the internet, based on a set of defined parameters and rules between systems.
+[SMTP]({{root_url}}/glossary/smtp/) stands for Simple Mail Transfer Protocol. SMTP allows software to transfer email over the internet. The term API stands for Application Programming Interface, which allows software to talk to each other. Therefore, the SMTP API allows two or more software platforms to talk to each other over the internet, based on a set of defined parameters and rules between systems.
 
 The SendGrid SMTP API gives developers the ability to customize email handling instructions using an X-SMTPAPI header. This JSON header is placed in each email message providing specific instructions on what to do with the email message. The customized header can be added to any SMTP message sent to SendGrid for interpretation by the receiver.
 

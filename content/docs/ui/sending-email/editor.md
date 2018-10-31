@@ -45,7 +45,7 @@ As you type, the editor automatically makes common suggestions. You can accept t
 If the code editor finds something that seems odd or inconsistent with best practices, instead of interrupting your workflow, it places a small red “x” in the margin of the line so you can come back and check when it’s convenient for you.
 
 **Scroll Syncing** -
-Easily pinpoint the HTML element you wish to edit. Click anywhere on the right-side preview of your email, and the code on the left automatically jumps to the corresponding line.
+Easily pinpoint the HTML element you wish to edit. Click anywhere on the right-side preview of your email, and the code on the left automatically jumps to the corresponding line. Click somewhere on the left, and the preview on the right will jump along with you!
 
 **Syntax Highlighting** -
 As you edit, parts of your code highlights in various colors according to the type of syntax. This added dimension provides clarity and efficiency as you search for, locate, and edit code elements.
@@ -55,7 +55,7 @@ As you edit, parts of your code highlights in various colors according to the ty
 
 1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**.
 2. Click **Create Campaign**.
-<br>To create a campaign using an existing campaign, find the campaign you want to use and click the action menu next to the campaign.
+<br>To create a campaign using an existing (drafted or sent) campaign, find the campaign you'd like to use and click the action menu next to the campaign.
 3. Then, select **Edit** or **Duplicate**.
 4. Select **Code Editor**, and then click **Continue**.
 
@@ -65,13 +65,7 @@ You can only edit unsent campaigns.
 
 </call-out>
 
-You can select a Blank Template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates]({{root_url}}/ui/sending-email/create-and-edit-transactional-templates/).
-
-<call-out>
-
-When you open one of your existing campaigns or templates in the new editor, SendGrid creates a duplicate of the original campaign or template. You may always open the original campaign or template in the previous editor.
-
-</call-out>
+You can select a blank template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/).
 
 If you have already built the HTML that you want to use in another application, copy and paste that code directly into the content area of the Code Editor. You can also write the HTML for your campaign or template directly in the Code Editor.
 
@@ -79,7 +73,7 @@ The split-screen view of the Code Editor allows you to see a real-time preview o
 
 <call-out type="warning">
 
-Once you create a new campaign or template in the Code Editor, it cannot be edited using the Design Editor.
+Once you create a new campaign or template in the Code Editor, it cannot be edited using the Design Editor unless you add our [Drag and Drop Markup]({{root_url}}/ui/sending-email/editor/#drag--drop-markup).
 
 </call-out>
 
