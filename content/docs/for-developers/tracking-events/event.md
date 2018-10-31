@@ -732,6 +732,7 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
 - <a name="url"></a>`url` - the URL where the event originates. For click events, this is the URL clicked on by the recipient.
 - <a name="attempt"></a>`attempt` - the number of times SendGrid has attempted to deliver this message.
 - <a name="category"></a>`category` - [Categories]({{root_url}}/glossary/categories/) are custom tags that you set for the purpose of organizing your emails. If you send single categories as an array, they will be returned by the webhook as an array. If you send single categories as a string, they will be returned by the webhook as a string.
+- <a name="type"></a>`type` - indicates whether the bounce event was a hard bounce (type=bounce) or block (type=blocked)
 
 String categories:
 
