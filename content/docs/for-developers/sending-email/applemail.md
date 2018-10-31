@@ -13,11 +13,11 @@ These instructions show how to add an SMTP server to an existing Mail account, b
 
 Go to Mail -\> Preferences (⌘,). On the account you want to edit, click the tab that says **Server Settings**, then click the **Outgoing Mail Account** dropdown and select **Edit SMTP Server List...**.
 
-![Mail, Preferences, Outgoing Mail Server (SMTP) dropdown, Edit SMTP Server List]({{root_url}}/images/NewAppleMail_Step_1.png "Edit SMTP Server List")
+Mail, Preferences, Outgoing Mail Server (SMTP) dropdown, Edit SMTP Server List
 
 Next, click the **+** under the list of SMTP servers, and add a new one.
 
-![The plus button to click to add an SMTP server]({{root_url}}/images/NewAppleMail_Step_2.png "Add SMTP Server")
+The plus button to click to add an SMTP server
 
 Then enter the server details:
 
