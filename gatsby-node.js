@@ -2,7 +2,6 @@ const path = require('path');
 const _ = require('lodash');
 const webpackLodashPlugin = require('lodash-webpack-plugin');
 const crypto = require('crypto');
-const redirects = require('./redirects.js');
 
 /**
  * Generate node edges
@@ -40,7 +39,8 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     /**
      * Add permalink edge
      *
-     * If there is a path frontmatter - that overrides all. Otherwise, we'll use the nested directory structure to build the permalink.
+     * If there is a path frontmatter - that overrides all.
+     * Otherwise, we'll use the nested directory structure to build the permalink.
      */
     let permalink;
     if (
