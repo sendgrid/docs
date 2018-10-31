@@ -1,7 +1,7 @@
 import React from 'react';
 
 function ReleaseKey() {
-  return(
+  return (
     <div className="release-notes-key m-bottom-8">
       <div className="release-notes-key__icon is-size-h5">
         <div className="icon-ui" />
@@ -18,6 +18,10 @@ function ReleaseKey() {
       <div className="release-notes-key__icon">
         <div className="icon-price" />
         Price Update
+      </div>
+      <div className="release-notes-key__icon">
+        <div className="icon-expert" />
+        Expert Services
       </div>
     </div>
   );

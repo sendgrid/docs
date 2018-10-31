@@ -51,46 +51,60 @@
 }
 
 .release-notes-key__icon {
+  @include colfax(600);
+
+  color: $slate-60;
   flex: 1;
+  font-size: $scaledown-1;
+  line-height: normal;
+  margin: $scaledown-4;
   text-align: center;
   text-transform: uppercase;
-  font-size: $scaledown-1;
-  color: $slate-60;
-
-  @include colfax(600);
 
   > div {
     padding-top: 60px;
-    margin-bottom: $scaleup-2;
-    background-size: contain;
+    margin-bottom: $scale-0;
+    background-size: 60px;
     background-position: center;
   }
 }
 
 .release-notes-key .release-notes-key__icon {
-  background-size: contain;
+  background-size: 60px;
   background-position: center;
 }
 
 .icons__icon {
   // background-position: 10px ;
   padding: $scaleup-8 0 $scaledown-1;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .icon-partners {
   background: url('../img/release-note-partners.svg') no-repeat;
+  background-position: center 14px;
+  background-size: 60px;
 }
 
 .icon-price {
-  background: url('../img/release-note-price.svg') no-repeat;
+  background: url('../img/release-note-price.svg') no-repeat ;
+  background-position: center 14px;
+  background-size: 60px;
 }
 
 .icon-ui {
   background: url('../img/release-note-ui.svg') no-repeat;
+  background-position: center 14px;
+  background-size: 60px;
 }
 
 .icon-api {
   background: url('../img/release-note-api.svg') no-repeat;
+  background-position: center 14px;
+  background-size: 60px;
+}
+
+.icon-expert {
+  background: url('../img/release-note-expert-services.svg') no-repeat;
+  background-position: center 14px;
+  background-size: 60px;
 }
