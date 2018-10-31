@@ -4,7 +4,6 @@
 
 [![Build Status](https://travis-ci.org/sendgrid/docs.svg?branch=develop)](https://travis-ci.org/sendgrid/docs)
 [![Twitter Follow](https://img.shields.io/twitter/follow/sendgrid.svg?style=social&label=Follow)](https://twitter.com/sendgrid)
-[![GitHub contributors](https://img.shields.io/github/contributors/sendgrid/docs.svg)](https://github.com/sendgrid/docs/graphs/contributors)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./license)
 
 This is a Gatsby site.
@@ -120,4 +119,4 @@ It is maintained and funded by SendGrid, Inc. The names and logos are trademarks
 
 <a name="license"></a>
 ## License
-[The MIT License (MIT)](https://github.com/sendgrid/docs/blob/develop/license)
+SendGrid Documentation is licensed under the **[MIT License (MIT)](https://github.com/sendgrid/docs/blob/develop/license)**

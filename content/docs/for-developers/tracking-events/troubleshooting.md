@@ -34,7 +34,7 @@ curl -X POST -H "Content-Type: application/json" -d '[{"email":"john.doe@sendgri
 
 We recommend that you use some form of deduplication when processing or storing your Event Webhook data using the `sg_event_id` as a differentiator since this ID is unique for every event where `sg_event_id` is present.
 
-The `sg_event_id` is a [UUIDv4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random) string that is `Base64url` encoded.
+The `sg_event_id` is a [UUIDv4](https://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_(random)) string that is `Base64url` encoded.
 
 ## 	Additional Resources
 

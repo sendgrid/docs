@@ -51,6 +51,20 @@ Note that you can also set up link branding when you set up your domain authenti
 4. Enter the domain that you want to brand the links and images with and add advanced settings. Make sure that you only enter the name of your root domain. Do not include `www` or `http://www` in this field! Your domain needs to match the domain of your from address on the emails you are sending out. For example, if I am branding with the domain `example.sendgrid.com`, I would set my link branding domain to be `sendgrid.com`. Click **Next**. For more information about advanced settings, see [Advanced settings](#advanced-settings).
 5. Next, you need to add all of the CNAME records on this screen to your DNS host. This process varies depending on your DNS host. For videos on how to add your CNAME to some popular DNS service providers, check out these [videos]({root_url}}/ui/account-and-settings/dns-providers/). If you don't have access to modify your companies DNS records, you can also email a request to a co-worker. This email includes a direct link to the CNAME records. This link does expire. The recipient doesn't need login access to your SendGrid account.
 
+<call-out>
+
+A recent change with how GoDaddy handles new DNS record values automatically adds your domain, resulting in a CNAME entry with too much information and a failure when trying to complete Link Branding. An example of this would be **url1234.yourdomain.com.yourdomain.com.**
+
+Below is an example of the CNAME values under the HOST column as they are displayed in step 5 and how you will need to enter into your GoDaddy DNS Management:
+
+HOST/NAME **url1234.yourdomain.com**   ENTER CNAME RECORD HOST/NAME AS: **url1234**                                      
+HOST/NAME **1234567.yourdomain.com**  ENTER CNAME RECORD HOST/NAME AS: **1234567**
+
+Entries made in the VALUE or POINTS TO field do not need to be changed.
+
+</call-out>
+
+
 Now links and images in your emails are from your custom domain. You only need to update your link branding if you want to update the domain that appears in the links in your email.
 
 It can take up to 48 hours for the records to verify after you upload them into your DNS host, so you will likely have to come back later to verify.

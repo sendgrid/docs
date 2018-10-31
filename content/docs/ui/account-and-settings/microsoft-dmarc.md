@@ -28,7 +28,7 @@ This is because Microsoft will no longer be accepting messages where the From do
 
 **What this means:**  As of June, 2016, you can no longer send with the From address being anything from a Microsoft address when sending to a domain that checks DMARC before accepting mail. 
 
-**What you can do: ** You will need to change the From address you use in emails to a non-Microsoft address. We recommend using one at your own mail domain, or one you control that is legitimate. You can then set the Reply-To field to be the original Microsoft address that previously was used in the From field. 
+**What you can do:** You will need to change the From address you use in emails to a non-Microsoft address. We recommend using one at your own mail domain, or one you control that is legitimate. You can then set the Reply-To field to be the original Microsoft address that previously was used in the From field. 
 
 **What about these messages, are they lost?** : Yes, any send with this bounce message is discarded and tracked as a  [Block](http://sendgrid.com/blocks). You will need to adjust your From address field settings, and then try resending from your side.
 

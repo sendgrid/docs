@@ -10,9 +10,9 @@ seo:
   override: true
   description: Optimize engagement of your campaigns with A/B testing, by sending different versions of your emails to a small subset of your contacts and measuring the engagement results.
 ---
-Optimize the engagement of your Marketing Campaigns with A/B testing. A/B testing allows you to send different versions of your emails to small subsets of your contacts.
+Optimize the engagement of your Marketing Campaigns with A/B testing. A/B testing (sometimes also referred to by marketers as 'split testing') allows you to send different versions of your emails to a small, initial subset of your contacts.
 
-When recipients interact with the A/B test emails, you can compare the engagement metrics and choose the version to send to the remainder of your contacts, or allow SendGrid to automatically choose the winning version of your campaign according to the A/B test criteria you set.
+When recipients interact with the emails sent during an A/B test, you can compare the engagement metrics and choose the version to send to the remainder of your contacts, or allow SendGrid to automatically choose the winning version of your campaign according to the A/B test criteria you set.
 
 <iframe src="https://player.vimeo.com/video/225916632" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
@@ -29,7 +29,7 @@ When you are A/B testing your email campaigns, you want to optimize for a specif
 
 <call-out>
 
-You can test up to 6 different variations for each A/B test campaign.
+You can test up to 6 different variations for each A/B test campaign.  
 
 </call-out>
 
@@ -62,7 +62,7 @@ Enter the different versions of your email where you would normally edit that pi
 
 **A/B Testing Tip - Adding Variations**
 
-To know the direct cause for the best performing variation, only make one change per variation rather than many changes. That way you can point to a direct cause for the differences in your stats.
+To know the direct cause for the best performing variation, we recommend only making one change per variation rather than many changes. This way, you can point to a direct cause for the differences in your stats.
 
 </call-out>
 

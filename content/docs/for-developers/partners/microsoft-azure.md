@@ -7,7 +7,9 @@ navigation:
   show: true
 ---
 
-If you are using Microsoft’s cloud platform, you can easily integrate with SendGrid. Simply navigate to the [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/SendGrid.SendGrid), locate the [SendGrid add-on]9https://azuremarketplace.microsoft.com/en-us/marketplace/apps/SendGrid.SendGrid), select the appropriate plan, and get ready to start sending. The following documentation covers signing up, sending an email, adding an attachment, as well as using filters. See the below Code Examples to start learning how Azure and SendGrid can solve your email deliverability problems.
+If you are using Microsoft’s cloud platform, you can easily integrate with SendGrid. Simply navigate to the [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/SendGrid.SendGrid), locate the [SendGrid add-on](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/SendGrid.SendGrid), select the appropriate plan, and get ready to start sending. 
+
+The following documentation covers signing up, sending an email, adding an attachment, as well as using filters. See the below Code Examples to start learning how Azure and SendGrid can solve your email deliverability problems.
 
 
 ## 	Code Examples
@@ -24,6 +26,8 @@ If you are using Microsoft’s cloud platform, you can easily integrate with Sen
 Wondering how to make the most of your SendGrid/Azure integration? Check out our [Azure related blog entries](https://sendgrid.com/blog/?s=Azure).
 
 You are limited to 2 SendGrid accounts per Azure subscription. This limit exists for security and compliance reasons to prevent abuse.
+
+Customers that integrate through the [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/SendGrid.SendGrid), do not have access to SendGrid's Marketing Campaigns. 
 
 If you try to create a third account, you will encounter this error on your dashboard:
 

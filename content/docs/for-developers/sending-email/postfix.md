@@ -51,7 +51,7 @@ $ sudo systemctl restart postfix
 
 <call-out>
 
-If you are getting ***no mechanism available*** error messages it generally indicates that you are missing some SASL authentication libraries.
+If you are getting ***no mechanism available*** error messages, it generally indicates that you are missing some SASL authentication libraries.
 
 </call-out>
 
@@ -69,7 +69,7 @@ $ yum install cyrus-sasl-plain
 
   ## 	Troubleshooting
  	
-If port 587 is not working for you please try 2525 in your postfix config. You may also need to edit /etc/postfix/master.cf to remove # from `tlsmgr unix - - n 1000? 1 tlsmgr`. 
+If port 587 is not working for you, please try 2525 in your postfix config. You may also need to edit /etc/postfix/master.cf to remove # from `tlsmgr unix - - n 1000? 1 tlsmgr`. 
 
 For other potential errors, please navigate to the default maillog file on your server for debugging purposes. For a CentOS server, the file is in path /var/log/maillog by default. 
 

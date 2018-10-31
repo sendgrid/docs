@@ -14,11 +14,11 @@ This is a statistical method for determining the probability that an email is sp
 
 A Bayesian filter detects spam by comparing the words or phrases within the questionable email to a set of known words or phrases associated with spam. Bayesian filtering has a very low rate of false positives and is a tried and true method for filtering spam.
 
-More information about Bayesian filtering can be found [here](https://en.wikipedia.org/wiki/Naive_Bayes_spam_filtering).
+For more information about Bayesian filtering, refer to this Wiki: [Naive Bayes spam filtering](https://en.wikipedia.org/wiki/Naive_Bayes_spam_filtering).
 
-Related Articles:
+## Related Articles
 
-- [Spam]({{root_url}}/glossary/spam/)
-- [Spam Filter]({{root_url}}/glossary/spam-filter/)
-- [Spam Reports]({{root_url}}/glossary/spam-reports/)
-- [Spam Trap]({{root_url}}/glossary/spam-traps/)
+* [Spam]({{root_url}}/glossary/spam/)
+* [Spam Filter]({{root_url}}/glossary/spam-filter/)
+* [Spam Reports]({{root_url}}/glossary/spam-reports/)
+* [Spam Trap]({{root_url}}/glossary/spam-traps/)
