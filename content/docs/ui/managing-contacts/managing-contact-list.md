@@ -81,7 +81,7 @@ It is common to have contacts that result in a group unsubscribe, block, bounce,
  ### 	Delete a specific contact
  <call-out type="warning">
   
-  There are two methods to delete contacts; one in which only a specific list or segment will deleted and the contacts with *remain* in All Contacts, and the second in which you can delete a list or segment and ALL associated contacts. 
+  There are two methods to delete contacts; one in which only a specific list or segment will be deleted and the contacts will *remain* in All Contacts, and the second in which you can delete a list or segment and ALL associated contacts. 
   
   </call-out>
   
@@ -92,7 +92,7 @@ It is common to have contacts that result in a group unsubscribe, block, bounce,
   
   *To remove a list or segment, and ALL associated contacts:*
   1. Navigate to your list or segment. 
-  2. Hover over the ... icon to the right of the list or segment.
+  2. Hover over the Action menu to the right of the list or segment.
   3. Click on the trash icon.
   4. Check the box "Delete all contacts associated with this list from my account."
   5. Select delete. 
