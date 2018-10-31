@@ -27,6 +27,8 @@ Wondering how to make the most of your SendGrid/Azure integration? Check out our
 
 You are limited to 2 SendGrid accounts per Azure subscription. This limit exists for security and compliance reasons to prevent abuse.
 
+Customers that integrate through the [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/SendGrid.SendGrid), do not have access to SendGrid's Marketing Campaigns. 
+
 If you try to create a third account, you will encounter this error on your dashboard:
 
 ![]({{root_url}}/images/azure_account_error.png)
