@@ -29,7 +29,7 @@ Before you create and send an email using a dynamic transactional template you n
 
 ##  Unsubscribe modules for dynamic transactional templates
 
-If you want to create a static unsubscribe module for a dynamic transactional template, please review the following:
+If you want to create a static unsubscribe module for a dynamic transactional template, you can copy the contents of an unsubscribe module into a text module and then replace the sender name and address substitution tags with the desired information as shown below.
 
 ![]({{root_url}}/img/dynamic-transactional-template-unsubscribe.gif "Create a static unsubscribe module for dynamic transactional templates")
 
