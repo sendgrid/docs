@@ -101,6 +101,11 @@ You need to have a [subuser]({{root_url}}/ui/account-and-settings/subusers/#crea
 1. Under I.P. Addresses, select an IP address to assign to the subuser.
 1. Select **Save**
 
+<call-out>
+
+  Get started on the right foot. Be confident that your account is optimized and set up for success now and as your email program continues to grow with [SendGrid Onboarding Services](https://sendgrid.com/marketing/onboarding-services-request/?utm_source=docs).
+  </call-out>
+ 
 ## 	Additional Resources
 
 - [Warming up a dedicated IP]({{root_url}}/ui/sending-email/warming-up-an-ip-address/)
