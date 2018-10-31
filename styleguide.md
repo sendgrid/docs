@@ -39,7 +39,7 @@ Example: Any templates, campaigns, contacts, or API keys created by the teammate
 <a name="numbers"></a>
 ### Numbers
 
-Use numerals instead of spelling them out. However, if a number leads off the sentence, spell it out.
+Use numbers instead of spelling them out. However, if a number leads off the sentence, spell it out.
 YES: “SendGrid offers 10 templates in Marketing Campaigns.”
 YES: “Ten templates are included in Marketing Campaigns.”
 
