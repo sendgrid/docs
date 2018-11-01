@@ -93,6 +93,12 @@ The Email Activity feed allows you to view specific information about messages s
   </tr>
 </table>
 
+<call-out>
+  
+  Warning: Parse events are not available within the Activity Feed. Please utilize your parse endpoint to determine whether or not these events are posting properly. 
+  
+</call-out>
+
 ## 	Filtering email activity
 
 The Email Activity feed lists each email sent. Click on each email to view the current list of triggered events for that email. Use our basic or advanced search to filter by email subject, recipients, or event types.
