@@ -1,3 +1,12 @@
+---
+layout: page
+weight: 10
+title: Send Mime Messages With SendGrid
+group: api-v3
+navigation:
+  show: true
+---
+
 ## Sending MIME Mail
 Some mailers, such as Apple Mail, place Multipurpose Internet Mail Extensions (MIME) into emails automatically which can cause our system to not parse the boundaries correctly. If you do notice a problem with the content from your email not rendering correctly, please do the following:
 
