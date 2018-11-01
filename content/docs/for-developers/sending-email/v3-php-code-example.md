@@ -20,6 +20,8 @@ We recommend using SendGrid PHP, our client library, [available on GitHub](https
 
 Do you have an [API Key](https://app.sendgrid.com/settings/api_keys) yet? If not, go get one. You're going to need it to integrate!
 
+Make sure you've set [SENDGRID_API_KEY](https://github.com/sendgrid/sendgrid-php#setup-environment-variables) in your env file.
+
 </call-out>
 
 ## Using SendGrid's PHP Library
