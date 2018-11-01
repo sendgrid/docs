@@ -69,6 +69,7 @@ Thank you for registering. Please go to <a href="http://domain.com">here</a> to 
 ```
 
  Then anywhere in your controller you can do something like the following to send an email: 
+(make sure to replace your own sendgrid_username / sendgrid_password details, better to make them constant)
 
 ``` php
 <?php
