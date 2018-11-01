@@ -15,7 +15,3 @@ phpBB supports sending email over SMTP. To have phpBB relay email through SendGr
 -   **Authentication method for SMTP** - PLAIN
 -   **SMTP username** - sendgrid_username
 -   **SMTP password** - sendgrid_password
-
-The following image shows these settings.
-
-![Configure SendGrid with phpBB]({{root_url}}/images/phpbb.gif "Configure SendGrid with phpBB")
