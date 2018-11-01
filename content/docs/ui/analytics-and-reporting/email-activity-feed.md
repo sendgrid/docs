@@ -18,15 +18,15 @@ Higher volume users may not have access to the new Email Activity Feed yet. For 
 
 <iframe src="https://player.vimeo.com/video/259928139" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-The Email Activity feed allows you to view a snapshot of recent email-related activity events associated with your account and any subusers. The email activity feed provides visibility into the email delivery flow of each email message to expedite the troubleshooting process. The email activity additional history add-on extends the history of email events accessible to 30-days. 
+The Email Activity Feed allows you to view a snapshot of recent email-related activity events associated with your account and any subusers. It makes the delivery flow of each message visible, which expedites troubleshooting. The additional Email Activity history add-on extends event access up to 30 days.
 
 With the Email Activity feed you can:
 
 * Troubleshoot email delivery issues faster with comprehensive and sequential event data by email message.
-* Pinpoint specific emails easily with advanced search and filter options --including subject line and email metadata.
-* Customize your data independently with CSV download/export option.
-* Increase storage available for up to 30 days for historical visibility within the UI by purchasing an upgrade.
-* Call all events by an email message from the API with additional storage purchase.
+* Pinpoint specific emails easily with advanced search and filter options--including subject line and email metadata.
+* Customize your data independently with the CSV download/export option.
+* View up to 30 days of history when you purchase an upgrade.
+* Call all events by an email message from the API when you purchase additional storage.
 
 <call-out>
 
@@ -36,7 +36,7 @@ Reseller accounts and extra high volume accounts do not have access to the new E
 
 ## 	Types of email activity data
 
-The Email Activity feed allows you to view specific information about messages sent from your account.
+The Email Activity Feed allows you to view specific information about messages sent from your account.
 
 <table class="table" style="table-layout:fixed">
   <tr>
@@ -49,7 +49,7 @@ The Email Activity feed allows you to view specific information about messages s
   </tr>
   <tr>
     <td>Clicks</td>
-    <td>Whenever a recipient clicks one of the Click Tracked links in your email. In the Email History SendGrid displays the date, time, and the URL for the link that was clicked.</td>
+    <td>Whenever a recipient clicks one of the Click Tracked links in your email. In the Email History, SendGrid displays the date, time, and the URL for the link that was clicked.</td>
   </tr>
   <tr>
     <td>Delivered</td>
@@ -101,11 +101,11 @@ The Email Activity feed allows you to view specific information about messages s
 
 ## 	Filtering email activity
 
-The Email Activity feed lists each email sent. Click on each email to view the current list of triggered events for that email. Use our basic or advanced search to filter by email subject, recipients, or event types.
+The Email Activity Feed lists each email sent. Click on each email to view the current list of triggered events for that email. Use our basic or advanced search to filter by email subject, recipients, or event types.
 
 ## 	Basic search
 
-The email address field filters with an approximate, or fuzzy, search. The date field filters events that fit within the precise date range specified.
+The email address field filters with an approximate, or fuzzy, search. The date field filters events within the specified date range.
 
 <call-out>
 
@@ -157,7 +157,7 @@ In addition to viewing the email activity associated with your account by recipi
 
 *To view event history:*
 
-1. Navigate to the event you wish to view and click on the entry.
+1. Navigate to the event you wish to view, and click on the entry.
    Once the entry loads, you can click into each of the sections to view more details of each email message.
 1. When you have finished reviewing the data, click **Close**.
 
