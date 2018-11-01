@@ -54,7 +54,7 @@ Depending on your editor selection, you use different methods to design your cam
 
 1. Once you’ve finished editing your campaign, you can see what it looks like by clicking **Preview**.
 
-1. To send a test email, enter the email address(es) you want to send your campaign to, and then click **Send Test**.
+1. To send a test email, enter the email address(es) you want to send your campaign to, and then click **Send Test**. Please note, in order to send your test email and any subsequent live campaigns, you must have, at a minimum, a verified sender, subject line, and unsubscribe group or link included.
 
 1. If you would like to test the effectiveness of your email subject or content, you can set up an A/B test. For more information, see [A/B Testing]({{root_url}}/ui/sending-email/a-b-testing/).
 
