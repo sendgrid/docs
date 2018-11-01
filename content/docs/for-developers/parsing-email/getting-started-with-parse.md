@@ -1,3 +1,12 @@
+---
+layout: page
+weight: 0
+title: Getting Started with Parse
+group: 
+navigation:
+  show: true
+---
+
 ## Beginner’s Technical Guide to the SendGrid Parse Webhook
 
 The SendGrid Parse Webhook is a powerful tool with many use cases. Once set up, all incoming email for a domain or sub-domain is directed to your application. What you can do is endless, but it can be a bit tricky to grok if it is your first time.
