@@ -15,9 +15,9 @@ navigation:
 
 Events are generated when email is processed by SendGrid and email service providers. There are 2 types of events - delivery and engagement events. Delivery events indicate the status of email delivery to the recipient. Engagement events indicate how the recipient is interacting with the email.
 
-Here is a flow of email events:
+Here is the flow of email events:
 
-![]({{root_url}}/img/email-event-flow.png "The flow of events and their categories")
+![]({{root_url}}/image/email_event_flow.png "The flow of events and their categories")
 
 Here is an event response that includes an example of each type of event:
 
@@ -732,6 +732,7 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
 - <a name="url"></a>`url` - the URL where the event originates. For click events, this is the URL clicked on by the recipient.
 - <a name="attempt"></a>`attempt` - the number of times SendGrid has attempted to deliver this message.
 - <a name="category"></a>`category` - [Categories]({{root_url}}/glossary/categories/) are custom tags that you set for the purpose of organizing your emails. If you send single categories as an array, they will be returned by the webhook as an array. If you send single categories as a string, they will be returned by the webhook as a string.
+- <a name="type"></a>`type` - indicates whether the bounce event was a hard bounce (type=bounce) or block (type=blocked)
 
 String categories:
 

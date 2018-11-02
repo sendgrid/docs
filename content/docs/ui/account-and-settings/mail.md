@@ -136,7 +136,9 @@ This setting wraps an HTML template around your email content. This can be usefu
 
 ## 	Plain Content
 
-The Plain Content setting will automatically convert any plain text emails that you send to HTML before sending.
+The Plain Content setting will automatically convert any plain text emails that you send to HTML before sending (if disabled).
+
+Turn *on* if you don't want to convert your plain text email to HTML.
 
 <call-out>
 

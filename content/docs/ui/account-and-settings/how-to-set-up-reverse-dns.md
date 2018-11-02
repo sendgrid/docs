@@ -65,6 +65,18 @@ To set up reverse DNS, you must submit the DNS records provided by SendGrid to y
 6. Next, you need to add all of the A Records on this screen to your DNS host. This process varies depending on your DNS host. For videos on how to add your A Records to some popular DNS service providers, check out these [videos]({{root_url}}/ui/account-and-settings/dns-providers/).
 
 <call-out>
+  
+A recent change with how GoDaddy handles new DNS record values automatically adds your domain, resulting in an A record with too much information and a failure when trying to complete reverse DNS.  An example of this would be **o1.test.yourdomain.yourdomain.com**.
+  
+Below is an example of the A record values under the HOST column as they are displayed in step 6 and how you will need to enter into your GoDaddy DNS Management:
+
+HOST/NAME:  **01.test.yourdomain.yourdomain.com**  ENTER A RECORD HOST/NAME AS:  **O1.test**
+
+Entries made to the VALUE or POINTS TO field to not need to be changed.
+
+</call-out>
+
+<call-out>
 
 If you plan to send from multiple domains, you should set up reverse DNS for at least one IP address per domain.
 

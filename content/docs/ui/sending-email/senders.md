@@ -14,7 +14,7 @@ seo:
 
 ## 	Before you Begin
 
-Before you begin, go to your SendGrid [account settings](https://app.sendgrid.com/settings/account) to verify that your timezone and account email address are correct. Verifying your account information ensures that when you upload contacts, you receive notifications and that we deliver scheduled emails at the correct time.
+Before you begin, go to your SendGrid [account settings](https://app.sendgrid.com/settings/account) to verify that your timezone and account email address are correct. Verifying your account information ensures that when you upload contacts, you receive notifications and that we deliver scheduled emails at the correct time. You can also add additional emails to receive account notifications by going to your Marketing Campaigns tab and selecting "Notifications". From there, you can add a different email to which we will send exports and other account notifications.
 
 ## 	Adding a Sender
 
@@ -27,8 +27,8 @@ The footer of your emails automatically contains your sender information, becaus
 1. Fill in all of the fields on the page and then click **Save**.
 
     * **From Name** - This is a user-friendly name that is displayed to the user when they receive their email.
-    * **From Email Address** - This will display to the user as the email address who sent this email.
-    * **Reply To** - If your user hits reply in their email, the reply will go to this address.
+    * **From Email Address** - This will display to the user as the email address who sent this email. We will send the verification email to the address you enter in this field. If you have not received your verification email after some time, please refer back to the Sender settings and confirm that the "From" email is a valid address. 
+    * **Reply To** - If your user hits reply in their email, the reply will go to this address. This does not have to be a valid email address that can receive emails as is the case for the "from" email address.
     * **Company Address, City, State, Zip Code, Country** - The address of your business, because CAN-SPAM regulations require this information in every email you send.
     * **Nickname** - A label for your sender identity to help you identify it more quickly - it is not visible to your recipients.
 <br></br>

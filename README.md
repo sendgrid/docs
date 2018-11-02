@@ -68,9 +68,9 @@ SendGrid does not merge a pull request made against a SendGrid open source proje
 
 	`$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
-* Install npm
-	
-	`sudo apt-get update && sudo apt-get upgrade` // Optional
+* Install or update npm
+
+        `sudo apt-get update && sudo apt-get upgrade` // Optional
 
 	`$ brew install npm`
 	

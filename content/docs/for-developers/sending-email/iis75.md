@@ -71,10 +71,12 @@ Once the SMTP Server service is installed, the IIS 6.0 virtual server technology
 16. Click on OK twice and you can close the IIS 6.0 admin MMC
 
 ## 	Configure Domains
- 	At this point you will need to configure an SMTP domain that relays messages to SendGrid. Please follow [Microsoft's instructions](http://www.microsoft.com/technet/prodtechnol/WindowsServer2003/Library/IIS/e2156172-7118-4ff2-9a6a-1b7dd52580fa.mspx?mfr=true).
+
+At this point you will need to configure an SMTP domain that relays messages to SendGrid. Please follow [Microsoft's instructions](https://support.microsoft.com/en-us/help/230235/xcon-how-to-configure-the-iis-smtp-service-to-relay-smtp-mail).
+
 ## 	Testing Your New Configuration
 
-First, let's test using Telnet. Open up a telnet client within Windows. You do that in the Command Prompt by entering the following:
+First, let's test using Telnet. Open up a telnet client within Windows. You can do that in the Command Prompt by entering the following:
 
 ```
 telnet localhost 25
