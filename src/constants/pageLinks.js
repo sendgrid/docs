@@ -1,15 +1,15 @@
 const LINKS = {
-  APP: 'https://app.sendgrid.com/',
-  ACADEMY: 'https://sendgrid.com/learn/',
+  APP: 'https://app.sendgrid.com/?utm_source=docs',
+  ACADEMY: 'https://sendgrid.com/learn/?utm_source=docs',
   FOR_DEVELOPERS: '/for-developers/',
   GLOSSARY: '/glossary/',
   LOGOUT: 'https://app.sendgrid.com/logout/',
-  PRICING: 'https://sendgrid.com/pricing/',
+  PRICING: 'https://sendgrid.com/pricing/?utm_source=docs',
   RELEASE_NOTES: '/release-notes/',
-  SENDGRID: 'https://sendgrid.com/',
-  SUPPORT: 'https://support.sendgrid.com/',
-  STATUS: 'http://status.sendgrid.com/',
-  SIGNUP: 'https://signup.sendgrid.com/',
+  SENDGRID: 'https://sendgrid.com/?utm_source=docs',
+  SUPPORT: 'https://support.sendgrid.com/?utm_source=docs',
+  STATUS: 'http://status.sendgrid.com/?utm_source=docs',
+  SIGNUP: 'https://signup.sendgrid.com/?utm_source=docs',
 };
 
 export default LINKS;

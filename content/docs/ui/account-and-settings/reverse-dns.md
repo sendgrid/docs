@@ -1,12 +1,12 @@
 ---
 layout: page
 weight: 0
-title: How to set up reverse DNS
+title: How to set up reverse DNS - beta
 group: sender-authentication
 navigation:
   show: true
 seo:
-  title: How to set up reverse DNS
+  title: How to set up reverse DNS - beta
   override: true
   description: Set up reverse DNS to improve your deliverability and security of your emails.
   keywords: reverse DNS, rDNS, whitelabel, IP whitelabel
@@ -14,6 +14,12 @@ seo:
 
 <!-- OUTDATED REVERSE DNS VIDEO --!>
 <!-- <iframe src="https://player.vimeo.com/video/265831363" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+
+<call-out type="warning">
+
+**This is open beta functionality**. During beta, we reserve the right to change the functionality at any time without warning. You can switch in and out of the beta at any time in the UI.
+
+</call-out>
 
 <call-out>
 
@@ -60,22 +66,10 @@ To set up reverse DNS, you must submit the DNS records provided by SendGrid to y
 
 1. In the SendGrid UI, select [Settings > Sender Authentication](https://app.sendgrid.com/settings/sender_auth).
 2. In the reverse DNS section, click **Get Started**.
-3. Next, select the IP to set up reverse DNS.
-4. Add a subdomain. For more information about picking a subdomain, see [Subdomains](#subdomain).
-5. Select or enter a domain you want to associate with the IP. Make sure that you only enter the name of your root domain. Do not include `www` or `http://www` in this field! Your domain needs to match the domain of your from address on the emails you are sending out. For example, if I am setting up the domain `example.sendgrid.com`, I would set my domain to be `sendgrid.com`. Click **Save** and then **Confirm**. An individual IP address can only have one reverse DNS set up.
-6. Next, you need to add all of the A Records on this screen to your DNS host. This process varies depending on your DNS host. For videos on how to add your A Records to some popular DNS service providers, check out these [videos]({{root_url}}/ui/account-and-settings/dns-providers/).
-
-<call-out>
-  
-A recent change with how GoDaddy handles new DNS record values automatically adds your domain, resulting in an A record with too much information and a failure when trying to complete reverse DNS.  An example of this would be **o1.test.yourdomain.yourdomain.com**.
-  
-Below is an example of the A record values under the HOST column as they are displayed in step 6 and how you will need to enter into your GoDaddy DNS Management:
-
-HOST/NAME:  **01.test.yourdomain.yourdomain.com**  ENTER A RECORD HOST/NAME AS:  **O1.test**
-
-Entries made to the VALUE or POINTS TO field to not need to be changed.
-
-</call-out>
+3. Next, add information about your DNS host and select the IP address you would like to use to set up reverse DNS. Optionally, you may wish to filter your IP addresses by the subuser they are assigned to.
+4. Select or enter a domain you want to associate with the IP address. Make sure that you only enter the name of your root domain. Do not include `www` or `http://www` in this field. Your domain needs to match the domain of your FROM address on the emails you are sending out. For example, if I am setting up the domain `example.sendgrid.com`, I would set my domain to be `sendgrid.com`. An individual IP address can only have one reverse DNS set up. Optionally, you may wish to access advanced settings, where you can add a custom subdomain. For more information about picking a subdomain, see [Subdomains](#subdomain).
+5. Click **Next** to save and view verification information. 
+6. Next, you need to add all of the A Records on this screen to your DNS host. This process varies depending on your DNS host. For videos on how to add your A Records to some popular DNS service providers, check out these [videos]({{root_url}}/ui/account-and-settings/dns-providers/). If you don't have access to modify your companies DNS records, you can also email a request to a co-worker. This email includes a direct link to the A records. This link does expire. The recipient doesn't need login access to your SendGrid account.
 
 <call-out>
 
@@ -87,7 +81,7 @@ It can take up to 48 hours for the records to verify after you upload them to yo
 
  ### 	Verifying
 
-Once you add the A Records to your DNS host, return to the [Sender authentication page](https://app.sendgrid.com/settings/sender_auth) and click **Verify**.
+Once you add the A Records to your DNS host, return to the IP address detail page, or locate the IP on the [Reverse DNS listing page](https://app.sendgrid.com/settings/sender_auth/reverse_dns). Once you have located the correct IP address, click **Verify**.
 
 <call-out>
 

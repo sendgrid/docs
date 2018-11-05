@@ -29,3 +29,10 @@ For more information:
 * [CNAMES]({{root_url}}/glossary/cname/)
 * The SendGrid [Email Infrastructure Guide](https://go.sendgrid.com/SendGrid-Infrastructure-Guide.html?mc=Direct&mcd={{root_url}}/)
 * [DNS in Wikipedia](https://en.wikipedia.org/wiki/Domain_Name_System)
+
+
+<call-out>
+
+Get started on the right foot. Be confident that your account is optimized and set up for success now and as your email program continues to grow with [SendGrid Onboarding Services](https://sendgrid.com/marketing/onboarding-services-request/?utm_source=docs).
+
+</call-out>

@@ -21,6 +21,12 @@ See the block reason column for more detail specific to the blocked email.
 
 ![Blocks]({{root_url}}/images/blocks_1.png)
 
+<call-out>
+
+Looking for customized expert advice to improve your email program? Our team of email experts can help you create a plan to ensure you're optimizing your email delivery and engagement, and avoiding future issues like blacklists. Learn more on our [Expert Services](https://sendgrid.com/solutions/expert-services/?utm_source=docs) page.
+
+</call-out>
+
 ## Additional Resources:
 
 * [Web API & Blocks]({{root_url}}/API_Reference/Web_API/blocks.html)

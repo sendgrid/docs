@@ -48,7 +48,7 @@ Note that you can also set up link branding when you set up your domain authenti
 1. In the SendGrid UI, select [Settings > Sender Authentication](https://app.sendgrid.com/settings/whitelabel).
 2. In the link branding section, click **Get Started**.
 3. Next, add in information about your DNS host. CLick **Next**.
-4. Enter the domain that you want to brand the links and images with and add advanced settings. Make sure that you only enter the name of your root domain. Do not include `www` or `http://www` in this field! Your domain needs to match the domain of your from address on the emails you are sending out. For example, if I am branding with the domain `example.sendgrid.com`, I would set my link branding domain to be `sendgrid.com`. Click **Next**. For more information about advanced settings, see [Advanced settings](#advanced-settings).
+4. Enter the domain that you want to brand the links and images with and add advanced settings. Make sure that you only enter the name of your root domain. Do not include `www` or `http://www` in this field. Your domain needs to match the domain of your from address on the emails you are sending out. For example, if I am branding with the domain `example.sendgrid.com`, I would set my link branding domain to be `sendgrid.com`. Click **Next**. For more information about advanced settings, see [Advanced settings](#advanced-settings).
 5. Next, you need to add all of the CNAME records on this screen to your DNS host. This process varies depending on your DNS host. For videos on how to add your CNAME to some popular DNS service providers, check out these [videos]({root_url}}/ui/account-and-settings/dns-providers/). If you don't have access to modify your companies DNS records, you can also email a request to a co-worker. This email includes a direct link to the CNAME records. This link does expire. The recipient doesn't need login access to your SendGrid account.
 
 <call-out>
@@ -103,8 +103,15 @@ If you set up a whitelabel before 2015, your whitelabel will still work. However
 
 If you set up a whitelabel after 2015, it has been automatically migrated to our new sender authentication system.
 
+<call-out>
+
+Get additional onboarding support. Save time, increase the quality of your sending, and feel confident you are set up for long-term success with [SendGrid Onboarding Services](https://sendgrid.com/marketing/onboarding-services-request/?utm_source=docs).
+
+</call-out>
+
 ## 	Additional resources
 
 - [How to set up domain authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/)
 - [How to set up reverse DNS]({{root_url}}/ui/account-and-settings/how-to-set-up-reverse-dns/)
 - [Troubleshooting]({{root_url}}/ui/account-and-settings/troubleshooting-sender-authentication/)
+

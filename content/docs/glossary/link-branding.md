@@ -21,3 +21,9 @@ In an attempt to clarify complex functionality, SendGrid is upgrading the name o
 - [How to set up link branding]({{root_url}}/ui/account-and-settings/how-to-set-up-link-branding/)
 - [How to set up domain authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/)
 - [How to set up reverse DNS]({{root_url}}/ui/account-and-settings/how-to-set-up-reverse-dns/)
+
+<call-out>
+
+Get started on the right foot. Be confident that your account is optimized and set up for success now and as your email program continues to grow with [SendGrid Onboarding Services](https://sendgrid.com/marketing/onboarding-services-request/?utm_source=docs).
+
+</call-out>

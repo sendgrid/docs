@@ -14,7 +14,7 @@ seo:
 
 <iframe src="https://player.vimeo.com/video/120709155" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-Custom fields allow you to add extra information about a contact to your contact database when you upload a CSV. With custom fields, you can create custom segments from your individual contacts or from your contact database that dynamically update your content with the values for the individual contact receiving the email. Your custom fields are completely customizable to the use cases and user information that you need.
+Custom fields allow you to add extra information about a contact to your contact database when you upload a CSV. Custom fields allow you to create custom segments from your individual contacts or from your contact database that dynamically update your content with the values for the individual contact receiving the email. Your custom fields are completely customizable to the use cases and user information that you need.
 
 <call-out>
 

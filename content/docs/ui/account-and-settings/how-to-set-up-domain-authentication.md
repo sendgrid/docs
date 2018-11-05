@@ -52,7 +52,7 @@ To set up domain authentication, you must submit the DNS records provided by Sen
 1. In the SendGrid UI, select [Settings > Sender Authentication](https://app.sendgrid.com/settings/sender_auth).
 2. In the domain authentication section, click **Get Started**.
 3. Next, add in information about your DNS host, and indicate whether you also want to set up link branding. Click **Next**. For more information about link branding, check out [What is link branding?]({{root_url}}/ui/account-and-settings/how-to-set-up-link-branding/#what-is-link-branding).
-4. Fill in the domain that you want to send from and add advanced settings as needed. Make sure that you only enter the name of your root domain. Do not include `www` or `http://www` in this field! Your domain needs to match the domain of your FROM address on the emails you are sending out. For example, if I am sending an email from `example@sendgrid.com`, I would set my domain authentication domain to be `sendgrid.com`. Click **Next**. For more information about advanced settings, see [Advanced settings](#advanced-settings).
+4. Fill in the domain that you want to send from and add advanced settings as needed. Make sure that you only enter the name of your root domain. Do not include `www` or `http://www` in this field. Your domain needs to match the domain of your FROM address on the emails you are sending out. For example, if I am sending an email from `example@sendgrid.com`, I would set my domain authentication domain to be `sendgrid.com`. Click **Next**. For more information about advanced settings, see [Advanced settings](#advanced-settings).
 5. Next, you need to add all of the CNAME records on this screen to your DNS host. This process varies depending on your DNS host. For videos on how to add your CNAME to some popular DNS service providers, check out these [videos]({{root_url}}/ui/account-and-settings/dns-providers/). If you don't have access to modify your companies DNS records, you can also email a request to a co-worker. This email includes a direct link to the CNAME records. This link does expire. The recipient doesn't need login access to your SendGrid account.
 
 <call-out>
@@ -137,6 +137,12 @@ When you are in the process of authenticating a domain, and on the screen where 
 If you set up a whitelabel before 2015, your whitelabel will still work. However, if you need to change or update it, you need to delete it and recreate it as an authenticated domain in our new system.
 
 If you set up a whitelabel after 2015, it has been automatically migrated to our new domain authentication system.
+
+<call-out>
+
+Get started on the right foot. Be confident that your account is optimized and set up for success now and as your email program continues to grow with [SendGrid Onboarding Services](https://sendgrid.com/marketing/onboarding-services-request/?utm_source=docs).
+
+</call-out>
 
 ## 	Additional resources
 
