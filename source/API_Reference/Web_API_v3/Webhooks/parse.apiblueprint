@@ -54,7 +54,7 @@ Creates a new inbound parse setting.
                "send_raw": false
             }
 
-+ Response 201 (application/json)
++ Response 200 (application/json)
 
     + Body
 
