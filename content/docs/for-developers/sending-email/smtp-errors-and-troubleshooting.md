@@ -31,6 +31,11 @@ Each SMTP call you make returns a response. `200` responses are usually success 
     <td>`Queued mail for delivery`</td>
     <td>Your mail has been successfully queued! This response indicates that the recipient server has accepted the message.</td>
   </tr>
+    <tr>
+    <td>403</td>
+    <td>`You are not authorized to send from that email address`</td>
+    <td>This error means that you need to update the “from” address for all of your emails to include a domain you own and control.</td>
+  </tr>
   <tr>
     <td>421</td>
     <td>`Message from (X.X.X.X) temporarily deferred`</td>
