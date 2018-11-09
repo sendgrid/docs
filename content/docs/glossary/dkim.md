@@ -16,7 +16,7 @@ Spoofers and phishers can be sending email to unwitting recipients by purporting
 
 As one of the most popular email authentication methodologies, it works by using cryptographic technology that adds a digital signature to your message header. This DKIM signature validates and authorizes your domain name in the eyes of the receiver. The DKIM signature is created using a unique string of characters stored as a public key.
 
-When your email is received, the public key is retrieved through the DNS and decrypted by the receiver to allow them to confidently verify the identity of your domain.
+When your email is received, the public key is retrieved through the DNS and decoded by the receiver to allow them to confidently verify the identity of your domain.
 
 While DKIM authentication is an email best practice, it’s important to understand that a DKIM signature is limited in scope. It does not verify content or tell the receiver to treat the message any differently. Its main purpose is to help verify sender identity, which is an important factor (although not the only factor) when it comes to email delivery.
 
