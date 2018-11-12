@@ -1,7 +1,7 @@
 ---
 seo:
-  title: dedicated IP addresses
-  description: dedicated IP addresses
+  title: Dedicated IP addresses
+  description: Dedicated IP addresses
   keywords: sendgrid ip address, ips, ip addresses, purchase IPs, add, additional, more, new, IP, address, purchase, dedicated, account, another, need, IPs, warmup, sending, originating, originate, plan, reputation, monitoring, monitor
 title: Dedicated IP addresses
 weight: 0
@@ -49,9 +49,9 @@ You can purchase an additional dedicated IP Address from the IP Addresses Settin
 
 Under "Additional Options" you will find the following options:
 
-  - *Use automated IP warmup:* when checked, SendGrid will gradually increase the amount of email sent over this IP. Note: It is best practice to [warm an IP address]({{root_url}}/ui/sending-email/warming-up-an-ip-address/) over time before sending fully over that IP address. When using automated warmup, you must have at least one other warm IP that can handle the overflow traffic from the IP in warmup.
-  - *Allow my parent account to send mail using these IP addresses:* check this if you want your parent account to be able to send over this IP. If you are assigning this IP to a subuser and only want that subuser to have permission to send on this IP, leave this box unchecked.
-  - *Allow my subusers to send mail using these IP addresses:* check this to select which subusers can send on this IP address
+  - **Use automated IP warmup**: SendGrid will gradually increase the amount of email sent over this IP. Note: It is best practice to [warm an IP address]({{root_url}}/ui/sending-email/warming-up-an-ip-address/) over time before sending fully over that IP address. When using automated warmup, you must have at least one other warm IP that can handle the overflow traffic from the IP in warmup.
+  - **Allow my parent account to send mail using these IP addresses**: You want your parent account to be able to send over this IP. If you are assigning this IP to a subuser and only want that subuser to have permission to send on this IP, leave this box unchecked.
+  - **Allow my subusers to send mail using these IP addresses**: Select which subusers can send on this IP address
 
 
 After purchasing your IP, we strongly encourage you to set up reverse DNS. For more information about setting up reverse DNS, see [How to set up reverse DNS]({{root_url}}/ui/account-and-settings/how-to-set-up-reverse-dns/).
