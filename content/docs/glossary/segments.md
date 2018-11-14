@@ -1,6 +1,6 @@
 ---
 seo:
-  title:
+  title: Segments
   description: Segments are dynamic collections of Marketing Campaigns contacts grouped together, or segmented, based on the criteria you define.
   keywords:
 title: Segments
