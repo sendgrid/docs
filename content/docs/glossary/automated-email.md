@@ -17,8 +17,9 @@ Examples of email automation include a welcome series [drip campaign]({{root_url
 
 The ability to send very relevant, timely emails directed to individual recipients makes automated email a uniquely powerful tool for building and nurturing customer relationships, enhancing the image of your brand, and increasing customer engagement.
 
+
 <call-out>
-  
-Interested in sending automated email? SendGrid Automation is a new offering that's currently in beta among select users. [Visit SendGrid.com]({{root_url}}/solutions/marketing-automation/) to learn more and be added to the waitlist.
+
+Interested in sending automated email? Doing so is simple with SendGrid Automation, a new offering that's currently in beta among select users. [Visit SendGrid.com](https://sendgrid.com/solutions/marketing-automation/) to learn more and be added to the waitlist.
 
 </call-out>
