@@ -8,17 +8,17 @@ navigation:
 ---
 
 ## Sending MIME Mail
-Some mailers, such as Apple Mail, place Multipurpose Internet Mail Extensions (MIME) into emails automatically which can cause our system to not parse the boundaries correctly. If you do notice a problem with the content from your email not rendering correctly, please do the following:
+Some mailers, such as Apple Mail, place Multipurpose Internet Mail Extensions (MIME) into emails automatically which can cause our system to parse the boundaries incorrectly. If you do notice a problem with the content from your email not rendering correctly, please do the following:
 
 1. Log into your SendGrid account, click **Settings**, then select **Mail Settings**. 
-2. Expand the menu next to Plain Content by clicking on the arrow, and then toggle the button in the menu to **ON**. 
+2. Expand the menu next to Plain Content by clicking on the arrow, and then toggle the button in the list to **ON**. 
 3. Send another email using your application to test the settings.
 
-Some mail clients, such as Outlook and Thunderbird, appear to insert double spacing line breaks at every line. The reason is that the 'content-transfer-encoding' in MIME is set to 'quoted-printable' which adds Carriage Return Line Feed (CRLF) line breaks to the source content of the email which are characters interpreted by these mail clients. To alleviate this problem, please do the following:
+Some mail clients, such as Outlook and Thunderbird, appear to insert double spacing line breaks at every line. The reason is that those mail clients set the 'content-transfer-encoding' in MIME to 'quoted-printable' which adds Carriage Return Line Feed (CRLF) line breaks to the source content of the email which are characters interpreted by these mail clients. To alleviate this problem, please do the following:
 
 1. If you can customize the MIME settings for your email, set the 'Content-Transfer-Encoding' to '7bit' instead of 'Quoted-Printable.'
 1. Ensure that your content follows the line length limits.
-1. Hard line breaks appear as CRLF characters in the source of an email with the character combination of " =0D" in the source of an email. This only happens with 'quoted-printable' (Content-Transfer-Encoding set in MIME) emails. Email clients such as Outlook and Thunderbird render these characters which results in additional breaks in the content of your emails.
+1. Line breaks appear as CRLF characters in the source of an email with the character combination of " =0D" in the source of an email. These characters appear only with 'quoted-printable' (Content-Transfer-Encoding set in MIME) emails. Email clients such as Outlook and Thunderbird render these characters which resulting in additional breaks in the content of your emails.
 
 Use the MIME layout in your email below when sending through SendGrid. It is best to reference files using separate links to download since it lowers the percentage of spam threshold for most domains you are sending to.
 
@@ -56,4 +56,6 @@ puts response.body
 puts response.headers
 
 ```
+
+
 
