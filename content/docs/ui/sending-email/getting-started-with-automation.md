@@ -13,7 +13,7 @@ navigation:
 
 <call-out type="warning">
 
-**Automation is currently in closed beta**. During beta, only approved participants have access to the feature and we reserve the right to change the functionality at any time without warning. For more information on the Automation beta, or to join the beta waitlist, see our [Email Marketing Automation](https://sendgrid.com/solutions/marketing-automation/) page.
+**Automation is currently in closed beta**. During beta, only approved participants have access to the feature and we reserve the right to change the functionality at any time without warning. For more information on the Automation beta, or to join the beta waitlist, see our [Email Marketing Automation](hhttps://sendgrid.com/solutions/marketing-automation/?utm_source=docs) page.
 
 </call-out>
 
