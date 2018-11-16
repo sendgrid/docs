@@ -156,6 +156,10 @@ const GROUPS = {
     name: 'Getting Started',
     order: null,
   },
+  'automation': {
+    name: 'Automation',
+    order: null,
+  },
   'ungrouped': {
     name: 'Ungrouped',
     order: null,
