@@ -15,7 +15,11 @@ An invalid email occurs when you attempt to send email to an address that is for
 
 Before you send, SendGrid does a check against the format of the email address to attempt to verify its validity. If the recipient server checks the address and doesn't find it, they will send back a 550 bounce to say that this is an invalid email address.
 
-The list provided here can be filtered by email address or date.
+<call-out>
+
+Invalid drop events are retained for 30 days. 
+
+</call-out>
 
 ## 	Searching Invalid Emails by Date
 

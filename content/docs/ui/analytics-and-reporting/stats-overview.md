@@ -11,12 +11,6 @@ navigation:
   show: true
 ---
 
-<call-out>
-
-Parent accounts will see aggregated statistics for their account and all subuser accounts. Subuser accounts will only see their own statistics.
-
-</call-out>
-
 <p>
 Tracking your emails is an important part of being a good sender and learning about how your users interact with your email. This includes everything from basics of clicks and opens to looking at which browsers and mailbox providers your customers use.
 </p>
