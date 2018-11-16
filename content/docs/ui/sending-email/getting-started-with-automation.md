@@ -8,7 +8,7 @@ seo:
   description: Use Automation to create an automated email series or drip campaign targeted towards a specific audience.
   keywords: automation, triggered email, automated email, welcome series
 navigation:
-  show: false
+  show: true
 ---
 
 <call-out type="warning">
