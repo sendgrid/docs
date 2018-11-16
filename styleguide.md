@@ -79,6 +79,7 @@ The sections in **Bold** are the categories. The "group" field in the head matte
 #### UI
 
 **Sending Email**
+- Automation: automation
 - Building Email: building-email
 - Delivery & Optimization: delivery-optimization
 - Building Email with Marketing Campaigns: marketing-campaigns
