@@ -11,12 +11,6 @@ navigation:
   show: true
 ---
 
-<call-out>
-
-Parent accounts will see aggregated statistics for their account and all subuser accounts. Subuser accounts will only see their own statistics.
-
-</call-out>
-
 Categories can help organize your email analytics by enabling you to “tag” emails by type. Just as you can view the statistics on all your [email activity]({{root_url}}/ui/analytics-and-reporting/email-activity-feed/), you can go a step further and view the statistics broken down to a particular category.
 
 The actual statistics included vary depending upon your [account settings]({{root_url}}/ui/account-and-settings/account/). Emails sent, bounces, and spam reports will always get tracked. Unsubscribes, clicks, and opens require that the associated settings are enabled.
