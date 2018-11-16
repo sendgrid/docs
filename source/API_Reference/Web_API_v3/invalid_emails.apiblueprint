@@ -47,6 +47,11 @@ There are two options for deleting invalid email addresses:
 </br>
 2) You can delete some invalid email addresses by specifying certain addresses in an array in the request body.
 
+
+**NOTE: Invalid drop events are retained for 30 days.**
+
+
+
 ### Delete invalid emails [DELETE]
 
 + Request (application/json)
