@@ -30,6 +30,7 @@ class Search extends Component {
       transformData(hits) {
         const updatedUrlHits = hits.map(((hit) => {
           hit.url = hit.url.replace('#___gatsby', '');
+          hit.url = hit.url.replace('https://sendgrid.com/docs', '');
           if (hit.anchor === '___gatsby') {
             hit.anchor = '';
           }
