@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
 import STARWARS from '../../constants/starWars';
+import config from '../../../data/SiteConfig';
 import './search.scss';
 
 class Search extends Component {
@@ -29,8 +30,9 @@ class Search extends Component {
       },
       transformData(hits) {
         const updatedUrlHits = hits.map(((hit) => {
+          const rootUrl = config.env === 'development' ? config.siteUrl + config.pathPrefix : config.siteUrl;
           hit.url = hit.url.replace('#___gatsby', '');
-          hit.url = hit.url.replace('https://sendgrid.com', '');
+          hit.url = hit.url.replace(rootUrl, '');
           if (hit.anchor === '___gatsby') {
             hit.anchor = '';
           }
