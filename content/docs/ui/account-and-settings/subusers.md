@@ -132,9 +132,9 @@ If you would like to see how your Subusers are performing in comparison to each 
 
 1. Navigate to **Settings** and select **Subuser Management**.
 1. Locate the Subuser account you wish to disable and click on the name to view the account details.
-1. Click **Enable**.
+1. Click **Disable Account**.
 
-To re-enable a Subuser’s account, click **Disable**.
+To re-enable a Subuser’s account, follow steps 1 and 2 above, then click **Enable Account**.
 
 ## 	Deleting a Subuser account
 

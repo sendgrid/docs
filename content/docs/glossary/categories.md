@@ -28,5 +28,7 @@ The actual statistics included vary depending upon the set of enabled apps. Emai
 In order to add the X-SMTPAPI categories header, please look at our [SMTP API Categories]({{root_url}}/for-developers/sending-email/categories/) documentation. You can also get a [full category list]({{root_url}}/for-developers/sending-email/categories#get) or get [category specific statistics]({{root_url}}/API_Reference/Web_API_v3/Stats/categories.html) from the SendGrid API.
 
 <call-out>
+  
  Looking for customized expert advice to improve your email program? Our team of email experts can help you create a plan to ensure you're optimizing your email delivery and engagement, and avoiding future issues like blacklists. Learn more on our [Expert Services](https://sendgrid.com/solutions/expert-services/?utm_source=docs) page.
+ 
  </call-out>

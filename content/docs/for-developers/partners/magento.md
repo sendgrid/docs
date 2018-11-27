@@ -19,12 +19,6 @@ The official SendGrid extension for Magento 2.0 makes it easy to ensure delivery
 
 Transactional email is an important component of any email communication strategy. SendGrid relieves businesses of the cost and complexity of maintaining custom email systems. SendGrid provides reliable delivery, scalability, and real-time analytics along with flexible APIs that make custom integration a breeze. SendGrid for Magento 2.0 allows you to choose between the SMTP relay or the Email API to send outgoing emails from your Magento installation.
 
-## 	SendGrid Pricing Plans
-
-Plans start at $9.95/month. Please see our [pricing page](https://sendgrid.com/partners/magento/) for more information.
-
-For a free trial, [click here](https://sendgrid.com/partners/magento/)!
-
 ## 	Main Features
 
  ### 	Proven Deliverability
