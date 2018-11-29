@@ -72,6 +72,7 @@ Entries made in the VALUE or POINTS TO field do not need to be changed.
 <call-out>
 
 If you [turn off automated security](#using-automated-security), you add TXT and MX records in this step instead of CNAME records.
+
 </call-out>
 
 It can take up to 48 hours for the records to verify after you upload them into your DNS host, so you will likely have to come back later to verify.
