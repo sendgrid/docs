@@ -1,4 +1,5 @@
-module.exports = {
+const config = {
+  env: process.env.NODE_ENV,
   docsDir: 'docs',
   siteTitle: 'SendGrid Documentation',
   siteTitleAlt: 'SendGrid Knowledge Center',
@@ -12,3 +13,5 @@ module.exports = {
   googleAnalyticsID: 'UA-12399264-1',
   userTwitter: 'sendgrid',
 };
+
+module.exports = config;

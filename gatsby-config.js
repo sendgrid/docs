@@ -21,8 +21,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-segment-js',
       options: {
-          prodKey: '1CjnBNPybWzyv10ssZRxdwmb8vrYF4yj',
-          trackPage: true,
+        prodKey: '1CjnBNPybWzyv10ssZRxdwmb8vrYF4yj',
+        trackPage: true,
       },
     },
     'gatsby-plugin-react-helmet',
