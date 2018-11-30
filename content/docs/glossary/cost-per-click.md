@@ -1,7 +1,7 @@
 ---
 seo:
   title: Cost Per Click
-  description: Cost Per Click is the price you pay for each click in a pay-per-click advertising campaign.
+  description: Cost Per Click, or CPC, is a type of media purchasing model common within search and display advertising campaigns.
   keywords: cost per click, pay-per-click
 title: Cost Per Click
 weight: 0
@@ -10,7 +10,7 @@ navigation:
   show: false
 ---
 
-Cost Per Click is the price you pay for each click in a pay-per-click advertising campaign. 
+Cost Per Click, or CPC, is a type of media purchasing model common within search and display advertising campaigns.
 
 A pay-per-click advertising campaign is a digital marketing ad where every time your ad is clicked, taking a potential customer to your site, you pay the advertiser a fee. These ads appear most often as the sponsored ads at the top of Google search results - so pay-per-click ads are ads generated search results, and not considered organic search results.
 
