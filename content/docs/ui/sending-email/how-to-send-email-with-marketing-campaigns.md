@@ -82,9 +82,14 @@ If possible, schedule mail for off-peak times (for example, 10:53). This can avo
 
 </call-out>
 
+
 <call-out type="warning">
 
-Campaigns are sent according to the time zone specified in the settings of your account. Check the time zone for your account to have your emails sent at the correct time.
+Please note allowed special characters in email adresses that will not result as invalid. Without quotes, local-parts may consist of any combination of alphabetic characters, digits, or any of the special characters
+
+ `! # $ % & ' * + - / = ?  ^ _ ` . { | } ~`
+ 
+period (".") may also appear, but may not be used to start or end the local part, nor may two or more consecutive periods appear.
 
 </call-out>
 
