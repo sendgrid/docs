@@ -301,7 +301,7 @@ Have feedback or questions? We welcome your thoughts at email_automation@sendgri
     <td>In progress</td>
   </tr>
   <tr>
-    <td>Availability of the public facing Automations API</td>
+    <td>Availability of the public facing Automation Contacts API</td>
     <td>In progress</td>
   </tr>
   <tr>
