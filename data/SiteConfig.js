@@ -14,4 +14,6 @@ const config = {
   userTwitter: 'sendgrid',
 };
 
+config.envPrefix = process.env.NODE_ENV === 'development' ? '' : config.pathPrefix;
+
 module.exports = config;
