@@ -13,9 +13,6 @@ seo:
 
 ---
 
-<iframe src="https://player.vimeo.com/video/248169751" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-
 ## 	Changing your password
 
 If you already know your password, you can change your SendGrid password by editing your [Account Details](https://app.sendgrid.com/settings/account) in the UI. If you've forgotten your password, you can reset it on the [Reset password page](https://app.sendgrid.com/forgot_password).
