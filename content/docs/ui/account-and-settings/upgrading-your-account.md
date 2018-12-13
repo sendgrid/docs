@@ -17,9 +17,7 @@ Whether you’re a startup or a large enterprise, SendGrid has several plans tha
 
 ### Plan and billing details
 
-* Log into the SendGrid UI.
-* Select **Settings** and then click [**Plan & Billing Details**](https://app.sendgrid.com/settings/billing).
-* At the top of the page, click **Change Plan**.
+Update your plan in the UI on the [Account Details](https://app.sendgrid.com/account/billing ) page, in the Plan & Billing tab, under the Plan section.
 
 ### Choose a plan
 
