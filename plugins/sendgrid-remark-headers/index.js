@@ -21,6 +21,7 @@ module.exports = ({ markdownAST }) => {
     patch(data, 'hProperties', {});
     patch(data.htmlAttributes, 'id', id);
     patch(data.hProperties, 'id', id);
+    patch(data.hProperties, 'class', 'sg-remarked-linked-header');
 
     node.children.unshift({
       type: 'link',
