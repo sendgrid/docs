@@ -119,7 +119,7 @@ As explained in the <a href="{{root_url}}/Classroom/Basics/API/api_key_permissio
 {% anchor h2 %}Stats{% endanchor %}
 {% codeblock %}
 "scopes": [
-  "email_activity.read",
+  "message.read",
   "stats.read",
   "stats.global.read",
   "browsers.stats.read",
@@ -133,6 +133,8 @@ As explained in the <a href="{{root_url}}/Classroom/Basics/API/api_key_permissio
   "clients.webmail.stats.read"
 ]
 {% endcodeblock %}
+
+{% info %}If you get an error with `message.read`, try `email_activity.read` instead.{% endinfo %}
 
 {% anchor h2 %}IPs{% endanchor %}
 {% codeblock %}
