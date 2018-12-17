@@ -10,7 +10,7 @@ layout: page
 navigation:
   show: true
 ---
-Your SendGrid invoice contains a lot of information which may be difficult to read. To see your invoice, check your email or visit your [Plan & Billing details](https://app.sendgrid.com/settings/billing) page. Here's information on how to read your invoice:
+Your SendGrid invoice contains a lot of information which may be difficult to read. To see your invoice, check your email or visit the Plan & Billing tab on your [Account details](https://app.sendgrid.com/account/billing) page. Here's information on how to read your invoice:
 
 ![A screen shot of an example invoice]({{root_url}}/img/invoice_legend.jpg)
 
@@ -18,7 +18,7 @@ Your SendGrid invoice contains a lot of information which may be difficult to re
 ## 1. Physical Address
 
 
-**The physical address of your business.** This address is the same address you entered when you first signed up. If you would like to update the address as it appears on your invoices, click Change Invoice Address on the [Plan & Billing Details](https://app.sendgrid.com/settings/billing) page. If you need to change the address on an existing invoice, please send an email to [billing@sendgrid.com](mailto:billing@sendgrid.com).
+**The physical address of your business.** This address is the same address you entered when you first signed up. If you would like to update the address as it appears on your invoices, edit your company info on the [Account details](https://app.sendgrid.com/account/billing) page. If you need to change the address on an existing invoice, please send an email to [billing@sendgrid.com](mailto:billing@sendgrid.com).
 
 
 ## 2. Billing Email
@@ -114,7 +114,7 @@ This item refers to usage of our [Legacy Newsletter product]({{root_url}}/ui/sen
 
 ![Transaction and payment summary]({{root_url}}/img/invoice_payment_summary.jpg)
 
-The Transaction Summary shows the total charges for the month, and the Payment Summary shows the payment type and last 4 digits of the card that was charged. To change  your payment method, [click here](https://app.sendgrid.com/settings/billing).
+The Transaction Summary shows the total charges for the month, and the Payment Summary shows the payment type and last 4 digits of the card that was charged. To change  your payment method, go to [Account details](https://app.sendgrid.com/account/billing).
 
 **These line items always reflect the plan you currently have, not necessarily "Pro 100K", which is shown for the purposes of demonstration**.
 

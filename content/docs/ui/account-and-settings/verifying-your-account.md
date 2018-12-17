@@ -49,4 +49,4 @@ Domain authentication, formally known as domain whitelabel, shows email provider
 
 ## Upgrading your account
 
-Your 30 day trial starts as soon as you complete the initial sign up form, not when you complete the final verification step. After your 30 day trial period expires you will maintain the same level of account functionality, and your settings will remain intact. However, you will only be able to send up to 100 emails per day from that point onwards, unless you choose to [upgrade your account](https://app.sendgrid.com/settings/billing).
+Your 30 day trial starts as soon as you complete the initial sign up form, not when you complete the final verification step. After your 30 day trial period expires you will maintain the same level of account functionality, and your settings will remain intact. However, you will only be able to send up to 100 emails per day from that point onwards, unless you choose to [upgrade your account](https://app.sendgrid.com/account/billing)).
