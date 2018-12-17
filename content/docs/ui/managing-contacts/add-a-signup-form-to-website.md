@@ -35,7 +35,7 @@ The number of signup forms you can store at a time is limited to 15.
 
 Using the action menu on the Signup Forms page you can edit, duplicate, or delete existing signup forms. 
 
-[Insert Screenshot showing action menu drop-down open]. 
+![]({{root_url}}/img/action-menu-signup-form.png "Action menu for signup forms")
 
 ## Generate signup form code
 
