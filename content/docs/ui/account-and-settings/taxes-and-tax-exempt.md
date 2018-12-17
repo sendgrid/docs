@@ -42,11 +42,11 @@ SendGrid collects sales tax in the following jurisdictions:
 - New York state
 - Texas
 
-To determine whether to add sales tax to your monthly SendGrid bill, we use the address you enter as your billing address in [Settings | Plan & Billing Details](https://app.sendgrid.com/settings/billing) in the SendGrid UI.
+To determine whether to add sales tax to your monthly SendGrid bill, we use the address you enter as your billing address in [Account Details](https://app.sendgrid.com/account/billing) in the SendGrid UI.
 
  ### 	Where can I see how much I am getting charged for sales tax each month?
 
-If you are being charged sales tax, you will see it as a line item on your invoice. You’ll be able to find the new sales tax line item by navigating to [Settings | Plan & Billing Details](https://app.sendgrid.com/settings/billing) in the SendGrid UI, then by viewing your invoice, which is in PDF form.
+If you are being charged sales tax, you will see it as a line item on your invoice. You’ll be able to find the new sales tax line item by navigating to [Account Details](https://app.sendgrid.com/account/billing) in the SendGrid UI, then by viewing your invoice, which is in PDF form.
 
  ### 	Can I get an estimate of my sales tax?
 

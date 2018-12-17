@@ -25,9 +25,9 @@ When you select the checkboxes next to the recipient names or select all, using 
 
 *To download your Global Unsubscribe list as a CSV:*
 
-1. Navigate to the Unsubscribe Groups page and locate the list you want to download.
-1. Click the action menu next to the list.
-1. Select **Export**. The file will download in your browser right away.
+1. Navigate to the Global Unsubscribes page.
+1. Click the action menu at the top of the page.
+1. Select **Download as CSV**. The file will download in your browser right away.
 
  ### 	Global Unsubscribe Substitution Tag
 
