@@ -39,7 +39,7 @@ Using the action menu on the Signup Forms page you can edit, duplicate, or delet
 
 ## Generate signup form code
 
-Signup forms are hosted by SendGrid, so the code that’s being shared is just a link to the form itself, or an iframe displaying the form on your website. 
+Signup forms are hosted by SendGrid, so the code that’s being shared is just a link to the hosted form itself, or an iframe displaying the form on your website. 
 
 *To find the code for your signup form:*
 
@@ -55,5 +55,11 @@ You can also find the links to share the signup form in the design editor. To vi
 
 
 Link to separate blog sites, providers. Etc. 
+
+
+* [Wordpress](https://www.wpbeginner.com/beginners-guide/how-to-create-a-contact-form-in-wordpress/)
+* [Wix](https://support.wix.com/en/article/adding-a-link-to-blog-text)
+* [Squarespace]({https://support.squarespace.com/hc/en-us/articles/206543617-Using-Embed-Blocks)
+
 
 
