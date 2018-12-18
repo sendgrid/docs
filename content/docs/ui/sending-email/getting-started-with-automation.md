@@ -195,7 +195,7 @@ Use Signup Forms with the SendGrid Automation beta to capture new contacts and a
 
 You can enable contacts to access your signup form either by sending them a link hosted by SendGrid or by embedding it directly into your website.
 
-## Create a new signup form
+#### Create a new signup form
 
 <call-out>
 
@@ -212,7 +212,7 @@ The number of signup forms you can create is limited to 15.
 1. Add the intro copy to explain what the contact is signing up to receive. 
 1. Select the checkboxes to add the fields you want on the form.
 
-## Manage signup forms
+#### Manage signup forms
 
 Using the action menu on the Signup Forms page you can edit, duplicate, or delete existing signup forms. 
 
@@ -224,7 +224,7 @@ Because of the iframe technology used to create the signup form, anytime you edi
 
 </call-out>
 
-## Share Code to make your form accessible
+#### Share Code to make your form accessible
 
 To make your form accessible to new contacts, you can either send them a link hosted by SendGrid or you can embed code on your website that displays your form as an iframe. 
 
