@@ -51,13 +51,4 @@ SendGrid currently hosts the signup forms for you, so the shared code is just a 
 You can also find the links to share the signup form in the design editor. To view the sharing links from the editor, click **Share Code** in the top-right corner of the page. 
 
 
-### Adding signup form link to your website 
-
-Embedding your signup form into a third-party website is as simple as pasting the embed code into your site's HTML. For more specific directions on how to do that on some popular site builders, see the links below:
-
-* [Wordpress](https://www.wpbeginner.com/beginners-guide/how-to-create-a-contact-form-in-wordpress/)
-* [Wix](https://support.wix.com/en/article/adding-a-link-to-blog-text)
-* [Squarespace]({https://support.squarespace.com/hc/en-us/articles/206543617-Using-Embed-Blocks)
-
-
 
