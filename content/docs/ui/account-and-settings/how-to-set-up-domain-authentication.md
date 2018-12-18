@@ -100,7 +100,7 @@ Any time that you send an email with a FROM address whose domain matches the dom
 
 ### Be Who You Say You Are With Sender Authentication
 
-Check out this [Academy Course]() to access actionable tips on how to build trust with mailbox providers and ensure your authentication is set up correctly. 
+Check out this [Academy Course](https://rise.articulate.com/share/tZ8_9DYhJbWPTZN8CmsDK5GH0HPcOA-W#/) to access actionable tips on how to build trust with mailbox providers and ensure your authentication is set up correctly. 
 
 </academy-link>
 
