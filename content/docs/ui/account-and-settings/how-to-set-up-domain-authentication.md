@@ -96,7 +96,15 @@ Any time that you send an email with a FROM address whose domain matches the dom
 
  ### 	Using automated security
 
- Automated security allows SendGrid to handle the signing of your DKIM and authentication of your SPF for your outbound email with CNAME records. This allows you to add a dedicated IP address or update your account without having to update your SPF record.
+<academy-link img="/img/SGA_SenderAuthentication750.png" courselink="https://rise.articulate.com/share/tZ8_9DYhJbWPTZN8CmsDK5GH0HPcOA-W">
+
+### Be Who You Say You Are With Sender Authentication
+
+Check out this [Academy Course]() to access actionable tips on how to build trust with mailbox providers and ensure your authentication is set up correctly. 
+
+</academy-link>
+
+Automated security allows SendGrid to handle the signing of your DKIM and authentication of your SPF for your outbound email with CNAME records. This allows you to add a dedicated IP address or update your account without having to update your SPF record.
 
 Automated security defaults to **On**. If your DNS provider does not accept underscores in CNAME records, you will have to turn off Automated Security to use MX and TXT records.
 
