@@ -43,7 +43,7 @@ The CNAME record creates an alias for subdomain.yourdomain.com and points to sen
 
 ## 	Setting up domain authentication
 
- ### 	Before you begin
+### Before you begin
 
 To set up domain authentication, you must submit the DNS records provided by SendGrid to your DNS or hosting provider (for example, GoDaddy, Hover, CloudFlare, etc.). First, figure out who your hosting provider is and if you have access. If you don't have access to your DNS or hosting provider, you should figure out who in your company has this access before you begin setting up domain authentication.
 
@@ -96,7 +96,15 @@ Any time that you send an email with a FROM address whose domain matches the dom
 
  ### 	Using automated security
 
- Automated security allows SendGrid to handle the signing of your DKIM and authentication of your SPF for your outbound email with CNAME records. This allows you to add a dedicated IP address or update your account without having to update your SPF record.
+<academy-link img="/img/SGA_SenderAuthentication750.png" courselink="https://rise.articulate.com/share/tZ8_9DYhJbWPTZN8CmsDK5GH0HPcOA-W">
+
+### Be Who You Say You Are With Sender Authentication
+
+Check out this [Academy Course](https://rise.articulate.com/share/tZ8_9DYhJbWPTZN8CmsDK5GH0HPcOA-W#/) to access actionable tips on how to build trust with mailbox providers and ensure your authentication is set up correctly. 
+
+</academy-link>
+
+Automated security allows SendGrid to handle the signing of your DKIM and authentication of your SPF for your outbound email with CNAME records. This allows you to add a dedicated IP address or update your account without having to update your SPF record.
 
 Automated security defaults to **On**. If your DNS provider does not accept underscores in CNAME records, you will have to turn off Automated Security to use MX and TXT records.
 
