@@ -27,6 +27,14 @@ It is much easier to establish a positive reputation as a new sender, than it is
 
 </call-out>
 
+<academy-link img="/img/SGA_WarmingUp750.png" courselink="https://rise.articulate.com/share/tDOA99ns4CTVTYLuXw00wn5KUTqsLaeO#/"">
+
+### Warm Up Your Sending To Avoid Delivery Issues
+
+Check out this [Academy Course](https://rise.articulate.com/share/tDOA99ns4CTVTYLuXw00wn5KUTqsLaeO#/") to access best practices on how to properly warm up your sending, and how to make a good first impression to mailbox providers. 
+
+</academy-link>
+
 ## 	Warmup types
 
 There are 2 ways to warmup your IP. If your dedicated IP is relatively new, or you've never had one before, you need to warmup your IP manually. If you are adding new dedicated IPs to existing warm IPs, you can automatically warmup your IP with the UI or the API. When your IP is being warmed up, this is your hourly sending limit:
