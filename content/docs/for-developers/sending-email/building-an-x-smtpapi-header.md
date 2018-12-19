@@ -1,9 +1,9 @@
 ---
 seo:
-  title: Building an X-SMTP Header
+  title: Building an X-SMTPAPI Header
   description: Learn how to build email content, add recipients and schedule your send.
   keywords: SMTP, send email, integrate, building, filters, scheduling, substitution, suppression groups, unique arguments, recipients, X-SMTPAPI
-title: Building an X-SMTP Header
+title: Building an X-SMTPAPI Header
 group: smtp
 weight: 949
 layout: page
