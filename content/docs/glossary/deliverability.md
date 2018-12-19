@@ -37,6 +37,15 @@ SendGrid helps you [achieve strong email deliverability](https://sendgrid.com/so
 
 SendGrid also has a world-class support team that is available 24/7 via chat, phone, and email to address any of your email deliverability needs.
 
+<academy-link img="/img/ProtectYourReputationCourse750.png" courselink="https://rise.articulate.com/share/R1ZJo1kleMSMYGCX9Dkb1i180Eh8NI6p#/">
+
+### Protect Your Email Reputation From The Start
+
+Check out this [Academy Course](https://rise.articulate.com/share/R1ZJo1kleMSMYGCX9Dkb1i180Eh8NI6p#/)to explore best practices you can apply to help mailbox providers know your mail is wanted.
+
+
+</academy-link>
+
 If email drives your business, then paying close attention to your email deliverability rates is an undeniable key to your success. Let SendGrid help you achieve that success. To learn more about how email deliverability affects your business, download our free [Deliverability Guide](http://go.sendgrid.com/DeliverabilityGuide.html?mc=Direct&mcd={{root_url}}/).
 
 
