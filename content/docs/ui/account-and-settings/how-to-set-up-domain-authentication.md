@@ -43,7 +43,7 @@ The CNAME record creates an alias for subdomain.yourdomain.com and points to sen
 
 ## 	Setting up domain authentication
 
- ### 	Before you begin
+### Before you begin
 
 To set up domain authentication, you must submit the DNS records provided by SendGrid to your DNS or hosting provider (for example, GoDaddy, Hover, CloudFlare, etc.). First, figure out who your hosting provider is and if you have access. If you don't have access to your DNS or hosting provider, you should figure out who in your company has this access before you begin setting up domain authentication.
 
