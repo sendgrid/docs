@@ -19,3 +19,12 @@ Spam traps are important because so many large ISPs, spam filter providers and D
 Looking for customized expert advice to improve your email program? Our team of email experts can help you create a plan to ensure you're optimizing your email delivery and engagement, and avoiding future issues like blacklists. Learn more on our [Expert Services](https://sendgrid.com/solutions/expert-services/?utm_source=docs) page.
 
 </call-out>
+
+<academy-link img="/img/SGA_FigureOutWhy750.png
+"courselink=" https://rise.articulate.com/share/FXq7qMSzRx-7otpybg622nb-AROmiADA">
+
+### Figure Out Why Your Emails Are Going To Spam
+
+Explore best practices and actionable tips you can take to help your emails get into the inbox with this [Academy Course](https://rise.articulate.com/share/FXq7qMSzRx-7otpybg622nb-AROmiADA).
+
+</academy-link>
