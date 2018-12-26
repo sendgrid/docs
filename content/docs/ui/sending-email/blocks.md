@@ -35,6 +35,16 @@ When you select the checkboxes next to the recipient names or select all, using 
 
 You can download your Global Unsubscribe list as a CSV by clicking the gear icon at the top of the page and selecting “Download CSV.” The file will download in your browser right away.
 
+<academy-link img="/img/SGA_ManageBounces750.png
+"courselink="https://rise.articulate.com/share/rBJixBkt2kAqwQShqvOcKuevYulLLIZ9">
+
+### Manage Bounces, Blocks, and Deferrals
+
+Enroll in this [Academy Course](https://rise.articulate.com/share/rBJixBkt2kAqwQShqvOcKuevYulLLIZ9)  to learn how to assess your email delivery, identify what causes common errors, and how to fix them.
+
+</academy-link>
+
+
 ## 	Additional Resources
 
 - [Bounces]({{root_url}}/ui/sending-email/bounces/)
