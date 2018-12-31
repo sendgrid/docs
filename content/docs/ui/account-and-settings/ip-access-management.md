@@ -14,7 +14,7 @@ navigation:
 
 ## 	What is IP access management?
 
-[IP Access Management](https://app.sendgrid.com/settings/access) is a security feature that allows you to control who can access your SendGrid account based on their [IP address]({{root_url}}/glossary/ip-address/). After you whitelist an IP address, you can only access the SendGrid UI, API, and SMTP relay if you are connecting from a whitelisted IP address. Any other access attempts will be blocked. This is a powerful security tool that you can use to help prevent malicious activity on your account.
+[IP Access Management](https://app.sendgrid.com/settings/access) is a security feature that allows you to control who can access your SendGrid account based on their [IP address]({{root_url}}/glossary/ip-address/). After you whitelist an IP address, you can only access the SendGrid UI, API, and SMTP relay if you are connecting from a whitelisted IP address. Any access attempts from other IPs will be blocked. This is a powerful security tool that you can use to help prevent malicious activity on your account.
 
 <call-out>
 
