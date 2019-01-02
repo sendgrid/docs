@@ -14,8 +14,7 @@ There are several reasons a provider will give this feedback. Some common reason
 
 SendGrid will retry delivery of a deferred email on behalf of our customers for 72 hours from the time of the first deferral, after which time the email address will be placed on the Block Suppression list. If you have built your own email solution, you will want to build this intelligence into your code in order to avoid having to retry deliveries manually.
 
-<academy-link img="/img/SGA_ManageBounces750.png
-"courselink="https://rise.articulate.com/share/rBJixBkt2kAqwQShqvOcKuevYulLLIZ9">
+<academy-link img="/img/SGA_ManageBounces750.png "courselink="https://rise.articulate.com/share/rBJixBkt2kAqwQShqvOcKuevYulLLIZ9">
 
 ### Manage Bounces, Blocks, and Deferrals
 
