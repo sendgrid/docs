@@ -27,3 +27,14 @@ Throttling is when a receiving server refuses a message, but with a specific exp
 -   Some recipients have marked your mail as spam, but not enough for the server to block you. Instead, they will refuse to receive more until they can learn more about how their users interact with your messages.
 
 If a message is continuously deferred for 72 hours, it may mean that there is another issue such as the account being inactive, a full mailbox, or some other legitimate problem with the recipient. When we are unable to deliver a message after this time period, we convert these deferrals to "Blocks". Blocks are stored for reference and do not behave like a suppression list when sending to addresses that are on the list.
+
+<academy-link img="/img/SGA_ManageBounces750.png
+"courselink="https://rise.articulate.com/share/rBJixBkt2kAqwQShqvOcKuevYulLLIZ9">
+
+### Manage Bounces, Blocks, and Deferrals
+
+Enroll in this [Academy Course](https://rise.articulate.com/share/rBJixBkt2kAqwQShqvOcKuevYulLLIZ9) to learn how to assess your email delivery, identify what causes common errors, and how to fix them.
+
+</academy-link>
+
+
