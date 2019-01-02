@@ -10,7 +10,7 @@ seo:
   override: true
   description: Send your first email using the Marketing Campaigns tool.
 ---
-<iframe src="https://player.vimeo.com/video/221496578" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/305551346" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 If you want to send email programmatically, see the [API reference]({{root_url}}/api-reference/) or the [SMTP Reference]({{root_url}}/for-developers/sending-email/getting-started-smtp/).
 
@@ -21,6 +21,15 @@ Before sending your first campaign, you need to do the following:
 - [Upload Contacts]({{root_url}}/ui/managing-contacts/adding-contacts/)
 - [Add an Unsubscribe Group]({{root_url}}/ui/sending-email/create-and-manage-unsubscribe-groups/)
 - [Segment Your Contact List]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/) (Optional)
+
+
+<academy-link img="/img/SGA_SmartStart750.png" courselink="https://rise.articulate.com/share/uGIBV4dMNFn-HzrIMDW_s2Kh4dxMH0vr#/"">
+
+### Steps To A Smart Start With Marketing Campaigns
+
+Set yourself up for success by enrolling in this [Academy Course](https://rise.articulate.com/share/uGIBV4dMNFn-HzrIMDW_s2Kh4dxMH0vr#/). You’ll learn the key steps and considerations to address before hitting Send. 
+
+</academy-link>
 
 *To send your first campaign:*
 

@@ -44,13 +44,12 @@ Additionally, during this phase of the beta, some Marketing Campaigns features w
 * A/B testing of email content and subject lines
 * Some non-essential editor functionality
 * Link click tracking
-* API compatibility
 
 We’ll be working iteratively to close these feature gaps as quickly as possible.
 
 ## Getting Started
 
-Before you start building automations, you need to complete the following:
+Before you start building your first automation, complete the following:
 
 * Add an Automation [notification]({{root_url}}#notifications) email
 * Create [Unsubscribe Groups]({{root_url}}#create-unsubscribe-groups)
@@ -59,11 +58,12 @@ Before you start building automations, you need to complete the following:
 
 ### Notifications
 
+
+If you would like to have notifications about your account's Automation activity sent to an email other than your parent account address,you can add them in Notifications.
+
 <call-out>
 Notification emails added in Marketing Campaigns won't receive any notifications regarding Automation activity.
 </call-out>
-
-If you would like to have notifications about your account's Automation activity sent to an email other than your parent account address, simply add them in Notifications.
 
 *To add a notification email address:*
 
@@ -96,7 +96,7 @@ For more information, see [Senders]({{root_url}}/ui/sending-email/senders/).
 
 ## Create an Automation
 
-Once you've completed the prerequisites, you can go ahead and create an automation. You'll find you have two options: start with a pre-built Welcome Series and make it your own, or start from scratch by selecting **Custom Automation**.
+Once you've completed the prerequisites, you start building your first automation. You can start with a pre-built Welcome Series and make it your own, or start from scratch by selecting **Custom Automation**.
 
 ### Create a Custom Automation
 
@@ -122,7 +122,7 @@ Contacts will only receive your automation if you add them to the list you selec
 
 <call-out>
 
-During beta, templates from Marketing Campaigns are not available in Automation. However, you can [export]({{root_url}}/#migrating-campaign-html) the template HTML from Marketing Campaigns and import it as a blank template into Automation using the code editor.
+During beta, templates from Marketing Campaigns are not available in Automation. However, you can [export]({{root_url}}/#migrating-campaign-html) the template HTML from Marketing Campaigns and paste it into an Automation **blank template** using the Automation code editor.
 
 </call-out>
 
@@ -146,7 +146,7 @@ During beta, templates from Marketing Campaigns are not available in Automation.
 1. Click **Duplicate**.
 1. Once you create the duplicate, the automation will open to the edit page. From here, you can change any or all of the settings within the automation.
 
-### Create a Welcome Series
+### Use the Pre-Built Welcome Series
 
 The pre-built Welcome Series automation provides a jumping off point to inspire you to create your own tailored welcome series.
 
@@ -164,7 +164,9 @@ If you keep the entry criteria as "All Contacts" it's important to remember that
 
 </call-out>
 
-## Upload contacts
+1. Repeat steps 5-16 from creating a custom automation.
+
+## Upload Contacts
 
 <call-out type="warning">
 
@@ -175,6 +177,8 @@ During the beta, contacts you upload to Automation are distinct from your existi
 First, it's important to note that automations will only trigger to contacts who are added to an entry criteria list *after* the automation is set live. Contacts who you add to a list before the automation is set live will not receive any emails in the series.
 
 ### Upload a CSV
+
+You can add contacts to a list via CSV Upload or by creating a Signup Form to automatically send signups to a list. 
 
 1. Use [this CSV template]({{root_url}}/assets/example.csv) to make sure your CSV is formatted correctly.
 1. Click **Add Contacts** and then select **Upload CSV**.
@@ -343,19 +347,11 @@ Have feedback or questions? We welcome your thoughts at email_automation@sendgri
     <th>Status</th>
   </tr>
   <tr>
-    <td>Ability to view the details of an Automation Contact list</td>
-    <td>In progress</td>
-  </tr>
-  <tr>
-    <td>Ability to search, edit, and delete contacts</td>
-    <td>In progress</td>
+    <td>Ability to create signup forms that can be embedded into a website or shared as a link. Signups are added directly to an Automation contact list.</td>
+    <td>LIVE</td>
   </tr>
   <tr>
     <td>Availability of the public facing Automation Contacts API</td>
-    <td>In progress</td>
-  </tr>
-  <tr>
-    <td>Insert reserved fields into email content using substitution tags</td>
     <td>In progress</td>
   </tr>
 </table>
@@ -368,12 +364,20 @@ Have feedback or questions? We welcome your thoughts at email_automation@sendgri
     <th>Status</th>
   </tr>
   <tr>
-    <td>Availability of a signup tool that can be embedded into a website and add signups directly to an Automation contact list.</td>
-    <td>Planned</td>
+    <td>Ability to test Automation emails for rendering across inboxes and browsers, link validation and spam testing.</td>
+    <td>In progress</td>
+  </tr>
+   <tr>
+    <td>Ability to view the details of an Automation Contact list</td>
+    <td>In progress</td>
   </tr>
   <tr>
-    <td>Ability to save an email design as a template.</td>
-    <td>Planned</td>
+    <td>Ability to search, edit, and delete contacts</td>
+    <td>In progress</td>
+  </tr>
+  <tr>
+    <td>Insert reserved fields into email content using substitution tags</td>
+    <td>In progress</td>
   </tr>
   <tr>
     <td>Ability to import custom fields and use them for email content and subject line personalization.</td>
@@ -394,6 +398,10 @@ Have feedback or questions? We welcome your thoughts at email_automation@sendgri
   </tr>
   <tr>
     <td>Ability to track clicks to links within emails</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Ability to save an email design as a template.</td>
     <td></td>
   </tr>
   <tr>
