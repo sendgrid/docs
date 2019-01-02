@@ -35,7 +35,7 @@ All of your groups will be visible on the [Suppression Management](https://app.s
 
 <academy-link img="/img/email-scream750.png" courselink="https://rise.articulate.com/share/Kn6WQo6h1CNmMo9L5RhTnHoPls3sMcxr#/"">
 
-### Offer Unsubscribe Options (And Avoid Spam Reports)
+### Offer Unsubscribe Options (and avoid the Spam folder)
 
 Making it easy for contacts to opt out of content you're sending isn't just the right to do, it's the smart thing to do. Enroll in this [Academy Course](https://rise.articulate.com/share/Kn6WQo6h1CNmMo9L5RhTnHoPls3sMcxr#/) to learn more.
 
