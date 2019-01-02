@@ -239,7 +239,7 @@ aside a.active {
 }
 
 .academy-callout__copy {
-  padding: $scale-0;
+  padding: $scaleup-3 $scale-0 $scaleup-3 $scaleup-4;
   flex-grow: 1;
 
   @media (max-width: 475px) {
