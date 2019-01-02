@@ -45,3 +45,14 @@ If email drives your business, then paying close attention to your email deliver
 Looking for customized expert advice to improve your email program? Our team of email experts can help you create a plan to ensure you're optimizing your email delivery and engagement, and avoiding future issues like blacklists. Learn more on our [Expert Services](https://sendgrid.com/solutions/expert-services/?utm_source=docs) page.
 
 </call-out>
+
+<academy-link img="/img/SGA_DeliveryRate750.png" courselink="https://rise.articulate.com/share/LWqt5JOhZup_k0NfnZrD8MGds3zgemAp#/">
+
+### Watch Your Delivery Rate Before It’s Too Late 
+
+Your delivery rate can be an early indicator of problems with your email program. Enroll in this [Academy Course](https://rise.articulate.com/share/LWqt5JOhZup_k0NfnZrD8MGds3zgemAp#/) to learn how to address a low delivery rate, and how tracking engagement can give you more control.
+
+</academy-link>
+
+
+
