@@ -25,8 +25,11 @@ $aside-width: 300px;
 
 .doc-main {
   flex: 1;
-  overflow: hidden;
   padding: 0 $scaleup-8 $scaleup-6;
+
+  @media (min-width: 991px) {
+      overflow: hidden;
+  }
 
   @media (max-width: $width-medium) {
     padding: 0 0 $scaleup-6;
@@ -231,13 +234,24 @@ aside a.active {
   }
 }
 
+.academy-callout {
+  display: flex;
+}
+
 .academy-callout__copy {
   padding: $scale-0;
+  flex-grow: 1;
+
+  @media (max-width: 475px) {
+    p {
+      display: none;
+    }
+  }
 }
 
 .academy-callout__img {
   background-position: center center;
   background-size: cover;
   margin-left: $scaleup-1;
-  width: 175px;
+  flex: 0 0 175px;
 }
