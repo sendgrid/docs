@@ -156,6 +156,7 @@ The pre-built Welcome Series automation provides a jumping off point to inspire 
 1. Under Welcome, click **Select**.
 1. Give the series a name (this is for your reference and will not be visible to your contacts).
 1. Select the first entry criteria. The default entry criteria is “The first time a contact is added to All Contacts”.
+1. Repeat steps 5-16 from creating a custom automation.
 
 <call-out type="warning">
 
@@ -175,9 +176,9 @@ During the beta, contacts you upload to Automation are distinct from your existi
 
 First, it's important to note that automations will only trigger to contacts who are added to an entry criteria list *after* the automation is set live. Contacts who you add to a list before the automation is set live will not receive any emails in the series.
 
-You can add contacts to a list via CSV Upload or by creating a Signup Form to automatically send signups to a list. 
+### Upload a CSV
 
-### Add New Contacts
+You can add contacts to a list via CSV Upload or by creating a Signup Form to automatically send signups to a list. 
 
 1. Use [this CSV template]({{root_url}}/assets/example.csv) to make sure your CSV is formatted correctly.
 1. Click **Add Contacts** and then select **Upload CSV**.
@@ -191,6 +192,57 @@ At this phase of the beta, custom fields are not supported. You can import [rese
 
 4. Upload your file by dragging it into or clicking the CSV upload area.
    Once the CSV has processed, you will receive a [notification]({{root_url}}/ui/sending-email/getting-started-with-automation/#notifications) email.
+
+### Create a signup form
+
+Use Signup Forms with the SendGrid Automation beta to capture new contacts and add them directly to an Automation list. If the list you add them to is acting as the entry criteria for a live automation, the new contact will automatically receive any emails you’ve created as part of that automation. 
+
+You can enable contacts to access your signup form either by sending them a link hosted by SendGrid or by embedding it directly into your website.
+
+#### Create a new signup form
+
+<call-out>
+
+The number of signup forms you can create is limited to 15. 
+
+</call-out>
+*To create a new signup form:*
+
+1. Navigate to Automations and select **Signup Forms**. 
+1. Click **Create New Form**.
+1. On the Settings tab, add a Form Name and then select the contact list you want to add new signups to. 
+1. Next, add a confirmation message. This field contains the text that contacts will see once they’ve clicked submit on the form.
+1. Navigate to the Build tab and add a header to the form. 
+1. Add the intro copy to explain what the contact is signing up to receive. 
+1. Select the checkboxes to add the fields you want on the form.
+
+#### Manage signup forms
+
+Using the action menu on the Signup Forms page you can edit, duplicate, or delete existing signup forms. 
+
+![]({{root_url}}/img/action-menu-signup-form.png "Action menu for signup forms")
+
+<call-out>
+
+Because of the iframe technology used to create the signup form, anytime you edit a form and click **Save & Apply** the form will be dynamically updated on whatever page or pages you have the form embedded in. 
+
+</call-out>
+
+#### Share Code to make your form accessible
+
+To make your form accessible to new contacts, you can either send them a link hosted by SendGrid or you can embed code on your website that displays your form as an iframe. 
+
+*To share the code for your signup form:*
+
+1. Navigate to the signup form you want to share or embed.
+1. Click the action menu and select **Share Code**.
+1. On the *Integrate Form* modal, copy either the Landing Page or Direct Embed link. 
+
+   * The Landing Page link can be pasted anywhere, including in an email or on a social media site.
+   * The Direct Embed code can be pasted to the HTML of your website wherever you’d like the form to display.
+
+You can also find the options to share the signup form in the form editor by clicking **Share Code** in the top-right corner of the editor. 
+
 
 ## Managing Contacts
 
