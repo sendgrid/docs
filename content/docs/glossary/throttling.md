@@ -33,7 +33,7 @@ If a message is continuously deferred for 72 hours, it may mean that there is an
 
 ### Manage Bounces, Blocks, and Deferrals
 
-Enroll in this [Academy Course](https://rise.articulate.com/share/rBJixBkt2kAqwQShqvOcKuevYulLLIZ9)  to learn how to assess your email delivery, identify what causes common errors, and how to fix them.
+Enroll in this [Academy Course](https://rise.articulate.com/share/rBJixBkt2kAqwQShqvOcKuevYulLLIZ9) to learn how to assess your email delivery, identify what causes common errors, and how to fix them.
 
 </academy-link>
 
