@@ -224,7 +224,7 @@ Using the action menu on the Signup Forms page you can edit, duplicate, or delet
 
 <call-out>
 
-Because of the iframe technology used to create the signup form, anytime you edit a form and click **Save & Apply** the form will be dynamically updated on whatever page or pages you have the form embedded in. 
+Because of the iframe technology used to create the signup form, the form dynamically updates on the page or pages where you have the form embedded anytime you edit a form and click **Save & Apply**.
 
 </call-out>
 
