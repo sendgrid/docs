@@ -47,8 +47,6 @@ class NavMain extends Component {
     window._svc.traits = {
       userID: this.state.user.userid,
     };
-
-    console.log(window._svc);
   }
 
   toggleMenu() {
