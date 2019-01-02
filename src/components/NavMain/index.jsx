@@ -16,7 +16,7 @@ class NavMain extends Component {
     this.closeMenu = this.closeMenu.bind(this);
   }
 
-  componentWillMount() {
+  componentDidMount() {
     const token = Cookies.get('mako_auth_token');
 
     if (!token) return;
@@ -27,13 +27,28 @@ class NavMain extends Component {
         'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
         Authorization: `token ${token}`,
       },
-    }).then(response => {
+    }).then((response) => {
       if (!response.ok) {
         return false;
       }
 
-      return response.json().then(user => this.setState({ user }));
+      return response.json();
+    }).then((user) => {
+      this.setState({ user });
+      this.sendSurvicateAtts();
     });
+  }
+
+  sendSurvicateAtts() {
+    if (typeof window._svc === 'undefined') {
+      return;
+    }
+
+    window._svc.traits = {
+      userID: this.state.user.userid,
+    };
+
+    console.log(window._svc);
   }
 
   toggleMenu() {
