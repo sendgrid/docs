@@ -59,7 +59,7 @@ Before you start building your first automation, complete the following:
 ### Notifications
 
 
-If you would like to have notifications about your account's Automation activity sent to an email other than your parent account address, simply add them in Notifications.
+If you would like to have notifications about your account's Automation activity sent to an email other than your parent account address,you can add them in Notifications.
 
 <call-out>
 Notification emails added in Marketing Campaigns won't receive any notifications regarding Automation activity.
@@ -146,7 +146,7 @@ During beta, templates from Marketing Campaigns are not available in Automation.
 1. Click **Duplicate**.
 1. Once you create the duplicate, the automation will open to the edit page. From here, you can change any or all of the settings within the automation.
 
-### Start With the Pre-Built Welcome Series
+### Use the Pre-Built Welcome Series
 
 The pre-built Welcome Series automation provides a jumping off point to inspire you to create your own tailored welcome series.
 
