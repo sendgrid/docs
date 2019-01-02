@@ -27,6 +27,15 @@ Looking for customized expert advice to improve your email program? Our team of 
 
 </call-out>
 
+<academy-link img="/img/SGA_ManageBounces750.png "courselink="https://rise.articulate.com/share/rBJixBkt2kAqwQShqvOcKuevYulLLIZ9">
+
+### Manage Bounces, Blocks, and Deferrals
+
+Enroll in this [Academy Course](https://rise.articulate.com/share/rBJixBkt2kAqwQShqvOcKuevYulLLIZ9) to learn how to assess your email delivery, identify what causes common errors, and how to fix them.
+
+</academy-link>
+
+
 ## Additional Resources:
 
 * [Web API & Blocks]({{root_url}}/API_Reference/Web_API/blocks.html)

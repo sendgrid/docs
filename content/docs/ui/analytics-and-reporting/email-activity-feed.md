@@ -34,6 +34,15 @@ Reseller accounts and extra high volume accounts do not have access to the new E
 
 </call-out>
 
+<academy-link img="/img/SGA_WhereMessages750.png" courselink="https://rise.articulate.com/share/15OqzUEoA3QId64fQjKvivIats37DagZ">
+
+### Where Did Your Messages Go?
+
+We know that email messages can feel like they get sent out and disappear into thin air. Check out this [Academy Course](https://rise.articulate.com/share/15OqzUEoA3QId64fQjKvivIats37DagZ) to learn how to enhance your email strategy.
+
+</academy-link>
+
+
 ## 	Types of email activity data
 
 The Email Activity Feed allows you to view specific information about messages sent from your account.
