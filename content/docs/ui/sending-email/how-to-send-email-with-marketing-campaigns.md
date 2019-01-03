@@ -23,7 +23,7 @@ Before sending your first campaign, you need to do the following:
 - [Segment Your Contact List]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/) (Optional)
 
 
-<academy-link img="/img/SGA_SmartStart750.png" courselink="https://rise.articulate.com/share/uGIBV4dMNFn-HzrIMDW_s2Kh4dxMH0vr#/"">
+<academy-link img="/img/SGA_SmartStart750.png" courselink="https://rise.articulate.com/share/uGIBV4dMNFn-HzrIMDW_s2Kh4dxMH0vr#/">
 
 ### Steps To A Smart Start With Marketing Campaigns
 
