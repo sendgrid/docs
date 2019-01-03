@@ -25,7 +25,7 @@ Before sending your first campaign, you need to do the following:
 
 <academy-link img="/img/SGA_SmartStart750.png" courselink="https://rise.articulate.com/share/uGIBV4dMNFn-HzrIMDW_s2Kh4dxMH0vr#/">
 
-### Steps To A Smart Start With Marketing Campaigns
+#### Steps To A Smart Start With Marketing Campaigns
 
 Set yourself up for success by enrolling in this [Academy Course](https://rise.articulate.com/share/uGIBV4dMNFn-HzrIMDW_s2Kh4dxMH0vr#/). You’ll learn the key steps and considerations to address before hitting Send. 
 
