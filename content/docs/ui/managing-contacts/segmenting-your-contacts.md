@@ -19,7 +19,7 @@ Segments are dynamically updated over time as you add contacts who meet the crit
 
 <academy-link img="/img/SGA_GetUpClose750.png" courselink="https://rise.articulate.com/share/vHJb2Ompdk7iWlBOHONDf0FXVomrzTRL">
 
-### Get Up Close And Personal With Your Contacts
+#### Get Up Close And Personal With Your Contacts
 
 Enroll in this [Academy Course](https://rise.articulate.com/share/vHJb2Ompdk7iWlBOHONDf0FXVomrzTRL) learn how to think through leveraging contact data in Marketing Campaigns so you can successfully personalize and target your campaigns! 
 
