@@ -25,7 +25,7 @@ When you place your IP in warmup mode, we divide your email requests between the
 
 <academy-link img="/img/SGA_WarmingUp750.png" courselink="https://rise.articulate.com/share/tDOA99ns4CTVTYLuXw00wn5KUTqsLaeO#/">
 
-### Warm Up Your Sending To Avoid Delivery Issues
+#### Warm Up Your Sending To Avoid Delivery Issues
 
 Check out this [Academy Course](https://rise.articulate.com/share/tDOA99ns4CTVTYLuXw00wn5KUTqsLaeO#/") to access best practices on how to properly warm up your sending, and how to make a good first impression to mailbox providers. 
 
