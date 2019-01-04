@@ -16,7 +16,7 @@ SendGrid will retry delivery of a deferred email on behalf of our customers for 
 
 <academy-link img="/img/SGA_ManageBounces750.png" courselink="https://rise.articulate.com/share/rBJixBkt2kAqwQShqvOcKuevYulLLIZ9">
 
-### Manage Bounces, Blocks, and Deferrals
+#### Manage Bounces, Blocks, and Deferrals
 
 Enroll in this [Academy Course](https://rise.articulate.com/share/rBJixBkt2kAqwQShqvOcKuevYulLLIZ9) to learn how to assess your email delivery, identify what causes common errors, and how to fix them.
 
