@@ -113,12 +113,12 @@ Contacts will only receive your automation if you add them to the list you selec
 
 </call-out>
 
-1. Select the exit criteria for this series.
-1. Select an [Unsubscribe Group]({{root_url}}/ui/sending-email/create-and-manage-unsubscribe-groups/#create-an-unsubscribe-group).
-1. Add a [category]({{root_url}}/glossary/categories/) to the automation (optional).
-1. Select the send time for the first email. You can choose to send the first email instantly, or you can set a delay of days or hours from the time meet the entry criteria.
-1. To design your email, click **Edit Email Content**.
-1. From the Select Template modal that opens, choose Blank Template or one of the SendGrid templates provided.
+5. Select the exit criteria for this series.
+6. Select an [Unsubscribe Group]({{root_url}}/ui/sending-email/create-and-manage-unsubscribe-groups/#create-an-unsubscribe-group).
+7. Add a [category]({{root_url}}/glossary/categories/) to the automation (optional).
+8. Select the send time for the first email. You can choose to send the first email instantly, or you can set a delay of days or hours from the time meet the entry criteria.
+9. To design your email, click **Edit Email Content**.
+10. From the Select Template modal that opens, choose Blank Template or one of the SendGrid templates provided.
 
 <call-out>
 
@@ -126,15 +126,13 @@ During beta, templates from Marketing Campaigns are not available in Automation.
 
 </call-out>
 
+11. Next, select either the [Design]({{root_url}}/ui/sending-email/editor/#the-design-editor) or [Code]({{root_url}}/ui/sending-email/editor/#the-code-editor) editor to design or edit your email. Save and click the arrow in the top left corner of the page to return to the Edit Automation page.
 
-7. Next, select either the [Design]({{root_url}}/ui/sending-email/editor/#the-design-editor) or [Code]({{root_url}}/ui/sending-email/editor/#the-code-editor) editor to design or edit your email. Save and click the arrow in the top left corner of the page to return to the Edit Automation page.
-
-8. If you did not do so within the editor, you can add a subject line and select a sender from the Edit Automation page.
-9. To add more emails to this automated series, click **Add an Email**.
-10. Choose how long to wait before sending the next email. This time will be relative to the preceding email.
-11. Repeat steps 5-9 for each additional email you add to this custom automation.
-12. Once you have created all of your emails for the automation, click **Set Live**.
-
+12. If you did not do so within the editor, you can add a subject line and select a sender from the Edit Automation page.
+13. To add more emails to this automated series, click **Add an Email**.
+14. Choose how long to wait before sending the next email. This time will be relative to the preceding email.
+15. Repeat steps 5-9 for each additional email you add to this custom automation.
+16. Once you have created all of your emails for the automation, click **Set Live**.
 
 ### Duplicate an Automation
 
