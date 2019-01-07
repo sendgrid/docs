@@ -43,7 +43,7 @@ Basic authentication
 
 SendGrid does not recommend using basic authentication. However, if you are using our legacy v2 API, you have to use basic authentication to connect.
 
-Using basic authentication is not as secure as using an API key because it uses your username and password credentials, that has full access to your account. So, if your credentials get compromised, (like if you accidentally commit them to GitHub), it is more difficult to regain the security of your account. 
+Using basic authentication is not as secure as using an API key because it uses your username and password credentials, allowing full access to your account. So, if your credentials get compromised, (like if you accidentally commit them to GitHub), it is more difficult to regain the security of your account. 
 
 {% warning %}  
 It is not possible to enable Two-factor authentication when using basic authentication, so if you do need to use basic authentication we highly recommend that you set up IP Access Management for improved security.
