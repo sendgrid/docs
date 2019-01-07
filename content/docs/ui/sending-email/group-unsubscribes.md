@@ -13,9 +13,9 @@ navigation:
 
 A group unsubscribe happens when a recipient indicates that they would like to opt out from a specific type of email that you send via the [Unsubscribe Groups link](#group-unsubscribe-substitution-tag) from within your email. The list provided here can be filtered by email address or date.
 
-<academy-link img="/img/email-scream750.png" courselink="https://rise.articulate.com/share/Kn6WQo6h1CNmMo9L5RhTnHoPls3sMcxr#/"">
+<academy-link img="/img/email-scream750.png" courselink="https://rise.articulate.com/share/Kn6WQo6h1CNmMo9L5RhTnHoPls3sMcxr#/">
 
-### Offer Unsubscribe Options (and avoid the Spam folder)
+#### Offer Unsubscribe Options (and avoid the Spam folder)
 
 Making it easy for contacts to opt out of content you're sending isn't just the right to do, it's the smart thing to do. Enroll in this [Academy Course](https://rise.articulate.com/share/Kn6WQo6h1CNmMo9L5RhTnHoPls3sMcxr#/) to learn more.
 
@@ -43,7 +43,11 @@ When you add the `<%asm_group_unsubscribe_url%>` tag to your email, we will repl
 
 Alternatively, you can use the `<%asm_group_unsubscribe_raw_url%>` tag which will be replaced with only the group unsubscribe URL without the hyperlinked text "Unsubscribe From This List".
 
-For more substitution tags, please see our [transactional templates]({{root_url}}/ui/sending-email/create-and-edit-transactional-templates/#adding-unsubscribe-links-to-a-template).
+<call-out>
+
+When using our ASM Global or Group Unsubscribe tags, you must pass an unsubscribe group in your API or X-SMTPAPI request for the unsubscribe link to populate.
+
+</call-out>
 
 ## 	Using the API
 

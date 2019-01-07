@@ -13,9 +13,9 @@ navigation:
 
 Global unsubscribes happen when a recipient indicates that they would like to opt out from any email that you send by clicking on the [Unsubscribe From All Emails link](#global-unsubscribe-substitution-tags) within your emails. The list provided here can be filtered by email address or date.
 
-<academy-link img="/img/email-scream750.png" courselink="(https://rise.articulate.com/share/Kn6WQo6h1CNmMo9L5RhTnHoPls3sMcxr#/"">
+<academy-link img="/img/email-scream750.png" courselink="(https://rise.articulate.com/share/Kn6WQo6h1CNmMo9L5RhTnHoPls3sMcxr#/">
 
-### Offer Unsubscribe Options (And Avoid Spam Reports)
+#### Offer Unsubscribe Options (And Avoid Spam Reports)
 
 Making it easy for contacts to opt out of content you're sending isn't just the right to do, it's the smart thing to do. Enroll in this [Academy Course](https://rise.articulate.com/share/Kn6WQo6h1CNmMo9L5RhTnHoPls3sMcxr#/) to learn more.
 
