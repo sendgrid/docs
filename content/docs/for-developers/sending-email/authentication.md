@@ -58,6 +58,7 @@ You have to use basic authentication if you are using v2 of the API.
 
 </call-out>
  
+ 
 ## Two-factor authentication
 
 SendGrid recommends enabling two-factor authentication (2FA) for all users. For more information about setting up 2FA, see [Two-factor authentication](https://sendgrid.com/docs/ui/account-and-settings/two-factor-authentication/).
