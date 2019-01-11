@@ -25,7 +25,6 @@ To use the API Key, have a header with a key Authorization and a value of `Beare
 
 SendGrid supports API keys with the SMTP API, the /v3/ API (except the methods to create API keys), and with the `/api/mail.send.json` and `/api/mail.send.xml`.
 
-
 </call-out>
 
 Example header:
@@ -48,7 +47,6 @@ Using basic authentication is not as secure as using an API key because it uses 
 <call-out type="warning">
 
 It is not possible to enable Two-factor authentication when using basic authentication, so if you do need to use basic authentication we highly recommend that you set up IP Access Management for improved security.
-
 
 </call-out>
 
