@@ -67,4 +67,3 @@ SendGrid recommends enabling two-factor authentication (2FA) for all users. For 
 It is not possible to use basic authentication for users, subusers, or teammates that enable 2FA.
 
 </call-out>
-
