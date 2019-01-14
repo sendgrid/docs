@@ -3,20 +3,20 @@ import config from '../../data/SiteConfig';
 
 const dataLayer = window.dataLayer || [];
 
-function handleClick() {
-  dataLayer.push({
-    event: 'Event',
-    eventCategory: 'Academy Callout',
-    eventAction: 'Click',
-    eventLabel: 'CTA Click',
-    eventValue: 'test',
-  });
-}
-
 export default function AcademyLink(props) {
   // check for empty AcademyLink
   if (!props.children) {
     return null;
+  }
+
+  function handleClick() {
+    dataLayer.push({
+      event: 'customEvent',
+      eventCategory: 'Academy Callout',
+      eventAction: 'Click',
+      eventLabel: 'Go to Course',
+      eventValue: `${props.courselink}`,
+    });
   }
 
   return (
