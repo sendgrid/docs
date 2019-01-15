@@ -10,7 +10,7 @@ navigation:
   show: true
 ---
 
-SendGrid supports both API key and basic authentication, depending on the functionality you are using. On top of  API key authentication, SendGrid offers two-factor authentication (2FA) to improve security.
+SendGrid supports both API key and basic authentication, depending on the functionality you are using. On top of API key authentication, SendGrid offers two-factor authentication (2FA) to improve security.
 
 {% anchor h2 %}
 API key (recommended)
