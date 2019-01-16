@@ -85,6 +85,12 @@ Message size limit:  The total message size should not exceed 20MB. This include
 1. Enter the date and time you want the campaign to be sent.
 1. Click **Schedule Campaign**.
 
+<call-out type="warning">
+
+Please note: Any contacts that are added to a list or segment after a campaign is scheduled but prior to send **will receive** the campaign. Contacts for a campaign are retrieved at the time of send.
+
+</call-out>
+
 <call-out>
 
 If possible, schedule mail for off-peak times (for example, 10:53). This can avoid peak times at the top of the hour or half hour.
