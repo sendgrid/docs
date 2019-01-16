@@ -164,6 +164,11 @@ If you keep the entry criteria as "All Contacts" it's important to remember that
 
 1. Repeat steps 5-16 from creating a custom automation.
 
+## Email Testing
+
+Email Testing adds spam testing, email rendering, and link validation directly in the Automation experience so you can see what your emails will look like across a variety of platforms and devices.
+
+
 ## Upload Contacts
 
 <call-out type="warning">
@@ -289,7 +294,7 @@ When you re-enable the automation, contacts who previously entered the series wi
 
 *To migrate HTML from a Marketing Campaigns template or email:*
 
-1. Navigate to [Marketing Campaigns](https://sendgrid.com/marketing_campaigns/ui/campaigns) and locate the campaign you wish to migrate.
+1. Navigate to [Marketing Campaigns](https://sendgrid.com/marketing_campaigns/ui/campaigns) and locate the campaign you want to migrate.
 1. Hover over the action menu until the icons appear.
 1. Select the **Export HTML** icon.
    The campaign HTML downloads to the folder specified on your computer
