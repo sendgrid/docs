@@ -7,9 +7,7 @@ navigation:
 ---
 
 The Enforced TLS settings specify whether or not the recipient is required to 
-support TLS or have a valid certificate. See the 
-[SMTP Ports User Guide]({{root_url}}/User_Guide/Setting_Up_Your_Server/smtp_ports.html) for more
-information on opportunistic TLS.
+support TLS or have a valid certificate.
 
 {% info %}
 If either setting is enabled and the recipient does not support TLS 1.1 or higher or have a 
