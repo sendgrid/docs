@@ -9,18 +9,22 @@ weight: 99
 navigation:
   show: true
 ---
-{% anchor h3 %}
-Authorization Header
+
+SendGrid supports both API key and basic authentication, depending on the functionality you are using. On top of API key authentication, SendGrid offers two-factor authentication (2FA) to improve security.
+
+{% anchor h2 %}
+API key (recommended)
 {% endanchor %}
 
-To authenticate, add an <code>Authorization</code> header to your API
-request containing an [API Key]({{root_url}}/API_Reference/Web_API_v3/API_Keys/index.html).
+Authenticate to the SendGrid API by creating an API Key in the Settings section of the SendGrid UI.
 
-{% anchor h3 %}
-API Keys
-{% endanchor %}
+SendGrid recommends API Keys because they are a secure way to talk to the SendGrid API that is separate from your username and password. If your API key gets compromised in any way, it is easy to delete and create a new one and update your environment variables with the new key. An API key permissions can be set to provide access to different functions of your account, without providing full access to your account as a whole.
 
-SendGrid's Web API v3 supports the use of API Keys. API Keys allow you to use another method of authentication separate from your account username and password. API Keys add an additional layer of security for your account and can be assigned [specific permissions]({{root_url}}/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html) to limit which areas of your account they may be used to access. API Keys can be generated in your account - visit <a href="https://app.sendgrid.com/settings/api_keys">https://app.sendgrid.com/settings/api_keys</a>. To use keys, you must set a plain text header named "Authorization" with the contents of the header being "Bearer XXX" where XXX is your API Secret Key.
+To use the API Key, have a header with a key Authorization and a value of `Bearer <Your-API-Key-Here>`, where you replace `<Your-API-Key-Here>` with the API Key that you created in the UI.
+
+{% info %}  
+SendGrid supports API keys with the SMTP API, the /v3/ API (except the methods to create API keys), and with the `/api/mail.send.json` and `/api/mail.send.xml`.
+{% endinfo %}
 
 Example header:
 
@@ -33,30 +37,30 @@ Authorization: Bearer Your.API.Key-HERE
 curl -X "GET" "https://api.sendgrid.com/v3/templates" -H "Authorization: Bearer Your.API.Key-HERE" -H "Content-Type: application/json"
 {% endcodeblock %}
 
-{% anchor h3 %}
-On-Behalf of Subuser
+{% anchor h2 %}
+Basic authentication
 {% endanchor %}
 
-The On-Behalf-Of header allows you to make calls for a particular subuser through the parent account; this can be useful for automating bulk updates or administering a subuser without changing authentication in your code. In the header you are passing, you will simply need to add: `On-Behalf-Of: subuser_username`
+SendGrid does not recommend using basic authentication. However, if you are using our legacy v2 API, you have to use basic authentication to connect.
 
-This will generate the api call as if it was the subuser account itself making the call. Just make sure you are using the correct subuser username.
+Using basic authentication is not as secure as using an API key because it uses your username and password credentials, allowing full access to your account. So, if your credentials get compromised, (like if you accidentally commit them to GitHub), it is more difficult to regain the security of your account. 
 
-When authenticating using the On-Behalf-Of header, you will need to use the API key credentials of the parent account.
+{% warning %}  
+It is not possible to enable Two-factor authentication when using basic authentication, so if you do need to use basic authentication we highly recommend that you set up IP Access Management for improved security.
+{% endwarning %} 
+
+To use basic authentication, have a header with a key Authorization, and a value of `Basic <encoded-user-name><encoded-password>`, where you replace `<encoded-user-name><encoded-password>` with your URL encoded username and password.
  
-{% anchor h3 %}
+{% info %}  
+You have to use basic authentication if you are using v2 of the API.
+{% endinfo %}
+ 
+{% anchor h2 %}
 Using API Key:
 {% endanchor %}
 
+SendGrid recommends enabling two-factor authentication (2FA) for all users. For more information about setting up 2FA, see [Two-factor authentication](https://sendgrid.com/docs/ui/account-and-settings/two-factor-authentication/).
 
-{% codeblock lang:bash %}
-curl -X GET \
-   'https://api.sendgrid.com/v3/stats?start_date=2016-01-01&end_date=2017-01-01&aggregated_by=month' \
-
-   -H 'authorization: Bearer API Key' \
-
-   -H 'On-Behalf-Of: subuser_username' \
-{% endcodeblock %}
-
- {% warning %}  
- Please note: The On-Behalf-Of header will not work with the `mail.send` API.
- {% endwarning %}  
+{% warning %}  
+It is not possible to use basic authentication for users, subusers, or teammates that enable 2FA.
+{% endwarning %} 
