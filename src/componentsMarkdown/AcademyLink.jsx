@@ -1,19 +1,42 @@
 import React from 'react';
 import config from '../../data/SiteConfig';
 
-export default function AcademyLink(props) {
-  // check for empty AcademyLink
-  if (!props.children) {
-    return null;
+class AcademyLink extends React.Component {
+  componentDidMount() {
+    this.dataLayer = window.dataLayer || [];
   }
 
-  return (
-    <div className="academy-callout">
-      <div className="academy-callout__copy">
-        {props.children.map(el => el)}
-        <a href={props.courselink}>GO TO COURSE →</a>
+  handleClick = () => {
+    this.dataLayer.push({
+      event: 'customEvent',
+      eventCategory: 'Academy Callout',
+      eventAction: 'Click',
+      eventLabel: 'Go to Course',
+      eventValue: `${this.props.courselink}`,
+    });
+  }
+
+  render() {
+    // check for empty AcademyLink
+    if (!this.props.children) {
+      return null;
+    }
+
+    return (
+      <div className="academy-callout">
+        <div className="academy-callout__copy">
+          {this.props.children.map(el => el)}
+          <a
+            href={this.props.courselink}
+            onClick={this.handleClick}
+          >
+            GO TO COURSE →
+          </a>
+        </div>
+        <div className="academy-callout__img" style={{ backgroundImage: `url(${config.envPrefix + this.props.img})` }} />
       </div>
-      <div className="academy-callout__img" style={{ backgroundImage: `url(${config.envPrefix + props.img})` }} />
-    </div>
-  );
+    );
+  }
 }
+
+export default AcademyLink;
