@@ -64,7 +64,7 @@ A subdomain is a prefix appended to your domain and used for tracking and report
 
 To set up reverse DNS, you must submit the DNS records provided by SendGrid to your DNS or hosting provider (for example, GoDaddy, Hover, CloudFlare, etc.). First, figure out who your hosting provider is and if you have access. If you don't have access to your DNS or hosting provider, you should figure out who in your company has this access before you begin setting up reverse DNS.
 
-*To set up and verify reverse DNS:*
+
 
 1. In the SendGrid UI, select [Settings > Sender Authentication](https://app.sendgrid.com/settings/sender_auth).
 2. In the reverse DNS section, click **Get Started**.
