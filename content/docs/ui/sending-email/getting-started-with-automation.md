@@ -164,7 +164,7 @@ If you keep the entry criteria as "All Contacts" it's important to remember that
 
 1. Repeat steps 5-16 from creating a custom automation.
 
-## Upload Contacts
+## Manage Contacts
 
 <call-out type="warning">
 
@@ -241,8 +241,9 @@ To make your form accessible to new contacts, you can either send them a link ho
 
 You can also find the options to share the signup form in the form editor by clicking **Share Code** in the top-right corner of the editor. 
 
+### Contact Management APIs
 
-## Managing Contacts
+You can integrate with the Contact Management APIs to create and update lists, add contacts, manage reserved field data, and pull data about your contacts and lists. Learn more through the documentation for [Automation Contact APIs](https://sendgrid-automation.api-docs.io/v3/getting-started).
 
 ### Edit or Remove Contacts
 
@@ -337,7 +338,7 @@ At any time, the features and functionality below, as well as the timing associa
 
 Have feedback or questions? We welcome your thoughts at email_automation@sendgrid.com
 
-### Near-term (Q4 2018)
+### Near-term (Q1 2019)
 
 <table>
   <tr>
@@ -349,32 +350,36 @@ Have feedback or questions? We welcome your thoughts at email_automation@sendgri
     <td>LIVE</td>
   </tr>
   <tr>
-    <td>Availability of the public facing Automation Contacts API</td>
+    <td>Availability of the public facing [Automation Contact APIs](https://sendgrid-automation.api-docs.io/v3/getting-started).</td>
+    <td>LIVE</td>
+  </tr>
+  <tr>
+    <td>Ability to search, edit, delete, and export contacts.</td>
+    <td>In progress</td>
+  </tr>
+  <tr>
+    <td>Exit criteria of no longer meeting entry criteria.</td>
+    <td>Planned</td>
+  </tr>
+  <tr>
+    <td>Insert reserved fields into email content using substitution tags.</td>
+    <td>In progress</td>
+  </tr>
+  <tr>
+    <td>Editor improvements including color picker and columns.</td>
     <td>In progress</td>
   </tr>
 </table>
 
-### Mid-term (Q1 2019)
+### Mid-term (Q2 2019)
 
 <table>
   <tr>
     <th>Deliverable</th>
     <th>Status</th>
   </tr>
-  <tr>
-    <td>Ability to test Automation emails for rendering across inboxes and browsers, link validation and spam testing.</td>
-    <td>In progress</td>
-  </tr>
    <tr>
     <td>Ability to view the details of an Automation Contact list</td>
-    <td>In progress</td>
-  </tr>
-  <tr>
-    <td>Ability to search, edit, and delete contacts</td>
-    <td>In progress</td>
-  </tr>
-  <tr>
-    <td>Insert reserved fields into email content using substitution tags</td>
     <td>In progress</td>
   </tr>
   <tr>
@@ -382,37 +387,38 @@ Have feedback or questions? We welcome your thoughts at email_automation@sendgri
     <td>Planned</td>
   </tr>
   <tr>
-    <td>Exit criteria of no longer meeting entry criteria.</td>
+    <td>Ability to save an email design as a template.</td>
+    <td>Planned</td>
+  </tr>
+  <tr>
+    <td>Ability to test Automation emails for rendering across inboxes and browsers, link validation and spam testing.</td>
     <td>Planned</td>
   </tr>
 </table>
 
-### Long-term (Beyond Q1 2019)
+### Long-term (Beyond Q2 2019)
 
 <table>
   <tr>
     <th>Deliverable</th>
     <th>Status</th>
   </tr>
-  <tr>
-    <td>Ability to track clicks to links within emails</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Ability to save an email design as a template.</td>
-    <td></td>
-  </tr>
+  
   <tr>
     <td>Ability to trigger an automation when a contact joins a segment</td>
-    <td></td>
+    <td>Planned</td>
   </tr>
   <tr>
     <td>Ability to trigger an automation based on a calendar date</td>
-    <td></td>
+    <td>Planned</td>
   </tr>
   <tr>
     <td>Ability to schedule emails within an automation according to scheduled calendar dates</td>
-    <td></td>
+    <td>Planned</td>
+  </tr>
+  <tr>
+    <td>Ability to track clicks to links within emails</td>
+    <td>Planned</td>
   </tr>
 </table>
 
