@@ -6,7 +6,7 @@ group: sender-authentication
 navigation:
   show: true
 seo:
-  title: How to set up reverse DNS - beta
+  title: How to set up reverse DNS
   override: true
   description: Set up reverse DNS to improve your deliverability and security of your emails.
   keywords: reverse DNS, rDNS, whitelabel, IP whitelabel
@@ -14,14 +14,6 @@ seo:
 
 <!-- OUTDATED REVERSE DNS VIDEO --!>
 <!-- <iframe src="https://player.vimeo.com/video/265831363" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
-
-<call-out type="warning">
-
-**This is open beta functionality**. During beta, we reserve the right to change the functionality at any time without warning. You can switch in and out of the beta at any time in the UI.
-
-</call-out>
-
-<call-out>
 
 You can only set up reverse DNS if you have a [dedicated IP]({{root_url}}/ui/account-and-settings/dedicated-ip-addresses/).
 
