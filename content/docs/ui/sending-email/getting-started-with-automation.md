@@ -243,7 +243,7 @@ You can also find the options to share the signup form in the form editor by cli
 
 ### Contact Management APIs
 
-You can integrate with the Contact Management APIs to create and update lists, add contacts and manage reserved field data, and pull data about your contacts and lists. Learn more through the documentation for [Automation Contact APIs](https://sendgrid-automation.api-docs.io/v3/getting-started).
+You can integrate with the Contact Management APIs to create and update lists, add contacts, manage reserved field data, and pull data about your contacts and lists. Learn more through the documentation for [Automation Contact APIs](https://sendgrid-automation.api-docs.io/v3/getting-started).
 
 ### Edit or Remove Contacts
 
