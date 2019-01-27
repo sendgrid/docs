@@ -95,10 +95,10 @@ class BreadCrumbs extends Component {
     return (
       <div>
         <ul className="breadcrumb">
-          {this.state.items.map(item => {
-            const classes = `breadcrumb-item-${item.textNode.replace(' ', '-').toLowerCase()}`;
+          {this.state.items.map(({ textNode, to }) => {
+            const classes = `breadcrumb-item-${textNode.replace(' ', '-').toLowerCase()}`;
             return (
-              <li key={item.textNode} className={classes} ><Link to={item.to}>{item.textNode}</Link></li>
+              <li key={textNode} className={classes} ><Link to={to}>{textNode}</Link></li>
             );
           })}
           <li dangerouslySetInnerHTML={{ __html: this.getTitle() }} />

@@ -5,7 +5,7 @@ import './GlossaryPartial.scss';
 
 class GlossaryPartial extends Component {
   static getLinks(anchors) {
-    return anchors.map(anchor => <p key={anchor.TEXTNODE} className="glossary-link"><Link to={anchor.URL}>{anchor.TEXTNODE}</Link></p>);
+    return anchors.map(({ URL, TEXTNODE }) => <p key={TEXTNODE} className="glossary-link"><Link to={URL}>{TEXTNODE}</Link></p>);
   }
 
   render() {

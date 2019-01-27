@@ -9,10 +9,10 @@ function Libaries() {
         <h2>Open Source Libraries</h2>
         <div className="is-p">Prebuilt libraries and sample code for popular languages.</div>
         <div className="for-devs-libraries__languages">
-          {LIBRARIES.map(lib => (
-              <div key={lib.NAME} className="for-devs-libraries__lang">
-                <a className="for-devs-libraries__lang-link" key={lib.NAME} href={lib.URL} rel="noopener noreferrer" target="_blank">
-                  <img src={lib.IMG} alt={lib.NAME} />
+          {LIBRARIES.map(({ NAME, IMG, URL }) => (
+              <div key={NAME} className="for-devs-libraries__lang">
+                <a className="for-devs-libraries__lang-link" key={NAME} href={URL} rel="noopener noreferrer" target="_blank">
+                  <img src={IMG} alt={NAME} />
                 </a>
               </div>
             ))}

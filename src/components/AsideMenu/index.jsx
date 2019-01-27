@@ -57,14 +57,10 @@ class AsideMenu extends Component {
     return (
       <aside className="aside-nav">
         <div className="aside-nav__title is-size-h5">In the article</div>
-        {navItems.map(el => {
-            const {
-              id,
-              textNode,
-            } = el;
-            let classes = `doc-header ${el.tagName}`;
+        {navItems.map(({ id, textNode, tagName }) => {
+            let classes = `doc-header ${tagName}`;
 
-            if (el.id === this.state.activeNavItem.slug) {
+            if (id === this.state.activeNavItem.slug) {
               classes += ' active';
             }
 

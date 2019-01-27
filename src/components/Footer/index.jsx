@@ -5,12 +5,12 @@ import './Footer.scss';
 
 class Footer extends Component {
   static renderMenu(menu) {
-    const links = menu.LINKS.map((item) => {
-      if (item.URL) {
-        return <a key={item.TEXTNODE} className={`footer__link footer__link--${item.TEXTNODE.replace(' ', '-').toLowerCase()}`} href={item.URL}>{item.TEXTNODE}</a>;
+    const links = menu.LINKS.map(({ URL, TEXTNODE }) => {
+      if (URL) {
+        return <a key={TEXTNODE} className={`footer__link footer__link--${TEXTNODE.replace(' ', '-').toLowerCase()}`} href={URL}>{TEXTNODE}</a>;
       }
 
-      return <div key={item.TEXTNODE} className="footer__divider" />;
+      return <div key={TEXTNODE} className="footer__divider" />;
     });
 
     return (
