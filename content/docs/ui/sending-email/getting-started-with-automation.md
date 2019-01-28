@@ -166,7 +166,11 @@ If you keep the entry criteria as "All Contacts" it's important to remember that
 
 ## Email Testing
 
-Email Testing adds spam testing, email rendering, and link validation directly in the Automation experience so you can see what your emails will look like across a variety of devices, email clients, and inbox providers.
+Email Testing adds spam testing, email rendering, and link validation directly in the Automation experience so you can see what your emails will look like across a variety of devices, email clients, and inbox providers. 
+
+- **Inbox Testing:** Displays how an email message will be rendered, across a wide range of inboxes and devices.
+- **Spam Test:** Shows how an email is likely to perform against the world’s most powerful consumer (B2C) and enterprise (B2B) spam filters.
+- **Link Test:** Tests the validity of all links/URLs within a message, including redirects, domain reputation and critical metadata (like title text).
 
 *To test an email:*
 
@@ -190,8 +194,7 @@ During the beta period, the default testing mode will run the inbox, link, and s
 
 </call-out>
 
-5. Once you've selected all of the boxes you want to test against, click **Run New Test**. When the test is finished running, the test results appear on the View Test Results tab. 
-
+5. Once you've selected all of the boxes for the tests you want to run, click **Run New Test**. When the test is finished running, the test results appear on the View Test Results tab. From the View Test Results tab, you can select the Inbox, Spam, or Link tabs to see all of the data. 
 
 
 ## Upload Contacts
