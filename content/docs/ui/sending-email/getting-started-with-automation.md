@@ -166,11 +166,32 @@ If you keep the entry criteria as "All Contacts" it's important to remember that
 
 ## Email Testing
 
-Email Testing adds spam testing, email rendering, and link validation directly in the Automation experience so you can see what your emails will look like across a variety of platforms and devices.
+Email Testing adds spam testing, email rendering, and link validation directly in the Automation experience so you can see what your emails will look like across a variety of devices, email clients, and inbox providers.
 
 *To test an email:*
 
-1. 
+1. From the Design editor, navigate to the Settings tab.
+1. Scroll down and select **Send Test**.
+1. Under Automated Email Testing, click **Launch Test**. 
+
+<call-out>
+
+Before you can launch Email Testing, you need to select a sender and add a subject to the email you want to test.
+
+</call-out>
+
+![]({{root_url}}/img/auto-email-testing-launch.png "Launch Automated Email Testing")
+
+4. The Email Test page launches. Select the operating systems, devices, and inbox providers you want to test your email with. 
+
+<call-out>
+
+During the beta period, the default testing mode will run the inbox, link, and spam tests every time you test an email.  
+
+</call-out>
+
+5. Once you've selected all of the boxes you want to test against, click **Run New Test**. When the test is finished running, the test results appear on the View Test Results tab. 
+
 
 
 ## Upload Contacts
