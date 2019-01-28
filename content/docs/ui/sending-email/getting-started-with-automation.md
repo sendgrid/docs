@@ -168,6 +168,10 @@ If you keep the entry criteria as "All Contacts" it's important to remember that
 
 Email Testing adds spam testing, email rendering, and link validation directly in the Automation experience so you can see what your emails will look like across a variety of platforms and devices.
 
+*To test an email:*
+
+1. 
+
 
 ## Upload Contacts
 
