@@ -41,7 +41,7 @@ class Footer extends Component {
             </div>
             <div className="col-md-6 footer__legal">
               <a href="https://sendgrid.com/policies/tos/">Legal and Security</a>
-              <span className="footer__copy">&copy; 2018 SendGrid</span>
+              <span className="footer__copy">&copy; {(new Date().getFullYear())} SendGrid</span>
             </div>
           </div>
         </div>
