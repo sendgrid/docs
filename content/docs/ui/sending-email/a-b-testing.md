@@ -109,8 +109,6 @@ When a variation wins, based on your criteria and duration, you will be notified
 
 	If you chose to determine the A/B test winning criteria based on Open Rate or Click Rate, SendGrid will automatically send the winning email variation to the rest of your list.
 
-  You can also manually choose a winner at any time after you start the test.
-
   ![]({{root_url}}/images/ab_testing_4.png "A/B test winner")
 
 - **Manually Picking the Winning Version**
