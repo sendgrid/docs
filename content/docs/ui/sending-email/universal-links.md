@@ -174,7 +174,7 @@ After creating your iOS "apple-app-site-association" file and/or your Android "d
     * **Origin Protocol Policy:** HTTPS Only
 17. Under the **Default Cache Behavior Settings** section, set the fields as follows:
 
-    ![]({{root_url}}/img/cloudfront-cache-based.png)
+    ![]({{root_url}}/images/cloudfront-cache-based.png)
 
     * **Cache Based on Selected Request Headers:** All
     * **Query String Forwarding and Caching:** Forward all, cache based on all
