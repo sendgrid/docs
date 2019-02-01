@@ -11,6 +11,12 @@ navigation:
   show: true
 ---
 
+<call-out type="warning">
+
+The majority of this setup and management occurs outside of the SendGrid console. SendGrid support can only help with the steps that happen within your SendGrid account - like sender authentication setup. The setup options below are examples, and there are several more CDNs you could use to set up universal links.
+
+</call-out>
+
 Mobile devices are increasingly becoming the preferred method of receiving, reading, and engaging with email. If you send an email containing a link to your website, but you also have a corresponding mobile application, it is possible to ensure that any recipients who click the link on their mobile device are taken directly to your app instead of their web browsers.
 
 This is accomplished by using **universal links**. A universal link is a unique URL that can be configured to open a window in either the recipient's web browser, mobile browser, or mobile application depending on the device the recipient is using. SendGrid enables you to simply tag individual links that you would like to be converted to universal links, without sacrificing the ability to track clicks on those links.
@@ -168,7 +174,7 @@ After creating your iOS "apple-app-site-association" file and/or your Android "d
     * **Origin Protocol Policy:** HTTPS Only
 17. Under the **Default Cache Behavior Settings** section, set the fields as follows:
 
-    ![]({{root_url}}/img/cloudfront-cache-based.png)
+    ![]({{root_url}}/images/cloudfront-cache-based.png)
 
     * **Cache Based on Selected Request Headers:** All
     * **Query String Forwarding and Caching:** Forward all, cache based on all
