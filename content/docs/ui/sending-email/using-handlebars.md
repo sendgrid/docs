@@ -59,7 +59,7 @@ This transactional template is using this helper:
 
 This is an [example template that lets you have content in multiple languages](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates/different-languages).
 
-This receipt template is using this helper:
+This template is using this helper:
 
 - [Conditional statements](#conditional-statements) - `if/else`
 
@@ -67,7 +67,7 @@ This receipt template is using this helper:
 
 This is an [example newsletter template](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates/newsletter).
 
-This receipt template is using these helpers:
+This template is using these helpers:
 
   - [Substitution](#substitution)
   - [Iterations](#iterations)
@@ -76,7 +76,7 @@ This receipt template is using these helpers:
 
 This is an [example template that is advertising items on sale](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates/special-sale).
 
-This receipt template is using these helpers:
+This template is using these helpers:
 
   - [Substitution](#substitution)
   - [Conditional statements](#conditional-statements) - `if/else`
