@@ -10,7 +10,9 @@ navigation:
   show: false
 ---
 
-An Internet Protocol (IP) Address is a unique numerical address that defines an internet location. These addresses have 4 sets of numbers separated by periods. For example, 127.0.0.1 is an IP address. At SendGrid, you can be on a shared IP address, or you can have a dedicated IP address. We recommend a dedicated IP address for people sending high volumes of email or for people who want control over the quality of mail sent on the same IP as theirs. The aggregate performance of all the senders who use the IP determines its reputation.
+An Internet Protocol (IP) Address is a unique numerical address that defines an internet location. These addresses have 4 sets of numbers separated by periods. For example, 127.0.0.1 is an IP address. IP addresses are included in the headers of all emails sent, they are a sort of return address for a given email message. One of the reputation indicators used by recipient mailbox providers is a sender's IP address. 
+
+At SendGrid, you can be on a shared IP address, or you can have a dedicated IP address. We recommend a dedicated IP address for people sending high volumes of email or for people who want control over the quality of mail sent on the same IP as theirs. The aggregate performance of all the senders who use the IP determines its reputation.
 
 <call-out>
 
