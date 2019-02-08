@@ -350,7 +350,7 @@ Have feedback or questions? We welcome your thoughts at email_automation@sendgri
     <td>LIVE</td>
   </tr>
   <tr>
-    <td>Availability of the public facing [Automation Contact APIs](https://sendgrid-automation.api-docs.io/v3/getting-started).</td>
+    <td>Availability of the public facing <a href="https://sendgrid-automation.api-docs.io/v3/getting-started/authentication">Automation Contact APIs</a>.</td>
     <td>LIVE</td>
   </tr>
   <tr>
