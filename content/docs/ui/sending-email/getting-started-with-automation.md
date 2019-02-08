@@ -345,6 +345,10 @@ Have feedback or questions? We welcome your thoughts at email_automation@sendgri
     <th>Deliverable</th>
     <th>Status</th>
   </tr>
+    <tr>
+    <td>Insert reserved fields into email content using substitution tags.</td>
+    <td>LIVE</td>
+  </tr>
   <tr>
     <td>Ability to create signup forms that can be embedded into a website or shared as a link. Signups are added directly to an Automation contact list.</td>
     <td>LIVE</td>
@@ -355,14 +359,6 @@ Have feedback or questions? We welcome your thoughts at email_automation@sendgri
   </tr>
   <tr>
     <td>Ability to search, edit, delete, and export contacts.</td>
-    <td>In progress</td>
-  </tr>
-  <tr>
-    <td>Exit criteria of no longer meeting entry criteria.</td>
-    <td>Planned</td>
-  </tr>
-  <tr>
-    <td>Insert reserved fields into email content using substitution tags.</td>
     <td>In progress</td>
   </tr>
   <tr>
@@ -388,11 +384,11 @@ Have feedback or questions? We welcome your thoughts at email_automation@sendgri
   </tr>
   <tr>
     <td>Ability to save an email design as a template.</td>
-    <td>Planned</td>
+    <td>In progress</td>
   </tr>
   <tr>
     <td>Ability to test Automation emails for rendering across inboxes and browsers, link validation and spam testing.</td>
-    <td>Planned</td>
+    <td>In progress</td>
   </tr>
 </table>
 
@@ -403,7 +399,10 @@ Have feedback or questions? We welcome your thoughts at email_automation@sendgri
     <th>Deliverable</th>
     <th>Status</th>
   </tr>
-  
+  <tr>
+    <td>Exit criteria of no longer meeting entry criteria.</td>
+    <td>Planned</td>
+  </tr>
   <tr>
     <td>Ability to trigger an automation when a contact joins a segment</td>
     <td>Planned</td>
