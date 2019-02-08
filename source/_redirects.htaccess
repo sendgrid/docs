@@ -47,7 +47,7 @@ Redirect 301 /API_Reference/Reseller_API/billing_retrieving_as_you_go_usage.html
 Redirect 301 /API_Reference/Reseller_API/billing_retrieving_end_users_invoices_usage.html https://sendgrid.com/docs/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/billing_retrieving_end_users_invoices_usage.html
 Redirect 301 /API_Reference/Reseller_API/customer_account_limits.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/customer_account_limits.html
 Redirect 301 /API_Reference/Reseller_API/customer_bounces.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/customer_bounces.html
-Redirect 301 /API_Reference/Reseller_API/customer_invalid_emails.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/customer_invalid_emails.html
+Redirect 301 /API_Reference/Reseller_API/customer_invalid_emails.html https://sendgrid.com/docs/for-developers/parsing-email/inbound-email/
 Redirect 301 /API_Reference/Reseller_API/customer_management.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/customer_management.html
 Redirect 301 /API_Reference/Reseller_API/customer_spam_reports.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/customer_spam_reports.html
 Redirect 301 /API_Reference/Reseller_API/customer_statistics.html https://sendgrid.com/docs/API_Reference/Web_API/Reseller_API/customer_statistics.html
