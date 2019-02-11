@@ -15,7 +15,7 @@ navigation:
 
 An unsubscribe is the action an email recipient takes when they opt-out of an email list. Typically, this is done by clicking the unsubscribe link in the email.
 
-A suppression is the action the sender takes when a recipient has opted out of an email list or when the recipient’s email server or provider has rejected emails sent to that address.
+A suppression is the action the sender takes by no longer sending to an email address when a recipient has opted out of an email list or when the recipient’s email server or provider has rejected emails sent to that address.
 
 This is an important distinction, because from the point of view of your recipients, you as the SendGrid customer are the sender. We have made this distinction in order to clearly define the difference between an action a recipient takes and an action SendGrid takes on your behalf.
 
