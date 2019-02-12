@@ -166,7 +166,7 @@ If you keep the entry criteria as "All Contacts" it's important to remember that
 
 ## Manage Contacts
 
-From the Contacts page within the Automation Beta experience, you can add contacts, view all  contacts, view contact details — including which list they're on, and export contacts.
+From the Contacts page within the Automation Beta experience, you can add contacts, view all contacts, view contact details — including which list they're on, and export contacts.
 
 <call-out type="warning">
 
