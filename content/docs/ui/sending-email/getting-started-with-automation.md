@@ -255,6 +255,12 @@ To view the contents of a contact list, you can export the list to a CSV and dow
 1. From here you can find the exported contact list and select the action menu. 
 1. Select the **Download CSV** icon next to the list to download the contact list to your computer. 
 
+<call-out type="warning">
+
+Exported CSV files are only available for download for 72 hours after the export is initialized. 
+
+</call-out>
+
 ### Contact Management APIs
 
 You can integrate with the Contact Management APIs to create and update lists, add contacts, manage reserved field data, and pull data about your contacts and lists. Learn more through the documentation for [Automation Contact APIs](https://sendgrid-automation.api-docs.io/v3/getting-started).
