@@ -166,6 +166,8 @@ If you keep the entry criteria as "All Contacts" it's important to remember that
 
 ## Manage Contacts
 
+From the Contacts page within the Automation Beta experience, you can add contacts, view all  contacts, view contact details — including which list they're on, and export contacts.
+
 <call-out type="warning">
 
 During the beta, contacts you upload to Automation are distinct from your existing Marketing Campaigns contacts. An Automation contact will be treated as new even if they’ve been in your Marketing Campaigns contacts for some time.
@@ -240,6 +242,18 @@ To make your form accessible to new contacts, you can either send them a link ho
    * The Direct Embed code can be pasted to the HTML of your website wherever you’d like the form to display.
 
 You can also find the options to share the signup form in the form editor by clicking **Share Code** in the top-right corner of the editor. 
+
+### Export contacts
+
+To view the contents of a contact list, you can export the list to a CSV and download it to your computer.
+
+*To export contacts:*
+
+1. Navigate to the Contacts page within the Automation Beta experience.
+1. Locate the contact list you want to export and click the action menu.
+1. Select **Export**. The Export page appears with a list of all current and previous exports. 
+1. From here you can find the exported contact list and select the action menu. 
+1. Select the **Download CSV** icon next to the list to download the contact list to your computer. 
 
 ### Contact Management APIs
 
