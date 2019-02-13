@@ -166,7 +166,7 @@ If you keep the entry criteria as "All Contacts" it's important to remember that
 
 ## Add contacts
 
-From the Contacts page within the Automation Beta experience, you can add contacts, view all contacts, view contact details — including which list they're on, and export contacts.
+Adding contacts to a list that's designated as the entry criteria for an automation will trigger that automation. The Automation beta experience offers several ways to add contacts to lists, including CSV upload and signup forms. 
 
 <call-out type="warning">
 
