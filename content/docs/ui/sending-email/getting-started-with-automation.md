@@ -164,7 +164,7 @@ If you keep the entry criteria as "All Contacts" it's important to remember that
 
 1. Repeat steps 5-16 from creating a custom automation.
 
-## Manage Contacts
+## Add contacts
 
 From the Contacts page within the Automation Beta experience, you can add contacts, view all contacts, view contact details — including which list they're on, and export contacts.
 
@@ -174,7 +174,7 @@ During the beta, contacts you upload to Automation are distinct from your existi
 
 </call-out>
 
-First, it's important to note that automations will only trigger to contacts who are added to an entry criteria list *after* the automation is set live. Contacts who you add to a list before the automation is set live will not receive any emails in the series.
+Note that automations will only trigger to contacts who are added to an entry criteria list *after* the automation is set live. Contacts who you add to a list before the automation is set live will not receive any emails in the series.
 
 ### Upload a CSV
 
@@ -199,13 +199,12 @@ Use Signup Forms with the SendGrid Automation beta to capture new contacts and a
 
 You can enable contacts to access your signup form either by sending them a link hosted by SendGrid or by embedding it directly into your website.
 
-#### Create a new signup form
-
 <call-out>
 
 The number of signup forms you can create is limited to 15. 
 
 </call-out>
+
 *To create a new signup form:*
 
 1. Navigate to Automations and select **Signup Forms**. 
@@ -243,7 +242,7 @@ To make your form accessible to new contacts, you can either send them a link ho
 
 You can also find the options to share the signup form in the form editor by clicking **Share Code** in the top-right corner of the editor. 
 
-### Export contacts
+## Export contacts
 
 To view the contents of a contact list, you can export the list to a CSV and download it to your computer.
 
@@ -261,13 +260,13 @@ Exported CSV files are only available for download for 72 hours after the export
 
 </call-out>
 
+## Edit or Remove Contacts
+
+During this early phase of beta, you can only edit contact details from the All Contacts page.
+
 ### Contact Management APIs
 
-You can integrate with the Contact Management APIs to create and update lists, add contacts, manage reserved field data, and pull data about your contacts and lists. Learn more through the documentation for [Automation Contact APIs](https://sendgrid-automation.api-docs.io/v3/getting-started).
-
-### Edit or Remove Contacts
-
-During this early phase of beta, you cannot search, edit, or delete contacts.
+You can integrate with the Contact Management APIs to create and update lists, add contacts, manage reserved field data, export contact lists, and pull data about your contacts and lists. Learn more through the documentation for [Automation Contact APIs](https://sendgrid-automation.api-docs.io/v3/getting-started).
 
 ## Manage Automations
 
