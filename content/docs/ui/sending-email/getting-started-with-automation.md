@@ -164,7 +164,7 @@ If you keep the entry criteria as "All Contacts" it's important to remember that
 
 1. Repeat steps 5-16 from creating a custom automation.
 
-## Add contacts
+## Manage Contacts
 
 Adding contacts to a list that's designated as the entry criteria for an automation will trigger that automation. The Automation beta experience offers several ways to add contacts to lists, including CSV upload, using signup forms, or via the Contact Management APIs. 
 
@@ -173,6 +173,8 @@ Adding contacts to a list that's designated as the entry criteria for an automat
 During the beta, contacts you upload to Automation are distinct from your existing Marketing Campaigns contacts. An Automation contact will be treated as new even if they’ve been in your Marketing Campaigns contacts for some time.
 
 </call-out>
+
+## Add Contacts
 
 Note that automations will only trigger to contacts who are added to an entry criteria list *after* the automation is set live. Contacts who you add to a list before the automation is set live will not receive any emails in the series.
 
@@ -242,6 +244,10 @@ To make your form accessible to new contacts, you can either send them a link ho
 
 You can also find the options to share the signup form in the form editor by clicking **Share Code** in the top-right corner of the editor. 
 
+## Edit or Remove Contacts
+
+During this early phase of beta, you can only view and edit contact details from the All Contacts page. In the future you'll be able to view and edit contact details from lists. You'll also be able to delete contacts. 
+
 ## Export contacts
 
 To view the contents of a contact list, you can export the list to a CSV and download it to your computer.
@@ -259,10 +265,6 @@ To view the contents of a contact list, you can export the list to a CSV and dow
 Exported CSV files are only available for download for 72 hours after the export is initialized. 
 
 </call-out>
-
-## Edit or Remove Contacts
-
-During this early phase of beta, you can only view and edit contact details from the All Contacts page. In the future you'll be able to view and edit contact details from lists. You'll also be able to delete contacts. 
 
 ### Contact Management APIs
 
