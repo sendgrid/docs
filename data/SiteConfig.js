@@ -4,7 +4,7 @@ const config = {
   siteTitle: 'SendGrid Documentation',
   siteTitleAlt: 'SendGrid Knowledge Center',
   siteLogo: 'https://sendgrid.com/brand/sg-twilio/sg-twilio-lockup.svg',
-  ogImage: 'https://sendgrid.com/brand/sg-twilio/SG_Twilio_Lockup_RGBx2.png',
+  ogImage: 'https://sendgrid.com/brand/sg-twilio/SG_Twilio_Lockup_Social.png',
   siteUrl: 'https://sendgrid.com',
   gitHubMarkdownPath: 'https://github.com/sendgrid/docs/tree/develop/content/docs',
   pathPrefix: '/docs',
