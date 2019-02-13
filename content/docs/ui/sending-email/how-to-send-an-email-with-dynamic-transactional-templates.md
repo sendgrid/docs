@@ -25,7 +25,7 @@ Before you create and send an email using a dynamic transactional template you n
 2. Add a unique template name and then click **Save**.
 3. To begin editing your new template, click **Add Version**.
 4. Select an editor and click **Continue**.
-5. Design your template. For more information on using Handlebars, see [Using Handlebars]({{root_url}}/ui/sending-email/using-handlebars/).
+5. Design your template. For more information on using Handlebars, see [Using Handlebars]({{root_url}}/docs/ui/sending-email/using-handlebars/).
 
 ##  Unsubscribe modules for dynamic transactional templates
 
@@ -97,7 +97,7 @@ curl -X "POST" "https://api.sendgrid.com/v3/mail/send" \
 
 It is important to note 2 sections of this call when using dynamic templates:
 
-In order to send dynamic content, you need to specify a JSON blob containing the dynamic data your template will use in the `dynamic_template_data` object. The Handlebars script you write will refer to the values in your JSON blob by referencing the JSON key, check out [these examples]({{root_url}}/ui/sending-email/using-handlebars/#handlebarjs-reference). This Handlebars templating can be used in the text, html, and subject lines of your template.
+In order to send dynamic content, you need to specify a JSON blob containing the dynamic data your template will use in the `dynamic_template_data` object. The Handlebars script you write will refer to the values in your JSON blob by referencing the JSON key, check out [these examples]({{root_url}}/docs/ui/sending-email/using-handlebars/#handlebarjs-reference). This Handlebars templating can be used in the text, html, and subject lines of your template.
 ```
          "dynamic_template_data":{
             "total":"$ 239.85",
