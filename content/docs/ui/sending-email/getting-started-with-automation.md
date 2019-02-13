@@ -262,7 +262,7 @@ Exported CSV files are only available for download for 72 hours after the export
 
 ## Edit or Remove Contacts
 
-During this early phase of beta, you can only edit contact details from the All Contacts page.
+During this early phase of beta, you can only view and edit contact details from the All Contacts page. In the future you'll be able to view and edit contact details from lists. You'll also be able to delete contacts. 
 
 ### Contact Management APIs
 
