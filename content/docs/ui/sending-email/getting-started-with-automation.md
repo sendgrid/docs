@@ -379,11 +379,11 @@ Have feedback or questions? We welcome your thoughts at email_automation@sendgri
     <td>LIVE</td>
   </tr>
   <tr>
-    <td>Ability to search, edit, delete, and export contacts.</td>
-    <td>In progress</td>
+    <td>Ability to view All Contacts, edit contacts, and export All Contacts or specific lists.</td>
+    <td>LIVE</td>
   </tr>
   <tr>
-    <td>Editor improvements including color picker and columns.</td>
+    <td>Ability to search and delete contacts.</td>
     <td>In progress</td>
   </tr>
 </table>
@@ -396,6 +396,10 @@ Have feedback or questions? We welcome your thoughts at email_automation@sendgri
     <th>Status</th>
   </tr>
    <tr>
+    <td>Exit criteria of no longer meeting entry criteria.</td>
+    <td>Planned</td>
+  </tr>
+  <tr>
     <td>Ability to view the details of an Automation Contact list</td>
     <td>In progress</td>
   </tr>
@@ -419,10 +423,6 @@ Have feedback or questions? We welcome your thoughts at email_automation@sendgri
   <tr>
     <th>Deliverable</th>
     <th>Status</th>
-  </tr>
-  <tr>
-    <td>Exit criteria of no longer meeting entry criteria.</td>
-    <td>Planned</td>
   </tr>
   <tr>
     <td>Ability to trigger an automation when a contact joins a segment</td>
