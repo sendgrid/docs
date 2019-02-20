@@ -95,7 +95,7 @@ Scheduled sends cancelled less than 10 minutes before the scheduled time are not
 
 </call-out>
 
-To only pause your scheduled send, simply set the `status` parameter in your request to "pause". To completely cancel your request, set `status` to "cancel".
+To only pause your scheduled send, set the `status` parameter in your request to "pause". To completely cancel your request, set `status` to "cancel".
 
 When a Batch is **cancelled**, all messages associated with that batch will stay in your sending queue, but when their `send_at` value is reached, they will be discarded instead of attempting delivery.
 
