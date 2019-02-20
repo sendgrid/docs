@@ -59,15 +59,15 @@ Depending on your editor selection, you use different methods to design your cam
 
 1. Add your custom content. Make sure to include the [[unsubscribe]]({{root_url}}/ui/sending-email/create-and-manage-unsubscribe-groups/) tag to test and send your campaign.
 
-<br> For more information about customizing your campaign, see [Using the Design Editor]({{root_url}}/ui/sending-email/editor/#the-design-editor) or [Using the Code Editor]({{root_url}}/ui/sending-email/editor/#the-code-editor).
+For more information about customizing your campaign, see [Using the Design Editor]({{root_url}}/ui/sending-email/editor/#the-design-editor) or [Using the Code Editor]({{root_url}}/ui/sending-email/editor/#the-code-editor).
 
-1. Once you’ve finished editing your campaign, you can see what it looks like by clicking **Preview**.
+3. Once you’ve finished editing your campaign, you can see what it looks like by clicking **Preview**.
 
-1. To send a test email, enter the email address(es) you want to send your campaign to, and then click **Send Test**. Please note, in order to send your test email and any subsequent live campaigns, you must have, at a minimum, a verified sender, subject line, and unsubscribe group or link included.
+4. To send a test email, enter the email address(es) you want to send your campaign to, and then click **Send Test**. Please note, in order to send your test email and any subsequent live campaigns, you must have, at a minimum, a verified sender, subject line, and unsubscribe group or link included.
 
-1. If you would like to test the effectiveness of your email subject or content, you can set up an A/B test. For more information, see [A/B Testing]({{root_url}}/ui/sending-email/a-b-testing/).
+5. If you would like to test the effectiveness of your email subject or content, you can set up an A/B test. For more information, see [A/B Testing]({{root_url}}/ui/sending-email/a-b-testing/).
 
-<A NAME="recipients" /> 1. Select which contacts will receive your email by clicking the **Send To** dropdown under **Recipients**.
+6. Select which contacts will receive your email by clicking the **Send To** dropdown under **Recipients**.
 
 <call-out>
 
@@ -75,7 +75,7 @@ Campaigns can be sent to either a list or a segment. You can manage your lists a
 
 </call-out>
 
-1. To send your campaign, click **Send Campaign**.
+7. To send your campaign, click **Send Campaign**.
 
 <call-out>
 
