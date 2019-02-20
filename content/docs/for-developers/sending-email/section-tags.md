@@ -18,7 +18,7 @@ It's possible and acceptable to use only Substitution tags. However, that method
 
 <call-out type="warning">
 
-When passing ``section`` please make sure to only use strings as shown in our examples. Any other type could result in unintended behavior.
+When passing `section` please make sure to only use strings as shown in our examples. Any other type could result in unintended behavior.
 
 </call-out>
 
