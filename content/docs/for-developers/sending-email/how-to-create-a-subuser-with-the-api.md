@@ -12,7 +12,7 @@ navigation:
   show: true
 ---
 
-Creating a new subuser through SendGrid's API is a multi-step process. This guide will walk you through the necessary steps in order to create a new subuser account using only API calls.
+Creating a new subuser through SendGrid's API is a multi-step process. This guide will walk you through the necessary steps to create a new subuser account using only API calls.
 
 ## Establish the New Subuser (required)
 
