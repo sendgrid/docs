@@ -45,7 +45,7 @@ HTTP/1.1 201
   }
 ```
 
- ### 	2. Assign Batch ID to an Email
+ ### 	2. Assign a Batch ID to an Email
 
 The batch ID generated in step 1 can now be used when scheduling an email via the SendGrid API v3 by setting the value of `batch_id` to your new batch ID in a [v3/mail/send]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html) request and setting the value of `send_at` to a UNIX timestamp representing the time you want your email sent. For example:
 
