@@ -64,7 +64,7 @@ Personalization Examples Index
 * [Sending a Single Email to a Single Recipient with Multiple CCs/BCCs](#sending-a-single-email-to-a-single-recipient-with-multiple-ccs/bccs)
 * [Sending Two Different Emails to Two Different Groups of Recipients](#sending-two-different-emails-to-two-different-groups-of-recipients)
 
-## 	Sending a Single Email to a Single Recipient
+## Sending a Single Email to a Single Recipient
  	
 The following example shows you what the personalization parameter would look like if you wanted to send a single email to a single recipient.
 
@@ -83,7 +83,7 @@ The following example shows you what the personalization parameter would look li
 }
 ```
 
-## 	Sending a Single Email to a Single Recipient With a CC
+## Sending a Single Email to a Single Recipient With a CC
  	
 The following example shows how to send one email to recipient1&#064;example&period;com with a carbon copy sent to recipient2&#064;example&period;com. Both emails will have the same headers.
 
@@ -129,7 +129,7 @@ The following example shows how to send one email to recipient1&#064;example&per
 }
 ```
 
-## 	Sending the Same Email to Multiple Recipients
+## Sending the Same Email to Multiple Recipients
 
 The following shows how to send 1 email to 3 different recipients: recipient1&#064;example&period;com, recipient2&#064;example&period;com, and recipient3&#064;example&period;com. These recipients will all be able to see each other on the email.
 
@@ -152,7 +152,7 @@ The following shows how to send 1 email to 3 different recipients: recipient1&#0
 }
 ```
 
-## 	Sending a Single Email to a Single Recipient With Multiple CCs/BCCs
+## Sending a Single Email to a Single Recipient With Multiple CCs and BCCs
  	
 The following shows what personalizations are required to send the same email to one recipient, with multiple CCs and BCCs.
 
@@ -178,7 +178,7 @@ The following shows what personalizations are required to send the same email to
 }
 ```
 
-## 	Sending Two Different Emails to Two Different Groups of Recipients
+## Sending Two Different Emails to Two Different Groups of Recipients
 
 The following shows how to send 2 different emails to 2 different groups of recipients.
 
