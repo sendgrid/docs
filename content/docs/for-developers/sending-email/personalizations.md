@@ -49,7 +49,7 @@ Keys within objects like custom_args will be merged. If any of the keys conflict
 
 <call-out>
 
-All of the recipients in a single personalization object (either in the `to`, `cc`, or `bcc` fields) will see exactly the same email, as defined by the data in that personalization, as such we do not allow duplicate emails between these 3 arrays in a single personalization.
+All of the recipients in a single personalization object (either in the `to`, `cc`, or `bcc` fields) will see the same email, as defined by the data in that personalization, as such we do not allow duplicate emails between these 3 arrays in a single personalization.
 
 </call-out>
 
