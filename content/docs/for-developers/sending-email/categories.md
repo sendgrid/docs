@@ -27,7 +27,7 @@ You can use SendGrid's [SMTP API]({{root_url}}/ui/for-developers/sending-email/g
 
 <call-out type="warning">
 
-When passing ``category`` please make sure to only use strings as shown in our examples. Any other type could result in unintended behavior.
+When passing `category` please make sure to only use strings as shown in our examples. Any other type could result in unintended behavior.
 
 </call-out>
 
