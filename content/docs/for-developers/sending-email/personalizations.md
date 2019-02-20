@@ -152,7 +152,7 @@ The following shows how to send 1 email to 3 different recipients: recipient1&#0
 }
 ```
 
-## 	Sending a Single Email to a Single Recipient With Multiple CCs/BCCs
+## 	Sending a Single Email to a Single Recipient With Multiple CCs and BCCs
  	
 The following shows what personalizations are required to send the same email to one recipient, with multiple CCs and/or BCCs.
 
