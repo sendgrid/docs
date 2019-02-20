@@ -48,7 +48,7 @@ When defining the parameter 'list' there are a few options you can choose:
 <strong>Response Example<br></strong><img src="http://content.screencast.com/users/Ryan.Burrer/folders/Jing/media/0dc1923b-fff9-4446-aff1-5dcab41929a4/00000096.png" alt="" align="middle">
 </center>
 
-After you have selected the IP that you wish to assign to your subuser account, simply make the API call to [append the IP address](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/ip_management.html#subuser-ip-assignment).
+After you have selected the IP that you wish to assign to your subuser account, make the API call to [append the IP address](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/ip_management.html#subuser-ip-assignment).
 
 #### Call Example
 ```
