@@ -91,7 +91,7 @@ Now that your email has been scheduled and has a batch ID assigned, you can [pau
 
 <call-out type="warning">
 
-Scheduled sends cancelled less than 10 minutes before the scheduled time are not guaranteed to be cancelled.
+Scheduled sends canceled less than 10 minutes before the scheduled time are not guaranteed to be canceled.
 
 </call-out>
 
