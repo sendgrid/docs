@@ -27,7 +27,7 @@ Well designed and useful emails help keep open rates high. Use ([SendGrid’s Dy
 
 Read more about Transactional Email in the [SendGrid Guide]({{root_url}}/glossary/transactional-email/).
 
-## 	How to send an Transactional Email
+## 	How to send a Transactional Email
 
 Once your SendGrid account is setup, you have choices on how to send the emails to your users.
 
