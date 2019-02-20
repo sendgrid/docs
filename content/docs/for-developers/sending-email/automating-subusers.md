@@ -23,7 +23,7 @@ Before you can start using the API, you need to do the following:
 
 <call-out>
 
-curl comes standard on Mac operating systems.
+cURL comes standard on Mac operating systems.
 
 </call-out>
 
@@ -88,7 +88,7 @@ Successful API key implementation Response:
 Once this has been done, the Subuser has been created. From this point on, we’ll cover implementing Click Tracking, Open Tracking, and the Event Webhook for those Subusers.
 
 ### Enable/Edit Applications
-As of right now this needs to be done directly through the account in question.
+As of right, now this needs to be done directly through the account in question.
 
 **Click Tracking**
 
