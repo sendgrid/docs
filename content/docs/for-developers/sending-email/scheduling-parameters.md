@@ -33,6 +33,8 @@ Cancel Scheduled sends by including a batch ID with your send. For more informat
 
 </call-out>
 
+Thanks for the suggestion. We try to make things obvious as possible for our customers, and we think “making a request” is clearer than “requesting” in this case. So for the sake of clarity, I'm going to leave the doc as-is and close the PR. Please feel free to submit another one though! We appreciate all the help we can get! 
+
 <call-out type="warning">
 
 Using both `send_at` and `send_each_at` is not valid. Setting both causes your request to be dropped.
