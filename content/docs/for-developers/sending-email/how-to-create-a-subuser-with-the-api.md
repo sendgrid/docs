@@ -85,7 +85,7 @@ https://api.sendgrid.com/apiv2/customer.whitelabel.json?api\_user=ryan.burrer@se
 <p class="wysiwyg-text-align-left"><img src="http://content.screencast.com/users/Ryan.Burrer/folders/Jing/media/9d491f57-d3c8-4376-a31d-a04b49590747/00000097.png" alt=""></p>
 </center>
 
-The API response above shows that email.sendgrid.com and email.example.com are both already established domain entries, and can be used by this subuser. If none are displayed then the next step in this process should be skipped.
+The API response above shows that email.sendgrid.com and email.example.com are both already established domain entries, and can be used by this subuser. If none are displayed, then the next step in this process should be skipped.
 
 If you have an authenticated domain entry that you wish to apply to your subuser then you will need to [append the whitelabel entry](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/whitelabel.html#append) to your subuser:
 
