@@ -67,7 +67,13 @@ Depending on your editor selection, you use different methods to design your cam
 
 1. If you would like to test the effectiveness of your email subject or content, you can set up an A/B test. For more information, see [A/B Testing]({{root_url}}/ui/sending-email/a-b-testing/).
 
-1. Add a list or segment of recipients to receive your campaign.
+<A NAME="recipients" /> 1. Select which contacts will receive your email by clicking the **Send To** dropdown under **Recipients**.
+
+<call-out>
+
+Campaigns can be sent to either a list or a segment. You can manage your lists and segments within [Contacts]({{root_url}}/ui/managing-contacts/adding-contacts/). 
+
+</call-out>
 
 1. To send your campaign, click **Send Campaign**.
 
