@@ -33,11 +33,9 @@ Cancel Scheduled sends by including a batch ID with your send. For more informat
 
 </call-out>
 
-<call-out type="warning">
+When passing `send_at` or `send_each_at` please make sure to only use UNIX timestamps passed as integers, as shown in our examples. Any other type could result in unintended behavior.	
 
-When passing ``send_at`` or ``send_each_at`` please make sure to only use UNIX timestamps passed as integers, as shown in our examples. Any other type could result in unintended behavior.
-
-</call-out>
+ </call-out>	
 
 <call-out type="warning">
 
