@@ -26,6 +26,10 @@ Example
 
 You can use SendGrid's [SMTP API]({{root_url}}/API_Reference/SMTP_API/building_an_smtp_email.html) to add these categories to your email. The following should be added to the email's header:
 
+{% warning %}
+When passing `category` please make sure to only use strings as shown in our examples. Any other type could result in unintended behavior.
+{% endwarning %}
+
 <h4>Example Category Header</h4>
 {% codeblock lang:json %}
 {
