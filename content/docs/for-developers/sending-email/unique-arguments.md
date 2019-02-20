@@ -15,7 +15,7 @@ The SMTP API JSON string allows you to attach an unlimited number of unique argu
 
 <call-out type="warning">
 
-When passing args please make sure to only use strings as shown in our examples.
+When passing ``unique_args`` please make sure to only use strings as shown in our examples. Any other type could result in unintended behavior.
 
 </call-out>
 
