@@ -20,7 +20,7 @@ Sandbox mode is only used to validate your request. The email will never be deli
 
 Sandbox mode is an optional parameter within `mail_settings`. Enabling sandbox mode allows you to send a test email to ensure that your request body is formatted correctly without delivering the email to any of your recipients.
 
-When making a request with sandbox mode enabled, we will validate the form, type, and shape of your request. In other words, sandbox mode will validate each parameter you include and the structure of your JSON payload. If you include a `template_id` in your sandbox mode request, it will be assumed that you have included a subject line and body within the template. We will not validate this content.
+When requesting with sandbox mode enabled, we will validate the form, type, and shape of your request. In other words, sandbox mode will validate each parameter you include and the structure of your JSON payload. If you include a `template_id` in your sandbox mode request, it will be assumed that you have included a subject line and body within the template. We will not validate this content.
 
 ## 	Using Sandbox Mode
  	
