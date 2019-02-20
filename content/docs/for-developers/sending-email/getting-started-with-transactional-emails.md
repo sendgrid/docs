@@ -21,7 +21,7 @@ These emails typically contain information a user wants or needs. They have the 
 
 <call-out>
 
-Well designed and useful emails help keep open rates high. Use ([SendGrid’s Dynamic Transactional Email Templates]({{root_url}}/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/)) to help with creation of responsive transactional email templates.
+Well designed and useful emails help keep open rates high. Use ([SendGrid’s Dynamic Transactional Email Templates]({{root_url}}/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/)) to help with the creation of responsive transactional email templates.
 
 </call-out>
 
