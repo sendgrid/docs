@@ -38,7 +38,7 @@ Now that you have created the new subuser account, you will need to [add an IP](
 https://api.sendgrid.com/apiv2/customer.ip.xml?api_user=ryan.burrer@sendgrid.com&api_key=xxxxxx&list=all
 ```
 
-When defining the parameter 'list' there are a few options you can choose:
+When defining the parameter 'list', there are a few options you can choose:
 
 - **All** - Will list all of the IPs on your account, taken or available.
 - **Free** - Will list all the free IPs on your account. For instance, if an IP is in use by a subuser or parent account then that IP will not be listed.
