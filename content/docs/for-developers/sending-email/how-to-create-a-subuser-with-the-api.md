@@ -42,7 +42,7 @@ When defining the parameter 'list' there are a few options you can choose:
 
 - **All** - Will list all of the IPs on your account, taken or available.
 - **Free** - Will list all the free IPs on your account. For instance, if an IP is in use by a subuser or parent account then that IP will not be listed.
-- **Taken** - Will list all of the IP addresses that are assigned to your parent and/or subuser accounts.
+- **Taken** - Will list all of the IP addresses that are assigned to your parent and subuser accounts.
 - **Available** - Will list all of the unassigned IP addresses for the account. If a subuser is deactivated _and it _is assigned an IP, that IP will show up on this list since that IP address is not technically in use.
 <center>
 <strong>Response Example<br></strong><img src="http://content.screencast.com/users/Ryan.Burrer/folders/Jing/media/0dc1923b-fff9-4446-aff1-5dcab41929a4/00000096.png" alt="" align="middle">
