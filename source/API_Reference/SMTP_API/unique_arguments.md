@@ -10,6 +10,10 @@ navigation:
   show: true
 ---
 
+{% warning %}
+When passing `unique_args` please make sure to only use strings as shown in our examples. Any other type could result in unintended behavior.
+{% endwarning %}
+
 The SMTP API JSON string allows you to attach an unlimited number of unique arguments to your email **up to 10,000 bytes**. The arguments are used only for tracking. They can be retrieved through the [Event API]({{root_url}}/API_Reference/Webhooks/event.html) or the [Email Activity]({{root_url}}/User_Guide/Delivery_Metrics/email_activity.html) page.
 
 These arguments can be added using a JSON string like this:

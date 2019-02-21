@@ -15,6 +15,10 @@ See the [Section Tag Example Walkthrough](#-Section-Tag-Example-Walkthrough) bel
 
 It's possible & acceptable to use only Substitution tags. However, that method is not [DRY](http://en.wikipedia.org/wiki/Don%27t_repeat_yourself), and you may come against [message size limitations]({{root_url}}/Classroom/Build/Add_Content/whats_the_recommended_message_size_limit.html).
 
+{% warning %}
+When passing `section` please make sure to only use strings as shown in our examples. Any other type could result in unintended behavior.
+{% endwarning %}
+
 * * * * *
 
 The format of the SMTP API section tag has the form:
