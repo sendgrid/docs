@@ -25,6 +25,12 @@ You may only specify one group per send, and you should wait one minute after cr
 
 </call-out>
 
+<call-out type="warning">
+
+When passing `asm_group_id` please make sure to only use integers as shown in our examples. Any other type could result in unintended behavior.
+
+</call-out>
+
 ```json
 {
   "asm_group_id": 1

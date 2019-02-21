@@ -25,6 +25,12 @@ Currently, there is no limit to the number of categories you can track. However,
 
 You can use SendGrid's [SMTP API]({{root_url}}/ui/for-developers/sending-email/getting-started-smtp/) to add these categories to your email. The following should be added to the email's header:
 
+<call-out type="warning">
+
+When passing `category` please make sure to only use strings as shown in our examples. Any other type could result in unintended behavior.
+
+</call-out>
+
 ### Example Category Header
 ```json
 {

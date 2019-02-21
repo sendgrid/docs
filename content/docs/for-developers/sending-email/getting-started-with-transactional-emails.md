@@ -21,15 +21,15 @@ These emails typically contain information a user wants or needs. They have the 
 
 <call-out>
 
-Well designed and useful emails help keep open rates high. Use ([SendGrid’s Dynamic Transactional Email Templates]({{root_url}}/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/)) to help with creation of responsive transactional email templates.
+Well designed and useful emails help keep open rates high. Use ([SendGrid’s Dynamic Transactional Email Templates]({{root_url}}/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/)) to help with the creation of responsive transactional email templates.
 
 </call-out>
 
 Read more about Transactional Email in the [SendGrid Guide]({{root_url}}/glossary/transactional-email/).
 
-## 	How to send an Transactional Email
+## 	How to send a Transactional Email
 
-Once your SendGrid account is setup, you have choices on how to send the emails to your users.
+Once your SendGrid account is set up, you have choices on how to send the emails to your users.
 
 1. Send [via SMTP]({{root_url}}/sending-email/getting-started-smtp/)
 2. Send [via API]({{root_url}}/api-reference)

@@ -52,6 +52,11 @@ Each SMTP call you make returns a response. `200` responses are usually success 
     <td>The message simply failed, usually due to a far-end server error. We continue to retry messages for up to 72 hours.</td>
   </tr>
   <tr>
+    <td>451</td>
+    <td>`Authentication failed: Maximum credits exceeded`</td>
+    <td>There is a credit limit of emails per day enforced in error. [Contact support](https://support.sendgrid.com/hc/en-us) to remove that limit.</td>
+  </tr>
+  <tr>
     <td>452</td>
     <td>`Too many recipients received this hour (throttled)`</td>
     <td>The message has been deferred due to insufficient system storage. We continue to retry messages for up to 72 hours.</td>

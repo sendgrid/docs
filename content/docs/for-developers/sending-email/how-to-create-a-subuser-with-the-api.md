@@ -12,11 +12,11 @@ navigation:
   show: true
 ---
 
-Creating a new subuser through SendGrid's API is a multi-step process. This guide will walk you through the necessary steps in order to create a new subuser account using only API calls.
+Creating a new subuser through SendGrid's API is a multi-step process. This guide will walk you through the necessary steps to create a new subuser account using only API calls.
 
 ## Establish the New Subuser (required)
 
-With the [subuser creation API call]({{root_url}}/API_Reference/Customer_Subuser_API/subusers.html) you will be able to establish the new subuser's account and profile settings. This call will create the new subuser account, however, it does not apply the sending IP for the account, nor does it establish a domain authentication entry or enable website/SMTP access for the subuser.
+With the [subuser creation API call]({{root_url}}/API_Reference/Customer_Subuser_API/subusers.html) you will be able to establish the new subuser's account and profile settings. This call will create the new subuser account. However, it does not apply the sending IP for the account, nor does it establish a domain authentication entry or enable website/SMTP access for the subuser.
 
 #### Call Example
 
@@ -38,17 +38,17 @@ Now that you have created the new subuser account, you will need to [add an IP](
 https://api.sendgrid.com/apiv2/customer.ip.xml?api_user=ryan.burrer@sendgrid.com&api_key=xxxxxx&list=all
 ```
 
-When defining the parameter 'list' there are a few options you can choose:
+When defining the parameter 'list', there are a few options you can choose:
 
 - **All** - Will list all of the IPs on your account, taken or available.
 - **Free** - Will list all the free IPs on your account. For instance, if an IP is in use by a subuser or parent account then that IP will not be listed.
-- **Taken** - Will list all of the IP addresses that are assigned to your parent and/or subuser accounts.
+- **Taken** - Will list all of the IP addresses that are assigned to your parent and subuser accounts.
 - **Available** - Will list all of the unassigned IP addresses for the account. If a subuser is deactivated _and it _is assigned an IP, that IP will show up on this list since that IP address is not technically in use.
 <center>
 <strong>Response Example<br></strong><img src="http://content.screencast.com/users/Ryan.Burrer/folders/Jing/media/0dc1923b-fff9-4446-aff1-5dcab41929a4/00000096.png" alt="" align="middle">
 </center>
 
-After you have selected the IP that you wish to assign to your subuser account, simply make the API call to [append the IP address](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/ip_management.html#subuser-ip-assignment).
+After you have selected the IP that you wish to assign to your subuser account, make the API call to [append the IP address](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/ip_management.html#subuser-ip-assignment).
 
 #### Call Example
 ```
@@ -102,7 +102,7 @@ https://api.sendgrid.com/apiv2/customer.whitelabel.json?api_user=ryan.burrer@sen
 
 ## Authenticating the Subuser to Have Website/SMTP Access (required)
 
-The final step in creating your new subuser requires you to simply [activate the subuser]({{root_url}}/API_Reference/Customer_Subuser_API/authenticate_a_subuser.html) account so that they have a website and SMTP access.
+The final step in creating your new subuser requires you to [activate the subuser]({{root_url}}/API_Reference/Customer_Subuser_API/authenticate_a_subuser.html) account so that they have a website and SMTP access.
 
 #### Call Example
 ```

@@ -37,6 +37,11 @@ Substitutions are limited to 10000 bytes per personalization block.
 
 </call-out>
 
+<call-out type="warning">
+
+When passing substitutions please make sure to only use strings as shown in our examples. Any other type could result in unintended behavior.
+
+</call-out>
 
 How you format your substitution tags may depend on the library you use to create your SMTP connection, the language you are writing your code in, or any intermediate mail servers that your servers will send mail through. In some cases -subVal- may be the best choice while in other %subVal% or #subVal# may make more sense. It is best to avoid characters that have special meaning in HTML, such as <,>, and &. These might end up encoded and will not be properly substituted.
 
