@@ -152,6 +152,7 @@ There are several operators and keywords that you can use to build [Compound que
 - AND
 - BETWEEN
 - NOT BETWEEN
+- CONTAINS
 - DAY
 - FALSE
 - HOUR
@@ -228,7 +229,7 @@ This is a full list of basic query types and examples: (replace the data in quot
  </tr>
  <tr>
    <td><code>events</code></td>
-   <td><code>status="processed"</code></td>
+   <td><code>((Contains(events,"processed")))</code></td>
  </tr>
  <tr>
    <td><code>originating_ip</code> - this is the IP address of the person sending the message</td>
