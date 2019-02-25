@@ -72,6 +72,16 @@ If you are participating in the Automation closed beta, you will add the unsubsc
 
 For more information on the Automation beta, see our [Email Marketing Automation](https://sendgrid.com/solutions/marketing-automation/) page.
 
+## Using a Custom Unsubscribe Link
+
+While SendGrid Unsubscribe Groups are a powerful way to manage unsubscribes and email preferences, we realize some senders may have their own subscription management tools. For these senders, Marketing Campaigns supports custom unsubscribe links as well.
+
+If you would like to use a custom URL for your unsubscribe link, navigate to **Settings** in the left hand sidebar and select the **Recipients** dropdown menu. Under **Unsubscribe Group**, select **Use Custom Link...**
+
+This will expand a new field where you can insert a URL for one of your own pages where recipients can manage their subscription preferences.
+
+To place your Custom Unsubscribe link into your email, highlight any text within the body of your email and click the small link icon to specify a hyperlink. In the URL field that appears, enter the tag `[Unsubscribe]`. Since you've specified your Custom Unsubscribe Link in the Settings pannel, SendGrid will replace the Unsubscribe Tag with your custom URL.
+
 ## Add recipients to an Unsubscribe Group
 
 *To upload a CSV:*
