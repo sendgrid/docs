@@ -383,7 +383,7 @@ Have feedback or questions? We welcome your thoughts at email_automation@sendgri
     <td>LIVE</td>
   </tr>
   <tr>
-    <td>Ability to search and delete contacts.</td>
+    <td>Ability to search for contacts within All Contacts or specific lists.</td>
     <td>In progress</td>
   </tr>
 </table>
@@ -395,20 +395,28 @@ Have feedback or questions? We welcome your thoughts at email_automation@sendgri
     <th>Deliverable</th>
     <th>Status</th>
   </tr>
-   <tr>
+  <tr>
+    <td>Ability to delete contacts from All Contacts or specific lists.</td>
+    <td>In progress</td>
+  </tr>
+  <tr>
     <td>Exit criteria of no longer meeting entry criteria.</td>
     <td>Planned</td>
+  </tr>
+  <tr>
+    <td>Ability to save an email design as a template.</td>
+    <td>In progress</td>
   </tr>
   <tr>
     <td>Ability to view the details of an Automation Contact list</td>
     <td>In progress</td>
   </tr>
   <tr>
-    <td>Ability to import custom fields and use them for email content and subject line personalization.</td>
+    <td>Ability to import custom fields via API and use them for email content and subject line personalization.</td>
     <td>Planned</td>
   </tr>
   <tr>
-    <td>Ability to save an email design as a template.</td>
+    <td>Ability to send a one-time campaign to a list.</td>
     <td>In progress</td>
   </tr>
   <tr>
@@ -424,12 +432,20 @@ Have feedback or questions? We welcome your thoughts at email_automation@sendgri
     <th>Deliverable</th>
     <th>Status</th>
   </tr>
-  <tr>
-    <td>Ability to trigger an automation when a contact joins a segment</td>
+   <tr>
+    <td>Ability to view contact-level engagement stats (who opened/clicked, etc.).</td>
+    <td>Planned</td>
+  </tr>
+   <tr>
+    <td>Ability to see which links were clicked in an email.</td>
     <td>Planned</td>
   </tr>
   <tr>
-    <td>Ability to trigger an automation based on a calendar date</td>
+    <td>Availability of Automations API (configure an Automation via API).</td>
+    <td>Planned</td>
+  </tr>
+  <tr>
+    <td>Ability to trigger an automation when a contact joins a segment.</td>
     <td>Planned</td>
   </tr>
   <tr>
