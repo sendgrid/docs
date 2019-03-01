@@ -84,6 +84,12 @@ Automation shares Unsubscribe Groups with the rest of SendGrid. If a contact uns
 
 A great reason to create an Unsubscribe Group specific to the automations you're setting live is that at this stage of the beta, you cannot remove a contact from an Automation once they've entered it (exit criteria is limited to contacts receiving all emails in the series). However, if you create an Unsubscribe Group specific to your automation, you can remove contacts from an automation by [adding them to that Unsubscribe Group]({{root_url}}/ui/sending-email/unsubscribe-groups/#upload-a-csv-to-add-unsubscribe-group-recipients).
 
+<call-out>
+
+Currently, classic '[unsubscribe]' tags do not work in the Automation beta. To add an unsubscribe group to your automation emails, use the following format: '{{[unsubscribe]}}'. In addition, the [asm format]({{root_url}}/ui/sending-email/editor/#using-substitution-tags) tags work in all variations SendGrid email.
+
+</call-out>
+
 For information on creating Unsubscribe Groups, see [Create and Manage Unsubscribe Groups]({{root_url}}/ui/sending-email/create-and-manage-unsubscribe-groups/).
 
 ### Add a Sender
