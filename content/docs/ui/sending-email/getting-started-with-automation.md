@@ -38,11 +38,10 @@ Unsubscribe Groups and Senders **are shared** between Marketing Campaigns and Au
 
 Additionally, during this phase of the beta, some Marketing Campaigns features will not be available in Automation. For easy reference, the primary feature gaps include:
 * Ability to view Automation contact list details
-* Ability to search, edit, or export Automation contacts
+* Ability to search Automation contacts
 * Create or use custom fields
 * Create or use segments
 * A/B testing of email content and subject lines
-* Some non-essential editor functionality
 * Link click tracking
 
 We’ll be working iteratively to close these feature gaps as quickly as possible.
