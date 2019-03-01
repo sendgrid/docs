@@ -82,7 +82,7 @@ Successful API key implementation Response:
   
   ```bash
   => 201 created
-{"api_key":"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","api_key_id":"rGaWG-xBTHiBuhCLxWZ0Hg","name":"new api key","scope_set_id":"00766089-9730-4f16-8191-b8bedc5f57f5"}
+{"api_key":"SG.XXXXXXXXXXXXXXXXXXXXXXXXX","api_key_id":"sample_id","name":"new api key","scope_set_id":"00766089-9730-4f16-8191-b8bedc5f57f5"}
 ```
 
 Once this has been done, the Subuser has been created. From this point on, we’ll cover implementing Click Tracking, Open Tracking, and the Event Webhook for those Subusers.
