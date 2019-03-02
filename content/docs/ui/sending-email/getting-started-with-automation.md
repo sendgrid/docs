@@ -38,11 +38,10 @@ Unsubscribe Groups and Senders **are shared** between Marketing Campaigns and Au
 
 Additionally, during this phase of the beta, some Marketing Campaigns features will not be available in Automation. For easy reference, the primary feature gaps include:
 * Ability to view Automation contact list details
-* Ability to search, edit, or export Automation contacts
+* Ability to search Automation contacts
 * Create or use custom fields
 * Create or use segments
 * A/B testing of email content and subject lines
-* Some non-essential editor functionality
 * Link click tracking
 
 We’ll be working iteratively to close these feature gaps as quickly as possible.
@@ -83,6 +82,12 @@ You can add up to 10 email addresses to Automation notifications.
 Automation shares Unsubscribe Groups with the rest of SendGrid. If a contact unsubscribes from an email you send via Automation, they're unsubscribing from any emails you send using that Unsubscribe Group in Marketing Campaigns as well.
 
 A great reason to create an Unsubscribe Group specific to the automations you're setting live is that at this stage of the beta, you cannot remove a contact from an Automation once they've entered it (exit criteria is limited to contacts receiving all emails in the series). However, if you create an Unsubscribe Group specific to your automation, you can remove contacts from an automation by [adding them to that Unsubscribe Group]({{root_url}}/ui/sending-email/unsubscribe-groups/#upload-a-csv-to-add-unsubscribe-group-recipients).
+
+<call-out>
+
+Currently, classic '[unsubscribe]' tags do not work in the Automation beta. To add an unsubscribe group to your automation emails, use the following format: '{{[unsubscribe]}}'. In addition, the [asm format]({{root_url}}/ui/sending-email/editor/#using-substitution-tags) tags work in all variations SendGrid email.
+
+</call-out>
 
 For information on creating Unsubscribe Groups, see [Create and Manage Unsubscribe Groups]({{root_url}}/ui/sending-email/create-and-manage-unsubscribe-groups/).
 
