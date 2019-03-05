@@ -68,7 +68,7 @@ Making it easy for contacts to opt out of content you're sending isn't just the 
 <a href="[unsubscribe]">Click here to unsubscribe.</a>
 ```
 
-If you are participating in the Automation closed beta, you will add the unsubscribe tag using the following format:  ``{{[unsubscribe]}}``
+If you are participating in the Automation closed beta, you will add the unsubscribe tag using the following format:  ``{{unsubscribe}}``
 
 For more information on the Automation beta, see our [Email Marketing Automation](https://sendgrid.com/solutions/marketing-automation/) page.
 
