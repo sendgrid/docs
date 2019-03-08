@@ -8,3 +8,13 @@ exports.onClientEntry = () => {
     document.head.appendChild(link);
   }());
 };
+
+/**
+ * Push PageCategory as 'docs' to dataLayer
+ */
+exports.onRouteUpdate = () => {
+  window.dataLayer = [
+    { PageCategory: 'docs' },
+    ...window.dataLayer,
+  ];
+};

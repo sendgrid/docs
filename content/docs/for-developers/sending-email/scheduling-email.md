@@ -25,7 +25,7 @@ If you are using Marketing Campaigns, you can schedule a time to send your campa
 You can also schedule your campaigns with the [Marketing Campaigns API]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html#Schedule-a-Campaign-POST).
 
 ## 2. API
-You can schedule a time to send your email by using the `send_at` object of the `POST /mail/send` method of the [V3 API]({{root_url}}/API_Reference/api-reference). For more information about scheduling and stopping scheduled sends with the API, see [Can I Stop a Scheduled Send]({{root_url}}/for-developers/sending-email/stopping-a-secheduled-send/).
+You can schedule a time to send your email by using the `send_at` object of the `POST /mail/send` method of the [V3 API]({{root_url}}/api-reference). For more information about scheduling and stopping scheduled sends with the API, see [Can I Stop an in-progress send]({{root_url}}/for-developers/sending-email/stopping-an-in-progress-send/).
 
 
 ## 3. SMTP API
