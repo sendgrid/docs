@@ -34,14 +34,14 @@ Before you create and send a legacy transactional template email over SMTP you n
 
 * [Integrate with the SendGrid SMTP API]({{root_url}}/for-developers/sending-email/integrating-with-the-smtp-api/)
 * [Send a test email over SMTP]({{root_url}}/for-developers/sending-email/getting-started-smtp/)
-* [Build an SMTP Email]({{root_url}}/for-developers/sending-email/building-an-smtp-email/)
+* [Build an SMTP Email]({{root_url}}/for-developers/sending-email/building-an-x-smtpapi-header/)
 * [Create a Legacy Transactional Template](https://sendgrid.com/templates)
 
 ## 	Sending a test Email
 
 ### Sending a test SMTP email with Telnet
 
-[Sending a test SMTP email with Telnet](/ui/sending-email/getting-started-smtp/#sending-a-test-smtp-email-with-telnet) is one of the most basic tests you can do. This test is useful in checking the connection and determining if the most basic of problems:
+[Sending a test SMTP email with Telnet](/for-developers/sending-email/getting-started-smtp/#sending-a-test-smtp-email-with-telnet) is one of the most basic tests you can do. This test is useful in checking the connection and determining if the most basic of problems:
 
 * Is the server up?
 * Is there a firewall blocking communication?
