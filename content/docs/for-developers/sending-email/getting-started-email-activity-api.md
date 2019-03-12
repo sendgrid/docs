@@ -224,19 +224,15 @@ This is a full list of basic query types and examples: (replace the data in quot
    <td><code>api_key_id="SG.xxxxxxxxxxxxxxxx"</code> (everything before the middle dot in the API key)</td>
  </tr>
  <tr>
-   <td><code>api_key_name</code></td>
-   <td><code>api_key_name="test_name"</code></td>
- </tr>
- <tr>
    <td><code>events</code></td>
-   <td><code>((Contains(events,"processed")))</code></td>
+   <td><code>(Contains(events,"processed"))</code></td>
  </tr>
  <tr>
    <td><code>originating_ip</code> - this is the IP address of the person sending the message</td>
    <td><code>originating_ip="4.77.777.77"</code></td>
  <tr>
    <td><code>categories</code> - custom tags that you create</td>
-   <td><code>categories="category_example"</code></td>
+   <td><code>(Contains(categories,"categories_example"))</code></td>
  </tr>
  <tr>
    <td><code>unique_args</code> - custom tracking arguments that you can attach to SMTP API calls</td>
@@ -255,12 +251,8 @@ This is a full list of basic query types and examples: (replace the data in quot
    <td><code>clicks="0"</code></td>
  </tr>
  <tr>
-   <td><code>unsubscribe_group_name</code></td>
-   <td><code>unsubscribe_group_name="Global Unsubscribes"</code></td>
- </tr>
- <tr>
-   <td><code>unsubscribe_group_id</code></td>
-   <td><code>unsubscribe_group_id="1041"</code></td>
+   <td><code>asm_group_id</code></td>
+   <td><code>asm_group_id="1041"</code></td>
  </tr>
  <tr>
    <td><code>teammate</code> - teammates username</td>
