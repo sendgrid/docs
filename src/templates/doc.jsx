@@ -37,7 +37,6 @@ class DocTemplate extends React.Component {
   getRepoLink() {
     const {
       permalink,
-      slug,
     } = this.props.data.doc.fields;
 
     const absPath = this.props.data.doc.fileAbsolutePath;
