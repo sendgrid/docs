@@ -39,10 +39,13 @@ class DocTemplate extends React.Component {
       permalink,
       slug,
     } = this.props.data.doc.fields;
-    const path = permalink.replace(`${slug}/`, '');
+
     const absPath = this.props.data.doc.fileAbsolutePath;
     const filename = absPath.substring(absPath.lastIndexOf('/') + 1);
+    const fileSlug = filename.replace('.md', '');
+    const path = permalink.replace(`${fileSlug}/`, '');
     const gitHubURL = config.gitHubMarkdownPath + path + filename;
+
     return gitHubURL;
   }
 
