@@ -349,7 +349,8 @@ Resulting replacement:
 Here are two combined examples:
 
 - [Dynamic content creation](#dynamic-content-creation)
-- [Dynamic content creation with dynamic parts](#dynamic-content-creation-with-dynamic-parts)
+- [Dynamic content creation with dynamic parts 1](#dynamic-content-creation-with-dynamic-parts-1)
+- [Dynamic content creation with dynamic parts 2](#dynamic-content-creation-with-dynamic-parts-2)
 
  ### 	Dynamic content creation
 
@@ -397,7 +398,7 @@ Resulting replacement:
 <p>shirt</p>
 ```
 
- ### 	Dynamic content creation with dynamic parts
+ ### 	Dynamic content creation with dynamic parts 1
 
 HTML should contain:
 ```
@@ -422,8 +423,6 @@ HTML should contain:
 
 Test Data should contain:
 ```
-16
-May 11th 2018, 2:18:20 pm
 {
    "user":{
       "story":[
@@ -451,6 +450,32 @@ Resulting replacement:
 <p>shoes</p>
 <p>1/4/2017</p>
 <p>shirt</p>
+```
+
+ ### 	Dynamic content creation with dynamic parts 2
+
+HTML should contain:
+```
+{{#if people}}
+  <p>People:</p>
+  {{#each people}}
+    <p>{{this.name}}</p>
+  {{/each}}
+{{/if}}
+```
+
+Test Data should contain:
+```
+{
+  "people":[{"name":"Bob"},{"name":"Sally"}]
+}
+```
+
+Resulting replacement:
+```
+<p>People:</p>
+<p>Bob</p>
+<p>Sally</p>
 ```
 
 ## 	Additional Resources
