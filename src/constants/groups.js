@@ -164,6 +164,9 @@ const GROUPS = {
     name: 'Ungrouped',
     order: null,
   },
+  'expert-insights': {
+   name: 'Expert Insights',
+   order: null,
 };
 
 
