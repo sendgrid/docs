@@ -173,6 +173,12 @@ If you keep the entry criteria as "All Contacts" it's important to remember that
 
 Email testing offers in-app spam testing, inbox rendering previews, and link validation right within the Automation experience. It allows you to preview how an email is likely to perform across a wide range of inbox providers, devices and spam filters, before sending.
 
+<call-out>
+
+Email Testing is currently in closed beta and available to a limited number of Automation participants. If you’re interested in participating, please email email_automation@sendgrid.com.
+
+</call-out>
+
 - **Inbox Rendering Test:** Displays how an email message is rendered and appears across a select group of inbox providers and devices.
 - **Spam Test:** Shows how an email performs against the world’s most powerful consumer (B2C) and enterprise (B2B) spam filters.
 - **Link Validation Test:** Tests all links/URLs within a message to ensure they are valid. The test checks for redirects, domain reputation and critical metadata (like title text).
