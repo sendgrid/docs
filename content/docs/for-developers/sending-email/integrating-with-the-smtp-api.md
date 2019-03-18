@@ -22,7 +22,7 @@ navigation:
 4. Set your password to the API key generated in step 1.
 5. Set the port to `587`.
 
-Now that you've integrated, learn to [build SMTP email]({{root_url}}/API_Reference/SMTP_API/building_an_smtp_email.html).
+Now that you've integrated, learn to [build SMTP email]({{root_url}}/for-developers/sending-email/building-an-x-smtpapi-header/).
 
  ### 	SMTP Ports
 
