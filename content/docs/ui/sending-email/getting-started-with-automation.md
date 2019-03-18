@@ -169,6 +169,46 @@ If you keep the entry criteria as "All Contacts" it's important to remember that
 
 1. Repeat steps 5-16 from creating a custom automation.
 
+## Email Testing
+
+Email testing offers in-app spam testing, inbox rendering previews, and link validation right within the Automation experience. It allows you to preview how an email is likely to perform across a wide range of inbox providers, devices and spam filters, before sending.
+
+- **Inbox Rendering Test:** Displays how an email message is rendered and appears across a select group of inbox providers and devices.
+- **Spam Test:** Shows how an email performs against the world’s most powerful consumer (B2C) and enterprise (B2B) spam filters.
+- **Link Validation Test:** Tests all links/URLs within a message to ensure they are valid. The test checks for redirects, domain reputation and critical metadata (like title text).
+
+*To test an email:*
+
+1. From inside either the Design or Code editor, navigate to the Settings tab.
+1. Scroll down and click on the **Send Test** dropdown to expand testing options.
+1. Below the option to send a test email, you will see an **Email Testing** option. To create a test, click **Create Test**.
+
+<call-out>
+
+Before you can use Email Testing, you need to specify a Sender and add a Subject to the email you want to test.
+
+</call-out>
+
+![]({{root_url}}/img/auto-email-testing-launch.png "Launch Automated Email Testing")
+
+4. Once the Email Testing page opens, choose which inboxes you’d like to test by selecting the checkbox next to the name of the client. 
+
+<call-out>
+
+During the beta program, every email test will automatically run all three types: the Inbox, Link, and Spam Tests.
+
+</call-out>
+
+5. Once you've selected all of the inboxes for the rendering test you want to run, click **Run Test**. 
+6. It may take a moment to begin seeing results. When the test is finished running, the test results appear on the View Test Results tab. Click a thumbnail of a render to open the image and view in greater detail.  
+7. From the View Test Results tab, you can select the **Inbox**, **Spam**, or **Links** tabs to view all of the details for your test.
+
+<call-out>
+
+During the beta program, only the latest test that you’ve run is saved to your account. To access the results once you’ve left Email Testing, simply click **Create Test** in the *Settings* tab and select the **View Test Results** tab.
+
+</call-out>
+
 ## Manage Contacts
 
 Adding contacts to a list that's designated as the entry criteria for an automation will trigger that automation. The Automation beta experience offers several ways to add contacts to lists, including CSV upload, using signup forms, or via the Contact Management APIs. 
