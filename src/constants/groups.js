@@ -167,6 +167,7 @@ const GROUPS = {
   'expert-insights': {
    name: 'Expert Insights',
    order: null,
+  },
 };
 
 
