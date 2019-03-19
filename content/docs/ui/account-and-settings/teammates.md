@@ -16,7 +16,7 @@ Teammates allows multiple users, or teammates, to send email from a single SendG
 
 Free and Essentials customers can create 1 teammate per account, and Pro customers or higher packages up to 1000 teammates.
 
-</callout>
+</call-out>
 
 ## 	Adding Teammates
 
