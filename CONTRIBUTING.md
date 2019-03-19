@@ -49,14 +49,14 @@ When you create a Pull Request, after a few seconds, a comment will appear with 
 There are a few ways to contribute, which we'll enumerate below:
 
 <a name="feature-request"></a>
-## Feature Request
+## Content Request
 
-If you'd like to make a feature request, please read this section.
+If you'd like to make a content request, please read this section.
 
-The GitHub issue tracker is the preferred channel for library feature requests, but please respect the following restrictions:
+The GitHub issue tracker is the preferred channel for docs content requests, but please respect the following restrictions:
 
-- Please **search for existing issues** in order to ensure we don't have duplicate bugs/feature requests.
-- Please be respectful and considerate of others when commenting on issues
+- Please **search for existing issues** in order to ensure we don't have duplicate bugs/content requests.
+- Please be respectful and considerate of others when commenting on issues.
 
 <a name="improvements-to-the-codebase"></a>
 ## Improvements to the Codebase
