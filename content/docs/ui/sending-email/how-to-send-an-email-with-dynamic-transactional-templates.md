@@ -25,7 +25,7 @@ Before you create and send an email using a dynamic transactional template you n
 2. Add a unique template name and then click **Save**.
 3. To begin editing your new template, click **Add Version**.
 4. Select an editor and click **Continue**.
-5. Design your template. For more information on using Handlebars, see [Using Handlebars]({{root_url}}/ui/sending-email/using-handlebars/).
+5. Design your template. For more information on using Handlebars, see [Using Handlebars]({{root_url}}/for-developers/sending-email/using-handlebars/).
 
 ##  Unsubscribe modules for dynamic transactional templates
 
@@ -145,4 +145,4 @@ You can also copy your template ID from the app and paste it into your call.
 
 - [Mail Send with Dynamic Transactional Templates](https://dynamic-templates.api-docs.io/3.0)
 - [Unsubscribe Groups]({{root_url}}/ui/sending-email/group-unsubscribes/)
-- [Using Handlebars]({{root_url}}/ui/sending-email/using-handlebars/)
+- [Using Handlebars]({{root_url}}/for-developers/sending-email/using-handlebars/)
