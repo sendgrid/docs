@@ -4,7 +4,7 @@ weight: 0
 title: Subscribing to Expert Insights
 group: expert-insights
 seo:
-  title: Use Expert Insights to enhance your email performance
+  title: Subscribe to Expert Insights and enhance your email performance
   description: Learn how subscribing to the Expert Insights Report can enhance your email performance
   keywords: 
 navigation:
