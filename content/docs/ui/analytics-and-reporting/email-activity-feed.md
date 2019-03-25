@@ -102,9 +102,9 @@ The Email Activity Feed allows you to view specific information about messages s
   </tr>
 </table>
 
-<call-out>
-  
-  Warning: Parse events are not available within the Activity Feed. Please utilize your parse endpoint to determine whether or not these events are posting properly. 
+<call-out type="warning">
+
+Parse events are not available within the Activity Feed. Please utilize your parse endpoint to determine whether or not these events are posting properly. 
   
 </call-out>
 
