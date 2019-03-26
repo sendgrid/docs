@@ -57,6 +57,6 @@ s2.domainkey.yourdomain.com. | TXT | v=spf1 include:sendgrid.net ~all
 
 <call-out>
 
-Get additional onboarding support. Save time, increase the quality of your sending, and feel confident you are set up for long-term success with [SendGrid Onboarding Services](https://sendgrid.com/marketing/onboarding-services-request/?utm_source=docs).
+Get additional implementation support. Save time, increase the quality of your sending, and feel confident you are set up for long-term success with [SendGrid Implementation Services](https://sendgrid.com/marketing/onboarding-services-request/?utm_source=docs).
 
 </call-out>
