@@ -9,8 +9,9 @@ seo:
   keywords: 
 navigation:
   show: true
----                          
-Expert Insights is a monthly report that will give you deeper visibility into the health and performance of your email program. This report equips you with the data and insights you need to reach the inbox and increase your email ROI.  ** See an example of [Expert Insights Report](https://sendgrid.com/wp-content/uploads/pdf/Expert-Insights-Sample.pdf) **
+---  
+
+Expert Insights is a monthly report that will give you deeper visibility into the health and performance of your email program. This report equips you with the data and insights you need to reach the inbox and increase your email ROI.  **See an example of [Expert Insights Report](https://sendgrid.com/wp-content/uploads/pdf/Expert-Insights-Sample.pdf)**
 
 Expert Insights is designed to help you:
 * Understand your performance trends in an easy-to-understand, shareable format.
@@ -28,7 +29,7 @@ Currently, only Pro and Premier accounts can purchase Expert Insights.
 
 </call-out>
 
-To get the most out of Expert Insights, we recommend that customers have [click- and open-tracking enabled](https://sendgrid.com/docs/ui/account-and-settings/tracking/) and that customers use categories to separate their email data. 
+To get the most out of Expert Insights, we recommend that customers have [click- and open-tracking enabled]({{root_url}}/ui/account-and-settings/tracking/) and that customers use categories to separate their email data. 
 
 
 [Categories](https://sendgrid.com/docs/ui/analytics-and-reporting/categories/) help organize your email analytics by enabling you to tag emails you send by topics you define. We recommend using 3-5 categories so we can provide more detailed email analytics in your Expert Insights report.
@@ -50,7 +51,7 @@ For privacy reasons, your first Expert Insights report will cover 37 days of dat
  
 <call-out>
  
-Need additional help? SendGrid's team of Email Consultants have over 95 years of combined email experience. If you're having any email issues or would like advice on how to optimize engagement, talk to one of our consultants [talk to one of our consultants](https://sendgrid.com/contact-expert-services/) today.
+Need additional help? SendGrid's team of Email Consultants have over 95 years of combined email experience. If you're having any email issues or would like advice on how to optimize engagement, [talk to one of our consultants](https://sendgrid.com/contact-expert-services/) today.
 
 </call-out>
 
