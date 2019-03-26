@@ -48,12 +48,13 @@ Reports are generated per [subuser.] (https://sendgrid.com/docs/ui/account-and-s
 For privacy reasons, your first Expert Insights report will cover 37 days of data or as much time as you’ve been a SendGrid customer. If you're a new customer, SendGrid will populate areas of the report that look back past 37 days over time.
 
 </call-out>
- 
+
 <call-out>
- 
+
 Need additional help? SendGrid's team of Email Consultants have over 95 years of combined email experience. If you're having any email issues or would like advice on how to optimize engagement, [talk to one of our consultants](https://sendgrid.com/contact-expert-services/) today.
 
 </call-out>
+ 
 
 ## Managing Your Expert Insights Subscription
 
