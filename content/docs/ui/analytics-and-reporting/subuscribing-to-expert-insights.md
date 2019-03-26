@@ -22,11 +22,11 @@ Expert Insights is designed to help you:
 
 Expert Insights analyzes your email funnel, providing visibility into how your email is performing as it is sent, delivered, opened, and clicked by your recipients. The report highlights any potential leakage points (for example, blocked emails) and opportunities to improve deliverability and engagement based on our deep expertise in email. This report spans a calendar month. Throughout the report, we compare data period-to-period (30-days to the previous 30-days). 
 
-    <call-out>
+<call-out>
 
 Currently, only Pro and Premier accounts can purchase Expert Insights.
 
-    </call-out>
+</call-out>
 
 To get the most out of Expert Insights, we recommend that customers have [click- and open-tracking enabled](https://sendgrid.com/docs/ui/account-and-settings/tracking/) and that customers use categories to separate their email data. 
 
@@ -42,17 +42,17 @@ Reports are generated per [subuser.] (https://sendgrid.com/docs/ui/account-and-s
 1. After you complete your purchase, you will receive your first report at the email addresses you’ve provided us as well as at your account administration email address within 1-2 business days. Moving forward, Expert Insights will appear on your regular monthly [invoice]({{root_url}}/ui/account-and-settings/reading-your-invoice/). If you purchase the report before the first of the month, prorated charges for your report will appear on your next invoice, as well as the full charge for next month’s report.
 1. We will send your monthly report to the emails you’ve provided us at the beginning of each month.
 
-  <call-out>
+<call-out>
 
 For privacy reasons, your first Expert Insights report will cover 37 days of data or as much time as you’ve been a SendGrid customer. If you're a new customer, SendGrid will populate areas of the report that look back past 37 days over time.
 
-  <call-out>
+</call-out>
  
- <call-out>
+<call-out>
  
 Need additional help? SendGrid's team of Email Consultants have over 95 years of combined email experience. If you're having any email issues or would like advice on how to optimize engagement, talk to one of our consultants [talk to one of our consultants](https://sendgrid.com/contact-expert-services/) today.
 
-  <call-out>
+</call-out>
 
 ## Managing Your Expert Insights Subscription
 
