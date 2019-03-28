@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: 
+title: Native Advertising
 group: glossary
 seo:
   title: Native Advertising
