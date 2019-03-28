@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: 
+title: Direct Response Advertising
 group: glossary
 seo:
   title: Direct Response Advertising 
