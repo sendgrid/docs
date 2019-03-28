@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: 
+title: Programmatic Media Buying
 group: glossary
 seo:
   title: Programmatic Media Buying
