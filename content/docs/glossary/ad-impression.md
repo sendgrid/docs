@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: 
+title: Ad Impression
 group: glossary
 seo:
   title: Ad Impression
@@ -10,8 +10,6 @@ seo:
 navigation:
   show: true
 ---
-
-
 
 ## Ad Impression
 
