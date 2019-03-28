@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: 
+title: Expandable Banner
 group: glossary
 seo:
   title: Expandable Banner
