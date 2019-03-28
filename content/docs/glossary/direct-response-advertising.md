@@ -1,4 +1,3 @@
-
 ---
 layout: page
 weight: 0
