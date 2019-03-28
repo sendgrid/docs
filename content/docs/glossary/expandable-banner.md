@@ -11,8 +11,6 @@ navigation:
   show: true
 ---
 
-
-
 ## Expandable Banner
 
 An Expandable Banner can increase in size when the user clicks or hovers over the banner.
