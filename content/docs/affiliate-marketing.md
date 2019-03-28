@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: 
+title: Affiliate Marketing
 group: glossary
 seo:
   title: Affiliate Marketing
