@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: 
+title: Flighting in Advertising
 group: glossary
 seo:
   title: Flighting in Advertising
