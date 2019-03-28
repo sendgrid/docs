@@ -11,10 +11,6 @@ navigation:
   show: true
 ---
 
-
-
 ## Frequency Capping
 
 In advertising, frequency capping refers to the maximum number of times a specific visitor to a website is shown a particular advertisement.
-
-
