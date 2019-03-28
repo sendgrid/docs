@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: 
+title: Demand-Side Platform (DSP)
 group: glossary
 seo:
   title: Demand-Side Platform (DSP)
