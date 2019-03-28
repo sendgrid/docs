@@ -11,8 +11,6 @@ navigation:
   show: true
 ---
 
-
-
 ## Flighting in Advertising 
 
 Flighting or flight refers to the time when an advertising campaign is running. 
