@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: 
+title: Frequency Capping
 group: glossary
 seo:
   title: Frequency Capping
