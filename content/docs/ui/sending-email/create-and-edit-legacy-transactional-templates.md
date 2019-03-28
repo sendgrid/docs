@@ -1,8 +1,8 @@
 ---
-title: Create and Edit Transactional Templates
+title: Create and Edit Legacy Transactional Templates
 group: transactional-email
 seo:
-  title: Create and Edit Templates
+  title: Create and Edit Legacy Transactional Templates
   description: Transactional email templates are pre-coded email layouts that anyone can use to easily create and send transactional emails.
   keywords: transactional email templates, email template, create templates
 weight: 80
