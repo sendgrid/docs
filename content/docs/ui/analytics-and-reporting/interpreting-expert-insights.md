@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-   
+title: Interpreting Expert Insights  
 group: analytics-reporting
 seo:
   title: Interpreting Expert Insights
