@@ -263,7 +263,7 @@ Each segment of your report has its thresholds. See table below for specific lim
 
 When you subscribe to Expert Insights, you get access to email strategies and best practices curated by our experts, including step-by-step instructions for how to resolve issues highlighted in the report. You can view an example of best practices you will receive [here.] (https://rise.articulate.com/share/VlJssyUNRN1dLEarFolNAx0teya492tR)
 
-    </call-out>
+  </call-out>
 
 ##  ISP (inbox service provider) data 
 
@@ -279,7 +279,7 @@ Throughout the report, we provide data on how your email is performing at top ma
 
 For privacy reasons, your first Expert Insights report will cover 37 days of data or as much time as you’ve been a SendGrid customer. If you're a new customer, SendGrid will populate areas of the report that look back past 37 days over time.
 
-    </call-out>
+  </call-out>
 
 ##  At a Glance
 
@@ -355,4 +355,4 @@ In the **Unique Opens by Device** chart, we define the categories as follows:
 
 Need additional help? SendGrid's team of Email Consultants have over 95 years of combined email experience. If you're having any email issues or would like advice on how to optimize engagement, [talk to one of our consultants](https://sendgrid.com/contact-expert-services/) today!
 
-    </call-out>
+   </call-out>
