@@ -27,7 +27,7 @@ It is much easier to establish a positive reputation as a new sender, than it is
 
 </call-out>
 
-<academy-link img="/img/SGA_WarmingUp750.png" courselink="https://rise.articulate.com/share/tDOA99ns4CTVTYLuXw00wn5KUTqsLaeO#/"">
+<academy-link img="/img/SGA_WarmingUp750.png" courselink="https://rise.articulate.com/share/tDOA99ns4CTVTYLuXw00wn5KUTqsLaeO#/">
 
 #### Warm Up Your Sending To Avoid Delivery Issues
 

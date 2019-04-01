@@ -22,7 +22,7 @@ navigation:
 4. Set your password to the API key generated in step 1.
 5. Set the port to `587`.
 
-Now that you've integrated, learn to [build SMTP email]({{root_url}}/for-developers/sending-email/building-an-smtp-email/).
+Now that you've integrated, learn to [build SMTP email]({{root_url}}/for-developers/sending-email/building-an-x-smtpapi-header/).
 
  ### 	SMTP Ports
 
@@ -41,4 +41,4 @@ Now that you've integrated, learn to [build SMTP email]({{root_url}}/for-develop
 - [Getting Started with the API]({{root_url}}/api-reference/)
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
 - [Getting Started with the SMTP API]({{root_url}}/for-developers/sending-email/getting-started-smtp/)
-- [Building an SMTP Email]({{root_url}}/for-developers/sending-email/building-an-smtp-email/)
+- [Building an SMTP Email]({{root_url}}/for-developers/sending-email/building-an-x-smtpapi-header/)
