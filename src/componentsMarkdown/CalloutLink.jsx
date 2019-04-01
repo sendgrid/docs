@@ -6,8 +6,7 @@ class CalloutLink extends React.Component {
     this.dataLayer = window.dataLayer || [];
   }
 
-  handleClick = (e) => {
-    e.preventDefault();
+  handleClick = () => {
     // If it's an academy link, push event to datalayer.
     if (this.props.link.includes('rise.articulate.com')) {
       console.log('track');
