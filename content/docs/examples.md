@@ -5,25 +5,25 @@ navigation:
   show: true
 ---
 
-## Academy Callout
+## Callout Link
 
 ```html
-<academy-link img="/img/search-darth-vader.gif" courselink="https://sendgrid.com/">
+<call-out-link linktext="Go To Course" img="/img/search-darth-vader.gif" link="https://rise.articulate.com/share/uGIBV4dMNFn-HzrIMDW_s2Kh4dxMH0vr#/">
 
 ### I'm a course call out title
 
 Montes sociis turpis egestas fermentum tempus lectus cubilia vulputate justo, placerat suscipit mollis nostra mauris at sed adipiscing, enim pharetra laoreet ridiculus litora nunc.
 
-</academy-link>
+</call-out-link>
 ```
 
-<academy-link img="/img/search-darth-vader.gif" courselink="https://sendgrid.com/">
+<call-out-link linktext="Go To Course" img="/img/search-darth-vader.gif" link="https://rise.articulate.com/share/uGIBV4dMNFn-HzrIMDW_s2Kh4dxMH0vr#/">
 
 ### I'm a course call out title
 
 Montes sociis turpis egestas fermentum tempus lectus cubilia vulputate justo, placerat suscipit mollis nostra mauris at sed adipiscing, enim pharetra laoreet ridiculus litora nunc.
 
-</academy-link>
+</call-out-link>
 
 ## Callouts
 
