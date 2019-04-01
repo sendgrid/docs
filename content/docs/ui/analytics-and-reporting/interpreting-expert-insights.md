@@ -1,4 +1,3 @@
-Pull Request
 ---
 layout: page
 weight: 0
@@ -10,6 +9,7 @@ seo:
   keywords: 
 navigation:
   show: true
+  
 ---
 
 The Expert Insights report contains delivery and engagement metrics from email sent through SendGrid. The report is divided into four sections:
