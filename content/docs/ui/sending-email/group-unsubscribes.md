@@ -13,7 +13,7 @@ navigation:
 
 A group unsubscribe happens when a recipient indicates that they would like to opt out from a specific type of email that you send via the [Unsubscribe Groups link](#group-unsubscribe-substitution-tag) from within your email. The list provided here can be filtered by email address or date.
 
-<call-out-link img="/img/email-scream750.png" courselink="https://rise.articulate.com/share/Kn6WQo6h1CNmMo9L5RhTnHoPls3sMcxr#/">
+<call-out-link linktext="Go To Course" img="/img/email-scream750.png" link="https://rise.articulate.com/share/Kn6WQo6h1CNmMo9L5RhTnHoPls3sMcxr#/">
 
 #### Offer Unsubscribe Options (and avoid the Spam folder)
 

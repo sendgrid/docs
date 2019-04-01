@@ -41,7 +41,7 @@ To view the unsubscribe preferences page, select the action menu next to an Unsu
 
 </call-out>
 
-<call-out-link img="/img/email-scream750.png" courselink="https://rise.articulate.com/share/Kn6WQo6h1CNmMo9L5RhTnHoPls3sMcxr#/">
+<call-out-link linktext="Go To Course" img="/img/email-scream750.png" link="https://rise.articulate.com/share/Kn6WQo6h1CNmMo9L5RhTnHoPls3sMcxr#/">
 
 #### Offer Unsubscribe Options (and avoid the Spam folder)
 

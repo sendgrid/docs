@@ -1,42 +1,49 @@
 import React from 'react';
 import config from '../../data/SiteConfig';
 
-class AcademyLink extends React.Component {
+class CalloutLink extends React.Component {
   componentDidMount() {
     this.dataLayer = window.dataLayer || [];
   }
 
-  handleClick = () => {
-    this.dataLayer.push({
-      event: 'customEvent',
-      eventCategory: 'Academy Callout',
-      eventAction: 'Click',
-      eventLabel: 'Go to Course',
-      eventValue: `${this.props.link}`,
-    });
+  handleClick = (e) => {
+    e.preventDefault();
+    // If it's an academy link, push event to datalayer.
+    if (this.props.link.includes('rise.articulate.com')) {
+      console.log('track');
+      this.dataLayer.push({
+        event: 'customEvent',
+        eventCategory: 'Academy Callout',
+        eventAction: 'Click',
+        eventLabel: 'Go to Course',
+        eventValue: `${this.props.link}`,
+      });
+    }
   }
 
   render() {
-    // check for empty AcademyLink
+    // check for empty CalloutLink
     if (!this.props.children) {
       return null;
     }
 
+    const linkText = this.props.linktext || 'Read More';
+
     return (
-      <div className="academy-callout">
-        <div className="academy-callout__copy">
+      <div className="callout-link">
+        <div className="callout-link__copy">
           {this.props.children.map(el => el)}
           <a
             href={this.props.link}
             onClick={this.handleClick}
           >
-            GO TO COURSE →
+            { linkText } →
           </a>
         </div>
-        <div className="academy-callout__img" style={{ backgroundImage: `url(${config.envPrefix + this.props.img})` }} />
+        <div className="callout-link__img" style={{ backgroundImage: `url(${config.envPrefix + this.props.img})` }} />
       </div>
     );
   }
 }
 
-export default AcademyLink;
+export default CalloutLink;

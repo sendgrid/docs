@@ -23,7 +23,7 @@ You can now warmup your IP using our [IP Warmup API]({{root_url}}/API_Reference/
 
 When you place your IP in warmup mode, we divide your email requests between the dedicated IP you wish to warmup and any other warm, dedicated IPs currently assigned. Each day we will increase the amount sent directly from your warming dedicated IP. You can see the suggested [IP Warmup Schedule]({{root_url}}/assets/IPWarmupSchedule.pdf).
 
-<call-out-link img="/img/SGA_WarmingUp750.png" courselink="https://rise.articulate.com/share/tDOA99ns4CTVTYLuXw00wn5KUTqsLaeO#/">
+<call-out-link linktext="Go To Course" img="/img/SGA_WarmingUp750.png" link="https://rise.articulate.com/share/tDOA99ns4CTVTYLuXw00wn5KUTqsLaeO#/">
 
 #### Warm Up Your Sending To Avoid Delivery Issues
 

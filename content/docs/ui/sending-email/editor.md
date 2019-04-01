@@ -23,7 +23,7 @@ The [**Design Editor**](#the-design-editor), complete with HTML access to each c
 
 <call-out>
 
-<call-out-link img="/img/SGA_SmartStart750.png" courselink="https://rise.articulate.com/share/uGIBV4dMNFn-HzrIMDW_s2Kh4dxMH0vr#/">
+<call-out-link linktext="Go To Course" img="/img/SGA_SmartStart750.png" link="https://rise.articulate.com/share/uGIBV4dMNFn-HzrIMDW_s2Kh4dxMH0vr#/">
 
 #### Steps To A Smart Start With Marketing Campaigns
 

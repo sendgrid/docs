@@ -17,7 +17,7 @@ seo:
 You can filter the information stored in your contact lists to create segments. Segmenting contacts using different conditions allows you to create Marketing Campaigns that directly address the wants and needs of a particular audience. You can create a segment that pulls from ALL CONTACTS or a specific existing list. [Custom fields]({{root_url}}/ui/managing-contacts/custom-fields/) allow you to use unique information to identify contacts for different segments.
 Segments are dynamically updated over time as you add contacts who meet the criteria of your segment, or as the traits of your contacts change. For example, a segment with the criteria ”opened an email within 30 days” will evolve as contacts engage (or don’t engage) with your email.
 
-<call-out-link img="/img/SGA_GetUpClose750.png" courselink="https://rise.articulate.com/share/vHJb2Ompdk7iWlBOHONDf0FXVomrzTRL">
+<call-out-link linktext="Go To Course" img="/img/SGA_GetUpClose750.png" link="https://rise.articulate.com/share/vHJb2Ompdk7iWlBOHONDf0FXVomrzTRL">
 
 #### Get Up Close And Personal With Your Contacts
 

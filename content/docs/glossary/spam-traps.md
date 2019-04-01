@@ -20,7 +20,7 @@ Looking for customized expert advice to improve your email program? Our team of 
 
 </call-out>
 
-<call-out-link img="/img/SGA_FigureOutWhy750.png" courselink="https://rise.articulate.com/share/FXq7qMSzRx-7otpybg622nb-AROmiADA">
+<call-out-link linktext="Go To Course" img="/img/SGA_FigureOutWhy750.png" link="https://rise.articulate.com/share/FXq7qMSzRx-7otpybg622nb-AROmiADA">
 
 ### Figure Out Why Your Emails Are Going To Spam
 

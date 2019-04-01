@@ -46,7 +46,7 @@ Looking for customized expert advice to improve your email program? Our team of 
 
 </call-out>
 
-<call-out-link img="/img/SGA_DeliveryRate750.png" courselink="https://rise.articulate.com/share/LWqt5JOhZup_k0NfnZrD8MGds3zgemAp#/">
+<call-out-link linktext="Go To Course" img="/img/SGA_DeliveryRate750.png" link="https://rise.articulate.com/share/LWqt5JOhZup_k0NfnZrD8MGds3zgemAp#/">
 
 ### Watch Your Delivery Rate Before It’s Too Late
 

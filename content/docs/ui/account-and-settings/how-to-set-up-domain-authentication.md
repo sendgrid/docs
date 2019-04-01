@@ -96,7 +96,7 @@ Any time that you send an email with a FROM address whose domain matches the dom
 
  ### 	Using automated security
 
-<call-out-link img="/img/SGA_SenderAuthentication750.png" courselink="https://rise.articulate.com/share/tZ8_9DYhJbWPTZN8CmsDK5GH0HPcOA-W">
+<call-out-link linktext="Go To Course" img="/img/SGA_SenderAuthentication750.png" link="https://rise.articulate.com/share/tZ8_9DYhJbWPTZN8CmsDK5GH0HPcOA-W">
 
 ### Be Who You Say You Are With Sender Authentication
 

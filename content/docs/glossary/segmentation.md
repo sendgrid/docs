@@ -22,7 +22,7 @@ For more information about how you can segment your email traffic, please see [S
 
 </call-out>
 
-<call-out-link img="/img/SGA_GetUpClose750.png" courselink="https://rise.articulate.com/share/vHJb2Ompdk7iWlBOHONDf0FXVomrzTRL">
+<call-out-link linktext="Go To Course" img="/img/SGA_GetUpClose750.png" link="https://rise.articulate.com/share/vHJb2Ompdk7iWlBOHONDf0FXVomrzTRL">
 
 #### Get Up Close And Personal With Your Contacts
 

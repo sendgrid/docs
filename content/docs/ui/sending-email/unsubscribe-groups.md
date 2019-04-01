@@ -33,7 +33,7 @@ Make sure your group names and descriptions are customer friendly! Your customer
 
 All of your groups will be visible on the [Suppression Management](https://app.sendgrid.com/suppressions/advanced_suppression_manager) page, along with the descriptions you defined when you created the groups. There are also [Suppression Management API]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/index.html) endpoints for managing your groups and suppressions.
 
-<call-out-link img="/img/email-scream750.png" courselink="https://rise.articulate.com/share/Kn6WQo6h1CNmMo9L5RhTnHoPls3sMcxr#/"">
+<call-out-link linktext="Go To Course" img="/img/email-scream750.png" link="https://rise.articulate.com/share/Kn6WQo6h1CNmMo9L5RhTnHoPls3sMcxr#/"">
 
 ### Offer Unsubscribe Options (and avoid the Spam folder)
 

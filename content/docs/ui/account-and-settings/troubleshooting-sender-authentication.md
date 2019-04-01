@@ -200,7 +200,7 @@ Get additional onboarding support. Save time, increase the quality of your sendi
 
 </call-out>
 
-<call-out-link img="/img/SGA_SenderAuthentication750.png" courselink="https://rise.articulate.com/share/tZ8_9DYhJbWPTZN8CmsDK5GH0HPcOA-W">
+<call-out-link linktext="Go To Course" img="/img/SGA_SenderAuthentication750.png" link="https://rise.articulate.com/share/tZ8_9DYhJbWPTZN8CmsDK5GH0HPcOA-W">
 
 ### Be Who You Say You Are With Sender Authentication
 

@@ -27,7 +27,7 @@ Looking for customized expert advice to improve your email program? Our team of 
 
 </call-out>
 
-<call-out-link img="/img/SGA_ManageBounces750.png" courselink="https://rise.articulate.com/share/rBJixBkt2kAqwQShqvOcKuevYulLLIZ9">
+<call-out-link linktext="Go To Course" img="/img/SGA_ManageBounces750.png" link="https://rise.articulate.com/share/rBJixBkt2kAqwQShqvOcKuevYulLLIZ9">
 
 #### Manage Bounces, Blocks, and Deferrals
 
