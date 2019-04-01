@@ -12,7 +12,7 @@ class AcademyLink extends React.Component {
       eventCategory: 'Academy Callout',
       eventAction: 'Click',
       eventLabel: 'Go to Course',
-      eventValue: `${this.props.courselink}`,
+      eventValue: `${this.props.link}`,
     });
   }
 
@@ -27,7 +27,7 @@ class AcademyLink extends React.Component {
         <div className="academy-callout__copy">
           {this.props.children.map(el => el)}
           <a
-            href={this.props.courselink}
+            href={this.props.link}
             onClick={this.handleClick}
           >
             GO TO COURSE →
