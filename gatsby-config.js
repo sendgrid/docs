@@ -82,6 +82,15 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-catch-links',
     {
+      resolve: 'gatsby-plugin-segment-js',
+      options: {
+        prodKey: '1CjnBNPybWzyv10ssZRxdwmb8vrYF4yj',
+        devKey: 'QaZKJjbUWrCqNO0ObRrF64qDRVE40ZIr',
+        // This is done via GTM.
+        trackPage: false,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: config.siteTitle,

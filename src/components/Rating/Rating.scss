@@ -1,0 +1,21 @@
+
+.rating {
+  color: #ccc;
+  font-size: 25px;
+
+  span:hover {
+    cursor: pointer;
+  }
+
+  > span:hover::before {
+    content: '\2605';
+    position: absolute;
+    color: blue;
+  }
+
+  .is-selected::before {
+    content: '\2605';
+    position: absolute;
+    color: red;
+  }
+}

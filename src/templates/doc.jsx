@@ -6,6 +6,7 @@ import SEO from '../components/SEO';
 import AsideMenu from '../components/AsideMenu';
 import AcademyLink from '../componentsMarkdown/AcademyLink';
 import Callout from '../componentsMarkdown/Callout';
+import Rating from '../components/Rating';
 import Gist from '../componentsMarkdown/Gist';
 import CodeGroup from '../componentsMarkdown/CodeGroup';
 import withSubNav from '../components/NavSub';
@@ -60,6 +61,7 @@ class DocTemplate extends React.Component {
          : null
         }
         <div className="doc-main">
+          <Rating />
           <h1 dangerouslySetInnerHTML={{ __html: postNode.fields.title }} />
           {renderAst(postNode.htmlAst)}
           <div className="card card__feedback">
