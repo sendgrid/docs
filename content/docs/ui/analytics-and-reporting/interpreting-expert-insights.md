@@ -2,7 +2,7 @@
 layout: page
 weight: 0
 title: Interpreting Expert Insights
-group: analytics-reporting
+group: expert-insights
 seo:
   title: Interpreting Expert Insights
   description: Learn how to interpret your Expert Insights report
@@ -18,11 +18,11 @@ The Expert Insights report contains delivery and engagement metrics from email s
 * Delivered
 * Opened and Clicked
 
-  <call-out>
+<call-out>
 
 When you subscribe to Expert Insights, you get access to email strategies and best practices curated by our experts, including step-by-step instructions for how to resolve issues highlighted in the report. You can view an example of best practices you will receive [here.] (https://rise.articulate.com/share/VlJssyUNRN1dLEarFolNAx0teya492tR)
 
-  </call-out>
+</call-out>
 
 ## What data is being used to generate the Expert Insights Report
 
