@@ -1,17 +1,17 @@
 ---
 layout: page
 weight: 0
-title: Track users to page views, purchase events and leads with the SendGrid Pixcel
+title: Tracking users to page views, purchase events and leads with the SendGrid Pixel
 group:
 seo:
-  title: Track users to page views, purchase events, and leads with the SendGrid Pixcel
-  description: Learn how to track users to page views, purchase events, and leads with the SendGrid Pixcel
+  title: Tracking users to page views, purchase events, and leads with the SendGrid Pixel
+  description: Learn how to track users to page views, purchase events, and leads with the SendGrid Pixel
   keywords: 
 navigation:
   show: true
 ---
 
-To optimize your view into your campaign analytics, we highly recommend that you take the time to install the SendGrid pixel. This will give you the ability to associate users with website activity, purchase events, and lead activities. You can also use this data to send targeted campaigns to your known users based on specific events. 
+To optimize your view into your campaign analytics, we highly recommend that you take the time to install the SendGrid Pixel. This will give you the ability to associate users with website activity, purchase events, and lead activities. You can also use this data to send targeted campaigns to your known users based on specific events. 
 
 ## Track users to Page Views 
  
