@@ -20,7 +20,7 @@ Once you launch an Ads campaign, you can view your ad performance by Campaign, G
 
     <call-out>
     
-To optimize your view into your campaign analytics, we highly recommend that you take the time to install the SendGrid pixel BEFORE running your first campaign. This will give you the ability to associate users with website activity, purchase events, and lead events. You can also use this data to send targeted campaigns to your known users based on specific events. 
+To optimize your view into your campaign analytics, we highly recommend that you take the time to install the SendGrid Pixel BEFORE running your first campaign. This will give you the ability to associate users with website activity, purchase events, and lead events. You can also use this data to send targeted campaigns to your known users based on specific events. 
 
     </call-out>
 
