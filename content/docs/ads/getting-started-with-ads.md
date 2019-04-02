@@ -30,7 +30,7 @@ It's important that you grant SendGrid full permissions to your Facebook account
 
 ## The SendGrid Pixel
 
-The SendGrid pixel is critical because it allows SendGrid Ads to create highly targeted audiences for your ads based on who visits your site, as well as track who visits your site based. Once you've converted these customers, the SendGrid pixel is vital to tracking the success metrics of your ads.
+The SendGrid Pixel is critical because it allows SendGrid Ads to create highly targeted audiences for your ads based on who visits your site, as well as track who visits your site based. Once you've converted these customers, the SendGrid Pixel is vital to tracking the success metrics of your ads.
 
    <call-out>
 
