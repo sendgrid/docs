@@ -1,10 +1,10 @@
 ---
 layout: page
 weight: 0
-title: Design and publish an ad
+title: Designing and publishing an ad
 group:
 seo:
-  title: Design and publish an ad
+  title: Designing and publishing an ad
   description: Learn how to design and publish an ad
   keywords: 
 navigation:
