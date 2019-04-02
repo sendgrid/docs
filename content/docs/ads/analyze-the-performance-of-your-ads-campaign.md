@@ -1,10 +1,10 @@
 ---
 layout: page
 weight: 0
-title: Analyze the performance of your Ads campaign
+title: Analyzing the performance of your Ads campaign
 group: 
 seo:
-  title: Monitor and analyze the performance of your Ads campaign
+  title: Analyzing the performance of your Ads campaign
   description: Learn how to monitor and analyze the performance of your Ads campaign
   keywords: 
 navigation:
