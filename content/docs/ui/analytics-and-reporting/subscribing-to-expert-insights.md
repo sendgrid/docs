@@ -11,7 +11,7 @@ navigation:
   show: true
 ---  
 
-Expert Insights is a monthly report that will give you deeper visibility into the health and performance of your email program. This report equips you with the data and insights you need to reach the inbox and increase your email ROI.  **See an example of [Expert Insights report](https://sendgrid.com/wp-content/uploads/pdf/Expert-Insights-Sample.pdf)**
+Expert Insights is a monthly report that will give you deeper visibility into the health and performance of your email program. This report equips you with the data and insights you need to reach the inbox and increase your email ROI.  **See an example of [Expert Insights report.](https://sendgrid.com/wp-content/uploads/pdf/Expert-Insights-Sample.pdf)**
 
 Expert Insights is designed to help you:
 * Understand your performance trends in an easy-to-understand, shareable format.
@@ -58,10 +58,7 @@ Need additional help? SendGrid's team of Email Consultants have over 95 years of
 
 ## Managing Your Expert Insights Subscription
 
-Please reach out to our [Support team] (https://support.sendgrid.com/hc/en-us) at any time to change the email recipients of your monthly 
-
-
-s or the subuser that the report pertains to.
+Please reach out to our [Support team] (https://support.sendgrid.com/hc/en-us) at any time to change the email recipients of your monthly reports or the subuser that the report pertains to.
 
 * Pro customers can cancel their Expert Insights directly on their [Billing page.] (https://app.sendgrid.com/account/billing)
 * Premier customers should reach out to their Customer Success Manager to cancel their subscription.
