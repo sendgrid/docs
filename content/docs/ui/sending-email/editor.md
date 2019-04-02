@@ -23,13 +23,13 @@ The [**Design Editor**](#the-design-editor), complete with HTML access to each c
 
 <call-out>
 
-<call-out-link linktext="Go To Course" img="/img/SGA_SmartStart750.png" link="https://rise.articulate.com/share/uGIBV4dMNFn-HzrIMDW_s2Kh4dxMH0vr#/">
+<academy-link img="/img/SGA_SmartStart750.png" courselink="https://rise.articulate.com/share/uGIBV4dMNFn-HzrIMDW_s2Kh4dxMH0vr#/">
 
 #### Steps To A Smart Start With Marketing Campaigns
 
-Set yourself up for success by enrolling in this [Academy Course](https://rise.articulate.com/share/uGIBV4dMNFn-HzrIMDW_s2Kh4dxMH0vr#/). You’ll learn the key steps and considerations to address before hitting Send.
+Set yourself up for success by enrolling in this [Academy Course](https://rise.articulate.com/share/uGIBV4dMNFn-HzrIMDW_s2Kh4dxMH0vr#/). You’ll learn the key steps and considerations to address before hitting Send. 
 
-</call-out-link>
+</academy-link>
 
 The [Design Editor](#the-design-editor) features a number of convenient ways to edit the HTML content of your email –– including the ability to [edit the HTML of each drag-and-drop module](#editing-module-html), [edit the HTML `head` of your message](#editing-the-html-head), and even import complete code using our [Drag & Drop Markup](#importing-custom-html-with-drag--drop-markup).
 

@@ -218,7 +218,7 @@ aside a.active {
   font-size: $scaledown-1;
 }
 
-.callout-link {
+.academy-callout {
   @include dropdown-shadow();
 
   display: grid;
@@ -234,17 +234,13 @@ aside a.active {
   }
 }
 
-.callout-link {
+.academy-callout {
   display: flex;
 }
 
-.callout-link__copy {
+.academy-callout__copy {
   padding: $scaleup-3 $scale-0 $scaleup-3 $scaleup-4;
   flex-grow: 1;
-
-  > a {
-    text-transform: uppercase;
-  }
 
   @media (max-width: 475px) {
     p {
@@ -253,7 +249,7 @@ aside a.active {
   }
 }
 
-.callout-link__img {
+.academy-callout__img {
   background-position: center center;
   background-size: cover;
   margin-left: $scaleup-1;

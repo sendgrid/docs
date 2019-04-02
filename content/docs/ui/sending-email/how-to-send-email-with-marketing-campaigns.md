@@ -23,13 +23,13 @@ Before sending your first campaign, you need to do the following:
 - [Segment Your Contact List]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/) (Optional)
 
 
-<call-out-link linktext="Go To Course" img="/img/SGA_SmartStart750.png" link="https://rise.articulate.com/share/uGIBV4dMNFn-HzrIMDW_s2Kh4dxMH0vr#/">
+<academy-link img="/img/SGA_SmartStart750.png" courselink="https://rise.articulate.com/share/uGIBV4dMNFn-HzrIMDW_s2Kh4dxMH0vr#/">
 
 #### Steps To A Smart Start With Marketing Campaigns
 
-Set yourself up for success by enrolling in this [Academy Course](https://rise.articulate.com/share/uGIBV4dMNFn-HzrIMDW_s2Kh4dxMH0vr#/). You’ll learn the key steps and considerations to address before hitting Send.
+Set yourself up for success by enrolling in this [Academy Course](https://rise.articulate.com/share/uGIBV4dMNFn-HzrIMDW_s2Kh4dxMH0vr#/). You’ll learn the key steps and considerations to address before hitting Send. 
 
-</call-out-link>
+</academy-link>
 
 *To send your first campaign:*
 
@@ -71,7 +71,7 @@ For more information about customizing your campaign, see [Using the Design Edit
 
 <call-out>
 
-Campaigns can be sent to either a list or a segment. You can manage your lists and segments within [Contacts]({{root_url}}/ui/managing-contacts/adding-contacts/).
+Campaigns can be sent to either a list or a segment. You can manage your lists and segments within [Contacts]({{root_url}}/ui/managing-contacts/adding-contacts/). 
 
 </call-out>
 
@@ -109,7 +109,7 @@ If possible, schedule mail for off-peak times (for example, 10:53). This can avo
 Please note allowed special characters in email adresses that will not result as invalid. Without quotes, local-parts may consist of any combination of alphabetic characters, digits, or any of the special characters
 
  `! # $ % & ' * + - / = ?  ^ _ ` . { | } ~`
-
+ 
 period (".") may also appear, but may not be used to start or end the local part, nor may two or more consecutive periods appear.
 
 </call-out>

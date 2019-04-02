@@ -34,13 +34,13 @@ Looking for customized expert advice to improve your email program? Our team of 
 
 </call-out>
 
-<call-out-link linktext="Go To Course" img="/img/SGA_FigureOutWhy750.png" link="https://rise.articulate.com/share/FXq7qMSzRx-7otpybg622nb-AROmiADA">
+<academy-link img="/img/SGA_FigureOutWhy750.png" courselink="https://rise.articulate.com/share/FXq7qMSzRx-7otpybg622nb-AROmiADA">
 
 ### Figure Out Why Your Emails Are going To Spam
 
 Explore best practices and actionable tips you can take to help your emails get into the inbox with this [Academy Course](https://rise.articulate.com/share/FXq7qMSzRx-7otpybg622nb-AROmiADA).
 
-</call-out-link>
+</academy-link>
 
 ## Additional Resources
 
