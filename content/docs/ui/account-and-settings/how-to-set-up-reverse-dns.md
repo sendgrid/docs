@@ -25,13 +25,13 @@ You can only set up reverse DNS if you have a [dedicated IP]({{root_url}}/ui/acc
 
 Setting up reverse DNS on an IP address allows mailbox providers to verify the sender when they do a reverse DNS lookup upon receipt of the emails you send. When you update your DNS provider with a DNS record provided by SendGrid, and then send mail over your IP, the recipient's email service provider performs a reverse DNS lookup (rDNS) using an A Record (address record). An A Record maps your domain to your IP address. When a mailbox provider looks up your A Record, they see your SendGrid IP address. When they look at your IP address, they see the rDNS that matches your A Record. This circular checking proves your SendGrid IP association with your domain and your domain association with your SendGrid IP.
 
-<academy-link img="/img/SGA_SenderAuthentication750.png" courselink="https://rise.articulate.com/share/tZ8_9DYhJbWPTZN8CmsDK5GH0HPcOA-W">
+<call-out-link linktext="Go To Course" img="/img/SGA_SenderAuthentication750.png" link="https://rise.articulate.com/share/tZ8_9DYhJbWPTZN8CmsDK5GH0HPcOA-W">
 
 ### Be Who You Say You Are With Sender Authentication
 
-Check out this [Academy Course](https://rise.articulate.com/share/tZ8_9DYhJbWPTZN8CmsDK5GH0HPcOA-W) to access actionable tips on how to build trust with mailbox providers and ensure your authentication is set up correctly. 
+Check out this [Academy Course](https://rise.articulate.com/share/tZ8_9DYhJbWPTZN8CmsDK5GH0HPcOA-W) to access actionable tips on how to build trust with mailbox providers and ensure your authentication is set up correctly.
 
-</academy-link>
+</call-out-link>
 
 ## 	Key terminology
 
@@ -74,9 +74,9 @@ To set up reverse DNS, you must submit the DNS records provided by SendGrid to y
 6. Next, you need to add all of the A Records on this screen to your DNS host. This process varies depending on your DNS host. For videos on how to add your A Records to some popular DNS service providers, check out these [videos]({{root_url}}/ui/account-and-settings/dns-providers/).
 
 <call-out>
-  
+
 A recent change with how GoDaddy handles new DNS record values automatically adds your domain, resulting in an A record with too much information and a failure when trying to complete reverse DNS.  An example of this would be **o1.test.yourdomain.yourdomain.com**.
-  
+
 Below is an example of the A record values under the HOST column as they are displayed in step 6 and how you will need to enter into your GoDaddy DNS Management:
 
 HOST/NAME:  **01.test.yourdomain.yourdomain.com**  ENTER A RECORD HOST/NAME AS:  **O1.test**
