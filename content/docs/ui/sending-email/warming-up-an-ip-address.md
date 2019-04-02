@@ -15,7 +15,7 @@ navigation:
 
 When you add a new dedicated IP address to your account, you need to warm it up. You also need to warmup your IP if you haven't sent on it in more than 30 days. [Warming up your IP]({{root_url}}/glossary/ip-warmup/) allows you to gradually send more emails over your new IP to establish a good [sender reputation]({{root_url}}/glossary/reputation-monitoring/).
 
-IP warming is the practice of gradually increasing the volume of mail sent with a dedicated IP address according to a predetermined schedule. This gradual process helps to establish a reputation with ISPs (Internet Service Providers) as a legitimate email sender.
+IP warming is the practice of gradually increasing the volume of mail sent with a dedicated IP address according to a predetermined schedule. This gradual process helps to establish a reputation with ISPs (Internet Service Providers) as a legitimate email sender. 
 
 When an ISP observes email suddenly coming from a new or "cold" IP address, they will take notice and immediately begin evaluating the traffic coming from that IP. Since ISPs treat email volume as a key determining factor when detecting spam, it is best to begin sending a low to moderate volume, eventually working your way up to larger volumes. This gives the receiving email providers a chance to closely observe your sending habits and record how your recipients engage with your email.
 
@@ -27,13 +27,13 @@ It is much easier to establish a positive reputation as a new sender, than it is
 
 </call-out>
 
-<call-out-link linktext="Go To Course" img="/img/SGA_WarmingUp750.png" link="https://rise.articulate.com/share/tDOA99ns4CTVTYLuXw00wn5KUTqsLaeO#/">
+<academy-link img="/img/SGA_WarmingUp750.png" courselink="https://rise.articulate.com/share/tDOA99ns4CTVTYLuXw00wn5KUTqsLaeO#/">
 
 #### Warm Up Your Sending To Avoid Delivery Issues
 
-Check out this [Academy Course](https://rise.articulate.com/share/tDOA99ns4CTVTYLuXw00wn5KUTqsLaeO#/") to access best practices on how to properly warm up your sending, and how to make a good first impression to mailbox providers.
+Check out this [Academy Course](https://rise.articulate.com/share/tDOA99ns4CTVTYLuXw00wn5KUTqsLaeO#/") to access best practices on how to properly warm up your sending, and how to make a good first impression to mailbox providers. 
 
-</call-out-link>
+</academy-link>
 
 ## 	Warmup types
 
@@ -41,7 +41,7 @@ There are 2 ways to warmup your IP. If your dedicated IP is relatively new, or y
 
  ### 	Manually warmup your IP
 
-To manually warmup your IP, you need to gradually send more and more email over your IP address at the rate in our suggested [IP Warmup Schedule]({{root_url}}/assets/IPWarmupSchedule.pdf). When sending through a new domain and IP address, you are inherently more susceptible for receiving blocks, deferrals, and other reputation-related email errors because recipient servers do not recognize your mail. It's important to build this reputation over time, which is why we recommend the throttling via IP warm-up as soon as you receive your new dedicated IP. This is a manual process for users with 1 IP and would involve that you segment your sending by breaking up contacts into smaller lists and scheduling your campaigns, as a suggestion. If you were to add an additional IP, you would be able to place that into "automatic IP warm-up" and we would throttle the mail for you. The goal with IP warm-up is to avoid and/or mitigate deliverability issues that come with lack of reputation such as blocks, deferrals, or bounces.
+To manually warmup your IP, you need to gradually send more and more email over your IP address at the rate in our suggested [IP Warmup Schedule]({{root_url}}/assets/IPWarmupSchedule.pdf). When sending through a new domain and IP address, you are inherently more susceptible for receiving blocks, deferrals, and other reputation-related email errors because recipient servers do not recognize your mail. It's important to build this reputation over time, which is why we recommend the throttling via IP warm-up as soon as you receive your new dedicated IP. This is a manual process for users with 1 IP and would involve that you segment your sending by breaking up contacts into smaller lists and scheduling your campaigns, as a suggestion. If you were to add an additional IP, you would be able to place that into "automatic IP warm-up" and we would throttle the mail for you. The goal with IP warm-up is to avoid and/or mitigate deliverability issues that come with lack of reputation such as blocks, deferrals, or bounces. 
 
 <call-out>
 
@@ -60,7 +60,7 @@ The goal of warming up is to ramp up your sending volume to your anticipated “
 
  ### 	Automated IP warmup API
 
-You can also put your IP address into warmup mode with our [Automated Warmup API]({{root_url}}//API_Reference/Web_API_v3/IP_Management/ip_warmup.html) - this automatically throttles traffic sent through your new IP according to our [warmup schedule]({{root_url}}/assets/IPWarmupSchedule.pdf). Any email requests that exceed this hourly limit will overflow to any other existing warm IPs on your account.
+You can also put your IP address into warmup mode with our [Automated Warmup API]({{root_url}}//API_Reference/Web_API_v3/IP_Management/ip_warmup.html) - this automatically throttles traffic sent through your new IP according to our [warmup schedule]({{root_url}}/assets/IPWarmupSchedule.pdf). Any email requests that exceed this hourly limit will overflow to any other existing warm IPs on your account. 
 
 <call-out type="warning">
 
@@ -417,8 +417,8 @@ When automatically warming up an IP, SendGrid limits the amount of email sent th
 </tr>
 </table>
 
-<call-out>
-
+<call-out> 
+  
 If you are sending transactional emails, you do not need to focus on a strict IP warmup schedule, as you cannot control the rate at which transactional emails will be triggered through the account. If you are sending marketing emails, you will need to follow some sort of IP warmup; this involves gradually increasing your sending day by day on this new IP. The slower you can warm up the better. This way, you can locate and fix any anomalies and issues that arise when you first begin sending, helping your deliverability long term.
 
 ## 	Why don't other ESPs require IP warmup?
