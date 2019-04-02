@@ -22,6 +22,8 @@ class Rating extends React.Component {
 
   rateDoc = user => (e) => {
     const rating  = parseInt( e.target.dataset.rating );
+    const userID = user ? user.userid : false;
+
 
     this.setState({
       rating,
@@ -29,8 +31,8 @@ class Rating extends React.Component {
     })
 
     analytics.track("Doc Rated", {
-      userID: false, // SendGrid userID or false
       docID: window.location.pathname,
+      userID, // SendGrid userID or false
       rating
     });
   }
