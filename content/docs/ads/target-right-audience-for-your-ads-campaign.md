@@ -1,10 +1,10 @@
 ---
 layout: page
 weight: 0
-title: Target the right audience for your Ads Campaign
+title: Targeting the right audience for your Ads Campaign
 group: 
 seo:
-  title: Target the right audience for your Ads Campaign
+  title: Targeting the right audience for your Ads Campaign
   description: How to target the right audience for your Ads Campaign
   keywords: 
 navigation:
