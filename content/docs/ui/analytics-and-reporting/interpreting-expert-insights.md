@@ -2,7 +2,7 @@
 layout: page
 weight: 0
 title: Interpreting Expert Insights
-group: analytics-reporting
+group: expert-insights
 seo:
   title: Interpreting Expert Insights
   description: Learn how to interpret your Expert Insights report
@@ -18,11 +18,11 @@ The Expert Insights report contains delivery and engagement metrics from email s
 * Delivered
 * Opened and Clicked
 
-  <call-out>
+<call-out>
 
 When you subscribe to Expert Insights, you get access to email strategies and best practices curated by our experts, including step-by-step instructions for how to resolve issues highlighted in the report. You can view an example of best practices you will receive [here.] (https://rise.articulate.com/share/VlJssyUNRN1dLEarFolNAx0teya492tR)
 
-  </call-out>
+</call-out>
 
 ## What data is being used to generate the Expert Insights Report
 
@@ -30,11 +30,11 @@ In the Expert Insights report, we primarily use unique rates instead of raw numb
 
 You might notice that the data in these reports differ from data that you see in SendGrid’s user interface (UI). That’s because, in these reports, we look at what was sent during the reporting period and what happened to those specific campaigns. Our UI displays activity statistics by date and not by message so that senders have a snapshot of the performance of all campaigns in a given time frame.
 
-  <call-out>
+<call-out>
 
 For privacy reasons, your first Expert Insights report will cover 37 days of data, or as much time as you’ve been a SendGrid customer. Areas of the report that look back past 37 days will be populated over time.
 
-  </call-out>
+</call-out>
 
 ## What does the color coding mean
 
@@ -316,7 +316,7 @@ This section analyzes the volume of emails sent during this reporting period. Th
 
 In the **Is your Email Volume Impacting Deliverability** chart, we show you how your sending volume might be impacting leakage. We calculate leakage by combining your bounced and blocked emails. Senders who are experiencing an issue with leakage will see a thicker purple line, as in the chart below. 
 
-![]({{root_url}}/images/emailvolumechart-expertinsights.png)
+![]({{root_url}}/img/emailvolumechart-expertinsights.png)
 ##  Delivered Section
 
 This section analyzes the factors that contribute to your sender reputation. Typically, an email is not delivered to a recipient’s inbox because it is either bounced or blocked by the mailbox service provider. High bounce rates are commonly caused by misspelled or nonexistent email addresses. High block rates occur when the recipient email address is valid but something else about this message caused the message to be undeliverable, which can be as simple as a mailbox being full or more urgent like being blacklisted.
