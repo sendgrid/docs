@@ -20,7 +20,7 @@ function ReleaseKey() {
         Price Update
       </div>
       <div className="release-notes-key__icon">
-        <div className="icon-expert" />
+        <div className="icon-expert-services" />
         Expert Services
       </div>
     </div>
