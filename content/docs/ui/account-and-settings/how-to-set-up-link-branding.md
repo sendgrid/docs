@@ -38,13 +38,13 @@ The CNAME record creates an alias for subdomain.yourdomain.com and points to sen
 To set up link branding, you must submit the DNS records provided by SendGrid to your DNS or hosting provider (for example, GoDaddy, Hover, CloudFlare, etc.). First, figure out who your hosting provider is and if you have access. If you don't have access to your DNS or hosting provider, you should figure out who in your company has this access before you begin setting up link branding.
 
 
-<academy-link img="/img/SGA_SenderAuthentication750.png" courselink="https://rise.articulate.com/share/tZ8_9DYhJbWPTZN8CmsDK5GH0HPcOA-W">
+<call-out-link linktext="Go To Course" img="/img/SGA_SenderAuthentication750.png" link="https://rise.articulate.com/share/tZ8_9DYhJbWPTZN8CmsDK5GH0HPcOA-W">
 
 ### Be Who You Say You Are With Sender Authentication
 
-Check out this [Academy Course](https://rise.articulate.com/share/tZ8_9DYhJbWPTZN8CmsDK5GH0HPcOA-W)to access actionable tips on how to build trust with mailbox providers and ensure your authentication is set up correctly. 
+Check out this [Academy Course](https://rise.articulate.com/share/tZ8_9DYhJbWPTZN8CmsDK5GH0HPcOA-W)to access actionable tips on how to build trust with mailbox providers and ensure your authentication is set up correctly.
 
-</academy-link>
+</call-out-link>
 
 <call-out>
 
@@ -66,7 +66,7 @@ A recent change with how GoDaddy handles new DNS record values automatically add
 
 Below is an example of the CNAME values under the HOST column as they are displayed in step 5 and how you will need to enter into your GoDaddy DNS Management:
 
-HOST/NAME **url1234.yourdomain.com**   ENTER CNAME RECORD HOST/NAME AS: **url1234**                                      
+HOST/NAME **url1234.yourdomain.com**   ENTER CNAME RECORD HOST/NAME AS: **url1234**
 HOST/NAME **1234567.yourdomain.com**  ENTER CNAME RECORD HOST/NAME AS: **1234567**
 
 Entries made in the VALUE or POINTS TO field do not need to be changed.

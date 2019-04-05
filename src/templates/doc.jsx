@@ -4,7 +4,7 @@ import _ from 'lodash';
 import config from '../../data/SiteConfig';
 import SEO from '../components/SEO';
 import AsideMenu from '../components/AsideMenu';
-import AcademyLink from '../componentsMarkdown/AcademyLink';
+import CalloutLink from '../componentsMarkdown/CalloutLink';
 import Callout from '../componentsMarkdown/Callout';
 import Rating from '../components/Rating';
 import Gist from '../componentsMarkdown/Gist';
@@ -17,7 +17,7 @@ const renderAst = new RehypeReact({
   createElement: React.createElement,
   components: {
     gist: Gist,
-    'academy-link': AcademyLink,
+    'call-out-link': CalloutLink,
     'call-out': Callout,
     'code-group': CodeGroup,
   },

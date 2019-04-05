@@ -59,7 +59,9 @@ To set up domain authentication, you must submit the DNS records provided by Sen
 
 A recent change with how GoDaddy handles new DNS record values automatically adds your domain, resulting in a CNAME entry with too much information and a failure when trying to complete domain authentication. An example of this would be **em123.yourdomain.com.yourdomain.com**.
 
-Below is an example of the CNAME values under the HOST column as they are displayed in step 5 and how you will need to enter into your GoDaddy DNS Management:
+DigitalOcean has this same behaviour in their Networking - Manage Domain - Create new record section.
+
+Below is an example of the CNAME values under the HOST column as they are displayed and how you will need to enter them into your GoDaddy/DigitalOcean DNS Management:
 
 * HOST/NAME **em123.yourdomain.com** . ENTER CNAME RECORD HOST/NAME AS: **em123**
 * HOST/NAME **s1._domainkey.yourdomain.com**  ENTER CNAME RECORD HOST/NAME AS: **s1._domainkey**
@@ -96,13 +98,13 @@ Any time that you send an email with a FROM address whose domain matches the dom
 
  ### 	Using automated security
 
-<academy-link img="/img/SGA_SenderAuthentication750.png" courselink="https://rise.articulate.com/share/tZ8_9DYhJbWPTZN8CmsDK5GH0HPcOA-W">
+<call-out-link linktext="Go To Course" img="/img/SGA_SenderAuthentication750.png" link="https://rise.articulate.com/share/tZ8_9DYhJbWPTZN8CmsDK5GH0HPcOA-W">
 
 ### Be Who You Say You Are With Sender Authentication
 
-Check out this [Academy Course](https://rise.articulate.com/share/tZ8_9DYhJbWPTZN8CmsDK5GH0HPcOA-W#/) to access actionable tips on how to build trust with mailbox providers and ensure your authentication is set up correctly. 
+Check out this [Academy Course](https://rise.articulate.com/share/tZ8_9DYhJbWPTZN8CmsDK5GH0HPcOA-W#/) to access actionable tips on how to build trust with mailbox providers and ensure your authentication is set up correctly.
 
-</academy-link>
+</call-out-link>
 
 Automated security allows SendGrid to handle the signing of your DKIM and authentication of your SPF for your outbound email with CNAME records. This allows you to add a dedicated IP address or update your account without having to update your SPF record.
 

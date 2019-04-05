@@ -15,6 +15,18 @@ Below are some email deliverability tips and tricks from leading industry expert
 
 Satisfying each of the below conditions is a great step toward resolving current or potential issues with email deliverability such as spam folder delivery or blacklisting.
 
+<call-out-link linktext="Learn about our Expert Services" img="/img/expert-insights-promo1.png" link="https://sendgrid.com/solutions/expert-services/?utm_source=docs">
+
+
+### Looking for customized expert advice to improve your email program?
+
+
+Our team of email experts can help you create a plan to ensure you're optimizing your email delivery and engagement, and avoiding future issues like blacklists. 
+
+
+</call-out-link>
+
+
  ## 	Who, What, When, Where, Why
 
 First and foremost, ask yourself this question:
@@ -90,13 +102,13 @@ If your business is adult in nature, we can send your mail to the same standards
 
 If you are unsure where your emails stand, please contact our support team at [https://support.sendgrid.com](https://support.sendgrid.com)
 
-<academy-link img="/img/ProtectYourReputationCourse750.png" courselink="https://rise.articulate.com/share/R1ZJo1kleMSMYGCX9Dkb1i180Eh8NI6p#/">
+<call-out-link linktext="Go To Course" img="/img/ProtectYourReputationCourse750.png" link="https://rise.articulate.com/share/R1ZJo1kleMSMYGCX9Dkb1i180Eh8NI6p#/">
 
 #### Protect Your Email Reputation From The Start
 
 Check out this [Academy Course](https://rise.articulate.com/share/R1ZJo1kleMSMYGCX9Dkb1i180Eh8NI6p#/) to explore best practices you can apply to help mailbox providers know your mail is wanted.
 
-</academy-link>
+</call-out-link>
 
  ## 	Nuts and Bolts
 
@@ -132,9 +144,3 @@ You can send emails to a capture address at one of these services and they will 
 
 SendGrid has also released the article [Everything You Need To Know About Email Delivery](http://go.sendgrid.com/DeliverabilityGuide.html) highlighting these and more deliverability tips.
 
-
-<call-out>
-
-Looking for customized expert advice to improve your email program? Our team of email experts can help you create a plan to ensure you're optimizing your email delivery and engagement, and avoiding future issues like blacklists. Learn more on our [Expert Services](https://sendgrid.com/solutions/expert-services/?utm_source=docs) page.
-
-</call-out>
