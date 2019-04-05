@@ -37,8 +37,6 @@ For beta participants who also use Marketing Campaigns, it’s important to know
 Unsubscribe Groups and Senders **are shared** between Marketing Campaigns and Automation.
 
 Additionally, during this phase of the beta, some Marketing Campaigns features will not be available in Automation. For easy reference, the primary feature gaps include:
-* Ability to view Automation contact list details
-* Ability to search Automation contacts
 * Create or use custom fields
 * Create or use segments
 * A/B testing of email content and subject lines
@@ -302,7 +300,20 @@ You can also find the options to share the signup form in the form editor by cli
 
 ## Edit or Remove Contacts
 
-During this early phase of beta, you can only view and edit contact details from the All Contacts page. In the future you'll be able to view and edit contact details from lists. You'll also be able to delete contacts. 
+To manage your contact lists more efficiently, you can edit and remove contact lists from the Contacts page. 
+
+*To edit a contact:*
+
+1. Navigate to the Contacts page and find the list the contact you wish to edit is in. To make this easier, you can filter the contacts using the *Search* field at the top of the list.
+1. Click the contact you wish to edit. This takes you to the contact details page.
+1. To edit any of the profile fields, click on the *Edit* icon to the right of the field.
+1. Once you have finished making all of your changes, click **Save**. 
+
+*To remove a contact:*
+
+1. Navigate to the Contacts page and find the list the contact you wish to remove is in. To make this easier, you can filter the contacts using the *Search* field at the top of the list.
+1. To delete a contact from the contact list, you can click the delete icon in the action menu. To delete a contact from the contact details page, click the delete icon at the top-right of the page. 
+1. If you are deleting the contact from a specific list, and not All Contacts, click **Remove Contact**. If you are deleting the contact from the account, select **Permanently delete this contact from my account**. 
 
 ## Export contacts
 
@@ -440,7 +451,7 @@ Have feedback or questions? We welcome your thoughts at email_automation@sendgri
   </tr>
   <tr>
     <td>Ability to search for contacts within All Contacts or specific lists.</td>
-    <td>In progress</td>
+    <td>LIVE</td>
   </tr>
 </table>
 
@@ -453,11 +464,11 @@ Have feedback or questions? We welcome your thoughts at email_automation@sendgri
   </tr>
   <tr>
     <td>Ability to delete contacts from All Contacts or specific lists.</td>
-    <td>In progress</td>
+    <td>LIVE</td>
   </tr>
   <tr>
     <td>Exit criteria of no longer meeting entry criteria.</td>
-    <td>Planned</td>
+    <td>LIVE</td>
   </tr>
   <tr>
     <td>Ability to save an email design as a template.</td>
