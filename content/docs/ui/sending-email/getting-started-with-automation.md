@@ -122,7 +122,7 @@ Contacts will only receive your automation if you add them to the list you selec
 
 <call-out>
 
-If you select “no longer meet entry criteria”, SendGrid will check to make sure a recipient is still on the entry criteria list before sending *each* email in the series. If they aren’t they won’t get the email. At this time, the only way for someone to not meet the entry criteria is to be deleted from the list previously specified. For more information, see [link text]({{root_url}}/#deleting-contacts)
+If you select “no longer meet entry criteria”, SendGrid will check to make sure a recipient is still on the entry criteria list before sending *each* email in the series. If they aren’t they won’t get the email. At this time, the only way for someone to not meet the entry criteria is to be deleted from the list previously specified. For more information, see [link text]({{root_url}}/#edit-or-remove-contacts)
 
 </call-out>
 
