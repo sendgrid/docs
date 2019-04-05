@@ -1,21 +1,32 @@
 
+@import '../../scss/global/variables';
+@import '../../scss/global/mixins';
+
 .rating {
-  color: #ccc;
-  font-size: 25px;
+  color: $slate-20;
+  font-size: 28px;
+  padding: 0;
 
-  span:hover {
-    cursor: pointer;
+  span {
+    margin: 0 $scaledown-7;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
-  > span:hover::before {
-    content: '\2605';
-    position: absolute;
-    color: blue;
+  .is-filled {
+    color: $mango;
   }
+}
 
-  .is-selected::before {
-    content: '\2605';
-    position: absolute;
-    color: red;
+.rate-this-doc {
+  background: $slate-02;
+  display: inline-block;
+  margin: $scale-0 0;
+  padding: $scaledown-3 $scaleup-3;
+
+  &__success {
+    @include colfax(600);
   }
 }
