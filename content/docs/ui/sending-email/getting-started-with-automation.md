@@ -118,7 +118,14 @@ Contacts will only receive your automation if you add them to the list you selec
 
 </call-out>
 
-5. Select the exit criteria for this series.
+5. Select the exit criteria for this series. You can choose from "Contacts will leave the series one they've received all the emails" or "Contacts will leave the series if they no longer meet the entry criteria". 
+
+<call-out>
+
+If you select “no longer meet entry criteria”, SendGrid will check to make sure a recipient is still on the entry criteria list before sending *each* email in the series. If they aren’t they won’t get the email. At this time, the only way for someone to not meet the entry criteria is to be deleted from the list previously specified. For more information, see [link text]({{root_url}}/#deleting-contacts)
+
+</call-out>
+
 6. Select an [Unsubscribe Group]({{root_url}}/ui/sending-email/create-and-manage-unsubscribe-groups/#create-an-unsubscribe-group).
 7. Add a [category]({{root_url}}/glossary/categories/) to the automation (optional).
 8. Select the send time for the first email. You can choose to send the first email instantly, or you can set a delay of days or hours from the time meet the entry criteria.
@@ -166,8 +173,6 @@ The pre-built Welcome Series automation provides a jumping off point to inspire 
 If you keep the entry criteria as "All Contacts" it's important to remember that any recipient you add to your Automation contacts after you set the welcome series live will be entered into the automation. Use "All Contacts" with caution to avoid sending a welcome series to contacts that aren't actually new to you.
 
 </call-out>
-
-1. Repeat steps 5-16 from creating a custom automation.
 
 ## Email Testing
 
