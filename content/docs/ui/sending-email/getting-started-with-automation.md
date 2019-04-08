@@ -467,11 +467,15 @@ Have feedback or questions? We welcome your thoughts at email_automation@sendgri
     <td>Planned</td>
   </tr>
   <tr>
-    <td>Ability to send a one-time campaign to a list.</td>
+    <td>Ability to test Automation emails for rendering across inboxes and browsers, link validation, and spam testing.</td>
+    <td>In closed beta</td>
+  </tr>
+  <tr>
+    <td>Ability to send a one-time campaign to a list using Single Sends.</td>
     <td>In progress</td>
   </tr>
   <tr>
-    <td>Ability to test Automation emails for rendering across inboxes and browsers, link validation and spam testing.</td>
+    <td>Shared contacts and templates across Single Sends and Automation.</td>
     <td>In progress</td>
   </tr>
 </table>
