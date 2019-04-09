@@ -120,7 +120,7 @@ Contacts will only receive your automation if you add them to the list you selec
 
 <call-out>
 
-If you select “no longer meet entry criteria”, SendGrid will check to make sure a recipient is still on the entry criteria list before sending *each* email in the series. If they aren’t they won’t get the email. At this time, the only way for someone to not meet the entry criteria is to be deleted from the list previously specified. For more information, see [link text]({{root_url}}/#edit-or-remove-contacts)
+If you select “no longer meet entry criteria”, SendGrid will check to make sure a recipient is still on the entry criteria list before sending *each* email in the series. If they aren’t they won’t get the email. For more information on deleting contacts or removing them from lists, see [link text]({{root_url}}/#edit-or-remove-contacts).
 
 </call-out>
 
@@ -304,16 +304,25 @@ To manage your contact lists more efficiently, you can edit and remove contact l
 
 *To edit a contact:*
 
-1. Navigate to the Contacts page and find the list the contact you wish to edit is in. To make this easier, you can filter the contacts using the *Search* field at the top of the list.
+1. Navigate to the Contacts page and search for the contact you want to edit.
 1. Click the contact you wish to edit. This takes you to the contact details page.
 1. To edit any of the profile fields, click on the *Edit* icon to the right of the field.
 1. Once you have finished making all of your changes, click **Save**. 
 
-*To remove a contact:*
+*To delete a contact from your account:*
 
-1. Navigate to the Contacts page and find the list the contact you wish to remove is in. To make this easier, you can filter the contacts using the *Search* field at the top of the list.
+1. Navigate to the Contacts page and search for the contact you want to edit.
 1. To delete a contact from the contact list, you can click the delete icon in the action menu. To delete a contact from the contact details page, click the delete icon at the top-right of the page. 
 1. If you are deleting the contact from a specific list, and not All Contacts, click **Remove Contact**. If you are deleting the contact from the account, select **Permanently delete this contact from my account**. 
+
+*To remove a contact from a list:*
+
+1. Navigate to the Contacts page and search for the contact you want to edit.
+1. Click the email of the contact to view contact details. 
+1. Click the Associated Lists tab from the contact details page.
+1. Find the list you want to remove the contact from and click the delete icon.
+1. When you see "Are you sure you want to remove this contact?" click **Remove Contact**. 
+
 
 ## Export contacts
 
