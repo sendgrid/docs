@@ -37,8 +37,6 @@ For beta participants who also use Marketing Campaigns, it’s important to know
 Unsubscribe Groups and Senders **are shared** between Marketing Campaigns and Automation.
 
 Additionally, during this phase of the beta, some Marketing Campaigns features will not be available in Automation. For easy reference, the primary feature gaps include:
-* Ability to view Automation contact list details
-* Ability to search Automation contacts
 * Create or use custom fields
 * Create or use segments
 * A/B testing of email content and subject lines
@@ -118,7 +116,14 @@ Contacts will only receive your automation if you add them to the list you selec
 
 </call-out>
 
-5. Select the exit criteria for this series.
+5. Select the exit criteria for this series. You can choose from "Contacts will leave the series one they've received all the emails" or "Contacts will leave the series if they no longer meet the entry criteria". 
+
+<call-out>
+
+If you select “no longer meet entry criteria”, SendGrid will check to make sure a recipient is still on the entry criteria list before sending *each* email in the series. If they aren’t they won’t get the email. For more information on deleting contacts or removing them from lists, see [link text]({{root_url}}/#edit-or-remove-contacts).
+
+</call-out>
+
 6. Select an [Unsubscribe Group]({{root_url}}/ui/sending-email/create-and-manage-unsubscribe-groups/#create-an-unsubscribe-group).
 7. Add a [category]({{root_url}}/glossary/categories/) to the automation (optional).
 8. Select the send time for the first email. You can choose to send the first email instantly, or you can set a delay of days or hours from the time meet the entry criteria.
@@ -166,8 +171,6 @@ The pre-built Welcome Series automation provides a jumping off point to inspire 
 If you keep the entry criteria as "All Contacts" it's important to remember that any recipient you add to your Automation contacts after you set the welcome series live will be entered into the automation. Use "All Contacts" with caution to avoid sending a welcome series to contacts that aren't actually new to you.
 
 </call-out>
-
-1. Repeat steps 5-16 from creating a custom automation.
 
 ## Email Testing
 
@@ -297,7 +300,29 @@ You can also find the options to share the signup form in the form editor by cli
 
 ## Edit or Remove Contacts
 
-During this early phase of beta, you can only view and edit contact details from the All Contacts page. In the future you'll be able to view and edit contact details from lists. You'll also be able to delete contacts. 
+To manage your contact lists more efficiently, you can edit and remove contact lists from the Contacts page. 
+
+*To edit a contact:*
+
+1. Navigate to the Contacts page and search for the contact you want to edit.
+1. Click the contact you wish to edit. This takes you to the contact details page.
+1. To edit any of the profile fields, click on the *Edit* icon to the right of the field.
+1. Once you have finished making all of your changes, click **Save**. 
+
+*To delete a contact from your account:*
+
+1. Navigate to the Contacts page and search for the contact you want to edit.
+1. To delete a contact from the contact list, you can click the delete icon in the action menu. To delete a contact from the contact details page, click the delete icon at the top-right of the page. 
+1. If you are deleting the contact from a specific list, and not All Contacts, click **Remove Contact**. If you are deleting the contact from the account, select **Permanently delete this contact from my account**. 
+
+*To remove a contact from a list:*
+
+1. Navigate to the Contacts page and search for the contact you want to edit.
+1. Click the email of the contact to view contact details. 
+1. Click the Associated Lists tab from the contact details page.
+1. Find the list you want to remove the contact from and click the delete icon.
+1. When you see "Are you sure you want to remove this contact?" click **Remove Contact**. 
+
 
 ## Export contacts
 
@@ -435,7 +460,7 @@ Have feedback or questions? We welcome your thoughts at email_automation@sendgri
   </tr>
   <tr>
     <td>Ability to search for contacts within All Contacts or specific lists.</td>
-    <td>In progress</td>
+    <td>LIVE</td>
   </tr>
 </table>
 
@@ -448,11 +473,11 @@ Have feedback or questions? We welcome your thoughts at email_automation@sendgri
   </tr>
   <tr>
     <td>Ability to delete contacts from All Contacts or specific lists.</td>
-    <td>In progress</td>
+    <td>LIVE</td>
   </tr>
   <tr>
     <td>Exit criteria of no longer meeting entry criteria.</td>
-    <td>Planned</td>
+    <td>LIVE</td>
   </tr>
   <tr>
     <td>Ability to save an email design as a template.</td>
