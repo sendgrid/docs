@@ -51,7 +51,7 @@ SendGrid collects sales tax in the following jurisdictions:
 - Washington
 - Washington D.C.
 - Wisconsin 
-- US metro areas include Denver, Boulder & Chicago
+- US metro areas include Denver, Boulder and Chicago
 
 To determine whether to add sales tax to your monthly SendGrid bill, we use the address you enter as your billing address in [Account Details](https://app.sendgrid.com/account/billing) in the SendGrid UI.
 
