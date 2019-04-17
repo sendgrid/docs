@@ -82,6 +82,15 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-catch-links',
     {
+      resolve: 'gatsby-plugin-segment-js',
+      options: {
+        prodKey: '1CjnBNPybWzyv10ssZRxdwmb8vrYF4yj',
+        devKey: 'QaZKJjbUWrCqNO0ObRrF64qDRVE40ZIr',
+        // This is done via GTM.
+        trackPage: false,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: config.siteTitle,
@@ -93,13 +102,8 @@ module.exports = {
         display: 'minimal-ui',
         icons: [
           {
-            src: '/logos/logo-192x192.png',
-            sizes: '192x192',
-            type: 'image/png',
-          },
-          {
-            src: '/logos/logo-512x512.png',
-            sizes: '512x512',
+            src: '/brand/sg-mark.png',
+            sizes: '771x724',
             type: 'image/png',
           },
         ],

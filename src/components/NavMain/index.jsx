@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
-import Cookies from 'js-cookie';
 import LINKS from '../../constants/pageLinks';
+import { AuthCtx } from '../withUser';
 import './NavMain.scss';
 
 class NavMain extends Component {
@@ -9,44 +9,10 @@ class NavMain extends Component {
     super(props);
     this.state = {
       showMenu: false,
-      user: false,
     };
 
     this.toggleMenu = this.toggleMenu.bind(this);
     this.closeMenu = this.closeMenu.bind(this);
-  }
-
-  componentDidMount() {
-    const token = Cookies.get('mako_auth_token');
-
-    if (!token) return;
-
-    fetch('https://api.sendgrid.com/v3/user/profile', {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-        Authorization: `token ${token}`,
-      },
-    }).then((response) => {
-      if (!response.ok) {
-        return false;
-      }
-
-      return response.json();
-    }).then((user) => {
-      this.setState({ user });
-      this.sendSurvicateAtts();
-    });
-  }
-
-  sendSurvicateAtts() {
-    if (typeof window._svc === 'undefined') {
-      return;
-    }
-
-    window._svc.traits = {
-      userID: this.state.user.userid,
-    };
   }
 
   toggleMenu() {
@@ -60,7 +26,6 @@ class NavMain extends Component {
   render() {
     const {
       showMenu,
-      user,
     } = this.state;
 
     const menuState = showMenu ? 'in' : '';
@@ -71,17 +36,21 @@ class NavMain extends Component {
           <div className="container-lg">
             <Link className="nav-secondary__link" to={LINKS.RELEASE_NOTES}>Release Notes</Link>
             <a className="nav-secondary__link" href={LINKS.SENDGRID}>SendGrid.com</a>
-            {user ? (
-              <div className="nav-secondary__account">
-                <div className="nav-secondary__name">{user.first_name} {user.last_name} <span className="carret">▾</span></div>
-                <div className="nav-secondary__account-links">
-                  <a className="nav-secondary__dashboard" href={LINKS.APP}>Dashboard</a>
-                  <a className="nav-secondary__sign-out" href={LINKS.LOGOUT}>Sign Out</a>
-                </div>
-              </div>
-            ) : (
-              <a className="nav-secondary__link" href={LINKS.APP}>Log In</a>
-            )}
+            <AuthCtx.Consumer>
+              {({ user }) => (
+                user ? (
+                  <div className="nav-secondary__account">
+                    <div className="nav-secondary__name">{user.first_name} {user.last_name} <span className="carret">▾</span></div>
+                    <div className="nav-secondary__account-links">
+                      <a className="nav-secondary__dashboard" href={LINKS.APP}>Dashboard</a>
+                      <a className="nav-secondary__sign-out" href={LINKS.LOGOUT}>Sign Out</a>
+                    </div>
+                  </div>
+                  ) : (
+                    <a className="nav-secondary__link" href={LINKS.APP}>Log In</a>
+                  )
+              )}
+            </AuthCtx.Consumer>
           </div>
         </div>
 
