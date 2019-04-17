@@ -18,13 +18,6 @@ module.exports = {
     },
   },
   plugins: [
-    {
-      resolve: 'gatsby-plugin-segment-js',
-      options: {
-        prodKey: '1CjnBNPybWzyv10ssZRxdwmb8vrYF4yj',
-        trackPage: true,
-      },
-    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     'gatsby-plugin-sitemap',
@@ -47,7 +40,7 @@ module.exports = {
       resolve: 'gatsby-plugin-google-tagmanager',
       options: {
         id: 'GTM-PQC59L',
-        includeInDevelopment: false,
+        includeInDevelopment: true,
       },
     },
     {
@@ -87,7 +80,7 @@ module.exports = {
         prodKey: '1CjnBNPybWzyv10ssZRxdwmb8vrYF4yj',
         devKey: 'QaZKJjbUWrCqNO0ObRrF64qDRVE40ZIr',
         // This is done via GTM.
-        trackPage: false,
+        trackPage: true,
       },
     },
     {
