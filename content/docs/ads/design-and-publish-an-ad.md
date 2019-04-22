@@ -2,7 +2,7 @@
 layout: page
 weight: 0
 title: Designing and publishing an ad
-group:
+group: getting-started
 seo:
   title: Designing and publishing an ad
   description: Learn how to design and publish an ad
