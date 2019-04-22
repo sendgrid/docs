@@ -2,7 +2,7 @@
 layout: page
 weight: 0
 title: Getting Started with Ads
-group:
+group: ungrouped
 seo:
   title: Getting Started with Ads
   description: When you first log into SendGrid Ads, use these instructions to get started quickly.
@@ -20,11 +20,11 @@ Use SendGrid Ads to create social and display advertising campaigns on Facebook,
 1. Start by connecting the URL for the site you want to promote.
 1. Next, select the ad channels for your ads. You have to link Facebook and Instagram business pages, and you have to accept Google’s terms of service. If you don't have a Facebook page, we can create one for you. 
 
-    <call-out>
+<call-out>
 
 It's important that you grant SendGrid full permissions to your Facebook account when you connect. SendGrid Ads cannot function without full permission because we need to utilize all of the data on your pages to maximize the reach and impact of your ads.
 
-    </call-out>
+</call-out>
 
 1. Add the SendGrid Pixel to just before the closing `</body>` tag on all of the individual pages that you want to promote.
 
@@ -32,11 +32,11 @@ It's important that you grant SendGrid full permissions to your Facebook account
 
 The SendGrid Pixel is critical because it allows SendGrid Ads to create highly targeted audiences for your ads based on who visits your site, as well as track who visits your site based. Once you've converted these customers, the SendGrid Pixel is vital to tracking the success metrics of your ads.
 
-   <call-out>
+<call-out>
 
 You can upload contacts directly to SendGrid Ads and/or target contacts dynamically from Marketing Campaigns. For example, when you add more contacts to Marketing Campaigns any Ads Campaigns that use that list will update automatically.
 
-    </call-out>
+</call-out>
 
 ### Adding the script manually
 
