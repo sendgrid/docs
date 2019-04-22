@@ -168,6 +168,10 @@ const GROUPS = {
    name: 'Expert Insights',
    order: null,
   },
+  'target-segment': {
+    name: 'Targeting and Segmentation',
+    order: null,
+   },
 };
 
 
