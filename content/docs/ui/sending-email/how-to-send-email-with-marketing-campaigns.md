@@ -12,7 +12,7 @@ seo:
 ---
 <iframe src="https://player.vimeo.com/video/305551346" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-If you want to send email programmatically, see the [API reference]({{root_url}}/api-reference/) or the [SMTP Reference]({{root_url}}/for-developers/sending-email/getting-started-smtp/).
+If you want to send email programmatically using Twilio SendGrid's Email API, see the [API reference]({{root_url}}/api-reference/) or the [SMTP Reference]({{root_url}}/for-developers/sending-email/getting-started-smtp/).
 
 Before sending your first campaign, you need to do the following:
 
@@ -41,33 +41,37 @@ Set yourself up for success by enrolling in this [Academy Course](https://rise.a
 ![]({{root_url}}/images/campaigns_dashboard_categories_search.png)
 
 1. Select the template that you want to use for your campaign.
-<br> You can select a **Blank Template**, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Marketing Templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/).
+<br> You can select a blank template, a custom template that you have already created, or one of SendGrid's responsive pre-built templates. For more information, see [Marketing Templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/).
 
 1. Select an editor.
 <br> You can choose between the **Design Editor** and the **Code Editor**.
 ![]({{root_url}}/images/choose_editor.png)
 
-The Design Editor offers users powerful drag & drop, WYSIWYG editing tools, making it possible for anyone to build beautiful emails, regardless of HTML knowledge. For those familiar with HTML who are looking to leverage the Design Editor, you can modify the HTML of individual content modules.
+The Design Editor offers users powerful drag & drop, WYSIWYG editing tools, making it possible for anyone to build beautiful emails, regardless of HTML knowledge. For those familiar with HTML, there are options to edit the HTML of individual modules, drag in a custom code module, or to import an entire HTML email with drag & drop markup.
 
-The Code Editor provides users who are importing, editing, or crafting custom HTML a robust environment to upload images, write HTML, and configure their campaign without interference from the HTML-generating WYSIWYG tools.
+The Code Editor provides users who are importing, editing, or crafting custom HTML a robust environment with side-by-side code and preview panes, syntax highlighting, code completing, and image management.
 
- ## 	Designing Your Campaign
+ ## 	Building Your Campaign
 
-Depending on your editor selection, you use different methods to design your campaign. Both the Design Editor and the Code Editor have the same 3 tabs: **Settings**, **Tags**, and **A/B Testing**.
+Regardless of your editor selection, you use the same 4 tabs to design and configure your campaign: **Settings**, **Tags**, and **A/B Testing**. 
 
-1. Edit your campaign by filling in the fields in the **Settings** Tab.
+<call-out>
+You can work on building your campaign in any order you like, no need to start with settings before jumping into Build or A/B testing. 
+</call-out>
 
-1. Add your custom content. Make sure to include the [[unsubscribe]]({{root_url}}/ui/sending-email/create-and-manage-unsubscribe-groups/) tag to test and send your campaign.
+1. Define key settings like From Sender, Email Subject, Preheader, Recipients, and Scheduling by filling in the fields in the **Settings** Tab.
+
+1. Add your custom content by clicking the Build tab. Make sure to include the [[unsubscribe]]({{root_url}}/ui/sending-email/create-and-manage-unsubscribe-groups/) tag to test and send your campaign.
 
 For more information about customizing your campaign, see [Using the Design Editor]({{root_url}}/ui/sending-email/editor/#the-design-editor) or [Using the Code Editor]({{root_url}}/ui/sending-email/editor/#the-code-editor).
 
 3. Once you’ve finished editing your campaign, you can see what it looks like by clicking **Preview**.
 
-4. To send a test email, enter the email address(es) you want to send your campaign to, and then click **Send Test**. Please note, in order to send your test email and any subsequent live campaigns, you must have, at a minimum, a verified sender, subject line, and unsubscribe group or link included.
+4. To send a test email, return to the Settings tab and open Recipients. Under Test Email Addresses you can enter the email address(es) you want to send your test campaign to, and then click **Send Test**. Please note, in order to send your test email and any subsequent live campaigns, you must have, at a minimum, a verified sender, subject line, and unsubscribe group or link included.
 
-5. If you would like to test the effectiveness of your email subject or content, you can set up an A/B test. For more information, see [A/B Testing]({{root_url}}/ui/sending-email/a-b-testing/).
+5. If you would like to test the effectiveness of variations of your email subject line or content, you can set up an A/B test. For more information, see [A/B Testing]({{root_url}}/ui/sending-email/a-b-testing/).
 
-6. Select which contacts will receive your email by clicking the **Send To** dropdown under **Recipients**.
+6. If you haven't already, return to Settings to select which contacts will receive your email by clicking the **Send To** field under **Recipients**.
 
 <call-out>
 
@@ -75,7 +79,7 @@ Campaigns can be sent to either a list or a segment. You can manage your lists a
 
 </call-out>
 
-7. To send your campaign, click **Send Campaign**.
+7. When you're done building your campaign, click either **Schedule Campaign** or **Send Campaign** depending on whether you've toggled Send Immediately on or off in the Scheduling section of the Settings tab.
 
 <call-out>
 
@@ -99,7 +103,7 @@ Please note: Any contacts that are added to a list or segment after a campaign i
 
 <call-out>
 
-If possible, schedule mail for off-peak times (for example, 10:53). This can avoid peak times at the top of the hour or half hour.
+If possible, avoid scheduling for the top of the hour or half hour to avoid the busiest times for your recipients' inboxes. Sending at 10:53, for example, can help increase engagement.
 
 </call-out>
 
@@ -115,8 +119,10 @@ period (".") may also appear, but may not be used to start or end the local part
 </call-out>
 
 *To change your time zone:*
-
-1. From the left-hand navigation, select **Settings**.
+Your time zone is set at the account level. You'll need to save your draft and leave the editor to access these settings.
+1. Click "Save Draft" from the top bar of your account
+1. Click the back arrow found in the top left corner.
+1. Near the bottom of the left-hand navigation, select **Settings**.
 1. Click **Account Details**, or go to https://app.sendgrid.com/settings/account.
 1. Scroll to the bottom of the page, find **TIME ZONE**, and correct it if necessary.
 
@@ -124,5 +130,5 @@ period (".") may also appear, but may not be used to start or end the local part
 
 - [Campaign Statistics]({{root_url}}/ui/analytics-and-reporting/marketing-campaigns-stats/)
 - [Billing]({{root_url}}/ui/account-and-settings/billing/)
-- [Sending with the API]({{root_url}}/for-developers/sending-email/api-getting-started/)
+- [Sending with Email API]({{root_url}}/for-developers/sending-email/api-getting-started/)
 - [Sending with SMTP]({{root_url}}/for-developers/sending-email/getting-started-smtp/)
