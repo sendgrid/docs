@@ -6,6 +6,12 @@ const HOME_CALLOUTS = [
     LINK: '/ui/sending-email/how-to-send-email-with-marketing-campaigns/',
   },
   {
+    BADGE: 'marketing',
+    TITLE: 'Ads',
+    COPY: 'Learn how to use SendGrid’s ad builder to build and launch an attractive display ad campaign quickly.',
+    LINK: '/ads/placeholder-for-ads/',
+  },
+  {
     BADGE: 'development',
     TITLE: 'API',
     COPY: 'Use the SendGrid v3 REST API to build and send email.',

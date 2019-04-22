@@ -29,7 +29,7 @@ class Index extends React.Component {
 
   static renderCallouts() {
     return CALLOUTS.map((card) => {
-      const cardClass = `card home-callout col-md-4 callout--${card.BADGE}`;
+      const cardClass = `card col-home-callout home-callout callout--${card.BADGE}`;
       return (
         <div className={cardClass} key={card.TITLE}>
           <div className="home-callout__badge">
@@ -56,8 +56,8 @@ class Index extends React.Component {
           </div>
         </div>
         <div className="home-callouts">
-          <div className="container-lg">
-            <div className="row row--home-cards">
+          <div className="container">
+            <div className="row row--home-callouts">
               {Index.renderCallouts()}
             </div>
           </div>
