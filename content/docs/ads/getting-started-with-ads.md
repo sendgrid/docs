@@ -2,7 +2,7 @@
 layout: page
 weight: 0
 title: Getting Started with Ads
-group: ungrouped
+group: getting-started
 seo:
   title: Getting Started with Ads
   description: When you first log into SendGrid Ads, use these instructions to get started quickly.
