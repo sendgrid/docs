@@ -2,7 +2,7 @@
 layout: page
 weight: 0
 title: Tracking users to page views, purchase events and leads with the SendGrid Pixel
-group:
+group: tracking
 seo:
   title: Tracking users to page views, purchase events, and leads with the SendGrid Pixel
   description: Learn how to track users to page views, purchase events, and leads with the SendGrid Pixel
