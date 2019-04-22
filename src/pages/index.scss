@@ -139,6 +139,12 @@ $card-gutter: 40px;
   @media (max-width: $width-small) {
     grid-template-columns: 1fr;
   }
+
+  .tag--beta {
+    line-height: 1;
+    margin-left: $scaledown-2;
+    vertical-align: middle;
+  }
 }
 
 .col-home-callout {
