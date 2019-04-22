@@ -14,6 +14,7 @@ navigation:
 <call-out>
 
 Ads is currently in closed beta. During beta, only approved participants have access to the feature. Functionality and performance might not be working quite like we want it to and we reserve the right to change the functionality at any time without warning. For more information on the Ads beta, or to join the beta waitlist, see our [Ads Solution Page](https://sendgrid.com/solutions/ads/).
+
 </call-out>
 
 Before you can set up an Ads Campaign, make sure you have these requirements below in place.
