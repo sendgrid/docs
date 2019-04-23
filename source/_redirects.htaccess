@@ -1046,5 +1046,7 @@ Redirect 301 /User_Guide/Settings/Sender_Authentication/How_to_set_up_reverse_DN
 Redirect 301 /User_Guide/Settings/Sender_Authentication/How_to_set_up_link_branding.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_link_branding.html
 Redirect 301 /Classroom/Basics/Whitelabel/setup_ip_whitelabel.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_reverse_dns.html
 Redirect 301 /Classroom/Deliver/Delivery_Introduction/whitelabel_do_i_need_to_make_dns_changes_pro_and_higher.html https://sendgrid.com/docs/User_Guide/Settings/Sender_authentication/How_to_set_up_reverse_dns.html
-
-
+Redirect 301 /API_Reference/Event_Webhook/event.html https://sendgrid.com/docs/for-developers/tracking-events/event/
+Redirect 301 /API_Reference/Event_Webhook/troubleshooting.html https://sendgrid.com/docs/for-developers/tracking-events/troubleshooting/
+Redirect 301 /API_Reference/Event_Webhook/getting_started_event_webhook.html https://sendgrid.com/docs/for-developers/tracking-events/getting-started-event-webhook/
+Redirect 301 /API_Reference/Web_API_v3/Tutorials/getting_started_email_activity_api.html https://sendgrid.com/docs/for-developers/sending-email/getting-started-email-activity-api/
