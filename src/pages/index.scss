@@ -97,7 +97,6 @@ $card-gutter: 40px;
 }
 
 .card--home {
-  margin-bottom: $card-gutter;
 
   .card-icon {
     max-width: 40px;
@@ -124,15 +123,36 @@ $card-gutter: 40px;
   }
 }
 
+.row--home-callouts,
 .row--home-cards {
-  grid-column-gap: $card-gutter;
+  grid-gap: $card-gutter;
 
   @media (max-width: $width-mobile) {
-    grid-column-gap: 2%;
+    grid-gap: 2%;
   }
 }
 
+.row--home-callouts {
+  margin-bottom: $card-gutter;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (max-width: $width-small) {
+    grid-template-columns: 1fr;
+  }
+
+  .tag--beta {
+    line-height: 1;
+    margin-left: $scaledown-2;
+    vertical-align: middle;
+  }
+}
+
+.col-home-callout {
+  grid-column: auto;
+}
+
 .home-featured {
+  margin-bottom: 80px;
   padding-top: $scaleup-1;
   position: relative;
 
