@@ -2,10 +2,10 @@ import React from 'react';
 import SOCIAL_LINKS from '../../constants/socialLinks';
 
 function SocialLinks() {
-  const links = SOCIAL_LINKS.map(item => (
-    <a href={item.URL} key={item.TEXTNODE} target="_blank" rel="noopener noreferrer">
-      <img alt={item.TEXTNODE} src={item.IMG} />
-      <span className="show-for-sr">{item.TEXTNODE}</span>
+  const links = SOCIAL_LINKS.map(({URL, TEXTNODE, IMG}) => (
+    <a href={URL} key={TEXTNODE} target="_blank" rel="noopener noreferrer">
+      <img alt={TEXTNODE} src={IMG} />
+      <span className="show-for-sr">{TEXTNODE}</span>
     </a>
   ));
 
