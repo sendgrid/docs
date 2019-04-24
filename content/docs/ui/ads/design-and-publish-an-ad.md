@@ -18,20 +18,20 @@ Ads is currently in closed beta. During beta, only approved participants have ac
 
 Once you’ve defined your target audience for your ad, you can design your ad. SendGrid Ads dynamically updates the preview of your ad to help save you time, and you can see your changes in real time. 
 
-![]({{root_url}}/images/ad-preview.png)
+![]({{root_url}}/img/ad-preview.png)
 
 ## Get familiar with advertising guidelines
 
 When creating your ad, here are some helpful tips to increase engagement and ensure your ads are in compliance with advertising channels:
-* ** Use relevant content** Make sure your ad is relevant to your audience and the website you’re directing them to.
-* ** Avoid numbers and punctuation** Avoid gratuitous use of numbers and punctuation. This helps keep your ad scannable and easy to read.
-* ** Avoid controversial content.** All advertising channels like Facebook or Instagram have Advertising Policies that provide guidance on what is acceptable and what is not. 
+* **Use relevant content** Make sure your ad is relevant to your audience and the website you’re directing them to.
+* **Avoid numbers and punctuation** Avoid gratuitous use of numbers and punctuation. This helps keep your ad scannable and easy to read.
+* **Avoid controversial content.** All advertising channels like Facebook or Instagram have Advertising Policies that provide guidance on what is acceptable and what is not. 
 
-    <call-out>
+<call-out>
 
 You can learn more about Facebook’s Advertising Policies [here](https://business.facebook.com/policies/ads) and Google’s Advertising Policies [here.] (https://support.google.com/adspolicy/answer/6008942?hl=en)
 
-    </call-out>
+</call-out>
 
 ## Set the budget
 

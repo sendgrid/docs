@@ -21,7 +21,7 @@ Ads is currently in closed beta. During beta, only approved participants have ac
 
 Once you launch an Ads campaign, you can view your ad performance by Campaign, Goal, or Channels. You can view overall campaign statistics by Total Impressions, Total Clicks, Total Click Through Rate, and Total Estimated Cost. You can view campaign statistics over time. 
 
-![]({{root_url}}/img/ads-campaign-analytics.png)
+![]({{root_url}}/img/ads_campaign_analytics.png)
 
 <call-out>
     
