@@ -26,6 +26,6 @@ To use the Inbound Parse Webhook, please check out [Setting Up the Inbound Parse
 Additional Resources
 {% endanchor %}
 
-- [Webhooks Overview]({{root_url}}/API_Reference/Webhooks/index.html)
+- [Webhooks Overview](https://sendgrid.com/docs/for-developers/tracking-events/event/)
 - [Debugging a Webhook]({{root_url}}/API_Reference/Webhooks/debug.html)
 - [Statistics Filters]({{root_url}}/User_Guide/Statistics/index.html#-Statistics-Filters)
