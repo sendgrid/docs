@@ -37,47 +37,47 @@ You can learn more about Facebook’s Advertising Policies [here](https://busine
 
 You get to determine the maximum amount you would like to spend per day on this channel for your ad. SendGrid requires that you spend a minimum of $10 a day per channel. Here are some additional tips to help you with your budget:
 
-* ** Set a budget.** Identify how much money you can comfortably spend on advertising. Setting a budget before you start will allay any fears about starting an ads campaign.
-* ** Test and learn. * There are many variables that will affect your affecting results from targeting to creative you use in your ad. Run an A/B test to determine which campaigns achieve the results you’re looking for.
-* ** Modify your budget. * If you are getting good results from your campaign, allocate more budget to your high performing campaigns. If you are not seeing good results, pause your campaign and make adjustments to your targeting, creative, and copy to determine which campaigns give you the best results.
+* **Set a budget.** Identify how much money you can comfortably spend on advertising. Setting a budget before you start will allay any fears about starting an ads campaign.
+* **Test and learn.** There are many variables that will affect your affecting results from targeting to creative you use in your ad. Run an A/B test to determine which campaigns achieve the results you’re looking for.
+* **Modify your budget.** If you are getting good results from your campaign, allocate more budget to your high performing campaigns. If you are not seeing good results, pause your campaign and make adjustments to your targeting, creative, and copy to determine which campaigns give you the best results.
 
 ## Enter the Link URL
 
 Enter the website you want the ad to drive people to. If you have UTM parameters, you can include them in the Link URL.
 
-![]({{root_url}}/images/linkurl-adpreview.png)
+![]({{root_url}}/img/linkurl-adpreview.png)
 
 
 ##  Enter the text or primary ad copy
 
 The primary ad copy or text should be a brief statement that prompts your target audience to click on your ad. We recommend a limit of 125 characters to avoid truncated sentences since there is a limit of 125 character limit for Facebook and Instagram.
 
-![]({{root_url}}/images/primarytext-adpreview.png)
+![]({{root_url}}/img/primarytext-adpreview.png)
 
 ##  Enter the headline 
 
 The headline is displayed in a larger font, below your image. Enter an eye-catching headline to grab your audience’s attention. There is a  limit of 25 characters in the Headline field. If your headline exceeds this character limit your text will get truncated.
 
-![]({{root_url}}/images/adheadline-preview.png)
+![]({{root_url}}/img/adheadline-preview.png)
 
 ##  Enter the description
 
 The description appears below the headline in a smaller font. Use this section to expand on your headline. We recommend a limit of 30 characters in the Text field to avoid having truncated sentences.
 
-![]({{root_url}}/images/description-adpreview.png)
+![]({{root_url}}/img/description-adpreview.png)
 
 ##  Upload your image
 
 Your image is one of the most important elements of your ad, as it is what your target audience will notice first. Use the image to begin to tell the story in your ad. SendGrid Ads will dynamically resize your image to fit the ad space, but the recommended size is an image ratio of 1.91:1 and a recommended resolution of 1200x628 pixels for Facebook ads. 
 
-![]({{root_url}}/images/image-adpreview.png)
+![]({{root_url}}/img/image-adpreview.png)
 
 
-    <call-out>
+<call-out>
 
 Avoid using text on your image as this reduces ad effectiveness. Images with text occupying over 20% of the image will be flagged by Facebook for review and potentially rejected. You can use this [tool](https://www.facebook.com/ads/tools/text_overlay) by Facebook to assess if your image has too much text. 
 
-    </call-out>
+</call-out>
     
 
 ##  Publish your campaign
@@ -89,7 +89,7 @@ Once you’ve created your ad, review it in the preview pane. You can preview wh
 
 You can make a change to a running campaign. Go to your campaign in the Campaigns tab. Click on the right-hand corner of your campaign and select **Edit**. You will be able to edit your campaign just like you created it originally. When you submit your changes, your current campaign will run once the changes are approved.
 
-![]({{root_url}}/images/ad-editcampaign.png)
+![]({{root_url}}/img/ad-editcampaign.png)
 
 ##  Duplicate your campaign
 
@@ -105,6 +105,6 @@ A lead ad is a specific ad format available on Facebook and Instagram that enabl
  
 To create a Leads Ad, click **Create Campaign**, then select **Grow & message your email list** and filter by **Acquire new leads.** Select your desired targeting strategy to define your target audience for your lead ad. 
  
-![]({{root_url}}/images/targeting-contact-lookalikes.gif)
+![]({{root_url}}/img/targeting-contact-lookalikes.gif)
  
 After you’ve selected your targeting criteria, you will design your leads ad. There is an additional option to change the Call To Action (CTA) in your lead ad. There are several options to choose from.

@@ -11,7 +11,7 @@ const HOME_CALLOUTS = [
     TITLE: 'Ads',
     TAG: 'Beta',
     COPY: 'Learn how to use SendGrid’s ad builder to build and launch an attractive display ad campaign quickly.',
-    LINK: '/ads/getting-started-with-ads/',
+    LINK: '/ui/ads/getting-started-with-ads/',
   },
   {
     BADGE: 'development',
