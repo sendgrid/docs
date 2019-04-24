@@ -19,7 +19,7 @@ Ads is currently in closed beta. During beta, only approved participants have ac
 
 Use SendGrid Ads to create social and display advertising campaigns on Facebook, Instagram, and Google Display Ads based on your email and website data. You can target social and display ads to reach current customers, or target lookalike audiences to reach new potential customers.
 
-<iframe src="https://vimeo.com/321855599" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/321855599" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ## Connecting your accounts
 

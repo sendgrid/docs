@@ -172,7 +172,9 @@ Once you have categories set up, you can use them to define your audience for a 
 </call-out>
     
 In this example, we will show you how would set up a campaign that targets recipients of your newsletter who didn’t open it.
+
 When you select **Create a Campaign**, you will get prompted to select your targeting strategy. In this example, you would select **Grow and message your email list.** and filter by **Reach existing leads**. You would select **Didn’t Open** targeting strategy.
+
 
 ![]({{root_url}}/img/targeting-didnotopen.gif)
 
