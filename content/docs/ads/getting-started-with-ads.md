@@ -10,6 +10,7 @@ seo:
 navigation:
   show: true
 ---
+
 <call-out>
 
 Ads is currently in closed beta. During beta, only approved participants have access to the feature. Functionality and performance might not be working quite like we want it to and we reserve the right to change the functionality at any time without warning. For more information on the Ads beta, or to join the beta waitlist, see our [Ads Solution Page](https://sendgrid.com/solutions/ads/).
@@ -31,7 +32,7 @@ It's important that you grant SendGrid full permissions to your Facebook account
 
 </call-out>
 
-1. Add the SendGrid Pixel to just before the closing `</body>` tag on all of the individual pages that you want to promote.
+3. Add the SendGrid Pixel to just before the closing `</body>` tag on all of the individual pages that you want to promote.
 
 ## The SendGrid Pixel
 
@@ -52,6 +53,9 @@ To manually install the SendGrid pixel on your website, you'll need to copy the 
 
 ### Adding the script using Google Tag Manager
 
-[Google Tag Manager](https://marketingplatform.google.com/about/tag-manager/) is a great tool that can help manage the installation of multiple scripts on your site. To install your SendGrid pixel into Google Tag Manager, you'll need to copy the custom script from within your SendGrid Ads account.
+[Google Tag Manager](https://marketingplatform.google.com/about/tag-manager/) is a great tool that can help manage the installation of multiple scripts on your site. 
 
+*To install your SendGrid pixel into Google Tag Manager:* 
+
+1. Copy the custom script from within your SendGrid Ads account.
 1. Go to [Settings > SendGrid Pixel](https://labs.sendgrid.com/grow/account/tracking), or start from the setup module.
