@@ -25,11 +25,11 @@ Before you can set up an Ads Campaign, make sure you have these requirements bel
 * You must have a URL of the site you want to promote.
 * You must have a Facebook and/or a Google account. You must connect it to your SendGrid account. 
 
-    <call-out>
+<call-out>
 
 We recommend that you install a SendGrid pixel to your site. This will help you have better visibility into your statistics and will enable you to retarget visitors to your website.
 
-    </call-out>
+</call-out>
 
 ## Choose a targeting strategy based on your marketing objective
 
@@ -42,7 +42,7 @@ Before you can create a campaign, you need to choose a targeting strategy based 
 
 Here are the targeting options to drive people to your site:
 
-** Acquire new visitors **
+**Acquire new visitors**
 
 <table>
   <tr>
@@ -67,7 +67,7 @@ Here are the targeting options to drive people to your site:
   </tr>
 </table>
 
-** Reach existing visitors **
+**Reach existing visitors**
 
 <table>
   <tr>
@@ -88,7 +88,7 @@ Here are the targeting options to drive people to your site:
 
 Here are the targeting options to drive people to your site:
 
-** Acquire new leads **
+**Acquire new leads**
 
 <table>
   <tr>
@@ -152,11 +152,11 @@ Here are the targeting options to drive people to your site:
 1. Select how long you would like to run your campaign. We recommend that you run your campaign for at least two weeks. 
 1. Determine the criteria of audiences you would like to target. Depending on which targeting option you choose you’ll have a different set of criteria to select from. 
 
-![]({{root_url}}/images/targetingoverview.png)
+![]({{root_url}}/img/targetingoverview.png)
 
 ### Use Categories to define your audience
 
-You can use [SendGrid Categories](https://sendgrid.com/docs/API_Reference/SMTP_API/categories.html) to define your audience in SendGrid Ads. This will help you combine your Email API list with SendGrid Ads so you can track and analyze statistics for your emails as well.
+You can use [SendGrid Categories]({{root_url}}/for-developers/sending-email/categories/) to define your audience in SendGrid Ads. This will help you combine your Email API list with SendGrid Ads so you can track and analyze statistics for your emails as well.
  
 For example, you might use SendGrid Categories to track and analyze your email for the following emails:
 * Welcome series
@@ -165,16 +165,16 @@ For example, you might use SendGrid Categories to track and analyze your email f
 * Receipts
 * Newsletters
 
-   <call-out>
+<call-out>
    
 Once you have categories set up, you can use them to define your audience for a campaign. 
 
-    </call-out>
+</call-out>
     
 In this example, we will show you how would set up a campaign that targets recipients of your newsletter who didn’t open it.
 When you select **Create a Campaign**, you will get prompted to select your targeting strategy. In this example, you would select **Grow and message your email list.** and filter by **Reach existing leads**. You would select **Didn’t Open** targeting strategy.
 
-![]({{root_url}}/images/targeting-didnotopen.gif)
+![]({{root_url}}/img/targeting-didnotopen.gif)
 
 You will then select channels you want to advertise on and the dates of your campaign. Under the **Criteria,** you will click **Marketing campaigns named** and then select which category you want to use to target this campaign. After you’ve selected your targeting criteria, you can build and publish your ad.
 
