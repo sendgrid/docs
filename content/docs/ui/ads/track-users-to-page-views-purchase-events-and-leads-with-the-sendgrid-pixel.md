@@ -23,13 +23,15 @@ To optimize your view into your campaign analytics, we highly recommend that you
 Page views are automatically recorded by the pixel. You’ll need to associate page views to the identified user by implementing the Identity Call (see steps above).  This association will allow you to send targeted campaigns to users based on page view activity. For example, when a user visits your pricing page you can automatically retarget this user with an advertisement.
  
 The sendgrid.page() call is already included in the SendGrid pixel. We will automatically record the following with zero configuration needed from you.
- 
+
+```
 sendgrid.page('Pricing and Plans | SendGrid', {
   title: 'Pricing and Plans | SendGrid',
   url: 'https://sendgrid.com/pricing',
   path: '/pricing',
   referrer: 'https://sendgrid.com/labs'
 });
+```
 
 ## Track users to website activity with an Identity Call
 
@@ -37,12 +39,13 @@ With this association in place, you can create campaigns that target users visit
 On all pages where your SendGrid pixel is installed and you know your users’ identity, you will include an Identity Call and pass a unique id and the email address of the user. 
 
 Here is what the code for an Identity Call looks like:  
-
+```
 sendgrid.identify([userId], [traits]);
 Here is an example of an Identity Call:
 sendgrid.identify('123456', {
   email: 'mike@example.com'
 });
+```
 
 ## Track users to Purchase Events on your website
 
@@ -102,7 +105,7 @@ Purchase event can be tracked when a customer completes the purchase of a produc
 </table>
 
 It is recommended you supply the order and product-specific properties with the Purchase event. Here is an example that contains all available purchase event properties supported:
-
+```
 sendgrid.track('Purchase Completed', {
   total: 119.85,
   currency: 'USD',
@@ -125,11 +128,11 @@ sendgrid.track('Purchase Completed', {
     }
   ]
 });
-
+```
 This is an example of that contains the minimum required for the purchase event:
-
+```
 sendgrid.track('Purchase');
-
+```
 ##  Track users to specific Lead events
 
 A Lead event should be tracked when you first capture a new email address on your website. This is considered as a new lead.
@@ -153,15 +156,15 @@ A Lead event should be tracked when you first capture a new email address on you
 </table>
 
 Below is an example that contains all the available lead events properties support. We recommend including the source so that you know where your leads are getting generated.
-
+```
 sendgrid.track('Lead Captured', {
   email: 'mike@example.com',
   source: 'Landing Page 1'
 });
-
+```
 Here is an example that contains the minimum required for the lead event:
-
+```
 sendgrid.track('Lead Captured', {
   email: 'mike@example.com'
 });
-
+```
