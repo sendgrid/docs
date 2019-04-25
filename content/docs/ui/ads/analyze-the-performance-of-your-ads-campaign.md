@@ -17,7 +17,7 @@ Ads is currently in closed beta. During beta, only approved participants have ac
 
 </call-out>
 
-### View Overall Ad Campaign Statistics 
+## View Overall Ad Campaign Statistics 
 
 Once you launch an Ads campaign, you can view your ad performance by Campaign, Goal, or Channels. You can view overall campaign statistics by Total Impressions, Total Clicks, Total Click Through Rate, and Total Estimated Cost. You can view campaign statistics over time. 
 
@@ -29,7 +29,7 @@ To optimize your view into your campaign analytics, we highly recommend that you
 
 </call-out>
 
-### View Statistics by Campaign
+## View Statistics by Campaign
 
 By campaign, you view Impressions, Clicks, Revenue, Estimated Cost, Cost Per Click (CPC), and Click Through Rate (CTR).
 
@@ -37,7 +37,7 @@ By campaign, you view Impressions, Clicks, Revenue, Estimated Cost, Cost Per Cli
 
 ### Additional Resources
 
-[Getting Started with Ads]({{root_url}}/ui/ads/getting-started-with-ads.md)
-[Targeting the right audience for your Ads Campaign]({{root_url}}/ui/ads/target-right-audience-for-your-ads-campaign.md)
-[Designing and publishing an ad]({{root_url}}/ui/ads/design-and-publish-an-ad.md)
-[Tracking users to page views, purchase events and leads with the SendGrid Pixel]({{root_url}}/ui/ads/track-users-to-page-views-purchase-events-and-leads-with-the-sendgrid-pixel.md)
+[Getting Started with Ads]({{root_url}}/ui/ads/getting-started-with-ads/)
+[Targeting the right audience for your Ads Campaign]({{root_url}}/ui/ads/target-right-audience-for-your-ads-campaign/)
+[Designing and publishing an ad]({{root_url}}/ui/ads/design-and-publish-an-ad/)
+[Tracking users to page views, purchase events and leads with the SendGrid Pixel]({{root_url}}/ui/ads/track-users-to-page-views-purchase-events-and-leads-with-the-sendgrid-pixel/)
