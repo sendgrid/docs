@@ -44,14 +44,14 @@ You can upload contacts directly to SendGrid Ads and/or target contacts dynamica
 
 </call-out>
 
-### Adding the script manually
+## Adding the script manually
 
 To manually install the SendGrid pixel on your website, you'll need to copy the custom script from within your SendGrid Ads account.
 
 1. Go to [Settings > SendGrid Pixel](https://labs.sendgrid.com/grow/account/tracking), or start from the setup module.
 1. Copy your custom script and install in all pages of your website before the closing `</body>` tag.
 
-### Adding the script using Google Tag Manager
+## Adding the script using Google Tag Manager
 
 [Google Tag Manager](https://marketingplatform.google.com/about/tag-manager/) is a great tool that can help manage the installation of multiple scripts on your site. 
 
@@ -63,10 +63,10 @@ To manually install the SendGrid pixel on your website, you'll need to copy the 
 
 ### Additional Resources
 
-[Targeting the right audience for your Ads Campaign]({{root_url}}/ui/ads/target-right-audience-for-your-ads-campaign.md)
-[Designing and publishing an ad]({{root_url}}/ui/ads/design-and-publish-an-ad.md)
-[Analyzing the performance of your Ads campaign]({{root_url}}/ui/ads/analyze-the-performance-of-your-ads-campaign.md)
-[Tracking users to page views, purchase events and leads with the SendGrid Pixel]({{root_url}}/ui/ads/track-users-to-page-views-purchase-events-and-leads-with-the-sendgrid-pixel.md)
+[Targeting the right audience for your Ads Campaign]({{root_url}}/ui/ads/target-right-audience-for-your-ads-campaign/)
+[Designing and publishing an ad]({{root_url}}/ui/ads/design-and-publish-an-ad/)
+[Analyzing the performance of your Ads campaign]({{root_url}}/ui/ads/analyze-the-performance-of-your-ads-campaign/)
+[Tracking users to page views, purchase events and leads with the SendGrid Pixel]({{root_url}}/ui/ads/track-users-to-page-views-purchase-events-and-leads-with-the-sendgrid-pixel/)
 
 
 
