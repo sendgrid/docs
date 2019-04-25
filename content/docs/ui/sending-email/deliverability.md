@@ -21,7 +21,7 @@ Satisfying each of the below conditions is a great step toward resolving current
 ### Looking for customized expert advice to improve your email program?
 
 
-Our team of email experts can help you create a plan to ensure you're optimizing your email delivery and engagement, and avoiding future issues like blacklists. 
+Our team of email experts can help you create a plan to ensure you're optimizing your email delivery and engagement, and avoiding future issues like blacklists.
 
 
 </call-out-link>
@@ -101,14 +101,6 @@ Encouraging your recipients to do certain things can help bolster the trust ISPs
 If your business is adult in nature, we can send your mail to the same standards and deliverability as any of our other customers. However, **We do not allow our users to send explicit content within emails.** This applies primarily to images, but we reserve the right to refuse the sending of any type of content that we deem to be vulgar, pornographic, or otherwise explicit.
 
 If you are unsure where your emails stand, please contact our support team at [https://support.sendgrid.com](https://support.sendgrid.com)
-
-<call-out-link linktext="Go To Course" img="/img/ProtectYourReputationCourse750.png" link="https://rise.articulate.com/share/R1ZJo1kleMSMYGCX9Dkb1i180Eh8NI6p#/">
-
-#### Protect Your Email Reputation From The Start
-
-Check out this [Academy Course](https://rise.articulate.com/share/R1ZJo1kleMSMYGCX9Dkb1i180Eh8NI6p#/) to explore best practices you can apply to help mailbox providers know your mail is wanted.
-
-</call-out-link>
 
  ## 	Nuts and Bolts
 

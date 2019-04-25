@@ -200,14 +200,6 @@ Get additional onboarding support. Save time, increase the quality of your sendi
 
 </call-out>
 
-<call-out-link linktext="Go To Course" img="/img/SGA_SenderAuthentication750.png" link="https://rise.articulate.com/share/tZ8_9DYhJbWPTZN8CmsDK5GH0HPcOA-W">
-
-### Be Who You Say You Are With Sender Authentication
-
-Check out this [Academy Course](https://rise.articulate.com/share/tZ8_9DYhJbWPTZN8CmsDK5GH0HPcOA-W) to access actionable tips on how to build trust with mailbox providers and ensure your authentication is set up correctly.
-
-</call-out-link>
-
 ## 	Additional resources
 
 - [How to set up domain authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/)
