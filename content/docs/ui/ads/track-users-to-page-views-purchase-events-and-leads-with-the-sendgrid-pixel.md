@@ -47,7 +47,7 @@ sendgrid.identify('123456', {
 });
 ```
 
-### Track users to Purchase Events on your website
+## Track users to Purchase Events on your website
 
 Purchase event can be tracked when a customer completes the purchase of a product or service from your business. 
 
@@ -133,7 +133,7 @@ This is an example of that contains the minimum required for the purchase event:
 ```
 sendgrid.track('Purchase');
 ```
-###  Track users to specific Lead events
+##  Track users to specific Lead events
 
 A Lead event should be tracked when you first capture a new email address on your website. This is considered as a new lead.
 
