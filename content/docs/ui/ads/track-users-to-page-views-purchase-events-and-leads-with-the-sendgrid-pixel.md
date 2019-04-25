@@ -18,7 +18,7 @@ Ads is currently in closed beta. During beta, only approved participants have ac
 
 To optimize your view into your campaign analytics, we highly recommend that you take the time to install the SendGrid Pixel. This will give you the ability to associate users with website activity, purchase events, and lead activities. You can also use this data to send targeted campaigns to your known users based on specific events. 
 
-### Track users to Page Views 
+## Track users to Page Views 
  
 Page views are automatically recorded by the pixel. You’ll need to associate page views to the identified user by implementing the Identity Call (see steps above).  This association will allow you to send targeted campaigns to users based on page view activity. For example, when a user visits your pricing page you can automatically retarget this user with an advertisement.
  
@@ -33,7 +33,7 @@ sendgrid.page('Pricing and Plans | SendGrid', {
 });
 ```
 
-### Track users to website activity with an Identity Call
+## Track users to website activity with an Identity Call
 
 With this association in place, you can create campaigns that target users visiting a specific web page or performing a specific event such as a purchase.
 On all pages where your SendGrid pixel is installed and you know your users’ identity, you will include an Identity Call and pass a unique id and the email address of the user. 
