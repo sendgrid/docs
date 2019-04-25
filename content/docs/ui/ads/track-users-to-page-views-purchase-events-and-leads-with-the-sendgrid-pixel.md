@@ -171,7 +171,7 @@ sendgrid.track('Lead Captured', {
 
 ### Additional Resources
 
-[Getting Started with Ads]({{root_url}}/ui/ads/getting-started-with-ads.md)
-[Targeting the right audience for your Ads Campaign]({{root_url}}/ui/ads/target-right-audience-for-your-ads-campaign.md)
-[Designing and publishing an ad]({{root_url}}/ui/ads/design-and-publish-an-ad.md)
-[Analyzing the performance of your Ads campaign]({{root_url}}/ui/ads/analyze-the-performance-of-your-ads-campaign.md)
+[Getting Started with Ads]({{root_url}}/ui/ads/getting-started-with-ads/)
+[Targeting the right audience for your Ads Campaign]({{root_url}}/ui/ads/target-right-audience-for-your-ads-campaign/)
+[Designing and publishing an ad]({{root_url}}/ui/ads/design-and-publish-an-ad/)
+[Analyzing the performance of your Ads campaign]({{root_url}}/ui/ads/analyze-the-performance-of-your-ads-campaign/)
