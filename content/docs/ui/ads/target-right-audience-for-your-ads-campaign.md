@@ -182,8 +182,8 @@ You will then select channels you want to advertise on and the dates of your cam
 
 ### Additional Resources
 
-[Getting Started with Ads]({{root_url}}/ui/ads/getting-started-with-ads.md)
-[Designing and publishing an ad]({{root_url}}/ui/ads/design-and-publish-an-ad.md)
-[Analyzing the performance of your Ads campaign]({{root_url}}/ui/ads/analyze-the-performance-of-your-ads-campaign.md)
-[Tracking users to page views, purchase events and leads with the SendGrid Pixel]({{root_url}}/ui/ads/track-users-to-page-views-purchase-events-and-leads-with-the-sendgrid-pixel.md)
+[Getting Started with Ads]({{root_url}}/ui/ads/getting-started-with-ads/)
+[Designing and publishing an ad]({{root_url}}/ui/ads/design-and-publish-an-ad/)
+[Analyzing the performance of your Ads campaign]({{root_url}}/ui/ads/analyze-the-performance-of-your-ads-campaign/)
+[Tracking users to page views, purchase events and leads with the SendGrid Pixel]({{root_url}}/ui/ads/track-users-to-page-views-purchase-events-and-leads-with-the-sendgrid-pixel/)
 
