@@ -1,6 +1,6 @@
 ---
 layout: page
-weight: 0
+weight: 100
 title: Getting Started with Ads
 group: getting-started
 seo:
