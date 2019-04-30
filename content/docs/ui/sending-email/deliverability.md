@@ -102,14 +102,6 @@ If your business is adult in nature, we can send your mail to the same standards
 
 If you are unsure where your emails stand, please contact our support team at [https://support.sendgrid.com](https://support.sendgrid.com)
 
-<call-out-link linktext="Go To Course" img="/img/ProtectYourReputationCourse750.png" link="https://rise.articulate.com/share/R1ZJo1kleMSMYGCX9Dkb1i180Eh8NI6p#/">
-
-#### Protect Your Email Reputation From The Start
-
-Check out this [Academy Course](https://rise.articulate.com/share/R1ZJo1kleMSMYGCX9Dkb1i180Eh8NI6p#/) to explore best practices you can apply to help mailbox providers know your mail is wanted.
-
-</call-out-link>
-
  ## 	Nuts and Bolts
 
  ### 	Tips for Click Tracked links
