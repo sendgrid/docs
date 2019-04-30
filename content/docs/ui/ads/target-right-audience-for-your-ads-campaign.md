@@ -180,4 +180,10 @@ When you select **Create a Campaign**, you will get prompted to select your targ
 
 You will then select channels you want to advertise on and the dates of your campaign. Under the **Criteria,** you will click **Marketing campaigns named** and then select which category you want to use to target this campaign. After you’ve selected your targeting criteria, you can build and publish your ad.
 
+### Additional Resources
+
+[Getting Started with Ads]({{root_url}}/ui/ads/getting-started-with-ads/)
+[Designing and publishing an ad]({{root_url}}/ui/ads/design-and-publish-an-ad/)
+[Analyzing the performance of your Ads campaign]({{root_url}}/ui/ads/analyze-the-performance-of-your-ads-campaign/)
+[Tracking users to page views, purchase events and leads with the SendGrid Pixel]({{root_url}}/ui/ads/track-users-to-page-views-purchase-events-and-leads-with-the-sendgrid-pixel/)
 
