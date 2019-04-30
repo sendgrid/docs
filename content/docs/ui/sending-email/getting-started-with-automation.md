@@ -36,6 +36,12 @@ For beta participants who also use Marketing Campaigns, it’s important to know
 
 Unsubscribe Groups and Senders **are shared** between Marketing Campaigns and Automation.
 
+<call-out>
+
+While this beta is not connected to our current Marketing Campaigns product, you can send a [one-time campaign]({{root_url}}/ui/sending-email/getting-started-with-automation/#create-a-campaign) one-time campaign from within the beta. When you do so, contacts and templates are shared between beta Automation and beta Campaigns.
+
+</call-out>
+
 Additionally, during this phase of the beta, some Marketing Campaigns features will not be available in Automation. For easy reference, the primary feature gaps include:
 * Create or use custom fields
 * Create or use segments
