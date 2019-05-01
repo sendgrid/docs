@@ -27,13 +27,17 @@ It is much easier to establish a positive reputation as a new sender, than it is
 
 </call-out>
 
-<call-out-link linktext="Go To Course" img="/img/SGA_WarmingUp750.png" link="https://rise.articulate.com/share/tDOA99ns4CTVTYLuXw00wn5KUTqsLaeO#/">
+<call-out-link linktext="IMPLEMENTATION SERVICES" img="/img/expert-insights-promo1.png" link="https://sendgrid.com/solutions/email-implementation/">
 
-#### Warm Up Your Sending To Avoid Delivery Issues
 
-Check out this [Academy Course](https://rise.articulate.com/share/tDOA99ns4CTVTYLuXw00wn5KUTqsLaeO#/") to access best practices on how to properly warm up your sending, and how to make a good first impression to mailbox providers.
+### Do you want expert help to get your email program started on the right foot?
+
+
+Save time and feel confident you are set up for long-term success with Email Implementation. Our experts will work as an extension of your team to ensure your email program is correctly set up and delivering value for your business.
+
 
 </call-out-link>
+
 
 ## 	Warmup types
 
@@ -421,17 +425,14 @@ When automatically warming up an IP, SendGrid limits the amount of email sent th
 
 If you are sending transactional emails, you do not need to focus on a strict IP warmup schedule, as you cannot control the rate at which transactional emails will be triggered through the account. If you are sending marketing emails, you will need to follow some sort of IP warmup; this involves gradually increasing your sending day by day on this new IP. The slower you can warm up the better. This way, you can locate and fix any anomalies and issues that arise when you first begin sending, helping your deliverability long term.
 
+</call-out>
+
 ## 	Why don't other ESPs require IP warmup?
 
 Many other email service providers do not offer dedicated IP addresses to their customers - they place all of their customers on shared IP groups by default. Warming up is not required for a shared IP group - SendGrid handles this automatically.
 
 Having a dedicated IP allows you to control your own reputation completely, and prevents your sending from being impacted by the reputations of other SendGrid users.
 
-<call-out>
-
-Get additional onboarding support. Save time, increase the quality of your sending, and feel confident you are set up for long-term success with [SendGrid Onboarding Services](https://sendgrid.com/marketing/onboarding-services-request/?utm_source=docs).
-
-</call-out>
 
 ## 	Additional Resources
 
