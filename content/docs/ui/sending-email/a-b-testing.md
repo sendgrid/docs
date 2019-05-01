@@ -44,6 +44,21 @@ You can test up to 6 different variations for each A/B test campaign.
 	Select the Email Content A/B test to optimize the Click Rate of your email campaign, since the recipient will not see this content unless they open your email.
 
     High click rates mean that you have compelling content and calls to action (CTAs).
+    
+    
+    
+<call-out-link linktext="EXPERT INSIGHTS" img="/img/expert-insights-promo2.png" link="https://sendgrid.com/solutions/expert-insights/">
+
+
+### Looking for more visibility into your email performance?
+
+
+Send better email with Expert Insights. Our detailed monthly reports will enable you to understand your email reputation and recipient engagement and repair issues with expert how-to steps.
+
+
+</call-out-link>
+
+
 
 ##  Adding Your Email Versions
 Enter the different versions of your email where you would normally edit that piece of content in you email campaign.
