@@ -15,7 +15,7 @@ Below are some email deliverability tips and tricks from leading industry expert
 
 Satisfying each of the below conditions is a great step toward resolving current or potential issues with email deliverability such as spam folder delivery or blacklisting.
 
-<call-out-link linktext="Learn about our Expert Services" img="/img/expert-insights-promo1.png" link="https://sendgrid.com/solutions/expert-services/?utm_source=docs">
+<call-out-link linktext="Learn about our Expert Services" img="/img/expert-insights-promo3.png" link="https://sendgrid.com/solutions/expert-services/?utm_source=docs">
 
 
 ### Looking for customized expert advice to improve your email program?
