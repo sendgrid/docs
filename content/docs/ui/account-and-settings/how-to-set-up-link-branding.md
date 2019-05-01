@@ -38,13 +38,17 @@ The CNAME record creates an alias for subdomain.yourdomain.com and points to sen
 To set up link branding, you must submit the DNS records provided by SendGrid to your DNS or hosting provider (for example, GoDaddy, Hover, CloudFlare, etc.). First, figure out who your hosting provider is and if you have access. If you don't have access to your DNS or hosting provider, you should figure out who in your company has this access before you begin setting up link branding.
 
 
-<call-out-link linktext="Go To Course" img="/img/SGA_SenderAuthentication750.png" link="https://rise.articulate.com/share/tZ8_9DYhJbWPTZN8CmsDK5GH0HPcOA-W">
+<call-out-link linktext="IMPLEMENTATION SERVICES" img="/img/expert-insights-promo1.png" link="https://sendgrid.com/solutions/email-implementation/">
 
-### Be Who You Say You Are With Sender Authentication
 
-Check out this [Academy Course](https://rise.articulate.com/share/tZ8_9DYhJbWPTZN8CmsDK5GH0HPcOA-W)to access actionable tips on how to build trust with mailbox providers and ensure your authentication is set up correctly.
+### Do you want expert help to get your email program started on the right foot?
+
+
+Save time and feel confident you are set up for long-term success with Email Implementation. Our experts will work as an extension of your team to ensure your email program is correctly set up and delivering value for your business.
+
 
 </call-out-link>
+
 
 <call-out>
 
@@ -112,11 +116,6 @@ If you set up a whitelabel before 2015, your whitelabel will still work. However
 
 If you set up a whitelabel after 2015, it has been automatically migrated to our new sender authentication system.
 
-<call-out>
-
-Get additional onboarding support. Save time, increase the quality of your sending, and feel confident you are set up for long-term success with [SendGrid Onboarding Services](https://sendgrid.com/marketing/onboarding-services-request/?utm_source=docs).
-
-</call-out>
 
 ## 	Additional resources
 
