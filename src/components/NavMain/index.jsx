@@ -32,16 +32,56 @@ class NavMain extends Component {
 
     return (
       <div className="nav-wrap">
-        <div className="nav-secondary">
-          <div className="container-lg">
-            <Link className="nav-secondary__link" to={LINKS.RELEASE_NOTES}>Release Notes</Link>
-            <a className="nav-secondary__link" href={LINKS.SENDGRID}>SendGrid.com</a>
-            <AuthCtx.Consumer>
-              {({ user }) => (
-                user ? (
-                  <div className="nav-secondary__account">
-                    <div className="nav-secondary__name">{user.first_name} {user.last_name} <span className="carret">▾</span></div>
-                    <div className="nav-secondary__account-links">
+
+        <nav className="nav-main">
+          <Link className="nav-main__logo" onClick={this.closeMenu} to="/" >
+            <span className="nav-main__help-center" >Knowledge Center</span>
+          </Link>
+
+          <button
+            className={`nav-main__toggle js-menu-toggle ${menuState}`}
+            onClick={this.toggleMenu}
+          >
+            <span className="nav-main__menu">Menu</span>
+            <span className="nav-main__menu__closer" />
+          </button>
+
+          <div className={`nav-main__mobile ${menuState}`} >
+
+            <div className="nav-center">
+
+              <div className="nav-item">
+                <a className="nav-main__plain" onClick={this.closeMenu} href={LINKS.SUPPORT}>
+                  Support
+                </a>
+              </div>
+
+              <div className="nav-item">
+                <Link className="nav-main__plain" onClick={this.closeMenu} to={LINKS.FOR_DEVELOPERS}>
+                  Developers
+                </Link>
+              </div>
+
+              <div className="nav-item">
+                <a className="nav-main__plain" onClick={this.closeMenu} href={LINKS.STATUS}>
+                  Status
+                </a>
+              </div>
+
+              <div className="nav-item">
+                <Link className="nav-main__plain" onClick={this.closeMenu} to={LINKS.RELEASE_NOTES}>
+                  Release Notes
+                </Link>
+              </div>
+
+            </div>
+
+            <div className="nav-right">
+
+              <div className="nav-item">
+                <AuthCtx.Consumer>
+                  {({ user }) => (
+                    user ? (
                       <a className="nav-secondary__dashboard" href={LINKS.APP}>Dashboard</a>
                       <a className="nav-secondary__sign-out" href={LINKS.LOGOUT}>Sign Out</a>
                     </div>
@@ -93,10 +133,13 @@ class NavMain extends Component {
                     Sign Up
                   </a>
                 </div>
+
               </div>
-            </nav>
+
+            </div>
+
           </div>
-        </div>
+        </nav>
       </div>
     );
   }

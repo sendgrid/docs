@@ -194,11 +194,9 @@ For subusers, SendGrid attaches authenticated domain information in the followin
 
 *If no valid authenticated domains can be found, the sending domain defaults to sendgrid.net.*
 
-<call-out>
 
-Get additional onboarding support. Save time, increase the quality of your sending, and feel confident you are set up for long-term success with [SendGrid Onboarding Services](https://sendgrid.com/marketing/onboarding-services-request/?utm_source=docs).
+<call-out-link linktext="IMPLEMENTATION SERVICES" img="/img/expert-insights-promo1.png" link="https://sendgrid.com/solutions/email-implementation/">
 
-</call-out>
 
 ## 	Additional resources
 

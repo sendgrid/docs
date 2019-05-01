@@ -59,3 +59,15 @@ To manually install the SendGrid pixel on your website, you'll need to copy the 
 
 1. Copy the custom script from within your SendGrid Ads account.
 1. Go to [Settings > SendGrid Pixel](https://labs.sendgrid.com/grow/account/tracking), or start from the setup module.
+
+
+### Additional Resources
+
+[Targeting the right audience for your Ads Campaign]({{root_url}}/ui/ads/target-right-audience-for-your-ads-campaign.md)
+[Designing and publishing an ad]({{root_url}}/ui/ads/design-and-publish-an-ad.md)
+[Analyzing the performance of your Ads campaign]({{root_url}}/ui/ads/analyze-the-performance-of-your-ads-campaign.md)
+[Tracking users to page views, purchase events and leads with the SendGrid Pixel]({{root_url}}/ui/ads/track-users-to-page-views-purchase-events-and-leads-with-the-sendgrid-pixel.md)
+
+
+
+

@@ -21,6 +21,20 @@ If you receive a report from us about Google spam complaints, or even from tradi
 1. If you don’t have opt-in, don’t send any more to those lists. It’s against our [Terms of Service](https://sendgrid.com/policies/email/), and considered to be [spam](https://www.spamhaus.org/consumer/definition/) anyway by the email community.
 2. If your list is opt-in, track who’s actually engaging with your email, as measured by click and open tracking. Many customers have this data in their own CRM, or you may prefer to use our own Click and Open Tracking apps, coupled with the [Event Webhook]({{root_url}}/for-developers/tracking-events/getting-started-event-webhook/) to consume this data. For recipients who don’t engage with your email, after a certain period of time that you determine to be appropriate based on your customer base and business model, stop sending to them. This tends to be a period between a few weeks and 3 months, depending on your sending frequency.
 
+
+<call-out-link linktext="EXPERT INSIGHTS" img="/img/expert-insights-promo2.png" link="https://sendgrid.com/solutions/expert-insights/">
+
+
+### Looking for more visibility into your email performance?
+
+
+Send better email with Expert Insights. Our detailed monthly reports will enable you to understand your email reputation and recipient engagement and repair issues with expert how-to steps.
+
+
+</call-out-link>
+
+
+
 If you receive a report from us about spam complaints, use this as an opportunity to implement better list acquisition and maintenance.
 
 
