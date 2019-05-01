@@ -74,10 +74,11 @@ $aside-width: 300px;
   position: sticky;
   align-self: flex-start;
   flex: 0 0 300px;
-  top: 0;
+  top: 192px;
 
   @media (max-width: $width-medium) {
     position: relative;
+    top: 0;
   }
 }
 

@@ -19,7 +19,9 @@ function MainLayout(props) {
     <div className={classNames}>
       <StatusPage />
       <NavMain />
-      {children()}
+      <div className="layout-content">
+        {children()}
+      </div>
       {renderFooter}
     </div>
   );
