@@ -31,8 +31,14 @@ For more information:
 * [DNS in Wikipedia](https://en.wikipedia.org/wiki/Domain_Name_System)
 
 
-<call-out>
+<call-out-link linktext="IMPLEMENTATION SERVICES" img="/img/expert-insights-promo1.png" link="https://sendgrid.com/solutions/email-implementation/">
 
-Get started on the right foot. Be confident that your account is optimized and set up for success now and as your email program continues to grow with [SendGrid Onboarding Services](https://sendgrid.com/marketing/onboarding-services-request/?utm_source=docs).
 
-</call-out>
+### Do you want expert help to get your email program started on the right foot?
+
+
+Save time and feel confident you are set up for long-term success with Email Implementation. Our experts will work as an extension of your team to ensure your email program is correctly set up and delivering value for your business.
+
+
+</call-out-link>
+
