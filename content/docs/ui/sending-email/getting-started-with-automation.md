@@ -391,7 +391,7 @@ When you re-enable the automation, contacts who previously entered the series wi
 
 The Automation beta includes the option to create a one-time email campaign, similar to what you find in our current  [Marketing Campaigns]({{root_url}}/ui/sending-email/how-to-send-an-email-with-marketing-campaigns/) product. In the beta, Campaigns does not yet include all functionality that’s available with Marketing Campaigns. Features that are coming soon include: 
 * Creating or sending to a custom-field based segment
-* Creating or sending to a engagement-based segment
+* Creating or sending to an engagement-based segment
 * A/B testing
 * Contact-level engagement data
 * Link click tracking 
@@ -554,6 +554,20 @@ Have feedback or questions? We welcome your thoughts at email_automation@sendgri
     <td>Planned</td>
   </tr>
 </table>
+
+## Automation General Availability 
+
+We’re targeting a market launch of Automation mid-summer, 2019. It will be launched as part of two entirely new Marketing Campaigns packages from SendGrid: 
+
+* **Basic package**
+Very similar to our current Marketing Campaigns product.
+* **Advanced package** 
+Everything from Basic plus Automation and new Email Testing functionality.
+
+These new packages will include both contact storage and a volume of emails you can send; any sends through the new Marketing Campaigns packages will not be deducted from your base Email API package. 
+
+Each package will have tiers to reflect your allotment of contact storage and email sends. For insight into pricing, the Advanced package (which will include Automation), will start at $60/month for 10,000 contacts and up to 50,000 emails. Package tiers will scale with usage, for example, 200,000 contacts and 1,000,000 emails will cost $900/month.
+
 
 
 
