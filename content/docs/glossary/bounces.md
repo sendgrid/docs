@@ -20,11 +20,18 @@ If you want to receive notification of bounces in your application, you can enab
 
 You can also [retrieve and edit your list of bounces]({{root_url}}/API_Reference/Web_API/bounces.html) through our Web API.
 
-<call-out>
 
-Looking for customized expert advice to improve your email program? Our team of email experts can help you create a plan to ensure you're optimizing your email delivery and engagement, and avoiding future issues like blacklists. Learn more on our [Expert Services](https://sendgrid.com/solutions/expert-services/?utm_source=docs) page.
+<call-out-link linktext="EXPERT INSIGHTS" img="/img/expert-insights-promo2.png" link="https://sendgrid.com/solutions/expert-insights/">
 
-</call-out>
+
+### Looking for more visibility into your email performance?
+
+
+Send better email with Expert Insights. Our detailed monthly reports will enable you to understand your email reputation and recipient engagement and repair issues with expert how-to steps.
+
+
+</call-out-link>
+
 
  ### Additional Resources:
 
