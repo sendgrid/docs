@@ -98,13 +98,18 @@ Any time that you send an email with a FROM address whose domain matches the dom
 
  ### 	Using automated security
 
-<call-out-link linktext="Go To Course" img="/img/SGA_SenderAuthentication750.png" link="https://rise.articulate.com/share/tZ8_9DYhJbWPTZN8CmsDK5GH0HPcOA-W">
 
-### Be Who You Say You Are With Sender Authentication
+<call-out-link linktext="IMPLEMENTATION SERVICES" img="/img/expert-insights-promo1.png" link="https://sendgrid.com/solutions/email-implementation/">
 
-Check out this [Academy Course](https://rise.articulate.com/share/tZ8_9DYhJbWPTZN8CmsDK5GH0HPcOA-W#/) to access actionable tips on how to build trust with mailbox providers and ensure your authentication is set up correctly.
+
+### Do you want expert help to get your email program started on the right foot?
+
+
+Save time and feel confident you are set up for long-term success with Email Implementation. Our experts will work as an extension of your team to ensure your email program is correctly set up and delivering value for your business.
+
 
 </call-out-link>
+
 
 Automated security allows SendGrid to handle the signing of your DKIM and authentication of your SPF for your outbound email with CNAME records. This allows you to add a dedicated IP address or update your account without having to update your SPF record.
 
@@ -149,12 +154,6 @@ When you are in the process of authenticating a domain, and on the screen where 
 If you set up a whitelabel before 2015, your whitelabel will still work. However, if you need to change or update it, you need to delete it and recreate it as an authenticated domain in our new system.
 
 If you set up a whitelabel after 2015, it has been automatically migrated to our new domain authentication system.
-
-<call-out>
-
-Get started on the right foot. Be confident that your account is optimized and set up for success now and as your email program continues to grow with [SendGrid Onboarding Services](https://sendgrid.com/marketing/onboarding-services-request/?utm_source=docs).
-
-</call-out>
 
 ## 	Additional resources
 
