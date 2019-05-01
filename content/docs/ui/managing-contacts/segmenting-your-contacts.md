@@ -17,13 +17,18 @@ seo:
 You can filter the information stored in your contact lists to create segments. Segmenting contacts using different conditions allows you to create Marketing Campaigns that directly address the wants and needs of a particular audience. You can create a segment that pulls from ALL CONTACTS or a specific existing list. [Custom fields]({{root_url}}/ui/managing-contacts/custom-fields/) allow you to use unique information to identify contacts for different segments.
 Segments are dynamically updated over time as you add contacts who meet the criteria of your segment, or as the traits of your contacts change. For example, a segment with the criteria ”opened an email within 30 days” will evolve as contacts engage (or don’t engage) with your email.
 
-<call-out-link linktext="Go To Course" img="/img/SGA_GetUpClose750.png" link="https://rise.articulate.com/share/vHJb2Ompdk7iWlBOHONDf0FXVomrzTRL">
 
-#### Get Up Close And Personal With Your Contacts
+<call-out-link linktext="EXPERT SERVICES" img="/img/expert-insights-promo3.png" link="https://sendgrid.com/solutions/email-implementation/">
 
-Enroll in this [Academy Course](https://rise.articulate.com/share/vHJb2Ompdk7iWlBOHONDf0FXVomrzTRL) learn how to think through leveraging contact data in Marketing Campaigns so you can successfully personalize and target your campaigns!
+
+### Need a helping hand?
+
+
+Getting into the inbox just so you can have the chance to engage with your customers often isn’t as easy as pressing “send.” Get customized advice from our team of email experts on how to optimize your segmentation strategy.
+
 
 </call-out-link>
+
 
 ## 	Creating a Segment
 
