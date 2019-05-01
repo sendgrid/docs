@@ -40,19 +40,16 @@ SendGrid also has a world-class support team that is available 24/7 via chat, ph
 If email drives your business, then paying close attention to your email deliverability rates is an undeniable key to your success. Let SendGrid help you achieve that success. To learn more about how email deliverability affects your business, download our free [Deliverability Guide](https://go.sendgrid.com/Email_Deliverability_Guide_2019.html).
 
 
-<call-out>
 
-Looking for customized expert advice to improve your email program? Our team of email experts can help you create a plan to ensure you're optimizing your email delivery and engagement, and avoiding future issues like blacklists. Learn more on our [Expert Services](https://sendgrid.com/solutions/expert-services/?utm_source=docs) page.
+<call-out-link linktext="EXPERT SERVICES" img="/img/expert-insights-promo3.png" link="https://sendgrid.com/solutions/expert-services/">
 
-</call-out>
 
-<call-out-link linktext="Go To Course" img="/img/SGA_DeliveryRate750.png" link="https://rise.articulate.com/share/LWqt5JOhZup_k0NfnZrD8MGds3zgemAp#/">
+### Need a helping hand?
 
-### Watch Your Delivery Rate Before It’s Too Late
 
-Your delivery rate can be an early indicator of problems with your email program. Enroll in this [Academy Course](https://rise.articulate.com/share/LWqt5JOhZup_k0NfnZrD8MGds3zgemAp#/) to learn how to address a low delivery rate, and how tracking engagement can give you more control.
+Getting into the inbox just so you can have the chance to engage with your customers often isn’t as easy as pressing “send.” Get customized advice from our team of email experts on how to optimize your email strategy.
+
 
 </call-out-link>
-
 
 
