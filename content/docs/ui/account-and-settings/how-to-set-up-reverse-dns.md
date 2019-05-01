@@ -25,13 +25,18 @@ You can only set up reverse DNS if you have a [dedicated IP]({{root_url}}/ui/acc
 
 Setting up reverse DNS on an IP address allows mailbox providers to verify the sender when they do a reverse DNS lookup upon receipt of the emails you send. When you update your DNS provider with a DNS record provided by SendGrid, and then send mail over your IP, the recipient's email service provider performs a reverse DNS lookup (rDNS) using an A Record (address record). An A Record maps your domain to your IP address. When a mailbox provider looks up your A Record, they see your SendGrid IP address. When they look at your IP address, they see the rDNS that matches your A Record. This circular checking proves your SendGrid IP association with your domain and your domain association with your SendGrid IP.
 
-<call-out-link linktext="Go To Course" img="/img/SGA_SenderAuthentication750.png" link="https://rise.articulate.com/share/tZ8_9DYhJbWPTZN8CmsDK5GH0HPcOA-W">
 
-### Be Who You Say You Are With Sender Authentication
+<call-out-link linktext="IMPLEMENTATION SERVICES" img="/img/expert-insights-promo1.png" link="https://sendgrid.com/solutions/email-implementation/">
 
-Check out this [Academy Course](https://rise.articulate.com/share/tZ8_9DYhJbWPTZN8CmsDK5GH0HPcOA-W) to access actionable tips on how to build trust with mailbox providers and ensure your authentication is set up correctly.
+
+### Do you want expert help to get your email program started on the right foot?
+
+
+Save time and feel confident you are set up for long-term success with Email Implementation. Our experts will work as an extension of your team to ensure your email program is correctly set up and delivering value for your business.
+
 
 </call-out-link>
+
 
 ## 	Key terminology
 
