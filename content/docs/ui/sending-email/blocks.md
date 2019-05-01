@@ -48,7 +48,6 @@ Send better email with Expert Insights. Our detailed monthly reports will enable
 </call-out-link>
 
 
-
 ## 	Additional Resources
 
 - [Bounces]({{root_url}}/ui/sending-email/bounces/)
