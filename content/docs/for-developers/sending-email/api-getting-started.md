@@ -70,7 +70,20 @@ curl --request POST \
 
 If you have not yet set up [Sender Authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/) in your account, you may need to check your spam folder for the email you just sent.
 
+
 </call-out>
+
+<call-out-link linktext="IMPLEMENTATION SERVICES" img="/img/expert-insights-promo1.png" link="https://sendgrid.com/solutions/email-implementation/">
+
+
+### Do you want expert help to get your email program started on the right foot?
+
+
+Save time and feel confident you are set up for long-term success with Email Implementation. Our experts will work as an extension of your team to ensure your email program is correctly set up and delivering value for your business.
+
+
+</call-out-link>
+
 
  ### 	API Response messages
 
