@@ -29,7 +29,6 @@ Getting into the inbox just so you can have the chance to engage with your custo
 
 </call-out-link>
 
-
 ## 	Creating a Segment
 
 You can create a new segment with multiple conditions based on the information you have stored about your contacts, and based on some of the information SendGrid has stored about your Marketing Campaigns.
