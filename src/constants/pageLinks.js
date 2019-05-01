@@ -1,6 +1,5 @@
 const LINKS = {
   APP: 'https://app.sendgrid.com/?utm_source=docs',
-  ACADEMY: 'https://sendgrid.com/learn/?utm_source=docs',
   FOR_DEVELOPERS: '/for-developers/',
   GLOSSARY: '/glossary/',
   LOGOUT: 'https://app.sendgrid.com/logout/',

@@ -22,19 +22,6 @@ Before sending your first campaign, you need to do the following:
 - [Add an Unsubscribe Group]({{root_url}}/ui/sending-email/create-and-manage-unsubscribe-groups/)
 - [Segment Your Contact List]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/) (Optional)
 
-
-<call-out-link linktext="IMPLEMENTATION SERVICES" img="/img/expert-insights-promo1.png" link="https://sendgrid.com/solutions/email-implementation/">
-
-
-### Do you want expert help to get your email program started on the right foot?
-
-
-Save time and feel confident you are set up for long-term success with Email Implementation. Our experts will work as an extension of your team to ensure your email program is correctly set up and delivering value for your business.
-
-
-</call-out-link>
-
-
 *To send your first campaign:*
 
 1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**.
@@ -57,10 +44,10 @@ The Code Editor provides users who are importing, editing, or crafting custom HT
 
  ## 	Building Your Campaign
 
-Regardless of your editor selection, you use the same 4 tabs to design and configure your campaign: **Settings**, **Tags**, and **A/B Testing**. 
+Regardless of your editor selection, you use the same 4 tabs to design and configure your campaign: **Settings**, **Tags**, and **A/B Testing**.
 
 <call-out>
-You can work on building your campaign in any order you like, no need to start with settings before jumping into Build or A/B testing. 
+You can work on building your campaign in any order you like, no need to start with settings before jumping into Build or A/B testing.
 </call-out>
 
 1. Define key settings like From Sender, Email Subject, Preheader, Recipients, and Scheduling by filling in the fields in the **Settings** Tab.

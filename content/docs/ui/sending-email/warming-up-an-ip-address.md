@@ -27,18 +27,6 @@ It is much easier to establish a positive reputation as a new sender, than it is
 
 </call-out>
 
-<call-out-link linktext="IMPLEMENTATION SERVICES" img="/img/expert-insights-promo1.png" link="https://sendgrid.com/solutions/email-implementation/">
-
-
-### Do you want expert help to get your email program started on the right foot?
-
-
-Save time and feel confident you are set up for long-term success with Email Implementation. Our experts will work as an extension of your team to ensure your email program is correctly set up and delivering value for your business.
-
-
-</call-out-link>
-
-
 ## 	Warmup types
 
 There are 2 ways to warmup your IP. If your dedicated IP is relatively new, or you've never had one before, you need to warmup your IP manually. If you are adding new dedicated IPs to existing warm IPs, you can automatically warmup your IP with the UI or the API. When your IP is being warmed up, this is your hourly sending limit:

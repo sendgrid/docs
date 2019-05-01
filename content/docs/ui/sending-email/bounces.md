@@ -29,19 +29,6 @@ You can download your Bounce list as a CSV by clicking the gear icon at the top 
 
 When you select the checkboxes next to the recipient names or select all, using the checkbox next to the search box, you will see a new button at the top of the page. From this list, you can choose to remove the selected recipients from the list. You can also use the Bounce Purge.
 
-
-<call-out-link linktext="EXPERT INSIGHTS" img="/img/expert-insights-promo2.png" link="https://sendgrid.com/solutions/expert-insights/">
-
-
-### Looking for more visibility into your email performance?
-
-
-Send better email with Expert Insights. Our detailed monthly reports will enable you to understand your email reputation and recipient engagement and repair issues with expert how-to steps.
-
-
-</call-out-link>
-
-
 ## 	Additional Resources
 
 - [Global Unsubscribes]({{root_url}}/ui/sending-email/global-unsubscribes/)
