@@ -194,19 +194,18 @@ For subusers, SendGrid attaches authenticated domain information in the followin
 
 *If no valid authenticated domains can be found, the sending domain defaults to sendgrid.net.*
 
-<call-out>
 
-Get additional onboarding support. Save time, increase the quality of your sending, and feel confident you are set up for long-term success with [SendGrid Onboarding Services](https://sendgrid.com/marketing/onboarding-services-request/?utm_source=docs).
+<call-out-link linktext="IMPLEMENTATION SERVICES" img="/img/expert-insights-promo1.png" link="https://sendgrid.com/solutions/email-implementation/">
 
-</call-out>
 
-<call-out-link linktext="Go To Course" img="/img/SGA_SenderAuthentication750.png" link="https://rise.articulate.com/share/tZ8_9DYhJbWPTZN8CmsDK5GH0HPcOA-W">
+### Do you want expert help to get your email program started on the right foot?
 
-### Be Who You Say You Are With Sender Authentication
 
-Check out this [Academy Course](https://rise.articulate.com/share/tZ8_9DYhJbWPTZN8CmsDK5GH0HPcOA-W) to access actionable tips on how to build trust with mailbox providers and ensure your authentication is set up correctly.
+Save time and feel confident you are set up for long-term success with Email Implementation. Our experts will work as an extension of your team to ensure your email program is correctly set up and delivering value for your business.
+
 
 </call-out-link>
+
 
 ## 	Additional resources
 
