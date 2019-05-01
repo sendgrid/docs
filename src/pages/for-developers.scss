@@ -10,6 +10,13 @@ $card-gutter: 30px;
   padding-bottom: calc(16rem + 40px);
 }
 
+.docsfor-developers {
+  .layout-content {
+    overflow: hidden;
+    position: relative;
+  }
+}
+
 .for-developers {
   position: relative;
 
