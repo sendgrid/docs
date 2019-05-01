@@ -108,3 +108,11 @@ To create a Leads Ad, click **Create Campaign**, then select **Grow & message yo
 ![]({{root_url}}/img/targeting-contact-lookalikes.gif)
  
 After you’ve selected your targeting criteria, you will design your leads ad. There is an additional option to change the Call To Action (CTA) in your lead ad. There are several options to choose from.
+
+### Additional Resources
+
+[Getting Started with Ads]({{root_url}}/ui/ads/getting-started-with-ads/)
+[Targeting the right audience for your Ads Campaign]({{root_url}}/ui/ads/target-right-audience-for-your-ads-campaign/)
+[Analyzing the performance of your Ads campaign]({{root_url}}/ui/ads/analyze-the-performance-of-your-ads-campaign/)
+[Tracking users to page views, purchase events and leads with the SendGrid Pixel]({{root_url}}/ui/ads/track-users-to-page-views-purchase-events-and-leads-with-the-sendgrid-pixel/)
+
