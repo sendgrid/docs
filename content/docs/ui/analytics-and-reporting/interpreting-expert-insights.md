@@ -6,10 +6,10 @@ group: expert-insights
 seo:
   title: Interpreting Expert Insights
   description: Learn how to interpret your Expert Insights report
-  keywords: 
+  keywords:
 navigation:
   show: true
-  
+
 ---
 
 The Expert Insights report contains delivery and engagement metrics from email sent through SendGrid. The report is divided into four sections:
@@ -20,7 +20,7 @@ The Expert Insights report contains delivery and engagement metrics from email s
 
 <call-out>
 
-When you subscribe to Expert Insights, you get access to email strategies and best practices curated by our experts, including step-by-step instructions for how to resolve issues highlighted in the report. You can view an example of best practices you will receive [here.] (https://rise.articulate.com/share/VlJssyUNRN1dLEarFolNAx0teya492tR)
+When you subscribe to Expert Insights, you get access to email strategies and best practices curated by our experts, including step-by-step instructions for how to resolve issues highlighted in the report.
 
 </call-out>
 
@@ -285,7 +285,7 @@ Throughout the report, we provide data on how your email is performing at top ma
 
 ##  At a Glance
 
-In this section of the report, you’ll see a snapshot of your overall deliverability health and email marketing performance. You’ll see: 					
+In this section of the report, you’ll see a snapshot of your overall deliverability health and email marketing performance. You’ll see:
 
 <table>
   <tr>
@@ -314,14 +314,14 @@ In this section of the report, you’ll see a snapshot of your overall deliverab
 
 This section analyzes the volume of emails sent during this reporting period. The volume of email sent on any given day influences deliverability metrics and can give insight into why certain deliverability metrics may be higher or lower than in previous periods.
 
-In the **Is your Email Volume Impacting Deliverability** chart, we show you how your sending volume might be impacting leakage. We calculate leakage by combining your bounced and blocked emails. Senders who are experiencing an issue with leakage will see a thicker purple line, as in the chart below. 
+In the **Is your Email Volume Impacting Deliverability** chart, we show you how your sending volume might be impacting leakage. We calculate leakage by combining your bounced and blocked emails. Senders who are experiencing an issue with leakage will see a thicker purple line, as in the chart below.
 
 ![]({{root_url}}/img/emailvolumechart-expertinsights.png)
 ##  Delivered Section
 
 This section analyzes the factors that contribute to your sender reputation. Typically, an email is not delivered to a recipient’s inbox because it is either bounced or blocked by the mailbox service provider. High bounce rates are commonly caused by misspelled or nonexistent email addresses. High block rates occur when the recipient email address is valid but something else about this message caused the message to be undeliverable, which can be as simple as a mailbox being full or more urgent like being blacklisted.
 
-In the **IP Health by Delivered Rate** chart, we determine your IP health based on numerous backend metrics and health indicators. 
+In the **IP Health by Delivered Rate** chart, we determine your IP health based on numerous backend metrics and health indicators.
 
 ##  Open and Clicked Section
 

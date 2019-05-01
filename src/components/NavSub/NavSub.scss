@@ -4,6 +4,8 @@
   background: $slate-02;
   border-bottom: 1px solid $slate-10;
   margin-bottom: $scaleup-6;
+  position: relative;
+  z-index: 1;
 }
 
 .docsfor-developers .nav-sub,

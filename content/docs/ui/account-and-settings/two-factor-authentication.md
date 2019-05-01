@@ -15,6 +15,12 @@ navigation:
 
 Two-factor authentication, commonly referred to as multi-factor authentication, allows you to make your SendGrid account more secure by requiring authentication beyond a simple username and password when logging in.
 
+<call-out type="warning">
+
+SendGrid no longer accepts Basic authentication (username and password) for API calls when two-factor authentication is enabled for a user. You can now only use two-factor authentication if you are authenticating with an API key. For more information, see [Authentication]({{root_url}}//for-developers/sending-email/authentication/).
+
+</call-out>
+
 SendGrid’s Two-Factor Authentication can be configured to accept a code sent to your mobile phone either via the [Authy App](https://www.authy.com/app/mobile/), or an SMS message.
 
 ## 	Setting Up Two-Factor Authentication

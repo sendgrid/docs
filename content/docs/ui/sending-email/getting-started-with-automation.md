@@ -172,6 +172,41 @@ If you keep the entry criteria as "All Contacts" it's important to remember that
 
 </call-out>
 
+## Manage Automations
+
+During the beta, you are only able to edit the content, subject line, and sender for each email in your series.
+
+### Disable an Automation
+
+*To disable an automation:*
+
+When you disable an automation, all emails in your automation will stop sending unless you set it live again. No new contacts will be entered into your automation while it's disabled. If you set the automation live again, contacts who entered the automation before it was disabled will continue receiving emails again according to where they left off.
+
+1. Navigate to **Automations** and select the series you want to stop.
+1. Select the Action Menu to the right of the Automation.
+1. Click **Disable Automation** in the upper right corner.
+
+
+*To set a disabled automation live again:*
+
+1. Navigate to **Automations** and select the series you want to re-enable.
+1. Select the Action Menu to the right of the Automation.
+1. Click **Set Live** in the upper right corner.
+
+<call-out>
+
+When you re-enable the automation, contacts who previously entered the series will continue receiving emails where they left off in the series. Contacts who met your entry criteria during the disabled period will not be added to the automation. For this reason, do not add users to lists that are used as the entry criteria for automations in a disabled state.
+
+</call-out>
+
+### Delete an Automation
+
+*To delete an automation:*
+
+1. On the automation dashboard, find the automation you want to delete.
+1. Hover over the action menu and select the delete icon.
+1. To delete the automation, click **Confirm**.
+
 ## Email Testing
 
 Email testing offers in-app spam testing, inbox rendering previews, and link validation right within the Automation experience. It allows you to preview how an email is likely to perform across a wide range of inbox providers, devices and spam filters, before sending.
@@ -228,11 +263,11 @@ During the beta, contacts you upload to Automation are distinct from your existi
 
 </call-out>
 
-## Add Contacts
+### Add Contacts
 
 Note that automations will only trigger to contacts who are added to an entry criteria list *after* the automation is set live. Contacts who you add to a list before the automation is set live will not receive any emails in the series.
 
-### Upload a CSV
+#### Upload a CSV
 
 You can add contacts to a list via CSV Upload or by creating a Signup Form to automatically send signups to a list. 
 
@@ -249,7 +284,7 @@ At this phase of the beta, custom fields are not supported. You can import [rese
 4. Upload your file by dragging it into or clicking the CSV upload area.
    Once the CSV has processed, you will receive a [notification]({{root_url}}/ui/sending-email/getting-started-with-automation/#notifications) email.
 
-### Create a signup form
+#### Create a signup form
 
 Use Signup Forms with the SendGrid Automation beta to capture new contacts and add them directly to an Automation list. If the list you add them to is acting as the entry criteria for a live automation, the new contact will automatically receive any emails you’ve created as part of that automation. 
 
@@ -298,7 +333,7 @@ To make your form accessible to new contacts, you can either send them a link ho
 
 You can also find the options to share the signup form in the form editor by clicking **Share Code** in the top-right corner of the editor. 
 
-## Edit or Remove Contacts
+### Edit or Remove Contacts
 
 To manage your contact lists more efficiently, you can edit and remove contact lists from the Contacts page. 
 
@@ -324,7 +359,7 @@ To manage your contact lists more efficiently, you can edit and remove contact l
 1. When you see "Are you sure you want to remove this contact?" click **Remove Contact**. 
 
 
-## Export contacts
+### Export contacts
 
 To view the contents of a contact list, you can export the list to a CSV and download it to your computer.
 
@@ -345,41 +380,6 @@ Exported CSV files are only available for download for 72 hours after the export
 ### Contact Management APIs
 
 You can integrate with the Contact Management APIs to create and update lists, add contacts, manage reserved field data, export contact lists, and pull data about your contacts and lists. Learn more through the documentation for [Automation Contact APIs](https://sendgrid-automation.api-docs.io/v3/getting-started).
-
-## Manage Automations
-
-During the beta, you are only able to edit the content, subject line, and sender for each email in your series.
-
-### Disable an Automation
-
-*To disable an automation:*
-
-When you disable an automation, all emails in your automation will stop sending unless you set it live again. No new contacts will be entered into your automation while it's disabled. If you set the automation live again, contacts who entered the automation before it was disabled will continue receiving emails again according to where they left off.
-
-1. Navigate to **Automations** and select the series you want to stop.
-1. Select the Action Menu to the right of the Automation.
-1. Click **Disable Automation** in the upper right corner.
-
-
-*To set a disabled automation live again:*
-
-1. Navigate to **Automations** and select the series you want to re-enable.
-1. Select the Action Menu to the right of the Automation.
-1. Click **Set Live** in the upper right corner.
-
-<call-out>
-
-When you re-enable the automation, contacts who previously entered the series will continue receiving emails where they left off in the series. Contacts who met your entry criteria during the disabled period will not be added to the automation. For this reason, do not add users to lists that are used as the entry criteria for automations in a disabled state.
-
-</call-out>
-
-### Delete an Automation
-
-*To delete an automation:*
-
-1. On the automation dashboard, find the automation you want to delete.
-1. Hover over the action menu and select the delete icon.
-1. To delete the automation, click **Confirm**.
 
 ## Migrating from Marketing Campaigns
 

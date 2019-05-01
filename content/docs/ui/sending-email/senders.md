@@ -59,6 +59,19 @@ Once you schedule a campaign, you cannot delete the sender identity associated w
 
 </call-out>
 
+
+<call-out-link linktext="IMPLEMENTATION SERVICES" img="/img/expert-insights-promo1.png" link="https://sendgrid.com/solutions/email-implementation/">
+
+
+### Do you want expert help to get your email program started on the right foot?
+
+
+Save time and feel confident you are set up for long-term success with Email Implementation. Our experts will work as an extension of your team to ensure your email program is correctly set up and delivering value for your business.
+
+
+</call-out-link>
+
+
 ## 	Adding Sender Information to a Campaign
 
 You can insert your sender identity information into your campaigns using the following tags within your campaign or template content:

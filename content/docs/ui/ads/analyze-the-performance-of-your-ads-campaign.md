@@ -34,3 +34,10 @@ To optimize your view into your campaign analytics, we highly recommend that you
 By campaign, you view Impressions, Clicks, Revenue, Estimated Cost, Cost Per Click (CPC), and Click Through Rate (CTR).
 
 ![]({{root_url}}/img/ads-analytics-impressions.png)
+
+### Additional Resources
+
+[Getting Started with Ads]({{root_url}}/ui/ads/getting-started-with-ads/)
+[Targeting the right audience for your Ads Campaign]({{root_url}}/ui/ads/target-right-audience-for-your-ads-campaign/)
+[Designing and publishing an ad]({{root_url}}/ui/ads/design-and-publish-an-ad/)
+[Tracking users to page views, purchase events and leads with the SendGrid Pixel]({{root_url}}/ui/ads/track-users-to-page-views-purchase-events-and-leads-with-the-sendgrid-pixel/)

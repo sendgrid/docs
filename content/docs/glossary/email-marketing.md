@@ -35,12 +35,3 @@ SendGrid can help you achieve your email marketing goals with our [Marketing Ema
 * [List Segmentation]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/)
 
 This level of visibility into your email marketing performance is invaluable when it comes to determining what resonates best with your audience. Overall, the key to a successful email marketing is that it drives an action. You should strive to provide relevant content by using segmentation strategies to tailor your communications. This is best achieved by testing your design, content, and offers to determine what resonates best with your subscribers.
-
-<call-out-link linktext="Go To Course" img="/img/SGA_GetUpClose750.png" link="https://rise.articulate.com/share/vHJb2Ompdk7iWlBOHONDf0FXVomrzTRL">
-
-### Get Up Close And Personal With Your Contacts
-
-Enroll in this [Academy Course](https://rise.articulate.com/share/vHJb2Ompdk7iWlBOHONDf0FXVomrzTRL) learn how to think through leveraging contact data in Marketing Campaigns so you can successfully personalize and target your campaigns!
-
-</call-out-link>
-

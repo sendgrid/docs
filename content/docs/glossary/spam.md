@@ -28,19 +28,8 @@ These are some of the most common reasons for which an email may end up in the S
 
 To find out more about what you can do to ensure your email is being received by your recipients, you may also want to check out our [Tips and Tricks to Stay Out of the Spam Folder](https://sendgrid.com/blog/tips-tricks-stay-spam-folder-qa/).
 
-<call-out>
 
-Looking for customized expert advice to improve your email program? Our team of email experts can help you create a plan to ensure you're optimizing your email delivery and engagement, and avoiding future issues like blacklists. Learn more on our [Expert Services](https://sendgrid.com/solutions/expert-services/?utm_source=docs) page.
-
-</call-out>
-
-<call-out-link linktext="Go To Course" img="/img/SGA_FigureOutWhy750.png" link="https://rise.articulate.com/share/FXq7qMSzRx-7otpybg622nb-AROmiADA">
-
-### Figure Out Why Your Emails Are going To Spam
-
-Explore best practices and actionable tips you can take to help your emails get into the inbox with this [Academy Course](https://rise.articulate.com/share/FXq7qMSzRx-7otpybg622nb-AROmiADA).
-
-</call-out-link>
+<call-out-link linktext="EXPERT INSIGHTS" img="/img/expert-insights-promo2.png" link="https://sendgrid.com/solutions/expert-insights/">
 
 ## Additional Resources
 

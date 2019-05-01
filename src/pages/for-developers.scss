@@ -11,8 +11,12 @@ $card-gutter: 30px;
 }
 
 .for-developers {
-  overflow: hidden;
   position: relative;
+
+  .layout-content {
+    overflow: hidden;
+    position: relative;
+  }
 
   .page-title {
     color: #fff;
