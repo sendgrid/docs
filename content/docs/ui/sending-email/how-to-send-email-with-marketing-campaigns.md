@@ -23,13 +23,17 @@ Before sending your first campaign, you need to do the following:
 - [Segment Your Contact List]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/) (Optional)
 
 
-<call-out-link linktext="Go To Course" img="/img/SGA_SmartStart750.png" link="https://rise.articulate.com/share/uGIBV4dMNFn-HzrIMDW_s2Kh4dxMH0vr#/">
+<call-out-link linktext="IMPLEMENTATION SERVICES" img="/img/expert-insights-promo1.png" link="https://sendgrid.com/solutions/email-implementation/">
 
-#### Steps To A Smart Start With Marketing Campaigns
 
-Set yourself up for success by enrolling in this [Academy Course](https://rise.articulate.com/share/uGIBV4dMNFn-HzrIMDW_s2Kh4dxMH0vr#/). You’ll learn the key steps and considerations to address before hitting Send.
+### Do you want expert help to get your email program started on the right foot?
+
+
+Save time and feel confident you are set up for long-term success with Email Implementation. Our experts will work as an extension of your team to ensure your email program is correctly set up and delivering value for your business.
+
 
 </call-out-link>
+
 
 *To send your first campaign:*
 
