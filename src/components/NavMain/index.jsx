@@ -83,57 +83,17 @@ class NavMain extends Component {
                   {({ user }) => (
                     user ? (
                       <a className="nav-secondary__dashboard" href={LINKS.APP}>Dashboard</a>
-                      <a className="nav-secondary__sign-out" href={LINKS.LOGOUT}>Sign Out</a>
-                    </div>
-                  </div>
-                  ) : (
-                    <a className="nav-secondary__link" href={LINKS.APP}>Log In</a>
-                  )
-              )}
-            </AuthCtx.Consumer>
-          </div>
-        </div>
+                      ) : (
+                        <a className="nav-secondary__link" href={LINKS.APP}>Sign In</a>
+                      )
+                  )}
+                </AuthCtx.Consumer>
+              </div>
 
-        <div className="nav-main-wrap">
-          <div className="container-lg">
-            <nav className="nav-main">
-              <Link className="nav-main__logo" onClick={this.closeMenu} to="/" >
-                <span className="nav-main__help-center" >Knowledge Center</span>
-              </Link>
-
-              <button
-                className={`nav-main__toggle js-menu-toggle ${menuState}`}
-                onClick={this.toggleMenu}
-              >
-                <span className="nav-main__menu" />
-              </button>
-
-              <div className={`nav-main__mobile ${menuState}`} >
-
-                <div className="nav-item">
-                  <a className="nav-main__plain" onClick={this.closeMenu} href={LINKS.SUPPORT}>
-                    Contact Support
-                  </a>
-                </div>
-
-                <div className="nav-item">
-                  <Link className="nav-main__plain" onClick={this.closeMenu} to={LINKS.FOR_DEVELOPERS}>
-                    For Developers
-                  </Link>
-                </div>
-
-                <div className="nav-item">
-                  <a className="nav-main__plain" onClick={this.closeMenu} href={LINKS.STATUS}>
-                    Status
-                  </a>
-                </div>
-
-                <div className="nav-item nav-item--btn">
-                  <a className="btn nav-main__login" href={LINKS.PRICING}>
-                    Sign Up
-                  </a>
-                </div>
-
+              <div className="nav-item nav-item--btn">
+                <a className="nav-main__login" href={LINKS.PRICING}>
+                  Start Free
+                </a>
               </div>
 
             </div>
