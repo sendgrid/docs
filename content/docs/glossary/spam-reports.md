@@ -20,8 +20,16 @@ Make it easier for someone to find the unsubscribe button than it is to find the
 
 </call-out>
 
-<call-out>
 
-Need a helping hand? [SendGrid Expert Services](https://sendgrid.com/solutions/expert-services/?utm_source=docs) will provide you with the expert advice and data you need to be reach your email goals and drive business from email.
+<call-out-link linktext="EXPERT INSIGHTS" img="/img/expert-insights-promo2.png" link="https://sendgrid.com/solutions/expert-insights/">
 
-</call-out>
+
+### Looking for more visibility into your email performance?
+
+
+Send better email with Expert Insights. Our detailed monthly reports will enable you to understand your email reputation and recipient engagement and repair issues with expert how-to steps.
+
+
+</call-out-link>
+
+
