@@ -22,8 +22,14 @@ SendGrid will store tracking data for unique click events for up to 7 days.
 
 </call-out>
 
-<call-out>
+<call-out-link linktext="EXPERT INSIGHTS" img="/img/expert-insights-promo2.png" link="https://sendgrid.com/solutions/expert-insights/">
 
-Looking for customized expert advice to improve your email program? Our team of email experts can help you create a plan to ensure you're optimizing your email delivery and engagement, and avoiding future issues like blacklists. Learn more on our [Expert Services](https://sendgrid.com/solutions/expert-services/?utm_source=docs) page.
 
-</call-out>
+### Looking for more visibility into your email performance?
+
+
+Send better email with Expert Insights. Our detailed monthly reports will enable you to understand your email reputation and recipient engagement and repair issues with expert how-to steps.
+
+
+</call-out-link>
+

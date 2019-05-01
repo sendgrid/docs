@@ -10,6 +10,7 @@ seo:
 navigation:
   show: true
 ---
+
 <call-out>
 
 Ads is currently in closed beta. During beta, only approved participants have access to the feature. Functionality and performance might not be working quite like we want it to and we reserve the right to change the functionality at any time without warning. For more information on the Ads beta, or to join the beta waitlist, see our [Ads Solution Page](https://sendgrid.com/solutions/ads/).
@@ -18,7 +19,7 @@ Ads is currently in closed beta. During beta, only approved participants have ac
 
 Use SendGrid Ads to create social and display advertising campaigns on Facebook, Instagram, and Google Display Ads based on your email and website data. You can target social and display ads to reach current customers, or target lookalike audiences to reach new potential customers.
 
-<iframe src="https://vimeo.com/321855599" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/321855599" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ## Connecting your accounts
 
@@ -31,7 +32,7 @@ It's important that you grant SendGrid full permissions to your Facebook account
 
 </call-out>
 
-1. Add the SendGrid Pixel to just before the closing `</body>` tag on all of the individual pages that you want to promote.
+3. Add the SendGrid Pixel to just before the closing `</body>` tag on all of the individual pages that you want to promote.
 
 ## The SendGrid Pixel
 
@@ -43,15 +44,30 @@ You can upload contacts directly to SendGrid Ads and/or target contacts dynamica
 
 </call-out>
 
-### Adding the script manually
+## Adding the script manually
 
 To manually install the SendGrid pixel on your website, you'll need to copy the custom script from within your SendGrid Ads account.
 
 1. Go to [Settings > SendGrid Pixel](https://labs.sendgrid.com/grow/account/tracking), or start from the setup module.
 1. Copy your custom script and install in all pages of your website before the closing `</body>` tag.
 
-### Adding the script using Google Tag Manager
+## Adding the script using Google Tag Manager
 
-[Google Tag Manager](https://marketingplatform.google.com/about/tag-manager/) is a great tool that can help manage the installation of multiple scripts on your site. To install your SendGrid pixel into Google Tag Manager, you'll need to copy the custom script from within your SendGrid Ads account.
+[Google Tag Manager](https://marketingplatform.google.com/about/tag-manager/) is a great tool that can help manage the installation of multiple scripts on your site. 
 
+*To install your SendGrid pixel into Google Tag Manager:* 
+
+1. Copy the custom script from within your SendGrid Ads account.
 1. Go to [Settings > SendGrid Pixel](https://labs.sendgrid.com/grow/account/tracking), or start from the setup module.
+
+
+### Additional Resources
+
+[Targeting the right audience for your Ads Campaign]({{root_url}}/ui/ads/target-right-audience-for-your-ads-campaign/)
+[Designing and publishing an ad]({{root_url}}/ui/ads/design-and-publish-an-ad/)
+[Analyzing the performance of your Ads campaign]({{root_url}}/ui/ads/analyze-the-performance-of-your-ads-campaign/)
+[Tracking users to page views, purchase events and leads with the SendGrid Pixel]({{root_url}}/ui/ads/track-users-to-page-views-purchase-events-and-leads-with-the-sendgrid-pixel/)
+
+
+
+

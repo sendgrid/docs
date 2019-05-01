@@ -21,12 +21,3 @@ SendGrid's [IP Pooling feature]({{root_url}}/API_Reference/Web_API_v3/IP_Managem
 For more information about how you can segment your email traffic, please see [Segmenting Your Contacts]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/).
 
 </call-out>
-
-<call-out-link linktext="Go To Course" img="/img/SGA_GetUpClose750.png" link="https://rise.articulate.com/share/vHJb2Ompdk7iWlBOHONDf0FXVomrzTRL">
-
-#### Get Up Close And Personal With Your Contacts
-
-Enroll in this [Academy Course](https://rise.articulate.com/share/vHJb2Ompdk7iWlBOHONDf0FXVomrzTRL) learn how to think through leveraging contact data in Marketing Campaigns so you can successfully personalize and target your campaigns!
-
-</call-out-link>
-

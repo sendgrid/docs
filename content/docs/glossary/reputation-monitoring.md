@@ -58,6 +58,15 @@ We regularly monitor our customers' account reputation for abuse and undesirable
 - **Reputation between 70% and 80%:** This is considered a poor reputation and you should consider taking action to identify and fix problems with your sending practices.
 - **Reputation below 70%:** Accounts with a reputation below 70% may be subject to immediate suspension or termination.
 
-<call-out>
- Looking for customized expert advice to improve your email program? Our team of email experts can help you create a plan to ensure you're optimizing your email delivery and engagement, and avoiding future issues like blacklists. Learn more on our [Expert Services](https://sendgrid.com/solutions/expert-services/?utm_source=docs) page.
- </call-out>
+
+<call-out-link linktext="EXPERT SERVICES" img="/img/expert-insights-promo3.png" link="https://sendgrid.com/solutions/expert-services/">
+
+
+### Need a helping hand?
+
+
+Getting into the inbox just so you can have the chance to engage with your customers often isn’t as easy as pressing “send.” Get customized advice from our team of email experts on how to optimize your email strategy.
+
+
+</call-out-link>
+

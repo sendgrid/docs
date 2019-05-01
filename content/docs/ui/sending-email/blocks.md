@@ -35,6 +35,19 @@ When you select the checkboxes next to the recipient names or select all, using 
 
 You can download your Global Unsubscribe list as a CSV by clicking the gear icon at the top of the page and selecting “Download CSV.” The file will download in your browser right away.
 
+
+<call-out-link linktext="EXPERT INSIGHTS" img="/img/expert-insights-promo2.png" link="https://sendgrid.com/solutions/expert-insights/">
+
+
+### Looking for more visibility into your email performance?
+
+
+Send better email with Expert Insights. Our detailed monthly reports will enable you to understand your email reputation and recipient engagement and repair issues with expert how-to steps.
+
+
+</call-out-link>
+
+
 ## 	Additional Resources
 
 - [Bounces]({{root_url}}/ui/sending-email/bounces/)

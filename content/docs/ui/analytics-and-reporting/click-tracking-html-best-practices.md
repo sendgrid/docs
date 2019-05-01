@@ -12,12 +12,15 @@ navigation:
   show: true
 ---
 
-If you are experiencing issues with the click tracking setting not replacing your original links, please take a look at your link formatting. Links must be in the proper format in order for our click tracking setting to find and replace them. Links must be within an HTML `<a>` tag, must be quoted, must not contain spaces around the `=` in the `href` attribute, and must be proceeded by **`"http://`** or **`"https://`**.
+If you are experiencing issues with the click tracking setting not replacing your original links, please take a look at your link formatting. Links must be in the proper format in order for our click tracking setting to find and replace them: 
+Links must be within an HTML `<a>` tag with the `href` argument within the tag. There must not be spaces around the `=` in the `href` attribute, the URI must be quoted, and must be proceeded by **`"http://`** or **`"https://`**.
 Here are some example links that will be properly replaced by our click tracking app:
 
 `<a href="http://www.sendgrid.com">SendGrid</a>`
 
 `<a href="https://sendgrid.com">SendGrid</a>`
+
+`<a target="_blank" href="https://sendgrid.com">SendGrid</a>`
 
 The following links, even though they may still resolve, will not be captured or replaced by our click tracking system:
 
@@ -27,10 +30,11 @@ The following links, even though they may still resolve, will not be captured or
 
 `<a href= http://www.sendgrid.com>SendGrid</a>`
 
+`<a href = "https://sendgrid.com">SendGrid</a>`
 
 <call-out>
 
-If you are in the habit of BASE64 encoding your email content, we will be unable to detect the encoded `<a>` tags and overwrite them, so clicks will not be tracked in this case._
+If you are in the habit of BASE64 encoding your email content, we will be unable to detect the encoded `<a>` tags and overwrite them, so clicks will not be tracked in this case.
 
 </call-out>
 

@@ -15,25 +15,25 @@ Below are some email deliverability tips and tricks from leading industry expert
 
 Satisfying each of the below conditions is a great step toward resolving current or potential issues with email deliverability such as spam folder delivery or blacklisting.
 
-<call-out-link linktext="Learn about our Expert Services" img="/img/expert-insights-promo1.png" link="https://sendgrid.com/solutions/expert-services/?utm_source=docs">
-
-
-### Looking for customized expert advice to improve your email program?
-
-
-Our team of email experts can help you create a plan to ensure you're optimizing your email delivery and engagement, and avoiding future issues like blacklists. 
-
-
-</call-out-link>
-
-
- ## 	Who, What, When, Where, Why
+## 	Who, What, When, Where, Why
 
 First and foremost, ask yourself this question:
 
 **Am I sending the right message to the right person at the right time with the right frequency?**
 
 Overall email deliverability is influenced by how your recipients interact with your messages. If your messages are opened in a timely manner, images are displayed and links are clicked, then mail providers will see you as a sender whose messages their recipients want to receive. If messages pile up, remain unopened or get marked as spam, mail providers won't be as comfortable placing your messages in the inbox or accepting them at all!
+
+<call-out-link linktext="EXPERT SERVICES" img="/img/expert-insights-promo3.png" link="https://sendgrid.com/solutions/expert-services/">
+
+
+### Need a helping hand?
+
+
+Getting into the inbox just so you can have the chance to engage with your customers often isn’t as easy as pressing “send.” Get customized advice from our team of email experts on how to optimize your email strategy.
+
+
+</call-out-link>
+
 
 ## 	Adhere to Standards
 
@@ -101,14 +101,6 @@ Encouraging your recipients to do certain things can help bolster the trust ISPs
 If your business is adult in nature, we can send your mail to the same standards and deliverability as any of our other customers. However, **We do not allow our users to send explicit content within emails.** This applies primarily to images, but we reserve the right to refuse the sending of any type of content that we deem to be vulgar, pornographic, or otherwise explicit.
 
 If you are unsure where your emails stand, please contact our support team at [https://support.sendgrid.com](https://support.sendgrid.com)
-
-<call-out-link linktext="Go To Course" img="/img/ProtectYourReputationCourse750.png" link="https://rise.articulate.com/share/R1ZJo1kleMSMYGCX9Dkb1i180Eh8NI6p#/">
-
-#### Protect Your Email Reputation From The Start
-
-Check out this [Academy Course](https://rise.articulate.com/share/R1ZJo1kleMSMYGCX9Dkb1i180Eh8NI6p#/) to explore best practices you can apply to help mailbox providers know your mail is wanted.
-
-</call-out-link>
 
  ## 	Nuts and Bolts
 
