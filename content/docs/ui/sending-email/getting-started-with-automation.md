@@ -387,6 +387,17 @@ When you re-enable the automation, contacts who previously entered the series wi
 1. Hover over the action menu and select the delete icon.
 1. To delete the automation, click **Confirm**.
 
+## Create a Campaign
+
+The Automation beta includes the option to create a one-time email campaign, similar to what you find in our current  [Marketing Campaigns]({{root_url}}/ui/sending-email/how-to-send-an-email-with-marketing-campaigns/) product. In the beta, Campaigns does not yet include all functionality that’s available with Marketing Campaigns. Features that are coming soon include: 
+* Creating or sending to a custom-field based segment
+* Creating or sending to a engagement-based segment
+* A/B testing
+* Contact-level engagement data
+* Link click tracking 
+* Send test email
+* IP Pools
+
 ## Migrating from Marketing Campaigns
 
 ### Migrating Campaign HTML
