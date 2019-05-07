@@ -58,7 +58,7 @@ If you don't have a user model quite yet, generate one quickly.
 $ rails generate scaffold user name email login
 $ rake db:migrate
 ```
-Now in the controller for the user model `app/controllers/users_controller.rb`, add a call to UserNotifierMailer.send_signup_email when a user is saved.
+Now in the controller for the user model `app/controllers/users_controller.rb`, add a call to `UserNotifierMailer.send_signup_email` when a user is saved.
 
 ``` ruby
 class UsersController < ApplicationController
