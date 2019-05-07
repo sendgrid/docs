@@ -64,7 +64,7 @@ Now in the controller for the user model `app/controllers/users_controller.rb`, 
 class UsersController < ApplicationController
   def create
     # Create the user from params
-    @user = User.new(params[:user])
+    @user = User.new(user_params)
     if @user.save
       # Deliver the signup email
       UserNotifierMailer.send_signup_email(@user).deliver
