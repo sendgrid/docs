@@ -18,13 +18,13 @@ Let's generate a Mailer class. Mailer classes function as our
 controllers for email views.
 
 ``` bash
-$ rails generate mailer UserNotifier
+$ rails generate mailer UserNotifierMailer
 ```
 
-Now we open up the mailer we've just generated, `app/mailers/user_notifier.rb` and add a mailer action that sends users a signup email.
+Now we open up the mailer we've just generated, `app/mailers/user_notifier_mailer.rb` and add a mailer action that sends users a signup email.
 
 ``` ruby
-class UserNotifier < ActionMailer::Base
+class UserNotifierMailer < ApplicationMailer
   default :from => 'any_from_address@example.com'
 
   # send a signup email to the user, pass in the user object that   contains the user's email address
@@ -36,7 +36,7 @@ class UserNotifier < ActionMailer::Base
 end
 ``` 
 
-Now we need a view that corresponds to our action and outputs HTML for our email. Create a file `app/views/User_notifier/send_signup_email.html.erb` as follows:
+Now we need a view that corresponds to our action and outputs HTML for our email. Create a file `app/views/user_notifier_mailer/send_signup_email.html.erb` as follows:
 
 ``` html
 <!DOCTYPE html>
@@ -58,7 +58,7 @@ If you don't have a user model quite yet, generate one quickly.
 $ rails generate scaffold user name email login
 $ rake db:migrate
 ```
-Now in the controller for the user model `app/controllers/users_controller.rb`, add a call to UserNotifier.send_signup_email when a user is saved.
+Now in the controller for the user model `app/controllers/users_controller.rb`, add a call to UserNotifierMailer.send_signup_email when a user is saved.
 
 ``` ruby
 class UsersController < ApplicationController
@@ -67,7 +67,7 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
     if @user.save
       # Deliver the signup email
-      UserNotifier.send_signup_email(@user).deliver
+      UserNotifierMailer.send_signup_email(@user).deliver
       redirect_to(@user, :notice => 'User created')
     else
       render :action => 'new'
