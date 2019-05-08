@@ -38,11 +38,11 @@ Unsubscribe Groups and Senders **are shared** between Marketing Campaigns and Au
 
 <call-out>
 
-While this beta is not connected to our current Marketing Campaigns product, you can send a [one-time campaign]({{root_url}}/ui/sending-email/getting-started-with-automation/#create-a-campaign) one-time campaign from within the beta. When you do so, contacts and templates are shared between beta Automation and beta Campaigns.
+While this beta is not connected to our current Marketing Campaigns product, you can send a [one-time campaign]({{root_url}}/ui/sending-email/getting-started-with-automation/#create-a-campaign) from within the beta. When you do so, contacts and templates are shared between beta Automation and beta Campaigns.
 
 </call-out>
 
-Additionally, during this phase of the beta, some Marketing Campaigns features will not be available in Automation. For easy reference, the primary feature gaps include:
+Some Marketing Campaigns features will not be available in Automation. For easy reference, the primary feature gaps include:
 * Create or use custom fields
 * Create or use segments
 * A/B testing of email content and subject lines
@@ -89,7 +89,7 @@ A great reason to create an Unsubscribe Group specific to the automations you're
 
 <call-out>
 
-Currently, classic '[unsubscribe]' tags do not work in the Automation beta. To add an unsubscribe group to your automation emails, use the following format: '{{[unsubscribe]}}'. In addition, the [asm format]({{root_url}}/ui/sending-email/editor/#using-substitution-tags) tags work in all variations SendGrid email.
+Currently, classic '[unsubscribe]' tags do not work in the Automation beta. To add an unsubscribe group to your automation emails, use the following format: '{{{unsubscribe}}}'. In addition, the [asm format]({{root_url}}/ui/sending-email/editor/#using-substitution-tags) tags work in all variations SendGrid email.
 
 </call-out>
 
@@ -413,7 +413,6 @@ The Automation beta includes the option to create a one-time email campaign, sim
 1. Select **Edit**.
 1. Within the automation, find the email you want to add the content to and click **Edit**.
 ![]({{root_url}}/img/edit-email-automation.png "Edit email content")
-
 8. Select **Blank Template**.
 9. Select the code editor.
 10. Paste the HTML you copied from the downloaded file into the code editor and then click **Preview**.
