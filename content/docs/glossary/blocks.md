@@ -21,19 +21,8 @@ See the block reason column for more detail specific to the blocked email.
 
 ![Blocks]({{root_url}}/images/blocks_1.png)
 
-<call-out>
 
-Looking for customized expert advice to improve your email program? Our team of email experts can help you create a plan to ensure you're optimizing your email delivery and engagement, and avoiding future issues like blacklists. Learn more on our [Expert Services](https://sendgrid.com/solutions/expert-services/?utm_source=docs) page.
-
-</call-out>
-
-<call-out-link linktext="Go To Course" img="/img/SGA_ManageBounces750.png" link="https://rise.articulate.com/share/rBJixBkt2kAqwQShqvOcKuevYulLLIZ9">
-
-#### Manage Bounces, Blocks, and Deferrals
-
-Enroll in this [Academy Course](https://rise.articulate.com/share/rBJixBkt2kAqwQShqvOcKuevYulLLIZ9) to learn how to assess your email delivery, identify what causes common errors, and how to fix them.
-
-</call-out-link>
+<call-out-link linktext="EXPERT INSIGHTS" img="/img/expert-insights-promo2.png" link="https://sendgrid.com/solutions/expert-insights/">
 
 
 ## Additional Resources:

@@ -21,6 +21,19 @@ There are a wide variety of spam traps. Sources for spam traps are usually old a
 
 Spam traps are so important because so many large ISPs, spam filter providers and Domain Name System [blacklists]({{root_url}}/glossary/blacklists/) use them. In short, sending an email to a spam trap can lead directly to being blacklisted by the organization that set up the trap. Remember that blacklisting can ruin a business’s reputation and halt further email deliverability.
 
+
+<call-out-link linktext="EXPERT INSIGHTS" img="/img/expert-insights-promo2.png" link="https://sendgrid.com/solutions/expert-insights/">
+
+
+### Looking for more visibility into your email performance?
+
+
+Send better email with Expert Insights. Our detailed monthly reports will enable you to understand your email reputation and recipient engagement and repair issues with expert how-to steps.
+
+
+</call-out-link>
+
+
 **How a Spam Trap Ended Up on a List** :
 
  The first medium to avoid is **bad list sources**. This includes any list that has not opted in to receiving a company’s messages such as purchased lists. Avoid unsolicited lists to ensure a business’s reputability. Chances are (99.99%) there is a spam trap included in these lists.

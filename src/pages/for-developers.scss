@@ -7,12 +7,23 @@ $card-gutter: 30px;
 }
 
 .for-devs-featured {
-  padding-bottom: 16rem;
+  padding-bottom: calc(16rem + 40px);
+}
+
+.docsfor-developers {
+  .layout-content {
+    overflow: hidden;
+    position: relative;
+  }
 }
 
 .for-developers {
-  overflow: hidden;
   position: relative;
+
+  .layout-content {
+    overflow: hidden;
+    position: relative;
+  }
 
   .page-title {
     color: #fff;
