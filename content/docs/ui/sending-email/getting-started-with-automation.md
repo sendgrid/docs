@@ -556,12 +556,18 @@ Have feedback or questions? We welcome your thoughts at email_automation@sendgri
 
 ## Automation General Availability 
 
-We’re targeting a market launch of Automation mid-summer, 2019. It will be launched as part of two entirely new Marketing Campaigns packages from SendGrid: 
+Automation will be available as part of our new Marketing Campaigns launch in July, 2019.  New Marketing Campaigns will include two package offerings. Automation will be included in the Advanced package.
 
-* **Basic package**
-Very similar to our current Marketing Campaigns product.
-* **Advanced package** 
-Everything from Basic plus Automation and new Email Testing functionality.
+<table>
+  <tr>
+    <th>Basic</th>
+    <th>Advanced</th>
+  </tr>
+  <tr>
+    <td>Current Marketing Campaigns features, plus: <br>* 10 Email Testing credits/mo,(+ option to purchase more)<br>* 5 Signup Forms<br>* 1 Teammate<br>* Webform + chat + phone support</td>
+    <td>Current Marketing Campaigns features, plus: <br>* Automation<br>* 60 Email Testing credits/mo (+ option to purchase more)<br>* 15 Signup Forms<br>* 1,000 Teammates<br>* Webform + chat + phone support<br>* 1 Dedicated IP (+ option to purchase more)</td>
+  </tr>
+</table>
 
 These new packages will include both contact storage and a volume of emails you can send; any sends through the new Marketing Campaigns packages will not be deducted from your base Email API package. 
 
