@@ -36,7 +36,13 @@ For beta participants who also use Marketing Campaigns, it’s important to know
 
 Unsubscribe Groups and Senders **are shared** between Marketing Campaigns and Automation.
 
-Additionally, during this phase of the beta, some Marketing Campaigns features will not be available in Automation. For easy reference, the primary feature gaps include:
+<call-out>
+
+While this beta is not connected to our current Marketing Campaigns product, you can send a [one-time campaign]({{root_url}}/ui/sending-email/getting-started-with-automation/#create-a-campaign) from within the beta. When you do so, contacts and templates are shared between beta Automation and beta Campaigns.
+
+</call-out>
+
+Some Marketing Campaigns features will not be available in Automation. For easy reference, the primary feature gaps include:
 * Create or use custom fields
 * Create or use segments
 * A/B testing of email content and subject lines
@@ -83,7 +89,7 @@ A great reason to create an Unsubscribe Group specific to the automations you're
 
 <call-out>
 
-Currently, classic '[unsubscribe]' tags do not work in the Automation beta. To add an unsubscribe group to your automation emails, use the following format: '{{[unsubscribe]}}'. In addition, the [asm format]({{root_url}}/ui/sending-email/editor/#using-substitution-tags) tags work in all variations SendGrid email.
+Currently, classic '[unsubscribe]' tags do not work in the Automation beta. To add an unsubscribe group to your automation emails, use the following format: '{{{unsubscribe}}}'. In addition, the [asm format]({{root_url}}/ui/sending-email/editor/#using-substitution-tags) tags work in all variations SendGrid email.
 
 </call-out>
 
@@ -381,6 +387,52 @@ Exported CSV files are only available for download for 72 hours after the export
 
 You can integrate with the Contact Management APIs to create and update lists, add contacts, manage reserved field data, export contact lists, and pull data about your contacts and lists. Learn more through the documentation for [Automation Contact APIs](https://sendgrid-automation.api-docs.io/v3/getting-started).
 
+## Manage Automations
+
+During the beta, you are only able to edit the content, subject line, and sender for each email in your series.
+
+### Disable an Automation
+
+*To disable an automation:*
+
+When you disable an automation, all emails in your automation will stop sending unless you set it live again. No new contacts will be entered into your automation while it's disabled. If you set the automation live again, contacts who entered the automation before it was disabled will continue receiving emails again according to where they left off.
+
+1. Navigate to **Automations** and select the series you want to stop.
+1. Select the Action Menu to the right of the Automation.
+1. Click **Disable Automation** in the upper right corner.
+
+
+*To set a disabled automation live again:*
+
+1. Navigate to **Automations** and select the series you want to re-enable.
+1. Select the Action Menu to the right of the Automation.
+1. Click **Set Live** in the upper right corner.
+
+<call-out>
+
+When you re-enable the automation, contacts who previously entered the series will continue receiving emails where they left off in the series. Contacts who met your entry criteria during the disabled period will not be added to the automation. For this reason, do not add users to lists that are used as the entry criteria for automations in a disabled state.
+
+</call-out>
+
+### Delete an Automation
+
+*To delete an automation:*
+
+1. On the automation dashboard, find the automation you want to delete.
+1. Hover over the action menu and select the delete icon.
+1. To delete the automation, click **Confirm**.
+
+## Create a Campaign
+
+The Automation beta includes the option to create a one-time email campaign, similar to what you find in our current  [Marketing Campaigns]({{root_url}}/ui/sending-email/how-to-send-an-email-with-marketing-campaigns/) product. In the beta, Campaigns does not yet include all functionality that’s available with Marketing Campaigns. Features that are coming soon include: 
+* Creating or sending to a custom-field based segment
+* Creating or sending to an engagement-based segment
+* A/B testing
+* Contact-level engagement data
+* Link click tracking 
+* Send test email
+* IP Pools
+
 ## Migrating from Marketing Campaigns
 
 ### Migrating Campaign HTML
@@ -396,7 +448,6 @@ You can integrate with the Contact Management APIs to create and update lists, a
 1. Select **Edit**.
 1. Within the automation, find the email you want to add the content to and click **Edit**.
 ![]({{root_url}}/img/edit-email-automation.png "Edit email content")
-
 8. Select **Blank Template**.
 9. Select the code editor.
 10. Paste the HTML you copied from the downloaded file into the code editor and then click **Preview**.
@@ -537,6 +588,26 @@ Have feedback or questions? We welcome your thoughts at email_automation@sendgri
     <td>Planned</td>
   </tr>
 </table>
+
+## Automation General Availability 
+
+Automation will be available as part of our new Marketing Campaigns launch in July, 2019.  New Marketing Campaigns will include two package offerings. Automation will be included in the Advanced package.
+
+<table>
+  <tr>
+    <th>Basic</th>
+    <th>Advanced</th>
+  </tr>
+  <tr>
+    <td>Current Marketing Campaigns features, plus: <br>* 10 Email Testing credits/mo,(+ option to purchase more)<br>* 5 Signup Forms<br>* 1 Teammate<br>* Webform + chat + phone support</td>
+    <td>Current Marketing Campaigns features, plus: <br>* Automation<br>* 60 Email Testing credits/mo (+ option to purchase more)<br>* 15 Signup Forms<br>* 1,000 Teammates<br>* Webform + chat + phone support<br>* 1 Dedicated IP (+ option to purchase more)</td>
+  </tr>
+</table>
+
+These new packages will include both contact storage and a volume of emails you can send; any sends through the new Marketing Campaigns packages will not be deducted from your base Email API package. 
+
+Each package will have tiers to reflect your allotment of contact storage and email sends. For insight into pricing, the Advanced package (which will include Automation), will start at $60/month for 10,000 contacts and up to 50,000 emails. Package tiers will scale with usage, for example, 200,000 contacts and 1,000,000 emails will cost $900/month.
+
 
 
 
