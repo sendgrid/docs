@@ -40,4 +40,33 @@ Open event tracking for AMP is identified by a JSON field called `sg_content_typ
 }
 ```
 
+## AMP Click Identifier
+Click event tracking for AMP is identified by`url_offset.type` is `amp`.
+
+```
+{
+    "email": "john.smith@sendgrid.com",
+    "event": "click",
+    "ip": "12.34.56.789",
+    "sg_event_id": "fmip8TM8RWqJjT44cL5z-w",
+    "sg_message_id": "zT-FDCibS4uwaz08cIX8_Q.filter0794p1las1-20361-5CCC528C-16
+    "timestamp": 1556901957,
+    "url": "http://google.com/",
+    "url_offset": {
+        "index": 0,
+        "type": "amp"
+    },
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36"
+}
+```
+
+<call-out>
+
+Google requires all images to use HTTPS, which will require you to enable [SSL tracking]({{root_url}}ui/analytics-and-reporting/click-tracking-ssl/) on your SendGrid account in order to track opens.
+
+</call-out>
+
+
+
+
 
