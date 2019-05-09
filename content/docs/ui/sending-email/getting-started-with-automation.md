@@ -387,7 +387,6 @@ Exported CSV files are only available for download for 72 hours after the export
 
 You can integrate with the Contact Management APIs to create and update lists, add contacts, manage reserved field data, export contact lists, and pull data about your contacts and lists. Learn more through the documentation for [Automation Contact APIs](https://sendgrid-automation.api-docs.io/v3/getting-started).
 
-<<<<<<< HEAD
 ## Manage Automations
 
 During the beta, you are only able to edit the content, subject line, and sender for each email in your series.
@@ -434,8 +433,6 @@ The Automation beta includes the option to create a one-time email campaign, sim
 * Send test email
 * IP Pools
 
-=======
->>>>>>> upstream/develop
 ## Migrating from Marketing Campaigns
 
 ### Migrating Campaign HTML
