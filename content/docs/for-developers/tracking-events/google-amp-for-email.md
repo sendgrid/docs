@@ -62,7 +62,7 @@ Click event tracking for AMP is identified by`url_offset.type` is `amp`.
 
 <call-out>
 
-Google requires all links to use HTTPS, which will require you to enable [SSL tracking]({{root_url}}ui/analytics-and-reporting/click-tracking-ssl/) on your SendGrid account in order to track opens.
+Google requires all images to use HTTPS, which will require you to enable [SSL tracking]({{root_url}}ui/analytics-and-reporting/click-tracking-ssl/) on your SendGrid account in order to track opens.
 
 </call-out>
 
