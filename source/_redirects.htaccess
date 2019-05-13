@@ -1040,3 +1040,4 @@ Redirect 301 /API_Reference/Event_Webhook/event.html https://sendgrid.com/docs/f
 Redirect 301 /API_Reference/Event_Webhook/troubleshooting.html https://sendgrid.com/docs/for-developers/tracking-events/troubleshooting/
 Redirect 301 /API_Reference/Event_Webhook/getting_started_event_webhook.html https://sendgrid.com/docs/for-developers/tracking-events/getting-started-event-webhook/
 Redirect 301 /API_Reference/Web_API_v3/Tutorials/getting_started_email_activity_api.html https://sendgrid.com/docs/for-developers/sending-email/getting-started-email-activity-api/
+Redirect 301 /api_reference/smtp_api/getting_started_smtp.html https://sendgrid.com/docs/for-developers/sending-email/getting-started-smtp/
