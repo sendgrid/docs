@@ -205,7 +205,7 @@ Personalizations Errors
 
   {% api_error_table_message "The substitution values must be an object of key/value pairs, where the values are all strings." "Substitutions must always follow the pattern <code>&#34;substitution_tag&#34;: &#34;value to substitute&#34;</code>. The value to substitute for the &#34;substitution_tag&#34; must always be a string." %}
 
-  {% api_error_table_message "You are limited to 10,000 substitutions." "You may not make more than 10,000 substitutions per request. Substitutions will apply to the content of your email, in addition to the <code>subject</code> and <code>reply_to</code> parameters" %}
+  {% api_error_table_message "You are limited to 10,000 substitutions." "You may not make more than 10,000 bytes worth of substitutions per request. Substitutions will apply to the content of your email, in addition to the <code>subject</code> and <code>reply_to</code> parameters" %}
 {% endapi_error_table %}
 
 {% api_error_table personalizations.to "" message.personalizations.to %}
