@@ -7,7 +7,6 @@ class CalloutLink extends React.Component {
   }
 
   handleClick = () => {
-    console.log('track');
     this.dataLayer.push({
       event: 'customEvent',
       eventCategory: 'Callout',
