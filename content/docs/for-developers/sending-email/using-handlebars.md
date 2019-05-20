@@ -4,7 +4,7 @@ weight: 50
 title: Using Handlebars
 group: api-v3
 navigation:
-  show: false
+  show: true
 seo:
   title: Using Handlebars
   override: true
