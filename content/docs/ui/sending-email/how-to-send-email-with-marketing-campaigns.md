@@ -111,7 +111,7 @@ period (".") may also appear, but may not be used to start or end the local part
 
 *To change your time zone:*
 Your time zone is set at the account level. You'll need to save your draft and leave the editor to access these settings.
-1. Click "Save Draft" from the top bar of your account
+1. Click **Save Draft** from the top bar of your account
 1. Click the back arrow found in the top left corner.
 1. Near the bottom of the left-hand navigation, select **Settings**.
 1. Click **Account Details**, or go to https://app.sendgrid.com/settings/account.
