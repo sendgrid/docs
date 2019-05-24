@@ -4,7 +4,7 @@ weight: 50
 title: Using Handlebars
 group: api-v3
 navigation:
-  show: false
+  show: true
 seo:
   title: Using Handlebars
   override: true
@@ -216,7 +216,7 @@ Test Data should contain:
 {
    "user":{
       "profile":{
-         "male":"true"
+         "male":true
       }
    }
 }
@@ -480,7 +480,7 @@ Resulting replacement:
 
 ## 	Additional Resources
 
-- [Transactional Templates Overview]({{root_url}}/ui/sending-email/transactional-email/)
+- [Sending Email with Dynamic Transactional Templates]({{root_url}}//ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/)
 - [Create and edit Dynamic Transactional Templates]({{root_url}}/ui/sending-email/create-and-edit-transactional-templates/)
 - [Dynamic Templates API](https://dynamic-templates.api-docs.io/3.0)
 - [How to send an email with dynamic templates]({{root_url}}/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/)

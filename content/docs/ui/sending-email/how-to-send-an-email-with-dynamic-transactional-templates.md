@@ -41,6 +41,12 @@ For the full API documentation, see [Mail Send with Dynamic Transactional Templa
 
 </call-out>
 
+<call-out type="warning">
+
+To send mail using Dynamic Templates, you must use the [Web API mail.send](https://sendgrid.com/docs/for-developers/sending-email/v3-mail-send-faq/). SMTP sends do not support Dynamic Templates.
+
+</call-out>
+
 ## 	Send a transactional email
 
 *To send a dynamic transactional email:*
