@@ -219,7 +219,7 @@ Email testing offers in-app spam testing, inbox rendering previews, and link val
 
 <call-out>
 
-Email Testing is currently in closed beta and available to a limited number of Automation participants. If you’re interested in participating, please email email_automation@sendgrid.com.
+Email Testing is currently in closed beta and available to a limited number of participants. Participants are given three testing credits per month, with additional credits coming soon! If you’re interested in participating, please email email_automation@sendgrid.com.
 
 </call-out>
 
