@@ -15,9 +15,11 @@ There is more detailed information about sending email over SMTP with Django on 
 First start by adding the following to **settings.py:** 
 
 ``` python
+SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY')
+
 EMAIL_HOST = 'smtp.sendgrid.net'
-EMAIL_HOST_USER = 'sendgrid_username'
-EMAIL_HOST_PASSWORD = 'sendgrid_password'
+EMAIL_HOST_USER = 'apikey'
+EMAIL_HOST_PASSWORD = SENDGRID_API_KEY
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 ```
