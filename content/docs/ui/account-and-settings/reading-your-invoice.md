@@ -17,9 +17,7 @@ Your SendGrid invoice contains a lot of information which may be difficult to re
 
 ## 1. Physical Address
 
-
 **The physical address of your business.** This address is the same address you entered when you first signed up. If you would like to update the address as it appears on your invoices, edit your company info on the [Account details](https://app.sendgrid.com/account/billing) page. If you need to change the address on an already existing invoice, please send an email to [billing@sendgrid.com](mailto:billing@sendgrid.com).
-
 
 ## 2. Billing Email
 
@@ -31,11 +29,9 @@ Need to send invoices to multiple addresses? Consider creating a role address on
 
 ## 3. Charge Summary
 
-
 The Charge Summary section breaks down your invoice total into individual charges. Some charges covered by this invoice are retroactive, meaning you are paying for usage in the previous month, while others are proactive, meaning you are paying for services for the upcoming month. This information is broken down in the **Service Period** column.
 
 ### Email API Plan
-
 
 ![Charge summary section]({{root_url}}/img/invoice_plan.jpg)
 
@@ -43,7 +39,6 @@ This is the **Email API plan you subscribe to**. In this case, the user is on a 
 
 
 ### IP Address
-
 
 ![Additional IP address section]({{root_url}}/img/invoice_IP_address.jpg)
 
@@ -56,7 +51,6 @@ For more information on SendGrid Plans, visit our [pricing page](https://sendgri
 
 ### Legacy Marketing Campaigns Contact List Storage
 
-
 ![Contact storage section]({{root_url}}/img/invoice_contact_1.jpg)
 
 This item is the charge for the highest number of **contacts stored in Legacy Marketing Campaigns during the previous month**.
@@ -65,7 +59,6 @@ Refer to [Legacy Marketing Campaigns Contact List Usage]({{root_url}}/ui/Legacy_
 
 
 ### Email Activity History
-
 
 ![Email activity section]({{root_url}}/img/invoice_ease.jpg)
 
@@ -76,14 +69,12 @@ The price for access to this feature varies per Email API plan. For more informa
 
 ### New Marketing Campaigns Plan
 
-
 ![Charge summary section]({{root_url}}/img/invoice_plan.jpg)
 
 This is the **Marketing Campaigns plan you subscribe to**. In this case, the user is on an Advanced 20K plan and will be charged $100.00 to use it for the month of July.
 
 
 ### IP Address
-
 
 ![Additional IP address section]({{root_url}}/img/invoice_IP_address.jpg)
 
@@ -96,7 +87,6 @@ For more information on SendGrid Plans, visit our [pricing page](https://sendgri
 
 ### Tax
 
-
 ![Tax summary section]({{root_url}}/img/invoice_tax.jpg)
 
 If you are in [a jurisdiction where SendGrid is required to charge sales tax]({{root_url}}/ui/account-and-settings/taxes-and-tax-exempt/), your **tax charges** will appear here.
@@ -104,12 +94,10 @@ If you are in [a jurisdiction where SendGrid is required to charge sales tax]({{
 
 ## 4. Usage Summary
 
-
 The Usage Summary section outlines usage-based charges on your account **for the previous month**.
 
 
 ### Email API Plan Overage
-
 
 ![Overage charges section]({{root_url}}/img/invoice_overage.jpg)
 
@@ -130,7 +118,6 @@ The charge for contact storage is **$10.00/mo for every 10,000 contacts (1 block
 
 ## New Marketing Campaigns Email Overage
 
-
 IMAGE to be added
 
 This item refers to the number of *emails sent* through New Marketing Campaigns in the previous month. 
@@ -142,7 +129,6 @@ EXAMPLE to be added
 
 ## New Marketing Campaigns Contact Overage
 
-
 IMAGE to be added
 
 This item refers to the number of *contacts uploaded* in New Marketing Campaigns in the previous month. 
@@ -151,9 +137,7 @@ If the number of contacts uploaded in New Marketing Campaigns *exceeds the limit
 
 EXAMPLE to be added
 
-
 ## 5. Transaction and Payment Summary
-
 
 ![Transaction and payment summary]({{root_url}}/img/invoice_payment_summary.jpg)
 
