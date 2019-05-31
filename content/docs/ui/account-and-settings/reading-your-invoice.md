@@ -105,6 +105,7 @@ This item is a calculation of **any emails sent beyond the monthly limit** of yo
 
 The Pro 100K plan allows for 100,00 emails to be sent per month. In this example, we see that in the previous month, 120,000 emails were sent for a total of 20,000 emails over that limit. The overage rate for the Pro 100K plan is $0.00085 per extra email, which works out to a $17.00 overage charge (20,000 x .00085 = 17).
 
+
 ### Legacy Marketing Campaigns Contact List Usage
 
 ![Highest number of stored Marketing Campaigns Contacts in the previous month.]({{root_url}}/img/invoice_contact_storage.jpg)
@@ -136,6 +137,7 @@ This item refers to the number of *contacts uploaded* in New Marketing Campaigns
 If the number of contacts uploaded in New Marketing Campaigns *exceeds the limit of your base package* the additional overage charges will be shown here. 
 
 EXAMPLE to be added
+
 
 ## 5. Transaction and Payment Summary
 
