@@ -445,7 +445,7 @@ The Automation beta includes the option to create a one-time, one-to-many email 
 1. Navigate to the Automation dashboard.
 1. Locate the Automation you want to add the exported email to and hover over the action menu.
 1. Select **Add Email Content**.
-![]({{root_url}}/img/edit-email-automation.png "Add email content")
+![]({{root_url}}/img/add_email_content.png "Add email content")
 8. Select **Blank Template**.
 9. Select the code editor.
 10. Paste the HTML you copied from the downloaded file into the code editor and then click **Preview**.
