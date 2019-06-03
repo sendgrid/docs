@@ -460,7 +460,7 @@ The Automation beta includes the option to create a one-time email campaign, sim
 1. Find the list you want to export and hover over the action menu.
 1. Click **Export**.
    The contact list begins downloading, and you will receive a notification email to the email address specified in Marketing Campaigns Notifications. Go to your inbox to download the file.
-1. Once you download the file, navigate back to Automations.
+1. Once you download the file, navigate back to Automation.
 1. Select **Contacts**.
 1. To add the contacts, click **Upload Contacts**.
 1. Follow the instructions outlined in [Upload contacts]({{root_url}}#upload-a-csv) to complete the process.
