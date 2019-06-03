@@ -433,20 +433,20 @@ The Automation beta includes the option to create a one-time email campaign, sim
 * Send test email
 * IP Pools
 
-## Migrating from Legacy Marketing Campaigns
+## Migrating from Marketing Campaigns
 
-### Migrating Legacy Marketing Campaign HTML
+### Migrating Marketing Campaign HTML
 
 *To migrate HTML from a Marketing Campaigns template or email:*
 
-1. Navigate to [Legacy Marketing Campaigns](https://sendgrid.com/marketing_campaigns/ui/campaigns) and locate the campaign you wish to migrate.
+1. Navigate to [Marketing Campaigns](https://sendgrid.com/marketing_campaigns/ui/campaigns) and locate the campaign you wish to migrate.
 1. Hover over the action menu until the icons appear.
 1. Select the **Export HTML** icon.
    The campaign HTML downloads to the folder specified on your computer
 1. Navigate to the New Marketing Campaign dashboard.
-1. Locate the New Marketing Campaign you want to add the exported email to and hover over the action menu.
+1. Locate the Automation you want to add the exported email to and hover over the action menu.
 1. Select **Edit**.
-1. Within the New Marketing Campaign, find the email you want to add the content to and click **Edit**.
+1. Within the Automation, find the email you want to add the content to and click **Edit**.
 ![]({{root_url}}/img/edit-email-automation.png "Edit email content")
 8. Select **Blank Template**.
 9. Select the code editor.
@@ -456,24 +456,24 @@ The Automation beta includes the option to create a one-time email campaign, sim
 
 *To migrate a contact list from Legacy Marketing Campaigns:*
 
-1. Navigate to [Legacy Marketing Campaigns](https://sendgrid.com/marketing_campaigns/ui/campaigns) and then select **Contacts**.
+1. Navigate to [Marketing Campaigns](https://sendgrid.com/marketing_campaigns/ui/campaigns) and then select **Contacts**.
 1. Find the list you want to export and hover over the action menu.
 1. Click **Export**.
-   The contact list begins downloading, and you will receive a notification email to the email address specified in Legacy Marketing Campaigns Notifications. Go to your inbox to download the file.
-1. Once you download the file, navigate back to New Marketing Campaigns.
+   The contact list begins downloading, and you will receive a notification email to the email address specified in Marketing Campaigns Notifications. Go to your inbox to download the file.
+1. Once you download the file, navigate back to Automations.
 1. Select **Contacts**.
 1. To add the contacts, click **Upload Contacts**.
 1. Follow the instructions outlined in [Upload contacts]({{root_url}}#upload-a-csv) to complete the process.
 
-*To migrate a segment from Legacy Marketing Campaigns:*
+*To migrate a segment from Marketing Campaigns:*
 
 During beta, segmentation is not enabled in Automation. Instead, you can build a segment in New Marketing Campaigns, export it, and import it as a list to Marketing Campaigns.
 
-1. Navigate to [Legacy Marketing Campaigns](https://sendgrid.com/marketing_campaigns/ui/campaigns) and then select **Contacts**.
+1. Navigate to [Marketing Campaigns](https://sendgrid.com/marketing_campaigns/ui/campaigns) and then select **Contacts**.
 1. Find the segment you want to export and hover over the action menu.
 1. Click **Export**.
    The contact list begins downloading, and you will receive a notification email to the email address specified in Marketing Campaigns Notifications. Go to your inbox to download the file.
-1. Once you download the file, navigate back to New Marketing Campaigns.
+1. Once you download the file, navigate back to Automation.
 1. Select **Contacts**.
 1. To add your contacts, click **Upload Contacts**.
 1. Follow the instructions outlined in [Upload contacts]({{root_url}}#upload-a-csv) to complete the process.
