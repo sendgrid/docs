@@ -424,7 +424,7 @@ When you re-enable the automation, contacts who previously entered the series wi
 
 ## Create a Single Send
 
-The Automation beta includes the option to create a one-time, one-to-many email campaign, similar to what you find in our current  [Marketing Campaigns]({{root_url}}/ui/sending-email/how-to-send-an-email-with-marketing-campaigns/) product. In the beta, Single Sends do not yet include all functionality that’s available with Marketing Campaigns. Features that are coming soon include: 
+The Automation beta includes the option to create a one-time, one-to-many email, similar to what you find in our current  [Marketing Campaigns]({{root_url}}/ui/sending-email/how-to-send-an-email-with-marketing-campaigns/) product. In the beta, Single Sends do not yet include all functionality that’s available with Marketing Campaigns. Features that are coming soon include: 
 * Creating or sending to a custom-field based segment
 * Creating or sending to an engagement-based segment
 * A/B testing
