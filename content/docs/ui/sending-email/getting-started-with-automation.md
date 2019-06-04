@@ -450,6 +450,19 @@ The Automation beta includes the option to create a one-time, one-to-many email 
 9. Select the code editor.
 10. Paste the HTML you copied from the downloaded file into the code editor and then click **Preview**.
 
+*To migrate HTML from a Marketing Campaigns template into a pre-existing email:*
+
+1. Navigate to [Marketing Campaigns](https://sendgrid.com/marketing_campaigns/ui/campaigns) and locate the campaign you wish to migrate.
+1. Hover over the action menu until the icons appear and select the **Export HTML** icon.
+   The campaign HTML downloads to the folder specified on your computer.
+1. Navigate to the Automation dashboard.
+1. Locate the Automation you want to add the exported email to and hover over the action menu.
+1. Select **Edit**.
+![]({{root_url}}/img/automation-email-edit.png "Edit email content")
+8. Select **Build**.
+9. Click **Advanced**, and then select **Import** to the right of *Import Drag & Drop HTML*.
+10. Paste the HTML you copied from the downloaded file into the code editor and then click **Preview**.
+
 ### Migrating Contact Lists
 
 *To migrate a contact list from Marketing Campaigns:*
@@ -461,7 +474,7 @@ The Automation beta includes the option to create a one-time, one-to-many email 
 1. Once you download the file, navigate back to Automation.
 1. Select **Contacts**.
 1. To add the contacts, click **Upload Contacts**.
-1. Follow the instructions outlined in [Upload contacts]({{root_url}}#upload-a-csv) to complete the process.
+1. Follow the instructions outlined in [Upload contacts]({{root_url}}#### Add-Contacts) to complete the process.
 
 *To migrate a segment from Marketing Campaigns:*
 
@@ -474,7 +487,7 @@ During beta, segmentation is not enabled in Automation. Instead, you can build a
 1. Once you download the file, navigate back to Automation.
 1. Select **Contacts**.
 1. To add your contacts, click **Upload Contacts**.
-1. Follow the instructions outlined in [Upload contacts]({{root_url}}#upload-a-csv) to complete the process.
+1. Follow the instructions outlined in [Add contacts]({{root_url}}#add-contacts) to complete the process.
 
 ## Planned iterative releases for Automation beta
 
@@ -605,8 +618,3 @@ Automation will be available as part of our new Marketing Campaigns launch in Ju
 These new packages will include both contact storage and a volume of emails you can send; any sends through the new Marketing Campaigns packages will not be deducted from your base Email API package. 
 
 Each package will have tiers to reflect your allotment of contact storage and email sends. For insight into pricing, the Advanced package (which will include Automation), will start at $60/month for 10,000 contacts and up to 50,000 emails. Package tiers will scale with usage, for example, 200,000 contacts and 1,000,000 emails will cost $900/month.
-
-
-
-
-
