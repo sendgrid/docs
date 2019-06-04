@@ -437,7 +437,7 @@ The Automation beta includes the option to create a one-time, one-to-many email,
 
 ### Migrating Marketing Campaigns HTML
 
-*To migrate HTML from a Marketing Campaigns template into a new email:*
+*To migrate HTML from a Marketing Campaigns template or email into a new email:*
 
 1. Navigate to [Marketing Campaigns](https://sendgrid.com/marketing_campaigns/ui/campaigns) and locate the campaign you wish to migrate.
 1. Hover over the action menu until the icons appear and select the **Export HTML** icon.
@@ -450,7 +450,7 @@ The Automation beta includes the option to create a one-time, one-to-many email,
 9. Select the code editor.
 10. Paste the HTML you copied from the downloaded file into the code editor and then click **Preview**.
 
-*To migrate HTML from a Marketing Campaigns template into a pre-existing email:*
+*To migrate HTML from a Marketing Campaigns template or email into a pre-existing email:*
 
 1. Navigate to [Marketing Campaigns](https://sendgrid.com/marketing_campaigns/ui/campaigns) and locate the campaign you wish to migrate.
 1. Hover over the action menu until the icons appear and select the **Export HTML** icon.
