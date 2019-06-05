@@ -13,7 +13,7 @@ navigation:
 
 <call-out type="warning">
 
-**Automation is currently in closed beta**. During beta, only approved participants have access to the feature and we reserve the right to change the functionality at any time without warning. For more information on the Automation beta, or to join the beta waitlist, see our [Email Marketing Automation](https://sendgrid.com/solutions/marketing-automation/?utm_source=docs) page.
+**Automation is currently in closed beta**. During beta, only approved participants have access to the feature and we reserve the right to change the functionality at any time without warning. For more information on Twilio SendGrid Automation, or to join the Early Access waitlist, see our [Email Marketing Automation](https://sendgrid.com/solutions/marketing-automation/?utm_source=docs) page.
 
 </call-out>
 
@@ -219,7 +219,7 @@ Email testing offers in-app spam testing, inbox rendering previews, and link val
 
 <call-out>
 
-Email Testing is currently in closed beta and available to a limited number of Automation participants. If you’re interested in participating, please email email_automation@sendgrid.com.
+Email Testing is currently in closed beta and available to a limited number of participants. Participants are given three testing credits per month, with additional credits coming soon! If you’re interested in participating, please email email_automation@sendgrid.com.
 
 </call-out>
 
@@ -474,7 +474,8 @@ The Automation beta includes the option to create a one-time, one-to-many email 
 1. Once you download the file, navigate back to Automation.
 1. Select **Contacts**.
 1. To add the contacts, click **Upload Contacts**.
-1. Follow the instructions outlined in [Add contacts]({{root_url}}#add-contacts) to complete the process.
+1. Follow the instructions outlined in [Upload contacts]({{root_url}}#add-contacts) to complete the process.
+
 
 *To migrate a segment from Marketing Campaigns:*
 
@@ -542,27 +543,27 @@ Have feedback or questions? We welcome your thoughts at email_automation@sendgri
     <td>LIVE</td>
   </tr>
   <tr>
-    <td>Ability to save an email design as a template.</td>
-    <td>In progress</td>
+    <td>Ability to create and save a custom template.</td>
+    <td>LIVE</td>
   </tr>
   <tr>
+    <td>Ability to send a one-time campaign to a list using Single Sends.</td>
+    <td>LIVE</td>
+  </tr>
+  <tr>
+    <td>Ability to test Automation emails for rendering across inboxes and browsers, link validation, and spam testing.</td>
+    <td>LIVE</td>
+  </tr>
+  <tr>
+    <td>Shared contacts and templates across Single Sends and Automation.</td>
+    <td>LIVE</td>
+  </tr>
+   <tr>
     <td>Ability to view the details of an Automation Contact list</td>
     <td>In progress</td>
   </tr>
   <tr>
     <td>Ability to import custom fields via API and use them for email content and subject line personalization.</td>
-    <td>Planned</td>
-  </tr>
-  <tr>
-    <td>Ability to test Automation emails for rendering across inboxes and browsers, link validation, and spam testing.</td>
-    <td>In closed beta</td>
-  </tr>
-  <tr>
-    <td>Ability to send a one-time campaign to a list using Single Sends.</td>
-    <td>In progress</td>
-  </tr>
-  <tr>
-    <td>Shared contacts and templates across Single Sends and Automation.</td>
     <td>In progress</td>
   </tr>
 </table>
