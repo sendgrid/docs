@@ -215,49 +215,48 @@ When you re-enable the automation, contacts who previously entered the series wi
 
 ## Email Testing
 
-Email testing offers in-app spam testing, inbox rendering previews, and link validation right within the Automation experience. It allows you to preview how an email is likely to perform across a wide range of inbox providers, devices and spam filters, before sending.
-
 <call-out>
-
-Email Testing is currently in closed beta and available to a limited number of participants. Participants are given three testing credits per month, with additional credits coming soon! If you’re interested in participating, please email email_automation@sendgrid.com.
-
+Email Testing is currently only available as part of a closed beta for Automation! For more information on Twilio SendGrid Automation, or to join the Early Access waitlist, see our [Email Marketing Automation](https://sendgrid.com/solutions/marketing-automation/?utm_source=docs) page.
 </call-out>
+
+Email testing offers in-app spam testing, inbox rendering previews, and link validation right within the Automation experience. It allows you to preview how an email is likely to perform across a wide range of inbox providers, devices and spam filters, before sending.
 
 - **Inbox Rendering Test:** Displays how an email message is rendered and appears across a select group of inbox providers and devices.
 - **Spam Test:** Shows how an email performs against the world’s most powerful consumer (B2C) and enterprise (B2B) spam filters.
 - **Link Validation Test:** Tests all links/URLs within a message to ensure they are valid. The test checks for redirects, domain reputation and critical metadata (like title text).
 
+<call-out>
+
+At this time, those with access to Email Testing as part of the Automation beta receive 3 free Email Testing credits per month. These can be used to explore the Email Testing functionality, with access to more Email Testing credits coming soon!
+
+</call-out>
+
 *To test an email:*
 
 1. From inside either the Design or Code editor, navigate to the Settings tab.
-1. Scroll down and click on the **Send Test** dropdown to expand testing options.
+1. Scroll down and click on the **Test Your Email** dropdown to expand testing options.
 1. Below the option to send a test email, you will see an **Email Testing** option. To create a test, click **Create Test**.
 
 <call-out>
 
-Before you can use Email Testing, you need to specify a Sender and add a Subject to the email you want to test.
+Before you can create a test, you will need to specify a Sender and include a Subject for your email.
 
 </call-out>
 
 ![]({{root_url}}/img/auto-email-testing-launch.png "Launch Automated Email Testing")
 
-4. Once the Email Testing page opens, choose which inboxes you’d like to test by selecting the checkbox next to the name of the client. 
+4. When Email Testing opens a new test, choose which kind of tests you'd like to run, by selecting the checkboxes by **Spam Test**, **Inbox Rendering Test**, or by selecting both.
 
 <call-out>
+A Spam Test costs 3 Email Testing credits, while an Inbox Rendering Test will cost 1 credit for every client, browser or device that you select.
 
-During the beta program, every email test will automatically run all three types: the Inbox, Link, and Spam Tests.
-
+Every test that you run will automatically include a link validation test, checking that all URLs within your message are valid. Link validation tests **do not** deduct from your Email Testing credits.
 </call-out>
 
-5. Once you've selected all of the inboxes for the rendering test you want to run, click **Run Test**. 
-6. It may take a moment to begin seeing results. When the test is finished running, the test results appear on the View Test Results tab. Click a thumbnail of a render to open the image and view in greater detail.  
-7. From the View Test Results tab, you can select the **Inbox**, **Spam**, or **Links** tabs to view all of the details for your test.
-
-<call-out>
-
-During the beta program, only the latest test that you’ve run is saved to your account. To access the results once you’ve left Email Testing, simply click **Create Test** in the *Settings* tab and select the **View Test Results** tab.
-
-</call-out>
+5. If you choose to run an Inbox Rendering test, select the clients and browsers you'd like to include as part of your test by clicking the associated checkbox for each. One credit will be charged for each client, browser or device that you select.
+6. Click **Run Test**. 
+7. Your test will begin. Please note: It may take a moment for the test to begin returning your results. Test results will appear on the View Test Results tab. Click a thumbnail of a render to open the image and view in greater detail.  
+8. From the View Test Results tab, you can select the **Inbox**, **Spam**, or **Links** tabs to view all of the details for your test.
 
 ## Manage Contacts
 
@@ -364,7 +363,6 @@ To manage your contact lists more efficiently, you can edit and remove contact l
 1. Find the list you want to remove the contact from and click the delete icon.
 1. When you see "Are you sure you want to remove this contact?" click **Remove Contact**. 
 
-
 ### Export contacts
 
 To view the contents of a contact list, you can export the list to a CSV and download it to your computer.
@@ -422,9 +420,10 @@ When you re-enable the automation, contacts who previously entered the series wi
 1. Hover over the action menu and select the delete icon.
 1. To delete the automation, click **Confirm**.
 
-## Create a Campaign
+## Create a Single Send
 
-The Automation beta includes the option to create a one-time email campaign, similar to what you find in our current  [Marketing Campaigns]({{root_url}}/ui/sending-email/how-to-send-an-email-with-marketing-campaigns/) product. In the beta, Campaigns does not yet include all functionality that’s available with Marketing Campaigns. Features that are coming soon include: 
+The Automation beta includes the option to create a one-time, one-to-many email, similar to what you find in our current  [Marketing Campaigns]({{root_url}}/ui/sending-email/how-to-send-an-email-with-marketing-campaigns/) product. In the beta, Single Sends do not yet include all functionality that’s available with Marketing Campaigns. Features that are coming soon include: 
+
 * Creating or sending to a custom-field based segment
 * Creating or sending to an engagement-based segment
 * A/B testing
@@ -435,22 +434,33 @@ The Automation beta includes the option to create a one-time email campaign, sim
 
 ## Migrating from Marketing Campaigns
 
-### Migrating Campaign HTML
+### Migrating Marketing Campaigns HTML
 
-*To migrate HTML from a Marketing Campaigns template or email:*
+*To migrate HTML from a Marketing Campaigns template or email into a new email:*
 
-1. Navigate to [Marketing Campaigns](https://sendgrid.com/marketing_campaigns/ui/campaigns) and locate the campaign you wish to migrate.
-1. Hover over the action menu until the icons appear.
-1. Select the **Export HTML** icon.
-   The campaign HTML downloads to the folder specified on your computer
-1. Navigate to the Automation dashboard.
-1. Locate the automation you want to add the exported email to and hover over the action menu.
-1. Select **Edit**.
-1. Within the automation, find the email you want to add the content to and click **Edit**.
-![]({{root_url}}/img/edit-email-automation.png "Edit email content")
-8. Select **Blank Template**.
-9. Select the code editor.
-10. Paste the HTML you copied from the downloaded file into the code editor and then click **Preview**.
+1. Navigate to [Marketing](https://sendgrid.com/marketing_campaigns/ui/campaigns) and click **Campaigns**.
+1. Locate the campaign you wish to migrate and hover over the action menu until the icons appear and select the **Export HTML** icon.
+   The campaign HTML downloads to the folder specified on your computer.
+1. Navigate to the Automation or Single Sends dashboard.
+1. Click into the Automation you want to edit and find the email you want to add the exported HTML to. For Single Sends, click directly into the email you want to add the exported HTML to.
+1. Hover over the action menu and select **Add Email Content**.
+![]({{root_url}}/img/add_email_content.png "Add email content")
+6. Select **Blank Template**.
+7. Select the code editor.
+8. Paste the HTML you copied from the downloaded file into the code editor and then click **Preview**.
+
+*To migrate HTML from a Marketing Campaigns template or email into a pre-existing email:*
+
+1. Navigate to [Marketing](https://sendgrid.com/marketing_campaigns/ui/campaigns) and click **Campaigns**.
+1. Locate the campaign you wish to migrate and hover over the action menu until the icons appear and select the **Export HTML** icon.
+   The campaign HTML downloads to the folder specified on your computer.
+1. Navigate to the Automation or Single Sends dashboard.
+1. Click into the Automation you want to edit and find the email you want to add the exported HTML to. For Single Sends, click directly into the email you want to add the exported HTML to.
+1. Hover over the action menu and select **Edit**.
+![]({{root_url}}/img/automation-email-edit.png "Edit email content")
+6. Select **Build**.
+7. Click **Advanced**, and then select **Import** to the right of *Import Drag & Drop HTML*.
+8. Paste the HTML you copied from the downloaded file into the code editor and then click **Preview**.
 
 ### Migrating Contact Lists
 
@@ -463,11 +473,12 @@ The Automation beta includes the option to create a one-time email campaign, sim
 1. Once you download the file, navigate back to Automation.
 1. Select **Contacts**.
 1. To add the contacts, click **Upload Contacts**.
-1. Follow the instructions outlined in [Upload contacts]({{root_url}}#upload-contacts) to complete the process.
+1. Follow the instructions outlined in [Upload contacts]({{root_url}}#add-contacts) to complete the process.
+
 
 *To migrate a segment from Marketing Campaigns:*
 
-During beta, segmentation is not enabled in Automation. You can build a segment in Marketing Campaigns, export it, and import it as a list to Marketing Campaigns.
+During beta, segmentation is not enabled in Automation. Instead, you can build a segment in Marketing Campaigns, export it, and import it as a contact list to Automation.
 
 1. Navigate to [Marketing Campaigns](https://sendgrid.com/marketing_campaigns/ui/campaigns) and then select **Contacts**.
 1. Find the segment you want to export and hover over the action menu.
@@ -475,8 +486,8 @@ During beta, segmentation is not enabled in Automation. You can build a segment 
    The contact list begins downloading, and you will receive a notification email to the email address specified in Marketing Campaigns Notifications. Go to your inbox to download the file.
 1. Once you download the file, navigate back to Automation.
 1. Select **Contacts**.
-1. To add the contacts, click **Upload Contacts**.
-1. Follow the instructions outlined in [Upload contacts]({{root_url}}#upload-contacts) to complete the process.
+1. To add your contacts, click **Upload Contacts**.
+1. Follow the instructions outlined in [Add contacts]({{root_url}}#add-contacts) to complete the process.
 
 ## Planned iterative releases for Automation beta
 
@@ -607,8 +618,3 @@ Automation will be available as part of our new Marketing Campaigns launch in Ju
 These new packages will include both contact storage and a volume of emails you can send; any sends through the new Marketing Campaigns packages will not be deducted from your base Email API package. 
 
 Each package will have tiers to reflect your allotment of contact storage and email sends. For insight into pricing, the Advanced package (which will include Automation), will start at $60/month for 10,000 contacts and up to 50,000 emails. Package tiers will scale with usage, for example, 200,000 contacts and 1,000,000 emails will cost $900/month.
-
-
-
-
-
