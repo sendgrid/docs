@@ -364,7 +364,6 @@ To manage your contact lists more efficiently, you can edit and remove contact l
 1. Find the list you want to remove the contact from and click the delete icon.
 1. When you see "Are you sure you want to remove this contact?" click **Remove Contact**. 
 
-
 ### Export contacts
 
 To view the contents of a contact list, you can export the list to a CSV and download it to your computer.
@@ -424,7 +423,6 @@ When you re-enable the automation, contacts who previously entered the series wi
 
 ## Create a Single Send
 
-
 The Automation beta includes the option to create a one-time, one-to-many email, similar to what you find in our current  [Marketing Campaigns]({{root_url}}/ui/sending-email/how-to-send-an-email-with-marketing-campaigns/) product. In the beta, Single Sends do not yet include all functionality that’s available with Marketing Campaigns. Features that are coming soon include: 
 
 * Creating or sending to a custom-field based segment
@@ -439,7 +437,6 @@ The Automation beta includes the option to create a one-time, one-to-many email,
 
 ### Migrating Marketing Campaigns HTML
 
-
 *To migrate HTML from a Marketing Campaigns template or email into a new email:*
 
 1. Navigate to [Marketing Campaigns](https://sendgrid.com/marketing_campaigns/ui/campaigns) and locate the campaign you wish to migrate.
@@ -452,7 +449,6 @@ The Automation beta includes the option to create a one-time, one-to-many email,
 8. Select **Blank Template**.
 9. Select the code editor.
 10. Paste the HTML you copied from the downloaded file into the code editor and then click **Preview**.
-
 
 *To migrate HTML from a Marketing Campaigns template or email into a pre-existing email:*
 
