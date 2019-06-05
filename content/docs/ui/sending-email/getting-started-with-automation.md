@@ -248,9 +248,11 @@ Before you can create a test, you will need to specify a Sender and include a Su
 4. When Email Testing opens a new test, choose which kind of tests you'd like to run, by selecting the checkboxes by **Spam Test**, **Inbox Rendering Test**, or by selecting both.
 
 <call-out>
+
 A Spam Test costs 3 Email Testing credits, while an Inbox Rendering Test will cost 1 credit for every client, browser or device that you select.
 
 Every test that you run will automatically include a link validation test, checking that all URLs within your message are valid. Link validation tests **do not** deduct from your Email Testing credits.
+
 </call-out>
 
 5. If you choose to run an Inbox Rendering test, select the clients and browsers you'd like to include as part of your test by clicking the associated checkbox for each. One credit will be charged for each client, browser or device that you select.
