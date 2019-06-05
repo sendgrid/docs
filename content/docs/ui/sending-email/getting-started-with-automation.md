@@ -475,6 +475,7 @@ The Automation beta includes the option to create a one-time, one-to-many email,
 1. To add the contacts, click **Upload Contacts**.
 1. Follow the instructions outlined in [Upload contacts]({{root_url}}#add-contacts) to complete the process.
 
+
 *To migrate a segment from Marketing Campaigns:*
 
 During beta, segmentation is not enabled in Automation. Instead, you can build a segment in Marketing Campaigns, export it, and import it as a contact list to Automation.
