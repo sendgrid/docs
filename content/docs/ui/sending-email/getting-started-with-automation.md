@@ -446,7 +446,9 @@ The Automation beta includes the option to create a one-time, one-to-many email,
 1. Navigate to the Automation or Single Sends dashboard.
 1. Click into the Automation you want to edit and find the email you want to add the exported HTML to. For Single Sends, click directly into the email you want to add the exported HTML to.
 1. Hover over the action menu and select **Add Email Content**.
+
 ![]({{root_url}}/img/add_email_content.png "Add email content")
+
 6. Select **Blank Template**.
 7. Select the code editor.
 8. Paste the HTML you copied from the downloaded file into the code editor and then click **Preview**.
@@ -459,7 +461,9 @@ The Automation beta includes the option to create a one-time, one-to-many email,
 1. Navigate to the Automation or Single Sends dashboard.
 1. Click into the Automation you want to edit and find the email you want to add the exported HTML to. For Single Sends, click directly into the email you want to add the exported HTML to.
 1. Hover over the action menu and select **Edit**.
+
 ![]({{root_url}}/img/automation-email-edit.png "Edit email content")
+
 6. Select **Build**.
 7. Click **Advanced**, and then select **Import** to the right of *Import Drag & Drop HTML*.
 8. Paste the HTML you copied from the downloaded file into the code editor and then click **Preview**.
