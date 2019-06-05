@@ -215,49 +215,48 @@ When you re-enable the automation, contacts who previously entered the series wi
 
 ## Email Testing
 
-Email testing offers in-app spam testing, inbox rendering previews, and link validation right within the Automation experience. It allows you to preview how an email is likely to perform across a wide range of inbox providers, devices and spam filters, before sending.
-
 <call-out>
-
-Email Testing is currently in closed beta and available to a limited number of participants. Participants are given three testing credits per month, with additional credits coming soon! If you’re interested in participating, please email email_automation@sendgrid.com.
-
+Email Testing is currently only available as part of a closed beta for Automation! For more information on Twilio SendGrid Automation, or to join the Early Access waitlist, see our [Email Marketing Automation](https://sendgrid.com/solutions/marketing-automation/?utm_source=docs) page.
 </call-out>
+
+Email testing offers in-app spam testing, inbox rendering previews, and link validation right within the Automation experience. It allows you to preview how an email is likely to perform across a wide range of inbox providers, devices and spam filters, before sending.
 
 - **Inbox Rendering Test:** Displays how an email message is rendered and appears across a select group of inbox providers and devices.
 - **Spam Test:** Shows how an email performs against the world’s most powerful consumer (B2C) and enterprise (B2B) spam filters.
 - **Link Validation Test:** Tests all links/URLs within a message to ensure they are valid. The test checks for redirects, domain reputation and critical metadata (like title text).
 
+<call-out>
+
+At this time, those with access to Email Testing as part of the Automation beta receive 3 free Email Testing credits per month. These can be used to explore the Email Testing functionality, with access to more Email Testing credits coming soon!
+
+</call-out>
+
 *To test an email:*
 
 1. From inside either the Design or Code editor, navigate to the Settings tab.
-1. Scroll down and click on the **Send Test** dropdown to expand testing options.
+1. Scroll down and click on the **Test Your Email** dropdown to expand testing options.
 1. Below the option to send a test email, you will see an **Email Testing** option. To create a test, click **Create Test**.
 
 <call-out>
 
-Before you can use Email Testing, you need to specify a Sender and add a Subject to the email you want to test.
+Before you can create a test, you will need to specify a Sender and include a Subject for your email.
 
 </call-out>
 
 ![]({{root_url}}/img/auto-email-testing-launch.png "Launch Automated Email Testing")
 
-4. Once the Email Testing page opens, choose which inboxes you’d like to test by selecting the checkbox next to the name of the client. 
+4. When Email Testing opens a new test, choose which kind of tests you'd like to run, by selecting the checkboxes by **Spam Test**, **Inbox Rendering Test**, or by selecting both.
 
 <call-out>
+A Spam Test costs 3 Email Testing credits, while an Inbox Rendering Test will cost 1 credit for every client, browser or device that you select.
 
-During the beta program, every email test will automatically run all three types: the Inbox, Link, and Spam Tests.
-
+Every test that you run will automatically include a link validation test, checking that all URLs within your message are valid. Link validation tests **do not** deduct from your Email Testing credits.
 </call-out>
 
-5. Once you've selected all of the inboxes for the rendering test you want to run, click **Run Test**. 
-6. It may take a moment to begin seeing results. When the test is finished running, the test results appear on the View Test Results tab. Click a thumbnail of a render to open the image and view in greater detail.  
-7. From the View Test Results tab, you can select the **Inbox**, **Spam**, or **Links** tabs to view all of the details for your test.
-
-<call-out>
-
-During the beta program, only the latest test that you’ve run is saved to your account. To access the results once you’ve left Email Testing, simply click **Create Test** in the *Settings* tab and select the **View Test Results** tab.
-
-</call-out>
+5. If you choose to run an Inbox Rendering test, select the clients and browsers you'd like to include as part of your test by clicking the associated checkbox for each. One credit will be charged for each client, browser or device that you select.
+6. Click **Run Test**. 
+7. Your test will begin. Please note: It may take a moment for the test to begin returning your results. Test results will appear on the View Test Results tab. Click a thumbnail of a render to open the image and view in greater detail.  
+8. From the View Test Results tab, you can select the **Inbox**, **Spam**, or **Links** tabs to view all of the details for your test.
 
 ## Manage Contacts
 
