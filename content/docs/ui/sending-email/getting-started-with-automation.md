@@ -439,29 +439,29 @@ The Automation beta includes the option to create a one-time, one-to-many email,
 
 *To migrate HTML from a Marketing Campaigns template or email into a new email:*
 
-1. Navigate to [Marketing Campaigns](https://sendgrid.com/marketing_campaigns/ui/campaigns) and locate the campaign you wish to migrate.
-1. Hover over the action menu until the icons appear and select the **Export HTML** icon.
+1. Navigate to [Marketing](https://sendgrid.com/marketing_campaigns/ui/campaigns) and click **Campaigns**.
+1. Locate the campaign you wish to migrate and hover over the action menu until the icons appear and select the **Export HTML** icon.
    The campaign HTML downloads to the folder specified on your computer.
-1. Navigate to the Automation dashboard.
-1. Locate the Automation you want to add the exported email to and hover over the action menu.
-1. Select **Add Email Content**.
+1. Navigate to the Automation or Single Sends dashboard.
+1. Click into the Automation you want to edit and find the email you want to add the exported HTML to. For Single Sends, click directly into the email you want to add the exported HTML to.
+1. Hover over the action menu and select **Add Email Content**.
 ![]({{root_url}}/img/add_email_content.png "Add email content")
-8. Select **Blank Template**.
-9. Select the code editor.
-10. Paste the HTML you copied from the downloaded file into the code editor and then click **Preview**.
+6. Select **Blank Template**.
+7. Select the code editor.
+8. Paste the HTML you copied from the downloaded file into the code editor and then click **Preview**.
 
 *To migrate HTML from a Marketing Campaigns template or email into a pre-existing email:*
 
-1. Navigate to [Marketing Campaigns](https://sendgrid.com/marketing_campaigns/ui/campaigns) and locate the campaign you wish to migrate.
-1. Hover over the action menu until the icons appear and select the **Export HTML** icon.
+1. Navigate to [Marketing](https://sendgrid.com/marketing_campaigns/ui/campaigns) and click **Campaigns**.
+1. Locate the campaign you wish to migrate and hover over the action menu until the icons appear and select the **Export HTML** icon.
    The campaign HTML downloads to the folder specified on your computer.
-1. Navigate to the Automation dashboard.
-1. Locate the Automation you want to add the exported email to and hover over the action menu.
-1. Select **Edit**.
+1. Navigate to the Automation or Single Sends dashboard.
+1. Click into the Automation you want to edit and find the email you want to add the exported HTML to. For Single Sends, click directly into the email you want to add the exported HTML to.
+1. Hover over the action menu and select **Edit**.
 ![]({{root_url}}/img/automation-email-edit.png "Edit email content")
-8. Select **Build**.
-9. Click **Advanced**, and then select **Import** to the right of *Import Drag & Drop HTML*.
-10. Paste the HTML you copied from the downloaded file into the code editor and then click **Preview**.
+6. Select **Build**.
+7. Click **Advanced**, and then select **Import** to the right of *Import Drag & Drop HTML*.
+8. Paste the HTML you copied from the downloaded file into the code editor and then click **Preview**.
 
 ### Migrating Contact Lists
 
