@@ -14,7 +14,7 @@ seo:
 *To cancel your SendGrid account:*
 
 1. Log into the SendGrid UI.
-1. Select **Settings** and then click **Plan & Billing Details**.
+1. Select **Settings** and then click **Account Details**, followed by **Plan & Billing**.
 1. At the bottom of the page, click **Cancel Account**.
 
 <call-out>

@@ -13,7 +13,7 @@ navigation:
 
 <call-out type="warning">
 
-**Automation is currently in closed beta**. During beta, only approved participants have access to the feature and we reserve the right to change the functionality at any time without warning. For more information on the Automation beta, or to join the beta waitlist, see our [Email Marketing Automation](https://sendgrid.com/solutions/marketing-automation/?utm_source=docs) page.
+**Automation is currently in closed beta**. During beta, only approved participants have access to the feature and we reserve the right to change the functionality at any time without warning. For more information on Twilio SendGrid Automation, or to join the Early Access waitlist, see our [Email Marketing Automation](https://sendgrid.com/solutions/marketing-automation/?utm_source=docs) page.
 
 </call-out>
 
@@ -219,7 +219,7 @@ Email testing offers in-app spam testing, inbox rendering previews, and link val
 
 <call-out>
 
-Email Testing is currently in closed beta and available to a limited number of Automation participants. If you’re interested in participating, please email email_automation@sendgrid.com.
+Email Testing is currently in closed beta and available to a limited number of participants. Participants are given three testing credits per month, with additional credits coming soon! If you’re interested in participating, please email email_automation@sendgrid.com.
 
 </call-out>
 
@@ -364,7 +364,6 @@ To manage your contact lists more efficiently, you can edit and remove contact l
 1. Find the list you want to remove the contact from and click the delete icon.
 1. When you see "Are you sure you want to remove this contact?" click **Remove Contact**. 
 
-
 ### Export contacts
 
 To view the contents of a contact list, you can export the list to a CSV and download it to your computer.
@@ -425,6 +424,7 @@ When you re-enable the automation, contacts who previously entered the series wi
 ## Create a Single Send
 
 The Automation beta includes the option to create a one-time, one-to-many email, similar to what you find in our current  [Marketing Campaigns]({{root_url}}/ui/sending-email/how-to-send-an-email-with-marketing-campaigns/) product. In the beta, Single Sends do not yet include all functionality that’s available with Marketing Campaigns. Features that are coming soon include: 
+
 * Creating or sending to a custom-field based segment
 * Creating or sending to an engagement-based segment
 * A/B testing
@@ -542,27 +542,27 @@ Have feedback or questions? We welcome your thoughts at email_automation@sendgri
     <td>LIVE</td>
   </tr>
   <tr>
-    <td>Ability to save an email design as a template.</td>
-    <td>In progress</td>
+    <td>Ability to create and save a custom template.</td>
+    <td>LIVE</td>
   </tr>
   <tr>
+    <td>Ability to send a one-time campaign to a list using Single Sends.</td>
+    <td>LIVE</td>
+  </tr>
+  <tr>
+    <td>Ability to test Automation emails for rendering across inboxes and browsers, link validation, and spam testing.</td>
+    <td>LIVE</td>
+  </tr>
+  <tr>
+    <td>Shared contacts and templates across Single Sends and Automation.</td>
+    <td>LIVE</td>
+  </tr>
+   <tr>
     <td>Ability to view the details of an Automation Contact list</td>
     <td>In progress</td>
   </tr>
   <tr>
     <td>Ability to import custom fields via API and use them for email content and subject line personalization.</td>
-    <td>Planned</td>
-  </tr>
-  <tr>
-    <td>Ability to test Automation emails for rendering across inboxes and browsers, link validation, and spam testing.</td>
-    <td>In closed beta</td>
-  </tr>
-  <tr>
-    <td>Ability to send a one-time campaign to a list using Single Sends.</td>
-    <td>In progress</td>
-  </tr>
-  <tr>
-    <td>Shared contacts and templates across Single Sends and Automation.</td>
     <td>In progress</td>
   </tr>
 </table>

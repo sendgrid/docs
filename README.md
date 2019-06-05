@@ -107,7 +107,7 @@ SendGrid does not merge a pull request made against a SendGrid open source proje
 
 * Build the local site
 
-  `$ gatsby develop`
+  `$ yarn develop`
   Gatsby starts a hot-reloading development environment accessible at [localhost:8000](localhost:8000)
 
 <a name="about"></a>
