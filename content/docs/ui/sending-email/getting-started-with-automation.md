@@ -43,7 +43,6 @@ While this beta is not connected to our current Marketing Campaigns product, you
 </call-out>
 
 Some Marketing Campaigns features will not be available in Automation. For easy reference, the primary feature gaps include:
-* Create or use custom fields
 * Create or use segments
 * A/B testing of email content and subject lines
 * Link click tracking
@@ -281,15 +280,10 @@ You can add contacts to a list via CSV Upload or by creating a Signup Form to au
 1. Use [this CSV template]({{root_url}}/assets/example.csv) to make sure your CSV is formatted correctly.
 1. Click **Add Contacts** and then select **Upload CSV**.
 1. Choose whether to add your contacts to All Contacts, to an existing list, or to a new list you create.
+1. Upload your file by dragging it into or clicking the CSV upload area and then click **Next: Review CSV UPload**.
+1. Map your CSV fields by selecting a corresponding field name or creating a new [custom field]({{root_url}}/ui/managing-contacts/custom-fields/). 
+Once the CSV has processed, you will receive a [notification]({{root_url}}/ui/sending-email/getting-started-with-automation/#notifications) email.
 
-<call-out>
-
-At this phase of the beta, custom fields are not supported. You can import [reserved fields]({{root_url}}/ui/managing-contacts/custom-fields/#reserved-fields), including ``email``, ``first_name``, ``last_name``, and address fields.
-
-</call-out>
-
-4. Upload your file by dragging it into or clicking the CSV upload area.
-   Once the CSV has processed, you will receive a [notification]({{root_url}}/ui/sending-email/getting-started-with-automation/#notifications) email.
 
 #### Create a signup form
 
@@ -569,7 +563,7 @@ Have feedback or questions? We welcome your thoughts at email_automation@sendgri
   </tr>
   <tr>
     <td>Ability to import custom fields via API and use them for email content and subject line personalization.</td>
-    <td>In progress</td>
+    <td>LIVE</td>
   </tr>
 </table>
 
