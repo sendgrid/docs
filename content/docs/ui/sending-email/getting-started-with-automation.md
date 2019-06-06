@@ -284,7 +284,6 @@ You can add contacts to a list via CSV Upload or by creating a Signup Form to au
 1. Map your CSV fields by selecting a corresponding field name or creating a new [custom field]({{root_url}}/ui/managing-contacts/custom-fields/). 
 Once the CSV has processed, you will receive a [notification]({{root_url}}/ui/sending-email/getting-started-with-automation/#notifications) email.
 
-
 #### Create a signup form
 
 Use Signup Forms with the SendGrid Automation beta to capture new contacts and add them directly to an Automation list. If the list you add them to is acting as the entry criteria for a live automation, the new contact will automatically receive any emails you’ve created as part of that automation. 
@@ -557,14 +556,15 @@ Have feedback or questions? We welcome your thoughts at email_automation@sendgri
     <td>Shared contacts and templates across Single Sends and Automation.</td>
     <td>LIVE</td>
   </tr>
-   <tr>
-    <td>Ability to view the details of an Automation Contact list</td>
-    <td>In progress</td>
-  </tr>
   <tr>
     <td>Ability to import custom fields via API and use them for email content and subject line personalization.</td>
     <td>LIVE</td>
   </tr>
+   <tr>
+    <td>Ability to view the details of an Automation Contact list</td>
+    <td>In progress</td>
+  </tr>
+
 </table>
 
 ### Long-term (Beyond Q2 2019)
