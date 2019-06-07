@@ -13,7 +13,6 @@ Following are the settings that can be specified in the filters section of the X
 
 
 * If you're enabling a Setting, also called a filter, via SMTPAPI, you are required to define all of the parameters for that Setting.
-* Setting enabled status will always default to your settings on the website, unless otherwise defined in your X-SMTPAPI header.
 * If you enable a disabled setting, our system will not pull your settings for the disabled setting. You will need to define the settings in your X-SMTPAPI header <em>Example:</em> If you have a footer designed but disabled, you can't just enable it via the API; you need to define the footer in the API call itself.
 * All filter names and setting names must be lowercase.
 
