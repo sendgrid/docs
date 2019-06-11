@@ -623,4 +623,19 @@ Automation will be available as part of our new Marketing Campaigns launch in Ju
 
 These new packages will include both contact storage and a volume of emails you can send; any sends through the new Marketing Campaigns packages will not be deducted from your base Email API package. 
 
+<table>
+  <tr>
+    <th>Basic</th>
+    <th>Advanced</th>
+  </tr>
+  <tr>
+    <td>Starting plan<br>
+$15/month<br>
+5,000 contacts and 15,000 email sends</td>
+    <td>Starting plan<br>
+$60/month<br>
+10,000 contacts and 50,000 email sends</td>
+  </tr>
+</table>
+
 Each package will have tiers to reflect your allotment of contact storage and email sends. For insight into pricing, the Advanced package (which will include Automation), will start at $60/month for 10,000 contacts and up to 50,000 emails. Package tiers will scale with usage, for example, 200,000 contacts and 1,000,000 emails will cost $900/month.
