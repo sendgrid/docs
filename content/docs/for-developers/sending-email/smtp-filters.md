@@ -131,7 +131,8 @@ Rewrites links in email text and html bodies to go through our webservers, allow
   "filters" : {
     "clicktrack" : {
       "settings" : {
-        "enable" : 1
+        "enable" : 1,
+        "enable_text" : true
       }
     }
   }
