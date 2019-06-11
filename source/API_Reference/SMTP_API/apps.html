@@ -11,7 +11,6 @@ navigation:
 {% info %}
 <ul>
   <li>If you're enabling a Setting, also called a filter, via SMTPAPI, you are required to define all of the parameters for that Setting.</li>
-  <li>Setting enabled status will always default to your settings on the website, unless otherwise defined in your X-SMTPAPI header</li>
   <li>If you enable a disabled setting, our system will not pull your settings for the disabled setting. You will need to define the settings in your X-SMTPAPI header <em>Example:</em> If you have a footer designed but disabled, you can't just enable it via the API; you need to define the footer in the API call itself.</li>
   <li>All filter names and setting names must be lowercase.</li>
 </ul>
@@ -122,6 +121,11 @@ Filter: <code>clicktrack</code>
 <td><code>0</code> | <code>1</code></td>
 <td>Disable or enable this Setting</td>
 </tr>
+  <tr>
+  <td>enable_text</td>
+  <td><code>true</code> | <code>false</code></td>
+  <td>Enable or Disable click-tracking links in the Plain-Text portion of the message.</td>
+</tr>
 </tbody>
 </table>
 
@@ -131,7 +135,8 @@ Filter: <code>clicktrack</code>
   "filters" : {
     "clicktrack" : {
       "settings" : {
-        "enable" : 1
+        "enable" : 1,
+        "enable_text" : true
       }
     }
   }
