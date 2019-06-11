@@ -117,6 +117,11 @@ Rewrites links in email text and html bodies to go through our webservers, allow
 <td><code>0</code> | <code>1</code></td>
 <td>Disable or enable this Setting</td>
 </tr>
+<tr>
+  <td>enable_text</td>
+  <td><code>true</code> | <code>false</code></td>
+  <td>Enable or Disable click-tracking links in the Plain-Text portion of the message.</td>
+</tr>
 </tbody>
 </table>
 
