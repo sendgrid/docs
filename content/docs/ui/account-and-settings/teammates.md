@@ -123,6 +123,6 @@ However, a teammate cannot change their own permissions via API key. For example
 
 ## 	Related Resources
 
-* [API Reference]({{root_url}}/API_Reference/Web_API_v3/teammates/)
+* [API Reference]({{root_url}}/API_Reference/Web_API_v3/teammates.html)
 * [Glossary]({{root_url}}/glossary/teammates/)
 
