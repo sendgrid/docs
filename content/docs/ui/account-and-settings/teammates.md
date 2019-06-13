@@ -123,6 +123,6 @@ However, a teammate cannot change their own permissions via API key. For example
 
 ## 	Related Resources
 
-* [API Reference]({{root_url}}/API_Reference/Web_API_v3/teammates.html)
+* [API Reference]({https://sendgrid.api-docs.io/v3.0/teammates/teammates-request-access)
 * [Glossary]({{root_url}}/glossary/teammates/)
 
