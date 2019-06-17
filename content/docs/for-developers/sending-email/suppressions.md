@@ -41,7 +41,7 @@ When passing `asm_group_id` please make sure to only use integers as shown in ou
 
 To specify which groups to display on the Manage Preferences page of an email, add the group IDs to the X-SMTPAPI header of an SMTP message, or in the x-smtpapi parameter of a [mail.send API
 call]({{root_url}}/API_Reference/Web_API/mail.html).
-If you omit the asm_groups_to_display header, your default groups is shown on the Manage Preferences page instead.
+If you omit the `asm_groups_to_display` header, your default groups is shown on the Manage Preferences page instead.
 
 <call-out type="warning">
 
