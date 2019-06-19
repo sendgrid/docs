@@ -1061,3 +1061,4 @@ For emails sent through our Legacy Marketing Email tool, unsubscribes look like 
 - [An Event Webhook case study](https://sendgrid.com/blog/leveraging-sendgrids-event-api/)
 - [Webhook web libraries]({{root_url}}/for-developers/sending-email/libraries/)
 - [Getting started with Keen.io]({{root_url}}/for-developers/tracking-events/analytics-with-keen-io/)
+- [Run SQL on your Sengrid webhook data](https://pipedream.com/@dylburger/run-sql-on-sendgrid-engagement-data-for-free-p_X13CGV)

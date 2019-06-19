@@ -35,12 +35,6 @@ For sample templates that that include examples of receipts, password resets, ac
 
 The cURL calls on this page use the [receipt example template](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates/receipt).
 
-<call-out>
-
-For the full API documentation, see [Mail Send with Dynamic Transactional Templates](https://dynamic-templates.api-docs.io/3.0).
-
-</call-out>
-
 <call-out type="warning">
 
 To send mail using Dynamic Templates, you must use the [Web API mail.send](https://sendgrid.com/docs/for-developers/sending-email/v3-mail-send-faq/). SMTP sends do not support Dynamic Templates.
@@ -148,7 +142,6 @@ You can also copy your template ID from the app and paste it into your call.
 ![]({{root_url}}/img/dynamic_template_id.png "Dynamic Template ID")
 
 ## 	Additional Resources
-
-- [Mail Send with Dynamic Transactional Templates](https://dynamic-templates.api-docs.io/3.0)
+- [Mail Send with Dynamic Templates](https://sendgrid.com/docs/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/)
 - [Unsubscribe Groups]({{root_url}}/ui/sending-email/group-unsubscribes/)
 - [Using Handlebars]({{root_url}}/for-developers/sending-email/using-handlebars/)
