@@ -216,7 +216,9 @@ When you re-enable the automation, contacts who previously entered the series wi
 ## Email Testing
 
 <call-out>
+
 Email Testing is currently only available as part of a closed beta for Automation! For more information on Twilio SendGrid Automation, or to join the Early Access waitlist, see our [Email Marketing Automation](https://sendgrid.com/solutions/marketing-automation/?utm_source=docs) page.
+
 </call-out>
 
 Email testing offers in-app spam testing, inbox rendering previews, and link validation right within the Automation experience. It allows you to preview how an email is likely to perform across a wide range of inbox providers, devices and spam filters, before sending.
@@ -385,7 +387,7 @@ Exported CSV files are only available for download for 72 hours after the export
 
 ### Contact Management APIs
 
-You can integrate with the Contact Management APIs to create and update lists, add contacts, manage reserved field data, export contact lists, and pull data about your contacts and lists. Learn more through the documentation for [Automation Contact APIs](https://sendgrid-automation.api-docs.io/v3/getting-started/).
+You can integrate with the Contact Management APIs to create and update lists, add contacts, manage reserved field data, export contact lists, and pull data about your contacts and lists. Learn more through the documentation for [Automation Contact APIs](https://sendgrid-marketing-campaigns-beta.api-docs.io/v1).
 
 ## Manage Automations
 
