@@ -10,6 +10,12 @@ seo:
   override: true
   description: Optimize engagement of your campaigns with A/B testing, by sending different versions of your emails to a small subset of your contacts and measuring the engagement results.
 ---
+<call-out>
+
+A/B testing is currently only available in the legacy Marketing Campaigns product. For more information on the new Marketing Campaigns or 
+
+</call-out>
+
 Optimize the engagement of your Marketing Campaigns with A/B testing. A/B testing (sometimes also referred to by marketers as 'split testing') allows you to send different versions of your emails to a small, initial subset of your contacts.
 
 When recipients interact with the emails sent during an A/B test, you can compare the engagement metrics and choose the version to send to the remainder of your contacts, or allow SendGrid to automatically choose the winning version of your campaign according to the A/B test criteria you set.
