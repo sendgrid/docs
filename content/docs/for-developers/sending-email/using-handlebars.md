@@ -19,7 +19,7 @@ This page uses examples from the [dynamic-template section of our email template
 
 <call-out>
 
-For the full API documentation, see [Mail Send with Dynamic Transactional Templates](https://dynamic-templates.api-docs.io/3.0).
+For the full API documentation, see [Mail Send with Dynamic Transactional Templates](https://sendgrid.api-docs.io/v3.0/transactional-templates).
 
 </call-out>
 
@@ -482,5 +482,5 @@ Resulting replacement:
 
 - [Sending Email with Dynamic Transactional Templates]({{root_url}}//ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/)
 - [Create and edit Dynamic Transactional Templates]({{root_url}}/ui/sending-email/create-and-edit-transactional-templates/)
-- [Dynamic Templates API](https://dynamic-templates.api-docs.io/3.0)
+- [Dynamic Templates API](https://sendgrid.api-docs.io/v3.0/transactional-templates)
 - [How to send an email with dynamic templates]({{root_url}}/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/)
