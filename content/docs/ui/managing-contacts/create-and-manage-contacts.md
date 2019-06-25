@@ -7,7 +7,8 @@ navigation:
   show: true
 seo:
   title: Create and Manage Contacts
-  keywords:   override: true
+  keywords:   
+  override: true
   description:
 ---
 ## Manage Contacts

@@ -21,17 +21,14 @@ Adding Unsubscribe Groups to your emails makes it easy to honor your recipients'
 1. Click **Add Unsubscribe Groups**.
 1. Add a *Group Name* and *Group Description*.
 
-
 <call-out>
 
 Make sure your Group Names and Group Descriptions are customer-friendly. This is what your recipients will see.
-
 
 </call-out>
 
 4. Select the checkbox if you want the Unsubscribe Group to display on the unsubscribe preferences page.
 5. Click **Save Unsubscribe Group**.
-
 
 <call-out>
 
@@ -45,7 +42,7 @@ To view the unsubscribe preferences page, select the action menu next to an Unsu
 
 1. Select your preferred Unsubscribe Group by clicking **Settings** and selecting the group from **Recipients**.
 1. From the **Build** tab, drag the **Unsubscribe** module to insert Sender Information and a link to the `{{{unsubscribe}}}` tag.
-1. To manually hyperlink to the {{unsubscribe}} tag, enter the text you would like to link.
+1. To manually hyperlink to the `{{{unsubscribe}}}` tag, enter the text you would like to link.
 1. Highlight the text then select the link icon from the top toolbar.
 1. In the URL field enter `{{{unsubscribe}}}`, then click **Save**.
 
