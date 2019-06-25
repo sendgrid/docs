@@ -46,10 +46,10 @@ To view the unsubscribe preferences page, select the action menu next to an Unsu
 *Using the Design Editor:*
 
 1. Select your preferred Unsubscribe Group by clicking **Settings** and selecting the group from **Recipients**.
-1. From the **Build** tab, drag the **Unsubscribe** module to insert Sender Information and a link to the [unsubscribe] tag.
-1. To manually hyperlink to the [unsubscribe] tag, enter the text you would like to link.
+1. From the **Build** tab, drag the **Unsubscribe** module to insert Sender Information and a link to the `{{{unsubscribe}}}` tag.
+1. To manually hyperlink to the {{unsubscribe}} tag, enter the text you would like to link.
 1. Highlight the text then select the link icon from the top toolbar.
-1. In the URL field enter [unsubscribe], then click **Save**.
+1. In the URL field enter `{{{unsubscribe}}}`, then click **Save**.
 
 *Using the Code Editor:*
 
@@ -57,12 +57,8 @@ To view the unsubscribe preferences page, select the action menu next to an Unsu
 1. Enter the following code styling to the HTML window where you would like your unsubscribe content placed:
 
 ```
-<a href="[unsubscribe]">Click here to unsubscribe.</a>
+<a href="{{{unsubscribe}}}">Click here to unsubscribe.</a>
 ```
-
-If you are participating in the Automation closed beta, you will add the unsubscribe tag using the following format:  ``{{unsubscribe}}``
-
-For more information on the Automation beta, see our [Email Marketing Automation](https://sendgrid.com/solutions/marketing-automation/) page.
 
 ## Using a Custom Unsubscribe Link
 
@@ -72,13 +68,15 @@ If you would like to use a custom URL for your unsubscribe link, navigate to **S
 
 This will expand a new field where you can insert a URL for one of your own pages where recipients can manage their subscription preferences.
 
-To place your Custom Unsubscribe link into your email, highlight any text within the body of your email and click the small link icon to specify a hyperlink. In the URL field that appears, enter the tag `[Unsubscribe]`. Since you've specified your Custom Unsubscribe Link in the Settings panel, SendGrid will replace the Unsubscribe Tag with your custom URL.
+To place your Custom Unsubscribe link into your email, highlight any text within the body of your email and click the small link icon to specify a hyperlink. In the URL field that appears, enter the tag `{{{Unsubscribe}}}`. Since you've specified your Custom Unsubscribe Link in the Settings panel, SendGrid will replace the Unsubscribe Tag with your custom URL.
 
 ## Add recipients to an Unsubscribe Group
 
+You can add recipients to an unsubscribe group by uploading a CSV or adding them manually using the UI. To programmatically add recipients to an unsubscribe group, see our [API documentation](https://sendgrid.api-docs.io/v3.0/suppressions-unsubscribe-groups)
+
 *To upload a CSV:*
 
-1. Find the group you want to add recipients to and click the action menu.
+1. Find the unsubscribe group you want to add recipients to and click the action menu.
 
 ![]({{root_url}}/img/unsub_action_menu.png "Unsubcribe Group action menu")
 
@@ -132,3 +130,4 @@ From the Edit Group page, you can change the Group Name, Group Description, and 
 - [Suppressions Overview]({{root_url}}/ui/sending-email/index-suppressions/)
 - [Group Unsubscribes]({{root_url}}/ui/sending-email/group-unsubscribes/)
 - [Global Unsubscribes]({{root_url}}/ui/sending-email/global-unsubscribes/)
+
