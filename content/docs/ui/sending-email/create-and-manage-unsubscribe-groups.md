@@ -1,128 +1,140 @@
 ---
 layout: page
-weight: 90
-group: marketing-campaigns
-title: Create and Manage Unsubscribe Groups
-seo:
-  title: Create and Manage Unsubscribe Groups
-  description: Suppression Manager helps you to define and manage unsubscribe groups to keep you out of the spam folder.
-  keywords: unsubscribe groups, suppressions, manage unsubscribe groups, delete unsubscribe groups
+weight: 70
+title: Create and Manage Contacts
+group: managing-contacts
 navigation:
   show: true
+seo:
+  title: Create and Manage Contacts
+  keywords:   override: true
+  description:
 ---
+## Manage Contacts
 
-Adding Unsubscribe Groups to your emails makes it easy to honor your recipients' email preferences and protects your sender reputation by complying with anti-spam legislation.
+Adding contacts to a list that's designated as the entry criteria for an automation will trigger that automation. The Automation beta experience offers several ways to add contacts to lists, including CSV upload, using signup forms, or via the Contact Management APIs. 
 
-## Create an Unsubscribe Group
+<call-out type="warning">
 
-*To create an Unsubscribe Group:*
-
-1. Select **Marketing** and then click **Unsubscribe Groups**.
-1. Click **Add Unsubscribe Groups**.
-1. Add a *Group Name* and *Group Description*.
-
-<call-out>
-
-Make sure your Group Names and Group Descriptions are customer-friendly. This is what your recipients will see.
+During the beta, contacts you upload to Automation are distinct from your existing Marketing Campaigns contacts. An Automation contact will be treated as new even if they’ve been in your Marketing Campaigns contacts for some time.
 
 </call-out>
 
-4. Select the checkbox if you want the Unsubscribe Group to display on the unsubscribe preferences page.
-5. Click **Save Unsubscribe Group**.
+### Add Contacts
+
+Note that automations will only trigger to contacts who are added to an entry criteria list *after* the automation is set live. Contacts who you add to a list before the automation is set live will not receive any emails in the series.
+
+#### Upload a CSV
+
+You can add contacts to a list via CSV Upload or by creating a Signup Form to automatically send signups to a list. 
+
+1. Use [this CSV template]({{root_url}}/assets/example.csv) to make sure your CSV is formatted correctly.
+1. Click **Add Contacts** and then select **Upload CSV**.
+1. Choose whether to add your contacts to All Contacts, to an existing list, or to a new list you create.
+1. Upload your file by dragging it into or clicking the CSV upload area and then click **Next: Review CSV Upload**.
+1. Map your CSV fields by selecting a corresponding field name or creating a new [custom field]({{root_url}}/ui/managing-contacts/custom-fields/). 
+
+ Once the CSV has processed, you will receive a [notification]({{root_url}}/ui/account-and-settings/notifications/) email.
+
+
+#### Create a signup form
+
+Use Signup Forms with the SendGrid Automation beta to capture new contacts and add them directly to an Automation list. If the list you add them to is acting as the entry criteria for a live automation, the new contact will automatically receive any emails you’ve created as part of that automation. 
+
+You can enable contacts to access your signup form either by sending them a link hosted by SendGrid or by embedding it directly into your website.
 
 <call-out>
 
-To view the unsubscribe preferences page, select the action menu next to an Unsubscribe Group and then click **Preview**. Toggle to the Unsubscribe Preferences tab to view all of the options listed.
+The number of signup forms you can create is limited to 15. 
 
 </call-out>
 
-## Adding an Unsubscribe Group to your Email
+*To create a new signup form:*
 
-*Using the Design Editor:*
+1. Navigate to Automations and select **Signup Forms**. 
+1. Click **Create New Form**.
+1. On the Settings tab, add a Form Name and then select the contact list you want to add new signups to. 
+1. Next, add a confirmation message. This field contains the text that contacts will see once they’ve clicked submit on the form.
+1. Navigate to the Build tab and add a header to the form. 
+1. Add the intro copy to explain what the contact is signing up to receive. 
+1. Select the checkboxes to add the fields you want on the form.
 
-1. Select your preferred Unsubscribe Group by clicking **Settings** and selecting the group from **Recipients**.
-1. From the **Build** tab, drag the **Unsubscribe** module to insert Sender Information and a link to the `{{{unsubscribe}}}` tag.
-1. To manually hyperlink to the `{{{unsubscribe}}}` tag, enter the text you would like to link.
-1. Highlight the text then select the link icon from the top toolbar.
-1. In the URL field enter `{{{unsubscribe}}}`, then click **Save**.
+#### Manage signup forms
 
-*Using the Code Editor:*
+Using the action menu on the Signup Forms page you can edit, duplicate, or delete existing signup forms. 
 
-1. Select your preferred Unsubscribe Group from the **Settings** > **Recipients**.
-1. Enter the following code styling to the HTML window where you would like your unsubscribe content placed:
+![]({{root_url}}/img/action-menu-signup-form.png "Action menu for signup forms")
 
-```
-<a href="{{{unsubscribe}}}">Click here to unsubscribe.</a>
-```
+<call-out>
 
-## Using a Custom Unsubscribe Link
+Because of the iframe technology used to create the signup form, the form dynamically updates on the page or pages where you have the form embedded anytime you edit a form and click **Save & Apply**.
 
-While SendGrid Unsubscribe Groups are a powerful way to manage unsubscribes and email preferences, we realize some senders may have their own subscription management tools. For these senders, Marketing Campaigns supports custom unsubscribe links as well.
+</call-out>
 
-If you would like to use a custom URL for your unsubscribe link, navigate to **Settings** in the left hand sidebar and select the **Recipients** dropdown menu. Under **Unsubscribe Group**, select **Use Custom Link...**
+#### Share Code to make your form accessible
 
-This will expand a new field where you can insert a URL for one of your own pages where recipients can manage their subscription preferences.
+To make your form accessible to new contacts, you can either send them a link hosted by SendGrid or you can embed code on your website that displays your form as an iframe. 
 
-To place your Custom Unsubscribe link into your email, highlight any text within the body of your email and click the small link icon to specify a hyperlink. In the URL field that appears, enter the tag `{{{Unsubscribe}}}`. Since you've specified your Custom Unsubscribe Link in the Settings panel, SendGrid will replace the Unsubscribe Tag with your custom URL.
+*To share the code for your signup form:*
 
-## Add recipients to an Unsubscribe Group
+1. Navigate to the signup form you want to share or embed.
+1. Click the action menu and select **Share Code**.
+1. On the *Integrate Form* modal, copy either the Landing Page or Direct Embed link. 
 
-You can add recipients to an unsubscribe group by uploading a CSV or adding them manually using the UI. To programmatically add recipients to an unsubscribe group, see our [API documentation](https://sendgrid.api-docs.io/v3.0/suppressions-unsubscribe-groups)
+   * The Landing Page link can be pasted anywhere, including in an email or on a social media site.
+   * The Direct Embed code can be pasted to the HTML of your website wherever you’d like the form to display.
 
-*To upload a CSV:*
+You can also find the options to share the signup form in the form editor by clicking **Share Code** in the top-right corner of the editor. 
 
-1. Find the unsubscribe group you want to add recipients to and click the action menu.
+### Edit or Remove Contacts
 
-![]({{root_url}}/img/unsub_action_menu.png "Unsubcribe Group action menu")
+To manage your contact lists more efficiently, you can edit and remove contact lists from the Contacts page. 
 
-2. Select **Upload a CSV**.
-3. Drag the CSV you want to upload into the field, or click **select a CSV file to upload** and locate the file you want to upload from your files.
-4. Click **Upload CSV**.
+*To edit a contact:*
 
-*To manually add recipients to an Unsubscribe Group:*
+1. Navigate to the Contacts page and search for the contact you want to edit.
+1. Click the contact you wish to edit. This takes you to the contact details page.
+1. To edit any of the profile fields, click on the *Edit* icon to the right of the field.
+1. Once you have finished making all of your changes, click **Save**. 
 
-1. Find the group you want to add recipients to and click the action menu.
-1. Select **Manually Add**.
-1. Enter a recipient email address and then click **Save**.
+*To delete a contact from your account:*
 
-## Managing Unsubscribe Groups
+1. Navigate to the Contacts page and search for the contact you want to edit.
+1. To delete a contact from the contact list, you can click the delete icon in the action menu. To delete a contact from the contact details page, click the delete icon at the top-right of the page. 
+1. If you are deleting the contact from a specific list, and not All Contacts, click **Remove Contact**. If you are deleting the contact from the account, select **Permanently delete this contact from my account**. 
 
-From the UI, you can edit Unsubscribe Groups or download a list of recipients that have unsubscribed from your emails. For more information on managing unsubscribes, see the SendGrid [Suppressions Overview]({{root_url}}/ui/sending-email/index-suppressions/#managing-unsubscribes)
+*To remove a contact from a list:*
 
+1. Navigate to the Contacts page and search for the contact you want to edit.
+1. Click the email of the contact to view contact details. 
+1. Click the Associated Lists tab from the contact details page.
+1. Find the list you want to remove the contact from and click the delete icon.
+1. When you see "Are you sure you want to remove this contact?" click **Remove Contact**. 
 
-### Exporting an Unsubscribe Group List
+### Export contacts
 
+To view the contents of a contact list, you can export the list to a CSV and download it to your computer.
 
-*To export an Unsubscribe Group List:*
+*To export contacts:*
 
-1. Navigate to the Unsubscribe Group you want to export.
-1. Click the action menu.
-1. Select **Export**. A CSV file begins downloading.
+1. Navigate to the Contacts page within the Automation Beta experience.
+1. Locate the contact list you want to export and click the action menu.
+1. Select **Export**. The Export page appears with a list of all current and previous exports. 
+1. From here you can find the exported contact list and select the action menu. 
+1. Select the **Download CSV** icon next to the list to download the contact list to your computer. 
 
-### Editing an Unsubscribe Group
+<call-out type="warning">
 
-*To edit an Unsubscribe Group:*
+Exported CSV files are only available for download for 72 hours after the export is initialized. 
 
-1. Navigate to the Unsubscribe Group you want to edit.
-1. Click the action menu.
-1. Select **Edit**.
-From the Edit Group page, you can change the Group Name, Group Description, and display preferences.
+</call-out>
 
-### Deleting an Unsubscribe Group
+### Contact Management APIs
 
-*To delete an Unsubscribe Group:*
-
-1. Navigate to the Unsubscribe Group you want to delete.
-1. Click the action menu.
-1. Select **Edit**. The Edit Group page opens.
-1. Click **Delete Group**.
-1. Confirm that you want to delete the selected group and then click **Delete**.
-
-![]({{root_url}}/img/confirm_unsub_group_delete.png "Confirm Unsubscribe Group Delete")
+You can integrate with the Contact Management APIs to create and update lists, add contacts, manage reserved field data, export contact lists, and pull data about your contacts and lists. Learn more through the documentation for [Automation Contact APIs](https://sendgrid-automation.api-docs.io/v3/getting-started).
 
 ## Additional Resources
 
-- [Suppressions Overview]({{root_url}}/ui/sending-email/index-suppressions/)
-- [Group Unsubscribes]({{root_url}}/ui/sending-email/group-unsubscribes/)
-- [Global Unsubscribes]({{root_url}}/ui/sending-email/global-unsubscribes/)
-
+- [link text]({{root_url}}/ui/sending-email/editor/)
+- [link text]({{root_url}}/ui/sending-email/editor/)
+- [link text]({{root_url}}/ui/sending-email/editor/)
