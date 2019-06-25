@@ -11,6 +11,12 @@ seo:
   override: true
   description:
 ---
+<call-out>
+
+Contact Segmentation is currently only available in the legacy Marketing Campaigns product. Click [here]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/) for more information on the new Marketing Campaigns product.  
+
+</call-out>
+
 
 <iframe src="https://player.vimeo.com/video/229916004" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
