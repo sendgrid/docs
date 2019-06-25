@@ -9,7 +9,7 @@ seo:
   title: Email testing
   keywords: email testing, send test email, email rendering test
   override: true
-  Description: 
+  Description: How to use SendGrid's new email testing feature to see how your email shows up in different inboxes and across different devices and operating systems.
 ---
 
 Email testing offers robust, pre-send testing of your emails, including in-app spam testing, inbox rendering previews, and link validation right within your Marketing Campaigns workflow. It allows you to preview how an email is likely to perform across a wide range of inbox providers, devices and spam filters, before sending.

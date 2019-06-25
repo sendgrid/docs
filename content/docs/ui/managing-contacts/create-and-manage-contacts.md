@@ -11,15 +11,7 @@ seo:
   override: true
   description:
 ---
-## Manage Contacts
-
-Adding contacts to a list that's designated as the entry criteria for an automation will trigger that automation. The Automation beta experience offers several ways to add contacts to lists, including CSV upload, using signup forms, or via the Contact Management APIs. 
-
-<call-out type="warning">
-
-During the beta, contacts you upload to Automation are distinct from your existing Marketing Campaigns contacts. An Automation contact will be treated as new even if they’ve been in your Marketing Campaigns contacts for some time.
-
-</call-out>
+Adding contacts to a list that's designated as the entry criteria for an automation will trigger that automation. The new Marketing Campaigns experience offers several ways to add contacts to lists, including CSV upload, using signup forms, or via the [Contact Mnaement APIs](https://sendgrid-marketing-campaigns-beta.api-docs.io/v1/contacts/). 
 
 ### Add Contacts
 
