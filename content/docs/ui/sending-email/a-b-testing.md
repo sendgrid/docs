@@ -12,7 +12,8 @@ seo:
 ---
 <call-out>
 
-A/B Testing is currently only available in the legacy Marketing Campaigns product and is not yet available within the new Marketing Campaigns experience. For additional information, including when we expect it to be available, click [here](LINK TO FEATURE GAP PAGE!). 
+A/B Testing is currently only available in the legacy Marketing Campaigns product and is not yet available within the new Marketing Campaigns experience. For additional information, including when we expect it to be available, click [here]({{root_url}}/ui/sending-email/coming-soon-to-new-marketing-campaigns/
+). 
 
 </call-out>
 
