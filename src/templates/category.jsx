@@ -1,4 +1,5 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 import _ from 'lodash';
 import Group from '../components/Group';
 import CATEGORIES from '../constants/categories';
@@ -19,7 +20,8 @@ class CategoryTemplate extends React.Component {
   }
 
   renderGroups() {
-    const sortedGroups = CategoryTemplate.sortGroups(this.props.data.docs.group);
+    const { data } = this.props;
+    const sortedGroups = CategoryTemplate.sortGroups(data.docs.group);
 
     return sortedGroups.map((group) => {
       const title = GROUPS[group.fieldValue] ? GROUPS[group.fieldValue].name : group.fieldValue;
@@ -33,7 +35,8 @@ class CategoryTemplate extends React.Component {
   }
 
   render() {
-    const { category } = this.props.pathContext;
+    const { pathContext } = this.props;
+    const { category } = pathContext;
     // If we don't have a "pretty category", make one out of the category context.
     const title = CATEGORIES[category] ? CATEGORIES[category] : category.replace(/-/g, ' ');
 

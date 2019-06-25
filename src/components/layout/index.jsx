@@ -1,9 +1,9 @@
 import React from 'react';
-import NavMain from '../components/NavMain';
-import StatusPage from '../components/StatusPage';
-import Footer from '../components/Footer';
-import withUser from '../components/withUser';
-import '../scss/style-guide.scss';
+import NavMain from '../NavMain';
+import StatusPage from '../StatusPage';
+import Footer from '../Footer';
+import withUser from '../withUser';
+import '../../scss/style-guide.scss';
 
 function MainLayout(props) {
   const {
@@ -20,7 +20,7 @@ function MainLayout(props) {
       <StatusPage />
       <NavMain />
       <div className="layout-content">
-        {children()}
+        {children}
       </div>
       {renderFooter}
     </div>

@@ -1,8 +1,9 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import { Link, graphql } from 'gatsby';
 import SEO from '../components/SEO';
 import './glossary.scss';
 import withSubNav from '../components/NavSub';
+import Layout from '../components/layout';
 
 class glossary extends React.Component {
   constructor(props) {
@@ -11,7 +12,8 @@ class glossary extends React.Component {
   }
 
   alphaEdges() {
-    const { edges } = this.props.data.glossary;
+    const { data } = this.props;
+    const { edges } = data.glossary;
     const groupedEdges = {};
 
     edges.forEach((edge) => {
@@ -28,26 +30,29 @@ class glossary extends React.Component {
   }
 
   render() {
+    const { location } = this.props;
     return (
-      <div className="container">
-        <SEO postNode={this.props} title="Glossary" description="SendGrid documentation glossary" />
-        <h1>Glossary</h1>
-        <div className="row">
-          {Object.keys(this.glossary).map(key => (
-            <div key={key} className="col-md-6 glossary-alpha-section">
-              <h3>{key}</h3>
-              {this.glossary[key].map(edge => (
-                <Link
-                  key={edge.node.fields.title}
-                  to={edge.node.fields.permalink}
-                >
-                  {edge.node.fields.title}
-                </Link>
-              ))}
-            </div>
-          ))}
+      <Layout location={location}>
+        <div className="container">
+          <SEO postNode={this.props} title="Glossary" description="SendGrid documentation glossary" />
+          <h1>Glossary</h1>
+          <div className="row">
+            {Object.keys(this.glossary).map(key => (
+              <div key={key} className="col-md-6 glossary-alpha-section">
+                <h3>{key}</h3>
+                {this.glossary[key].map(edge => (
+                  <Link
+                    key={edge.node.fields.title}
+                    to={edge.node.fields.permalink}
+                  >
+                    {edge.node.fields.title}
+                  </Link>
+                ))}
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      </Layout>
     );
   }
 }
