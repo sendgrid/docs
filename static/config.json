@@ -2556,7 +2556,7 @@
         "HostName": "sendgrid.com",
         "HttpRedirectCode": "301",
         "Protocol": "https",
-        "ReplaceKeyPrefixWith": "ui/managing-contacts/adding-contacts/"
+        "ReplaceKeyPrefixWith": "ui/managing-contacts/create-and-manage-contacts/"
       }
     },
     {
@@ -6956,7 +6956,7 @@
         "HostName": "sendgrid.com",
         "HttpRedirectCode": "301",
         "Protocol": "https",
-        "ReplaceKeyPrefixWith": "ui/managing-contacts/adding-contacts/"
+        "ReplaceKeyPrefixWith": "ui/managing-contacts/create-and-manage-contacts/"
       }
     },
     {
@@ -8397,7 +8397,7 @@
         "HostName": "sendgrid.com",
         "HttpRedirectCode": "301",
         "Protocol": "https",
-        "ReplaceKeyPrefixWith": "ui/managing-contacts/adding-contacts/"
+        "ReplaceKeyPrefixWith": "ui/managing-contacts/create-and-manage-contacts/"
       }
     },
     {
@@ -8914,7 +8914,7 @@
         "HostName": "sendgrid.com",
         "HttpRedirectCode": "301",
         "Protocol": "https",
-        "ReplaceKeyPrefixWith": "ui/managing-contacts/adding-contacts/"
+        "ReplaceKeyPrefixWith": "ui/managing-contacts/create-and-manage-contacts/"
       }
     },
     {
@@ -10102,7 +10102,7 @@
         "HostName": "sendgrid.com",
         "HttpRedirectCode": "301",
         "Protocol": "https",
-        "ReplaceKeyPrefixWith": "ui/managing-contacts/adding-contacts/"
+        "ReplaceKeyPrefixWith": "ui/managing-contacts/create-and-manage-contacts/"
       }
     },
     {
@@ -10894,7 +10894,7 @@
         "HostName": "sendgrid.com",
         "HttpRedirectCode": "301",
         "Protocol": "https",
-        "ReplaceKeyPrefixWith": "ui/managing-contacts/adding-contacts/"
+        "ReplaceKeyPrefixWith": "ui/managing-contacts/create-and-manage-contacts/"
       }
     },
     {

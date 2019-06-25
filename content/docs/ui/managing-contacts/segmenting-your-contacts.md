@@ -147,6 +147,6 @@ The download link for your CSV export will be valid for 24 hours.
 
  ##	Additional Resources
 
-- [Contacts]({{root_url}}/ui/managing-contacts/adding-contacts/)
+- [Contacts]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/)
 - [Custom Fields]({{root_url}}/ui/managing-contacts/custom-fields/)
 - [Tips on Segmenting Your Active Subscribers](https://sendgrid.com/blog/tips-on-segmenting-your-active-subscribers/)

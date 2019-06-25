@@ -18,7 +18,7 @@ Before sending your first campaign, you need to do the following:
 
 - [Create an Account](https://sendgrid.com/pricing/?mc=SendGrid%20Documentation)
 - [Add a Sender]({{root_url}}/ui/sending-email/senders/)
-- [Upload Contacts]({{root_url}}/ui/managing-contacts/adding-contacts/)
+- [Upload Contacts]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/)
 - [Add an Unsubscribe Group]({{root_url}}/ui/sending-email/create-and-manage-unsubscribe-groups/)
 - [Segment Your Contact List]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/) (Optional)
 
@@ -66,7 +66,7 @@ For more information about customizing your campaign, see [Using the Design Edit
 
 <call-out>
 
-Campaigns can be sent to either a list or a segment. You can manage your lists and segments within [Contacts]({{root_url}}/ui/managing-contacts/adding-contacts/).
+Campaigns can be sent to either a list or a segment. You can manage your lists and segments within [Contacts]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/).
 
 </call-out>
 
