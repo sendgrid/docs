@@ -11,6 +11,11 @@ seo:
   override: true
   Description: How to use SendGrid's new email testing feature to see how your email shows up in different inboxes and across different devices and operating systems.
 ---
+<call-out>
+
+Email Testing is available as part of the Advanced Marketing Campaigns package. To access this feature, please upgrade to Advanced Marketing Campaigns from [Your Products](https://app.sendgrid.com/account/billing).
+
+</call-out>
 
 Email testing offers robust, pre-send testing of your emails, including in-app spam testing, inbox rendering previews, and link validation right within your Marketing Campaigns workflow. It allows you to preview how an email is likely to perform across a wide range of inbox providers, devices and spam filters, before sending.
 
