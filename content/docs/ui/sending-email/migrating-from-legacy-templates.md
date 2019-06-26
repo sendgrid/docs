@@ -36,4 +36,4 @@ The original template you copy won't be modified and remains active in any API o
 
 - [How to send an email with dynamic transactional templates]({{root_url}}/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/)
 - [Using handlebars]({{root_url}}/ui/sending-email/using-handlebars/)
-- [Mail send with dynamic transactional templates](https://dynamic-templates.api-docs.io/3.0)
+- [Mail send with dynamic transactional templates](https://sendgrid.api-docs.io/v3.0/transactional-templates/)
