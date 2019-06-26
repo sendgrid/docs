@@ -26,7 +26,16 @@ You can update your card information, retry a failed payment, and export past in
 
  ###     Subusers
 
-Each subuser may store up to 2,000 contacts for free before we charge the same rate of $10.00 per 10,000 contacts each month. Any additional charges due for storing contacts on a subuser account will appear in the parent account's monthly invoice.
+Subusers under a free Marketing Campaigns plan will only be able to upload 2,000 contacts. Subusers under a paid Marketing Campaigns plan will be able to continue uploading contacts and the parent account will pay for any overages this subuser may cause by going over the overall limit on the paid plan.
+
+
+
+<call-out type="warning">
+
+If you are still on the **legacy Marketing Campaigns plan**, each subuser may store up to 2,000 contacts for free before we charge the same rate of $10.00 per 10,000 contacts each month. Any additional charges due for storing contacts on a subuser account will appear in the parent account's monthly invoice.
+
+</call-out>
+
 
 <call-out>
 
@@ -34,15 +43,15 @@ We bill the parent account for each unique contact, regardless of how many lists
 
 </call-out>
 
-##     Billing frozen and billing warned
+##    Account Warning States
 
 If your account payments aren’t up-to-date you may see one of the following warning states in displayed in your account. 
 
-**Billing warned - “You have unpaid invoices. Please update your payment details or retry your payment.”**
+**Billing warned** - “You have unpaid invoices. Please update your payment details or retry your payment.”
 
 This is a warning that your service may be interrupted unless you settle any outstanding balance on your account. This warning may occur if the card on file for your account gets declined when we attempt to process your payment on the first of the month.
 
-To update your account, please update your credit card on file by logging into the SendGrid UI and going to the Plan & Billing tab on your [Account Details page]( https://app.sendgrid.com/account/billing). Update your card information and then click **Save**. Once you update the card on file, the payment processes automatically, and your account is unfrozen.
+To update your account, please update your credit card on file by logging into the SendGrid app and going to the Plan & Billing tab on your [Account Details page]( https://app.sendgrid.com/account/billing). Update your card information and then click **Save**. Once you update the card on file, the payment processes automatically, and your account is unfrozen.
 
 **Billing Frozen**
 
@@ -51,57 +60,149 @@ If you find your account suddenly unable to send mail within the first week of t
 To reactivate your account, please update your credit card on file by logging into the SendGrid UI and going to the Plan & Billing tab on your [Account Details page]( https://app.sendgrid.com/account/billing). Update your card information and then click **Save**. Once you update the card on file, the payment processes automatically, and your account is unfrozen.
 
 
-## Packages (Plans?)
+## Plans
 
-### Marketing
+### Marketing Campaigns
 
-This [package(plan?)](https://sendgrid.com/pricing/) will charge for any Single Sends, Automations, and both your contact storage and emails you send through Marketing. Sending emails with this package will not deduct from your Email API plan.
+Each [Marketing Campaigns](https://sendgrid.com/pricing/) package will cover both contact storage and email sends that you use for either Single Sends or Automation within Marketing Campaigns. Emails you send via [Email API](#email-api) will not be deducted from your Marketing Campaigns plan.
 
-*Free*:
-List features included (reference new pricing page)
-Limits
-6,000 emails/month
-Emails sent via Single Sends or Automation count towards your allotment. 
-You’ll be alerted when you’ve reached your limit each month. 
-Any Single Sends you attempt to send that exceed your 6,000 limit will send partially up to that limit. For example,  if you have 400 emails left and attempt to send a Single Send to an audience of 1,000, 600 of the emails will be dropped. 
-Similarly, Automations will cease sending once you’ve hit 6,000 emails via Marketing Campaigns in a month. If a contact meets the entry criteria of an Automation after you’ve reached your send limit, they will not receive any emails, and will not be “caught up” once you upgrade your plan or a new month allotment increases. 
-2,000 contacts/month
-You’ll be alerted when you’ve reached your limit each month
-Contacts you attempt to upload via CSV or that are added via Signup Forms or the Contacts API will be dropped if you exceed 2,000 in a month. 
-You will be receive a notification via emailalerted via your notification email when contacts are not successfully added via CSV upload or Contacts API.
-You will not be alerted when new signups submit via your Signup Form but are not added due to having reached your contact limits. These signups are not recoverable. 
-When you upgrade, signups from Signup Forms will resume adding to your contacts. 
+**Free**
+
+*Features include:*
+
+* Automation
+* Single Sends for one-time campaigns
+* Ticket Support
+* Email Testing
+* 1 Signup Form
+
+*Limits:*
+
+* 6,000 emails/month - Emails sent via Single Sends or Automation count towards your allotment. Any Single Sends you attempt to send that exceed your 6,000 limit will send partially up to that limit. For example,  if you have 400 emails left and attempt to send a Single Send to an audience of 1,000, 600 of the emails will be dropped. Similarly, Automations will cease sending once you’ve hit 6,000 emails via Marketing Campaigns in a month. If a contact meets the entry criteria of an Automation after you’ve reached your send limit, they will not receive any emails, and will not be “caught up” once you upgrade your plan or a new month allotment increases. 
+* 2,000 contacts - Contacts you attempt to upload via CSV or that are added via Signup Forms or the Contacts API will be dropped if you exceed 2,000 total contacts. 
 
 *What to do if you’ve reached your limit*:
 
-To keep your Automations and Signup Forms active, upgrade to Basic or Advanced. Once you upgrade, your account will never be blocked due to limits, you’ll simply pay overages for usage that exceeds your Basic or Advanced tier allotment.
+You will be alerted when you have reached your limit each month. To keep your Automations and Signup Forms active, upgrade to Basic or Advanced. Once you upgrade, your account will never be blocked due to limits, you’ll simply pay overages for usage that exceeds your Basic or Advanced tier allotment.
 
-*Basic*:
-Features included (from pricing page)
-Overage rates (from pricing page)
-*Advanced*:
-Features included (from pricing page)
-Overage rates (from pricing page)
+<call-out type="warning">
 
-If you exceed your plan allotment of contacts or overages you will be charged a small amount per email sent and per contact stored, above the limits of your current Marketing package. Any overage charges get added to the invoice of the month  _after_ the over-limit sending and contact storage occurred.
+If you’re on the Free package and hit your contact allotment limit, any live Signup Forms will no longer add new contacts to your account. You will **not** be be able to recover these signups. When you upgrade, signups from Signup Forms will resume adding to your contacts.
+
+</call-out>
+
+**Basic**
+
+*Features include:*
+
+* Single Sends for one-time campaigns
+* Ticket, chat, and phone Support
+* Email Testing
+* 5 Signup Forms
+* 1 Teammate
+* Access to Expert Services
+
+*Limits:*
+
+* 5,000 - 15,000 emails/month depending on the plan you purchase. Emails sent via Single Sends count towards your allotment. 
+* Up to 100,000 contacts.
+
+
+**Advanced**
+
+*Features include:*
+
+* Automation 
+* Single Sends for one-time campaigns
+* Ticket, chat, and phone Support
+* Email Testing
+* 15 Signup Forms
+* 1,000 Teammates
+* Access to Expert Services
+* Subuser Management
+* Dedicated IP Included
+
+*Limits:*
+
+* 200,000+ emails/month depending on the plan you purchase. Emails sent via Single Sends or Automation count towards your allotment.
+* 1 million+ contacts
+
+
+
+If you exceed your plan allotment of contacts or overages you will be charged a [small amount]({{root_url}}#limits-and-overage-rates) per email sent and per contact stored, above the limits of your current Marketing package. Any overage charges get added to the invoice of the month  _after_ the over-limit sending and contact storage occurred.
+
+
+
+
+
 
 ### Email API
 
-This [package(plan?)](https://sendgrid.com/pricing/) includes charges for any emails you send over the Twilio SendGrid Email API.  Sending emails through the API with this package will not deduct from your Marketing plan.
+This [plan](https://sendgrid.com/pricing/) includes charges for any emails you send over the Twilio SendGrid Email API.  Sending emails through the API with this package will not deduct from your Marketing Campaigns plan.
 
-*Free*:
-*Essentials*:
-*Pro*:
-*Premier*: 
+ **Free**
+
+*Features include:*
+
+* APIs, SMTP Relay, and Webhooks
+* Libraries and documenttion
+* Delivery Optimiztion Tools
+* Transactional Template Editor
+* Ticket Support
+
+*Limits:*
+
+* 40,000 emails/day for 30 days
+* 100 emails/day indefinitely after that
+
+
+**Essentials**
+
+*Features include:* 
+
+* APIs, SMTP Relay, and Webhooks
+* Libraries and documenttion
+* Delivery Optimiztion Tools
+* Transactional Template Editor
+* Ticket, chat, and phone Support
+
+*Limits:*
+
+* Up to 100,000+ emails/month depending on the package you purchase. 
+
+**Pro**
+
+*Features include:*
+
+* APIs, SMTP Relay, and Webhooks
+* Libraries and documenttion
+* Delivery Optimiztion Tools
+* Transactional Template Editor
+* Ticket, chat, and phone Support
+* Dedicated IP Included
+* Subuser Management
+
+*Limits:*
+
+* Up to 1.5 million+ emails/month depending on the package you purchase.
+
+**Premier** 
+
+*Features include:*
+
+* APIs, SMTP Relay, and Webhooks
+* Libraries and documenttion
+* Delivery Optimiztion Tools
+* Transactional Template Editor
+* Ticket, chat, and phone Support
+* Dedicated IP Included
+* Subuser Management
 
 ## Limits and Overage Rates
 
 *What to do if you’ve reached your limit*:
 
-You will be charged a small amount per-email for each email that you send beyond the limit of your current package. Any overage charges get added to the invoice of the month _after_ the over-limit sending occurred.
-##     Overage Rates
-
-Depending on your package, you will be charged a small amount per-email for each email that you send beyond the credit limit of your current package. Any overage charges get added to the invoice of the month _after_ the over-limit sending occurred.
+You will be charged a small amount per-email for each email that you send beyond the limit of your current plan. Any overage charges get added to the invoice of the month _after_ the over-limit sending occurred.
 
 <call-out>
 
@@ -109,12 +210,14 @@ Upgrading your account does NOT absorb overage charges already incurred, so make
 
 </call-out>
 
+### Marketing Campaigns Overage Costs
+
 <table>
  <tr>
    <th colspan="3">Marketing Campaigns Overage Costs</th>
  </tr>
  <tr>
-   <td colspan="3">The exact amount you pay will vary month-to-month based on your sending habits and contact list size. <br>If you go over your plan limits, here’s a breakdown of the overage costs you’ll incur:</td>
+   <td colspan="3">The exact amount you pay will vary month-to-month if you exceed your plan allotment of email sends or contact storage.   <br>If you go over your plan limits, here’s a breakdown of the overage costs you’ll incur:</td>
  </tr>
  <tr>
    <td>Plan Information</td>
@@ -179,7 +282,9 @@ Upgrading your account does NOT absorb overage charges already incurred, so make
  <tr>
    <td colspan="3">*Taxes may apply.</td>
  </tr>
-</table> 
+</table>
+
+### API Plans Overage Costs
 
 <table>
  <tr>
@@ -270,46 +375,3 @@ When you cancel an account, it changes to a [free](https://sendgrid.com/free?mc=
 
 - [SendGrid Pricing](https://sendgrid.com/pricing/)
 - [Reading your invoice]({{root_url}}/ui/account-and-settings/reading-your-invoice/)
-
-
-
-
-
-
-Ideas to incorporate package info, overages, and free limits into this doc. Focused on TNE packages, but would apply to Email API and Legacy MC (for contact storage) as well. 
-
-## Packages, Overage Rates, and Limits
-
-### Marketing Campaigns
-Free
-List features included (reference new pricing page)
-Limits
-6,000 emails/month
-Emails sent via Single Sends or Automation count towards your allotment. 
-You’ll be alerted when you’ve reached your limit each month. 
-Any Single Sends you attempt to send that exceed your 6,000 limit will send partially up to that limit. Ie, if you have 400 emails left and attempt to send a Single Send to an audience of 1,000, 600 of the emails will be dropped. 
-Similarly, Automations will cease sending once you’ve hit 6,000 emails via Marketing Campaigns in a month. If a contact qualifies into an Automation after you’ve reached your send limit, they will not receive any emails, and will not be “caught up” once you upgrade your plan or a new month allotment increases. 
-2,000 contacts/month
-You’ll be alerted when you’ve reached your limit each month
-Contacts you attempt to upload via CSV or that are added via Signup Forms or the Contacts API will be dropped if you exceed 2,000 in a month. 
-You will be alerted when contacts are not successfully added via CSV upload or Contacts API
-You will not be alerted when new signups submit via your Signup Form but are not added due to having reached your contact limits. These signups are not recoverable. 
-When you upgrade, signups from Signup Forms will resume adding to your contacts. 
-What to do if you’ve reached your limit
-To keep your Automations and Signup Forms active, upgrade to Basic or Advanced. 
-Once you upgrade, your account will never be blocked due to limits, you’ll simply pay overages for usage that exceeds your Basic or Advanced tier allotment.
-Basic
-Features included (from pricing page)
-Overage rates (from pricing page)
-Advanced
-Features included (from pricing page)
-Overage rates (from pricing page)
-
-
-
-### Email API
-Free
-Essentials
-Pro
-Premier 
-
