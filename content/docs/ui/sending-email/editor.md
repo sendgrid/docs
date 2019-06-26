@@ -62,7 +62,7 @@ As you edit, parts of your code highlights in various colors according to the ty
 
 1. From the left-hand navigation, select **Marketing**, and then click **Automations** .
 1. Click **Create an Automation**.
-1.Under Custom Automation click **Select**.
+1. Under Custom Automation click **Select**.
 
 <call-out>
 
@@ -209,6 +209,10 @@ Assigning categories to a campaign allows you to track emails based on your own 
 Currently, only 10 categories can be added to each campaign.
 
 </call-out>
+
+### Email Testing
+
+Email testing offers robust, pre-send testing of your emails, including in-app spam testing, inbox rendering previews, and link validation right within your Marketing Campaigns workflow. It allows you to preview how an email is likely to perform across a wide range of inbox providers, devices and spam filters, before sending. For more information, [click here]({{root_url}}/ui/sending-email/email-testing/).
 
 ## The Design Editor
 
@@ -777,6 +781,10 @@ Assigning categories to a campaign allows you to track emails based on your own 
 1. Navigate to the *Settings* tab and click **Single Send Settings**  or **Template Settings** to expand the menu.
 1. Find the *Categories* field.
 1. Enter the name of a new category or select a previously used category from the drop-down menu.
+
+### Email Testing
+
+Email testing offers robust, pre-send testing of your emails, including in-app spam testing, inbox rendering previews, and link validation right within your Marketing Campaigns workflow. It allows you to preview how an email is likely to perform across a wide range of inbox providers, devices and spam filters, before sending. For more information, [click here]({{root_url}}/ui/sending-email/email-testing/).
 
 ## Additional Resources
 
