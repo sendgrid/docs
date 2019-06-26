@@ -11,6 +11,13 @@ seo:
   override: true
   description:
 ---
+
+<call-out>
+
+This page is describing the functionality of the new Marketing Campaigns experience, if you're using legacy Marketing Campaigns, your workflow and screens may be a little different. For more information on the new Marketing Campaigns experience click [here](https://sendgrid.com/pricing).
+
+</call-out>
+
 Adding contacts to a list that's designated as the entry criteria for an automation will trigger that automation. The new Marketing Campaigns experience offers several ways to add contacts to lists, including CSV upload, using signup forms, or via the [Contact Mnaement APIs](https://sendgrid-marketing-campaigns-beta.api-docs.io/v1/contacts/). 
 
 ### Add Contacts

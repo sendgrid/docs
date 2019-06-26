@@ -10,6 +10,11 @@ seo:
 navigation:
   show: true
 ---
+<call-out>
+
+This page is describing the functionality of the new Marketing Campaigns experience, if you're using legacy Marketing Campaigns, your workflow and screens may be a little different. For more information on the new Marketing Campaigns experience click [here](https://sendgrid.com/pricing).
+
+</call-out>
 
 Adding Unsubscribe Groups to your emails makes it easy to honor your recipients' email preferences and protect your sender reputation by complying with anti-spam legislation.
 
