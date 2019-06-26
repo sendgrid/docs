@@ -12,6 +12,13 @@ seo:
   description: Custom fields help you segment your lists dynamically based on your user information.
 ---
 
+<call-out>
+
+Custom Fields are currently only available in the legacy Marketing Campaigns product and is not yet available within the new Marketing Campaigns experience. For additional information, including when we expect it to be available, click [here]({{root_url}}/ui/sending-email/coming-soon-to-new-marketing-campaigns/
+). 
+
+</call-out>
+
 <iframe src="https://player.vimeo.com/video/120709155" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 Custom fields allow you to add extra information about a contact to your contact database when you upload a CSV. Custom fields allow you to create custom segments from your individual contacts or from your contact database that dynamically update your content with the values for the individual contact receiving the email. Your custom fields are completely customizable to the use cases and user information that you need.
