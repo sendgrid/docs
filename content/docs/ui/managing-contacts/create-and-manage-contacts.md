@@ -94,7 +94,7 @@ You can also find the options to share the signup form in the form editor by cli
 
 Managing contacts is an integral part of your marketing campaigns lifecycle. You can create lists for contacts, as well as view and edit each individual contact within your contact database.
 
-## 	Viewing a contact
+### 	Viewing a contact
 
 To view a specific contact profile, find the contact in one of your lists by searching your contact database. Then, click the contact’s email address. You will then be able to view the email, engagement data, profile information, custom fields, and list associations for this contact.
 
@@ -106,7 +106,7 @@ Searches are case agnostic but must be done using a whole email address that inc
 
 To view any custom fields you have assigned to this contact, or to view any lists that you have added this contact to, you may flip through the tabs beneath the Contact Details. You may either view all custom fields at once, or you can filter them by the following types: “Text”, “Date”, and “Number”.
 
-## 	Editing a contact
+### 	Editing a contact
 
 When you are viewing a contact, click any of the Edit buttons in the Contact Fields tab to edit the contact's information within that section. This includes the SendGrid provided reserved fields, except email, any custom fields you’ve added for this contact, and any lists the contact is associated with.
 
@@ -116,7 +116,7 @@ When you are viewing a contact, click any of the Edit buttons in the Contact Fie
 2. Enter or select the list you would like to use.
 3. Click **Add**.
 
-## 	Managing your list
+### 	Managing your list
 
 Sending to a well-managed address list can drastically improve your delivery. We have put together some simple steps and guidelines that will improve any senders list.
 
@@ -191,17 +191,11 @@ Use this to permanently delete your recipients from all of your contact lists an
 
 *To delete all of your contacts at once:*
 
- 1. Navigate to your [Contacts page](https://sendgrid.com/marketing_campaigns/contacts) and hover over the Action Menu next to All Contacts.
+ 1. Navigate to your Contacts page and hover over the Action Menu next to All Contacts.
  1. Click the trash can icon.
- 1. Select the check box to confirm that you want to delete all contacts and then click **Delete**.
+ 1. Select the checkbox to confirm that you want to delete all contacts and then click **Delete**.
 
- ##	Additional Resources
-- [Segmentation]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/)
-- [Unsubscribe Groups]({{root_url}}/ui/sending-email/index-suppressions/)
-- [Custom Fields]({{root_url}}/ui/managing-contacts/custom-fields/)
-
-
-### Edit or Remove Contacts
+### Edit or Remove Contacts from a list
 
 To manage your contact lists more efficiently, you can edit and remove contact lists from the Contacts page. 
 
