@@ -90,7 +90,7 @@ Except for first_name, last_name, and email, these fields are auto-populated by 
 1. Navigate to **Marketing** and select **Custom Fields**.
 1. Locate the field you wish to remove.
 1. Hover over the action menu to the right of the field name entry.
-1. Select the **Delete Icon**.
+1. Select **Delete**.
 1. Click **Delete Field**.
 
 <call-out type="warning">
