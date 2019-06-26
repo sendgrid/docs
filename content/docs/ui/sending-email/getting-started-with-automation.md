@@ -26,10 +26,7 @@ With Automation, you could build email campaigns to:
 * Engage contacts who’ve downloaded an asset from you with follow-up content.
 * Promote an upcoming event to a list of invitees with a series of reasons to attend.
 
-
-
-
-## Getting Started
+## Getting Started with Automation
 
 If you haven’t done so already, you’ll need to complete the following before building your first automation:
 
@@ -48,7 +45,7 @@ Once you've completed the prerequisites, you’re ready to start building your f
 1. Navigate to **Automations** and then click **Create an Automation**.
 1. Under Custom, click **Select**.
 1. Give the series a name. This is for your reference and will not be visible to your contacts.
-1. Select the entry criteria. Today, your entry criteria will be the first time a contact is added to a list. You can choose an existing list, or you can create a new one here.
+1. Select the entry criteria. Today, your entry criteria will be the first time a [contact is added to a list]({{root_url}}/ui/manage-contacts/create-and-manage-contacts/#adding-contacts). You can choose an existing list, or you can create a new one here.
 
 <call-out>
 
@@ -60,22 +57,20 @@ Contacts will only receive your automation if you add them to the list you selec
 
 <call-out>
 
-If you select “no longer meet entry criteria”, before each email in your series sends, Automation will check to make sure each recipient is still on the entry criteria list. If they aren’t, they won’t get the email. For more information on deleting contacts or removing them from lists, see [link text]({{root_url}}/#edit-or-remove-contacts).
+If you select “no longer meet entry criteria”, before each email in your series sends, Automation will check to make sure each recipient is still on the entry criteria list. If they aren’t, they won’t get the email. For more information on deleting contacts or removing them from lists, see [link text]({{root_url}}ui/manage-contacts/create-and-edit-contacts/#edit-or-remove-contacts-from-a-list).
 
 </call-out>
 
 6. Select an [Unsubscribe Group]({{root_url}}/ui/sending-email/create-and-manage-unsubscribe-groups/#create-an-unsubscribe-group). This Unsubscribe Group will apply to all emails in your Automation.
-7. Add a [category]({{root_url}}/glossary/categories/) to the automation (optional). Categories are useful for comparing performance across different types of email you send.
+7. Add a [category]({{root_url}}/glossary/categories/) to the automation (optional). Categories are useful for [comparing performance]({{root_url}}/ui/analytics-and-reporting/category-comparison/) across different types of email you send.
 8. Select the send time for the first email. You can choose to send the first email instantly, or you can set a delay of days or hours from the time meet the entry criteria.
 9. Build your email(s) by clicking **Add Email Content**.
-10. Choose a template, then use your preferred editor to craft your content..
+10. Choose a template, then use your preferred [editor]({{root_url}}/ui/sending-email/editor/) to craft your content.
+11. If you did not do so within the editor, you can add a subject line and select a sender from the Edit Automation page.
+12. To add more emails to this automated series, click **Add an Email**.
+13. Choose how long to wait before sending the next email. This time will be relative to the preceding email.
 
-
-12. If you did not do so within the editor, you can add a subject line and select a sender from the Edit Automation page.
-13. To add more emails to this automated series, click **Add an Email**.
-14. Choose how long to wait before sending the next email. This time will be relative to the preceding email.
-
-16. Once you have created all of your emails for the automation, click **Set Live**.
+14. Once you have created all of your emails for the automation, click **Set Live**.
 
 ### Duplicate an Automation
 
@@ -99,7 +94,7 @@ The pre-built Welcome Series automation provides a jumping off point to inspire 
 1. Review the entry criteria to decide if you’d like to update it. The default entry criteria is “The first time a contact is added to All Contacts”.
 1. Review the exit criteria to decide if you’d like to update it.
 1. Select an [Unsubscribe Group]({{root_url}}/ui/sending-email/create-and-manage-unsubscribe-groups/#create-an-unsubscribe-group). This Unsubscribe Group will apply to all emails in your Automation.
-1. Add a [category]({{root_url}}/glossary/categories/) to the automation (optional). Categories are useful for comparing performance across different types of email you send.
+1. Add a [category]({{root_url}}/glossary/categories/) to the automation (optional). Categories are useful for [comparing performance]({{root_url}}/ui/analytics-and-reporting/category-comparison/)  across different types of email you send.
 1. The pre-built Welcome Series has three placeholder emails by default. You’ll need to edit the subject line and content of each email. You may decide to remove or add emails to the pre-built. 
 1. If you did not do so within the editor, you can add a subject line and select a sender from the Edit Automation page.
 1. To add more emails to this automated series, click **Add an Email**.
@@ -115,12 +110,16 @@ If you keep the entry criteria as "All Contacts" it's important to remember that
 ## Manage Automations
 
 ### Edit an Automation
+
 You can edit the content, subject line, and sender for any emails in your automation.
-Navigate to **Automations** and select the series you want to edit.
-Click **Edit** on each email you’d like to modify. 
-Make your changes in the editor, then click **Save**. 
-Click the arrow in the upper left-hand corner. 
-Below the email you’ve edited, you’ll see an alert that changes have not yet been applied to the live automation. When you’re ready to apply them, click **Save and Apply**.  
+
+*To edit an automation:*
+
+1. Navigate to **Automations** and select the series you want to edit.
+1. Click **Edit** on each email you’d like to modify. 
+1. Make your changes in the editor, then click **Save**. 
+1. Click the arrow in the upper left-hand corner. 
+1. Below the email you’ve edited, you’ll see an alert that changes have not yet been applied to the live automation. When you’re ready to apply them, click **Save and Apply**.  
 
 ### Disable an Automation
 
