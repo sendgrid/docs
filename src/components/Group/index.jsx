@@ -1,10 +1,10 @@
-import { Link } from 'gatsby';
+import Link from 'gatsby-link';
 import React from 'react';
 
-function Group({ edges }) {
+function Group(props) {
   return (
     <div className="group-links">
-      {edges.map((doc) => {
+      {props.edges.map((doc) => {
         const {
           permalink,
           title,
@@ -12,18 +12,11 @@ function Group({ edges }) {
 
         const docIsVisible = !!doc.node.frontmatter.navigation.show;
 
-        return docIsVisible
-          ? (
-            <Link
-              key={permalink}
-              to={permalink}
-              dangerouslySetInnerHTML={{ __html: title }}
-            />
-          )
-          : null;
+        return docIsVisible ? <Link key={permalink} to={permalink} dangerouslySetInnerHTML={{ __html: title }} /> : null;
       })}
     </div>
   );
 }
 
 export default Group;
+

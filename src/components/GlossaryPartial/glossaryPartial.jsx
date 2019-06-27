@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'gatsby';
+import Link from 'gatsby-link';
 import LINKS from '../../constants/pageLinks';
 import './GlossaryPartial.scss';
 
@@ -9,12 +9,11 @@ class GlossaryPartial extends Component {
   }
 
   render() {
-    const { data } = this.props;
     const {
       HEADER,
       ANCHORS,
       IMAGE,
-    } = data;
+    } = this.props.data;
 
     return (
       <div className="home-glossary">

@@ -1,5 +1,4 @@
 import React from 'react';
-import { graphql } from 'gatsby';
 import _ from 'lodash';
 import SEO from '../components/SEO';
 import AsideMenu from '../components/AsideMenu';
@@ -7,12 +6,10 @@ import ReleaseKey from '../components/ReleaseNotes/ReleaseKey';
 import ReleaseNotePost from '../components/ReleaseNotes/ReleaseNotePost';
 import withSubNav from '../components/NavSub';
 import './release-notes.scss';
-import Layout from '../components/layout';
 
 class ReleaseNotes extends React.Component {
   getAsideLinks() {
-    const { data } = this.props;
-    const { edges } = data.releaseNotes;
+    const { edges } = this.props.data.releaseNotes;
     const overview = {
       tagName: 'h2',
       textNode: 'Overview',
@@ -31,48 +28,35 @@ class ReleaseNotes extends React.Component {
   }
 
   render() {
-    const { data, location } = this.props;
-    const { edges } = data.releaseNotes;
+    const { edges } = this.props.data.releaseNotes;
     const asideLinks = this.getAsideLinks();
+
     return (
-      <Layout location={location} subNav={true}>
-        <div className="container-lg">
-          <SEO postNode={this.props} title="Release Notes" description="SendGrid API and Marketing Campaigns Release Notes" />
-          <div className="row">
-            <div className="col-md-3">
-              <AsideMenu asideLinks={asideLinks} pageType="release-notes" />
+      <div className="container-lg">
+        <SEO postNode={this.props} title="Release Notes" description="SendGrid API and Marketing Campaigns Release Notes" />
+        <div className="row">
+          <div className="col-md-3">
+            <AsideMenu asideLinks={asideLinks} pageType="release-notes" />
+          </div>
+          <div className="col-md-9">
+            <h1>Release Notes</h1>
+            <div className="release-notes-overview m-bottom-6">
+              <h2 className="hidden">
+                <a href="#overview" className="anchor" data-slug="overview">Overview</a>
+              </h2>
+              <p className="is-size-h3">If you’re looking for SendGrid’s operational status, see our <a href="http://status.sendgrid.com/">Status Page</a>.</p>
+              <p className="is-size-h3">Some categories featured in our release notes include:</p>
             </div>
-            <div className="col-md-9">
-              <h1>Release Notes</h1>
-              <div className="release-notes-overview m-bottom-6">
-                <h2 className="hidden">
-                  <a href="#overview" className="anchor" data-slug="overview">Overview</a>
-                </h2>
-                <p className="is-size-h3">
-                  If you’re looking for SendGrid’s operational status, see our
-                  {' '}
-                  <a href="http://status.sendgrid.com/">Status Page</a>
-                  .
-                </p>
-                <p className="is-size-h3">Some categories featured in our release notes include:</p>
-              </div>
-              <ReleaseKey />
-              {edges.map(edge => (
-                <ReleaseNotePost
-                  key={edge.node.frontmatter.date}
-                  node={edge.node}
-                />
-              ))}
-            </div>
+            <ReleaseKey />
+            {edges.map(edge => <ReleaseNotePost key={edge.node.frontmatter.date} node={edge.node} />)}
           </div>
         </div>
-      </Layout>
-
+      </div>
     );
   }
 }
 
-export default ReleaseNotes;
+export default withSubNav()(ReleaseNotes);
 
 export const pageQuery = graphql`
   query releaseNote {

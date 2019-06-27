@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'gatsby';
+import Link from 'gatsby-link';
 import LINKS from '../../constants/pageLinks';
 import { AuthCtx } from '../withUser';
 import './NavMain.scss';
@@ -34,12 +34,11 @@ class NavMain extends Component {
       <div className="nav-wrap">
 
         <nav className="nav-main">
-          <Link className="nav-main__logo" onClick={this.closeMenu} to="/">
-            <span className="nav-main__help-center">Knowledge Center</span>
+          <Link className="nav-main__logo" onClick={this.closeMenu} to="/" >
+            <span className="nav-main__help-center" >Knowledge Center</span>
           </Link>
 
           <button
-            type="button"
             className={`nav-main__toggle js-menu-toggle ${menuState}`}
             onClick={this.toggleMenu}
           >
@@ -47,7 +46,7 @@ class NavMain extends Component {
             <span className="nav-main__menu__closer" />
           </button>
 
-          <div className={`nav-main__mobile ${menuState}`}>
+          <div className={`nav-main__mobile ${menuState}`} >
 
             <div className="nav-center">
 
@@ -84,9 +83,9 @@ class NavMain extends Component {
                   {({ user }) => (
                     user ? (
                       <a className="nav-secondary__dashboard" href={LINKS.APP}>Dashboard</a>
-                    ) : (
-                      <a className="nav-secondary__link" href={LINKS.APP}>Sign In</a>
-                    )
+                      ) : (
+                        <a className="nav-secondary__link" href={LINKS.APP}>Sign In</a>
+                      )
                   )}
                 </AuthCtx.Consumer>
               </div>

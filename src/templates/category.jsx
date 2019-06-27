@@ -1,11 +1,10 @@
 import React from 'react';
-import { graphql } from 'gatsby';
 import _ from 'lodash';
 import Group from '../components/Group';
 import CATEGORIES from '../constants/categories';
 import SEO from '../components/SEO';
 import GROUPS from '../constants/groups';
-import Layout from '../components/layout';
+import withSubNav from '../components/NavSub';
 import './category.scss';
 
 class CategoryTemplate extends React.Component {
@@ -20,8 +19,7 @@ class CategoryTemplate extends React.Component {
   }
 
   renderGroups() {
-    const { data } = this.props;
-    const sortedGroups = CategoryTemplate.sortGroups(data.docs.group);
+    const sortedGroups = CategoryTemplate.sortGroups(this.props.data.docs.group);
 
     return sortedGroups.map((group) => {
       const title = GROUPS[group.fieldValue] ? GROUPS[group.fieldValue].name : group.fieldValue;
@@ -35,26 +33,23 @@ class CategoryTemplate extends React.Component {
   }
 
   render() {
-    const { pathContext, location } = this.props;
-    const { category } = pathContext;
+    const { category } = this.props.pathContext;
     // If we don't have a "pretty category", make one out of the category context.
     const title = CATEGORIES[category] ? CATEGORIES[category] : category.replace(/-/g, ' ');
 
     return (
-      <Layout location={location} subNav={true}>
-        <div className="category-container container">
-          <SEO postNode={this.props} postType="category" />
-          <h1 className="page-title">{title}</h1>
-          <div className="row">
-            {this.renderGroups()}
-          </div>
+      <div className="category-container container">
+        <SEO postNode={this.props} postType="category" />
+        <h1 className="page-title">{title}</h1>
+        <div className="row">
+          {this.renderGroups()}
         </div>
-      </Layout>
+      </div>
     );
   }
 }
 
-export default CategoryTemplate;
+export default withSubNav()(CategoryTemplate);
 
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
