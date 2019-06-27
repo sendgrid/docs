@@ -5,7 +5,7 @@ import './glossary.scss';
 import withSubNav from '../components/NavSub';
 import Layout from '../components/layout';
 
-class glossary extends React.Component {
+class Glossary extends React.Component {
   constructor(props) {
     super(props);
     this.glossary = this.alphaEdges();
@@ -32,7 +32,7 @@ class glossary extends React.Component {
   render() {
     const { location } = this.props;
     return (
-      <Layout location={location}>
+      <Layout location={location} subNav={true}>
         <div className="container">
           <SEO postNode={this.props} title="Glossary" description="SendGrid documentation glossary" />
           <h1>Glossary</h1>
@@ -57,7 +57,7 @@ class glossary extends React.Component {
   }
 }
 
-export default withSubNav()(glossary);
+export default Glossary;
 
 export const pageQuery = graphql`
   query glossary {

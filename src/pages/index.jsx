@@ -49,7 +49,7 @@ class Index extends React.Component {
   render() {
     const { location } = this.props;
     return (
-      <Layout location={location}>
+      <Layout location={location} subNav={false} >
         <div className="docs-home">
           <SEO postNode={this.props} title={config.siteTitle} description="SendGrid documentation home" />
           <div className="search-hero ta-center color-white">

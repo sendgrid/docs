@@ -4,11 +4,13 @@ import StatusPage from '../StatusPage';
 import Footer from '../Footer';
 import withUser from '../withUser';
 import '../../scss/style-guide.scss';
+import SubNav from '../NavSub';
 
 function MainLayout(props) {
   const {
     children,
     location,
+    subNav,
   } = props;
 
   const pathClass = location.pathname.replace(/\/docs\\|\//g, '');
@@ -19,6 +21,7 @@ function MainLayout(props) {
     <div className={classNames}>
       <StatusPage />
       <NavMain />
+      {subNav && <SubNav { ...props } />}
       <div className="layout-content">
         {children}
       </div>

@@ -5,7 +5,7 @@ import Group from '../components/Group';
 import CATEGORIES from '../constants/categories';
 import SEO from '../components/SEO';
 import GROUPS from '../constants/groups';
-import withSubNav from '../components/NavSub';
+import Layout from '../components/layout';
 import './category.scss';
 
 class CategoryTemplate extends React.Component {
@@ -41,18 +41,20 @@ class CategoryTemplate extends React.Component {
     const title = CATEGORIES[category] ? CATEGORIES[category] : category.replace(/-/g, ' ');
 
     return (
-      <div className="category-container container">
-        <SEO postNode={this.props} postType="category" />
-        <h1 className="page-title">{title}</h1>
-        <div className="row">
-          {this.renderGroups()}
+      <Layout location={location} subNav={true}>
+        <div className="category-container container">
+          <SEO postNode={this.props} postType="category" />
+          <h1 className="page-title">{title}</h1>
+          <div className="row">
+            {this.renderGroups()}
+          </div>
         </div>
-      </div>
+      </Layout>
     );
   }
 }
 
-export default withSubNav()(CategoryTemplate);
+export default CategoryTemplate;
 
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`

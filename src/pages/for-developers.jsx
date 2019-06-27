@@ -65,4 +65,4 @@ class ForDevelopers extends Component {
   }
 }
 
-export default withSubNav({ showBreadCrumbs: true })(ForDevelopers);
+export default ForDevelopers;

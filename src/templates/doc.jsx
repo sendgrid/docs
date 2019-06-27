@@ -11,6 +11,7 @@ import Rating from '../components/Rating';
 import Gist from '../componentsMarkdown/Gist';
 import CodeGroup from '../componentsMarkdown/CodeGroup';
 import withSubNav from '../components/NavSub';
+import Layout from '../components/layout';
 import './syntax-highlighting.scss';
 import './doc.scss';
 
@@ -53,33 +54,35 @@ class DocTemplate extends React.Component {
   }
 
   render() {
-    const { data } = this.props;
+    const { data, location } = this.props;
     const postNode = data.doc;
     const asideLinks = this.getLinks();
 
     return (
-      <div className="container-lg doc-wrap">
-        <SEO postNode={postNode} postType="doc" />
-        {postNode.fields.docType !== 'glossary' && asideLinks.length
-          ? (<AsideMenu asideLinks={this.getLinks()} />)
-          : null
-        }
-        <div className="doc-main">
-          <h1 dangerouslySetInnerHTML={{ __html: postNode.fields.title }} />
-          {renderAst(postNode.htmlAst)}
-          <Rating />
-          <div className="edit-this-page m-top-4 ta-center">
-            <strong>See a mistake?</strong>
-            {' '}
-            <a href={this.getRepoLink()}>Edit this page</a>
+      <Layout location={location} subNav={true}>
+        <div className="container-lg doc-wrap">
+          <SEO postNode={postNode} postType="doc" />
+          {postNode.fields.docType !== 'glossary' && asideLinks.length
+            ? (<AsideMenu asideLinks={this.getLinks()} />)
+            : null
+          }
+          <div className="doc-main">
+            <h1 dangerouslySetInnerHTML={{ __html: postNode.fields.title }} />
+            {renderAst(postNode.htmlAst)}
+            <Rating />
+            <div className="edit-this-page m-top-4 ta-center">
+              <strong>See a mistake?</strong>
+              {' '}
+              <a href={this.getRepoLink()}>Edit this page</a>
+            </div>
           </div>
         </div>
-      </div>
+      </Layout>
     );
   }
 }
 
-export default withSubNav()(DocTemplate);
+export default DocTemplate;
 
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`

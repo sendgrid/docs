@@ -35,7 +35,7 @@ class ReleaseNotes extends React.Component {
     const { edges } = data.releaseNotes;
     const asideLinks = this.getAsideLinks();
     return (
-      <Layout location={location}>
+      <Layout location={location} subNav={true}>
         <div className="container-lg">
           <SEO postNode={this.props} title="Release Notes" description="SendGrid API and Marketing Campaigns Release Notes" />
           <div className="row">
@@ -72,7 +72,7 @@ class ReleaseNotes extends React.Component {
   }
 }
 
-export default withSubNav()(ReleaseNotes);
+export default ReleaseNotes;
 
 export const pageQuery = graphql`
   query releaseNote {
