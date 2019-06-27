@@ -271,12 +271,9 @@ Switching from a template made in the Code Editor into a Design Editor can cause
 
 8. Paste the HTML you copied from the downloaded file into the code editor and then click **Save** if you are using the **Code Editor** and **Update** and then **Save** if you are using the **Design Editor** .
 
-<call-out>
-
 Make sure that you are using the new [substitution tags ]({{root_url}}//ui/sending-email/editor/#using-substitution-tags). For Example, instead of using ``[%first_name%]``, you will now use ``{{first_name}}``.
-</call-out>
 
-![]({{root_url}}/img/substitution-tag-comparison.png "Alt text")
+![]({{root_url}}/img/substitution-tag-comparison.png "substitution tag comparison")
 
 <call-out> 
 
@@ -352,41 +349,34 @@ You will have access to legacy Marketing Campaigns for a period of time allowing
 ### Campaign Stats
 
 *To download aggregate stats for a given campaign*:
-Navigate to **Campaigns** in legacy Marketing Campaigns.
-Select the campaign name you wish to export your data from.
-Click **Export CSV** in the upper right corner. A CSV file containing your data will download to the folder specified on your computer.
+
+1. Navigate to **Campaigns** in legacy Marketing Campaigns.
+1. Select the campaign name you wish to export your data from.
+1. Click **Export CSV** in the upper right corner. A CSV file containing your data will download to the folder specified on your computer.
 
 *To download a list of all contacts who opened or clicked links within your campaign*: 
-Navigate to **Campaigns** in legacy Marketing Campaigns.
-Find the Campaign you wish to export your data from, and click the linked **Unique Opens** or **Unique Clicks** data.
+
+1. Navigate to **Campaigns** in legacy Marketing Campaigns.
+1. Find the Campaign you wish to export your data from, and click the linked **Unique Opens** or **Unique Clicks** data.
 
 
 ![]({{root_url}}/img/unique-clicks-data.png "")
 
-Click **Export CSV** in the upper right corner. A CSV file containing your data will download to the folder specified on your computer.
+3. Click **Export CSV** in the upper right corner. A CSV file containing your data will download to the folder specified on your computer.
 Once the CSV file has finished processing, a link to download the CSV will be sent to the email(s) you have set to receive notifications about new Marketing Campaigns activity.
 
 ### Contact Engagement History
 
 To download data about individual contacts, including when they were last sent an email, and when they last opened or clicked an email:
 
-Navigate to **Contacts** in legacy Marketing Campaigns.
-Find the list or segment of contacts you wish to export. 
-Hover over the action menu and select the **Export** icon.
-Once the export is completed, a download link will be sent to the email(s) you have specified to receive [notifications]({{root_url}}/ui/account-and-settings/notifications/) about legacy Marketing Campaigns.
+1. Navigate to **Contacts** in legacy Marketing Campaigns.
+1. Find the list or segment of contacts you wish to export. 
+1. Hover over the action menu and select the **Export** icon.
+1. Once the export is completed, a download link will be sent to the email(s) you have specified to receive [notifications]({{root_url}}/ui/account-and-settings/notifications/) about legacy Marketing Campaigns.
 
 ## Integrate with the new Marketing Campaigns APIs
 
-Callout new path to TNE APIs
-### Contact Management APIs
-
-
-
-### Single Send APIs
-
-### Automation APIs
-
-### Others... APIs
+The new Marketing Campaigns experience offers APIs so you can programmatically manage your marketing emails. The functionality of these APIs is currently limited to contact management, but new APIs are [coming soon]({{root_url}}/ui/sending-email/coming-soon-to-marketing-campaigns/) For more information, or to view the API documentation, [click here](https://sendgrid-marketing-campaigns-beta.api-docs.io/v1/getting-started/authentication)
 
 ## FAQs
 
