@@ -35,7 +35,7 @@ class CategoryTemplate extends React.Component {
   }
 
   render() {
-    const { pathContext } = this.props;
+    const { pathContext, location } = this.props;
     const { category } = pathContext;
     // If we don't have a "pretty category", make one out of the category context.
     const title = CATEGORIES[category] ? CATEGORIES[category] : category.replace(/-/g, ' ');
