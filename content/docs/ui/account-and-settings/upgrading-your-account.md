@@ -21,13 +21,13 @@ Update your plan in the UI on the [Account Details](https://app.sendgrid.com/acc
 
 ### Choose a plan
 
-Email API
+**Email API**
 
 1. Choose a plan: **Free**, **Essentials**, **Pro**, **Premier**.
 1. Select the mail volume you require.
 1. Submit your payment information.
 
-Marketing Campaigns
+**Marketing Campaigns**
 
 1. Choose a plan: **Free, Basic, Advanced**.
 1. Select the number of contacts and email volume you need for your marketing email.
