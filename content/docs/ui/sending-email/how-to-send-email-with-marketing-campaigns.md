@@ -92,82 +92,15 @@ The Group Name as well as the Group Description are public-facing and will be vi
 
 ### Create Notifications
 
-You can opt in to receive email notifications from SendGrid about your account’s marketing campaigns activity, CSV upload summaries, sender verifications, and list/segment exports to up to 10 email addresses by following the instructions [here]({{root_url}}/ui/account-and-settings/notifications/). By default, these notifications will send to the email you signed up with on your parent account.
+You can opt in to receive email notifications from SendGrid about your account’s Marketing Campaigns activity, CSV upload summaries, sender verifications, and list/segment exports to up to 10 email addresses by following the instructions [here]({{root_url}}/ui/account-and-settings/notifications/). By default, these notifications will send to the email you signed up with on your parent account.
 
-## Create a Single Send 
-
-1. Navigate to **Marketing**, and then select **Single Sends**.
-1. Click **Create Single Send**.
-
-1. Follow the steps here.
-
-13. Click **Review Details and Send** and then click **Send**.
-
-## Create an Automation
-
-Once you've completed the prerequisites, you can begin building your first automation. You can start with a prebuilt Welcome Series and make it your own, or start from scratch by selecting **Custom Automation**.
-
-### Create a Custom Automation
-
-*To create a Custom Automation:*
-
-1. Navigate to **Automations** and then click **Create an Automation**.
-1. Under Custom, click **Select**.
-1. Give the series a name (this is for your reference and will not be visible to your contacts).
-1. Select the entry criteria. Today, your entry criteria will be the first time a contact is added to a list. You can choose an existing list, or you can create a new one here.
-
-<call-out>
-
-Contacts will only receive your automation if you add them to the list you select for entry criteria *after* you set the automation live.
-
-</call-out>
-
-5. Select the exit criteria for this series. You can choose from "Contacts will leave the series one they've received all the emails" or "Contacts will leave the series if they no longer meet the entry criteria". 
-
-<call-out>
-
-If you select “no longer meet entry criteria”, SendGrid will check to make sure a recipient is still on the entry criteria list before sending *each* email in the series. If a recipient is no longer on the entry criteria list, they will not be sent the email. For more information on deleting contacts or removing them from lists, see [link text]({{root_url}}/#edit-or-remove-contacts).
-
-</call-out>
-
-6. Select an [Unsubscribe Group]({{root_url}}/ui/sending-email/create-and-manage-unsubscribe-groups/#create-an-unsubscribe-group).
-7. Add a [category]({{root_url}}/glossary/categories/) to the automation (optional).
-8. Select the send time for the first email. You can choose to send the first email instantly, or you can set a delay of days or hours from the time meet the entry criteria.
-9. To design your email, click **Edit Email Content**.
-10. From the Select Template modal that opens, choose Blank Template or one of SendGrid’s prebuilt email templates.
-11. Next, select either the [Design]({{root_url}}/ui/sending-email/editor/#the-design-editor) or [Code]({{root_url}}/ui/sending-email/editor/#the-code-editor) editor to design or edit your email. Save and click the arrow in the top left corner of the page to return to the Edit Automation page.
-12. If you did not do so within the editor, you can add a subject line and select a sender from the Edit Automation page.
-13. To add more emails to this automated series, click **Add an Email**.
-14. Choose how long to wait before sending the next email. This time will be relative to the preceding email.
-15. Repeat steps 5-9 for each additional email you add to this custom automation.
-16. Once you have created all of your emails for the automation, click **Set Live**.
-
-### Use the Prebuilt Welcome Series
-
-The prebuilt Welcome Series automation provides a jumping off point to inspire you to create your own tailored welcome series.
-
-*To create a Welcome Series:*
-
-1. Navigate to **Automations** and click **Create an Automation**.
-1. Under Welcome, click **Select**.
-1. Give the series a name (this is for your reference and will not be visible to your contacts).
-1. Select the first entry criteria. The default entry criteria is “The first time a contact is added to All Contacts”.
-1. Repeat steps 5-16 from creating a custom automation.
-
-<call-out type="warning">
-
-If you keep the entry criteria as "All Contacts" it's important to remember that any recipient you add to your contacts after you set the welcome series live will be entered into the automation. Use "All Contacts" with caution to avoid sending a welcome series to contacts that aren't actually new to you.
-
-</call-out>
-
-## Creating an Email
+## Creating a Single Send
 
 1. From the left-hand navigation, select **Marketing**.
-1. Determine whether or not you’d like to send a Single Send or create/edit an email within an Automation, by clicking on **Single Sends** or **Automations**, under the **Marketing** navigation.
-1. If you’re creating a Single Send, click **Create Single Send**. If you’re creating an email within an Automation, select an existing Automation from the list or click **Create an Automation**. Then, navigate to an email within the Automation and click on the **Edit** thumbnail.
+1. Select **Single Sends**. 
+1. To create a new one-to-many email, click **Create Single Send**. 
 1. Select the template that you want to use for your email.
 <br> You can select a blank template, a custom template that you have already created, or one of SendGrid's responsive pre-built templates. For more information, see [Marketing Templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/).
-
 1. Select an editor.
 <br> You can choose between the **Design Editor** and the **Code Editor**.
 
@@ -175,7 +108,7 @@ If you keep the entry criteria as "All Contacts" it's important to remember that
 
 <call-out>
 
-The **Design Editor** offers users powerful drag & drop editing tools, making it possible to build beautiful emails using a library of content modules like text boxes, images, buttons and more. For those familiar with HTML, there are options to edit the HTML of individual modules, drag in a custom code module, or to import an entire HTML email with drag & drop markup.
+The **Design Editor** offers users powerful drag & drop editing tools, making it possible to build beautiful emails using a library of content modules like text boxes,images, buttons and more. For those familiar with HTML, there are options to edit the HTML of individual modules, drag in a custom code module, or to import an entire HTML email with drag & drop markup.
 
 The **Code Editor** provides users who are importing, editing, or crafting custom HTML a robust, IDE-like environment, featuring side-by-side code and preview panes, syntax highlighting, code completion, and image management.
 
@@ -208,7 +141,9 @@ For more information about customizing your campaign, see [Using the Design Edit
 
 8. Once you’ve finished editing your email, you can see what it looks like by saving your draft, hovering over the action menu, and then clicking **Preview**.
 
-9. To send a test email, return to the Settings tab and open Recipients. Under Test Email Addresses you can enter the email address(es) you want to send your test campaign to, and then click **Send Test**. Please note, in order to send your test email and any subsequent live campaigns, you must include, at a minimum, a verified sender, subject line, and unsubscribe group or link.
+
+At this time, you are unable to send a test email. However you can use our Email Testing feature to test your email across different devices and platforms. It allows you to preview how an email is likely to perform across a wide range of inbox providers, devices and spam filters, before sending.
+
 <call-out>
 
 Before you send a test email, you can test how your email will perform across a wide range of inbox providers, devices, and spam filters by using [email testing]({{root_url}}/ui/sending-email/email-testing).
@@ -221,7 +156,7 @@ Before you send a test email, you can test how your email will perform across a 
 
 <call-out type="warning">
 
-Any contacts that are added to a list or segment after a campaign is scheduled but prior to send **will receive** the campaign. Contacts for an email are retrieved at the time of send.
+Any contacts that are added to a list or segment after an email is scheduled but prior to send **will receive** the campaign. Contacts for an email are retrieved at the time of send.
 
 </call-out>
 
