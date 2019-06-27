@@ -2,7 +2,6 @@ const path = require('path');
 const _ = require('lodash');
 const webpackLodashPlugin = require('lodash-webpack-plugin');
 const crypto = require('crypto');
-// const redirects = require('./redirects.js');
 
 /**
  * Generate node edges
@@ -57,7 +56,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     createNodeField({ node, name: 'permalink', value: permalink.toLowerCase() });
 
     /**
-     * Check if doc is "ui" or "for developers" and add a field slug to represent this.
+     * Check if doc is "ui", "for developers", "glossary" or "release-notes" and add a field slug to represent this.
      */
     let docType;
     if (permalink.match(/ui\/[^/]+/)) {
@@ -240,22 +239,6 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   });
 };
 
-// exports.onCreatePage = async ({ page, boundActionCreators }) => {
-//   const { createPage } = boundActionCreators;
-
-//   return new Promise((resolve) => {
-//     if (page.path.match(/^\/404/)) {
-//       // It's assumed that `landingPage.js` exists in the `/layouts/` directory
-//       page.layout = 'noHeaderFooter';
-
-//       // Update the page.
-//       createPage(page);
-//     }
-
-//     resolve();
-//   });
-// };
-
 exports.onCreateWebpackConfig = ({ stage, actions }) => {
   if (stage === 'build-javascript') {
     actions.setWebpackConfig({
@@ -263,13 +246,3 @@ exports.onCreateWebpackConfig = ({ stage, actions }) => {
     });
   }
 };
-
-// SASS Sourcemaps
-// exports.modifyWebpackConfig = ({ config }) => {
-//   const newConfig = { ...config };
-//   const loadersArr = ['style', 'css?sourceMap', 'sass', 'sass?sourceMap'];
-//   if (config._loaders.sass.config.loaders) {
-//     newConfig._loaders.sass.config.loaders = loadersArr;
-//   }
-//   return newConfig;
-// };
