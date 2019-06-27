@@ -171,7 +171,7 @@ If you keep the entry criteria as "All Contacts" it's important to remember that
 1. Select an editor.
 <br> You can choose between the **Design Editor** and the **Code Editor**.
 
-![]({{root_url}}/images/choose_editor.png)
+![]({{root_url}}/img/choose-editor.png)
 
 <call-out>
 
