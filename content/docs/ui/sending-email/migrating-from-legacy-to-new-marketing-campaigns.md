@@ -1,50 +1,16 @@
-{WIP Docs Migration Guide}
-Migrating from legacy Marketing Campaigns to new Marketing Campaigns
-
-Link to unlisted “coming soon” doc
-
-
-## What does the new Marketing Campaigns offer?
-### Automation
-### Email Testing
-### Signup Forms
-## Familiar features and functionality from legacy
-## Why aren’t you migrating my account automatically?
-## Choosing a new Marketing Campaigns plan
-### How is the pricing different for the new plans?
-### What are the new package options?
-### What should I consider in choosing a new package?
-### Do I need to change my Email API plan?
-## How do I upgrade my Marketing Campaigns plan?
-## Migrate your contacts
-## Migrate your content
-### Templates
-### Campaign designs
-### Images
-## Create notifications
-## Review Senders and Unsubscribe Groups
-## Export data you wish to reference
-### Campaign Stats
-### Contact Engagement History
-## Integrate with the new Marketing Campaigns APIs
-### Contact Management APIs
-### Single Send APIs
-### Automation APIs
-### Others... APIs
-## FAQs
-### What happens if I choose not to migrate?
-### How long will legacy Marketing Campaigns be available?
-### Once I’ve switched to new Marketing Campaigns, can I go back to using legacy Marketing Campaigns?
-### What is the additional value of the new Marketing Campaigns vs. the legacy product?
-### Can I try the new Marketing Campaigns for free?
-### What happens to my legacy Marketing Campaigns account if I try new Marketing Campaigns?
-### I don’t see the new Marketing Campaigns in my account. What should I do?
-### I have more than 200,000 contacts. What should I do?
-### Are there services to help me with migration?
-### I have dedicated IP(s) I’ve already warmed up. What happens to them?
-
-
-
+---
+layout: page
+weight: 70
+title: Migrating from legacy to new Marketing Campaigns
+group: managing-contacts
+navigation:
+  show: false
+seo:
+  title: Migrating from legacy to new Marketing Campaigns
+  keywords:   
+  override: 
+  description: Use this guide to migrate from legacy to the new Marketing Campaigns experience. 
+---
 ## What does the new Marketing Campaigns offer? 
 
 The new Marketing Campaigns builds on the existing, well-loved workflows for building, targeting, sending, and measuring email marketing campaigns with three new features, Automation, Email Testing, and Signup Forms. 
