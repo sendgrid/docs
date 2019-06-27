@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 import _ from 'lodash';
 
 class BreadCrumbs extends Component {
@@ -13,14 +13,16 @@ class BreadCrumbs extends Component {
   }
 
   getPathParts() {
-    const { pathname } = this.props.location;
+    const { location } = this.props;
+    const { pathname } = location;
     const parts = pathname.split('/');
     // We don't want "docs" or "UI" in the breadcrumbs
     return parts.filter(item => item.length && item !== 'docs');
   }
 
   getSubPaths() {
-    const { pathname } = this.props.location;
+    const { location } = this.props;
+    const { pathname } = location;
 
     // No matter what, add and object that represents the docs home
     const home = [
@@ -92,13 +94,16 @@ class BreadCrumbs extends Component {
   }
 
   render() {
+    const { items } = this.state;
     return (
       <div>
         <ul className="breadcrumb">
-          {this.state.items.map(item => {
+          {items.map((item) => {
             const classes = `breadcrumb-item-${item.textNode.replace(' ', '-').toLowerCase()}`;
             return (
-              <li key={item.textNode} className={classes} ><Link to={item.to}>{item.textNode}</Link></li>
+              <li key={item.textNode} className={classes}>
+                <Link to={item.to}>{item.textNode}</Link>
+              </li>
             );
           })}
           <li dangerouslySetInnerHTML={{ __html: this.getTitle() }} />
