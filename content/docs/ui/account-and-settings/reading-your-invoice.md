@@ -37,7 +37,7 @@ This is the **plan you subscribe to**. In this case, the user is on an API Pro 1
 
 ### Marketing Campaigns Plan
 
-![Charge summary section]({{root_url}}/img/marketing-invoice-plan.png)
+![Charge summary section]({{root_url}}/img/invoice-marketing-plan.png)
 
 This is the **Marketing Campaigns plan you subscribe to**. In this case, the user is on a Marketing Campaigns Basic 5K plan, and will pay $15.65 to use it for the month of August.
 
