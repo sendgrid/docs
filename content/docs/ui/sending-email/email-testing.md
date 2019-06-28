@@ -2,7 +2,7 @@
 layout: page
 weight: 70
 title: Email Testing
-group: email-testing
+group: building-email
 navigation:
   show: true
 seo:
