@@ -3,7 +3,6 @@ import NavMain from '../NavMain';
 import StatusPage from '../StatusPage';
 import Footer from '../Footer';
 import withUser from '../withUser';
-import '../../scss/style-guide.scss';
 import SubNav from '../NavSub';
 
 function MainLayout(props) {
@@ -21,7 +20,7 @@ function MainLayout(props) {
     <div className={classNames}>
       <StatusPage />
       <NavMain />
-      {subNav && <SubNav { ...props } />}
+      {subNav && <SubNav {...props} />}
       <div className="layout-content">
         {children}
       </div>
