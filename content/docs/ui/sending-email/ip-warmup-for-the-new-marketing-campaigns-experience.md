@@ -2,7 +2,7 @@
 layout: page
 weight: 70
 title: IP Warmup with Marketing Campaigns
-group: sending-email
+group: delivery-optimization
 navigation:
   show: true
 seo: 
