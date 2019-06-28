@@ -15,7 +15,7 @@ Subusers help you segment your email sending and API activity. You assign permis
 
 <call-out>
 
-If you have a **Pro plan or higher**, you may create up to 15 subusers through your account. If you reach the maximum of 15 and require more subusers, please use the form in the [Subuser Management](https://app.sendgrid.com/settings/subusers) page to request more.
+If you have a **Pro or Premier API plan** or an **Advanced Marketing Campaigns Plan**, you may create up to 15 subusers through your account. If you reach the maximum of 15 and require more subusers, please use the form in the [Subuser Management](https://app.sendgrid.com/settings/subusers) page to request more.
 
 </call-out>
 
