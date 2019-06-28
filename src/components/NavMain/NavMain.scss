@@ -3,16 +3,22 @@
 
 .nav-wrap {
   background: $white;
-  border-bottom: 1px solid rgba(#a8b9d5, 0.6);
-  box-shadow: 0 2px 14px 0 rgba(122,150,195,.1);
   position: sticky;
   top: 0;
   z-index: 100;
 }
 
+.nav-wrap.has-sub-nav {
+  margin-bottom: $scaleup-6;
+}
+
 .nav-main {
+  position: relative;
   padding: 2px $scale-base-up-04;
   display: flex;
+  border-bottom: 1px solid rgba(#a8b9d5, 0.6);
+  box-shadow: 0 2px 14px 0 rgba(122,150,195,.1);
+  z-index: 2;
 
   @media (max-width: $width-medium) {
     flex-direction: column;

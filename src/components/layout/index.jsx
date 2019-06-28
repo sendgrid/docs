@@ -20,8 +20,10 @@ function MainLayout(props) {
   return (
     <div className={classNames}>
       <StatusPage />
-      <NavMain />
-      {subNav && <SubNav {...props} />}
+      <div className={subNav ? 'nav-wrap has-sub-nav' : 'nav-wrap'}>
+        <NavMain />
+        {subNav && <SubNav {...props} />}
+      </div>
       <div className="layout-content">
         {children}
       </div>
