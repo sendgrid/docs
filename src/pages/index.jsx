@@ -8,8 +8,8 @@ import FooterCallout from '../components/FooterCallout';
 import config from '../../data/SiteConfig';
 import HOME_CARDS from '../constants/homeCards';
 import CALLOUTS from '../constants/homeCallouts';
-import './index.scss';
 import Layout from '../components/layout';
+import './index.scss';
 
 class Index extends React.Component {
   static renderCards() {
@@ -49,7 +49,7 @@ class Index extends React.Component {
   render() {
     const { location } = this.props;
     return (
-      <Layout location={location} subNav={false} >
+      <Layout location={location} subNav={false}>
         <div className="docs-home">
           <SEO postNode={this.props} title={config.siteTitle} description="SendGrid documentation home" />
           <div className="search-hero ta-center color-white">

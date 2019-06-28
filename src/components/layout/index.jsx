@@ -4,6 +4,7 @@ import StatusPage from '../StatusPage';
 import Footer from '../Footer';
 import withUser from '../withUser';
 import SubNav from '../NavSub';
+import '../../scss/style-guide.scss';
 
 function MainLayout(props) {
   const {
