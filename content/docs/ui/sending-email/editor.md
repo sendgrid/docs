@@ -11,15 +11,13 @@ seo:
   description: SendGrid Marketing Campaigns' editing gives you complete control over your emails. Use a flexible drag-and-drop Design editor or a robust HTML code editor.
 ---
 
-<iframe src="https://player.vimeo.com/video/249110555" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-Marketing Campaigns is all about supporting your unique workflow, so you can get your work done more efficiently. You have complete control over the way that you create and edit each new campaign, thanks to 2 distinct editing experiences.
+The new Marketing Campaigns experience is all about supporting your unique workflow, so you can get your work done more efficiently. You have complete control over the way that you create and edit each new email, thanks to 2 distinct editing experiences.
 
 ## Choosing The Right Editor
 
 The [**Code Editor**](#the-code-editor) is perfect for users who are importing, creating, or editing custom HTML. It offers a robust environment to upload images, backed by a feature-packed editor – complete with split-screen preview, error flagging, scroll-syncing, syntax highlighting, and more. While other email editors may be notorious for adding excess code to your project, rest assured that our editor never modifies your carefully crafted HTML.
 
-The [**Design Editor**](#the-design-editor), complete with HTML access to each content module, offers powerful “what you see is what you get” (WYSIWYG) editing. It features a diverse library of content blocks, allowing you to build beautiful emails quickly and intuitively. Once placed into your campaign, each module offers access to edit the HTML and a robust panel of settings – perfect for customizing content precisely to your needs.
+The [**Design Editor**](#the-design-editor), complete with HTML access to each content module, offers powerful “what you see is what you get” (WYSIWYG) editing. It features a diverse library of content blocks, allowing you to build beautiful emails quickly and intuitively. Once placed into your email, each module offers access to edit the HTML and a robust panel of settings – perfect for customizing content precisely to your needs.
 
 <call-out>
 
@@ -30,7 +28,7 @@ The [Design Editor](#the-design-editor) features a number of convenient ways to 
 
 ## The Code Editor
 
-SendGrid’s marketer-friendly code editor features a powerful split-screen editing experience – perfect for building campaigns with your own custom HTML. It offers a number of helpful features, often found in native editors.
+SendGrid’s marketer-friendly code editor features a powerful split-screen editing experience – perfect for building single send or automation emails with your own custom HTML. It offers a number of helpful features, often found in native editors.
 
 ### Code Editor Features
 
@@ -52,27 +50,45 @@ As you edit, parts of your code highlights in various colors according to the ty
 
 ### Getting Started With The Code Editor
 
-1. From the left-hand navigation, select **Marketing**, and then click **Campaigns**.
-2. Click **Create Campaign**.
-<br>To create a campaign using an existing (drafted or sent) campaign, find the campaign you'd like to use and click the action menu next to the campaign.
-3. Then, select **Edit** or **Duplicate**.
-4. Select **Code Editor**, and then click **Continue**.
+*To use the code editor for Single Sends:*
+
+1. From the left-hand navigation, select **Marketing**, and then click **Single Sends** 
+1. Click **Create Single Send**.
+<br>To create a single send email using an existing (drafted or sent) email, find the single send you'd like to use and click the action menu next to the email.
+1. Then, select **Edit** or **Duplicate**.
+1. Select **Code Editor**, and then click **Continue**.
+
+*To use the code editor for Automations:*
+
+1. From the left-hand navigation, select **Marketing**, and then click **Automations** .
+1. Click **Create an Automation**.
+1. Under Custom Automation click **Select**.
 
 <call-out>
 
-You can only edit unsent campaigns.
+The Welcome Series Automation can only be edited with the [design editor]({{root_url}}/ui/sending-email/editor/#the-design-editor)
+
+</call-out>
+
+1. Give the automation a name, entry criteria, exit criteria, and select an unsubscribe group.
+1. Select the send time and then click the edit button next to *Email 1*. 
+1. Select **Code Editor**, and then click **Continue**.
+
+<call-out>
+
+You can only edit unsent emails.
 
 </call-out>
 
 You can select a blank template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/).
 
-If you have already built the HTML that you want to use in another application, copy and paste that code directly into the content area of the Code Editor. You can also write the HTML for your campaign or template directly in the Code Editor.
+If you have already built the HTML that you want to use in another application, copy and paste that code directly into the content area of the Code Editor. You can also write the HTML for your email or template directly in the Code Editor.
 
-The split-screen view of the Code Editor allows you to see a real-time preview of your campaign. You can toggle between a preview of how your campaign or template appears on a recipient’s desktop and mobile phone by clicking either the desktop or mobile phone icons above the content area. You can also view a plain text version of your campaign or template by clicking the **T** icon. When in this preview mode, you can edit the plain text content of your campaign or template by clicking the **Edit Plain Text** button.
+The split-screen view of the Code Editor allows you to see a real-time preview of your email. You can toggle between a preview of how your email or template appears on a recipient’s desktop and mobile phone by clicking either the desktop or mobile phone icons above the content area. You can also view a plain text version of your email or template by clicking the **T** icon. When in this preview mode, you can edit the plain text content of your email or template by clicking the **Edit Plain Text** button.
 
 <call-out type="warning">
 
-Once you create a new campaign or template in the Code Editor, it cannot be edited using the Design Editor unless you add our [Drag and Drop Markup]({{root_url}}/ui/sending-email/editor/#drag--drop-markup).
+Once you create a new single send or automation email in the Code Editor, it cannot be edited using the Design Editor unless you add our [Drag and Drop Markup]({{root_url}}/ui/sending-email/editor/#drag--drop-markup).
 
 </call-out>
 
@@ -81,7 +97,7 @@ Once you create a new campaign or template in the Code Editor, it cannot be edit
 1. Select the **images** icon above the HTML code. A window opens where you can upload images to your library.
 2. Select the image you want to add from your image library.
 3. Select the **image details** tab and copy the URL in the **Image Source URL** tab by clicking **Copy URL**.
-4. Paste this URL in an image source tag in your campaign or template's HTML.
+4. Paste this URL in an image source tag in your email or template's HTML.
 Example: `<img src="your image URL here">`
 
 ### Using Substitution Tags
@@ -104,42 +120,42 @@ Substitution tags allow you to easily generate dynamic content for each recipien
    <th>Type</th>
  </tr>
  <tr>
-   <td><code class="language-text">[%email%]</code></td>
+   <td><code class="language-text">{{email}}</code></td>
    <td>The email address of the recipient</td>
    <td>Personalization</td>
  </tr>
  <tr>
-   <td><code class="language-text">[%first_name%]</code></td>
+   <td><code class="language-text">{{first_name}}</code></td>
    <td>The first name of the recipient</td>
    <td>Personalization</td>
  </tr>
  <tr>
-   <td><code class="language-text">[%last_name%]</code></td>
+   <td><code class="language-text">{{last_name}}</code></td>
    <td>The last name of the recipient</td>
    <td>Personalization</td>
  </tr>
  <tr>
-   <td><code class="language-text">[Sender_Name]</code>* </td>
+   <td><code class="language-text">{{Sender_Name}}</code>* </td>
    <td>The name of the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code class="language-text">[Sender_Address]</code>* </td>
+   <td><code class="language-text">{{Sender_Address}}</code>* </td>
    <td>The address on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code class="language-text">[Sender_City]</code>* </td>
+   <td><code class="language-text">{{Sender_City}}</code>* </td>
    <td>The city on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code class="language-text">[Sender_State]</code>* </td>
+   <td><code class="language-text">{{Sender_State}}</code>* </td>
    <td>The state on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code class="language-text">[Sender_Zip]</code>* </td>
+   <td><code class="language-text">{{Sender_Zip}}</code>* </td>
    <td>The zip code on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
@@ -163,7 +179,7 @@ Substitution tags allow you to easily generate dynamic content for each recipien
  <tr>
    <td><code class="language-text">[Weblink]</code></td>
    <td>This tag is replaced with a link allowing your recipients to view your campaign content directly within their web browser.</td>
-   <td>Weblink</td>
+   <td>{{Weblink}}</td>
  </tr>
 </table>
 
@@ -174,14 +190,14 @@ Substitution tags allow you to easily generate dynamic content for each recipien
 
 For contacts with no entry in a custom field, the substitution tag appears blank. To set a default value, use the following pattern:
 
-`[%first_name | Valued Customer%]`
+`{{first_name | Valued Customer}}`
 
 
 </call-out>
 
 ### Adding Categories
 
-Assigning categories to a campaign allows you to track emails based on your own categorization system. By assigning your campaign to a category, you can track statistics across multiple similar campaigns. Example categories may include: “Weekly Digest,” “Product Announcements.”
+Assigning categories to a campaign allows you to track emails based on your own categorization system. By assigning your campaign to a category, you can track statistics across multiple similar single sends and automations. Example categories may include: “Weekly Digest,” “Product Announcements.”
 
 1. Click the *Settings* panel located on the left-hand side of the window to expand it.
 1. Navigate to the *Settings* tab, and click **Campaign Settings** to expand the menu.
@@ -194,17 +210,36 @@ Currently, only 10 categories can be added to each campaign.
 
 </call-out>
 
+### Email Testing
+
+Email testing offers robust, pre-send testing of your emails, including in-app spam testing, inbox rendering previews, and link validation right within your Marketing Campaigns workflow. It allows you to preview how an email is likely to perform across a wide range of inbox providers, devices and spam filters, before sending. For more information, [click here]({{root_url}}/ui/sending-email/email-testing/).
+
 ## The Design Editor
 
-<iframe src="https://player.vimeo.com/video/221496251" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-SendGrid’s flexible design editor allows you to build your templates and campaigns using intuitive, drag & drop tools. The “What you see is what you get” (WYSIWYG) editing experience features a library of modules for easily adding content to your campaign.
+SendGrid’s flexible design editor allows you to build your templates and emails using intuitive, drag & drop tools. The “What you see is what you get” (WYSIWYG) editing experience features a library of modules for easily adding content to your campaign.
 
 ### Getting Started With the Design Editor
 
-1. From the left-hand navigation, select **Marketing** and then click **Campaigns**.
-1. Click **Create Campaign**.
-<br>To create a campaign using an existing campaign, find the campaign you want to use and click the action menu next to the campaign. Then, select **Edit** or **Duplicate**.
+*To use the design editor for Single Sends:*
+
+1. From the left-hand navigation, select **Marketing**, and then click **Single Sends** 
+1. Click **Create Single Send**.
+<br>To create a single send email using an existing (drafted or sent) email, find the single send you'd like to use and click the action menu next to the email.
+1. Then, select **Edit** or **Duplicate**.
+1. Select **Design Editor**, and then click **Continue**.
+
+*To use the code editor for Automations:*
+
+1. From the left-hand navigation, select **Marketing**, and then click **Automations** .
+1. Click **Create an Automation**.
+1. Determine whether you’d like to send a pre-made Welcome series or a custom automation and then click **Select**. 
+1. Give the automation a name, entry criteria, exit criteria, and select an unsubscribe group.
+1. Select the send time and then click the edit button next to *Email 1*. 
+1. Select **Design Editor**, and then click **Continue**.
+<br>The Design Editor opens.
+
+
+
 
 ![]({{root_url}}/img/campaigns_dashboard_categories_search.png)
 
@@ -223,16 +258,12 @@ Drag & drop editing helps you swiftly build your campaign, using pre-built conte
 
   ![]({{root_url}}/img/design_editor_drag_drop.png "Drag and drop editor")
 
-2. Find the module tile you want to add to your campaign. Then, drag and drop it into your content area.
-3. Edit the module settings and add your custom content to build your campaign.
+2. Find the module tile you want to add to your email. Then, drag and drop it into your content area.
+3. Edit the module settings and add your custom content to build your email.
 
 ### Drag & Drop Module Descriptions and Styles
 
-<iframe src="https://player.vimeo.com/video/233699442" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<iframe src="https://player.vimeo.com/video/233699948" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<iframe src="https://player.vimeo.com/video/233700782" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-You can add the following drag & drop modules to your campaign:
+You can add the following drag & drop modules to your email:
 
 <table class="table" style="table-layout:fixed">
   <tr>
@@ -282,12 +313,12 @@ You can add the following drag & drop modules to your campaign:
   </tr>
   <tr>
     <td>Social</td>
-    <td>Icons that allow for social media integration within your campaigns.The module offers 5 different social media icon options (Facebook, Twitter, Instagram, Google+, and Pinterest) all of which can be toggled on or off as well as fully customized to match individual branding and design standards. </td>
+    <td>Icons that allow for social media integration within your emails.The module offers 5 different social media icon options (Facebook, Twitter, Instagram, Google+, and Pinterest) all of which can be toggled on or off as well as fully customized to match individual branding and design standards. </td>
     <td>URL, size, border radius, and icon ( Facebook, Twitter, Instagram, Google+, and Pinterest).</td>
   </tr>
   <tr>
     <td>Unsubscribe</td>
-    <td>This module is pre-populated with your sender information and a hyperlink to the [unsubscribe] tag which are required in order to be compliant with anti-spam laws. If you are using transactional templates, you need to include sender information  the JSON array. For more information, see [How to Send Email with Dynamic Transactional Templates]({{root_url}}/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/.</td>
+    <td>This module is pre-populated with your sender information and a hyperlink to the `{{{unsubscribe}}}` tag which are required in order to be compliant with anti-spam laws. If you are using transactional templates, you need to include sender information the JSON array. For more information, see [How to Send Email with Dynamic Transactional Templates]({{root_url}}/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/.</td>
     <td>Background color, padding, line height, font, font size, link color, alignment, Address Line, Unsubscribe Settings.</td>
   </tr>
 </table>
@@ -360,13 +391,13 @@ The Design Editor does not modify or validate any HTML inserted via a code modul
 1. Navigate to the **Build** tab and then click **Add Modules**.
 1. Drag and drop the **Images** module into your content area.
    <br>A window opens where you can select images from the image library.
-1. Select the image you want to add to your campaign.
+1. Select the image you want to add to your email.
    <br>The Image Details tab opens.
 1. Insert your image in the campaign by clicking **Save Image**.
 
 ### Using Substitution Tags
 
-Substitution tags allow you to use any custom field data you've added to Marketing Campaigns to dynamically generate unique content for each recipient of your campaign. A common example is to add a recipient's first name to the body (or even the subject line) of your campaign.
+Substitution tags allow you to use any custom field data you've added to Marketing Campaigns to dynamically generate unique content for each recipient of your campaign. A common example is to add a recipient's first name to the body (or even the subject line) of your email.
 
 *To add a substitution tag to your campaign:*
 
@@ -385,53 +416,53 @@ You'll also see a number of System Fields that you can place in the body of your
    <th>Type</th>
  </tr>
  <tr>
-   <td><code class="language-text"><% email %></code></td>
+   <td><code class="language-text"><{{email}}></code></td>
    <td>The email address of the recipient</td>
    <td>Personalization</td>
  </tr>
  <tr>
-   <td><code class="language-text"><% first_name %></code></td>
+   <td><code class="language-text"><{{first_name}}></code></td>
    <td>The first name of the recipient</td>
    <td>Personalization</td>
  </tr>
  <tr>
-   <td><code class="language-text"><% last_name %></code></td>
+   <td><code class="language-text"><{{last_name}}></code></td>
    <td>The last name of the recipient</td>
    <td>Personalization</td>
  </tr>
  <tr>
-   <td><code class="language-text"><% sender_name %></code>* </td>
+   <td><code class="language-text"><{{sender_name}}></code>* </td>
    <td>The name of the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code class="language-text"><% sender_city %></code>* </td>
+   <td><code class="language-text"><{{sender_city}}></code>* </td>
    <td>The city on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code class="language-text"><% sender_state %></code>* </td>
+   <td><code class="language-text">{{sender_state}}></code>* </td>
    <td>The state on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code class="language-text"><% sender_zip %></code>* </td>
+   <td><code class="language-text"><{{sender_zip}}></code>* </td>
    <td>The zip code on record for the sender selected when sending your campaign</td>
    <td>Sender Identity</td>
  </tr>
  <tr>
-   <td><code class="language-text"><% unsubscribe %></code>* </td>
+   <td><code class="language-text"><{{{unsubscribe}}}></code>* </td>
    <td>This tag is replaced with a link allowing your recipients opt out of any emails you send using the chosen Unsubscribe Group.</td>
    <td>Unsubscribe</td>
  </tr>
  <tr>
-   <td><code class="language-text"><% unsubscribe_</br>preferences %></code>
+   <td><code class="language-text"><{{unsubscribe_</br>preferences}}></code>
    * </td>
    <td>This tag is replaced with a link allowing your recipients to opt out of any email unsubscribe groups you offer.</td>
    <td>Unsubscribe</td>
  </tr>
  <tr>
-   <td><code class="language-text"><% Weblink %></code></td>
+   <td><code class="language-text"><{{Weblink}}></code></td>
    <td>This tag is replaced with a link allowing your recipients to view your campaign content directly within their web browser.</td>
    <td>Weblink</td>
  </tr>
@@ -450,7 +481,7 @@ _raw_url%>` tags are reserved for use in Transactional Templates and should not 
 
 For contacts with no entry in a custom field, the substitution tag appears blank. To set a default value, use the following pattern:
 
-`[%first_name | Valued Customer%]`
+`{{first_name | Valued Customer}}`
 
 </call-out>
 
@@ -509,14 +540,14 @@ For example:
 <link href="https://fonts.google.com/specimen/Oswald" rel="stylesheet">
 ```
 
-Next, you’ll have to add add a `<style>` to specify that you want to use this new font family:
+Next, you’ll have to add a `<style>` to specify that you want to use this new font family:
 
 ```html
 <style>
     body {
         font-family: 'Oswald',
         sans-serif;
-    }
+    
 </style>
 ```
 
@@ -725,22 +756,35 @@ Following is an example of how you should structure and organize your custom HTM
 
 SendGrid hosts the images included in the pre-built templates and any images you have uploaded to the image library, so when you export a template’s HTML from the design editor, the embedded URLs in each `<img>` tag remains valid.
 
-*To open exported HTML in the code editor:*
+*To open exported HTML in the code editor using Single Sends:*
 
-1. From the left-hand navigation, select **Marketing** and then click **Campaigns**.
+1. From the left-hand navigation, select **Marketing** and then click **Single Sends**.
 1. Click **New Campaign** and then select **Blank Template**.
+1. Select **Code Editor**.
+1. Paste the raw SendGrid template HTML into the code editor.
+
+*To open exported HTML in the code editor using Automations:*
+
+1. From the left-hand navigation, select **Marketing** and then click **Automations**.
+1. Click **Create an Automation** and then navigate to *Custom Automation* and click **Select**.
+1. Navigate to the first email in the Automation series and click **Edit Email Content**.
+1. Locate the blank template and click **Select**.  
 1. Select **Code Editor**.
 1. Paste the raw SendGrid template HTML into the code editor.
 
 ### Creating Categories
 
-Assigning categories to a campaign allows you to track emails based on your own categorization system. By assigning your campaign to a category, you can track statistics across multiple similar campaigns. Example categories: “Weekly Digest,” “Product Announcements.”
+Assigning categories to a campaign allows you to track emails based on your own categorization system. By assigning your campaign to a category, you can track statistics across multiple similar single sends and automations. Example categories: “Weekly Digest,” “Product Announcements.”
 
 *To add a category:*
 
-1. Navigate to the *Settings* tab and click **Campaign Settings** to expand the menu.
+1. Navigate to the *Settings* tab and click **Single Send Settings**  or **Template Settings** to expand the menu.
 1. Find the *Categories* field.
 1. Enter the name of a new category or select a previously used category from the drop-down menu.
+
+### Email Testing
+
+Email testing offers robust, pre-send testing of your emails, including in-app spam testing, inbox rendering previews, and link validation right within your Marketing Campaigns workflow. It allows you to preview how an email is likely to perform across a wide range of inbox providers, devices and spam filters, before sending. For more information, [click here]({{root_url}}/ui/sending-email/email-testing/).
 
 ## Additional Resources
 
@@ -748,3 +792,5 @@ Assigning categories to a campaign allows you to track emails based on your own 
 * [A/B Testing]({{root_url}}/ui/sending-email/a-b-testing/)
 * [Campaign Statistics]({{root_url}}/ui/analytics-and-reporting/marketing-campaigns-stats/)
 * [Marketing Templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/)
+
+

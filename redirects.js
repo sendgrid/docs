@@ -937,7 +937,7 @@ module.exports = [
   },
   {
     from: '/Classroom/Basics/Marketing_Campaigns/migration_guide_part_1_migrating_your_recipient_lists_into_contacts.html',
-    to: '/ui/managing-contacts/adding-contacts/',
+    to: '/ui/managing-contacts/create-and-manage-contacts/',
   },
   {
     from: '/Classroom/Basics/Marketing_Campaigns/migration_guide_part_2_importing_your_unsubscribes.html',
@@ -2525,7 +2525,7 @@ module.exports = [
   },
   {
     from: '/Marketing_Emails/recipients.html',
-    to: '/ui/managing-contacts/adding-contacts/',
+    to: '/ui/managing-contacts/create-and-manage-contacts/',
   },
   {
     from: '/Marketing_Emails/sender_address.html',
@@ -3049,7 +3049,7 @@ module.exports = [
   },
   {
     from: '/Utilities/list_assist.html',
-    to: '/ui/managing-contacts/adding-contacts/',
+    to: '/ui/managing-contacts/create-and-manage-contacts/',
   },
   {
     from: '/Utilities/smtpapi_validator.html',
@@ -3221,7 +3221,7 @@ module.exports = [
   },
   {
     from: '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/recipients.html',
-    to: '/ui/managing-contacts/adding-contacts/',
+    to: '/ui/managing-contacts/create-and-manage-contacts/',
   },
   {
     from: '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/sender_address.html',
@@ -3653,7 +3653,7 @@ module.exports = [
   },
   {
     from: '/User_Guide/Marketing_Campaigns/contacts.html',
-    to: '/ui/managing-contacts/adding-contacts/',
+    to: '/ui/managing-contacts/create-and-manage-contacts/',
   },
   {
     from: '/Classroom/Basics/Marketing_Campaigns/how_to_remove_unusable_contacts.html',
@@ -3945,7 +3945,7 @@ module.exports = [
   },
   {
     from: '/User_Guide/Marketing_Campaigns/Managing_Contacts/adding_contacts.html',
-    to: '/ui/managing-contacts/adding-contacts/',
+    to: '/ui/managing-contacts/create-and-manage-contacts/',
   },
   {
     from: '/User_Guide/Marketing_Campaigns/Managing_Contacts/formatting_a_CSV.html',

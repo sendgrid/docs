@@ -11,6 +11,12 @@ seo:
   override: true
   description:
 ---
+<call-out>
+
+Contact Segmentation is currently only available in the legacy Marketing Campaigns product and is not yet available within the new Marketing Campaigns experience. For additional information, including when we expect it to be available, click [here]({{root_url}}/ui/sending-email/coming-soon-to-new-marketing-campaigns/
+). 
+
+</call-out>
 
 <iframe src="https://player.vimeo.com/video/229916004" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
@@ -141,6 +147,6 @@ The download link for your CSV export will be valid for 24 hours.
 
  ##	Additional Resources
 
-- [Contacts]({{root_url}}/ui/managing-contacts/adding-contacts/)
+- [Contacts]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/)
 - [Custom Fields]({{root_url}}/ui/managing-contacts/custom-fields/)
 - [Tips on Segmenting Your Active Subscribers](https://sendgrid.com/blog/tips-on-segmenting-your-active-subscribers/)

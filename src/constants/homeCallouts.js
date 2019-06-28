@@ -3,7 +3,7 @@ const HOME_CALLOUTS = [
     BADGE: 'marketing',
     TITLE: 'Marketing Campaigns',
     TAG: '',
-    COPY: 'Use the SendGrid UI to add contacts, create segments, create and send campaigns, and view your stats.',
+    COPY: 'Use the SendGrid UI to add contacts, create segments, create and send emails and automations, and view your stats.',
     LINK: '/ui/sending-email/how-to-send-email-with-marketing-campaigns/',
   },
   {
