@@ -31,7 +31,7 @@ You can create up to 120 custom fields.
 1. Add a _Field Name_ and _Field Type_.
 1. Click **Save**.
 
-You can also add custom fields when you [upload]({{root_url}}/ui/managing-contacts/adding-contacts/#uploading-a-csv) a CSV to the contacts database.
+You can also add custom fields when you [upload]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#uploading-a-csv) a CSV to the contacts database.
 
 The field name should be created using only alphanumeric characters (A-Z and 0-9) and underscores(**_**). The **field type** can be date, text, or number fields. The **field type** is important for creating [segments]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/) from your contact
 database.
@@ -96,5 +96,5 @@ If you do find that the custom field has an associated value on the contact’s 
  ## 	Additional Resources
 
 - [Substitution Tags]({{root_url}}/ui/sending-email/editor/#using-substitution-tags)
-- [Contacts]({{root_url}}/ui/managing-contacts/adding-contacts/)
+- [Contacts]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/)
 - [Segmenting your Contacts]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/)

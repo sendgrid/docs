@@ -18,7 +18,7 @@ const HOME_CARDS = [
     ICON: contacts,
     TITLE: 'Managing Contacts with Marketing Campaigns',
     LINKS: [
-      { URL: '/ui/managing-contacts/adding-contacts/', TEXTNODE: 'Adding Contacts' },
+      { URL: '/ui/managing-contacts/create-and-manage-contacts/', TEXTNODE: 'Create and Manage Contacts' },
       { URL: '/ui/managing-contacts/building-your-contact-list/', TEXTNODE: 'Contacts Best Practices' },
       { URL: '/ui/managing-contacts/segmenting-your-contacts/', TEXTNODE: 'Segmenting Contacts' },
     ],
