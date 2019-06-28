@@ -40,8 +40,6 @@ If, for any reason, you need to resend the verification email, click the action 
 
 ![]({{root_url}}/img/email-validation-clicking.gif "Alt text")
 
-<call-out>
-
 <call-out type="warning">
 
 You must verify the email address associated with your sender identity before you can edit it or use it to send a campaign.
@@ -54,6 +52,8 @@ You may create up to 100 unique senders.
 
 </call-out>
 
+<call-out>
+  
 If you have an [authenticated domain]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/) and your sender email address matches that domain exactly, your sender identity will be automatically verified.
 
 </call-out>
