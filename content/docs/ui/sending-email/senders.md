@@ -8,7 +8,7 @@ navigation:
 seo:
   title: Senders
   override: true
-  description:
+  description: Manage your sender contact information
 ---
 
 <call-out>
@@ -38,7 +38,7 @@ You are required to include your contact information, including a physical maili
 
 If, for any reason, you need to resend the verification email, click the action menu on the Sender Management page and select **Resend Verification**.
 
-![]({{root_url}}/img/email-validation-clicking.gif "Alt text")
+![]({{root_url}}/img/email-validation-clicking.gif "Clicking on the action menu and then selecting Resend Verification")
 
 <call-out type="warning">
 
@@ -75,7 +75,7 @@ Save time and feel confident you are set up for long-term success with Email Imp
 
 ##     Adding Sender Information to a Single Send or Automation Email
 
-SendGrid’s pre-built email templates contain an Unsubscribe module containing your Sender information by default. For templates or emails that you build yourself,  you can insert your sender identity information into your campaigns using the following tags within your campaign or template content:
+SendGrid’s pre-built email templates come with an Unsubscribe module containing your Sender information by default. For templates or emails that you build yourself, you can insert your sender identity information into your campaigns using the following tags within your campaign or template content:
 
 1. **{{sender_name}}** - The sender's name.
 
