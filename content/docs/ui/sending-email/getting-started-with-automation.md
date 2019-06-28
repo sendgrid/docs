@@ -152,6 +152,4 @@ When you re-enable the automation, contacts who previously entered the series wi
 1. Hover over the action menu and select the delete icon.
 1. To delete the automation, click **Confirm**.
 
-## Measure and Track Automations
-
 
