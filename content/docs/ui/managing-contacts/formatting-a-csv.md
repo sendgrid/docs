@@ -50,7 +50,7 @@ If your contacts list has non-English characters, please make sure that you're u
 
 ###  Removing invalid and duplicate addresses
 
-SendGrid removes duplicate and invalid email addresses including email addresses with any special characters except for underscores from your list during upload, so the number of contacts can potentially change between your CSV and your Marketing Campaigns list if you have any duplicate or invalid email addresses.
+SendGrid removes duplicate and invalid email addresses including email addresses with any special characters except for underscores from your list during upload, so the number of contacts can potentially change between your CSV and your Marketing Campaigns list.
 
 ###  Numbers and Text
 
@@ -62,13 +62,9 @@ Format your text fields so that there are no strings of numbers that appear like
 - Monetary Values with the currency indicator such as $3.50 or €5.73
 ```
 
-###     Date Formatting
+### Date Formatting
 
-Properly format any dates in your CSV. If you created your CSV with Excel and it is not displaying correctly, change the date format to display appropriately before exporting to CSV. Use one of the following date formats: `MM/DD/YYYY, MM/D/YYYY, M/D/YYYY`, or `M/DD/YYYY`.
-
-**I have more than one of the same email in my database**.
-
-The new version of Marketing Campaigns uses email as the unique identifier for each contact. If you upload the same email address multiple times, the [custom field]({{root_url}}/ui/managing-contacts/custom-fields/) data associated with that email will update with each upload to the most recently updated information. This feature helps prevent you from accidentally emailing the user after they have unsubscribed. If your contacts database requires duplicate entries, you may want to add logic to set a custom field with the reason why you have duplicate emails in your system (for example multiple product lines) and then [segment] ({{root_url}})/ui/managing-contacts/segmenting-your-contacts/) your recipient to be in the lists based on those custom fields.
+Properly format any dates in your CSV. If you created your CSV with Excel and it is not displaying correctly, change the date format to display appropriately before exporting to CSV. Use one of the following date formats: `MM/DD/YYYY, MM/D/YYYY, M/D/YYYY, or M/DD/YYYY`.
 
 ### Troubleshooting
 
@@ -97,7 +93,7 @@ Listed below are a few errors you may encounter when uploading a CSV to Marketin
 
 **We were unable to detect any headers in your CSV file**.
 
-- Include headers at the top of each column. All CSV uploads must contain the `email` header. Header fields can be blank in your CSV but must be defined later during the upload process.
+- Include headers at the top of each column. All CSV uploads must contain the "email" header. Header fields can be blank in your CSV but must be defined later during the upload process.
 
 ![]({{root_url}}/img/listupload_4.png)
 
@@ -114,4 +110,3 @@ Listed below are a few errors you may encounter when uploading a CSV to Marketin
 - [Contacts API](https://sendgrid-marketing-campaigns-beta.api-docs.io/v1/contacts/)
 - [Segmenting your Contacts]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/)
 - [Building your Contact list]({{root_url}}/ui/managing-contacts/building-your-contact-list/)
-
