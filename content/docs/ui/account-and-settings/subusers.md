@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-Subusers help you segment your email sending and API activity. You assign permissions and credit limits when you create the subusers. We recommend creating subusers for each of the different types of emails you send - one subuser for transactional emails, and another for marketing emails. Breaking your sending up this way allows you to get separate statistics for each type of email you send.
+Subusers help you segment your email sending and API activity. You assign permissions and credit limits when you create the subuser. We recommend creating subusers for each of the different types of emails you send - one subuser for transactional emails, and another for marketing emails. Breaking your sending up this way allows you to get separate statistics for each type of email you send.
 
 <call-out>
 
@@ -29,7 +29,7 @@ New SendGrid accounts do not come with subusers; you must create them with the p
 1. Click **Create New Subuser**.
 1. Enter the following required information into the corresponding fields:
     * Username - The username your subuser will use to send emails and access the API.
-    * Email Address - The contact email address for this subuser. This must be an active email account as SendGrid may contact a subuser to provide support,  resolve sending and deliverability issues, or to enforce [SendGrid's Terms of Service](https://sendgrid.com/policies/tos/). Whenever we contact a subuser, it is our policy to contact the parent account email address at the same time.
+    * Email Address - The contact email address for this subuser. This must be an active email account as SendGrid may contact a subuser to provide support, resolve sending and deliverability issues, or to enforce [SendGrid's Terms of Service](https://sendgrid.com/policies/tos/). Whenever we contact a subuser, it is our policy to contact the parent account email address at the same time.
     * Password - The password your subuser will use to access SendGrid.com.
     * Avatar - If you have [gravatar](http://gravatar.com), or globally recognized avatar, that you use for other applications, it is automatically associated with this subuser when you enter an email address. This makes it easier to identify all of the subusers attached to your account.
 
