@@ -13,7 +13,7 @@ seo:
 ---
 ## What does the new Marketing Campaigns offer? 
 
-The new Marketing Campaigns builds on the existing, well-loved workflows for building, targeting, sending, and measured email marketing campaigns with three new features: Automation, Email Testing, and Signup Forms. 
+The new Marketing Campaigns builds on the existing, well-loved workflows for building, targeting, sending, and measuring email marketing campaigns with three new features: Automation, Email Testing, and Signup Forms. 
 
 ### Automation
 
