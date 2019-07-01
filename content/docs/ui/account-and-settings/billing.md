@@ -251,7 +251,7 @@ Upgrading your account does NOT absorb already incurred overage charges, so make
  </tr>
  <tr>
    <td>Basic 100K</td>
-   <td>100,000 contacts and 200,000 emails</td>
+   <td>100,000 contacts and 300,000 emails</td>
    <td>$0.0023</td>
  </tr>
  <tr>
