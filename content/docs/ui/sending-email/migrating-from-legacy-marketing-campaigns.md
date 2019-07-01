@@ -75,7 +75,7 @@ Emails that you send via new Marketing Campaigns are deducted from your Marketin
 
 ### What are the new package options?
 
-There are three new packages for Marketing Campaigns, Free, Basic, and Advanced. For complete pricing and feature detail, please visit our [pricing page](https://sendgrid.com/pricing/). To upgrade your current page, go to **Your Products** in **Settings**.
+There are three new packages for Marketing Campaigns, Free, Basic, and Advanced. For complete pricing and feature detail, please visit our [pricing page](https://sendgrid.com/pricing/). To upgrade your current page, go to **Settings** and then select **Your Products**.
 
 <call-out>
 
