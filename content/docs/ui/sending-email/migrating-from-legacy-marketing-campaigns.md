@@ -66,7 +66,7 @@ Any emails you sent using Marketing Campaigns were deducted from your base Email
 
 **New Marketing Campaigns**
 
-Choose a Marketing Campaigns package, either [Basic or Advanced text](#what-are-the-new-package-options). Basic starts at $15/mo and Advanced starts at $60/mo.
+Choose a Marketing Campaigns package, either [Basic or Advanced](#what-are-the-new-package-options). Basic starts at $15/mo and Advanced starts at $60/mo.
 
 The package includes an allotment of **both** contacts you can store and emails you can send. If you send over your allotment of emails or store more contacts you will be charged an additional fee per email or contact.
 
