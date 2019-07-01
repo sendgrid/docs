@@ -14,18 +14,9 @@ seo:
 
 <call-out>
 
-<<<<<<< HEAD
-Custom Fields are currently only available in the legacy Marketing Campaigns product and is not yet available within the new Marketing Campaigns experience. For additional information, including when we expect it to be available, click [here]({{root_url}}/ui/sending-email/coming-soon-to-new-marketing-campaigns/
-). 
-
-</call-out>
-
-<iframe src="https://player.vimeo.com/video/120709155" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-=======
 This page is describing the functionality of the new Marketing Campaigns experience, if you're using legacy Marketing Campaigns, your workflow and screens may be a little different. For more information on the new Marketing Campaigns experience click [here](https://sendgrid.com/pricing).
 
 </call-out>
->>>>>>> 139da428be7c36bba5715acc3eed5347cfa9f0fa
 
 
 Custom fields allow you to add extra information about a contact within your contact database when you upload a CSV. You can use custom fields to create dynamic [segments]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/) or to personalize the subject lines or content of Marketing Campaigns emails you send. Your custom fields are completely customizable to the use cases and user information that you need.
@@ -47,12 +38,6 @@ You can also add custom fields manually from the Custom Fields page.
 1. Navigate to the Custom Fields page and click **New Custom Field**.
 1. Add a _Field Name_ and select a _Field Type_.
 1. Click **Create Field**.
-
-
-<<<<<<< HEAD
-You can also add custom fields when you [upload]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#uploading-a-csv) a CSV to the contacts database.
-=======
->>>>>>> 139da428be7c36bba5715acc3eed5347cfa9f0fa
 
 The field name should be created using only alphanumeric characters (A-Z and 0-9) and underscores(**_**). The **field type** can be date, text, or number fields. The **field type** is important for creating [segments]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/) from your contact
 database.
