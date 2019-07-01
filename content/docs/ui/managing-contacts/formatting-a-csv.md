@@ -56,11 +56,11 @@ SendGrid removes duplicate and invalid email addresses including email addresses
 
 Format your text fields so that there are no strings of numbers that appear like phone numbers, zip codes, and so on. They should not contain punctuation characters like a dash, underscore, parenthesis, or multiple dots.
 
-`"
+```
 - US Zip Code: 80202-1713
 - Phone numbers: "(555) 555-5555" or "555.555.5555"
 - Monetary Values with the currency indicator such as $3.50 or €5.73
-`"
+```
 
 ### Date Formatting
 
