@@ -100,7 +100,7 @@ From the UI, you can edit Unsubscribe Groups or download a list of recipients th
 
 1. Navigate to the Unsubscribe Group you want to export.
 1. Click the action menu.
-1. Select **Export**. A CSV file begins downloading.
+1. Select **Export**. Once the export is completed, a download link will be sent to the email(s) you either signed up with, or have set to receive [notifications]({{root_url}}/ui/account-and-settings/notifications/).
 
 ### Editing an Unsubscribe Group
 
@@ -109,6 +109,7 @@ From the UI, you can edit Unsubscribe Groups or download a list of recipients th
 1. Navigate to the Unsubscribe Group you want to edit.
 1. Click the action menu.
 1. Select **Edit**.
+
 From the Edit Group page, you can change the Group Name, Group Description, and display preferences.
 
 ### Deleting an Unsubscribe Group
