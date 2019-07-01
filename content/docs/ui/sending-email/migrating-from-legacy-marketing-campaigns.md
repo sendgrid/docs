@@ -205,7 +205,7 @@ If you have more than 2,000 contacts in legacy Marketing Campaigns at the end of
 
 You can choose to migrate all of your contacts to new Marketing Campaigns, or you can migrate specific lists and segments. You can do this via the UI by exporting from legacy and importing to new Marketing Campaigns or you can use the Contact Management APIs.
 
-While you can download the contacts who are on a segment at the time you export and add them to All Contacts or a list, you cannot migrate the segment logic you’ve built. You’ll need to re-create [segments]({{root_url}}/ui/sending-email/managing-contacts/segmenting-your-contacts/) you’d like to use in new Marketing Campaigns.
+While you can download the contacts who are on a segment at the time you export and add them to All Contacts or a list, you cannot migrate the segment logic you’ve built. You’ll need to re-create [segments]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/) you’d like to use in new Marketing Campaigns.
 
 *Migrate contacts using the UI*:
 
