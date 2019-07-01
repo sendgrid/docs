@@ -28,28 +28,11 @@ Your CSV should contain the following information about each contact:
 * first_name
 * last_name
 
-<<<<<<< HEAD
-In addition to "email", "first_name", and "last_name", there are several other [reserved fields]({{root_url}}/ui/managing-contacts/custom-fields/#reserved-fields) such as "city" and "zipcode." You can also include [custom fields]({{root_url}}/ui/managing-contacts/custom-fields/) with additional identifying information for each contact in the CSV. For example, you can specify "birthday", "occupation", and "age" as the custom fields. The data in the custom fields are critical for both segmentation and content personalization.
+In addition to `email`, `first_name`, and `last_name`, there are several other [reserved fields]({{root_url}}/ui/managing-contacts/custom-fields/#reserved-fields) such as `city` and `zipcode`. You can also include [custom fields]({{root_url}}/ui/managing-contacts/custom-fields/) with additional identifying information for each contact in the CSV. For example, you could specify `birthday`, `occupation`, and `age` as the custom fields. The data in the custom fields are critical for both segmentation and content personalization.
 
 ### Header Row
 
-The first row of your CSV must be a header row containing labels identifying each column. Headers must only use letters, numbers, and underscores. Header fields can be blank in your CSV, but must be named and have their type defined later during the upload process.
-
-<call-out>
-
-You cannot use spaces, dashes, or other special characters except for underscores in a CSV. 
-
-</call-out>
-
-If you add custom field data to your CSV, you can save some time when uploading by naming the columns the same as the custom fields you have previously defined.
-
-SendGrid identifies individual contacts by their email address, so "email" is required to be one of the CSV headers. If you do not include the email column, SendGrid will not add any information to your contact database or list. Rows in your CSV without an email address in the email column will automatically fail, but will not cause the entire upload to fail.
-=======
-In addition to "email", "first_name", and "last_name", there are several other [reserved fields]({{root_url}}/ui/managing-contacts/custom-fields/#reserved-fields) such as "city" and "zipcode.". You can also include [custom fields]({{root_url}}/ui/managing-contacts/custom-fields/) with additional identifying information for each contact in the CSV. For example, you couldcan specify "birthday", "occupation", and "age" as the custom fields. The data in the custom fields are critical for both segmentation and content personalization.
-
-### Header Row
-
-The first row of your CSV must be a header row containing labels identifying each column. Headers shouldmust only use letters, numbers, and underscores. Header fields can be blank in your CSV, but must be named and have their type defined later during the upload process.
+The first row of your CSV must be a header row containing labels identifying each column. Headers should only use letters, numbers, and underscores. Header fields can be blank in your CSV, but must be named and have their type defined later during the upload process.
 
 <call-out>
 
@@ -59,8 +42,7 @@ You cannot use spaces, dashes, or other special characters, except for underscor
 
 If you add custom field data to your CSV, you can save some time when uploading by naming the columns the same as the custom fields you have previously defined.
 
-SendGrid identifies individual contacts by their email address, so one of the CSV headers must be “email”. SendGrid identifies individual contacts by their email address, so "email" is required to be one of the CSV headers. If you do not include the email column, SendGrid will not add any information to your contact database or list. Rows in your CSV without an email address in the email column will automatically fail, but will not cause the entire upload to fail.
->>>>>>> upstream/develop
+SendGrid identifies individual contacts by their email address, so one of the CSV headers must be `email`. SendGrid identifies individual contacts by their email address, so `email` is required to be one of the CSV headers. If you do not include the email column, SendGrid will not add any information to your contact database or list. Rows in your CSV without an email address in the email column will automatically fail, but will not cause the entire upload to fail.
 
  ### Character Encoding
 
@@ -68,11 +50,7 @@ If your contacts list has non-English characters, please make sure that you're u
 
 ###  Removing invalid and duplicate addresses
 
-<<<<<<< HEAD
 SendGrid removes duplicate and invalid email addresses including email addresses with any special characters except for underscores from your list during upload, so the number of contacts can potentially change between your CSV and your Marketing Campaigns list.
-=======
-SendGrid removes duplicate and invalid email addresses including email addresses with any special characters except for underscores from your list during upload, so the number of contacts can potentially change between your CSV and your Marketing Campaigns list if you have any duplicate or invalid email addresses.
->>>>>>> upstream/develop
 
 ###  Numbers and Text
 
@@ -83,25 +61,10 @@ Format your text fields so that there are no strings of numbers that appear like
 - Phone numbers: "(555) 555-5555" or "555.555.5555"
 - Monetary Values with the currency indicator such as $3.50 or €5.73
 `"
-<<<<<<< HEAD
 
-###     Date Formatting
-
-Properly format any dates in your CSV. If you created your CSV with Excel and it is not displaying correctly, force the date format to display appropriately before exporting to CSV. Use one of the following date formats: `MM/DD/YYYY, MM/D/YYYY, M/D/YYYY, or M/DD/YYYY`.
-
-**I have more than one of the same email in my database**.
-
-The new version of Marketing Campaigns uses email as the unique identifier for each contact. If you upload the same email address multiple times, the [custom field]({{root_url}}/ui/managing-contacts/custom-fields/) data associated with that email will update with each upload to the most recently updated information. This feature helps prevent you from accidentally emailing the user after they have unsubscribed. If your contacts database requires duplicate entries, you may want to add logic to set a custom field with the reason why you have duplicate emails in your system (for example multiple product lines) and then [segment] ({{root_url}})/ui/managing-contacts/segmenting-your-contacts/) your user to be in the lists based on those custom fields.
-=======
-
-###     Date Formatting
+### Date Formatting
 
 Properly format any dates in your CSV. If you created your CSV with Excel and it is not displaying correctly, change the date format to display appropriately before exporting to CSV. Use one of the following date formats: `MM/DD/YYYY, MM/D/YYYY, M/D/YYYY, or M/DD/YYYY`.
-
-**I have more than one of the same email in my database**.
-
-The new version of Marketing Campaigns uses email as the unique identifier for each contact. If you upload the same email address multiple times, the [custom field]({{root_url}}/ui/managing-contacts/custom-fields/) data associated with that email will update with each upload to the most recently updated information. This feature helps prevent you from accidentally emailing the user after they have unsubscribed. If your contacts database requires duplicate entries, you may want to add logic to set a custom field with the reason why you have duplicate emails in your system (for example multiple product lines) and then [segment] ({{root_url}})/ui/managing-contacts/segmenting-your-contacts/) your recipient to be in the lists based on those custom fields.
->>>>>>> upstream/develop
 
 ### Troubleshooting
 
@@ -123,8 +86,8 @@ Listed below are a few errors you may encounter when uploading a CSV to Marketin
 
 **Each custom field can only be applied to a column once. Please check your columns and try again**.
 
-- Check your CSV for duplicate fields, especially fields that have matching information as your "email", "first_name" and "last_name" fields. You cannot edit these field names as they are reserved.
-- For example, if you have a "Name" field, it may conflict with your "first_name" reserved field.
+- Check your CSV for duplicate fields, especially fields that have matching information as your `email`, `first_name` and `last_name` fields. You cannot edit these field names as they are reserved.
+- For example, if you have a "Name" field, it may conflict with your `first_name` reserved field.
 
 ![]({{root_url}}/img/listupload_3.png)
 
@@ -144,13 +107,6 @@ Listed below are a few errors you may encounter when uploading a CSV to Marketin
 
  ##     Additional Resources
 
-<<<<<<< HEAD
-- [Contacts API]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html)
-- [Segmenting your Contacts]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/)
-- [Building your Contact list]({{root_url}}/ui/managing-contacts/building-your-contact-list/)
-=======
 - [Contacts API](https://sendgrid-marketing-campaigns-beta.api-docs.io/v1/contacts/)
 - [Segmenting your Contacts]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/)
 - [Building your Contact list]({{root_url}}/ui/managing-contacts/building-your-contact-list/)
-
->>>>>>> upstream/develop
