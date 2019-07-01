@@ -228,7 +228,7 @@ Make sure all of the column headers you wish to import are mapped to custom fiel
 
 <call-out>
 
-If there are any column headers you have not made custom fields for yet, you can click on **Select a Field**, and then scroll down the drop-down menu and click **Create New** [**Custom Field**]({{root_url}}/ui/i/sending-email/custom-fields/).
+If there are any column headers you have not made custom fields for yet, you can click on **Select a Field**, and then scroll down the drop-down menu and click **Create New** [**Custom Field**]({{root_url}}/ui/sending-email/custom-fields/).
 
 </call-out>
 
@@ -271,7 +271,7 @@ Switching from a template made in the Code Editor into a Design Editor can cause
 
 8. Paste the HTML you copied from the downloaded file into the code editor and then click **Save** if you are using the **Code Editor**. Click **Update** and then **Save** if you are using the **Design Editor** .
 
-Make sure that you are using the new [substitution tags ]({{root_url}}//ui/sending-email/editor/#using-substitution-tags). For Example, instead of using ``[%first_name%]``, you will now use ``{{first_name}}``.
+Make sure that you are using the new [substitution tags]({{root_url}}/ui/sending-email/editor/#using-substitution-tags). For example, instead of using ``[%first_name%]``, you will now use ``{{first_name}}``.
 
 ![]({{root_url}}/img/substitution-tag-comparison.png "substitution tag comparison")
 
