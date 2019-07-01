@@ -376,7 +376,7 @@ To download data about individual contacts, including when they were last sent a
 
 ## Integrate with the new Marketing Campaigns APIs
 
-The new Marketing Campaigns experience offers APIs so you can programmatically manage your marketing emails. The functionality of these APIs is currently limited to contact management, but new APIs are [coming soon]({{root_url}}/ui/sending-email/coming-soon-to-marketing-campaigns/). For more information, or to view the API documentation, [click here](https://sendgrid-marketing-campaigns-beta.api-docs.io/v1/getting-started/authentication).
+The new Marketing Campaigns experience offers APIs so you can programmatically manage your marketing emails. The functionality of these APIs is currently limited to contact management, but new APIs are [coming soon]({{root_url}}/ui/sending-email/coming-soon-to-new-marketing-campaigns/). For more information, or to view the API documentation, [click here](https://sendgrid-marketing-campaigns-beta.api-docs.io/v1/getting-started/authentication).
 
 ## FAQs
 
@@ -407,7 +407,7 @@ Have confidence your emails are flawless with integrated email testing. See how 
 
 *Signup Forms* 
 
-Capture new signups and add them directly to your new Marketing Campaigns contacts. These forms can be embedded directly on your website or shared via a Twilio SendGrid-hosted URL. [Learn  more]({{root_url}}/ui/sending-email/create-and-manage-contacts/#create-a-signup-form). 
+Capture new signups and add them directly to your new Marketing Campaigns contacts. These forms can be embedded directly on your website or shared via a Twilio SendGrid-hosted URL. [Learn  more]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#create-a-signup-form). 
 
 *Familiar features and functionality from legacy*
  
