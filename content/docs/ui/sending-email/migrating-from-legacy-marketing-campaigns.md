@@ -322,7 +322,7 @@ Exporting images from your library is a manual process at this time, so we recom
 1. From the **Code Editor**, click the image icon in the top right corner of the code window to pull up the image library.
 1. Find an image you’d like to export, and then copy the Image Source URL and paste it into a browser window.
 1. Right click on the image to save it locally to your computer.
-1. You can then upload the image you’d like to add to your new draft by following [these steps]({{root_url}}/ui/sending-email/editor/#add-images). 
+1. You can then upload the image you’d like to add to your new draft by following [these steps]({{root_url}}/ui/sending-email/editor/#adding-images). 
 
 ## Create notifications
 
