@@ -13,7 +13,7 @@ seo:
 ---
 ## What does the new Marketing Campaigns offer? 
 
-The new Marketing Campaigns builds on the existing, well-loved workflows for building, targeting, sending, and measuring email marketing campaigns with three new features, Automation, Email Testing, and Signup Forms. 
+The new Marketing Campaigns builds on the existing, well-loved workflows for building, targeting, sending, and measuring email marketing campaigns with three new features: Automation, Email Testing, and Signup Forms. 
 
 ### Automation
 
@@ -25,10 +25,11 @@ Have confidence your emails are flawless with integrated email testing. See how 
 
 ### Signup Forms 
 
-Capture new signups and add them directly to your contacts in the new Marketing Campaigns. The simple, easy to build forms can be embedded directly on your website or shared via a Twilio SendGrid-hosted URL. [Learn More ]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#create-a-signup-form). 
+Capture new signups and add them directly to your contacts in the new Marketing Campaigns. These forms can be embedded directly on your website or shared via a Twilio SendGrid-hosted URL. [Learn More ]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#create-a-signup-form). 
+
 ## Familiar features and functionality from legacy 
 
-These new features build on the functionality you’re used to in legacy Marketing Campaigns. This means after a few simple migration steps, you’ll be up and running quickly thanks to familiar workflows you already know.  
+These new features build on the functionality you’re used to in legacy Marketing Campaigns. This means after a few migration steps, you’ll be up and running quickly thanks to familiar workflows you already know.  
 
 All features from legacy Marketing Campaigns will be carried over to new Marketing Campaigns, though there are a few that will not be available immediately. You can track those items on our [coming soon to Marketing Campaigns page]({{root_url}}/ui/sending-email/coming-soon-to-new-marketing-campaigns/). 
 
@@ -65,7 +66,7 @@ Any emails you sent using Marketing Campaigns were deducted from your base Email
 
 **New Marketing Campaigns**
 
-Choose a Marketing Campaigns package, either [Basic or Advanced text](#what-are-the-new-package-options). Basic starts at $15/mo and Advanced starts at $60/mo.
+Choose a Marketing Campaigns package, either [Basic or Advanced](#what-are-the-new-package-options). Basic starts at $15/mo and Advanced starts at $60/mo.
 
 The package includes an allotment of **both** contacts you can store and emails you can send. If you send over your allotment of emails or store more contacts you will be charged an additional fee per email or contact.
 
@@ -74,7 +75,7 @@ Emails that you send via new Marketing Campaigns are deducted from your Marketin
 
 ### What are the new package options?
 
-There are three new packages for Marketing Campaigns, Free, Basic, and Advanced. For complete pricing and feature detail, please visit our [pricing page](https://sendgrid.com/pricing/). To upgrade your current page, go to Your Products in Settings.
+There are three new packages for Marketing Campaigns, Free, Basic, and Advanced. For complete pricing and feature detail, please visit our [pricing page](https://sendgrid.com/pricing/). To upgrade your current page, go to **Settings** and then select **Your Products**.
 
 <call-out>
 
@@ -169,8 +170,8 @@ In this scenario, you might choose to change your Email API plan to **Pro 100K**
 
 ## How do I upgrade my Marketing Campaigns plan? 
 
-Navigate to **Settings**, click **Account Details**, and then **Your Products**
-Review your current plan details as well as your usage this month. It’s helpful to have a sense of how many emails you’re sending and how many contacts you store.
+1. Navigate to **Settings**, click **Account Details**, and then **Your Products**.
+1. Review your current plan details as well as your usage this month. It’s helpful to have a sense of how many emails you’re sending and how many contacts you store.
 
 <call-out>
 
@@ -178,9 +179,9 @@ You can review prior usage by navigating to **Invoices** under **Plan & Billing*
 
 </call-out>
 
-To choose your new Marketing Campaigns plan, click **Upgrade Plan**. 
-By default, your plan will be Free 2K. To select a new plan, start by deciding whether you want Basic or Advanced features.
-Next,  choose the right tier of contact storage and volume of emails that you’ll send using Marketing Campaigns in a given month. 
+3. Click **Upgrade Plan** to choose your new Marketing Campaigns plan. 
+4. By default, your plan will be Free 2K. To select a new plan, start by deciding whether you want Basic or Advanced features.
+5. Next, choose the right tier of contact storage and volume of emails that you’ll send using Marketing Campaigns in a given month. 
 
 <call-out>
 
@@ -188,15 +189,15 @@ Need a higher tier of contact storage or email volume? Simply scroll to the bott
 
 </call-out>
 
-Click Select to review your plan choice. You’ll see your new Marketing Campaigns plan monthly price, as well as the prorated price you’ll pay for the current month.
-Click **Confirm**.  
+6. Click **Select** to review your plan choice. You’ll see your new Marketing Campaigns plan monthly price, as well as the prorated price you’ll pay for the current month.
+7. Click **Confirm**.  
 
 
 To support your migration effort, you’ll have a billing grace period through the next complete billing cycle to migrate your contacts from legacy Marketing Campaigns to new Marketing Campaigns. During this grace period, you will not be charged for contact storage in legacy Marketing Campaigns.
 
 <call-out type="warning">
 
-If you have more than 2,000 contacts in legacy Marketing Campaigns at the end of the billing grace period, you’ll be charged $10/10,000 legacy Marketing Campaigns contacts moving forward. 
+If you have more than 2,000 contacts in legacy Marketing Campaigns at the end of the billing grace period, you’ll be charged $10 per 10,000 legacy Marketing Campaigns contacts moving forward. 
 
 </call-out>
 
@@ -204,35 +205,34 @@ If you have more than 2,000 contacts in legacy Marketing Campaigns at the end of
 
 You can choose to migrate all of your contacts to new Marketing Campaigns, or you can migrate specific lists and segments. You can do this via the UI by exporting from legacy and importing to new Marketing Campaigns or you can use the Contact Management APIs.
 
-While you can download the contacts who are on a segment at the time you export and add them to All Contacts or a list, you cannot migrate the segment logic you’ve built. You’ll need to re-create [segments]({{root_url}}/ui/sending-email/managing-contacts/segmenting-your-contacts/) you’d like to use in new Marketing Campaigns.
+While you can download the contacts who are on a segment at the time you export and add them to All Contacts or a list, you cannot migrate the segment logic you’ve built. You’ll need to re-create [segments]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/) you’d like to use in new Marketing Campaigns.
 
 *Migrate contacts using the UI*:
 
 1. Navigate to **Contacts** in legacy Marketing Campaigns.
 1. Find the list or segment of contacts you wish to export. 
 1. Hover over the action menu and select the **Export** icon.
-Once the export is completed, a download link will be sent to the email(s) you either signed up with or have set to receive [notifications]({{root_url}}/ui/account-and-settings/notifications/) about legacy Marketing Campaigns.
-Navigate to **Contacts** in new Marketing Campaigns.
+1. Once the export is completed, a download link will be sent to the email(s) you either signed up with, or have set to receive [notifications]({{root_url}}/ui/account-and-settings/notifications/).
+1. Navigate to **Contacts** in new Marketing Campaigns.
 
 <call-out>
 
 Before uploading your CSV, make sure it is formatted correctly by comparing it to this [template]({{root_url}}/assets/example.csv).
 
-
 </call-out>
 
-4. Click **Add Contacts** and then select **Upload CSV**.
-5. Choose whether to add your contacts to All Contacts, to an existing list, or to a new list you create.
-6. Upload your CSV file by dragging it into or clicking the CSV upload area. 
+6. Click **Add Contacts** and then select **Upload CSV**.
+7. Choose whether to add your contacts to All Contacts, to an existing list, or to a new list you create.
+8. Upload your CSV file by dragging it into or clicking the CSV upload area. 
 Make sure all of the column headers you wish to import are mapped to custom fields.
 
 <call-out>
 
-If there are any column headers you have not made custom fields for yet, you can click on **Select a Field**, and then scroll down the drop-down menu and click **Create New** [**Custom Field**]({{root_url}}/ui/i/sending-email/custom-fields/).
+If there are any column headers you have not made custom fields for yet, you can click on **Select a Field**, and then scroll down the drop-down menu and click **Create New** [**Custom Field**]({{root_url}}/ui/sending-email/custom-fields/).
 
 </call-out>
 
-Once the CSV file has finished processing, a confirmation will be sent to the email(s)you have set to receive notifications about new Marketing Campaigns activity.
+9. Once the CSV file has finished processing, a download link will be sent to the email(s) you either signed up with, or have set to receive [notifications]({{root_url}}/ui/account-and-settings/notifications/).
 
 <call-out type="warning">
 
@@ -255,23 +255,23 @@ You may have pre-existing images, templates, or campaigns that you’d like to r
 
 <call-out type="warning">
 
-Images embedded in your templates or past campaigns will continue to populate from your legacy Marketing Campaigns image library. To ensure no images break in the future when legacy Marketing Campaigns is deprecated, consider updating links to pull images from your new Marketing Campaigns image library.” 
+Images embedded in your templates or past campaigns will continue to populate from your legacy Marketing Campaigns image library. To ensure no images break in the future when legacy Marketing Campaigns is deprecated, consider updating links to pull images from your new Marketing Campaigns image library.
 
 </call-out>
 
 5. Navigate to **Templates** in new Marketing Campaigns and select **My Templates**.
 6. Click **Create Template**, and then select either the **Design Editor** or the **Code Editor**.
-7. If you’re using the **Design Editor**, navigate to **Build**, select **Advanced** and then click **Import Drag & Drop HTML**. If you’re using the **Code Editor**, paste in the HTML.
+7. If you’re using the **Design Editor**, navigate to **Build**, select **Advanced** and then click **Import Drag & Drop HTML**. If you’re using the **Code Editor**, paste in the HTML into the HTML editor.
 
 <call-out> 
 
-Switching from a template made in the Code Editor into a Design Editor can cause some unwanted changes. Sticking to the editor you started with can help keep this transfer smooth and easy.
+Switching from a template made in the Code Editor into a Design Editor can cause some unwanted changes. Sticking to the editor you started with can help keep this transfer smooth and prevent any formatting issues.
 
 </call-out>
 
-8. Paste the HTML you copied from the downloaded file into the code editor and then click **Save** if you are using the **Code Editor** and **Update** and then **Save** if you are using the **Design Editor** .
+8. Paste the HTML you copied from the downloaded file into the code editor and then click **Save** if you are using the **Code Editor**. Click **Update** and then **Save** if you are using the **Design Editor** .
 
-Make sure that you are using the new [substitution tags ]({{root_url}}//ui/sending-email/editor/#using-substitution-tags). For Example, instead of using ``[%first_name%]``, you will now use ``{{first_name}}``.
+Make sure that you are using the new [substitution tags]({{root_url}}/ui/sending-email/editor/#using-substitution-tags). For example, instead of using ``[%first_name%]``, you will now use ``{{first_name}}``.
 
 ![]({{root_url}}/img/substitution-tag-comparison.png "substitution tag comparison")
 
@@ -285,10 +285,10 @@ Make sure that your unsubscription tags and groups are also up to date. You can 
 
 You may have email designs from campaigns that you’d like to re-use in new Marketing Campaigns that aren’t saved as a standalone template. You can do so by exporting the email content from these campaigns and importing them as a template in new Marketing Campaigns.
 
-*To navigate your campaign designs*
+*To navigate your campaign designs*:
 
 1. Navigate to **Campaigns** in legacy Marketing Campaigns.
-1 Locate the campaign you wish to migrate and hover over the action menu until the icons appear and select the **Export HTML** icon. The campaign HTML downloads to the folder specified on your computer.
+1 Locate the campaign you wish to migrate and hover over the action menu until the icons appear. Select the **Export HTML** icon. The campaign HTML downloads to the folder specified on your computer.
 1. Navigate to the Automation or Single Sends dashboard.
 1. Click into the Automation you want to edit and find the email you want to add the exported HTML to. For Single Sends, click directly into the email you want to add the exported HTML to.
 1. Hover over the action menu and select **Add Email Content**.
@@ -322,7 +322,7 @@ Exporting images from your library is a manual process at this time, so we recom
 1. From the **Code Editor**, click the image icon in the top right corner of the code window to pull up the image library.
 1. Find an image you’d like to export, and then copy the Image Source URL and paste it into a browser window.
 1. Right click on the image to save it locally to your computer.
-You can then upload the image you’d like to add to your new draft by following [these steps]({{root_url}}/ui/sending-email/editor/#add-images). 
+1. You can then upload the image you’d like to add to your new draft by following [these steps]({{root_url}}/ui/sending-email/editor/#adding-images). 
 
 ## Create notifications
 
@@ -330,11 +330,11 @@ Notifications are not carried over from legacy to new Marketing Campaigns. Pleas
 
 1. Navigate to **Notifications** in new Marketing Campaigns and then click **Add Email**.
 1. Enter the name and email of the person or account who you want to receive any notification emails.
-1. Click **Save**. The name and email should appear on the **Notifications** page.
+1. Click **Save**. The name and email will display on the **Notifications** page.
 
 ## Review Senders and Unsubscribe Groups
 
-Senders and Unsubscribe Groups are carried over from legacy Marketing Campaigns. You don’t need to make any changes, but it’s a good opportunity to make any adjustments you’ve had in mind. 
+Senders and Unsubscribe Groups are carried over from legacy Marketing Campaigns. You don’t need to make any changes, but now is a good opportunity to make any adjustments you’ve had in mind. 
 
 ## Export data you wish to reference
 
@@ -376,13 +376,14 @@ To download data about individual contacts, including when they were last sent a
 
 ## Integrate with the new Marketing Campaigns APIs
 
-The new Marketing Campaigns experience offers APIs so you can programmatically manage your marketing emails. The functionality of these APIs is currently limited to contact management, but new APIs are [coming soon]({{root_url}}/ui/sending-email/coming-soon-to-marketing-campaigns/). For more information, or to view the API documentation, [click here](https://sendgrid-marketing-campaigns-beta.api-docs.io/v1/getting-started/authentication).
+The new Marketing Campaigns experience offers APIs so you can programmatically manage your marketing emails. The functionality of these APIs is currently limited to contact management, but new APIs are [coming soon]({{root_url}}/ui/sending-email/coming-soon-to-new-marketing-campaigns/). For more information, or to view the API documentation, [click here](https://sendgrid-marketing-campaigns-beta.api-docs.io/v1/getting-started/authentication).
 
 ## FAQs
 
 ### What happens if I choose not to migrate? 
 
-Nothing will happen to your legacy Marketing Campaigns account until the product is sunset at some time in 2020. Until then, you can continue using legacy Marketing Campaigns as you’re used to. 
+Nothing will happen to your legacy Marketing Campaigns account until the product is discontinued at a later time in 2020. Until then, you can continue using legacy Marketing Campaigns as you’re used to. 
+
 ### How long will legacy Marketing Campaigns be available? 
 
 At this time no date has been set for the deprecation of Legacy Marketing Campaigns. At a minimum, it will remain available for you until some time in 2020.
@@ -406,7 +407,7 @@ Have confidence your emails are flawless with integrated email testing. See how 
 
 *Signup Forms* 
 
-Capture new signups and add them directly to your new Marketing Campaigns contacts. The simple, easy to build forms can be embedded directly on your website or shared via a Twilio SendGrid-hosted URL. [Learn  more]({{root_url}}/ui/sending-email/create-and-manage-contacts/#create-a-signup-form). 
+Capture new signups and add them directly to your new Marketing Campaigns contacts. These forms can be embedded directly on your website or shared via a Twilio SendGrid-hosted URL. [Learn  more]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#create-a-signup-form). 
 
 *Familiar features and functionality from legacy*
  
@@ -420,7 +421,7 @@ Yes! By default, you have access to the new Marketing Campaigns Free package in 
 
 There is no impact to your legacy Marketing Campaigns account by testing or upgrading to new Marketing Campaigns. When you upgrade to either the new Basic or Advanced package, you’ll be given a grace period to support your migration from legacy to new Marketing Campaigns. During this time, you will not be charged for contact storage in legacy Marketing Campaigns. 
 
-Once the grace period has ended, you’ll be charged for any contacts over the free allotment of 2,000 that you’re storing in legacy Marketing Campaigns. 
+Once the grace period has ended, you’ll be charged for any contacts over the free allotment of 2,000 in your legacy Marketing Campaigns storage. 
 
 ### I don’t see the new Marketing Campaigns in my account. What should I do?
 
@@ -429,11 +430,13 @@ If you do not see the new Marketing Campaigns in your account, please contact su
 ### I have more than 200,000 contacts. What should I do?
 
 To purchase a new Marketing Campaigns package above the Advanced 200K plan, please [contact our sales team](https://sendgrid.com/contact-us-form/).
+
 ### Are there services to help me with migration?
 
 Yes. There is a paid service where our experts will help get you quickly and successfully migrated to the new Marketing Campaigns. They’ll review your email marketing program, provide migration support, and teach you what you need to know to hit the ground running with the new Marketing Campaigns. Learn more about this migration service.
+
 ### I have dedicated IP(s) I’ve already warmed up. What happens to them? 
 
-No change will be made to your existing dedicated IPs unless you lose access by downgrading your Email API plan to Essentials or Free. If you choose an Advanced Marketing Campaigns plan, you’ll be granted a new, additional dedicated IP address. This will need to be [warmed up]({{root_url}}/ui/sending-email/ip-warmup-for-the-new-marketing-campaigns-experience/) to ensure a positive sender reputation. 
+No changes will be made to your existing dedicated IPs unless you lose access by downgrading your Email API plan to Essentials or Free. If you choose an Advanced Marketing Campaigns plan, you’ll be granted a new, additional dedicated IP address. This will need to be [warmed up]({{root_url}}/ui/sending-email/ip-warmup-for-the-new-marketing-campaigns-experience/) to ensure a positive sender reputation. 
 
 Email that you send from new Marketing Campaigns will be sent across all dedicated IPs you have for your account or subuser. You can choose to assign specific IPs to individual [subusers]({{root_url}}/ui/account-and-settings/subusers/#adding-subusers-to-dedicated-ip-addresses) to segment your sending across specific IP addresses. 
