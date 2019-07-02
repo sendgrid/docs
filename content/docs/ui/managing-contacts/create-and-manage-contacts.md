@@ -31,15 +31,13 @@ You can add contacts to a list via CSV Upload or by creating a Signup Form to au
 1. Use [this CSV template]({{root_url}}/assets/example.csv) to make sure your CSV is formatted correctly.
 1. Click **Add Contacts** and then select **Upload CSV**.
 1. Choose whether to add your contacts to All Contacts, to an existing list, or to a new list you create.
+1. Upload your file by dragging it into or clicking the CSV upload area and selecting a file from your computer. 
+1. Click **Next: Review CSV Upload**.
+1. On this page, all fields are listed and you can see which fields don't have a corresponding reserved or system field. 
+1. For each unmapped field, select a custom field from the drop-down or to create a new custom field, click **Create New Custom Field**. 
+1. When you're done mapping the fields, click **Next: Add Contacts**. 
 
-<call-out>
-
-At this phase of the beta, custom fields are not supported. You can import [reserved fields]({{root_url}}/ui/managing-contacts/custom-fields/#reserved-fields), including ``email``, ``first_name``, ``last_name``, and address fields.
-
-</call-out>
-
-4. Upload your file by dragging it into or clicking the CSV upload area.
-   Once the CSV has processed, you will receive a [notification]({{root_url}}/ui/sending-email/getting-started-with-automation/#notifications) email.
+Once the CSV has processed, you will receive a [notification]({{root_url}}/ui/account-and-settings/notifications/) email.
 
 ### Create a signup form
 
