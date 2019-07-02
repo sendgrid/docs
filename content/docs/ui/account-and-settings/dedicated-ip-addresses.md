@@ -43,28 +43,28 @@ You can purchase an additional dedicated IP Address from the IP Addresses Settin
 *To add an additional dedicated IP Address:*
 
 1. In the left navigation, select **Settings** and then click **IP Addresses**.
-   Here you'll see a list of your current d IPs. Your IPs in warmup will have a 'warmup' label
+   Here you'll see a list of your current d IPs. Your IPs in warmup will have a 'warmup' label.
 1. Click **Add an IP Address**.
 1. Select the number of IP addresses you would like to purchase.
 
 Under "Additional Options" you will find the following options:
 
-  - **Use automated IP warmup**: SendGrid will gradually increase the amount of email sent over this IP. Note: It is best practice to [warm an IP address]({{root_url}}/ui/sending-email/warming-up-an-ip-address/) over time before sending fully over that IP address. When using automated warmup, you must have at least one other warm IP that can handle the overflow traffic from the IP in warmup.
+  - **Use automated IP warmup**: SendGrid will gradually increase the amount of email sent over this IP. Note: It is best practice to [warm an IP address]({{root_url}}/ui/sending-email/ip-warmup-for-the-new-marketing-campaigns-experience/) over time before sending fully over that IP address. When using automated warmup, you must have at least one other warm IP that can handle the overflow traffic from the IP in warmup.
   - **Allow my parent account to send mail using these IP addresses**: You want your parent account to be able to send over this IP. If you are assigning this IP to a subuser and only want that subuser to have permission to send on this IP, leave this box unchecked.
-  - **Allow my subusers to send mail using these IP addresses**: Select which subusers can send on this IP address
+  - **Allow my subusers to send mail using these IP addresses**: Select any subusers you would like to send on this IP address.
 
 
 After purchasing your IP, we strongly encourage you to set up reverse DNS. For more information about setting up reverse DNS, see [How to set up reverse DNS]({{root_url}}/ui/account-and-settings/how-to-set-up-reverse-dns/).
 
 <call-out>
 
- Purchasing and adding dedicated IPs can only be performed by the Parent account or Teammates with either Billing or Admin permissions.
+Only the Parent account or Teammates with either Billing or Admin permissions can purchase and add dedicated IPs.
 
 </call-out>
 
 <call-out>
 
- Additional IPs cost an extra $30 per additional IP per month. You may only add up to 3 new IP addresses to your account per month.
+Additional IPs cost an extra $30 per additional IP per month. You may only add up to 3 new IP addresses to your account per month.
 
 </call-out>
 
@@ -83,7 +83,7 @@ In addition, SendGrid offers [Expert Services](https://sendgrid.com/solutions/ex
 
 ##     Warming Up a dedicated IP Address
 
-For more information on warming up an IP Address, see [Warming up a dedicated IP]({{root_url}}/ui/sending-email/warming-up-an-ip-address/).
+For more information on warming up an IP Address, see [Warming up a dedicated IP]({{root_url}}/ui/sending-email/ip-warmup-for-the-new-marketing-campaigns-experience/).
 
 ##     Assigning a dedicated IP address to a subuser
 
@@ -102,7 +102,7 @@ You need to have a [subuser]({{root_url}}/ui/account-and-settings/subusers/#crea
 
 ##     Additional Resources
 
-- [Warming up a dedicated IP]({{root_url}}/ui/sending-email/warming-up-an-ip-address/)
+- [Warming up a dedicated IP]({{root_url}}/ui/sending-email/ip-warmup-for-the-new-marketing-campaigns-experience/)
 - [API IP Access Management]({{root_url}}/ui/account-and-settings/ip-access-management/)
 - [SendGrid billing information]({{root_url}}/ui/account-and-settings/billing/)
 
