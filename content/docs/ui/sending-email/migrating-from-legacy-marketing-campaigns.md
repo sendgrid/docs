@@ -380,18 +380,19 @@ The new Marketing Campaigns experience offers APIs so you can programmatically m
 
 ## FAQs
 
-### What happens if I choose not to migrate? 
+**What happens if I choose not to migrate?** 
 
 Nothing will happen to your legacy Marketing Campaigns account until the product is discontinued at a later time in 2020. Until then, you can continue using legacy Marketing Campaigns as you’re used to. 
 
-### How long will legacy Marketing Campaigns be available? 
+**How long will legacy Marketing Campaigns be available?** 
 
 At this time no date has been set for the deprecation of Legacy Marketing Campaigns. At a minimum, it will remain available for you until some time in 2020.
-### Once I’ve switched to new Marketing Campaigns, can I go back to using legacy Marketing Campaigns?
+
+**Once I’ve switched to new Marketing Campaigns, can I go back to using legacy Marketing Campaigns?**
 
 Yes, you can choose to upload contacts to legacy Marketing Campaigns and keep using it until the product is deprecated some time inin 2020. Note, if you did not use legacy Marketing Campaigns prior to the launch of new Marketing Campaigns, you’ll need to speak to Support to gain access.
   
-### What is the additional value of the new Marketing Campaigns vs. the legacy product? 
+**What is the additional value of the new Marketing Campaigns vs. the legacy product?**
 
 Moving forward, all innovation for our marketing platform will happen on new Marketing Campaigns, so it’s important you migrate to see these benefits over time. 
 
@@ -413,29 +414,29 @@ Capture new signups and add them directly to your new Marketing Campaigns contac
  
 These new features build on the functionality you’re used to in legacy Marketing Campaigns. This means after a few simple migration steps, you’ll be up and running quickly thanks to familiar workflows you already know.  
 
-### Can I try the new Marketing Campaigns for free?
+**Can I try the new Marketing Campaigns for free?**
 
 Yes! By default, you have access to the new Marketing Campaigns Free package in your account. It gives you access to all features, including Automation, so you can test fully. If you do not see the new Marketing Campaigns in your account, please contact support as you may need to make a change to your account due to an outdated plan type. 
 
-### What happens to my legacy Marketing Campaigns account if I try new Marketing Campaigns?
+**What happens to my legacy Marketing Campaigns account if I try new Marketing Campaigns?**
 
 There is no impact to your legacy Marketing Campaigns account by testing or upgrading to new Marketing Campaigns. When you upgrade to either the new Basic or Advanced package, you’ll be given a grace period to support your migration from legacy to new Marketing Campaigns. During this time, you will not be charged for contact storage in legacy Marketing Campaigns. 
 
 Once the grace period has ended, you’ll be charged for any contacts over the free allotment of 2,000 in your legacy Marketing Campaigns storage. 
 
-### I don’t see the new Marketing Campaigns in my account. What should I do?
+**I don’t see the new Marketing Campaigns in my account. What should I do?**
 
 If you do not see the new Marketing Campaigns in your account, please contact support to troubleshoot why you do not have access. 
 
-### I have more than 200,000 contacts. What should I do?
+**I have more than 200,000 contacts. What should I do?**
 
 To purchase a new Marketing Campaigns package above the Advanced 200K plan, please [contact our sales team](https://sendgrid.com/contact-us-form/).
 
-### Are there services to help me with migration?
+**Are there services to help me with migration?**
 
 Yes. There is a paid service where our experts will help get you quickly and successfully migrated to the new Marketing Campaigns. They’ll review your email marketing program, provide migration support, and teach you what you need to know to hit the ground running with the new Marketing Campaigns. Learn more about this migration service.
 
-### I have dedicated IP(s) I’ve already warmed up. What happens to them? 
+**I have dedicated IP(s) I’ve already warmed up. What happens to them?**
 
 No changes will be made to your existing dedicated IPs unless you lose access by downgrading your Email API plan to Essentials or Free. If you choose an Advanced Marketing Campaigns plan, you’ll be granted a new, additional dedicated IP address. This will need to be [warmed up]({{root_url}}/ui/sending-email/ip-warmup-for-the-new-marketing-campaigns-experience/) to ensure a positive sender reputation. 
 
