@@ -1,14 +1,14 @@
 ---
-seo:
-  title: Coming soon to Marketing Campaigns
-  description: Coming soon to Marketing Campaigns
-  keywords: sendgrid account, sendgrid plan, email account, emails per month
 title: Coming soon to Marketing Campaigns
 weight: 0
 group: 
 layout: page
 navigation:
   show: false
+Seo:
+  title: Coming soon to Marketing Campaigns
+  description: Coming soon to Marketing Campaigns
+  keywords: sendgrid account, sendgrid plan, email account, emails per month
 ---
 
 ## Coming soon to Marketing Campaigns
