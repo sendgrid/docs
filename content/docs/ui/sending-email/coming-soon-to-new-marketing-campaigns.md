@@ -1,7 +1,7 @@
 ---
 title: Coming soon to Marketing Campaigns
 weight: 0
-group: 
+group:
 layout: page
 navigation:
   show: false
