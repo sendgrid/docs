@@ -43,7 +43,7 @@ Before you can create a test, you need to specify a Sender and include a Subject
 
 ![]({{root_url}}/img/auto-email-testing-launch.png "Launch Automated Email Testing")
 
-4. When Email Testing opens a new test, choose which kind of tests you'd like to run, by selecting the checkboxes next to **Spam Test**, **Inbox Rendering Test**, or by selecting both.
+4. When Email Testing opens a new test, choose which kind of tests you'd like to run by selecting the checkboxes next to **Spam Test**, **Inbox Rendering Test**, or by selecting both.
 
 <call-out>
 
