@@ -2,7 +2,7 @@
 layout: page
 weight: 70
 title: Migrating from legacy to new Marketing Campaigns
-group: ungrouped
+group: marketing-campaigns
 navigation:
   show: false
 seo:
