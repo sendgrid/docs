@@ -2,7 +2,7 @@
 layout: page
 weight: 70
 title: Email Testing
-group: building-email
+group: marketing-campaigns
 navigation:
   show: true
 seo:
@@ -13,11 +13,11 @@ seo:
 ---
 <call-out>
 
-Email Testing is available as part of the Advanced Marketing Campaigns package. To access this feature, please upgrade to Advanced Marketing Campaigns from [Your Products](https://app.sendgrid.com/account/billing).
+Email Testing is available as part of the new Marketing Campaigns. To access this feature, please switch over to the [new Marketing Campaigns experience](https://sendgrid.com/pricing/).
 
 </call-out>
 
-Email testing offers robust, pre-send testing of your emails, including in-app spam testing, inbox rendering previews, and link validation right within your Marketing Campaigns workflow. It allows you to preview how an email is likely to perform across a wide range of inbox providers, devices and spam filters, before sending.
+Email testing offers robust, pre-send testing of your emails, including in-app spam testing, inbox rendering previews, and link validation without leaving your Marketing Campaigns workflow. It allows you to preview how an email is likely to perform across a wide range of inbox providers, devices, and spam filters, before sending.
 
 - **Inbox Rendering Test:** Displays how an email message is rendered and appears across a select group of inbox providers and devices.
 - **Spam Test:** Shows how an email performs against the world’s most powerful consumer (B2C) and enterprise (B2B) spam filters.
@@ -43,7 +43,7 @@ Before you can create a test, you need to specify a Sender and include a Subject
 
 ![]({{root_url}}/img/auto-email-testing-launch.png "Launch Automated Email Testing")
 
-4. When Email Testing opens a new test, choose which kind of tests you'd like to run, by selecting the checkboxes next to **Spam Test**, **Inbox Rendering Test**, or by selecting both.
+4. When Email Testing opens a new test, choose which kind of tests you'd like to run by selecting the checkboxes next to **Spam Test**, **Inbox Rendering Test**, or by selecting both.
 
 <call-out>
 

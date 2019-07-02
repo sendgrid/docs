@@ -150,7 +150,7 @@ Before you send a test email, you can test how your email will perform across a 
 
 </call-out>
 
-10. If you haven't already, return to Settings to select which contacts will receive your email by clicking the **Send To** field under **Recipients**.
+9. If you haven't already, return to Settings to select which contacts will receive your email by clicking the **Send To** field under **Recipients**.
 
 ## Sending your First Email
 
