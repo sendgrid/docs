@@ -24,7 +24,7 @@ or even better, if they reply. This increases the ante for senders to send conte
 Thankfully, SendGrid provides a window into the problem. Senders are able to make use of
 the [Event API]({{root_url}}/for-developers/tracking-events/event/) which allows senders to know if recipients have opened and/or clicked on their emails. Lower tier plans
 can view this information under the Email Activity tab. With these tools, a sender can ensure that they are not sending
-to 2 major pitfalls: [spam traps]({{root_url}}/docs/glossary/spam-traps) or recipients that are likely to acknowledge the email as [spam]({{root_url}}/docs/glossary/spam/). Sending to either of
+to 2 major pitfalls: [spam traps]({{root_url}}/glossary/spam-traps) or recipients that are likely to acknowledge the email as [spam]({{root_url}}/glossary/spam/). Sending to either of
 these recipients, results in the receiving mailbox to believe that they are uninterested and therefore, leads to diversion of emails to the unimportant or spam folders.
 
 
