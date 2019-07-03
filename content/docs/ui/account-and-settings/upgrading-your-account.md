@@ -19,8 +19,7 @@ Whether you’re a startup or a large enterprise, SendGrid has several plans tai
 
 *Email API*
 
-Decide the plan you upgrade to by comparing your current contact storage usage and email sends to the available plans [here](https://sendgrid.com/pricing).
-
+1. Decide the plan you upgrade to by comparing your current contact storage usage and email sends to the available plans [here](https://sendgrid.com/pricing).
 1. Navigate to your [**Account Details**](https://app.sendgrid.com/account/products) page, and then click on the **Your Products** tab.
 1. Under **Email API**, select **Change Plan**.
 1. Find the plan you would like to upgrade to and then click **Select**.
