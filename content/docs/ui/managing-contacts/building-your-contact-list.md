@@ -66,5 +66,5 @@ Getting into the inbox just so you can have the chance to engage with your custo
  ### 	Additional Resources
 
 - [Lists and Segmentation]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/)
-- [Unsubscribe Groups]({{root_url}}/docs/ui/sending-email/unsubscribe-groups/) 
+- [Unsubscribe Groups]({{root_url}}/ui/sending-email/create-and-manage-unsubscribe-groups/) 
 - [Custom Fields]({{root_url}}/ui/managing-contacts/custom-fields/)
