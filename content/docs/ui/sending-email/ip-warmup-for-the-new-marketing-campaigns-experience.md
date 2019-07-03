@@ -57,7 +57,8 @@ Next, you’ll want to create a template for your warmup campaign.
 1. Navigate to **Marketing** and then select **Templates**. 
 1. Click **Create Template** and select the [editor]({{root_url}}/ui/sending-email/editor/) you want to use to create your template. 
 1. Once you’ve finished creating your template, exit out of the editor and hover over the action menu next to the template and select **Create Single Send**.
-1. Add the “Day 1” list to your Single Send recipients under **Recipients**, and then under **Schedule**, click **Send Immediately** to change it to a day you'd like to begin the warmup. 
+1. Add the “Day 1” list to your Single Send recipients by navigating to **Recipients**, and then selecting **Schedule**.  
+1. Click **Send Immediately** to change it to a day you'd like to begin the warmup. 
 
 After you schedule your first send, you can navigate back to your template and repeat steps 3 and 4 above, making sure you update the list used for Day 2 and choose the next day in the scheduling menu. Repeat this process until you have a campaign for every single day in your warmup. 
 
