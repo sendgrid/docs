@@ -20,7 +20,7 @@ If you’re using an Advanced Marketing Campaigns plan, or if you have a dedicat
 
 ## How to know if you have a dedicated IP 
 
-Marketing Campaigns Advanced, Email API Pro, and Premier packages all include a dedicated IP. With any of these packages, you’re also able to purchase additional IPs. To view your IPs, navigate to **Settings** and click **IP Addresses**.
+The Marketing Campaigns Advanced package, as well as Email API Pro and Premier packages, all include a dedicated IP. With any of these packages, you’re also able to purchase additional IPs. To view your IPs, navigate to **Settings** and click **IP Addresses**.
 
 <call-out>
 
@@ -32,7 +32,7 @@ If you’ve been sending through the Basic Marketing Campaigns package and you�
 
 ## How to schedule IP warmup with Marketing Campaigns
 
-Depending on the maximum daily volume you plan to send, a warmup can take anywhere from a few days to a few weeks. Our general recommendation is to send no more than 50 emails on your new IP address on your first day of sending. From there, you’ll want to double your volume every concurrent day you send until you’ve reached the maximum daily volume you plan on sending. At that point, inbox providers should be familiar with your reputation, and you will fully warmup your IP. 
+Depending on the maximum daily volume you plan to send, a warmup can take anywhere from a few days to a few weeks. Our general recommendation is to send no more than 50 emails on your new IP address on your first day of sending. From there, you’ll want to double your volume every concurrent day you send until you’ve reached the maximum daily volume you plan on sending. At that point, inbox providers will be more familiar with your sender reputation, and you will fully warmup your IP. 
 
 You can use the Marketing Campaign’s scheduling and contact management tools to create a warmup schedule. First, you’ll want to split up your contacts into lists, where the number of contacts in each list is associated with a day of warmup. For example, if 800 messages per day was your maximum daily send volume, you’d want to create contact lists of 50, 100, 200, 400, and 800. You’d send to the list of 50 on day one, the list of 100 on day two, and so on. 
 
@@ -40,7 +40,13 @@ You can use the Marketing Campaign’s scheduling and contact management tools t
 
 1. Navigate to the **Marketing** tab. 
 1. Select **Contacts**. 
-1. Create a new list titled “Day 1” and upload your first group of 50 contacts to this list.
+1. Create a new list titled “Day 1” and [upload]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#add-contacts) your first group of 50 contacts to this list.
+
+<call-out>
+
+Ensure that you [format your contact lists correctly]({{root_url}}/ui/managing-contacts/formatting-a-csv/) before continuing.
+
+</call-out>
 
 Continue creating new lists for each day of your warmup and upload the associated number of contacts for each day. When you finish, you should have a list for every day in your warmup with the number of contacts in each day doubling. 
 
@@ -50,8 +56,9 @@ Next, you’ll want to create a template for your warmup campaign.
 
 1. Navigate to **Marketing** and then select **Templates**. 
 1. Click **Create Template** and select the [editor]({{root_url}}/ui/sending-email/editor/) you want to use to create your template. 
-1. Once you’ve finished creating your template, hover over the action menu next to the template and select **Create Single Send**.
-1. Add the “Day 1” list to your Single Send recipients and change the campaign from “Send Immediately” to schedule and choose the day you’d like to begin the warmup. 
+1. Once you’ve finished creating your template, exit out of the editor and hover over the action menu next to the template and select **Create Single Send**.
+1. Add the “Day 1” list to your Single Send recipients by navigating to **Recipients**, and then selecting **Schedule**.  
+1. Click **Send Immediately** to change it to a day you'd like to begin the warmup. 
 
 After you schedule your first send, you can navigate back to your template and repeat steps 3 and 4 above, making sure you update the list used for Day 2 and choose the next day in the scheduling menu. Repeat this process until you have a campaign for every single day in your warmup. 
 

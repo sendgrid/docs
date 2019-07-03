@@ -11,8 +11,6 @@ Seo:
   keywords: sendgrid account, sendgrid plan, email account, emails per month
 ---
 
-## Coming soon to Marketing Campaigns
-
 **Pardon our dust!** 
 
 There are some important features that are coming soon to Marketing Campaigns, we appreciate your patience as we deliver them for you. 

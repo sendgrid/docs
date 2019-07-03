@@ -61,10 +61,10 @@ If your email domain doesn't match one of your [authenticated]({{root_url}}/ui/a
 
 Marketing Campaigns offers a number of ways to add contacts to lists, including:
 
-[CSV Upload]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#upload-a-csv/), 
-[Signup Forms]({{root_url}/ui/managing-contacts/create-and-manage-contacts/#create-a-signup-form/)
-[Manually Adding a Contact]({{root_url}/)
-[Contact Management APIs](https://sendgrid-marketing-campaigns-beta.api-docs.io/v1).
+- [CSV Upload]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#upload-a-csv/), 
+- [Signup Forms]({{root_url}/ui/managing-contacts/create-and-manage-contacts/#create-a-signup-form/)
+- [Manually Adding a Contact]({{root_url}/https://sendgrid.com/docs/ui/managing-contacts/create-and-manage-contacts/#add-manually)
+- [Contact Management APIs](https://sendgrid-marketing-campaigns-beta.api-docs.io/v1).
 
 <call-out type="warning">
 

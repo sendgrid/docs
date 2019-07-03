@@ -18,7 +18,7 @@ The content on this page describes the experience in the latest version of Marke
 
 </call-out>
 
-Adding contacts to a list that's designated as the entry criteria for an automation will trigger that automation. The new Marketing Campaigns experience offers several ways to add contacts to lists, including CSV upload, using signup forms, or via the [Contact Mnaement APIs](https://sendgrid-marketing-campaigns-beta.api-docs.io/v1/contacts/). 
+Adding contacts to a list that's designated as the entry criteria for an automation will trigger that automation. The new Marketing Campaigns experience offers several ways to add contacts to lists, including CSV upload, using signup forms, or via the [Contact Management APIs](https://sendgrid-marketing-campaigns-beta.api-docs.io/v1/contacts/).
 
 ## Add Contacts
 
@@ -38,6 +38,16 @@ You can add contacts to a list via CSV Upload or by creating a Signup Form to au
 1. When you're done mapping the fields, click **Next: Add Contacts**. 
 
 Once the CSV has processed, you will receive a [notification]({{root_url}}/ui/account-and-settings/notifications/) email.
+
+### Add Manually
+
+You can add your contacts manually including alternate email addresses, addresses and names from the Contacts page.
+
+1. Navigate to **Marketing** and then click **Contacts**.
+1. Select **Add Contacts** and then click on **Manual Add** in the drop down menu.
+1. Choose whether to add your contacts to All Contacts, to an existing list, or to a new list you create.
+1. Add your contact's email, and then any other information you may have.
+1. When you're done, click **Add Contacts**.
 
 ### Create a signup form
 

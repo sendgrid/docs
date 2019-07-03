@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-You can update your plan and billing details on the [Account Details page](https://app.sendgrid.com/account/billing) in the UI.
+You can update your billing details on the on the Billing tab of the [Account Details page](https://app.sendgrid.com/account/billing) in the UI. You can update your plan details on the Products tab of the [Account Details page](https://app.sendgrid.com/account/products).
 
 For more information about understanding your bill, see [Reading your invoice]({{root_url}}/ui/account-and-settings/reading-your-invoice/).
 
@@ -21,7 +21,7 @@ When you create or upgrade to a paid account, you add a credit card in for autom
 
 SendGrid accepts credit or check cards. We charge accounts on a monthly basis; we do not offer pre-payment, quarterly billing, or annual billing at this time. We do not accept PayPal, wire transfer, checks, or any card requiring a PIN.
 
-You can update your card information, retry a failed payment, and export past invoices for your business on the Plan & Billing tab of your [Account Details]( https://app.sendgrid.com/account/billing) page. It is also possible to change your package type and cancel your account from this page.
+You can update your card information, retry a failed payment, and export past invoices for your business on the Billing tab of your [Account Details]( https://app.sendgrid.com/account/billing) page. It is also possible to change your package type and cancel your account from this page.
 
 
  ###     Subusers
@@ -51,13 +51,13 @@ If your account payments aren’t up-to-date you may see one of the following wa
 
 This warns you that your service may be interrupted unless you settle any outstanding balance on your account. This warning may occur if the card on file for your account gets declined when we attempt to process your payment on the first of the month.
 
-To update your account, please update your credit card on file by logging into the SendGrid app and going to the Plan & Billing tab on your [Account Details page]( https://app.sendgrid.com/account/billing). Update your card information and then click **Save**. Once you update the card on file, the payment processes automatically, and your account is unfrozen.
+To update your account, please update your credit card on file by logging into the SendGrid app and going to the Billing tab on your [Account Details page]( https://app.sendgrid.com/account/billing). Update your card information and then click **Save**. Once you update the card on file, the payment processes automatically, and your account is unfrozen.
 
 **Billing Frozen**
 
 If you find your account suddenly unable to send mail within the first week of the month, your account could be in a billing frozen state. This frozen state occurs when we attempt to process your payment on the first day of the month, but the card on file for your account gets declined.
 
-To reactivate your account, please update your credit card on file by logging into the SendGrid UI and going to the **Plan & Billing** tab on your [Account Details page]( https://app.sendgrid.com/account/billing). Update your card information and then click **Save**. Once you update the card on file, the payment processes automatically, and your account is unfrozen.
+To reactivate your account, please update your credit card on file by logging into the SendGrid UI and going to the **Billing** tab on your [Account Details page]( https://app.sendgrid.com/account/billing). Update your card information and then click **Save**. Once you update the card on file, the payment processes automatically, and your account is unfrozen.
 
 
 ## Plans
@@ -134,7 +134,7 @@ If you’re on the Free package and hit your contact allotment limit, any active
 * 200,000+ emails/month depending on the plan you purchase. Emails sent via Single Sends or Automation count towards your allotment.
 * 1 million+ contacts
 
-If you exceed your plan allotment of contacts or overages you will be charged a [small amount]({{root_url}}/ui/account-and-settinbgs/billing/#limits-and-overage-rates) per email sent and per contact stored, above the limits of your current Marketing package. Any overage charges will appear on the invoice of the month _after_ any over-limit sending and contact storage occurs.
+If you exceed your plan allotment of contacts or overages you will be charged a [small amount]({{root_url}}/ui/account-and-settings/billing/#limits-and-overage-rates) per email sent and per contact stored, above the limits of your current Marketing package. Any overage charges will appear on the invoice of the month _after_ any over-limit sending and contact storage occurs.
 
 ### Email API
 
@@ -359,11 +359,11 @@ If you meet these conditions, please respond directly to the invoice email you h
 
 ##     Changing your plan
 
-You can change your plan under the Plan section on the Plan & Billing tab of the [Account Details page](https://app.sendgrid.com/account/billing).
+You can change your plan under the Email API or Marketing Campaigns sections on the Your Products tab of the [Account Details page](https://app.sendgrid.com/account/products).
 
 ##     Cancelling your account
 
-To cancel your account, go to the bottom of the Plan & Billing section of your [Account Details page]( https://app.sendgrid.com/account/billing), click **Cancel Account**, and follow the prompts.
+To cancel your account, go to the bottom of the Your Products tab of the [Account Details page]( https://app.sendgrid.com/account/products), click **Cancel Account**, and follow the prompts.
 
 <call-out>
 

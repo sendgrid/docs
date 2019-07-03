@@ -97,7 +97,7 @@ curl -X "POST" "https://api.sendgrid.com/v3/mail/send" \
 
 It is important to note 2 sections of this call when using dynamic templates:
 
-In order to send dynamic content, you need to specify a JSON blob containing the dynamic data your template will use in the `dynamic_template_data` object. The Handlebars script you write will refer to the values in your JSON blob by referencing the JSON key, check out [these examples]({{root_url}}/docs/for-developers/sending-email/using-handlebars/#handlebarjs-reference). This Handlebars templating can be used in the text, html, and subject lines of your template.
+In order to send dynamic content, you need to specify a JSON blob containing the dynamic data your template will use in the `dynamic_template_data` object. The Handlebars script you write will refer to the values in your JSON blob by referencing the JSON key, check out [these examples]({{root_url}}/for-developers/sending-email/using-handlebars/#handlebarjs-reference). This Handlebars templating can be used in the text, html, and subject lines of your template.
 ```
          "dynamic_template_data":{
             "total":"$ 239.85",
