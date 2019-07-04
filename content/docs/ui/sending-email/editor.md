@@ -228,7 +228,7 @@ SendGrid’s flexible design editor allows you to build your templates and email
 1. Then, select **Edit** or **Duplicate**.
 1. Select **Design Editor**, and then click **Continue**.
 
-*To use the code editor for Automations:*
+*To use the design editor for Automations:*
 
 1. From the left-hand navigation, select **Marketing**, and then click **Automations** .
 1. Click **Create an Automation**.
@@ -237,15 +237,9 @@ SendGrid’s flexible design editor allows you to build your templates and email
 1. Select the send time and then click the edit button next to *Email 1*. 
 1. Select **Design Editor**, and then click **Continue**.
 <br>The Design Editor opens.
-
-
-
-
-![]({{root_url}}/img/campaigns_dashboard_categories_search.png)
-
-3. Select the template that you want to use for your campaign.
+7. Select the template that you want to use for your campaign.
 <br>You can select a Blank Template, a custom template that you have already created, or one of SendGrid’s pre-built templates. For more information, see [Working With Marketing Templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/)
-4. Select **Design Editor** and then click **Continue**.
+8. Select **Design Editor** and then click **Continue**.
 <br>The Design Editor opens.
 
 ### Using Drag & Drop Modules
