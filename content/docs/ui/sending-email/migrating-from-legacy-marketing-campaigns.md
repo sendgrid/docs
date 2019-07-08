@@ -21,13 +21,13 @@ Create a recurring email or series of emails that send automatically whenever a 
 
 ### Email Testing 
 
-Have confidence your emails are flawless with integrated email testing. See how emails render across the inboxes, browsers, and device types that matter to your business, ensure links within your email are valid and know how your email will perform against the most powerful spam filters. [Learn More] ({{root_url}}/ui/sending-email/email-testing/). 
+Have confidence your emails are flawless with integrated email testing. See how emails render across the inboxes, browsers, and device types that matter to your business, ensure links within your email are valid, and know how your email will perform against the most powerful spam filters. [Learn More] ({{root_url}}/ui/sending-email/email-testing/). 
 
 ### Signup Forms 
 
-Capture new signups and add them directly to your contacts in the new Marketing Campaigns. These forms can be embedded directly on your website or shared via a Twilio SendGrid-hosted URL. [Learn More ]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#create-a-signup-form). 
+Capture new signups and add them directly to your contacts in the new Marketing Campaigns. These forms can be embedded directly on your website or shared via a Twilio SendGrid-hosted URL. [Learn More]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#create-a-signup-form). 
 
-## Familiar features and functionality from legacy 
+### Familiar features and functionality from legacy 
 
 These new features build on the functionality you’re used to in legacy Marketing Campaigns. This means after a few migration steps, you’ll be up and running quickly thanks to familiar workflows you already know.  
 
@@ -47,10 +47,10 @@ To support you in migrating your legacy Marketing Campaigns account to the new M
 
 <call-out-link linktext="Contact Expert Services" img="/img/expert-insights-promo3.png" link="https://go.sendgrid.com/Marketing-Campaigns-Launch.html">
 
-### Marketing Campaigns Launch
+### Marketing Campaigns Migration Service
 
 
-Need some help? With Marketing Campaigns Launch, our experts will help you quickly and smoothly get started on the new email marketing platform. 
+Need some help? With Marketing Campaigns Migration, our experts will help you quickly and smoothly get started on the new email marketing platform. 
 
 </call-out-link>
 
@@ -58,15 +58,15 @@ Need some help? With Marketing Campaigns Launch, our experts will help you quick
 
 ### How is the pricing different for the new plans?
 
-**Legacy Marketing Campaigns**
+**Legacy Marketing Campaigns Pricing**
 
-With the legacy offering, you selected a base Email API plan to cover all email sends whether via API or Marketing Campaigns. Next, you paid $10 per 10,000 contacts you uploaded into Marketing Campaigns. 
+With the legacy offering, you selected a base Email API plan to cover all email sends whether via Email API or Marketing Campaigns. Next, you paid $10 per 10,000 contacts you uploaded into Marketing Campaigns. 
 
-Any emails you sent using Marketing Campaigns were deducted from your base Email API plan allotment. If you sent over your plan allotment you were charged per additional email. 
+Any emails you sent using Marketing Campaigns were deducted from your base Email API plan allotment. If you sent over your plan allotment you were charged overages per additional email. 
 
-**New Marketing Campaigns**
+**New Marketing Campaigns Pricing**
 
-Choose a Marketing Campaigns package, either [Basic or Advanced](#what-are-the-new-package-options). Basic starts at $15/mo and Advanced starts at $60/mo.
+With the new Marketing Campaigns, you choose a Marketing Campaigns package, either [Basic or Advanced](#what-are-the-new-package-options). Basic starts at $15/mo and Advanced starts at $60/mo.
 
 The package includes an allotment of **both** contacts you can store and emails you can send. If you send over your allotment of emails or store more contacts you will be charged an additional fee per email or contact.
 
@@ -120,7 +120,7 @@ Starting at $60/month for 10,000 contacts and 50,000 email sends
 
 ### What should I consider in choosing a new package? 
 
-To decide the best package for your needs, Basic or Advanced, consider your historical usage with legacy Marketing Campaigns, the features you’d like included in your Marketing Campaigns package, and what access to add-ons you need. 
+To decide the best package for your needs, Basic or Advanced, consider the features you’d like included in your Marketing Campaigns package, your historical usage with legacy Marketing Campaigns, and what access to add-ons you need. 
 
 *Features you’d like to access*
 
@@ -133,12 +133,16 @@ Choose **Advanced** if you’d like any of the following features. A complete su
 * Greater allotment of Teammates* 
 * Ability to create or manage subusers*
 
+<call-out>
+
 *These features are also available on the Pro and Premier Email API packages. If you have access via your Email API package, you can also use these features for your Marketing Campaigns sending.
 
-Choose **Basic** if you’d like any of the following features. A complete summary of the feature set for each Marketing Campaigns package can be found on [our pricing page](https://sendgrid.com/pricing/). 
+</call-out>
+
+Choose **Basic** if following features meet your needs. A complete summary of the feature set for each Marketing Campaigns package can be found on [our pricing page](https://sendgrid.com/pricing/). 
 
 * Single Sends for one-time campaigns
-* Ticket, Chat & Phone Support
+* Ticket, Chat, and Phone Support
 * Email Testing
 * 5 Signup Forms
 * 1 Teammate
@@ -146,7 +150,7 @@ Choose **Basic** if you’d like any of the following features. A complete summa
 
 *Historical usage*
 
-Review how many contacts you store in legacy Marketing Campaigns as a starting point, then consider if or how you may grow your audience and/or your sending volume. Remember that the new Marketing Campaigns packages also include email sends, so you’ll potentially no longer need to subscribe to an email API plan. 
+Review how many contacts you store in legacy Marketing Campaigns as a starting point, then consider if or how you may grow your audience. Do the same for in considering your legacy Marketing Campaigns sending volume by adding up the number of delivered emails across your campaigns. Remember, the new Marketing Campaigns packages also include email sends, so if you only send via Marketing Campaigns, you’ll potentially no longer need to subscribe to an Email API plan. 
 
 *Add-ons you need*
 
@@ -192,8 +196,14 @@ Need a higher tier of contact storage or email volume? Simply scroll to the bott
 6. Click **Select** to review your plan choice. You’ll see your new Marketing Campaigns plan monthly price, as well as the prorated price you’ll pay for the current month.
 7. Click **Confirm**.  
 
+<call-out>
 
-To support your migration effort, you’ll have a billing grace period through the next complete billing cycle to migrate your contacts from legacy Marketing Campaigns to new Marketing Campaigns. During this grace period, you will not be charged for contact storage in legacy Marketing Campaigns.
+No change will be made to your legacy Marketing Campaigns account as a result of buying a new Marketing Campaigns package. You'll have **through** the next complete month to migrate your account to avoid being charged for both versions, as outlined below.
+
+</call-out>
+
+
+To support your migration effort, you’ll have a billing grace period through the next complete billing cycle to migrate your contacts from legacy Marketing Campaigns to new Marketing Campaigns. During this grace period, which **includes the month you upgrade and the month following your upgrade**, you will not be charged for contact storage in legacy Marketing Campaigns.
 
 <call-out type="warning">
 
@@ -251,7 +261,7 @@ You may have pre-existing images, templates, or campaigns that you’d like to r
 1. Navigate to **Templates** in legacy Marketing Campaigns.
 1. Select **Custom**.
 1. Locate the template you wish to transfer into new Marketing Campaigns.
-1. Click the action cog and then select **Export HTML**. The template HTML instantly downloads to the folder specified on your computer.
+1. Click the action menu and then select **Export HTML**. The template HTML instantly downloads to the folder specified on your computer.
 
 <call-out type="warning">
 
@@ -324,6 +334,26 @@ Exporting images from your library is a manual process at this time, so we recom
 1. Right click on the image to save it locally to your computer.
 1. You can then upload the image you’d like to add to your new draft by following [these steps]({{root_url}}/ui/sending-email/editor/#adding-images). 
 
+## Update API Keys and Teammates
+As a separate product, you'll need to add permissions for new Marketing Campaigns to any API Keys or Teammates who you'd like to have access to new Marketing Campaigns. 
+
+### API Keys
+1. Click on **Settings** in the lefthand navigation, and then **API Keys**.
+1. Select the API key (or keys) that you'd like to add Marketing permissions to.
+1. Click the action menu and select Edit API Key.
+1. Select the **Marketing** dropdown and enable the **Marketing** and/or **Automation** toggles, granting permission.
+1. Click Update to save your changes.
+
+### Teammates
+1. Click on **Settings** in the lefthand navigation, and then **Teammates**.
+1. Find the Teammate (or teammates) whom you'd like to give new Marketing Campaigns permissions to.
+1. Click the action menu and select Edit.
+1. If the radio button for "Invite as Admin" is selected, the Teammate already has access to new Marketing Campaigns.
+1. If not, and to enable feature-specific access, including new Marketing Campaigns Single Sends and/or Automation, click "Invite as Restricted Access".
+1. Select the **Marketing** dropdown and enable the **Marketing** and/or **Automation** toggles, granting permission.
+1. Click Update to save your changes.
+
+
 ## Create notifications
 
 Notifications are not carried over from legacy to new Marketing Campaigns. Please designate which email addresses you’d like to be alerted to any new Marketing Campaigns activity such as CSV uploads, etc.
@@ -376,7 +406,7 @@ To download data about individual contacts, including when they were last sent a
 
 ## Integrate with the new Marketing Campaigns APIs
 
-The new Marketing Campaigns experience offers APIs so you can programmatically manage your marketing emails. The functionality of these APIs is currently limited to contact management, but new APIs are [coming soon]({{root_url}}/ui/sending-email/coming-soon-to-new-marketing-campaigns/). For more information, or to view the API documentation, [click here](https://sendgrid-marketing-campaigns-beta.api-docs.io/v1/getting-started/authentication).
+The new Marketing Campaigns experience offers APIs so you can programmatically manage your marketing emails. Today, you can [manage contacts and Single Sends](https://sendgrid-marketing-campaigns-beta.api-docs.io/v1/getting-started/authentication), with additional APIs for Automation Segmentation [coming soon]({{root_url}}/ui/sending-email/coming-soon-to-new-marketing-campaigns/).
 
 ## FAQs
 
