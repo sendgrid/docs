@@ -18,7 +18,6 @@ This page is describing the functionality of the new Marketing Campaigns experie
 
 </call-out>
 
-
 Custom fields allow you to add extra information about a contact within your contact database when you upload a CSV. You can use custom fields to create dynamic [segments]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/) or to personalize the subject lines or content of Marketing Campaigns emails you send. Your custom fields are completely customizable to the use cases and user information that you need.
 
 <call-out>
@@ -50,7 +49,7 @@ You can create three different types of custom fields, based on the data type. E
 
 <call-out type="warning">
 
-Text custom fields are limited to 32,000 characters.
+Text custom fields are limited to 1,000 characters.
 
 </call-out>
 
@@ -79,7 +78,16 @@ Your account comes preloaded with unremovable reserved fields.  The following fi
 </table>
 
 
-Except for first_name, last_name, and email, these fields are auto-populated by SendGrid and correspond to data for each contact in the app. Reserved fields are used by default to track useful metrics for your contacts.
+SendGrid auto-populates 6 reserved fields: 
+
+``lists``
+``created_at``
+``updated_at``
+``last_emailed``
+``last_clicked``
+``last_opened``
+
+Reserved fields are used by default to track useful metrics for your contacts.
 
 ## Deleting a Custom Field
 
@@ -88,7 +96,7 @@ Except for first_name, last_name, and email, these fields are auto-populated by 
 1. Navigate to **Marketing** and select **Custom Fields**.
 1. Locate the field you wish to remove.
 1. Hover over the action menu to the right of the field name entry.
-1. Select **Delete**.
+1. Select the delete icon.
 1. Click **Delete Field**.
 
 <call-out type="warning">
@@ -111,5 +119,3 @@ If you do find that the custom field has an associated value on the contact’s 
 - [Substitution Tags]({{root_url}}/ui/sending-email/editor/#using-substitution-tags)
 - [Contacts]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/)
 - [Segmenting your Contacts]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/)
-
-
