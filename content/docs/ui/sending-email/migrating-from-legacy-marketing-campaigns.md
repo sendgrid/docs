@@ -261,7 +261,7 @@ You may have pre-existing images, templates, or campaigns that you’d like to r
 1. Navigate to **Templates** in legacy Marketing Campaigns.
 1. Select **Custom**.
 1. Locate the template you wish to transfer into new Marketing Campaigns.
-1. Click the action cog and then select **Export HTML**. The template HTML instantly downloads to the folder specified on your computer.
+1. Click the action menu and then select **Export HTML**. The template HTML instantly downloads to the folder specified on your computer.
 
 <call-out type="warning">
 
@@ -340,14 +340,14 @@ As a separate product, you'll need to add permissions for new Marketing Campaign
 ### API Keys
 1. Click on **Settings** in the lefthand navigation, and then **API Keys**.
 1. Select the API key (or keys) that you'd like to add Marketing permissions to.
-1. Click the cog wheel icon and select Edit API Key.
+1. Click the action menu and select Edit API Key.
 1. Select the **Marketing** dropdown and enable the **Marketing** and/or **Automation** toggles, granting permission.
 1. Click Update to save your changes.
 
 ### Teammates
 1. Click on **Settings** in the lefthand navigation, and then **Teammates**.
 1. Find the Teammate (or teammates) whom you'd like to give new Marketing Campaigns permissions to.
-1. Click the cog wheel icon and select Edit.
+1. Click the action menu and select Edit.
 1. If the radio button for "Invite as Admin" is selected, the Teammate already has access to new Marketing Campaigns.
 1. If not, and to enable feature-specific access, including new Marketing Campaigns Single Sends and/or Automation, click "Invite as Restricted Access".
 1. Select the **Marketing** dropdown and enable the **Marketing** and/or **Automation** toggles, granting permission.
