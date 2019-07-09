@@ -470,48 +470,39 @@ You'll also see a number of System Fields that you can place in the body of your
  <tr>
    <td><code class="language-text"><{{email}}></code></td>
    <td>The email address of the recipient</td>
-   
  </tr>
  <tr>
    <td><code class="language-text"><{{first_name}}></code></td>
    <td>The first name of the recipient</td>
-   
  </tr>
  <tr>
    <td><code class="language-text"><{{last_name}}></code></td>
    <td>The last name of the recipient</td>
-   
  </tr>
  <tr>
    <td><code class="language-text"><{{sender_name}}></code>* </td>
    <td>The name of the sender selected when sending your email</td>
-   
  </tr>
  <tr>
    <td><code class="language-text"><{{sender_city}}></code>* </td>
    <td>The city on record for the sender selected when sending your email</td>
-   
  </tr>
  <tr>
    <td><code class="language-text">{{sender_state}}></code>* </td>
    <td>The state on record for the sender selected when sending your email</td>
-   
  </tr>
  <tr>
    <td><code class="language-text"><{{sender_zip}}></code>* </td>
    <td>The zip code on record for the sender selected when sending your email</td>
-   
  </tr>
  <tr>
    <td><code class="language-text"><{{{unsubscribe}}}></code>* </td>
    <td>This tag is replaced with a link allowing your recipients opt out of any emails you send using the chosen Unsubscribe Group.</td>
-   
  </tr>
  <tr>
    <td><code class="language-text"><{{unsubscribe_</br>preferences}}></code>
    * </td>
    <td>This tag is replaced with a link allowing your recipients to opt out of any email unsubscribe groups you offer.</td>
-   
  </tr>
  <tr>
    <td><code class="language-text"><{{Weblink}}></code></td>
