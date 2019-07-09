@@ -25,7 +25,7 @@ Have confidence your emails are flawless with integrated email testing. See how 
 
 ### Signup Forms 
 
-Capture new signups and add them directly to your contacts in the new Marketing Campaigns. These forms can be embedded directly on your website or shared via a Twilio SendGrid-hosted URL. [Learn More ]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#create-a-signup-form). 
+Capture new signups and add them directly to your contacts in the new Marketing Campaigns. These forms can be embedded directly on your website or shared via a Twilio SendGrid-hosted URL. [Learn More]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#create-a-signup-form). 
 
 ## Familiar features and functionality from legacy 
 
@@ -90,7 +90,7 @@ Try it out! Send up to 6,000 emails to 2,000 contacts per month.
 * Automation
 * Single Sends for one-time campaigns
 * Ticket Support
-* Email Testing
+* 3 Email Testing Credits per month
 * 1 Signup Form
 
 **Basic**
@@ -99,7 +99,7 @@ Starting at $15/month for 5,000 contacts and 15,000 email sends
 
 * Single Sends for one-time campaigns
 * Ticket, Chat & Phone Support
-* Email Testing
+* 10 Email Testing Credits per month with the option to purchase more
 * 5 Signup Forms
 * 1 Teammate
 * Access to Expert Services
@@ -111,7 +111,7 @@ Starting at $60/month for 10,000 contacts and 50,000 email sends
 * Automation 
 * Single Sends for one-time campaigns
 * Ticket, chat, and phone Support
-* Email Testing
+* 60 Email Testing Credits per month with the option to purchase more
 * 15 Signup Forms
 * 1,000 Teammates
 * Access to Expert Services
@@ -139,7 +139,7 @@ Choose **Basic** if you’d like any of the following features. A complete summa
 
 * Single Sends for one-time campaigns
 * Ticket, Chat & Phone Support
-* Email Testing
+* 10 Email Testing Credits per month with the option to purchase more
 * 5 Signup Forms
 * 1 Teammate
 * Access to Expert Services
@@ -390,7 +390,7 @@ At this time no date has been set for the deprecation of Legacy Marketing Campai
 
 **Once I’ve switched to new Marketing Campaigns, can I go back to using legacy Marketing Campaigns?**
 
-Yes, you can choose to upload contacts to legacy Marketing Campaigns and keep using it until the product is deprecated some time inin 2020. Note, if you did not use legacy Marketing Campaigns prior to the launch of new Marketing Campaigns, you’ll need to speak to Support to gain access.
+Yes, you can choose to upload contacts to legacy Marketing Campaigns and keep using it until the product is deprecated some time in 2020. Note, if you did not use legacy Marketing Campaigns prior to the launch of new Marketing Campaigns, you’ll need to speak to Support to gain access.
   
 **What is the additional value of the new Marketing Campaigns vs. the legacy product?**
 
@@ -434,7 +434,7 @@ To purchase a new Marketing Campaigns package above the Advanced 200K plan, plea
 
 **Are there services to help me with migration?**
 
-Yes. There is a paid service where our experts will help get you quickly and successfully migrated to the new Marketing Campaigns. They’ll review your email marketing program, provide migration support, and teach you what you need to know to hit the ground running with the new Marketing Campaigns. Learn more about this migration service.
+Yes. There is a paid service where our experts will help get you quickly and successfully migrated to the new Marketing Campaigns. They’ll review your email marketing program, provide migration support, and teach you what you need to know to hit the ground running with the new Marketing Campaigns. [Learn more about this migration service](https://go.sendgrid.com/Marketing-Campaigns-Launch.html).
 
 **I have dedicated IP(s) I’ve already warmed up. What happens to them?**
 
