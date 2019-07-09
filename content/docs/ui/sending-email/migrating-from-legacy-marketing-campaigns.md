@@ -127,7 +127,7 @@ To decide the best package for your needs, Basic or Advanced, consider your hist
 Choose **Advanced** if you’d like any of the following features. A complete summary of the feature set for each Marketing Campaigns package can be found on [our pricing page](https://sendgrid.com/pricing/). 
 
 * Automation
-* Greater allotment of Email Testing credits
+* Greater allotment of monthly Email Testing credits
 * Greater allotment of Signup Forms
 * Dedicated IPs* 
 * Greater allotment of Teammates* 
