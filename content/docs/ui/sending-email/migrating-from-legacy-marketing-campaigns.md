@@ -142,8 +142,6 @@ Choose **Advanced** if you’d like any of the following features. A complete su
 Choose **Basic** if following features meet your needs. A complete summary of the feature set for each Marketing Campaigns package can be found on [our pricing page](https://sendgrid.com/pricing/). 
 
 * Single Sends for one-time campaigns
-
-* Ticket, Chat & Phone Support
 * Ticket, Chat, and Phone Support
 * 10 Email Testing Credits per month with the option to purchase more
 * 5 Signup Forms
