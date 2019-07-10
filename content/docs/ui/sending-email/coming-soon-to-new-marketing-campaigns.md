@@ -22,7 +22,7 @@ There are some important features that are coming soon to Marketing Campaigns, w
   </tr>
   <tr>
     <td>Create a custom field-based segment</td>
-    <td>7/17/19</td>
+    <td>7/30/19</td>
   </tr>
   <tr>
     <td>A/B testing for Single Sends</td>
