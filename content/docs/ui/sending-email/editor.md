@@ -104,12 +104,12 @@ Example: `<img src="your image URL here">`
 
 Substitution tags allow you to easily generate dynamic content for each recipient on your contact list. When you send to a list of recipients, you can specify substitution tags specific to each recipient.
 
-**To add a substitution tag to your campaign:**
+**To add a substitution tag to your email:**
 
 1. Click the **Settings** tab on the left side of the editor.
 2. Click the **Tags** tab at the top of the Settings window.
-3. Locate the tag you want to add to your campaign and click it to automatically copy it to your clipboard.
-4. Paste the tag into the campaign.
+3. Locate the tag you want to add to your email and click it to automatically copy it to your clipboard.
+4. Paste the tag into the email.
 
 
 
@@ -117,67 +117,131 @@ Substitution tags allow you to easily generate dynamic content for each recipien
  <tr>
    <th>Substitution Tag</th>
    <th>Description</th>
-   <th>Type</th>
  </tr>
- <tr>
-   <td><code class="language-text">{{email}}</code></td>
-   <td>The email address of the recipient</td>
-   <td>Personalization</td>
- </tr>
- <tr>
+  <tr>
    <td><code class="language-text">{{first_name}}</code></td>
    <td>The first name of the recipient</td>
-   <td>Personalization</td>
  </tr>
  <tr>
    <td><code class="language-text">{{last_name}}</code></td>
    <td>The last name of the recipient</td>
-   <td>Personalization</td>
+ </tr>
+ <tr>
+   <td><code class="language-text">{{email}}</code></td>
+   <td>The email address of the recipient</td>
+ </tr>
+  <tr>
+   <td><code class="language-text">{{alternate_emails}</code></td>
+   <td>Alternate emails of the recipient</td>
+ </tr>
+ <tr>
+   <td><code class="language-text">{{address_line_1}}</code></td>
+   <td>The first line of the address of the recipient</td>
+ </tr>
+ <tr>
+   <td><code class="language-text">{{address_line_2}}</code></td>
+   <td>The second line of the address of the recipient</td>
+   
+ </tr>
+  <tr>
+   <td><code class="language-text">{{city}}</code></td>
+   <td>The city of the recipient</td>
+   
+ </tr>
+  <tr>
+   <td><code class="language-text">{{state_province_region}}</code></td>
+   <td>The region of the recipient</td>
+   
+ </tr>
+  <tr>
+   <td><code class="language-text">{{postal_code}}</code></td>
+   <td>The postal code of the recipient</td>
+   
+ </tr>
+  <tr>
+   <td><code class="language-text">{{country}}</code></td>
+   <td>The country of the recipient</td>
+   
+ </tr>
+   <tr>
+   <td><code class="language-text">{{phone_number}}</code></td>
+   <td>The phone number of the recipient</td>
+   
+ </tr>
+    <tr>
+   <td><code class="language-text">{{whatsapp}}</code></td>
+   <td>The whatsapp of the recipient</td>
+   
+ </tr>
+   <tr>
+   <td><code class="language-text">{{line}}</code></td>
+   <td>The line of the recipient</td>
+   
+ </tr>
+   <tr>
+   <td><code class="language-text">{{facebook}}</code></td>
+   <td>The facebook of the recipient</td>
+   
+ </tr>
+   <tr>
+   <td><code class="language-text">{{unique_name}}</code></td>
+   <td>The unique name of the recipient</td>
+   
  </tr>
  <tr>
    <td><code class="language-text">{{Sender_Name}}</code>* </td>
-   <td>The name of the sender selected when sending your campaign</td>
-   <td>Sender Identity</td>
+   <td>The name of the sender selected when sending your email</td>
+   
+ </tr>
+  <tr>
+   <td><code class="language-text">{{Sender_Email}}</code>* </td>
+   <td>The email of the sender selected when sending your email</td>
+   
  </tr>
  <tr>
    <td><code class="language-text">{{Sender_Address}}</code>* </td>
-   <td>The address on record for the sender selected when sending your campaign</td>
-   <td>Sender Identity</td>
+   <td>The address on record for the sender selected when sending your email</td>
+   
  </tr>
  <tr>
    <td><code class="language-text">{{Sender_City}}</code>* </td>
-   <td>The city on record for the sender selected when sending your campaign</td>
-   <td>Sender Identity</td>
+   <td>The city on record for the sender selected when sending your email</td>
+   
  </tr>
  <tr>
    <td><code class="language-text">{{Sender_State}}</code>* </td>
-   <td>The state on record for the sender selected when sending your campaign</td>
-   <td>Sender Identity</td>
+   <td>The state on record for the sender selected when sending your email</td>
+   
  </tr>
  <tr>
    <td><code class="language-text">{{Sender_Zip}}</code>* </td>
-   <td>The zip code on record for the sender selected when sending your campaign</td>
-   <td>Sender Identity</td>
+   <td>The zip code on record for the sender selected when sending your email</td>
+   
+ </tr>
+ <tr>
+   <td><code class="language-text">{{Sender_Country}}</code>* </td>
+   <td>The country on record for the sender selected when sending your email</td>
+   
  </tr>
  <tr>
    <td><code class="language-text"><%asm_group_unsubscribe_<br>raw_url%></code>* </td>
-   <td>This tag is replaced with a link allowing your recipients to opt out of any emails you send using the chosen Unsubscribe Group.</td>
-   <td>Unsubscribe</td>
+   <td>This tag is replaced with a link allowing your recipients to opt out of any emails you send using the chosen Unsubscribe Group</td>
+   
  </tr>
  <tr>
    <td><code class="language-text"><%asm_global_unsubscribe_<br>raw_url%></code>
    * </td>
-   <td>This tag is replaced with a link allowing your recipients to opt out of all email communication. </td>
-   <td>Unsubscribe</td>
+   <td>This tag is replaced with a link allowing your recipients to opt out of all email communication</td>
+   
  </tr>
  <tr>
    <td><code class="language-text"><%asm_preferences_<br>raw_url%></code>
-   * </td>
+   * </td>   
    <td>This tag is replaced with a link allowing your recipients to opt out of any email unsubscribe groups you offer.</td>
    <td>Unsubscribe</td>
+  
  </tr>
 </table>
-
 
 
 <call-out>
@@ -190,18 +254,18 @@ For contacts with no entry in a custom field, the substitution tag appears blank
 
 </call-out>
 
-### Adding Categories
+### Adding Categories to Single Sends
 
-Assigning categories to a campaign allows you to track emails based on your own categorization system. By assigning your campaign to a category, you can track statistics across multiple similar single sends and automations. Example categories may include: “Weekly Digest,” “Product Announcements.”
+Assigning categories to a single send allows you to track emails based on your own categorization system. By assigning your single send to a category, you can track statistics across multiple similar single sends and automations. Example categories may include: “Weekly Digest,” “Product Announcements.”
 
 1. Click the *Settings* panel located on the left-hand side of the window to expand it.
-1. Navigate to the *Settings* tab, and click **Campaign Settings** to expand the menu.
-1. Locate the *Categories* field under *Campaign Settings*.
+1. Navigate to the *Settings* tab, and click **Single Send Settings** to expand the menu.
+1. Locate the *Categories* field under *Single Send Settings*.
 1. Select the *Add Categories* field. Type in the tag that you'd like to add, and press enter.
 
 <call-out>
 
-Currently, only 10 categories can be added to each campaign.
+Currently, only 10 categories can be added to each single send. 
 
 </call-out>
 
@@ -211,7 +275,7 @@ Email testing offers robust, pre-send testing of your emails, including in-app s
 
 ## The Design Editor
 
-SendGrid’s flexible design editor allows you to build your templates and emails using intuitive, drag & drop tools. The “What you see is what you get” (WYSIWYG) editing experience features a library of modules for easily adding content to your campaign.
+SendGrid’s flexible design editor allows you to build your templates and emails using intuitive, drag & drop tools. The “What you see is what you get” (WYSIWYG) editing experience features a library of modules for easily adding content to your email.
 
 ### Getting Started With the Design Editor
 
@@ -232,14 +296,14 @@ SendGrid’s flexible design editor allows you to build your templates and email
 1. Select the send time and then click the edit button next to *Email 1*. 
 1. Select **Design Editor**, and then click **Continue**.
 <br>The Design Editor opens.
-7. Select the template that you want to use for your campaign.
+7. Select the template that you want to use for your email.
 <br>You can select a Blank Template, a custom template that you have already created, or one of SendGrid’s pre-built templates. For more information, see [Working With Marketing Templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/)
 8. Select **Design Editor** and then click **Continue**.
 <br>The Design Editor opens.
 
 ### Using Drag & Drop Modules
 
-Drag & drop editing helps you swiftly build your campaign, using pre-built content modules. You can easily edit individual modules in the left-hand sidebar and reorder modules in your campaign body with a simple click and drag of your mouse.
+Drag & drop editing helps you swiftly build your email, using pre-built content modules. You can easily edit individual modules in the left-hand sidebar and reorder modules in your email body with a simple click and drag of your mouse.
 
 *To add a drag & drop module:*
 
@@ -314,9 +378,9 @@ You can add the following drag & drop modules to your email:
 
 ### Using Global Styles
 
-In addition to editing the styles for individual modules within your campaign/template, you may also make changes to the global styling of your entire campaign/template. This includes attributes such as the background color, text color, or font family.
+In addition to editing the styles for individual modules within your email/template, you may also make changes to the global styling of your entire email/template. This includes attributes such as the background color, text color, or font family.
 
-The email body is the entire area that your campaign or template fills inside your recipient’s browser or email inbox.
+The email body is the entire area that your email or template fills inside your recipient’s browser or email inbox.
 
 Under the Global Styles dropdown menu in the left hand sidebar, click **Email Body**  or **Content Container** to view and edit the following styles:
 
@@ -327,16 +391,16 @@ Under the Global Styles dropdown menu in the left hand sidebar, click **Email Bo
 </tr>
   <tr>
     <td><b>Email Body</b></td>
-    <td><p><b>Background Color</b> - This is the color for the background of your entire campaign/template.</p>
-        <p><b>Text Color</b> - This is the color of all text in your campaign/template. </p>
-        <p><b>Link Color</b> - This is the color of all links in your campaign/template.</p>
-        <p><b>Font Family</b> - This is the font family to be used for all text in your campaign/template.</p>
-        <p><b>Font Size</b> - This is the default font size to be used for all text in your campaign/template.</p>
+    <td><p><b>Background Color</b> - This is the color for the background of your entire email/template.</p>
+        <p><b>Text Color</b> - This is the color of all text in your email/template. </p>
+        <p><b>Link Color</b> - This is the color of all links in your email/template.</p>
+        <p><b>Font Family</b> - This is the font family to be used for all text in your email/template.</p>
+        <p><b>Font Size</b> - This is the default font size to be used for all text in your email/template.</p>
     </td>
   </tr>
   <tr>
     <td><b>Content Container</b></td>
-    <td><p><b>Width</b> - This is the width of the container for your entire campaign/template. Your modules are all contained within these dimensions.</p>
+    <td><p><b>Width</b> - This is the width of the container for your entire email/template. Your modules are all contained within these dimensions.</p>
         <p><b>Background Color</b> - This is the color of the area containing your modules.</p>
         <p><b>Padding</b> - This is the amount of space that you want between your modules and the boundaries of the content container.</p></td>
   </tr>
@@ -358,11 +422,11 @@ If you make any structural code changes, you need to convert the module to a cod
 
 ### Code Modules
 
-The code module is a unique drag & drop module that allows you to insert any custom HTML in your campaign as a single module which can be relocated and edited.
+The code module is a unique drag & drop module that allows you to insert any custom HTML in your email as a single module which can be relocated and edited.
 
 <call-out type="warning">
 
-The Design Editor does not modify or validate any HTML inserted via a code module. Please be careful when using custom HTML.  Always preview your campaign before sending it.
+The Design Editor does not modify or validate any HTML inserted via a code module. Please be careful when using custom HTML.  Always preview your email before sending it.
 
 </call-out>
 
@@ -382,21 +446,21 @@ The Design Editor does not modify or validate any HTML inserted via a code modul
    <br>A window opens where you can select images from the image library.
 1. Select the image you want to add to your email.
    <br>The Image Details tab opens.
-1. Insert your image in the campaign by clicking **Save Image**.
+1. Insert your image in the email by clicking **Save Image**.
 
 ### Using Substitution Tags
 
-Substitution tags allow you to use any custom field data you've added to Marketing Campaigns to dynamically generate unique content for each recipient of your campaign. A common example is to add a recipient's first name to the body (or even the subject line) of your email.
+Substitution tags allow you to use any custom field data you've added to Marketing Campaigns to dynamically generate unique content for each recipient of your email. A common example is to add a recipient's first name to the body (or even the subject line) of your email.
 
-*To add a substitution tag to your campaign:*
+*To add a substitution tag to your email:*
 
 1. Navigate to the **Tags** tab.
-1. Locate the tag you want to add to your campaign and click the **copy** icon.
+1. Locate the tag you want to add to your email and click the **copy** icon.
 1. Paste the tag into the module.
 
 Any custom fields you've created appear in the **Tags** tab of the Marketing Campaigns editor. Email is available by default.
 
-You'll also see a number of System Fields that you can place in the body of your campaign to populate with your data. These include:
+You'll also see a number of System Fields that you can place in the body of your email to populate with your data. These include:
 
 <table class="table" style="table-layout:fixed">
  <tr>
@@ -407,48 +471,39 @@ You'll also see a number of System Fields that you can place in the body of your
  <tr>
    <td><code class="language-text">{{email}}</code></td>
    <td>The email address of the recipient</td>
-   <td>Personalization</td>
  </tr>
  <tr>
    <td><code class="language-text">{{first_name}}</code></td>
    <td>The first name of the recipient</td>
-   <td>Personalization</td>
  </tr>
  <tr>
    <td><code class="language-text">{{last_name}}</code></td>
    <td>The last name of the recipient</td>
-   <td>Personalization</td>
  </tr>
  <tr>
-   <td><code class="language-text">{{sender_name}}</code>* </td>
-   <td>The name of the sender selected when sending your campaign</td>
-   <td>Sender Identity</td>
+   <td><code class="language-text"><{{sender_name}}></code>* </td>
+   <td>The name of the sender selected when sending your email</td>
  </tr>
  <tr>
-   <td><code class="language-text">{{sender_city}}</code>* </td>
-   <td>The city on record for the sender selected when sending your campaign</td>
-   <td>Sender Identity</td>
+   <td><code class="language-text"><{{sender_city}}></code>* </td>
+   <td>The city on record for the sender selected when sending your email</td>
  </tr>
  <tr>
-   <td><code class="language-text">{{sender_state}}</code>* </td>
-   <td>The state on record for the sender selected when sending your campaign</td>
-   <td>Sender Identity</td>
+   <td><code class="language-text">{{sender_state}}></code>* </td>
+   <td>The state on record for the sender selected when sending your email</td>
  </tr>
  <tr>
-   <td><code class="language-text">{{sender_zip}}</code>* </td>
-   <td>The zip code on record for the sender selected when sending your campaign</td>
-   <td>Sender Identity</td>
+   <td><code class="language-text"><{{sender_zip}}></code>* </td>
+   <td>The zip code on record for the sender selected when sending your email</td>
  </tr>
  <tr>
    <td><code class="language-text">{{unsubscribe}}</code>* </td>
    <td>This tag is replaced with a link allowing your recipients opt out of any emails you send using the chosen Unsubscribe Group.</td>
-   <td>Unsubscribe</td>
  </tr>
  <tr>
    <td><code class="language-text">{{unsubscribe_</br>preferences}}</code>
    * </td>
    <td>This tag is replaced with a link allowing your recipients to opt out of any email unsubscribe groups you offer.</td>
-   <td>Unsubscribe</td>
  </tr>
 </table>
 
@@ -469,21 +524,21 @@ For contacts with no entry in a custom field, the substitution tag appears blank
 
 </call-out>
 
-### Previewing Your Campaign
+### Previewing Your Email
 
-To preview your campaign or template, click the **Preview** button in the upper-left corner.
+To preview your email or template, click the **Preview** button in the upper-left corner.
 
 You can toggle between a mobile and desktop preview mode by clicking either the desktop or mobile phone icons above the content area.
 
-To view a plain-text version of your campaign or template, click the **T** icon. When in this preview mode, you can edit the plain text content of your campaign or template by clicking the **Edit Plain Text** button.
+To view a plain-text version of your email or template, click the **T** icon. When in this preview mode, you can edit the plain text content of your email or template by clicking the **Edit Plain Text** button.
 
-When previewing a campaign, you also see a preview of the From name, the Subject, and the preheader text that you have selected.
+When previewing an email, you also see a preview of the From name, the Subject, and the preheader text that you have selected.
 
 ### Editing the HTML Head
 
-The HTML `<head>` element is where you can define any metadata you would like to include with your campaign or template. For example, you can use the `<head>` element to define any custom fonts or CSS styles you would like to use.
+The HTML `<head>` element is where you can define any metadata you would like to include with your email or template. For example, you can use the `<head>` element to define any custom fonts or CSS styles you would like to use.
 
-*To edit the HTML head of your campaign or template:*
+*To edit the HTML head of your email or template:*
 
 1. Navigate to the **Build** tab in the left-hand toolbar and scroll to the **Advanced** menu.
 1. Expand the option titled **Edit HTML Head**.
@@ -553,7 +608,7 @@ If you are writing your own custom HTML that you plan on importing into the desi
 
 <call-out type="warning">
 
-Any HTML that you import replaces all existing content in your campaign or template. If you want to import only a section of HTML, use a [code module](#code-modules).
+Any HTML that you import replaces all existing content in your email or template. If you want to import only a section of HTML, use a [code module](#code-modules).
 
 </call-out>
 
@@ -564,7 +619,7 @@ SendGrid parses your custom HTML, looking for any [drag & drop compatible module
   * First, we look for any HTML elements that contain the attribute `role="modules-container"`.
   * Next, we look for all HTML elements with the attribute `role="module"` that are descendants of the "modules-container" element.
 
-The `role="modules-container"` attribute is required so that we know where your drag and drop modules are located. All of the SendGrid pre-built templates include the `role="modules-container"` by default. You are only required to include this attribute when creating a campaign or template from scratch that you want to be compatible with the design editor.
+The `role="modules-container"` attribute is required so that we know where your drag and drop modules are located. All of the SendGrid pre-built templates include the `role="modules-container"` by default. You are only required to include this attribute when creating an email or template from scratch that you want to be compatible with the design editor.
 
 <call-out type="warning">
 
@@ -756,13 +811,13 @@ SendGrid hosts the images included in the pre-built templates and any images you
 1. Select **Code Editor**.
 1. Paste the raw SendGrid template HTML into the code editor.
 
-### Creating Categories
+### Adding Categories to Single Sends
 
-Assigning categories to a campaign allows you to track emails based on your own categorization system. By assigning your campaign to a category, you can track statistics across multiple similar single sends and automations. Example categories: “Weekly Digest,” “Product Announcements.”
+Assigning categories to a single send allows you to track emails based on your own categorization system. By assigning your single send to a category, you can track statistics across multiple similar single sends and automations. Example categories: “Weekly Digest,” “Product Announcements.”
 
 *To add a category:*
 
-1. Navigate to the *Settings* tab and click **Single Send Settings**  or **Template Settings** to expand the menu.
+1. Navigate to the *Settings* tab and click **Single Send Settings** to expand the menu.
 1. Find the *Categories* field.
 1. Enter the name of a new category or select a previously used category from the drop-down menu.
 
