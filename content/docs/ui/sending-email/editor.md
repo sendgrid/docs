@@ -236,9 +236,10 @@ Substitution tags allow you to easily generate dynamic content for each recipien
  </tr>
  <tr>
    <td><code class="language-text"><%asm_preferences_<br>raw_url%></code>
-   * </td>
-   <td>This tag is replaced with a link allowing your recipients to opt out of any email unsubscribe groups you offer</td>
-   
+   * </td>   
+   <td>This tag is replaced with a link allowing your recipients to opt out of any email unsubscribe groups you offer.</td>
+   <td>Unsubscribe</td>
+  
  </tr>
 </table>
 
@@ -468,15 +469,15 @@ You'll also see a number of System Fields that you can place in the body of your
    <th>Type</th>
  </tr>
  <tr>
-   <td><code class="language-text"><{{email}}></code></td>
+   <td><code class="language-text">{{email}}</code></td>
    <td>The email address of the recipient</td>
  </tr>
  <tr>
-   <td><code class="language-text"><{{first_name}}></code></td>
+   <td><code class="language-text">{{first_name}}</code></td>
    <td>The first name of the recipient</td>
  </tr>
  <tr>
-   <td><code class="language-text"><{{last_name}}></code></td>
+   <td><code class="language-text">{{last_name}}</code></td>
    <td>The last name of the recipient</td>
  </tr>
  <tr>
@@ -496,18 +497,13 @@ You'll also see a number of System Fields that you can place in the body of your
    <td>The zip code on record for the sender selected when sending your email</td>
  </tr>
  <tr>
-   <td><code class="language-text"><{{{unsubscribe}}}></code>* </td>
+   <td><code class="language-text">{{unsubscribe}}</code>* </td>
    <td>This tag is replaced with a link allowing your recipients opt out of any emails you send using the chosen Unsubscribe Group.</td>
  </tr>
  <tr>
-   <td><code class="language-text"><{{unsubscribe_</br>preferences}}></code>
+   <td><code class="language-text">{{unsubscribe_</br>preferences}}</code>
    * </td>
    <td>This tag is replaced with a link allowing your recipients to opt out of any email unsubscribe groups you offer.</td>
- </tr>
- <tr>
-   <td><code class="language-text"><{{Weblink}}></code></td>
-   <td>This tag is replaced with a link allowing your recipients to view your email content directly within their web browser.</td>
-   <td>Weblink</td>
  </tr>
 </table>
 

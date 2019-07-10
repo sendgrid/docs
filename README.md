@@ -78,7 +78,7 @@ SendGrid does not merge a pull request made against a SendGrid open source proje
 
 	`$ npm install -g n`
 
-	`$ n 8.4.0`
+	`$ n 8.7.0`
 
 * Download yarn
 
