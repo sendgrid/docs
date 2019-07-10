@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-Your application, mail client or website can all use API (Application Programming Interface) keys to authnticate access to SendGrid services.They are the preferred alternative to using a username and password because you can revoke an API key at any time without having to change your username and password. We suggest that you use API keys for connecting to all of SendGrid’s services.
+Your application, mail client or website can all use API (Application Programming Interface) keys to authenticate access to SendGrid services.They are the preferred alternative to using a username and password because you can revoke an API key at any time without having to change your username and password. We suggest that you use API keys for connecting to all of SendGrid’s services.
 
 ## Types of API keys
 
