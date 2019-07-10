@@ -30,7 +30,7 @@ You can create up to 120 custom fields.
 
 *To add a custom field:*
 
-The most common way to add custom fields is by including each custom field you’d like to add as a column in your CSV [upload]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#uploading-a-csv). If you’d like to add custom fields programmatically, see our [API documentation](https://sendgrid-marketing-campaigns-beta.api-docs.io/v1/custom-fields/create-custom-field-definition)
+The most common way to add custom fields is by including each custom field you’d like to add as a column in your CSV [upload]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#uploading-a-csv). If you’d like to add custom fields programmatically, see our [API documentation]( https://sendgrid.api-docs.io/v3.0/custom-fields/create-custom-field-definition)
 
 You can also add custom fields manually from the Custom Fields page. 
 
