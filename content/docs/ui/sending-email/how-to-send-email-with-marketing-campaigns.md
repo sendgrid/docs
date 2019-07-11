@@ -45,10 +45,10 @@ Specifying a [sender]({{root_url}}/ui/sending-email/senders/) in Marketing Campa
 
 When you add a sender, you need to specify the following information:
 
-From name - the name of the person or company you wish to send email from.
-From email - the email of the person or company you wish to send email from.
-Reply to email - the email address of the person or company you want recipients to reply to. (Can also be a role address.)
-Company address - the physical location of the business you’re sending email on behalf of.
+- **From name** - the name of the person or company you wish to send email from.
+- **From email** - the email of the person or company you wish to send email from.
+- **Reply to email** - the email address of the person or company you want recipients to reply to. (Can also be a role address.)
+- **Company address** - the physical location of the business you’re sending email on behalf of.
 
 <call-out>
 
