@@ -18,7 +18,7 @@ The content on this page describes the experience in the latest version of Marke
 
 </call-out>
 
-Adding contacts to a list that's designated as the entry criteria for an automation will trigger that automation. The new Marketing Campaigns experience offers several ways to add contacts to lists, including CSV upload, using signup forms, or via the [Contact Management APIs](https://sendgrid.api-docs.io/v3.0/contacts/)
+
 
 ## Add Contacts
 
