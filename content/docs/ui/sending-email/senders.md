@@ -17,7 +17,6 @@ Senders are shared between new and legacy Marketing Campaigns, meaning that if y
 
 </call-out>
 
-
 ##     Adding a Sender
 
 You are required to include your contact information, including a physical mailing address, inside every promotional email you send in order to comply with the U.S. CAN-SPAM Act, CASL, and other anti-spam laws of the countries your recipients live in.
@@ -54,8 +53,7 @@ You may create up to 100 unique senders.
 
 <call-out>
   
-If you have an [authenticated domain]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/)
-and your sender email address matches that domain exactly, your sender identity will be automatically verified.
+If you have an [authenticated domain]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/) and your sender email address matches that domain exactly, your sender identity will be automatically verified.
 
 </call-out>
 
