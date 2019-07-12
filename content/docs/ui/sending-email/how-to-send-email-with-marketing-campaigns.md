@@ -36,7 +36,7 @@ Your time zone is set at the account level, you’ll need to navigate to your ac
 
 
 1. Near the bottom of the left-hand navigation, select **Settings**.
-1. Click **Account Details**, or go to https://app.sendgrid.com/settings/account.
+1. Click **Account Details**, or go [here](https://app.sendgrid.com/settings/account).
 1. Scroll to the bottom of the page, find the *Timezone* field, and correct it if necessary.
 
 ### Add a sender
