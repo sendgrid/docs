@@ -107,6 +107,6 @@ Listed below are a few errors you may encounter when uploading a CSV to Marketin
 
  ##     Additional Resources
 
-- [Contacts API](https://sendgrid-marketing-campaigns-beta.api-docs.io/v1/contacts/)
+- [Contacts API]( https://sendgrid.api-docs.io/v3.0/contacts/)
 - [Segmenting your Contacts]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/)
 - [Building your Contact list]({{root_url}}/ui/managing-contacts/building-your-contact-list/)
