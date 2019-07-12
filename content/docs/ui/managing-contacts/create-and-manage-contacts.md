@@ -18,7 +18,7 @@ The content on this page describes the experience in the latest version of Marke
 
 </call-out>
 
-Adding contacts to a list that's designated as the entry criteria for an automation will trigger that automation. The new Marketing Campaigns experience offers several ways to add contacts to lists, including CSV upload, using signup forms, or via the [Contact Management APIs](https://sendgrid.api-docs.io/v3.0/contacts/)
+
 
 ## Add Contacts
 
@@ -248,7 +248,7 @@ Exported CSV files are only available for download for 72 hours after the export
 
 ## Contact Management APIs
 
-You can integrate with the Contact Management APIs to create and update lists, add contacts, manage reserved field data, export contact lists, and pull data about your contacts and lists. Learn more through the documentation for [Automation Contact APIs](https://sendgrid-automation.api-docs.io/v3/getting-started).
+You can integrate with the Contact Management APIs to create and update lists, add contacts, manage reserved field data, export contact lists, and pull data about your contacts and lists. Learn more through the documentation for [Automation Contact APIs](https://sendgrid.api-docs.io/v3.0/contacts/).
 
 ## Additional Resources
 - [Custom Fields]({{root_url}}/ui/sending-email/editor/)
