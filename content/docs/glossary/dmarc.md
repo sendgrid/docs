@@ -31,10 +31,9 @@ Return Path's Brand Monitor is one, and Agari is another.
 5. Escalate your DMARC policy tags from 'p=none' to 'p=quarantine' to 'p=reject' as you gain experience. 
 
 
-## 1. Deploy DKIM & SPF by setting up reverse DNS for your SendGrid IP
+## 1. Deploy DKIM & SPF by setting up Sender Authentication
 
-Start by completing reverse DNS for your SendGrid IP. This ensures that emails sent through your SendGrid account will be properly signed using DKIM and SPF for your unique domain. 
-For more information on reverse DNS, 
+Start by following the instructions found [here]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/). Once you have followed the setup and have validated your Sender Authentication it is time to move on to step two. 
 
 ## 2. Ensure proper DKIM and SPF signing for your authenticated domain
 
