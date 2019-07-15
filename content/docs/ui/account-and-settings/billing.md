@@ -73,7 +73,7 @@ Each [Marketing Campaigns](https://sendgrid.com/pricing/) package will cover bot
 * Automation
 * Single Sends for one-time campaigns
 * Ticket Support
-* Email Testing
+* 3 Email Testing Credits per month
 * 1 Signup Form
 
 *Limits:*
@@ -104,7 +104,7 @@ If you’re on the Free package and hit your contact allotment limit, any active
 
 * Single Sends for one-time campaigns
 * Ticket, chat, and phone support
-* Email Testing
+* 10 Email Testing Credits per month with the option to purchase more
 * 5 Signup Forms
 * 1 Teammate
 * Access to Expert Services
@@ -122,7 +122,7 @@ If you’re on the Free package and hit your contact allotment limit, any active
 * Automation 
 * Single Sends for one-time campaigns
 * Ticket, chat, and phone support
-* Email Testing
+* 60 Email Testing Credits per month with the option to purchase more
 * 15 Signup Forms
 * 1,000 Teammates
 * Access to Expert Services
