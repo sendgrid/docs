@@ -80,12 +80,12 @@ Your account comes preloaded with unremovable reserved fields.  The following fi
 
 SendGrid auto-populates 6 reserved fields: 
 
-``lists``
-``created_at``
-``updated_at``
-``last_emailed``
-``last_clicked``
-``last_opened``
+- ``lists``
+- ``created_at``
+- ``updated_at``
+- ``last_emailed``
+- ``last_clicked``
+- ``last_opened``
 
 Reserved fields are used by default to track useful metrics for your contacts.
 
