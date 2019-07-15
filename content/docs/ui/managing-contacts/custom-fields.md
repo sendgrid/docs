@@ -71,7 +71,7 @@ Your account comes preloaded with unremovable reserved fields.  The following fi
   <tr><td>postal_code</td><td>text</td></tr>
   <tr><td>country</td><td>text</td></tr>
   <tr><td>alternate_emails</td><td>text</td></tr>
-  <tr><th>phone_number</th><th>text</th></tr>
+  <tr><td>phone_number</td><td>text</td></tr>
   <tr><td>whatsapp</td><td>text</td></tr>
   <tr><td>line</td><td>text</td></tr>
   <tr><td>facebook</td><td>text</td></tr>
