@@ -37,7 +37,7 @@ Your time zone is set at the account level, you’ll need to navigate to your ac
 
 1. Near the bottom of the left-hand navigation, select **Settings**.
 1. Click **Account Details**, or go [here](https://app.sendgrid.com/settings/account).
-1. Scroll to the bottom of the page, find the *Timezone* field, and correct it if necessary.
+1. Locate the *Timezone* field under **Your Account**, and correct it if necessary.
 
 ### Add a sender
 
@@ -49,6 +49,8 @@ When you add a sender, you need to specify the following information:
 - **From email** - the email of the person or company you wish to send email from.
 - **Reply to email** - the email address of the person or company you want recipients to reply to. (Can also be a role address.)
 - **Company address** - the physical location of the business you’re sending email on behalf of.
+- **City** - the city of the business you're sending email on behalf of.
+- **Nickname** - the nickname is for your reference only; this field will not be displayed to recipients.
 
 <call-out>
 
@@ -61,11 +63,16 @@ If your email domain doesn't match one of your [authenticated]({{root_url}}/ui/a
 
 Marketing Campaigns offers a number of ways to add contacts to lists, including:
 
-- [CSV Upload]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#upload-a-csv/), 
-- [Signup Forms]({{root_url}/ui/managing-contacts/create-and-manage-contacts/#create-a-signup-form/)
-- [Manually Adding a Contact]({{root_url}/https://sendgrid.com/docs/ui/managing-contacts/create-and-manage-contacts/#add-manually)
-- [Contact Management APIs](https://sendgrid-marketing-campaigns-beta.api-docs.io/v1).
+- [**Signup Forms**]({{root_url}/ui/managing-contacts/create-and-manage-contacts/#create-a-signup-form/)
 
+![]({{root_url}}/img/sign-up-form.png "Sign Up Form")
+
+- [**CSV Upload**]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#upload-a-csv/) 
+
+- [**Manually Adding a Contact**]({{root_url}/https://sendgrid.com/docs/ui/managing-contacts/create-and-manage-contacts/#add-manually)
+
+- [**Contact Management APIs**](https://sendgrid-marketing-campaigns-beta.api-docs.io/v1)
+ 
 <call-out type="warning">
 
 Adding contacts to a list that's designated as the entry criteria for an automation will trigger that automation.
@@ -74,10 +81,10 @@ Adding contacts to a list that's designated as the entry criteria for an automat
 
 ### Add an Unsubscribe Group
 
-Unsubscribe Groups provide your recipients with an alternative to opting out of all email that you send, by giving them the opportunity to specify the kinds of email that they would no longer like to receive.
+[Unsubscribe Groups]({{root_url}}/ui/sending-email/create-and-manage-unsubscribe-groups/) provide your recipients with an alternative to opting out of all email that you send, by giving them the opportunity to specify the kinds of email that they would no longer like to receive.
 
 1. Navigate to **Marketing** and click **Unsubscribe Groups**.
-1. Click **Add Unsubscribe Groups** if you do not already have any unsubscribe groups, or click **Create  New Group** to add a new group.
+1. Click **Add Unsubscribe Groups** if you do not already have any unsubscribe groups, or click **Create New Group** to add a new group.
 1. Enter the Group Name and Group Description for your Unsubscribe Group.
 
 <call-out type="warning">
@@ -86,13 +93,15 @@ The Group Name as well as the Group Description are public-facing and will be vi
 
 </call-out>
 
+![]({{root_url}}/img/unsubscribe-group-example.png "Alt text")
+
 4. Select the checkbox if you want the Unsubscribe Group to display on the unsubscribe preferences page.
 5. Click **Save Unsubscribe Group**.
 6. Find your newly created Unsubscribe Group, click the action menu, and then click **Preview**.
 
 ### Create Notifications
 
-You can opt in to receive email notifications from SendGrid about your account’s Marketing Campaigns activity, CSV upload summaries, sender verifications, and list/segment exports to up to 10 email addresses by following the instructions [here]({{root_url}}/ui/account-and-settings/notifications/). By default, these notifications will send to the email you signed up with on your parent account.
+By default, notifications about your account's Marketing Campaigns activity, CSV upload summaries, sender verifications, and list-segment exports will send to the email you signed up wioth on your parent account. You can also opt in to receive email notifications from SendGrid to up to 10 email addresses by following the instructions [here]({{root_url}}/ui/account-and-settings/notifications/).
 
 ## Creating a Single Send
 
@@ -108,28 +117,34 @@ You can opt in to receive email notifications from SendGrid about your account�
 
 <call-out>
 
-The **Design Editor** offers users powerful drag & drop editing tools, making it possible to build beautiful emails using a library of content modules like text boxes,images, buttons and more. For those familiar with HTML, there are options to edit the HTML of individual modules, drag in a custom code module, or to import an entire HTML email with drag & drop markup.
+The [**Design Editor**]({{root_url}}/ui/sending-email/editor/#the-design-editor) offers users powerful drag & drop editing tools, making it possible to build beautiful emails using a library of content modules like text boxes,images, buttons and more. For those familiar with HTML, there are options to edit the HTML of individual modules, drag in a custom code module, or to import an entire HTML email with drag & drop markup.
 
-The **Code Editor** provides users who are importing, editing, or crafting custom HTML a robust, IDE-like environment, featuring side-by-side code and preview panes, syntax highlighting, code completion, and image management.
+The [**Code Editor**]({{root_url}}/ui/sending-email/editor/#the-code-editor) provides users who are importing, editing, or crafting custom HTML a robust, IDE-like environment, featuring side-by-side code and preview panes, syntax highlighting, code completion, and image management.
 
 </call-out>
 
 Inside the Design Editor, you use the **Settings**, **Tags** and **Build** tabs to design and configure your email.
 Inside the Code Editor, you can click the left **Settings** tab to expand the settings window, and then you can configure your email using the **Settings** and **Tags** tabs.
 
-6. Define key settings like From Sender, Email Subject, Preheader, Recipients, and Scheduling by filling in the fields in the **Settings** Tab.
+![]({{root_url}}/img/design-editor-preview.png "Design Editor Preview")
+
+6. Define key settings like *From Sender*, *Email Subject*, *Preheader*, *Recipients*, and *Scheduling* by filling in the fields in the **Settings** tab.
 
 <call-out type="warning">
 
 Please note that only some special characters are allowed in email addresses. Without quotes, local-parts of an email address may consist of any combination of alphabetic characters, digits, or any of the following special characters: 
 
- `! # $ % & ' * + - / = ?  ^ _ ` . { | } ~`
+ ```
+ ! # $ % & ' * + - / = ?  ^ _ . { | } ~ `
+ ```
 
-period (".") may also appear, but may not be used to start or end the local part, nor may two or more consecutive periods appear.
+ A period (".") may also appear, but may not be used to start or end the local part, nor may two or more consecutive periods appear.
 
 </call-out>
 
-7. Add your custom content by clicking the Build tab in the Design Editor, or by editing the HTML code in the Code Editor. 
+7. Add your custom content by clicking the **Build** tab in the Design Editor, or by editing the HTML code in the Code Editor. 
+
+![]({{root_url}}/img/build-tab.png "Build tab")
 
 <call-out> 
 
@@ -139,30 +154,20 @@ For more information about customizing your campaign, see [Using the Design Edit
 
 </call-out>
 
-8. Once you’ve finished editing your email, you can see what it looks like by saving your draft, hovering over the action menu, and then clicking **Preview**.
-
-
-At this time, you are unable to send a test email. However you can use our Email Testing feature to test your email across different devices and platforms. It allows you to preview how an email is likely to perform across a wide range of inbox providers, devices and spam filters, before sending.
-
-<call-out>
-
-Before you send a test email, you can test how your email will perform across a wide range of inbox providers, devices, and spam filters by using [email testing]({{root_url}}/ui/sending-email/email-testing).
-
-</call-out>
-
-9. If you haven't already, return to Settings to select which contacts will receive your email by clicking the **Send To** field under **Recipients**.
-
 ## Sending your First Email
+
+1. Once you’ve finished editing your email, you can see what it looks like by saving your draft, hovering over the action menu, and then clicking **Preview**.
+
+
+At this time, you are unable to send a test email. However you can use our [Email Testing]({{root_url}}/ui/sending-email/email-testing) feature to test your email across different devices and platforms. It allows you to preview how an email is likely to perform across a wide range of inbox providers, devices and spam filters, before sending.
+
+![]({{root_url}}/img/email-testing-full.png "Email Testing")
+
+2. If you haven't already, return to **Settings** to select which contacts will receive your email by clicking the **Send To** field under **Recipients**.
 
 <call-out type="warning">
 
-Any contacts that are added to a list or segment after an email is scheduled but prior to send **will receive** the campaign. Contacts for an email are retrieved at the time of send.
-
-</call-out>
-
-<call-out>
-
-If possible, avoid scheduling for the top of the hour or half hour to avoid the busiest times for your recipients' inboxes. Sending at 10:53, for example, can help increase engagement.
+Recipients on a list or segment **will receive** an email if they are on the list or segment before the email sends and after an email is scheduled to send. The email will send to all contacts on the specified list or segment at the time of sending the email. If possible, avoid scheduling for the top of the hour or half-hour to avoid the busiest times for your recipients' inboxes. Sending at 10:53, for example, can help increase engagement.
 
 </call-out>
 
