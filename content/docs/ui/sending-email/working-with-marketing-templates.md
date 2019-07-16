@@ -11,17 +11,13 @@ seo:
   description:
 ---
 
-<iframe src="https://player.vimeo.com/video/120738522" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-<call-out type="warning">
-
 <call-out>
 
 Some of the template functionality is currently only available in the legacy Marketing Campaigns product and is not yet available within the new Marketing Campaigns experience. For additional information, including when we expect it to be available, click [here]({{root_url}}/ui/sending-email/coming-soon-to-new-marketing-campaigns/). 
 
 </call-out>
 
-</call-out>
+<iframe src="https://player.vimeo.com/video/120738522" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 Marketing Campaigns templates determine how the content of your campaign will be built and displayed to your recipients. Templates also serve as a quick starting point for future campaigns by saving you time from having to rebuild your campaign's layout. Consequently, templates allow you to reuse content and maintain brand consistency across all of your campaign efforts.
 
