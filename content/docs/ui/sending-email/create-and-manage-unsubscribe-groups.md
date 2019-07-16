@@ -16,6 +16,8 @@ This page is describing the functionality of the new Marketing Campaigns experie
 
 </call-out>
 
+<iframe src="https://player.vimeo.com/video/221494705" width="500" height="312" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 Adding Unsubscribe Groups to your emails makes it easy to honor your recipients' email preferences and protect your sender reputation by complying with anti-spam legislation.
 
 ## Create an Unsubscribe Group
