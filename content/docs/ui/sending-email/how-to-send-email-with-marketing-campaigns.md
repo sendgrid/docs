@@ -16,6 +16,8 @@ This page refers to the new Marketing Campaigns product. If you’re using legac
 
 </call-out>
 
+<iframe src="https://player.vimeo.com/video/305551346" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 <call-out>
 
 If you want to send email programmatically using Twilio SendGrid's Email API, see the [API reference]({{root_url}}/api-reference/) or the [SMTP Reference]({{root_url}}/for-developers/sending-email/getting-started-smtp/).
