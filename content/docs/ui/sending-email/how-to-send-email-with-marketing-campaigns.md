@@ -103,7 +103,7 @@ The Group Name as well as the Group Description are public-facing and will be vi
 
 ### Create Notifications
 
-By default, notifications about your account's Marketing Campaigns activity, CSV upload summaries, sender verifications, and list-segment exports will send to the email you signed up wioth on your parent account. You can also opt in to receive email notifications from SendGrid to up to 10 email addresses by following the instructions [here]({{root_url}}/ui/account-and-settings/notifications/).
+By default, notifications about your account's Marketing Campaigns activity, CSV upload summaries, sender verifications, and list or segment exports will send to the email you signed up with on your parent account. You can also opt in to receive email notifications from SendGrid to up to 10 email addresses by following the instructions [here]({{root_url}}/ui/account-and-settings/notifications/).
 
 ## Creating a Single Send
 
