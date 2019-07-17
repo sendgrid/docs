@@ -13,7 +13,7 @@ navigation:
 
 You can utilize the SendGrid API to automate the addition of Subusers to your account. Use the following ```curl``` examples to add a Subuser using the SendGrid V3.0 API.
 
-## 	Prerequisites
+## 	Prerequisites for automating addition of Subusers to your account
 
 Before you can start using the API, you need to do the following:
 
