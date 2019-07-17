@@ -406,7 +406,7 @@ To download data about individual contacts, including when they were last sent a
 
 ## Integrate with the new Marketing Campaigns APIs
 
-The new Marketing Campaigns experience offers APIs so you can programmatically manage your marketing emails. Today, you can [manage contacts](https://sendgrid.api-docs.io/v3.0/contacts/) and [Single Sends](https://sendgrid.api-docs.io/v3.0/single-sends/), with additional APIs for Automation Segmentation [coming soon]({{root_url}}/ui/sending-email/coming-soon-to-new-marketing-campaigns/).
+The new Marketing Campaigns experience offers APIs so you can programmatically manage your marketing emails. Today, you can [manage contacts](https://sendgrid.api-docs.io/v3.0/contacts/) and [Single Sends](https://sendgrid.api-docs.io/v3.0/single-sends/), with additional APIs for Segmentation and Automation [coming soon]({{root_url}}/ui/sending-email/coming-soon-to-new-marketing-campaigns/).
 
 ## FAQs
 
