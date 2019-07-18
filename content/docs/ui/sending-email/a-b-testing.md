@@ -23,6 +23,8 @@ When recipients interact with the emails sent during an A/B test, you can compar
 
 <iframe src="https://player.vimeo.com/video/225916632" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
+
+
 ##  Set up an A/B test
  *To set up an A/B test on an existing campaign:*
 
