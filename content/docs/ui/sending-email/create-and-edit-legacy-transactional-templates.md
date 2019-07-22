@@ -76,7 +76,7 @@ From the main template view on each template group, you will see an actions menu
 
 <call-out>
 
-When you delete a template you will delete all the versions of your template
+When you delete a template you will delete all the versions of your template.
 
 </call-out>
 
