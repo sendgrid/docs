@@ -404,9 +404,288 @@ To download data about individual contacts, including when they were last sent a
 1. Hover over the action menu and select the **Export** icon.
 1. Once the export is completed, a download link will be sent to the email(s) you have specified to receive [notifications]({{root_url}}/ui/account-and-settings/notifications/) about legacy Marketing Campaigns.
 
-## Integrate with the new Marketing Campaigns APIs
+##  Updating integrations to the new Marketing Campaigns APIs
 
-The new Marketing Campaigns experience offers APIs so you can programmatically manage your marketing emails. Today, you can [manage contacts](https://sendgrid.api-docs.io/v3.0/contacts/) and [Single Sends](https://sendgrid.api-docs.io/v3.0/single-sends/), with additional APIs for Segmentation and Automation [coming soon]({{root_url}}/ui/sending-email/coming-soon-to-new-marketing-campaigns/).
+Like legacy Marketing Campaigns, the new Marketing Campaigns experience offers APIs so you can programmatically manage your marketing emails. Today, you can manage contacts and Single Sends, with additional APIs for Segmentation and Automation [coming soon]({{root_url}}/ui/sending-email/coming-soon-to-new-marketing-campaigns/). 
+
+Take a look at the table below for links to the API reference pages for legacy and new Marketing Campaigns respectively. The third column describes the action required to update your integrations from legacy to new Marketing Campaigns
+
+### Updating Campaign API integrations
+
+<table>
+  <tr>
+    <th><span style="font-weight:bold">Legacy Marketing Campaigns</span></th>
+    <th><span style="font-weight:bold">New Marketing Campaigns</span></th>
+    <th><span style="font-weight:bold">Action Required</span></th>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/campaigns-api/create-a-campaign">Create a Campaign</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/single-sends/create-single-send">Create Single Send</a></td>
+    <td><li>Update endpoint</li><br><li>New Marketing Campaigns requires template ID as opposed to explicitly defined HTML content</li><br><li>Duplication of past campaigns is possible with a 'source' query string</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/campaigns-api/retrieve-all-campaigns">Retrieve all Campaigns</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/single-sends/get-all-single-sends">Get All Single Sends</a></td>
+    <td><li>Update endpoint</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/campaigns-api/retrieve-a-single-campaign">Retrieve a single campaign</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/single-sends/get-single-sends-by-id">Get Single Send by ID</a></td>
+    <td><li>Update endpoint</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/campaigns-api/delete-a-campaign">Delete a Campaign</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/single-sends/delete-single-sends-by-id">Delete Single Send by ID</a><br><br>NEW <a href="https://sendgrid.api-docs.io/v3.0/single-sends/bulk-delete-single-sends">Bulk Delete Single Sends</a></td>
+    <td><li>Update endpoint</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/campaigns-api/update-a-campaign">Update a Campaign</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/single-sends/update-single-send">Update Single Send</a></td>
+    <td><li>Update endpoint</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/campaigns-api/send-a-campaign">Send a Campaign</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/single-sends/schedule-campaign">Schedule Single Send</a></td>
+    <td><li>Update endpoint and HTTP verb</li><br><li>To send immediately set "send_at" set to "now"</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/campaigns-api/schedule-a-campaign">Schedule a Campaign</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/single-sends/schedule-campaign">Schedule Single Send</a></td>
+    <td><li>Update endpoint</li><br><li>Send at time now in ISO 8601 as opposed to a UNIX timestamp</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/campaigns-api/update-a-scheduled-campaign">Update a Scheduled Campaign</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/single-sends/schedule-campaign">Schedule Single Send</a></td>
+    <td><li>Update endpoint and HTTP verb</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/campaigns-api/view-scheduled-time-of-a-campaign">View Scheduled Time of a Campaign</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/single-sends/get-single-sends-by-id">Get Single Send by ID</a></td>
+    <td><li>Update endpoint</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/campaigns-api/unschedule-a-scheduled-campaign">Unschedule a Scheduled Campaign</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/single-sends/delete-single-send-schedule">Delete Single Send Schedule</a></td>
+    <td><li>Update endpoint</li></td>
+  </tr>
+</table>
+
+### Updating Contacts API integrations
+
+<table>
+  <tr>
+    <th><span style="font-weight:bold">Legacy Marketing Campaigns</span></th>
+    <th><span style="font-weight:bold">New Marketing Campaigns</span></th>
+    <th><span style="font-weight:bold">Action Required</span></th>
+  </tr>
+  <tr>
+    <td></td>
+    <td><span style="font-weight:bold">Lists</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-lists/create-a-list">Create a List</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/lists/create-list">Create List</a></td>
+    <td><li>Update endpoint</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-lists/retrieve-all-lists">Retrieve all Lists</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/lists/get-all-lists">Get All Lists</a></td>
+    <td><li>Update endpoints</li><br><li>'page_token' new method of pagination</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-lists/delete-multiple-lists">Delete Multiple Lists</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/lists/delete-a-list">Delete a List</a></td>
+    <td><li>Update endpoint</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-lists/retrieve-a-single-list">Retrieve a Single List</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/lists/get-a-list-by-id">Get a List by ID</a></td>
+    <td><li>Update endpoint</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-lists/update-a-list">Update a List</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/lists/update-list">Update List</a></td>
+    <td><li>Update endpoint</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-lists/delete-a-list">Delete a List</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/lists/delete-a-list">Delete a List</a></td>
+    <td><li>Update endpoint</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-lists/retrieve-all-recipients-on-a-list">Retrieve all Recipients on a List</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts/get-all-contacts">Get All Contacts</a></td>
+    <td><li>Update endpoint<br><li>List(s) a contact is on returns in Get All Contacts call</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-lists/add-a-single-recipient-to-a-list">Add a Single Recipient to a List</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts/add-or-update-a-contact">Add or Update a Contact</a></td>
+    <td><li>Update endpoint and HTTP verb<br><li>List ID(s) added in JSON payload</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-lists/delete-a-single-recipient-from-a-single-list">Delete a Single Recipient from a Single List</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/lists/remove-contacts-from-a-list">Remove Contacts from a List</a></td>
+    <td><li>Update endpoint</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-lists/add-multiple-recipients-to-a-list">Add Multiple Recipients to a List</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts/add-or-update-a-contact">Add or Update a Contact</a></td>
+    <td><li>Update endpoint and HTTP verb</li><br><li>List ID(s) added in JSON payload</li></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><span style="font-weight:bold">Recipients</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-recipients/add-recipients">Add Recipients</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts/add-or-update-a-contact">Add or Update a Contact</a></td>
+    <td><li>Update endpoint and HTTP verb</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-recipients/get-recipient-upload-status">Get Recipient Upload Status</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts/import-contacts-status">Import Contact Status</a></td>
+    <td><li>Update endpoint</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-recipients/update-recipient">Update Recipient</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts/add-or-update-a-contact">Add or Update a Contact</a></td>
+    <td><li>Update endpoint and HTTP verb</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-recipients/delete-recipients">Delete Recipients</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts/delete-contacts">Delete Contacts</a></td>
+    <td><li>Update endpoint</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-recipients/retrieve-recipients">Retrieve Recipients</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts/get-all-contacts">Get All Contacts</a></td>
+    <td><li>Update endpoint</li><br><li>'page_token' new method of pagination</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-recipients/retrieve-a-single-recipient">Retrieve a Single Recipient</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts/get-a-contact-by-id">Get a Contact by ID</a></td>
+    <td><li>Update endpoint</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-recipients/delete-a-recipient">Delete a Recipient</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts/delete-contacts">Delete Contacts</a></td>
+    <td><li>Update endpoint</li><br><li>Contact ID passed in JSON payload</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-recipients/retrieve-the-lists-that-a-recipient-is-on">Retrieve the Lists that a Recipient is on</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts/get-a-contact-by-id">Get a Contact by ID</a></td>
+    <td><li>Update endpoint</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-recipients/retrieve-the-count-of-billable-recipients">Retrieve the Count of billable Recipients</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts/get-total-contact-count">Get Total Contact Count</a></td>
+    <td><li>Update endpoint</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-recipients/retrieve-a-count-of-recipients">Retrieve a Count of Recipients</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts/get-total-contact-count">Get Total Contact Count</a></td>
+    <td><li>Update endpoint</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-recipients/Create_Search%20with%20conditions">Search Recipients</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts/search-contacts">Search Contacts</a></td>
+    <td><li>Update endpoint</li></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><span style="font-weight:bold">Custom Fields</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-custom-fields/create-a-custom-field">Create a Custom Field</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/custom-fields/create-custom-field-definition">Create Custom Field Definition</a></td>
+    <td><li>Update endpoint</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-custom-fields/retrieve-all-custom-fields">Retrieve all Custom Fields</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/custom-fields/get-all-field-definitions">Get All Field Definitions</a></td>
+    <td><li>Update endpoint</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-custom-fields/retrieve-a-custom-field">Retrieve a Custom Field</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/custom-fields/get-all-field-definitions">Get All Field Definitions</a><br><br>NEW <a href="https://sendgrid.api-docs.io/v3.0/custom-fields/update-custom-field-definition">Update Custom Field Definition</a><br></td>
+    <td><li>Update endpoint</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-custom-fields/delete-a-custom-field">Delete a Custom Field</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/custom-fields/delete-custom-field-definition">Delete Custom Field Definition</a></td>
+    <td><li>Update endpoint</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-custom-fields/retrieve-reserved-fields">Retrieve Reserved Fields</a></td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/custom-fields/get-all-field-definitions">Get All Field Definitions</a></td>
+    <td><li>Update endpoint</li><br><li>Reserved fields defined in array "reserved_fields"</li></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><span style="font-weight:bold">Segments</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-segments/create-a-segment">Create a Segment</a></td>
+    <td>Coming soon</td>
+    <td><li>Update endpoint</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-segments/retrieve-all-segments">Retrieve all Segments</a></td>
+    <td>Coming soon</td>
+    <td><li>Update endpoint</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-segments/retrieve-a-segment">Retrieve a Segment</a></td>
+    <td>Coming soon</td>
+    <td><li>Update endpoint</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-segments/update-a-segment">Update a Segment</a></td>
+    <td>Coming soon</td>
+    <td><li>Update endpoint</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-segments/delete-a-segment">Delete a Segment</a></td>
+    <td>Coming soon</td>
+    <td><li>Update endpoint</li></td>
+  </tr>
+  <tr>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-segments/retrieve-recipients-on-a-segment">Retrieve Recipients on a Segment</a></td>
+    <td>Coming soon</td>
+    <td><li>Update endpoint</li></td>
+  </tr>
+</table>
+
+## Using the APIs to migrate contacts and content to new Marketing Campaigns
+
+You can leverage the APIs to programmatically manage much of your migration to new Marketing Campaigns by following the guidance below.
+
+### Contacts
+
+**Recreate Lists**
+
+Use the legacy Marketing Campaigns API call [Retrieve all Lists](https://sendgrid.api-docs.io/v3.0/contacts-api-lists/retrieve-all-lists) to determine the list names to recreate in the new Marketing Campaigns. Then, use new Marketing Campaigns API call [Create List](https://sendgrid.api-docs.io/v3.0/lists/create-list) in the new experience. The values this call returns, particularly `‘id’`, are necessary for the recipient migration API.
+
+**Recreate Custom Fields**
+
+Use the legacy Marketing Campaigns API call to [Retrieve all Custom Fields](https://sendgrid.api-docs.io/v3.0/contactdb/custom_field) to determine the custom field necessary to recreate in new Marketing Campaigns. Use new Marketing Campaigns API call to create [Custom Field](https://sendgrid.api-docs.io/v3.0/custom-fields/create-custom-field-definition) in the new Marketing Campaigns API. Pass in the corresponding `‘name’` and `‘field_type’` from the legacy Marketing Campaigns GET call. The values this call returns, particularly `‘id’`, are necessary for the recipient migration API.
+
+**Migrate Recipients**
+
+Use the legacy Marketing Campaigns API call to [Retrieve all Recipients](https://sendgrid.api-docs.io/v3.0/contactdb/recipients) to recreate in new Marketing Campaigns. We recommend using pagination and iterating through all of the pages until you receive a `404 ‘no pages’` error. You will receive a response to return all contacts. The values this call returns, particularly `‘id’`, will be necessary for the recipient migration API. Iterate through all the recipients to get lists this recipient is on. Store the list(s) you wish to add your recipients onto in the new Marketing Campaigns, otherwise, recipients will add onto `‘All Contacts’` by default. Custom Field values and list(s) a recipient is on uses this data and calls [add contacts](https://sendgrid.api-docs.io/v3.0/contacts/add-or-update-a-contact) to the new experience. It is important to note: 
+
+1. Custom Fields pass as an object with key value pairs as
+ 
+    `{ “id_1” : “value_1”, “id_2” : “value_2” }`
+
+    and **not** as the name of the new Marketing Campaigns Custom Field.
+
+2. This call allows for batching of recipients. It is recommended to add at least 1,000 recipients per API request.
+3. You can omit `‘list_ids’` if your recipient is not uploaded to any lists, as it is optional. 
 
 ## FAQs
 

@@ -13,7 +13,7 @@ navigation:
 
 There are several ways you can get started with the SendGrid API
 
-## 	Prerequisites
+## 	Prerequisites for sending your first email with the SendGrid API
 
 These instructions describe how to send your first email using cURL calls. This is one of many ways to send email with the SendGrid API - we also have [PHP](https://github.com/sendgrid/sendgrid-php), [Python](https://github.com/sendgrid/sendgrid-python), [Node.js](https://github.com/sendgrid/sendgrid-nodejs), [Java](https://github.com/sendgrid/sendgrid-java), [C#](https://github.com/sendgrid/sendgrid-csharp), [Go](https://github.com/sendgrid/sendgrid-go), and [Ruby](https://github.com/sendgrid/sendgrid-ruby) libraries.
 
