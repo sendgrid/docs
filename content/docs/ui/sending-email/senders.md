@@ -11,13 +11,6 @@ seo:
   description: Manage your sender contact information
 ---
 
-<call-out>
-
-Senders are shared between new and legacy Marketing Campaigns, meaning that if you are an existing customer using the new Marketing Campaigns experience, you will find all of your existing senders available to you. 
-
-</call-out>
-
-
 ##     Adding a Sender
 
 You are required to include your contact information, including a physical mailing address, inside every promotional email you send in order to comply with the U.S. CAN-SPAM Act, CASL, and other anti-spam laws of the countries your recipients live in.

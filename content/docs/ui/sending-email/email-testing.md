@@ -25,9 +25,25 @@ Email testing offers robust, pre-send testing of your emails, including in-app s
 
 ## Email Testing credits and pricing
 
-Email Testing credits can be used for both Inbox Rendering Tests and Spam Tests. A Spam Test costs 3 Email Testing credits, while an Inbox Rendering Test will cost 1 credit for every client, browser or device that you select. Check your plan to see how many email testing credits are available to you for free per month. 
+The number of Email Testing credits available to you depends on your Marketing Campaigns plan. 10 Email Testing credits per month are available for customers on Basic plans, with 60 Email Testing credits per month available to customers on Advanced plans. Email Testing credits can be used for both Inbox Rendering Tests and Spam Tests and all Email Testing credits (whether part of your plan or purchased as part of an add-on package) expire at the end of each month. 
 
-## Heading
+## Purchasing additional credits
+
+If you find yourself in need of more credits than your Marketing Campaigns plan offers, we offer additional Email Testing credit packages as add-ons to your monthly plan.
+
+<callout>
+  Note: Packages for additional Email Testing credits are billed on a monthly, recurring basis and will continue to renew each month unless removed from your account.
+  </callout>
+  
+  Available Email Testing credit add-on packages are:
+  
+  <ul>
+  <li><strong>30 Email Testing Credits</strong> per month, available for $18.00 USD</li>
+  <li><strong>60 Email Testing Credits</strong> per month, available for $30.00 USD</li>
+  <li><strong>100 Email Testing Credits</strong> per month, available for $40.00 USD</li>
+  </ul>
+
+## Running an Email Test
 
 *To test an email:*
 
