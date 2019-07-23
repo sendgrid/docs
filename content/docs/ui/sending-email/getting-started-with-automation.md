@@ -17,7 +17,7 @@ Automation is available as part of the Advanced Marketing Campaigns package. To 
 
 </call-out>
 
-Automation allows you to send a recurring email or drip series to contacts automatically at a cadence you define. Automations are simple to set up, and once created, you can trigger them to send automatically by adding new recipients to a chosen list, saving you time.
+Automation allows you to send a recurring email or drip series to contacts automatically at a cadence you define. Once you create an Automation, you can trigger them to send automatically by adding new recipients to a chosen list, saving you time.
 
 
 With Automation, you could build email campaigns to:
