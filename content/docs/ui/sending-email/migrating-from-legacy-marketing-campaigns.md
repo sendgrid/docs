@@ -45,7 +45,7 @@ The new Marketing Campaigns has been re-built from the ground up on a new platfo
 
 To support you in migrating your legacy Marketing Campaigns account to the new Marketing Campaigns, we’re providing you with a billing grace period. During this grace period, you won’t be charged for legacy Marketing Campaigns contact storage. The grace period covers the month you upgrade to a Basic or Advanced package and 1 month after you upgrade.
 
-<call-out-link linktext="Contact Expert Services" img="/img/expert-insights-promo3.png" link="https://go.sendgrid.com/Marketing-Campaigns-Launch.html">
+<call-out-link linktext="Contact Expert Services" img="/img/expert-insights-promo3.png" link="https://sendgrid.com/solutions/marketing-campaigns-migration/">
 
 ### Marketing Campaigns Migration Service
 
