@@ -21,13 +21,13 @@ Before you can set up an Ads Campaign, make sure you have these requirements bel
 
 ## Requirements for setting up an ad
 
-* You must be a SendGrid customer.
+* You must be a Twilio SendGrid customer.
 * You must have a URL of the site you want to promote.
-* You must have a Facebook and/or a Google account. You must connect it to your SendGrid account. 
+* You must have a Facebook and/or a Google account. You must connect it to your Twilio SendGrid account. 
 
 <call-out>
 
-We recommend that you install a SendGrid pixel to your site. This will help you have better visibility into your statistics and will enable you to retarget visitors to your website.
+We recommend that you install a Twilio SendGrid pixel to your site. This will help you have better visibility into your statistics and will enable you to retarget visitors to your website.
 
 </call-out>
 
@@ -52,10 +52,6 @@ Here are the targeting options to drive people to your site:
   <tr>
     <td>Contact List Lookalikes</td>
     <td>Target people who are similar to your contacts</td>
-  </tr>
-  <tr>
-    <td>Email Activity Lookalikes</td>
-    <td>Target people who are similar to those who have interacted with your emails</td>
   </tr>
   <tr>
     <td>Facebook Followers Lookalikes</td>
@@ -100,10 +96,6 @@ Here are the targeting options to drive people to your site:
     <td>Target people who are similar to your contacts</td>
   </tr>
   <tr>
-    <td>Email Activity Lookalikes</td>
-    <td>Target people who are similar to those who have interacted with your emails</td>
-  </tr>
-  <tr>
     <td>Facebook Followers Lookalikes</td>
     <td>Target people who are similar to your Facebook followers</td>
   </tr>
@@ -125,24 +117,9 @@ Here are the targeting options to drive people to your site:
   </tr>
   <tr>
     <td>Contacts</td>
-    <td>Target people in your SendGrid contact list</td>
+    <td>Target people in your Twilio SendGrid contact list</td>
   </tr>
   <tr>
-    <td>Received</td>
-    <td>Target people who received a specific email</td>
-  </tr>
-  <tr>
-    <td>Didn’t Open</td>
-    <td>Target people who received but didn't open an email</td>
-  </tr>
-  <tr>
-    <td>Didn’t Click</td>
-    <td>Target people who opened an email but didn't click</td>
-  </tr>
-  <tr>
-    <td>Clicked</td>
-    <td>Target people who clicked on a link in an email</td>
-  </tr>
 </table>
 
 ### To target your ad Campaigns
@@ -156,9 +133,9 @@ Here are the targeting options to drive people to your site:
 
 ### Use Categories to define your audience
 
-You can use [SendGrid Categories]({{root_url}}/for-developers/sending-email/categories/) to define your audience in SendGrid Ads. This will help you combine your Email API list with SendGrid Ads so you can track and analyze statistics for your emails as well.
+You can use [Twilio SendGrid Categories]({{root_url}}/for-developers/sending-email/categories/) to define your audience in SendGrid Ads. This will help you combine your Email API list with Twilio SendGrid Ads so you can track and analyze statistics for your emails as well.
  
-For example, you might use SendGrid Categories to track and analyze your email for the following emails:
+For example, you might use Twilio SendGrid Categories to track and analyze your email for the following emails:
 * Welcome series
 * Product announcements
 * Sales or promotions
@@ -182,8 +159,7 @@ You will then select channels you want to advertise on and the dates of your cam
 
 ### Additional Resources
 
-[Getting Started with Ads]({{root_url}}/ui/ads/getting-started-with-ads/)
-[Designing and publishing an ad]({{root_url}}/ui/ads/design-and-publish-an-ad/)
-[Analyzing the performance of your Ads campaign]({{root_url}}/ui/ads/analyze-the-performance-of-your-ads-campaign/)
-[Tracking users to page views, purchase events and leads with the SendGrid Pixel]({{root_url}}/ui/ads/track-users-to-page-views-purchase-events-and-leads-with-the-sendgrid-pixel/)
-
+- [Getting Started with Ads]({{root_url}}/ui/ads/getting-started-with-ads/)
+- [Designing and publishing an ad]({{root_url}}/ui/ads/design-and-publish-an-ad/)
+- [Analyzing the performance of your Ads campaign]({{root_url}}/ui/ads/analyze-the-performance-of-your-ads-campaign/)
+- [Tracking users to page views, purchase events and leads with the Twilio SendGrid Pixel]({{root_url}}/ui/ads/track-users-to-page-views-purchase-events-and-leads-with-the-sendgrid-pixel/)
