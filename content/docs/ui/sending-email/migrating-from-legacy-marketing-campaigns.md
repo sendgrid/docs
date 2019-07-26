@@ -45,30 +45,17 @@ The new Marketing Campaigns has been re-built from the ground up on a new platfo
 
 To support you in migrating your legacy Marketing Campaigns account to the new Marketing Campaigns, we’re providing you with a billing grace period. During this grace period, you won’t be charged for legacy Marketing Campaigns contact storage. The grace period covers the month you upgrade to a Basic or Advanced package and 1 month after you upgrade.
 
-<call-out-link linktext="Contact Expert Services" img="/img/expert-insights-promo3.png" link="https://go.sendgrid.com/Marketing-Campaigns-Launch.html">
+<call-out-link linktext="Contact Expert Services" img="/img/expert-insights-promo3.png" link="https://sendgrid.com/solutions/marketing-campaigns-migration/">
 
-### Marketing Campaigns Launch
+### Marketing Campaigns Migration Service
 
 
-Need some help? With Marketing Campaigns Launch, our experts will help you quickly and smoothly get started on the new email marketing platform. 
+Need some help? With Marketing Campaigns Migration, our experts will help you quickly and smoothly get started on the new email marketing platform. 
 
 </call-out-link>
 
 ## Choosing a new Marketing Campaigns plan
 
-**Legacy Marketing Campaigns Pricing**
-
-With the legacy offering, you selected a base Email API plan to cover all email sends whether via Email API or Marketing Campaigns. Next, you paid $10 per 10,000 contacts you **stored** in Marketing Campaigns.
-
-Any emails you sent using Marketing Campaigns were deducted from your base Email API plan allotment. If you sent over your plan allotment, you were charged overages per additional email.
-
-**New Marketing Campaigns Pricing**
-
-With the new Marketing Campaigns, you choose a Marketing Campaigns package, either Basic or Advanced. Basic starts at $15/mo and Advanced starts at $60/mo.
-
-The package includes an allotment of both contacts you can upload and emails you can send. If you send over your allotment of emails or **upload** more contacts you will be charged an additional fee per email or contact.  **Deleting contacts does not reset the total count for contacts uploaded**.
-
-Any emails you send via new Marketing Campaigns are deducted from your Marketing Campaigns package, not from your Email API plan.
 ### How is the pricing different for the new plans?
 
 **Legacy Marketing Campaigns Pricing**
