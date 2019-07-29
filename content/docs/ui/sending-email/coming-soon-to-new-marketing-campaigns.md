@@ -16,6 +16,10 @@ Seo:
 There are some important features that are coming soon to Marketing Campaigns, we appreciate your patience as we deliver them for you. 
 
  <table>
+   <tr>
+    <td>Additional Email Testing credits</td>
+    <td>Delivered</td>
+  </tr>
   <tr>
     <th><span style="font-weight:bold">Deliverable</span></th>
     <th><span style="font-weight:bold">Targeted availability</span></th>
@@ -38,10 +42,6 @@ There are some important features that are coming soon to Marketing Campaigns, w
   </tr>
   <tr>
     <td>Segmentation API</td>
-    <td>Q3 2019</td>
-  </tr>
-  <tr>
-    <td>Additional Email Testing credits</td>
     <td>Q3 2019</td>
   </tr>
   <tr>
