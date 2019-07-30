@@ -25,7 +25,7 @@ Once you launch an Ads campaign, you can view your ad performance by Campaign, G
 
 <call-out>
     
-To optimize your view into your campaign analytics, we highly recommend that you take the time to install the SendGrid Pixel BEFORE running your first campaign. This will give you the ability to associate users with website activity, purchase events, and lead events. You can also use this data to send targeted campaigns to your known users based on specific events. 
+To optimize your view into your campaign analytics, we highly recommend that you take the time to install the Twilio SendGrid Pixel BEFORE running your first campaign. This will give you the ability to associate users with website activity, purchase events, and lead events. You can also use this data to send targeted campaigns to your known users based on specific events. 
 
 </call-out>
 
@@ -37,7 +37,7 @@ By campaign, you view Impressions, Clicks, Revenue, Estimated Cost, Cost Per Cli
 
 ### Additional Resources
 
-[Getting Started with Ads]({{root_url}}/ui/ads/getting-started-with-ads/)
-[Targeting the right audience for your Ads Campaign]({{root_url}}/ui/ads/target-right-audience-for-your-ads-campaign/)
-[Designing and publishing an ad]({{root_url}}/ui/ads/design-and-publish-an-ad/)
-[Tracking users to page views, purchase events and leads with the SendGrid Pixel]({{root_url}}/ui/ads/track-users-to-page-views-purchase-events-and-leads-with-the-sendgrid-pixel/)
+- [Getting Started with Ads]({{root_url}}/ui/ads/getting-started-with-ads/)
+- [Targeting the right audience for your Ads Campaign]({{root_url}}/ui/ads/target-right-audience-for-your-ads-campaign/)
+- [Designing and publishing an ad]({{root_url}}/ui/ads/design-and-publish-an-ad/)
+- [Tracking users to page views, purchase events and leads with the Twilio SendGrid Pixel]({{root_url}}/ui/ads/track-users-to-page-views-purchase-events-and-leads-with-the-sendgrid-pixel/)

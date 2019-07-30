@@ -17,7 +17,7 @@ Two-factor authentication, commonly referred to as multi-factor authentication, 
 
 <call-out type="warning">
 
-SendGrid no longer accepts Basic authentication (username and password) for API calls when two-factor authentication is enabled for a user. You can now only use two-factor authentication if you are authenticating with an API key. For more information, see [Authentication]({{root_url}}//for-developers/sending-email/authentication/).
+SendGrid no longer accepts Basic authentication (username and password) for API calls when two-factor authentication is enabled for a user. You can now only use two-factor authentication if you are authenticating with an API key. For more information, see [Authentication]({{root_url}}/for-developers/sending-email/authentication/).
 
 </call-out>
 
