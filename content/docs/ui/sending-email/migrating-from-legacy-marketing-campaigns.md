@@ -60,18 +60,17 @@ Need some help? With Marketing Campaigns Migration, our experts will help you qu
 
 **Legacy Marketing Campaigns Pricing**
 
-With the legacy offering, you selected a base Email API plan to cover all email sends whether via Email API or Marketing Campaigns. Next, you paid $10 per 10,000 contacts you uploaded into Marketing Campaigns. 
+With the legacy offering, you selected a base Email API plan to cover all email sends whether via Email API or Marketing Campaigns. Next, you paid $10 per 10,000 contacts you **stored** in Marketing Campaigns.
 
-Any emails you sent using Marketing Campaigns were deducted from your base Email API plan allotment. If you sent over your plan allotment you were charged overages per additional email. 
+Any emails you sent using Marketing Campaigns were deducted from your base Email API plan allotment. If you sent over your plan allotment, you were charged overages per additional email.
 
 **New Marketing Campaigns Pricing**
 
-With the new Marketing Campaigns, you choose a Marketing Campaigns package, either [Basic or Advanced](#what-are-the-new-package-options). Basic starts at $15/mo and Advanced starts at $60/mo.
+With the new Marketing Campaigns, you choose a Marketing Campaigns package, either Basic or Advanced. Basic starts at $15/mo and Advanced starts at $60/mo.
 
-The package includes an allotment of **both** contacts you can store and emails you can send. If you send over your allotment of emails or store more contacts you will be charged an additional fee per email or contact.
+The package includes an allotment of both contacts you can upload and emails you can send. If you send over your allotment of emails or **upload** more contacts you will be charged an additional fee per email or contact.  **Deleting contacts does not reset the total count for contacts uploaded**.
 
-Emails that you send via new Marketing Campaigns are deducted from your Marketing Campaigns package, **not** from your Email API plan. 
-
+Any emails you send via new Marketing Campaigns are deducted from your Marketing Campaigns package, not from your Email API plan.
 
 ### What are the new package options?
 
