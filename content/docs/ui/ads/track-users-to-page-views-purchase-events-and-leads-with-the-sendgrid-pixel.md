@@ -4,8 +4,8 @@ weight: 0
 title: Tracking users to page views, purchase events and leads with the SendGrid Pixel
 group: tracking
 seo:
-  title: Tracking users to page views, purchase events, and leads with the SendGrid Pixel
-  description: Learn how to track users to page views, purchase events, and leads with the SendGrid Pixel
+  title: Tracking users to page views, purchase events, and leads with the Twilio SendGrid Pixel
+  description: Learn how to track users to page views, purchase events, and leads with the Twilio SendGrid Pixel
   keywords: 
 navigation:
   show: true
@@ -16,13 +16,13 @@ Ads is currently in closed beta. During beta, only approved participants have ac
 
 </call-out>
 
-To optimize your view into your campaign analytics, we highly recommend that you take the time to install the SendGrid Pixel. This will give you the ability to associate users with website activity, purchase events, and lead activities. You can also use this data to send targeted campaigns to your known users based on specific events. 
+To optimize your view into your campaign analytics, we highly recommend that you take the time to install the Twilio SendGrid Pixel. This will give you the ability to associate users with website activity, purchase events, and lead activities. You can also use this data to send targeted campaigns to your known users based on specific events. 
 
 ## Track users to Page Views 
  
 Page views are automatically recorded by the pixel. You’ll need to associate page views to the identified user by implementing the Identity Call (see steps above).  This association will allow you to send targeted campaigns to users based on page view activity. For example, when a user visits your pricing page you can automatically retarget this user with an advertisement.
  
-The sendgrid.page() call is already included in the SendGrid pixel. We will automatically record the following with zero configuration needed from you.
+The sendgrid.page() call is already included in the Twilio SendGrid pixel. We will automatically record the following with zero configuration needed from you.
 
 ```
 sendgrid.page('Pricing and Plans | SendGrid', {
@@ -36,7 +36,7 @@ sendgrid.page('Pricing and Plans | SendGrid', {
 ## Track users to website activity with an Identity Call
 
 With this association in place, you can create campaigns that target users visiting a specific web page or performing a specific event such as a purchase.
-On all pages where your SendGrid pixel is installed and you know your users’ identity, you will include an Identity Call and pass a unique id and the email address of the user. 
+On all pages where your Twilio SendGrid pixel is installed and you know your users’ identity, you will include an Identity Call and pass a unique id and the email address of the user. 
 
 Here is what the code for an Identity Call looks like:  
 ```
@@ -171,7 +171,7 @@ sendgrid.track('Lead Captured', {
 
 ### Additional Resources
 
-[Getting Started with Ads]({{root_url}}/ui/ads/getting-started-with-ads/)
-[Targeting the right audience for your Ads Campaign]({{root_url}}/ui/ads/target-right-audience-for-your-ads-campaign/)
-[Designing and publishing an ad]({{root_url}}/ui/ads/design-and-publish-an-ad/)
-[Analyzing the performance of your Ads campaign]({{root_url}}/ui/ads/analyze-the-performance-of-your-ads-campaign/)
+- [Getting Started with Ads]({{root_url}}/ui/ads/getting-started-with-ads/)
+- [Targeting the right audience for your Ads Campaign]({{root_url}}/ui/ads/target-right-audience-for-your-ads-campaign/)
+- [Designing and publishing an ad]({{root_url}}/ui/ads/design-and-publish-an-ad/)
+- [Analyzing the performance of your Ads campaign]({{root_url}}/ui/ads/analyze-the-performance-of-your-ads-campaign/)
