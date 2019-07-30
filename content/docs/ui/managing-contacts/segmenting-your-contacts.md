@@ -18,14 +18,19 @@ The content on this page describes the experience in the latest version of Marke
 
 </call-out>
 
+You can use the information stored on your contacts from [custom fields]({{root_url}}/ui/managing-contacts/custom-fields/) or reserved fields to create segments. Segments are similar to contact lists, except they update in real-time when a contact’s data matches the criteria that you set. When you segment your audience, you are able to create personalized Automation emails and Single Sends that directly address the wants and needs of your particular audience Segments can pull from *All Contacts* or any of your Contact lists. [Custom fields]({{root_url}}/ui/managing-contacts/custom-fields/) allow you to use unique information to identify contacts for different segments.
 
-You can use the information stored on your contacts from [custom fields]({{root_url}}/ui/managing-contacts/custom-fields/) or reserved fields to create segments. Segments are similar to contact lists, except they update in real-time when a contact’s data matches the criteria that you set. When you segment your audience, you are able to create personalized Automation emails or Single Sends that directly address the wants and needs of your particular audience. Segments can pull from **All Contacts** or any of your Contact lists. [Custom fields]({{root_url}}/ui/managing-contacts/custom-fields/) allow you to use unique information to identify contacts for different segments.
+<call-out>
+
+Currently Segmentation can only utilize Custom Fields and Reserved Fields as specified in your CSVs. For information on when additional Segmentation functionality will be available, see our [Coming Soon to new Marketing Campaigns]({{root_url}}/ui/sending-email/coming-soon-to-new-marketing-campaigns/) page!
+
+</call-out>
 
 As the traits of your contacts change and you add more contacts that meet the criteria of your segment over time, your segments will dynamically update to reflect these updates. For example, a segment with the criteria “lives in Denver” or “is under 30 years old” will evolve as a contact’s address changes and they grow older. 
 
 ## Creating a Segment
 
-You can create a new segment with multiple conditions based on the information you have stored about your contacts, and based on some of the information SendGrid has stored about your Marketing Campaigns.
+You can create a new segment with multiple conditions based on the information you have stored about your contacts.
 
 *To create a segment:*
 

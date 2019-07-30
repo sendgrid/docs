@@ -88,6 +88,7 @@ Try it out! Send up to 6,000 emails to 2,000 contacts per month.
 
 * Automation
 * Single Sends for one-time campaigns
+* Segmentation
 * Ticket Support
 * 3 Email Testing Credits per month
 * 1 Signup Form
@@ -97,6 +98,7 @@ Try it out! Send up to 6,000 emails to 2,000 contacts per month.
 Starting at $15/month for 5,000 contacts and 15,000 email sends
 
 * Single Sends for one-time campaigns
+* Segmentation 
 * Ticket, Chat & Phone Support
 * 10 Email Testing Credits per month with the option to purchase more
 * 5 Signup Forms
@@ -109,6 +111,7 @@ Starting at $60/month for 10,000 contacts and 50,000 email sends
 
 * Automation 
 * Single Sends for one-time campaigns
+* Segmentation
 * Ticket, chat, and phone Support
 * 60 Email Testing Credits per month with the option to purchase more
 * 15 Signup Forms
@@ -629,27 +632,27 @@ Take a look at the table below for links to the API reference pages for legacy a
   </tr>
   <tr>
     <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-segments/create-a-segment">Create a Segment</a></td>
-    <td>Coming soon</td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/segments/create-segment">Create Segment</a></td>
     <td><li>Update endpoint</li></td>
   </tr>
   <tr>
     <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-segments/retrieve-all-segments">Retrieve all Segments</a></td>
-    <td>Coming soon</td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/segments/get-list-of-segments">Get List of Segments</a></td>
     <td><li>Update endpoint</li></td>
   </tr>
   <tr>
     <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-segments/retrieve-a-segment">Retrieve a Segment</a></td>
-    <td>Coming soon</td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/segments/get-segment-by-id">Get Segment by ID</a></td>
     <td><li>Update endpoint</li></td>
   </tr>
   <tr>
     <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-segments/update-a-segment">Update a Segment</a></td>
-    <td>Coming soon</td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/segments/update-segment">Update Segment</a></td>
     <td><li>Update endpoint</li></td>
   </tr>
   <tr>
     <td><a href="https://sendgrid.api-docs.io/v3.0/contacts-api-segments/delete-a-segment">Delete a Segment</a></td>
-    <td>Coming soon</td>
+    <td><a href="https://sendgrid.api-docs.io/v3.0/segments/delete-segment">Delete Segment</a></td>
     <td><li>Update endpoint</li></td>
   </tr>
   <tr>
