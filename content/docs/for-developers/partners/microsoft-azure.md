@@ -23,7 +23,7 @@ The following documentation covers signing up, sending an email, adding an attac
 
 ## 	Still have questions?
 
-Wondering how to make the most of your SendGrid/Azure integration? Check out our [Azure related blog entries](https://sendgrid.com/blog/?s=Azure).
+Wondering how to make the most of your SendGrid/Azure integration? Check out our [Azure related blog entries](https://sendgrid.com/?s=Azure).
 
 You are limited to 2 SendGrid accounts per Azure subscription. This limit exists for security and compliance reasons to prevent abuse.
 
