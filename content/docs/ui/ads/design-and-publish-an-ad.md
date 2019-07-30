@@ -16,15 +16,15 @@ Ads is currently in closed beta. During beta, only approved participants have ac
 
 </call-out>
 
-Once you’ve defined your target audience for your ad, you can design your ad. SendGrid Ads dynamically updates the preview of your ad to help save you time, and you can see your changes in real time. 
+Once you’ve defined your target audience for your ad, you can design your ad. Twilio SendGrid Ads dynamically updates the preview of your ad to help save you time, and you can see your changes in real time. 
 
 ![]({{root_url}}/img/ad-preview.png)
 
 ## Get familiar with advertising guidelines
 
 When creating your ad, here are some helpful tips to increase engagement and ensure your ads are in compliance with advertising channels:
-* **Use relevant content** Make sure your ad is relevant to your audience and the website you’re directing them to.
-* **Avoid numbers and punctuation** Avoid gratuitous use of numbers and punctuation. This helps keep your ad scannable and easy to read.
+* **Use relevant content.** Make sure your ad is relevant to your audience and the website you’re directing them to.
+* **Avoid numbers and punctuation.** Avoid gratuitous use of numbers and punctuation. This helps keep your ad scannable and easy to read.
 * **Avoid controversial content.** All advertising channels like Facebook or Instagram have Advertising Policies that provide guidance on what is acceptable and what is not. 
 
 <call-out>
@@ -35,7 +35,7 @@ You can learn more about Facebook’s Advertising Policies [here](https://busine
 
 ## Set the budget
 
-You get to determine the maximum amount you would like to spend per day on this channel for your ad. SendGrid requires that you spend a minimum of $10 a day per channel. Here are some additional tips to help you with your budget:
+You get to determine the maximum amount you would like to spend per day on this channel for your ad. Twilio SendGrid requires that you spend a minimum of $10 a day per channel. Here are some additional tips to help you with your budget:
 
 * **Set a budget.** Identify how much money you can comfortably spend on advertising. Setting a budget before you start will allay any fears about starting an ads campaign.
 * **Test and learn.** There are many variables that will affect your affecting results from targeting to creative you use in your ad. Run an A/B test to determine which campaigns achieve the results you’re looking for.
@@ -56,7 +56,7 @@ The primary ad copy or text should be a brief statement that prompts your target
 
 ##  Enter the headline 
 
-The headline is displayed in a larger font, below your image. Enter an eye-catching headline to grab your audience’s attention. There is a  limit of 25 characters in the Headline field. If your headline exceeds this character limit your text will get truncated.
+The headline is displayed in a larger font, below your image. Enter an eye-catching headline to grab your audience’s attention. There is a limit of 25 characters in the Headline field. If your headline exceeds this character limit your text will get truncated.
 
 ![]({{root_url}}/img/adheadline-preview.png)
 
@@ -68,7 +68,7 @@ The description appears below the headline in a smaller font. Use this section t
 
 ##  Upload your image
 
-Your image is one of the most important elements of your ad, as it is what your target audience will notice first. Use the image to begin to tell the story in your ad. SendGrid Ads will dynamically resize your image to fit the ad space, but the recommended size is an image ratio of 1.91:1 and a recommended resolution of 1200x628 pixels for Facebook ads. 
+Your image is one of the most important elements of your ad, as it is what your target audience will notice first. Use the image to begin to tell the story in your ad. Twilio SendGrid Ads will dynamically resize your image to fit the ad space, but the recommended size is an image ratio of 1.91:1 and a recommended resolution of 1200x628 pixels for Facebook ads. 
 
 ![]({{root_url}}/img/image-adpreview.png)
 
@@ -82,12 +82,12 @@ Avoid using text on your image as this reduces ad effectiveness. Images with tex
 
 ##  Publish your campaign
 
-Once you’ve created your ad, review it in the preview pane. You can preview what your ad will look like in desktop and mobile. Click  **Confirm Campaign** to publish your ad campaign. If you have not set up billing, you will get prompted to enter a credit card or select a SendGrid plan.
+Once you’ve created your ad, review it in the preview pane. You can preview what your ad will look like in desktop and mobile. Click  **Confirm Campaign** to publish your ad campaign. If you have not set up billing, you will get prompted to enter a credit card or select a Twilio SendGrid plan.
 
 
 ##  Edit your campaign
 
-You can make a change to a running campaign. Go to your campaign in the Campaigns tab. Click on the right-hand corner of your campaign and select **Edit**. You will be able to edit your campaign just like you created it originally. When you submit your changes, your current campaign will run once the changes are approved.
+You can make a change to a running campaign. Go to your campaign in the **Campaigns** tab. Click on the right-hand corner of your campaign and select **Edit**. You will be able to edit your campaign just like you created it originally. When you submit your changes, your current campaign will run once the changes are approved.
 
 ![]({{root_url}}/img/ad-editcampaign.png)
 
@@ -105,14 +105,13 @@ A lead ad is a specific ad format available on Facebook and Instagram that enabl
  
 To create a Leads Ad, click **Create Campaign**, then select **Grow & message your email list** and filter by **Acquire new leads.** Select your desired targeting strategy to define your target audience for your lead ad. 
  
-![]({{root_url}}/img/targeting-contact-lookalikes.gif)
+![]({{root_url}}/img/leads-ad.png "Leads ad")
  
 After you’ve selected your targeting criteria, you will design your leads ad. There is an additional option to change the Call To Action (CTA) in your lead ad. There are several options to choose from.
 
 ### Additional Resources
 
-[Getting Started with Ads]({{root_url}}/ui/ads/getting-started-with-ads/)
-[Targeting the right audience for your Ads Campaign]({{root_url}}/ui/ads/target-right-audience-for-your-ads-campaign/)
-[Analyzing the performance of your Ads campaign]({{root_url}}/ui/ads/analyze-the-performance-of-your-ads-campaign/)
-[Tracking users to page views, purchase events and leads with the SendGrid Pixel]({{root_url}}/ui/ads/track-users-to-page-views-purchase-events-and-leads-with-the-sendgrid-pixel/)
-
+- [Getting Started with Ads]({{root_url}}/ui/ads/getting-started-with-ads/)
+- [Targeting the right audience for your Ads Campaign]({{root_url}}/ui/ads/target-right-audience-for-your-ads-campaign/)
+- [Analyzing the performance of your Ads campaign]({{root_url}}/ui/ads/analyze-the-performance-of-your-ads-campaign/)
+- [Tracking users to page views, purchase events and leads with the Twilio SendGrid Pixel]({{root_url}}/ui/ads/track-users-to-page-views-purchase-events-and-leads-with-the-sendgrid-pixel/)
