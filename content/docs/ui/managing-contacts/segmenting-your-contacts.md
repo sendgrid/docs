@@ -53,7 +53,7 @@ You can create a new segment with multiple conditions based on the information y
 
 <call-out>
 
-The *Field* drop-down contains Reserved Fields, or Custom Fields as designated by the CSVs you have uploaded. The *Operator* drop-down contains operators that tell the segment *how* to handle the data specified by the condition.
+The *field* drop-down contains Reserved Fields, or Custom Fields as designated by the CSVs you have uploaded. The *operator* drop-down contains operators that tell the segment *how* to handle the data specified by the condition.
 
 </call-out>
 
