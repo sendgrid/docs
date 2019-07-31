@@ -12,6 +12,11 @@ seo:
   description: Twilio SendGrid's real-time Email Address Validation provides you detailed information on the validity of your users' email addresses, as well as allows you to integrate this validation process into your signup process. 
 
 ---
+<call-out type="warning">
+
+Email Validation is currently in beta. During beta, only approved participants have access to the feature. Functionality and performance might not be working quite like we want it to, and we reserve the right to change the functionality at any time without warning.
+
+</call-out>
 
 Email Address Validation provides you real-time detailed information on the validity of your users' email addresses, as well as allows you to integrate this validation process into your platform's signup form. You can customize how strict your validation threshold is, as well as whether or not you want to inform your users that their email addresses are invalid, or if you want to drop their email address from your database. 
 
@@ -46,7 +51,7 @@ You’re now ready to start using the Real Time API endpoint!  
 
 ## Using the Real Time API Endpoint
 
-The Email Address Validation Real Time API Endpoint takes a single email address in a POST request, and returns a verdict with detailed data in a JSON response. Complete documentation of the endpoint, including details of the response, are available [here]/(**INSERT NEW LINK HERE**).
+The Email Address Validation Real Time API Endpoint takes a single email address in a POST request, and returns a verdict with detailed data in a JSON response. Complete documentation of the endpoint, including details of the response, are available [here](https://sendgrid-email-validation.api-docs.io/v3/getting-started/authentication).
 
 *When integrating with the Real Time API endpoint, please keep the following things in mind*:
 
