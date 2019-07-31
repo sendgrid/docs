@@ -1,12 +1,12 @@
 ---
 layout: page
 weight: 55
-title: Email Address Validation Beta
+title: Email Address Validation
 group: managing-contacts
 navigation:
   show: true
 seo:
-  title: Email Address Validation Beta
+  title: Email Address Validation
   keywords: email, validation, signup
   override: true
   description: Twilio SendGrid's real-time Email Address Validation provides you detailed information on the validity of your users' email addresses, as well as allows you to integrate this validation process into your signup process. 
