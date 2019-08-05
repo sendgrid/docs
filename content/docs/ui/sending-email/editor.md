@@ -507,6 +507,7 @@ You'll also see a number of System Fields that you can place in the body of your
  </tr>
 </table>
 
+
 &ast; For your convenience, these substitution tags are included by default in the Unsubscribe Module found on the Tags tab of the Design Editor.
 
 <call-out type="warning">
