@@ -16,13 +16,13 @@ Seo:
 There are some important features that are coming soon to Marketing Campaigns, we appreciate your patience as we deliver them for you. 
 
  <table>
-   <tr>
-    <td>Additional Email Testing credits</td>
-    <td>Delivered</td>
-  </tr>
   <tr>
     <th><span style="font-weight:bold">Deliverable</span></th>
     <th><span style="font-weight:bold">Targeted availability</span></th>
+  </tr>
+  <tr>
+    <td>Additional Email Testing credits</td>
+    <td>Delivered</td>
   </tr>
   <tr>
     <td>Create a custom field-based segment</td>
