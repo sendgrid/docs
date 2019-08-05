@@ -14,13 +14,15 @@ seo:
 ---
 <call-out type="warning">
 
-Email Validation is currently in beta. During beta, any participants with pro or premiere accounts will have access to this feature. Functionality is subject to change, and performance will change as we continue working to better improve it.
+Email Validation is currently in beta. During beta, any participants with pro or premiere accounts will have access to this feature. Functionality and performance is subject to change while in beta.
 
 </call-out>
 
-Email Address Validation provides you real-time detailed information on the validity of your users' email addresses, as well as allows you to integrate this validation process into your platform's signup form. You can customize how strict your validation threshold is, as well as whether or not you want to inform your users that their email addresses are invalid, or if you want to drop their email address from your database. 
+Email Address Validation provides you real-time detailed information on the validity of your users' email addresses, as well as allows you to integrate this validation process into your platform's signup form. You can customize the best use of email address validation for your use case. You can identify a validation threshold from which you feel comfortable sending a follow up email, display to your users that their email addresses are likely invalid within your form, and ultimately decide if you want to drop invalid email address from your database.
 
-Validating your users' email addresses so that you are sending to more valid email addresses will allow you to maintain a cleaner subscriber list and improve your sender reputation.
+Validating your users' email addresses so that you are decreasing bounces and sending to more valid email addresses will allow you to maintain a cleaner subscriber list and improve your sender reputation.
+
+Email Validation Beta is free for Pro and Premier plans while in Beta. Once Email Validation moves out of Beta, it will incur a usage charge. For pricing details visit: http://sendgrid.com/solutions/email-validation-api/
 
 ## Generating your Email Address Validation API Key
 
