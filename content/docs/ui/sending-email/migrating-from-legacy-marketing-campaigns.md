@@ -254,6 +254,8 @@ If you add contacts to a list that you’d like to use as the entry criteria for
 
 </call-out>
 
+10. Once you have migrated your contacts to the new Marketing Campaigns, please [delete your contacts from the legacy Marketing Camapigns]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#delete-all-contacts) to ensure you are no longer charged for contact storage in legacy Marketing Campaigns. 
+
 ## Migrate your content
 
 You may have pre-existing images, templates, or campaigns that you’d like to re-use in the new Marketing Campaigns. You can transfer your assets into new Marketing Campaigns by following the steps below.
