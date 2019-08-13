@@ -50,7 +50,7 @@ There are some important features that are coming soon to Marketing Campaigns, w
   </tr>
   <tr>
     <td>Saving a Single Send or Automation email as a template</td>
-    <td>Q3 2019</td>
+    <td>Delivered</td>
   </tr>
   <tr>
     <td>Duplicating a Marketing Campaigns template</td>
