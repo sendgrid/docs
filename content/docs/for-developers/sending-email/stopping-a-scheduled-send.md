@@ -127,8 +127,6 @@ These directions refer to unscheduling a Single Send in the new Marketing Campai
 
 If you scheduled a specific time to send your campaign, it's easy to unschedule this campaign to make changes or reschedule it. Simply navigate to your Campaigns page by clicking **Marketing Campaigns** in the left hand navigation menu and selecting **Single Sends**. Next to the Single Send you want to unschedule, click the action menu and select **Unschedule**.
 
-![]({{root_url}}/images/unschedule_campaign.gif)
-
  ### 	Using the API
 
   <call-out>
