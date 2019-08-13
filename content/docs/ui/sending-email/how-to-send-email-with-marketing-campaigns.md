@@ -65,7 +65,7 @@ If your email domain doesn't match one of your [authenticated]({{root_url}}/ui/a
 
 Marketing Campaigns offers a number of ways to add contacts to lists, including:
 
-- [**Signup Forms**]({{root_url}/ui/managing-contacts/create-and-manage-contacts/#create-a-signup-form/)
+- [**Signup Forms**]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#create-a-signup-form/)
 
 ![]({{root_url}}/img/sign-up-form.png "Sign Up Form")
 
