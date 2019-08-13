@@ -117,9 +117,16 @@ You can edit the content, subject line, and sender for any emails in your automa
 
 1. Navigate to **Automations** and select the series you want to edit.
 1. Click **Edit** on each email you’d like to modify. 
-1. Make your changes in the editor, then click **Save**. 
-1. Click the arrow in the upper left-hand corner. 
-1. Below the email you’ve edited, you’ll see an alert that changes have not yet been applied to the live automation. When you’re ready to apply them, click **Save and Apply**.  
+
+<call-out>
+
+You can also create a template from an existing email within your Automation series by selecting the action menu next to the email you'd like to reuse and selecting **Create Template**.
+
+</call-out>
+
+3. Make your changes in the editor, then click **Save**. 
+4. Click the arrow in the upper left-hand corner. 
+5. Below the email you’ve edited, you’ll see an alert that changes have not yet been applied to the live automation. When you’re ready to apply them, click **Save and Apply**.  
 
 ### Disable an Automation
 
