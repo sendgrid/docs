@@ -112,6 +112,13 @@ By default, notifications about your account's Marketing Campaigns activity, CSV
 1. To create a new one-to-many email, click **Create Single Send**. 
 1. Select the template that you want to use for your email.
 <br> You can select a blank template, a custom template that you have already created, or one of SendGrid's responsive pre-built templates. For more information, see [Marketing Templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/).
+
+<call-out>
+
+You can also create a template from an existing Single Send by selecting the action menu next to the email you'd like to reuse and selecting **Create Template**.
+
+</call-out>
+
 1. Select an editor.
 <br> You can choose between the **Design Editor** and the **Code Editor**.
 
@@ -155,6 +162,7 @@ Make sure to include the [{{{unsubscribe}}}]({{root_url}}/ui/sending-email/creat
 For more information about customizing your campaign, see [Using the Design Editor]({{root_url}}/ui/sending-email/editor/#the-design-editor) or [Using the Code Editor]({{root_url}}/ui/sending-email/editor/#the-code-editor).
 
 </call-out>
+
 
 ## Sending your First Email
 
