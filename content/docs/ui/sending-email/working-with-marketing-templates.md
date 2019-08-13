@@ -94,8 +94,9 @@ This feature is only currently available in the legacy Marketing Campaigns produ
 
 ## Creating a Template from an Automation email.
 
-1. From the left-hand navigation, select **Marketing**, and then click **Single Sends**.
-1. Find the campaign you would like to use, click the **action menu**, and then select **Create Template**.
+1. From the left-hand navigation, select **Marketing**, and then click **Automations**.
+1. Click the action menu next to the automation you want to duplicate an email from and then select **Edit**. 
+1. Navigate to the email you'd like to reuse, click the **action menu**, and then select **Create Template**.
 
  ## 	Additional Resources
 
