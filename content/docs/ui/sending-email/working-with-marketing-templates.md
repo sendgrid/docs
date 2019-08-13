@@ -28,7 +28,7 @@ We provide a collection of pre-built, responsive templates that you may begin us
 
 *To create a new template:*
 
-1. From the left-hand navigation, select **Campaigns**, and then select **Templates**.
+1. From the left-hand navigation, select **Marketing**, and then select **Templates**.
 2. Click **Create New Template**.
 3. Select the editor you want to use, and then click **Continue**.
 
