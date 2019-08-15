@@ -480,7 +480,7 @@ Resulting replacement:
 
 ## 	Additional Resources
 
-- [Sending Email with Dynamic Transactional Templates]({{root_url}}//ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/)
+- [Sending Email with Dynamic Transactional Templates]({{root_url}}/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/)
 - [Create and edit Dynamic Transactional Templates]({{root_url}}/ui/sending-email/create-and-edit-transactional-templates/)
 - [Dynamic Templates API](https://sendgrid.api-docs.io/v3.0/transactional-templates)
 - [How to send an email with dynamic templates]({{root_url}}/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/)
