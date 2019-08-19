@@ -26,6 +26,12 @@ The [Design Editor](#the-design-editor) features a number of convenient ways to 
 
 </call-out>
 
+<call-out type="warning">
+
+It's recommended that a template or Marketing Campaign only be open in one instance of the editor at a time.  Multiple instances in different browsers or computers will cause autosave to undo changes made and there is no recovery option.
+
+</call-out>  
+
 ## The Code Editor
 
 SendGrid’s marketer-friendly code editor features a powerful split-screen editing experience – perfect for building single send or automation emails with your own custom HTML. It offers a number of helpful features, often found in native editors.
