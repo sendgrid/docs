@@ -22,7 +22,7 @@ You can add contacts to your contact database by uploading a CSV into Marketing 
 
 ## General Formatting Rules
 
-Here are some rules to follow when formatting a CSV to upload into Marketing Campaigns. Click [here]({{root_url}}/assets/example.csv) to download a sample CSV like the one shown below: 
+Follow the rules below when formatting a CSV to upload into Marketing Campaigns. Click [here]({{root_url}}/assets/example.csv) to download a sample CSV like the one shown below: 
 
 ![]({{root_url}}/img/example-csv.png "Example of a CSV with proper formatting")
 
@@ -34,7 +34,7 @@ Your CSV should contain the following information about each contact:
 * first_name
 * last_name
 
-In addition to `email`, `first_name`, and `last_name`, there are several other [reserved fields]({{root_url}}/ui/managing-contacts/custom-fields/#reserved-fields) such as `city` and `zipcode`. You can also include [custom fields]({{root_url}}/ui/managing-contacts/custom-fields/) with additional identifying information for each contact in the CSV. For example, you could specify `birthday`, `occupation`, and `age` as the custom fields. The data in the custom fields are critical for both segmentation and content personalization.
+In addition to `email`, `first_name`, and `last_name`, there are alsoseveral other [reserved fields]({{root_url}}/ui/managing-contacts/custom-fields/#reserved-fields) such as `city` and `zipcode`. You can also include [custom fields]({{root_url}}/ui/managing-contacts/custom-fields/) with additional identifying information for each contact in the CSV. For example, you could specify `birthday`, `occupation`, and `age` as the custom fields. The data in the custom fields are critical for both segmentation and content personalization.
 
 ### Header Row
 
@@ -48,11 +48,11 @@ You cannot use spaces, dashes, or other special characters, except for underscor
 
 If you add custom field data to your CSV, you can save some time when uploading by naming the columns the same as the custom fields you have previously defined.
 
-SendGrid identifies individual contacts by their email address, so one of the CSV headers must be `email`. SendGrid identifies individual contacts by their email address, so `email` is required to be one of the CSV headers. If you do not include the email column, SendGrid will not add any information to your contact database or list. Rows in your CSV without an email address in the email column will automatically fail, but will not cause the entire upload to fail.
+SendGrid identifies individual contacts by their email address, so one of the CSV headers must be `email`. If you do not include the email column, SendGrid will not add any information to your contact database or list. Rows in your CSV without an email address in the email column will automatically fail to add to your contact list, but they will not cause the entire upload to fail.
 
  ### Character Encoding
 
-If your contacts list has non-English characters, please make sure that you're using a CSV file that is UTF-8 encoded.
+If your contacts list has non-English characters, please make sure that you are UTF-8 encoding your CSV file.
 
 ###  Removing invalid and duplicate addresses
 
@@ -70,11 +70,11 @@ Format your text fields so that there are no strings of numbers that appear like
 
 ### Date Formatting
 
-Properly format any dates in your CSV. If you created your CSV with Excel and it is not displaying correctly, change the date format to display appropriately before exporting to CSV. Use one of the following date formats: `MM/DD/YYYY, MM/D/YYYY, M/D/YYYY, or M/DD/YYYY`.
+Properly format any dates in your CSV. If you create your CSV with Excel and it is not displaying correctly, change the date format to display appropriately before exporting to CSV. Use one of the following date formats: `MM/DD/YYYY, MM/D/YYYY, M/D/YYYY, or M/DD/YYYY`.
 
 ### Troubleshooting
 
-Listed below are a few errors you may encounter when uploading a CSV to Marketing Campaigns, along with tips to correct the root issue.
+Below are a few errors you may encounter when uploading a CSV to Marketing Campaigns, along with tips to correct the root issue.
 
 **We were unable to detect an email column in the CSV file headers. The email column must always have a header of "email"**.
 
@@ -113,6 +113,6 @@ Listed below are a few errors you may encounter when uploading a CSV to Marketin
 
  ##     Additional Resources
 
-- [Contacts API]( https://sendgrid.api-docs.io/v3.0/contacts/)
+- [Contacts API](https://sendgrid.api-docs.io/v3.0/contacts/)
 - [Segmenting your Contacts]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/)
 - [Building your Contact list]({{root_url}}/ui/managing-contacts/building-your-contact-list/)
