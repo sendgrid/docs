@@ -23,12 +23,11 @@ The [**Design Editor**](#the-design-editor), complete with HTML access to each c
 
 The [Design Editor](#the-design-editor) features a number of convenient ways to edit the HTML content of your email –– including the ability to [edit the HTML of each drag-and-drop module](#editing-module-html), [edit the HTML `head` of your message](#editing-the-html-head), and even import complete code using our [Drag & Drop Markup](#importing-custom-html-with-drag--drop-markup).
 
-
 </call-out>
 
 <call-out type="warning">
 
-It's recommended that a template or Marketing Campaign only be open in one instance of the editor at a time.  Multiple instances in different browsers or computers will cause autosave to undo changes made and there is no recovery option.
+Twilio SendGrid recommends only having one instance of a template or Marketing Campaign email open in one instance of the editor at a time.  Multiple instances in different browsers or computers will cause autosave to undo changes made and there is no recovery option.
 
 </call-out>  
 
