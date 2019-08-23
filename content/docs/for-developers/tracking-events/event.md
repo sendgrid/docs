@@ -12,7 +12,13 @@ navigation:
 ---
 ## Authentication
 
-The following characters can be used for webhook authentication (username and password). Characters not on the list below are not supported and will not authenticate to our webhook.
+In order to use the Event Webhook, you need to enter a username and password. The following characters can be used for webhook authentication (username and password). 
+
+<call-out type="warning">
+
+Characters not on the list below are not supported and will not authenticate to our webhook.
+
+</call-out>
 
 - **All lower case letters:** a b c d e f g h i j k l m n o p q r s t u v w x y z
 - **All upper case letters:** A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 
