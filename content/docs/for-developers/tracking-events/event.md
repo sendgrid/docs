@@ -12,7 +12,7 @@ navigation:
 ---
 ## Authentication
 
-In order to use the Event Webhook, you need to enter a username and password. The following characters can be used for webhook authentication (username and password). 
+In order to use the Event Webhook, you need to enter a username and password. The following characters can be used for webhook authentication. 
 
 <call-out type="warning">
 
