@@ -381,6 +381,14 @@ If you meet these conditions, please respond directly to the invoice email you h
 
 You can change your plan under the Email API or Marketing Campaigns sections on the Your Products tab of the [Account Details page](https://app.sendgrid.com/account/products).
 
+<call-out type="warning">
+
+**Please note:** Downgrading from a paid Basic or Advanced Marketing Campaigns plan to a Free account will permanently delete all contacts associated with that account. You will need to reimport any contacts that you would like to use with your Free account.
+
+Other limits (like the number of Signup Forms or Email Testing credits available to you) will downgrade to the Free plan limits, keeping the most recently updated items when applicable. For example, if you have 10 Signup Forms and downgrade to a Free plan, we will keep your most recently updated Signup Form and remove the other 9. 
+
+</call-out>
+
 ##     Cancelling your account
 
 To cancel your account, go to the bottom of the Your Products tab of the [Account Details page]( https://app.sendgrid.com/account/products), click **Cancel Account**, and follow the prompts.
