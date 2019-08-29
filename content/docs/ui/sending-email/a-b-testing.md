@@ -20,7 +20,9 @@ Optimize the engagement of your Marketing Campaigns with A/B testing. A/B testin
 When recipients interact with the emails sent during an A/B test, we will compare the engagement metrics and automatically choose the winning version of your campaign according to the A/B test criteria you set (opens or clicks).
 
 <call-out>
+	
 All A/B Tests will now automatically select a winner (and send the winning version to the remainder of your audience), based on the criteria that you set. The ability to manually select a winner for an A/B Test is no longer available in the latest version of Marketing Campaigns.
+
 </call-out>
 
 <iframe src="https://player.vimeo.com/video/225916632" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -44,29 +46,23 @@ You can test up to 6 different variations for each A/B test campaign.
 
 - **Subject Line - Optimize Open Rates**
 
-	Select the Subject Line A/B test to optimize the [Open Rate]({{root_url}}/glossary/open-rate/) of your email, since the subject usually is all the recipient sees until they open your email.
+Select the Subject Line A/B test to optimize the [Open Rate]({{root_url}}/glossary/open-rate/) of your email, since the subject usually is all the recipient sees until they open your email.
 
-	High open rates show the strength of a subject line. Once you find a subject line that works well, you will potentially see other engagement metrics improve as well.
+High open rates show the strength of a subject line. Once you find a subject line that works well, you will potentially see other engagement metrics improve as well.
 
 - **Email Content - Optimize Click Rates**
 
-	Select the Email Content A/B test to optimize the Click Rate of your email, since the recipient will not see this content unless they open your email.
+Select the Email Content A/B test to optimize the Click Rate of your email, since the recipient will not see this content unless they open your email.
 
-    High click rates mean that you have compelling content and calls to action (CTAs).
-    
-    
-    
+High click rates mean that you have compelling content and calls to action (CTAs).
+     
 <call-out-link linktext="EXPERT INSIGHTS" img="/img/expert-insights-promo2.png" link="https://sendgrid.com/solutions/expert-insights/">
-
 
 ### Looking for more visibility into your email performance?
 
-
 Send better email with Expert Insights. Our detailed monthly reports will enable you to understand your email reputation and recipient engagement and repair issues with expert how-to steps.
 
-
 </call-out-link>
-
 
 
 ##  Adding Your Email Versions
@@ -95,19 +91,19 @@ Choose a percentage of your audience that will participate in the A/B test.
 
 Each variation of the email will be sent to the same number of contacts within the participating subset of your audience.
 
-
-
 ##  Determine the Winning Criteria for the A/B Test
+
 - **Open Rate**
 
-  SendGrid automatically selects the winning variation based on how many recipients [open]({{root_url}}/glossary/opens/) your email.
+SendGrid automatically selects the winning variation based on how many recipients [open]({{root_url}}/glossary/opens/) your email.
 
 - **Click Rate**
 
-  SendGrid automatically selects the winning version based on how many recipients [click]({{root_url}}/glossary/clicks/) links and engage with the content in your email.
+SendGrid automatically selects the winning version based on how many recipients [click]({{root_url}}/glossary/clicks/) links and engage with the content in your email.
 
 
 ##  Set the A/B Test Duration
+
 You can set your A/B test duration between 30 minutes and 24 hours.
 
 While you can test your email variations for up to 24 hours, emails will only be sent to the subset of contacts you've chosen to participate in the A/B test during the test duration you set. The remainder of your contacts will only be sent the winning variation of your A/B test email after the test duration has completed.
@@ -126,7 +122,6 @@ For example, if you have a one-day sale that happens the day of your Single Send
 When a variation wins, based on your criteria and duration, you will be notified that a winner was chosen and which variation won. SendGrid will automatically send the winning email variation to the rest of your list.
 
   ![]({{root_url}}/images/ab_testing_4.png "A/B test winner")
-
 
 
  ## 	Additional Resources
