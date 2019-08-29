@@ -58,12 +58,6 @@ You can only edit custom templates (templates that you have created yourself or 
 
 You can easily duplicate a pre-built template provided by SendGrid.
 
- <call-out>
-
-This feature is only currently available in the legacy Marketing Campaigns product.
-
-</call-out>
-
 *To duplicate a SendGrid template:*
 
 1. From the left-hand navigation, select **Marketing**
@@ -72,12 +66,6 @@ This feature is only currently available in the legacy Marketing Campaigns produ
 1. Select **Duplicate**. The duplicate opens in the design editor.
 
  ## 	Duplicating a Custom Template
-
- <call-out>
-
-This feature is only currently available in the legacy Marketing Campaigns product.
-
-</call-out>
 
 *To duplicate one of your custom templates:*
 
