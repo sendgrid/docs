@@ -45,7 +45,7 @@ Once you've completed the prerequisites, you’re ready to start building your f
 1. Navigate to **Automations** and then click **Create an Automation**.
 1. Under Custom, click **Select**.
 1. Give the series a name. This is for your reference and will not be visible to your contacts.
-1. Select the entry criteria. Today, your entry criteria will be the first time a [contact is added to a list]({{root_url}}/ui/manage-contacts/create-and-manage-contacts/#adding-contacts). You can choose an existing list, or you can create a new one here.
+1. Select the entry criteria. Today, your entry criteria will be the first time a [contact is added to a list]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/#add-contacts). You can choose an existing list, or you can create a new one here.
 
 <call-out>
 
