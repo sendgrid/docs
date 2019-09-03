@@ -26,7 +26,7 @@ Note that automations will only trigger to contacts who are added to an entry cr
 
 ### Upload a CSV
 
-You can add contacts to a list via CSV Upload or by creating a Signup Form to automatically send signups to a list. 
+You can add contacts to a list via CSV upload or by creating a Signup Form to automatically send signups to a list. 
 
 1. Use [this CSV template]({{root_url}}/assets/example.csv) to make sure your CSV is formatted correctly.
 1. Click **Add Contacts** and then select **Upload CSV**.
@@ -51,9 +51,9 @@ You can add your contacts manually including alternate email addresses, addresse
 
 ### Create a signup form
 
-Use Signup Forms with the SendGrid Automation beta to capture new contacts and add them directly to an Automation list. If the list you add them to is acting as the entry criteria for a live automation, the new contact will automatically receive any emails you’ve created as part of that automation. 
+Use Signup Forms with Automation to capture new contacts and add them directly to an Automation list. If the list you add them to is acting as the entry criteria for a live automation, the new contact will automatically receive any emails you’ve created as part of that automation. 
 
-You can enable contacts to access your signup form either by sending them a link hosted by SendGrid or by embedding it directly into your website.
+You can enable contacts to access your signup form either by sending them a link hosted by Twilio SendGrid or by embedding it directly into your website.
 
 <call-out>
 
@@ -63,8 +63,8 @@ The number of signup forms you can create is limited to 15.
 
 *To create a new signup form:*
 
-1. Navigate to Automations and select **Signup Forms**. 
-1. Click **Create New Form**.
+1. Navigate to Marketing and select **Signup Forms**. 
+1. Click **Create a Signup Form**.
 1. On the Settings tab, add a Form Name and then select the contact list you want to add new signups to. 
 1. Next, add a confirmation message. This field contains the text that contacts will see once they’ve clicked submit on the form.
 1. Navigate to the Build tab and add a header to the form. 
@@ -85,7 +85,7 @@ Because of the iframe technology used to create the signup form, the form dynami
 
 ### Share Code to make your form accessible
 
-To make your form accessible to new contacts, you can either send them a link hosted by SendGrid or you can embed code on your website that displays your form as an iframe. 
+To make your form accessible to new contacts, you can either send them a link hosted by Twilio SendGrid or you can embed code on your website that displays your form as an iframe. 
 
 *To share the code for your signup form:*
 
@@ -100,7 +100,7 @@ You can also find the options to share the signup form in the form editor by cli
 
 ## Manage Contacts
 
-Managing contacts is an integral part of your marketing campaigns lifecycle. You can create lists for contacts, as well as view and edit each individual contact within your contact database.
+Managing contacts is an integral part of your Marketing Campaigns lifecycle. You can create lists for contacts, as well as view and edit each individual contact within your contact database.
 
 ### 	Viewing a contact
 
@@ -116,7 +116,7 @@ To view any custom fields you have assigned to this contact, or to view any list
 
 ### 	Editing a contact
 
-When you are viewing a contact, click any of the Edit buttons in the Contact Fields tab to edit the contact's information within that section. This includes the SendGrid provided reserved fields, except email, any custom fields you’ve added for this contact, and any lists the contact is associated with.
+When you are viewing a contact, click any of the Edit buttons in the Contact Fields tab to edit the contact's information within that section. This includes the Twilio SendGrid provided reserved fields, except email, any custom fields you’ve added for this contact, and any lists the contact is associated with.
 
 *To edit the associated lists for your contact:*
 
@@ -135,7 +135,7 @@ Sending to a well-managed address list can drastically improve your delivery. We
 
  ### 	Identifying Suppressions
 
-In your SendGrid Account are different [Suppressions]({{root_url}}/ui/sending-email/index-suppressions/) lists.
+In your Twilio SendGrid Account are different [Suppressions]({{root_url}}/ui/sending-email/index-suppressions/) lists.
 
 **Global Unsubscribes** - Addresses on this list are opted out of all mail.
 
@@ -147,7 +147,7 @@ In your SendGrid Account are different [Suppressions]({{root_url}}/ui/sending-em
 
 **Invalid** - Addresses on this list are malformed and do not have a valid email address structure. (Ex. info.sendgrid.com, info@sendgridcom, info @ sendgrid.com)
 
-Emails sent to addresses listed in the Bounce, invalid, Spam, and Unsubscribe list are automatically dropped by SendGrid. Feel free to remove these addresses from your lists to save money and time.
+Emails sent to addresses listed in the Bounce, invalid, Spam, and Unsubscribe list are automatically dropped by Twilio SendGrid. Feel free to remove these addresses from your lists to save money and time.
 
  ### 	Delete unusable contacts
 
