@@ -21,7 +21,7 @@ When recipients interact with the emails sent during an A/B test, we will compar
 
 <call-out>
 	
-All A/B Tests will now automatically select a winner (and send the winning version to the remainder of your audience), based on the criteria that you set. The ability to manually select a winner for an A/B Test is no longer available in the latest version of Marketing Campaigns.
+All A/B Tests will now automatically select a winner (and send the winning version to the remainder of your audience), based on the criteria that you set. New Marketing Campaigns allows you to A/B test an email with a sample size of 100% of your recipients. 
 
 </call-out>
 
