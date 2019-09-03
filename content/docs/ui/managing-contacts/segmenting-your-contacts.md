@@ -18,19 +18,12 @@ The content on this page describes the experience in the latest version of Marke
 
 </call-out>
 
-You can use the information stored on your contacts from [custom fields]({{root_url}}/ui/managing-contacts/custom-fields/) or reserved fields to create segments. Segments are similar to contact lists, except they update in real-time when a contact’s data matches the criteria that you set. When you segment your audience, you are able to create personalized Automation emails and Single Sends that directly address the wants and needs of your particular audience Segments can pull from *All Contacts* or any of your Contact lists. [Custom fields]({{root_url}}/ui/managing-contacts/custom-fields/) allow you to use unique information to identify contacts for different segments.
+You can use the information stored on your contacts from [custom fields]({{root_url}}/ui/managing-contacts/custom-fields/), reserved fields or engagement data (how recipients have engaged with your prior emails) to create segments. Segments are similar to contact lists, except they update in real-time when a contact’s data matches the criteria that you set. When you segment your audience, you are able to create personalized Automation emails and Single Sends that directly address the wants and needs of your particular audience Segments can pull from *All Contacts* or any of your Contact lists. [Custom fields]({{root_url}}/ui/managing-contacts/custom-fields/) and data about how recipients have interacted with your emails allow you to use unique information to identify contacts for different segments. As the traits of your contacts change and you add more contacts that meet the criteria of your segment over time, your segments will dynamically update to reflect these updates. For example, a segment with the criteria “lives in Denver” or “is under 30 years old” will evolve as a contact’s address changes and they grow older. 
 
-<call-out>
-
-Currently Segmentation can only utilize Custom Fields and Reserved Fields as specified in your CSVs. For information on when additional Segmentation functionality will be available, see our [Coming Soon to new Marketing Campaigns]({{root_url}}/ui/sending-email/coming-soon-to-new-marketing-campaigns/) page!
-
-</call-out>
-
-As the traits of your contacts change and you add more contacts that meet the criteria of your segment over time, your segments will dynamically update to reflect these updates. For example, a segment with the criteria “lives in Denver” or “is under 30 years old” will evolve as a contact’s address changes and they grow older. 
 
 ## Creating a Segment
 
-You can create a new segment with multiple conditions based on the information you have stored about your contacts.
+You can create a new segment with multiple conditions based on the information you have stored about your contacts as well as how these contacts have engaged with (opened or clicked) your emails in the past.
 
 *To create a segment:*
 
@@ -56,14 +49,7 @@ You can create a new segment with multiple conditions based on the information y
 1. Select the operator **is**. 
 1. In the date field, type **Denver** and then click **Save Segment**.  
 
-<call-out>
-
-The *field* drop-down contains Reserved Fields, or Custom Fields as designated by the CSVs you have uploaded. The *operator* drop-down contains operators that tell the segment *how* to handle the data specified by the condition.
-
-</call-out>
-
 Depending on which field is selected, the operator you can choose from differ. The operator available to assign to fields will depend on the field type (Text, Date, or Number). For example, a "Number” field will show `IS`, `IS NOT`, `IS GREATER THAN`, `IS LESS THAN`, `IS EQUAL OR GREATER THAN`, and `IS EQUAL OR LESS THAN` as options whereas a “Text” field will show `CONTAINS`, `DOES NOT CONTAIN`, `IS` and `IS NOT` as options.
-
 When using more than one condition to segment your contacts, you can select `AND` or `OR` as options, where `AND` requires both conditions to be true and `OR` requires either condition to be true. Once you’ve selected the Field, Operator, and Value, you can layer additional conditions in the segment to narrow the results to a more targeted audience.
 
  ### Exporting a Segment
