@@ -42,15 +42,15 @@ You can test up to 6 different variations for each A/B test.
 
 - **Subject Line - Optimize Open Rates**
 
-	Select the Subject Line A/B test to optimize the [Open Rate]({{root_url}}/glossary/open-rate/) of your Single, since the subject usually is all the recipient sees until they open your email.
+Select the Subject Line A/B test to optimize the [Open Rate]({{root_url}}/glossary/open-rate/) of your Single Send, since the subject usually is all the recipient sees until they open your email.
 
-	High open rates show the strength of a subject line. Once you find a subject line that works well, you will potentially see other engagement metrics improve as well.
+High open rates show the strength of a subject line. Once you find a subject line that works well, you will potentially see other engagement metrics improve as well.
 
 - **Email Content - Optimize Click Rates**
 
-	Select the Email Content A/B test to optimize the Click Rate of your Single Send, since the recipient will not see this content unless they open your email.
+Select the Email Content A/B test to optimize the Click Rate of your Single Send, since the recipient will not see this content unless they open your email.
 
-    High click rates mean that you have compelling content and calls to action (CTAs).
+High click rates mean that you have compelling content and calls to action (CTAs).
     
     
     
@@ -129,13 +129,13 @@ When a variation wins, based on your criteria and duration, you will be notified
 
 - **Automatically Send the Winning Version**
 
-	If you chose to determine the A/B test winning criteria based on Open Rate or Click Rate, Twilio SendGrid will automatically send the winning email variation to the rest of your list.
+If you chose to determine the A/B test winning criteria based on Open Rate or Click Rate, Twilio SendGrid will automatically send the winning email variation to the rest of your list.
 
   ![]({{root_url}}/images/ab_testing_4.png "A/B test winner")
 
 - **Manually Picking the Winning Version**
 
-	If you chose to manually determine the A/B test winning criteria (meaning Twilio SendGrid is not automatically choosing based on Open Rate or Click Rate), you will be notified by email when the test duration time has passed. At that time, you need to choose your winner manually.
+If you chose to manually determine the A/B test winning criteria (meaning Twilio SendGrid is not automatically choosing based on Open Rate or Click Rate), you will be notified by email when the test duration time has passed. At that time, you need to choose your winner manually.
 
   ![]({{root_url}}/images/ab_testing_3.png "Choose a winner badge")
 
