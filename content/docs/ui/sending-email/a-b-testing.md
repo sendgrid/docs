@@ -1,12 +1,12 @@
 ---
 layout: page
 weight: 50
-title: A/B Testing Your Campaign
+title: A/B Testing Your Single Send
 group: marketing-campaigns
 navigation:
   show: true
 seo:
-  title: A/B Testing Your Campaign
+  title: A/B Testing Your Single Send
   override: true
   description: Optimize engagement of your campaigns with A/B testing, by sending different versions of your emails to a small subset of your contacts and measuring the engagement results.
 ---
@@ -22,17 +22,19 @@ When recipients interact with the emails sent during an A/B test, we will compar
 <call-out>
 	
 All A/B Tests will now automatically select a winner (and send the winning version to the remainder of your audience), based on the criteria that you set. New Marketing Campaigns allows you to A/B test an email with a sample size of 100% of your recipients. 
+When recipients interact with the emails sent during an A/B test, you can compare the engagement metrics and choose the version to send to the remainder of your contacts, or allow Twilio SendGrid to automatically choose the winning version of your campaign according to the A/B test criteria you set.
 
 </call-out>
+
 
 <iframe src="https://player.vimeo.com/video/225916632" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ##  Set up an A/B test
- *To set up an A/B test on an existing campaign:*
+ *To set up an A/B test on an existing Single Send:*
 
 1. From the left-hand navigation, select **Marketing**, and then click **Single Sends**.
 2. Locate the Single Send you want to A/B test and click on the Single Send to open it in the editor it was created in.
-3. Select the **A/B Testing** tab from the top of the panel, located on the left side of your window. If you're in the Code editor, you may need to click the gear icon to expand the left panel.
+3. Depending on the editor used to create the Single Send, A/B testing is located on either the *Settings* tab or the *A/B Testing* tab.
 4. Once you have located the A/B Testing settings, toggle the *Activate A/B Testing* switch to **ON**.
 
 ##  Choose the Type of A/B Test To Run
@@ -40,22 +42,23 @@ When you are A/B testing your emails, you want to optimize for a specific metric
 
 <call-out>
 
-You can test up to 6 different variations for each A/B test campaign.  
+You can test up to 6 different variations for each A/B test.  
 
 </call-out>
 
 - **Subject Line - Optimize Open Rates**
 
-Select the Subject Line A/B test to optimize the [Open Rate]({{root_url}}/glossary/open-rate/) of your email, since the subject usually is all the recipient sees until they open your email.
+Select the Subject Line A/B test to optimize the [Open Rate]({{root_url}}/glossary/open-rate/) of your Single Send, since the subject usually is all the recipient sees until they open your email.
+
 
 High open rates show the strength of a subject line. Once you find a subject line that works well, you will potentially see other engagement metrics improve as well.
 
 - **Email Content - Optimize Click Rates**
 
-Select the Email Content A/B test to optimize the Click Rate of your email, since the recipient will not see this content unless they open your email.
+Select the Email Content A/B test to optimize the Click Rate of your Single Send, since the recipient will not see this content unless they open your email.
 
 High click rates mean that you have compelling content and calls to action (CTAs).
-     
+
 <call-out-link linktext="EXPERT INSIGHTS" img="/img/expert-insights-promo2.png" link="https://sendgrid.com/solutions/expert-insights/">
 
 ### Looking for more visibility into your email performance?
@@ -66,7 +69,7 @@ Send better email with Expert Insights. Our detailed monthly reports will enable
 
 
 ##  Adding Your Email Versions
-Enter the different versions of your email where you would normally edit that piece of content in you email.
+Enter the different versions of your email where you would normally edit that piece of content in your Single Send.
 
 - **Subject Line Testing**
 
@@ -86,20 +89,20 @@ To know the direct cause for the best performing variation, we recommend only ma
 
 </call-out>
 
-##  Select the A/B Test Sample Size
-Choose a percentage of your audience that will participate in the A/B test.
 
-Each variation of the email will be sent to the same number of contacts within the participating subset of your audience.
+##  Select the A/B Test Single Send Sample Size
+
+Choose a percentage of your contact list that will participate in the A/B test. Each variation of the email will be sent to the same number of contacts within the participating subset of your list.
 
 ##  Determine the Winning Criteria for the A/B Test
 
 - **Open Rate**
 
-SendGrid automatically selects the winning variation based on how many recipients [open]({{root_url}}/glossary/opens/) your email.
+  Twilio SendGrid automatically selects the winning variation based on how many recipients [open]({{root_url}}/glossary/opens/) your email.
 
 - **Click Rate**
 
-SendGrid automatically selects the winning version based on how many recipients [click]({{root_url}}/glossary/clicks/) links and engage with the content in your email.
+  Twilio SendGrid automatically selects the winning version based on how many recipients [click]({{root_url}}/glossary/clicks/) links and engage with the content in your email.
 
 
 ##  Set the A/B Test Duration
@@ -112,9 +115,17 @@ While you can test your email variations for up to 24 hours, emails will only be
 
 **A/B Testing Tip - Setting the Test Duration**
 
-You should be mindful of your test duration, with respect to the timeliness of your email content.
+You should be mindful of your test duration, with respect to the timeliness of your Single Send content.
 
 For example, if you have a one-day sale that happens the day of your Single Send, you should set the A/B test duration to less than 24 hours so that your remaining contacts still have time to get the final email and participate in your one-day sale.
+
+
+</call-out>
+
+
+**A/B Testing Tip - Manually Picking the Winning Variation**
+
+If you chose to manually determine the A/B test winning criteria, you need to remember to manually choose the winning email variation. The remainder of your contacts will not be sent the email campaign until you choose a winning variation.
 
 </call-out>
 
