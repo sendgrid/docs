@@ -228,6 +228,12 @@ To manage your contact lists more efficiently, you can edit and remove contact l
 1. Find the list you want to remove the contact from and click the delete icon.
 1. When you see "Are you sure you want to remove this contact?" click **Remove Contact**. 
 
+<call-out>
+  
+  Contacts that are deleted from your SendGrid account are removed compliantly, according to GDPR. [Click here] (https://sendgrid.com/resource/general-data-protection-regulation-2/) for more information on GDPR.
+  
+  </call-out>
+
 ## Export contacts
 
 To view the contents of a contact list, you can export the list to a CSV and download it to your computer.
