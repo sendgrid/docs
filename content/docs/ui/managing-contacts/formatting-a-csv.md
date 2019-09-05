@@ -34,7 +34,7 @@ Your CSV should contain the following information about each contact:
 * first_name
 * last_name
 
-In addition to `email`, `first_name`, and `last_name`, there are alsoseveral other [reserved fields]({{root_url}}/ui/managing-contacts/custom-fields/#reserved-fields) such as `city` and `zipcode`. You can also include [custom fields]({{root_url}}/ui/managing-contacts/custom-fields/) with additional identifying information for each contact in the CSV. For example, you could specify `birthday`, `occupation`, and `age` as the custom fields. The data in the custom fields are critical for both segmentation and content personalization.
+In addition to `email`, `first_name`, and `last_name`, there are also several other [reserved fields]({{root_url}}/ui/managing-contacts/custom-fields/#reserved-fields) such as `city` and `zipcode`. You can also include [custom fields]({{root_url}}/ui/managing-contacts/custom-fields/) with additional identifying information for each contact in the CSV. For example, you could specify `birthday`, `occupation`, and `age` as the custom fields. The data in the custom fields are critical for both segmentation and content personalization.
 
 ### Header Row
 
