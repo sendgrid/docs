@@ -89,14 +89,21 @@ Twilio SendGrid’s pre-built email templates come with an Unsubscribe module co
 1. Select the copy icon next to the tag you want to add to your campaign.
 1. Paste the tag into your text module.
 
-To show your sender's full address and information in the footer of the email, SendGrid recommends adding the tags as shown:
+To show your sender's full address and information in the footer of the email, Twilio SendGrid recommends adding the tags as shown:
 
 ```
 {{Sender_Name}}
-{{Sender_Address}}, {{Sender_City}}, {{Sender_State}} {{Sender_Zip}}
+
+{{Sender_Address}}
+
+{{Sender_City}}
+
+{{Sender_State}
+
+{{Sender_Zip}}
 ```
 
-You can also use the unsubscribe module When successfully completed, your tags should change as shown below when your email enters your recipient’s mailbox.
+When successfully completed, your tags should change as shown below when your email enters your recipient’s mailbox.
 
 
 ![]({{root_url}}/img/sender-tag-comparison.png "Alt text")
