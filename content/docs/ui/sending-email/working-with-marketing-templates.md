@@ -19,7 +19,7 @@ Some of the template functionality is currently only available in the legacy Mar
 
 <iframe src="https://player.vimeo.com/video/120738522" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-Marketing Campaigns templates determine how the content of your campaign will be built and displayed to your recipients. Templates also serve as a quick starting point for future emails by saving you time from having to rebuild your email's layout. Consequently, templates allow you to reuse content and maintain brand consistency across all of your campaign efforts.
+Marketing Campaigns templates determine how the content of your Single Send or Automation emails will be built and displayed to your recipients. Templates also serve as a quick starting point for future emails by saving you time from having to rebuild your email's layout. Consequently, templates allow you to reuse content and maintain brand consistency across all of your email marketing efforts.
 
 We provide a collection of pre-built, responsive templates that you may begin using and customizing immediately, or you can create your own template from scratch.
 
@@ -29,7 +29,7 @@ We provide a collection of pre-built, responsive templates that you may begin us
 *To create a new template:*
 
 1. From the left-hand navigation, select **Marketing**, and then select **Templates**.
-2. Click **Create New Template**.
+2. Click **Create a custom Template**.
 3. Select the editor you want to use, and then click **Continue**.
 
 <call-out>
@@ -40,7 +40,7 @@ Developers can use the [POST /campaigns API](https://sendgrid.api-docs.io/v3.0/c
 
  ## 	Editing an Existing Template
 
-You can only edit custom templates (templates that you have created yourself or duplicated from a SendGrid pre-built template).
+You can only edit custom templates (templates that you have created yourself or duplicated from a Twilio SendGrid pre-built template).
 
 *To edit a template:*
 
@@ -54,11 +54,11 @@ You can only edit custom templates (templates that you have created yourself or 
    This navigates you to the editor originally used to create the campaign. After you create a template, you cannot switch between the design and code editor. However, if you choose the design editor you'll still have HTML editing options, and with the code editor you'll enjoy convenient visual tools like side-by-side code and preview panes.
 
 
- ## 	Duplicating a SendGrid Template
+ ## 	Duplicating a Twilio SendGrid Template
 
-You can easily duplicate a pre-built template provided by SendGrid.
+You can easily duplicate a pre-built template provided by Twilio SendGrid.
 
-*To duplicate a SendGrid template:*
+*To duplicate a Twilio SendGrid template:*
 
 1. From the left-hand navigation, select **Marketing**
 1. Click **Templates**.
@@ -69,7 +69,7 @@ You can easily duplicate a pre-built template provided by SendGrid.
 
 *To duplicate one of your custom templates:*
 
-1. From the left-hand navigation, select **Marketing Campaigns**,
+1. From the left-hand navigation, select **Marketing**,
 1. Click **Templates**.
 1. Click the **action menu** and select **Duplicate**.
 
@@ -81,6 +81,8 @@ You can easily duplicate a pre-built template provided by SendGrid.
 1. Find the campaign you would like to use, click the **action menu**, and then select **Create Template**.
 
 ## Creating a Template from an Automation email.
+
+*To create a new template from an existing Automation email:*
 
 1. From the left-hand navigation, select **Marketing**, and then click **Automations**.
 1. Click the action menu next to the automation you want to duplicate an email from and then select **Edit**. 
