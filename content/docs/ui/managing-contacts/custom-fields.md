@@ -18,7 +18,7 @@ This page is describing the functionality of the new Marketing Campaigns experie
 
 </call-out>
 
-Custom fields allow you to add extra information about a contact within your contact database when you upload a CSV. You can use custom fields to create dynamic [segments]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/) or to personalize the subject lines or content of Marketing Campaigns emails you send. Your custom fields are completely customizable to the use cases and user information that you need.
+Custom Fields allow you to add extra information about a contact within your contact database when you upload a CSV. You can use custom fields to create dynamic [segments]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/) or to personalize the subject lines or content of Marketing Campaigns emails you send. Your custom fields are completely customizable to the use cases and user information that you need.
 
 <call-out>
 
@@ -59,10 +59,10 @@ Your account comes preloaded with unremovable reserved fields.  The following fi
 
 <table class="table">
   <tr><th>Field Name</th><th>Field Type</th></tr>
-  <tr><td>email</td><td>text</td></tr>
-  <tr><td>alternate_email</td><td>text</td></tr>
   <tr><td>first_name</td><td>text</td></tr>
   <tr><td>last_name</td><td>text</td></tr>
+  <tr><td>email</td><td>text</td></tr>
+  <tr><td>alternate_emails</td><td>text</td></tr>
   <tr><td>address_line_1</td><td>text</td></tr>
   <tr><td>address_line_2</td><td>text</td></tr>
   <tr><td>city</td><td>text</td></tr>
@@ -81,10 +81,15 @@ Your account comes preloaded with unremovable reserved fields.  The following fi
 SendGrid auto-populates 6 reserved fields: 
 
 ``lists``
+
 ``created_at``
+
 ``updated_at``
+
 ``last_emailed``
+
 ``last_clicked``
+
 ``last_opened``
 
 Reserved fields are used by default to track useful metrics for your contacts.
@@ -109,7 +114,7 @@ This deletion process may take several minutes, and you will continue to see the
 
 ##  Troubleshooting
 
-If a Custom Field value does not appear in the corresponding [Substitution Tag]({{root_url}}/ui/sending-email/editor/#using-substitution-tags), make sure that there is a value for that custom field associated with the contact in your contact database. If there is no value for a particular custom field, a space will be substituted instead.
+If a custom field value does not appear in the corresponding [Substitution Tag]({{root_url}}/ui/sending-email/editor/#using-substitution-tags), make sure that there is a value for that custom field associated with the contact in your contact database. If there is no value for a particular custom field, a space will be substituted instead.
 
 If you do find that the custom field has an associated value on the contact’s profile page, check the spelling of the substitution tag in the content of your campaign.
 
