@@ -35,7 +35,7 @@ If, for any reason, you need to resend the verification email, click the action 
 
 <call-out type="warning">
 
-You must verify the email address associated with your sender identity before you can edit it or use it to send a campaign.
+You must verify the email address associated with your sender identity before you can edit it or use it to schedule a Single Send or set an Automation.
 
 </call-out>
 
@@ -53,7 +53,7 @@ If you have an [authenticated domain]({{root_url}}/ui/account-and-settings/how-t
 
 <call-out type="warning">
 
-Once you schedule a campaign, you cannot delete the sender identity associated with that campaign.
+Once you schedule a Single Send or set an Automation, you cannot delete the sender identity associated with the Single Send or Automation.
 
 </call-out>
 
@@ -68,7 +68,7 @@ Save time and feel confident you are set up for long-term success with Email Imp
 
 ##     Adding Sender Information to a Single Send or Automation Email
 
-SendGrid’s pre-built email templates come with an Unsubscribe module containing your Sender information by default. For templates or emails that you build yourself, you can insert your sender identity information into your campaigns using the following tags within your campaign or template content:
+Twilio SendGrid’s pre-built email templates come with an Unsubscribe module containing your Sender information by default. For templates or emails that you build yourself, you can insert your sender identity information into your campaigns using the following tags within your campaign or template content:
 
 1. **{{sender_name}}** - The sender's name.
 
@@ -84,7 +84,7 @@ SendGrid’s pre-built email templates come with an Unsubscribe module containin
 
 *To add tags to your email:*
 
-1. In the Design editor, navigate to the **Build** tab and drag a Text module into your campaign body. If you’re using the Code editor, click the gear icon on the left to open the **Settings** bar.
+1. In the Design editor, navigate to the **Build** tab and drag a Text module into your campaign body. If you’re using the Code Editor, click the gear icon on the left to open the **Settings** bar.
 1. Navigate to the **Tags** tab.
 1. Select the copy icon next to the tag you want to add to your campaign.
 1. Paste the tag into your text module.
