@@ -12,7 +12,7 @@ navigation:
 ---
 <call-out>
 
-This page is describing the functionality of the new Marketing Campaigns experience, if you're using legacy Marketing Campaigns, your workflow and screens may be a little different. For more information on the new Marketing Campaigns experience click [here](https://sendgrid.com/pricing).
+This page is describing the functionality of the new Marketing Campaigns experience. If you're using legacy Marketing Campaigns, your workflow and screens may be a little different. For more information on the new Marketing Campaigns experience click [here](https://sendgrid.com/pricing).
 
 </call-out>
 
@@ -23,7 +23,7 @@ Adding Unsubscribe Groups to your emails makes it easy to honor your recipients'
 *To create an Unsubscribe Group:*
 
 1. Select **Marketing** and then click **Unsubscribe Groups**.
-1. Click **Add Unsubscribe Groups**.
+1. Click **Create New Group**.
 1. Add a *Group Name* and *Group Description*.
 
 <call-out>
@@ -47,7 +47,7 @@ To view the unsubscribe preferences page, select the action menu next to an Unsu
 
 1. Select your preferred Unsubscribe Group by clicking **Settings** and selecting the group from **Recipients**.
 1. From the **Build** tab, drag the **Unsubscribe** module to insert Sender Information and a link to the `{{{unsubscribe}}}` tag.
-1. To manually hyperlink to the {{unsubscribe}} tag, enter the text you would like to link.
+1. To manually hyperlink to the {{{unsubscribe}}} tag, enter the text you would like to link.
 1. Highlight the text then select the link icon from the top toolbar.
 1. In the URL field enter `{{{unsubscribe}}}`, then click **Save**.
 
@@ -62,9 +62,9 @@ To view the unsubscribe preferences page, select the action menu next to an Unsu
 
 ## Using a Custom Unsubscribe Link
 
-While SendGrid Unsubscribe Groups are a powerful way to manage unsubscribes and email preferences, we realize some senders may have their own subscription management tools. For these senders, Marketing Campaigns supports custom unsubscribe links as well.
+While Twilio SendGrid Unsubscribe Groups are a powerful way to manage unsubscribes and email preferences, we realize some senders may have their own subscription management tools. For these senders, Marketing Campaigns supports custom unsubscribe links as well.
 
-If you would like to use a custom URL for your unsubscribe link, navigate to **Settings** in the left-hand sidebar and select the **Recipients** dropdown menu. Under **Unsubscribe Group**, select **Use Custom Link...**
+If you would like to use a custom URL for your unsubscribe link, from the Editor, navigate to **Settings** in the left-hand sidebar and select the **Recipients** dropdown menu. Under **Unsubscribe Group**, select **Use Custom Link...**
 
 This will expand a new field where you can insert a URL for one of your own pages where recipients can manage their subscription preferences.
 

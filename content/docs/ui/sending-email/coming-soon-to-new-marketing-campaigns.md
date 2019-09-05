@@ -29,12 +29,12 @@ There are some important features that are coming soon to our brand new version 
     <td><span style="color:#18c96e;">Delivered</span></td>
   </tr>
   <tr>
-    <td>A/B testing for Single Sends</td>
-    <td>Q3 2019</td>
+    <td><a href="https://sendgrid.com/docs/ui/sending-email/a-b-testing/" target="_blank">A/B testing for Single Sends</a></td>
+     <td><span style="color:#18c96e;">Delivered</span></td>
   </tr>
   <tr>
-    <td>Create an engagement-based segment</td>
-    <td>Q3 2019</td>
+    <td><a href="https://sendgrid.com/docs/ui/managing-contacts/segmenting-your-contacts/" target="_blank">Create an engagement-based segment</td>
+    <td><span style="color:#18c96e;">Delivered</span></td>
   </tr>
   <tr>
     <td>View per-contact engagement data</td>
@@ -53,8 +53,8 @@ There are some important features that are coming soon to our brand new version 
     <td><span style="color:#18c96e;">Delivered</span></td>
   </tr>
   <tr>
-    <td>Duplicating a Marketing Campaigns template</td>
-    <td>Q4 2019</td>
+    <td><a href="https://sendgrid.com/docs/ui/sending-email/working-with-marketing-templates/#duplicating-a-custom-template" target="_blank">Duplicating a Marketing Campaigns template</a></td>
+    <td><span style="color:#18c96e;">Delivered</span></td>
   </tr>
   <tr>
     <td>Send a test email from within Single Sends</td>
