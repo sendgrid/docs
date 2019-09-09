@@ -8,8 +8,10 @@ navigation:
 seo:
   title: Design & Code Editor
   override: true
-  description: SendGrid Marketing Campaigns' editing gives you complete control over your emails. Use a flexible drag-and-drop Design editor or a robust HTML code editor.
+  description: Twilio SendGrid Marketing Campaigns' editing gives you complete control over your emails. Use a flexible drag-and-drop Design editor or a robust HTML code editor.
 ---
+
+This page is focused on the "Build" tag of the editor.
 
 The new Marketing Campaigns experience is all about supporting your unique workflow, so you can get your work done more efficiently. You have complete control over the way that you create and edit each new email, thanks to 2 distinct editing experiences.
 
@@ -33,7 +35,7 @@ Twilio SendGrid recommends only having one instance of a template or Marketing C
 
 ## The Code Editor
 
-SendGrid’s marketer-friendly code editor features a powerful split-screen editing experience – perfect for building single send or automation emails with your own custom HTML. It offers a number of helpful features, often found in native editors.
+Twilio SendGrid’s marketer-friendly code editor features a powerful split-screen editing experience – perfect for building single send or automation emails with your own custom HTML. It offers a number of helpful features, often found in native editors.
 
 ### Code Editor Features
 
@@ -58,8 +60,8 @@ As you edit, parts of your code highlights in various colors according to the ty
 *To use the code editor for Single Sends:*
 
 1. From the left-hand navigation, select **Marketing**, and then click **Single Sends** 
-1. Click **Create Single Send**.
-<br>To create a single send email using an existing (drafted or sent) email, find the single send you'd like to use and click the action menu next to the email.
+1. Click **Create a Single Send**.
+<br>To create a Single Send email using an existing (drafted or sent) email, find the Single Send you'd like to use and click the action menu next to the email.
 1. Then, select **Edit** or **Duplicate**.
 1. Select **Code Editor**, and then click **Continue**.
 
@@ -75,7 +77,7 @@ The Welcome Series Automation can only be edited with the [design editor]({{root
 
 </call-out>
 
-1. Give the automation a name, entry criteria, exit criteria, and select an unsubscribe group.
+1. Give the automation a name, entry criteria, exit criteria, and select an [Unsubscribe Group](https://sendgrid.com/docs/ui/sending-email/create-and-manage-unsubscribe-groups/).
 1. Select the send time and then click the edit button next to *Email 1*. 
 1. Select **Code Editor**, and then click **Continue**.
 
@@ -85,7 +87,7 @@ You can only edit unsent emails.
 
 </call-out>
 
-You can select a blank template, a custom template that you have already created, or one of SendGrid's pre-built templates. For more information, see [Working With Templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/).
+You can select a blank template, a custom template that you have already created, or one of Twilio SendGrid's pre-built templates. For more information, see [Working With Templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/).
 
 If you have already built the HTML that you want to use in another application, copy and paste that code directly into the content area of the Code Editor. You can also write the HTML for your email or template directly in the Code Editor.
 
@@ -287,7 +289,7 @@ SendGrid’s flexible design editor allows you to build your templates and email
 *To use the design editor for Single Sends:*
 
 1. From the left-hand navigation, select **Marketing**, and then click **Single Sends** 
-1. Click **Create Single Send**.
+1. Click **Create a Single Send**.
 <br>To create a single send email using an existing (drafted or sent) email, find the single send you'd like to use and click the action menu next to the email.
 1. Then, select **Edit** or **Duplicate**.
 1. Select **Design Editor**, and then click **Continue**.
@@ -302,7 +304,7 @@ SendGrid’s flexible design editor allows you to build your templates and email
 1. Select **Design Editor**, and then click **Continue**.
 <br>The Design Editor opens.
 7. Select the template that you want to use for your email.
-<br>You can select a Blank Template, a custom template that you have already created, or one of SendGrid’s pre-built templates. For more information, see [Working With Marketing Templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/)
+<br>You can select a Blank Template, a custom template that you have already created, or one of Twilio SendGrid’s pre-built templates. For more information, see [Working With Marketing Templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/)
 8. Select **Design Editor** and then click **Continue**.
 <br>The Design Editor opens.
 
@@ -604,7 +606,7 @@ If you are writing your own custom HTML that you plan on importing into the desi
 
 1. Navigate to the **Build** tab in the left-hand navigation.
 2. Scroll down and select the **Advanced** drop-down menu.
-3. Expand the option titled **Import/Export**.
+3. Expand the option titled **Import Drag & Drop HTML**.
 4. Click **Import**.
    <br>A window opens where you can paste in your own HTML.
 
@@ -620,12 +622,12 @@ Any HTML that you import replaces all existing content in your email or template
 
 ### Drag & Drop Markup
 
-SendGrid parses your custom HTML, looking for any [drag & drop compatible modules](#drag--drop-code-examples).
+Twilio SendGrid parses your custom HTML, looking for any [drag & drop compatible modules](#drag--drop-code-examples).
 
   * First, we look for any HTML elements that contain the attribute `role="modules-container"`.
   * Next, we look for all HTML elements with the attribute `role="module"` that are descendants of the "modules-container" element.
 
-The `role="modules-container"` attribute is required so that we know where your drag and drop modules are located. All of the SendGrid pre-built templates include the `role="modules-container"` by default. You are only required to include this attribute when creating an email or template from scratch that you want to be compatible with the design editor.
+The `role="modules-container"` attribute is required so that we know where your drag and drop modules are located. All of the Twilio SendGrid pre-built templates include the `role="modules-container"` by default. You are only required to include this attribute when creating an email or template from scratch that you want to be compatible with the design editor.
 
 <call-out type="warning">
 
