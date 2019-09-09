@@ -109,6 +109,11 @@ https://api.sendgrid.com/api/blocks.get.json?api_user=your_sendgrid_username&api
 
 <p>For detailed information on the available Web API methods, select one from the tree on the left.</p>
 
+{% anchor h2 %}
+Rate Limits
+{% endanchor %}
+
+Twilio SendGrid has a default rate limit of 600 requests/minute on some of the V2 API endpoints. If you exceed that rate limit you will receive a 429 error response with a “too many requests” message. Note that this rate limit does not affect the V2 mail/send endpoint.
 
 {% anchor h2 %}
 The Data
