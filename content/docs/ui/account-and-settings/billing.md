@@ -15,18 +15,18 @@ You can update your billing details on the on the Billing tab of the [Account De
 
 For more information about understanding your bill, see [Reading your invoice]({{root_url}}/ui/account-and-settings/reading-your-invoice/).
 
-When you create or upgrade to a paid account, you add a credit card in for automatic payments. This will allow SendGrid to make the recurring package charges for your account without having to notify you each month of the bill. SendGrid relies on a PCI-DSS compliant 3rd party billing provider to store, process, and manage payment card processing.
+When you create or upgrade to a paid account, you add a credit card in for automatic payments. This will allow Twilio SendGrid to make the recurring package charges for your account without having to notify you each month of the bill. Twilio SendGrid relies on a PCI-DSS compliant 3rd party billing provider to store, process, and manage payment card processing.
 
 ##     Payment methods
 
-SendGrid accepts credit or check cards. We charge accounts on a monthly basis; we do not offer pre-payment, quarterly billing, or annual billing at this time. We do not accept PayPal, wire transfer, checks, or any card requiring a PIN.
+Twilio SendGrid accepts credit or check cards. We charge accounts on a monthly basis; we do not offer pre-payment, quarterly billing, or annual billing at this time. We do not accept PayPal, wire transfer, checks, or any card requiring a PIN.
 
 You can update your card information, retry a failed payment, and export past invoices for your business on the Billing tab of your [Account Details]( https://app.sendgrid.com/account/billing) page. It is also possible to change your package type and cancel your account from this page.
 
 
  ###     Subusers
 
-Subusers under a free Marketing Campaigns plan will only be able to upload 2,000 contacts. Subusers under an Advanced Marketing Campaigns plan will be able to continue uploading contacts, and the parent account will pay for any overages this subuser may cause by going over the overall limit on the paid plan.
+Subusers under a free Marketing Campaigns will only be able to upload 2,000 contacts. Subusers under an Advanced Marketing Campaigns plan will be able to continue uploading contacts, and the parent account will pay for any overages this subuser may cause by going over the overall limit on the paid plan.
 
 
 
@@ -51,13 +51,13 @@ If your account payments aren’t up-to-date you may see one of the following wa
 
 This warns you that your service may be interrupted unless you settle any outstanding balance on your account. This warning may occur if the card on file for your account gets declined when we attempt to process your payment on the first of the month.
 
-To update your account, please update your credit card on file by logging into the SendGrid app and going to the Billing tab on your [Account Details page]( https://app.sendgrid.com/account/billing). Update your card information and then click **Save**. Once you update the card on file, the payment processes automatically, and your account is unfrozen.
+To update your account, please update your credit card on file by logging into the Twilio SendGrid app and going to the Billing tab on your [Account Details page]( https://app.sendgrid.com/account/billing). Update your card information and then click **Save**. Once you update the card on file, the payment processes automatically, and your account is unfrozen.
 
 **Billing Frozen**
 
 If you find your account suddenly unable to send mail within the first week of the month, your account could be in a billing frozen state. This frozen state occurs when we attempt to process your payment on the first day of the month, but the card on file for your account gets declined.
 
-To reactivate your account, please update your credit card on file by logging into the SendGrid UI and going to the **Billing** tab on your [Account Details page]( https://app.sendgrid.com/account/billing). Update your card information and then click **Save**. Once you update the card on file, the payment processes automatically, and your account is unfrozen.
+To reactivate your account, please update your credit card on file by logging into the Twilio SendGrid UI and going to the **Billing** tab on your [Account Details page]( https://app.sendgrid.com/account/billing). Update your card information and then click **Save**. Once you update the card on file, the payment processes automatically, and your account is unfrozen.
 
 
 ## Plans
@@ -371,7 +371,7 @@ You must meet both criteria below for a refund to be considered:
 - You have not used your account in the current calendar month.
 - You have no overages, and you have no contacts stored in Marketing Campaigns.
 
-SendGrid packages operate off of a monthly subscription model, not direct usage. We will not issue a refund if you have used your account in the same calendar month as your request. Instead, please cancel your account to avoid any future subscription charges.
+Twilio SendGrid packages operate off of a monthly subscription model, not direct usage. We will not issue a refund if you have used your account in the same calendar month as your request. Instead, please cancel your account to avoid any future subscription charges.
 
 Refunds are only applicable to the current subscription charge on your account, not for overage or contact storage charges from the prior month. We hold our customers responsible for managing their account credit limits and contact storage.
 
