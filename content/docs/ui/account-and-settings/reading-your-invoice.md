@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-Your SendGrid invoice contains a lot of information which may be difficult to understand. To see your invoice, check your email or visit the Plan & Billing tab on your [Account details](https://app.sendgrid.com/account/billing) page. Here's information on how to read your invoice:
+Your Twilio SendGrid invoice contains a lot of information which may be difficult to understand. To see your invoice, check your email or visit the Plan & Billing tab on your [Account details](https://app.sendgrid.com/account/billing) page. Here's information on how to read your invoice:
 
 ![A screenshot of an example invoice]({{root_url}}/img/invoice-legend.png)
 
@@ -21,7 +21,7 @@ Your SendGrid invoice contains a lot of information which may be difficult to un
 
 ## 2. Billing Email
 
-**The email address where you receive SendGrid statements**. By default, this is the primary email address on file in your account.
+**The email address where you receive Twilio SendGrid statements**. By default, this is the primary email address on file in your account.
 
 Need to send invoices to multiple addresses? Consider creating a role address on your side that includes all of the billing stakeholders in your organization, or send an email to [billing@sendgrid.com](mailto:billing@sendgrid.com).
 
@@ -49,7 +49,7 @@ This charge indicates that you have an **additional Dedicated IP Address** alloc
 
 IP addresses cost $30.00/mo each and are available on Pro API and Advanced Marketing Campaigns plans and above.
 
-For more information on SendGrid Plans, visit our [pricing page](https://sendgrid.com/pricing).
+For more information on Twilio SendGrid Plans, visit our [pricing page](https://sendgrid.com/pricing).
 
 ### Contact List Storage
 
@@ -71,7 +71,7 @@ The price for access to this feature varies per plan. For more information on pr
 
 ![Tax summary section]({{root_url}}/img/invoice-tax.png)
 
-If you are in [a jurisdiction where SendGrid is required to charge sales tax]({{root_url}}/ui/account-and-settings/taxes-and-tax-exempt/), your **tax charges** will appear here.
+If you are in [a jurisdiction where Twilio SendGrid is required to charge sales tax]({{root_url}}/ui/account-and-settings/taxes-and-tax-exempt/), your **tax charges** will appear here.
 
 ## 4. Usage Summary
 
