@@ -246,7 +246,7 @@ Upgrading your account does NOT absorb already incurred overage charges, so make
  </tr>
  <tr>
    <td>Free</td>
-   <td>6,000 contacts and 2,000 emails</td>
+   <td>2,000 contacts and 6,000 emails</td>
    <td>-</td>
  </tr>
  <tr>
