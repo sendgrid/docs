@@ -14,7 +14,7 @@ seo:
 ---
 <call-out type="warning">
 
-Email Validation is currently in beta. During beta, any participants with pro or premiere accounts will have access to this feature. Functionality and performance is subject to change while in beta.
+Email Validation is currently in beta. During beta, any participants with Pro or Premier accounts will have access to this feature. Functionality and performance is subject to change while in beta.
 
 </call-out>
 
