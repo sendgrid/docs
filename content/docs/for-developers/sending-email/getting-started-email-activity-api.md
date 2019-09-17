@@ -118,7 +118,7 @@ Use this query to filter to emails between specific dates: (replace `<<your API 
 
 ```
 curl --request GET \
- --url 'https://api.sendgrid.com/v3/messages?limit=10&query=last_event_time%20BETWEEN%20TIMESTAMP%20%{start_date}%22%20AND%20TIMESTAMP%20%22{end_date}%22' \
+ --url 'https://api.sendgrid.com/v3/messages?limit=10&query=last_event_time%20BETWEEN%20TIMESTAMP%20%22{start_date}%22%20AND%20TIMESTAMP%20%22{end_date}%22' \
  --header 'authorization: Bearer <<your API key>>'
 ```
 
@@ -128,7 +128,7 @@ Use this query to filter to emails by recipient and between specific dates: (rep
 
 ```
 curl --request GET \
- --url 'https://api.sendgrid.com/v3/messages?limit=10&query=last_event_time%20BETWEEN%20TIMESTAMP%20%{start_date}%22%20AND%20TIMESTAMP%20%22{end_date}%22AND%20to_email%3D%22<<email>>%22' \
+ --url 'https://api.sendgrid.com/v3/messages?limit=10&query=last_event_time%20BETWEEN%20TIMESTAMP%20%22{start_date}%22%20AND%20TIMESTAMP%20%22{end_date}%22AND%20to_email%3D%22<<email>>%22' \
  --header 'authorization: Bearer <<your API key>>'
 ```
 
