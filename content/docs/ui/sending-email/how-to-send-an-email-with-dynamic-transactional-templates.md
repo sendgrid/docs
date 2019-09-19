@@ -142,6 +142,6 @@ You can also copy your template ID from the app and paste it into your call.
 ![]({{root_url}}/img/dynamic_template_id.png "Dynamic Template ID")
 
 ## 	Additional Resources
-- [Mail Send with Dynamic Templates](https://sendgrid.com/docs/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/)
+- [Mail Send with Dynamic Templates](https://sendgrid.api-docs.io/v3.0/mail-send/v3-mail-send#handlebars)
 - [Unsubscribe Groups]({{root_url}}/ui/sending-email/group-unsubscribes/)
 - [Using Handlebars]({{root_url}}/for-developers/sending-email/using-handlebars/)
