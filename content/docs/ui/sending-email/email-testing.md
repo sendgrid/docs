@@ -23,6 +23,8 @@ Email testing offers robust, pre-send testing of your emails, including in-app s
 - **Spam Test:** Shows how an email performs against the world’s most powerful consumer (B2C) and enterprise (B2B) spam filters.
 - **Link Validation Test:** Tests all links within a message to ensure they are valid. The test checks for redirects, domain reputation, and critical metadata, like title text. Your inbox rendering tests will automatically include this link validation test. Link validation tests **do not** deduct from your Email Testing credits.
 
+<iframe src="https://player.vimeo.com/video/359828434" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
 ## Email Testing credits and pricing
 
 The number of Email Testing credits available to you depends on your Marketing Campaigns plan. 10 Email Testing credits per month are available for customers on Basic plans, with 60 Email Testing credits per month available to customers on Advanced plans. Email Testing credits can be used for both Inbox Rendering Tests and Spam Tests and all Email Testing credits (whether part of your plan or purchased as part of an add-on package) expire at the end of each month. 
