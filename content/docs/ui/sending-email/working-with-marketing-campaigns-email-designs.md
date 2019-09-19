@@ -1,12 +1,12 @@
 ---
 layout: page
 weight: 85
-title: Working with Marketing Templates
+title: Working with Marketing Campaigns Email Designs
 group: marketing-campaigns
 navigation:
   show: true
 seo:
-  title: Marketing Templates
+  title: Working with Marketing Campaigns Email Designs
   override: true
   description:
 ---
