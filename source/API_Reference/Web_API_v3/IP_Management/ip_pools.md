@@ -134,7 +134,7 @@ Add an IP Address to a pool.
 {% apiv3requestbody %} {"ip":"0.00.0.0"} {% endapiv3requestbody %}
 
 {% v3response %}
-HTTP/1.1 200 OK	
+HTTP/1.1 201 OK	
 
 {
   "ip": "0.00.0.0",
