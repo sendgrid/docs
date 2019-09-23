@@ -148,7 +148,7 @@ For more information about customizing your campaign, see [Using the Design Edit
 
 1. Once you’ve finished editing your email, you can see what it looks like by saving your draft, hovering over the action menu, and then clicking **Preview**.
 2. If you haven't already, return to **Settings** to select which contacts will receive your email by clicking the **Send To** field under **Recipients**.
-3. You can test your email settings and see it before sending it to a large audience by entering up to ten email addresses and clicking **Send Test**. Additionally, we offer [Email Testing]({{root_url}}/ui/sending-email/email-testing/) as an add-on so you can see what your email looks like across different operating systems, browsers, and inboxes. 
+3. You can test your email settings in your Single Send and see it before sending it to a large audience by entering up to ten email addresses and clicking **Send Test**. Additionally, we offer [Email Testing]({{root_url}}/ui/sending-email/email-testing/) as an add-on for both Automation and Single Sends so you can see what your email looks like across different operating systems, browsers, and inboxes. 
 4. Once your email is ready to go, click **Send**. 
 
  ##	Additional Resources
