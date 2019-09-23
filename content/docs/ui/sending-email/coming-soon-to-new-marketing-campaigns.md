@@ -54,8 +54,7 @@ There are some important features that are coming soon to our brand new version 
   </tr>
   <tr>
     <td>Send a test email from within Single Sends</td>
-    <td>September 2019</td>
-  </tr>
+    <td><span style="color:#18c96e;">Delivered</span></td>
   <tr>
     <td>View a sample of contacts on a list</td>
     <td>September 2019</td>
