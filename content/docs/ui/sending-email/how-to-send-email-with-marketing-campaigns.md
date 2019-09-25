@@ -64,7 +64,7 @@ If your email domain doesn't match one of your [authenticated]({{root_url}}/ui/a
 
 By default, notifications about your account's Marketing Campaigns activity, CSV upload summaries, sender verifications, and list or segment exports will send to the email you signed up with on your parent account. You can also opt in to receive email notifications from SendGrid to up to 10 email addresses by following the instructions [here]({{root_url}}/ui/account-and-settings/notifications/).
 
-### Add Contacts
+## Add Contacts
 
 Marketing Campaigns offers a number of ways to add contacts to lists, including:
 
@@ -78,7 +78,7 @@ Marketing Campaigns offers a number of ways to add contacts to lists, including:
 
 - [**Contact Management APIs**](https://sendgrid.api-docs.io/v3.0/contacts/)
 
-### Add an Unsubscribe Group
+## Add an Unsubscribe Group
 
 [Unsubscribe Groups]({{root_url}}/ui/sending-email/create-and-manage-unsubscribe-groups/) provide your recipients with an alternative to opting out of all email that you send, by giving them the opportunity to specify the kinds of email that they would no longer like to receive.
 
@@ -98,7 +98,7 @@ The Group Name as well as the Group Description are public-facing and will be vi
 5. Click **Save Unsubscribe Group**.
 6. Find your newly created Unsubscribe Group, click the action menu, and then click **Preview**.
 
-## Creating a Single Send
+## Create a Single Send
 
 1. From the left-hand navigation, select **Marketing**.
 1. Select **Single Sends**. 
@@ -112,7 +112,7 @@ You can also create a template from an existing Single Send by selecting the act
 
 </call-out>
 
-1. Select an editor.
+5. Select an editor.
 <br> You can choose between the **Design Editor** and the **Code Editor**.
 
 ![]({{root_url}}/img/choose-editor.png)
@@ -131,6 +131,12 @@ Inside the Code Editor, you can click the left **Settings** tab to expand the se
 ![]({{root_url}}/img/design-editor-preview.png "Design Editor Preview")
 
 6. Define key settings like *From Sender*, *Email Subject*, *Preheader*, *Recipients*, and *Scheduling* by filling in the fields in the **Settings** tab.
+
+<call-out>
+
+If you have dedicated IPs, you can set up [IP Pools]({{root_url}}/ui/account-and-settings/ip-pools/) that allow you separate your traffic and potentially enhance your deliverability by protecting your sender reputation. To utilize IP pools for Single Sends, navigate to **Settings** and from the IP Pool drop-down, select the IP pool you wish to use. 
+
+</call-out>
 
 7. Add your custom content by clicking the **Build** tab in the Design Editor, or by editing the HTML code in the Code Editor. 
 
