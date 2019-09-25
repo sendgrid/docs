@@ -26,6 +26,8 @@ With Automation, you could build email campaigns to:
 * Engage contacts who’ve downloaded an asset from you with follow-up content.
 * Promote an upcoming event to a list of invitees with a series of reasons to attend.
 
+<iframe src="https://player.vimeo.com/video/359829207" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
 ## Getting Started with Automation
 
 If you haven’t done so already, you’ll need to complete the following before building your first automation:
@@ -63,6 +65,13 @@ If you select “no longer meet entry criteria”, before each email in your ser
 
 6. Select an [Unsubscribe Group]({{root_url}}/ui/sending-email/create-and-manage-unsubscribe-groups/#create-an-unsubscribe-group). This Unsubscribe Group will apply to all emails in your Automation.
 7. Add a [category]({{root_url}}/glossary/categories/) to the automation (optional). Categories are useful for [comparing performance]({{root_url}}/ui/analytics-and-reporting/category-comparison/) across different types of email you send.
+
+<call-out>
+
+If you have dedicated IPs, you can set up [IP Pools]({{root_url}}/ui/account-and-settings/ip-pools/) that allow you separate your traffic and potentially enhance your deliverability by protecting your sender reputation. To utilize IP pools for Automations, select the IP Pool you wish to use for the entire automation series from the IP Pool drop-down. 
+
+</call-out>
+
 8. Select the send time for the first email. You can choose to send the first email instantly, or you can set a delay of days or hours from the time meet the entry criteria.
 9. Build your email(s) by clicking **Add Email Content**.
 10. Choose a template, then use your preferred [editor]({{root_url}}/ui/sending-email/editor/) to craft your content.
