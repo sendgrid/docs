@@ -13,12 +13,12 @@ navigation:
 
 ##     What are dedicated IP Addresses?
 
-An Internet Protocol (IP) address is a unique numerical address that defines a location. At SendGrid, you can purchase IP addresses dedicated to your account. Since you are the only one sending email over this IP, the sender reputation associated with this IP is determined purely by your sending practices.
+An Internet Protocol (IP) address is a unique numerical address that defines a location. At Twilio SendGrid, you'll receive a dedicated IP address with either a Pro Email API plan or an Advanced Marketing Campaigns plan. If you have one of these accounts, you can purchase additional IP addresses dedicated to your account. For more information, see our [pricing](https://sendgrid.com/pricing/) page. Since you are the only one sending email over this IP, the sender reputation associated with this IP is determined purely by your sending practices.
 
 
 ##     Why would I want a dedicated IP address?
 
-If you are sending any significant amount of email, we typically suggest sending your marketing and transactional emails from separate IP addresses. In addition, it is strongly recommended to associate your sending domain with your new outbound IP address (provided to you by SendGrid). This is available at no extra cost and can be accomplished by [completing an rDNS setup for your dedicated IP]({{root_url}}/ui/account-and-settings/how-to-set-up-reverse-dns/).
+If you are sending any significant amount of email, we typically suggest sending your marketing and transactional emails from separate IP addresses. In order to do this, you'll need to set up [IP Pools]({{root_url}}/ui/account-and-settings/ip-pools/). In addition, it is strongly recommended to associate your sending domain with your new outbound IP address (provided to you by SendGrid). This is available at no extra cost and can be accomplished by [completing an rDNS setup for your dedicated IP]({{root_url}}/ui/account-and-settings/how-to-set-up-reverse-dns/).
 
 We also suggest having at least 2 promotional IP addresses when your volume reaches 200-300K/month.
 
@@ -27,7 +27,7 @@ We also suggest having at least 2 promotional IP addresses when your volume reac
 
 Depending on the plan you have chosen, you either have a dedicated sending IP address or you are using a shared sending IP address.
 
-- All Pro and Premier customers get one dedicated sending IP by default. You can view any IPs attached to your account [here](https://app.sendgrid.com/settings/ip_addresses).
+- All Pro or Premier Email API and Advanced Marketing Campaigns customers get one dedicated sending IP by default. You can view any IPs attached to your account [here](https://app.sendgrid.com/settings/ip_addresses).
 - Free and Essential customers send from groups of shared IP addresses, where they group with senders of similar reputation and deliverability. Shared IPs addresses that these accounts send from can change without notice as your reputation changes, or as we make changes to IP groups to improve deliverability. In these cases, you will not be able to view your shared sending IP addresses from within your account.
 
 
@@ -70,7 +70,7 @@ Additional IPs cost an extra $30 per additional IP per month. You may only add u
 
 ##     Reputation Monitoring for dedicated IP Accounts
 
-SendGrid does not offer dedicated IP address reputation monitoring as a service. We do not manage the reputation of your dedicated IP address since your mail only sends via your dedicated IP. This means that you have ultimate control over the content that is being sent out and therefore are responsible for monitoring and maintaining its reputation and listing status. However, many services can help you maintain your IP’s reputation.
+Twilio SendGrid does not offer dedicated IP address reputation monitoring as a service. We do not manage the reputation of your dedicated IP address since your mail only sends via your dedicated IP. This means that you have ultimate control over the content that is being sent out and therefore are responsible for monitoring and maintaining its reputation and listing status. However, many services can help you maintain your IP’s reputation.
 
 The following are some third party tools available to assist you in maintaining your reputation:
 
@@ -111,7 +111,6 @@ You need to have a [subuser]({{root_url}}/ui/account-and-settings/subusers/#crea
 
 
 ### Do you want expert help to get your email program started on the right foot?
-
 
 Save time and feel confident you are set up for long-term success with Email Implementation. Our experts will work as an extension of your team to ensure your email program is correctly set up and delivering value for your business.
 
