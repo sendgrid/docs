@@ -26,6 +26,8 @@ With Automation, you could build email campaigns to:
 * Engage contacts who’ve downloaded an asset from you with follow-up content.
 * Promote an upcoming event to a list of invitees with a series of reasons to attend.
 
+<iframe src="https://player.vimeo.com/video/359829207" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
 ## Getting Started with Automation
 
 If you haven’t done so already, you’ll need to complete the following before building your first automation:
