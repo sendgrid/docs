@@ -26,7 +26,12 @@ Dedicated IP addresses are available with Pro and Premier Email API accounts as 
 In order to create an IP pool, your dedicated IPs must have [reverse DNS]({{root_url}}/ui/account-and-settings/how-to-set-up-reverse-dns/) set up.
 
 *To create an IP Pool*:
-1. 
+
+1. Navigate to **Settings** and then click **IP Addresses**. 
+1. Select **IP Pools**. 
+1. Click **Create an IP Pool**. 
+1. Enter an *IP Pool Name* and select the IP addresses you want to add to the pool.
+1. Click **Create**. 
 
 
 <call-out>
