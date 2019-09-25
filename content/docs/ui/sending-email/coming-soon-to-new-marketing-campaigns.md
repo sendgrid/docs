@@ -57,7 +57,7 @@ There are some important features that are coming soon to our brand new version 
     <td><span style="color:#18c96e;">Delivered</span></td>
   <tr>
     <td>View a sample of contacts on a list</td>
-    <td>September 2019</td>
+    <td>Q4 2019</td>
   </tr>
   <tr>
     <td>Designate an IP pool for a Single Send</td>
