@@ -21,7 +21,7 @@ Dedicated IP addresses are available with Pro and Premier Email API accounts as 
 
 ## Create an IP Pool
 
-**Before you get started -**
+**Before you get started**
 
 In order to create an IP pool, your dedicated IPs must have [reverse DNS]({{root_url}}/ui/account-and-settings/how-to-set-up-reverse-dns/) set up.
 
@@ -60,6 +60,12 @@ For information on creating and managing IP pools using the API, see our [docume
 1. Find the IP Pool you wish to delete and select the action menu.
 1. Click **Delete**. 
 1. A modal appears asking if you are sure you want to delete the selected IP Pool. Confirm, and then click **Delete**. 
+
+<call-out>
+
+If you would like to create and manage IP Pools using the API, see our [API Reference](https://sendgrid.api-docs.io/v3.0/ip-pools/create-an-ip-pool).
+
+</call-out>
 
 ## Additional Resources
 
