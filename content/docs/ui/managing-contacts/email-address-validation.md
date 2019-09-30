@@ -14,11 +14,13 @@ seo:
 ---
 <call-out type="warning">
 
-Email Validation API is currently in beta. Customers with Pro or Premier Email API plans will have access to this feature free during Beta, once generally available [this pricing](https://sendgrid-email-validation.api-docs.io/v3/getting-started/authentication) will apply. Functionality and performance is subject to change while in beta.
+Email Validation API is currently in beta. Customers with Pro or Premier Email API plans will have access to this feature free during Beta, once generally available [this pricing](https://sendgrid.com/solutions/email-validation-api/#email-val-link) will apply. Functionality and performance is subject to change while in beta.
 
 </call-out>
 
-Email Address Validation provides real-time detailed information on the validity of email addresses. You can integrate this validation process into your platform's signup form and customize the best use of email address validation for your use case. You can identify a validation threshold from which you feel comfortable sending a follow up email, display to your form visitors that their email addresses are likely invalid within your form, and ultimately decide if you want to drop invalid email addresses from your database.
+Email Address Validation provides real-time detailed information on the validity of email addresses. You can integrate this validation process into your platform's signup form and customize the best use of email address validation for your use case: - Identify a validation threshold from which you feel comfortable sending a follow up email
+- Display to your form visitors that their email addresses are likely invalid within your form
+- Decide if you want to drop invalid email addresses from your database.
 
 Validating email addresses allows you to to suppress invalid email addresses from your sending, decreasing your bounce rate, cleaning your subscriber list, ultimately improving your sender reputation.
 
@@ -42,7 +44,7 @@ You are required to create a brand new API key that will only be used for Email 
 
 <call-out>
 
-“Email Address Validation Access” will be visibible to Email API Pro and Premier plans only.
+“Email Address Validation Access” will be visible to Email API Pro and Premier plans only.
 
 </call-out>
 
@@ -91,7 +93,7 @@ The Email Validation API allows flexibility for integrating in multiple ways, bu
 
 Once you identify the signup form you want to integrate with the Email Validaiton API, next you need to decide if you want to use validation results to surface possible typos to form visitors while they're still in the form or capture the results after the form submission to inform sending decisions. 
 
-The first option is to provide user feedback by returning to the sign up form and showing an error screen, letting the user know that they need to check the email address. For instance, you might realize the user made a typo as described in the previous section and decide to show an error like, “Did you mean john.doe@gmail.com?”
+The first option is to provide user feedback by returning to the sign up form and showing an inline error, letting the user know that they need to check the email address. For instance, you might realize the user made a typo as described in the previous section and decide to show an error like, “Did you mean john.doe@gmail.com?”
 
 <call-out type="warning">
 
