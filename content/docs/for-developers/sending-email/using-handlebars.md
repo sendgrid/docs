@@ -206,7 +206,7 @@ HTML should contain:
 {{else if user.profile.female}}
   <p>Dear Madame</p>
 {{else}}
-  <p> Dear Customer</p>
+  <p>Dear Customer</p>
 {{/if}}
 ```
 

@@ -46,7 +46,7 @@ You may create up to 100 unique senders.
 </call-out>
 
 <call-out>
-  
+
 If you have an [authenticated domain]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/) and your sender email address matches that domain exactly, your sender identity will be automatically verified.
 
 </call-out>
