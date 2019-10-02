@@ -41,34 +41,51 @@ Telnet does not register backspaces correctly - so you have to type your command
 
 </call-out>
 
-*To send SMTP email using Telnet:*
+### To send SMTP email using Telnet:
+
+<call-out>
+
+If you receive this error: `'telnet' is not recognized as an internal or external command, operable program or batch file`, you need to install Telnet on your machine. Telnet comes natively on most operating systems.
+
+</call-out>
 
 1. Start your session by typing in the terminal: `TELNET smtp.sendgrid.net 25`.
-    <br>SendGrid accepts unencrypted and TLS connections on ports **25**, **587**, & **2525**. You can also connect via SSL on port **465**. Many hosting providers and ISPs block port 25 as a default practice. If this is the case, contact your host/ISP to find out which ports are open for outgoing SMTP relay. We recommend port 587 to avoid any rate limiting that your server host may apply.
+    <br>SendGrid accepts unencrypted and TLS connections on ports **25**, **587**, & **2525**. You can also connect via SSL on port **465**.
+    <br>Many hosting providers and ISPs block port 25 as a default practice. If this is the case, contact your host/ISP to find out which ports are open for outgoing SMTP relay. We recommend port 587 to avoid any rate limiting that your server host may apply.
 1. Once you successfully connect to the SendGrid, log in to the server by typing `AUTH LOGIN`.
-    <br>The mail server responds with `334 VXNlcm5hbWU6`, a Base64 encoded request for your username. If you receive this error: `'telnet' is not recognized as an internal or external command, operable program or batch file`, you need to install Telnet on your machine. Telnet comes natively on most operating systems.
+    <br>The mail server responds with `334 VXNlcm5hbWU6`, a Base64 encoded request for your username.
 1. Input the API username encoded in Base64. Everyone's username is `apikey`, which is `YXBpa2V5` in Base64.
     <br>The mail server responds with `334 UGFzc3dvcmQ6`. This response is a Base64 encoded request for your password (your API Key).
 1. Enter your Base64 converted API key in the next line as the password.
     <br>The mail server responds with `235 Authentication successful`. Getting this far indicates that your connection to smtp.sendgrid.net over the chosen port is open and that your API key is valid.
-1. Next, add the email that you’re sending from: `mail from:<<SENDER_EMAIL>`.
+1. Next, add the email that you’re sending from: `mail from:<<SENDER_EMAIL>>`.
     <br>The mail server responds with `250 Sender address accepted`.
 1. Add the email that you’re sending to: `rcpt to:<<RECIEPIENT_ADDRESS>>`.
     <br>The mail server responds with `250 Recipient address accepted`.
 1. On the next line, type `DATA` - this indicates that you’re typing the email content.
-1. Optionally, add a mail-to header to add the name and email address of the recipient to the email header: `To: <<NAME>> <<EMAIL>>`.
-1. Next, add a from header to add the name and email address of the sender to the email header - if not included, SendGrid blocks your email because it doesn’t follow RFC 5322 compliance guidelines: `From: NAME <<EMAIL>`.
-1. Include a subject line: `Subject: <<EMAIL_SUBJECT>>`
-1. Add the content of the message: `<<MESSAGE>>`. For example: `“This is a test for the SMTP relay."`
-1. Finally, send the email with a period and then press enter: `.[Enter]`
-    <br>The mail server returns `250 Ok: queued as …` - This means the email has been queued to send. This queue moves very quickly.
+1. Optionally, add a mail-to header to add the name and email address of the recipient to the email header:
+    <br>`To: <<NAME>> <<EMAIL>>`
+    <br>Press `[Enter]`
+1. Next, add a from header to add the name and email address of the sender to the email header - if not included, SendGrid blocks your email because it doesn’t follow RFC 5322 compliance guidelines:
+    <br>`From: <<NAME>> <<EMAIL>`
+    <br>Press `[Enter]`
+1. Include a subject line:
+    <br>`Subject: <<EMAIL_SUBJECT>>`
+    <br>Press `[Enter]`
+1. Add the content of the message:
+    <br>`"<<MESSAGE>>"`. For example: `“This is a test for the SMTP relay."`
+    <br>Press `[Enter]`
+1. Finally, send the email by typing a period, and then pressing enter:
+    <br>`.`
+    <br>Press `[Enter]`
+    <br>The mail server returns `250 Ok: queued as A1AywHK7T_itbGWaASw2YQ` - This means the email has been queued to send. This queue moves very quickly.
 1. Exit the Telnet connection with: `quit`.
 
 Now that you've sent a test email, learn to [integrate your servers with our SMTP service]({{root_url}}/for-developers/sending-email/integrating-with-the-smtp-api/).
 
 <call-out>
 
-Message size limit:  The total message size should not exceed 20MB. This includes the message itself, headers, and the combined size of any attachments.
+Message size limit: The total message size should not exceed 20MB. This includes the message itself, headers, and the combined size of any attachments.
 
 </call-out>
 
