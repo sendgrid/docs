@@ -44,6 +44,7 @@ curl -X POST -H "Authorization: Basic XXXXXXXXXXXXXX" -H "Content-Type: applicat
   ]
 }' 'https://api.sendgrid.com/v3/subusers'
 ```
+
 The successful Response looks like this:
 
 ```bash
@@ -284,6 +285,7 @@ Response:
 }
 }
 ```
+
 After creating DNS records then wait for them to propagate and validate records.
 
 
@@ -353,7 +355,7 @@ Response:
 
 ```bash
 => 2xx
-{ "id”: 50784, "valid": true, "validation_resuts": { "mail_cname": { "valid": false, "reason": "Expected your MX record to be "mx.sendgrid.net" but found "example.com"." },"dkim1": { "valid": true, "reason": null }, "dkim2": { "valid": true, "reason": null }, "spf": { "valid": true, "reason": null } } }
+{ "id”: 50784, "valid": true, "validation_results": { "mail_cname": { "valid": false, "reason": "Expected your MX record to be "mx.sendgrid.net" but found "example.com"." },"dkim1": { "valid": true, "reason": null }, "dkim2": { "valid": true, "reason": null }, "spf": { "valid": true, "reason": null } } }
 ```
 
 
