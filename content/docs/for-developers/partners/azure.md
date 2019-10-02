@@ -197,6 +197,7 @@ In your `index.html` file add the following code near the closing body tag to ad
 ``` html
 <script src="https://website.azure-mobile.net/client/MobileServices.Web-1.0.0.min.js"></script>
 ```
+
 ![Mobile Services]({{root_url}}/images/azure_13.png)
 
 In the `js/app.js` file, after the `$("#queue").append…` line, add the following code:
@@ -250,6 +251,7 @@ items = [results mutableCopy];
 completion();
 }];
 ```
+
 ![Code]({{root_url}}/images/azure_18.png)
 4.	Now, go to the file QSToDoListViewController.m, and replace the onAdd function’s contents with:
 
@@ -294,6 +296,7 @@ UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Error"
 }
 itemText.text = @"";
 ```
+
 5.	In the same file, replace this line:
 ```label.text = [item objectForKey:@"text"];```
 with this line:
