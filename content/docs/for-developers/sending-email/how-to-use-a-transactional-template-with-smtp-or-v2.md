@@ -28,7 +28,7 @@ The X-SMTPAPI does not support Dynamic Transactional Templates. For sending Dyna
   
 </call-out>
 
-## 	Before you begin
+## Before you begin
 
 Before you create and send a legacy transactional template email over SMTP you need to do the following:
 
@@ -37,7 +37,7 @@ Before you create and send a legacy transactional template email over SMTP you n
 * [Build an SMTP Email]({{root_url}}/for-developers/sending-email/building-an-x-smtpapi-header/)
 * [Create a Legacy Transactional Template](https://sendgrid.com/templates)
 
-## 	Sending a test Email
+## Sending a test Email
 
 ### Sending a test SMTP email with Telnet
 
@@ -80,17 +80,17 @@ Make sure that the version of the template you want to use is set to active by u
 
 - The [Activate a transactional template version endpoint](https://sendgrid.com/docs/api-reference/)
   ```/templates/{template_id}/versions/{version_id}/activate```
-  
+
 - Or by [activating the template version in the UI](https://sendgrid.com/templates)
 
 </call-out>
 
 To use a legacy template when you send, configure the `X-SMTPAPI` header of an SMTP message:
+
 * Enable the `templates` filter
 * Set the `template_id` to one of your legacy transactional templates
 
-
-**Example**
+#### Example
 ```json
 {
   "filters": {
@@ -113,13 +113,10 @@ The ```text``` property is substituted into the `<%body%>` of the text template 
 **Text or HTML Templates?**
 
 <call-out>
-
 It is best practice to provide content for both the ```html``` and the ```text``` properties in all of your emails.
 
 If the ```text``` property is present, but not ```html```, then the resulting email will only contain the text version of the template, not the HTML version.
-
 </call-out>
-
 
 Enabling a legacy template means that the `subject` and `body`
 content of your message will behave differently.

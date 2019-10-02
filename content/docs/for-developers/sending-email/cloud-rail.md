@@ -27,7 +27,7 @@ dependencies {
 ```
 
 ## 	Send a simple email
- 	
+
 After setup, sending an email with SendGrid is a breeze.
 Just add code like the one below:
 
@@ -51,7 +51,7 @@ new Thread() {
 ```
 
 ## 	Send a personalized email
- 	
+
 Since you've already integrated CloudRail SI, why not make use of some of the other APIs that come with it?
 Let's use Facebook to get a user's info to personalize the email:
 

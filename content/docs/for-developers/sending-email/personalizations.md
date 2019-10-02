@@ -65,7 +65,7 @@ Personalization Examples Index
 * [Sending Two Different Emails to Two Different Groups of Recipients](#sending-two-different-emails-to-two-different-groups-of-recipients)
 
 ## Sending a Single Email to a Single Recipient
- 	
+
 The following example shows you what the personalization parameter would look like if you wanted to send a single email to a single recipient.
 
 ```json
@@ -106,7 +106,7 @@ The following example shows how to send one email to recipient1&#064;example&per
 ```
 
 ## 	Sending a Single Email to a Single Recipient With a CC and a BCC
- 	
+
 The following example shows how to send one email to recipient1&#064;example&period;com with a CC sent to recipient2&#064;example&period;com and a BCC sent to recipient3&#064;example&period;com.
 
 ```json

@@ -8,6 +8,7 @@ navigation:
 ---
 
 ## Sending MIME Mail
+
 Some mailers, such as Apple Mail, place Multipurpose Internet Mail Extensions (MIME) into emails automatically which can cause our system to parse the boundaries incorrectly. If you do notice a problem with the content from your email not rendering correctly, please do the following:
 
 1. Log into your SendGrid account, click **Settings**, then select **Mail Settings**. 
@@ -54,8 +55,4 @@ puts response.status_code
 puts response.body
 
 puts response.headers
-
 ```
-
-
-
