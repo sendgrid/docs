@@ -18,8 +18,6 @@ Email Address Validation provides real-time detailed information on the validity
 
 Validating email addresses allows you to to suppress invalid email addresses from your sending, decreasing your bounce rate, cleaning your subscriber list, ultimately improving your sender reputation.
 
-Email Validation Beta is free for Pro and Premier plans while in Beta. Once Email Validation moves out of Beta, it will incur a usage charge. 
-
 ## Generating your Email Validation API Key
 
 Before you can call the Email Address Validation Real Time API endpoint, you’ll need an API key with Email Address Validation permissions.
@@ -45,11 +43,11 @@ You are required to create a brand new API key that will only be used for Email 
 4. Click **Create & View**.
 5. Copy your new API key somewhere safe. **This will be the only time you will be able to see it in its entirety due to security reasons.**
 
-You’re now ready to start using the Real Time API endpoint!  
+You’re now ready to start using the [Real Time API endpoint!](https://sendgrid.api-docs.io/v3.0/email-address-validation/validate-an-email)  
 
 ## Recommendations Before Integrating
 
-The Email Address Validation Real Time API Endpoint takes a single email address in a POST request, and returns a verdict with detailed data in a JSON response. Complete documentation of the endpoint, including details of the response, are available [here](https://sendgrid-email-validation.api-docs.io/v3/getting-started/authentication).
+The Email Address Validation Real Time API Endpoint takes a single email address in a POST request, and returns a verdict with detailed data in a JSON response. Complete documentation of the endpoint, including details of the response, are available [here](https://sendgrid.api-docs.io/v3.0/email-address-validation/validate-an-email).
 
 When integrating with the Email Validation API endpoint, please keep the following things in mind:
 
