@@ -23,6 +23,7 @@ When passing `section` please make sure to only use strings as shown in our exam
 </call-out>
 
 The format of the SMTP API section tag has the form:
+
 ```json
 {
   "section": {
@@ -46,11 +47,11 @@ Do not use spaces inside your section or substitution tags! For example: `%first
 
 <call-out type="warning">
 
-Do not nest section tags in sections - this causes your section to not be replaced.
+Do not nest section tags in sections * this causes your section to not be replaced.
 
 </call-out>
 
-## 	Section Tag Walkthrough
+## Section Tag Walkthrough
 
 Message body sent to SendGrid:
 
@@ -112,6 +113,7 @@ The accompanying X-SMTPAPI JSON header would look like:
 ```
 
 Alice receives:
+
 ```html
 <html>
  <body>
@@ -128,6 +130,7 @@ Alice receives:
 ```
 
 Bob receives:
+
 ```html
 <html>
  <body>
@@ -144,6 +147,7 @@ Bob receives:
 ```
 
 Casey receives:
+
 ```html
 <html>
  <body>
@@ -159,10 +163,10 @@ Casey receives:
 </html>
 ```
 
-## 	Additional Resources
+## Additional Resources
 
-- [Substitution Tags]({{root_url}}/for-developers/sending-email/substitution-tags/)
-- [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
-- [Getting Started with the SMTP API]({{root_url}}/for-developers/sending-email/getting-started-smtp/)
-- [Integrating with SMTP]({{root_url}}/for-developers/sending-email/integrating-with-the-smtp-api/)
-- [Building an SMTP Email]({{root_url}}/for-developers/sending-email/building-an-smtp-email/)
+* [Substitution Tags]({{root_url}}/for-developers/sending-email/substitution-tags/)
+* [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
+* [Getting Started with the SMTP API]({{root_url}}/for-developers/sending-email/getting-started-smtp/)
+* [Integrating with SMTP]({{root_url}}/for-developers/sending-email/integrating-with-the-smtp-api/)
+* [Building an SMTP Email]({{root_url}}/for-developers/sending-email/building-an-smtp-email/)

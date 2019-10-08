@@ -36,8 +36,6 @@ dc_mailname_in_oh='true'
 
 Enable TLS support in **/etc/exim4/exim4.conf.localmacros**.
 
-
-
 <call-out>
 
 If this file does not exist, you will need to create it:
@@ -74,7 +72,6 @@ sendgrid_login:
   client_send = : YourSendGridUsername : YourSendGridPassword
 ```
 
-
 <call-out>
 
 Only include "begin authenticators" if it's not already in the configuration.
@@ -110,4 +107,5 @@ $ /etc/init.d/exim4 restart
 ```
 
 ## 	Exim Documentation
- 	If your version of Exim does not match the version above or you are not finding the answer you need, please check out the Official [Exim Documentation](http://www.exim.org/docs.html) for more information.
+
+If your version of Exim does not match the version above or you are not finding the answer you need, please check out the Official [Exim Documentation](http://www.exim.org/docs.html) for more information.

@@ -34,7 +34,7 @@ class UserNotifierMailer < ApplicationMailer
     :subject => 'Thanks for signing up for our amazing app' )
   end
 end
-``` 
+```
 
 Now we need a view that corresponds to our action and outputs HTML for our email. Create a file `app/views/user_notifier_mailer/send_signup_email.html.erb` as follows:
 
@@ -58,6 +58,7 @@ If you don't have a user model quite yet, generate one quickly.
 $ rails generate scaffold user name email login
 $ rake db:migrate
 ```
+
 Now in the controller for the user model `app/controllers/users_controller.rb`, add a call to `UserNotifierMailer.send_signup_email` when a user is saved.
 
 ``` ruby
@@ -98,7 +99,8 @@ ActionMailer::Base.smtp_settings = {
   :authentication => :plain,
   :enable_starttls_auto => true
 }
-``` 
+```
+
 That's it! When a new user object is saved, an email will be sent to
 the user via SendGrid.
 

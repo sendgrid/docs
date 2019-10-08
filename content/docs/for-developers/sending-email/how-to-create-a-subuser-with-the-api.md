@@ -34,6 +34,7 @@ https://api.sendgrid.com/apiv2/customer.add.json?api_user=ryan.burrer@sendgrid.c
 Now that you have created the new subuser account, you will need to [add an IP](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/ip_management.html#subuser-ip-assignment) so that it can send emails. We advise that you first find an available IP for this subuser. You can do so by using the following call:
 
 #### Call Example
+
 ```
 https://api.sendgrid.com/apiv2/customer.ip.xml?api_user=ryan.burrer@sendgrid.com&api_key=xxxxxx&list=all
 ```
@@ -51,6 +52,7 @@ When defining the parameter 'list', there are a few options you can choose:
 After you have selected the IP that you wish to assign to your subuser account, make the API call to [append the IP address](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/ip_management.html#subuser-ip-assignment).
 
 #### Call Example
+
 ```
 https://api.sendgrid.com/apiv2/customer.sendip.json?api_user=ryan.burrer@sendgrid.com&api_key=xxxxxx&task=append&set=specify&user=newsubuser_username&ip[]=255.255.255.250&ip[]=255.255.255.255
 ```
@@ -67,8 +69,6 @@ When defining this call's 'set' parameter, you have a few options for appending 
 <p class="wysiwyg-text-align-left"><img src="http://content.screencast.com/users/Ryan.Burrer/folders/Jing/media/d8482205-976f-4f82-ad3a-77503e867c2f/00000095.png" alt="" align="middle"></p>
 </center>
 
-
-
 ## Assign a domain authentication for the Subuser Account (optional)
 
 After you have created the subuser account and have appended an IP address, you are now ready to assign an _existing_  [authenticated domain]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/) to the account. If you have not yet created the required records for authenticating your chosen domain then this step should be skipped.
@@ -76,6 +76,7 @@ After you have created the subuser account and have appended an IP address, you 
 First, you should find out what authenticated domains you have associated with your account. This call will [list your available authenticated domains](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/whitelabel.html#list):
 
 #### Call Example
+
 ```
 https://api.sendgrid.com/apiv2/customer.whitelabel.json?api\_user=ryan.burrer@sendgrid.com&api\_key=xxxxxx&task=list
 ```
@@ -90,6 +91,7 @@ The API response above shows that email.sendgrid.com and email.example.com are b
 If you have an authenticated domain entry that you wish to apply to your subuser then you will need to [append the whitelabel entry](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/whitelabel.html#append) to your subuser:
 
 #### Call Example
+
 ```
 https://api.sendgrid.com/apiv2/customer.whitelabel.json?api_user=ryan.burrer@sendgrid.com&api_key=xxxxxx&task=append&user=newsubuser_username&mail_domain=YOUR.ALREADY.EXISTING.WHITELABEL
 ```
@@ -105,6 +107,7 @@ https://api.sendgrid.com/apiv2/customer.whitelabel.json?api_user=ryan.burrer@sen
 The final step in creating your new subuser requires you to [activate the subuser]({{root_url}}/API_Reference/Customer_Subuser_API/authenticate_a_subuser.html) account so that they have a website and SMTP access.
 
 #### Call Example
+
 ```
 https://api.sendgrid.com/apiv2/customer.auth.json?api_user=ryan.burrer@sendgrid.com&api_key=xxxxxx&user=newsubuser_username&password=newsubuser_password
 ```
@@ -117,11 +120,9 @@ https://api.sendgrid.com/apiv2/customer.auth.json?api_user=ryan.burrer@sendgrid.
 </center>
 <center>
 
-
 ## Additional Resources
 
 * [Automating Subusers]({{root_url}}/for-developers/sending-email/automating-subusers/)
 * [Event Notification URL]({{root_url}}/API_Reference/Customer_Subuser_API/event_notification_url.html)
 * [Apps]({{root_url}}/API_Reference/Customer_Subuser_API/apps.html)
 * [Account Limits]({{root_url}}/API_Reference/Customer_Subuser_API/account_limits.html)
-
