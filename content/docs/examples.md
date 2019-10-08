@@ -34,7 +34,7 @@ Montes sociis turpis egestas fermentum tempus lectus cubilia vulputate justo, pl
 
 Montes sociis turpis egestas fermentum tempus lectus cubilia vulputate justo, placerat suscipit mollis nostra mauris at sed adipiscing, enim pharetra laoreet ridiculus litora nunc.
 
-</callout>
+</call-out>
 ```
 
 <call-out>
@@ -50,8 +50,9 @@ Montes sociis turpis egestas fermentum tempus lectus cubilia vulputate justo, pl
 
 Montes sociis turpis egestas fermentum tempus lectus cubilia vulputate justo, placerat suscipit mollis nostra mauris at sed adipiscing, enim pharetra laoreet ridiculus litora nunc.
 
-</callout>
+</call-out>
 ```
+
 <call-out type="warning">
 
 Montes sociis turpis egestas fermentum tempus lectus cubilia vulputate justo, placerat suscipit mollis nostra mauris at sed adipiscing, enim pharetra laoreet ridiculus litora nunc.
