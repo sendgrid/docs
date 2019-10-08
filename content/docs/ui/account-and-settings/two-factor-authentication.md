@@ -37,12 +37,6 @@ When authenticating via SMS message, you must have cellular service, or you will
 
 </call-out>
 
-<call-out>
-
-You can create multiple configurations of Two-Factor Authentication, allowing you to use more than one mobile device to authenticate when logging into your account.
-
-</call-out>
-
 *To set up Two-Factor Authentication:*
 
 1. Navigate to **Settings**, and click **Two-Factor Authentication**.
