@@ -65,7 +65,7 @@ For more information on SPF best practices and syntax, check out [www.openspf.or
 we hope that they are helpful.
 
  ### 	Record Flattening
- 	There is an experimental tool called the [dmarcian SPF Record Flattener](https://dmarcian.com/spf-survey/bitcointalk.org), which should be considered experimental. From their site: "[this tool] rewrites this record by removing duplicate netblocks, collapsing any overlapping netblocks, and using 0 DNS-querying mechanisms/modifiers."
+ 	There is an experimental tool called the [dmarcian SPF Record Flattener](https://dmarcian.com/spf-survey/example.com/), which should be considered experimental. From their site: "[this tool] rewrites this record by removing duplicate netblocks, collapsing any overlapping netblocks, and using 0 DNS-querying mechanisms/modifiers."
 
 If you choose to use this functionality, we suggest that you test it extensively to make sure that your customers will receive your emails and their servers can look up your records properly.
 
