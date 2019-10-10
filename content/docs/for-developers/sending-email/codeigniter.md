@@ -14,7 +14,7 @@ CodeIgniter comes with an email sending library built in. See more information o
 
 <call-out>
 
-It is important to use the correct end of lines using "crlf" =\> "\\r\\n" and "newline" =\> "\\r\\n". 
+It is important to use the correct end of lines using "crlf" =\> "\\r\\n" and "newline" =\> "\\r\\n".
 
 </call-out>
 

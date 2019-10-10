@@ -93,7 +93,7 @@ Each SMTP call you make returns a response. `200` responses are usually success 
   </tr>
 </table>
 
-## 	Turning off click tracking
+## Turning off click tracking
 
 To turn off click tracking, add this to your X-SMTPAPI header:
 
@@ -110,11 +110,11 @@ To turn off click tracking, add this to your X-SMTPAPI header:
 }
 ```
 
-## 	Invalid SMTP API header
+## Invalid SMTP API header
 
 When you try to send an invalid X-SMTPAPI header, you will get an email with details about the invalidations. You may also see errors on your Email Activity page or in your Event Webhook data. If this happens, the email should give you the information you need to begin troubleshooting. We also recommend uploading your JSON into a JSON validator, because this is often an invalid JSON issue.
 
-## 	Certificate verification failed for smtp.sendgrid.net
+## Certificate verification failed for smtp.sendgrid.net
 
  `"certificate verification failed for [smtp.sendgrid.net](http://smtp.sendgrid.net/)[198.37.144.225]:587: untrusted issuer /C=US/O=The Go Daddy Group, Inc./OU=Go Daddy Class 2 Certification Authority"`
 
@@ -129,17 +129,17 @@ When you try to send an invalid X-SMTPAPI header, you will get an email with det
 
  If the mail server communicates with more than just us, add this certificate to your existing CA bundle (frequently called `ca-bundle.crt`).
 
- ## 550 Unauthenticated Senders Not Allowed
+## 550 Unauthenticated Senders Not Allowed
 
- If you’re getting an “Unauthenticated Senders Not Allowed” error, the problem usually lies in authenticating with our SMTP server. This error gets triggered when there was an attempt to hand over an email message through smtp.sendgrid.net before authenticating the connection with your SendGrid username and password.
+If you’re getting an “Unauthenticated Senders Not Allowed” error, the problem usually lies in authenticating with our SMTP server. This error gets triggered when there was an attempt to hand over an email message through smtp.sendgrid.net before authenticating the connection with your SendGrid username and password.
 
 To fix this issue, you’ll want to make sure that you’ve configured your setup to connect to smtp.sendgrid.net using authentication, and that the credentials you’re using are the same credentials you use to login to the SendGrid.
 
 If you’re using cPanel/Exim, you’ll want to make sure it’s configured to authenticate every time it connects to smtp.sendgrid.net.
 
-## 	Additional Resources
+## Additional Resources
 
-- [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
-- [Getting Started with the SMTP API]({{root_url}}/for-developers/sending-email/getting-started-smtp/)
-- [Integrating with SMTP]({{root_url}}/for-developers/sending-email/integrating-with-the-smtp-api/)
-- [Building an SMTP Email]({{root_url}}/for-developers/sending-email/building-an-smtp-email/)
+* [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
+* [Getting Started with the SMTP API]({{root_url}}/for-developers/sending-email/getting-started-smtp/)
+* [Integrating with SMTP]({{root_url}}/for-developers/sending-email/integrating-with-the-smtp-api/)
+* [Building an SMTP Email]({{root_url}}/for-developers/sending-email/building-an-smtp-email/)
