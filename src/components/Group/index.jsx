@@ -1,10 +1,12 @@
 import Link from 'gatsby-link';
 import React from 'react';
+import _ from 'lodash';
 
 function Group(props) {
+  const sort = _.sortBy(props.edges, [function (o) { return o.node.frontmatter.order; }]);
   return (
     <div className="group-links">
-      {props.edges.map((doc) => {
+      {sort.map((doc) => {
         const {
           permalink,
           title,

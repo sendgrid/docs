@@ -73,6 +73,7 @@ export const pageQuery = graphql`
               navigation {
                 show
               }
+              order
             }
             fields {
               docType
