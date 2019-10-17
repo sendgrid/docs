@@ -1,14 +1,16 @@
 import React from 'react';
-import NavMain from '../components/NavMain';
-import StatusPage from '../components/StatusPage';
-import Footer from '../components/Footer';
-import withUser from '../components/withUser';
-import '../scss/style-guide.scss';
+import NavMain from '../NavMain';
+import StatusPage from '../StatusPage';
+import Footer from '../Footer';
+import withUser from '../withUser';
+import SubNav from '../NavSub';
+import '../../scss/style-guide.scss';
 
 function MainLayout(props) {
   const {
     children,
     location,
+    subNav,
   } = props;
 
   const pathClass = location.pathname.replace(/\/docs\\|\//g, '');
@@ -18,9 +20,12 @@ function MainLayout(props) {
   return (
     <div className={classNames}>
       <StatusPage />
-      <NavMain />
+      <div className={subNav ? 'nav-wrap has-sub-nav' : 'nav-wrap'}>
+        <NavMain />
+        {subNav && <SubNav {...props} />}
+      </div>
       <div className="layout-content">
-        {children()}
+        {children}
       </div>
       {renderFooter}
     </div>

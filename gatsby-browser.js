@@ -6,6 +6,7 @@ exports.onClientEntry = () => {
     link.setAttribute('type', 'text/css');
     link.setAttribute('href', path);
     document.head.appendChild(link);
+    // require('./src/scss/style-guide.scss');
   }());
 };
 
