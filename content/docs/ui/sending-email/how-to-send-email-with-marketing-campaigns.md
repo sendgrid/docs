@@ -3,6 +3,7 @@ layout: page
 weight: 99
 title: How to Send Email with new Marketing Campaigns
 group: marketing-campaigns
+order: 1
 navigation:
   show: true
 seo:
@@ -34,7 +35,7 @@ Before you begin, go to your SendGrid [account settings](https://app.sendgrid.co
 
 ###  Change your time zone
 
-Your time zone is set at the account level, you’ll need to navigate to your account settings to change it. 
+Your time zone is set at the account level, you’ll need to navigate to your account settings to change it.
 
 
 1. Near the bottom of the left-hand navigation, select **Settings**.
@@ -68,7 +69,7 @@ By default, notifications about your account's Marketing Campaigns activity, CSV
 
 Marketing Campaigns offers a number of ways to add contacts to lists, including:
 
-- [**CSV Upload**]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#upload-a-csv/) 
+- [**CSV Upload**]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#upload-a-csv/)
 
 - [**Signup Forms**]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#create-a-signup-form/)
 
@@ -101,8 +102,8 @@ The Group Name as well as the Group Description are public-facing and will be vi
 ## Create a Single Send
 
 1. From the left-hand navigation, select **Marketing**.
-1. Select **Single Sends**. 
-1. To create a new one-to-many email, click **Create Single Send**. 
+1. Select **Single Sends**.
+1. To create a new one-to-many email, click **Create Single Send**.
 1. Select the template that you want to use for your email.
 <br> You can select a blank template, a custom template that you have already created, or one of SendGrid's responsive pre-built templates. For more information, see [Marketing Templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/).
 
@@ -134,15 +135,15 @@ Inside the Code Editor, you can click the left **Settings** tab to expand the se
 
 <call-out>
 
-If you have dedicated IPs, you can set up [IP Pools]({{root_url}}/ui/account-and-settings/ip-pools/) that allow you separate your traffic and potentially enhance your deliverability by protecting your sender reputation. To utilize IP pools for Single Sends, navigate to **Settings** and from the IP Pool drop-down, select the IP pool you wish to use. 
+If you have dedicated IPs, you can set up [IP Pools]({{root_url}}/ui/account-and-settings/ip-pools/) that allow you separate your traffic and potentially enhance your deliverability by protecting your sender reputation. To utilize IP pools for Single Sends, navigate to **Settings** and from the IP Pool drop-down, select the IP pool you wish to use.
 
 </call-out>
 
-7. Add your custom content by clicking the **Build** tab in the Design Editor, or by editing the HTML code in the Code Editor. 
+7. Add your custom content by clicking the **Build** tab in the Design Editor, or by editing the HTML code in the Code Editor.
 
 ![]({{root_url}}/img/build-tab.png "Build tab")
 
-<call-out> 
+<call-out>
 
 Make sure to include the [{{{unsubscribe}}}]({{root_url}}/ui/sending-email/create-and-manage-unsubscribe-groups/) tag to test and send your campaign.
 
@@ -154,8 +155,8 @@ For more information about customizing your campaign, see [Using the Design Edit
 
 1. Once you’ve finished editing your email, you can see what it looks like by saving your draft, hovering over the action menu, and then clicking **Preview**.
 2. If you haven't already, return to **Settings** to select which contacts will receive your email by clicking the **Send To** field under **Recipients**.
-3. You can test your email settings in your Single Send and see it before sending it to a large audience by entering up to ten email addresses and clicking **Send Test**. Additionally, we offer [Email Testing]({{root_url}}/ui/sending-email/email-testing/) as an add-on for both Automation and Single Sends so you can see what your email looks like across different operating systems, browsers, and inboxes. 
-4. Once your email is ready to go, click **Send**. 
+3. You can test your email settings in your Single Send and see it before sending it to a large audience by entering up to ten email addresses and clicking **Send Test**. Additionally, we offer [Email Testing]({{root_url}}/ui/sending-email/email-testing/) as an add-on for both Automation and Single Sends so you can see what your email looks like across different operating systems, browsers, and inboxes.
+4. Once your email is ready to go, click **Send**.
 
  ##	Additional Resources
 
