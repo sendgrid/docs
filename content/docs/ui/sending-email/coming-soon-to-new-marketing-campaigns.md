@@ -5,15 +5,15 @@ group: marketing-campaigns
 layout: page
 navigation:
   show: false
-Seo:
+seo:
   title: Coming soon to Marketing Campaigns
   description: Coming soon to Marketing Campaigns
   keywords: sendgrid account, sendgrid plan, email account, emails per month
 ---
 
-**Pardon our dust!** 
+**Pardon our dust!**
 
-There are some important features that are coming soon to our brand new version of Marketing Campaigns, we appreciate your patience as we deliver them for you. 
+There are some important features that are coming soon to our brand new version of Marketing Campaigns, we appreciate your patience as we deliver them for you.
 
  <table>
   <tr>
