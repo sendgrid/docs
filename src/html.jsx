@@ -3,29 +3,8 @@
 /* eslint global-require:"off" */
 import React from 'react';
 
-
-let inlinedStyles = '';
-if (process.env.NODE_ENV === 'production') {
-  try {
-    /* eslint import/no-webpack-loader-syntax: off */
-    inlinedStyles = require('!raw-loader!../public/styles.css');
-  } catch (e) {
-    /* eslint no-console: "off" */
-    console.log(e);
-  }
-}
-
 export default class HTML extends React.Component {
   render() {
-    let css;
-    if (process.env.NODE_ENV === 'production') {
-      css = (
-        <style
-          id="gatsby-inlined-css"
-          dangerouslySetInnerHTML={{ __html: inlinedStyles }}
-        />
-      );
-    }
     return (
       <html lang="en">
         <head>
@@ -69,10 +48,9 @@ export default class HTML extends React.Component {
           <meta name="msapplication-TileImage" content="https://sendgrid.com/brand/favicons/ms-icon-144x144.png" />
           <meta name="theme-color" content="#ffffff" />
 
-
-          {css}
         </head>
         <body>
+          {this.props.preBodyComponents}
           <div
             id="___gatsby"
             dangerouslySetInnerHTML={{ __html: this.props.body }}

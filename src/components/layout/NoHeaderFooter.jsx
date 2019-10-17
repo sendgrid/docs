@@ -11,7 +11,7 @@ export default class NoHeaderFooter extends React.Component {
 
     return (
       <div className={classNames}>
-        {children()}
+        {children}
       </div>
     );
   }

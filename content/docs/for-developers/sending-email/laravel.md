@@ -38,7 +38,6 @@ The `MAIL_FROM_NAME` field requires double quotes because there is a space in th
 You can send `100 messages per SMTP connection` at a time, and open up to `10 concurrent connections` from a single server at a time.
 </call-out>
 
-
 ## Creating a Mailable
 
 Next you need to create a Mailable class, Laravel's CLI tool called Artisan makes that a simple feat.
@@ -99,6 +98,7 @@ In Laravel `Views` are used as 'templates' when sending an email. Let's create a
     	</body>
     </html>
 ```
+
 ## Sending an email
 
 Now that we have our Mailable Class created, all we need to do is run this code:
@@ -155,12 +155,12 @@ class TestEmail extends Mailable
         ];
 
         $header = $this->asString($headerData);
-        
+
         $this->withSwiftMessage(function ($message) use ($header) {
             $message->getHeaders()
                     ->addTextHeader('X-SMTPAPI', $header);
         });
-        
+
         return $this->view('emails.test')
                     ->from($address, $name)
                     ->cc($address, $name)
@@ -182,7 +182,7 @@ class TestEmail extends Mailable
     private function asString($data)
     {
         $json = $this->asJSON($data);
-        
+
         return wordwrap($json, 76, "\n   ");
     }
 }

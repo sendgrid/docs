@@ -1,6 +1,5 @@
 import React from 'react';
-import Helmet from 'react-helmet';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 import SEO from '../components/SEO';
 import Search from '../components/Search';
 import { GLOSSARY_TERMS_HOME } from '../constants/glossaryTerms';
@@ -9,6 +8,7 @@ import FooterCallout from '../components/FooterCallout';
 import config from '../../data/SiteConfig';
 import HOME_CARDS from '../constants/homeCards';
 import CALLOUTS from '../constants/homeCallouts';
+import Layout from '../components/layout';
 import './index.scss';
 
 class Index extends React.Component {
@@ -17,7 +17,7 @@ class Index extends React.Component {
       <div className="card card--home col-md-6 ta-center" key={card.TITLE}>
         <div className="card__inner">
           <img className="card-icon" src={card.ICON} alt={card.TITLE} />
-          <h3 className="card__title" >{card.TITLE}</h3>
+          <h3 className="card__title">{card.TITLE}</h3>
           {card.LINKS.map(link => <Link key={link.TEXTNODE} to={link.URL} className="card__link">{link.TEXTNODE}</Link>)}
         </div>
         <div className="card__button">
@@ -47,37 +47,40 @@ class Index extends React.Component {
   }
 
   render() {
+    const { location } = this.props;
     return (
-      <div className="docs-home">
-        <SEO postNode={this.props} title={config.siteTitle} description="SendGrid documentation home" />
-        <div className="search-hero ta-center color-white">
-          <div className="container">
-            <div className="search-hero__bg">
-              <h1 className="page-title">Knowledge Center</h1>
-              <Search />
-            </div>
-          </div>
-        </div>
-        <div className="home-callouts">
-          <div className="container">
-            <div className="row row--home-callouts">
-              {Index.renderCallouts()}
-            </div>
-          </div>
-        </div>
-        <div className="main">
-          <div className="home-featured">
+      <Layout location={location} subNav={false}>
+        <div className="docs-home">
+          <SEO postNode={this.props} title={config.siteTitle} description="SendGrid documentation home" />
+          <div className="search-hero ta-center color-white">
             <div className="container">
-              <h2>Featured Resources</h2>
-              <div className="row row--home-cards">
-                {Index.renderCards()}
+              <div className="search-hero__bg">
+                <h1 className="page-title">Knowledge Center</h1>
+                <Search />
               </div>
             </div>
           </div>
-          <GlossaryPartial data={GLOSSARY_TERMS_HOME} />
+          <div className="home-callouts">
+            <div className="container">
+              <div className="row row--home-callouts">
+                {Index.renderCallouts()}
+              </div>
+            </div>
+          </div>
+          <div className="main">
+            <div className="home-featured">
+              <div className="container">
+                <h2>Featured Resources</h2>
+                <div className="row row--home-cards">
+                  {Index.renderCards()}
+                </div>
+              </div>
+            </div>
+            <GlossaryPartial data={GLOSSARY_TERMS_HOME} />
+          </div>
+          <FooterCallout />
         </div>
-        <FooterCallout />
-      </div>
+      </Layout>
     );
   }
 }

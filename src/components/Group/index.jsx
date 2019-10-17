@@ -1,4 +1,4 @@
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 import React from 'react';
 import _ from 'lodash';
 
@@ -14,11 +14,18 @@ function Group(props) {
 
         const docIsVisible = !!doc.node.frontmatter.navigation.show;
 
-        return docIsVisible ? <Link key={permalink} to={permalink} dangerouslySetInnerHTML={{ __html: title }} /> : null;
+        return docIsVisible
+          ? (
+            <Link
+              key={permalink}
+              to={permalink}
+              dangerouslySetInnerHTML={{ __html: title }}
+            />
+          )
+          : null;
       })}
     </div>
   );
 }
 
 export default Group;
-

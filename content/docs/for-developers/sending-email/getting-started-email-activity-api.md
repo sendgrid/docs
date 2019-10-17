@@ -18,11 +18,11 @@ In order to gain access to the Email Activity Feed API, you must purchase [addit
 
 The API gives you access to query all of your stored messages, to query individual messages, and to download a CSV with data about the stored messages.
 
-## 	Getting started
+## Getting started
 
 Start with this basic query to the Email Activity Feed API (replace `<<your API key>>` with an API key from your account):
 
-```
+```bash
 curl --request GET \
  --url 'https://api.sendgrid.com/v3/messages?limit=10' \
  --header 'authorization: Bearer <<your API key>>'
@@ -30,7 +30,7 @@ curl --request GET \
 
 This returns a list of the 10 most recent emails you've sent. Next, check out some of the common use cases to narrow down your search.
 
- ### 	Encoding queries
+### Encoding queries
 
 All queries need to be [URL encoded](https://meyerweb.com/eric/tools/dencoder/) and have this format:
 
@@ -40,15 +40,15 @@ Encoded, this query would look like this:
 
 `query=query_type%3D%22query_content%22`
 
-## 	Queries for common use cases
+## Queries for common use cases
 
 Here are some queries for common use cases. For a full list of possible query types, see the [query reference](#query-reference).
 
- ### 	Filter by subject
+### Filter by subject
 
 Use this query to filter by email subject (replace `<<your API key>>` with an API key from your account, and replace <<subject>> with the subject you want to search):
 
-```
+```bash
 curl --request GET \
  --url 'https://api.sendgrid.com/v3/messages?limit=10&query=subject%3D<<subject>>' \
  --header 'authorization: Bearer <<your API key>>'
@@ -62,11 +62,11 @@ Encoded, this query would look like this:
 
 `subject%3D%22This%20is%20a%20subject%20test%22`
 
- ### 	Filter by recipient email
+### Filter by recipient email
 
 Use this query to filter by a recipient's email: (replace `<<your API key>>` with an API key from your account, and replace <<email>> with the URL encoded recipients email):
 
-```
+```bash
 curl --request GET \
  --url 'https://api.sendgrid.com/v3/messages?limit=10&query=to_email%3D%22<<email>>%22' \
  --header 'authorization: Bearer <<your API key>>'
@@ -80,7 +80,7 @@ Encoded, this query would look like this:
 
 `to_email%3D%22example%40example.com%22`
 
- ### 	Filter by bounced emails
+### Filter by bounced emails
 
 Use this query to filter by all bounced emails: (replace `<<your API key>>` with an API key from your account):
 
@@ -98,11 +98,11 @@ Encoded, this query would look like this:
 
 `status%3D%22bounced%22`
 
-## 	Creating compound queries
+## Creating compound queries
 
 Use [operators and keywords](#keywords-and-operator-reference) to combine queries for a compound query. For example, you could filter for emails between a date range or you could filter for when a specific recipients email is bounced. Here are some common use cases:
 
- ### 	Filter by a recipient email that was bounced
+### Filter by a recipient email that was bounced
 
 Use this query to filter by a recipient's email and by emails that are bounced: (replace `<<your API key>>` with an API key from your account, and replace <<email>> with the URL encoded recipients email):
 
@@ -112,7 +112,7 @@ curl --request GET \
  --header 'authorization: Bearer <<your API key>>'
 ```
 
- ### 	Filter by date range
+### Filter by date range
 
 Use this query to filter to emails between specific dates: (replace `<<your API key>>` with an API key from your account, and replace {start_date} and {end_date} with a URL encoded UTC date string in this format: `YYYY-MM-DD HH:mm:SS`. Encoded, this looks like this: `2018-02-01T00%3A00%3A00.000Z`)
 
@@ -122,7 +122,7 @@ curl --request GET \
  --header 'authorization: Bearer <<your API key>>'
 ```
 
- ### 	Filter by a recipient and a date range
+### Filter by a recipient and a date range
 
 Use this query to filter to emails by recipient and between specific dates: (replace `<<your API key>>` with an API key from your account, replace <<start_date>> and <<end_date>> with a URL encoded UTC date string in this format: `YYYY-MM-DD HH:mm:SS`, and replace <<email>> with the URL encoded recipient's email)
 
@@ -132,7 +132,7 @@ curl --request GET \
  --header 'authorization: Bearer <<your API key>>'
 ```
 
-## 	Keywords and Operator reference
+## Keywords and Operator reference
 
 There are several operators and keywords that you can use to build [Compound queries](#creating-compound-queries). Use these operators between query statements. If the character used as the delimiter is found within the string. The escape character is `\`, which must be escaped with a preceding `\`. All queries need to be URL encoded.
 
@@ -173,8 +173,7 @@ There are several operators and keywords that you can use to build [Compound que
 - TRUE
 - YEAR
 
-
-## 	Query reference
+## Query reference
 
 This is a full list of basic query types and examples: (replace the data in quotes with the information you want to query, and then URL encode it)
 
@@ -260,7 +259,7 @@ This is a full list of basic query types and examples: (replace the data in quot
  </tr>
 </table>
 
-## 	Additional Resources
+## Additional Resources
 
 - [Email Activity Feed API Reference](https://sendgrid.api-docs.io/v3.0/email-activity/filter-all-messages)
 - [Email Activity Feed UI]({{root_url}}/ui/analytics-and-reporting/email-activity-feed/)

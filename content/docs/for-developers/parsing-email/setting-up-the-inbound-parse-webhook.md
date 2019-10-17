@@ -290,6 +290,10 @@ Content analysis details:   (2.6 points, 5.0 required)
          <td>Email sender, as taken from the message headers.</td>
       </tr>
       <tr>
+         <th>Text</th>
+         <td>Email body in plaintext formatting.</td>
+      </tr>
+      <tr>
          <th>Sender IP</th>
          <td>Email sender IP address.</td>
       </tr>

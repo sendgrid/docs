@@ -11,6 +11,8 @@ seo:
   description: Manage your sender contact information
 ---
 
+<iframe src="https://player.vimeo.com/video/366851411" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
 ##     Adding a Sender
 
 You are required to include your contact information, including a physical mailing address, inside every promotional email you send in order to comply with the U.S. CAN-SPAM Act, CASL, and other anti-spam laws of the countries your recipients live in.

@@ -13,7 +13,7 @@ This document was written using Windows Server 2008 R2 running IIS version 7.5 a
 
 </call-out>
 
-## 	IIS 7.5 Configuration
+## IIS 7.5 Configuration
 
 Before you get going, you'll need to set up IIS in order to support SendGrid integration. This tutorial assumes that you have set up a working site and that the root directory tests as valid.
 
@@ -39,7 +39,7 @@ If you want to configure additional security to the localhost IIS 6.0 server you
 
 </call-out>
 
-## 	Enable SMTP Service:
+## Enable SMTP Service
 
 1. Go to Start \> All Programs \> Administrative Tools \> Server Manager
 2. Click **Features** in the navigation pane.
@@ -51,7 +51,7 @@ If you want to configure additional security to the localhost IIS 6.0 server you
 
 Once the SMTP Server service is installed, the IIS 6.0 virtual server technology is activated, and the IIS 6.0 administration snap-in will now be active.
 
-## 	Configure IIS 6.0 to Relay Outbound Email to SendGrid
+## Configure IIS 6.0 to Relay Outbound Email to SendGrid
 
 1. Go to Start \> All Programs \> Administrative Tools \> IIS 6.0 Manager.
 2. Right click on the SMTP Virtual Server \#1 and select **Properties**.
@@ -70,11 +70,11 @@ Once the SMTP Server service is installed, the IIS 6.0 virtual server technology
 15. In the Smart host field: enter smtp.sendgrid.net
 16. Click on OK twice and you can close the IIS 6.0 admin MMC
 
-## 	Configure Domains
+## Configure Domains
 
 At this point you will need to configure an SMTP domain that relays messages to SendGrid. Please follow [Microsoft's instructions](https://support.microsoft.com/en-us/help/230235/xcon-how-to-configure-the-iis-smtp-service-to-relay-smtp-mail).
 
-## 	Testing Your New Configuration
+## Testing Your New Configuration
 
 First, let's test using Telnet. Open up a telnet client within Windows. You can do that in the Command Prompt by entering the following:
 
@@ -97,7 +97,7 @@ The `EHLO` command with your domain inserted tells the mail server which domain 
 
 If these manually entered commands work, then you should have the following success code returned:
 
-``` 250….Queued mail for delivery ```
+```250….Queued mail for delivery```
 
 You can also test using the logging feature we had you activate earlier. You can view the logs by navigating to and opening the IIS 6.0 7.5 log files with a text editor. It will probably be under the C:\\Windows\\System32\\LogFiles directory unless you changed the log file location during installation.
 
