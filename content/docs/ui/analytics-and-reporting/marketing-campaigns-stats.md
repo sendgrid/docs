@@ -17,6 +17,8 @@ This page refers to the new Marketing Campaigns product. If you’re using legac
 
 </call-out>
 
+With Marketing Campaigns email statistics, you can unlock the full potential with the right data at your fingertips. Use your data to guide you to the right strategy. Get insights about both marketing and transactional email for a 360-degree understand of your audience’s experience. Finally, use your data to brings results to life and share your performance with teammates and stakeholders.
+
 ## 	Viewing Single Send or Automation Statistics
  	Once you send a Single Send or set an Automation live, you can view related statistics.
 
