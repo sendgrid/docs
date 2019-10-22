@@ -652,6 +652,7 @@ Following is an example of how you should structure and organize your custom HTM
       [MODULE CONTENT]
     </td>
   </tr>
+</table>
 ```
 
 ```image & text
