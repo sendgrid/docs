@@ -488,19 +488,19 @@ You'll also see a number of System Fields that you can place in the body of your
    <td>The last name of the recipient</td>
  </tr>
  <tr>
-   <td><code class="language-text"><{{sender_name}}></code>* </td>
+   <td><code class="language-text">{{sender_name}}</code>* </td>
    <td>The name of the sender selected when sending your email</td>
  </tr>
  <tr>
-   <td><code class="language-text"><{{sender_city}}></code>* </td>
+   <td><code class="language-text">{{sender_city}}</code>* </td>
    <td>The city on record for the sender selected when sending your email</td>
  </tr>
  <tr>
-   <td><code class="language-text">{{sender_state}}></code>* </td>
+   <td><code class="language-text">{{sender_state}}</code>* </td>
    <td>The state on record for the sender selected when sending your email</td>
  </tr>
  <tr>
-   <td><code class="language-text"><{{sender_zip}}></code>* </td>
+   <td><code class="language-text">{{sender_zip}}</code>* </td>
    <td>The zip code on record for the sender selected when sending your email</td>
  </tr>
  <tr>
@@ -652,6 +652,7 @@ Following is an example of how you should structure and organize your custom HTM
       [MODULE CONTENT]
     </td>
   </tr>
+</table>
 ```
 
 ```image & text
