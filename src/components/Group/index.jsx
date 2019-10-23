@@ -1,10 +1,12 @@
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 import React from 'react';
+import _ from 'lodash';
 
 function Group(props) {
+  const sort = _.sortBy(props.edges, [function (o) { return o.node.frontmatter.order; }]);
   return (
     <div className="group-links">
-      {props.edges.map((doc) => {
+      {sort.map((doc) => {
         const {
           permalink,
           title,
@@ -12,11 +14,18 @@ function Group(props) {
 
         const docIsVisible = !!doc.node.frontmatter.navigation.show;
 
-        return docIsVisible ? <Link key={permalink} to={permalink} dangerouslySetInnerHTML={{ __html: title }} /> : null;
+        return docIsVisible
+          ? (
+            <Link
+              key={permalink}
+              to={permalink}
+              dangerouslySetInnerHTML={{ __html: title }}
+            />
+          )
+          : null;
       })}
     </div>
   );
 }
 
 export default Group;
-

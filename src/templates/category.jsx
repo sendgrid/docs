@@ -1,10 +1,11 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 import _ from 'lodash';
 import Group from '../components/Group';
 import CATEGORIES from '../constants/categories';
 import SEO from '../components/SEO';
 import GROUPS from '../constants/groups';
-import withSubNav from '../components/NavSub';
+import Layout from '../components/layout';
 import './category.scss';
 
 class CategoryTemplate extends React.Component {
@@ -19,7 +20,8 @@ class CategoryTemplate extends React.Component {
   }
 
   renderGroups() {
-    const sortedGroups = CategoryTemplate.sortGroups(this.props.data.docs.group);
+    const { data } = this.props;
+    const sortedGroups = CategoryTemplate.sortGroups(data.docs.group);
 
     return sortedGroups.map((group) => {
       const title = GROUPS[group.fieldValue] ? GROUPS[group.fieldValue].name : group.fieldValue;
@@ -33,23 +35,26 @@ class CategoryTemplate extends React.Component {
   }
 
   render() {
-    const { category } = this.props.pathContext;
+    const { pathContext, location } = this.props;
+    const { category } = pathContext;
     // If we don't have a "pretty category", make one out of the category context.
     const title = CATEGORIES[category] ? CATEGORIES[category] : category.replace(/-/g, ' ');
 
     return (
-      <div className="category-container container">
-        <SEO postNode={this.props} postType="category" />
-        <h1 className="page-title">{title}</h1>
-        <div className="row">
-          {this.renderGroups()}
+      <Layout location={location} subNav={true}>
+        <div className="category-container container">
+          <SEO postNode={this.props} postType="category" />
+          <h1 className="page-title">{title}</h1>
+          <div className="row">
+            {this.renderGroups()}
+          </div>
         </div>
-      </div>
+      </Layout>
     );
   }
 }
 
-export default withSubNav()(CategoryTemplate);
+export default CategoryTemplate;
 
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
@@ -73,6 +78,7 @@ export const pageQuery = graphql`
               navigation {
                 show
               }
+              order
             }
             fields {
               docType

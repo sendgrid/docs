@@ -5,15 +5,15 @@ group: marketing-campaigns
 layout: page
 navigation:
   show: false
-Seo:
+seo:
   title: Coming soon to Marketing Campaigns
   description: Coming soon to Marketing Campaigns
   keywords: sendgrid account, sendgrid plan, email account, emails per month
 ---
 
-**Pardon our dust!** 
+**Pardon our dust!**
 
-There are some important features that are coming soon to our brand new version of Marketing Campaigns, we appreciate your patience as we deliver them for you. 
+There are some important features that are coming soon to our brand new version of Marketing Campaigns, we appreciate your patience as we deliver them for you.
 
  <table>
   <tr>
@@ -57,26 +57,30 @@ There are some important features that are coming soon to our brand new version 
     <td><span style="color:#18c96e;">Delivered</span></td>
   <tr>
     <td>View a sample of contacts on a list</td>
-    <td>Q4 2019</td>
+    <td>Delivered</td>
   </tr>
   <tr>
     <td>Designate an IP pool for a Single Send</td>
     <td><span style="color:#18c96e;">Delivered</span></td>
   </tr>
   <tr>
-    <td>View per-contact engagement data</td>
+    <td>Trigger an automation to a segment</td>
     <td>Q4 2019</td>
+  </tr>
+  <tr>
+    <td>View per-contact engagement data</td>
+    <td>Future</td>
   </tr>
   <tr>
     <td>View which links within an email were clicked</td>
-    <td>Q4 2019</td>
+    <td>Future</td>
   </tr>
   <tr>
     <td>Export statistics for a Single Send or an Automation</td>
-    <td>Q4 2019</td>
+    <td>Future</td>
   </tr>
   <tr>
     <td>Automation API</td>
-    <td>Q4 2019</td>
+    <td>Future</td>
   </tr>
 </table>

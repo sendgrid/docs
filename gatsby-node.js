@@ -2,7 +2,6 @@ const path = require('path');
 const _ = require('lodash');
 const webpackLodashPlugin = require('lodash-webpack-plugin');
 const crypto = require('crypto');
-const redirects = require('./redirects.js');
 
 /**
  * Generate node edges
@@ -20,8 +19,8 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     const fileNode = getNode(node.parent);
     const parsedFilePath = path.parse(fileNode.relativePath);
     if (
-      Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
-      Object.prototype.hasOwnProperty.call(node.frontmatter, 'slug')
+      Object.prototype.hasOwnProperty.call(node, 'frontmatter')
+      && Object.prototype.hasOwnProperty.call(node.frontmatter, 'slug')
     ) {
       slug = `/${node.frontmatter.slug}`;
     } else if (parsedFilePath.name !== 'index' && parsedFilePath.dir !== '') {
@@ -30,8 +29,8 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
       slug = `/${parsedFilePath.dir}/`;
     }
     if (
-      Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
-      Object.prototype.hasOwnProperty.call(node.frontmatter, 'slug')
+      Object.prototype.hasOwnProperty.call(node, 'frontmatter')
+      && Object.prototype.hasOwnProperty.call(node.frontmatter, 'slug')
     ) {
       slug = `/${_.kebabCase(node.frontmatter.slug)}`;
     }
@@ -40,12 +39,13 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     /**
      * Add permalink edge
      *
-     * If there is a path frontmatter - that overrides all. Otherwise, we'll use the nested directory structure to build the permalink.
+     * If there is a path frontmatter - that overrides all.
+     * Otherwise, we'll use the nested directory structure to build the permalink.
      */
     let permalink;
     if (
-      Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
-      Object.prototype.hasOwnProperty.call(node.frontmatter, 'path')
+      Object.prototype.hasOwnProperty.call(node, 'frontmatter')
+      && Object.prototype.hasOwnProperty.call(node.frontmatter, 'path')
     ) {
       permalink = `/${node.frontmatter.path}${slug}`;
     } else if (parsedFilePath.dir !== '') {
@@ -56,7 +56,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     createNodeField({ node, name: 'permalink', value: permalink.toLowerCase() });
 
     /**
-     * Check if doc is "ui" or "for developers" and add a field slug to represent this.
+     * Check if doc is "ui", "for developers", "glossary" or "release-notes" and add a field slug to represent this.
      */
     let docType;
     if (permalink.match(/ui\/[^/]+/)) {
@@ -73,8 +73,8 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
 
     let cat;
     if (
-      Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
-      Object.prototype.hasOwnProperty.call(node.frontmatter, 'category')
+      Object.prototype.hasOwnProperty.call(node, 'frontmatter')
+      && Object.prototype.hasOwnProperty.call(node.frontmatter, 'category')
     ) {
       cat = node.frontmatter.category;
     } else {
@@ -88,8 +88,8 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
 
     let group = 'ungrouped';
     if (
-      Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
-      Object.prototype.hasOwnProperty.call(node.frontmatter, 'group')
+      Object.prototype.hasOwnProperty.call(node, 'frontmatter')
+      && Object.prototype.hasOwnProperty.call(node.frontmatter, 'group')
     ) {
       group = node.frontmatter.group;
     }
@@ -97,8 +97,8 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
 
     let title;
     if (
-      Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
-      Object.prototype.hasOwnProperty.call(node.frontmatter, 'title')
+      Object.prototype.hasOwnProperty.call(node, 'frontmatter')
+      && Object.prototype.hasOwnProperty.call(node.frontmatter, 'title')
     ) {
       title = node.frontmatter.title;
     } else {
@@ -239,34 +239,10 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   });
 };
 
-exports.onCreatePage = async ({ page, boundActionCreators }) => {
-  const { createPage } = boundActionCreators;
-
-  return new Promise((resolve) => {
-    if (page.path.match(/^\/404/)) {
-      // It's assumed that `landingPage.js` exists in the `/layouts/` directory
-      page.layout = 'noHeaderFooter';
-
-      // Update the page.
-      createPage(page);
-    }
-
-    resolve();
-  });
-};
-
-exports.modifyWebpackConfig = ({ config, stage }) => {
+exports.onCreateWebpackConfig = ({ stage, actions }) => {
   if (stage === 'build-javascript') {
-    config.plugin('Lodash', webpackLodashPlugin, null);
+    actions.setWebpackConfig({
+      plugins: [webpackLodashPlugin],
+    });
   }
-};
-
-// SASS Sourcemaps
-exports.modifyWebpackConfig = ({ config }) => {
-  const newConfig = { ...config };
-  const loadersArr = ['style', 'css?sourceMap', 'sass', 'sass?sourceMap'];
-  if (config._loaders.sass.config.loaders) {
-    newConfig._loaders.sass.config.loaders = loadersArr;
-  }
-  return newConfig;
 };
