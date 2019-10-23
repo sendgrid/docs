@@ -21,7 +21,7 @@ Follow these steps to set up a sync:
 
 ## Create a PieSync account
 
-Sign up for a PieSync account [here](https://app.piesync.com/).
+PieSync is free during a 14 day trial, and is a paid service after. Check beforehand if your app is one of [the many available apps supported by PieSync](https://www.piesync.com/sendgrid). You can sign up for a PieSync account directly [here](https://app.piesync.com/referrer/2gc9v) to get $50 off your first PieSync invoice(s).
 
 
 ## Select your apps
@@ -73,4 +73,4 @@ You can custom map your SendGrid Custom Fields and any additional standard field
 
 - [Learn More](https://www.piesync.com/sendgrid/)
 - [PieSync Help Desk](https://help.piesync.com/connector-apps/send-grid)
-- [Free PieSync 14-day trial!](https://app.piesync.com/)
+- [Free PieSync 14-day trial including USD 50 voucher!](https://app.piesync.com/referrer/2gc9v)
