@@ -11,5 +11,6 @@ navigation:
 ---
 
 Whenever your application or server attempts to send an email to one of your customers via SendGrid, we will record that as a request to your SendGrid dashboard. In other words, when you send emails through SendGrid, you are essentially requesting, "Hey could you deliver this message for me?".
+Note: Only successful request with corresponding 2XX code are shown in SendGrid dashboard.
 
 Visit [Statistics]({{root_url}}/ui/analytics-and-reporting/stats-overview/) to find more information about all the statistics SendGrid provides.
