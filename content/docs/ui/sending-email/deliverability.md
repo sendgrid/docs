@@ -134,5 +134,5 @@ You can send emails to a capture address at one of these services and they will 
 
 [Senderscore](https://senderscore.org/) is another great resource you can use to get a good idea of how the internet email community ranks the [IP address you send mail from]({{root_url}}/ui/account-and-settings/ip-access-management/).
 
-SendGrid has also released the article [Everything You Need To Know About Email Delivery](http://go.sendgrid.com/DeliverabilityGuide.html) highlighting these and more deliverability tips.
+SendGrid has also released their [2019 Email Deliverability Guide](https://sendgrid.com/marketing/guide-2019-deliverability-guide/) highlighting these and more deliverability tips.
 
