@@ -80,7 +80,7 @@ class TestEmail extends Mailable
                     ->bcc($address, $name)
                     ->replyTo($address, $name)
                     ->subject($subject)
-                    ->with([ 'message' => $this->data['message'] ]);
+                    ->with([ 'testmessage' => $this->data['message'] ]);
     }
 }
 ```
@@ -94,7 +94,7 @@ In Laravel `Views` are used as 'templates' when sending an email. Let's create a
     	</head>
     	<body>
     		<h2>Test Email</h2>
-    		<p>{{ $message }}</p>
+    		<p>{{ $testmessage }}</p>
     	</body>
     </html>
 ```
