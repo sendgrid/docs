@@ -2,22 +2,22 @@
 layout: page
 weight: 90
 group: partners
-title: Email Event Data with Keen IO
+title: Email Event Data with Keen
 navigation:
   show: true
 seo:
-  title:  Email Event Data with Keen IO
+  title:  Email Event Data with Keen
 ---
 
-The SendGrid [Event Webhook]({{root_url}}/for-developers/tracking-events/getting-started-event-webhook/) lets you stream all [email events]({{root_url}}/ui/analytics-and-reporting/email-activity-feed/) directly to Keen IO for real-time analysis and long term raw storage.
+The SendGrid [Event Webhook]({{root_url}}/for-developers/tracking-events/getting-started-event-webhook/) lets you stream all [email events]({{root_url}}/ui/analytics-and-reporting/email-activity-feed/) directly to Keen for real-time analysis and long term raw storage.
 
-It only takes a couple of minutes to start streaming email event data from SendGrid to Keen IO and once you do you can start analyzing and visualizing your data in a whole bunch of different ways.
+It only takes a couple of minutes to start streaming email event data from SendGrid to Keen and once you do you can start analyzing and visualizing your data in a whole bunch of different ways.
 
- ### 	Send your SendGrid Data to Keen IO
+ ### 	Send your SendGrid Data to Keen
 
-**Create a Keen IO and SendGrid account**
+**Create a Keen and SendGrid account**
 
-1. Create a <a href="https://keen.io/signup?utm_source=sendgrid_docs&utm_campaign=sendgrid">Keen IO account</a> (if you don't already have one)
+1. Create a <a href="https://keen.io/signup?utm_source=sendgrid_docs&utm_campaign=sendgrid">Keen account</a> (if you don't already have one)
 1. Create a <a href="https://sendgrid.com/user/signup"> SendGrid account</a>
 
 
@@ -36,15 +36,15 @@ https://api.keen.io/3.0/projects/YOUR_KEEN_PROJECT_ID/email/sendgrid/1.0?api_key
 ```
 You can snag a prebuilt URL in Keen’s UI or make your own.
 
-In the Keen IO settings, select the events you want to post to Keen IO. To do this, under **Select Actions**, check **All**.
+In the Keen settings, select the events you want to post to Keen. To do this, under **Select Actions**, check **All**.
 
-Going forward, as your emails make their way through SendGrid, all of the event information will be posted to Keen IO. A new Event Collection, for each type of email event, will be created within your Keen Project.
+Going forward, as your emails make their way through SendGrid, all of the event information will be posted to Keen. A new Event Collection, for each type of email event, will be created within your Keen Project.
 
  ### 	Test Your Integration
 
-Test that everything is working by clicking  on the **"Test Your Integration"** button in SendGrid’s “Event Notification” Settings. This will send sample email data from SendGrid into your Keen IO Project. In the Keen UI, click on **“Check for SendGrid Data”** button.
+Test that everything is working by clicking  on the **"Test Your Integration"** button in SendGrid’s “Event Notification” Settings. This will send sample email data from SendGrid into your Keen Project. In the Keen UI, click on **“Check for SendGrid Data”** button.
 
-Your SendGrid email data should now be populated in Keen IO.
+Your SendGrid email data should now be populated in Keen.
 
  ### 	SendGrid Email Analytics
 
@@ -61,6 +61,6 @@ For each of these metrics, you can download a CSV of the detailed event data. Ju
 
  ### 	Additional Resources:
 
-- [Integration Guide that includes analysis and visualization info]({{root_url}}/for-developers/tracking-events/tracking-data-with-keen-io/)
-- [Keen IO API Reference](https://keen.io/docs/api/)
+- [Integration Guide that includes analysis and visualization info]({{root_url}}/for-developers/tracking-events/analytics-with-keen-io/)
+- [Keen API Reference](https://keen.io/docs/api/)
 - [Docs for Visualization](https://keen.io/docs/visualize/)

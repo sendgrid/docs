@@ -42,4 +42,4 @@ The `sg_event_id` is a string up to 100 characters that is `Base64url` encoded.
 - [Event webhook reference]({{root_url}}/for-developers/tracking-events/event/)
 - [An Event Webhook case study](https://sendgrid.com/blog/leveraging-sendgrids-event-api/)
 - [Webhook web libraries]({{root_url}}/for-developers/sending-email/libraries/)
-- [Getting started with Keen.io](https://keen.io/guides/getting-started/)
+- [Getting Started with Keen](https://keen.io/guides/getting-started/)

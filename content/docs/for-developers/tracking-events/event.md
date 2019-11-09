@@ -12,7 +12,7 @@ navigation:
 ---
 ## Authentication
 
-In order to use the Event Webhook, you need to enter a username and password. The following characters can be used for webhook authentication. 
+In order to use the Event Webhook, you need to enter a username and password. The following characters can be used for webhook authentication.
 
 <call-out type="warning">
 
@@ -21,8 +21,8 @@ Characters not on the list below are not supported and will not authenticate to 
 </call-out>
 
 - **All lower case letters:** a b c d e f g h i j k l m n o p q r s t u v w x y z
-- **All upper case letters:** A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 
-- **All digits:** 0 1 2 3 4 5 6 7 8 9 
+- **All upper case letters:** A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+- **All digits:** 0 1 2 3 4 5 6 7 8 9
 - **The following characters:** - . _ : ~ ! $ & ' ( ) * + , ; = % @
 
 ## 	Events
@@ -740,7 +740,7 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
 - <a name="response"></a>`response` - the full text of the HTTP response error returned from the receiving server.
 - <a name="tls"></a>`tls` - indicates whether TLS encryption was used in sending this message. For more information about TLS, see the [TLS Glossary page]({{root_url}}/glossary/tls/).
 - <a name="url"></a>`url` - the URL where the event originates. For click events, this is the URL clicked on by the recipient.
-- <a name="url_offset"</a>`url_offset` - if there is more than one of the same links in an email, this tells you which of those identical links was clicked. 
+- <a name="url_offset"</a>`url_offset` - if there is more than one of the same links in an email, this tells you which of those identical links was clicked.
 - <a name="attempt"></a>`attempt` - the number of times SendGrid has attempted to deliver this message.
 - <a name="category"></a>`category` - [Categories]({{root_url}}/glossary/categories/) are custom tags that you set for the purpose of organizing your emails. If you send single categories as an array, they will be returned by the webhook as an array. If you send single categories as a string, they will be returned by the webhook as a string.
 - <a name="type"></a>`type` - indicates whether the bounce event was a hard bounce (type=bounce) or block (type=blocked)
@@ -1074,5 +1074,6 @@ For emails sent through our Legacy Marketing Email tool, unsubscribes look like 
 - [Troubleshooting the event webhook]({{root_url}}/for-developers/tracking-events/troubleshooting/)
 - [An Event Webhook case study](https://sendgrid.com/blog/leveraging-sendgrids-event-api/)
 - [Webhook web libraries]({{root_url}}/for-developers/sending-email/libraries/)
-- [Getting started with Keen.io]({{root_url}}/for-developers/tracking-events/analytics-with-keen-io/)
+- [Analyze, Visualize, and Store SendGrid Event Data with Keen]({{root_url}}/for-developers/tracking-events/analytics-with-keen-io/)
+- [Email Event Data with Keen]({{root_url}}/ui/analytics-and-reporting/tracking-data-with-keen-io/)
 - [Run SQL on your Sengrid webhook data](https://pipedream.com/@dylburger/run-sql-on-sendgrid-engagement-data-for-free-p_X13CGV)
