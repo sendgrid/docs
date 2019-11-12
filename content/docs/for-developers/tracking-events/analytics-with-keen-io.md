@@ -1,25 +1,25 @@
 ---
 seo:
-  title: Keen IO Integration
+  title: Keen Integration
   description: Analyze, Visualize, and Store SendGrid Email Event Data
-  keywords: Keen IO, integrate, event data, analytics
-title: Analyze, Visualize, and Store SendGrid Event Data with Keen IO
+  keywords: Keen, integrate, event data, analytics
+title: Analyze, Visualize, and Store SendGrid Event Data with Keen
 group: partners
 weight: 142
 layout: page
 navigation:
   show: true
 ---
-The SendGrid [Event Webhook]({{root_url}}/for-developers/tracking-events/event/) lets you stream all [email events]({{root_url}}/ui/analytics-and-reporting/email-activity/) directly to <a href="https://keen.io/signup?utm_source=sendgrid_docs&utm_campaign=sendgrid">Keen IO</a> for real-time analysis and long term raw storage.
+The SendGrid [Event Webhook]({{root_url}}/for-developers/tracking-events/event/) lets you stream all [email events]({{root_url}}/ui/analytics-and-reporting/email-activity/) directly to <a href="https://keen.io/signup?utm_source=sendgrid_docs&utm_campaign=sendgrid">Keen</a> for real-time analysis and long term raw storage.
 
-It only takes a couple of minutes to start streaming email event data from SendGrid to Keen IO and once you do you can start analyzing and visualizing your data in a whole bunch of different ways.
+It only takes a couple of minutes to start streaming email event data from SendGrid to Keen and once you do you can start analyzing and visualizing your data in a whole bunch of different ways.
 
 
-## 	Sending Your SendGrid Data to Keen IO
+## 	Sending Your SendGrid Data to Keen
 
-**Step 1: Create a Keen IO and SendGrid account**
+**Step 1: Create a Keen and SendGrid account**
 
-* Create a <a href="https://keen.io/signup?utm_source=sendgrid_docs&utm_campaign=sendgrid">Keen IO account</a> (if you don't already have one)
+* Create a <a href="https://keen.io/signup?utm_source=sendgrid_docs&utm_campaign=sendgrid">Keen account</a> (if you don't already have one)
 * Create a <a href="https://sendgrid.com/user/signup"> SendGrid account</a>
 
 
@@ -36,16 +36,16 @@ https://api.keen.io/3.0/projects/YOUR_KEEN_PROJECT_ID/email/sendgrid/1.0?api_key
 ```
 You can snag a pre-built URL in Keen’s UI or make your own.
 
-In the settings, select the events you want to post to Keen IO (why not all of them?). To do this, under **Select Actions**, check **All**.
+In the settings, select the events you want to post to Keen (why not all of them?). To do this, under **Select Actions**, check **All**.
 
-That’s it! Now, as your emails make their way through SendGrid, all of the event information will be posted to Keen IO. A new Event Collection for each type of email event will be created within your Keen Project.
+That’s it! Now, as your emails make their way through SendGrid, all of the event information will be posted to Keen. A new Event Collection for each type of email event will be created within your Keen Project.
 
 
 ## 	Testing Your Integration
 
-Test that everything is working by clicking on the **"Test Your Integration"** button in SendGrid’s “Event Notification” Settings. This will send sample email data from SendGrid into your Keen IO Project. In the Keen UI, click on **“Check for SendGrid Data”** button.
+Test that everything is working by clicking on the **"Test Your Integration"** button in SendGrid’s “Event Notification” Settings. This will send sample email data from SendGrid into your Keen Project. In the Keen UI, click on **“Check for SendGrid Data”** button.
 
-Your SendGrid email data should now be populated in Keen IO.
+Your SendGrid email data should now be populated in Keen.
 
 
 ## 	Using SendGrid Email Analytics
@@ -187,9 +187,9 @@ Select **Create Dashboard**, name your dashboard, and add the query we saved to 
 
 With Keen, you have access to all of your raw data for as long as you need it. An archive of all of your email data is created, which means you have access to your historical data and can query for past user behavior.
 
-Just like SendGrid, Keen IO is 100% powered by APIs. This means you can embed rich analytics anywhere you can write code.
+Just like SendGrid, Keen is 100% powered by APIs. This means you can embed rich analytics anywhere you can write code.
 
-Many customers find it useful to embed analytics into their products for their customers or customer success teams. For step-by-step instructions on how to embed your SendGrid analytics into your product, check out our [Native Analytics Guide](https://keen.io/guides/native-analytics/). Some customers also take advantage of Keen IO's [S3 Streaming](https://keen.io/docs/streams/amazon-s3/) capabilities to write a copy of all their data to AWS.
+Many customers find it useful to embed analytics into their products for their customers or customer success teams. For step-by-step instructions on how to embed your SendGrid analytics into your product, check out our [Native Analytics Guide](https://keen.io/guides/native-analytics/). Some customers also take advantage of Keen's [S3 Streaming](https://keen.io/docs/streams/amazon-s3/) capabilities to write a copy of all their data to AWS.
 
 
 ## 	Additional Resources:
