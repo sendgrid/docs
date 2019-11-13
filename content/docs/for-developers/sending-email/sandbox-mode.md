@@ -15,7 +15,7 @@ navigation:
 <call-out>
 
 Sandbox mode is only used to validate your request. The email will never be delivered while this feature is enabled!
-There will be no events generated in either Event Webhook or Email Activity. No Credits will be consumed.
+Any requests made in sandbox mode will not generate events in either Event Webhook or Email Activity. No Credits will be consumed.
 
 </call-out>
 
