@@ -21,7 +21,7 @@ Create a recurring email or series of emails that send automatically whenever a 
 
 ### Email Testing 
 
-Have confidence your emails are flawless with integrated email testing. See how emails render across the inboxes, browsers, and device types that matter to your business, ensure links within your email are valid, and know how your email will perform against the most powerful spam filters. [Learn More] ({{root_url}}/ui/sending-email/email-testing/). 
+Have confidence your emails are flawless with integrated email testing. See how emails render across the inboxes, browsers, and device types that matter to your business, ensure links within your email are valid, and know how your email will perform against the most powerful spam filters. [Learn More]({{root_url}}/ui/sending-email/email-testing/). 
 
 ### Signup Forms 
 
