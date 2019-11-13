@@ -655,17 +655,17 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
   </tr>
   <tr>
     <td><a href="#uniqueargs">unique_args</a></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
+    <td>X</td>
   </tr>
   <tr>
     <td><a href="#marketingcampaignid">marketing_campaign_id</a></td>
