@@ -122,7 +122,7 @@ You can also create a template from an existing Single Send by selecting the act
 
 The [**Design Editor**]({{root_url}}/ui/sending-email/editor/#the-design-editor) offers users powerful drag & drop editing tools, making it possible to build beautiful emails using a library of content modules like text boxes,images, buttons and more. For those familiar with HTML, there are options to edit the HTML of individual modules, drag in a custom code module, or to import an entire HTML email with drag & drop markup.
 
-The [**Code Editor**]({{root_url}}/ui/sending-email/editor/#the-code-editor) provides users who are importing, editing, or crafting custom HTML a robust, IDE-like environment, featuring side-by-side code and preview panes, syntax highlighting, code completion, and image management.
+The [**Code Editor**]({{root_url}}/ui/sending-email/editor/#the-code-editor) provides users who are importing, editing, or crafting custom HTML a robust, IDE-like environment, featuring side-by-side code and preview panes, syntax highlighting, error flagging and image management.
 
 </call-out>
 
