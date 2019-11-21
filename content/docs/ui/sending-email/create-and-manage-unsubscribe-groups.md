@@ -10,6 +10,9 @@ seo:
 navigation:
   show: true
 ---
+
+<iframe src="https://player.vimeo.com/video/373265768" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
 <call-out>
 
 This page is describing the functionality of the new Marketing Campaigns experience. If you're using legacy Marketing Campaigns, your workflow and screens may be a little different. For more information on the new Marketing Campaigns experience click [here](https://sendgrid.com/pricing).
