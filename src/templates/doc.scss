@@ -12,48 +12,15 @@ $aside-width: 300px;
 }
 
 .release-notes {
-  h2.is-size-h1 {
+  h2, h3 {
     margin-left: -25px;
-    display: block;
-  }
-  h2,
-  h3 {
-    display: block;
+    display: flex;
   }
 }
 
 .sg-remarked-linked-header {
-  display: block;
-}
-
-.sg-remarked-linked-header > a.anchor {
   margin-left: -25px;
-}
-
-/* Pad linked headers so they are not hidden behind the fixed top navbar
-Navbar height is:
-  256px at $width-small-mobile (its tallest)
-  138px at $width-medium (its shortest) */
-.sg-remarked-linked-header::before,
-.release-notes h2::before {
-  display: block;
-  height: 262px;
-  margin-top: -262px;
-  content: '';
-  visibility: hidden;
-
-  @media (min-width: $width-nav-small) {
-    height: 243px;
-    margin-top: -243px;
-  }
-  @media (min-width: $width-nav-medium) {
-    height: 223px;
-    margin-top: -223px;
-  }
-  @media (min-width: $width-small) {
-    height: 145px;
-    margin-top: -145px;
-  }
+  display: flex;
 }
 
 .doc-main {
@@ -61,15 +28,15 @@ Navbar height is:
   padding: 0 $scaleup-8 $scaleup-6;
 
   @media (min-width: 991px) {
-    overflow: hidden;
+      overflow: hidden;
   }
 
   @media (max-width: $width-medium) {
     padding: 0 0 $scaleup-6;
   }
 
-  ol,
-  ul {
+
+  ol, ul {
     margin: $scaleup-1 0 $scaleup-1 $scaleup-1;
 
     li {
