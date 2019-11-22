@@ -5,8 +5,6 @@ $border-radius: 2px;
 
 // breakpoints
 $width-small-mobile: 320px;
-$width-nav-small: 350px;
-$width-nav-medium: 493px;
 $width-small: 610px;
 $width-medium: 990px;
 $width-large: 1200px;
@@ -129,18 +127,9 @@ $alert-verification: $mantis;
 $alert-trial: $slate;
 
 // gradients
-$gradient-hero: linear-gradient(
-  165deg,
-  rgba(209, 230, 249, 1) 0%,
-  rgba(243, 249, 253, 1) 75%,
-  rgba(255, 255, 255, 1) 100%
-);
-$gradient-home-featured: linear-gradient(315deg, $seafoam, #6afcb1);
-$gradient-callout: linear-gradient(
-  300deg,
-  rgba(36, 132, 223, 1) 0%,
-  rgba(92, 176, 255, 1) 75%
-);
+$gradient-hero: linear-gradient(165deg, rgba(209,230,249,1) 0%, rgba(243,249,253,1) 75%, rgba(255,255,255,1) 100%);
+$gradient-home-featured: linear-gradient(315deg, $seafoam, #6afcb1 );
+$gradient-callout: linear-gradient(300deg, rgba(36,132,223,1) 0%, rgba(92,176,255,1) 75%);
 $gradient-dev-glossary: linear-gradient(to bottom right, $kiwi, $mantis);
 $gradient-dev-callout: linear-gradient(to bottom, darken($slate, 10%), $slate);
 
