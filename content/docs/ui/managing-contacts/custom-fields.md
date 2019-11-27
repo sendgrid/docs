@@ -18,6 +18,8 @@ This page is describing the functionality of the new Marketing Campaigns experie
 
 </call-out>
 
+<iframe src="https://player.vimeo.com/video/375994906" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
 Custom Fields allow you to add extra information about a contact within your contact database when you upload a CSV. You can use custom fields to create dynamic [segments]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/) or to personalize the subject lines or content of Marketing Campaigns emails you send. Your custom fields are completely customizable to the use cases and user information that you need.
 
 <call-out>
