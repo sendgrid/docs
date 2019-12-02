@@ -24,16 +24,16 @@ As we continuously modernize our email delivery infrastructure, we will be sunse
     <td>If you would like to maintain open and click tracking, you must send HTML. Otherwise, you can continue sending plain text emails without open and click tracking.</td>
   </tr>
   <tr>
-    <td><span style="font-weight:bold">Gravatar</span> third party integration.</td>
+    <td><span style="font-weight:bold"><a href="http://en.gravatar.com/">Gravatar</a></span> third party integration.</td>
     <td>Due to low adoption among customers we decided to sunset this feature.</td>
   </tr>
   <tr>
     <td><span style="font-weight:bold">Sections</span> is a form of mail merge where sections of an email content can be customized by recipient.</td>
-    <td>We recommend using SendGrid transactional templates with handlebars syntax through our v3 API.</td>
+    <td>We recommend using Twilio SendGrid <a href="https://sendgrid.com/docs/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/">transactional templates</a>with handlebars syntax through our v3 API.</td>
   </tr>
   <tr>
     <td><span style="font-weight:bold">BCC </span>automatically BCCs an email address for every email sent.</td>
-    <td>We recommend identifying bcc as a personalization in each API call.</td>
+    <td>We recommend identifying bcc as a <a href="https://sendgrid.com/docs/for-developers/sending-email/personalizations/#sending-a-single-email-to-a-single-recipient-with-a-cc-and-a-bcc">personalization</a> in each API call.</td>
   </tr>
   <tr>
     <td><span style="font-weight:bold">Spam Checker </span>is an option within SendGrid Mail Settings that checks outbound messages for spam content.</td>
