@@ -1,0 +1,50 @@
+---
+layout: page
+weight: 70
+title: Underused Mail Setting Retirement
+group: account-management
+navigation:
+  show: false
+seo:
+  title: Underused Mail Setting Retirement
+  keywords:   
+  override: 
+  description: This page explains the changes to Twilio SendGrid mail settings coming in Q1 2020
+---
+
+As we continuously modernize our email delivery infrastructure, we will be sunsetting some sparsely used features in order to improve efficiency. 
+
+<table>
+  <tr>
+    <th>Mail Setting</th>
+    <th>Recommended Action</th>
+  </tr>
+  <tr>
+    <td><span style="font-weight:bold">Plain Content</span> is an option within SendGrid Mail Settings that disables the automatic conversion of plain text emails to HTML.</td>
+    <td>If you would like to maintain open and click tracking, you must send HTML. Otherwise, you can continue sending plain text emails without open and click tracking.</td>
+  </tr>
+  <tr>
+    <td><span style="font-weight:bold">Gravatar</span> third party integration.</td>
+    <td>Due to low adoption among customers we decided to sunset this feature.</td>
+  </tr>
+  <tr>
+    <td><span style="font-weight:bold">Sections</span> is a form of mail merge where sections of an email content can be customized by recipient.</td>
+    <td>We recommend using SendGrid transactional templates with handlebars syntax through our v3 API.</td>
+  </tr>
+  <tr>
+    <td><span style="font-weight:bold">BCC </span>automatically BCCs an email address for every email sent.</td>
+    <td>We recommend identifying bcc as a personalization in each API call.</td>
+  </tr>
+  <tr>
+    <td><span style="font-weight:bold">Spam Checker </span>is an option within SendGrid Mail Settings that checks outbound messages for spam content.</td>
+    <td>We recommend using 250ok to maximize your deliverability.</td>
+  </tr>
+  <tr>
+    <td><span style="font-weight:bold">Drop feature</span> is a test feature that goes through the processing of mail, but just drops it without delivering in the end.</td>
+    <td>We have a Sandbox Mode feature which allows you to send a test email to ensure that your request body is formatted correctly without delivering the email to any of your recipients.</td>
+  </tr>
+  <tr>
+    <td><span style="font-weight:bold">Sendwithus</span> third party Integration</td>
+    <td>We recommend using Twilio SendGrid Marketing Campaigns.</td>
+  </tr>
+</table>
