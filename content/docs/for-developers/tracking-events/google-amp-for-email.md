@@ -9,7 +9,7 @@ seo:
 navigation:
   show: true
 ---
-Google AMP (Accelerated Mobile Pages) is a proprietary Google technology built to speed up mobile apps and websites. AMP for Email is an extension and adaptation of the AMP technology that enables interactivity for Gmail recipients' email messages including carousels, expanding accordions, dynamically updating content, and more. For more information on Google’s [AMP specification](https://amp.dev/documentation/guides-and-tutorials/learn/amp-email-format#the-amphtml-email-format), [best practices](https://developers.google.com/gmail/ampemail/testing-dynamic-email), and how to [register to use AMP](https://developers.google.com/gmail/ampemail/register) see Google’s AMP documentation. 
+Google AMP (Accelerated Mobile Pages) is a proprietary Google technology built to speed up mobile apps and websites. AMP for Email is an extension and adaptation of the AMP technology that enables interactivity for Gmail recipients' email messages including carousels, expanding accordions, dynamically updating content, and more. For more information on Google’s [AMP specification for email](https://amp.dev/documentation/guides-and-tutorials/learn/email-spec/amp-email-format/?format=email), [best practices](https://developers.google.com/gmail/ampemail/testing-dynamic-email), and how to [register to use AMP](https://developers.google.com/gmail/ampemail/register) see Google’s AMP documentation. 
 
 <call-out>
 

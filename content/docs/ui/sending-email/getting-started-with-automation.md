@@ -20,12 +20,11 @@ Automation is available as part of the Advanced Marketing Campaigns package. To 
 
 Automation allows you to send a recurring email or drip series to contacts automatically at a cadence you define. Once you create an Automation, you can trigger them to send automatically by adding new recipients to a chosen list, saving you time.
 
-
 With Automation, you could build email campaigns to:
 
-* Welcome new contacts when they join your list with a warm message and introductory tips.
-* Engage contacts who’ve downloaded an asset from you with follow-up content.
-* Promote an upcoming event to a list of invitees with a series of reasons to attend.
+- Welcome new contacts when they join your list with a warm message and introductory tips.
+- Engage contacts who’ve downloaded an asset from you with follow-up content.
+- Promote an upcoming event to a list of invitees with a series of reasons to attend.
 
 <iframe src="https://player.vimeo.com/video/359829207" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
@@ -33,9 +32,9 @@ With Automation, you could build email campaigns to:
 
 If you haven’t done so already, you’ll need to complete the following before building your first automation:
 
-* Add a [notification]({{root_url}}/ui/account-and-settings/notifications/) email
-* Create [Unsubscribe Groups]({{root_url}}/ui/manage-contacts/create-and-manage-unsubscribe-groups)
-* Add a [sender]({{root_url}}/ui/sending-email/senders/) (optional)
+- Add a [notification]({{root_url}}/ui/account-and-settings/notifications/) email
+- Create [Unsubscribe Groups]({{root_url}}/ui/sending-email/create-and-manage-unsubscribe-groups/)
+- Add a [sender]({{root_url}}/ui/sending-email/senders/) (optional)
 
 ## Create an Automation
 
@@ -43,7 +42,7 @@ Once you've completed the prerequisites, you’re ready to start building your f
 
 ### Create a Custom Automation
 
-*To create a Custom Automation:*
+_To create a Custom Automation:_
 
 1. Navigate to **Automations** and then click **Create an Automation**.
 1. Under Custom, click **Select**.
@@ -52,7 +51,7 @@ Once you've completed the prerequisites, you’re ready to start building your f
 
 <call-out>
 
-Contacts will only receive your automation if you add them to the list you select for entry criteria *after* you set the automation live.
+Contacts will only receive your automation if you add them to the list you select for entry criteria _after_ you set the automation live.
 
 </call-out>
 
@@ -60,7 +59,7 @@ Contacts will only receive your automation if you add them to the list you selec
 
 <call-out>
 
-If you select “no longer meet entry criteria”, before each email in your series sends, Automation will check to make sure each recipient is still on the entry criteria list. If they aren’t, they won’t get the email. For more information on deleting contacts or removing them from lists, see [link text]({{root_url}}ui/manage-contacts/create-and-edit-contacts/#edit-or-remove-contacts-from-a-list).
+If you select “no longer meet entry criteria”, before each email in your series sends, Automation will check to make sure each recipient is still on the entry criteria list. If they aren’t, they won’t get the email. For more information on deleting contacts or removing them from lists, see [link text]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#edit-or-remove-contacts-from-a-list).
 
 </call-out>
 
@@ -84,7 +83,7 @@ If you have dedicated IPs, you can set up [IP Pools]({{root_url}}/ui/account-and
 
 ### Duplicate an Automation
 
-*To duplicate an automation:*
+_To duplicate an automation:_
 
 1. Navigate to Automations.
 1. Find the automation you want to duplicate.
@@ -96,7 +95,7 @@ If you have dedicated IPs, you can set up [IP Pools]({{root_url}}/ui/account-and
 
 The pre-built Welcome Series automation provides a jumping off point to inspire you to create your own tailored welcome series.
 
-*To create a Welcome Series:*
+_To create a Welcome Series:_
 
 1. Navigate to **Automations** and then click **Create an Automation**.
 1. Under Welcome, click **Select**.
@@ -104,7 +103,7 @@ The pre-built Welcome Series automation provides a jumping off point to inspire 
 1. Review the entry criteria to decide if you’d like to update it. The default entry criteria is “The first time a contact is added to All Contacts”.
 1. Review the exit criteria to decide if you’d like to update it.
 1. Select an [Unsubscribe Group]({{root_url}}/ui/sending-email/create-and-manage-unsubscribe-groups/#create-an-unsubscribe-group). This Unsubscribe Group will apply to all emails in your Automation.
-1. Add a [category]({{root_url}}/glossary/categories/) to the automation (optional). Categories are useful for [comparing performance]({{root_url}}/ui/analytics-and-reporting/category-comparison/)  across different types of email you send.
+1. Add a [category]({{root_url}}/glossary/categories/) to the automation (optional). Categories are useful for [comparing performance]({{root_url}}/ui/analytics-and-reporting/category-comparison/) across different types of email you send.
 1. The pre-built Welcome Series has three placeholder emails by default. You’ll need to edit the subject line and content of each email. You may decide to remove or add emails to the pre-built.
 1. If you did not do so within the editor, you can add a subject line and select a sender from the Edit Automation page.
 1. To add more emails to this automated series, click **Add an Email**.
@@ -123,7 +122,7 @@ If you keep the entry criteria as "All Contacts" it's important to remember that
 
 You can edit the content, subject line, and sender for any emails in your automation.
 
-*To edit an automation:*
+_To edit an automation:_
 
 1. Navigate to **Automations** and select the series you want to edit.
 1. Click **Edit** on each email you’d like to modify.
@@ -140,7 +139,7 @@ You can also create a template from an existing email within your Automation ser
 
 ### Disable an Automation
 
-*To disable an automation:*
+_To disable an automation:_
 
 When you disable an automation, all emails in your automation will stop sending unless you set it live again. No new contacts will be entered into your automation while it's disabled. If you set the automation live again, contacts who entered the automation before it was disabled will continue receiving emails again according to where they left off.
 
@@ -148,8 +147,7 @@ When you disable an automation, all emails in your automation will stop sending 
 1. Select the Action Menu to the right of the Automation.
 1. Click **Disable Automation** in the upper right corner.
 
-
-*To set a disabled automation live again:*
+_To set a disabled automation live again:_
 
 1. Navigate to **Automations** and select the series you want to re-enable.
 1. Select the Action Menu to the right of the Automation.
@@ -163,7 +161,7 @@ When you re-enable the automation, contacts who previously entered the series wi
 
 ### Delete an Automation
 
-*To delete an automation:*
+_To delete an automation:_
 
 1. On the automation dashboard, find the automation you want to delete.
 1. Hover over the action menu and select the delete icon.

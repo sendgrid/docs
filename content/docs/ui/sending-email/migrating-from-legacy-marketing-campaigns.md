@@ -21,7 +21,7 @@ Create a recurring email or series of emails that send automatically whenever a 
 
 ### Email Testing 
 
-Have confidence your emails are flawless with integrated email testing. See how emails render across the inboxes, browsers, and device types that matter to your business, ensure links within your email are valid, and know how your email will perform against the most powerful spam filters. [Learn More] ({{root_url}}/ui/sending-email/email-testing/). 
+Have confidence your emails are flawless with integrated email testing. See how emails render across the inboxes, browsers, and device types that matter to your business, ensure links within your email are valid, and know how your email will perform against the most powerful spam filters. [Learn More]({{root_url}}/ui/sending-email/email-testing/). 
 
 ### Signup Forms 
 
@@ -153,6 +153,12 @@ Choose **Basic** if following features meet your needs. A complete summary of th
 *Historical usage*
 
 Review how many contacts you store in legacy Marketing Campaigns as a starting point, then consider if or how you may grow your audience. Do the same for in considering your legacy Marketing Campaigns sending volume by adding up the number of delivered emails across your campaigns. Remember, the new Marketing Campaigns packages also include email sends, so if you only send via Marketing Campaigns, you’ll potentially no longer need to subscribe to an Email API plan. 
+
+<call-out type="warning">
+
+**Please note:** Downgrading from a paid Basic or Advanced Marketing Campaigns plan to a Free account will permanently delete all contacts associated with that account. You will need to reimport any contacts that you would like to use with your Free account.
+
+</call-out>
 
 *Add-ons you need*
 
