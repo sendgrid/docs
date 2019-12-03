@@ -29,7 +29,7 @@ As we continuously modernize our email delivery infrastructure, we will be sunse
   </tr>
   <tr>
     <td><span style="font-weight:bold">Sections</span> is a form of mail merge where sections of an email content can be customized by recipient.</td>
-    <td>We recommend using Twilio SendGrid <a href="https://sendgrid.com/docs/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/">transactional templates</a>with handlebars syntax through our v3 API.</td>
+    <td>We recommend using Twilio SendGrid <a href="https://sendgrid.com/docs/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/">transactional templates</a> with handlebars syntax through our v3 API.</td>
   </tr>
   <tr>
     <td><span style="font-weight:bold">BCC </span>automatically BCCs an email address for every email sent.</td>
@@ -37,11 +37,11 @@ As we continuously modernize our email delivery infrastructure, we will be sunse
   </tr>
   <tr>
     <td><span style="font-weight:bold">Spam Checker </span>is an option within SendGrid Mail Settings that checks outbound messages for spam content.</td>
-    <td>We recommend using 250ok to maximize your deliverability.</td>
+    <td>We recommend using  <a href="https://sendgrid.com/docs/ui/sending-email/email-testing/">Email Testing</a> to maximize your deliverability.</td>
   </tr>
   <tr>
     <td><span style="font-weight:bold">Drop feature</span> is a test feature that goes through the processing of mail, but just drops it without delivering in the end.</td>
-    <td>We have a Sandbox Mode feature which allows you to send a test email to ensure that your request body is formatted correctly without delivering the email to any of your recipients.</td>
+    <td>We have a <a href="https://sendgrid.com/docs/for-developers/sending-email/sandbox-mode/">Sandbox Mode</a> feature which allows you to send a test email to ensure that your request body is formatted correctly without delivering the email to any of your recipients.</td> h
   </tr>
   <tr>
     <td><span style="font-weight:bold">Sendwithus</span> third party Integration</td>
