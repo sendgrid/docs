@@ -85,6 +85,13 @@ All Mail clients render HTML/CSS differently, in their own ways and for their ow
 
 ## 	Controlling converted plain text email output
 
+<call-out type="warning">
+
+Due to low usage, this feature will be deprecated Q1 of 2020. Click [here]({{root_url}}/account-and-settings/retired-mail-settings/) for more information.
+
+</call-out>
+
+
 *To control the output of plain-text conversion do one of the following:*
 
 1. Turn off the filters causing the conversion from plain text to HTML.
