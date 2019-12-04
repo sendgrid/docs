@@ -47,4 +47,6 @@ As we continuously modernize our email delivery infrastructure, we will be sunse
     <td><span style="font-weight:bold">Sendwithus</span> third party Integration</td>
     <td>We recommend using Twilio SendGrid Marketing Campaigns.</td>
   </tr>
+   <td><span style="font-weight:bold">DomainKey</span> is an old feature for signing emails which has been deprecated by email industry. </td>
+<td>Users should utilize <a href="https://sendgrid.com/docs/glossary/dkim/">DKIM</a> which is the new standard for signing emails. </td>
 </table>
