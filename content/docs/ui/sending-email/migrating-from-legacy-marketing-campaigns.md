@@ -1,17 +1,17 @@
 ---
 layout: page
 weight: 70
-title: Migrating from legacy to new Marketing Campaigns
+title: Migrating from legacy Marketing Campaigns
 group: marketing-campaigns
 navigation:
   show: false
 seo:
-  title: Migrating from legacy to new Marketing Campaigns
+  title: Migrating from legacy Marketing Campaigns
   keywords:   
   override: 
   description: Use this guide to migrate from legacy to the new Marketing Campaigns experience. 
 ---
-## What does the new Marketing Campaigns offer? 
+## What does Marketing Campaigns offer? 
 
 The new Marketing Campaigns builds on the existing, well-loved workflows for building, targeting, sending, and measuring email marketing campaigns with three new features: Automation, Email Testing, and Signup Forms. 
 
@@ -31,19 +31,19 @@ Capture new signups and add them directly to your contacts in the new Marketing 
 
 These new features build on the functionality you’re used to in legacy Marketing Campaigns. This means after a few migration steps, you’ll be up and running quickly thanks to familiar workflows you already know.  
 
-All features from legacy Marketing Campaigns will be carried over to new Marketing Campaigns, though there are a few that will not be available immediately. You can track those items on our [coming soon to Marketing Campaigns page]({{root_url}}/ui/sending-email/coming-soon-to-new-marketing-campaigns/). 
+All features from legacy Marketing Campaigns will be carried over to Marketing Campaigns, though there are a few that will not be available immediately. You can track those items on our [coming soon to Marketing Campaigns page]({{root_url}}/ui/sending-email/coming-soon-to-new-marketing-campaigns/). 
 
 <call-out>
 
-What you’re used to as “Campaigns” in legacy Marketing Campaigns is now called “Single Sends” in new Marketing Campaigns.
+What you’re used to as “Campaigns” in legacy Marketing Campaigns is now called “Single Sends” in Marketing Campaigns.
 
 </call-out>
 
 ## Why aren’t you migrating my account automatically? 
 
-The new Marketing Campaigns has been re-built from the ground up on a new platform, which brings benefits like increased speed, scale, and stability. However, because it’s an entirely new product, it is not connected to the legacy Marketing Campaigns, and we’re not yet able to automatically move your assets and data. 
+Marketing Campaigns has been re-built from the ground up on a new platform, which brings benefits like increased speed, scale, and stability. However, because it’s an entirely new product, it is not connected to the legacy Marketing Campaigns, and we’re not yet able to automatically move your assets and data. 
 
-To support you in migrating your legacy Marketing Campaigns account to the new Marketing Campaigns, we’re providing you with a billing grace period. During this grace period, you won’t be charged for legacy Marketing Campaigns contact storage. The grace period covers the month you upgrade to a Basic or Advanced package and 1 month after you upgrade.
+To support you in migrating your legacy Marketing Campaigns account to Marketing Campaigns, we’re providing you with a billing grace period. During this grace period, you won’t be charged for legacy Marketing Campaigns contact storage. The grace period covers the month you upgrade to a Basic or Advanced package and 1 month after you upgrade.
 
 <call-out-link linktext="Contact Expert Services" img="/img/expert-insights-promo3.png" link="https://sendgrid.com/solutions/marketing-campaigns-migration/">
 
@@ -264,7 +264,7 @@ If you add contacts to a list that you’d like to use as the entry criteria for
 
 ## Migrate your content
 
-You may have pre-existing images, templates, or campaigns that you’d like to re-use in the new Marketing Campaigns. You can transfer your assets into new Marketing Campaigns by following the steps below.
+You may have pre-existing images, templates, or campaigns that you’d like to re-use in Marketing Campaigns. You can transfer your assets into new Marketing Campaigns by following the steps below.
 
 ### Templates
 
