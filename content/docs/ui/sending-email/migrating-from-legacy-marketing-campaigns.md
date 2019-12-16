@@ -17,7 +17,7 @@ The new Marketing Campaigns builds on the existing, well-loved workflows for bui
 
 ### Automation
 
-Create a recurring email or series of emails that send automatically whenever a contact joins a list. Choose when each email sends, and whether a contact should exit the automation if they no longer meet the entry criteria. [Learn More] ({{root_url}}/ui/sending-email/getting-started-with-automation/). 
+Create a recurring email or series of emails that send automatically whenever a contact joins a list. Choose when each email sends, and whether a contact should exit the automation if they no longer meet the entry criteria. [Learn More]({{root_url}}/ui/sending-email/getting-started-with-automation/). 
 
 ### Email Testing 
 
