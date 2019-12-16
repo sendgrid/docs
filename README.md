@@ -21,12 +21,12 @@ The master branch is continuously deployed to production.
 
 ## Table of Contents
 
-* [CLAs and CCLAs](#cla)
+* [Contributing Guidelines](#contributing)
 * [Local Setup](#local)
 * [About](#about)
 * [License](#license)
 
-<a name="cla"></a>
+<a name="contributing"></a>
 ## Contributing
 
 Please see the [contributing guidelines](./CONTRIBUTING.md).
