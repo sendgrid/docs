@@ -9,7 +9,7 @@ seo:
   title: Email testing
   keywords: email testing, send test email, email rendering test
   override: true
-  Description: How to use SendGrid's new email testing feature to see how your email shows up in different inboxes and across different devices and operating systems.
+  Description: How to use SendGrid's new email testing feature to preview your email renders, performs against spam filters, and validate the links within your email.
 ---
 Email testing offers robust, pre-send testing of your emails, including in-app spam testing, inbox rendering previews, and link validation without leaving your  workflow. It allows you to preview how an email is likely to perform across a wide range of inbox providers, devices, and spam filters, before sending.
 - **Inbox Rendering Test:** Displays how an email message is rendered and appears across a select group of inbox providers and devices.
@@ -20,16 +20,14 @@ Email testing offers robust, pre-send testing of your emails, including in-app s
 
 ## Email Testing credits and pricing
 
-The number of Email Testing credits available to you depends on your Marketing Campaigns or Email API plan. For more information on email plans, see our [pricing page](https://sendgrid.com/pricing/). Email Testing credits can be used for both Inbox Rendering Tests and Spam Tests and all Email Testing credits (whether part of your plan or purchased as part of an add-on package) expire at the end of each month. 
+The number of Email Testing credits available to you depends on your Marketing Campaigns or Email API plan. For more information on email plans, see our [pricing page](https://sendgrid.com/pricing/). Email Testing credits can be used for both Inbox Rendering Tests and Spam Tests and all Email Testing credits (whether part of your plan or purchased as part of an add-on package) expire at the end of each month.
 
 ## Purchasing additional credits
 
 If you find yourself in need of more credits than your plan offers, we offer additional Email Testing credit packages as add-ons to your monthly plan.
 
 <callout>
-
 Packages for additional Email Testing credits are billed on a monthly, recurring basis and will continue to renew each month unless removed from your account.
-
 </callout>
   
   Available Email Testing credit add-on packages are:
@@ -42,7 +40,7 @@ Packages for additional Email Testing credits are billed on a monthly, recurring
 
 ## Running an Email Test
 
-Email testing is available for both Marketing Campaigns and emails utilizing Dynamic Templates. 
+Email testing is available for both Marketing Campaigns and emails within API plans ultilizing Dynamic Templates. 
 
 *To test an email:*
 
