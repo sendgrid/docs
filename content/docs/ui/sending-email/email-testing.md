@@ -31,20 +31,16 @@ Email testing offers robust, pre-send testing of your emails, including in-app s
 The number of Email Testing credits available to you depends on your Marketing Campaigns or Email API plan. For more information on email plans, see our [pricing page](https://sendgrid.com/pricing/). Email Testing credits can be used for both Inbox Rendering Tests and Spam Tests and all Email Testing credits (whether part of your plan or purchased as part of an add-on package) expire at the end of each month.
 =======
 The number of Email Testing credits available to you depends on your Marketing Campaigns plan. 10 Email Testing credits per month are available for customers on Basic plans, with 60 Email Testing credits per month available to customers on Advanced plans. Email Testing credits can be used for both Inbox Rendering Tests and Spam Tests and all Email Testing credits (whether part of your plan or purchased as part of an add-on package) expire at the end of each month. 
->>>>>>> upstream/develop
 
 ## Purchasing additional credits
 
 If you find yourself in need of more credits than your Marketing Campaigns plan offers, we offer additional Email Testing credit packages as add-ons to your monthly plan.
 
 <callout>
-<<<<<<< HEAD
+
 Packages for additional Email Testing credits are billed on a monthly, recurring basis and will continue to renew each month unless removed from your account.
+
 </callout>
-=======
-  Note: Packages for additional Email Testing credits are billed on a monthly, recurring basis and will continue to renew each month unless removed from your account.
-  </callout>
->>>>>>> upstream/develop
   
   Available Email Testing credit add-on packages are:
   
@@ -56,11 +52,8 @@ Packages for additional Email Testing credits are billed on a monthly, recurring
 
 ## Running an Email Test
 
-<<<<<<< HEAD
 Email testing is available for both Marketing Campaigns and emails within API plans ultilizing Dynamic Templates. 
 
-=======
->>>>>>> upstream/develop
 *To test an email:*
 
 1. From inside either the Design or Code editor, navigate to the Settings tab.
