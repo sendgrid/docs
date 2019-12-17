@@ -27,10 +27,7 @@ Email testing offers robust, pre-send testing of your emails, including in-app s
 
 ## Email Testing credits and pricing
 
-<<<<<<< HEAD
 The number of Email Testing credits available to you depends on your Marketing Campaigns or Email API plan. For more information on email plans, see our [pricing page](https://sendgrid.com/pricing/). Email Testing credits can be used for both Inbox Rendering Tests and Spam Tests and all Email Testing credits (whether part of your plan or purchased as part of an add-on package) expire at the end of each month.
-=======
-The number of Email Testing credits available to you depends on your Marketing Campaigns plan. 10 Email Testing credits per month are available for customers on Basic plans, with 60 Email Testing credits per month available to customers on Advanced plans. Email Testing credits can be used for both Inbox Rendering Tests and Spam Tests and all Email Testing credits (whether part of your plan or purchased as part of an add-on package) expire at the end of each month. 
 
 ## Purchasing additional credits
 
