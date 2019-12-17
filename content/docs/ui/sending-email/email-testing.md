@@ -76,5 +76,6 @@ Every inbox rendering test that you run automatically includes a link validation
 - [A/B Testing]({{root_url}}/ui/sending-email/a-b-testing/)
 - [Design Editor]({{root_url}}/ui/sending-email/editor/#-The-Design-Editor)
 - [Code Editor]({{root_url}}/ui/sending-email/editor/#the-code-editor)
+- [Dynamic Templates]({{root_url}}/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/)
 
 
