@@ -11,12 +11,6 @@ seo:
   override: true
   Description: How to use SendGrid's new email testing feature to preview your email renders, performs against spam filters, and validate the links within your email.
 ---
-<call-out>
-
-Email Testing is available as part of the new Marketing Campaigns. To access this feature, please switch over to the [new Marketing Campaigns experience](https://sendgrid.com/pricing/).
-
-</call-out>
-
 Email testing offers robust, pre-send testing of your emails, including in-app spam testing, inbox rendering previews, and link validation without leaving your Marketing Campaigns workflow. It allows you to preview how an email is likely to perform across a wide range of inbox providers, devices, and spam filters, before sending.
 
 - **Inbox Rendering Test:** Displays how an email message is rendered and appears across a select group of inbox providers and devices.
@@ -84,5 +78,3 @@ Every inbox rendering test that you run automatically includes a link validation
 - [Design Editor]({{root_url}}/ui/sending-email/editor/#-The-Design-Editor)
 - [Code Editor]({{root_url}}/ui/sending-email/editor/#the-code-editor)
 - [Dynamic Templates]({{root_url}}/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/)
-
-
