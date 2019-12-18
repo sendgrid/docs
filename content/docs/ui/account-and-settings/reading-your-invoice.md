@@ -13,12 +13,6 @@ navigation:
 
 Your Twilio SendGrid invoice contains a lot of information which may be difficult to understand. To see your invoice, check your email or visit the Plan & Billing tab on your [Account details](https://app.sendgrid.com/account/billing) page. Here's information on how to read your invoice:
 
-<call-out>
-
-The examples below may not reflect current Twilio SendGrid pricing and should serve as references for the purpose of understanding your invoice structure only. For current pricing, see the [Twilio SendGrid Pricing page](https://sendgrid.com/pricing/).
-
-</call-out>
-
 ![A screenshot of an example invoice]({{root_url}}/img/invoice-legend.png)
 
 ## 1. Physical Address
@@ -39,19 +33,19 @@ The Charge Summary section breaks down your invoice total into individual charge
 
 ![Charge summary section]({{root_url}}/img/invoice-plan.png)
 
-This is the **plan you subscribe to**. In this case, the user is on an API Pro 100K plan and will pay $79.95 to use it for the month of August.
+This is the **plan you subscribe to**. In this case, the user is on an API Pro 100K plan and will pay $89.95 to use it for the month of February.
 
 ### Marketing Campaigns Plan
 
 ![Charge summary section]({{root_url}}/img/invoice-marketing-plan.png)
 
-This is the **Marketing Campaigns plan you subscribe to**. In this case, the user is on a Marketing Campaigns Basic 5K plan, and will pay $15.65 to use it for the month of August.
+This is the **Marketing Campaigns plan you subscribe to**. In this case, the user is on a Marketing Campaigns Basic 5K plan, and will pay $15.65 to use it for the month of February.
 
 ### IP Address
 
 ![Additional IP address section]({{root_url}}/img/invoice-IP-address.png)
 
-This charge indicates that you have an **additional Dedicated IP Address** allocated to your account. If you have more than on IP address the total cost will be listed on this line. 
+This charge indicates that you have an **additional Dedicated IP Address** allocated to your account. If you have more than one IP address the total cost will be listed on this line.
 
 IP addresses cost $30.00/mo each and are available on Pro API and Advanced Marketing Campaigns plans and above.
 
@@ -89,7 +83,7 @@ The Usage Summary section outlines usage-based charges on your account **during 
 
 This item is a calculation of **any emails sent beyond the monthly limit** of your package **during the previous month**.
 
-In this example, the Pro 100K plan allows for 100,00 emails to be sent per month. We see that in the previous month, 120,000 emails were sent for a total of 20,000 emails over the limit. The overage rate for the Pro 100K plan is $0.00085 per extra email, which works out to a $17.00 overage charge (20,000 x .00085 = 17).
+In this example, the Pro 100K plan allows for 100,00 emails to be sent per month. We see that in the previous month, 160,000 emails were sent for a total of 60,000 emails over the limit. The overage rate for the Pro 100K plan is $0.001 per extra email, which works out to a $60.00 overage charge (60,000 x .001 = 60).
 
 ### Contact List Usage
 
