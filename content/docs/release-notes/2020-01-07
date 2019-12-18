@@ -1,0 +1,11 @@
+---
+title: "release notes 2020-01-07"
+date: 2020-01-07
+releaseType:
+  - ui
+  - api
+---
+
+### Retirement of Select Mail Settings
+
+As we continuously modernize our email delivery infrastructure, we have retired select, sparsely used, and outdated features in order to improve efficiency. The features we have retired include Plain Text to HTML, Gravatar, Sections, BCC, Spam Checker, Drop Feature, and the Sendwithus integration. For more details on these features and our recommended actions please see our [documentation]({{root_url}}/ui/account-and-settings/retired-mail-settings/).
