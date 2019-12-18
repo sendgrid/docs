@@ -13,6 +13,12 @@ navigation:
 
 Your Twilio SendGrid invoice contains a lot of information which may be difficult to understand. To see your invoice, check your email or visit the Plan & Billing tab on your [Account details](https://app.sendgrid.com/account/billing) page. Here's information on how to read your invoice:
 
+<call-out>
+
+The examples below may not reflect current Twilio SendGrid pricing and should serve as references for the purpose of understanding your invoice structure only. For current pricing, see the [Twilio SendGrid Pricing page](https://sendgrid.com/pricing/).
+
+</call-out>
+
 ![A screenshot of an example invoice]({{root_url}}/img/invoice-legend.png)
 
 ## 1. Physical Address
