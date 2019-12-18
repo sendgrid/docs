@@ -26,7 +26,7 @@ The number of Email Testing credits available to you depends on your Marketing C
 
 ## Purchasing additional credits
 
-If you find yourself in need of more credits than your Marketing Campaigns plan offers, we offer additional Email Testing credit packages as add-ons to your monthly plan.
+If you find yourself in need of more credits than your plan offers, we offer additional Email Testing credit packages as add-ons to your monthly plan.
 
 <callout>
 
