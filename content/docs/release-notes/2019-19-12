@@ -1,0 +1,10 @@
+---
+title: "release notes 2019-19-12"
+date: 2019-19-12
+releaseType:
+  - ui
+---
+
+### Email Content Testing for Dynamic Templates
+
+Test your email content against spam filters, validate hyperlinks, and preview HTML rendering across browsers and devices with Email Testing for Dynamic Templates. Monthly testing credits included for Trial, Pro and Premier plans, with additional credits available for purchase. See our Email Testing [documentation]({{root_url}}/ui/account-and-settings/retired-mail-settings/) for more details. 
