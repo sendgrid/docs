@@ -133,6 +133,12 @@ Inside the Code Editor, you can click the left **Settings** tab to expand the se
 
 6. Define key settings like *From Sender*, *Email Subject*, *Preheader*, *Recipients*, and *Scheduling* by filling in the fields in the **Settings** tab.
 
+<call-out type="warning">
+
+When selecting segments, make sure you are limiting your selection to 10 segments.
+
+</call-out>
+
 <call-out>
 
 If you have dedicated IPs, you can set up [IP Pools]({{root_url}}/ui/account-and-settings/ip-pools/) that allow you separate your traffic and potentially enhance your deliverability by protecting your sender reputation. To utilize IP pools for Single Sends, navigate to **Settings** and from the IP Pool drop-down, select the IP pool you wish to use.
