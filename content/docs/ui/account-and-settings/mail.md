@@ -144,7 +144,7 @@ This setting wraps an HTML template around your email content. This can be usefu
 
 <call-out type="warning">
 
-Due to low usage, this setting will be deprecated Q1 of 2020. Click [here]({{root_url}}/ui/account-and-settings/retired-mail-settings/) for more information.
+Due to low usage, this setting has been deprecated. Click [here]({{root_url}}/ui/account-and-settings/retired-mail-settings/) for more information.
 
 </call-out>
 
