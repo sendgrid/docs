@@ -54,7 +54,7 @@ Each SMTP call you make returns a response. `200` responses are usually success 
   <tr>
     <td>451</td>
     <td>`Authentication failed: Maximum credits exceeded`</td>
-    <td>There is a credit limit of emails per day enforced in error. [Contact support](https://support.sendgrid.com/hc/en-us) to remove that limit.</td>
+    <td>There is a credit limit of emails per day enforced in error. Contact support at https://support.sendgrid.com/hc/en-us to remove that limit.</td>
   </tr>
   <tr>
     <td>452</td>
