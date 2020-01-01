@@ -172,15 +172,15 @@ You don’t need to change your Email API plan. However, depending on your featu
 
 *Example*:
 
-You currently have a **Pro 300K Email API plan** and store **45,000 contacts** in Marketing Campaigns. **Net cost is $249.95** ($199.95 + $50).
+You currently have a **Pro 300K Email API plan** and store **45,000 contacts** in Marketing Campaigns. **Net cost is $369.00** ($249.00 + $120).
 
 In an average month, you send 90,000 emails via Email API, and 150,000 emails through Marketing Campaigns. 
 
 You want to use the new Advanced Marketing Campaigns features, including Automation. 
 
-In this scenario, you might choose to change your Email API plan to **Pro 100K**  and choose the **Marketing Campaigns Advanced 50K plan. Net cost will be $329.95** ($79.95 + $250). You can send 100,000 emails via Email API and 250,000 emails using Marketing Campaigns.
+In this scenario, you might choose to change your Email API plan to **Pro 100K**  and choose the **Marketing Campaigns Advanced 50K plan. Net cost will be $339.95** ($89.95 + $250). You can send 100,000 emails via Email API and 250,000 emails using Marketing Campaigns.
 
-## How do I upgrade my Marketing Campaigns plan? 
+## How do I upgrade my Marketing Campaigns plan?
 
 1. Navigate to **Settings**, click **Account Details**, and then **Your Products**.
 1. Review your current plan details as well as your usage this month. It’s helpful to have a sense of how many emails you’re sending and how many contacts you store.
