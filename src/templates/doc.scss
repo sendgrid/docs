@@ -11,17 +11,64 @@ $aside-width: 300px;
   }
 }
 
-.release-notes {
-  h2, h3 {
-    margin-left: -25px;
-    display: flex;
+/* Push headings below paragraphs in the
+stacking order to prevent covering links */
+.release-note {
+  h2 {
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+  h3 {
+    display: block;
+    position: relative;
+    z-index: 0;
   }
 }
 
-.sg-remarked-linked-header {
-  margin-left: -25px;
-  display: flex;
+/* Pull elements above headings in the
+stacking order to prevent covering links */
+.release-notes-key, .release-note p {
+  position: relative;
+  z-index: 2;
 }
+
+.sg-remarked-linked-header {
+  display: block;
+
+  & > a.anchor {
+    margin-left: -25px;
+  }
+}
+
+
+/* Pad linked headers so they are not hidden behind the fixed top navbar
+Navbar height is:
+  256px at $width-small-mobile (its tallest)
+  138px at $width-medium (its shortest) */
+.doc-main > div > .sg-remarked-linked-header::before,
+.release-note h2::before,
+.release-note h3::before {
+  display: block;
+  height: 262px;
+  margin-top: -262px;
+  content: '';
+  visibility: hidden;
+
+  @media (min-width: $width-nav-small) {
+    height: 243px;
+    margin-top: -243px;
+  }
+  @media (min-width: $width-nav-medium) {
+    height: 223px;
+    margin-top: -223px;
+  }
+  @media (min-width: $width-small) {
+    height: 145px;
+    margin-top: -145px;
+  }
+}
+
 
 .doc-main {
   flex: 1;
