@@ -20,6 +20,6 @@ The ability to send very relevant, timely emails directed to individual recipien
 
 <call-out>
 
-Interested in sending automated email? SendGrid Automation is a new offering that's currently in beta among select users. [Visit SendGrid.com](https://sendgrid.com/solutions/marketing-automation/?utm_source=docs) to learn more and be added to the waitlist.
+Interested in sending automated email? SendGrid provides [Marketing Campaigns Automation (click here to see more)](https://sendgrid.com/docs/ui/sending-email/getting-started-with-automation/).  This is available for packages using an ["Advanced" Marketing Campaigns plan](https://sendgrid.com/pricing/).  
 
 </call-out>
