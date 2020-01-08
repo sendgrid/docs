@@ -36,6 +36,8 @@ Our goal with the CLA is to clarify the rights of our contributors and reduce ot
 
 SendGrid does not merge a pull request made against a SendGrid open source project until that pull request is associated with a signed CLA. Copies of the CLA are available [here](https://gist.github.com/SendGridDX/98b42c0a5d500058357b80278fde3be8#file-sendgrid_cla).
 
+> Note: Pull Requests waiting on a signed CLA for 90 days or longer may be closed without merging as part of the routine maintenance of this repository.
+
 <a name="local"></a>
 ## Local Setup
 
