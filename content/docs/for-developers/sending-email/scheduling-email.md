@@ -35,5 +35,5 @@ This parameter allows SendGrid to begin processing your email requests before se
 
 Here's an example of how this timestamp might look in your SMTP API JSON header:
 
-`{ "send\_at": 1409348513 }`
+`{ "send_at": 1409348513 }`
 

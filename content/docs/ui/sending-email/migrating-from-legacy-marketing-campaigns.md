@@ -701,15 +701,15 @@ Use the legacy Marketing Campaigns API call to [Retrieve all Recipients](https:/
 
 **What happens if I choose not to migrate?** 
 
-Nothing will happen to your legacy Marketing Campaigns account until the product is discontinued at a later time in 2020. Until then, you can continue using legacy Marketing Campaigns as you’re used to. 
+Nothing will happen to your legacy Marketing Campaigns account until the product is discontinued. At this time, no date has been set for the deprecation of Legacy Marketing Campaigns. 
 
 **How long will legacy Marketing Campaigns be available?** 
 
-At this time no date has been set for the deprecation of Legacy Marketing Campaigns. At a minimum, it will remain available for you until some time in 2020.
+At this time no date has been set for the deprecation of Legacy Marketing Campaigns. If and when this occurs, we will be sure to communicate this news well in advance to ensure you have time to plan accordingly.
 
 **Once I’ve switched to new Marketing Campaigns, can I go back to using legacy Marketing Campaigns?**
 
-Yes, you can choose to upload contacts to legacy Marketing Campaigns and keep using it until the product is deprecated some time in 2020. Note, if you did not use legacy Marketing Campaigns prior to the launch of new Marketing Campaigns, you’ll need to speak to Support to gain access.
+Yes, you can choose to upload contacts to legacy Marketing Campaigns and keep using it until the product is deprecated. At this time, there is no planned date to deprecate legacy Marketing Campaigns. Note, if you did not use legacy Marketing Campaigns prior to the launch of new Marketing Campaigns, you’ll need to speak to Support to gain access.
   
 **What is the additional value of the new Marketing Campaigns vs. the legacy product?**
 
