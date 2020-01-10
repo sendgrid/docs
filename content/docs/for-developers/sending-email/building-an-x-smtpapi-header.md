@@ -59,6 +59,20 @@ SMTP works by passing a JSON string with as many SMTP objects as you want to Sen
 - When using the API, if our system encounters a parsing error, the message will be bounced to the address specified in the MAIL FROM portion of the SMTP session. The MAIL FROM address is re-written when we send the email out for final delivery, so it is safe to set this to an address that can receive the bounces so that you will be alerted to any errors.
 - When sending Unicode characters via the SMTP API, you should escape these characters using the `\u` escape character. When you do this, Unicode characters like ` á` becomes `\u00E1`.
 
+## 	Customizing your send (filters)	
+
+You can customize the emails you send via SMTP by using different settings (also referred to as filters). Change these settings in the **X-SMTPAPI header**.	
+
+The X-SMTPAPI header is a JSON-encoded associative array consisting of several sections, below are examples of JSON strings using each section. Add this header to any SMTP message sent to SendGrid and the instructions in the header will be interpreted and applied to that message’s transaction. You can enable these sections with the X-SMTPAPI header:	
+
+- [Scheduling Your Send](#scheduling-your-send)	
+- [Substitution Tags](#substitution-tags)	
+- [Suppression Groups](#suppression-groups)	
+- [Categories](#categories)	
+- [Unique Arguments](#unique-arguments)	
+- [SMTP Filters](#smtp-filters)	
+- [IP Pools](#ip-pools)
+
  ### 	Scheduling Your Send
 
 Schedule your email send time using the `send_at` parameter within your X-SMTPAPI header. Set the value of `send_at` to the [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time).
