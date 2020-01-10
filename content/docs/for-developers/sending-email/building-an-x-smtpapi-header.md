@@ -32,10 +32,6 @@ SMTP works by passing a JSON string with as many SMTP objects as you want to Sen
       "%buyerSection%"
     ]
   },
-  "section": {
-    "%sellerSection%": "Seller information for: %name%",
-    "%buyerSection%": "Buyer information for: %name%"
-  },
   "category": [
     "Orders"
   ],
@@ -62,42 +58,6 @@ SMTP works by passing a JSON string with as many SMTP objects as you want to Sen
 - Ensure that the header is limited to a maximum total line length of 1,000 characters. Failure to do this can cause intermediate MTA's to split the header on non-space boundaries- this causes inserted spaces in the final email. If your email is going through another MTA before reaching SendGrid, it is likely to have an even lower setting for maximum header length and may truncate the header.
 - When using the API, if our system encounters a parsing error, the message will be bounced to the address specified in the MAIL FROM portion of the SMTP session. The MAIL FROM address is re-written when we send the email out for final delivery, so it is safe to set this to an address that can receive the bounces so that you will be alerted to any errors.
 - When sending Unicode characters via the SMTP API, you should escape these characters using the `\u` escape character. When you do this, Unicode characters like ` á` becomes `\u00E1`.
-
-## 	Customizing your send (filters)
-
-You can customize the emails you send via SMTP by using different settings (also referred to as filters). Change these settings in the **X-SMTPAPI header**.
-
-For example, to send a blind carbon copy (BCC) of your email to the address example@example.com, include the following in your X-SMTPAPI header:
-
-```json
-{
-  "filters" : {
-    "bcc" : {
-      "settings" : {
-        "enable" : 1,
-        "email" : "example@example.com"
-      }
-    }
-  }
-}
-```
-
-<call-out type="warning">
-
-Make sure you include the "to" parameter in any X-SMTPAPI header you pass. Failing to do so could result in your customization not working.
-
-</call-out>
-
-The X-SMTPAPI header is a JSON-encoded associative array consisting of several sections, below are examples of JSON strings using each section. Add this header to any SMTP message sent to SendGrid and the instructions in the header will be interpreted and applied to that message’s transaction. You can enable these sections with the X-SMTPAPI header:
-
-- [Scheduling Your Send](#scheduling-your-send)
-- [Substitution Tags](#substitution-tags)
-- [Section Tags](#section-tags)
-- [Suppression Groups](#suppression-groups)
-- [Categories](#categories)
-- [Unique Arguments](#unique-arguments)
-- [SMTP Filters](#smtp-filters)
-- [IP Pools](#ip-pools)
 
  ### 	Scheduling Your Send
 
