@@ -15,20 +15,17 @@ You can update your billing details on the on the Billing tab of the [Account De
 
 For more information about understanding your bill, see [Reading your invoice]({{root_url}}/ui/account-and-settings/reading-your-invoice/).
 
-When you create or upgrade to a paid account, you add a credit card in for automatic payments. This will allow Twilio SendGrid to make the recurring package charges for your account without having to notify you each month of the bill. Twilio SendGrid relies on a PCI-DSS compliant 3rd party billing provider to store, process, and manage payment card processing.
+When you create or upgrade to a paid account, you add a credit card for automatic payments. This will allow Twilio SendGrid to make the recurring plan charges for your account without having to notify you each month of the bill. Twilio SendGrid relies on a PCI-DSS compliant 3rd party billing provider to store, process, and manage payment card processing.
 
-##     Payment methods
+## Payment methods
 
 Twilio SendGrid accepts credit or check cards. We charge accounts on a monthly basis; we do not offer pre-payment, quarterly billing, or annual billing at this time. We do not accept PayPal, wire transfer, checks, or any card requiring a PIN.
 
-You can update your card information, retry a failed payment, and export past invoices for your business on the Billing tab of your [Account Details]( https://app.sendgrid.com/account/billing) page. It is also possible to change your package type and cancel your account from this page.
+You can update your card information, retry a failed payment, and export past invoices for your business on the Billing tab of your [Account Details](https://app.sendgrid.com/account/billing) page. It is also possible to change your package type and cancel your account from this page.
 
+### Subusers
 
- ###     Subusers
-
-Subusers under a free Marketing Campaigns will only be able to upload 2,000 contacts. Subusers under an Advanced Marketing Campaigns plan will be able to continue uploading contacts, and the parent account will pay for any overages this subuser may cause by going over the overall limit on the paid plan.
-
-
+Subusers under a free Marketing Campaigns plan will be able to upload only 2,000 contacts. Subusers under an Advanced Marketing Campaigns plan will be able to continue uploading contacts, and the parent account will pay for any overages the subuser may cause by exceeding the overall limit on the paid plan.
 
 <call-out type="warning">
 
@@ -36,39 +33,37 @@ If you are still on the **legacy Marketing Campaigns plan**, each subuser may st
 
 </call-out>
 
-
 <call-out>
 
 We bill the parent account for each unique contact, regardless of how many lists or segments that contact appears on. However, if there are one or more subusers under a parent account, we bill the parent account for all unique contacts stored on each account, even for the same contacts stored on multiple subuser accounts.
 
 </call-out>
 
-##    Account Warning States
+## Account Warning States
 
-If your account payments aren’t up-to-date you may see one of the following warning states in displayed in your account. 
+If your account payments aren’t up-to-date, you may see one of the following warning states displayed in your account.
 
-**Billing warned** - “You have unpaid invoices. Please update your payment details or retry your payment.”
+### Billing warned
+
+> “You have unpaid invoices. Please update your payment details or retry your payment.”
 
 This warns you that your service may be interrupted unless you settle any outstanding balance on your account. This warning may occur if the card on file for your account gets declined when we attempt to process your payment on the first of the month.
 
-To update your account, please update your credit card on file by logging into the Twilio SendGrid app and going to the Billing tab on your [Account Details page]( https://app.sendgrid.com/account/billing). Update your card information and then click **Save**. Once you update the card on file, the payment processes automatically, and your account is unfrozen.
+To update your account, please update your credit card on file by logging into the Twilio SendGrid app and going to the Billing tab on your [Account Details page](https://app.sendgrid.com/account/billing). Update your card information and then click **Save**. Once you update the card on file, the payment processes automatically, and your account is unfrozen.
 
-**Billing Frozen**
+### Billing Frozen
 
-If you find your account suddenly unable to send mail within the first week of the month, your account could be in a billing frozen state. This frozen state occurs when we attempt to process your payment on the first day of the month, but the card on file for your account gets declined.
+If you find your account is suddenly unable to send mail within the first week of the month, your account could be in a billing frozen state. This frozen state occurs when we attempt to process your payment on the first day of the month, but the card on file for your account gets declined.
 
-To reactivate your account, please update your credit card on file by logging into the Twilio SendGrid UI and going to the **Billing** tab on your [Account Details page]( https://app.sendgrid.com/account/billing). Update your card information and then click **Save**. Once you update the card on file, the payment processes automatically, and your account is unfrozen.
+To reactivate your account, please update your credit card on file by logging into the Twilio SendGrid UI and going to the **Billing** tab on your [Account Details page](https://app.sendgrid.com/account/billing). Update your card information and then click **Save**. Once you update the card on file, the payment processes automatically, and your account is unfrozen.
 
+## Marketing Campaigns Plans
 
-## Plans
+Each [Marketing Campaigns](https://sendgrid.com/pricing/) package will cover both contact storage and email sends that you use via Single Sends or Automation within Marketing Campaigns. Emails you send via the [Email API](#email-api-plans) will not be deducted from your Marketing Campaigns plan.
 
-### Marketing Campaigns
+### Free Plan
 
-Each [Marketing Campaigns](https://sendgrid.com/pricing/) package will cover both contact storage and email sends that you use via Single Sends or Automation within Marketing Campaigns. Emails you send via [Email API](#email-api) will not be deducted from your Marketing Campaigns plan.
-
-**Free Plan**
-
-*Features include:*
+#### Features include:
 
 * Automation
 * Single Sends for one-time campaigns
@@ -76,21 +71,21 @@ Each [Marketing Campaigns](https://sendgrid.com/pricing/) package will cover bot
 * 3 Email Testing Credits per month
 * 1 Signup Form
 
-*Limits:*
+#### Limits:
 
-* 6,000 emails/month - Emails sent via Single Sends or Automation count towards your allotment. Any Single Sends you attempt to send that exceed your 6,000 limit will send partially up to that limit. 
+* 6,000 emails/month - Emails sent via Single Sends or Automation count toward your allotment. Any Single Sends you attempt to send that exceed your 6,000 email limit will send partially up to that limit.
 
 <call-out>
-  
-For example, if you have 400 emails remaining and attempt to send a Single Send to an audience of 1,000, 600 of the emails will be dropped. Similarly, Automations will cease sending once you’ve hit 6,000 email sends via Marketing Campaigns in a month. If a contact meets the entry criteria of an Automation after you’ve reached your send limit, they will not receive any emails, and will not be “caught up” once you upgrade your plan or a new month allotment increases. 
+
+For example, if you have 400 emails remaining and attempt to send a Single Send to an audience of 1,000, 600 of the emails will be dropped. Similarly, Automations will cease sending once you’ve hit 6,000 email sends via Marketing Campaigns in a month. If a contact meets the entry criteria of an Automation after you’ve reached your send limit, they will not receive any emails, and they will not be “caught up” once you upgrade your plan or a new month allotment increases.
 
 </call-out>
 
-* 2,000 contacts - Contacts you attempt to upload via CSV, or that are added via Signup Forms or the Contacts API will be dropped if you exceed 2,000 total contacts. 
+* 2,000 contacts - Contacts, whether you attempt to upload them via CSV, or they are added via Signup Forms or the Contacts API, will be dropped if you exceed 2,000 total contacts.
 
 *What to do if you’ve reached your limit:*
 
-You will be alerted when you have reached your limit each month. To keep your Automations and Signup Forms active, upgrade to Basic or Advanced. Once you upgrade, your account will never be blocked due to limits, you’ll simply pay overages for any usage that exceeds your Basic or Advanced tier allotment.
+You will be alerted when you have reached your limit each month. To keep your Automations and Signup Forms active, upgrade to the Basic or Advanced plan. Once you upgrade, your account will never be blocked due to limits, you’ll simply pay overages for any usage that exceeds your Basic or Advanced tier allotment.
 
 <call-out type="warning">
 
@@ -98,9 +93,9 @@ If you’re on the Free package and hit your contact allotment limit, any active
 
 </call-out>
 
-**Basic Plan**
+### Basic Plan
 
-*Features include:*
+#### Features include:
 
 * Single Sends for one-time campaigns
 * Ticket, chat, and phone support
@@ -109,16 +104,17 @@ If you’re on the Free package and hit your contact allotment limit, any active
 * 1 Teammate
 * Access to Expert Services
 
-*Limits:*
+#### Limits:
+
 * 5,000 - 15,000 emails/month depending on the plan you purchase. Emails sent via Single Sends count towards your allotment. 
 * Up to 100,000 contacts
 
 
-**Advanced Plan**
+### Advanced Plan
 
-*Features include:*
+#### Features include:
 
-* Automation 
+* Automation
 * Single Sends for one-time campaigns
 * Ticket, chat, and phone support
 * 60 Email Testing Credits per month with the option to purchase more
@@ -128,23 +124,25 @@ If you’re on the Free package and hit your contact allotment limit, any active
 * Subuser Management
 * Dedicated IP Included
 
-*Limits:*
+#### Limits:
 
 * 200,000+ emails/month depending on the plan you purchase. Emails sent via Single Sends or Automation count towards your allotment.
 * 1 million+ contacts
 
-If you exceed your plan allotment of contacts or overages you will be charged a [small amount]({{root_url}}/ui/account-and-settings/billing/#limits-and-overage-rates) per email sent and per contact stored, above the limits of your current Marketing package. Any overage charges will appear on the invoice of the month _after_ any over-limit sending and contact storage occurs.
+If you exceed your plan allotment of contacts or overages you will be charged a [small amount]({{root_url}}/ui/account-and-settings/billing/#limits-and-overage-rates) per email sent and per contact stored above the limits of your current Marketing package. Any overage charges will appear on the invoice of the month _after_ any over-limit sending and contact storage occurs.
 
 ### Understanding Contact Counts in Marketing Campaigns
 
-**Free Plan**
+#### Free Plan
+
 You can add and store up to 2,000 contacts to your account each month. The number you can add depends on whether you already have contacts stored in your account. For example, if you have 500 contacts in your account, and you haven’t added any yet this month, you can add up to 1,500 more contacts.
 
-If you *update or add new data about existing contacts* in your Marketing Campaigns account, it will not count against the number of contacts you can add. 
+If you *update or add new data about existing contacts* in your Marketing Campaigns account, it will not count against the number of contacts you can add.
 
-If you *delete a contact and re-add them*, that is counted as a new add. 
+If you *delete a contact and re-add them*, that is counted as a new add.
 
-**Basic & Advanced Plans**
+#### Basic & Advanced Plans
+
 Your plan tier comes with an allotment of contacts that you can add to and store in your account each month. For example, if you’re on the Advanced 100K plan, you can add up to 100,000 contacts. 
 
 The number you can add each month depends on whether you already have contacts stored in your account. For example, if you currently have 5,000 contacts in your account, and you haven’t added any yet this month, you can add up to 95,000 more contacts.
@@ -155,68 +153,75 @@ If you *delete a contact and re-add them*, that is counted as a new add.
 
 If you exceed your allotment of contacts in a given month, you’ll be charged overages according to your chosen Marketing Campaigns package. 
 
+## Email API Plans
 
-### Email API
+The [Email API package](https://sendgrid.com/pricing/) includes charges for any emails you send over the Twilio SendGrid Email API. Sending emails through the API with this package will not deduct from your Marketing Campaigns plan.
 
-This [package](https://sendgrid.com/pricing/) includes charges for any emails you send over the Twilio SendGrid Email API.  Sending emails through the API with this package will not deduct from your Marketing Campaigns plan.
+### Free
 
- **Free**
-
-*Features include:*
+#### Features include:
 
 * APIs, SMTP Relay, and Webhooks
 * Libraries and documentation
 * Delivery Optimization Tools
 * Transactional Template Editor
+* 3 days of Email Activity History
+* 3 Email Testing credits during the trial period
 * Ticket Support
 
-*Limits:*
+#### Limits:
 
 * 40,000 emails/day for your first 30 days
 * 100 emails/day indefinitely after your first 30 days are over
+* No ability to purchase additional Email Testing credits
 
+### Essentials
 
-**Essentials**
-
-*Features include:* 
-
-* APIs, SMTP Relay, and Webhooks
-* Libraries and documentation
-* Delivery Optimization Tools
-* Transactional Template Editor
-* Ticket, chat, and phone support
-
-*Limits:*
-
-* Up to 100,000+ emails/month depending on the package you purchase. 
-
-**Pro**
-
-*Features include:*
+#### Features include:
 
 * APIs, SMTP Relay, and Webhooks
 * Libraries and documentation
 * Delivery Optimization Tools
 * Transactional Template Editor
-* Ticket, chat, and phone support
+* 3 days of Email Activity History
+* Ticket and chat
+
+#### Limits:
+
+* Up to 100,000+ emails/month depending on the package you purchase.
+* No Email Testing access
+
+### Pro
+
+#### Features include:
+
+* APIs, SMTP Relay, and Webhooks
+* Libraries and documentation
+* Delivery Optimization Tools
+* Transactional Template Editor
 * Dedicated IP Included
 * Subuser Management
+* 7 days of Email Activity History
+* 60 Email Testing credits with the ability to purchase more
+* Ticket, chat, and phone support
 
-*Limits:*
+#### Limits:
 
 * Up to 1.5 million+ emails/month depending on the package you purchase.
 
-**Premier** 
+### Premier
 
-*Features include:*
+#### Features include:
 
 * APIs, SMTP Relay, and Webhooks
 * Libraries and documentation
 * Delivery Optimization Tools
 * Transactional Template Editor
-* Ticket, chat, and phone support
 * Dedicated IP Included
 * Subuser Management
+* 7 Days of Email Activity History
+* 500 Email Testing credits with the ability to purchase more
+* Ticket, chat, and phone support
 
 ## Limits and Overage Rates
 
@@ -237,7 +242,7 @@ Upgrading your account does NOT absorb already incurred overage charges, so make
    <th colspan="3">Marketing Campaigns Overage Costs</th>
  </tr>
  <tr>
-   <td colspan="3">The exact amount you pay will vary month-to-month if you exceed your plan allotment of email sends or contact storage.   <br>If you go over your plan limits, here’s a breakdown of the overage costs you’ll incur:</td>
+   <td colspan="3">The exact amount you pay will vary month-to-month if you exceed your plan allotment of email sends or contact storage.<br>If you go over your plan limits, here’s a breakdown of the overage costs you’ll incur:</td>
  </tr>
  <tr>
    <td>Plan Information</td>
@@ -336,22 +341,27 @@ Upgrading your account does NOT absorb already incurred overage charges, so make
  <tr>
    <td>Pro 100K</td>
    <td>100,000 emails</td>
-   <td>$0.00085</td>
+   <td>$0.00100</td>
  </tr>
  <tr>
    <td>Pro 300K</td>
    <td>300,000 emails</td>
-   <td>$0.00050</td>
+   <td>$0.00063</td>
  </tr>
  <tr>
    <td>Pro 700K</td>
    <td>700,000 emails</td>
-   <td>$0.00045</td>
+   <td>$0.00051</td>
  </tr>
  <tr>
    <td>Pro 1.5M</td>
    <td>1,500,000 emails</td>
-   <td>$0.00045</td>
+   <td>$0.00048</td>
+ </tr>
+ <tr>
+   <td>Pro 2.5M, Pro 2.5M Legacy</td>
+   <td>2,500,000 emails</td>
+   <td>$0.00047</td>
  </tr>
  <tr>
    <td>Premier</td>
@@ -363,13 +373,12 @@ Upgrading your account does NOT absorb already incurred overage charges, so make
  </tr>
 </table>
 
-
-##     Requesting a refund
+## Requesting a refund
 
 You must meet both criteria below for a refund to be considered:
 
-- You have not used your account in the current calendar month.
-- You have no overages, and you have no contacts stored in Marketing Campaigns.
+* You have not used your account in the current calendar month.
+* You have no overages, and you have no contacts stored in Marketing Campaigns.
 
 Twilio SendGrid packages operate off of a monthly subscription model, not direct usage. We will not issue a refund if you have used your account in the same calendar month as your request. Instead, please cancel your account to avoid any future subscription charges.
 
@@ -377,21 +386,21 @@ Refunds are only applicable to the current subscription charge on your account, 
 
 If you meet these conditions, please respond directly to the invoice email you have received, or email billing@sendgrid.com to begin the discussion about a possible refund.
 
-##     Changing your plan
+## Changing your plan
 
-You can change your plan under the Email API or Marketing Campaigns sections on the Your Products tab of the [Account Details page](https://app.sendgrid.com/account/products).
+You can change your plan under the Email API or Marketing Campaigns sections on the "Your Products" tab of the [Account Details page](https://app.sendgrid.com/account/products).
 
 <call-out type="warning">
 
 **Please note:** Downgrading from a paid Basic or Advanced Marketing Campaigns plan to a Free account will permanently delete all contacts associated with that account. You will need to reimport any contacts that you would like to use with your Free account.
 
-Other limits (like the number of Signup Forms or Email Testing credits available to you) will downgrade to the Free plan limits, keeping the most recently updated items when applicable. For example, if you have 10 Signup Forms and downgrade to a Free plan, we will keep your most recently updated Signup Form and remove the other 9. 
+Other limits (like the number of Signup Forms or Email Testing credits available to you) will downgrade to the Free plan limits, keeping the most recently updated items when applicable. For example, if you have 10 Signup Forms and downgrade to a Free plan, we will keep your most recently updated Signup Form and remove the other 9.
 
 </call-out>
 
-##     Cancelling your account
+## Cancelling your account
 
-To cancel your account, go to the bottom of the Your Products tab of the [Account Details page]( https://app.sendgrid.com/account/products), click **Cancel Account**, and follow the prompts.
+To cancel your account, go to the bottom of the "Your Products" tab of the [Account Details page](https://app.sendgrid.com/account/products), click **Cancel Account**, and follow the prompts.
 
 <call-out>
 
@@ -399,7 +408,7 @@ When you cancel an account, it changes to a [free](https://sendgrid.com/free?mc=
 
 </call-out>
 
-##     Additional Resources
+## Additional Resources
 
-- [SendGrid Pricing](https://sendgrid.com/pricing/)
-- [Reading your invoice]({{root_url}}/ui/account-and-settings/reading-your-invoice/)
+* [SendGrid Pricing](https://sendgrid.com/pricing/)
+* [Reading your invoice]({{root_url}}/ui/account-and-settings/reading-your-invoice/)

@@ -9,15 +9,11 @@ seo:
   title: Email testing
   keywords: email testing, send test email, email rendering test
   override: true
-  Description: How to use SendGrid's new email testing feature to preview your email renders, performs against spam filters, and validate the links within your email.
+  Description: How to use SendGrid's new email testing feature to preview how your email renders, performs against spam filters, and validate the links within your email.
+  
 ---
-<call-out>
 
-Email Testing is available as part of the new Marketing Campaigns. To access this feature, please switch over to the [new Marketing Campaigns experience](https://sendgrid.com/pricing/).
-
-</call-out>
-
-Email testing offers robust, pre-send testing of your emails, including in-app spam testing, inbox rendering previews, and link validation without leaving your Marketing Campaigns workflow. It allows you to preview how an email is likely to perform across a wide range of inbox providers, devices, and spam filters, before sending.
+Email testing offers robust, pre-send testing of your emails, including in-app spam testing, inbox rendering previews, and link validation without leaving your workflow. It allows you to preview how an email is likely to perform across a wide range of inbox providers, devices, and spam filters, before sending.
 
 - **Inbox Rendering Test:** Displays how an email message is rendered and appears across a select group of inbox providers and devices.
 - **Spam Test:** Shows how an email performs against the world’s most powerful consumer (B2C) and enterprise (B2B) spam filters.
@@ -28,22 +24,34 @@ Email testing offers robust, pre-send testing of your emails, including in-app s
 ## Email Testing credits and pricing
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 The number of Email Testing credits available to you depends on your Marketing Campaigns or Email API plan. For more information on email plans, see our [pricing page](https://sendgrid.com/pricing/). Email Testing credits can be used for both Inbox Rendering Tests and Spam Tests and all Email Testing credits (whether part of your plan or purchased as part of an add-on package) expire at the end of each month.
 =======
 The number of Email Testing credits available to you depends on your Marketing Campaigns plan. 10 Email Testing credits per month are available for customers on Basic plans, with 60 Email Testing credits per month available to customers on Advanced plans. Email Testing credits can be used for both Inbox Rendering Tests and Spam Tests and all Email Testing credits (whether part of your plan or purchased as part of an add-on package) expire at the end of each month. 
 >>>>>>> upstream/develop
+=======
+The number of Email Testing credits available to you depends on your Marketing Campaigns or Email API plan. For more information on email plans, see our [pricing page](https://sendgrid.com/pricing/). Email Testing credits can be used for both Inbox Rendering Tests and Spam Tests, and all Email Testing credits (whether part of your plan or purchased as part of an add-on package) expire at the end of each month.
+>>>>>>> upstream/develop
 
 ## Purchasing additional credits
 
-If you find yourself in need of more credits than your Marketing Campaigns plan offers, we offer additional Email Testing credit packages as add-ons to your monthly plan.
+If you find yourself in need of more credits than your email plan offers, we offer additional Email Testing credit packages as add-ons to your monthly plan.
 
 <callout>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> upstream/develop
 Packages for additional Email Testing credits are billed on a monthly, recurring basis and will continue to renew each month unless removed from your account.
+
 </callout>
+<<<<<<< HEAD
 =======
   Note: Packages for additional Email Testing credits are billed on a monthly, recurring basis and will continue to renew each month unless removed from your account.
   </callout>
+>>>>>>> upstream/develop
+=======
 >>>>>>> upstream/develop
   
   Available Email Testing credit add-on packages are:
@@ -57,9 +65,14 @@ Packages for additional Email Testing credits are billed on a monthly, recurring
 ## Running an Email Test
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Email testing is available for both Marketing Campaigns and emails within API plans ultilizing Dynamic Templates. 
 
 =======
+>>>>>>> upstream/develop
+=======
+Email testing is available for both Marketing Campaigns and emails within API plans ultilizing Dynamic Templates. 
+
 >>>>>>> upstream/develop
 *To test an email:*
 
@@ -94,5 +107,3 @@ Every inbox rendering test that you run automatically includes a link validation
 - [Design Editor]({{root_url}}/ui/sending-email/editor/#-The-Design-Editor)
 - [Code Editor]({{root_url}}/ui/sending-email/editor/#the-code-editor)
 - [Dynamic Templates]({{root_url}}/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/)
-
-
