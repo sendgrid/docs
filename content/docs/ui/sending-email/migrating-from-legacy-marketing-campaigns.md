@@ -172,15 +172,15 @@ You don’t need to change your Email API plan. However, depending on your featu
 
 *Example*:
 
-You currently have a **Pro 300K Email API plan** and store **45,000 contacts** in Marketing Campaigns. **Net cost is $249.95** ($199.95 + $50).
+You currently have a **Pro 300K Email API plan** and store **45,000 contacts** in Marketing Campaigns. **Net cost is $369.00** ($249.00 + $120).
 
 In an average month, you send 90,000 emails via Email API, and 150,000 emails through Marketing Campaigns. 
 
 You want to use the new Advanced Marketing Campaigns features, including Automation. 
 
-In this scenario, you might choose to change your Email API plan to **Pro 100K**  and choose the **Marketing Campaigns Advanced 50K plan. Net cost will be $329.95** ($79.95 + $250). You can send 100,000 emails via Email API and 250,000 emails using Marketing Campaigns.
+In this scenario, you might choose to change your Email API plan to **Pro 100K**  and choose the **Marketing Campaigns Advanced 50K plan. Net cost will be $339.95** ($89.95 + $250). You can send 100,000 emails via Email API and 250,000 emails using Marketing Campaigns.
 
-## How do I upgrade my Marketing Campaigns plan? 
+## How do I upgrade my Marketing Campaigns plan?
 
 1. Navigate to **Settings**, click **Account Details**, and then **Your Products**.
 1. Review your current plan details as well as your usage this month. It’s helpful to have a sense of how many emails you’re sending and how many contacts you store.
@@ -701,15 +701,15 @@ Use the legacy Marketing Campaigns API call to [Retrieve all Recipients](https:/
 
 **What happens if I choose not to migrate?** 
 
-Nothing will happen to your legacy Marketing Campaigns account until the product is discontinued at a later time in 2020. Until then, you can continue using legacy Marketing Campaigns as you’re used to. 
+Nothing will happen to your legacy Marketing Campaigns account until the product is discontinued. At this time, no date has been set for the deprecation of Legacy Marketing Campaigns. 
 
 **How long will legacy Marketing Campaigns be available?** 
 
-At this time no date has been set for the deprecation of Legacy Marketing Campaigns. At a minimum, it will remain available for you until some time in 2020.
+At this time no date has been set for the deprecation of Legacy Marketing Campaigns. If and when this occurs, we will be sure to communicate this news well in advance to ensure you have time to plan accordingly.
 
 **Once I’ve switched to new Marketing Campaigns, can I go back to using legacy Marketing Campaigns?**
 
-Yes, you can choose to upload contacts to legacy Marketing Campaigns and keep using it until the product is deprecated some time in 2020. Note, if you did not use legacy Marketing Campaigns prior to the launch of new Marketing Campaigns, you’ll need to speak to Support to gain access.
+Yes, you can choose to upload contacts to legacy Marketing Campaigns and keep using it until the product is deprecated. At this time, there is no planned date to deprecate legacy Marketing Campaigns. Note, if you did not use legacy Marketing Campaigns prior to the launch of new Marketing Campaigns, you’ll need to speak to Support to gain access.
   
 **What is the additional value of the new Marketing Campaigns vs. the legacy product?**
 

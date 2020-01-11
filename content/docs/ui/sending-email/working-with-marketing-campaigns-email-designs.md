@@ -17,7 +17,9 @@ This page refers to the new Marketing Campaigns product. If you’re using legac
 
 </call-out>
 
-<iframe src="https://player.vimeo.com/video/120738522" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/380558358" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+<iframe src="https://player.vimeo.com/video/380559291" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 Marketing Campaigns email designs determine how the content of your Single Send or Automation emails will be built and displayed to your recipients. Email designs also serve as a quick starting point for future emails by saving you time from having to rebuild your email's layout. Consequently, designs allow you to reuse content and maintain brand consistency across all of your email marketing efforts.
 
