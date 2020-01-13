@@ -12,7 +12,7 @@ seo:
   description: This page explains the changes to Twilio SendGrid mail settings coming in Q1 2020
 ---
 
-As we continuously modernize our email delivery infrastructure, we will be sunsetting some sparsely used features in order to improve efficiency. 
+As we continuously modernize our email delivery infrastructure, we have sunset some sparsely used features in order to improve efficiency. 
 
 <table>
   <tr>

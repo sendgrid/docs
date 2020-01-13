@@ -27,9 +27,9 @@ The Address Whitelist setting whitelists a specified email address or domain for
 
 <call-out type="warning">
 
-Due to low usage, this setting will be deprecated Q1 of 2020. Click [here]({{root_url}}/ui/account-and-settings/retired-mail-settings/) for more information.
+Due to low usage, this setting has been deprecated. Click [here]({{root_url}}/ui/account-and-settings/retired-mail-settings/) for more information.
 
-</call-out>
+</call-out>	
 
 Automatically sends a blind carbon copy (BCC) to an address for every email sent without adding that address to the header. Please note that only one email address may be entered in this field, if you wish to distribute BCCs to multiple addresses you will need to create a distribution group or use forwarding rules.
 
@@ -144,9 +144,9 @@ This setting wraps an HTML template around your email content. This can be usefu
 
 <call-out type="warning">
 
-Due to low usage, this setting will be deprecated Q1 of 2020. Click [here]({{root_url}}/ui/account-and-settings/retired-mail-settings/) for more information.
+Due to low usage, this setting has been deprecated. Click [here]({{root_url}}/ui/account-and-settings/retired-mail-settings/) for more information.
 
-</call-out>
+</call-out>	
 
 The Plain Content setting will automatically convert any plain text emails that you send to HTML before sending (if disabled).
 
@@ -166,9 +166,9 @@ Large plain text files are sometimes unable to be converted to HTML. Instead, Se
 
 <call-out type="warning">
 
-Due to low usage, this setting will be deprecated Q1 of 2020. Click [here]({{root_url}}/ui/account-and-settings/retired-mail-settings/) for more information.
+Due to low usage, this setting has been deprecated. Click [here]({{root_url}}/ui/account-and-settings/retired-mail-settings/) for more information.
 
-</call-out>
+</call-out>	
 
 The Spam Checker setting, is useful when your web application allows your end users to create content that is then emailed through your SendGrid account. Since emailing user generated content is hard to monitor and can often be abused by spammers, the Spam Checker filter notifies you when emails are detected that exceed a predefined spam threshold.
 

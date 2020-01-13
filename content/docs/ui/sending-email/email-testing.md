@@ -34,7 +34,7 @@ If you find yourself in need of more credits than your email plan offers, we off
 Packages for additional Email Testing credits are billed on a monthly, recurring basis and will continue to renew each month unless removed from your account.
 
 </callout>
-  
+
   Available Email Testing credit add-on packages are:
   
   <ul>
