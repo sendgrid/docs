@@ -31,8 +31,8 @@ Now that you've integrated, learn to [build SMTP email]({{root_url}}/for-develop
 
  ### 	Rate limits
 
-- You may send up to **100 messages per SMTP connection**.
-- You may open up to **10 concurrent connections from a single server**.
+- You may send up to **5k messages per SMTP connection**.
+- You may open up to **10k concurrent connections from a single server**.
 
 ## 	Additional Resources
 
