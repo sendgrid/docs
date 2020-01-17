@@ -12,6 +12,8 @@ seo:
   description:
 ---
 
+<iframe src="https://player.vimeo.com/video/385360784" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
 <call-out>
 
 The content on this page describes the experience in the latest version of Marketing Campaigns. If you’re using the legacy version of Marketing Campaigns, your experience may be different. To explore Marketing Campaigns plans and upgrade, click [here](https://sendgrid.com/pricing).
