@@ -15,6 +15,8 @@ seo:
 A/B Testing is available for Single Sends only. It is not currently available for emails included as part of an Automation.
 </call-out>
 
+<iframe src="https://player.vimeo.com/video/385360745" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
 Optimize the engagement of your Marketing Campaigns with A/B testing. A/B testing (sometimes also referred to by marketers as 'split testing') allows you to send different versions of your Single Sends to an initial subset of your contacts.
 
 When recipients interact with the emails sent during an A/B test, we will compare the engagement metrics and automatically choose the winning version of your campaign according to the A/B test criteria you set (opens or clicks).
