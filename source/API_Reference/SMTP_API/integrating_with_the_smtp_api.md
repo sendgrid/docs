@@ -40,8 +40,8 @@ SMTP Ports
 Rate limits
 {% endanchor %}
 
-- You may send up to **100 messages per SMTP connection**.
-- You may open up to **10 concurrent connections from a single server**.
+- You may send up to **5k messages per SMTP connection**.
+- You may open up to **10k concurrent connections from a single server**.
 
 {% anchor h2 %}
 Additional Resources
