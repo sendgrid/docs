@@ -26,4 +26,4 @@ You can contact SendGrid support from the [SendGrid Support Portal](https://supp
  	
 * Ticket support - 24/7
 * Chat support - 24/7
-* Phone support is available 7:00AM - 5:00PM MST, Monday - Friday.
+* Phone support is available 8:00AM - 5:00PM MST, Monday - Friday.
