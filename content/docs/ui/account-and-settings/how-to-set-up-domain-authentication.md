@@ -59,7 +59,7 @@ _To set up domain authentication:_
 
 A recent change with how GoDaddy handles new DNS record values automatically adds your domain, resulting in a CNAME entry with too much information and a failure when trying to complete domain authentication. An example of this would be **em123.yourdomain.com.yourdomain.com**.
 
-DigitalOcean has this same behaviour in their Networking - Manage Domain - Create new record section.
+>DigitalOcean and Amazon Route 53 has this same behaviour in their Networking - Manage Domain - Create new record section.
 
 Below is an example of the CNAME values under the HOST column as they are displayed and how you will need to enter them into your GoDaddy/DigitalOcean DNS Management:
 
