@@ -26,7 +26,7 @@ Transactional templates are account and Subuser specific. Templates created on a
 
 ## 	Creating a template
 
-1. Open the transactional templates page and then click **Create Template**.
+1. Open the [Legacy Templates](https://sendgrid.com/templates) page and then click **Create Template**.
 1. Add a unique template name in the dialogue box and then click **Save**.
 1. Open the **Actions** drop-down menu to create a new version.
 1. Click **Add Version**.
