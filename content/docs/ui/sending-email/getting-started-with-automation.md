@@ -61,7 +61,7 @@ Contacts will only receive your automation if you add them to the list you selec
 
 <call-out>
 
-If you select “no longer meet entry criteria”, before each email in your series sends, Automation will check to make sure each recipient is still on the entry criteria list. If they aren’t, they won’t get the email. For more information on deleting contacts or removing them from lists, see [link text]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#edit-or-remove-contacts-from-a-list).
+If you select “no longer meet entry criteria”, before each email in your series sends, Automation will check to make sure each recipient is still on the entry criteria list. If they aren’t, they won’t get the email. For more information on deleting contacts or removing them from lists, see [Create and Manage Contacts]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#edit-or-remove-contacts-from-a-list).
 
 </call-out>
 
