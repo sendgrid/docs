@@ -9,12 +9,6 @@ navigation:
 
 ## Sending MIME Mail
 
-Some mailers, such as Apple Mail, place Multipurpose Internet Mail Extensions (MIME) into emails automatically which can cause our system to parse the boundaries incorrectly. If you do notice a problem with the content from your email not rendering correctly, please do the following:
-
-1. Log into your SendGrid account, click **Settings**, then select **Mail Settings**. 
-2. Expand the menu next to Plain Content by clicking on the arrow, and then toggle the button in the list to **ON**. 
-3. Send another email using your application to test the settings.
-
 Some mail clients, such as Outlook and Thunderbird, appear to insert double spacing line breaks at every line. The reason is that those mail clients set the 'content-transfer-encoding' in MIME to 'quoted-printable' which adds Carriage Return Line Feed (CRLF) line breaks to the source content of the email which are characters interpreted by these mail clients. To alleviate this problem, please do the following:
 
 1. If you can customize the MIME settings for your email, set the 'Content-Transfer-Encoding' to '7bit' instead of 'Quoted-Printable.'

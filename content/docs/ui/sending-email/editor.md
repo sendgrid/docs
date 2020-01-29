@@ -591,7 +591,7 @@ Next, you’ll have to add a `<style>` to specify that you want to use this new 
     body {
         font-family: 'Oswald',
         sans-serif;
-    
+    }
 </style>
 ```
 
