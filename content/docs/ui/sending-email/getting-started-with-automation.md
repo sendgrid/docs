@@ -12,6 +12,8 @@ navigation:
   show: true
 ---
 
+<iframe src="https://player.vimeo.com/video/382215903" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
 <call-out>
 
 Automation is available as part of the Advanced Marketing Campaigns package. To access this feature, please upgrade to Advanced Marketing Campaigns from [Your Products](https://app.sendgrid.com/account/billing).
