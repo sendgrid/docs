@@ -21,7 +21,7 @@ Before you create and send an email using a dynamic transactional template you n
 
 ## Design a dynamic transactional template
 
-1. Open the [transactional templates](https://sendgrid.com/dynamic_templates) page and click **Create Template**.
+1. Open the [Dynamic Transactional Templates](https://sendgrid.com/dynamic_templates) page and click **Create Template**.
 2. Add a unique template name and then click **Save**.
 3. To begin editing your new template, click **Add Version**.
 4. Select an editor and click **Continue**.
