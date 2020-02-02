@@ -103,7 +103,7 @@ Only a parent account can set up reverse DNS for an IP address. For a subuser ac
 
 ## 	What do I do if I have more than 10 IPs?
 
-There is a character limit in SPF (sender policy framework) records that means that if you have more than 10 IP addresses, they will not fit in the record. When this is true, we will provide you with the generic SendGrid SPF record which includes all IPs at SendGrid, not just yours. If you would like to secure your SPF record only to include your IPs, you can chain multiple SPF records together manually. For more information see Open SPF’s [website](http://www.openspf.org/).
+There is a character limit in SPF (sender policy framework) records that means that if you have more than 10 IP addresses, they will not fit in the record. When this is true, we will provide you with the generic SendGrid SPF record which includes all IPs at SendGrid, not just yours. If you would like to secure your SPF record only to include your IPs, you can chain multiple SPF records together manually. For more information see Open SPF’s [website](http://www.open-spf.org/).
 
 ## 	Additional resources
 
