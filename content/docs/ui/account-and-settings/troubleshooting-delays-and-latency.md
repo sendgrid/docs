@@ -32,7 +32,7 @@ Experiencing delays? Check our [Status Page](http://status.sendgrid.com/) for th
 * [Go](https://github.com/sendgrid/sendgrid-go/blob/master/README.md)
 * [Java](https://github.com/sendgrid/sendgrid-java/blob/master/README.md)
 
-**2.** You can use our SMTPAPI to greatly increase your message throughput. As with SMTP, 100 messages can be sent with each connection, but there can be 1000 [TO: recipients]({{root_url}}/for-developers/sending-email/getting-started-smtp/) for each message using the x-smtpapi header. You can use this option through SMTP sending as well as the [Web API v3]({{root_url}}/api-reference).
+**2.** You can use our SMTPAPI to greatly increase your message throughput. As with SMTP, 5000 messages can be sent with each connection, but there can be 1000 [TO: recipients]({{root_url}}/for-developers/sending-email/getting-started-smtp/) for each message using the x-smtpapi header. You can use this option through SMTP sending as well as the [Web API v3]({{root_url}}/api-reference).
 
 **3.** Lastly, you can try to open additional connections from your end: Generally, we recommend a maximum of 10 concurrent connections. However, please note that SendGrid can generally handle as much mail as you can throw at us. One thing to ensure is to make certain that the maximum amount of mail is passed before terminating each connection. We recommend using caution when incrementing your number of active connections.
 
@@ -40,14 +40,11 @@ Experiencing delays? Check our [Status Page](http://status.sendgrid.com/) for th
 
 More often that not, one of the 3 suggestions above will resolve a latency problem. However, some latency issues are simply due to the quality of your connection or traffic shaping. There is always the possibility that network problem issue lies with either yours or your ISPs configuration. Below are a number of methods that will help you determine where a latency issue really is.
 
-**Installing hping**
-- Open "terminal". Type "brew install hping".
-
 **Hping**
-1. We'll begin with hping. You should always test hping to help determine response time and TTL (time to live) in milliseconds. In our troubleshooting scenario below, we'll run a hping command to our SMTP server at **smtp.sendgrid.net**
-2. How to run hping: Open “terminal”. Type “sudo /usr/local/sbin/hping smtp.sendgrid.net -p 587 -S” and you will see a ping occur continually.
+1. We'll begin with [hping](http://www.hping.org/). You should always test hping to help determine response time and TTL (time to live) in milliseconds. In our troubleshooting scenario below, we'll run a hping command to our SMTP server at **smtp.sendgrid.net**
+2. How to run hping: Open “terminal”. Type “sudo hping smtp.sendgrid.net -p 587 -S” and you will see a ping occur continually.
 ```
-sudo /usr/local/sbin/hping smtp.sendgrid.net -p 587 -S
+sudo hping smtp.sendgrid.net -p 587 -S
 Password:
 HPING smtp.sendgrid.net (gpd0 169.45.89.186): S set, 40 headers + 0 data bytes
 len=44 ip=169.45.89.186 ttl=49 DF id=0 sport=587 flags=SA seq=0 win=29200 rtt=40.5 ms
@@ -69,9 +66,9 @@ round-trip min/avg/max = 40.5/44.5/51.8 ms
 **Hping - traceroute mode**
 
 1. A traceroute is along the same lines as a ping, you can think of a traceroute as a deeper analysis in the sense that it allows you to see at which “hop” the latency may begin to occur. You are able to see every stop along the route that the packet travels from the customer’s network to SendGrid’s servers. At each stop, details are given as to the address it travels to, and the amount of time to get there also in milliseconds.
-2. How to run a traceroute: Open “terminal” and type “sudo /usr/local/sbin/hping smtp.sendgrid.net -p 587 -S -T -c 10”
+2. How to run a traceroute: Open “terminal” and type “sudo hping smtp.sendgrid.net -p 587 -S -T -c 10”
 ```
-sudo /usr/local/sbin/hping smtp.sendgrid.net -p 587 -S -T -c 10
+sudo hping smtp.sendgrid.net -p 587 -S -T -c 10
 HPING smtp.sendgrid.net (en0 169.45.113.201): S set, 40 headers + 0 data bytess
 hop=1 TTL 0 during transit from ip=172.22.16.1 name=UNKNOWN
 hop=1 hoprtt=2.8 ms
