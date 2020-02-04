@@ -41,7 +41,9 @@ Experiencing delays? Check our [Status Page](http://status.sendgrid.com/) for th
 More often that not, one of the 3 suggestions above will resolve a latency problem. However, some latency issues are simply due to the quality of your connection or traffic shaping. There is always the possibility that network problem issue lies with either yours or your ISPs configuration. Below are a number of methods that will help you determine where a latency issue really is.
 
 **Hping**
-1. We'll begin with [hping](http://www.hping.org/). You should always test hping to help determine response time and TTL (time to live) in milliseconds. In our troubleshooting scenario below, we'll run a hping command to our SMTP server at **smtp.sendgrid.net**
+1. We'll begin with [hping](http://www.hping.org/)
+ (or [Test-NetConnection](https://docs.microsoft.com/en-us/powershell/module/nettcpip/test-netconnection?view=win10-ps) as a Windows alternative).
+ You should always test hping to help determine response time and TTL (time to live) in milliseconds. In our troubleshooting scenario below, we'll run a hping command to our SMTP server at **smtp.sendgrid.net**
 2. How to run hping: Open “terminal”. Type “sudo hping smtp.sendgrid.net -p 587 -S” and you will see a ping occur continually.
 ```
 sudo hping smtp.sendgrid.net -p 587 -S
