@@ -84,6 +84,8 @@ hop=5 hoprtt=25.2 ms
 
 **As with the hping method, keep an eye out for any large times over 150.000 ms**. You'll also want to pay close attention to notice if there are any major increases from one hop to the next. This could indicate the inherent latency from when the packet leaves a server in France en route to a server in Canada. Another flag to watch out for are any of the increases early in the transit, as this could mean the latency lies within your local network, or at a certain ISP.
 
+Keep in mind that many modern network nodes will de-prioritize ICMP packets, which traceroute sends, so timeouts at certain hops may not necessarily be indicative of a faulty connection. That said, a traceroute can still go along way in helping isolate where a network issue exists.
+
 **Google Header Analyzer**
 
 Google provides a great free [header analyzer tool](https://toolbox.googleapps.com/apps/messageheader/analyzeheader) that you can use to analyze the headers of an email, and find out how long an email spent in a particular location. For more information on how to grab the original headers from an email, [check here.]({{root_url}}/help0support/account-and-settings/checking-email-source/)
