@@ -92,6 +92,10 @@ $card-gutter: 40px;
   color: $mantis;
 }
 
+.callout--twilio .home-callout__badge {
+  color: $twilio-red;
+}
+
 .card--no-pad {
   padding: 0 0 0 0;
 }
