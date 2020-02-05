@@ -8,13 +8,6 @@ const HOME_CALLOUTS = [
     LINK: '/ui/sending-email/how-to-send-email-with-marketing-campaigns/',
   },
   {
-    BADGE: 'twilio',
-    TITLE: 'Twilio Documentation',
-    TAG: '',
-    COPY: 'Explore Twilio\'s API documentation and quickstarts. SMS, voice, chat, and more—Twilio\'s platform of APIs is equiped to engage your customers intelligently.',
-    LINK: 'https://www.twilio.com/docs',
-  },
-  {
     BADGE: 'development',
     TITLE: 'API',
     TAG: '',
@@ -28,6 +21,14 @@ const HOME_CALLOUTS = [
     COPY: 'Use the SendGrid SMTP API to build and send email.',
     LINK: '/for-developers/sending-email/getting-started-smtp/',
   },
-]
+  {
+    BADGE: 'twilio',
+    TITLE: 'Twilio Documentation',
+    TAG: '',
+    COPY:
+      "Explore Twilio's API documentation and quickstarts. SMS, voice, chat, and more—Twilio's platform of APIs is equipped to engage your customers intelligently.",
+    LINK: 'https://www.twilio.com/docs',
+  },
+];
 
 export default HOME_CALLOUTS;
