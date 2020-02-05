@@ -16,7 +16,7 @@ navigation:
 
 <call-out>
 
-Automation is available as part of the Advanced Marketing Campaigns package. To access this feature, please upgrade to Advanced Marketing Campaigns from [Your Products](https://app.sendgrid.com/account/billing).
+Automation is available as part of the Advanced Marketing Campaigns package. To access this feature, please upgrade to Advanced Marketing Campaigns from [Your Products](https://app.sendgrid.com/account/billing/choose_plan_marketing_campaigns).
 
 </call-out>
 
