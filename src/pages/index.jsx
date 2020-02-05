@@ -32,7 +32,7 @@ class Index extends React.Component {
       const cardClass = `card col-home-callout home-callout callout--${card.BADGE}`;
       // Handle internal and external links in cards
       const cardLinkButton = card.LINK.substring(0, 4) === 'http'
-        ? <a href={card.LINK} className="btn btn-primary center">Twilio</a>
+        ? <a href={card.LINK} className="btn btn-primary center">Start Building</a>
         : <Link to={card.LINK} className="btn btn-primary center">Get Started</Link>;
 
       return (

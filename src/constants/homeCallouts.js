@@ -25,10 +25,9 @@ const HOME_CALLOUTS = [
     BADGE: 'twilio',
     TITLE: 'Twilio Documentation',
     TAG: '',
-    COPY:
-      "Explore Twilio's API documentation and quickstarts. SMS, voice, chat, and more—Twilio's platform of APIs is equipped to engage your customers intelligently.",
+    COPY: 'Explore Twilio’s API documentation and quickstarts. Learn how to build SMS, voice, chat, and video applications to engage your customers intelligently on Twilio’s omnichannel platform.',
     LINK: 'https://www.twilio.com/docs',
   },
-];
+]
 
 export default HOME_CALLOUTS;
