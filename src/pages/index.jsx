@@ -30,6 +30,11 @@ class Index extends React.Component {
   static renderCallouts() {
     return CALLOUTS.map((card) => {
       const cardClass = `card col-home-callout home-callout callout--${card.BADGE}`;
+      // Handle internal and external links in cards
+      const cardLinkButton = card.LINK.substring(0, 4) === 'http'
+        ? <a href={card.LINK} className="btn btn-primary center">Start Building</a>
+        : <Link to={card.LINK} className="btn btn-primary center">Get Started</Link>;
+
       return (
         <div className={cardClass} key={card.TITLE}>
           <div className="home-callout__badge">
@@ -40,7 +45,7 @@ class Index extends React.Component {
             {(card.TAG.length > 0 ? (<span className="tag--beta">{card.TAG}</span>) : null)}
           </h3>
           <div className="is-p">{card.COPY}</div>
-          <Link to={card.LINK} className="btn btn-primary center">Get Started</Link>
+          {cardLinkButton}
         </div>
       );
     });
