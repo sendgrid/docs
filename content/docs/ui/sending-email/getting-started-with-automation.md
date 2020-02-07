@@ -168,3 +168,16 @@ _To delete an automation:_
 1. On the automation dashboard, find the automation you want to delete.
 1. Hover over the action menu and select the delete icon.
 1. To delete the automation, click **Confirm**.
+
+## Automation Use Cases and Examples
+
+### Segment-triggered Automation
+
+With this functionality, new contacts can flow into and out of Automations more… automatically! For example, if you have a segment of “Free plan customers” who you're nurturing to become paid customers, you can do the following:  
+
+1. Create a segment of all contacts whose custom field “Plan Type” value is “Free”
+1. Set Entry Criteria to “first time a contact is added to” the “Free plan customers” segment
+1. Set the Exit Criteria as “no longer meets entry criteria”
+1. Craft a series of emails to nurture contacts to become paid.
+
+From there, any time I add a new contact whose plan type is Free, they’ll be automatically added to the relevant segment and entered into the automation. If, during the drip series, they upgrade their plan, Automation will automatically remove them from the series. 
