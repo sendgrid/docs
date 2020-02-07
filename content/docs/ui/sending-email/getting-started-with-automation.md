@@ -49,7 +49,7 @@ _To create a Custom Automation:_
 1. Navigate to **Automations** and then click **Create an Automation**.
 1. Under Custom, click **Select**.
 1. Give the series a name. This is for your reference and will not be visible to your contacts.
-1. Select the entry criteria. Today, your entry criteria will be the first time a [contact is added to a list]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/#add-contacts). You can choose an existing list, or you can create a new one here.
+1. Select the entry criteria. You can choose from *The first time a [contact is added to a list]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/#add-contacts)* or *The first time a contact is added to a [segment]({{root_url}}/managing-contacts/segmenting-your-contacts/).
 
 <call-out>
 
@@ -57,11 +57,11 @@ Contacts will only receive your automation if you add them to the list you selec
 
 </call-out>
 
-5. Select the exit criteria for this series. You can choose from "Contacts will leave the series one they've received all the emails" or "Contacts will leave the series if they no longer meet the entry criteria".
+5. Select the exit criteria for this series. You can choose from "Contacts have received all emails in the automation" or "Contacts no longer meet the entry criteria".
 
 <call-out>
 
-If you select “no longer meet entry criteria”, before each email in your series sends, Automation will check to make sure each recipient is still on the entry criteria list. If they aren’t, they won’t get the email. For more information on deleting contacts or removing them from lists, see [Create and Manage Contacts]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#edit-or-remove-contacts-from-a-list).
+If you select “no longer meet entry criteria”, before each email in your series sends, Twilio SendGrid will check to make sure each recipient is still on the entry criteria list or segment. If they aren’t, they won’t get the email. For more information on deleting contacts or removing them from lists, see [Create and Manage Contacts]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#edit-or-remove-contacts-from-a-list).
 
 </call-out>
 
