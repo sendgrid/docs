@@ -180,4 +180,4 @@ With this functionality, new contacts can flow into and out of Automations more�
 1. Set the Exit Criteria as “no longer meets entry criteria”
 1. Craft a series of emails to nurture contacts to become paid.
 
-From there, any time I add a new contact whose plan type is Free, they’ll be automatically added to the relevant segment and entered into the automation. If, during the drip series, they upgrade their plan, Automation will automatically remove them from the series. 
+From there, any time you add a new contact whose plan type is "Free", they are automatically added to the relevant segment and entered into the automation. If they upgrade their plan during the drip series, Automation automatically removes them from the series. 
