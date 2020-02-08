@@ -49,7 +49,7 @@ _To create a Custom Automation:_
 1. Navigate to **Automations** and then click **Create an Automation**.
 1. Under Custom, click **Select**.
 1. Give the series a name. This is for your reference and will not be visible to your contacts.
-1. Select the entry criteria. You can choose from *The first time a [contact is added to a list]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/#add-contacts)* or *The first time a contact is added to a [segment]({{root_url}}/managing-contacts/segmenting-your-contacts/).
+1. Select the entry criteria. You can choose from *The first time a [contact is added to a list]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/#add-contacts)* or *The first time a contact is added to a [segment]({{root_url}}/managing-contacts/segmenting-your-contacts/)*.
 
 <call-out>
 
@@ -176,8 +176,8 @@ _To delete an automation:_
 With this functionality, new contacts can flow into and out of Automations more… automatically! For example, if you have a segment of “Free plan customers” who you're nurturing to become paid customers, you can do the following:  
 
 1. Create a segment of all contacts whose custom field “Plan Type” value is “Free”
-1. Set Entry Criteria to “first time a contact is added to” the “Free plan customers” segment
-1. Set the Exit Criteria as “no longer meets entry criteria”
+1. Set entry criteria to “first time a contact is added to” the “Free plan customers” segment
+1. Set the exit criteria as “no longer meets entry criteria”
 1. Craft a series of emails to nurture contacts to become paid.
 
 From there, any time you add a new contact whose plan type is "Free", they are automatically added to the relevant segment and entered into the automation. If they upgrade their plan during the drip series, Automation automatically removes them from the series. 
