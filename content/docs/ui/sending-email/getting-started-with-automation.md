@@ -20,7 +20,7 @@ Automation is available as part of the Advanced Marketing Campaigns package. To 
 
 </call-out>
 
-Automation allows you to send a recurring email or drip series to contacts automatically at a cadence you define. Once you create an Automation, you can trigger them to send automatically by adding new recipients to a chosen list, saving you time.
+Automation allows you to send a recurring email or drip series to contacts automatically at a cadence you define. Once you create an Automation, you can trigger them to send automatically by adding new recipients to a chosen list or segment, saving you time.
 
 With Automation, you could build email campaigns to:
 
@@ -53,7 +53,7 @@ _To create a Custom Automation:_
 
 <call-out>
 
-Contacts will only receive your automation if you add them to the list you select for entry criteria _after_ you set the automation live.
+Contacts will only receive your automation if they are on the list or segment you select for entry criteria _after_ you set the automation live.
 
 </call-out>
 
@@ -61,7 +61,7 @@ Contacts will only receive your automation if you add them to the list you selec
 
 <call-out>
 
-If you select “no longer meet entry criteria”, before each email in your series sends, Twilio SendGrid will check to make sure each recipient is still on the entry criteria list or segment. If they aren’t, they won’t get the email. For more information on deleting contacts or removing them from lists, see [Create and Manage Contacts]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#edit-or-remove-contacts-from-a-list).
+If you select “no longer meet entry criteria”, before each email in your series sends, Marketing Campaigns will check to make sure each recipient is still on the entry criteria list or segment. If they aren’t, they won’t get the email. For more information on deleting contacts or removing them from lists, see [Create and Manage Contacts]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#edit-or-remove-contacts-from-a-list).
 
 </call-out>
 
@@ -82,16 +82,6 @@ If you have dedicated IPs, you can set up [IP Pools]({{root_url}}/ui/account-and
 13. Choose how long to wait before sending the next email. This time will be relative to the preceding email.
 
 14. Once you have created all of your emails for the automation, click **Set Live**.
-
-### Duplicate an Automation
-
-_To duplicate an automation:_
-
-1. Navigate to Automations.
-1. Find the automation you want to duplicate.
-1. Select the Action Menu to the right of the automation.
-1. Click **Duplicate**.
-1. Once you create the duplicate, the automation will open to the edit page. From here, you can change any or all of the settings within the automation.
 
 ### Use the Pre-Built Welcome Series
 
@@ -119,6 +109,16 @@ If you keep the entry criteria as "All Contacts" it's important to remember that
 </call-out>
 
 ## Manage Automations
+
+### Duplicate an Automation
+
+_To duplicate an automation:_
+
+1. Navigate to Automations.
+1. Find the automation you want to duplicate.
+1. Select the Action Menu to the right of the automation.
+1. Click **Duplicate**.
+1. Once you create the duplicate, the automation will open to the edit page. From here, you can change any or all of the settings within the automation.
 
 ### Edit an Automation
 
@@ -161,23 +161,16 @@ When you re-enable the automation, contacts who previously entered the series wi
 
 </call-out>
 
-### Delete an Automation
-
-_To delete an automation:_
-
-1. On the automation dashboard, find the automation you want to delete.
-1. Hover over the action menu and select the delete icon.
-1. To delete the automation, click **Confirm**.
 
 ## Automation Use Cases and Examples
 
-### Segment-triggered Automation
+### Segment-triggered nurture series
 
-With this functionality, new contacts can flow into and out of Automations more… automatically! For example, if you have a segment of “Free plan customers” who you're nurturing to become paid customers, you can do the following:  
+A valuable use case for Automation is to nurture your free customers to become paid using a drip series. The series will send automatically to free users until they reach the end of the email sequence or they upgrade to paid, whichever comes first. Here's how:
 
 1. Create a segment of all contacts whose custom field “Plan Type” value is “Free”
-1. Set entry criteria to “first time a contact is added to” the “Free plan customers” segment
-1. Set the exit criteria as “no longer meets entry criteria”
+1. Set entry criteria to the first time a contact "is added to a segment" and select the “Free customers" segment you just created. 
+1. Set the exit criteria as “Contacts no longer meet entry criteria”
 1. Craft a series of emails to nurture contacts to become paid.
 
 From there, any time you add a new contact whose plan type is "Free", they are automatically added to the relevant segment and entered into the automation. If they upgrade their plan during the drip series, Automation automatically removes them from the series. 
