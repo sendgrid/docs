@@ -258,7 +258,7 @@ Delivery events include processed, dropped, delivered, deferred, and bounce.
       </tr>
       <tr>
          <td><a name="bounce"></a>Bounce</td>
-         <td>Receiving server could not or would not accept the message. If a recipient has previously unsubscribed from your emails, the message is dropped.</td>
+         <td>Receiving server could not or would not accept mail to this recipient permanently. If a recipient has previously unsubscribed from your emails, the message is dropped.</td>
          <td>
 ```raw
 [
@@ -271,7 +271,30 @@ Delivery events include processed, dropped, delivered, deferred, and bounce.
       "sg_event_id":"6g4ZI7SA-xmRDv57GoPIPw==",
       "sg_message_id":"14c5d75ce93.dfd.64b469.filter0001.16648.5515E0B88.0",
       "reason":"500 unknown recipient",
-      "status":"5.0.0"
+      "status":"5.0.0",
+      "type":"bounce"
+   }
+]
+```
+            </td>
+      </tr>
+      <tr>
+         <td><a name="blocked"></a>Blocked</td>
+         <td>Receiving server could not or would not accept the message temporarily. If a recipient has previously unsubscribed from your emails, the message is dropped.</td>
+         <td>
+```raw
+[
+   {
+      "email":"example@test.com",
+      "timestamp":1513299569,
+      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
+      "event":"bounce",
+      "category":"cat facts",
+      "sg_event_id":"6g4ZI7SA-xmRDv57GoPIPw==",
+      "sg_message_id":"14c5d75ce93.dfd.64b469.filter0001.16648.5515E0B88.0",
+      "reason":"500 unknown recipient",
+      "status":"5.0.0",
+      "type":"blocked"
    }
 ]
 ```

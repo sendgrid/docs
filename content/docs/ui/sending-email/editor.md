@@ -11,6 +11,8 @@ seo:
   description: Twilio SendGrid Marketing Campaigns' editing gives you complete control over your emails. Use a flexible drag-and-drop Design editor or a robust HTML code editor.
 ---
 
+<iframe src="https://player.vimeo.com/video/388548001" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
 This page is focused on the "Build" tag of the editor.
 
 The new Marketing Campaigns experience is all about supporting your unique workflow, so you can get your work done more efficiently. You have complete control over the way that you create and edit each new email, thanks to 2 distinct editing experiences.

@@ -13,6 +13,8 @@ seo:
   
 ---
 
+<iframe src="https://player.vimeo.com/video/389535005" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
 Email testing offers robust, pre-send testing of your emails, including in-app spam testing, inbox rendering previews, and link validation without leaving your workflow. It allows you to preview how an email is likely to perform across a wide range of inbox providers, devices, and spam filters, before sending.
 
 - **Inbox Rendering Test:** Displays how an email message is rendered and appears across a select group of inbox providers and devices.
