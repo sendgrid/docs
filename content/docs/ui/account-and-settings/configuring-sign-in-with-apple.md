@@ -26,7 +26,7 @@ When a user chooses to hide their email address, Apple will create a unique addr
 
 Apple will forward Messages sent to one of these relay addresses to the user’s actual email address. As a developer, you must configure your mail send according to requirements specified by Apple if you wish to support Sign in with Apple as an authentication provider. If you fail to follow Apple’s requirements, your messages to Apple’s private relay addresses will be bounced with the error “550 5.1.1 bad mailbox name.”
 
-This guide will step you through either a recommended configuration, which will work for most of you, or an alternate configuration for those of you with many authenticated domains. If you have ten or more authenticated domains, read the prerequisites, and then jump to the [Alternative Configuration](#alternative-configuration) section.
+This guide will step you through either a recommended configuration, which will work for most of you, or an alternate configuration for those of you with many authenticated domains. If you have thirty-two or more authenticated domains, read the prerequisites, and then jump to the [Alternative Configuration](#alternative-configuration) section.
 
 ## Prerequisites
 
@@ -68,9 +68,15 @@ In the section labeled “Individual Email Addresses,” paste the whitelisted a
 
 You should now be set to send messages to Apple's private relay addresses.
 
+<call-out type="warning">
+
+If you are sending to Apple relay addresses from a sub user account, you must add the `bounces+subuserID@domain.com` (example) return path under "Individual Email Addresses" within the Apple console for each sub user and domain authentication combination from which you send in order for mail to be accepted by Apple properly.
+
+</call-out>
+
 ## Alternative Configuration
 
-Apple limits the number of addresses you can whitelist in the Apple Developer portal to [a total of ten](https://help.apple.com/developer-account/?lang=en#/devf822fb8fc). If you have more than ten verified domains, you will need to configure each of the addresses following the steps below.
+Apple limits the number of addresses you can whitelist in the Apple Developer portal to [a total of thirty-two](https://help.apple.com/developer-account/?lang=en#/devf822fb8fc). If you have more than thirty-two verified domains, you will need to configure each of the addresses following the steps below.
 
 <call-out type="warning">
 
