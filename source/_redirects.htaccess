@@ -153,6 +153,7 @@ Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/index.html https://se
 Redirect 301 /API_Reference/Web_API_v3/Unsubscribe_Manager/unsubscribes.html https://sendgrid.com/docs/API_Reference/Web_API_v3/Suppression_Management/unsubscribes.html
 Redirect 301 /API_Reference/Webhooks/parse.html https://sendgrid.com/docs/for-developers/parsing-email/inbound-email/
 Redirect 301 /API_Reference/SMTP_API/smtpapi_validator.html https://sendgrid.com/docs/API_Reference/SMTP_API/index.html
+Redirect 301 /API_Reference/Web_API_v3/Settings/enforced_tls.html https://sendgrid.com/docs/for-developers/sending-email/enforced-tls/
 
 
 #######
