@@ -65,7 +65,7 @@ There are some important features that are coming soon to our brand new version 
   </tr>
   <tr>
     <td>Trigger an automation to a segment</td>
-    <td>Q4 2019</td>
+    <td><span style="color:#18c96e;">Delivered</span></td>
   </tr>
   <tr>
     <td>View per-contact engagement data</td>
