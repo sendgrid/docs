@@ -8,7 +8,7 @@ navigation:
 seo:
   title: Segmentation Query Language Reference
   description: SendGrid Segmentation Query Language Reference
-  keywords: SendGrid, segmenttion, segmenting contacts, SGQL
+  keywords: SendGrid, segmentation, segmenting contacts, SGQL
 ---
 
 ## Data Types
