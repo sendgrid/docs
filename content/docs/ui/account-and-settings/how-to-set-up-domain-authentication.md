@@ -57,11 +57,11 @@ _To set up domain authentication:_
 
 <call-out>
 
-A recent change with how GoDaddy handles new DNS record values automatically adds your domain, resulting in a CNAME entry with too much information and a failure when trying to complete domain authentication. An example of this would be **em123.yourdomain.com.yourdomain.com**.
+GoDaddy, Amazon Route 53, and Namecheap, are among providers that automatically add your domain to your new DNS record values, resulting in a CNAME entry with too much information that fails authentication. An example of this would be **em123.yourdomain.com.yourdomain.com**.
 
->DigitalOcean and Amazon Route 53 has this same behaviour in their Networking - Manage Domain - Create new record section.
+Be sure to check your CNAME for this behavior if your domain doesn't validate initially.
 
-Below is an example of the CNAME values under the HOST column as they are displayed and how you will need to enter them into your GoDaddy/DigitalOcean DNS Management:
+Below is an example of the CNAME values under the HOST column as they are displayed and how you will need to enter them into your DNS management with one of these providers:
 
 - HOST/NAME **em123.yourdomain.com** . ENTER CNAME RECORD HOST/NAME AS: **em123**
 - HOST/NAME **s1.\_domainkey.yourdomain.com**  ENTER CNAME RECORD HOST/NAME AS: **s1.\_domainkey**
