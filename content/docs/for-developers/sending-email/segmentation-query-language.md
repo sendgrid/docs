@@ -12,11 +12,12 @@ seo:
 ---
 
 ## Data Types
+
 ### Numeric
 Any numeric type that can be an integer or float.
 
-Integer: [1-9][0-9]*
-Float: [0-9]+.[0-9]+
+Integer: `[1-9][0-9]*`
+Float: `[0-9]+.[0-9]+`
 
 ### String
 A set of characters delimited by double or single quotes. 
@@ -25,7 +26,7 @@ A set of characters delimited by double or single quotes.
 Escaping must be done for the character used as the delimiter if it is found within the string. The escape character is \, which must also be escaped with a preceding `\`.
 
 **Wildcards**
-When using the LIKE or NOT LIKE operators, `% `will be interpreted as a wildcard character. To escape this character and not treat it as a wildcard, a second % should be used.
+When using the `LIKE` or `NOT LIKE` operators, `% ` will be interpreted as a wildcard character. To escape this character and not treat it as a wildcard, a second `%` should be used.
 
 ### DateTime
 A timestamp whose literal value is formatted as a stringsting in the format of ISO 8601: `YYYY-MM-DDTHH:mm:SSZ(-)HH:mm`  
@@ -234,4 +235,62 @@ We just saw how variables are used to indicate that any element of a collection 
 ```
 
 This segment represents lovers as anyone not on the "Fighters" list.
+
+## Examples and Use Cases
+
+A query for getting all gmail users:
+
+  ``` 
+  {
+      "name": "All Gmail Users",
+      "query_dsl": "email LIKE '%gmail.com'"
+   }
+   ```
+
+A query for getting contacts in specific zip codes:
+
+   ```
+   {
+      "name": "My Favorite Zip Codes",
+      "query_dsl": "postal_code IN ('90124', '90125', '90126')"
+   }
+   ```
+
+A query for getting contacts NOT in specific zip codes:
+
+   ```
+   {
+      "name": "My Least Favorite Zip Codes",
+      "query_dsl": "postal_code NOT IN ('90124', '90125', '90126')"
+   }
+   ```
+
+A query showing how to use lowercase text:
+
+```
+   {
+      "name": "Everyone named Bob, BOB or bob",
+      "query_dsl": "lower(first_name) = 'bob'"
+   }
+```
+
+A query for contacts that received any email in the last 10 days:
+
+```
+   {
+      "name": "All Delivered in Last 10 days",
+      "query_dsl": "(event_source = 'mail' AND event_type = 'delivered' AND event_timestamp >= (NOW() - interval 10 day))"
+   }
+```
+
+A query for contacts that received any email between two dates:
+
+```
+   {
+      "name": "All Delivered in Last 10 days",
+      "query_dsl": "(event_source = 'mail' AND event_type = 'delivered' AND event_timestamp BETWEEN TIMESTAMP '2019-08-07T18:00:00Z' AND TIMESTAMP '2019-08-08T18:00:00Z')"
+   }
+```
+
+
 
