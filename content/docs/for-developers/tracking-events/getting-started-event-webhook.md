@@ -15,7 +15,7 @@ SendGrid's Event Webhook will notify a URL of your choice via HTTP POST with inf
 
 You should set up the Event Webhook if you want to keep track of more event data that we store for you. Due to the sheer volume of email we send, we can only store so much information. Your [Email Activity Feed]({{root_url}}/ui/analytics-and-reporting/email-activity-feed/) can hold up to 30 days worth of events. After that time passes, the email event data is gone.
 
-## 	Getting started
+## Getting started
 
 *To get started with the Event Webhook:*
 
@@ -49,11 +49,15 @@ If you want to test your webhook locally, deploy a local version of [Webhook tes
 
 </call-out>
 
-## 	Next steps
+### Retry logic
+
+If your web server does not return a 2xx response type, we will retry a POST request until we receive a 2xx response or the maximum time has expired. All events are retried at increasing intervals for up to 24 hours after the event occurs. Please note that this time limit is a rolling 24 hours, which means new failing events will receive their own 24-hour retry period.
+
+## Next steps
 
 Now that you understand what Event data looks like and the basics of the webhook, it's time to evaluate your own needs for the types of events you want to store, what kind of data storage that requires, and then switch your integration from the RequestBin test to a more permanent integration.
 
- ### 	Data Storage
+### Data Storage
 
 Events post every 30 seconds or when the batch size reaches 768 kilobytes - whichever occurs first. This is per server, so if you send a high volume of emails, the webhook URL may receive tens or even hundreds of posts per second. Because of this, storage should be a significant consideration of the type of integration you set up.
 
@@ -71,7 +75,7 @@ If your email traffic generates a lot of events, the incoming data can quickly o
 
 </call-out>
 
- ### 	Integrating
+### Integrating
 
 Once you choose a storage option, follow steps 3 through 8 in [Getting started](#getting-started]) to update your [Settings > Mail Settings](https://app.sendgrid.com/settings/mail_settings) in the [SendGrid UI](https://app.sendgrid.com). Update the **HTTP POST URL field** to your URL, and make sure you've selected the events that you want to receive.
 
@@ -79,7 +83,7 @@ The Event Webhook does not follow redirects.
 
 If you want to receive encrypted posts, your callback URL needs to support TLS 1.2.
 
-## 	Additional Resources
+## Additional Resources
 
 - [Event Webhook reference]({{root_url}}/for-developers/tracking-events/event/)
 - [Troubleshooting the Event Webhook]({{root_url}}/for-developers/tracking-events/troubleshooting/)
