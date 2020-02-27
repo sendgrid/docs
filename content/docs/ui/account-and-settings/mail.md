@@ -138,29 +138,3 @@ Large plain text files are sometimes unable to be converted to HTML. Instead, Se
 **Settings**
 
 - Status - On or Off
-
-## Spam Checker
-
-<call-out type="warning">
-
-Due to low usage, this setting has been deprecated. Click [here]({{root_url}}/ui/account-and-settings/retired-mail-settings/) for more information.
-
-</call-out>
-
-The Spam Checker setting, is useful when your web application allows your end users to create content that is then emailed through your SendGrid account. Since emailing user generated content is hard to monitor and can often be abused by spammers, the Spam Checker filter notifies you when emails are detected that exceed a predefined spam threshold.
-
-<call-out type="warning">
-
-The default threshold is 5.0 and can range between 1 and 10. The lower the number, the more strict the filtering. For example, a value of 2 will drop all but the most flawless emails, whereas 9 will only drop the spammiest of spam emails.
-
-</call-out>
-
-We use [SpamAssassin](http://spamassassin.apache.org/full/3.4.x/doc/Mail_SpamAssassin_Conf.html#scoring_options) to process the spam checks for this filter. The default threshold is 5.0, but you can set this to any value between 1 and 10. You must provide a URL, so we will post the message to that URL. If a message is flagged as spam using this filter, it will automatically be dropped by our system and will not be delivered to the recipient.
-
-**Settings**
-
-- Status - On or Off
-
-- Spam Threshold - Click **Edit** to change the threshold from 1-10 (**see the message above**)
-
-- URL To Post Spam Messages To - Click **Edit** to provide an Inbound Parse URL to send spam messages to, so you can inspect them. If you don't have an Inbound Parse URL, check out [Setting Up The Inbound Parse Webhook]({{root_url}}/for-developers/parsing-email/inbound-email/).
