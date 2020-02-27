@@ -28,15 +28,6 @@ For more information on how email should be formatted, see these [Formatting Gui
 
 Some mailers, such as Apple Mail, place Multipurpose Internet Mail Extensions (MIME) into emails automatically which can cause our system to not parse the boundaries correctly. If you do notice a problem with the content from your email not rendering correctly, please do the following:
 
-1. Log in to your SendGrid account, click  **Settings**, then select **Mail Settings**. Select the arrow next **Plain Content** to expand the settings, and then place a check mark in the _Don't Convert Plaintext to HTML_ option. Save this setting. To test the settings, send another email using your application and see if the content still cannot be rendered.
-
-<call-out type="warning">
-
-Due to low usage, the Plain Content setting will be deprecated Q1 of 2020. Click [here]({{root_url}}/account-and-settings/retired-mail-settings/) for more information.
-
-</call-out>
-
-
 1. Some mail clients, such as Outlook and Thunderbird, appear to insert double spacing line breaks at every line. The reason is that the 'content-transfer-encoding' in MIME is set to 'quoted-printable' which adds Carriage Return Line Feed (CRLF) line breaks to the source content of the email which are characters interpreted by these mail clients. To alleviate this problem, please do the following:
 
     a) If you can customize the MIME settings for your email, set the 'Content-Transfer-Encoding' to '7bit' instead of 'Quoted-Printable.'
