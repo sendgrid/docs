@@ -26,44 +26,7 @@ Some Settings are not listed here because they cannot be defined on a per-messag
 
 </call-out>
 
-## Filter: bcc
-
-<p>Sends a BCC copy of the email created in this transaction to the address specified.</p>
-
-<table class="table table-striped table-bordered">
-<tbody>
-<tr>
-<th>Parameter Name</th>
-<th>Parameter Value</th>
-<th>Parameter Description</th>
-</tr>
-<tr>
-<td>enable</td>
-<td><code>0</code> | <code>1</code></td>
-<td>Disable or enable this Setting</td>
-</tr>
-<tr>
-<td>email</td>
-<td><code>email</code></td>
-<td>email address destination for the bcc message</td>
-</tr>
-</tbody>
-</table>
-
-```json
-{
-  "filters" : {
-    "bcc" : {
-      "settings" : {
-        "enable" : 1,
-        "email" : "example@example.com"
-      }
-    }
-  }
-}
-```
-
-## Filter: bypass_list_management
+## Filter: bypass\_list\_management
 
 <call-out type="warning">
 
@@ -320,51 +283,6 @@ If you don't use 'replace' this will insert an <code>&lt;img&gt;</code> tag at t
       "settings" : {
         "enable" : 1,
         "replace" : "%opentrack%"
-      }
-    }
-  }
-}
-```
-
-## Filter: spamcheck
-
-<p>Tests message with <a href="http://spamassassin.apache.org/">SpamAssassin</a> to determine if it is spam, and drop it if it is.</p>
-
-<table class="table table-striped table-bordered">
-<tbody>
-<tr>
-<th>Parameter Name</th>
-<th>Parameter Value</th>
-<th>Parameter Description</th>
-</tr>
-<tr>
-<td>enable</td>
-<td><code>0</code> | <code>1</code></td>
-<td>Disable or enable this Setting</td>
-</tr>
-<tr>
-<td>maxscore</td>
-<td><code>1</code> to <code>10.0</code></td>
-<td>Score after which the message will be dropped (default is 5.0, higher scores indicate higher likelihood of spam)</td>
-</tr>
-<tr>
-<td>url</td>
-<td><code>url</code></td>
-<td>an optional url to POST the email and a copy of the report to. Refer to the <a href="{{root_url}}/ui/account-and-settings/mail/#spam-checker">Spam Checker documentation</a> for POST details.</td>
-</tr>
-</tbody>
-</table>
-
-#### Example X-SMTPAPI Header Value
-
-```json
-{
-  "filters" : {
-    "spamcheck" : {
-      "settings" : {
-        "enable" : 1,
-        "maxscore" : 3.5,
-        "url" : "http://example.com/compliance"
       }
     }
   }
