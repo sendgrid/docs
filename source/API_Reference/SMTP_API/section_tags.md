@@ -11,7 +11,7 @@ navigation:
 ---
 
 {% warning %}
-Due to low usage, this setting will be deprecated Q1 of 2020. [Click](https://sendgrid.com/docs/ui/account-and-settings/retired-mail-settings/) here for more information.
+Due to low usage, this setting has been deprecated. [Click](https://sendgrid.com/docs/ui/account-and-settings/retired-mail-settings/) here for more information.
 {% endwarning %}
 
 Section tags allow you to substitute in content in an SMTP message. Section tags are similar to [substitution tags]({{root_url}}/API_Reference/SMTP_API/substitution_tags.html) but are specific to the message, and not the recipient. You have to have a substitution tag value for **each** recipient, but you can have any number of section tags. Section tags can then contain Substitution tags for the recipient if needed. Section tags have to be contained within a Substitution tag since SendGrid needs to know which data to populate for the recipient.
