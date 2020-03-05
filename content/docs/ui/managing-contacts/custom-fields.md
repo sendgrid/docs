@@ -40,7 +40,7 @@ You can also add custom fields manually from the Custom Fields page.
 1. Add a _Field Name_ and select a _Field Type_.
 1. Click **Create Field**.
 
-The field name should be created using only alphanumeric characters (A-Z and 0-9) and underscores (\_). Custom fields should only begin with letters A-Z or underscores (\_). The field type can be `date`, `text`, or `number` fields. The field type is important for creating segments from your contact database.
+The field name should be created using only alphanumeric characters (A-Z and 0-9) and underscores (\_). Custom fields should only begin with letters A-Z or underscores (\_). The field type can be `date`, `text`, or `number` fields. The field type is important for creating segments from your contact database. __Note:__ If you have created a custom field that begins with a number, you will need to recreate it with a name that begins with letters A-Z or an underscore (\_).
 
 <call-out type="warning">
 
