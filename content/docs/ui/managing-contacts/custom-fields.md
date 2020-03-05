@@ -40,8 +40,13 @@ You can also add custom fields manually from the Custom Fields page.
 1. Add a _Field Name_ and select a _Field Type_.
 1. Click **Create Field**.
 
-The field name should be created using only alphanumeric characters (A-Z and 0-9) and underscores(**_**). The **field type** can be date, text, or number fields. The **field type** is important for creating [segments]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/) from your contact
-database.
+The field name should be created using only alphanumeric characters (A-Z and 0-9) and underscores(\_). Custom fields should only begin with letters  A-Z or underscores (_). The field type can be date, text, or number fields. The field type is important for creating segments from your contact database.
+
+<call-out type="warning">
+
+If you create a custom field that begins with a number, this will cause issues with sending campaigns in Marketing Campaigns.
+
+</call-out>
 
 You can create three different types of custom fields, based on the data type. Each data type will allow you to use different queries for segmentation:
 
