@@ -87,7 +87,7 @@ All Mail clients render HTML/CSS differently, in their own ways and for their ow
 
 <call-out type="warning">
 
-Due to low usage, this feature will be deprecated Q1 of 2020. Click [here]({{root_url}}/account-and-settings/retired-mail-settings/) for more information.
+Due to low usage, this feature has been deprecated. Click [here]({{root_url}}/account-and-settings/retired-mail-settings/) for more information.
 
 </call-out>
 
