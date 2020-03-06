@@ -12,974 +12,1066 @@ navigation:
   show: true
 ---
 
-## 	Simple Name Substitution
- 	
+## Simple Name Substitution
+
 This example will show you how to create a name substitution for your emails. We will be using the tag `-name-` in this example. In this example, the tag `-name-` will get replaced with the name of the recipient.
 
- #### 	Email Content
- 	
- 	
+#### Email Content
+
 ```
 Hello -name-,
 ```
 
- #### 	HTML
- 	
+#### HTML
+
 ```html
 <html>
   <head></head>
   <body>
-    <p>Hello -name-,<br>
-    </p>
+    <p>Hello -name-,<br /></p>
   </body>
 </html>
 ```
 
- #### 	X-SMTPAPI Header
- 	
+#### X-SMTPAPI Header
+
 ```json
 {
-	"to": [
-		"john@domain.com",
-		"jane@domain.com",
-		"matt@domain.com"
-	],
-	"sub": {
-		"-name-": ["John", "Jane", "Matt"]
-	}
+  "to": [
+    "john@domain.com",
+    "jane@domain.com",
+    "matt@domain.com"
+  ],
+  "sub": {
+    "-name-": ["John", "Jane", "Matt"]
+  }
 }
 ```
 
- #### 	v3 Mail Send
- 	
+#### v3 Mail Send
+
 ```json
 {
-	"personalizations": [{
-		"to": [{
-			"email": "john@domain.com",
-			"name": "John"
-		}],
-		"subject": "Example 01",
-		"substitutions": {
-			"-name-": "John"
-		}
-	}, {
-		"to": [{
-			"email": "jane@domain.com",
-			"name": "Jane"
-		}],
-		"subject": "Example 02",
-		"substitutions": {
-			"-name-": "Jane"
-		}
-	}, {
-		"to": [{
-			"email": "matt@domain.com",
-			"name": "Matt"
-		}],
-		"subject": "Example 03",
-		"substitutions": {
-			"-name-": "Matt"
-		}
-	}],
-	"from": {
-		"email": "sender@senddomain.com",
-		"name": "Sender"
-	},
-	"reply_to": {
-		"email": "sender@senddomain.com",
-		"name": "Sender"
-	},
-	"subject": "Example",
-	"content": [{
-		"type": "text/plain",
-		"value": "Hello -name-,"
-	}, {
-		"type": "text/html",
-		"value": "Hello -name-,"
-	}]
-
+  "personalizations": [
+    {
+      "to": [
+        {
+          "email": "john@domain.com",
+          "name": "John"
+        }
+      ],
+      "subject": "Example 01",
+      "substitutions": {
+        "-name-": "John"
+      }
+    },
+    {
+      "to": [
+        {
+          "email": "jane@domain.com",
+          "name": "Jane"
+        }
+      ],
+      "subject": "Example 02",
+      "substitutions": {
+        "-name-": "Jane"
+      }
+    },
+    {
+      "to": [
+        {
+          "email": "matt@domain.com",
+          "name": "Matt"
+        }
+      ],
+      "subject": "Example 03",
+      "substitutions": {
+        "-name-": "Matt"
+      }
+    }
+  ],
+  "from": {
+    "email": "sender@senddomain.com",
+    "name": "Sender"
+  },
+  "reply_to": {
+    "email": "sender@senddomain.com",
+    "name": "Sender"
+  },
+  "subject": "Example",
+  "content": [
+    {
+      "type": "text/plain",
+      "value": "Hello -name-,"
+    },
+    {
+      "type": "text/html",
+      "value": "Hello -name-,"
+    }
+  ]
 }
 ```
 
- ####	Example Outcome:
- 	
-  	john@domain.com
- 	
- #### 	Text
- 	
+#### Example Outcome:
+
+john@domain.com
+
+#### Text
+
 ```
 Hello John,
 ```
 
- #### 	HTML
- 	
+#### HTML
+
 ```html
 <html>
   <head></head>
   <body>
-    <p>Hello John,<br>
-    </p>
+    <p>Hello John,<br /></p>
   </body>
 </html>
 ```
- #### 	Example Outcome:
-  	jane@domain.com
- 	
- #### 	Text
- 	
+
+#### Example Outcome:
+
+jane@domain.com
+
+#### Text
+
 ```
 Hello Jane,
 ```
 
- ####	HTML
- 	
+#### HTML
+
 ```html
 <html>
   <head></head>
   <body>
-    <p>Hello Jane,<br>
-    </p>
+    <p>Hello Jane,<br /></p>
   </body>
 </html>
 ```
 
- #### 	Example Outcome:
- 	matt@domain.com
- 	
- #### 	Text
- 	
+#### Example Outcome:
+
+matt@domain.com
+
+#### Text
+
 ```
 Hello Matt,
 ```
 
- #### 	HTML
- 	
+#### HTML
+
 ```html
 <html>
   <head></head>
   <body>
-    <p>Hello Matt,<br>
-    </p>
+    <p>Hello Matt,<br /></p>
   </body>
 </html>
 ```
 
-##	First Name and Last Name Substitutions
- 	
+## First Name and Last Name Substitutions
+
 This example will show you how to create a first name and last name substitution for your emails. We will be using the tags `-first_name-` and `-last_name-` in this example. In this example the tag `-first_name-` will get replaced with the first name of the recipient and the tag `-last_name-` will get replaced with the last name of the recipient.
- 	
- #### 	Text
- 	
+
+#### Text
+
 ```
 Hello -first_name-  -last_name-,
 ```
 
- #### 	HTML
- 	
+#### HTML
+
 ```html
 <html>
   <head></head>
   <body>
-    <p>Hello -first_name- -last_name-,<br>
-    </p>
+    <p>Hello -first_name- -last_name-,<br /></p>
   </body>
 </html>
 ```
 
- #### 	X-SMTPAPI Header
- 	
+#### X-SMTPAPI Header
+
 ```json
 {
-	"to": [
-		"john.smith@domain.com",
-		"jane.williams@domain.com",
-		"matt.johnson@domain.com"
-	],
-	"sub": {
-		"-first_name-": ["John", "Jane", "Matt"],
-		"-last_name-": ["Smith", "Williams", "Johnson"]
-	}
+  "to": [
+    "john.smith@domain.com",
+    "jane.williams@domain.com",
+    "matt.johnson@domain.com"
+  ],
+  "sub": {
+    "-first_name-": ["John", "Jane", "Matt"],
+    "-last_name-": ["Smith", "Williams", "Johnson"]
+  }
 }
 ```
 
- #### 	v3 Mail Send
- 	
+#### v3 Mail Send
+
 ```json
 {
-	"personalizations": [{
-		"to": [{
-			"email": "john.smith@domain.com",
-			"name": "John Smith"
-		}],
-		"subject": "Example 01",
-		"substitutions": {
-			"-first_name-": "John",
-			"-last_name-": "Smith"
-		}
-	}, {
-		"to": [{
-			"email": "jane.williams@domain.com",
-			"name": "Jane Williams"
-		}],
-		"subject": "Example 02",
-		"substitutions": {
-			"-first_name-": "Jane",
-			"-last_name-": "Williams"
-		}
-	}, {
-		"to": [{
-			"email": "matt.johnson@domain.com",
-			"name": "Matt Johnson"
-		}],
-		"subject": "Example 03",
-		"substitutions": {
-			"-first_name-": "Matt",
-			"-last_name-": "Johnson"
-		}
-	}],
-	"from": {
-		"email": "sender@senddomain.com",
-		"name": "Sender"
-	},
-	"reply_to": {
-		"email": "sender@senddomain.com",
-		"name": "Sender"
-	},
-	"subject": "Example",
-	"content": [{
-		"type": "text/plain",
-		"value": "Hello -first_name- -last_name-,"
-	}, {
-		"type": "text/html",
-		"value": "Hello -first_name- -last_name-,"
-	}]
-
+  "personalizations": [
+    {
+      "to": [
+        {
+          "email": "john.smith@domain.com",
+          "name": "John Smith"
+        }
+      ],
+      "subject": "Example 01",
+      "substitutions": {
+        "-first_name-": "John",
+        "-last_name-": "Smith"
+      }
+    },
+    {
+      "to": [
+        {
+          "email": "jane.williams@domain.com",
+          "name": "Jane Williams"
+        }
+      ],
+      "subject": "Example 02",
+      "substitutions": {
+        "-first_name-": "Jane",
+        "-last_name-": "Williams"
+      }
+    },
+    {
+      "to": [
+        {
+          "email": "matt.johnson@domain.com",
+          "name": "Matt Johnson"
+        }
+      ],
+      "subject": "Example 03",
+      "substitutions": {
+        "-first_name-": "Matt",
+        "-last_name-": "Johnson"
+      }
+    }
+  ],
+  "from": {
+    "email": "sender@senddomain.com",
+    "name": "Sender"
+  },
+  "reply_to": {
+    "email": "sender@senddomain.com",
+    "name": "Sender"
+  },
+  "subject": "Example",
+  "content": [
+    {
+      "type": "text/plain",
+      "value": "Hello -first_name- -last_name-,"
+    },
+    {
+      "type": "text/html",
+      "value": "Hello -first_name- -last_name-,"
+    }
+  ]
 }
 ```
 
- #### 	Example Outcome:
- 	
-  	john.smith@domain.com
- 	
- #### 	Text
- 	
+#### Example Outcome:
+
+john.smith@domain.com
+
+#### Text
+
 ```
 Hello John Smith,
 ```
 
- #### 	HTML
- 	
+#### HTML
+
 ```html
 <html>
   <head></head>
   <body>
-    <p>Hello John Smith,<br>
-    </p>
+    <p>Hello John Smith,<br /></p>
   </body>
 </html>
 ```
- #### 	Example Outcome:
- 	jane.williams@domain.com
- 	
- #### 	Text
- 	
+
+#### Example Outcome:
+
+jane.williams@domain.com
+
+#### Text
+
 ```
 Hello Jane Williams,
 ```
 
- #### 	HTML
- 	
+#### HTML
+
 ```html
 <html>
   <head></head>
   <body>
-    <p>Hello Jane Williams,<br>
-    </p>
+    <p>Hello Jane Williams,<br /></p>
   </body>
 </html>
 ```
 
- #### 	Example Outcome:
- 	matt.johnson@domain.com
- 	
- #### 	Text
- 	
+#### Example Outcome:
+
+matt.johnson@domain.com
+
+#### Text
+
 ```
 Hello Matt Johnson,
 ```
 
- #### 	HTML
- 	
+#### HTML
+
 ```html
 <html>
   <head></head>
   <body>
-    <p>Hello Matt Johnson,<br>
-    </p>
+    <p>Hello Matt Johnson,<br /></p>
   </body>
 </html>
 ```
 
-## 	Simple Greeting Section with Name Substitution
- 	
+## Simple Greeting Section with Name Substitution
+
+<call-out type="warning">
+
+Due to low usage, the Section Tags feature has been deprecated. Click [here]({{root_url}}/ui/account-and-settings/retired-mail-settings/) for more information.
+
+</call-out>
+
 This example will show you how to create a section as a greeting with a name substitution. We will be using the tags `-warm_welcome-`, `-greeting-` and `-name-` in this example. In this example, we have created a greeting using the section tag `-warm_welcome-`. The `-warm_welcome-` tag is replaced with the `-greeting-` substitution which calls the section `"Hello -name-,"`. The `-name-` tag in `"Hello -name-,"` is then replaced with the recipient's name.
- 	
- #### 	Text
- 	
+
+#### Text
+
 ```
 -warm_welcome-
 ```
 
- #### 	HTML
- 	
+#### HTML
+
 ```html
 <html>
   <head></head>
   <body>
-    <p>-warm_welcome-<br>
-    </p>
+    <p>-warm_welcome-<br /></p>
   </body>
 </html>
 ```
 
- #### 	X-SMTPAPI Header
- 	
+#### X-SMTPAPI Header
+
 ```json
 {
-	"to": [
-		"john@domain.com",
-		"jane@domain.com",
-		"matt@domain.com"
-	],
-	"sub": {
-		"-name-": ["John", "Jane", "Matt"],
-		"-warm_welcome-": ["-greeting-", "-greeting-", "-greeting-"]
-	},
-	"section": {
-		"-greeting-": "Hello -name-,"
-	}
+  "to": ["john@domain.com", "jane@domain.com", "matt@domain.com"],
+  "sub": {
+    "-name-": ["John", "Jane", "Matt"],
+    "-warm_welcome-": ["-greeting-", "-greeting-", "-greeting-"]
+  },
+  "section": {
+    "-greeting-": "Hello -name-,"
+  }
 }
 ```
 
- #### 	v3 Mail Send
- 	
+#### v3 Mail Send
+
 ```json
 {
-	"personalizations": [{
-		"to": [{
-			"email": "john@domain.com",
-			"name": "John"
-		}],
-		"subject": "Example 01",
-		"substitutions": {
-			"-name-": "John",
-			"-warm_welcome-": "-greeting-"
-		}
-	}, {
-		"to": [{
-			"email": "jane@domain.com",
-			"name": "Jane"
-		}],
-		"subject": "Example 02",
-		"substitutions": {
-			"-name-": "Jane",
-			"-warm_welcome-": "-greeting-"
-		}
-	}, {
-		"to": [{
-			"email": "matt@domain.com",
-			"name": "Matt"
-		}],
-		"subject": "Example 03",
-		"substitutions": {
-			"-name-": "Matt",
-			"-warm_welcome-": "-greeting-"
-		}
-	}],
-	"from": {
-		"email": "sender@senddomain.com",
-		"name": "Sender"
-	},
-	"reply_to": {
-		"email": "sender@senddomain.com",
-		"name": "Sender"
-	},
-	"subject": "Example",
-	"content": [{
-		"type": "text/plain",
-		"value": "-warm_welcome-"
-	}, {
-		"type": "text/html",
-		"value": "<html>\n  <head></head>\n  <body>\n    <p>-warm_welcome-<br>\n    </p>\n   </body>\n</html>"
-	}],
-	"sections": {
-		"-greeting-": "Welcome -name-,"
-	}
+  "personalizations": [
+    {
+      "to": [
+        {
+          "email": "john@domain.com",
+          "name": "John"
+        }
+      ],
+      "subject": "Example 01",
+      "substitutions": {
+        "-name-": "John",
+        "-warm_welcome-": "-greeting-"
+      }
+    },
+    {
+      "to": [
+        {
+          "email": "jane@domain.com",
+          "name": "Jane"
+        }
+      ],
+      "subject": "Example 02",
+      "substitutions": {
+        "-name-": "Jane",
+        "-warm_welcome-": "-greeting-"
+      }
+    },
+    {
+      "to": [
+        {
+          "email": "matt@domain.com",
+          "name": "Matt"
+        }
+      ],
+      "subject": "Example 03",
+      "substitutions": {
+        "-name-": "Matt",
+        "-warm_welcome-": "-greeting-"
+      }
+    }
+  ],
+  "from": {
+    "email": "sender@senddomain.com",
+    "name": "Sender"
+  },
+  "reply_to": {
+    "email": "sender@senddomain.com",
+    "name": "Sender"
+  },
+  "subject": "Example",
+  "content": [
+    {
+      "type": "text/plain",
+      "value": "-warm_welcome-"
+    },
+    {
+      "type": "text/html",
+      "value": "<html>\n  <head></head>\n  <body>\n    <p>-warm_welcome-<br>\n    </p>\n   </body>\n</html>"
+    }
+  ],
+  "sections": {
+    "-greeting-": "Welcome -name-,"
+  }
 }
 ```
 
- #### 	Example Outcome:
- 	
-	john@domain.com
- 	
- #### 	Text
- 	
+#### Example Outcome:
+
+    john@domain.com
+
+#### Text
+
 ```
 Hello John,
 ```
 
- #### 	HTML
- 	
+#### HTML
+
 ```html
 <html>
   <head></head>
   <body>
-    <p>Hello John,<br>
-    </p>
+    <p>Hello John,<br /></p>
   </body>
 </html>
 ```
- #### 	Example Outcome:
- 	jane@domain.com
- 	
- #### 	Text
- 	
+
+#### Example Outcome:
+
+jane@domain.com
+
+#### Text
+
 ```
 Hello Jane,
 ```
 
- #### 	HTML
- 	
+#### HTML
+
 ```html
 <html>
   <head></head>
   <body>
-    <p>Hello Jane,<br>
-    </p>
+    <p>Hello Jane,<br /></p>
   </body>
 </html>
 ```
- #### 	Example Outcome:
-  	matt@domain.com
- 	
- #### 	Text
- 	
+
+#### Example Outcome:
+
+matt@domain.com
+
+#### Text
+
 ```
 Hello Matt,
 ```
 
- #### 	HTML
- 	
+#### HTML
+
 ```html
 <html>
   <head></head>
   <body>
-    <p>Hello Matt,<br>
-    </p>
+    <p>Hello Matt,<br /></p>
   </body>
 </html>
 ```
 
-## 	Greeting Section with First & Last Name Substitutions
- 	
+## Greeting Section with First & Last Name Substitutions
+
 This example will show you how to create a section with first name and last name substitution for your emails. We will be using the tags `-warm_welcome-`, `-greeting-`, `-first_name-` and `-last_name-` in this example. In this example, we have created a greeting using the section tag `-warm_welcome-`. The `-warm_welcome-` tag is replaced with the `-greeting-` substitution which calls the section `"Hello -first_name- -last_name-,"`. The `-first_name-` and `-last_name-` tags in `"Hello -first_name- -last_name-,"` is then replaced with the recipients first and last names.
 
- 	
- #### 	Text
- 	
+#### Text
+
 ```
--warm_welcome-	
+-warm_welcome-
 ```
 
-#### 	HTML
- 	
+#### HTML
+
 ```html
 <html>
   <head></head>
   <body>
-    <p>-warm_welcome-<br>
-    </p>
+    <p>-warm_welcome-<br /></p>
   </body>
 </html>
 ```
 
- #### 	X-SMTPAPI Header
- 	
+#### X-SMTPAPI Header
+
 ```json
 {
-	"to": [
-		"john.smith@domain.com",
-		"jane.williams@domain.com",
-		"matt.johnson@domain.com"
-	],
-	"sub": {
-		"-first_name-": ["John", "Jane", "Matt"],
-		"-last_name-": ["Smith", "Williams", "Johnson"],
-		"-warm_welcome-": ["-greeting-", "-greeting-", "-greeting-"]
-	},
-	"section": {
-		"-greeting-": "Hello -first_name- -last_name-,"
-	}
+  "to": [
+    "john.smith@domain.com",
+    "jane.williams@domain.com",
+    "matt.johnson@domain.com"
+  ],
+  "sub": {
+    "-first_name-": ["John", "Jane", "Matt"],
+    "-last_name-": ["Smith", "Williams", "Johnson"],
+    "-warm_welcome-": ["-greeting-", "-greeting-", "-greeting-"]
+  },
+  "section": {
+    "-greeting-": "Hello -first_name- -last_name-,"
+  }
 }
 ```
 
- #### 	v3 Mail Send
- 	
+#### v3 Mail Send
+
 ```json
 {
-	"personalizations": [{
-		"to": [{
-			"email": "john.smith@domain.com",
-			"name": "John Smith"
-		}],
-		"subject": "Example 01",
-		"substitutions": {
-			"-first_name-": "John",
-			"-last_name-": "Smith",
-			"-warm_welcome-": "-greeting-"
-		}
-	}, {
-		"to": [{
-			"email": "jane.williams@domain.com",
-			"name": "Jane Williams"
-		}],
-		"subject": "Example 02",
-		"substitutions": {
-			"-first_name-": "Jane",
-			"-last_name-": "Williams",
-			"-warm_welcome-": "-greeting-"
-		}
-	}, {
-		"to": [{
-			"email": "matt.johnson@domain.com",
-			"name": "Matt Johnson"
-		}],
-		"subject": "Example 03",
-		"substitutions": {
-			"-first_name-": "Matt",
-			"-last_name-": "Johnson",
-			"-warm_welcome-": "-greeting-"
-		}
-	}],
-	"from": {
-		"email": "sender@senddomain.com",
-		"name": "Sender"
-	},
-	"reply_to": {
-		"email": "sender@senddomain.com",
-		"name": "Sender"
-	},
-	"subject": "Example",
-	"content": [{
-		"type": "text/plain",
-		"value": "-warm_welcome-"
-	}, {
-		"type": "text/html",
-		"value": "<html>\n  <head></head>\n  <body>\n    <p>-warm_welcome-<br>\n    </p>\n   </body>\n</html>"
-	}],
-	"sections": {
-		"-greeting-": "Welcome -first_name- -last_name-,"
-	}
+  "personalizations": [
+    {
+      "to": [
+        {
+          "email": "john.smith@domain.com",
+          "name": "John Smith"
+        }
+      ],
+      "subject": "Example 01",
+      "substitutions": {
+        "-first_name-": "John",
+        "-last_name-": "Smith",
+        "-warm_welcome-": "-greeting-"
+      }
+    },
+    {
+      "to": [
+        {
+          "email": "jane.williams@domain.com",
+          "name": "Jane Williams"
+        }
+      ],
+      "subject": "Example 02",
+      "substitutions": {
+        "-first_name-": "Jane",
+        "-last_name-": "Williams",
+        "-warm_welcome-": "-greeting-"
+      }
+    },
+    {
+      "to": [
+        {
+          "email": "matt.johnson@domain.com",
+          "name": "Matt Johnson"
+        }
+      ],
+      "subject": "Example 03",
+      "substitutions": {
+        "-first_name-": "Matt",
+        "-last_name-": "Johnson",
+        "-warm_welcome-": "-greeting-"
+      }
+    }
+  ],
+  "from": {
+    "email": "sender@senddomain.com",
+    "name": "Sender"
+  },
+  "reply_to": {
+    "email": "sender@senddomain.com",
+    "name": "Sender"
+  },
+  "subject": "Example",
+  "content": [
+    {
+      "type": "text/plain",
+      "value": "-warm_welcome-"
+    },
+    {
+      "type": "text/html",
+      "value": "<html>\n  <head></head>\n  <body>\n    <p>-warm_welcome-<br>\n    </p>\n   </body>\n</html>"
+    }
+  ],
+  "sections": {
+    "-greeting-": "Welcome -first_name- -last_name-,"
+  }
 }
 ```
 
- #### 	Example Outcome:
- 	
-	john.smith@domain.com
- 	
- #### 	Text
- 	
+#### Example Outcome:
+
+    john.smith@domain.com
+
+#### Text
+
 ```
 Hello John Smith,
 ```
 
- #### 	HTML
- 	
+#### HTML
+
 ```html
 <html>
   <head></head>
   <body>
-    <p>Hello John Smith,<br>
-    </p>
+    <p>Hello John Smith,<br /></p>
   </body>
 </html>
 ```
-#### 	Example Outcome:
- 	jane.williams@domain.com
- 	
- #### 	Text
- 	
+
+#### Example Outcome:
+
+jane.williams@domain.com
+
+#### Text
+
 ```
 Hello Jane Williams,
 ```
 
-#### 	HTML
- 	
+#### HTML
+
 ```html
 <html>
   <head></head>
   <body>
-    <p>Hello Jane Williams,<br>
-    </p>
+    <p>Hello Jane Williams,<br /></p>
   </body>
 </html>
 ```
-#### 	Example Outcome:
- 	matt.johnson@domain.com
- 	
-#### 	Text
- 	
+
+#### Example Outcome:
+
+matt.johnson@domain.com
+
+#### Text
+
 ```
 Hello Matt Johnson,
 ```
 
-#### 	HTML
- 	
+#### HTML
+
 ```html
 <html>
   <head></head>
   <body>
-    <p>Hello Matt Johnson,<br>
-    </p>
+    <p>Hello Matt Johnson,<br /></p>
   </body>
 </html>
 ```
 
-##	Three Different Greeting Sections with First & Last Name Substitutions
- 	
+## Three Different Greeting Sections with First & Last Name Substitutions
+
 This example will show you how to create three different sections, each with first name and last name substitution for your emails. We will be using the tags `-warm_welcome-`, `-greeting01-`, `-greeting02-`, `-greeting03-`, `-first_name-` and `-last_name-` in this example. In this example, we have created three different greetings using the section tag `-warm_welcome-`. The `-warm_welcome-` tag is replaced with either `-greeting01-`, `-greeting02-` or `-greeting03-` substitution. This will call one of the three sections. In each of these sections, there is the `-first_name-` and `-last_name-` tags which will get replaced with the recipients first and last names.
- 	
- #### 	Text
- 	
+
+#### Text
+
 ```
--warm_welcome-	
+-warm_welcome-
 ```
 
- #### 	HTML
- 	
+#### HTML
+
 ```html
 <html>
   <head></head>
   <body>
-    <p>-warm_welcome-<br>
-    </p>
+    <p>-warm_welcome-<br /></p>
   </body>
 </html>
 ```
 
- #### 	X-SMTPAPI Header
- 	
+#### X-SMTPAPI Header
+
 ```json
 {
-	"to": [
-		"john.smith@domain.com",
-		"jane.williams@domain.com",
-		"matt.johnson@domain.com"
-	],
-	"sub": {
-		"-first_name-": ["John", "Jane", "Matt"],
-		"-last_name-": ["Smith", "Williams", "Johnson"],
-		"-warm_welcome-": ["-greeting01-", "-greeting02-", "-greeting03-"]
-	},
-	"section": {
-		"-greeting01-": "Welcome -first_name- -last_name-,",
-		"-greeting02-": "Hello -first_name- -last_name-,",
-		"-greeting03-": "Dear -first_name- -last_name-,"
-	}
+  "to": [
+    "john.smith@domain.com",
+    "jane.williams@domain.com",
+    "matt.johnson@domain.com"
+  ],
+  "sub": {
+    "-first_name-": ["John", "Jane", "Matt"],
+    "-last_name-": ["Smith", "Williams", "Johnson"],
+    "-warm_welcome-": ["-greeting01-", "-greeting02-", "-greeting03-"]
+  },
+  "section": {
+    "-greeting01-": "Welcome -first_name- -last_name-,",
+    "-greeting02-": "Hello -first_name- -last_name-,",
+    "-greeting03-": "Dear -first_name- -last_name-,"
+  }
 }
 ```
 
- #### 	v3 Mail Send
- 	
+#### v3 Mail Send
+
 ```json
 {
-	"personalizations": [{
-		"to": [{
-			"email": "john.smith@domain.com",
-			"name": "John Smith"
-		}],
-		"subject": "Example 01",
-		"substitutions": {
-			"-first_name-": "John",
-			"-last_name-": "Smith",
-			"-warm_welcome-": "-greeting01-"
-		}
-	}, {
-		"to": [{
-			"email": "jane.williams@domain.com",
-			"name": "Jane Williams"
-		}],
-		"subject": "Example 02",
-		"substitutions": {
-			"-first_name-": "Jane",
-			"-last_name-": "Williams",
-			"-warm_welcome-": "-greeting02-"
-		}
-	}, {
-		"to": [{
-			"email": "matt.johnson@domain.com",
-			"name": "Matt Johnson"
-		}],
-		"subject": "Example 03",
-		"substitutions": {
-			"-first_name-": "Matt",
-			"-last_name-": "Johnson",
-			"-warm_welcome-": "-greeting03-"
-		}
-	}],
-	"from": {
-		"email": "sender@senddomain.com",
-		"name": "Sender"
-	},
-	"reply_to": {
-		"email": "sender@senddomain.com",
-		"name": "Sender"
-	},
-	"subject": "Example",
-	"content": [{
-		"type": "text/plain",
-		"value": "-warm_welcome-"
-	}, {
-		"type": "text/html",
-		"value": "<html>\n  <head></head>\n  <body>\n    <p>-warm_welcome-<br>\n    </p>\n   </body>\n</html>"
-	}],
-	"sections": {
-		"-greeting01-": "Welcome -first_name- -last_name-,",
-		"-greeting02-": "Hello -first_name- -last_name-,",
-		"-greeting03-": "Dear -first_name- -last_name-,"
-	}
+  "personalizations": [
+    {
+      "to": [
+        {
+          "email": "john.smith@domain.com",
+          "name": "John Smith"
+        }
+      ],
+      "subject": "Example 01",
+      "substitutions": {
+        "-first_name-": "John",
+        "-last_name-": "Smith",
+        "-warm_welcome-": "-greeting01-"
+      }
+    },
+    {
+      "to": [
+        {
+          "email": "jane.williams@domain.com",
+          "name": "Jane Williams"
+        }
+      ],
+      "subject": "Example 02",
+      "substitutions": {
+        "-first_name-": "Jane",
+        "-last_name-": "Williams",
+        "-warm_welcome-": "-greeting02-"
+      }
+    },
+    {
+      "to": [
+        {
+          "email": "matt.johnson@domain.com",
+          "name": "Matt Johnson"
+        }
+      ],
+      "subject": "Example 03",
+      "substitutions": {
+        "-first_name-": "Matt",
+        "-last_name-": "Johnson",
+        "-warm_welcome-": "-greeting03-"
+      }
+    }
+  ],
+  "from": {
+    "email": "sender@senddomain.com",
+    "name": "Sender"
+  },
+  "reply_to": {
+    "email": "sender@senddomain.com",
+    "name": "Sender"
+  },
+  "subject": "Example",
+  "content": [
+    {
+      "type": "text/plain",
+      "value": "-warm_welcome-"
+    },
+    {
+      "type": "text/html",
+      "value": "<html>\n  <head></head>\n  <body>\n    <p>-warm_welcome-<br>\n    </p>\n   </body>\n</html>"
+    }
+  ],
+  "sections": {
+    "-greeting01-": "Welcome -first_name- -last_name-,",
+    "-greeting02-": "Hello -first_name- -last_name-,",
+    "-greeting03-": "Dear -first_name- -last_name-,"
+  }
 }
 ```
 
- #### 	Example Outcome:
- 	
-  	john.smith@domain.com
- 	
- #### 	Text
- 	
+#### Example Outcome:
+
+john.smith@domain.com
+
+#### Text
+
 ```
 Welcome John Smith,
 ```
 
- #### 	HTML
- 	
+#### HTML
+
 ```html
 <html>
   <head></head>
   <body>
-    <p>Welcome John Smith,<br>
-    </p>
+    <p>Welcome John Smith,<br /></p>
   </body>
 </html>
 ```
-#### 	Example Outcome:
-  	jane.williams@domain.com
- 	
- #### 	Text
- 	
+
+#### Example Outcome:
+
+jane.williams@domain.com
+
+#### Text
+
 ```
 Hello Jane Williams,
 ```
 
- #### 	HTML
- 	
+#### HTML
+
 ```html
 <html>
   <head></head>
   <body>
-    <p>Hello Jane Williams,<br>
-    </p>
+    <p>Hello Jane Williams,<br /></p>
   </body>
 </html>
 ```
-#### 	Example Outcome:
-  	matt.johnson@domain.com
- 	
- #### 	Text
- 	
+
+#### Example Outcome:
+
+matt.johnson@domain.com
+
+#### Text
+
 ```
 Dear Matt Johnson,
 ```
 
- #### 	HTML
- 	
+#### HTML
+
 ```html
 <html>
   <head></head>
   <body>
-    <p>Dear Matt Johnson,<br>
-    </p>
+    <p>Dear Matt Johnson,<br /></p>
   </body>
 </html>
 ```
 
-## 	Three Confirmation Sections and Substitutions
- 	
+## Three Confirmation Sections and Substitutions
+
 This example will show you how to create three different sections for confirmation emails. We will be using the tags `-name-`, `-confirmations-`, `-confirmation_001-`, `-confirmation_002-`, `-confirmation_003-` and `-order_id-` in this example. In this example, we have created three different confirmations using the section tag `-confirmations-`. The `-confirmations-` tag is replaced with either `-confirmation_001-`, `-confirmation_002-` or `-confirmation_003-` substitution. This will call one of the three sections. In each of these sections, there is the `-order_id-` tag which will get replaced with the recipient's order id.
- 	
- #### 	Text
- 	
+
+#### Text
+
 ```
 Hello -name-,
 -confirmations-
 ```
 
- #### 	HTML
- 	
+#### HTML
+
 ```html
 <html>
   <head></head>
   <body>
-    <p>Hello -name-,<br>
-	    -confirmations-</p>
+    <p>
+      Hello -name-,<br />
+      -confirmations-
+    </p>
   </body>
 </html>
 ```
 
- #### 	X-SMTPAPI Header
- 	
+#### X-SMTPAPI Header
+
 ```json
 {
-	"to": ["john@domain.com", "jane@domain.com", "matt@domain.com"],
-	"sub": {
-		"-name-": ["John", "Jane", "Matt"],
-		"-confirmations-": ["-confirmation_001-", "-confirmation_002-", "-confirmation_003-"],
-		"-order_id-": ["12345", "23456", "34567"]
-	},
-	"section": {
-		"-confirmation_001-": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order -order_id-.",
-		"-confirmation_002-": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order -order_id-. This invoice is to be paid by bank transfer within 7 days from the date of your monthly statement.",
-		"-confirmation_003-": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order -order_id-. You can download your invoice as a PDF for your records."
-	}
+  "to": ["john@domain.com", "jane@domain.com", "matt@domain.com"],
+  "sub": {
+    "-name-": ["John", "Jane", "Matt"],
+    "-confirmations-": [
+      "-confirmation_001-",
+      "-confirmation_002-",
+      "-confirmation_003-"
+    ],
+    "-order_id-": ["12345", "23456", "34567"]
+  },
+  "section": {
+    "-confirmation_001-": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order -order_id-.",
+    "-confirmation_002-": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order -order_id-. This invoice is to be paid by bank transfer within 7 days from the date of your monthly statement.",
+    "-confirmation_003-": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order -order_id-. You can download your invoice as a PDF for your records."
+  }
 }
 ```
 
- #### 	v3 Mail Send
- 	
+#### v3 Mail Send
+
 ```json
 {
-	"personalizations": [{
-		"to": [{
-			"email": "john@domain.com",
-			"name": "John"
-		}],
-		"subject": "Example 01",
-		"substitutions": {
-			"-name-": "John",
-			"-order_id-": "12345",
-			"-confirmations-": "-confirmation_001-"
-		}
-	}, {
-		"to": [{
-			"email": "jane@domain.com",
-			"name": "Jane"
-		}],
-		"subject": "Example 02",
-		"substitutions": {
-			"-name-": "Jane",
-			"-order_id-": "23456",
-			"-confirmations-": "-confirmation_002-"
-		}
-	}, {
-		"to": [{
-			"email": "matt@domain.com",
-			"name": "Matt"
-		}],
-		"subject": "Example 03",
-		"substitutions": {
-			"-name-": "Matt",
-			"-order_id-": "34567",
-			"-confirmations-": "-confirmation_003-"
-		}
-	}],
-	"from": {
-		"email": "sender@senddomain.com",
-		"name": "Sender"
-	},
-	"reply_to": {
-		"email": "sender@senddomain.com",
-		"name": "Sender"
-	},
-	"subject": "Example",
-	"content": [{
-		"type": "text/plain",
-		"value": "Hello -name-,\n-confirmations-"
-	}, {
-		"type": "text/html",
-		"value": "<html>\n  <head></head>\n  <body>\n    <p>Hello -name-,<br>\n	    -confirmations-</p>\n  </body>\n</html>"
-	}],
-	"sections": {
-		"-confirmation_001-": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order -order_id-.",
-		"-confirmation_002-": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order -order_id-. This invoice is to be paid by bank transfer within 7 days from the date of your monthly statement.",
-		"-confirmation_003-": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order -order_id-. You can download your invoice as a PDF for your records."
-	}
+  "personalizations": [
+    {
+      "to": [
+        {
+          "email": "john@domain.com",
+          "name": "John"
+        }
+      ],
+      "subject": "Example 01",
+      "substitutions": {
+        "-name-": "John",
+        "-order_id-": "12345",
+        "-confirmations-": "-confirmation_001-"
+      }
+    },
+    {
+      "to": [
+        {
+          "email": "jane@domain.com",
+          "name": "Jane"
+        }
+      ],
+      "subject": "Example 02",
+      "substitutions": {
+        "-name-": "Jane",
+        "-order_id-": "23456",
+        "-confirmations-": "-confirmation_002-"
+      }
+    },
+    {
+      "to": [
+        {
+          "email": "matt@domain.com",
+          "name": "Matt"
+        }
+      ],
+      "subject": "Example 03",
+      "substitutions": {
+        "-name-": "Matt",
+        "-order_id-": "34567",
+        "-confirmations-": "-confirmation_003-"
+      }
+    }
+  ],
+  "from": {
+    "email": "sender@senddomain.com",
+    "name": "Sender"
+  },
+  "reply_to": {
+    "email": "sender@senddomain.com",
+    "name": "Sender"
+  },
+  "subject": "Example",
+  "content": [
+    {
+      "type": "text/plain",
+      "value": "Hello -name-,\n-confirmations-"
+    },
+    {
+      "type": "text/html",
+      "value": "<html>\n  <head></head>\n  <body>\n    <p>Hello -name-,<br>\n	    -confirmations-</p>\n  </body>\n</html>"
+    }
+  ],
+  "sections": {
+    "-confirmation_001-": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order -order_id-.",
+    "-confirmation_002-": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order -order_id-. This invoice is to be paid by bank transfer within 7 days from the date of your monthly statement.",
+    "-confirmation_003-": "Thanks for choosing SendGrid. This email is to confirm that we have processed your order -order_id-. You can download your invoice as a PDF for your records."
+  }
 }
 ```
 
- #### 	Example Outcome:
- 	
- 	john@domain.com
- 	
- #### 	Text
- 	
+#### Example Outcome:
+
+john@domain.com
+
+#### Text
+
 ```
 Welcome John,
 Thanks for choosing SendGrid. This email is to confirm that we have processed your order 12345.
 ```
 
- #### 	HTML
- 	
+#### HTML
+
 ```html
 <html>
   <head></head>
   <body>
-    <p>Welcome John,<br>
-	    Thanks for choosing SendGrid. This email is to confirm that we have processed your order 12345.
+    <p>
+      Welcome John,<br />
+      Thanks for choosing SendGrid. This email is to confirm that we have
+      processed your order 12345.
     </p>
   </body>
 </html>
 ```
- #### 	Example Outcome:
-	jane@domain.com
- 	
- #### 	Text
- 	
+
+#### Example Outcome:
+
+    jane@domain.com
+
+#### Text
+
 ```
 Hello Jane,
 Thanks for choosing SendGrid. This email is to confirm that we have processed your order 23456. This invoice is to be paid by bank transfer within 7 days from the date of your monthly statement.
 ```
 
- #### 	HTML
- 	
+#### HTML
+
 ```html
 <html>
   <head></head>
   <body>
-    <p>Hello Jane,<br>
-	    Thanks for choosing SendGrid. This email is to confirm that we have processed your order 23456. This invoice is to be paid by bank transfer within 7 days from the date of your monthly statement.
+    <p>
+      Hello Jane,<br />
+      Thanks for choosing SendGrid. This email is to confirm that we have
+      processed your order 23456. This invoice is to be paid by bank transfer
+      within 7 days from the date of your monthly statement.
     </p>
   </body>
 </html>
 ```
- #### 	Example Outcome:
- 	matt@domain.com
- 	
- #### 	Text
- 	
+
+#### Example Outcome:
+
+matt@domain.com
+
+#### Text
+
 ```
 Dear Matt,
 Thanks for choosing SendGrid. This email is to confirm that we have processed your order 34567. You can download your invoice as a PDF for your records.
 ```
 
- #### 	HTML
- 	
+#### HTML
+
 ```html
 <html>
   <head></head>
   <body>
-    <p>Dear Matt,<br>
-	    Thanks for choosing SendGrid. This email is to confirm that we have processed your order 34567. You can download your invoice as a PDF for your records.
+    <p>
+      Dear Matt,<br />
+      Thanks for choosing SendGrid. This email is to confirm that we have
+      processed your order 34567. You can download your invoice as a PDF for
+      your records.
     </p>
   </body>
 </html>
