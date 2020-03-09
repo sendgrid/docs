@@ -64,6 +64,12 @@ Entries made in the VALUE or POINTS TO field do not need to be changed.
 
 </call-out>
 
+<call-out>
+  
+When configuring CNAME records in CloudFlare, check the bottom of the DNS settings page and make sure "CNAME Flattening" is set to "Flatten CNAME at root".
+
+</call-out>
+
 
 Now links and images in your emails are from your custom domain. You only need to update your link branding if you want to update the domain that appears in the links in your email.
 
