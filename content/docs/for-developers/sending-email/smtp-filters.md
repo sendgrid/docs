@@ -28,6 +28,12 @@ Some Settings are not listed here because they cannot be defined on a per-messag
 
 ## Filter: bcc
 
+<call-out type="warning">
+
+Due to low usage, this setting has been deprecated. Click [here]({{root_url}}/ui/account-and-settings/retired-mail-settings/) for more information.
+
+</call-out>
+
 <p>Sends a BCC copy of the email created in this transaction to the address specified.</p>
 
 <table class="table table-striped table-bordered">
@@ -327,6 +333,12 @@ If you don't use 'replace' this will insert an <code>&lt;img&gt;</code> tag at t
 ```
 
 ## Filter: spamcheck
+
+<call-out type="warning">
+
+Due to low usage, this setting has been deprecated. Click [here]({{root_url}}/ui/account-and-settings/retired-mail-settings/) for more information.
+
+</call-out>
 
 <p>Tests message with <a href="http://spamassassin.apache.org/">SpamAssassin</a> to determine if it is spam, and drop it if it is.</p>
 
