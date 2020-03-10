@@ -155,6 +155,12 @@ If you exceed your allotment of contacts in a given month, you’ll be charged o
 
 ## Email API Plans
 
+<call-out type="warning">
+
+Every email processed by SendGrid uses an email credit. Free, Essentials, Pro, and Premier accounts will see their email credits reset the 1st day of each month at 12:01 Pacific Time.
+
+</call-out>
+
 The [Email API package](https://sendgrid.com/pricing/) includes charges for any emails you send over the Twilio SendGrid Email API. Sending emails through the API with this package will not deduct from your Marketing Campaigns plan.
 
 ### Free
