@@ -32,8 +32,9 @@ class Search extends Component {
         const updatedUrlHits = hits.map(((hit) => {
           const rootUrl = config.env === 'development' ? config.siteUrl + config.pathPrefix : config.siteUrl;
           hit.url = hit.url.replace('#___gatsby', '');
+          hit.url = hit.url.replace('#gatsby-focus-wrapper', '');
           hit.url = hit.url.replace(rootUrl, '');
-          if (hit.anchor === '___gatsby') {
+          if (hit.anchor === '___gatsby' || hit.anchor === 'gatsby-focus-wrapper') {
             hit.anchor = '';
           }
           return hit;

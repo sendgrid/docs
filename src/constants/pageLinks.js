@@ -1,5 +1,5 @@
 const LINKS = {
-  APP: 'https://app.sendgrid.com/?utm_source=docs',
+  APP: 'https://app.sendgrid.com/',
   FOR_DEVELOPERS: '/for-developers/',
   GLOSSARY: '/glossary/',
   LOGOUT: 'https://app.sendgrid.com/logout/',
