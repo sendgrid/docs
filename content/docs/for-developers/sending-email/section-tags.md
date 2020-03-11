@@ -14,7 +14,7 @@ navigation:
 
 <call-out type="warning">
 
-Due to low usage, this setting will be deprecated Q1 of 2020. Click [here]({{root_url}}/account-and-settings/retired-mail-settings/) for more information.
+Due to low usage, this setting will be deprecated Q1 of 2020. Click [here]({{root_url}}/ui/account-and-settings/retired-mail-settings/) for more information.
 
 </call-out>
 
