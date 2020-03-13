@@ -11,10 +11,9 @@ navigation:
   show: true
 ---
 
-
 <call-out type="warning">
 
-Due to low usage, this setting has been deprecated. It will be fully removed on 04/01/2020. Click [here]({{root_url}}/ui/account-and-settings/retired-mail-settings/) for more information.
+Due to low usage, this setting has been deprecated. It will be fully removed on 06/15/2020. Click [here]({{root_url}}/ui/account-and-settings/retired-mail-settings/) for more information.
 
 </call-out>
 
@@ -54,7 +53,7 @@ Do not use spaces inside your section or substitution tags! For example: `%first
 
 <call-out type="warning">
 
-Do not nest section tags in sections * this causes your section to not be replaced.
+Do not nest section tags in sections \* this causes your section to not be replaced.
 
 </call-out>
 
@@ -64,16 +63,18 @@ Message body sent to SendGrid:
 
 ```html
 <html>
- <body>
-   Hi :salutation,<br />
-   Thanks so much for joining us at our event!
+  <body>
+    Hi :salutation,<br />
+    Thanks so much for joining us at our event!
 
-   <p>You have registered for the following event:<br />
-    :event_details.</p>
+    <p>
+      You have registered for the following event:<br />
+      :event_details.
+    </p>
 
-   Thanks,<br />
-   The SendGrid Team
- </body>
+    Thanks,<br />
+    The SendGrid Team
+  </body>
 </html>
 ```
 
@@ -88,26 +89,10 @@ The accompanying X-SMTPAPI JSON header would look like:
     "example@example.com"
   ],
   "sub": {
-    ":salutation": [
-      ":female",
-      ":male",
-      ":neutral"
-    ],
-    ":name": [
-      "Alice",
-      "Bob",
-      "Casey"
-    ],
-    ":event_details": [
-      ":event1",
-      ":event2",
-      ":event1"
-    ],
-    ":event_date": [
-      "Jan 1",
-      "Feb 14",
-      "Aug 11"
-    ]
+    ":salutation": [":female", ":male", ":neutral"],
+    ":name": ["Alice", "Bob", "Casey"],
+    ":event_details": [":event1", ":event2", ":event1"],
+    ":event_date": ["Jan 1", "Feb 14", "Aug 11"]
   },
   "section": {
     ":male": "Mr. :name",
@@ -123,16 +108,18 @@ Alice receives:
 
 ```html
 <html>
- <body>
-   Hi Ms. Alice,<br />
-   Thanks so much for joining us at our event!
+  <body>
+    Hi Ms. Alice,<br />
+    Thanks so much for joining us at our event!
 
-   <p>You have registered for the following event:<br />
-    New User Event on Jan 1.</p>
+    <p>
+      You have registered for the following event:<br />
+      New User Event on Jan 1.
+    </p>
 
-   Thanks,<br />
-   The SendGrid Team
- </body>
+    Thanks,<br />
+    The SendGrid Team
+  </body>
 </html>
 ```
 
@@ -140,16 +127,18 @@ Bob receives:
 
 ```html
 <html>
- <body>
-   Hi Mr. Bob,<br />
-   Thanks so much for joining us at our event!
+  <body>
+    Hi Mr. Bob,<br />
+    Thanks so much for joining us at our event!
 
-   <p>You have registered for the following event:<br />
-    Veteran User Appreciation on Feb 14.</p>
+    <p>
+      You have registered for the following event:<br />
+      Veteran User Appreciation on Feb 14.
+    </p>
 
-   Thanks,<br />
-   The SendGrid Team
- </body>
+    Thanks,<br />
+    The SendGrid Team
+  </body>
 </html>
 ```
 
@@ -157,23 +146,25 @@ Casey receives:
 
 ```html
 <html>
- <body>
-   Hi Casey,<br />
-   Thanks so much for joining us at our event!
+  <body>
+    Hi Casey,<br />
+    Thanks so much for joining us at our event!
 
-   <p>You have registered for the following event:<br />
-    New User Event on Aug 11.</p>
+    <p>
+      You have registered for the following event:<br />
+      New User Event on Aug 11.
+    </p>
 
-   Thanks,<br />
-   The SendGrid Team
- </body>
+    Thanks,<br />
+    The SendGrid Team
+  </body>
 </html>
 ```
 
 ## Additional Resources
 
-* [Substitution Tags]({{root_url}}/for-developers/sending-email/substitution-tags/)
-* [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
-* [Getting Started with the SMTP API]({{root_url}}/for-developers/sending-email/getting-started-smtp/)
-* [Integrating with SMTP]({{root_url}}/for-developers/sending-email/integrating-with-the-smtp-api/)
-* [Building an SMTP Email]({{root_url}}/for-developers/sending-email/building-an-smtp-email/)
+- [Substitution Tags]({{root_url}}/for-developers/sending-email/substitution-tags/)
+- [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
+- [Getting Started with the SMTP API]({{root_url}}/for-developers/sending-email/getting-started-smtp/)
+- [Integrating with SMTP]({{root_url}}/for-developers/sending-email/integrating-with-the-smtp-api/)
+- [Building an SMTP Email]({{root_url}}/for-developers/sending-email/building-an-smtp-email/)
