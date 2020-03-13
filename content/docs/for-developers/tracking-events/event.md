@@ -646,7 +646,7 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
     <td></td>
     <td></td>
     <td></td>
-    <td>X</td>
+    <td></td>
   </tr>
   <tr>
     <td><a href="#category">category</a></td>
