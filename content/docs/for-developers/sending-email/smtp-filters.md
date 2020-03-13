@@ -30,7 +30,7 @@ Some Settings are not listed here because they cannot be defined on a per-messag
 
 <call-out type="warning">
 
-Due to low usage, this setting has been deprecated. Click [here]({{root_url}}/ui/account-and-settings/retired-mail-settings/) for more information.
+Due to low usage, this setting has been removed. Click [here]({{root_url}}/ui/account-and-settings/retired-mail-settings/) for more information.
 
 </call-out>
 
@@ -336,7 +336,7 @@ If you don't use 'replace' this will insert an <code>&lt;img&gt;</code> tag at t
 
 <call-out type="warning">
 
-Due to low usage, this setting has been deprecated. Click [here]({{root_url}}/ui/account-and-settings/retired-mail-settings/) for more information.
+Due to low usage, this setting has been removed. Click [here]({{root_url}}/ui/account-and-settings/retired-mail-settings/) for more information.
 
 </call-out>
 
