@@ -27,7 +27,7 @@ The Address Whitelist setting whitelists a specified email address or domain for
 
 <call-out type="warning">
 
-Due to low usage, this setting has been deprecated. Click [here]({{root_url}}/ui/account-and-settings/retired-mail-settings/) for more information.
+Due to low usage, this setting has been removed. Click [here]({{root_url}}/ui/account-and-settings/retired-mail-settings/) for more information.
 
 </call-out>
 
@@ -143,7 +143,7 @@ This setting wraps an HTML template around your email content. This can be usefu
 
 <call-out type="warning">
 
-Due to low usage, this setting has been deprecated. Click [here]({{root_url}}/ui/account-and-settings/retired-mail-settings/) for more information.
+Due to low usage, this setting has been removed. Click [here]({{root_url}}/ui/account-and-settings/retired-mail-settings/) for more information.
 
 </call-out>
 
@@ -165,7 +165,7 @@ Large plain text files are sometimes unable to be converted to HTML. Instead, Se
 
 <call-out type="warning">
 
-Due to low usage, this setting has been deprecated. Click [here]({{root_url}}/ui/account-and-settings/retired-mail-settings/) for more information.
+Due to low usage, this setting has been removed. Click [here]({{root_url}}/ui/account-and-settings/retired-mail-settings/) for more information.
 
 </call-out>
 
