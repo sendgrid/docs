@@ -24,30 +24,35 @@ Custom Fields allow you to add extra information about a contact within your con
 
 <call-out>
 
-You can create up to 120 custom fields. 
+You can create up to 120 custom fields.
 
 </call-out>
 
-##  Creating Custom Fields
+## Creating Custom Fields
 
-*To add a custom field:*
+_To add a custom field:_
 
-The most common way to add custom fields is by including each custom field you’d like to add as a column in your CSV [upload]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#uploading-a-csv). If you’d like to add custom fields programmatically, see our [API documentation]( https://sendgrid.api-docs.io/v3.0/custom-fields/create-custom-field-definition)
+The most common way to add custom fields is by including each custom field you’d like to add as a column in your CSV [upload]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#uploading-a-csv). If you’d like to add custom fields programmatically, see our [API documentation](https://sendgrid.api-docs.io/v3.0/custom-fields/create-custom-field-definition)
 
-You can also add custom fields manually from the Custom Fields page. 
+You can also add custom fields manually from the Custom Fields page.
 
 1. Navigate to the Custom Fields page and click **New Custom Field**.
 1. Add a _Field Name_ and select a _Field Type_.
 1. Click **Create Field**.
 
-The field name should be created using only alphanumeric characters (A-Z and 0-9) and underscores(**_**). The **field type** can be date, text, or number fields. The **field type** is important for creating [segments]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/) from your contact
-database.
+The field name should be created using only alphanumeric characters (A-Z and 0-9) and underscores (\_). Custom fields should only begin with letters A-Z or underscores (\_). The field type can be `date`, `text`, or `number` fields. The field type is important for creating segments from your contact database. **Note:** If you have created a custom field that begins with a number, you will need to recreate it with a name that begins with letters A-Z or an underscore (\_).
+
+<call-out type="warning">
+
+Custom fields that begin with a number will cause issues when sending with Marketing Campaigns.
+
+</call-out>
 
 You can create three different types of custom fields, based on the data type. Each data type will allow you to use different queries for segmentation:
 
-* **Date** - allows you to select contacts before, after, or on a specific date. *Example: 1/1/2014*
-* **Text** - allows you to select contacts who match the specific text. *Example: Pet field that says "Dog"*
-* **Number** - allows you to do things like “greater than,” “less than,” or “equals” a specific number. Both decimal and integer values are accepted. *Example: The age of your recipient: 27*
+- **Date** - allows you to select contacts before, after, or on a specific date. _Example: 1/1/2014_
+- **Text** - allows you to select contacts who match the specific text. _Example: Pet field that says "Dog"_
+- **Number** - allows you to do things like “greater than,” “less than,” or “equals” a specific number. Both decimal and integer values are accepted. _Example: The age of your recipient: 27_
 
 <call-out type="warning">
 
@@ -55,9 +60,9 @@ Text custom fields are limited to 1,000 characters.
 
 </call-out>
 
- ### Reserved Fields
+### Reserved Fields
 
-Your account comes preloaded with unremovable reserved fields.  The following field names are all reserved:
+Your account comes preloaded with unremovable reserved fields. The following field names are all reserved:
 
 <table class="table">
   <tr><th>Field Name</th><th>Field Type</th></tr>
@@ -79,26 +84,25 @@ Your account comes preloaded with unremovable reserved fields.  The following fi
   <tr><td>unique_name</td><td>text</td></tr>
 </table>
 
+SendGrid auto-populates 6 reserved fields:
 
-SendGrid auto-populates 6 reserved fields: 
+`lists`
 
-``lists``
+`created_at`
 
-``created_at``
+`updated_at`
 
-``updated_at``
+`last_emailed`
 
-``last_emailed``
+`last_clicked`
 
-``last_clicked``
-
-``last_opened``
+`last_opened`
 
 Reserved fields are used by default to track useful metrics for your contacts.
 
 ## Deleting a Custom Field
 
-*To delete a custom field:*
+_To delete a custom field:_
 
 1. Navigate to **Marketing** and select **Custom Fields**.
 1. Locate the field you wish to remove.
@@ -108,20 +112,19 @@ Reserved fields are used by default to track useful metrics for your contacts.
 
 <call-out type="warning">
 
-Deleting a custom field deletes all values for that field across your contact database. If you have any campaigns using the data in this field with a substitution tag, those values do NOT get replaced when you send the campaign. You cannot delete a custom field that a segment is using in legacy Marketing Campaigns. Currently, in the new Marketing Campaigns experience, you are able to delete custom fields that are currently in use, so be extra cautious when you delete any existing custom fields. 
+Deleting a custom field deletes all values for that field across your contact database. If you have any campaigns using the data in this field with a substitution tag, those values do NOT get replaced when you send the campaign. You cannot delete a custom field that a segment is using in legacy Marketing Campaigns. Currently, in the new Marketing Campaigns experience, you are able to delete custom fields that are currently in use, so be extra cautious when you delete any existing custom fields.
 
 This deletion process may take several minutes, and you will continue to see the custom field on this page until the process completes
 
 </call-out>
 
-##  Troubleshooting
+## Troubleshooting
 
 If a custom field value does not appear in the corresponding [Substitution Tag]({{root_url}}/ui/sending-email/editor/#using-substitution-tags), make sure that there is a value for that custom field associated with the contact in your contact database. If there is no value for a particular custom field, a space will be substituted instead.
 
 If you do find that the custom field has an associated value on the contact’s profile page, check the spelling of the substitution tag in the content of your campaign.
 
-
- ## 	Additional Resources
+## Additional Resources
 
 - [Substitution Tags]({{root_url}}/ui/sending-email/editor/#using-substitution-tags)
 - [Contacts]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/)
