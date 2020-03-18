@@ -25,6 +25,7 @@ EMAIL_USE_TLS = True
 ```
 
 Then to send email you can do the following:
+Inside yourapp.views.py
 
 ``` python
 from django.core.mail import send_mail
