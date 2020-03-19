@@ -2,7 +2,7 @@ Hello! Thank you for choosing to help contribute to one of the SendGrid open sou
 
 All third party contributors acknowledge that any contributions they provide will be made under the same open source license that the open source project is provided under.
 
-* [Feature Request](#feature-request)
+* [Content Request](#feature-request)
 * [Improvements to the Codebase](#improvements-to-the-codebase)
 * [Local Setup](#install-and-run-locally)
 	* [Dependencies](#dependencies)
@@ -27,14 +27,14 @@ Feel free to grab an issue you want to work on. Please indicate that you have be
 There are a few ways to contribute, which we'll enumerate below:
 
 <a name="feature-request"></a>
-## Feature Request
+## Content Request
 
-If you'd like to make a feature request, please read this section.
+If you'd like to make a content request, please read this section.
 
-The GitHub issue tracker is the preferred channel for library feature requests, but please respect the following restrictions:
+The GitHub issue tracker is the preferred channel for docs content requests, but please respect the following restrictions:
 
-- Please **search for existing issues** in order to ensure we don't have duplicate bugs/feature requests.
-- Please be respectful and considerate of others when commenting on issues
+- Please **search for existing issues** in order to ensure we don't have duplicate bugs/content requests.
+- Please be respectful and considerate of others when commenting on issues.
 
 <a name="improvements-to-the-codebase"></a>
 ## Improvements to the Codebase
