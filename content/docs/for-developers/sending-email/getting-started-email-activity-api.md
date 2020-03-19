@@ -227,9 +227,6 @@ This is a full list of basic query types and examples: (replace the data in quot
    <td><code>(Contains(events,"processed"))</code></td>
  </tr>
  <tr>
-   <td><code>originating_ip</code> - this is the IP address of the person sending the message</td>
-   <td><code>originating_ip="4.77.777.77"</code></td>
- <tr>
    <td><code>categories</code> - custom tags that you create</td>
    <td><code>(Contains(categories,"categories_example"))</code></td>
  </tr>
