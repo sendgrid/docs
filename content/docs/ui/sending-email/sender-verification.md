@@ -23,11 +23,13 @@ To protect your sending reputation and to uphold legitimate sending behavior, we
 1. Under Settings in the navigation bar, click **Sender Authentication**.
 2. Proceed with **Single Sender Verification** by selecting **Get Started** under **Verify an Address**.
 
-![Verify an Address]()
+![Sender Auth Page]({{root_url}}/img/sender-verification-sender-auth-page.png 'Sender Auth Page')
 
 3. You will be taken to the **Single Sender Verification** page. Under **Create your First Sender**, click **Create New Sender** to load a form modal.
 
-![Create a New Sender]()
+![Sender Management]({{root_url}}/img/sender-verification-sender-management-page.png 'Sender Management')
+
+![Create New Sender]({{root_url}}/img/sender-verification-form-modal.png 'Create New Sender')
 
 4. Fill in all of the fields in the form modal and then click **Create**.
 
@@ -49,7 +51,7 @@ When filling the "From Email Address" field, you may notice a warning when enter
 
 If, for any reason, you need to resend the verification email, click the action menu on the **Single Sender Verification** page and select **Resend Verification**. We will deliver a new confirmation email to the address you are attempting to verify.
 
-![Resend Verifictaion Email]()
+![Resend Verification]({{root_url}}/img/sender-verification-resend-verification.png 'Resend Verification')
 
 <call-out>
 
@@ -59,4 +61,4 @@ If you have an [authenticated domain]({{root_url}}/ui/account-and-settings/how-t
 
 You will now see a page confirming the verification of your address. Click **Return to Single Sender Verification** to add more addresses or make any changes to the address you just verified. Congratulations, you are now ready to send email with SendGrid.
 
-![Sender Verified Page]()
+![Sender Verified]({{root_url}}/img/sender-verification-sender-verified-page.png 'Sender Verified')
