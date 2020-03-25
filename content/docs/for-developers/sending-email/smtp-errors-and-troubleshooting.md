@@ -122,9 +122,9 @@ When you try to send an invalid X-SMTPAPI header, you will get an email with det
 
  *To update your certificates:*
 
-1. Download the GoDaddy CA bundle from [https://certs.godaddy.com/anonymous/repository.pki](https://certs.godaddy.com/anonymous/repository.pki) (grab the one called `"gd\_bundle-g2-g1.crt"`).
+1. Download the GoDaddy CA bundle from [https://certs.godaddy.com/anonymous/repository.pki](https://certs.godaddy.com/anonymous/repository.pki) (grab the one called `"gd_bundle-g2-g1.crt"`).
 1. Save that on your server.
-1. Tell Postfix where to find it by adding or editing the following line in `/etc/postfix/` [main.cf](http://main.cf/): `"smtp\_tls\_CAfile = /etc/postfix/ssl/gd\_bundle-g2-g1.crt"`
+1. Tell Postfix where to find it by adding or editing the following line in `/etc/postfix/` [main.cf](http://main.cf/): `"smtp_tls_CAfile = /etc/postfix/ssl/gd_bundle-g2-g1.crt"`
 1. Restart Postfix to make the change take effect.
 
  If the mail server communicates with more than just us, add this certificate to your existing CA bundle (frequently called `ca-bundle.crt`).
