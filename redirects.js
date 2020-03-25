@@ -4535,4 +4535,8 @@ module.exports = [
     from: '/User_Guide/Settings/Sender_Authentication/How_to_set_up_domain_authentication.html',
     to: '/ui/account-and-settings/how-to-set-up-domain-authentication/',
   },
+  {
+    from: '/ui/ads',
+    to: '/',
+  },
 ];
