@@ -37,11 +37,7 @@ There are some important features that are coming soon to our brand new version 
     <td><span style="color:#18c96e;">Delivered</span></td>
   </tr>
   <tr>
-    <td>Contact integration with the <a href="https://sendgrid.com/solutions/ads/" target="_blank">Twilio SendGrid Ads beta</a></td>
-    <td><span style="color:#18c96e;">Delivered</span></td>
-  </tr>
-  <tr>
-  <td><a href="https://sendgrid.com/docs/ui/sending-email/working-with-marketing-templates/#creating-a-template-from-a-single-send" target="_blank">Saving a Single Send or Automation email as a template</a></td>
+    <td><a href="https://sendgrid.com/docs/ui/sending-email/working-with-marketing-templates/#creating-a-template-from-a-single-send" target="_blank">Saving a Single Send or Automation email as a template</a></td>
     <td><span style="color:#18c96e;">Delivered</span></td>
   </tr>
   <tr>
