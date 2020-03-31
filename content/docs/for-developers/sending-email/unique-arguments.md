@@ -11,6 +11,12 @@ navigation:
   show: true
 ---
 
+<call-out type="warning">
+
+This information will be stored as a “Not PII” field and may be used for counting or other operations as SendGrid runs its systems. These fields generally cannot be redacted or removed. You should take care not to place PII in this field. SendGrid does not treat this data as PII, and its value may be visible to SendGrid employees, stored long-term, and may continue to be stored after you’ve left SendGrid’s platform.
+
+</call-out>
+
 The SMTP API JSON string allows you to attach an unlimited number of unique arguments to your email **up to 10,000 bytes**. The arguments are used only for tracking. They can be retrieved through the [Event API]({{root_url}}/for-developers/tracking-events/event/) or the [Email Activity]({{root_url}}/ui/analytics-and-reporting/email-activity-feed/) page.
 
 <call-out type="warning">
@@ -37,6 +43,7 @@ These arguments can be added using a JSON string like this:
 These arguments can then be seen in posts from the [SendGrid Event Webhook]({{root_url}}/for-developers/tracking-events/event/). The contents of one of these POST requests would look something like this:
 
 ### Example Webhook Post Data
+
 ```json
 {
   "sg_message_id": "145cea24eb8.1c420.57425.filter-132.3382.5368192A3.0",
@@ -65,10 +72,7 @@ To apply different unique arguments to individual emails, you may use [substitut
 ```json
 {
   "sub": {
-    "-account_number-": [
-      "314159",
-      "271828"
-    ]
+    "-account_number-": ["314159", "271828"]
   },
   "unique_args": {
     "customerAccountNumber": "-account_number-"
@@ -76,7 +80,7 @@ To apply different unique arguments to individual emails, you may use [substitut
 }
 ```
 
-## 	Additional Resources
+## Additional Resources
 
 - [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
 - [Getting Started with the SMTP API]({{root_url}}/for-developers/sending-email/getting-started-smtp/)

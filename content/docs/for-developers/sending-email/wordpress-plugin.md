@@ -1,25 +1,26 @@
 ---
 st:
- published_at: 2016-07-25
- type: [integrate]
+  published_at: 2016-07-25
+  type: [integrate]
 seo:
- title: SendGrid's WordPress Plugin
- description: Learn how to send your WordPress email through SendGrid.
- keywords: WordPress, SendGrid, integrate, plugin, subscription widget
+  title: SendGrid's WordPress Plugin
+  description: Learn how to send your WordPress email through SendGrid.
+  keywords: WordPress, SendGrid, integrate, plugin, subscription widget
 title: SendGrid's WordPress Plugin
 group: plugins
 weight: 100
 layout: page
 navigation:
- show: true
+  show: true
 ---
+
 SendGrid's cloud-based email infrastructure relieves businesses of the cost and complexity of maintaining custom email systems. SendGrid provides reliable deliverability, scalability, and real-time analytics along with flexible APIs that make custom integration with your application a breeze.
 
 SendGrid’s [WordPress plugin](https://wordpress.org/plugins/sendgrid-email-delivery-simplified/) replaces WordPress’s default **wp_mail()** function by using either an SMTP or API integration with SendGrid to send outgoing email from your WordPress installation. It also allows you to upload contacts directly to your SendGrid Marketing Campaigns account via a [subscription widget]({{root_url}}/for-developers/sending-email/wordpress-subscription-widget/).
 
 By using the SendGrid plugin, you will be able to take advantage of improved deliverability and an expanded feature set, including tracking and analytics, to enhance user engagement on your WordPress installation. SendGrid also provides world class customer support, should you run into any issues.
 
-## 	Installing SendGrid’s WordPress Plugin
+## Installing SendGrid’s WordPress Plugin
 
 In order to send emails through SMTP, you first need to install the [Swift Mailer](https://wordpress.org/plugins/swift-mailer/) plugin.
 
@@ -43,13 +44,13 @@ When using the SMTP method you must also define the `To` address. It does not ma
 
 Emails are automatically tracked, allowing you to retrieve delivery and engagement statistics from within the SendGrid Dashboard. You can also specify certain [categories](#how-to-use-categories) for any of your emails to help you organize them by type.
 
-## 	Configuring SendGrid’s WordPress Plugin
+## Configuring SendGrid’s WordPress Plugin
 
 While it is possible to simply install and configure the SendGrid plugin for WordPress as described above to immediately begin sending your emails through SendGrid, you may take steps to further customize the SendGrid WordPress plugin.
 
 The following explanations and examples show how you can use SendGrid to adjust WordPress’s `wp_mail()` function.
 
- ##### 	The wp_mail() Function
+##### The wp_mail() Function
 
 The SendGrid plugin makes adjustments to the `wp_mail()` function so that all emails sent from WordPress are delivered by SendGrid.
 
@@ -84,9 +85,15 @@ After you’ve run wp_mail(), you must remove the ‘text/html’ filter in orde
 remove_filter('wp_mail_content_type', 'set_html_content_type');
 ```
 
-## 	Sending HTML in Your Email Using Different Headers
+## Sending HTML in Your Email Using Different Headers
 
- #### 	Using an Array to Set Your Headers
+<call-out type="warning">
+
+Categories and Unique Arguments will be stored as a “Not PII” field and may be used for counting or other operations as SendGrid runs its systems. These fields generally cannot be redacted or removed. You should take care not to place PII in this field. SendGrid does not treat this data as PII, and its value may be visible to SendGrid employees, stored long-term, and may continue to be stored after you’ve left SendGrid’s platform.
+
+</call-out>
+
+#### Using an Array to Set Your Headers
 
 ```php
 $subject = 'Test SendGrid plugin';
@@ -110,7 +117,7 @@ $mail = wp_mail($to, $subject, $message, $headers, $attachments);
 remove_filter('wp_mail_content_type', 'set_html_content_type');
 ```
 
- #### 	Using SendGrid\Email() to Set Your Headers
+#### Using SendGrid\Email() to Set Your Headers
 
 ```php
 $subject = 'Test SendGrid plugin';
@@ -135,7 +142,7 @@ $mail = wp_mail($to, $subject, $message, $headers, $attachments);
 remove_filter('wp_mail_content_type', 'set_html_content_type');
 ```
 
-## 	Substitution Tags and Sections
+## Substitution Tags and Sections
 
 ```php
 $subject = 'Hey %name%, you work at %place%';
@@ -157,7 +164,13 @@ $mail = wp_mail($to, $subject, $message, $headers);
 
 For more examples of how you can use SendGrid SMTPAPI headers, please visit the [SendGrid PHP Library on GitHub](https://github.com/sendgrid/sendgrid-php#smtpapi).
 
-## 	How to Use Categories
+## How to Use Categories
+
+<call-out type="warning">
+
+This information will be stored as a “Not PII” field and may be used for counting or other operations as SendGrid runs its systems. These fields generally cannot be redacted or removed. You should take care not to place PII in this field. SendGrid does not treat this data as PII, and its value may be visible to SendGrid employees, stored long-term, and may continue to be stored after you’ve left SendGrid’s platform.
+
+</call-out>
 
 You can use [categories]({{root_url}}/ui/analytics-and-reporting/categories/) to help organize and track the emails sent from WordPress via the SendGrid plugin.
 
@@ -173,7 +186,7 @@ $headers[] = 'categories: category1, category2';
 
 If you would like to configure categories for statistics tracking, simply set your desired category as the value of the 'Categories' field in the 'Statistics settings' section.
 
-## 	Multisite
+## Multisite
 
 If you are using the SendGrid plugin in a multisite environment, you need to enable it for use across your multisite network.
 
@@ -193,7 +206,7 @@ You can enable access for SendGrid settings to each subsite in the Multisite Set
 
 If you have already installed the SendGrid plugin in a multisite environment and you update to any version **after** 1.9.0 you may need to re-configure your plugin.
 
-## 	Additional Resources
+## Additional Resources
 
-* [SendGrid's WordPress Subscription Widget]({{root_url}}/for-developers/sending-email/wordpress-subscription-widget/)
-* [SendGrid's WordPress Integration FAQ]({{root_url}}/for-developers/sending-email/wordpress-faq/)
+- [SendGrid's WordPress Subscription Widget]({{root_url}}/for-developers/sending-email/wordpress-subscription-widget/)
+- [SendGrid's WordPress Integration FAQ]({{root_url}}/for-developers/sending-email/wordpress-faq/)
