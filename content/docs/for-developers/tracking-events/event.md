@@ -10,6 +10,7 @@ layout: page
 navigation:
   show: true
 ---
+
 ## Authentication
 
 In order to use the Event Webhook, you need to enter a username and password. The following characters can be used for webhook authentication.
@@ -23,9 +24,15 @@ Characters not on the list below are not supported and will not authenticate to 
 - **All lower case letters:** a b c d e f g h i j k l m n o p q r s t u v w x y z
 - **All upper case letters:** A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 - **All digits:** 0 1 2 3 4 5 6 7 8 9
-- **The following characters:** - . _ : ~ ! $ & ' ( ) * + , ; = % @
+- **The following characters:** - . \_ : ~ ! \$ & ' ( ) \* + , ; = % @
 
-## 	Events
+<call-out type="warning">
+
+Categories and Unique Arguments will be stored as a “Not PII” field and may be used for counting or other operations as SendGrid runs its systems. These fields generally cannot be redacted or removed. You should take care not to place PII in this field. SendGrid does not treat this data as PII, and its value may be visible to SendGrid employees, stored long-term, and may continue to be stored after you’ve left SendGrid’s platform.
+
+</call-out>
+
+## Events
 
 Events are generated when email is processed by SendGrid and email service providers. There are 2 types of events - delivery and engagement events. Delivery events indicate the status of email delivery to the recipient. Engagement events indicate how the recipient is interacting with the email.
 
@@ -33,129 +40,129 @@ Here is an event response that includes an example of each type of event:
 
 ```json
 [
-   {
-      "email":"example@test.com",
-      "timestamp":1513299569,
-      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
-      "event":"processed",
-      "category":"cat facts",
-      "sg_event_id":"sg_event_id",
-      "sg_message_id":"sg_message_id"
-   },
-   {
-      "email":"example@test.com",
-      "timestamp":1513299569,
-      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
-      "event":"deferred",
-      "category":"cat facts",
-      "sg_event_id":"sg_event_id",
-      "sg_message_id":"sg_message_id",
-      "response":"400 try again later",
-      "attempt":"5"
-   },
-   {
-      "email":"example@test.com",
-      "timestamp":1513299569,
-      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
-      "event":"delivered",
-      "category":"cat facts",
-      "sg_event_id":"sg_event_id",
-      "sg_message_id":"sg_message_id",
-      "response":"250 OK"
-   },
-   {
-      "email":"example@test.com",
-      "timestamp":1513299569,
-      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
-      "event":"open",
-      "category":"cat facts",
-      "sg_event_id":"sg_event_id",
-      "sg_message_id":"sg_message_id",
-      "useragent":"Mozilla/4.0 (compatible; MSIE 6.1; Windows XP; .NET CLR 1.1.4322; .NET CLR 2.0.50727)",
-      "ip":"255.255.255.255"
-   },
-   {
-      "email":"example@test.com",
-      "timestamp":1513299569,
-      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
-      "event":"click",
-      "category":"cat facts",
-      "sg_event_id":"sg_event_id",
-      "sg_message_id":"sg_message_id",
-      "useragent":"Mozilla/4.0 (compatible; MSIE 6.1; Windows XP; .NET CLR 1.1.4322; .NET CLR 2.0.50727)",
-      "ip":"255.255.255.255",
-      "url":"http://www.sendgrid.com/"
-   },
-   {
-      "email":"example@test.com",
-      "timestamp":1513299569,
-      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
-      "event":"bounce",
-      "category":"cat facts",
-      "sg_event_id":"sg_event_id",
-      "sg_message_id":"sg_message_id",
-      "reason":"500 unknown recipient",
-      "status":"5.0.0"
-   },
-   {
-      "email":"example@test.com",
-      "timestamp":1513299569,
-      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
-      "event":"dropped",
-      "category":"cat facts",
-      "sg_event_id":"sg_event_id",
-      "sg_message_id":"sg_message_id",
-      "reason":"Bounced Address",
-      "status":"5.0.0"
-   },
-   {
-      "email":"example@test.com",
-      "timestamp":1513299569,
-      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
-      "event":"spamreport",
-      "category":"cat facts",
-      "sg_event_id":"sg_event_id",
-      "sg_message_id":"sg_message_id"
-   },
-   {
-      "email":"example@test.com",
-      "timestamp":1513299569,
-      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
-      "event":"unsubscribe",
-      "category":"cat facts",
-      "sg_event_id":"sg_event_id",
-      "sg_message_id":"sg_message_id"
-   },
-   {
-      "email":"example@test.com",
-      "timestamp":1513299569,
-      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
-      "event":"group_unsubscribe",
-      "category":"cat facts",
-      "sg_event_id":"sg_event_id",
-      "sg_message_id":"sg_message_id",
-      "useragent":"Mozilla/4.0 (compatible; MSIE 6.1; Windows XP; .NET CLR 1.1.4322; .NET CLR 2.0.50727)",
-      "ip":"255.255.255.255",
-      "url":"http://www.sendgrid.com/",
-      "asm_group_id":10
-   },
-   {
-      "email":"example@test.com",
-      "timestamp":1513299569,
-      "smtp-id":"<14c5d75ce93.dfd.64b469@ismtpd-555>",
-      "event":"group_resubscribe",
-      "category":"cat facts",
-      "sg_event_id":"sg_event_id",
-      "sg_message_id":"sg_message_id",
-      "useragent":"Mozilla/4.0 (compatible; MSIE 6.1; Windows XP; .NET CLR 1.1.4322; .NET CLR 2.0.50727)",
-      "ip":"000.000.000.000",
-      "url":"http://www.sendgrid.com/",
-      "asm_group_id":10
-   }
+  {
+    "email": "example@test.com",
+    "timestamp": 1513299569,
+    "smtp-id": "<14c5d75ce93.dfd.64b469@ismtpd-555>",
+    "event": "processed",
+    "category": "cat facts",
+    "sg_event_id": "sg_event_id",
+    "sg_message_id": "sg_message_id"
+  },
+  {
+    "email": "example@test.com",
+    "timestamp": 1513299569,
+    "smtp-id": "<14c5d75ce93.dfd.64b469@ismtpd-555>",
+    "event": "deferred",
+    "category": "cat facts",
+    "sg_event_id": "sg_event_id",
+    "sg_message_id": "sg_message_id",
+    "response": "400 try again later",
+    "attempt": "5"
+  },
+  {
+    "email": "example@test.com",
+    "timestamp": 1513299569,
+    "smtp-id": "<14c5d75ce93.dfd.64b469@ismtpd-555>",
+    "event": "delivered",
+    "category": "cat facts",
+    "sg_event_id": "sg_event_id",
+    "sg_message_id": "sg_message_id",
+    "response": "250 OK"
+  },
+  {
+    "email": "example@test.com",
+    "timestamp": 1513299569,
+    "smtp-id": "<14c5d75ce93.dfd.64b469@ismtpd-555>",
+    "event": "open",
+    "category": "cat facts",
+    "sg_event_id": "sg_event_id",
+    "sg_message_id": "sg_message_id",
+    "useragent": "Mozilla/4.0 (compatible; MSIE 6.1; Windows XP; .NET CLR 1.1.4322; .NET CLR 2.0.50727)",
+    "ip": "255.255.255.255"
+  },
+  {
+    "email": "example@test.com",
+    "timestamp": 1513299569,
+    "smtp-id": "<14c5d75ce93.dfd.64b469@ismtpd-555>",
+    "event": "click",
+    "category": "cat facts",
+    "sg_event_id": "sg_event_id",
+    "sg_message_id": "sg_message_id",
+    "useragent": "Mozilla/4.0 (compatible; MSIE 6.1; Windows XP; .NET CLR 1.1.4322; .NET CLR 2.0.50727)",
+    "ip": "255.255.255.255",
+    "url": "http://www.sendgrid.com/"
+  },
+  {
+    "email": "example@test.com",
+    "timestamp": 1513299569,
+    "smtp-id": "<14c5d75ce93.dfd.64b469@ismtpd-555>",
+    "event": "bounce",
+    "category": "cat facts",
+    "sg_event_id": "sg_event_id",
+    "sg_message_id": "sg_message_id",
+    "reason": "500 unknown recipient",
+    "status": "5.0.0"
+  },
+  {
+    "email": "example@test.com",
+    "timestamp": 1513299569,
+    "smtp-id": "<14c5d75ce93.dfd.64b469@ismtpd-555>",
+    "event": "dropped",
+    "category": "cat facts",
+    "sg_event_id": "sg_event_id",
+    "sg_message_id": "sg_message_id",
+    "reason": "Bounced Address",
+    "status": "5.0.0"
+  },
+  {
+    "email": "example@test.com",
+    "timestamp": 1513299569,
+    "smtp-id": "<14c5d75ce93.dfd.64b469@ismtpd-555>",
+    "event": "spamreport",
+    "category": "cat facts",
+    "sg_event_id": "sg_event_id",
+    "sg_message_id": "sg_message_id"
+  },
+  {
+    "email": "example@test.com",
+    "timestamp": 1513299569,
+    "smtp-id": "<14c5d75ce93.dfd.64b469@ismtpd-555>",
+    "event": "unsubscribe",
+    "category": "cat facts",
+    "sg_event_id": "sg_event_id",
+    "sg_message_id": "sg_message_id"
+  },
+  {
+    "email": "example@test.com",
+    "timestamp": 1513299569,
+    "smtp-id": "<14c5d75ce93.dfd.64b469@ismtpd-555>",
+    "event": "group_unsubscribe",
+    "category": "cat facts",
+    "sg_event_id": "sg_event_id",
+    "sg_message_id": "sg_message_id",
+    "useragent": "Mozilla/4.0 (compatible; MSIE 6.1; Windows XP; .NET CLR 1.1.4322; .NET CLR 2.0.50727)",
+    "ip": "255.255.255.255",
+    "url": "http://www.sendgrid.com/",
+    "asm_group_id": 10
+  },
+  {
+    "email": "example@test.com",
+    "timestamp": 1513299569,
+    "smtp-id": "<14c5d75ce93.dfd.64b469@ismtpd-555>",
+    "event": "group_resubscribe",
+    "category": "cat facts",
+    "sg_event_id": "sg_event_id",
+    "sg_message_id": "sg_message_id",
+    "useragent": "Mozilla/4.0 (compatible; MSIE 6.1; Windows XP; .NET CLR 1.1.4322; .NET CLR 2.0.50727)",
+    "ip": "000.000.000.000",
+    "url": "http://www.sendgrid.com/",
+    "asm_group_id": 10
+  }
 ]
 ```
 
- ### 	Delivery events
+### Delivery events
 
 Delivery events include processed, dropped, delivered, deferred, and bounce.
 
@@ -303,7 +310,7 @@ Delivery events include processed, dropped, delivered, deferred, and bounce.
    </tbody>
 </table>
 
- ### 	Engagement events
+### Engagement events
 
 Engagement events include open, click, spam report, unsubscribe, group unsubscribe, and group resubscribe.
 
@@ -449,7 +456,7 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
    </tbody>
 </table>
 
-## 	Event objects
+## Event objects
 
 <table class="table auto">
   <tr>
@@ -750,7 +757,7 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
 
 \* In the case of a delayed or asynchronous bounce, the message ID will be unavailable.
 
- ### 	JSON objects
+### JSON objects
 
 - <a name="email"></a>`email` - the email address of the recipient
 - <a name="timestamp"></a>`timestamp` - the <a href="https://en.wikipedia.org/wiki/Unix_time">UNIX timestamp</a> of when the message was sent
@@ -796,10 +803,7 @@ Array:
   {
     "email": "john.doe@sendgrid.com",
     "timestamp": 1337966815,
-    "category": [
-      "newuser",
-      "transactional"
-    ],
+    "category": ["newuser", "transactional"],
     "event": "open"
   },
   {
@@ -813,7 +817,8 @@ Array:
 
 - <a name="asmgroupid"></a>`asm_group_id` - The ID of the unsubscribe group the recipient's email address is included in. ASM IDs correspond to the ID that is returned when you create an unsubscribe group.
 - <a name="uniqueargs"></a>`unique_args` or `custom_args`
-## 	Unique Arguments and Custom Arguments
+
+## Unique Arguments and Custom Arguments
 
 Events generated by SendGrid can include [unique arguments]({{root_url}}/for-developers/sending-email/unique-arguments/) or custom arguments.
 
@@ -823,7 +828,7 @@ Unique arguments and custom arguments essentially have the same function. Howeve
 
 </call-out>
 
- ### 	Unique Arguments
+### Unique Arguments
 
 To define and receive unique arguments when sending email with the [SMTP API]({{root_url}}/for-developers/sending-email/building-an-smtp-email/) or the [v2 Mail Send endpoint]({{root_url}}/API_Reference/Web_API/mail.html), use the `unique_args` parameter in the X-SMTPAPI header. For example, if you have an application and want to receive custom parameters such as the `userid` and the email `template`, you would submit them with the X-SMTPAPI header, as described [here]({{root_url}}/for-developers/sending-email/unique-arguments/).
 
@@ -843,7 +848,7 @@ You will receive the same unique argument included with the data posted to your 
 ```json
 [
   {
-    "sg_message_id":"sendgrid_internal_message_id",
+    "sg_message_id": "sendgrid_internal_message_id",
     "email": "john.doe@sendgrid.com",
     "timestamp": 1337966815,
     "event": "click",
@@ -860,7 +865,7 @@ You can create unique arguments with the same words as reserved keys, such as "e
 
 </call-out>
 
- ### 	Reserved Keys in Unique Arguments
+### Reserved Keys in Unique Arguments
 
 ```json
 //for this example, assume we're sending to john.doe@sendgrid.com
@@ -875,13 +880,13 @@ You can create unique arguments with the same words as reserved keys, such as "e
 }
 ```
 
- ### 	The resulting webhook call
+### The resulting webhook call
 
 ```json
 [
   {
     "event": "Processed",
-    "timestamp":"123456789",
+    "timestamp": "123456789",
     "customerAccountNumber": "55555",
     "activationAttempt": "1",
     "New Argument 1": "New Value 1",
@@ -896,7 +901,7 @@ You'll notice that the unique arguments, "event" and "email", were overwritten b
 
 </call-out>
 
- ### 	Custom Arguments
+### Custom Arguments
 
 Any custom arguments that you include with an email sent through [v3 Mail Send]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html) gets added to your Event Webhook response.
 
@@ -944,27 +949,27 @@ The Event Webhook response:
 
 For emails sent through our Marketing Campaigns feature, we add Marketing Campaigns specific parameters to the Event Webhook. Both `marketing_campaign_name` and `marketing_campaign_id` are displayed as unique arguments in the event data.
 
- ### 	Example event from a standard (non-A/B test) campaign send:
+### Example event from a standard (non-A/B test) campaign send:
 
 ```json
-  {
-    "category": [],
-    "email": "email@example.com",
-    "event": "processed",
-    "marketing_campaign_id": 12345,
-    "marketing_campaign_name": "campaign name",
-    "post_type": "event",
-    "sg_event_id": "sendgrid_internal_event_id",
-    "sg_message_id": "sendgrid_internal_message_id",
-    "sg_user_id": 12345,
-    "smtp-id": "",
-    "timestamp": 1442349428
-  }
+{
+  "category": [],
+  "email": "email@example.com",
+  "event": "processed",
+  "marketing_campaign_id": 12345,
+  "marketing_campaign_name": "campaign name",
+  "post_type": "event",
+  "sg_event_id": "sendgrid_internal_event_id",
+  "sg_message_id": "sendgrid_internal_message_id",
+  "sg_user_id": 12345,
+  "smtp-id": "",
+  "timestamp": 1442349428
+}
 ```
 
- ### 	Example event from an A/B Test:
+### Example event from an A/B Test:
 
- `marketing_campaign_version` is displayed in the event data for emails sent as part of an A/B Test. The value for `marketing_campaign_version` are returned as `A`, `B`, `C`, etc.
+`marketing_campaign_version` is displayed in the event data for emails sent as part of an A/B Test. The value for `marketing_campaign_version` are returned as `A`, `B`, `C`, etc.
 
 ```json
 {
@@ -984,7 +989,7 @@ For emails sent through our Marketing Campaigns feature, we add Marketing Campai
 }
 ```
 
- ### 	Example event from the winning phase of an A/B Test:
+### Example event from the winning phase of an A/B Test:
 
 ```json
 {
@@ -1003,7 +1008,7 @@ For emails sent through our Marketing Campaigns feature, we add Marketing Campai
 }
 ```
 
- ### 	Legacy Marketing Email Unsubscribes
+### Legacy Marketing Email Unsubscribes
 
 For emails sent through our Legacy Marketing Email tool, unsubscribes look like the following example:
 
@@ -1017,10 +1022,7 @@ For emails sent through our Legacy Marketing Email tool, unsubscribes look like 
       "newsletter_id": "1943530",
       "newsletter_send_id": "2308608"
     },
-    "category": [
-      "Tests",
-      "Newsletter"
-    ],
+    "category": ["Tests", "Newsletter"],
     "event": "unsubscribe"
   }
 ]
@@ -1030,22 +1032,22 @@ For emails sent through our Legacy Marketing Email tool, unsubscribes look like 
 
 ```json
 [
-    {
-        "email": "john.doe@sendgrid.com",
-        "smtp-id": "<14c583da911.2c36.1c804d@ismtpd-073>",
-        "timestamp": 1427409578,
-        "pool": {
-            "name": "new_MY_test",
-            "id": 210
-        },
-        "sg_event_id": "RHFZB1IrTD2Y9Q7bUdZxUw",
-        "sg_message_id": "14c583da911.2c36.1c804d.filter-406.22375.55148AA99.0",
-        "event": "processed"
-    }
+  {
+    "email": "john.doe@sendgrid.com",
+    "smtp-id": "<14c583da911.2c36.1c804d@ismtpd-073>",
+    "timestamp": 1427409578,
+    "pool": {
+      "name": "new_MY_test",
+      "id": 210
+    },
+    "sg_event_id": "RHFZB1IrTD2Y9Q7bUdZxUw",
+    "sg_message_id": "14c583da911.2c36.1c804d.filter-406.22375.55148AA99.0",
+    "event": "processed"
+  }
 ]
 ```
 
- ### 	Click
+### Click
 
 <table class="table table-bordered table-striped">
    <thead>
@@ -1068,32 +1070,32 @@ For emails sent through our Legacy Marketing Email tool, unsubscribes look like 
 
 ```json
 [
-    {
-  "sg_event_id":"sendgrid_internal_event_id",
-  "sg_message_id":"sendgrid_internal_message_id",
-  "ip":"255.255.255.255",
-  "useragent":"Mozilla/5.0 (iPhone; CPU iPhone OS 7_1_2 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Version/7.0 Mobile/11D257 Safari/9537.53",
-  "event":"click",
-  "email":"email@example.com",
-  "timestamp":1249948800,
-  "url":"http://yourdomain.com/blog/news.html",
-  "url_offset": {
-    "index": 0,
-    "type": "html"
-  },
-  "unique_arg_key":"unique_arg_value",
-  "category":["category1", "category2"],
-  "newsletter": {
-    "newsletter_user_list_id": "10557865",
-    "newsletter_id": "1943530",
-    "newsletter_send_id": "2308608"
-  },
-  "asm_group_id": 1
-    }
+  {
+    "sg_event_id": "sendgrid_internal_event_id",
+    "sg_message_id": "sendgrid_internal_message_id",
+    "ip": "255.255.255.255",
+    "useragent": "Mozilla/5.0 (iPhone; CPU iPhone OS 7_1_2 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Version/7.0 Mobile/11D257 Safari/9537.53",
+    "event": "click",
+    "email": "email@example.com",
+    "timestamp": 1249948800,
+    "url": "http://yourdomain.com/blog/news.html",
+    "url_offset": {
+      "index": 0,
+      "type": "html"
+    },
+    "unique_arg_key": "unique_arg_value",
+    "category": ["category1", "category2"],
+    "newsletter": {
+      "newsletter_user_list_id": "10557865",
+      "newsletter_id": "1943530",
+      "newsletter_send_id": "2308608"
+    },
+    "asm_group_id": 1
+  }
 ]
 ```
 
-## 	Additional Resources
+## Additional Resources
 
 - [Getting started with the Event Webhook]({{root_url}}/for-developers/tracking-events/getting-started-event-webhook/)
 - [Troubleshooting the event webhook]({{root_url}}/for-developers/tracking-events/troubleshooting/)

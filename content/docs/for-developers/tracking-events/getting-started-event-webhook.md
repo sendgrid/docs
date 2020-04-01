@@ -13,11 +13,17 @@ navigation:
 
 SendGrid's Event Webhook will notify a URL of your choice via HTTP POST with information about events that occur as SendGrid processes your email. You can use this data to remove unsubscribes, react to spam reports, [determine unengaged recipients](https://sendgrid.com/blog/infer-engagement-with-the-event-api/), identify bounced email addresses, or create advanced analytics of your email program. With Unique Arguments and Category parameters, you can insert dynamic data that will help build a clear image of your email program.
 
+<call-out type="warning">
+
+Categories and Unique Arguments will be stored as a “Not PII” field and may be used for counting or other operations as SendGrid runs its systems. These fields generally cannot be redacted or removed. You should take care not to place PII in this field. SendGrid does not treat this data as PII, and its value may be visible to SendGrid employees, stored long-term, and may continue to be stored after you’ve left SendGrid’s platform.
+
+</call-out>
+
 You should set up the Event Webhook if you want to keep track of more event data that we store for you. Due to the sheer volume of email we send, we can only store so much information. Your [Email Activity Feed]({{root_url}}/ui/analytics-and-reporting/email-activity-feed/) can hold up to 30 days worth of events. After that time passes, the email event data is gone.
 
 ## Getting started
 
-*To get started with the Event Webhook:*
+_To get started with the Event Webhook:_
 
 1. Go to the [Webhook tester](https://webhook.site/).
 1. Copy the unique URL.
@@ -27,9 +33,9 @@ You should set up the Event Webhook if you want to keep track of more event data
 1. Select the Event notifications you would like to test.
 1. Click the checkmark in the top corner to save these updates into your settings.
 1. Click **Test Your Integration**.
-    <br> This returns an HTTP POST containing a JSON array of your selected events in one request after a very short delay. Our servers send these POSTs to the URL you defined in the Event Notification app options.
+   <br> This returns an HTTP POST containing a JSON array of your selected events in one request after a very short delay. Our servers send these POSTs to the URL you defined in the Event Notification app options.
 1. Go back to the [Webhook tester](https://webhook.site/) and reload the page.
-     <br> This loads the JSON array of your selected events that you set in the last step.
+   <br> This loads the JSON array of your selected events that you set in the last step.
 
 <call-out type="warning">
 
