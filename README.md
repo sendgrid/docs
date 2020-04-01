@@ -6,107 +6,165 @@
 [![Twitter Follow](https://img.shields.io/twitter/follow/sendgrid.svg?style=social&label=Follow)](https://twitter.com/sendgrid)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./license)
 
+## Introduction
+
 This is a Gatsby site.
 
 The develop branch is merged to production weekly (unless we need to do a release sooner than that).
 
 The master branch is continuously deployed to production.
 
-### _Please_, feel free to make any contributions you feel will make SendGrid Documentation better.
+- **_Please_, feel free to make any contributions you feel will make SendGrid Documentation better.**
+- **Submit all pull requests to the develop branch**
 
-**Submit all pull requests to the develop branch**
-
-**All third party contributors acknowledge that any contributions they provide will be made under the same open source license that the open source project is provided under.**
-
+- **All third party contributors acknowledge that any contributions they provide will be made under the same open source license that the open source project is provided under.**
+  - **When making contributions, be sure to place an "x" in the brackets of the PR description where it says "[ ] I acknowledge that all my contributions will be made under the project's license."**
 
 ## Table of Contents
 
-* [Local Setup](#local)
-* [About](#about)
-* [License](#license)
+- [Local Dependency Setup](#local-dependency-setup)
+  - [Mac](#mac)
+  - [Windows](#windows)
+  - [Linux](#linux)
+- [Local Repository Setup](#local-repository-setup)
+- [About](#about)
+- [License](#license)
 
+## Local Dependency Setup
 
-<a name="local"></a>
-## Local Setup
-
-<a name="dependencies"></a>
 ### Dependencies
 
-* Required:
-    * [Git](https://git-scm.com)
-    * [RVM](https://rvm.io)
-    * [Homebrew](https://brew.sh)
-    * [npm](https://www.npmjs.com)
-    * [yarn](https://yarnpkg.com/en/)
-    * [Gatsby](https://www.gatsbyjs.org)
+- Required:
+  - [Git](https://git-scm.com)
+  - [npm](https://www.npmjs.com)
+  - [yarn](https://yarnpkg.com/en/)
+  - [Gatsby](https://www.gatsbyjs.org)
 
-<a name="setup"></a>
-### Setup Steps
+**Note:** Dependencies differ for work on the `old-develop` branch. If you need to work on `old-develop`, please see the README file after checking out that branch. This is uncommon.
 
-* Install Git for:
-	* [Mac](https://git-scm.com/download/mac) 
-	* [Windows](https://git-scm.com/download/win) 
-	* [Linux](https://git-scm.com/download/linux)
+## Setup Steps
 
-* Install RVM
+#### Mac
 
-	`$ \curl -sSL https://get.rvm.io | bash -s stable --ruby`
+- Install Git
+  - [Git for Mac](https://git-scm.com/download/mac)
 
-* Install Homebrew (if you don't have it)
+We recommend using [Homebrew](https://brew.sh/) to install and manage packages on a MacOS.
 
-	`$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+- Install Homebrew:
 
-* Install or update npm
+  ```shell
+  $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  ```
 
-        `sudo apt-get update && sudo apt-get upgrade` // Optional
+- Install npm:
 
-	`$ brew install npm`
-	
-**Note:** You may need to use 'sudo' before the command to get it to work as intended. 
+  ```shell
+  $ brew install npm
+  ```
 
-* Set your Node version
+- Set your Node.js version to 12
 
-	`$ npm install -g n`
+  ```shell
+  $ npm install -g n
 
-	`$ n 8.7.0`
+  $ n 12.16.1
+  ```
 
-* Download yarn
+- Install yarn
 
-  `$ brew install yarn`
+  ```shell
+  $ brew install yarn
+  ```
 
-* Clone the repo
+#### Windows
 
-	`$ git clone https://github.com/sendgrid/docs.git`
+- Install Git
 
+  - [Git for Windows](https://git-scm.com/download/win)
 
-* Go to your docs directory
+- Install npm
 
-	`$ cd docs`
+  - To install Node.js and npm on Windows, you can download the installer here:
+    - https://nodejs.org/en/#home-downloadhead
+  - Use Node.js version 12, the current Long Term Support (LTS) version.
 
-* Switch to develop branch to make changes
+- Install Yarn:
+  - To install Yarn on windows, you can download the installer here:
+    - https://classic.yarnpkg.com/en/docs/install/#windows-stable
 
-	`$ git checkout develop`
+#### Linux
 
-* Install the Gatsby CLI
+- Install Git:
 
-	`$ npm install -g gatsby-cli`
+  - [Git for Linux](https://git-scm.com/download/linux)
 
-* Install npm package dependencies
+- Install npm:
 
-  `$ yarn install`
+  - To install Node.js and npm on Linux, select the package and instillation appropriate for your Linux distribution. You can find help here:
+    - https://nodejs.org/en/download/package-manager/
+  - Use Node.js version 12, the current Long Term Support (LTS) version.
 
-* Build the local site
+- Install Yarn:
+  - To install Yarn on Linux, follow the directions for your Linux distribution on the yarn site. You will find Debian/Ubuntu directions here:
+    - https://classic.yarnpkg.com/en/docs/install/#debian-stable
 
-  `$ yarn develop`
-  Gatsby starts a hot-reloading development environment accessible at [localhost:8000](localhost:8000)
+## Local Repository Setup
 
-<a name="about"></a>
+- Clone the SendGrid Docs Repo
+
+  - SSH:
+
+    ```shell
+    $ git clone git@github.com:sendgrid/docs.git
+    ```
+
+  - HTTPS:
+
+    ```shell
+    $ git clone https://github.com/sendgrid/docs.git
+    ```
+
+- Go to your docs directory
+
+  ```shell
+  $ cd docs
+  ```
+
+- Switch to develop branch to make changes
+
+  ```shell
+  $ git checkout develop
+  ```
+
+- Install the Gatsby CLI
+
+  ```shell
+  $ npm install -g gatsby-cli
+  ```
+
+- Install npm package dependencies
+
+  ```shell
+  $ yarn install
+  ```
+
+- Build the local site
+  - With the Gatsby CLI installed globally, you can run:
+    ```shell
+    $ gatsby develop
+    ```
+  - Alternatively, you can run:
+    ```shell
+    $ yarn develop
+    ```
+  - Either of the above commands should start a hot-reloading development environment accessible at [localhost:8000](localhost:8000)
+
 ## About
 
 SendGrid is guided and supported by the SendGrid [Developer Experience Team](mailto:dx@sendgrid.com).
 It is maintained and funded by SendGrid, Inc. The names and logos are trademarks of SendGrid, Inc.
 
-
-<a name="license"></a>
 ## License
+
 SendGrid Documentation is licensed under the **[MIT License (MIT)](https://github.com/sendgrid/docs/blob/develop/license)**
