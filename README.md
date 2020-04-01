@@ -111,6 +111,9 @@ We recommend using [Homebrew](https://brew.sh/) to install and manage packages o
 
 ## Local Repository Setup
 
+**Note:** When working on Windows, you may need to run Command Prompt or PowerShell as an Administrator.
+**Note:** When working on Mac or Linux, you may need to run some commands using "sudo."
+
 - Clone the SendGrid Docs Repo
 
   - SSH:
