@@ -25,7 +25,7 @@ Once you are viewing a Docs page in GitHub, click the pencil icon to begin editi
 
 5. When done, click **Propose file change**. The Docs Team will be notified of your request. Once we are able to review the change, we will publish it to the site!
 
-> All contributors to the SendGrid docs repo need to sign a CLA before their changes can be merged. 
+> All third party contributors acknowledge that any contributions they provide will be made under the same open source license that the open source project is provided under.
 
 The SendGrid Documentation must follow certain style guidelines. While many of these guidelines are not applicable to small changes, it is important to make sure that our Docs are:
 

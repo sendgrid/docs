@@ -16,27 +16,15 @@ The master branch is continuously deployed to production.
 
 **Submit all pull requests to the develop branch**
 
-**Before your pull request can be merged into the develop branch, you must submit a completed CLA.**
+**All third party contributors acknowledge that any contributions they provide will be made under the same open source license that the open source project is provided under.**
 
 
 ## Table of Contents
 
-* [CLAs and CCLAs](#cla)
 * [Local Setup](#local)
 * [About](#about)
 * [License](#license)
 
-<a name="cla"></a>
-## CLAs and CCLAs
-
-Before you get started, SendGrid requires that a SendGrid Contributor License Agreement (CLA) be filled out by every contributor to a SendGrid open source project.
-
-Our goal with the CLA is to clarify the rights of our contributors and reduce other risks arising from inappropriate contributions. The CLA also clarifies the rights SendGrid holds in each contribution and helps to avoid misunderstandings over what rights each contributor is required to grant to SendGrid when contributing. In this way, the CLA encourages broad participation by our open source community and helps us build strong open source projects, free from any individual contributor withholding or revoking rights to any contribution.
-
-
-SendGrid does not merge a pull request made against a SendGrid open source project until that pull request is associated with a signed CLA. Copies of the CLA are available [here](https://gist.github.com/SendGridDX/98b42c0a5d500058357b80278fde3be8#file-sendgrid_cla).
-
-> Note: Pull Requests waiting on a signed CLA for 90 days or longer may be closed without merging as part of the routine maintenance of this repository.
 
 <a name="local"></a>
 ## Local Setup
