@@ -18,7 +18,7 @@ Tracking your emails is an important part of being a good sender and learning ab
 We have broken up statistics in specific ways so that you can get at-a-glance data, as well as allowing you to get into the details of how your email is being used.
 </p>
 
-## 	Available Email Reports
+## Available Email Reports
 
 <call-out>
 
@@ -32,11 +32,17 @@ The timezone for statistics pages is set in your [account settings]({{root_url}}
 
 **[Category Statistics]({{root_url}}/ui/analytics-and-reporting/categories/)** -You can define your categories when you send, so that you can view your email performance by category later.
 
+<call-out type="warning">
+
+Categories will be stored as a “Not PII” field and may be used for counting or other operations as SendGrid runs its systems. These fields generally cannot be redacted or removed. You should take care not to place PII in this field. SendGrid does not treat this data as PII, and its value may be visible to SendGrid employees, stored long-term, and may continue to be stored after you’ve left SendGrid’s platform.
+
+</call-out>
+
 **[Category Comparison]({{root_url}}/ui/analytics-and-reporting/category-comparison/)** - Compare the performance of emails from up to 10 categories against each other.
 
 **[Subuser Statistics]({{root_url}}/ui/analytics-and-reporting/subuser/)** - You can segment your email to be sent by different subusers, which allows you to compare how each type or subset of your email is performing.
 
-**[Subuser Comparison]({{root_url}}/ui/analytics-and-reporting/subuser-comparison/)**  - Compare the performance of emails from up to 10 subusers against each other.
+**[Subuser Comparison]({{root_url}}/ui/analytics-and-reporting/subuser-comparison/)** - Compare the performance of emails from up to 10 subusers against each other.
 
 **[Geographical]({{root_url}}/ui/analytics-and-reporting/geographic/)** - See where you get the best engagement and compare engagement by geographical region.
 
@@ -52,8 +58,8 @@ The timezone for statistics pages is set in your [account settings]({{root_url}}
 
 **[Parse Webhook]({{root_url}}/for-developers/parsing-email/inbound-email/)** - View the number of requests you have received via the Parse Webhook.
 
+## Metrics
 
-## 	Metrics
  	<p>
 On the available statistics reports, you will find that your deliverability is broken down by the following metrics. Each one gives you a different piece of information about how SendGrid or your recipients interact with your email.
 </p>
@@ -83,11 +89,9 @@ On the available statistics reports, you will find that your deliverability is b
 
 **Unsubscribe Drops** - The number of emails dropped by SendGrid because the recipient unsubscribed from your emails.
 
-
 ## Filters
 
 These filters are available on most of the statistics pages. They will help you see your statistics in more or less details, depending on your needs.
-
 
 **Metric Filters** - You can select all of the metrics or only some of them.
 
@@ -95,10 +99,9 @@ These filters are available on most of the statistics pages. They will help you 
 
 **Grouping Filter** - Display statistics grouped by day, week, or month.
 
+## Top 5 Categories
 
-## 	Top 5 Categories
-
-  The Top 5 Categories report allows you to see your top 5 most used categories by number of requests. Switch your view by actual number of emails or percentage using the toggle at the top right of this section.
+The Top 5 Categories report allows you to see your top 5 most used categories by number of requests. Switch your view by actual number of emails or percentage using the toggle at the top right of this section.
 
 <call-out>
 
@@ -106,8 +109,8 @@ Want deeper data and insights? With [SendGrid Email Insights Reports](https://go
 
 </call-out>
 
-## 	Additional Resources
+## Additional Resources
 
-* [API Statistics Overview]({{root_url}}/API_Reference/Web_API_v3/Stats/index.html)
+- [API Statistics Overview]({{root_url}}/API_Reference/Web_API_v3/Stats/index.html)
 
-* [Advanced Analytics and Reporting]({{root_url}}/API_Reference/Web_API/Statistics/statistics_advanced.html)
+- [Advanced Analytics and Reporting]({{root_url}}/API_Reference/Web_API/Statistics/statistics_advanced.html)

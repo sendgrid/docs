@@ -14,10 +14,9 @@ Laravel provides a clean API over the popular SwiftMailer library with drivers f
 
 Laravel 5.5 LTS uses Mailable classes. Mailables in Laravel abstracts building emails with a mailable class. Mailables are responsible for collating data and passing them to views.
 
-
 ## Before you begin
 
-Check your `.env` file and configure these variables: 
+Check your `.env` file and configure these variables:
 
 ```
 MAIL_DRIVER=smtp
@@ -40,6 +39,12 @@ You can send `100 messages per SMTP connection` at a time, and open up to `10 co
 
 ## Creating a Mailable
 
+<call-out type="warning">
+
+Categories and Unique Arguments will be stored as a “Not PII” field and may be used for counting or other operations as SendGrid runs its systems. These fields generally cannot be redacted or removed. You should take care not to place PII in this field. SendGrid does not treat this data as PII, and its value may be visible to SendGrid employees, stored long-term, and may continue to be stored after you’ve left SendGrid’s platform.
+
+</call-out>
+
 Next you need to create a Mailable class, Laravel's CLI tool called Artisan makes that a simple feat.
 Open CLI, go to the project directory and type:
 
@@ -47,7 +52,7 @@ Open CLI, go to the project directory and type:
 
 This command will create a new file under `app/Mail/TestEmail.php` and it should look something like this:
 
-``` php
+```php
 <?php
 
 namespace App\Mail;
@@ -73,7 +78,7 @@ class TestEmail extends Mailable
         $address = 'janeexampexample@example.com';
         $subject = 'This is a demo!';
         $name = 'Jane Doe';
-        
+
         return $this->view('emails.test')
                     ->from($address, $name)
                     ->cc($address, $name)
@@ -84,26 +89,27 @@ class TestEmail extends Mailable
     }
 }
 ```
+
 In Laravel `Views` are used as 'templates' when sending an email. Let's create a file under `app/resources/views/emails/test.blade.php` and insert this code:
 
-``` html
+```html
 <!DOCTYPE html>
-    <html lang="en-US">
-    	<head>
-    		<meta charset="utf-8">
-    	</head>
-    	<body>
-    		<h2>Test Email</h2>
-    		<p>{{ $test_message }}</p>
-    	</body>
-    </html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <h2>Test Email</h2>
+    <p>{{ $test_message }}</p>
+  </body>
+</html>
 ```
 
 ## Sending an email
 
 Now that we have our Mailable Class created, all we need to do is run this code:
 
-``` php
+```php
 <?php
     use App\Mail\TestEmail;
 
@@ -120,7 +126,7 @@ Another useful tool is event notifications. If you want to complete the feedback
 
 The `withSwiftMessage` method of the `Mailable` base class allows you to register the callback that is invoked with the raw SwiftMailer message instance before sending the message. This knowledge allows you to customize the message before delivery. To customize your message, use something similar to this:
 
-``` php
+```php
 <?php
 
 namespace App\Mail;
