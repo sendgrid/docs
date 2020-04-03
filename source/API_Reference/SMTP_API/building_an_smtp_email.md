@@ -37,14 +37,6 @@ SMTP works by passing a JSON string with as many SMTP objects as you want to Sen
       "Ben",
       "Joe"
     ],
-    "%role%": [
-      "%sellerSection%",
-      "%buyerSection%"
-    ]
-  },
-  "section": {
-    "%sellerSection%": "Seller information for: %name%",
-    "%buyerSection%": "Buyer information for: %name%"
   },
   "category": [
     "Orders"
@@ -69,7 +61,7 @@ SMTP works by passing a JSON string with as many SMTP objects as you want to Sen
 Limitations
 {% endanchor %}
 
-- There is a hard limit of 10,000 addresses in a multiple recipient e-mail. However, the best practice is to split up large jobs to around 1,000 recipients - this allows better processing load distribution. If you have a large number of additional substitutions or sections in the headers, it is best to split the send into even smaller groups.
+- There is a hard limit of 10,000 addresses in a multiple recipient e-mail. However, the best practice is to split up large jobs to around 1,000 recipients - this allows better processing load distribution. If you have a large number of additional substitutions in the headers, it is best to split the send into even smaller groups.
 - When using the X-SMTPAPI to send to multiple recipients, you cannot use the standard SMTP protocols "TO" field to send to multiple recipients because doing so can generate duplicate messages to the addresses listed in both. For more information, see <a href="https://tools.ietf.org/html/rfc5321">RFC 5321</a>.
 - Ensure that the header is limited to a maximum total line length of 1,000 characters. Failure to do this can cause intermediate MTA's to split the header on non-space boundaries- this causes inserted spaces in the final e-mail. If your e-mail is going through another MTA before reaching SendGrid, it is likely to have an even lower setting for maximum header length and may truncate the header.
 - When using the API, if our system encounters a parsing error, the message will be bounced to the address specified in the MAIL FROM portion of the SMTP session. The MAIL FROM address is re-written when we send the e-mail out for final delivery, so it is safe to set this to an address that can receive the bounces so that you will be alerted to any errors.
@@ -80,21 +72,6 @@ Customizing your send (filters)
 {% endanchor %}
 
 You can customize the emails you send via SMTP by using different settings (also referred to as filters). Change these settings in the **X-SMTPAPI header**.
-
-For example, to send a blind carbon copy (BCC) of your email to the address example@example.com, include the following in your X-SMTPAPI header:
-
-{% codeblock lang:json %}
-{
-  "filters" : {
-    "bcc" : {
-      "settings" : {
-        "enable" : 1,
-        "email" : "example@example.com"
-      }
-    }
-  }
-}
-{% endcodeblock %}
 
 The X-SMTPAPI header is a JSON-encoded associative array consisting of several sections, below are examples of JSON strings using each section. Add this header to any SMTP message sent to SendGrid and the instructions in the header will be interpreted and applied to that message’s transaction. You can enable these sections with the X-SMTPAPI header:
 
@@ -160,6 +137,10 @@ For more information, see our [substitution tags documentation]({{root_url}}/API
 {% anchor h3 %}
 Section Tags
 {% endanchor %}
+
+{% warning %}
+Due to low usage this features has been deprecated. It will be fully removed 06/22/2020. Click <a href="https://sendgrid.com/docs/ui/account-and-settings/retired-mail-settings/">here</a> for more information.
+{% endwarning %}
 
 Section tags are similar to substitution tags, but rather than replace tags with content for each recipient; section tags allow you to replace a tag with more generic content— like a salutation.
 
