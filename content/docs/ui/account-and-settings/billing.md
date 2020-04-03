@@ -106,7 +106,7 @@ If you’re on the Free package and hit your contact allotment limit, any active
 
 #### Limits:
 
-* 5,000 - 15,000 emails/month depending on the plan you purchase. Emails sent via Single Sends count towards your allotment. 
+* 5,000 – 300,000 emails/month depending on the plan you purchase. Emails sent via Single Sends count towards your allotment. 
 * Up to 100,000 contacts
 
 
@@ -126,8 +126,8 @@ If you’re on the Free package and hit your contact allotment limit, any active
 
 #### Limits:
 
-* 200,000+ emails/month depending on the plan you purchase. Emails sent via Single Sends or Automation count towards your allotment.
-* 1 million+ contacts
+* 50,000 – 1 million+ emails/month depending on the plan you purchase. Emails sent via Single Sends or Automation count towards your allotment.
+* 200,000+ contacts
 
 If you exceed your plan allotment of contacts or overages you will be charged a [small amount]({{root_url}}/ui/account-and-settings/billing/#limits-and-overage-rates) per email sent and per contact stored above the limits of your current Marketing package. Any overage charges will appear on the invoice of the month _after_ any over-limit sending and contact storage occurs.
 
