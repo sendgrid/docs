@@ -13,7 +13,7 @@ navigation:
 
 <call-out type="warning">
 
-Due to low usage, this setting has been deprecated. It will be fully removed on 06/15/2020. Click [here]({{root_url}}/ui/account-and-settings/retired-mail-settings/) for more information.
+Due to low usage, this setting has been deprecated. It will be fully removed on 06/22/2020. Click [here]({{root_url}}/ui/account-and-settings/retired-mail-settings/) for more information.
 
 </call-out>
 
