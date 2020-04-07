@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: Updated Single Sends API
+title: Single Sends 2020 Update 2020 Update 
 group: sending-mail
 navigation:
   show: false
