@@ -1,7 +1,7 @@
 ---
 layout: page
 weight: 0
-title: Single Sends 2020 Update 2020 Update 
+title: Single Sends 2020 Update
 group: sending-mail
 navigation:
   show: false
