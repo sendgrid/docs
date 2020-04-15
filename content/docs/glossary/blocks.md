@@ -21,11 +21,8 @@ See the block reason column for more detail specific to the blocked email.
 
 ![Blocks]({{root_url}}/images/blocks_1.png)
 
-
 <call-out-link linktext="EXPERT INSIGHTS" img="/img/expert-insights-promo2.png" link="https://sendgrid.com/solutions/expert-insights/">
-
 
 ## Additional Resources:
 
-* [Web API & Blocks]({{root_url}}/API_Reference/Web_API/blocks.html)
-
+* [Web API & Blocks](https://sendgrid.api-docs.io/v3.0/blocks-api/retrieve-all-blocks)
