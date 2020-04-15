@@ -49,7 +49,7 @@ Everything that could be accomplished by using the x-smtpapi parameter in the v2
 
 ## 	Where can I find more information about the v3 Mail Send endpoint?
 
-For more general information about the v3 Mail Send endpoint, please visit the [v3 Mail Send Overview]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html). Below, you will find links to more in depth information about the endpoint.
+For more general information about the v3 Mail Send endpoint, please visit the [v3 Mail Send Overview]({{root_url}}/api-reference). Below, you will find links to more in depth information about the endpoint.
 
 ## Additional Resources
 
