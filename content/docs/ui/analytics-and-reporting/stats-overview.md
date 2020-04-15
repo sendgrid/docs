@@ -111,6 +111,4 @@ Want deeper data and insights? With [SendGrid Email Insights Reports](https://go
 
 ## Additional Resources
 
-- [API Statistics Overview]({{root_url}}/API_Reference/Web_API_v3/Stats/index.html)
-
-- [Advanced Analytics and Reporting]({{root_url}}/API_Reference/Web_API/Statistics/statistics_advanced.html)
+- [API Statistics Overview](https://sendgrid.api-docs.io/v3.0/stats/retrieve-global-email-statistics)
