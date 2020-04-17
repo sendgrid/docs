@@ -21,6 +21,6 @@ reputation](https://sendgrid.com/blog/what-is-a-domain-reputation/), cultivate c
 
 <call-out>
 
-Interested in sending automated drip campaigns? Doing so is simple with SendGrid Automation, a new offering that's currently in beta among select users. [Visit SendGrid.com](https://sendgrid.com/solutions/marketing-automation/) to learn more and be added to the waitlist.
+Interested in sending automated drip campaigns? Doing so is simple with Marketing Camapigns Automation. Click [Marketing [new] in your account](https://mc.sendgrid.com/automations) to try this feature for free today.
 
 </call-out>
