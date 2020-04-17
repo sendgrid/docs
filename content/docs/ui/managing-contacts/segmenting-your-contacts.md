@@ -39,6 +39,12 @@ You can create a new segment with multiple conditions based on the information y
 2. Click on the **Create** dropdown button, and then the **Create Segment** option.
 3. Enter a *Segment Name*.
 4. Choose **Segment all contacts** or **Segment an existing list**.
+<call-out>
+
+Tip: If you're segmenting an existing list, you can click the three dots to the right of the list name and select "Create Segment" directly.
+
+</call-out>
+
 5. To segment an existing list, select a list from the *Existing List* drop-down.
 6. In the *targeting* section, start building your condition by choosing a *field* from the drop-down.
 7. Choose from a list of available *operators* based on the chosen field.
