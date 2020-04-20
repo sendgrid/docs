@@ -328,7 +328,7 @@ Content analysis details:   (2.6 points, 5.0 required)
 
 <call-out>
 
-The total message size limit, including the message itself and all attachments, is 20MB. Be aware that other mail handlers will have their own limitations, and some ISPs and companies may either dramatically limit the size and/or type of attachments, or even block them altogether.
+We recommend limiting the total size of your message, including the message itself and all attachments, to 30MB. Be aware that other mail handlers will have their own limitations, and some ISPs and companies may either dramatically limit the size and/or type of attachments, or even block them altogether.
 
 </call-out>
 
