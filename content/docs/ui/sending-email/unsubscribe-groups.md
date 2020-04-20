@@ -89,7 +89,7 @@ To delete an unsubscribe group, select “Delete” and then “confirm” from 
 
 ## 	Using the API
 
-When you use the [SendGrid API with unsubscribe groups]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/index.html), you can include the unsubscribe group ID with your mail send calls. To get the ID, go to your unsubscribe group list and you will find the ID in the “Group ID” column.
+When you use the [SendGrid API with unsubscribe groups](https://sendgrid.api-docs.io/v3.0/suppressions-unsubscribe-groups/retrieve-all-suppression-groups-associated-with-the-user), you can include the unsubscribe group ID with your mail send calls. To get the ID, go to your unsubscribe group list and you will find the ID in the “Group ID” column.
 
 ## 	Additional Resources
 
