@@ -15,18 +15,18 @@ seo:
 
 **Action required to ensure successful create, read, and update operations using the Single Sends API**.
 
-The Single Sends API will be changing **May 6, 2020**. Please check this page for updates and instructions.
+The Single Sends API has changed. Please check this page for updates and instructions.
 
 </call-out>
 
 To improve your experience when working with the Single Sends API, Twilio SendGrid has streamlined the API’s request and response formats. You will be able to pass all the required information to create a Single Send in one request, eliminating the need to first create a template.
 
-However, these improvements will require modifications to your current code. We’re aware that unplanned work for our customers may be less than ideal. To ease this transition we are releasing the updated API while continuing to provide the existing API at a new root path for a limited time.
+However, these improvements will require modifications to your current code. We’re aware that unplanned work for our customers may be less than ideal. To ease this transition we are released the updated API while continuing to provide the existing API at a new root path for a limited time.
 
-This strategy provides you with two options upon the May 6 release.
+This strategy provides you with two options.
 
-1. **[Option 1](#option-1)**: Make necessary integration changes when the Single Sends update is released on May 6.
-2. **[Option 2](#option-2)**: Direct API calls to a new temporary path detailed below, allowing time for integration changes.
+1. **[First Option](#option-1)**: Make necessary integration changes now.
+2. **[Second Option](#option-2)**: Direct API calls to a new temporary path detailed below, allowing time for integration changes.
 
 ## Option 1
 
@@ -37,6 +37,7 @@ This strategy provides you with two options upon the May 6 release.
 Make the necessary API integration changes immediately.
 
 #### Updated API available at:
+
 `https://api.sendgrid.com/v3/marketing/singlesends`
 
 All requests to the `/marketing/singlesends` root path must use the updated request format beginning May 6, 2020. Any requests to `/marketing/singlesends` using the existing Single Sends format will result in a 400-level error.
@@ -48,9 +49,11 @@ This first option may not be possible for your development schedule. If you requ
 ### Before May 6, 2020
 
 #### Customer action:
+
 Move all Single Sends API requests from the `/marketing/singlesends` root path to the `/marketing/campaigns` root path.
 
 #### Existing API available at:
+
 `https://api.sendgrid.com/v3/marketing/campaigns`
 
 The existing Single Sends API is currently available at the root path `marketing/campaigns`. You can optionally direct all requests using the existing API format to this new root path on or before May 6, 2020.
@@ -62,6 +65,7 @@ The existing Single Sends API is currently available at the root path `marketing
 Update code to use the new Single Sends request and response body format. Requests in the new format should be made to the `/marketing/singlesends` root path.
 
 #### Updated API available at:
+
 `https://api.sendgrid.com/v3/marketing/singlesends`
 
 Beginning May 6, 2020 the updated API will be available at the root path `/marketing/singlesends`. At that time, you can begin work to migrate to the new API. If you have not done so already, you can point existing API integrations to the `/marketing/campaigns` root path through June 6, 2020 while you complete the work.
