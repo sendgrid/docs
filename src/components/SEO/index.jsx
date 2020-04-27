@@ -6,7 +6,7 @@ class SEO extends Component {
   static capitalizeFirstLetter(str) {
     const strArray = str.split(' ');
 
-    for (let i = 0, x = str.length; i < x; i += 1) {
+    for (let i = 0, x = strArray.length; i < x; i += 1) {
       strArray[i] = strArray[i][0].toUpperCase() + strArray[i].substr(1);
     }
 
