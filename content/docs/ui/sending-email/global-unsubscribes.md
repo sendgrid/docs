@@ -33,6 +33,9 @@ When you select the checkboxes next to the recipient names or select all, using 
 
 When you add the `<%asm_global_unsubscribe_url%>` tag to your email, we will replace that tag with the text "Unsubscribe From All Emails", wherever the tag is found in your email. This will allow your recipient to be globally unsubscribed from all of your emails.
 
+
+THIS DOES NOT COVER HOW TO SET asm_global_unsubscribe_raw_url and HOW TO REPLACE `<%asm_global_unsubscribe_raw_url%>` IN EMAILS BEING SENT. THIS DOCUMENTATION IS INCOMPLETE
+
 Alternatively, you can use the `<%asm_global_unsubscribe_raw_url%>` tag, which will be replaced with only the global unsubscribe URL without the hyperlinked text "Unsubscribe From All Emails".
 
 <call-out>
