@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-import { Helmet } from 'react-helmet';
+import Helmet from 'react-helmet';
 import config from '../../../data/SiteConfig';
 
 class SEO extends Component {
   static capitalizeFirstLetter(str) {
-    const strArray = str.split(' ');
+    str = str.split(' ');
 
-    for (let i = 0, x = strArray.length; i < x; i += 1) {
-      strArray[i] = strArray[i][0].toUpperCase() + strArray[i].substr(1);
+    for (let i = 0, x = str.length; i < x; i++) {
+      str[i] = str[i][0].toUpperCase() + str[i].substr(1);
     }
 
-    return strArray.join(' ');
+    return str.join(' ');
   }
 
   render() {
