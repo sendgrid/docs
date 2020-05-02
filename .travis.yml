@@ -9,11 +9,11 @@ node_js:
 - 12.16.*
 cache:
 - pip
-- npm
+- yarn
 install:
 - pip install --user awscli
 before_script:
-- npm ci
+- yarn
 script: ./travis/build.sh
 deploy:
   - provider: script
