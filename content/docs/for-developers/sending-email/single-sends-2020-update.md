@@ -21,7 +21,7 @@ The Single Sends API has changed. Please check this page for updates and instruc
 
 To improve your experience when working with the Single Sends API, Twilio SendGrid has streamlined the API’s request and response formats. You will be able to pass all the required information to create a Single Send in one request, eliminating the need to first create a template.
 
-However, these improvements will require modifications to your current code. We’re aware that unplanned work for our customers may be less than ideal. To ease this transition we are released the updated API while continuing to provide the existing API at a new root path for a limited time.
+However, these improvements will require modifications to your current code. We’re aware that unplanned work for our customers may be less than ideal. To ease this transition we have released the updated API while continuing to provide the existing API at a new root path for a limited time.
 
 This strategy provides you with two options.
 
@@ -46,9 +46,9 @@ This first option may not be possible for your development schedule. If you requ
 
 ## Option 2
 
-### Before May 6, 2020
+### May 6, 2020 – June 6, 2020
 
-#### Customer action:
+#### Customer action part 1:
 
 Move all Single Sends API requests from the `/marketing/singlesends` root path to the `/marketing/campaigns` root path.
 
@@ -56,11 +56,9 @@ Move all Single Sends API requests from the `/marketing/singlesends` root path t
 
 `https://api.sendgrid.com/v3/marketing/campaigns`
 
-The existing Single Sends API is currently available at the root path `marketing/campaigns`. You can optionally direct all requests using the existing API format to this new root path on or before May 6, 2020.
+The existing Single Sends API is currently available at the root path `marketing/campaigns`. You can optionally direct all requests using the existing API format to this new root path.
 
-### May 6, 2020 – June 6, 2020
-
-#### Customer action:
+#### Customer action part 2:
 
 Update code to use the new Single Sends request and response body format. Requests in the new format should be made to the `/marketing/singlesends` root path.
 
