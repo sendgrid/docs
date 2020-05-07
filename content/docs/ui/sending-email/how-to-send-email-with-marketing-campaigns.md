@@ -162,11 +162,19 @@ For more information about customizing your campaign, see [Using the Design Edit
 <iframe src="https://player.vimeo.com/video/385339044" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 1. As you're editing your email, you can see what it looks like by clicking **Preview** from within the design editor, or, from the code editor simply toggle between **Desktop**, **Mobile**, and **Plain text**. You can also preview from the Single Sends index page by hovering over the action menu and clicking **Preview**.
-2. You can test your email by sending it to yourself and up to 10 other recipients. We'll automatically append "Test - " to the subject linee so your recipients know it's a test and not the real send. From **Settings**, click **Test Your Email** and enter the email addresses to send your test to. 
+2. You can test your email by sending it to yourself and up to 10 other recipients. We'll automatically append "Test - " to the subject linee so your recipients know it's a test and not the real send. From **Settings**, click **Test Your Email** and enter the email addresses to send your test to.
 3. For more robust, automated testing, we offer [Email Testing]({{root_url}}/ui/sending-email/email-testing/) for both Automation and Single Sends so you can see what your email looks like across different operating systems, browsers, and inboxes.
-3. With your email fully tested and ready to go, click **Send** or **Schedule**. You'll have the chance to do a final review of settings before confirming your send!
+4. With your email fully tested and ready to go, click **Send** or **Schedule**. You'll have the chance to do a final review of settings before confirming your send!
 
- ##	Additional Resources
+## Searching your Single Sends
+
+After creating multiple Single Sends, you can modify and delete them as needed. To make managing multiple Single Sends easier, Twilio SendGrid offers search functionality, enabling you to find a Single Send quickly by name.
+
+You can also filter your search results by status—"Draft," "Scheduled," or "Triggered"—and any categories you have added to your Single Sends.
+
+When filtering by multiple categories, Marketing Campaigns will return results matching any of the categories specified. For example, if you filter by the categories "Newsletter," "Promotion," and "BOGO," Marketing Campaigns will return Single Sends matching one _or_ more of those categories.
+
+## Additional Resources
 
 - [Sending with Email API]({{root_url}}/for-developers/sending-email/api-getting-started/)
 - [Campaign Statistics]({{root_url}}/ui/analytics-and-reporting/marketing-campaigns-stats/)
