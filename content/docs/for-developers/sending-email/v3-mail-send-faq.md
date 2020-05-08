@@ -53,9 +53,9 @@ For more general information about the v3 Mail Send endpoint, please visit the [
 
 ## Additional Resources
 
-* [v3 Mail Send Overview]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html)
+* [v3 Mail Send Overview](https://sendgrid.api-docs.io/v3.0/mail-send/v3-mail-send)
 * [SandBox Mode]({{root_url}}/for-developers/sending-email/sandbox-mode/)
-* [Errors]({{root_url}}/API_Reference/Web_API_v3/Mail/errors.html)
+* [Errors](https://sendgrid.api-docs.io/v3.0/mail-send/mail-send-errors)
 * [Personalizations]({{root_url}}/for-developers/sending-email/personalizations/)
 * [Examples for Common Use Cases]({{root_url}}/for-developers/sending-email/curl-examples/)
 * [How to Migrate from V2 to V3 Mail Send]({{root_url}}/for-developers/sending-email/migrating-from-v2-to-v3-mail-send/)
