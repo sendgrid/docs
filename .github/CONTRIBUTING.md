@@ -53,7 +53,6 @@ We welcome direct contributions to the SendGrid docs code base. Thank you!
     * Rvm
     * Homebrew
     * npm
-    * yarn
     * Gatsby
 
 <a name="setup-steps"></a>
@@ -85,10 +84,6 @@ We welcome direct contributions to the SendGrid docs code base. Thank you!
 
 	`$ n 8.4.0`
 
-* Download yarn
-
-    `brew install yarn`
-
 * clone repo
 
 	`$ git clone https://github.com/sendgrid/docs.git`
@@ -104,7 +99,7 @@ We welcome direct contributions to the SendGrid docs code base. Thank you!
 
 * Install Gatsby
 
-    `yarn install`
+    `npm ci`
 
 * Build the local site
 

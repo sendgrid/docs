@@ -37,7 +37,6 @@ The master branch is continuously deployed to production.
 - Required:
   - [Git](https://git-scm.com)
   - [npm](https://www.npmjs.com)
-  - [yarn](https://yarnpkg.com/en/)
   - [Gatsby](https://www.gatsbyjs.org)
 
 **Note:** Dependencies differ for work on the `old-develop` branch. If you need to work on `old-develop`, please see the README file after checking out that branch. This is uncommon.
@@ -71,12 +70,6 @@ We recommend using [Homebrew](https://brew.sh/) to install and manage packages o
   $ n 12.16.1
   ```
 
-- Install yarn
-
-  ```shell
-  $ brew install yarn
-  ```
-
 #### Windows
 
 - Install Git
@@ -89,10 +82,6 @@ We recommend using [Homebrew](https://brew.sh/) to install and manage packages o
     - https://nodejs.org/en/#home-downloadhead
   - Use Node.js version 12, the current Long Term Support (LTS) version.
 
-- Install Yarn:
-  - To install Yarn on windows, you can download the installer here:
-    - https://classic.yarnpkg.com/en/docs/install/#windows-stable
-
 #### Linux
 
 - Install Git:
@@ -104,10 +93,6 @@ We recommend using [Homebrew](https://brew.sh/) to install and manage packages o
   - To install Node.js and npm on Linux, select the package and instillation appropriate for your Linux distribution. You can find help here:
     - https://nodejs.org/en/download/package-manager/
   - Use Node.js version 12, the current Long Term Support (LTS) version.
-
-- Install Yarn:
-  - To install Yarn on Linux, follow the directions for your Linux distribution on the yarn site. You will find Debian/Ubuntu directions here:
-    - https://classic.yarnpkg.com/en/docs/install/#debian-stable
 
 ## Local Repository Setup
 
@@ -150,7 +135,7 @@ We recommend using [Homebrew](https://brew.sh/) to install and manage packages o
 - Install npm package dependencies
 
   ```shell
-  $ yarn install
+  $ npm ci
   ```
 
 - Build the local site
@@ -160,7 +145,7 @@ We recommend using [Homebrew](https://brew.sh/) to install and manage packages o
     ```
   - Alternatively, you can run:
     ```shell
-    $ yarn develop
+    $ npm run develop
     ```
   - Either of the above commands should start a hot-reloading development environment accessible at [localhost:8000](localhost:8000)
 
