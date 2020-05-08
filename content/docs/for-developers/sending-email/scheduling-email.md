@@ -29,11 +29,11 @@ You can schedule a time to send your email by using the `send_at` object of the 
 
 
 ## 3. SMTP API
-You can use the [SMTP API]({{root_url}}/for-developers/sending-email/scheduling-parameters/) header to schedule your emails when sending via [SMTP]({{root_url}}/for-developers/sending-email/getting-started-smtp/) or our [mail.send API endpoint]({{root_url}}/API_Reference/Web_API/mail.html). SendGrid will allow you to queue batches of emails targeting individual recipients by using a UNIX time stamp parameter in your SMTP API header.
+
+You can use the [SMTP API]({{root_url}}/for-developers/sending-email/scheduling-parameters/) header to schedule your emails when sending via [SMTP]({{root_url}}/for-developers/sending-email/getting-started-smtp/) or our [mail.send API endpoint](https://sendgrid.api-docs.io/v3.0/mail-send/v3-mail-send). SendGrid will allow you to queue batches of emails targeting individual recipients by using a UNIX time stamp parameter in your SMTP API header.
 
 This parameter allows SendGrid to begin processing your email requests before sending. SendGrid will then queue those messages and release them when the specified time rolls around.
 
 Here's an example of how this timestamp might look in your SMTP API JSON header:
 
 `{ "send_at": 1409348513 }`
-
