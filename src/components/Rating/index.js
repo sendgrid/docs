@@ -75,8 +75,13 @@ class Rating extends React.Component {
               )}
             </AuthCtx.Consumer>
           </div>
-          <p>If you have a question that needs an answer, please <a href="https://support.sendgrid.com" title="contact support" target="_blank" rel="noopener noreferrer">contact support</a>.
-          Otherwise, please <a href="https://github.com/sendgrid/docs/issues/new" title="open an issue in our GitHub" target="_blank" rel="noopener noreferrer">open an issue in our GitHub</a>!
+          <p>If you require immediate assistance from Twilio SendGrid, please <a href="https://support.sendgrid.com" title="contact our support team" target="_blank" rel="noopener noreferrer">contact our support team</a>.
+          If you’ve spotted a documentation problem, please <a href="https://github.com/sendgrid/docs/issues/new" title="open a GitHub Issue" target="_blank" rel="noopener noreferrer">open a GitHub Issue</a>!
+          </p>
+          <p>
+          Please note, we cannot resolve account and login issues reported on GitHub. <a href="https://support.sendgrid.com" title="Contact support" target="_blank" rel="noopener noreferrer">Contact support</a> for account assistance.
+          </p>
+          <p>
           Thanks for helping us improve our docs!
           </p>
         </div>
