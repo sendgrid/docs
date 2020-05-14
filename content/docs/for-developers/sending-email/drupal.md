@@ -6,7 +6,7 @@ group: plugins
 navigation:
   show: true
 ---
-To send emails from Drupal using SendGrid, you may use the SendGrid Integration module, the SMTP Authentication Support module, the Swift Mailer module or the PHPMailer SMTP Module depending on your needs.
+To send emails from Drupal using SendGrid, you may use the SendGrid Integration module, the SMTP Authentication Support module, the Swift Mailer module, or the PHPMailer SMTP Module depending on your needs.
 
 ## 	Using the SendGrid Integration Module
 
@@ -61,5 +61,4 @@ Under **SMTP Authentication**, set your username and password:
 
 -   **Username** - SendGrid Username
 -   **Password** - SendGrid Password
-
 
