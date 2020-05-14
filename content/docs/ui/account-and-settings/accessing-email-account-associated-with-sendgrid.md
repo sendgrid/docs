@@ -12,9 +12,8 @@ navigation:
   show: true
 ---
 
-Sometimes, people leave your company, and their email address may be deleted or lost. Those email accounts can sometimes be associated with important business accounts, like your account with SendGrid! This kind of access is important for notifications, billing alerts, and passwords reset emails.
+The email address associated with your SendGrid account is required to receive notifications, billing alerts, and passwords reset emails. In the event that you lose access to this email address, you have several recovery options.
 
-If you find yourself in a similar situation, use one of the following options to get back in the action:
-
-1. (Recommended) Have your email administrator re-create the email address associated with the SendGrid account in question, and then request a [password reset]({{root_url}}/ui/account-and-settings/resetting-your-username-and-password/) email. SendGrid support can help out if you don't know the email associated with your account.
-2. You can always [create a new account](https://sendgrid.com/transactional-email/pricing) and sign up with an active email address that you control. Keep in mind that account data cannot be transferred from old to new accounts.
+1. (Recommended) Have your email administrator re-create the email address associated with the SendGrid account in question, and then request a [password reset]({{root_url}}/ui/account-and-settings/resetting-your-username-and-password/) email. [SendGrid support](https://support.sendgrid.com/hc/en-us) can help if you don't know the email associated with your account.
+2. If you are unable to recreate or obtain access to a lost email address, you can [create a new SendGrid account](https://sendgrid.com/transactional-email/pricing). In order to ensure data privacy and security, SendGrid will not be able to transfer data from an old account to a new account. We understand that this is inconvenient. If at all possible, re-creating the email address associated with your SendGrid account is preferred for this reason.
+3. If neither of the above options fit your account recovery situation, please [contact our support team](https://support.sendgrid.com/hc/en-us) for assistance.
