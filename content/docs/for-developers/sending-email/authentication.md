@@ -40,24 +40,17 @@ curl -X "GET" "https://api.sendgrid.com/v3/templates" -H "Authorization: Bearer 
 
 ## Basic authentication
 
-SendGrid does not recommend using basic authentication. However, if you are using our legacy v2 API, you have to use basic authentication to connect.
+SendGrid does not recommend using basic authentication because it is inherently less secure than API Key authentication and does not allow the usage of Two-Factor Authentication. However, if you are using our legacy v2 API, you have to use basic authentication to connect.
 
-Using basic authentication is not as secure as using an API key because it uses your username and password credentials, allowing full access to your account. So, if your credentials get compromised, (like if you accidentally commit them to GitHub), it is more difficult to regain the security of your account. 
+### Security with basic authentication
+
+Using basic authentication is not as secure as using an API key because it uses your username and password credentials, allowing full access to your account. So, if your credentials get compromised, (like if you accidentally commit them to GitHub), it is more difficult to regain the security of your account.
 
 <call-out type="warning">
 
-It is not possible to enable Two-factor authentication when using basic authentication, so if you do need to use basic authentication we highly recommend that you set up IP Access Management for improved security.
+If you are currently using basic authentication, we recommend upgrading your authentication method to [API Keys]({{root_url}}/ui/account-and-settings/api-keys/) and then enabling Two-Factor Authentication for improved security.
 
 </call-out>
-
-To use basic authentication, have a header with a key Authorization, and a value of `Basic <encoded-user-name><encoded-password>`, where you replace `<encoded-user-name><encoded-password>` with your URL encoded username and password.
- 
-<call-out>
-
-You have to use basic authentication if you are using v2 of the API.
-
-</call-out>
-
 
 ## Two-factor authentication
 
