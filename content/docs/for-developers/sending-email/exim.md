@@ -103,7 +103,7 @@ sendgrid_smtp:
 Once you have completed and saved all changes to Exim's configuration files, you will need to restart it to activate those changes:
 
 ```bash
-$ /etc/init.d/exim4 restart
+$ /usr/local/cpanel/scripts/restartsrv_exim
 ```
 
 ## 	Exim Documentation
