@@ -21,7 +21,7 @@ Twilio SendGrid's Event Webhook will notify a URL via HTTP POST with information
 
 <call-out>
 
-For more information about working with the Event Webhook and the data it provides, please see [Getting Started with the Event Webhook]({{root_url}}/docs/for-developers/tracking-events/getting-started-event-webhook/).
+For more information about working with the Event Webhook and the data it provides, please see [Getting Started with the Event Webhook]({{root_url}}/for-developers/tracking-events/getting-started-event-webhook/).
 
 </call-out>
 
@@ -29,7 +29,7 @@ Twilio SendGrid provides two methods for securing the Event Webhook: cryptograph
 
 ## The Signed Event Webhook
 
-When using the Signed Webhook, Twilio SendGrid will generate a [private and public key pair](https://www.twilio.com/blog/what-is-public-key-cryptography). The private key will be used to generate a signature that is posted to your HTTP webhook in the `"X-Twilio-Email-Event-Webhook-Signature"` header.
+When using the Signed Event Webhook, Twilio SendGrid will generate a [private and public key pair](https://www.twilio.com/blog/what-is-public-key-cryptography). The private key will be used to generate a signature that is posted to your HTTP webhook in the `"X-Twilio-Email-Event-Webhook-Signature"` header.
 
 You can verify the signature with the public key provided. More information is provided in the [Verification section](#verify-the-signature) of this page.
 
@@ -44,13 +44,14 @@ To enable the Signed Event Webhook and generate a key pair using the [SendGrid A
 
 ![The signed event webhook settings page with the signed security option highlighted]({{root_url}}/images/signed-event-webhook-landing-page.png 'The Event Webhook settings page')
 
+3. In the sidebar modal, click "Generate Verification Key." This will generate a private and public key. The public key will then be displayed to you.
+
 ![A sidebar modal with an option to generate a verification key and a status toggle showing if webhook signing is enabled or disabled]({{root_url}}/images/signed-event-webhook-modal.png 'Enable or disable the signed Event Webhook')
 
-3. In the sidebar modal, click "Generate Verification Key." This will generate a private and public key. The public key will then be displayed to you.
+4. You can now copy this key and use it for verification.
 
 ![A sidebar modal with a verification key displayed for use in your code]({{root_url}}/images/signed-event-webhook-public-key.png 'A public verification key')
 
-4. You can now copy this key and use it for verification.
 5. To confirm that the Signed Event Webhook is enabled, you can navigate back to [Settings > Mail Settings](https://app.sendgrid.com/settings/mail_settings) to verify that the setting is listed as "Enabled."
 
 #### Disable the Signed Event Webhook using the app
@@ -135,16 +136,16 @@ hashedPayload := h.Sum(nil)
 ecdsa.Verify(publicKey, hashedPayload, ecdsaSig.R, ecdsaSig.S)
 ```
 
-6. Again, the simplest way to verify if the signature is valid is to use a package or library that will abstract away this process into a helper method or function.
+6. Again, the simplest way to verify the signature is to use a package or library that will abstract away this process into a helper method or function.
 
 #### Sample verification libraries
 
-The following list includes popular cryptography libraries for the coding languages most commonly used by our customers—It is not meant to be comprehensive. Remember, be sure to do your own due diligence when evaluating cryptography libraries and packages.
+The following list includes popular cryptography libraries for the coding languages most commonly used by our customers—it is not meant to be comprehensive. Remember, be sure to do your own due diligence when evaluating cryptography libraries and packages.
 
-* **C#**: [C#/.Net ECDSA](https://docs.microsoft.com/en-us/dotnet/api/system.security.cryptography.ecdsa?view=netframework-4.8)
-* **Go**: [Go Crypto ECDSA](https://golang.org/pkg/crypto/ecdsa/)
-* **Java**: [ECDSA Java](https://github.com/starkbank/ecdsa-java)
-* **Node.js**: [Node.js Crypto ECDSA](https://nodejs.org/api/crypto.html#crypto_crypto_verify_algorithm_data_key_signature)
+- **C#**: [C#/.Net ECDSA](https://docs.microsoft.com/en-us/dotnet/api/system.security.cryptography.ecdsa?view=netframework-4.8)
+- **Go**: [Go Crypto ECDSA](https://golang.org/pkg/crypto/ecdsa/)
+- **Java**: [ECDSA Java](https://github.com/starkbank/ecdsa-java)
+- **Node.js**: [Node.js Crypto ECDSA](https://nodejs.org/api/crypto.html#crypto_crypto_verify_algorithm_data_key_signature)
 
 ## OAuth 2.0
 
@@ -187,7 +188,7 @@ To enable OAuth using the [SendGrid App](https://app.sendgrid.com/):
    2. **Client Secret**: Required to generate an authorization token. This secret is needed only once to create an access token. SendGrid will store this secret, allowing you to update your Client ID and Token URL without passing the secret to SendGrid again.
    3. **Token URL**: The URL where Twilio SendGrid should deliver the Client ID and Client Secret in order to create an access token. This URL should route to your own authorization server or an OAuth service such as Auth0 or Okta.
 
-5. With the above steps completed, requests to your HTTP POST URL by Twilio SendGrid should contain the access token in an Authorization header. You can now use this token to verify the request using your OAuth service or authorization server.
+5. With the above steps completed, requests to your HTTP POST URL by Twilio SendGrid will contain the access token in an Authorization header. You can now use this token to verify the requests using your OAuth service or authorization server.
 
 <call-out>
 
@@ -206,7 +207,7 @@ To disable OAuth using the [SendGrid App](https://app.sendgrid.com/):
 
 ### Manage OAuth 2.0 using the API
 
-Twilio SendGrid allows you to manage OAuth setup using the API. A brief overview of enabling, disabling, and testing OAuth; and retrieving your OAuth credentials are provided below. You can find more at our [Event Webhook API Reference](https://sendgrid.api-docs.io/v3.0/webhooks/retrieve-event-webhook-settings).
+Twilio SendGrid allows you to manage OAuth setup using the API. A brief overview of enabling, disabling, and testing OAuth; and retrieving your OAuth credentials is provided below. You can find more at our [Event Webhook API Reference](https://sendgrid.api-docs.io/v3.0/webhooks/retrieve-event-webhook-settings).
 
 #### Enable/Disable OAuth
 
@@ -230,7 +231,7 @@ Passing a request with valid values assigned to these fields will enable OAuth. 
 
 <call-out>
 
-Please note, there are other required fields when making requests to this API endpoint. Please see the API reference for details.
+Please note, there are other required fields when making requests to this API endpoint. Please see the [API reference for details](https://sendgrid.api-docs.io/v3.0/webhooks/retrieve-event-webhook-settings).
 
 </call-out>
 
