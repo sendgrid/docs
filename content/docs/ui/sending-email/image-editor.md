@@ -13,11 +13,43 @@ seo:
 
 Twilio SendGrid’s Marketing Campaigns provides a built-in image editing tool that allows you to crop, flip, and filter your photos. This article provides an overview of the editor and its features with additional tips to make your images look their best.
 
-## Editing images
+## Image Library
 
-To access the image editor, open the image library and upload a new image or select a pre-existing image that you would like to edit. Click the "Edit" button to open the image editor.
+You can upload new images and access existing images in the Marketing Campaigns Image Library. To access the Image Library, navigate to [Design Library > Your Images](https://mc.sendgrid.com/design-library/your-images) in the sidebar navigation of the SendGrid App.
 
-Once in the image editor, make any desired adjustments and click the "Save" button. A new image will be added to your image library with the saved adjustments. If you’d like to abandon your changes without creating a new image, click the "Cancel" button.
+![The Image Library landing page in the SendGrid App. Here you can upload new images or select existing images to edit.]({{root_url}}/images/mc-image-library-landing-page.png "The Image Library landing page")
+
+To upload an image, you can either drag an image onto the page where it says, "Drag and drop your images here, or choose images to upload." If you click the "choose images to upload" link, a system dialog will open, allowing you to browse for images on your computer.
+
+![Upload a new image to the Image Library]({{root_url}}/images/mc-image-library-upload-new-image.png "Upload a new image to the Image Library")
+
+The Image Library displays all images you previously uploaded. You can click any of these images to load a sidebar overlay that displays the image's details. You will also have the option to delete the image, edit the image, or copy the image URL.
+
+![A sidbar modal showing an image's details and allowing you to delete the image, edit the image, or copy the image's URL]({{root_url}}/images/mc-image-library-image-detail-modal.png "Image details with options to delete or edit an image")
+
+## Image Editor
+
+To access the image editor, open the [Image Library](https://mc.sendgrid.com/design-library/your-images/) and upload a new image or select a pre-existing image that you would like to edit. With an image selected, the detail menu mentioned above should load. Select "Edit Image" from this menu.
+
+![The edit button highlighted inside the image details menu]({{root_url}}/images/mc-image-library-image-edit-image-button.png "Select edit to load the Image Editor")
+
+<call-out>
+
+You can also access the Image Editor by editing images already placed in your Single Sends and Automations designs. For more on Email Design, see [Working with Marketing Campaigns Email Design]({{root_url}}/ui/sending-email/working-with-marketing-campaigns-email-designs/)
+
+</call-out>
+
+Once in the Image Editor, you will have three primary actions available, "Transform," "Filter," and "Adjust." Each category contains multiple actions that can be performed on your image. More details about these actions is provided below.
+
+When saving edits to your images, a new image will be saved to your Image Library. This allows you to modify an image without overwriting your original photo. You can select "Cancel" at any time to abandon your edits without saving.
+
+<call-out>
+
+You can save images in either the JPG or PNG format. If your image must support transparency, save the file in PNG format. JPG does not support transparency.
+
+</call-out>
+
+![The Image Editor landing page shows the top level editor actions on the left and an image preview on the right]({{root_url}}/images/mc-image-editor-landing-page.png "The Image Editor landing page")
 
 <call-out>
 
@@ -25,11 +57,9 @@ Images cannot be larger than 4MB.
 
 </call-out>
 
-## Features
-
 ### Transform
 
-The Transform tab allows you to crop, flip, and rotate an image.
+The transformation actions include cropping, flipping, and rotating an image.
 
 #### Crop
 
@@ -45,17 +75,17 @@ Cropping an image can change its composition to help communicate your story. Com
 
 #### Flip and rotate
 
-- Rotate: rotate the image 90 degrees
+- Rotate: rotate the image 90 degrees clockwise
 - Flip Horizontally
 - Flip Vertically
 
 ### Filter
 
-The Filter tab allows you to apply preset adjustments to the image. The provided filters can help quickly alter a photo to create a look and feel without manual adjustments.
+The provided filters can help quickly alter a photo to create a look and feel without manual adjustments.
 
 ### Adjust
 
-The Adjust tab allows you to manually alter multiple image settings. These manual adjustements can be used to modify an unedited photo or to further refine a look after you have applied a filter.
+The adjustment actions allow you to manually alter multiple image settings. These manual adjustments can be used to modify an unedited photo or to further refine a look after you have applied a filter.
 
 <call-out>
 
@@ -70,4 +100,4 @@ Altering an image's color balance, contrast, and saturation is a powerful way to
 - Opacity: control the image's transparency
 - Blur: apply blur to the image
 - Sepia: apply a sepia tone to the image
-- Grayscale: convert the image to grayscale
+- Grayscale: convert the image to grayscale (this is similar to desaturating the image)
