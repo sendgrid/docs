@@ -13,25 +13,31 @@ seo:
 
 Twilio SendGrid’s Marketing Campaigns provides a built-in image editing tool that allows you to crop, flip, and filter your photos. This article provides an overview of the editor and its features with additional tips to make your images look their best.
 
+<call-out>
+
+Because the Image Editor is available within the [Design Library](https://mc.sendgrid.com/design-library/your-images), you can edit images you send with the Email API as well as Marketing Campaigns.
+
+</call-out>
+
 ## Image Library
 
 You can upload new images and access existing images in the Marketing Campaigns Image Library. To access the Image Library, navigate to [Design Library > Your Images](https://mc.sendgrid.com/design-library/your-images) in the sidebar navigation of the SendGrid App.
 
-![The Image Library landing page in the SendGrid App. Here you can upload new images or select existing images to edit.]({{root_url}}/images/mc-image-library-landing-page.png "The Image Library landing page")
+![The Image Library landing page in the SendGrid App. Here you can upload new images or select existing images to edit.]({{root_url}}/images/mc-image-library-landing-page.png 'The Image Library landing page')
 
 To upload an image, you can either drag an image onto the page where it says, "Drag and drop your images here, or choose images to upload." If you click the "choose images to upload" link, a system dialog will open, allowing you to browse for images on your computer.
 
-![Upload a new image to the Image Library]({{root_url}}/images/mc-image-library-upload-new-image.png "Upload a new image to the Image Library")
+![Upload a new image to the Image Library]({{root_url}}/images/mc-image-library-upload-new-image.png 'Upload a new image to the Image Library')
 
 The Image Library displays all images you previously uploaded. You can click any of these images to load a sidebar overlay that displays the image's details. You will also have the option to delete the image, edit the image, or copy the image URL.
 
-![A sidbar modal showing an image's details and allowing you to delete the image, edit the image, or copy the image's URL]({{root_url}}/images/mc-image-library-image-detail-modal.png "Image details with options to delete or edit an image")
+![A sidbar modal showing an image's details and allowing you to delete the image, edit the image, or copy the image's URL]({{root_url}}/images/mc-image-library-image-detail-modal.png 'Image details with options to delete or edit an image')
 
 ## Image Editor
 
 To access the image editor, open the [Image Library](https://mc.sendgrid.com/design-library/your-images/) and upload a new image or select a pre-existing image that you would like to edit. With an image selected, the detail menu mentioned above should load. Select "Edit Image" from this menu.
 
-![The edit button highlighted inside the image details menu]({{root_url}}/images/mc-image-library-image-edit-image-button.png "Select edit to load the Image Editor")
+![The edit button highlighted inside the image details menu]({{root_url}}/images/mc-image-library-image-edit-image-button.png 'Select edit to load the Image Editor')
 
 <call-out>
 
@@ -49,7 +55,7 @@ You can save images in either the JPG or PNG format. If your image must support 
 
 </call-out>
 
-![The Image Editor landing page shows the top level editor actions on the left and an image preview on the right]({{root_url}}/images/mc-image-editor-landing-page.png "The Image Editor landing page")
+![The Image Editor landing page shows the top level editor actions on the left and an image preview on the right]({{root_url}}/images/mc-image-editor-landing-page.png 'The Image Editor landing page')
 
 <call-out>
 
