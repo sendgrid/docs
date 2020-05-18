@@ -191,6 +191,16 @@ aside a.active {
   margin-bottom: 0;
 }
 
+.callout--beta {
+  background: rgba(124, 77, 255, 0.05);
+  border-left: 2px solid $screample;
+
+  &::before {
+    content: 'Beta';
+    color: $screample;
+  }
+}
+
 .callout--info {
   background: $sg-blue-05;
   border-left: 2px solid $sg-blue;
