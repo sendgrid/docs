@@ -72,6 +72,7 @@ If you create a library, please let us know, by editing this page [in our GitHub
  ### 	Android
 
 -   [sendgrid-android](https://github.com/danysantiago/sendgrid-android) - The Android library for SendGrid by [DannySantiago](https://github.com/danysantiago)
+-   [SendGrid4Android](https://github.com/fredericojssilva/SendGrid4Android) *by Frederico Silva* - Simple SendGrid client for Android
 
  ### 	ColdFusion
 
