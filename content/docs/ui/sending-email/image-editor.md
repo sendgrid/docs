@@ -21,7 +21,7 @@ Because the Image Editor is available within the [Design Library](https://mc.sen
 
 ## Image Library
 
-You can upload new images and access existing images in the Marketing Campaigns Image Library. To access the Image Library, navigate to [Design Library > Your Images](https://mc.sendgrid.com/design-library/your-images) in the sidebar navigation of the SendGrid App.
+You can upload new images and access existing images in the Marketing Campaigns Image Library. To access the Image Library, navigate to [Design Library > Your Images](https://mc.sendgrid.com/design-library/your-images) in the sidebar navigation of the SendGrid App. You can also access the Image Library while editing a Single Send or Automation email by adding an image into your content and clicking “Edit Image.”
 
 ![The Image Library landing page in the SendGrid App. Here you can upload new images or select existing images to edit.]({{root_url}}/images/mc-image-library-landing-page.png 'The Image Library landing page')
 
