@@ -64,7 +64,7 @@ Only the Parent account or Teammates with either Billing or Admin permissions ca
 
 <call-out>
 
-Additional IPs cost an extra $30 per additional IP per month. You may only add up to 3 new IP addresses to your account per month.
+Additional IPs cost an extra $30 per additional IP per month. You may add 1 new IP address to your account per month through the user interface.  For the addition of more than 1 IP address per month, please contact our support team.
 
 </call-out>
 
