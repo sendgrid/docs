@@ -241,6 +241,12 @@ Upgrading your account does NOT absorb already incurred overage charges, so make
 
 </call-out>
 
+<call-out type="warning">
+
+**Important:** If your SendGrid account is created through Microsoft Azure, Heroku or Google Cloud, these subscriptions do *not* allow for overages.  For pricing, billing and account package details for these types of SendGrid accounts, please refer to each of the partner's respective online resources.
+
+</call-out>
+
 ### Marketing Campaigns Overage Costs
 
 <table>
