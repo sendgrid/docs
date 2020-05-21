@@ -171,6 +171,9 @@ Event Notification
 All fields except version are required for each call.
 {% endinfo %}
 
+{% warning %}
+Using the `eventnotify` API call will overwrite any previously configured Event Webhook notification settings, including OAuth 2.0 settings. If your OAuth 2.0 settings are overwritten, please configure them again using either the [Mail Settings](https://app.sendgrid.com/settings/mail_settings) page or the [SendGrid v3 API](https://sendgrid.api-docs.io/v3.0/webhooks/update-event-notification-settings).
+{% endwarning %}
 
 {% parameters eventnotify %}
  {% parameter 'name' 'Yes' 'eventnotify' 'The setting.' %}
