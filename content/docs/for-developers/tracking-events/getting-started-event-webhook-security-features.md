@@ -235,6 +235,12 @@ Please note, there are other required fields when making requests to this API en
 
 </call-out>
 
+<call-out type="warning">
+
+Using the v2 Web API's `eventnotify` API call will overwrite any previously configured Event Webhook notification settings, including OAuth 2.0. If your OAuth 2.0 settings are overwitten, please configure them again using either the [Mail Settings](https://app.sendgrid.com/settings/mail_settings) page or the [SendGrid v3 API](https://sendgrid.api-docs.io/v3.0/webhooks/update-event-notification-settings)
+
+</call-out>
+
 #### Testing the Event Webhook
 
 You can test your Webhook by passing a `POST` request to `https://api.sendgrid.com/v3/user/webhooks/event/test`. This request will send a fake event to your HTTP POST URL, which you can use to verify proper functionality. This endpoint expects a JSON request body with a required URL field. To test the OAuth setup, you must include the three optional OAuth fields.
