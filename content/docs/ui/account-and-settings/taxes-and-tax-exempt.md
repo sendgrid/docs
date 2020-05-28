@@ -82,7 +82,6 @@ SendGrid collects sales tax in the following jurisdictions:
 - Wyoming: effective 08/01/2020
 - US metro areas include Denver, Boulder and Chicago
 
-
 To determine whether to add sales tax to your monthly SendGrid bill, we use the address you enter as your billing address in [Account Details](https://app.sendgrid.com/account/billing) in the SendGrid UI.
 
  ### 	Where can I see how much I am getting charged for sales tax each month?
