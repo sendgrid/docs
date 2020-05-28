@@ -35,23 +35,53 @@ If SendGrid has a physical presence in a jurisdiction, and we directly sell a ta
 
 SendGrid collects sales tax in the following jurisdictions:
 
-- Connecticut
-- Iowa
-- Indiana
-- Massachusetts
-- New York
-- Ohio
-- Pennsylvania
-- Rhode Island
-- South Carolina
-- South Dakota
-- Tennessee
-- Texas
-- Utah
-- Washington
-- Washington D.C.
-- Wisconsin 
+- Alabama: effective 08/01/2020
+- Arizona: effective 08/01/2020
+- Arkansas: effective 08/01/2020
+- California: effective 08/01/2020
+- Colorado: effective 05/01/2018
+- Connecticut: effective 06/01/2019
+- Florida: effective 08/01/2020
+- Georgia: effective 08/01/2020
+- Hawaii: effective 08/01/2020
+- Idaho: effective 08/01/2020
+- Illinois: effective 05/01/2018
+- Iowa: effective 06/01/2019
+- Indiana: effective 08/01/2020
+- Kansas: effective 08/01/2020
+- Kentucky: effective 08/01/2020
+- Louisiana: effective 08/01/2020
+- Maine: effective 08/01/2020
+- Maryland: effective 08/01/2020
+- Massachusetts: effective 06/01/2019
+- Michigan: effective 08/01/2020
+- Minnesota: effective 08/01/2020
+- Mississippi: effective 08/01/2020
+- Missouri: effective 08/01/2020
+- Nebraska: effective 08/01/2020
+- New Hampshire: effective 08/01/2020
+- New Jersey: effective 08/01/2020
+- New Mexico: effective 08/01/2020
+- New York: effective 05/01/2018
+- North Carolina: effective 08/01/2020
+- North Dakota: effective 08/01/2020
+- Ohio: effective 06/01/2019
+- Oklahoma: effective 08/01/2020
+- Pennsylvania: effective 06/01/2019
+- Rhode Island: effective 06/01/2019
+- South Carolina: effective 06/01/2019
+- South Dakota: effective 06/01/2019
+- Tennessee: effective 06/01/2019
+- Texas: effective 05/01/2018
+- Utah: effective 06/01/2019
+- Virginia: effective 08/01/2020
+- Washington: effective 05/01/2018
+- Washington D.C.: effective 06/01/2019
+- West Virginia: effective 08/01/2020
+- Wisconsin: 06/01/2019
+- Wyoming: effective 08/01/2020
 - US metro areas include Denver, Boulder and Chicago
+
 
 To determine whether to add sales tax to your monthly SendGrid bill, we use the address you enter as your billing address in [Account Details](https://app.sendgrid.com/account/billing) in the SendGrid UI.
 
