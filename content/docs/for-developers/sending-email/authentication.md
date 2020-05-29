@@ -11,7 +11,7 @@ navigation:
  show: true
 ---
 
-SendGrid supports both API key and basic authentication, depending on the functionality you are using. On top of  API key authentication, SendGrid offers two-factor authentication (2FA) to improve security.
+SendGrid supports both API key and basic authentication, depending on the functionality you are using. On top of API key authentication, SendGrid offers two-factor authentication (2FA) to improve security.
 
 ## API key (recommended)
 
@@ -53,6 +53,8 @@ If you are currently using basic authentication, we recommend upgrading your aut
 </call-out>
 
 ## Two-factor authentication
+
+Enabling two-factor authentication (2FA) will allow Twilio SendGrid to deliver confirmation codes via SMS to your mobile phone. You will not be able to log in when cellular service is not available. SMS 2FA is powered by [Authy](https://authy.com/). Selecting this option does not require an Authy account, but if you have one, you will be able to use either the [Authy App](https://www.authy.com/app/mobile/) or SMS messages.
 
 SendGrid recommends enabling two-factor authentication (2FA) for all users. For more information about setting up 2FA, see [Two-factor authentication]({{root_url}}/ui/account-and-settings/two-factor-authentication/).
 
