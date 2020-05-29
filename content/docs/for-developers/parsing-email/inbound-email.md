@@ -44,7 +44,7 @@ See [Setting Up The Inbound Parse Webhook]({{root_url}}/for-developers/parsing-e
 
 <call-out>
 
-The total message size limit, including the message itself and any number of attachments, is 30MB. Be aware that other mail handlers will have their own limitations, and some ISPs and companies may either dramatically limit the size and/or type of attachments, or even block them altogether.
+The total message size limit, including the message itself and any number of attachments, is 20MB. Be aware that other mail handlers will have their own limitations, and some ISPs and companies may either dramatically limit the size and/or type of attachments, or even block them altogether.
 
 </call-out>
 
