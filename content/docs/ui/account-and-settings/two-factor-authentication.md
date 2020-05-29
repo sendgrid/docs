@@ -21,7 +21,7 @@ SendGrid no longer accepts Basic authentication (username and password) for API 
 
 </call-out>
 
-SendGrid’s Two-Factor Authentication can be configured to accept a code sent to your mobile phone either via the [Authy App](https://www.authy.com/app/mobile/), or an SMS message.
+Twilio SendGrid’s Two-Factor Authentication can be configured to accept a code sent to your mobile phone either via the [Authy App](https://www.authy.com/app/mobile/), or an SMS message. Enabling 2FA does not require an Authy account, but if you have one, you will be able to use either the [Authy App](https://www.authy.com/app/mobile/) or SMS messages.
 
 ## 	Setting Up Two-Factor Authentication
  	
