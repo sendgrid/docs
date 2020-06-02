@@ -59,7 +59,7 @@ SendGrid collects sales tax in the following jurisdictions:
 - Mississippi
 - Missouri
 - Nebraska
-- New Hampshire
+- Nevada
 - New Jersey
 - New Mexico
 - New York
