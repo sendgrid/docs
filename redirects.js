@@ -8,7 +8,7 @@ module.exports = [
     to: '/for-developers/partners/account-migration/',
   },
   {
-    from: '/docs/API_Reference/SMTP_API/',
+    from: '/API_Reference/SMTP_API/',
     to: '/for-developers/sending-email/getting-started-smtp/',
   },
   {
@@ -777,7 +777,7 @@ module.exports = [
   },
   {
     from: '/Code_Examples/SMTP_API_Header_Examples/ruby.html',
-    to: '/docs/for-developers/sending-email/smtp-ruby-code-example/',
+    to: '/for-developers/sending-email/smtp-ruby-code-example/',
   },
   {
     from: '/Integrate/Code_Examples/v2_Mail/csharp.html',
