@@ -601,7 +601,7 @@ module.exports = [
   },
   {
     from: '/API_Reference/Webhooks/parse.html',
-    to: '/API_Reference/Webhooks/inbound_email.html',
+    to: '/for-developers/parsing-email/inbound-email/',
   },
   {
     from: '/API_Reference/SMTP_API/smtpapi_validator.html',
@@ -905,7 +905,7 @@ module.exports = [
   },
   {
     from: '/Classroom/Basics/your_reputation_what_is_it.html',
-    to: '/blog/what-is-a-domain-reputation/',
+    to: 'https://sendgrid.com/blog/what-is-a-domain-reputation/',
   },
   {
     from: '/Classroom/Basics/Security/setting_up_2_factor_authentication.html',
@@ -1085,7 +1085,7 @@ module.exports = [
   },
   {
     from: '/Classroom/Build/adaptive_email_content.html',
-    to: '/blog/create-more-personalized-email-content-and-turn-engagement-into-revenue/',
+    to: 'https://sendgrid.com/blog/create-more-personalized-email-content-and-turn-engagement-into-revenue/',
   },
   {
     from: '/Classroom/Build/attachments.html',
@@ -1093,7 +1093,7 @@ module.exports = [
   },
   {
     from: '/Classroom/Build/brand_consistency_why_its_important.html',
-    to: '/blog/how-to-maintain-brand-standards-in-your-email-designs/',
+    to: 'https://sendgrid.com/blog/how-to-maintain-brand-standards-in-your-email-designs/',
   },
   {
     from: '/Classroom/Build/can_i_use_substitution_tags_in_subject_lines.html',
@@ -1109,7 +1109,7 @@ module.exports = [
   },
   {
     from: '/Classroom/Build/gmail_promotions_tab.html',
-    to: '/blog/i-fought-the-tabs-and-the-tabs-won/',
+    to: 'https://sendgrid.com/blog/i-fought-the-tabs-and-the-tabs-won/',
   },
   {
     from: '/Classroom/Build/how_do_i_add_a_list_unsubscribe_header_to_my_emails.html',
@@ -1125,7 +1125,7 @@ module.exports = [
   },
   {
     from: '/Classroom/Build/personalization_making_your_messages_count.html',
-    to: '/blog/create-more-personalized-email-content-and-turn-engagement-into-revenue/',
+    to: 'https://sendgrid.com/blog/create-more-personalized-email-content-and-turn-engagement-into-revenue/',
   },
   {
     from: '/Classroom/Build/plain_text_emails_converted_to_html.html',
@@ -1197,19 +1197,15 @@ module.exports = [
   },
   {
     from: '/Classroom/Build/Choose_Content/adaptive_email_content.html',
-    to: '/blog/create-more-personalized-email-content-and-turn-engagement-into-revenue/',
+    to: 'https://sendgrid.com/blog/create-more-personalized-email-content-and-turn-engagement-into-revenue/',
   },
   {
     from: '/Classroom/Build/Choose_Content/brand_consistency_why_its_important.html',
-    to: '/blog/how-to-maintain-brand-standards-in-your-email-designs/',
-  },
-  {
-    from: '/Classroom/Build/Choose_Content/gmail_promotions_tab.html',
-    to: '/blog/i-fought-the-tabs-and-the-tabs-won/',
+    to: 'https://sendgrid.com/blog/how-to-maintain-brand-standards-in-your-email-designs/',
   },
   {
     from: '/Classroom/Build/Choose_Content/personalization_making_your_messages_count.html',
-    to: '/blog/create-more-personalized-email-content-and-turn-engagement-into-revenue/',
+    to: 'https://sendgrid.com/blog/create-more-personalized-email-content-and-turn-engagement-into-revenue/',
   },
   {
     from: '/Classroom/Build/Format_Content/html_formatting_issues.html',
@@ -1433,7 +1429,7 @@ module.exports = [
   },
   {
     from: '/Classroom/Deliver/Address_Lists/why_purchase_lists_when_you_can.html',
-    to: '/blog/buying-email-lists-3-reasons-why-you-shouldnt/',
+    to: 'https://sendgrid.com/blog/buying-email-lists-3-reasons-why-you-shouldnt/',
   },
   {
     from: '/Classroom/Deliver/Delivery_Introduction/bacn_its_whats_for_dinner.html',
@@ -1589,11 +1585,11 @@ module.exports = [
   },
   {
     from: '/Classroom/Send/can_i_send_to_purchased_lists.html',
-    to: '/blog/buying-email-lists-3-reasons-why-you-shouldnt/',
+    to: 'https://sendgrid.com/blog/buying-email-lists-3-reasons-why-you-shouldnt/',
   },
   {
     from: '/Classroom/Send/welcome_emails_making_a_good_first_impression.html',
-    to: '/blog/how-to-send-the-perfect-welcome-email/',
+    to: 'https://sendgrid.com/blog/how-to-send-the-perfect-welcome-email/',
   },
   {
     from: '/Classroom/Send/resubscription_of_users.html',
@@ -1653,7 +1649,7 @@ module.exports = [
   },
   {
     from: '/Classroom/Send/What_You_Can_Send/welcome_emails_making_a_good_first_impression.html',
-    to: '/blog/how-to-send-the-perfect-welcome-email/',
+    to: 'https://sendgrid.com/blog/how-to-send-the-perfect-welcome-email/',
   },
   {
     from: '/Classroom/Send/When_Emails_Are_Sent/can_i_stop_a_scheduled_send.html',
@@ -2101,7 +2097,7 @@ module.exports = [
   },
   {
     from: '/Glossary/sender_reputation.html',
-    to: '/blog/what-is-a-domain-reputation/',
+    to: 'https://sendgrid.com/blog/what-is-a-domain-reputation/',
   },
   {
     from: '/Glossary/triggering_events.html',
@@ -2893,7 +2889,7 @@ module.exports = [
   },
   {
     from: '/User_Guide/Setting_Up_Your_Server/smtp_ports.html',
-    to: '/for-developers/sending-email/sending-email-smtp/',
+    to: '/for-developers/sending-email/getting-started-smtp/',
   },
   {
     from: '/User_Guide/Setting_Up_Your_Server/warming_up_ips.html',
@@ -3740,10 +3736,6 @@ module.exports = [
     to: '/for-developers/tracking-events/event-webhook/',
   },
   {
-    from: '/API_Reference/Webhooks/inbound_email.html',
-    to: '/for-developers/parsing-email/inbound-email/',
-  },
-  {
     from: '/Classroom/Basics/API/why_event_api.html',
     to: '/for-developers/tracking-events/event-webhook/',
   },
@@ -4536,7 +4528,179 @@ module.exports = [
     to: '/ui/account-and-settings/how-to-set-up-domain-authentication/',
   },
   {
-    from: '/ui/ads',
+    from: '/User_Guide/Settings/Sender_Authentication/How_to_set_up_link_branding.html',
+    to: '/ui/account-and-settings/how-to-set-up-link-branding/',
+  },
+  {
+    from: '/User_Guide/Marketing_Campaigns/Managing_Contacts_lists.html',
+    to: '/ui/managing-contacts/managing-contact-list/',
+  },
+  {
+    from: '/User_Guide/Marketing_Campaigns/Managing_Contacts/format_CSV.html',
+    to: '/ui/managing-contacts/formatting-a-csv/',
+  },
+  {
+    from: '/User_Guide/Transactional_Templates/create__and_edit_transactional_templates.html',
+    to: '/ui/sending-email/create-and-edit-transactional-templates/',
+  },
+  {
+    from: '/User_Guide/MarketingUser_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html',
+    to: '/ui/managing-contacts/building-your-contact-list/',
+  },
+  {
+    from: '/User_Guide/Account_Management/cancel_account.html',
+    to: '/ui/account-and-settings/cancel-your-account/',
+  },
+  {
+    from: '/User_Guide/Marketing_Campaigns/formatting_a_CSV.html',
+    to: '/ui/managing-contacts/formatting-a-csv/',
+  },
+  {
+    from: '/User_Guide/Legacy_Newsletter/recipients.html',
+    to: '/ui/managing-contacts/managing-contact-list/',
+  },
+  {
+    from: '/User_Guide/Transactional_Templates/Create_and_edit_dynamic_transactional_templates.html',
+    to: '/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/',
+  },
+  {
+    from: '/Classroom/Deliver/Undeliverable_Email/help_my_emails_arent_being_delivered.html',
+    to: '/ui/sending-email/deliverability/',
+  },
+  {
+    from: '/Classroom/Send/v3_Mail_Send/curl_examples.html',
+    to: '/for-developers/sending-email/curl-examples/',
+  },
+  {
+    from: '/Classroom/Deliver/Undeliverable_Email/why_is_sendgrid_net_greylisted.html',
+    to: '/ui/sending-email/deliverability/',
+  },
+  {
+    from: '/Classroom/Deliver/Undeliverable_Email/my_emails_are_being_dropped.html',
+    to: '/glossary/drops/',
+  },
+  {
+    from: '/Classroom/Deliver/Undeliverable_Email/what_do_i_do_if_im_blacklisted.html',
+    to: '/ui/sending-email/deliverability/',
+  },
+  {
+    from: '/Glossary/drops.html',
+    to: '/glossary/drops/',
+  },
+  {
+    from: '/Classroom/Basics/API/api_key_permissions.html',
+    to: '/ui/account-and-settings/api-keys/',
+  },
+  {
+    from: '/Classroom/Basics/Email_Infrastructure/ssl_vs_tls.html',
+    to: '/ui/sending-email/deliverability/',
+  },
+  {
+    from: '/User_Guide/Statistics/category_compare.html',
+    to: '/ui/analytics-and-reporting/category-comparison/',
+  },
+  {
+    from: '/Integrate/Tutorials/piesync.html',
+    to: '/for-developers/sending-email/piesync/',
+  },
+  {
+    from: '/Classroom/Deliver/Undeliverable_Email/how_do_i_keep_emails_from_dropping.html',
+    to: '/ui/sending-email/deliverability/',
+  },
+  {
+    from: '/User_Guide/Settings/Sender_authentication/How_to_set_up_reverse_dns.html',
+    to: '/ui/account-and-settings/how-to-set-up-reverse-dns/',
+  },
+  {
+    from: '/Classroom/Basics/Misc/your_reputation_what_is_it.html',
+    to: '/ui/sending-email/deliverability/',
+  },
+  {
+    from: '/User_Guide/Settings/taxes_and_tax_exempt.html',
+    to: '/ui/account-and-settings/taxes-and-tax-exempt/',
+  },
+  {
+    from: '/release_notes.html',
+    to: '/release-notes/',
+  },
+  {
+    from: '/Classroom/Deliver/Undeliverable_Email/google_feedback_loop_spam_complaints.html',
+    to: '/ui/sending-email/deliverability/',
+  },
+  {
+    from: '/Classroom/Deliver/Undeliverable_Email/spam_trapped.html',
+    to: '/ui/sending-email/deliverability/',
+  },
+  {
+    from: '/Integrate/Tutorials/Zapier/index.html',
+    to: '/for-developers/sending-email/zapier-sending-for-new-webhook-data/',
+  },
+  {
+    from: '/Classroom/Send/v3_Mail_Send/index.html',
+    to: '/api-reference/',
+  },
+  {
+    from: '/User_Guide/Settings/Sender_authentication/How_to_set_up_link_branding.html',
+    to: '/glossary/link-branding/',
+  },
+  {
+    from: '/User_Guide/Transactional_Templates/migrating_from_legacy_templates.html',
+    to: '/ui/sending-email/migrating-from-legacy-templates/',
+  },
+  {
+    from: '/User_Guide/Marketing_Campaigns/templates.html',
+    to: '/ui/sending-email/create-and-edit-transactional-templates/',
+  },
+  {
+    from: '/Integrate/Tutorials/EngineYard.html',
+    to: '/for-developers/partners/google/',
+  },
+  {
+    from: '/User_Guide/Marketing_Campaigns/Managing_Contacts/formating_a_CSV.html',
+    to: '/ui/managing-contacts/formatting-a-csv/',
+  },
+  {
+    from: '/Integrate/Open_Source_Apps/modx.html',
+    to: '/for-developers/sending-email/modx/',
+  },
+  {
+    from: '/ui/sending-email/reputation/',
+    to: '/ui/sending-email/deliverability/',
+  },
+  {
+    from: '/API_Reference/Webhooks/inbound_email.html',
+    to: '/for-developers/parsing-email/inbound-email/',
+  },
+  {
+    from: '/API_Reference/',
+    to: '/API_Reference/index.html',
+  },
+  {
+    from: '/ui/sending-email/create-and-edit-transactional-templates/',
+    to: '/ui/sending-email/create-and-edit-legacy-transactional-templates/',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/Tutorials/getting_started_email_activity_api.html',
+    to: '/for-developers/sending-email/getting-started-email-activity-api/',
+  },
+  {
+    from: '/API_Reference/SMTP_AP/getting_started_smtp.html',
+    to: '/for-developers/sending-email/getting-started-smtp/',
+  },
+  {
+    from: '/ui/managing-contacts/adding-contacts/',
+    to: '/ui/managing-contacts/create-and-manage-contacts/',
+  },
+  {
+    from: '/ui/sending-email/working-with-marketing-templates/',
+    to: '/ui/sending-email/working-with-marketing-campaigns-email-designs/',
+  },
+  {
+    from: '/ui/managing-contacts/managing-contact-list/',
+    to: '/ui/managing-contacts/create-and-manage-contacts/',
+  },
+  {
+    from: '/ui/ads/',
     to: '/',
   },
 ];
