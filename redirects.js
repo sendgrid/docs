@@ -933,7 +933,8 @@ module.exports = [
   },
   {
     from: '/Classroom/Basics/Security/what_security_measures_are_available_with_sendgrid_accounts.html',
-    to: '/policies/security/',
+    to: '/',
+    gone: true,
   },
   {
     from: '/Classroom/Basics/Marketing_Campaigns/migration_guide_part_1_migrating_your_recipient_lists_into_contacts.html',
@@ -989,15 +990,11 @@ module.exports = [
   },
   {
     from: '/Classroom/Basics/Marketing_Campaigns/marketing_campaigns_faqs.html',
-    to: '/ui/account-and-settings/sending-email/how-to-send-email-with-marketing-campaigns/',
-  },
-  {
-    from: '/Classroom/Basics/Marketing_Campaigns/marketing_campaigns_faqs.html',
-    to: '/ui/account-and-settings/sending-email/how-to-send-email-with-marketing-campaigns/',
+    to: '/ui/sending-email/how-to-send-email-with-marketing-campaigns/',
   },
   {
     from: '/Classroom/Basics/Marketing_Campaigns/default_mc_tags.html',
-    to: '/ui/account-and-settings/sending-email/global-unsubscribes/',
+    to: '/ui/sending-email/global-unsubscribes/',
   },
   {
     from: '/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html',
@@ -1009,7 +1006,7 @@ module.exports = [
   },
   {
     from: '/Classroom/Basics/Marketing_Campaigns/third_party_partner_marketing_campaigns_access.html',
-    to: '/ui/account-and-settings/sending-email/how-to-send-email-with-marketing-campaigns/',
+    to: '/ui/sending-email/how-to-send-email-with-marketing-campaigns/',
   },
   {
     from: '/Classroom/Basics/Integrate/how_to_integrate_with_mailpoet.html',
@@ -1037,7 +1034,7 @@ module.exports = [
   },
   {
     from: '/Classroom/Basics/Misc/a_sendgrid_user_is_spamming_me.html',
-    to: '/report-spam/',
+    to: '/ui/account-and-settings/support/',
   },
   {
     from: '/Classroom/Basics/Email_Infrastructure/email_flow.html',
@@ -1057,11 +1054,11 @@ module.exports = [
   },
   {
     from: '/Classroom/Basics/API/does_sendgrid_offer_a_sandbox_or_test_environment.html',
-    to: '/for-developers/sending-email/sandbox/',
+    to: '/for-developers/sending-email/sandbox-mode/',
   },
   {
     from: '/Classroom/Basics/API/how_do_i_integrate_with_sendgrid.html',
-    to: '/for-developers/sending-email/sending-email-api/',
+    to: '/for-developers/sending-email/api-getting-started/',
   },
   {
     from: '/Classroom/Basics/API/how_to_create_a_subuser_with_the_api.html',
@@ -1069,7 +1066,7 @@ module.exports = [
   },
   {
     from: '/Classroom/Basics/API/what_are_the_sendgrid_apis_and_what_do_they_do.html',
-    to: '/for-developers/sending-email/sending-email-api/',
+    to: '/for-developers/sending-email/api-getting-started/',
   },
   {
     from: '/Classroom/Basics/API/what_is_my_api_key.html',
@@ -1077,7 +1074,7 @@ module.exports = [
   },
   {
     from: '/Classroom/index.html',
-    to: '/index.html/',
+    to: '/',
   },
   {
     from: '/Classroom/Build/a_b_testing.html',
@@ -1165,7 +1162,7 @@ module.exports = [
   },
   {
     from: '/Classroom/Build/Add_Content/custom_ssl_configurations.html',
-    to: '/ui/sending-email/custom-ssl-configurations/',
+    to: '/ui/account-and-settings/custom-ssl-configurations/',
   },
   {
     from: '/Classroom/Build/Add_Content/substitution_and_section_tags.html',
@@ -1445,7 +1442,7 @@ module.exports = [
   },
   {
     from: '/Classroom/Deliver/Delivery_Introduction/russian_data_localization_law.html',
-    to: '/resource/general-data-protection-regulation/',
+    to: '/glossary/gdpr/',
   },
   {
     from: '/Classroom/Deliver/Delivery_Introduction/suppressions_vs_unsubscribes.html',
@@ -1617,11 +1614,11 @@ module.exports = [
   },
   {
     from: '/Classroom/Send/How_Emails_Are_Sent/sendmail_relay_all_local_mail_through_sendgrid.html',
-    to: '/ui/sending-email/sendmail/',
+    to: '/for-developers/sending-email/sendmail/',
   },
   {
     from: '/Classroom/Send/How_Emails_Are_Sent/unauthenticated_sender.html',
-    to: '/for-developers/sending-email/sending-email-smtp/',
+    to: '/for-developers/sending-email/getting-started-smtp/',
   },
   {
     from: '/Classroom/Send/index.html',
@@ -1645,7 +1642,7 @@ module.exports = [
   },
   {
     from: '/Classroom/Send/What_You_Can_Send/can_i_send_adult_content_in_my_emails.html',
-    to: '/ui/sending-email/can-i-send-adult-content-in-my-emails/',
+    to: '/ui/sending-email/deliverability/#sending-adult-content',
   },
   {
     from: '/Classroom/Send/What_You_Can_Send/welcome_emails_making_a_good_first_impression.html',
@@ -1793,7 +1790,7 @@ module.exports = [
   },
   {
     from: '/Classroom/Track/Clicks/click_tracking_links_have_stopped_working.html',
-    to: '/ui/analytics-and-reporting/click-tracking/',
+    to: '/ui/analytics-and-reporting/click-tracking-html-best-practices/',
   },
   {
     from: '/Classroom/Track/Clicks/clicktracking_ssl.html',
@@ -1805,11 +1802,11 @@ module.exports = [
   },
   {
     from: '/Classroom/Track/Unsubscribes/list_unsubscribe.html',
-    to: '/ui/sending-email/unsubcribe-groups ',
+    to: '/ui/sending-email/unsubscribe-groups/',
   },
   {
     from: '/Classroom/Track/Unsubscribes/unsubscribe_via_subscription_tracking.html',
-    to: '/ui/analytics-and-reporting/subscription-tracking/',
+    to: '/ui/sending-email/subscription-tracking/',
   },
   {
     from: '/Classroom/Troubleshooting/Account_Administration/how_can_i_turn_off_2_factor_authentication.html',
@@ -1965,7 +1962,7 @@ module.exports = [
   },
   {
     from: '/Classroom/Troubleshooting/Account_Administration/cant_access_the_email_address_on_file_for_your_sendgrid_account.html',
-    to: '/ui/account-and-settings/accessing-email-associated-with-sendgrid/',
+    to: '/ui/account-and-settings/accessing-email-account-associated-with-sendgrid/',
   },
   {
     from: '/Classroom/Troubleshooting/Account_Administration/cant_log_in_to_your_account.html',
@@ -2033,7 +2030,7 @@ module.exports = [
   },
   {
     from: '/Classroom/Troubleshooting/Authentication/how_do_i_check_the_headers_raw_source_of_an_email.html',
-    to: '/ui/account-and-settings/checking-email-source/',
+    to: '/ui/sending-email/checking-email-source/',
   },
   {
     from: '/Classroom/Troubleshooting/Authentication/my_emails_are_displaying_as_on_behalf_of_or_via_in_some_mail_clients.html',
@@ -3373,7 +3370,8 @@ module.exports = [
   },
   {
     from: '/Classroom/Basics/Security/secure_upload_download_supression_lists.html',
-    to: '/ui/account-and-settings/hippa-compliant/',
+    to: '/',
+    gone: true,
   },
   {
     from: '/Classroom/Basics/Security/password.html',
@@ -3381,7 +3379,8 @@ module.exports = [
   },
   {
     from: '/Classroom/Basics/Security/keeping_your_registration_form_secure.html',
-    to: '/ui/account-and-settings/hippa-compliant/',
+    to: '/',
+    gone: true,
   },
   {
     from: '/Classroom/Basics/Security/is_sendgrid_pci_compliant.html',
@@ -3389,7 +3388,7 @@ module.exports = [
   },
   {
     from: '/Classroom/Basics/Security/is_sendgrid_hipaa_compliant.html',
-    to: '/ui/account-and-settings/hippa-compliant/',
+    to: '/ui/account-and-settings/hipaa-compliant/',
   },
   {
     from: '/Classroom/Basics/Security/dont_share_your_password.html',
