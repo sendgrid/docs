@@ -340,7 +340,7 @@ Due to low usage, this setting has been removed. Click [here]({{root_url}}/ui/ac
 
 </call-out>
 
-<p>Tests message with <a href="http://spamassassin.apache.org/">SpamAssassin</a> to determine if it is spam, and drop it if it is.</p>
+Tests message with [SpamAssassin](http://spamassassin.apache.org/) to determine if it is spam, and drop it if it is.
 
 <table class="table table-striped table-bordered">
 <tbody>
@@ -362,7 +362,7 @@ Due to low usage, this setting has been removed. Click [here]({{root_url}}/ui/ac
 <tr>
 <td>url</td>
 <td><code>url</code></td>
-<td>an optional url to POST the email and a copy of the report to. Refer to the <a href="{{root_url}}/ui/account-and-settings/mail/#spam-checker">Spam Checker documentation</a> for POST details.</td>
+<td>an optional url to POST the email and a copy of the report to. Refer to the <a href="https://sendgrid.com/docs/ui/account-and-settings/mail/#spam-checker">Spam Checker documentation</a> for POST details.</td>
 </tr>
 </tbody>
 </table>
@@ -444,11 +444,11 @@ The `landing` argument cannot be used in SMTPAPI. It can only be setup via the U
 
 <call-out>
 
-This setting refers to SendGrid's <a href="{{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/index.html">transactional templates</a>. SendGrid supports versioning, and the ability to create multiple transactional templates. Previously, we had a Template App, which is now referred to as the <a href="#template">Legacy Template App</a>.
+This setting refers to SendGrid's [transactional templates](https://sendgrid.api-docs.io/v3.0/transactional-templates). SendGrid supports versioning, and the ability to create multiple transactional templates. Previously, we had a Template App, which is now referred to as the [Legacy Template App](#template).
 
 </call-out>
 
-Uses a [transactional template]({{root_url}}/API_Reference/Web_API_v3/Transactional_Templates/index.html) when sending an email.
+Uses a [transactional template](https://sendgrid.api-docs.io/v3.0/transactional-templates) when sending an email.
 
 <table class="table table-striped table-bordered">
 <tbody>
