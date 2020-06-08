@@ -18,7 +18,7 @@ Throttling is when a receiving server refuses a message, but with a specific exp
 
 ## 	What causes a deferral?
 
--   The receiving server doesn't recognize your IP, and may think you're sending spam. This is why [warming up your IP]({{root_url}}/ui/sending-email/how-to-warm-up-an-ip/) is so important. IP Warmup allows recipient mail servers to become familiar with your sending habits, and later anticipate your messages.
+-   The receiving server doesn't recognize your IP, and may think you're sending spam. This is why [warming up your IP]({{root_url}}/ui/sending-email/warming-up-an-ip-address/) is so important. IP Warmup allows recipient mail servers to become familiar with your sending habits, and later anticipate your messages.
 
 -   The receiving server doesn't have any open ports to receive email.
 

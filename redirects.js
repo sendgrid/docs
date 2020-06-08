@@ -5525,4 +5525,48 @@ module.exports = [
     from: '/ui/account-and-settings/checking-email-source/',
     to: '/ui/sending-email/checking-email-source/',
   },
+  {
+    from: '/ui/sending-email/how-to-set-up-domain-authentication/',
+    to: '/ui/account-and-settings/how-to-set-up-domain-authentication/',
+  },
+  {
+    from: '/ui/sending-email/how-to-set-up-link-branding/',
+    to: '/ui/account-and-settings/how-to-set-up-link-branding/',
+  },
+  {
+    from: '/managing-contacts/segmenting-your-contacts/',
+    to: '/ui/managing-contacts/segmenting-your-contacts/',
+  },
+  {
+    from: '/ui/account-and-settings/senders/',
+    to: '/ui/sending-email/senders/',
+  },
+  {
+    from: '/ui/sending-email/how-to-warm-up-an-ip/',
+    to: '/ui/sending-email/warming-up-an-ip-address/',
+  },
+  {
+    from: '/User_Guide/Settings/',
+    to: '/',
+  },
+  {
+    from: '/index.html/',
+    to: '/',
+  },
+  {
+    from:
+      '/ui/sending-email/how-to-send-email-with-marketing-campaigns-with-dynamic-transactional-templates/',
+    to:
+      '/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/',
+  },
+  {
+    from:
+      '/for-developers/sending-email/how-to-send-an-email-with-dynamic-transactional-templates',
+    to:
+      '/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/l',
+  },
+  {
+    from: '/ui/',
+    to: '/',
+  },
 ];
