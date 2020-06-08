@@ -105,7 +105,7 @@ The Group Name as well as the Group Description are public-facing and will be vi
 1. Select **Single Sends**.
 1. To create a new one-to-many email, click **Create Single Send**.
 1. Select the template that you want to use for your email.
-<br> You can select a blank template, a custom template that you have already created, or one of SendGrid's responsive pre-built templates. For more information, see [Marketing Templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/).
+<br> You can select a blank template, a custom template that you have already created, or one of SendGrid's responsive pre-built templates. For more information, see [Working with Marketing Campaigns Email Designs]({{root_url}}/ui/sending-email/working-with-marketing-campaigns-email-designs/).
 
 <call-out>
 
