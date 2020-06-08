@@ -5563,10 +5563,6 @@ module.exports = [
     from:
       '/for-developers/sending-email/how-to-send-an-email-with-dynamic-transactional-templates',
     to:
-      '/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/l',
-  },
-  {
-    from: '/ui/',
-    to: '/',
+      '/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/',
   },
 ];

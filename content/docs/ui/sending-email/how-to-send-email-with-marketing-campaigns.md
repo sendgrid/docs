@@ -75,7 +75,7 @@ Marketing Campaigns offers a number of ways to add contacts to lists, including:
 
 ![]({{root_url}}/img/sign-up-form.png "Sign Up Form")
 
-- [**Manually Adding a Contact**]({{root_url}/https://sendgrid.com/docs/ui/managing-contacts/create-and-manage-contacts/#add-manually)
+- [**Manually Adding a Contact**]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#add-manually)
 
 - [**Contact Management APIs**](https://sendgrid.api-docs.io/v3.0/contacts/)
 
