@@ -138,6 +138,10 @@ Remember to direct your incoming email to your hostname (for example, example@ex
          <td>Email recipient field, as taken from the message headers.</td>
       </tr>
       <tr>
+         <th>Text</th>
+         <td>Email body in plaintext formatting.</td>
+      </tr>
+      <tr>
          <th>html</th>
          <td>HTML body of email. If not set, email did not have an HTML body.</td>
       </tr>
@@ -293,6 +297,11 @@ Content analysis details:   (2.6 points, 5.0 required)
          <th>Text</th>
          <td>Email body in plaintext formatting.</td>
       </tr>
+      <tr>
+         <th>html</th>
+         <td>HTML body of email. If not set, email did not have an HTML body.</td>
+      </tr>
+      <tr>
       <tr>
          <th>Sender IP</th>
          <td>Email sender IP address.</td>
