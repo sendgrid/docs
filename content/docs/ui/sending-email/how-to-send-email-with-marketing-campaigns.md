@@ -75,7 +75,7 @@ Marketing Campaigns offers a number of ways to add contacts to lists, including:
 
 ![]({{root_url}}/img/sign-up-form.png "Sign Up Form")
 
-- [**Manually Adding a Contact**]({{root_url}/https://sendgrid.com/docs/ui/managing-contacts/create-and-manage-contacts/#add-manually)
+- [**Manually Adding a Contact**]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#add-manually)
 
 - [**Contact Management APIs**](https://sendgrid.api-docs.io/v3.0/contacts/)
 
@@ -105,7 +105,7 @@ The Group Name as well as the Group Description are public-facing and will be vi
 1. Select **Single Sends**.
 1. To create a new one-to-many email, click **Create Single Send**.
 1. Select the template that you want to use for your email.
-<br> You can select a blank template, a custom template that you have already created, or one of SendGrid's responsive pre-built templates. For more information, see [Marketing Templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/).
+<br> You can select a blank template, a custom template that you have already created, or one of SendGrid's responsive pre-built templates. For more information, see [Working with Marketing Campaigns Email Designs]({{root_url}}/ui/sending-email/working-with-marketing-campaigns-email-designs/).
 
 <call-out>
 
