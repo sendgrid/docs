@@ -944,10 +944,41 @@ The Event Webhook response:
 ]
 ```
 
+For emails sent through our Marketing Campaigns feature, we add Marketing Campaigns specific parameters to the Event Webhook.
+
+- <a name="singlesendid"></a>`singlesend_id`
+- <a name="singlesendname"></a>`singlesend_name`
+
+### Example event from a Single Send:
+
+```json
+[
+  {
+    "category": [],
+    "email": "email@example.com",
+    "event": "open",
+    "ip": "127.0.0.1",
+    "mc_stats": "singlesend",
+    "phase_id": "send",
+    "send_at": "1591726752372",
+    "sg_content_type": "html",
+    "sg_event_id": "sendgrid_internal_event_id",
+    "sg_message_id": "sendgrid_internal_message_id",
+    "sg_template_id": "sendgrid_template_id",
+    "sg_template_name": "sendgrid_template_name",
+    "singlesend_id": "sendgrid_singlesend_id",
+    "singlesend_name": "Example Single Send",
+    "template_hash": "sendgrid_template_hash",
+    "template_id": "sendgrid_template_id",
+    "template_version_id": "sendgrid_template_version_id",
+    "timestamp": 1591726752372,
+    "useragent": "Mozilla/4.0 (compatible; MSIE 6.1; Windows XP; .NET CLR 1.1.4322; .NET CLR 2.0.50727)"
+  }
+]
+```
+
 - <a name="marketingcampaignid"></a>`marketing_campaign_id`
 - <a name="marketingcampaignname"></a>`marketing_campaign_name`
-
-For emails sent through our Marketing Campaigns feature, we add Marketing Campaigns specific parameters to the Event Webhook. Both `marketing_campaign_name` and `marketing_campaign_id` are displayed as unique arguments in the event data.
 
 ### Example event from a standard (non-A/B test) campaign send:
 
