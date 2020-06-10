@@ -131,11 +131,11 @@ When you try to send an invalid X-SMTPAPI header, you will get an email with det
 
 ## 550 Unauthenticated Senders Not Allowed
 
-If you’re getting an “Unauthenticated Senders Not Allowed” error, the problem usually lies in authenticating with our SMTP server. This error gets triggered when there was an attempt to hand over an email message through smtp.sendgrid.net before authenticating the connection with your SendGrid username and password.
+If you’re getting an “Unauthenticated Senders Not Allowed” error, the problem usually lies in authenticating with our SMTP server. This error gets triggered when there was an attempt to hand over an email message through smtp.sendgrid.net before authenticating the connection with your SendGrid username and API key.
 
-To fix this issue, you’ll want to make sure that you’ve configured your setup to connect to smtp.sendgrid.net using authentication, and that the credentials you’re using are the same credentials you use to login to the SendGrid.
+To fix this issue, you’ll want to make sure that you’ve configured your setup to connect to `smtp.sendgrid.net` using authentication, and that the credentials you’re using are your SendGrid username and a properly configured API key as the password. For more on API keys, see [API Keys]({{root_url}}/ui/account-and-settings/api-keys/)
 
-If you’re using cPanel/Exim, you’ll want to make sure it’s configured to authenticate every time it connects to smtp.sendgrid.net.
+If you’re using cPanel/Exim, you’ll want to make sure it’s configured to authenticate every time it connects to `smtp.sendgrid.net`.
 
 ## Additional Resources
 
