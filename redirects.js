@@ -5534,10 +5534,6 @@ module.exports = [
     to: '/ui/account-and-settings/how-to-set-up-link-branding/',
   },
   {
-    from: '/managing-contacts/segmenting-your-contacts/',
-    to: '/ui/managing-contacts/segmenting-your-contacts/',
-  },
-  {
     from: '/ui/account-and-settings/senders/',
     to: '/ui/sending-email/senders/',
   },
