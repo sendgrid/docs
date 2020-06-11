@@ -43,6 +43,7 @@ SMTP works by passing a JSON string with as many SMTP objects as you want to Sen
 
 ### Limitations
 
+- Ensure that you are sending just ONE header. Failure to do so, may cause unwanted consequences with inconsistent behavior. 
 - There is a hard limit of 10,000 addresses in a multiple recipient email. However, the best practice is to split up large jobs to around 1,000 recipients - this allows better processing load distribution. If you have a large number of additional substitutions or sections in the headers, it is best to split the send into even smaller groups.
 - When using the X-SMTPAPI to send to multiple recipients, you cannot use the standard SMTP protocols "TO" field to send to multiple recipients because doing so can generate duplicate messages to the addresses listed in both. For more information, see [RFC 5321](https://tools.ietf.org/html/rfc5321).
 - Ensure that the header is limited to a maximum total line length of 1,000 characters. Failure to do this can cause intermediate MTA's to split the header on non-space boundaries- this causes inserted spaces in the final email. If your email is going through another MTA before reaching SendGrid, it is likely to have an even lower setting for maximum header length and may truncate the header.
