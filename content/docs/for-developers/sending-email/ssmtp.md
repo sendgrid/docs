@@ -11,7 +11,7 @@ Adding SendGrid as a SMTP relay for ssmtp is easy. Edit **/etc/ssmtp/ssmtp.conf*
 ```
 mailhub=smtp.sendgrid.net:587
 AuthUser=sendgridusername
-AuthPass=sendgridpassword
+AuthPass=sendgridapikey
 UseSTARTTLS=YES
 ```
 
