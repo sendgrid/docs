@@ -5563,7 +5563,7 @@ module.exports = [
   },
   {
     from:
-      '/for-developers/sending-email/using-the-v2-api/',
+      '/for-developers/sending-email/using-the-v2-api',
     to:
       'https://www.twilio.com/docs/sendgrid/api/v2/using_the_web_api',
   },
