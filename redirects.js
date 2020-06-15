@@ -5561,4 +5561,10 @@ module.exports = [
     to:
       '/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/',
   },
+  {
+    from:
+      '/for-developers/sending-email/using-the-v2-api/',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/using_the_web_api',
+  },
 ];
