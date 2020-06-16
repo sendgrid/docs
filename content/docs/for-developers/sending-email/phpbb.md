@@ -14,4 +14,4 @@ phpBB supports sending email over SMTP. To have phpBB relay email through SendGr
 -   **SMTP server port** - 587
 -   **Authentication method for SMTP** - PLAIN
 -   **SMTP username** - sendgrid_username
--   **SMTP password** - sendgrid_password
+-   **SMTP api_key** - sendgrid_api_key
