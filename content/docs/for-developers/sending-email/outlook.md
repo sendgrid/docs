@@ -21,7 +21,7 @@ The following 'Change E-mail Account' window appears. This setting (in the red r
 
 ![]({{root_url}}/images/outlook_2007_3.png "IntMail_Settings")
 
-After you are finished, click  **More Settings**. The following 'Internet E-mail Settings' window appears. Click **Outgoing Server** and input the settings shown (username and password are your SendGrid credentials).
+After you are finished, click  **More Settings**. The following 'Internet E-mail Settings' window appears. Click **Outgoing Server** and input the settings shown (username and API key are your SendGrid credentials).
 
 <call-out>
 

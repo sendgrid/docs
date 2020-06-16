@@ -68,7 +68,7 @@ Thank you for registering. Please go to <a href="http://domain.com">here</a> to 
 ```
 
  Then anywhere in your controller you can do something like the following to send an email: 
-(make sure to replace your own sendgrid_username / sendgrid_password details, better to make them constant)
+(make sure to replace your own sendgrid_username / sendgrid_api_key details, better to make them constant)
 
 ``` php
 <?php
@@ -77,7 +77,7 @@ $this->Email->smtpOptions = array(
   'timeout'=>'30',
   'host' => 'smtp.sendgrid.net',
   'username'=>'sendgrid_username',
-  'password'=>'sendgrid_password',
+  'api_key'=>'sendgrid_api_key',
   'client' => 'yourdomain.com'
 );
 

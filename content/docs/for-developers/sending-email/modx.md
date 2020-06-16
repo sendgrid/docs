@@ -11,7 +11,7 @@ MODX supports sending email over SMTP. To have MODX relay email through SendGrid
 
 -   **SMTP Authentication** - Yes
 -   **SMTP Hosts** - smtp.sendgrid.net
--   **SMTP Password** - sendgrid_password (use your API key for v3 API or later)
+-   **SMTP Password** - sendgrid_api_key
 -   **SMTP Port** - 587
 -   **SMTP Connection Prefix** - tls
 -   **SMTP User** - sendgrid_username (use `apikey` for v3 API or later)

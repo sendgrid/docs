@@ -31,7 +31,7 @@ my $sendgrid = Mail::SendGrid->new(
   html => "and easy to do anywhere, even with Perl"
 );
 
-Mail::SendGrid::Transport::REST->new( username => $api_user, password => $api_key );
+Mail::SendGrid::Transport::REST->new( username => $api_user, api_key => $api_key );
 ```
 
 ## Without sendgrid-perl
@@ -100,7 +100,7 @@ $mime->attach ( Path      => $my_file_txt,
 
 # Login credentials
 my $username = 'example@example.com';
-my $password = "yourpassword";
+my $api_key = "your_api_key";
 
 # Open a connection to the SendGrid mail server
 my $smtp = Net::SMTP->new('smtp.sendgrid.net',
@@ -109,7 +109,7 @@ my $smtp = Net::SMTP->new('smtp.sendgrid.net',
                         Hello => "yourdomain.com");
 
 # Authenticate
-$smtp->auth($username, $password);
+$smtp->auth($username, $api_key);
 
 # Send the rest of the SMTP stuff to the server
 $smtp->mail($from);
