@@ -3,7 +3,7 @@ dist: trusty
 language: node_js
 branches:
   only:
-  - main
+  - master
   - develop
 node_js:
 - 12.16.*
@@ -22,7 +22,7 @@ deploy:
     on:
       repo: sendgrid/docs
       all_branches: true
-      condition: $TRAVIS_BRANCH = develop || $TRAVIS_BRANCH = main
+      condition: $TRAVIS_BRANCH = develop || $TRAVIS_BRANCH = master
   - provider: script
     script: ./travis/deploy_open_source.sh
     skip_cleanup: true
