@@ -31,7 +31,7 @@ Open your modules page, find the SMTP module, and configure it with the followin
 -   **SMTP Port** - 587
 -   **Use Encrypted Protocol** - No. If you want encryption choose "Use SSL" and set SMTP Port to 465
 -   **Username** - SendGrid Username
--   **Password** - SendGrid Password
+-   **Password** - SendGrid API Key
 
 ![]({{root_url}}/images/drupal_2.png "SMTP Module Configuration")
 
@@ -57,8 +57,8 @@ Once installed access `admin/config/system/phpmailer-smtp` to configure the modu
 -   **SMTP port** - 587
 -   **Use Secure Protocol** - TLS
 
-Under **SMTP Authentication**, set your username and password:
+Under **SMTP Authentication**, set your username and password (API key):
 
 -   **Username** - SendGrid Username
--   **Password** - SendGrid Password
+-   **Password** - SendGrid API Key
 
