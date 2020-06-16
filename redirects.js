@@ -5534,10 +5534,6 @@ module.exports = [
     to: '/ui/account-and-settings/how-to-set-up-link-branding/',
   },
   {
-    from: '/managing-contacts/segmenting-your-contacts/',
-    to: '/ui/managing-contacts/segmenting-your-contacts/',
-  },
-  {
     from: '/ui/account-and-settings/senders/',
     to: '/ui/sending-email/senders/',
   },
@@ -5564,5 +5560,11 @@ module.exports = [
       '/for-developers/sending-email/how-to-send-an-email-with-dynamic-transactional-templates',
     to:
       '/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/',
+  },
+  {
+    from:
+      '/for-developers/sending-email/using-the-v2-api',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/using_the_web_api',
   },
 ];

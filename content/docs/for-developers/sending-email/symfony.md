@@ -28,7 +28,7 @@ host: smtp.sendgrid.net
 port: 587
 encryption: ~
 username: sendgridusername
-password: sendgridpassword
+api_key: sendgrid_api_key
 ```
 
 After that you should be able to send emails. The following shows an example:
@@ -67,9 +67,9 @@ class myEmail
     
     public static function sendEmail($partials, $parameters, $mailFrom, $mailTo, $subject, $sgHeaders = null, $attachments = null)
     {
-        // verify we have username/password to send out emails - IMPORTANT
-        if (!sfconfig::has('app_sendgrid_username') or !sfconfig::has('app_sendgrid_password')) {
-            throw new sfException('SMTP username/password is required to send email out');
+        // verify we have username/api_key to send out emails - IMPORTANT
+        if (!sfconfig::has('app_sendgrid_username') or !sfconfig::has('app_sendgrid_api_key')) {
+            throw new sfException('SMTP username/api_key is required to send email out');
         }
         $text = null;
         $html = null;
@@ -91,7 +91,7 @@ class myEmail
             /*
              * Load connection for mailer
              */
-            $connection = Swift_SmtpTransport::newInstance('smtp.sendgrid.net', 465, 'ssl')->setUsername(sfconfig::get('app_sendgrid_username'))->setPassword(sfconfig::get('app_sendgrid_password'));
+            $connection = Swift_SmtpTransport::newInstance('smtp.sendgrid.net', 465, 'ssl')->setUsername(sfconfig::get('app_sendgrid_username'))->setPassword(sfconfig::get('app_sendgrid_api_key'));
             
             // setup connection/content
             $mailer  = Swift_Mailer::newInstance($connection);
@@ -144,7 +144,7 @@ class myEmail
 prod:
 sendgrid:
 username: sendgridusername
-password: sendgridpassword
+password: sendgrid_api_key
 ```
 Now can put your partials in a module such as **apps/frontend/modules/mail**. For example, to send a registration email in both text and HTML, we would have the following structure:
 

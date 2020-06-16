@@ -30,6 +30,12 @@ header_size_limit = 4096000
 relayhost = [smtp.sendgrid.net]:587
 ```
 
+<call-out>
+
+We highly recommend using an API key as your credential for any service that supports it. API keys are both more secure and easier to work with.
+
+</call-out>
+
 Now you need to specify your credentials (optionally, use `apikey` as username and an API Key as password) in the separate file **/etc/postfix/sasl_passwd** (you'll likely need to create it):
 
 ```

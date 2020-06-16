@@ -165,8 +165,6 @@ Continue reading below for examples of what PHP should be included in your wp-co
 
 You can use an API key to authenticate when integrating with the SendGrid WordPress Subscription Widget
 
-If you are using your login credentials, both your username and password will need to be set in order to retrieve credentials from variables and not from the database.
-
 You must set the Mail Send permissions to FULL ACCESS, Stats to READ ACCESS and Template Engine to READ or FULL ACCESS when creating the API Key, so you can send emails and see statistics on wordpress. For more information about API Key Permissions, click [here]({{root_url}}/ui/account-and-settings/api-keys/).
 
 ### Credentials Settings for the SendGrid WordPress Subscription Widget

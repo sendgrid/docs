@@ -96,7 +96,7 @@ Mail.defaults do
                            :port      => 587,
                            :domain    => 'sendgrid.com',
                            :user_name => 'yourSendGridUsername',
-                           :password  => 'yourSendGridPassword',
+                           :api_key  => 'yourSendGridAPIKey',
                            :authentication => 'plain',
                            :enable_starttls_auto => true }
 end

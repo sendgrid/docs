@@ -11,15 +11,15 @@ navigation:
  show: true
 ---
 
-SendGrid supports both API key and basic authentication, depending on the functionality you are using. On top of API key authentication, SendGrid offers two-factor authentication (2FA) to improve security.
+SendGrid supports both Bearer and Basic authentication, depending on the SendGrid functionality you are using. In addition to Bearer API key authentication, SendGrid offers two-factor authentication (2FA) to improve security.
 
 ## API key (recommended)
 
-Authenticate to the SendGrid API by creating an API Key in the Settings section of the SendGrid UI.
+Authenticate to the SendGrid API by creating an API Key in the [Settings section of the SendGrid UI](https://app.sendgrid.com/settings/api_keys).
 
-SendGrid recommends API Keys because they are a secure way to talk to the SendGrid API that is separate from your username and password. If your API key gets compromised in any way, it is easy to delete and create a new one and update your environment variables with the new key. An API key permissions can be set to provide access to different functions of your account, without providing full access to your account as a whole.
+SendGrid recommends using API Keys as Bearer tokens whenever possible because they are a secure way to talk to the SendGrid API that is separate from your username and password. If your API key gets compromised, it's easy to delete and create a new API key and update your environment variables with the new key. API key permissions can be set to provide access to different functions of your account, without providing access to your account as a whole.
 
-To use the API Key, have a header with a key Authorization and a value of `Bearer <Your-API-Key-Here>`, where you replace `<Your-API-Key-Here>` with the API Key that you created in the UI.
+To use an API Key, pass an Authorization header with a value of `Bearer <Your-API-Key-Here>`, where you replace `<Your-API-Key-Here>` with the API Key that you created in the UI.
 
 <call-out>
 
@@ -31,24 +31,30 @@ Example header:
 
 ```
 GET https://api.sendgrid.com/v3/resource HTTP/1.1
-Authorization: Bearer Your.API.Key-HERE
+Authorization: Bearer <Your-API-Key-Here>
 ```
 
 ``` bash
-curl -X "GET" "https://api.sendgrid.com/v3/templates" -H "Authorization: Bearer Your.API.Key-HERE" -H "Content-Type: application/json"
+curl -X "GET" "https://api.sendgrid.com/v3/templates" -H "Authorization: Bearer <Your-API-Key-Here>" -H "Content-Type: application/json"
 ```
 
 ## Basic authentication
 
-SendGrid does not recommend using basic authentication because it is inherently less secure than API Key authentication and does not allow the usage of Two-Factor Authentication. However, if you are using our legacy v2 API, you have to use basic authentication to connect.
+SendGrid does not recommend using your account username and password to authenticate with our APIs because it is inherently less secure than using an API Key to authenticate. Additionally, using your account password via Basic auth does not allow the usage of Two-Factor Authentication.
 
-### Security with basic authentication
+<call-out>
 
-Using basic authentication is not as secure as using an API key because it uses your username and password credentials, allowing full access to your account. So, if your credentials get compromised, (like if you accidentally commit them to GitHub), it is more difficult to regain the security of your account.
+Our legacy v2 API supports Basic authentication only. When using the v2 Mail Send API, you may use an API key as the _password_ value when authenticating via Basic authentication, which is recommended.
+
+</call-out>
+
+### Security with Basic authentication
+
+Using basic authentication with your account password is not as secure as using an API key. If your credentials are compromised—for example, if you accidentally commit them to version control—it is more difficult to regain the security of your account when those credentials are your username and password rather than an API key.
 
 <call-out type="warning">
 
-If you are currently using basic authentication, we recommend upgrading your authentication method to [API Keys]({{root_url}}/ui/account-and-settings/api-keys/) and then enabling Two-Factor Authentication for improved security.
+If you are currently using Basic authentication, we recommend upgrading your authentication method to Bearer using [API Keys]({{root_url}}/ui/account-and-settings/api-keys/) and then enabling Two-Factor Authentication for improved security.
 
 </call-out>
 
@@ -61,4 +67,3 @@ SendGrid recommends enabling two-factor authentication (2FA) for all users. For 
 <call-out type="warning">
 
 It is not possible to use basic authentication for users, subusers, or teammates that enable 2FA.
-
