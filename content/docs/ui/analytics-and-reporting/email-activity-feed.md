@@ -85,7 +85,7 @@ The Email Activity Feed allows you to view specific information about messages s
   </tr>
   <tr>
     <td>Blocks</td>
-    <td>When your IP address has been blacklisted or blocked by an ISP or messaging organization. Blocks are less severe than bounces and do not result in permanent suppressions: subsequent sends to blocked email addresses are not automatically suppressed.</td>
+    <td>When your IP address has been blocked by an ISP or messaging organization. Blocks are less severe than bounces and do not result in permanent suppressions: subsequent sends to blocked email addresses are not automatically suppressed.</td>
   </tr>
   <tr>
     <td>Spam Reports</td>

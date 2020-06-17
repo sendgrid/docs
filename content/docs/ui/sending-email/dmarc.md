@@ -77,7 +77,7 @@ The record explained:
 
 **p=quarantine;** - Policy - Tell receiver to QUARANTINE unqualified mail, which generally means “send this directly to the spam folder”.
 
-**rua=[mailto:dmarc.rua@customdomain.com](mailto:postmaster@whitelabeldomain.com);** Reporting URI of aggregate reports - Send aggregate reports to [dmarc.rua@customdomain.com](mailto:postmaster@whitelabeldomain.com). Set this to an email address you control that is closely monitored.
+**rua=[mailto:dmarc.rua@customdomain.com](mailto:postmaster@authenticateddomain.com);** Reporting URI of aggregate reports - Send aggregate reports to [dmarc.rua@customdomain.com](mailto:postmaster@authenticateddomain.com). Set this to an email address you control that is closely monitored.
 
 <call-out>
 

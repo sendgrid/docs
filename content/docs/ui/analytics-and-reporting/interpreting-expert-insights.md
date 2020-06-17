@@ -319,7 +319,7 @@ In the **Is your Email Volume Impacting Deliverability** chart, we show you how 
 ![]({{root_url}}/img/emailvolumechart-expertinsights.png)
 ##  Delivered Section
 
-This section analyzes the factors that contribute to your sender reputation. Typically, an email is not delivered to a recipient’s inbox because it is either bounced or blocked by the mailbox service provider. High bounce rates are commonly caused by misspelled or nonexistent email addresses. High block rates occur when the recipient email address is valid but something else about this message caused the message to be undeliverable, which can be as simple as a mailbox being full or more urgent like being blacklisted.
+This section analyzes the factors that contribute to your sender reputation. Typically, an email is not delivered to a recipient’s inbox because it is either bounced or blocked by the mailbox service provider. High bounce rates are commonly caused by misspelled or nonexistent email addresses. High block rates occur when the recipient email address is valid but something else about this message caused the message to be undeliverable, which can be as simple as a mailbox being full or more urgent like being added to a deny list.
 
 In the **IP Health by Delivered Rate** chart, we determine your IP health based on numerous backend metrics and health indicators.
 
