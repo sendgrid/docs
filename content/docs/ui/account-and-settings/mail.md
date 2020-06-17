@@ -15,13 +15,13 @@ Mail Settings allow you to tell SendGrid specific things to do to every email th
 
 ## Address Whitelist
 
-The Address Whitelist setting whitelists a specified email address or domain for which mail should never be suppressed. For example, you own the domain “example.com,” and one or more of your recipients use email@example.com addresses, by placing example.com in the Address Whitelist setting, all bounces, blocks, and unsubscribes logged for that domain will be ignored and sent as if under normal sending conditions.
+The Address Whitelist setting allows a specified email address or domain for which mail should never be suppressed. For example, you own the domain “example.com,” and one or more of your recipients use email@example.com addresses, by placing example.com in the Address Whitelist setting, all bounces, blocks, and unsubscribes logged for that domain will be ignored and sent as if under normal sending conditions.
 
 **Settings**
 
 - Status - On or Off
 
-- Emails/Domains - Either a single email or the domain, for which all emails belonging to this domain will be whitelisted.
+- Emails/Domains - Either a single email or the domain, for which all emails belonging to this domain will be allowed.
 
 ## BCC
 
