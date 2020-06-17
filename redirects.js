@@ -5562,9 +5562,27 @@ module.exports = [
       '/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/',
   },
   {
-    from:
-      '/for-developers/sending-email/using-the-v2-api',
-    to:
-      'https://www.twilio.com/docs/sendgrid/api/v2/using_the_web_api',
+    from: '/for-developers/sending-email/using-the-v2-api',
+    to: 'https://www.twilio.com/docs/sendgrid/api/v2/using_the_web_api',
+  },
+  {
+    from: '/glossary/blacklists/',
+    to: 'glossary/deny-list/',
+  },
+  {
+    from: 'glossary/whitelist/',
+    to: 'glossary/allow-list/',
+  },
+  {
+    from: '/ui/sending-email/blacklists/',
+    to: '/ui/sending-email/deny-lists/',
+  },
+  {
+    from: '/glossary/white-hat-sender/',
+    to: '/glossary/trusted-sender/',
+  },
+  {
+    from: 'glossary/black-hat-sender/',
+    to: '/glossary/suspicious-sender/',
   },
 ];

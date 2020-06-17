@@ -229,7 +229,7 @@ via `_plugins/jekyll_asset_pipeline.rb`.
    $ git pull upstream <dev-branch>
    ```
 
-3. Create a new topic branch (off the main project development branch) to
+3. Create a new topic branch (off the project development branch) to
    contain your feature, change, or fix:
 
    ```bash
@@ -249,7 +249,7 @@ via `_plugins/jekyll_asset_pipeline.rb`.
 5. Locally merge (or rebase) the upstream development branch into your topic branch:
 
    ```bash
-   $ git pull [--rebase] upstream master
+   $ git pull [--rebase] upstream main
    ```
 
 6. Push your topic branch up to your fork:

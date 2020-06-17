@@ -12,7 +12,7 @@ This is a Gatsby site.
 
 The develop branch is merged to production weekly (unless we need to do a release sooner than that).
 
-The master branch is continuously deployed to production.
+The main branch is continuously deployed to production.
 
 - **_Please_, feel free to make any contributions you feel will make SendGrid Documentation better.**
 - **Submit all pull requests to the develop branch**

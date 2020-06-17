@@ -14,7 +14,7 @@ Once logged in to your account, on the left side of your [SendGrid.com](https://
 
 ![Reputation Monitoring]({{root_url}}/images/Screen_Shot_2015-05-20_at_3.32.24_PM.png "Reputation indicator")
 
-It is important to monitor your global statistics on a daily basis to make sure you keep your IP reputation score high to avoid getting on [blacklists]({{root_url}}/glossary/blacklists/).
+It is important to monitor your global statistics on a daily basis to make sure you keep your IP reputation score high to avoid getting on [deny list]({{root_url}}/glossary/deny-list/).
 
 <call-out>
 

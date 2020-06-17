@@ -56,15 +56,15 @@ Click on the domain to navigate to its detail page. You should see a Settings se
 
 ![Sign in with Apple Tooltip]({{root_url}}/img/sign-in-apple-sender-auth-tooltip.png 'Sign in with Apple Tooltip')
 
-Click “Show Address” to reveal a whitelisted address that you can provide to Apple. This address should be the word “bounces,” a `+` symbol, your account number, the `@` symbol, and your authenticated domain. For example, your address may look like this: `bounces+12345678@email.example.com`. Copy the address from the information modal on the Sender Authentication page.
+Click “Show Address” to reveal an allowed address that you can provide to Apple. This address should be the word “bounces,” a `+` symbol, your account number, the `@` symbol, and your authenticated domain. For example, your address may look like this: `bounces+12345678@email.example.com`. Copy the address from the information modal on the Sender Authentication page.
 
-![Whitelisted email address]({{root_url}}/img/sign-in-apple-sender-auth-info-modal.png 'Whitelisted email address')
+![Allowed email address]({{root_url}}/img/sign-in-apple-sender-auth-info-modal.png 'Allowed email address')
 
 ### Configuring your Apple Developer Account
 
 Log in to your Apple Developer account, and navigate to the [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources) section of your developer resources. Click on "Configure Sign in with Apple."
 
-In the section labeled “Individual Email Addresses,” paste the whitelisted address you copied from SendGrid earlier, and click “Register.” You should immediately see a green checkmark next to the email address. If you see an error, ensure that you completed domain authentication on the [SendGrid Sender Authentication page](https://app.sendgrid.com/settings/sender_auth).
+In the section labeled “Individual Email Addresses,” paste the allowed address you copied from SendGrid earlier, and click “Register.” You should immediately see a green checkmark next to the email address. If you see an error, ensure that you completed domain authentication on the [SendGrid Sender Authentication page](https://app.sendgrid.com/settings/sender_auth).
 
 You should now be set to send messages to Apple's private relay addresses.
 
@@ -76,7 +76,7 @@ If you are sending to Apple relay addresses from a sub user account, you must ad
 
 ## Alternative Configuration
 
-Apple limits the number of addresses you can whitelist in the Apple Developer portal to [a total of thirty-two](https://help.apple.com/developer-account/?lang=en#/devf822fb8fc). If you have more than thirty-two verified domains, you will need to configure each of the addresses following the steps below.
+Apple limits the number of addresses you can allow in the Apple Developer portal to [a total of thirty-two](https://help.apple.com/developer-account/?lang=en#/devf822fb8fc). If you have more than thirty-two verified domains, you will need to configure each of the addresses following the steps below.
 
 <call-out type="warning">
 
