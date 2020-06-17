@@ -45,7 +45,7 @@ Note that you can also set up link branding when you set up your domain authenti
 
 *To set up and verify link branding:*
 
-1. In the SendGrid UI, select [Settings > Sender Authentication](https://app.sendgrid.com/settings/whitelabel).
+1. In the SendGrid UI, select [Settings > Sender Authentication](https://app.sendgrid.com/settings/sender_auth).
 2. In the link branding section, click **Get Started**.
 3. Next, add in information about your DNS host. Click **Next**.
 4. Enter the domain that you want to brand the links and images with and add advanced settings. Make sure that you only enter the name of your root domain. Do not include `www` or `http://www` in this field. Your domain needs to match the domain of your from address on the emails you are sending out. For example, if I am branding with the domain `example.sendgrid.com`, I would set my link branding domain to be `sendgrid.com`. Click **Next**. For more information about advanced settings, see [Advanced settings](#advanced-settings).
@@ -97,7 +97,7 @@ When you are in the process of branding a link, and on the screen where you inpu
 
  ### 	Assigning a subuser
 
-By assigning a domain whitelabel to one of your subusers, you can give them the benefit of improved authentication and security, but also separate from the sending reputation of your parent account. If you assign a subusers domain, they can't edit or delete it.
+By assigning an authenticated domain to one of your subusers, you can give them the benefit of improved authentication and security, but also separate from the sending reputation of your parent account. If you assign a subusers domain, they can't edit or delete it.
 
 *To assign an authenticated domain to a subuser:*
 
@@ -105,7 +105,7 @@ When you are in the process of authenticating a domain, and on the screen where 
 
 ## 	Migrating from legacy Whitelabel
 
-If you set up a whitelabel before 2015, your whitelabel will still work. However, if you need to change or update it, you need to delete it and recreate it as an authenticated domain in our new system. If you do set up a new branded link, make sure to keep the same subdomain for domain authentication, but then use a different one for link branding.
+If you authenticated a domain (whitelabel) before 2015, your domain will still work. However, if you need to change or update it, you need to delete it and recreate it as an authenticated domain in our new system. If you do set up a new branded link, make sure to keep the same subdomain for domain authentication, but then use a different one for link branding.
 
 If you set up a whitelabel after 2015, it has been automatically migrated to our new sender authentication system.
 

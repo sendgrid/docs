@@ -1,7 +1,7 @@
 ---
 seo:
   title: Blocks
-  description: Blocked emails happen when your IP address has been added to a blacklist or has been blocked by an ISP or messaging organization.
+  description: Blocked emails happen when your IP address has been added to a deny list or has been blocked by an ISP or messaging organization.
   keywords: blocks, undelivered email
 title: Blocks
 weight: 0
@@ -10,7 +10,7 @@ navigation:
   show: false
 ---
 
-Blocked messages appear under Email Reports under Blocks. When your IP address has been added to a blacklist, or has been blocked by an ISP or messaging organization, the affected email shows up on this list. Typically it is possible to have your IP address removed from a block list, and some lists automatically do this after a period of time.
+Blocked messages appear under Email Reports under Blocks. When your IP address has been added to a deny list, or has been blocked by an ISP or messaging organization, the affected email shows up on this list. Typically it is possible to have your IP address removed from a block list, and some lists automatically do this after a period of time.
 
 Blocks are less permanent than Bounces. This is a list of refused messages that were either blocked by an ISP or deferred longer than 72 hours. In addition, SendGrid does not treat the blocks list as a suppression list - subsequent sends to emails on this list will be sent like normal.
 

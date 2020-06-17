@@ -164,5 +164,5 @@ If you would like to see how your subusers are performing in comparison to each 
 
 ##     Additional Resources
 
-- [Assigning a Domain Whitelabel to a subuser]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/#assigning-a-subuser)
+- [Assigning an Authenticated Domain to a subuser]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/#assigning-a-subuser)
 - [Teammates]({{root_url}}/ui/account-and-settings/teammates/)

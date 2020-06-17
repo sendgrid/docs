@@ -135,9 +135,9 @@ _To assign an authenticated domain to a subuser:_
 
 When you are in the process of authenticating a domain, and on the screen where you input domain settings, open the advanced settings, select **Assign to a subuser**, and select a subuser to assign to that domain.
 
-## Migrating from legacy Whitelabel
+## Migrating from legacy Domain Authentication (Whitelabel)
 
-If you set up a whitelabel before 2015, your whitelabel will still work. However, if you need to change or update it, you need to delete it and recreate it as an authenticated domain in our new system.
+If you authenticated a domain (whitelabel) before 2015, your domain will still work. However, if you need to change or update it, you need to delete it and recreate it as an authenticated domain in our new system.
 
 If you set up a whitelabel after 2015, it has been automatically migrated to our new domain authentication system.
 
