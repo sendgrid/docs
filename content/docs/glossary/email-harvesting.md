@@ -2,7 +2,7 @@
 seo:
   title: Email Harvesting
   description: Email harvesting is the process of obtaining lists, either by purchase or theft, of valid email addresses for the purpose of sending bulk email or spam
-  keywords: email harvesting, spam, email lists, black hat email practices
+  keywords: email harvesting, spam, email lists, malicious email practices
 title: Email Harvesting
 weight: 0
 layout: page

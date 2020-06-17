@@ -2,7 +2,7 @@
 seo:
   title: Segmentation
   description: The practice of separating different types of email traffic.
-  keywords: segmentation, email traffic, whitelabel, IP pooling
+  keywords: segmentation, email traffic, sender verification, IP pooling
 title: Segmentation
 weight: 0
 layout: page

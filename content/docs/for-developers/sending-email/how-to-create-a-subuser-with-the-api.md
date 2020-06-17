@@ -73,7 +73,7 @@ When defining this call's 'set' parameter, you have a few options for appending 
 
 After you have created the subuser account and have appended an IP address, you are now ready to assign an _existing_  [authenticated domain]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/) to the account. If you have not yet created the required records for authenticating your chosen domain then this step should be skipped.
 
-First, you should find out what authenticated domains you have associated with your account. This call will [list your available authenticated domains](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/whitelabel.html#list):
+First, you should find out what authenticated domains you have associated with your account. This call will [list your available authenticated domains](https://www.twilio.com/docs/sendgrid/api/v2/customer_subuser_api/whitelabel#list):
 
 #### Call Example
 
@@ -88,12 +88,12 @@ https://api.sendgrid.com/apiv2/customer.whitelabel.json?api\_user=ryan.burrer@se
 
 The API response above shows that email.sendgrid.com and email.example.com are both already established domain entries, and can be used by this subuser. If none are displayed then the next step in this process should be skipped.
 
-If you have an authenticated domain entry that you wish to apply to your subuser then you will need to [append the whitelabel entry](http://sendgrid.com/docs/API_Reference/Customer_Subuser_API/whitelabel.html#append) to your subuser:
+If you have an authenticated domain entry that you wish to apply to your subuser then you will need to [append the authenticated domain entry](https://www.twilio.com/docs/sendgrid/api/v2/customer_subuser_api/whitelabel) to your subuser:
 
 #### Call Example
 
 ```
-https://api.sendgrid.com/apiv2/customer.whitelabel.json?api_user=ryan.burrer@sendgrid.com&api_key=xxxxxx&task=append&user=newsubuser_username&mail_domain=YOUR.ALREADY.EXISTING.WHITELABEL
+https://api.sendgrid.com/apiv2/customer.whitelabel.json?api_user=ryan.burrer@sendgrid.com&api_key=xxxxxx&task=append&user=newsubuser_username&mail_domain=YOUR.ALREADY.EXISTING.AUTHENTICATED_DOMAIN
 ```
 <center>
 <strong>Success Message</strong>
