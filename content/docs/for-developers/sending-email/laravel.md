@@ -120,7 +120,7 @@ Now that we have our Mailable Class created, all we need to do is run this code:
 
 ## Adding a category or custom field
 
-Categories in SendGrid allow you to split your statistics into sections. For example, if you have a Whitelabeled service, you can split your statistics by the user login.
+Categories in SendGrid allow you to split your statistics into sections.
 
 Another useful tool is event notifications. If you want to complete the feedback loop for your product you can pass identifiers as a header which relate to a record in your database which you can then parse the notifications against that record to track deliveries/opens/clicks/bounces.
 

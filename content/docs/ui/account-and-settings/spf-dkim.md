@@ -2,7 +2,7 @@
 seo:
   title: Internet Standards (SPF and DKIM) and Deliverability
   description: Internet Standards (SPF and DKIM) and Deliverability
-  keywords: spf, dkim, white, label, whitelabel, standards, 10, dns
+  keywords: spf, dkim, trusted, sender verification, standards, 10, dns
 title: Internet Standards (SPF and DKIM) and Deliverability
 weight: 0
 group: sender-authentication

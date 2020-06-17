@@ -2,7 +2,7 @@
 seo:
   title: Everything about DMARC
   description: Everything about DMARC
-  keywords: security, secure, dmarc, spf, dkim, white, label, whitelabel, wizard, rua, reject, quarantine
+  keywords: security, secure, dmarc, spf, dkim, sender verification, wizard, rua, reject, quarantine
 title: Everything about DMARC
 group: delivery-optimization
 weight: 0
