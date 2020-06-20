@@ -61,24 +61,16 @@ $ /etc/init.d/exim4 restart
 
 ## 	cPanel
  	
-If you are using cPanel with Exim and want to relay your email through SendGrid, go to **Main \> Service Configuration \> Exim Configuration Editor**, click on the Advanced Editor button, and enter the following in the **AUTH** Box:
+If you are using cPanel with Exim and want to relay your email through SendGrid, go to **Main \> Service Configuration \> Exim Configuration Editor**, click on the Advanced Editor button, and add the following after any content in the **Section: AUTH** Box:
 
 ```bash
-begin authenticators
-
 sendgrid_login:
   driver = plaintext
   public_name = LOGIN
   client_send = : YourSendGridUsername : YourSendGridPassword
 ```
 
-<call-out>
-
-Only include "begin authenticators" if it's not already in the configuration.
-
-</call-out>
-
-Add a route in the **Router Configuration** Box:
+Add a route in the **Section: PREROUTERS** Box:
 
 ```bash
 send_via_sendgrid:
@@ -90,7 +82,7 @@ send_via_sendgrid:
   no_more
 ```
 
-Add a transport to the **Transport Configuration** Box:
+Add a transport to the **Section: TRANSPORTSTART** Box:
 
 ```bash
 sendgrid_smtp:
@@ -103,7 +95,7 @@ sendgrid_smtp:
 Once you have completed and saved all changes to Exim's configuration files, you will need to restart it to activate those changes:
 
 ```bash
-$ /usr/local/cpanel/scripts/restartsrv_exim
+$ /scripts/restartsrv_exim
 ```
 
 ## 	Exim Documentation
