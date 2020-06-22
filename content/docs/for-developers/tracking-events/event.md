@@ -11,20 +11,11 @@ navigation:
   show: true
 ---
 
-## Authentication
+## Security Features
 
-In order to use the Event Webhook, you need to enter a username and password. The following characters can be used for webhook authentication.
+We recommend securing the Event Webhook data using our Signed Event Webhook, OAuth 2.0, or both. For more information about Event Webhook security, see [Getting Started with the Event Webhook Security Features]({{root_url}}/for-developers/tracking-events/getting-started-event-webhook-security-features/).
 
-<call-out type="warning">
-
-Characters not on the list below are not supported and will not authenticate to our webhook.
-
-</call-out>
-
-- **All lower case letters:** a b c d e f g h i j k l m n o p q r s t u v w x y z
-- **All upper case letters:** A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-- **All digits:** 0 1 2 3 4 5 6 7 8 9
-- **The following characters:** - . \_ : ~ ! \$ & ' ( ) \* + , ; = % @
+Security features are not required for setup, but they are highly recommended for any use of the Event Webhook beyond initial testing.
 
 <call-out type="warning">
 
