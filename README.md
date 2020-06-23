@@ -15,6 +15,7 @@ The develop branch is merged to production weekly (unless we need to do a releas
 The main branch is continuously deployed to production.
 
 - **_Please_, feel free to make any contributions you feel will make SendGrid Documentation better.**
+  - **Familiarize yourself with our [Styleguide](styleguide.md)**
 - **Submit all pull requests to the develop branch**
 
 - **All third party contributors acknowledge that any contributions they provide will be made under the same open source license that the open source project is provided under.**

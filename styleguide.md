@@ -201,12 +201,19 @@ Your text here
 ```
 
 ```
-<call-out>
+<call-out type="beta">
 
 Your text here
 
 </call-out>
+```
 
+```
+<call-out>
+
+Your text here
+
+</call-out> 
 ```
 
 <a name="screenshots"></a>
