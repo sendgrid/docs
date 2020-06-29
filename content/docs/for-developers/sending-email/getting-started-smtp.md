@@ -60,7 +60,7 @@ If you receive this error: `'telnet' is not recognized as an internal or externa
     <br>The mail server responds with `235 Authentication successful`. Getting this far indicates that your connection to smtp.sendgrid.net over the chosen port is open and that your API key is valid.
 1. Next, add the email that you’re sending from: `mail from:<<SENDER_EMAIL>>`.
     <br>The mail server responds with `250 Sender address accepted`.
-1. Add the email that you’re sending to: `rcpt to:<<RECIEPIENT_ADDRESS>>`.
+1. Add the email that you’re sending to: `rcpt to:<<RECIPIENT_ADDRESS>>`.
     <br>The mail server responds with `250 Recipient address accepted`.
 1. On the next line, type `DATA` - this indicates that you’re typing the email content.
 1. Optionally, add a mail-to header to add the name and email address of the recipient to the email header:
