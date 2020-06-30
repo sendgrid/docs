@@ -95,7 +95,7 @@ ActionMailer::Base.smtp_settings = {
   :api_key => 'your_sendgrid_api_key',
   :domain => 'yourdomain.com',
   :address => 'smtp.sendgrid.net',
-  :port => 465,
+  :port => 587,
   :authentication => :plain,
   :enable_starttls_auto => true
 }
