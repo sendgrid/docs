@@ -31,7 +31,7 @@ We do not support full Handlebars.js functionality. Currently, dynamic templates
   - [Conditional statements](#conditional-statements) (including `if/else` and `unless`)
   - [Iterations](#iterations)
 
-For a full helper reference, with examples, see the [Handlebar.js reference](#handlebar.js-reference). This page has use cases with examples that include the supported helpers.
+For a full helper reference, with examples, see the [Handlebar.js reference](#handlebarjs-reference). This page has use cases with examples that include the supported helpers.
 
 ## 	Use cases
 

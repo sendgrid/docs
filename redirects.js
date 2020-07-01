@@ -1,14 +1,16 @@
 module.exports = [
   {
-    from: '/User_Guide/Transactional_Templates/how_to_send_an_email_with_transactional_templates.html',
-    to: '/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/',
+    from:
+      '/User_Guide/Transactional_Templates/how_to_send_an_email_with_transactional_templates.html',
+    to:
+      '/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/',
   },
   {
     from: '/Integrate/Partners/account-migration.html',
     to: '/for-developers/partners/account-migration/',
   },
   {
-    from: '/docs/API_Reference/SMTP_API/',
+    from: '/API_Reference/SMTP_API/',
     to: '/for-developers/sending-email/getting-started-smtp/',
   },
   {
@@ -21,11 +23,14 @@ module.exports = [
   },
   {
     from: '/API_Reference/Customer_Subuser_API/event_notification_url.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Customer_Subuser_API/v1_(deprecated)/event_notification_url.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Customer_Subuser_API/v1_(deprecated)/event_notification_url.html',
   },
   {
-    from: '/API_Reference/Customer_Subuser_API/v1_(deprecated)/automatic_login.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Customer_Subuser_API/v1_(deprecated)/index.html',
+    from:
+      '/API_Reference/Customer_Subuser_API/v1_(deprecated)/automatic_login.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Customer_Subuser_API/v1_(deprecated)/index.html',
   },
   {
     from: '/API_Reference/Web_API/Customer_Subuser_API/multi_cred.html',
@@ -33,39 +38,48 @@ module.exports = [
   },
   {
     from: '/API_Reference/Marketing_Emails_API/categories.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/categories.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/categories.html',
   },
   {
     from: '/API_Reference/Marketing_Emails_API/emails.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/emails.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/emails.html',
   },
   {
     from: '/API_Reference/Marketing_Emails_API/lists.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/lists.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/lists.html',
   },
   {
     from: '/API_Reference/Marketing_Emails_API/index.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/index.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/index.html',
   },
   {
     from: '/API_Reference/Marketing_Emails_API/newsletters.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/newsletters.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/newsletters.html',
   },
   {
     from: '/API_Reference/Marketing_Emails_API/recipients.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/recipients.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/recipients.html',
   },
   {
     from: '/API_Reference/Marketing_Emails_API/schedule.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/schedule.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/schedule.html',
   },
   {
     from: '/API_Reference/Marketing_Emails_API/sender_address.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/sender_address.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/sender_address.html',
   },
   {
     from: '/API_Reference/Marketing_Emails_API/variations.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/variations.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/variations.html',
   },
   {
     from: '/API_Reference/Customer_Subuser_API/account_limits.html',
@@ -77,7 +91,8 @@ module.exports = [
   },
   {
     from: '/API_Reference/Customer_Subuser_API/authenticate_a_subuser.html',
-    to: '/API_Reference/Web_API/Customer_Subuser_API/authenticate_a_subuser.html',
+    to:
+      '/API_Reference/Web_API/Customer_Subuser_API/authenticate_a_subuser.html',
   },
   {
     from: '/API_Reference/Customer_Subuser_API/index.html',
@@ -120,28 +135,39 @@ module.exports = [
     to: '/API_Reference/Web_API/Customer_Subuser_API/subusers.html',
   },
   {
-    from: '/API_Reference/Customer_Subuser_API/v1_(deprecated)/event_notification_url.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Customer_Subuser_API/v1_(deprecated)/event_notification_url.html',
+    from:
+      '/API_Reference/Customer_Subuser_API/v1_(deprecated)/event_notification_url.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Customer_Subuser_API/v1_(deprecated)/event_notification_url.html',
   },
   {
     from: '/API_Reference/Customer_Subuser_API/v1_(deprecated)/index.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Customer_Subuser_API/v1_(deprecated)/index.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Customer_Subuser_API/v1_(deprecated)/index.html',
   },
   {
-    from: '/API_Reference/Customer_Subuser_API/v1_(deprecated)/invalid_emails.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Customer_Subuser_API/v1_(deprecated)/invalid_emails.html',
+    from:
+      '/API_Reference/Customer_Subuser_API/v1_(deprecated)/invalid_emails.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Customer_Subuser_API/v1_(deprecated)/invalid_emails.html',
   },
   {
-    from: '/API_Reference/Customer_Subuser_API/v1_(deprecated)/subuser_bounces.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Customer_Subuser_API/v1_(deprecated)/subuser_bounces.html',
+    from:
+      '/API_Reference/Customer_Subuser_API/v1_(deprecated)/subuser_bounces.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Customer_Subuser_API/v1_(deprecated)/subuser_bounces.html',
   },
   {
-    from: '/API_Reference/Customer_Subuser_API/v1_(deprecated)/subuser_spam_reports.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Customer_Subuser_API/v1_(deprecated)/subuser_spam_reports.html',
+    from:
+      '/API_Reference/Customer_Subuser_API/v1_(deprecated)/subuser_spam_reports.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Customer_Subuser_API/v1_(deprecated)/subuser_spam_reports.html',
   },
   {
-    from: '/API_Reference/Customer_Subuser_API/v1_(deprecated)/subuser_unsubscribes.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Customer_Subuser_API/v1_(deprecated)/subuser_unsubscribes.html',
+    from:
+      '/API_Reference/Customer_Subuser_API/v1_(deprecated)/subuser_unsubscribes.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Customer_Subuser_API/v1_(deprecated)/subuser_unsubscribes.html',
   },
   {
     from: '/API_Reference/Customer_Subuser_API/whitelabel.html',
@@ -157,7 +183,8 @@ module.exports = [
   },
   {
     from: '/API_Reference/Reseller_API/authenticate_a_customer_subuser.html',
-    to: '/API_Reference/Web_API/Reseller_API/authenticate_a_customer_subuser.html',
+    to:
+      '/API_Reference/Web_API/Reseller_API/authenticate_a_customer_subuser.html',
   },
   {
     from: '/API_Reference/Reseller_API/authenticate_a_customer.html',
@@ -169,11 +196,14 @@ module.exports = [
   },
   {
     from: '/API_Reference/Reseller_API/billing_retrieving_as_you_go_usage.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/billing_retrieving_as_you_go_usage.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/billing_retrieving_as_you_go_usage.html',
   },
   {
-    from: '/API_Reference/Reseller_API/billing_retrieving_end_users_invoices_usage.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/billing_retrieving_end_users_invoices_usage.html',
+    from:
+      '/API_Reference/Reseller_API/billing_retrieving_end_users_invoices_usage.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/billing_retrieving_end_users_invoices_usage.html',
   },
   {
     from: '/API_Reference/Reseller_API/customer_account_limits.html',
@@ -201,51 +231,65 @@ module.exports = [
   },
   {
     from: '/API_Reference/Reseller_API/customer_subuser_account_limits.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_account_limits.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_account_limits.html',
   },
   {
     from: '/API_Reference/Reseller_API/customer_subuser_apps.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_apps_filters.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_apps_filters.html',
   },
   {
     from: '/API_Reference/Reseller_API/customer_subuser_automatic_login.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/index.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/index.html',
   },
   {
     from: '/API_Reference/Reseller_API/customer_subuser_bounces.html',
-    to: '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_bounces.html',
+    to:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_bounces.html',
   },
   {
-    from: '/API_Reference/Reseller_API/customer_subuser_event_notification_url.html',
-    to: '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_event_notification_url.html',
+    from:
+      '/API_Reference/Reseller_API/customer_subuser_event_notification_url.html',
+    to:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_event_notification_url.html',
   },
   {
     from: '/API_Reference/Reseller_API/customer_subuser_invalid_emails.html',
-    to: '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_invalid_emails.html',
+    to:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_invalid_emails.html',
   },
   {
-    from: '/API_Reference/Reseller_API/customer_subuser_monitor_outgoing_email.html',
-    to: '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_monitor_outgoing_email.html',
+    from:
+      '/API_Reference/Reseller_API/customer_subuser_monitor_outgoing_email.html',
+    to:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_monitor_outgoing_email.html',
   },
   {
     from: '/API_Reference/Reseller_API/customer_subuser_parse_settings.html',
-    to: '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_parse_settings.html',
+    to:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_parse_settings.html',
   },
   {
     from: '/API_Reference/Reseller_API/customer_subuser_spam_reports.html',
-    to: '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_spam_reports.html',
+    to:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_spam_reports.html',
   },
   {
     from: '/API_Reference/Reseller_API/customer_subuser_statistics.html',
-    to: '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_statistics.html',
+    to:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_statistics.html',
   },
   {
     from: '/API_Reference/Reseller_API/customer_subuser_timezone.html',
-    to: '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_timezone.html',
+    to:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_timezone.html',
   },
   {
     from: '/API_Reference/Reseller_API/customer_subuser_unsubscribes.html',
-    to: '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_unsubscribes.html',
+    to:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_unsubscribes.html',
   },
   {
     from: '/API_Reference/Reseller_API/customer_timezone.html',
@@ -288,208 +332,297 @@ module.exports = [
     to: '/API_Reference/Web_API/Reseller_API/pending_account_changes.html',
   },
   {
-    from: '/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_account_limits.html',
-    to: '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_account_limits.html',
+    from:
+      '/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_account_limits.html',
+    to:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_account_limits.html',
   },
   {
-    from: '/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_apps.html',
-    to: '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_apps.html',
+    from:
+      '/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_apps.html',
+    to:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_apps.html',
   },
   {
-    from: '/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_automatic_login.html',
-    to: '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/index.html',
+    from:
+      '/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_automatic_login.html',
+    to:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/index.html',
   },
   {
-    from: '/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_bounces.html',
-    to: '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_bounces.html',
+    from:
+      '/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_bounces.html',
+    to:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_bounces.html',
   },
   {
-    from: '/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_event_notification_url.html',
-    to: '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_event_notification_url.html',
+    from:
+      '/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_event_notification_url.html',
+    to:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_event_notification_url.html',
   },
   {
-    from: '/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_invalid_emails.html',
-    to: '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_invalid_emails.html',
+    from:
+      '/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_invalid_emails.html',
+    to:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_invalid_emails.html',
   },
   {
-    from: '/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_monitor_outgoing_email.html',
-    to: '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_monitor_outgoing_email.html',
+    from:
+      '/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_monitor_outgoing_email.html',
+    to:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_monitor_outgoing_email.html',
   },
   {
-    from: '/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_parse_settings.html',
-    to: '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_parse_settings.html',
+    from:
+      '/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_parse_settings.html',
+    to:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_parse_settings.html',
   },
   {
-    from: '/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_spam_reports.html',
-    to: '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_spam_reports.html',
+    from:
+      '/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_spam_reports.html',
+    to:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_spam_reports.html',
   },
   {
-    from: '/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_statistics.html',
-    to: '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_statistics.html',
+    from:
+      '/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_statistics.html',
+    to:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_statistics.html',
   },
   {
-    from: '/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_timezone.html',
-    to: '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_timezone.html',
+    from:
+      '/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_timezone.html',
+    to:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_timezone.html',
   },
   {
-    from: '/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_unsubscribes.html',
-    to: '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_unsubscribes.html',
+    from:
+      '/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_unsubscribes.html',
+    to:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_unsubscribes.html',
   },
   {
-    from: '/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/index.html',
-    to: '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/index',
+    from:
+      '/API_Reference/Reseller_API/Reseller_Customer_Subuser_API/index.html',
+    to:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/index',
   },
   {
     from: '/API_Reference/Reseller_API/v1_(deprecated)/account_overview.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/account_overview.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/account_overview.html',
   },
   {
     from: '/API_Reference/Reseller_API/v1_(deprecated)/apps.html',
     to: '/for-developers/sending-email/smtp-filters.html',
   },
   {
-    from: '/API_Reference/Reseller_API/v1_(deprecated)/authenticate_a_customer_subuser.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/authenticate_a_customer_subuser.html',
+    from:
+      '/API_Reference/Reseller_API/v1_(deprecated)/authenticate_a_customer_subuser.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/authenticate_a_customer_subuser.html',
   },
   {
-    from: '/API_Reference/Reseller_API/v1_(deprecated)/authenticate_a_customer.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/authenticate_a_customer.html',
+    from:
+      '/API_Reference/Reseller_API/v1_(deprecated)/authenticate_a_customer.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/authenticate_a_customer.html',
   },
   {
     from: '/API_Reference/Reseller_API/v1_(deprecated)/automatic_login.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/index.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/index.html',
   },
   {
-    from: '/API_Reference/Reseller_API/v1_(deprecated)/billing_retrieving_as_you_go_usage.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/billing_retrieving_as_you_go_usage.html',
+    from:
+      '/API_Reference/Reseller_API/v1_(deprecated)/billing_retrieving_as_you_go_usage.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/billing_retrieving_as_you_go_usage.html',
   },
   {
-    from: '/API_Reference/Reseller_API/v1_(deprecated)/billing_retrieving_end_users_invoices_usage.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/billing_retrieving_end_users_invoices_usage.html',
+    from:
+      '/API_Reference/Reseller_API/v1_(deprecated)/billing_retrieving_end_users_invoices_usage.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/billing_retrieving_end_users_invoices_usage.html',
   },
   {
     from: '/API_Reference/Reseller_API/v1_(deprecated)/billing.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/billing.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/billing.html',
   },
   {
-    from: '/API_Reference/Reseller_API/v1_(deprecated)/customer_account_limits.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_account_limits.html',
+    from:
+      '/API_Reference/Reseller_API/v1_(deprecated)/customer_account_limits.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_account_limits.html',
   },
   {
     from: '/API_Reference/Reseller_API/v1_(deprecated)/customer_bounces.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_bounces.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_bounces.html',
   },
   {
-    from: '/API_Reference/Reseller_API/v1_(deprecated)/customer_invalid_emails.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_invalid_emails.html',
+    from:
+      '/API_Reference/Reseller_API/v1_(deprecated)/customer_invalid_emails.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_invalid_emails.html',
   },
   {
-    from: '/API_Reference/Reseller_API/v1_(deprecated)/customer_management.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_management.html',
+    from:
+      '/API_Reference/Reseller_API/v1_(deprecated)/customer_management.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_management.html',
   },
   {
-    from: '/API_Reference/Reseller_API/v1_(deprecated)/customer_spam_reports.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_spam_reports.html',
+    from:
+      '/API_Reference/Reseller_API/v1_(deprecated)/customer_spam_reports.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_spam_reports.html',
   },
   {
-    from: '/API_Reference/Reseller_API/v1_(deprecated)/customer_statistics.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_statistics.html',
+    from:
+      '/API_Reference/Reseller_API/v1_(deprecated)/customer_statistics.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_statistics.html',
   },
   {
-    from: '/API_Reference/Reseller_API/v1_(deprecated)/customer_subuser_account_limits.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_account_limits.html',
+    from:
+      '/API_Reference/Reseller_API/v1_(deprecated)/customer_subuser_account_limits.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_account_limits.html',
   },
   {
-    from: '/API_Reference/Reseller_API/v1_(deprecated)/customer_subuser_apps_filters.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_apps_filters.html',
+    from:
+      '/API_Reference/Reseller_API/v1_(deprecated)/customer_subuser_apps_filters.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_apps_filters.html',
   },
   {
-    from: '/API_Reference/Reseller_API/v1_(deprecated)/customer_subuser_automatic_login.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/index.html',
+    from:
+      '/API_Reference/Reseller_API/v1_(deprecated)/customer_subuser_automatic_login.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/index.html',
   },
   {
-    from: '/API_Reference/Reseller_API/v1_(deprecated)/customer_subuser_bounces.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_bounces.html',
+    from:
+      '/API_Reference/Reseller_API/v1_(deprecated)/customer_subuser_bounces.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_bounces.html',
   },
   {
-    from: '/API_Reference/Reseller_API/v1_(deprecated)/customer_subuser_event_notification_url.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_event_notification_url.html',
+    from:
+      '/API_Reference/Reseller_API/v1_(deprecated)/customer_subuser_event_notification_url.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_event_notification_url.html',
   },
   {
-    from: '/API_Reference/Reseller_API/v1_(deprecated)/customer_subuser_invalid_emails.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_invalid_emails.html',
+    from:
+      '/API_Reference/Reseller_API/v1_(deprecated)/customer_subuser_invalid_emails.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_invalid_emails.html',
   },
   {
-    from: '/API_Reference/Reseller_API/v1_(deprecated)/customer_subuser_monitor_outgoing_email.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_monitor_outgoing_email.html',
+    from:
+      '/API_Reference/Reseller_API/v1_(deprecated)/customer_subuser_monitor_outgoing_email.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_monitor_outgoing_email.html',
   },
   {
-    from: '/API_Reference/Reseller_API/v1_(deprecated)/customer_subuser_parse_settings.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_parse_settings.html',
+    from:
+      '/API_Reference/Reseller_API/v1_(deprecated)/customer_subuser_parse_settings.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_parse_settings.html',
   },
   {
-    from: '/API_Reference/Reseller_API/v1_(deprecated)/customer_subuser_spam_reports.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_spam_reports.html',
+    from:
+      '/API_Reference/Reseller_API/v1_(deprecated)/customer_subuser_spam_reports.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_spam_reports.html',
   },
   {
-    from: '/API_Reference/Reseller_API/v1_(deprecated)/customer_subuser_statistics.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_statistics.html',
+    from:
+      '/API_Reference/Reseller_API/v1_(deprecated)/customer_subuser_statistics.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_statistics.html',
   },
   {
-    from: '/API_Reference/Reseller_API/v1_(deprecated)/customer_subuser_unsubscribes.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_unsubscribes.html',
+    from:
+      '/API_Reference/Reseller_API/v1_(deprecated)/customer_subuser_unsubscribes.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_unsubscribes.html',
   },
   {
-    from: '/API_Reference/Reseller_API/v1_(deprecated)/customer_unsubscribes.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_unsubscribes.html',
+    from:
+      '/API_Reference/Reseller_API/v1_(deprecated)/customer_unsubscribes.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_unsubscribes.html',
   },
   {
-    from: '/API_Reference/Reseller_API/v1_(deprecated)/event_notification_url.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/event_notification_url.html',
+    from:
+      '/API_Reference/Reseller_API/v1_(deprecated)/event_notification_url.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/event_notification_url.html',
   },
   {
     from: '/API_Reference/Reseller_API/v1_(deprecated)/index.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/index.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/index.html',
   },
   {
     from: '/API_Reference/Reseller_API/v1_(deprecated)/invoice_retrieval.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/invoice_retrieval.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/invoice_retrieval.html',
   },
   {
     from: '/API_Reference/Reseller_API/v1_(deprecated)/ip_management.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/ip_management.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/ip_management.html',
   },
   {
     from: '/API_Reference/Reseller_API/v1_(deprecated)/monitor_records.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/monitor_records.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/monitor_records.html',
   },
   {
     from: '/API_Reference/Reseller_API/v1_(deprecated)/parse_settings.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/parse_settings.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/parse_settings.html',
   },
   {
-    from: '/API_Reference/Reseller_API/v1_(deprecated)/pending_account_changes.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/pending_account_changes.html',
+    from:
+      '/API_Reference/Reseller_API/v1_(deprecated)/pending_account_changes.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/pending_account_changes.html',
   },
   {
-    from: '/API_Reference/Reseller_API/v1_(deprecated)/view_available_packages.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/view_available_packages.html',
+    from:
+      '/API_Reference/Reseller_API/v1_(deprecated)/view_available_packages.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/view_available_packages.html',
   },
   {
     from: '/API_Reference/Reseller_API/v1_(deprecated)/whitelabel.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/whitelabel.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/whitelabel.html',
   },
   {
-    from: '/API_Reference/Reseller_API/v2_(deprecated)/billing_retrieving_as_you_go_usage.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v2_(deprecated)/billing_retrieving_as_you_go_usage.html',
+    from:
+      '/API_Reference/Reseller_API/v2_(deprecated)/billing_retrieving_as_you_go_usage.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v2_(deprecated)/billing_retrieving_as_you_go_usage.html',
   },
   {
-    from: '/API_Reference/Reseller_API/v2_(deprecated)/billing_retrieving_end_users_invoices_usage.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v2_(deprecated)/billing_retrieving_end_users_invoices_usage.html',
+    from:
+      '/API_Reference/Reseller_API/v2_(deprecated)/billing_retrieving_end_users_invoices_usage.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v2_(deprecated)/billing_retrieving_end_users_invoices_usage.html',
   },
   {
     from: '/API_Reference/Reseller_API/v2_(deprecated)/index.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v2_(deprecated)/index.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v2_(deprecated)/index.html',
   },
   {
     from: '/API_Reference/Reseller_API/view_available_packages.html',
@@ -536,16 +669,20 @@ module.exports = [
     to: '/API_Reference/Web_API_v3/Transactional_Templates/smtpapi.html',
   },
   {
-    from: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/automatic_login.html',
-    to: '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/index.html',
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/automatic_login.html',
+    to:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/index.html',
   },
   {
     from: '/API_Reference/Web_API/Reseller_API/automatic_login.html',
     to: '/API_Reference/Web_API/Reseller_API/index.html',
   },
   {
-    from: '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_automatic_login.html',
-    to: '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/index.html',
+    from:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_automatic_login.html',
+    to:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/index.html',
   },
   {
     from: '/API_Reference/Web_API_v3/cancel_scheduled_send.html',
@@ -560,15 +697,18 @@ module.exports = [
     to: '/API_Reference/Web_API_v3/Suppression_Management/index.html',
   },
   {
-    from: '/API_Reference/Web_API_v3/Advanced_Suppression_Manager/global_suppressions.html',
-    to: '/API_Reference/Web_API_v3/Suppression_Management/global_suppressions.html',
+    from:
+      '/API_Reference/Web_API_v3/Advanced_Suppression_Manager/global_suppressions.html',
+    to:
+      '/API_Reference/Web_API_v3/Suppression_Management/global_suppressions.html',
   },
   {
     from: '/API_Reference/Web_API_v3/Advanced_Suppression_Manager/groups.html',
     to: '/API_Reference/Web_API_v3/Suppression_Management/groups.html',
   },
   {
-    from: '/API_Reference/Web_API_v3/Advanced_Suppression_Manager/suppressions.html',
+    from:
+      '/API_Reference/Web_API_v3/Advanced_Suppression_Manager/suppressions.html',
     to: '/API_Reference/Web_API_v3/Suppression_Management/suppressions.html',
   },
   {
@@ -584,8 +724,10 @@ module.exports = [
     to: '/API_Reference/Web_API_v3/Webhooks/parse.html',
   },
   {
-    from: '/API_Reference/Web_API_v3/Unsubscribe_Manager/global_unsubscribes.html',
-    to: '/API_Reference/Web_API_v3/Suppression_Management/global_unsubscribes.html',
+    from:
+      '/API_Reference/Web_API_v3/Unsubscribe_Manager/global_unsubscribes.html',
+    to:
+      '/API_Reference/Web_API_v3/Suppression_Management/global_unsubscribes.html',
   },
   {
     from: '/API_Reference/Web_API_v3/Unsubscribe_Manager/groups.html',
@@ -601,7 +743,7 @@ module.exports = [
   },
   {
     from: '/API_Reference/Webhooks/parse.html',
-    to: '/API_Reference/Webhooks/inbound_email.html',
+    to: '/for-developers/parsing-email/inbound-email/',
   },
   {
     from: '/API_Reference/SMTP_API/smtpapi_validator.html',
@@ -777,7 +919,7 @@ module.exports = [
   },
   {
     from: '/Code_Examples/SMTP_API_Header_Examples/ruby.html',
-    to: '/docs/for-developers/sending-email/smtp-ruby-code-example/',
+    to: '/for-developers/sending-email/smtp-ruby-code-example/',
   },
   {
     from: '/Integrate/Code_Examples/v2_Mail/csharp.html',
@@ -820,12 +962,15 @@ module.exports = [
     to: '/ui/account-and-settings/api-keys/',
   },
   {
-    from: '/Classroom/Deliver/Undeliverable_Email/how_sendgrid_handles_550_requested_action_not_taken_mailbox_unavailable_bounces.html',
+    from:
+      '/Classroom/Deliver/Undeliverable_Email/how_sendgrid_handles_550_requested_action_not_taken_mailbox_unavailable_bounces.html',
     to: '/ui/sending-email/smtp-errors-and-troubleshooting/',
   },
   {
-    from: '/Classroom/Troubleshooting/your_account_is_still_being_provisioned_you_may_not_be_able_to_send_emails.html',
-    to: '/Classroom/Troubleshooting/Account_Administration/your_account_is_still_being_provisioned_you_will_not_be_able_to_send_out_any_email/',
+    from:
+      '/Classroom/Troubleshooting/your_account_is_still_being_provisioned_you_may_not_be_able_to_send_emails.html',
+    to:
+      '/Classroom/Troubleshooting/Account_Administration/your_account_is_still_being_provisioned_you_will_not_be_able_to_send_out_any_email/',
   },
   {
     from: '/Classroom/Basics/Security/two_factor_authentication_faq.html',
@@ -856,7 +1001,8 @@ module.exports = [
     to: '/for-developers/sending-email/sending-email-smtp/',
   },
   {
-    from: '/Classroom/Basics/sendgrid_multiauth_multiple_account_credentials.html',
+    from:
+      '/Classroom/Basics/sendgrid_multiauth_multiple_account_credentials.html',
     to: '/ui/account-and-settings/teammates/',
   },
   {
@@ -884,7 +1030,8 @@ module.exports = [
     to: '/ui/account-and-settings/subusers/',
   },
   {
-    from: '/Classroom/Basics/what_are_the_sendgrid_apis_and_what_do_they_do.html',
+    from:
+      '/Classroom/Basics/what_are_the_sendgrid_apis_and_what_do_they_do.html',
     to: '/for-developers/sending-email/api-sending-email/',
   },
   {
@@ -892,7 +1039,8 @@ module.exports = [
     to: '/for-developers/sending-email/sending-email-smtp/',
   },
   {
-    from: '/Classroom/Basics/what_is_the_difference_between_marketing_and_transactional_emails.html',
+    from:
+      '/Classroom/Basics/what_is_the_difference_between_marketing_and_transactional_emails.html',
     to: '/ui/sending-email/how-to-send-email-with-marketing-campaigns/',
   },
   {
@@ -900,55 +1048,67 @@ module.exports = [
     to: '/ui/analytics-and-reporting/subuscription-tracking/',
   },
   {
-    from: '/Classroom/Basics/why_are_the_pro_plans_recommended_above_all_others.html',
+    from:
+      '/Classroom/Basics/why_are_the_pro_plans_recommended_above_all_others.html',
     to: '/pricing/',
   },
   {
     from: '/Classroom/Basics/your_reputation_what_is_it.html',
-    to: '/blog/what-is-a-domain-reputation/',
+    to: 'https://sendgrid.com/blog/what-is-a-domain-reputation/',
   },
   {
     from: '/Classroom/Basics/Security/setting_up_2_factor_authentication.html',
     to: '/ui/account-and-settings/two-factor-authentication/',
   },
   {
-    from: '/Classroom/Basics/Account/adding_an_additional_dedicated_ip_to_your_account.html',
+    from:
+      '/Classroom/Basics/Account/adding_an_additional_dedicated_ip_to_your_account.html',
     to: '/ui/account-and-settings/dedicated-ip-addresses/',
   },
   {
-    from: '/Classroom/Basics/Account/creating_multiple_user_credentials_for_sub_users.html',
+    from:
+      '/Classroom/Basics/Account/creating_multiple_user_credentials_for_sub_users.html',
     to: '/ui/account-and-settings/teammates/',
   },
   {
-    from: '/Classroom/Basics/Account/im_a_multiple_credential_user_and_i_need_to_reset_my_password.html',
+    from:
+      '/Classroom/Basics/Account/im_a_multiple_credential_user_and_i_need_to_reset_my_password.html',
     to: '/ui/account-and-settings/teammates/',
   },
   {
-    from: '/Classroom/Basics/Account/what_is_my_sending_originating_ip_address_with_sendgrid.html',
+    from:
+      '/Classroom/Basics/Account/what_is_my_sending_originating_ip_address_with_sendgrid.html',
     to: '/ui/account-and-settings/dedicated-ip-addresses/',
   },
   {
-    from: '/Classroom/Basics/Security/sendgrid_multiauth_multiple_account_credentials.html',
+    from:
+      '/Classroom/Basics/Security/sendgrid_multiauth_multiple_account_credentials.html',
     to: '/ui/account-and-settings/teammates/',
   },
   {
-    from: '/Classroom/Basics/Security/what_security_measures_are_available_with_sendgrid_accounts.html',
-    to: '/policies/security/',
+    from:
+      '/Classroom/Basics/Security/what_security_measures_are_available_with_sendgrid_accounts.html',
+    to: '/',
+    gone: true,
   },
   {
-    from: '/Classroom/Basics/Marketing_Campaigns/migration_guide_part_1_migrating_your_recipient_lists_into_contacts.html',
+    from:
+      '/Classroom/Basics/Marketing_Campaigns/migration_guide_part_1_migrating_your_recipient_lists_into_contacts.html',
     to: '/ui/managing-contacts/create-and-manage-contacts/',
   },
   {
-    from: '/Classroom/Basics/Marketing_Campaigns/migration_guide_part_2_importing_your_unsubscribes.html',
+    from:
+      '/Classroom/Basics/Marketing_Campaigns/migration_guide_part_2_importing_your_unsubscribes.html',
     to: '/ui/sending-email/index-suppressions/',
   },
   {
-    from: '/Classroom/Basics/Marketing_Campaigns/migration_guide_part_3_moving_your_content.html',
+    from:
+      '/Classroom/Basics/Marketing_Campaigns/migration_guide_part_3_moving_your_content.html',
     to: '/ui/sending-email/how-to-send-email-with-marketing-campaigns/',
   },
   {
-    from: '/Classroom/Basics/Misc/where_can_i_enable_subscription_tracking.html',
+    from:
+      '/Classroom/Basics/Misc/where_can_i_enable_subscription_tracking.html',
     to: '/ui/account-and-settings/tracking/#-Subscription-Tracking',
   },
   {
@@ -964,7 +1124,8 @@ module.exports = [
     to: '/ui/account-and-settings/account/',
   },
   {
-    from: '/Classroom/Basics/Account/how_do_i_add_more_emails_to_my_account.html',
+    from:
+      '/Classroom/Basics/Account/how_do_i_add_more_emails_to_my_account.html',
     to: '/ui/account-and-settings/account/',
   },
   {
@@ -972,7 +1133,8 @@ module.exports = [
     to: '/ui/account-and-settings/account/',
   },
   {
-    from: '/Classroom/Basics/Account/why_cant_I_reset_my_password_if_my_account_is_not_provisioned.html',
+    from:
+      '/Classroom/Basics/Account/why_cant_I_reset_my_password_if_my_account_is_not_provisioned.html',
     to: '/ui/account-and-settings/account/',
   },
   {
@@ -980,24 +1142,22 @@ module.exports = [
     to: '/ui/account-and-settings/account/',
   },
   {
-    from: '/Classroom/Basics/Inbound_Parse_Webhook/setting_up_the_inbound_parse_webhook.html',
+    from:
+      '/Classroom/Basics/Inbound_Parse_Webhook/setting_up_the_inbound_parse_webhook.html',
     to: '/for-developers/parsing-email/setting-up-the-inbound-parse-webhook/',
   },
   {
     from: '/Classroom/Basics/Marketing_Campaigns/index.html',
-    to: '/ui/account-and-settings/sending-email/how-to-send-email-with-marketing-campaigns/',
+    to:
+      '/ui/account-and-settings/sending-email/how-to-send-email-with-marketing-campaigns/',
   },
   {
     from: '/Classroom/Basics/Marketing_Campaigns/marketing_campaigns_faqs.html',
-    to: '/ui/account-and-settings/sending-email/how-to-send-email-with-marketing-campaigns/',
-  },
-  {
-    from: '/Classroom/Basics/Marketing_Campaigns/marketing_campaigns_faqs.html',
-    to: '/ui/account-and-settings/sending-email/how-to-send-email-with-marketing-campaigns/',
+    to: '/ui/sending-email/how-to-send-email-with-marketing-campaigns/',
   },
   {
     from: '/Classroom/Basics/Marketing_Campaigns/default_mc_tags.html',
-    to: '/ui/account-and-settings/sending-email/global-unsubscribes/',
+    to: '/ui/sending-email/global-unsubscribes/',
   },
   {
     from: '/Classroom/Basics/Marketing_Campaigns/unsubscribe_groups.html',
@@ -1008,8 +1168,9 @@ module.exports = [
     to: '/ui/analytics-and-reporting/marketing-campaigns-stats/',
   },
   {
-    from: '/Classroom/Basics/Marketing_Campaigns/third_party_partner_marketing_campaigns_access.html',
-    to: '/ui/account-and-settings/sending-email/how-to-send-email-with-marketing-campaigns/',
+    from:
+      '/Classroom/Basics/Marketing_Campaigns/third_party_partner_marketing_campaigns_access.html',
+    to: '/ui/sending-email/how-to-send-email-with-marketing-campaigns/',
   },
   {
     from: '/Classroom/Basics/Integrate/how_to_integrate_with_mailpoet.html',
@@ -1032,12 +1193,13 @@ module.exports = [
     to: '/ui/account-and-settings/subusers/',
   },
   {
-    from: '/Classroom/Basics/Misc/what_is_the_difference_between_marketing_and_transactional_emails.html',
+    from:
+      '/Classroom/Basics/Misc/what_is_the_difference_between_marketing_and_transactional_emails.html',
     to: '/glossary/transactional-email/',
   },
   {
     from: '/Classroom/Basics/Misc/a_sendgrid_user_is_spamming_me.html',
-    to: '/report-spam/',
+    to: '/ui/account-and-settings/support/',
   },
   {
     from: '/Classroom/Basics/Email_Infrastructure/email_flow.html',
@@ -1048,7 +1210,8 @@ module.exports = [
     to: '/ui/sending-email/dmarc/',
   },
   {
-    from: '/Classroom/Basics/Email_Infrastructure/does_sendgrid_support_end_to_end_tls.html',
+    from:
+      '/Classroom/Basics/Email_Infrastructure/does_sendgrid_support_end_to_end_tls.html',
     to: '/ui/sending-email/tls/',
   },
   {
@@ -1056,20 +1219,22 @@ module.exports = [
     to: '/for-developers/sending-email/cors/',
   },
   {
-    from: '/Classroom/Basics/API/does_sendgrid_offer_a_sandbox_or_test_environment.html',
-    to: '/for-developers/sending-email/sandbox/',
+    from:
+      '/Classroom/Basics/API/does_sendgrid_offer_a_sandbox_or_test_environment.html',
+    to: '/for-developers/sending-email/sandbox-mode/',
   },
   {
     from: '/Classroom/Basics/API/how_do_i_integrate_with_sendgrid.html',
-    to: '/for-developers/sending-email/sending-email-api/',
+    to: '/for-developers/sending-email/api-getting-started/',
   },
   {
     from: '/Classroom/Basics/API/how_to_create_a_subuser_with_the_api.html',
     to: '/for-developers/sending-email/how-to-create-a-subuser-with-the-api/',
   },
   {
-    from: '/Classroom/Basics/API/what_are_the_sendgrid_apis_and_what_do_they_do.html',
-    to: '/for-developers/sending-email/sending-email-api/',
+    from:
+      '/Classroom/Basics/API/what_are_the_sendgrid_apis_and_what_do_they_do.html',
+    to: '/for-developers/sending-email/api-getting-started/',
   },
   {
     from: '/Classroom/Basics/API/what_is_my_api_key.html',
@@ -1077,7 +1242,7 @@ module.exports = [
   },
   {
     from: '/Classroom/index.html',
-    to: '/index.html/',
+    to: '/',
   },
   {
     from: '/Classroom/Build/a_b_testing.html',
@@ -1085,7 +1250,8 @@ module.exports = [
   },
   {
     from: '/Classroom/Build/adaptive_email_content.html',
-    to: '/blog/create-more-personalized-email-content-and-turn-engagement-into-revenue/',
+    to:
+      'https://sendgrid.com/blog/create-more-personalized-email-content-and-turn-engagement-into-revenue/',
   },
   {
     from: '/Classroom/Build/attachments.html',
@@ -1093,7 +1259,8 @@ module.exports = [
   },
   {
     from: '/Classroom/Build/brand_consistency_why_its_important.html',
-    to: '/blog/how-to-maintain-brand-standards-in-your-email-designs/',
+    to:
+      'https://sendgrid.com/blog/how-to-maintain-brand-standards-in-your-email-designs/',
   },
   {
     from: '/Classroom/Build/can_i_use_substitution_tags_in_subject_lines.html',
@@ -1109,10 +1276,11 @@ module.exports = [
   },
   {
     from: '/Classroom/Build/gmail_promotions_tab.html',
-    to: '/blog/i-fought-the-tabs-and-the-tabs-won/',
+    to: 'https://sendgrid.com/blog/i-fought-the-tabs-and-the-tabs-won/',
   },
   {
-    from: '/Classroom/Build/how_do_i_add_a_list_unsubscribe_header_to_my_emails.html',
+    from:
+      '/Classroom/Build/how_do_i_add_a_list_unsubscribe_header_to_my_emails.html',
     to: '/ui/sending-email/index-suppressions/',
   },
   {
@@ -1120,12 +1288,14 @@ module.exports = [
     to: '/ui/sending-email/formatting-html/',
   },
   {
-    from: '/Classroom/Build/html_rendering__the_dos_and_donts_of_cross_platform_email_design.html',
+    from:
+      '/Classroom/Build/html_rendering__the_dos_and_donts_of_cross_platform_email_design.html',
     to: '/ui/sending-email/cross-platform-html-design/',
   },
   {
     from: '/Classroom/Build/personalization_making_your_messages_count.html',
-    to: '/blog/create-more-personalized-email-content-and-turn-engagement-into-revenue/',
+    to:
+      'https://sendgrid.com/blog/create-more-personalized-email-content-and-turn-engagement-into-revenue/',
   },
   {
     from: '/Classroom/Build/plain_text_emails_converted_to_html.html',
@@ -1144,7 +1314,8 @@ module.exports = [
     to: '/ui/sending-email/how-to-send-email-with-marketing-campaigns/',
   },
   {
-    from: '/Classroom/Build/Format_Content/responsive_templates_and_design.html',
+    from:
+      '/Classroom/Build/Format_Content/responsive_templates_and_design.html',
     to: '/ui/sending-email/cross-platform-html-design/',
   },
   {
@@ -1152,7 +1323,8 @@ module.exports = [
     to: '/ui/sending-email/a-b-testing/',
   },
   {
-    from: '/Classroom/Build/Add_Content/can_i_use_substitution_tags_in_subject_lines.html',
+    from:
+      '/Classroom/Build/Add_Content/can_i_use_substitution_tags_in_subject_lines.html',
     to: '/ui/sending-email/editor/',
   },
   {
@@ -1165,7 +1337,7 @@ module.exports = [
   },
   {
     from: '/Classroom/Build/Add_Content/custom_ssl_configurations.html',
-    to: '/ui/sending-email/custom-ssl-configurations/',
+    to: '/ui/account-and-settings/custom-ssl-configurations/',
   },
   {
     from: '/Classroom/Build/Add_Content/substitution_and_section_tags.html',
@@ -1176,7 +1348,8 @@ module.exports = [
     to: '/ui/sending-email/how-to-send-email-with-marketing-campaigns/',
   },
   {
-    from: '/Classroom/Build/Add_Content/how_do_i_add_a_list_unsubscribe_header_to_my_emails.html',
+    from:
+      '/Classroom/Build/Add_Content/how_do_i_add_a_list_unsubscribe_header_to_my_emails.html',
     to: '/ui/sending-email/index-suppressions/',
   },
   {
@@ -1188,7 +1361,8 @@ module.exports = [
     to: '/ui/sending-email/universal-links/',
   },
   {
-    from: '/Classroom/Build/Add_Content/whats_the_recommended_message_size_limit.html',
+    from:
+      '/Classroom/Build/Add_Content/whats_the_recommended_message_size_limit.html',
     to: '/ui/sending-email/how-to-send-email-with-marketing-campaigns/',
   },
   {
@@ -1197,30 +1371,33 @@ module.exports = [
   },
   {
     from: '/Classroom/Build/Choose_Content/adaptive_email_content.html',
-    to: '/blog/create-more-personalized-email-content-and-turn-engagement-into-revenue/',
+    to:
+      'https://sendgrid.com/blog/create-more-personalized-email-content-and-turn-engagement-into-revenue/',
   },
   {
-    from: '/Classroom/Build/Choose_Content/brand_consistency_why_its_important.html',
-    to: '/blog/how-to-maintain-brand-standards-in-your-email-designs/',
+    from:
+      '/Classroom/Build/Choose_Content/brand_consistency_why_its_important.html',
+    to:
+      'https://sendgrid.com/blog/how-to-maintain-brand-standards-in-your-email-designs/',
   },
   {
-    from: '/Classroom/Build/Choose_Content/gmail_promotions_tab.html',
-    to: '/blog/i-fought-the-tabs-and-the-tabs-won/',
-  },
-  {
-    from: '/Classroom/Build/Choose_Content/personalization_making_your_messages_count.html',
-    to: '/blog/create-more-personalized-email-content-and-turn-engagement-into-revenue/',
+    from:
+      '/Classroom/Build/Choose_Content/personalization_making_your_messages_count.html',
+    to:
+      'https://sendgrid.com/blog/create-more-personalized-email-content-and-turn-engagement-into-revenue/',
   },
   {
     from: '/Classroom/Build/Format_Content/html_formatting_issues.html',
     to: '/ui/sending-email/formatting-html/',
   },
   {
-    from: '/Classroom/Build/Format_Content/html_rendering__the_dos_and_donts_of_cross_platform_email_design.html',
+    from:
+      '/Classroom/Build/Format_Content/html_rendering__the_dos_and_donts_of_cross_platform_email_design.html',
     to: '/ui/sending-email/cross-platform-html-design/',
   },
   {
-    from: '/Classroom/Build/Format_Content/plain_text_emails_converted_to_html.html',
+    from:
+      '/Classroom/Build/Format_Content/plain_text_emails_converted_to_html.html',
     to: '/ui/sending-email/cross-platform-html-design/',
   },
   {
@@ -1244,7 +1421,8 @@ module.exports = [
     to: '/ui/sending-email/deliverability/',
   },
   {
-    from: '/Classroom/Deliver/creating_and_whitelabeling_a_subuser_to_a_new_sending_domain.html',
+    from:
+      '/Classroom/Deliver/creating_and_whitelabeling_a_subuser_to_a_new_sending_domain.html',
     to: '/ui/account-and-settings/subusers/',
   },
   {
@@ -1256,7 +1434,8 @@ module.exports = [
     to: '/ui/sending-email/warming-up-an-ip-address/',
   },
   {
-    from: '/Classroom/Deliver/Delivery_Introduction/how_to_warm_up_your_ip_address.html',
+    from:
+      '/Classroom/Deliver/Delivery_Introduction/how_to_warm_up_your_ip_address.html',
     to: '/ui/sending-email/warming-up-an-ip-address/',
   },
   {
@@ -1268,11 +1447,13 @@ module.exports = [
     to: '/ui/managing-contacts/building-your-contact-list/',
   },
   {
-    from: '/Classroom/Deliver/sendgrids_recommended_sending_practices_and_methods.html',
+    from:
+      '/Classroom/Deliver/sendgrids_recommended_sending_practices_and_methods.html',
     to: '/ui/sending-email/deliverability/',
   },
   {
-    from: '/Classroom/Deliver/whitelabel_do_i_need_to_make_dns_changes_pro_and_higher.html',
+    from:
+      '/Classroom/Deliver/whitelabel_do_i_need_to_make_dns_changes_pro_and_higher.html',
     to: '/ui/account-and-settings/how-to-set-up-reverse-dns/',
   },
   {
@@ -1308,11 +1489,13 @@ module.exports = [
     to: '/ui/managing-contacts/managing-contact-list/',
   },
   {
-    from: '/Classroom/Deliver/peer_initiated_email_invitation_requirements.html',
+    from:
+      '/Classroom/Deliver/peer_initiated_email_invitation_requirements.html',
     to: '/ui/managing-contacts/building-your-contact-list/',
   },
   {
-    from: '/Classroom/Deliver/preference_centers_giving_subscribers_control.html',
+    from:
+      '/Classroom/Deliver/preference_centers_giving_subscribers_control.html',
     to: '/ui/managing-contacts/building-your-contact-list/',
   },
   {
@@ -1324,7 +1507,8 @@ module.exports = [
     to: '/ui/managing-contacts/managing-contact-list/',
   },
   {
-    from: '/Classroom/Deliver/where_did_you_get_my_address_permission_reminders.html',
+    from:
+      '/Classroom/Deliver/where_did_you_get_my_address_permission_reminders.html',
     to: '/ui/managing-contacts/building-your-contact-list/',
   },
   {
@@ -1336,15 +1520,18 @@ module.exports = [
     to: '/ui/managing-contacts/building-your-contact-list/',
   },
   {
-    from: '/Classroom/Deliver/aol_dmarc_changes_refused_due_to_provided_dmarc_policy.html',
+    from:
+      '/Classroom/Deliver/aol_dmarc_changes_refused_due_to_provided_dmarc_policy.html',
     to: '/ui/account-and-settings/aol-dmarc/',
   },
   {
-    from: '/Classroom/Deliver/dkim_settings_for_whitelabel_pro100k_and_higher.html',
+    from:
+      '/Classroom/Deliver/dkim_settings_for_whitelabel_pro100k_and_higher.html',
     to: '/ui/account-and-settings/how-to-set-up-domain-authentication/ ',
   },
   {
-    from: '/Classroom/Deliver/Sender_Authentication/dkim_settings_for_whitelabel_pro100k_and_higher.html',
+    from:
+      '/Classroom/Deliver/Sender_Authentication/dkim_settings_for_whitelabel_pro100k_and_higher.html',
     to: '/ui/account-and-settings/how-to-set-up-domain-authentication/ ',
   },
   {
@@ -1352,7 +1539,8 @@ module.exports = [
     to: '/ui/account-and-settings/gmail-dmarc/',
   },
   {
-    from: '/Classroom/Deliver/internet_standards_spf_and_dkim_and_deliverability.html',
+    from:
+      '/Classroom/Deliver/internet_standards_spf_and_dkim_and_deliverability.html',
     to: '/ui/account-and-settings/spf-dkim/',
   },
   {
@@ -1364,11 +1552,13 @@ module.exports = [
     to: '/ui/account-and-settings/spf-records/',
   },
   {
-    from: '/Classroom/Deliver/the_importance_of_a_physical_mailing_address.html',
+    from:
+      '/Classroom/Deliver/the_importance_of_a_physical_mailing_address.html',
     to: '/ui/sending-email/senders/',
   },
   {
-    from: '/Classroom/Deliver/yahoo_dmarc_changes_message_not_accepted_for_policy_reasons.html',
+    from:
+      '/Classroom/Deliver/yahoo_dmarc_changes_message_not_accepted_for_policy_reasons.html',
     to: '/ui/account-and-settings/yahoo-dmarc/',
   },
   {
@@ -1380,7 +1570,8 @@ module.exports = [
     to: '/ui/sending-email/deliverability/',
   },
   {
-    from: '/Classroom/Deliver/how_can_i_guarantee_my_emails_arrive_in_my_recipients_inbox.html',
+    from:
+      '/Classroom/Deliver/how_can_i_guarantee_my_emails_arrive_in_my_recipients_inbox.html',
     to: '/ui/sending-email/deliverability/',
   },
   {
@@ -1388,7 +1579,8 @@ module.exports = [
     to: '/ui/sending-email/deliverability/',
   },
   {
-    from: '/Classroom/Deliver/how_sendgrid_handles_550_requested_action_not_taken_mailbox_unavailable_bounces.html',
+    from:
+      '/Classroom/Deliver/how_sendgrid_handles_550_requested_action_not_taken_mailbox_unavailable_bounces.html',
     to: '/ui/sending-email/smtp-errors-and-troubleshooting/',
   },
   {
@@ -1420,47 +1612,59 @@ module.exports = [
     to: '/ui/account-and-settings/spf-dkim/',
   },
   {
-    from: '/Classroom/Deliver/Delivery_Introduction/sendgrids_recommended_sending_practices_and_methods.html',
+    from:
+      '/Classroom/Deliver/Delivery_Introduction/sendgrids_recommended_sending_practices_and_methods.html',
     to: '/ui/sending-email/deliverability/',
   },
   {
-    from: '/Classroom/Deliver/Undeliverable_Email/how_can_i_guarantee_my_emails_arrive_in_my_recipients_inbox.html',
+    from:
+      '/Classroom/Deliver/Undeliverable_Email/how_can_i_guarantee_my_emails_arrive_in_my_recipients_inbox.html',
     to: '/ui/sending-email/deliverability/',
   },
   {
-    from: '/Classroom/Deliver/Undeliverable_Email/my_emails_are_being_blocked.html',
+    from:
+      '/Classroom/Deliver/Undeliverable_Email/my_emails_are_being_blocked.html',
     to: '/ui/sending-email/deliverability/',
   },
   {
-    from: '/Classroom/Deliver/Address_Lists/why_purchase_lists_when_you_can.html',
-    to: '/blog/buying-email-lists-3-reasons-why-you-shouldnt/',
+    from:
+      '/Classroom/Deliver/Address_Lists/why_purchase_lists_when_you_can.html',
+    to:
+      'https://sendgrid.com/blog/buying-email-lists-3-reasons-why-you-shouldnt/',
   },
   {
-    from: '/Classroom/Deliver/Delivery_Introduction/bacn_its_whats_for_dinner.html',
+    from:
+      '/Classroom/Deliver/Delivery_Introduction/bacn_its_whats_for_dinner.html',
     to: '/ui/sending-email/deliverability/',
   },
   {
-    from: '/Classroom/Deliver/Delivery_Introduction/IP_reputation_montoring.html',
+    from:
+      '/Classroom/Deliver/Delivery_Introduction/IP_reputation_montoring.html',
     to: '/ui/account-and-settings/dedicated-ip-addresses/',
   },
   {
-    from: '/Classroom/Deliver/Delivery_Introduction/email_deliverability_101.html',
+    from:
+      '/Classroom/Deliver/Delivery_Introduction/email_deliverability_101.html',
     to: '/ui/sending-email/deliverability/',
   },
   {
-    from: '/Classroom/Deliver/Delivery_Introduction/russian_data_localization_law.html',
-    to: '/resource/general-data-protection-regulation/',
+    from:
+      '/Classroom/Deliver/Delivery_Introduction/russian_data_localization_law.html',
+    to: '/glossary/gdpr/',
   },
   {
-    from: '/Classroom/Deliver/Delivery_Introduction/suppressions_vs_unsubscribes.html',
+    from:
+      '/Classroom/Deliver/Delivery_Introduction/suppressions_vs_unsubscribes.html',
     to: '/ui/sending-email/global-unsubscribes/',
   },
   {
-    from: '/Classroom/Deliver/Delivery_Introduction/the_art_of_notifications.html',
+    from:
+      '/Classroom/Deliver/Delivery_Introduction/the_art_of_notifications.html',
     to: '/ui/account-and-settings/notifications/',
   },
   {
-    from: '/Classroom/Deliver/Delivery_Introduction/unsubscribes_explained.html',
+    from:
+      '/Classroom/Deliver/Delivery_Introduction/unsubscribes_explained.html',
     to: '/ui/sending-email/global-unsubscribes/',
   },
   {
@@ -1476,15 +1680,18 @@ module.exports = [
     to: '/ui/account-and-settings/gmail-dmarc/',
   },
   {
-    from: '/Classroom/Deliver/Sender_Authentication/aol_dmarc_changes_refused_due_to_provided_dmarc_policy.html',
+    from:
+      '/Classroom/Deliver/Sender_Authentication/aol_dmarc_changes_refused_due_to_provided_dmarc_policy.html',
     to: '/ui/account-and-settings/aol-dmarc/',
   },
   {
-    from: '/Classroom/Deliver/Sender_Authentication/microsoft_dmarc_changes.html',
+    from:
+      '/Classroom/Deliver/Sender_Authentication/microsoft_dmarc_changes.html',
     to: '/ui/account-and-settings/microsoft-dmarc/',
   },
   {
-    from: '/Classroom/Deliver/Sender_Authentication/yahoo_dmarc_changes_message_not_accepted_for_policy_reasons.html',
+    from:
+      '/Classroom/Deliver/Sender_Authentication/yahoo_dmarc_changes_message_not_accepted_for_policy_reasons.html',
     to: '/ui/account-and-settings/yahoo-dmarc/',
   },
   {
@@ -1492,39 +1699,48 @@ module.exports = [
     to: '/ui/account-and-settings/spf-records/',
   },
   {
-    from: '/Classroom/Deliver/Sender_Authentication/spf_dont_exceed_ten_dns_lookups.html',
+    from:
+      '/Classroom/Deliver/Sender_Authentication/spf_dont_exceed_ten_dns_lookups.html',
     to: '/ui/account-and-settings/spf-limitations/',
   },
   {
-    from: '/Classroom/Deliver/Sender_Authentication/the_importance_of_a_physical_mailing_address.html',
+    from:
+      '/Classroom/Deliver/Sender_Authentication/the_importance_of_a_physical_mailing_address.html',
     to: '/ui/sending-email/senders/',
   },
   {
-    from: '/Classroom/Deliver/Sender_Authentication/internet_standards_spf_and_dkim_and_deliverability.html',
+    from:
+      '/Classroom/Deliver/Sender_Authentication/internet_standards_spf_and_dkim_and_deliverability.html',
     to: '/ui/account-and-settings/spf-dkim/',
   },
   {
-    from: '/Classroom/Deliver/Sender_Authentication/help_my_emails_arent_being_delivered.html',
+    from:
+      '/Classroom/Deliver/Sender_Authentication/help_my_emails_arent_being_delivered.html',
     to: '/ui/sending-email/deliverability/ ',
   },
   {
-    from: '/Classroom/Deliver/Sender_Authentication/how_do_i_keep_emails_from_dropping.html',
+    from:
+      '/Classroom/Deliver/Sender_Authentication/how_do_i_keep_emails_from_dropping.html',
     to: '/ui/sending-email/deliverability/ ',
   },
   {
-    from: '/Classroom/Deliver/Sender_Authentication/my_emails_are_being_dropped.html',
+    from:
+      '/Classroom/Deliver/Sender_Authentication/my_emails_are_being_dropped.html',
     to: '/ui/sending-email/deliverability/ ',
   },
   {
-    from: '/Classroom/Deliver/Sender_Authentication/my_emails_are_going_to_spam.html',
+    from:
+      '/Classroom/Deliver/Sender_Authentication/my_emails_are_going_to_spam.html',
     to: '/ui/sending-email/deliverability/ ',
   },
   {
-    from: '/Classroom/Deliver/Sender_Authentication/my_emails_are_going_to_spam.html',
+    from:
+      '/Classroom/Deliver/Sender_Authentication/my_emails_are_going_to_spam.html',
     to: '/ui/sending-email/deliverability/ ',
   },
   {
-    from: '/Classroom/Deliver/Sender_Authentication/what_do_i_do_if_im_blacklisted.html',
+    from:
+      '/Classroom/Deliver/Sender_Authentication/what_do_i_do_if_im_blacklisted.html',
     to: '/ui/sending-email/blacklists/',
   },
   {
@@ -1532,15 +1748,18 @@ module.exports = [
     to: '/ui/sending-email/spam-traps/',
   },
   {
-    from: '/Classroom/Deliver/Sender_Authentication/google_feedback_loop_spam_complaints.html',
+    from:
+      '/Classroom/Deliver/Sender_Authentication/google_feedback_loop_spam_complaints.html',
     to: '/ui/sending-email/spam/',
   },
   {
-    from: '/Classroom/Deliver/Sender_Authentication/why_is_sendgrid_net_greylisted.html',
+    from:
+      '/Classroom/Deliver/Sender_Authentication/why_is_sendgrid_net_greylisted.html',
     to: '/ui/sending-email/sendgrid.net-greylisted/',
   },
   {
-    from: '/Classroom/Send/how_can_i_schedule_emails_to_send_at_specific_times.html',
+    from:
+      '/Classroom/Send/how_can_i_schedule_emails_to_send_at_specific_times.html',
     to: '/for-developers/sending-email/scheduling-email/',
   },
   {
@@ -1589,11 +1808,12 @@ module.exports = [
   },
   {
     from: '/Classroom/Send/can_i_send_to_purchased_lists.html',
-    to: '/blog/buying-email-lists-3-reasons-why-you-shouldnt/',
+    to:
+      'https://sendgrid.com/blog/buying-email-lists-3-reasons-why-you-shouldnt/',
   },
   {
     from: '/Classroom/Send/welcome_emails_making_a_good_first_impression.html',
-    to: '/blog/how-to-send-the-perfect-welcome-email/',
+    to: 'https://sendgrid.com/blog/how-to-send-the-perfect-welcome-email/',
   },
   {
     from: '/Classroom/Send/resubscription_of_users.html',
@@ -1604,15 +1824,18 @@ module.exports = [
     to: '/ui/managing-contacts/segmenting-your-contacts/',
   },
   {
-    from: '/User_Guide/Email_Deliverability/Subscription_Tracking/resubscription_of_users.html',
+    from:
+      '/User_Guide/Email_Deliverability/Subscription_Tracking/resubscription_of_users.html',
     to: '/ui/sending-email/recipient-subscription-preferences/ ',
   },
   {
-    from: '/Classroom/Send/How_Emails_Are_Sent/can_i_send_from_multiple_domains.html',
+    from:
+      '/Classroom/Send/How_Emails_Are_Sent/can_i_send_from_multiple_domains.html',
     to: '/ui/account-and-settings/subusers/',
   },
   {
-    from: '/Classroom/Send/How_Emails_Are_Sent/can_i_send_from_multiple_from_addresses.html',
+    from:
+      '/Classroom/Send/How_Emails_Are_Sent/can_i_send_from_multiple_from_addresses.html',
     to: '/ui/sending-email/senders/',
   },
   {
@@ -1620,19 +1843,21 @@ module.exports = [
     to: '/ui/sending-email/email-to-sms/',
   },
   {
-    from: '/Classroom/Send/How_Emails_Are_Sent/sendmail_relay_all_local_mail_through_sendgrid.html',
-    to: '/ui/sending-email/sendmail/',
+    from:
+      '/Classroom/Send/How_Emails_Are_Sent/sendmail_relay_all_local_mail_through_sendgrid.html',
+    to: '/for-developers/sending-email/sendmail/',
   },
   {
     from: '/Classroom/Send/How_Emails_Are_Sent/unauthenticated_sender.html',
-    to: '/for-developers/sending-email/sending-email-smtp/',
+    to: '/for-developers/sending-email/getting-started-smtp/',
   },
   {
     from: '/Classroom/Send/index.html',
     to: '/ui/sending-email/how-to-send-email-with-marketing-campaigns/',
   },
   {
-    from: '/Classroom/Send/v3_Mail_Send/how_to_migrate_from_v2_to_v3_mail_send.html',
+    from:
+      '/Classroom/Send/v3_Mail_Send/how_to_migrate_from_v2_to_v3_mail_send.html',
     to: '/for-developers/sending-email/migrating-from-v2-to-v3-mail-send/',
   },
   {
@@ -1648,27 +1873,33 @@ module.exports = [
     to: '/for-developers/sending-email/v3-mail-send-faq/',
   },
   {
-    from: '/Classroom/Send/What_You_Can_Send/can_i_send_adult_content_in_my_emails.html',
-    to: '/ui/sending-email/can-i-send-adult-content-in-my-emails/',
+    from:
+      '/Classroom/Send/What_You_Can_Send/can_i_send_adult_content_in_my_emails.html',
+    to: '/ui/sending-email/deliverability/#sending-adult-content',
   },
   {
-    from: '/Classroom/Send/What_You_Can_Send/welcome_emails_making_a_good_first_impression.html',
-    to: '/blog/how-to-send-the-perfect-welcome-email/',
+    from:
+      '/Classroom/Send/What_You_Can_Send/welcome_emails_making_a_good_first_impression.html',
+    to: 'https://sendgrid.com/blog/how-to-send-the-perfect-welcome-email/',
   },
   {
-    from: '/Classroom/Send/When_Emails_Are_Sent/can_i_stop_a_scheduled_send.html',
+    from:
+      '/Classroom/Send/When_Emails_Are_Sent/can_i_stop_a_scheduled_send.html',
     to: '/for-developers/sending-email/stopping-a-scheduled-send/',
   },
   {
-    from: '/Classroom/Send/When_Emails_Are_Sent/can_i_stop_a_send_in_progress.html',
+    from:
+      '/Classroom/Send/When_Emails_Are_Sent/can_i_stop_a_send_in_progress.html',
     to: '/for-developers/sending-email/stopping-an-in-progress-send/ ',
   },
   {
-    from: '/Classroom/Send/When_Emails_Are_Sent/how_can_i_schedule_emails_to_send_at_specific_times.html',
+    from:
+      '/Classroom/Send/When_Emails_Are_Sent/how_can_i_schedule_emails_to_send_at_specific_times.html',
     to: '/for-developers/sending-email/scheduling-email/',
   },
   {
-    from: '/Classroom/Send/When_Emails_Are_Sent/seeing_a_delay_with_your_first_few_sends.html',
+    from:
+      '/Classroom/Send/When_Emails_Are_Sent/seeing_a_delay_with_your_first_few_sends.html',
     to: '/ui/sending-email/warming-up-an-ip-address/',
   },
   {
@@ -1680,15 +1911,18 @@ module.exports = [
     to: '/ui/sending-email/email-activity-feed ',
   },
   {
-    from: '/Classroom/Track/can_i_download_a_list_of_click_and_or_open_events.html',
+    from:
+      '/Classroom/Track/can_i_download_a_list_of_click_and_or_open_events.html',
     to: '/ui/sending-email/email-activity-feed ',
   },
   {
-    from: '/Classroom/Track/how_can_i_tell_if_an_email_was_actually_delivered.html',
+    from:
+      '/Classroom/Track/how_can_i_tell_if_an_email_was_actually_delivered.html',
     to: '/ui/analytics-and-reporting/email-activity-feed/',
   },
   {
-    from: '/Classroom/Track/google_analytics_demystified_ga_statistics_vs_sg_statistics.html',
+    from:
+      '/Classroom/Track/google_analytics_demystified_ga_statistics_vs_sg_statistics.html',
     to: '/ui/analytics-and-reporting/google-analytics ',
   },
   {
@@ -1696,7 +1930,8 @@ module.exports = [
     to: '/ui/analytics-and-reporting/tracking-stats-using-new-relic ',
   },
   {
-    from: '/Classroom/Track/is_there_a_way_to_see_the_content_of_transactional_emails_i_send.html',
+    from:
+      '/Classroom/Track/is_there_a_way_to_see_the_content_of_transactional_emails_i_send.html',
     to: '/ui/sending-email/create-and-edit-transactional-templates/',
   },
   {
@@ -1712,11 +1947,13 @@ module.exports = [
     to: '/for-developers/sending-email/smtp-errors-and-troubleshooting/',
   },
   {
-    from: '/Classroom/Track/delete_from_bounce_list_option_in_email_activity.html',
+    from:
+      '/Classroom/Track/delete_from_bounce_list_option_in_email_activity.html',
     to: '/ui/analytics-and-reporting/email-activity-feed/',
   },
   {
-    from: '/Classroom/Track/implementing_bounce_notification_for_multiple_from_addresses.html',
+    from:
+      '/Classroom/Track/implementing_bounce_notification_for_multiple_from_addresses.html',
     to: '/ui/sending-email/bounces/',
   },
   {
@@ -1736,7 +1973,8 @@ module.exports = [
     to: '/ui/sending-email/drops/',
   },
   {
-    from: '/Classroom/Track/how_to_set_up_bounce_forwarding_to_go_to_the_emails_from_address.html',
+    from:
+      '/Classroom/Track/how_to_set_up_bounce_forwarding_to_go_to_the_emails_from_address.html',
     to: '/ui/sending-email/bounces/#-Bounce-Notifications',
   },
   {
@@ -1760,7 +1998,8 @@ module.exports = [
     to: '/ui/analytics-and-reporting/subscription-tracking/',
   },
   {
-    from: '/Classroom/Track/Introduction/what_do_all_these_delivery_statistics_mean.html',
+    from:
+      '/Classroom/Track/Introduction/what_do_all_these_delivery_statistics_mean.html',
     to: '/ui/analytics-and-reporting/stats-overview/',
   },
   {
@@ -1772,15 +2011,18 @@ module.exports = [
     to: '/ui/analytics-and-reporting/stats-overview/',
   },
   {
-    from: '/Classroom/Track/Collecting_Data/a_guide_for_tracking_data_with_keen_io.html',
+    from:
+      '/Classroom/Track/Collecting_Data/a_guide_for_tracking_data_with_keen_io.html',
     to: '/ui/analytics-and-reporting/tracking-data-with-keen-io/',
   },
   {
-    from: '/Classroom/Track/Collecting_Data/google_analytics_demystified_ga_statistics_vs_sg_statistics.html',
+    from:
+      '/Classroom/Track/Collecting_Data/google_analytics_demystified_ga_statistics_vs_sg_statistics.html',
     to: '/ui/analytics-and-reporting/google-analytics/',
   },
   {
-    from: '/Classroom/Track/Collecting_Data/is_there_a_way_to_see_the_content_of_transactional_emails_i_send.html',
+    from:
+      '/Classroom/Track/Collecting_Data/is_there_a_way_to_see_the_content_of_transactional_emails_i_send.html',
     to: '/ui/sending-email/create-and-edit-transactional-templates/',
   },
   {
@@ -1788,7 +2030,8 @@ module.exports = [
     to: '/ui/analytics-and-reporting/tracking-stats-using-new-relic/',
   },
   {
-    from: '/Classroom/Track/Clicks/click_tracking_links_with_substitution_tags.html',
+    from:
+      '/Classroom/Track/Clicks/click_tracking_links_with_substitution_tags.html',
     to: '/ui/analytics-and-reporting/marketing-campaigns-stats/',
   },
   {
@@ -1796,8 +2039,9 @@ module.exports = [
     to: '/ui/analytics-and-reporting/click-tracking-html-best-practices/',
   },
   {
-    from: '/Classroom/Track/Clicks/click_tracking_links_have_stopped_working.html',
-    to: '/ui/analytics-and-reporting/click-tracking/',
+    from:
+      '/Classroom/Track/Clicks/click_tracking_links_have_stopped_working.html',
+    to: '/ui/analytics-and-reporting/click-tracking-html-best-practices/',
   },
   {
     from: '/Classroom/Track/Clicks/clicktracking_ssl.html',
@@ -1809,18 +2053,21 @@ module.exports = [
   },
   {
     from: '/Classroom/Track/Unsubscribes/list_unsubscribe.html',
-    to: '/ui/sending-email/unsubcribe-groups ',
+    to: '/ui/sending-email/unsubscribe-groups/',
   },
   {
-    from: '/Classroom/Track/Unsubscribes/unsubscribe_via_subscription_tracking.html',
-    to: '/ui/analytics-and-reporting/subscription-tracking/',
+    from:
+      '/Classroom/Track/Unsubscribes/unsubscribe_via_subscription_tracking.html',
+    to: '/ui/sending-email/subscription-tracking/',
   },
   {
-    from: '/Classroom/Troubleshooting/Account_Administration/how_can_i_turn_off_2_factor_authentication.html',
+    from:
+      '/Classroom/Troubleshooting/Account_Administration/how_can_i_turn_off_2_factor_authentication.html',
     to: '/ui/account-and-settings/two-factor-authentication/',
   },
   {
-    from: '/Classroom/Troubleshooting/Account_Administration/your_account_is_still_being_provisioned_you_will_not_be_able_to_send_any_email.html',
+    from:
+      '/Classroom/Troubleshooting/Account_Administration/your_account_is_still_being_provisioned_you_will_not_be_able_to_send_any_email.html',
     to: '/ui/account-and-settings/account/',
   },
   {
@@ -1828,8 +2075,10 @@ module.exports = [
     to: '/ui/account-and-settings/account-under-review/',
   },
   {
-    from: '/Classroom/Troubleshooting/cant_access_the_email_address_on_file_for_your_sendgrid_account.html',
-    to: '/ui/account-and-settings/accessing-email-account-associated-with-sendgrid/',
+    from:
+      '/Classroom/Troubleshooting/cant_access_the_email_address_on_file_for_your_sendgrid_account.html',
+    to:
+      '/ui/account-and-settings/accessing-email-account-associated-with-sendgrid/',
   },
   {
     from: '/Classroom/Troubleshooting/cant_log_in_to_your_account.html',
@@ -1840,79 +2089,98 @@ module.exports = [
     to: '/ui/account-and-settings/resetting-your-username-and-password/',
   },
   {
-    from: '/Classroom/Troubleshooting/help_i_cant_find_my_smtp_username_and_password.html',
+    from:
+      '/Classroom/Troubleshooting/help_i_cant_find_my_smtp_username_and_password.html',
     to: '/ui/account-and-settings/resetting-your-username-and-password/',
   },
   {
-    from: '/Classroom/Troubleshooting/help_my_account_has_been_compromised.html',
+    from:
+      '/Classroom/Troubleshooting/help_my_account_has_been_compromised.html',
     to: '/ui/account-and-settings/account-compromised/',
   },
   {
-    from: '/Classroom/Troubleshooting/heroku_users_find_your_sendgrid_credentials.html',
+    from:
+      '/Classroom/Troubleshooting/heroku_users_find_your_sendgrid_credentials.html',
     to: '/ui/account-and-settings/heroku-credentials ',
   },
   {
-    from: '/Classroom/Troubleshooting/how_can_i_turn_off_2_factor_authentication.html',
+    from:
+      '/Classroom/Troubleshooting/how_can_i_turn_off_2_factor_authentication.html',
     to: '/ui/account-and-settings/two-factor-authentication/',
   },
   {
-    from: '/Classroom/Troubleshooting/how_to_change_password_when_integrated_via_appdirect.html',
+    from:
+      '/Classroom/Troubleshooting/how_to_change_password_when_integrated_via_appdirect.html',
     to: '/ui/account-and-settings/password-reset-appdirect/',
   },
   {
-    from: '/Classroom/Troubleshooting/how_to_change_the_password_for_your_sendgrid_account_via_softlayer.html',
+    from:
+      '/Classroom/Troubleshooting/how_to_change_the_password_for_your_sendgrid_account_via_softlayer.html',
     to: '/ui/account-and-settings/password-reset-softlayer/',
   },
   {
-    from: '/Classroom/Troubleshooting/how_to_change_the_password_for_your_sendgrid_add_on_via_azure.html',
+    from:
+      '/Classroom/Troubleshooting/how_to_change_the_password_for_your_sendgrid_add_on_via_azure.html',
     to: '/ui/account-and-settings/password-reset-azure/',
   },
   {
-    from: '/Classroom/Troubleshooting/how_to_change_the_password_for_your_sendgrid_add_on_via_openshift.html',
+    from:
+      '/Classroom/Troubleshooting/how_to_change_the_password_for_your_sendgrid_add_on_via_openshift.html',
     to: '/ui/account-and-settings/password-reset-openshift/',
   },
   {
-    from: '/Classroom/Troubleshooting/how_to_change_the_password_for_your_sendgrid_add_on_via_the_ibm_cloud_marketplace.html',
+    from:
+      '/Classroom/Troubleshooting/how_to_change_the_password_for_your_sendgrid_add_on_via_the_ibm_cloud_marketplace.html',
     to: '/ui/account-and-settings/password-reset-ibm-cloud-marketplace/',
   },
   {
-    from: '/Classroom/Troubleshooting/i_didnt_receive_the_password_reset_email.html',
+    from:
+      '/Classroom/Troubleshooting/i_didnt_receive_the_password_reset_email.html',
     to: '/ui/account-and-settings/password-reset-email/',
   },
   {
-    from: '/Classroom/Troubleshooting/my_provision_was_declined_what_should_i_do.html',
+    from:
+      '/Classroom/Troubleshooting/my_provision_was_declined_what_should_i_do.html',
     to: '/ui/account-and-settings/account/',
   },
   {
-    from: '/Classroom/Troubleshooting/you_cannot_change_your_package_at_this_time_because_your_account_is_not_active.html',
+    from:
+      '/Classroom/Troubleshooting/you_cannot_change_your_package_at_this_time_because_your_account_is_not_active.html',
     to: '/ui/account-and-settings/account/',
   },
   {
-    from: '/Classroom/Troubleshooting/your_account_is_still_being_provisioned_you_may_not_be_able_to_send_out_any_email.html',
+    from:
+      '/Classroom/Troubleshooting/your_account_is_still_being_provisioned_you_may_not_be_able_to_send_out_any_email.html',
     to: '/ui/account-and-settings/account/',
   },
   {
-    from: '/Classroom/Troubleshooting/your_account_is_still_being_provisioned_you_will_not_be_able_to_send_out_any_email.html',
+    from:
+      '/Classroom/Troubleshooting/your_account_is_still_being_provisioned_you_will_not_be_able_to_send_out_any_email.html',
     to: '/ui/account-and-settings/account/',
   },
   {
-    from: '/Classroom/Troubleshooting/your_sendgrid_account_is_at_risk_for_suspension_what_should_i_do.html',
+    from:
+      '/Classroom/Troubleshooting/your_sendgrid_account_is_at_risk_for_suspension_what_should_i_do.html',
     to: '/ui/account-and-settings/account-under-review/',
   },
   {
-    from: '/Classroom/Troubleshooting/email_was_deferred_due_to_the_following_reasons_ip_deferrals_messages.html',
+    from:
+      '/Classroom/Troubleshooting/email_was_deferred_due_to_the_following_reasons_ip_deferrals_messages.html',
     to: '/ui/sending-email/warming-up-an-ip-address/',
   },
   {
-    from: '/Classroom/Troubleshooting/emails_are_being_sent_multiple_times.html',
+    from:
+      '/Classroom/Troubleshooting/emails_are_being_sent_multiple_times.html',
     to: '/ui/account-and-settings/account/',
   },
   {
-    from: '/Classroom/Troubleshooting/my_client_is_complaining_that_they_have_not_received_an_email.html',
+    from:
+      '/Classroom/Troubleshooting/my_client_is_complaining_that_they_have_not_received_an_email.html',
     to: '/ui/sending-email/deliverability/ ',
   },
   {
-    from: '/Classroom/Troubleshooting/testing_your_connectivity_to_sendgrids_smtp_relay_usinng_telnet.html',
+    from:
+      '/Classroom/Troubleshooting/testing_your_connectivity_to_sendgrids_smtp_relay_usinng_telnet.html',
     to: '/for-developers/sending-email/sending-email-smtp/',
   },
   {
@@ -1920,7 +2188,8 @@ module.exports = [
     to: '/ui/account-and-settings/safely-test-your-sending-speed/',
   },
   {
-    from: '/Classroom/Troubleshooting/a_custom_field_did_not_substitute_during_a_send.html',
+    from:
+      '/Classroom/Troubleshooting/a_custom_field_did_not_substitute_during_a_send.html',
     to: '/ui/managing-contacts/custom-fields/',
   },
   {
@@ -1932,11 +2201,13 @@ module.exports = [
     to: '/ui/sending-email/troubleshooting/',
   },
   {
-    from: '/Classroom/Troubleshooting/how_do_i_check_the_headers_raw_source_of_an_email.html',
+    from:
+      '/Classroom/Troubleshooting/how_do_i_check_the_headers_raw_source_of_an_email.html',
     to: '/ui/account-and-settings/checking-email-source/',
   },
   {
-    from: '/Classroom/Troubleshooting/i_have_created_dns_records_but_the_whitelabel_wizard_is_not_validating_them.html',
+    from:
+      '/Classroom/Troubleshooting/i_have_created_dns_records_but_the_whitelabel_wizard_is_not_validating_them.html',
     to: '/ui/account-and-settings/troubleshooting-sender-authentication/',
   },
   {
@@ -1948,7 +2219,8 @@ module.exports = [
     to: '/ui/managing-contacts/formatting-a-csv/',
   },
   {
-    from: '/Classroom/Troubleshooting/my_emails_are_displaying_as_on_behalf_of_or_via_in_some_mail_clients.html',
+    from:
+      '/Classroom/Troubleshooting/my_emails_are_displaying_as_on_behalf_of_or_via_in_some_mail_clients.html',
     to: '/ui/account-and-settings/how-to-set-up-domain-authentication/',
   },
   {
@@ -1956,79 +2228,99 @@ module.exports = [
     to: '/ui/account-and-settings/how-to-set-up-domain-authentication/',
   },
   {
-    from: '/Classroom/Troubleshooting/you_have_used_a_reserved_field_name_for_your_custom_field.html',
+    from:
+      '/Classroom/Troubleshooting/you_have_used_a_reserved_field_name_for_your_custom_field.html',
     to: '/ui/managing-contacts/custom-fields/',
   },
   {
-    from: '/Classroom/Troubleshooting/Delivery_Issues/email_was_deferred_due_to_the_following_reasons_ip_deferrals_messages.html',
+    from:
+      '/Classroom/Troubleshooting/Delivery_Issues/email_was_deferred_due_to_the_following_reasons_ip_deferrals_messages.html',
     to: '/ui/sending-email/deliverability/ ',
   },
   {
-    from: '/Classroom/Troubleshooting/Account_Administration/account_under_review_suspended.html',
+    from:
+      '/Classroom/Troubleshooting/Account_Administration/account_under_review_suspended.html',
     to: '/ui/account-and-settings/account-under-review/',
   },
   {
-    from: '/Classroom/Troubleshooting/Account_Administration/cant_access_the_email_address_on_file_for_your_sendgrid_account.html',
-    to: '/ui/account-and-settings/accessing-email-associated-with-sendgrid/',
+    from:
+      '/Classroom/Troubleshooting/Account_Administration/cant_access_the_email_address_on_file_for_your_sendgrid_account.html',
+    to:
+      '/ui/account-and-settings/accessing-email-account-associated-with-sendgrid/',
   },
   {
-    from: '/Classroom/Troubleshooting/Account_Administration/cant_log_in_to_your_account.html',
+    from:
+      '/Classroom/Troubleshooting/Account_Administration/cant_log_in_to_your_account.html',
     to: '/ui/account-and-settings/log-in-issues/',
   },
   {
-    from: '/Classroom/Troubleshooting/Account_Administration/help_i_cant_find_my_smtp_username_and_password.html',
+    from:
+      '/Classroom/Troubleshooting/Account_Administration/help_i_cant_find_my_smtp_username_and_password.html',
     to: '/ui/account-and-settings/resetting-your-username-and-password/',
   },
   {
-    from: '/Classroom/Troubleshooting/Account_Administration/help_my_account_has_been_compromised.html',
+    from:
+      '/Classroom/Troubleshooting/Account_Administration/help_my_account_has_been_compromised.html',
     to: '/ui/account-and-settings/account-compromised/',
   },
   {
-    from: '/Classroom/Troubleshooting/Account_Administration/heroku_users_find_your_sendgrid_credentials.html',
+    from:
+      '/Classroom/Troubleshooting/Account_Administration/heroku_users_find_your_sendgrid_credentials.html',
     to: '/ui/account-and-settings/heroku-credentials/',
   },
   {
-    from: '/Classroom/Troubleshooting/Account_Administration/how_to_change_password_when_integrated_via_appdirect.html',
+    from:
+      '/Classroom/Troubleshooting/Account_Administration/how_to_change_password_when_integrated_via_appdirect.html',
     to: '/ui/account-and-settings/password-reset-appdirect/',
   },
   {
-    from: '/Classroom/Troubleshooting/Account_Administration/how_to_change_the_password_for_your_sendgrid_account_via_softlayer.html',
+    from:
+      '/Classroom/Troubleshooting/Account_Administration/how_to_change_the_password_for_your_sendgrid_account_via_softlayer.html',
     to: '/ui/account-and-settings/password-reset-softlayer/',
   },
   {
-    from: '/Classroom/Troubleshooting/Account_Administration/how_to_change_the_password_for_your_sendgrid_add_on_via_azure.html',
+    from:
+      '/Classroom/Troubleshooting/Account_Administration/how_to_change_the_password_for_your_sendgrid_add_on_via_azure.html',
     to: '/ui/account-and-settings/password-reset-azure/',
   },
   {
-    from: '/Classroom/Troubleshooting/Account_Administration/how_to_change_password_when_integrated_via_appdirect.html',
+    from:
+      '/Classroom/Troubleshooting/Account_Administration/how_to_change_password_when_integrated_via_appdirect.html',
     to: '/ui/account-and-settings/password-reset-appdirect/',
   },
   {
-    from: '/Classroom/Troubleshooting/Account_Administration/how_to_change_the_password_for_your_sendgrid_add_on_via_openshift.html',
+    from:
+      '/Classroom/Troubleshooting/Account_Administration/how_to_change_the_password_for_your_sendgrid_add_on_via_openshift.html',
     to: '/ui/account-and-settings/password-reset-openshift/',
   },
   {
-    from: '/Classroom/Troubleshooting/Account_Administration/heroku_users_find_your_sendgrid_credentials.html',
+    from:
+      '/Classroom/Troubleshooting/Account_Administration/heroku_users_find_your_sendgrid_credentials.html',
     to: '/ui/account-and-settings/heroku-credentials/',
   },
   {
-    from: '/Classroom/Troubleshooting/Account_Administration/how_to_change_the_password_for_your_sendgrid_add_on_via_the_ibm_cloud_marketplace.html',
+    from:
+      '/Classroom/Troubleshooting/Account_Administration/how_to_change_the_password_for_your_sendgrid_add_on_via_the_ibm_cloud_marketplace.html',
     to: '/ui/account-and-settings/password-reset-ibm-cloud-marketplace/',
   },
   {
-    from: '/Classroom/Troubleshooting/Account_Administration/ip_access_management_has_locked_me_out_of_my_account.html',
+    from:
+      '/Classroom/Troubleshooting/Account_Administration/ip_access_management_has_locked_me_out_of_my_account.html',
     to: '/ui/account-and-settings/ip-access-management/',
   },
   {
-    from: '/Classroom/Troubleshooting/Account_Administration/i_didnt_receive_the_password_reset_email.html',
+    from:
+      '/Classroom/Troubleshooting/Account_Administration/i_didnt_receive_the_password_reset_email.html',
     to: '/ui/account-and-settings/password-reset-email/',
   },
   {
-    from: '/Classroom/Troubleshooting/Account_Administration/my_provision_was_declined_what_should_i_do.html',
+    from:
+      '/Classroom/Troubleshooting/Account_Administration/my_provision_was_declined_what_should_i_do.html',
     to: '/ui/account-and-settings/account/',
   },
   {
-    from: '/Classroom/Troubleshooting/Account_Administration/you_cannot_change_your_package_at_this_time_because_your_account_is_not_active.html',
+    from:
+      '/Classroom/Troubleshooting/Account_Administration/you_cannot_change_your_package_at_this_time_because_your_account_is_not_active.html',
     to: '/ui/account-and-settings/account/',
   },
   {
@@ -2036,19 +2328,23 @@ module.exports = [
     to: '/ui/account-and-settings/account/',
   },
   {
-    from: '/Classroom/Troubleshooting/Authentication/how_do_i_check_the_headers_raw_source_of_an_email.html',
-    to: '/ui/account-and-settings/checking-email-source/',
+    from:
+      '/Classroom/Troubleshooting/Authentication/how_do_i_check_the_headers_raw_source_of_an_email.html',
+    to: '/ui/sending-email/checking-email-source/',
   },
   {
-    from: '/Classroom/Troubleshooting/Authentication/my_emails_are_displaying_as_on_behalf_of_or_via_in_some_mail_clients.html',
+    from:
+      '/Classroom/Troubleshooting/Authentication/my_emails_are_displaying_as_on_behalf_of_or_via_in_some_mail_clients.html',
     to: '/ui/account-and-settings/how-to-set-up-domain-authentication/',
   },
   {
-    from: '/Classroom/Troubleshooting/Delivery_Issues/safely_test_your_sending_speed.html',
+    from:
+      '/Classroom/Troubleshooting/Delivery_Issues/safely_test_your_sending_speed.html',
     to: '/ui/account-and-settings/safely-test-your-sending-speed/',
   },
   {
-    from: '/Classroom/Troubleshooting/Delivery_Issues/troubleshooting_delays_and_latency.html',
+    from:
+      '/Classroom/Troubleshooting/Delivery_Issues/troubleshooting_delays_and_latency.html',
     to: '/ui/account-and-settings/troubleshooting-delays-and-latency ',
   },
   {
@@ -2101,7 +2397,7 @@ module.exports = [
   },
   {
     from: '/Glossary/sender_reputation.html',
-    to: '/blog/what-is-a-domain-reputation/',
+    to: 'https://sendgrid.com/blog/what-is-a-domain-reputation/',
   },
   {
     from: '/Glossary/triggering_events.html',
@@ -2196,28 +2492,36 @@ module.exports = [
     to: '/for-developers/sending-email/wordpress-subscription-widget/',
   },
   {
-    from: '/Integrate/Tutorials/Zapier/sending_for_gravity_forms_submissions.html',
-    to: '/for-developers/sending-email/zapier-sending-for-gravity-forms-submissions/',
+    from:
+      '/Integrate/Tutorials/Zapier/sending_for_gravity_forms_submissions.html',
+    to:
+      '/for-developers/sending-email/zapier-sending-for-gravity-forms-submissions/',
   },
   {
     from: '/Integrate/Tutorials/Zapier/sending_for_new_webhook_data.html',
     to: '/for-developers/sending-email/zapier-sending-for-new-webhook-data/',
   },
   {
-    from: '/Integrate/Tutorials/Zapier/sending_for_postgre_sql_row_matches.html',
-    to: '/for-developers/sending-email/zapier-sending-for-postgre-sql-row-matches/',
+    from:
+      '/Integrate/Tutorials/Zapier/sending_for_postgre_sql_row_matches.html',
+    to:
+      '/for-developers/sending-email/zapier-sending-for-postgre-sql-row-matches/',
   },
   {
     from: '/Integrate/Tutorials/Zapier/sending_from_google_sheet_rows.html',
     to: '/for-developers/sending-email/zapier-sending-from-google-sheet-rows/',
   },
   {
-    from: '/Integrate/Tutorials/Zapier/sending_to_tagged_infusionsoft_contacts.html',
-    to: '/for-developers/sending-email/zapier-sending-to-tagged-infusionsoft-contacts/',
+    from:
+      '/Integrate/Tutorials/Zapier/sending_to_tagged_infusionsoft_contacts.html',
+    to:
+      '/for-developers/sending-email/zapier-sending-to-tagged-infusionsoft-contacts/',
   },
   {
-    from: '/Integrate/Tutorials/Zapier/sending_when_new_firebase_child_records_added.html',
-    to: '/for-developers/sending-email/zapier-sending-when-new-firebase-child-records-added/',
+    from:
+      '/Integrate/Tutorials/Zapier/sending_when_new_firebase_child_records_added.html',
+    to:
+      '/for-developers/sending-email/zapier-sending-when-new-firebase-child-records-added/',
   },
   {
     from: '/Integrate/Mail_Clients/applemail.html',
@@ -2740,31 +3044,38 @@ module.exports = [
     to: '/ui/sending-email/index-suppressions/',
   },
   {
-    from: '/User_Guide/Email_Deliverability/Subscription_Tracking/advanced_suppression_manager.html',
+    from:
+      '/User_Guide/Email_Deliverability/Subscription_Tracking/advanced_suppression_manager.html',
     to: '/ui/sending-email/unsubscribe-groups/',
   },
   {
-    from: '/User_Guide/Email_Deliverability/Subscription_Tracking/defining_asm_groups.html',
+    from:
+      '/User_Guide/Email_Deliverability/Subscription_Tracking/defining_asm_groups.html',
     to: '/ui/sending-email/unsubscribe-groups/',
   },
   {
-    from: '/User_Guide/Email_Deliverability/Subscription_Tracking/recipient_subscription_preferences.html',
+    from:
+      '/User_Guide/Email_Deliverability/Subscription_Tracking/recipient_subscription_preferences.html',
     to: '/ui/sending-email/recipient-subscription-preferences/ ',
   },
   {
-    from: '/User_Guide/Email_Deliverability/Subscription_Tracking/suppressions_vs_unsubscribes.html',
+    from:
+      '/User_Guide/Email_Deliverability/Subscription_Tracking/suppressions_vs_unsubscribes.html',
     to: '/ui/sending-email/index-suppressions/',
   },
   {
-    from: '/User_Guide/Email_Deliverability/Subscription_Tracking/using_suppression_groups.html',
+    from:
+      '/User_Guide/Email_Deliverability/Subscription_Tracking/using_suppression_groups.html',
     to: '/ui/sending-email/index-suppressions/',
   },
   {
-    from: '/User_Guide/Email_Deliverability/Suppression_Tracking/advanced_suppression_manager.html',
+    from:
+      '/User_Guide/Email_Deliverability/Suppression_Tracking/advanced_suppression_manager.html',
     to: '/ui/sending-email/unsubscribe-groups/',
   },
   {
-    from: '/User_Guide/Email_Deliverability/Suppression_Tracking/defining_asm_groups.html',
+    from:
+      '/User_Guide/Email_Deliverability/Suppression_Tracking/defining_asm_groups.html',
     to: '/ui/sending-email/unsubscribe-groups/',
   },
   {
@@ -2772,23 +3083,28 @@ module.exports = [
     to: '/ui/sending-email/index-suppressions/',
   },
   {
-    from: '/User_Guide/Email_Deliverability/Suppression_Tracking/recipient_subscription_preferences.html',
+    from:
+      '/User_Guide/Email_Deliverability/Suppression_Tracking/recipient_subscription_preferences.html',
     to: '/ui/sending-email/recipient-subscription-preferences/ ',
   },
   {
-    from: '/User_Guide/Email_Deliverability/Suppression_Tracking/resubscription_of_users.html',
+    from:
+      '/User_Guide/Email_Deliverability/Suppression_Tracking/resubscription_of_users.html',
     to: '/ui/sending-email/recipient-subscription-preferences/ ',
   },
   {
-    from: '/User_Guide/Email_Deliverability/Suppression_Tracking/suppressions_vs_unsubscribes.html',
+    from:
+      '/User_Guide/Email_Deliverability/Suppression_Tracking/suppressions_vs_unsubscribes.html',
     to: '/ui/sending-email/index-suppressions/',
   },
   {
-    from: '/User_Guide/Email_Deliverability/Suppression_Tracking/using_suppression_groups.html',
+    from:
+      '/User_Guide/Email_Deliverability/Suppression_Tracking/using_suppression_groups.html',
     to: '/ui/sending-email/unsubscribe-groups/',
   },
   {
-    from: '/User_Guide/Email_Deliverability/Undelivered_Email/bounce_forwarding.html',
+    from:
+      '/User_Guide/Email_Deliverability/Undelivered_Email/bounce_forwarding.html',
     to: '/ui/account-and-settings/mail/',
   },
   {
@@ -2884,16 +3200,18 @@ module.exports = [
     to: '/ui/sending-email/content-delivery-networks/',
   },
   {
-    from: '/User_Guide/Setting_Up_Your_Server/Segmenting_Your_Traffic/index.html',
+    from:
+      '/User_Guide/Setting_Up_Your_Server/Segmenting_Your_Traffic/index.html',
     to: '/ui/managing-contacts/segmenting-your-contacts/',
   },
   {
-    from: '/User_Guide/Setting_Up_Your_Server/Segmenting_Your_Traffic/subusers.html',
+    from:
+      '/User_Guide/Setting_Up_Your_Server/Segmenting_Your_Traffic/subusers.html',
     to: '/ui/account-and-settings/subusers/',
   },
   {
     from: '/User_Guide/Setting_Up_Your_Server/smtp_ports.html',
-    to: '/for-developers/sending-email/sending-email-smtp/',
+    to: '/for-developers/sending-email/getting-started-smtp/',
   },
   {
     from: '/User_Guide/Setting_Up_Your_Server/warming_up_ips.html',
@@ -2916,7 +3234,8 @@ module.exports = [
     to: '/glossary/spf/',
   },
   {
-    from: '/User_Guide/Setting_Up_Your_Server/Whitelabeling/whitelabel_wizard.html',
+    from:
+      '/User_Guide/Setting_Up_Your_Server/Whitelabeling/whitelabel_wizard.html',
     to: '/ui/account-and-settings/how-to-set-up-domain-authentication/',
   },
   {
@@ -3208,23 +3527,28 @@ module.exports = [
     to: '/ui/sending-email/legacy-newsletter-sunset/',
   },
   {
-    from: '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/analytics.html',
+    from:
+      '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/analytics.html',
     to: '/ui/sending-email/marketing-campaigns-stats/',
   },
   {
-    from: '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/create_manage.html',
+    from:
+      '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/create_manage.html',
     to: '/ui/sending-email/how-to-send-email-with-marketing-campaigns/',
   },
   {
-    from: '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/dashboard.html',
+    from:
+      '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/dashboard.html',
     to: '/ui/sending-email/legacy-newsletter-sunset/',
   },
   {
-    from: '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/recipients.html',
+    from:
+      '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/recipients.html',
     to: '/ui/managing-contacts/create-and-manage-contacts/',
   },
   {
-    from: '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/sender_address.html',
+    from:
+      '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/sender_address.html',
     to: '/ui/sending-email/senders/',
   },
   {
@@ -3232,11 +3556,13 @@ module.exports = [
     to: '/ui/sending-email/editor/',
   },
   {
-    from: '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/unsubscribes.html',
+    from:
+      '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Features/unsubscribes.html',
     to: '/ui/sending-email/index-suppressions/',
   },
   {
-    from: '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/index.html',
+    from:
+      '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/index.html',
     to: '/ui/sending-email/legacy-newsletter-sunset/',
   },
   {
@@ -3244,71 +3570,88 @@ module.exports = [
     to: '/ui/sending-email/legacy-newsletter-sunset/',
   },
   {
-    from: '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/migration_checklist.html',
+    from:
+      '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/migration_checklist.html',
     to: '/ui/sending-email/legacy-newsletter-sunset/',
   },
   {
-    from: '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/index.html',
+    from:
+      '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/index.html',
     to: '/ui/sending-email/legacy-newsletter-sunset/',
   },
   {
-    from: '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_recipient_lists.html',
+    from:
+      '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_recipient_lists.html',
     to: '/ui/sending-email/legacy-newsletter-sunset/',
   },
   {
-    from: '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_unsubscribes.html',
+    from:
+      '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_unsubscribes.html',
     to: '/ui/sending-email/legacy-newsletter-sunset/',
   },
   {
-    from: '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_images.html',
+    from:
+      '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_images.html',
     to: '/ui/sending-email/legacy-newsletter-sunset/',
   },
   {
-    from: '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/downloading_historical_statistics.html',
+    from:
+      '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/downloading_historical_statistics.html',
     to: '/ui/sending-email/legacy-newsletter-sunset/',
   },
   {
-    from: '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/api_migration.html',
+    from:
+      '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/api_migration.html',
     to: '/ui/sending-email/legacy-newsletter-sunset/',
   },
   {
-    from: '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/Migrating_API.html',
+    from:
+      '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/Migrating_API.html',
     to: '/ui/sending-email/legacy-newsletter-sunset/',
   },
   {
-    from: '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/index.html',
+    from:
+      '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/index.html',
     to: '/ui/sending-email/legacy-newsletter-sunset/',
   },
   {
-    from: '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/campaign_building.html',
+    from:
+      '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/campaign_building.html',
     to: '/ui/sending-email/legacy-newsletter-sunset/',
   },
   {
-    from: '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/contact_management.html',
+    from:
+      '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/contact_management.html',
     to: '/ui/sending-email/legacy-newsletter-sunset/',
   },
   {
-    from: '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/statistics_reporting.html',
+    from:
+      '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/statistics_reporting.html',
     to: '/ui/sending-email/legacy-newsletter-sunset/',
   },
   {
-    from: '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/pricing.html',
+    from:
+      '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/pricing.html',
     to: '/ui/sending-email/legacy-newsletter-sunset/',
   },
   {
-    from: '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/api_comparison.html',
+    from:
+      '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/api_comparison.html',
     to: '/ui/sending-email/legacy-newsletter-sunset/',
   },
   {
-    from: '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/security_compliance.html',
+    from:
+      '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Side_by_Side_Comparisons/security_compliance.html',
     to: '/ui/sending-email/legacy-newsletter-sunset/',
   },
   {
-    from: '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_content.html',
+    from:
+      '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/Migration_Tutorials/migrating_content.html',
     to: '/ui/sending-email/legacy-newsletter-sunset/',
   },
   {
-    from: '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/letter_from_our_CPO.html',
+    from:
+      '/User_Guide/Legacy_Newsletter/Legacy_Newsletter_Migration/letter_from_our_CPO.html',
     to: '/ui/sending-email/legacy-newsletter-sunset/',
   },
   {
@@ -3332,11 +3675,13 @@ module.exports = [
     to: '/ui/managing-contacts/managing-contact-list/',
   },
   {
-    from: '/Classroom/Deliver/Address_Lists/where_did_you_get_my_address_permission_reminders.html',
+    from:
+      '/Classroom/Deliver/Address_Lists/where_did_you_get_my_address_permission_reminders.html',
     to: '/ui/managing-contacts/managing-contact-list/',
   },
   {
-    from: '/Classroom/Deliver/Address_Lists/let_old_addresses_sleep_in_peace.html',
+    from:
+      '/Classroom/Deliver/Address_Lists/let_old_addresses_sleep_in_peace.html',
     to: '/ui/managing-contacts/managing-contact-list/',
   },
   {
@@ -3344,31 +3689,38 @@ module.exports = [
     to: '/ui/managing-contacts/managing-contact-list/',
   },
   {
-    from: '/Classroom/Deliver/Address_Lists/preference_centers_giving_subscribers_control.html',
+    from:
+      '/Classroom/Deliver/Address_Lists/preference_centers_giving_subscribers_control.html',
     to: '/ui/managing-contacts/managing-contact-list/',
   },
   {
-    from: '/Classroom/Deliver/Address_Lists/affiliate_lists_and_list_sharing.html',
+    from:
+      '/Classroom/Deliver/Address_Lists/affiliate_lists_and_list_sharing.html',
     to: '/ui/managing-contacts/managing-contact-list/',
   },
   {
-    from: '/Classroom/Deliver/Address_Lists/peer_initiated_email_invitation_requirements.html',
+    from:
+      '/Classroom/Deliver/Address_Lists/peer_initiated_email_invitation_requirements.html',
     to: '/ui//managing-contacts/managing-contact-list/',
   },
   {
-    from: '/Classroom/Deliver/Address_Lists/tips_to_keep_your_list_organized.html',
+    from:
+      '/Classroom/Deliver/Address_Lists/tips_to_keep_your_list_organized.html',
     to: '/ui/managing-contacts/managing-contact-list/',
   },
   {
-    from: '/Classroom/Deliver/Address_Lists/tips_to_keep_your_list_organized.html',
+    from:
+      '/Classroom/Deliver/Address_Lists/tips_to_keep_your_list_organized.html',
     to: '/ui/managing-contacts/managing-contact-list/',
   },
   {
-    from: '/Classroom/Deliver/Address_Lists/why_purchased_email_lists_are_no_good.html',
+    from:
+      '/Classroom/Deliver/Address_Lists/why_purchased_email_lists_are_no_good.html',
     to: '/ui/managing-contacts/managing-contact-list/',
   },
   {
-    from: '/Classroom/Basics/Account/resetting_your_password_without_breaking_current_integrations.html',
+    from:
+      '/Classroom/Basics/Account/resetting_your_password_without_breaking_current_integrations.html',
     to: '/ui/account-and-settings/resetting-your-username-and-password/',
   },
   {
@@ -3376,16 +3728,20 @@ module.exports = [
     to: '/ui/account-and-settings/hippa-compliant/',
   },
   {
-    from: '/Classroom/Basics/Security/secure_upload_download_supression_lists.html',
-    to: '/ui/account-and-settings/hippa-compliant/',
+    from:
+      '/Classroom/Basics/Security/secure_upload_download_supression_lists.html',
+    to: '/',
+    gone: true,
   },
   {
     from: '/Classroom/Basics/Security/password.html',
     to: '/ui/account-and-settings/resetting-your-username-and-password/',
   },
   {
-    from: '/Classroom/Basics/Security/keeping_your_registration_form_secure.html',
-    to: '/ui/account-and-settings/hippa-compliant/',
+    from:
+      '/Classroom/Basics/Security/keeping_your_registration_form_secure.html',
+    to: '/',
+    gone: true,
   },
   {
     from: '/Classroom/Basics/Security/is_sendgrid_pci_compliant.html',
@@ -3393,14 +3749,15 @@ module.exports = [
   },
   {
     from: '/Classroom/Basics/Security/is_sendgrid_hipaa_compliant.html',
-    to: '/ui/account-and-settings/hippa-compliant/',
+    to: '/ui/account-and-settings/hipaa-compliant/',
   },
   {
     from: '/Classroom/Basics/Security/dont_share_your_password.html',
     to: '/ui/account-and-settings/resetting-your-username-and-password/',
   },
   {
-    from: '/User_Guide/Marketing_Campaigns/marketing_campaigns_video_tutorials.html',
+    from:
+      '/User_Guide/Marketing_Campaigns/marketing_campaigns_video_tutorials.html',
     to: '/ui/sending-email/how-to-send-email-with-marketing-campaigns/',
   },
   {
@@ -3408,7 +3765,8 @@ module.exports = [
     to: '/ui/sending-email/how-to-send-email-with-marketing-campaigns/',
   },
   {
-    from: '/Classroom/Basics/Marketing_Campaigns/marketing_campaigns_video_tutorials.html',
+    from:
+      '/Classroom/Basics/Marketing_Campaigns/marketing_campaigns_video_tutorials.html',
     to: '/ui/sending-email/how-to-send-email-with-marketing-campaigns/',
   },
   {
@@ -3436,19 +3794,23 @@ module.exports = [
     to: '/ui/account-and-settings/subusers/',
   },
   {
-    from: '/Classroom/Basics/Account/how_do_i_add_more_subusers_to_my_account.html',
+    from:
+      '/Classroom/Basics/Account/how_do_i_add_more_subusers_to_my_account.html',
     to: '/ui/account-and-settings/subusers/',
   },
   {
-    from: '/Classroom/Basics/Account/why_am_i_seeing_credential_resource_already_exists_when_i_am_creating_a_subuser_or_credential.html',
+    from:
+      '/Classroom/Basics/Account/why_am_i_seeing_credential_resource_already_exists_when_i_am_creating_a_subuser_or_credential.html',
     to: '/ui/account-and-settings/subusers/',
   },
   {
-    from: '/Classroom/Send/How_Emails_Are_Sent/how_do_i_send_mail_through_subuser_accounts.html',
+    from:
+      '/Classroom/Send/How_Emails_Are_Sent/how_do_i_send_mail_through_subuser_accounts.html',
     to: '/ui/account-and-settings/subusers/',
   },
   {
-    from: '/Classroom/Deliver/Delivery_Introduction/segment_your_email_traffic_with_subusers.html',
+    from:
+      '/Classroom/Deliver/Delivery_Introduction/segment_your_email_traffic_with_subusers.html',
     to: '/ui/account-and-settings/subusers/',
   },
   {
@@ -3468,11 +3830,13 @@ module.exports = [
     to: '/for-developers/sending-email/smtp-errors-and-troubleshooting/',
   },
   {
-    from: '/Classroom/Troubleshooting/Authentication/certificate_verification_failed.html',
+    from:
+      '/Classroom/Troubleshooting/Authentication/certificate_verification_failed.html',
     to: '/for-developers/sending-email/smtp-errors-and-troubleshooting/',
   },
   {
-    from: '/Classroom/Troubleshooting/Authentication/invalid_smtp_api_header.html',
+    from:
+      '/Classroom/Troubleshooting/Authentication/invalid_smtp_api_header.html',
     to: '/for-developers/sending-email/smtp-errors-and-troubleshooting/',
   },
   {
@@ -3480,7 +3844,8 @@ module.exports = [
     to: '/ui/sending-email/editor/',
   },
   {
-    from: '/Classroom/Troubleshooting/Account_Administration/recovering_your_username.html',
+    from:
+      '/Classroom/Troubleshooting/Account_Administration/recovering_your_username.html',
     to: '/ui/account-and-settings/reset-username-password/',
   },
   {
@@ -3500,7 +3865,8 @@ module.exports = [
     to: '/ui/account-and-settings/reading-your-invoice/',
   },
   {
-    from: '/Classroom/Basics/Billing/update_your_credit_card_and_resubmit_payments.html',
+    from:
+      '/Classroom/Basics/Billing/update_your_credit_card_and_resubmit_payments.html',
     to: '/ui/account-and-settings/billing/',
   },
   {
@@ -3536,15 +3902,18 @@ module.exports = [
     to: '/ui/account-and-settings/billing/',
   },
   {
-    from: '/Classroom/Basics/Billing/how_does_billing_work_for_marketing_campaigns.html',
+    from:
+      '/Classroom/Basics/Billing/how_does_billing_work_for_marketing_campaigns.html',
     to: '/ui/account-and-settings/billing/',
   },
   {
-    from: '/Classroom/Basics/Billing/how_does_billing_work_for_legacy_newsletter.html',
+    from:
+      '/Classroom/Basics/Billing/how_does_billing_work_for_legacy_newsletter.html',
     to: '/ui/account-and-settings/billing/',
   },
   {
-    from: '/Classroom/Basics/Billing/how_do_i_upgrade_or_downgrade_my_account.html',
+    from:
+      '/Classroom/Basics/Billing/how_do_i_upgrade_or_downgrade_my_account.html',
     to: '/ui/account-and-settings/billing/',
   },
   {
@@ -3552,7 +3921,8 @@ module.exports = [
     to: '/ui/account-and-settings/billing/',
   },
   {
-    from: '/Classroom/Basics/Billing/did_you_receive_a_billing_notification.html',
+    from:
+      '/Classroom/Basics/Billing/did_you_receive_a_billing_notification.html',
     to: '/ui/account-and-settings/billing/',
   },
   {
@@ -3560,7 +3930,8 @@ module.exports = [
     to: '/ui/account-and-settings/billing/',
   },
   {
-    from: '/Classroom/Basics/Account/why_are_the_pro_plans_recommended_above_all_others.html',
+    from:
+      '/Classroom/Basics/Account/why_are_the_pro_plans_recommended_above_all_others.html',
     to: '/pricing/',
   },
   {
@@ -3584,19 +3955,23 @@ module.exports = [
     to: '/ui/analytics-and-reporting/email-activity-feed/',
   },
   {
-    from: '/Classroom/Troubleshooting/Delivery_Issues/max_connection_limit.html',
+    from:
+      '/Classroom/Troubleshooting/Delivery_Issues/max_connection_limit.html',
     to: '/ui/analytics-and-reporting/email-activity-feed/',
   },
   {
-    from: '/Classroom/Troubleshooting/Delivery_Issues/my_client_is_complaining_that_they_have_not_received_an_email.html',
+    from:
+      '/Classroom/Troubleshooting/Delivery_Issues/my_client_is_complaining_that_they_have_not_received_an_email.html',
     to: '/ui/analytics-and-reporting/email-activity-feed/',
   },
   {
-    from: '/Classroom/Track/Introduction/how_can_i_tell_if_an_email_was_actually_delivered.html',
+    from:
+      '/Classroom/Track/Introduction/how_can_i_tell_if_an_email_was_actually_delivered.html',
     to: '/ui/analytics-and-reporting/email-activity-feed/',
   },
   {
-    from: '/Classroom/Track/Introduction/discrepancies_between_requests_and_deliveries.html',
+    from:
+      '/Classroom/Track/Introduction/discrepancies_between_requests_and_deliveries.html',
     to: '/ui/analytics-and-reporting/email-activity-feed/',
   },
   {
@@ -3612,15 +3987,18 @@ module.exports = [
     to: '/ui/analytics-and-reporting/email-activity-feed/',
   },
   {
-    from: '/Classroom/Track/Collecting_Data/can_i_download_a_list_of_click_and_or_open_events.html',
+    from:
+      '/Classroom/Track/Collecting_Data/can_i_download_a_list_of_click_and_or_open_events.html',
     to: '/ui/analytics-and-reporting/email-activity-feed/',
   },
   {
-    from: '/Classroom/Track/Bounces/implementing_bounce_notification_for_multiple_from_addresses.html',
+    from:
+      '/Classroom/Track/Bounces/implementing_bounce_notification_for_multiple_from_addresses.html',
     to: '/ui/sending-email/bounces/',
   },
   {
-    from: '/Classroom/Track/Bounces/how_to_set_up_bounce_forwarding_to_go_to_the_emails_from_address.html',
+    from:
+      '/Classroom/Track/Bounces/how_to_set_up_bounce_forwarding_to_go_to_the_emails_from_address.html',
     to: '/ui/analytics-and-reporting/email-activity-feed/',
   },
   {
@@ -3628,7 +4006,8 @@ module.exports = [
     to: '/ui/sending-email/bounces/',
   },
   {
-    from: '/Classroom/Track/Bounces/delete_from_bounce_list_option_in_email_activity.html',
+    from:
+      '/Classroom/Track/Bounces/delete_from_bounce_list_option_in_email_activity.html',
     to: '/ui/analytics-and-reporting/email-activity-feed/',
   },
   {
@@ -3640,7 +4019,8 @@ module.exports = [
     to: '/ui/analytics-and-reporting/email-activity-feed/',
   },
   {
-    from: '/Classroom/Deliver/Undeliverable_Email/why_did_my_message_show_as_delivered_first_then_as_bounced.html',
+    from:
+      '/Classroom/Deliver/Undeliverable_Email/why_did_my_message_show_as_delivered_first_then_as_bounced.html',
     to: '/ui/analytics-and-reporting/email-activity-feed/',
   },
   {
@@ -3648,7 +4028,8 @@ module.exports = [
     to: '',
   },
   {
-    from: '/Classroom/Troubleshooting/Authentication/list_upload_troubleshooting.html',
+    from:
+      '/Classroom/Troubleshooting/Authentication/list_upload_troubleshooting.html',
     to: '/ui/managing-contacts/formatting-a-csv/',
   },
   {
@@ -3656,7 +4037,8 @@ module.exports = [
     to: '/ui/managing-contacts/create-and-manage-contacts/',
   },
   {
-    from: '/Classroom/Basics/Marketing_Campaigns/how_to_remove_unusable_contacts.html',
+    from:
+      '/Classroom/Basics/Marketing_Campaigns/how_to_remove_unusable_contacts.html',
     to: '/ui/managing-contacts/managing-contact-list/',
   },
   {
@@ -3668,7 +4050,8 @@ module.exports = [
     to: '/ui/managing-contacts/segmenting-your-contacts/',
   },
   {
-    from: '/Classroom/Deliver/Delivery_Introduction/keep_in_touch_the_importance_of_engagement.html',
+    from:
+      '/Classroom/Deliver/Delivery_Introduction/keep_in_touch_the_importance_of_engagement.html',
     to: '/ui/managing-contacts/building-your-contact-list/',
   },
   {
@@ -3676,7 +4059,8 @@ module.exports = [
     to: '/ui/managing-contacts/segmenting-your-contacts/',
   },
   {
-    from: '/Classroom/Send/Who_You_Can_Send_To/can_i_send_to_purchased_lists.html',
+    from:
+      '/Classroom/Send/Who_You_Can_Send_To/can_i_send_to_purchased_lists.html',
     to: '/ui/managing-contacts/building-your-contact-list/',
   },
   {
@@ -3684,11 +4068,13 @@ module.exports = [
     to: '/ui/account-and-settings/teammates/',
   },
   {
-    from: '/Classroom/Basics/Account/what_is_the_difference_between_subusers_and_multiple_credentials.html',
+    from:
+      '/Classroom/Basics/Account/what_is_the_difference_between_subusers_and_multiple_credentials.html',
     to: '/ui/account-and-settings/teammates/',
   },
   {
-    from: '/Classroom/Basics/Account/resetting_your_password_as_a_teammate.html',
+    from:
+      '/Classroom/Basics/Account/resetting_your_password_as_a_teammate.html',
     to: '/ui/account-and-settings/teammates/',
   },
   {
@@ -3700,7 +4086,8 @@ module.exports = [
     to: '/ui/account-and-settings/teammates/',
   },
   {
-    from: '/Classroom/Troubleshooting/a_custom_field_value_did_not_substitute_during_a_send.html',
+    from:
+      '/Classroom/Troubleshooting/a_custom_field_value_did_not_substitute_during_a_send.html',
     to: '/ui/managing-contacts/custom-fields/',
   },
   {
@@ -3708,7 +4095,8 @@ module.exports = [
     to: '/ui/managing-contacts/custom-fields/',
   },
   {
-    from: '/Classroom/Troubleshooting/Authentication/you_have_used_a_reserved_field_name_for_your_custom_field.html#',
+    from:
+      '/Classroom/Troubleshooting/Authentication/you_have_used_a_reserved_field_name_for_your_custom_field.html#',
     to: '/ui/managing-contacts/custom-fields/',
   },
   {
@@ -3740,10 +4128,6 @@ module.exports = [
     to: '/for-developers/tracking-events/event-webhook/',
   },
   {
-    from: '/API_Reference/Webhooks/inbound_email.html',
-    to: '/for-developers/parsing-email/inbound-email/',
-  },
-  {
     from: '/Classroom/Basics/API/why_event_api.html',
     to: '/for-developers/tracking-events/event-webhook/',
   },
@@ -3760,8 +4144,10 @@ module.exports = [
     to: '/ui/sending-email/create-and-edit-transactional-templates/',
   },
   {
-    from: '/User_Guide/Transactional_Templates/how_to_send_an_email_with_dynamic_transactional_templates.html',
-    to: '/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/',
+    from:
+      '/User_Guide/Transactional_Templates/how_to_send_an_email_with_dynamic_transactional_templates.html',
+    to:
+      '/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/',
   },
   {
     from: '/User_Guide/Transactional_Templates/using_handlebars.html',
@@ -3788,7 +4174,8 @@ module.exports = [
     to: '/ui/account-and-settings/how-to-set-up-domain-authentication/',
   },
   {
-    from: '/User_Guide/Settings/Sender_Authentication/how-to-set-up-domain-authentication.html',
+    from:
+      '/User_Guide/Settings/Sender_Authentication/how-to-set-up-domain-authentication.html',
     to: '/ui/account-and-settings/how-to-set-up-domain-authentication/',
   },
   {
@@ -3796,35 +4183,43 @@ module.exports = [
     to: '/ui/account-and-settings/how-to-set-up-domain-authentication/',
   },
   {
-    from: '/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html',
+    from:
+      '/User_Guide/Settings/Sender_authentication/How_to_set_up_domain_authentication.html',
     to: '/ui/account-and-settings/how-to-set-up-domain-authentication/',
   },
   {
-    from: '/Classroom/Troubleshooting/Authentication/whitelabel_video_tutorials.html',
+    from:
+      '/Classroom/Troubleshooting/Authentication/whitelabel_video_tutorials.html',
     to: '/ui/account-and-settings/how-to-set-up-domain-authentication/',
   },
   {
-    from: '/Classroom/Troubleshooting/Authentication/upgrading_your_whitelabel.html',
+    from:
+      '/Classroom/Troubleshooting/Authentication/upgrading_your_whitelabel.html',
     to: '/ui/account-and-settings/how-to-set-up-domain-authentication/',
   },
   {
-    from: '/Classroom/Troubleshooting/Authentication/i_have_created_dns_records_but_the_whitelabel_wizard_is_not_validating_them.html',
+    from:
+      '/Classroom/Troubleshooting/Authentication/i_have_created_dns_records_but_the_whitelabel_wizard_is_not_validating_them.html',
     to: '/ui/sending-email/troubleshooting/',
   },
   {
-    from: '/Classroom/Troubleshooting/Authentication/dns_records_and_underscores.html',
+    from:
+      '/Classroom/Troubleshooting/Authentication/dns_records_and_underscores.html',
     to: '/ui/sending-email/troubleshooting/',
   },
   {
-    from: '/Classroom/Deliver/Sender_Authentication/what_is_automated_security_in_the_whitelabel_settings.html',
+    from:
+      '/Classroom/Deliver/Sender_Authentication/what_is_automated_security_in_the_whitelabel_settings.html',
     to: '/ui/account-and-settings/how-to-set-up-domain-authentication/',
   },
   {
-    from: '/Classroom/Deliver/Delivery_Introduction/creating_and_whitelabeling_a_subuser_to_a_new_sending_domain.html',
+    from:
+      '/Classroom/Deliver/Delivery_Introduction/creating_and_whitelabeling_a_subuser_to_a_new_sending_domain.html',
     to: '/ui/account-and-settings/how-to-set-up-domain-authentication/',
   },
   {
-    from: '/Classroom/Deliver/Delivery_Introduction/all_you_need_to_know_about_whitelabeling.html',
+    from:
+      '/Classroom/Deliver/Delivery_Introduction/all_you_need_to_know_about_whitelabeling.html',
     to: '/ui/account-and-settings/how-to-set-up-domain-authentication/',
   },
   {
@@ -3856,11 +4251,13 @@ module.exports = [
     to: '/glossary/whitelabel/',
   },
   {
-    from: '/User_Guide/Settings/Sender_Authentication/How_to_set_up_reverse_DNS.html',
+    from:
+      '/User_Guide/Settings/Sender_Authentication/How_to_set_up_reverse_DNS.html',
     to: '/ui/account-and-settings/how-to-set-up-reverse-dns/',
   },
   {
-    from: '/User_Guide/Settings/Sender_Authentication/how-to-set-up-link-branding.html',
+    from:
+      '/User_Guide/Settings/Sender_Authentication/how-to-set-up-link-branding.html',
     to: '/ui/account-and-settings/how-to-set-up-link-branding/',
   },
   {
@@ -3940,23 +4337,28 @@ module.exports = [
     to: '/ui/sending-email/editor/',
   },
   {
-    from: '/User_Guide/Marketing_Campaigns/Managing_Contacts/building_your_contact_list.html',
+    from:
+      '/User_Guide/Marketing_Campaigns/Managing_Contacts/building_your_contact_list.html',
     to: '/ui/managing-contacts/building-your-contact-list/',
   },
   {
-    from: '/User_Guide/Marketing_Campaigns/Managing_Contacts/adding_contacts.html',
+    from:
+      '/User_Guide/Marketing_Campaigns/Managing_Contacts/adding_contacts.html',
     to: '/ui/managing-contacts/create-and-manage-contacts/',
   },
   {
-    from: '/User_Guide/Marketing_Campaigns/Managing_Contacts/formatting_a_CSV.html',
+    from:
+      '/User_Guide/Marketing_Campaigns/Managing_Contacts/formatting_a_CSV.html',
     to: '/ui/managing-contacts/formatting-a-csv/',
   },
   {
-    from: '/User_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html',
+    from:
+      '/User_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html',
     to: '/ui/managing-contacts/managing-contact-list/',
   },
   {
-    from: '/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html',
+    from:
+      '/User_Guide/Marketing_Campaigns/Managing_Contacts/segmenting_your_contacts.html',
     to: '/ui/managing-contacts/segmenting-your-contacts/',
   },
   {
@@ -4040,7 +4442,8 @@ module.exports = [
     to: '/ui/analytics-and-reporting/spam-reports/',
   },
   {
-    from: '/User_Guide/Transactional_Templates/create_and_edit_transactional_templates.html',
+    from:
+      '/User_Guide/Transactional_Templates/create_and_edit_transactional_templates.html',
     to: '/ui/sending-email/create-and-edit-transactional-templates/',
   },
   {
@@ -4112,15 +4515,18 @@ module.exports = [
     to: '/ui/account-and-settings/two-factor-authentication/ ',
   },
   {
-    from: '/User_Guide/Settings/Sender_authentication/how-to-set-up-domain-authentication.html',
+    from:
+      '/User_Guide/Settings/Sender_authentication/how-to-set-up-domain-authentication.html',
     to: '/ui/account-and-settings/how-to-set-up-domain-authentication/',
   },
   {
-    from: '/User_Guide/Settings/Sender_authentication/how-to-set-up-link-branding.html',
+    from:
+      '/User_Guide/Settings/Sender_authentication/how-to-set-up-link-branding.html',
     to: '/ui/account-and-settings/how-to-set-up-link-branding/',
   },
   {
-    from: '/User_Guide/Settings/Sender_authentication/how-to-set-up-reverse-dns.html',
+    from:
+      '/User_Guide/Settings/Sender_authentication/how-to-set-up-reverse-dns.html',
     to: '/ui/account-and-settings/how-to-set-up-reverse-dns/',
   },
   {
@@ -4528,15 +4934,655 @@ module.exports = [
     to: '/api-reference/',
   },
   {
-    from: '/Classroom/Deliver/Undeliverable_Email/my_emails_are_going_to_spam.html',
+    from:
+      '/Classroom/Deliver/Undeliverable_Email/my_emails_are_going_to_spam.html',
     to: '/ui/sending-email/deliverability/',
   },
   {
-    from: '/User_Guide/Settings/Sender_Authentication/How_to_set_up_domain_authentication.html',
+    from:
+      '/User_Guide/Settings/Sender_Authentication/How_to_set_up_domain_authentication.html',
     to: '/ui/account-and-settings/how-to-set-up-domain-authentication/',
   },
   {
-    from: '/ui/ads',
+    from:
+      '/User_Guide/Settings/Sender_Authentication/How_to_set_up_link_branding.html',
+    to: '/ui/account-and-settings/how-to-set-up-link-branding/',
+  },
+  {
+    from: '/User_Guide/Marketing_Campaigns/Managing_Contacts_lists.html',
+    to: '/ui/managing-contacts/managing-contact-list/',
+  },
+  {
+    from: '/User_Guide/Marketing_Campaigns/Managing_Contacts/format_CSV.html',
+    to: '/ui/managing-contacts/formatting-a-csv/',
+  },
+  {
+    from:
+      '/User_Guide/Transactional_Templates/create__and_edit_transactional_templates.html',
+    to: '/ui/sending-email/create-and-edit-transactional-templates/',
+  },
+  {
+    from:
+      '/User_Guide/MarketingUser_Guide/Marketing_Campaigns/Managing_Contacts/managing_contact_list.html',
+    to: '/ui/managing-contacts/building-your-contact-list/',
+  },
+  {
+    from: '/User_Guide/Account_Management/cancel_account.html',
+    to: '/ui/account-and-settings/cancel-your-account/',
+  },
+  {
+    from: '/User_Guide/Marketing_Campaigns/formatting_a_CSV.html',
+    to: '/ui/managing-contacts/formatting-a-csv/',
+  },
+  {
+    from: '/User_Guide/Legacy_Newsletter/recipients.html',
+    to: '/ui/managing-contacts/managing-contact-list/',
+  },
+  {
+    from:
+      '/User_Guide/Transactional_Templates/Create_and_edit_dynamic_transactional_templates.html',
+    to:
+      '/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/',
+  },
+  {
+    from:
+      '/Classroom/Deliver/Undeliverable_Email/help_my_emails_arent_being_delivered.html',
+    to: '/ui/sending-email/deliverability/',
+  },
+  {
+    from: '/Classroom/Send/v3_Mail_Send/curl_examples.html',
+    to: '/for-developers/sending-email/curl-examples/',
+  },
+  {
+    from:
+      '/Classroom/Deliver/Undeliverable_Email/why_is_sendgrid_net_greylisted.html',
+    to: '/ui/sending-email/deliverability/',
+  },
+  {
+    from:
+      '/Classroom/Deliver/Undeliverable_Email/my_emails_are_being_dropped.html',
+    to: '/glossary/drops/',
+  },
+  {
+    from:
+      '/Classroom/Deliver/Undeliverable_Email/what_do_i_do_if_im_blacklisted.html',
+    to: '/ui/sending-email/deliverability/',
+  },
+  {
+    from: '/Glossary/drops.html',
+    to: '/glossary/drops/',
+  },
+  {
+    from: '/Classroom/Basics/API/api_key_permissions.html',
+    to: '/ui/account-and-settings/api-keys/',
+  },
+  {
+    from: '/Classroom/Basics/Email_Infrastructure/ssl_vs_tls.html',
+    to: '/ui/sending-email/deliverability/',
+  },
+  {
+    from: '/User_Guide/Statistics/category_compare.html',
+    to: '/ui/analytics-and-reporting/category-comparison/',
+  },
+  {
+    from: '/Integrate/Tutorials/piesync.html',
+    to: '/for-developers/sending-email/piesync/',
+  },
+  {
+    from:
+      '/Classroom/Deliver/Undeliverable_Email/how_do_i_keep_emails_from_dropping.html',
+    to: '/ui/sending-email/deliverability/',
+  },
+  {
+    from:
+      '/User_Guide/Settings/Sender_authentication/How_to_set_up_reverse_dns.html',
+    to: '/ui/account-and-settings/how-to-set-up-reverse-dns/',
+  },
+  {
+    from: '/Classroom/Basics/Misc/your_reputation_what_is_it.html',
+    to: '/ui/sending-email/deliverability/',
+  },
+  {
+    from: '/User_Guide/Settings/taxes_and_tax_exempt.html',
+    to: '/ui/account-and-settings/taxes-and-tax-exempt/',
+  },
+  {
+    from: '/release_notes.html',
+    to: '/release-notes/',
+  },
+  {
+    from:
+      '/Classroom/Deliver/Undeliverable_Email/google_feedback_loop_spam_complaints.html',
+    to: '/ui/sending-email/deliverability/',
+  },
+  {
+    from: '/Classroom/Deliver/Undeliverable_Email/spam_trapped.html',
+    to: '/ui/sending-email/deliverability/',
+  },
+  {
+    from: '/Integrate/Tutorials/Zapier/index.html',
+    to: '/for-developers/sending-email/zapier-sending-for-new-webhook-data/',
+  },
+  {
+    from: '/Classroom/Send/v3_Mail_Send/index.html',
+    to: '/api-reference/',
+  },
+  {
+    from:
+      '/User_Guide/Settings/Sender_authentication/How_to_set_up_link_branding.html',
+    to: '/glossary/link-branding/',
+  },
+  {
+    from:
+      '/User_Guide/Transactional_Templates/migrating_from_legacy_templates.html',
+    to: '/ui/sending-email/migrating-from-legacy-templates/',
+  },
+  {
+    from: '/User_Guide/Marketing_Campaigns/templates.html',
+    to: '/ui/sending-email/create-and-edit-transactional-templates/',
+  },
+  {
+    from: '/Integrate/Tutorials/EngineYard.html',
+    to: '/for-developers/partners/google/',
+  },
+  {
+    from:
+      '/User_Guide/Marketing_Campaigns/Managing_Contacts/formating_a_CSV.html',
+    to: '/ui/managing-contacts/formatting-a-csv/',
+  },
+  {
+    from: '/Integrate/Open_Source_Apps/modx.html',
+    to: '/for-developers/sending-email/modx/',
+  },
+  {
+    from: '/ui/sending-email/reputation/',
+    to: '/ui/sending-email/deliverability/',
+  },
+  {
+    from: '/API_Reference/Webhooks/inbound_email.html',
+    to: '/for-developers/parsing-email/inbound-email/',
+  },
+  {
+    from: '/API_Reference/',
+    to: '/API_Reference/index.html',
+  },
+  {
+    from: '/ui/sending-email/create-and-edit-transactional-templates/',
+    to: '/ui/sending-email/create-and-edit-legacy-transactional-templates/',
+  },
+  {
+    from:
+      '/API_Reference/Web_API_v3/Tutorials/getting_started_email_activity_api.html',
+    to: '/for-developers/sending-email/getting-started-email-activity-api/',
+  },
+  {
+    from: '/API_Reference/SMTP_AP/getting_started_smtp.html',
+    to: '/for-developers/sending-email/getting-started-smtp/',
+  },
+  {
+    from: '/ui/managing-contacts/adding-contacts/',
+    to: '/ui/managing-contacts/create-and-manage-contacts/',
+  },
+  {
+    from: '/ui/sending-email/working-with-marketing-templates/',
+    to: '/ui/sending-email/working-with-marketing-campaigns-email-designs/',
+  },
+  {
+    from: '/ui/managing-contacts/managing-contact-list/',
+    to: '/ui/managing-contacts/create-and-manage-contacts/',
+  },
+  {
+    from: '/ui/ads/',
     to: '/',
+  },
+  {
+    from:
+      '/User_Guide/Marketing_Campaigns/create-and-manage-unsubscribe-groups.html',
+    to: '/ui/sending-email/create-and-manage-unsubscribe-groups/',
+  },
+  {
+    from: '/User_Guide/Statistics/browser_compare.html',
+    to: '/ui/analytics-and-reporting/browser-comparison/',
+  },
+  {
+    from: '/ui/analytics-and-reporting/mailbox-provider/',
+    to: '/ui/analytics-and-reporting/mailbox-provider-comparison/',
+  },
+  {
+    from: '/ui/sending-email/using-handlebars/',
+    to: '/for-developers/sending-email/using-handlebars/',
+  },
+  {
+    from: '/API_Reference/api_getting_started.html',
+    to: '/for-developers/sending-email/api-getting-started/',
+  },
+  {
+    from: '/API_Reference/index.html',
+    to: '/for-developers/',
+  },
+  {
+    from: '/API_Reference/SMTP_API/getting_started_smtp.html',
+    to: '/for-developers/sending-email/getting-started-smtp/',
+  },
+  {
+    from: '/API_Reference/SMTP_API/integrating_with_the_smtp_api.html',
+    to: '/for-developers/sending-email/integrating-with-the-smtp-api/',
+  },
+  {
+    from: '/API_Reference/SMTP_API/building_an_smtp_email.html',
+    to: '/for-developers/sending-email/building-an-x-smtpapi-header/',
+  },
+  {
+    from:
+      '/API_Reference/SMTP_API/how_to_use_a_transactional_template_with_smtp.html',
+    to:
+      '/for-developers/sending-email/how-to-use-a-transactional-template-with-smtp-or-v2/',
+  },
+  {
+    from: '/API_Reference/SMTP_API/scheduling_parameters.html',
+    to: '/for-developers/sending-email/scheduling-parameters/',
+  },
+  {
+    from: '/API_Reference/SMTP_API/section_tags.html',
+    to: '/for-developers/sending-email/section-tags/',
+  },
+  {
+    from: '/API_Reference/SMTP_API/substitution_tags.html',
+    to: '/for-developers/sending-email/substitution-tags/',
+  },
+  {
+    from: '/API_Reference/SMTP_API/suppressions.html',
+    to: '/for-developers/sending-email/suppressions/',
+  },
+  {
+    from: '/API_Reference/SMTP_API/unique_arguments.html',
+    to: '/for-developers/sending-email/unique-arguments/',
+  },
+  {
+    from: '/API_Reference/SMTP_API/apps.html',
+    to: '/for-developers/sending-email/smtp-filters/',
+  },
+  {
+    from: '/API_Reference/SMTP_API/categories.html',
+    to: '/for-developers/sending-email/categories/',
+  },
+  {
+    from: '/API_Reference/SMTP_API/errors_and_troubleshooting.html',
+    to: '/for-developers/sending-email/smtp-errors-and-troubleshooting/',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/index.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/alerts.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/alerts',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/blocks.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/blocks-api/retrieve-all-blocks',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/bounces.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/bounces-api/',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/invalid_emails.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/invalid-emails-api/',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/spam_reports.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/spam-reports-api/',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/subusers.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/subusers-api/',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/teammates.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/teammates/',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/user.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/users-api/',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/cancel_schedule_send.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/cancel-scheduled-sends/',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/ip_access_management.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/ip-access-management/',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/API_Keys/index.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/api-keys/',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/API_Keys/api_key_permissions_list.html',
+    to:
+      'https://sendgrid.api-docs.io/v3.0/api-key-permissions/api-key-permissions',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/API_Keys/api_keys_permissions.html',
+    to:
+      'https://sendgrid.api-docs.io/v3.0/api-key-permissions/retrieve-a-list-of-scopes-for-which-this-user-has-access',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/How_To_Use_The_Web_API_v3/index.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api',
+  },
+  {
+    from:
+      '/API_Reference/Web_API_v3/How_To_Use_The_Web_API_v3/authentication.html',
+    to:
+      'https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-authentication',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/How_To_Use_The_Web_API_v3/requests.html',
+    to:
+      'https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-requests',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/How_To_Use_The_Web_API_v3/responses.html',
+    to:
+      'https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-responses',
+  },
+  {
+    from:
+      '/API_Reference/Web_API_v3/How_To_Use_The_Web_API_v3/rate_limits.html',
+    to:
+      'https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-rate-limits',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/How_To_Use_The_Web_API_v3/errors.html',
+    to:
+      'https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-errors',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/Categories/categories.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/categories/',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/IP_Management/ip_addresses.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/ip-addresses/',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/IP_Management/ip_pools.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/ip-pools/',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/IP_Management/index.html',
+    to: '/ui/account-and-settings/dedicated-ip-addresses/',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/IP_Management/ip_warmup.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/ip-warmup/',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/Mail/index.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/mail-send/',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/Mail/errors.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/mail-send/mail-send-errors',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/Settings/index.html',
+    to: '/ui/account-and-settings/mail/',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/Settings/mail.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/settings-mail',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/Settings/partners.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/settings-partner/',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/Settings/tracking.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/settings-tracking/',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/Stats/index.html',
+    to:
+      'https://sendgrid.api-docs.io/v3.0/stats/retrieve-global-email-statistics',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/Stats/global.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/stats/',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/Stats/categories.html',
+    to:
+      'https://sendgrid.api-docs.io/v3.0/categories/retrieve-email-statistics-for-categories',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/Stats/subusers.html',
+    to:
+      'https://sendgrid.api-docs.io/v3.0/subusers-api/retrieve-email-statistics-for-your-subusers',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/Stats/advanced.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/stats',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/Stats/parse.html',
+    to:
+      'https://sendgrid.api-docs.io/v3.0/webhooks/retrieves-inbound-parse-webhook-statistics',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/Suppression_Management/index.html',
+    to: '/ui/sending-email/index-suppressions/',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/Suppression_Management/groups.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/suppressions-unsubscribe-groups/',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/Suppression_Management/suppressions.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/suppressions-suppressions',
+  },
+  {
+    from:
+      '/API_Reference/Web_API_v3/Suppression_Management/global_suppressions.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/suppressions-global-suppressions/',
+  },
+  {
+    from: '/API_Reference/Parse_Webhook/inbound_email.html',
+    to: '/for-developers/parsing-email/inbound-email/',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/Marketing_Campaigns/index.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/campaigns-api',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/campaigns-api/',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/contacts-api-lists/create-a-list',
+  },
+  {
+    from:
+      '/API_Reference/Web_API_v3/Marketing_Campaigns/sender_identities.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/sender-identities-api/',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/Transactional_Templates/index.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/transactional-templates/',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/Transactional_Templates/templates.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/transactional-templates/',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/Transactional_Templates/versions.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/transactional-templates-versions',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/Webhooks/event.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/webhooks',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/Webhooks/parse.html',
+    to:
+      'https://sendgrid.api-docs.io/v3.0/webhooks/retrieve-parse-webhook-settings',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/Whitelabel/domains.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/domain-authentication',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/Whitelabel/ips.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/reverse-dns',
+  },
+  {
+    from: '/API_Reference/Web_API_v3/Whitelabel/links.html',
+    to: 'https://sendgrid.api-docs.io/v3.0/link-branding',
+  },
+  {
+    from: '/API_Reference/Parse_Webhook/inbound_email.html',
+    to: '/for-developers/parsing-email/inbound-email/',
+  },
+  {
+    from: '/for-developers/sending-email/building-an-smtp-email/',
+    to: '/for-developers/sending-email/building-an-x-smtpapi-header/',
+  },
+  {
+    from: '/for-developers/sending-email/sandbox/',
+    to: '/for-developers/sending-email/sandbox-mode/',
+  },
+  {
+    from: '/for-developers/sending-email/sending-email-api/',
+    to: '/for-developers/sending-email/api-getting-started/',
+  },
+  {
+    from: '/ui/account-and-settings/sending-email/global-unsubscribes/',
+    to: '/ui/sending-email/global-unsubscribes/',
+  },
+  {
+    from:
+      '/ui/account-and-settings/sending-email/how-to-send-email-with-marketing-campaigns/',
+    to: '/ui/sending-email/how-to-send-email-with-marketing-campaigns/',
+  },
+  {
+    from:
+      '/ui/account-and-settings/sending-email/how-to-send-email-with-marketing-campaigns/',
+    to: '/ui/sending-email/how-to-send-email-with-marketing-campaigns/',
+  },
+  {
+    from: '/report-spam/',
+    to: '/ui/account-and-settings/support/',
+  },
+  {
+    from: '/ui/account-and-settings/hippa-compliant/',
+    to: '/ui/account-and-settings/hipaa-compliant/',
+  },
+  {
+    from: '/ui/sending-email/custom-ssl-configurations/',
+    to: '/ui/account-and-settings/custom-ssl-configurations/',
+  },
+  {
+    from: '/Classroom/Build/Choose_Content/gmail_promotions_tab.html',
+    to: 'https://sendgrid.com/blog/i-fought-the-tabs-and-the-tabs-won/',
+  },
+  {
+    from: '/resource/general-data-protection-regulation/',
+    to: '/glossary/gdpr/',
+  },
+  {
+    from: '/ui/sending-email/sendmail/',
+    to: '/for-developers/sending-email/sendmail/',
+  },
+  {
+    from: '/for-developers/sending-email/sending-email-smtp/',
+    to: '/for-developers/sending-email/getting-started-smtp/',
+  },
+  {
+    from: '/ui/sending-email/can-i-send-adult-content-in-my-emails/',
+    to: '/ui/sending-email/deliverability/#sending-adult-content',
+  },
+  {
+    from: '/ui/analytics-and-reporting/click-tracking/',
+    to: '/ui/analytics-and-reporting/click-tracking-html-best-practices/',
+  },
+  {
+    from: '/ui/sending-email/unsubcribe-groups/',
+    to: '/ui/sending-email/unsubscribe-groups/',
+  },
+  {
+    from: '/ui/analytics-and-reporting/subscription-tracking/',
+    to: '/ui/sending-email/subscription-tracking/',
+  },
+  {
+    from: '/ui/account-and-settings/accessing-email-associated-with-sendgrid/',
+    to:
+      '/ui/account-and-settings/accessing-email-account-associated-with-sendgrid/',
+  },
+  {
+    from: '/ui/account-and-settings/checking-email-source/',
+    to: '/ui/sending-email/checking-email-source/',
+  },
+  {
+    from: '/ui/sending-email/how-to-set-up-domain-authentication/',
+    to: '/ui/account-and-settings/how-to-set-up-domain-authentication/',
+  },
+  {
+    from: '/ui/sending-email/how-to-set-up-link-branding/',
+    to: '/ui/account-and-settings/how-to-set-up-link-branding/',
+  },
+  {
+    from: '/ui/account-and-settings/senders/',
+    to: '/ui/sending-email/senders/',
+  },
+  {
+    from: '/ui/sending-email/how-to-warm-up-an-ip/',
+    to: '/ui/sending-email/warming-up-an-ip-address/',
+  },
+  {
+    from: '/User_Guide/Settings/',
+    to: '/',
+  },
+  {
+    from: '/index.html/',
+    to: '/',
+  },
+  {
+    from:
+      '/ui/sending-email/how-to-send-email-with-marketing-campaigns-with-dynamic-transactional-templates/',
+    to:
+      '/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/',
+  },
+  {
+    from:
+      '/for-developers/sending-email/how-to-send-an-email-with-dynamic-transactional-templates',
+    to:
+      '/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/',
+  },
+  {
+    from: '/for-developers/sending-email/using-the-v2-api',
+    to: 'https://www.twilio.com/docs/sendgrid/api/v2/using_the_web_api',
+  },
+  {
+    from: '/glossary/blacklists/',
+    to: 'glossary/deny-list/',
+  },
+  {
+    from: 'glossary/whitelist/',
+    to: 'glossary/allow-list/',
+  },
+  {
+    from: '/ui/sending-email/blacklists/',
+    to: '/ui/sending-email/deny-lists/',
+  },
+  {
+    from: '/glossary/white-hat-sender/',
+    to: '/glossary/trusted-sender/',
+  },
+  {
+    from: 'glossary/black-hat-sender/',
+    to: '/glossary/suspicious-sender/',
   },
 ];

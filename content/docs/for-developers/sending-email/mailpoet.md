@@ -18,7 +18,7 @@ MailPoet is a great way to send mail in WordPress. The best way to get MailPoet 
 
 2. Enter in SMTP hostname as `smtp.sendgrid.net`.
 
-3. Enter in your SendGrid username and password.
+3. Enter in your SendGrid username and API key.
 
 4. Select **Use Web API**.
 

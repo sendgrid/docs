@@ -19,13 +19,13 @@ require_once '/$HOME/sendgrid/Zend/library/Zend/Mail/Transport/Smtp.php';
 
 $smtpServer = 'smtp.sendgrid.net';
 $username = 'username';
-$password = 'password';
+$api_key = 'api_key';
 
 $config = array('ssl' => 'tls',
 'port' => '587',
 'auth' => 'login',
 'username' => $username,
-'password' => $password);
+'api_key' => $api_key);
 
 $transport = new Zend_Mail_Transport_Smtp($smtpServer, $config);
 

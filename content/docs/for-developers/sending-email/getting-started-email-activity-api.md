@@ -1,15 +1,16 @@
 ---
 seo:
- title: Getting Started with the Email Activity Feed API
- description: Use the Email Activity Feed query language to get started with the Email Activity Feed API.
- keywords: email activity, query language, email stats, email events
+  title: Getting Started with the Email Activity Feed API
+  description: Use the Email Activity Feed query language to get started with the Email Activity Feed API.
+  keywords: email activity, query language, email stats, email events
 title: Getting Started with the Email Activity Feed API
 group: sending-email
 weight: 0
 layout: page
 navigation:
- show: true
+  show: true
 ---
+
 <call-out>
 
 In order to gain access to the Email Activity Feed API, you must purchase [additional email activity history](https://app.sendgrid.com/settings/billing/addons/email_activity).
@@ -136,7 +137,7 @@ curl --request GET \
 
 There are several operators and keywords that you can use to build [Compound queries](#creating-compound-queries). Use these operators between query statements. If the character used as the delimiter is found within the string. The escape character is `\`, which must be escaped with a preceding `\`. All queries need to be URL encoded.
 
-*This is a full list of accepted operators and keywords:*
+_This is a full list of accepted operators and keywords:_
 
 - `=`
 - `!=`
@@ -174,6 +175,12 @@ There are several operators and keywords that you can use to build [Compound que
 - YEAR
 
 ## Query reference
+
+<call-out type="warning">
+
+Categories and Unique Arguments will be stored as a “Not PII” field and may be used for counting or other operations as SendGrid runs its systems. These fields generally cannot be redacted or removed. You should take care not to place PII in this field. SendGrid does not treat this data as PII, and its value may be visible to SendGrid employees, stored long-term, and may continue to be stored after you’ve left SendGrid’s platform.
+
+</call-out>
 
 This is a full list of basic query types and examples: (replace the data in quotes with the information you want to query, and then URL encode it)
 

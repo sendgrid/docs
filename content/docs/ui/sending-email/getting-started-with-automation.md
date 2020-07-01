@@ -68,6 +68,12 @@ If you select “no longer meet entry criteria”, before each email in your ser
 6. Select an [Unsubscribe Group]({{root_url}}/ui/sending-email/create-and-manage-unsubscribe-groups/#create-an-unsubscribe-group). This Unsubscribe Group will apply to all emails in your Automation.
 7. Add a [category]({{root_url}}/glossary/categories/) to the automation (optional). Categories are useful for [comparing performance]({{root_url}}/ui/analytics-and-reporting/category-comparison/) across different types of email you send.
 
+<call-out type="warning">
+
+Categories will be stored as a “Not PII” field and may be used for counting or other operations as SendGrid runs its systems. These fields generally cannot be redacted or removed. You should take care not to place PII in this field. SendGrid does not treat this data as PII, and its value may be visible to SendGrid employees, stored long-term, and may continue to be stored after you’ve left SendGrid’s platform.
+
+</call-out>
+
 <call-out>
 
 If you have dedicated IPs, you can set up [IP Pools]({{root_url}}/ui/account-and-settings/ip-pools/) that allow you separate your traffic and potentially enhance your deliverability by protecting your sender reputation. To utilize IP pools for Automations, select the IP Pool you wish to use for the entire automation series from the IP Pool drop-down.
@@ -90,17 +96,24 @@ The pre-built Welcome Series automation provides a jumping off point to inspire 
 _To create a Welcome Series:_
 
 1. Navigate to **Automations** and then click **Create an Automation**.
-1. Under Welcome, click **Select**.
-1. Update the automation name (this is for your reference and will not be visible to your contacts).
-1. Review the entry criteria to decide if you’d like to update it. The default entry criteria is “The first time a contact is added to All Contacts”.
-1. Review the exit criteria to decide if you’d like to update it.
-1. Select an [Unsubscribe Group]({{root_url}}/ui/sending-email/create-and-manage-unsubscribe-groups/#create-an-unsubscribe-group). This Unsubscribe Group will apply to all emails in your Automation.
-1. Add a [category]({{root_url}}/glossary/categories/) to the automation (optional). Categories are useful for [comparing performance]({{root_url}}/ui/analytics-and-reporting/category-comparison/) across different types of email you send.
-1. The pre-built Welcome Series has three placeholder emails by default. You’ll need to edit the subject line and content of each email. You may decide to remove or add emails to the pre-built.
-1. If you did not do so within the editor, you can add a subject line and select a sender from the Edit Automation page.
-1. To add more emails to this automated series, click **Add an Email**.
-1. Choose how long to wait between each email in the series. This time will be relative to the preceding email.
-1. Once you have created all of your emails for the automation, click **Set Live**.
+2. Under Welcome, click **Select**.
+3. Update the automation name (this is for your reference and will not be visible to your contacts).
+4. Review the entry criteria to decide if you’d like to update it. The default entry criteria is “The first time a contact is added to All Contacts”.
+5. Review the exit criteria to decide if you’d like to update it.
+6. Select an [Unsubscribe Group]({{root_url}}/ui/sending-email/create-and-manage-unsubscribe-groups/#create-an-unsubscribe-group). This Unsubscribe Group will apply to all emails in your Automation.
+7. Add a [category]({{root_url}}/glossary/categories/) to the automation (optional). Categories are useful for [comparing performance]({{root_url}}/ui/analytics-and-reporting/category-comparison/) across different types of email you send.
+
+<call-out type="warning">
+
+Categories will be stored as a “Not PII” field and may be used for counting or other operations as SendGrid runs its systems. These fields generally cannot be redacted or removed. You should take care not to place PII in this field. SendGrid does not treat this data as PII, and its value may be visible to SendGrid employees, stored long-term, and may continue to be stored after you’ve left SendGrid’s platform.
+
+</call-out>
+
+8. The pre-built Welcome Series has three placeholder emails by default. You’ll need to edit the subject line and content of each email. You may decide to remove or add emails to the pre-built.
+9. If you did not do so within the editor, you can add a subject line and select a sender from the Edit Automation page.
+10. To add more emails to this automated series, click **Add an Email**.
+11. Choose how long to wait between each email in the series. This time will be relative to the preceding email.
+12. Once you have created all of your emails for the automation, click **Set Live**.
 
 <call-out type="warning">
 
@@ -161,7 +174,6 @@ When you re-enable the automation, contacts who previously entered the series wi
 
 </call-out>
 
-
 ## Automation Use Cases and Examples
 
 ### Segment-triggered nurture series
@@ -169,8 +181,8 @@ When you re-enable the automation, contacts who previously entered the series wi
 A valuable use case for Automation is to nurture your free customers to become paid using a drip series. The series will send automatically to free users until they reach the end of the email sequence or they upgrade to paid, whichever comes first. Here's how:
 
 1. Create a segment of all contacts whose custom field “Plan Type” value is “Free”
-1. Set entry criteria to the first time a contact "is added to a segment" and select the “Free customers" segment you just created. 
+1. Set entry criteria to the first time a contact "is added to a segment" and select the “Free customers" segment you just created.
 1. Set the exit criteria as “Contacts no longer meet entry criteria”
 1. Craft a series of emails to nurture contacts to become paid.
 
-From there, any time you add a new contact whose plan type is "Free", they are automatically added to the relevant segment and entered into the automation. If they upgrade their plan during the drip series, Automation automatically removes them from the series. 
+From there, any time you add a new contact whose plan type is "Free", they are automatically added to the relevant segment and entered into the automation. If they upgrade their plan during the drip series, Automation automatically removes them from the series.

@@ -18,7 +18,7 @@ The 'Account Settings’ window appears. Select the account you receive email th
 ![]({{root_url}}/images/outlook_2013_2.png "Change Email")
 
 The 'Change E-mail Account’ window appears. This setting (in the red rectangle below) needs to be set for our SMTP address. Outgoing Mail Server smtp.sendgrid.net
-Under Login Information, please enter your SendGrid username and password.
+Under Login Information, please enter your SendGrid username and API key.
 
 <call-out>
 
@@ -30,7 +30,7 @@ Your SendGrid username may not necessarily be an email address. If your SendGrid
 
 Next, click **More Settings** and enter the information as shown below. (Keep in mind you can also use port 25 with no security or 587 with TLS security.)
 
-Under the “Outgoing Server Tab”, select **My outgoing server (SMTP) requires authentication**. Click **Log on using** and enter your SendGrid Username and Password. Click **OK** and the 'Change E-mail Account’ window appears.
+Under the “Outgoing Server Tab”, select **My outgoing server (SMTP) requires authentication**. Click **Log on using** and enter your SendGrid Username and API key. Click **OK** and the 'Change E-mail Account’ window appears.
 
 ![]({{root_url}}/images/outlook_2013_4.png "Internet Email Settings")
 

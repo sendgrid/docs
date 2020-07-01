@@ -43,7 +43,7 @@ When using our ASM Global or Group Unsubscribe tags, you must pass an unsubscrib
 
 ## 	Using the API
 
-You can manage your Global Unsubscribes via the [Group Suppressions API]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/groups.html).
+You can manage your Global Unsubscribes via the [Group Suppressions API](https://sendgrid.api-docs.io/v3.0/suppressions-unsubscribe-groups/retrieve-all-suppression-groups-associated-with-the-user).
 
 ## 	Additional Resources
 

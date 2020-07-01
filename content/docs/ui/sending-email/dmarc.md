@@ -2,7 +2,7 @@
 seo:
   title: Everything about DMARC
   description: Everything about DMARC
-  keywords: security, secure, dmarc, spf, dkim, white, label, whitelabel, wizard, rua, reject, quarantine
+  keywords: security, secure, dmarc, spf, dkim, sender verification, wizard, rua, reject, quarantine
 title: Everything about DMARC
 group: delivery-optimization
 weight: 0
@@ -77,7 +77,7 @@ The record explained:
 
 **p=quarantine;** - Policy - Tell receiver to QUARANTINE unqualified mail, which generally means “send this directly to the spam folder”.
 
-**rua=[mailto:dmarc.rua@customdomain.com](mailto:postmaster@whitelabeldomain.com);** Reporting URI of aggregate reports - Send aggregate reports to [dmarc.rua@customdomain.com](mailto:postmaster@whitelabeldomain.com). Set this to an email address you control that is closely monitored.
+**rua=[mailto:dmarc.rua@customdomain.com](mailto:postmaster@authenticateddomain.com);** Reporting URI of aggregate reports - Send aggregate reports to [dmarc.rua@customdomain.com](mailto:postmaster@authenticateddomain.com). Set this to an email address you control that is closely monitored.
 
 <call-out>
 

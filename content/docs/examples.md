@@ -59,6 +59,22 @@ Montes sociis turpis egestas fermentum tempus lectus cubilia vulputate justo, pl
 
 </call-out>
 
+### Callout Beta
+
+```html
+<call-out type="beta">
+
+Montes sociis turpis egestas fermentum tempus lectus cubilia vulputate justo, placerat suscipit mollis nostra mauris at sed adipiscing, enim pharetra laoreet ridiculus litora nunc.
+
+</call-out>
+```
+
+<call-out type="beta">
+
+Montes sociis turpis egestas fermentum tempus lectus cubilia vulputate justo, placerat suscipit mollis nostra mauris at sed adipiscing, enim pharetra laoreet ridiculus litora nunc.
+
+</call-out>
+
 ## Code Group
 
 ````html

@@ -2,7 +2,7 @@
 seo:
   title: SPF Records Explained
   description: SPF Records Explained
-  keywords: permission, spf, white, label, whitelabel, include, spf1, spf2, return, path, ~all, -all, +all, sender, permitted, forgery, spoofing, spoof, fail, failed, validation, validate
+  keywords: permission, spf, sender verification, include, spf1, spf2, return, path, ~all, -all, +all, sender, permitted, forgery, spoofing, spoof, fail, failed, validation, validate
 title: SPF Records Explained
 group: account-management
 weight: 0
@@ -43,7 +43,7 @@ You would just need to add the SendGrid lookup at the end of the string, before 
 
 If you would rather not include SendGrid's SPF hostname lookup in your record, or perhaps you just have [too many already]({{root_url}}/ui/account-and-settings/spf-limitations/), you can also choose to give permission to a **specific IP address** to send mail for your domain. This is accomplished using the ip4 mechanism within your SPF record.
 
-You can choose to specify your [dedicated IP address]({{root_url}}/ui/account-and-settings/dedicated-ip-adresses/) as a lookup, which means that only mail coming from that particular IP address will be considered a permitted sender within SendGrid for that domain. An example of this looks like:
+You can choose to specify your [dedicated IP address]({{root_url}}/ui/account-and-settings/dedicated-ip-addresses/) as a lookup, which means that only mail coming from that particular IP address will be considered a permitted sender within SendGrid for that domain. An example of this looks like:
 
 >v=spf1 a mx include:\_spf.google.com include:spf.protection.outlook.com ip4:12.34.56.78 -all
 

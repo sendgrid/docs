@@ -35,12 +35,38 @@ If SendGrid has a physical presence in a jurisdiction, and we directly sell a ta
 
 SendGrid collects sales tax in the following jurisdictions:
 
+- Alabama
+- Arizona
+- Arkansas
+- California
+- Colorado
 - Connecticut
+- Florida
+- Georgia
+- Hawaii
+- Idaho
+- Illinois
 - Iowa
 - Indiana
+- Kansas
+- Kentucky
+- Louisiana
+- Maine
+- Maryland
 - Massachusetts
+- Michigan
+- Minnesota
+- Mississippi
+- Missouri
+- Nebraska
+- Nevada
+- New Jersey
+- New Mexico
 - New York
+- North Carolina
+- North Dakota
 - Ohio
+- Oklahoma
 - Pennsylvania
 - Rhode Island
 - South Carolina
@@ -48,9 +74,12 @@ SendGrid collects sales tax in the following jurisdictions:
 - Tennessee
 - Texas
 - Utah
+- Virginia
 - Washington
 - Washington D.C.
-- Wisconsin 
+- West Virginia
+- Wisconsin
+- Wyoming
 - US metro areas include Denver, Boulder and Chicago
 
 To determine whether to add sales tax to your monthly SendGrid bill, we use the address you enter as your billing address in [Account Details](https://app.sendgrid.com/account/billing) in the SendGrid UI.

@@ -9,7 +9,7 @@ seo:
   title: How to set up reverse DNS
   override: true
   description: Set up reverse DNS to improve your deliverability and security of your emails.
-  keywords: reverse DNS, rDNS, whitelabel, IP whitelabel
+  keywords: reverse DNS, rDNS 
 ---
 
 <!-- OUTDATED REVERSE DNS VIDEO --!>
@@ -43,7 +43,7 @@ If your domain+subdomain is `marketing.example.com`, and your dedicated IP addre
 
  ### 	Subdomain
 
-A subdomain is a prefix appended to your domain and used for tracking and reporting on your validated IP. Your subdomain cannot be the same as your other IP subdomains. It's a good idea to check your current DNS settings with your DNS provider to confirm that the subdomain you would like to use is available. Try to pick a name for this subdomain that represents the type of email you will send using this new domain whitelabel. For example, "marketing" or "billing". Do not use underscores in your subdomain. We create your DNS records based on the subdomain, and DNS providers do not accept DNS records that contain underscores.
+A subdomain is a prefix appended to your domain and used for tracking and reporting on your validated IP. Your subdomain cannot be the same as your other IP subdomains. It's a good idea to check your current DNS settings with your DNS provider to confirm that the subdomain you would like to use is available. Try to pick a name for this subdomain that represents the type of email you will send using it. For example, "marketing" or "billing". Do not use underscores in your subdomain. We create your DNS records based on the subdomain, and DNS providers do not accept DNS records that contain underscores.
 
 <call-out type="warning">
 

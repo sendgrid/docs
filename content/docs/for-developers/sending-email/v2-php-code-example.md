@@ -102,7 +102,7 @@ This example takes the previous example a step further by adding our SMTPAPI hea
 
 $url = 'https://api.sendgrid.com/';
 $user = 'USERNAME';
-$pass = 'PASSWORD';
+$pass = 'APIKEY';
 
 $json_string = array(
 

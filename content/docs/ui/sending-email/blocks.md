@@ -5,15 +5,15 @@ title: Blocks
 group: delivery-optimization
 seo:
   title: Blocks
-  description: When your email has been blocked by an ISP or your IP is on a blacklist.
-  keywords: blocks, bounces, hard bounces, blacklists, ISP Blocks, Mail provider blocks
+  description: When your email has been blocked by an ISP or your IP is on a deny list.
+  keywords: blocks, bounces, hard bounces, deny list, ISP Blocks, Mail provider blocks
 navigation:
   show: true
 ---
 
-[Blocks]({{root_url}}/glossary/blocks/) happen when your message was rejected for a reason related to the message, not the recipient address. This can happen when your mail server IP address has been added to a blacklist, blocked by an ISP, or if the message content is flagged by a filter on the receiving server.
+[Blocks]({{root_url}}/glossary/blocks/) happen when your message was rejected for a reason related to the message, not the recipient address. This can happen when your mail server IP address has been added to a deny list, blocked by an ISP, or if the message content is flagged by a filter on the receiving server.
 
-The “Reason on the Block” will clarify what the exact reason is. Typically, it’s possible to have your IP address removed from a blacklist, and some lists automatically do this after a period of time. Message content can be modified to correct a filtered block.
+The “Reason on the Block” will clarify what the exact reason is. Typically, it’s possible to have your IP address removed from a deny list, and some lists automatically do this after a period of time. Message content can be modified to correct a filtered block.
 
 <call-out>
 
@@ -56,6 +56,6 @@ Send better email with Expert Insights. Our detailed monthly reports will enable
 
 <call-out>
   
-Looking for customized expert advice to improve your email program? Our team of email experts can help you create a plan to ensure you're optimizing your email delivery and engagement, and avoiding future issues like blacklists. Learn more on our [Expert Services](https://sendgrid.com/solutions/expert-services/?utm_source=docs) page.
+Looking for customized expert advice to improve your email program? Our team of email experts can help you create a plan to ensure you're optimizing your email delivery and engagement, and avoiding future issues. Learn more on our [Expert Services](https://sendgrid.com/solutions/expert-services/?utm_source=docs) page.
  
  </call-out>

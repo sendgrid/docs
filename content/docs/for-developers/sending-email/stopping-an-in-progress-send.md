@@ -22,15 +22,17 @@ If you are looking for information on how to cancel a scheduled email or campaig
 
 Stopping an ongoing send that is using SMTP or the Web API can be tricky, because we strive to accept and send email requests as quickly as possible. Sometimes stopping an accidental send is just not possible. However, following are several suggestions for how to halt a send in progress or a send that you have scheduled.
 
- ### 	1. Change Your Password
+ ### 	1. Change Your API Key or Password
 
-The simple act of [changing your password](https://app.sendgrid.com/settings/account) can break your existing email integration by causing a mismatch between what your app is trying to authenticate with and what we have on record.
+The simple act of changing your [API key](https://app.sendgrid.com/settings/api_keys) or [password](https://app.sendgrid.com/settings/account) can break your existing email integration by causing a mismatch between what your app is trying to authenticate with and what we have on record.
 
 This method is great if you have a runaway script or have just started a send accidentally. Be sure to verify that the credentials your app is using belong either to the parent account or a [teammate](https://app.sendgrid.com/settings/teammates) so you can change the proper one.
 
+Using an API key has the added benefit of breaking only the services for which it has permissions. In addition to enhanced security, the ease of change afforded by an API key is one reason we recommend using API keys to authenticate with our services.
+
 <call-out type="warning">
 
-We cannot guarantee that changing your password will prevent 100% of your email requests from being delivered. We only recommend this method as a last resort that may allow you to stop at least some of your emails from being sent.
+We cannot guarantee that changing your API key or password will prevent 100% of your email requests from being delivered. We only recommend this method as a last resort that may allow you to stop at least some of your emails from being sent.
 
 </call-out>
 

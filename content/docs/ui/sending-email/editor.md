@@ -31,9 +31,9 @@ The [Design Editor](#the-design-editor) features a number of convenient ways to 
 
 <call-out type="warning">
 
-Twilio SendGrid recommends only having one instance of a template or Marketing Campaign email open in one instance of the editor at a time.  Multiple instances in different browsers or computers will cause autosave to undo changes made and there is no recovery option.
+Twilio SendGrid recommends only having one instance of a template or Marketing Campaign email open in one instance of the editor at a time. Multiple instances in different browsers or computers will cause autosave to undo changes made and there is no recovery option.
 
-</call-out>  
+</call-out>
 
 ## The Code Editor
 
@@ -53,18 +53,17 @@ Easily pinpoint the HTML element you wish to edit. Click anywhere on the right-s
 **Syntax Highlighting** -
 As you edit, parts of your code highlights in various colors according to the type of syntax. This added dimension provides clarity and efficiency as you search for, locate, and edit code elements.
 
-
 ### Getting Started With The Code Editor
 
-*To use the code editor for Single Sends:*
+_To use the code editor for Single Sends:_
 
-1. From the left-hand navigation, select **Marketing**, and then click **Single Sends** 
+1. From the left-hand navigation, select **Marketing**, and then click **Single Sends**
 1. Click **Create a Single Send**.
-<br>To create a Single Send email using an existing (drafted or sent) email, find the Single Send you'd like to use and click the action menu next to the email.
+   <br>To create a Single Send email using an existing (drafted or sent) email, find the Single Send you'd like to use and click the action menu next to the email.
 1. Then, select **Edit** or **Duplicate**.
 1. Select **Code Editor**, and then click **Continue**.
 
-*To use the code editor for Automations:*
+_To use the code editor for Automations:_
 
 1. From the left-hand navigation, select **Marketing**, and then click **Automations** .
 1. Click **Create an Automation**.
@@ -77,7 +76,7 @@ The Welcome Series Automation can only be edited with the [design editor]({{root
 </call-out>
 
 1. Give the automation a name, entry criteria, exit criteria, and select an [Unsubscribe Group](https://sendgrid.com/docs/ui/sending-email/create-and-manage-unsubscribe-groups/).
-1. Select the send time and then click the edit button next to *Email 1*. 
+1. Select the send time and then click the edit button next to _Email 1_.
 1. Select **Code Editor**, and then click **Continue**.
 
 <call-out>
@@ -104,7 +103,7 @@ Once you create a new single send or automation email in the Code Editor, it can
 2. Select the image you want to add from your image library.
 3. Select the **image details** tab and copy the URL in the **Image Source URL** tab by clicking **Copy URL**.
 4. Paste this URL in an image source tag in your email or template's HTML.
-Example: `<img src="your image URL here">`
+   Example: `<img src="your image URL here">`
 
 ### Using Substitution Tags
 
@@ -116,8 +115,6 @@ Substitution tags allow you to easily generate dynamic content for each recipien
 2. Click the **Tags** tab at the top of the Settings window.
 3. Locate the tag you want to add to your email and click it to automatically copy it to your clipboard.
 4. Paste the tag into the email.
-
-
 
 <table class="table" style="table-layout:fixed">
  <tr>
@@ -249,29 +246,32 @@ Substitution tags allow you to easily generate dynamic content for each recipien
  </tr>
 </table>
 
-
 <call-out>
-
 
 For contacts with no entry in a custom field, the substitution tag appears blank. To set a default value, use the following pattern:
 
 `{{first_name | Valued Customer}}`
 
-
 </call-out>
 
 ### Adding Categories to Single Sends
 
+<call-out type="warning">
+
+This information will be stored as a “Not PII” field and may be used for counting or other operations as SendGrid runs its systems. These fields generally cannot be redacted or removed. You should take care not to place PII in this field. SendGrid does not treat this data as PII, and its value may be visible to SendGrid employees, stored long-term, and may continue to be stored after you’ve left SendGrid’s platform.
+
+</call-out>
+
 Assigning categories to a single send allows you to track emails based on your own categorization system. By assigning your single send to a category, you can track statistics across multiple similar single sends and automations. Example categories may include: “Weekly Digest,” “Product Announcements.”
 
-1. Click the *Settings* panel located on the left-hand side of the window to expand it.
-1. Navigate to the *Settings* tab, and click **Single Send Settings** to expand the menu.
-1. Locate the *Categories* field under *Single Send Settings*.
-1. Select the *Add Categories* field. Type in the tag that you'd like to add, and press enter.
+1. Click the _Settings_ panel located on the left-hand side of the window to expand it.
+1. Navigate to the _Settings_ tab, and click **Single Send Settings** to expand the menu.
+1. Locate the _Categories_ field under _Single Send Settings_.
+1. Select the _Add Categories_ field. Type in the tag that you'd like to add, and press enter.
 
 <call-out>
 
-Currently, only 10 categories can be added to each single send. 
+Currently, only 10 categories can be added to each single send.
 
 </call-out>
 
@@ -285,37 +285,37 @@ SendGrid’s flexible design editor allows you to build your templates and email
 
 ### Getting Started With the Design Editor
 
-*To use the design editor for Single Sends:*
+_To use the design editor for Single Sends:_
 
-1. From the left-hand navigation, select **Marketing**, and then click **Single Sends** 
+1. From the left-hand navigation, select **Marketing**, and then click **Single Sends**
 1. Click **Create a Single Send**.
-<br>To create a single send email using an existing (drafted or sent) email, find the single send you'd like to use and click the action menu next to the email.
+   <br>To create a single send email using an existing (drafted or sent) email, find the single send you'd like to use and click the action menu next to the email.
 1. Then, select **Edit** or **Duplicate**.
 1. Select **Design Editor**, and then click **Continue**.
 
-*To use the design editor for Automations:*
+_To use the design editor for Automations:_
 
 1. From the left-hand navigation, select **Marketing**, and then click **Automations** .
 1. Click **Create an Automation**.
-1. Determine whether you’d like to send a pre-made Welcome series or a custom automation and then click **Select**. 
+1. Determine whether you’d like to send a pre-made Welcome series or a custom automation and then click **Select**.
 1. Give the automation a name, entry criteria, exit criteria, and select an unsubscribe group.
-1. Select the send time and then click the edit button next to *Email 1*. 
+1. Select the send time and then click the edit button next to _Email 1_.
 1. Select **Design Editor**, and then click **Continue**.
-<br>The Design Editor opens.
-7. Select the template that you want to use for your email.
-<br>You can select a Blank Template, a custom template that you have already created, or one of Twilio SendGrid’s pre-built templates. For more information, see [Working With Marketing Templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/)
-8. Select **Design Editor** and then click **Continue**.
-<br>The Design Editor opens.
+   <br>The Design Editor opens.
+1. Select the template that you want to use for your email.
+   <br>You can select a Blank Template, a custom template that you have already created, or one of Twilio SendGrid’s pre-built templates. For more information, see [Working With Marketing Templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/)
+1. Select **Design Editor** and then click **Continue**.
+   <br>The Design Editor opens.
 
 ### Using Drag & Drop Modules
 
 Drag & drop editing helps you swiftly build your email, using pre-built content modules. You can easily edit individual modules in the left-hand sidebar and reorder modules in your email body with a simple click and drag of your mouse.
 
-*To add a drag & drop module:*
+_To add a drag & drop module:_
 
 1. Navigate to the **Build** tab and then click **Add Modules**.
 
-  ![]({{root_url}}/img/design_editor_drag_drop.png "Drag and drop editor")
+![]({{root_url}}/img/design_editor_drag_drop.png 'Drag and drop editor')
 
 2. Find the module tile you want to add to your email. Then, drag and drop it into your content area.
 3. Edit the module settings and add your custom content to build your email.
@@ -388,7 +388,7 @@ In addition to editing the styles for individual modules within your email/templ
 
 The email body is the entire area that your email or template fills inside your recipient’s browser or email inbox.
 
-Under the Global Styles dropdown menu in the left hand sidebar, click **Email Body**  or **Content Container** to view and edit the following styles:
+Under the Global Styles dropdown menu in the left hand sidebar, click **Email Body** or **Content Container** to view and edit the following styles:
 
 <table class="table" style="table-layout:fixed">
 <tr>
@@ -414,10 +414,10 @@ Under the Global Styles dropdown menu in the left hand sidebar, click **Email Bo
 
 ### Editing Module HTML
 
-*To edit Module HTML:*
+_To edit Module HTML:_
 
 1. Select the module in the design editor and click the **&lt; &gt;** icon.
-<br>A window opens where you can edit the module HTML.
+   <br>A window opens where you can edit the module HTML.
 1. When you are finished editing the HTML, click **Update**.
 
 <call-out>
@@ -432,20 +432,20 @@ The code module is a unique drag & drop module that allows you to insert any cus
 
 <call-out type="warning">
 
-The Design Editor does not modify or validate any HTML inserted via a code module. Please be careful when using custom HTML.  Always preview your email before sending it.
+The Design Editor does not modify or validate any HTML inserted via a code module. Please be careful when using custom HTML. Always preview your email before sending it.
 
 </call-out>
 
 ### Adding Images
 
-*To upload an image:*
+_To upload an image:_
 
 1. Navigate to the **Build** tab and then click **Add Modules**.
 1. Select the Images module and drag and drop it into your content area.
-<br>This opens a window where you can upload images to your image library.
+   <br>This opens a window where you can upload images to your image library.
 1. Drag and drop the image you want to use from your files or select **Choose images** to upload.
 
-*To insert an image:*
+_To insert an image:_
 
 1. Navigate to the **Build** tab and then click **Add Modules**.
 1. Drag and drop the **Images** module into your content area.
@@ -458,7 +458,7 @@ The Design Editor does not modify or validate any HTML inserted via a code modul
 
 Substitution tags allow you to use any custom field data you've added to Marketing Campaigns to dynamically generate unique content for each recipient of your email. A common example is to add a recipient's first name to the body (or even the subject line) of your email.
 
-*To add a substitution tag to your email:*
+_To add a substitution tag to your email:_
 
 1. Navigate to the **Tags** tab.
 1. Locate the tag you want to add to your email and click the **copy** icon.
@@ -513,13 +513,11 @@ You'll also see a number of System Fields that you can place in the body of your
  </tr>
 </table>
 
-
-&ast; For your convenience, these substitution tags are included by default in the Unsubscribe Module found on the Tags tab of the Design Editor.
+\* For your convenience, these substitution tags are included by default in the Unsubscribe Module found on the Tags tab of the Design Editor.
 
 <call-out type="warning">
 
-The `<%asm_group_unsubscribe_raw_url%>`, `<%asm_preferences_raw_url%>`, and `<%asm_global_unsubscribe
-_raw_url%>` tags are reserved for use in Transactional Templates and should not be used in Marketing Campaigns.
+The `<%asm_group_unsubscribe_raw_url%>`, `<%asm_preferences_raw_url%>`, and `<%asm_global_unsubscribe _raw_url%>` tags are reserved for use in Transactional Templates and should not be used in Marketing Campaigns.
 
 </call-out>
 
@@ -545,14 +543,13 @@ When previewing an email, you also see a preview of the From name, the Subject, 
 
 The HTML `<head>` element is where you can define any metadata you would like to include with your email or template. For example, you can use the `<head>` element to define any custom fonts or CSS styles you would like to use.
 
-*To edit the HTML head of your email or template:*
+_To edit the HTML head of your email or template:_
 
 1. Navigate to the **Build** tab in the left-hand toolbar and scroll to the **Advanced** menu.
 1. Expand the option titled **Edit HTML Head**.
-1. Click  **Edit** to begin editing your HTML head.
+1. Click **Edit** to begin editing your HTML head.
    <br>A window appears where you can insert your custom HTML.
 1. Once you've finished making your changes, click the **Update** button.
-
 
 #### Adding Custom Fonts Using the HTML Head
 
@@ -566,15 +563,15 @@ Make sure that you define a web-safe font to use as a fallback if one of your re
 
 While some inbox providers do not support web fonts, the following popular clients do provide web font support:
 
-* Apple Mail
-* Outlook.com app
-* Outlook 2000
-* Default Android Mail app (not the Android Gmail app)
-* iOS Mail
+- Apple Mail
+- Outlook.com app
+- Outlook 2000
+- Default Android Mail app (not the Android Gmail app)
+- iOS Mail
 
 This list may change and we cannot guarantee 100% support from any of these clients.
 
-*To add a custom font using the HTML head:*
+_To add a custom font using the HTML head:_
 
 1. Open the HTML Head by navigating to the **Build** tab in the design editor.
 1. Scroll down to the **Advanced** drop-down menu and select **Edit HTML Head**.
@@ -582,18 +579,18 @@ This list may change and we cannot guarantee 100% support from any of these clie
 1. Insert a `<link>` tag containing an href attribute pointing to your web font.
 
 For example:
+
 ```html
-<link href="https://fonts.google.com/specimen/Oswald" rel="stylesheet">
+<link href="https://fonts.google.com/specimen/Oswald" rel="stylesheet" />
 ```
 
 Next, you’ll have to add a `<style>` to specify that you want to use this new font family:
 
 ```html
 <style>
-    body {
-        font-family: 'Oswald',
-        sans-serif;
-    }
+  body {
+    font-family: 'Oswald', sans-serif;
+  }
 </style>
 ```
 
@@ -601,7 +598,7 @@ Next, you’ll have to add a `<style>` to specify that you want to use this new 
 
 If you are writing your own custom HTML that you plan on importing into the design editor, refer to the [drag & drop code examples](#drag--drop-code-examples) to ensure that any modules you create are compatible with our drag & drop functionality. If you do not specify a data type that matches one of our drag & drop modules, your code is imported as a text module.
 
-*To import custom HTML:*
+_To import custom HTML:_
 
 1. Navigate to the **Build** tab in the left-hand navigation.
 2. Scroll down and select the **Advanced** drop-down menu.
@@ -609,7 +606,7 @@ If you are writing your own custom HTML that you plan on importing into the desi
 4. Click **Import**.
    <br>A window opens where you can paste in your own HTML.
 
-  ![]({{root_url}}/img/import_custom_html.png "Import custom HTML")
+![]({{root_url}}/img/import_custom_html.png 'Import custom HTML')
 
 5. Paste or enter the HTML you want to use and then click **Import**.
 
@@ -623,18 +620,16 @@ Any HTML that you import replaces all existing content in your email or template
 
 Twilio SendGrid parses your custom HTML, looking for any [drag & drop compatible modules](#drag--drop-code-examples).
 
-  * First, we look for any HTML elements that contain the attribute `role="modules-container"`.
-  * Next, we look for all HTML elements with the attribute `role="module"` that are descendants of the "modules-container" element.
+- First, we look for any HTML elements that contain the attribute `role="modules-container"`.
+- Next, we look for all HTML elements with the attribute `role="module"` that are descendants of the "modules-container" element.
 
 The `role="modules-container"` attribute is required so that we know where your drag and drop modules are located. All of the Twilio SendGrid pre-built templates include the `role="modules-container"` by default. You are only required to include this attribute when creating an email or template from scratch that you want to be compatible with the design editor.
 
 <call-out type="warning">
 
-
 Any HTML outside an element with the "modules-container" attribute is discarded. Only [supported styling options and attributes](#drag--drop-module-descriptions-and-styles) are included.
 
 If you don't include the "modules-container" attribute in any of your custom HTML, then all of your HTML is imported as a single text module.
-
 
 </call-out>
 
@@ -706,6 +701,7 @@ Following is an example of how you should structure and organize your custom HTM
     </tr>
   </table>
 ```
+
 ```code
   <table class="module" role="module" data-type="code">
     <tr>
@@ -764,6 +760,7 @@ Following is an example of how you should structure and organize your custom HTM
     </tr>
   </table>
 ```
+
 ```spacer
   <table class="module" role="module" data-type="spacer">
     <tr>
@@ -772,6 +769,7 @@ Following is an example of how you should structure and organize your custom HTM
     </tr>
   </table>
 ```
+
 ```social
   <table class="module" role="module" data-type="social">
     <tbody>
@@ -789,12 +787,12 @@ Following is an example of how you should structure and organize your custom HTM
     </tbody>
   </table>
 ```
-</code-group>
 
+</code-group>
 
 ### Exporting HTML From the Design Editor
 
-*To export template HTML from the design editor:*
+_To export template HTML from the design editor:_
 
 1. Navigate to the **Build** tab in the left-hand navigation.
 1. Scroll down and select the **Advanced** drop-down menu.
@@ -803,30 +801,36 @@ Following is an example of how you should structure and organize your custom HTM
 
 SendGrid hosts the images included in the pre-built templates and any images you have uploaded to the image library, so when you export a template’s HTML from the design editor, the embedded URLs in each `<img>` tag remains valid.
 
-*To open exported HTML in the code editor using Single Sends:*
+_To open exported HTML in the code editor using Single Sends:_
 
 1. From the left-hand navigation, select **Marketing** and then click **Single Sends**.
 1. Click **New Campaign** and then select **Blank Template**.
 1. Select **Code Editor**.
 1. Paste the raw SendGrid template HTML into the code editor.
 
-*To open exported HTML in the code editor using Automations:*
+_To open exported HTML in the code editor using Automations:_
 
 1. From the left-hand navigation, select **Marketing** and then click **Automations**.
-1. Click **Create an Automation** and then navigate to *Custom Automation* and click **Select**.
+1. Click **Create an Automation** and then navigate to _Custom Automation_ and click **Select**.
 1. Navigate to the first email in the Automation series and click **Edit Email Content**.
-1. Locate the blank template and click **Select**.  
+1. Locate the blank template and click **Select**.
 1. Select **Code Editor**.
 1. Paste the raw SendGrid template HTML into the code editor.
 
 ### Adding Categories to Single Sends
 
+<call-out type="warning">
+
+This information will be stored as a “Not PII” field and may be used for counting or other operations as SendGrid runs its systems. These fields generally cannot be redacted or removed. You should take care not to place PII in this field. SendGrid does not treat this data as PII, and its value may be visible to SendGrid employees, stored long-term, and may continue to be stored after you’ve left SendGrid’s platform.
+
+</call-out>
+
 Assigning categories to a single send allows you to track emails based on your own categorization system. By assigning your single send to a category, you can track statistics across multiple similar single sends and automations. Example categories: “Weekly Digest,” “Product Announcements.”
 
-*To add a category:*
+_To add a category:_
 
-1. Navigate to the *Settings* tab and click **Single Send Settings** to expand the menu.
-1. Find the *Categories* field.
+1. Navigate to the _Settings_ tab and click **Single Send Settings** to expand the menu.
+1. Find the _Categories_ field.
 1. Enter the name of a new category or select a previously used category from the drop-down menu.
 
 ### Email Testing
@@ -835,9 +839,7 @@ Email testing offers robust, pre-send testing of your emails, including in-app s
 
 ## Additional Resources
 
-* [Sending an Email]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/)
-* [A/B Testing]({{root_url}}/ui/sending-email/a-b-testing/)
-* [Campaign Statistics]({{root_url}}/ui/analytics-and-reporting/marketing-campaigns-stats/)
-* [Marketing Templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/)
-
-
+- [Sending an Email]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/)
+- [A/B Testing]({{root_url}}/ui/sending-email/a-b-testing/)
+- [Campaign Statistics]({{root_url}}/ui/analytics-and-reporting/marketing-campaigns-stats/)
+- [Marketing Templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/)

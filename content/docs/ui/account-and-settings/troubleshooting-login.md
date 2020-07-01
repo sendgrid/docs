@@ -25,7 +25,7 @@ You may have at some point shared your credentials with someone else/another dep
 
 
 ## Reset your password
-Sometimes passwords just vanish from memory—it happens to the best of us. Use the reset password link from the login screen to start the reset process via email. **_Be careful_** though, changing your password can break existing API and SMTP integrations you have in production, so be sure to update your password wherever else it is used after resetting.
+Sometimes passwords just vanish from memory—it happens to the best of us. Use the reset password link from the login screen to start the reset process via email. **_Be careful_** though, changing your password can break existing API and SMTP integrations you have in production, so be sure to update your password wherever else it is used after resetting. This is one reason we recommend using an API key to authenticate with our APIs rather than your username and password. Whenever possible, use [API keys]({{root_url}}/ui/account-and-settings/api-keys/) to improve the security of your account.
 
 ## Usernames can be anything
 We don't have a strict username syntax policy, so it may be something you wouldn't normally use. Read more about finding and recovering your username [here]({{root_url}}/ui/account-and-settings/resetting-your-username-and-password/).

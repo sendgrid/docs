@@ -48,7 +48,7 @@ If you are using ASP.NET, you can specify SMTP settings in web.config.
 <system.net>
   <mailSettings>
     <smtp from="test@domain.com">
-      <network host="smtp.sendgrid.net" password="password" userName="username" port="587" />
+      <network host="smtp.sendgrid.net" password="api_key" userName="username" port="587" />
     </smtp>
   </mailSettings>
 </system.net>
@@ -90,7 +90,7 @@ namespace SmtpMail
 
         // Init SmtpClient and send
         SmtpClient smtpClient = new SmtpClient("smtp.sendgrid.net", Convert.ToInt32(587));
-        System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("username@domain.com", "yourpassword");
+        System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("username@domain.com", "your_api_key");
         smtpClient.Credentials = credentials;
 
         smtpClient.Send(mailMsg);

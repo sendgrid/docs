@@ -134,7 +134,7 @@ In addition to specifying the dynamic template data, you need to specify the tem
 ```
 curl --request GET \
   --url 'https://api.sendgrid.com/v3/templates?generations\%5C=legacy&generations\%5C=dynamic' \
-  --header 'Authorization: <<YOUR_API_KEY>>' \
+  --header 'Authorization: Bearer <<YOUR_API_KEY>>' \
   --header 'Content-Type: application/json'
 ```
 

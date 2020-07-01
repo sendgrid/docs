@@ -9,8 +9,14 @@ navigation:
 
 These examples require the [JSON Ruby Library](http://www.ruby-doc.org/stdlib-2.0.0/libdoc/json/rdoc/JSON.html).
 
-## 	SmtpApiHeader.rb
- 	
+<call-out type="warning">
+
+Categories and Unique Arguments will be stored as a “Not PII” field and may be used for counting or other operations as SendGrid runs its systems. These fields generally cannot be redacted or removed. You should take care not to place PII in this field. SendGrid does not treat this data as PII, and its value may be visible to SendGrid employees, stored long-term, and may continue to be stored after you’ve left SendGrid’s platform.
+
+</call-out>
+
+## SmtpApiHeader.rb
+
 This header is required for each example.
 
 ```ruby
@@ -79,9 +85,8 @@ class SmtpApiHeader
 end
 ```
 
+## Example Ruby Usage
 
-## 	Example Ruby Usage
- 	
 ```ruby
 require './SmtpApiHeader.rb'
 require 'mail'
@@ -91,7 +96,7 @@ Mail.defaults do
                            :port      => 587,
                            :domain    => 'sendgrid.com',
                            :user_name => 'yourSendGridUsername',
-                           :password  => 'yourSendGridPassword',
+                           :api_key  => 'yourSendGridAPIKey',
                            :authentication => 'plain',
                            :enable_starttls_auto => true }
 end

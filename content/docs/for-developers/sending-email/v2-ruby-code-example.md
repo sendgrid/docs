@@ -48,7 +48,7 @@ Mail.defaults do
                            :port      => 587,
                            :domain    => "yourdomain.com",
                            :user_name => "yourusername@domain.com",
-                           :password  => "yourPassword",
+                           :api_key  => "your_api_key",
                            :authentication => 'plain',
                            :enable_starttls_auto => true }
 end

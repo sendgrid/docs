@@ -11,21 +11,25 @@ navigation:
   show: true
 ---
 
-
 <call-out>
 
 Parent accounts will see aggregated statistics for their account and all subuser accounts. Subuser accounts will only see their own statistics.
 
 </call-out>
 
+<call-out type="warning">
+
+Categories will be stored as a “Not PII” field and may be used for counting or other operations as SendGrid runs its systems. These fields generally cannot be redacted or removed. You should take care not to place PII in this field. SendGrid does not treat this data as PII, and its value may be visible to SendGrid employees, stored long-term, and may continue to be stored after you’ve left SendGrid’s platform.
+
+</call-out>
 
 Categories can help organize your email analytics by enabling you to “tag” emails by type. As a result, you may want to compare one category to another. The category comparison tool allows you to do this.
 
-## 	Select Your Categories
+## Select Your Categories
 
 You can compare up to 10 categories at a time. To select them, click the **+** sign next to each category name in the left-side list. Then, click **Compare**.
 
-## 	Comparison Overview
+## Comparison Overview
 
 Once you have selected the categories, your top most graph will show you how each selected category has fared for each individual metric in a single graph. Each category will be assigned a color in this bar chart.
 
@@ -33,7 +37,7 @@ You can remove individual categories from the list of categories you selected in
 
 You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/ui/analytics-and-reporting/stats-overview/#statistics-filters).
 
-## 	Individual Metrics Comparison
+## Individual Metrics Comparison
 
 When you initially choose the categories to compare, this graph will be titled “Comparison for Deliveries” and will show you the delivery rates over time for each of the compared categories.
 
@@ -41,7 +45,7 @@ You can remove individual categories from the list of categories you selected in
 
 To change this graph to see another metric for your categories, click the button next to the Categories button and choose another metric.
 
-## 	Individual Metrics Figures
+## Individual Metrics Figures
 
 When you initially choose the categories to compare, this table will be titled “Figures for Delivered” and will show you the actual delivery numbers over time for each of the compared categories.
 
@@ -57,7 +61,7 @@ Want deeper data and insights? With [SendGrid Email Insights Reports](https://go
 
 </call-out>
 
-## 	Additional Resources
+## Additional Resources
 
 - [Subusers]({{root_url}}/ui/account-and-settings/subusers/)
 - [Using Categories with the SMTP API]({{root_url}}/for-developers/sending-email/categories/)

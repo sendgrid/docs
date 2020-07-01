@@ -2,7 +2,7 @@ Hello! Thank you for choosing to help contribute to one of the SendGrid open sou
 
 All third party contributors acknowledge that any contributions they provide will be made under the same open source license that the open source project is provided under.
 
-* [Feature Request](#feature-request)
+* [Content Request](#feature-request)
 * [Improvements to the Codebase](#improvements-to-the-codebase)
 * [Local Setup](#install-and-run-locally)
 	* [Dependencies](#dependencies)
@@ -27,14 +27,14 @@ Feel free to grab an issue you want to work on. Please indicate that you have be
 There are a few ways to contribute, which we'll enumerate below:
 
 <a name="feature-request"></a>
-## Feature Request
+## Content Request
 
-If you'd like to make a feature request, please read this section.
+If you'd like to make a content request, please read this section.
 
-The GitHub issue tracker is the preferred channel for library feature requests, but please respect the following restrictions:
+The GitHub issue tracker is the preferred channel for docs content requests, but please respect the following restrictions:
 
-- Please **search for existing issues** in order to ensure we don't have duplicate bugs/feature requests.
-- Please be respectful and considerate of others when commenting on issues
+- Please **search for existing issues** in order to ensure we don't have duplicate bugs/content requests.
+- Please be respectful and considerate of others when commenting on issues.
 
 <a name="improvements-to-the-codebase"></a>
 ## Improvements to the Codebase
@@ -53,7 +53,6 @@ We welcome direct contributions to the SendGrid docs code base. Thank you!
     * Rvm
     * Homebrew
     * npm
-    * yarn
     * Gatsby
 
 <a name="setup-steps"></a>
@@ -85,10 +84,6 @@ We welcome direct contributions to the SendGrid docs code base. Thank you!
 
 	`$ n 8.4.0`
 
-* Download yarn
-
-    `brew install yarn`
-
 * clone repo
 
 	`$ git clone https://github.com/sendgrid/docs.git`
@@ -104,7 +99,7 @@ We welcome direct contributions to the SendGrid docs code base. Thank you!
 
 * Install Gatsby
 
-    `yarn install`
+    `npm ci`
 
 * Build the local site
 
@@ -234,7 +229,7 @@ via `_plugins/jekyll_asset_pipeline.rb`.
    $ git pull upstream <dev-branch>
    ```
 
-3. Create a new topic branch (off the main project development branch) to
+3. Create a new topic branch (off the project development branch) to
    contain your feature, change, or fix:
 
    ```bash
@@ -254,7 +249,7 @@ via `_plugins/jekyll_asset_pipeline.rb`.
 5. Locally merge (or rebase) the upstream development branch into your topic branch:
 
    ```bash
-   $ git pull [--rebase] upstream master
+   $ git pull [--rebase] upstream main
    ```
 
 6. Push your topic branch up to your fork:
@@ -264,6 +259,6 @@ via `_plugins/jekyll_asset_pipeline.rb`.
    ```
 
 7. [Open a Pull Request](https://help.github.com/articles/about-pull-requests/)
-    with a clear title and description against the `master` branch. All tests must be passing before we will review the PR.
+    with a clear title and description against the `develop` branch. All tests must be passing before we will review the PR.
 
 If you have any additional questions, please feel free to [email](mailto:dx@sendgrid.com) us or create an issue in this repo.

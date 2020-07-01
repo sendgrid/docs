@@ -1,31 +1,26 @@
 ---
-
 seo:
-  title: Blacklist
+  title: Deny list
   description: A list of IP addresses that are known to send unsolicited or unwanted emails
-  keywords: email blacklist, blacklist, spam, unsolicited emails, unwanted emails
-title: Blacklist
+  keywords: email deny list, deny list, spam, unsolicited emails, unwanted emails
+title: Deny list
 weight: 0
 layout: page
 navigation:
   show: false
 ---
-- [Delisting Shared IP Plans](#delisting-shared-ip-plans)
-- [Delisting Dedicated IP Plans](#delisting-dedicated-ip-plans)
-- [Checking Your IP Address](#checking-your-ip-address)
-- [Delisting Request Forms](#delisting-request-forms)
-- [Gmail, Yahoo, Hotmail, and AOL Bulk Email Sender Guidelines](#gmail-yahoo-hotmail-and-aol-bulk-email-sender-guidelines)
 
-A Blacklist is a list of IP addresses that have been detected sending unsolicited and unwanted emails. Inbox service providers (like Gmail, Microsoft, Yahoo, and AOL) and enterprises use blacklists to identify and filter illegitimate mail streams. Blacklisting can also occur for specific sending domains in addition to sending IPs.
+A deny list (some services use the term, "blacklist") is a list of IP addresses that have been detected sending unsolicited and unwanted emails. Inbox service providers (like Gmail, Microsoft, Yahoo, and AOL) and enterprises use deny list to identify and filter illegitimate mail streams. Specific sending domains, in addition to sending IPs, can also be added to a deny list.
 
-All major ISPs use some form of blacklisting service to protect their customers from malicious emails, although the deliverability impact can vary depending on the blacklisting service that lists the IP. If you find that your IP address is on the blacklist of one the many legitimate services, then submit a delisting request.
+All major ISPs use some form of deny listing service to protect their customers from malicious emails, although the deliverability impact can vary depending on the service that lists the IP. If you find that your IP address is on the deny list of one the many legitimate services, then submit a delisting request.
 
-SendGrid keeps a close eye on our IP’s, and we try as quickly as possible to resolve any issues with blacklists. However, getting your IP off the blacklist often requires the user sending the mail to contact the ISP.
+SendGrid keeps a close eye on our IP’s, and we try as quickly as possible to resolve any issues with deny lists. However, getting your IP off the deny list often requires the user sending the mail to contact the ISP.
 
 ## 	Delisting Shared IP Plans
  	
 When on a Free or Essentials plan, your account is using shared IP pools - you are sharing IP addresses with many other customers, and there is the potential of being adversely affected by senders in the same pool.
-When one of the shared IP pools gets blacklisted, SendGrid receives an automatic notification and handles the delisting request on behalf of our customers. Removal time varies depending on the blacklist.
+
+When one of the shared IP pools is added to a deny list, SendGrid receives an automatic notification and handles the delisting request on behalf of our customers. Removal time varies depending on the list.
 
 <call-out>
 
@@ -36,11 +31,11 @@ SendGrid is unable to move your account to a new IP pool. The best way to not be
 ## 	Delisting Dedicated IP Plans
  	
 We ask that our dedicated IP plan users make the initial delisting request if they discover their
-SendGrid IP on a blacklist. SendGrid is happy to step in and assist with these delisting requests if the listing service requires the IP administrator to take action, or if the delisting form is too complicated.
+SendGrid IP on a deny list. SendGrid is happy to step in and assist with these delisting requests if the listing service requires the IP administrator to take action, or if the delisting form is too complicated.
 
 <call-out>
 
-If a sending domain (and not the IP address) is blacklisted, that domain’s controller is responsible for handling the delisting request.
+If a sending domain (and not the IP address) is blocked, that domain’s controller is responsible for handling the delisting request.
 
 </call-out>
 
@@ -52,7 +47,7 @@ Here are 2 aggregation websites that anyone can use to check on the status of th
 
 ## 	Delisting Request Forms
  	
-Below are links to the delisting forms used by the more popular external blacklisting services:
+Below are links to the delisting forms used by the more popular external deny listing services:
 - [AOL](https://postmaster.aol.com/sa-ticket)
 - AT&T - *email abuse_rbl@abuse-att.net*
 - [Barracuda](http://www.barracudacentral.org/rbl/removal-request)
@@ -85,7 +80,7 @@ If you are sending mail using these guidelines and still have problems deliverin
 - [Gmail Bulk Sender Contact Form](https://support.google.com/mail/contact/bulk_send_new?visit_id=1-636427436775630765-3555263264&rd=1)
 - [Yahoo Bulk Sender Contact Form](http://help.yahoo.com/l/us/yahoo/mail/postmaster/bulkv2.html)
 - [Hotmail Deliverability Issue Submission](https://mail.live.com/mail/services.aspx)
-- [AOL Whitelisting Process](https://postmaster.aol.com/whitelist-request)
+- [AOL Allow Listing Process](https://postmaster.aol.com/whitelist-request)
 
 <call-out type="warning">
 
@@ -95,6 +90,6 @@ If a listing service ever asks you pay a fee for a delisting request, or if they
 
 <call-out>
 
-Looking for customized expert advice to improve your email program? Our team of email experts can help you create a plan to ensure you're optimizing your email delivery and engagement, and avoiding future issues like blacklists. Learn more on our [Expert Services](https://sendgrid.com/solutions/expert-services/) page.
+Looking for customized expert advice to improve your email program? Our team of email experts can help you create a plan to ensure you're optimizing your email delivery and engagement, and avoiding future issues like deny lists. Learn more on our [Expert Services](https://sendgrid.com/solutions/expert-services/) page.
 
 </call-out>
