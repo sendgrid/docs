@@ -25,7 +25,7 @@ To understand DKIM, it may be helpful to understand how email is sent when DKIM 
 4. If the DKIM check passes, the receiving server can be confident the message was sent by the address in the `return-path` and wasn’t altered in transit.
 5. If the DKIM check fails, the message is likely illegitimate and will be processed using the receiving server’s failure process.
 
-![A diagram of the DKIM traffic flow described in the steps above this image]({{root_url}}/img/dkim_mail_flow.jpeg "DKIM mail flow diagram")
+![A diagram of the DKIM traffic flow described in the steps above this image]({{root_url}}/img/dkim_mail_flow.jpeg 'DKIM mail flow diagram')
 
 While DKIM authentication is an email best practice, it’s important to understand that a DKIM signature is limited in scope. It does not verify content or tell the receiver to treat the message any differently. Its main purpose is to help verify [Sender Identity]({{root_url}}/for-developers/sending-email/sender-identity/), which is an important factor (although not the only factor) when it comes to email delivery.
 
@@ -58,3 +58,20 @@ m1._domainkey.yourdomain.com. | MX | mx.sendgrid.net
 s1.domainkey.yourdomain.com. | TXT | k=rsa; t=s; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDPtW5iwpXVPiH5FzJ7Nrl8USzuY9zqqzjE0D1r04xDN6qwziDnmgcFNNfMewVKN2D1O+2J9N14hRprzByFwfQW76yojh54Xu3uSbQ3JP0A7k8o8GutRF8zbFUA8n0ZH2y0cIEjMliXY4W4LwPA7m4q0ObmvSjhd63O9d8z1XkUBwIDAQAB
 s2.domainkey.yourdomain.com. | TXT | v=spf1 include:sendgrid.net ~all
 ```
+
+<call-out-link linktext="IMPLEMENTATION SERVICES" img="/img/expert-insights-promo1.png" link="https://sendgrid.com/solutions/email-implementation/">
+
+### Do you want expert help to get your email program started on the right foot?
+
+Save time and feel confident you are set up for long-term success with Email Implementation. Our experts will work as an extension of your team to ensure your email program is correctly set up and delivering value for your business.
+
+</call-out-link>
+
+## Additional resources
+
+- [Sender Identity](/for-developers/sending-email/sender-identity/)
+- [Domain Authentication](/ui/account-and-settings/how-to-set-up-domain-authentication/)
+- [Single Sender Verification](/ui/sending-email/sender-verification/)
+- [How to set up link branding]({{root_url}}/ui/account-and-settings/how-to-set-up-link-branding/)
+- [How to set up reverse DNS]({{root_url}}/ui/account-and-settings/how-to-set-up-reverse-dns/)
+- [Troubleshooting Sender Authentication]({{root_url}}/ui/account-and-settings/troubleshooting-sender-authentication/)
