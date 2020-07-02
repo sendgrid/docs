@@ -5585,4 +5585,20 @@ module.exports = [
     from: 'glossary/black-hat-sender/',
     to: '/glossary/suspicious-sender/',
   },
+  {
+    from: '/ui/account-and-settings/aol-dmarc/',
+    to: '/ui/sending-email/dmarc/',
+  },
+  {
+    from: '/ui/account-and-settings/gmail-dmarc/',
+    to: '/ui/sending-email/dmarc/',
+  },
+  {
+    from: '/ui/account-and-settings/microsoft-dmarc/',
+    to: '/ui/sending-email/dmarc/',
+  },
+  {
+    from: '/ui/account-and-settings/yahoo-dmarc/',
+    to: '/ui/sending-email/dmarc/',
+  },
 ];
