@@ -5601,4 +5601,8 @@ module.exports = [
     from: '/ui/account-and-settings/yahoo-dmarc/',
     to: '/ui/sending-email/dmarc/',
   },
+  {
+    from: '/for-developers/sending-email/v3-nodejs-code-example/',
+    to: '/for-developers/sending-email/quickstart-nodejs/',
+  },
 ];
