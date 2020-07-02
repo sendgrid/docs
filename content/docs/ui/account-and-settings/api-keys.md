@@ -15,7 +15,7 @@ Your application, mail client, or website can all use API (Application Programmi
 
 ## Types of API keys
 
-*There are 3 different types of API keys:*
+_There are 3 different types of API keys:_
 
 1. **Full Access** allows the API key to access GET, PATCH, PUT, DELETE and POST endpoints for all parts of your account, excluding billing and Email Address Validation.
 
@@ -23,16 +23,16 @@ Your application, mail client, or website can all use API (Application Programmi
 
 1. **Billing Access** allows the API key to access billing endpoints for the account.
 
-### 	API key permissions
+### API key permissions
 
 During the API key creation process, you will be given the option of selecting scopes, or specific permissions, that you would like to assign to your new API key. These permissions restrict which areas of your account your API key will be able to access.
 When assigning permissions to your API key, you will be given the option to select one of the following levels of access:
 
-* **No Access** prevents the API key from accessing any endpoint within the selected permission.
+- **No Access** prevents the API key from accessing any endpoint within the selected permission.
 
-* **Read Access** allows the API key to access GET endpoints within the selected permission.
+- **Read Access** allows the API key to access GET endpoints within the selected permission.
 
-* **Full Access** allows the API key to access GET, PATCH, PUT, DELETE, and POST endpoints within the selected permission.
+- **Full Access** allows the API key to access GET, PATCH, PUT, DELETE, and POST endpoints within the selected permission.
 
 We require that you create a separate API key for making billing-related API calls. This segmentation adds an extra level of security by giving you more control over who has access to the various areas of your account.
 
@@ -46,9 +46,9 @@ When viewing the API keys page, you will see a list of your current API keys alo
 
 **Action** - Actions you can perform on your API keys, such as editing or deleting the key.
 
-### 	Creating an API key
+### Creating an API key
 
-1. Navigate to **Settings** on the left navigation bar, and then select **API Keys**. 
+1. Navigate to **Settings** on the left navigation bar, and then select **API Keys**.
 1. Click **Create API Key**.
 1. Give your API key a name.
 1. Select **Full Access**, **Restricted Access**, or **Billing Access**.
@@ -68,11 +68,70 @@ There is a limit of 100 API Keys per account.
 
 </call-out>
 
-## 	Editing an API key
+### Storing an API key in an environment variable
+
+Twilio SendGrid recommends storing your API key in an environment variable or a config file that is not stored in version control.
+
+When setting a variable in your program, that variable is readable by any person or system that can access the text file where it’s set. However, a variable that's confined to the environment where the code is executed, stored outside the program itself, is called an environment variable. Only people and programs with access to the environment can read the value assigned to an environment variable. This makes environment variables a more secure choice for storing credentials such as API keys.
+
+Once you assign your API key to an environment variable, you can then tell your program to look for and use that variable. Another benefit of this approach is the ability to set API keys with different permissions in different environments such as development, staging, and production without changing the code you deploy to those environments.
+
+The examples below show how to store your key in a variable named `SENDGRID_API_KEY`. You can find additional examples in the [Twilio Documentation](https://www.twilio.com/docs/usage/secure-credentials).
+
+To store your SendGrid API key, open your terminal or command prompt and add the following:
+
+<code-group langs="Unix, Windows">
+
+```unix
+export SENDGRID_API_KEY=the_key_you_copied_from_SendGrid
+```
+
+```windows
+setx SENDGRID_API_KEY the_key_you_copied_from_SendGrid
+```
+
+</code-group>
+
+To then access the variable, you can use the convention provided by your coding language.
+
+<code-group langs="C#, Go, Java, Node.js, PHP, Python, Ruby">
+
+```c#
+var apiKey = Environment.GetEnvironmentVariable("SENDGRID_API_KEY");
+```
+
+```go
+apiKey := os.Getenv("SENDGRID_API_KEY")
+```
+
+```java
+apiKey = System.getenv("SENDGRID_API_KEY");
+```
+
+```node.js
+const apiKey = process.env.SENDGRID_API_KEY;
+```
+
+```php
+$apiKey = getenv('SENDGRID_API_KEY');
+```
+
+```python
+api_key = os.environ.get('SENDGRID_API_KEY')
+```
+
+```ruby
+api_key = ENV['SENDGRID_API_KEY']
+```
+
+</code-group>
+
+
+## Editing an API key
 
 Click the action menu in the same row as the key you would like to edit. From here you can delete a key, making it completely inactive, or you can edit your key’s name and permissions.
 
-## 	Deleting an API key
+## Deleting an API key
 
 <call-out type="warning">
 
@@ -82,7 +141,7 @@ Once you delete a key, it can no longer be used to access SendGrid’s services.
 
 Click the action menu in the same row as the key you want to delete. Select **Delete**. This will delete the key permanently, making it inactive. SendGrid will reject any subsequent API calls using this deleted API key.
 
-## 	Replacing an old API key with a new one
+## Replacing an old API key with a new one
 
 1. Locate the API key you would like to replace in your list of keys and select the action menu drop down at the right on the same row, then select **Delete API key**.
 1. Next, [create an API key](#creating-an-api-key).
@@ -94,8 +153,7 @@ You may not give an API key greater permissions than you currently have.
 
 </call-out>
 
- 
-##	Testing an API key
+## Testing an API key
 
 You can test your newly created API key using cURL:
 
