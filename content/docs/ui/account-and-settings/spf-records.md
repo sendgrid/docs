@@ -76,7 +76,7 @@ You can choose to specify your [dedicated IP address]({{root_url}}/ui/account-an
 
 If you wish to add multiple `ip4` lookups (if you have an account that sends from multiple dedicated IPs, for example), add them to your record separated by spaces. Unlike with `include:hostname` lookups, a SPF1 record can have any number of `ip4` includes.
 
-For more information on official SPF best practices and syntax, you can find the SPF specification at [www.openspf.org](http://www.openspf.org/).
+For more information on official SPF best practices and syntax, you can find the SPF specification at [www.openspf.org](http://www.open-spf.org/).
 
 ## Additional Resources
 
