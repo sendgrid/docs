@@ -58,7 +58,7 @@ Let’s again imagine an email sent by `sender@example.com`. For DKIM to work pr
 
 ![A diagram of the DKIM traffic flow described in the steps above this image]({{root_url}}/img/dkim_mail_flow.jpeg "DKIM mail flow diagram")
 
-For more information about DKIM, see [DKIM Records Explained](/glossary/dkim/).
+For more information about DKIM, see [DKIM Records Explained](/ui/account-and-settings/dkim-records/).
 
 ## Domain-based Message Authentication, Reporting and Conformance
 

@@ -32,4 +32,4 @@ _Alice encrypts a message with her private key, then sends the message to Bob. B
 
 ## DKIM and SendGrid
 
-SendGrid automatically enables DKIM for all email to improve your email deliverability, whether you’re on a shared IP or a dedicated one. This is just one more example of how SendGrid helps thousands of customers follow email best practices to ensure maximum delivery for their emails.
+SendGrid automatically enables DKIM for all email to improve your email deliverability, whether you’re on a shared IP or a dedicated one. This is just one more example of how SendGrid helps thousands of customers follow email best practices to ensure maximum delivery for their emails. For more information, see [DKIM Records Explained]({{root_url}}/ui/account-and-settings/dkim-records/).
