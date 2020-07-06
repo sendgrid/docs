@@ -140,12 +140,15 @@ ecdsa.Verify(publicKey, hashedPayload, ecdsaSig.R, ecdsaSig.S)
 
 #### Sample verification libraries
 
-The following list includes popular cryptography libraries for the coding languages most commonly used by our customers—it is not meant to be comprehensive. Remember, be sure to do your own due diligence when evaluating cryptography libraries and packages.
+The [Twilio SendGrid API libraries]({{root_url}}/for-developers/sending-email/libraries/) contain helpers to assist you when verifying the ECDSA signature. The links below will take you to the Event Webhook helper in each library.
 
-- **C#**: [C#/.Net ECDSA](https://docs.microsoft.com/en-us/dotnet/api/system.security.cryptography.ecdsa?view=netframework-4.8)
-- **Go**: [Go Crypto ECDSA](https://golang.org/pkg/crypto/ecdsa/)
-- **Java**: [ECDSA Java](https://github.com/starkbank/ecdsa-java)
-- **Node.js**: [Node.js Crypto ECDSA](https://nodejs.org/api/crypto.html#crypto_crypto_verify_algorithm_data_key_signature)
+- [C# Event Webhook Helper](https://github.com/sendgrid/sendgrid-csharp/tree/master/src/SendGrid/Helpers/EventWebhook)
+- [Go Event Webhook Helper](https://github.com/sendgrid/sendgrid-go/tree/master/helpers/eventwebhook)
+- [Java Event Webhook Helper](https://github.com/sendgrid/sendgrid-java/tree/master/src/main/java/com/sendgrid/helpers/eventwebhook)
+- [Node.js Event Webhook Helper](https://github.com/sendgrid/sendgrid-nodejs/tree/master/packages/eventwebhook)
+- [PHP Event Webhook Helper](https://github.com/sendgrid/sendgrid-php/tree/master/lib/eventwebhook)
+- [Python Event Webhook Helper](https://github.com/sendgrid/sendgrid-python/tree/master/sendgrid/helpers/eventwebhook)
+- [Ruby Event Webhook Helper](https://github.com/sendgrid/sendgrid-ruby/tree/master/lib/sendgrid/helpers/eventwebhook)
 
 ## OAuth 2.0
 
