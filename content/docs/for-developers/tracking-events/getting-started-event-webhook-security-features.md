@@ -11,6 +11,12 @@ seo:
   keywords: Webhook, Signed, Cryptography, OAuth, ECDSA
 ---
 
+<call-out type="beta">
+
+The following features are currently available as a public beta release.
+
+</call-out>
+
 Twilio SendGrid's Event Webhook will notify a URL via HTTP POST with information about events that occur as your mail is processed. This article covers all you need to know to secure the Event Webhook, allowing you to verify that incoming requests originate from Twilio SendGrid.
 
 <call-out>
@@ -136,13 +142,13 @@ ecdsa.Verify(publicKey, hashedPayload, ecdsaSig.R, ecdsaSig.S)
 
 The [Twilio SendGrid API libraries]({{root_url}}/for-developers/sending-email/libraries/) contain helpers to assist you when verifying the ECDSA signature. The links below will take you to the Event Webhook helper in each library.
 
-- **C#**: [C#/.Net ECDSA](https://github.com/sendgrid/sendgrid-csharp/tree/master/src/SendGrid/Helpers/EventWebhook)
-- **Go**: [Go Crypto ECDSA](https://github.com/sendgrid/sendgrid-go/tree/master/helpers/eventwebhook)
-- **Java**: [ECDSA Java](https://github.com/sendgrid/sendgrid-java/tree/master/src/main/java/com/sendgrid/helpers/eventwebhook)
-- **Node.js**: [Node.js Crypto ECDSA](https://github.com/sendgrid/sendgrid-nodejs/tree/master/packages/eventwebhook)
-- **PHP**: [Go Crypto ECDSA](https://github.com/sendgrid/sendgrid-php/tree/master/lib/eventwebhook)
-- **Python**: [Go Crypto ECDSA](https://github.com/sendgrid/sendgrid-python/tree/master/sendgrid/helpers/eventwebhook)
-- **Ruby**: [Go Crypto ECDSA](https://github.com/sendgrid/sendgrid-ruby/tree/master/lib/sendgrid/helpers/eventwebhook)
+- [C# Event Webhook Helper](https://github.com/sendgrid/sendgrid-csharp/tree/master/src/SendGrid/Helpers/EventWebhook)
+- [Go Event Webhook Helper](https://github.com/sendgrid/sendgrid-go/tree/master/helpers/eventwebhook)
+- [Java Event Webhook Helper](https://github.com/sendgrid/sendgrid-java/tree/master/src/main/java/com/sendgrid/helpers/eventwebhook)
+- [Node.js Event Webhook Helper](https://github.com/sendgrid/sendgrid-nodejs/tree/master/packages/eventwebhook)
+- [PHP Event Webhook Helper](https://github.com/sendgrid/sendgrid-php/tree/master/lib/eventwebhook)
+- [Python Event Webhook Helper](https://github.com/sendgrid/sendgrid-python/tree/master/sendgrid/helpers/eventwebhook)
+- [Ruby Event Webhook Helper](https://github.com/sendgrid/sendgrid-ruby/tree/master/lib/sendgrid/helpers/eventwebhook)
 
 ## OAuth 2.0
 
