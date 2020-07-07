@@ -11,7 +11,7 @@ seo:
   description:
 ---
 
-## 	Handlebars overview
+## Handlebars overview
 
 [Handlebars.js syntax](https://handlebarsjs.com/) provides a simple, powerful way to include dynamic content, directly within email templates. Handlebars.js syntax allows all of this dynamic templating to occur outside of code, meaning changes are done quickly in the template, with no update to a code base required.
 
@@ -23,31 +23,31 @@ For the full API documentation, see [Mail Send with Dynamic Transactional Templa
 
 </call-out>
 
-## 	Personalizing email with Handlebars
+## Personalizing email with Handlebars
 
 We do not support full Handlebars.js functionality. Currently, dynamic templates support the following helpers:
 
-  - [Substitution](#substitution)
-  - [Conditional statements](#conditional-statements) (including `if/else` and `unless`)
-  - [Iterations](#iterations)
+- [Substitution](#substitution)
+- [Conditional statements](#conditional-statements) (including `if/else` and `unless`)
+- [Iterations](#iterations)
 
 For a full helper reference, with examples, see the [Handlebar.js reference](#handlebarjs-reference). This page has use cases with examples that include the supported helpers.
 
-## 	Use cases
+## Use cases
 
 Here are example use cases listed with the Handlebars.js helpers used to build the example templates.
 
- ### 	Receipts
+### Receipts
 
 This is an [example receipt template](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates/receipt).
 
 This receipt template is using these helpers:
 
-  - [Substitution](#substitution)
-  - [Conditional statements](#conditional-statements)
-  - [Iterations](#iterations)
+- [Substitution](#substitution)
+- [Conditional statements](#conditional-statements)
+- [Iterations](#iterations)
 
- ### 	Password reset
+### Password reset
 
 This is an [example transactional template](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates/transactional-actions).
 
@@ -55,7 +55,7 @@ This transactional template is using this helper:
 
 - [Substitution](#substitution)
 
- ### 	Multiple languages
+### Multiple languages
 
 This is an [example template that lets you have content in multiple languages](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates/different-languages).
 
@@ -63,30 +63,30 @@ This template is using this helper:
 
 - [Conditional statements](#conditional-statements) - `if/else`
 
- ### 	Newsletter
+### Newsletter
 
 This is an [example newsletter template](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates/newsletter).
 
 This template is using these helpers:
 
-  - [Substitution](#substitution)
-  - [Iterations](#iterations)
+- [Substitution](#substitution)
+- [Iterations](#iterations)
 
- ### 	Advertisement
+### Advertisement
 
 This is an [example template that is advertising items on sale](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates/special-sale).
 
 This template is using these helpers:
 
-  - [Substitution](#substitution)
-  - [Conditional statements](#conditional-statements) - `if/else`
-  - [Iterations](#iterations)
+- [Substitution](#substitution)
+- [Conditional statements](#conditional-statements) - `if/else`
+- [Iterations](#iterations)
 
-## 	Handlebar.js reference
+## Handlebar.js reference
 
 This reference goes through examples of each helper - including HTML email snippets, and JSON test data.
 
- ### 	Substitution
+### Substitution
 
 There are four main types of substitutions:
 
@@ -95,31 +95,36 @@ There are four main types of substitutions:
 - [Object failure](#object-failure)
 - [Replacement with HTML](#replacement-with-html)
 
- ### 	Basic replacement
+### Basic replacement
 
 HTML should contain:
+
 ```
 <p>Hello {{firstName}}</p>
 ```
 
 Test Data should contain:
+
 ```
 {"firstName":"Ben"}
 ```
 
 Resulting replacement:
+
 ```
 <p>Hello Ben</p>
 ```
 
- ### 	Deep object replacement
+### Deep object replacement
 
 HTML should contain:
+
 ```
 <p>Hello {{user.profile.firstName}}</p>
 ```
 
 Test Data should contain:
+
 ```
 {
    "user":{
@@ -131,18 +136,21 @@ Test Data should contain:
 ```
 
 Resulting replacement:
+
 ```
 <p>Hello Ben</p>
 ```
 
- ### 	Object failure
+### Object failure
 
 HTML should contain:
+
 ```
 <p>Hello {{user.profile.firstName}}</p>
 ```
 
 Test Data should contain:
+
 ```
 {
    "user":{
@@ -161,11 +169,12 @@ Test Data should contain:
 ```
 
 Resulting replacement:
+
 ```
 <p>Hello</p>
 ```
 
- ### 	Replacement with HTML
+### Replacement with HTML
 
 <call-out type="warning">
 
@@ -174,22 +183,26 @@ If you include the characters `'`, `"` or `&` in a subject line replacement be s
 </call-out>
 
 HTML should contain:
+
 ```
 <p>Hello {{{firstName}}}</p>
 ```
+
 > Per Handlebars' documentation: If you don't want Handlebars to escape a value, use the "triple-stash", {{{
 
 Test Data should contain:
+
 ```
 {"firstName":"<strong>Ben</strong>"}
 ```
 
 Resulting replacement:
+
 ```
 <p>Hello <strong>Ben</strong></p>
 ```
 
- ### 	Conditional statements
+### Conditional statements
 
 Here are three types of conditonal statements:
 
@@ -197,9 +210,10 @@ Here are three types of conditonal statements:
 - [If with a root](#if-with-a-root)
 - [Unless](#unless)
 
- ### 	Basic If, Else, Else If
+### Basic If, Else, Else If
 
 HTML should contain:
+
 ```
 {{#if user.profile.male}}
   <p>Dear Sir</p>
@@ -212,6 +226,7 @@ HTML should contain:
 
 Test Data should contain:
 **1**
+
 ```
 {
    "user":{
@@ -223,6 +238,7 @@ Test Data should contain:
 ```
 
 **2**
+
 ```
 {
    "user":{
@@ -234,6 +250,7 @@ Test Data should contain:
 ```
 
 **3**
+
 ```
 {
    "user":{
@@ -246,23 +263,27 @@ Test Data should contain:
 
 Resulting replacement:
 **1**
+
 ```
 <p>Dear Sir</p>
 ```
 
 **2**
+
 ```
 <p>Dear Madame</p>
 ```
 
 **3**
+
 ```
 <p>Dear Customer</p>
 ```
 
- ### 	If with a root
+### If with a root
 
 HTML should contain:
+
 ```
 {{#if user.suspended}}
 	<p>Warning! Your account is suspended, please call: {{@root.supportPhone}}</p>
@@ -270,6 +291,7 @@ HTML should contain:
 ```
 
 Test Data should contain:
+
 ```
 {
    "user":{
@@ -280,13 +302,15 @@ Test Data should contain:
 ```
 
 Resulting replacement:
+
 ```
 <p>Warning! Your account is suspended, please call: 1-800-1234567</p>
 ```
 
- ### 	Unless
+### Unless
 
 HTML should contain:
+
 ```
 {{#unless user.active}}
 	<p>Warning! Your account is suspended, please call: {{@root.supportPhone}}</p>
@@ -294,6 +318,7 @@ HTML should contain:
 ```
 
 Test Data should contain:
+
 ```
 {
    "user":{
@@ -303,13 +328,12 @@ Test Data should contain:
 }
 ```
 
+## Iterations
 
-
- ##	Iterations
-
- ### 	Basic Iterator
+### Basic Iterator
 
 HTML should contain:
+
 ```
 <ol>
 {{#each user.orderHistory}}
@@ -319,6 +343,7 @@ HTML should contain:
 ```
 
 Test Data should contain:
+
 ```
 {
    "user":{
@@ -337,6 +362,7 @@ Test Data should contain:
 ```
 
 Resulting replacement:
+
 ```
 <ol>
 	<li>You ordered: shoes on: 2/1/2018</li>
@@ -344,7 +370,7 @@ Resulting replacement:
 </ol>
 ```
 
- ### 	Combined examples
+### Combined examples
 
 Here are two combined examples:
 
@@ -352,9 +378,10 @@ Here are two combined examples:
 - [Dynamic content creation with dynamic parts 1](#dynamic-content-creation-with-dynamic-parts-1)
 - [Dynamic content creation with dynamic parts 2](#dynamic-content-creation-with-dynamic-parts-2)
 
- ### 	Dynamic content creation
+### Dynamic content creation
 
 HTML should contain:
+
 ```
 {{#each user.story}}
   {{#if this.male}}
@@ -365,8 +392,8 @@ HTML should contain:
 {{/each}}
 ```
 
-
 Test Data should contain:
+
 ```
 {
    "user":{
@@ -392,15 +419,17 @@ Test Data should contain:
 ```
 
 Resulting replacement:
+
 ```
 <p>2/1/2018</p>
 <p>1/4/2017</p>
 <p>shirt</p>
 ```
 
- ### 	Dynamic content creation with dynamic parts 1
+### Dynamic content creation with dynamic parts 1
 
 HTML should contain:
+
 ```
 {{#each user.story}}
   {{#if this.male}}
@@ -422,6 +451,7 @@ HTML should contain:
 ```
 
 Test Data should contain:
+
 ```
 {
    "user":{
@@ -445,6 +475,7 @@ Test Data should contain:
 ```
 
 Resulting replacement:
+
 ```
 <p>2/1/2018</p>
 <p>shoes</p>
@@ -452,9 +483,10 @@ Resulting replacement:
 <p>shirt</p>
 ```
 
- ### 	Dynamic content creation with dynamic parts 2
+### Dynamic content creation with dynamic parts 2
 
 HTML should contain:
+
 ```
 {{#if people}}
   <p>People:</p>
@@ -465,6 +497,7 @@ HTML should contain:
 ```
 
 Test Data should contain:
+
 ```
 {
   "people":[{"name":"Bob"},{"name":"Sally"}]
@@ -472,13 +505,14 @@ Test Data should contain:
 ```
 
 Resulting replacement:
+
 ```
 <p>People:</p>
 <p>Bob</p>
 <p>Sally</p>
 ```
 
-## 	Additional Resources
+## Additional Resources
 
 - [Sending Email with Dynamic Transactional Templates]({{root_url}}/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/)
 - [Create and edit Dynamic Transactional Templates]({{root_url}}/ui/sending-email/create-and-edit-transactional-templates/)
