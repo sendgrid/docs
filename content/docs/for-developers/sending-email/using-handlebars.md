@@ -19,7 +19,7 @@ This page uses examples from the [dynamic-template section of our email template
 
 <call-out>
 
-For the full API documentation, see [Mail Send with Dynamic Transactional Templates](https://sendgrid.api-docs.io/v3.0/transactional-templates).
+For our API reference, see [Mail Send with Dynamic Transactional Templates](https://sendgrid.api-docs.io/v3.0/transactional-templates).
 
 </call-out>
 
@@ -28,10 +28,10 @@ For the full API documentation, see [Mail Send with Dynamic Transactional Templa
 We do not support full Handlebars.js functionality. Currently, dynamic templates support the following helpers:
 
 - [Substitution](#substitution)
-- [Conditional statements](#conditional-statements) (including `if/else` and `unless`)
+- [Conditional statements](#conditional-statements)
 - [Iterations](#iterations)
 
-For a full helper reference, with examples, see the [Handlebar.js reference](#handlebarjs-reference). This page has use cases with examples that include the supported helpers.
+For a full helper reference, with example use cases, see the [Handlebar.js reference](#handlebarjs-reference) on this page.
 
 ## Use cases
 
@@ -94,38 +94,42 @@ There are four main types of substitutions:
 - [Deep object replacement](#deep-object-replacement)
 - [Object failure](#object-failure)
 - [Replacement with HTML](#replacement-with-html)
+- [Uppercase](#uppercase)
+- [Lowercase](#lowercase)
+- [Date](#date)
+- [Insert](#insert)
 
-### Basic replacement
+#### Basic replacement
 
 HTML should contain:
 
-```
-<p>Hello {{firstName}}</p>
+```handlebars
+<p>Hello {{ firstName }}</p>
 ```
 
 Test Data should contain:
 
-```
+```javascript
 {"firstName":"Ben"}
 ```
 
 Resulting replacement:
 
-```
+```html
 <p>Hello Ben</p>
 ```
 
-### Deep object replacement
+#### Deep object replacement
 
 HTML should contain:
 
-```
+```handlebars
 <p>Hello {{user.profile.firstName}}</p>
 ```
 
 Test Data should contain:
 
-```
+```javascript
 {
    "user":{
       "profile":{
@@ -137,21 +141,21 @@ Test Data should contain:
 
 Resulting replacement:
 
-```
+```html
 <p>Hello Ben</p>
 ```
 
-### Object failure
+#### Object failure
 
 HTML should contain:
 
-```
+```handlebars
 <p>Hello {{user.profile.firstName}}</p>
 ```
 
 Test Data should contain:
 
-```
+```javascript
 {
    "user":{
       "orderHistory":[
@@ -170,11 +174,11 @@ Test Data should contain:
 
 Resulting replacement:
 
-```
+```html
 <p>Hello</p>
 ```
 
-### Replacement with HTML
+#### Replacement with HTML
 
 <call-out type="warning">
 
@@ -184,7 +188,7 @@ If you include the characters `'`, `"` or `&` in a subject line replacement be s
 
 HTML should contain:
 
-```
+```handlebars
 <p>Hello {{{firstName}}}</p>
 ```
 
@@ -192,15 +196,23 @@ HTML should contain:
 
 Test Data should contain:
 
-```
+```javascript
 {"firstName":"<strong>Ben</strong>"}
 ```
 
 Resulting replacement:
 
-```
+```html
 <p>Hello <strong>Ben</strong></p>
 ```
+
+#### Uppercase
+
+#### Lowercase
+
+#### Date
+
+#### Insert
 
 ### Conditional statements
 
@@ -209,25 +221,34 @@ Here are three types of conditonal statements:
 - [Basic If, Else, Else If](#basic-if--else-else-if)
 - [If with a root](#if-with-a-root)
 - [Unless](#unless)
+- [Greater Than](#greater-than)
+- [Less Than](#less-than)
+- [Equal](#equal)
+- [Not Equal](#not-equal)
+- [And](#and)
+- [Or](#or)
+- [Length](#length)
+- [Is Before](#is-before)
+- [Is After](#is-after)
 
-### Basic If, Else, Else If
+#### Basic If, Else, Else If
 
 HTML should contain:
 
-```
+```handlebars
 {{#if user.profile.male}}
-  <p>Dear Sir</p>
+   <p>Dear Sir</p>
 {{else if user.profile.female}}
-  <p>Dear Madame</p>
+   <p>Dear Madame</p>
 {{else}}
-  <p>Dear Customer</p>
+   <p>Dear Customer</p>
 {{/if}}
 ```
 
 Test Data should contain:
 **1**
 
-```
+```javascript
 {
    "user":{
       "profile":{
@@ -239,7 +260,7 @@ Test Data should contain:
 
 **2**
 
-```
+```javascript
 {
    "user":{
       "profile":{
@@ -251,7 +272,7 @@ Test Data should contain:
 
 **3**
 
-```
+```javascript
 {
    "user":{
       "profile":{
@@ -264,35 +285,35 @@ Test Data should contain:
 Resulting replacement:
 **1**
 
-```
+```html
 <p>Dear Sir</p>
 ```
 
 **2**
 
-```
+```html
 <p>Dear Madame</p>
 ```
 
 **3**
 
-```
+```html
 <p>Dear Customer</p>
 ```
 
-### If with a root
+#### If with a root
 
 HTML should contain:
 
-```
+```handlebars
 {{#if user.suspended}}
-	<p>Warning! Your account is suspended, please call: {{@root.supportPhone}}</p>
+   <p>Warning! Your account is suspended, please call: {{@root.supportPhone}}</p>
 {{/if}}
 ```
 
 Test Data should contain:
 
-```
+```javascript
 {
    "user":{
       "suspended":true
@@ -303,23 +324,23 @@ Test Data should contain:
 
 Resulting replacement:
 
-```
+```html
 <p>Warning! Your account is suspended, please call: 1-800-1234567</p>
 ```
 
-### Unless
+#### Unless
 
 HTML should contain:
 
-```
+```handlebars
 {{#unless user.active}}
-	<p>Warning! Your account is suspended, please call: {{@root.supportPhone}}</p>
+   <p>Warning! Your account is suspended, please call: {{@root.supportPhone}}</p>
 {{/unless}}
 ```
 
 Test Data should contain:
 
-```
+```javascript
 {
    "user":{
       "active":false
@@ -328,23 +349,41 @@ Test Data should contain:
 }
 ```
 
-## Iterations
+#### Greater Than
 
-### Basic Iterator
+#### Less Than
+
+#### Equal
+
+#### Not Equal
+
+#### And
+
+#### Or
+
+#### Length
+
+#### Is Before
+
+#### Is After
+
+### Iterations
+
+#### Basic Iterator
 
 HTML should contain:
 
-```
+```handlebars
 <ol>
-{{#each user.orderHistory}}
-	<li>You ordered: {{this.item}} on: {{this.date}}</li>
-{{/each}}
+  {{#each user.orderHistory}}
+   <li>You ordered: {{this.item}} on: {{this.date}}</li>
+  {{/each}}
 </ol>
 ```
 
 Test Data should contain:
 
-```
+```javascript
 {
    "user":{
       "orderHistory":[
@@ -363,10 +402,10 @@ Test Data should contain:
 
 Resulting replacement:
 
-```
+```html
 <ol>
-	<li>You ordered: shoes on: 2/1/2018</li>
-	<li>You ordered: hat on: 1/42017</li>
+  <li>You ordered: shoes on: 2/1/2018</li>
+  <li>You ordered: hat on: 1/42017</li>
 </ol>
 ```
 
@@ -378,23 +417,23 @@ Here are two combined examples:
 - [Dynamic content creation with dynamic parts 1](#dynamic-content-creation-with-dynamic-parts-1)
 - [Dynamic content creation with dynamic parts 2](#dynamic-content-creation-with-dynamic-parts-2)
 
-### Dynamic content creation
+#### Dynamic content creation
 
 HTML should contain:
 
-```
+```handlebars
 {{#each user.story}}
-  {{#if this.male}}
-    <p>{{this.date}}</p>
-  {{else if this.female}}
-    <p>{{this.item}}</p>
-  {{/if}}
+   {{#if this.male}}
+      <p>{{this.date}}</p>
+   {{else if this.female}}
+      <p>{{this.item}}</p>
+   {{/if}}
 {{/each}}
 ```
 
 Test Data should contain:
 
-```
+```javascript
 {
    "user":{
       "story":[
@@ -420,39 +459,39 @@ Test Data should contain:
 
 Resulting replacement:
 
-```
+```html
 <p>2/1/2018</p>
 <p>1/4/2017</p>
 <p>shirt</p>
 ```
 
-### Dynamic content creation with dynamic parts 1
+#### Dynamic content creation with dynamic parts 1
 
 HTML should contain:
 
-```
+```handlebars
 {{#each user.story}}
-  {{#if this.male}}
-    {{#if this.date}}
-      <p>{{this.date}}</p>
-    {{/if}}
-    {{#if this.item}}
-      <p>{{this.item}}</p>
-    {{/if}}
-  {{else if this.female}}
-    {{#if this.date}}
-      <p>{{this.date}}</p>
-    {{/if}}
-    {{#if this.item}}
-      <p>{{this.item}}</p>
-    {{/if}}
-  {{/if}}
+   {{#if this.male}}
+      {{#if this.date}}
+         <p>{{this.date}}</p>
+      {{/if}}
+      {{#if this.item}}
+         <p>{{this.item}}</p>
+      {{/if}}
+   {{else if this.female}}
+      {{#if this.date}}
+         <p>{{this.date}}</p>
+      {{/if}}
+      {{#if this.item}}
+         <p>{{this.item}}</p>
+      {{/if}}
+   {{/if}}
 {{/each}}
 ```
 
 Test Data should contain:
 
-```
+```javascript
 {
    "user":{
       "story":[
@@ -476,29 +515,29 @@ Test Data should contain:
 
 Resulting replacement:
 
-```
+```html
 <p>2/1/2018</p>
 <p>shoes</p>
 <p>1/4/2017</p>
 <p>shirt</p>
 ```
 
-### Dynamic content creation with dynamic parts 2
+#### Dynamic content creation with dynamic parts 2
 
 HTML should contain:
 
-```
+```handlebars
 {{#if people}}
-  <p>People:</p>
-  {{#each people}}
-    <p>{{this.name}}</p>
-  {{/each}}
+   <p>People:</p>
+   {{#each people}}
+      <p>{{this.name}}</p>
+   {{/each}}
 {{/if}}
 ```
 
 Test Data should contain:
 
-```
+```javascript
 {
   "people":[{"name":"Bob"},{"name":"Sally"}]
 }
@@ -506,7 +545,7 @@ Test Data should contain:
 
 Resulting replacement:
 
-```
+```html
 <p>People:</p>
 <p>Bob</p>
 <p>Sally</p>
