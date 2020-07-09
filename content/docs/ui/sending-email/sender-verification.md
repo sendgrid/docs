@@ -12,7 +12,7 @@ seo:
 
 <call-out>
 
-The information on this page applies to new Free Trial, Essentials 40K, and Essentials 100K customers. If you received account access before April 6, 2020, you can disregard the information below.
+The information on this page applies to new Free Trial, Essentials 40K, Essentials 100K, and Pro 100K customers. If you received account access before April 6, 2020, you can disregard the information below.
 
 </call-out>
 
