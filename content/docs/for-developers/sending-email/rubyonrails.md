@@ -92,7 +92,7 @@ In `config/environment.rb` specify your ActionMailer settings to point to SendGr
 ``` ruby
 ActionMailer::Base.smtp_settings = {
   :user_name => 'apikey',
-  :api_key => 'your_sendgrid_api_key',
+  :password => 'your_sendgrid_api_key',
   :domain => 'yourdomain.com',
   :address => 'smtp.sendgrid.net',
   :port => 465,

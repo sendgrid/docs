@@ -17,7 +17,13 @@ Domain-based Message Authentication, Reporting and Conformance (DMARC) was creat
 
 Deploying DMARC for your email systems is a powerful way to help prevent malicious entities from potentially spoofing or otherwise tarnishing your reputation as a trustworthy email sender. DMARC isn't for everyone. If you own a small domain, you're probably OK without it. If you have ever had problems with phishing, or if you operate a finance-related business, implementing DMARC may be a good decision.
 
-DMARC, in conjunction with a dedicated IP (included in Pro or higher accounts), is a great start to getting industry-supported peace of mind
+DMARC, in conjunction with a dedicated IP (included in Pro or higher accounts), is a great start to getting industry-supported peace of mind.
+
+<call-out>
+
+Twilio SendGrid now offers additional DMARC enforcement and monitoring options in partership with [Valimail](https://go.valimail.com/TwilioSendGrid.html). Click [here](https://sendgrid.com/blog/twilio-launches-partnership-with-valimail-dmarc-solutions-to-deploy-sophisticated-anti-phishing-technologies-at-scale/) for more information.
+
+</call-out>
 
 ## Reading DMARC reports
 

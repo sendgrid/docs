@@ -23,6 +23,12 @@ Email spoofing is the practice of sending email with a forged From address. Note
 
 DMARC relies on two authentication protocols to prevent spoofing: Sender Policy Framework (SPF) and DomainKeys Identified Mail (DKIM).
 
+<call-out>
+
+Twilio SendGrid now offers additional DMARC enforcement and monitoring options in partership with [Valimail](https://go.valimail.com/TwilioSendGrid.html). Click [here](https://sendgrid.com/blog/twilio-launches-partnership-with-valimail-dmarc-solutions-to-deploy-sophisticated-anti-phishing-technologies-at-scale/) for more information.
+
+</call-out>
+
 ## Sender Policy Framework
 
 The strategy employed by SPF is to add a [TXT record](https://en.wikipedia.org/wiki/TXT_record) to a domain’s [DNS](/glossary/dns/). The TXT record specifies which IP addresses are allowed to send email for the domain.
