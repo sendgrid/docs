@@ -236,7 +236,7 @@ Get additional onboarding support. Save time, increase the quality of your sendi
 
 This is just the beginning of what you can do with our APIs. To learn more, check the resources below.
 
-- [API Reference](http://localhost:8000/api-reference/)
+- [API Reference]({{root_url}}/api-reference/)
 - [Sending Email with Dynamic Transactional Templates]({{root_url}}/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/)
 - [Getting Started with the Event Webhook]({{root_url}}/for-developers/tracking-events/getting-started-event-webhook/)
 - [The Email Activity Feed]({{root_url}}/ui/analytics-and-reporting/email-activity-feed/)
