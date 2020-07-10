@@ -422,7 +422,7 @@ Our templates support the following conditionals:
 <p>
 Hello Ben!
 {{#greaterThan scoreOne scoreTwo}}
-    Cogratulations, you have the high score today!
+    Congratulations, you have the high score today!
 {{/greaterThan}}
  Thanks for playing.
 </p>
@@ -445,7 +445,7 @@ Hello Ben!
 ```html
 <!-- Resulting HTML from test data one-->
 <p>
-  Hello Ben! Cogratulations, you have the high score today! Thanks for playing.
+  Hello Ben! Congratulations, you have the high score today! Thanks for playing.
 </p>
 
 <!-- Resulting HTML from test data two-->
@@ -465,7 +465,7 @@ Hello Ben!
 <p>
 Hello Ben!
 {{#greaterThan scoreOne scoreTwo}}
-    Cogratulations, you have the high score today!
+    Congratulations, you have the high score today!
 {{else}}
     You were close, but you didn't get the high score today.
 {{/greaterThan}}
@@ -490,7 +490,7 @@ Hello Ben!
 ```html
 <!-- Resulting HTML from test data one-->
 <p>
-  Hello Ben! Cogratulations, you have the high score today! Thanks for playing.
+  Hello Ben! Congratulations, you have the high score today! Thanks for playing.
 </p>
 
 <!-- Resulting HTML from test data two-->
@@ -559,7 +559,7 @@ Hello Ben!
 {{#lessThan scoreOne scoreTwo}}
     You were close, but you didn't get the high score today.
 {{else}}
-    Cogratulations, you have the high score today!
+    Congratulations, you have the high score today!
 {{/lessThan}}
  Thanks for playing.
 </p>
@@ -588,7 +588,7 @@ Hello Ben!
 
 <!-- Resulting HTML from test data two-->
 <p>
-  Hello Ben! Cogratulations, you have the high score today! Thanks for playing.
+  Hello Ben! Congratulations, you have the high score today! Thanks for playing.
 </p>
 ```
 
