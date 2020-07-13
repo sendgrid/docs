@@ -11,12 +11,6 @@ seo:
   keywords: Webhook, Signed, Cryptography, OAuth, ECDSA
 ---
 
-<call-out type="beta">
-
-The following features are currently available as a public beta release.
-
-</call-out>
-
 Twilio SendGrid's Event Webhook will notify a URL via HTTP POST with information about events that occur as your mail is processed. This article covers all you need to know to secure the Event Webhook, allowing you to verify that incoming requests originate from Twilio SendGrid.
 
 <call-out>
