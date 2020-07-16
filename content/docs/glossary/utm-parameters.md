@@ -8,7 +8,7 @@ seo:
   description: Defintion of UTM Parameters
   keywords: 
 navigation:
-  show: true
+  show: false
 ---
 
 ## UTM Parameters
