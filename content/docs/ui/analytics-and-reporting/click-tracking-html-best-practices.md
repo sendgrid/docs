@@ -13,7 +13,7 @@ navigation:
 ---
 
 If you are experiencing issues with the click tracking setting not replacing your original links, please take a look at your link formatting. Links must be in the proper format in order for our click tracking setting to find and replace them: 
-Links must be within an HTML `<a>` tag with the `href` argument within the tag. There must not be spaces around the `=` in the `href` attribute, the URI must be quoted, and must be proceeded by **`"http://`** or **`"https://`**.
+Links must be within an HTML `<a>` tag with the `href` argument within the tag. There must not be spaces around the `=` in the `href` attribute, the URI must be quoted, and must be proceeded by **`"http://`** or **`"https://`**. 
 Here are some example links that will be properly replaced by our click tracking app:
 
 `<a href="http://www.sendgrid.com">SendGrid</a>`
@@ -21,6 +21,12 @@ Here are some example links that will be properly replaced by our click tracking
 `<a href="https://sendgrid.com">SendGrid</a>`
 
 `<a target="_blank" href="https://sendgrid.com">SendGrid</a>`
+
+It's also important to note that a link shouldn’t be only a custom field and that a link should also not be buried within a custom field. For example: 
+
+`<a href="{{ birthday_url }}"></a>` will not work. Instead you should format your link like this: `<a href="http://yoursite.com/{{ birthday_url }}"></a>`
+{{ user_profile_blurb }} resolves to The quick brown <a href="http://google.com">fox</a> jumps over the lazy dog.
+
 
 The following links, even though they may still resolve, will not be captured or replaced by our click tracking system:
 
