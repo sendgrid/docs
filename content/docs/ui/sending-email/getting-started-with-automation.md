@@ -42,6 +42,12 @@ If you haven’t done so already, you’ll need to complete the following before
 
 Once you've completed the prerequisites, you’re ready to start building your first automation. You can start with a pre-built Welcome Series and make it your own, or start from scratch by selecting **Custom Automation**.
 
+<call-out>
+
+Click tracking is now available for automation emails. To enable click tracking for automation emails created prior to 7/16, pause the automation and set it to live once again.  
+
+</call-out>
+
 ### Create a Custom Automation
 
 _To create a Custom Automation:_
@@ -132,12 +138,6 @@ _To duplicate an automation:_
 1. Select the Action Menu to the right of the automation.
 1. Click **Duplicate**.
 1. Once you create the duplicate, the automation will open to the edit page. From here, you can change any or all of the settings within the automation.
-
-<call-out>
-
-Click tracking is now available for Automation emails. To enable click tracking for automation emails created prior to 7/16 pausing the automation and setting it to live once again will enable click tracking for that set of emails. 
-
-</call-out>
 
 ### Edit an Automation
 
