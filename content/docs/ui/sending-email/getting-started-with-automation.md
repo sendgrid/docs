@@ -133,6 +133,12 @@ _To duplicate an automation:_
 1. Click **Duplicate**.
 1. Once you create the duplicate, the automation will open to the edit page. From here, you can change any or all of the settings within the automation.
 
+<call-out>
+
+Click tracking is now available for Automation emails. To enable click tracking for automation emails created prior to 7/16 pausing the automation and setting it to live once again will enable click tracking for that set of emails. 
+
+</call-out>
+
 ### Edit an Automation
 
 You can edit the content, subject line, and sender for any emails in your automation.
