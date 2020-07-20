@@ -43,8 +43,8 @@ If you haven’t done so already, you’ll need to complete the following before
 Once you've completed the prerequisites, you’re ready to start building your first automation. You can start with a pre-built Welcome Series and make it your own, or start from scratch by selecting **Custom Automation**.
 
 <call-out>
-
-Click tracking is now available for automation emails. To enable click tracking for automation emails created prior to 7/16, pause the automation and set it to live once again.  
+​
+Click tracking is now available for automation emails. To enable click tracking for automations created prior to 7/16, pause the automation and set it to live once again. Click tracking will populate data from 7/16/2020 onward regardless of when it is set live. 
 
 </call-out>
 
