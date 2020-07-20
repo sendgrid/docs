@@ -25,7 +25,7 @@ Here are some example links that will be properly replaced by our click tracking
 Note that a link shouldn’t be a custom field or buried within a custom field. For example: 
 
 `<a href="{{ birthday_url }}"></a>` will not work. Instead you should format your link like this: `<a href="http://yoursite.com/{{ birthday_url }}"></a>`
-{{ user_profile_blurb }} resolves to The quick brown <a href="http://google.com">fox</a> jumps over the lazy dog.
+{{ user_profile_blurb }} resolves to The quick brown <a href="http://google.com">fox</a> jumps over the lazy dog will also not work.
 
 
 The following links, even though they may still resolve, will not be captured or replaced by our click tracking system:
@@ -48,5 +48,4 @@ Click tracking can be turned off for individual links by including the `clicktra
 
 
 If you have a Pro 100K package or higher and you have [authenticated]({{root_url}}/ui/account-and-settings/how-to-set-up-reverse-dns/) your sending IP address, the replaced click tracking links lie under the authenticated subdomain. Pro 100K and higher packages that have not authenticated, Essentials packages, and Free packages have click tracking links that resolve through one of SendGrid's domains (sendgrid.net, sendgrid.info, sendgrid.me, etc.).
-
 
