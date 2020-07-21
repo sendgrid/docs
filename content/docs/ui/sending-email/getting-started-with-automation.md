@@ -44,7 +44,7 @@ Once you've completed the prerequisites, you’re ready to start building your f
 
 <call-out>
 ​
-Click tracking is now available for automation emails. To enable click tracking for automations created prior to 7/16, pause the automation and set it to live once again. Click tracking will populate data from 7/16/2020 onward regardless of when it is set live. 
+Click tracking was released on 7/16/20. To enable click tracking for automations set live prior to 7/16, pause the automation and set it to live once again. Click tracking will populate data from 7/16/2020 onward regardless of when it is set live.
 
 </call-out>
 
