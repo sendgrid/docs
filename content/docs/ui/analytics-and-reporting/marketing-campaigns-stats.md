@@ -38,6 +38,12 @@ Want deeper data and insights? With [SendGrid Email Insights Reports](https://go
 With link click tracking, you can see how many clicks each individual link in your Single Sends and Automation emails received. Marketing Campaigns lists each link separately, including links that appear multiple times. For example, links that appear at the top and bottom of an email.
 ​
 Marketing Campaigns will provide the "URL location" for each link, ordered top left to bottom right. You can use this to identify the link if multiple URLs are the same.
+
+<call-out>
+​
+Click tracking was released on 7/16/20. To enable click tracking for automations set live prior to 7/16, pause the automation and set it to live once again. Click tracking will populate data from 7/16/2020 onward regardless of when it is set live.
+
+</call-out>
 ​
 ### A/B Test Link Click Tracking
 ​
@@ -48,13 +54,6 @@ A/B tests are a special case for link click tracking.
 Each tab shows all-time clicks for each of the variants sent as part of a test, as opposed to clicks just earned during the testing period. For example, if the sample size for a Single Send was 100 emails for each variant, you would see the engagement with those 100 emails inclusive of and beyond the test period. In other words, if the test period is the 24 hours of next Friday, and someone received the email on Friday but then clicked a link on Sunday, that click would be included here.
 ​
 This means that if the winner were selected by clicks, there's a chance that in a test period, Version B could win, but over time, Version A could end up earning more clicks.
-​
-<call-out>
-​
-Click tracking is now available for automation emails. To enable click tracking for automations created prior to 7/16, pause the automation and set it to live once again. Click tracking will populate data from 7/16/2020 onward regardless of when it is set live. 
-
-</call-out>
-
 ​
 ## 	Additional Resources
 ​
