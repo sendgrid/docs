@@ -19,6 +19,7 @@ This page refers to the new Marketing Campaigns product. If you’re using legac
 ​
 With Marketing Campaigns email statistics, you can unlock the full potential with the right data at your fingertips. Use your data to guide you to the right strategy. Get insights about both marketing and transactional email for a 360-degree understand of your audience’s experience. Finally, use your data to brings results to life and share your performance with teammates and stakeholders.
 ​
+
 ## 	Viewing Single Send or Automation Statistics
  	Once you send a Single Send or set an Automation live, you can view related statistics.
 ​
@@ -32,6 +33,7 @@ From the statistics page, you will be able to see your bounces, clicks, opens, e
 Want deeper data and insights? With [SendGrid Email Insights Reports](https://go.sendgrid.com/Email-Insights-Reports.html?utm_source=docs), you’ll get access to more data about your email performance plus customized insights from a deliverability consultant.
 ​
 </call-out>
+
 ​
 ## Link Click Tracking
 ​
@@ -45,6 +47,7 @@ Click tracking was released on 7/16/20. To enable click tracking for automations
 
 </call-out>
 ​
+
 ### A/B Test Link Click Tracking
 ​
 A/B tests are a special case for link click tracking.
@@ -56,6 +59,5 @@ Each tab shows all-time clicks for each of the variants sent as part of a test, 
 This means that if the winner were selected by clicks, there's a chance that in a test period, Version B could win, but over time, Version A could end up earning more clicks.
 ​
 ## 	Additional Resources
-​
 - [Sending a Campaign]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/)
 - [A/B Testing Your Campaign]({{root_url}}/ui/sending-email/a-b-testing/)
