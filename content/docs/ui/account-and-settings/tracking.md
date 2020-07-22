@@ -85,6 +85,6 @@ You can customize the text attached to emails and customize the landing page. Th
 
 <call-out>
 
-Want deeper data and insights? With [SendGrid Email Insights Reports](https://go.sendgrid.com/Email-Insights-Reports.html?utm_source=docs), you’ll get access to more data about your email performance plus customized insights from a deliverability consultant.
+Want deeper data and insights? With [SendGrid Email Insights Reports](https://sendgrid.com/docs/ui/analytics-and-reporting/subscribing-to-expert-insights/), you’ll get access to more data about your email performance plus customized insights from a deliverability consultant.
 
 </call-out>
