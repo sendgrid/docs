@@ -10,12 +10,6 @@ seo:
   description: Understanding the difference between Domain Authentication and verifying a Single Sender.
 ---
 
-<call-out>
-
-The information on this page applies to new Free Trial, Essentials 40K, Essentials 100K, and Pro 100K customers. If you received account access before April 6, 2020, you can disregard the information below.
-
-</call-out>
-
 To ensure our customers maintain the best possible sender reputations and to uphold legitimate sending behavior, we require customers to verify their Sender Identities. A Sender Identity represents your “From” email address—the address your recipients will see as the sender of your emails.
 
 You can verify one or more Sender Identities using either Domain Authentication or Single Sender Verification. There are advantages to both verification methods, and we provide detailed guides to configure whichever option you choose.
