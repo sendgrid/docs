@@ -95,7 +95,7 @@ Mail.defaults do
   delivery_method :smtp, { :address   => 'smtp.sendgrid.net',
                            :port      => 587,
                            :domain    => 'sendgrid.com',
-                           :user_name => 'yourSendGridUsername',
+                           :user_name => 'apikey',
                            :api_key  => 'yourSendGridAPIKey',
                            :authentication => 'plain',
                            :enable_starttls_auto => true }

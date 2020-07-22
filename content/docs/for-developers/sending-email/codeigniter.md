@@ -25,7 +25,7 @@ $this->load->library('email');
 $this->email->initialize(array(
   'protocol' => 'smtp',
   'smtp_host' => 'smtp.sendgrid.net',
-  'smtp_user' => 'sendgridusername',
+  'smtp_user' => 'apikey',
   'smtp_pass' => 'sendgridapikey',
   'smtp_port' => 587,
   'crlf' => "\r\n",
