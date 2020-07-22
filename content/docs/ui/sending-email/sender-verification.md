@@ -10,12 +10,6 @@ seo:
   description: Understanding the difference between Domain Authentication and verifying a Single Sender.
 ---
 
-<call-out>
-
-The information on this page applies to Free Trial and Essentials customers who received access on or after April 6, 2020. If you received access before April 6, 2020, you can disregard the information below.
-
-</call-out>
-
 To protect your sending reputation and to uphold legitimate sending behavior, we require customers to verify their Sender Identities. This article will walk you through all the necessary steps to verify a Single Sender, one of two methods of verifying a [Sender Identity]({{root_url}}/for-developers/sending-email/sender-identity/).
 
 ### Adding a Sender
