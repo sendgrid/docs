@@ -221,12 +221,12 @@ $mime->attach(Type => 'text/html',
                   Data => $html);
 
 # Login credentials
-my $username = 'example@example.com';
+my $username = 'apikey';
 my $api_key = "your_api_key";
 
 # Open a connection to the SendGrid mail server
 my $smtp = Net::SMTP->new('smtp.sendgrid.net',
-                  Port=> 25,
+                  Port=> 587,
                   Timeout => 20,
                   Hello => "yourdomain.com");
 
