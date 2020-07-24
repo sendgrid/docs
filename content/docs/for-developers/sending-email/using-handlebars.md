@@ -39,7 +39,7 @@ Here are example use cases listed with the Handlebars.js helpers used to build t
 
 ### Receipts
 
-This [example receipt template](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates/receipt) uses the following heplers:
+This [example receipt template](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates/receipt) uses the following helpers:
 
 - [Substitution](#substitution)
 - [Conditional statements](#conditional-statements)
@@ -85,7 +85,6 @@ Our templates support the following substitutions:
 - [Object failure](#object-failure)
 - [Replacement with HTML](#replacement-with-html)
 - [Uppercase](#uppercase)
-- [formatDate](#formatdate)
 - [Insert](#insert)
 
 #### Basic replacement
@@ -219,36 +218,6 @@ If you include the characters `'`, `"` or `&` in a subject line replacement be s
 
 </code-group>
 
-#### formatDate
-
-<code-group langs="Handlebars, JSON, HTML">
-
-```handlebars
-<!-- Template without timezone -->
-<p>Join us {{formatDate ts format}}</p>
-
-<!-- Template with timezone -->
-<p>Join us {{formatDate ts format \"-0000\"}}</p>
-```
-
-```json
-// Test data
-{
-  "ts": "2020-01-15 19:31:05Z",
-  "format": "yyyy-mm-dd"
-}
-```
-
-```html
-<!-- Resulting HTML without timezone-->
-<p>Join us 2020-01-15</p>
-
-<!-- Resulting HTML with timezone-->
-<p>Join us 2020-01-15</p>
-```
-
-</code-group>
-
 #### Insert
 
 <code-group langs="Handlebars, JSON, HTML">
@@ -295,8 +264,6 @@ Our templates support the following conditionals:
 - [And](#and)
 - [Or](#or)
 - [Length](#length)
-- [isBefore](#isbefore)
-- [isAfter](#isafter)
 
 #### Basic If, Else, Else If
 
@@ -1031,96 +998,6 @@ Hello Ben!
 <!-- Resulting HTML with test data two-->
 <p>
   Hello Ben! Thanks for browsing our site. We hope you'll come back soon.
-</p>
-```
-
-</code-group>
-
-#### isBefore
-
-The isBefore helper will compare two epochs (datetime values) and render a block of HTML if the first value is earlier (occurs before) the second value.
-
-<code-group langs="Handlebars, JSON, HTML">
-
-```handlebars
-<!-- Template -->
-<p>Hello Ben!
-{{#isBefore requestedTime deadline}}
-   You've successfully reserved a time with us. We'll see you soon.
-{{else}}
-   The time you requested is after the deadline. Please login to select another time.
-{{/isBefore}}</p>
-```
-
-```json
-// Test data one
-{
-  "requestedTime": "2020-01-15 10:30:05Z",
-  "deadline": "2020-01-10 10:30:05Z"
-}
-
-// Test data two
-{
-  "requestedTime": "2020-01-15 10:30:05Z",
-  "deadline": "2020-01-10 10:30:05Z"
-}
-```
-
-```html
-<!-- Resulting HTML from test data one -->
-<p>
-  Hello Ben! The time you requested is after the deadline. Please login to
-  select another time.
-</p>
-
-<!-- Resulting HTML from test data two -->
-<p>
-  Hello Ben! You've successfully reserved a time with us. We'll see you soon.
-</p>
-```
-
-</code-group>
-
-#### isAfter
-
-The isAfter helper will compare two epochs (datetime values) and render a block of HTML if the first value is later (occurs after) the second value.
-
-<code-group langs="Handlebars, JSON, HTML">
-
-```handlebars
-<!-- Template -->
-<p>Hello Ben!
-{{#isAfter requestedTime deadline}}
-   The time you requested is after the deadline. Please login to select another time.
-{{else}}
-   You've successfully reserved a time with us. We'll see you soon.
-{{/isAfter}}</p>
-```
-
-```json
-// Test data one
-{
-  "requestedTime": "2020-01-15 10:30:05Z",
-  "deadline": "2020-01-10 10:30:05Z"
-}
-
-// Test data two
-{
-  "requestedTime": "2020-01-15 10:30:05Z",
-  "deadline": "2020-01-10 10:30:05Z"
-}
-```
-
-```html
-<!-- Resulting HTML from test data one -->
-<p>
-  Hello Ben! You've successfully reserved a time with us. We'll see you soon.
-</p>
-
-<!-- Resulting HTML from test data two -->
-<p>
-  Hello Ben! The time you requested is after the deadline. Please login to
-  select another time.
 </p>
 ```
 
