@@ -19,7 +19,8 @@ Laravel 5.5 LTS uses Mailable classes. Mailables in Laravel abstracts building e
 Check your `.env` file and configure these variables:
 
 ```
-MAIL_DRIVER=smtp
+MAIL_MAILER=smtp
+# MAIL_DRIVER=smtp # for laravel < 7
 MAIL_HOST=smtp.sendgrid.net
 MAIL_PORT=587
 MAIL_USERNAME=apikey
