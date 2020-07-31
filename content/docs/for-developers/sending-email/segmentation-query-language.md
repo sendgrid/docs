@@ -264,20 +264,29 @@ Returns the current date and time.
 
 A number of fields are available on every contact. These include the strings:
 
-- `email`
-- `email_domains`
-- `first_name`
-- `last_name`
+- `alternate_emails`
 - `address_line_1`
 - `address_line_2`
 - `city`
-- `state_province_region`
+- `contact_id`
 - `country`
-- `postal_code` 
+- `created_at`
+- `email`
+- `email_domains`
+- `event_data`
+- `event_source`
+- `event_timestamp`
+- `event_type`
+- `first_name`
+- `list_ids`
+- `last_name`
+- `postal_code`
+- `state_province_region`
+- `updated_at`
 
 <call-out>
 
-In the future, the address fields may be used with a third-party service to populate a `location` type field when contacts are added or updated. In addition, contacts have `alternate_emails` and `alternate_email_domains` fields that represent sets of strings.
+In the future, the address fields may be used with a third-party service to populate a `location` type field when contacts are added or updated. In addition, a contact's `alternate_emails` field represents a set of strings.
 
 </call-out>
 
@@ -285,7 +294,7 @@ In the future, the address fields may be used with a third-party service to popu
 
 ### A query for getting all gmail users:
 
-```javascript
+```json
 {
   "name": "All Gmail Users",
   "query_dsl": "email LIKE '%gmail.com'"
@@ -294,7 +303,7 @@ In the future, the address fields may be used with a third-party service to popu
 
 ### A query for getting contacts in specific zip codes:
 
-```javascript
+```json
 {
   "name": "My Favorite Zip Codes",
   "query_dsl": "postal_code IN ('90124', '90125', '90126')"
@@ -303,7 +312,7 @@ In the future, the address fields may be used with a third-party service to popu
 
 ### A query for getting contacts NOT in specific zip codes:
 
-```javascript
+```json
 {
   "name": "My Least Favorite Zip Codes",
   "query_dsl": "postal_code NOT IN ('90124', '90125', '90126')"
@@ -312,7 +321,7 @@ In the future, the address fields may be used with a third-party service to popu
 
 ### A query showing how to use lowercase text:
 
-```javascript
+```json
 {
   "name": "Everyone named Bob, BOB or bob",
   "query_dsl": "lower(first_name) = 'bob'"
@@ -321,7 +330,7 @@ In the future, the address fields may be used with a third-party service to popu
 
 ### A query for contacts that received any email in the last 10 days:
 
-```javascript
+```json
 {
   "name": "All Delivered in Last 10 days",
   "query_dsl": "(event_source = 'mail' AND event_type = 'delivered' AND event_timestamp >= (NOW() - interval 10 day))"
@@ -330,7 +339,7 @@ In the future, the address fields may be used with a third-party service to popu
 
 ### A query for contacts that received any email between two dates:
 
-```javascript
+```json
 {
   "name": "All Delivered in Last 10 days",
   "query_dsl": "(event_source = 'mail' AND event_type = 'delivered' AND event_timestamp BETWEEN TIMESTAMP '2019-08-07T18:00:00Z' AND TIMESTAMP '2019-08-08T18:00:00Z')"
