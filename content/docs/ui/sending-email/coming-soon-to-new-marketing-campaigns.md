@@ -64,16 +64,16 @@ There are some important features that are coming soon to our brand new version 
     <td><span class="status-highlighter">Delivered</span></td>
   </tr>
   <tr>
-    <td>View per-contact engagement data</td>
-    <td>Future</td>
-  </tr>
-  <tr>
     <td><a href="https://sendgrid.com/docs/ui/analytics-and-reporting/marketing-campaigns-stats/" target="_blank" rel="noopener noreferrer">View which links within an email were clicked</a></td>
     <td><span class="status-highlighter">Delivered</span></td>
   </tr>
   <tr>
-    <td>Export statistics for a Single Send or an Automation</td>
+    <td>View per-contact engagement data</td>
     <td>Future</td>
+  </tr>
+  <tr>
+    <td>Export statistics for a Single Send or an Automation</td>
+    <td>Q3 2020</td>
   </tr>
   <tr>
     <td>Automation API</td>
