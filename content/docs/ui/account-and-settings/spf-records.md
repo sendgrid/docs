@@ -38,10 +38,20 @@ To understand SPF, it may help to understand how email traffic is handled when S
 
 ## SPF and sender authentication
 
+### SendGrid's automated security
+
+When you complete Domain Authentication, [automated security]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/#using-automated-security) is enabled by default. Automated security will handle your SPF and [DKIM]({{root_url}}/glossary/dkim) records for you. Twilio SendGrid will provide [CNAME records]({{root_url}}/glossary/cname) that you will add to your DNS records. This allows you to add dedicated IP addresses and make other account updates without having to manage your SPF records manually.
+
+To disable this behavior, uncheck **Use automated security** when completing the domain authentication process. With automated security disabled, Twilo SendGrid will provide you with TXT records like those discussed in this documentation rather than CNAME records.
+
+![Domain Authentication Automated Security]({{root_url}}/img/domain_auth_advanced_settings.png)
+
+### Custom SPF records
+
 If you have an SPF record set for your domain already, you must add a unique alphanumeric string before the `all` mechanism of this record in order to authenticate mailings through your SendGrid account. If you do not have an existing SPF record for your domain, you must create a TXT record with the value provided to you during the [domain authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/) process. Each SendGrid account gets a unique SPF TXT record to authenticate their outbound mailings. An example of such a record is:
 
 ```text
->v=spf1 include:u123456.wl.sendgrid.net -all
+v=spf1 include:u123456.wl.sendgrid.net -all
 ```
 
 In this example, we have a unique SPF record for the authorization of outbound mail for a SendGrid account. A `-all` inclusion versus an `~all` inclusion indicates that this SPF record is the only record used to authenticate mail for your domain. Make sure to include any other authorized sender into this SPF record if you need to authenticate mailings from other sources.
@@ -55,13 +65,13 @@ If you already have an SPF record for your domain, you need to add your SendGrid
 For example, say your existing record looks like this:
 
 ```text
->v=spf1 a mx include:\_spf.google.com include:spf.protection.outlook.com -all
+v=spf1 a mx include:\_spf.google.com include:spf.protection.outlook.com -all
 ```
 
 You would need to add the SendGrid lookup at the end of the string, before the `all` mechanism, like so:
 
 ```text
->v=spf1 a mx include:\_spf.google.com include:spf.protection.outlook.com include:u826348.wl.sendgrid.net -all
+v=spf1 a mx include:\_spf.google.com include:spf.protection.outlook.com include:u826348.wl.sendgrid.net -all
 ```
 
 ## Don't want to include another hostname lookup?
@@ -71,7 +81,7 @@ If you would rather not include SendGrid's SPF hostname lookup in your record, o
 You can choose to specify your [dedicated IP address]({{root_url}}/ui/account-and-settings/dedicated-ip-addresses/) as a lookup, which means that only mail coming from that particular IP address will be considered a permitted sender within SendGrid for that domain. An example of this looks like:
 
 ```text
->v=spf1 a mx include:\_spf.google.com include:spf.protection.outlook.com ip4:12.34.56.78 -all
+v=spf1 a mx include:\_spf.google.com include:spf.protection.outlook.com ip4:12.34.56.78 -all
 ```
 
 If you wish to add multiple `ip4` lookups (if you have an account that sends from multiple dedicated IPs, for example), add them to your record separated by spaces. Unlike with `include:hostname` lookups, a SPF1 record can have any number of `ip4` includes.
