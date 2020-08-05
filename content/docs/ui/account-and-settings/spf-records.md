@@ -40,9 +40,9 @@ To understand SPF, it may help to understand how email traffic is handled when S
 
 ### SendGrid's automated security
 
-When you complete Domain Authentication, [automated security]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/#using-automated-security) is enabled by default. Automated security will handle your SPF and [DKIM]({{root_url}}/glossary/dkim) records for you. Twilio SendGrid will provide [CNAME records]({{root_url}}/glossary/cname) that you will add to your DNS records. This allows you to add dedicated IP addresses and make other account updates without having to manage your SPF records manually.
+When you complete Domain Authentication, [automated security]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/#using-automated-security) is enabled by default. Automated security handles your SPF and [DKIM]({{root_url}}/glossary/dkim) records for you. Twilio SendGrid provides [CNAME records]({{root_url}}/glossary/cname) that you need to add to your DNS records. This allows you to add dedicated IP addresses and make other account updates without having to manage your SPF records manually.
 
-To disable this behavior, uncheck **Use automated security** when completing the domain authentication process. With automated security disabled, Twilo SendGrid will provide you with TXT records like those discussed in this documentation rather than CNAME records.
+To disable this behavior, uncheck **Use automated security** when completing the domain authentication process. With automated security disabled, Twilo SendGrid provides you with TXT records like those discussed in this documentation rather than CNAME records.
 
 ![Domain Authentication Automated Security]({{root_url}}/img/domain_auth_advanced_settings.png)
 
