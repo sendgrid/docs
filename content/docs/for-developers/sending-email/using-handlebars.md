@@ -1067,7 +1067,7 @@ The length helper will return the number of characters in a given string or arra
 <!-- Templates -->
 <p>
 Hello Ben!
-{{#greaterThan 0 length cartItems}}
+{{#greaterThan (length cartItems) 0}}
  It looks like you still have some items in your shopping cart. Sign back in to continue checking out at any time.
 {{else}}
  Thanks for browsing our site. We hope you'll come back soon.
