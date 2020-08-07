@@ -5605,4 +5605,8 @@ module.exports = [
     from: '/for-developers/sending-email/v3-nodejs-code-example/',
     to: '/for-developers/sending-email/quickstart-nodejs/',
   },
-];
+  {
+    from: '/for-developers/partners/magento/',
+    to: '/for-developers/partners/',
+  },
+]
