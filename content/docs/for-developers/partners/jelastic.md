@@ -13,5 +13,3 @@ SendGrid can be implemented in Jelastic's cloud platform. SendGrid and Jelastic 
 
 1. [Java with Spring](http://docs.jelastic.com/sendgrid-java)
 2. [PHP](http://docs.jelastic.com/sendgrid-php)
-
-Check out our blog for more information on SendGrid and Jelastic [here](https://sendgrid.com/blog/jelastic-sendgrid-team-power-java-php-applications/).
