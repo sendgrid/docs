@@ -24,8 +24,6 @@ You can use the information stored on your contacts from [custom fields]({{root_
 
 When you segment your audience, you are able to create personalized Automation emails and Single Sends that directly address the wants and needs of your particular audience. [Custom fields]({{root_url}}/ui/managing-contacts/custom-fields/) and data about how recipients have interacted with your emails allow you to use unique information to identify contacts for different segments. As the traits of your contacts change and you add more contacts that meet the criteria of your segment over time, your segments will dynamically update to reflect these updates. For example, a segment with the criteria “lives in Denver” or “is under 30 years old” will evolve as a contact’s address changes and they grow older.
 
-</call-out>
-
 ## Creating a Segment
 
 You can create a new segment with multiple conditions based on the information you have stored about your contacts as well as how these contacts have engaged with (opened or clicked) your emails in the past.
