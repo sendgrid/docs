@@ -231,8 +231,6 @@ _To duplicate a segment:_
 1. From the Contact Lists page, click the Action Menu next to the name of the segment you wish to duplicate.
 1. Select **Duplicate**.
 
-
-
 ## Exporting a Segment
 
 _To export a segment:_
