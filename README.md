@@ -1,10 +1,18 @@
-![SendGrid Logo](https://uiux.s3.amazonaws.com/2016-logos/email-logo%402x.png)
+<p align="center"><img src="https://uiux.s3.amazonaws.com/2016-logos/email-logo%402x.png" alt="SendGrid Logo" /></p>
+<h1 align="center">SendGrid Documentation</h1>
+<p align="center">
+  <a href="https://travis-ci.org/sendgrid/docs">
+    <img src="https://travis-ci.org/sendgrid/docs.svg?branch=develop" alt="Build Status" />
+  </a>
+  <a href="https://twitter.com/sendgrid">
+    <img src="https://img.shields.io/twitter/follow/sendgrid.svg?style=social&label=Follow" alt="Twitter Follow" />
+  </a>
+  <a href="./license">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT licensed" />
+  </a>
+</p>
 
-# SendGrid Documentation
-
-[![Build Status](https://travis-ci.org/sendgrid/docs.svg?branch=develop)](https://travis-ci.org/sendgrid/docs)
-[![Twitter Follow](https://img.shields.io/twitter/follow/sendgrid.svg?style=social&label=Follow)](https://twitter.com/sendgrid)
-[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./license)
+-----------
 
 ## Introduction
 
