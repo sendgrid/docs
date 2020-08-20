@@ -83,6 +83,12 @@ Twilio SendGrid generates the private and public key pair using the [Elliptic Cu
 
 We recommend using a package or library suitable for your language to verify the signature. Libraries are listed below in [Sample verification libraries](#sample-verification-libraries). The general steps required to verify a signature are outlined below with [Golang](https://golang.org/) code samples.
 
+<call-out type="warning">
+
+When verifying the signature, be aware that we deliver a payload that must be used in its raw bytes form. Transformations from raw bytes to a JSON string may remove characters that were used as part of the generated signature.
+
+</call-out>
+
 1. Get the signature from the `"X-Twilio-Email-Event-Webhook-Signature"` HTTP header.
 
 ```go

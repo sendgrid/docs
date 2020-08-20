@@ -922,10 +922,6 @@ module.exports = [
     to: '/for-developers/sending-email/smtp-ruby-code-example/',
   },
   {
-    from: '/Integrate/Code_Examples/v2_Mail/csharp.html',
-    to: '/for-developers/sending-email/v2-csharp-code-example/',
-  },
-  {
     from: '/Integrate/Code_Examples/v2_Mail/go.html',
     to: '/for-developers/sending-email/v2-go-code-example/',
   },
@@ -1430,10 +1426,6 @@ module.exports = [
     to: '/ui/sending-email/deliverability/',
   },
   {
-    from: '/Classroom/Deliver/warming_up_ips.html',
-    to: '/ui/sending-email/warming-up-an-ip-address/',
-  },
-  {
     from:
       '/Classroom/Deliver/Delivery_Introduction/how_to_warm_up_your_ip_address.html',
     to: '/ui/sending-email/warming-up-an-ip-address/',
@@ -1735,11 +1727,6 @@ module.exports = [
   },
   {
     from:
-      '/Classroom/Deliver/Sender_Authentication/my_emails_are_going_to_spam.html',
-    to: '/ui/sending-email/deliverability/ ',
-  },
-  {
-    from:
       '/Classroom/Deliver/Sender_Authentication/what_do_i_do_if_im_blacklisted.html',
     to: '/ui/sending-email/blacklists/',
   },
@@ -1769,10 +1756,6 @@ module.exports = [
   {
     from: '/Classroom/Send/can_i_stop_a_send_in_progress.html',
     to: '/for-developers/sending-email/stopping-an-in-progress-send/ ',
-  },
-  {
-    from: '/Classroom/Send/api_keys.html',
-    to: '/ui/account-and-settings/api-keys/',
   },
   {
     from: '/Classroom/Send/can_i_send_from_multiple_domains.html',
@@ -2285,18 +2268,8 @@ module.exports = [
   },
   {
     from:
-      '/Classroom/Troubleshooting/Account_Administration/how_to_change_password_when_integrated_via_appdirect.html',
-    to: '/ui/account-and-settings/password-reset-appdirect/',
-  },
-  {
-    from:
       '/Classroom/Troubleshooting/Account_Administration/how_to_change_the_password_for_your_sendgrid_add_on_via_openshift.html',
     to: '/ui/account-and-settings/password-reset-openshift/',
-  },
-  {
-    from:
-      '/Classroom/Troubleshooting/Account_Administration/heroku_users_find_your_sendgrid_credentials.html',
-    to: '/ui/account-and-settings/heroku-credentials/',
   },
   {
     from:
@@ -2478,14 +2451,6 @@ module.exports = [
   {
     from: '/Integrate/Tutorials/WordPress/sendgrid_wordpress_plugin.html',
     to: '/for-developers/sending-email/wordpress-plugin/',
-  },
-  {
-    from: '/Integrate/Tutorials/WordPress/subscription_widget.html',
-    to: '/for-developers/sending-email/wordpress-subscription-widget/',
-  },
-  {
-    from: '/Integrate/Tutorials/WordPress/subscription_widget.html',
-    to: '/for-developers/sending-email/wordpress-subscription-widget/',
   },
   {
     from: '/Integrate/Tutorials/WordPress/subscription_widget.html',
@@ -2720,40 +2685,12 @@ module.exports = [
     to: '/for-developers/sending-email/v2-csharp-code-example/',
   },
   {
-    from: '/Integrate/Code_Examples/v2_Mail/go.html',
-    to: '/for-developers/sending-email/v2-go-code-example/',
-  },
-  {
-    from: '/Integrate/Code_Examples/v2_Mail/java.html',
-    to: '/for-developers/sending-email/v2-java-code-example/',
-  },
-  {
-    from: '/Integrate/Code_Examples/v2_Mail/ruby.html',
-    to: '/for-developers/sending-email/v2-ruby-code-example/',
-  },
-  {
-    from: '/Integrate/Code_Examples/v2_Mail/perl.html',
-    to: '/for-developers/sending-email/v2-perl-code-example/',
-  },
-  {
     from: '/Integrate/Code_Examples/v2_Mail/php.html',
     to: '/for-developers/sending-email/v2-php-code-example/',
   },
   {
-    from: '/Integrate/Code_Examples/v2_Mail/python.html',
-    to: '/for-developers/sending-email/v2-python-code-example/',
-  },
-  {
-    from: '/Integrate/Code_Examples/v2_Mail/ruby.html',
-    to: '/for-developers/sending-email/v2-ruby-code-example/',
-  },
-  {
     from: '/Integrate/Code_Examples/v2_Mail/index.html',
     to: '/for-developers/sending-email/v2-go-code-example/',
-  },
-  {
-    from: '/Integrate/Code_Examples/v2_Mail/nodejs.html',
-    to: '/for-developers/sending-email/v2-nodejs-code-example/',
   },
   {
     from: '/Integrate/Code_Examples/v3_Mail/csharp.html',
@@ -3710,11 +3647,6 @@ module.exports = [
   },
   {
     from:
-      '/Classroom/Deliver/Address_Lists/tips_to_keep_your_list_organized.html',
-    to: '/ui/managing-contacts/managing-contact-list/',
-  },
-  {
-    from:
       '/Classroom/Deliver/Address_Lists/why_purchased_email_lists_are_no_good.html',
     to: '/ui/managing-contacts/managing-contact-list/',
   },
@@ -3894,10 +3826,6 @@ module.exports = [
     to: '/ui/account-and-settings/billing/',
   },
   {
-    from: '/Classroom/Basics/Billing/i_would_like_to_request_a_refund.html',
-    to: '/ui/account-and-settings/billing/',
-  },
-  {
     from: '/Classroom/Basics/Billing/how_does_overage_pricing_work.html',
     to: '/ui/account-and-settings/billing/',
   },
@@ -3936,10 +3864,6 @@ module.exports = [
   },
   {
     from: '/Classroom/Basics/Account/sending_practices.html',
-    to: '/ui/account-and-settings/billing/',
-  },
-  {
-    from: '/Classroom/Basics/Billing/index.html',
     to: '/ui/account-and-settings/billing/',
   },
   {
@@ -5443,10 +5367,6 @@ module.exports = [
     to: 'https://sendgrid.api-docs.io/v3.0/link-branding',
   },
   {
-    from: '/API_Reference/Parse_Webhook/inbound_email.html',
-    to: '/for-developers/parsing-email/inbound-email/',
-  },
-  {
     from: '/for-developers/sending-email/building-an-smtp-email/',
     to: '/for-developers/sending-email/building-an-x-smtpapi-header/',
   },
@@ -5461,11 +5381,6 @@ module.exports = [
   {
     from: '/ui/account-and-settings/sending-email/global-unsubscribes/',
     to: '/ui/sending-email/global-unsubscribes/',
-  },
-  {
-    from:
-      '/ui/account-and-settings/sending-email/how-to-send-email-with-marketing-campaigns/',
-    to: '/ui/sending-email/how-to-send-email-with-marketing-campaigns/',
   },
   {
     from:
@@ -5533,6 +5448,7 @@ module.exports = [
     from: '/ui/sending-email/how-to-set-up-link-branding/',
     to: '/ui/account-and-settings/how-to-set-up-link-branding/',
   },
+
   {
     from: '/ui/account-and-settings/senders/',
     to: '/ui/sending-email/senders/',
@@ -5557,12 +5473,12 @@ module.exports = [
   },
   {
     from:
-      '/for-developers/sending-email/how-to-send-an-email-with-dynamic-transactional-templates',
+      '/for-developers/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/',
     to:
       '/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/',
   },
   {
-    from: '/for-developers/sending-email/using-the-v2-api',
+    from: '/for-developers/sending-email/using-the-v2-api/',
     to: 'https://www.twilio.com/docs/sendgrid/api/v2/using_the_web_api',
   },
   {
@@ -5609,4 +5525,691 @@ module.exports = [
     from: '/for-developers/partners/magento/',
     to: '/for-developers/partners/',
   },
-]
+  {
+    from: '/API_Reference/Web_API/index.html',
+    to: 'https://www.twilio.com/docs/sendgrid/api/v2',
+  },
+  {
+    from: '/API_Reference/Web_API/using_the_web_api.html',
+    to: 'https://www.twilio.com/docs/sendgrid/api/v2/using_the_web_api',
+  },
+  {
+    from: '/API_Reference/Web_API/blocks.html',
+    to: 'https://www.twilio.com/docs/sendgrid/api/v2/blocks',
+  },
+  {
+    from: '/API_Reference/Web_API/bounces.html',
+    to: 'https://www.twilio.com/docs/sendgrid/api/v2/bounces',
+  },
+  {
+    from: '/API_Reference/Web_API/filter_commands.html',
+    to: 'https://www.twilio.com/docs/sendgrid/api/v2/filter_commands',
+  },
+  {
+    from: '/API_Reference/Web_API/filter_settings.html',
+    to: 'https://www.twilio.com/docs/sendgrid/api/v2/filter_settings',
+  },
+  {
+    from: '/API_Reference/Web_API/invalid_emails.html',
+    to: 'https://www.twilio.com/docs/sendgrid/api/v2/invalid_emails',
+  },
+  {
+    from: '/API_Reference/Web_API/mail.html',
+    to: 'https://www.twilio.com/docs/sendgrid/api/v2/mail',
+  },
+  {
+    from: '/API_Reference/Web_API/profile.html',
+    to: 'https://www.twilio.com/docs/sendgrid/api/v2/profile',
+  },
+  {
+    from: '/API_Reference/Web_API/spam_reports.html',
+    to: 'https://www.twilio.com/docs/sendgrid/api/v2/spam_reports',
+  },
+  {
+    from: '/API_Reference/Web_API/timezone.html',
+    to: 'https://www.twilio.com/docs/sendgrid/api/v2/timezone',
+  },
+  {
+    from: '/API_Reference/Web_API/unsubscribes.html',
+    to: 'https://www.twilio.com/docs/sendgrid/api/v2/unsubscribes',
+  },
+  {
+    from: '/API_Reference/Web_API/Customer_Subuser_API/index.html',
+    to: 'https://www.twilio.com/docs/sendgrid/api/v2/customer_subuser_api',
+  },
+  {
+    from: '/API_Reference/Web_API/Customer_Subuser_API/subusers.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/customer_subuser_api/subusers',
+  },
+  {
+    from: '/API_Reference/Web_API/Customer_Subuser_API/account_limits.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/customer_subuser_api/account_limits',
+  },
+  {
+    from: '/API_Reference/Web_API/Customer_Subuser_API/apps.html',
+    to: 'https://www.twilio.com/docs/sendgrid/api/v2/customer_subuser_api/apps',
+  },
+  {
+    from: '/API_Reference/Web_API/Customer_Subuser_API/ip_management.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/customer_subuser_api/ip_management',
+  },
+  {
+    from: '/API_Reference/Web_API/Customer_Subuser_API/whitelabel.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/customer_subuser_api/whitelabel',
+  },
+  {
+    from: '/API_Reference/Web_API/Customer_Subuser_API/monitor_records.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/customer_subuser_api/monitor_records',
+  },
+  {
+    from: '/API_Reference/Web_API/Customer_Subuser_API/statistics.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/customer_subuser_api/statistics',
+  },
+  {
+    from: '/API_Reference/Web_API/Customer_Subuser_API/subuser_bounces.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/customer_subuser_api/subuser_bounces',
+  },
+  {
+    from: '/API_Reference/Web_API/Customer_Subuser_API/invalid_emails.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/customer_subuser_api/invalid_emails',
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Customer_Subuser_API/subuser_spam_reports.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/customer_subuser_api/subuser_spam_reports',
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Customer_Subuser_API/subuser_unsubscribes.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/customer_subuser_api/subuser_unsubscribes',
+  },
+  {
+    from: '/API_Reference/Web_API/Customer_Subuser_API/parse_settings.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/customer_subuser_api/parse_settings',
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Customer_Subuser_API/authenticate_a_subuser.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/customer_subuser_api/authenticate_a_subuser',
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/index.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/categories.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/emails.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/lists.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/newsletters.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/recipients.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/schedule.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/sender_address.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/variations.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/Migration/index.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/Migration/categories.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/Migration/emails.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/Migration/lists.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/Migration/marketing_emails.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/Migration/recipients.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/Migration/schedule.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/Migration/sender_address.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Marketing_Emails_API/Migration/variations.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/index.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/account_overview.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/apps.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/authenticate_a_customer.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/authenticate_a_customer_subuser.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/billing.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/billing_retrieving_as_you_go_usage.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/billing_retrieving_end_users_invoices_usage.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_account_limits.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_bounces.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_invalid_emails.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_management.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_spam_reports.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_statistics.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_account_limits.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_apps_filters.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_bounces.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_event_notification_url.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_invalid_emails.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_monitor_outgoing_email.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_parse_settings.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_spam_reports.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_subuser_unsubscribes.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/customer_unsubscribes.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/event_notification_url.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/invoice_retrieval.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/ip_management.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/monitor_records.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/parse_settings.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/pending_account_changes.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/view_available_packages.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v1_(deprecated)/whitelabel.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v2_(deprecated)/index.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v2_(deprecated)/billing_retrieving_as_you_go_usage.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Reseller_API/v2_(deprecated)/billing_retrieving_end_users_invoices_usage.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Customer_Subuser_API/v1_(deprecated)/index.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Customer_Subuser_API/v1_(deprecated)/event_notification_url.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Customer_Subuser_API/v1_(deprecated)/invalid_emails.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Customer_Subuser_API/v1_(deprecated)/subuser_bounces.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Customer_Subuser_API/v1_(deprecated)/subuser_spam_reports.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Legacy_Features/Customer_Subuser_API/v1_(deprecated)/subuser_unsubscribes.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from: '/API_Reference/Web_API/Reseller_API/index.html',
+    to: 'https://www.twilio.com/docs/sendgrid/api/v2/reseller_api',
+  },
+  {
+    from: '/API_Reference/Web_API/Reseller_API/account_changes.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/reseller_api/account_changes',
+  },
+  {
+    from: '/API_Reference/Web_API/Reseller_API/account_overview.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/reseller_api/account_overview',
+  },
+  {
+    from: '/API_Reference/Web_API/Reseller_API/apps.html',
+    to: 'https://www.twilio.com/docs/sendgrid/api/v2/reseller_api/apps',
+  },
+  {
+    from: '/API_Reference/Web_API/Reseller_API/authenticate_a_customer.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Reseller_API/authenticate_a_customer_subuser.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from: '/API_Reference/Web_API/Reseller_API/customer_account_limits.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/reseller_api/customer_account_limits',
+  },
+  {
+    from: '/API_Reference/Web_API/Reseller_API/customer_bounces.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/reseller_api/customer_bounces',
+  },
+  {
+    from: '/API_Reference/Web_API/Reseller_API/customer_invalid_emails.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/reseller_api/customer_invalid_emails',
+  },
+  {
+    from: '/API_Reference/Web_API/Reseller_API/customer_management.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/reseller_api/customer_management',
+  },
+  {
+    from: '/API_Reference/Web_API/Reseller_API/customer_spam_reports.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/reseller_api/customer_spam_reports',
+  },
+  {
+    from: '/API_Reference/Web_API/Reseller_API/customer_statistics.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/reseller_api/customer_statistics',
+  },
+  {
+    from: '/API_Reference/Web_API/Reseller_API/customer_timezone.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from: '/API_Reference/Web_API/Reseller_API/customer_unsubscribes.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/reseller_api/customer_unsubscribes',
+  },
+  {
+    from: '/API_Reference/Web_API/Reseller_API/event_notification_url.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/reseller_api/event_notification_url',
+  },
+  {
+    from: '/API_Reference/Web_API/Reseller_API/invoice_retrieval.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from: '/API_Reference/Web_API/Reseller_API/ip_management.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from: '/API_Reference/Web_API/Reseller_API/monitor_records.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from: '/API_Reference/Web_API/Reseller_API/multiple_credentials.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/reseller_api/multiple_credentials',
+  },
+  {
+    from: '/API_Reference/Web_API/Reseller_API/parse_settings.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/reseller_api/parse_settings',
+  },
+  {
+    from: '/API_Reference/Web_API/Reseller_API/view_available_packages.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/reseller_api/view_available_packages',
+  },
+  {
+    from: '/API_Reference/Web_API/Reseller_API/whitelabel.html',
+    to: 'https://www.twilio.com/docs/sendgrid/api/v2/reseller_api/whitelabel',
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/index.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/reseller_api/reseller_customer_subuser_api',
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_account_limits.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_apps.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/reseller_api/reseller_customer_subuser_api/customer_subuser_apps',
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_bounces.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/reseller_api/reseller_customer_subuser_api/customer_subuser_bounces',
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_event_notification_url.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/reseller_api/reseller_customer_subuser_api/customer_subuser_event_notification_url',
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_invalid_emails.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/reseller_api/reseller_customer_subuser_api/customer_subuser_invalid_emails',
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_monitor_outgoing_email.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_parse_settings.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/reseller_api/reseller_customer_subuser_api/customer_subuser_parse_settings',
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_spam_reports.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/reseller_api/reseller_customer_subuser_api/customer_subuser_spam_reports',
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_statistics.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/reseller_api/reseller_customer_subuser_api/customer_subuser_statistics',
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_timezone.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from:
+      '/API_Reference/Web_API/Reseller_API/Reseller_Customer_Subuser_API/customer_subuser_unsubscribes.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/reseller_api/reseller_customer_subuser_api/customer_subuser_unsubscribes',
+  },
+  {
+    from: '/API_Reference/Web_API/Reseller_Haiku_API/index.html',
+    to: 'https://www.twilio.com/docs/sendgrid/api/v2/reseller_haiku_api',
+  },
+  {
+    from: '/API_Reference/Web_API/Reseller_Haiku_API/customer_provision.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/reseller_haiku_api/customer_provision',
+  },
+  {
+    from: '/API_Reference/Web_API/Reseller_Haiku_API/customer_change.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/reseller_haiku_api/customer_change',
+  },
+  {
+    from: '/API_Reference/Web_API/Reseller_Haiku_API/customer_deprovision.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/reseller_haiku_api/customer_deprovision',
+  },
+  {
+    from: '/API_Reference/Web_API/Reseller_Haiku_API/customer_sso.html',
+    to:
+      'https://www.twilio.com/docs/sendgrid/api/v2/reseller_haiku_api/customer_sso',
+  },
+  {
+    from: '/API_Reference/Web_API/Statistics/index.html',
+    to: '/',
+    gone: true,
+  },
+  {
+    from: '/API_Reference/Web_API/Statistics/statistics_advanced.html',
+    to: '/',
+    gone: true,
+  },
+];
