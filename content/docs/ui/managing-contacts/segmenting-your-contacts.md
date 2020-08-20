@@ -222,12 +222,30 @@ Operators available on a “Single Send” field include:
 
 When using more than one condition to segment your contacts, you can select `AND` or `OR` as options, where `AND` requires both conditions to be true and `OR` requires either condition to be true. Once you’ve selected the field, operator, and value, you can layer additional conditions in the segment to narrow the results to a more targeted audience.
 
+## Duplicating a Segment
+
+Duplicating a segment eliminates the time and effort needed to recreate a complex segment from scratch in order to make a few changes or tweaks to reach a different audience. Follow these steps to create a copy of an existing segment.
+
+_To duplicate a segment:_
+
+1. From the Contact Lists page, click the Action Menu next to the name of the segment you wish to duplicate.
+1. Select **Duplicate**.
+
 ## Exporting a Segment
 
-_To export a Segment:_
+_To export a segment from the Contact List Page:_
 
 1. Click the Action Menu next to the name of the segment you wish to export.
 1. Select **Export**.
+
+![]({{root_url}}/img/duplicate-segment-contact-list-page.png "Duplicate a segment from the contact list page")
+
+_To export a segment from the segment details page:_
+
+1. Click **Segment Options** to open the drop-down menu.
+1. Select **Duplicate**.
+
+![]({{root_url}}/img/duplicate-segment-details-page.png "Duplicate a segment from the segment detail page")
 
 This triggers SendGrid to send an email to the primary email address on the account. The email includes a link to download the CSV of all the contacts in the list and their associated custom field values.
 
