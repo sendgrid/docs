@@ -233,12 +233,19 @@ _To duplicate a segment:_
 
 ## Exporting a Segment
 
-_To export a segment:_
+_To export a segment from the Contact List Page:_
 
 1. Click the Action Menu next to the name of the segment you wish to export.
 1. Select **Export**.
 
 ![]({{root_url}}/img/duplicate-segment-contact-list-page.png "Duplicate a segment from the contact list page")
+
+_To export a segment from the segment details page:_
+
+1. Click **Segment Options** to open the drop-down menu.
+1. Select **Duplicate**.
+
+![]({{root_url}}/img/duplicate-segment-details-page.png "Duplicate a segment from the segment detail page")
 
 This triggers SendGrid to send an email to the primary email address on the account. The email includes a link to download the CSV of all the contacts in the list and their associated custom field values.
 
