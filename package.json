@@ -17,7 +17,7 @@
     "gatsby-plugin-nprogress": "^2.3.1",
     "gatsby-plugin-offline": "^3.2.1",
     "gatsby-plugin-react-helmet": "^3.3.1",
-    "gatsby-plugin-robots-txt": "^1.5.0",
+    "gatsby-plugin-robots-txt": "^1.5.1",
     "gatsby-plugin-sass": "^2.3.1",
     "gatsby-plugin-segment-js": "^3.2.2",
     "gatsby-plugin-sharp": "^2.6.2",
