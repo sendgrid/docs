@@ -79,6 +79,8 @@ The API response should look something like this, using the example email "cedri
 "has_suspected_bounces":false}},"ip_address":"65.101.243.157"}}
 ```
 
+There is a limit of 50 sources. Sources are automatically deleted once the last validation to use that source falls off the 30 day window. You can continue to make validations without a source if you’ve hit the limit.
+
 ### Options for Integration
 
 The Email Validation API allows flexibility for integrating in multiple ways, but for simplicity we'll focus on validating emails in a signup form. A signup form is anywhere you are capturing email addresses. This could be a lead capture signup form like requesting a content piece or an account signup. 
