@@ -166,61 +166,284 @@ The following tables list the available fields, excluding custom fields that you
 
 \* Single Send Activity fields have their own Single Send type. The operators available for a Single Send ("was sent," "opened," and "clicked") behave like [Email Activity fields](#email-activity-fields), but they are scoped to engagement on Single Sends.
 
-### Operators available by field type
+### Operators available for Contact Profile and Custom Fields
 
-The operators available on a field depend on the field type (Text, Date, Number, or Single Send).
+The operators available on a field depend on the field type (Text, Date, Number).
 
-Operators available on a “Date” field include:
+##### Date Field Operators
 
-- `is`
-- `is not`
-- `is blank`
-- `is not blank`
-- `is after`
-- `is at or after`
-- `is before`
-- `is at or before`
-- `starts with`
-- `on`
-- `not on`
-- `is between`
-- `is not between`
-- `is within`
-- `is not within`
+Conditions using Date Field operators will filter contacts based on the contact field compared with the datetime value provided in the condition.
+
+Operators available for Date Fields include:
+
+<table>
+  <tr>
+    <th>Operator Name</a></th>
+    <th>Description</a></th>
+  </tr>
+  <tr>
+    <td>is</td>
+    <td>Matches contacts that have the datetime value for the field</td>
+  </tr>
+  <tr>
+    <td>is not</td>
+    <td>Matches contacts that do not have the datetime value for the field</td>
+  </tr>
+  <tr>
+    <td>is blank</td>
+    <td>No value is set for the field</td>
+  </tr>
+  <tr>
+    <td>is not blank</td>
+    <td>Any value is set for the field</td>
+  </tr>
+  <tr>
+    <td>is after</td>
+    <td>Matches the datetime value that occurs after the provided value for the field</td>
+  </tr>
+  <tr>
+    <td>is at or after</td>
+    <td>Matches the datetime value that matches or is after the provided value for the field</td>
+  </tr>
+  <tr>
+    <td>is before</td>
+    <td>Matches the datetime value that occurs before the provided value for the field</td>
+  </tr>
+  <tr>
+    <td>is at or before</td>
+    <td>Matches the datetime value that matches or is before the provided value for the field</td>
+  </tr>
+  <tr>
+    <td>between</td>
+    <td>Matches the datetime value that occurs on or after the start date and on or before the end date for the provided value for the field</td>
+  </tr>
+  <tr>
+    <td>not between</td>
+    <td>Matches the datetime value that occurs before the start date and after the end date for the provided value of that field</td>
+  </tr>
+  <tr>
+    <td>is within</td>
+    <td>Matches the datetime value that occurs between the date and time in the past based on the duration  and the current datetime</td>
+  </tr>
+  <tr>
+    <td>is not within</td>
+    <td>Matches the datetime value that occurs before the date and time in the past based on the duration  and the current datetime</td>
+  </tr>
+  <tr>
+    <td>on</td>
+    <td>Matches the datetime value that occurs at any time on the date provided</td>
+  </tr>
+  <tr>
+    <td>not on</td>
+    <td>Matches the datetime value that does not fall at any time on the date provided</td>
+  </tr>
+</table>
+
+##### Number Field Operators
+
+Conditions using Number Field operators will filter contacts based on the contact field compared with the numeric value provided in the condition.
 
 Operators available on a "Number” field include:
 
-- `is`
-- `is not`
-- `is blank`
-- `is not blank`
-- `is greater than`
-- `is less than`
-- `is equal or greater than`
-- `is equal or less than`
-- `is between`
-- `is not between`
+<table>
+  <tr>
+    <th>Operator Name</a></th>
+    <th>Description</a></th>
+  </tr>
+  <tr>
+    <td>is</td>
+    <td>Matches contacts that have the numeric value for the field</td>
+  </tr>
+  <tr>
+    <td>is not</td>
+    <td>Matches contacts that do not have the numeric value for the field</td>
+  </tr>
+  <tr>
+    <td>is blank</td>
+    <td>No value is set for the field</td>
+  </tr>
+  <tr>
+    <td>is not blank</td>
+    <td>Any value is set for the field</td>
+  </tr>
+  <tr>
+    <td>is greater than</td>
+    <td>Matches any numeric value that is greater than the provided value for the field</td>
+  </tr>
+  <tr>
+    <td>is less than</td>
+    <td>Matches any numeric value that is less than the provided value for the field</td>
+  </tr>
+  <tr>
+    <td>is equal or greater than</td>
+    <td>Matches any numeric value that matches or is greater than the provided value for the field</td>
+  </tr>
+  <tr>
+    <td>is equal or less than</td>
+    <td>Matches any numeric value that matches or is less than the provided value for the field</td>
+  </tr>
+  <tr>
+    <td>is between</td>
+    <td>Matches any numeric value that matches or is greater than the minimum value and matches or is less than the maximum value for the field</td>
+  </tr>
+  <tr>
+    <td>is not between</td>
+    <td>Matches any numeric value that is less than the minimum value and is greater than the maximum value for the field</td>
+  </tr>
+</table>
+
+##### Text Field Operators
+
+Conditions using Text Field operators will filter contacts based on the contact field compared with the string value provided in the condition.
 
 Operators available on a “Text” field include:
 
-- `is`
-- `is not`
-- `is blank`
-- `is not blank`
-- `contains`
-- `does not contain`
-- `starts with`
-- `does not start with`
-- `ends with`
-- `does not end with`
+<table>
+  <tr>
+    <th>Operator Name</a></th>
+    <th>Description</a></th>
+  </tr>
+  <tr>
+    <td>is</td>
+    <td>Matches contacts that have the provided value for the field</td>
+  </tr>
+  <tr>
+    <td>is not</td>
+    <td>Matches contacts that do not have the provided value for the field</td>
+  </tr>
+  <tr>
+    <td>is blank</td>
+    <td>No value is set for the field</td>
+  </tr>
+  <tr>
+    <td>is not blank</td>
+    <td>Any value is set for the field</td>
+  </tr>
+  <tr>
+    <td>contains</td>
+    <td>Matches any value that may include other text as part of the value</td>
+  </tr>
+  <tr>
+    <td>does not contain</td>
+    <td>Matches any value that does not include the provided value</td>
+  </tr>
+  <tr>
+    <td>starts with</td>
+    <td>Matches any value that begins with the provided value</td>
+  </tr>
+  <tr>
+    <td>does not start with</td>
+    <td>Matches any value that does not begin with the provided value</td>
+  </tr>
+  <tr>
+    <td>ends with</td>
+    <td>Matches any value that ends with the provided value</td>
+  </tr>
+  <tr>
+    <td>does not end with</td>
+    <td>Matches any value that does not end with the provided value</td>
+  </tr>
+</table>
+
+### Operators available for Email Activity Fields
+
+Operators available on an Email Activity field are similar to date type fields with the exception of some operators. Email Activity conditions will filter contacts who have engaged with a Single Send or Automation based on the constraints of the condition.
+
+The operators avaialable for Email Activity fields include:
+
+<table>
+  <tr>
+    <th>Operator Name</a></th>
+    <th>Description</a></th>
+  </tr>
+  <tr>
+    <td>is</td>
+    <td>Matches contacts tha have the datetime value for the field</td>
+  </tr>
+  <tr>
+    <td>is not</td>
+    <td>Matches contacts that do not have the datetime value for the field</td>
+  </tr>
+  <tr>
+    <td>is blank</td>
+    <td>No value is set for the field</td>
+  </tr>
+  <tr>
+    <td>is not blank</td>
+    <td>Any value is set for the field</td>
+  </tr>
+  <tr>
+    <td>is after</td>
+    <td>Matches the datetime value that occurs after the provided value for the field</td>
+  </tr>
+  <tr>
+    <td>is at or after</td>
+    <td>Matches the datetime value that matches or is after the provided value for the field</td>
+  </tr>
+  <tr>
+    <td>is before</td>
+    <td>Matches the datetime value that occurs before the provided value for the field</td>
+  </tr>
+  <tr>
+    <td>is at or before</td>
+    <td>Matches the datetime value that matches or is before the provided value for the field</td>
+  </tr>
+  <tr>
+    <td>between</td>
+    <td>Matches the datetime value that occurs on or after the start date and on or before the end date for the provided value for the field</td>
+  </tr>
+  <tr>
+    <td>not between</td>
+    <td>Matches the datetime value that occurs before the start date and after the end date for the provided value of that field</td>
+  </tr>
+  <tr>
+    <td>is within</td>
+    <td>Matches the datetime value that occurs between the date and time in the past based on the duration  and the current datetime</td>
+  </tr>
+  <tr>
+    <td>is not within</td>
+    <td>Matches the datetime value that occurs before the date and time in the past based on the duration  and the current datetime</td>
+  </tr>
+  <tr>
+    <td>on</td>
+    <td>Matches the datetime value that occurs at any time on the date provided</td>
+  </tr>
+  <tr>
+    <td>not on</td>
+    <td>Matches the datetime value that does not fall at any time on the date provided</td>
+  </tr>
+</table>
+
+### Operators available for Single Send Fields
+
+Single Send conditions will filter contacts who have engaged with a particular Single Send or any Single Send based on the constraints of the condition.
 
 Operators available on a “Single Send” field include:
 
-- `was sent`
-- `has clicked`
-- `has opened`
+<table>
+  <tr>
+    <th>Operator Name</a></th>
+    <th>Description</a></th>
+  </tr>
+  <tr>
+    <td>was sent</td>
+    <td>Any contacts who were sent a Single Send</td>
+  </tr>
+  <tr>
+    <td>has clicked</td>
+    <td>Any contacts who clicked a Single Send</td>
+  </tr>
+  <tr>
+    <td>has opened</td>
+    <td>Any contacts who opened a Single Send</td>
+  </tr>
+</table>
+
+## Adding Multiple Conditions with a Segment
 
 When using more than one condition to segment your contacts, you can select `AND` or `OR` as options, where `AND` requires both conditions to be true and `OR` requires either condition to be true. Once you’ve selected the field, operator, and value, you can layer additional conditions in the segment to narrow the results to a more targeted audience.
+
+:warning: At this time only one Email Activity condition may exist within a segment using more than one condition while using `AND`. Segments with more than one condition using `AND` with multiple Email Activity conditions will not match any contacts.
 
 ## Duplicating a Segment
 
@@ -238,14 +461,14 @@ _To export a segment from the Contact List Page:_
 1. Click the Action Menu next to the name of the segment you wish to export.
 1. Select **Export**.
 
-![]({{root_url}}/img/duplicate-segment-contact-list-page.png "Duplicate a segment from the contact list page")
+![]({{root_url}}/img/duplicate-segment-contact-list-page.png 'Duplicate a segment from the contact list page')
 
 _To export a segment from the segment details page:_
 
 1. Click **Segment Options** to open the drop-down menu.
 1. Select **Duplicate**.
 
-![]({{root_url}}/img/duplicate-segment-details-page.png "Duplicate a segment from the segment detail page")
+![]({{root_url}}/img/duplicate-segment-details-page.png 'Duplicate a segment from the segment detail page')
 
 This triggers SendGrid to send an email to the primary email address on the account. The email includes a link to download the CSV of all the contacts in the list and their associated custom field values.
 
