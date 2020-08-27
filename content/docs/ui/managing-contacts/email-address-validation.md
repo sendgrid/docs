@@ -54,7 +54,7 @@ When integrating with the Email Validation API endpoint, please keep the followi
 - Do not call the API endpoint from client side code such as Javascript. Doing so would allow anyone to find your API key and use it to validate their own email addresses on your account. You should instead call the API from backend code, for instance, after the user submits a form.
 - The API currently accepts one email address at a time. If for some reason you have multiple addresses you need to validate, please call the API once per email address. We do not currently have a batch API.
 - If you choose to integrate into a signup form we recommend ensuring the Email Validation API is not a blocker for your form submissions. 
-- The API endpoint is rate limited to 600 requests per minute.
+- The API endpoint is rate limited to 7 requests per second.
 
 The "Source" gets passed through the API call as an optional field to identify the source if you choose to integrate with multiple email address captures and want to be able to compare their results. You pass it as a string, only using alphanumeric characters and spaces. For example:
 
