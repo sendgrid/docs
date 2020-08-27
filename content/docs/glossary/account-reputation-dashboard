@@ -1,6 +1,6 @@
 ---
 seo:
-  title: Email Reputation Monitoring
+  title: Account Reputation Dashboard
   description: We base your email monitoring reputation on your bounces, blocks, spam, invalid email, and successfully delivered emails.
   keywords: reputation, email sender reputation, email reputation monitoring
 title: Reputation Monitoring
