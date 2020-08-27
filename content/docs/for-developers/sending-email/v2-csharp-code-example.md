@@ -4,7 +4,7 @@ weight: 0
 title: v2 API C# Code Example
 group: api-v2
 navigation:
-    show: true
+  show: true
 ---
 
 <call-out>
@@ -20,6 +20,7 @@ The library does not officially support the V2 API, but you can use V2 with an o
 </call-out>
 
 ## Using SendGrid's C# Library
+
 ```csharp
 // using SendGrid's C# Library - https://github.com/sendgrid/sendgrid-csharp
 using System.Net.Http;
@@ -38,17 +39,17 @@ transportWeb.DeliverAsync(myMessage);
 // transportWeb.DeliverAsync(myMessage).Wait();
 ```
 
-## 	Using .NET's Built-in SMTP Library
+## Using .NET's Built-in SMTP Library
 
 If you choose not to use SendGrid's client library you may use .NET's built in library.
 
-If you are using ASP.NET, you can specify SMTP settings in web.config.
+If you are using ASP.NET, you can specify SMTP settings in web.config. Please note that your username should be "apikey" as specified in [Integrating with the SMTP API]({{root_url}}/for-developers/sending-email/integrating-with-the-smtp-api/).
 
 ```xml
 <system.net>
   <mailSettings>
     <smtp from="test@domain.com">
-      <network host="smtp.sendgrid.net" password="api_key" userName="username" port="587" />
+      <network host="smtp.sendgrid.net" password="<your_api_key>" userName="apikey" port="587" />
     </smtp>
   </mailSettings>
 </system.net>
