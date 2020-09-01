@@ -22,7 +22,7 @@ We have had reports that some customers have needed to install `cyrus-sasl-plain
 </call-out>
 
 ```bash
-AuthInfo:smtp.sendgrid.net "U:yourUserName" "P:yourAPIKey" "M:PLAIN"
+AuthInfo:smtp.sendgrid.net "U:apikey" "P:yourAPIKey" "M:PLAIN"
 ```
 
 Define the Smart Host in **/etc/mail/sendmail.mc** You should add these lines just after the commented "\#dnl define('SMART_HOST', 'smtp.your.provider')dnl" line in the file
