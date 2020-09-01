@@ -39,7 +39,7 @@ Here are example use cases listed with the Handlebars.js helpers used to build t
 
 ### Receipts
 
-This [example receipt template](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates/receipt) uses the following heplers:
+This [example receipt template](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates/receipt) uses the following helpers:
 
 - [Substitution](#substitution)
 - [Conditional statements](#conditional-statements)
@@ -295,8 +295,6 @@ Our templates support the following conditionals:
 - [And](#and)
 - [Or](#or)
 - [Length](#length)
-- [isBefore](#isbefore)
-- [isAfter](#isafter)
 
 #### Basic If, Else, Else If
 
@@ -598,7 +596,7 @@ Hello Ben!
 
 The `equals` comparison can check for equality between two values of the same data type. The `equals` helper will also attempt to coerce data types to make a comparison of values independent of their data type. For example, `{{#equals 3 "3"}}` will evaluate to `true`.
 
-When checking for truthiness, be aware that empty strings, zero integers, and zero floating poing numbers evaluate to `false`. Non-empty strings, non-zero integers, and non-zero floating point numbers, including negative numbers, evaluate to `true`.
+When checking for truthiness, be aware that empty strings, zero integers, and zero floating point numbers evaluate to `false`. Non-empty strings, non-zero integers, and non-zero floating point numbers, including negative numbers, evaluate to `true`.
 
 ##### Basic equals
 
@@ -692,7 +690,7 @@ Hello Ben!
 
 The `notEquals` comparison can check for equality between two values of the same data type. The `notEquals` helper will also attempt to coerce data types to make a comparison of values independent of their data type. For example, {{#equals 3 "3"}} will return `false`.
 
-When checking for truthiness, be aware that empty strings, zero integers, and zero floating poing numbers evaluate to `false`. Non-empty strings, non-zero integers, and non-zero floating point numbers, including negative numbers, evaluate to `true`.
+When checking for truthiness, be aware that empty strings, zero integers, and zero floating point numbers evaluate to `false`. Non-empty strings, non-zero integers, and non-zero floating point numbers, including negative numbers, evaluate to `true`.
 
 ##### Basic notEquals
 
@@ -784,7 +782,7 @@ Hello Ben!
 
 #### And
 
-When checking for truthiness, be aware that empty strings, zero integers, and zero floating poing numbers evaluate to `false`. Non-empty strings, non-zero integers, and non-zero floating point numbers, including negative numbers, evaluate to `true`.
+When checking for truthiness, be aware that empty strings, zero integers, and zero floating point numbers evaluate to `false`. Non-empty strings, non-zero integers, and non-zero floating point numbers, including negative numbers, evaluate to `true`.
 
 ##### And without else
 
@@ -876,7 +874,7 @@ Hello Ben!
 
 #### Or
 
-When checking for truthiness, be aware that empty strings, zero integers, and zero floating poing numbers evaluate to `false`. Non-empty strings, non-zero integers, and non-zero floating point numbers, including negative numbers, evaluate to `true`.
+When checking for truthiness, be aware that empty strings, zero integers, and zero floating point numbers evaluate to `false`. Non-empty strings, non-zero integers, and non-zero floating point numbers, including negative numbers, evaluate to `true`.
 
 ##### Basic or
 
@@ -1031,96 +1029,6 @@ Hello Ben!
 <!-- Resulting HTML with test data two-->
 <p>
   Hello Ben! Thanks for browsing our site. We hope you'll come back soon.
-</p>
-```
-
-</code-group>
-
-#### isBefore
-
-The isBefore helper will compare two epochs (datetime values) and render a block of HTML if the first value is earlier (occurs before) the second value.
-
-<code-group langs="Handlebars, JSON, HTML">
-
-```handlebars
-<!-- Template -->
-<p>Hello Ben!
-{{#isBefore requestedTime deadline}}
-   You've successfully reserved a time with us. We'll see you soon.
-{{else}}
-   The time you requested is after the deadline. Please login to select another time.
-{{/isBefore}}</p>
-```
-
-```json
-// Test data one
-{
-  "requestedTime": "2020-01-15 10:30:05Z",
-  "deadline": "2020-01-10 10:30:05Z"
-}
-
-// Test data two
-{
-  "requestedTime": "2020-01-15 10:30:05Z",
-  "deadline": "2020-01-10 10:30:05Z"
-}
-```
-
-```html
-<!-- Resulting HTML from test data one -->
-<p>
-  Hello Ben! The time you requested is after the deadline. Please login to
-  select another time.
-</p>
-
-<!-- Resulting HTML from test data two -->
-<p>
-  Hello Ben! You've successfully reserved a time with us. We'll see you soon.
-</p>
-```
-
-</code-group>
-
-#### isAfter
-
-The isAfter helper will compare two epochs (datetime values) and render a block of HTML if the first value is later (occurs after) the second value.
-
-<code-group langs="Handlebars, JSON, HTML">
-
-```handlebars
-<!-- Template -->
-<p>Hello Ben!
-{{#isAfter requestedTime deadline}}
-   The time you requested is after the deadline. Please login to select another time.
-{{else}}
-   You've successfully reserved a time with us. We'll see you soon.
-{{/isAfter}}</p>
-```
-
-```json
-// Test data one
-{
-  "requestedTime": "2020-01-15 10:30:05Z",
-  "deadline": "2020-01-10 10:30:05Z"
-}
-
-// Test data two
-{
-  "requestedTime": "2020-01-15 10:30:05Z",
-  "deadline": "2020-01-10 10:30:05Z"
-}
-```
-
-```html
-<!-- Resulting HTML from test data one -->
-<p>
-  Hello Ben! You've successfully reserved a time with us. We'll see you soon.
-</p>
-
-<!-- Resulting HTML from test data two -->
-<p>
-  Hello Ben! The time you requested is after the deadline. Please login to
-  select another time.
 </p>
 ```
 
