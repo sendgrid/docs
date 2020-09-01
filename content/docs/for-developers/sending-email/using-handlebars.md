@@ -221,30 +221,128 @@ If you include the characters `'`, `"` or `&` in a subject line replacement be s
 
 #### formatDate
 
+The formatDate helper takes a time in either epoch or ISO8601 format and converts it to a format you specify using the tokens in the following table. Example display results are for Tuesday, January 1st, 2020 3:00:00PM Pacific Standard Time.
+
+<table>
+    <tr>
+      <th>
+        Token
+      </th>
+      <th>
+        Displayed Result
+      </th>
+    </tr>
+    <tr>
+      <td>YYYYY</td>
+      <td>2020</td>
+    </tr>
+    <tr>
+      <td>YY</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>MMMM</td>
+      <td>January</td>
+    </tr>
+    <tr>
+      <td>MMM</td>
+      <td>Jan</td>
+    </tr>
+    <tr>
+      <td>MM</td>
+      <td>01</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>DD</td>
+      <td>01</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>dddd</td>
+      <td>Tuesday</td>
+    </tr>
+    <tr>
+      <td>ddd</td>
+      <td>Tue</td>
+    </tr>
+    <tr>
+      <td>hh</td>
+      <td>03</td>
+    </tr>
+    <tr>
+      <td>h</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>HH</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>H</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>mm</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>m</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>ss</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>s</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>PM</td>
+    </tr>
+    <tr>
+      <td>ZZ</td>
+      <td>-0800</td>
+    </tr>
+    <tr>
+      <td>Z</td>
+      <td>-08:00</td>
+    </tr>
+</table>
+
 <code-group langs="Handlebars, JSON, HTML">
 
 ```handlebars
-<!-- Template without timezone -->
-<p>Join us {{formatDate ts format}}</p>
+<!-- Template without timezone offset -->
+<p>Join us {{formatDate timeStamp dateFormat}}</p>
 
-<!-- Template with timezone -->
-<p>Join us {{formatDate ts format \"-0000\"}}</p>
+<!-- Template with timezone offset -->
+<p>Join us {{formatDate timeStamp dateFormat timezoneOffset}}</p>
 ```
 
 ```json
 // Test data
 {
-  "ts": "2020-01-15 19:31:05Z",
-  "format": "yyyy-mm-dd"
+  "timeStamp": "2020-01-01T23:00:00.000Z",
+  "dateFormat": "MMMM:DD:HH:mm:ss",
+  "timezoneOffset": "-0800"
 }
 ```
 
 ```html
 <!-- Resulting HTML without timezone-->
-<p>Join us 2020-01-15</p>
+<p>Join us January 01, 2020 11:00:00PM</p>
 
 <!-- Resulting HTML with timezone-->
-<p>Join us 2020-01-15</p>
+<p>Join us January 01, 2020 3:00:00PM</p>
 ```
 
 </code-group>
