@@ -164,17 +164,28 @@ The following tables list the available fields, excluding custom fields that you
   </tr>
 </table>
 
-\* Single Send Activity fields have their own Single Send type. The operators available for a Single Send ("was sent," "opened," and "clicked") behave like [Email Activity fields](#email-activity-fields), but they are scoped to engagement on Single Sends.
+### Automations fields
+
+<table>
+  <tr>
+    <th>Field Name</a></th>
+    <th>Field Type</a></th>
+  </tr>
+  <tr>
+    <td>Automation Activity</td>
+    <td>Automation*</td>
+  </tr>
+</table>
+
+\* Single Send Activity and Automation Activity fields have their own Single Send and Automation types. The operators available for a Single Send or Automation ("was sent," "has clicked", and "has opened") behave like [Email Activity fields](#email-activity-fields), but they are scoped to engagement on Single Sends or Automations.
 
 ### Operators available for Contact Profile and Custom Fields
 
 The operators available on a field depend on the field type (Text, Date, Number).
 
-##### Date Field Operators
+#### Date Field Operators
 
-Conditions using Date Field operators will filter contacts based on the contact field compared with the datetime value provided in the condition.
-
-Operators available for Date Fields include:
+Conditions using Date field operators will filter contacts based on the contact field compared with the datetime value provided in the condition.
 
 <table>
   <tr>
@@ -239,11 +250,9 @@ Operators available for Date Fields include:
   </tr>
 </table>
 
-##### Number Field Operators
+#### Number Field Operators
 
 Conditions using Number Field operators will filter contacts based on the contact field compared with the numeric value provided in the condition.
-
-Operators available on a "Number” field include:
 
 <table>
   <tr>
@@ -292,11 +301,9 @@ Operators available on a "Number” field include:
   </tr>
 </table>
 
-##### Text Field Operators
+#### Text Field Operators
 
 Conditions using Text Field operators will filter contacts based on the contact field compared with the string value provided in the condition.
-
-Operators available on a “Text” field include:
 
 <table>
   <tr>
@@ -347,9 +354,7 @@ Operators available on a “Text” field include:
 
 ### Operators available for Email Activity Fields
 
-Operators available on an Email Activity field are similar to date type fields with the exception of some operators. Email Activity conditions will filter contacts who have engaged with a Single Send or Automation based on the constraints of the condition.
-
-The operators avaialable for Email Activity fields include:
+Operators available on an Email Activity field are similar to Date fields with the exception of some operators. Email Activity conditions will filter contacts who have engaged with a Single Send or Automation based on the constraints of the condition.
 
 <table>
   <tr>
@@ -358,7 +363,7 @@ The operators avaialable for Email Activity fields include:
   </tr>
   <tr>
     <td>is</td>
-    <td>Matches contacts tha have the datetime value for the field</td>
+    <td>Matches contacts that have the datetime value for the field</td>
   </tr>
   <tr>
     <td>is not</td>
@@ -418,8 +423,6 @@ The operators avaialable for Email Activity fields include:
 
 Single Send conditions will filter contacts who have engaged with a particular Single Send or any Single Send based on the constraints of the condition.
 
-Operators available on a “Single Send” field include:
-
 <table>
   <tr>
     <th>Operator Name</a></th>
@@ -431,11 +434,33 @@ Operators available on a “Single Send” field include:
   </tr>
   <tr>
     <td>has clicked</td>
-    <td>Any contacts who clicked a Single Send</td>
+    <td>Any contact who has clicked a Single Send</td>
   </tr>
   <tr>
     <td>has opened</td>
-    <td>Any contacts who opened a Single Send</td>
+    <td>Any contact who has opened a Single Send</td>
+  </tr>
+</table>
+
+### Operators available for Automation Fields
+
+Automation conditions will filter contacts who have engaged with a particular Automation or any Automation based on the constraints of the condition.
+
+<table>
+  <tr>
+    <th>Operator Name</a></th>
+    <th>Description</a></th>
+  </tr>
+  <tr>
+    <td>was sent</td>
+    <td>Any contacts who were sent an Automation</td>
+  </tr>
+    <td>has opened</td>
+    <td>Any contacts who has opened an Automation</td>
+  </tr>
+  <tr>
+    <td>has clicked</td>
+    <td>Any contacts who has clicked an Automation</td>
   </tr>
 </table>
 
