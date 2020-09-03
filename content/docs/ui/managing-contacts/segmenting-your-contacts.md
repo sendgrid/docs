@@ -63,6 +63,13 @@ If you're segmenting an existing list, you can click the action menu to the righ
 7. Choose from the list of available _operators_.
 8. Enter the desired _value_ you want to segment by.
 9. You can [add multiple conditions](#adding-multiple-conditions-with-a-segment) and choose to join them with **AND** or **OR**. **AND** will require both conditions to be true; **OR** will qualify a contact for whom _either_ condition is true. This functionality allows you to further refine your segments to target your audience with precision.
+
+<call-out type="warning">
+
+Segments can have one Email Activity, Single Send, or Automation condition field each. These can be combined with custom field and reserved field conditions.
+
+</call-out>
+
 10. Once you are finished adding conditions, click **Save Segment**.
 
 ![The contacts menu inside the SendGrid App, displaying a new segment with a City condition set to "Denver" and a State, Province, Region condition set to "Colorado".]({{root_url}}/img/create_new_segment_two_fields.png 'Create a new segment with two fields')
