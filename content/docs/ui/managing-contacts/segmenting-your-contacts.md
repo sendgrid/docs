@@ -22,15 +22,15 @@ The content on this page describes the experience in the latest version of Marke
 
 [Segments]({{root_url}}/glossary/segmentation/) are similar to contact lists, except they update dynamically over time as information stored about your contacts changes. When you segment your audience, you are able to create personalized Automation emails and Single Sends that directly address the wants and needs of your particular audience.
 
-[Custom fields]({{root_url}}/ui/managing-contacts/custom-fields/), [reserved fields]({{root_url}}/glossary/reserved-fields/), and engagement data like opens and clicks, provide unique information you can use to identify contacts for different segments. As your contacts' traits change and you add more contacts that meet the criteria of your segment, your segments will update to reflect these changes. For example, a segment populated using the criteria, “lives in Denver” or, “is under 30 years old” will change as your contacts age and their addresses change.
+[Custom fields]({{root_url}}/ui/managing-contacts/custom-fields/), [reserved fields]({{root_url}}/glossary/reserved-fields/), and engagement data like opens and clicks, provide unique information you can use to identify contacts for different segments. As your contacts' traits change or you add more contacts that meet the criteria of your segment, your segments will update to reflect these changes. For example, a segment populated using the criteria, “lives in Denver” or, “is under 30 years old” will change as your contacts age or their addresses change.
 
 Segments can pull from _All Contacts_ or any of your more narrowly defined lists.
 
 ## How segments work
 
-Segments are created by comparing your contacts against criteria you define. If a contact matches the specified criteria, they will be included in your segment. Engagement data such as "opened" or "clicked" will add contacts who have _engaged_ in this behavior with one of your messages. Whether or not a contact meets your defined criteria is evaluated using expressions that consist of three parts: fields, operators, and values.
+Segments are created by comparing your contacts against criteria you define. If a contact matches the specified criteria, they will be included in your segment. Engagement data such as "opened" or "clicked" will add contacts who have _engaged_ in this behavior with one of your messages. Whether or not a contact meets your defined criteria is evaluated using the combination of conditions you create. Each condition consists of three parts: fields, operators, and values.
 
-The first part of the pattern, the field, is the data _field_ you want to filter your contacts by. Fields include traits such as "First Name," "Email," or "City, " and engagement data such as "Last Clicked." For a full list of available fields, see the [Segmentation fields and types tables](#segmentation-fields-and-types).
+The first part of the condition, the field, is the data _field_ you want to filter your contacts by. Fields include traits such as "First Name," "Email," or "City" and engagement data such as "Last Clicked." For a full list of available fields, see the [Segmentation fields and types tables](#segmentation-fields-and-types).
 
 Operators are the second part of the expression, and they define how your contacts should be evaluated. All fields have a data type assigned to them (text, number, date, Single Send); this type will determine which operators are available. For example, "Last Clicked" is a date field, and it has date operators such as "is after" and "is before" available. For a full list of operators available by field type, see the [Operators available by field type section](#operators-available-by-field-type).
 
@@ -54,15 +54,15 @@ To create a segment, login to the Twilio SendGrid App, and complete the followin
 
 <call-out>
 
-If you're segmenting an existing list, you can click the action menu to the right of the list name and select "Create Segment" directly.
+If you're segmenting an existing list, you can click the action menu to the right of the list name from the [Contacts page](https://mc.sendgrid.com/contacts) and select "Create Segment" directly.
 
 </call-out>
 
 5. To segment an existing list, select a list from the **Existing List** drop-down.
-6. In the **Who are you targeting?** section, start building your condition by choosing a _field_ from the drop-down.
+6. In the **Who are you targeting?** section, start building your first condition by choosing a _field_ from the drop-down.
 7. Choose from the list of available _operators_.
 8. Enter the desired _value_ you want to segment by.
-9. You can add multiple conditions and choose to join them with **AND** or **OR**. This functionality allows you to further refine your segments to target your audience with precision.
+9. You can [add multiple conditions](#adding-multiple-conditions-with-a-segment) and choose to join them with **AND** or **OR**. **AND** will require both conditions to be true; **OR** will qualify a contact for whom _either_ condition is true. This functionality allows you to further refine your segments to target your audience with precision.
 10. Once you are finished adding conditions, click **Save Segment**.
 
 ![The contacts menu inside the SendGrid App, displaying a new segment with a City condition set to "Denver" and a State, Province, Region condition set to "Colorado".]({{root_url}}/img/create_new_segment_two_fields.png 'Create a new segment with two fields')
@@ -75,7 +75,7 @@ Segments built using engagement data such as "was sent" or "clicked" will take a
 
 ## Segmentation fields and types
 
-The following tables list the available fields, excluding custom fields that you set, and the fields' data types. The operators available for each type are included in the section following the tables.
+The following tables list the available default fields and the fields' data types. Your account will also include any Custom Fields you add. The operators available for each type are included in the [section following these field tables](#operators-available-for-contact-profile-and-custom-fields).
 
 ### Contact Profile fields
 
@@ -177,7 +177,7 @@ The following tables list the available fields, excluding custom fields that you
   </tr>
 </table>
 
-\* Single Send Activity and Automation Activity fields have their own Single Send and Automation types. The operators available for a Single Send or Automation ("was sent," "has clicked", and "has opened") behave like [Email Activity fields](#email-activity-fields), but they are scoped to engagement on Single Sends or Automations.
+\* Single Send Activity and Automation Activity fields have their own Single Send and Automation types. The operators available for a Single Send or Automation are "was sent," "has clicked," and "has opened." After selecting one of these operators, you'll choose whether the operator applies to any Single Send or Automation or to a specific Single Send or Automation. You will then define the time period in which the engagement occurred.
 
 ### Operators available for Contact Profile and Custom Fields
 
@@ -354,7 +354,7 @@ Conditions using Text Field operators will filter contacts based on the contact 
 
 ### Operators available for Email Activity Fields
 
-Operators available on an Email Activity field are similar to Date fields with the exception of some operators. Email Activity conditions will filter contacts who have engaged with a Single Send or Automation based on the constraints of the condition.
+Operators available on an Email Activity field are similar to Date fields. Email Activity conditions will filter contacts who have engaged with a Single Send or Automation based on the constraints of the condition.
 
 <table>
   <tr>
@@ -430,15 +430,15 @@ Single Send conditions will filter contacts who have engaged with a particular S
   </tr>
   <tr>
     <td>was sent</td>
-    <td>Any contacts who were sent a Single Send</td>
+    <td>Any contacts who were sent any Single Send or a specific Single Send in the specified time range</td>
   </tr>
   <tr>
     <td>has clicked</td>
-    <td>Any contact who has clicked a Single Send</td>
+    <td>Any contact who has clicked any Single Send or a specific Single Send in the specified time range</td>
   </tr>
   <tr>
     <td>has opened</td>
-    <td>Any contact who has opened a Single Send</td>
+    <td>Any contact who has opened any Single Send or a specific Single Send in the specified time range</td>
   </tr>
 </table>
 
@@ -453,14 +453,14 @@ Automation conditions will filter contacts who have engaged with a particular Au
   </tr>
   <tr>
     <td>was sent</td>
-    <td>Any contacts who were sent an Automation</td>
+    <td>Any contacts who were sent any Automation or a specific Automation in the specified time range</td>
   </tr>
     <td>has opened</td>
-    <td>Any contacts who has opened an Automation</td>
+    <td>Any contacts who has opened any Automation or a specific Automation in the specified time range</td>
   </tr>
   <tr>
     <td>has clicked</td>
-    <td>Any contacts who has clicked an Automation</td>
+    <td>Any contacts who has clicked any Automation or a specific Automation in the specified time range</td>
   </tr>
 </table>
 
@@ -468,7 +468,11 @@ Automation conditions will filter contacts who have engaged with a particular Au
 
 When using more than one condition to segment your contacts, you can select `AND` or `OR` as options, where `AND` requires both conditions to be true and `OR` requires either condition to be true. Once you’ve selected the field, operator, and value, you can layer additional conditions in the segment to narrow the results to a more targeted audience.
 
-:warning: At this time only one Email Activity condition may exist within a segment using more than one condition while using `AND`. Segments with more than one condition using `AND` with multiple Email Activity conditions will not match any contacts.
+<call-out type="warning">
+
+At this time only one Email Activity, Single Send, or Automation condition may exist within a segment if combined using `AND`. Segments that combine more than one engagement activity condition using `AND` will not return any contacts.
+
+</call-out>
 
 ## Duplicating a Segment
 
