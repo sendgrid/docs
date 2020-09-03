@@ -250,7 +250,7 @@ Substitution tags allow you to easily generate dynamic content for each recipien
 
 For contacts with no entry in a custom field, the substitution tag appears blank. To set a default value, use the following pattern:
 
-`{{first_name | Valued Customer}}`
+`{{insert first_name "default=Valued Customer"}}`
 
 </call-out>
 
@@ -525,7 +525,7 @@ The `<%asm_group_unsubscribe_raw_url%>`, `<%asm_preferences_raw_url%>`, and `<%a
 
 For contacts with no entry in a custom field, the substitution tag appears blank. To set a default value, use the following pattern:
 
-`{{first_name | Valued Customer}}`
+`{{insert first_name "default=Valued Customer"}}`
 
 </call-out>
 
