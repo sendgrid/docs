@@ -545,9 +545,7 @@ Hello Ben!
 </p>
 
 <!-- Resulting HTML from test data two-->
-<p>
-  Hello Ben! Thanks for playing.
-</p>
+<p>Hello Ben! Thanks for playing.</p>
 ```
 
 </code-group>
@@ -637,9 +635,7 @@ Hello Ben!
 </p>
 
 <!-- Resulting HTML from test data two-->
-<p>
-  Hello Ben! Thanks for playing.
-</p>
+<p>Hello Ben! Thanks for playing.</p>
 ```
 
 </code-group>
@@ -694,6 +690,12 @@ Hello Ben!
 
 The `equals` comparison can check for equality between two values of the same data type. The `equals` helper will also attempt to coerce data types to make a comparison of values independent of their data type. For example, `{{#equals 3 "3"}}` will evaluate to `true`.
 
+<call-out type="warning">
+
+Please be aware that the editor's Preview page will not properly render the results of a comparison between coerced values. You will see proper comparisons between coerced values only in a delivered message.
+
+</call-out>
+
 When checking for truthiness, be aware that empty strings, zero integers, and zero floating point numbers evaluate to `false`. Non-empty strings, non-zero integers, and non-zero floating point numbers, including negative numbers, evaluate to `true`.
 
 ##### Basic equals
@@ -727,14 +729,10 @@ Hello Ben!
 
 ```html
 <!-- Resulting HTML from test data one-->
-<p>
-  Hello Ben! You have a winning code. Thanks for playing.
-</p>
+<p>Hello Ben! You have a winning code. Thanks for playing.</p>
 
 <!-- Resulting HTML from test data two-->
-<p>
-  Hello Ben! Thanks for playing.
-</p>
+<p>Hello Ben! Thanks for playing.</p>
 ```
 
 </code-group>
@@ -772,14 +770,10 @@ Hello Ben!
 
 ```html
 <!-- Resulting HTML from test data one-->
-<p>
-  Hello Ben! You have a winning code. Thanks for playing.
-</p>
+<p>Hello Ben! You have a winning code. Thanks for playing.</p>
 
 <!-- Resulting HTML from test data two-->
-<p>
-  Hello Ben! You do not have a winning code. Thanks for playing.
-</p>
+<p>Hello Ben! You do not have a winning code. Thanks for playing.</p>
 ```
 
 </code-group>
@@ -821,14 +815,10 @@ Hello Ben!
 
 ```html
 <!-- Resulting HTML from test data one-->
-<p>
-  Hello Ben! You have a winning code. Thanks for playing.
-</p>
+<p>Hello Ben! You have a winning code. Thanks for playing.</p>
 
 <!-- Resulting HTML from test data two-->
-<p>
-  Hello Ben! Thanks for playing.
-</p>
+<p>Hello Ben! Thanks for playing.</p>
 ```
 
 </code-group>
@@ -866,14 +856,10 @@ Hello Ben!
 
 ```html
 <!-- Resulting HTML from test data one-->
-<p>
-  Hello Ben! You have a winning code. Thanks for playing.
-</p>
+<p>Hello Ben! You have a winning code. Thanks for playing.</p>
 
 <!-- Resulting HTML from test data two-->
-<p>
-  Hello Ben! You do not have a winning code. Thanks for playing.
-</p>
+<p>Hello Ben! You do not have a winning code. Thanks for playing.</p>
 ```
 
 </code-group>
@@ -1016,9 +1002,7 @@ Hello Ben!
 </p>
 
 <!-- Resulting HTML from test data two -->
-<p>
-  Hi Ben! Have a great day.
-</p>
+<p>Hi Ben! Have a great day.</p>
 
 <!-- Resulting HTML from test data three -->
 <p>
@@ -1125,9 +1109,7 @@ Hello Ben!
 </p>
 
 <!-- Resulting HTML with test data two-->
-<p>
-  Hello Ben! Thanks for browsing our site. We hope you'll come back soon.
-</p>
+<p>Hello Ben! Thanks for browsing our site. We hope you'll come back soon.</p>
 ```
 
 </code-group>
