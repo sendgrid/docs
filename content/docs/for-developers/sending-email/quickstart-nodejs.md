@@ -32,7 +32,7 @@ When you sign up for a free [SendGrid account](https://signup.sendgrid.com/), yo
 
 To ensure our customers maintain the best possible sender reputations and to uphold legitimate sending behavior, we require customers to verify their [Sender Identities](https://sendgrid.com/docs/for-developers/sending-email/sender-identity/) by completing either Single [Sender Verification]({{root_url}}/ui/sending-email/sender-verification) or [Domain Authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/). A Sender Identity represents your _From_ email address—the address your recipients see as the sender of your emails.
 
-### Create and and store a SendGrid API key
+### Create and store a SendGrid API key
 
 Unlike a username and password—credentials that allow access to your full account—an API key is authorized to perform a limited scope of actions. If your API key is compromised, you can also cycle it (delete and create another) without changing your other account credentials.
 
