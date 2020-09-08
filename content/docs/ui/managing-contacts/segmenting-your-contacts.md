@@ -146,15 +146,15 @@ The following tables list the available default fields and the fields' data type
   </tr>
   <tr>
     <td>Last Clicked</td>
-    <td>Date</td>
+    <td>Email Activity*</td>
   </tr>
  <tr>
     <td>Last Opened</td>
-    <td>Date</td>
+    <td>Email Activity*</td>
   </tr>
   <tr>
     <td>Last Emailed</td>
-    <td>Date</td>
+    <td>Email Activity*</td>
   </tr>
 </table>
 
@@ -167,7 +167,7 @@ The following tables list the available default fields and the fields' data type
   </tr>
   <tr>
     <td>Single Send Activity</td>
-    <td>Single Send*</td>
+    <td>Single Send**</td>
   </tr>
 </table>
 
@@ -180,11 +180,13 @@ The following tables list the available default fields and the fields' data type
   </tr>
   <tr>
     <td>Automation Activity</td>
-    <td>Automation*</td>
+    <td>Automation**</td>
   </tr>
 </table>
 
-\* Single Send Activity and Automation Activity fields have their own Single Send and Automation types. The operators available for a Single Send or Automation are "was sent," "has clicked," and "has opened." After selecting one of these operators, you'll choose whether the operator applies to any Single Send or Automation or to a specific Single Send or Automation. You will then define the time period in which the engagement occurred.
+\* Email Activity fields have their own Email Activity type. After selecting one of [the operators available for this type](#operators-available-for-email-activity-fields), you'll define the time period in which the engagement occurred.
+
+\*\* Single Send Activity and Automation Activity fields have their own Single Send and Automation types. After selecting one of [the operators available for these types](#operators-available-for-single-send-fields), you'll choose whether the operator applies to any Single Send or Automation or to a specific Single Send or Automation. You will then define the time period in which the engagement occurred.
 
 ### Operators available for Contact Profile and Custom Fields
 
@@ -361,7 +363,7 @@ Conditions using Text Field operators will filter contacts based on the contact 
 
 ### Operators available for Email Activity Fields
 
-Operators available on an Email Activity field are similar to Date fields. Email Activity conditions will filter contacts who have engaged with a Single Send or Automation based on the constraints of the condition.
+Operators available on an Email Activity field are similar to Date fields with some exceptions—"is blank" and "is not blank" are not included on Email Activity fields. Email Activity conditions will filter contacts who have engaged with a Single Send or Automation based on the constraints of the condition.
 
 <table>
   <tr>
@@ -375,14 +377,6 @@ Operators available on an Email Activity field are similar to Date fields. Email
   <tr>
     <td>is not</td>
     <td>Matches contacts that do not have the datetime value for the field</td>
-  </tr>
-  <tr>
-    <td>is blank</td>
-    <td>No value is set for the field</td>
-  </tr>
-  <tr>
-    <td>is not blank</td>
-    <td>Any value is set for the field</td>
   </tr>
   <tr>
     <td>is after</td>
