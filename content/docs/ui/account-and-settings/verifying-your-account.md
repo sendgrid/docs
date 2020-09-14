@@ -11,15 +11,19 @@ navigation:
   show: true
 ---
 
-When you sign up for a SendGrid account, there are a few steps that our users must complete before they can start using their accounts fully. Even in a pre-verified state, you can send up to 100 emails per day with your SendGrid account. Once you complete the steps presented, your credit usage limits will be unlocked.
+When you sign up for a SendGrid account, there are a few steps that our users must complete before they can start using their accounts fully. Once you complete the steps presented, your credit usage limits will be unlocked.
 
-You will have either one, two, or three separate steps to complete before you fully unlock the credit limits available to your chosen plan level. We require these steps for your security, as well as to help you get started more quickly!
+Depending on whether you choose a *free* or *paid* account, you will have different steps to complete in order to unlock the full potential of your account. We require these steps for your security, as well as to help you get started more quickly!
 
 ## Verifying your Account
 
 The time it takes to completely unlock your account can vary based on how quickly you complete the required steps. The faster you complete the steps, the faster you can start sending!
 
-*To verify your account:*
+### Unlock your Free Account
+
+In order to send email with your free Twilio SendGrid account, you must create and verify a Single Sender. Addiing a Sender Identity will help protect your sending reputation and legitimize your account in the eyes of the inbox providers for better deliverability. For more information, see [Single Sender Verification]({{root_url}}/ui/sending-email/sender-verification/).
+
+### Unlock your Paid Account
 
 1.  Create a [link text]({{root_url}}/ui/sending-email/sender-verification/) Sender Identity or set up [Domain Authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/)
 1. Set up [two-factor authentication]({{root_url}}/ui/account-and-settings/two-factor-authentication/#setting-up-two-factor-authentication)
