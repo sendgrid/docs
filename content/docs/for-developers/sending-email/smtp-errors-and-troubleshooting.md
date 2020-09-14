@@ -34,7 +34,7 @@ Each SMTP call you make returns a response. `200` responses are usually success 
     <tr>
     <td>403</td>
     <td>`You are not authorized to send from that email address`</td>
-    <td>This error means that you need to update the “from” address for all of your emails to include a domain you own and control.</td>
+    <td>This means the "from" address does not match a verified Sender Identity. Mail cannot be sent until this error is resolved. To learn how to resolve this error, see our [Sender Identity requirements]({{root_url}}for-developers/sending-email/sender-identity/).</td>
   </tr>
   <tr>
     <td>421</td>
