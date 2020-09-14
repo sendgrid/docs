@@ -17,9 +17,9 @@ Whether you’re a startup or a large enterprise, SendGrid has several plans tai
 
 Before you can fully use your upgraded account, you need to complete some verification steps for security purposes.
 
-<call-out>
+<call-out type="warning">
 
-If you signed up for a Twilio SendGrid account prior to 9/17/2020, your upgrade steps and verification process will look different from what's described below.
+If you signed up for a Twilio SendGrid account prior to 9/17/2020, your upgrade steps and verification process will look different from what's described below. 
 
 </call-out>
 
@@ -40,24 +40,6 @@ If you don't have access to your domain's DNS records, you can use the **Send To
 3. Set up [Two-Factor Authentication]({{root_url}}/ui/account-and-settings/two-factor-authentication/)
 
 4. Add a [payment method]({{root_url}}/ui/account-and-settings/billing/#payment-methods). Your card will not be charged until your account is verified and your first bill is due. 
-
-### Choose a plan
-
-*Email API*
-
-1. Decide the plan you upgrade to by comparing your current contact storage usage and email sends to the available plans [here](https://sendgrid.com/pricing).
-1. Navigate to your [**Account Details**](https://app.sendgrid.com/account/products) page, and then click on the **Your Products** tab.
-1. Under **Email API**, select **Change Plan**.
-1. Find the plan you would like to upgrade to and then click **Select**.
-1. Add your payment information in the popup window and then click **Submit**.
-
-*Marketing Campaigns*
-
-1. Decide the plan you upgrade to by comparing your current contact storage usage and email sends to the available plans [here](https://sendgrid.com/pricing).
-1. Navigate to your [**Account Details**](https://app.sendgrid.com/account/products) page, and then click on the **Your Products** tab.
-1. Under **Marketing Campaigns**, select **Change Plan**.
-1. Find the plan you would like to upgrade to and then click **Select**.
-1. Add your payment information in the popup window and then click **Submit**.
 
 ## SendGrid Plans
 
@@ -81,4 +63,20 @@ Take control of your sending reputation and deliverability with a dedicated IP a
 
 </call-out>
 
-## Upgrade
+### Choose a plan
+
+*Email API*
+
+1. Decide the plan you upgrade to by comparing your current contact storage usage and email sends to the available plans [here](https://sendgrid.com/pricing).
+1. Navigate to your [**Account Details**](https://app.sendgrid.com/account/products) page, and then click on the **Your Products** tab.
+1. Under **Email API**, select **Change Plan**.
+1. Find the plan you would like to upgrade to and then click **Select**.
+1. Add your payment information in the popup window and then click **Submit**.
+
+*Marketing Campaigns*
+
+1. Decide the plan you upgrade to by comparing your current contact storage usage and email sends to the available plans [here](https://sendgrid.com/pricing).
+1. Navigate to your [**Account Details**](https://app.sendgrid.com/account/products) page, and then click on the **Your Products** tab.
+1. Under **Marketing Campaigns**, select **Change Plan**.
+1. Find the plan you would like to upgrade to and then click **Select**.
+1. Add your payment information in the popup window and then click **Submit**.
