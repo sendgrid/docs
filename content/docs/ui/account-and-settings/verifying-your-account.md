@@ -23,15 +23,16 @@ You will have either one, two, or three separate steps to complete before you fu
 
 ## Verifying your Account
 
-The time it takes to completely unlock your account can vary based on the number of steps you are required to complete. The faster you complete the steps, the faster you can start sending!
+The time it takes to completely unlock your account can vary based on how quickly you complete the required steps. The faster you complete the steps, the faster you can start sending!
 
 *To verify your account:*
 
-Complete one or more of the following:
+Complete all of the tasks:
 
 * Verify your email address
 * Set up [two-factor authentication]({{root_url}}/ui/account-and-settings/two-factor-authentication/#setting-up-two-factor-authentication)
 * Set up [domain authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/)
+* Add a [payment method]({{root_url}}/ui/account-and-settings/billing/#payment-methods)
 
 You may need to complete one or more of these steps to completely verify your account. You cannot skip any of the verification steps, or your account won't be completely unlocked.
 
@@ -46,6 +47,14 @@ Two-factor authentication allows you to make your SendGrid account more secure b
 ## Setting up Domain Authentication
 
 Domain authentication shows email providers that SendGrid has your permission to send emails on your behalf. For more information, see [How to set up domain authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/).
+
+<call-out>
+
+If you don't have access to your domain's DNS records, you can use the **Send To A Coworker** feature. This feature allows you to enter a colleague's email address so Twilio SendGrid can send them all the information they need to complete domain authentication on your behalf. 
+
+![]({{root_url}}/img/<domain-auth-send-to-coworker>.png "Send to a coworker tab")
+
+</call-out>
 
 ## Upgrading your account
 
