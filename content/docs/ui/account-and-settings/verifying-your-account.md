@@ -50,4 +50,4 @@ In some instances our compliance team will need to manually verify your account 
 
 ## Upgrading your account
 
-If you opted to start with Twilio SendGrid for free, you won't be able to upgrade to a paid plan until after your first 30 days have lapsed. The 30 day time period starts as soon as you complete the initial sign up form, not when you complete the final verification step. After your 30 day period lapses you may [upgrade your account](https://app.sendgrid.com/account/billing)) by completing some verification steps.
+If you opted to start with Twilio SendGrid for free, you can upgrade whenever you want provided you complete the [account verification steps](#Unlock-your-Paid-Account). In some instances our compliance team may need to verify your account manually. In that case, your account should be unlocked within 72 hours and you'll receive an alert within the app.
