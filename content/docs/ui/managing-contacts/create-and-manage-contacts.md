@@ -22,12 +22,15 @@ The content on this page describes the experience in the latest version of Marke
 
 
 ## Add Contacts
+You can add contacts to Marketing Campaigns by uploading a CSV, manually via the UI, using a Signup Form, or by integrating with the Contacts API. 
 
+<call-out>
 Note that automations will only trigger to contacts who are added to an entry criteria list *after* the automation is set live. Contacts who you add to a list before the automation is set live will not receive any emails in the series.
-
+</call-out>
+  
 ### Upload a CSV
 
-You can add contacts to a list via CSV upload or by creating a Signup Form to automatically send signups to a list. 
+A common way to add contacts is to upload a CSV and map your data to custom fields.  
 
 1. Use [this CSV template]({{root_url}}/assets/example.csv) to make sure your CSV is formatted correctly.
 1. Click **Add Contacts** and then select **Upload CSV**.
