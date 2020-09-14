@@ -34,6 +34,27 @@ Whether you’re a startup or a large enterprise, SendGrid has several plans tai
 1. Find the plan you would like to upgrade to and then click **Select**.
 1. Add your payment information in the popup window and then click **Submit**.
 
+## Upgrade Account Setup
+
+Before you can fully use your upgraded account, you need to complete some verification steps for security purposes. 
+
+*To unlock your Twilio SendGrid account:*
+
+1. Confirm your email address. If you need to resend the verification email, click **Resend account verification**. If you entered your email address incorrectly in the initial signup form, you can correct the email address and resend the verification email to the correct address.
+1. Set up [Domain Authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/) 
+Domain authentication shows email providers that Twilio SendGrid has your permission to send emails on your behalf.
+
+<call-out>
+
+If you don't have access to your domain's DNS records, you can use the **Send To A Coworker** feature. This feature allows you to enter a colleague's email address so Twilio SendGrid can send them all the information they need to complete domain authentication on your behalf. 
+
+![]({{root_url}}/img/<domain-auth-send-to-coworker>.png "Send to a coworker tab")
+
+</call-out>
+
+3. Set up [Two-Factor Authentication]({{root_url}}/ui/account-and-settings/two-factor-authentication/)
+
+4. Add a [payment method]({{root_url}}/ui/account-and-settings/billing/#payment-methods). Your card will not be charged until your account is verified and your first bill is due. 
 
 ## SendGrid Plans
 
@@ -43,15 +64,7 @@ If you’d like to speak with a representative about which plan is right for you
 
 ### Email API Free Plan
 
-* 100 emails per day after the free trial.
-
-<call-out>
-
-**Email API Free Trial**
-
-40,000 Emails and all the features of Essentials for 30 days.
-
-</call-out>
+* 100 emails per day.
 
 ### Marketing Campaigns Free Plan
 
@@ -64,3 +77,5 @@ Send to up to 2,000 contacts and 6,000 Emails per month and test all the feature
 Take control of your sending reputation and deliverability with a dedicated IP address, provided with every Pro, Premier and Advanced plan. [Learn More](https://sendgrid.com/blog/shared-and-dedicated-ips-which-should-you-choose/).
 
 </call-out>
+
+## Upgrade

@@ -15,26 +15,17 @@ When you sign up for a SendGrid account, there are a few steps that our users mu
 
 You will have either one, two, or three separate steps to complete before you fully unlock the credit limits available to your chosen plan level. We require these steps for your security, as well as to help you get started more quickly!
 
-<call-out>
-
- If you chose a paid plan during the initial signup form, your credit card is charged and your trial period begins right away. Complete the verification steps presented to you to unlock the full abilities of your paid account.
-
-</call-out>
-
 ## Verifying your Account
 
 The time it takes to completely unlock your account can vary based on how quickly you complete the required steps. The faster you complete the steps, the faster you can start sending!
 
 *To verify your account:*
 
-Complete all of the tasks:
+1.  Create a [link text]({{root_url}}/ui/sending-email/sender-verification/) Sender Identity or set up [Domain Authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/)
+1. Set up [two-factor authentication]({{root_url}}/ui/account-and-settings/two-factor-authentication/#setting-up-two-factor-authentication)
+1. Add a [payment method]({{root_url}}/ui/account-and-settings/billing/#payment-methods)
 
-* Verify your email address
-* Set up [two-factor authentication]({{root_url}}/ui/account-and-settings/two-factor-authentication/#setting-up-two-factor-authentication)
-* Set up [domain authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/)
-* Add a [payment method]({{root_url}}/ui/account-and-settings/billing/#payment-methods)
-
-You may need to complete one or more of these steps to completely verify your account. You cannot skip any of the verification steps, or your account won't be completely unlocked.
+You will need to complete all of these steps to completely verify your account. You cannot skip any of the verification steps, or your account won't be completely unlocked.
 
 ### Resend the verification email
 
@@ -46,16 +37,7 @@ Two-factor authentication allows you to make your SendGrid account more secure b
 
 ## Setting up Domain Authentication
 
-Domain authentication shows email providers that SendGrid has your permission to send emails on your behalf. For more information, see [How to set up domain authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/).
-
-<call-out>
-
-If you don't have access to your domain's DNS records, you can use the **Send To A Coworker** feature. This feature allows you to enter a colleague's email address so Twilio SendGrid can send them all the information they need to complete domain authentication on your behalf. 
-
-![]({{root_url}}/img/<domain-auth-send-to-coworker>.png "Send to a coworker tab")
-
-</call-out>
 
 ## Upgrading your account
 
-Your 30 day trial starts as soon as you complete the initial sign up form, not when you complete the final verification step. After your 30 day trial period expires you will maintain the same level of account functionality, and your settings will remain intact. However, you will only be able to send up to 100 emails per day from that point onwards, unless you choose to [upgrade your account](https://app.sendgrid.com/account/billing)).
+If you opted to start with Twilio SendGrid for free, you won't be able to upgrade to a paid plan until after your first 30 days have lapsed. The 30 day time period starts as soon as you complete the initial sign up form, not when you complete the final verification step. After your 30 day period lapses you may [upgrade your account](https://app.sendgrid.com/account/billing)) by completing some verification steps.
