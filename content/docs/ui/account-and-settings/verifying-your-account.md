@@ -21,25 +21,31 @@ The time it takes to completely unlock your account can vary based on how quickl
 
 ### Unlock your Free Account
 
-In order to send email with your free Twilio SendGrid account, you must create and verify a Single Sender. Addiing a Sender Identity will help protect your sending reputation and legitimize your account in the eyes of the inbox providers for better deliverability. For more information, see [Single Sender Verification]({{root_url}}/ui/sending-email/sender-verification/).
+In order to send email with your free Twilio SendGrid account, you must create and verify a Single Sender. Adding a Sender Identity will help protect your sending reputation and legitimize your account in the eyes of the inbox providers for better deliverability. For more information, see [Single Sender Verification]({{root_url}}/ui/sending-email/sender-verification/).
 
 ### Unlock your Paid Account
 
-1.  Create a [link text]({{root_url}}/ui/sending-email/sender-verification/) Sender Identity or set up [Domain Authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/)
-1. Set up [two-factor authentication]({{root_url}}/ui/account-and-settings/two-factor-authentication/#setting-up-two-factor-authentication)
-1. Add a [payment method]({{root_url}}/ui/account-and-settings/billing/#payment-methods)
+1. Confirm your email address. If you need to resend the verification email, click **Resend account verification**. If you entered your email address incorrectly in the initial signup form, you can correct the email address and resend the verification email to the correct address. 
+1. Set up [Domain Authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/). Authenticating your domain shows email providers that Twilio SendGrid has your permission to send emails on your behalf. 
 
-You will need to complete all of these steps to completely verify your account. You cannot skip any of the verification steps, or your account won't be completely unlocked.
+<call-out>
 
-### Resend the verification email
+If you don't have access to your domain's DNS records, you can use the **Send To A Coworker** feature. This feature allows you to enter a colleague's email address so Twilio SendGrid can send them all the information they need to complete domain authentication on your behalf. 
 
-You can resend the verification to the email address you specified during the initial signup form by heading to the [verification guide](https://app.sendgrid.com/guide) and clicking "Resend in the "Confirm your Email Address" step. If you entered your email address incorrectly in the initial signup form, you can correct the email address and resend the verification email to the correct address.
+![]({{root_url}}/img/<domain-auth-send-to-coworker>.png "Send to a coworker tab")
 
-## Setting up Two-factor Authentication
+</call-out>
 
-Two-factor authentication allows you to make your SendGrid account more secure by requiring authentication beyond a simple username and password when logging in. Learn more about setting up and using [two-factor authentication]({{root_url}}/ui/account-and-settings/two-factor-authentication/#setting-up-two-factor-authentication).
+2. Set up [two-factor authentication]({{root_url}}/ui/account-and-settings/two-factor-authentication/#setting-up-two-factor-authentication). Two-factor authentication allows you to make your SendGrid account more secure by requiring authentication beyond a simple username and password when logging in.
+3. Add a [payment method]({{root_url}}/ui/account-and-settings/billing/#payment-methods). Your card will not be charged until your first bill is due. 
 
-## Setting up Domain Authentication
+You will need to complete all of these steps to completely verify your account. You cannot skip any of the verification steps, or your account won't be unlocked. 
+
+<call-out type="warning">
+
+In some instances our compliance team will need to manually verify your account information before you can start sending. In these cases your account should be unlocked within 72 hours of completing the last account verification step. 
+
+</call-out>
 
 
 ## Upgrading your account

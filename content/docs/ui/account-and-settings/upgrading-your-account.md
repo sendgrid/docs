@@ -15,34 +15,13 @@ Whether you’re a startup or a large enterprise, SendGrid has several plans tai
 
 ## Upgrade your SendGrid plan
 
-### Choose a plan
-
-*Email API*
-
-1. Decide the plan you upgrade to by comparing your current contact storage usage and email sends to the available plans [here](https://sendgrid.com/pricing).
-1. Navigate to your [**Account Details**](https://app.sendgrid.com/account/products) page, and then click on the **Your Products** tab.
-1. Under **Email API**, select **Change Plan**.
-1. Find the plan you would like to upgrade to and then click **Select**.
-1. Add your payment information in the popup window and then click **Submit**.
-
-
-*Marketing Campaigns*
-
-1. Decide the plan you upgrade to by comparing your current contact storage usage and email sends to the available plans [here](https://sendgrid.com/pricing).
-1. Navigate to your [**Account Details**](https://app.sendgrid.com/account/products) page, and then click on the **Your Products** tab.
-1. Under **Marketing Campaigns**, select **Change Plan**.
-1. Find the plan you would like to upgrade to and then click **Select**.
-1. Add your payment information in the popup window and then click **Submit**.
-
-## Upgrade Account Setup
-
 Before you can fully use your upgraded account, you need to complete some verification steps for security purposes. 
 
 *To unlock your Twilio SendGrid account:*
 
 1. Confirm your email address. If you need to resend the verification email, click **Resend account verification**. If you entered your email address incorrectly in the initial signup form, you can correct the email address and resend the verification email to the correct address.
-1. Set up [Domain Authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/) 
-Domain authentication shows email providers that Twilio SendGrid has your permission to send emails on your behalf.
+1. Set up [Domain Authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/).
+Authenticating your domain shows email providers that Twilio SendGrid has your permission to send emails on your behalf.
 
 <call-out>
 
@@ -55,6 +34,24 @@ If you don't have access to your domain's DNS records, you can use the **Send To
 3. Set up [Two-Factor Authentication]({{root_url}}/ui/account-and-settings/two-factor-authentication/)
 
 4. Add a [payment method]({{root_url}}/ui/account-and-settings/billing/#payment-methods). Your card will not be charged until your account is verified and your first bill is due. 
+
+### Choose a plan
+
+*Email API*
+
+1. Decide the plan you upgrade to by comparing your current contact storage usage and email sends to the available plans [here](https://sendgrid.com/pricing).
+1. Navigate to your [**Account Details**](https://app.sendgrid.com/account/products) page, and then click on the **Your Products** tab.
+1. Under **Email API**, select **Change Plan**.
+1. Find the plan you would like to upgrade to and then click **Select**.
+1. Add your payment information in the popup window and then click **Submit**.
+
+*Marketing Campaigns*
+
+1. Decide the plan you upgrade to by comparing your current contact storage usage and email sends to the available plans [here](https://sendgrid.com/pricing).
+1. Navigate to your [**Account Details**](https://app.sendgrid.com/account/products) page, and then click on the **Your Products** tab.
+1. Under **Marketing Campaigns**, select **Change Plan**.
+1. Find the plan you would like to upgrade to and then click **Select**.
+1. Add your payment information in the popup window and then click **Submit**.
 
 ## SendGrid Plans
 
