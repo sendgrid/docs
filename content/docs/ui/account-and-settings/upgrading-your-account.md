@@ -15,7 +15,13 @@ Whether you’re a startup or a large enterprise, SendGrid has several plans tai
 
 ## Upgrade your SendGrid plan
 
-Before you can fully use your upgraded account, you need to complete some verification steps for security purposes. 
+Before you can fully use your upgraded account, you need to complete some verification steps for security purposes.
+
+<call-out>
+
+If you signed up for a Twilio SendGrid account prior to 9/17/2020, your upgrade steps and verification process will look different from what's described below.
+
+</call-out>
 
 *To unlock your Twilio SendGrid account:*
 
