@@ -15,11 +15,11 @@ Whether you’re a startup or a large enterprise, SendGrid has several plans tai
 
 ## Upgrade your SendGrid plan
 
-Before you can fully use your upgraded account, you need to complete some verification steps for security purposes.
+Before you can upgrade account, you need to complete some verification steps for security purposes.
 
 <call-out type="warning">
 
-If you signed up for a Twilio SendGrid account prior to 9/17/2020, your upgrade steps and verification process will look different from what's described below. 
+If you signed up for a Twilio SendGrid account prior to 9/17/2020, skip to the [choose a plan](#choose-a-plan) section of this page.
 
 </call-out>
 
@@ -67,11 +67,17 @@ Take control of your sending reputation and deliverability with a dedicated IP a
 
 *Email API*
 
-1. Decide the plan you upgrade to by comparing your current contact storage usage and email sends to the available plans [here](https://sendgrid.com/pricing).
+1. Decide the plan you upgrade to by reviewing features and comparing your current email send volume to the available plans [here](https://sendgrid.com/pricing).
 1. Navigate to your [**Account Details**](https://app.sendgrid.com/account/products) page, and then click on the **Your Products** tab.
 1. Under **Email API**, select **Change Plan**.
 1. Find the plan you would like to upgrade to and then click **Select**.
 1. Add your payment information in the popup window and then click **Submit**.
+
+<call-out type="warning">
+
+You will not be able to upgrade you account until you complete the verification steps listed above. 
+
+</call-out>
 
 *Marketing Campaigns*
 
@@ -80,3 +86,9 @@ Take control of your sending reputation and deliverability with a dedicated IP a
 1. Under **Marketing Campaigns**, select **Change Plan**.
 1. Find the plan you would like to upgrade to and then click **Select**.
 1. Add your payment information in the popup window and then click **Submit**.
+
+<call-out type="warning">
+
+You will not be able to upgrade you account until you complete the verification steps listed above. 
+
+</call-out>
