@@ -35,7 +35,7 @@ If you don't have access to your domain's DNS records, you can use the **Send To
 </call-out>
 
 2. Set up [two-factor authentication]({{root_url}}/ui/account-and-settings/two-factor-authentication/#setting-up-two-factor-authentication). Two-factor authentication allows you to make your SendGrid account more secure by requiring authentication beyond a simple username and password when logging in.
-3. Add a [payment method]({{root_url}}/ui/account-and-settings/billing/#payment-methods). Your card will not be charged until your first bill is due. 
+3. Add a [payment method]({{root_url}}/ui/account-and-settings/billing/#payment-methods). Your card will not be charged at this time. 
 
 You will need to complete all of these steps to completely verify your account. You cannot skip any of the verification steps, or your account won't be unlocked. 
 

@@ -39,7 +39,7 @@ If you don't have access to your domain's DNS records, you can use the **Send To
 
 3. Set up [Two-Factor Authentication]({{root_url}}/ui/account-and-settings/two-factor-authentication/)
 
-4. Add a [payment method]({{root_url}}/ui/account-and-settings/billing/#payment-methods). Your card will not be charged until your account is verified and your first bill is due. 
+4. Add a [payment method]({{root_url}}/ui/account-and-settings/billing/#payment-methods). Your card will not be charged at this time. 
 
 ## SendGrid Plans
 
