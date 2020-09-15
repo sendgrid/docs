@@ -44,8 +44,3 @@ You will need to complete all of these steps to completely verify your account. 
 In some instances our compliance team will need to manually verify your account information before you can start sending. In these cases your account should be unlocked within 72 hours of completing the last account verification step. 
 
 </call-out>
-
-
-## Upgrading your account
-
-If you opted to start with Twilio SendGrid for free, you can upgrade whenever you want provided you complete the [account verification steps](#Unlock-your-Paid-Account). In some instances our compliance team may need to verify your account manually. In that case, your account should be unlocked within 72 hours and you'll receive an alert within the app.
