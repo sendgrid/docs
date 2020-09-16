@@ -22,6 +22,12 @@ The content on this page describes the experience in the latest version of Marke
 
 [Segments]({{root_url}}/glossary/segmentation/) are similar to contact lists, except they update dynamically over time as information stored about your contacts changes. When you segment your audience, you are able to create personalized Automation emails and Single Sends that directly address the wants and needs of your particular audience.
 
+<call-out>
+
+Marketing Campaigns supports up to 200 segments per user.
+
+</call-out>
+
 [Custom fields]({{root_url}}/ui/managing-contacts/custom-fields/), [reserved fields]({{root_url}}/glossary/reserved-fields/), and engagement data like opens and clicks, provide unique information you can use to identify contacts for different segments. As your contacts' traits change or you add more contacts that meet the criteria of your segment, your segments will update to reflect these changes. For example, a segment populated using the criteria, “lives in Denver” or, “is under 30 years old” will change as your contacts age or their addresses change.
 
 Segments can pull from _All Contacts_ or any of your more narrowly defined lists.
