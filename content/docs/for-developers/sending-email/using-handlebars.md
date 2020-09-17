@@ -85,6 +85,7 @@ Our templates support the following substitutions:
 - [Object failure](#object-failure)
 - [Replacement with HTML](#replacement-with-html)
 - [Uppercase](#uppercase)
+- [formatDate](#formatdate)
 - [Insert](#insert)
 
 #### Basic replacement
@@ -214,6 +215,134 @@ If you include the characters `'`, `"` or `&` in a subject line replacement be s
 ```html
 <!-- Resulting HTML -->
 <p>Hello <strong>BEN</strong></p>
+```
+
+</code-group>
+
+#### formatDate
+
+The formatDate helper takes a time in either epoch or ISO8601 format and converts it to a format you specify using the tokens in the following table. Example display results are for Tuesday, January 1st, 2020 3:00:00PM Pacific Standard Time.
+
+<table>
+    <tr>
+      <th>
+        Token
+      </th>
+      <th>
+        Displayed Result
+      </th>
+    </tr>
+    <tr>
+      <td>YYYYY</td>
+      <td>2020</td>
+    </tr>
+    <tr>
+      <td>YY</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>MMMM</td>
+      <td>January</td>
+    </tr>
+    <tr>
+      <td>MMM</td>
+      <td>Jan</td>
+    </tr>
+    <tr>
+      <td>MM</td>
+      <td>01</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>DD</td>
+      <td>01</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>dddd</td>
+      <td>Tuesday</td>
+    </tr>
+    <tr>
+      <td>ddd</td>
+      <td>Tue</td>
+    </tr>
+    <tr>
+      <td>hh</td>
+      <td>03</td>
+    </tr>
+    <tr>
+      <td>h</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>HH</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>H</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>mm</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>m</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>ss</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>s</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>PM</td>
+    </tr>
+    <tr>
+      <td>ZZ</td>
+      <td>-0800</td>
+    </tr>
+    <tr>
+      <td>Z</td>
+      <td>-08:00</td>
+    </tr>
+</table>
+
+<code-group langs="Handlebars, JSON, HTML">
+
+```handlebars
+<!-- Template without timezone offset -->
+<p>Join us {{formatDate timeStamp dateFormat}}</p>
+
+<!-- Template with timezone offset -->
+<p>Join us {{formatDate timeStamp dateFormat timezoneOffset}}</p>
+```
+
+```json
+// Test data
+{
+  "timeStamp": "2020-01-01T23:00:00.000Z",
+  "dateFormat": "MMMM:DD:HH:mm:ss",
+  "timezoneOffset": "-0800"
+}
+```
+
+```html
+<!-- Resulting HTML without timezone-->
+<p>Join us January 01, 2020 11:00:00PM</p>
+
+<!-- Resulting HTML with timezone-->
+<p>Join us January 01, 2020 3:00:00PM</p>
 ```
 
 </code-group>
@@ -416,9 +545,7 @@ Hello Ben!
 </p>
 
 <!-- Resulting HTML from test data two-->
-<p>
-  Hello Ben! Thanks for playing.
-</p>
+<p>Hello Ben! Thanks for playing.</p>
 ```
 
 </code-group>
@@ -508,9 +635,7 @@ Hello Ben!
 </p>
 
 <!-- Resulting HTML from test data two-->
-<p>
-  Hello Ben! Thanks for playing.
-</p>
+<p>Hello Ben! Thanks for playing.</p>
 ```
 
 </code-group>
@@ -565,7 +690,13 @@ Hello Ben!
 
 The `equals` comparison can check for equality between two values of the same data type. The `equals` helper will also attempt to coerce data types to make a comparison of values independent of their data type. For example, `{{#equals 3 "3"}}` will evaluate to `true`.
 
-When checking for truthiness, be aware that empty strings, zero integers, and zero floating poing numbers evaluate to `false`. Non-empty strings, non-zero integers, and non-zero floating point numbers, including negative numbers, evaluate to `true`.
+<call-out type="warning">
+
+Please be aware that the editor's Preview page will not properly render the results of a comparison between coerced values. You will see proper comparisons between coerced values only in a delivered message.
+
+</call-out>
+
+When checking for truthiness, be aware that empty strings, zero integers, and zero floating point numbers evaluate to `false`. Non-empty strings, non-zero integers, and non-zero floating point numbers, including negative numbers, evaluate to `true`.
 
 ##### Basic equals
 
@@ -598,14 +729,10 @@ Hello Ben!
 
 ```html
 <!-- Resulting HTML from test data one-->
-<p>
-  Hello Ben! You have a winning code. Thanks for playing.
-</p>
+<p>Hello Ben! You have a winning code. Thanks for playing.</p>
 
 <!-- Resulting HTML from test data two-->
-<p>
-  Hello Ben! Thanks for playing.
-</p>
+<p>Hello Ben! Thanks for playing.</p>
 ```
 
 </code-group>
@@ -643,14 +770,10 @@ Hello Ben!
 
 ```html
 <!-- Resulting HTML from test data one-->
-<p>
-  Hello Ben! You have a winning code. Thanks for playing.
-</p>
+<p>Hello Ben! You have a winning code. Thanks for playing.</p>
 
 <!-- Resulting HTML from test data two-->
-<p>
-  Hello Ben! You do not have a winning code. Thanks for playing.
-</p>
+<p>Hello Ben! You do not have a winning code. Thanks for playing.</p>
 ```
 
 </code-group>
@@ -659,7 +782,7 @@ Hello Ben!
 
 The `notEquals` comparison can check for equality between two values of the same data type. The `notEquals` helper will also attempt to coerce data types to make a comparison of values independent of their data type. For example, {{#equals 3 "3"}} will return `false`.
 
-When checking for truthiness, be aware that empty strings, zero integers, and zero floating poing numbers evaluate to `false`. Non-empty strings, non-zero integers, and non-zero floating point numbers, including negative numbers, evaluate to `true`.
+When checking for truthiness, be aware that empty strings, zero integers, and zero floating point numbers evaluate to `false`. Non-empty strings, non-zero integers, and non-zero floating point numbers, including negative numbers, evaluate to `true`.
 
 ##### Basic notEquals
 
@@ -692,14 +815,10 @@ Hello Ben!
 
 ```html
 <!-- Resulting HTML from test data one-->
-<p>
-  Hello Ben! You have a winning code. Thanks for playing.
-</p>
+<p>Hello Ben! You have a winning code. Thanks for playing.</p>
 
 <!-- Resulting HTML from test data two-->
-<p>
-  Hello Ben! Thanks for playing.
-</p>
+<p>Hello Ben! Thanks for playing.</p>
 ```
 
 </code-group>
@@ -737,21 +856,17 @@ Hello Ben!
 
 ```html
 <!-- Resulting HTML from test data one-->
-<p>
-  Hello Ben! You have a winning code. Thanks for playing.
-</p>
+<p>Hello Ben! You have a winning code. Thanks for playing.</p>
 
 <!-- Resulting HTML from test data two-->
-<p>
-  Hello Ben! You do not have a winning code. Thanks for playing.
-</p>
+<p>Hello Ben! You do not have a winning code. Thanks for playing.</p>
 ```
 
 </code-group>
 
 #### And
 
-When checking for truthiness, be aware that empty strings, zero integers, and zero floating poing numbers evaluate to `false`. Non-empty strings, non-zero integers, and non-zero floating point numbers, including negative numbers, evaluate to `true`.
+When checking for truthiness, be aware that empty strings, zero integers, and zero floating point numbers evaluate to `false`. Non-empty strings, non-zero integers, and non-zero floating point numbers, including negative numbers, evaluate to `true`.
 
 ##### And without else
 
@@ -843,7 +958,7 @@ Hello Ben!
 
 #### Or
 
-When checking for truthiness, be aware that empty strings, zero integers, and zero floating poing numbers evaluate to `false`. Non-empty strings, non-zero integers, and non-zero floating point numbers, including negative numbers, evaluate to `true`.
+When checking for truthiness, be aware that empty strings, zero integers, and zero floating point numbers evaluate to `false`. Non-empty strings, non-zero integers, and non-zero floating point numbers, including negative numbers, evaluate to `true`.
 
 ##### Basic or
 
@@ -887,9 +1002,7 @@ Hello Ben!
 </p>
 
 <!-- Resulting HTML from test data two -->
-<p>
-  Hi Ben! Have a great day.
-</p>
+<p>Hi Ben! Have a great day.</p>
 
 <!-- Resulting HTML from test data three -->
 <p>
@@ -996,9 +1109,7 @@ Hello Ben!
 </p>
 
 <!-- Resulting HTML with test data two-->
-<p>
-  Hello Ben! Thanks for browsing our site. We hope you'll come back soon.
-</p>
+<p>Hello Ben! Thanks for browsing our site. We hope you'll come back soon.</p>
 ```
 
 </code-group>
