@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-Whether you’re a startup or a large enterprise, SendGrid has several plans tailored to meet your email needs. 
+Whether you’re a startup or a large enterprise, SendGrid has several plans tailored to meet your email needs.
 
 ## Upgrade your SendGrid plan
 
@@ -23,23 +23,23 @@ If you signed up for a Twilio SendGrid account prior to 9/17/2020, skip to the [
 
 </call-out>
 
-*To unlock your Twilio SendGrid account:*
+_To unlock your Twilio SendGrid account:_
 
 1. Confirm your email address. If you need to resend the verification email, click **Resend account verification**. If you entered your email address incorrectly in the initial signup form, you can correct the email address and resend the verification email to the correct address.
 1. Set up [Domain Authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/).
-Authenticating your domain shows email providers that Twilio SendGrid has your permission to send emails on your behalf.
+   Authenticating your domain shows email providers that Twilio SendGrid has your permission to send emails on your behalf.
 
 <call-out>
 
-If you don't have access to your domain's DNS records, you can use the **Send To A Coworker** feature. This feature allows you to enter a colleague's email address so Twilio SendGrid can send them all the information they need to complete domain authentication on your behalf. 
+If you don't have access to your domain's DNS records, you can use the **Send To A Coworker** feature. This feature allows you to enter a colleague's email address so Twilio SendGrid can send them all the information they need to complete domain authentication on your behalf.
 
-![]({{root_url}}/img/<domain-auth-send-to-coworker>.png "Send to a coworker tab")
+![Send to a coworker tab]({{root_url}}/img/domain-auth-send-to-coworker.png 'Send to a coworker tab')
 
 </call-out>
 
 3. Set up [Two-Factor Authentication]({{root_url}}/ui/account-and-settings/two-factor-authentication/)
 
-4. Add a [payment method]({{root_url}}/ui/account-and-settings/billing/#payment-methods). Your card will not be charged at this time. 
+4. Add a [payment method]({{root_url}}/ui/account-and-settings/billing/#payment-methods). Your card will not be charged at this time.
 
 ## SendGrid Plans
 
@@ -49,7 +49,7 @@ If you’d like to speak with a representative about which plan is right for you
 
 ### Email API Free Plan
 
-* 100 emails per day.
+- 100 emails per day.
 
 ### Marketing Campaigns Free Plan
 
@@ -65,7 +65,7 @@ Take control of your sending reputation and deliverability with a dedicated IP a
 
 ### Choose a plan
 
-*Email API*
+_Email API_
 
 1. Decide the plan you upgrade to by reviewing features and comparing your current email send volume to the available plans [here](https://sendgrid.com/pricing).
 1. Navigate to your [**Account Details**](https://app.sendgrid.com/account/products) page, and then click on the **Your Products** tab.
@@ -75,11 +75,11 @@ Take control of your sending reputation and deliverability with a dedicated IP a
 
 <call-out type="warning">
 
-You will not be able to upgrade you account until you complete the verification steps listed above. 
+You will not be able to upgrade you account until you complete the verification steps listed above.
 
 </call-out>
 
-*Marketing Campaigns*
+_Marketing Campaigns_
 
 1. Decide the plan you upgrade to by comparing your current contact storage usage and email sends to the available plans [here](https://sendgrid.com/pricing).
 1. Navigate to your [**Account Details**](https://app.sendgrid.com/account/products) page, and then click on the **Your Products** tab.
@@ -89,6 +89,6 @@ You will not be able to upgrade you account until you complete the verification 
 
 <call-out type="warning">
 
-You will not be able to upgrade you account until you complete the verification steps listed above. 
+You will not be able to upgrade you account until you complete the verification steps listed above.
 
 </call-out>
