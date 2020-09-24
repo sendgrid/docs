@@ -170,7 +170,14 @@ const msg = {
   html: '<strong>and easy to do anywhere, even with Node.js</strong>',
 }
 
-sgMail.send(msg)
+sgMail
+  .send(msg)
+  .then(() => {
+    console.log('Email sent')
+  })
+  .catch((error) => {
+    console.error(error)
+  })
 ```
 
 ### Build your API call
@@ -210,10 +217,17 @@ const msg = {
 }
 ```
 
-To send the message, pass the `msg` object as an argument to the helper library's `send()` method.
+To send the message, pass the `msg` object as an argument to the helper library's `send()` method. You can also add `then()` and `catch()` methods to log a success message or catch and log any errors.
 
 ```javascript
-sgMail.send(msg)
+sgMail
+  .send(msg)
+  .then(() => {
+    console.log('Message sent')
+  })
+  .catch((error) => {
+    console.error(error)
+  })
 ```
 
 The code block is now complete. To send the message, you can run the `index.js` file with Node.js.
@@ -222,7 +236,7 @@ The code block is now complete. To send the message, you can run the `index.js` 
 node index.js
 ```
 
-If you receive no output printed to the console, your message was sent successfully. Check the inbox of the `“to”` address, and you should see your demo message.
+If you receive the output "Message sent" printed to the console, your message was sent successfully. Check the inbox of the `“to”` address, and you should see your demo message.
 
 If you don’t see the email, you may need to check your spam folder.
 
