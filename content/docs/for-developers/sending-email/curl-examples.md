@@ -43,7 +43,7 @@ curl --request POST \
   --data '{"personalizations": [{"to": [{"email": "recipient@example.com"}]}],"from": {"email": "sendeexampexample@example.com"},"subject":"Hello, World!","content": [{"type": "text/plain","value": "Heya!"}], "template_id" : "YOUR_TEMPLATE_ID"}'
 ```
 
-## 	Sending a Basic Email With Attachment
+## 	Sending a Basic Email with Attachment
 
 ```bash
 curl --request POST \
