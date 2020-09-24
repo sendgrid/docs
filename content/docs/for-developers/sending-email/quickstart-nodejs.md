@@ -223,7 +223,7 @@ To send the message, pass the `msg` object as an argument to the helper library'
 sgMail
   .send(msg)
   .then(() => {
-    console.log('Message sent')
+    console.log('Email sent')
   })
   .catch((error) => {
     console.error(error)
