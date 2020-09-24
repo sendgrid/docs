@@ -43,6 +43,16 @@ curl --request POST \
   --data '{"personalizations": [{"to": [{"email": "recipient@example.com"}]}],"from": {"email": "sendeexampexample@example.com"},"subject":"Hello, World!","content": [{"type": "text/plain","value": "Heya!"}], "template_id" : "YOUR_TEMPLATE_ID"}'
 ```
 
+## 	Sending a Basic Email With Attachment
+
+```bash
+curl --request POST \
+  --url https://api.sendgrid.com/v3/mail/send \
+  --header 'authorization: Bearer YOUR_API_KEY' \
+  --header 'Content-Type: application/json' \
+  --data '{"personalizations": [{"to": [{"email": "recipient@example.com"}]}],"from": {"email": "sender@example.com"},"subject":"Hello, World!","content": [{"type": "text/html","value": "Hey,<br>Please find attachment."}], "attachments": [{"content": "BASE64_ENCODED_CONTENT", "type": "text/plain", "filename": "attachment.txt"}]}'
+```
+
 ## 	Sending a Basic Email at a Scheduled Time
 
 ```bash
