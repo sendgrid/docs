@@ -163,8 +163,8 @@ const sgMail = require('@sendgrid/mail')
 sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 
 const msg = {
-  to: 'test@example.com',
-  from: 'test@example.com',
+  to: 'test@example.com', // Change to your recipient
+  from: 'test@example.com', // Change to your verified sender
   subject: 'Sending with SendGrid is Fun',
   text: 'and easy to do anywhere, even with Node.js',
   html: '<strong>and easy to do anywhere, even with Node.js</strong>',
@@ -209,8 +209,8 @@ The `"subject"` can be any text. The email body can be either plain text or HTML
 
 ```javascript
 const msg = {
-  to: 'test@example.com',
-  from: 'test@example.com',
+  to: 'test@example.com', // Change to your recipient
+  from: 'test@example.com', // Change to your verified sender
   subject: 'Sending with SendGrid is Fun',
   text: 'and easy to do anywhere, even with Node.js',
   html: '<strong>and easy to do anywhere, even with Node.js</strong>',
