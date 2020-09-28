@@ -106,6 +106,72 @@ Once you have completed and saved all changes to Exim's configuration files, you
 $ /etc/init.d/exim4 restart
 ```
 
+### Commandline/manual configurations 
+These are taken from a system running cPanel 88.0.17 on RedHat or CentOS 7 or later.
+
+Edit the file **/etc/exim.conf.local** in **3 (three)** sections as follows:
+
+First edit:
+
+```bash
+@AUTH@
+auth_login:
+ driver = plaintext
+ public_name = LOGIN
+ client_send = : username : hunter2
+```
+
+<call-out>
+
+If you use a much more secure password than the infamous **hunter2**, then you may have special characters (AKA: non-alpha-numeric) in use.  Note taht if your password has a **$**, you will need to escape it (using a **\\** character).  This is an example if your password is **1234$Luggage**
+
+</call-out>
+
+```bash
+ client_send = : username : 1234\$Luggage
+```
+
+Second edit:
+
+```bash
+@PREROUTERS@
+send_via_sendgrid:
+ driver = manualroute
+ domains = ! +local_domains
+ transport = auth_relay
+ route_list = * smtp.sendgrid.net
+ host_find_failed = defer
+```
+
+Third edit:
+
+```bash
+@TRANSPORTSTART@
+auth_relay:
+ driver = smtp
+ hosts = smtp.sendgrid.net
+ port = 587
+ hosts_require_auth = smtp.sendgrid.net
+ hosts_require_tls = smtp.sendgrid.net
+```
+
+Next, edit the file **/etc/exim.conf.localopts** to change the following line as follows:
+```bash
+smarthost_routelist=*: smtp.sendgrid.net
+```
+
+Next, rebuild your exim configuration:
+```bash
+$ /scripts/buildeximconf
+```
+
+Finally, restart exim:
+```bash
+$ systemctl restart exim
+```
+
+Send a test message from the server and then check the file **/var/log/exim_mainlog** for any issues.
+
 ## 	Exim Documentation
 
 If your version of Exim does not match the version above or you are not finding the answer you need, please check out the Official [Exim Documentation](http://www.exim.org/docs.html) for more information.
