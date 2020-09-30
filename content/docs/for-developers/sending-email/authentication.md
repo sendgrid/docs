@@ -11,7 +11,7 @@ navigation:
  show: true
 ---
 
-SendGrid supports both Bearer and Basic authentication, depending on the SendGrid functionality you are using. In addition to Bearer API key authentication, SendGrid offers two-factor authentication (2FA) to improve security.
+SendGrid supports both Bearer and Basic authentication, depending on the SendGrid functionality you are using. In addition to Bearer API key authentication, SendGrid recommends two-factor authentication (2FA) to improve security.
 
 ## API key (recommended)
 
@@ -42,6 +42,12 @@ curl -X "GET" "https://api.sendgrid.com/v3/templates" -H "Authorization: Bearer 
 
 SendGrid does not recommend using your account username and password to authenticate with our APIs because it is inherently less secure than using an API Key to authenticate. Additionally, using your account password via Basic auth does not allow the usage of Two-Factor Authentication.
 
+<call-out type="warning">
+
+To ensure the security of your account, Twilio SendGrid will be phasing out the use of basic authentication with username and password in Q4 2020. We recommend using [API Keys]({{root_url}}/ui/account-and-settings/api-keys/) to secure your account. 
+
+</call-out>
+
 <call-out>
 
 Our legacy v2 API supports Basic authentication only. When using the v2 Mail Send API, you may use an API key as the _password_ value when authenticating via Basic authentication, which is recommended.
@@ -64,6 +70,15 @@ Enabling two-factor authentication (2FA) will allow Twilio SendGrid to deliver c
 
 SendGrid recommends enabling two-factor authentication (2FA) for all users. For more information about setting up 2FA, see [Two-factor authentication]({{root_url}}/ui/account-and-settings/two-factor-authentication/).
 
+<call-out>
+
+To ensure the security of your account, Twilio SendGrid will be requiring customers to enable [Two-factor authentication]({{root_url}}/ui/account-and-settings/two-factor-authentication/) in phases starting in Q4 2020. 
+
+</call-out>
+
+
 <call-out type="warning">
 
 It is not possible to use basic authentication for users, subusers, or teammates that enable 2FA.
+
+</call-out>
