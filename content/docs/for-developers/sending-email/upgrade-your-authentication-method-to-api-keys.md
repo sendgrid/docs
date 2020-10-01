@@ -36,17 +36,22 @@ Test these changes in a staging environment before rolling out to your productio
 Follow these steps to identify and replace your authentication method to API Keys and then implement 2FA for enhanced security.
 
 1. Identify where you are storing your username and password credentials for basic authentication. Your credentials could be stored in environment variables or hard coded depending on how you integrated. 
-1. Generate API Keys in the SendGrid UI or programmatically with the least privileged permissions required for each of the endpoints you will be updating.
+1. Generate API Keys in the SendGrid UI or programmatically with the least privileged permissions required for each of the endpoints you will be updating. For more information, see [API Key Permissions]({{root_url}}/ui/account-and-settings/api-keys/#api-key-permissions). 
 1. Replace your username and password credentials with API Keys.
 * For v3 API: Follow these instructions.
 * For v2: Follow these instructions.
-Once the previous steps are completed, enable Two-Factor Authentication for all of your users, including [subusers]({{root_url}}/ui/account-and-settings/subusers/) and [teammates]({{root_url}}/ui/account-and-settings/teammates/)teammates.
+Once the previous steps are completed, enable Two-Factor Authentication for all of your users, including [subusers]({{root_url}}/ui/account-and-settings/subusers/) and [teammates]({{root_url}}/ui/account-and-settings/teammates/).
 
 ## Upgrade to API Keys for your SMTP integration 
-Follow these instructions
-Once the previous step is completed, enable Two-Factor Authentication for all of your users, including subusers and teammates.
+
+1. Generate API Keys in the SendGrid UI or programmatically with the least privileged permissions required for each of the endpoints you will be updating. For more information, see [API Key Permissions]({{root_url}}/ui/account-and-settings/api-keys/#api-key-permissions). 
+1. Convert your API key to Base64. It is not secure to put your API key into an external webpage for a conversion, so we recommend using a bash conversion. If you are on Mac or Linux, you can use the pre-installed OpenSSL package. Use this cmd to convert your API key using OpenSSL: echo -n '<<YOUR_API_KEY>>' | openssl base64.
+1. Replace your username and password credentials with the newly-converted API key. You will want to use a converted version of your username for SMTP integration as well. Everyone's username is `apikey` which is `YXBpa2V5` in Base64.
+
+Once the previous steps are completed, enable Two-Factor Authentication for all of your users, including [subusers]({{root_url}}/ui/account-and-settings/subusers/) and [teammates]({{root_url}}/ui/account-and-settings/teammates/).
 
 ## Check for API rejections
+
 After enabling 2FA monitor your API calls for rejections related to continued use of username and password authentication. 
 
 ### Error message for API calls:
