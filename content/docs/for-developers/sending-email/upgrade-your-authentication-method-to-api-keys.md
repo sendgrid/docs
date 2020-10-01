@@ -1,0 +1,61 @@
+---
+seo:
+ title: Upgrade your authentication method to API keys 
+ description: How to upgrade your authentication methods in your code to use API keys
+ keywords: Authentication, authorization, API key
+title: Upgrade your authentication method to API keys 
+group: sending-email
+weight: 0
+layout: page
+navigation:
+ show: true
+---
+
+<call-out type="warning">
+
+Authentication with username and password will no longer be accepted for any Twilio SendGrid endpoints, and Two-Factor Authentication will be required before 2021.
+
+</call-out>
+
+## How do I know if I’m using Basic Authentication with Username and Password?
+
+Premier 50M and below customers can use the [Email Activity API](https://sendgrid.api-docs.io/v3.0/email-activity/) to identify mail/send API Key usage. If the `api_key_id` parameter is empty, you will need to upgrade your authentication.
+
+## Why should I use API Keys for authentication?
+
+Using your account username and password for authentication is less secure than using an API Key. API Keys are preferred because you can limit permissions for API Keys and revoke them at any time. We recommend applying the principle of least privilege, using limited API Key permission to only provide access to what is needed for that request for maximum security (Twilio blog post, Third party article.)
+
+## Tips for upgrading to API Keys
+
+Prioritize upgrading your authentication method to API Keys for your mail/send endpoints first
+Store your API Keys in an environment variable
+Test these changes in a staging environment before rolling out to your production database
+
+## Upgrade to API Keys for your API endpoint requests
+
+Follow these steps to identify and replace your authentication method to API Keys and then implement 2FA for enhanced security.
+
+1. Identify where you are storing your username and password credentials for basic authentication. Your credentials could be stored in environment variables or hard coded depending on how you integrated. 
+1. Generate API Keys in the SendGrid UI or programmatically with the least privileged permissions required for each of the endpoints you will be updating.
+1. Replace your username and password credentials with API Keys.
+* For v3 API: Follow these instructions.
+* For v2: Follow these instructions.
+Once the previous steps are completed, enable Two-Factor Authentication for all of your users, including [subusers]({{root_url}}/ui/account-and-settings/subusers/) and [teammates]({{root_url}}/ui/account-and-settings/teammates/)teammates.
+
+## Upgrade to API Keys for your SMTP integration 
+Follow these instructions
+Once the previous step is completed, enable Two-Factor Authentication for all of your users, including subusers and teammates.
+
+## Check for API rejections
+After enabling 2FA monitor your API calls for rejections related to continued use of username and password authentication. 
+
+### Error message for API calls:
+
+`invalid authentication method` - declined because you are using basic authentication with 2FA enabled. to fix, update to using an API key or disable 2FA and switch to using IP Access Management for security. for more information, see https://sendgrid.com/docs/for-developers/sending-email/authentication/#basic-authentication  
+
+### Error message for SMTP:
+
+SMTP error message is: `535 Authentication failed: Basic authentication is not allowed with 2FA enabled`. To fix, see https://sendgrid.com/docs/for-developers/sending-email/authentication/#basic-authentication 
+
+For more information on how to secure your Twilio SendGrid account visit this [blog post](https://sendgrid.com/blog/7-best-practices-to-protect-your-twilo-sendgrid-account-and-sending-reputation/). 
+
