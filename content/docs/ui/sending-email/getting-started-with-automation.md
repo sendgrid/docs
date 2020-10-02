@@ -55,7 +55,7 @@ _To create a Custom Automation:_
 1. Navigate to **Automations** and then click **Create an Automation**.
 1. Under Custom, click **Select**.
 1. Give the series a name. This is for your reference and will not be visible to your contacts.
-1. Select the entry criteria. You can choose from "The first time a [contact is added to a list]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/#add-contacts) or "The first time a contact is added to a [segment]({{root_url}}/managing-contacts/segmenting-your-contacts/)".
+1. Select the entry criteria. You can choose from "The first time a [contact is added to a list]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/#add-contacts) or "The first time a contact is added to a [segment]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/)".
 
 <call-out>
 
