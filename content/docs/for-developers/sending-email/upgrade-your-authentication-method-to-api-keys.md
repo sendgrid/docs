@@ -13,11 +13,11 @@ navigation:
 
 <call-out type="warning">
 
-Authenticating your API request with Basic Authentication including your username and password will no longer be accepted for any Twilio SendGrid endpoints, and Two-Factor Authentication will be required before 2021 If you enable Two-Factor Authentication while using Basic Authentication with username and password on the same user before the requirement is enforced your API requests using that authentication will be rejected.
+Two-Factor Authentication will be required, and all Twilio SendGrid API endpoints will begin rejecting API requests made with a username and password via Basic Authentication before 2021. If a user enables Two-Factor Authentication before the requirement is enforced, all Twilio SendGrid endpoints will also reject requests made with their username and password via Basic Authentication.
 
 </call-out>
 
-## Am I Basic Authentication with Username and Password?
+## Am I Using Basic Authentication with Username and Password?
 
 * If SMTP: Check the username you're using to authenticate. If it's the word "apikey" then you're using an API Key. If it's not, then you're using username and password authentication.
 * If V3: If you're using the most recent version of our open sourced libraries and followed the documentation, you should already be using API keys. If you aren't using our libraries, check the Authorization header on your API calls. If you see the word "Bearer" - you're good. If you see the word "Basic" you're using username and password.
@@ -26,13 +26,15 @@ Authenticating your API request with Basic Authentication including your usernam
 
 ## Why should I use API Keys for authentication?
 
-Using your account username and password for authentication is less secure than using an API Key. API Keys are preferred because you can limit permissions for API Keys and revoke them at any time. We recommend applying the principle of least privilege, using limited API Key permission to only provide access to what is needed for that request for maximum security ([SendGrid blog post](https://sendgrid.com/blog/7-best-practices-to-protect-your-twilo-sendgrid-account-and-sending-reputation/), [Twilio blog post](https://www.twilio.com/blog/principle-of-least-privilege-details-best-practices), [Third party article[(https://owasp.org/www-community/Access_Control).)
+Using your account username and password for authentication is less secure than using an API Key. API Keys are preferred because you can limit permissions for API Keys and revoke them at any time. We recommend applying the principle of least privilege, using limited API Key permission to only provide access to what is needed for that request for maximum security.
+
+For more about protecting your account, see our blog post, [7 Best Practices to Protect your Twilio SendGrid Account and Sending Reputation](https://sendgrid.com/blog/7-best-practices-to-protect-your-twilo-sendgrid-account-and-sending-reputation/). To learn more about the principle of least privelege, see our [Twilio blog post](https://www.twilio.com/blog/principle-of-least-privilege-details-best-practices) and [OWASP's article on Access Control](https://owasp.org/www-community/Access_Control).
 
 ## Tips for upgrading to API Keys
 
 * Prioritize upgrading your authentication method to API Keys for your mail/send endpoints first
-* Store your API Keys in an environment variable
-* Test these changes in a staging environment before rolling out to your production database
+* Store your API Keys in an [environment variable]({{root_url}}/ui/account-and-settings/api-keys/#storing-an-api-key-in-an-environment-variable)
+* Test these changes in a staging environment before rolling out to your production environment
 
 ## Upgrade to API Keys for your API endpoint requests
 
