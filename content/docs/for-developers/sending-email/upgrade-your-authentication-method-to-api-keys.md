@@ -13,23 +13,26 @@ navigation:
 
 <call-out type="warning">
 
-Authentication with username and password will no longer be accepted for any Twilio SendGrid endpoints, and Two-Factor Authentication will be required before 2021.
+Authenticating your API request with Basic Authentication including your username and password will no longer be accepted for any Twilio SendGrid endpoints, and Two-Factor Authentication will be required before 2021 If you enable Two-Factor Authentication while using Basic Authentication with username and password on the same user before the requirement is enforced your API requests using that authentication will be rejected.
 
 </call-out>
 
-## How do I know if I’m using Basic Authentication with Username and Password?
+## Am I Basic Authentication with Username and Password?
 
-Premier 50M and below customers can use the [Email Activity API](https://sendgrid.api-docs.io/v3.0/email-activity/) to identify mail/send API Key usage. If the `api_key_id` parameter is empty, you will need to upgrade your authentication.
+* If SMTP: Check the username you're using to authenticate. If it's the word "apikey" then you're using an API Key. If it's not, then you're using username and password authentication.
+* If V3: If you're using the most recent version of our open sourced libraries and followed the documentation, you should already be using API keys. If you aren't using our libraries, check the Authorization header on your API calls. If you see the word "Bearer" - you're good. If you see the word "Basic" you're using username and password.
+* If V2 non-mail send: You're using username and passwords.
+* If Premier 50M and below package: Use the [Email Activity API](https://sendgrid.api-docs.io/v3.0/email-activity/) to identify mail/send API Key usage. If the `api_key_id` parameter is empty, you will need to upgrade your authentication.
 
 ## Why should I use API Keys for authentication?
 
-Using your account username and password for authentication is less secure than using an API Key. API Keys are preferred because you can limit permissions for API Keys and revoke them at any time. We recommend applying the principle of least privilege, using limited API Key permission to only provide access to what is needed for that request for maximum security (Twilio blog post, Third party article.)
+Using your account username and password for authentication is less secure than using an API Key. API Keys are preferred because you can limit permissions for API Keys and revoke them at any time. We recommend applying the principle of least privilege, using limited API Key permission to only provide access to what is needed for that request for maximum security ([SendGrid blog post](https://sendgrid.com/blog/7-best-practices-to-protect-your-twilo-sendgrid-account-and-sending-reputation/), [Twilio blog post](https://www.twilio.com/blog/principle-of-least-privilege-details-best-practices), [Third party article[(https://owasp.org/www-community/Access_Control).)
 
 ## Tips for upgrading to API Keys
 
-Prioritize upgrading your authentication method to API Keys for your mail/send endpoints first
-Store your API Keys in an environment variable
-Test these changes in a staging environment before rolling out to your production database
+* Prioritize upgrading your authentication method to API Keys for your mail/send endpoints first
+* Store your API Keys in an environment variable
+* Test these changes in a staging environment before rolling out to your production database
 
 ## Upgrade to API Keys for your API endpoint requests
 
@@ -40,7 +43,6 @@ Follow these steps to identify and replace your authentication method to API Key
 1. Replace your username and password credentials with API Keys.
 * For v3 API: Follow [these instructions](https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-authentication).
 * For v2: Follow [these instructions](https://www.twilio.com/docs/sendgrid/api/v2/using_the_web_api#authentication).
-Once the previous steps are completed, enable Two-Factor Authentication for all of your users, including [subusers]({{root_url}}/ui/account-and-settings/subusers/) and [teammates]({{root_url}}/ui/account-and-settings/teammates/).
 
 ## Upgrade to API Keys for your SMTP integration 
 
