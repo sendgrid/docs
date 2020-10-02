@@ -44,9 +44,9 @@ The last part of the expression is a value. The value is compared to the field u
 
 You can build precisely targeted segments by using multiple conditions to filter your contacts. The previous example is among the simplest segments possible using Marketing Campaigns.
 
-## Creating a segment with the SendGrid App
+## Creating a segment with Marketing Campaigns
 
-To create a segment, login to the Twilio SendGrid App, and complete the following steps.
+To create a segment, login to the Twilio SendGrid App and complete the following steps.
 
 1. Navigate to [**Marketing** and then select **Contacts**](https://mc.sendgrid.com/contacts).
 2. Click on the **Create** dropdown button, and then the **New Segment** option.
@@ -78,7 +78,9 @@ Segments can have one Email Activity, Single Send, or Automation condition field
 
 10. Once you are finished adding conditions, click **Save Segment**.
 
-![The contacts menu inside the SendGrid App, displaying a new segment with a City condition set to "Denver" and a State, Province, Region condition set to "Colorado".]({{root_url}}/img/create_new_segment_two_fields.png 'Create a new segment with two fields')
+![The segment builder inside Marketing Campaigns, displaying a new segment with a City condition set to "Denver" and a State, Province, Region condition set to "Colorado".]({{root_url}}/img/create_new_segment_two_fields.png 'Create a new segment with two fields')
+
+Once your segment is processed, you will see a count of all contacts who meet your segment conditions, as well as a sample of these 50 contacts. To see all contacts included in your segment, click "Export CSV" to download a complete file. 
 
 <call-out type="warning">
 
@@ -88,7 +90,7 @@ Segments built using engagement data such as "was sent" or "clicked" will take a
 
 ## Segmentation fields and types
 
-The following tables list the available default fields and the fields' data types. Your account will also include any Custom Fields you add. The operators available for each type are included in the [section following these field tables](#operators-available-for-contact-profile-and-custom-fields).
+The following tables list the available reserved fields and the fields' data types. Reserved fields are present in your account by default. Your account will also include any Custom Fields you add. The operators available for each type are included in the [section following these field tables](#operators-available-for-contact-profile-and-custom-fields).
 
 ### Contact Profile fields
 
@@ -477,7 +479,7 @@ When using more than one condition to segment your contacts, you can select `AND
 
 <call-out type="warning">
 
-At this time only one Email Activity, Single Send, or Automation condition may exist within a segment if combined using `AND`. Segments that combine more than one engagement activity condition using `AND` will not return any contacts.
+At this time only one Email Activity, Single Send, or Automation condition may exist within a segment if combined using `AND`. Segments can combine more than one engagement activity condition using `OR.`
 
 </call-out>
 
