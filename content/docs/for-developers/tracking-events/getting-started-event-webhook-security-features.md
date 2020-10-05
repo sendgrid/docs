@@ -96,7 +96,7 @@ When verifying the signature, be aware that we deliver a payload that must be us
 s := http.Request.Header.Get("X-Twilio-Email-Event-Webhook-Signature")
 ```
 
-2. Get the timestamp from the "`"X-Twilio-Email-Event-Webhook-Signature"` HTTP header.
+2. Get the timestamp from the "`"X-Twilio-Email-Event-Webhook-Timestamp"` HTTP header.
 
 ```go
 // Golang Example
