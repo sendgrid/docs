@@ -744,6 +744,21 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
     <td></td>
     <td></td>
   </tr>
+  </tr>
+    <tr>
+    <td><a href="#type">type</a></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>X</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
 </table>
 
 \* In the case of a delayed or asynchronous bounce, the message ID will be unavailable.
