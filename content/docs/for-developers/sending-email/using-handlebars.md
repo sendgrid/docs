@@ -13,7 +13,7 @@ seo:
 
 Twilio SendGrid [Dynamic Transactional Templates]({{root_url}}/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/) and [Marketing Campaigns designs]({{root_url}}/ui/sending-email/working-with-marketing-campaigns-email-designs/) support the [Handlebars](https://handlebarsjs.com/) templating language to render dynamic data.
 
-Dynamic data allows you to personalize the messages in your templates by inserting customers' names, addresses, and other data to make an email relevant to each individual recipient. For example, if you have a customer's name stored in a JSON property called `"name"`, you can insert the property's value into a template by adding `{{ name }}` wherever you want the customer's name to appear.
+Dynamic data allows you to personalize the messages in your templates by inserting customers' names and other data to make an email relevant to each individual recipient. For example, if you have a customer's name stored in a JSON property called `"name"`, you can insert the property's value into a template by adding `{{ name }}` wherever you want the customer's name to appear.
 
 Handlebars syntax allows all of this dynamic templating to occur outside of your code base, meaning changes are done quickly in the template with no update to a code base required.
 
