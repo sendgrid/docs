@@ -13,19 +13,19 @@ seo:
 
 <iframe src="https://player.vimeo.com/video/388548001" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
-This page is focused on the "Build" tag of the editor.
-
-The new Marketing Campaigns experience is all about supporting your unique workflow, so you can get your work done more efficiently. You have complete control over the way that you create and edit each new email, thanks to 2 distinct editing experiences.
+The Twilio SendGrid email design experience is all about supporting your unique workflow, so you can get things done more efficiently. You have complete control over the way that you create and edit each new email, thanks to 2 distinct editing experiences.
 
 ## Choosing The Right Editor
 
 The [**Code Editor**](#the-code-editor) is perfect for users who are importing, creating, or editing custom HTML. It offers a robust environment to upload images, backed by a feature-packed editor – complete with split-screen preview, error flagging, scroll-syncing, syntax highlighting, and more. While other email editors may be notorious for adding excess code to your project, rest assured that our editor never modifies your carefully crafted HTML.
 
-The [**Design Editor**](#the-design-editor), complete with HTML access to each content module, offers powerful “what you see is what you get” (WYSIWYG) editing. It features a diverse library of content blocks, allowing you to build beautiful emails quickly and intuitively. Once placed into your email, each module offers access to edit the HTML and a robust panel of settings – perfect for customizing content precisely to your needs.
+The [**Design Editor**](#the-design-editor), complete with HTML access to each content module, offers powerful _what you see is what you get_ (WYSIWYG) editing. It features a diverse library of content blocks, allowing you to build beautiful emails quickly and intuitively. Once placed into your email, each module offers access to edit the HTML and a robust panel of settings–perfect for customizing content precisely to your needs.
+
+Both editors support dynamic data using [Handlebars]({{root_url}}/for-developers/sending-email/using-handlebars/) syntax. Dynamic data includes any information you use to personalize a design, such as a customer's name or order confirmation number. You can use a test data structure in the editor's preview to ensure your dynamic values behave the way you expect before you ever send a message.
 
 <call-out>
 
-The [Design Editor](#the-design-editor) features a number of convenient ways to edit the HTML content of your email –– including the ability to [edit the HTML of each drag-and-drop module](#editing-module-html), [edit the HTML `head` of your message](#editing-the-html-head), and even import complete code using our [Drag & Drop Markup](#importing-custom-html-with-drag--drop-markup).
+The [Design Editor](#the-design-editor) features a number of convenient ways to edit the HTML content of your email, including the ability to [edit the HTML of each drag-and-drop module](#editing-module-html), [edit the HTML `head` of your message](#editing-the-html-head), and even import complete code using our [Drag & Drop Markup](#importing-custom-html-with-drag--drop-markup).
 
 </call-out>
 
@@ -37,7 +37,7 @@ Twilio SendGrid recommends only having one instance of a template or Marketing C
 
 ## The Code Editor
 
-Twilio SendGrid’s marketer-friendly code editor features a powerful split-screen editing experience – perfect for building single send or automation emails with your own custom HTML. It offers a number of helpful features, often found in native editors.
+Twilio SendGrid’s marketer-friendly code editor features a powerful split-screen editing experience – perfect for building Single Send or Automation emails with your own custom HTML. It offers a number of helpful features, often found in native editors.
 
 ### Code Editor Features
 
@@ -115,6 +115,18 @@ Substitution tags allow you to easily generate dynamic content for each recipien
 2. Click the **Tags** tab at the top of the Settings window.
 3. Locate the tag you want to add to your email and click it to automatically copy it to your clipboard.
 4. Paste the tag into the email.
+
+The data that populates your substitution tag will come from the information you have stored about each contact. You can manage this information on the [Marketing Campaigns Contacts page](https://mc.sendgrid.com/contacts).
+
+In addition to the following reserved fields that are available on all contacts by default, you can add your own [Custom Fields](https://mc.sendgrid.com/custom-fields) with Marketing Campaigns. When building Marketing Campaigns designs, your Custom Fields will be available in the **Tags** tab of the editor. For information about managing these fields, see our [Custom Fields]({{root_url}}/ui/managing-contacts/custom-fields/) documentation. If you add a substitution tag, and the data is unavailable on a contact for that tag, the tag will not be rendered in the final email.
+
+<call-out>
+
+Substitution tags are built using Handlebars templating language syntax. In addition to substituting values, you can use Handlebars in your designs to [format dates]({{root_url}}/for-developers/sending-email/using-handlebars/#formatdate), [iterate over lists]({{root_url}}/for-developers/sending-email/using-handlebars/#iterations), and [conditionally render values]({{root_url}}/for-developers/sending-email/using-handlebars/#conditional-statements). See our [Handlebars documentation]({{root_url}}/for-developers/sending-email/using-handlebars/) to see all that you can do with dynamic data and Twilio SendGrid templates.
+
+</call-out>
+
+#### Reserved Substitution Tags
 
 <table class="table" style="table-layout:fixed">
  <tr>
@@ -253,6 +265,44 @@ For contacts with no entry in a custom field, the substitution tag appears blank
 `{{insert first_name "default=Valued Customer"}}`
 
 </call-out>
+
+#### Preview substitution tags with test data
+
+The Code Editor provides a test data preview feature. This means you can add the reserved and custom fields stored on a demo contact to be sure that your final design will populate and render the substitutions properly. If you wanted to collaborate on a design for example, having test data stored directly in the design means each teammate can reference the data structure used to populate substitution tags without having to dig into a code base.
+
+1. To access the test data preview, open a design in the Code Editor and select the **Test Data** tab.
+2. The Code Editor's code window will change to a test data window beside the preview of your design.
+
+![The Code Editor's Test Data tab with a side-by-side view of the design and a window to place your test data]({{root_url}}/img/code_editor_test_data_tab.png 'Test Data')
+
+You can place the data for a contact into the code window. Note that the data must be in JavaScript Object Notation (JSON) format. JSON is a way of structuring data in a collection of key/value pairs. For example, if you use the `first_name` substitution tag, `first_name` is the key and the customer's name is the value. These keys can also be thought of as variables. Like a variable in algebra, these variables represent a value you don't yet know. The following sample customer is provided in JSON format for you to experiment with.
+
+```json
+{
+  "first_name": "Tira",
+  "last_name": "Misu",
+  "email": "recipient@example.com",
+  "alternate_emails": "recipient+@example.com",
+  "address_line_1": "1234 N. Real Ave.",
+  "address_line_2": "Suite 200",
+  "city": "Denver",
+  "state_province_region": "CO",
+  "postal_code": 80202,
+  "country": "United States",
+  "phone_number": "+15555555555",
+  "Sender_Name": "Orders",
+  "Sender_Email": "orders@example2.com",
+  "Sender_Address": "1234 N. Exist St.",
+  "Sender_City": "Portland",
+  "Sender_State": "OR",
+  "Sender_Zip": 97227,
+  "Sender_Country": "United States"
+}
+```
+
+4. Once you have test data in place, you should see any substitution tags for which data is present rendered properly.
+
+![A side-by-side view of the test data and the rendered values in the template]({{root_url}}/img/code_editor_test_data_replaced.png 'Rendered test data')
 
 ### Adding Categories to Single Sends
 
@@ -464,9 +514,17 @@ _To add a substitution tag to your email:_
 1. Locate the tag you want to add to your email and click the **copy** icon.
 1. Paste the tag into the module.
 
-Any custom fields you've created appear in the **Tags** tab of the Marketing Campaigns editor. Email is available by default.
+The data that populates your substitution tag will come from the information you have stored about each contact. You can manage this information on the [Marketing Campaigns Contacts page](https://mc.sendgrid.com/contacts).
 
-You'll also see a number of System Fields that you can place in the body of your email to populate with your data. These include:
+In addition to the following reserved fields that are available on all contacts by default, you can add your own [Custom Fields](https://mc.sendgrid.com/custom-fields) with Marketing Campaigns. When building Marketing Campaigns designs, your Custom Fields will be available in the **Tags** tab of the editor. For information about managing these fields, see our [Custom Fields]({{root_url}}/ui/managing-contacts/custom-fields/) documentation. If you add a substitution tag, and the data is unavailable on a contact for that tag, the tag will not be rendered in the final email.
+
+<call-out>
+
+Substitution tags are built using Handlebars templating language syntax. In addition to substituting values, you can use Handlebars in your designs to [format dates]({{root_url}}/for-developers/sending-email/using-handlebars/#formatdate), [iterate over lists]({{root_url}}/for-developers/sending-email/using-handlebars/#iterations), and [conditionally render values]({{root_url}}/for-developers/sending-email/using-handlebars/#conditional-statements). See our [Handlebars documentation]({{root_url}}/for-developers/sending-email/using-handlebars/) to see all that you can do with dynamic data and Twilio SendGrid templates.
+
+</call-out>
+
+#### Reserved Substitution Tags
 
 <table class="table" style="table-layout:fixed">
  <tr>
@@ -528,6 +586,48 @@ For contacts with no entry in a custom field, the substitution tag appears blank
 `{{insert first_name "default=Valued Customer"}}`
 
 </call-out>
+
+#### Preview substitution tags with test data
+
+The Deign Editor provides a test data preview feature. This means you can add the reserved and custom fields stored on a demo contact to be sure that your final design will populate and render the substitutions properly. If you wanted to collaborate on a design for example, having test data stored directly in the design means each teammate can reference the data structure used to populate substitution tags without having to dig into a code base.
+
+1. To access the test data preview, open a design in the Design Editor and select the **Preview** tab.
+2. With the **Preview** tab active, you will see a **{} Show Test Data** button on the left. Click this button to open the test data window.
+
+![The Design Editor's Preview tab with the {} Show Test Data button highlighted]({{root_url}}/img/design_editor_show_test_data.png '{} Show Test Data')
+
+3. You will now have a side-by-side view of a code window and your design.
+
+You can place the data for a contact into the code window. Note that the data must be in JavaScript Object Notation (JSON) format. JSON is a way of structuring data in a collection of key/value pairs. For example, if you use the `first_name` substitution tag, `first_name` is the key and the customer's name is the value. These keys can also be thought of as variables. Like a variable in algebra, these variables represent a value you don't yet know. The following sample customer is provided in JSON format for you to experiment with.
+
+```json
+{
+  "first_name": "Tira",
+  "last_name": "Misu",
+  "email": "recipient@example.com",
+  "alternate_emails": "recipient+@example.com",
+  "address_line_1": "1234 N. Real Ave.",
+  "address_line_2": "Suite 200",
+  "city": "Denver",
+  "state_province_region": "CO",
+  "postal_code": 80202,
+  "country": "United States",
+  "phone_number": "+15555555555",
+  "Sender_Name": "Orders",
+  "Sender_Email": "orders@example2.com",
+  "Sender_Address": "1234 N. Exist St.",
+  "Sender_City": "Portland",
+  "Sender_State": "OR",
+  "Sender_Zip": 97227,
+  "Sender_Country": "United States"
+}
+```
+
+4. Once you have test data in place, you should see any substitution tags for which data is present rendered properly.
+
+![A template with the first_name substitution and multiple address substitutions in text fiels]({{root_url}}/img/design_editor_substitution_tags.png 'Substitution tags in a template')
+
+![A side-by-side view of the test data and the rendered values in the template]({{root_url}}/img/test_data_replaced.png 'Rendered test data')
 
 ### Previewing Your Email
 
