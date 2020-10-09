@@ -116,7 +116,7 @@ Substitution tags allow you to easily generate dynamic content for each recipien
 3. Locate the tag you want to add to your email and click it to automatically copy it to your clipboard.
 4. Paste the tag into the email.
 
-The data that populates your substitution tag will come from the information you have stored about each contact. You can manage this information on the [Marketing Campaigns Contacts page](https://mc.sendgrid.com/contacts).
+The data that populates your Substitution Tags will come from the information you have stored about each contact. You can manage this information on the [Marketing Campaigns Contacts page](https://mc.sendgrid.com/contacts).
 
 In addition to the following reserved fields that are available on all contacts by default, you can add your own [Custom Fields](https://mc.sendgrid.com/custom-fields) with Marketing Campaigns. When building Marketing Campaigns designs, your Custom Fields will be available in the **Tags** tab of the editor. For information about managing these fields, see our [Custom Fields]({{root_url}}/ui/managing-contacts/custom-fields/) documentation. If you add a substitution tag, and the data is unavailable on a contact for that tag, the tag will not be rendered in the final email.
 
@@ -268,7 +268,7 @@ For contacts with no entry in a custom field, the substitution tag appears blank
 
 #### Preview substitution tags with test data
 
-The Code Editor provides a test data preview feature. This means you can add the reserved and custom fields stored on a demo contact to be sure that your final design will populate and render the substitutions properly. If you wanted to collaborate on a design for example, having test data stored directly in the design means each teammate can reference the data structure used to populate substitution tags without having to dig into a code base.
+The Code Editor provides a test data preview feature. This means you can add the reserved and custom fields stored on a contact as well as any other variables you wish to pass into your template, such as order confirmation data. Test data provides a way to be sure that your final design will populate and render the substitutions properly. If you wanted to collaborate on a design for example, having test data stored directly in the design means each teammate can reference the data structure used to populate substitution tags without having to dig into a code base.
 
 1. To access the test data preview, open a design in the Code Editor and select the **Test Data** tab.
 2. The Code Editor's code window will change to a test data window beside the preview of your design.
@@ -514,7 +514,7 @@ _To add a substitution tag to your email:_
 1. Locate the tag you want to add to your email and click the **copy** icon.
 1. Paste the tag into the module.
 
-The data that populates your substitution tag will come from the information you have stored about each contact. You can manage this information on the [Marketing Campaigns Contacts page](https://mc.sendgrid.com/contacts).
+The data that populates your substitution tag will come from the information you have stored about each contact as well as any data you pass to the template using our APIS. You can manage your contacts' data on the [Marketing Campaigns Contacts page](https://mc.sendgrid.com/contacts).
 
 In addition to the following reserved fields that are available on all contacts by default, you can add your own [Custom Fields](https://mc.sendgrid.com/custom-fields) with Marketing Campaigns. When building Marketing Campaigns designs, your Custom Fields will be available in the **Tags** tab of the editor. For information about managing these fields, see our [Custom Fields]({{root_url}}/ui/managing-contacts/custom-fields/) documentation. If you add a substitution tag, and the data is unavailable on a contact for that tag, the tag will not be rendered in the final email.
 
@@ -589,7 +589,7 @@ For contacts with no entry in a custom field, the substitution tag appears blank
 
 #### Preview substitution tags with test data
 
-The Deign Editor provides a test data preview feature. This means you can add the reserved and custom fields stored on a demo contact to be sure that your final design will populate and render the substitutions properly. If you wanted to collaborate on a design for example, having test data stored directly in the design means each teammate can reference the data structure used to populate substitution tags without having to dig into a code base.
+The Design Editor provides a test data preview feature. This means you can add the reserved and custom fields stored on a contact as well as any other variables you wish to pass into your template, such as order confirmation data. Test data provides a way to be sure that your final design will populate and render the substitutions properly. If you wanted to collaborate on a design for example, having test data stored directly in the design means each teammate can reference the data structure used to populate substitution tags without having to dig into a code base.
 
 1. To access the test data preview, open a design in the Design Editor and select the **Preview** tab.
 2. With the **Preview** tab active, you will see a **{} Show Test Data** button on the left. Click this button to open the test data window.
