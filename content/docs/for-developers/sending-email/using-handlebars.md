@@ -233,7 +233,7 @@ The formatDate helper takes a time in either epoch or ISO8601 format and convert
       </th>
     </tr>
     <tr>
-      <td>YYYYY</td>
+      <td>YYYY</td>
       <td>2020</td>
     </tr>
     <tr>
