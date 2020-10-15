@@ -11,33 +11,41 @@ seo:
   description:
 ---
 
-## Handlebars overview
+Twilio SendGrid [Dynamic Transactional Templates]({{root_url}}/ui/sending-email/how-to-send-an-email-with-dynamic-transactional-templates/) and [Marketing Campaigns designs]({{root_url}}/ui/sending-email/working-with-marketing-campaigns-email-designs/) support the [Handlebars](https://handlebarsjs.com/) templating language to render the [Personalizations]({{root_url}}/for-developers/sending-email/personalizations/) you send via the API and the [Substitution Tags]({{root_url}}/for-developers/sending-email/substitution-tags/) stored on your Marketing Campaigns contacts.
 
-[Handlebars.js syntax](https://handlebarsjs.com/) provides a simple, powerful way to include dynamic content directly in email templates. Handlebars.js syntax allows all of this dynamic templating to occur outside of code, meaning changes are done quickly in the template, with no update to a code base required.
+Handlebars syntax allows you to personalize the messages in your templates by inserting customers' names and other data to make an email relevant to each individual recipient. For example, if you have a customer's name stored in a JSON property called `"name"`, you can insert the property's value into a template by adding `{{ name }}` wherever you want the customer's name to appear.
 
-This page uses examples from the [dynamic-template section of our email templates GitHub repo](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates).
+Handlebars syntax allows all of this dynamic templating to occur outside of your code base, meaning changes are done quickly in the template with no update to a code base required.
 
 <call-out>
 
-For our API reference, see [Mail Send with Dynamic Transactional Templates](https://sendgrid.api-docs.io/v3.0/transactional-templates).
+If you prefer to use your own templating system, you can still insert dynamic data using [Substitution Tags](/ui/sending-email/substitution-and-section-tags/).
 
 </call-out>
 
 ## Personalizing email with Handlebars
 
-We do not support full Handlebars.js functionality. Currently, dynamic templates support the following helpers:
+<call-out>
+
+You can manage your templates programmatically with our [Mail Send with Dynamic Transactional Templates API](https://sendgrid.api-docs.io/v3.0/transactional-templates).
+
+</call-out>
+
+The Handlebars language provides many features in addition to basic variable replacement, including iterations (loops) and conditional statements. Our templates and designs support most but not all of this Handlebars functionality. Currently, dynamic templates support the following helpers:
 
 - [Substitution](#substitution)
 - [Conditional statements](#conditional-statements)
 - [Iterations](#iterations)
 
-For a full helper reference, see the [Handlebar.js reference](#handlebarjs-reference) on this page.
+For a full helper reference, see the [Handlebars reference](#handlebars-reference) on this page.
 
 ## Use cases
 
-Here are example use cases listed with the Handlebars.js helpers used to build the example templates.
+The following use case examples come from the [dynamic-template section of our email templates GitHub repo](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates). Each example links to files you can explore on GitHub. You can also work with these templates by uploading them using the [Code Editor]({{root_url}}/ui/sending-email/editor/#the-code-editor) available in [Dynamic Transactional Templates](https://mc.sendgrid.com/dynamic-templates) and the [Marketing Campaigns Design Library](https://mc.sendgrid.com/design-library/your-designs).
 
-### Receipts
+The following use cases are listed with the Handlebars helpers used to build them.
+
+### Receipt
 
 This [example receipt template](https://github.com/sendgrid/email-templates/tree/master/dynamic-templates/receipt) uses the following helpers:
 
@@ -72,13 +80,13 @@ This is an [example template that is advertising items on sale](https://github.c
 - [Conditional statements](#conditional-statements) - `if/else`
 - [Iterations](#iterations)
 
-## Handlebar.js reference
+## Handlebars reference
 
-This reference provides sample code blocks for each helper, including HTML email snippets and JSON test data.
+The following reference provides sample code blocks for each helper, including HTML email snippets and JSON test data.
 
 ### Substitution
 
-Our templates support the following substitutions:
+Twilio SendGrid templates support the following substitutions:
 
 - [Basic replacement](#basic-replacement)
 - [Deep object replacement](#deep-object-replacement)
@@ -381,7 +389,7 @@ The formatDate helper takes a time in either epoch or ISO8601 format and convert
 
 ### Conditional statements
 
-Our templates support the following conditionals:
+Twilio SendGrid templates support the following conditionals:
 
 - [Basic If, Else, Else If](#basic-if-else-else-if)
 - [If with a root](#if-with-a-root)
