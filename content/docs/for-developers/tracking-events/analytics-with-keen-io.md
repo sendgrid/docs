@@ -51,7 +51,7 @@ Test that everything is working by clicking on the **"Test Your Integration"** b
 
 ## 	Your Data: SendGrid Data Models
 
- A separate Event Collection, aptly named for each type of email event, is created within your Keen Project. Under SendGrid Event Webhook Settings, each email event type that is selected will be recorded as a separate Event Collection in Keen. It's recommend to "Select All" in order to access full functionality of the Keen app’s reporting.
+ A separate Event Collection, aptly named for each type of email event, is created within your Keen Project. Under SendGrid Event Webhook Settings, each email event type that is selected will be recorded as a separate Event Collection in Keen. It's recommended to "Select All" in order to access full functionality of the Keen app’s reporting.
 
 The email events that are recorded are:
 
