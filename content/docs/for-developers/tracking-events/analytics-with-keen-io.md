@@ -17,28 +17,30 @@ It only takes a couple of minutes to start streaming email event data from SendG
 
 ## 	Sending Your SendGrid Data to Keen
 
-**Step 1: Create a Keen and SendGrid account**
+**Create a Keen and SendGrid account**
 
-* Create a <a href="https://keen.io/users/signup?utm_campaign=SendGrid%202020&utm_source=SendGrid&utm_medium=SendGrid%20Hosted%20Docs">Keen account</a> (if you don't already have one)
-* Add a new project in the Keen UI for your SendGrid Email Event Data.
-* Copy your Project ID and API Write Key from the Access tab.
-* Create a <a href="https://sendgrid.com/user/signup"> SendGrid account</a>
+1. Create a [Keen account](https://keen.io/users/signup?utm_campaign=SendGrid%202020&utm_source=SendGrid&utm_medium=SendGrid%20Hosted%20Docs) if you don't already have one. 
+1. Add a new project in the Keen UI for your SendGrid Email Event Data.
+1. Navigate to the Access tab and copy your Project ID and API Write Key.
+1. Create a [SendGrid account](https://sendgrid.com/user/signup). 
 
+**Activate SendGrid's Event Notification App**
 
-**Step 2: Activate SendGrid's Event Notification App**
-
-Log into your SendGrid account, click on **Settings** from the left menu → Select <a href="http://app.sendgrid.com/settings/mail_settings">Mail Settings</a>. Then click **Event Webhook**.
+1. Log into your SendGrid account. 
+1. Click **Settings** from the left menu. 
+1. Select [**Mail Settings**](http://app.sendgrid.com/settings/mail_settings) and then click **Event Webhook**.
 
 ![SendGrid - Mail Settings - Event Webhook]({{root_url}}/images/keen/sendgrid_mailsettings_eventwebhook.png)
 
-**Step 3: Set the HTTP POST URL (example below) as the endpoint where SendGrid will stream all of your email data.**
+**Set the HTTP POST URL (example below) as the endpoint where SendGrid will stream all of your email data.**
 
 ```
 https://api.keen.io/3.0/projects/YOUR_KEEN_PROJECT_ID/email/sendgrid/1.0?api_key=YOUR_KEEN_API_WRITE_KEY
 ```
-Copy and paste the above URL into the HTTP POST URL field. Make sure to replace `YOUR_KEEN_PROJECT_ID` and `YOUR_KEEN_API_WRITE_KEY` with your Project ID and API Write Key available in the Access tab. Set Authorization Method to None.
+1. Copy and paste the above URL into the HTTP POST URL field. Make sure to replace `YOUR_KEEN_PROJECT_ID` and `YOUR_KEEN_API_WRITE_KEY` with your Project ID and API Write Key available in the Access tab. 
+1. Set Authorization Method to None.
 
-In the settings, select the events you want to post to Keen (why not all of them?). To do this, check **Select All** under **Events to be POSTed to your URL**. You can refer to SendGrid’s [event documentation]({{root_url}}/for-developers/tracking-events/event/) for more information on these events.
+In the settings, select the events you want to post to Keen. To do this, check **Select All** under **Events to be POSTed to your URL**. You can refer to the [event documentation]({{root_url}}/for-developers/tracking-events/event/) for more information on these events.
 
 That’s it! Now, as your emails make their way through SendGrid, all of the event information will be posted to Keen. A new Event Collection, aptly named for each type of email event, will be created within your Keen Project.
 
@@ -51,7 +53,7 @@ Test that everything is working by clicking on the **"Test Your Integration"** b
 
 ## 	Your Data: SendGrid Data Models
 
- A separate Event Collection, aptly named for each type of email event, is created within your Keen Project. Under SendGrid Event Webhook Settings, each email event type that is selected will be recorded as a separate Event Collection in Keen. It's recommended to "Select All" in order to access full functionality of the Keen app’s reporting.
+A separate Event Collection, aptly named for each type of email event, is created within your Keen Project. Under SendGrid Event Webhook Settings, each email event type that is selected will be recorded as a separate Event Collection in Keen. It's recommended to "Select All" in order to access full functionality of the Keen app’s reporting.
 
 The email events that are recorded are:
 
@@ -69,23 +71,29 @@ The email events that are recorded are:
 
 As email event data streams to Keen, the default data is enhanced via their [Data Enrichment](https://keen.io/docs/streams/data-enrichment-overview/) capabilities. Data models for these email events are enriched with IP to Geo information, DateTime parser, URL parser, and User Agent enrichment.
 
-To explore each data model, log into your Keen account, select your SendGrid Project and open the “Streams” tab. In the search bar type in “email” to check out your data collections associated with SendGrid email data. You can click into an email event to view all of the different data you have to work with.
+_To explore each data model:_
+1. Log into your Keen account.
+1. Select your SendGrid Project and click **Streams**. 
+1. In the search bar type in “email” to check out your data collections associated with SendGrid email data. You can click into an email event to view all of the different data you have to work with.
 
-Tips: Use the property `message_id` or `singlesend_name` contained in each event to track a particular email across all of these possible actions. Similarly, you can follow a particular users' behavior via the `email` property.
+<call-out>
+
+Use the property `message_id` or `singlesend_name` contained in each event to track a particular email across all of these possible actions. Similarly, you can follow a particular users' behavior via the `email` property.
+
+</call-out> 
 
 
+## 	Using the Data Explorer
 
-## 	How to Use the Data Explorer
+*To use the Data Explorer:*
 
-**Step 1: Log into your Keen account, select your Project**
-
-Open the “Streams” tab. In the "Event Streams" search bar type in “email” to check out your data collections associated with SendGrid email data. A separate Event Collection, aptly named for each type of email event, is created within your Keen Project.
+1. Log into your Keen account and then select your project.
+1. Select **Streams**. 
+1. In the "Event Streams" search bar type in “email” to check out your data collections associated with SendGrid email data. A separate Event Collection, aptly named for each type of email event, is created within your Keen Project.
 
 ![Keen Event Streams - SenGrid Email Event Data]({{root_url}}/images/keen/sendgrid_stream_new.png)
 
-**Step 2: Run some basic queries**
-
-Open the “Explorer” tab and enter `count` as the “Analysis Type,” select `email_delivered` as your “Collection Name,” and press “Run Query.” You ran a query!
+4. Run some basic queries by selecting **Explorer** and entering `count` as the “Analysis Type,” select `email_delivered` as your “Collection Name,” and click “**Run Query**.
 
 ![Explorer to Run Query]({{root_url}}/images/keen/sendgrid_basic_count_new.png)
 
@@ -109,13 +117,18 @@ Once you’ve found the query you need, you can either copy the URL right from y
 
 Here’s how:
 
-**Step 1: Let’s save your query.** Create your query in the Explorer and click “Run.” After running the query, press “Save.”
+1. Save your query. Create your query in the Explorer and then click **Run**. 
+2. After running the query, select **Save**. 
 
 ![Save Your Query]({{root_url}}/images/keen/sendgrid_saved_query_new.png)
 
 Saved queries are a super user-friendly way to revisit your favorite metrics. Rather than entering the same query parameters over and over again, queries can be shared with your teammates. Notice that your saved query can be edited and cloned.
 
-**Step 2: Add your graph to a dashboard.** Navigate to the "Dashboards" tab and select “New Dashboard”. Name your dashboard and add the query we saved by hovering over "Add item", dragging a metric chart into the dashboard, and then selecting the saved query from a dropdown in the right hand ribbon. Next, click “Save” to save your Dashboard.
+Next, you'll want to add your graph to a dashboard.
+1. Navigate to **Dashboards** and select **New Dashboard**. 
+1. Name your dashboard. 
+1. Add the query you saved by hovering over "Add item" and then dragging a metric chart into the dashboard. Select the saved query from a dropdown in the right hand ribbon. 
+1. Click **Save** to save your Dashboard.
 
 ![Add Query to Dashboard]({{root_url}}/images/keen/sendgrid_create_dashboard_new.png)
 
