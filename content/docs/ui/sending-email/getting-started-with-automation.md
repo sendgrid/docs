@@ -59,7 +59,7 @@ _To create a Custom Automation:_
 
 <call-out>
 
-Contacts will only receive your automation if they are on the list or segment you select for entry criteria _after_ you set the automation live.
+Contacts will only receive your automation if they are added to the list or segment you select for entry criteria _after_ you set the automation live.
 
 </call-out>
 
