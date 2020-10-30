@@ -22,7 +22,7 @@ It only takes a couple of minutes to start streaming email event data from SendG
  1. Copy your Project ID and API Write Key from the Access tab.
  1. Create a [SendGrid account](https://sendgrid.com/user/signup). 
 
-## Activate SendGrid's Event Notification App
+### Activate SendGrid's Event Notification App
 
  1. Log into your SendGrid account.
  1. Navigate to **Settings** from the left menu. 
@@ -36,7 +36,7 @@ The HTTP Post URL is the endpoint where SendGrid will stream all of your email d
  ```
  https://api.keen.io/3.0/projects/YOUR_KEEN_PROJECT_ID/email/sendgrid/1.0?api_key=YOUR_KEEN_API_WRITE_KEY
  ```
-1. Copy and paste the above URL into the HTTP POST URL field. Make sure to replace `YOUR_KEEN_PROJECT_ID` and `YOUR_KEEN_API_WRITE_KEY` with your Project ID and API Write Key available in the Access tab. Set Authorization Method to None.
+1. Copy and paste the above URL into the HTTP POST URL field. Make sure to replace `YOUR_KEEN_PROJECT_ID` and `YOUR_KEEN_API_WRITE_KEY` with your Project ID and API Write Key available in the Access tab. Set Authorization Method to **None**.
 2. In the settings, select the events you want to post to Keen (why not all of them?). To do this, check **Select All** under **Events to be POSTed to your URL**. You can refer to SendGrid’s [event documentation]({{root_url}}/for-developers/tracking-events/event/) for more information on these events.
 
 That’s it! Now, as your emails make their way through SendGrid, all of the event information will be posted to Keen. A new Event Collection, aptly named for each type of email event, will be created within your Keen Project.
