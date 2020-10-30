@@ -8,7 +8,13 @@ navigation:
   show: false
 ---
 
-The most simple way to define spam in the Email world is by using these 2 words: ```unwanted email```.
+<call-out>
+
+If you discover spam that was sent by a SendGrid customer, please [report it to our team](https://sendgrid.com/report-spam/). We appreciate your help in keeping our email stream clean.
+
+</call-out>
+
+The most simple way to define spam in the Email world is by using these 2 words: `unwanted email`.
 
 Since it’s so easy for a message to fall in this category, as a Sender you may want to know how and why emails can get marked as spam.
 
@@ -28,12 +34,11 @@ These are some of the most common reasons for which an email may end up in the S
 
 To find out more about what you can do to ensure your email is being received by your recipients, you may also want to check out our [Tips and Tricks to Stay Out of the Spam Folder](https://sendgrid.com/blog/tips-tricks-stay-spam-folder-qa/).
 
-
 <call-out-link linktext="EXPERT INSIGHTS" img="/img/expert-insights-promo2.png" link="https://sendgrid.com/solutions/expert-insights/">
 
 ## Additional Resources
 
-* [Spam Filter]({{root_url}}/glossary/spam-filter/)
-* [Spam Reports]({{root_url}}/glossary/spam-reports/)
-* [Spam Trap]({{root_url}}/glossary/spam-traps/)
-* [Spam]({{root_url}}/glossary/bayesian-filter/)
+- [Spam Filter]({{root_url}}/glossary/spam-filter/)
+- [Spam Reports]({{root_url}}/glossary/spam-reports/)
+- [Spam Trap]({{root_url}}/glossary/spam-traps/)
+- [Spam]({{root_url}}/glossary/bayesian-filter/)
