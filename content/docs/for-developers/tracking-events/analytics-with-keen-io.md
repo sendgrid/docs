@@ -52,9 +52,11 @@ To test that everything is working, navigate to **Event Webhook Settings** in th
 
 ## 	Your Data: SendGrid Data Models
 
-A separate Event Collection, aptly named for each type of email event, is created within your Keen Project. Under SendGrid Event Webhook Settings, each email event type that is selected will be recorded as a separate Event Collection in Keen. It's recommended to "Select All" in order to access full functionality of the Keen app’s reporting.
+## Your Data: SendGrid Data Models
 
-The email events that are recorded are:
+In the SendGrid app, navigate to **Mail Settings** and then select  **Event Webhook**. Each email event type that is selected will be recorded as a separate Event Collection in your Keen project. We recommended checking **Select All** to access full functionality of the Keen app’s reporting.
+
+ The email events that are recorded are:
 
 - `email_bounce`
 - `email_click`
@@ -68,7 +70,7 @@ The email events that are recorded are:
 - `email_spamreport`
 - `email_unsubscribe`
 
-As email event data streams to Keen, the default data is enhanced via their [Data Enrichment](https://keen.io/docs/streams/data-enrichment-overview/) capabilities. Data models for these email events are enriched with IP to Geo information, DateTime parser, URL parser, and User Agent enrichment.
+As SendGrid email data streams to Keen, it will be enhanced using Keen's [Data Enrichment](https://keen.io/docs/streams/data-enrichment-overview/) capabilities. Keen’s data enrichments turn IP addresses into geographic locations and break out timestamps, URLs, and user agent strings into more easy-to-use data such as `device type`, `day_of_the_week`, and URL `path`.
 
 _To explore each data model:_
 1. Log into your Keen account.
@@ -77,7 +79,7 @@ _To explore each data model:_
 
 <call-out>
 
-Use the property `message_id` or `singlesend_name` contained in each event to track a particular email across all of these possible actions. Similarly, you can follow a particular users' behavior via the `email` property.
+Use the property `message_id` or `singlesend_name` contained in each event to track a particular email across all of these possible actions. Similarly, you can follow a particular user's behavior via the `email` property.
 
 </call-out> 
 
