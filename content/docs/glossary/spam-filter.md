@@ -10,6 +10,12 @@ navigation:
   show: false
 ---
 
+<call-out>
+
+If you discover spam that was sent by a SendGrid customer, please [report it to our team](https://sendgrid.com/report-spam/). We appreciate your help in keeping our email stream clean.
+
+</call-out>
+
 Spam Filters are software based email filters that block email on a range of attributes from words or phrases within the email to header information and other factors. The goal is to identify spam before it is delivered to the inbox.
 
 Spam filters typically will move the messages they find to the [spam folder]({{root_url}}/glossary/bulk-mail-folder/) within the user's respective email application, keeping that email out of the user's inbox entirely.

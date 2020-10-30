@@ -10,6 +10,12 @@ navigation:
   show: false
 ---
 
+<call-out>
+
+If you discover spam that was sent by a SendGrid customer, please [report it to our team](https://sendgrid.com/report-spam/). We appreciate your help in keeping our email stream clean.
+
+</call-out>
+
 This is a statistical method for determining the probability that an email is spam by looking for the use of words or phrases commonly associated with spam email.
 
 A Bayesian filter detects spam by comparing the words or phrases within the questionable email to a set of known words or phrases associated with spam. Bayesian filtering has a very low rate of false positives and is a tried and true method for filtering spam.
@@ -18,7 +24,7 @@ For more information about Bayesian filtering, refer to this Wiki: [Naive Bayes 
 
 ## Related Articles
 
-* [Spam]({{root_url}}/glossary/spam/)
-* [Spam Filter]({{root_url}}/glossary/spam-filter/)
-* [Spam Reports]({{root_url}}/glossary/spam-reports/)
-* [Spam Trap]({{root_url}}/glossary/spam-traps/)
+- [Spam]({{root_url}}/glossary/spam/)
+- [Spam Filter]({{root_url}}/glossary/spam-filter/)
+- [Spam Reports]({{root_url}}/glossary/spam-reports/)
+- [Spam Trap]({{root_url}}/glossary/spam-traps/)
