@@ -62,7 +62,7 @@ All Mail clients render HTML/CSS differently, in their own ways and for their ow
 
 ## Images 
 
-- **Always avoid PNG images**  - Try to always use either JPEG or GIF images
+- **SendGrid Image Library**  - .jpg, .gif, and .png files can be uploaded to the SendGrid Editor for use with Email Designs
 - **Always provide image dimensions**
 
   - Some mail clients will automatically apply their own if none are given which can lead to major issues when rendering these images in relation to spacing and alignment.
