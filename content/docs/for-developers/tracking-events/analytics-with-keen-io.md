@@ -32,25 +32,19 @@ It only takes a couple of minutes to start streaming email event data from SendG
 
 ![SendGrid - Mail Settings - Event Webhook]({{root_url}}/images/keen/sendgrid_mailsettings_eventwebhook.png)
 
-**Set the HTTP POST URL (example below) as the endpoint where SendGrid will stream all of your email data.**
 
-```
-https://api.keen.io/3.0/projects/YOUR_KEEN_PROJECT_ID/email/sendgrid/1.0?api_key=YOUR_KEEN_API_WRITE_KEY
-```
-1. Copy and paste the above URL into the HTTP POST URL field. Make sure to replace `YOUR_KEEN_PROJECT_ID` and `YOUR_KEEN_API_WRITE_KEY` with your Project ID and API Write Key available in the Access tab. 
-1. Set Authorization Method to None.
-
-In the settings, select the events you want to post to Keen. To do this, check **Select All** under **Events to be POSTed to your URL**. You can refer to the [event documentation]({{root_url}}/for-developers/tracking-events/event/) for more information on these events.
+![SendGrid- Mail Settings]({{root_url}}/images/keen/sendgrid_mailsettings_eventnotification.png)	The HTTP Post URL is the endpoint where SendGrid will stream all of your email data.
+ ```
+ https://api.keen.io/3.0/projects/YOUR_KEEN_PROJECT_ID/email/sendgrid/1.0?api_key=YOUR_KEEN_API_WRITE_KEY
+ ```
+1. Copy and paste the above URL into the HTTP POST URL field. Make sure to replace `YOUR_KEEN_PROJECT_ID` and `YOUR_KEEN_API_WRITE_KEY` with your Project ID and API Write Key available in the Access tab. Set Authorization Method to **None**.
+2. In the settings, select the events you want to post to Keen (why not all of them?). To do this, check **Select All** under **Events to be POSTed to your URL**. You can refer to SendGrid’s [event documentation]({{root_url}}/for-developers/tracking-events/event/) for more information on these events.
 
 That’s it! Now, as your emails make their way through SendGrid, all of the event information will be posted to Keen. A new Event Collection, aptly named for each type of email event, will be created within your Keen Project.
-
 
 ## 	Testing Your Integration
 
 To test that everything is working, navigate to **Event Webhook Settings** in the SendGrid app and then click **"Test Your Integration"**. This will send sample email data from SendGrid into your Keen Project. In the Keen UI, navigate to the **Streams** tab to check for sample SendGrid data. After you've confirmed the data was sent, enable the Event Webhook and your SendGrid email data will now be sent to Keen in real-time.
-
-
-## 	Your Data: SendGrid Data Models
 
 ## Your Data: SendGrid Data Models
 
