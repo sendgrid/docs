@@ -47,8 +47,7 @@ That’s it! Now, as your emails make their way through SendGrid, all of the eve
 
 ## 	Testing Your Integration
 
-Test that everything is working by clicking on the **"Test Your Integration"** button in SendGrid’s "Event Webhook" Settings. This will send sample email data from SendGrid into your Keen Project. In the Keen UI, check the Streams tab for sample SendGrid data. After you've confirmed the data was sent, enable the Event Webhook and your SendGrid email data will now be sent to Keen in real-time.
-
+To test that everything is working, navigate to **Event Webhook Settings** in the SendGrid app and then click **"Test Your Integration"**. This will send sample email data from SendGrid into your Keen Project. In the Keen UI, navigate to the **Streams** tab to check for sample SendGrid data. After you've confirmed the data was sent, enable the Event Webhook and your SendGrid email data will now be sent to Keen in real-time.
 
 
 ## 	Your Data: SendGrid Data Models
