@@ -44,12 +44,12 @@ That’s it! Now, as your emails make their way through SendGrid, all of the eve
 
  ## Testing Your Integration
 
-Test that everything is working by clicking on the **"Test Your Integration"** button in SendGrid’s "Event Webhook" Settings. This will send sample email data from SendGrid into your Keen Project. In the Keen UI, check the Streams tab for sample SendGrid data. After you've confirmed the data was sent, enable the Event Webhook and your SendGrid email data will now be sent to Keen in real-time.
+To test that everything is working, navigate to **Event Webhook Settings** in the SendGrid app and then click **"Test Your Integration"**. This will send sample email data from SendGrid into your Keen Project. In the Keen UI, navigate to the **Streams** tab to check for sample SendGrid data. After you've confirmed the data was sent, enable the Event Webhook and your SendGrid email data will now be sent to Keen in real-time.
 
 
  ## Your Data: SendGrid Data Models
 
- Under SendGrid Mail Settings → Event Webhook, each email event type that is selected will be recorded as a separate Event Collection in your Keen project. It’s recommended to "Select All” to access full functionality of the Keen app’s reporting.
+In the SendGrid app, navigate to **Mail Settings** and then select  **Event Webhook**. Each email event type that is selected will be recorded as a separate Event Collection in your Keen project. We recommended checking **Select All** to access full functionality of the Keen app’s reporting.
 
  The email events that are recorded are:
 
@@ -67,9 +67,13 @@ Test that everything is working by clicking on the **"Test Your Integration"** b
 
 As SendGrid email data streams to Keen, it will be enhanced using Keen's [Data Enrichment](https://keen.io/docs/streams/data-enrichment-overview/) capabilities. Keen’s data enrichments turn IP addresses into geographic locations and break out timestamps, URLs, and user agent strings into more easy-to-use data such as `device type`, `day_of_the_week`, and URL `path`.
 
-To explore all of the email data you have at your fingertips, log into your Keen account, select your Project with SendGrid data and open the “Streams” tab. In the search bar type in “email” to check out your data collections associated with SendGrid email data. You can click into an email event like `email_open` to view all of the different data you have to work with.
+To explore all of the email data you have at your fingertips, log into your Keen account, select your Project with SendGrid data and open the **Streams** tab. In the search bar type in “email” to check out your data collections associated with SendGrid email data. You can click into an email event like `email_open` to view all of the different data you have to work with.
 
-Tips: Use the property `message_id` or `singlesend_name` contained in each event to track a particular email across all of these possible actions. Similarly, you can follow a particular users' behavior via the `email` property.
+<call-out>
+
+Use the property `message_id` or `singlesend_name` contained in each event to track a particular email across all of these possible actions. Similarly, you can follow a particular user's behavior via the `email` property.
+
+</call-out> 
 
 ## 	How to Use the Data Explorer
 
