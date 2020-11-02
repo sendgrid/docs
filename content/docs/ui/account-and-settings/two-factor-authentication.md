@@ -81,3 +81,4 @@ If you find that you’ve lost access to your account as a result of Two-Factor 
 ## 	Additional Resources
  	
 * [Restoring Authy access on lost or inaccessible phones](https://support.authy.com/hc/en-us/articles/115012672088-Restoring-Authy-access-on-lost-or-inaccessible-phones)
+* [The Value of Two-Factor Authentication](https://sendgrid.com/blog/the-value-of-two-factor-authentication/)

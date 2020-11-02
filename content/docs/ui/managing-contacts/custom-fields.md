@@ -109,13 +109,16 @@ _To delete a custom field:_
 1. Select the delete icon.
 1. Click **Delete Field**.
 
+This deletion process may take several minutes; you will continue to see the custom field on this page until the process completes.
+
 <call-out type="warning">
 
-Deleting a custom field deletes all values for that field across your contact database. If you have any campaigns using the data in this field with a substitution tag, those values do NOT get replaced when you send the campaign. You cannot delete a custom field that a segment is using in legacy Marketing Campaigns. Currently, in the new Marketing Campaigns experience, you are able to delete custom fields that are currently in use, so be extra cautious when you delete any existing custom fields.
-
-This deletion process may take several minutes, and you will continue to see the custom field on this page until the process completes
-
+Deleting a custom field deletes all values for that field across your contact database. It will also break Single Sends or Automation emails using the custom field as a tag or segments using the field as a condition. See below for details. 
 </call-out>
+
+If a deleted custom field is **used as a tag within a Single Send or Automation email**  as part of the subject line or body copy, the email will send with the default value you've designated or the fall back "default". If you have deleted the fallback, the email will not display anything at all in place of the deleted custom field. 
+
+If a deleted custom field is **used as criteria within a segment** the segment will fail to load. Neither Single Sends nor Automation emails will be able to be sent to the segment using the deleted custom field. 
 
 ## Troubleshooting
 
