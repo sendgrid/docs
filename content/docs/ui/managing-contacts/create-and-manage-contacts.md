@@ -25,12 +25,20 @@ The content on this page describes the experience in the latest version of Marke
 You can add contacts to Marketing Campaigns by uploading a CSV, manually via the UI, using a Signup Form, or by integrating with the Contacts API. 
 
 <call-out>
+  
 Note that automations will only trigger to contacts who are added to an entry criteria list *after* the automation is set live. Contacts who you add to a list before the automation is set live will not receive any emails in the series.
+
 </call-out>
   
 ### Upload a CSV
 
-A common way to add contacts is to upload a CSV and map your data to custom fields.  
+A common way to add contacts is to upload a CSV and map your data to custom fields.
+
+<call-out>
+
+You can upload a CSV containing up to 1M contacts or 5MB of data, whichever is less.
+
+</call-out>
 
 1. Use [this CSV template]({{root_url}}/assets/example.csv) to make sure your CSV is formatted correctly.
 1. Click **Add Contacts** and then select **Upload CSV**.
@@ -106,7 +114,7 @@ You can also find the options to share the signup form in the form editor by cli
 
 Managing contacts is an integral part of your Marketing Campaigns lifecycle. You can create lists for contacts, as well as view and edit each individual contact within your contact database.
 
-### 	Viewing a contact
+### Viewing a contact
 
 To view a specific contact profile, find the contact in one of your lists by searching your contact database. Then, click the contact’s email address. You will then be able to view the email, engagement data, profile information, custom fields, and list associations for this contact.
 
@@ -118,7 +126,7 @@ Searches are case agnostic but must be done using a whole email address that inc
 
 To view any custom fields you have assigned to this contact, or to view any lists that you have added this contact to, you may flip through the tabs beneath the Contact Details. You may either view all custom fields at once, or you can filter them by the following types: “Text”, “Date”, and “Number”.
 
-### 	Editing a contact
+### Editing a contact
 
 When you are viewing a contact, click any of the Edit buttons in the Contact Fields tab to edit the contact's information within that section. This includes the Twilio SendGrid provided reserved fields, except email, any custom fields you’ve added for this contact, and any lists the contact is associated with.
 
@@ -128,7 +136,7 @@ When you are viewing a contact, click any of the Edit buttons in the Contact Fie
 2. Enter or select the list you would like to use.
 3. Click **Add**.
 
-### 	Managing your list
+### Managing your list
 
 Sending to a well-managed address list can drastically improve your delivery. We have put together some simple steps and guidelines that will improve any senders list.
 
