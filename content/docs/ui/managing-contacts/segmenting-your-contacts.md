@@ -80,13 +80,40 @@ Segments can have one Email Activity, Single Send, or Automation condition field
 
 ![The segment builder inside Marketing Campaigns, displaying a new segment with a City condition set to "Denver" and a State, Province, Region condition set to "Colorado".]({{root_url}}/img/create_new_segment_two_fields.png 'Create a new segment with two fields')
 
-Once your segment is processed, you will see a count of all contacts who meet your segment conditions, as well as a sample of these 50 contacts. To see all contacts included in your segment, click "Export CSV" to download a complete file. 
+Once your segment is processed, you will see a count of all contacts who meet your segment conditions, as well as a sample of these 50 contacts. To see all contacts included in your segment, click "Export CSV" to download a complete file.
 
 <call-out type="warning">
 
 Segments built using engagement data such as "was sent" or "clicked" will take approximately 30 minutes to begin populating.
 
 </call-out>
+
+## Segment refresh cadence
+
+Contacts will be added to or removed from your segment as they meet or no longer meet the conditions of your segment. This can be driven by:
+
+- New contacts being added to or updated within Marketing Campaigns, whether via CSV upload, API integration, Signup Forms, or manual changes.
+- Contact engagement behavior, such as opening or clicking an email in a way that’s relevant to your segment conditions.
+
+Typically, contacts that meet your criteria will appear in your segment within 15 minutes. You can see all contacts who are included in the segment at any given time by clicking **Export CSV**. To check for a specific contact, you can search by the contact’s email address.
+
+<call-out type="warning">
+
+Segments built using engagement data such as "was sent" or "clicked" will take approximately 30 minutes to begin populating.
+
+</call-out>
+
+Segment samples and counts are refreshed approximately once per hour; they do not update immediately. If there are no changes to a segment since the last refresh, the sample and UI count displayed will be refreshed at increasing time intervals with a maximum sample and count refresh delay of 24 hours.
+
+You can see an estimate of the next scheduled segment refresh on the [**Contacts**](https://mc.sendgrid.com/contacts) page as well as on the detail page of your segment.
+
+![The Contacts landing page in the Marketing Campaigns App]({{root_url}}/img/mc-contacts-segments.png 'Marketing Campaigns Contacts Page')
+
+![A segment detail page with a tool tip indicating the next estimated refresh time]({{root_url}}/img/mc-segment-refresh.png 'Marketing Campaigns segment detail page refresh estimate')
+
+Automations with entry criteria of a contact entering a segment will be triggered according to the same schedule as the segment sample refresh cadence described above.
+
+However, when you send a Single Send to a segment, Marketing Campaigns will pull the segment at the time of send, reflecting the near-real-time segment population.
 
 ## Segmentation fields and types
 
