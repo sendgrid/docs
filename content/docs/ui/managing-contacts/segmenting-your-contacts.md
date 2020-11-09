@@ -94,8 +94,9 @@ Contacts will be added to or removed from your segment as they meet or no longer
 
 - New contacts being added to or updated within Marketing Campaigns, whether via CSV upload, API integration, Signup Forms, or manual changes.
 - Contact engagement behavior, such as opening or clicking an email in a way that’s relevant to your segment conditions.
+- A change you make to the conditions that define your segment.
 
-Typically, contacts that meet your criteria will appear in your segment within 15 minutes. You can see all contacts who are included in the segment at any given time by clicking **Export CSV**. To check for a specific contact, you can search by the contact’s email address.
+Typically, contacts who meet your criteria will begin to appear in your segment searches within 15 minutes. You can see all contacts who are included in the segment at any given time by clicking **Export CSV**. To check for a specific contact, you can search by the contact’s email address.
 
 <call-out type="warning">
 
@@ -103,7 +104,7 @@ Segments built using engagement data such as "was sent" or "clicked" will take a
 
 </call-out>
 
-Segment samples and counts are refreshed approximately once per hour; they do not update immediately. If there are no changes to a segment since the last refresh, the sample and UI count displayed will be refreshed at increasing time intervals with a maximum sample and count refresh delay of 24 hours.
+Segment **samples** and **counts** are refreshed approximately once per hour; they do not update immediately. If no contacts are added to or removed from a segment since the last refresh, the sample and UI count displayed will be refreshed at increasing time intervals with a maximum sample and count refresh delay of 24 hours.
 
 You can see an estimate of the next scheduled segment refresh on the [**Contacts**](https://mc.sendgrid.com/contacts) page as well as on the detail page of your segment.
 
