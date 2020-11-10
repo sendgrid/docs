@@ -96,7 +96,13 @@ Contacts will be added to or removed from your segment as they meet or no longer
 - Contact engagement behavior, such as opening or clicking an email in a way that’s relevant to your segment conditions.
 - A change you make to the conditions that define your segment.
 
-Typically, contacts who meet your criteria will begin to appear in your segment searches within 15 minutes. You can see all contacts who are included in the segment at any given time by clicking **Export CSV**. To check for a specific contact, you can search by the contact’s email address.
+Typically, existing contacts who meet your criteria will begin to appear in your segment searches within 15 minutes. You can see all contacts who are included in the segment at any given time by clicking **Export CSV**. To check for a specific contact, you can search by the contact’s email address.
+
+<call-out>
+
+Twilio SendGrid checks for newly added or modified contacts who meet a segment's criteria on an hourly schedule. Only existing contacts who meet a segment's criteria will be included in the segment within 15 minutes.
+
+</call-out>
 
 <call-out type="warning">
 
