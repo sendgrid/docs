@@ -20,7 +20,7 @@ The content on this page describes the experience in the latest version of Marke
 
 </call-out>
 
-[Segments]({{root_url}}/glossary/segmentation/) are similar to contact lists, except they update dynamically over time as information stored about your contacts changes. When you segment your audience, you are able to create personalized Automation emails and Single Sends that directly address the wants and needs of your particular audience.
+[Segments]({{root_url}}/glossary/segmentation/) are similar to contact lists, except they update dynamically over time as information stored about your contacts or the criteria used to define your segments changes. When you segment your audience, you are able to create personalized Automation emails and Single Sends that directly address the wants and needs of your particular audience.
 
 <call-out>
 
@@ -100,7 +100,7 @@ Typically, existing contacts who meet your criteria will begin to appear in your
 
 <call-out>
 
-Twilio SendGrid checks for newly added or modified contacts who meet a segment's criteria on an hourly schedule. Only existing contacts who meet a segment's criteria will be included in the segment within 15 minutes.
+Twilio SendGrid checks for newly added or modified contacts who meet a segment's criteria on an hourly schedule. Only existing contacts who meet a segment's criteria will be included in the segment **searches** within 15 minutes.
 
 </call-out>
 
@@ -552,6 +552,6 @@ The download link for your CSV export will be valid for 24 hours.
 
 ## Additional Resources
 
-- [Contacts]({{root_url}}/ui/managing-contacts/adding-contacts/)
+- [Contacts]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#add-contacts)
 - [Custom Fields]({{root_url}}/ui/managing-contacts/custom-fields/)
 - [Tips on Segmenting Your Active Subscribers](https://sendgrid.com/blog/tips-on-segmenting-your-active-subscribers/)
