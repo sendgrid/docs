@@ -83,9 +83,9 @@ The accompanying X-SMTPAPI JSON header would look like:
 ```json
 {
   "to": [
-    "alice@foo.com",
-    "bob@bar.com",
-    "casey@example.com"
+    "example1@example.com",
+    "example2@example.com",
+    "example3@example.com"
   ],
   "sub": {
     ":salutation": [":female", ":male", ":neutral"],
