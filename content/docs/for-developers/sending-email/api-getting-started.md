@@ -1,9 +1,9 @@
 ---
 seo:
-  title: Getting Started with the SendGrid API
+  title: Getting started with the SendGrid API
   description: Sending your first email using the SendGrid REST API.
   keywords: Getting Started, API, v3, REST, SendGrid REST API
-title: Getting Started with the SendGrid API
+title: Getting started with the SendGrid API
 group: api-v3
 weight: 100
 layout: page
@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-There are several ways you can get started with the SendGrid API
+There are several ways you can get started with the SendGrid API.
 
 ## 	Prerequisites for sending your first email with the SendGrid API
 
@@ -35,14 +35,13 @@ Curl comes standard on Mac operating systems.
 
 Your API call must have the following components:
 
-* A Host. The host for Web API v3 requests is always `https://api.sendgrid.com/v3/`
-* An [Authorization Header](https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-authentication#authorization-header)
-* An [API Key](https://app.sendgrid.com/settings/api_keys) within the Authorization Header
-* A Request. When submitting data to a resource via POST or PUT, you must submit your payload in JSON.
+* **A host.** The host for Web API v3 requests is always `https://api.sendgrid.com/v3/`
+* **An [Authorization header](https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-authentication#authorization-header).** An [API Key](https://app.sendgrid.com/settings/api_keys) must be included in the Authorization header.
+* **A request.** When submitting data to a resource via POST or PUT, you must submit your payload in JSON.
 
 <call-out>
 
-Message size limit:  The total message size should not exceed 20MB. This includes the message itself, headers, and the combined size of any attachments.
+**Message size limit:**  The total message size should not exceed 20MB. This includes the message itself, headers, and the combined size of any attachments.
 
 </call-out>
 
@@ -53,14 +52,14 @@ _To Send an email using the SendGrid API:_
 ```
 curl --request POST \
 --url https://api.sendgrid.com/v3/mail/send \
---header 'authorization: Bearer <<YOUR_API_KEY>>' \
---header 'content-type: application/json' \
+--header 'Authorization: Bearer <<YOUR_API_KEY>>' \
+--header 'Content-Type: application/json' \
 --data '{"personalizations":[{"to":[{"email":"john.doe@example.com","name":"John Doe"}],"subject":"Hello, World!"}],"content": [{"type": "text/plain", "value": "Heya!"}],"from":{"email":"sam.smith@example.com","name":"Sam Smith"},"reply_to":{"email":"sam.smith@example.com","name":"Sam Smith"}}'
 ```
 
 1. Copy the curl example above.
 2. Paste the curl call into your favorite text editor.
-3. Copy your API key and paste it in the authorization header.
+3. Copy your API key and paste it in the "Authorization" header.
 4. In the data section, specify the "to", "from", and "reply to" names and email addresses and enter a subject.
 5. Copy the code and paste it in your terminal.
 6. Hit **Enter**.
@@ -85,7 +84,7 @@ Save time and feel confident you are set up for long-term success with Email Imp
 </call-out-link>
 
 
- ### 	API Response messages
+ ### 	API response messages
 
 All responses are returned in JSON format. We specify this by sending the ``Content-Type`` header. The Web API v3 provides a selection of [response codes](https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-responses#status-codes), [content-type headers](https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-responses#content-type-header), and [pagination](https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-responses#pagination) options to help you interpret the responses to your API requests.
 
@@ -95,7 +94,7 @@ Get additional onboarding support. Save time, increase the quality of your sendi
 
 </call-out>
 
-## 	Next Steps
+## 	Next steps
 
 For more information on SendGrid and where you can go from here, check out these pages:
 
