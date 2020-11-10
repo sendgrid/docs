@@ -11,8 +11,6 @@ navigation:
   show: true
 ---
 
-<iframe src="https://player.vimeo.com/video/190122014" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
 You can also send email with [the UI]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/) and with [the API]({{root_url}}/api-reference/).
 
 
