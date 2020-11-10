@@ -80,7 +80,7 @@ Segments can have one Email Activity, Single Send, or Automation condition field
 
 ![The segment builder inside Marketing Campaigns, displaying a new segment with a City condition set to "Denver" and a State, Province, Region condition set to "Colorado".]({{root_url}}/img/create_new_segment_two_fields.png 'Create a new segment with two fields')
 
-Once your segment is processed, you will see a count of all contacts who meet your segment conditions, as well as a sample of these 50 contacts. To see all contacts included in your segment, click "Export CSV" to download a complete file.
+Once your segment is processed, you will see a count of all contacts who meet your segment conditions, as well as a sample of these 50 contacts. To see all contacts included in your segment, click **Export CSV** to download a complete file.
 
 <call-out type="warning">
 
