@@ -13,7 +13,7 @@ navigation:
 
 <call-out type="warning">
 
-Due to low usage, this setting has been deprecated. It will be fully removed on 07/30/2020. Click [here]({{root_url}}/ui/account-and-settings/retired-mail-settings/) for more information.
+Due to low usage, this setting has been deprecated and has been removed. Click [here]({{root_url}}/ui/account-and-settings/retired-mail-settings/) for more information.
 
 </call-out>
 
@@ -53,7 +53,7 @@ Do not use spaces inside your section or substitution tags! For example: `%first
 
 <call-out type="warning">
 
-Do not nest section tags in sections \* this causes your section to not be replaced.
+Do not nest section tags in sections! This causes your section to not be replaced.
 
 </call-out>
 
@@ -83,10 +83,9 @@ The accompanying X-SMTPAPI JSON header would look like:
 ```json
 {
   "to": [
-    "example@example.com",
-    "bob@bar.com",
-    "example@example.com",
-    "example@example.com"
+    "example1@example.com",
+    "example2@example.com",
+    "example3@example.com"
   ],
   "sub": {
     ":salutation": [":female", ":male", ":neutral"],
