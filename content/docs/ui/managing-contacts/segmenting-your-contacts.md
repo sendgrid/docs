@@ -20,7 +20,7 @@ The content on this page describes the experience in the latest version of Marke
 
 </call-out>
 
-[Segments]({{root_url}}/glossary/segmentation/) are similar to contact lists, except they update dynamically over time as information stored about your contacts changes. When you segment your audience, you are able to create personalized Automation emails and Single Sends that directly address the wants and needs of your particular audience.
+[Segments]({{root_url}}/glossary/segmentation/) are similar to contact lists, except they update dynamically over time as information stored about your contacts or the criteria used to define your segments changes. When you segment your audience, you are able to create personalized Automation emails and Single Sends that directly address the wants and needs of your particular audience.
 
 <call-out>
 
@@ -80,13 +80,47 @@ Segments can have one Email Activity, Single Send, or Automation condition field
 
 ![The segment builder inside Marketing Campaigns, displaying a new segment with a City condition set to "Denver" and a State, Province, Region condition set to "Colorado".]({{root_url}}/img/create_new_segment_two_fields.png 'Create a new segment with two fields')
 
-Once your segment is processed, you will see a count of all contacts who meet your segment conditions, as well as a sample of these 50 contacts. To see all contacts included in your segment, click "Export CSV" to download a complete file. 
+Once your segment is processed, you will see a count of all contacts who meet your segment conditions, as well as a sample of these 50 contacts. To see all contacts included in your segment, click **Export CSV** to download a complete file.
 
 <call-out type="warning">
 
 Segments built using engagement data such as "was sent" or "clicked" will take approximately 30 minutes to begin populating.
 
 </call-out>
+
+## Segment refresh cadence
+
+Contacts will be added to or removed from your segment as they meet or no longer meet the conditions of your segment. This can be driven by:
+
+- New contacts being added to or updated within Marketing Campaigns, whether via CSV upload, API integration, Signup Forms, or manual changes.
+- Contact engagement behavior, such as opening or clicking an email in a way that’s relevant to your segment conditions.
+- A change you make to the conditions that define your segment.
+
+Typically, existing contacts who meet your criteria will begin to appear in your segment searches within 15 minutes. You can see all contacts who are included in the segment at any given time by clicking **Export CSV**. To check for a specific contact, you can search by the contact’s email address.
+
+<call-out>
+
+Twilio SendGrid checks for newly added or modified contacts who meet a segment's criteria on an hourly schedule. Only existing contacts who meet a segment's criteria will be included in the segment **searches** within 15 minutes.
+
+</call-out>
+
+<call-out type="warning">
+
+Segments built using engagement data such as "was sent" or "clicked" will take approximately 30 minutes to begin populating.
+
+</call-out>
+
+Segment **samples** and **counts** are refreshed approximately once per hour; they do not update immediately. If no contacts are added to or removed from a segment since the last refresh, the sample and UI count displayed will be refreshed at increasing time intervals with a maximum sample and count refresh delay of 24 hours.
+
+You can see an estimate of the next scheduled segment refresh on the [**Contacts**](https://mc.sendgrid.com/contacts) page as well as on the detail page of your segment.
+
+![The Contacts landing page in the Marketing Campaigns App]({{root_url}}/img/mc-contacts-segments.png 'Marketing Campaigns Contacts Page')
+
+![A segment detail page with a tool tip indicating the next estimated refresh time]({{root_url}}/img/mc-segment-refresh.png 'Marketing Campaigns segment detail page refresh estimate')
+
+Automations with entry criteria of a contact entering a segment will be triggered according to the same schedule as the segment sample refresh cadence described above.
+
+However, when you send a Single Send to a segment, Marketing Campaigns will pull the segment at the time of send, reflecting the near-real-time segment population.
 
 ## Segmentation fields and types
 
@@ -518,6 +552,6 @@ The download link for your CSV export will be valid for 24 hours.
 
 ## Additional Resources
 
-- [Contacts]({{root_url}}/ui/managing-contacts/adding-contacts/)
+- [Contacts]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#add-contacts)
 - [Custom Fields]({{root_url}}/ui/managing-contacts/custom-fields/)
 - [Tips on Segmenting Your Active Subscribers](https://sendgrid.com/blog/tips-on-segmenting-your-active-subscribers/)
