@@ -23,7 +23,15 @@ Dedicated IP addresses are available with Pro and Premier Email API accounts as 
 
 **Before you get started**
 
-In order to create an IP pool, your dedicated IPs must have [reverse DNS]({{root_url}}/ui/account-and-settings/how-to-set-up-reverse-dns/) set up.
+In order to create an IP pool, your dedicated IPs must have [reverse DNS]({{root_url}}/ui/account-and-settings/how-to-set-up-reverse-dns/) set up. You also need to check to see if the IP is active before setting up an IP Pool.
+
+*To activate an IP in your account*:
+
+1. Log into your SendGrid account.  
+1. Navigate to **Settings** and then select **IP Addresses**.  
+1. Find the ip address you want to activate and then click **Edit**.  
+1. Check "Allow my account to send mail using this IP address"
+1. Then click **Save**.
 
 *To create an IP Pool:*
 
