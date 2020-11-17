@@ -19,7 +19,7 @@ If you would like to receive a notification for each bounce message, you can tur
 
 ## 	Searching Bounces by Date
 
-In the top right corner, you will see a calendar icon. Click this and choose the unsubscribe dates you would like to search between. Your recipient list will refresh, showing the recipients who unsubscribed between these dates.
+In the top right corner, you will see a calendar icon. Click this and choose the dates you would like to search between. Your recipient list will refresh, showing the recipients who bounced between these dates.
 
 ## 	Download Bounces as CSV
 
