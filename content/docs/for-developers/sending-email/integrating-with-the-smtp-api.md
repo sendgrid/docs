@@ -1,7 +1,7 @@
 ---
 seo:
   title: Integrating with the SMTP API
-  description: Set your systems up to use SendGrid SMTP API
+  description: Set your systems up to use SendGrid's SMTP API
   keywords: ports, connection, SMTP, send email, integrate, rate limits, setting up
 title: Integrating with the SMTP API
 group: smtp
@@ -13,29 +13,30 @@ navigation:
 
 ## 	Integrating with SendGrid
 
-*To integrate with SendGrids SMTP API:*
+*To integrate with SendGrid's SMTP API:*
 
 1. [Create an API Key](https://app.sendgrid.com/settings/api_keys) with at least "Mail" permissions.
 2. Set the server host in your email client or application to `smtp.sendgrid.net`.
     * This setting is sometimes referred to as the _external SMTP server_ or the _SMTP relay_.
 3. Set your username to `apikey`.
 4. Set your password to the API key generated in step 1.
-5. Set the port to `587`.
+5. Set the port to `587` (or as specified below).
 
-Please note that you are sending just one header. Failure to do so, may cause unwanted consequences with inconsistent behavior. Now that you've integrated, learn to [build SMTP email]({{root_url}}/for-developers/sending-email/building-an-x-smtpapi-header/).
-
- ### 	SMTP Ports
+### SMTP ports
 
 - For an unencrypted or a [TLS connection]({{root_url}}/ui/sending-email/ssl-vs-tls/), use port `25`, `2525`, or `587`.
 - For a [SSL connection]({{root_url}}/ui/sending-email/tls/), use port `465`.
 
- ### 	Rate limits
+### Build SMTP email
+
+Now that you've integrated, learn to [build SMTP email]({{root_url}}/for-developers/sending-email/building-an-x-smtpapi-header/).
+
+### Rate limits
 
 - You may send up to **5k messages per SMTP connection**.
 - You may open up to **10k concurrent connections from a single server**.
 
-## 	Additional Resources
-
+## 	Additional resources
 
 - [Sending email]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/)
 - [Getting Started with the API]({{root_url}}/api-reference/)

@@ -44,9 +44,9 @@ SMTP works by passing a JSON string with as many SMTP objects as you want to Sen
 ### Limitations
 
 - Ensure that you are sending just ONE header. Failure to do so, may cause unwanted consequences with inconsistent behavior. 
-- There is a hard limit of 10,000 addresses in a multiple recipient email. However, the best practice is to split up large jobs to around 1,000 recipients - this allows better processing load distribution. If you have a large number of additional substitutions or sections in the headers, it is best to split the send into even smaller groups.
-- When using the X-SMTPAPI to send to multiple recipients, you cannot use the standard SMTP protocols "TO" field to send to multiple recipients because doing so can generate duplicate messages to the addresses listed in both. For more information, see [RFC 5321](https://tools.ietf.org/html/rfc5321).
-- Ensure that the header is limited to a maximum total line length of 1,000 characters. Failure to do this can cause intermediate MTA's to split the header on non-space boundaries- this causes inserted spaces in the final email. If your email is going through another MTA before reaching SendGrid, it is likely to have an even lower setting for maximum header length and may truncate the header.
+- There is a hard limit of 10,000 addresses in a multiple recipient email. However, the best practice is to split up large jobs to around 1,000 recipients, which allows better processing load distribution. If you have a large number of additional substitutions or sections in the headers, it is best to split the send into even smaller groups.
+- When using the X-SMTPAPI to send to multiple recipients, you cannot use the standard SMTP protocol's "TO" field to send to multiple recipients because doing so can generate duplicate messages to the addresses listed in both. For more information, see [RFC 5321](https://tools.ietf.org/html/rfc5321).
+- Ensure that the header is limited to a maximum total line length of 1,000 characters. Failure to do this can cause intermediate MTAs to split the header on non-space boundaries, which causes inserted spaces in the final email. If your email is going through another MTA before reaching SendGrid, it is likely to have an even lower setting for maximum header length and may truncate the header.
 - When using the API, if our system encounters a parsing error, the message will be bounced to the address specified in the MAIL FROM portion of the SMTP session. The MAIL FROM address is re-written when we send the email out for final delivery, so it is safe to set this to an address that can receive the bounces so that you will be alerted to any errors.
 - When sending Unicode characters via the SMTP API, you should escape these characters using the `\u` escape character. When you do this, Unicode characters like `á` becomes `\u00E1`.
 
@@ -54,7 +54,7 @@ SMTP works by passing a JSON string with as many SMTP objects as you want to Sen
 
 You can customize the emails you send via SMTP by using different settings (also referred to as filters). Change these settings in the **X-SMTPAPI header**.
 
-The X-SMTPAPI header is a JSON-encoded associative array consisting of several sections, below are examples of JSON strings using each section. Add this header to any SMTP message sent to SendGrid and the instructions in the header will be interpreted and applied to that message’s transaction. You can enable these sections with the X-SMTPAPI header:
+The X-SMTPAPI header is a JSON-encoded object (key-value pairs) consisting of several sections. Below are examples of JSON strings using each section. Add this header to any SMTP message sent to SendGrid and the instructions in the header will be interpreted and applied to that message’s transaction. You can enable these sections with the X-SMTPAPI header:
 
 - [Scheduling Your Send](#scheduling-your-send)
 - [Substitution Tags](#substitution-tags)
@@ -98,7 +98,7 @@ To define the value that will replace the {{name}} tag, define the following in 
 
 ```json
 {
-  "to": ["john.doeexampexample@example.com", "example@example.com"],
+  "to": ["john.doe@example.com", "jan.doe@example.com"],
   "sub": {
     "{{name}}": ["John", "Jane"]
   }
@@ -108,6 +108,12 @@ To define the value that will replace the {{name}} tag, define the following in 
 For more information, see our [substitution tags documentation]({{root_url}}/for-developers/sending-email/substitution-tags/).
 
 ### Section Tags
+
+<call-out type="warning">
+
+This feature has been deprecated.
+
+</call-out>
 
 Section tags are similar to substitution tags, but rather than replace tags with content for each recipient; section tags allow you to replace a tag with more generic content— like a salutation.
 
@@ -141,7 +147,7 @@ Categories allow you to track your emails according to broad topics that you def
 }
 ```
 
-For more information, see our [categories documentation]({{root_url}}/for-developers/sending-email/categories/)
+For more information, see our [categories documentation]({{root_url}}/for-developers/sending-email/categories/).
 
 <call-out>
 
