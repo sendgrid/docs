@@ -13,7 +13,7 @@ navigation:
 
 There are several ways you can get started with the SendGrid API.
 
-## 	Prerequisites for sending your first email with the SendGrid API
+## Prerequisites for sending your first email with the SendGrid API
 
 These instructions describe how to send your first email using cURL calls. This is one of many ways to send email with the SendGrid API - we also have [PHP](https://github.com/sendgrid/sendgrid-php), [Python](https://github.com/sendgrid/sendgrid-python), [Node.js](https://github.com/sendgrid/sendgrid-nodejs), [Java](https://github.com/sendgrid/sendgrid-java), [C#](https://github.com/sendgrid/sendgrid-csharp), [Go](https://github.com/sendgrid/sendgrid-go), and [Ruby](https://github.com/sendgrid/sendgrid-ruby) libraries.
 
@@ -25,27 +25,33 @@ Before you can start using the API, you need to do the following:
 
 <call-out>
 
-Curl comes standard on Mac operating systems.
+cURL comes standard on Mac operating systems.
 
 </call-out>
 
-## 	How to send an API email
+## How to send an API email
 
- ### 	Build your API call
+### Build your API call
 
 Your API call must have the following components:
 
-* **A host.** The host for Web API v3 requests is always `https://api.sendgrid.com/v3/`
-* **An [Authorization header](https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-authentication#authorization-header).** An [API Key](https://app.sendgrid.com/settings/api_keys) must be included in the Authorization header.
-* **A request.** When submitting data to a resource via POST or PUT, you must submit your payload in JSON.
+- **A host.** The host for Web API v3 requests is always `https://api.sendgrid.com/v3/`
+- **An [Authorization header](https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-authentication#authorization-header).** An [API Key](https://app.sendgrid.com/settings/api_keys) must be included in the Authorization header.
+- **A request.** When submitting data to a resource via POST or PUT, you must submit your payload in JSON.
 
 <call-out>
 
-**Message size limit:**  The total message size should not exceed 20MB. This includes the message itself, headers, and the combined size of any attachments.
+**Message size limit:** The total message size should not exceed 20MB. This includes the message itself, headers, and the combined size of any attachments.
 
 </call-out>
 
- ### 	Send your email using the API
+### Send your email using the API
+
+<call-out type="warning">
+
+Please note that Basic Authentication is no longer accepted; you must use an API key.
+
+</call-out>
 
 _To Send an email using the SendGrid API:_
 
@@ -69,24 +75,19 @@ curl --request POST \
 
 If you have not yet set up [Sender Authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/) in your account, you may need to check your spam folder for the email you just sent.
 
-
 </call-out>
 
 <call-out-link linktext="IMPLEMENTATION SERVICES" img="/img/expert-insights-promo1.png" link="https://sendgrid.com/solutions/email-implementation/">
 
-
 ### Do you want expert help to get your email program started on the right foot?
-
 
 Save time and feel confident you are set up for long-term success with Email Implementation. Our experts will work as an extension of your team to ensure your email program is correctly set up and delivering value for your business.
 
-
 </call-out-link>
 
+### API response messages
 
- ### 	API response messages
-
-All responses are returned in JSON format. We specify this by sending the ``Content-Type`` header. The Web API v3 provides a selection of [response codes](https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-responses#status-codes), [content-type headers](https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-responses#content-type-header), and [pagination](https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-responses#pagination) options to help you interpret the responses to your API requests.
+All responses are returned in JSON format. We specify this by sending the `Content-Type` header. The Web API v3 provides a selection of [response codes](https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-responses#status-codes), [content-type headers](https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-responses#content-type-header), and [pagination](https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-responses#pagination) options to help you interpret the responses to your API requests.
 
 <call-out>
 
@@ -94,7 +95,7 @@ Get additional onboarding support. Save time, increase the quality of your sendi
 
 </call-out>
 
-## 	Next steps
+## Next steps
 
 For more information on SendGrid and where you can go from here, check out these pages:
 
