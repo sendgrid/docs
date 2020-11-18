@@ -13,7 +13,7 @@ navigation:
 
 <call-out type="warning">
 
-Two-Factor Authentication is required as of Q4 2020, and all Twilio SendGrid API endpoints will reject API requests made with a username and password via Basic Authentication.
+Two-Factor Authentication is required as of Q4 2020, and all Twilio SendGrid API endpoints will reject new API requests and SMTP configurations made with a username and password via Basic Authentication.
 
 </call-out>
 
