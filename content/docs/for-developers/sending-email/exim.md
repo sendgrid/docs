@@ -48,8 +48,14 @@ MAIN_TLS_ENABLE = 1
 
 Enter credentials that will allow Exim to access SendGrid in **/etc/exim4/passwd.client**:
 
+<call-out>
+
+Note that you must use an API key to authenticate. Do this by setting your username to 'apikey' and your password to your API key's actual value (the string provided by Twilio SendGrid when you created the key).
+
+</call-out>
+
 ```bash
-*:sendgridusername:sendgridpassword
+*:apikey:<YourAPIKey>
 ```
 
 Once you have completed and saved all changes to Exim's configuration files, you will need to restart it to activate those changes:
@@ -58,9 +64,8 @@ Once you have completed and saved all changes to Exim's configuration files, you
 $ /etc/init.d/exim4 restart
 ```
 
+## cPanel
 
-## 	cPanel
- 	
 If you are using cPanel with Exim and want to relay your email through SendGrid, go to **Main \> Service Configuration \> Exim Configuration Editor**, click on the Advanced Editor button, and enter the following in the **AUTH** Box:
 
 ```bash
@@ -69,7 +74,7 @@ begin authenticators
 sendgrid_login:
   driver = plaintext
   public_name = LOGIN
-  client_send = : YourSendGridUsername : YourSendGridPassword
+  client_send = : apikey : <YourAPIKey>
 ```
 
 <call-out>
@@ -106,6 +111,6 @@ Once you have completed and saved all changes to Exim's configuration files, you
 $ /etc/init.d/exim4 restart
 ```
 
-## 	Exim Documentation
+## Exim Documentation
 
 If your version of Exim does not match the version above or you are not finding the answer you need, please check out the Official [Exim Documentation](http://www.exim.org/docs.html) for more information.
