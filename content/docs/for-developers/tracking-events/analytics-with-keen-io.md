@@ -32,6 +32,8 @@ It only takes a couple of minutes to start streaming email event data from SendG
 
 ![SendGrid - Mail Settings - Event Webhook]({{root_url}}/images/keen/sendgrid_mailsettings_eventwebhook.png)
 
+The HTTP Post URL is the endpoint where SendGrid will stream all of your email data.
+
  ```
  https://api.keen.io/3.0/projects/YOUR_KEEN_PROJECT_ID/email/sendgrid/1.0?api_key=YOUR_KEEN_API_WRITE_KEY
  ```
