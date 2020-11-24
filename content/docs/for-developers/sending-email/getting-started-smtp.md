@@ -13,71 +13,150 @@ navigation:
 
 You can also send email with [the UI]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/) and with [the API]({{root_url}}/api-reference/).
 
-
 ## What is SMTP?
 
-[SMTP]({{root_url}}/glossary/smtp/), or _simple mail transfer protocol_, is a quick and easy way to send email from one server to another. SendGrid provides an SMTP service that allows you to deliver your email via our server instead of your client or server.
+[Simple Mail Transfer Protocol (SMTP)]({{root_url}}/glossary/smtp/) is a quick and easy way to send email from one server to another. SendGrid provides an SMTP service that allows you to deliver your email via our servers instead of your own client or server. This means you can count on SendGrid's delivery at scale for your SMTP needs.
 
-SendGrid’s SMTP API allows developers to specify custom handling instructions for email using an X-SMTPAPI header inserted into the message. The header is a JSON encoded list of instructions and options for that email.
-
-The X-SMTPAPI headers that you add are stripped from the final email because they are instruction headers for how SendGrid will handle your email.
+SendGrid’s SMTP API also allows you to specify custom email handling instructions using a JSON encoded list called the [X-SMTPAPI header]({{root_url}}/for-developers/sending-email/building-an-x-smtpapi-header/). The X-SMTPAPI header is parsed by SendGrid to modify your message in the ways you specify.
 
 For a deeper dive into what SMTP is, the benefits of sending an email with SMTP, and how SendGrid can help, see the [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/) on our blog.
 
 ## Sending a test SMTP email with Telnet
 
+This page will help you send a first test message using Telnet. Once you complete this process, you will be better prepared to explore and build messages using the [X-SMTPAPI header]({{root_url}}/for-developers/sending-email/building-an-x-smtpapi-header/).
 
-### Before you begin
+### Prerequisites
 
-- Create a SendGrid API key on the [API Keys page](https://app.sendgrid.com/settings/api_keys).
-- Open your command line, bash, shell, or Terminal functionality (depending on what OS you are using). You'll use this window to input the commands to initiate a telnet connection.
-- Convert your API key to Base64. It is not secure to put your API key into an external webpage for a conversion, so we recommend using a bash conversion. If you are on Mac or Linux, you can use the pre-installed OpenSSL package. Use this cmd to convert your API key using OpenSSL: `echo -n '<<YOUR_API_KEY>>' | openssl base64`. Save your converted key for a later step.
+Be sure to perform the following prerequisites to complete this tutorial.
+
+1. Sign up for a [SendGrid account](https://signup.sendgrid.com/)
+2. Create and store a SendGrid [API key](https://app.sendgrid.com/settings/api_keys) with full access "Mail Send" permissions.
+3. Verify your [Sender Identity]({{root_url}}/for-developers/sending-email/sender-identity/)
+4. Open your shell, also commonly referred to as a terminal, command prompt, or command line. You'll use the shell to encode your API key and input the commands that initiate a Telnet connection.
+
+Once you have your shell open and have saved your API key, you must Base64 encode the API key. Note that it is not secure to put your API key into an external webpage for a conversion, so we recommend using a conversion in your shell. If you are on Mac or Linux, you can use the pre-installed OpenSSL package to Base64 encode a string with the following command.
+
+```shell
+echo -n '<<YOUR_API_KEY>>' | openssl base64
+```
+
+Save your encoded key for a later. Also, be sure your have not included any newline or whitespace characters by accident. This can happen when copying the encoded key from a shell that line wraps output.
 
 <call-out type="warning">
 
-Telnet does not register backspaces correctly - so you have to type your commands correctly (or copy and paste it from here).
+Telnet does not register backspaces correctly, so you must type your commands correctly or copy and paste them from this page.
 
 </call-out>
 
-### To send SMTP email using Telnet:
+### Send an SMTP email using Telnet:
 
 <call-out>
 
-If you receive this error: `'telnet' is not recognized as an internal or external command, operable program or batch file`, you need to install Telnet on your machine. Telnet comes natively on most operating systems.
+You may need to install Telnet on your machine. Telnet comes natively on some operating systems; However, recent releases of MacOS no longer include Telnet, and Telnet must be enabled manually on Windows 10.
+
+You can install Telnet on MacOS using [Homebrew](https://brew.sh/).
+
+To enable Telnet on Windows 10, navigate to **Windows Features** > **Turn Windows Features on or off** from the Windows **Control Panel**. Check the box next to **Telnet Client**, and select **OK**.
 
 </call-out>
 
-1. Start your session by typing in the terminal: `TELNET smtp.sendgrid.net 25`.
-    <br>SendGrid accepts unencrypted and TLS connections on ports **25**, **587**, & **2525**. You can also connect via SSL on port **465**.
-    <br>Many hosting providers and ISPs block port 25 as a default practice. If this is the case, contact your host/ISP to find out which ports are open for outgoing SMTP relay. We recommend port 587 to avoid any rate limiting that your server host may apply.
-1. Once you successfully connect to the SendGrid, log in to the server by typing `AUTH LOGIN`.
-    <br>The mail server responds with `334 VXNlcm5hbWU6`, a Base64 encoded request for your username.
-1. Input the API username encoded in Base64. Everyone's username is `apikey`, which is `YXBpa2V5` in Base64.
-    <br>The mail server responds with `334 UGFzc3dvcmQ6`. This response is a Base64 encoded request for your password (your API Key).
-1. Enter your Base64 converted API key in the next line as the password.
-    <br>The mail server responds with `235 Authentication successful`. Getting this far indicates that your connection to smtp.sendgrid.net over the chosen port is open and that your API key is valid.
-1. Next, add the email that you’re sending from: `mail from:<<SENDER_EMAIL>>`.
-    <br>The mail server responds with `250 Sender address accepted`.
-1. Add the email that you’re sending to: `rcpt to:<<RECIPIENT_ADDRESS>>`.
-    <br>The mail server responds with `250 Recipient address accepted`.
-1. On the next line, type `DATA` - this indicates that you’re typing the email content.
-1. Optionally, add a mail-to header to add the name and email address of the recipient to the email header:
-    <br>`To: <<NAME>> <<EMAIL>>`
-    <br>Press `[Enter]`
-1. Next, add a from header to add the name and email address of the sender to the email header - if not included, SendGrid blocks your email because it doesn’t follow RFC 5322 compliance guidelines:
-    <br>`From: <<NAME>> <<EMAIL>`
-    <br>Press `[Enter]`
-1. Include a subject line:
-    <br>`Subject: <<EMAIL_SUBJECT>>`
-    <br>Press `[Enter]`
-1. Add the content of the message:
-    <br>`"<<MESSAGE>>"`. For example: `“This is a test for the SMTP relay."`
-    <br>Press `[Enter]`
-1. Finally, send the email by typing a period, and then pressing enter:
-    <br>`.`
-    <br>Press `[Enter]`
-    <br>The mail server returns `250 Ok: queued as A1AywHK7T_itbGWaASw2YQ` - This means the email has been queued to send. This queue moves very quickly.
-1. Exit the Telnet connection with: `quit`.
+1. Start a Telnet session by typing the following in the terminal:
+
+```shell
+TELNET smtp.sendgrid.net 25
+```
+
+SendGrid accepts unencrypted and TLS connections on ports **25**, **587**, & **2525**. You can also connect via SSL on port **465**. Many hosting providers and ISPs block port 25 as a default practice. If your Telent session continually times out or will not connect using port 25, it is likely that your ISP or hosting provider is blocking the port. You can contact your host/ISP to find out which ports are open for outgoing SMTP relay. We recommend using port 587 to avoid any rate limiting that your server host may apply.
+
+2. Once you successfully connect to SendGrid, log in to the server by typing the following:
+
+```shell
+AUTH LOGIN
+```
+
+The mail server should respond with `334 VXNlcm5hbWU6`, which is a Base64 encoded request for your username.
+
+3. Input `YXBpa2V5` and press **Enter** on your keyboard. Twilio SendGrid requires you to authenticate using an API key. When using Basic Authentication and an API key, you must use the string `apikey` in place of your account username. The string `apikey` is `YXBpa2V5` when Base64 encoded, which is why we use it in this step.
+
+The mail server should respond with `334 UGFzc3dvcmQ6`. This response is a Base64 encoded request for your password (your API Key).
+
+4. Enter your Base64 converted API key in the next line as the password and press **Enter**.
+
+The mail server should respond with `235 Authentication successful`. Getting this far indicates that your connection to `smtp.sendgrid.net` over the chosen port is open and that your API key is valid.
+
+5. Next, add the email that you’re sending from using the SMTP MAIL FROM command and press **Enter**.
+
+```shell
+MAIL FROM:<<SENDER_EMAIL>>
+```
+
+The mail server should respond with `250 Sender address accepted`.
+
+6. Add the email that you’re sending to using the SMTP RCPT TO command and press **Enter**.
+
+```shell
+RCPT TO:<<RECIPIENT_ADDRESS>>
+```
+
+The mail server should respond with `250 Recipient address accepted`.
+
+7. On the next line, type `DATA` and press **Enter**.
+
+The mail server should respond with `354 Continue`. Unlike the MAIL FROM and RCPT TO commands, which are part of the email envelope, the DATA command is not meant to contain information that routes your email from a sender to a recipient. Instead, DATA allows you to modify the content of your message.
+
+8. Optionally, add a mail-to header to add the name and email address of the recipient to the email header and press **Enter**.
+
+```shell
+To: "<<RecipientName>>" <<RecipientEmailAddress>>
+```
+
+9. Next, add a from header to add the name and email address of the sender to the email header and press **Enter**. If a from header is not included, SendGrid will block your email because it doesn’t follow RFC 5322 compliance guidelines.
+
+```shell
+From: "<<SenderName>>" <<SenderEmail>>
+```
+
+10. Include a subject line and press **Enter**.
+
+```shell
+Subject: <<EMAIL_SUBJECT>>
+```
+
+11. Add the body content of the message and press **Enter**.
+
+```shell
+"<<MESSAGE>>"
+```
+
+For example:
+
+```shell
+“This is a test for the SMTP relay."
+```
+
+12. Finally, send the email by typing a period, `.`, and then pressing **Enter**.
+
+The mail server should return `250 Ok: queued as A1AywHK7T_itbGWaASw2YQ`. This means the email has been queued to send. The queue moves very quickly, and you should see mail delivered to the designated recipients shortly.
+
+13. Exit the Telnet connection by typing `quit` and pressing **Enter**.
+
+The full command should look like the following example.
+
+```shell
+235 Authentication successful
+MAIL FROM:tiramisu@example.com
+250 Sender address accepted
+RCPT TO:person1@sendgrid.com
+250 Recipient address accepted
+DATA
+354 Continue
+From: "Tira Misu" <tiramisu@example.com>
+To: <person1@sendgrid.com>
+Subject: Test message subject
+This is the test message body.
+.
+250 Ok: queued as Yo60h6C5ScGPeP5fUWU3K
+```
 
 Now that you've sent a test email, learn to [integrate your servers with our SMTP service]({{root_url}}/for-developers/sending-email/integrating-with-the-smtp-api/).
 
@@ -87,18 +166,13 @@ Message size limit: The total message size should not exceed 20MB. This includes
 
 </call-out>
 
-
 <call-out-link linktext="IMPLEMENTATION SERVICES" img="/img/expert-insights-promo1.png" link="https://sendgrid.com/solutions/email-implementation/">
-
 
 ### Do you want expert help to get your email program started on the right foot?
 
-
 Save time and feel confident you are set up for long-term success with Email Implementation. Our experts will work as an extension of your team to ensure your email program is correctly set up and delivering value for your business.
 
-
 </call-out-link>
-
 
 ## Additional Resources
 
