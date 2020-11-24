@@ -18,7 +18,7 @@ One of the primary competitors to the Salesforce CRM, [SugarCRM](http://www.suga
 
 ## How do I integrate SugarCRM with SendGrid
 
-SendGrid customers utilizing our service for their transactional email and wanting to use SugarCRM for their email marketing campaigns can easily make a few settings changes within their SugarCRM account in order to point their outgoing mail to us, so we can deliver it to the end recipient. In order to send mail from SugarCRM to SendGrid, navigate the following on the SugarCRM site: Admin > Email Settings > Choose "SMTP" as the mail transfer agent > Enter required server info as follows:
+SendGrid customers utilizing our service for their transactional email and wanting to use SugarCRM for their email marketing campaigns can easily make a few settings changes within their SugarCRM account in order to point their outgoing mail to us, so we can deliver it to the end recipient. In order to send mail from SugarCRM to SendGrid, navigate the following on the SugarCRM site: **Admin** > **Email Settings** and choose **SMTP** as the mail transfer agent. Then enter the required server info as follows:
 
 - **SMTP Hostname** : smtp.sendgrid.net
 - **SMTP Username** : 'apikey'
