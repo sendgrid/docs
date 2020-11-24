@@ -98,7 +98,9 @@ The mail server should respond with `250 Sender address accepted`.
 RCPT TO:<<RECIPIENT_ADDRESS>>
 ```
 
-The mail server should respond with `250 Recipient address accepted`.
+Note that you can add more RCPT TO addresses during this step. Repeat the process by adding another RCPT TO command and pressing **Enter** for each recipient you intend to deliver the message to.
+
+The mail server should respond with `250 Recipient address accepted` after each recipient is added.
 
 7. On the next line, type `DATA` and press **Enter**.
 

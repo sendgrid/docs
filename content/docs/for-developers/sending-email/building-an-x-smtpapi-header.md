@@ -54,7 +54,7 @@ The X-SMTPAPI is a powerful way to modify your SMTP messages. However, there are
 }
 ```
 
-You can customize the emails you send via SMTP by using different settings (also referred to as filters).
+You can customize the emails you send via SMTP by using different settings (also referred to as [filters](#smtp-filters)).
 
 The X-SMTPAPI header is a JSON-encoded object (key-value pairs) consisting of several sections. Below are examples of JSON strings using each section.
 
@@ -147,15 +147,13 @@ Using the X-SMTPAPI header achieves BCC behavior in a slightly different way tha
 }
 ```
 
-When SendGrid receives the message and parses the X-SMTPAPI header, it will convert each address in the X-SMTPAPI "to" field to a separate RCPT TO or _envelope_ address. The X-SMTPAPI "to" field in the previous code sample will eventually look something like the following example.
+When SendGrid receives the message and parses the X-SMTPAPI header, it will treat each recipient address in the X-SMTPAPI "to" field as a separate RCTP TO or _envelope_ address. This means each recipient will receive the same DATA content, but with an added friendly display "to" header set to its own address (Each recipient sees only their own address). Recipients will therefore not be visible to other recipients of the message. A single recipient in the X-SMTPAPI "to" field in the previous code sample will eventually look something like the following example.
 
 ```shell
 235 Authentication successful
 MAIL FROM:test@example.com
 250 Sender address accepted
 RCPT TO:person1@sendgrid.com
-250 Recipient address accepted
-RCPT TO:person2@sendgrid.com
 250 Recipient address accepted
 ```
 
