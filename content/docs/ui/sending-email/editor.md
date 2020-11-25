@@ -387,7 +387,7 @@ You can add the following drag & drop modules to your email:
   </tr>
   <tr>
     <td>Columns</td>
-    <td>This module contains multiple drop zones for other non-column modules.</td>
+    <td>There are multiple column widths available using the column module. Each column contains multiple drop zones for other non-column modules. For more about the columns modules, see <a href="#columns">columns</a> following this table.</td>
     <td>container background, container padding, cell padding, columns</td>
   </tr>
   <tr>
@@ -431,6 +431,10 @@ You can add the following drag & drop modules to your email:
     <td>Background color, padding, line height, font, font size, link color, alignment, Address Line, Unsubscribe Settings.</td>
   </tr>
 </table>
+
+#### Columns
+
+There are multiple column modules, each supporting different width ratios divided among either a 3 or 4 column layout.
 
 ### Using Global Styles
 

@@ -15,7 +15,20 @@ Now that you've [sent a test SMTP email with Telnet]({{root_url}}/for-developers
 
 ## Getting started building
 
-SMTP works by passing a JSON string with as many SMTP objects as you want to SendGrid. To do this, add the JSON string to your message under a header named "X-SMTPAPI" like this:
+The Twilio SendGrid SMTP service allows you to pass SendGrid a JSON string with as many SMTP objects as you want. This functionality is made possible by including a header named X-SMTPAPI. This page provides instructions for using the X-SMTPAPI to modify and control your mail send.
+
+### Limitations
+
+The X-SMTPAPI is a powerful way to modify your SMTP messages. However, there are several things to keep in mind when using the header.
+
+- Ensure that you are sending just ONE X-SMTPAPI header per SMTP transaction. Failure to do so, may cause unwanted consequences with inconsistent behavior.
+- There is a hard limit of 10,000 addresses in a multiple recipient email. However, the best practice is to split large jobs into separate transactions of approximately 1,000 recipients, which allows better processing load distribution. If you have a large number of additional substitutions or sections in the headers, it is best to split the send into even smaller groups.
+- When using the X-SMTPAPI header to send to multiple recipients, you cannot use SMTP's standard RCPT TO command to also send to multiple recipients. Doing so can generate duplicate messages to the addresses listed in both the X-SMTPAPI "to" field and the RCPT list. For more information, see [RFC 5321](https://tools.ietf.org/html/rfc5321).
+- Ensure that the header is limited to a maximum total line length of 1,000 characters. Failure to do this can cause intermediate Mail Transfer Agents (MTAs) to split the header on non-space boundaries, which causes inserted spaces in the final email. If your email is going through another MTA before reaching SendGrid, it is likely that the other MTA will have an even lower setting for maximum header length and may truncate the header.
+- When using the X-SMTPAPI header, if our system encounters a parsing error, the message will be bounced to the address specified in the MAIL FROM portion of the SMTP session. The MAIL FROM address is re-written when we send the email for final delivery, so it is safe to set the MAIL FROM to an address that can receive the bounces and alert you to any errors.
+- When sending Unicode characters via the SMTP API, you should escape these characters using the `\u` escape character. For example, the Unicode `á` character will look like this: `\u00E1`.
+
+## Customizing your send (filters)
 
 ```json
 {
@@ -41,22 +54,12 @@ SMTP works by passing a JSON string with as many SMTP objects as you want to Sen
 }
 ```
 
-### Limitations
+You can customize the emails you send via SMTP by using different settings (also referred to as [filters](#smtp-filters)).
 
-- Ensure that you are sending just ONE header. Failure to do so, may cause unwanted consequences with inconsistent behavior. 
-- There is a hard limit of 10,000 addresses in a multiple recipient email. However, the best practice is to split up large jobs to around 1,000 recipients, which allows better processing load distribution. If you have a large number of additional substitutions or sections in the headers, it is best to split the send into even smaller groups.
-- When using the X-SMTPAPI to send to multiple recipients, you cannot use the standard SMTP protocol's "TO" field to send to multiple recipients because doing so can generate duplicate messages to the addresses listed in both. For more information, see [RFC 5321](https://tools.ietf.org/html/rfc5321).
-- Ensure that the header is limited to a maximum total line length of 1,000 characters. Failure to do this can cause intermediate MTAs to split the header on non-space boundaries, which causes inserted spaces in the final email. If your email is going through another MTA before reaching SendGrid, it is likely to have an even lower setting for maximum header length and may truncate the header.
-- When using the API, if our system encounters a parsing error, the message will be bounced to the address specified in the MAIL FROM portion of the SMTP session. The MAIL FROM address is re-written when we send the email out for final delivery, so it is safe to set this to an address that can receive the bounces so that you will be alerted to any errors.
-- When sending Unicode characters via the SMTP API, you should escape these characters using the `\u` escape character. When you do this, Unicode characters like `á` becomes `\u00E1`.
-
-## Customizing your send (filters)
-
-You can customize the emails you send via SMTP by using different settings (also referred to as filters). Change these settings in the **X-SMTPAPI header**.
-
-The X-SMTPAPI header is a JSON-encoded object (key-value pairs) consisting of several sections. Below are examples of JSON strings using each section. Add this header to any SMTP message sent to SendGrid and the instructions in the header will be interpreted and applied to that message’s transaction. You can enable these sections with the X-SMTPAPI header:
+The X-SMTPAPI header is a JSON-encoded object (key-value pairs) consisting of several sections. Below are examples of JSON strings using each section.
 
 - [Scheduling Your Send](#scheduling-your-send)
+- [BCC Behavior](#bcc-behavior)
 - [Substitution Tags](#substitution-tags)
 - [Suppression Groups](#suppression-groups)
 - [Categories](#categories)
@@ -66,7 +69,7 @@ The X-SMTPAPI header is a JSON-encoded object (key-value pairs) consisting of se
 
 ### Scheduling Your Send
 
-Schedule your email send time using the `send_at` parameter within your X-SMTPAPI header. Set the value of `send_at` to the [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time).
+Schedule your email send time using the `send_at` parameter within your X-SMTPAPI header. Set the value of `send_at` formatted as a [UNIX timestamp](https://en.wikipedia.org/wiki/Unix_time).
 
 ```json
 {
@@ -75,6 +78,86 @@ Schedule your email send time using the `send_at` parameter within your X-SMTPAP
 ```
 
 For more information, see our [scheduling parameters documentation]({{root_url}}/for-developers/sending-email/scheduling-parameters/).
+
+### BCC behavior
+
+It is possible to simulate blind carbon copy (BCC) behavior using SMTP with or without the X-SMTPAPI header. The concept of BCC exists outside of SMTP as defined by [RFC 5321](https://tools.ietf.org/html/rfc5321).
+
+When sending email with SMTP, all recipients are listed using SMTP's RCPT (recipient) command. In addition to the sender, which is set with SMTP's MAIL command, these RCPT addresses can be thought of as part of the message envelope—they instruct sending email servers where to deliver the message. These addresses are not designated as carbon copy (CC), BCC, or another type of recipient—they are all just recipients.
+
+The SMTP DATA command follows the MAIL and RCPT commands in an SMTP transaction. The DATA command allows you to insert message headers, which can be thought of as portions of the email body or the text inside the _envelope_. The DATA command is what allows you to create BCC behavior using SMTP without the X-SMTPAPI.
+
+#### BCC without the X-SMTPAPI header
+
+The following code shows an example of an SMTP transaction with BCC behavior. How this example achieves BCC behavior is explained following the example.
+
+```shell
+235 Authentication successful
+MAIL FROM:tiramisu@example.com
+250 Sender address accepted
+RCPT TO:person1@sendgrid.com
+250 Recipient address accepted
+RCPT TO:person2@sendgrid.com
+250 Recipient address accepted
+DATA
+354 Continue
+From: "Tira Misu" <tiramisu@example.com>
+To: <person1@sendgrid.com>
+Subject: Test message subject
+This is the test message body.
+.
+250 Ok: queued as Yo60h6C5ScGPeP5fUWU3Kw
+```
+
+Notice that there are two recipients designated by RCPT commands, "person1@sendgrid.com" and "person2@sendgrid.com." These addresses are both part of the message envelope.
+
+In the DATA command, there is also a "To" header. This header lists only "person1@sendgrid.com." This is where differentiating between the envelop "To" (RCPT TO) and header "To" becomes important. The header "To" set in the DATA command does not tell the sending email server to deliver the message to any address, only the RCPT or envelop "To" does this. The header "To" instead provides recipients with a friendly display of any addresses included in the "To" header.
+
+To achieve BCC behavior, you can deliver a message to a recipient by adding them in a RCPT but omit their address from the header "To". The message will be delivered to each RCPT address, but only the addresses listed in the header "To" will be visible to other recipients.
+
+In the previous code sample, "person2@sendgrid.com" will be treated like a BCC address because that address is not included in the header "To." The "person1@sendgrid.com" is listed in the header "To" and will therefore be visible to other recipients of the message. This means both recipients receive the message, but recipient2@sendgrid.com is not visible to recipient1@sendgrid.com while recipient1@sendgrid.com is visible to recipient2@sendgrid.com.
+
+By omitting any addresses from the header "To," you will be hiding them from the other recipients and therefore treating them like BCC recipients.
+
+#### BCC with the X-SMTPAPI
+
+The following code shows an example of an SMTP transaction with BCC behavior using the X-SMTPAPI header. How this example achieves BCC behavior is explained following the example.
+
+```shell
+235 Authentication successful
+MAIL FROM:tiramisu@example.com
+250 Sender address accepted
+RCPT TO:sender@sendgrid.com
+250 Recipient address accepted
+DATA
+354 Continue
+x-smtpapi: {"to":["person1@sendgrid.com","person2@sendgrid.com"]}
+From: "Tira Misu" <tiramisu@example.com>
+Subject: This is a test
+Body of test message.
+.
+250 Ok: queued as uKIPst3rQtCl_hLVB9RvEw
+```
+
+Using the X-SMTPAPI header achieves BCC behavior in a slightly different way than by omitting addresses from a "To" header. The X-SMTPAPI header's "to" field allows you to set multiple recipients in a JSON array.
+
+```json
+{
+  "to": ["person1@sendgrid.com", "person2@sendgrid.com"]
+}
+```
+
+When SendGrid receives the message and parses the X-SMTPAPI header, it will treat each recipient address in the X-SMTPAPI "to" field as a separate RCTP TO or _envelope_ address. This means each recipient will receive the same DATA content, but with an added friendly display "to" header set to its own address. A single recipient in the X-SMTPAPI "to" field in the previous code sample will eventually look something like the following example.
+
+```shell
+235 Authentication successful
+MAIL FROM:test@example.com
+250 Sender address accepted
+RCPT TO:person1@sendgrid.com
+250 Recipient address accepted
+```
+
+The addresses in the X-SMTPAPI "to" field are not duplicated in a header "To," for all recipients. Only the individual recipient is included in the header "To" for each messages (Each recipient sees only their own address). The additional recipients will therefore not be visible to each recipient of the message.
 
 ### Substitution Tags
 
