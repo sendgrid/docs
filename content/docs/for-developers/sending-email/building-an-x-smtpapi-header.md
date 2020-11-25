@@ -147,7 +147,7 @@ Using the X-SMTPAPI header achieves BCC behavior in a slightly different way tha
 }
 ```
 
-When SendGrid receives the message and parses the X-SMTPAPI header, it will treat each recipient address in the X-SMTPAPI "to" field as a separate RCTP TO or _envelope_ address. This means each recipient will receive the same DATA content, but with an added friendly display "to" header set to its own address (Each recipient sees only their own address). Recipients will therefore not be visible to other recipients of the message. A single recipient in the X-SMTPAPI "to" field in the previous code sample will eventually look something like the following example.
+When SendGrid receives the message and parses the X-SMTPAPI header, it will treat each recipient address in the X-SMTPAPI "to" field as a separate RCTP TO or _envelope_ address. This means each recipient will receive the same DATA content, but with an added friendly display "to" header set to its own address. A single recipient in the X-SMTPAPI "to" field in the previous code sample will eventually look something like the following example.
 
 ```shell
 235 Authentication successful
