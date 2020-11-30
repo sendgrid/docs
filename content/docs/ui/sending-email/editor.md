@@ -387,7 +387,8 @@ You can add the following drag & drop modules to your email:
   </tr>
   <tr>
     <td>Columns</td>
-    <td>This module contains multiple drop zones for other non-column modules.</td>
+    <td>The Columns module comprises multiple column layouts. When you drag a column module into your design, you will be presented with layout options. Each layout provides a number of columns distributed among common width ratios. Available layouts include evenly distributed 1, 2, 3, and 4 columns, 1:2 and 2:1 columns, 1:3 and 3:1 columns.<br><br>
+    Within a column there are multiple drop zones for other non-column modules such as images, buttons, and text.</td>
     <td>container background, container padding, cell padding, columns</td>
   </tr>
   <tr>
