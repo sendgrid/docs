@@ -19,21 +19,22 @@ It only takes a couple of minutes to start streaming email event data from SendG
 
 **Create a Keen and SendGrid account**
 
-1. Create a [Keen account](https://keen.io/users/signup?utm_campaign=SendGrid%202020&utm_source=SendGrid&utm_medium=SendGrid%20Hosted%20Docs) if you don't already have one. 
+1. Create a [Keen account](https://keen.io/users/signup?utm_campaign=SendGrid%202020&utm_source=SendGrid&utm_medium=SendGrid%20Hosted%20Docs) if you don't already have one.
 1. Add a new project in the Keen UI for your SendGrid Email Event Data.
 1. Navigate to the Access tab and copy your Project ID and API Write Key.
-1. Create a [SendGrid account](https://sendgrid.com/user/signup). 
+1. Create a [SendGrid account](https://sendgrid.com/user/signup).
 
 **Activate SendGrid's Event Notification App**
 
-1. Log into your SendGrid account. 
-1. Click **Settings** from the left menu. 
+1. Log into your SendGrid account.
+1. Click **Settings** from the left menu.
 1. Select [**Mail Settings**](http://app.sendgrid.com/settings/mail_settings) and then click **Event Webhook**.
 
 ![SendGrid - Mail Settings - Event Webhook]({{root_url}}/images/keen/sendgrid_mailsettings_eventwebhook.png)
 
+### 	Set the HTTP POST URL
+The HTTP Post URL is the endpoint where SendGrid will stream all of your email data.
 
-![SendGrid- Mail Settings]({{root_url}}/images/keen/sendgrid_mailsettings_eventnotification.png)	The HTTP Post URL is the endpoint where SendGrid will stream all of your email data.
  ```
  https://api.keen.io/3.0/projects/YOUR_KEEN_PROJECT_ID/email/sendgrid/1.0?api_key=YOUR_KEEN_API_WRITE_KEY
  ```
@@ -68,14 +69,14 @@ As SendGrid email data streams to Keen, it will be enhanced using Keen's [Data E
 
 _To explore each data model:_
 1. Log into your Keen account.
-1. Select your SendGrid Project and click **Streams**. 
+1. Select your SendGrid Project and click **Streams**.
 1. In the search bar type in “email” to check out your data collections associated with SendGrid email data. You can click into an email event to view all of the different data you have to work with.
 
 <call-out>
 
 Use the property `message_id` or `singlesend_name` contained in each event to track a particular email across all of these possible actions. Similarly, you can follow a particular user's behavior via the `email` property.
 
-</call-out> 
+</call-out>
 
 
 ## 	Using the Data Explorer
@@ -83,7 +84,7 @@ Use the property `message_id` or `singlesend_name` contained in each event to tr
 *To use the Data Explorer:*
 
 1. Log into your Keen account and then select your project.
-1. Select **Streams**. 
+1. Select **Streams**.
 1. In the "Event Streams" search bar type in “email” to check out your data collections associated with SendGrid email data. A separate Event Collection, aptly named for each type of email event, is created within your Keen Project.
 
 ![Keen Event Streams - SenGrid Email Event Data]({{root_url}}/images/keen/sendgrid_stream_new.png)
@@ -112,17 +113,17 @@ Once you’ve found the query you need, you can either copy the URL right from y
 
 Here’s how:
 
-1. Save your query. Create your query in the Explorer and then click **Run**. 
-2. After running the query, select **Save**. 
+1. Save your query. Create your query in the Explorer and then click **Run**.
+2. After running the query, select **Save**.
 
 ![Save Your Query]({{root_url}}/images/keen/sendgrid_saved_query_new.png)
 
 Saved queries are a super user-friendly way to revisit your favorite metrics. Rather than entering the same query parameters over and over again, queries can be shared with your teammates. Notice that your saved query can be edited and cloned.
 
 Next, you'll want to add your graph to a dashboard.
-1. Navigate to **Dashboards** and select **New Dashboard**. 
-1. Name your dashboard. 
-1. Add the query you saved by hovering over "Add item" and then dragging a metric chart into the dashboard. Select the saved query from a dropdown in the right hand ribbon. 
+1. Navigate to **Dashboards** and select **New Dashboard**.
+1. Name your dashboard.
+1. Add the query you saved by hovering over "Add item" and then dragging a metric chart into the dashboard. Select the saved query from a dropdown in the right hand ribbon.
 1. Click **Save** to save your Dashboard.
 
 ![Add Query to Dashboard]({{root_url}}/images/keen/sendgrid_create_dashboard_new.png)
