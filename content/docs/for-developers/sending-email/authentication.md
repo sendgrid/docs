@@ -54,7 +54,7 @@ Using basic authentication with your account password is not as secure as using 
 
 <call-out type="warning">
 
-If you are currently using Basic authentication, we recommend upgrading your authentication method to Bearer using [API Keys]({{root_url}}/ui/account-and-settings/api-keys/) and then enabling Two-Factor Authentication for improved security. For more information, see [Upgrading your authentication method to API Keys]({{root_url}}/for-developers/sending-email/upgrade-your-authentication-method-to-api-keys/.
+If you are currently using Basic authentication, we recommend upgrading your authentication method to Bearer using [API Keys]({{root_url}}/ui/account-and-settings/api-keys/) and then enabling Two-Factor Authentication for improved security. For more information, see [Upgrading your authentication method to API Keys]({{root_url}}/for-developers/sending-email/upgrade-your-authentication-method-to-api-keys/).
 
 </call-out>
 
