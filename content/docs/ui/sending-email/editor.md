@@ -268,14 +268,13 @@ For contacts with no entry in a custom field, the substitution tag appears blank
 
 #### Preview substitution tags with test data
 
-The Code Editor provides a test data preview feature. This means you can add the reserved and custom fields stored on a contact as well as any other variables you wish to pass into your template, such as order confirmation data. Test data provides a way to be sure that your final design will populate and render the substitutions properly. If you wanted to collaborate on a design for example, having test data stored directly in the design means each teammate can reference the data structure used to populate substitution tags without having to dig into a code base.
+Both the Design and Code editors offer a test data preview feature. This means you can add any Tags you're using in your email design with "test data" values.  Test data provides a way to be sure that your final design will populate and render the substitutions properly. If you wanted to collaborate on a design for example, having test data stored directly in the design means each teammate can see how substitution tags will populate directly from the editor's preview.
 
-1. To access the test data preview, open a design in the Code Editor and select the **Test Data** tab.
-2. The Code Editor's code window will change to a test data window beside the preview of your design.
+1. To access the test data preview from the editor, click **preview** and then **Show Test Data**.
 
 ![The Code Editor's Test Data tab with a side-by-side view of the design and a window to place your test data]({{root_url}}/img/code_editor_test_data_tab.png 'Test Data')
 
-You can place the data for a contact into the code window. Note that the data must be in JavaScript Object Notation (JSON) format. JSON is a way of structuring data in a collection of key/value pairs. For example, if you use the `first_name` substitution tag, `first_name` is the key and the customer's name is the value. These keys can also be thought of as variables. Like a variable in algebra, these variables represent a value you don't yet know. The following sample customer is provided in JSON format for you to experiment with.
+You can place the data for any tags in your design into the Test Data window. Note that the data must be in JavaScript Object Notation (JSON) format which is shown below. JSON is a way of structuring data in a collection of key/value pairs. For example, if you use the `first_name` substitution tag, `first_name` is the key and the customer's name is the value. The following sample code can be copied into Test Data to show a number of reserved fields. You can add to the list following the same format to capture any of your custom fields that are used as tags in your design.
 
 ```json
 {
@@ -288,19 +287,11 @@ You can place the data for a contact into the code window. Note that the data mu
   "city": "Denver",
   "state_province_region": "CO",
   "postal_code": 80202,
-  "country": "United States",
-  "phone_number": "+15555555555",
-  "Sender_Name": "Orders",
-  "Sender_Email": "orders@example2.com",
-  "Sender_Address": "1234 N. Exist St.",
-  "Sender_City": "Portland",
-  "Sender_State": "OR",
-  "Sender_Zip": 97227,
-  "Sender_Country": "United States"
+  "country": "United States"
 }
 ```
 
-4. Once you have test data in place, you should see any substitution tags for which data is present rendered properly.
+4. Once you have test data in place, the preview on the right pane will render your test data within your design as it would appear for recipients.
 
 ![A side-by-side view of the test data and the rendered values in the template]({{root_url}}/img/code_editor_test_data_replaced.png 'Rendered test data')
 
