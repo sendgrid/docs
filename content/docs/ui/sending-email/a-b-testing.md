@@ -89,20 +89,24 @@ To know the direct cause for the best performing variation, we recommend only ma
 Choose a percentage of your contact list that will participate in the A/B test. Each variation of the email will be sent to the same number of contacts within the participating portion of your list.
 
 <call-out>
-The size of your sample can be up to 100% of your contact list. This may be helpful in the event that you would like to run two tests, send each test to a portion of your list, and manually select a winner. 
+The size of your sample can be up to 100% of your contact list. This may be helpful in the event that you would like to run two tests, send each test to a portion of your list, and manually select a winner.
 </call-out>
 
 ## Determine the Winning Criteria for the A/B Test
 
-- **Open Rate**
+Twilio SendGrid can automatically select the winner of a test based on either the open rate or click rate. You can also manually select a winner when neither of the automatic selections suite your needs.
+
+- **Unique Open Rate**
 
   Twilio SendGrid automatically selects the winning variation based on how many recipients [open]({{root_url}}/glossary/opens/) your email.
 
-- **Click Rate**
+- **Unique Click Rate**
 
   Twilio SendGrid automatically selects the winning version based on how many recipients [click]({{root_url}}/glossary/clicks/) links and engage with the content in your email.
 
-## Manually selecting a winner
+- **Manual**
+
+  You can evaluate the performance of all variants following the A/B test duration and manually choose a winner based on each variant's performance across multiple metrics.
 
 ## Set the A/B Test Duration
 
@@ -120,11 +124,52 @@ For example, if you have a one-day sale that happens the day of your Single Send
 
 </call-out>
 
-## Sending the Winning A/B Test Variation
+## Sending the winning A/B test variation
 
-When a variation wins, based on your criteria and duration, you will be notified that a winner was chosen and which variation won. SendGrid will automatically send the winning email variation to the rest of your list.
+### Automatically selected winners
+
+When a variation wins based on unique click rate or unique open rate, you will be notified that a winner was chosen and which variation won. SendGrid will automatically send the winning email variation to the rest of your list.
 
 ![]({{root_url}}/images/ab_testing_4.png 'A/B test winner')
+
+### Manually selecting a winner
+
+There are likely times when neither the open rate nor the click rate alone best measures the success of a message. If, for example, version A had an open rate of 48% while version B had an open rate of 49%, version B would win an automatic selection based on open rate. However, if those two versions also had click rates of 45% for version A and 10% for version B, your winner based on a narrow margin in open rate would be significantly underperforming the alternative version in click rate. This is one scenario in which you could select a manual winner or re-evaluate your criteria for success.
+
+Manually selecting a winner also allows you to prioritize other metrics such as unsubscribes and spam reports.
+
+At the end of the A/B test duration, you will receive an email asking you select the winner of your campaign.
+
+_To manually select the winner_
+
+1. Navigate to the [**Marketing Campaigns** > **Single Sends**](https://mc.sendgrid.com/single-sends) page.
+2. Select the Single Send associated with the completed A/B test.
+3. You will see the performance of each test variant across the following metrics
+   - **Delivered**
+   - **Opens**
+   - **Clicks**
+   - **Unique Opens**
+   - **Click Through Rate**
+   - **Total Click Through Rate**
+   - **Unsubscribes**
+   - **Spam Reports**
+
+![The stats or performance overview page for a Single Send A/B test]({{root_url}}/img/single_send_stats_overview_manualAB.png 'Single Send A/B test stats')
+
+4. Click the radio button beside a test variant to select it as the winner.
+5. Click **Pick Winner**.
+6. You will be presented with a modal asking you to confirm your selection. Click **Confirm** to proceed or **Cancel** to close the modal without selecting a winner.
+7. After clicking **Confirm**, the winner will be sent to the remaining contacts in your list. The winner will also be labeled on the Single Sends Dashboard and the Single Sends statistics overview page.
+
+#### Test expiration
+
+You must select the winner of a manual A/B test within 7 days of the test duration's end. For example, if your test is scheduled to end on January 1st, you must select a winner on or before January 8th. You cannot select a winner of a test that has expired.
+
+You will receive an email letting you know when your test is about to expire. You will also receive an email when a test expires. The last date to select a test winner is also displayed on both the Single Sends overview page and a Single Send's statistics overview page.
+
+![The Single Sends overview page with expired and soon to expire dates highlighted]({{root_url}}/img/select_winnerAB_single_send_index.png 'Single Sends Overiew Page')
+
+![A Single Send's stats overview page with the expiration date highlighted]({{root_url}}/img/select_winner_byAB_stats_page.png 'Single Send A/B test stats page')
 
 ## Additional Resources
 
