@@ -71,7 +71,7 @@ If you would like to use a custom URL for your unsubscribe link, from the Editor
 
 This will expand a new field where you can insert a URL for one of your own pages where recipients can manage their subscription preferences.
 
-To place your Custom Unsubscribe link into your email, highlight any text within the body of your email and click the small link icon to specify a hyperlink. In the URL field that appears, enter the tag `{{{Unsubscribe}}}`. Since you've specified your Custom Unsubscribe Link in the Settings panel, SendGrid will replace the Unsubscribe Tag with your custom URL.
+To place your Custom Unsubscribe link into your email, highlight any text within the body of your email and click the small link icon to specify a hyperlink. In the URL field that appears, enter the tag `{{{unsubscribe}}}`. Since you've specified your Custom Unsubscribe Link in the Settings panel, SendGrid will replace the Unsubscribe Tag with your custom URL.
 
 ## Add recipients to an Unsubscribe Group
 
