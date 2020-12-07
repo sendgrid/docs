@@ -519,7 +519,7 @@ Twilio SendGrid templates support the following conditionals:
 
 ##### Basic greaterThan
 
-<code-group langs="Hanblebars, JSON, HTML">
+<code-group langs="Handlebars, JSON, HTML">
 
 ```handlebars
 <!-- Template -->
@@ -608,7 +608,7 @@ Hello Ben!
 
 ##### Basic lessThan
 
-<code-group langs="Hanblebars, JSON, HTML">
+<code-group langs="Handlebars, JSON, HTML">
 
 ```handlebars
 <!-- Template -->
@@ -708,7 +708,7 @@ When checking for truthiness, be aware that empty strings, zero integers, and ze
 
 ##### Basic equals
 
-<code-group langs="Hanblebars, JSON, HTML">
+<code-group langs="Handlebars, JSON, HTML">
 
 ```handlebars
 <!-- Template -->
@@ -794,7 +794,7 @@ When checking for truthiness, be aware that empty strings, zero integers, and ze
 
 ##### Basic notEquals
 
-<code-group langs="Hanblebars, JSON, HTML">
+<code-group langs="Handlebars, JSON, HTML">
 
 ```handlebars
 <!-- Template -->
@@ -878,7 +878,7 @@ When checking for truthiness, be aware that empty strings, zero integers, and ze
 
 ##### And without else
 
-<code-group langs="Hanblebars, JSON, HTML">
+<code-group langs="Handlebars, JSON, HTML">
 
 ```handlebars
 <!-- Template -->
@@ -919,7 +919,7 @@ Hello Ben!
 
 ##### And with else
 
-<code-group langs="Hanblebars, JSON, HTML">
+<code-group langs="Handlebars, JSON, HTML">
 
 ```handlebars
 <!-- Template -->
@@ -970,7 +970,7 @@ When checking for truthiness, be aware that empty strings, zero integers, and ze
 
 ##### Basic or
 
-<code-group langs="Hanblebars, JSON, HTML">
+<code-group langs="Handlebars, JSON, HTML">
 
 ```handlebars
 <!-- Template -->
@@ -1023,7 +1023,7 @@ Hello Ben!
 
 ##### Or with else
 
-<code-group langs="Hanblebars, JSON, HTML">
+<code-group langs="Handlebars, JSON, HTML">
 
 ```handlebars
 <!-- Template -->
