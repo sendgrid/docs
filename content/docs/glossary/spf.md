@@ -12,7 +12,7 @@ navigation:
 
 Sender Policy Framework (SPF) is an open standard for authenticating email that was originally developed by AOL. SPF attempts to ensure that the IP address from which a message was sent is approved to send email by a domain’s owner.
 
-Imagine you own the domain `example.com`.You also have an email server that uses the IP address `127.0.0.1`. You may use an SPF record to designate this IP address, `127.0.0.1`, as the only IP allowed to send email using an `example.com` email address. When an email server receives a message from `sender@example.com`, it can check the IP address that delivered the message. If the IP is anything other than `127.0.0.1`, the SPF check will fail, informing the receiving server that the message is from an unauthorized source.
+Imagine you own the domain `example.com`. You also have an email server that uses the IP address `127.0.0.1`. You may use an SPF record to designate this IP address, `127.0.0.1`, as the only IP allowed to send email using an `example.com` email address. When an email server receives a message from `sender@example.com`, it can check the IP address that delivered the message. If the IP is anything other than `127.0.0.1`, the SPF check will fail, informing the receiving server that the message is from an unauthorized source.
 
 ## SPF Records
 
