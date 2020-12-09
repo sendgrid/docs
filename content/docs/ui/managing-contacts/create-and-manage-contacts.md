@@ -63,25 +63,33 @@ You can add your contacts manually including alternate email addresses, addresse
 
 ### Create a signup form
 
-Use Signup Forms with Automation to capture new contacts and add them directly to an Automation list. If the list you add them to is acting as the entry criteria for a live automation, the new contact will automatically receive any emails you’ve created as part of that automation.
-
-You can enable contacts to access your signup form either by sending them a link hosted by Twilio SendGrid or by embedding it directly into your website.
+Use Signup Forms to capture new contacts and add them directly to Marketing Campaigns. You can choose to add them to All Contacts, or to a specific list. You can create up to 15 Signup Forms.
 
 <call-out>
 
-The number of signup forms you can create is limited to 15.
+If the list you add them to is acting as the entry criteria for a live automation, the new contact will automatically receive any emails you’ve created as part of that automation.
 
 </call-out>
+
+You can invite contacts to sign up to hear from you by sharing your signup form either by sending them a link hosted by Twilio SendGrid or by embedding it directly into your website.
+
+
 
 _To create a new signup form:_
 
 1. Navigate to Marketing and select **Signup Forms**.
 1. Click **Create a Signup Form**.
-1. On the Settings tab, add a Form Name and then select the contact list you want to add new signups to.
-1. Next, add a confirmation message. This field contains the text that contacts will see once they’ve clicked submit on the form.
+1. On the Settings tab, add a Form Name and then select either All contacts or a specific list new contacts will be added to.
+1. Next, add a confirmation message. This field contains the text that contacts will see once they’ve submitted the form.
 1. Navigate to the Build tab and add a header to the form.
 1. Add the intro copy to explain what the contact is signing up to receive.
-1. Select the checkboxes to add the fields you want on the form.
+1. Select the checkboxes to add the reserved and custom fields you want on the form. When contacts sign up, this data will be added to their contact profile. 
+
+
+<call-out>
+If a contact (defined by a unique email address) already exists in your contact database, any new or updated data will be reflected on that existing contact.
+  
+  </call-out
 
 ### Manage signup forms
 
