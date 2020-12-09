@@ -87,9 +87,10 @@ _To create a new signup form:_
 
 
 <call-out>
+
 If a contact (defined by a unique email address) already exists in your contact database, any new or updated data will be reflected on that existing contact.
   
-  </call-out
+</call-out>
 
 ### Manage signup forms
 
