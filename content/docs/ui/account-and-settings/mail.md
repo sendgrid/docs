@@ -57,6 +57,21 @@ Allows you to set a schedule for SendGrid to automatically delete contacts from 
 
 - Hard Bounces - The number of days, after which SendGrid will purge all contacts from your hard bounces suppression lists.
 
+## Bypass
+
+Bypass filters allow you to disregard unsubscribe groups and suppressions to ensure that an email is delivered to all recipients, whether or not they are on a suppression or unsubscribe list. It is important to respect unsubscribes, and these filters should be used only when it is absolutely necessary to deliver a message to recipients who have unsubscribed from your emails.
+
+There are four bypass filters available. Each filter should be sent via the `mail_settings` field as an object with a single boolean field called `"enable"`. When a filter is set to `true`, Twilio SendGrid will disregard or _bypass_ the unsubscribe or suppression status of the addresses in the list, delivering the message to the recipients. All lists not specified by the filter will be checked, and the suppression or unsubscribe status of the addresses in the unspecified lists will be respected. See the [v3 Mail Send API reference](https://sendgrid.api-docs.io/v3.0/mail-send/v3-mail-send) for examples.
+
+- Bypass list management
+  - By setting the `bypass_list_management` filter to `true`, your message will bypass all unsubscribes and suppressions in **all** lists. This filter cannot be used in combination with the other bypass filters.
+- Bypass spam management
+  - By setting the `bypass_spam_management` filter to `true`, your message will bypass the spam report list. All other suppression and unsubscribe lists will be respected.
+- Bypass bounce management
+  - By setting the `bypass_bounce_management` filter to `true`, your message will bypass the bounce list. All other suppression and unsubscribe lists will be respected.
+- Bypass unsubscribe management
+  - By setting the `bypass_unsubscribe_management` filter to `true`, your message will bypass the global unsubscribe list. All other suppression and unsubscribe lists will be respected. Note that this bypass filter is applied to global unsubscribes only; group unsubscribes will be respected.
+
 ## Event Notification
 
 The Event Notification setting controls webhook notifications for events, such as bounces, clicks, opens, and more. This setting allows these events to be POSTed to a URL of your choosing.
