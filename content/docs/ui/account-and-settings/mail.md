@@ -59,7 +59,7 @@ Allows you to set a schedule for SendGrid to automatically delete contacts from 
 
 ## Bypass
 
-Bypass filters allow you to disregard unsubscribe groups and suppressions to ensure that an email is delivered to all recipients, whether or not they are on a suppression or unsubscribe list. It is important to respect unsubscribes, and these filters should be used only when it is absolutely necessary to deliver a message to recipients who have unsubscribed from your emails.
+Bypass filters allow you to disregard unsubscribe groups and suppressions to ensure that an email is delivered to all recipients, whether or not they are on a suppression or unsubscribe list. It is important to respect unsubscribes, and these filters should be used only when it is absolutely necessary to deliver a message to recipients who have unsubscribed from your emails. For example, you may use these filters to deliver messages that you are legally required to send to all recipients or important security messages like a password reset.
 
 There are four bypass filters available. Each filter should be sent via the `mail_settings` field as an object with a single boolean field called `"enable"`. When a filter is set to `true`, Twilio SendGrid will disregard or _bypass_ the unsubscribe or suppression status of the addresses in the list, delivering the message to the recipients. All lists not specified by the filter will be checked, and the suppression or unsubscribe status of the addresses in the unspecified lists will be respected. See the [v3 Mail Send API reference](https://sendgrid.api-docs.io/v3.0/mail-send/v3-mail-send) for examples.
 
