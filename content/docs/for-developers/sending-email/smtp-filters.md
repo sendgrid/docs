@@ -11,9 +11,9 @@ Following are the settings that can be specified in the filters section of the X
 
 <call-out>
 
-* If you're enabling a Setting, also called a filter, via SMTPAPI, you are required to define all of the parameters for that Setting.
-* If you enable a disabled setting, our system will not pull your settings for the disabled setting. You will need to define the settings in your X-SMTPAPI header <em>Example:</em> If you have a footer designed but disabled, you can't just enable it via the API; you need to define the footer in the API call itself.
-* All filter names and setting names must be lowercase.
+- If you're enabling a Setting, also called a filter, via SMTPAPI, you are required to define all of the parameters for that Setting.
+- If you enable a disabled setting, our system will not pull your settings for the disabled setting. You will need to define the settings in your X-SMTPAPI header <em>Example:</em> If you have a footer designed but disabled, you can't just enable it via the API; you need to define the footer in the API call itself.
+- All filter names and setting names must be lowercase.
 
 </call-out>
 
@@ -58,22 +58,22 @@ Due to low usage, this setting has been removed. Click [here]({{root_url}}/ui/ac
 
 ```json
 {
-  "filters" : {
-    "bcc" : {
-      "settings" : {
-        "enable" : 1,
-        "email" : "example@example.com"
+  "filters": {
+    "bcc": {
+      "settings": {
+        "enable": 1,
+        "email": "example@example.com"
       }
     }
   }
 }
 ```
 
-## Filter: bypass_list_management
+## Filter: bypass\_list\_management
 
 <call-out type="warning">
 
-This setting is very powerful, and can only be used on a per-message basis. Use with extreme caution.
+This setting is very powerful, and can only be used on a per-message basis. Use with extreme caution. To learn more about the more granular bypass settings available in the v3 Mail Send API, see our [Suppressions Overview documentation]({{root_url}}/ui/sending-email/index-suppressions/#bypass-suppressions).
 
 </call-out>
 
@@ -96,10 +96,10 @@ Some emails are too important to do normal list management checks, such as passw
 
 ```json
 {
-  "filters" : {
-    "bypass_list_management" : {
-      "settings" : {
-        "enable" : 1
+  "filters": {
+    "bypass_list_management": {
+      "settings": {
+        "enable": 1
       }
     }
   }
@@ -134,11 +134,11 @@ Rewrites links in email text and html bodies to go through our webservers, allow
 
 ```json
 {
-  "filters" : {
-    "clicktrack" : {
-      "settings" : {
-        "enable" : 1,
-        "enable_text" : true
+  "filters": {
+    "clicktrack": {
+      "settings": {
+        "enable": 1,
+        "enable_text": true
       }
     }
   }
@@ -175,11 +175,11 @@ of your email.
 
 ```json
 {
-  "filters" : {
-    "dkim" : {
-      "settings" : {
-        "domain" : "example.com",
-        "use_from" : false
+  "filters": {
+    "dkim": {
+      "settings": {
+        "domain": "example.com",
+        "use_from": false
       }
     }
   }
@@ -219,12 +219,12 @@ Inserts a footer at the bottom of the text and HTML bodies.
 
 ```json
 {
-  "filters" : {
-    "footer" : {
-      "settings" : {
-        "enable" : 1,
-        "text/html" : "<p>Thanks,<br />The SendGrid Team<p>",
-        "text/plain" : "Thanks,\n The SendGrid Team"
+  "filters": {
+    "footer": {
+      "settings": {
+        "enable": 1,
+        "text/html": "<p>Thanks,<br />The SendGrid Team<p>",
+        "text/plain": "Thanks,\n The SendGrid Team"
       }
     }
   }
@@ -279,14 +279,14 @@ Re-writes links to integrate with Google Analytics.
 
 ```json
 {
-  "filters" : {
-    "ganalytics" : {
-      "settings" : {
-        "enable" : 1,
-        "utm_source" : "Transactional Email",
-        "utm_medium" : "email",
-        "utm_content" : "Reset Your Password",
-        "utm_campaign" : "Redesigned Transactional Messaging"
+  "filters": {
+    "ganalytics": {
+      "settings": {
+        "enable": 1,
+        "utm_source": "Transactional Email",
+        "utm_medium": "email",
+        "utm_content": "Reset Your Password",
+        "utm_campaign": "Redesigned Transactional Messaging"
       }
     }
   }
@@ -321,11 +321,11 @@ If you don't use 'replace' this will insert an <code>&lt;img&gt;</code> tag at t
 
 ```json
 {
-  "filters" : {
-    "opentrack" : {
-      "settings" : {
-        "enable" : 1,
-        "replace" : "%opentrack%"
+  "filters": {
+    "opentrack": {
+      "settings": {
+        "enable": 1,
+        "replace": "%opentrack%"
       }
     }
   }
@@ -371,12 +371,12 @@ Tests message with [SpamAssassin](http://spamassassin.apache.org/) to determine 
 
 ```json
 {
-  "filters" : {
-    "spamcheck" : {
-      "settings" : {
-        "enable" : 1,
-        "maxscore" : 3.5,
-        "url" : "http://example.com/compliance"
+  "filters": {
+    "spamcheck": {
+      "settings": {
+        "enable": 1,
+        "maxscore": 3.5,
+        "url": "http://example.com/compliance"
       }
     }
   }
@@ -426,17 +426,18 @@ The `landing` argument cannot be used in SMTPAPI. It can only be setup via the U
 </call-out>
 
 #### Example X-SMTPAPI Header Value
+
 ```json
 {
-    "filters": {
-        "subscriptiontrack": {
-            "settings": {
-                "text/html": "If you would like to unsubscribe and stop receiving these emails <% click here %>.",
-                "text/plain": "If you would like to unsubscribe and stop receiving these emails click here: <% %>.",
-                "enable": 1
-            }
-        }
+  "filters": {
+    "subscriptiontrack": {
+      "settings": {
+        "text/html": "If you would like to unsubscribe and stop receiving these emails <% click here %>.",
+        "text/plain": "If you would like to unsubscribe and stop receiving these emails click here: <% %>.",
+        "enable": 1
+      }
     }
+  }
 }
 ```
 
@@ -519,11 +520,11 @@ This setting refers to our original Email Template app. We now support more full
 
 ```json
 {
-  "filters" : {
-    "template" : {
-      "settings" : {
-        "enable" : 1,
-        "text/html" : "<html><head></head><body bgcolor='pink'><div style='width:200px' bgcolor='#FFF'><% body %></div></body></html>"
+  "filters": {
+    "template": {
+      "settings": {
+        "enable": 1,
+        "text/html": "<html><head></head><body bgcolor='pink'><div style='width:200px' bgcolor='#FFF'><% body %></div></body></html>"
       }
     }
   }
