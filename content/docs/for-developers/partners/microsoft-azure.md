@@ -25,7 +25,7 @@ The following documentation covers signing up, sending an email, adding an attac
 
 Wondering how to make the most of your SendGrid/Azure integration? Check out our [Azure related blog entries](https://sendgrid.com/?s=Azure).
 
-You are limited to 2 SendGrid accounts per Azure subscription. This limit exists for security and compliance reasons to prevent abuse.
+You are limited to 1 SendGrid account per Azure subscription. This limit exists for security and compliance reasons to prevent abuse.
 
 Customers that integrate through the [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/SendGrid.SendGrid), do not have access to SendGrid's Marketing Campaigns. 
 
