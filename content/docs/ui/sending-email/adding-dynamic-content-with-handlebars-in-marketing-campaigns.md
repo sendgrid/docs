@@ -15,7 +15,7 @@ Marketing Campaigns allows you to [insert substitution tags]({{root_url}}/ui/sen
 
 You can go beyond simple custom field replacement, using dynamic content and Handlebars to meet your goals.
 
-To understand how to add Tags to your Marketing Campaigns designs, see our [Editor documentation]({{root_url}}/ui/sending-email/editor/). The Editor documentation also explains how to preview your message with sample data.
+To understand how to add tags to your Marketing Campaigns designs, see our [Editor documentation]({{root_url}}/ui/sending-email/editor/). The Editor documentation also explains how to preview your message with sample data.
 
 This page provides several example use cases to show you how to modify the dynamic content in your designs with Handlebars. For a full reference of all available helpers, see [Using Handlebars]({{root_url}}/for-developers/sending-email/using-handlebars/). First, we’ll outline how to handle default values when using handlebars in Marketing Campaigns.
 
@@ -79,7 +79,7 @@ For more on conditional statements, see our [Using Handlebars]({{root_url}}/for-
 
 Twilio SendGrid stores dates in [ISO 8601 date format](https://www.iso.org/iso-8601-date-and-time-format.html). This standard date format helps ensure that we handle dates and times correctly. However, ISO 8601 date format isn’t what recipients usually expect in the text of an email. For this reason, we provide the formatDate Handlebars helper to convert dates from ISO 8601 to a friendlier date format such as MM/DD/YYYY.
 
-In Marketing Campaigns, you can use this helper to change how a date Tag displays within your subject line or email content. For context, the Tag options you see within the Marketing Campaigns editor are automatically created based on your custom fields.
+In Marketing Campaigns, you can use this helper to change how a date tag displays within your subject line or email content. For context, the tag options you see within the Marketing Campaigns editor are automatically created based on your custom fields.
 
 The following example assumes you have a custom date tag called `offer_expiration`. You want to use this date tag to display the end of a promotion, prompting customers to take action before they miss out.
 
@@ -131,7 +131,7 @@ Handlebars makes it possible to change the content of a message based on custome
 
 In this example, you will see how to conditionally change a message based on a recipient’s proximity to a store location, allowing you to deliver the sales most relevant to them.
 
-To achieve this, you can maintain a custom field called `nearest_zip_code` that holds the store nearest each customer. You will automatically have this custom field available to you as a Tag in the Marketing Campaigns editors.
+To achieve this, you can maintain a custom field called `nearest_zip_code` that holds the store nearest each customer. You will automatically have this custom field available to you on the Tag tab in the Marketing Campaigns editors.
 
 To change your message using this tag, your Handlebars code might look like the following example.
 
