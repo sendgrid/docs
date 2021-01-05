@@ -629,7 +629,7 @@ You can place the data for a contact into the code window. Note that the data mu
 
 4. Once you have test data in place, you should see any substitution tags for which data is present rendered properly.
 
-![A template with the first_name substitution and multiple address substitutions in text fiels]({{root_url}}/img/design_editor_substitution_tags.png 'Substitution tags in a template')
+![A template with the first_name substitution and multiple address substitutions in text fields]({{root_url}}/img/design_editor_substitution_tags.png 'Substitution tags in a template')
 
 ![A side-by-side view of the test data and the rendered values in the template]({{root_url}}/img/test_data_replaced.png 'Rendered test data')
 
