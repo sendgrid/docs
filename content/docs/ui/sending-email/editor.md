@@ -118,6 +118,12 @@ Substitution tags allow you to easily generate dynamic content for each recipien
 
 The data that populates your Substitution Tags will come from the information you have stored about each contact. You can manage this information on the [Marketing Campaigns Contacts page](https://mc.sendgrid.com/contacts).
 
+<call-out>
+
+When copying and pasting a tag from the **Tags** tab, a default will be added automatically. Default values are supported by the `insert` keyword only. For this reason, tags with default values will be saved with a different syntax automatically. For more information about working with default values and Handlebars, see [Adding Dynamic Content with Handlebars in Marketing Campaigns]({{root_url}}/ui/sending-email/adding-dynamic-content-with-handlebars-in-marketing-campaigns/).
+
+</call-out>
+
 In addition to the following reserved fields that are available on all contacts by default, you can add your own [Custom Fields](https://mc.sendgrid.com/custom-fields) with Marketing Campaigns. When building Marketing Campaigns designs, your Custom Fields will be available in the **Tags** tab of the editor. For information about managing these fields, see our [Custom Fields]({{root_url}}/ui/managing-contacts/custom-fields/) documentation. If you add a substitution tag, and the data is unavailable on a contact for that tag, the tag will not be rendered in the final email.
 
 <call-out>
@@ -268,7 +274,7 @@ For contacts with no entry in a custom field, the substitution tag appears blank
 
 #### Preview substitution tags with test data
 
-Both the Design and Code editors offer a test data preview feature. This means you can add any Tags you're using in your email design with "test data" values.  Test data provides a way to be sure that your final design will populate and render the substitutions properly. If you wanted to collaborate on a design for example, having test data stored directly in the design means each teammate can see how substitution tags will populate directly from the editor's preview.
+Both the Design and Code editors offer a test data preview feature. This means you can add any Tags you're using in your email design with "test data" values. Test data provides a way to be sure that your final design will populate and render the substitutions properly. If you wanted to collaborate on a design for example, having test data stored directly in the design means each teammate can see how substitution tags will populate directly from the editor's preview.
 
 1. To access the test data preview from the editor, click **preview** and then **Show Test Data**.
 
@@ -508,6 +514,12 @@ _To add a substitution tag to your email:_
 
 The data that populates your substitution tag will come from the information you have stored about each contact as well as any data you pass to the template using our APIS. You can manage your contacts' data on the [Marketing Campaigns Contacts page](https://mc.sendgrid.com/contacts).
 
+<call-out>
+
+When copying and pasting a tag from the **Tags** tab, a default will be added automatically. Default values are supported by the `insert` keyword only. For this reason, tags with default values will be saved with a different syntax automatically. For more information about working with default values and Handlebars, see [Adding Dynamic Content with Handlebars in Marketing Campaigns]({{root_url}}/ui/sending-email/adding-dynamic-content-with-handlebars-in-marketing-campaigns/).
+
+</call-out>
+
 In addition to the following reserved fields that are available on all contacts by default, you can add your own [Custom Fields](https://mc.sendgrid.com/custom-fields) with Marketing Campaigns. When building Marketing Campaigns designs, your Custom Fields will be available in the **Tags** tab of the editor. For information about managing these fields, see our [Custom Fields]({{root_url}}/ui/managing-contacts/custom-fields/) documentation. If you add a substitution tag, and the data is unavailable on a contact for that tag, the tag will not be rendered in the final email.
 
 <call-out>
@@ -617,7 +629,7 @@ You can place the data for a contact into the code window. Note that the data mu
 
 4. Once you have test data in place, you should see any substitution tags for which data is present rendered properly.
 
-![A template with the first_name substitution and multiple address substitutions in text fiels]({{root_url}}/img/design_editor_substitution_tags.png 'Substitution tags in a template')
+![A template with the first_name substitution and multiple address substitutions in text fields]({{root_url}}/img/design_editor_substitution_tags.png 'Substitution tags in a template')
 
 ![A side-by-side view of the test data and the rendered values in the template]({{root_url}}/img/test_data_replaced.png 'Rendered test data')
 
