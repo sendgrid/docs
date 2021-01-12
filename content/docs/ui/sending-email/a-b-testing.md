@@ -30,7 +30,7 @@ _To set up an A/B test on an existing Single Send:_
 
 ## Choose the Type of A/B Test To Run
 
-When you are A/B testing your emails, you want to optimize for a specific metric. Determine whether you want to optimize your **Open Rates**, by testing the **Subject Line**; or your **Click Rates**, by testing the **Email Content**.
+When you are A/B testing your emails, you want to optimize for a specific metric. Determine whether you want to optimize your **Open Rates** by testing the **Subject Line**, **Click Rates** by testing the **Email Content**, or if you want to manually select the winner of an A/B test based on your analysis of the data.
 
 <call-out>
 
@@ -94,7 +94,7 @@ The size of your sample can be up to 100% of your contact list. This may be help
 
 ## Determine the Winning Criteria for the A/B Test
 
-Twilio SendGrid can automatically select the winner of a test based on either the open rate or click rate. You can also manually select a winner when neither of the automatic selections suite your needs.
+Twilio SendGrid can automatically select the winner of a test based on either the open rate or click rate. You can also manually select a winner when neither of the automatic selections suits your needs.
 
 - **Unique Open Rate**
 
@@ -106,7 +106,7 @@ Twilio SendGrid can automatically select the winner of a test based on either th
 
 - **Manual**
 
-  You can evaluate the performance of all variants following the A/B test duration and manually choose a winner based on each variant's performance across multiple metrics.
+  You can evaluate the performance of all variants and manually choose a winner based on each variant's performance across multiple metrics.
 
 ## Set the A/B Test Duration
 
@@ -136,7 +136,7 @@ When a variation wins based on unique click rate or unique open rate, you will b
 
 There are likely times when neither the open rate nor the click rate alone best measures the success of a message. If, for example, version A had an open rate of 48% while version B had an open rate of 49%, version B would win an automatic selection based on open rate. However, if those two versions also had click rates of 45% for version A and 10% for version B, your winner based on a narrow margin in open rate would be significantly underperforming the alternative version in click rate. This is one scenario in which you could select a manual winner or re-evaluate your criteria for success.
 
-Manually selecting a winner also allows you to prioritize other metrics such as unsubscribes and spam reports.
+You may also want to optimize for alternative metrics, including those that aren't tracked by Marketing Campaigns, such as conversions. Manually selecting a winner allows you to prioritize the metrics that are most important to you, including unsubscribes, spam reports, conversions, and more.
 
 At the end of the A/B test duration, you will receive an email asking you to select the winner of your campaign.
 
@@ -163,9 +163,9 @@ _To manually select the winner_
 
 #### Test expiration
 
-You must select the winner of a manual A/B test within 7 days of the test duration's end. For example, if your test is scheduled to end on January 1st, you must select a winner on or before January 8th. You cannot select a winner of a test that has expired.
+You must select the winner of a manual A/B test within 7 days of the test completing.
 
-You will receive an email letting you know when your test is about to expire. You will also receive an email when a test expires. The last date to select a test winner is also displayed on both the Single Sends overview page and a Single Send's statistics overview page.
+You will receive an email one day before and one day after a test expires to keep you up to date about the test's status. The last date to select a test winner is also displayed on both the Single Sends index page and a Single Send's statistics summary page.
 
 ![The Single Sends overview page with expired and soon to expire dates highlighted]({{root_url}}/img/select_winnerAB_single_send_index.png 'Single Sends Overiew Page')
 
