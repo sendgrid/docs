@@ -25,12 +25,12 @@ _To set up an A/B test on an existing Single Send:_
 
 1. From the left-hand navigation, select **Marketing**, and then click **Single Sends**.
 2. Locate the Single Send you want to A/B test and click on the Single Send to open it in the editor it was created in.
-3. Depending on the editor used to create the Single Send, A/B testing is located on either the _Settings_ tab or the _A/B Testing_ tab.
-4. Once you have located the A/B Testing settings, toggle the _Activate A/B Testing_ switch to **ON**.
+3. Depending on the editor used to create the Single Send, A/B testing is located on either the **Settings** tab or the **A/B Testing** tab.
+4. Once you have located the A/B Testing settings, toggle the **Activate A/B Testing** switch to **ON**.
 
 ## Choose the Type of A/B Test To Run
 
-When you are A/B testing your emails, you want to optimize for a specific metric. Determine whether you want to optimize your _Open Rates_, by testing the _Subject Line_; or your _Click Rates_, by testing the _Email Content_.
+When you are A/B testing your emails, you want to optimize for a specific metric. Determine whether you want to optimize your **Open Rates**, by testing the **Subject Line**; or your **Click Rates**, by testing the **Email Content**.
 
 <call-out>
 
@@ -72,7 +72,7 @@ Enter the different variations of your email where you would normally edit that 
 
   Make edits to each of your email content variations by selecting one of the tabs.
 
-  If you have a variation that you no longer wish to keep, you can click "Manage Variations" and then "Delete Variation." When you do so, any remaining variations to the right of the deleted variation will be re-labeled and shift left. For example, if you have 3 variations and delete variation "B," variation "C" will become "B".
+  If you have a variation that you no longer wish to keep, you can click **Manage Variations** and then **Delete Variation.** When you do so, any remaining variations to the right of the deleted variation will be re-labeled and shift left. For example, if you have 3 variations and delete variation "B," variation "C" will become "B".
 
 <call-out>
 
@@ -87,7 +87,9 @@ To know the direct cause for the best performing variation, we recommend only ma
 Choose a percentage of your contact list that will participate in the A/B test. Each variation of the email will be sent to the same number of contacts within the participating portion of your list.
 
 <call-out>
+
 The size of your sample can be up to 100% of your contact list. This may be helpful in the event that you would like to run two tests, send each test to a portion of your list, and manually select a winner.
+
 </call-out>
 
 ## Determine the Winning Criteria for the A/B Test
@@ -136,7 +138,7 @@ There are likely times when neither the open rate nor the click rate alone best 
 
 Manually selecting a winner also allows you to prioritize other metrics such as unsubscribes and spam reports.
 
-At the end of the A/B test duration, you will receive an email asking you select the winner of your campaign.
+At the end of the A/B test duration, you will receive an email asking you to select the winner of your campaign.
 
 _To manually select the winner_
 
