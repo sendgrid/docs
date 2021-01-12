@@ -58,9 +58,9 @@ Send better email with Expert Insights. Our detailed monthly reports will enable
 
 </call-out-link>
 
-## Adding Your Email Versions
+## Adding Your Email Variations
 
-Enter the different versions of your email where you would normally edit that piece of content in your Single Send.
+Enter the different variations of your email where you would normally edit that piece of content in your Single Send.
 
 - **Subject Line Testing**
 
@@ -71,6 +71,8 @@ Enter the different versions of your email where you would normally edit that pi
   For email content testing, you will see additional tabs at the top of the content area, one for each email content variation. The number of tabs you see will depend on how many versions you have decided to test.
 
   Make edits to each of your email content variations by selecting one of the tabs.
+
+  If you have a variation that you no longer wish to keep, you can click "Manage Variations" and then "Delete Variation." When you do so, any remaining variations to the right of the deleted variation will be re-labeled and shift left. For example, if you have 3 variations and delete variation "B," variation "C" will become "B".
 
 <call-out>
 

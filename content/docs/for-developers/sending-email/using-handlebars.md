@@ -82,7 +82,7 @@ This is an [example template that is advertising items on sale](https://github.c
 
 ## Handlebars reference
 
-The following reference provides sample code blocks for each helper, including HTML email snippets and JSON test data.
+The following reference provides sample code blocks for each helper, including HTML email snippets and JSON test data. The code examples are shown in three tabs. The first tab, Handlebars, shows the Handlebars tag. The second tab, JSON, shows example data that would be used to populate the Handlebars tag. The third tab, HTML, shows the final output that the Handlebars tag will be rendered to in your email. You can click each tab to switch between the code samples.
 
 ### Substitution
 
@@ -92,7 +92,6 @@ Twilio SendGrid templates support the following substitutions:
 - [Deep object replacement](#deep-object-replacement)
 - [Object failure](#object-failure)
 - [Replacement with HTML](#replacement-with-html)
-- [Uppercase](#uppercase)
 - [formatDate](#formatdate)
 - [Insert](#insert)
 
@@ -202,27 +201,6 @@ If you include the characters `'`, `"` or `&` in a subject line replacement be s
 ```html
 <!-- Resulting HTML -->
 <p>Hello <strong>Ben</strong></p>
-```
-
-</code-group>
-
-#### Uppercase
-
-<code-group langs="Handlebars, JSON, HTML">
-
-```handlebars
-<!-- Template -->
-<p>Hello {{uppercase firstName}}</p>
-```
-
-```json
-// Test data
-{ "firstName": "<strong>Ben</strong>" }
-```
-
-```html
-<!-- Resulting HTML -->
-<p>Hello <strong>BEN</strong></p>
 ```
 
 </code-group>
@@ -519,7 +497,7 @@ Twilio SendGrid templates support the following conditionals:
 
 ##### Basic greaterThan
 
-<code-group langs="Hanblebars, JSON, HTML">
+<code-group langs="Handlebars, JSON, HTML">
 
 ```handlebars
 <!-- Template -->
@@ -608,7 +586,7 @@ Hello Ben!
 
 ##### Basic lessThan
 
-<code-group langs="Hanblebars, JSON, HTML">
+<code-group langs="Handlebars, JSON, HTML">
 
 ```handlebars
 <!-- Template -->
@@ -708,7 +686,7 @@ When checking for truthiness, be aware that empty strings, zero integers, and ze
 
 ##### Basic equals
 
-<code-group langs="Hanblebars, JSON, HTML">
+<code-group langs="Handlebars, JSON, HTML">
 
 ```handlebars
 <!-- Template -->
@@ -794,7 +772,7 @@ When checking for truthiness, be aware that empty strings, zero integers, and ze
 
 ##### Basic notEquals
 
-<code-group langs="Hanblebars, JSON, HTML">
+<code-group langs="Handlebars, JSON, HTML">
 
 ```handlebars
 <!-- Template -->
@@ -878,7 +856,7 @@ When checking for truthiness, be aware that empty strings, zero integers, and ze
 
 ##### And without else
 
-<code-group langs="Hanblebars, JSON, HTML">
+<code-group langs="Handlebars, JSON, HTML">
 
 ```handlebars
 <!-- Template -->
@@ -919,7 +897,7 @@ Hello Ben!
 
 ##### And with else
 
-<code-group langs="Hanblebars, JSON, HTML">
+<code-group langs="Handlebars, JSON, HTML">
 
 ```handlebars
 <!-- Template -->
@@ -970,7 +948,7 @@ When checking for truthiness, be aware that empty strings, zero integers, and ze
 
 ##### Basic or
 
-<code-group langs="Hanblebars, JSON, HTML">
+<code-group langs="Handlebars, JSON, HTML">
 
 ```handlebars
 <!-- Template -->
@@ -1023,7 +1001,7 @@ Hello Ben!
 
 ##### Or with else
 
-<code-group langs="Hanblebars, JSON, HTML">
+<code-group langs="Handlebars, JSON, HTML">
 
 ```handlebars
 <!-- Template -->

@@ -18,7 +18,7 @@ Ending up on a [deny list]({{root_url}}/glossary/deny-list/) can be detrimental 
 
 ### Spamhaus deny list
 
-If you are on one of our shared IP plans and you notice a block message from Spamhaus based on one of our IP addresses, please know that we are already working Spamhaus directly to address the issue. There is no need to make an additional request through our support team.
+If you are on one of our shared IP plans and you notice a block message from Spamhaus based on one of our IP addresses, please know that we are already working with Spamhaus directly to address the issue. There is no need to make an additional request through our support team.
 
 ### Other deny lists
 
