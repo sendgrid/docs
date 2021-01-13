@@ -138,7 +138,7 @@ There are likely times when neither the open rate nor the click rate alone best 
 
 You may also want to optimize for alternative metrics, including those that aren't tracked by Marketing Campaigns, such as conversions. Manually selecting a winner allows you to prioritize the metrics that are most important to you, including unsubscribes, spam reports, conversions, and more.
 
-At the end of the A/B test duration, you will receive an email asking you to select the winner of your campaign.
+At the end of the A/B test duration, you will receive an email asking you to select the winner of your test.
 
 _To manually select the winner_
 
