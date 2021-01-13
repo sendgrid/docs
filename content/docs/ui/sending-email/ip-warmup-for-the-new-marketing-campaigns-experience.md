@@ -66,7 +66,9 @@ Congrats! You’re all set to successfully warm up your new IP address with mark
 
 ## Sending with multiple dedicated IPs 
 
-If you have multiple dedicated IPs, whether from your previous Email API package or from purchasing additional IPs, your Marketing Campaigns sends will be sent “round-robin” across all IPs on your account on a per-email basis. This means if you send a Single Send to 100 recipients, the 100 emails well send equally across each IP you have. 
+If you have multiple dedicated IPs, whether from your previous Email API package, your Advanced Marketing Campaigns plan, or from purchasing additional IPs, your Marketing Campaigns sends will be sent “round-robin” across all IPs on your account on a per-email basis. This means if you send a Single Send to 100 recipients, the 100 emails well send equally across each IP you have. 
+
+If you wish to send a Single Send or Automation email from a specific IP address, you can do so by creating an [IP Pool]({{root_url}}/ui/account-and-settings/ip-pools/). Once your IP Pool is created, you can select it as you draft your email by navigating to Settings, clicking the IP Pool drop-down, and selecting the IP pool you wish to use. 
 
 <call-out type="warning">
 
