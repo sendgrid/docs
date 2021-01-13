@@ -36,10 +36,10 @@ We highly recommend using an API key as your credential for any service that sup
 
 </call-out>
 
-Now you need to specify your credentials (optionally, use `apikey` as username and an API Key as password) in the separate file **/etc/postfix/sasl_passwd** (you'll likely need to create it):
+Now you need to specify your credentials (use `apikey` as username and an API Key as password) in the separate file **/etc/postfix/sasl_passwd** (you'll likely need to create it):
 
 ```
-[smtp.sendgrid.net]:587 yourSendGridUsername:yourSendGridPassword
+[smtp.sendgrid.net]:587 apikey:yourSendGridApiKey
 ```
 
 Next, make sure the file has restricted read and write access only for root, and use the `postmap` command to update Postfix's hashtables to use this new file:
