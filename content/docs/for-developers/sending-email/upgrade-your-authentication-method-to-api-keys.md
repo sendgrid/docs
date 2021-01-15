@@ -28,7 +28,7 @@ Two-Factor Authentication is required as of Q4 2020, and all Twilio SendGrid API
 
 Using your account username and password for authentication is less secure than using an API Key. API Keys are preferred because you can limit permissions for API Keys and revoke them at any time. We recommend applying the principle of least privilege, using limited API Key permission to only provide access to what is needed for that request for maximum security.
 
-For more about protecting your account, see our blog post, [7 Best Practices to Protect your Twilio SendGrid Account and Sending Reputation](https://sendgrid.com/blog/7-best-practices-to-protect-your-twilo-sendgrid-account-and-sending-reputation/). To learn more about the principle of least privelege, see our [Twilio blog post](https://www.twilio.com/blog/principle-of-least-privilege-details-best-practices) and [OWASP's article on Access Control](https://owasp.org/www-community/Access_Control).
+For more about protecting your account, see our blog post, [7 Best Practices to Protect your Twilio SendGrid Account and Sending Reputation](https://sendgrid.com/blog/7-best-practices-to-protect-your-twilo-sendgrid-account-and-sending-reputation/). To learn more about the principle of least privilege, see our [Twilio blog post](https://www.twilio.com/blog/principle-of-least-privilege-details-best-practices) and [OWASP's article on Access Control](https://owasp.org/www-community/Access_Control).
 
 ## Tips for upgrading to API Keys
 
@@ -49,10 +49,18 @@ Follow these steps to identify and replace your authentication method to API Key
 
 ## Upgrade to API Keys for your SMTP integration
 
-1. Generate API Keys in the SendGrid UI or programmatically with the least privileged permissions required for each of the endpoints you will be updating. For more information, see [API Key Permissions]({{root_url}}/ui/account-and-settings/api-keys/#api-key-permissions).
-1. Replace your username and password credentials with the newly-converted API key. You will want to use a converted version of your username for SMTP integration as well. Everyone's username is `apikey`.
+1. Generate API Keys in the [SendGrid UI](https://app.sendgrid.com/settings/api_keys) or [programmatically](https://sendgrid.api-docs.io/v3.0/api-keys/create-api-keys) with the least privileged permissions required for each of the endpoints you will be updating. For more information, see [API Key Permissions]({{root_url}}/ui/account-and-settings/api-keys/#api-key-permissions).
+
+2. To use your API key with the SMTP integration, you must set your username to the string, `apikey`. Your password will be the API key you generated in the previous step.
+
+```
+username: "apikey"
+password: <Your API Key>
+```
 
 Once the previous steps are completed, enable Two-Factor Authentication for all of your users, including [subusers]({{root_url}}/ui/account-and-settings/subusers/) and [teammates]({{root_url}}/ui/account-and-settings/teammates/).
+
+If you are new to our SMTP integration, you will find more integration instructions at [Integrating with the SMTP API]({{root_url}}/for-developers/sending-email/integrating-with-the-smtp-api/).
 
 ## Check for API rejections
 
