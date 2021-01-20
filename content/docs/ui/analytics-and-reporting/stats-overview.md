@@ -11,12 +11,15 @@ navigation:
   show: true
 ---
 
-<p>
 Tracking your emails is an important part of being a good sender and learning about how your users interact with your email. This includes everything from basics of clicks and opens to looking at which browsers and mailbox providers your customers use.
-</p>
-<p>
+
 We have broken up statistics in specific ways so that you can get at-a-glance data, as well as allowing you to get into the details of how your email is being used.
-</p>
+
+<call-out>
+
+The [Stats APIs](https://sendgrid.api-docs.io/v3.0/stats/) provide read-only access to your SendGrid email statistics. Your statistics are available for the last three years.
+
+</call-out>
 
 ## Available Email Reports
 
