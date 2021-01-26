@@ -49,8 +49,7 @@ Follow these steps to identify and replace your authentication method to API Key
 
 ## Upgrade to API Keys for your SMTP integration
 
-1. Generate API Keys in the [SendGrid UI](https://app.sendgrid.com/settings/api_keys) or [programmatically](https://sendgrid.api-docs.io/v3.0/api-keys/create-api-keys) with the least privileged permissions required for each of the endpoints you will be updating. For more information, see [API Key Permissions]({{root_url}}/ui/account-and-settings/api-keys/#api-key-permissions).
-
+1. Generate API Keys in the [SendGrid UI](https://app.sendgrid.com/settings/api_keys) or [programmatically](https://sendgrid.api-docs.io/v3.0/api-keys/create-api-keys) with the least privileged permissions required for each of the endpoints you will be updating. For more information, see [API Key Permissions]({{root_url}}/ui/account-and-settings/api-keys/#api-key-permissions). To send email only, your API key will require **Mail Send** > **Full Access** permissions.
 2. To use your API key with the SMTP integration, you must set your username to the string, `apikey`. Your password will be the API key you generated in the previous step.
 
 ```
