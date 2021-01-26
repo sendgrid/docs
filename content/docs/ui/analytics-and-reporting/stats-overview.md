@@ -35,6 +35,12 @@ Categories will be stored as a “Not PII” field and may be used for counting 
 
 </call-out>
 
+<call-out>
+
+Category statistics are available for the previous three years only.
+
+</call-out>
+
 **[Category Comparison]({{root_url}}/ui/analytics-and-reporting/category-comparison/)** - Compare the performance of emails from up to 10 categories against each other.
 
 **[Subuser Statistics]({{root_url}}/ui/analytics-and-reporting/subuser/)** - You can segment your email to be sent by different subusers, which allows you to compare how each type or subset of your email is performing.
