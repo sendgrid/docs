@@ -35,7 +35,7 @@ To create a batch ID, assign that ID to an email or group of emails, and cancel 
 
  ### 	1. Generate a Batch ID
 
-First, generate a batch id by calling the [v3/mail/batch endpoint]({{root_url}}/API_Reference/Web_API_v3/cancel_schedule_send.html#-Batch-IDs). When successful, you should receive a 201 response along with your batch ID.
+First, generate a batch id by calling the [v3/mail/batch endpoint](https://sendgrid.api-docs.io/v3.0/cancel-scheduled-sends/create-a-batch-id). When successful, you should receive a 201 response along with your batch ID.
 
 `POST https://api.sendgrid.com/v3/mail/batch`
 ``` json
@@ -47,7 +47,7 @@ HTTP/1.1 201
 
  ### 	2. Assign Batch ID to an Email
 
-The batch ID generated in step 1 can now be used when scheduling an email via the SendGrid API v3 by setting the value of `batch_id` to your new batch ID in a [v3/mail/send]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html) request and setting the value of `send_at` to a UNIX timestamp representing the time you want your email sent. For example:
+The batch ID generated in step 1 can now be used when scheduling an email via the SendGrid API v3 by setting the value of `batch_id` to your new batch ID in a [v3/mail/send](https://sendgrid.api-docs.io/v3.0/mail-send/v3-mail-send) request and setting the value of `send_at` to a UNIX timestamp representing the time you want your email sent. For example:
 
 `POST https://api.sendgrid.com/v3/mail/send`
 
@@ -87,7 +87,7 @@ If you have the flexibility, it's better to schedule mail for off-peak times. Mo
 
  ### 	3. Cancel or Pause Your Send
 
-Now that your email has been scheduled and has a batch ID assigned, you can [pause or cancel the send]({{root_url}}/API_Reference/Web_API_v3/cancel_schedule_send.html#-Cancel-Scheduled-Sends) at any time up to 10 minutes before the scheduled send time.
+Now that your email has been scheduled and has a batch ID assigned, you can [pause or cancel the send](https://sendgrid.api-docs.io/v3.0/cancel-scheduled-sends/cancel-or-pause-a-scheduled-send) at any time up to 10 minutes before the scheduled send time.
 
 <call-out type="warning">
 
@@ -113,7 +113,7 @@ When a Batch is **paused**, all messages associated with that batch will stay in
 HTTP/1.1 201
 ```
 
-For more details, please see our [Cancel Scheduled Sends API Reference]({{root_url}}/API_Reference/Web_API_v3/cancel_schedule_send.html).
+For more details, please see our [Cancel Scheduled Sends API Reference](https://sendgrid.api-docs.io/v3.0/cancel-scheduled-sends).
 
 ## 	Canceling a Marketing Campaign
 
@@ -135,7 +135,7 @@ These directions refer to unscheduling a Campaign in the legacy Marketing Campai
 
 </call-out>
 
-You can unschedule a campaign by making a call to [/v3/campaigns/{campaign_id}/schedules]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html#Unschedule-a-Scheduled-Campaign-DELETE) where `{campaign_id}` is the ID of the campaign you want to unschedule. A successful unschedule will return a 204. **You cannot unschedule campaigns that are already in the process of being sent. You should instead cancel or delete the campaign.**
+You can unschedule a campaign by making a call to [/v3/campaigns/{campaign_id}/schedules](https://sendgrid.api-docs.io/v3.0/cancel-scheduled-sends/cancel-or-pause-a-scheduled-send) where `{campaign_id}` is the ID of the campaign you want to unschedule. A successful unschedule will return a 204. **You cannot unschedule campaigns that are already in the process of being sent. You should instead cancel or delete the campaign.**
 
 `DELETE https://api.sendgrid.com/v3/campaigns/{campaign_id}/schedules`
 
