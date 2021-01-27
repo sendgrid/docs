@@ -79,6 +79,12 @@ Please see our technical [Event Webhook API docs](/API_Reference/Webhooks/event.
 
 The Footer setting will insert a custom footer at the bottom of the text and HTML bodies. Use the embedded HTML editor and plain text entry fields to create the content of the footers to be inserted into your emails.
 
+<call-out>
+
+This feature is not available in our Marketing Campaign Editor.
+
+</call-out>
+
 **Settings**
 
 - Status - On or Off
