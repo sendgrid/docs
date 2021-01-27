@@ -207,7 +207,7 @@ If you include the characters `'`, `"` or `&` in a subject line replacement be s
 
 #### formatDate
 
-The formatDate helper takes a time in either epoch or ISO8601 format and converts it to a format you specify using the tokens in the following table. Example display results are for Tuesday, January 1st, 2020 3:00:00PM Pacific Standard Time.
+The formatDate helper takes a time in either epoch or ISO8601 format and converts it to a format you specify using the tokens in the following table. If you send a date field without converting it, it will be displayed in ISO8601 format with the full timestamp (e.g., `2020-01-01T23:00:00.000Z`). The following example display results are for Tuesday, January 1st, 2020 3:00:00PM Pacific Standard Time.
 
 <table>
     <tr>

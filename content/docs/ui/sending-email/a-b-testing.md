@@ -72,7 +72,9 @@ Enter the different variations of your email where you would normally edit that 
 
   Make edits to each of your email content variations by selecting one of the tabs.
 
-  If you have a variation that you no longer wish to keep, you can click **Manage Variations** and then **Delete Variation.** When you do so, any remaining variations to the right of the deleted variation will be re-labeled and shift left. For example, if you have 3 variations and delete variation "B," variation "C" will become "B".
+If you'd like to create a new variation based on any of the existing variations, select the variation you wish to clone and then click **Manage Variations** and then **Duplicate Variation**. From there, you can make any modifications to the duplicate. If you already have 6 variations, you will need to delete one before duplicating.
+
+To delete a variation you no longer wish to keep, select the variation, click **Manage Variations** and then **Delete Variation.** When you do so, any remaining variations to the right of the deleted variation will be re-labeled and shift left. For example, if you have 3 variations and delete variation "B," variation "C" will become "B".
 
 <call-out>
 
