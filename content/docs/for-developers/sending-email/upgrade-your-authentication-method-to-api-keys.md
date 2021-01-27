@@ -49,14 +49,19 @@ Follow these steps to identify and replace your authentication method to API Key
 
 ## Upgrade to API Keys for your SMTP integration
 
-1. Generate API Keys in the [SendGrid UI](https://app.sendgrid.com/settings/api_keys) or [programmatically](https://sendgrid.api-docs.io/v3.0/api-keys/create-api-keys) with the least privileged permissions required for each of the endpoints you will be updating. For more information, see [API Key Permissions]({{root_url}}/ui/account-and-settings/api-keys/#api-key-permissions).
-
+1. Generate API Keys in the [SendGrid UI](https://app.sendgrid.com/settings/api_keys) or [programmatically](https://sendgrid.api-docs.io/v3.0/api-keys/create-api-keys) with the least privileged permissions required for each of the endpoints you will be updating. For more information, see [API Key Permissions]({{root_url}}/ui/account-and-settings/api-keys/#api-key-permissions). To send email only, your API key will require **Mail Send** > **Full Access** permissions.
 2. To use your API key with the SMTP integration, you must set your username to the string, `apikey`. Your password will be the API key you generated in the previous step.
 
 ```
 username: "apikey"
 password: <Your API Key>
 ```
+
+<call-out>
+
+When submitting base64 encoded API key values, be sure you have not included any newline or whitespace characters by accident. This can happen when copying the encoded key from an environment that line wraps output. SMTP is a line-oriented protocol, and linefeed characters will prevent you from authenticating successfully.
+
+</call-out>
 
 Once the previous steps are completed, enable Two-Factor Authentication for all of your users, including [subusers]({{root_url}}/ui/account-and-settings/subusers/) and [teammates]({{root_url}}/ui/account-and-settings/teammates/).
 
