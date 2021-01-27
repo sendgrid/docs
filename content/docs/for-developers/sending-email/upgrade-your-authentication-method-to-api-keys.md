@@ -57,6 +57,12 @@ username: "apikey"
 password: <Your API Key>
 ```
 
+<call-out>
+
+When submitting base64 encoded API key values, be sure you have not included any newline or whitespace characters by accident. This can happen when copying the encoded key from an environment that line wraps output. SMTP is a line-oriented protocol, and linefeed characters will prevent you from authenticating successfully.
+
+</call-out>
+
 Once the previous steps are completed, enable Two-Factor Authentication for all of your users, including [subusers]({{root_url}}/ui/account-and-settings/subusers/) and [teammates]({{root_url}}/ui/account-and-settings/teammates/).
 
 If you are new to our SMTP integration, you will find more integration instructions at [Integrating with the SMTP API]({{root_url}}/for-developers/sending-email/integrating-with-the-smtp-api/).

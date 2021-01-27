@@ -40,7 +40,7 @@ Once you have your shell open and have saved your API key, you must Base64 encod
 echo -n '<<YOUR_API_KEY>>' | openssl base64
 ```
 
-Save your encoded key for a later. Also, be sure your have not included any newline or whitespace characters by accident. This can happen when copying the encoded key from a shell that line wraps output.
+Save your encoded key for a later. Also, be sure you have not included any newline or whitespace characters by accident. This can happen when copying the encoded key from a shell that line wraps output. SMTP is a line-oriented protocol, and linefeed characters will prevent you from authenticating successfully.
 
 <call-out type="warning">
 

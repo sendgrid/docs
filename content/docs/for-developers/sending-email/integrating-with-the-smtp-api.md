@@ -11,16 +11,21 @@ navigation:
   show: true
 ---
 
-## 	Integrating with SendGrid
+## Integrating with SendGrid
 
-*To integrate with SendGrid's SMTP API:*
+_To integrate with SendGrid's SMTP API:_
 
 1. [Create an API Key](https://app.sendgrid.com/settings/api_keys) with at least "Mail" permissions.
-2. Set the server host in your email client or application to `smtp.sendgrid.net`.
-    * This setting is sometimes referred to as the _external SMTP server_ or the _SMTP relay_.
-3. Set your username to `apikey`.
-4. Set your password to the API key generated in step 1.
+2. Set the server host in your email client or application to `smtp.sendgrid.net`. This setting is sometimes referred to as the _external SMTP server_ or the _SMTP relay_.
+3. Set your username to the string `apikey`. This setting is the exact string "apikey" and not the API key itself.
+4. Set your password to the API key generated in step one.
 5. Set the port to `587` (or as specified below).
+
+<call-out>
+
+When submitting base64 encoded API key values, be sure you have not included any newline or whitespace characters by accident. This can happen when copying the encoded key from an environment that line wraps output. SMTP is a line-oriented protocol, and linefeed characters will prevent you from authenticating successfully.
+
+</call-out>
 
 ### SMTP ports
 
@@ -36,7 +41,7 @@ Now that you've integrated, learn to [build SMTP email]({{root_url}}/for-develop
 - You may send up to **5k messages per SMTP connection**.
 - You may open up to **10k concurrent connections from a single server**.
 
-## 	Additional resources
+## Additional resources
 
 - [Sending email]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/)
 - [Getting Started with the API]({{root_url}}/api-reference/)
