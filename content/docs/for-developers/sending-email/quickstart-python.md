@@ -19,8 +19,9 @@ Be sure to perform the following prerequisites to complete this tutorial. You ca
 
 1. Sign up for a [SendGrid account](https://signup.sendgrid.com/)
 2. Create and store a SendGrid [API Key](https://app.sendgrid.com/settings/api_keys) with full access "Mail Send" permissions.
-3. Verify your [Sender Identity]({{root_url}}/for-developers/sending-email/sender-identity/)
-4. Install [Python](https://www.python.org/downloads/)
+3. Enable [Two-factor authentication]({{root_url}}/for-developers/sending-email/authentication/#two-factor-authentication) with full access "Mail Send" permissions.
+4. Verify your [Sender Identity]({{root_url}}/for-developers/sending-email/sender-identity/)
+5. Install [Python](https://www.python.org/downloads/)
 
 <a href="#starting-the-project" class="btn btn-primary">Skip the prerequisites</a>
 
