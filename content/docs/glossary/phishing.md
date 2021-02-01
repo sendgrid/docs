@@ -15,3 +15,9 @@ Phishing is a technique for acquiring information such as user names, passwords,
 SendGrid employs both technology and staff to prevent the sending of phishing emails. We have a solid track record of working with the global email community to detect and stop the sending of phishing and spam emails.
 
 To get more information please check out our [Email Infrastructure Guide](https://sendgrid.com/resource/the-email-infrastructure-guide-build-it-or-buy-it/).
+
+## Reporting Email Abuse
+
+SendGrid works hard to keep our email stream clean. Despite our best efforts, spam does occasionally leak through our defenses. If you discover spam that was sent by a SendGrid customer, please report it to our team by sending it to abuse@sendgrid.com or opening a ticket with [SendGrid Support](https://support.sendgrid.com/hc/en-us). No matter who sent the phishing email, you can file a report with the [Federal Trade Commission](http://www.ftc.gov/complaint).
+
+If we find that a SendGrid customer is sending spoofed or phishing emails, we will ban their account immediately
