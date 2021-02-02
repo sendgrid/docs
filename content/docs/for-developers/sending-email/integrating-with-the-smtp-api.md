@@ -32,6 +32,12 @@ When submitting base64 encoded API key values, be sure you have not included any
 - For an unencrypted or a [TLS connection]({{root_url}}/ui/sending-email/ssl-vs-tls/), use port `25`, `2525`, or `587`.
 - For a [SSL connection]({{root_url}}/ui/sending-email/tls/), use port `465`.
 
+<call-out>
+
+If you are unsure which port to use, a TLS connection on port 587 is typically recommended. To better understand the difference between ports 465 and 587, see the Twilio SendGrid blog post, ["What's the Difference Between Ports 465 and 587"](https://sendgrid.com/blog/whats-the-difference-between-ports-465-and-587).
+
+</call-out>
+
 ### Build SMTP email
 
 Now that you've integrated, learn to [build SMTP email]({{root_url}}/for-developers/sending-email/building-an-x-smtpapi-header/).
