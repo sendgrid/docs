@@ -73,8 +73,6 @@ If the list you add them to is acting as the entry criteria for a live automatio
 
 You can invite contacts to sign up to hear from you by sharing your signup form either by sending them a link hosted by Twilio SendGrid or by embedding it directly into your website.
 
-
-
 _To create a new signup form:_
 
 1. Navigate to Marketing and select **Signup Forms**.
@@ -83,13 +81,12 @@ _To create a new signup form:_
 1. Next, add a confirmation message. This field contains the text that contacts will see once they’ve submitted the form.
 1. Navigate to the Build tab and add a header to the form.
 1. Add the intro copy to explain what the contact is signing up to receive.
-1. Select the checkboxes to add the reserved and custom fields you want on the form. When contacts sign up, this data will be added to their contact profile. 
-
+1. Select the checkboxes to add the reserved and custom fields you want on the form. When contacts sign up, this data will be added to their contact profile.
 
 <call-out>
 
 If a contact (defined by a unique email address) already exists in your contact database, any new or updated data will be reflected on that existing contact.
-  
+
 </call-out>
 
 ### Manage signup forms
@@ -190,6 +187,12 @@ _To remove all of your unusable Marketing Campaigns contacts:_
 <call-out type="warning">
 
 There are two methods to delete contacts; one in which only a specific list or segment will be deleted and the contacts will _remain_ in All Contacts, and the second in which you can delete a list or segment and ALL associated contacts.
+
+</call-out>
+
+<call-out type="warning">
+
+When you delete a contact, all stats related to that contact will also be removed.
 
 </call-out>
 

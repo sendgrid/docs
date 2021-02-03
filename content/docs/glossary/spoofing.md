@@ -34,9 +34,9 @@ Because spoofing this address can route your replies, and any sensitive informat
 
 ## Reporting Email Abuse
 
-If you have been tricked by a phishing email sent via SendGrid, please contact [SendGrid Support](https://support.sendgrid.com/hc/en-us). No matter who sent the phishing email, you can file a report with the [Federal Trade Commission](http://www.ftc.gov/complaint).
+SendGrid works hard to keep our email stream clean. Despite our best efforts, spam does occasionally leak through our defenses. If you discover spam that was sent by a SendGrid customer, please report it to our team by sending it to abuse@sendgrid.com or opening a ticket with [SendGrid Support](https://support.sendgrid.com/hc/en-us). No matter who sent the phishing email, you can file a report with the [Federal Trade Commission](http://www.ftc.gov/complaint).
 
-If we find that a SendGrid customer is sending spoofed or phishing emails, we will ban their account immediately.
+If we find that a SendGrid customer is sending spoofed or phishing emails, we will ban their account immediately
 
 ## Additional Resources
 
