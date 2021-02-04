@@ -45,7 +45,7 @@ Follow these steps to identify and replace your authentication method to API Key
 1. Replace your username and password credentials with API Keys.
 
 - For v3 API: Follow [these instructions](https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-authentication).
-- For v2: Follow [these instructions](https://www.twilio.com/docs/sendgrid/api/v2/using_the_web_api#authentication).
+- For v2: Follow [these instructions](https://www.twilio.com/docs/sendgrid/api/v2/mail#sending-email).
 
 ## Upgrade to API Keys for your SMTP integration
 
