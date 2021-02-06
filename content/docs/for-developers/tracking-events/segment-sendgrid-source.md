@@ -15,13 +15,11 @@ This documentation is managed by [Segment](https://segment.com/?utm_medium=docs&
 
 ## Getting Started
 
-
 1. Create a Segment [account](https://segment.com/sources/sendgrid)
 2. Add SendGrid in the “Cloud Apps” Category and enter your credentials
 3. Setup a warehouse by bringing your own or having Segment setup and host
-4. Give the Source a nickname and schema name. *We recommend sticking to something that reflects the source itself, like `SendGrid` for nickname and `sendgrid` or `sendgrid_prod` for the schema name.*
-4. You’ll soon see SendGrid data in your data warehouse
-
+4. Give the Source a nickname and schema name. _We recommend sticking to something that reflects the source itself, like `SendGrid` for nickname and `sendgrid` or `sendgrid_prod` for the schema name._
+5. You’ll soon see SendGrid data in your data warehouse
 
 Note that you can add multiple instances if you have multiple SendGrid accounts. That’s why we allow you to customize the source’s nickname and schema name!
 
@@ -45,13 +43,11 @@ SendGrid has a single Event URL location. By using the SendGrid source, you will
 
 SendGrid has a sync component, which means we’ll make requests to their API on your behalf on a 3-hour interval to pull the latest data into Segment. In the initial sync, we’ll grab all the SendGrid objects (and their corresponding properties) according to the [Collections Table]() below. SendGrid objects will be written into a separate schema, corresponding to the source instance’s schema name you designated upon creation.
 
-Our sync component gets resources from SendGrid and forwards them to Segment using an upsert API, so the dimensional data in your warehouse loaded will reflect the latest state of the corresponding resource in SendGrid. For example,  if `lists.recipient_count` goes from `100` to `200` between syncs, on its next flush to your warehouse, that tickets status will be  `200`.
-
+Our sync component gets resources from SendGrid and forwards them to Segment using an upsert API, so the dimensional data in your warehouse loaded will reflect the latest state of the corresponding resource in SendGrid. For example, if `lists.recipient_count` goes from `100` to `200` between syncs, on its next flush to your warehouse, that tickets status will be `200`.
 
 ### Streaming
 
 The SendGrid source also has a streaming component which listens in real time for inbound webhooks from SendGrid’s Event Notifications and batches the events to be uploaded on your next warehouse flush. These events are only ever appended to your warehouse. At present, there is no way to retrieve email event history from SendGrid, so you will only have access to data that we’ve collected after you successfully enable this component of the source integration.
-
 
 ## Collections
 
@@ -65,20 +61,20 @@ For a complete visual breakdown of the SendGrid collections and all their proper
 
 <div class="table-wrap">
 
-|  Collection | Type | Description |
-|  ------ | ------ | ------ |
-|  activity | Event | The union of all SendGrid **event** tables. Useful for creating funnels |
-|  _open | Event | Recipient has opened the HTML message. You need to enable Open Tracking for getting this type of event. |
-|  click | Event | Recipient clicked on a link within the message. You need to enable Click Tracking for getting this type of event. |
-|  bounce | Event | Receiving server could not or would not accept message. |
-|  delivered | Event | Message has been successfully delivered to the receiving server. |
-|  processed | Event | Triggered when the email is processed |
-|  dropped | Event | You may see the following drop reasons: Invalid SMTPAPI header, Spam Content (if spam checker app enabled), Unsubscribed Address, Bounced Address, Spam Reporting Address, Invalid, Recipient List over Package Quota |
-|  deferred | Event | Recipient’s email server temporarily rejected message. |
-|  unsubscribe | Event | Recipient clicked on message’s subscription management link. You need to enable Subscription Tracking for getting this type of event. |
-|  spam_report | Event | Recipient marked message as spam. |
-|  lists | Object | [Groups of contacts]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html). |
-|  segments | Object | [Slices of lists]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html). |
-|  recipients | Object | All contacts who have received an email, with information about their past activities and custom activities. [More Info]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/contactdb.html) |
+| Collection  | Type   | Description                                                                                                                                                                                                           |
+| ----------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| activity    | Event  | The union of all SendGrid **event** tables. Useful for creating funnels                                                                                                                                               |
+| \_open      | Event  | Recipient has opened the HTML message. You need to enable Open Tracking for getting this type of event.                                                                                                               |
+| click       | Event  | Recipient clicked on a link within the message. You need to enable Click Tracking for getting this type of event.                                                                                                     |
+| bounce      | Event  | Receiving server could not or would not accept message.                                                                                                                                                               |
+| delivered   | Event  | Message has been successfully delivered to the receiving server.                                                                                                                                                      |
+| processed   | Event  | Triggered when the email is processed                                                                                                                                                                                 |
+| dropped     | Event  | You may see the following drop reasons: Invalid SMTPAPI header, Spam Content (if spam checker app enabled), Unsubscribed Address, Bounced Address, Spam Reporting Address, Invalid, Recipient List over Package Quota |
+| deferred    | Event  | Recipient’s email server temporarily rejected message.                                                                                                                                                                |
+| unsubscribe | Event  | Recipient clicked on message’s subscription management link. You need to enable Subscription Tracking for getting this type of event.                                                                                 |
+| spam_report | Event  | Recipient marked message as spam.                                                                                                                                                                                     |
+| lists       | Object | [Groups of contacts](https://sendgrid.api-docs.io/v3.0/contacts).                                                                                                                                                     |
+| segments    | Object | [Slices of lists](https://sendgrid.api-docs.io/v3.0/contacts).                                                                                                                                                        |
+| recipients  | Object | All contacts who have received an email, with information about their past activities and custom activities. [More Info](https://sendgrid.api-docs.io/v3.0/contacts)                                                  |
 
 </div>

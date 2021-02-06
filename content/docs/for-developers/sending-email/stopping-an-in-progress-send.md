@@ -18,11 +18,11 @@ If you are looking for information on how to cancel a scheduled email or campaig
 
 </call-out>
 
-## 	Stopping Transactional Email
+## Stopping Transactional Email
 
 Stopping an ongoing send that is using SMTP or the Web API can be tricky, because we strive to accept and send email requests as quickly as possible. Sometimes stopping an accidental send is just not possible. However, following are several suggestions for how to halt a send in progress or a send that you have scheduled.
 
- ### 	1. Change Your API Key or Password
+### 1. Change Your API Key or Password
 
 The simple act of changing your [API key](https://app.sendgrid.com/settings/api_keys) or [password](https://app.sendgrid.com/settings/account) can break your existing email integration by causing a mismatch between what your app is trying to authenticate with and what we have on record.
 
@@ -36,39 +36,45 @@ We cannot guarantee that changing your API key or password will prevent 100% of 
 
 </call-out>
 
- ### 	2. Contact Support
+### 2. Contact Support
 
 Support has the ability to clear any emails currently pending delivery from your account. To be more clear, there is a very small window of opportunity between when we accept an email request and when we actually attempt delivery to the recipient. Emails can build up in this queue, and upon request, we can delete them entirely.
 
-## 	Stopping a Marketing Campaign
+## Stopping a Marketing Campaign
 
 You have several options for canceling or unscheduling a campaign.
 
- ### 	Using the User Interface
+### Using the User Interface
 
 If you have **Send Immediately** under the **Scheduling** dropdown menu in the campaign builder set to OFF, then you only have a very brief window of opportunity to cancel the campaign after clicking **Send Campaign**. You have 2 options:
 
 1. **Deleting the Campaign**
 
-    Navigate to your [Campaigns page](https://sendgrid.com/marketing_campaigns/ui/campaigns). Find the campaign you want to stop, click the action menu and select **Delete**.
+   Navigate to your [Campaigns page](https://sendgrid.com/marketing_campaigns/ui/campaigns). Find the campaign you want to stop, click the action menu and select **Delete**.
 
 2. **Canceling the Campaign**
 
-    Navigate to your [Campaigns page](https://sendgrid.com/marketing_campaigns/ui/campaigns). Find the campaign you want to stop and click the little red X next to the campaign name to cancel the campaign. Click **Confirm** in the confirmation window that appears. You'll see the status of your campaign change to "Canceled".
+   Navigate to your [Campaigns page](https://sendgrid.com/marketing_campaigns/ui/campaigns). Find the campaign you want to stop and click the little red X next to the campaign name to cancel the campaign. Click **Confirm** in the confirmation window that appears. You'll see the status of your campaign change to "Canceled".
 
-    ![]({{root_url}}/images/cancel_campaign_1.png)
+   ![]({{root_url}}/images/cancel_campaign_1.png)
 
-    *****
+   ***
 
-    ![]({{root_url}}/images/cancel_campaign_2.png)
+   ![]({{root_url}}/images/cancel_campaign_2.png)
 
-    *****
+   ***
 
-    ![]({{root_url}}/images/cancel_campaign_3.png)
+   ![]({{root_url}}/images/cancel_campaign_3.png)
 
- ### 	Using the SendGrid API
+### Using the SendGrid API
 
-You can delete a campaign by making a call to [/v3/campaigns/{campaign_id}]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html#Delete-a-Campaign-DELETE) where `{campaign_id}` is the ID of the campaign you want to stop. A successful deletion will return a 204.
+#### New Marketing Campaigns
+
+You can cancel a scheduled send by making a call to [/marketing/singlesends/{id}/schedule](https://sendgrid.api-docs.io/v3.0/single-sends/delete-single-send-schedule) where `{id}` is the ID of the Single Send you want to stop. A successful deletion will return a 200.
+
+#### Legacy Marketing Campaigns
+
+You can delete a campaign by making a call to [/v3/campaigns/{campaign_id}](https://sendgrid.api-docs.io/v3.0/campaigns-api/unschedule-a-scheduled-campaign) where `{campaign_id}` is the ID of the campaign you want to stop. A successful deletion will return a 204.
 
 `DELETE https://api.sendgrid.com/v3/campaigns/{campaign_id}`
 

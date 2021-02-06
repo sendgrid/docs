@@ -20,13 +20,14 @@ If you have the flexibility, it's better to schedule mail for off-peak times. Mo
 </call-out>
 
 ## 1. Marketing Campaigns
+
 If you are using Marketing Campaigns, you can schedule a time to send your campaign from the Settings tab by turning Off the option to Send Immediately. Next, verify that you are using the correct time zone, and then simply choose the date and time that you would like to send your campaign at.
 
-You can also schedule your campaigns with the [Marketing Campaigns API]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html#Schedule-a-Campaign-POST).
+You can also schedule your campaigns with the [Marketing Campaigns API](https://sendgrid.api-docs.io/v3.0/single-sends/schedule-single-send).
 
 ## 2. API
-You can schedule a time to send your email by using the `send_at` object of the `POST /mail/send` method of the [V3 API]({{root_url}}/api-reference). For more information about scheduling and stopping scheduled sends with the API, see [Can I Stop an in-progress send]({{root_url}}/for-developers/sending-email/stopping-an-in-progress-send/).
 
+You can schedule a time to send your email by using the `send_at` object of the `POST /mail/send` method of the [V3 API]({{root_url}}/api-reference). For more information about scheduling and stopping scheduled sends with the API, see [Can I Stop an in-progress send]({{root_url}}/for-developers/sending-email/stopping-an-in-progress-send/).
 
 ## 3. SMTP API
 

@@ -13,23 +13,23 @@ navigation:
 
 Global unsubscribes happen when a recipient indicates that they would like to opt out from any email that you send by clicking on the [Unsubscribe From All Emails link](#global-unsubscribe-substitution-tags) within your emails. The list provided here can be filtered by email address or date.
 
-## 	Searching Global Unsubscribes by Date
+## Searching Global Unsubscribes by Date
 
 In the top right corner, you will see a calendar icon. Click this and choose the unsubscribe dates you would like to search between. Your recipient list will refresh, showing the recipients who unsubscribed between these dates.
 
-## 	Removing Recipients From The List
+## Removing Recipients From The List
 
 When you select the checkboxes next to the recipient names or select all, using the checkbox next to the search box, you will see a new button at the top of the page. From this list, you can choose to remove the selected recipients from the list.
 
-## 	Download Global Unsubscribes as CSV
+## Download Global Unsubscribes as CSV
 
-*To download your Global Unsubscribe list as a CSV:*
+_To download your Global Unsubscribe list as a CSV:_
 
 1. Navigate to the Global Unsubscribes page.
 1. Click the action menu at the top of the page.
 1. Select **Download as CSV**. The file will download in your browser right away.
 
- ### 	Global Unsubscribe Substitution Tag
+### Global Unsubscribe Substitution Tag
 
 When you add the `<%asm_global_unsubscribe_url%>` tag to your email, we will replace that tag with the text "Unsubscribe From All Emails", wherever the tag is found in your email. This will allow your recipient to be globally unsubscribed from all of your emails.
 
@@ -41,11 +41,11 @@ When using our ASM Global or Group Unsubscribe tags, you must pass an unsubscrib
 
 </call-out>
 
-## 	Using the API
+## Using the API
 
-You can manage your Global Unsubscribes via the [Global Suppressions API]({{root_url}}/API_Reference/Web_API_v3/Suppression_Management/global_suppressions.html).
+You can manage your Global Unsubscribes via the [Global Suppressions API](https://sendgrid.api-docs.io/v3.0/suppressions-global-suppressions).
 
-## 	Additional Resources
+## Additional Resources
 
 - [Global unsubscribes vs. Group Unsubscribes]({{root_url}}/ui/sending-email/subscription-tracking/)
 - [Group Unsubscribes]({{root_url}}/ui/sending-email/group-unsubscribes/)

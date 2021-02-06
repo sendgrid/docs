@@ -22,7 +22,7 @@ For more information on the utility of these settings, please check out the [Set
 <call-out>
 
 Some Settings are not listed here because they cannot be defined on a per-message basis. To update these other Settings, please refer to the
-[Web API Filter Settings]({{root_url}}/API_Reference/Web_API/filter_settings.html) commands.
+[Web API Filter Settings](https://sendgrid.api-docs.io/v3.0/settings-mail) commands.
 
 </call-out>
 
@@ -69,7 +69,7 @@ Due to low usage, this setting has been removed. Click [here]({{root_url}}/ui/ac
 }
 ```
 
-## Filter: bypass\_list\_management
+## Filter: bypass_list_management
 
 <call-out type="warning">
 

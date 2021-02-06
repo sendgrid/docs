@@ -16,13 +16,13 @@ A marketer, developer, and accountant would each have their own teammate account
 
 As an example of role specific permissions, the marketer would be given the following levels of access:
 
-* [Alerts]({{root_url}}/ui/account-and-settings/alerts/) - Full Access
-* [Category Management]({{root_url}}/ui/analytics-and-reporting/categories/) - Read Access
-* [Email Activity]({{root_url}}/ui/analytics-and-reporting/email-activity-feed/) - Read Access
-* [Mail Send: Scheduled Sends]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html) - Read Access
-* [Mail Settings: Spam Checker]({{root_url}}/ui/account-and-settings/mail/#spam-checker) - Full Access
-* [Marketing Campaigns]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/) - Full Access
-* [Stats]({{root_url}}/ui/analytics-and-reporting/stats-overview/) - Read Access
-* [Suppressions]({{root_url}}/ui/sending-email/index-suppressions/) - Full Access
-* [Template Engine]({{root_url}}/ui/sending-email/create-and-edit-transactional-templates/) - Full Access
-* [Tracking]({{root_url}}/ui/analytics-and-reporting/email-activity-feed/) - Full Access
+- [Alerts]({{root_url}}/ui/account-and-settings/alerts/) - Full Access
+- [Category Management]({{root_url}}/ui/analytics-and-reporting/categories/) - Read Access
+- [Email Activity]({{root_url}}/ui/analytics-and-reporting/email-activity-feed/) - Read Access
+- [Mail Send: Scheduled Sends](https://sendgrid.api-docs.io/v3.0/mail-send) - Read Access
+- [Mail Settings: Spam Checker]({{root_url}}/ui/account-and-settings/mail/#spam-checker) - Full Access
+- [Marketing Campaigns]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/) - Full Access
+- [Stats]({{root_url}}/ui/analytics-and-reporting/stats-overview/) - Read Access
+- [Suppressions]({{root_url}}/ui/sending-email/index-suppressions/) - Full Access
+- [Template Engine]({{root_url}}/ui/sending-email/create-and-edit-transactional-templates/) - Full Access
+- [Tracking]({{root_url}}/ui/analytics-and-reporting/email-activity-feed/) - Full Access
