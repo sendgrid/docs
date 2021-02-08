@@ -260,7 +260,7 @@ For more information, see our [SMTP Filters documentation]({{root_url}}/for-deve
 
 IP Pools can be used to send you mail over a specific group of IPs. It is common to create different pools for transactional and marketing email.
 
-For more information, see our [IP Pools documentation]({{root_url}}/API_Reference/Web_API_v3/IP_Management/ip_pools.html#sidebar).
+For more information, see our [IP Pools documentation](https://sendgrid.api-docs.io/v3.0/ip-pools).
 
 ```json
 {

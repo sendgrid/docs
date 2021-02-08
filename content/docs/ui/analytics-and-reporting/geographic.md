@@ -19,15 +19,15 @@ Parent accounts will see aggregated statistics for their account and all subuser
 
 The geographical report shows a map of where your emails are being opened and clicked around the world. It is based purely on where your users live. For example, if you don’t have any recipients engaging with your emails in France, you will not see statistics for France in your stats.
 
-## 	Top 5
+## Top 5
 
 The top 5 section will show you the most engaged geographical areas based on the selected metric. By default, clicks are selected, but you can change that by choosing a metric from the button at the top of this section. You can change which metrics, date, or grouping by adjusting the [statistics filters]({{root_url}}/ui/analytics-and-reporting/stats-overview/#statistics-filters).
 
-## 	Activity Map
+## Activity Map
 
 The activity map gives you a visualization of your metric based statistics on an actual map. From the world view, you can click a country to see more specific geographic locations.
 
-## 	Figures by Location
+## Figures by Location
 
 The figures table gives you all of the specific counts or percentages of each event, according to how you’ve grouped your statistics (day, week, or month). For example, if you wanted to see what percentage of the emails you sent were actually opened on the second week of April in California, this is a great place to check.
 
@@ -37,12 +37,12 @@ To see only the figures from a specific geographic area, change the Activity Map
 
 <call-out>
 
-Want deeper data and insights? With [SendGrid Email Insights Reports](https://go.sendgrid.com/Email-Insights-Reports.html?utm_source=docs), you’ll get access to more data about your email performance plus customized insights from a deliverability consultant.
+Want deeper data and insights? With [SendGrid Expert Insights]({{root_url}}/ui/analytics-and-reporting/subscribing-to-expert-insights/), you’ll get access to more data about your email performance plus customized insights from a deliverability consultant.
 
 </call-out>
 
-## 	Additional Resources
+## Additional Resources
 
 - [Statistics Filters]({{root_url}}/ui/analytics-and-reporting/stats-overview/#statistics-filters)
-- [Global Stats]({{root_url}}/API_Reference/Web_API_v3/Stats/global.html)
+- [Global Stats](https://sendgrid.api-docs.io/v3.0/stats/retrieve-global-email-statistics)
 - [Timezones]({{root_url}}/glossary/timezone/)

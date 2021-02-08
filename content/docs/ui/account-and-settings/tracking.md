@@ -11,21 +11,21 @@ navigation:
   show: true
 ---
 
-## 	Click tracking
+## Click tracking
 
 Enabling Click Tracking causes all the links and URLs in your emails to be overwritten and pointed to either SendGrid’s servers or the domain you branded your link with so that any time a customer clicks a link, SendGrid can track those [clicks]({{root_url}}/glossary/clicks/). SendGrid can track up to 1000 links per email.
 
- ### 	Settings
+### Settings
 
 **Status** - On or Off
 
-## 	Google Analytics
+## Google Analytics
 
 For more information about using this app, please refer to [Google’s URL Builder](https://support.google.com/analytics/answer/1033867?hl=en) and their article on "[Best Practices for Campaign Building](https://support.google.com/analytics/answer/1037445)".
 
 We default the settings to Google’s recommendations. Anything you enter into those fields in the app settings or via API will take precedence. For more information see [Google Analytics]({{root_url}}/ui/analytics-and-reporting/google-analytics/).
 
- ### 	Settings
+### Settings
 
 **Status** - On or Off
 
@@ -39,7 +39,7 @@ We default the settings to Google’s recommendations. Anything you enter into t
 
 **Campaign Name** - Name of the campaign.
 
-## 	Open Tracking
+## Open Tracking
 
 <call-out>
 
@@ -51,23 +51,23 @@ Open Tracking adds an invisible, one pixel image at the end of the email which c
 
 When using this service customers often ask the difference between a unique open versus an open. A unique open is logged only the first time a given recipient opens the email whereas normal opens are logged for all opens of the email in question.
 
- ### 	Settings
+### Settings
 
 **Status** - On or Off
 
 **Replacement Tag** - If you do not want the open tracking image to be inserted at the end of your email, it is possible to specify an alternative location by using a replacement tag and the open tracking [SMTP API header]({{root_url}}/for-developers/sending-email/smtp-filters/#opentrack).
 
-If you are sending email through our [v3 Web API]({{root_url}}/API_Reference/Web_API_v3/index.html), you may also enable the `open_tracking` parameter, and set the `substitution_tag` parameter to a value of your choice. You may insert that substitution tag anywhere in your email, and it will be replaced with the open tracking image.
+If you are sending email through our [v3 Web API](https://sendgrid.api-docs.io/v3.0/mail-send), you may also enable the `open_tracking` parameter, and set the `substitution_tag` parameter to a value of your choice. You may insert that substitution tag anywhere in your email, and it will be replaced with the open tracking image.
 
 **Related Information** - [How Google’s Image Caching effects your opens](https://sendgrid.com/blog/googles-new-image-caching-5-things-need-know/)
 
-## 	Subscription Tracking
+## Subscription Tracking
 
 Add automatic subscription management links to the bottom of emails. SendGrid will keep track of these unsubscribes and ensure these users don’t get future emails from you.
 
 You can customize the text attached to emails and customize the landing page. The links can be configured in whatever fashion suits your needs.
 
- ### 	Settings
+### Settings
 
 **Replacement Tag** - Your custom defined tag for your templates. Use this to place your unsubscribe URL wherever you want in your template. If you provide this, make sure you put it within an `<a href=` tag. If you don’t provide this, your default unsubscribe content will be automatically added to the bottom of your email.
 

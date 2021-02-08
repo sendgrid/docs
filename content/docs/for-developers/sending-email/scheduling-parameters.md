@@ -22,18 +22,18 @@ Using the parameters defined below, you can queue batches of emails targeting in
 
 This parameter allows SendGrid to begin processing a customer’s email requests before sending. SendGrid queues the messages and releases them when the timestamp indicates. This technique allows for a more efficient way to distribute large email requests and can **improve overall mail delivery time** performance. This functionality:
 
-* Improves efficiency of processing and distributing large volumes of email.
-* Reduces email pre-processing time.
-* Enables you to time email arrival to increase open rates.
-* Is available for free to all SendGrid customers.
+- Improves efficiency of processing and distributing large volumes of email.
+- Reduces email pre-processing time.
+- Enables you to time email arrival to increase open rates.
+- Is available for free to all SendGrid customers.
 
 <call-out>
 
-Cancel Scheduled sends by including a batch ID with your send. For more information, check out [Cancel Scheduled Sends]({{root_url}}/API_Reference/Web_API_v3/cancel_schedule_send.html)!
+Cancel Scheduled sends by including a batch ID with your send. For more information, check out [Cancel Scheduled Sends](https://sendgrid.api-docs.io/v3.0/cancel-scheduled-sends)!
 
 </call-out>
 
-When passing `send_at` or `send_each_at` please make sure to only use UNIX timestamps passed as integers, as shown in our examples. Any other type could result in unintended behavior.	
+When passing `send_at` or `send_each_at` please make sure to only use UNIX timestamps passed as integers, as shown in our examples. Any other type could result in unintended behavior.
 
  </call-out>
 
@@ -71,15 +71,11 @@ To schedule a send request for individual recipients; use `send_each_at` to send
     "example@example.com",
     "example@example.com"
   ],
-  "send_each_at": [
-    1409348513,
-    1409348514,
-    1409348515
-  ]
+  "send_each_at": [1409348513, 1409348514, 1409348515]
 }
 ```
 
-To allow for the cancellation of a scheduled send, you must include a `batch_id` with your send. To generate a valid `batch_id`, use the [batch id generation endpoint]({{root_url}}/API_Reference/Web_API_v3/cancel_scheduled_send.html#Cancel-Scheduled-Sends). A `batch_id` is valid for 10 days (864,000 seconds) after generation.
+To allow for the cancellation of a scheduled send, you must include a `batch_id` with your send. To generate a valid `batch_id`, use the [batch id generation endpoint](https://sendgrid.api-docs.io/v3.0/cancel-scheduled-sends). A `batch_id` is valid for 10 days (864,000 seconds) after generation.
 
 ### Example of including a batch_id
 
@@ -100,7 +96,7 @@ To allow for the cancellation of a scheduled send, you must include a `batch_id`
 
 ## Additional Resources
 
-* [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
-* [Getting Started with the SMTP API]({{root_url}}/for-developers/sending-email/getting-started-smtp/)
-* [Integrating with SMTP]({{root_url}}/for-developers/sending-email/integrating-with-the-smtp-api/)
-* [Building an SMTP Email]({{root_url}}/for-developers/sending-email/building-an-smtp-email/)
+- [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
+- [Getting Started with the SMTP API]({{root_url}}/for-developers/sending-email/getting-started-smtp/)
+- [Integrating with SMTP]({{root_url}}/for-developers/sending-email/integrating-with-the-smtp-api/)
+- [Building an SMTP Email]({{root_url}}/for-developers/sending-email/building-an-smtp-email/)

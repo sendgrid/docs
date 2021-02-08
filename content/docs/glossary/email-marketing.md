@@ -12,13 +12,13 @@ navigation:
 
 Email Marketing (also known as commercial or promotional email) as defined by the CAN-SPAM Act is any message in which the primary purpose “advertises or promotes a commercial product or service, including content on a website operated for a commercial purpose.” Examples of email marketing include:
 
-* Coupons
-* Newsletters
-* [Peer Initiated Invitations]({{root_url}}/glossary/peer-invitations/)
-* Product Announcements
-* Promotional Emails
-* [Reconfirmation Email Campaigns]({{root_url}}/glossary/reconfirmation/)
-* Special offers
+- Coupons
+- Newsletters
+- [Peer Initiated Invitations]({{root_url}}/glossary/peer-invitations/)
+- Product Announcements
+- Promotional Emails
+- [Reconfirmation Email Campaigns]({{root_url}}/glossary/reconfirmation/)
+- Special offers
 
 Email marketing attempts to encourage the recipient to take an action like making a purchase, downloading content, registering for a service, attending an event, or visiting a store. Since the intent of email marketing is to promote a commercial product or service, it must adhere to certain legal requirements defined in the CAN-SPAM Act that were specifically developed to protect consumers and help senders provide the best possible email experience.
 
@@ -26,12 +26,11 @@ Following email best practices in your marketing emails can yield great rewards 
 
 SendGrid can help you achieve your email marketing goals with our [Marketing Email Service](https://sendgrid.com/solutions/email-marketing). This service provides the following and much more:
 
-* [Pre-designed email templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/)
-* [Importing Custom HTML With Drag & Drop Markup]({{root_url}}/ui/sending-email/editor/#importing-custom-html-with-drag--drop-markup)
-* [Ability to use your own HTML]({{root_url}}/ui/sending-email/editor/)
-* [Scheduled Marketing campaigns delivery]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html)
-* [Powerful analytics]({{root_url}}/ui/analytics-and-reporting/stats-overview/)
-* [A/B testing]({{root_url}}/ui/sending-email/a-b-testing/)
-* [List Segmentation]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/)
+- [Pre-designed email templates]({{root_url}}/ui/sending-email/working-with-marketing-campaigns-email-designs/)
+- [Importing Custom HTML With Drag & Drop Markup]({{root_url}}/ui/sending-email/editor/#importing-custom-html-with-drag--drop-markup)
+- [Ability to use your own HTML]({{root_url}}/ui/sending-email/editor/)
+- [Powerful analytics]({{root_url}}/ui/analytics-and-reporting/stats-overview/)
+- [A/B testing]({{root_url}}/ui/sending-email/a-b-testing/)
+- [List Segmentation]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/)
 
 This level of visibility into your email marketing performance is invaluable when it comes to determining what resonates best with your audience. Overall, the key to a successful email marketing is that it drives an action. You should strive to provide relevant content by using segmentation strategies to tailor your communications. This is best achieved by testing your design, content, and offers to determine what resonates best with your subscribers.

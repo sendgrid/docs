@@ -14,16 +14,16 @@ If an email bounces, we will retry for up to 72 hours. If the email is unable to
 
 Bounced emails are commonly due to SMTP 4.X.X errors or SMTP 5.X.X errors, which cause an email to be undeliverable:
 
-* An expired, inactive, or disabled recipient address
-* The recipient's mailbox has exceeded its limit
-* An incorrect recipient email address
-* Domain frequency limited
-* Connection frequency limited
-* IP frequency limited
-* Too many invalid recipients
+- An expired, inactive, or disabled recipient address
+- The recipient's mailbox has exceeded its limit
+- An incorrect recipient email address
+- Domain frequency limited
+- Connection frequency limited
+- IP frequency limited
+- Too many invalid recipients
 
- ### 	Additional Resources
+### Additional Resources
 
-* [Bounces]({{root_url}}/glossary/bounces/)
-* [Retrieve and Edit your List of Bounces]({{root_url}}/API_Reference/Web_API/bounces.html)
-* [Email Activity & Bounces]({{root_url}}/ui/analytics-and-reporting/email-activity-feed/)
+- [Bounces]({{root_url}}/glossary/bounces/)
+- [Retrieve and Edit your List of Bounces](https://sendgrid.api-docs.io/v3.0/bounces-api)
+- [Email Activity & Bounces]({{root_url}}/ui/analytics-and-reporting/email-activity-feed/)

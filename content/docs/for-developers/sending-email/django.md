@@ -14,7 +14,7 @@ There is more detailed information about sending email over SMTP with Django on 
 
 First start by adding the following to **settings.py:**
 
-``` python
+```python
 SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY')
 
 EMAIL_HOST = 'smtp.sendgrid.net'
@@ -27,13 +27,13 @@ EMAIL_USE_TLS = True
 Then to send email you can do the following:
 Inside yourapp.views.py
 
-``` python
+```python
 from django.core.mail import send_mail
 send_mail('Subject here', 'Here is the message.', 'from@example.com', ['to@example.com'], fail_silently=False)
 ```
 
 <call-out>
 
-You may also send emails with Django by using the [django-sendgrid-v5](https://github.com/sklarsa/django-sendgrid-v5) library, which utilizes the [Web API]({{%20root_url%20}}/API_Reference/Web_API/index.html) instead of SMTP as the transport mechanism.
+You may also send emails with Django by using the [django-sendgrid-v5](https://github.com/sklarsa/django-sendgrid-v5) library, which utilizes the [Web API](https://sendgrid.api-docs.io/v3.0/mail-send/v3-mail-send) instead of SMTP as the transport mechanism.
 
 </call-out>

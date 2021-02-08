@@ -15,16 +15,16 @@ navigation:
 
 <call-out>
 
-If you are currently using the [Web API v2 mail send endpoint]({{root_url}}/API_Reference/Web_API/mail.html), we recommend that you upgrade to the [latest version]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html).
+If you are currently using the [Web API v2 mail send endpoint](https://www.twilio.com/docs/sendgrid/api/v2/mail), we recommend that you upgrade to the [latest version](https://sendgrid.api-docs.io/v3.0/mail-send/v3-mail-send).
 
 </call-out>
 
 With a few quick changes you will be able to take advantage of the improvements and added features provided by the v3 mail send endpoint, such as:
 
-* Simple, intuitive, and consistent request body format.
-* Sandbox Mode allows you to test and validate your email.
-* Improved error reporting and documentation.
-* Extensive code examples in each of our [libraries]({{root_url}}/for-developers/sending-email/libraries/) to help you integrate quickly.
+- Simple, intuitive, and consistent request body format.
+- Sandbox Mode allows you to test and validate your email.
+- Improved error reporting and documentation.
+- Extensive code examples in each of our [libraries]({{root_url}}/for-developers/sending-email/libraries/) to help you integrate quickly.
 
 <iframe src="https://player.vimeo.com/video/168940206" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
@@ -32,7 +32,7 @@ With a few quick changes you will be able to take advantage of the improvements 
 
 All you need to migrate from the v2 to v3 mail send endpoint is a SendGrid account.
 
-If you are a new SendGrid user and haven’t begun sending email yet, please go straight to our [v3 Mail Send documentation]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html) to get started.
+If you are a new SendGrid user and haven’t begun sending email yet, please go straight to our [v3 Mail Send documentation](https://sendgrid.api-docs.io/v3.0/mail-send/v3-mail-send) to get started.
 
 ## JSON Schema
 
@@ -40,7 +40,7 @@ Some of the biggest improvements made to the mail send endpoint reside in the JS
 
 Below you will find a visual comparison of the v2 and v3 JSON schemas that highlights equivalent parameters between the 2 versions and any parameters that have been added or removed. Significant additions include the "personalizations", "sandbox_mode", and "bypass_list_management" parameters.
 
-For a more detailed discussion of these new parameters, please visit the [v3 Mail Send Overview]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html).
+For a more detailed discussion of these new parameters, please visit the [v3 Mail Send Overview](https://sendgrid.api-docs.io/v3.0/mail-send/v3-mail-send).
 
 ![]({{root_url}}/images/v2_vs_v3_mail_send_ga.png)
 
@@ -65,20 +65,24 @@ However, the equivalent API call for the the v3 mail send endpoint would look li
 
 ```json
 {
-	"personalizations": [{
-		"to": [{
-			"email": "john.doeexampexample@example.com"
-		}],
-		"subject": "Hello, World!",
-		"send_at": 1459728000
-	}],
-	"from": {
-		"email": "from_address@example.com"
-	},
-	"content": {
-		"type": "text/plain",
-		"value": "Hello, World!"
-	}
+  "personalizations": [
+    {
+      "to": [
+        {
+          "email": "john.doeexampexample@example.com"
+        }
+      ],
+      "subject": "Hello, World!",
+      "send_at": 1459728000
+    }
+  ],
+  "from": {
+    "email": "from_address@example.com"
+  },
+  "content": {
+    "type": "text/plain",
+    "value": "Hello, World!"
+  }
 }
 ```
 
@@ -100,12 +104,12 @@ For example, when attaching a single file named "example_file.jpg", the `attachm
 {
   "attachments": [
     {
-    "content": "[BASE64 encoded content block here]",
-    "type": "jpg",
-    "name": "example_file",
-    "filename": "example_file.jpg",
-    "disposition": "inline",
-    "content_id": "[THE CONTENT ID OF YOUR FILE]"
+      "content": "[BASE64 encoded content block here]",
+      "type": "jpg",
+      "name": "example_file",
+      "filename": "example_file.jpg",
+      "disposition": "inline",
+      "content_id": "[THE CONTENT ID OF YOUR FILE]"
     }
   ]
 }
@@ -114,10 +118,10 @@ For example, when attaching a single file named "example_file.jpg", the `attachm
 More Resources
 For additional resources on the v3 Mail Send endpoint, please first visit our other documentation on the v3 Mail Send endpoint:
 
-* [V3 Mail Send Overview]({{root_url}}/API_Reference/Web_API_v3/Mail/index.html)
-* [SandBox Mode]({{root_url}}/for-developers/sending-email/sandbox-mode/)
-* [Errors]({{root_url}}/API_Reference/Web_API_v3/Mail/errors.html)
-* [Personalizations]({{root_url}}/for-developers/sending-email/personalizations/)
-* [cURL Examples for Common Use Cases]({{root_url}}/for-developers/sending-email/curl-examples/)
+- [V3 Mail Send Overview](https://sendgrid.api-docs.io/v3.0/mail-send/v3-mail-send)
+- [SandBox Mode]({{root_url}}/for-developers/sending-email/sandbox-mode/)
+- [Errors](https://sendgrid.api-docs.io/v3.0/mail-send/mail-send-errors)
+- [Personalizations]({{root_url}}/for-developers/sending-email/personalizations/)
+- [cURL Examples for Common Use Cases]({{root_url}}/for-developers/sending-email/curl-examples/)
 
 You may also visit our [Support page](https://support.sendgrid.com/hc/en-us).

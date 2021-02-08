@@ -15,7 +15,7 @@ navigation:
 
 The [v3 Mail Send endpoint](https://sendgrid.api-docs.io/v3.0/mail-send/v3-mail-send) is the latest version of SendGrid’s Web API endpoint that allows you to send email by making a simple HTTP request. The introduction of the v3 Mail Send endpoint signifies the completion of our RESTful Web API v3.
 
-If you’re looking for one of the other methods that you can use to send mail through SendGrid, please see our [SMTP]({{root_url}}/for-developers/sending-email/getting-started-smtp/), [Marketing Campaigns]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/) feature, or [Web API v2](https://sendgrid.com/docs/API_Reference/Web_API/mail.html).
+If you’re looking for one of the other methods that you can use to send mail through SendGrid, please see our [SMTP]({{root_url}}/for-developers/sending-email/getting-started-smtp/), [Marketing Campaigns]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/) feature, or [Web API v2](https://www.twilio.com/docs/sendgrid/api/v2/mail).
 
 ## Do I have to have a certain type of account to use the v3 Mail Send endpoint?
 
