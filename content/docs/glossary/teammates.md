@@ -24,5 +24,5 @@ As an example of role specific permissions, the marketer would be given the foll
 - [Marketing Campaigns]({{root_url}}/ui/sending-email/how-to-send-email-with-marketing-campaigns/) - Full Access
 - [Stats]({{root_url}}/ui/analytics-and-reporting/stats-overview/) - Read Access
 - [Suppressions]({{root_url}}/ui/sending-email/index-suppressions/) - Full Access
-- [Template Engine]({{root_url}}/ui/sending-email/create-and-edit-transactional-templates/) - Full Access
+- [Template Engine]({{root_url}}/ui/sending-email/create-and-edit-legacy-transactional-templates/) - Full Access
 - [Tracking]({{root_url}}/ui/analytics-and-reporting/email-activity-feed/) - Full Access

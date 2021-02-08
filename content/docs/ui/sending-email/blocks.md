@@ -50,7 +50,7 @@ Send better email with Expert Insights. Our detailed monthly reports will enable
 - [Web API and Blocks](https://sendgrid.api-docs.io/v3.0/blocks-api)
 
 <call-out>
-  
+
 Looking for customized expert advice to improve your email program? Our team of email experts can help you create a plan to ensure you're optimizing your email delivery and engagement, and avoiding future issues. Learn more on our [Expert Services](https://sendgrid.com/solutions/expert-services/?utm_source=docs) page.
- 
- </call-out>
+
+</call-out>

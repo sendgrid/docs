@@ -26,7 +26,7 @@ Following email best practices in your marketing emails can yield great rewards 
 
 SendGrid can help you achieve your email marketing goals with our [Marketing Email Service](https://sendgrid.com/solutions/email-marketing). This service provides the following and much more:
 
-- [Pre-designed email templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/)
+- [Pre-designed email templates]({{root_url}}/ui/sending-email/working-with-marketing-campaigns-email-designs/)
 - [Importing Custom HTML With Drag & Drop Markup]({{root_url}}/ui/sending-email/editor/#importing-custom-html-with-drag--drop-markup)
 - [Ability to use your own HTML]({{root_url}}/ui/sending-email/editor/)
 - [Powerful analytics]({{root_url}}/ui/analytics-and-reporting/stats-overview/)

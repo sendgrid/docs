@@ -27,7 +27,7 @@ This table will refresh with new or adjusted data based on the various filters a
 
 <call-out>
 
-Want deeper data and insights? With [SendGrid Email Insights Reports](https://go.sendgrid.com/Email-Insights-Reports.html?utm_source=docs), you’ll get access to more data about your email performance plus customized insights from a deliverability consultant.
+Want deeper data and insights? With [SendGrid Expert Insights Reports]({{root_url}}/ui/analytics-and-reporting/subscribing-to-expert-insights), you’ll get access to more data about your email performance plus customized insights from a deliverability consultant.
 
 </call-out>
 
