@@ -21,7 +21,7 @@ Be sure to perform the following prerequisites to complete this tutorial. You ca
 2. Enable Two-factor authentication.
 3. Create and store a SendGrid API Key with **Mail Send** > **Full Access** permissions.
 4. Complete Domain Authentication.
-5. Install Go.
+5. Install Python.
 
 <a href="#starting-the-project" class="btn btn-primary">Skip the prerequisites</a>
 
