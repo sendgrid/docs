@@ -24,7 +24,7 @@ In order to send email with your free Twilio SendGrid account, you must create a
 ### Upgrading your Account
 
 1. Confirm your email address. If you need to resend the verification email, click **Resend account verification**. If you entered your email address incorrectly in the initial signup form, you can correct the email address and resend the verification email to the correct address.
-1. Set up [Domain Authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/). Authenticating your domain shows email providers that Twilio SendGrid has your permission to send emails on your behalf.
+2. Set up [Domain Authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/). Authenticating your domain shows email providers that Twilio SendGrid has your permission to send emails on your behalf.
 
 <call-out>
 
@@ -34,8 +34,8 @@ If you don't have access to your domain's DNS records, you can use the **Send To
 
 </call-out>
 
-2. Set up [two-factor authentication]({{root_url}}/ui/account-and-settings/two-factor-authentication/#setting-up-two-factor-authentication). Two-factor authentication allows you to make your SendGrid account more secure by requiring authentication beyond a simple username and password when logging in.
-3. Add a [payment method]({{root_url}}/ui/account-and-settings/billing/#payment-methods). Your card will not be charged at this time.
+3. Set up [two-factor authentication]({{root_url}}/ui/account-and-settings/two-factor-authentication/#setting-up-two-factor-authentication). Two-factor authentication allows you to make your SendGrid account more secure by requiring authentication beyond a simple username and password when logging in.
+4. Add a [payment method]({{root_url}}/ui/account-and-settings/billing/#payment-methods). Your card will not be charged at this time.
 
 You will need to complete all of these steps to completely verify your account. You cannot skip any of the verification steps, or your account won't be unlocked.
 
