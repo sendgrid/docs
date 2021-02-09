@@ -17,11 +17,11 @@ In this quickstart, you'll learn how to send your first email using the [Twilio 
 
 Be sure to perform the following prerequisites to complete this tutorial. You can skip ahead if you've already completed these tasks.
 
-1. Sign up for a [SendGrid account](https://signup.sendgrid.com/)
-2. Create and store a SendGrid [API Key](https://app.sendgrid.com/settings/api_keys) with full access "Mail Send" permissions.
-3. Enable [Two-factor authentication]({{root_url}}/for-developers/sending-email/authentication/#two-factor-authentication) with full access "Mail Send" permissions.
-4. Verify your [Sender Identity]({{root_url}}/for-developers/sending-email/sender-identity/)
-5. Install [Python](https://www.python.org/downloads/)
+1. Sign up for a SendGrid account.
+2. Enable Two-factor authentication.
+3. Create and store a SendGrid API Key with **Mail Send** > **Full Access** permissions.
+4. Complete Domain Authentication.
+5. Install Go.
 
 <a href="#starting-the-project" class="btn btn-primary">Skip the prerequisites</a>
 
@@ -29,22 +29,31 @@ Be sure to perform the following prerequisites to complete this tutorial. You ca
 
 When you sign up for a free [SendGrid account](https://signup.sendgrid.com/), you'll be able to send 100 emails per day forever. For more account options, see our [pricing page](https://sendgrid.com/pricing/).
 
-### Verify your Sender Identity
+### Enable Two-factor authentication
 
-To ensure our customers maintain the best possible sender reputations and to uphold legitimate sending behavior, we require customers to verify their [Sender Identities](https://sendgrid.com/docs/for-developers/sending-email/sender-identity/) by completing either Single [Sender Verification]({{root_url}}/ui/sending-email/sender-verification) or [Domain Authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/). A Sender Identity represents your "From" email address—the address your recipients see as the sender of your emails.
-
-Please note that Single Sender Verification is recommended for testing only, and some email providers have [DMARC policies]({{root_url}}/glossary/dmarc/) that restrict email from being delivered using their domains. For the best experience, please complete [Domain Authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/). Domain Authentication is also required to upgrade from a free account. To better understand why Domain Authentication is necessary, see our [spoofing]({{root_url}}/glossary/spoofing) and [Everything about DMARC]({{root_url}}/ui/sending-email/dmarc/) articles.
+Twilio SendGrid requires customers to enable Two-factor authentication (2FA). You can enable 2FA with SMS or by using the [Authy](https://authy.com/) app. See the [2FA section of our authentication documentation]({{root_url}}/for-developers/sending-email/authentication/#two-factor-authentication) for instructions.
 
 ### Create and store a SendGrid API key
 
-Unlike a username and password—credentials that allow access to your full account—an API key is authorized to perform a limited scope of actions. If your API key is compromised, you can also cycle it (delete and create another) without changing your other account credentials.
+Unlike a username and password — credentials that allow access to your full account — an API key is authorized to perform a limited scope of actions. If your API key is compromised, you can also cycle it (delete and create another) without changing your other account credentials.
 
-Visit our [API Key documentation]({{root_url}}/ui/account-and-settings/api-keys/) for instructions on [creating an API key]({{root_url}}/ui/account-and-settings/api-keys/#creating-an-api-key) and [storing an API key in an environment variable]({{root_url}}/ui/account-and-settings/api-keys/#storing-an-api-key-in-an-environment-variable).
-To complete this tutorial, your API key will need full access "Mail Send" permissions only. You can edit the permissions assigned to an API key later to work with additional services.
+Visit our [API Key documentation]({{root_url}}/ui/account-and-settings/api-keys/) for instructions on creating an API key and [storing an API key in an environment variable]({{root_url}}/ui/account-and-settings/api-keys/#storing-an-api-key-in-an-environment-variable). To complete this tutorial, you can create a Restricted Access API key with **Mail Send** > **Full Access** permissions only, which will allow you to send email and schedule emails to be sent later. You can edit the permissions assigned to an API key later to work with additional services.
 
-![The SendGrid App UI displaying the Mail Send API key permissions set to full access]({{root_url}}/img/api_key_scopes.png 'API key mail send permissions')
+Once your API key is assigned to an environment variable — this quickstart uses `SENDGRID_API_KEY` — you can proceed to the next step.
 
-Once your API key is assigned to an environment variable—this quickstart uses `SENDGRID_API_KEY`—you can proceed to the next step.
+```shell
+export SENDGRID_API_KEY=<Your API Key>
+```
+
+### Verify your Sender Identity
+
+To ensure our customers maintain the best possible sender reputations and to uphold legitimate sending behavior, we require customers to verify their [Sender Identities]({{root_url}}/for-developers/sending-email/sender-identity/) by completing [Domain Authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/). A Sender Identity represents your 'From' email address—the address your recipients see as the sender of your emails.
+
+<call-out>
+
+To get started quickly, you may be able to skip Domain Authentication and begin by completing [Single Sender Verification]({{root_url}}/ui/sending-email/sender-verification). Single Sender Verification is recommended for testing only. Some email providers have [DMARC]({{root_url}}/glossary/dmarc) policies that restrict email from being delivered using their domains. For the best experience, please complete Domain Authentication. Domain Authentication is also required to upgrade from a free account. To better understand why Domain Authentication is necessary, see our ["Spoofing"]({{root_url}}/glossary/spoofing/) and ["Everything about DMARC"]({{root_url}}/ui/sending-email/dmarc/) articles.
+
+</call-out>
 
 ### Python
 
@@ -58,16 +67,15 @@ The Twilio SendGrid Python helper library supports Python 2.7, 3.5, 3.6, 3.7, an
 
 #### Python version check
 
-Check your Python version by opening your terminal (also known as a shell, command line, or console) and typing the following command:
+Check your Python version by opening your terminal (also known as a command line or console) and typing the following command.
 
 ```shell
 python --version
 ```
 
-If you have Python installed, the terminal should print something like the following output:
+If you have Python installed, the terminal should print something like the following output.
 
 ```shell
-$ python --version
 Python 3.8.5
 ```
 
@@ -93,18 +101,23 @@ Start by creating a project folder for this app. You can name the project anythi
 mkdir sg_quickstart
 ```
 
+Next, navigate into the sg_quickstart directory where you will complete the rest of the tutorial.
+
+```shell
+cd sg_quickstart
+```
+
 ### Initialize your project
 
-The [pip](https://pypi.org/project/pip/) package manager was included when you installed Python. You can use pip to install the Twilio SendGrid helper library and save it as a project dependency. If you want to verify that pip is installed, you can type the following into the terminal:
+The [pip](https://pypi.org/project/pip/) package manager was included when you installed Python. You can use pip to install the Twilio SendGrid helper library and save it as a project dependency. If you want to verify that pip is installed, you can type the following into the terminal.
 
 ```shell
 pip --version
 ```
 
-The shell should print something like the following output:
+The terminal should print something like the following output.
 
 ```shell
-$ pip --version
 pip 20.1.1 from /usr/locallib/python3.8/site-packages/pip (python 3.8)
 ```
 
@@ -116,7 +129,7 @@ If you do not see similar output, try typing `pip3 --version`. If you do not hav
 
 ### Install the helper library
 
-To install the Twilio SendGrid helper library, type the following command into the shell.
+To install the Twilio SendGrid helper library, type the following command into the terminal.
 
 ```shell
 pip install sendgrid
@@ -125,7 +138,7 @@ pip install sendgrid
 pip3 install sendgrid
 ```
 
-The shell should print something like:
+The terminal should print something like.
 
 ```shell
 Collecting sendgrid
@@ -140,13 +153,9 @@ Successfully installed sendgrid-6.4.6
 
 You're now ready to write some code. First, create a file in your project directory. You can use `app.py`.
 
-```shell
-touch app.py
-```
-
 ### Complete code block
 
-The following Python block contains all the code needed to successfully deliver a message with the SendGrid Mail Send API. We'll break down each piece of this code in the following sections.
+The following Python block contains all the code needed to successfully deliver a message with the SendGrid Mail Send API. You can copy this code, modify the `from_email` and `to_email` variables, and run the code if you like. We'll break down each piece of this code in the following sections.
 
 ```python
 import sendgrid
@@ -174,7 +183,7 @@ Your API call must have the following components:
 - A Host (the host for Web API v3 requests is always `https://api.sendgrid.com/v3/`)
 - An Authorization Header
 - An API Key passed in the Authorization Header
-- A Request (when submitting data to a resource via POST or PUT, you must submit your request body in JSON format)
+- A Request (when submitting data to a resource via `POST` or `PUT`, you must submit your request body in JSON format)
 
 In your `app.py` file, import the SendGrid helper library. The library will handle setting the Host, `https://api.sendgrid.com/v3/`, for you.
 
@@ -196,7 +205,7 @@ sg = sendgrid.SendGridAPIClient(api_key = os.environ.get('SENDGRID_API_KEY'))
 
 Now you're ready to set up the `from_email`, `to_email`, `subject`, and message body `content`. These values are passed to the API in a ["personalizations"]({{root_url}}/for-developers/sending-email/personalizations/) object when using the v3 Mail Send API. You can assign each of these values to variables, and the SendGrid library will handle creating a personalizations object for you.
 
-First, import the library's Mail, Email, To, and Content classes.
+First, import the library's `Mail`, `Email`, `To`, and `Content` classes.
 
 ```python
 from sendgrid.helpers.mail import Mail, Email, To, Content
@@ -226,7 +235,7 @@ Lastly, you need to make a request to the SendGrid Mail Send API to deliver your
 
 The helper library uses SendGrid's [python-http-client](https://github.com/sendgrid/python-http-client) library to construct the request URL by chaining together portions of your desired path. The path to the SendGrid v3 Mail Send endpoint is `https://api.sendgrid.com/v3/mail/send`. The helper library sets the client for you, so the `https://api.sendgrid.com/v3` portion is taken care of by typing `sg.client`. The next parts of the path are `/mail` and `/send`. You can chain the the words `mail` and `send` onto `client` to build the rest of the URL.
 
-With the URL built, python-http-client then allows you to chain on the type of HTTP request you wish to make with a method matching the name of the HTTP verb appropriate for your desired endpoint. To send a message, you should make an HTTP POST request, so you can use `post()`. The `post()` method takes a `request_body`, which you should set to the JSON version of your message (remember, this JSON-ready version is stored in the `mail_json` variable). You can assign this full call to a variable named `response`.
+With the URL built, python-http-client then allows you to chain on the type of HTTP request you wish to make with a method matching the name of the HTTP verb appropriate for your desired endpoint. To send a message, you should make an HTTP `POST` request, so you can use `post()`. The `post()` method takes a `request_body`, which you should set to the JSON version of your message (remember, this JSON-ready version is stored in the `mail_json` variable). You can assign this full call to a variable named `response`.
 
 ```python
 # Send an HTTP POST request to /mail/send
