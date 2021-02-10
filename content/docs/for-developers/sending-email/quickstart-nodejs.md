@@ -17,10 +17,11 @@ In this quickstart, you'll learn how to send your first email using the [Twilio 
 
 Be sure to perform the following prerequisites to complete this tutorial. You can skip ahead if you've already completed these tasks.
 
-1. Sign up for a [SendGrid account](https://signup.sendgrid.com/)
-2. Create and store a SendGrid [API key](https://app.sendgrid.com/settings/api_keys) with full access "Mail Send" permissions.
-3. Verify your [Sender Identity]({{root_url}}/for-developers/sending-email/sender-identity/)
-4. Install [Node.js](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+1. Sign up for a SendGrid account.
+2. Enable Two-factor authentication.
+3. Create and store a SendGrid API Key with **Mail Send** > **Full Access** permissions.
+4. Complete Domain Authentication.
+5. Install Node.js.
 
 <a href="#starting-the-project" class="btn btn-primary">Skip the prerequisites</a>
 
@@ -28,26 +29,29 @@ Be sure to perform the following prerequisites to complete this tutorial. You ca
 
 When you sign up for a free [SendGrid account](https://signup.sendgrid.com/), you'll be able to send 100 emails per day forever. For more account options, see our [pricing page](https://sendgrid.com/pricing/).
 
-### Verify your Sender Identity
+### Enable Two-factor authentication
 
-To ensure our customers maintain the best possible sender reputations and to uphold legitimate sending behavior, we require customers to verify their [Sender Identities](https://sendgrid.com/docs/for-developers/sending-email/sender-identity/) by completing either Single [Sender Verification]({{root_url}}/ui/sending-email/sender-verification) or [Domain Authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/). A Sender Identity represents your "From" email address—the address your recipients see as the sender of your emails.
-
-Please note that Single Sender Verification is recommended for testing only, and some email providers have [DMARC policies]({{root_url}}/glossary/dmarc/) that restrict email from being delivered using their domains. For the best experience, please complete [Domain Authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/). Domain Authentication is also required to upgrade from a free account. To better understand why Domain Authentication is necessary, see our [spoofing]({{root_url}}/glossary/spoofing) and [Everything about DMARC]({{root_url}}/ui/sending-email/dmarc/) articles.
+Twilio SendGrid requires customers to enable Two-factor authentication (2FA). You can enable 2FA with SMS or by using the [Authy](https://authy.com/) app. See the [2FA section of our authentication documentation]({{root_url}}/for-developers/sending-email/authentication/#two-factor-authentication) for instructions.
 
 ### Create and store a SendGrid API key
 
-Unlike a username and password—credentials that allow access to your full account—an API key is authorized to perform a limited scope of actions. If your API key is compromised, you can also cycle it (delete and create another) without changing your other account credentials.
+Unlike a username and password — credentials that allow access to your full account — an API key is authorized to perform a limited scope of actions. If your API key is compromised, you can also cycle it (delete and create another) without changing your other account credentials.
 
-Visit our [API Key documentation]({{root_url}}/ui/account-and-settings/api-keys/) for instructions on [creating an API key]({{root_url}}/ui/account-and-settings/api-keys/#creating-an-api-key) and [storing an API key in an environment variable]({{root_url}}/ui/account-and-settings/api-keys/#storing-an-api-key-in-an-environment-variable).
-To complete this tutorial, your API key will need full access "Mail Send" permissions only. You can edit the permissions assigned to an API key later to work with additional services.
+Visit our [API Key documentation]({{root_url}}/ui/account-and-settings/api-keys/) for instructions on creating an API key and [storing an API key in an environment variable]({{root_url}}/ui/account-and-settings/api-keys/#storing-an-api-key-in-an-environment-variable). To complete this tutorial, you can create a Restricted Access API key with **Mail Send** > **Full Access** permissions only, which will allow you to send email and schedule emails to be sent later. You can edit the permissions assigned to an API key later to work with additional services.
 
-![The SendGrid App UI displaying the Mail Send API key permissions set to full access]({{root_url}}/img/api_key_scopes.png 'API key mail send permissions')
+Once your API key is assigned to an environment variable — this quickstart uses `SENDGRID_API_KEY` — you can proceed to the next step.
 
-Once your API key is assigned to an environment variable—this quickstart uses `SENDGRID_API_KEY`—you can proceed to the next step.
+```shell
+export SENDGRID_API_KEY=<Your API Key>
+```
+
+### Verify your Sender Identity
+
+To ensure our customers maintain the best possible sender reputations and to uphold legitimate sending behavior, we require customers to verify their [Sender Identities]({{root_url}}/for-developers/sending-email/sender-identity/) by completing [Domain Authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/). A Sender Identity represents your 'From' email address—the address your recipients see as the sender of your emails.
 
 <call-out>
 
-For information about environment variables and Node.js specifically, see [Working with Environment Variables in Node.js](https://www.twilio.com/blog/2017/08/working-with-environment-variables-in-node-js.html) on the [Twilio blog](https://www.twilio.com/blog).
+To get started quickly, you may be able to skip Domain Authentication and begin by completing [Single Sender Verification]({{root_url}}/ui/sending-email/sender-verification). Single Sender Verification is recommended for testing only. Some email providers have [DMARC]({{root_url}}/glossary/dmarc) policies that restrict email from being delivered using their domains. For the best experience, please complete Domain Authentication. Domain Authentication is also required to upgrade from a free account. To better understand why Domain Authentication is necessary, see our ["Spoofing"]({{root_url}}/glossary/spoofing/) and ["Everything about DMARC"]({{root_url}}/ui/sending-email/dmarc/) articles.
 
 </call-out>
 
@@ -63,7 +67,7 @@ The Twilio SendGrid Node.js helper library supports the current LTS version of N
 
 #### Node.js version check
 
-Check your Node.js version by opening your terminal (also known as a shell, command line, or console) and typing the following command:
+Check your Node.js version by opening your terminal (also known as a command line or console) and typing the following command:
 
 ```shell
 node --version
@@ -72,7 +76,6 @@ node --version
 If you have Node.js installed, the terminal should print something like the following output:
 
 ```shell
-$ node --version
 v12.16.1
 ```
 
@@ -92,18 +95,23 @@ Start by creating a project folder for this app. You can name the project anythi
 mkdir sgQuickstart
 ```
 
+Next, navigate into the sgQuickstart directory where you will complete the rest of the tutorial.
+
+```shell
+cd sgQuickstart
+```
+
 ### Initialize your project
 
-The [npm](https://www.npmjs.com/) package manager was included when you installed Node.js. You can use npm to install the Twilio SendGrid helper library as a project dependency. If you want to verify that npm is installed, you can type the following into the terminal:
+The [npm](https://www.npmjs.com/) package manager was included when you installed Node.js. You can use npm to install the Twilio SendGrid helper library as a project dependency. If you want to verify that npm is installed, you can type the following into the terminal.
 
 ```shell
 npm --version
 ```
 
-The shell should print something like the following output:
+The terminal should print something like the following output.
 
 ```shell
-$ npm --version
 6.13.4
 ```
 
@@ -113,7 +121,7 @@ You can install the helper library using [yarn](https://yarnpkg.com/) if you pre
 
 </call-out>
 
-Before installing the package, you should first initialize your project with the following command:
+Before installing the package, you should first initialize your project with the following command.
 
 ```shell
 npm init
@@ -125,13 +133,13 @@ Once you complete the initialization process, your package.json will contain a `
 
 ### Install the helper library
 
-To install the Twilio SendGrid helper library, type the following command into the shell.
+To install the Twilio SendGrid helper library, type the following command into the terminal.
 
 ```shell
 npm install --save @sendgrid/mail
 ```
 
-The shell should print something like:
+The terminal should print something like.
 
 ```shell
 $npm install --save @sendgrid/mail
@@ -150,13 +158,9 @@ If you see errors printed above the message, they are likely related to missing 
 
 You're now ready to write some code. First, create a file in your project directory. Again, you can use `index.js` because that's the name of the `"main"` entry point file in the `package.json` file.
 
-```shell
-touch index.js
-```
-
 ### Complete code block
 
-The following Node.js block contains all the code needed to successfully deliver a message with the SendGrid Mail Send API. We'll break down each piece of this code in the following sections.
+The following Node.js block contains all the code needed to successfully deliver a message with the SendGrid Mail Send API. You can copy this code, modify the `to` and `from` fields, and run the code if you like. We'll break down each piece of this code in the following sections.
 
 ```javascript
 const sgMail = require('@sendgrid/mail')
@@ -187,7 +191,7 @@ Your API call must have the following components:
 - A Host (the host for Web API v3 requests is always `https://api.sendgrid.com/v3/`)
 - An Authorization Header
 - An API Key passed in the Authorization Header
-- A Request (when submitting data to a resource via POST or PUT, you must submit your request body in JSON format)
+- A Request (when submitting data to a resource via `POST` or `PUT`, you must submit your request body in JSON format)
 
 In your `index.js` file, require the Node.js helper library. The library will handle setting the Host, `https://api.sendgrid.com/v3/`, for you.
 
