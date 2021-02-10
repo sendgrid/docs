@@ -14,7 +14,7 @@ Scheduling emails provides the ability to have the email sent at a certain time.
 
 For example, if I am a retailer who has a promotion starting at 10:00am, i want the email to land as close to that time as possible. Scheduling can support this.
 
-Whether using [Marketing Campaigns]({{root_url}}/API_Reference/Web_API_v3/Marketing_Campaigns/campaigns.html) or [our transactional APIs]({{root_url}}/for-developers/sending-email/scheduling-parameters/), you can define parameters on when to send a single email or batches of emails.
+Whether using [Marketing Campaigns](https://sendgrid.api-docs.io/v3.0/single-sends/create-single-send) or [our transactional APIs]({{root_url}}/for-developers/sending-email/scheduling-parameters/), you can define parameters on when to send a single email or batches of emails.
 
 <call-out>
 

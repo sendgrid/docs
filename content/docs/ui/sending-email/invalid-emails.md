@@ -17,24 +17,24 @@ Before you send, SendGrid does a check against the format of the email address t
 
 <call-out>
 
-Invalid drop events are retained for 30 days. 
+Invalid drop events are retained for 30 days.
 
 </call-out>
 
-## 	Searching Invalid Emails by Date
+## Searching Invalid Emails by Date
 
 In the top right corner, you will see a calendar icon. Click this and choose the dates you would like to search between. Your recipient list will refresh, showing the invalid email address reports from between those dates.
 
-## 	Removing Recipients From The List
+## Removing Recipients From The List
 
 When you select the checkboxes next to the recipient names or select all, using the checkbox next to the search box, you will see a new button at the top of the page. From this list, you can choose to remove the selected recipients from the list.
 
-## 	Download Invalid Emails as CSV
+## Download Invalid Emails as CSV
 
 You can download your list as a CSV by clicking the gear icon at the top of the page and selecting “Download CSV.” The file will download in your browser right away.
 
-## 	Additional Resources
+## Additional Resources
 
 - [Recipient Subscription Preferences]({{root_url}}/ui/sending-email/recipient-subscription-preferences/)
 - [Spam Reports]({{root_url}}/ui/sending-email/spam/)
-- [Invalid Emails API]({{root_url}}/API_Reference/Web_API_v3/invalid_emails.html)
+- [Invalid Emails API](https://sendgrid.api-docs.io/v3.0/invalid-emails-api)

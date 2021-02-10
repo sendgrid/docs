@@ -10,9 +10,10 @@ layout: page
 navigation:
   show: true
 ---
+
 <iframe src="https://player.vimeo.com/video/298041979" width="700" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-## 	What is IP access management?
+## What is IP access management?
 
 [IP Access Management](https://app.sendgrid.com/settings/access) is a security feature that allows you to control who can access your SendGrid account based on their [IP address]({{root_url}}/glossary/ip-address/). After you allow an IP address, you can only access the SendGrid UI, API, and SMTP relay if you are connecting from an allowed IP address. Any access attempts from other IPs will be blocked. This is a powerful security tool that you can use to help prevent malicious activity on your account.
 
@@ -36,13 +37,13 @@ If you do not access SendGrid via a static IP address (for example, via VPN or f
 
 </call-out>
 
-## 	Allowing an IP Address
+## Allowing an IP Address
 
 There are several different ways to allow an IP address. If you navigate to the IP Access Management page under Settings, you will see a list of any currently allowed IP addresses and a list of IPs that recently attempted to access your account.
 
 ![]({{root_url}}/images/ip_access_management.png)
 
- ### 	Recent Access Attempts
+### Recent Access Attempts
 
 Under Recent Access Attempts, you will see a list of recent IPs that attempted to connect to your account, regardless of whether or not they are allowed addresses. You will also see some additional information about those IPs, such as the date of the first and most recent access attempt, the physical location of the IP, and the method by which they attempted to access your account.
 
@@ -50,7 +51,7 @@ You can allow one of these IPs by clicking the gear icon in the row of the IP yo
 
 ![]({{root_url}}/images/add_ip_from_recent_access_attempts.png)
 
- ### 	Adding IP Addresses Manually
+### Adding IP Addresses Manually
 
 To manually allow one or more IP addresses, click the Add IP Addresses button.
 
@@ -78,4 +79,4 @@ If you remove every IP address from your list of allowed addresses, you will aga
 
 </call-out>
 
-For additional information about using IP Access Management through our API, see our [API Reference]({{root_url}}/API_Reference/Web_API_v3/ip_access_management.html).
+For additional information about using IP Access Management through our API, see our [API Reference](https://sendgrid.api-docs.io/v3.0/ip-access-management).
