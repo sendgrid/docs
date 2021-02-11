@@ -64,7 +64,7 @@ Once the SMTP Server service is installed, the IIS 6.0 virtual server technology
 9. Click **OK Only The List Below** and enter 127.0.0.1 in the IP address field.
 10. Click **OK** to return to the Access tab as shown in the previous screenshots.
 11. Select Delivery and click **Outbound Security**.
-12. Select **Basic Authentication** and enter your SendGrid.com username and the password will be your SendGrid API key.
+12. Select **Basic Authentication** and enter `apikey` as your username and the password will be your SendGrid [API Key({{root_url}}/ui/account-and-settings/api-keys/).
 13. Click **OK**.
 14. Click **Advanced**.
 15. In the Smart host field: enter smtp.sendgrid.net
