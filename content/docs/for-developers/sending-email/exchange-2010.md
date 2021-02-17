@@ -35,8 +35,9 @@ The configuration of a new send connector is straightforward. It is the associat
 10. Click **Add**.
 11. Select the **Fully qualified domain name (FQDN)** item, and enter: *smtp.sendgrid.net*
 12. Click **Next**.
-13. In the **Configure smart host authentication settings** page, select the **Basic Authentication** option and check the **Basic Authentication over TLS** checkbox, then ***enter your SendGrid username and API key***.
-14. Click **Next**.
+13. In the **Configure smart host authentication settings** page, select the **Basic Authentication** option and check the **Basic Authentication over TLS** checkbox.
+14. Enter `apikey` as your username and your SendGrid [API key]({{root_url}}/ui/account-and-settings/api-keys/) as the password to authenticate. 
+15. Click **Next**.
 15. If you only have one Exchange server, it should automatically appear. If you want to use another server(s) in your domain click Add to locate the servers you want to allocate to this connector.
 16. Click **Next**.
 17. Verify your settings and, when satisfied, click **New**.
