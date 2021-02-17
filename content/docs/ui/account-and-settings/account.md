@@ -11,19 +11,33 @@ navigation:
   show: true
 ---
 
-Your profile provides SendGrid with the information we need to contact you with alerts and notifications as well as send and track your emails. Each section of your profile can be edited by clicking **Edit** next to each section. Once you have made your changes, click **Save** . This will only save the settings for that section. If you decide to abandon your changes, click **Cancel**.
+Your profile provides SendGrid with the information we need to contact you with alerts and notifications as well as send and track your emails.
 
-To edit your name and email address, click  **Change Contact Info**.
+_To edit your account information:_
+
+1. Click the edit icon next to the section you wish to change.
+1. Once you have made your changes, click **Save**. This will only save the settings for that section. If you decide to abandon your changes, click **Cancel**.
+
+## Your Account
 
 **First Name** - This is the first name of the representative from your company who should receive contacts from SendGrid.
 
 **Last Name** - This is the last name of the representative from your company who should receive contacts from SendGrid.
 
-**Email address** - This is the address where you will be contacted by SendGrid for any account-level alerts and notifications such as billing notifications. This must be a valid and active email address that you routinely check.
+**Email address** - This is the address where you will be contacted by SendGrid for any account-level alerts and notifications such as billing notifications. This must be a valid and active email address that you routinely check. 
+
+<call-out>
+
+Once you've changed your contact email, you will need to confirm the new email address. You should be prompted to send a confirmation email to your inbox. Click **Send Confirmation Email** to finalize the change. 
+
+</call-out>
 
 **Username** - Your SendGrid Username is used to access our API and our SMTP Relay. Changing this will immediately cause all of your calls to SendGrid to stop working.
 
 **Password** -  The password criterion that your SendGrid password must include: 16 to 128 characters, at least one number, and one letter.
+
+
+## Your Company
 
 **Company** - The name of your company.
 
