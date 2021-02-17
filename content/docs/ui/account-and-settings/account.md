@@ -28,7 +28,7 @@ _To edit your account information:_
 
 <call-out>
 
-Once you've changed your contact email, you will need to confirm the new email address. You should be prompted to send a confirmation email to your inbox. Click **Send Confirmation Email** to finalize the change. **Make sure you click the link in the confirmation email to receive account updates at your new address**. 
+Once you've changed your contact email, you will need to confirm the new email address. You will be prompted to send a confirmation email to your inbox. Click **Send Confirmation Email** to finalize the change. **Make sure you click the link in the confirmation email to receive account updates at your new address**. 
 
 </call-out>
 
