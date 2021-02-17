@@ -47,7 +47,8 @@
     "rehype-react": "^5.0.1",
     "s3-deploy": "^1.4.0",
     "stylelint-selector-bem-pattern": "^2.1.0",
-    "unist-util-visit": "^2.0.3"
+    "unist-util-visit": "^2.0.3",
+    "yarn": "^1.22.10"
   },
   "devDependencies": {
     "cli-glob": "^0.1.0",
