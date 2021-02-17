@@ -92,6 +92,7 @@ Notice that while the call to the v2 Mail Send endpoint does include JSON, it is
 
 There are few limitations and requirements differences between the v2 and v3 mail send endpoints, making it even easier to migrate your integration to the latest version.
 
+
 ## Attachments
 
 Attachments are handled differently between the v2 and v3 Mail Send endpoints. When attaching files in an email sent over the v2 Mail Send endpoint, you simply needed to attach your file to the transport and specify the file names and content IDs of those files in your API call. Essentially, you specified which files you were attaching in the API call, but the files were actually sent differently.
@@ -119,6 +120,7 @@ More Resources
 For additional resources on the v3 Mail Send endpoint, please first visit our other documentation on the v3 Mail Send endpoint:
 
 - [V3 Mail Send Overview](https://sendgrid.api-docs.io/v3.0/mail-send/v3-mail-send)
+- [Upgrading your Authentication to API Keys]({{root_url}}/for-developers/sending-email/upgrade-your-authentication-method-to-api-keys/)
 - [SandBox Mode]({{root_url}}/for-developers/sending-email/sandbox-mode/)
 - [Errors](https://sendgrid.api-docs.io/v3.0/mail-send/mail-send-errors)
 - [Personalizations]({{root_url}}/for-developers/sending-email/personalizations/)
