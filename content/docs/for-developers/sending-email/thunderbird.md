@@ -22,7 +22,8 @@ To send email using Thunderbird you will have to modify your outgoing server set
    * **Port -** 465
    * **Connection security -** SSL/TLS
    * **Authentication method -** Normal password
-   * **User Name -** your sendgrid.com username
+   * **User Name -** apikey
+   * **Password -** Your SendGrid API key. (You can read more about authenticating with an API key at [this link](https://sendgrid.com/docs/for-developers/sending-email/upgrade-your-authentication-method-to-api-keys/#upgrade-to-api-keys-for-your-smtp-integration))
 
 ![]({{root_url}}/images/thunderbird_2.png "thunderbird_settings")
 
