@@ -53,7 +53,7 @@ Follow these steps to identify and replace your authentication method to API Key
 2. To use your API key with the SMTP integration, you must set your username to the string, `apikey`. Your password will be the API key you generated in the previous step.
 
 ```
-username: "apikey"
+user_name: "apikey"
 password: <Your API Key>
 ```
 
