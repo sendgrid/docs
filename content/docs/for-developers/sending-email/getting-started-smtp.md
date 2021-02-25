@@ -36,7 +36,7 @@ Be sure to perform the following prerequisites to complete this tutorial.
 
 <call-out>
 
-In the following code samples, greater than and less than symbol are wrapped around placeholder values (e.g., `<YOUR_API_KEY>`). You should replace the greater than and less than symbols and the text inside them with an actual value. For example, `echo -n '<YOUR_API_KEY>' | openssel base64` will become `echo -n 'SG.someactualkey' | openssl base64` if your API key is `SG.someactualkey`.
+In the following code samples, greater than and less than symbol are wrapped around placeholder values (e.g., `<YOUR_API_KEY>`). You should replace the greater than and less than symbols and the text inside them with an actual value. For example, `echo -n '<YOUR_API_KEY>' | openssl base64` will become `echo -n 'SG.someactualkey' | openssl base64` if your API key is `SG.someactualkey`.
 
 In some cases you will see two sets of greater than and less than symbols wrapping a placeholder. In this case, one set of greater than and less than symbols is required in the actual value and should not be replaced. For example, `From: "Example" <<example@example.com>>` will become `From: "Example" <example@example.com>`.
 

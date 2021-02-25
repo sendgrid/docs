@@ -37,7 +37,7 @@ Categories will be stored as a “Not PII” field and may be used for counting 
 
 <call-out>
 
-Category statistics are available for the previous three years only.
+Category statistics are available for the previous thirteen months only.
 
 </call-out>
 
