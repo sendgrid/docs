@@ -101,10 +101,9 @@ To turn off click tracking, add this to your X-SMTPAPI header:
 {
   "filters": {
     "clicktrack": {
-      "settings":
-        {
-          "enable": 0
-        }
+      "settings": {
+        "enable": 0
+      }
     }
   }
 }
@@ -116,18 +115,18 @@ When you try to send an invalid X-SMTPAPI header, you will get an email with det
 
 ## Certificate verification failed for smtp.sendgrid.net
 
- `"certificate verification failed for [smtp.sendgrid.net](http://smtp.sendgrid.net/)[198.37.144.225]:587: untrusted issuer /C=US/O=The Go Daddy Group, Inc./OU=Go Daddy Class 2 Certification Authority"`
+`"certificate verification failed for [smtp.sendgrid.net](http://smtp.sendgrid.net/)[198.37.144.225]:587: untrusted issuer /C=US/O=The Go Daddy Group, Inc./OU=Go Daddy Class 2 Certification Authority"`
 
- If you receive this error, the connection is still encrypted; it's just that your server doesn't have the necessary CA (certificate authority) certificates to confirm that our certificate is valid.
+If you receive this error, the connection is still encrypted; it's just that your server doesn't have the necessary CA (certificate authority) certificates to confirm that our certificate is valid.
 
- *To update your certificates:*
+_To update your certificates:_
 
 1. Download the GoDaddy CA bundle from [https://certs.godaddy.com/anonymous/repository.pki](https://certs.godaddy.com/anonymous/repository.pki) (grab the one called `"gd_bundle-g2-g1.crt"`).
 1. Save that on your server.
 1. Tell Postfix where to find it by adding or editing the following line in `/etc/postfix/` [main.cf](http://main.cf/): `"smtp_tls_CAfile = /etc/postfix/ssl/gd_bundle-g2-g1.crt"`
 1. Restart Postfix to make the change take effect.
 
- If the mail server communicates with more than just us, add this certificate to your existing CA bundle (frequently called `ca-bundle.crt`).
+If the mail server communicates with more than just us, add this certificate to your existing CA bundle (frequently called `ca-bundle.crt`).
 
 ## 550 Unauthenticated Senders Not Allowed
 
@@ -139,7 +138,7 @@ If you’re using cPanel/Exim, you’ll want to make sure it’s configured to a
 
 ## Additional Resources
 
-* [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
-* [Getting Started with the SMTP API]({{root_url}}/for-developers/sending-email/getting-started-smtp/)
-* [Integrating with SMTP]({{root_url}}/for-developers/sending-email/integrating-with-the-smtp-api/)
-* [Building an SMTP Email]({{root_url}}/for-developers/sending-email/building-an-smtp-email/)
+- [SMTP Service Crash Course](https://sendgrid.com/blog/smtp-service-crash-course/)
+- [Getting Started with the SMTP API]({{root_url}}/for-developers/sending-email/getting-started-smtp/)
+- [Integrating with SMTP]({{root_url}}/for-developers/sending-email/integrating-with-the-smtp-api/)
+- [Building an SMTP Email]({{root_url}}/for-developers/sending-email/building-an-x-smtpapi-header/)
