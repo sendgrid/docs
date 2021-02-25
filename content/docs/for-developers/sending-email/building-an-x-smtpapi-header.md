@@ -21,7 +21,7 @@ The Twilio SendGrid SMTP service allows you to pass SendGrid a JSON string with 
 
 The X-SMTPAPI is a powerful way to modify your SMTP messages. However, there are several things to keep in mind when using the header.
 
-- Ensure that you are sending just ONE X-SMTPAPI header per SMTP transaction. Failure to do so, may cause unwanted consequences with inconsistent behavior.
+- Ensure that you are sending just ONE X-SMTPAPI header per SMTP transaction. For any request received with multiple X-SMTPAPI headers on the same request, Twilio SendGrid will adhere to the first X-SMTPAPI header instance on each request.
 - There is a hard limit of 10,000 addresses in a multiple recipient email. However, the best practice is to split large jobs into separate transactions of approximately 1,000 recipients, which allows better processing load distribution. If you have a large number of additional substitutions or sections in the headers, it is best to split the send into even smaller groups.
 - When using the X-SMTPAPI header to send to multiple recipients, you cannot use SMTP's standard RCPT TO command to also send to multiple recipients. Doing so can generate duplicate messages to the addresses listed in both the X-SMTPAPI "to" field and the RCPT list. For more information, see [RFC 5321](https://tools.ietf.org/html/rfc5321).
 - Ensure that the header is limited to a maximum total line length of 1,000 characters. Failure to do this can cause intermediate Mail Transfer Agents (MTAs) to split the header on non-space boundaries, which causes inserted spaces in the final email. If your email is going through another MTA before reaching SendGrid, it is likely that the other MTA will have an even lower setting for maximum header length and may truncate the header.
