@@ -91,8 +91,8 @@ In `config/environment.rb` specify your ActionMailer settings to point to SendGr
 
 ``` ruby
 ActionMailer::Base.smtp_settings = {
-  :user_name => 'apikey',
-  :password => 'your_sendgrid_api_key',
+  :user_name => 'apikey', # This is the string literal 'apikey', NOT the ID of your API key
+  :password => ENV['SENDGRID_SECRET_API_KEY'], # This is the secret sendgrid API key which was issued during API key creation
   :domain => 'yourdomain.com',
   :address => 'smtp.sendgrid.net',
   :port => 587,
