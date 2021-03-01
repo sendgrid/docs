@@ -36,7 +36,7 @@ Usually received via the API, this error means we don't recognize one or both of
 
 
 ## Billing terminated
-On the last week of each month, we terminate accounts with outstanding unpaid balances from the previous month's bill run. _Terminated accounts cannot be accessed._
+On the last week of each month, we terminate accounts with outstanding unpaid balances from the previous month's bill run. _Terminated accounts cannot be accessed nor send mail._
 
 We will send out several warning emails in the course of a month if an account fails to pay on time, so you should have ample warning before Termination. However, if you believe your account has been terminated due to non-payment, please get in touch with [Support](https://support.sendgrid.com) and we can help get you out of the red and sending again.
 
