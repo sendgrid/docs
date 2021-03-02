@@ -297,4 +297,4 @@ This is just the beginning of what you can do with our APIs. To learn more, chec
 - [Getting Started with the Event Webhook]({{root_url}}/for-developers/tracking-events/getting-started-event-webhook/)
 - [The Email Activity Feed]({{root_url}}/ui/analytics-and-reporting/email-activity-feed/)
 - [Sender Authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/)
-- [Twilio SendGrid helper library for Python](https://github.com/sendgrid/sendgrid-python)
+- [Twilio SendGrid helper library for Go](https://github.com/sendgrid/sendgrid-go)
