@@ -8,10 +8,10 @@ navigation:
 seo:
   title: Email API Quickstart for Ruby
   description: Sending your first email using the SendGrid REST API and Ruby.
-  keywords: Getting Started, API, v3, REST, SendGrid REST API, Go, Ruby.
+  keywords: Getting Started, API, v3, REST, SendGrid REST API, Ruby.
 ---
 
-In this quickstart, you'll learn how to send your first email using the [Twilio SendGrid Mail Send API](https://sendgrid.api-docs.io/v3.0/mail-send/v3-mail-send) and [Go](https://golang.org/).
+In this quickstart, you'll learn how to send your first email using the [Twilio SendGrid Mail Send API](https://sendgrid.api-docs.io/v3.0/mail-send/v3-mail-send) and [Ruby](https://www.ruby-lang.org/en/).
 
 ## Prerequisites
 
@@ -146,14 +146,14 @@ You're now ready to write some code. First, create a `send_mail.rb` file in your
 
 The following Ruby block contains all the code needed in your `send_mail.rb` file to successfully deliver a message with the SendGrid Mail Send API. You can copy this code, modify the `to` and `from` variables, and run the code if you like. We'll break down each piece of this code in the following sections.
 
-```go
+```ruby
 require 'sendgrid-ruby'
 include SendGrid
 
-from = SendGrid::Email.new(email: 'test@example.com')
-to = SendGrid::Email.new(email: 'test@example.com')
+from = SendGrid::Email.new(email: 'test@example.com', name: "Test") # Change to your verified sender
+to = SendGrid::Email.new(email: 'test@example.com', name: "Test") # Change to your recipient
 subject = 'Sending with Twilio SendGrid is Fun'
-content = SendGrid::Content.new(type: 'text/html', value: '<strong>and easy to do anywhere, even with Ruby.</strong>')
+content = SendGrid::Content.new(type: 'text/html', value: 'and easy to do anywhere, even with <strong>Ruby</strong>.')
 mail = SendGrid::Mail.new(from, subject, to, content)
 
 sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
@@ -182,15 +182,15 @@ include SendGrid
 
 Now you're ready to set up the `from`, `to`, `subject`, and message body `content`. These values are passed to the API in a [Personalizations]({{root_url}}/for-developers/sending-email/personalizations/) object when using the v3 Mail Send API. You can assign each of these values to variables, and the SendGrid library will handle creating a `personalizations` object for you.
 
-The `subject` variable is a string. However, you will set the `from` and `to` variables using the helper library's `Email` method. The `Email` take two arguments, an optional `name` and an `email` address.
+The `subject` variable is a string. However, you will set the `from` and `to` variables using the helper library's `Email` method. The `Email` method takes two arguments, an optional `name` and an `email` address.
 
 The `content` variable is set with the `Content` method. The `Content` method takes a `type`, which can be either `text/plain` or `text/html`, and a `value`, which is a string of the content you wish to send in the message body.
 
 ```ruby
-from = SendGrid::Email.new(email: 'test@example.com')
-to = SendGrid::Email.new(email: 'test@example.com')
+from = SendGrid::Email.new(email: 'test@example.com', name: "Test") # Change to your verified sender
+to = SendGrid::Email.new(email: 'test@example.com', name: "Test") # Change to your recipient
 subject = 'Sending with Twilio SendGrid is Fun'
-content = SendGrid::Content.new(type: 'text/html', value: '<strong>and easy to do anywhere, even with Ruby.</strong>')
+content = SendGrid::Content.new(type: 'text/html', value: 'and easy to do anywhere, even with <strong>Ruby</strong>.')
 ```
 
 To properly construct the message, pass each of the previous variables into the SendGrid library's `Mail` method. You can assign this to a variable named `mail`.
@@ -205,38 +205,33 @@ Next, use the API key you set up earlier. Remember, the API key is stored in an 
 sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
 ```
 
-Lastly, you need to make a `POST` request to the SendGrid Mail Send API to deliver your message. The SendGrid helper library provides a `client` function from [SendGrid's REST library](https://github.com/sendgrid/rest) to make this request. Call the `Send` method on the `client` and pass in your `message` as an argument.
+Lastly, you need to make a request to the SendGrid Mail Send API to deliver your message.
 
-```go
+The helper library uses SendGrid's [ruby-http-client](https://github.com/sendgrid/ruby-http-client) library to construct the request URL by chaining together portions of your desired path. The path to the SendGrid v3 Mail Send endpoint is `https://api.sendgrid.com/v3/mail/send`. The helper library sets the client for you, so the `https://api.sendgrid.com/v3` portion is taken care of by typing `sg.client`. The next parts of the path are `/mail` and `/send`. You can chain the words `mail` and `send` onto `client` to build the rest of the URL.
+
+With the URL built, `ruby-http-client` then allows you to chain on the type of HTTP request you wish to make with a method matching the name of the HTTP verb appropriate for your desired endpoint. To send a message, you should make an HTTP `POST` request, so you can use `post()`. The `post()` method takes a `request_body`, which you should set to a JSON version of your message. You can assign this full call to a variable named `response`.
+
+```ruby
 # Send an HTTP POST request to /mail/send
-client.Send(message)
+response = sg.client.mail._('send').post(request_body: mail.to_json)
 ```
 
-With all this code in place, you can run your `main.go` file in your terminal to send the email.
+With all this code in place, you can run your `mail_send.rb` file in your terminal to send the email.
 
-```go
-go run main.go
+```shell
+ruby mail_send.rb
 ```
 
-You can also print the status code, body, and headers of the response if you wish. Import the fmt and log libraries to do this. You can then assign your `client.Send` to `response` and `err` variables for logging.
+You can also print the status code, body, and headers of the response if you wish.
 
-```go
-import (
-	"fmt"
-	"log"
-)
-
-response, err := client.Send(message)
-	if err != nil {
-		log.Println(err)
-	} else {
-		fmt.Println(response.StatusCode)
-		fmt.Println(response.Body)
-		fmt.Println(response.Headers)
-}
+```ruby
+puts response.status_code
+puts response.body
+puts response.parsed_body
+puts response.headers
 ```
 
-If you receive a `202` status code printed to the console, your message was sent successfully. Check the inbox of the to address, and you will see your demo message.
+If you receive a `202` status code printed to the console, your message was sent successfully. Check the inbox of the `to` address, and you will see your demo message.
 
 If you don’t see the email, you may need to check your spam folder.
 
@@ -263,4 +258,4 @@ This is just the beginning of what you can do with our APIs. To learn more, chec
 - [Getting Started with the Event Webhook]({{root_url}}/for-developers/tracking-events/getting-started-event-webhook/)
 - [The Email Activity Feed]({{root_url}}/ui/analytics-and-reporting/email-activity-feed/)
 - [Sender Authentication]({{root_url}}/ui/account-and-settings/how-to-set-up-domain-authentication/)
-- [Twilio SendGrid helper library for Python](https://github.com/sendgrid/sendgrid-python)
+- [Twilio SendGrid helper library for Ruby](https://github.com/sendgrid/sendgrid-ruby)
