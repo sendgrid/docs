@@ -61,7 +61,7 @@ Before installing Ruby, you can see if you already have a version on your machin
 
 <call-out>
 
-The Twilio SendGrid Ruby helper library requires Ruby version 2.4 or newer, [excluding version 2.6.0](https://github.com/sendgrid/sendgrid-ruby/blob/main/TROUBLESHOOTING.md#ruby-versions).
+The Twilio SendGrid Ruby helper library supports Ruby versions 2.4 through the current version of Ruby 2.x, [excluding version 2.6.0](https://github.com/sendgrid/sendgrid-ruby/blob/main/TROUBLESHOOTING.md#ruby-versions).
 
 </call-out>
 
@@ -76,12 +76,12 @@ ruby -v
 If you have Ruby installed, the terminal will print something like the following output.
 
 ```shell
-ruby 3.0.0p0 (2020-12-25 revision 95aff21468) [x86_64-darwin19]
+ruby 2.7.2p137 (2020-10-01 revision 5445e04352) [x86_64-darwin19]
 ```
 
 <call-out>
 
-You may already have a version of Ruby included on your operating system. For example, MacOS includes a version of Ruby for its own system uses. It is not recommended to develop your application using the MacOS system installation of Ruby.
+You may already have a version of Ruby included on your operating system. For example, MacOS includes a version of Ruby for its own system uses. [It is not recommended to develop your application using the MacOS system installation of Ruby](https://www.freecodecamp.org/news/do-not-use-mac-system-ruby-do-this-instead/).
 
 You can use a version manager such as rbenv or rvm to manage multiple versions of Ruby on one machine. See the [rbenv](https://github.com/rbenv/rbenv) and [RVM](https://rvm.io/) projects for more information.
 
@@ -101,7 +101,7 @@ Start by creating a project folder for this app. The following examples will use
 mkdir send_mail
 ```
 
-Next, navigate into the send_mail directory where you will complete the rest of the tutorial.
+Next, navigate into the `send_mail` directory where you will complete the rest of the tutorial.
 
 ```shell
 cd send_mail
@@ -118,7 +118,7 @@ gem -v
 The terminal should print something like the following output.
 
 ```shell
-3.2.3
+3.1.4
 ```
 
 ### Install the helper library
@@ -132,10 +132,16 @@ gem install sendgrid-ruby
 The terminal will output something like the following output.
 
 ```shell
+Fetching ruby_http_client-3.5.2.gem
+Fetching sendgrid-ruby-6.4.0.gem
+Successfully installed ruby_http_client-3.5.2
 Successfully installed sendgrid-ruby-6.4.0
+Parsing documentation for ruby_http_client-3.5.2
+Installing ri documentation for ruby_http_client-3.5.2
 Parsing documentation for sendgrid-ruby-6.4.0
-Done installing documentation for sendgrid-ruby after 0 seconds
-1 gem installed
+Installing ri documentation for sendgrid-ruby-6.4.0
+Done installing documentation for ruby_http_client, sendgrid-ruby after 0 seconds
+2 gems installed
 ```
 
 ## Send an email
@@ -159,8 +165,6 @@ mail = SendGrid::Mail.new(from, subject, to, content)
 sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
 response = sg.client.mail._('send').post(request_body: mail.to_json)
 puts response.status_code
-puts response.body
-puts response.parsed_body
 puts response.headers
 ```
 
@@ -168,10 +172,9 @@ puts response.headers
 
 Your API call must have the following components.
 
-- A Host (the host for Web API v3 requests is always `https://api.sendgrid.com/v3/`)
-- An Authorization Header
-- An API Key passed in the Authorization Header
-- A Request (when submitting data to a resource via `POST` or `PUT`, you must submit your request body in JSON format)
+- A host (the host for Web API v3 requests is always `https://api.sendgrid.com/v3/`)
+- An API key passed in an Authorization Header
+- A request (when submitting data to a resource via `POST` or `PUT`, you must submit your request body in JSON format)
 
 In your `send_mail.rb` file, require the SendGrid helper library, and include the SendGrid module. The library will handle setting the Host, `https://api.sendgrid.com/v3/`, for you.
 
@@ -182,7 +185,7 @@ include SendGrid
 
 Now you're ready to set up the `from`, `to`, `subject`, and message body `content`. These values are passed to the API in a [Personalizations]({{root_url}}/for-developers/sending-email/personalizations/) object when using the v3 Mail Send API. You can assign each of these values to variables, and the SendGrid library will handle creating a `personalizations` object for you.
 
-The `subject` variable is a string. However, you will set the `from` and `to` variables using the helper library's `Email` method. The `Email` method takes two arguments, an optional `name` and an `email` address.
+The `subject` variable is a string. However, you will set the `from` and `to` variables using the helper library's `Email` method. The `Email` method takes two arguments: an optional `name` and an `email` address. Be sure to set the `to` value to an address with an inbox you can access.
 
 The `content` variable is set with the `Content` method. The `Content` method takes a `type`, which can be either `text/plain` or `text/html`, and a `value`, which is a string of the content you wish to send in the message body.
 
@@ -199,7 +202,7 @@ To properly construct the message, pass each of the previous variables into the 
 mail = SendGrid::Mail.new(from, subject, to, content)
 ```
 
-Next, use the API key you set up earlier. Remember, the API key is stored in an environment variable, so you can use Ruby's `ENV` class to access it. Assign the key to a variable named `sg` using the helper library's `API` method. The helper library will pass your key to the v3 API in an Authorization header using Bearer token authentication.
+Next, use the API key you set up earlier. Remember, the API key is stored in an environment variable, so you can use Ruby's `ENV` class to access it. Assign the key to a variable named `sg` using the helper library's `API` method. The helper library will pass your key to the v3 API in an Authorization Header using Bearer token authentication.
 
 ```ruby
 sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
@@ -222,16 +225,14 @@ With all this code in place, you can run your `mail_send.rb` file in your termin
 ruby mail_send.rb
 ```
 
-You can also print the status code, body, and headers of the response if you wish.
+You can also print the status code and headers of the response if you wish.
 
 ```ruby
 puts response.status_code
-puts response.body
-puts response.parsed_body
 puts response.headers
 ```
 
-If you receive a `202` status code printed to the console, your message was sent successfully. Check the inbox of the `to` address, and you will see your demo message.
+If you receive a [`202` status code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/202) printed to the console, your message was sent successfully. Check the inbox of the `to` address, and you will see your demo message.
 
 If you don’t see the email, you may need to check your spam folder.
 
@@ -241,11 +242,11 @@ If you receive an error message, you can reference our [response message documen
 
 #### API Response messages
 
-All responses are returned in JSON format. We specify this by sending the Content-Type header. The Web API v3 provides a selection of [response codes](https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-responses#status-codes), [content-type headers](https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-responses#content-type-header), and [pagination](https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-responses#pagination) options to help you interpret the responses to your API requests.
+All responses are returned in JSON format. We specify this by sending the Content-Type Header. The Web API v3 provides a selection of [response codes](https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-responses#status-codes), [content-type headers](https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-responses#content-type-header), and [pagination](https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-responses#pagination) options to help you interpret the responses to your API requests.
 
 <call-out>
 
-Get additional onboarding support. Save time, increase the quality of your sending, and feel confident you are set up for long-term success with SendGrid Onboarding Services.
+Get additional onboarding support. Save time, increase the quality of your sending, and feel confident you are set up for long-term success with [SendGrid Onboarding Services](https://sendgrid.com/marketing/onboarding-services-request/?utm_source=docs).
 
 </call-out>
 
