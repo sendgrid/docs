@@ -42,12 +42,6 @@ To ensure the security of your account, Twilio SendGrid has ended support for ba
 
 </call-out>
 
-<call-out>
-
-Our legacy v2 API supports Basic authentication only. When using the v2 Mail Send API, you must use an API key as the _password_ value when authenticating via Basic authentication, which is recommended.
-
-</call-out>
-
 ### Security with Basic authentication
 
 Using basic authentication with your account password is not as secure as using an API key. If your credentials are compromised—for example, if you accidentally commit them to version control—it is more difficult to regain the security of your account when those credentials are your username and password rather than an API key. For this reason, Twilio SendGrid no longer supports authentication via username and password.

@@ -96,7 +96,7 @@ Contacts will be added to or removed from your segment as they meet or no longer
 - Contact engagement behavior, such as opening or clicking an email in a way that’s relevant to your segment conditions.
 - A change you make to the conditions that define your segment.
 
-Typically, existing contacts who meet your criteria will begin to appear in your segment searches within 15 minutes. You can see all contacts who are included in the segment at any given time by clicking **Export CSV**. To check for a specific contact, you can search by the contact’s email address.
+Typically, existing contacts who meet your criteria will begin to appear in your segment searches within 15 minutes. You can see all contacts who are included in the segment at any given time by clicking **Export CSV**. Segments are pulled at the time of an export; this means that an exported CSV will reflect a near-real-time segment population. To check for a specific contact, you can search by the contact’s email address.
 
 <call-out>
 
@@ -121,6 +121,12 @@ You can see an estimate of the next scheduled segment refresh on the [**Contacts
 Automations with entry criteria of a contact entering a segment will be triggered according to the same schedule as the segment sample refresh cadence described above.
 
 However, when you send a Single Send to a segment, Marketing Campaigns will pull the segment at the time of send, reflecting the near-real-time segment population.
+
+<call-out>
+
+Marketing Campaigns will pull a segment at the time of send, reflecting the near-real-time segment population.
+
+</call-out>
 
 ## Segmentation fields and types
 
