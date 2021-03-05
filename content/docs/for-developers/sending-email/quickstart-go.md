@@ -168,7 +168,6 @@ func main() {
 		log.Println(err)
 	} else {
 		fmt.Println(response.StatusCode)
-		fmt.Println(response.Body)
 		fmt.Println(response.Headers)
 	}
 }
@@ -178,10 +177,9 @@ func main() {
 
 Your API call must have the following components.
 
-- A Host (the host for Web API v3 requests is always `https://api.sendgrid.com/v3/`)
-- An Authorization Header
-- An API Key passed in the Authorization Header
-- A Request (when submitting data to a resource via `POST` or `PUT`, you must submit your request body in JSON format)
+- A host (the host for Web API v3 requests is always `https://api.sendgrid.com/v3/`)
+- An API key passed in an Authorization Header
+- A request (when submitting data to a resource via `POST` or `PUT`, you must submit your request body in JSON format)
 
 In your `main.go` file, set the package to `main`, import the SendGrid helper library, and import the SendGrid mail helper from the library. The library will handle setting the Host, `https://api.sendgrid.com/v3/`, for you.
 
@@ -202,9 +200,9 @@ func main() {
 }
 ```
 
-Now you're ready to set up the `from`, `to`, `subject`, and message body `htmlContent`. These values are passed to the API in a [Personalizations]({{root_url}}/for-developers/sending-email/personalizations/) object when using the v3 Mail Send API. You can assign each of these values to variables, and the SendGrid library will handle creating a `personalizations` object for you.
+Now you're ready to set up the `from`, `to`, `subject`, and message body `htmlContent`. These values are passed to the API in a [Personalizations]({{root_url}}/for-developers/sending-email/personalizations/) object when using the v3 Mail Send API. You can assign each of these values to variables, and the SendGrid library will handle creating a `personalizations` object for you. Be sure to set the `to` variable to an email address with an inbox you can access.
 
-The `subject` and `htmlContent` variables are just strings. However, you will set the `from` and `to` variables using the helper library's `NewEmail` constructor. The `NewEmail` function takes two arguments, a `name` and an `address`.
+The `subject` and `htmlContent` variables are just strings. However, you will set the `from` and `to` variables using the helper library's `NewEmail` constructor. The `NewEmail` constructor takes two arguments, a `name` and an `address`.
 
 <call-out>
 
@@ -246,13 +244,7 @@ Lastly, you need to make a `POST` request to the SendGrid Mail Send API to deliv
 client.Send(message)
 ```
 
-With all this code in place, you can run your `main.go` file in your terminal to send the email.
-
-```go
-go run main.go
-```
-
-You can also print the status code, body, and headers of the response if you wish. Import the fmt and log libraries to do this. You can then assign your `client.Send` to `response` and `err` variables for logging.
+You can also print the response status code and headers. Import the fmt and log libraries to do this. You can then assign your `client.Send` call to `response` and `err` variables for logging.
 
 ```go
 import (
@@ -265,12 +257,17 @@ response, err := client.Send(message)
 		log.Println(err)
 	} else {
 		fmt.Println(response.StatusCode)
-		fmt.Println(response.Body)
 		fmt.Println(response.Headers)
 }
 ```
 
-If you receive a `202` status code printed to the console, your message was sent successfully. Check the inbox of the to address, and you will see your demo message.
+With all this code in place, you can run your `main.go` file in your terminal to send the email.
+
+```go
+go run main.go
+```
+
+If you receive a [`202` status code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/202) printed to the console, your message was sent successfully. Check the inbox of the `to` address, and you will see your demo message.
 
 If you don’t see the email, you may need to check your spam folder.
 
@@ -284,7 +281,7 @@ All responses are returned in JSON format. We specify this by sending the Conten
 
 <call-out>
 
-Get additional onboarding support. Save time, increase the quality of your sending, and feel confident you are set up for long-term success with SendGrid Onboarding Services.
+Get additional onboarding support. Save time, increase the quality of your sending, and feel confident you are set up for long-term success with [SendGrid Onboarding Services](https://sendgrid.com/marketing/onboarding-services-request/?utm_source=docs).
 
 </call-out>
 

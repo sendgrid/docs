@@ -83,7 +83,9 @@ Python 3.8.5
 
 Though the SendGrid helper library supports Python back to version 2.7, we recommend using a 3.x version now that Python 2 has reached end-of-life status.
 
-It is possible to have multiple versions of Python on your computer. Some operating systems come with a version of Python already installed. If you run `python --version` and receive `Python 2.7.16` after installing Python 3, try running `python3 --version` to see which 3.x version of Python you have installed. This tutorial was written using Python 3.8.5.
+It is possible to have multiple versions of Python on your computer. Some operating systems come with a version of Python already installed. If you run `python --version` and receive `Python 2.7.x` after installing Python 3, try running `python3 --version` to see which 3.x version of Python you have installed. This tutorial will use the `python` command, assuming you are working with Python 3. If you have not set up Python 3 in a virtual environment, you may need to run the command `python3` instead.
+
+For more about running multiple versions of Python, see ["Virtual Environments and Packages"](https://docs.python.org/3/tutorial/venv.html) in the Python documentation.
 
 </call-out>
 
@@ -123,7 +125,7 @@ pip 20.1.1 from /usr/locallib/python3.8/site-packages/pip (python 3.8)
 
 <call-out>
 
-If you do not see similar output, try typing `pip3 --version`. If you do not have a version of pip installed, you can download and install it using the [pip installation instructions on python.org](https://packaging.python.org/tutorials/installing-packages/).
+If you do not have a version of pip installed, you can download and install it using the [pip installation instructions on python.org](https://packaging.python.org/tutorials/installing-packages/).
 
 </call-out>
 
@@ -133,9 +135,6 @@ To install the Twilio SendGrid helper library, type the following command into t
 
 ```shell
 pip install sendgrid
-
-# python3
-pip3 install sendgrid
 ```
 
 The terminal should print something like.
@@ -174,16 +173,17 @@ mail_json = mail.get()
 
 # Send an HTTP POST request to /mail/send
 response = sg.client.mail.send.post(request_body=mail_json)
+print(response.status_code)
+print(response.headers)
 ```
 
 ### Build your API call
 
 Your API call must have the following components:
 
-- A Host (the host for Web API v3 requests is always `https://api.sendgrid.com/v3/`)
-- An Authorization Header
-- An API Key passed in the Authorization Header
-- A Request (when submitting data to a resource via `POST` or `PUT`, you must submit your request body in JSON format)
+- A host (the host for Web API v3 requests is always `https://api.sendgrid.com/v3/`)
+- An API key passed in an Authorization Header
+- A request (when submitting data to a resource via `POST` or `PUT`, you must submit your request body in JSON format)
 
 In your `app.py` file, import the SendGrid helper library. The library will handle setting the Host, `https://api.sendgrid.com/v3/`, for you.
 
@@ -211,7 +211,7 @@ First, import the library's `Mail`, `Email`, `To`, and `Content` classes.
 from sendgrid.helpers.mail import Mail, Email, To, Content
 ```
 
-With the helpers imported, define and assign values for `from_email`, `to_email`, `subject`, and `content` variables. Assigning an email address like `from_email = "sender@example.com"` will work. However, the constructors imported in the previous step allow you to pass data to them to be sure your final message is formatted properly.
+With the helpers imported, define and assign values for `from_email`, `to_email`, `subject`, and `content` variables. Assigning an email address like `from_email = "sender@example.com"` will work. However, the constructors imported in the previous step allow you to pass data to them to be sure your final message is formatted properly. Be sure to assign the `to_email` to an address with an inbox you can access.
 
 Note that the `Content()` helper takes two arguments: the content type and the content itself. You have two options for the content type: `text/plain` or `text/html`. The second parameter will take the plain text or HTML content you wish to send.
 
@@ -235,29 +235,22 @@ Lastly, you need to make a request to the SendGrid Mail Send API to deliver your
 
 The helper library uses SendGrid's [python-http-client](https://github.com/sendgrid/python-http-client) library to construct the request URL by chaining together portions of your desired path. The path to the SendGrid v3 Mail Send endpoint is `https://api.sendgrid.com/v3/mail/send`. The helper library sets the client for you, so the `https://api.sendgrid.com/v3` portion is taken care of by typing `sg.client`. The next parts of the path are `/mail` and `/send`. You can chain the the words `mail` and `send` onto `client` to build the rest of the URL.
 
-With the URL built, python-http-client then allows you to chain on the type of HTTP request you wish to make with a method matching the name of the HTTP verb appropriate for your desired endpoint. To send a message, you should make an HTTP `POST` request, so you can use `post()`. The `post()` method takes a `request_body`, which you should set to the JSON version of your message (remember, this JSON-ready version is stored in the `mail_json` variable). You can assign this full call to a variable named `response`.
+With the URL built, python-http-client then allows you to chain on the type of HTTP request you wish to make with a method matching the name of the HTTP verb appropriate for your desired endpoint. To send a message, you should make an HTTP `POST` request, so you can use `post()`. The `post()` method takes a `request_body`, which you should set to the JSON version of your message (remember, this JSON-ready version is stored in the `mail_json` variable). You can assign this full call to a variable named `response` and print the response status code and headers.
 
 ```python
 # Send an HTTP POST request to /mail/send
 response = sg.client.mail.send.post(request_body=mail_json)
+print(response.status_code)
+print(response.headers)
 ```
 
-With all this code in place, you can run your `app.py` file with Python to send the email. You can also print the status code, body, and headers of the response if you wish.
+With all this code in place, you can run your `app.py` file with Python to send the email.
 
 ```shell
 python app.py
-print(response.status_code)
-print(response.body)
-print(response.headers)
-
-# If needed
-python3 app.py
-print(response.status_code)
-print(response.body)
-print(response.headers)
 ```
 
-If you receive a 202 status code printed to the console, your message was sent successfully. Check the inbox of the `“to_email”` address, and you should see your demo message.
+If you receive a [`202` status code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/202) printed to the console, your message was sent successfully. Check the inbox of the `“to_email”` address, and you should see your demo message.
 
 If you don’t see the email, you may need to check your spam folder.
 
@@ -271,7 +264,7 @@ All responses are returned in JSON format. We specify this by sending the Conten
 
 <call-out>
 
-Get additional onboarding support. Save time, increase the quality of your sending, and feel confident you are set up for long-term success with SendGrid Onboarding Services.
+Get additional onboarding support. Save time, increase the quality of your sending, and feel confident you are set up for long-term success with [SendGrid Onboarding Services](https://sendgrid.com/marketing/onboarding-services-request/?utm_source=docs).
 
 </call-out>
 
