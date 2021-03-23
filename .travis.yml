@@ -1,19 +1,19 @@
 sudo: required
-dist: trusty
+dist: focal
 language: node_js
 branches:
   only:
-  - main
-  - develop
+    - main
+    - develop
 node_js:
-- 12.16.*
+  - 12.16.*
 cache:
-- pip
-- npm
+  - pip
+  - npm
 install:
-- pip install --user awscli
+  - pip install --user awscli
 before_script:
-- npm ci
+  - npm ci
 script: ./travis/build.sh
 deploy:
   - provider: script
