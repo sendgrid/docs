@@ -36,7 +36,7 @@ A common way to add contacts is to upload a CSV and map your data to custom fiel
 
 <call-out>
 
-You can upload a CSV containing up to 1M contacts or 5MB of data, whichever is less.
+You can upload a CSV containing up to 1M contacts or 5GB of data, whichever is less.
 
 </call-out>
 

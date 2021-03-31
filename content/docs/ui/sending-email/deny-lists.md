@@ -12,7 +12,7 @@ navigation:
   show: true
 ---
 
-Ending up on a [deny list]({{root_url}}/glossary/deny-list/) can be detrimental to your domain’s email deliverability. These days, there are hundreds, maybe thousands of deny lists out there. Some, like the Spamhaus SBL, can bring your email program to a screeching halt. Others are little more than an annoyance. Many of the world's largest inbox providers use deny lists to help them make inboxing and filtering decisions. Others rely only on their own internal metrics. Always remember: if a listing service ever asks you pay a fee for a delisting request, or if they say that they do not accept delisting requests, then you should not waste your time trying to get your domain/IP delisted because these services are rarely, if ever, used. However, if you find that your IP address has been added to a deny list by one of the many legitimate services, then submitting a delisting request is the top priority. Depending on the level of your account, you should approach being added to a deny list in one of 2 ways:
+Ending up on a [deny list]({{root_url}}/glossary/deny-list/) can be detrimental to your domain’s email deliverability. These days, there are hundreds, maybe thousands of deny lists out there. Some, like the Spamhaus SBL, can have a great impact on your email deliverability, while others may not. Many of the world's largest inbox providers use deny lists to help them make inboxing and filtering decisions. Others rely only on their own internal metrics. No action should be taken with listing entities requesting a fee for delisting or stating they do not accept requests to delist. If you find that your IP address has been added to a deny list by a legitimate entity, then submitting a delisting request would be recommended. Depending on your plan, you should approach being added to a deny list in one of 2 ways:
 
 ## Shared IP Plans (Free, Legacy Lite, and Essentials)
 
@@ -22,7 +22,7 @@ If you are on one of our shared IP plans and you notice a block message from Spa
 
 ### Other deny lists
 
-If you notice a block message from a service other than Spamhaus based on one of our IP addresses, please [contact support](https://support.sendgrid.com/). We will handle all delisting requests for our shared IP users.
+If you are on one of our shared IP plans and you notice a block message from any other deny list based on one of our IP addresses, please note that blocklists are a natural part of sending through shared IP Pools with multiple senders utilizing the same set of IPs. The large majority of these blocklists do not have an impact on your deliverability and often self-mitigate over time. We are actively monitoring these listings to ensure appropriate actions are taken for any that may impact our senders' deliverability.
 
 ## Dedicated IP Plans (Pro and Premier)
 
