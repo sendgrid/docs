@@ -212,24 +212,19 @@ Lastly, you need to make a request to the SendGrid Mail Send API to deliver your
 
 The helper library uses SendGrid's [ruby-http-client](https://github.com/sendgrid/ruby-http-client) library to construct the request URL by chaining together portions of your desired path. The path to the SendGrid v3 Mail Send endpoint is `https://api.sendgrid.com/v3/mail/send`. The helper library sets the client for you, so the `https://api.sendgrid.com/v3` portion is taken care of by typing `sg.client`. The next parts of the path are `/mail` and `/send`. You can chain the words `mail` and `send` onto `client` to build the rest of the URL.
 
-With the URL built, `ruby-http-client` then allows you to chain on the type of HTTP request you wish to make with a method matching the name of the HTTP verb appropriate for your desired endpoint. To send a message, you should make an HTTP `POST` request, so you can use `post()`. The `post()` method takes a `request_body`, which you should set to a JSON version of your message. You can assign this full call to a variable named `response`.
+With the URL built, `ruby-http-client` then allows you to chain on the type of HTTP request you wish to make with a method matching the name of the HTTP verb appropriate for your desired endpoint. To send a message, you should make an HTTP `POST` request, so you can use `post()`. The `post()` method takes a `request_body`, which you should set to a JSON version of your message. You can assign this full call to a variable named `response`. You can also print the response status code and headers.
 
 ```ruby
 # Send an HTTP POST request to /mail/send
 response = sg.client.mail._('send').post(request_body: mail.to_json)
+puts response.status_code
+puts response.headers
 ```
 
 With all this code in place, you can run your `mail_send.rb` file in your terminal to send the email.
 
 ```shell
 ruby mail_send.rb
-```
-
-You can also print the status code and headers of the response if you wish.
-
-```ruby
-puts response.status_code
-puts response.headers
 ```
 
 If you receive a [`202` status code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/202) printed to the console, your message was sent successfully. Check the inbox of the `to` address, and you will see your demo message.
