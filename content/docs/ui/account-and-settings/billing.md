@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-You can update your billing details on the on the Billing tab of the [Account Details page](https://app.sendgrid.com/account/billing) in the UI. You can update your plan details on the Products tab of the [Account Details page](https://app.sendgrid.com/account/products).
+You can update your billing details on the Billing tab of the [Account Details page](https://app.sendgrid.com/account/billing) in the UI. You can update your plan details on the Products tab of the [Account Details page](https://app.sendgrid.com/account/products).
 
 For more information about understanding your bill, see [Reading your invoice]({{root_url}}/ui/account-and-settings/reading-your-invoice/).
 
@@ -65,15 +65,15 @@ Each [Marketing Campaigns](https://sendgrid.com/pricing/) package will cover bot
 
 #### Features include:
 
-* Automation
-* Single Sends for one-time campaigns
-* Ticket Support
-* 3 Email Testing Credits per month
-* 1 Signup Form
+- Automation
+- Single Sends for one-time campaigns
+- Ticket Support
+- 3 Email Testing Credits per month
+- 1 Signup Form
 
 #### Limits:
 
-* 6,000 emails/month - Emails sent via Single Sends or Automation count toward your allotment. Any Single Sends you attempt to send that exceed your 6,000 email limit will send partially up to that limit.
+- 6,000 emails/month - Emails sent via Single Sends or Automation count toward your allotment. Any Single Sends you attempt to send that exceed your 6,000 email limit will send partially up to that limit.
 
 <call-out>
 
@@ -81,9 +81,9 @@ For example, if you have 400 emails remaining and attempt to send a Single Send 
 
 </call-out>
 
-* 2,000 contacts - Contacts, whether you attempt to upload them via CSV, or they are added via Signup Forms or the Contacts API, will be dropped if you exceed 2,000 total contacts.
+- 2,000 contacts - Contacts, whether you attempt to upload them via CSV, or they are added via Signup Forms or the Contacts API, will be dropped if you exceed 2,000 total contacts.
 
-*What to do if you’ve reached your limit:*
+_What to do if you’ve reached your limit:_
 
 You will be alerted when you have reached your limit each month. To keep your Automations and Signup Forms active, upgrade to the Basic or Advanced plan. Once you upgrade, your account will never be blocked due to limits, you’ll simply pay overages for any usage that exceeds your Basic or Advanced tier allotment.
 
@@ -97,37 +97,36 @@ If you’re on the Free package and hit your contact allotment limit, any active
 
 #### Features include:
 
-* Single Sends for one-time campaigns
-* Ticket, chat, and phone support
-* 10 Email Testing Credits per month with the option to purchase more
-* 5 Signup Forms
-* 1 Teammate
-* Access to Expert Services
+- Single Sends for one-time campaigns
+- Ticket, chat, and phone support
+- 10 Email Testing Credits per month with the option to purchase more
+- 5 Signup Forms
+- 1 Teammate
+- Access to Expert Services
 
 #### Limits:
 
-* 5,000 – 300,000 emails/month depending on the plan you purchase. Emails sent via Single Sends count towards your allotment. 
-* Up to 100,000 contacts
-
+- 5,000 – 300,000 emails/month depending on the plan you purchase. Emails sent via Single Sends count towards your allotment.
+- Up to 100,000 contacts
 
 ### Advanced Plan
 
 #### Features include:
 
-* Automation
-* Single Sends for one-time campaigns
-* Ticket, chat, and phone support
-* 60 Email Testing Credits per month with the option to purchase more
-* 15 Signup Forms
-* 1,000 Teammates
-* Access to Expert Services
-* Subuser Management
-* Dedicated IP Included
+- Automation
+- Single Sends for one-time campaigns
+- Ticket, chat, and phone support
+- 60 Email Testing Credits per month with the option to purchase more
+- 15 Signup Forms
+- 1,000 Teammates
+- Access to Expert Services
+- Subuser Management
+- Dedicated IP Included
 
 #### Limits:
 
-* 50,000 – 1 million+ emails/month depending on the plan you purchase. Emails sent via Single Sends or Automation count towards your allotment.
-* 200,000+ contacts
+- 50,000 – 1 million+ emails/month depending on the plan you purchase. Emails sent via Single Sends or Automation count towards your allotment.
+- 200,000+ contacts
 
 If you exceed your plan allotment of contacts or overages you will be charged a [small amount]({{root_url}}/ui/account-and-settings/billing/#limits-and-overage-rates) per email sent and per contact stored above the limits of your current Marketing package. Any overage charges will appear on the invoice of the month _after_ any over-limit sending and contact storage occurs.
 
@@ -137,21 +136,21 @@ If you exceed your plan allotment of contacts or overages you will be charged a 
 
 You can add and store up to 2,000 contacts to your account each month. The number you can add depends on whether you already have contacts stored in your account. For example, if you have 500 contacts in your account, and you haven’t added any yet this month, you can add up to 1,500 more contacts.
 
-If you *update or add new data about existing contacts* in your Marketing Campaigns account, it will not count against the number of contacts you can add.
+If you _update or add new data about existing contacts_ in your Marketing Campaigns account, it will not count against the number of contacts you can add.
 
-If you *delete a contact and re-add them*, that is counted as a new add.
+If you _delete a contact and re-add them_, that is counted as a new add.
 
 #### Basic & Advanced Plans
 
-Your plan tier comes with an allotment of contacts that you can add to and store in your account each month. For example, if you’re on the Advanced 100K plan, you can add up to 100,000 contacts. 
+Your plan tier comes with an allotment of contacts that you can add to and store in your account each month. For example, if you’re on the Advanced 100K plan, you can add up to 100,000 contacts.
 
 The number you can add each month depends on whether you already have contacts stored in your account. For example, if you currently have 5,000 contacts in your account, and you haven’t added any yet this month, you can add up to 95,000 more contacts.
 
-If you *update or add new data about existing contacts* in your Marketing Campaigns account, it does not count against the number of contacts you can add. 
+If you _update or add new data about existing contacts_ in your Marketing Campaigns account, it does not count against the number of contacts you can add.
 
-If you *delete a contact and re-add them*, that is counted as a new add. 
+If you _delete a contact and re-add them_, that is counted as a new add.
 
-If you exceed your allotment of contacts in a given month, you’ll be charged overages according to your chosen Marketing Campaigns package. 
+If you exceed your allotment of contacts in a given month, you’ll be charged overages according to your chosen Marketing Campaigns package.
 
 ## Email API Plans
 
@@ -167,71 +166,71 @@ The [Email API package](https://sendgrid.com/pricing/) includes charges for any 
 
 #### Features include:
 
-* APIs, SMTP Relay, and Webhooks
-* Libraries and documentation
-* Delivery Optimization Tools
-* Transactional Template Editor
-* 3 days of Email Activity History
-* 3 Email Testing credits during the trial period
-* Ticket Support
+- APIs, SMTP Relay, and Webhooks
+- Libraries and documentation
+- Delivery Optimization Tools
+- Transactional Template Editor
+- 3 days of Email Activity History
+- 3 Email Testing credits during the trial period
+- Ticket Support
 
 #### Limits:
 
-* 40,000 emails/day for your first 30 days
-* 100 emails/day indefinitely after your first 30 days are over
-* No ability to purchase additional Email Testing credits
+- 40,000 emails/day for your first 30 days
+- 100 emails/day indefinitely after your first 30 days are over
+- No ability to purchase additional Email Testing credits
 
 ### Essentials
 
 #### Features include:
 
-* APIs, SMTP Relay, and Webhooks
-* Libraries and documentation
-* Delivery Optimization Tools
-* Transactional Template Editor
-* 3 days of Email Activity History
-* Ticket and chat
+- APIs, SMTP Relay, and Webhooks
+- Libraries and documentation
+- Delivery Optimization Tools
+- Transactional Template Editor
+- 3 days of Email Activity History
+- Ticket and chat
 
 #### Limits:
 
-* Up to 100,000+ emails/month depending on the package you purchase.
-* No Email Testing access
+- Up to 100,000+ emails/month depending on the package you purchase.
+- No Email Testing access
 
 ### Pro
 
 #### Features include:
 
-* APIs, SMTP Relay, and Webhooks
-* Libraries and documentation
-* Delivery Optimization Tools
-* Transactional Template Editor
-* Dedicated IP Included
-* Subuser Management
-* 7 days of Email Activity History
-* 60 Email Testing credits with the ability to purchase more
-* Ticket, chat, and phone support
+- APIs, SMTP Relay, and Webhooks
+- Libraries and documentation
+- Delivery Optimization Tools
+- Transactional Template Editor
+- Dedicated IP Included
+- Subuser Management
+- 7 days of Email Activity History
+- 60 Email Testing credits with the ability to purchase more
+- Ticket, chat, and phone support
 
 #### Limits:
 
-* Up to 1.5 million+ emails/month depending on the package you purchase.
+- Up to 1.5 million+ emails/month depending on the package you purchase.
 
 ### Premier
 
 #### Features include:
 
-* APIs, SMTP Relay, and Webhooks
-* Libraries and documentation
-* Delivery Optimization Tools
-* Transactional Template Editor
-* Dedicated IP Included
-* Subuser Management
-* 7 Days of Email Activity History
-* 500 Email Testing credits with the ability to purchase more
-* Ticket, chat, and phone support
+- APIs, SMTP Relay, and Webhooks
+- Libraries and documentation
+- Delivery Optimization Tools
+- Transactional Template Editor
+- Dedicated IP Included
+- Subuser Management
+- 7 Days of Email Activity History
+- 500 Email Testing credits with the ability to purchase more
+- Ticket, chat, and phone support
 
 ## Limits and Overage Rates
 
-*What to do if you’ve reached your limit*:
+_What to do if you’ve reached your limit_:
 
 You will be charged a small amount per-email for each email that you send beyond the limit of your current plan. Any overage charges will appear on the invoice of the month _after_ any over-limit sending and contact storage occurs.
 
@@ -243,7 +242,7 @@ Upgrading your account does NOT absorb already incurred overage charges, so make
 
 <call-out type="warning">
 
-**Important:** If your SendGrid account is created through Microsoft Azure, Heroku or Google Cloud, these subscriptions do *not* allow for overages.  For pricing, billing and account package details for these types of SendGrid accounts, please refer to each of the partner's respective online resources.
+**Important:** If your SendGrid account is created through Microsoft Azure, Heroku or Google Cloud, these subscriptions do _not_ allow for overages. For pricing, billing and account package details for these types of SendGrid accounts, please refer to each of the partner's respective online resources.
 
 </call-out>
 
@@ -389,8 +388,8 @@ Upgrading your account does NOT absorb already incurred overage charges, so make
 
 You must meet both criteria below for a refund to be considered:
 
-* You have not used your account in the current calendar month.
-* You have no overages, and you have no contacts stored in Marketing Campaigns.
+- You have not used your account in the current calendar month.
+- You have no overages, and you have no contacts stored in Marketing Campaigns.
 
 Twilio SendGrid packages operate off of a monthly subscription model, not direct usage. We will not issue a refund if you have used your account in the same calendar month as your request. Instead, please cancel your account to avoid any future subscription charges.
 
@@ -422,5 +421,5 @@ When you cancel an account, it changes to a [free](https://sendgrid.com/free?mc=
 
 ## Additional Resources
 
-* [SendGrid Pricing](https://sendgrid.com/pricing/)
-* [Reading your invoice]({{root_url}}/ui/account-and-settings/reading-your-invoice/)
+- [SendGrid Pricing](https://sendgrid.com/pricing/)
+- [Reading your invoice]({{root_url}}/ui/account-and-settings/reading-your-invoice/)
