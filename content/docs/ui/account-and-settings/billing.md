@@ -19,7 +19,7 @@ When you create or upgrade to a paid account, you add a credit card for automati
 
 ## Payment methods
 
-Twilio SendGrid accepts credit or check cards. We charge accounts on a monthly basis; we do not offer pre-payment, quarterly billing, or annual billing at this time. We do not accept PayPal, wire transfer, checks, or any card requiring a PIN.
+Twilio SendGrid accepts credit or check cards. We charge accounts on a monthly basis; we do not offer prepayment, quarterly billing, or annual billing at this time. We do not accept PayPal, wire transfer, checks, prepaid cards, or any card requiring a PIN.
 
 You can update your card information, retry a failed payment, and export past invoices for your business on the Billing tab of your [Account Details](https://app.sendgrid.com/account/billing) page. It is also possible to change your package type and cancel your account from this page.
 
