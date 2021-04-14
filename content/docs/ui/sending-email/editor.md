@@ -139,7 +139,7 @@ Substitution tags are built using Handlebars templating language syntax. In addi
    <th>Substitution Tag</th>
    <th>Description</th>
  </tr>
-  <tr>
+ <tr>
    <td><code class="language-text">{{first_name}}</code></td>
    <td>The first name of the recipient</td>
  </tr>
@@ -151,7 +151,7 @@ Substitution tags are built using Handlebars templating language syntax. In addi
    <td><code class="language-text">{{email}}</code></td>
    <td>The email address of the recipient</td>
  </tr>
-  <tr>
+ <tr>
    <td><code class="language-text">{{alternate_emails}</code></td>
    <td>Alternate emails of the recipient</td>
  </tr>
@@ -162,105 +162,86 @@ Substitution tags are built using Handlebars templating language syntax. In addi
  <tr>
    <td><code class="language-text">{{address_line_2}}</code></td>
    <td>The second line of the address of the recipient</td>
-   
  </tr>
   <tr>
    <td><code class="language-text">{{city}}</code></td>
    <td>The city of the recipient</td>
-   
  </tr>
-  <tr>
+ <tr>
    <td><code class="language-text">{{state_province_region}}</code></td>
    <td>The region of the recipient</td>
-   
  </tr>
   <tr>
    <td><code class="language-text">{{postal_code}}</code></td>
    <td>The postal code of the recipient</td>
-   
  </tr>
-  <tr>
+ <tr>
    <td><code class="language-text">{{country}}</code></td>
    <td>The country of the recipient</td>
-   
  </tr>
    <tr>
    <td><code class="language-text">{{phone_number}}</code></td>
    <td>The phone number of the recipient</td>
-   
  </tr>
-    <tr>
+ <tr>
    <td><code class="language-text">{{whatsapp}}</code></td>
    <td>The whatsapp of the recipient</td>
-   
  </tr>
-   <tr>
+ <tr>
    <td><code class="language-text">{{line}}</code></td>
    <td>The line of the recipient</td>
-   
  </tr>
-   <tr>
+ <tr>
    <td><code class="language-text">{{facebook}}</code></td>
    <td>The facebook of the recipient</td>
-   
  </tr>
-   <tr>
+ <tr>
    <td><code class="language-text">{{unique_name}}</code></td>
    <td>The unique name of the recipient</td>
-   
  </tr>
  <tr>
    <td><code class="language-text">{{Sender_Name}}</code>* </td>
    <td>The name of the sender selected when sending your email</td>
-   
  </tr>
-  <tr>
+ <tr>
    <td><code class="language-text">{{Sender_Email}}</code>* </td>
    <td>The email of the sender selected when sending your email</td>
-   
  </tr>
  <tr>
    <td><code class="language-text">{{Sender_Address}}</code>* </td>
    <td>The address on record for the sender selected when sending your email</td>
-   
  </tr>
  <tr>
    <td><code class="language-text">{{Sender_City}}</code>* </td>
    <td>The city on record for the sender selected when sending your email</td>
-   
  </tr>
  <tr>
    <td><code class="language-text">{{Sender_State}}</code>* </td>
    <td>The state on record for the sender selected when sending your email</td>
-   
  </tr>
  <tr>
    <td><code class="language-text">{{Sender_Zip}}</code>* </td>
    <td>The zip code on record for the sender selected when sending your email</td>
-   
  </tr>
  <tr>
    <td><code class="language-text">{{Sender_Country}}</code>* </td>
    <td>The country on record for the sender selected when sending your email</td>
-   
  </tr>
  <tr>
    <td><code class="language-text"><%asm_group_unsubscribe_<br>raw_url%></code>* </td>
    <td>This tag is replaced with a link allowing your recipients to opt out of any emails you send using the chosen Unsubscribe Group</td>
-   
  </tr>
  <tr>
-   <td><code class="language-text"><%asm_global_unsubscribe_<br>raw_url%></code>
-   * </td>
+   <td><code class="language-text"><%asm_global_unsubscribe_<br>raw_url%></code>* </td>
    <td>This tag is replaced with a link allowing your recipients to opt out of all email communication</td>
-   
  </tr>
  <tr>
-   <td><code class="language-text"><%asm_preferences_<br>raw_url%></code>
-   * </td>   
+   <td><code class="language-text"><%asm_preferences_<br>raw_url%></code>* </td>
    <td>This tag is replaced with a link allowing your recipients to opt out of any email unsubscribe groups you offer.</td>
-   <td>Unsubscribe</td>
-  
+ </tr>
+ <tr>
+  <td><code class="language-text">{{Weblink}}</td>
+  <td>This tag is replaced with a link that will open the email in a Twilio SendGrid-hosted webpage. This feature makes it possible to view an email when an email client fails to open or properly render the message.</td>
  </tr>
 </table>
 
