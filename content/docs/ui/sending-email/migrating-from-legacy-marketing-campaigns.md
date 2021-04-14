@@ -270,8 +270,8 @@ Images embedded in your templates or past campaigns will continue to populate fr
 
 </call-out>
 
-5. Navigate to **Templates** in new Marketing Campaigns and select **My Templates**.
-6. Click **Create Template**, and then select either the **Design Editor** or the **Code Editor**.
+5. Navigate to **Design Library** in new Marketing Campaigns and select **Your Email Designs**.
+6. Click **Create Email Design**, and then select either the **Design Editor** or the **Code Editor**.
 7. If you’re using the **Design Editor**, navigate to **Build**, select **Advanced** and then click **Import Drag & Drop HTML**. If you’re using the **Code Editor**, paste in the HTML into the HTML editor.
 
 <call-out>
@@ -288,7 +288,7 @@ Make sure that you are using the new [substitution tags]({{root_url}}/ui/sending
 
 <call-out>
 
-Make sure that your unsubscription tags and groups are also up to date. You can learn more about how to format these tags [here]({{root_url}}/ui/sending-email/create-and-manage-unsubscribe-groups/).
+Make sure that your unsubscribe tags and groups are also up to date. You can learn more about how to format these tags [here]({{root_url}}/ui/sending-email/create-and-manage-unsubscribe-groups/).
 
 </call-out>
 

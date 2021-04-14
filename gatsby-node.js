@@ -6,10 +6,10 @@ const crypto = require('crypto');
 /**
  * Generate node edges
  *
- * @param {any} { node, boundActionCreators, getNode }
+ * @param {any} { node, actions, getNode }
  */
-exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
-  const { createNodeField } = boundActionCreators;
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions;
 
   /**
    * Add slug edge
@@ -19,8 +19,8 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     const fileNode = getNode(node.parent);
     const parsedFilePath = path.parse(fileNode.relativePath);
     if (
-      Object.prototype.hasOwnProperty.call(node, 'frontmatter')
-      && Object.prototype.hasOwnProperty.call(node.frontmatter, 'slug')
+      Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
+      Object.prototype.hasOwnProperty.call(node.frontmatter, 'slug')
     ) {
       slug = `/${node.frontmatter.slug}`;
     } else if (parsedFilePath.name !== 'index' && parsedFilePath.dir !== '') {
@@ -29,12 +29,16 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
       slug = `/${parsedFilePath.dir}/`;
     }
     if (
-      Object.prototype.hasOwnProperty.call(node, 'frontmatter')
-      && Object.prototype.hasOwnProperty.call(node.frontmatter, 'slug')
+      Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
+      Object.prototype.hasOwnProperty.call(node.frontmatter, 'slug')
     ) {
       slug = `/${_.kebabCase(node.frontmatter.slug)}`;
     }
-    createNodeField({ node, name: 'slug', value: _.kebabCase(slug).toLowerCase() });
+    createNodeField({
+      node,
+      name: 'slug',
+      value: _.kebabCase(slug).toLowerCase(),
+    });
 
     /**
      * Add permalink edge
@@ -44,8 +48,8 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
      */
     let permalink;
     if (
-      Object.prototype.hasOwnProperty.call(node, 'frontmatter')
-      && Object.prototype.hasOwnProperty.call(node.frontmatter, 'path')
+      Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
+      Object.prototype.hasOwnProperty.call(node.frontmatter, 'path')
     ) {
       permalink = `/${node.frontmatter.path}${slug}`;
     } else if (parsedFilePath.dir !== '') {
@@ -53,7 +57,11 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     } else {
       permalink = slug;
     }
-    createNodeField({ node, name: 'permalink', value: permalink.toLowerCase() });
+    createNodeField({
+      node,
+      name: 'permalink',
+      value: permalink.toLowerCase(),
+    });
 
     /**
      * Check if doc is "ui", "for developers", "glossary" or "release-notes" and add a field slug to represent this.
@@ -73,23 +81,23 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
 
     let cat;
     if (
-      Object.prototype.hasOwnProperty.call(node, 'frontmatter')
-      && Object.prototype.hasOwnProperty.call(node.frontmatter, 'category')
+      Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
+      Object.prototype.hasOwnProperty.call(node.frontmatter, 'category')
     ) {
       cat = node.frontmatter.category;
     } else {
       // remove docType prefix
       cat = parsedFilePath.dir.replace(`${docType}`, '');
       cat = cat.split('/');
-      cat = (cat.length > 1 && cat[1].length) ? cat[1] : 'uncategorized';
+      cat = cat.length > 1 && cat[1].length ? cat[1] : 'uncategorized';
     }
 
     createNodeField({ node, name: 'category', value: cat });
 
     let group = 'ungrouped';
     if (
-      Object.prototype.hasOwnProperty.call(node, 'frontmatter')
-      && Object.prototype.hasOwnProperty.call(node.frontmatter, 'group')
+      Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
+      Object.prototype.hasOwnProperty.call(node.frontmatter, 'group')
     ) {
       group = node.frontmatter.group;
     }
@@ -97,8 +105,8 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
 
     let title;
     if (
-      Object.prototype.hasOwnProperty.call(node, 'frontmatter')
-      && Object.prototype.hasOwnProperty.call(node.frontmatter, 'title')
+      Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
+      Object.prototype.hasOwnProperty.call(node.frontmatter, 'title')
     ) {
       title = node.frontmatter.title;
     } else {
@@ -108,14 +116,15 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   }
 };
 
-exports.createPages = ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators;
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions;
 
   return new Promise((resolve, reject) => {
     const docsPage = path.resolve('src/templates/doc.jsx');
     const categoryPage = path.resolve('src/templates/category.jsx');
 
-    resolve(graphql(`
+    resolve(
+      graphql(`
         {
           allMarkdownRemark {
             edges {
@@ -133,109 +142,107 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           }
         }
       `).then((result) => {
-      if (result.errors) {
-        /* eslint no-console: "off" */
-        console.log(result.errors);
-        reject(result.errors);
-      }
-
-      const helpCategorySet = new Set();
-      const developerCategorySet = new Set();
-
-      result.data.allMarkdownRemark.edges.forEach((edge) => {
-        const {
-          category,
-          docType,
-        } = edge.node.fields;
-
-        // aggregate "ui" categories
-        if (docType === 'ui') {
-          helpCategorySet.add(category);
+        if (result.errors) {
+          /* eslint no-console: "off" */
+          console.log(result.errors);
+          reject(result.errors);
         }
 
-        // aggregate "for-developers" categories
-        if (docType === 'for-developers') {
-          developerCategorySet.add(category);
-        }
+        const helpCategorySet = new Set();
+        const developerCategorySet = new Set();
 
-        // Create docs pages
-        const { permalink } = edge.node.fields;
+        result.data.allMarkdownRemark.edges.forEach((edge) => {
+          const { category, docType } = edge.node.fields;
 
-        createPage({
-          path: permalink,
-          component: docsPage,
-          context: {
-            slug: edge.node.fields.slug,
-            id: edge.node.id,
-          },
+          // aggregate "ui" categories
+          if (docType === 'ui') {
+            helpCategorySet.add(category);
+          }
+
+          // aggregate "for-developers" categories
+          if (docType === 'for-developers') {
+            developerCategorySet.add(category);
+          }
+
+          // Create docs pages
+          const { permalink } = edge.node.fields;
+
+          createPage({
+            path: permalink,
+            component: docsPage,
+            context: {
+              slug: edge.node.fields.slug,
+              id: edge.node.id,
+            },
+          });
         });
-      });
 
-      const categoryList = Array.from(developerCategorySet);
-      categoryList.forEach((category, i) => {
-        // Create "for-developer" category nodes.
-        const cat = {
-          id: `${i}`,
-          slug: category,
-          parent: '__SOURCE__',
-          children: [],
-          internal: {
-            type: 'forDeveloperCategories',
-          },
-        };
-        // Get content digest of node. (Required field)
-        const contentDigest = crypto
-          .createHash('md5')
-          .update(JSON.stringify(cat))
-          .digest('hex');
+        const categoryList = Array.from(developerCategorySet);
+        categoryList.forEach((category, i) => {
+          // Create "for-developer" category nodes.
+          const cat = {
+            id: `${i}`,
+            slug: category,
+            parent: '__SOURCE__',
+            children: [],
+            internal: {
+              type: 'forDeveloperCategories',
+            },
+          };
+          // Get content digest of node. (Required field)
+          const contentDigest = crypto
+            .createHash('md5')
+            .update(JSON.stringify(cat))
+            .digest('hex');
 
-        // add it to contentNode
-        cat.internal.contentDigest = contentDigest;
+          // add it to contentNode
+          cat.internal.contentDigest = contentDigest;
 
-        // Create "/for-developers/<category-slug>" pages.
-        createPage({
-          path: `/for-developers/${_.kebabCase(category)}/`,
-          component: categoryPage,
-          context: {
-            docType: 'for-developers',
-            category,
-          },
+          // Create "/for-developers/<category-slug>" pages.
+          createPage({
+            path: `/for-developers/${_.kebabCase(category)}/`,
+            component: categoryPage,
+            context: {
+              docType: 'for-developers',
+              category,
+            },
+          });
         });
-      });
 
-      const helpCategoryList = Array.from(helpCategorySet);
-      helpCategoryList.forEach((category, i) => {
-        // Create "ui" category nodes.
-        const cat = {
-          id: `${i}`,
-          slug: category,
-          parent: '__SOURCE__',
-          children: [],
-          internal: {
-            type: 'helpSupportCategories',
-          },
-        };
+        const helpCategoryList = Array.from(helpCategorySet);
+        helpCategoryList.forEach((category, i) => {
+          // Create "ui" category nodes.
+          const cat = {
+            id: `${i}`,
+            slug: category,
+            parent: '__SOURCE__',
+            children: [],
+            internal: {
+              type: 'helpSupportCategories',
+            },
+          };
 
-        // Get content digest of node. (Required field)
-        const contentDigest = crypto
-          .createHash('md5')
-          .update(JSON.stringify(cat))
-          .digest('hex');
+          // Get content digest of node. (Required field)
+          const contentDigest = crypto
+            .createHash('md5')
+            .update(JSON.stringify(cat))
+            .digest('hex');
 
-        // add it to userNode
-        cat.internal.contentDigest = contentDigest;
+          // add it to userNode
+          cat.internal.contentDigest = contentDigest;
 
-        // Create "/ui/<category-slug>" pages.
-        createPage({
-          path: `/ui/${_.kebabCase(category)}/`,
-          component: categoryPage,
-          context: {
-            docType: 'ui',
-            category,
-          },
+          // Create "/ui/<category-slug>" pages.
+          createPage({
+            path: `/ui/${_.kebabCase(category)}/`,
+            component: categoryPage,
+            context: {
+              docType: 'ui',
+              category,
+            },
+          });
         });
-      });
-    }));
+      })
+    );
   });
 };
 
