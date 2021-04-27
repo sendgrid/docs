@@ -1,9 +1,9 @@
 ---
 seo:
-  title: Sending Email with Microsoft Azure 2021
+  title: Sending Email with Microsoft Azure
   description: Learn how to send email with Twilio SendGrid's newest Azure integration
   keywords: Microsoft, Azure, Integration
-title: Sending Email with Microsoft Azure 2021
+title: Sending Email with Microsoft Azure
 group: platform-partners
 weight: 100
 layout: page
@@ -19,8 +19,6 @@ This documentation applies to the most recent version of the Twilio SendGrid int
 
 This guide will help you create and configure a Twilio SendGrid account using Microsoft Azure. Once your account is ready, you'll be on your way to delivering email at scale.
 
-For more information, visit the [Twilio SendGrid website](https://sendgrid.com).
-
 ## Create an Azure Subscription
 
 To get started with Twilio SendGrid and Azure, visit the [Azure Portal home page](https://portal.azure.com/#home). You will need to sign in or create a Microsoft account if you do not already have one.
@@ -29,7 +27,7 @@ Once logged in, select the **Subscriptions** icon under the **Azure services** m
 
 ![Azure services menu with the Subscriptions icon highlighted]({{root_url}}/img/sg_azure_portal_home_subscription.png 'Azure subscriptions')
 
-A new page will load, listing your current subscriptions. You can add Twilio SendGrid to an existing Subscription or Select **+Add** to create a new subscription. For more information about Subscriptions and billing, see the Azure docs for how to [Create an additional Azure subscription](https://docs.microsoft.com/en-us/azure/cost-management-billing/manage/create-subscription).
+A new page will load, listing your current subscriptions. You can add Twilio SendGrid to an existing Subscription or Select **+Add** to create a new subscription. For more information about Subscriptions and billing, see the Azure docs for how to "[Create an additional Azure subscription](https://docs.microsoft.com/en-us/azure/cost-management-billing/manage/create-subscription)."
 
 For this guide, we will create a new Subscription.
 
@@ -65,7 +63,7 @@ From the Azure portal home page, select **Marketplace** under **Azure services**
 
 The Azure Marketplace provides many services, including the Twilio SendGrid email service. You can find it by searching for "Twilio SendGrid." You will also find it under **Software as a Service (SaaS)**.
 
-Click the Twilio SendGrid resource to load a page where you can select your account tier. You can start with a Free account and upgrade as your sending needs change. See the [Twilio SendGrid pricing page](https://sendgrid.com/pricing/) to understand what's included with each plan.
+Click the Twilio SendGrid resource to load a page where you can select your account tier. You can start with a free account and upgrade as your sending needs change. See the [Twilio SendGrid pricing page](https://sendgrid.com/pricing/) to understand what's included with each plan.
 
 ![The Twilio SendGrid integration listed in the Azure Marketplace]({{root_url}}/img/sg_azure_marketplace_listing.png 'Azure Marketplace Twilio SendGrid listing')
 
@@ -133,7 +131,7 @@ To keep your account secure, you should give each key the [least privilege](http
 
 <call-out>
 
-For security reasons, Twilio SendGrid API keys will be displayed to you at the time of creation only. Be sure to copy your key and store it somewhere secure like your Azure Key Vault. If you lose your key, you must create another — it's not possible to recover a lost key. The permissions assigned to a key can be modified after it's created.
+For security reasons, Twilio SendGrid API keys will be displayed to you at the time of creation only. Be sure to copy your key and store it somewhere secure like your [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/). If you lose your key, you must create another — it's not possible to recover a lost key. The permissions assigned to a key can be modified after it's created.
 
 </call-out>
 
