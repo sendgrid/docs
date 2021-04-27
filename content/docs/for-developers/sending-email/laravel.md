@@ -31,7 +31,11 @@ MAIL_FROM_ADDRESS=from@example.com
 ```
 
 <call-out>
-The `MAIL_FROM_NAME` field requires double quotes because there is a space in the string.
+Set the `MAIL_USERNAME` field to "apikey" to inform SendGrid that you're using an API key.<br>
+</call-out>
+
+<call-out>
+The `MAIL_FROM_NAME` field requires double quotes because there is a space in the string.<br>
 </call-out>
 
 <call-out>
