@@ -176,8 +176,9 @@ const msg = {
 
 sgMail
   .send(msg)
-  .then(() => {
-    console.log('Email sent')
+  .then((response) => {
+    console.log(response[0].statusCode)
+    console.log(response[0].headers)
   })
   .catch((error) => {
     console.error(error)
@@ -188,10 +189,9 @@ sgMail
 
 Your API call must have the following components:
 
-- A Host (the host for Web API v3 requests is always `https://api.sendgrid.com/v3/`)
-- An Authorization Header
-- An API Key passed in the Authorization Header
-- A Request (when submitting data to a resource via `POST` or `PUT`, you must submit your request body in JSON format)
+- A host (the host for Web API v3 requests is always `https://api.sendgrid.com/v3/`)
+- An API key passed in an Authorization Header
+- A request (when submitting data to a resource via `POST` or `PUT`, you must submit your request body in JSON format)
 
 In your `index.js` file, require the Node.js helper library. The library will handle setting the Host, `https://api.sendgrid.com/v3/`, for you.
 
@@ -221,13 +221,14 @@ const msg = {
 }
 ```
 
-To send the message, pass the `msg` object as an argument to the helper library's `send()` method. You can also add `then()` and `catch()` methods to log a success message or catch and log any errors.
+To send the message, pass the `msg` object as an argument to the helper library's `send()` method. You can also add `then()` and `catch()` methods to log the response status code and headers or catch and log any errors.
 
 ```javascript
 sgMail
   .send(msg)
-  .then(() => {
-    console.log('Email sent')
+  .then((response) => {
+    console.log(response[0].statusCode)
+    console.log(response[0].headers)
   })
   .catch((error) => {
     console.error(error)
@@ -240,7 +241,7 @@ The code block is now complete. To send the message, you can run the `index.js` 
 node index.js
 ```
 
-If you receive the output "Message sent" printed to the console, your message was sent successfully. Check the inbox of the `“to”` address, and you should see your demo message.
+If you receive a [`202` status code](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/202) printed to the console, your message was sent successfully. Check the inbox of the `“to”` address, and you should see your demo message.
 
 If you don’t see the email, you may need to check your spam folder.
 
@@ -254,7 +255,7 @@ All responses are returned in JSON format. We specify this by sending the Conten
 
 <call-out>
 
-Get additional onboarding support. Save time, increase the quality of your sending, and feel confident you are set up for long-term success with SendGrid Onboarding Services.
+Get additional onboarding support. Save time, increase the quality of your sending, and feel confident you are set up for long-term success with [SendGrid Onboarding Services](https://sendgrid.com/marketing/onboarding-services-request/?utm_source=docs).
 
 </call-out>
 
