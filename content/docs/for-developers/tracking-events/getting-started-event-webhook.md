@@ -28,7 +28,7 @@ _To get started with the Event Webhook:_
 1. Go to the [Webhook tester](https://webhook.site/).
 1. Copy the unique URL.
 1. In a new window, open [Settings > Mail Settings](https://app.sendgrid.com/settings/mail_settings) in the [SendGrid UI](https://app.sendgrid.com).
-1. Turn on **Event Notification**.
+1. Turn on **Event Webhook**.
 1. In the **HTTP POST URL field**, paste the unique URL that you copied in step 2.
 1. Select the Event notifications you would like to test.
 1. Click the checkmark in the top corner to save these updates into your settings.

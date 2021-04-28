@@ -41,7 +41,7 @@ Update sendmail.cf and access.db files
 ```bash
 $ cd /etc/mail
 $ m4 sendmail.mc >sendmail.cf
-$ makemap hash access < access
+$ makemap hash access.db < access
 ```
 
 On older distros, you can run restart sendmail like so:

@@ -97,12 +97,12 @@ If you’re on the Free package and hit your contact allotment limit, any active
 
 #### Features include:
 
-- Single Sends for one-time campaigns
-- Ticket, chat, and phone support
-- 10 Email Testing Credits per month with the option to purchase more
-- 5 Signup Forms
-- 1 Teammate
-- Access to Expert Services
+* Single Sends for one-time campaigns
+* Ticket and chat
+* 10 Email Testing Credits per month with the option to purchase more
+* 5 Signup Forms
+* 1 Teammate
+* Access to Expert Services
 
 #### Limits:
 

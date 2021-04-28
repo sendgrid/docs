@@ -2,13 +2,13 @@
 layout: page
 weight: 0
 title: Single Sends 2020 Update
-group: sending-mail
+group: sending-email
 navigation:
   show: false
 seo:
   title: Single Sends 2020 Update
   description: Instructions for migrating to the updated Single Sends API
-  keywords: 
+  keywords:
 ---
 
 <call-out type="warning">
