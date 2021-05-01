@@ -63,31 +63,62 @@ You can add your contacts manually including alternate email addresses, addresse
 
 ### Create a signup form
 
-Use Signup Forms to capture new contacts and add them directly to Marketing Campaigns. You can choose to add them to All Contacts, or to a specific list. You can create up to 15 Signup Forms.
+You can use [Signup Forms](https://mc.sendgrid.com/forms/signup) to capture new contacts and add them directly to Marketing Campaigns. Signup Forms can be shared using a link or embedded directly into your website, making them a great way to grow your lists by engaging customers wherever they are. You can create as many as 15 Signup Forms to capture your audience in the ways that are best suited to your business needs.
 
 <call-out>
 
-If the list you add them to is acting as the entry criteria for a live automation, the new contact will automatically receive any emails you’ve created as part of that automation.
+If you add contacts using a list that's acting as the entry criteria for a live automation, the new contacts will automatically receive any emails you’ve created as part of that automation.
 
 </call-out>
-
-You can invite contacts to sign up to hear from you by sharing your signup form either by sending them a link hosted by Twilio SendGrid or by embedding it directly into your website.
 
 _To create a new signup form:_
 
 1. Navigate to Marketing and select **Signup Forms**.
-1. Click **Create a Signup Form**.
-1. On the Settings tab, add a Form Name and then select either All contacts or a specific list new contacts will be added to.
-1. Next, add a confirmation message. This field contains the text that contacts will see once they’ve submitted the form.
-1. Navigate to the Build tab and add a header to the form.
-1. Add the intro copy to explain what the contact is signing up to receive.
-1. Select the checkboxes to add the reserved and custom fields you want on the form. When contacts sign up, this data will be added to their contact profile.
+2. Click **Create a Signup Form**.
+
+![The Signup Forms page with a "Create a Signup Form" button]({{root_url}}/img/signup_form_create.png 'Create a Signup Form')
+
+3. A page will load with configuration tabs and a preview of the form. On the **Settings** tab, add a **Form Name**.
+4. You can populate the **Add contacts to** field with any of your contacts lists, including **All Contacts**.
+5. Next, add a **Confirmation Message**. This field contains the text that contacts will see once they’ve submitted the form.
+
+![The Signup Forms page with the Settings tab open]({{root_url}}/img/signup_form_settings.png 'Signup form settings')
+
+6. Navigate to the **Build** tab to add fields to the form itself.
+
+   - The **Build** tab allows you to label your form by setting a **Header**. You can also provide any **Intro Copy** that might help customers understand the purpose of your form.
+   - The **Build** tab also provides the opportunity to add **Reserved Fields** and **Custom Fields** to your form. This means you can collect helpful information about new contacts at the time of signup. Twirl open the **Reserved Fields** and **Custom Fields** menus, and select any fields you want to include on the form. They will show in the form preview beside the **Build** tab.
+
+![The Signup Forms page with the Build tab open. Two custom fields are selected and showing in the form preview.]({{root_url}}/img/signup_form_build.png 'Signup form build')
 
 <call-out>
 
 If a contact (defined by a unique email address) already exists in your contact database, any new or updated data will be reflected on that existing contact.
 
 </call-out>
+
+7. You can change the look of your form using the **Styles** tab. In addition to modifying fonts and colors, you can change the button styles and the width of the form.
+8. Once you are happy with the form, select **Save & Apply**.
+
+### Share Code to make your form accessible
+
+Once your form has been created, you can share it by embedding it into your own webpages or by providing customers with a direct link to the form hosted by Twilio SendGrid. If you choose to embed your form, it will be hosted in an iframe.
+
+_To share the code for your signup form:_
+
+1. Navigate to the signup form you want to share or embed.
+2. Click the action menu and select **Share Code**.
+
+![The action menu (three dots) open with the "Share Code" menu item highlighted]({{root_url}}/img/signup_form_share_code_action_menu.png 'Action menu Share Code')
+
+3. A modal will open where you can copy either the direct link to the Twilio SendGrid hosted form — titled, **Landing Page** — or the embeddable iframe code — titled, **Direct Embed**.
+
+   - The Landing Page link can be pasted anywhere, including in an email or on a social media site.
+   - The Direct Embed code can be pasted to the HTML of your website wherever you’d like the form to display.
+
+![The signup form's share modal]({{root_url}}/img/signup_form_share_code_options.png 'Form share options')
+
+You can also find the options to share the signup form in the form editor by clicking **Share Code** in the top-right corner of the editor.
 
 ### Manage signup forms
 
@@ -100,21 +131,6 @@ Using the action menu on the Signup Forms page you can edit, duplicate, or delet
 Because of the iframe technology used to create the signup form, the form dynamically updates on the page or pages where you have the form embedded anytime you edit a form and click **Save & Apply**.
 
 </call-out>
-
-### Share Code to make your form accessible
-
-To make your form accessible to new contacts, you can either send them a link hosted by Twilio SendGrid or you can embed code on your website that displays your form as an iframe.
-
-_To share the code for your signup form:_
-
-1. Navigate to the signup form you want to share or embed.
-1. Click the action menu and select **Share Code**.
-1. On the _Integrate Form_ modal, copy either the Landing Page or Direct Embed link.
-
-   - The Landing Page link can be pasted anywhere, including in an email or on a social media site.
-   - The Direct Embed code can be pasted to the HTML of your website wherever you’d like the form to display.
-
-You can also find the options to share the signup form in the form editor by clicking **Share Code** in the top-right corner of the editor.
 
 ## Manage Contacts
 
