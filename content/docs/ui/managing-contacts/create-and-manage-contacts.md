@@ -63,7 +63,7 @@ You can add your contacts manually including alternate email addresses, addresse
 
 ### Create a signup form
 
-You can use [Signup Forms](https://mc.sendgrid.com/forms/signup) to capture new contacts and add them directly to Marketing Campaigns. Signup Forms can be shared using a link or embedded directly into your website, making them a great way to grow your lists by engaging customers wherever they are. You can create as many as 15 Signup Forms to capture your audience in the ways that are best suited to your business needs.
+You can use [Signup Forms](https://mc.sendgrid.com/forms/signup) to capture new contacts and add them directly to Marketing Campaigns. You can embed your forms directly into webpages using an [\<iframe\>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe). Forms can also be shared using a Twilio SendGrid-hosted link, making them a great way to grow your lists by engaging customers wherever they are. You can create as many as 15 Signup Forms, allowing you to deploy lists and segment contacts in the ways that best suite your business needs.
 
 <call-out>
 
@@ -86,8 +86,8 @@ _To create a new signup form:_
 
 6. Navigate to the **Build** tab to add fields to the form itself.
 
-   - The **Build** tab allows you to label your form by setting a **Header**. You can also provide any **Intro Copy** that might help customers understand the purpose of your form.
-   - The **Build** tab also provides the opportunity to add **Reserved Fields** and **Custom Fields** to your form. This means you can collect helpful information about new contacts at the time of signup. Twirl open the **Reserved Fields** and **Custom Fields** menus, and select any fields you want to include on the form. They will show in the form preview beside the **Build** tab.
+   - The **Build** tab allows you to label your form by setting a **Header**. You can also add any **Intro Copy** that might help customers understand the purpose of your form.
+   - The **Build** tab also provides the opportunity to add [Reserved Fields]({{root_url}}/ui/managing-contacts/custom-fields/#reserved-fields) and [Custom Fields]({{root_url}}/ui/managing-contacts/custom-fields/) to the form. This means you can collect helpful information about new contacts at the time of signup. Expand the **Reserved Fields** and **Custom Fields** menus, and select any fields you want to include — they will appear in the form preview beside the **Build** tab.
 
 ![The Signup Forms page with the Build tab open. Two custom fields are selected and showing in the form preview.]({{root_url}}/img/signup_form_build.png 'Signup form build')
 
@@ -102,7 +102,7 @@ If a contact (defined by a unique email address) already exists in your contact 
 
 ### Share Code to make your form accessible
 
-Once your form has been created, you can share it by embedding it into your own webpages or by providing customers with a direct link to the form hosted by Twilio SendGrid. If you choose to embed your form, it will be hosted in an iframe.
+Once your form has been created, you can share it by embedding it into your own webpages or by providing customers with a direct link to the form. The link is hosted by Twilio SendGrid. If you choose to embed your form, it will be hosted in an `<iframe>`.
 
 _To share the code for your signup form:_
 
@@ -111,14 +111,14 @@ _To share the code for your signup form:_
 
 ![The action menu (three dots) open with the "Share Code" menu item highlighted]({{root_url}}/img/signup_form_share_code_action_menu.png 'Action menu Share Code')
 
-3. A modal will open where you can copy either the direct link to the Twilio SendGrid hosted form — titled, **Landing Page** — or the embeddable iframe code — titled, **Direct Embed**.
+3. A modal will open where you can copy either the direct link to the Twilio SendGrid-hosted form — titled, **Landing Page** — or the embeddable `<iframe>` code — titled, **Direct Embed**.
 
    - The Landing Page link can be pasted anywhere, including in an email or on a social media site.
-   - The Direct Embed code can be pasted to the HTML of your website wherever you’d like the form to display.
+   - The Direct Embed code can be pasted into the HTML of your website wherever you want to display the form.
 
 ![The signup form's share modal]({{root_url}}/img/signup_form_share_code_options.png 'Form share options')
 
-You can also find the options to share the signup form in the form editor by clicking **Share Code** in the top-right corner of the editor.
+You can also find the options to share the signup form in the form editor by clicking **Share Code** in the top right corner of the editor.
 
 ### Manage signup forms
 
@@ -128,7 +128,7 @@ Using the action menu on the Signup Forms page you can edit, duplicate, or delet
 
 <call-out>
 
-Because of the iframe technology used to create the signup form, the form dynamically updates on the page or pages where you have the form embedded anytime you edit a form and click **Save & Apply**.
+Because of the `<iframe>` technology used to create the signup form, the form dynamically updates on the page or pages where you have the form embedded anytime you edit a form and click **Save & Apply**.
 
 </call-out>
 
