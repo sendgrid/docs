@@ -47,7 +47,7 @@ There are several different ways to allow an IP address. If you navigate to the 
 
 Under Recently Accessed 20 IPs, you will see a list of recent IPs that attempted to connect to your account, regardless of whether or not they are allowed addresses. You will also see some additional information about those IPs, such as the date of the first and most recent access attempt, the physical location of the IP, and the method by which they attempted to access your account.
 
-You can allow one of these IPs by clicking the gear icon in the row of the IP you would like to allow, then clicking *Add To .
+You can allow one of these IPs by clicking the gear icon in the row of the IP you would like to allow, then clicking **Add To Allowed List** .
 
 ![]({{root_url}}/img/add_ip_from_recent_access_attempts.png)
 
