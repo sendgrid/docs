@@ -27,7 +27,7 @@ There is a [group of endpoints](https://sendgrid.api-docs.io/v3.0/cancel-schedul
 
 <call-out>
 
-You can have no more than 10 different batches (10 different groups of emails with each group identified by a unique `batch_id`) in a 'paused' or 'pending cancellation' state at one time.
+You can have no more than 100 different batches (100 different groups of emails with each group identified by a unique `batch_id`) in a 'paused' or 'pending cancellation' state at one time.
 
 </call-out>
 
