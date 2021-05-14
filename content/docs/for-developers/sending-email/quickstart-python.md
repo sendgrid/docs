@@ -219,7 +219,7 @@ Note that the `Content()` helper takes two arguments: the content type and the c
 from_email = Email("test@example.com")  # Change to your verified sender
 to_email = To("test@example.com")  # Change to your recipient
 subject = "Sending with SendGrid is Fun"
-content = Content("text/plain", "and easy to do anywhere, even with Python"
+content = Content("text/plain", "and easy to do anywhere, even with Python")
 ```
 
 To properly construct the message, pass each of the previous variables into the SendGrid library's Mail constructor. You can assign this to a variable named `mail`. You can then use the the Mail constructor's `get()` method to get a JSON-ready representation of the Mail object.
