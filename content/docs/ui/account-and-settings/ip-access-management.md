@@ -45,19 +45,19 @@ There are several different ways to allow an IP address. If you navigate to the 
 
 ### Recent Access Attempts
 
-Under Recent Access Attempts, you will see a list of recent IPs that attempted to connect to your account, regardless of whether or not they are allowed addresses. You will also see some additional information about those IPs, such as the date of the first and most recent access attempt, the physical location of the IP, and the method by which they attempted to access your account.
+Under Recently Accessed 20 IPs, you will see a list of recent IPs that attempted to connect to your account, regardless of whether or not they are allowed addresses. You will also see some additional information about those IPs, such as the date of the first and most recent access attempt, the physical location of the IP, and the method by which they attempted to access your account.
 
-You can allow one of these IPs by clicking the gear icon in the row of the IP you would like to allow, then clicking “Add To Whitelist”.
+You can allow one of these IPs by clicking the gear icon in the row of the IP you would like to allow, then clicking **Add To Allowed List** .
 
-![]({{root_url}}/images/add_ip_from_recent_access_attempts.png)
+![]({{root_url}}/img/add_ip_from_recent_access_attempts.png)
 
 ### Adding IP Addresses Manually
 
-To manually allow one or more IP addresses, click the Add IP Addresses button.
+To manually allow one or more IP addresses, click **+ Add IP Addresses**.
 
 ![]({{root_url}}/images/add_ip_address_button.png)
 
-You will see a dialogue box presenting you with a blank form in which you may enter a single IP address or multiple IP addresses separated by a space, comma, or on separate lines.
+You can add recently accessed IPs by clicking **Add to Form Below** next to the IP you wish to save, or you can enter a single IP address or range of IP Addresses in the field at the bottom of the modal and then click **Save**.
 
 ![]({{root_url}}/images/ip_access_management_add_ip.png)
 
