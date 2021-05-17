@@ -20,11 +20,32 @@ Twilio SendGrid SSO does not currently support granting an SSO user access to mo
 
 </call-out>
 
-<call-out>
+## SSO beta release schedule
 
-Single Sign-On is available to Email API Pro, Premier, and Custom plans, and Marketing Campaigns Advanced plans. See our [pricing page](https://sendgrid.com/pricing/) for a list of all plans and features.
+Single Sign-On is being released in phases for each plan type. The table below provides an estimated release schedule — the provided dates are estimates only and may change. See our [pricing page](https://sendgrid.com/pricing/) for a list of all Twilio SendGrid plans and features.
 
-</call-out>
+<table>
+    <thead>
+        <tr>
+            <th>Twilio SendGrid Plan</th>
+            <th>Estimated Availability</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>Marketing Campaigns Advanced</td>
+          <td>Week of May 17th, 2021</td>
+        </tr>
+        <tr>
+          <td>Email API Pro</td>
+          <td>Week of May 24th, 2021</td>
+        </tr>
+        <tr>
+          <td>Email API Premiere and Custom</td>
+          <td>Week of May 31st, 2021</td>
+        </tr>
+    </tbody>
+</table>
 
 ## Introduction to Twilio SendGrid SSO
 
