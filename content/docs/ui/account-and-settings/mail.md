@@ -13,9 +13,9 @@ navigation:
 
 Mail Settings allow you to tell SendGrid specific things to do to every email that you send to your recipients over SendGrid’s [Web API]({{root_url}}/api-reference/) or [SMTP Relay]({{root_url}}/glossary/smtp-relay/).
 
-## Address Whitelist
+## Address Allow List
 
-The Address Whitelist setting allows a specified email address or domain for which mail should never be suppressed. For example, you own the domain “example.com,” and one or more of your recipients use email@example.com addresses, by placing example.com in the Address Whitelist setting, all bounces, blocks, and unsubscribes logged for that domain will be ignored and sent as if under normal sending conditions.
+The Address Allow List setting allows a specified email address or domain for which mail should never be suppressed. For example, you own the domain “example.com,” and one or more of your recipients use email@example.com addresses, by placing example.com in the Address Allow List setting, all bounces, blocks, and unsubscribes logged for that domain will be ignored and sent as if under normal sending conditions.
 
 **Settings**
 
