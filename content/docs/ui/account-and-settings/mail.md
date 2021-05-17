@@ -53,9 +53,9 @@ Allows you to set a schedule for SendGrid to automatically delete contacts from 
 
 - Status - On or Off
 
-- Soft Bounces - The number of days soft bounces will be kept in your soft bounces suppression lists. Any soft bounces older than this value will be purged.
+- Soft Bounces - The number of days soft bounces will be kept in your soft bounces suppression lists. Any soft bounces older than this value will be purged (Min: 1, Max: 3650).
 
-- Hard Bounces - The number of days hard bounces will be kept in your hard bounces suppression lists. Any hard bounces older than this value will be purged.
+- Hard Bounces - The number of days hard bounces will be kept in your hard bounces suppression lists. Any hard bounces older than this value will be purged (Min: 1, Max: 3650).
 
 ## Event Notification
 
