@@ -558,7 +558,7 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
     <td>X</td>
     <td>X</td>
     <td>X</td>
-    <td></td>
+    <td>X</td>
     <td>X</td>
     <td>X</td>
   </tr>
@@ -572,7 +572,7 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
     <td>X</td>
     <td>X</td>
     <td>X</td>
-    <td></td>
+    <td>X</td>
     <td>X</td>
     <td>X</td>
   </tr>
