@@ -57,6 +57,8 @@ Allows you to set a schedule for SendGrid to automatically delete contacts from 
 
 - Hard Bounces - The number of days hard bounces will be kept in your hard bounces suppression lists. Any hard bounces older than this value will be purged (Min: 1, Max: 3650).
 
+Please Note: Entering values for both Soft and Hard Bounces is not necessary. Only enter a value for the types of bounces you would like purged; empty values will be ignored.
+
 ## Event Notification
 
 The Event Notification setting controls webhook notifications for events, such as bounces, clicks, opens, and more. This setting allows these events to be POSTed to a URL of your choosing.
