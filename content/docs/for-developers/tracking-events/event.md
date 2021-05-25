@@ -564,7 +564,7 @@ Events like deferrals or bounces may or may not have an IP included in their pos
     <td>X</td>
     <td>X</td>
     <td>X</td>
-    <td></td>
+    <td>X</td>
     <td>X</td>
     <td>X</td>
   </tr>
@@ -578,7 +578,7 @@ Events like deferrals or bounces may or may not have an IP included in their pos
     <td>X</td>
     <td>X</td>
     <td>X</td>
-    <td></td>
+    <td>X</td>
     <td>X</td>
     <td>X</td>
   </tr>
