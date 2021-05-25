@@ -15,13 +15,13 @@ seo:
 
 The Twilio SendGrid email design experience is all about supporting your unique workflow, so you can get things done more efficiently. You have complete control over the way that you create and edit each new email, thanks to 2 distinct editing experiences.
 
-## Choosing The Right Editor
+## Choosing the right editor
+
+Both editors provide access to similar features, and you can achieve the same results with either editor. Which editor you choose will mostly be determined by the way you like to work. A brief description of the editors and their shared functionalities is provided below. The user interfaces are similar but have some differences. How to work with the editors is detailed in the editor-specific sections below.
 
 The [**Code Editor**](#the-code-editor) is perfect for users who are importing, creating, or editing custom HTML. It offers a robust environment to upload images, backed by a feature-packed editor – complete with split-screen preview, error flagging, scroll-syncing, syntax highlighting, and more. While other email editors may be notorious for adding excess code to your project, rest assured that our editor never modifies your carefully crafted HTML.
 
 The [**Design Editor**](#the-design-editor), complete with HTML access to each content module, offers powerful _what you see is what you get_ (WYSIWYG) editing. It features a diverse library of content blocks, allowing you to build beautiful emails quickly and intuitively. Once placed into your email, each module offers access to edit the HTML and a robust panel of settings–perfect for customizing content precisely to your needs.
-
-Both editors support dynamic data using [Handlebars]({{root_url}}/for-developers/sending-email/using-handlebars/) syntax. Dynamic data includes any information you use to personalize a design, such as a customer's name or order confirmation number. You can use a test data structure in the editor's preview to ensure your dynamic values behave the way you expect before you ever send a message.
 
 <call-out>
 
@@ -35,104 +35,33 @@ Twilio SendGrid recommends only having one instance of a template or Marketing C
 
 </call-out>
 
-## The Code Editor
+## Shared editor features
 
-Twilio SendGrid’s marketer-friendly code editor features a powerful split-screen editing experience – perfect for building Single Send or Automation emails with your own custom HTML. It offers a number of helpful features, often found in native editors.
+### Dynamic data with Handlebars
 
-### Code Editor Features
+Both editors support dynamic data using [Handlebars]({{root_url}}/for-developers/sending-email/using-handlebars/) syntax. Dynamic data includes any information you use to personalize a design, such as a customer's name or order confirmation number. You can use a test data structure in the editor's preview to ensure your dynamic values behave the way you expect before you ever send a message.
 
-**Live Template Preview** -
-See how your email looks in real-time as you write and edit code. No more tabbing between windows, refreshing, or re-rendering. Marketing Campaigns’ split-screen editing experience displays your code on the left and a pixel-perfect preview on the right.
+In addition to substituting values, you can use Handlebars in your designs to [format dates]({{root_url}}/for-developers/sending-email/using-handlebars/#formatdate), [iterate over lists]({{root_url}}/for-developers/sending-email/using-handlebars/#iterations), and [conditionally render values]({{root_url}}/for-developers/sending-email/using-handlebars/#conditional-statements). See our [Handlebars documentation]({{root_url}}/for-developers/sending-email/using-handlebars/) to see all that you can do with dynamic data and Twilio SendGrid templates.
 
-**Error Flagging** -
-If the code editor finds something that seems odd or inconsistent with best practices, instead of interrupting your workflow, it places a small red “x” in the margin of the line so you can come back and check when it’s convenient for you.
+### Substitution Tags
 
-**Scroll Syncing** -
-Easily pinpoint the HTML element you wish to edit. Click anywhere on the right-side preview of your email, and the code on the left automatically jumps to the corresponding line. Click somewhere on the left, and the preview on the right will jump along with you!
-
-**Syntax Highlighting** -
-As you edit, parts of your code highlights in various colors according to the type of syntax. This added dimension provides clarity and efficiency as you search for, locate, and edit code elements.
-
-### Getting Started With The Code Editor
-
-_To use the code editor for Single Sends:_
-
-1. From the left-hand navigation, select **Marketing**, and then click **Single Sends**
-1. Click **Create a Single Send**.
-   <br>To create a Single Send email using an existing (drafted or sent) email, find the Single Send you'd like to use and click the action menu next to the email.
-1. Then, select **Edit** or **Duplicate**.
-1. Select **Code Editor**, and then click **Continue**.
-
-_To use the code editor for Automations:_
-
-1. From the left-hand navigation, select **Marketing**, and then click **Automations** .
-1. Click **Create an Automation**.
-1. Under Custom Automation click **Select**.
-
-<call-out>
-
-The Welcome Series Automation can only be edited with the [design editor]({{root_url}}/ui/sending-email/editor/#the-design-editor)
-
-</call-out>
-
-1. Give the automation a name, entry criteria, exit criteria, and select an [Unsubscribe Group](https://sendgrid.com/docs/ui/sending-email/create-and-manage-unsubscribe-groups/).
-1. Select the send time and then click the edit button next to _Email 1_.
-1. Select **Code Editor**, and then click **Continue**.
-
-<call-out>
-
-You can only edit unsent emails.
-
-</call-out>
-
-You can select a blank template, a custom template that you have already created, or one of Twilio SendGrid's pre-built templates. For more information, see [Working With Templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/).
-
-If you have already built the HTML that you want to use in another application, copy and paste that code directly into the content area of the Code Editor. You can also write the HTML for your email or template directly in the Code Editor.
-
-The split-screen view of the Code Editor allows you to see a real-time preview of your email. You can toggle between a preview of how your email or template appears on a recipient’s desktop and mobile phone by clicking either the desktop or mobile phone icons above the content area. You can also view a plain text version of your email or template by clicking the **T** icon. When in this preview mode, you can edit the plain text content of your email or template by clicking the **Edit Plain Text** button.
-
-<call-out type="warning">
-
-Once you create a new single send or automation email in the Code Editor, it cannot be edited using the Design Editor unless you add our [Drag and Drop Markup]({{root_url}}/ui/sending-email/editor/#drag--drop-markup).
-
-</call-out>
-
-### Uploading Images
-
-1. Select the **images** icon above the HTML code. A window opens where you can upload images to your library.
-2. Select the image you want to add from your image library.
-3. Select the **image details** tab and copy the URL in the **Image Source URL** tab by clicking **Copy URL**.
-4. Paste this URL in an image source tag in your email or template's HTML.
-   Example: `<img src="your image URL here">`
-
-### Using Substitution Tags
-
-Substitution tags allow you to easily generate dynamic content for each recipient on your contact list. When you send to a list of recipients, you can specify substitution tags specific to each recipient.
-
-**To add a substitution tag to your email:**
-
-1. Click the **Settings** tab on the left side of the editor.
-2. Click the **Tags** tab at the top of the Settings window.
-3. Locate the tag you want to add to your email and click it to automatically copy it to your clipboard.
-4. Paste the tag into the email.
+Substitution tags allow you to use any reserved or custom field data you've added to Marketing Campaigns to dynamically generate unique content for each recipient of your email. A common example is to add a recipient's first name to the body (or even the subject line) of your email.
 
 The data that populates your Substitution Tags will come from the information you have stored about each contact. You can manage this information on the [Marketing Campaigns Contacts page](https://mc.sendgrid.com/contacts).
 
-<call-out>
-
-When copying and pasting a tag from the **Tags** tab, a default will be added automatically. Default values are supported by the `insert` keyword only. For this reason, tags with default values will be saved with a different syntax automatically. For more information about working with default values and Handlebars, see [Adding Dynamic Content with Handlebars in Marketing Campaigns]({{root_url}}/ui/sending-email/adding-dynamic-content-with-handlebars-in-marketing-campaigns/).
-
-</call-out>
-
-In addition to the following reserved fields that are available on all contacts by default, you can add your own [Custom Fields](https://mc.sendgrid.com/custom-fields) with Marketing Campaigns. When building Marketing Campaigns designs, your Custom Fields will be available in the **Tags** tab of the editor. For information about managing these fields, see our [Custom Fields]({{root_url}}/ui/managing-contacts/custom-fields/) documentation. If you add a substitution tag, and the data is unavailable on a contact for that tag, the tag will not be rendered in the final email.
+In addition to the following reserved fields that are available on all contacts by default, you can add your own [Custom Fields](https://mc.sendgrid.com/custom-fields) with Marketing Campaigns. When building Marketing Campaigns designs, your Custom Fields will be available in the **Tags** tab of the editors. For information about managing these fields, see our [Custom Fields]({{root_url}}/ui/managing-contacts/custom-fields/) documentation.
 
 <call-out>
 
-Substitution tags are built using Handlebars templating language syntax. In addition to substituting values, you can use Handlebars in your designs to [format dates]({{root_url}}/for-developers/sending-email/using-handlebars/#formatdate), [iterate over lists]({{root_url}}/for-developers/sending-email/using-handlebars/#iterations), and [conditionally render values]({{root_url}}/for-developers/sending-email/using-handlebars/#conditional-statements). See our [Handlebars documentation]({{root_url}}/for-developers/sending-email/using-handlebars/) to see all that you can do with dynamic data and Twilio SendGrid templates.
+For contacts with no entry in a custom field, the Substitution Tag appears blank. To set a default value, use the following pattern:
+
+`{{insert first_name "default=Valued Customer"}}`
 
 </call-out>
 
 #### Reserved Substitution Tags
+
+The following Tags are provided by Twilio SendGrid by default and are available on each of your contacts.
 
 <table class="table" style="table-layout:fixed">
  <tr>
@@ -245,17 +174,146 @@ Substitution tags are built using Handlebars templating language syntax. In addi
  </tr>
 </table>
 
-<call-out>
+\* For your convenience, these substitution tags are included by default in the Unsubscribe Module found on the Tags tab of the Design Editor.
 
-For contacts with no entry in a custom field, the substitution tag appears blank. To set a default value, use the following pattern:
+<call-out type="warning">
 
-`{{insert first_name "default=Valued Customer"}}`
+The `<%asm_group_unsubscribe_raw_url%>`, `<%asm_preferences_raw_url%>`, and `<%asm_global_unsubscribe _raw_url%>` tags are reserved for use in Transactional Templates and should not be used in Marketing Campaigns.
 
 </call-out>
 
-#### Preview substitution tags with test data
+_See how to work with Substitution Tags_
 
-Both the Design and Code editors offer a test data preview feature. This means you can add any Tags you're using in your email design with "test data" values. Test data provides a way to be sure that your final design will populate and render the substitutions properly. If you wanted to collaborate on a design for example, having test data stored directly in the design means each teammate can see how substitution tags will populate directly from the editor's preview.
+- [Using the Code Editor](#using-substitution-tags-with-the-code-editor)
+- [Using the Design Editor](#using-substitution-tags-with-the-design-editor)
+
+### Test Data
+
+The Design and Code Editors both provide a test data preview feature. This means you can add the reserved and custom fields stored on a contact as well as any other variables you wish to pass into your template, such as order confirmation data. Test data provides a way to be sure that your final design will populate and render the substitutions properly. If you wanted to collaborate on a design for example, having test data stored directly in the design means each teammate can reference the data structure used to populate substitution tags without having to dig into a code base.
+
+_See how to work with Test Data_
+
+- [Using the Code Editor](#test-data-with-the-code-editor)
+- [Using the Design Editor](#test-data-with-the-design-editor)
+
+### Categories
+
+<call-out type="warning">
+
+Category information will be stored as a “Not PII” field and may be used for counting or other operations as SendGrid runs its systems. These fields generally cannot be redacted or removed. You should take care not to place PII in this field. SendGrid does not treat this data as PII, and its value may be visible to SendGrid employees, stored long-term, and may continue to be stored after you’ve left SendGrid’s platform.
+
+</call-out>
+
+Assigning categories to a single send allows you to track emails based on your own categorization system. By assigning your single send to a category, you can track statistics across multiple similar single sends and automations. For example, you might have categories like “Weekly Digest” or “Product Announcements.”
+
+<call-out>
+
+Currently, only 10 categories can be added to each single send.
+
+</call-out>
+
+_See how to add categories_
+
+- [Using the Code Editor](#adding-categories-with-the-code-editor)
+- [Using the Design Editor](#adding-categories-with-the-design-editor)
+
+### Email Testing
+
+Email testing offers robust, pre-send testing of your emails, including in-app spam testing, inbox rendering previews, and link validation right within your Marketing Campaigns workflow. It allows you to preview how an email is likely to perform across a wide range of inbox providers, devices, and spam filters before sending. For more information, see our dedicated [Email Testing documentation]({{root_url}}/ui/sending-email/email-testing/).
+
+### Undo and redo functionality
+
+Both editors provide undo and redo functionality using the undo and redo buttons at the top of the editor UI or with keyboard shortcuts.
+
+_Undo/redo keyboard shortcuts_
+
+- Undo: `Command` or `Control` + `Z`
+- Redo: `Command` or `Control` + `Shift` + `Z` for redo.
+
+![Undo and redo buttons]({{root_url}}/img/editors_undo_redo.png 'Undo/Redo')
+
+## The Code Editor
+
+Twilio SendGrid’s marketer-friendly code editor features a powerful split-screen editing experience – perfect for building Single Send or Automation emails with your own custom HTML. It offers a number of helpful features, often found in native editors.
+
+### Code Editor Features
+
+**Live Template Preview** -
+See how your email looks in real-time as you write and edit code. No more tabbing between windows, refreshing, or re-rendering. Marketing Campaigns’ split-screen editing experience displays your code on the left and a pixel-perfect preview on the right.
+
+**Error Flagging** -
+If the code editor finds something that seems odd or inconsistent with best practices, instead of interrupting your workflow, it places a small red “x” in the margin of the line so you can come back and check when it’s convenient for you.
+
+**Scroll Syncing** -
+Easily pinpoint the HTML element you wish to edit. Click anywhere on the right-side preview of your email, and the code on the left automatically jumps to the corresponding line. Click somewhere on the left, and the preview on the right will jump along with you!
+
+**Syntax Highlighting** -
+As you edit, parts of your code highlights in various colors according to the type of syntax. This added dimension provides clarity and efficiency as you search for, locate, and edit code elements.
+
+### Getting Started With The Code Editor
+
+_To use the code editor for Single Sends:_
+
+1. From the left-hand navigation, select **Marketing**, and then click **Single Sends**
+1. Click **Create a Single Send**.
+   <br>To create a Single Send email using an existing (drafted or sent) email, find the Single Send you'd like to use and click the action menu next to the email.
+1. Then, select **Edit** or **Duplicate**.
+1. Select **Code Editor**, and then click **Continue**.
+
+_To use the code editor for Automations:_
+
+1. From the left-hand navigation, select **Marketing**, and then click **Automations** .
+1. Click **Create an Automation**.
+1. Under Custom Automation click **Select**.
+
+<call-out>
+
+The Welcome Series Automation can only be edited with the [design editor]({{root_url}}/ui/sending-email/editor/#the-design-editor)
+
+</call-out>
+
+1. Give the automation a name, entry criteria, exit criteria, and select an [Unsubscribe Group](https://sendgrid.com/docs/ui/sending-email/create-and-manage-unsubscribe-groups/).
+1. Select the send time and then click the edit button next to _Email 1_.
+1. Select **Code Editor**, and then click **Continue**.
+
+<call-out>
+
+You can only edit unsent emails.
+
+</call-out>
+
+You can select a blank template, a custom template that you have already created, or one of Twilio SendGrid's pre-built templates. For more information, see [Working With Templates]({{root_url}}/ui/sending-email/working-with-marketing-templates/).
+
+If you have already built the HTML that you want to use in another application, copy and paste that code directly into the content area of the Code Editor. You can also write the HTML for your email or template directly in the Code Editor.
+
+The split-screen view of the Code Editor allows you to see a real-time preview of your email. You can toggle between a preview of how your email or template appears on a recipient’s desktop and mobile phone by clicking either the desktop or mobile phone icons above the content area. You can also view a plain text version of your email or template by clicking the **T** icon. When in this preview mode, you can edit the plain text content of your email or template by clicking the **Edit Plain Text** button.
+
+<call-out type="warning">
+
+Once you create a new single send or automation email in the Code Editor, it cannot be edited using the Design Editor unless you add our [Drag and Drop Markup]({{root_url}}/ui/sending-email/editor/#drag--drop-markup).
+
+</call-out>
+
+### Uploading images with the Code Editor
+
+1. Select the **images** icon above the HTML code. A window opens where you can upload images to your library.
+2. Select the image you want to add from your image library.
+3. Select the **image details** tab and copy the URL in the **Image Source URL** tab by clicking **Copy URL**.
+4. Paste this URL in an image source tag in your email or template's HTML.
+   Example: `<img src="your image URL here">`
+
+### Using Substitution Tags with the Code Editor
+
+_To add a substitution tag to your email:_
+
+1. Click the **Settings** tab on the left side of the editor.
+2. Click the **Tags** tab at the top of the Settings window.
+3. Locate the tag you want to add to your email and click it to automatically copy it to your clipboard.
+4. Paste the tag into the email.
+
+When copying and pasting a tag from the **Tags** tab, a default will be added automatically. Default values are supported by the `insert` keyword only. For this reason, tags with default values will be saved with a different syntax automatically. For more information about working with default values and Handlebars, see [Adding Dynamic Content with Handlebars in Marketing Campaigns]({{root_url}}/ui/sending-email/adding-dynamic-content-with-handlebars-in-marketing-campaigns/).
+
+### Test Data with the Code Editor
 
 1. To access the test data preview from the editor, click **preview** and then **Show Test Data**.
 
@@ -282,30 +340,20 @@ You can place the data for any tags in your design into the Test Data window. No
 
 ![A side-by-side view of the test data and the rendered values in the template]({{root_url}}/img/code_editor_test_data_replaced.png 'Rendered test data')
 
-### Adding Categories to Single Sends
+### Adding Categories with the Code Editor
 
 <call-out type="warning">
 
-This information will be stored as a “Not PII” field and may be used for counting or other operations as SendGrid runs its systems. These fields generally cannot be redacted or removed. You should take care not to place PII in this field. SendGrid does not treat this data as PII, and its value may be visible to SendGrid employees, stored long-term, and may continue to be stored after you’ve left SendGrid’s platform.
+Category information will be stored as a “Not PII” field and may be used for counting or other operations as SendGrid runs its systems. These fields generally cannot be redacted or removed. You should take care not to place PII in this field. SendGrid does not treat this data as PII, and its value may be visible to SendGrid employees, stored long-term, and may continue to be stored after you’ve left SendGrid’s platform.
 
 </call-out>
 
-Assigning categories to a single send allows you to track emails based on your own categorization system. By assigning your single send to a category, you can track statistics across multiple similar single sends and automations. Example categories may include: “Weekly Digest,” “Product Announcements.”
+_To add categories to a Single Send_
 
 1. Click the _Settings_ panel located on the left-hand side of the window to expand it.
 1. Navigate to the _Settings_ tab, and click **Single Send Settings** to expand the menu.
 1. Locate the _Categories_ field under _Single Send Settings_.
 1. Select the _Add Categories_ field. Type in the tag that you'd like to add, and press enter.
-
-<call-out>
-
-Currently, only 10 categories can be added to each single send.
-
-</call-out>
-
-### Email Testing
-
-Email testing offers robust, pre-send testing of your emails, including in-app spam testing, inbox rendering previews, and link validation right within your Marketing Campaigns workflow. It allows you to preview how an email is likely to perform across a wide range of inbox providers, devices and spam filters, before sending. For more information, [click here]({{root_url}}/ui/sending-email/email-testing/).
 
 ## The Design Editor
 
@@ -465,7 +513,7 @@ The Design Editor does not modify or validate any HTML inserted via a code modul
 
 </call-out>
 
-### Adding Images
+### Adding images with the Design Editor
 
 _To upload an image:_
 
@@ -483,9 +531,7 @@ _To insert an image:_
    <br>The Image Details tab opens.
 1. Insert your image in the email by clicking **Save Image**.
 
-### Using Substitution Tags
-
-Substitution tags allow you to use any custom field data you've added to Marketing Campaigns to dynamically generate unique content for each recipient of your email. A common example is to add a recipient's first name to the body (or even the subject line) of your email.
+### Using Substitution Tags with the Design Editor
 
 _To add a substitution tag to your email:_
 
@@ -493,88 +539,9 @@ _To add a substitution tag to your email:_
 1. Locate the tag you want to add to your email and click the **copy** icon.
 1. Paste the tag into the module.
 
-The data that populates your substitution tag will come from the information you have stored about each contact as well as any data you pass to the template using our APIS. You can manage your contacts' data on the [Marketing Campaigns Contacts page](https://mc.sendgrid.com/contacts).
-
-<call-out>
-
 When copying and pasting a tag from the **Tags** tab, a default will be added automatically. Default values are supported by the `insert` keyword only. For this reason, tags with default values will be saved with a different syntax automatically. For more information about working with default values and Handlebars, see [Adding Dynamic Content with Handlebars in Marketing Campaigns]({{root_url}}/ui/sending-email/adding-dynamic-content-with-handlebars-in-marketing-campaigns/).
 
-</call-out>
-
-In addition to the following reserved fields that are available on all contacts by default, you can add your own [Custom Fields](https://mc.sendgrid.com/custom-fields) with Marketing Campaigns. When building Marketing Campaigns designs, your Custom Fields will be available in the **Tags** tab of the editor. For information about managing these fields, see our [Custom Fields]({{root_url}}/ui/managing-contacts/custom-fields/) documentation. If you add a substitution tag, and the data is unavailable on a contact for that tag, the tag will not be rendered in the final email.
-
-<call-out>
-
-Substitution tags are built using Handlebars templating language syntax. In addition to substituting values, you can use Handlebars in your designs to [format dates]({{root_url}}/for-developers/sending-email/using-handlebars/#formatdate), [iterate over lists]({{root_url}}/for-developers/sending-email/using-handlebars/#iterations), and [conditionally render values]({{root_url}}/for-developers/sending-email/using-handlebars/#conditional-statements). See our [Handlebars documentation]({{root_url}}/for-developers/sending-email/using-handlebars/) to see all that you can do with dynamic data and Twilio SendGrid templates.
-
-</call-out>
-
-#### Reserved Substitution Tags
-
-<table class="table" style="table-layout:fixed">
- <tr>
-   <th>Substitution Tag</th>
-   <th>Description</th>
-   <th>Type</th>
- </tr>
- <tr>
-   <td><code class="language-text">{{email}}</code></td>
-   <td>The email address of the recipient</td>
- </tr>
- <tr>
-   <td><code class="language-text">{{first_name}}</code></td>
-   <td>The first name of the recipient</td>
- </tr>
- <tr>
-   <td><code class="language-text">{{last_name}}</code></td>
-   <td>The last name of the recipient</td>
- </tr>
- <tr>
-   <td><code class="language-text">{{sender_name}}</code>* </td>
-   <td>The name of the sender selected when sending your email</td>
- </tr>
- <tr>
-   <td><code class="language-text">{{sender_city}}</code>* </td>
-   <td>The city on record for the sender selected when sending your email</td>
- </tr>
- <tr>
-   <td><code class="language-text">{{sender_state}}</code>* </td>
-   <td>The state on record for the sender selected when sending your email</td>
- </tr>
- <tr>
-   <td><code class="language-text">{{sender_zip}}</code>* </td>
-   <td>The zip code on record for the sender selected when sending your email</td>
- </tr>
- <tr>
-   <td><code class="language-text">{{unsubscribe}}</code>* </td>
-   <td>This tag is replaced with a link allowing your recipients opt out of any emails you send using the chosen Unsubscribe Group.</td>
- </tr>
- <tr>
-   <td><code class="language-text">{{unsubscribe_</br>preferences}}</code>
-   * </td>
-   <td>This tag is replaced with a link allowing your recipients to opt out of any email unsubscribe groups you offer.</td>
- </tr>
-</table>
-
-\* For your convenience, these substitution tags are included by default in the Unsubscribe Module found on the Tags tab of the Design Editor.
-
-<call-out type="warning">
-
-The `<%asm_group_unsubscribe_raw_url%>`, `<%asm_preferences_raw_url%>`, and `<%asm_global_unsubscribe _raw_url%>` tags are reserved for use in Transactional Templates and should not be used in Marketing Campaigns.
-
-</call-out>
-
-<call-out>
-
-For contacts with no entry in a custom field, the substitution tag appears blank. To set a default value, use the following pattern:
-
-`{{insert first_name "default=Valued Customer"}}`
-
-</call-out>
-
-#### Preview substitution tags with test data
-
-The Design Editor provides a test data preview feature. This means you can add the reserved and custom fields stored on a contact as well as any other variables you wish to pass into your template, such as order confirmation data. Test data provides a way to be sure that your final design will populate and render the substitutions properly. If you wanted to collaborate on a design for example, having test data stored directly in the design means each teammate can reference the data structure used to populate substitution tags without having to dig into a code base.
+#### Test Data with the Design Editor
 
 1. To access the test data preview, open a design in the Design Editor and select the **Preview** tab.
 2. With the **Preview** tab active, you will see a **{} Show Test Data** button on the left. Click this button to open the test data window.
@@ -902,25 +869,19 @@ _To open exported HTML in the code editor using Automations:_
 1. Select **Code Editor**.
 1. Paste the raw SendGrid template HTML into the code editor.
 
-### Adding Categories to Single Sends
+### Adding Categories with the Design Editor
 
 <call-out type="warning">
 
-This information will be stored as a “Not PII” field and may be used for counting or other operations as SendGrid runs its systems. These fields generally cannot be redacted or removed. You should take care not to place PII in this field. SendGrid does not treat this data as PII, and its value may be visible to SendGrid employees, stored long-term, and may continue to be stored after you’ve left SendGrid’s platform.
+Category information will be stored as a “Not PII” field and may be used for counting or other operations as SendGrid runs its systems. These fields generally cannot be redacted or removed. You should take care not to place PII in this field. SendGrid does not treat this data as PII, and its value may be visible to SendGrid employees, stored long-term, and may continue to be stored after you’ve left SendGrid’s platform.
 
 </call-out>
-
-Assigning categories to a single send allows you to track emails based on your own categorization system. By assigning your single send to a category, you can track statistics across multiple similar single sends and automations. Example categories: “Weekly Digest,” “Product Announcements.”
 
 _To add a category:_
 
 1. Navigate to the _Settings_ tab and click **Single Send Settings** to expand the menu.
 1. Find the _Categories_ field.
 1. Enter the name of a new category or select a previously used category from the drop-down menu.
-
-### Email Testing
-
-Email testing offers robust, pre-send testing of your emails, including in-app spam testing, inbox rendering previews, and link validation right within your Marketing Campaigns workflow. It allows you to preview how an email is likely to perform across a wide range of inbox providers, devices and spam filters, before sending. For more information, [click here]({{root_url}}/ui/sending-email/email-testing/).
 
 ## Additional Resources
 
