@@ -11,7 +11,7 @@ navigation:
   show: true
 ---
 
-IP Pools allow you to group your dedicated Twilio SendGrid IP addresses together in order to have more control over your deliverability, and as a result, your sender reptuation. For example, you might have separate pools for both transactional and marketing email. 
+IP Pools allow you to group your dedicated Twilio SendGrid IP addresses together in order to have more control over your deliverability, and as a result, your sender reputation. For example, you might have separate pools for both transactional and marketing email. 
 
 <call-out>
 
