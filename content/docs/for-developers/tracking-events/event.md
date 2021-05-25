@@ -449,7 +449,7 @@ Engagement events include open, click, spam report, unsubscribe, group unsubscri
 
 <call-out type="warning">
 
-Events like deferrals or bounces may or may not have an IP included in their post. Some examples where this will happen may include in internal deferrals. This is where we have already determined an issue at a specific MX records and are waiting for that issue to clear before trying to deliver more mail. Since no action is taken no IP can be logged tanking an action. Another example would be a delayed bounce. This is where mail is accepted for delivery but later is rejected after the SMTP conversation is over. Since the SMTP conversation is no longer happening a new conversation is started where much of the previouse context is lost. This results in delayed bounces not having an IP and other information.
+Events like deferrals or bounces may or may not have an IP included in their post. Some examples where this will happen may include in internal deferrals. This is where we have already determined an issue at a specific MX records and are waiting for that issue to clear before trying to deliver more mail. Since no action is taken no IP can be logged taking an action. Another example would be a delayed bounce. This is where mail is accepted for delivery but later is rejected after the SMTP conversation is over. Since the SMTP conversation is no longer happening a new conversation is started where much of the previouse context is lost. This results in delayed bounces not having an IP and other information.
 
 </call-out>
 
