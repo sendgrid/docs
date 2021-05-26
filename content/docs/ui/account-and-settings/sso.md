@@ -34,14 +34,14 @@ Single Sign-On is being released in phases for each plan type. The table below p
     <tbody>
         <tr>
           <td>Marketing Campaigns Advanced</td>
-          <td>Week of May 17th, 2021</td>
+          <td>Now Available</td>
         </tr>
         <tr>
           <td>Email API Pro</td>
           <td>Week of May 24th, 2021</td>
         </tr>
         <tr>
-          <td>Email API Premiere and Custom</td>
+          <td>Email API Premier and Custom</td>
           <td>Week of May 31st, 2021</td>
         </tr>
     </tbody>
@@ -81,9 +81,9 @@ To add, delete, or modify an SSO integration, log in to the top level of your Tw
    - **Audience URL (SP Entity ID)**: The Twilio SendGrid URL where your IdP should POST its SAML response. This URL is responsible for receiving and parsing a SAML assertion. The Audience URL and the Single Sign-On URL are the same when using Twilio SendGrid.
    - **SP Public Key**: The SP Public Key may not be required by your IdP. It is used to verify that requests are coming from the correct Service Provider.
    - **Additional Fields**: The following fields may or may not be required by your IdP. If they are required, you can provide the following values.
-      - **Default RelayState**: This field is not applicable; leave it blank.
-      - **Name ID format**: "unspecified." If your IdP generates an error with this field set to "unspecified", try setting it to "emailAddress."
-      - **Application username**: "Email"
+     - **Default RelayState**: This field is not applicable; leave it blank.
+     - **Name ID format**: "unspecified." If your IdP generates an error with this field set to "unspecified", try setting it to "emailAddress."
+     - **Application username**: "Email"
 
 ![The Twilio SendGrid SSO IdP Configuration page]({{root_url}}/img/sso-add-configuration-values.png 'Add IdP Configuration')
 
@@ -180,9 +180,9 @@ Configuring 2FA for SSO Teammates should not be done in the Twilio SendGrid App.
    - **Teammate’s Last Name**: The Teammate’s last name.
    - **Teammate’s Permissions**:
 
-       - **Add as Admin**: Administrators can fully manage the Twilio SendGrid account. They have the ability to add, remove, and edit other Teammates.
-       - **Add with Read-Only Access**: Read-only permissions allow a Teammate to work within the SendGrid App to send email, manage templates, and perform other email-related tasks; however, a read-only Teammate cannot manage other Teammates.
-       - **Add with Restricted Access**: You can finely control a user's permissions by creating a Teammate with restricted access. For example, a software developer may need to create API keys but never require billing access. The Twilio SendGrid App also provides permission presets that will toggle on the access most often needed by common types of users.
+     - **Add as Admin**: Administrators can fully manage the Twilio SendGrid account. They have the ability to add, remove, and edit other Teammates.
+     - **Add with Read-Only Access**: Read-only permissions allow a Teammate to work within the SendGrid App to send email, manage templates, and perform other email-related tasks; however, a read-only Teammate cannot manage other Teammates.
+     - **Add with Restricted Access**: You can finely control a user's permissions by creating a Teammate with restricted access. For example, a software developer may need to create API keys but never require billing access. The Twilio SendGrid App also provides permission presets that will toggle on the access most often needed by common types of users.
 
 ![The "Add SSO Teammate" modal with a restricted access user selected.]({{root_url}}/img/sso_teammate_restricted_access.png 'Add SSO Teammate')
 
