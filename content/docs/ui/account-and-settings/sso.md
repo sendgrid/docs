@@ -34,14 +34,14 @@ Single Sign-On is being released in phases for each plan type. The table below p
     <tbody>
         <tr>
           <td>Marketing Campaigns Advanced</td>
-          <td>Week of May 17th, 2021</td>
+          <td>Now available</td>
         </tr>
         <tr>
           <td>Email API Pro</td>
           <td>Week of May 24th, 2021</td>
         </tr>
         <tr>
-          <td>Email API Premiere and Custom</td>
+          <td>Email API Premier and Custom</td>
           <td>Week of May 31st, 2021</td>
         </tr>
     </tbody>
