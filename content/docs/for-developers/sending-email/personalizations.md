@@ -339,7 +339,7 @@ You must complete [domain authentication]({{root_url}}/ui/account-and-settings/h
   "from": {
     "email": "default@samedomain.com"
   },
-  "personalization": [
+  "personalizations": [
     {
       "subject": "YOUR SUBJECT LINE GOES HERE",
       "to": [
