@@ -11,6 +11,7 @@ seo:
   override: true
   description: Send your first email using the new Marketing Campaigns tool.
 ---
+
 <call-out>
 
 This page refers to the new Marketing Campaigns product. If you’re using legacy Marketing Campaigns, your workflow will be a little different and your screen won’t look the same as the screenshots.
@@ -25,7 +26,7 @@ If you want to send email programmatically using Twilio SendGrid's Email API, se
 
 </call-out>
 
-##     Before you send your first email with Marketing Campaigns
+## Before you send your first email with Marketing Campaigns
 
 <call-out type="warning">
 
@@ -33,14 +34,13 @@ Before you begin, go to your SendGrid [account settings](https://app.sendgrid.co
 
 </call-out>
 
-###  Change your time zone
+### Change your time zone
 
 Your time zone is set at the account level, you’ll need to navigate to your account settings to change it.
 
-
 1. Near the bottom of the left-hand navigation, select **Settings**.
 1. Click **Account Details**, or go [here](https://app.sendgrid.com/settings/account).
-1. Locate the *Timezone* field under **Your Account**, and correct it if necessary.
+1. Locate the _Timezone_ field under **Your Account**, and correct it if necessary.
 
 ### Add a sender
 
@@ -73,7 +73,7 @@ Marketing Campaigns offers a number of ways to add contacts to lists, including:
 
 - [**Signup Forms**]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#create-a-signup-form/)
 
-![]({{root_url}}/img/sign-up-form.png "Sign Up Form")
+![]({{root_url}}/img/sign-up-form.png 'Sign Up Form')
 
 - [**Manually Adding a Contact**]({{root_url}}/ui/managing-contacts/create-and-manage-contacts/#add-manually)
 
@@ -93,7 +93,7 @@ The Group Name as well as the Group Description are public-facing and will be vi
 
 </call-out>
 
-![]({{root_url}}/img/unsubscribe-group-example.png "Alt text")
+![]({{root_url}}/img/unsubscribe-group-example.png 'Alt text')
 
 4. Select the checkbox if you want the Unsubscribe Group to display on the unsubscribe preferences page.
 5. Click **Save Unsubscribe Group**.
@@ -105,7 +105,7 @@ The Group Name as well as the Group Description are public-facing and will be vi
 1. Select **Single Sends**.
 1. To create a new one-to-many email, click **Create Single Send**.
 1. Select the template that you want to use for your email.
-<br> You can select a blank template, a custom template that you have already created, or one of SendGrid's responsive pre-built templates. For more information, see [Working with Marketing Campaigns Email Designs]({{root_url}}/ui/sending-email/working-with-marketing-campaigns-email-designs/).
+   <br> You can select a blank template, a custom template that you have already created, or one of SendGrid's responsive pre-built templates. For more information, see [Working with Marketing Campaigns Email Designs]({{root_url}}/ui/sending-email/working-with-marketing-campaigns-email-designs/).
 
 <call-out>
 
@@ -114,7 +114,7 @@ You can also create a template from an existing Single Send by selecting the act
 </call-out>
 
 5. Select an editor.
-<br> You can choose between the **Design Editor** and the **Code Editor**.
+   <br> You can choose between the **Design Editor** and the **Code Editor**.
 
 ![]({{root_url}}/img/choose-editor.png)
 
@@ -129,9 +129,9 @@ The [**Code Editor**]({{root_url}}/ui/sending-email/editor/#the-code-editor) pro
 Inside the Design Editor, you use the **Settings**, **Tags** and **Build** tabs to design and configure your email.
 Inside the Code Editor, you can click the left **Settings** tab to expand the settings window, and then you can configure your email using the **Settings** and **Tags** tabs.
 
-![]({{root_url}}/img/design-editor-preview.png "Design Editor Preview")
+![]({{root_url}}/img/design-editor-preview.png 'Design Editor Preview')
 
-6. Define key settings like *From Sender*, *Email Subject*, *Preheader*, *Recipients*, and *Scheduling* by filling in the fields in the **Settings** tab.
+6. Define key settings like _From Sender_, _Email Subject_, _Preheader_, _Recipients_, and _Scheduling_ by filling in the fields in the **Settings** tab.
 
 <call-out type="warning">
 
@@ -147,7 +147,7 @@ If you have dedicated IPs, you can set up [IP Pools]({{root_url}}/ui/account-and
 
 7. Add your custom content by clicking the **Build** tab in the Design Editor, or by editing the HTML code in the Code Editor.
 
-![]({{root_url}}/img/build-tab.png "Build tab")
+![]({{root_url}}/img/build-tab.png 'Build tab')
 
 <call-out>
 
@@ -162,17 +162,9 @@ For more information about customizing your campaign, see [Using the Design Edit
 <iframe src="https://player.vimeo.com/video/385339044" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 1. As you're editing your email, you can see what it looks like by clicking **Preview** from within the design editor, or, from the code editor simply toggle between **Desktop**, **Mobile**, and **Plain text**. You can also preview from the Single Sends index page by hovering over the action menu and clicking **Preview**.
-2. You can test your email by sending it to yourself and up to 10 other recipients. We'll automatically append "Test - " to the subject linee so your recipients know it's a test and not the real send. From **Settings**, click **Test Your Email** and enter the email addresses to send your test to.
+2. You can test your email by sending it to yourself and up to 10 other recipients. We'll automatically append "Test - " to the subject line so your recipients know it's a test and not the real send. From **Settings**, click **Test Your Email** and enter the email addresses to send your test to.
 3. For more robust, automated testing, we offer [Email Testing]({{root_url}}/ui/sending-email/email-testing/) for both Automation and Single Sends so you can see what your email looks like across different operating systems, browsers, and inboxes.
 4. With your email fully tested and ready to go, click **Send** or **Schedule**. You'll have the chance to do a final review of settings before confirming your send!
-
-## Searching your Single Sends
-
-After creating multiple Single Sends, you can modify and delete them as needed. To make managing multiple Single Sends easier, Twilio SendGrid offers search functionality, enabling you to find a Single Send quickly by name.
-
-You can also filter your search results by status—"Draft," "Scheduled," or "Triggered"—and any categories you have added to your Single Sends.
-
-When filtering by multiple categories, Marketing Campaigns will return results matching any of the categories specified. For example, if you filter by the categories "Newsletter," "Promotion," and "BOGO," Marketing Campaigns will return Single Sends matching one _or_ more of those categories.
 
 ## Additional Resources
 
@@ -180,4 +172,3 @@ When filtering by multiple categories, Marketing Campaigns will return results m
 - [Campaign Statistics]({{root_url}}/ui/analytics-and-reporting/marketing-campaigns-stats/)
 - [Getting Started with Automation]({{root_url}}/ui/sending-email/getting-started-with-automation/)
 - [Reading your invoice]({{root_url}}/ui/account-and-settings/reading-your-invoice/)
-
