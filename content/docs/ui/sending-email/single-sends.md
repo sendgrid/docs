@@ -43,7 +43,7 @@ When working with A/B tests, you can
 
 See our dedicated [A/B Testing page]({{root_url}}/ui/sending-email/a-b-testing/) to learn how to create and manage your A/B tests.
 
-### Exclude Lists and Segments
+### Exclude lists and segments
 
 You can exclude up to 5 segments and 50 lists from a Single Send. Twilio SendGrid will omit any contacts who are on one of your excluded segments or lists from the send.
 
@@ -92,9 +92,9 @@ The **Settings** tab allows you to configure all the essential information about
 
 <call-out type="warning">
 
-When selecting segments, make sure you are limiting your selection to 10 segments.
+There is a limit of 10 segments per Single Send.
 
-See our [Segmentation documenation]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/) for more information about managing your contacts and building Single Sends based on engagement data.
+See our [segmentation documentation]({{root_url}}/ui/managing-contacts/segmenting-your-contacts/) for more information about managing your contacts and building Single Sends based on engagement data.
 
 </call-out>
 
@@ -108,17 +108,17 @@ In addition to the settings necessary to send your messages, Single Sends provid
 
 _To exclude a segment or list from your Single Send_
 
-1. Navigate to **Marketing** > **Single Sends**.
+1. Navigate to **Marketing** and select **Single Sends**.
 2. Create a new Single Send or open existing Single Send.
 3. Once the Single Send is open, in the **Settings** tab scroll to the **Recipients** header.
 4. Toggle **Exclude specific recipients** to **ON**.
 5. This will display an **Exclude** drop-down menu.
-6. The drop-down menu will load all of your **Lists** and **Segments**. Select any Lists or Segments you wish to exclude from the Single Send.
-  <br /> You can include as many as 5 segments or 50 lists.
+6. The drop-down menu will load all of your **Lists** and **Segments**. Select any lists or segments you wish to exclude from the Single Send.
+  <br /> You can include as many as 5 segments and 50 lists.
 
 ![Exclude recipients from a Single Send]({{root_url}}/img/single-sends-exclude-recipients.png 'Exclude recipients')
 
-The contacts associated with your selected Lists or Segments will be excluded from the Single Send.
+The contacts associated with your selected lists or segments will be excluded from the Single Send.
 
 #### Send from a specific IP Pool
 
