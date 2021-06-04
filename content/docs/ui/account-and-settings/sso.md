@@ -38,11 +38,11 @@ Single Sign-On is being released in phases for each plan type. The table below p
         </tr>
         <tr>
           <td>Email API Pro</td>
-          <td>Week of May 24th, 2021</td>
+          <td>May 31st - June 11th</td>
         </tr>
         <tr>
           <td>Email API Premier and Custom</td>
-          <td>Week of May 31st, 2021</td>
+          <td>June 14th - June 25th</td>
         </tr>
     </tbody>
 </table>
