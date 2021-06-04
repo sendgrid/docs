@@ -769,7 +769,7 @@ Events like deferrals or bounces may or may not have an IP included in their pos
 - <a name="response"></a>`response` - the full text of the HTTP response error returned from the receiving server.
 - <a name="tls"></a>`tls` - indicates whether TLS encryption was used in sending this message. For more information about TLS, see the [TLS Glossary page]({{root_url}}/glossary/tls/).
 - <a name="url"></a>`url` - the URL where the event originates. For click events, this is the URL clicked on by the recipient.
-- <a name="url_offset"</a>`url_offset` - if there is more than one of the same links in an email, this tells you which of those identical links was clicked.
+- <a name="url_offset"></a>`url_offset` - if there is more than one of the same links in an email, this tells you which of those identical links was clicked.
 - <a name="attempt"></a>`attempt` - the number of times SendGrid has attempted to deliver this message.
 - <a name="category"></a>`category` - [Categories]({{root_url}}/glossary/categories/) are custom tags that you set for the purpose of organizing your emails. If you send single categories as an array, they will be returned by the webhook as an array. If you send single categories as a string, they will be returned by the webhook as a string.
 - <a name="type"></a>`type` - indicates whether the bounce event was a hard bounce (type=bounce) or block (type=blocked)
