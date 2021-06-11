@@ -21,7 +21,7 @@ After June 16, 2021, you will no longer be able to access visualizations of your
 
 <call-out type="warning">
 
-The following guide will not work for customer's using New Relic’s [High Security Mode](https://docs.newrelic.com/docs/agents/manage-apm-agents/configuration/high-security-mode/). If you are, or believe you may be, using New Relic's High Security Mode, please contact the [New Relic support team](https://support.newrelic.com/) for assistance.
+The following guide will not work for customers using New Relic’s [High Security Mode](https://docs.newrelic.com/docs/agents/manage-apm-agents/configuration/high-security-mode/). If you are, or believe you may be, using New Relic's High Security Mode, please contact the [New Relic support team](https://support.newrelic.com/) for assistance.
 
 </call-out>
 
