@@ -8,6 +8,16 @@ navigation:
 seo:
   title:  SendGrid for New Relic
 ---
+<call-out type="warning">
+
+Starting Wednesday June 16, 2021, New Relic will [no longer support or maintain plugins](https://discuss.newrelic.com/t/new-relic-plugin-eol-wednesday-june-16th-2021/127267). 
+  
+After June 16, 2021, you will no longer be able to access visualizations of your email statistics without changes to your New Relic dashboard. To make these changes, follow [this guide]({{root_url}}/ui/analytics-and-reporting/migrating-from-the-new-relic-plugin/) 
+  
+**If you do not utilize New Relic to see email statistics, then there is no action needed from you.**
+
+</call-out>
+
 
 Access your email statistics via the New Relic Dashboard.
 
