@@ -1,0 +1,155 @@
+{
+  "name": "TwilioSendGrid_Sample_Dashboard_WithSubusers",
+  "description": null,
+  "permissions": "PRIVATE",
+  "pages": [
+    {
+      "name": "TwilioSendGrid_Sample_Dashboard_WithSubusers",
+      "description": null,
+      "widgets": [
+        {
+          "visualization": {
+            "id": "viz.table"
+          },
+          "layout": {
+            "column": 1,
+            "row": 1,
+            "height": 3,
+            "width": 6
+          },
+          "title": "All Users",
+          "rawConfiguration": {
+            "dataFormatters": [],
+            "facet": {
+              "showOtherSeries": false
+            },
+            "nrqlQueries": [
+              {
+                "accountId": <AccountID>,
+                "query": "FROM Metric SELECT MIN(newrelic.timeslice.value) as MIN\n  WHERE appName = 'Twilio SendGrid' \n  WITH METRIC_FORMAT 'Custom/{AllUsers}/{Categories}' \n  FACET AllUsers "
+              }
+            ]
+          },
+          "linkedEntityGuids": [
+            "MjgzMzAyN3xWSVp8REFTSEJPQVJEfDIwNzgzMjY"
+          ]
+        },
+        {
+          "visualization": {
+            "id": "viz.line"
+          },
+          "layout": {
+            "column": 1,
+            "row": 4,
+            "height": 4,
+            "width": 5
+          },
+          "title": "Deliveries",
+          "rawConfiguration": {
+            "facet": {
+              "showOtherSeries": false
+            },
+            "legend": {
+              "enabled": true
+            },
+            "nrqlQueries": [
+              {
+                "accountId": <AccountID>,
+                "query": "FROM Metric SELECT average(newrelic.timeslice.value)\n  WHERE appName = 'Twilio SendGrid' AND metricTimesliceName NOT LIKE '%Percent'\n  WITH METRIC_FORMAT 'Custom/{AllUsers}/Deliveries/{Stat}' \n  TIMESERIES FACET AllUsers, Stat "
+              }
+            ],
+            "yAxisLeft": {
+              "zero": true
+            }
+          },
+          "linkedEntityGuids": null
+        },
+        {
+          "visualization": {
+            "id": "viz.bar"
+          },
+          "layout": {
+            "column": 6,
+            "row": 4,
+            "height": 4,
+            "width": 5
+          },
+          "title": "Percentage",
+          "rawConfiguration": {
+            "dataFormatters": [],
+            "facet": {
+              "showOtherSeries": false
+            },
+            "nrqlQueries": [
+              {
+                "accountId": <AccountID>,
+                "query": "FROM Metric SELECT average(newrelic.timeslice.value)\n  WHERE appName = 'Twilio SendGrid' AND StatPercent LIKE '%Percent'\n  WITH METRIC_FORMAT 'Custom/{AllUsers}/{Categories}/{StatPercent}'\n   FACET AllUsers, StatPercent"
+              }
+            ]
+          },
+          "linkedEntityGuids": null
+        },
+        {
+          "visualization": {
+            "id": "viz.line"
+          },
+          "layout": {
+            "column": 1,
+            "row": 8,
+            "height": 4,
+            "width": 5
+          },
+          "title": "Engagement",
+          "rawConfiguration": {
+            "facet": {
+              "showOtherSeries": false
+            },
+            "legend": {
+              "enabled": true
+            },
+            "nrqlQueries": [
+              {
+                "accountId": <AccountID>,
+                "query": "FROM Metric SELECT average(newrelic.timeslice.value)\n  WHERE appName = 'Twilio SendGrid' AND metricTimesliceName NOT LIKE '%Percent'\n  WITH METRIC_FORMAT 'Custom/{AllUsers}/Engagement/{Stat}'\n  TIMESERIES FACET AllUsers, Stat "
+              }
+            ],
+            "yAxisLeft": {
+              "zero": true
+            }
+          },
+          "linkedEntityGuids": null
+        },
+        {
+          "visualization": {
+            "id": "viz.line"
+          },
+          "layout": {
+            "column": 6,
+            "row": 8,
+            "height": 4,
+            "width": 5
+          },
+          "title": "Compliance",
+          "rawConfiguration": {
+            "facet": {
+              "showOtherSeries": false
+            },
+            "legend": {
+              "enabled": true
+            },
+            "nrqlQueries": [
+              {
+                "accountId": <AccountID>,
+                "query": "FROM Metric SELECT average(newrelic.timeslice.value)\n  WHERE appName = 'Twilio SendGrid' AND metricTimesliceName NOT LIKE '%Percent'\n  WITH METRIC_FORMAT 'Custom/{AllUsers}/Compliance/{Stat}'\n  TIMESERIES FACET AllUsers, Stat "
+              }
+            ],
+            "yAxisLeft": {
+              "zero": true
+            }
+          },
+          "linkedEntityGuids": null
+        }
+      ]
+    }
+  ]
+}
