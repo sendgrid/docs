@@ -1,5 +1,8 @@
 ![SendGrid Logo](https://uiux.s3.amazonaws.com/2016-logos/email-logo%402x.png)
 
+
+**THIS REPOSITORY WILL NO LONGER BE MONITORED AFTER JUNE 15, 2021**
+
 # SendGrid Documentation
 
 [![Build Status](https://travis-ci.org/sendgrid/docs.svg?branch=develop)](https://travis-ci.org/sendgrid/docs)
