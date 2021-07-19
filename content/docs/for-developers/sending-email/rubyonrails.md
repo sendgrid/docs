@@ -97,7 +97,10 @@ ActionMailer::Base.smtp_settings = {
   :address => 'smtp.sendgrid.net',
   :port => 587,
   :authentication => :plain,
-  :enable_starttls_auto => true
+  :enable_starttls_auto => true,
+  :openssl_verify_mode =>  'none',
+  :ssl => true,
+  :tls => true
 }
 ```
 
